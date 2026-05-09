@@ -1,0 +1,14 @@
+---
+description: Enforce secret handling and secure repository hygiene
+globs:
+  - "**/*"
+alwaysApply: true
+---
+
+# Z Security Rules
+
+- Never commit or output secrets (API keys, tokens, passwords, private certificates, recovery phrases, .env contents).
+- Never hardcode credentials or print sensitive values in markdown, logs, code, or generated artifacts.
+- Keep secrets only in approved secret stores or runtime environment variables.
+- If a value may be sensitive, treat it as sensitive and redact by default.
+- Security discipline has priority over convenience and speed.

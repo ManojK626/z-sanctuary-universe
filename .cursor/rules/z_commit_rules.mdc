@@ -1,0 +1,14 @@
+---
+description: Enforce safe, review-first commit and change discipline
+globs:
+  - "**/*"
+alwaysApply: true
+---
+
+# Z Commit Rules
+
+- Make minimal, reversible, and auditable changes.
+- Keep claims in commits and docs aligned with verified repository truth.
+- Do not bypass review controls or imply production promotion from documentation-only changes.
+- Prefer small scoped commits with clear intent and rollback friendliness.
+- Preserve governance-first workflow: read doctrine, verify scope, validate changes, open PR, await human approval.

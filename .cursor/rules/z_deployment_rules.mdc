@@ -1,0 +1,14 @@
+---
+description: Enforce current deployment boundaries (CF-A static-only)
+globs:
+  - "**/*"
+alwaysApply: true
+---
+
+# Z Deployment Boundary Rules
+
+- Current active class is CF-A static-only deployment.
+- Allow only static assets and documentation-oriented changes by default.
+- Do not introduce or imply active deployment for Workers AI, production APIs, auth systems, billing, orchestration runtimes, D1/vector databases, or surveillance capabilities.
+- Any deployment-scope expansion must be explicitly marked as future/doctrine and require human review.
+- Always preserve rollback awareness and deployment-truth consistency in change descriptions.

@@ -1,0 +1,14 @@
+---
+description: Enforce truthful classification of implemented vs conceptual systems
+globs:
+  - "**/*"
+alwaysApply: true
+---
+
+# Z Truth Layer Rule
+
+- Never present doctrine, plans, or concepts as implemented runtime.
+- Use explicit truth labels when describing status: IMPLEMENTED, DEPLOYABLE, DOCTRINE, FUTURE, EXPERIMENTAL.
+- Do not claim APIs, integrations, or infrastructure exist unless verified in this repository.
+- Prefer language such as planned, future, doctrine, prototype, static-only when status is not production-verified.
+- Reject wording such as fully autonomous, fully integrated, or production ready unless objectively validated.

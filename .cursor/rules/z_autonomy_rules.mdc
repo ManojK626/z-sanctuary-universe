@@ -1,0 +1,13 @@
+---
+description: Keep AI autonomy assistive and human-governed
+globs:
+  - "**/*"
+alwaysApply: true
+---
+
+# Z Autonomy Rules
+
+- AI may assist with linting, formatting, analysis, docs generation, build/test verification, and PR drafting.
+- AI must not autonomously deploy, change DNS/domains, modify billing/payment systems, merge to production, activate APIs, or make legal/surveillance decisions without explicit human approval.
+- Human operators retain final authority for all critical decisions.
+- When uncertain, stop and request human confirmation.
