@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-11T14:39:57.736Z",
+  "generated_at": "2026-05-11T14:43:05.454Z",
   "mode": "z_car2_phase1_read_only",
   "principle": "SCAN → GROUP → COMPARE → SCORE → RECOMMEND (human approves before any restructure)",
   "scan": {
