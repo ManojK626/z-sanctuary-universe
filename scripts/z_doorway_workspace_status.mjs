@@ -1,6 +1,7 @@
 #!/usr/bin/env node
 /**
- * Z-DOORWAY-2 — SSWS doorway workspace registry: read-only status + reports.
+ * Z-DOORWAY-2 / Z-DOORWAY-3 — SSWS doorway workspace registry: read-only status + reports.
+ * Optionally summarizes local session telemetry (JSON Lines tail) when a log file exists.
  * Does not open IDEs, enumerate arbitrary disks, mutate git, touch NAS, or run npm.
  *
  * Usage (hub root):
@@ -18,6 +19,10 @@ const OUT_JSON = path.join(ROOT, 'data', 'reports', 'z_doorway_workspace_status.
 const OUT_MD = path.join(ROOT, 'data', 'reports', 'z_doorway_workspace_status.md');
 const SCHEMA = 'z_doorway_workspace_status_v1';
 const REG_SCHEMA = 'z_doorway_workspace_registry_v1';
+const SESSION_LOG = path.join(ROOT, 'data', 'reports', 'z_doorway_session_log.jsonl');
+const SESSION_LOG_REL = 'data/reports/z_doorway_session_log.jsonl';
+const TELEMETRY_TAIL_BYTES = 256 * 1024;
+const TELEMETRY_MAX_LINES = 2000;
 
 function readJson(p) {
   return JSON.parse(fs.readFileSync(p, 'utf8'));
@@ -69,6 +74,78 @@ function validType(t) {
   return t === 'workspace' || t === 'folder';
 }
 
+/**
+ * Read-only tail of session log (Z-DOORWAY-3). Bounded read — no full-disk scan.
+ */
+function readDoorwayTelemetrySummary() {
+  if (!fs.existsSync(SESSION_LOG)) {
+    return { log_present: false, log_path_relative: SESSION_LOG_REL };
+  }
+  let raw;
+  let partial_file_read = false;
+  try {
+    const st = fs.statSync(SESSION_LOG);
+    if (st.size > TELEMETRY_TAIL_BYTES) {
+      partial_file_read = true;
+      const fd = fs.openSync(SESSION_LOG, 'r');
+      const buf = Buffer.allocUnsafe(TELEMETRY_TAIL_BYTES);
+      fs.readSync(fd, buf, 0, TELEMETRY_TAIL_BYTES, st.size - TELEMETRY_TAIL_BYTES);
+      fs.closeSync(fd);
+      raw = buf.toString('utf8');
+      const firstNl = raw.indexOf('\n');
+      if (firstNl >= 0) raw = raw.slice(firstNl + 1);
+    } else {
+      raw = fs.readFileSync(SESSION_LOG, 'utf8');
+    }
+  } catch (e) {
+    return {
+      log_present: true,
+      log_path_relative: SESSION_LOG_REL,
+      read_error: String(e?.message || e),
+    };
+  }
+
+  const lines = raw.split(/\r?\n/).filter((x) => x.trim());
+  const totalLinesEstimate = lines.length;
+  const slice = lines.length > TELEMETRY_MAX_LINES ? lines.slice(-TELEMETRY_MAX_LINES) : lines;
+  const parsed = [];
+  for (const line of slice) {
+    try {
+      parsed.push(JSON.parse(line));
+    } catch {
+      /* skip malformed */
+    }
+  }
+  const by_result = {};
+  const by_id = {};
+  let first_timestamp = null;
+  let last_timestamp = null;
+  for (const o of parsed) {
+    const r = String(o.result || 'unknown');
+    by_result[r] = (by_result[r] || 0) + 1;
+    const id = String(o.id || 'unknown');
+    by_id[id] = (by_id[id] || 0) + 1;
+    const ts = o.timestamp;
+    if (typeof ts === 'string' && ts) {
+      if (!first_timestamp) first_timestamp = ts;
+      last_timestamp = ts;
+    }
+  }
+  return {
+    log_present: true,
+    log_path_relative: SESSION_LOG_REL,
+    lines_in_window: slice.length,
+    lines_total_estimate: partial_file_read ? null : totalLinesEstimate,
+    partial_file_read,
+    window_truncated: lines.length > TELEMETRY_MAX_LINES || partial_file_read,
+    first_timestamp,
+    last_timestamp,
+    by_result,
+    by_id,
+    phase_note: 'Z-DOORWAY-3 — receipts only; no paths or secrets in log schema.',
+  };
+}
+
 function main() {
   const generated_at = new Date().toISOString();
   let reg;
@@ -81,6 +158,7 @@ function main() {
       overall_signal: 'RED',
       exit_hint: 1,
       error: `Cannot read registry: ${e?.message || e}`,
+      doorway_telemetry: readDoorwayTelemetrySummary(),
     };
     fs.mkdirSync(path.dirname(OUT_JSON), { recursive: true });
     fs.writeFileSync(OUT_JSON, JSON.stringify(payload, null, 2), 'utf8');
@@ -95,7 +173,14 @@ function main() {
 
   if (reg.schema !== REG_SCHEMA) {
     const msg = `Unexpected registry schema (want ${REG_SCHEMA})`;
-    const payload = { schema: SCHEMA, generated_at, overall_signal: 'RED', exit_hint: 1, error: msg };
+    const payload = {
+      schema: SCHEMA,
+      generated_at,
+      overall_signal: 'RED',
+      exit_hint: 1,
+      error: msg,
+      doorway_telemetry: readDoorwayTelemetrySummary(),
+    };
     fs.mkdirSync(path.dirname(OUT_JSON), { recursive: true });
     fs.writeFileSync(OUT_JSON, JSON.stringify(payload, null, 2), 'utf8');
     console.error(msg);
@@ -240,6 +325,7 @@ function main() {
   if (!cursor.available) worst = maxSignal(worst, 'YELLOW');
 
   const exitCode = worst === 'RED' ? 1 : 0;
+  const doorwayTelemetry = readDoorwayTelemetrySummary();
   const payload = {
     schema: SCHEMA,
     generated_at,
@@ -248,12 +334,35 @@ function main() {
     overall_signal: worst,
     cursor_cli: cursor,
     entries: rows,
+    doorway_telemetry: doorwayTelemetry,
     law: 'Doorway metadata only. Open workspace ≠ run project. No npm / git / deploy / NAS write / services.',
     exit_hint: exitCode,
   };
 
   fs.mkdirSync(path.dirname(OUT_JSON), { recursive: true });
   fs.writeFileSync(OUT_JSON, JSON.stringify(payload, null, 2), 'utf8');
+
+  const telMd =
+    doorwayTelemetry && doorwayTelemetry.log_present
+      ? [
+          '## Doorway session telemetry (Z-DOORWAY-3)',
+          '',
+          `- **Log:** \`${SESSION_LOG_REL}\``,
+          `- **Lines (window):** ${doorwayTelemetry.lines_in_window ?? '—'}`,
+          `- **Partial file read (tail):** ${doorwayTelemetry.partial_file_read ? 'yes' : 'no'}`,
+          `- **Window truncated:** ${doorwayTelemetry.window_truncated ? 'yes' : 'no'}`,
+          `- **First timestamp:** ${doorwayTelemetry.first_timestamp || '—'}`,
+          `- **Last timestamp:** ${doorwayTelemetry.last_timestamp || '—'}`,
+          `- **By result:** \`${JSON.stringify(doorwayTelemetry.by_result || {})}\``,
+          `- **By id:** \`${JSON.stringify(doorwayTelemetry.by_id || {})}\``,
+          '',
+        ].join('\n')
+      : [
+          '## Doorway session telemetry (Z-DOORWAY-3)',
+          '',
+          `- **Log:** not present (\`${SESSION_LOG_REL}\`)`,
+          '',
+        ].join('\n');
 
   const md = [
     '# Z-DOORWAY-2 workspace doorway status',
@@ -266,6 +375,7 @@ function main() {
     '',
     `- **Available:** ${cursor.available}`,
     '',
+    telMd,
     '## Entries',
     '',
     '| id | enabled | status | type | path_exists | open_eligible | signal | first issue |',

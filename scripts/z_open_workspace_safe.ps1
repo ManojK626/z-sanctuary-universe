@@ -1,13 +1,16 @@
 #Requires -Version 5.1
 <#
 .SYNOPSIS
-  Z-DOORWAY-2 — SSWS-safe workspace/folder opener (registry only, dry-run by default).
+  Z-DOORWAY-2 / Z-DOORWAY-3 — SSWS-safe workspace/folder opener (registry only, dry-run by default).
 
 .DESCRIPTION
   Reads data/z_doorway_workspace_registry.json. Never runs npm install, npm start, deploy,
   git commands, extension installs, daemons, NAS writes, or recursive disk scans.
 
   Default: dry-run (print plan only). Pass -Apply with explicit -Id to open targets.
+
+  Z-DOORWAY-3: optional local session receipts (JSON Lines) when -Apply and -SessionLog are set.
+  Receipts never record registry path strings, secrets, env, tokens, or command output.
 
 .PARAMETER Apply
   Perform opens. Requires -Id (one or more registry entry ids). Max 12 ids per invocation.
@@ -18,6 +21,10 @@
 .PARAMETER Tag
   Optional filter: only entries whose tags contain this string (case-insensitive).
 
+.PARAMETER SessionLog
+  With -Apply only: append one JSON line per processed row to data/reports/z_doorway_session_log.jsonl
+  (allowed fields per docs/Z_DOORWAY_3_TELEMETRY_POLICY.md).
+
 .NOTES
   Prefer Cursor for workspace and folder. Falls back to VS Code (code) when Cursor is missing.
   Opening a workspace or folder is not running the project.
@@ -25,7 +32,8 @@
 param(
   [switch] $Apply,
   [string[]] $Id = @(),
-  [string] $Tag = ''
+  [string] $Tag = '',
+  [switch] $SessionLog
 )
 
 Set-StrictMode -Version Latest
@@ -45,6 +53,10 @@ if ($Apply -and ($null -eq $Id -or $Id.Count -eq 0)) {
 
 if ($Apply -and $Id.Count -gt 12) {
   throw 'At most 12 -Id values per -Apply batch. Split into multiple invocations.'
+}
+
+if ($SessionLog -and -not $Apply) {
+  throw '-SessionLog is only valid together with -Apply (dry-run does not write telemetry).'
 }
 
 $raw = Get-Content -LiteralPath $RegistryPath -Raw -Encoding UTF8
@@ -112,6 +124,20 @@ function Get-SkipReason {
   return ''
 }
 
+function Append-DoorwaySessionReceipt {
+  param(
+    [string] $LogPath,
+    [hashtable] $Record
+  )
+  $dir = Split-Path -Parent $LogPath
+  if (-not (Test-Path -LiteralPath $dir)) {
+    New-Item -ItemType Directory -Path $dir -Force | Out-Null
+  }
+  $json = ($Record | ConvertTo-Json -Compress -Depth 8)
+  $enc = New-Object System.Text.UTF8Encoding $false
+  [System.IO.File]::AppendAllText($LogPath, $json + [Environment]::NewLine, $enc)
+}
+
 function Open-OneTarget {
   param([string]$Target, [string]$Preferred, [bool]$DoLaunch)
   $cursor = Get-CursorExe
@@ -148,8 +174,10 @@ $selected = foreach ($e in $entries) {
   $e
 }
 
+$SessionLogPath = Join-Path $RepoRoot 'data/reports/z_doorway_session_log.jsonl'
+
 Write-Host ''
-Write-Host ('Z-DOORWAY-2 safe opener | Apply=' + [bool]$Apply.IsPresent + ' | Tag=' + $Tag)
+Write-Host ('Z-DOORWAY-2 safe opener | Apply=' + [bool]$Apply.IsPresent + ' | SessionLog=' + [bool]$SessionLog.IsPresent + ' | Tag=' + $Tag)
 Write-Host ('Registry: ' + $RegistryPath)
 Write-Host 'This script never runs npm, git, deploy, extensions, services, or NAS writes.'
 Write-Host ''
@@ -163,8 +191,26 @@ foreach ($e in $selected) {
   $reason = Get-SkipReason -Entry $e
   $id = [string]$e.id
   $path = [string]$e.path
+  $nm = [string]$e.name
+  if ([string]::IsNullOrWhiteSpace($nm)) { $nm = $id }
+  $pathExists = Test-PathExists $path
+  $stRaw = [string]$e.status
+  $stLog = if ($stRaw) { $stRaw.Trim().ToUpperInvariant() } else { '' }
+
   if ($reason) {
     Write-Host ("[SKIP] id=" + $id + ' reason=' + $reason)
+    if ($Apply -and $SessionLog) {
+      Append-DoorwaySessionReceipt -LogPath $SessionLogPath -Record @{
+        timestamp      = (Get-Date).ToUniversalTime().ToString('o')
+        id             = $id
+        name           = $nm
+        path_exists    = [bool]$pathExists
+        status         = $stLog
+        action         = 'open_workspace_only'
+        result         = 'skipped'
+        operator_mode  = 'apply'
+      }
+    }
     continue
   }
 
@@ -177,7 +223,39 @@ foreach ($e in $selected) {
   if ([string]::IsNullOrWhiteSpace($pref)) { $pref = 'cursor' }
   $targetNorm = $path.Trim().Replace('/', [System.IO.Path]::DirectorySeparatorChar)
   if ($Apply) {
-    Open-OneTarget -Target $targetNorm -Preferred $pref.Trim().ToLowerInvariant() -DoLaunch $true
+    $launchOk = $false
+    $resultTag = 'error'
+    $launchEx = $null
+    try {
+      Open-OneTarget -Target $targetNorm -Preferred $pref.Trim().ToLowerInvariant() -DoLaunch $true
+      $launchOk = $true
+      $resultTag = 'opened'
+    }
+    catch {
+      $launchEx = $_
+      $msg = $_.Exception.Message
+      if ($msg -like '*Neither Cursor nor VS Code*') {
+        $resultTag = 'ide_unavailable'
+      }
+      else {
+        $resultTag = 'error'
+      }
+    }
+    if ($Apply -and $SessionLog) {
+      Append-DoorwaySessionReceipt -LogPath $SessionLogPath -Record @{
+        timestamp      = (Get-Date).ToUniversalTime().ToString('o')
+        id             = $id
+        name           = $nm
+        path_exists    = [bool]$pathExists
+        status         = $stLog
+        action         = 'open_workspace_only'
+        result         = $resultTag
+        operator_mode  = 'apply'
+      }
+    }
+    if (-not $launchOk) {
+      throw $launchEx
+    }
     Write-Host ("[OPENED] id=" + $id)
   }
   else {
@@ -186,5 +264,5 @@ foreach ($e in $selected) {
 }
 
 Write-Host ''
-Write-Host '[DONE] Z-DOORWAY-2 doorway pass complete (opening a workspace is not running the project).'
+Write-Host '[DONE] doorway pass complete (Z-DOORWAY-2 open-only; Z-DOORWAY-3 optional -SessionLog receipts).'
 exit 0

@@ -1,0 +1,2 @@
+{"timestamp":"2026-05-11T10:00:00.000Z","id":"ssws_hub_workspace","name":"Z-Sanctuary SSWS multi-root workspace","path_exists":true,"status":"GREEN","action":"open_workspace_only","result":"skipped","operator_mode":"apply"}
+{"timestamp":"2026-05-11T10:00:01.000Z","id":"ssws_hub_folder","name":"Z-Sanctuary Universe repository folder","path_exists":true,"status":"GREEN","action":"open_workspace_only","result":"opened","operator_mode":"apply"}
