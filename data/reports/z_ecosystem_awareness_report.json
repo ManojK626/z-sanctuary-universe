@@ -1,6 +1,6 @@
 {
   "schema": "z_ecosystem_awareness_report_v1",
-  "generated_at": "2026-05-11T20:13:52.830Z",
+  "generated_at": "2026-05-11T20:18:43.699Z",
   "overall_signal": "YELLOW",
   "registry_path": "data\\z_ecosystem_awareness_registry.json",
   "policy_path": "data\\z_ecosystem_alert_policy.json",
