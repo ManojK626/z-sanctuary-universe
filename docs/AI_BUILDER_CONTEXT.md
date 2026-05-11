@@ -11,6 +11,21 @@
 5. `data/z_core_engines_registry.json` — high-level **engine** labels (not full runtime proof).
 6. [Z_SANCTUARY_BUILD_RULES.md](Z_SANCTUARY_BUILD_RULES.md) — hard boundaries for builders.
 
+## Canonical control root and satellite bridges (Z-CONTROL-LINK-1)
+
+**Sealed on main.** **`Z_Sanctuary_Universe`** (this hub repository) is the **canonical governance and control root** for Z-Sanctuary. Satellite projects must not fork long doctrine; they carry **one thin bridge file** only: **`docs/Z_SANCTUARY_CONTROL_LINK.md`**, aligned from the hub template at the same path.
+
+| Concern | Hub source |
+| --- | --- |
+| Approved satellite destinations | `data/z_satellite_control_link_manifest.json` |
+| Bridge sync (default dry-run) | `scripts/z_sync_control_links.mjs` — `npm run z:control-links:dry`; `npm run z:control-links:apply` only after explicit operator review |
+| One-root policy | [Z_SANCTUARY_CANONICAL_CONTROL_ROOT.md](Z_SANCTUARY_CANONICAL_CONTROL_ROOT.md) |
+| Cursor-wide reminder | `.cursor/rules/z_control_root_awareness.mdc` |
+
+**Do not:** scan arbitrary PC folders; write outside manifest-approved targets; deploy; bind domains; write or rotate secrets; install IDE extensions; run background services; or mutate NAS paths from this lane. Satellites that depend on NAS stay **`NAS_WAIT`** until the mount is verified and the manifest is updated with operator care.
+
+**Z-DOORWAY-2** (governed local open lane): [AMK_PROJECT_DOORWAY_LAUNCHER.md](AMK_PROJECT_DOORWAY_LAUNCHER.md) — opens approved workspaces and folders **only** (Cursor / VS Code / Explorer); **no** builds or deploys.
+
 ## IDE Safeguards
 
 - **[VS_FALLBACK_1_VSCODE_OPERATING_MODE.md](VS_FALLBACK_1_VSCODE_OPERATING_MODE.md)** — Safe fallback doctrine when Cursor unavailable. Archive vs real repo distinction enforced. Read first before any IDE changes.
@@ -87,6 +102,7 @@
 | [Z_CADENCE_REAL_CYCLE_RUNNER.md](Z_CADENCE_REAL_CYCLE_RUNNER.md) | Z-CADENCE-1 allowlisted cadence runner and follow-up logic (report-only). |
 | [Z_MR_BUG_MINI_FIXER_POLICY.md](Z_MR_BUG_MINI_FIXER_POLICY.md) | Auto-fix boundary policy: docs hygiene only, no runtime/security rewires. |
 | [PHASE_Z_SEC_TRIPLECHECK_1_GREEN_RECEIPT.md](PHASE_Z_SEC_TRIPLECHECK_1_GREEN_RECEIPT.md) | Seal receipt for Z-SEC-TRIPLECHECK-1 audit phase. |
+| [PHASE_Z_CURSOR_AWARENESS_1_GREEN_RECEIPT.md](PHASE_Z_CURSOR_AWARENESS_1_GREEN_RECEIPT.md) | Cursor awareness for Z-CONTROL-LINK-1 seal and canonical hub control root. |
 | [Z_AMK_GTAI_STRATEGY_COUNCIL.md](Z_AMK_GTAI_STRATEGY_COUNCIL.md) | Strategy council rollup posture and advisory law. |
 | [Z_ROOT_7_GUARDIAN_COORDINATION_LAYER.md](Z_ROOT_7_GUARDIAN_COORDINATION_LAYER.md) | Root guardian symbolic layer and limits. |
 | [ZUNO_WEEKLY_FULL_RUN_AND_OBSERVATION.md](ZUNO_WEEKLY_FULL_RUN_AND_OBSERVATION.md) | Weekly observation cadence and evidence routine. |
@@ -94,6 +110,8 @@
 
 ## Verify lanes (technical receipts)
 
+- `npm run z:control-links:dry` — Z-CONTROL-LINK-1: plan bridge sync from hub template to manifest-approved satellites only (no satellite file writes; hub reports under `data/reports/` may refresh).
+- `npm run z:control-links:apply` — same script with `--apply`; writes **only** the bridge markdown path declared in the manifest (operator-gated).
 - `npm run verify:md` — markdown gate; required before sealing doc-only phases.
 - `npm run dashboard:registry-verify` — dashboard registry consistency receipt.
 - `npm run z:traffic` — traffic minibot status refresh.

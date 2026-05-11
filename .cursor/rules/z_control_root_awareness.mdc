@@ -1,0 +1,36 @@
+---
+description: Z-CONTROL-LINK-1 — canonical hub control root, satellite bridge files only, manifest-bound sync; default dry-run; no arbitrary scans or sacred moves from this lane.
+globs:
+alwaysApply: true
+---
+
+# Z-Sanctuary: Control root awareness (Z-CONTROL-LINK-1)
+
+**Z-CONTROL-LINK-1 is sealed on `main`.** Treat **`Z_Sanctuary_Universe` (this hub repo)** as the **canonical governance and control root** for Z-Sanctuary satellite project links. Long doctrine, registries, and verification authority live here—not duplicated across siblings.
+
+## Satellites
+
+- Satellites carry **one thin bridge file** only: `docs/Z_SANCTUARY_CONTROL_LINK.md` (relative to each satellite root), aligned from the hub template of the same path.
+- **Approved targets** live in [`data/z_satellite_control_link_manifest.json`](data/z_satellite_control_link_manifest.json). Do not assume a folder is a satellite until it appears there with intentional `enabled` / `status`.
+
+## Sync (operator tooling)
+
+- Hub script: [`scripts/z_sync_control_links.mjs`](scripts/z_sync_control_links.mjs).
+- **`npm run z:control-links:dry`** — default **dry-run** (plan / compare; writes hub sync **reports** only under `data/reports/`).
+- **`npm run z:control-links:apply`** — writes the bridge markdown **only** to manifest-approved destinations; use only after human review.
+
+## Hard boundaries for AI and automation
+
+- **Do not** scan arbitrary PC folders or enumerate drives outside the manifest-driven loop in `z_sync_control_links.mjs`.
+- **Do not** write bridge or governance files **outside** manifest-approved target paths.
+- **Do not** deploy, bind domains, write or rotate secrets, install IDE extensions, start background services, or mutate NAS trees from this control-link lane.
+- **NAS** rows stay **`NAS_WAIT`** (manifest + script) until the path is mounted, verified, and an operator enables them cautiously.
+
+## Next safe operator lane (open only)
+
+- **Z-DOORWAY-2** — governed local project opener: [`docs/AMK_PROJECT_DOORWAY_LAUNCHER.md`](docs/AMK_PROJECT_DOORWAY_LAUNCHER.md). Opens Cursor / VS Code / Explorer per registry only—**no** builds, installs, or deploys.
+
+## Deeper context
+
+- Hub policy: [`docs/Z_SANCTUARY_CANONICAL_CONTROL_ROOT.md`](docs/Z_SANCTUARY_CANONICAL_CONTROL_ROOT.md)
+- Builder briefing: [`docs/AI_BUILDER_CONTEXT.md`](docs/AI_BUILDER_CONTEXT.md)
