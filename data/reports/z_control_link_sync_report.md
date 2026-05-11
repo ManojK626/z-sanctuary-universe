@@ -1,6 +1,6 @@
 # Z-Control-Link sync report
 
-Generated: 2026-05-11T19:23:30.917Z
+Generated: 2026-05-11T19:45:26.143Z
 Mode: **dry-run**
 Template SHA-256: `d346d05828db89bfda4d194f7dec85e547a992431b3f35e8cd5468e0614a4406`
 Overall OK: **yes**
