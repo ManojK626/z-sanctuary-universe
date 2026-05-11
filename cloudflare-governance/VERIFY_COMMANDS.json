@@ -1,0 +1,21 @@
+{
+  "required_before_preview": [
+    "npm run verify:md",
+    "npm run z:traffic",
+    "npm run z:car2"
+  ],
+  "required_before_production": [
+    "npm run verify:md",
+    "npm run z:traffic",
+    "npm run z:car2"
+  ],
+  "production_requires_human_approval": true,
+  "forbidden_without_human_approval": [
+    "production deploy",
+    "secret write",
+    "secret delete",
+    "billing change",
+    "domain binding",
+    "force push"
+  ]
+}

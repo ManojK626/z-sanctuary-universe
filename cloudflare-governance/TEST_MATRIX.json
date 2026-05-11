@@ -1,0 +1,19 @@
+{
+  "green_tier": {
+    "required": [
+      "npm run verify:md",
+      "npm run z:traffic",
+      "npm run z:car2"
+    ],
+    "meaning": "Repository is ready for preview consideration only."
+  },
+  "production_tier": {
+    "required": [
+      "npm run verify:md",
+      "npm run z:traffic",
+      "npm run z:car2",
+      "AMK explicit approval"
+    ],
+    "meaning": "Production may be considered after human approval."
+  }
+}
