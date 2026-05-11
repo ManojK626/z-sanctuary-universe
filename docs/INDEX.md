@@ -1,5 +1,4 @@
-<<<<<<< HEAD
-﻿# Docs index â€” registry and governance slices
+# Docs index â€” registry and governance slices
 
 Compact entry points for **read-only** hub registries and AMK-facing evidence. For the full universe index see [../INDEX.md](../INDEX.md).
 
@@ -103,8 +102,6 @@ Compact entry points for **read-only** hub registries and AMK-facing evidence. F
 | `data/z_ssws_workspace_spine_registry.json` | `data/z_ssws_launch_requirements_policy.json` |
 | `data/z_api_spine_registry.json` | `data/z_api_communication_flow_policy.json` |
 | `data/z_ecosystem_awareness_registry.json` | `data/z_ecosystem_alert_policy.json` |
-=======
-# Z-Sanctuary Universe
 
 ## Overview
 
@@ -155,4 +152,3 @@ This repository currently acts as:
 ## Status
 
 This repository is under active structured development.
->>>>>>> d5ac8fea3583ac99fa20a15e8ade760788d6deb0

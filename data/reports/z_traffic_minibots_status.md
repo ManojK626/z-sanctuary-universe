@@ -1,22 +1,22 @@
 # Z-Traffic Minibots — status report
 
-**Generated:** 2026-05-11T14:09:41.810Z
+**Generated:** 2026-05-11T14:22:37.022Z
 
 ## Traffic Chief
 
 | Field | Value |
 |----|----|
-| **Overall signal** | **RED** |
+| **Overall signal** | **GREEN** |
 | Human decision required | no |
 | Blocked categories (hint) | — |
 
 ### Recommended action
 
-Stop: fix failing required checks before opening a new lane.
+Required checks passed. You may open the next Turtle lane after human scope choice.
 
 ### Next lane advice
 
-Run failing scripts individually; restore green markdown, CAR², dashboard registry, and cross-project sync.
+Pick one domain; document rollback; run this report again after edits.
 
 *Minibots do not replace UI/manual acceptance. Reload Cursor if Problems panel looks stale.*
 
@@ -24,13 +24,13 @@ Run failing scripts individually; restore green markdown, CAR², dashboard regis
 
 | MiniBot | Command | Status | Signal | Duration (ms) |
 |----|----|----|----|----:|
-| Markdown Traffic Bot | `npm run verify:md` | fail | RED | 3571 |
-| CAR² Traffic Bot | `npm run z:car2` | pass | GREEN | 2959 |
-| Dashboard Traffic Bot | `npm run dashboard:registry-verify` | pass | GREEN | 492 |
-| Cross-Project Bot | `npm run z:cross-project:sync` | pass | GREEN | 398 |
-| Z-AWARE-1 Ecosystem Awareness Bot | `npm run z:ecosystem:awareness` | pass | GREEN | 427 |
-| Z-API-SPINE-1 Power Cell Bot | `npm run z:api:spine` | pass | GREEN | 434 |
-| Z-SSWS-LINK-1 Launch Requirements Bot | `npm run z:ssws:requirements` | pass | GREEN | 438 |
+| Markdown Traffic Bot | `npm run verify:md` | pass | GREEN | 3700 |
+| CAR² Traffic Bot | `npm run z:car2` | pass | GREEN | 3122 |
+| Dashboard Traffic Bot | `npm run dashboard:registry-verify` | pass | GREEN | 496 |
+| Cross-Project Bot | `npm run z:cross-project:sync` | pass | GREEN | 459 |
+| Z-AWARE-1 Ecosystem Awareness Bot | `npm run z:ecosystem:awareness` | pass | GREEN | 431 |
+| Z-API-SPINE-1 Power Cell Bot | `npm run z:api:spine` | pass | GREEN | 451 |
+| Z-SSWS-LINK-1 Launch Requirements Bot | `npm run z:ssws:requirements` | pass | GREEN | 440 |
 | DRP Gate Bot | `(next-lane hint analysis — read-only)` | advisory | GREEN | 0 |
 | AI Builder Bot | `npm run z:ai-builder:refresh` | skipped | skipped | 0 |
 
@@ -38,19 +38,7 @@ Run failing scripts individually; restore green markdown, CAR², dashboard regis
 
 ### Markdown Traffic Bot
 
-Exit code 1. See stderr_tail in JSON.
-
-<details><summary>Output tail</summary>
-
-```text
-docs/INDEX.md:106:1 error MD055/table-pipe-style Table pipe style [Expected: leading_and_trailing; Actual: no_leading_or_trailing; Missing leading pipe]
-docs/INDEX.md:106:7 error MD055/table-pipe-style Table pipe style [Expected: leading_and_trailing; Actual: no_leading_or_trailing; Missing trailing pipe]
-docs/INDEX.md:106:7 error MD056/table-column-count Table column count [Expected: 2; Actual: 1; Too few cells, row will be missing data]
-docs/INDEX.md:106 error MD058/blanks-around-tables Tables should be surrounded by blank lines [Context: "======="]
-docs/INDEX.md:107 error MD022/blanks-around-headings Headings should be surrounded by blank lines [Expected: 1; Actual: 0; Above] [Context: "# Z-Sanctuary Universe"]
-
-```
-</details>
+Check passed.
 
 ### CAR² Traffic Bot
 

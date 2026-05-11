@@ -1,6 +1,6 @@
 # Z Dashboard registry verify
 
-- Generated: 2026-05-11T14:09:48.796Z
+- Generated: 2026-05-11T14:22:44.304Z
 - Status: **GREEN**
 - Hub root: `C:\Cursor Projects Organiser\Z_Sanctuary_Universe`
 
