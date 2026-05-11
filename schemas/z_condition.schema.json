@@ -1,0 +1,22 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "z_condition.schema.json",
+  "title": "Z-Condition",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["path", "op", "value"],
+  "properties": {
+    "path": {
+      "description": "JSON pointer-like path into the context snapshot.",
+      "type": "string",
+      "minLength": 2,
+      "maxLength": 256,
+      "pattern": "^\\/.*"
+    },
+    "op": {
+      "type": "string",
+      "enum": ["eq", "ne", "gt", "gte", "lt", "lte", "in", "not_in", "exists"]
+    },
+    "value": {}
+  }
+}

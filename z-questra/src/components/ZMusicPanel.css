@@ -1,0 +1,185 @@
+.zq-music-panel {
+  margin-top: 1rem;
+}
+
+.zq-music-disclaimer {
+  font-size: 0.78rem;
+  opacity: 0.88;
+  margin: 0 0 0.65rem;
+  line-height: 1.35;
+}
+
+.zq-music-context {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem;
+  align-items: center;
+  margin-bottom: 0.65rem;
+}
+
+.zq-music-context span {
+  font-size: 0.78rem;
+  opacity: 0.85;
+}
+
+.zq-music-pills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  margin-bottom: 0.75rem;
+}
+
+.zq-music-pill {
+  border-radius: 999px;
+  border: 1px solid color-mix(in hsl, var(--zq-accent, #7ecbff) 45%, transparent);
+  background: color-mix(in hsl, var(--zq-surface, #0f141c) 88%, transparent);
+  color: inherit;
+  padding: 0.28rem 0.75rem;
+  font-size: 0.8rem;
+  cursor: pointer;
+}
+
+.zq-music-pill[aria-pressed='true'] {
+  box-shadow: 0 0 0 2px color-mix(in hsl, var(--zq-accent, #7ecbff) 55%, transparent);
+}
+
+.zq-music-now {
+  border-radius: var(--zq-radius, 10px);
+  border: 1px solid color-mix(in hsl, var(--zq-accent, #7ecbff) 35%, transparent);
+  padding: 0.55rem 0.7rem;
+  margin-bottom: 0.75rem;
+  background: color-mix(in hsl, var(--zq-surface, #0f141c) 92%, transparent);
+}
+
+.zq-music-now h4 {
+  margin: 0 0 0.35rem;
+  font-size: 0.95rem;
+}
+
+.zq-music-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.zq-music-list li {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 0.5rem;
+  padding: 0.35rem 0;
+  border-bottom: 1px solid color-mix(in hsl, var(--zq-text, #e8f6ff) 12%, transparent);
+  font-size: 0.85rem;
+}
+
+.zq-music-feedback {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem;
+  margin-top: 0.65rem;
+}
+
+.zq-music-feedback button {
+  border-radius: 8px;
+  border: 1px solid color-mix(in hsl, var(--zq-accent, #7ecbff) 40%, transparent);
+  background: transparent;
+  color: inherit;
+  padding: 0.25rem 0.55rem;
+  font-size: 0.8rem;
+  cursor: pointer;
+}
+
+.zq-music-next {
+  margin-top: 0.75rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+}
+
+.zq-music-next button {
+  border-radius: 8px;
+  border: 1px solid color-mix(in hsl, var(--zq-gold, #f0c14b) 45%, transparent);
+  background: color-mix(in hsl, var(--zq-gold, #f0c14b) 12%, transparent);
+  color: inherit;
+  padding: 0.3rem 0.65rem;
+  font-size: 0.8rem;
+  cursor: pointer;
+}
+
+.zq-music-log {
+  margin-top: 0.65rem;
+  font-size: 0.72rem;
+  opacity: 0.8;
+  max-height: 5.5rem;
+  overflow: auto;
+}
+
+.zq-music-consent {
+  margin-bottom: 0.75rem;
+  padding: 0.55rem 0.65rem;
+  border-radius: var(--zq-radius, 10px);
+  border: 1px solid color-mix(in hsl, var(--zq-accent, #7ecbff) 38%, transparent);
+  background: color-mix(in hsl, var(--zq-surface, #0f141c) 94%, transparent);
+}
+
+.zq-music-consent-lead {
+  margin: 0 0 0.45rem;
+  font-size: 0.8rem;
+  line-height: 1.35;
+}
+
+.zq-music-consent-enable,
+.zq-music-consent-disable {
+  border-radius: 8px;
+  padding: 0.35rem 0.75rem;
+  font-size: 0.82rem;
+  cursor: pointer;
+  border: 1px solid color-mix(in hsl, var(--zq-accent, #7ecbff) 45%, transparent);
+  background: color-mix(in hsl, var(--zq-accent, #7ecbff) 18%, transparent);
+  color: inherit;
+}
+
+.zq-music-consent-disable {
+  border-color: color-mix(in hsl, var(--zq-text-muted, #9aa7b8) 45%, transparent);
+  background: transparent;
+}
+
+.zq-music-player {
+  margin-bottom: 0.85rem;
+  padding: 0.55rem 0.65rem;
+  border-radius: var(--zq-radius, 10px);
+  border: 1px dashed color-mix(in hsl, var(--zq-accent, #7ecbff) 35%, transparent);
+}
+
+.zq-music-player-kids {
+  margin: 0 0 0.45rem;
+  font-size: 0.78rem;
+  color: hsl(38 85% 62%);
+}
+
+.zq-music-player-meta {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+  margin-bottom: 0.45rem;
+  font-size: 0.82rem;
+}
+
+.zq-music-player-seed,
+.zq-music-player-source,
+.zq-music-player-intensity {
+  font-size: 0.76rem;
+  opacity: 0.88;
+}
+
+.zq-music-player-missing {
+  margin: 0;
+  font-size: 0.8rem;
+  line-height: 1.35;
+}
+
+.zq-music-audio-el {
+  width: 100%;
+  max-width: 28rem;
+  margin-top: 0.35rem;
+}

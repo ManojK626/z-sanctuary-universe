@@ -1,0 +1,20 @@
+{
+  "generated_at": "2026-04-21T14:13:59.026Z",
+  "schema_version": 1,
+  "governance_note": "Learning is observational — append-only log; no auto-execution or governance override.",
+  "learning_log": "data/logs/z_ai_learning_log.jsonl",
+  "inputs_echo": {
+    "coherence_score": 53,
+    "coherence_status": "misaligned",
+    "signal_health": "low",
+    "adaptive_top_domain": "signal",
+    "adaptive_risk": "high"
+  },
+  "learning_cycles": 0,
+  "effectiveness_by_strategy": {},
+  "top_strategies": [],
+  "avoid_strategies": [],
+  "system_learning_state": "early_learning",
+  "confidence": "early",
+  "best_strategy": null
+}

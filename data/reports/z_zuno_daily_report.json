@@ -1,0 +1,496 @@
+{
+  "generated_at": "2026-05-05T18:25:52.140Z",
+  "z_brother_today": {
+    "generated_for": "2026-05-05",
+    "alignment": "Clarity, compassion, one core — operator-sovereign (Z-Brother).",
+    "system_status_hub": {
+      "verify": "PASS",
+      "status": "healthy",
+      "last_check": "2026-05-01",
+      "last_check_iso": "2026-05-01T17:24:19.114Z",
+      "projects": 15,
+      "source": "verify:ci"
+    },
+    "guardian_suggestions": [
+      "Before a major release, run npm run verify:full (long pipeline) from the hub.",
+      "Keep using Z: CI quick verify (folders + structure + registry) in PR checks when GitHub Actions is enabled."
+    ],
+    "project_freshness": {
+      "present": true,
+      "generated_at": "2026-05-01T17:24:19.068Z",
+      "ok_count": 12,
+      "missing_count": 1,
+      "total": 15
+    },
+    "garage": {
+      "pressure": "low",
+      "critical_projects": 0,
+      "note": null
+    },
+    "refresh_hint": "npm run zuno:z-brother-daily"
+  },
+  "zci": {
+    "total_projects": 30,
+    "high_priority": 28,
+    "medium_priority": 2,
+    "low_priority": 0
+  },
+  "z_garage": {
+    "pressure": "low",
+    "critical_projects": 0,
+    "note": null
+  },
+  "qa_rp": {
+    "registry_present": true,
+    "registry_file": "data/z_qa_rp_registry.json",
+    "id": "z-qa-rp",
+    "title": "Z-Q&A&RP",
+    "dashboard_ui": "/dashboard/z-qa-rp/index.html",
+    "dashboard_url_resolved": null,
+    "drp_gates_count": 14
+  },
+  "ai_ecosphere": {
+    "ledger_present": true,
+    "ledger_file": "data/reports/z_ai_ecosphere_ledger.json",
+    "generated_at": "2026-05-03T14:38:59.183Z",
+    "overall_sync_score": 67,
+    "overall_band": "yellow",
+    "rings_count": 4,
+    "task_log_entries": 2
+  },
+  "signal_health": {
+    "present": true,
+    "status": "low",
+    "total_entries": 2,
+    "creator_entries": 2,
+    "business_entries": 0,
+    "last_entry_at": "2026-04-27T20:05:00.000Z",
+    "trend": "insufficient",
+    "window_days": 7,
+    "note": "Low activity signal — system may appear stable but lacks real-world input.",
+    "file": "data/reports/z_ai_signal_health.json"
+  },
+  "system_health": {
+    "present": true,
+    "health_score": 93,
+    "status": "stable",
+    "pressure": "low",
+    "modules_total": 30,
+    "healthy_modules": 28,
+    "warning_modules": 2,
+    "critical_modules": 0,
+    "note": "System structurally healthy with minor areas for improvement.",
+    "file": "data/reports/z_system_health.json"
+  },
+  "communication_health": {
+    "present": true,
+    "health_score": 63,
+    "flow_status": "degraded",
+    "status": "attention",
+    "observer_alignment": "aligned",
+    "issues_count": 1,
+    "observer_freshness": "stale",
+    "manifest_alignment": "aligned",
+    "commflow_posture": "attention",
+    "note": "Communication flow degraded — refresh comms/AAFRTC or review commflow; not a hard gate.",
+    "file": "data/reports/z_communication_health.json"
+  },
+  "vault_spine": {
+    "present": true,
+    "status": "green",
+    "spine_files": 8,
+    "links_checked": 40,
+    "broken": 0,
+    "file": "data/reports/z_vault_spine_manifest.json",
+    "index": "docs/z-vault/INDEX.md"
+  },
+  "system_coherence": {
+    "present": true,
+    "coherence_score": 53,
+    "status": "misaligned",
+    "confidence": "medium",
+    "contradictions_count": 3,
+    "note": "Several layers disagree — investigate signal, flow, or consistency before scaling.",
+    "file": "data/reports/z_system_coherence.json"
+  },
+  "adaptive_coherence": {
+    "present": true,
+    "top_action": "Append real creator + business lines to task JSONL logs (features, fixes, decisions) then re-run full scan.",
+    "prediction_risk": "high",
+    "prediction_next": "unstable",
+    "root_causes_count": 3,
+    "actions_count": 3,
+    "file": "data/reports/z_adaptive_coherence.json"
+  },
+  "self_tuning": {
+    "present": true,
+    "learning_cycles": 0,
+    "system_learning_state": "early_learning",
+    "confidence": "early",
+    "top_strategy": null,
+    "best_avg_impact": null,
+    "file": "data/reports/z_self_tuning.json"
+  },
+  "experience_memory": {
+    "present": true,
+    "patterns_detected": 1,
+    "cycles_detected": 0,
+    "confidence": "low",
+    "top_insight": "Most common pre-action context: \"unknown context\" (3x; avg coherence n/a; typical outcome: unknown).",
+    "file": "data/reports/z_experience_memory.json"
+  },
+  "experience_intelligence": {
+    "present": true,
+    "top_strategy": null,
+    "system_focus": "stabilization",
+    "avoid_pattern": "unknown context",
+    "confidence": "low",
+    "file": "data/reports/z_experience_intelligence.json"
+  },
+  "fusion_council": {
+    "present": true,
+    "primary_focus": "signal_strengthening",
+    "consensus": 1,
+    "confidence": "high",
+    "conflicts": [],
+    "final_recommendation": "Focus on signal strengthening before secondary actions.",
+    "file": "data/reports/z_fusion_council.json"
+  },
+  "dsr": {
+    "present": true,
+    "status": "attention",
+    "duplicates": 2,
+    "similar": 1,
+    "conflicts": 9,
+    "excluded_entries": 10,
+    "file": "data/reports/z_dsr_analysis.json",
+    "note": "Resolve duplicate modules: choose canonical source, then merge or isolate alternatives."
+  },
+  "formula_sync": {
+    "present": true,
+    "status": "ok",
+    "confidence": "high",
+    "checks_pass": 6,
+    "checks_total": 7,
+    "guidance": "Formula posture, spine integrity, and base architecture are aligned.",
+    "file": "data/reports/z_formula_sync_check.json"
+  },
+  "traffic_intelligence": {
+    "present": true,
+    "traffic_state": "moderate",
+    "bottleneck": "commflow",
+    "priority_lane": "fix_flow",
+    "reasons": [
+      "Communication flow degraded",
+      "Low signal activity",
+      "System coherence misaligned",
+      "Adaptive risk high"
+    ],
+    "file": "data/reports/z_traffic_intelligence.json"
+  },
+  "fhmff_lite": {
+    "present": true,
+    "system_state": "partially_frozen",
+    "confidence": "high",
+    "frozen_count": 4,
+    "hibernate_count": 2,
+    "advisory": true,
+    "file": "data/reports/z_fhmff_lite.json"
+  },
+  "z_zecce": {
+    "present": true,
+    "advisory": true,
+    "overall_posture": "aligned",
+    "pass_count": 5,
+    "total_steps": 5,
+    "generated_at": "2026-04-23T21:44:06.996Z",
+    "file": "data/reports/z_zecce_confirmations.json"
+  },
+  "kbozsu_ingest": {
+    "present": true,
+    "schema_version": 2,
+    "phase": "A+B",
+    "generated_at": "2026-04-24T19:21:19.942Z",
+    "entry_count": 23,
+    "hashed_files": 5,
+    "workspace_lint_status": "no_workspace_file",
+    "file": "data/reports/z_kbozsu_codex.json"
+  },
+  "mini_bots": {
+    "guardian": {
+      "present": true,
+      "generated_at": "2026-04-26T15:14:58.183Z",
+      "missing": 0,
+      "present_count": 10,
+      "highest_severity": "LOW",
+      "severity": {
+        "HIGH": 0,
+        "MEDIUM": 0,
+        "LOW": 2,
+        "NONE": 10
+      },
+      "file": "data/reports/z_bot_guardian.json"
+    },
+    "sync": {
+      "present": true,
+      "generated_at": "2026-04-25T22:14:58.393Z",
+      "latest_snapshot_dir": "data/reports/bot_sync_snapshots/2026-04-25T22-14-58-389Z",
+      "file": "data/reports/z_bot_sync.json"
+    },
+    "health": {
+      "present": true,
+      "generated_at": "2026-04-26T01:11:29.880Z",
+      "memory_used_pct": 50,
+      "platform": "win32",
+      "file": "data/reports/z_bot_health.json"
+    }
+  },
+  "bot_alerts": {
+    "present": true,
+    "generated_at": "2026-04-26T01:11:30.297Z",
+    "overall": "clear",
+    "total_alerts": 0,
+    "by_level": {
+      "HIGH": 0,
+      "MEDIUM": 0
+    },
+    "file": "data/reports/z_bot_alerts.json"
+  },
+  "bot_decisions": {
+    "present": true,
+    "schema_version": 2,
+    "generated_at": "2026-04-26T01:11:31.126Z",
+    "total_decisions": 0,
+    "lifecycle": {
+      "pending": 0,
+      "acknowledged": 0,
+      "resolved": 0,
+      "dismissed": 0
+    },
+    "file": "data/reports/z_bot_decisions.json"
+  },
+  "decision_patterns": {
+    "present": true,
+    "generated_at": "2026-04-26T12:14:00.560Z",
+    "total_patterns": 1,
+    "total_log_entries": 2,
+    "high_severity_count": 0,
+    "file": "data/reports/z_bot_patterns.json"
+  },
+  "decision_insight": {
+    "rootcause": {
+      "present": true,
+      "generated_at": "2026-04-26T01:11:31.535Z",
+      "results_count": 1,
+      "file": "data/reports/z_bot_rootcause.json"
+    },
+    "predict": {
+      "present": true,
+      "generated_at": "2026-04-26T01:11:31.937Z",
+      "predictions_count": 1,
+      "file": "data/reports/z_bot_predictions.json"
+    },
+    "adaptive": {
+      "present": true,
+      "generated_at": "2026-04-26T01:11:32.339Z",
+      "ranked_count": 1,
+      "file": "data/reports/z_bot_adaptive.json"
+    },
+    "execution": {
+      "present": true,
+      "plans_file": "data/reports/z_bot_execution_plans.json",
+      "result_file": "data/reports/z_bot_execution_result.json",
+      "log_file": "data/logs/z_execution_history.jsonl",
+      "plans_count": 0,
+      "last_result_at": "2026-04-25T22:15:16.245Z"
+    },
+    "strategy": {
+      "present": true,
+      "generated_at": "2026-04-26T01:11:33.156Z",
+      "strategy_count": 0,
+      "top_priority": null,
+      "file": "data/reports/z_bot_strategy.json"
+    }
+  },
+  "qosmei_core": {
+    "present": true,
+    "generated_at": "2026-05-03T14:39:05.818Z",
+    "posture": "clear",
+    "lane_priority": "optimize",
+    "confidence_band": "high",
+    "advisory_only": true,
+    "score": {
+      "composite": 100,
+      "impact": 100,
+      "urgency": 0,
+      "confidence": 100,
+      "risk": 0,
+      "structural_patterns_score": 100,
+      "evolution_phase": "baseline"
+    },
+    "recommendation": "QOSMEI clear: keep optimize lane and continue observer cadence.",
+    "file": "data/reports/z_qosmei_core_signal.json"
+  },
+  "structural_intelligence": {
+    "present": true,
+    "generated_at": "2026-05-03T14:39:01.970Z",
+    "phase": "optimized",
+    "evolution_phase": "baseline",
+    "risk": "low",
+    "score": 100,
+    "note": "stability convergence (low confidence=0.78)",
+    "patterns_n": 1,
+    "suggestions_n": 0,
+    "file": "data/reports/z_structural_patterns.json"
+  },
+  "adaptive_learning": {
+    "present": true,
+    "learning_cycles": 2,
+    "last_updated": "2026-05-03T14:39:03.143Z",
+    "weights": {
+      "rename_instability": 1,
+      "silent_drift": 1,
+      "stability_convergence": 1.1600000000000001,
+      "phantom_project": 1,
+      "over_control": 1
+    },
+    "file": "data/reports/z_adaptive_learning_state.json"
+  },
+  "cross_system": {
+    "present": true,
+    "generated_at": "2026-05-03T14:39:04.285Z",
+    "status": "aligned",
+    "confidence": 1,
+    "conflicts_n": 0,
+    "file": "data/reports/z_cross_system_learning.json"
+  },
+  "predictive_intelligence": {
+    "present": true,
+    "generated_at": "2026-05-03T14:39:04.776Z",
+    "predictions_n": 2,
+    "highest_confidence": 0.534,
+    "dominant_signal": "convergence",
+    "confidence_cap_active": true,
+    "file": "data/reports/z_predictive_intelligence.json"
+  },
+  "prediction_validation": {
+    "present": true,
+    "generated_at": "2026-05-03T14:39:05.288Z",
+    "accuracy": 1,
+    "trend": "insufficient",
+    "confidence_alignment": "insufficient",
+    "validated_n": 4,
+    "file": "data/reports/z_prediction_validation.json"
+  },
+  "external_observers": {
+    "aafrtc_context_generated_at": "2026-04-27T17:36:04.905Z",
+    "github_comms_manifest_generated_at": "2026-05-03T14:38:56.371Z",
+    "github_comms_manifest_ok": true,
+    "cloudflare_comms_manifest_generated_at": "2026-05-03T14:38:57.110Z",
+    "cloudflare_comms_manifest_ok": true,
+    "cloudflare_observer_state": "synced",
+    "manifest_files_present": {
+      "aafrtc_context": true,
+      "github_comms_manifest": true,
+      "cloudflare_comms_manifest": true
+    },
+    "note": "Observability only — run npm run comms:github-ai / comms:cloudflare-ai and node scripts/z_aafrtc_resolve.mjs to refresh timestamps."
+  },
+  "external_observers_health": {
+    "status": "stale",
+    "stale_threshold_hours": 24,
+    "max_age_hours": 192.83,
+    "note": "At least one observer timestamp exceeds threshold — refresh comms + AAFRTC context, then re-run Zuno report."
+  },
+  "fpsmc_storage": {
+    "present": true,
+    "safety": "READ_ONLY_PHASE1_NO_DELETE_NO_MOVE",
+    "fixed_drives": 1,
+    "known_roots": 13,
+    "container_volumes": 0,
+    "warnings": 0,
+    "generated_at": "2026-04-27T17:36:02.1044488Z",
+    "schema_version": "1",
+    "note": "Read-only map — not a storage vault; see docs/Z-FPSMC-FREE-POWERSHELL-MULTI-CONTAINERS.md."
+  },
+  "vdk_security": {
+    "present": true,
+    "safety": "READ_ONLY_PHASE1_NO_DELETE_NO_KILL",
+    "findings_total": 13,
+    "critical": 0,
+    "high": 2,
+    "medium": 11,
+    "low": 0,
+    "review_report": "data/reports/z_vdk_findings_review_2026-04-27.md",
+    "generated_at": "2026-04-27T19:18:00.4449563Z",
+    "file": "data/reports/z_vdk_scan_report.json",
+    "note": "Read-only scan — no auto quarantine. See docs/Z-VDK-VIRUS-DETECTION-QUARANTINE-CORE.md."
+  },
+  "vhealth_core": {
+    "present": true,
+    "posture": "caution",
+    "health_score": 70,
+    "future_risk": "medium",
+    "top_challenge": "Signal + coherence refresh",
+    "authority": "advisory_only_no_auto_execution",
+    "generated_at": "2026-04-27T20:03:29.091Z",
+    "file": "data/reports/z_vhealth_core_report.json",
+    "note": "Advisory only — see docs/Z-VHEALTH-CORE.md. Does not auto-execute or override release gates."
+  },
+  "executive_status": {
+    "internal_operations": "hold",
+    "public_launch": "ready",
+    "automation": "enabled",
+    "shadow_foundation": "ready",
+    "extension_guard": "attention",
+    "data_leak_watch": "clear",
+    "disturbance_watch": "clear"
+  },
+  "current": {
+    "date": "2026-05-05",
+    "generated_at": "2026-05-05T18:25:52.140Z",
+    "status": "HOLD",
+    "metrics": {
+      "module_total": 44,
+      "module_done": 23,
+      "module_completion_pct": 52.3,
+      "task_total": 9,
+      "task_open": 1,
+      "task_p1_open": 0,
+      "task_completion_pct": 88.9,
+      "pending_total": 0,
+      "hygiene_green": false,
+      "readiness_ready": true,
+      "readiness_gates_total": 4,
+      "readiness_gates_pass": 4,
+      "ai_agents": 4,
+      "auto_tasks": 1,
+      "otel_shadow_status": "ready",
+      "otel_shadow_checks_total": 3,
+      "otel_shadow_checks_pass": 2,
+      "policy_shadow_status": "ready",
+      "policy_shadow_checks_total": 4,
+      "policy_shadow_checks_pass": 4,
+      "troublemaker_status": "green",
+      "troublemaker_risk_class": "low",
+      "troublemaker_disturbance_score": 0,
+      "troublemaker_failed_checks": 0,
+      "data_leak_status": "green",
+      "data_leak_findings": 0,
+      "extension_guard_status": "hold",
+      "extension_guard_failed": 1
+    }
+  },
+  "trend_7d": {
+    "window_days": 7,
+    "module_completion_delta_pct": 30.6,
+    "task_open_delta": 0,
+    "pending_delta": 0,
+    "hygiene_green_days": 0,
+    "readiness_delta": 0
+  },
+  "notes": [
+    "Readiness remains gated until governance and pilot evidence pass.",
+    "AI agents remain observational unless explicitly promoted."
+  ]
+}

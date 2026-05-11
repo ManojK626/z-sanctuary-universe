@@ -1,0 +1,24 @@
+{
+  "generated_at": "2026-04-17T16:54:53.715Z",
+  "mode": "shadow",
+  "runtime_mutation": false,
+  "config_path": "observability/otel/collector.shadow.yaml",
+  "checks": [
+    {
+      "id": "collector_config_exists",
+      "pass": true,
+      "note": "collector.shadow.yaml present"
+    },
+    {
+      "id": "docker_available",
+      "pass": true,
+      "note": "docker binary detected (optional for shadow)"
+    },
+    {
+      "id": "otelcol_available",
+      "pass": false,
+      "note": "otelcol not detected (shadow mode still valid)"
+    }
+  ],
+  "status": "ready"
+}

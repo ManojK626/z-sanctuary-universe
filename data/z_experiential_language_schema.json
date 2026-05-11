@@ -1,0 +1,122 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://z-sanctuary.local/schemas/z_experiential_language_schema_v1.json",
+  "title": "Z Experiential Language Layer profile (Z-EXL-1, v1)",
+  "description": "Canonical schema for the Z Experiential Language Layer (Z-EXL-1). Doctrine: docs/design/Z_EXPERIENTIAL_LANGUAGE_LAYER.md. Read-only declarative profile shared across Z-* projects. No runtime coupling.",
+  "type": "object",
+  "required": [
+    "schema",
+    "project_id",
+    "experience_profile_id",
+    "sensory_mode",
+    "rhythm_language",
+    "motion_intensity",
+    "color_realm",
+    "glow_level",
+    "adaptation_authority",
+    "memory_posture",
+    "accessibility_invariants",
+    "project_identity",
+    "entitlement_boundary",
+    "bridge_status"
+  ],
+  "additionalProperties": false,
+  "properties": {
+    "schema": {
+      "type": "string",
+      "const": "z_experiential_language_schema_v1"
+    },
+    "project_id": {
+      "type": "string",
+      "enum": [
+        "lumina",
+        "questra",
+        "lawyer_ux",
+        "magical_bridge",
+        "ecosphere_map",
+        "zmv",
+        "z_uil",
+        "omnai",
+        "zuno",
+        "franed"
+      ]
+    },
+    "experience_profile_id": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 96,
+      "pattern": "^[a-z0-9][a-z0-9._-]*$"
+    },
+    "sensory_mode": {
+      "type": "string",
+      "enum": ["low_light", "photophobia_friendly", "soft", "balanced", "cinematic"]
+    },
+    "rhythm_language": {
+      "type": "string",
+      "enum": ["calm", "reflective", "active", "playful", "operational"]
+    },
+    "motion_intensity": {
+      "type": "string",
+      "enum": ["still", "low", "moderate", "high"]
+    },
+    "color_realm": {
+      "type": "string",
+      "enum": ["neutral", "galaxy", "forest", "ocean", "sanctuary", "aurora"]
+    },
+    "glow_level": {
+      "type": "string",
+      "enum": ["none", "soft", "balanced", "strong"]
+    },
+    "adaptation_authority": {
+      "type": "string",
+      "enum": ["advisory_only", "user_confirmed", "operator_confirmed"]
+    },
+    "memory_posture": {
+      "type": "string",
+      "enum": [
+        "none",
+        "none_or_local_only",
+        "session_only",
+        "local_only",
+        "local_with_explicit_export",
+        "governed_share"
+      ]
+    },
+    "accessibility_invariants": {
+      "type": "array",
+      "maxItems": 32,
+      "uniqueItems": true,
+      "items": {
+        "type": "string",
+        "minLength": 2,
+        "maxLength": 64,
+        "pattern": "^[a-z][a-z0-9_]*$"
+      }
+    },
+    "project_identity": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 96,
+      "pattern": "^[a-z0-9][a-z0-9._-]*$"
+    },
+    "entitlement_boundary": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 160
+    },
+    "bridge_status": {
+      "type": "string",
+      "enum": ["metadata_only", "advisory_only", "governed_active"]
+    },
+    "x_lumina": { "type": "object", "description": "Lumina-private extension fields. Other projects MUST ignore." },
+    "x_questra": { "type": "object" },
+    "x_lawyer_ux": { "type": "object" },
+    "x_magical_bridge": { "type": "object" },
+    "x_ecosphere_map": { "type": "object" },
+    "x_zmv": { "type": "object" },
+    "x_z_uil": { "type": "object" },
+    "x_omnai": { "type": "object" },
+    "x_zuno": { "type": "object" },
+    "x_franed": { "type": "object" }
+  }
+}

@@ -1,0 +1,145 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "z_combat_360_schema_v1.json",
+  "title": "Z Combat 360 Ring Configuration",
+  "type": "object",
+  "required": [
+    "version",
+    "units",
+    "voxel_size_cm",
+    "ring_max_cm",
+    "body_segments",
+    "movement_types",
+    "animal_archetypes",
+    "booster",
+    "power_curve",
+    "stability_gate",
+    "dual_axis_twist",
+    "breath_lock",
+    "voxel_memory",
+    "overlay_blend",
+    "silent_threat_ring"
+  ],
+  "properties": {
+    "version": {
+      "type": "string",
+      "pattern": "^v[0-9]+\\.[0-9]+$"
+    },
+    "units": {
+      "type": "string",
+      "enum": ["cm"]
+    },
+    "voxel_size_cm": {
+      "type": "number",
+      "minimum": 2,
+      "maximum": 10
+    },
+    "ring_max_cm": {
+      "type": "number",
+      "minimum": 50
+    },
+    "body_segments": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["name", "max_reach_cm"],
+        "properties": {
+          "name": { "type": "string" },
+          "max_reach_cm": { "type": "number", "minimum": 5 },
+          "offset_cm": { "type": "number", "minimum": -50, "maximum": 50 }
+        }
+      }
+    },
+    "movement_types": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "animal_archetypes": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["name", "modifiers"],
+        "properties": {
+          "name": { "type": "string" },
+          "modifiers": {
+            "type": "object",
+            "properties": {
+              "timing_factor": { "type": "number" },
+              "reach_factor": { "type": "number" },
+              "twist_factor": { "type": "number" }
+            }
+          }
+        }
+      }
+    },
+    "booster": {
+      "type": "object",
+      "required": ["last_inch_cm", "twist_degrees", "requires_breath_sync"],
+      "properties": {
+        "last_inch_cm": { "type": "number", "minimum": 2, "maximum": 3 },
+        "twist_degrees": { "type": "number", "enum": [180, 270] },
+        "requires_breath_sync": { "type": "boolean" }
+      }
+    },
+    "power_curve": {
+      "type": "object",
+      "required": ["mid_ring_index", "decay_factor"],
+      "properties": {
+        "mid_ring_index": { "type": "integer", "minimum": 1 },
+        "decay_factor": { "type": "number", "minimum": 0.1, "maximum": 1 }
+      }
+    },
+    "stability_gate": {
+      "type": "object",
+      "required": ["check_ms", "threshold"],
+      "properties": {
+        "check_ms": { "type": "integer", "minimum": 50, "maximum": 200 },
+        "threshold": { "type": "number", "minimum": 0, "maximum": 1 }
+      }
+    },
+    "dual_axis_twist": {
+      "type": "object",
+      "required": ["enabled", "roll_factor"],
+      "properties": {
+        "enabled": { "type": "boolean" },
+        "roll_factor": { "type": "number", "minimum": 0, "maximum": 1 }
+      }
+    },
+    "breath_lock": {
+      "type": "object",
+      "required": ["enabled", "cadence"],
+      "properties": {
+        "enabled": { "type": "boolean" },
+        "cadence": { "type": "string", "enum": ["6-9-8"] }
+      }
+    },
+    "voxel_memory": {
+      "type": "object",
+      "required": ["top_n"],
+      "properties": {
+        "top_n": { "type": "integer", "minimum": 3, "maximum": 20 }
+      }
+    },
+    "overlay_blend": {
+      "type": "object",
+      "required": ["enabled", "pairs"],
+      "properties": {
+        "enabled": { "type": "boolean" },
+        "pairs": {
+          "type": "array",
+          "items": { "type": "array", "items": { "type": "string" }, "minItems": 2, "maxItems": 2 }
+        }
+      }
+    },
+    "silent_threat_ring": {
+      "type": "object",
+      "required": ["enabled", "ring_index"],
+      "properties": {
+        "enabled": { "type": "boolean" },
+        "ring_index": { "type": "integer", "minimum": 1 }
+      }
+    }
+  }
+}

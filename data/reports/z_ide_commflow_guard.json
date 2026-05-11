@@ -1,0 +1,1877 @@
+{
+  "generated_at": "2026-05-11T12:26:42.752Z",
+  "status": "watch",
+  "scan": {
+    "files_scanned": 4000,
+    "max_scan_files": 4000,
+    "mismatch_count": 1172
+  },
+  "settings_checks": [
+    {
+      "id": "task_allow_automatic_tasks_on",
+      "pass": true,
+      "note": "task.allowAutomaticTasks=on"
+    },
+    {
+      "id": "terminal_default_profile_powershell",
+      "pass": true,
+      "note": "terminal.integrated.defaultProfile.windows=PowerShell"
+    },
+    {
+      "id": "files_autosave_after_delay",
+      "pass": true,
+      "note": "files.autoSave=afterDelay"
+    }
+  ],
+  "route_mismatches": [
+    {
+      "file": "z_music_engine/audio_consent_policy.md",
+      "extension": ".md",
+      "current_top": "z_music_engine",
+      "expected_top_choices": [
+        "docs",
+        "data",
+        ".cursor",
+        ".vscode",
+        "core",
+        "packages",
+        "apps",
+        "dashboard",
+        "scripts"
+      ]
+    },
+    {
+      "file": "z_music_engine/audio_source_contract.md",
+      "extension": ".md",
+      "current_top": "z_music_engine",
+      "expected_top_choices": [
+        "docs",
+        "data",
+        ".cursor",
+        ".vscode",
+        "core",
+        "packages",
+        "apps",
+        "dashboard",
+        "scripts"
+      ]
+    },
+    {
+      "file": "z_music_engine/explainability_contract.md",
+      "extension": ".md",
+      "current_top": "z_music_engine",
+      "expected_top_choices": [
+        "docs",
+        "data",
+        ".cursor",
+        ".vscode",
+        "core",
+        "packages",
+        "apps",
+        "dashboard",
+        "scripts"
+      ]
+    },
+    {
+      "file": "z_music_engine/firestore_schema.md",
+      "extension": ".md",
+      "current_top": "z_music_engine",
+      "expected_top_choices": [
+        "docs",
+        "data",
+        ".cursor",
+        ".vscode",
+        "core",
+        "packages",
+        "apps",
+        "dashboard",
+        "scripts"
+      ]
+    },
+    {
+      "file": "z_music_engine/integration_amk_goku.md",
+      "extension": ".md",
+      "current_top": "z_music_engine",
+      "expected_top_choices": [
+        "docs",
+        "data",
+        ".cursor",
+        ".vscode",
+        "core",
+        "packages",
+        "apps",
+        "dashboard",
+        "scripts"
+      ]
+    },
+    {
+      "file": "z_music_engine/mood_model.md",
+      "extension": ".md",
+      "current_top": "z_music_engine",
+      "expected_top_choices": [
+        "docs",
+        "data",
+        ".cursor",
+        ".vscode",
+        "core",
+        "packages",
+        "apps",
+        "dashboard",
+        "scripts"
+      ]
+    },
+    {
+      "file": "z_music_engine/OVERVIEW.md",
+      "extension": ".md",
+      "current_top": "z_music_engine",
+      "expected_top_choices": [
+        "docs",
+        "data",
+        ".cursor",
+        ".vscode",
+        "core",
+        "packages",
+        "apps",
+        "dashboard",
+        "scripts"
+      ]
+    },
+    {
+      "file": "z_music_engine/PHASE_2_7_Z_SME_AUDIO_GREEN_RECEIPT.md",
+      "extension": ".md",
+      "current_top": "z_music_engine",
+      "expected_top_choices": [
+        "docs",
+        "data",
+        ".cursor",
+        ".vscode",
+        "core",
+        "packages",
+        "apps",
+        "dashboard",
+        "scripts"
+      ]
+    },
+    {
+      "file": "z_music_engine/PHASE_2_8_Z_SME_SAME_ORIGIN_AUDIO_RECEIPT.md",
+      "extension": ".md",
+      "current_top": "z_music_engine",
+      "expected_top_choices": [
+        "docs",
+        "data",
+        ".cursor",
+        ".vscode",
+        "core",
+        "packages",
+        "apps",
+        "dashboard",
+        "scripts"
+      ]
+    },
+    {
+      "file": "z_music_engine/playlist_engine.md",
+      "extension": ".md",
+      "current_top": "z_music_engine",
+      "expected_top_choices": [
+        "docs",
+        "data",
+        ".cursor",
+        ".vscode",
+        "core",
+        "packages",
+        "apps",
+        "dashboard",
+        "scripts"
+      ]
+    },
+    {
+      "file": "z_music_engine/ui_flow.md",
+      "extension": ".md",
+      "current_top": "z_music_engine",
+      "expected_top_choices": [
+        "docs",
+        "data",
+        ".cursor",
+        ".vscode",
+        "core",
+        "packages",
+        "apps",
+        "dashboard",
+        "scripts"
+      ]
+    },
+    {
+      "file": "z_music_engine/Z_MUSIC_ENGINE.md",
+      "extension": ".md",
+      "current_top": "z_music_engine",
+      "expected_top_choices": [
+        "docs",
+        "data",
+        ".cursor",
+        ".vscode",
+        "core",
+        "packages",
+        "apps",
+        "dashboard",
+        "scripts"
+      ]
+    },
+    {
+      "file": "z_music_engine/bots/z_music_curator_bot.md",
+      "extension": ".md",
+      "current_top": "z_music_engine",
+      "expected_top_choices": [
+        "docs",
+        "data",
+        ".cursor",
+        ".vscode",
+        "core",
+        "packages",
+        "apps",
+        "dashboard",
+        "scripts"
+      ]
+    },
+    {
+      "file": "z_music_engine/bots/z_music_guardian_bot.md",
+      "extension": ".md",
+      "current_top": "z_music_engine",
+      "expected_top_choices": [
+        "docs",
+        "data",
+        ".cursor",
+        ".vscode",
+        "core",
+        "packages",
+        "apps",
+        "dashboard",
+        "scripts"
+      ]
+    },
+    {
+      "file": "Zuno_Memory_Vault/06_CURSOR_PROMPTS.md",
+      "extension": ".md",
+      "current_top": "Zuno_Memory_Vault",
+      "expected_top_choices": [
+        "docs",
+        "data",
+        ".cursor",
+        ".vscode",
+        "core",
+        "packages",
+        "apps",
+        "dashboard",
+        "scripts"
+      ]
+    },
+    {
+      "file": "z-questra/index.html",
+      "extension": ".html",
+      "current_top": "z-questra",
+      "expected_top_choices": [
+        "dashboard",
+        "core",
+        "docs",
+        "apps",
+        "scripts"
+      ]
+    },
+    {
+      "file": "z-questra/package-lock.json",
+      "extension": ".json",
+      "current_top": "z-questra",
+      "expected_top_choices": [
+        "data",
+        ".vscode",
+        ".cursor",
+        "config",
+        "rules",
+        "apps",
+        "packages",
+        "scripts"
+      ]
+    },
+    {
+      "file": "z-questra/package.json",
+      "extension": ".json",
+      "current_top": "z-questra",
+      "expected_top_choices": [
+        "data",
+        ".vscode",
+        ".cursor",
+        "config",
+        "rules",
+        "apps",
+        "packages",
+        "scripts"
+      ]
+    },
+    {
+      "file": "z-questra/README.md",
+      "extension": ".md",
+      "current_top": "z-questra",
+      "expected_top_choices": [
+        "docs",
+        "data",
+        ".cursor",
+        ".vscode",
+        "core",
+        "packages",
+        "apps",
+        "dashboard",
+        "scripts"
+      ]
+    },
+    {
+      "file": "z-questra/vite.config.js",
+      "extension": ".js",
+      "current_top": "z-questra",
+      "expected_top_choices": [
+        "core",
+        "scripts",
+        "dashboard",
+        "interface",
+        "packages",
+        "apps",
+        "z_workspace",
+        "z_notebooks"
+      ]
+    },
+    {
+      "file": "z-questra/vitest.config.js",
+      "extension": ".js",
+      "current_top": "z-questra",
+      "expected_top_choices": [
+        "core",
+        "scripts",
+        "dashboard",
+        "interface",
+        "packages",
+        "apps",
+        "z_workspace",
+        "z_notebooks"
+      ]
+    },
+    {
+      "file": "z-questra/src/capabilityManifest.test.js",
+      "extension": ".js",
+      "current_top": "z-questra",
+      "expected_top_choices": [
+        "core",
+        "scripts",
+        "dashboard",
+        "interface",
+        "packages",
+        "apps",
+        "z_workspace",
+        "z_notebooks"
+      ]
+    },
+    {
+      "file": "z-questra/src/index.css",
+      "extension": ".css",
+      "current_top": "z-questra",
+      "expected_top_choices": [
+        "interface",
+        "dashboard",
+        "apps",
+        "packages",
+        "core"
+      ]
+    },
+    {
+      "file": "z-questra/src/setupTests.js",
+      "extension": ".js",
+      "current_top": "z-questra",
+      "expected_top_choices": [
+        "core",
+        "scripts",
+        "dashboard",
+        "interface",
+        "packages",
+        "apps",
+        "z_workspace",
+        "z_notebooks"
+      ]
+    },
+    {
+      "file": "z-questra/src/theme/accessibilityPrefs.js",
+      "extension": ".js",
+      "current_top": "z-questra",
+      "expected_top_choices": [
+        "core",
+        "scripts",
+        "dashboard",
+        "interface",
+        "packages",
+        "apps",
+        "z_workspace",
+        "z_notebooks"
+      ]
+    },
+    {
+      "file": "z-questra/src/theme/colorIdentityTokens.js",
+      "extension": ".js",
+      "current_top": "z-questra",
+      "expected_top_choices": [
+        "core",
+        "scripts",
+        "dashboard",
+        "interface",
+        "packages",
+        "apps",
+        "z_workspace",
+        "z_notebooks"
+      ]
+    },
+    {
+      "file": "z-questra/src/theme/colorIdentityTokens.test.js",
+      "extension": ".js",
+      "current_top": "z-questra",
+      "expected_top_choices": [
+        "core",
+        "scripts",
+        "dashboard",
+        "interface",
+        "packages",
+        "apps",
+        "z_workspace",
+        "z_notebooks"
+      ]
+    },
+    {
+      "file": "z-questra/src/theme/panelVisualMap.js",
+      "extension": ".js",
+      "current_top": "z-questra",
+      "expected_top_choices": [
+        "core",
+        "scripts",
+        "dashboard",
+        "interface",
+        "packages",
+        "apps",
+        "z_workspace",
+        "z_notebooks"
+      ]
+    },
+    {
+      "file": "z-questra/src/theme/panelVisualMap.test.js",
+      "extension": ".js",
+      "current_top": "z-questra",
+      "expected_top_choices": [
+        "core",
+        "scripts",
+        "dashboard",
+        "interface",
+        "packages",
+        "apps",
+        "z_workspace",
+        "z_notebooks"
+      ]
+    },
+    {
+      "file": "z-questra/src/theme/playGardenTokens.js",
+      "extension": ".js",
+      "current_top": "z-questra",
+      "expected_top_choices": [
+        "core",
+        "scripts",
+        "dashboard",
+        "interface",
+        "packages",
+        "apps",
+        "z_workspace",
+        "z_notebooks"
+      ]
+    },
+    {
+      "file": "z-questra/src/theme/playGardenTokens.test.js",
+      "extension": ".js",
+      "current_top": "z-questra",
+      "expected_top_choices": [
+        "core",
+        "scripts",
+        "dashboard",
+        "interface",
+        "packages",
+        "apps",
+        "z_workspace",
+        "z_notebooks"
+      ]
+    },
+    {
+      "file": "z-questra/src/theme/sanctuaryRouteMap.js",
+      "extension": ".js",
+      "current_top": "z-questra",
+      "expected_top_choices": [
+        "core",
+        "scripts",
+        "dashboard",
+        "interface",
+        "packages",
+        "apps",
+        "z_workspace",
+        "z_notebooks"
+      ]
+    },
+    {
+      "file": "z-questra/src/theme/sanctuaryRouteMap.test.js",
+      "extension": ".js",
+      "current_top": "z-questra",
+      "expected_top_choices": [
+        "core",
+        "scripts",
+        "dashboard",
+        "interface",
+        "packages",
+        "apps",
+        "z_workspace",
+        "z_notebooks"
+      ]
+    },
+    {
+      "file": "z-questra/src/theme/themeTokens.js",
+      "extension": ".js",
+      "current_top": "z-questra",
+      "expected_top_choices": [
+        "core",
+        "scripts",
+        "dashboard",
+        "interface",
+        "packages",
+        "apps",
+        "z_workspace",
+        "z_notebooks"
+      ]
+    },
+    {
+      "file": "z-questra/src/theme/themeTokens.test.js",
+      "extension": ".js",
+      "current_top": "z-questra",
+      "expected_top_choices": [
+        "core",
+        "scripts",
+        "dashboard",
+        "interface",
+        "packages",
+        "apps",
+        "z_workspace",
+        "z_notebooks"
+      ]
+    },
+    {
+      "file": "z-questra/src/theme/zebraFamilyTokens.js",
+      "extension": ".js",
+      "current_top": "z-questra",
+      "expected_top_choices": [
+        "core",
+        "scripts",
+        "dashboard",
+        "interface",
+        "packages",
+        "apps",
+        "z_workspace",
+        "z_notebooks"
+      ]
+    },
+    {
+      "file": "z-questra/src/theme/zebraServiceMap.js",
+      "extension": ".js",
+      "current_top": "z-questra",
+      "expected_top_choices": [
+        "core",
+        "scripts",
+        "dashboard",
+        "interface",
+        "packages",
+        "apps",
+        "z_workspace",
+        "z_notebooks"
+      ]
+    },
+    {
+      "file": "z-questra/src/theme/zebraServiceMap.test.js",
+      "extension": ".js",
+      "current_top": "z-questra",
+      "expected_top_choices": [
+        "core",
+        "scripts",
+        "dashboard",
+        "interface",
+        "packages",
+        "apps",
+        "z_workspace",
+        "z_notebooks"
+      ]
+    },
+    {
+      "file": "z-questra/src/storage/notebookStorage.js",
+      "extension": ".js",
+      "current_top": "z-questra",
+      "expected_top_choices": [
+        "core",
+        "scripts",
+        "dashboard",
+        "interface",
+        "packages",
+        "apps",
+        "z_workspace",
+        "z_notebooks"
+      ]
+    },
+    {
+      "file": "z-questra/src/storage/notebookStorage.test.js",
+      "extension": ".js",
+      "current_top": "z-questra",
+      "expected_top_choices": [
+        "core",
+        "scripts",
+        "dashboard",
+        "interface",
+        "packages",
+        "apps",
+        "z_workspace",
+        "z_notebooks"
+      ]
+    },
+    {
+      "file": "z-questra/src/storage/shellPrefs.js",
+      "extension": ".js",
+      "current_top": "z-questra",
+      "expected_top_choices": [
+        "core",
+        "scripts",
+        "dashboard",
+        "interface",
+        "packages",
+        "apps",
+        "z_workspace",
+        "z_notebooks"
+      ]
+    },
+    {
+      "file": "z-questra/src/storage/shellPrefs.test.js",
+      "extension": ".js",
+      "current_top": "z-questra",
+      "expected_top_choices": [
+        "core",
+        "scripts",
+        "dashboard",
+        "interface",
+        "packages",
+        "apps",
+        "z_workspace",
+        "z_notebooks"
+      ]
+    },
+    {
+      "file": "z-questra/src/notebook/importNotebookJson.js",
+      "extension": ".js",
+      "current_top": "z-questra",
+      "expected_top_choices": [
+        "core",
+        "scripts",
+        "dashboard",
+        "interface",
+        "packages",
+        "apps",
+        "z_workspace",
+        "z_notebooks"
+      ]
+    },
+    {
+      "file": "z-questra/src/notebook/importNotebookJson.test.js",
+      "extension": ".js",
+      "current_top": "z-questra",
+      "expected_top_choices": [
+        "core",
+        "scripts",
+        "dashboard",
+        "interface",
+        "packages",
+        "apps",
+        "z_workspace",
+        "z_notebooks"
+      ]
+    },
+    {
+      "file": "z-questra/src/notebook/notebookMarkup.js",
+      "extension": ".js",
+      "current_top": "z-questra",
+      "expected_top_choices": [
+        "core",
+        "scripts",
+        "dashboard",
+        "interface",
+        "packages",
+        "apps",
+        "z_workspace",
+        "z_notebooks"
+      ]
+    },
+    {
+      "file": "z-questra/src/notebook/notebookMarkup.test.js",
+      "extension": ".js",
+      "current_top": "z-questra",
+      "expected_top_choices": [
+        "core",
+        "scripts",
+        "dashboard",
+        "interface",
+        "packages",
+        "apps",
+        "z_workspace",
+        "z_notebooks"
+      ]
+    },
+    {
+      "file": "z-questra/src/notebook/notebookMeta.js",
+      "extension": ".js",
+      "current_top": "z-questra",
+      "expected_top_choices": [
+        "core",
+        "scripts",
+        "dashboard",
+        "interface",
+        "packages",
+        "apps",
+        "z_workspace",
+        "z_notebooks"
+      ]
+    },
+    {
+      "file": "z-questra/src/notebook/notebookMeta.test.js",
+      "extension": ".js",
+      "current_top": "z-questra",
+      "expected_top_choices": [
+        "core",
+        "scripts",
+        "dashboard",
+        "interface",
+        "packages",
+        "apps",
+        "z_workspace",
+        "z_notebooks"
+      ]
+    },
+    {
+      "file": "z-questra/src/lib/zMusicEngine/audioConsent.js",
+      "extension": ".js",
+      "current_top": "z-questra",
+      "expected_top_choices": [
+        "core",
+        "scripts",
+        "dashboard",
+        "interface",
+        "packages",
+        "apps",
+        "z_workspace",
+        "z_notebooks"
+      ]
+    },
+    {
+      "file": "z-questra/src/lib/zMusicEngine/audioConsent.test.js",
+      "extension": ".js",
+      "current_top": "z-questra",
+      "expected_top_choices": [
+        "core",
+        "scripts",
+        "dashboard",
+        "interface",
+        "packages",
+        "apps",
+        "z_workspace",
+        "z_notebooks"
+      ]
+    },
+    {
+      "file": "z-questra/src/lib/zMusicEngine/audioSources.js",
+      "extension": ".js",
+      "current_top": "z-questra",
+      "expected_top_choices": [
+        "core",
+        "scripts",
+        "dashboard",
+        "interface",
+        "packages",
+        "apps",
+        "z_workspace",
+        "z_notebooks"
+      ]
+    },
+    {
+      "file": "z-questra/src/lib/zMusicEngine/audioSources.test.js",
+      "extension": ".js",
+      "current_top": "z-questra",
+      "expected_top_choices": [
+        "core",
+        "scripts",
+        "dashboard",
+        "interface",
+        "packages",
+        "apps",
+        "z_workspace",
+        "z_notebooks"
+      ]
+    },
+    {
+      "file": "z-questra/src/lib/zMusicEngine/explainability.js",
+      "extension": ".js",
+      "current_top": "z-questra",
+      "expected_top_choices": [
+        "core",
+        "scripts",
+        "dashboard",
+        "interface",
+        "packages",
+        "apps",
+        "z_workspace",
+        "z_notebooks"
+      ]
+    },
+    {
+      "file": "z-questra/src/lib/zMusicEngine/memoryLog.js",
+      "extension": ".js",
+      "current_top": "z-questra",
+      "expected_top_choices": [
+        "core",
+        "scripts",
+        "dashboard",
+        "interface",
+        "packages",
+        "apps",
+        "z_workspace",
+        "z_notebooks"
+      ]
+    },
+    {
+      "file": "z-questra/src/lib/zMusicEngine/moodModel.js",
+      "extension": ".js",
+      "current_top": "z-questra",
+      "expected_top_choices": [
+        "core",
+        "scripts",
+        "dashboard",
+        "interface",
+        "packages",
+        "apps",
+        "z_workspace",
+        "z_notebooks"
+      ]
+    },
+    {
+      "file": "z-questra/src/lib/zMusicEngine/moodModel.test.js",
+      "extension": ".js",
+      "current_top": "z-questra",
+      "expected_top_choices": [
+        "core",
+        "scripts",
+        "dashboard",
+        "interface",
+        "packages",
+        "apps",
+        "z_workspace",
+        "z_notebooks"
+      ]
+    },
+    {
+      "file": "z-questra/src/lib/zMusicEngine/playlistEngine.js",
+      "extension": ".js",
+      "current_top": "z-questra",
+      "expected_top_choices": [
+        "core",
+        "scripts",
+        "dashboard",
+        "interface",
+        "packages",
+        "apps",
+        "z_workspace",
+        "z_notebooks"
+      ]
+    },
+    {
+      "file": "z-questra/src/lib/zMusicEngine/playlistEngine.test.js",
+      "extension": ".js",
+      "current_top": "z-questra",
+      "expected_top_choices": [
+        "core",
+        "scripts",
+        "dashboard",
+        "interface",
+        "packages",
+        "apps",
+        "z_workspace",
+        "z_notebooks"
+      ]
+    },
+    {
+      "file": "z-questra/src/lib/zMusicEngine/seedTracks.js",
+      "extension": ".js",
+      "current_top": "z-questra",
+      "expected_top_choices": [
+        "core",
+        "scripts",
+        "dashboard",
+        "interface",
+        "packages",
+        "apps",
+        "z_workspace",
+        "z_notebooks"
+      ]
+    },
+    {
+      "file": "z-questra/src/guardian/filterOutput.js",
+      "extension": ".js",
+      "current_top": "z-questra",
+      "expected_top_choices": [
+        "core",
+        "scripts",
+        "dashboard",
+        "interface",
+        "packages",
+        "apps",
+        "z_workspace",
+        "z_notebooks"
+      ]
+    },
+    {
+      "file": "z-questra/src/guardian/filterOutput.test.js",
+      "extension": ".js",
+      "current_top": "z-questra",
+      "expected_top_choices": [
+        "core",
+        "scripts",
+        "dashboard",
+        "interface",
+        "packages",
+        "apps",
+        "z_workspace",
+        "z_notebooks"
+      ]
+    },
+    {
+      "file": "z-questra/src/game/playGardenMap.js",
+      "extension": ".js",
+      "current_top": "z-questra",
+      "expected_top_choices": [
+        "core",
+        "scripts",
+        "dashboard",
+        "interface",
+        "packages",
+        "apps",
+        "z_workspace",
+        "z_notebooks"
+      ]
+    },
+    {
+      "file": "z-questra/src/game/playGardenMap.test.js",
+      "extension": ".js",
+      "current_top": "z-questra",
+      "expected_top_choices": [
+        "core",
+        "scripts",
+        "dashboard",
+        "interface",
+        "packages",
+        "apps",
+        "z_workspace",
+        "z_notebooks"
+      ]
+    },
+    {
+      "file": "z-questra/src/game/receiptPosterExport.js",
+      "extension": ".js",
+      "current_top": "z-questra",
+      "expected_top_choices": [
+        "core",
+        "scripts",
+        "dashboard",
+        "interface",
+        "packages",
+        "apps",
+        "z_workspace",
+        "z_notebooks"
+      ]
+    },
+    {
+      "file": "z-questra/src/game/receiptPosterExport.test.js",
+      "extension": ".js",
+      "current_top": "z-questra",
+      "expected_top_choices": [
+        "core",
+        "scripts",
+        "dashboard",
+        "interface",
+        "packages",
+        "apps",
+        "z_workspace",
+        "z_notebooks"
+      ]
+    },
+    {
+      "file": "z-questra/src/components/ZMusicPanel.css",
+      "extension": ".css",
+      "current_top": "z-questra",
+      "expected_top_choices": [
+        "interface",
+        "dashboard",
+        "apps",
+        "packages",
+        "core"
+      ]
+    },
+    {
+      "file": "z-questra/public/audio/README.md",
+      "extension": ".md",
+      "current_top": "z-questra",
+      "expected_top_choices": [
+        "docs",
+        "data",
+        ".cursor",
+        ".vscode",
+        "core",
+        "packages",
+        "apps",
+        "dashboard",
+        "scripts"
+      ]
+    },
+    {
+      "file": "z-questra/docs/ACCESSIBILITY_TOOLSET_POLICY.md",
+      "extension": ".md",
+      "current_top": "z-questra",
+      "expected_top_choices": [
+        "docs",
+        "data",
+        ".cursor",
+        ".vscode",
+        "core",
+        "packages",
+        "apps",
+        "dashboard",
+        "scripts"
+      ]
+    },
+    {
+      "file": "z-questra/docs/PHASE_2_1_ADAPTIVE_VISUAL_SANCTUARY.md",
+      "extension": ".md",
+      "current_top": "z-questra",
+      "expected_top_choices": [
+        "docs",
+        "data",
+        ".cursor",
+        ".vscode",
+        "core",
+        "packages",
+        "apps",
+        "dashboard",
+        "scripts"
+      ]
+    },
+    {
+      "file": "z-questra/docs/PHASE_2_1_GREEN_RECEIPT.md",
+      "extension": ".md",
+      "current_top": "z-questra",
+      "expected_top_choices": [
+        "docs",
+        "data",
+        ".cursor",
+        ".vscode",
+        "core",
+        "packages",
+        "apps",
+        "dashboard",
+        "scripts"
+      ]
+    },
+    {
+      "file": "z-questra/docs/PHASE_2_3B_AT_LOVE_ZEBRA_Z_ZEBRAS_FAMILY.md",
+      "extension": ".md",
+      "current_top": "z-questra",
+      "expected_top_choices": [
+        "docs",
+        "data",
+        ".cursor",
+        ".vscode",
+        "core",
+        "packages",
+        "apps",
+        "dashboard",
+        "scripts"
+      ]
+    },
+    {
+      "file": "z-questra/docs/PHASE_2_3B_GREEN_RECEIPT.md",
+      "extension": ".md",
+      "current_top": "z-questra",
+      "expected_top_choices": [
+        "docs",
+        "data",
+        ".cursor",
+        ".vscode",
+        "core",
+        "packages",
+        "apps",
+        "dashboard",
+        "scripts"
+      ]
+    },
+    {
+      "file": "z-questra/docs/PHASE_2_3_GREEN_RECEIPT.md",
+      "extension": ".md",
+      "current_top": "z-questra",
+      "expected_top_choices": [
+        "docs",
+        "data",
+        ".cursor",
+        ".vscode",
+        "core",
+        "packages",
+        "apps",
+        "dashboard",
+        "scripts"
+      ]
+    },
+    {
+      "file": "z-questra/docs/PHASE_2_3_LIVING_COLOR_VISUAL_STRUCTURE.md",
+      "extension": ".md",
+      "current_top": "z-questra",
+      "expected_top_choices": [
+        "docs",
+        "data",
+        ".cursor",
+        ".vscode",
+        "core",
+        "packages",
+        "apps",
+        "dashboard",
+        "scripts"
+      ]
+    },
+    {
+      "file": "z-questra/docs/PHASE_2_5A_GREEN_RECEIPT.md",
+      "extension": ".md",
+      "current_top": "z-questra",
+      "expected_top_choices": [
+        "docs",
+        "data",
+        ".cursor",
+        ".vscode",
+        "core",
+        "packages",
+        "apps",
+        "dashboard",
+        "scripts"
+      ]
+    },
+    {
+      "file": "z-questra/docs/PHASE_2_5A_Z_PLAYGARDEN_CANVAS_PREVIEW.md",
+      "extension": ".md",
+      "current_top": "z-questra",
+      "expected_top_choices": [
+        "docs",
+        "data",
+        ".cursor",
+        ".vscode",
+        "core",
+        "packages",
+        "apps",
+        "dashboard",
+        "scripts"
+      ]
+    },
+    {
+      "file": "z-questra/docs/PHASE_2_5_GREEN_RECEIPT.md",
+      "extension": ".md",
+      "current_top": "z-questra",
+      "expected_top_choices": [
+        "docs",
+        "data",
+        ".cursor",
+        ".vscode",
+        "core",
+        "packages",
+        "apps",
+        "dashboard",
+        "scripts"
+      ]
+    },
+    {
+      "file": "z-questra/docs/PHASE_2_5_UNCERTAINTY_KALEIDOSCOPE_RECEIPT_POSTER.md",
+      "extension": ".md",
+      "current_top": "z-questra",
+      "expected_top_choices": [
+        "docs",
+        "data",
+        ".cursor",
+        ".vscode",
+        "core",
+        "packages",
+        "apps",
+        "dashboard",
+        "scripts"
+      ]
+    },
+    {
+      "file": "z-questra/docs/PHASE_QX_1_CROSS_PROJECT_ACCESS_GREEN_RECEIPT.md",
+      "extension": ".md",
+      "current_top": "z-questra",
+      "expected_top_choices": [
+        "docs",
+        "data",
+        ".cursor",
+        ".vscode",
+        "core",
+        "packages",
+        "apps",
+        "dashboard",
+        "scripts"
+      ]
+    },
+    {
+      "file": "z-questra/docs/SANCTUARY_ROUTE_READINESS.md",
+      "extension": ".md",
+      "current_top": "z-questra",
+      "expected_top_choices": [
+        "docs",
+        "data",
+        ".cursor",
+        ".vscode",
+        "core",
+        "packages",
+        "apps",
+        "dashboard",
+        "scripts"
+      ]
+    },
+    {
+      "file": "z-questra/docs/VISUAL_STRUCTURE_PANEL_POLICY.md",
+      "extension": ".md",
+      "current_top": "z-questra",
+      "expected_top_choices": [
+        "docs",
+        "data",
+        ".cursor",
+        ".vscode",
+        "core",
+        "packages",
+        "apps",
+        "dashboard",
+        "scripts"
+      ]
+    },
+    {
+      "file": "z-questra/docs/Z_PLAYGARDEN_SAFETY_POLICY.md",
+      "extension": ".md",
+      "current_top": "z-questra",
+      "expected_top_choices": [
+        "docs",
+        "data",
+        ".cursor",
+        ".vscode",
+        "core",
+        "packages",
+        "apps",
+        "dashboard",
+        "scripts"
+      ]
+    },
+    {
+      "file": "z-questra/docs/Z_QUESTRA_PORTABILITY_AND_BRIDGE_POLICY.md",
+      "extension": ".md",
+      "current_top": "z-questra",
+      "expected_top_choices": [
+        "docs",
+        "data",
+        ".cursor",
+        ".vscode",
+        "core",
+        "packages",
+        "apps",
+        "dashboard",
+        "scripts"
+      ]
+    },
+    {
+      "file": "z-questra/docs/Z_QUESTRA_UNIVERSAL_ACCESS_ROADMAP.md",
+      "extension": ".md",
+      "current_top": "z-questra",
+      "expected_top_choices": [
+        "docs",
+        "data",
+        ".cursor",
+        ".vscode",
+        "core",
+        "packages",
+        "apps",
+        "dashboard",
+        "scripts"
+      ]
+    },
+    {
+      "file": "z-questra/docs/Z_VISUAL_INTERACTION_LANGUAGE.md",
+      "extension": ".md",
+      "current_top": "z-questra",
+      "expected_top_choices": [
+        "docs",
+        "data",
+        ".cursor",
+        ".vscode",
+        "core",
+        "packages",
+        "apps",
+        "dashboard",
+        "scripts"
+      ]
+    },
+    {
+      "file": "z-questra/docs/Z_ZEBRAS_FAMILY_SERVICE_POLICY.md",
+      "extension": ".md",
+      "current_top": "z-questra",
+      "expected_top_choices": [
+        "docs",
+        "data",
+        ".cursor",
+        ".vscode",
+        "core",
+        "packages",
+        "apps",
+        "dashboard",
+        "scripts"
+      ]
+    },
+    {
+      "file": "z-questra/data/z_project_awareness_capsule.json",
+      "extension": ".json",
+      "current_top": "z-questra",
+      "expected_top_choices": [
+        "data",
+        ".vscode",
+        ".cursor",
+        "config",
+        "rules",
+        "apps",
+        "packages",
+        "scripts"
+      ]
+    },
+    {
+      "file": "z-questra/data/z_project_benchmark_capsule.json",
+      "extension": ".json",
+      "current_top": "z-questra",
+      "expected_top_choices": [
+        "data",
+        ".vscode",
+        ".cursor",
+        "config",
+        "rules",
+        "apps",
+        "packages",
+        "scripts"
+      ]
+    },
+    {
+      "file": "z-questra/data/z_questra_capability_manifest.json",
+      "extension": ".json",
+      "current_top": "z-questra",
+      "expected_top_choices": [
+        "data",
+        ".vscode",
+        ".cursor",
+        "config",
+        "rules",
+        "apps",
+        "packages",
+        "scripts"
+      ]
+    },
+    {
+      "file": "Super Saiyans Omega Omni Ai/Super Saiyans Omega Omni Ai.html",
+      "extension": ".html",
+      "current_top": "Super Saiyans Omega Omni Ai",
+      "expected_top_choices": [
+        "dashboard",
+        "core",
+        "docs",
+        "apps",
+        "scripts"
+      ]
+    },
+    {
+      "file": "shared/magical-canvas/README.md",
+      "extension": ".md",
+      "current_top": "shared",
+      "expected_top_choices": [
+        "docs",
+        "data",
+        ".cursor",
+        ".vscode",
+        "core",
+        "packages",
+        "apps",
+        "dashboard",
+        "scripts"
+      ]
+    },
+    {
+      "file": "shared/magical-canvas/z-magical-canvas-kit.css",
+      "extension": ".css",
+      "current_top": "shared",
+      "expected_top_choices": [
+        "interface",
+        "dashboard",
+        "apps",
+        "packages",
+        "core"
+      ]
+    },
+    {
+      "file": "shared/magical-canvas/z-magical-canvas-kit.js",
+      "extension": ".js",
+      "current_top": "shared",
+      "expected_top_choices": [
+        "core",
+        "scripts",
+        "dashboard",
+        "interface",
+        "packages",
+        "apps",
+        "z_workspace",
+        "z_notebooks"
+      ]
+    },
+    {
+      "file": "packages/zuno-orchestrator-contracts/scripts/lint_task_plan.mjs",
+      "extension": ".mjs",
+      "current_top": "packages",
+      "expected_top_choices": [
+        "scripts",
+        "tools"
+      ]
+    },
+    {
+      "file": "packages/zuno-orchestrator-contracts/scripts/validate_examples.mjs",
+      "extension": ".mjs",
+      "current_top": "packages",
+      "expected_top_choices": [
+        "scripts",
+        "tools"
+      ]
+    },
+    {
+      "file": "packages/z-sanctuary-zuno-transformation-slice/resolve_hub.mjs",
+      "extension": ".mjs",
+      "current_top": "packages",
+      "expected_top_choices": [
+        "scripts",
+        "tools"
+      ]
+    },
+    {
+      "file": "packages/z-sanctuary-zuno-transformation-slice/zuno_transformation_core.mjs",
+      "extension": ".mjs",
+      "current_top": "packages",
+      "expected_top_choices": [
+        "scripts",
+        "tools"
+      ]
+    },
+    {
+      "file": "packages/z-sanctuary-zuno-transformation-slice/test/zuno_flow.test.mjs",
+      "extension": ".mjs",
+      "current_top": "packages",
+      "expected_top_choices": [
+        "scripts",
+        "tools"
+      ]
+    },
+    {
+      "file": "packages/z-sanctuary-mirrorsoul-slice/adaptive_fuel.mjs",
+      "extension": ".mjs",
+      "current_top": "packages",
+      "expected_top_choices": [
+        "scripts",
+        "tools"
+      ]
+    },
+    {
+      "file": "packages/z-sanctuary-mirrorsoul-slice/advisory.mjs",
+      "extension": ".mjs",
+      "current_top": "packages",
+      "expected_top_choices": [
+        "scripts",
+        "tools"
+      ]
+    },
+    {
+      "file": "packages/z-sanctuary-mirrorsoul-slice/index.mjs",
+      "extension": ".mjs",
+      "current_top": "packages",
+      "expected_top_choices": [
+        "scripts",
+        "tools"
+      ]
+    },
+    {
+      "file": "packages/z-sanctuary-mirrorsoul-slice/mirror_soul_v2.mjs",
+      "extension": ".mjs",
+      "current_top": "packages",
+      "expected_top_choices": [
+        "scripts",
+        "tools"
+      ]
+    },
+    {
+      "file": "packages/z-sanctuary-mirrorsoul-slice/resolve_hub.mjs",
+      "extension": ".mjs",
+      "current_top": "packages",
+      "expected_top_choices": [
+        "scripts",
+        "tools"
+      ]
+    },
+    {
+      "file": "packages/z-sanctuary-mirrorsoul-slice/test/slice.test.mjs",
+      "extension": ".mjs",
+      "current_top": "packages",
+      "expected_top_choices": [
+        "scripts",
+        "tools"
+      ]
+    },
+    {
+      "file": "packages/z-sanctuary-mirrorsoul-slice/bridges/z_intelligence_bridge.mjs",
+      "extension": ".mjs",
+      "current_top": "packages",
+      "expected_top_choices": [
+        "scripts",
+        "tools"
+      ]
+    },
+    {
+      "file": "packages/z-sanctuary-mirrorsoul-slice/bridges/z_validation_bridge.mjs",
+      "extension": ".mjs",
+      "current_top": "packages",
+      "expected_top_choices": [
+        "scripts",
+        "tools"
+      ]
+    },
+    {
+      "file": "packages/z-sanctuary-core/test/smoke.test.mjs",
+      "extension": ".mjs",
+      "current_top": "packages",
+      "expected_top_choices": [
+        "scripts",
+        "tools"
+      ]
+    },
+    {
+      "file": "ethics/crisis-charter.md",
+      "extension": ".md",
+      "current_top": "ethics",
+      "expected_top_choices": [
+        "docs",
+        "data",
+        ".cursor",
+        ".vscode",
+        "core",
+        "packages",
+        "apps",
+        "dashboard",
+        "scripts"
+      ]
+    },
+    {
+      "file": "docs/living_workspace_manifest.json",
+      "extension": ".json",
+      "current_top": "docs",
+      "expected_top_choices": [
+        "data",
+        ".vscode",
+        ".cursor",
+        "config",
+        "rules",
+        "apps",
+        "packages",
+        "scripts"
+      ]
+    },
+    {
+      "file": "docs/z_module_registry.json",
+      "extension": ".json",
+      "current_top": "docs",
+      "expected_top_choices": [
+        "data",
+        ".vscode",
+        ".cursor",
+        "config",
+        "rules",
+        "apps",
+        "packages",
+        "scripts"
+      ]
+    },
+    {
+      "file": "docs/z-sage/z_sage_signals.example.json",
+      "extension": ".json",
+      "current_top": "docs",
+      "expected_top_choices": [
+        "data",
+        ".vscode",
+        ".cursor",
+        "config",
+        "rules",
+        "apps",
+        "packages",
+        "scripts"
+      ]
+    },
+    {
+      "file": "docs/public/snapshot/snapshot.css",
+      "extension": ".css",
+      "current_top": "docs",
+      "expected_top_choices": [
+        "interface",
+        "dashboard",
+        "apps",
+        "packages",
+        "core"
+      ]
+    },
+    {
+      "file": "docs/public/snapshot/snapshot.js",
+      "extension": ".js",
+      "current_top": "docs",
+      "expected_top_choices": [
+        "core",
+        "scripts",
+        "dashboard",
+        "interface",
+        "packages",
+        "apps",
+        "z_workspace",
+        "z_notebooks"
+      ]
+    },
+    {
+      "file": "docs/.vscode/extensions.json",
+      "extension": ".json",
+      "current_top": "docs",
+      "expected_top_choices": [
+        "data",
+        ".vscode",
+        ".cursor",
+        "config",
+        "rules",
+        "apps",
+        "packages",
+        "scripts"
+      ]
+    },
+    {
+      "file": "docs/.vscode/launch.json",
+      "extension": ".json",
+      "current_top": "docs",
+      "expected_top_choices": [
+        "data",
+        ".vscode",
+        ".cursor",
+        "config",
+        "rules",
+        "apps",
+        "packages",
+        "scripts"
+      ]
+    },
+    {
+      "file": "docs/.vscode/profiles.json",
+      "extension": ".json",
+      "current_top": "docs",
+      "expected_top_choices": [
+        "data",
+        ".vscode",
+        ".cursor",
+        "config",
+        "rules",
+        "apps",
+        "packages",
+        "scripts"
+      ]
+    },
+    {
+      "file": "docs/.vscode/settings.json",
+      "extension": ".json",
+      "current_top": "docs",
+      "expected_top_choices": [
+        "data",
+        ".vscode",
+        ".cursor",
+        "config",
+        "rules",
+        "apps",
+        "packages",
+        "scripts"
+      ]
+    },
+    {
+      "file": "docs/.vscode/tasks.json",
+      "extension": ".json",
+      "current_top": "docs",
+      "expected_top_choices": [
+        "data",
+        ".vscode",
+        ".cursor",
+        "config",
+        "rules",
+        "apps",
+        "packages",
+        "scripts"
+      ]
+    },
+    {
+      "file": "deploy/z_bridge_soft/package.json",
+      "extension": ".json",
+      "current_top": "deploy",
+      "expected_top_choices": [
+        "data",
+        ".vscode",
+        ".cursor",
+        "config",
+        "rules",
+        "apps",
+        "packages",
+        "scripts"
+      ]
+    },
+    {
+      "file": "dashboard/data/amk_autonomous_approval_ladder.json",
+      "extension": ".json",
+      "current_top": "dashboard",
+      "expected_top_choices": [
+        "data",
+        ".vscode",
+        ".cursor",
+        "config",
+        "rules",
+        "apps",
+        "packages",
+        "scripts"
+      ]
+    }
+  ],
+  "operator_directions": [
+    "If project context is unclear, run `npm run workspace:emit-pc-root` then open `Z-EAII-PC-All-Projects.code-workspace`.",
+    "For core verification, run `npm run verify:ci`; for full health, run `npm run stabilize:apply-and-verify`.",
+    "If file routing mismatches appear, move files to suggested top-level folders before release checks."
+  ],
+  "project_hints": [
+    {
+      "id": "zsanctuary-universe",
+      "name": "ZSanctuary_Universe",
+      "role": "hub",
+      "suggested_entry": "Z: SSWS Auto Boot",
+      "path_hint": "C:/Cursor Projects Organiser/ZSanctuary_Universe"
+    },
+    {
+      "id": "amk-goku-dashboards-2",
+      "name": "Amk-Goku Dashboards 2",
+      "role": "external",
+      "suggested_entry": "Z: Cross-Project Health Probe (read-only)",
+      "path_hint": "C:/Cursor Projects Organiser/amk-goku-dashboards-2"
+    },
+    {
+      "id": "amk-goku-vaults",
+      "name": "Amk-Goku Vaults",
+      "role": "member",
+      "suggested_entry": "Z: Cross-Project Health Probe (read-only)",
+      "path_hint": "C:/Cursor Projects Organiser/Amk-Goku Vaults"
+    },
+    {
+      "id": "at-princess-blackie-copilot",
+      "name": "AT Princess & Blackie Copilot",
+      "role": "member",
+      "suggested_entry": "Z: Cross-Project Health Probe (read-only)",
+      "path_hint": "C:/Cursor Projects Organiser/AT Princess&Blackie Copilot"
+    },
+    {
+      "id": "at-princess-blackie-copitol",
+      "name": "AT Princess & Blackie Copilot",
+      "role": "member",
+      "suggested_entry": "Z: Cross-Project Health Probe (read-only)",
+      "path_hint": "C:/Cursor Projects Organiser/AT Princess&Blackie Copilot"
+    },
+    {
+      "id": "pc-root-extras-and-tools",
+      "name": "Extras & Tools",
+      "role": "member",
+      "suggested_entry": "Z: Cross-Project Health Probe (read-only)",
+      "path_hint": "C:/Cursor Projects Organiser/Extras & Tools"
+    },
+    {
+      "id": "replit-roulette-z-amk-goku-mdcp",
+      "name": "Roulette Data Analyzer · Z-Amk-Goku MD/CP (Replit)",
+      "role": "external",
+      "suggested_entry": "Z: Cross-Project Health Probe (read-only)",
+      "path_hint": "C:/Cursor Projects Organiser/replit-roulette-z-amk-goku-mdcp"
+    },
+    {
+      "id": "sister-aisling-sol",
+      "name": "Sister Aisling Sol",
+      "role": "member",
+      "suggested_entry": "Z: Cross-Project Health Probe (read-only)",
+      "path_hint": "C:/Cursor Projects Organiser/Z-Sister Aisling Sol"
+    },
+    {
+      "id": "z-sanctuary-universe-2-continuation",
+      "name": "Z_Sanctuary_Universe 2",
+      "role": "member",
+      "suggested_entry": "Z: Cross-Project Health Probe (read-only)",
+      "path_hint": "C:/Cursor Projects Organiser/ZSanctuary_Universe/Z_Sanctuary_Universe 2"
+    },
+    {
+      "id": "z-omni-sanctuary",
+      "name": "Z-OMNI-Sanctuary",
+      "role": "member",
+      "suggested_entry": "Z: Cross-Project Health Probe (read-only)",
+      "path_hint": "C:/Cursor Projects Organiser/Z-OMNI-Sanctuary"
+    },
+    {
+      "id": "z-sanctuary-ai-skyscraper",
+      "name": "Z-SANCTUARY AI SKYSCRAPER",
+      "role": "member",
+      "suggested_entry": "Z: Cross-Project Health Probe (read-only)",
+      "path_hint": "C:/Cursor Projects Organiser/Z-SANCTUARY AI SKYSCRAPER"
+    },
+    {
+      "id": "z-sanctuary-browser-z-saiyan-lumina",
+      "name": "Z-Sanctuary Browser (Z-Saiyan Lumina)",
+      "role": "member",
+      "suggested_entry": "Z: Cross-Project Health Probe (read-only)",
+      "path_hint": "C:/Cursor Projects Organiser/Z-Sanctuary Browser"
+    },
+    {
+      "id": "z-sanctuary-claude-core",
+      "name": "Z-Sanctuary Claude (Core)",
+      "role": "member",
+      "suggested_entry": "Z: Cross-Project Health Probe (read-only)",
+      "path_hint": "C:/Cursor Projects Organiser/Z-Sanctuary Claude"
+    },
+    {
+      "id": "z-sanctuary-replit",
+      "name": "Z-Sanctuary Replit",
+      "role": "member",
+      "suggested_entry": "Z: Cross-Project Health Probe (read-only)",
+      "path_hint": "C:/Cursor Projects Organiser/Z-Sanctuary_Replit"
+    },
+    {
+      "id": "z-sanctuary-aimanity",
+      "name": "z-sanctuary-aimanity",
+      "role": "member",
+      "suggested_entry": "Z: Cross-Project Health Probe (read-only)",
+      "path_hint": "C:/Cursor Projects Organiser/z-sanctuary-aimanity"
+    }
+  ],
+  "note": "IDE comm-flow guard is advisory (non-destructive) and provides placement guidance for mixed-project operation."
+}

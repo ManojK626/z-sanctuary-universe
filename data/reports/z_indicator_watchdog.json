@@ -1,0 +1,53 @@
+{
+  "generated_at": "2026-05-02T18:16:33.764Z",
+  "status": "green",
+  "integrity_score": 100,
+  "attitude": "calm",
+  "freshness_window_minutes": 10,
+  "indicator_age_minutes": 0,
+  "latest_cycle_age_minutes": 0,
+  "checks": [
+    {
+      "id": "indicator_present",
+      "pass": true,
+      "note": "z_cycle_indicator.json present",
+      "weight": 10
+    },
+    {
+      "id": "indicator_schema_keys",
+      "pass": true,
+      "note": "required indicator keys present",
+      "weight": 10
+    },
+    {
+      "id": "indicator_timestamp_valid",
+      "pass": true,
+      "note": "timestamp=2026-05-02T18:16:33.704Z",
+      "weight": 10
+    },
+    {
+      "id": "indicator_fresh",
+      "pass": true,
+      "note": "indicator age=0m (max 10m)",
+      "weight": 20
+    },
+    {
+      "id": "guard_green",
+      "pass": true,
+      "note": "guard status=green",
+      "weight": 30
+    },
+    {
+      "id": "manifest_operating_state",
+      "pass": true,
+      "note": "operating_state=paused_pending_nas_sync",
+      "weight": 10
+    },
+    {
+      "id": "cycle_record_recent",
+      "pass": true,
+      "note": "latest cycle age=0m (max 10m)",
+      "weight": 10
+    }
+  ]
+}

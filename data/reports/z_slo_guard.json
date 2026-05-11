@@ -1,0 +1,56 @@
+{
+  "generated_at": "2026-05-11T12:26:47.582Z",
+  "status": "hold",
+  "policy_version": "0.1",
+  "workspace": "CORE",
+  "profile": "CORE",
+  "totals": {
+    "targets": 3,
+    "passed": 0,
+    "failed": 3
+  },
+  "checks": [
+    {
+      "id": "web:readiness",
+      "pass": false,
+      "report": "data/reports/z_web_readiness_check.json",
+      "status_ok": true,
+      "freshness_ok": false,
+      "expected_status": "green",
+      "actual_status": "green",
+      "generated_at": "2026-03-18T19:44:16.055Z",
+      "age_minutes": 77323,
+      "max_age_minutes": 2,
+      "note": "stale",
+      "profile_name": "CORE"
+    },
+    {
+      "id": "workspace:auto-sweep",
+      "pass": false,
+      "report": "data/reports/z_workspace_auto_sweep.json",
+      "status_ok": true,
+      "freshness_ok": false,
+      "expected_status": "green",
+      "actual_status": "green",
+      "generated_at": "2026-03-18T19:44:17.140Z",
+      "age_minutes": 77323,
+      "max_age_minutes": 5,
+      "note": "stale",
+      "profile_name": "CORE"
+    },
+    {
+      "id": "extension_guard",
+      "pass": false,
+      "report": "data/reports/z_extension_guard.json",
+      "status_ok": false,
+      "freshness_ok": false,
+      "expected_status": "green",
+      "actual_status": "hold",
+      "generated_at": "2026-05-02T18:16:32.941Z",
+      "age_minutes": 12610,
+      "max_age_minutes": 240,
+      "note": "status_mismatch",
+      "profile_name": "CORE"
+    }
+  ]
+}

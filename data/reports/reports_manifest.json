@@ -1,0 +1,5035 @@
+{
+  "generated_at": "2026-05-01T17:24:18.876841Z",
+  "purpose": "Z-Sanctuary Reports Vault manifest",
+  "count": 558,
+  "items": [
+    {
+      "file": "bot_sync_snapshots/2026-04-24T19-19-29-390Z/receipt.json",
+      "bytes": 386,
+      "updated_at": "2026-04-24T19:19:29.394844Z",
+      "type": "json",
+      "tags": [
+        "misc"
+      ]
+    },
+    {
+      "file": "bot_sync_snapshots/2026-04-24T19-19-29-390Z/z_pc_root_projects.json",
+      "bytes": 3452,
+      "updated_at": "2026-04-23T17:21:02.368249Z",
+      "type": "json",
+      "tags": [
+        "misc"
+      ]
+    },
+    {
+      "file": "bot_sync_snapshots/2026-04-25T22-14-58-389Z/z_pc_root_projects.json",
+      "bytes": 3452,
+      "updated_at": "2026-04-25T17:13:41.847408Z",
+      "type": "json",
+      "tags": [
+        "misc"
+      ]
+    },
+    {
+      "file": "exports/z_ecosphere_transparency_2026-04-23.pptx",
+      "bytes": 120215,
+      "updated_at": "2026-04-23T21:56:04.510113Z",
+      "type": "other",
+      "tags": [
+        "misc"
+      ]
+    },
+    {
+      "file": "formula_vault_audit.txt",
+      "bytes": 151,
+      "updated_at": "2026-03-16T15:49:10.998133Z",
+      "type": "other",
+      "tags": [
+        "trust"
+      ]
+    },
+    {
+      "file": "incident_notifications.log",
+      "bytes": 2265,
+      "updated_at": "2026-03-18T19:37:45.014785Z",
+      "type": "other",
+      "tags": [
+        "misc"
+      ]
+    },
+    {
+      "file": "incidents/2026-02-19T23-54-21-159Z-web_readiness.md",
+      "bytes": 197,
+      "updated_at": "2026-02-20T01:49:48.391664Z",
+      "type": "md",
+      "tags": [
+        "misc"
+      ]
+    },
+    {
+      "file": "incidents/2026-02-20T00-42-50-667Z-web_readiness.md",
+      "bytes": 198,
+      "updated_at": "2026-02-20T01:49:48.394671Z",
+      "type": "md",
+      "tags": [
+        "misc"
+      ]
+    },
+    {
+      "file": "incidents/2026-02-20T00-42-50-998Z-web_readiness.md",
+      "bytes": 198,
+      "updated_at": "2026-02-20T01:49:48.401188Z",
+      "type": "md",
+      "tags": [
+        "misc"
+      ]
+    },
+    {
+      "file": "incidents/2026-02-20T00-43-25-194Z-web_readiness.md",
+      "bytes": 198,
+      "updated_at": "2026-02-20T01:49:48.404578Z",
+      "type": "md",
+      "tags": [
+        "misc"
+      ]
+    },
+    {
+      "file": "incidents/2026-02-20T01-49-01-718Z-web_readiness.md",
+      "bytes": 197,
+      "updated_at": "2026-02-20T01:49:48.408571Z",
+      "type": "md",
+      "tags": [
+        "misc"
+      ]
+    },
+    {
+      "file": "incidents/2026-02-20T09-51-31-379Z-web_readiness.md",
+      "bytes": 198,
+      "updated_at": "2026-03-05T00:52:12.641138Z",
+      "type": "md",
+      "tags": [
+        "misc"
+      ]
+    },
+    {
+      "file": "incidents/2026-02-20T09-51-31-380Z-extension_guard.md",
+      "bytes": 201,
+      "updated_at": "2026-03-05T00:52:12.644139Z",
+      "type": "md",
+      "tags": [
+        "misc"
+      ]
+    },
+    {
+      "file": "incidents/2026-02-20T09-51-31-686Z-web_readiness.md",
+      "bytes": 198,
+      "updated_at": "2026-03-05T00:52:12.648369Z",
+      "type": "md",
+      "tags": [
+        "misc"
+      ]
+    },
+    {
+      "file": "incidents/2026-02-20T09-51-31-687Z-extension_guard.md",
+      "bytes": 201,
+      "updated_at": "2026-03-05T00:52:12.651378Z",
+      "type": "md",
+      "tags": [
+        "misc"
+      ]
+    },
+    {
+      "file": "incidents/2026-02-20T09-51-32-303Z-web_readiness.md",
+      "bytes": 198,
+      "updated_at": "2026-03-05T00:52:12.656390Z",
+      "type": "md",
+      "tags": [
+        "misc"
+      ]
+    },
+    {
+      "file": "incidents/2026-02-20T09-51-32-304Z-extension_guard.md",
+      "bytes": 201,
+      "updated_at": "2026-03-05T00:52:12.659400Z",
+      "type": "md",
+      "tags": [
+        "misc"
+      ]
+    },
+    {
+      "file": "incidents/2026-02-20T13-13-56-391Z-extension_guard.md",
+      "bytes": 218,
+      "updated_at": "2026-03-05T00:52:12.661658Z",
+      "type": "md",
+      "tags": [
+        "misc"
+      ]
+    },
+    {
+      "file": "incidents/2026-02-20T13-13-56-690Z-extension_guard.md",
+      "bytes": 218,
+      "updated_at": "2026-03-05T00:52:12.664660Z",
+      "type": "md",
+      "tags": [
+        "misc"
+      ]
+    },
+    {
+      "file": "incidents/2026-02-22T18-10-06-905Z-extension_guard.md",
+      "bytes": 218,
+      "updated_at": "2026-03-05T00:52:12.667730Z",
+      "type": "md",
+      "tags": [
+        "misc"
+      ]
+    },
+    {
+      "file": "incidents/2026-02-22T19-02-49-633Z-extension_guard.md",
+      "bytes": 218,
+      "updated_at": "2026-03-05T00:52:12.670729Z",
+      "type": "md",
+      "tags": [
+        "misc"
+      ]
+    },
+    {
+      "file": "incidents/2026-02-22T19-05-11-962Z-extension_guard.md",
+      "bytes": 218,
+      "updated_at": "2026-03-05T00:52:12.673007Z",
+      "type": "md",
+      "tags": [
+        "misc"
+      ]
+    },
+    {
+      "file": "incidents/2026-02-22T22-27-27-698Z-extension_guard.md",
+      "bytes": 218,
+      "updated_at": "2026-03-05T00:52:12.677052Z",
+      "type": "md",
+      "tags": [
+        "misc"
+      ]
+    },
+    {
+      "file": "incidents/2026-02-22T22-27-46-795Z-extension_guard.md",
+      "bytes": 218,
+      "updated_at": "2026-03-05T00:52:12.679122Z",
+      "type": "md",
+      "tags": [
+        "misc"
+      ]
+    },
+    {
+      "file": "incidents/2026-02-23T13-51-46-131Z-extension_guard.md",
+      "bytes": 218,
+      "updated_at": "2026-03-05T00:52:12.682426Z",
+      "type": "md",
+      "tags": [
+        "misc"
+      ]
+    },
+    {
+      "file": "incidents/2026-02-23T13-52-09-499Z-extension_guard.md",
+      "bytes": 218,
+      "updated_at": "2026-03-05T00:52:12.685428Z",
+      "type": "md",
+      "tags": [
+        "misc"
+      ]
+    },
+    {
+      "file": "incidents/2026-02-23T14-23-45-796Z-extension_guard.md",
+      "bytes": 218,
+      "updated_at": "2026-03-05T00:52:12.689409Z",
+      "type": "md",
+      "tags": [
+        "misc"
+      ]
+    },
+    {
+      "file": "incidents/2026-02-23T14-26-14-700Z-extension_guard.md",
+      "bytes": 218,
+      "updated_at": "2026-03-05T00:52:12.691408Z",
+      "type": "md",
+      "tags": [
+        "misc"
+      ]
+    },
+    {
+      "file": "incidents/2026-02-23T14-28-46-865Z-extension_guard.md",
+      "bytes": 218,
+      "updated_at": "2026-03-05T00:52:12.694791Z",
+      "type": "md",
+      "tags": [
+        "misc"
+      ]
+    },
+    {
+      "file": "incidents/2026-02-23T14-28-55-770Z-extension_guard.md",
+      "bytes": 218,
+      "updated_at": "2026-03-05T00:52:12.697789Z",
+      "type": "md",
+      "tags": [
+        "misc"
+      ]
+    },
+    {
+      "file": "incidents/2026-02-23T14-29-17-781Z-extension_guard.md",
+      "bytes": 218,
+      "updated_at": "2026-03-05T00:52:12.701011Z",
+      "type": "md",
+      "tags": [
+        "misc"
+      ]
+    },
+    {
+      "file": "incidents/2026-02-23T14-30-05-106Z-extension_guard.md",
+      "bytes": 218,
+      "updated_at": "2026-03-05T00:52:12.703503Z",
+      "type": "md",
+      "tags": [
+        "misc"
+      ]
+    },
+    {
+      "file": "incidents/2026-02-23T14-30-07-159Z-extension_guard.md",
+      "bytes": 218,
+      "updated_at": "2026-03-05T00:52:12.706512Z",
+      "type": "md",
+      "tags": [
+        "misc"
+      ]
+    },
+    {
+      "file": "incidents/2026-02-23T14-31-14-363Z-extension_guard.md",
+      "bytes": 218,
+      "updated_at": "2026-03-05T00:52:12.709508Z",
+      "type": "md",
+      "tags": [
+        "misc"
+      ]
+    },
+    {
+      "file": "incidents/2026-02-23T14-32-09-851Z-extension_guard.md",
+      "bytes": 218,
+      "updated_at": "2026-03-05T00:52:12.712817Z",
+      "type": "md",
+      "tags": [
+        "misc"
+      ]
+    },
+    {
+      "file": "incidents/2026-02-23T15-11-19-831Z-extension_guard.md",
+      "bytes": 218,
+      "updated_at": "2026-03-05T00:52:12.715818Z",
+      "type": "md",
+      "tags": [
+        "misc"
+      ]
+    },
+    {
+      "file": "incidents/2026-02-23T15-12-41-658Z-extension_guard.md",
+      "bytes": 218,
+      "updated_at": "2026-03-05T00:52:12.719670Z",
+      "type": "md",
+      "tags": [
+        "misc"
+      ]
+    },
+    {
+      "file": "incidents/2026-02-23T15-36-44-789Z-extension_guard.md",
+      "bytes": 218,
+      "updated_at": "2026-03-05T00:52:12.722680Z",
+      "type": "md",
+      "tags": [
+        "misc"
+      ]
+    },
+    {
+      "file": "incidents/2026-02-23T20-03-54-689Z-extension_guard.md",
+      "bytes": 218,
+      "updated_at": "2026-03-05T00:52:12.726416Z",
+      "type": "md",
+      "tags": [
+        "misc"
+      ]
+    },
+    {
+      "file": "incidents/2026-02-23T20-28-23-945Z-extension_guard.md",
+      "bytes": 218,
+      "updated_at": "2026-03-05T00:52:12.728414Z",
+      "type": "md",
+      "tags": [
+        "misc"
+      ]
+    },
+    {
+      "file": "incidents/2026-02-23T20-28-55-325Z-extension_guard.md",
+      "bytes": 218,
+      "updated_at": "2026-03-05T00:52:12.730413Z",
+      "type": "md",
+      "tags": [
+        "misc"
+      ]
+    },
+    {
+      "file": "incidents/2026-02-23T21-13-01-271Z-extension_guard.md",
+      "bytes": 218,
+      "updated_at": "2026-03-05T00:52:12.733108Z",
+      "type": "md",
+      "tags": [
+        "misc"
+      ]
+    },
+    {
+      "file": "incidents/2026-02-24T19-31-04-177Z-extension_guard.md",
+      "bytes": 218,
+      "updated_at": "2026-03-05T00:52:12.736566Z",
+      "type": "md",
+      "tags": [
+        "misc"
+      ]
+    },
+    {
+      "file": "incidents/2026-02-24T19-32-23-301Z-extension_guard.md",
+      "bytes": 218,
+      "updated_at": "2026-03-05T00:52:12.738944Z",
+      "type": "md",
+      "tags": [
+        "misc"
+      ]
+    },
+    {
+      "file": "incidents/2026-02-24T19-32-39-986Z-extension_guard.md",
+      "bytes": 218,
+      "updated_at": "2026-03-05T00:52:12.741939Z",
+      "type": "md",
+      "tags": [
+        "misc"
+      ]
+    },
+    {
+      "file": "incidents/2026-02-24T19-35-09-547Z-extension_guard.md",
+      "bytes": 218,
+      "updated_at": "2026-03-05T00:52:12.744941Z",
+      "type": "md",
+      "tags": [
+        "misc"
+      ]
+    },
+    {
+      "file": "incidents/2026-02-24T19-40-44-833Z-web",
+      "bytes": 0,
+      "updated_at": "2026-02-24T19:40:44.834142Z",
+      "type": "other",
+      "tags": [
+        "misc"
+      ]
+    },
+    {
+      "file": "incidents/2026-02-24T19-40-44-834Z-workspace",
+      "bytes": 0,
+      "updated_at": "2026-02-24T19:40:44.835149Z",
+      "type": "other",
+      "tags": [
+        "misc"
+      ]
+    },
+    {
+      "file": "incidents/2026-02-24T19-40-44-835Z-extension_guard.md",
+      "bytes": 218,
+      "updated_at": "2026-03-05T00:52:12.747400Z",
+      "type": "md",
+      "tags": [
+        "misc"
+      ]
+    },
+    {
+      "file": "incidents/2026-02-24T20-34-28-614Z-web",
+      "bytes": 0,
+      "updated_at": "2026-02-24T20:34:28.615567Z",
+      "type": "other",
+      "tags": [
+        "misc"
+      ]
+    },
+    {
+      "file": "incidents/2026-02-24T20-34-28-615Z-workspace",
+      "bytes": 0,
+      "updated_at": "2026-02-24T20:34:28.616812Z",
+      "type": "other",
+      "tags": [
+        "misc"
+      ]
+    },
+    {
+      "file": "incidents/2026-02-24T20-34-28-616Z-extension_guard.md",
+      "bytes": 218,
+      "updated_at": "2026-03-05T00:52:12.749409Z",
+      "type": "md",
+      "tags": [
+        "misc"
+      ]
+    },
+    {
+      "file": "incidents/2026-02-24T20-34-54-767Z-web",
+      "bytes": 0,
+      "updated_at": "2026-02-24T20:34:54.768297Z",
+      "type": "other",
+      "tags": [
+        "misc"
+      ]
+    },
+    {
+      "file": "incidents/2026-02-24T20-34-54-768Z-workspace",
+      "bytes": 0,
+      "updated_at": "2026-02-24T20:34:54.769621Z",
+      "type": "other",
+      "tags": [
+        "misc"
+      ]
+    },
+    {
+      "file": "incidents/2026-02-24T20-34-54-769Z-extension_guard.md",
+      "bytes": 218,
+      "updated_at": "2026-03-05T00:52:12.754115Z",
+      "type": "md",
+      "tags": [
+        "misc"
+      ]
+    },
+    {
+      "file": "incidents/2026-02-24T21-03-05-458Z-web",
+      "bytes": 0,
+      "updated_at": "2026-02-24T21:03:05.458519Z",
+      "type": "other",
+      "tags": [
+        "misc"
+      ]
+    },
+    {
+      "file": "incidents/2026-02-24T21-03-05-459Z-workspace",
+      "bytes": 0,
+      "updated_at": "2026-02-24T21:03:05.459530Z",
+      "type": "other",
+      "tags": [
+        "misc"
+      ]
+    },
+    {
+      "file": "incidents/2026-02-24T21-03-05-460Z-extension_guard.md",
+      "bytes": 218,
+      "updated_at": "2026-03-05T00:52:12.757807Z",
+      "type": "md",
+      "tags": [
+        "misc"
+      ]
+    },
+    {
+      "file": "incidents/2026-02-24T21-03-26-965Z-web",
+      "bytes": 0,
+      "updated_at": "2026-02-24T21:03:26.967017Z",
+      "type": "other",
+      "tags": [
+        "misc"
+      ]
+    },
+    {
+      "file": "incidents/2026-02-24T21-03-26-966Z-workspace",
+      "bytes": 0,
+      "updated_at": "2026-02-24T21:03:26.968018Z",
+      "type": "other",
+      "tags": [
+        "misc"
+      ]
+    },
+    {
+      "file": "incidents/2026-02-24T21-03-26-968Z-extension_guard.md",
+      "bytes": 218,
+      "updated_at": "2026-03-05T00:52:12.759853Z",
+      "type": "md",
+      "tags": [
+        "misc"
+      ]
+    },
+    {
+      "file": "incidents/2026-02-27T11-26-14-867Z-web",
+      "bytes": 0,
+      "updated_at": "2026-02-27T11:26:14.868028Z",
+      "type": "other",
+      "tags": [
+        "misc"
+      ]
+    },
+    {
+      "file": "incidents/2026-02-27T11-26-14-868Z-extension_guard.md",
+      "bytes": 218,
+      "updated_at": "2026-03-05T00:52:12.762853Z",
+      "type": "md",
+      "tags": [
+        "misc"
+      ]
+    },
+    {
+      "file": "incidents/2026-02-27T11-26-14-868Z-workspace",
+      "bytes": 0,
+      "updated_at": "2026-02-27T11:26:14.869023Z",
+      "type": "other",
+      "tags": [
+        "misc"
+      ]
+    },
+    {
+      "file": "incidents/2026-02-27T18-51-24-957Z-web",
+      "bytes": 0,
+      "updated_at": "2026-02-27T18:51:24.958152Z",
+      "type": "other",
+      "tags": [
+        "misc"
+      ]
+    },
+    {
+      "file": "incidents/2026-02-27T18-51-24-958Z-workspace",
+      "bytes": 0,
+      "updated_at": "2026-02-27T18:51:24.959166Z",
+      "type": "other",
+      "tags": [
+        "misc"
+      ]
+    },
+    {
+      "file": "incidents/2026-02-27T18-51-24-959Z-extension_guard.md",
+      "bytes": 218,
+      "updated_at": "2026-03-05T00:52:12.765197Z",
+      "type": "md",
+      "tags": [
+        "misc"
+      ]
+    },
+    {
+      "file": "incidents/2026-02-27T18-54-07-781Z-web",
+      "bytes": 0,
+      "updated_at": "2026-02-27T18:54:07.781191Z",
+      "type": "other",
+      "tags": [
+        "misc"
+      ]
+    },
+    {
+      "file": "incidents/2026-02-27T18-54-07-782Z-extension_guard.md",
+      "bytes": 218,
+      "updated_at": "2026-03-05T00:52:12.768510Z",
+      "type": "md",
+      "tags": [
+        "misc"
+      ]
+    },
+    {
+      "file": "incidents/2026-02-27T18-54-07-782Z-workspace",
+      "bytes": 0,
+      "updated_at": "2026-02-27T18:54:07.782242Z",
+      "type": "other",
+      "tags": [
+        "misc"
+      ]
+    },
+    {
+      "file": "incidents/2026-02-28T03-07-07-704Z-web",
+      "bytes": 0,
+      "updated_at": "2026-02-28T03:07:07.704547Z",
+      "type": "other",
+      "tags": [
+        "misc"
+      ]
+    },
+    {
+      "file": "incidents/2026-02-28T03-07-07-705Z-extension_guard.md",
+      "bytes": 218,
+      "updated_at": "2026-03-05T00:52:12.770765Z",
+      "type": "md",
+      "tags": [
+        "misc"
+      ]
+    },
+    {
+      "file": "incidents/2026-02-28T03-07-07-705Z-workspace",
+      "bytes": 0,
+      "updated_at": "2026-02-28T03:07:07.705556Z",
+      "type": "other",
+      "tags": [
+        "misc"
+      ]
+    },
+    {
+      "file": "incidents/2026-02-28T03-07-07-981Z-web",
+      "bytes": 0,
+      "updated_at": "2026-02-28T03:07:07.982406Z",
+      "type": "other",
+      "tags": [
+        "misc"
+      ]
+    },
+    {
+      "file": "incidents/2026-02-28T03-07-07-982Z-workspace",
+      "bytes": 0,
+      "updated_at": "2026-02-28T03:07:07.982928Z",
+      "type": "other",
+      "tags": [
+        "misc"
+      ]
+    },
+    {
+      "file": "incidents/2026-02-28T03-07-07-983Z-extension_guard.md",
+      "bytes": 218,
+      "updated_at": "2026-03-05T00:52:12.774314Z",
+      "type": "md",
+      "tags": [
+        "misc"
+      ]
+    },
+    {
+      "file": "incidents/2026-02-28T11-05-13-005Z-web",
+      "bytes": 0,
+      "updated_at": "2026-02-28T11:05:13.007114Z",
+      "type": "other",
+      "tags": [
+        "misc"
+      ]
+    },
+    {
+      "file": "incidents/2026-02-28T11-05-13-006Z-workspace",
+      "bytes": 0,
+      "updated_at": "2026-02-28T11:05:13.007114Z",
+      "type": "other",
+      "tags": [
+        "misc"
+      ]
+    },
+    {
+      "file": "incidents/2026-02-28T11-05-13-007Z-extension_guard.md",
+      "bytes": 218,
+      "updated_at": "2026-03-05T00:52:12.776808Z",
+      "type": "md",
+      "tags": [
+        "misc"
+      ]
+    },
+    {
+      "file": "incidents/2026-02-28T11-05-13-279Z-web",
+      "bytes": 0,
+      "updated_at": "2026-02-28T11:05:13.279545Z",
+      "type": "other",
+      "tags": [
+        "misc"
+      ]
+    },
+    {
+      "file": "incidents/2026-02-28T11-05-13-279Z-workspace",
+      "bytes": 0,
+      "updated_at": "2026-02-28T11:05:13.280071Z",
+      "type": "other",
+      "tags": [
+        "misc"
+      ]
+    },
+    {
+      "file": "incidents/2026-02-28T11-05-13-280Z-extension_guard.md",
+      "bytes": 218,
+      "updated_at": "2026-03-05T00:52:12.780161Z",
+      "type": "md",
+      "tags": [
+        "misc"
+      ]
+    },
+    {
+      "file": "incidents/2026-03-03T13-13-58-539Z-web",
+      "bytes": 0,
+      "updated_at": "2026-03-03T13:13:58.540160Z",
+      "type": "other",
+      "tags": [
+        "misc"
+      ]
+    },
+    {
+      "file": "incidents/2026-03-03T13-13-58-540Z-extension_guard.md",
+      "bytes": 218,
+      "updated_at": "2026-03-05T00:52:12.782171Z",
+      "type": "md",
+      "tags": [
+        "misc"
+      ]
+    },
+    {
+      "file": "incidents/2026-03-03T13-13-58-540Z-workspace",
+      "bytes": 0,
+      "updated_at": "2026-03-03T13:13:58.540160Z",
+      "type": "other",
+      "tags": [
+        "misc"
+      ]
+    },
+    {
+      "file": "incidents/2026-03-05T00-45-27-959Z-web",
+      "bytes": 0,
+      "updated_at": "2026-03-05T00:45:27.959873Z",
+      "type": "other",
+      "tags": [
+        "misc"
+      ]
+    },
+    {
+      "file": "incidents/2026-03-05T00-45-27-960Z-workspace",
+      "bytes": 0,
+      "updated_at": "2026-03-05T00:45:27.960879Z",
+      "type": "other",
+      "tags": [
+        "misc"
+      ]
+    },
+    {
+      "file": "incidents/2026-03-05T00-45-27-961Z-extension_guard.md",
+      "bytes": 218,
+      "updated_at": "2026-03-05T00:52:12.785598Z",
+      "type": "md",
+      "tags": [
+        "misc"
+      ]
+    },
+    {
+      "file": "incidents/2026-03-05T15-44-40-814Z-web",
+      "bytes": 0,
+      "updated_at": "2026-03-05T15:44:40.815447Z",
+      "type": "other",
+      "tags": [
+        "misc"
+      ]
+    },
+    {
+      "file": "incidents/2026-03-05T15-44-40-814Z-workspace",
+      "bytes": 0,
+      "updated_at": "2026-03-05T15:44:40.815447Z",
+      "type": "other",
+      "tags": [
+        "misc"
+      ]
+    },
+    {
+      "file": "incidents/2026-03-05T15-44-40-815Z-extension_guard.md",
+      "bytes": 218,
+      "updated_at": "2026-03-05T15:56:34.642478Z",
+      "type": "md",
+      "tags": [
+        "misc"
+      ]
+    },
+    {
+      "file": "incidents/2026-03-05T15-56-13-152Z-web",
+      "bytes": 0,
+      "updated_at": "2026-03-05T15:56:13.154575Z",
+      "type": "other",
+      "tags": [
+        "misc"
+      ]
+    },
+    {
+      "file": "incidents/2026-03-05T15-56-13-155Z-workspace",
+      "bytes": 0,
+      "updated_at": "2026-03-05T15:56:13.156797Z",
+      "type": "other",
+      "tags": [
+        "misc"
+      ]
+    },
+    {
+      "file": "incidents/2026-03-05T15-56-13-156Z-extension_guard.md",
+      "bytes": 218,
+      "updated_at": "2026-03-05T15:56:34.645476Z",
+      "type": "md",
+      "tags": [
+        "misc"
+      ]
+    },
+    {
+      "file": "incidents/2026-03-08T13-27-57-390Z-web",
+      "bytes": 0,
+      "updated_at": "2026-03-08T13:27:57.391509Z",
+      "type": "other",
+      "tags": [
+        "misc"
+      ]
+    },
+    {
+      "file": "incidents/2026-03-08T13-27-57-390Z-workspace",
+      "bytes": 0,
+      "updated_at": "2026-03-08T13:27:57.391509Z",
+      "type": "other",
+      "tags": [
+        "misc"
+      ]
+    },
+    {
+      "file": "incidents/2026-03-08T13-27-57-391Z-extension_guard.md",
+      "bytes": 218,
+      "updated_at": "2026-03-30T17:28:04.388334Z",
+      "type": "md",
+      "tags": [
+        "misc"
+      ]
+    },
+    {
+      "file": "incidents/2026-03-08T17-05-11-611Z-web",
+      "bytes": 0,
+      "updated_at": "2026-03-08T17:05:11.611594Z",
+      "type": "other",
+      "tags": [
+        "misc"
+      ]
+    },
+    {
+      "file": "incidents/2026-03-08T17-05-11-612Z-extension_guard.md",
+      "bytes": 218,
+      "updated_at": "2026-03-30T17:28:04.392453Z",
+      "type": "md",
+      "tags": [
+        "misc"
+      ]
+    },
+    {
+      "file": "incidents/2026-03-08T17-05-11-612Z-workspace",
+      "bytes": 0,
+      "updated_at": "2026-03-08T17:05:11.611594Z",
+      "type": "other",
+      "tags": [
+        "misc"
+      ]
+    },
+    {
+      "file": "incidents/2026-03-09T17-05-24-181Z-web",
+      "bytes": 0,
+      "updated_at": "2026-03-09T17:05:24.183425Z",
+      "type": "other",
+      "tags": [
+        "misc"
+      ]
+    },
+    {
+      "file": "incidents/2026-03-09T17-05-24-183Z-workspace",
+      "bytes": 0,
+      "updated_at": "2026-03-09T17:05:24.183425Z",
+      "type": "other",
+      "tags": [
+        "misc"
+      ]
+    },
+    {
+      "file": "incidents/2026-03-09T17-05-24-184Z-extension_guard.md",
+      "bytes": 218,
+      "updated_at": "2026-03-30T17:28:04.395118Z",
+      "type": "md",
+      "tags": [
+        "misc"
+      ]
+    },
+    {
+      "file": "incidents/2026-03-09T17-11-43-315Z-web",
+      "bytes": 0,
+      "updated_at": "2026-03-09T17:11:43.316495Z",
+      "type": "other",
+      "tags": [
+        "misc"
+      ]
+    },
+    {
+      "file": "incidents/2026-03-09T17-11-43-316Z-workspace",
+      "bytes": 0,
+      "updated_at": "2026-03-09T17:11:43.317495Z",
+      "type": "other",
+      "tags": [
+        "misc"
+      ]
+    },
+    {
+      "file": "incidents/2026-03-09T17-11-43-317Z-extension_guard.md",
+      "bytes": 218,
+      "updated_at": "2026-03-30T17:28:04.400128Z",
+      "type": "md",
+      "tags": [
+        "misc"
+      ]
+    },
+    {
+      "file": "incidents/2026-03-09T22-02-52-783Z-web",
+      "bytes": 0,
+      "updated_at": "2026-03-09T22:02:52.783343Z",
+      "type": "other",
+      "tags": [
+        "misc"
+      ]
+    },
+    {
+      "file": "incidents/2026-03-09T22-02-52-784Z-extension_guard.md",
+      "bytes": 218,
+      "updated_at": "2026-03-30T17:28:04.405621Z",
+      "type": "md",
+      "tags": [
+        "misc"
+      ]
+    },
+    {
+      "file": "incidents/2026-03-09T22-02-52-784Z-workspace",
+      "bytes": 0,
+      "updated_at": "2026-03-09T22:02:52.783343Z",
+      "type": "other",
+      "tags": [
+        "misc"
+      ]
+    },
+    {
+      "file": "incidents/2026-03-09T22-07-27-964Z-web",
+      "bytes": 0,
+      "updated_at": "2026-03-09T22:07:27.964526Z",
+      "type": "other",
+      "tags": [
+        "misc"
+      ]
+    },
+    {
+      "file": "incidents/2026-03-09T22-07-27-965Z-workspace",
+      "bytes": 0,
+      "updated_at": "2026-03-09T22:07:27.965617Z",
+      "type": "other",
+      "tags": [
+        "misc"
+      ]
+    },
+    {
+      "file": "incidents/2026-03-09T22-07-27-966Z-extension_guard.md",
+      "bytes": 218,
+      "updated_at": "2026-03-30T17:28:04.408793Z",
+      "type": "md",
+      "tags": [
+        "misc"
+      ]
+    },
+    {
+      "file": "incidents/2026-03-09T22-20-28-013Z-web",
+      "bytes": 0,
+      "updated_at": "2026-03-09T22:20:28.013676Z",
+      "type": "other",
+      "tags": [
+        "misc"
+      ]
+    },
+    {
+      "file": "incidents/2026-03-09T22-20-28-014Z-extension_guard.md",
+      "bytes": 218,
+      "updated_at": "2026-03-30T17:28:04.412300Z",
+      "type": "md",
+      "tags": [
+        "misc"
+      ]
+    },
+    {
+      "file": "incidents/2026-03-09T22-20-28-014Z-workspace",
+      "bytes": 0,
+      "updated_at": "2026-03-09T22:20:28.015156Z",
+      "type": "other",
+      "tags": [
+        "misc"
+      ]
+    },
+    {
+      "file": "incidents/2026-03-09T22-41-23-158Z-web",
+      "bytes": 0,
+      "updated_at": "2026-03-09T22:41:23.159308Z",
+      "type": "other",
+      "tags": [
+        "misc"
+      ]
+    },
+    {
+      "file": "incidents/2026-03-09T22-41-23-159Z-extension_guard.md",
+      "bytes": 218,
+      "updated_at": "2026-03-30T17:28:04.417826Z",
+      "type": "md",
+      "tags": [
+        "misc"
+      ]
+    },
+    {
+      "file": "incidents/2026-03-09T22-41-23-159Z-workspace",
+      "bytes": 0,
+      "updated_at": "2026-03-09T22:41:23.160311Z",
+      "type": "other",
+      "tags": [
+        "misc"
+      ]
+    },
+    {
+      "file": "incidents/2026-03-09T23-48-53-882Z-web",
+      "bytes": 0,
+      "updated_at": "2026-03-09T23:48:53.883358Z",
+      "type": "other",
+      "tags": [
+        "misc"
+      ]
+    },
+    {
+      "file": "incidents/2026-03-09T23-48-53-883Z-workspace",
+      "bytes": 0,
+      "updated_at": "2026-03-09T23:48:53.883358Z",
+      "type": "other",
+      "tags": [
+        "misc"
+      ]
+    },
+    {
+      "file": "incidents/2026-03-09T23-48-53-884Z-extension_guard.md",
+      "bytes": 218,
+      "updated_at": "2026-03-30T17:28:04.421178Z",
+      "type": "md",
+      "tags": [
+        "misc"
+      ]
+    },
+    {
+      "file": "incidents/2026-03-09T23-54-00-734Z-web",
+      "bytes": 0,
+      "updated_at": "2026-03-09T23:54:00.736086Z",
+      "type": "other",
+      "tags": [
+        "misc"
+      ]
+    },
+    {
+      "file": "incidents/2026-03-09T23-54-00-736Z-workspace",
+      "bytes": 0,
+      "updated_at": "2026-03-09T23:54:00.736086Z",
+      "type": "other",
+      "tags": [
+        "misc"
+      ]
+    },
+    {
+      "file": "incidents/2026-03-09T23-54-00-737Z-extension_guard.md",
+      "bytes": 218,
+      "updated_at": "2026-03-30T17:28:04.424510Z",
+      "type": "md",
+      "tags": [
+        "misc"
+      ]
+    },
+    {
+      "file": "incidents/2026-03-09T23-55-27-152Z-web",
+      "bytes": 0,
+      "updated_at": "2026-03-09T23:55:27.152985Z",
+      "type": "other",
+      "tags": [
+        "misc"
+      ]
+    },
+    {
+      "file": "incidents/2026-03-09T23-55-27-152Z-workspace",
+      "bytes": 0,
+      "updated_at": "2026-03-09T23:55:27.152985Z",
+      "type": "other",
+      "tags": [
+        "misc"
+      ]
+    },
+    {
+      "file": "incidents/2026-03-09T23-55-27-153Z-extension_guard.md",
+      "bytes": 218,
+      "updated_at": "2026-03-30T17:28:04.427637Z",
+      "type": "md",
+      "tags": [
+        "misc"
+      ]
+    },
+    {
+      "file": "incidents/2026-03-18T19-34-38-532Z-web",
+      "bytes": 0,
+      "updated_at": "2026-03-18T19:34:38.532763Z",
+      "type": "other",
+      "tags": [
+        "misc"
+      ]
+    },
+    {
+      "file": "incidents/2026-03-18T19-34-38-534Z-extension_guard.md",
+      "bytes": 218,
+      "updated_at": "2026-03-30T17:28:04.430960Z",
+      "type": "md",
+      "tags": [
+        "misc"
+      ]
+    },
+    {
+      "file": "incidents/2026-03-18T19-34-38-534Z-workspace",
+      "bytes": 0,
+      "updated_at": "2026-03-18T19:34:38.534226Z",
+      "type": "other",
+      "tags": [
+        "misc"
+      ]
+    },
+    {
+      "file": "incidents/2026-03-18T19-37-44-880Z-web",
+      "bytes": 0,
+      "updated_at": "2026-03-18T19:37:44.881489Z",
+      "type": "other",
+      "tags": [
+        "misc"
+      ]
+    },
+    {
+      "file": "incidents/2026-03-18T19-37-44-881Z-workspace",
+      "bytes": 0,
+      "updated_at": "2026-03-18T19:37:44.882490Z",
+      "type": "other",
+      "tags": [
+        "misc"
+      ]
+    },
+    {
+      "file": "incidents/2026-03-18T19-37-49-324Z-web",
+      "bytes": 0,
+      "updated_at": "2026-03-18T19:37:49.326174Z",
+      "type": "other",
+      "tags": [
+        "misc"
+      ]
+    },
+    {
+      "file": "incidents/2026-03-18T19-37-49-326Z-workspace",
+      "bytes": 0,
+      "updated_at": "2026-03-18T19:37:49.326174Z",
+      "type": "other",
+      "tags": [
+        "misc"
+      ]
+    },
+    {
+      "file": "incidents/2026-03-18T19-40-39-007Z-workspace",
+      "bytes": 0,
+      "updated_at": "2026-03-18T19:40:39.009291Z",
+      "type": "other",
+      "tags": [
+        "misc"
+      ]
+    },
+    {
+      "file": "incidents/2026-03-18T19-41-22-478Z-workspace",
+      "bytes": 0,
+      "updated_at": "2026-03-18T19:41:22.479411Z",
+      "type": "other",
+      "tags": [
+        "misc"
+      ]
+    },
+    {
+      "file": "incidents/2026-03-18T19-42-40-744Z-workspace",
+      "bytes": 0,
+      "updated_at": "2026-03-18T19:42:40.745448Z",
+      "type": "other",
+      "tags": [
+        "misc"
+      ]
+    },
+    {
+      "file": "incidents/2026-03-18T19-43-17-448Z-workspace",
+      "bytes": 0,
+      "updated_at": "2026-03-18T19:43:17.449882Z",
+      "type": "other",
+      "tags": [
+        "misc"
+      ]
+    },
+    {
+      "file": "incidents/2026-03-18T19-43-18-297Z-workspace",
+      "bytes": 0,
+      "updated_at": "2026-03-18T19:43:18.298801Z",
+      "type": "other",
+      "tags": [
+        "misc"
+      ]
+    },
+    {
+      "file": "incidents/2026-03-18T19-44-16-945Z-workspace",
+      "bytes": 0,
+      "updated_at": "2026-03-18T19:44:16.946057Z",
+      "type": "other",
+      "tags": [
+        "misc"
+      ]
+    },
+    {
+      "file": "incidents/2026-03-21T16-31-55-788Z-web",
+      "bytes": 0,
+      "updated_at": "2026-03-21T16:31:55.789373Z",
+      "type": "other",
+      "tags": [
+        "misc"
+      ]
+    },
+    {
+      "file": "incidents/2026-03-21T16-31-55-789Z-extension_guard.md",
+      "bytes": 202,
+      "updated_at": "2026-03-30T17:28:04.436973Z",
+      "type": "md",
+      "tags": [
+        "misc"
+      ]
+    },
+    {
+      "file": "incidents/2026-03-21T16-31-55-789Z-workspace",
+      "bytes": 0,
+      "updated_at": "2026-03-21T16:31:55.789373Z",
+      "type": "other",
+      "tags": [
+        "misc"
+      ]
+    },
+    {
+      "file": "incidents/2026-03-24T18-26-34-039Z-web",
+      "bytes": 0,
+      "updated_at": "2026-03-24T18:26:34.040231Z",
+      "type": "other",
+      "tags": [
+        "misc"
+      ]
+    },
+    {
+      "file": "incidents/2026-03-24T18-26-34-040Z-workspace",
+      "bytes": 0,
+      "updated_at": "2026-03-24T18:26:34.041234Z",
+      "type": "other",
+      "tags": [
+        "misc"
+      ]
+    },
+    {
+      "file": "incidents/2026-03-24T18-26-34-041Z-extension_guard.md",
+      "bytes": 202,
+      "updated_at": "2026-03-30T17:28:04.439978Z",
+      "type": "md",
+      "tags": [
+        "misc"
+      ]
+    },
+    {
+      "file": "incidents/2026-03-30T17-24-49-808Z-web",
+      "bytes": 0,
+      "updated_at": "2026-03-30T17:24:49.809871Z",
+      "type": "other",
+      "tags": [
+        "misc"
+      ]
+    },
+    {
+      "file": "incidents/2026-03-30T17-24-49-811Z-workspace",
+      "bytes": 0,
+      "updated_at": "2026-03-30T17:24:49.812886Z",
+      "type": "other",
+      "tags": [
+        "misc"
+      ]
+    },
+    {
+      "file": "incidents/2026-03-30T17-24-49-812Z-extension_guard.md",
+      "bytes": 203,
+      "updated_at": "2026-03-30T17:28:04.442485Z",
+      "type": "md",
+      "tags": [
+        "misc"
+      ]
+    },
+    {
+      "file": "incidents/2026-03-30T19-25-32-477Z-web",
+      "bytes": 0,
+      "updated_at": "2026-03-30T19:25:32.477105Z",
+      "type": "other",
+      "tags": [
+        "misc"
+      ]
+    },
+    {
+      "file": "incidents/2026-03-30T19-25-32-478Z-extension_guard.md",
+      "bytes": 203,
+      "updated_at": "2026-04-02T08:52:14.016690Z",
+      "type": "md",
+      "tags": [
+        "misc"
+      ]
+    },
+    {
+      "file": "incidents/2026-03-30T19-25-32-478Z-workspace",
+      "bytes": 0,
+      "updated_at": "2026-03-30T19:25:32.477105Z",
+      "type": "other",
+      "tags": [
+        "misc"
+      ]
+    },
+    {
+      "file": "incidents/2026-03-31T15-45-44-020Z-web",
+      "bytes": 0,
+      "updated_at": "2026-03-31T15:45:44.020422Z",
+      "type": "other",
+      "tags": [
+        "misc"
+      ]
+    },
+    {
+      "file": "incidents/2026-03-31T15-45-44-021Z-workspace",
+      "bytes": 0,
+      "updated_at": "2026-03-31T15:45:44.021421Z",
+      "type": "other",
+      "tags": [
+        "misc"
+      ]
+    },
+    {
+      "file": "incidents/2026-03-31T15-45-44-022Z-extension_guard.md",
+      "bytes": 203,
+      "updated_at": "2026-04-02T08:52:14.019699Z",
+      "type": "md",
+      "tags": [
+        "misc"
+      ]
+    },
+    {
+      "file": "incidents/2026-04-01T18-04-24-476Z-web",
+      "bytes": 0,
+      "updated_at": "2026-04-01T18:04:24.477151Z",
+      "type": "other",
+      "tags": [
+        "misc"
+      ]
+    },
+    {
+      "file": "incidents/2026-04-01T18-04-24-478Z-extension_guard.md",
+      "bytes": 203,
+      "updated_at": "2026-04-02T08:52:14.022696Z",
+      "type": "md",
+      "tags": [
+        "misc"
+      ]
+    },
+    {
+      "file": "incidents/2026-04-01T18-04-24-478Z-workspace",
+      "bytes": 0,
+      "updated_at": "2026-04-01T18:04:24.478156Z",
+      "type": "other",
+      "tags": [
+        "misc"
+      ]
+    },
+    {
+      "file": "incidents/2026-04-03T19-24-28-925Z-web",
+      "bytes": 0,
+      "updated_at": "2026-04-03T19:24:28.924954Z",
+      "type": "other",
+      "tags": [
+        "misc"
+      ]
+    },
+    {
+      "file": "incidents/2026-04-03T19-24-28-925Z-workspace",
+      "bytes": 0,
+      "updated_at": "2026-04-03T19:24:28.925960Z",
+      "type": "other",
+      "tags": [
+        "misc"
+      ]
+    },
+    {
+      "file": "incidents/2026-04-03T19-24-28-926Z-extension_guard.md",
+      "bytes": 203,
+      "updated_at": "2026-04-13T20:50:38.513823Z",
+      "type": "md",
+      "tags": [
+        "misc"
+      ]
+    },
+    {
+      "file": "incidents/2026-04-08T17-11-56-533Z-web",
+      "bytes": 0,
+      "updated_at": "2026-04-08T17:11:56.534662Z",
+      "type": "other",
+      "tags": [
+        "misc"
+      ]
+    },
+    {
+      "file": "incidents/2026-04-08T17-11-56-535Z-workspace",
+      "bytes": 0,
+      "updated_at": "2026-04-08T17:11:56.535985Z",
+      "type": "other",
+      "tags": [
+        "misc"
+      ]
+    },
+    {
+      "file": "incidents/2026-04-08T17-11-56-536Z-extension_guard.md",
+      "bytes": 203,
+      "updated_at": "2026-04-13T20:50:38.518333Z",
+      "type": "md",
+      "tags": [
+        "misc"
+      ]
+    },
+    {
+      "file": "incidents/2026-04-08T17-13-30-411Z-web",
+      "bytes": 0,
+      "updated_at": "2026-04-08T17:13:30.411168Z",
+      "type": "other",
+      "tags": [
+        "misc"
+      ]
+    },
+    {
+      "file": "incidents/2026-04-08T17-13-30-411Z-workspace",
+      "bytes": 0,
+      "updated_at": "2026-04-08T17:13:30.411168Z",
+      "type": "other",
+      "tags": [
+        "misc"
+      ]
+    },
+    {
+      "file": "incidents/2026-04-08T17-13-30-412Z-extension_guard.md",
+      "bytes": 203,
+      "updated_at": "2026-04-13T20:50:38.522425Z",
+      "type": "md",
+      "tags": [
+        "misc"
+      ]
+    },
+    {
+      "file": "incidents/2026-04-08T17-16-41-980Z-web",
+      "bytes": 0,
+      "updated_at": "2026-04-08T17:16:41.980850Z",
+      "type": "other",
+      "tags": [
+        "misc"
+      ]
+    },
+    {
+      "file": "incidents/2026-04-08T17-16-41-980Z-workspace",
+      "bytes": 0,
+      "updated_at": "2026-04-08T17:16:41.981855Z",
+      "type": "other",
+      "tags": [
+        "misc"
+      ]
+    },
+    {
+      "file": "incidents/2026-04-08T17-16-41-981Z-extension_guard.md",
+      "bytes": 203,
+      "updated_at": "2026-04-13T20:50:38.525918Z",
+      "type": "md",
+      "tags": [
+        "misc"
+      ]
+    },
+    {
+      "file": "incidents/2026-04-10T21-45-55-634Z-web",
+      "bytes": 0,
+      "updated_at": "2026-04-10T21:45:55.635898Z",
+      "type": "other",
+      "tags": [
+        "misc"
+      ]
+    },
+    {
+      "file": "incidents/2026-04-10T21-45-55-636Z-workspace",
+      "bytes": 0,
+      "updated_at": "2026-04-10T21:45:55.636903Z",
+      "type": "other",
+      "tags": [
+        "misc"
+      ]
+    },
+    {
+      "file": "incidents/2026-04-10T21-45-55-637Z-extension_guard.md",
+      "bytes": 203,
+      "updated_at": "2026-04-13T20:50:38.530871Z",
+      "type": "md",
+      "tags": [
+        "misc"
+      ]
+    },
+    {
+      "file": "incidents/2026-04-13T11-07-05-129Z-web",
+      "bytes": 0,
+      "updated_at": "2026-04-13T11:07:05.131063Z",
+      "type": "other",
+      "tags": [
+        "misc"
+      ]
+    },
+    {
+      "file": "incidents/2026-04-13T11-07-05-131Z-extension_guard.md",
+      "bytes": 203,
+      "updated_at": "2026-04-13T20:50:38.533295Z",
+      "type": "md",
+      "tags": [
+        "misc"
+      ]
+    },
+    {
+      "file": "incidents/2026-04-13T11-07-05-131Z-workspace",
+      "bytes": 0,
+      "updated_at": "2026-04-13T11:07:05.132063Z",
+      "type": "other",
+      "tags": [
+        "misc"
+      ]
+    },
+    {
+      "file": "incidents/2026-04-13T16-53-03-582Z-web",
+      "bytes": 0,
+      "updated_at": "2026-04-13T16:53:03.582411Z",
+      "type": "other",
+      "tags": [
+        "misc"
+      ]
+    },
+    {
+      "file": "incidents/2026-04-13T16-53-03-583Z-workspace",
+      "bytes": 0,
+      "updated_at": "2026-04-13T16:53:03.583921Z",
+      "type": "other",
+      "tags": [
+        "misc"
+      ]
+    },
+    {
+      "file": "incidents/2026-04-13T16-53-03-584Z-extension_guard.md",
+      "bytes": 209,
+      "updated_at": "2026-04-13T20:50:38.538316Z",
+      "type": "md",
+      "tags": [
+        "misc"
+      ]
+    },
+    {
+      "file": "incidents/2026-04-13T19-37-51-335Z-web",
+      "bytes": 0,
+      "updated_at": "2026-04-13T19:37:51.336407Z",
+      "type": "other",
+      "tags": [
+        "misc"
+      ]
+    },
+    {
+      "file": "incidents/2026-04-13T19-37-51-336Z-extension_guard.md",
+      "bytes": 210,
+      "updated_at": "2026-04-13T20:50:38.541331Z",
+      "type": "md",
+      "tags": [
+        "misc"
+      ]
+    },
+    {
+      "file": "incidents/2026-04-13T19-37-51-336Z-workspace",
+      "bytes": 0,
+      "updated_at": "2026-04-13T19:37:51.337407Z",
+      "type": "other",
+      "tags": [
+        "misc"
+      ]
+    },
+    {
+      "file": "incidents/2026-04-13T19-39-47-436Z-web",
+      "bytes": 0,
+      "updated_at": "2026-04-13T19:39:47.437699Z",
+      "type": "other",
+      "tags": [
+        "misc"
+      ]
+    },
+    {
+      "file": "incidents/2026-04-13T19-39-47-438Z-workspace",
+      "bytes": 0,
+      "updated_at": "2026-04-13T19:39:47.438707Z",
+      "type": "other",
+      "tags": [
+        "misc"
+      ]
+    },
+    {
+      "file": "incidents/2026-04-13T19-39-47-439Z-extension_guard.md",
+      "bytes": 210,
+      "updated_at": "2026-04-13T20:50:38.545007Z",
+      "type": "md",
+      "tags": [
+        "misc"
+      ]
+    },
+    {
+      "file": "incidents/2026-04-13T22-17-50-964Z-web",
+      "bytes": 0,
+      "updated_at": "2026-04-13T22:17:50.963811Z",
+      "type": "other",
+      "tags": [
+        "misc"
+      ]
+    },
+    {
+      "file": "incidents/2026-04-13T22-17-50-965Z-workspace",
+      "bytes": 0,
+      "updated_at": "2026-04-13T22:17:50.964809Z",
+      "type": "other",
+      "tags": [
+        "misc"
+      ]
+    },
+    {
+      "file": "incidents/2026-04-13T22-17-50-966Z-extension_guard.md",
+      "bytes": 209,
+      "updated_at": "2026-04-14T14:30:16.325959Z",
+      "type": "md",
+      "tags": [
+        "misc"
+      ]
+    },
+    {
+      "file": "incidents/2026-04-15T12-08-49-624Z-web",
+      "bytes": 0,
+      "updated_at": "2026-04-15T12:08:49.625282Z",
+      "type": "other",
+      "tags": [
+        "misc"
+      ]
+    },
+    {
+      "file": "incidents/2026-04-15T12-08-49-626Z-extension_guard.md",
+      "bytes": 211,
+      "updated_at": "2026-04-21T13:56:09.019495Z",
+      "type": "md",
+      "tags": [
+        "misc"
+      ]
+    },
+    {
+      "file": "incidents/2026-04-15T12-08-49-626Z-workspace",
+      "bytes": 0,
+      "updated_at": "2026-04-15T12:08:49.626283Z",
+      "type": "other",
+      "tags": [
+        "misc"
+      ]
+    },
+    {
+      "file": "incidents/2026-04-17T12-08-09-908Z-web",
+      "bytes": 0,
+      "updated_at": "2026-04-17T12:08:09.908034Z",
+      "type": "other",
+      "tags": [
+        "misc"
+      ]
+    },
+    {
+      "file": "incidents/2026-04-17T12-08-09-909Z-workspace",
+      "bytes": 0,
+      "updated_at": "2026-04-17T12:08:09.909452Z",
+      "type": "other",
+      "tags": [
+        "misc"
+      ]
+    },
+    {
+      "file": "incidents/2026-04-17T12-08-09-910Z-extension_guard.md",
+      "bytes": 211,
+      "updated_at": "2026-04-21T13:56:09.023493Z",
+      "type": "md",
+      "tags": [
+        "misc"
+      ]
+    },
+    {
+      "file": "incidents/2026-04-17T17-36-09-896Z-web",
+      "bytes": 0,
+      "updated_at": "2026-04-17T17:36:09.897710Z",
+      "type": "other",
+      "tags": [
+        "misc"
+      ]
+    },
+    {
+      "file": "incidents/2026-04-17T17-36-09-897Z-workspace",
+      "bytes": 0,
+      "updated_at": "2026-04-17T17:36:09.897710Z",
+      "type": "other",
+      "tags": [
+        "misc"
+      ]
+    },
+    {
+      "file": "incidents/2026-04-21T13-46-33-926Z-web",
+      "bytes": 0,
+      "updated_at": "2026-04-21T13:46:33.926064Z",
+      "type": "other",
+      "tags": [
+        "misc"
+      ]
+    },
+    {
+      "file": "incidents/2026-04-21T13-46-33-927Z-extension_guard.md",
+      "bytes": 210,
+      "updated_at": "2026-04-21T13:56:09.026376Z",
+      "type": "md",
+      "tags": [
+        "misc"
+      ]
+    },
+    {
+      "file": "incidents/2026-04-21T13-46-33-927Z-workspace",
+      "bytes": 0,
+      "updated_at": "2026-04-21T13:46:33.927064Z",
+      "type": "other",
+      "tags": [
+        "misc"
+      ]
+    },
+    {
+      "file": "incidents/2026-04-22T15-34-44-005Z-web",
+      "bytes": 0,
+      "updated_at": "2026-04-22T15:34:44.006202Z",
+      "type": "other",
+      "tags": [
+        "misc"
+      ]
+    },
+    {
+      "file": "incidents/2026-04-22T15-34-44-007Z-extension_guard.md",
+      "bytes": 211,
+      "updated_at": "2026-04-23T17:37:32.564115Z",
+      "type": "md",
+      "tags": [
+        "misc"
+      ]
+    },
+    {
+      "file": "incidents/2026-04-22T15-34-44-007Z-workspace",
+      "bytes": 0,
+      "updated_at": "2026-04-22T15:34:44.007201Z",
+      "type": "other",
+      "tags": [
+        "misc"
+      ]
+    },
+    {
+      "file": "incidents/2026-04-23T15-47-08-283Z-web",
+      "bytes": 0,
+      "updated_at": "2026-04-23T15:47:08.282655Z",
+      "type": "other",
+      "tags": [
+        "misc"
+      ]
+    },
+    {
+      "file": "incidents/2026-04-23T15-47-08-284Z-workspace",
+      "bytes": 0,
+      "updated_at": "2026-04-23T15:47:08.284165Z",
+      "type": "other",
+      "tags": [
+        "misc"
+      ]
+    },
+    {
+      "file": "incidents/2026-04-23T15-47-08-285Z-extension_guard.md",
+      "bytes": 211,
+      "updated_at": "2026-04-23T17:37:32.566218Z",
+      "type": "md",
+      "tags": [
+        "misc"
+      ]
+    },
+    {
+      "file": "incidents/2026-04-23T15-48-41-191Z-web",
+      "bytes": 0,
+      "updated_at": "2026-04-23T15:48:41.192190Z",
+      "type": "other",
+      "tags": [
+        "misc"
+      ]
+    },
+    {
+      "file": "incidents/2026-04-23T15-48-41-192Z-extension_guard.md",
+      "bytes": 211,
+      "updated_at": "2026-04-23T17:37:32.569636Z",
+      "type": "md",
+      "tags": [
+        "misc"
+      ]
+    },
+    {
+      "file": "incidents/2026-04-23T15-48-41-192Z-workspace",
+      "bytes": 0,
+      "updated_at": "2026-04-23T15:48:41.192190Z",
+      "type": "other",
+      "tags": [
+        "misc"
+      ]
+    },
+    {
+      "file": "incidents/2026-04-23T17-21-34-007Z-web",
+      "bytes": 0,
+      "updated_at": "2026-04-23T17:21:34.007852Z",
+      "type": "other",
+      "tags": [
+        "misc"
+      ]
+    },
+    {
+      "file": "incidents/2026-04-23T17-21-34-008Z-extension_guard.md",
+      "bytes": 211,
+      "updated_at": "2026-04-23T17:37:32.572188Z",
+      "type": "md",
+      "tags": [
+        "misc"
+      ]
+    },
+    {
+      "file": "incidents/2026-04-23T17-21-34-008Z-workspace",
+      "bytes": 0,
+      "updated_at": "2026-04-23T17:21:34.007852Z",
+      "type": "other",
+      "tags": [
+        "misc"
+      ]
+    },
+    {
+      "file": "incidents/2026-04-29T14-19-10-440Z-web",
+      "bytes": 0,
+      "updated_at": "2026-04-29T14:19:10.442632Z",
+      "type": "other",
+      "tags": [
+        "misc"
+      ]
+    },
+    {
+      "file": "incidents/2026-04-29T14-19-10-441Z-workspace",
+      "bytes": 0,
+      "updated_at": "2026-04-29T14:19:10.442632Z",
+      "type": "other",
+      "tags": [
+        "misc"
+      ]
+    },
+    {
+      "file": "incidents/2026-04-29T14-19-10-442Z-extension_guard.md",
+      "bytes": 211,
+      "updated_at": "2026-04-29T15:36:22.674472Z",
+      "type": "md",
+      "tags": [
+        "misc"
+      ]
+    },
+    {
+      "file": "incidents/2026-05-01T10-23-00-436Z-web",
+      "bytes": 0,
+      "updated_at": "2026-05-01T10:23:00.437684Z",
+      "type": "other",
+      "tags": [
+        "misc"
+      ]
+    },
+    {
+      "file": "incidents/2026-05-01T10-23-00-437Z-workspace",
+      "bytes": 0,
+      "updated_at": "2026-05-01T10:23:00.438684Z",
+      "type": "other",
+      "tags": [
+        "misc"
+      ]
+    },
+    {
+      "file": "incidents/2026-05-01T10-23-00-438Z-extension_guard.md",
+      "bytes": 210,
+      "updated_at": "2026-05-01T11:51:14.984109Z",
+      "type": "md",
+      "tags": [
+        "misc"
+      ]
+    },
+    {
+      "file": "INDEX.md",
+      "bytes": 54614,
+      "updated_at": "2026-05-01T17:22:55.476899Z",
+      "type": "md",
+      "tags": [
+        "index"
+      ]
+    },
+    {
+      "file": "privacy/z_privacy_report.json",
+      "bytes": 231,
+      "updated_at": "2026-05-01T17:22:46.418443Z",
+      "type": "json",
+      "tags": [
+        "misc"
+      ]
+    },
+    {
+      "file": "README.md",
+      "bytes": 1789,
+      "updated_at": "2026-05-01T17:22:55.489311Z",
+      "type": "md",
+      "tags": [
+        "index"
+      ]
+    },
+    {
+      "file": "z_aafrtc_context.json",
+      "bytes": 274,
+      "updated_at": "2026-04-27T17:36:04.907547Z",
+      "type": "json",
+      "tags": [
+        "misc"
+      ]
+    },
+    {
+      "file": "z_acoustic_living_pulse_phase2_trust_handoff_2026-04-27.md",
+      "bytes": 3599,
+      "updated_at": "2026-05-01T17:23:50.751754Z",
+      "type": "md",
+      "tags": [
+        "trust"
+      ]
+    },
+    {
+      "file": "z_adaptive_coherence.json",
+      "bytes": 2617,
+      "updated_at": "2026-04-21T14:13:58.708435Z",
+      "type": "json",
+      "tags": [
+        "misc"
+      ]
+    },
+    {
+      "file": "z_adaptive_coherence.md",
+      "bytes": 882,
+      "updated_at": "2026-04-23T17:37:32.614767Z",
+      "type": "md",
+      "tags": [
+        "misc"
+      ]
+    },
+    {
+      "file": "z_adaptive_learning_state.json",
+      "bytes": 839,
+      "updated_at": "2026-05-01T10:22:36.823086Z",
+      "type": "json",
+      "tags": [
+        "misc"
+      ]
+    },
+    {
+      "file": "z_ai_consistency_alerts.json",
+      "bytes": 764,
+      "updated_at": "2026-04-23T21:44:06.924870Z",
+      "type": "json",
+      "tags": [
+        "ai"
+      ]
+    },
+    {
+      "file": "z_ai_ecosphere_delta.json",
+      "bytes": 552,
+      "updated_at": "2026-04-23T18:54:54.635572Z",
+      "type": "json",
+      "tags": [
+        "ai"
+      ]
+    },
+    {
+      "file": "z_ai_ecosphere_ledger.json",
+      "bytes": 5751,
+      "updated_at": "2026-04-26T02:08:46.279957Z",
+      "type": "json",
+      "tags": [
+        "ai"
+      ]
+    },
+    {
+      "file": "z_ai_ecosphere_ledger.md",
+      "bytes": 1383,
+      "updated_at": "2026-04-27T11:59:40.249182Z",
+      "type": "md",
+      "tags": [
+        "ai"
+      ]
+    },
+    {
+      "file": "z_ai_ecosphere_ledger.prev.json",
+      "bytes": 5751,
+      "updated_at": "2026-04-23T18:54:54.636932Z",
+      "type": "json",
+      "tags": [
+        "ai"
+      ]
+    },
+    {
+      "file": "z_ai_signal_health.json",
+      "bytes": 330,
+      "updated_at": "2026-04-27T20:03:28.529057Z",
+      "type": "json",
+      "tags": [
+        "health",
+        "ai"
+      ]
+    },
+    {
+      "file": "z_ai_status.json",
+      "bytes": 1879,
+      "updated_at": "2026-05-01T17:22:47.351420Z",
+      "type": "json",
+      "tags": [
+        "health",
+        "ai"
+      ]
+    },
+    {
+      "file": "z_ai_task_accomplishments.csv",
+      "bytes": 404,
+      "updated_at": "2026-04-21T14:13:55.739405Z",
+      "type": "other",
+      "tags": [
+        "ai"
+      ]
+    },
+    {
+      "file": "z_anydevices_analyzer.json",
+      "bytes": 4777,
+      "updated_at": "2026-04-26T01:48:45.644409Z",
+      "type": "json",
+      "tags": [
+        "misc"
+      ]
+    },
+    {
+      "file": "z_anydevices_analyzer.md",
+      "bytes": 1117,
+      "updated_at": "2026-04-27T11:59:40.267969Z",
+      "type": "md",
+      "tags": [
+        "misc"
+      ]
+    },
+    {
+      "file": "z_anydevices_approval_queue.json",
+      "bytes": 272,
+      "updated_at": "2026-03-05T01:03:10.792544Z",
+      "type": "json",
+      "tags": [
+        "misc"
+      ]
+    },
+    {
+      "file": "z_anydevices_approval_queue.md",
+      "bytes": 309,
+      "updated_at": "2026-02-17T20:42:42.253680Z",
+      "type": "md",
+      "tags": [
+        "misc"
+      ]
+    },
+    {
+      "file": "z_anydevices_monitor.json",
+      "bytes": 3246,
+      "updated_at": "2026-04-26T01:49:12.457095Z",
+      "type": "json",
+      "tags": [
+        "misc"
+      ]
+    },
+    {
+      "file": "z_anydevices_monitor.md",
+      "bytes": 268,
+      "updated_at": "2026-04-27T11:59:40.279672Z",
+      "type": "md",
+      "tags": [
+        "misc"
+      ]
+    },
+    {
+      "file": "z_anydevices_monitor_history.jsonl",
+      "bytes": 12574,
+      "updated_at": "2026-04-26T01:49:12.458102Z",
+      "type": "other",
+      "tags": [
+        "misc"
+      ]
+    },
+    {
+      "file": "z_anydevices_security_scan.json",
+      "bytes": 595,
+      "updated_at": "2026-04-26T01:48:47.305214Z",
+      "type": "json",
+      "tags": [
+        "trust"
+      ]
+    },
+    {
+      "file": "z_anydevices_security_scan.md",
+      "bytes": 327,
+      "updated_at": "2026-04-27T11:59:40.285669Z",
+      "type": "md",
+      "tags": [
+        "trust"
+      ]
+    },
+    {
+      "file": "z_arrbce_last_run.json",
+      "bytes": 85,
+      "updated_at": "2026-04-17T16:33:22.446112Z",
+      "type": "json",
+      "tags": [
+        "misc"
+      ]
+    },
+    {
+      "file": "z_ataiecf_shadow_verify.json",
+      "bytes": 4965,
+      "updated_at": "2026-04-28T18:55:55.013441Z",
+      "type": "json",
+      "tags": [
+        "misc"
+      ]
+    },
+    {
+      "file": "z_ataiecf_shadow_verify.md",
+      "bytes": 1822,
+      "updated_at": "2026-04-28T19:36:20.734523Z",
+      "type": "md",
+      "tags": [
+        "misc"
+      ]
+    },
+    {
+      "file": "z_autonomous_ledger.jsonl",
+      "bytes": 2270,
+      "updated_at": "2026-04-28T18:56:02.940209Z",
+      "type": "other",
+      "tags": [
+        "misc"
+      ]
+    },
+    {
+      "file": "z_autonomous_runtime.json",
+      "bytes": 8803,
+      "updated_at": "2026-04-28T18:56:02.940209Z",
+      "type": "json",
+      "tags": [
+        "misc"
+      ]
+    },
+    {
+      "file": "z_autonomous_state.json",
+      "bytes": 2847,
+      "updated_at": "2026-04-28T18:56:02.939208Z",
+      "type": "json",
+      "tags": [
+        "misc"
+      ]
+    },
+    {
+      "file": "z_autonomous_watchdog.json",
+      "bytes": 232,
+      "updated_at": "2026-04-28T18:56:03.301926Z",
+      "type": "json",
+      "tags": [
+        "misc"
+      ]
+    },
+    {
+      "file": "z_autorun_audit.json",
+      "bytes": 539,
+      "updated_at": "2026-05-01T17:24:18.692461Z",
+      "type": "json",
+      "tags": [
+        "trust",
+        "autopilot"
+      ]
+    },
+    {
+      "file": "z_awareness_trio_fpsmc_vdk_vhealth_2026-04-27.md",
+      "bytes": 4813,
+      "updated_at": "2026-05-01T17:23:50.753705Z",
+      "type": "md",
+      "tags": [
+        "health"
+      ]
+    },
+    {
+      "file": "z_bot_adaptive.json",
+      "bytes": 694,
+      "updated_at": "2026-04-26T01:11:32.341967Z",
+      "type": "json",
+      "tags": [
+        "misc"
+      ]
+    },
+    {
+      "file": "z_bot_alerts.json",
+      "bytes": 449,
+      "updated_at": "2026-04-26T01:11:30.299920Z",
+      "type": "json",
+      "tags": [
+        "misc"
+      ]
+    },
+    {
+      "file": "z_bot_decisions.json",
+      "bytes": 692,
+      "updated_at": "2026-04-26T01:11:31.129940Z",
+      "type": "json",
+      "tags": [
+        "misc"
+      ]
+    },
+    {
+      "file": "z_bot_execution_plans.json",
+      "bytes": 341,
+      "updated_at": "2026-04-26T01:11:32.756920Z",
+      "type": "json",
+      "tags": [
+        "misc"
+      ]
+    },
+    {
+      "file": "z_bot_execution_result.json",
+      "bytes": 879,
+      "updated_at": "2026-04-25T22:15:16.248034Z",
+      "type": "json",
+      "tags": [
+        "misc"
+      ]
+    },
+    {
+      "file": "z_bot_guardian.json",
+      "bytes": 3845,
+      "updated_at": "2026-04-26T15:14:58.188045Z",
+      "type": "json",
+      "tags": [
+        "misc"
+      ]
+    },
+    {
+      "file": "z_bot_health.json",
+      "bytes": 512,
+      "updated_at": "2026-04-26T01:11:29.887758Z",
+      "type": "json",
+      "tags": [
+        "health"
+      ]
+    },
+    {
+      "file": "z_bot_patterns.json",
+      "bytes": 745,
+      "updated_at": "2026-04-26T12:14:00.562655Z",
+      "type": "json",
+      "tags": [
+        "misc"
+      ]
+    },
+    {
+      "file": "z_bot_predictions.json",
+      "bytes": 466,
+      "updated_at": "2026-04-26T01:11:31.939408Z",
+      "type": "json",
+      "tags": [
+        "misc"
+      ]
+    },
+    {
+      "file": "z_bot_rootcause.json",
+      "bytes": 606,
+      "updated_at": "2026-04-26T01:11:31.537165Z",
+      "type": "json",
+      "tags": [
+        "misc"
+      ]
+    },
+    {
+      "file": "z_bot_strategy.json",
+      "bytes": 479,
+      "updated_at": "2026-04-26T01:11:33.159456Z",
+      "type": "json",
+      "tags": [
+        "misc"
+      ]
+    },
+    {
+      "file": "z_bot_sync.json",
+      "bytes": 489,
+      "updated_at": "2026-04-25T22:14:58.393628Z",
+      "type": "json",
+      "tags": [
+        "misc"
+      ]
+    },
+    {
+      "file": "z_boundary_service_ownership.json",
+      "bytes": 213,
+      "updated_at": "2026-04-26T01:55:21.956993Z",
+      "type": "json",
+      "tags": [
+        "misc"
+      ]
+    },
+    {
+      "file": "z_boundary_service_ownership.md",
+      "bytes": 217,
+      "updated_at": "2026-04-27T11:59:40.311594Z",
+      "type": "md",
+      "tags": [
+        "misc"
+      ]
+    },
+    {
+      "file": "z_bridge_abuse_simulation.json",
+      "bytes": 754,
+      "updated_at": "2026-04-17T19:43:12.586527Z",
+      "type": "json",
+      "tags": [
+        "misc"
+      ]
+    },
+    {
+      "file": "z_bridge_data_integrity.json",
+      "bytes": 171,
+      "updated_at": "2026-04-17T19:43:12.437281Z",
+      "type": "json",
+      "tags": [
+        "misc"
+      ]
+    },
+    {
+      "file": "z_bridge_intelligence_regression.json",
+      "bytes": 716,
+      "updated_at": "2026-04-26T02:12:34.919756Z",
+      "type": "json",
+      "tags": [
+        "misc"
+      ]
+    },
+    {
+      "file": "z_bridge_intelligence_regression.md",
+      "bytes": 459,
+      "updated_at": "2026-05-01T17:23:50.756047Z",
+      "type": "md",
+      "tags": [
+        "misc"
+      ]
+    },
+    {
+      "file": "z_bridge_intelligence_summary.json",
+      "bytes": 387,
+      "updated_at": "2026-04-29T14:49:00.824389Z",
+      "type": "json",
+      "tags": [
+        "misc"
+      ]
+    },
+    {
+      "file": "z_bridge_intelligence_validation.json",
+      "bytes": 198,
+      "updated_at": "2026-04-17T19:43:12.779489Z",
+      "type": "json",
+      "tags": [
+        "misc"
+      ]
+    },
+    {
+      "file": "z_bridge_stability_runner.json",
+      "bytes": 123,
+      "updated_at": "2026-04-17T19:43:12.645898Z",
+      "type": "json",
+      "tags": [
+        "misc"
+      ]
+    },
+    {
+      "file": "z_canonical_alias_audit.json",
+      "bytes": 1281,
+      "updated_at": "2026-05-01T17:24:17.110531Z",
+      "type": "json",
+      "tags": [
+        "trust"
+      ]
+    },
+    {
+      "file": "z_canonical_alias_audit.md",
+      "bytes": 355,
+      "updated_at": "2026-05-01T17:24:17.111531Z",
+      "type": "md",
+      "tags": [
+        "trust"
+      ]
+    },
+    {
+      "file": "z_car2_refactor_plan.json",
+      "bytes": 369662,
+      "updated_at": "2026-04-30T22:07:12.491412Z",
+      "type": "json",
+      "tags": [
+        "misc"
+      ]
+    },
+    {
+      "file": "z_car2_refactor_plan.md",
+      "bytes": 4209,
+      "updated_at": "2026-05-01T17:23:50.757057Z",
+      "type": "md",
+      "tags": [
+        "misc"
+      ]
+    },
+    {
+      "file": "z_car2_similarity_report.json",
+      "bytes": 749626,
+      "updated_at": "2026-04-30T21:09:13.059898Z",
+      "type": "json",
+      "tags": [
+        "misc"
+      ]
+    },
+    {
+      "file": "z_car2_similarity_report.md",
+      "bytes": 5771,
+      "updated_at": "2026-05-01T17:23:50.758054Z",
+      "type": "md",
+      "tags": [
+        "misc"
+      ]
+    },
+    {
+      "file": "z_chatgpt_export_folder_index.json",
+      "bytes": 158,
+      "updated_at": "2026-04-17T20:47:37.236885Z",
+      "type": "json",
+      "tags": [
+        "index"
+      ]
+    },
+    {
+      "file": "z_chatgpt_integration_verify.json",
+      "bytes": 6031,
+      "updated_at": "2026-04-17T20:47:37.235881Z",
+      "type": "json",
+      "tags": [
+        "misc"
+      ]
+    },
+    {
+      "file": "z_chatgpt_integration_verify.md",
+      "bytes": 2741,
+      "updated_at": "2026-04-21T13:56:09.121655Z",
+      "type": "md",
+      "tags": [
+        "misc"
+      ]
+    },
+    {
+      "file": "z_ci_intelligence.json",
+      "bytes": 7224,
+      "updated_at": "2026-04-23T18:54:52.339997Z",
+      "type": "json",
+      "tags": [
+        "misc"
+      ]
+    },
+    {
+      "file": "z_cloudflare_ai_comms_manifest.json",
+      "bytes": 4452,
+      "updated_at": "2026-04-27T17:36:05.914900Z",
+      "type": "json",
+      "tags": [
+        "trust",
+        "ai"
+      ]
+    },
+    {
+      "file": "z_communication_health.json",
+      "bytes": 1714,
+      "updated_at": "2026-04-27T22:55:04.344618Z",
+      "type": "json",
+      "tags": [
+        "health"
+      ]
+    },
+    {
+      "file": "z_connection_tree_lite_receipt.md",
+      "bytes": 2163,
+      "updated_at": "2026-05-01T17:23:50.759388Z",
+      "type": "md",
+      "tags": [
+        "misc"
+      ]
+    },
+    {
+      "file": "z_core_engine_audit.json",
+      "bytes": 545,
+      "updated_at": "2026-05-01T17:24:18.812033Z",
+      "type": "json",
+      "tags": [
+        "trust"
+      ]
+    },
+    {
+      "file": "z_core_engine_audit.md",
+      "bytes": 525,
+      "updated_at": "2026-05-01T17:24:18.813034Z",
+      "type": "md",
+      "tags": [
+        "trust"
+      ]
+    },
+    {
+      "file": "z_cross_project_observer.json",
+      "bytes": 5738,
+      "updated_at": "2026-05-01T17:22:47.793686Z",
+      "type": "json",
+      "tags": [
+        "misc"
+      ]
+    },
+    {
+      "file": "z_cross_project_observer.md",
+      "bytes": 1158,
+      "updated_at": "2026-05-01T17:23:50.760396Z",
+      "type": "md",
+      "tags": [
+        "misc"
+      ]
+    },
+    {
+      "file": "z_cross_project_upgrade_audit.json",
+      "bytes": 14603,
+      "updated_at": "2026-04-14T15:46:24.645652Z",
+      "type": "json",
+      "tags": [
+        "trust"
+      ]
+    },
+    {
+      "file": "z_cross_project_upgrade_audit.md",
+      "bytes": 8387,
+      "updated_at": "2026-05-01T17:23:50.760396Z",
+      "type": "md",
+      "tags": [
+        "trust"
+      ]
+    },
+    {
+      "file": "z_cross_system_learning.json",
+      "bytes": 1006,
+      "updated_at": "2026-04-26T14:00:43.987651Z",
+      "type": "json",
+      "tags": [
+        "misc"
+      ]
+    },
+    {
+      "file": "z_cross_system_learning.md",
+      "bytes": 355,
+      "updated_at": "2026-04-27T11:59:40.387307Z",
+      "type": "md",
+      "tags": [
+        "misc"
+      ]
+    },
+    {
+      "file": "z_cursor_workspace_lint.json",
+      "bytes": 767,
+      "updated_at": "2026-04-24T16:35:11.502990Z",
+      "type": "json",
+      "tags": [
+        "misc"
+      ]
+    },
+    {
+      "file": "z_cursor_workspace_lint.md",
+      "bytes": 389,
+      "updated_at": "2026-04-26T00:53:55.478043Z",
+      "type": "md",
+      "tags": [
+        "misc"
+      ]
+    },
+    {
+      "file": "z_cycle_indicator.json",
+      "bytes": 1108,
+      "updated_at": "2026-05-01T17:22:47.201055Z",
+      "type": "json",
+      "tags": [
+        "misc"
+      ]
+    },
+    {
+      "file": "z_cycle_indicator.md",
+      "bytes": 296,
+      "updated_at": "2026-05-01T17:22:55.608768Z",
+      "type": "md",
+      "tags": [
+        "misc"
+      ]
+    },
+    {
+      "file": "z_cycle_ledger.jsonl",
+      "bytes": 48254,
+      "updated_at": "2026-05-01T17:22:47.251508Z",
+      "type": "other",
+      "tags": [
+        "misc"
+      ]
+    },
+    {
+      "file": "z_dashboard_merge_log.md",
+      "bytes": 725,
+      "updated_at": "2026-02-17T20:42:42.269116Z",
+      "type": "md",
+      "tags": [
+        "misc"
+      ]
+    },
+    {
+      "file": "z_dashboard_registry_verify.json",
+      "bytes": 4254,
+      "updated_at": "2026-05-01T12:34:33.395365Z",
+      "type": "json",
+      "tags": [
+        "misc"
+      ]
+    },
+    {
+      "file": "z_dashboard_registry_verify.md",
+      "bytes": 1149,
+      "updated_at": "2026-05-01T17:22:55.615774Z",
+      "type": "md",
+      "tags": [
+        "misc"
+      ]
+    },
+    {
+      "file": "z_data_layout_audit.json",
+      "bytes": 5501,
+      "updated_at": "2026-05-01T17:24:17.789017Z",
+      "type": "json",
+      "tags": [
+        "trust"
+      ]
+    },
+    {
+      "file": "z_data_layout_audit.md",
+      "bytes": 1316,
+      "updated_at": "2026-05-01T17:24:17.789017Z",
+      "type": "md",
+      "tags": [
+        "trust"
+      ]
+    },
+    {
+      "file": "z_data_leak_audit.json",
+      "bytes": 513,
+      "updated_at": "2026-05-01T17:24:18.635349Z",
+      "type": "json",
+      "tags": [
+        "trust"
+      ]
+    },
+    {
+      "file": "z_data_leak_audit.md",
+      "bytes": 269,
+      "updated_at": "2026-05-01T17:24:18.635349Z",
+      "type": "md",
+      "tags": [
+        "trust"
+      ]
+    },
+    {
+      "file": "z_dsr_analysis.json",
+      "bytes": 6713,
+      "updated_at": "2026-04-28T18:56:02.912285Z",
+      "type": "json",
+      "tags": [
+        "misc"
+      ]
+    },
+    {
+      "file": "z_dsr_analysis.md",
+      "bytes": 568,
+      "updated_at": "2026-04-28T19:36:20.805032Z",
+      "type": "md",
+      "tags": [
+        "misc"
+      ]
+    },
+    {
+      "file": "z_ecosystem_commflow_verifier.json",
+      "bytes": 7111,
+      "updated_at": "2026-05-01T11:51:05.507061Z",
+      "type": "json",
+      "tags": [
+        "misc"
+      ]
+    },
+    {
+      "file": "z_ecosystem_commflow_verifier.md",
+      "bytes": 3689,
+      "updated_at": "2026-05-01T17:23:50.763825Z",
+      "type": "md",
+      "tags": [
+        "misc"
+      ]
+    },
+    {
+      "file": "z_ecosystem_session_report_2026-04-17.md",
+      "bytes": 4220,
+      "updated_at": "2026-05-01T17:23:50.763825Z",
+      "type": "md",
+      "tags": [
+        "misc"
+      ]
+    },
+    {
+      "file": "z_ecosystem_status.md",
+      "bytes": 5542,
+      "updated_at": "2026-05-01T17:23:50.764833Z",
+      "type": "md",
+      "tags": [
+        "health"
+      ]
+    },
+    {
+      "file": "z_enterprise_os_phase1_status.json",
+      "bytes": 2476,
+      "updated_at": "2026-04-28T17:08:34.592100Z",
+      "type": "json",
+      "tags": [
+        "health"
+      ]
+    },
+    {
+      "file": "z_enterprise_os_phase1_status.md",
+      "bytes": 1794,
+      "updated_at": "2026-04-28T18:42:44.111804Z",
+      "type": "md",
+      "tags": [
+        "health"
+      ]
+    },
+    {
+      "file": "z_error_budget.json",
+      "bytes": 2119,
+      "updated_at": "2026-05-01T17:22:47.302938Z",
+      "type": "json",
+      "tags": [
+        "misc"
+      ]
+    },
+    {
+      "file": "z_error_budget.md",
+      "bytes": 660,
+      "updated_at": "2026-05-01T17:22:55.657617Z",
+      "type": "md",
+      "tags": [
+        "misc"
+      ]
+    },
+    {
+      "file": "z_error_budget_ledger.jsonl",
+      "bytes": 5611,
+      "updated_at": "2026-05-01T17:22:47.303940Z",
+      "type": "other",
+      "tags": [
+        "misc"
+      ]
+    },
+    {
+      "file": "z_execution_enforcer.json",
+      "bytes": 2419,
+      "updated_at": "2026-04-26T02:12:34.814763Z",
+      "type": "json",
+      "tags": [
+        "misc"
+      ]
+    },
+    {
+      "file": "z_experience_intelligence.json",
+      "bytes": 1106,
+      "updated_at": "2026-04-27T20:03:27.355472Z",
+      "type": "json",
+      "tags": [
+        "misc"
+      ]
+    },
+    {
+      "file": "z_experience_intelligence.md",
+      "bytes": 487,
+      "updated_at": "2026-04-27T20:14:22.584898Z",
+      "type": "md",
+      "tags": [
+        "misc"
+      ]
+    },
+    {
+      "file": "z_experience_memory.json",
+      "bytes": 1390,
+      "updated_at": "2026-04-27T20:03:26.500795Z",
+      "type": "json",
+      "tags": [
+        "misc"
+      ]
+    },
+    {
+      "file": "z_experience_memory.md",
+      "bytes": 404,
+      "updated_at": "2026-04-27T20:14:22.588899Z",
+      "type": "md",
+      "tags": [
+        "misc"
+      ]
+    },
+    {
+      "file": "z_extension_guard.json",
+      "bytes": 1323,
+      "updated_at": "2026-05-01T17:22:46.747673Z",
+      "type": "json",
+      "tags": [
+        "misc"
+      ]
+    },
+    {
+      "file": "z_extension_guard.md",
+      "bytes": 703,
+      "updated_at": "2026-05-01T17:22:55.664200Z",
+      "type": "md",
+      "tags": [
+        "misc"
+      ]
+    },
+    {
+      "file": "z_fhmff_lite.json",
+      "bytes": 2257,
+      "updated_at": "2026-04-24T11:20:23.085402Z",
+      "type": "json",
+      "tags": [
+        "misc"
+      ]
+    },
+    {
+      "file": "z_fhmff_lite.md",
+      "bytes": 447,
+      "updated_at": "2026-04-26T00:53:55.560380Z",
+      "type": "md",
+      "tags": [
+        "misc"
+      ]
+    },
+    {
+      "file": "z_final_status.json",
+      "bytes": 605,
+      "updated_at": "2026-02-13T18:30:02.133942Z",
+      "type": "json",
+      "tags": [
+        "health"
+      ]
+    },
+    {
+      "file": "z_folder_manager_retention.json",
+      "bytes": 237,
+      "updated_at": "2026-03-05T01:03:10.853211Z",
+      "type": "json",
+      "tags": [
+        "misc"
+      ]
+    },
+    {
+      "file": "z_folder_manager_retention.md",
+      "bytes": 227,
+      "updated_at": "2026-02-17T20:42:42.284575Z",
+      "type": "md",
+      "tags": [
+        "misc"
+      ]
+    },
+    {
+      "file": "z_folder_manager_retention_state.json",
+      "bytes": 45,
+      "updated_at": "2026-03-05T01:03:10.850907Z",
+      "type": "json",
+      "tags": [
+        "misc"
+      ]
+    },
+    {
+      "file": "z_folder_manager_status.json",
+      "bytes": 730,
+      "updated_at": "2026-05-01T17:24:18.743692Z",
+      "type": "json",
+      "tags": [
+        "health"
+      ]
+    },
+    {
+      "file": "z_folder_manager_status.md",
+      "bytes": 474,
+      "updated_at": "2026-05-01T17:24:18.744694Z",
+      "type": "md",
+      "tags": [
+        "health"
+      ]
+    },
+    {
+      "file": "z_folder_relocation_plan.json",
+      "bytes": 516,
+      "updated_at": "2026-04-28T18:55:53.797013Z",
+      "type": "json",
+      "tags": [
+        "misc"
+      ]
+    },
+    {
+      "file": "z_folder_relocation_plan.md",
+      "bytes": 235,
+      "updated_at": "2026-04-28T19:36:20.864063Z",
+      "type": "md",
+      "tags": [
+        "misc"
+      ]
+    },
+    {
+      "file": "z_folder_structure_alignment.json",
+      "bytes": 749,
+      "updated_at": "2026-04-28T18:55:53.798012Z",
+      "type": "json",
+      "tags": [
+        "misc"
+      ]
+    },
+    {
+      "file": "z_folder_structure_alignment.md",
+      "bytes": 260,
+      "updated_at": "2026-04-28T19:36:20.867343Z",
+      "type": "md",
+      "tags": [
+        "misc"
+      ]
+    },
+    {
+      "file": "z_formula_360_cube_verification_2026-02-13.md",
+      "bytes": 2823,
+      "updated_at": "2026-02-17T20:42:42.295218Z",
+      "type": "md",
+      "tags": [
+        "misc"
+      ]
+    },
+    {
+      "file": "z_formula_sync_check.json",
+      "bytes": 1564,
+      "updated_at": "2026-04-26T02:08:46.683456Z",
+      "type": "json",
+      "tags": [
+        "misc"
+      ]
+    },
+    {
+      "file": "z_formula_sync_check.md",
+      "bytes": 689,
+      "updated_at": "2026-04-27T11:59:40.566315Z",
+      "type": "md",
+      "tags": [
+        "misc"
+      ]
+    },
+    {
+      "file": "z_fpsmc_storage_map.json",
+      "bytes": 4348,
+      "updated_at": "2026-04-27T17:36:03.701025Z",
+      "type": "json",
+      "tags": [
+        "misc"
+      ]
+    },
+    {
+      "file": "z_fpsmc_storage_map.md",
+      "bytes": 1872,
+      "updated_at": "2026-05-01T17:23:50.767346Z",
+      "type": "md",
+      "tags": [
+        "misc"
+      ]
+    },
+    {
+      "file": "z_full_technical_verify_green_2026-04-27.md",
+      "bytes": 5752,
+      "updated_at": "2026-05-01T17:23:50.768345Z",
+      "type": "md",
+      "tags": [
+        "misc"
+      ]
+    },
+    {
+      "file": "z_fusion_council.json",
+      "bytes": 464,
+      "updated_at": "2026-04-27T20:03:27.959930Z",
+      "type": "json",
+      "tags": [
+        "misc"
+      ]
+    },
+    {
+      "file": "z_fusion_council.md",
+      "bytes": 291,
+      "updated_at": "2026-04-27T20:03:27.960984Z",
+      "type": "md",
+      "tags": [
+        "misc"
+      ]
+    },
+    {
+      "file": "z_gadget_mirrors_status.json",
+      "bytes": 2160,
+      "updated_at": "2026-04-26T21:41:31.171873Z",
+      "type": "json",
+      "tags": [
+        "health"
+      ]
+    },
+    {
+      "file": "z_gadget_mirrors_status.md",
+      "bytes": 1301,
+      "updated_at": "2026-04-27T11:59:40.576312Z",
+      "type": "md",
+      "tags": [
+        "health"
+      ]
+    },
+    {
+      "file": "z_garage_system_map.json",
+      "bytes": 83679,
+      "updated_at": "2026-04-23T18:54:52.279382Z",
+      "type": "json",
+      "tags": [
+        "misc"
+      ]
+    },
+    {
+      "file": "z_garage_upgrade_plan.json",
+      "bytes": 18002,
+      "updated_at": "2026-04-23T18:54:52.399177Z",
+      "type": "json",
+      "tags": [
+        "misc"
+      ]
+    },
+    {
+      "file": "z_github_ai_comms_manifest.json",
+      "bytes": 4138,
+      "updated_at": "2026-04-27T17:36:05.364389Z",
+      "type": "json",
+      "tags": [
+        "trust",
+        "ai"
+      ]
+    },
+    {
+      "file": "z_go_no_go_release_checklist.json",
+      "bytes": 1761,
+      "updated_at": "2026-04-26T02:12:35.255176Z",
+      "type": "json",
+      "tags": [
+        "misc"
+      ]
+    },
+    {
+      "file": "z_go_no_go_release_checklist.md",
+      "bytes": 739,
+      "updated_at": "2026-05-01T17:23:50.769345Z",
+      "type": "md",
+      "tags": [
+        "misc"
+      ]
+    },
+    {
+      "file": "z_guardian_report.json",
+      "bytes": 8740,
+      "updated_at": "2026-05-01T12:34:33.072210Z",
+      "type": "json",
+      "tags": [
+        "misc"
+      ]
+    },
+    {
+      "file": "z_heartbeat_shadow_status.json",
+      "bytes": 2158,
+      "updated_at": "2026-04-27T22:55:04.706709Z",
+      "type": "json",
+      "tags": [
+        "health"
+      ]
+    },
+    {
+      "file": "z_heartbeat_shadow_status.md",
+      "bytes": 1418,
+      "updated_at": "2026-04-27T22:55:04.707707Z",
+      "type": "md",
+      "tags": [
+        "health"
+      ]
+    },
+    {
+      "file": "z_html_links_catalog.json",
+      "bytes": 5750,
+      "updated_at": "2026-04-26T01:49:26.048381Z",
+      "type": "json",
+      "tags": [
+        "misc"
+      ]
+    },
+    {
+      "file": "z_html_security_audit.json",
+      "bytes": 15707,
+      "updated_at": "2026-03-05T01:03:10.877651Z",
+      "type": "json",
+      "tags": [
+        "trust"
+      ]
+    },
+    {
+      "file": "z_html_security_audit.md",
+      "bytes": 213,
+      "updated_at": "2026-02-17T20:42:42.306474Z",
+      "type": "md",
+      "tags": [
+        "trust"
+      ]
+    },
+    {
+      "file": "z_hygiene_autofix.json",
+      "bytes": 34978,
+      "updated_at": "2026-05-01T17:23:56.231510Z",
+      "type": "json",
+      "tags": [
+        "misc"
+      ]
+    },
+    {
+      "file": "z_hygiene_autofix.md",
+      "bytes": 339,
+      "updated_at": "2026-05-01T17:23:56.231510Z",
+      "type": "md",
+      "tags": [
+        "misc"
+      ]
+    },
+    {
+      "file": "z_hygiene_autofix_scoped.json",
+      "bytes": 7276,
+      "updated_at": "2026-04-28T18:56:00.495260Z",
+      "type": "json",
+      "tags": [
+        "misc"
+      ]
+    },
+    {
+      "file": "z_hygiene_autofix_scoped.md",
+      "bytes": 394,
+      "updated_at": "2026-04-28T19:37:06.462186Z",
+      "type": "md",
+      "tags": [
+        "misc"
+      ]
+    },
+    {
+      "file": "z_hygiene_status.json",
+      "bytes": 2137,
+      "updated_at": "2026-04-26T01:56:10.040573Z",
+      "type": "json",
+      "tags": [
+        "health"
+      ]
+    },
+    {
+      "file": "z_hygiene_status.md",
+      "bytes": 1175,
+      "updated_at": "2026-04-27T11:59:40.607349Z",
+      "type": "md",
+      "tags": [
+        "health"
+      ]
+    },
+    {
+      "file": "z_ide_commflow_guard.json",
+      "bytes": 36175,
+      "updated_at": "2026-05-01T10:22:54.982714Z",
+      "type": "json",
+      "tags": [
+        "misc"
+      ]
+    },
+    {
+      "file": "z_ide_commflow_guard.md",
+      "bytes": 13154,
+      "updated_at": "2026-05-01T11:51:15.311519Z",
+      "type": "md",
+      "tags": [
+        "misc"
+      ]
+    },
+    {
+      "file": "z_ide_commflow_guard_diagnosis.json",
+      "bytes": 148550,
+      "updated_at": "2026-04-29T15:43:58.402014Z",
+      "type": "json",
+      "tags": [
+        "misc"
+      ]
+    },
+    {
+      "file": "z_ide_commflow_guard_diagnosis.md",
+      "bytes": 5080,
+      "updated_at": "2026-04-29T15:44:05.257235Z",
+      "type": "md",
+      "tags": [
+        "misc"
+      ]
+    },
+    {
+      "file": "z_incident_triage.md",
+      "bytes": 96,
+      "updated_at": "2026-03-30T17:28:04.560010Z",
+      "type": "md",
+      "tags": [
+        "misc"
+      ]
+    },
+    {
+      "file": "z_incident_triage_state.json",
+      "bytes": 3476,
+      "updated_at": "2026-03-18T19:37:45.012789Z",
+      "type": "json",
+      "tags": [
+        "misc"
+      ]
+    },
+    {
+      "file": "z_index_identity_report.json",
+      "bytes": 17454,
+      "updated_at": "2026-04-30T19:45:32.613468Z",
+      "type": "json",
+      "tags": [
+        "index"
+      ]
+    },
+    {
+      "file": "z_index_identity_report.md",
+      "bytes": 410,
+      "updated_at": "2026-05-01T17:23:50.770556Z",
+      "type": "md",
+      "tags": [
+        "index"
+      ]
+    },
+    {
+      "file": "z_indicator_watchdog.json",
+      "bytes": 1174,
+      "updated_at": "2026-05-01T17:22:47.251508Z",
+      "type": "json",
+      "tags": [
+        "misc"
+      ]
+    },
+    {
+      "file": "z_indicator_watchdog.md",
+      "bytes": 528,
+      "updated_at": "2026-05-01T17:22:55.758255Z",
+      "type": "md",
+      "tags": [
+        "misc"
+      ]
+    },
+    {
+      "file": "z_indicator_watchdog_advisory.json",
+      "bytes": 226,
+      "updated_at": "2026-05-01T17:22:47.252507Z",
+      "type": "json",
+      "tags": [
+        "misc"
+      ]
+    },
+    {
+      "file": "z_indicator_watchdog_advisory.md",
+      "bytes": 223,
+      "updated_at": "2026-05-01T17:22:55.756268Z",
+      "type": "md",
+      "tags": [
+        "misc"
+      ]
+    },
+    {
+      "file": "z_kbozsu_codex.json",
+      "bytes": 10541,
+      "updated_at": "2026-04-24T19:21:19.944217Z",
+      "type": "json",
+      "tags": [
+        "misc"
+      ]
+    },
+    {
+      "file": "z_kbozsu_codex.md",
+      "bytes": 6728,
+      "updated_at": "2026-05-01T17:23:50.772577Z",
+      "type": "md",
+      "tags": [
+        "misc"
+      ]
+    },
+    {
+      "file": "z_krtaa_curriculum.json",
+      "bytes": 14434,
+      "updated_at": "2026-04-23T17:07:24.577432Z",
+      "type": "json",
+      "tags": [
+        "misc"
+      ]
+    },
+    {
+      "file": "z_krtaa_curriculum.md",
+      "bytes": 7095,
+      "updated_at": "2026-04-23T17:37:32.812207Z",
+      "type": "md",
+      "tags": [
+        "misc"
+      ]
+    },
+    {
+      "file": "z_lab_bootstrap.json",
+      "bytes": 1555,
+      "updated_at": "2026-05-01T10:22:57.348472Z",
+      "type": "json",
+      "tags": [
+        "misc"
+      ]
+    },
+    {
+      "file": "z_lab_bootstrap.md",
+      "bytes": 574,
+      "updated_at": "2026-05-01T11:51:15.351603Z",
+      "type": "md",
+      "tags": [
+        "misc"
+      ]
+    },
+    {
+      "file": "z_lab_dual_copies_setup.json",
+      "bytes": 1465,
+      "updated_at": "2026-04-17T15:43:54.895579Z",
+      "type": "json",
+      "tags": [
+        "misc"
+      ]
+    },
+    {
+      "file": "z_lab_dual_copies_setup.md",
+      "bytes": 934,
+      "updated_at": "2026-04-21T13:56:09.289717Z",
+      "type": "md",
+      "tags": [
+        "misc"
+      ]
+    },
+    {
+      "file": "z_lab_folder_manager_boost.json",
+      "bytes": 2000,
+      "updated_at": "2026-05-01T10:22:58.062150Z",
+      "type": "json",
+      "tags": [
+        "misc"
+      ]
+    },
+    {
+      "file": "z_lab_folder_manager_boost.md",
+      "bytes": 522,
+      "updated_at": "2026-05-01T11:51:15.356622Z",
+      "type": "md",
+      "tags": [
+        "misc"
+      ]
+    },
+    {
+      "file": "z_lab_module_new.json",
+      "bytes": 852,
+      "updated_at": "2026-04-17T15:50:37.067569Z",
+      "type": "json",
+      "tags": [
+        "misc"
+      ]
+    },
+    {
+      "file": "z_lab_module_new.md",
+      "bytes": 357,
+      "updated_at": "2026-04-21T13:56:09.298730Z",
+      "type": "md",
+      "tags": [
+        "misc"
+      ]
+    },
+    {
+      "file": "z_lab_promote.json",
+      "bytes": 946,
+      "updated_at": "2026-02-18T16:59:21.824486Z",
+      "type": "json",
+      "tags": [
+        "misc"
+      ]
+    },
+    {
+      "file": "z_lab_promote.md",
+      "bytes": 528,
+      "updated_at": "2026-02-18T17:39:37.616213Z",
+      "type": "md",
+      "tags": [
+        "misc"
+      ]
+    },
+    {
+      "file": "z_lab_readiness.json",
+      "bytes": 4326,
+      "updated_at": "2026-04-17T15:43:55.643244Z",
+      "type": "json",
+      "tags": [
+        "misc"
+      ]
+    },
+    {
+      "file": "z_lab_readiness.md",
+      "bytes": 863,
+      "updated_at": "2026-04-21T13:56:09.305936Z",
+      "type": "md",
+      "tags": [
+        "misc"
+      ]
+    },
+    {
+      "file": "z_lab_status.json",
+      "bytes": 906,
+      "updated_at": "2026-05-01T10:22:57.422516Z",
+      "type": "json",
+      "tags": [
+        "health"
+      ]
+    },
+    {
+      "file": "z_lab_status.md",
+      "bytes": 266,
+      "updated_at": "2026-05-01T11:51:15.368675Z",
+      "type": "md",
+      "tags": [
+        "health"
+      ]
+    },
+    {
+      "file": "z_lab_task_structure_guard.json",
+      "bytes": 537,
+      "updated_at": "2026-05-01T10:22:49.168175Z",
+      "type": "json",
+      "tags": [
+        "misc"
+      ]
+    },
+    {
+      "file": "z_lab_task_structure_guard.md",
+      "bytes": 317,
+      "updated_at": "2026-05-01T11:51:15.370677Z",
+      "type": "md",
+      "tags": [
+        "misc"
+      ]
+    },
+    {
+      "file": "z_learning_evaluation.json",
+      "bytes": 628,
+      "updated_at": "2026-04-26T17:48:08.100433Z",
+      "type": "json",
+      "tags": [
+        "misc"
+      ]
+    },
+    {
+      "file": "z_legal_readiness_delta.json",
+      "bytes": 3361,
+      "updated_at": "2026-02-14T18:35:28.878429Z",
+      "type": "json",
+      "tags": [
+        "misc"
+      ]
+    },
+    {
+      "file": "z_legal_readiness_delta.md",
+      "bytes": 2454,
+      "updated_at": "2026-02-17T20:42:42.320000Z",
+      "type": "md",
+      "tags": [
+        "misc"
+      ]
+    },
+    {
+      "file": "z_lint_debt_clearance_plan_2026-04-27.md",
+      "bytes": 5780,
+      "updated_at": "2026-05-01T17:23:50.776020Z",
+      "type": "md",
+      "tags": [
+        "misc"
+      ]
+    },
+    {
+      "file": "z_mdg_dashboard_discovery.json",
+      "bytes": 43026,
+      "updated_at": "2026-04-19T17:49:47.253477Z",
+      "type": "json",
+      "tags": [
+        "misc"
+      ]
+    },
+    {
+      "file": "z_module_registry_audit.json",
+      "bytes": 509,
+      "updated_at": "2026-04-29T21:35:19.392880Z",
+      "type": "json",
+      "tags": [
+        "trust"
+      ]
+    },
+    {
+      "file": "z_module_registry_audit.md",
+      "bytes": 389,
+      "updated_at": "2026-04-29T21:35:29.761270Z",
+      "type": "md",
+      "tags": [
+        "trust"
+      ]
+    },
+    {
+      "file": "z_multi_workspace_guard.json",
+      "bytes": 1308,
+      "updated_at": "2026-05-01T10:22:47.048465Z",
+      "type": "json",
+      "tags": [
+        "misc"
+      ]
+    },
+    {
+      "file": "z_multi_workspace_guard.md",
+      "bytes": 733,
+      "updated_at": "2026-05-01T11:51:15.390347Z",
+      "type": "md",
+      "tags": [
+        "misc"
+      ]
+    },
+    {
+      "file": "z_octave_gate_overrides.json",
+      "bytes": 108,
+      "updated_at": "2026-04-13T20:50:33.358418Z",
+      "type": "json",
+      "tags": [
+        "misc"
+      ]
+    },
+    {
+      "file": "z_octave_pilot_seed.json",
+      "bytes": 394,
+      "updated_at": "2026-04-13T20:50:33.359897Z",
+      "type": "json",
+      "tags": [
+        "misc"
+      ]
+    },
+    {
+      "file": "z_octave_readiness.json",
+      "bytes": 782,
+      "updated_at": "2026-03-05T01:03:10.944823Z",
+      "type": "json",
+      "tags": [
+        "misc"
+      ]
+    },
+    {
+      "file": "z_operator_digest.json",
+      "bytes": 1465,
+      "updated_at": "2026-04-17T19:43:13.472160Z",
+      "type": "json",
+      "tags": [
+        "misc"
+      ]
+    },
+    {
+      "file": "z_otel_shadow_status.json",
+      "bytes": 572,
+      "updated_at": "2026-04-17T16:54:54.040703Z",
+      "type": "json",
+      "tags": [
+        "health"
+      ]
+    },
+    {
+      "file": "z_otel_shadow_status.md",
+      "bytes": 389,
+      "updated_at": "2026-04-21T13:56:09.329776Z",
+      "type": "md",
+      "tags": [
+        "health"
+      ]
+    },
+    {
+      "file": "z_p1_closure_audit_2026-04-17.md",
+      "bytes": 1207,
+      "updated_at": "2026-05-01T10:22:36.625220Z",
+      "type": "md",
+      "tags": [
+        "trust"
+      ]
+    },
+    {
+      "file": "z_p1_execution_plan.md",
+      "bytes": 1687,
+      "updated_at": "2026-02-13T18:18:26.585640Z",
+      "type": "md",
+      "tags": [
+        "misc"
+      ]
+    },
+    {
+      "file": "z_pam_mirrorsoul_bridge.json",
+      "bytes": 460,
+      "updated_at": "2026-04-23T15:55:28.542742Z",
+      "type": "json",
+      "tags": [
+        "misc"
+      ]
+    },
+    {
+      "file": "z_pam_sicmns_bridge.json",
+      "bytes": 829,
+      "updated_at": "2026-04-24T11:53:23.636238Z",
+      "type": "json",
+      "tags": [
+        "misc"
+      ]
+    },
+    {
+      "file": "z_papao_precaution_brief.json",
+      "bytes": 3554,
+      "updated_at": "2026-04-23T17:17:57.369758Z",
+      "type": "json",
+      "tags": [
+        "misc"
+      ]
+    },
+    {
+      "file": "z_papao_precaution_brief.md",
+      "bytes": 2430,
+      "updated_at": "2026-04-23T17:37:32.863318Z",
+      "type": "md",
+      "tags": [
+        "misc"
+      ]
+    },
+    {
+      "file": "z_pc_root_dirent_catalog.json",
+      "bytes": 3875,
+      "updated_at": "2026-04-27T17:36:01.142135Z",
+      "type": "json",
+      "tags": [
+        "misc"
+      ]
+    },
+    {
+      "file": "z_pc_root_dirent_catalog_baseline.json",
+      "bytes": 3479,
+      "updated_at": "2026-04-25T22:51:17.318925Z",
+      "type": "json",
+      "tags": [
+        "misc"
+      ]
+    },
+    {
+      "file": "z_pc_root_dirent_catalog_diff.json",
+      "bytes": 551,
+      "updated_at": "2026-04-25T22:51:17.693001Z",
+      "type": "json",
+      "tags": [
+        "misc"
+      ]
+    },
+    {
+      "file": "z_pending_audit.json",
+      "bytes": 136,
+      "updated_at": "2026-05-01T17:22:47.477023Z",
+      "type": "json",
+      "tags": [
+        "trust"
+      ]
+    },
+    {
+      "file": "z_pending_audit.md",
+      "bytes": 136,
+      "updated_at": "2026-05-01T17:22:47.478022Z",
+      "type": "md",
+      "tags": [
+        "trust"
+      ]
+    },
+    {
+      "file": "z_placeholder_dir_audit.json",
+      "bytes": 849,
+      "updated_at": "2026-05-01T17:24:17.438894Z",
+      "type": "json",
+      "tags": [
+        "trust"
+      ]
+    },
+    {
+      "file": "z_placeholder_dir_audit.md",
+      "bytes": 381,
+      "updated_at": "2026-05-01T17:24:17.438894Z",
+      "type": "md",
+      "tags": [
+        "trust"
+      ]
+    },
+    {
+      "file": "z_policy_shadow_gate.json",
+      "bytes": 831,
+      "updated_at": "2026-04-17T16:54:10.458600Z",
+      "type": "json",
+      "tags": [
+        "misc"
+      ]
+    },
+    {
+      "file": "z_policy_shadow_gate.md",
+      "bytes": 510,
+      "updated_at": "2026-04-21T13:56:09.350615Z",
+      "type": "md",
+      "tags": [
+        "misc"
+      ]
+    },
+    {
+      "file": "z_prediction_validation.json",
+      "bytes": 1567,
+      "updated_at": "2026-04-26T17:30:35.818254Z",
+      "type": "json",
+      "tags": [
+        "misc"
+      ]
+    },
+    {
+      "file": "z_prediction_validation.md",
+      "bytes": 304,
+      "updated_at": "2026-04-27T11:59:40.810745Z",
+      "type": "md",
+      "tags": [
+        "misc"
+      ]
+    },
+    {
+      "file": "z_predictive_intelligence.json",
+      "bytes": 1778,
+      "updated_at": "2026-04-26T17:30:35.333460Z",
+      "type": "json",
+      "tags": [
+        "misc"
+      ]
+    },
+    {
+      "file": "z_predictive_intelligence.md",
+      "bytes": 531,
+      "updated_at": "2026-04-27T11:59:40.815744Z",
+      "type": "md",
+      "tags": [
+        "misc"
+      ]
+    },
+    {
+      "file": "z_priority_audit.json",
+      "bytes": 169,
+      "updated_at": "2026-03-18T19:34:51.741706Z",
+      "type": "json",
+      "tags": [
+        "trust"
+      ]
+    },
+    {
+      "file": "z_priority_audit.md",
+      "bytes": 128,
+      "updated_at": "2026-03-30T17:28:04.622974Z",
+      "type": "md",
+      "tags": [
+        "trust"
+      ]
+    },
+    {
+      "file": "z_procurement_daily_report.json",
+      "bytes": 1187,
+      "updated_at": "2026-03-05T01:03:10.977973Z",
+      "type": "json",
+      "tags": [
+        "reflection"
+      ]
+    },
+    {
+      "file": "z_procurement_daily_report.md",
+      "bytes": 797,
+      "updated_at": "2026-02-17T20:42:42.355102Z",
+      "type": "md",
+      "tags": [
+        "reflection"
+      ]
+    },
+    {
+      "file": "z_procurement_status.json",
+      "bytes": 3786,
+      "updated_at": "2026-02-11T21:36:28.855122Z",
+      "type": "json",
+      "tags": [
+        "health"
+      ]
+    },
+    {
+      "file": "z_product_registry_verify.json",
+      "bytes": 166,
+      "updated_at": "2026-04-30T19:18:06.069881Z",
+      "type": "json",
+      "tags": [
+        "misc"
+      ]
+    },
+    {
+      "file": "z_product_sovereign_registry_lite_receipt.md",
+      "bytes": 1627,
+      "updated_at": "2026-05-01T17:23:50.780219Z",
+      "type": "md",
+      "tags": [
+        "misc"
+      ]
+    },
+    {
+      "file": "z_project_freshness.json",
+      "bytes": 6445,
+      "updated_at": "2026-05-01T12:34:32.976311Z",
+      "type": "json",
+      "tags": [
+        "misc"
+      ]
+    },
+    {
+      "file": "z_project_passport_validator.json",
+      "bytes": 468,
+      "updated_at": "2026-04-29T21:35:18.689221Z",
+      "type": "json",
+      "tags": [
+        "misc"
+      ]
+    },
+    {
+      "file": "z_project_passport_validator.md",
+      "bytes": 295,
+      "updated_at": "2026-04-29T21:35:29.813746Z",
+      "type": "md",
+      "tags": [
+        "misc"
+      ]
+    },
+    {
+      "file": "z_proof_mesh_card.json",
+      "bytes": 1436,
+      "updated_at": "2026-03-18T19:38:28.247709Z",
+      "type": "json",
+      "tags": [
+        "misc"
+      ]
+    },
+    {
+      "file": "z_proof_mesh_card.md",
+      "bytes": 694,
+      "updated_at": "2026-03-30T17:28:04.629470Z",
+      "type": "md",
+      "tags": [
+        "misc"
+      ]
+    },
+    {
+      "file": "z_protection_audit.json",
+      "bytes": 462,
+      "updated_at": "2026-03-16T15:49:06.936547Z",
+      "type": "json",
+      "tags": [
+        "trust"
+      ]
+    },
+    {
+      "file": "z_provenance_check.json",
+      "bytes": 1260,
+      "updated_at": "2026-03-18T19:44:17.012189Z",
+      "type": "json",
+      "tags": [
+        "misc"
+      ]
+    },
+    {
+      "file": "z_provenance_check.md",
+      "bytes": 943,
+      "updated_at": "2026-03-30T17:28:04.633655Z",
+      "type": "md",
+      "tags": [
+        "misc"
+      ]
+    },
+    {
+      "file": "z_qosmei_claims_scope_correspondence.md",
+      "bytes": 1283,
+      "updated_at": "2026-04-18T17:11:41.777443Z",
+      "type": "md",
+      "tags": [
+        "misc"
+      ]
+    },
+    {
+      "file": "z_qosmei_core_signal.json",
+      "bytes": 1873,
+      "updated_at": "2026-04-26T17:30:36.296201Z",
+      "type": "json",
+      "tags": [
+        "misc"
+      ]
+    },
+    {
+      "file": "z_qosmei_core_signal.md",
+      "bytes": 830,
+      "updated_at": "2026-04-27T11:59:40.849061Z",
+      "type": "md",
+      "tags": [
+        "misc"
+      ]
+    },
+    {
+      "file": "z_readiness_gate.json",
+      "bytes": 1849,
+      "updated_at": "2026-04-17T19:43:12.793486Z",
+      "type": "json",
+      "tags": [
+        "misc"
+      ]
+    },
+    {
+      "file": "z_release_gate.json",
+      "bytes": 1938,
+      "updated_at": "2026-04-26T01:55:22.025882Z",
+      "type": "json",
+      "tags": [
+        "misc"
+      ]
+    },
+    {
+      "file": "z_release_gate.md",
+      "bytes": 585,
+      "updated_at": "2026-05-01T17:23:50.781818Z",
+      "type": "md",
+      "tags": [
+        "misc"
+      ]
+    },
+    {
+      "file": "z_release_gate_summary.json",
+      "bytes": 565,
+      "updated_at": "2026-04-26T02:12:35.241041Z",
+      "type": "json",
+      "tags": [
+        "misc"
+      ]
+    },
+    {
+      "file": "z_release_gate_summary.md",
+      "bytes": 268,
+      "updated_at": "2026-04-27T11:59:40.858058Z",
+      "type": "md",
+      "tags": [
+        "misc"
+      ]
+    },
+    {
+      "file": "z_release_governance.json",
+      "bytes": 272,
+      "updated_at": "2026-04-26T02:12:34.813761Z",
+      "type": "json",
+      "tags": [
+        "misc"
+      ]
+    },
+    {
+      "file": "z_report_freshness.json",
+      "bytes": 6361,
+      "updated_at": "2026-05-01T17:22:47.745514Z",
+      "type": "json",
+      "tags": [
+        "misc"
+      ]
+    },
+    {
+      "file": "z_report_freshness.md",
+      "bytes": 1313,
+      "updated_at": "2026-05-01T17:22:55.875035Z",
+      "type": "md",
+      "tags": [
+        "misc"
+      ]
+    },
+    {
+      "file": "z_research_intake.json",
+      "bytes": 2064,
+      "updated_at": "2026-03-05T01:03:11.011242Z",
+      "type": "json",
+      "tags": [
+        "misc"
+      ]
+    },
+    {
+      "file": "z_restore_test.md",
+      "bytes": 1334,
+      "updated_at": "2026-05-01T17:23:50.782827Z",
+      "type": "md",
+      "tags": [
+        "misc"
+      ]
+    },
+    {
+      "file": "z_roots_first_status_2026-04-27.md",
+      "bytes": 988,
+      "updated_at": "2026-05-01T10:22:37.036564Z",
+      "type": "md",
+      "tags": [
+        "health"
+      ]
+    },
+    {
+      "file": "z_runtime_lane_dispatch.json",
+      "bytes": 1127,
+      "updated_at": "2026-03-05T01:03:11.017423Z",
+      "type": "json",
+      "tags": [
+        "misc"
+      ]
+    },
+    {
+      "file": "z_sanctuary_zuno_ai_lint_assessment_2026-04-27.md",
+      "bytes": 5415,
+      "updated_at": "2026-05-01T17:23:50.783771Z",
+      "type": "md",
+      "tags": [
+        "ai"
+      ]
+    },
+    {
+      "file": "z_sandbox_phase_guard.json",
+      "bytes": 1210,
+      "updated_at": "2026-04-26T01:49:12.599084Z",
+      "type": "json",
+      "tags": [
+        "misc"
+      ]
+    },
+    {
+      "file": "z_sandbox_phase_guard.md",
+      "bytes": 691,
+      "updated_at": "2026-04-27T11:59:40.892056Z",
+      "type": "md",
+      "tags": [
+        "misc"
+      ]
+    },
+    {
+      "file": "z_script_path_audit.json",
+      "bytes": 233,
+      "updated_at": "2026-04-13T20:50:52.101033Z",
+      "type": "json",
+      "tags": [
+        "trust"
+      ]
+    },
+    {
+      "file": "z_script_path_audit.md",
+      "bytes": 259,
+      "updated_at": "2026-04-13T21:12:24.739124Z",
+      "type": "md",
+      "tags": [
+        "trust"
+      ]
+    },
+    {
+      "file": "z_security_alerts.json",
+      "bytes": 35870,
+      "updated_at": "2026-05-01T17:24:18.112008Z",
+      "type": "json",
+      "tags": [
+        "trust"
+      ]
+    },
+    {
+      "file": "z_security_alerts.jsonl",
+      "bytes": 39282,
+      "updated_at": "2026-05-01T17:24:18.111010Z",
+      "type": "other",
+      "tags": [
+        "trust"
+      ]
+    },
+    {
+      "file": "z_security_attack_sim.json",
+      "bytes": 679,
+      "updated_at": "2026-03-16T15:49:07.356464Z",
+      "type": "json",
+      "tags": [
+        "trust"
+      ]
+    },
+    {
+      "file": "z_security_attack_sim.md",
+      "bytes": 435,
+      "updated_at": "2026-03-30T17:28:04.654364Z",
+      "type": "md",
+      "tags": [
+        "trust"
+      ]
+    },
+    {
+      "file": "z_security_sentinel.json",
+      "bytes": 561,
+      "updated_at": "2026-05-01T17:24:18.112008Z",
+      "type": "json",
+      "tags": [
+        "trust"
+      ]
+    },
+    {
+      "file": "z_self_tuning.json",
+      "bytes": 626,
+      "updated_at": "2026-04-21T14:13:59.029489Z",
+      "type": "json",
+      "tags": [
+        "misc"
+      ]
+    },
+    {
+      "file": "z_self_tuning.md",
+      "bytes": 431,
+      "updated_at": "2026-04-23T17:37:32.909668Z",
+      "type": "md",
+      "tags": [
+        "misc"
+      ]
+    },
+    {
+      "file": "z_sicmns_maturity_probe.json",
+      "bytes": 1099,
+      "updated_at": "2026-04-24T11:53:23.403494Z",
+      "type": "json",
+      "tags": [
+        "misc"
+      ]
+    },
+    {
+      "file": "z_slo_guard.json",
+      "bytes": 1444,
+      "updated_at": "2026-05-01T10:23:00.436684Z",
+      "type": "json",
+      "tags": [
+        "misc"
+      ]
+    },
+    {
+      "file": "z_slo_guard.md",
+      "bytes": 404,
+      "updated_at": "2026-05-01T11:51:15.472994Z",
+      "type": "md",
+      "tags": [
+        "misc"
+      ]
+    },
+    {
+      "file": "z_soundscape_posture.json",
+      "bytes": 1676,
+      "updated_at": "2026-03-21T21:40:56.269740Z",
+      "type": "json",
+      "tags": [
+        "misc"
+      ]
+    },
+    {
+      "file": "z_soundscape_posture.md",
+      "bytes": 405,
+      "updated_at": "2026-03-30T17:28:04.660402Z",
+      "type": "md",
+      "tags": [
+        "misc"
+      ]
+    },
+    {
+      "file": "z_spi_decision_advice.json",
+      "bytes": 349,
+      "updated_at": "2026-04-26T12:14:00.068608Z",
+      "type": "json",
+      "tags": [
+        "misc"
+      ]
+    },
+    {
+      "file": "z_spi_decision_advice.md",
+      "bytes": 261,
+      "updated_at": "2026-04-27T11:59:40.936871Z",
+      "type": "md",
+      "tags": [
+        "misc"
+      ]
+    },
+    {
+      "file": "z_spi_guardian_pre_warnings.json",
+      "bytes": 208,
+      "updated_at": "2026-04-26T12:21:36.344911Z",
+      "type": "json",
+      "tags": [
+        "misc"
+      ]
+    },
+    {
+      "file": "z_ssws_boot_report.json",
+      "bytes": 3433,
+      "updated_at": "2026-04-26T01:49:26.070848Z",
+      "type": "json",
+      "tags": [
+        "autopilot"
+      ]
+    },
+    {
+      "file": "z_ssws_boot_report.md",
+      "bytes": 730,
+      "updated_at": "2026-04-27T11:59:40.945199Z",
+      "type": "md",
+      "tags": [
+        "autopilot"
+      ]
+    },
+    {
+      "file": "z_ssws_daily_report.json",
+      "bytes": 373,
+      "updated_at": "2026-05-01T17:22:47.681991Z",
+      "type": "json",
+      "tags": [
+        "autopilot",
+        "reflection"
+      ]
+    },
+    {
+      "file": "z_ssws_shadow_verify.json",
+      "bytes": 571,
+      "updated_at": "2026-04-26T02:08:47.360792Z",
+      "type": "json",
+      "tags": [
+        "autopilot"
+      ]
+    },
+    {
+      "file": "z_stabilization_unlock_checklist.json",
+      "bytes": 3060,
+      "updated_at": "2026-04-17T13:10:48.069919Z",
+      "type": "json",
+      "tags": [
+        "misc"
+      ]
+    },
+    {
+      "file": "z_stabilization_unlock_checklist.md",
+      "bytes": 539,
+      "updated_at": "2026-05-01T17:23:50.786464Z",
+      "type": "md",
+      "tags": [
+        "misc"
+      ]
+    },
+    {
+      "file": "z_start_4_windows_and_maintain.json",
+      "bytes": 709,
+      "updated_at": "2026-02-20T01:49:06.711680Z",
+      "type": "json",
+      "tags": [
+        "misc"
+      ]
+    },
+    {
+      "file": "z_start_4_windows_and_maintain.md",
+      "bytes": 428,
+      "updated_at": "2026-02-20T01:49:48.587006Z",
+      "type": "md",
+      "tags": [
+        "misc"
+      ]
+    },
+    {
+      "file": "z_state_brief.md",
+      "bytes": 964,
+      "updated_at": "2026-02-17T20:42:42.382427Z",
+      "type": "md",
+      "tags": [
+        "misc"
+      ]
+    },
+    {
+      "file": "z_state_of_system_brief.md",
+      "bytes": 1447,
+      "updated_at": "2026-02-17T20:42:42.388935Z",
+      "type": "md",
+      "tags": [
+        "misc"
+      ]
+    },
+    {
+      "file": "z_storage_hygiene_audit.json",
+      "bytes": 23622,
+      "updated_at": "2026-05-01T17:24:16.786778Z",
+      "type": "json",
+      "tags": [
+        "trust"
+      ]
+    },
+    {
+      "file": "z_storage_hygiene_audit.md",
+      "bytes": 571,
+      "updated_at": "2026-05-01T17:24:16.786778Z",
+      "type": "md",
+      "tags": [
+        "trust"
+      ]
+    },
+    {
+      "file": "z_structural_patterns.json",
+      "bytes": 1900,
+      "updated_at": "2026-04-26T12:21:36.342909Z",
+      "type": "json",
+      "tags": [
+        "misc"
+      ]
+    },
+    {
+      "file": "z_structural_patterns.md",
+      "bytes": 534,
+      "updated_at": "2026-04-27T11:59:41.004373Z",
+      "type": "md",
+      "tags": [
+        "misc"
+      ]
+    },
+    {
+      "file": "z_super_chat_evidence.jsonl",
+      "bytes": 477,
+      "updated_at": "2026-04-14T23:50:05.937675Z",
+      "type": "other",
+      "tags": [
+        "misc"
+      ]
+    },
+    {
+      "file": "z_super_ghost_disturbance_feed.json",
+      "bytes": 281,
+      "updated_at": "2026-04-17T16:54:54.348429Z",
+      "type": "json",
+      "tags": [
+        "misc"
+      ]
+    },
+    {
+      "file": "z_system_coherence.json",
+      "bytes": 1088,
+      "updated_at": "2026-04-21T14:13:58.375695Z",
+      "type": "json",
+      "tags": [
+        "misc"
+      ]
+    },
+    {
+      "file": "z_system_coherence.md",
+      "bytes": 486,
+      "updated_at": "2026-04-23T17:37:32.937028Z",
+      "type": "md",
+      "tags": [
+        "misc"
+      ]
+    },
+    {
+      "file": "z_system_health.json",
+      "bytes": 286,
+      "updated_at": "2026-04-26T02:08:47.751890Z",
+      "type": "json",
+      "tags": [
+        "health"
+      ]
+    },
+    {
+      "file": "Z_SYSTEM_HEALTH_CERTIFICATE.md",
+      "bytes": 620,
+      "updated_at": "2026-02-02T16:12:16.419295Z",
+      "type": "md",
+      "tags": [
+        "health"
+      ]
+    },
+    {
+      "file": "Z_SYSTEM_HEALTH_CERTIFICATE.sha256",
+      "bytes": 98,
+      "updated_at": "2026-03-16T15:49:11.163832Z",
+      "type": "other",
+      "tags": [
+        "health"
+      ]
+    },
+    {
+      "file": "z_system_maturity_benchmark_2026-02-19.md",
+      "bytes": 2697,
+      "updated_at": "2026-02-20T02:19:20.298703Z",
+      "type": "md",
+      "tags": [
+        "misc"
+      ]
+    },
+    {
+      "file": "z_task_007_stabilization_report_2026-04-17.md",
+      "bytes": 4310,
+      "updated_at": "2026-05-01T17:23:50.790455Z",
+      "type": "md",
+      "tags": [
+        "misc"
+      ]
+    },
+    {
+      "file": "z_topic_prefix_guard.json",
+      "bytes": 171,
+      "updated_at": "2026-05-01T17:24:02.327056Z",
+      "type": "json",
+      "tags": [
+        "misc"
+      ]
+    },
+    {
+      "file": "z_topic_prefix_guard.md",
+      "bytes": 109,
+      "updated_at": "2026-05-01T17:24:02.328060Z",
+      "type": "md",
+      "tags": [
+        "misc"
+      ]
+    },
+    {
+      "file": "z_track_b_next_generation_surface.md",
+      "bytes": 1788,
+      "updated_at": "2026-04-18T16:52:16.892740Z",
+      "type": "md",
+      "tags": [
+        "misc"
+      ]
+    },
+    {
+      "file": "z_traffic_intelligence.json",
+      "bytes": 772,
+      "updated_at": "2026-04-23T21:22:43.173912Z",
+      "type": "json",
+      "tags": [
+        "misc"
+      ]
+    },
+    {
+      "file": "z_traffic_intelligence.md",
+      "bytes": 316,
+      "updated_at": "2026-04-26T00:53:55.990391Z",
+      "type": "md",
+      "tags": [
+        "misc"
+      ]
+    },
+    {
+      "file": "z_troublemaker_scan.json",
+      "bytes": 1748,
+      "updated_at": "2026-04-17T16:54:54.347428Z",
+      "type": "json",
+      "tags": [
+        "misc"
+      ]
+    },
+    {
+      "file": "z_troublemaker_scan.md",
+      "bytes": 824,
+      "updated_at": "2026-04-21T13:56:09.496842Z",
+      "type": "md",
+      "tags": [
+        "misc"
+      ]
+    },
+    {
+      "file": "z_trust_scorecard.json",
+      "bytes": 554,
+      "updated_at": "2026-04-26T02:12:35.129449Z",
+      "type": "json",
+      "tags": [
+        "trust"
+      ]
+    },
+    {
+      "file": "z_trust_scorecard.md",
+      "bytes": 478,
+      "updated_at": "2026-04-27T11:59:41.084193Z",
+      "type": "md",
+      "tags": [
+        "trust"
+      ]
+    },
+    {
+      "file": "z_twin_roots_status.json",
+      "bytes": 722,
+      "updated_at": "2026-04-28T18:51:39.326455Z",
+      "type": "json",
+      "tags": [
+        "health"
+      ]
+    },
+    {
+      "file": "z_twin_roots_status.md",
+      "bytes": 679,
+      "updated_at": "2026-04-28T18:51:39.327451Z",
+      "type": "md",
+      "tags": [
+        "health"
+      ]
+    },
+    {
+      "file": "z_uccr_static_prototype_receipt.md",
+      "bytes": 1214,
+      "updated_at": "2026-05-01T17:23:50.793476Z",
+      "type": "md",
+      "tags": [
+        "misc"
+      ]
+    },
+    {
+      "file": "z_vault_burnin.md",
+      "bytes": 1040,
+      "updated_at": "2026-05-01T17:23:50.794484Z",
+      "type": "md",
+      "tags": [
+        "trust"
+      ]
+    },
+    {
+      "file": "z_vault_spine_manifest.json",
+      "bytes": 1402,
+      "updated_at": "2026-04-23T21:44:06.986229Z",
+      "type": "json",
+      "tags": [
+        "trust"
+      ]
+    },
+    {
+      "file": "z_vault_spine_manifest.md",
+      "bytes": 148,
+      "updated_at": "2026-04-26T00:53:56.010307Z",
+      "type": "md",
+      "tags": [
+        "trust"
+      ]
+    },
+    {
+      "file": "z_vdk_findings_review_2026-04-27.md",
+      "bytes": 12597,
+      "updated_at": "2026-05-01T17:23:50.794484Z",
+      "type": "md",
+      "tags": [
+        "misc"
+      ]
+    },
+    {
+      "file": "z_vdk_scan_report.json",
+      "bytes": 4952,
+      "updated_at": "2026-04-27T19:18:05.108541Z",
+      "type": "json",
+      "tags": [
+        "misc"
+      ]
+    },
+    {
+      "file": "z_vdk_scan_report.md",
+      "bytes": 3145,
+      "updated_at": "2026-05-01T17:23:50.796294Z",
+      "type": "md",
+      "tags": [
+        "misc"
+      ]
+    },
+    {
+      "file": "z_verify_daily_gate.json",
+      "bytes": 197,
+      "updated_at": "2026-04-13T20:50:43.096260Z",
+      "type": "json",
+      "tags": [
+        "reflection"
+      ]
+    },
+    {
+      "file": "z_verify_daily_gate.md",
+      "bytes": 187,
+      "updated_at": "2026-04-13T21:12:24.778312Z",
+      "type": "md",
+      "tags": [
+        "reflection"
+      ]
+    },
+    {
+      "file": "z_verify_full_technical_lint_debt_2026-04-27.log",
+      "bytes": 116350,
+      "updated_at": "2026-04-27T15:28:14.412242Z",
+      "type": "other",
+      "tags": [
+        "misc"
+      ]
+    },
+    {
+      "file": "z_verify_full_technical_lint_debt_2026-04-27.md",
+      "bytes": 2304,
+      "updated_at": "2026-05-01T10:22:37.035565Z",
+      "type": "md",
+      "tags": [
+        "misc"
+      ]
+    },
+    {
+      "file": "z_vhealth_core_report.json",
+      "bytes": 3305,
+      "updated_at": "2026-04-27T20:03:29.094733Z",
+      "type": "json",
+      "tags": [
+        "health"
+      ]
+    },
+    {
+      "file": "z_vhealth_core_report.md",
+      "bytes": 2564,
+      "updated_at": "2026-04-27T20:03:29.096223Z",
+      "type": "md",
+      "tags": [
+        "health"
+      ]
+    },
+    {
+      "file": "z_vscode_timeguard.json",
+      "bytes": 211,
+      "updated_at": "2026-05-01T17:24:16.216823Z",
+      "type": "json",
+      "tags": [
+        "misc"
+      ]
+    },
+    {
+      "file": "z_vscode_timeguard.md",
+      "bytes": 124,
+      "updated_at": "2026-05-01T17:24:16.216823Z",
+      "type": "md",
+      "tags": [
+        "misc"
+      ]
+    },
+    {
+      "file": "z_web_readiness_check.json",
+      "bytes": 2014,
+      "updated_at": "2026-03-18T19:44:16.221917Z",
+      "type": "json",
+      "tags": [
+        "misc"
+      ]
+    },
+    {
+      "file": "z_web_readiness_check.md",
+      "bytes": 644,
+      "updated_at": "2026-03-30T17:28:04.703885Z",
+      "type": "md",
+      "tags": [
+        "misc"
+      ]
+    },
+    {
+      "file": "z_weekly_reflection.md",
+      "bytes": 1076,
+      "updated_at": "2026-02-17T20:42:42.419900Z",
+      "type": "md",
+      "tags": [
+        "reflection"
+      ]
+    },
+    {
+      "file": "z_whale_bus_run.json",
+      "bytes": 2202,
+      "updated_at": "2026-04-26T02:08:49.097374Z",
+      "type": "json",
+      "tags": [
+        "misc"
+      ]
+    },
+    {
+      "file": "z_workspace_auto_sweep.json",
+      "bytes": 4018,
+      "updated_at": "2026-03-18T19:44:17.141687Z",
+      "type": "json",
+      "tags": [
+        "misc"
+      ]
+    },
+    {
+      "file": "z_workspace_auto_sweep.md",
+      "bytes": 816,
+      "updated_at": "2026-03-30T17:28:04.709886Z",
+      "type": "md",
+      "tags": [
+        "misc"
+      ]
+    },
+    {
+      "file": "z_workspace_promotion_gate.json",
+      "bytes": 622,
+      "updated_at": "2026-02-18T18:22:06.957516Z",
+      "type": "json",
+      "tags": [
+        "misc"
+      ]
+    },
+    {
+      "file": "z_workspace_promotion_gate.md",
+      "bytes": 392,
+      "updated_at": "2026-02-18T18:43:52.532997Z",
+      "type": "md",
+      "tags": [
+        "misc"
+      ]
+    },
+    {
+      "file": "z_zecce_confirmations.json",
+      "bytes": 3256,
+      "updated_at": "2026-04-23T21:44:06.998235Z",
+      "type": "json",
+      "tags": [
+        "misc"
+      ]
+    },
+    {
+      "file": "z_zecce_confirmations.md",
+      "bytes": 624,
+      "updated_at": "2026-04-26T00:53:56.035169Z",
+      "type": "md",
+      "tags": [
+        "misc"
+      ]
+    },
+    {
+      "file": "z_zuno_coverage_audit.json",
+      "bytes": 69999,
+      "updated_at": "2026-04-30T21:03:04.372635Z",
+      "type": "json",
+      "tags": [
+        "trust"
+      ]
+    },
+    {
+      "file": "z_zuno_coverage_audit.md",
+      "bytes": 8068,
+      "updated_at": "2026-05-01T17:23:50.798307Z",
+      "type": "md",
+      "tags": [
+        "trust"
+      ]
+    },
+    {
+      "file": "z_zuno_daily_report.json",
+      "bytes": 15106,
+      "updated_at": "2026-05-01T17:22:47.549119Z",
+      "type": "json",
+      "tags": [
+        "reflection"
+      ]
+    },
+    {
+      "file": "z_zuno_daily_report.md",
+      "bytes": 14082,
+      "updated_at": "2026-05-01T17:22:56.067859Z",
+      "type": "md",
+      "tags": [
+        "reflection"
+      ]
+    },
+    {
+      "file": "z_zuno_executive_delta_report.json",
+      "bytes": 815,
+      "updated_at": "2026-03-05T01:03:11.140496Z",
+      "type": "json",
+      "tags": [
+        "misc"
+      ]
+    },
+    {
+      "file": "z_zuno_executive_delta_report.md",
+      "bytes": 3126,
+      "updated_at": "2026-02-20T01:49:48.654806Z",
+      "type": "md",
+      "tags": [
+        "misc"
+      ]
+    },
+    {
+      "file": "z_zuno_feedback_report_last_48h_2026-04-18.md",
+      "bytes": 4716,
+      "updated_at": "2026-05-01T17:23:50.800307Z",
+      "type": "md",
+      "tags": [
+        "misc"
+      ]
+    },
+    {
+      "file": "z_zuno_handoff_mirrorsoul_slice1_2026-04-27.md",
+      "bytes": 4132,
+      "updated_at": "2026-05-01T10:22:37.035565Z",
+      "type": "md",
+      "tags": [
+        "misc"
+      ]
+    },
+    {
+      "file": "z_zuno_handoff_z_addon_staging_2026-04-26.md",
+      "bytes": 2910,
+      "updated_at": "2026-05-01T17:23:50.800307Z",
+      "type": "md",
+      "tags": [
+        "misc"
+      ]
+    },
+    {
+      "file": "z_zuno_phase3_completion_plan.json",
+      "bytes": 28840,
+      "updated_at": "2026-04-30T21:03:04.785800Z",
+      "type": "json",
+      "tags": [
+        "misc"
+      ]
+    },
+    {
+      "file": "z_zuno_phase3_completion_plan.md",
+      "bytes": 16939,
+      "updated_at": "2026-05-01T17:23:50.801813Z",
+      "type": "md",
+      "tags": [
+        "misc"
+      ]
+    },
+    {
+      "file": "z_zuno_upgrade_delta_report_2026-04-20.md",
+      "bytes": 5540,
+      "updated_at": "2026-05-01T10:22:37.034566Z",
+      "type": "md",
+      "tags": [
+        "misc"
+      ]
+    },
+    {
+      "file": "zals_status.json",
+      "bytes": 331,
+      "updated_at": "2026-03-30T17:31:55.270859Z",
+      "type": "json",
+      "tags": [
+        "health"
+      ]
+    },
+    {
+      "file": "zuno_lab_discovery_2026-02-18.md",
+      "bytes": 1754,
+      "updated_at": "2026-02-18T17:46:40.700932Z",
+      "type": "md",
+      "tags": [
+        "misc"
+      ]
+    },
+    {
+      "file": "zuno_reference_full_system_level_ups_2026-04-14.md",
+      "bytes": 10374,
+      "updated_at": "2026-05-01T17:23:50.750249Z",
+      "type": "md",
+      "tags": [
+        "misc"
+      ]
+    },
+    {
+      "file": "zuno_state_history.json",
+      "bytes": 24512,
+      "updated_at": "2026-05-01T17:22:47.544792Z",
+      "type": "json",
+      "tags": [
+        "misc"
+      ]
+    },
+    {
+      "file": "zuno_state_of_system_latest.md",
+      "bytes": 1547,
+      "updated_at": "2026-02-17T20:42:42.430548Z",
+      "type": "md",
+      "tags": [
+        "misc"
+      ]
+    },
+    {
+      "file": "zuno_system_state_report.json",
+      "bytes": 15106,
+      "updated_at": "2026-05-01T17:22:47.547792Z",
+      "type": "json",
+      "tags": [
+        "misc"
+      ]
+    },
+    {
+      "file": "zuno_system_state_report.md",
+      "bytes": 14082,
+      "updated_at": "2026-05-01T17:22:56.220732Z",
+      "type": "md",
+      "tags": [
+        "misc"
+      ]
+    },
+    {
+      "file": "zuno_system_state_report_archive_2026-04-27.md",
+      "bytes": 14028,
+      "updated_at": "2026-04-28T18:42:44.650510Z",
+      "type": "md",
+      "tags": [
+        "misc"
+      ]
+    },
+    {
+      "file": "zuno_system_state_report_archive_2026-04-28.md",
+      "bytes": 14029,
+      "updated_at": "2026-04-28T18:42:44.675382Z",
+      "type": "md",
+      "tags": [
+        "misc"
+      ]
+    }
+  ]
+}

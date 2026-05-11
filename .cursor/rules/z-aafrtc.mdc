@@ -1,0 +1,14 @@
+---
+description: AAFRTC — hub-only full verify runs; no multi-root mix-up; overseer gates stay in npm scripts.
+globs:
+  - scripts/z_aafrtc*.mjs
+  - data/z_aafrtc_policy.json
+  - docs/Z-AAFRTC-OVERSEER-IDE-PIPELINE.md
+---
+
+# AAFRTC (Auto-Approved Full Run Test Cursor)
+
+1. **Hub only:** Full verify pipelines (`verify:ci`, `verify:full:core`, `verify:full`) must run with **cwd = ZSanctuary_Universe** root. Use **`npm run aafrtc:ci`** / **`aafrtc:full-core`** / **`aafrtc:full`** or **Z: AAFRTC** tasks — they call `z_aafrtc_ide_run.mjs` which **refuses** non-hub cwd.
+2. **Multi-root:** Do not assume `${workspaceFolder}` is the hub. If unsure, **`npm run aafrtc:resolve`** or task **Z: AAFRTC — resolve hub context**; read **`data/reports/z_aafrtc_context.json`**.
+3. **Auto-approve** means **automatic execution of the predefined gate sequence**, not waiving **`manual_release`** or human overseer decisions — see **`data/z_release_control.json`** and [docs/Z-AAFRTC-OVERSEER-IDE-PIPELINE.md](docs/Z-AAFRTC-OVERSEER-IDE-PIPELINE.md).
+4. **Z-EAII / registry:** Sibling projects are listed in **`data/z_pc_root_projects.json`**; AAFRTC does not rewrite them.

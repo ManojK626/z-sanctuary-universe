@@ -1,0 +1,184 @@
+{
+  "generated_at": "2026-04-17T20:47:37.233Z",
+  "tracking_file": "data/z_chatgpt_projects_tracking.json",
+  "counts": {
+    "entries": 28,
+    "duplicate_hub_paths": 0,
+    "manifest_similarity_warnings": 11,
+    "rename_tracked": 0,
+    "chatgpt_export_folders": 0,
+    "export_folder_drift": 0,
+    "export_sidecar_unknown_id": 0,
+    "export_sidecar_duplicate_id": 0,
+    "export_folder_missing_on_disk": 0,
+    "export_orphan_folders": 0,
+    "export_fuzzy_suggestions": 0
+  },
+  "duplicate_hub_paths": [],
+  "hub_path_exists": [],
+  "hub_path_missing": [],
+  "manifest_similarity_warnings": [
+    {
+      "entry_id": "more-super-saiyans-z-blood-eng",
+      "display_name": "Super Saiyans Z -Blood Eng…",
+      "manifest_zid": "autopilot-engine",
+      "matched_tokens": [
+        "super",
+        "super"
+      ],
+      "note": "Possible overlap — confirm before duplicating work in docs."
+    },
+    {
+      "entry_id": "more-super-saiyans-z-blood-eng",
+      "display_name": "Super Saiyans Z -Blood Eng…",
+      "manifest_zid": "z-super-chat-orchestrator",
+      "matched_tokens": [
+        "super",
+        "super"
+      ],
+      "note": "Possible overlap — confirm before duplicating work in docs."
+    },
+    {
+      "entry_id": "more-z-sanctuary-super-saiyan",
+      "display_name": "Z☆Sanctuary Super-Saiyan …",
+      "manifest_zid": "autopilot-engine",
+      "matched_tokens": [
+        "super",
+        "saiyan",
+        "super",
+        "saiyan"
+      ],
+      "note": "Possible overlap — confirm before duplicating work in docs."
+    },
+    {
+      "entry_id": "more-z-sanctuary-super-saiyan",
+      "display_name": "Z☆Sanctuary Super-Saiyan …",
+      "manifest_zid": "z-super-chat-orchestrator",
+      "matched_tokens": [
+        "super",
+        "super"
+      ],
+      "note": "Possible overlap — confirm before duplicating work in docs."
+    },
+    {
+      "entry_id": "more-super-saiyans-roulette",
+      "display_name": "Super Saiyans Roulette",
+      "manifest_zid": "autopilot-engine",
+      "matched_tokens": [
+        "super",
+        "super"
+      ],
+      "note": "Possible overlap — confirm before duplicating work in docs."
+    },
+    {
+      "entry_id": "more-super-saiyans-roulette",
+      "display_name": "Super Saiyans Roulette",
+      "manifest_zid": "roulette-calculator",
+      "matched_tokens": [
+        "roulette",
+        "roulette"
+      ],
+      "note": "Possible overlap — confirm before duplicating work in docs."
+    },
+    {
+      "entry_id": "more-super-saiyans-roulette",
+      "display_name": "Super Saiyans Roulette",
+      "manifest_zid": "roulette",
+      "matched_tokens": [
+        "roulette",
+        "roulette"
+      ],
+      "note": "Possible overlap — confirm before duplicating work in docs."
+    },
+    {
+      "entry_id": "more-super-saiyans-roulette",
+      "display_name": "Super Saiyans Roulette",
+      "manifest_zid": "z-super-chat-orchestrator",
+      "matched_tokens": [
+        "super",
+        "super"
+      ],
+      "note": "Possible overlap — confirm before duplicating work in docs."
+    },
+    {
+      "entry_id": "more-humans-generation-minds",
+      "display_name": "Humans Generation Minds…",
+      "manifest_zid": "z-cursor-folder-blueprint",
+      "matched_tokens": [
+        "humans",
+        "humans"
+      ],
+      "note": "Possible overlap — confirm before duplicating work in docs."
+    },
+    {
+      "entry_id": "more-z-sanctuary-blood-engine-5",
+      "display_name": "Z-Sanctuary Blood Engine 5",
+      "manifest_zid": "core-energy-response",
+      "matched_tokens": [
+        "engine",
+        "engine"
+      ],
+      "note": "Possible overlap — confirm before duplicating work in docs."
+    },
+    {
+      "entry_id": "more-z-sanctuary-blood-engine-5",
+      "display_name": "Z-Sanctuary Blood Engine 5",
+      "manifest_zid": "autopilot-engine",
+      "matched_tokens": [
+        "engine",
+        "engine"
+      ],
+      "note": "Possible overlap — confirm before duplicating work in docs."
+    }
+  ],
+  "rename_notes": [],
+  "export_folders": [],
+  "export_folder_alignment": {
+    "export_folder_drift": [],
+    "sidecar_unknown_id": [],
+    "sidecar_duplicate_id": [],
+    "missing_export_folder": [],
+    "orphan_export_folders": [],
+    "fuzzy_suggested_links": []
+  },
+  "suggested_order": [
+    "Fix duplicate hub_doc_path entries before importing.",
+    "Fix invalid sidecar ids (unknown id) or duplicate sidecar ids on disk.",
+    "Resolve export_folder drift: update data/z_chatgpt_projects_tracking.json so export_folder matches the folder name (sidecar id is stable across renames).",
+    "Resolve manifest overlap warnings by linking entry.manifest_zid or skipping redundant docs.",
+    "After ChatGPT UI rename: update display_name + previous_names in tracking JSON.",
+    "Run npm run folder:align or Z: Folder Manager tasks when docs/ tree changes per policy."
+  ],
+  "ready_to_process_ids": [
+    "vs-code-lottery-z-audiology-activation-guide",
+    "vs-code-lottery-z-sanctuary-lottery-pipeline",
+    "vs-code-lottery-sentinel-critical-indicator",
+    "z-sanctuary-music",
+    "z-sanctuary-and-formulas",
+    "vscode-note-z-vn-360",
+    "z-gagets-mirrors",
+    "more-super-saiyans-z-blood-eng",
+    "more-we-r-one-languages",
+    "more-motorcycle-helmet-chip",
+    "more-z-sanctuary-super-saiyan",
+    "more-z-sanctuary-eternal-upgrade",
+    "more-one-in-all-basic-hygiene",
+    "more-world-relive-generosity",
+    "more-vs-code-studio",
+    "more-anne-barbies",
+    "more-super-saiyans-roulette",
+    "more-z-sanctuary-tourism-univer",
+    "more-rise-of-z-dead-ancestors",
+    "more-z-triple-defense-ai",
+    "more-humans-generation-minds",
+    "more-z-sanctuary-nature-vs-hu",
+    "more-jb-z-irish-fox",
+    "more-z-sanctuary-kids",
+    "more-z-sanctuary-blood-engine-5",
+    "more-z-sanctuary-universe-ebo",
+    "more-zuno-universal-glasses",
+    "recents-loose-chats"
+  ],
+  "likely_skip_ids": [],
+  "export_folder_index_file": "data/reports/z_chatgpt_export_folder_index.json"
+}

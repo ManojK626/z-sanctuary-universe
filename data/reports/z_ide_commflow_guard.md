@@ -1,0 +1,139 @@
+# Z IDE Comm-Flow Guard
+
+Generated: 2026-05-11T12:26:42.752Z
+Status: **WATCH**
+Files scanned: 4000
+Mismatches: 1172
+
+## Settings Checks
+- [x] task_allow_automatic_tasks_on: task.allowAutomaticTasks=on
+- [x] terminal_default_profile_powershell: terminal.integrated.defaultProfile.windows=PowerShell
+- [x] files_autosave_after_delay: files.autoSave=afterDelay
+
+## Operator Directions
+- If project context is unclear, run `npm run workspace:emit-pc-root` then open `Z-EAII-PC-All-Projects.code-workspace`.
+- For core verification, run `npm run verify:ci`; for full health, run `npm run stabilize:apply-and-verify`.
+- If file routing mismatches appear, move files to suggested top-level folders before release checks.
+
+## Routing Mismatches (sample)
+- z_music_engine/audio_consent_policy.md -> expected one of: docs, data, .cursor, .vscode, core, packages, apps, dashboard, scripts
+- z_music_engine/audio_source_contract.md -> expected one of: docs, data, .cursor, .vscode, core, packages, apps, dashboard, scripts
+- z_music_engine/explainability_contract.md -> expected one of: docs, data, .cursor, .vscode, core, packages, apps, dashboard, scripts
+- z_music_engine/firestore_schema.md -> expected one of: docs, data, .cursor, .vscode, core, packages, apps, dashboard, scripts
+- z_music_engine/integration_amk_goku.md -> expected one of: docs, data, .cursor, .vscode, core, packages, apps, dashboard, scripts
+- z_music_engine/mood_model.md -> expected one of: docs, data, .cursor, .vscode, core, packages, apps, dashboard, scripts
+- z_music_engine/OVERVIEW.md -> expected one of: docs, data, .cursor, .vscode, core, packages, apps, dashboard, scripts
+- z_music_engine/PHASE_2_7_Z_SME_AUDIO_GREEN_RECEIPT.md -> expected one of: docs, data, .cursor, .vscode, core, packages, apps, dashboard, scripts
+- z_music_engine/PHASE_2_8_Z_SME_SAME_ORIGIN_AUDIO_RECEIPT.md -> expected one of: docs, data, .cursor, .vscode, core, packages, apps, dashboard, scripts
+- z_music_engine/playlist_engine.md -> expected one of: docs, data, .cursor, .vscode, core, packages, apps, dashboard, scripts
+- z_music_engine/ui_flow.md -> expected one of: docs, data, .cursor, .vscode, core, packages, apps, dashboard, scripts
+- z_music_engine/Z_MUSIC_ENGINE.md -> expected one of: docs, data, .cursor, .vscode, core, packages, apps, dashboard, scripts
+- z_music_engine/bots/z_music_curator_bot.md -> expected one of: docs, data, .cursor, .vscode, core, packages, apps, dashboard, scripts
+- z_music_engine/bots/z_music_guardian_bot.md -> expected one of: docs, data, .cursor, .vscode, core, packages, apps, dashboard, scripts
+- Zuno_Memory_Vault/06_CURSOR_PROMPTS.md -> expected one of: docs, data, .cursor, .vscode, core, packages, apps, dashboard, scripts
+- z-questra/index.html -> expected one of: dashboard, core, docs, apps, scripts
+- z-questra/package-lock.json -> expected one of: data, .vscode, .cursor, config, rules, apps, packages, scripts
+- z-questra/package.json -> expected one of: data, .vscode, .cursor, config, rules, apps, packages, scripts
+- z-questra/README.md -> expected one of: docs, data, .cursor, .vscode, core, packages, apps, dashboard, scripts
+- z-questra/vite.config.js -> expected one of: core, scripts, dashboard, interface, packages, apps, z_workspace, z_notebooks
+- z-questra/vitest.config.js -> expected one of: core, scripts, dashboard, interface, packages, apps, z_workspace, z_notebooks
+- z-questra/src/capabilityManifest.test.js -> expected one of: core, scripts, dashboard, interface, packages, apps, z_workspace, z_notebooks
+- z-questra/src/index.css -> expected one of: interface, dashboard, apps, packages, core
+- z-questra/src/setupTests.js -> expected one of: core, scripts, dashboard, interface, packages, apps, z_workspace, z_notebooks
+- z-questra/src/theme/accessibilityPrefs.js -> expected one of: core, scripts, dashboard, interface, packages, apps, z_workspace, z_notebooks
+- z-questra/src/theme/colorIdentityTokens.js -> expected one of: core, scripts, dashboard, interface, packages, apps, z_workspace, z_notebooks
+- z-questra/src/theme/colorIdentityTokens.test.js -> expected one of: core, scripts, dashboard, interface, packages, apps, z_workspace, z_notebooks
+- z-questra/src/theme/panelVisualMap.js -> expected one of: core, scripts, dashboard, interface, packages, apps, z_workspace, z_notebooks
+- z-questra/src/theme/panelVisualMap.test.js -> expected one of: core, scripts, dashboard, interface, packages, apps, z_workspace, z_notebooks
+- z-questra/src/theme/playGardenTokens.js -> expected one of: core, scripts, dashboard, interface, packages, apps, z_workspace, z_notebooks
+- z-questra/src/theme/playGardenTokens.test.js -> expected one of: core, scripts, dashboard, interface, packages, apps, z_workspace, z_notebooks
+- z-questra/src/theme/sanctuaryRouteMap.js -> expected one of: core, scripts, dashboard, interface, packages, apps, z_workspace, z_notebooks
+- z-questra/src/theme/sanctuaryRouteMap.test.js -> expected one of: core, scripts, dashboard, interface, packages, apps, z_workspace, z_notebooks
+- z-questra/src/theme/themeTokens.js -> expected one of: core, scripts, dashboard, interface, packages, apps, z_workspace, z_notebooks
+- z-questra/src/theme/themeTokens.test.js -> expected one of: core, scripts, dashboard, interface, packages, apps, z_workspace, z_notebooks
+- z-questra/src/theme/zebraFamilyTokens.js -> expected one of: core, scripts, dashboard, interface, packages, apps, z_workspace, z_notebooks
+- z-questra/src/theme/zebraServiceMap.js -> expected one of: core, scripts, dashboard, interface, packages, apps, z_workspace, z_notebooks
+- z-questra/src/theme/zebraServiceMap.test.js -> expected one of: core, scripts, dashboard, interface, packages, apps, z_workspace, z_notebooks
+- z-questra/src/storage/notebookStorage.js -> expected one of: core, scripts, dashboard, interface, packages, apps, z_workspace, z_notebooks
+- z-questra/src/storage/notebookStorage.test.js -> expected one of: core, scripts, dashboard, interface, packages, apps, z_workspace, z_notebooks
+- z-questra/src/storage/shellPrefs.js -> expected one of: core, scripts, dashboard, interface, packages, apps, z_workspace, z_notebooks
+- z-questra/src/storage/shellPrefs.test.js -> expected one of: core, scripts, dashboard, interface, packages, apps, z_workspace, z_notebooks
+- z-questra/src/notebook/importNotebookJson.js -> expected one of: core, scripts, dashboard, interface, packages, apps, z_workspace, z_notebooks
+- z-questra/src/notebook/importNotebookJson.test.js -> expected one of: core, scripts, dashboard, interface, packages, apps, z_workspace, z_notebooks
+- z-questra/src/notebook/notebookMarkup.js -> expected one of: core, scripts, dashboard, interface, packages, apps, z_workspace, z_notebooks
+- z-questra/src/notebook/notebookMarkup.test.js -> expected one of: core, scripts, dashboard, interface, packages, apps, z_workspace, z_notebooks
+- z-questra/src/notebook/notebookMeta.js -> expected one of: core, scripts, dashboard, interface, packages, apps, z_workspace, z_notebooks
+- z-questra/src/notebook/notebookMeta.test.js -> expected one of: core, scripts, dashboard, interface, packages, apps, z_workspace, z_notebooks
+- z-questra/src/lib/zMusicEngine/audioConsent.js -> expected one of: core, scripts, dashboard, interface, packages, apps, z_workspace, z_notebooks
+- z-questra/src/lib/zMusicEngine/audioConsent.test.js -> expected one of: core, scripts, dashboard, interface, packages, apps, z_workspace, z_notebooks
+- z-questra/src/lib/zMusicEngine/audioSources.js -> expected one of: core, scripts, dashboard, interface, packages, apps, z_workspace, z_notebooks
+- z-questra/src/lib/zMusicEngine/audioSources.test.js -> expected one of: core, scripts, dashboard, interface, packages, apps, z_workspace, z_notebooks
+- z-questra/src/lib/zMusicEngine/explainability.js -> expected one of: core, scripts, dashboard, interface, packages, apps, z_workspace, z_notebooks
+- z-questra/src/lib/zMusicEngine/memoryLog.js -> expected one of: core, scripts, dashboard, interface, packages, apps, z_workspace, z_notebooks
+- z-questra/src/lib/zMusicEngine/moodModel.js -> expected one of: core, scripts, dashboard, interface, packages, apps, z_workspace, z_notebooks
+- z-questra/src/lib/zMusicEngine/moodModel.test.js -> expected one of: core, scripts, dashboard, interface, packages, apps, z_workspace, z_notebooks
+- z-questra/src/lib/zMusicEngine/playlistEngine.js -> expected one of: core, scripts, dashboard, interface, packages, apps, z_workspace, z_notebooks
+- z-questra/src/lib/zMusicEngine/playlistEngine.test.js -> expected one of: core, scripts, dashboard, interface, packages, apps, z_workspace, z_notebooks
+- z-questra/src/lib/zMusicEngine/seedTracks.js -> expected one of: core, scripts, dashboard, interface, packages, apps, z_workspace, z_notebooks
+- z-questra/src/guardian/filterOutput.js -> expected one of: core, scripts, dashboard, interface, packages, apps, z_workspace, z_notebooks
+- z-questra/src/guardian/filterOutput.test.js -> expected one of: core, scripts, dashboard, interface, packages, apps, z_workspace, z_notebooks
+- z-questra/src/game/playGardenMap.js -> expected one of: core, scripts, dashboard, interface, packages, apps, z_workspace, z_notebooks
+- z-questra/src/game/playGardenMap.test.js -> expected one of: core, scripts, dashboard, interface, packages, apps, z_workspace, z_notebooks
+- z-questra/src/game/receiptPosterExport.js -> expected one of: core, scripts, dashboard, interface, packages, apps, z_workspace, z_notebooks
+- z-questra/src/game/receiptPosterExport.test.js -> expected one of: core, scripts, dashboard, interface, packages, apps, z_workspace, z_notebooks
+- z-questra/src/components/ZMusicPanel.css -> expected one of: interface, dashboard, apps, packages, core
+- z-questra/public/audio/README.md -> expected one of: docs, data, .cursor, .vscode, core, packages, apps, dashboard, scripts
+- z-questra/docs/ACCESSIBILITY_TOOLSET_POLICY.md -> expected one of: docs, data, .cursor, .vscode, core, packages, apps, dashboard, scripts
+- z-questra/docs/PHASE_2_1_ADAPTIVE_VISUAL_SANCTUARY.md -> expected one of: docs, data, .cursor, .vscode, core, packages, apps, dashboard, scripts
+- z-questra/docs/PHASE_2_1_GREEN_RECEIPT.md -> expected one of: docs, data, .cursor, .vscode, core, packages, apps, dashboard, scripts
+- z-questra/docs/PHASE_2_3B_AT_LOVE_ZEBRA_Z_ZEBRAS_FAMILY.md -> expected one of: docs, data, .cursor, .vscode, core, packages, apps, dashboard, scripts
+- z-questra/docs/PHASE_2_3B_GREEN_RECEIPT.md -> expected one of: docs, data, .cursor, .vscode, core, packages, apps, dashboard, scripts
+- z-questra/docs/PHASE_2_3_GREEN_RECEIPT.md -> expected one of: docs, data, .cursor, .vscode, core, packages, apps, dashboard, scripts
+- z-questra/docs/PHASE_2_3_LIVING_COLOR_VISUAL_STRUCTURE.md -> expected one of: docs, data, .cursor, .vscode, core, packages, apps, dashboard, scripts
+- z-questra/docs/PHASE_2_5A_GREEN_RECEIPT.md -> expected one of: docs, data, .cursor, .vscode, core, packages, apps, dashboard, scripts
+- z-questra/docs/PHASE_2_5A_Z_PLAYGARDEN_CANVAS_PREVIEW.md -> expected one of: docs, data, .cursor, .vscode, core, packages, apps, dashboard, scripts
+- z-questra/docs/PHASE_2_5_GREEN_RECEIPT.md -> expected one of: docs, data, .cursor, .vscode, core, packages, apps, dashboard, scripts
+- z-questra/docs/PHASE_2_5_UNCERTAINTY_KALEIDOSCOPE_RECEIPT_POSTER.md -> expected one of: docs, data, .cursor, .vscode, core, packages, apps, dashboard, scripts
+- z-questra/docs/PHASE_QX_1_CROSS_PROJECT_ACCESS_GREEN_RECEIPT.md -> expected one of: docs, data, .cursor, .vscode, core, packages, apps, dashboard, scripts
+- z-questra/docs/SANCTUARY_ROUTE_READINESS.md -> expected one of: docs, data, .cursor, .vscode, core, packages, apps, dashboard, scripts
+- z-questra/docs/VISUAL_STRUCTURE_PANEL_POLICY.md -> expected one of: docs, data, .cursor, .vscode, core, packages, apps, dashboard, scripts
+- z-questra/docs/Z_PLAYGARDEN_SAFETY_POLICY.md -> expected one of: docs, data, .cursor, .vscode, core, packages, apps, dashboard, scripts
+- z-questra/docs/Z_QUESTRA_PORTABILITY_AND_BRIDGE_POLICY.md -> expected one of: docs, data, .cursor, .vscode, core, packages, apps, dashboard, scripts
+- z-questra/docs/Z_QUESTRA_UNIVERSAL_ACCESS_ROADMAP.md -> expected one of: docs, data, .cursor, .vscode, core, packages, apps, dashboard, scripts
+- z-questra/docs/Z_VISUAL_INTERACTION_LANGUAGE.md -> expected one of: docs, data, .cursor, .vscode, core, packages, apps, dashboard, scripts
+- z-questra/docs/Z_ZEBRAS_FAMILY_SERVICE_POLICY.md -> expected one of: docs, data, .cursor, .vscode, core, packages, apps, dashboard, scripts
+- z-questra/data/z_project_awareness_capsule.json -> expected one of: data, .vscode, .cursor, config, rules, apps, packages, scripts
+- z-questra/data/z_project_benchmark_capsule.json -> expected one of: data, .vscode, .cursor, config, rules, apps, packages, scripts
+- z-questra/data/z_questra_capability_manifest.json -> expected one of: data, .vscode, .cursor, config, rules, apps, packages, scripts
+- Super Saiyans Omega Omni Ai/Super Saiyans Omega Omni Ai.html -> expected one of: dashboard, core, docs, apps, scripts
+- shared/magical-canvas/README.md -> expected one of: docs, data, .cursor, .vscode, core, packages, apps, dashboard, scripts
+- shared/magical-canvas/z-magical-canvas-kit.css -> expected one of: interface, dashboard, apps, packages, core
+- shared/magical-canvas/z-magical-canvas-kit.js -> expected one of: core, scripts, dashboard, interface, packages, apps, z_workspace, z_notebooks
+- packages/zuno-orchestrator-contracts/scripts/lint_task_plan.mjs -> expected one of: scripts, tools
+- packages/zuno-orchestrator-contracts/scripts/validate_examples.mjs -> expected one of: scripts, tools
+- packages/z-sanctuary-zuno-transformation-slice/resolve_hub.mjs -> expected one of: scripts, tools
+- packages/z-sanctuary-zuno-transformation-slice/zuno_transformation_core.mjs -> expected one of: scripts, tools
+- packages/z-sanctuary-zuno-transformation-slice/test/zuno_flow.test.mjs -> expected one of: scripts, tools
+- packages/z-sanctuary-mirrorsoul-slice/adaptive_fuel.mjs -> expected one of: scripts, tools
+- packages/z-sanctuary-mirrorsoul-slice/advisory.mjs -> expected one of: scripts, tools
+- packages/z-sanctuary-mirrorsoul-slice/index.mjs -> expected one of: scripts, tools
+- packages/z-sanctuary-mirrorsoul-slice/mirror_soul_v2.mjs -> expected one of: scripts, tools
+- packages/z-sanctuary-mirrorsoul-slice/resolve_hub.mjs -> expected one of: scripts, tools
+- packages/z-sanctuary-mirrorsoul-slice/test/slice.test.mjs -> expected one of: scripts, tools
+- packages/z-sanctuary-mirrorsoul-slice/bridges/z_intelligence_bridge.mjs -> expected one of: scripts, tools
+- packages/z-sanctuary-mirrorsoul-slice/bridges/z_validation_bridge.mjs -> expected one of: scripts, tools
+- packages/z-sanctuary-core/test/smoke.test.mjs -> expected one of: scripts, tools
+- ethics/crisis-charter.md -> expected one of: docs, data, .cursor, .vscode, core, packages, apps, dashboard, scripts
+- docs/living_workspace_manifest.json -> expected one of: data, .vscode, .cursor, config, rules, apps, packages, scripts
+- docs/z_module_registry.json -> expected one of: data, .vscode, .cursor, config, rules, apps, packages, scripts
+- docs/z-sage/z_sage_signals.example.json -> expected one of: data, .vscode, .cursor, config, rules, apps, packages, scripts
+- docs/public/snapshot/snapshot.css -> expected one of: interface, dashboard, apps, packages, core
+- docs/public/snapshot/snapshot.js -> expected one of: core, scripts, dashboard, interface, packages, apps, z_workspace, z_notebooks
+- docs/.vscode/extensions.json -> expected one of: data, .vscode, .cursor, config, rules, apps, packages, scripts
+- docs/.vscode/launch.json -> expected one of: data, .vscode, .cursor, config, rules, apps, packages, scripts
+- docs/.vscode/profiles.json -> expected one of: data, .vscode, .cursor, config, rules, apps, packages, scripts
+- docs/.vscode/settings.json -> expected one of: data, .vscode, .cursor, config, rules, apps, packages, scripts
+- docs/.vscode/tasks.json -> expected one of: data, .vscode, .cursor, config, rules, apps, packages, scripts
+- deploy/z_bridge_soft/package.json -> expected one of: data, .vscode, .cursor, config, rules, apps, packages, scripts
+- dashboard/data/amk_autonomous_approval_ladder.json -> expected one of: data, .vscode, .cursor, config, rules, apps, packages, scripts
+

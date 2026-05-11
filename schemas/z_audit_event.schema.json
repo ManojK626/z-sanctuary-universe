@@ -1,0 +1,38 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "z_audit_event.schema.json",
+  "title": "Z-Audit Event",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "audit_id",
+    "timestamp",
+    "rule_id",
+    "trigger_event_type",
+    "risk_class",
+    "consent_level",
+    "execution_result",
+    "context_hash"
+  ],
+  "properties": {
+    "audit_id": { "type": "string", "minLength": 8, "maxLength": 128 },
+    "timestamp": { "type": "string", "format": "date-time" },
+    "rule_id": { "type": "string" },
+    "trigger_event_type": { "type": "string" },
+    "risk_class": { "type": "string", "enum": ["low", "medium", "high", "sacred"] },
+    "consent_level": { "type": "string", "enum": ["auto", "notify", "require_human"] },
+    "human_decision": {
+      "type": ["object", "null"],
+      "additionalProperties": false,
+      "properties": {
+        "approved": { "type": "boolean" },
+        "human_id": { "type": "string" },
+        "decision_time": { "type": "string", "format": "date-time" }
+      }
+    },
+    "execution_result": { "type": "string", "enum": ["executed", "aborted", "blocked", "failed"] },
+    "actions_executed": { "type": "array", "items": { "type": "string" }, "default": [] },
+    "context_hash": { "type": "string", "minLength": 16, "maxLength": 256 },
+    "notes": { "type": "string", "maxLength": 4000, "default": "" }
+  }
+}

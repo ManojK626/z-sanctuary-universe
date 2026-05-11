@@ -1,0 +1,20 @@
+{
+  "schema": "z_omnai_core_scenario_v1",
+  "label": "manifest: Spine-3 build traffic routing",
+  "rsi_cycles": 4,
+  "traffic_kind": "build",
+  "brains": [{ "id": "MB-0", "loadPct": 36 }, { "id": "BRAIN-3", "loadPct": 82 }],
+  "ants": {
+    "reasoningDagCycles": 310,
+    "ingestIntegrityOk": true,
+    "secretsDetected": false,
+    "ciGreen": true,
+    "formulaStable": false,
+    "pathwayDiverging": true,
+    "hiveSkewPct": 14,
+    "recursionDepth": 11,
+    "recursionLimit": 50
+  },
+  "pathway": { "goalClarity": 0.71, "capacityRatio": 0.68, "residualDelta": 0.11, "completesRubric": false },
+  "entity": { "lane": "SHADOW", "action": "diff_only" }
+}

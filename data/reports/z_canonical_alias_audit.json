@@ -1,0 +1,51 @@
+{
+  "generated_at": "2026-05-01T17:24:17.109Z",
+  "status": "green",
+  "total": 3,
+  "pass": 3,
+  "fail": 0,
+  "checks": [
+    {
+      "id": "zuno_state_json_alias",
+      "canonical": "data/reports/zuno_system_state_report.json",
+      "canonical_exists": true,
+      "aliases": [
+        {
+          "path": "data/reports/z_zuno_daily_report.json",
+          "exists": true,
+          "hash_match": true
+        }
+      ],
+      "pass": true,
+      "reason": "Backward compatibility for legacy dashboard readers"
+    },
+    {
+      "id": "zuno_state_md_alias",
+      "canonical": "data/reports/zuno_system_state_report.md",
+      "canonical_exists": true,
+      "aliases": [
+        {
+          "path": "data/reports/z_zuno_daily_report.md",
+          "exists": true,
+          "hash_match": true
+        }
+      ],
+      "pass": true,
+      "reason": "Backward compatibility for legacy markdown consumers"
+    },
+    {
+      "id": "header_conversion_artifact",
+      "canonical": "data/z_header_non_utf8.txt",
+      "canonical_exists": true,
+      "aliases": [
+        {
+          "path": "data/z_header_converted.txt",
+          "exists": true,
+          "hash_match": true
+        }
+      ],
+      "pass": true,
+      "reason": "Encoding conversion reference pair"
+    }
+  ]
+}

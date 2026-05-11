@@ -1,0 +1,25 @@
+{
+  "schema": "z_project_benchmark_capsule_v1",
+  "project_id": "example_project",
+  "project_name": "Example Project (copy and rename)",
+  "pricing_owner": "example-org",
+  "entitlement_owner": "example-org",
+  "bridge_status": "reference_only",
+  "memory_status": "local_only",
+  "benchmark_posture": "metadata_only",
+  "services": [
+    {
+      "service_id": "hub_nav_catalog_readonly",
+      "module_ids": ["example-nav-module"],
+      "service_name": "Example NAV read-only slice",
+      "segment": "operator_visibility",
+      "commercial_status": "not_commercial",
+      "benchmark_required": false,
+      "cost_floor_required": false,
+      "public_price_allowed": false,
+      "entitlement_status": "reference_only",
+      "related_docs": ["docs/commercial/Z_SUSBV_PROJECT_CAPSULE_POLICY.md"],
+      "related_reports": []
+    }
+  ]
+}

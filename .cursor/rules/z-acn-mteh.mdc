@@ -1,0 +1,28 @@
+---
+description: When adding new modules, tools, extensions, or HTML web apps (Z-ACN/MTEH), follow the single path and checklist so every creation stays aligned with the Hierarchy Chief, Module Registry, and §9 communications flows.
+globs:
+alwaysApply: true
+---
+
+# Z-ACN/MTEH — Auto Creations or New Modules / Tools / Extensions / HTML Web Apps
+
+When creating or adding **any new module, tool, extension, or HTML web app** (or related asset) in **ZSanctuary_Universe** or any Z-Sanctuary-related project:
+
+## Rule
+
+**Follow the Z-ACN/MTEH path** so every new creation is registered, wired into the single control plane, and verified per §9.
+
+1. **Authority & register** — Check [docs/Z-HIERARCHY-CHIEF-AND-OBSERVER-VIEW.md](docs/Z-HIERARCHY-CHIEF-AND-OBSERVER-VIEW.md); add or update [Z-MASTER-MODULES-REGISTER.md](docs/Z-MASTER-MODULES-REGISTER.md) (and [Z-FULL-BUILD-CHECKLIST.md](docs/Z-FULL-BUILD-CHECKLIST.md) if from Huge file).
+2. **Module manifest** — If it is a module or surface, add an entry to `data/z_module_manifest.json`; run **Z: Module Registry Sync**.
+3. **Code/assets** — Create in the correct place: `core/` (panels), `scripts/` (tools), `docs/public/` (HTML web apps), `dashboard/` (dashboard assets); add tasks to `.vscode/tasks.json` if runnable.
+4. **Single control plane** — Wire into dashboard (Z-HODP), tasks, or `data/z_pc_root_projects.json` as needed; link new docs from INDEX or Creator Manual.
+5. **§9 verification** — Run Z: Module Registry Sync, Z: Sanctuary Structure Verify, Z: Registry Omni Verify; complete verification checklist §9 (workflows & communications flows).
+6. **Completion/approval** — Per Z-ASAC&CP, completion and approval (Z-EAII or Z-OSHA) before final sync.
+
+## Full doc
+
+[docs/Z-ACN-MTEH-AUTO-CREATIONS-NEW-MODULES-TOOLS-EXTENSIONS.md](docs/Z-ACN-MTEH-AUTO-CREATIONS-NEW-MODULES-TOOLS-EXTENSIONS.md) — step-by-step path, checklist, and links.
+
+## Outcome
+
+Every new module, tool, extension, or HTML web app is **one with the core** and passes the full completions test so we **successfully complete all we did**.

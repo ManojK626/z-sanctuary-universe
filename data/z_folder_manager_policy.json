@@ -1,0 +1,63 @@
+{
+  "version": "1.0",
+  "mode": "internal-only",
+  "require_review_verify_apply": true,
+  "allowed_roots": [
+    "core",
+    "miniai",
+    "scripts",
+    "rules",
+    "interface",
+    "schemas",
+    "docs",
+    "data/reports"
+  ],
+  "exclude_contains": [
+    ".git/",
+    "node_modules/",
+    "__pycache__/",
+    "safe_pack/z_sanctuary_vault/folder_manager/",
+    "logs/"
+  ],
+  "required_directories": [
+    "data/reports",
+    "data/reports/commflow",
+    "data/reports/history",
+    "safe_pack/z_sanctuary_vault/folder_manager/snapshots",
+    "Z_Labs/modules_draft",
+    "Z_Labs/module_prototypes"
+  ],
+  "root_file_assignment_hints": {
+    ".md": "docs/",
+    ".json": "data/",
+    ".mjs": "scripts/",
+    ".js": "core/ or scripts/",
+    ".html": "dashboard/Html/ or docs/public/",
+    ".css": "interface/ or dashboard/"
+  },
+  "allow_root_files": [
+    "package.json",
+    "package-lock.json",
+    "README.md",
+    "README_DEV.md",
+    "AGENTS.md",
+    "INDEX.md",
+    "MONOREPO_GUIDE.md",
+    ".gitignore",
+    ".eslintrc.json",
+    ".markdownlint.json",
+    ".prettierignore",
+    ".prettierrc",
+    "pytest.ini",
+    "z_workspace_broadcast.json",
+    "z_workspace_version.json"
+  ],
+  "max_file_size_mb": 5,
+  "drift_warn_threshold": 10,
+  "hash_algorithm": "sha256",
+  "pc_root_extras_sink": {
+    "relative_to_pc_root": "Extras & Tools",
+    "registry_project_id": "pc-root-extras-and-tools",
+    "note": "Z-Folder Manager alignment rules (allowed_roots, root_file_assignment_hints) govern the hub repo only. Place PC-wide extras under this sibling folder at PC root so ecosystem scripts (z_pc_root_projects.json, Z-FPSMC, pc-root:catalog) stay aware without polluting hub layout."
+  }
+}

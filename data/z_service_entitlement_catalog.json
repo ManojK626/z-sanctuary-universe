@@ -1,0 +1,118 @@
+{
+  "schema": "z_service_entitlement_catalog_v1",
+  "posture": "policy_metadata_only_no_billing_execution",
+  "law": {
+    "capability_not_entitlement": "Listing a capability does not grant use, billing rights, or runtime access.",
+    "reference_not_access": "Catalog or doc links are references, not licensed access.",
+    "access_not_billing": "Technical access paths must not be confused with commercial entitlement.",
+    "billing_not_live_bridge": "Payment or tier definitions do not authorize live cross-project bridges.",
+    "source_project_terms_win": "Unless a signed bundle charter says otherwise, pricing and access rules are owned by the source project.",
+    "no_pricing_auto_merge": "Hub rows never silently merge tiers across projects.",
+    "xl2_separate": "XL2 remains reference-only in this hub unless a charter explicitly integrates it."
+  },
+  "project_tier_examples": [
+    {
+      "project_id": "z-questra",
+      "tier_names_example": ["free_local", "student", "creator", "enterprise"],
+      "note": "Illustrative labels only; real tiers live in source-project policy when published.",
+      "billing_owner": "z-questra"
+    },
+    {
+      "project_id": "xl2",
+      "tier_names_example": ["observer", "workstation", "elite"],
+      "note": "Reference-only relationship to hub unless chartered.",
+      "billing_owner": "xl2_source_project"
+    },
+    {
+      "project_id": "z-sanctuary-hub",
+      "tier_names_example": ["operator", "enterprise", "founder"],
+      "note": "Hub operator posture is governance + cockpit, not automatic entitlement to sibling paid tools.",
+      "billing_owner": "z-sanctuary-hub"
+    }
+  ],
+  "capability_entitlements": [
+    {
+      "service_id": "z_questra_comfort_modes",
+      "source_project": "z-questra",
+      "capability_id": "comfort_modes",
+      "availability": "local_project_only",
+      "reuse_status": "reference_only",
+      "project_tier_hint": "typically_free_local",
+      "capability_tier_hint": "comfort_baseline",
+      "cross_project_use": "requires_charter_for_any_live_reuse",
+      "billing_conflict_rule": "source_project_terms_win_unless_bundle_chartered",
+      "bundle_charter_status": "none_active"
+    },
+    {
+      "service_id": "z_questra_playgarden_2d_canvas",
+      "source_project": "z-questra",
+      "capability_id": "playgarden_2d_canvas",
+      "availability": "local_project_only",
+      "reuse_status": "reference_only",
+      "project_tier_hint": "free_local_learning_surface",
+      "capability_tier_hint": "non_predictive_toy_lane",
+      "cross_project_use": "requires_charter_for_any_live_reuse",
+      "billing_conflict_rule": "source_project_terms_win_unless_bundle_chartered",
+      "bundle_charter_status": "none_active"
+    },
+    {
+      "service_id": "z_questra_future_visual_mapper",
+      "source_project": "z-questra",
+      "capability_id": "future_visual_mapper",
+      "availability": "roadmap_metadata_only",
+      "reuse_status": "reference_only",
+      "project_tier_hint": "future_gated",
+      "capability_tier_hint": "premium_or_enterprise_if_shipped",
+      "cross_project_use": "requires_charter_and_drp_gate",
+      "billing_conflict_rule": "source_project_terms_win_unless_bundle_chartered",
+      "bundle_charter_status": "none_active"
+    },
+    {
+      "service_id": "illustrative_future_playgarden_heavy_3d",
+      "source_project": "z-questra",
+      "capability_id": "playgarden_local_webgl_shapes",
+      "availability": "not_shipped_forbidden_without_charter",
+      "reuse_status": "reference_only",
+      "project_tier_hint": "n_a_until_chartered",
+      "capability_tier_hint": "would_require_creator_or_above_if_ever_offered",
+      "cross_project_use": "blocked_until_charter_heavy_3d_explicitly_reviewed",
+      "billing_conflict_rule": "source_project_terms_win_unless_bundle_chartered",
+      "bundle_charter_status": "proposed_only_example_row",
+      "warning": "Example row for entitlement shape only — not an active shipped capability in Z-QUESTRA today."
+    },
+    {
+      "service_id": "z_magical_canvas_playkit",
+      "source_project": "z-sanctuary-hub",
+      "capability_id": "magical_canvas_playkit",
+      "availability": "hub_repo_static_reference",
+      "reuse_status": "reference_only_free_visual_layer",
+      "project_tier_hint": "free_local_visual_enjoyment_only",
+      "capability_tier_hint": "no_billing_no_accounts_no_bridge",
+      "cross_project_use": "manual_copy_or_doc_link_only_until_charter_for_live_embed",
+      "billing_conflict_rule": "source_project_terms_win_unless_bundle_chartered",
+      "bundle_charter_status": "none_active",
+      "notes": "ZMC-1 PlayKit — local canvas/visual toggles; does not unlock ÉirMind or other paid services."
+    },
+    {
+      "service_id": "zquestcraft_catalog_placeholder",
+      "source_project": "zquestcraft",
+      "capability_id": "manifest_pending",
+      "availability": "unknown_until_manifest",
+      "reuse_status": "catalog_reference_only",
+      "project_tier_hint": "unknown",
+      "capability_tier_hint": "unknown",
+      "cross_project_use": "blocked_until_manifest_and_charter_review",
+      "billing_conflict_rule": "source_project_terms_win_unless_bundle_chartered",
+      "bundle_charter_status": "none_active"
+    }
+  ],
+  "bundle_charters": [
+    {
+      "bundle_id": "example_z_questra_education_pack",
+      "display_name": "Example — Z-QUESTRA + Z-Sanctuary Education Pack",
+      "status": "proposed_not_active",
+      "billing_owner": "not_active_requires_legal_signoff",
+      "requires": ["written_bundle_charter", "pricing_signoff", "privacy_review", "14_drp_dop_gate"]
+    }
+  ]
+}

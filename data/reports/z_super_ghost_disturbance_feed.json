@@ -1,0 +1,10 @@
+{
+  "generated_at": "2026-04-17T16:54:54.344Z",
+  "source": "z_troublemaker_scan",
+  "type": "disturbance_watch",
+  "status": "green",
+  "risk_class": "low",
+  "disturbance_score": 0,
+  "failed_ids": [],
+  "message": "Trouble Maker scan is clear. No disturbance chain detected."
+}

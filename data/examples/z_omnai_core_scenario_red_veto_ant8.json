@@ -1,0 +1,20 @@
+{
+  "schema": "z_omnai_core_scenario_v1",
+  "label": "manifest: ANT-8 depth breach",
+  "rsi_cycles": 3,
+  "traffic_kind": "audit",
+  "brains": [{ "id": "MB-0", "loadPct": 33 }, { "id": "BRAIN-7", "loadPct": 60 }],
+  "ants": {
+    "recursionDepth": 72,
+    "recursionLimit": 30,
+    "secretsDetected": false,
+    "ciGreen": true,
+    "ingestIntegrityOk": true,
+    "formulaStable": true,
+    "pathwayDiverging": false,
+    "hiveSkewPct": 6,
+    "reasoningDagCycles": 50
+  },
+  "pathway": { "goalClarity": 0.7, "capacityRatio": 0.62, "residualDelta": 0.01, "completesRubric": false },
+  "entity": { "lane": "MASTER", "action": "policy_merge_draft" }
+}

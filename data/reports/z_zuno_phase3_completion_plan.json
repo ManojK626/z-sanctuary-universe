@@ -1,0 +1,587 @@
+{
+  "generated_at": "2026-05-02T21:19:27.838Z",
+  "sources": {
+    "audit_json": "data/reports/z_zuno_coverage_audit.json",
+    "master_registry": "data/z_master_module_registry.json"
+  },
+  "audit_summary_counts": {
+    "FOUND_FULL": 29,
+    "FOUND_PARTIAL": 30,
+    "MISSING": 0,
+    "DUPLICATE_OR_CONFLICT": 0,
+    "NEEDS_SAFETY_REVIEW": 8,
+    "NEEDS_DECISION": 1
+  },
+  "constraints": [
+    "No fake implementation paths.",
+    "No payment, GPS, camera, mic, gambling automation, soulmate/baby predictor, emergency, or health product activation.",
+    "Deployment HOLD: registry and documentation first; UI/backend only when explicitly approved.",
+    "Evidence-first: re-run npm run zuno:coverage after any master registry or path change."
+  ],
+  "lane1_found_partial": [
+    {
+      "module_id": "ai-agent-designer",
+      "module_name": "ai-agent-designer",
+      "category": "ai_tower_agents",
+      "registry_status": "planned_stub",
+      "why_partial": [
+        "Master registry has zero expected_paths (Z_module_registry ZEntry absent on disk, non-path ZEntry, or vision doctrine row). Audit rule: zero paths ⇒ FOUND_PARTIAL."
+      ],
+      "minimum_safe_toward_found_full": [
+        "When code/docs exist: add real paths to Z_module_registry ZEntry (or master expected_paths) only after verifying files on disk; run npm run zuno:master-expand then npm run zuno:coverage."
+      ],
+      "audit_evidence_paths_found": [],
+      "audit_missing_expected_paths": []
+    },
+    {
+      "module_id": "ai-agent-navigator",
+      "module_name": "ai-agent-navigator",
+      "category": "ai_tower_agents",
+      "registry_status": "planned_stub",
+      "why_partial": [
+        "Master registry has zero expected_paths (Z_module_registry ZEntry absent on disk, non-path ZEntry, or vision doctrine row). Audit rule: zero paths ⇒ FOUND_PARTIAL."
+      ],
+      "minimum_safe_toward_found_full": [
+        "When code/docs exist: add real paths to Z_module_registry ZEntry (or master expected_paths) only after verifying files on disk; run npm run zuno:master-expand then npm run zuno:coverage."
+      ],
+      "audit_evidence_paths_found": [],
+      "audit_missing_expected_paths": []
+    },
+    {
+      "module_id": "ai-agent-protector",
+      "module_name": "ai-agent-protector",
+      "category": "ai_tower_agents",
+      "registry_status": "planned_stub",
+      "why_partial": [
+        "Master registry has zero expected_paths (Z_module_registry ZEntry absent on disk, non-path ZEntry, or vision doctrine row). Audit rule: zero paths ⇒ FOUND_PARTIAL."
+      ],
+      "minimum_safe_toward_found_full": [
+        "When code/docs exist: add real paths to Z_module_registry ZEntry (or master expected_paths) only after verifying files on disk; run npm run zuno:master-expand then npm run zuno:coverage."
+      ],
+      "audit_evidence_paths_found": [],
+      "audit_missing_expected_paths": []
+    },
+    {
+      "module_id": "ai-agent-scribe",
+      "module_name": "ai-agent-scribe",
+      "category": "ai_tower_agents",
+      "registry_status": "planned_stub",
+      "why_partial": [
+        "Master registry has zero expected_paths (Z_module_registry ZEntry absent on disk, non-path ZEntry, or vision doctrine row). Audit rule: zero paths ⇒ FOUND_PARTIAL."
+      ],
+      "minimum_safe_toward_found_full": [
+        "When code/docs exist: add real paths to Z_module_registry ZEntry (or master expected_paths) only after verifying files on disk; run npm run zuno:master-expand then npm run zuno:coverage."
+      ],
+      "audit_evidence_paths_found": [],
+      "audit_missing_expected_paths": []
+    },
+    {
+      "module_id": "ai-tower",
+      "module_name": "ai-tower",
+      "category": "ai_tower_agents",
+      "registry_status": "planned_stub",
+      "why_partial": [
+        "Master registry has zero expected_paths (Z_module_registry ZEntry absent on disk, non-path ZEntry, or vision doctrine row). Audit rule: zero paths ⇒ FOUND_PARTIAL."
+      ],
+      "minimum_safe_toward_found_full": [
+        "When code/docs exist: add real paths to Z_module_registry ZEntry (or master expected_paths) only after verifying files on disk; run npm run zuno:master-expand then npm run zuno:coverage."
+      ],
+      "audit_evidence_paths_found": [],
+      "audit_missing_expected_paths": []
+    },
+    {
+      "module_id": "autopilot-engine",
+      "module_name": "autopilot-engine",
+      "category": "core_engines",
+      "registry_status": "planned_stub",
+      "why_partial": [
+        "Master registry has zero expected_paths (Z_module_registry ZEntry absent on disk, non-path ZEntry, or vision doctrine row). Audit rule: zero paths ⇒ FOUND_PARTIAL."
+      ],
+      "minimum_safe_toward_found_full": [
+        "When code/docs exist: add real paths to Z_module_registry ZEntry (or master expected_paths) only after verifying files on disk; run npm run zuno:master-expand then npm run zuno:coverage."
+      ],
+      "audit_evidence_paths_found": [],
+      "audit_missing_expected_paths": []
+    },
+    {
+      "module_id": "core-chronicle",
+      "module_name": "core-chronicle",
+      "category": "core_engines",
+      "registry_status": "planned_stub",
+      "why_partial": [
+        "Master registry has zero expected_paths (Z_module_registry ZEntry absent on disk, non-path ZEntry, or vision doctrine row). Audit rule: zero paths ⇒ FOUND_PARTIAL."
+      ],
+      "minimum_safe_toward_found_full": [
+        "When code/docs exist: add real paths to Z_module_registry ZEntry (or master expected_paths) only after verifying files on disk; run npm run zuno:master-expand then npm run zuno:coverage."
+      ],
+      "audit_evidence_paths_found": [],
+      "audit_missing_expected_paths": []
+    },
+    {
+      "module_id": "core-chronicle-hud",
+      "module_name": "core-chronicle-hud",
+      "category": "core_engines",
+      "registry_status": "planned_stub",
+      "why_partial": [
+        "Master registry has zero expected_paths (Z_module_registry ZEntry absent on disk, non-path ZEntry, or vision doctrine row). Audit rule: zero paths ⇒ FOUND_PARTIAL."
+      ],
+      "minimum_safe_toward_found_full": [
+        "When code/docs exist: add real paths to Z_module_registry ZEntry (or master expected_paths) only after verifying files on disk; run npm run zuno:master-expand then npm run zuno:coverage."
+      ],
+      "audit_evidence_paths_found": [],
+      "audit_missing_expected_paths": []
+    },
+    {
+      "module_id": "core-dashboard",
+      "module_name": "core-dashboard",
+      "category": "core_engines",
+      "registry_status": "planned_stub",
+      "why_partial": [
+        "Master registry has zero expected_paths (Z_module_registry ZEntry absent on disk, non-path ZEntry, or vision doctrine row). Audit rule: zero paths ⇒ FOUND_PARTIAL."
+      ],
+      "minimum_safe_toward_found_full": [
+        "When code/docs exist: add real paths to Z_module_registry ZEntry (or master expected_paths) only after verifying files on disk; run npm run zuno:master-expand then npm run zuno:coverage."
+      ],
+      "audit_evidence_paths_found": [],
+      "audit_missing_expected_paths": []
+    },
+    {
+      "module_id": "core-emotion-filter",
+      "module_name": "core-emotion-filter",
+      "category": "core_engines",
+      "registry_status": "planned_stub",
+      "why_partial": [
+        "Master registry has zero expected_paths (Z_module_registry ZEntry absent on disk, non-path ZEntry, or vision doctrine row). Audit rule: zero paths ⇒ FOUND_PARTIAL."
+      ],
+      "minimum_safe_toward_found_full": [
+        "When code/docs exist: add real paths to Z_module_registry ZEntry (or master expected_paths) only after verifying files on disk; run npm run zuno:master-expand then npm run zuno:coverage."
+      ],
+      "audit_evidence_paths_found": [],
+      "audit_missing_expected_paths": []
+    },
+    {
+      "module_id": "core-energy-response",
+      "module_name": "core-energy-response",
+      "category": "core_engines",
+      "registry_status": "planned_stub",
+      "why_partial": [
+        "Master registry has zero expected_paths (Z_module_registry ZEntry absent on disk, non-path ZEntry, or vision doctrine row). Audit rule: zero paths ⇒ FOUND_PARTIAL."
+      ],
+      "minimum_safe_toward_found_full": [
+        "When code/docs exist: add real paths to Z_module_registry ZEntry (or master expected_paths) only after verifying files on disk; run npm run zuno:master-expand then npm run zuno:coverage."
+      ],
+      "audit_evidence_paths_found": [],
+      "audit_missing_expected_paths": []
+    },
+    {
+      "module_id": "core-status-console",
+      "module_name": "core-status-console",
+      "category": "core_engines",
+      "registry_status": "planned_stub",
+      "why_partial": [
+        "Master registry has zero expected_paths (Z_module_registry ZEntry absent on disk, non-path ZEntry, or vision doctrine row). Audit rule: zero paths ⇒ FOUND_PARTIAL."
+      ],
+      "minimum_safe_toward_found_full": [
+        "When code/docs exist: add real paths to Z_module_registry ZEntry (or master expected_paths) only after verifying files on disk; run npm run zuno:master-expand then npm run zuno:coverage."
+      ],
+      "audit_evidence_paths_found": [],
+      "audit_missing_expected_paths": []
+    },
+    {
+      "module_id": "family_companion_grove",
+      "module_name": "Family companion grove (concept)",
+      "category": "family_companion",
+      "registry_status": "planned_stub",
+      "why_partial": [
+        "Master registry has zero expected_paths (Z_module_registry ZEntry absent on disk, non-path ZEntry, or vision doctrine row). Audit rule: zero paths ⇒ FOUND_PARTIAL."
+      ],
+      "minimum_safe_toward_found_full": [
+        "When code/docs exist: add real paths to Z_module_registry ZEntry (or master expected_paths) only after verifying files on disk; run npm run zuno:master-expand then npm run zuno:coverage."
+      ],
+      "audit_evidence_paths_found": [],
+      "audit_missing_expected_paths": []
+    },
+    {
+      "module_id": "global_eco_marketplace_awareness",
+      "module_name": "Eco / marketplace / global awareness spine (concept)",
+      "category": "eco_global",
+      "registry_status": "doctrine_only",
+      "why_partial": [
+        "Master registry has zero expected_paths (Z_module_registry ZEntry absent on disk, non-path ZEntry, or vision doctrine row). Audit rule: zero paths ⇒ FOUND_PARTIAL."
+      ],
+      "minimum_safe_toward_found_full": [
+        "Keep as doctrine until a canonical ZEntry or master path is agreed; avoid inflating to FOUND_FULL without disk evidence."
+      ],
+      "audit_evidence_paths_found": [],
+      "audit_missing_expected_paths": []
+    },
+    {
+      "module_id": "media_storytelling_os",
+      "module_name": "Media / creative storytelling OS (concept)",
+      "category": "media_creative",
+      "registry_status": "doctrine_only",
+      "why_partial": [
+        "Master registry has zero expected_paths (Z_module_registry ZEntry absent on disk, non-path ZEntry, or vision doctrine row). Audit rule: zero paths ⇒ FOUND_PARTIAL."
+      ],
+      "minimum_safe_toward_found_full": [
+        "Keep as doctrine until a canonical ZEntry or master path is agreed; avoid inflating to FOUND_FULL without disk evidence."
+      ],
+      "audit_evidence_paths_found": [],
+      "audit_missing_expected_paths": []
+    },
+    {
+      "module_id": "rkpk-companion",
+      "module_name": "rkpk-companion",
+      "category": "family_companion",
+      "registry_status": "planned_stub",
+      "why_partial": [
+        "Master registry has zero expected_paths (Z_module_registry ZEntry absent on disk, non-path ZEntry, or vision doctrine row). Audit rule: zero paths ⇒ FOUND_PARTIAL."
+      ],
+      "minimum_safe_toward_found_full": [
+        "When code/docs exist: add real paths to Z_module_registry ZEntry (or master expected_paths) only after verifying files on disk; run npm run zuno:master-expand then npm run zuno:coverage."
+      ],
+      "audit_evidence_paths_found": [],
+      "audit_missing_expected_paths": []
+    },
+    {
+      "module_id": "sepc-governance",
+      "module_name": "sepc-governance",
+      "category": "trust_audit_governance",
+      "registry_status": "planned_stub",
+      "why_partial": [
+        "Master registry has zero expected_paths (Z_module_registry ZEntry absent on disk, non-path ZEntry, or vision doctrine row). Audit rule: zero paths ⇒ FOUND_PARTIAL."
+      ],
+      "minimum_safe_toward_found_full": [
+        "When code/docs exist: add real paths to Z_module_registry ZEntry (or master expected_paths) only after verifying files on disk; run npm run zuno:master-expand then npm run zuno:coverage."
+      ],
+      "audit_evidence_paths_found": [],
+      "audit_missing_expected_paths": []
+    },
+    {
+      "module_id": "skk-companion",
+      "module_name": "skk-companion",
+      "category": "family_companion",
+      "registry_status": "planned_stub",
+      "why_partial": [
+        "Master registry has zero expected_paths (Z_module_registry ZEntry absent on disk, non-path ZEntry, or vision doctrine row). Audit rule: zero paths ⇒ FOUND_PARTIAL."
+      ],
+      "minimum_safe_toward_found_full": [
+        "When code/docs exist: add real paths to Z_module_registry ZEntry (or master expected_paths) only after verifying files on disk; run npm run zuno:master-expand then npm run zuno:coverage."
+      ],
+      "audit_evidence_paths_found": [],
+      "audit_missing_expected_paths": []
+    },
+    {
+      "module_id": "social-arena",
+      "module_name": "social-arena",
+      "category": "love_social",
+      "registry_status": "planned_stub",
+      "why_partial": [
+        "Master registry has zero expected_paths (Z_module_registry ZEntry absent on disk, non-path ZEntry, or vision doctrine row). Audit rule: zero paths ⇒ FOUND_PARTIAL."
+      ],
+      "minimum_safe_toward_found_full": [
+        "When code/docs exist: add real paths to Z_module_registry ZEntry (or master expected_paths) only after verifying files on disk; run npm run zuno:master-expand then npm run zuno:coverage."
+      ],
+      "audit_evidence_paths_found": [],
+      "audit_missing_expected_paths": []
+    },
+    {
+      "module_id": "z_gadget_mirrors_product",
+      "module_name": "Z-Gadget Mirrors (hardware concept)",
+      "category": "products_gadgets",
+      "registry_status": "doctrine_only",
+      "why_partial": [
+        "Master registry has zero expected_paths (Z_module_registry ZEntry absent on disk, non-path ZEntry, or vision doctrine row). Audit rule: zero paths ⇒ FOUND_PARTIAL."
+      ],
+      "minimum_safe_toward_found_full": [
+        "Keep as doctrine until a canonical ZEntry or master path is agreed; avoid inflating to FOUND_FULL without disk evidence."
+      ],
+      "audit_evidence_paths_found": [],
+      "audit_missing_expected_paths": []
+    },
+    {
+      "module_id": "z-anima-core",
+      "module_name": "Z-ANIMA CORE (Human–Animal Connection Engine)",
+      "category": "trust_audit_governance",
+      "registry_status": "planned_stub",
+      "why_partial": [
+        "Master registry has zero expected_paths (Z_module_registry ZEntry absent on disk, non-path ZEntry, or vision doctrine row). Audit rule: zero paths ⇒ FOUND_PARTIAL."
+      ],
+      "minimum_safe_toward_found_full": [
+        "When code/docs exist: add real paths to Z_module_registry ZEntry (or master expected_paths) only after verifying files on disk; run npm run zuno:master-expand then npm run zuno:coverage."
+      ],
+      "audit_evidence_paths_found": [],
+      "audit_missing_expected_paths": []
+    },
+    {
+      "module_id": "z-ecosphere-transparency-report",
+      "module_name": "Ecosphere transparency (web + PPTX + print PDF)",
+      "category": "eco_global",
+      "registry_status": "planned_stub",
+      "why_partial": [
+        "Master registry has zero expected_paths (Z_module_registry ZEntry absent on disk, non-path ZEntry, or vision doctrine row). Audit rule: zero paths ⇒ FOUND_PARTIAL."
+      ],
+      "minimum_safe_toward_found_full": [
+        "When code/docs exist: add real paths to Z_module_registry ZEntry (or master expected_paths) only after verifying files on disk; run npm run zuno:master-expand then npm run zuno:coverage.",
+        "Optional doc-only lane: add a short spec under docs/ linking this module (does not alone yield FOUND_FULL without expected_paths)."
+      ],
+      "audit_evidence_paths_found": [],
+      "audit_missing_expected_paths": []
+    },
+    {
+      "module_id": "z-fhmff-lite",
+      "module_name": "Z-FHMFF Lite (frozen/hibernate observer)",
+      "category": "trust_audit_governance",
+      "registry_status": "doctrine_only",
+      "why_partial": [
+        "Master registry has zero expected_paths (Z_module_registry ZEntry absent on disk, non-path ZEntry, or vision doctrine row). Audit rule: zero paths ⇒ FOUND_PARTIAL."
+      ],
+      "minimum_safe_toward_found_full": [
+        "Keep as doctrine until a canonical ZEntry or master path is agreed; avoid inflating to FOUND_FULL without disk evidence."
+      ],
+      "audit_evidence_paths_found": [],
+      "audit_missing_expected_paths": []
+    },
+    {
+      "module_id": "z-kbozsu",
+      "module_name": "Z-KBOZSU (Knowledge Book Of Z-Sanctuary Universe)",
+      "category": "eco_global",
+      "registry_status": "planned_stub",
+      "why_partial": [
+        "Master registry has zero expected_paths (Z_module_registry ZEntry absent on disk, non-path ZEntry, or vision doctrine row). Audit rule: zero paths ⇒ FOUND_PARTIAL."
+      ],
+      "minimum_safe_toward_found_full": [
+        "When code/docs exist: add real paths to Z_module_registry ZEntry (or master expected_paths) only after verifying files on disk; run npm run zuno:master-expand then npm run zuno:coverage."
+      ],
+      "audit_evidence_paths_found": [],
+      "audit_missing_expected_paths": []
+    },
+    {
+      "module_id": "z-krtaa-curriculum-emitter",
+      "module_name": "Z-KRTAAO curriculum emitter",
+      "category": "eco_global",
+      "registry_status": "doctrine_only",
+      "why_partial": [
+        "Master registry has zero expected_paths (Z_module_registry ZEntry absent on disk, non-path ZEntry, or vision doctrine row). Audit rule: zero paths ⇒ FOUND_PARTIAL."
+      ],
+      "minimum_safe_toward_found_full": [
+        "Keep as doctrine until a canonical ZEntry or master path is agreed; avoid inflating to FOUND_FULL without disk evidence."
+      ],
+      "audit_evidence_paths_found": [],
+      "audit_missing_expected_paths": []
+    },
+    {
+      "module_id": "z-papao-precautions-advisor",
+      "module_name": "Z-PAPAO (Pre-Alert & Precautions Advisor)",
+      "category": "trust_audit_governance",
+      "registry_status": "planned_stub",
+      "why_partial": [
+        "Master registry has zero expected_paths (Z_module_registry ZEntry absent on disk, non-path ZEntry, or vision doctrine row). Audit rule: zero paths ⇒ FOUND_PARTIAL."
+      ],
+      "minimum_safe_toward_found_full": [
+        "When code/docs exist: add real paths to Z_module_registry ZEntry (or master expected_paths) only after verifying files on disk; run npm run zuno:master-expand then npm run zuno:coverage."
+      ],
+      "audit_evidence_paths_found": [],
+      "audit_missing_expected_paths": []
+    },
+    {
+      "module_id": "z-pis-projects-identifier-sharing",
+      "module_name": "Z-PI&S (Projects Identifier & Sharing)",
+      "category": "trust_audit_governance",
+      "registry_status": "planned_stub",
+      "why_partial": [
+        "Master registry has zero expected_paths (Z_module_registry ZEntry absent on disk, non-path ZEntry, or vision doctrine row). Audit rule: zero paths ⇒ FOUND_PARTIAL."
+      ],
+      "minimum_safe_toward_found_full": [
+        "When code/docs exist: add real paths to Z_module_registry ZEntry (or master expected_paths) only after verifying files on disk; run npm run zuno:master-expand then npm run zuno:coverage."
+      ],
+      "audit_evidence_paths_found": [],
+      "audit_missing_expected_paths": []
+    },
+    {
+      "module_id": "z-whale-bus-spine",
+      "module_name": "Z-Whale Bus (comms + Z-SSWSs/AI Tower surfaces)",
+      "category": "trust_audit_governance",
+      "registry_status": "planned_stub",
+      "why_partial": [
+        "Master registry has zero expected_paths (Z_module_registry ZEntry absent on disk, non-path ZEntry, or vision doctrine row). Audit rule: zero paths ⇒ FOUND_PARTIAL."
+      ],
+      "minimum_safe_toward_found_full": [
+        "When code/docs exist: add real paths to Z_module_registry ZEntry (or master expected_paths) only after verifying files on disk; run npm run zuno:master-expand then npm run zuno:coverage.",
+        "Optional doc-only lane: add a short spec under docs/ linking this module (does not alone yield FOUND_FULL without expected_paths)."
+      ],
+      "audit_evidence_paths_found": [],
+      "audit_missing_expected_paths": []
+    },
+    {
+      "module_id": "z-zecce-confirmations",
+      "module_name": "Z-ZECCE (Codex confirmations, advisory v1)",
+      "category": "trust_audit_governance",
+      "registry_status": "doctrine_only",
+      "why_partial": [
+        "Master registry has zero expected_paths (Z_module_registry ZEntry absent on disk, non-path ZEntry, or vision doctrine row). Audit rule: zero paths ⇒ FOUND_PARTIAL."
+      ],
+      "minimum_safe_toward_found_full": [
+        "Keep as doctrine until a canonical ZEntry or master path is agreed; avoid inflating to FOUND_FULL without disk evidence."
+      ],
+      "audit_evidence_paths_found": [],
+      "audit_missing_expected_paths": []
+    },
+    {
+      "module_id": "zen_scheduler_hub",
+      "module_name": "Zen scheduler / balance planner (concept)",
+      "category": "planning_wellness",
+      "registry_status": "planned_stub",
+      "why_partial": [
+        "Master registry has zero expected_paths (Z_module_registry ZEntry absent on disk, non-path ZEntry, or vision doctrine row). Audit rule: zero paths ⇒ FOUND_PARTIAL."
+      ],
+      "minimum_safe_toward_found_full": [
+        "When code/docs exist: add real paths to Z_module_registry ZEntry (or master expected_paths) only after verifying files on disk; run npm run zuno:master-expand then npm run zuno:coverage."
+      ],
+      "audit_evidence_paths_found": [],
+      "audit_missing_expected_paths": []
+    }
+  ],
+  "lane2_safety_review": [
+    {
+      "module_id": "gambling_prediction_voice",
+      "module_name": "Gambling / prediction narration (concept)",
+      "category": "gaming_compliance",
+      "registry_status": "safety_hold",
+      "safety_flags": [
+        "no_guaranteed_outcome_claims"
+      ],
+      "boundary_docs_primary": [
+        "docs/safety/GAMBLING_PREDICTION_BOUNDARY.md"
+      ],
+      "boundary_doc_map_source": "master.doc_mentions",
+      "closure_notes": "Doctrine / safety_hold: boundary text verifies; no implementation paths yet — creator sign-off before any UX or automation."
+    },
+    {
+      "module_id": "gps_safety_module",
+      "module_name": "GPS / location safety posture (concept)",
+      "category": "safety_emergency",
+      "registry_status": "safety_hold",
+      "safety_flags": [
+        "location_privacy_emergency_only"
+      ],
+      "boundary_docs_primary": [
+        "docs/safety/LOCATION_CAMERA_MIC_BOUNDARY.md"
+      ],
+      "boundary_doc_map_source": "master.doc_mentions",
+      "closure_notes": "Doctrine / safety_hold: boundary text verifies; no implementation paths yet — creator sign-off before any UX or automation."
+    },
+    {
+      "module_id": "mirrorsoul_hub_slice",
+      "module_name": "MirrorSoul hub slice package + routes",
+      "category": "Product / interpersonal",
+      "registry_status": "implemented",
+      "safety_flags": [
+        "emotion_and_relationship_guidance_follow_policy"
+      ],
+      "boundary_docs_primary": [
+        "docs/safety/MIRRORSOUL_PRIVACY_BOUNDARY.md"
+      ],
+      "boundary_doc_map_source": "master.doc_mentions",
+      "closure_notes": "Boundary doc tokens satisfied; still requires explicit human safety sign-off before production-facing changes."
+    },
+    {
+      "module_id": "movement_health_coach_lite",
+      "module_name": "Movement / health coaching (non-medical posture)",
+      "category": "health_movement",
+      "registry_status": "safety_hold",
+      "safety_flags": [
+        "non_medical_disclaimer"
+      ],
+      "boundary_docs_primary": [
+        "docs/safety/NON_MEDICAL_PRODUCT_BOUNDARY.md"
+      ],
+      "boundary_doc_map_source": "master.doc_mentions",
+      "closure_notes": "Doctrine / safety_hold: boundary text verifies; no implementation paths yet — creator sign-off before any UX or automation."
+    },
+    {
+      "module_id": "public_trust_portal_lottery",
+      "module_name": "Public trust portal (Amk_Goku Worldwide Lottery subtree)",
+      "category": "Trust / products",
+      "registry_status": "implemented",
+      "safety_flags": [
+        "gambling_adjacent_compliance_and_disclaimers"
+      ],
+      "boundary_docs_primary": [
+        "docs/safety/LOTTERY_RESPONSIBLE_USE_BOUNDARY.md"
+      ],
+      "boundary_doc_map_source": "master.doc_mentions",
+      "closure_notes": "Boundary doc tokens satisfied; still requires explicit human safety sign-off before production-facing changes."
+    },
+    {
+      "module_id": "roulette",
+      "module_name": "Super Saiyan Roulette",
+      "category": "gaming_compliance",
+      "registry_status": "safety_hold",
+      "safety_flags": [
+        "gambling_adjacent_compliance"
+      ],
+      "boundary_docs_primary": [
+        "docs/safety/GAMBLING_PREDICTION_BOUNDARY.md",
+        "docs/safety/LOTTERY_RESPONSIBLE_USE_BOUNDARY.md"
+      ],
+      "boundary_doc_map_source": "heuristic_map",
+      "closure_notes": "Add doc_mentions in master for docs/safety/GAMBLING_PREDICTION_BOUNDARY.md, docs/safety/LOTTERY_RESPONSIBLE_USE_BOUNDARY.md with tokens present in those files, then npm run zuno:coverage."
+    },
+    {
+      "module_id": "roulette-calculator",
+      "module_name": "roulette-calculator",
+      "category": "gaming_compliance",
+      "registry_status": "safety_hold",
+      "safety_flags": [
+        "gambling_adjacent_compliance"
+      ],
+      "boundary_docs_primary": [
+        "docs/safety/GAMBLING_PREDICTION_BOUNDARY.md"
+      ],
+      "boundary_doc_map_source": "heuristic_map",
+      "closure_notes": "Add doc_mentions in master for docs/safety/GAMBLING_PREDICTION_BOUNDARY.md with tokens present in those files, then npm run zuno:coverage."
+    },
+    {
+      "module_id": "soulmate_baby_predictor",
+      "module_name": "Soulmate / baby prediction (concept)",
+      "category": "love_social",
+      "registry_status": "safety_hold",
+      "safety_flags": [
+        "consent_sensitive_personal_projection"
+      ],
+      "boundary_docs_primary": [
+        "docs/safety/BABY_PREDICTOR_CONSENT_BOUNDARY.md"
+      ],
+      "boundary_doc_map_source": "heuristic_map",
+      "closure_notes": "Add doc_mentions in master for docs/safety/BABY_PREDICTOR_CONSENT_BOUNDARY.md with tokens present in those files, then npm run zuno:coverage."
+    }
+  ],
+  "lane3_decision": [
+    {
+      "module_id": "ethical_monetization_layer",
+      "module_name": "Ethical monetization / subscriptions (concept)",
+      "notes": "",
+      "options": [
+        {
+          "id": "keep_decision_required",
+          "label": "Keep as intentional decision_required",
+          "detail": "Leave master registry_status as decision_required; document in Zuno or governance doc that monetization is deferred until AMK-Goku defines policy."
+        },
+        {
+          "id": "resolve_to_doctrine_or_stub",
+          "label": "Resolve into doctrine_only or planned_stub",
+          "detail": "Change registry_status to doctrine_only (no paths) or planned_stub with a single verified doc path (e.g. economy ethics note under docs/) after file exists; re-run coverage."
+        }
+      ]
+    }
+  ],
+  "lane4_zuno_manual_snapshot_md": "**Latest coverage counters** (from `data/reports/z_zuno_coverage_audit.json` at plan generation):\n\n| Status | Count |\n| --- | ---: |\n| FOUND_FULL | 29 |\n| FOUND_PARTIAL | 30 |\n| MISSING | 0 |\n| DUPLICATE_OR_CONFLICT | 0 |\n| NEEDS_SAFETY_REVIEW | 8 |\n| NEEDS_DECISION | 1 |\n\n**Phase 3 plan:** `data/reports/z_zuno_phase3_completion_plan.md`",
+  "lane5_dashboard": {
+    "suggestions": [
+      "Trust Portal / lottery subtree: read-only display of `data/reports/z_zuno_coverage_audit.json` summary (operator refresh after `npm run zuno:coverage`) — avoid hard-coding stale counts.",
+      "SKK–RKPK dashboard: optional small panel linking to `z_zuno_coverage_audit.md` and Phase 3 plan MD (static links first; live counters later with human approval).",
+      "Do not enable network fetch to production; local file or same-origin static JSON only."
+    ]
+  }
+}

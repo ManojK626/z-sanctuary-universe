@@ -1,0 +1,234 @@
+{
+  "generated_at": "2026-04-26T01:48:45.641Z",
+  "mode": "audit-only",
+  "status": "amber",
+  "privacy": {
+    "local_only": true,
+    "redacted_identity": true,
+    "note": "No serial numbers, no PNP instance IDs, and no cloud upload in analyzer."
+  },
+  "host": {
+    "platform": "win32",
+    "release": "10.0.26200",
+    "hostname": "redacted",
+    "cpu": {
+      "cores_logical": 16,
+      "model": "AMD Ryzen 7 7840HS w/ Radeon 780M Graphics     ",
+      "speed_mhz": 3793,
+      "arch": "x64"
+    },
+    "memory_gb": {
+      "total": 61.73,
+      "free": 31.95
+    }
+  },
+  "devices": {
+    "class_counts": [
+      {
+        "Name": "System",
+        "Count": 70
+      },
+      {
+        "Name": "Bluetooth",
+        "Count": 30
+      },
+      {
+        "Name": "USB",
+        "Count": 16
+      },
+      {
+        "Name": "Net",
+        "Count": 16
+      },
+      {
+        "Name": "Processor",
+        "Count": 16
+      },
+      {
+        "Name": "MEDIA",
+        "Count": 15
+      },
+      {
+        "Name": "SoftwareComponent",
+        "Count": 8
+      },
+      {
+        "Name": "HIDClass",
+        "Count": 8
+      },
+      {
+        "Name": "SoftwareDevice",
+        "Count": 8
+      },
+      {
+        "Name": "AudioEndpoint",
+        "Count": 5
+      },
+      {
+        "Name": "Volume",
+        "Count": 5
+      },
+      {
+        "Name": "Ports",
+        "Count": 4
+      },
+      {
+        "Name": "PrintQueue",
+        "Count": 3
+      },
+      {
+        "Name": "SCSIAdapter",
+        "Count": 3
+      },
+      {
+        "Name": "AudioProcessingObject",
+        "Count": 2
+      },
+      {
+        "Name": "Computer",
+        "Count": 2
+      },
+      {
+        "Name": "SecurityDevices",
+        "Count": 2
+      },
+      {
+        "Name": "Monitor",
+        "Count": 2
+      },
+      {
+        "Name": "Keyboard",
+        "Count": 1
+      },
+      {
+        "Name": "DiskDrive",
+        "Count": 1
+      },
+      {
+        "Name": "Display",
+        "Count": 1
+      },
+      {
+        "Name": "Firmware",
+        "Count": 1
+      },
+      {
+        "Name": "Mouse",
+        "Count": 1
+      }
+    ]
+  },
+  "network": {
+    "adapters": [
+      {
+        "Name": "Ethernet 4",
+        "Status": "Up",
+        "LinkSpeed": "100 Mbps",
+        "InterfaceDescription": "Realtek Gaming 2.5GbE Family Controller #4"
+      },
+      {
+        "Name": "Wi-Fi 3",
+        "Status": "Disconnected",
+        "LinkSpeed": "0 bps",
+        "InterfaceDescription": "Killer(R) Wi-Fi 6E AX1675x 160MHz Wireless Network Adapter (210NGW) #2"
+      },
+      {
+        "Name": "Bluetooth Network Connection 2",
+        "Status": "Disconnected",
+        "LinkSpeed": "3 Mbps",
+        "InterfaceDescription": "Bluetooth Device (Personal Area Network) #2"
+      },
+      {
+        "Name": "Ethernet 3",
+        "Status": "Up",
+        "LinkSpeed": "100 Mbps",
+        "InterfaceDescription": "Realtek Gaming 2.5GbE Family Controller #3"
+      },
+      {
+        "Name": "Local Area Connection",
+        "Status": "Disconnected",
+        "LinkSpeed": "10 Gbps",
+        "InterfaceDescription": "Kaspersky VPN"
+      }
+    ]
+  },
+  "compute": {
+    "gpus": [
+      {
+        "Name": "AMD Radeon 780M Graphics",
+        "AdapterRAM": 2147483648,
+        "DriverVersion": "32.0.21030.2001"
+      }
+    ]
+  },
+  "security": {
+    "tpm": {
+      "enabled": false,
+      "activated": false,
+      "spec_version": null
+    }
+  },
+  "storage": {
+    "volumes": [
+      {
+        "device": "C:",
+        "fs": "NTFS",
+        "size_gb": 951.87,
+        "free_gb": 778.21
+      }
+    ],
+    "total_size_gb": 951.87,
+    "total_free_gb": 778.21
+  },
+  "diagnostics": {
+    "collectors": {
+      "class_counts": "ok",
+      "storage": "ok",
+      "adapters": "ok",
+      "gpu": "ok",
+      "tpm": "powershell_failed"
+    }
+  },
+  "capabilities": [
+    {
+      "id": "local_ai_parallel_ready",
+      "pass": true,
+      "note": "ram=61.73GB (>=16), cpu_cores=16 (>=8)"
+    },
+    {
+      "id": "storage_headroom_ready",
+      "pass": true,
+      "note": "free_storage=778.21GB (>=120)"
+    },
+    {
+      "id": "secure_vault_ready",
+      "pass": false,
+      "note": "tpm_enabled=false, tpm_activated=false"
+    },
+    {
+      "id": "high_speed_sync_candidate",
+      "pass": true,
+      "note": "10GbE_detected=true"
+    },
+    {
+      "id": "wearable_bridge_candidate",
+      "pass": true,
+      "note": "bluetooth_detected=true"
+    },
+    {
+      "id": "iot_bridge_candidate",
+      "pass": true,
+      "note": "usb_detected=true, wifi_detected=true"
+    },
+    {
+      "id": "vision_input_candidate",
+      "pass": false,
+      "note": "camera_or_image_class_detected=false"
+    },
+    {
+      "id": "gpu_accel_candidate",
+      "pass": true,
+      "note": "gpus_detected=1"
+    }
+  ]
+}

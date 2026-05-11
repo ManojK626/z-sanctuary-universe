@@ -1,0 +1,31 @@
+{
+  "_meta": {
+    "schema": "Z_CORE_ENGINES_REGISTRY_V1",
+    "posture": "read_only_truth_registry",
+    "owner": "Z-Sanctuary",
+    "note": "Registry only. Presence here does not prove runtime implementation; pair with zuno coverage audit for file evidence."
+  },
+  "engines": [
+    {
+      "id": "z_sanctuary_core",
+      "name": "Z-Sanctuary Core",
+      "status": "active_or_partial",
+      "risk": "medium",
+      "role": "Central governance, hub verify chain, and multi-root coordination."
+    },
+    {
+      "id": "ghost_core",
+      "name": "Ghost Core",
+      "status": "doctrine_or_partial",
+      "risk": "medium",
+      "role": "Reflection, archive, and memory trail (bounded; no vault exfil)."
+    },
+    {
+      "id": "alien_core",
+      "name": "Alien Core",
+      "status": "doctrine_or_partial",
+      "risk": "medium",
+      "role": "Off-angle pattern discovery and unusual signal handling (advisory)."
+    }
+  ]
+}

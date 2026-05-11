@@ -1,0 +1,321 @@
+{
+  "schema": "z_continuous_verification_protocol/1.0.0",
+  "registry_name": "Z-Continuous Verification Protocol",
+  "registry_description": "Living real-time monitoring of Z-Sanctuary state. Aggregates all gates, tracks changes, reports latest awareness.",
+  "effective_date": "2026-05-05",
+  "mode": "continuous_monitoring_and_alerting",
+  "phase": "PHASE_Z_CONTINUOUS_VERIFY_1",
+  "purpose": "Keep AMK-Goku and all operators aware of LATEST state. Know what's happening NOW.",
+  "core_principle": "No stale information. No surprises. Everything visible.",
+  "check_intervals": {
+    "critical_gates": 60,
+    "traffic_status": 300,
+    "registry_integrity": 600,
+    "ide_fusion_sessions": 120,
+    "14drp_compliance": 120,
+    "archive_integrity": 3600
+  },
+  "monitored_gates": [
+    {
+      "gate_id": "verify_md",
+      "gate_name": "Markdown Verification",
+      "command": "npm run verify:md",
+      "description": "Markdown syntax and linting gate",
+      "check_interval": 300,
+      "timeout": 30,
+      "critical": true,
+      "required_for": "documentation_seal",
+      "alert_on": ["failure", "timeout", "slow_execution"]
+    },
+    {
+      "gate_id": "z_traffic",
+      "gate_name": "Traffic Minibots Status",
+      "command": "npm run z:traffic",
+      "description": "System traffic and signal status",
+      "check_interval": 300,
+      "timeout": 30,
+      "critical": true,
+      "required_for": "system_health",
+      "alert_on": ["RED_signal", "timeout", "missing_report"]
+    },
+    {
+      "gate_id": "z_car2",
+      "gate_name": "CAR2 Similarity Scan",
+      "command": "npm run z:car2",
+      "description": "Code duplication and pattern analysis",
+      "check_interval": 3600,
+      "timeout": 120,
+      "critical": false,
+      "required_for": "code_health",
+      "alert_on": ["high_duplication", "pattern_anomaly"]
+    },
+    {
+      "gate_id": "z_ide_fusion",
+      "gate_name": "IDE Fusion Coordination",
+      "command": "npm run z:ide:fusion",
+      "description": "Cursor IDE + VS Code shared coordination",
+      "check_interval": 120,
+      "timeout": 15,
+      "critical": true,
+      "required_for": "ide_coordination",
+      "alert_on": ["RED_signal", "file_collision", "session_conflict"]
+    },
+    {
+      "gate_id": "z_ide_14drp",
+      "gate_name": "14DRP Agent Protocol",
+      "command": "npm run z:ide:14drp",
+      "description": "Deep responsibility principles enforcement",
+      "check_interval": 120,
+      "timeout": 15,
+      "critical": true,
+      "required_for": "agent_protection",
+      "alert_on": ["RED_signal", "DRP_violation", "forbidden_action"]
+    }
+  ],
+  "registry_checks": [
+    {
+      "check_id": "registry_parse_valid",
+      "description": "All registries parse correctly",
+      "registries": [
+        "data/z_ide_fusion_control_registry.json",
+        "data/z_ide_14drp_agent_protocol_registry.json",
+        "data/z_continuous_verification_protocol_registry.json"
+      ],
+      "check_interval": 600,
+      "alert_on": ["parse_error", "schema_invalid"]
+    },
+    {
+      "check_id": "high_risk_files_integrity",
+      "description": "High-risk files not modified unexpectedly",
+      "files": [
+        "package.json",
+        "docs/AI_BUILDER_CONTEXT.md",
+        "docs/INDEX.md",
+        "data/z_ide_fusion_control_registry.json",
+        "data/z_ide_14drp_agent_protocol_registry.json"
+      ],
+      "check_interval": 300,
+      "alert_on": ["unauthorized_modification", "timestamp_anomaly"]
+    },
+    {
+      "check_id": "archive_isolation",
+      "description": ".cursor/projects remains untouched",
+      "paths": [
+        "c:\\Users\\manoj\\.cursor\\projects"
+      ],
+      "forbidden_patterns": [
+        "package.json",
+        "node_modules",
+        ".cursor/projects/data/**"
+      ],
+      "check_interval": 3600,
+      "alert_on": ["forbidden_file_found", "package_json_exists"]
+    }
+  ],
+  "aggregation_rules": {
+    "overall_signal_logic": {
+      "GREEN": "all_critical_gates_pass",
+      "YELLOW": "one_warning_or_slow_gate",
+      "BLUE": "amk_decision_required",
+      "RED": "critical_gate_failed_or_violation"
+    },
+    "health_categories": {
+      "documentation_health": "verify_md result",
+      "system_health": "z_traffic result",
+      "code_health": "z_car2 result",
+      "ide_health": "z_ide_fusion + z_ide_14drp results",
+      "compliance_health": "z_ide_14drp + registry checks results"
+    }
+  },
+  "alert_levels": [
+    {
+      "level": "GREEN",
+      "description": "All systems healthy",
+      "notification": "optional_digest",
+      "action": "continue_normal_operations"
+    },
+    {
+      "level": "YELLOW",
+      "description": "Non-critical advisory (slow gate, optional data missing)",
+      "notification": "quiet_advisory",
+      "action": "monitor_situation"
+    },
+    {
+      "level": "BLUE",
+      "description": "AMK decision required",
+      "notification": "notify_amk_goku_dashboard",
+      "action": "hold_for_approval"
+    },
+    {
+      "level": "RED",
+      "description": "Critical violation or gate failure",
+      "notification": "immediate_alert",
+      "action": "stop_and_report"
+    }
+  ],
+  "timeline_tracking": {
+    "enabled": true,
+    "file": "data/ide-fusion/continuous_verification_timeline.jsonl",
+    "events_tracked": [
+      "gate_check_started",
+      "gate_check_completed",
+      "gate_check_failed",
+      "signal_changed",
+      "high_risk_file_modified",
+      "session_started",
+      "session_ended",
+      "handoff_written",
+      "amk_alert_triggered"
+    ],
+    "retention_days": 30
+  },
+  "performance_metrics": {
+    "track": true,
+    "metrics": [
+      "gate_execution_time",
+      "gate_success_rate",
+      "average_system_signal",
+      "anomaly_detection",
+      "file_change_frequency"
+    ],
+    "report_frequency": "hourly"
+  },
+  "dashboard_integration": {
+    "enabled": true,
+    "report_file": "data/reports/z_continuous_verification_status.json",
+    "markdown_file": "data/reports/z_continuous_verification_status.md",
+    "refresh_interval": 120,
+    "fields_exposed": [
+      "overall_signal",
+      "gate_status_summary",
+      "active_sessions_count",
+      "latest_alerts",
+      "health_categories",
+      "last_verification_time"
+    ]
+  },
+  "amk_notification_rules": [
+    {
+      "condition": "RED signal detected",
+      "action": "immediate_alert_to_amk_dashboard",
+      "fields": [
+        "signal",
+        "violation_details",
+        "affected_files",
+        "recommended_action"
+      ]
+    },
+    {
+      "condition": "Two or more YELLOW signals",
+      "action": "consolidate_advisory",
+      "fields": [
+        "advisory_summary",
+        "affected_systems",
+        "monitoring_recommendation"
+      ]
+    },
+    {
+      "condition": "Sacred move attempted",
+      "action": "immediate_notification_with_context",
+      "fields": [
+        "sacred_move_name",
+        "session_info",
+        "approval_status"
+      ]
+    },
+    {
+      "condition": "IDE session conflict detected",
+      "action": "alert_with_session_details",
+      "fields": [
+        "conflict_type",
+        "sessions_involved",
+        "recommended_resolution"
+      ]
+    }
+  ],
+  "verification_modes": [
+    {
+      "mode_id": "quick_check",
+      "name": "Quick Status Check",
+      "gates": [
+        "z_ide_fusion",
+        "z_ide_14drp"
+      ],
+      "interval": 120,
+      "timeout": 20,
+      "use_case": "Real-time IDE coordination awareness"
+    },
+    {
+      "mode_id": "full_verification",
+      "name": "Full System Verification",
+      "gates": [
+        "verify_md",
+        "z_traffic",
+        "z_car2",
+        "z_ide_fusion",
+        "z_ide_14drp"
+      ],
+      "interval": 600,
+      "timeout": 180,
+      "use_case": "Comprehensive system health"
+    },
+    {
+      "mode_id": "compliance_audit",
+      "name": "Compliance Audit",
+      "gates": [
+        "z_ide_14drp",
+        "registry_checks",
+        "archive_integrity"
+      ],
+      "interval": 3600,
+      "timeout": 60,
+      "use_case": "Daily governance verification"
+    }
+  ],
+  "reporting": {
+    "enabled": true,
+    "reports": [
+      {
+        "report_id": "living_status",
+        "name": "Living Verification Status",
+        "file": "data/reports/z_continuous_verification_status.json",
+        "format": "json",
+        "refresh_interval": 120
+      },
+      {
+        "report_id": "living_status_md",
+        "name": "Living Verification Status (Markdown)",
+        "file": "data/reports/z_continuous_verification_status.md",
+        "format": "markdown",
+        "refresh_interval": 120
+      },
+      {
+        "report_id": "timeline",
+        "name": "Event Timeline",
+        "file": "data/ide-fusion/continuous_verification_timeline.jsonl",
+        "format": "jsonl",
+        "refresh_interval": 30
+      },
+      {
+        "report_id": "hourly_digest",
+        "name": "Hourly Digest",
+        "file": "data/reports/z_continuous_verification_hourly_digest.md",
+        "format": "markdown",
+        "refresh_interval": 3600
+      }
+    ]
+  },
+  "locked_law": [
+    "Continuous verification is mandatory, not optional",
+    "Stale information is dangerous - refresh frequently",
+    "All signals must aggregate to single overall_signal",
+    "RED signals block movement",
+    "BLUE signals require AMK awareness",
+    "YELLOW signals are quiet advisories",
+    "GREEN signals mean safe to continue",
+    "Archive integrity is always checked",
+    "High-risk files are always monitored",
+    "Timeline is append-only evidence",
+    "No bypassing verification gates"
+  ]
+}

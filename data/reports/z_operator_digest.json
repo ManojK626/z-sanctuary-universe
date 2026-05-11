@@ -1,0 +1,46 @@
+{
+  "generated_at": "2026-04-17T19:43:13.469Z",
+  "role": "operator_digest",
+  "note": "Shadow-style snapshot for Z-Super Chat + creator reminders. Refresh with npm run operator:digest.",
+  "system_status": {
+    "verify": "PASS",
+    "status": "healthy",
+    "last_check_iso": "2026-04-17T16:33:22.393Z"
+  },
+  "enforcer": {
+    "action": "BLOCK",
+    "release_gate": "hold",
+    "p1_open": 0,
+    "readiness": "4/4",
+    "blockers_head": [
+      "Release governance: hold (manual_release false (edit data/z_release_control.json))"
+    ]
+  },
+  "governance": {
+    "final_status": "HOLD",
+    "technical_ready": true,
+    "manual_release": false,
+    "readiness": "4/4"
+  },
+  "bridge_readiness": {
+    "summary_status": "PASS",
+    "readiness": "4/4",
+    "gates_pass": 4,
+    "gates_total": 4
+  },
+  "registry": {
+    "project_count": 11,
+    "external_hosted_count": 1
+  },
+  "arrbce": {
+    "completed_at_iso": "2026-04-17T16:33:22.445Z",
+    "ok": true,
+    "mode": "core"
+  },
+  "suggested_next_steps": [
+    "Clear enforcer blockers (see data/reports/z_execution_enforcer.json), then node scripts/z_execution_enforcer.mjs",
+    "Governance HOLD but technically ready — edit data/z_release_control.json only when you intentionally approve release.",
+    "Super Chat: companion uses this digest when refreshed — run npm run operator:digest after major hub changes.",
+    "Cloudflare Task 008: see MONOREPO Cloudflare roadmap; /z-cf-task008-roadmap"
+  ]
+}

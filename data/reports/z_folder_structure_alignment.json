@@ -1,0 +1,26 @@
+{
+  "generated_at": "2026-04-28T18:55:53.792Z",
+  "mode": "align_dry_run",
+  "status": "aligned",
+  "required_directories_total": 6,
+  "missing_required_directories": [],
+  "created_directories": [],
+  "duplicate_like_top_dirs": [],
+  "root_file_assignment_hints": [],
+  "relocation_plan_summary": {
+    "all": 0,
+    "critical": 0,
+    "high": 0,
+    "normal": 0,
+    "low": 0
+  },
+  "relocation_plan_report": {
+    "json": "data/reports/z_folder_relocation_plan.json",
+    "md": "data/reports/z_folder_relocation_plan.md"
+  },
+  "notes": [
+    "No file moves are auto-applied by align mode.",
+    "Use this report to remove duplicate-like folder structures safely.",
+    "Apply mode creates missing required communication-flow folders only."
+  ]
+}

@@ -1,0 +1,32 @@
+# Z: Hub CI — fast structural gates (Cursor folder spine, sanctuary structure, registry omni).
+# Includes ecosystem:workspace-drift: skips on cloud runners if pc_root is absent; on a self-hosted
+# runner with Organiser mounted, fails if Z_All_Projects.code-workspace drifts from z_pc_root_projects.json.
+# Full lint/test pipeline: npm run verify:full (local or scheduled runner).
+
+name: CI
+
+on:
+  push:
+    branches: [main, master]
+  pull_request:
+    branches: [main, master]
+
+jobs:
+  verify-hub:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+          cache: npm
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Cursor folder spine + structure + registry omni
+        run: npm run verify:ci

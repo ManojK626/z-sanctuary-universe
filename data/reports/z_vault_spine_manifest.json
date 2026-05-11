@@ -1,0 +1,63 @@
+{
+  "generated_at": "2026-04-23T21:44:06.975Z",
+  "schema_version": 1,
+  "purpose": "Vault spine link verification — docs/z-vault + config data/z_vault_spine.json",
+  "config_file": "data/z_vault_spine.json",
+  "status": "green",
+  "totals": {
+    "spine_files": 8,
+    "links_checked": 40,
+    "broken": 0
+  },
+  "broken_links": [],
+  "per_file": [
+    {
+      "path": "docs/z-vault/README.md",
+      "exists": true,
+      "links_checked": 1,
+      "broken_count": 0
+    },
+    {
+      "path": "docs/z-vault/INDEX.md",
+      "exists": true,
+      "links_checked": 12,
+      "broken_count": 0
+    },
+    {
+      "path": "docs/z-vault/drp/README.md",
+      "exists": true,
+      "links_checked": 5,
+      "broken_count": 0
+    },
+    {
+      "path": "docs/z-vault/formulas/README.md",
+      "exists": true,
+      "links_checked": 2,
+      "broken_count": 0
+    },
+    {
+      "path": "docs/z-vault/ssws/README.md",
+      "exists": true,
+      "links_checked": 2,
+      "broken_count": 0
+    },
+    {
+      "path": "docs/z-vault/guardian/README.md",
+      "exists": true,
+      "links_checked": 2,
+      "broken_count": 0
+    },
+    {
+      "path": "docs/z-vault/vaults/README.md",
+      "exists": true,
+      "links_checked": 2,
+      "broken_count": 0
+    },
+    {
+      "path": "docs/z-vault/ecosphere/README.md",
+      "exists": true,
+      "links_checked": 14,
+      "broken_count": 0
+    }
+  ]
+}

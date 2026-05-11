@@ -1,0 +1,18 @@
+{
+  "schema": "z_ide_fusion_active_sessions_v1",
+  "sessions": [
+    {
+      "session_id": "cursor-2026-05-05-amk-main-001",
+      "ide": "cursor_ide",
+      "operator": "amk",
+      "project_id": "zsanctuary_universe",
+      "workspace_id": "main_super_saiyan_workspace",
+      "repo_root": "C:/Cursor Projects Organiser/Z_Sanctuary_Universe",
+      "intended_task": "Read-only governance and docs updates",
+      "files_expected_to_touch": ["docs/Z_IDE_FUSION_WORKFLOW_CONTROL.md"],
+      "requires_amk_decision": false,
+      "forbidden_actions_acknowledged": true,
+      "started_at": "2026-05-05T13:10:00Z"
+    }
+  ]
+}

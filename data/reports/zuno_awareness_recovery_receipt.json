@@ -1,0 +1,24 @@
+{
+  "schema": "zuno_awareness_recovery_receipt_v1",
+  "generated_at": "2026-05-03T16:02:37.890Z",
+  "mode": "read_last_receipts",
+  "a3_band": "RED",
+  "a3_score": 10,
+  "z_traffic_overall_signal": "RED",
+  "recovery_status": "blocked",
+  "a4_guardian_loop_eligible": false,
+  "a4_guardian_loop_blocked": true,
+  "a4_block_reason": "A3 band is RED; Z-Traffic chief is RED. Do not open A4.",
+  "dominant_drivers_from_a3": [
+    "z_traffic_RED",
+    "a2a_temporal_deltas_present",
+    "a2b_truth_layer_YELLOW"
+  ],
+  "references": {
+    "awareness_score": "data/reports/zuno_awareness_score.json",
+    "traffic_status": "data/reports/z_traffic_minibots_status.json"
+  },
+  "cli": {
+    "pass_through": "npm run zuno:a3r:receipt -- --live"
+  }
+}

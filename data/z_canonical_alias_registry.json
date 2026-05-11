@@ -1,0 +1,24 @@
+{
+  "version": "1.0.0",
+  "generated_at": "2026-02-14T00:00:00Z",
+  "aliases": [
+    {
+      "id": "zuno_state_json_alias",
+      "canonical": "data/reports/zuno_system_state_report.json",
+      "aliases": ["data/reports/z_zuno_daily_report.json"],
+      "reason": "Backward compatibility for legacy dashboard readers"
+    },
+    {
+      "id": "zuno_state_md_alias",
+      "canonical": "data/reports/zuno_system_state_report.md",
+      "aliases": ["data/reports/z_zuno_daily_report.md"],
+      "reason": "Backward compatibility for legacy markdown consumers"
+    },
+    {
+      "id": "header_conversion_artifact",
+      "canonical": "data/z_header_non_utf8.txt",
+      "aliases": ["data/z_header_converted.txt"],
+      "reason": "Encoding conversion reference pair"
+    }
+  ]
+}

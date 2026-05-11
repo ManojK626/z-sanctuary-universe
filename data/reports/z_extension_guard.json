@@ -1,0 +1,51 @@
+{
+  "generated_at": "2026-05-02T18:16:32.941Z",
+  "status": "hold",
+  "mode": "audit",
+  "checks": [
+    {
+      "id": "setting_task_allowAutomaticTasks",
+      "pass": true,
+      "note": "expected=\"on\" actual=\"on\""
+    },
+    {
+      "id": "setting_extensions_autoCheckUpdates",
+      "pass": true,
+      "note": "expected=true actual=true"
+    },
+    {
+      "id": "setting_extensions_autoUpdate",
+      "pass": true,
+      "note": "expected=true actual=true"
+    },
+    {
+      "id": "setting_update_mode",
+      "pass": true,
+      "note": "expected=\"default\" actual=\"default\""
+    },
+    {
+      "id": "setting_extensions_ignoreRecommendations",
+      "pass": false,
+      "note": "expected=false actual=true"
+    },
+    {
+      "id": "required_recommendations_manifested",
+      "pass": true,
+      "note": "count=7"
+    },
+    {
+      "id": "code_cli_available",
+      "pass": true,
+      "note": "VS Code CLI not found; installation audit skipped (settings/recommendations still enforced)."
+    }
+  ],
+  "actions": [],
+  "policy_version": "1.0.0",
+  "metrics": {
+    "required_settings": 5,
+    "required_recommendations": 7,
+    "missing_recommendations_manifest": 0,
+    "missing_recommendations_installed": 0
+  },
+  "note": "Extension/tool posture drift detected. Run apply mode or manual correction."
+}

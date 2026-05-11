@@ -1,0 +1,172 @@
+{
+  "schema": "z-cmd-center-registry-v1",
+  "registry_name": "Z-CMD-CENTER Windows Command Center MiniBot",
+  "version": "1.0.0",
+  "mode": "read_only_command_center",
+  "phase": "Z_CMD_CENTER_1",
+  "authority": "AMK-Goku",
+  "description": "Read-only Windows command center guide. Knows project roots, available IDE commands, safe terminal rhythm. Helps AMK avoid wrong-root confusion. Generates safe recommendations without executing sacred actions.",
+  "supported_shells": [
+    "powershell",
+    "windows_terminal",
+    "cmd_reference_only"
+  ],
+  "known_roots": {
+    "main_hub": {
+      "path": "C:\\Cursor Projects Organiser\\Z_Sanctuary_Universe",
+      "purpose": "Primary project hub root",
+      "critical": true
+    },
+    "labs": {
+      "path": "C:\\Cursor Projects Organiser\\Z_Sanctuary_Universe\\ZSanctuary_Labs",
+      "purpose": "Labs and experimental workspace",
+      "critical": false
+    },
+    "cursor_archive": {
+      "path": "C:\\Users\\manoj\\.cursor\\projects",
+      "purpose": "Archive/cache path (NOT build root)",
+      "avoid": true
+    }
+  },
+  "ide_commands": {
+    "code": {
+      "tool": "VS Code",
+      "command": "code",
+      "purpose": "Open folder in VS Code",
+      "available": null
+    },
+    "cursor": {
+      "tool": "Cursor",
+      "command": "cursor",
+      "purpose": "Open folder in Cursor IDE",
+      "available": null
+    }
+  },
+  "safe_commands": [
+    {
+      "name": "IDE Path Check",
+      "command": "npm run z:pc:ide-path",
+      "purpose": "Verify IDE paths and configuration",
+      "safety": "safe"
+    },
+    {
+      "name": "SSWS Cockpit",
+      "command": "npm run z:ssws:cockpit",
+      "purpose": "Show Super Saiyan Workspace Cockpit status",
+      "safety": "safe"
+    },
+    {
+      "name": "IDE Fusion",
+      "command": "npm run z:ide:fusion",
+      "purpose": "Check IDE fusion operator rhythm",
+      "safety": "safe"
+    },
+    {
+      "name": "Markdown Verify",
+      "command": "npm run verify:md",
+      "purpose": "Verify all markdown documentation",
+      "safety": "safe"
+    },
+    {
+      "name": "Traffic Monitor",
+      "command": "npm run z:traffic",
+      "purpose": "Monitor traffic and operations",
+      "safety": "safe"
+    },
+    {
+      "name": "Car2 Status",
+      "command": "npm run z:car2",
+      "purpose": "Check Car2 status",
+      "safety": "safe"
+    },
+    {
+      "name": "Dashboard Registry Verify",
+      "command": "npm run dashboard:registry-verify",
+      "purpose": "Verify dashboard registry integrity",
+      "safety": "safe"
+    }
+  ],
+  "optional_full_rhythm": [
+    {
+      "name": "XBus Gate",
+      "command": "npm run z:xbus:gate",
+      "purpose": "Execution enforcement gate",
+      "requires_approval": true
+    },
+    {
+      "name": "Mod Distribution",
+      "command": "npm run z:mod:dist",
+      "purpose": "Module distribution",
+      "requires_approval": true
+    },
+    {
+      "name": "Numen Hub",
+      "command": "npm run z:numen:hub",
+      "purpose": "Numen hub activation",
+      "requires_approval": true
+    },
+    {
+      "name": "Security Triple Check",
+      "command": "npm run z:sec:triplecheck",
+      "purpose": "Security verification triple-check",
+      "requires_approval": true
+    }
+  ],
+  "future_declared_domains": {
+    "nas_synology": {
+      "purpose": "NAS storage and sync",
+      "status": "declared_future",
+      "action": "mount_when_approved"
+    },
+    "cloudflare": {
+      "purpose": "CDN and edge deployment",
+      "status": "declared_future",
+      "action": "deploy_when_approved"
+    },
+    "external_storage": {
+      "purpose": "External backup and archive",
+      "status": "declared_future",
+      "action": "connect_when_approved"
+    }
+  },
+  "forbidden_actions": [
+    "registry_edit",
+    "powershell_profile_write",
+    "software_install",
+    "nas_mount",
+    "cloudflare_deploy",
+    "secret_write",
+    "auto_launch",
+    "auto_merge",
+    "provider_call",
+    "billing_action",
+    "child_data_flow"
+  ],
+  "command_recommendations": {
+    "open_hub_vscode": {
+      "command": "code \"C:\\Cursor Projects Organiser\\Z_Sanctuary_Universe\"",
+      "description": "Open main hub in VS Code (normal mode)",
+      "note": "Use this for normal development"
+    },
+    "open_labs_vscode": {
+      "command": "code \"C:\\Cursor Projects Organiser\\Z_Sanctuary_Universe\\ZSanctuary_Labs\"",
+      "description": "Open Labs workspace in VS Code",
+      "note": "Use this for experimental work"
+    },
+    "open_labs_cursor": {
+      "command": "cursor \"C:\\Cursor Projects Organiser\\Z_Sanctuary_Universe\\ZSanctuary_Labs\"",
+      "description": "Open Labs workspace in Cursor IDE",
+      "note": "Use Cursor for advanced AI features"
+    }
+  },
+  "locked_laws": [
+    "Command center ≠ command authority.",
+    "MiniBot guide ≠ autonomous operator.",
+    "Windows Terminal layout ≠ deployment.",
+    "PowerShell shortcut ≠ permission.",
+    "NAS declared ≠ mounted.",
+    "Cloudflare declared ≠ deployed.",
+    "GREEN ≠ deploy.",
+    "AMK-Goku owns sacred moves."
+  ]
+}

@@ -1,0 +1,245 @@
+{
+  "generated_at": "2026-05-02T18:16:34.229Z",
+  "status": "hold",
+  "checks": {
+    "critical_24h_total": 8,
+    "critical_24h_stale": 2,
+    "weekly_stale_count": 20
+  },
+  "critical_24h": [
+    {
+      "file": "z_hygiene_status.json",
+      "modified_at": "2026-04-26T01:56:10.040Z",
+      "age_hours": 160.34,
+      "age_ms": 577224189.4267578,
+      "stale": true,
+      "missing": false,
+      "severity": "critical"
+    },
+    {
+      "file": "z_autorun_audit.json",
+      "modified_at": "2026-05-02T18:16:33.941Z",
+      "age_hours": 0,
+      "age_ms": 288.050048828125,
+      "stale": false,
+      "missing": false,
+      "severity": "ok"
+    },
+    {
+      "file": "z_pending_audit.json",
+      "modified_at": "2026-05-02T18:16:34.018Z",
+      "age_hours": 0,
+      "age_ms": 211.74609375,
+      "stale": false,
+      "missing": false,
+      "severity": "ok"
+    },
+    {
+      "file": "z_ssws_daily_report.json",
+      "modified_at": "2026-05-02T18:16:34.182Z",
+      "age_hours": 0,
+      "age_ms": 47.745849609375,
+      "stale": false,
+      "missing": false,
+      "severity": "ok"
+    },
+    {
+      "file": "z_ai_status.json",
+      "modified_at": "2026-05-02T18:16:33.887Z",
+      "age_hours": 0,
+      "age_ms": 343.148193359375,
+      "stale": false,
+      "missing": false,
+      "severity": "ok"
+    },
+    {
+      "file": "zuno_system_state_report.json",
+      "modified_at": "2026-05-02T18:16:34.095Z",
+      "age_hours": 0,
+      "age_ms": 135.0830078125,
+      "stale": false,
+      "missing": false,
+      "severity": "ok"
+    },
+    {
+      "file": "z_data_leak_audit.json",
+      "modified_at": "2026-05-01T17:24:18.635Z",
+      "age_hours": 24.87,
+      "age_ms": 89535595.65112305,
+      "stale": true,
+      "missing": false,
+      "severity": "critical"
+    },
+    {
+      "file": "z_extension_guard.json",
+      "modified_at": "2026-05-02T18:16:33.182Z",
+      "age_hours": 0,
+      "age_ms": 1048.542236328125,
+      "stale": false,
+      "missing": false,
+      "severity": "ok"
+    }
+  ],
+  "weekly_stale": [
+    {
+      "file": "z_procurement_status.json",
+      "modified_at": "2026-02-11T21:36:28.855Z",
+      "age_hours": 1916.67,
+      "age_ms": 6900005387.877686,
+      "stale": true,
+      "severity": "warn"
+    },
+    {
+      "file": "z_final_status.json",
+      "modified_at": "2026-02-13T18:30:02.133Z",
+      "age_hours": 1871.78,
+      "age_ms": 6738392103.057861,
+      "stale": true,
+      "severity": "warn"
+    },
+    {
+      "file": "z_legal_readiness_delta.json",
+      "modified_at": "2026-02-14T18:35:28.878Z",
+      "age_hours": 1847.68,
+      "age_ms": 6651665361.571289,
+      "stale": true,
+      "severity": "warn"
+    },
+    {
+      "file": "z_lab_promote.json",
+      "modified_at": "2026-02-18T16:59:21.824Z",
+      "age_hours": 1753.29,
+      "age_ms": 6311832415.513916,
+      "stale": true,
+      "severity": "warn"
+    },
+    {
+      "file": "z_workspace_promotion_gate.json",
+      "modified_at": "2026-02-18T18:22:06.957Z",
+      "age_hours": 1751.91,
+      "age_ms": 6306867289.484375,
+      "stale": true,
+      "severity": "warn"
+    },
+    {
+      "file": "z_start_4_windows_and_maintain.json",
+      "modified_at": "2026-02-20T01:49:06.711Z",
+      "age_hours": 1720.46,
+      "age_ms": 6193647534.320068,
+      "stale": true,
+      "severity": "warn"
+    },
+    {
+      "file": "z_anydevices_approval_queue.json",
+      "modified_at": "2026-03-05T01:03:10.792Z",
+      "age_hours": 1409.22,
+      "age_ms": 5073203440.456299,
+      "stale": true,
+      "severity": "warn"
+    },
+    {
+      "file": "z_folder_manager_retention_state.json",
+      "modified_at": "2026-03-05T01:03:10.850Z",
+      "age_hours": 1409.22,
+      "age_ms": 5073203386.093018,
+      "stale": true,
+      "severity": "warn"
+    },
+    {
+      "file": "z_folder_manager_retention.json",
+      "modified_at": "2026-03-05T01:03:10.853Z",
+      "age_hours": 1409.22,
+      "age_ms": 5073203383.789307,
+      "stale": true,
+      "severity": "warn"
+    },
+    {
+      "file": "z_html_security_audit.json",
+      "modified_at": "2026-03-05T01:03:10.877Z",
+      "age_hours": 1409.22,
+      "age_ms": 5073203360.348389,
+      "stale": true,
+      "severity": "warn"
+    },
+    {
+      "file": "z_octave_readiness.json",
+      "modified_at": "2026-03-05T01:03:10.944Z",
+      "age_hours": 1409.22,
+      "age_ms": 5073203296.177002,
+      "stale": true,
+      "severity": "warn"
+    },
+    {
+      "file": "z_procurement_daily_report.json",
+      "modified_at": "2026-03-05T01:03:10.977Z",
+      "age_hours": 1409.22,
+      "age_ms": 5073203265.0271,
+      "stale": true,
+      "severity": "warn"
+    },
+    {
+      "file": "z_research_intake.json",
+      "modified_at": "2026-03-05T01:03:11.011Z",
+      "age_hours": 1409.22,
+      "age_ms": 5073203232.757568,
+      "stale": true,
+      "severity": "warn"
+    },
+    {
+      "file": "z_runtime_lane_dispatch.json",
+      "modified_at": "2026-03-05T01:03:11.017Z",
+      "age_hours": 1409.22,
+      "age_ms": 5073203226.576904,
+      "stale": true,
+      "severity": "warn"
+    },
+    {
+      "file": "z_zuno_executive_delta_report.json",
+      "modified_at": "2026-03-05T01:03:11.140Z",
+      "age_hours": 1409.22,
+      "age_ms": 5073203106.504395,
+      "stale": true,
+      "severity": "warn"
+    },
+    {
+      "file": "z_protection_audit.json",
+      "modified_at": "2026-03-16T15:49:06.936Z",
+      "age_hours": 1130.46,
+      "age_ms": 4069647306.453369,
+      "stale": true,
+      "severity": "warn"
+    },
+    {
+      "file": "z_security_attack_sim.json",
+      "modified_at": "2026-03-16T15:49:07.356Z",
+      "age_hours": 1130.46,
+      "age_ms": 4069646888.536377,
+      "stale": true,
+      "severity": "warn"
+    },
+    {
+      "file": "z_priority_audit.json",
+      "modified_at": "2026-03-18T19:34:51.741Z",
+      "age_hours": 1078.7,
+      "age_ms": 3883302501.293701,
+      "stale": true,
+      "severity": "warn"
+    },
+    {
+      "file": "z_incident_triage_state.json",
+      "modified_at": "2026-03-18T19:37:45.012Z",
+      "age_hours": 1078.65,
+      "age_ms": 3883129226.2109375,
+      "stale": true,
+      "severity": "warn"
+    },
+    {
+      "file": "z_proof_mesh_card.json",
+      "modified_at": "2026-03-18T19:38:28.247Z",
+      "age_hours": 1078.63,
+      "age_ms": 3883085995.2907715,
+      "stale": true,
+      "severity": "warn"
+    }
+  ]
+}

@@ -1,0 +1,44 @@
+{
+  "generated_at": "2026-04-27T20:03:26.492Z",
+  "schema_version": 1,
+  "governance_note": "Experience memory is observational — does not trigger actions, override ACI, or change governance.",
+  "learning_log": "data/logs/z_ai_learning_log.jsonl",
+  "event_count": 3,
+  "confidence": "low",
+  "patterns_detected": 1,
+  "patterns": [
+    {
+      "pattern": "unknown_context",
+      "pattern_label": "unknown context",
+      "occurrences": 3,
+      "avg_coherence": null,
+      "common_outcome": "unknown"
+    }
+  ],
+  "cycles_detected": 0,
+  "cycles": [],
+  "strategies": [
+    {
+      "strategy": "unknown",
+      "times_used": 3,
+      "success_rate": 0,
+      "avg_impact": 0
+    }
+  ],
+  "insights": [
+    "Most common pre-action context: \"unknown context\" (3x; avg coherence n/a; typical outcome: unknown).",
+    "Strategy \"unknown\" used 3x with 0% success (avg impact 0)."
+  ],
+  "current_context": {
+    "coherence_score": 53,
+    "coherence_status": "misaligned",
+    "signal_health": "low",
+    "adaptive_risk": "high",
+    "adaptive_top_action": "Append real creator + business lines to task JSONL logs (features, fixes, decisions) then re-run full scan."
+  },
+  "sources": {
+    "system_coherence": "data/reports/z_system_coherence.json",
+    "signal_health": "data/reports/z_ai_signal_health.json",
+    "adaptive_coherence": "data/reports/z_adaptive_coherence.json"
+  }
+}

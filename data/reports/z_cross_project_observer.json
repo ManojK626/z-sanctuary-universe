@@ -1,0 +1,211 @@
+{
+  "generated_at": "2026-05-02T18:16:34.300Z",
+  "status": "green",
+  "policy_probe_mode": "read_only",
+  "pc_root": "C:\\Cursor Projects Organiser",
+  "hub": "ZSanctuary_Universe",
+  "summary": {
+    "total": 15,
+    "bad": 0,
+    "warn": 0,
+    "ok": 12
+  },
+  "projects": [
+    {
+      "id": "zsanctuary-universe",
+      "name": "ZSanctuary_Universe",
+      "role": "hub",
+      "ssws": true,
+      "ssws_shadow": false,
+      "formula_aware": true,
+      "absPath": "C:\\Cursor Projects Organiser\\ZSanctuary_Universe",
+      "ok": true,
+      "issues": [],
+      "severity": "ok"
+    },
+    {
+      "id": "amk-goku-dashboards-2",
+      "name": "Amk-Goku Dashboards 2",
+      "role": "external",
+      "ssws": false,
+      "ssws_shadow": false,
+      "formula_aware": true,
+      "absPath": "C:\\Cursor Projects Organiser\\amk-goku-dashboards-2",
+      "ok": false,
+      "issues": [
+        {
+          "code": "missing",
+          "severity": "bad",
+          "detail": "folder not found"
+        }
+      ]
+    },
+    {
+      "id": "amk-goku-vaults",
+      "name": "Amk-Goku Vaults",
+      "role": "member",
+      "ssws": false,
+      "ssws_shadow": false,
+      "formula_aware": true,
+      "absPath": "C:\\Cursor Projects Organiser\\Amk-Goku Vaults",
+      "ok": true,
+      "issues": [],
+      "severity": "ok"
+    },
+    {
+      "id": "at-princess-blackie-copilot",
+      "name": "AT Princess & Blackie Copilot",
+      "role": "member",
+      "ssws": false,
+      "ssws_shadow": false,
+      "formula_aware": true,
+      "absPath": "C:\\Cursor Projects Organiser\\AT Princess&Blackie Copilot",
+      "ok": true,
+      "issues": [],
+      "severity": "ok"
+    },
+    {
+      "id": "at-princess-blackie-copitol",
+      "name": "AT Princess & Blackie Copilot",
+      "role": "member",
+      "ssws": false,
+      "ssws_shadow": false,
+      "formula_aware": true,
+      "absPath": "C:\\Cursor Projects Organiser\\AT Princess&Blackie Copilot",
+      "ok": true,
+      "issues": [],
+      "severity": "ok"
+    },
+    {
+      "id": "pc-root-extras-and-tools",
+      "name": "Extras & Tools",
+      "role": "member",
+      "ssws": false,
+      "ssws_shadow": false,
+      "formula_aware": false,
+      "absPath": "C:\\Cursor Projects Organiser\\Extras & Tools",
+      "ok": true,
+      "issues": [],
+      "severity": "ok"
+    },
+    {
+      "id": "replit-roulette-z-amk-goku-mdcp",
+      "name": "Roulette Data Analyzer · Z-Amk-Goku MD/CP (Replit)",
+      "role": "external",
+      "ssws": false,
+      "ssws_shadow": false,
+      "formula_aware": true,
+      "absPath": "C:\\Cursor Projects Organiser\\replit-roulette-z-amk-goku-mdcp",
+      "ok": false,
+      "issues": [
+        {
+          "code": "missing",
+          "severity": "bad",
+          "detail": "folder not found"
+        }
+      ]
+    },
+    {
+      "id": "sister-aisling-sol",
+      "name": "Sister Aisling Sol",
+      "role": "member",
+      "ssws": false,
+      "ssws_shadow": false,
+      "formula_aware": true,
+      "absPath": "C:\\Cursor Projects Organiser\\Z-Sister Aisling Sol",
+      "ok": true,
+      "issues": [],
+      "severity": "ok"
+    },
+    {
+      "id": "z-sanctuary-universe-2-continuation",
+      "name": "Z_Sanctuary_Universe 2",
+      "role": "member",
+      "ssws": false,
+      "ssws_shadow": false,
+      "formula_aware": true,
+      "absPath": "C:\\Cursor Projects Organiser\\ZSanctuary_Universe\\Z_Sanctuary_Universe 2",
+      "ok": true,
+      "issues": [],
+      "severity": "ok"
+    },
+    {
+      "id": "z-omni-sanctuary",
+      "name": "Z-OMNI-Sanctuary",
+      "role": "member",
+      "ssws": false,
+      "ssws_shadow": false,
+      "formula_aware": true,
+      "absPath": "C:\\Cursor Projects Organiser\\Z-OMNI-Sanctuary",
+      "ok": true,
+      "issues": [],
+      "severity": "ok"
+    },
+    {
+      "id": "z-sanctuary-ai-skyscraper",
+      "name": "Z-SANCTUARY AI SKYSCRAPER",
+      "role": "member",
+      "ssws": false,
+      "ssws_shadow": false,
+      "formula_aware": true,
+      "absPath": "C:\\Cursor Projects Organiser\\Z-SANCTUARY AI SKYSCRAPER",
+      "ok": true,
+      "issues": [],
+      "severity": "ok"
+    },
+    {
+      "id": "z-sanctuary-browser-z-saiyan-lumina",
+      "name": "Z-Sanctuary Browser (Z-Saiyan Lumina)",
+      "role": "member",
+      "ssws": false,
+      "ssws_shadow": false,
+      "formula_aware": true,
+      "absPath": "C:\\Cursor Projects Organiser\\Z-Sanctuary Browser",
+      "ok": false,
+      "issues": [
+        {
+          "code": "missing",
+          "severity": "bad",
+          "detail": "folder not found"
+        }
+      ]
+    },
+    {
+      "id": "z-sanctuary-claude-core",
+      "name": "Z-Sanctuary Claude (Core)",
+      "role": "member",
+      "ssws": false,
+      "ssws_shadow": false,
+      "formula_aware": true,
+      "absPath": "C:\\Cursor Projects Organiser\\Z-Sanctuary Claude",
+      "ok": true,
+      "issues": [],
+      "severity": "ok"
+    },
+    {
+      "id": "z-sanctuary-replit",
+      "name": "Z-Sanctuary Replit",
+      "role": "member",
+      "ssws": false,
+      "ssws_shadow": false,
+      "formula_aware": true,
+      "absPath": "C:\\Cursor Projects Organiser\\Z-Sanctuary_Replit",
+      "ok": true,
+      "issues": [],
+      "severity": "ok"
+    },
+    {
+      "id": "z-sanctuary-aimanity",
+      "name": "z-sanctuary-aimanity",
+      "role": "member",
+      "ssws": false,
+      "ssws_shadow": false,
+      "formula_aware": true,
+      "absPath": "C:\\Cursor Projects Organiser\\z-sanctuary-aimanity",
+      "ok": true,
+      "issues": [],
+      "severity": "ok"
+    }
+  ],
+  "autonomy_note": "This probe never writes outside ZSanctuary_Universe/data/reports. Hub autonomous repair stays in hub; member fixes require human or EAII-approved flows."
+}

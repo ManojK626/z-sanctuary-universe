@@ -1,0 +1,181 @@
+{
+  "generated_at": "2026-05-03T14:38:58.320Z",
+  "schema_version": "1.0",
+  "purpose": "Unified communications-flow verifier with leaf feedback for AI ecosystem handoff",
+  "overall_status": "amber",
+  "summary": {
+    "total_systems": 13,
+    "colors": {
+      "green": 9,
+      "amber": 4,
+      "red": 0,
+      "unknown": 0
+    }
+  },
+  "gates_snapshot": {
+    "readiness": "4/4",
+    "p1_open": 0,
+    "trust_score": 90,
+    "go_no_go": "GO",
+    "enforcer_action": "ALLOW_PROGRESS",
+    "qosmei": "100 (clear)"
+  },
+  "nodes": [
+    {
+      "system_id": "z_execution_enforcer",
+      "system_name": "Z-Execution Enforcer",
+      "status_color": "green",
+      "stage": "complete",
+      "last_updated_at": "2026-04-26T02:12:34.811Z",
+      "evidence_ref": "data/reports/z_execution_enforcer.json",
+      "next_required_action": "Keep enforcer checks current",
+      "followup_owner": "Z-Super Overseer",
+      "handoff_ready": true,
+      "details": "No blocking signals detected."
+    },
+    {
+      "system_id": "release_gate",
+      "system_name": "Release Gate",
+      "status_color": "green",
+      "stage": "complete",
+      "last_updated_at": "2026-04-26T02:12:35.239Z",
+      "evidence_ref": "data/reports/z_release_gate_summary.json",
+      "next_required_action": "Remediate freshness and trust blockers, then rerun release gate",
+      "followup_owner": "Z-EAII",
+      "handoff_ready": true,
+      "details": ""
+    },
+    {
+      "system_id": "go_no_go",
+      "system_name": "GO/NO-GO Checklist",
+      "status_color": "green",
+      "stage": "complete",
+      "last_updated_at": "2026-04-26T02:12:35.252Z",
+      "evidence_ref": "data/reports/z_go_no_go_release_checklist.json",
+      "next_required_action": "Resolve failed gates until verdict is GO",
+      "followup_owner": "Z-Hierarchy Chief",
+      "handoff_ready": true,
+      "details": ""
+    },
+    {
+      "system_id": "cross_project_observer",
+      "system_name": "Cross-Project Observer",
+      "status_color": "green",
+      "stage": "complete",
+      "last_updated_at": "2026-05-02T18:16:34.300Z",
+      "evidence_ref": "data/reports/z_cross_project_observer.json",
+      "next_required_action": "Fix bad/warn entries or document accepted exceptions",
+      "followup_owner": "Z-EAII",
+      "handoff_ready": true,
+      "details": "total=15, bad=0, warn=0"
+    },
+    {
+      "system_id": "zuno_core_state",
+      "system_name": "Zuno Core State",
+      "status_color": "amber",
+      "stage": "verify",
+      "last_updated_at": "2026-05-02T18:16:37.923Z",
+      "evidence_ref": "data/reports/zuno_system_state_report.json",
+      "next_required_action": "Advisory-soft hold: keep hygiene remediations active until internal_operations becomes stable-green",
+      "followup_owner": "Zuno Observer",
+      "handoff_ready": false,
+      "details": "readiness=4/4; p1_open=0; advisory-softened-by=qosmei_clear"
+    },
+    {
+      "system_id": "disturbance_watch",
+      "system_name": "Disturbance Watch",
+      "status_color": "green",
+      "stage": "complete",
+      "last_updated_at": "2026-05-02T18:16:33.885Z",
+      "evidence_ref": "data/reports/z_ai_status.json",
+      "next_required_action": "Run diagnostics and clear failed checks",
+      "followup_owner": "Z-Super Auto-Codex",
+      "handoff_ready": true,
+      "details": "risk=low; failed=0"
+    },
+    {
+      "system_id": "ai_tower",
+      "system_name": "AI Tower",
+      "status_color": "green",
+      "stage": "complete",
+      "last_updated_at": "2026-05-02T18:16:33.885Z",
+      "evidence_ref": "data/reports/z_ai_status.json",
+      "next_required_action": "Blueprint lane: manifest agents remain planned-only until promotion gates pass",
+      "followup_owner": "AI Tower Coordinator",
+      "handoff_ready": true,
+      "details": "agent_count=4; manifest=planned-rollout-only; phase=blueprint; intent=planned_agents_manifest_only; observer_snapshot_only"
+    },
+    {
+      "system_id": "mini_bots",
+      "system_name": "Mini Bots",
+      "status_color": "amber",
+      "stage": "verify",
+      "last_updated_at": "2026-05-02T18:16:33.885Z",
+      "evidence_ref": "data/reports/z_ai_status.json",
+      "next_required_action": "Keep observer heartbeat active and attach stage logs",
+      "followup_owner": "Mini-Bot Observer",
+      "handoff_ready": false,
+      "details": "online=0/4"
+    },
+    {
+      "system_id": "trust_scorecard",
+      "system_name": "Trust Scorecard",
+      "status_color": "green",
+      "stage": "complete",
+      "last_updated_at": "2026-04-26T02:12:35.126Z",
+      "evidence_ref": "data/reports/z_trust_scorecard.json",
+      "next_required_action": "Raise trust score to >=85 for release readiness",
+      "followup_owner": "Trust Lane",
+      "handoff_ready": true,
+      "details": "trust_score=90"
+    },
+    {
+      "system_id": "bridge_intelligence",
+      "system_name": "Bridge Intelligence",
+      "status_color": "amber",
+      "stage": "verify",
+      "last_updated_at": "2026-04-29T14:49:00.823Z",
+      "evidence_ref": "data/reports/z_bridge_intelligence_summary.json",
+      "next_required_action": "Lower blocked allocation trend (blocked_fairness events) and rerun bridge intelligence summary",
+      "followup_owner": "Bridge IQ Lane",
+      "handoff_ready": false,
+      "details": "blocked_allocations=4; allocation_success=13; fairness_signals=log_blocked_fairness_vs_success"
+    },
+    {
+      "system_id": "qosmei_core_signal",
+      "system_name": "Z-QOSMEI Core Signal",
+      "status_color": "green",
+      "stage": "complete",
+      "last_updated_at": "2026-04-26T17:30:36.293Z",
+      "evidence_ref": "data/reports/z_qosmei_core_signal.json",
+      "next_required_action": "Keep QOSMEI fusion cadence aligned with whale-bus runs",
+      "followup_owner": "QOSMEI Lane",
+      "handoff_ready": true,
+      "details": "posture=clear; composite=100; lane=optimize"
+    },
+    {
+      "system_id": "ide_commflow_guard",
+      "system_name": "IDE Comm-Flow Guard",
+      "status_color": "amber",
+      "stage": "verify",
+      "last_updated_at": "2026-05-01T10:22:54.978Z",
+      "evidence_ref": "data/reports/z_ide_commflow_guard.json",
+      "next_required_action": "Fix route mismatches and ensure VS Code settings checks pass",
+      "followup_owner": "Operator IDE Lane",
+      "handoff_ready": false,
+      "details": "mismatches=1387"
+    },
+    {
+      "system_id": "lab_folder_boost",
+      "system_name": "Lab + Folder Manager Boost",
+      "status_color": "green",
+      "stage": "complete",
+      "last_updated_at": "2026-05-01T10:22:58.062Z",
+      "evidence_ref": "data/reports/z_lab_folder_manager_boost.json",
+      "next_required_action": "Resolve dormant signals and keep lab/folder heartbeat active",
+      "followup_owner": "Z-Labs / Folder Manager",
+      "handoff_ready": true,
+      "details": "dormant=0"
+    }
+  ]
+}

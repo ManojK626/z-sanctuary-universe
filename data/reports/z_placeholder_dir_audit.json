@@ -1,0 +1,35 @@
+{
+  "generated_at": "2026-05-01T17:24:17.437Z",
+  "status": "green",
+  "total": 3,
+  "pass": 3,
+  "checks": [
+    {
+      "path": "products/Z-OCTAVE/hardware/shell-geometry",
+      "intent": "placeholder",
+      "note": "Reserved for future CAD/silhouette assets",
+      "exists": true,
+      "is_dir": true,
+      "item_count": 0,
+      "pass": true
+    },
+    {
+      "path": "products/Z-OCTAVE/hardware/textile-layers",
+      "intent": "placeholder",
+      "note": "Reserved for layer stack references",
+      "exists": true,
+      "is_dir": true,
+      "item_count": 0,
+      "pass": true
+    },
+    {
+      "path": "products/Z-OCTAVE/hardware/variants",
+      "intent": "placeholder",
+      "note": "Reserved for variant-specific physical specs",
+      "exists": true,
+      "is_dir": true,
+      "item_count": 0,
+      "pass": true
+    }
+  ]
+}

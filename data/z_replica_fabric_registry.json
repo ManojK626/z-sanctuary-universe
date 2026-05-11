@@ -1,0 +1,106 @@
+{
+  "schema": "z_replica_fabric_registry_v1",
+  "registry_name": "Z-Replica Fabric",
+  "phase": "Z-REPLICA-FABRIC-1",
+  "mode": "governed_replication_doctrine_only",
+  "runtime_self_replication_enabled": false,
+  "source_blueprint": {
+    "primary_file": "Super Saiyans Omega Omni Ai/Super Saiyans Omega Omni Ai.html",
+    "note": "Concept blueprint only; this registry does not execute or parse that file at runtime."
+  },
+  "core_model": {
+    "monocore_identity": true,
+    "shadow_replicas": true,
+    "ghost_workers": true,
+    "assistant_interfaces": true,
+    "minibots": true,
+    "octo_ant_overseers": true,
+    "self_tools_factory": true,
+    "doctrine_translation": "OMNAI Monocore and factory language are reused as bounded planning and governance metadata only unless AMK charters live capability."
+  },
+  "allowed_replica_outputs": [
+    "reports",
+    "recommendations",
+    "docs",
+    "schemas",
+    "mock_plans",
+    "route_suggestions",
+    "risk_classifications"
+  ],
+  "forbidden_replica_actions": [
+    "runtime_self_replication",
+    "autonomous_deploy",
+    "provider_call",
+    "payment_activation",
+    "secret_write",
+    "external_webhook",
+    "child_data_flow",
+    "auto_merge",
+    "production_connector",
+    "file_system_sprawl",
+    "unbounded_loop"
+  ],
+  "capabilities_enabled_override": [],
+  "replica_classes": [
+    "project_reviewer",
+    "docs_checker",
+    "module_router",
+    "connector_classifier",
+    "creative_planner",
+    "security_drift_watcher",
+    "ide_handoff_observer",
+    "command_center_guide"
+  ],
+  "project_mappings": [
+    { "project_id": "main_hub", "notes": "ZSanctuary_Universe operational roof and validators." },
+    { "project_id": "ZSanctuary_Labs", "notes": "Labs capsule hub reference posture." },
+    { "project_id": "Z-NUMEN", "notes": "Pattern literacy capsule; doctrine replicas only unless chartered." },
+    { "project_id": "Z-Logical_Brains", "notes": "Learning pathway capsule; replicas produce plans and reports." },
+    { "project_id": "Z-MOD-DIST", "notes": "Module routing doctrine; aligns with distributor advisor." },
+    { "project_id": "Z-XBUS", "notes": "External connector gate; replicas classify, never open live buses." },
+    { "project_id": "Z-OMNAI", "notes": "Creative media pipeline planning; no provider execution from fabric alone." },
+    { "project_id": "Z-SUSBV", "notes": "Commercial readiness signals; sacred moves stay AMK-gated." },
+    { "project_id": "Franed_AT_Princess_Blackie", "notes": "Family-safe creativity lane; child-data flows forbidden without charter." },
+    { "project_id": "Z-Saiyan_Lumina", "notes": "Symbolic and narrative fabric; report-only default." },
+    { "project_id": "z-questra", "notes": "Product lane; persistent replicas require AMK decision." },
+    { "project_id": "XL2_reference_only", "notes": "Reference-only unless an approved cross-repo charter exists." }
+  ],
+  "signal_rules": {
+    "GREEN": "All replicas are doctrine, reference, mock, or report only; registry mode is governed; no forbidden capability is enabled.",
+    "YELLOW": "Optional mapping or sample metadata incomplete; tighten mission notes before widening scope.",
+    "BLUE": "AMK decision needed for persistent replica stance or external connector lane proposal.",
+    "RED": "Any live self-replication, deploy, provider, secret, payment, webhook, child-data flow, auto-merge, or other forbidden posture is asserted enabled."
+  },
+  "rollback_rules": [
+    "Remove or disable mission rows that widen scope beyond reports and mocks.",
+    "Revert registry JSON to last known GREEN receipt commit.",
+    "Re-run npm run z:replica:fabric and attach reports to Overseer notes.",
+    "Do not merge fabric changes that introduce runtime agents without charter and receipts."
+  ],
+  "locked_law": [
+    "Self-replication is not uncontrolled autonomy.",
+    "Replica is not authority.",
+    "Clone is not permission.",
+    "Factory is not deployment.",
+    "Self-tools are not self-publishing.",
+    "Merge-back requires evidence and AMK approval.",
+    "No replica opens external connector lanes; Z-XBUS governs outbound posture.",
+    "GREEN is never deploy.",
+    "AMK-Goku owns sacred moves."
+  ],
+  "related_docs": [
+    "docs/Z_REPLICA_FABRIC_GOVERNED_SELF_REPLICATION.md",
+    "docs/PHASE_Z_REPLICA_FABRIC_1_GREEN_RECEIPT.md",
+    "docs/Z_MOD_DIST_MODULE_DISTRIBUTOR.md",
+    "docs/Z_XBUS_EXTERNAL_CONNECTOR_GATE.md",
+    "docs/Z_SSWS_SUPER_SAIYAN_WORKSPACE_COCKPIT.md",
+    "docs/Z_IDE_FUSION_WORKFLOW_CONTROL.md",
+    "docs/Z_SEC_TRIPLECHECK_COMMUNICATION_FLOW_AUDIT.md",
+    "docs/Z_SWARM_14DRP_UNIVERSAL_AGENT_LAW.md",
+    "docs/AI_BUILDER_CONTEXT.md"
+  ],
+  "related_reports": [
+    "data/reports/z_replica_fabric_report.json",
+    "data/reports/z_replica_fabric_report.md"
+  ]
+}

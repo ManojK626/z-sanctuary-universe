@@ -1,0 +1,7 @@
+{
+  "schema_version": 1,
+  "generated_at": "2026-05-03T14:39:01.970Z",
+  "advisory_only": true,
+  "drp_note": "SPI rename-risk hints for Guardian merge. Confirm on disk; no auto-fix.",
+  "pre_warnings": []
+}

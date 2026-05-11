@@ -1,0 +1,25 @@
+{
+  "generated_at": "2026-05-02T18:16:33.938Z",
+  "status": "green",
+  "auto_tasks_setting": "on",
+  "auto_tasks": [
+    "Z: SSWS Auto Boot"
+  ],
+  "checks": [
+    {
+      "id": "auto_tasks_setting",
+      "pass": true,
+      "note": "task.allowAutomaticTasks=on"
+    },
+    {
+      "id": "auto_tasks_present",
+      "pass": true,
+      "note": "auto tasks: Z: SSWS Auto Boot"
+    },
+    {
+      "id": "background_run_covered",
+      "pass": true,
+      "note": "background run is either auto task or chained by SSWS auto boot"
+    }
+  ]
+}

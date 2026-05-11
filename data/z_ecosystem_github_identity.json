@@ -1,0 +1,45 @@
+{
+  "ZFormat": "v1",
+  "ZUpdatedAt": "2026-04-17T00:00:00.000Z",
+  "description": "Canonical GitHub identity for Z-Sanctuary ecosystem tooling, Cursor, and Folder Manager alignment. If this repository is ever public, treat primary_email as sensitive—prefer a private mirror or strip email and keep it only in local git config.",
+  "github": {
+    "login": "ManojK626",
+    "profile_url": "https://github.com/ManojK626",
+    "primary_email": "manojkeerpal@gmail.com",
+    "operator_notes": "GitHub Settings → Emails: keep this address verified and (if desired) primary for commit attribution and notifications."
+  },
+  "ecosystem_repos": [
+    {
+      "full_name": "ManojK626/zuno-outreach",
+      "html_url": "https://github.com/ManojK626/zuno-outreach",
+      "role": "zuno_outreach",
+      "notes": "Side ecosystem; link clones under pc_root or sibling folders per Z-EAII layout."
+    },
+    {
+      "full_name": "ManojK626/Super-Saiyan-Roulette-Pro-App",
+      "html_url": "https://github.com/ManojK626/Super-Saiyan-Roulette-Pro-App",
+      "role": "roulette_pro_app",
+      "notes": "Aligns with roulette / Replit analyzer tracks; register in z_pc_root_projects when a local path exists."
+    }
+  ],
+  "local_git": {
+    "recommended_user_email": "manojkeerpal@gmail.com",
+    "verify_commands": [
+      "git config --global user.email",
+      "git config --global user.name"
+    ]
+  },
+  "integrations": {
+    "cursor": "Clone/push using the same GitHub account; SSH URL or HTTPS + credential manager. PATs never committed—use OS secret store.",
+    "github_copilot_and_spark": "Use GitHub signed-in session (Edge) for Copilot / Spark features; same login as ManojK626 keeps context consistent with local remotes.",
+    "ci_actions": "Repository secrets (PAT, deploy keys) live only in GitHub repo Settings → Secrets, not in ZSanctuary_Universe files."
+  },
+  "instructional_refs": [
+    "docs/Z-GITHUB-AI-COMMS-PRECAUTIONS.md",
+    "data/z_github_ai_comms_requirements.json",
+    "data/reports/z_github_ai_comms_manifest.json",
+    "docs/Z-CLOUDFLARE-AI-COMMS-PRECAUTIONS.md",
+    "data/z_cloudflare_ai_comms_requirements.json",
+    "data/reports/z_cloudflare_ai_comms_manifest.json"
+  ]
+}

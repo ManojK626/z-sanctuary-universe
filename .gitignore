@@ -1,0 +1,64 @@
+node_modules/
+.DS_Store
+*.log
+dist/
+build/
+.env
+archive/*.mp4
+archive/*.zcrystal
+vault/personal/z_request_access_private.pem
+
+# Pytest (repo-local basetemp and cache; see pytest.ini)
+.pytest_basetemp_root/
+data/.pytest_cache/
+
+# Super Chat local memory (created on first use; do not commit conversations)
+data/ai-memory.json
+
+# Z-Autonomous AI local approval token (optional; one line)
+data/local/z_autonomous_approval_token
+
+# Z-PAM Lite (user-owned local memory; do not commit)
+.zpam/
+
+# Generated transparency deck/PDF (regenerate: npm run report:ecosphere:pptx; keep exports/ as receipts locally)
+data/reports/exports/*.pptx
+data/reports/exports/*.pdf
+
+# Mini sync bot — timestamped registry copies (re-run bot:sync to regenerate; optional local only)
+data/reports/bot_sync_snapshots/
+
+# MirrorSoul Slice 1 — user journal files (regenerate with local use only)
+data/mirrorsoul/entries/
+data/mirrorsoul/zes_state.json
+data/mirrorSoul/entries.jsonl
+data/mirrorSoul/reflections.jsonl
+data/mirrorSoul/emotional_patterns.json
+data/mirrorSoul/adaptive_fuel.jsonl
+data/logs/z_prediction_validation.jsonl
+
+# Zuno transformation flow — per-session JSON (local runs)
+data/zunoFlow/sessions/
+
+# AMK local safety ignores
+node_modules/
+.env
+*.exe
+*.zip
+*.odt
+*.pdf
+uploads/
+Z_Sanctuary_Universe 2/
+$file
+safe_pack/
+vault/personal/
+**/snapshots/
+**/quarantine/
+**/desktop.ini
+lab-outputs/
+vault/personal/
+**/snapshots/
+**/quarantine/
+**/desktop.ini
+lab-outputs/
+data/reports/*.json

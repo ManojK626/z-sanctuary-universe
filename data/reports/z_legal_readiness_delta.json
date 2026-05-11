@@ -1,0 +1,87 @@
+{
+  "generated_at": "2026-02-14T18:35:28.875Z",
+  "disclaimer": "Operational compliance snapshot only; not legal advice.",
+  "verdict": {
+    "operational_lawful_safety": "strong",
+    "legal_certification_readiness": "pending_jurisdictional_counsel"
+  },
+  "local_controls": {
+    "pass": 6,
+    "total": 6,
+    "completion_pct": 100,
+    "controls": [
+      {
+        "id": "privacy_gate",
+        "status": "pass",
+        "evidence": "data/reports/privacy/z_privacy_report.json"
+      },
+      {
+        "id": "protection_audit",
+        "status": "pass",
+        "evidence": "data/reports/z_protection_audit.json"
+      },
+      {
+        "id": "formula_registry_internal_only",
+        "status": "pass",
+        "evidence": "rules/Z_FORMULA_REGISTRY.json"
+      },
+      {
+        "id": "policy_shadow_gate",
+        "status": "pass",
+        "evidence": "data/reports/z_policy_shadow_gate.json"
+      },
+      {
+        "id": "disturbance_watch",
+        "status": "pass",
+        "evidence": "data/reports/z_troublemaker_scan.json"
+      },
+      {
+        "id": "ssws_daily_report_present",
+        "status": "pass",
+        "evidence": "data/reports/z_ssws_daily_report.json"
+      }
+    ]
+  },
+  "external_workstreams": [
+    {
+      "area": "US consumer protection (AI claims and unfair/deceptive practices)",
+      "status": "required",
+      "owner": "Legal + Product",
+      "next_action": "Maintain substantiated claims, add periodic legal review of public AI messaging.",
+      "source": "https://www.ftc.gov/policy/advocacy-research/tech-at-ftc/2025/01/ai-risk-consumer-harm"
+    },
+    {
+      "area": "US privacy commitments",
+      "status": "required",
+      "owner": "Legal + Security",
+      "next_action": "Ensure public privacy commitments match actual data handling and retention practices.",
+      "source": "https://www.ftc.gov/policy/advocacy-research/tech-at-ftc/2024/01/ai-companies-uphold-your-privacy-confidentiality-commitments"
+    },
+    {
+      "area": "EU AI Act phased compliance (if EU users are served)",
+      "status": "required_if_eu",
+      "owner": "Legal + Compliance",
+      "next_action": "Map product functions to AI Act obligations and timelines before EU launch.",
+      "source": "https://digital-strategy.ec.europa.eu/en/policies/regulatory-framework-ai"
+    },
+    {
+      "area": "UK ICO AI/data protection alignment (if UK users are served)",
+      "status": "required_if_uk",
+      "owner": "Legal + DPO",
+      "next_action": "Validate lawful basis, transparency notices, and user-rights handling for AI outputs.",
+      "source": "https://ico.org.uk/for-organisations/uk-gdpr-guidance-and-resources/artificial-intelligence/"
+    },
+    {
+      "area": "UK gambling licensing boundary (if moving beyond analytics into facilitation)",
+      "status": "required_if_gambling_facilities",
+      "owner": "Legal + Operations",
+      "next_action": "Confirm whether product scope remains analytics-only or triggers licensing obligations.",
+      "source": "https://www.gamblingcommission.gov.uk/licensees-and-businesses/licences-and-fees/sector/remote"
+    }
+  ],
+  "final_delta": [
+    "Local control plane is strong and green-leaning.",
+    "Formal legal pass requires jurisdiction-specific counsel sign-off.",
+    "Keep product messaging aligned with actual behavior and internal-only boundaries."
+  ]
+}

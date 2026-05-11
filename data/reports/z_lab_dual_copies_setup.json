@@ -1,0 +1,24 @@
+{
+  "generated_at": "2026-04-17T15:43:54.894Z",
+  "status": "ready",
+  "lab_root": "C:/Cursor Projects Organiser/ZSanctuary_Universe/Z_Labs",
+  "lab_policy": {
+    "mode": "internal-only",
+    "primary": "C:/Cursor Projects Organiser/ZSanctuary_Universe/Z_Labs",
+    "legacy_fallback": "C:/Cursor Projects Organiser/ZSanctuary_Universe/ZSanctuary_Labs",
+    "note": "Lab automation is restricted to in-repo lab roots to avoid cross-project linkage."
+  },
+  "artifacts": {
+    "dashboard_copy_html": "C:/Cursor Projects Organiser/ZSanctuary_Universe/Z_Labs/copies/dashboard_copy/index.html",
+    "ssws_copy_html": "C:/Cursor Projects Organiser/ZSanctuary_Universe/Z_Labs/copies/z_ssws_copy/index.html",
+    "dashboard_workspace": "C:/Cursor Projects Organiser/ZSanctuary_Universe/Z_Labs/workspaces/Z_LAB_Dashboard_Copy.code-workspace",
+    "ssws_workspace": "C:/Cursor Projects Organiser/ZSanctuary_Universe/Z_Labs/workspaces/Z_LAB_SSWS_Copy.code-workspace",
+    "launcher": "C:/Cursor Projects Organiser/ZSanctuary_Universe/Z_Labs/workspaces/launch_4_windows.cmd",
+    "plan": "C:/Cursor Projects Organiser/ZSanctuary_Universe/Z_Labs/workspaces/Z_4_WINDOW_PLAN.md"
+  },
+  "copied_snapshots": [
+    "core/index.html -> copies/dashboard_copy/core_index.snapshot.html",
+    "core/z_ssws_banner.js -> copies/z_ssws_copy/z_ssws_banner.snapshot.js"
+  ],
+  "notes": "Created copy hubs and VS Code workspace windows for parallel operation; no Sanctuary runtime linkage."
+}

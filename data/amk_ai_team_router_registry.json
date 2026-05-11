@@ -1,0 +1,262 @@
+{
+  "schema": "amk.ai.team.router.registry.v1",
+  "registry_name": "AMK AI Team Indicator Sync Router",
+  "mode": "read_only_indicator_and_decision_routing",
+  "phase": "AMK-AI-SYNC-1",
+  "ai_teams": {
+    "amk_indicator_team": {
+      "display_name": "AMK Indicator team",
+      "focus": "Dashboard visibility, posture chips, go/no-go labels, overlays"
+    },
+    "z_mod_dist_team": {
+      "display_name": "Z-MOD-DIST routing team",
+      "focus": "Which project or capsule owns a new module idea"
+    },
+    "z_xbus_team": {
+      "display_name": "Z-XBUS connector team",
+      "focus": "External API, webhook, provider, payments — registry first"
+    },
+    "z_sec_triplecheck_team": {
+      "display_name": "Z-SEC Triplecheck team",
+      "focus": "Communication-flow audit, forbidden lanes, safety drift"
+    },
+    "z_pattern_safe_team": {
+      "display_name": "Z-PATTERN-SAFE team",
+      "focus": "Pattern literacy vs prediction/simulation posture"
+    },
+    "z_replica_fabric_team": {
+      "display_name": "Z-Replica Fabric team",
+      "focus": "Reviewer bots, monocore doctrine — bounded replicas"
+    },
+    "z_ultra_mage_team": {
+      "display_name": "Z-Ultra MAGE formula team",
+      "focus": "Formula governance vocabulary and doctrine rollups"
+    },
+    "z_ide_fusion_team": {
+      "display_name": "Z-IDE-FUSION team",
+      "focus": "Cursor / VS Code / shared session handoffs"
+    },
+    "z_pc_cmd_team": {
+      "display_name": "Z-PC / Z-CMD team",
+      "focus": "PATH, command center, doorway — local operator rhythm"
+    },
+    "z_logical_brains_team": {
+      "display_name": "Logical Brains team",
+      "focus": "Non-clinical learning pathways (Labs capsule)"
+    },
+    "z_numen_team": {
+      "display_name": "Z-NUMEN team",
+      "focus": "Pattern literacy symbolism (Labs reference)"
+    },
+    "z_mu_truth_team": {
+      "display_name": "Z-MU Truth / Advisor team",
+      "focus": "Mauritius civic claims, templates, peaceful posture"
+    },
+    "z_susbv_team": {
+      "display_name": "Z-SUSBV commercial overseer team",
+      "focus": "Pricing, benchmarks, paid-surface readiness — advisory"
+    },
+    "amk_personal_ai_summary": {
+      "display_name": "AMK-Goku personal AI summary",
+      "focus": "Receive decision packets — not automatic sacred approval"
+    }
+  },
+  "routing_rules": [
+    {
+      "rule_id": "route_deploy_sacred_red",
+      "concern_keywords": ["deploy production", "auto-merge", "auto merge", "merge to main silently", "push secrets", "billing live", "payment capture live", "scraping production users", "child data export"],
+      "primary_ai_team": "amk_personal_ai_summary",
+      "supporting_ai_teams": ["z_sec_triplecheck_team"],
+      "required_commands": ["npm run verify:full:technical"],
+      "signal_policy": "RED",
+      "forbidden_actions": ["deploy", "auto_merge", "secret_write", "payment_activation", "live_scrape_child_data"],
+      "amk_gate_required": true
+    },
+    {
+      "rule_id": "route_external_connector",
+      "concern_keywords": ["external api", "webhook", "oauth client", "payment provider", "stripe", "openai api", "cloud api", "third-party connector"],
+      "primary_ai_team": "z_xbus_team",
+      "supporting_ai_teams": ["z_sec_triplecheck_team", "z_mod_dist_team"],
+      "required_commands": ["npm run z:xbus:gate", "npm run z:sec:triplecheck"],
+      "signal_policy": "BLUE",
+      "forbidden_actions": ["live_api_call", "secret_write", "customer_data_flow"],
+      "amk_gate_required": true
+    },
+    {
+      "rule_id": "route_pattern_prediction",
+      "concern_keywords": ["pattern engine", "prediction game", "roulette", "uncertainty simulation", "hypothesis dashboard", "bankroll", "wagering"],
+      "primary_ai_team": "z_pattern_safe_team",
+      "supporting_ai_teams": ["z_mod_dist_team", "z_ultra_mage_team"],
+      "required_commands": ["npm run z:pattern:safe", "npm run z:mod:dist"],
+      "signal_policy": "BLUE",
+      "forbidden_actions": ["gambling_instruction_export", "guaranteed_prediction_claim"],
+      "amk_gate_required": true
+    },
+    {
+      "rule_id": "route_replica_minibot",
+      "concern_keywords": ["replica", "monocore", "reviewer bot", "shadow agent", "self-replication"],
+      "primary_ai_team": "z_replica_fabric_team",
+      "supporting_ai_teams": ["z_sec_triplecheck_team", "z_ultra_mage_team"],
+      "required_commands": ["npm run z:replica:fabric"],
+      "signal_policy": "BLUE",
+      "forbidden_actions": ["autonomous_agent_runtime", "live_bridge_without_charter"],
+      "amk_gate_required": true
+    },
+    {
+      "rule_id": "route_formula_doctrine",
+      "concern_keywords": ["ultra mage", "formula codex", "doctrine rollup", "omnai vocabulary"],
+      "primary_ai_team": "z_ultra_mage_team",
+      "supporting_ai_teams": ["z_pattern_safe_team"],
+      "required_commands": ["npm run z:ultra:mage"],
+      "signal_policy": "BLUE",
+      "forbidden_actions": ["formula_engine_runtime"],
+      "amk_gate_required": true
+    },
+    {
+      "rule_id": "route_ide_workspace",
+      "concern_keywords": ["cursor", "vscode", "multi-root workspace", "ide fusion", "handoff session"],
+      "primary_ai_team": "z_ide_fusion_team",
+      "supporting_ai_teams": ["z_pc_cmd_team"],
+      "required_commands": ["npm run z:ide:fusion", "npm run z:pc:ide-path"],
+      "signal_policy": "YELLOW",
+      "forbidden_actions": ["remote_exec_from_ui"],
+      "amk_gate_required": false
+    },
+    {
+      "rule_id": "route_pc_cmd",
+      "concern_keywords": ["path health", "command center", "terminal task", "doorway open"],
+      "primary_ai_team": "z_pc_cmd_team",
+      "supporting_ai_teams": ["z_ide_fusion_team"],
+      "required_commands": ["npm run z:pc:ide-path"],
+      "signal_policy": "YELLOW",
+      "forbidden_actions": [],
+      "amk_gate_required": false
+    },
+    {
+      "rule_id": "route_civic_mu",
+      "concern_keywords": ["mauritius", "civic claim", "claim ledger", "peaceful protest wording", "z-mu"],
+      "primary_ai_team": "z_mu_truth_team",
+      "supporting_ai_teams": ["z_mod_dist_team", "z_sec_triplecheck_team"],
+      "required_commands": ["npm run z:mu:truth", "npm run z:mu:advisor"],
+      "signal_policy": "BLUE",
+      "forbidden_actions": ["protest_coordination_platform", "mass_messaging"],
+      "amk_gate_required": true
+    },
+    {
+      "rule_id": "route_logical_brains",
+      "concern_keywords": ["logical brains", "study pathway", "learning capsule", "non-clinical planning"],
+      "primary_ai_team": "z_logical_brains_team",
+      "supporting_ai_teams": ["z_mod_dist_team"],
+      "required_commands": ["npm run z:logical-brains:hub"],
+      "signal_policy": "YELLOW",
+      "forbidden_actions": ["clinical_claim"],
+      "amk_gate_required": false
+    },
+    {
+      "rule_id": "route_numen",
+      "concern_keywords": ["numen", "pattern literacy", "symbol bands", "333"],
+      "primary_ai_team": "z_numen_team",
+      "supporting_ai_teams": ["z_logical_brains_team", "z_pattern_safe_team"],
+      "required_commands": ["npm run z:numen:hub", "npm run z:pattern:safe"],
+      "signal_policy": "YELLOW",
+      "forbidden_actions": [],
+      "amk_gate_required": false
+    },
+    {
+      "rule_id": "route_security_lane",
+      "concern_keywords": ["forbidden lane", "security audit", "data leak", "sentinel"],
+      "primary_ai_team": "z_sec_triplecheck_team",
+      "supporting_ai_teams": ["z_xbus_team"],
+      "required_commands": ["npm run z:sec:triplecheck", "npm run dashboard:registry-verify"],
+      "signal_policy": "YELLOW",
+      "forbidden_actions": [],
+      "amk_gate_required": false
+    },
+    {
+      "rule_id": "route_commercial",
+      "concern_keywords": ["pricing", "commercial readiness", "susbv", "benchmark paid"],
+      "primary_ai_team": "z_susbv_team",
+      "supporting_ai_teams": ["amk_indicator_team", "z_sec_triplecheck_team"],
+      "required_commands": ["npm run verify:md"],
+      "signal_policy": "BLUE",
+      "forbidden_actions": ["public_pricing_publish_without_human"],
+      "amk_gate_required": true
+    },
+    {
+      "rule_id": "route_dashboard_indicator",
+      "concern_keywords": ["indicator row", "amk dashboard", "growth percent", "go no-go", "posture chips"],
+      "primary_ai_team": "amk_indicator_team",
+      "supporting_ai_teams": ["z_mod_dist_team"],
+      "required_commands": ["npm run dashboard:registry-verify"],
+      "signal_policy": "YELLOW",
+      "forbidden_actions": ["fabricate_green_overlay"],
+      "amk_gate_required": false
+    },
+    {
+      "rule_id": "route_new_module_default",
+      "concern_keywords": ["new module", "new capsule", "where does this belong", "registry sync"],
+      "primary_ai_team": "z_mod_dist_team",
+      "supporting_ai_teams": ["amk_indicator_team", "z_sec_triplecheck_team"],
+      "required_commands": ["npm run z:mod:dist", "npm run dashboard:registry-verify"],
+      "signal_policy": "YELLOW",
+      "forbidden_actions": [],
+      "amk_gate_required": false
+    }
+  ],
+  "indicator_sync_checks": [
+    "module_has_indicator_row",
+    "module_has_report",
+    "module_has_go_no_go",
+    "module_has_related_docs",
+    "module_has_receipt",
+    "module_has_signal",
+    "module_has_forbidden_lanes"
+  ],
+  "decision_packet_schema": {
+    "fields": [
+      "decision_id",
+      "topic",
+      "recommended_ai_team",
+      "supporting_checks",
+      "signal",
+      "why",
+      "safe_next_action",
+      "forbidden_actions",
+      "amk_decision_required"
+    ],
+    "note": "Supporting checks list maps to npm commands or artifact paths in report output."
+  },
+  "known_report_basenames_for_drift_hints": [
+    "z_mod_dist_report.json",
+    "z_xbus_connector_gate_report.json",
+    "z_sec_triplecheck_report.json",
+    "z_pattern_safe_report.json",
+    "z_replica_fabric_report.json",
+    "z_ultra_mage_formula_report.json",
+    "z_ide_fusion_report.json",
+    "z_mu_truth_report.json",
+    "z_mu_advisor_report.json",
+    "z_dashboard_registry_verify.json",
+    "z_traffic_minibots_status.json",
+    "z_car2_similarity_report.json"
+  ],
+  "locked_law": [
+    "Indicator sync ≠ auto-edit.",
+    "AI team routing ≠ authority.",
+    "Decision packet ≠ permission.",
+    "Personal AI summary ≠ sacred approval.",
+    "GREEN ≠ deploy.",
+    "BLUE requires AMK.",
+    "RED blocks movement.",
+    "AMK-Goku owns sacred moves."
+  ],
+  "related_docs": [
+    "docs/AMK_AI_TEAM_INDICATOR_SYNC_ROUTER.md",
+    "docs/PHASE_AMK_AI_SYNC_1_GREEN_RECEIPT.md",
+    "docs/AMK_PROJECT_INDICATORS_AND_GO_NO_GO.md"
+  ],
+  "related_reports": [
+    "data/reports/amk_ai_team_sync_report.json",
+    "data/reports/amk_ai_team_sync_report.md"
+  ]
+}

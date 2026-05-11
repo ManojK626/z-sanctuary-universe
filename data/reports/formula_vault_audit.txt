@@ -1,0 +1,4 @@
+Z-Formula Vault Audit
+Registry: C:\Cursor Projects Organiser\ZSanctuary_Universe\rules\Z_FORMULA_REGISTRY.json
+
+All registered formula assets exist.

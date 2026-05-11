@@ -1,0 +1,148 @@
+{
+  "schema": "z_civilization_foresight_registry_v1",
+  "phase": "Z-FUTURE-1",
+  "posture": "doctrine_and_metadata_only",
+  "generated_note": "No runtime prediction engine. Scenarios are discipline, not prophecy. Human review gates high-impact use.",
+  "safety_law_ref": "docs/foresight/Z_CIVILIZATION_FORESIGHT_SAFETY_LAW.md",
+  "external_context_note": "Strategic foresight helps decision-makers work with uncertainty (e.g. UNDP foresight publications). AI risk management frameworks (e.g. NIST AI RMF) and trustworthy-AI principles (e.g. OECD) inform review posture — this hub does not call external APIs from this registry.",
+  "layers": [
+    {
+      "layer_id": "Z-PPPFA",
+      "name": "Pre-Pattern Present-to-Future Analyzer",
+      "purpose": "Observe past patterns, read present signals, map possible futures, flag repeating civilizational mistakes, and recommend safer pathways as scenarios — not as certainty.",
+      "current_status": "doctrine_only",
+      "connected_layers": [
+        "Z-UIL",
+        "ZSX",
+        "Z-Traffic minibots",
+        "Z-CAR²",
+        "Z-Zuno coverage",
+        "Z-QUESTRA",
+        "LAWGRID",
+        "OMNAI (scenario narration only)"
+      ],
+      "allowed_now": [
+        "Document scenario vocabulary",
+        "Link to receipts and registries",
+        "Operator-authored scenario notes in docs"
+      ],
+      "forbidden_without_charter": [
+        "Automated future scoring from live user data",
+        "Provider calls for prediction",
+        "Public claims of civilization outcome certainty",
+        "Autonomous steering of deploy, billing, or entitlements"
+      ],
+      "human_review_required": true,
+      "related_docs": [
+        "docs/foresight/Z_PPPFA_PRESENT_TO_FUTURE_ANALYZER.md",
+        "docs/foresight/Z_CIVILIZATION_FORESIGHT_SAFETY_LAW.md"
+      ],
+      "safety_law": "Past pattern ≠ future certainty. Scenario ≠ prophecy. Signal ≠ instruction."
+    },
+    {
+      "layer_id": "Z-MSOAI",
+      "name": "Multi-Supervisor Overseer AI",
+      "purpose": "Council-style review roles that inspect the same future-roadmap scenario from different lenses (ethics, safety, economics, ecology, education, law, accessibility, technology, human dignity) — advisory only; not human authority.",
+      "current_status": "doctrine_only",
+      "connected_layers": [
+        "14 DRP / swarm law",
+        "LAWGRID",
+        "Z-UIL",
+        "GCR (capability truth)",
+        "SSWS",
+        "NIST AI RMF posture (doctrine reference only)",
+        "OECD trustworthy AI principles (doctrine reference only)"
+      ],
+      "allowed_now": [
+        "Define overseer role checklists in markdown",
+        "Map roles to existing governance docs",
+        "Synthetic persona labels in UI only where already allowed (e.g. legal workstation mentors)"
+      ],
+      "forbidden_without_charter": [
+        "Multi-agent runtime that issues binding decisions",
+        "Replacing human legal or safety sign-off",
+        "Automated policy changes from overseer consensus"
+      ],
+      "human_review_required": true,
+      "related_docs": [
+        "docs/foresight/Z_MSOAI_MULTI_SUPERVISOR_OVERSEER.md",
+        "docs/Z_SWARM_14DRP_UNIVERSAL_AGENT_LAW.md",
+        "docs/foresight/Z_CIVILIZATION_FORESIGHT_SAFETY_LAW.md"
+      ],
+      "safety_law": "AI overseer ≠ human authority. Council output is risk review material, not orders."
+    },
+    {
+      "layer_id": "Z-FUMCR",
+      "name": "Future Upcoming Migration Civilization Roadmaps",
+      "purpose": "Narrative and structured maps of how people, tech, services, education, work, health, AI, cities, and cultures might migrate between states over time — migration maps, not instructions or inevitability.",
+      "current_status": "doctrine_only",
+      "connected_layers": [
+        "Z-EXL (experience framing)",
+        "ZSX",
+        "ZMV",
+        "SSWS",
+        "Z-FUTURE-1 safety law",
+        "Z-Legacy / manuals (long-form memory)"
+      ],
+      "allowed_now": [
+        "Publish roadmap doctrine tables",
+        "Cross-link to capability and entitlement registries",
+        "Versioned markdown narratives"
+      ],
+      "forbidden_without_charter": [
+        "Live migration orchestration",
+        "Mandatory user migration paths",
+        "Entitlement changes implied by roadmap text alone"
+      ],
+      "human_review_required": true,
+      "related_docs": [
+        "docs/foresight/Z_FUMCR_CIVILIZATION_ROADMAPS.md",
+        "docs/design/Z_UNIVERSAL_INTERACTION_LANGUAGE.md",
+        "docs/foresight/Z_CIVILIZATION_FORESIGHT_SAFETY_LAW.md"
+      ],
+      "safety_law": "Roadmap ≠ permission. Migration story ≠ SKU or deploy clearance."
+    },
+    {
+      "layer_id": "Z-FUTURE-1",
+      "name": "Civilizational Foresight Doctrine (phase shell)",
+      "purpose": "Bundle Z-PPPFA, Z-MSOAI, and Z-FUMCR under one phase receipt and registry for ecosystem coherence — foresight, not prediction.",
+      "current_status": "doctrine_only",
+      "connected_layers": [
+        "Z-PPPFA",
+        "Z-MSOAI",
+        "Z-FUMCR",
+        "Z-UIL",
+        "Z-EXL",
+        "GCR",
+        "DDS",
+        "ZSX",
+        "ZMV",
+        "LAWGRID",
+        "SSWS",
+        "Z-Traffic minibots",
+        "Z-Zuno",
+        "Z-CAR²",
+        "Lumina Empathy Echo",
+        "Z-QUESTRA",
+        "OMNAI",
+        "Z-Legacy manuals"
+      ],
+      "allowed_now": [
+        "docs/foresight/*",
+        "data/z_civilization_foresight_registry.json",
+        "INDEX and seed doc pointers"
+      ],
+      "forbidden_without_charter": [
+        "Runtime foresight engine",
+        "External foresight APIs",
+        "Autonomous civilization steering"
+      ],
+      "human_review_required": true,
+      "related_docs": [
+        "docs/foresight/PHASE_Z_FUTURE_1_GREEN_RECEIPT.md",
+        "docs/Z_ECOSYSTEM_COHERENCE_ZUNO_SEED.md"
+      ],
+      "safety_law": "Full stack in docs/foresight/Z_CIVILIZATION_FORESIGHT_SAFETY_LAW.md"
+    }
+  ]
+}

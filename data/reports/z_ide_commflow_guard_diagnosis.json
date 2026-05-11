@@ -1,0 +1,3211 @@
+{
+  "generated_at": "2026-04-29T15:43:58.398Z",
+  "purpose": "read_only_diagnosis",
+  "guard_mirror_reference": "scripts/z_ide_commflow_guard.mjs (routing block; sync manually)",
+  "summary": {
+    "route_mismatch_total": 1386,
+    "files_scanned": 3499,
+    "ceiling_note": "4000-file ceiling matches IDE guard walk; totals match guard when unchanged.",
+    "compare_with_guard_report": "data/reports/z_ide_commflow_guard.json → scan.mismatch_count should equal route_mismatch_total here."
+  },
+  "aggregates": {
+    "by_extension": [
+      {
+        "key": ".json",
+        "count": 591
+      },
+      {
+        "key": ".md",
+        "count": 430
+      },
+      {
+        "key": ".html",
+        "count": 182
+      },
+      {
+        "key": ".js",
+        "count": 103
+      },
+      {
+        "key": ".mjs",
+        "count": 57
+      },
+      {
+        "key": ".css",
+        "count": 14
+      },
+      {
+        "key": ".ts",
+        "count": 9
+      }
+    ],
+    "by_current_top_segment": [
+      {
+        "key": "Amk_Goku Worldwide Loterry",
+        "count": 1224
+      },
+      {
+        "key": "apps",
+        "count": 28
+      },
+      {
+        "key": "All APPs",
+        "count": 22
+      },
+      {
+        "key": "core_engine",
+        "count": 18
+      },
+      {
+        "key": "core",
+        "count": 18
+      },
+      {
+        "key": "bots",
+        "count": 18
+      },
+      {
+        "key": "packages",
+        "count": 12
+      },
+      {
+        "key": "docs",
+        "count": 9
+      },
+      {
+        "key": "archive",
+        "count": 9
+      },
+      {
+        "key": "audio",
+        "count": 6
+      },
+      {
+        "key": ".vscode",
+        "count": 6
+      },
+      {
+        "key": "dashboard",
+        "count": 5
+      },
+      {
+        "key": ".zpam",
+        "count": 4
+      },
+      {
+        "key": ".pytest_basetemp_root",
+        "count": 3
+      },
+      {
+        "key": "ethics",
+        "count": 1
+      },
+      {
+        "key": "deploy",
+        "count": 1
+      },
+      {
+        "key": "ai_tower",
+        "count": 1
+      },
+      {
+        "key": ".github",
+        "count": 1
+      }
+    ],
+    "top_pairs_extension_x_top_segment": [
+      {
+        "key": ".json|Amk_Goku Worldwide Loterry",
+        "count": 539
+      },
+      {
+        "key": ".md|Amk_Goku Worldwide Loterry",
+        "count": 424
+      },
+      {
+        "key": ".html|Amk_Goku Worldwide Loterry",
+        "count": 167
+      },
+      {
+        "key": ".js|Amk_Goku Worldwide Loterry",
+        "count": 82
+      },
+      {
+        "key": ".mjs|apps",
+        "count": 28
+      },
+      {
+        "key": ".json|core",
+        "count": 18
+      },
+      {
+        "key": ".mjs|bots",
+        "count": 17
+      },
+      {
+        "key": ".html|All APPs",
+        "count": 14
+      },
+      {
+        "key": ".mjs|packages",
+        "count": 12
+      },
+      {
+        "key": ".css|Amk_Goku Worldwide Loterry",
+        "count": 12
+      },
+      {
+        "key": ".ts|core_engine",
+        "count": 8
+      },
+      {
+        "key": ".json|docs",
+        "count": 7
+      },
+      {
+        "key": ".js|core_engine",
+        "count": 7
+      },
+      {
+        "key": ".js|All APPs",
+        "count": 6
+      },
+      {
+        "key": ".js|.vscode",
+        "count": 6
+      },
+      {
+        "key": ".json|dashboard",
+        "count": 5
+      },
+      {
+        "key": ".json|audio",
+        "count": 5
+      },
+      {
+        "key": ".json|archive",
+        "count": 5
+      },
+      {
+        "key": ".json|.zpam",
+        "count": 4
+      },
+      {
+        "key": ".json|core_engine",
+        "count": 3
+      },
+      {
+        "key": ".json|.pytest_basetemp_root",
+        "count": 3
+      },
+      {
+        "key": ".md|ethics",
+        "count": 1
+      },
+      {
+        "key": ".css|docs",
+        "count": 1
+      },
+      {
+        "key": ".js|docs",
+        "count": 1
+      },
+      {
+        "key": ".json|deploy",
+        "count": 1
+      },
+      {
+        "key": ".md|bots",
+        "count": 1
+      },
+      {
+        "key": ".md|audio",
+        "count": 1
+      },
+      {
+        "key": ".md|archive",
+        "count": 1
+      },
+      {
+        "key": ".ts|archive",
+        "count": 1
+      },
+      {
+        "key": ".html|archive",
+        "count": 1
+      },
+      {
+        "key": ".js|archive",
+        "count": 1
+      },
+      {
+        "key": ".json|All APPs",
+        "count": 1
+      },
+      {
+        "key": ".css|All APPs",
+        "count": 1
+      },
+      {
+        "key": ".md|ai_tower",
+        "count": 1
+      },
+      {
+        "key": ".md|.github",
+        "count": 1
+      }
+    ]
+  },
+  "thematic_clusters_by_bucket": [
+    {
+      "bucket_id": "B_sibling_amk_goku_lotto_tree",
+      "count": 1224,
+      "thematic_nature": "embedded_sibling_or_nested_project",
+      "note": "Separate app tree under hub root; router uses first segment only.",
+      "sample_files": [
+        "Amk_Goku Worldwide Loterry/index.html",
+        "Amk_Goku Worldwide Loterry/INTEGRITY_MANIFEST.md",
+        "Amk_Goku Worldwide Loterry/README.md",
+        "Amk_Goku Worldwide Loterry/release_notes.md"
+      ]
+    },
+    {
+      "bucket_id": "G_misc_residual_pairs",
+      "count": 139,
+      "thematic_nature": "misc_extension_x_top_residual",
+      "note": "Dashboard .vscode/json, archive, apps outliers — finer split is in aggregates.",
+      "sample_files": [
+        "dashboard/.vscode/extensions.json",
+        "dashboard/.vscode/launch.json",
+        "dashboard/.vscode/profiles.json",
+        "dashboard/.vscode/settings.json"
+      ]
+    },
+    {
+      "bucket_id": "A_workspace_mjs_under_packages_vs_mjs_router",
+      "count": 12,
+      "thematic_nature": "router_rule_vs_monorepo_convention",
+      "note": ".mjs allow-list is scripts|tools — npm workspaces still place .mjs in packages/ (@z-sanctuary/zuno-transformation-slice)",
+      "sample_files": [
+        "packages/z-sanctuary-zuno-transformation-slice/resolve_hub.mjs",
+        "packages/z-sanctuary-zuno-transformation-slice/zuno_transformation_core.mjs",
+        "packages/z-sanctuary-zuno-transformation-slice/test/zuno_flow.test.mjs",
+        "packages/z-sanctuary-mirrorsoul-slice/adaptive_fuel.mjs"
+      ]
+    },
+    {
+      "bucket_id": "D_docs_tree_json_mirror",
+      "count": 7,
+      "thematic_nature": "stale_or_documentation_copy",
+      "note": "JSON mirrors (e.g. registry copies) under docs/ vs data/config allow-list",
+      "sample_files": [
+        "docs/living_workspace_manifest.json",
+        "docs/z_module_registry.json",
+        "docs/.vscode/extensions.json",
+        "docs/.vscode/launch.json"
+      ]
+    },
+    {
+      "bucket_id": "C_docs_tree_static_assets",
+      "count": 2,
+      "thematic_nature": "path_convention_vs_interface_router",
+      "note": "docs/public and similar assets — css/js/html routed to interface/dashboard in guard",
+      "sample_files": [
+        "docs/public/snapshot/snapshot.css",
+        "docs/public/snapshot/snapshot.js"
+      ]
+    },
+    {
+      "bucket_id": "E_ethics_root_markdown_cluster",
+      "count": 1,
+      "thematic_nature": "naming_choice_vs_router",
+      "note": "ethics/ top-level charters vs clustered docs router",
+      "sample_files": [
+        "ethics/crisis-charter.md"
+      ]
+    },
+    {
+      "bucket_id": "F_deploy_edge_bundle_tree",
+      "count": 1,
+      "thematic_nature": "edge_layout_outside_apps_packages",
+      "note": "Cloudflare/deploy helpers may use ts/tsx outside ROUTING defaults",
+      "sample_files": [
+        "deploy/z_bridge_soft/package.json"
+      ]
+    }
+  ],
+  "recommended_safe_batches": [
+    {
+      "id": "batch-01-mjs-packages-workspace",
+      "risk": "medium",
+      "title": "Align ROUTING `.mjs` with npm workspace reality",
+      "approx_count": 12,
+      "nature": "~12 files: rule allows scripts|tools only; packages/ holds workspace slices.",
+      "minimal_safe_options": [
+        "Policy: extend allowedTop with `packages` for .mjs (review impact).",
+        "Policy: exempt `packages/*/…` from guard (narrow glob in future guard PR).",
+        "Do nothing — keep advisory amber (recommended until layout project)."
+      ]
+    },
+    {
+      "id": "batch-02-docs-assets-static",
+      "risk": "low",
+      "title": "docs/public and documentation-adjacent static assets",
+      "approx_count": 9,
+      "nature": "Approx 2 css/js/html + 7 json under docs/ (see clusters).",
+      "minimal_safe_options": [
+        "Extend .css docs top (narrow) vs move assets to docs-approved structure.",
+        "Exempt docs/public/** selectively after human review."
+      ]
+    },
+    {
+      "id": "batch-03-ethics-and-g_misc",
+      "risk": "low",
+      "title": "ethics/, ethics-adjacent, and miscellaneous pairs",
+      "approx_count": 1,
+      "nature": "1+ G_misc:* — charters and one-off layouts.",
+      "minimal_safe_options": [
+        "Add ethics to EXEMPT_TOPS or relocate under docs/ethics*."
+      ]
+    },
+    {
+      "id": "batch-04-sibling-lottery",
+      "risk": "high",
+      "title": "Embedded Amk/Lottery project folder",
+      "approx_count": 1224,
+      "nature": "Large subtree with own layout — first-segment rule flags many extensions.",
+      "minimal_safe_options": [
+        "EXEMPT first segment folder when operator accepts (careful breadth)."
+      ]
+    },
+    {
+      "id": "batch-05-deploy",
+      "risk": "medium",
+      "title": "deploy/ edge bundles",
+      "approx_count": 1,
+      "nature": "Deploy scaffolding outside apps|packages ts router.",
+      "minimal_safe_options": [
+        "Path-scoped exemptions or widen ts allow tops for deploy/**/*."
+      ]
+    },
+    {
+      "id": "batch-06-residual-misc",
+      "risk": "low",
+      "title": "Residual thematic bucket (mixed pairs)",
+      "approx_count": 139,
+      "nature": "Other extension×top combos — triage via pair table before policy change.",
+      "minimal_safe_options": [
+        "No bulk move until buckets A–F addressed; revisit pair histogram."
+      ]
+    }
+  ],
+  "interpretation": [
+    "Roughly 88% of mismatches (~1224 paths) fall under **Amk_Goku Worldwide Loterry/** as first segment — sibling/nested-project tree scanned under hub root, not \"core hub\" drift.",
+    "Mismatches are **not necessarily bugs** — the guard applies: *(extension × first path segment ∈ ROUTING allow-list)*.",
+    "Residual **G_misc** often pairs like `.json|dashboard` (nested `.vscode/` under dashboard) versus allow-list concentrating json under data|.vscode.",
+    "ide_commflow_guard remains advisory; this report **does not** change comm-flow verifier output or governance JSON.",
+    "Eco-system comm-flow **amber for IDE guard** stays until guard policy adjusts or paths narrow — diagnosis is read-only signal."
+  ],
+  "sample_matches_first_350": [
+    {
+      "file": "packages/z-sanctuary-zuno-transformation-slice/resolve_hub.mjs",
+      "extension": ".mjs",
+      "current_top": "packages",
+      "thematic_bucket_id": "A_workspace_mjs_under_packages_vs_mjs_router",
+      "thematic_nature": "router_rule_vs_monorepo_convention",
+      "thematic_note": ".mjs allow-list is scripts|tools — npm workspaces still place .mjs in packages/ (@z-sanctuary/zuno-transformation-slice)"
+    },
+    {
+      "file": "packages/z-sanctuary-zuno-transformation-slice/zuno_transformation_core.mjs",
+      "extension": ".mjs",
+      "current_top": "packages",
+      "thematic_bucket_id": "A_workspace_mjs_under_packages_vs_mjs_router",
+      "thematic_nature": "router_rule_vs_monorepo_convention",
+      "thematic_note": ".mjs allow-list is scripts|tools — npm workspaces still place .mjs in packages/ (@z-sanctuary/zuno-transformation-slice)"
+    },
+    {
+      "file": "packages/z-sanctuary-zuno-transformation-slice/test/zuno_flow.test.mjs",
+      "extension": ".mjs",
+      "current_top": "packages",
+      "thematic_bucket_id": "A_workspace_mjs_under_packages_vs_mjs_router",
+      "thematic_nature": "router_rule_vs_monorepo_convention",
+      "thematic_note": ".mjs allow-list is scripts|tools — npm workspaces still place .mjs in packages/ (@z-sanctuary/zuno-transformation-slice)"
+    },
+    {
+      "file": "packages/z-sanctuary-mirrorsoul-slice/adaptive_fuel.mjs",
+      "extension": ".mjs",
+      "current_top": "packages",
+      "thematic_bucket_id": "A_workspace_mjs_under_packages_vs_mjs_router",
+      "thematic_nature": "router_rule_vs_monorepo_convention",
+      "thematic_note": ".mjs allow-list is scripts|tools — npm workspaces still place .mjs in packages/ (@z-sanctuary/mirrorsoul-slice)"
+    },
+    {
+      "file": "packages/z-sanctuary-mirrorsoul-slice/advisory.mjs",
+      "extension": ".mjs",
+      "current_top": "packages",
+      "thematic_bucket_id": "A_workspace_mjs_under_packages_vs_mjs_router",
+      "thematic_nature": "router_rule_vs_monorepo_convention",
+      "thematic_note": ".mjs allow-list is scripts|tools — npm workspaces still place .mjs in packages/ (@z-sanctuary/mirrorsoul-slice)"
+    },
+    {
+      "file": "packages/z-sanctuary-mirrorsoul-slice/index.mjs",
+      "extension": ".mjs",
+      "current_top": "packages",
+      "thematic_bucket_id": "A_workspace_mjs_under_packages_vs_mjs_router",
+      "thematic_nature": "router_rule_vs_monorepo_convention",
+      "thematic_note": ".mjs allow-list is scripts|tools — npm workspaces still place .mjs in packages/ (@z-sanctuary/mirrorsoul-slice)"
+    },
+    {
+      "file": "packages/z-sanctuary-mirrorsoul-slice/mirror_soul_v2.mjs",
+      "extension": ".mjs",
+      "current_top": "packages",
+      "thematic_bucket_id": "A_workspace_mjs_under_packages_vs_mjs_router",
+      "thematic_nature": "router_rule_vs_monorepo_convention",
+      "thematic_note": ".mjs allow-list is scripts|tools — npm workspaces still place .mjs in packages/ (@z-sanctuary/mirrorsoul-slice)"
+    },
+    {
+      "file": "packages/z-sanctuary-mirrorsoul-slice/resolve_hub.mjs",
+      "extension": ".mjs",
+      "current_top": "packages",
+      "thematic_bucket_id": "A_workspace_mjs_under_packages_vs_mjs_router",
+      "thematic_nature": "router_rule_vs_monorepo_convention",
+      "thematic_note": ".mjs allow-list is scripts|tools — npm workspaces still place .mjs in packages/ (@z-sanctuary/mirrorsoul-slice)"
+    },
+    {
+      "file": "packages/z-sanctuary-mirrorsoul-slice/test/slice.test.mjs",
+      "extension": ".mjs",
+      "current_top": "packages",
+      "thematic_bucket_id": "A_workspace_mjs_under_packages_vs_mjs_router",
+      "thematic_nature": "router_rule_vs_monorepo_convention",
+      "thematic_note": ".mjs allow-list is scripts|tools — npm workspaces still place .mjs in packages/ (@z-sanctuary/mirrorsoul-slice)"
+    },
+    {
+      "file": "packages/z-sanctuary-mirrorsoul-slice/bridges/z_intelligence_bridge.mjs",
+      "extension": ".mjs",
+      "current_top": "packages",
+      "thematic_bucket_id": "A_workspace_mjs_under_packages_vs_mjs_router",
+      "thematic_nature": "router_rule_vs_monorepo_convention",
+      "thematic_note": ".mjs allow-list is scripts|tools — npm workspaces still place .mjs in packages/ (@z-sanctuary/mirrorsoul-slice)"
+    },
+    {
+      "file": "packages/z-sanctuary-mirrorsoul-slice/bridges/z_validation_bridge.mjs",
+      "extension": ".mjs",
+      "current_top": "packages",
+      "thematic_bucket_id": "A_workspace_mjs_under_packages_vs_mjs_router",
+      "thematic_nature": "router_rule_vs_monorepo_convention",
+      "thematic_note": ".mjs allow-list is scripts|tools — npm workspaces still place .mjs in packages/ (@z-sanctuary/mirrorsoul-slice)"
+    },
+    {
+      "file": "packages/z-sanctuary-core/test/smoke.test.mjs",
+      "extension": ".mjs",
+      "current_top": "packages",
+      "thematic_bucket_id": "A_workspace_mjs_under_packages_vs_mjs_router",
+      "thematic_nature": "router_rule_vs_monorepo_convention",
+      "thematic_note": ".mjs allow-list is scripts|tools — npm workspaces still place .mjs in packages/ (packages workspace)"
+    },
+    {
+      "file": "ethics/crisis-charter.md",
+      "extension": ".md",
+      "current_top": "ethics",
+      "thematic_bucket_id": "E_ethics_root_markdown_cluster",
+      "thematic_nature": "naming_choice_vs_router",
+      "thematic_note": "ethics/ top-level charters vs clustered docs router"
+    },
+    {
+      "file": "docs/living_workspace_manifest.json",
+      "extension": ".json",
+      "current_top": "docs",
+      "thematic_bucket_id": "D_docs_tree_json_mirror",
+      "thematic_nature": "stale_or_documentation_copy",
+      "thematic_note": "JSON mirrors (e.g. registry copies) under docs/ vs data/config allow-list"
+    },
+    {
+      "file": "docs/z_module_registry.json",
+      "extension": ".json",
+      "current_top": "docs",
+      "thematic_bucket_id": "D_docs_tree_json_mirror",
+      "thematic_nature": "stale_or_documentation_copy",
+      "thematic_note": "JSON mirrors (e.g. registry copies) under docs/ vs data/config allow-list"
+    },
+    {
+      "file": "docs/public/snapshot/snapshot.css",
+      "extension": ".css",
+      "current_top": "docs",
+      "thematic_bucket_id": "C_docs_tree_static_assets",
+      "thematic_nature": "path_convention_vs_interface_router",
+      "thematic_note": "docs/public and similar assets — css/js/html routed to interface/dashboard in guard"
+    },
+    {
+      "file": "docs/public/snapshot/snapshot.js",
+      "extension": ".js",
+      "current_top": "docs",
+      "thematic_bucket_id": "C_docs_tree_static_assets",
+      "thematic_nature": "path_convention_vs_interface_router",
+      "thematic_note": "docs/public and similar assets — css/js/html routed to interface/dashboard in guard"
+    },
+    {
+      "file": "docs/.vscode/extensions.json",
+      "extension": ".json",
+      "current_top": "docs",
+      "thematic_bucket_id": "D_docs_tree_json_mirror",
+      "thematic_nature": "stale_or_documentation_copy",
+      "thematic_note": "JSON mirrors (e.g. registry copies) under docs/ vs data/config allow-list"
+    },
+    {
+      "file": "docs/.vscode/launch.json",
+      "extension": ".json",
+      "current_top": "docs",
+      "thematic_bucket_id": "D_docs_tree_json_mirror",
+      "thematic_nature": "stale_or_documentation_copy",
+      "thematic_note": "JSON mirrors (e.g. registry copies) under docs/ vs data/config allow-list"
+    },
+    {
+      "file": "docs/.vscode/profiles.json",
+      "extension": ".json",
+      "current_top": "docs",
+      "thematic_bucket_id": "D_docs_tree_json_mirror",
+      "thematic_nature": "stale_or_documentation_copy",
+      "thematic_note": "JSON mirrors (e.g. registry copies) under docs/ vs data/config allow-list"
+    },
+    {
+      "file": "docs/.vscode/settings.json",
+      "extension": ".json",
+      "current_top": "docs",
+      "thematic_bucket_id": "D_docs_tree_json_mirror",
+      "thematic_nature": "stale_or_documentation_copy",
+      "thematic_note": "JSON mirrors (e.g. registry copies) under docs/ vs data/config allow-list"
+    },
+    {
+      "file": "docs/.vscode/tasks.json",
+      "extension": ".json",
+      "current_top": "docs",
+      "thematic_bucket_id": "D_docs_tree_json_mirror",
+      "thematic_nature": "stale_or_documentation_copy",
+      "thematic_note": "JSON mirrors (e.g. registry copies) under docs/ vs data/config allow-list"
+    },
+    {
+      "file": "deploy/z_bridge_soft/package.json",
+      "extension": ".json",
+      "current_top": "deploy",
+      "thematic_bucket_id": "F_deploy_edge_bundle_tree",
+      "thematic_nature": "edge_layout_outside_apps_packages",
+      "thematic_note": "Cloudflare/deploy helpers may use ts/tsx outside ROUTING defaults"
+    },
+    {
+      "file": "dashboard/.vscode/extensions.json",
+      "extension": ".json",
+      "current_top": "dashboard",
+      "thematic_bucket_id": "G_misc_residual_pairs",
+      "thematic_nature": "misc_extension_x_top_residual",
+      "thematic_note": "Dashboard .vscode/json, archive, apps outliers — finer split is in aggregates."
+    },
+    {
+      "file": "dashboard/.vscode/launch.json",
+      "extension": ".json",
+      "current_top": "dashboard",
+      "thematic_bucket_id": "G_misc_residual_pairs",
+      "thematic_nature": "misc_extension_x_top_residual",
+      "thematic_note": "Dashboard .vscode/json, archive, apps outliers — finer split is in aggregates."
+    },
+    {
+      "file": "dashboard/.vscode/profiles.json",
+      "extension": ".json",
+      "current_top": "dashboard",
+      "thematic_bucket_id": "G_misc_residual_pairs",
+      "thematic_nature": "misc_extension_x_top_residual",
+      "thematic_note": "Dashboard .vscode/json, archive, apps outliers — finer split is in aggregates."
+    },
+    {
+      "file": "dashboard/.vscode/settings.json",
+      "extension": ".json",
+      "current_top": "dashboard",
+      "thematic_bucket_id": "G_misc_residual_pairs",
+      "thematic_nature": "misc_extension_x_top_residual",
+      "thematic_note": "Dashboard .vscode/json, archive, apps outliers — finer split is in aggregates."
+    },
+    {
+      "file": "dashboard/.vscode/tasks.json",
+      "extension": ".json",
+      "current_top": "dashboard",
+      "thematic_bucket_id": "G_misc_residual_pairs",
+      "thematic_nature": "misc_extension_x_top_residual",
+      "thematic_note": "Dashboard .vscode/json, archive, apps outliers — finer split is in aggregates."
+    },
+    {
+      "file": "core_engine/ggaesp_memory.ts",
+      "extension": ".ts",
+      "current_top": "core_engine",
+      "thematic_bucket_id": "G_misc_residual_pairs",
+      "thematic_nature": "misc_extension_x_top_residual",
+      "thematic_note": "Dashboard .vscode/json, archive, apps outliers — finer split is in aggregates."
+    },
+    {
+      "file": "core_engine/ggaesp_pipeline.ts",
+      "extension": ".ts",
+      "current_top": "core_engine",
+      "thematic_bucket_id": "G_misc_residual_pairs",
+      "thematic_nature": "misc_extension_x_top_residual",
+      "thematic_note": "Dashboard .vscode/json, archive, apps outliers — finer split is in aggregates."
+    },
+    {
+      "file": "core_engine/ggaesp_test.ts",
+      "extension": ".ts",
+      "current_top": "core_engine",
+      "thematic_bucket_id": "G_misc_residual_pairs",
+      "thematic_nature": "misc_extension_x_top_residual",
+      "thematic_note": "Dashboard .vscode/json, archive, apps outliers — finer split is in aggregates."
+    },
+    {
+      "file": "core_engine/tsconfig.heatmap_dev_sample.json",
+      "extension": ".json",
+      "current_top": "core_engine",
+      "thematic_bucket_id": "G_misc_residual_pairs",
+      "thematic_nature": "misc_extension_x_top_residual",
+      "thematic_note": "Dashboard .vscode/json, archive, apps outliers — finer split is in aggregates."
+    },
+    {
+      "file": "core_engine/tsconfig.json",
+      "extension": ".json",
+      "current_top": "core_engine",
+      "thematic_bucket_id": "G_misc_residual_pairs",
+      "thematic_nature": "misc_extension_x_top_residual",
+      "thematic_note": "Dashboard .vscode/json, archive, apps outliers — finer split is in aggregates."
+    },
+    {
+      "file": "core_engine/tsconfig.node.json",
+      "extension": ".json",
+      "current_top": "core_engine",
+      "thematic_bucket_id": "G_misc_residual_pairs",
+      "thematic_nature": "misc_extension_x_top_residual",
+      "thematic_note": "Dashboard .vscode/json, archive, apps outliers — finer split is in aggregates."
+    },
+    {
+      "file": "core_engine/node/ggaesp_memory.d.ts",
+      "extension": ".ts",
+      "current_top": "core_engine",
+      "thematic_bucket_id": "G_misc_residual_pairs",
+      "thematic_nature": "misc_extension_x_top_residual",
+      "thematic_note": "Dashboard .vscode/json, archive, apps outliers — finer split is in aggregates."
+    },
+    {
+      "file": "core_engine/node/ggaesp_memory.js",
+      "extension": ".js",
+      "current_top": "core_engine",
+      "thematic_bucket_id": "G_misc_residual_pairs",
+      "thematic_nature": "misc_extension_x_top_residual",
+      "thematic_note": "Dashboard .vscode/json, archive, apps outliers — finer split is in aggregates."
+    },
+    {
+      "file": "core_engine/heatmap_dev/ggaesp_heatmap_dev_sample.ts",
+      "extension": ".ts",
+      "current_top": "core_engine",
+      "thematic_bucket_id": "G_misc_residual_pairs",
+      "thematic_nature": "misc_extension_x_top_residual",
+      "thematic_note": "Dashboard .vscode/json, archive, apps outliers — finer split is in aggregates."
+    },
+    {
+      "file": "core_engine/heatmap_dev/ggaesp_heatmap_go_dev_sample.ts",
+      "extension": ".ts",
+      "current_top": "core_engine",
+      "thematic_bucket_id": "G_misc_residual_pairs",
+      "thematic_nature": "misc_extension_x_top_residual",
+      "thematic_note": "Dashboard .vscode/json, archive, apps outliers — finer split is in aggregates."
+    },
+    {
+      "file": "core_engine/dist_heatmap/ggaesp_heatmap_dev_sample.js",
+      "extension": ".js",
+      "current_top": "core_engine",
+      "thematic_bucket_id": "G_misc_residual_pairs",
+      "thematic_nature": "misc_extension_x_top_residual",
+      "thematic_note": "Dashboard .vscode/json, archive, apps outliers — finer split is in aggregates."
+    },
+    {
+      "file": "core_engine/dist_heatmap/ggaesp_heatmap_go_dev_sample.js",
+      "extension": ".js",
+      "current_top": "core_engine",
+      "thematic_bucket_id": "G_misc_residual_pairs",
+      "thematic_nature": "misc_extension_x_top_residual",
+      "thematic_note": "Dashboard .vscode/json, archive, apps outliers — finer split is in aggregates."
+    },
+    {
+      "file": "core_engine/browser/ggaesp_heatmap_dev_sample.js",
+      "extension": ".js",
+      "current_top": "core_engine",
+      "thematic_bucket_id": "G_misc_residual_pairs",
+      "thematic_nature": "misc_extension_x_top_residual",
+      "thematic_note": "Dashboard .vscode/json, archive, apps outliers — finer split is in aggregates."
+    },
+    {
+      "file": "core_engine/browser/ggaesp_heatmap_go_dev_sample.js",
+      "extension": ".js",
+      "current_top": "core_engine",
+      "thematic_bucket_id": "G_misc_residual_pairs",
+      "thematic_nature": "misc_extension_x_top_residual",
+      "thematic_note": "Dashboard .vscode/json, archive, apps outliers — finer split is in aggregates."
+    },
+    {
+      "file": "core_engine/browser/ggaesp_pipeline.d.ts",
+      "extension": ".ts",
+      "current_top": "core_engine",
+      "thematic_bucket_id": "G_misc_residual_pairs",
+      "thematic_nature": "misc_extension_x_top_residual",
+      "thematic_note": "Dashboard .vscode/json, archive, apps outliers — finer split is in aggregates."
+    },
+    {
+      "file": "core_engine/browser/ggaesp_pipeline.js",
+      "extension": ".js",
+      "current_top": "core_engine",
+      "thematic_bucket_id": "G_misc_residual_pairs",
+      "thematic_nature": "misc_extension_x_top_residual",
+      "thematic_note": "Dashboard .vscode/json, archive, apps outliers — finer split is in aggregates."
+    },
+    {
+      "file": "core_engine/browser/ggaesp_test.d.ts",
+      "extension": ".ts",
+      "current_top": "core_engine",
+      "thematic_bucket_id": "G_misc_residual_pairs",
+      "thematic_nature": "misc_extension_x_top_residual",
+      "thematic_note": "Dashboard .vscode/json, archive, apps outliers — finer split is in aggregates."
+    },
+    {
+      "file": "core_engine/browser/ggaesp_test.js",
+      "extension": ".js",
+      "current_top": "core_engine",
+      "thematic_bucket_id": "G_misc_residual_pairs",
+      "thematic_nature": "misc_extension_x_top_residual",
+      "thematic_note": "Dashboard .vscode/json, archive, apps outliers — finer split is in aggregates."
+    },
+    {
+      "file": "core/thresholds.json",
+      "extension": ".json",
+      "current_top": "core",
+      "thematic_bucket_id": "G_misc_residual_pairs",
+      "thematic_nature": "misc_extension_x_top_residual",
+      "thematic_note": "Dashboard .vscode/json, archive, apps outliers — finer split is in aggregates."
+    },
+    {
+      "file": "core/zals/zals_nodes.json",
+      "extension": ".json",
+      "current_top": "core",
+      "thematic_bucket_id": "G_misc_residual_pairs",
+      "thematic_nature": "misc_extension_x_top_residual",
+      "thematic_note": "Dashboard .vscode/json, archive, apps outliers — finer split is in aggregates."
+    },
+    {
+      "file": "core/zals/zals_queue.json",
+      "extension": ".json",
+      "current_top": "core",
+      "thematic_bucket_id": "G_misc_residual_pairs",
+      "thematic_nature": "misc_extension_x_top_residual",
+      "thematic_note": "Dashboard .vscode/json, archive, apps outliers — finer split is in aggregates."
+    },
+    {
+      "file": "core/zals/zals_schema.json",
+      "extension": ".json",
+      "current_top": "core",
+      "thematic_bucket_id": "G_misc_residual_pairs",
+      "thematic_nature": "misc_extension_x_top_residual",
+      "thematic_note": "Dashboard .vscode/json, archive, apps outliers — finer split is in aggregates."
+    },
+    {
+      "file": "core/release_snapshot_ver/Z_module_registry.json",
+      "extension": ".json",
+      "current_top": "core",
+      "thematic_bucket_id": "G_misc_residual_pairs",
+      "thematic_nature": "misc_extension_x_top_residual",
+      "thematic_note": "Dashboard .vscode/json, archive, apps outliers — finer split is in aggregates."
+    },
+    {
+      "file": "core/release_snapshot/metadata_snapshot_20260223T191304Z.json",
+      "extension": ".json",
+      "current_top": "core",
+      "thematic_bucket_id": "G_misc_residual_pairs",
+      "thematic_nature": "misc_extension_x_top_residual",
+      "thematic_note": "Dashboard .vscode/json, archive, apps outliers — finer split is in aggregates."
+    },
+    {
+      "file": "core/release_snapshot/registry_snapshot_20260223T191304Z.json",
+      "extension": ".json",
+      "current_top": "core",
+      "thematic_bucket_id": "G_misc_residual_pairs",
+      "thematic_nature": "misc_extension_x_top_residual",
+      "thematic_note": "Dashboard .vscode/json, archive, apps outliers — finer split is in aggregates."
+    },
+    {
+      "file": "core/exports/metadata_snapshot_20260223T190007Z.json",
+      "extension": ".json",
+      "current_top": "core",
+      "thematic_bucket_id": "G_misc_residual_pairs",
+      "thematic_nature": "misc_extension_x_top_residual",
+      "thematic_note": "Dashboard .vscode/json, archive, apps outliers — finer split is in aggregates."
+    },
+    {
+      "file": "core/exports/metadata_snapshot_20260223T191304Z.json",
+      "extension": ".json",
+      "current_top": "core",
+      "thematic_bucket_id": "G_misc_residual_pairs",
+      "thematic_nature": "misc_extension_x_top_residual",
+      "thematic_note": "Dashboard .vscode/json, archive, apps outliers — finer split is in aggregates."
+    },
+    {
+      "file": "core/exports/registry_snapshot_20260223T190007Z.json",
+      "extension": ".json",
+      "current_top": "core",
+      "thematic_bucket_id": "G_misc_residual_pairs",
+      "thematic_nature": "misc_extension_x_top_residual",
+      "thematic_note": "Dashboard .vscode/json, archive, apps outliers — finer split is in aggregates."
+    },
+    {
+      "file": "core/exports/registry_snapshot_20260223T191304Z.json",
+      "extension": ".json",
+      "current_top": "core",
+      "thematic_bucket_id": "G_misc_residual_pairs",
+      "thematic_nature": "misc_extension_x_top_residual",
+      "thematic_note": "Dashboard .vscode/json, archive, apps outliers — finer split is in aggregates."
+    },
+    {
+      "file": "core/data/Z_module_registry.json",
+      "extension": ".json",
+      "current_top": "core",
+      "thematic_bucket_id": "G_misc_residual_pairs",
+      "thematic_nature": "misc_extension_x_top_residual",
+      "thematic_note": "Dashboard .vscode/json, archive, apps outliers — finer split is in aggregates."
+    },
+    {
+      "file": "core/core/data/Z_module_registry.json",
+      "extension": ".json",
+      "current_top": "core",
+      "thematic_bucket_id": "G_misc_residual_pairs",
+      "thematic_nature": "misc_extension_x_top_residual",
+      "thematic_note": "Dashboard .vscode/json, archive, apps outliers — finer split is in aggregates."
+    },
+    {
+      "file": "core/.vscode/extensions.json",
+      "extension": ".json",
+      "current_top": "core",
+      "thematic_bucket_id": "G_misc_residual_pairs",
+      "thematic_nature": "misc_extension_x_top_residual",
+      "thematic_note": "Dashboard .vscode/json, archive, apps outliers — finer split is in aggregates."
+    },
+    {
+      "file": "core/.vscode/launch.json",
+      "extension": ".json",
+      "current_top": "core",
+      "thematic_bucket_id": "G_misc_residual_pairs",
+      "thematic_nature": "misc_extension_x_top_residual",
+      "thematic_note": "Dashboard .vscode/json, archive, apps outliers — finer split is in aggregates."
+    },
+    {
+      "file": "core/.vscode/profiles.json",
+      "extension": ".json",
+      "current_top": "core",
+      "thematic_bucket_id": "G_misc_residual_pairs",
+      "thematic_nature": "misc_extension_x_top_residual",
+      "thematic_note": "Dashboard .vscode/json, archive, apps outliers — finer split is in aggregates."
+    },
+    {
+      "file": "core/.vscode/settings.json",
+      "extension": ".json",
+      "current_top": "core",
+      "thematic_bucket_id": "G_misc_residual_pairs",
+      "thematic_nature": "misc_extension_x_top_residual",
+      "thematic_note": "Dashboard .vscode/json, archive, apps outliers — finer split is in aggregates."
+    },
+    {
+      "file": "core/.vscode/tasks.json",
+      "extension": ".json",
+      "current_top": "core",
+      "thematic_bucket_id": "G_misc_residual_pairs",
+      "thematic_nature": "misc_extension_x_top_residual",
+      "thematic_note": "Dashboard .vscode/json, archive, apps outliers — finer split is in aggregates."
+    },
+    {
+      "file": "bots/README.md",
+      "extension": ".md",
+      "current_top": "bots",
+      "thematic_bucket_id": "G_misc_residual_pairs",
+      "thematic_nature": "misc_extension_x_top_residual",
+      "thematic_note": "Dashboard .vscode/json, archive, apps outliers — finer split is in aggregates."
+    },
+    {
+      "file": "bots/_lib/decision_history.mjs",
+      "extension": ".mjs",
+      "current_top": "bots",
+      "thematic_bucket_id": "G_misc_residual_pairs",
+      "thematic_nature": "misc_extension_x_top_residual",
+      "thematic_note": "Dashboard .vscode/json, archive, apps outliers — finer split is in aggregates."
+    },
+    {
+      "file": "bots/_lib/hub_root.mjs",
+      "extension": ".mjs",
+      "current_top": "bots",
+      "thematic_bucket_id": "G_misc_residual_pairs",
+      "thematic_nature": "misc_extension_x_top_residual",
+      "thematic_note": "Dashboard .vscode/json, archive, apps outliers — finer split is in aggregates."
+    },
+    {
+      "file": "bots/_lib/io.mjs",
+      "extension": ".mjs",
+      "current_top": "bots",
+      "thematic_bucket_id": "G_misc_residual_pairs",
+      "thematic_nature": "misc_extension_x_top_residual",
+      "thematic_note": "Dashboard .vscode/json, archive, apps outliers — finer split is in aggregates."
+    },
+    {
+      "file": "bots/_lib/registry_scan.mjs",
+      "extension": ".mjs",
+      "current_top": "bots",
+      "thematic_bucket_id": "G_misc_residual_pairs",
+      "thematic_nature": "misc_extension_x_top_residual",
+      "thematic_note": "Dashboard .vscode/json, archive, apps outliers — finer split is in aggregates."
+    },
+    {
+      "file": "bots/sync/sync_bot.mjs",
+      "extension": ".mjs",
+      "current_top": "bots",
+      "thematic_bucket_id": "G_misc_residual_pairs",
+      "thematic_nature": "misc_extension_x_top_residual",
+      "thematic_note": "Dashboard .vscode/json, archive, apps outliers — finer split is in aggregates."
+    },
+    {
+      "file": "bots/strategy/strategy_bot.mjs",
+      "extension": ".mjs",
+      "current_top": "bots",
+      "thematic_bucket_id": "G_misc_residual_pairs",
+      "thematic_nature": "misc_extension_x_top_residual",
+      "thematic_note": "Dashboard .vscode/json, archive, apps outliers — finer split is in aggregates."
+    },
+    {
+      "file": "bots/rootcause/rootcause_bot.mjs",
+      "extension": ".mjs",
+      "current_top": "bots",
+      "thematic_bucket_id": "G_misc_residual_pairs",
+      "thematic_nature": "misc_extension_x_top_residual",
+      "thematic_note": "Dashboard .vscode/json, archive, apps outliers — finer split is in aggregates."
+    },
+    {
+      "file": "bots/predict/predict_bot.mjs",
+      "extension": ".mjs",
+      "current_top": "bots",
+      "thematic_bucket_id": "G_misc_residual_pairs",
+      "thematic_nature": "misc_extension_x_top_residual",
+      "thematic_note": "Dashboard .vscode/json, archive, apps outliers — finer split is in aggregates."
+    },
+    {
+      "file": "bots/pattern/pattern_bot.mjs",
+      "extension": ".mjs",
+      "current_top": "bots",
+      "thematic_bucket_id": "G_misc_residual_pairs",
+      "thematic_nature": "misc_extension_x_top_residual",
+      "thematic_note": "Dashboard .vscode/json, archive, apps outliers — finer split is in aggregates."
+    },
+    {
+      "file": "bots/health/health_bot.mjs",
+      "extension": ".mjs",
+      "current_top": "bots",
+      "thematic_bucket_id": "G_misc_residual_pairs",
+      "thematic_nature": "misc_extension_x_top_residual",
+      "thematic_note": "Dashboard .vscode/json, archive, apps outliers — finer split is in aggregates."
+    },
+    {
+      "file": "bots/guardian/guardian_bot.mjs",
+      "extension": ".mjs",
+      "current_top": "bots",
+      "thematic_bucket_id": "G_misc_residual_pairs",
+      "thematic_nature": "misc_extension_x_top_residual",
+      "thematic_note": "Dashboard .vscode/json, archive, apps outliers — finer split is in aggregates."
+    },
+    {
+      "file": "bots/execution/execution_executor.mjs",
+      "extension": ".mjs",
+      "current_top": "bots",
+      "thematic_bucket_id": "G_misc_residual_pairs",
+      "thematic_nature": "misc_extension_x_top_residual",
+      "thematic_note": "Dashboard .vscode/json, archive, apps outliers — finer split is in aggregates."
+    },
+    {
+      "file": "bots/execution/execution_planner.mjs",
+      "extension": ".mjs",
+      "current_top": "bots",
+      "thematic_bucket_id": "G_misc_residual_pairs",
+      "thematic_nature": "misc_extension_x_top_residual",
+      "thematic_note": "Dashboard .vscode/json, archive, apps outliers — finer split is in aggregates."
+    },
+    {
+      "file": "bots/decision/decision_actions.mjs",
+      "extension": ".mjs",
+      "current_top": "bots",
+      "thematic_bucket_id": "G_misc_residual_pairs",
+      "thematic_nature": "misc_extension_x_top_residual",
+      "thematic_note": "Dashboard .vscode/json, archive, apps outliers — finer split is in aggregates."
+    },
+    {
+      "file": "bots/decision/decision_bot.mjs",
+      "extension": ".mjs",
+      "current_top": "bots",
+      "thematic_bucket_id": "G_misc_residual_pairs",
+      "thematic_nature": "misc_extension_x_top_residual",
+      "thematic_note": "Dashboard .vscode/json, archive, apps outliers — finer split is in aggregates."
+    },
+    {
+      "file": "bots/alerts/alert_bot.mjs",
+      "extension": ".mjs",
+      "current_top": "bots",
+      "thematic_bucket_id": "G_misc_residual_pairs",
+      "thematic_nature": "misc_extension_x_top_residual",
+      "thematic_note": "Dashboard .vscode/json, archive, apps outliers — finer split is in aggregates."
+    },
+    {
+      "file": "bots/adaptive/adaptive_bot.mjs",
+      "extension": ".mjs",
+      "current_top": "bots",
+      "thematic_bucket_id": "G_misc_residual_pairs",
+      "thematic_nature": "misc_extension_x_top_residual",
+      "thematic_note": "Dashboard .vscode/json, archive, apps outliers — finer split is in aggregates."
+    },
+    {
+      "file": "audio/README.md",
+      "extension": ".md",
+      "current_top": "audio",
+      "thematic_bucket_id": "G_misc_residual_pairs",
+      "thematic_nature": "misc_extension_x_top_residual",
+      "thematic_note": "Dashboard .vscode/json, archive, apps outliers — finer split is in aggregates."
+    },
+    {
+      "file": "audio/.vscode/extensions.json",
+      "extension": ".json",
+      "current_top": "audio",
+      "thematic_bucket_id": "G_misc_residual_pairs",
+      "thematic_nature": "misc_extension_x_top_residual",
+      "thematic_note": "Dashboard .vscode/json, archive, apps outliers — finer split is in aggregates."
+    },
+    {
+      "file": "audio/.vscode/launch.json",
+      "extension": ".json",
+      "current_top": "audio",
+      "thematic_bucket_id": "G_misc_residual_pairs",
+      "thematic_nature": "misc_extension_x_top_residual",
+      "thematic_note": "Dashboard .vscode/json, archive, apps outliers — finer split is in aggregates."
+    },
+    {
+      "file": "audio/.vscode/profiles.json",
+      "extension": ".json",
+      "current_top": "audio",
+      "thematic_bucket_id": "G_misc_residual_pairs",
+      "thematic_nature": "misc_extension_x_top_residual",
+      "thematic_note": "Dashboard .vscode/json, archive, apps outliers — finer split is in aggregates."
+    },
+    {
+      "file": "audio/.vscode/settings.json",
+      "extension": ".json",
+      "current_top": "audio",
+      "thematic_bucket_id": "G_misc_residual_pairs",
+      "thematic_nature": "misc_extension_x_top_residual",
+      "thematic_note": "Dashboard .vscode/json, archive, apps outliers — finer split is in aggregates."
+    },
+    {
+      "file": "audio/.vscode/tasks.json",
+      "extension": ".json",
+      "current_top": "audio",
+      "thematic_bucket_id": "G_misc_residual_pairs",
+      "thematic_nature": "misc_extension_x_top_residual",
+      "thematic_note": "Dashboard .vscode/json, archive, apps outliers — finer split is in aggregates."
+    },
+    {
+      "file": "archive/README.md",
+      "extension": ".md",
+      "current_top": "archive",
+      "thematic_bucket_id": "G_misc_residual_pairs",
+      "thematic_nature": "misc_extension_x_top_residual",
+      "thematic_note": "Dashboard .vscode/json, archive, apps outliers — finer split is in aggregates."
+    },
+    {
+      "file": "archive/cleanup_2026-02-13/import { getHarishaContext, tooltipForAc.ts",
+      "extension": ".ts",
+      "current_top": "archive",
+      "thematic_bucket_id": "G_misc_residual_pairs",
+      "thematic_nature": "misc_extension_x_top_residual",
+      "thematic_note": "Dashboard .vscode/json, archive, apps outliers — finer split is in aggregates."
+    },
+    {
+      "file": "archive/cleanup_2026-02-13/jsnode; {}.html",
+      "extension": ".html",
+      "current_top": "archive",
+      "thematic_bucket_id": "G_misc_residual_pairs",
+      "thematic_nature": "misc_extension_x_top_residual",
+      "thematic_note": "Dashboard .vscode/json, archive, apps outliers — finer split is in aggregates."
+    },
+    {
+      "file": "archive/cleanup_2026-02-13/Untitled-4.js",
+      "extension": ".js",
+      "current_top": "archive",
+      "thematic_bucket_id": "G_misc_residual_pairs",
+      "thematic_nature": "misc_extension_x_top_residual",
+      "thematic_note": "Dashboard .vscode/json, archive, apps outliers — finer split is in aggregates."
+    },
+    {
+      "file": "archive/.vscode/extensions.json",
+      "extension": ".json",
+      "current_top": "archive",
+      "thematic_bucket_id": "G_misc_residual_pairs",
+      "thematic_nature": "misc_extension_x_top_residual",
+      "thematic_note": "Dashboard .vscode/json, archive, apps outliers — finer split is in aggregates."
+    },
+    {
+      "file": "archive/.vscode/launch.json",
+      "extension": ".json",
+      "current_top": "archive",
+      "thematic_bucket_id": "G_misc_residual_pairs",
+      "thematic_nature": "misc_extension_x_top_residual",
+      "thematic_note": "Dashboard .vscode/json, archive, apps outliers — finer split is in aggregates."
+    },
+    {
+      "file": "archive/.vscode/profiles.json",
+      "extension": ".json",
+      "current_top": "archive",
+      "thematic_bucket_id": "G_misc_residual_pairs",
+      "thematic_nature": "misc_extension_x_top_residual",
+      "thematic_note": "Dashboard .vscode/json, archive, apps outliers — finer split is in aggregates."
+    },
+    {
+      "file": "archive/.vscode/settings.json",
+      "extension": ".json",
+      "current_top": "archive",
+      "thematic_bucket_id": "G_misc_residual_pairs",
+      "thematic_nature": "misc_extension_x_top_residual",
+      "thematic_note": "Dashboard .vscode/json, archive, apps outliers — finer split is in aggregates."
+    },
+    {
+      "file": "archive/.vscode/tasks.json",
+      "extension": ".json",
+      "current_top": "archive",
+      "thematic_bucket_id": "G_misc_residual_pairs",
+      "thematic_nature": "misc_extension_x_top_residual",
+      "thematic_note": "Dashboard .vscode/json, archive, apps outliers — finer split is in aggregates."
+    },
+    {
+      "file": "apps/z_gadget_mirrors/mirror_decision_engine/engine_esm/mde_adaptive_weights.mjs",
+      "extension": ".mjs",
+      "current_top": "apps",
+      "thematic_bucket_id": "G_misc_residual_pairs",
+      "thematic_nature": "misc_extension_x_top_residual",
+      "thematic_note": "Dashboard .vscode/json, archive, apps outliers — finer split is in aggregates."
+    },
+    {
+      "file": "apps/z_gadget_mirrors/mirror_decision_engine/engine_esm/mde_costing.mjs",
+      "extension": ".mjs",
+      "current_top": "apps",
+      "thematic_bucket_id": "G_misc_residual_pairs",
+      "thematic_nature": "misc_extension_x_top_residual",
+      "thematic_note": "Dashboard .vscode/json, archive, apps outliers — finer split is in aggregates."
+    },
+    {
+      "file": "apps/z_gadget_mirrors/mirror_decision_engine/engine_esm/mde_forecast.mjs",
+      "extension": ".mjs",
+      "current_top": "apps",
+      "thematic_bucket_id": "G_misc_residual_pairs",
+      "thematic_nature": "misc_extension_x_top_residual",
+      "thematic_note": "Dashboard .vscode/json, archive, apps outliers — finer split is in aggregates."
+    },
+    {
+      "file": "apps/z_gadget_mirrors/mirror_decision_engine/engine_esm/mde_narrative.mjs",
+      "extension": ".mjs",
+      "current_top": "apps",
+      "thematic_bucket_id": "G_misc_residual_pairs",
+      "thematic_nature": "misc_extension_x_top_residual",
+      "thematic_note": "Dashboard .vscode/json, archive, apps outliers — finer split is in aggregates."
+    },
+    {
+      "file": "apps/z_gadget_mirrors/mirror_decision_engine/engine_esm/mde_profile_suggester.mjs",
+      "extension": ".mjs",
+      "current_top": "apps",
+      "thematic_bucket_id": "G_misc_residual_pairs",
+      "thematic_nature": "misc_extension_x_top_residual",
+      "thematic_note": "Dashboard .vscode/json, archive, apps outliers — finer split is in aggregates."
+    },
+    {
+      "file": "apps/z_gadget_mirrors/mirror_decision_engine/engine_esm/mde_roles.mjs",
+      "extension": ".mjs",
+      "current_top": "apps",
+      "thematic_bucket_id": "G_misc_residual_pairs",
+      "thematic_nature": "misc_extension_x_top_residual",
+      "thematic_note": "Dashboard .vscode/json, archive, apps outliers — finer split is in aggregates."
+    },
+    {
+      "file": "apps/z_gadget_mirrors/mirror_decision_engine/engine_esm/mde_scoring.mjs",
+      "extension": ".mjs",
+      "current_top": "apps",
+      "thematic_bucket_id": "G_misc_residual_pairs",
+      "thematic_nature": "misc_extension_x_top_residual",
+      "thematic_note": "Dashboard .vscode/json, archive, apps outliers — finer split is in aggregates."
+    },
+    {
+      "file": "apps/z_gadget_mirrors/mirror_decision_engine/engine_esm/mde_stability.mjs",
+      "extension": ".mjs",
+      "current_top": "apps",
+      "thematic_bucket_id": "G_misc_residual_pairs",
+      "thematic_nature": "misc_extension_x_top_residual",
+      "thematic_note": "Dashboard .vscode/json, archive, apps outliers — finer split is in aggregates."
+    },
+    {
+      "file": "apps/z_gadget_mirrors/mirror_decision_engine/engine_esm/mde_sustainability.mjs",
+      "extension": ".mjs",
+      "current_top": "apps",
+      "thematic_bucket_id": "G_misc_residual_pairs",
+      "thematic_nature": "misc_extension_x_top_residual",
+      "thematic_note": "Dashboard .vscode/json, archive, apps outliers — finer split is in aggregates."
+    },
+    {
+      "file": "apps/z_gadget_mirrors/mirror_decision_engine/engine_esm/mde_switching.mjs",
+      "extension": ".mjs",
+      "current_top": "apps",
+      "thematic_bucket_id": "G_misc_residual_pairs",
+      "thematic_nature": "misc_extension_x_top_residual",
+      "thematic_note": "Dashboard .vscode/json, archive, apps outliers — finer split is in aggregates."
+    },
+    {
+      "file": "apps/z_gadget_mirrors/mirror_decision_engine/engine_esm/mde_weighted.mjs",
+      "extension": ".mjs",
+      "current_top": "apps",
+      "thematic_bucket_id": "G_misc_residual_pairs",
+      "thematic_nature": "misc_extension_x_top_residual",
+      "thematic_note": "Dashboard .vscode/json, archive, apps outliers — finer split is in aggregates."
+    },
+    {
+      "file": "apps/z_gadget_mirrors/mirror_decision_engine/engine_esm/partner_router.mjs",
+      "extension": ".mjs",
+      "current_top": "apps",
+      "thematic_bucket_id": "G_misc_residual_pairs",
+      "thematic_nature": "misc_extension_x_top_residual",
+      "thematic_note": "Dashboard .vscode/json, archive, apps outliers — finer split is in aggregates."
+    },
+    {
+      "file": "apps/z_gadget_mirrors/mirror_decision_engine/engine_esm/pricing_router.mjs",
+      "extension": ".mjs",
+      "current_top": "apps",
+      "thematic_bucket_id": "G_misc_residual_pairs",
+      "thematic_nature": "misc_extension_x_top_residual",
+      "thematic_note": "Dashboard .vscode/json, archive, apps outliers — finer split is in aggregates."
+    },
+    {
+      "file": "apps/web/test/dashboard_state_route.test.mjs",
+      "extension": ".mjs",
+      "current_top": "apps",
+      "thematic_bucket_id": "G_misc_residual_pairs",
+      "thematic_nature": "misc_extension_x_top_residual",
+      "thematic_note": "Dashboard .vscode/json, archive, apps outliers — finer split is in aggregates."
+    },
+    {
+      "file": "apps/web/test/dbz_segment_import.test.mjs",
+      "extension": ".mjs",
+      "current_top": "apps",
+      "thematic_bucket_id": "G_misc_residual_pairs",
+      "thematic_nature": "misc_extension_x_top_residual",
+      "thematic_note": "Dashboard .vscode/json, archive, apps outliers — finer split is in aggregates."
+    },
+    {
+      "file": "apps/web/test/load_stress.test.mjs",
+      "extension": ".mjs",
+      "current_top": "apps",
+      "thematic_bucket_id": "G_misc_residual_pairs",
+      "thematic_nature": "misc_extension_x_top_residual",
+      "thematic_note": "Dashboard .vscode/json, archive, apps outliers — finer split is in aggregates."
+    },
+    {
+      "file": "apps/web/test/smoke.test.mjs",
+      "extension": ".mjs",
+      "current_top": "apps",
+      "thematic_bucket_id": "G_misc_residual_pairs",
+      "thematic_nature": "misc_extension_x_top_residual",
+      "thematic_note": "Dashboard .vscode/json, archive, apps outliers — finer split is in aggregates."
+    },
+    {
+      "file": "apps/web/test/structure.test.mjs",
+      "extension": ".mjs",
+      "current_top": "apps",
+      "thematic_bucket_id": "G_misc_residual_pairs",
+      "thematic_nature": "misc_extension_x_top_residual",
+      "thematic_note": "Dashboard .vscode/json, archive, apps outliers — finer split is in aggregates."
+    },
+    {
+      "file": "apps/web/test/z_qosmei_manifest_contract.test.mjs",
+      "extension": ".mjs",
+      "current_top": "apps",
+      "thematic_bucket_id": "G_misc_residual_pairs",
+      "thematic_nature": "misc_extension_x_top_residual",
+      "thematic_note": "Dashboard .vscode/json, archive, apps outliers — finer split is in aggregates."
+    },
+    {
+      "file": "apps/web/test/z_qosmei_observation.test.mjs",
+      "extension": ".mjs",
+      "current_top": "apps",
+      "thematic_bucket_id": "G_misc_residual_pairs",
+      "thematic_nature": "misc_extension_x_top_residual",
+      "thematic_note": "Dashboard .vscode/json, archive, apps outliers — finer split is in aggregates."
+    },
+    {
+      "file": "apps/api/test/smoke.test.mjs",
+      "extension": ".mjs",
+      "current_top": "apps",
+      "thematic_bucket_id": "G_misc_residual_pairs",
+      "thematic_nature": "misc_extension_x_top_residual",
+      "thematic_note": "Dashboard .vscode/json, archive, apps outliers — finer split is in aggregates."
+    },
+    {
+      "file": "apps/api/test/structure.test.mjs",
+      "extension": ".mjs",
+      "current_top": "apps",
+      "thematic_bucket_id": "G_misc_residual_pairs",
+      "thematic_nature": "misc_extension_x_top_residual",
+      "thematic_note": "Dashboard .vscode/json, archive, apps outliers — finer split is in aggregates."
+    },
+    {
+      "file": "apps/api/src/mirrorsoul_routes.mjs",
+      "extension": ".mjs",
+      "current_top": "apps",
+      "thematic_bucket_id": "G_misc_residual_pairs",
+      "thematic_nature": "misc_extension_x_top_residual",
+      "thematic_note": "Dashboard .vscode/json, archive, apps outliers — finer split is in aggregates."
+    },
+    {
+      "file": "apps/api/src/zuno_flow_routes.mjs",
+      "extension": ".mjs",
+      "current_top": "apps",
+      "thematic_bucket_id": "G_misc_residual_pairs",
+      "thematic_nature": "misc_extension_x_top_residual",
+      "thematic_note": "Dashboard .vscode/json, archive, apps outliers — finer split is in aggregates."
+    },
+    {
+      "file": "apps/api/src/modules/mirrorSoul/controller.mjs",
+      "extension": ".mjs",
+      "current_top": "apps",
+      "thematic_bucket_id": "G_misc_residual_pairs",
+      "thematic_nature": "misc_extension_x_top_residual",
+      "thematic_note": "Dashboard .vscode/json, archive, apps outliers — finer split is in aggregates."
+    },
+    {
+      "file": "apps/api/src/modules/mirrorSoul/model.mjs",
+      "extension": ".mjs",
+      "current_top": "apps",
+      "thematic_bucket_id": "G_misc_residual_pairs",
+      "thematic_nature": "misc_extension_x_top_residual",
+      "thematic_note": "Dashboard .vscode/json, archive, apps outliers — finer split is in aggregates."
+    },
+    {
+      "file": "apps/api/src/modules/mirrorSoul/routes.mjs",
+      "extension": ".mjs",
+      "current_top": "apps",
+      "thematic_bucket_id": "G_misc_residual_pairs",
+      "thematic_nature": "misc_extension_x_top_residual",
+      "thematic_note": "Dashboard .vscode/json, archive, apps outliers — finer split is in aggregates."
+    },
+    {
+      "file": "apps/api/src/modules/mirrorSoul/service.mjs",
+      "extension": ".mjs",
+      "current_top": "apps",
+      "thematic_bucket_id": "G_misc_residual_pairs",
+      "thematic_nature": "misc_extension_x_top_residual",
+      "thematic_note": "Dashboard .vscode/json, archive, apps outliers — finer split is in aggregates."
+    },
+    {
+      "file": "Amk_Goku Worldwide Loterry/index.html",
+      "extension": ".html",
+      "current_top": "Amk_Goku Worldwide Loterry",
+      "thematic_bucket_id": "B_sibling_amk_goku_lotto_tree",
+      "thematic_nature": "embedded_sibling_or_nested_project",
+      "thematic_note": "Separate app tree under hub root; router uses first segment only."
+    },
+    {
+      "file": "Amk_Goku Worldwide Loterry/INTEGRITY_MANIFEST.md",
+      "extension": ".md",
+      "current_top": "Amk_Goku Worldwide Loterry",
+      "thematic_bucket_id": "B_sibling_amk_goku_lotto_tree",
+      "thematic_nature": "embedded_sibling_or_nested_project",
+      "thematic_note": "Separate app tree under hub root; router uses first segment only."
+    },
+    {
+      "file": "Amk_Goku Worldwide Loterry/README.md",
+      "extension": ".md",
+      "current_top": "Amk_Goku Worldwide Loterry",
+      "thematic_bucket_id": "B_sibling_amk_goku_lotto_tree",
+      "thematic_nature": "embedded_sibling_or_nested_project",
+      "thematic_note": "Separate app tree under hub root; router uses first segment only."
+    },
+    {
+      "file": "Amk_Goku Worldwide Loterry/release_notes.md",
+      "extension": ".md",
+      "current_top": "Amk_Goku Worldwide Loterry",
+      "thematic_bucket_id": "B_sibling_amk_goku_lotto_tree",
+      "thematic_nature": "embedded_sibling_or_nested_project",
+      "thematic_note": "Separate app tree under hub root; router uses first segment only."
+    },
+    {
+      "file": "Amk_Goku Worldwide Loterry/SYSTEM_STATUS.md",
+      "extension": ".md",
+      "current_top": "Amk_Goku Worldwide Loterry",
+      "thematic_bucket_id": "B_sibling_amk_goku_lotto_tree",
+      "thematic_nature": "embedded_sibling_or_nested_project",
+      "thematic_note": "Separate app tree under hub root; router uses first segment only."
+    },
+    {
+      "file": "Amk_Goku Worldwide Loterry/ui/bias_lens.js",
+      "extension": ".js",
+      "current_top": "Amk_Goku Worldwide Loterry",
+      "thematic_bucket_id": "B_sibling_amk_goku_lotto_tree",
+      "thematic_nature": "embedded_sibling_or_nested_project",
+      "thematic_note": "Separate app tree under hub root; router uses first segment only."
+    },
+    {
+      "file": "Amk_Goku Worldwide Loterry/ui/delivery.html",
+      "extension": ".html",
+      "current_top": "Amk_Goku Worldwide Loterry",
+      "thematic_bucket_id": "B_sibling_amk_goku_lotto_tree",
+      "thematic_nature": "embedded_sibling_or_nested_project",
+      "thematic_note": "Separate app tree under hub root; router uses first segment only."
+    },
+    {
+      "file": "Amk_Goku Worldwide Loterry/ui/drift_watch.html",
+      "extension": ".html",
+      "current_top": "Amk_Goku Worldwide Loterry",
+      "thematic_bucket_id": "B_sibling_amk_goku_lotto_tree",
+      "thematic_nature": "embedded_sibling_or_nested_project",
+      "thematic_note": "Separate app tree under hub root; router uses first segment only."
+    },
+    {
+      "file": "Amk_Goku Worldwide Loterry/ui/education_mode_toggle.js",
+      "extension": ".js",
+      "current_top": "Amk_Goku Worldwide Loterry",
+      "thematic_bucket_id": "B_sibling_amk_goku_lotto_tree",
+      "thematic_nature": "embedded_sibling_or_nested_project",
+      "thematic_note": "Separate app tree under hub root; router uses first segment only."
+    },
+    {
+      "file": "Amk_Goku Worldwide Loterry/ui/explanation_overlay.js",
+      "extension": ".js",
+      "current_top": "Amk_Goku Worldwide Loterry",
+      "thematic_bucket_id": "B_sibling_amk_goku_lotto_tree",
+      "thematic_nature": "embedded_sibling_or_nested_project",
+      "thematic_note": "Separate app tree under hub root; router uses first segment only."
+    },
+    {
+      "file": "Amk_Goku Worldwide Loterry/ui/feeling_panel.html",
+      "extension": ".html",
+      "current_top": "Amk_Goku Worldwide Loterry",
+      "thematic_bucket_id": "B_sibling_amk_goku_lotto_tree",
+      "thematic_nature": "embedded_sibling_or_nested_project",
+      "thematic_note": "Separate app tree under hub root; router uses first segment only."
+    },
+    {
+      "file": "Amk_Goku Worldwide Loterry/ui/kairocell_overlay.html",
+      "extension": ".html",
+      "current_top": "Amk_Goku Worldwide Loterry",
+      "thematic_bucket_id": "B_sibling_amk_goku_lotto_tree",
+      "thematic_nature": "embedded_sibling_or_nested_project",
+      "thematic_note": "Separate app tree under hub root; router uses first segment only."
+    },
+    {
+      "file": "Amk_Goku Worldwide Loterry/ui/lottery_app.html",
+      "extension": ".html",
+      "current_top": "Amk_Goku Worldwide Loterry",
+      "thematic_bucket_id": "B_sibling_amk_goku_lotto_tree",
+      "thematic_nature": "embedded_sibling_or_nested_project",
+      "thematic_note": "Separate app tree under hub root; router uses first segment only."
+    },
+    {
+      "file": "Amk_Goku Worldwide Loterry/ui/README.md",
+      "extension": ".md",
+      "current_top": "Amk_Goku Worldwide Loterry",
+      "thematic_bucket_id": "B_sibling_amk_goku_lotto_tree",
+      "thematic_nature": "embedded_sibling_or_nested_project",
+      "thematic_note": "Separate app tree under hub root; router uses first segment only."
+    },
+    {
+      "file": "Amk_Goku Worldwide Loterry/ui/role_badge.js",
+      "extension": ".js",
+      "current_top": "Amk_Goku Worldwide Loterry",
+      "thematic_bucket_id": "B_sibling_amk_goku_lotto_tree",
+      "thematic_nature": "embedded_sibling_or_nested_project",
+      "thematic_note": "Separate app tree under hub root; router uses first segment only."
+    },
+    {
+      "file": "Amk_Goku Worldwide Loterry/ui/trust_bond_modal.js",
+      "extension": ".js",
+      "current_top": "Amk_Goku Worldwide Loterry",
+      "thematic_bucket_id": "B_sibling_amk_goku_lotto_tree",
+      "thematic_nature": "embedded_sibling_or_nested_project",
+      "thematic_note": "Separate app tree under hub root; router uses first segment only."
+    },
+    {
+      "file": "Amk_Goku Worldwide Loterry/ui/world_observer.html",
+      "extension": ".html",
+      "current_top": "Amk_Goku Worldwide Loterry",
+      "thematic_bucket_id": "B_sibling_amk_goku_lotto_tree",
+      "thematic_nature": "embedded_sibling_or_nested_project",
+      "thematic_note": "Separate app tree under hub root; router uses first segment only."
+    },
+    {
+      "file": "Amk_Goku Worldwide Loterry/ui/z_apicon_panel.js",
+      "extension": ".js",
+      "current_top": "Amk_Goku Worldwide Loterry",
+      "thematic_bucket_id": "B_sibling_amk_goku_lotto_tree",
+      "thematic_nature": "embedded_sibling_or_nested_project",
+      "thematic_note": "Separate app tree under hub root; router uses first segment only."
+    },
+    {
+      "file": "Amk_Goku Worldwide Loterry/ui/z_bootstrap.js",
+      "extension": ".js",
+      "current_top": "Amk_Goku Worldwide Loterry",
+      "thematic_bucket_id": "B_sibling_amk_goku_lotto_tree",
+      "thematic_nature": "embedded_sibling_or_nested_project",
+      "thematic_note": "Separate app tree under hub root; router uses first segment only."
+    },
+    {
+      "file": "Amk_Goku Worldwide Loterry/ui/z_notebook_rhythm.js",
+      "extension": ".js",
+      "current_top": "Amk_Goku Worldwide Loterry",
+      "thematic_bucket_id": "B_sibling_amk_goku_lotto_tree",
+      "thematic_nature": "embedded_sibling_or_nested_project",
+      "thematic_note": "Separate app tree under hub root; router uses first segment only."
+    },
+    {
+      "file": "Amk_Goku Worldwide Loterry/ui/z_rhythm_indicator.js",
+      "extension": ".js",
+      "current_top": "Amk_Goku Worldwide Loterry",
+      "thematic_bucket_id": "B_sibling_amk_goku_lotto_tree",
+      "thematic_nature": "embedded_sibling_or_nested_project",
+      "thematic_note": "Separate app tree under hub root; router uses first segment only."
+    },
+    {
+      "file": "Amk_Goku Worldwide Loterry/ui/z_teacher_panel.js",
+      "extension": ".js",
+      "current_top": "Amk_Goku Worldwide Loterry",
+      "thematic_bucket_id": "B_sibling_amk_goku_lotto_tree",
+      "thematic_nature": "embedded_sibling_or_nested_project",
+      "thematic_note": "Separate app tree under hub root; router uses first segment only."
+    },
+    {
+      "file": "Amk_Goku Worldwide Loterry/ui/public_trust/index.html",
+      "extension": ".html",
+      "current_top": "Amk_Goku Worldwide Loterry",
+      "thematic_bucket_id": "B_sibling_amk_goku_lotto_tree",
+      "thematic_nature": "embedded_sibling_or_nested_project",
+      "thematic_note": "Separate app tree under hub root; router uses first segment only."
+    },
+    {
+      "file": "Amk_Goku Worldwide Loterry/ui/public_trust/trust_portal.js",
+      "extension": ".js",
+      "current_top": "Amk_Goku Worldwide Loterry",
+      "thematic_bucket_id": "B_sibling_amk_goku_lotto_tree",
+      "thematic_nature": "embedded_sibling_or_nested_project",
+      "thematic_note": "Separate app tree under hub root; router uses first segment only."
+    },
+    {
+      "file": "Amk_Goku Worldwide Loterry/ui/notebook/basic_notebook.css",
+      "extension": ".css",
+      "current_top": "Amk_Goku Worldwide Loterry",
+      "thematic_bucket_id": "B_sibling_amk_goku_lotto_tree",
+      "thematic_nature": "embedded_sibling_or_nested_project",
+      "thematic_note": "Separate app tree under hub root; router uses first segment only."
+    },
+    {
+      "file": "Amk_Goku Worldwide Loterry/ui/notebook/basic_notebook.html",
+      "extension": ".html",
+      "current_top": "Amk_Goku Worldwide Loterry",
+      "thematic_bucket_id": "B_sibling_amk_goku_lotto_tree",
+      "thematic_nature": "embedded_sibling_or_nested_project",
+      "thematic_note": "Separate app tree under hub root; router uses first segment only."
+    },
+    {
+      "file": "Amk_Goku Worldwide Loterry/ui/notebook/basic_notebook.js",
+      "extension": ".js",
+      "current_top": "Amk_Goku Worldwide Loterry",
+      "thematic_bucket_id": "B_sibling_amk_goku_lotto_tree",
+      "thematic_nature": "embedded_sibling_or_nested_project",
+      "thematic_note": "Separate app tree under hub root; router uses first segment only."
+    },
+    {
+      "file": "Amk_Goku Worldwide Loterry/ui/lottery_vault/checklist.html",
+      "extension": ".html",
+      "current_top": "Amk_Goku Worldwide Loterry",
+      "thematic_bucket_id": "B_sibling_amk_goku_lotto_tree",
+      "thematic_nature": "embedded_sibling_or_nested_project",
+      "thematic_note": "Separate app tree under hub root; router uses first segment only."
+    },
+    {
+      "file": "Amk_Goku Worldwide Loterry/ui/lottery_vault/checklist.js",
+      "extension": ".js",
+      "current_top": "Amk_Goku Worldwide Loterry",
+      "thematic_bucket_id": "B_sibling_amk_goku_lotto_tree",
+      "thematic_nature": "embedded_sibling_or_nested_project",
+      "thematic_note": "Separate app tree under hub root; router uses first segment only."
+    },
+    {
+      "file": "Amk_Goku Worldwide Loterry/ui/lottery-dashboard/README.md",
+      "extension": ".md",
+      "current_top": "Amk_Goku Worldwide Loterry",
+      "thematic_bucket_id": "B_sibling_amk_goku_lotto_tree",
+      "thematic_nature": "embedded_sibling_or_nested_project",
+      "thematic_note": "Separate app tree under hub root; router uses first segment only."
+    },
+    {
+      "file": "Amk_Goku Worldwide Loterry/ui/internal/jailcell_panel.js",
+      "extension": ".js",
+      "current_top": "Amk_Goku Worldwide Loterry",
+      "thematic_bucket_id": "B_sibling_amk_goku_lotto_tree",
+      "thematic_nature": "embedded_sibling_or_nested_project",
+      "thematic_note": "Separate app tree under hub root; router uses first segment only."
+    },
+    {
+      "file": "Amk_Goku Worldwide Loterry/ui/education/edu_mode.js",
+      "extension": ".js",
+      "current_top": "Amk_Goku Worldwide Loterry",
+      "thematic_bucket_id": "B_sibling_amk_goku_lotto_tree",
+      "thematic_nature": "embedded_sibling_or_nested_project",
+      "thematic_note": "Separate app tree under hub root; router uses first segment only."
+    },
+    {
+      "file": "Amk_Goku Worldwide Loterry/ui/education/index.html",
+      "extension": ".html",
+      "current_top": "Amk_Goku Worldwide Loterry",
+      "thematic_bucket_id": "B_sibling_amk_goku_lotto_tree",
+      "thematic_nature": "embedded_sibling_or_nested_project",
+      "thematic_note": "Separate app tree under hub root; router uses first segment only."
+    },
+    {
+      "file": "Amk_Goku Worldwide Loterry/ui/education/learning_cards.html",
+      "extension": ".html",
+      "current_top": "Amk_Goku Worldwide Loterry",
+      "thematic_bucket_id": "B_sibling_amk_goku_lotto_tree",
+      "thematic_nature": "embedded_sibling_or_nested_project",
+      "thematic_note": "Separate app tree under hub root; router uses first segment only."
+    },
+    {
+      "file": "Amk_Goku Worldwide Loterry/ui/education/orientation.html",
+      "extension": ".html",
+      "current_top": "Amk_Goku Worldwide Loterry",
+      "thematic_bucket_id": "B_sibling_amk_goku_lotto_tree",
+      "thematic_nature": "embedded_sibling_or_nested_project",
+      "thematic_note": "Separate app tree under hub root; router uses first segment only."
+    },
+    {
+      "file": "Amk_Goku Worldwide Loterry/ui/drift_watch/drift_watch.js",
+      "extension": ".js",
+      "current_top": "Amk_Goku Worldwide Loterry",
+      "thematic_bucket_id": "B_sibling_amk_goku_lotto_tree",
+      "thematic_nature": "embedded_sibling_or_nested_project",
+      "thematic_note": "Separate app tree under hub root; router uses first segment only."
+    },
+    {
+      "file": "Amk_Goku Worldwide Loterry/ui/drift_watch/index.html",
+      "extension": ".html",
+      "current_top": "Amk_Goku Worldwide Loterry",
+      "thematic_bucket_id": "B_sibling_amk_goku_lotto_tree",
+      "thematic_nature": "embedded_sibling_or_nested_project",
+      "thematic_note": "Separate app tree under hub root; router uses first segment only."
+    },
+    {
+      "file": "Amk_Goku Worldwide Loterry/ui/circles/circle_learning_view.html",
+      "extension": ".html",
+      "current_top": "Amk_Goku Worldwide Loterry",
+      "thematic_bucket_id": "B_sibling_amk_goku_lotto_tree",
+      "thematic_nature": "embedded_sibling_or_nested_project",
+      "thematic_note": "Separate app tree under hub root; router uses first segment only."
+    },
+    {
+      "file": "Amk_Goku Worldwide Loterry/trust/education_mode_mirror.html",
+      "extension": ".html",
+      "current_top": "Amk_Goku Worldwide Loterry",
+      "thematic_bucket_id": "B_sibling_amk_goku_lotto_tree",
+      "thematic_nature": "embedded_sibling_or_nested_project",
+      "thematic_note": "Separate app tree under hub root; router uses first segment only."
+    },
+    {
+      "file": "Amk_Goku Worldwide Loterry/trust/TRUST_BOND.md",
+      "extension": ".md",
+      "current_top": "Amk_Goku Worldwide Loterry",
+      "thematic_bucket_id": "B_sibling_amk_goku_lotto_tree",
+      "thematic_nature": "embedded_sibling_or_nested_project",
+      "thematic_note": "Separate app tree under hub root; router uses first segment only."
+    },
+    {
+      "file": "Amk_Goku Worldwide Loterry/trust/trust_stats.js",
+      "extension": ".js",
+      "current_top": "Amk_Goku Worldwide Loterry",
+      "thematic_bucket_id": "B_sibling_amk_goku_lotto_tree",
+      "thematic_nature": "embedded_sibling_or_nested_project",
+      "thematic_note": "Separate app tree under hub root; router uses first segment only."
+    },
+    {
+      "file": "Amk_Goku Worldwide Loterry/trust/trust_walkthrough.html",
+      "extension": ".html",
+      "current_top": "Amk_Goku Worldwide Loterry",
+      "thematic_bucket_id": "B_sibling_amk_goku_lotto_tree",
+      "thematic_nature": "embedded_sibling_or_nested_project",
+      "thematic_note": "Separate app tree under hub root; router uses first segment only."
+    },
+    {
+      "file": "Amk_Goku Worldwide Loterry/scripts/task_snippet_lottery_app.json",
+      "extension": ".json",
+      "current_top": "Amk_Goku Worldwide Loterry",
+      "thematic_bucket_id": "B_sibling_amk_goku_lotto_tree",
+      "thematic_nature": "embedded_sibling_or_nested_project",
+      "thematic_note": "Separate app tree under hub root; router uses first segment only."
+    },
+    {
+      "file": "Amk_Goku Worldwide Loterry/roadmap/README.md",
+      "extension": ".md",
+      "current_top": "Amk_Goku Worldwide Loterry",
+      "thematic_bucket_id": "B_sibling_amk_goku_lotto_tree",
+      "thematic_nature": "embedded_sibling_or_nested_project",
+      "thematic_note": "Separate app tree under hub root; router uses first segment only."
+    },
+    {
+      "file": "Amk_Goku Worldwide Loterry/marketplace/README.md",
+      "extension": ".md",
+      "current_top": "Amk_Goku Worldwide Loterry",
+      "thematic_bucket_id": "B_sibling_amk_goku_lotto_tree",
+      "thematic_nature": "embedded_sibling_or_nested_project",
+      "thematic_note": "Separate app tree under hub root; router uses first segment only."
+    },
+    {
+      "file": "Amk_Goku Worldwide Loterry/exports/trust_pack_latest/MANIFEST.json",
+      "extension": ".json",
+      "current_top": "Amk_Goku Worldwide Loterry",
+      "thematic_bucket_id": "B_sibling_amk_goku_lotto_tree",
+      "thematic_nature": "embedded_sibling_or_nested_project",
+      "thematic_note": "Separate app tree under hub root; router uses first segment only."
+    },
+    {
+      "file": "Amk_Goku Worldwide Loterry/exports/trust_pack_latest/SYSTEM_STATUS.json",
+      "extension": ".json",
+      "current_top": "Amk_Goku Worldwide Loterry",
+      "thematic_bucket_id": "B_sibling_amk_goku_lotto_tree",
+      "thematic_nature": "embedded_sibling_or_nested_project",
+      "thematic_note": "Separate app tree under hub root; router uses first segment only."
+    },
+    {
+      "file": "Amk_Goku Worldwide Loterry/exports/trust_pack_latest/registry/api_registry.json",
+      "extension": ".json",
+      "current_top": "Amk_Goku Worldwide Loterry",
+      "thematic_bucket_id": "B_sibling_amk_goku_lotto_tree",
+      "thematic_nature": "embedded_sibling_or_nested_project",
+      "thematic_note": "Separate app tree under hub root; router uses first segment only."
+    },
+    {
+      "file": "Amk_Goku Worldwide Loterry/exports/trust_pack_latest/observatory/jailcell_trust.json",
+      "extension": ".json",
+      "current_top": "Amk_Goku Worldwide Loterry",
+      "thematic_bucket_id": "B_sibling_amk_goku_lotto_tree",
+      "thematic_nature": "embedded_sibling_or_nested_project",
+      "thematic_note": "Separate app tree under hub root; router uses first segment only."
+    },
+    {
+      "file": "Amk_Goku Worldwide Loterry/exports/trust_pack_latest/observatory/learning_digest.json",
+      "extension": ".json",
+      "current_top": "Amk_Goku Worldwide Loterry",
+      "thematic_bucket_id": "B_sibling_amk_goku_lotto_tree",
+      "thematic_nature": "embedded_sibling_or_nested_project",
+      "thematic_note": "Separate app tree under hub root; router uses first segment only."
+    },
+    {
+      "file": "Amk_Goku Worldwide Loterry/exports/trust_pack_latest/observatory/monthly_change_log.json",
+      "extension": ".json",
+      "current_top": "Amk_Goku Worldwide Loterry",
+      "thematic_bucket_id": "B_sibling_amk_goku_lotto_tree",
+      "thematic_nature": "embedded_sibling_or_nested_project",
+      "thematic_note": "Separate app tree under hub root; router uses first segment only."
+    },
+    {
+      "file": "Amk_Goku Worldwide Loterry/exports/trust_pack_latest/observatory/rhythm_trust.json",
+      "extension": ".json",
+      "current_top": "Amk_Goku Worldwide Loterry",
+      "thematic_bucket_id": "B_sibling_amk_goku_lotto_tree",
+      "thematic_nature": "embedded_sibling_or_nested_project",
+      "thematic_note": "Separate app tree under hub root; router uses first segment only."
+    },
+    {
+      "file": "Amk_Goku Worldwide Loterry/exports/trust_pack_latest/audiology/Z_AUDIOLOGY_CHARTER.md",
+      "extension": ".md",
+      "current_top": "Amk_Goku Worldwide Loterry",
+      "thematic_bucket_id": "B_sibling_amk_goku_lotto_tree",
+      "thematic_nature": "embedded_sibling_or_nested_project",
+      "thematic_note": "Separate app tree under hub root; router uses first segment only."
+    },
+    {
+      "file": "Amk_Goku Worldwide Loterry/exports/trust_pack_latest/audiology/z_audiology_manifest.json",
+      "extension": ".json",
+      "current_top": "Amk_Goku Worldwide Loterry",
+      "thematic_bucket_id": "B_sibling_amk_goku_lotto_tree",
+      "thematic_nature": "embedded_sibling_or_nested_project",
+      "thematic_note": "Separate app tree under hub root; router uses first segment only."
+    },
+    {
+      "file": "Amk_Goku Worldwide Loterry/exports/trust_pack_latest/audiology/Z_AUDIOLOGY_MULTILINGUAL_POLICY.md",
+      "extension": ".md",
+      "current_top": "Amk_Goku Worldwide Loterry",
+      "thematic_bucket_id": "B_sibling_amk_goku_lotto_tree",
+      "thematic_nature": "embedded_sibling_or_nested_project",
+      "thematic_note": "Separate app tree under hub root; router uses first segment only."
+    },
+    {
+      "file": "Amk_Goku Worldwide Loterry/exports/trust_pack_latest/audiology/Z_AUDIOLOGY_OATH.md",
+      "extension": ".md",
+      "current_top": "Amk_Goku Worldwide Loterry",
+      "thematic_bucket_id": "B_sibling_amk_goku_lotto_tree",
+      "thematic_nature": "embedded_sibling_or_nested_project",
+      "thematic_note": "Separate app tree under hub root; router uses first segment only."
+    },
+    {
+      "file": "Amk_Goku Worldwide Loterry/exports/trust_pack_latest/audiology/z_audiology_schema.json",
+      "extension": ".json",
+      "current_top": "Amk_Goku Worldwide Loterry",
+      "thematic_bucket_id": "B_sibling_amk_goku_lotto_tree",
+      "thematic_nature": "embedded_sibling_or_nested_project",
+      "thematic_note": "Separate app tree under hub root; router uses first segment only."
+    },
+    {
+      "file": "Amk_Goku Worldwide Loterry/exports/trust_pack_latest/audiology/Z_AUDIOLOGY_TESTS.md",
+      "extension": ".md",
+      "current_top": "Amk_Goku Worldwide Loterry",
+      "thematic_bucket_id": "B_sibling_amk_goku_lotto_tree",
+      "thematic_nature": "embedded_sibling_or_nested_project",
+      "thematic_note": "Separate app tree under hub root; router uses first segment only."
+    },
+    {
+      "file": "Amk_Goku Worldwide Loterry/exports/trust_pack_latest/audiology/Z_AUDIOLOGY_UI_POLICY.md",
+      "extension": ".md",
+      "current_top": "Amk_Goku Worldwide Loterry",
+      "thematic_bucket_id": "B_sibling_amk_goku_lotto_tree",
+      "thematic_nature": "embedded_sibling_or_nested_project",
+      "thematic_note": "Separate app tree under hub root; router uses first segment only."
+    },
+    {
+      "file": "Amk_Goku Worldwide Loterry/exports/trust_pack_20260131T152453Z/MANIFEST.json",
+      "extension": ".json",
+      "current_top": "Amk_Goku Worldwide Loterry",
+      "thematic_bucket_id": "B_sibling_amk_goku_lotto_tree",
+      "thematic_nature": "embedded_sibling_or_nested_project",
+      "thematic_note": "Separate app tree under hub root; router uses first segment only."
+    },
+    {
+      "file": "Amk_Goku Worldwide Loterry/exports/trust_pack_20260131T152453Z/SYSTEM_STATUS.json",
+      "extension": ".json",
+      "current_top": "Amk_Goku Worldwide Loterry",
+      "thematic_bucket_id": "B_sibling_amk_goku_lotto_tree",
+      "thematic_nature": "embedded_sibling_or_nested_project",
+      "thematic_note": "Separate app tree under hub root; router uses first segment only."
+    },
+    {
+      "file": "Amk_Goku Worldwide Loterry/exports/trust_pack_20260131T152453Z/registry/api_registry.json",
+      "extension": ".json",
+      "current_top": "Amk_Goku Worldwide Loterry",
+      "thematic_bucket_id": "B_sibling_amk_goku_lotto_tree",
+      "thematic_nature": "embedded_sibling_or_nested_project",
+      "thematic_note": "Separate app tree under hub root; router uses first segment only."
+    },
+    {
+      "file": "Amk_Goku Worldwide Loterry/exports/trust_pack_20260131T152453Z/observatory/jailcell_trust.json",
+      "extension": ".json",
+      "current_top": "Amk_Goku Worldwide Loterry",
+      "thematic_bucket_id": "B_sibling_amk_goku_lotto_tree",
+      "thematic_nature": "embedded_sibling_or_nested_project",
+      "thematic_note": "Separate app tree under hub root; router uses first segment only."
+    },
+    {
+      "file": "Amk_Goku Worldwide Loterry/exports/trust_pack_20260131T152453Z/observatory/learning_digest.json",
+      "extension": ".json",
+      "current_top": "Amk_Goku Worldwide Loterry",
+      "thematic_bucket_id": "B_sibling_amk_goku_lotto_tree",
+      "thematic_nature": "embedded_sibling_or_nested_project",
+      "thematic_note": "Separate app tree under hub root; router uses first segment only."
+    },
+    {
+      "file": "Amk_Goku Worldwide Loterry/exports/trust_pack_20260131T152453Z/observatory/monthly_change_log.json",
+      "extension": ".json",
+      "current_top": "Amk_Goku Worldwide Loterry",
+      "thematic_bucket_id": "B_sibling_amk_goku_lotto_tree",
+      "thematic_nature": "embedded_sibling_or_nested_project",
+      "thematic_note": "Separate app tree under hub root; router uses first segment only."
+    },
+    {
+      "file": "Amk_Goku Worldwide Loterry/exports/trust_pack_20260131T152453Z/observatory/rhythm_trust.json",
+      "extension": ".json",
+      "current_top": "Amk_Goku Worldwide Loterry",
+      "thematic_bucket_id": "B_sibling_amk_goku_lotto_tree",
+      "thematic_nature": "embedded_sibling_or_nested_project",
+      "thematic_note": "Separate app tree under hub root; router uses first segment only."
+    },
+    {
+      "file": "Amk_Goku Worldwide Loterry/exports/trust_pack_20260131T152453Z/audiology/Z_AUDIOLOGY_CHARTER.md",
+      "extension": ".md",
+      "current_top": "Amk_Goku Worldwide Loterry",
+      "thematic_bucket_id": "B_sibling_amk_goku_lotto_tree",
+      "thematic_nature": "embedded_sibling_or_nested_project",
+      "thematic_note": "Separate app tree under hub root; router uses first segment only."
+    },
+    {
+      "file": "Amk_Goku Worldwide Loterry/exports/trust_pack_20260131T152453Z/audiology/z_audiology_manifest.json",
+      "extension": ".json",
+      "current_top": "Amk_Goku Worldwide Loterry",
+      "thematic_bucket_id": "B_sibling_amk_goku_lotto_tree",
+      "thematic_nature": "embedded_sibling_or_nested_project",
+      "thematic_note": "Separate app tree under hub root; router uses first segment only."
+    },
+    {
+      "file": "Amk_Goku Worldwide Loterry/exports/trust_pack_20260131T152453Z/audiology/Z_AUDIOLOGY_MULTILINGUAL_POLICY.md",
+      "extension": ".md",
+      "current_top": "Amk_Goku Worldwide Loterry",
+      "thematic_bucket_id": "B_sibling_amk_goku_lotto_tree",
+      "thematic_nature": "embedded_sibling_or_nested_project",
+      "thematic_note": "Separate app tree under hub root; router uses first segment only."
+    },
+    {
+      "file": "Amk_Goku Worldwide Loterry/exports/trust_pack_20260131T152453Z/audiology/Z_AUDIOLOGY_OATH.md",
+      "extension": ".md",
+      "current_top": "Amk_Goku Worldwide Loterry",
+      "thematic_bucket_id": "B_sibling_amk_goku_lotto_tree",
+      "thematic_nature": "embedded_sibling_or_nested_project",
+      "thematic_note": "Separate app tree under hub root; router uses first segment only."
+    },
+    {
+      "file": "Amk_Goku Worldwide Loterry/exports/trust_pack_20260131T152453Z/audiology/z_audiology_schema.json",
+      "extension": ".json",
+      "current_top": "Amk_Goku Worldwide Loterry",
+      "thematic_bucket_id": "B_sibling_amk_goku_lotto_tree",
+      "thematic_nature": "embedded_sibling_or_nested_project",
+      "thematic_note": "Separate app tree under hub root; router uses first segment only."
+    },
+    {
+      "file": "Amk_Goku Worldwide Loterry/exports/trust_pack_20260131T152453Z/audiology/Z_AUDIOLOGY_TESTS.md",
+      "extension": ".md",
+      "current_top": "Amk_Goku Worldwide Loterry",
+      "thematic_bucket_id": "B_sibling_amk_goku_lotto_tree",
+      "thematic_nature": "embedded_sibling_or_nested_project",
+      "thematic_note": "Separate app tree under hub root; router uses first segment only."
+    },
+    {
+      "file": "Amk_Goku Worldwide Loterry/exports/trust_pack_20260131T152453Z/audiology/Z_AUDIOLOGY_UI_POLICY.md",
+      "extension": ".md",
+      "current_top": "Amk_Goku Worldwide Loterry",
+      "thematic_bucket_id": "B_sibling_amk_goku_lotto_tree",
+      "thematic_nature": "embedded_sibling_or_nested_project",
+      "thematic_note": "Separate app tree under hub root; router uses first segment only."
+    },
+    {
+      "file": "Amk_Goku Worldwide Loterry/exports/trust_pack_20260131T150727Z/MANIFEST.json",
+      "extension": ".json",
+      "current_top": "Amk_Goku Worldwide Loterry",
+      "thematic_bucket_id": "B_sibling_amk_goku_lotto_tree",
+      "thematic_nature": "embedded_sibling_or_nested_project",
+      "thematic_note": "Separate app tree under hub root; router uses first segment only."
+    },
+    {
+      "file": "Amk_Goku Worldwide Loterry/exports/trust_pack_20260131T150727Z/SYSTEM_STATUS.json",
+      "extension": ".json",
+      "current_top": "Amk_Goku Worldwide Loterry",
+      "thematic_bucket_id": "B_sibling_amk_goku_lotto_tree",
+      "thematic_nature": "embedded_sibling_or_nested_project",
+      "thematic_note": "Separate app tree under hub root; router uses first segment only."
+    },
+    {
+      "file": "Amk_Goku Worldwide Loterry/exports/trust_pack_20260131T150727Z/registry/api_registry.json",
+      "extension": ".json",
+      "current_top": "Amk_Goku Worldwide Loterry",
+      "thematic_bucket_id": "B_sibling_amk_goku_lotto_tree",
+      "thematic_nature": "embedded_sibling_or_nested_project",
+      "thematic_note": "Separate app tree under hub root; router uses first segment only."
+    },
+    {
+      "file": "Amk_Goku Worldwide Loterry/exports/trust_pack_20260131T150727Z/observatory/jailcell_trust.json",
+      "extension": ".json",
+      "current_top": "Amk_Goku Worldwide Loterry",
+      "thematic_bucket_id": "B_sibling_amk_goku_lotto_tree",
+      "thematic_nature": "embedded_sibling_or_nested_project",
+      "thematic_note": "Separate app tree under hub root; router uses first segment only."
+    },
+    {
+      "file": "Amk_Goku Worldwide Loterry/exports/trust_pack_20260131T150727Z/observatory/learning_digest.json",
+      "extension": ".json",
+      "current_top": "Amk_Goku Worldwide Loterry",
+      "thematic_bucket_id": "B_sibling_amk_goku_lotto_tree",
+      "thematic_nature": "embedded_sibling_or_nested_project",
+      "thematic_note": "Separate app tree under hub root; router uses first segment only."
+    },
+    {
+      "file": "Amk_Goku Worldwide Loterry/exports/trust_pack_20260131T150727Z/observatory/monthly_change_log.json",
+      "extension": ".json",
+      "current_top": "Amk_Goku Worldwide Loterry",
+      "thematic_bucket_id": "B_sibling_amk_goku_lotto_tree",
+      "thematic_nature": "embedded_sibling_or_nested_project",
+      "thematic_note": "Separate app tree under hub root; router uses first segment only."
+    },
+    {
+      "file": "Amk_Goku Worldwide Loterry/exports/trust_pack_20260131T150727Z/observatory/rhythm_trust.json",
+      "extension": ".json",
+      "current_top": "Amk_Goku Worldwide Loterry",
+      "thematic_bucket_id": "B_sibling_amk_goku_lotto_tree",
+      "thematic_nature": "embedded_sibling_or_nested_project",
+      "thematic_note": "Separate app tree under hub root; router uses first segment only."
+    },
+    {
+      "file": "Amk_Goku Worldwide Loterry/exports/trust_pack_20260131T150727Z/audiology/Z_AUDIOLOGY_CHARTER.md",
+      "extension": ".md",
+      "current_top": "Amk_Goku Worldwide Loterry",
+      "thematic_bucket_id": "B_sibling_amk_goku_lotto_tree",
+      "thematic_nature": "embedded_sibling_or_nested_project",
+      "thematic_note": "Separate app tree under hub root; router uses first segment only."
+    },
+    {
+      "file": "Amk_Goku Worldwide Loterry/exports/trust_pack_20260131T150727Z/audiology/z_audiology_manifest.json",
+      "extension": ".json",
+      "current_top": "Amk_Goku Worldwide Loterry",
+      "thematic_bucket_id": "B_sibling_amk_goku_lotto_tree",
+      "thematic_nature": "embedded_sibling_or_nested_project",
+      "thematic_note": "Separate app tree under hub root; router uses first segment only."
+    },
+    {
+      "file": "Amk_Goku Worldwide Loterry/exports/trust_pack_20260131T150727Z/audiology/Z_AUDIOLOGY_MULTILINGUAL_POLICY.md",
+      "extension": ".md",
+      "current_top": "Amk_Goku Worldwide Loterry",
+      "thematic_bucket_id": "B_sibling_amk_goku_lotto_tree",
+      "thematic_nature": "embedded_sibling_or_nested_project",
+      "thematic_note": "Separate app tree under hub root; router uses first segment only."
+    },
+    {
+      "file": "Amk_Goku Worldwide Loterry/exports/trust_pack_20260131T150727Z/audiology/Z_AUDIOLOGY_OATH.md",
+      "extension": ".md",
+      "current_top": "Amk_Goku Worldwide Loterry",
+      "thematic_bucket_id": "B_sibling_amk_goku_lotto_tree",
+      "thematic_nature": "embedded_sibling_or_nested_project",
+      "thematic_note": "Separate app tree under hub root; router uses first segment only."
+    },
+    {
+      "file": "Amk_Goku Worldwide Loterry/exports/trust_pack_20260131T150727Z/audiology/z_audiology_schema.json",
+      "extension": ".json",
+      "current_top": "Amk_Goku Worldwide Loterry",
+      "thematic_bucket_id": "B_sibling_amk_goku_lotto_tree",
+      "thematic_nature": "embedded_sibling_or_nested_project",
+      "thematic_note": "Separate app tree under hub root; router uses first segment only."
+    },
+    {
+      "file": "Amk_Goku Worldwide Loterry/exports/trust_pack_20260131T150727Z/audiology/Z_AUDIOLOGY_TESTS.md",
+      "extension": ".md",
+      "current_top": "Amk_Goku Worldwide Loterry",
+      "thematic_bucket_id": "B_sibling_amk_goku_lotto_tree",
+      "thematic_nature": "embedded_sibling_or_nested_project",
+      "thematic_note": "Separate app tree under hub root; router uses first segment only."
+    },
+    {
+      "file": "Amk_Goku Worldwide Loterry/exports/trust_pack_20260131T150727Z/audiology/Z_AUDIOLOGY_UI_POLICY.md",
+      "extension": ".md",
+      "current_top": "Amk_Goku Worldwide Loterry",
+      "thematic_bucket_id": "B_sibling_amk_goku_lotto_tree",
+      "thematic_nature": "embedded_sibling_or_nested_project",
+      "thematic_note": "Separate app tree under hub root; router uses first segment only."
+    },
+    {
+      "file": "Amk_Goku Worldwide Loterry/exports/trust_pack_20260131T150649Z/MANIFEST.json",
+      "extension": ".json",
+      "current_top": "Amk_Goku Worldwide Loterry",
+      "thematic_bucket_id": "B_sibling_amk_goku_lotto_tree",
+      "thematic_nature": "embedded_sibling_or_nested_project",
+      "thematic_note": "Separate app tree under hub root; router uses first segment only."
+    },
+    {
+      "file": "Amk_Goku Worldwide Loterry/exports/trust_pack_20260131T150649Z/SYSTEM_STATUS.json",
+      "extension": ".json",
+      "current_top": "Amk_Goku Worldwide Loterry",
+      "thematic_bucket_id": "B_sibling_amk_goku_lotto_tree",
+      "thematic_nature": "embedded_sibling_or_nested_project",
+      "thematic_note": "Separate app tree under hub root; router uses first segment only."
+    },
+    {
+      "file": "Amk_Goku Worldwide Loterry/exports/trust_pack_20260131T150649Z/registry/api_registry.json",
+      "extension": ".json",
+      "current_top": "Amk_Goku Worldwide Loterry",
+      "thematic_bucket_id": "B_sibling_amk_goku_lotto_tree",
+      "thematic_nature": "embedded_sibling_or_nested_project",
+      "thematic_note": "Separate app tree under hub root; router uses first segment only."
+    },
+    {
+      "file": "Amk_Goku Worldwide Loterry/exports/trust_pack_20260131T150649Z/observatory/jailcell_trust.json",
+      "extension": ".json",
+      "current_top": "Amk_Goku Worldwide Loterry",
+      "thematic_bucket_id": "B_sibling_amk_goku_lotto_tree",
+      "thematic_nature": "embedded_sibling_or_nested_project",
+      "thematic_note": "Separate app tree under hub root; router uses first segment only."
+    },
+    {
+      "file": "Amk_Goku Worldwide Loterry/exports/trust_pack_20260131T150649Z/observatory/learning_digest.json",
+      "extension": ".json",
+      "current_top": "Amk_Goku Worldwide Loterry",
+      "thematic_bucket_id": "B_sibling_amk_goku_lotto_tree",
+      "thematic_nature": "embedded_sibling_or_nested_project",
+      "thematic_note": "Separate app tree under hub root; router uses first segment only."
+    },
+    {
+      "file": "Amk_Goku Worldwide Loterry/exports/trust_pack_20260131T150649Z/observatory/monthly_change_log.json",
+      "extension": ".json",
+      "current_top": "Amk_Goku Worldwide Loterry",
+      "thematic_bucket_id": "B_sibling_amk_goku_lotto_tree",
+      "thematic_nature": "embedded_sibling_or_nested_project",
+      "thematic_note": "Separate app tree under hub root; router uses first segment only."
+    },
+    {
+      "file": "Amk_Goku Worldwide Loterry/exports/trust_pack_20260131T150649Z/observatory/rhythm_trust.json",
+      "extension": ".json",
+      "current_top": "Amk_Goku Worldwide Loterry",
+      "thematic_bucket_id": "B_sibling_amk_goku_lotto_tree",
+      "thematic_nature": "embedded_sibling_or_nested_project",
+      "thematic_note": "Separate app tree under hub root; router uses first segment only."
+    },
+    {
+      "file": "Amk_Goku Worldwide Loterry/exports/trust_pack_20260131T150649Z/audiology/Z_AUDIOLOGY_CHARTER.md",
+      "extension": ".md",
+      "current_top": "Amk_Goku Worldwide Loterry",
+      "thematic_bucket_id": "B_sibling_amk_goku_lotto_tree",
+      "thematic_nature": "embedded_sibling_or_nested_project",
+      "thematic_note": "Separate app tree under hub root; router uses first segment only."
+    },
+    {
+      "file": "Amk_Goku Worldwide Loterry/exports/trust_pack_20260131T150649Z/audiology/z_audiology_manifest.json",
+      "extension": ".json",
+      "current_top": "Amk_Goku Worldwide Loterry",
+      "thematic_bucket_id": "B_sibling_amk_goku_lotto_tree",
+      "thematic_nature": "embedded_sibling_or_nested_project",
+      "thematic_note": "Separate app tree under hub root; router uses first segment only."
+    },
+    {
+      "file": "Amk_Goku Worldwide Loterry/exports/trust_pack_20260131T150649Z/audiology/Z_AUDIOLOGY_MULTILINGUAL_POLICY.md",
+      "extension": ".md",
+      "current_top": "Amk_Goku Worldwide Loterry",
+      "thematic_bucket_id": "B_sibling_amk_goku_lotto_tree",
+      "thematic_nature": "embedded_sibling_or_nested_project",
+      "thematic_note": "Separate app tree under hub root; router uses first segment only."
+    },
+    {
+      "file": "Amk_Goku Worldwide Loterry/exports/trust_pack_20260131T150649Z/audiology/Z_AUDIOLOGY_OATH.md",
+      "extension": ".md",
+      "current_top": "Amk_Goku Worldwide Loterry",
+      "thematic_bucket_id": "B_sibling_amk_goku_lotto_tree",
+      "thematic_nature": "embedded_sibling_or_nested_project",
+      "thematic_note": "Separate app tree under hub root; router uses first segment only."
+    },
+    {
+      "file": "Amk_Goku Worldwide Loterry/exports/trust_pack_20260131T150649Z/audiology/z_audiology_schema.json",
+      "extension": ".json",
+      "current_top": "Amk_Goku Worldwide Loterry",
+      "thematic_bucket_id": "B_sibling_amk_goku_lotto_tree",
+      "thematic_nature": "embedded_sibling_or_nested_project",
+      "thematic_note": "Separate app tree under hub root; router uses first segment only."
+    },
+    {
+      "file": "Amk_Goku Worldwide Loterry/exports/trust_pack_20260131T150649Z/audiology/Z_AUDIOLOGY_TESTS.md",
+      "extension": ".md",
+      "current_top": "Amk_Goku Worldwide Loterry",
+      "thematic_bucket_id": "B_sibling_amk_goku_lotto_tree",
+      "thematic_nature": "embedded_sibling_or_nested_project",
+      "thematic_note": "Separate app tree under hub root; router uses first segment only."
+    },
+    {
+      "file": "Amk_Goku Worldwide Loterry/exports/trust_pack_20260131T150649Z/audiology/Z_AUDIOLOGY_UI_POLICY.md",
+      "extension": ".md",
+      "current_top": "Amk_Goku Worldwide Loterry",
+      "thematic_bucket_id": "B_sibling_amk_goku_lotto_tree",
+      "thematic_nature": "embedded_sibling_or_nested_project",
+      "thematic_note": "Separate app tree under hub root; router uses first segment only."
+    },
+    {
+      "file": "Amk_Goku Worldwide Loterry/exports/trust_pack_20260131T130401Z/MANIFEST.json",
+      "extension": ".json",
+      "current_top": "Amk_Goku Worldwide Loterry",
+      "thematic_bucket_id": "B_sibling_amk_goku_lotto_tree",
+      "thematic_nature": "embedded_sibling_or_nested_project",
+      "thematic_note": "Separate app tree under hub root; router uses first segment only."
+    },
+    {
+      "file": "Amk_Goku Worldwide Loterry/exports/trust_pack_20260131T130401Z/SYSTEM_STATUS.json",
+      "extension": ".json",
+      "current_top": "Amk_Goku Worldwide Loterry",
+      "thematic_bucket_id": "B_sibling_amk_goku_lotto_tree",
+      "thematic_nature": "embedded_sibling_or_nested_project",
+      "thematic_note": "Separate app tree under hub root; router uses first segment only."
+    },
+    {
+      "file": "Amk_Goku Worldwide Loterry/exports/trust_pack_20260131T130401Z/registry/api_registry.json",
+      "extension": ".json",
+      "current_top": "Amk_Goku Worldwide Loterry",
+      "thematic_bucket_id": "B_sibling_amk_goku_lotto_tree",
+      "thematic_nature": "embedded_sibling_or_nested_project",
+      "thematic_note": "Separate app tree under hub root; router uses first segment only."
+    },
+    {
+      "file": "Amk_Goku Worldwide Loterry/exports/trust_pack_20260131T130401Z/observatory/jailcell_trust.json",
+      "extension": ".json",
+      "current_top": "Amk_Goku Worldwide Loterry",
+      "thematic_bucket_id": "B_sibling_amk_goku_lotto_tree",
+      "thematic_nature": "embedded_sibling_or_nested_project",
+      "thematic_note": "Separate app tree under hub root; router uses first segment only."
+    },
+    {
+      "file": "Amk_Goku Worldwide Loterry/exports/trust_pack_20260131T130401Z/observatory/learning_digest.json",
+      "extension": ".json",
+      "current_top": "Amk_Goku Worldwide Loterry",
+      "thematic_bucket_id": "B_sibling_amk_goku_lotto_tree",
+      "thematic_nature": "embedded_sibling_or_nested_project",
+      "thematic_note": "Separate app tree under hub root; router uses first segment only."
+    },
+    {
+      "file": "Amk_Goku Worldwide Loterry/exports/trust_pack_20260131T130401Z/observatory/monthly_change_log.json",
+      "extension": ".json",
+      "current_top": "Amk_Goku Worldwide Loterry",
+      "thematic_bucket_id": "B_sibling_amk_goku_lotto_tree",
+      "thematic_nature": "embedded_sibling_or_nested_project",
+      "thematic_note": "Separate app tree under hub root; router uses first segment only."
+    },
+    {
+      "file": "Amk_Goku Worldwide Loterry/exports/trust_pack_20260131T130401Z/observatory/rhythm_trust.json",
+      "extension": ".json",
+      "current_top": "Amk_Goku Worldwide Loterry",
+      "thematic_bucket_id": "B_sibling_amk_goku_lotto_tree",
+      "thematic_nature": "embedded_sibling_or_nested_project",
+      "thematic_note": "Separate app tree under hub root; router uses first segment only."
+    },
+    {
+      "file": "Amk_Goku Worldwide Loterry/exports/trust_pack_20260131T130401Z/audiology/Z_AUDIOLOGY_CHARTER.md",
+      "extension": ".md",
+      "current_top": "Amk_Goku Worldwide Loterry",
+      "thematic_bucket_id": "B_sibling_amk_goku_lotto_tree",
+      "thematic_nature": "embedded_sibling_or_nested_project",
+      "thematic_note": "Separate app tree under hub root; router uses first segment only."
+    },
+    {
+      "file": "Amk_Goku Worldwide Loterry/exports/trust_pack_20260131T130401Z/audiology/z_audiology_manifest.json",
+      "extension": ".json",
+      "current_top": "Amk_Goku Worldwide Loterry",
+      "thematic_bucket_id": "B_sibling_amk_goku_lotto_tree",
+      "thematic_nature": "embedded_sibling_or_nested_project",
+      "thematic_note": "Separate app tree under hub root; router uses first segment only."
+    },
+    {
+      "file": "Amk_Goku Worldwide Loterry/exports/trust_pack_20260131T130401Z/audiology/Z_AUDIOLOGY_MULTILINGUAL_POLICY.md",
+      "extension": ".md",
+      "current_top": "Amk_Goku Worldwide Loterry",
+      "thematic_bucket_id": "B_sibling_amk_goku_lotto_tree",
+      "thematic_nature": "embedded_sibling_or_nested_project",
+      "thematic_note": "Separate app tree under hub root; router uses first segment only."
+    },
+    {
+      "file": "Amk_Goku Worldwide Loterry/exports/trust_pack_20260131T130401Z/audiology/Z_AUDIOLOGY_OATH.md",
+      "extension": ".md",
+      "current_top": "Amk_Goku Worldwide Loterry",
+      "thematic_bucket_id": "B_sibling_amk_goku_lotto_tree",
+      "thematic_nature": "embedded_sibling_or_nested_project",
+      "thematic_note": "Separate app tree under hub root; router uses first segment only."
+    },
+    {
+      "file": "Amk_Goku Worldwide Loterry/exports/trust_pack_20260131T130401Z/audiology/z_audiology_schema.json",
+      "extension": ".json",
+      "current_top": "Amk_Goku Worldwide Loterry",
+      "thematic_bucket_id": "B_sibling_amk_goku_lotto_tree",
+      "thematic_nature": "embedded_sibling_or_nested_project",
+      "thematic_note": "Separate app tree under hub root; router uses first segment only."
+    },
+    {
+      "file": "Amk_Goku Worldwide Loterry/exports/trust_pack_20260131T130401Z/audiology/Z_AUDIOLOGY_TESTS.md",
+      "extension": ".md",
+      "current_top": "Amk_Goku Worldwide Loterry",
+      "thematic_bucket_id": "B_sibling_amk_goku_lotto_tree",
+      "thematic_nature": "embedded_sibling_or_nested_project",
+      "thematic_note": "Separate app tree under hub root; router uses first segment only."
+    },
+    {
+      "file": "Amk_Goku Worldwide Loterry/exports/trust_pack_20260131T130401Z/audiology/Z_AUDIOLOGY_UI_POLICY.md",
+      "extension": ".md",
+      "current_top": "Amk_Goku Worldwide Loterry",
+      "thematic_bucket_id": "B_sibling_amk_goku_lotto_tree",
+      "thematic_nature": "embedded_sibling_or_nested_project",
+      "thematic_note": "Separate app tree under hub root; router uses first segment only."
+    },
+    {
+      "file": "Amk_Goku Worldwide Loterry/exports/trust_pack_20260131T130228Z/MANIFEST.json",
+      "extension": ".json",
+      "current_top": "Amk_Goku Worldwide Loterry",
+      "thematic_bucket_id": "B_sibling_amk_goku_lotto_tree",
+      "thematic_nature": "embedded_sibling_or_nested_project",
+      "thematic_note": "Separate app tree under hub root; router uses first segment only."
+    },
+    {
+      "file": "Amk_Goku Worldwide Loterry/exports/trust_pack_20260131T130228Z/SYSTEM_STATUS.json",
+      "extension": ".json",
+      "current_top": "Amk_Goku Worldwide Loterry",
+      "thematic_bucket_id": "B_sibling_amk_goku_lotto_tree",
+      "thematic_nature": "embedded_sibling_or_nested_project",
+      "thematic_note": "Separate app tree under hub root; router uses first segment only."
+    },
+    {
+      "file": "Amk_Goku Worldwide Loterry/exports/trust_pack_20260131T130228Z/registry/api_registry.json",
+      "extension": ".json",
+      "current_top": "Amk_Goku Worldwide Loterry",
+      "thematic_bucket_id": "B_sibling_amk_goku_lotto_tree",
+      "thematic_nature": "embedded_sibling_or_nested_project",
+      "thematic_note": "Separate app tree under hub root; router uses first segment only."
+    },
+    {
+      "file": "Amk_Goku Worldwide Loterry/exports/trust_pack_20260131T130228Z/observatory/jailcell_trust.json",
+      "extension": ".json",
+      "current_top": "Amk_Goku Worldwide Loterry",
+      "thematic_bucket_id": "B_sibling_amk_goku_lotto_tree",
+      "thematic_nature": "embedded_sibling_or_nested_project",
+      "thematic_note": "Separate app tree under hub root; router uses first segment only."
+    },
+    {
+      "file": "Amk_Goku Worldwide Loterry/exports/trust_pack_20260131T130228Z/observatory/learning_digest.json",
+      "extension": ".json",
+      "current_top": "Amk_Goku Worldwide Loterry",
+      "thematic_bucket_id": "B_sibling_amk_goku_lotto_tree",
+      "thematic_nature": "embedded_sibling_or_nested_project",
+      "thematic_note": "Separate app tree under hub root; router uses first segment only."
+    },
+    {
+      "file": "Amk_Goku Worldwide Loterry/exports/trust_pack_20260131T130228Z/observatory/monthly_change_log.json",
+      "extension": ".json",
+      "current_top": "Amk_Goku Worldwide Loterry",
+      "thematic_bucket_id": "B_sibling_amk_goku_lotto_tree",
+      "thematic_nature": "embedded_sibling_or_nested_project",
+      "thematic_note": "Separate app tree under hub root; router uses first segment only."
+    },
+    {
+      "file": "Amk_Goku Worldwide Loterry/exports/trust_pack_20260131T130228Z/observatory/rhythm_trust.json",
+      "extension": ".json",
+      "current_top": "Amk_Goku Worldwide Loterry",
+      "thematic_bucket_id": "B_sibling_amk_goku_lotto_tree",
+      "thematic_nature": "embedded_sibling_or_nested_project",
+      "thematic_note": "Separate app tree under hub root; router uses first segment only."
+    },
+    {
+      "file": "Amk_Goku Worldwide Loterry/exports/trust_pack_20260131T130228Z/audiology/Z_AUDIOLOGY_CHARTER.md",
+      "extension": ".md",
+      "current_top": "Amk_Goku Worldwide Loterry",
+      "thematic_bucket_id": "B_sibling_amk_goku_lotto_tree",
+      "thematic_nature": "embedded_sibling_or_nested_project",
+      "thematic_note": "Separate app tree under hub root; router uses first segment only."
+    },
+    {
+      "file": "Amk_Goku Worldwide Loterry/exports/trust_pack_20260131T130228Z/audiology/z_audiology_manifest.json",
+      "extension": ".json",
+      "current_top": "Amk_Goku Worldwide Loterry",
+      "thematic_bucket_id": "B_sibling_amk_goku_lotto_tree",
+      "thematic_nature": "embedded_sibling_or_nested_project",
+      "thematic_note": "Separate app tree under hub root; router uses first segment only."
+    },
+    {
+      "file": "Amk_Goku Worldwide Loterry/exports/trust_pack_20260131T130228Z/audiology/Z_AUDIOLOGY_MULTILINGUAL_POLICY.md",
+      "extension": ".md",
+      "current_top": "Amk_Goku Worldwide Loterry",
+      "thematic_bucket_id": "B_sibling_amk_goku_lotto_tree",
+      "thematic_nature": "embedded_sibling_or_nested_project",
+      "thematic_note": "Separate app tree under hub root; router uses first segment only."
+    },
+    {
+      "file": "Amk_Goku Worldwide Loterry/exports/trust_pack_20260131T130228Z/audiology/Z_AUDIOLOGY_OATH.md",
+      "extension": ".md",
+      "current_top": "Amk_Goku Worldwide Loterry",
+      "thematic_bucket_id": "B_sibling_amk_goku_lotto_tree",
+      "thematic_nature": "embedded_sibling_or_nested_project",
+      "thematic_note": "Separate app tree under hub root; router uses first segment only."
+    },
+    {
+      "file": "Amk_Goku Worldwide Loterry/exports/trust_pack_20260131T130228Z/audiology/z_audiology_schema.json",
+      "extension": ".json",
+      "current_top": "Amk_Goku Worldwide Loterry",
+      "thematic_bucket_id": "B_sibling_amk_goku_lotto_tree",
+      "thematic_nature": "embedded_sibling_or_nested_project",
+      "thematic_note": "Separate app tree under hub root; router uses first segment only."
+    },
+    {
+      "file": "Amk_Goku Worldwide Loterry/exports/trust_pack_20260131T130228Z/audiology/Z_AUDIOLOGY_TESTS.md",
+      "extension": ".md",
+      "current_top": "Amk_Goku Worldwide Loterry",
+      "thematic_bucket_id": "B_sibling_amk_goku_lotto_tree",
+      "thematic_nature": "embedded_sibling_or_nested_project",
+      "thematic_note": "Separate app tree under hub root; router uses first segment only."
+    },
+    {
+      "file": "Amk_Goku Worldwide Loterry/exports/trust_pack_20260131T130228Z/audiology/Z_AUDIOLOGY_UI_POLICY.md",
+      "extension": ".md",
+      "current_top": "Amk_Goku Worldwide Loterry",
+      "thematic_bucket_id": "B_sibling_amk_goku_lotto_tree",
+      "thematic_nature": "embedded_sibling_or_nested_project",
+      "thematic_note": "Separate app tree under hub root; router uses first segment only."
+    },
+    {
+      "file": "Amk_Goku Worldwide Loterry/exports/safe_vault_public/safe_vault_20260215T154120.840323+0000/CONDITIONS.md",
+      "extension": ".md",
+      "current_top": "Amk_Goku Worldwide Loterry",
+      "thematic_bucket_id": "B_sibling_amk_goku_lotto_tree",
+      "thematic_nature": "embedded_sibling_or_nested_project",
+      "thematic_note": "Separate app tree under hub root; router uses first segment only."
+    },
+    {
+      "file": "Amk_Goku Worldwide Loterry/exports/safe_vault_public/safe_vault_20260215T154120.840323+0000/MANIFEST.json",
+      "extension": ".json",
+      "current_top": "Amk_Goku Worldwide Loterry",
+      "thematic_bucket_id": "B_sibling_amk_goku_lotto_tree",
+      "thematic_nature": "embedded_sibling_or_nested_project",
+      "thematic_note": "Separate app tree under hub root; router uses first segment only."
+    },
+    {
+      "file": "Amk_Goku Worldwide Loterry/exports/safe_vault_public/safe_vault_20260215T154120.840323+0000/REPORT_SUMMARY.md",
+      "extension": ".md",
+      "current_top": "Amk_Goku Worldwide Loterry",
+      "thematic_bucket_id": "B_sibling_amk_goku_lotto_tree",
+      "thematic_nature": "embedded_sibling_or_nested_project",
+      "thematic_note": "Separate app tree under hub root; router uses first segment only."
+    },
+    {
+      "file": "Amk_Goku Worldwide Loterry/exports/safe_vault_public/safe_vault_20260215T154120.840323+0000/docs/audiology/Z_AUDIOLOGY_CHARTER.md",
+      "extension": ".md",
+      "current_top": "Amk_Goku Worldwide Loterry",
+      "thematic_bucket_id": "B_sibling_amk_goku_lotto_tree",
+      "thematic_nature": "embedded_sibling_or_nested_project",
+      "thematic_note": "Separate app tree under hub root; router uses first segment only."
+    },
+    {
+      "file": "Amk_Goku Worldwide Loterry/exports/safe_vault_public/safe_vault_20260215T154120.840323+0000/docs/audiology/Z_AUDIOLOGY_MULTILINGUAL_POLICY.md",
+      "extension": ".md",
+      "current_top": "Amk_Goku Worldwide Loterry",
+      "thematic_bucket_id": "B_sibling_amk_goku_lotto_tree",
+      "thematic_nature": "embedded_sibling_or_nested_project",
+      "thematic_note": "Separate app tree under hub root; router uses first segment only."
+    },
+    {
+      "file": "Amk_Goku Worldwide Loterry/exports/safe_vault_public/safe_vault_20260215T154120.840323+0000/docs/audiology/Z_AUDIOLOGY_OATH.md",
+      "extension": ".md",
+      "current_top": "Amk_Goku Worldwide Loterry",
+      "thematic_bucket_id": "B_sibling_amk_goku_lotto_tree",
+      "thematic_nature": "embedded_sibling_or_nested_project",
+      "thematic_note": "Separate app tree under hub root; router uses first segment only."
+    },
+    {
+      "file": "Amk_Goku Worldwide Loterry/exports/safe_vault_public/safe_vault_20260215T154120.840323+0000/docs/audiology/Z_AUDIOLOGY_TESTS.md",
+      "extension": ".md",
+      "current_top": "Amk_Goku Worldwide Loterry",
+      "thematic_bucket_id": "B_sibling_amk_goku_lotto_tree",
+      "thematic_nature": "embedded_sibling_or_nested_project",
+      "thematic_note": "Separate app tree under hub root; router uses first segment only."
+    },
+    {
+      "file": "Amk_Goku Worldwide Loterry/exports/safe_vault_public/safe_vault_20260215T154120.840323+0000/docs/audiology/Z_AUDIOLOGY_UI_POLICY.md",
+      "extension": ".md",
+      "current_top": "Amk_Goku Worldwide Loterry",
+      "thematic_bucket_id": "B_sibling_amk_goku_lotto_tree",
+      "thematic_nature": "embedded_sibling_or_nested_project",
+      "thematic_note": "Separate app tree under hub root; router uses first segment only."
+    },
+    {
+      "file": "Amk_Goku Worldwide Loterry/exports/safe_vault_public/safe_vault_20260215T154120.840323+0000/core/audiology/z_audiology_manifest.json",
+      "extension": ".json",
+      "current_top": "Amk_Goku Worldwide Loterry",
+      "thematic_bucket_id": "B_sibling_amk_goku_lotto_tree",
+      "thematic_nature": "embedded_sibling_or_nested_project",
+      "thematic_note": "Separate app tree under hub root; router uses first segment only."
+    },
+    {
+      "file": "Amk_Goku Worldwide Loterry/exports/safe_vault_public/safe_vault_20260215T154120.840323+0000/core/audiology/z_audiology_schema.json",
+      "extension": ".json",
+      "current_top": "Amk_Goku Worldwide Loterry",
+      "thematic_bucket_id": "B_sibling_amk_goku_lotto_tree",
+      "thematic_nature": "embedded_sibling_or_nested_project",
+      "thematic_note": "Separate app tree under hub root; router uses first segment only."
+    },
+    {
+      "file": "Amk_Goku Worldwide Loterry/exports/safe_vault_public/safe_vault_20260131T152449.419652+0000/CONDITIONS.md",
+      "extension": ".md",
+      "current_top": "Amk_Goku Worldwide Loterry",
+      "thematic_bucket_id": "B_sibling_amk_goku_lotto_tree",
+      "thematic_nature": "embedded_sibling_or_nested_project",
+      "thematic_note": "Separate app tree under hub root; router uses first segment only."
+    },
+    {
+      "file": "Amk_Goku Worldwide Loterry/exports/safe_vault_public/safe_vault_20260131T152449.419652+0000/MANIFEST.json",
+      "extension": ".json",
+      "current_top": "Amk_Goku Worldwide Loterry",
+      "thematic_bucket_id": "B_sibling_amk_goku_lotto_tree",
+      "thematic_nature": "embedded_sibling_or_nested_project",
+      "thematic_note": "Separate app tree under hub root; router uses first segment only."
+    },
+    {
+      "file": "Amk_Goku Worldwide Loterry/exports/safe_vault_public/safe_vault_20260131T152449.419652+0000/REPORT_SUMMARY.md",
+      "extension": ".md",
+      "current_top": "Amk_Goku Worldwide Loterry",
+      "thematic_bucket_id": "B_sibling_amk_goku_lotto_tree",
+      "thematic_nature": "embedded_sibling_or_nested_project",
+      "thematic_note": "Separate app tree under hub root; router uses first segment only."
+    },
+    {
+      "file": "Amk_Goku Worldwide Loterry/exports/safe_vault_public/safe_vault_20260131T152449.419652+0000/docs/audiology/Z_AUDIOLOGY_CHARTER.md",
+      "extension": ".md",
+      "current_top": "Amk_Goku Worldwide Loterry",
+      "thematic_bucket_id": "B_sibling_amk_goku_lotto_tree",
+      "thematic_nature": "embedded_sibling_or_nested_project",
+      "thematic_note": "Separate app tree under hub root; router uses first segment only."
+    },
+    {
+      "file": "Amk_Goku Worldwide Loterry/exports/safe_vault_public/safe_vault_20260131T152449.419652+0000/docs/audiology/Z_AUDIOLOGY_MULTILINGUAL_POLICY.md",
+      "extension": ".md",
+      "current_top": "Amk_Goku Worldwide Loterry",
+      "thematic_bucket_id": "B_sibling_amk_goku_lotto_tree",
+      "thematic_nature": "embedded_sibling_or_nested_project",
+      "thematic_note": "Separate app tree under hub root; router uses first segment only."
+    },
+    {
+      "file": "Amk_Goku Worldwide Loterry/exports/safe_vault_public/safe_vault_20260131T152449.419652+0000/docs/audiology/Z_AUDIOLOGY_OATH.md",
+      "extension": ".md",
+      "current_top": "Amk_Goku Worldwide Loterry",
+      "thematic_bucket_id": "B_sibling_amk_goku_lotto_tree",
+      "thematic_nature": "embedded_sibling_or_nested_project",
+      "thematic_note": "Separate app tree under hub root; router uses first segment only."
+    },
+    {
+      "file": "Amk_Goku Worldwide Loterry/exports/safe_vault_public/safe_vault_20260131T152449.419652+0000/docs/audiology/Z_AUDIOLOGY_TESTS.md",
+      "extension": ".md",
+      "current_top": "Amk_Goku Worldwide Loterry",
+      "thematic_bucket_id": "B_sibling_amk_goku_lotto_tree",
+      "thematic_nature": "embedded_sibling_or_nested_project",
+      "thematic_note": "Separate app tree under hub root; router uses first segment only."
+    },
+    {
+      "file": "Amk_Goku Worldwide Loterry/exports/safe_vault_public/safe_vault_20260131T152449.419652+0000/docs/audiology/Z_AUDIOLOGY_UI_POLICY.md",
+      "extension": ".md",
+      "current_top": "Amk_Goku Worldwide Loterry",
+      "thematic_bucket_id": "B_sibling_amk_goku_lotto_tree",
+      "thematic_nature": "embedded_sibling_or_nested_project",
+      "thematic_note": "Separate app tree under hub root; router uses first segment only."
+    },
+    {
+      "file": "Amk_Goku Worldwide Loterry/exports/safe_vault_public/safe_vault_20260131T152449.419652+0000/core/audiology/z_audiology_manifest.json",
+      "extension": ".json",
+      "current_top": "Amk_Goku Worldwide Loterry",
+      "thematic_bucket_id": "B_sibling_amk_goku_lotto_tree",
+      "thematic_nature": "embedded_sibling_or_nested_project",
+      "thematic_note": "Separate app tree under hub root; router uses first segment only."
+    },
+    {
+      "file": "Amk_Goku Worldwide Loterry/exports/safe_vault_public/safe_vault_20260131T152449.419652+0000/core/audiology/z_audiology_schema.json",
+      "extension": ".json",
+      "current_top": "Amk_Goku Worldwide Loterry",
+      "thematic_bucket_id": "B_sibling_amk_goku_lotto_tree",
+      "thematic_nature": "embedded_sibling_or_nested_project",
+      "thematic_note": "Separate app tree under hub root; router uses first segment only."
+    },
+    {
+      "file": "Amk_Goku Worldwide Loterry/exports/safe_vault_public/safe_vault_20260131T150645.057872+0000/CONDITIONS.md",
+      "extension": ".md",
+      "current_top": "Amk_Goku Worldwide Loterry",
+      "thematic_bucket_id": "B_sibling_amk_goku_lotto_tree",
+      "thematic_nature": "embedded_sibling_or_nested_project",
+      "thematic_note": "Separate app tree under hub root; router uses first segment only."
+    },
+    {
+      "file": "Amk_Goku Worldwide Loterry/exports/safe_vault_public/safe_vault_20260131T150645.057872+0000/MANIFEST.json",
+      "extension": ".json",
+      "current_top": "Amk_Goku Worldwide Loterry",
+      "thematic_bucket_id": "B_sibling_amk_goku_lotto_tree",
+      "thematic_nature": "embedded_sibling_or_nested_project",
+      "thematic_note": "Separate app tree under hub root; router uses first segment only."
+    },
+    {
+      "file": "Amk_Goku Worldwide Loterry/exports/safe_vault_public/safe_vault_20260131T150645.057872+0000/REPORT_SUMMARY.md",
+      "extension": ".md",
+      "current_top": "Amk_Goku Worldwide Loterry",
+      "thematic_bucket_id": "B_sibling_amk_goku_lotto_tree",
+      "thematic_nature": "embedded_sibling_or_nested_project",
+      "thematic_note": "Separate app tree under hub root; router uses first segment only."
+    },
+    {
+      "file": "Amk_Goku Worldwide Loterry/exports/safe_vault_public/safe_vault_20260131T150645.057872+0000/docs/audiology/Z_AUDIOLOGY_CHARTER.md",
+      "extension": ".md",
+      "current_top": "Amk_Goku Worldwide Loterry",
+      "thematic_bucket_id": "B_sibling_amk_goku_lotto_tree",
+      "thematic_nature": "embedded_sibling_or_nested_project",
+      "thematic_note": "Separate app tree under hub root; router uses first segment only."
+    },
+    {
+      "file": "Amk_Goku Worldwide Loterry/exports/safe_vault_public/safe_vault_20260131T150645.057872+0000/docs/audiology/Z_AUDIOLOGY_MULTILINGUAL_POLICY.md",
+      "extension": ".md",
+      "current_top": "Amk_Goku Worldwide Loterry",
+      "thematic_bucket_id": "B_sibling_amk_goku_lotto_tree",
+      "thematic_nature": "embedded_sibling_or_nested_project",
+      "thematic_note": "Separate app tree under hub root; router uses first segment only."
+    },
+    {
+      "file": "Amk_Goku Worldwide Loterry/exports/safe_vault_public/safe_vault_20260131T150645.057872+0000/docs/audiology/Z_AUDIOLOGY_OATH.md",
+      "extension": ".md",
+      "current_top": "Amk_Goku Worldwide Loterry",
+      "thematic_bucket_id": "B_sibling_amk_goku_lotto_tree",
+      "thematic_nature": "embedded_sibling_or_nested_project",
+      "thematic_note": "Separate app tree under hub root; router uses first segment only."
+    },
+    {
+      "file": "Amk_Goku Worldwide Loterry/exports/safe_vault_public/safe_vault_20260131T150645.057872+0000/docs/audiology/Z_AUDIOLOGY_TESTS.md",
+      "extension": ".md",
+      "current_top": "Amk_Goku Worldwide Loterry",
+      "thematic_bucket_id": "B_sibling_amk_goku_lotto_tree",
+      "thematic_nature": "embedded_sibling_or_nested_project",
+      "thematic_note": "Separate app tree under hub root; router uses first segment only."
+    },
+    {
+      "file": "Amk_Goku Worldwide Loterry/exports/safe_vault_public/safe_vault_20260131T150645.057872+0000/docs/audiology/Z_AUDIOLOGY_UI_POLICY.md",
+      "extension": ".md",
+      "current_top": "Amk_Goku Worldwide Loterry",
+      "thematic_bucket_id": "B_sibling_amk_goku_lotto_tree",
+      "thematic_nature": "embedded_sibling_or_nested_project",
+      "thematic_note": "Separate app tree under hub root; router uses first segment only."
+    },
+    {
+      "file": "Amk_Goku Worldwide Loterry/exports/safe_vault_public/safe_vault_20260131T150645.057872+0000/core/audiology/z_audiology_manifest.json",
+      "extension": ".json",
+      "current_top": "Amk_Goku Worldwide Loterry",
+      "thematic_bucket_id": "B_sibling_amk_goku_lotto_tree",
+      "thematic_nature": "embedded_sibling_or_nested_project",
+      "thematic_note": "Separate app tree under hub root; router uses first segment only."
+    },
+    {
+      "file": "Amk_Goku Worldwide Loterry/exports/safe_vault_public/safe_vault_20260131T150645.057872+0000/core/audiology/z_audiology_schema.json",
+      "extension": ".json",
+      "current_top": "Amk_Goku Worldwide Loterry",
+      "thematic_bucket_id": "B_sibling_amk_goku_lotto_tree",
+      "thematic_nature": "embedded_sibling_or_nested_project",
+      "thematic_note": "Separate app tree under hub root; router uses first segment only."
+    },
+    {
+      "file": "Amk_Goku Worldwide Loterry/exports/safe_vault_public/safe_vault_20260131T135443.602905+0000/CONDITIONS.md",
+      "extension": ".md",
+      "current_top": "Amk_Goku Worldwide Loterry",
+      "thematic_bucket_id": "B_sibling_amk_goku_lotto_tree",
+      "thematic_nature": "embedded_sibling_or_nested_project",
+      "thematic_note": "Separate app tree under hub root; router uses first segment only."
+    },
+    {
+      "file": "Amk_Goku Worldwide Loterry/exports/safe_vault_public/safe_vault_20260131T135443.602905+0000/MANIFEST.json",
+      "extension": ".json",
+      "current_top": "Amk_Goku Worldwide Loterry",
+      "thematic_bucket_id": "B_sibling_amk_goku_lotto_tree",
+      "thematic_nature": "embedded_sibling_or_nested_project",
+      "thematic_note": "Separate app tree under hub root; router uses first segment only."
+    },
+    {
+      "file": "Amk_Goku Worldwide Loterry/exports/safe_vault_public/safe_vault_20260131T135443.602905+0000/REPORT_SUMMARY.md",
+      "extension": ".md",
+      "current_top": "Amk_Goku Worldwide Loterry",
+      "thematic_bucket_id": "B_sibling_amk_goku_lotto_tree",
+      "thematic_nature": "embedded_sibling_or_nested_project",
+      "thematic_note": "Separate app tree under hub root; router uses first segment only."
+    },
+    {
+      "file": "Amk_Goku Worldwide Loterry/exports/safe_vault_public/safe_vault_20260131T135443.602905+0000/docs/audiology/Z_AUDIOLOGY_CHARTER.md",
+      "extension": ".md",
+      "current_top": "Amk_Goku Worldwide Loterry",
+      "thematic_bucket_id": "B_sibling_amk_goku_lotto_tree",
+      "thematic_nature": "embedded_sibling_or_nested_project",
+      "thematic_note": "Separate app tree under hub root; router uses first segment only."
+    },
+    {
+      "file": "Amk_Goku Worldwide Loterry/exports/safe_vault_public/safe_vault_20260131T135443.602905+0000/docs/audiology/Z_AUDIOLOGY_MULTILINGUAL_POLICY.md",
+      "extension": ".md",
+      "current_top": "Amk_Goku Worldwide Loterry",
+      "thematic_bucket_id": "B_sibling_amk_goku_lotto_tree",
+      "thematic_nature": "embedded_sibling_or_nested_project",
+      "thematic_note": "Separate app tree under hub root; router uses first segment only."
+    },
+    {
+      "file": "Amk_Goku Worldwide Loterry/exports/safe_vault_public/safe_vault_20260131T135443.602905+0000/docs/audiology/Z_AUDIOLOGY_OATH.md",
+      "extension": ".md",
+      "current_top": "Amk_Goku Worldwide Loterry",
+      "thematic_bucket_id": "B_sibling_amk_goku_lotto_tree",
+      "thematic_nature": "embedded_sibling_or_nested_project",
+      "thematic_note": "Separate app tree under hub root; router uses first segment only."
+    },
+    {
+      "file": "Amk_Goku Worldwide Loterry/exports/safe_vault_public/safe_vault_20260131T135443.602905+0000/docs/audiology/Z_AUDIOLOGY_TESTS.md",
+      "extension": ".md",
+      "current_top": "Amk_Goku Worldwide Loterry",
+      "thematic_bucket_id": "B_sibling_amk_goku_lotto_tree",
+      "thematic_nature": "embedded_sibling_or_nested_project",
+      "thematic_note": "Separate app tree under hub root; router uses first segment only."
+    },
+    {
+      "file": "Amk_Goku Worldwide Loterry/exports/safe_vault_public/safe_vault_20260131T135443.602905+0000/docs/audiology/Z_AUDIOLOGY_UI_POLICY.md",
+      "extension": ".md",
+      "current_top": "Amk_Goku Worldwide Loterry",
+      "thematic_bucket_id": "B_sibling_amk_goku_lotto_tree",
+      "thematic_nature": "embedded_sibling_or_nested_project",
+      "thematic_note": "Separate app tree under hub root; router uses first segment only."
+    },
+    {
+      "file": "Amk_Goku Worldwide Loterry/exports/safe_vault_public/safe_vault_20260131T135443.602905+0000/core/audiology/z_audiology_manifest.json",
+      "extension": ".json",
+      "current_top": "Amk_Goku Worldwide Loterry",
+      "thematic_bucket_id": "B_sibling_amk_goku_lotto_tree",
+      "thematic_nature": "embedded_sibling_or_nested_project",
+      "thematic_note": "Separate app tree under hub root; router uses first segment only."
+    },
+    {
+      "file": "Amk_Goku Worldwide Loterry/exports/safe_vault_public/safe_vault_20260131T135443.602905+0000/core/audiology/z_audiology_schema.json",
+      "extension": ".json",
+      "current_top": "Amk_Goku Worldwide Loterry",
+      "thematic_bucket_id": "B_sibling_amk_goku_lotto_tree",
+      "thematic_nature": "embedded_sibling_or_nested_project",
+      "thematic_note": "Separate app tree under hub root; router uses first segment only."
+    },
+    {
+      "file": "Amk_Goku Worldwide Loterry/exports/safe_vault_public/safe_vault_20260131T130102.332466+0000/CONDITIONS.md",
+      "extension": ".md",
+      "current_top": "Amk_Goku Worldwide Loterry",
+      "thematic_bucket_id": "B_sibling_amk_goku_lotto_tree",
+      "thematic_nature": "embedded_sibling_or_nested_project",
+      "thematic_note": "Separate app tree under hub root; router uses first segment only."
+    },
+    {
+      "file": "Amk_Goku Worldwide Loterry/exports/safe_vault_public/safe_vault_20260131T130102.332466+0000/MANIFEST.json",
+      "extension": ".json",
+      "current_top": "Amk_Goku Worldwide Loterry",
+      "thematic_bucket_id": "B_sibling_amk_goku_lotto_tree",
+      "thematic_nature": "embedded_sibling_or_nested_project",
+      "thematic_note": "Separate app tree under hub root; router uses first segment only."
+    },
+    {
+      "file": "Amk_Goku Worldwide Loterry/exports/safe_vault_public/safe_vault_20260131T130102.332466+0000/REPORT_SUMMARY.md",
+      "extension": ".md",
+      "current_top": "Amk_Goku Worldwide Loterry",
+      "thematic_bucket_id": "B_sibling_amk_goku_lotto_tree",
+      "thematic_nature": "embedded_sibling_or_nested_project",
+      "thematic_note": "Separate app tree under hub root; router uses first segment only."
+    },
+    {
+      "file": "Amk_Goku Worldwide Loterry/exports/safe_vault_public/safe_vault_20260131T130102.332466+0000/docs/audiology/Z_AUDIOLOGY_CHARTER.md",
+      "extension": ".md",
+      "current_top": "Amk_Goku Worldwide Loterry",
+      "thematic_bucket_id": "B_sibling_amk_goku_lotto_tree",
+      "thematic_nature": "embedded_sibling_or_nested_project",
+      "thematic_note": "Separate app tree under hub root; router uses first segment only."
+    },
+    {
+      "file": "Amk_Goku Worldwide Loterry/exports/safe_vault_public/safe_vault_20260131T130102.332466+0000/docs/audiology/Z_AUDIOLOGY_MULTILINGUAL_POLICY.md",
+      "extension": ".md",
+      "current_top": "Amk_Goku Worldwide Loterry",
+      "thematic_bucket_id": "B_sibling_amk_goku_lotto_tree",
+      "thematic_nature": "embedded_sibling_or_nested_project",
+      "thematic_note": "Separate app tree under hub root; router uses first segment only."
+    },
+    {
+      "file": "Amk_Goku Worldwide Loterry/exports/safe_vault_public/safe_vault_20260131T130102.332466+0000/docs/audiology/Z_AUDIOLOGY_OATH.md",
+      "extension": ".md",
+      "current_top": "Amk_Goku Worldwide Loterry",
+      "thematic_bucket_id": "B_sibling_amk_goku_lotto_tree",
+      "thematic_nature": "embedded_sibling_or_nested_project",
+      "thematic_note": "Separate app tree under hub root; router uses first segment only."
+    },
+    {
+      "file": "Amk_Goku Worldwide Loterry/exports/safe_vault_public/safe_vault_20260131T130102.332466+0000/docs/audiology/Z_AUDIOLOGY_TESTS.md",
+      "extension": ".md",
+      "current_top": "Amk_Goku Worldwide Loterry",
+      "thematic_bucket_id": "B_sibling_amk_goku_lotto_tree",
+      "thematic_nature": "embedded_sibling_or_nested_project",
+      "thematic_note": "Separate app tree under hub root; router uses first segment only."
+    },
+    {
+      "file": "Amk_Goku Worldwide Loterry/exports/safe_vault_public/safe_vault_20260131T130102.332466+0000/docs/audiology/Z_AUDIOLOGY_UI_POLICY.md",
+      "extension": ".md",
+      "current_top": "Amk_Goku Worldwide Loterry",
+      "thematic_bucket_id": "B_sibling_amk_goku_lotto_tree",
+      "thematic_nature": "embedded_sibling_or_nested_project",
+      "thematic_note": "Separate app tree under hub root; router uses first segment only."
+    },
+    {
+      "file": "Amk_Goku Worldwide Loterry/exports/safe_vault_public/safe_vault_20260131T130102.332466+0000/core/audiology/z_audiology_manifest.json",
+      "extension": ".json",
+      "current_top": "Amk_Goku Worldwide Loterry",
+      "thematic_bucket_id": "B_sibling_amk_goku_lotto_tree",
+      "thematic_nature": "embedded_sibling_or_nested_project",
+      "thematic_note": "Separate app tree under hub root; router uses first segment only."
+    },
+    {
+      "file": "Amk_Goku Worldwide Loterry/exports/safe_vault_public/safe_vault_20260131T130102.332466+0000/core/audiology/z_audiology_schema.json",
+      "extension": ".json",
+      "current_top": "Amk_Goku Worldwide Loterry",
+      "thematic_bucket_id": "B_sibling_amk_goku_lotto_tree",
+      "thematic_nature": "embedded_sibling_or_nested_project",
+      "thematic_note": "Separate app tree under hub root; router uses first segment only."
+    },
+    {
+      "file": "Amk_Goku Worldwide Loterry/exports/safe_vault_public/safe_vault_20260130T224752.993341+0000/CONDITIONS.md",
+      "extension": ".md",
+      "current_top": "Amk_Goku Worldwide Loterry",
+      "thematic_bucket_id": "B_sibling_amk_goku_lotto_tree",
+      "thematic_nature": "embedded_sibling_or_nested_project",
+      "thematic_note": "Separate app tree under hub root; router uses first segment only."
+    },
+    {
+      "file": "Amk_Goku Worldwide Loterry/exports/safe_vault_public/safe_vault_20260130T224752.993341+0000/MANIFEST.json",
+      "extension": ".json",
+      "current_top": "Amk_Goku Worldwide Loterry",
+      "thematic_bucket_id": "B_sibling_amk_goku_lotto_tree",
+      "thematic_nature": "embedded_sibling_or_nested_project",
+      "thematic_note": "Separate app tree under hub root; router uses first segment only."
+    },
+    {
+      "file": "Amk_Goku Worldwide Loterry/exports/safe_vault_public/safe_vault_20260130T224752.993341+0000/REPORT_SUMMARY.md",
+      "extension": ".md",
+      "current_top": "Amk_Goku Worldwide Loterry",
+      "thematic_bucket_id": "B_sibling_amk_goku_lotto_tree",
+      "thematic_nature": "embedded_sibling_or_nested_project",
+      "thematic_note": "Separate app tree under hub root; router uses first segment only."
+    },
+    {
+      "file": "Amk_Goku Worldwide Loterry/exports/safe_vault_public/safe_vault_20260130T222916.233266+0000/CONDITIONS.md",
+      "extension": ".md",
+      "current_top": "Amk_Goku Worldwide Loterry",
+      "thematic_bucket_id": "B_sibling_amk_goku_lotto_tree",
+      "thematic_nature": "embedded_sibling_or_nested_project",
+      "thematic_note": "Separate app tree under hub root; router uses first segment only."
+    },
+    {
+      "file": "Amk_Goku Worldwide Loterry/exports/safe_vault_public/safe_vault_20260130T222916.233266+0000/MANIFEST.json",
+      "extension": ".json",
+      "current_top": "Amk_Goku Worldwide Loterry",
+      "thematic_bucket_id": "B_sibling_amk_goku_lotto_tree",
+      "thematic_nature": "embedded_sibling_or_nested_project",
+      "thematic_note": "Separate app tree under hub root; router uses first segment only."
+    },
+    {
+      "file": "Amk_Goku Worldwide Loterry/exports/safe_vault_public/safe_vault_20260130T222916.233266+0000/REPORT_SUMMARY.md",
+      "extension": ".md",
+      "current_top": "Amk_Goku Worldwide Loterry",
+      "thematic_bucket_id": "B_sibling_amk_goku_lotto_tree",
+      "thematic_nature": "embedded_sibling_or_nested_project",
+      "thematic_note": "Separate app tree under hub root; router uses first segment only."
+    },
+    {
+      "file": "Amk_Goku Worldwide Loterry/exports/safe_vault_public/safe_vault_20260130T221848.950270+0000/CONDITIONS.md",
+      "extension": ".md",
+      "current_top": "Amk_Goku Worldwide Loterry",
+      "thematic_bucket_id": "B_sibling_amk_goku_lotto_tree",
+      "thematic_nature": "embedded_sibling_or_nested_project",
+      "thematic_note": "Separate app tree under hub root; router uses first segment only."
+    },
+    {
+      "file": "Amk_Goku Worldwide Loterry/exports/safe_vault_public/safe_vault_20260130T221848.950270+0000/MANIFEST.json",
+      "extension": ".json",
+      "current_top": "Amk_Goku Worldwide Loterry",
+      "thematic_bucket_id": "B_sibling_amk_goku_lotto_tree",
+      "thematic_nature": "embedded_sibling_or_nested_project",
+      "thematic_note": "Separate app tree under hub root; router uses first segment only."
+    },
+    {
+      "file": "Amk_Goku Worldwide Loterry/exports/safe_vault_public/safe_vault_20260130T221848.950270+0000/REPORT_SUMMARY.md",
+      "extension": ".md",
+      "current_top": "Amk_Goku Worldwide Loterry",
+      "thematic_bucket_id": "B_sibling_amk_goku_lotto_tree",
+      "thematic_nature": "embedded_sibling_or_nested_project",
+      "thematic_note": "Separate app tree under hub root; router uses first segment only."
+    },
+    {
+      "file": "Amk_Goku Worldwide Loterry/exports/safe_vault/safe_vault_20260215T154120.840323+0000/CONDITIONS.md",
+      "extension": ".md",
+      "current_top": "Amk_Goku Worldwide Loterry",
+      "thematic_bucket_id": "B_sibling_amk_goku_lotto_tree",
+      "thematic_nature": "embedded_sibling_or_nested_project",
+      "thematic_note": "Separate app tree under hub root; router uses first segment only."
+    },
+    {
+      "file": "Amk_Goku Worldwide Loterry/exports/safe_vault/safe_vault_20260215T154120.840323+0000/MANIFEST.json",
+      "extension": ".json",
+      "current_top": "Amk_Goku Worldwide Loterry",
+      "thematic_bucket_id": "B_sibling_amk_goku_lotto_tree",
+      "thematic_nature": "embedded_sibling_or_nested_project",
+      "thematic_note": "Separate app tree under hub root; router uses first segment only."
+    },
+    {
+      "file": "Amk_Goku Worldwide Loterry/exports/safe_vault/safe_vault_20260215T154120.840323+0000/REPORT_SUMMARY.md",
+      "extension": ".md",
+      "current_top": "Amk_Goku Worldwide Loterry",
+      "thematic_bucket_id": "B_sibling_amk_goku_lotto_tree",
+      "thematic_nature": "embedded_sibling_or_nested_project",
+      "thematic_note": "Separate app tree under hub root; router uses first segment only."
+    },
+    {
+      "file": "Amk_Goku Worldwide Loterry/exports/safe_vault/safe_vault_20260215T154120.840323+0000/docs/audiology/Z_AUDIOLOGY_CHARTER.md",
+      "extension": ".md",
+      "current_top": "Amk_Goku Worldwide Loterry",
+      "thematic_bucket_id": "B_sibling_amk_goku_lotto_tree",
+      "thematic_nature": "embedded_sibling_or_nested_project",
+      "thematic_note": "Separate app tree under hub root; router uses first segment only."
+    },
+    {
+      "file": "Amk_Goku Worldwide Loterry/exports/safe_vault/safe_vault_20260215T154120.840323+0000/docs/audiology/Z_AUDIOLOGY_MULTILINGUAL_POLICY.md",
+      "extension": ".md",
+      "current_top": "Amk_Goku Worldwide Loterry",
+      "thematic_bucket_id": "B_sibling_amk_goku_lotto_tree",
+      "thematic_nature": "embedded_sibling_or_nested_project",
+      "thematic_note": "Separate app tree under hub root; router uses first segment only."
+    },
+    {
+      "file": "Amk_Goku Worldwide Loterry/exports/safe_vault/safe_vault_20260215T154120.840323+0000/docs/audiology/Z_AUDIOLOGY_OATH.md",
+      "extension": ".md",
+      "current_top": "Amk_Goku Worldwide Loterry",
+      "thematic_bucket_id": "B_sibling_amk_goku_lotto_tree",
+      "thematic_nature": "embedded_sibling_or_nested_project",
+      "thematic_note": "Separate app tree under hub root; router uses first segment only."
+    },
+    {
+      "file": "Amk_Goku Worldwide Loterry/exports/safe_vault/safe_vault_20260215T154120.840323+0000/docs/audiology/Z_AUDIOLOGY_TESTS.md",
+      "extension": ".md",
+      "current_top": "Amk_Goku Worldwide Loterry",
+      "thematic_bucket_id": "B_sibling_amk_goku_lotto_tree",
+      "thematic_nature": "embedded_sibling_or_nested_project",
+      "thematic_note": "Separate app tree under hub root; router uses first segment only."
+    },
+    {
+      "file": "Amk_Goku Worldwide Loterry/exports/safe_vault/safe_vault_20260215T154120.840323+0000/docs/audiology/Z_AUDIOLOGY_UI_POLICY.md",
+      "extension": ".md",
+      "current_top": "Amk_Goku Worldwide Loterry",
+      "thematic_bucket_id": "B_sibling_amk_goku_lotto_tree",
+      "thematic_nature": "embedded_sibling_or_nested_project",
+      "thematic_note": "Separate app tree under hub root; router uses first segment only."
+    },
+    {
+      "file": "Amk_Goku Worldwide Loterry/exports/safe_vault/safe_vault_20260215T154120.840323+0000/core/audiology/z_audiology_manifest.json",
+      "extension": ".json",
+      "current_top": "Amk_Goku Worldwide Loterry",
+      "thematic_bucket_id": "B_sibling_amk_goku_lotto_tree",
+      "thematic_nature": "embedded_sibling_or_nested_project",
+      "thematic_note": "Separate app tree under hub root; router uses first segment only."
+    },
+    {
+      "file": "Amk_Goku Worldwide Loterry/exports/safe_vault/safe_vault_20260215T154120.840323+0000/core/audiology/z_audiology_schema.json",
+      "extension": ".json",
+      "current_top": "Amk_Goku Worldwide Loterry",
+      "thematic_bucket_id": "B_sibling_amk_goku_lotto_tree",
+      "thematic_nature": "embedded_sibling_or_nested_project",
+      "thematic_note": "Separate app tree under hub root; router uses first segment only."
+    },
+    {
+      "file": "Amk_Goku Worldwide Loterry/exports/safe_vault/safe_vault_20260131T152449.419652+0000/CONDITIONS.md",
+      "extension": ".md",
+      "current_top": "Amk_Goku Worldwide Loterry",
+      "thematic_bucket_id": "B_sibling_amk_goku_lotto_tree",
+      "thematic_nature": "embedded_sibling_or_nested_project",
+      "thematic_note": "Separate app tree under hub root; router uses first segment only."
+    },
+    {
+      "file": "Amk_Goku Worldwide Loterry/exports/safe_vault/safe_vault_20260131T152449.419652+0000/MANIFEST.json",
+      "extension": ".json",
+      "current_top": "Amk_Goku Worldwide Loterry",
+      "thematic_bucket_id": "B_sibling_amk_goku_lotto_tree",
+      "thematic_nature": "embedded_sibling_or_nested_project",
+      "thematic_note": "Separate app tree under hub root; router uses first segment only."
+    },
+    {
+      "file": "Amk_Goku Worldwide Loterry/exports/safe_vault/safe_vault_20260131T152449.419652+0000/REPORT_SUMMARY.md",
+      "extension": ".md",
+      "current_top": "Amk_Goku Worldwide Loterry",
+      "thematic_bucket_id": "B_sibling_amk_goku_lotto_tree",
+      "thematic_nature": "embedded_sibling_or_nested_project",
+      "thematic_note": "Separate app tree under hub root; router uses first segment only."
+    },
+    {
+      "file": "Amk_Goku Worldwide Loterry/exports/safe_vault/safe_vault_20260131T152449.419652+0000/docs/audiology/Z_AUDIOLOGY_CHARTER.md",
+      "extension": ".md",
+      "current_top": "Amk_Goku Worldwide Loterry",
+      "thematic_bucket_id": "B_sibling_amk_goku_lotto_tree",
+      "thematic_nature": "embedded_sibling_or_nested_project",
+      "thematic_note": "Separate app tree under hub root; router uses first segment only."
+    },
+    {
+      "file": "Amk_Goku Worldwide Loterry/exports/safe_vault/safe_vault_20260131T152449.419652+0000/docs/audiology/Z_AUDIOLOGY_MULTILINGUAL_POLICY.md",
+      "extension": ".md",
+      "current_top": "Amk_Goku Worldwide Loterry",
+      "thematic_bucket_id": "B_sibling_amk_goku_lotto_tree",
+      "thematic_nature": "embedded_sibling_or_nested_project",
+      "thematic_note": "Separate app tree under hub root; router uses first segment only."
+    },
+    {
+      "file": "Amk_Goku Worldwide Loterry/exports/safe_vault/safe_vault_20260131T152449.419652+0000/docs/audiology/Z_AUDIOLOGY_OATH.md",
+      "extension": ".md",
+      "current_top": "Amk_Goku Worldwide Loterry",
+      "thematic_bucket_id": "B_sibling_amk_goku_lotto_tree",
+      "thematic_nature": "embedded_sibling_or_nested_project",
+      "thematic_note": "Separate app tree under hub root; router uses first segment only."
+    },
+    {
+      "file": "Amk_Goku Worldwide Loterry/exports/safe_vault/safe_vault_20260131T152449.419652+0000/docs/audiology/Z_AUDIOLOGY_TESTS.md",
+      "extension": ".md",
+      "current_top": "Amk_Goku Worldwide Loterry",
+      "thematic_bucket_id": "B_sibling_amk_goku_lotto_tree",
+      "thematic_nature": "embedded_sibling_or_nested_project",
+      "thematic_note": "Separate app tree under hub root; router uses first segment only."
+    },
+    {
+      "file": "Amk_Goku Worldwide Loterry/exports/safe_vault/safe_vault_20260131T152449.419652+0000/docs/audiology/Z_AUDIOLOGY_UI_POLICY.md",
+      "extension": ".md",
+      "current_top": "Amk_Goku Worldwide Loterry",
+      "thematic_bucket_id": "B_sibling_amk_goku_lotto_tree",
+      "thematic_nature": "embedded_sibling_or_nested_project",
+      "thematic_note": "Separate app tree under hub root; router uses first segment only."
+    },
+    {
+      "file": "Amk_Goku Worldwide Loterry/exports/safe_vault/safe_vault_20260131T152449.419652+0000/core/audiology/z_audiology_manifest.json",
+      "extension": ".json",
+      "current_top": "Amk_Goku Worldwide Loterry",
+      "thematic_bucket_id": "B_sibling_amk_goku_lotto_tree",
+      "thematic_nature": "embedded_sibling_or_nested_project",
+      "thematic_note": "Separate app tree under hub root; router uses first segment only."
+    },
+    {
+      "file": "Amk_Goku Worldwide Loterry/exports/safe_vault/safe_vault_20260131T152449.419652+0000/core/audiology/z_audiology_schema.json",
+      "extension": ".json",
+      "current_top": "Amk_Goku Worldwide Loterry",
+      "thematic_bucket_id": "B_sibling_amk_goku_lotto_tree",
+      "thematic_nature": "embedded_sibling_or_nested_project",
+      "thematic_note": "Separate app tree under hub root; router uses first segment only."
+    },
+    {
+      "file": "Amk_Goku Worldwide Loterry/exports/lottery_app_pack_latest/index.html",
+      "extension": ".html",
+      "current_top": "Amk_Goku Worldwide Loterry",
+      "thematic_bucket_id": "B_sibling_amk_goku_lotto_tree",
+      "thematic_nature": "embedded_sibling_or_nested_project",
+      "thematic_note": "Separate app tree under hub root; router uses first segment only."
+    },
+    {
+      "file": "Amk_Goku Worldwide Loterry/exports/lottery_app_pack_latest/MANIFEST.json",
+      "extension": ".json",
+      "current_top": "Amk_Goku Worldwide Loterry",
+      "thematic_bucket_id": "B_sibling_amk_goku_lotto_tree",
+      "thematic_nature": "embedded_sibling_or_nested_project",
+      "thematic_note": "Separate app tree under hub root; router uses first segment only."
+    },
+    {
+      "file": "Amk_Goku Worldwide Loterry/exports/lottery_app_pack_latest/ui/delivery.html",
+      "extension": ".html",
+      "current_top": "Amk_Goku Worldwide Loterry",
+      "thematic_bucket_id": "B_sibling_amk_goku_lotto_tree",
+      "thematic_nature": "embedded_sibling_or_nested_project",
+      "thematic_note": "Separate app tree under hub root; router uses first segment only."
+    },
+    {
+      "file": "Amk_Goku Worldwide Loterry/exports/lottery_app_pack_latest/ui/drift_watch.html",
+      "extension": ".html",
+      "current_top": "Amk_Goku Worldwide Loterry",
+      "thematic_bucket_id": "B_sibling_amk_goku_lotto_tree",
+      "thematic_nature": "embedded_sibling_or_nested_project",
+      "thematic_note": "Separate app tree under hub root; router uses first segment only."
+    },
+    {
+      "file": "Amk_Goku Worldwide Loterry/exports/lottery_app_pack_latest/ui/feeling_panel.html",
+      "extension": ".html",
+      "current_top": "Amk_Goku Worldwide Loterry",
+      "thematic_bucket_id": "B_sibling_amk_goku_lotto_tree",
+      "thematic_nature": "embedded_sibling_or_nested_project",
+      "thematic_note": "Separate app tree under hub root; router uses first segment only."
+    },
+    {
+      "file": "Amk_Goku Worldwide Loterry/exports/lottery_app_pack_latest/ui/kairocell_overlay.html",
+      "extension": ".html",
+      "current_top": "Amk_Goku Worldwide Loterry",
+      "thematic_bucket_id": "B_sibling_amk_goku_lotto_tree",
+      "thematic_nature": "embedded_sibling_or_nested_project",
+      "thematic_note": "Separate app tree under hub root; router uses first segment only."
+    },
+    {
+      "file": "Amk_Goku Worldwide Loterry/exports/lottery_app_pack_latest/ui/lottery_app.html",
+      "extension": ".html",
+      "current_top": "Amk_Goku Worldwide Loterry",
+      "thematic_bucket_id": "B_sibling_amk_goku_lotto_tree",
+      "thematic_nature": "embedded_sibling_or_nested_project",
+      "thematic_note": "Separate app tree under hub root; router uses first segment only."
+    },
+    {
+      "file": "Amk_Goku Worldwide Loterry/exports/lottery_app_pack_latest/ui/world_observer.html",
+      "extension": ".html",
+      "current_top": "Amk_Goku Worldwide Loterry",
+      "thematic_bucket_id": "B_sibling_amk_goku_lotto_tree",
+      "thematic_nature": "embedded_sibling_or_nested_project",
+      "thematic_note": "Separate app tree under hub root; router uses first segment only."
+    },
+    {
+      "file": "Amk_Goku Worldwide Loterry/exports/lottery_app_pack_latest/ui/z_bootstrap.js",
+      "extension": ".js",
+      "current_top": "Amk_Goku Worldwide Loterry",
+      "thematic_bucket_id": "B_sibling_amk_goku_lotto_tree",
+      "thematic_nature": "embedded_sibling_or_nested_project",
+      "thematic_note": "Separate app tree under hub root; router uses first segment only."
+    },
+    {
+      "file": "Amk_Goku Worldwide Loterry/exports/lottery_app_pack_latest/ui/public_trust/index.html",
+      "extension": ".html",
+      "current_top": "Amk_Goku Worldwide Loterry",
+      "thematic_bucket_id": "B_sibling_amk_goku_lotto_tree",
+      "thematic_nature": "embedded_sibling_or_nested_project",
+      "thematic_note": "Separate app tree under hub root; router uses first segment only."
+    },
+    {
+      "file": "Amk_Goku Worldwide Loterry/exports/lottery_app_pack_latest/ui/notebook/basic_notebook.html",
+      "extension": ".html",
+      "current_top": "Amk_Goku Worldwide Loterry",
+      "thematic_bucket_id": "B_sibling_amk_goku_lotto_tree",
+      "thematic_nature": "embedded_sibling_or_nested_project",
+      "thematic_note": "Separate app tree under hub root; router uses first segment only."
+    },
+    {
+      "file": "Amk_Goku Worldwide Loterry/exports/lottery_app_pack_latest/ui/lottery_vault/checklist.html",
+      "extension": ".html",
+      "current_top": "Amk_Goku Worldwide Loterry",
+      "thematic_bucket_id": "B_sibling_amk_goku_lotto_tree",
+      "thematic_nature": "embedded_sibling_or_nested_project",
+      "thematic_note": "Separate app tree under hub root; router uses first segment only."
+    },
+    {
+      "file": "Amk_Goku Worldwide Loterry/exports/lottery_app_pack_latest/ui/education/learning_cards.html",
+      "extension": ".html",
+      "current_top": "Amk_Goku Worldwide Loterry",
+      "thematic_bucket_id": "B_sibling_amk_goku_lotto_tree",
+      "thematic_nature": "embedded_sibling_or_nested_project",
+      "thematic_note": "Separate app tree under hub root; router uses first segment only."
+    },
+    {
+      "file": "Amk_Goku Worldwide Loterry/exports/lottery_app_pack_latest/ui/education/orientation.html",
+      "extension": ".html",
+      "current_top": "Amk_Goku Worldwide Loterry",
+      "thematic_bucket_id": "B_sibling_amk_goku_lotto_tree",
+      "thematic_nature": "embedded_sibling_or_nested_project",
+      "thematic_note": "Separate app tree under hub root; router uses first segment only."
+    },
+    {
+      "file": "Amk_Goku Worldwide Loterry/exports/lottery_app_pack_latest/ui/drift_watch/index.html",
+      "extension": ".html",
+      "current_top": "Amk_Goku Worldwide Loterry",
+      "thematic_bucket_id": "B_sibling_amk_goku_lotto_tree",
+      "thematic_nature": "embedded_sibling_or_nested_project",
+      "thematic_note": "Separate app tree under hub root; router uses first segment only."
+    },
+    {
+      "file": "Amk_Goku Worldwide Loterry/exports/lottery_app_pack_latest/ui/circles/circle_learning_view.html",
+      "extension": ".html",
+      "current_top": "Amk_Goku Worldwide Loterry",
+      "thematic_bucket_id": "B_sibling_amk_goku_lotto_tree",
+      "thematic_nature": "embedded_sibling_or_nested_project",
+      "thematic_note": "Separate app tree under hub root; router uses first segment only."
+    },
+    {
+      "file": "Amk_Goku Worldwide Loterry/exports/lottery_app_pack_latest/trust/education_mode_mirror.html",
+      "extension": ".html",
+      "current_top": "Amk_Goku Worldwide Loterry",
+      "thematic_bucket_id": "B_sibling_amk_goku_lotto_tree",
+      "thematic_nature": "embedded_sibling_or_nested_project",
+      "thematic_note": "Separate app tree under hub root; router uses first segment only."
+    }
+  ]
+}

@@ -1,0 +1,283 @@
+{
+  "generated_at": "2026-05-01T17:24:19.160Z",
+  "hub_root": "C:\\Cursor Projects Organiser\\ZSanctuary_Universe",
+  "system_status": {
+    "verify": "PASS",
+    "projects": 15,
+    "last_check": "2026-05-01",
+    "last_check_iso": "2026-05-01T17:24:19.114Z",
+    "status": "healthy",
+    "hub": "ZSanctuary_Universe",
+    "source": "verify:ci"
+  },
+  "registered_projects": [
+    "ZSanctuary_Universe",
+    "Amk-Goku Dashboards 2",
+    "Amk-Goku Vaults",
+    "AT Princess & Blackie Copilot",
+    "AT Princess & Blackie Copilot",
+    "Extras & Tools",
+    "Roulette Data Analyzer · Z-Amk-Goku MD/CP (Replit)",
+    "Sister Aisling Sol",
+    "Z_Sanctuary_Universe 2",
+    "Z-OMNI-Sanctuary",
+    "Z-SANCTUARY AI SKYSCRAPER",
+    "Z-Sanctuary Browser (Z-Saiyan Lumina)",
+    "Z-Sanctuary Claude (Core)",
+    "Z-Sanctuary Replit",
+    "z-sanctuary-aimanity"
+  ],
+  "registered_project_count": 15,
+  "suggestions": [
+    "Before a major release, run npm run verify:full (long pipeline) from the hub.",
+    "Keep using Z: CI quick verify (folders + structure + registry) in PR checks when GitHub Actions is enabled."
+  ],
+  "suggestion_count": 2,
+  "formula_posture": {
+    "posture": "watch",
+    "scores": {
+      "K": 70,
+      "D": 100,
+      "P": 100,
+      "E": 40,
+      "R": 100,
+      "drp_filter": 80,
+      "omega_index": 66,
+      "z_ui_readiness": 76
+    },
+    "interpretation": {
+      "governance": "fix_then_promote",
+      "media": "safe_to_publish_with_audit",
+      "business": "maintain_and_reduce_risk",
+      "qa_criticism_ai": "enable_advisory_mode_only_with_human_review"
+    },
+    "notes": [
+      "Formula posture is computed from current system status and project freshness signals.",
+      "DRP reinforcement lowers posture when missing, stale, or dirty cross-project signals increase."
+    ]
+  },
+  "project_freshness": {
+    "generated_at": "2026-05-01T17:24:19.068Z",
+    "hub_root": "C:\\Cursor Projects Organiser\\ZSanctuary_Universe",
+    "pc_root": "C:\\Cursor Projects Organiser",
+    "registry_source": "z-eaii-registry.json + z-eaii-build-pc-workspace.mjs",
+    "projects": [
+      {
+        "id": "zsanctuary-universe",
+        "name": "ZSanctuary_Universe",
+        "role": "hub",
+        "registry_path": "ZSanctuary_Universe",
+        "absolute_path": "C:\\Cursor Projects Organiser\\ZSanctuary_Universe",
+        "presence": "ok",
+        "git": {
+          "ok": false,
+          "head_commit_at": null,
+          "days_since_commit": null,
+          "dirty": false,
+          "reason": "no_git"
+        }
+      },
+      {
+        "id": "amk-goku-dashboards-2",
+        "name": "Amk-Goku Dashboards 2",
+        "role": "external",
+        "registry_path": "",
+        "absolute_path": "C:\\Cursor Projects Organiser",
+        "presence": "no_path",
+        "git": null
+      },
+      {
+        "id": "amk-goku-vaults",
+        "name": "Amk-Goku Vaults",
+        "role": "member",
+        "registry_path": "Amk-Goku Vaults",
+        "absolute_path": "C:\\Cursor Projects Organiser\\Amk-Goku Vaults",
+        "presence": "ok",
+        "git": {
+          "ok": false,
+          "head_commit_at": null,
+          "days_since_commit": null,
+          "dirty": false,
+          "reason": "no_git"
+        }
+      },
+      {
+        "id": "at-princess-blackie-copilot",
+        "name": "AT Princess & Blackie Copilot",
+        "role": "member",
+        "registry_path": "AT Princess&Blackie Copilot",
+        "absolute_path": "C:\\Cursor Projects Organiser\\AT Princess&Blackie Copilot",
+        "presence": "ok",
+        "git": {
+          "ok": false,
+          "head_commit_at": null,
+          "days_since_commit": null,
+          "dirty": false,
+          "reason": "no_git"
+        }
+      },
+      {
+        "id": "at-princess-blackie-copitol",
+        "name": "AT Princess & Blackie Copilot",
+        "role": "member",
+        "registry_path": "AT Princess&Blackie Copilot",
+        "absolute_path": "C:\\Cursor Projects Organiser\\AT Princess&Blackie Copilot",
+        "presence": "ok",
+        "git": {
+          "ok": false,
+          "head_commit_at": null,
+          "days_since_commit": null,
+          "dirty": false,
+          "reason": "no_git"
+        }
+      },
+      {
+        "id": "pc-root-extras-and-tools",
+        "name": "Extras & Tools",
+        "role": "member",
+        "registry_path": "Extras & Tools",
+        "absolute_path": "C:\\Cursor Projects Organiser\\Extras & Tools",
+        "presence": "ok",
+        "git": {
+          "ok": false,
+          "head_commit_at": null,
+          "days_since_commit": null,
+          "dirty": false,
+          "reason": "no_git"
+        }
+      },
+      {
+        "id": "replit-roulette-z-amk-goku-mdcp",
+        "name": "Roulette Data Analyzer · Z-Amk-Goku MD/CP (Replit)",
+        "role": "external",
+        "registry_path": "",
+        "absolute_path": "C:\\Cursor Projects Organiser",
+        "presence": "no_path",
+        "git": null
+      },
+      {
+        "id": "sister-aisling-sol",
+        "name": "Sister Aisling Sol",
+        "role": "member",
+        "registry_path": "Z-Sister Aisling Sol",
+        "absolute_path": "C:\\Cursor Projects Organiser\\Z-Sister Aisling Sol",
+        "presence": "ok",
+        "git": {
+          "ok": false,
+          "head_commit_at": null,
+          "days_since_commit": null,
+          "dirty": false,
+          "reason": "no_git"
+        }
+      },
+      {
+        "id": "z-sanctuary-universe-2-continuation",
+        "name": "Z_Sanctuary_Universe 2",
+        "role": "member",
+        "registry_path": "ZSanctuary_Universe/Z_Sanctuary_Universe 2",
+        "absolute_path": "C:\\Cursor Projects Organiser\\ZSanctuary_Universe\\Z_Sanctuary_Universe 2",
+        "presence": "ok",
+        "git": {
+          "ok": false,
+          "head_commit_at": null,
+          "days_since_commit": null,
+          "dirty": false,
+          "reason": "no_git"
+        }
+      },
+      {
+        "id": "z-omni-sanctuary",
+        "name": "Z-OMNI-Sanctuary",
+        "role": "member",
+        "registry_path": "Z-OMNI-Sanctuary",
+        "absolute_path": "C:\\Cursor Projects Organiser\\Z-OMNI-Sanctuary",
+        "presence": "ok",
+        "git": {
+          "ok": false,
+          "head_commit_at": null,
+          "days_since_commit": null,
+          "dirty": false,
+          "reason": "no_git"
+        }
+      },
+      {
+        "id": "z-sanctuary-ai-skyscraper",
+        "name": "Z-SANCTUARY AI SKYSCRAPER",
+        "role": "member",
+        "registry_path": "Z-SANCTUARY AI SKYSCRAPER",
+        "absolute_path": "C:\\Cursor Projects Organiser\\Z-SANCTUARY AI SKYSCRAPER",
+        "presence": "ok",
+        "git": {
+          "ok": false,
+          "head_commit_at": null,
+          "days_since_commit": null,
+          "dirty": false,
+          "reason": "no_git"
+        }
+      },
+      {
+        "id": "z-sanctuary-browser-z-saiyan-lumina",
+        "name": "Z-Sanctuary Browser (Z-Saiyan Lumina)",
+        "role": "member",
+        "registry_path": "Z-Sanctuary Browser",
+        "absolute_path": "C:\\Cursor Projects Organiser\\Z-Sanctuary Browser",
+        "presence": "missing",
+        "git": null
+      },
+      {
+        "id": "z-sanctuary-claude-core",
+        "name": "Z-Sanctuary Claude (Core)",
+        "role": "member",
+        "registry_path": "Z-Sanctuary Claude",
+        "absolute_path": "C:\\Cursor Projects Organiser\\Z-Sanctuary Claude",
+        "presence": "ok",
+        "git": {
+          "ok": false,
+          "head_commit_at": null,
+          "days_since_commit": null,
+          "dirty": false,
+          "reason": "no_git"
+        }
+      },
+      {
+        "id": "z-sanctuary-replit",
+        "name": "Z-Sanctuary Replit",
+        "role": "member",
+        "registry_path": "Z-Sanctuary_Replit",
+        "absolute_path": "C:\\Cursor Projects Organiser\\Z-Sanctuary_Replit",
+        "presence": "ok",
+        "git": {
+          "ok": false,
+          "head_commit_at": null,
+          "days_since_commit": null,
+          "dirty": false,
+          "reason": "no_git"
+        }
+      },
+      {
+        "id": "z-sanctuary-aimanity",
+        "name": "z-sanctuary-aimanity",
+        "role": "member",
+        "registry_path": "z-sanctuary-aimanity",
+        "absolute_path": "C:\\Cursor Projects Organiser\\z-sanctuary-aimanity",
+        "presence": "ok",
+        "git": {
+          "ok": false,
+          "head_commit_at": null,
+          "days_since_commit": null,
+          "dirty": false,
+          "reason": "no_git"
+        }
+      }
+    ],
+    "summary": {
+      "projects_scanned": 15,
+      "present": 12,
+      "missing": 1,
+      "with_git_heads": 0,
+      "dirty_worktrees": 0,
+      "max_days_since_commit": null,
+      "stale_heads_over_30d": 0
+    }
+  }
+}

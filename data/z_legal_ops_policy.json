@@ -1,0 +1,16 @@
+{
+  "schema": "z.legal.ops.policy.v1",
+  "phase": "Z-LEGAL-OPS-1",
+  "no_legal_advice_claim": true,
+  "no_lawyer_endorsement_without_signed_agreement": true,
+  "no_real_lawyer_names_public_ui_without_consent": true,
+  "no_client_data_intake_phase_1": true,
+  "no_evidence_upload_phase_1": true,
+  "no_case_management_runtime_phase_1": true,
+  "no_public_launch_phase_1": true,
+  "no_privileged_data_storage_phase_1": true,
+  "ai_may_generate_draft_summary": true,
+  "ai_must_recommend_qualified_professional": true,
+  "user_controls_sharing": true,
+  "human_lawyer_review_required_for_legal_advice": true
+}

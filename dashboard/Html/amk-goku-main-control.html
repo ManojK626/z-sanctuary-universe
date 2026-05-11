@@ -1,0 +1,383 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="z-project-id" content="ZSanctuary_Universe" />
+    <meta name="z-dashboard-role" content="amk-main-control-map" />
+    <meta name="z-project-family" content="Z-Sanctuary Universe" />
+    <title>AMK-Goku Main Control Dashboard · Z-Sanctuary</title>
+    <link rel="stylesheet" href="../styles/amk-goku-main-control.css" />
+    <link rel="stylesheet" href="../styles/amk-project-indicators.css" />
+    <link rel="stylesheet" href="../styles/amk-zuno-advisor.css" />
+    <link rel="stylesheet" href="../styles/z-root-guardian-coordination.css" />
+  </head>
+  <body class="amk-map-root amk-dash-flex" id="amkMapRootBody">
+    <a class="amk-map-skip" href="#amk-main">Skip to main content</a>
+    <div class="amk-dash-app" id="amkDashApp">
+      <header class="amk-dash-ribbon amk-dash-aura-slow" role="banner">
+        <div class="amk-dash-ribbon-top">
+          <div class="amk-dash-brand">
+            <h1 id="amkMapPageTitle">AMK-Goku Main Control Dashboard</h1>
+            <p id="amkMapPageSub" class="amk-map-sub">Loading map…</p>
+          </div>
+          <div id="amkRibbonSignals" class="amk-dash-signals" aria-live="polite"></div>
+        </div>
+        <div class="amk-dash-ribbon-controls">
+          <div id="amkDomainBarMount" class="amk-dash-domain" aria-label="Domain view switcher"></div>
+          <label class="amk-dash-search-label">
+            <span class="amk-dash-visually-hidden">Filter control book</span>
+            <input
+              type="search"
+              id="amkDashSearch"
+              class="amk-dash-search"
+              placeholder="Filter book and panels…"
+              aria-label="Filter control book"
+              autocomplete="off"
+              spellcheck="false"
+            />
+          </label>
+          <div class="amk-dash-density" role="group" aria-label="Density mode — Calm, Compact, or Tactical layout">
+            <button type="button" class="amk-dash-dens-btn amk-dash-dens-btn--on" data-amk-density="calm" aria-pressed="true">Calm</button>
+            <button type="button" class="amk-dash-dens-btn" data-amk-density="compact" aria-pressed="false">Compact</button>
+            <button type="button" class="amk-dash-dens-btn" data-amk-density="tactical" aria-pressed="false">Tactical</button>
+          </div>
+          <label class="amk-dash-focus-lab">
+            <input type="checkbox" id="amkDashFocus" class="amk-dash-focus-cb" aria-label="Focus stage — show only the selected book category in the center" />
+            <span>Focus stage</span>
+          </label>
+          <button
+            type="button"
+            class="amk-dash-inspector-toggle"
+            id="amkDashInspectorToggle"
+            aria-expanded="true"
+            aria-controls="amkDashInspectorChrome"
+          >
+            Inspector
+          </button>
+          <button
+            type="button"
+            class="amk-dash-tools-launch"
+            id="amkToolsToggle"
+            aria-expanded="false"
+            aria-controls="amkToolsDrawer"
+            aria-label="Open or close AMK Tools toolbox"
+          >
+            AMK Tools
+          </button>
+        </div>
+        <div class="amk-dash-ribbon-toolbar" aria-label="Signal jump and view modes">
+          <span class="amk-dash-toolbar-label">Jump to signal</span>
+          <div class="amk-dash-jump-signals" role="group" aria-label="Scroll to first matching posture chip">
+            <button type="button" class="amk-dash-jump-btn amk-dash-jump--red" data-amk-jump-sig="RED">RED</button>
+            <button type="button" class="amk-dash-jump-btn amk-dash-jump--blue" data-amk-jump-sig="BLUE">BLUE</button>
+            <button type="button" class="amk-dash-jump-btn amk-dash-jump--yellow" data-amk-jump-sig="YELLOW">YELLOW</button>
+            <button type="button" class="amk-dash-jump-btn amk-dash-jump--green" data-amk-jump-sig="GREEN">GREEN</button>
+            <button type="button" class="amk-dash-jump-btn amk-dash-jump--unknown" data-amk-jump-sig="UNKNOWN">UNKNOWN</button>
+          </div>
+          <label class="amk-dash-mode-lab">
+            <input type="checkbox" id="amkDashReadMode" class="amk-dash-mode-cb" />
+            <span>Read mode</span>
+          </label>
+          <label class="amk-dash-mode-lab">
+            <input type="checkbox" id="amkDashBoardMode" class="amk-dash-mode-cb" />
+            <span>Board mode</span>
+          </label>
+        </div>
+        <nav class="amk-dash-ribbon-nav" aria-label="Related surfaces">
+          <a href="./index-skk-rkpk.html">Unified hub dashboard</a>
+          <a href="./index-skk-rkpk.html#zAmkNotificationsPanel">AMK notifications panel</a>
+          <a href="#amk-indicators-section">Readiness indicators</a>
+          <a href="#amk-legal-workstation-section">Lawyer workstation</a>
+          <a href="#amk-legal-toolbelt-section">Legal toolbelt dock</a>
+          <a href="./z-legal-lawyer-workstation.html">Z-Lawyer Workstation UX-2</a>
+          <a href="./index-skk-rkpk.html#zAmkIndicatorsPanel">Unified hub indicators panel</a>
+          <a href="#amk-zuno-advisor-section">Zuno Advisor (AAL-1)</a>
+          <a href="./z-universe-ecosphere-map.html">Living Ecosphere Map</a>
+          <a href="../../docs/AMK_GOKU_MAIN_CONTROL_DASHBOARD.md">Operator doc</a>
+        </nav>
+        <div class="amk-neon-chipbar" aria-label="Locked law chips">
+          <span class="amk-neon-chip">NO LEGAL ADVICE</span>
+          <span class="amk-neon-chip">NO CLIENT DATA</span>
+          <span class="amk-neon-chip">NO PRODUCT LAUNCH</span>
+          <span class="amk-neon-chip">NO DEPLOY</span>
+          <span class="amk-neon-chip">READ-ONLY GOVERNANCE</span>
+        </div>
+      </header>
+
+      <p id="amkMapError" class="amk-map-error" role="alert"></p>
+      <p id="amkMap3Disclaimer" class="amk-map3-disclaimer amk-dash-disclaimer"></p>
+
+      <div id="amkFriendlyPanel" class="amk-friendly-panel" hidden></div>
+
+      <div class="amk-dash-work" id="amkDashWork">
+        <nav class="amk-dash-drawer" id="amkDashDrawer" aria-label="Control book">
+          <button type="button" id="amkDrawerToggle" class="amk-dash-drawer-toggle" aria-expanded="true" aria-controls="amkDrawerNavMount">
+            Book
+          </button>
+          <div id="amkDrawerNavMount" class="amk-dash-drawer-mount"></div>
+        </nav>
+
+        <div class="amk-dash-center-col">
+          <div class="amk-map-wrap amk-dash-focus-scroll" id="amk-main">
+            <header class="amk-map-header amk-dash-law-header" data-amk-category="overview">
+              <div id="amkMapLaw" class="amk-map-law" data-amk-section="law" data-amk-category="overview" aria-live="polite"></div>
+            </header>
+
+      <details class="amk-map-section" open data-amk-section="indicators" data-amk-category="indicators" id="amk-indicators-section">
+        <summary>Unified readiness indicators (AMK-INDICATOR-1)</summary>
+        <div class="amk-map-section-body amk-indicators-panel-inner amk-indicators-panel">
+          <p class="amk-map3-disclaimer" style="margin-top: 0">
+            Read-only board: links open docs/reports only. Percent and Go/No-Go are advisory — not deployment permission.
+            Serve the hub over HTTP so JSON and report overlays can load.
+          </p>
+          <div id="amkProjectIndicatorsMount"></div>
+          <div id="amkCloudflareGoNoGoMount"></div>
+        </div>
+      </details>
+
+      <details class="amk-map-section" open data-amk-section="advisor" data-amk-category="workspace" id="amk-zuno-advisor-section">
+        <summary>Zuno Advisor Console (AAL-1)</summary>
+        <div class="amk-map-section-body amk-zuno-advisor-root">
+          <p id="amkAalLawMount" class="amk-aal-law"></p>
+          <div id="amkZunoAdvisorLadderMount" class="amk-aal-ladder" aria-label="Autonomy ladder L0 through L5"></div>
+          <div class="amk-aal-grid">
+            <div class="amk-aal-lane-col">
+              <h3>Sanctuary auto-lane (candidates)</h3>
+              <div id="amkZunoAutoLaneMount"></div>
+            </div>
+            <div class="amk-aal-lane-col">
+              <h3>AMK physical / sacred lane</h3>
+              <div id="amkZunoSacredLaneMount"></div>
+            </div>
+          </div>
+          <div class="amk-zuno-query">
+            <label for="amkZunoAdvisorInput">Ask (local deterministic guidance — no AI API)</label>
+            <textarea
+              id="amkZunoAdvisorInput"
+              rows="2"
+              spellcheck="false"
+              autocomplete="off"
+              placeholder="e.g. What should I do next?"
+            ></textarea>
+            <button type="button" id="amkZunoAdvisorAskBtn">Get guidance</button>
+            <p class="amk-aal-prompt-hint">
+              Supported examples: “What should I do next?”, “What is blocked?”, “What can auto-advance?”, “What needs AMK
+              approval?”, “Is Cloudflare ready?”
+            </p>
+          </div>
+          <div id="amkZunoAdvisorOutput" class="amk-zuno-output" role="status" aria-live="polite"></div>
+          <p class="amk-aal-future">
+            <strong>Voice input</strong> is future-gated. It requires consent UX, privacy policy, microphone/camera/GPS
+            minimization, and DRP review before any engine is wired.
+          </p>
+          <p class="amk-aal-future">
+            <strong>One-click approval</strong> in later phases may prepare or record a lane decision bundle only. It
+            does not deploy, bill, bridge, or execute Cursor/npm tasks from the browser.
+          </p>
+          <div class="amk-zuno-ack">
+            <strong>Local acknowledgement only.</strong> This button does not run tasks — it stores a timestamp in
+            browser <code>localStorage</code> only.
+            <div><button type="button" id="amkZunoAdvisorAckBtn">Mark advisor board reviewed (browser only)</button></div>
+            <p id="amkZunoAdvisorAckNote" class="amk-aal-meta"></p>
+          </div>
+        </div>
+      </details>
+
+      <details class="amk-map-section" open data-amk-section="legal_workstation" data-amk-category="workspace" id="amk-legal-workstation-section">
+        <summary>Lawyer Workstation visibility panel (read-only)</summary>
+        <div class="amk-map-section-body">
+          <p class="amk-map3-disclaimer" style="margin-top: 0">
+            Dashboard visibility only: no lawyer accounts, no legal advice runtime, no client intake, no uploads, no deploy, no manufacturing, no payments.
+          </p>
+          <div id="amkLegalWorkstationMount"></div>
+        </div>
+      </details>
+
+      <details class="amk-map-section" open data-amk-section="legal_toolbelt" data-amk-category="workspace" id="amk-legal-toolbelt-section">
+        <summary>Z-Legal Tool Dock (toolbelt planning view)</summary>
+        <div class="amk-map-section-body">
+          <p class="amk-map3-disclaimer" style="margin-top: 0">
+            Compact legal toolbelt metadata only: no uploads, no OCR runtime, no video runtime analysis, no legal advice runtime, no filing, no payments, no deploy.
+          </p>
+          <div id="amkLegalToolbeltMount"></div>
+        </div>
+      </details>
+
+      <div class="amk-map-layout">
+        <button type="button" id="amkCatalogToggle" class="amk-catalog-toggle" aria-expanded="false" aria-controls="amkSideCatalog">
+          Catalog
+        </button>
+        <aside id="amkSideCatalog" class="amk-side-catalog" aria-label="Living side panel catalog">
+          <div id="amkSideCatalogMount" class="amk-side-catalog-mount"></div>
+        </aside>
+
+        <div class="amk-map-main">
+          <div data-amk-section="strip" data-amk-category="overview">
+            <section class="amk-map-section-body" style="margin-bottom: 1rem; border-radius: var(--amk-radius)">
+              <div id="amkMapStrip"></div>
+            </section>
+          </div>
+
+          <details class="amk-map-section" open data-amk-section="ecosystem" data-amk-category="creative">
+            <summary id="amkEcosystemSummary">Living ecosystem canvas</summary>
+            <div class="amk-map-section-body">
+              <p id="amkCanvasIntro" class="amk-canvas-intro"></p>
+              <div id="amkEcosystemLegend" class="amk-eco-legend" aria-label="Shape legend"></div>
+              <div class="amk-eco-wrap">
+                <svg
+                  id="amkEcosystemSvg"
+                  xmlns="http://www.w3.org/2000/svg"
+                  role="img"
+                  aria-label="Living ecosystem map: AMK-Goku core and connected systems"
+                ></svg>
+              </div>
+            </div>
+          </details>
+
+          <details class="amk-map-section" open data-amk-section="root7" data-amk-category="root_guardians" id="amk-root7-section">
+            <summary>Seven Guardian Coordination (Z-ROOT-7)</summary>
+            <div class="amk-map-section-body z-root7-body">
+              <p id="zRoot7Lead" class="z-root7-lead"></p>
+              <div id="zRoot7GuardianMount" class="z-root7-outer" aria-label="Symbolic guardian council map"></div>
+              <p class="amk-map3-disclaimer" style="margin-top: 0.65rem; margin-bottom: 0">
+                Z-ROOT-7 / Z-ROOT-7B: symbolic 3D-lite constellation — not a live 3D engine (no WebGL). Not live AI, not research, not execution. Guardian council ≠ executor.
+              </p>
+            </div>
+          </details>
+
+          <details class="amk-map-section" open data-amk-section="health" data-amk-category="indicators">
+            <summary>Health monitoring</summary>
+            <div class="amk-map-section-body">
+              <div id="amkMapHealth"></div>
+            </div>
+          </details>
+
+          <details class="amk-map-section" open data-amk-section="rhythm" data-amk-category="indicators">
+            <summary>Health rhythm scheduler</summary>
+            <div class="amk-map-section-body">
+              <div id="amkMapRhythm"></div>
+            </div>
+          </details>
+
+          <section class="amk-map-hero" id="amk-hero-region" aria-label="What should AMK-Goku do now — four safe paths" data-amk-section="hero" data-amk-category="overview">
+            <div id="amkMapHero"></div>
+          </section>
+
+          <details class="amk-map-section" open data-amk-section="topcards" data-amk-category="overview">
+            <summary>Top status cards</summary>
+            <div class="amk-map-section-body">
+              <div id="amkMapTopCards"></div>
+            </div>
+          </details>
+
+          <details class="amk-map-section" open data-amk-section="queue" data-amk-category="api_ssws">
+            <summary>Next lane queue (AMK notifications)</summary>
+            <div class="amk-map-section-body">
+              <div id="amkMapQueue"></div>
+            </div>
+          </details>
+
+          <details class="amk-map-section" open data-amk-section="inspector" data-amk-category="workspace">
+            <summary>AI inspector / advisor (read-only)</summary>
+            <div class="amk-map-section-body">
+              <div id="amkMapInspector"></div>
+            </div>
+          </details>
+
+          <details class="amk-map-section" open data-amk-section="observatory" data-amk-category="indicators">
+            <summary>Readiness observatory</summary>
+            <div class="amk-map-section-body">
+              <div id="amkMapObservatory"></div>
+            </div>
+          </details>
+
+          <details class="amk-map-section" open data-amk-section="launch" data-amk-category="launch_hold">
+            <summary>Launch readiness ceremony</summary>
+            <div class="amk-map-section-body">
+              <div id="amkMapLaunch"></div>
+            </div>
+          </details>
+
+          <details class="amk-map-section" open data-amk-section="sealed" data-amk-category="security">
+            <summary>Sealed systems</summary>
+            <div class="amk-map-section-body">
+              <div id="amkMapSealed"></div>
+            </div>
+          </details>
+
+          <details class="amk-map-section" data-amk-section="projects" data-amk-category="workspace">
+            <summary>Project map</summary>
+            <div class="amk-map-section-body">
+              <div id="amkMapProjects"></div>
+            </div>
+          </details>
+
+          <details class="amk-map-section" open id="amk-section-safe-now" data-amk-section="safenow" data-amk-category="launch_hold">
+            <summary>What I can do now</summary>
+            <div class="amk-map-section-body">
+              <div id="amkMapSafeNow"></div>
+            </div>
+          </details>
+
+          <details class="amk-map-section" open data-amk-section="blocked" data-amk-category="security">
+            <summary>Blocked until gate</summary>
+            <div class="amk-map-section-body">
+              <div id="amkMapBlocked"></div>
+            </div>
+          </details>
+
+          <div id="zOmnaiCoreReadonlyMount" aria-live="polite"></div>
+
+          <details class="amk-map-section" open data-amk-section="receipts" data-amk-category="docs_receipts">
+            <summary>Receipts and reports</summary>
+            <div class="amk-map-section-body">
+              <div id="amkMapReceipts"></div>
+            </div>
+          </details>
+
+          <footer class="amk-map-foot" data-amk-category="docs_receipts">
+            AMK-MAP-1 + AMK-MAP-2 + AMK-MAP-3 + Z-ROOT-7 + AMK-INDICATOR-1 + AAL-1 — read-only compass, living canvas, seven-guardian
+            coordination (symbolic), domain lenses, catalog, observatory, launch ceremony, unified readiness indicators, and Zuno Advisor
+            ladder. No execution, deploy, bridge,
+            provider, billing, auth, analytics, or user-feedback collection. No cron — rhythm rows are reminders only.
+            Z-SSWS and shadow copies: observe and mirror only.
+          </footer>
+        </div>
+      </div>
+          <div id="amkDashMiniEco" class="amk-dash-mini-eco" aria-label="Ecosphere pulse map" role="img"></div>
+        </div>
+
+        <aside
+          id="amkDashInspectorChrome"
+          class="amk-dash-inspector-chrome"
+          aria-label="Context inspector"
+        >
+          <h2 class="amk-dash-inspector-h">Inspector</h2>
+          <div id="amkDashInspectorBody" class="amk-dash-inspector-body"></div>
+          <div id="amkDashCopyMount" class="amk-dash-copy-mount" aria-label="Copy-only command snippets"></div>
+          <p class="amk-dash-copy-law">
+            <strong>Copy only</strong> — buttons place text in your clipboard; they do not run npm, deploy, or open shells.
+          </p>
+        </aside>
+      </div>
+
+      <footer id="amkDashStatusRail" class="amk-dash-status-rail" role="contentinfo" aria-label="Status rail"></footer>
+
+      <div id="amkToolsBackdrop" class="amk-dash-tools-backdrop" hidden aria-hidden="true"></div>
+      <aside id="amkToolsDrawer" class="amk-dash-tools-drawer" hidden aria-label="AMK Tools toolbox">
+        <div class="amk-dash-tools-head">
+          <h2 class="amk-dash-tools-title">AMK Tools</h2>
+          <button type="button" class="amk-dash-tools-close" id="amkToolsClose" aria-label="Close tools drawer">✕</button>
+        </div>
+        <p class="amk-dash-tools-lead">UI-only helpers — nothing here runs npm, deploys, or starts servers.</p>
+        <div id="amkToolsMount" class="amk-dash-tools-mount"></div>
+      </aside>
+    </div>
+    <script defer src="../scripts/amk-goku-main-control-readonly.js"></script>
+    <script defer src="../scripts/amk-project-indicators-readonly.js"></script>
+    <script defer src="../scripts/amk-zuno-advisor-readonly.js"></script>
+    <script defer src="../scripts/z-root-guardian-coordination-readonly.js"></script>
+    <script defer src="../scripts/z-omnai-core-readonly.js"></script>
+  </body>
+</html>

@@ -1,0 +1,37 @@
+{
+  "folders": [
+    {
+      "path": "..",
+      "name": "Z-Sanctuary Hub (SSWS spine)"
+    },
+    {
+      "path": "C:/Cursor Projects Organiser/Z_Labs",
+      "name": "Z_Labs (experiment lane)"
+    }
+  ],
+  "settings": {
+    "files.insertFinalNewline": true,
+    "files.trimTrailingWhitespace": true,
+    "markdownlint.configFile": "../.markdownlint.json",
+    "markdownlint.ignore": [
+      "**/node_modules/**",
+      "**/dist/**",
+      "**/safe_pack/**",
+      "Amk_Goku Worldwide Loterry/**",
+      "data/reports/**",
+      "releases/**/bots/**"
+    ],
+    "search.exclude": {
+      "**/node_modules": true,
+      "**/dist": true,
+      "**/build": true,
+      "**/.pytest_cache": true,
+      "**/coverage": true
+    },
+    "files.watcherExclude": {
+      "**/node_modules/**": true,
+      "**/dist/**": true,
+      "**/build/**": true
+    }
+  }
+}

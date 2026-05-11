@@ -1,0 +1,42 @@
+{
+  "schema": "z_susbv_overseer_policy_v1",
+  "name": "Z-SUSBV-O",
+  "short_name": "Z-Benchmark Overseer",
+  "purpose": "Central hub validation of per-project benchmark capsules against registry, entitlement posture, and evidence metadata — no live research, no price changes.",
+  "spiral_scout_role": "Z-Spiral Scout — internal future governed research/scout minibot; collects benchmark evidence only after approval; never changes prices autonomously.",
+  "minibot_family": [
+    { "id": "z_spiral_scout", "label": "Z-Spiral Scout", "status": "future_gated", "role": "Governed market evidence collection (charter + DRP)" },
+    { "id": "benchmark_evidence_bot", "label": "Benchmark Evidence Bot", "status": "advisory", "role": "Source links, comp rows, freshness checks in metadata" },
+    { "id": "cost_floor_bot", "label": "Cost Floor Bot", "status": "advisory", "role": "Cost-to-serve documentation before public price" },
+    { "id": "entitlement_bot", "label": "Entitlement Bot", "status": "advisory", "role": "Capability ≠ access ≠ billing" },
+    { "id": "competitor_map_bot", "label": "Competitor Map Bot", "status": "advisory", "role": "Job-to-be-done grouping; no fake rankings" },
+    { "id": "claims_bot", "label": "Claims Bot", "status": "advisory", "role": "Flags unsupported superlatives / certification language" },
+    { "id": "quarterly_ritual_bot", "label": "Quarterly Ritual Bot", "status": "advisory", "role": "Quarterly market review due signals" },
+    { "id": "project_capsule_bot", "label": "Project Capsule Bot", "status": "active_phase_o1", "role": "Capsule presence + JSON shape" },
+    { "id": "zuno_verdict_bot", "label": "Zuno Verdict Bot", "status": "advisory", "role": "GREEN / YELLOW / RED / BLUE posture line" }
+  ],
+  "standards_alignment_note": "Readiness-aligned with ISO/IEC 42001:2023, NIST AI RMF, and WCAG 2.2 themes — not official certification unless separately audited.",
+  "standards_refs": [
+    { "label": "ISO/IEC 42001:2023 (AI management systems)", "url": "https://www.iso.org/standard/42001" },
+    { "label": "NIST AI Risk Management Framework", "url": "https://www.nist.gov/itl/ai-risk-management-framework" },
+    { "label": "WCAG 2.2", "url": "https://www.w3.org/TR/WCAG22/" }
+  ],
+  "golden_law": [
+    "Benchmark evidence ≠ price approval",
+    "Readiness score ≠ certification",
+    "Competitor comparison ≠ guarantee",
+    "Research suggestion ≠ public claim",
+    "Capsule reference ≠ entitlement",
+    "AMK/human decides pricing, launch, and service access"
+  ],
+  "hub_inputs": [
+    "data/z_susbv_benchmark_registry.json",
+    "data/z_susbv_module_to_service_map.json",
+    "data/z_susbv_service_price_validation.json",
+    "data/z_service_entitlement_catalog.json",
+    "data/z_cross_project_capability_index.json",
+    "data/z_autonomy_task_policy.json"
+  ],
+  "traffic_link": "Signals from Z-Traffic may consume overseer report paths as metadata only — no auto-exec.",
+  "amk_map_link": "AMK-MAP dashboard may link overseer receipts as read-only orientation."
+}

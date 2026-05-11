@@ -1,0 +1,110 @@
+{
+  "schema": "z_experiential_profile_registry_v1",
+  "doctrine": "Z-EXL-2",
+  "registry_version": "0.1.0",
+  "updated_at": "2026-05-09",
+  "entries": [
+    {
+      "project_id": "lumina",
+      "experience_profile_id": "lumina_sanctuary_v0",
+      "layers_implemented": [
+        "sensory_mode",
+        "rhythm_language",
+        "motion_intensity",
+        "color_realm",
+        "glow_level",
+        "adaptation_authority",
+        "memory_posture",
+        "bridge_status"
+      ],
+      "status": "active",
+      "profile_ref_path": "Z-Sanctuary Browser/docs/lumina-sanctuary-v0.profile.json",
+      "canonical_project_home": "Z-Sanctuary Browser",
+      "related_docs": [
+        "Z-Sanctuary Browser/docs/Z-EXL-1.md",
+        "Z-Sanctuary Browser/docs/PHASE_LUMINA_EXL_1_GREEN_RECEIPT.md"
+      ]
+    },
+    {
+      "project_id": "questra",
+      "experience_profile_id": "",
+      "layers_implemented": [],
+      "status": "reserved",
+      "profile_ref_path": "",
+      "canonical_project_home": "",
+      "related_docs": []
+    },
+    {
+      "project_id": "lawyer_ux",
+      "experience_profile_id": "",
+      "layers_implemented": [],
+      "status": "reserved",
+      "profile_ref_path": "",
+      "canonical_project_home": "",
+      "related_docs": []
+    },
+    {
+      "project_id": "magical_bridge",
+      "experience_profile_id": "",
+      "layers_implemented": [],
+      "status": "reserved",
+      "profile_ref_path": "",
+      "canonical_project_home": "",
+      "related_docs": []
+    },
+    {
+      "project_id": "ecosphere_map",
+      "experience_profile_id": "",
+      "layers_implemented": [],
+      "status": "reserved",
+      "profile_ref_path": "",
+      "canonical_project_home": "",
+      "related_docs": []
+    },
+    {
+      "project_id": "zmv",
+      "experience_profile_id": "",
+      "layers_implemented": [],
+      "status": "reserved",
+      "profile_ref_path": "",
+      "canonical_project_home": "",
+      "related_docs": []
+    },
+    {
+      "project_id": "z_uil",
+      "experience_profile_id": "",
+      "layers_implemented": [],
+      "status": "reserved",
+      "profile_ref_path": "",
+      "canonical_project_home": "",
+      "related_docs": []
+    },
+    {
+      "project_id": "omnai",
+      "experience_profile_id": "",
+      "layers_implemented": [],
+      "status": "reserved",
+      "profile_ref_path": "",
+      "canonical_project_home": "",
+      "related_docs": []
+    },
+    {
+      "project_id": "zuno",
+      "experience_profile_id": "",
+      "layers_implemented": [],
+      "status": "reserved",
+      "profile_ref_path": "",
+      "canonical_project_home": "",
+      "related_docs": []
+    },
+    {
+      "project_id": "franed",
+      "experience_profile_id": "",
+      "layers_implemented": [],
+      "status": "reserved",
+      "profile_ref_path": "",
+      "canonical_project_home": "",
+      "related_docs": []
+    }
+  ]
+}

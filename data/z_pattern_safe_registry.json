@@ -1,0 +1,61 @@
+{
+  "schema": "z.pattern.safe.registry.v1",
+  "registry_name": "Z-Pattern Safe Universal Pattern Simulation Governance",
+  "mode": "pattern_governance_only",
+  "source_blueprint": {
+    "label": "Any Predictions / Z-ANY blueprint",
+    "note": "Architectural inspiration only — gambling or monetisation segments MUST map to governance, simulation, or AMK-gated lanes; PDF stays out-of-band until translated."
+  },
+  "allowed_domains": [
+    "education_pattern_literacy",
+    "uncertainty_simulation",
+    "anomaly_detection",
+    "civic_claim_classification",
+    "creative_pattern_generation",
+    "learning_pathway_planning",
+    "dashboard_signal_analysis",
+    "responsible_use_journaling"
+  ],
+  "gated_domains": [
+    "gambling_related_prediction",
+    "bankroll_or_money_management",
+    "payment_or_revenue_sharing",
+    "user_vault_or_personal_data",
+    "live_external_api",
+    "marketplace_or_trust_economy",
+    "biometric_or_identity_auth"
+  ],
+  "forbidden_claims": [
+    "guaranteed_prediction",
+    "casino_edge_claim",
+    "betting_instruction",
+    "financial_advice",
+    "medical_or_legal certainty",
+    "hidden_control_claim",
+    "manipulation_or_targeting"
+  ],
+  "forbidden_claim_paths_enabled": [],
+  "high_risk_runtime_flags": {
+    "live_prediction_engine": false,
+    "gambling_instruction_export": false,
+    "payment_connector": false,
+    "scraping_connector": false,
+    "deploy_public_surface": false,
+    "user_pii_vault_live": false
+  },
+  "signal_rules": {
+    "GREEN": "education/simulation/report-only uses with clear non-guarantee language",
+    "YELLOW": "missing evidence, unclear domain mapping, or needs taxonomy tightening",
+    "BLUE": "high-risk or gated domain — human/AMK review before any outward claim or connector",
+    "RED": "betting advice, guaranteed prediction, live money flows, enabled forbidden claim paths, deploy, scraping, provider call, or PII vault surfaced as live"
+  },
+  "related_docs": [
+    "docs/Z_PATTERN_SAFE_UNIVERSAL_PATTERN_SIMULATION.md",
+    "docs/Z_PATTERN_SAFE_RESPONSIBLE_USE_POLICY.md",
+    "docs/PHASE_Z_PATTERN_SAFE_1_GREEN_RECEIPT.md"
+  ],
+  "related_reports": [
+    "data/reports/z_pattern_safe_report.json",
+    "data/reports/z_pattern_safe_report.md"
+  ]
+}

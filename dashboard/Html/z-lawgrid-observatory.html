@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="z-dashboard-role" content="lawgrid-observatory-readonly" />
+    <meta name="z-phase" content="LAWGRID-1A" />
+    <title>Z-Sanctuary · LAWGRID Observatory (read-only)</title>
+    <link rel="stylesheet" href="../styles/amk-project-indicators.css" />
+    <link rel="stylesheet" href="../styles/z-lawgrid.css" />
+  </head>
+  <body class="z-lawgrid-page" data-comfort="photophobia">
+    <a class="z-lawgrid-skip" href="#zLawgridMain">Skip to observatory</a>
+    <header class="z-lawgrid-head" role="banner">
+      <h1 id="zLawgridTitle">LAWGRID Observatory</h1>
+      <p id="zLawgridSub" class="z-lawgrid-tagline">Loading…</p>
+      <nav class="z-lawgrid-nav-mini" aria-label="Related surfaces">
+        <a href="./index-skk-rkpk.html">Unified dashboard</a>
+        <a href="./z-legal-lawyer-workstation.html">Z-Lawyer UX-2</a>
+        <a href="./z-universe-ecosphere-map.html">Ecosphere map</a>
+        <a href="../../docs/LAWGRID_1A_GOVERNANCE_OBSERVATORY.md">Governance doc</a>
+      </nav>
+    </header>
+
+    <section class="z-lawgrid-law" role="note" aria-label="Observatory law strip" id="zLawgridLawStrip"></section>
+    <p id="zLawgridStatus" class="z-lawgrid-status" aria-live="polite">Initializing observatory…</p>
+
+    <main id="zLawgridMain" class="z-lawgrid-shell">
+      <aside class="z-lawgrid-col z-lawgrid-col--spine" aria-labelledby="zLawgridSpineH">
+        <h2 id="zLawgridSpineH" class="z-lawgrid-h-sr-screen">Universe spine</h2>
+        <div id="zLawgridSpine" class="z-lawgrid-spine"></div>
+      </aside>
+
+      <section class="z-lawgrid-col z-lawgrid-col--center" aria-labelledby="zLawgridCenterH">
+        <h2 id="zLawgridCenterH" class="z-lawgrid-h-sr-screen">Observatory center</h2>
+        <div id="zLawgridCards" class="z-lawgrid-cards"></div>
+        <div class="z-lawgrid-constellation-wrap" role="img" aria-label="Constellation map — illustrative relationships only">
+          <p id="zLawgridConstellationCap" class="z-lawgrid-const-cap"></p>
+          <div class="z-lawgrid-svg-host">
+            <svg id="zLawgridSvg" class="z-lawgrid-svg" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"></svg>
+            <div id="zLawgridNodeLabels" class="z-lawgrid-node-labels"></div>
+          </div>
+        </div>
+      </section>
+
+      <aside class="z-lawgrid-col z-lawgrid-col--queue" aria-labelledby="zLawgridQueueH">
+        <h2 id="zLawgridQueueH">Human review queue</h2>
+        <p class="z-lawgrid-queue-intro">
+          BLUE / RED items need AMK or qualified review — not dispatch from this page.
+        </p>
+        <div id="zLawgridQueue" class="z-lawgrid-queue"></div>
+        <h3 class="z-lawgrid-h3">Signal legend</h3>
+        <ul id="zLawgridLegend" class="z-lawgrid-legend"></ul>
+      </aside>
+    </main>
+
+    <footer class="z-lawgrid-foot" role="contentinfo">
+      <p>
+        LAWGRID-1A — fetch-only. Sources:
+        <code>dashboard/data/z_lawgrid_observatory_registry.json</code>,
+        <code>dashboard/data/z_universe_service_catalog.json</code>,
+        <code>dashboard/data/z_legal_benchmark_readiness.json</code>,
+        <code>data/z_cross_project_capability_index.json</code>,
+        <code>data/z_magical_visual_capability_registry.json</code>,
+        <code>data/reports/z_ssws_launch_requirements_report.json</code>,
+        <code>dashboard/data/amk_project_indicators.json</code>.
+        Serve repo root over HTTP so <code>fetch</code> resolves. No APIs, orchestration, deploy, billing, or legal automation.
+      </p>
+      <div id="zLawgridFootLinks"></div>
+    </footer>
+
+    <script defer src="../scripts/z-lawgrid-readonly.js"></script>
+  </body>
+</html>

@@ -1,0 +1,20 @@
+{
+  "schema_version": 1,
+  "generated_at": "2026-04-26T01:11:30.297Z",
+  "name": "z-mini-bot-alerts",
+  "advisory": true,
+  "drp_note": "Notify-only. No auto-fix. Human/Overseer authority for structural changes.",
+  "overall": "clear",
+  "total_alerts": 0,
+  "by_level": {
+    "HIGH": 0,
+    "MEDIUM": 0
+  },
+  "sources": {
+    "guardian": true,
+    "health": true
+  },
+  "input_notes": null,
+  "folded_registry_paths_alert": null,
+  "alerts": []
+}

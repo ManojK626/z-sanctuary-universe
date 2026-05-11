@@ -1,0 +1,27 @@
+{
+  "generated_at": "2026-04-29T21:35:19.391Z",
+  "total": 44,
+  "done": 23,
+  "coverage_percent": 52,
+  "status_counts": {
+    "planned": 19,
+    "imported": 1,
+    "ready": 22,
+    "blueprint-ready": 1,
+    "doc-ready": 1
+  },
+  "layer_counts": {
+    "core": 9,
+    "governance": 19,
+    "ai-companion": 2,
+    "ai-tower": 2,
+    "ai-agent": 4,
+    "analytics": 1,
+    "social": 1,
+    "games": 1,
+    "ops": 1,
+    "packages": 1,
+    "ecosphere": 3
+  },
+  "notes": "Registry synced from module manifest."
+}

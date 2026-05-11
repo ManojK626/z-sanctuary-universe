@@ -1,0 +1,112 @@
+{
+  "schema": "z_xbus_connector_gate_report_v1",
+  "generated_at": "2026-05-08T12:11:50.939Z",
+  "overall_signal": "BLUE",
+  "registry_overall_signal": "BLUE",
+  "phase": "Z-XBUS-GATE-1",
+  "policy_phase1": {
+    "no_live_connector_in_phase_1": true,
+    "no_secret_storage": true,
+    "no_customer_data_flow": true
+  },
+  "registry_entry_results": [
+    {
+      "id": "z_pc_ide_path_internal",
+      "overall_signal": "GREEN",
+      "classification": "INTERNAL_REFERENCE_ONLY",
+      "forbidden_live_flags": false
+    },
+    {
+      "id": "z_mod_dist_advisory",
+      "overall_signal": "GREEN",
+      "classification": "INTERNAL_REFERENCE_ONLY",
+      "forbidden_live_flags": false
+    },
+    {
+      "id": "z_omnai_provider_future",
+      "overall_signal": "BLUE",
+      "classification": "BLUE_AMK_DECISION_REQUIRED",
+      "forbidden_live_flags": false
+    },
+    {
+      "id": "xl2_cross_repo_placeholder",
+      "overall_signal": "BLUE",
+      "classification": "FUTURE_CHARTER_REQUIRED",
+      "forbidden_live_flags": false
+    }
+  ],
+  "registry_entry_count": 4,
+  "sample_results": [
+    {
+      "id": "sample_safe_mock_api",
+      "computed_signal": "GREEN",
+      "expected_signal": "GREEN",
+      "match": true
+    },
+    {
+      "id": "sample_ide_path_checker_ref",
+      "computed_signal": "GREEN",
+      "expected_signal": "GREEN",
+      "match": true
+    },
+    {
+      "id": "sample_mod_dist_advisory",
+      "computed_signal": "GREEN",
+      "expected_signal": "GREEN",
+      "match": true
+    },
+    {
+      "id": "sample_omnai_future_provider_blue",
+      "computed_signal": "BLUE",
+      "expected_signal": "BLUE",
+      "match": true
+    },
+    {
+      "id": "sample_payment_live_red",
+      "computed_signal": "RED",
+      "expected_signal": "RED",
+      "match": true
+    },
+    {
+      "id": "sample_child_classroom_future_blue",
+      "computed_signal": "BLUE",
+      "expected_signal": "BLUE",
+      "match": true
+    },
+    {
+      "id": "sample_webhook_deploy_red",
+      "computed_signal": "RED",
+      "expected_signal": "RED",
+      "match": true
+    }
+  ],
+  "sample_count": 7,
+  "fixtures_all_match_expected": true,
+  "blue_registry_decisions": [
+    {
+      "id": "z_omnai_provider_future",
+      "classification": "BLUE_AMK_DECISION_REQUIRED"
+    },
+    {
+      "id": "xl2_cross_repo_placeholder",
+      "classification": "FUTURE_CHARTER_REQUIRED"
+    }
+  ],
+  "sample_red_classifications_fixture": [
+    "sample_payment_live_red",
+    "sample_webhook_deploy_red"
+  ],
+  "issues": [],
+  "locked_law": [
+    "Connector registry ≠ live connector.",
+    "API plan ≠ API call.",
+    "MVP route ≠ production service.",
+    "Mock data ≠ customer data.",
+    "Provider idea ≠ provider permission.",
+    "Payment idea ≠ billing activation.",
+    "GREEN ≠ deploy.",
+    "BLUE requires AMK.",
+    "RED blocks movement.",
+    "AMK-Goku owns sacred moves."
+  ]
+}

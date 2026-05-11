@@ -1,0 +1,80 @@
+{
+  "schema": "z_omnai_blueprint_report_v1",
+  "generated_at": "2026-05-04T12:01:38.785Z",
+  "overall_signal": "BLUE",
+  "z_omnai_signal": "BLUE",
+  "counts": {
+    "red": 0,
+    "yellow": 0,
+    "blue": 9
+  },
+  "flags": {
+    "red": [],
+    "yellow": [],
+    "blue": [
+      "template:z_omnai_marketing_campaign_v1:governance_surface:public_launch",
+      "template:z_omnai_marketing_campaign_v1:governance_surface:legal_compliance",
+      "template:z_omnai_product_landing_page_v1:governance_surface:public_launch",
+      "template:z_omnai_product_landing_page_v1:governance_surface:legal_compliance",
+      "template:z_omnai_pdf_manual_ebook_v1:governance_surface:legal_compliance",
+      "template:z_omnai_music_sound_brief_v1:governance_surface:legal_compliance",
+      "template:z_omnai_investor_partner_pitch_v1:governance_surface:public_launch",
+      "template:z_omnai_investor_partner_pitch_v1:governance_surface:pricing",
+      "template:z_omnai_investor_partner_pitch_v1:governance_surface:legal_compliance"
+    ]
+  },
+  "per_template": [
+    {
+      "pipeline_id": "z_omnai_movie_trailer_v1",
+      "signal": "GREEN",
+      "notes": []
+    },
+    {
+      "pipeline_id": "z_omnai_marketing_campaign_v1",
+      "signal": "BLUE",
+      "notes": [
+        "BLUE:surface:public_launch",
+        "BLUE:surface:legal_compliance"
+      ]
+    },
+    {
+      "pipeline_id": "z_omnai_product_landing_page_v1",
+      "signal": "BLUE",
+      "notes": [
+        "BLUE:surface:public_launch",
+        "BLUE:surface:legal_compliance"
+      ]
+    },
+    {
+      "pipeline_id": "z_omnai_pdf_manual_ebook_v1",
+      "signal": "BLUE",
+      "notes": [
+        "BLUE:surface:legal_compliance"
+      ]
+    },
+    {
+      "pipeline_id": "z_omnai_tool_dashboard_prototype_v1",
+      "signal": "GREEN",
+      "notes": []
+    },
+    {
+      "pipeline_id": "z_omnai_music_sound_brief_v1",
+      "signal": "BLUE",
+      "notes": [
+        "BLUE:surface:legal_compliance"
+      ]
+    },
+    {
+      "pipeline_id": "z_omnai_investor_partner_pitch_v1",
+      "signal": "BLUE",
+      "notes": [
+        "BLUE:surface:public_launch",
+        "BLUE:surface:pricing",
+        "BLUE:surface:legal_compliance"
+      ]
+    }
+  ],
+  "registry_path": "data/z_omnai_blueprint_translation_registry.json",
+  "templates_path": "data/z_omnai_creative_pipeline_templates.json",
+  "note": "OMNAI is translated as internal creative routing. AMK/human opens public, pricing, and charter lanes."
+}

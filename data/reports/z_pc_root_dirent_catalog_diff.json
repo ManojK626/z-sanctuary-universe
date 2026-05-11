@@ -1,0 +1,15 @@
+{
+  "schema_version": 1,
+  "generated_at": "2026-04-25T22:51:17.692Z",
+  "baseline_file": "data/reports/z_pc_root_dirent_catalog_baseline.json",
+  "baseline_generated_at": "2026-04-25T22:51:17.313Z",
+  "current_generated_at": "2026-04-25T22:51:17.687Z",
+  "pc_root": "C:/Cursor Projects Organiser",
+  "added": [],
+  "removed": [],
+  "unchanged_count": 18,
+  "added_count": 0,
+  "removed_count": 0,
+  "rename_suspects": [],
+  "drp_note": "Diff is heuristic (rename_suspects from string distance). Confirm on disk before registry edits. No auto-fix."
+}

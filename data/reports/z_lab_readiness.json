@@ -1,0 +1,125 @@
+{
+  "generated_at": "2026-04-17T15:43:55.642Z",
+  "status": "ready",
+  "lab_root": "C:/Cursor Projects Organiser/ZSanctuary_Universe/Z_Labs",
+  "lab_policy": {
+    "mode": "internal-only",
+    "primary": "C:/Cursor Projects Organiser/ZSanctuary_Universe/Z_Labs",
+    "legacy_fallback": "C:/Cursor Projects Organiser/ZSanctuary_Universe/ZSanctuary_Labs",
+    "note": "Lab automation is restricted to in-repo lab roots to avoid cross-project linkage."
+  },
+  "checks": {
+    "total": 5,
+    "hard_failures": 0,
+    "soft_warnings": 0
+  },
+  "steps": [
+    {
+      "label": "lab_bootstrap",
+      "command": "npm.cmd run lab:bootstrap",
+      "started_at": "2026-04-17T15:43:53.506Z",
+      "finished_at": "2026-04-17T15:43:53.854Z",
+      "ok": true,
+      "raw_ok": true,
+      "soft_fail": false,
+      "exit_code": 0,
+      "stdout_tail": [
+        "> z-sanctuary-universe@1.0.0 lab:bootstrap",
+        "> node scripts/z_lab_bootstrap.mjs",
+        "",
+        "Z_Labs bootstrap complete: C:\\Cursor Projects Organiser\\ZSanctuary_Universe\\Z_Labs"
+      ],
+      "stderr_tail": [
+        ""
+      ]
+    },
+    {
+      "label": "lab_status",
+      "command": "npm.cmd run lab:status",
+      "started_at": "2026-04-17T15:43:53.855Z",
+      "finished_at": "2026-04-17T15:43:54.207Z",
+      "ok": true,
+      "raw_ok": true,
+      "soft_fail": false,
+      "exit_code": 0,
+      "stdout_tail": [
+        "> z-sanctuary-universe@1.0.0 lab:status",
+        "> node scripts/z_lab_status.mjs",
+        "",
+        "Z Lab status written: C:\\Cursor Projects Organiser\\ZSanctuary_Universe\\data\\reports\\z_lab_status.json"
+      ],
+      "stderr_tail": [
+        ""
+      ]
+    },
+    {
+      "label": "lab_task_guard",
+      "command": "npm.cmd run lab:task-guard",
+      "started_at": "2026-04-17T15:43:54.207Z",
+      "finished_at": "2026-04-17T15:43:54.563Z",
+      "ok": true,
+      "raw_ok": true,
+      "soft_fail": false,
+      "exit_code": 0,
+      "stdout_tail": [
+        "> z-sanctuary-universe@1.0.0 lab:task-guard",
+        "> node scripts/z_lab_task_structure_guard.mjs",
+        "",
+        "Z lab task structure guard passed: C:\\Cursor Projects Organiser\\ZSanctuary_Universe\\data\\reports\\z_lab_task_structure_guard.json"
+      ],
+      "stderr_tail": [
+        ""
+      ]
+    },
+    {
+      "label": "lab_dual_copies",
+      "command": "npm.cmd run lab:dual-copies",
+      "started_at": "2026-04-17T15:43:54.563Z",
+      "finished_at": "2026-04-17T15:43:54.916Z",
+      "ok": true,
+      "raw_ok": true,
+      "soft_fail": true,
+      "exit_code": 0,
+      "stdout_tail": [
+        "> z-sanctuary-universe@1.0.0 lab:dual-copies",
+        "> node scripts/z_lab_dual_copies_setup.mjs",
+        "",
+        "Z lab dual copies setup complete: C:\\Cursor Projects Organiser\\ZSanctuary_Universe\\data\\reports\\z_lab_dual_copies_setup.json"
+      ],
+      "stderr_tail": [
+        ""
+      ]
+    },
+    {
+      "label": "lab_folder_boost",
+      "command": "npm.cmd run lab:folder:boost",
+      "started_at": "2026-04-17T15:43:54.916Z",
+      "finished_at": "2026-04-17T15:43:55.641Z",
+      "ok": true,
+      "raw_ok": true,
+      "soft_fail": true,
+      "exit_code": 0,
+      "stdout_tail": [
+        "> z-sanctuary-universe@1.0.0 lab:folder:boost",
+        "> node scripts/z_lab_folder_manager_boost.mjs",
+        "",
+        "Z Lab + Folder Manager boost: C:\\Cursor Projects Organiser\\ZSanctuary_Universe\\data\\reports\\z_lab_folder_manager_boost.json status=watch"
+      ],
+      "stderr_tail": [
+        ""
+      ]
+    }
+  ],
+  "links": {
+    "lab_status_report": "data/reports/z_lab_status.json",
+    "dual_copies_report": "data/reports/z_lab_dual_copies_setup.json",
+    "folder_boost_report": "data/reports/z_lab_folder_manager_boost.json",
+    "workspace_dashboard_copy": "C:/Cursor Projects Organiser/ZSanctuary_Universe/Z_Labs/workspaces/Z_LAB_Dashboard_Copy.code-workspace",
+    "workspace_ssws_copy": "C:/Cursor Projects Organiser/ZSanctuary_Universe/Z_Labs/workspaces/Z_LAB_SSWS_Copy.code-workspace",
+    "launcher_4_windows": "C:/Cursor Projects Organiser/ZSanctuary_Universe/Z_Labs/workspaces/launch_4_windows.cmd"
+  },
+  "notes": [
+    "Readiness keeps lab automation inside in-repo Z_Labs root.",
+    "Soft warnings indicate optional lab comfort features to review, not hard blockers."
+  ]
+}

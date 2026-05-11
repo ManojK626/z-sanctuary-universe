@@ -1,0 +1,16 @@
+---
+description: Cloudflare Workers/Pages and dashboard AI — contingency only; no secrets in repo; Task 008 alignment.
+globs:
+  - deploy/**/*
+  - data/z_cloudflare_ai_comms_requirements.json
+  - data/z_cloudflare_contingency_identity.json
+  - docs/Z-CLOUDFLARE-AI-COMMS-PRECAUTIONS.md
+---
+
+# Cloudflare + AI (contingency layer)
+
+1. **Authority:** PC/NAS + hub manifests outrank Cloudflare. Edge is optional hosting / emergency read-only — see [docs/Z-CLOUDFLARE-AI-COMMS-PRECAUTIONS.md](docs/Z-CLOUDFLARE-AI-COMMS-PRECAUTIONS.md).
+2. **Secrets:** Never commit API tokens, Account ID (unless policy allows in private repo), or Wrangler secrets. Use dashboard + local untracked env.
+3. **Ask AI (Cloudflare dashboard):** Navigation hints only — verify against [MONOREPO_GUIDE.md](MONOREPO_GUIDE.md) Phase 7 and [rules/Z_SANCTUARY_SECURITY_POLICY.md](rules/Z_SANCTUARY_SECURITY_POLICY.md).
+4. **Requirements:** [data/z_cloudflare_ai_comms_requirements.json](data/z_cloudflare_ai_comms_requirements.json); run **`npm run comms:cloudflare-ai`** for [data/reports/z_cloudflare_ai_comms_manifest.json](data/reports/z_cloudflare_ai_comms_manifest.json).
+5. **Task 008:** Z-Bridge bundle path remains the documented Wrangler flow — not automatic production.

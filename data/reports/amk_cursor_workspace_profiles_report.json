@@ -1,0 +1,90 @@
+{
+  "schema": "amk_cursor_workspace_profiles_report_v1",
+  "generated_at": "2026-05-04T17:23:35.229Z",
+  "phase": "Z-SSWS-LAB-1",
+  "profile_name": "Z-SSWS-LAB-1 Unified Cursor workspace control",
+  "overall_signal": "YELLOW",
+  "main_workspace_check": {
+    "label": "main_control",
+    "workspace_file": "C:\\Cursor Projects Organiser\\Z_Sanctuary_Universe\\workspaces\\AMK-Goku-Super-Saiyan-Main.code-workspace",
+    "signal": "YELLOW",
+    "issues": [
+      {
+        "level": "YELLOW",
+        "text": "Hub root included as a folder — acceptable with search.exclude; watch Cursor load."
+      }
+    ],
+    "folders": [
+      "C:\\Cursor Projects Organiser\\Z_Sanctuary_Universe",
+      "C:\\Cursor Projects Organiser\\Z_Labs"
+    ],
+    "duplicate_folder_roots": [],
+    "folder_open_tasks": []
+  },
+  "deep_work_checks": [
+    {
+      "label": "z_lab",
+      "workspace_file": "C:\\Cursor Projects Organiser\\Z_Sanctuary_Universe\\workspaces\\AMK-Goku-Z-Lab.code-workspace",
+      "signal": "GREEN",
+      "issues": [],
+      "folders": [
+        "C:\\Cursor Projects Organiser\\Z_Labs"
+      ],
+      "duplicate_folder_roots": [],
+      "folder_open_tasks": [],
+      "id": "z_lab",
+      "kind": "workspace_file"
+    },
+    {
+      "id": "franed_deep_work",
+      "kind": "doorway_project",
+      "doorway_project_id": "franed_at_princess",
+      "path": "C:\\Cursor Projects Organiser\\AT Princess&Blackie Copilot",
+      "path_exists": true,
+      "signal": "GREEN",
+      "issues": []
+    },
+    {
+      "id": "lumina_deep_work",
+      "kind": "doorway_project",
+      "doorway_project_id": "lumina_browser",
+      "path": "C:\\Cursor Projects Organiser\\Z-Sanctuary Browser",
+      "path_exists": false,
+      "signal": "YELLOW",
+      "issues": [
+        {
+          "level": "YELLOW",
+          "text": "Optional doorway path missing."
+        }
+      ]
+    },
+    {
+      "id": "questra_deep_work",
+      "kind": "doorway_project",
+      "doorway_project_id": "z_questra",
+      "path": "C:\\Cursor Projects Organiser\\Z_Sanctuary_Universe\\z-questra",
+      "path_exists": true,
+      "signal": "GREEN",
+      "issues": []
+    },
+    {
+      "id": "creative_deep_work",
+      "kind": "doorway_project",
+      "doorway_project_id": "hub_zsanctuary",
+      "path": "C:\\Cursor Projects Organiser\\Z_Sanctuary_Universe",
+      "path_exists": true,
+      "signal": "GREEN",
+      "issues": []
+    }
+  ],
+  "laws": [
+    "Workspace merge ≠ repo merge.",
+    "Open workspace ≠ run project.",
+    "Z-Lab experiment ≠ production.",
+    "Main cockpit ≠ deployment.",
+    "Cursor open ≠ code execution.",
+    "AMK-Goku owns sacred moves."
+  ],
+  "notes": [],
+  "exit_hint": 0
+}

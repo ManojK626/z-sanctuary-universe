@@ -1,0 +1,129 @@
+/**
+ * AMK-Goku Notifications Panel — Phase AMK-NOTIFY-1 (read-only + local decision stub).
+ */
+.z-amk-notifications-panel {
+  background: rgba(18, 22, 32, 0.92);
+  border: 1px solid rgba(120, 180, 255, 0.28);
+  border-radius: 10px;
+  box-shadow: 0 8px 28px rgba(0, 0, 0, 0.35);
+  color: #e8eef8;
+  font-size: 0.82rem;
+}
+
+.z-amk-notifications-panel h3 {
+  margin: 0 0 0.5rem;
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: #cfe4ff;
+}
+
+.z-amk-notifications-disclaimer {
+  margin: 0.75rem 0 0;
+  padding: 0.5rem 0.55rem;
+  font-size: 0.72rem;
+  line-height: 1.35;
+  opacity: 0.92;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  background: rgba(0, 0, 0, 0.2);
+  border-radius: 0 0 8px 8px;
+}
+
+.z-amk-notify-card {
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 8px;
+  padding: 0.55rem 0.6rem;
+  margin-bottom: 0.55rem;
+  background: rgba(255, 255, 255, 0.04);
+}
+
+.z-amk-notify-card[data-pending-first='1'] {
+  border-color: rgba(255, 200, 120, 0.45);
+}
+
+.z-amk-notify-title {
+  font-weight: 650;
+  margin: 0 0 0.35rem;
+  font-size: 0.84rem;
+}
+
+.z-amk-notify-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem;
+  margin-bottom: 0.35rem;
+}
+
+.z-amk-pill {
+  display: inline-block;
+  padding: 0.12rem 0.45rem;
+  border-radius: 999px;
+  font-size: 0.68rem;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+}
+
+.z-amk-pill--green {
+  background: rgba(40, 160, 90, 0.35);
+  color: #c8ffd8;
+}
+.z-amk-pill--yellow {
+  background: rgba(200, 160, 40, 0.35);
+  color: #fff0c0;
+}
+.z-amk-pill--red {
+  background: rgba(200, 60, 60, 0.4);
+  color: #ffd0d0;
+}
+.z-amk-pill--blue {
+  background: rgba(80, 120, 220, 0.4);
+  color: #dde8ff;
+}
+
+.z-amk-pill--risk {
+  background: rgba(255, 255, 255, 0.08);
+  color: #dde4f0;
+}
+
+.z-amk-pill--zag {
+  background: rgba(160, 100, 220, 0.25);
+  color: #eeddff;
+}
+
+.z-amk-notify-checks {
+  margin: 0.25rem 0 0.15rem;
+  padding-left: 1rem;
+  font-size: 0.72rem;
+  opacity: 0.9;
+}
+
+.z-amk-notify-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem;
+  margin-top: 0.45rem;
+}
+
+.z-amk-notify-btn {
+  font-size: 0.7rem;
+  padding: 0.25rem 0.5rem;
+  border-radius: 6px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  background: rgba(255, 255, 255, 0.08);
+  color: #eef4ff;
+  cursor: pointer;
+}
+
+.z-amk-notify-btn:hover {
+  background: rgba(255, 255, 255, 0.14);
+}
+
+.z-amk-notify-btn:focus-visible {
+  outline: 2px solid rgba(120, 180, 255, 0.8);
+  outline-offset: 2px;
+}
+
+.z-amk-notify-local {
+  font-size: 0.68rem;
+  opacity: 0.85;
+  margin-top: 0.25rem;
+}

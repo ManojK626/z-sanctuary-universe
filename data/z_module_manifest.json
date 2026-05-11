@@ -1,0 +1,380 @@
+{
+  "ZFormat": "v1",
+  "ZUpdatedAt": "2026-04-29T22:10:00.000Z",
+  "ZModules": [
+    {
+      "ZId": "core-dashboard",
+      "ZLayer": "core",
+      "ZOwner": "SKK",
+      "ZStatus": "planned",
+      "ZDescription": "Dashboard runtime and analytics."
+    },
+    {
+      "ZId": "core-status-console",
+      "ZLayer": "core",
+      "ZOwner": "SKK",
+      "ZStatus": "planned",
+      "ZDescription": "Status console and log router."
+    },
+    {
+      "ZId": "core-energy-response",
+      "ZLayer": "core",
+      "ZOwner": "SKK",
+      "ZStatus": "planned",
+      "ZDescription": "Energy and harmony pulse engine."
+    },
+    {
+      "ZId": "core-emotion-filter",
+      "ZLayer": "core",
+      "ZOwner": "SKK",
+      "ZStatus": "planned",
+      "ZDescription": "Emotional coherence and response mode."
+    },
+    {
+      "ZId": "core-chronicle",
+      "ZLayer": "core",
+      "ZOwner": "SKK",
+      "ZStatus": "planned",
+      "ZDescription": "Chronicle capture and timeline memory."
+    },
+    {
+      "ZId": "core-chronicle-hud",
+      "ZLayer": "core",
+      "ZOwner": "SKK",
+      "ZStatus": "planned",
+      "ZDescription": "Chronicle HUD display layer."
+    },
+    {
+      "ZId": "autopilot-engine",
+      "ZLayer": "core",
+      "ZOwner": "SKK",
+      "ZStatus": "planned",
+      "ZDescription": "Super Saiyan Autopilot control plane."
+    },
+    {
+      "ZId": "sepc-governance",
+      "ZLayer": "governance",
+      "ZOwner": "SKK+RKPK",
+      "ZStatus": "planned",
+      "ZDescription": "Security, Etiquette, Protocol & Compassion gate."
+    },
+    {
+      "ZId": "skk-companion",
+      "ZLayer": "ai-companion",
+      "ZOwner": "SKK",
+      "ZStatus": "planned",
+      "ZDescription": "Wisdom and lawful stability."
+    },
+    {
+      "ZId": "rkpk-companion",
+      "ZLayer": "ai-companion",
+      "ZOwner": "RKPK",
+      "ZStatus": "planned",
+      "ZDescription": "Compassion and gentle resolution."
+    },
+    {
+      "ZId": "ai-tower",
+      "ZLayer": "ai-tower",
+      "ZOwner": "SKK+RKPK",
+      "ZStatus": "planned",
+      "ZDescription": "Multi-agent reasoning and oversight tower."
+    },
+    {
+      "ZId": "ai-agent-scribe",
+      "ZLayer": "ai-agent",
+      "ZOwner": "SKK",
+      "ZStatus": "planned",
+      "ZDescription": "Logs, summaries, and reflections."
+    },
+    {
+      "ZId": "ai-agent-protector",
+      "ZLayer": "ai-agent",
+      "ZOwner": "SKK",
+      "ZStatus": "planned",
+      "ZDescription": "Security and runtime monitoring."
+    },
+    {
+      "ZId": "ai-agent-designer",
+      "ZLayer": "ai-agent",
+      "ZOwner": "RKPK",
+      "ZStatus": "planned",
+      "ZDescription": "UI and style advisor."
+    },
+    {
+      "ZId": "ai-agent-navigator",
+      "ZLayer": "ai-agent",
+      "ZOwner": "SKK",
+      "ZStatus": "planned",
+      "ZDescription": "Next-step and safety guidance."
+    },
+    {
+      "ZId": "roulette-calculator",
+      "ZLayer": "analytics",
+      "ZOwner": "Community",
+      "ZStatus": "imported",
+      "ZDescription": "Legacy Roulette Calculator workspace imported and linked to Z-Modules Registry."
+    },
+    {
+      "ZId": "social-arena",
+      "ZLayer": "social",
+      "ZOwner": "RKPK",
+      "ZStatus": "planned",
+      "ZDescription": "Social Arena profiles, chat, and streams."
+    },
+    {
+      "ZId": "roulette",
+      "ZName": "Super Saiyan Roulette",
+      "ZLayer": "games",
+      "ZOwner": "Omega",
+      "ZStatus": "ready",
+      "ZCategory": "Games",
+      "ZEntry": "apps/roulette/index.js",
+      "ZLaunchTask": "🟢 Launch: Roulette",
+      "ZOpenMode": "external",
+      "ZRequires": [
+        "node>=18",
+        "npm install",
+        "data/roulette_history.json"
+      ],
+      "ZEthics": [
+        "no_prediction",
+        "no_guarantees"
+      ]
+    },
+    {
+      "ZId": "z-soundscape-living-pulse",
+      "ZName": "Z-Soundscape & Living Pulse (Z-ACG)",
+      "ZLayer": "core",
+      "ZOwner": "SKK",
+      "ZStatus": "ready",
+      "ZDescription": "Acoustic Cognition Gene: passive+active posture from reports; Living Pulse panel; task Z: Soundscape Posture.",
+      "ZLaunchTask": "Z: Soundscape Posture"
+    },
+    {
+      "ZId": "z-super-chat-orchestrator",
+      "ZName": "Z-All-in-One Super Chat",
+      "ZLayer": "ai-tower",
+      "ZOwner": "Z-EAII+SKK+RKPK",
+      "ZStatus": "blueprint-ready",
+      "ZDescription": "Local-first voice+text orchestrator across registered projects with citations, policy gate, approval actions, and evidence spine.",
+      "ZEntry": "docs/Z-SUPER-CHAT-BLUEPRINT.md"
+    },
+    {
+      "ZId": "z-ai-qadp",
+      "ZName": "Z-AI QADP (Questions, Answers & Directed Pathways)",
+      "ZLayer": "governance",
+      "ZOwner": "Z-Super Overseer+Z-EAII",
+      "ZStatus": "doc-ready",
+      "ZDescription": "Hub methodology: structured Q, citation-backed A, explicit pathways for follow-up vs bounded autonomy; registry-first and verifier-linked to limit cross-project mix-ups.",
+      "ZEntry": "docs/Z-AI-QADP-QUESTIONS-ANSWERS-DIRECTED-PATHWAYS.md"
+    },
+    {
+      "ZId": "z-cursor-folder-blueprint",
+      "ZName": "Z-Cursor folder blueprint (hub spine)",
+      "ZLayer": "ops",
+      "ZOwner": "Zuno+Z-EAII",
+      "ZStatus": "ready",
+      "ZDescription": "JSON blueprint + bootstrap/verify scripts and operator doc so Cursor AI and humans keep the same directory spine across Cursor versions and multi-root workspaces.",
+      "ZEntry": "docs/Z-CURSOR-FOLDER-STRUCTURE-AND-AI-WORKFLOWS.md",
+      "ZLaunchTask": "Z: Cursor Folder Blueprint (dry-run)"
+    },
+    {
+      "ZId": "z-sanctuary-core-wrapper",
+      "ZName": "z-sanctuary-core (hub wrapper package)",
+      "ZLayer": "packages",
+      "ZOwner": "Zuno+Z-EAII",
+      "ZStatus": "ready",
+      "ZDescription": "Workspace package: loadPcRootProjects from real z_pc_root_projects.json; runVerifyCI delegates to npm run verify:ci — no duplicate registry.",
+      "ZEntry": "packages/z-sanctuary-core/index.js"
+    },
+    {
+      "ZId": "z-papao-precautions-advisor",
+      "ZName": "Z-PAPAO (Pre-Alert & Precautions Advisor)",
+      "ZLayer": "governance",
+      "ZOwner": "Zuno+Z-EAII",
+      "ZStatus": "ready",
+      "ZDescription": "Read-only pre-alert brief from hub reports + registry paths. npm run papao:precaution-emit → data/reports/z_papao_precaution_brief.{json,md}. Dashboard: z-ai-ecosphere.",
+      "ZEntry": "scripts/z_papao_precaution_emit.mjs"
+    },
+    {
+      "ZId": "z-krtaa-curriculum-emitter",
+      "ZName": "Z-KRTAAO curriculum emitter",
+      "ZLayer": "ecosphere",
+      "ZOwner": "Zuno+Z-EAII",
+      "ZStatus": "ready",
+      "ZDescription": "Read-only ingest of hub reports; emits advisory curriculum JSON + Markdown (npm run krtaa:curriculum-emit). Dashboard: dashboard/z-ai-ecosphere. Prompt packs v3: docs/z-krtaa-prompt-packs/. HODP links in Control Centre + Blueprint.",
+      "ZEntry": "scripts/z_krtaa_curriculum_emit.mjs"
+    },
+    {
+      "ZId": "z-fhmff-lite",
+      "ZName": "Z-FHMFF Lite (frozen/hibernate observer)",
+      "ZLayer": "governance",
+      "ZOwner": "Zuno+Z-EAII",
+      "ZStatus": "ready",
+      "ZDescription": "Advisory: stale comms observers, AAFRTC, learning inactivity, signal cold, comms flow, planned backlog. Pairs with RTRO. scripts/z_fhmff_lite.mjs; npm run ai:fhmff:lite. No auto-fix.",
+      "ZEntry": "scripts/z_fhmff_lite.mjs"
+    },
+    {
+      "ZId": "z-zecce-confirmations",
+      "ZName": "Z-ZECCE (Codex confirmations, advisory v1)",
+      "ZLayer": "governance",
+      "ZOwner": "Zuno+Z-EAII",
+      "ZStatus": "ready",
+      "ZDescription": "Bounded verifier chain (registry, structure, formulas, AI consistency, vault spine) → one JSON/MD receipt. Advisory only: no enforcer or release control. npm run z:codex:zecce:verify.",
+      "ZEntry": "scripts/z_zecce_confirmations.mjs"
+    },
+    {
+      "ZId": "z-ecosphere-transparency-report",
+      "ZName": "Ecosphere transparency (web + PPTX + print PDF)",
+      "ZLayer": "ecosphere",
+      "ZOwner": "Zuno+Z-EAII",
+      "ZStatus": "ready",
+      "ZDescription": "HTML report from zuno JSON (Chart.js + Mermaid + ZECCE). PPTX: npm run report:ecosphere:pptx. PDF: browser print. See docs/public/z_ecosphere_transparency_report/README.md.",
+      "ZEntry": "docs/public/z_ecosphere_transparency_report/index.html"
+    },
+    {
+      "ZId": "z-whale-bus-spine",
+      "ZName": "Z-Whale Bus (comms + Z-SSWSs/AI Tower surfaces)",
+      "ZLayer": "governance",
+      "ZOwner": "Zuno+Z-EAII",
+      "ZStatus": "ready",
+      "ZDescription": "data/z_whale_bus_spine.json: decks comms_sync + surface_reinforce. npm: z:whale-bus:comms+surfaces, z:whale-bus:surfaces. PS: Start-ZWhaleBusComms -CommsAndSurfaces. Ties to z_ai_ecosphere_config rings. docs/Z-WHALE-BUS-SPINE.md",
+      "ZEntry": "data/z_whale_bus_spine.json"
+    },
+    {
+      "ZId": "z-kbozsu",
+      "ZName": "Z-KBOZSU (Knowledge Book Of Z-Sanctuary Universe)",
+      "ZLayer": "ecosphere",
+      "ZOwner": "Zuno+Z-EAII",
+      "ZStatus": "ready",
+      "ZDescription": "Phase A+B codex: index + SHA-256 for core manifests + workspace lint snapshot (declared .code-workspace vs registry). Vault pointers only. npm run kbozsu:refresh · kbozsu:refresh:with-lint → data/reports/z_kbozsu_codex.json + .md",
+      "ZEntry": "scripts/z_kbozsu_refresh.mjs"
+    },
+    {
+      "ZId": "z-mini-bots-phase1",
+      "ZName": "Z — Mini bot operators (Phase 1)",
+      "ZLayer": "governance",
+      "ZOwner": "Zuno+Z-EAII",
+      "ZStatus": "ready",
+      "ZDescription": "Observe-only: bot:guardian (PC paths vs registry), bot:sync (registry snapshot to bot_sync_snapshots/, not full tree), bot:health (Node/OS). bots/README.md",
+      "ZEntry": "bots/guardian/guardian_bot.mjs"
+    },
+    {
+      "ZId": "z-qosmei-core-signal-fusion",
+      "ZName": "Z-QOSMEI core signal fusion (Phase 1)",
+      "ZLayer": "governance",
+      "ZOwner": "Zuno+Z-EAII",
+      "ZStatus": "ready",
+      "ZDescription": "Advisory fusion vector from guardian/alerts/decisions/patterns/rootcause/predict/adaptive/execution. Emits z_qosmei_core_signal.{json,md} for dashboard rail, AI status, Whale Bus, and Zuno.",
+      "ZEntry": "scripts/z_qosmei_signal_fusion.mjs"
+    },
+    {
+      "ZId": "z-structural-pattern-intelligence",
+      "ZName": "Z-Structural Pattern Intelligence (SPI)",
+      "ZLayer": "governance",
+      "ZOwner": "Zuno+Z-EAII",
+      "ZStatus": "ready",
+      "ZDescription": "Cross-layer advisory (v2): predictive_signals, evolution_phase, decision_suggestions, pre_warnings file for Guardian. Emits z_structural_patterns.{json,md} + z_spi_guardian_pre_warnings.json.",
+      "ZEntry": "scripts/z_structural_pattern_intelligence.mjs"
+    },
+    {
+      "ZId": "z-spi-decision-advisor",
+      "ZName": "Z-SPI decision advisor (Phase 2)",
+      "ZLayer": "governance",
+      "ZOwner": "Zuno+Z-EAII",
+      "ZStatus": "ready",
+      "ZDescription": "Advisory merge of SPI decision_suggestions with pending governance rows → z_spi_decision_advice.{json,md}. Dashboard panel dashboard/panels/z_decision_panel.html.",
+      "ZEntry": "scripts/z_spi_decision_advisor.mjs"
+    },
+    {
+      "ZId": "z-adaptive-learning-phase3",
+      "ZName": "Z-Adaptive learning (Phase 3, bounded)",
+      "ZLayer": "governance",
+      "ZOwner": "Zuno+Z-EAII",
+      "ZStatus": "ready",
+      "ZDescription": "z_learning_evaluator (Guardian+resolve → z_learning_history.jsonl, z_learning_evaluation.json) + z_adaptive_weight_tuner → z_adaptive_learning_state.json. Injected into SPI score + QOSMEI. AL rail badge. Reversible: delete z_adaptive_learning_state.json",
+      "ZEntry": "scripts/z_learning_evaluator.mjs"
+    },
+    {
+      "ZId": "z-cross-system-intelligence-phase4",
+      "ZName": "Z-Cross-system intelligence (Phase 4)",
+      "ZLayer": "governance",
+      "ZOwner": "Zuno+Z-EAII",
+      "ZStatus": "ready",
+      "ZDescription": "Read-only synthesizer: SPI + adaptive state + QOSMEI → z_cross_system_learning.{json,md}. No execution, no tuner feed. QOSMEI reads prior run for small confidence/risk nudge. CS rail badge. npm run cross:system after qosmei:signal.",
+      "ZEntry": "scripts/z_cross_system_synthesizer.mjs"
+    },
+    {
+      "ZId": "z-predictive-intelligence-phase5",
+      "ZName": "Z-Predictive intelligence (Phase 5)",
+      "ZLayer": "governance",
+      "ZOwner": "Zuno+Z-EAII",
+      "ZStatus": "ready",
+      "ZDescription": "Experience-weighted heuristics from SPI, learning, cross-system, patterns, decisions, QOSMEI → z_predictive_intelligence.{json,md}. Advisory-only; fusion_hint nudges QOSMEI when second qosmei:signal runs (Whale Bus). PR rail badge. npm run predictive:intel after cross:system.",
+      "ZEntry": "scripts/z_predictive_intelligence_engine.mjs"
+    },
+    {
+      "ZId": "z-prediction-validation-phase55",
+      "ZName": "Z-Prediction validation (Phase 5.5)",
+      "ZLayer": "governance",
+      "ZOwner": "Zuno+Z-EAII",
+      "ZStatus": "ready",
+      "ZDescription": "Heuristic check of predictive output vs decision/learning/pattern logs. Append-only data/logs/z_prediction_validation_history.jsonl. Feeds QOSMEI and next-run predictive confidence scaling. PV rail badge. npm run prediction:validate after predictive:intel.",
+      "ZEntry": "scripts/z_prediction_validator.mjs"
+    },
+    {
+      "ZId": "z-addon-dashboard-surface",
+      "ZName": "Z-Add On Dashboard (staging)",
+      "ZLayer": "governance",
+      "ZOwner": "Z-HODP+Z-EAII",
+      "ZStatus": "ready",
+      "ZDescription": "Data-driven HTML staging for new flows and modules before fusion to main SKK and RKPK. State file lists items and fusion policy. Secondary to index-skk-rkpk; linked from Control Centre Build and automate.",
+      "ZEntry": "dashboard/Html/z-addon-dashboard.html"
+    },
+    {
+      "ZId": "z-ggaesp-pipeline-360",
+      "ZName": "GGAESP-360 (v11–v19) pipeline",
+      "ZLayer": "governance",
+      "ZOwner": "Zuno+Z-EAII",
+      "ZStatus": "ready",
+      "ZDescription": "TypeScript advisory engine: v11–v19; v15 Guardian, v18 Ethics. Z-ECR: EnergyMode + ZECRBranch in runGGAESP; HIGH+GO downgraded to PREPARE; branch in memoryCapsule. Phase 2: memory JSONL + ggaesp_memory; npm run ggaesp:memory:append. Panel: ggaesp_panel (Z-Add On). Not release authority.",
+      "ZEntry": "core_engine/ggaesp_pipeline.ts"
+    },
+    {
+      "ZId": "z-heartpulse-engine",
+      "ZName": "Z-HeartPulse Engine v1.0",
+      "ZLayer": "governance",
+      "ZOwner": "Zuno+Z-EAII",
+      "ZStatus": "planned",
+      "ZDescription": "Emotional storytelling and self-reflection engine (LA-LT, HB1-HB7) with compassion/consent boundaries. PREPARE ONLY: docs, narrative templates, fictional mocks; no people scoring, no relationship prediction, no control logic.",
+      "ZEntry": "docs/Z-HEARTPULSE-ENGINE.md"
+    },
+    {
+      "ZId": "z-display-morph-engine",
+      "ZName": "Z-Display Morph Engine",
+      "ZLayer": "core",
+      "ZOwner": "SKK+RKPK",
+      "ZStatus": "ready",
+      "ZDescription": "Unified client-side visual modes for HODP and static guides: CSS token sets per body[data-display-mode], top-rail Morph selector, localStorage (zSanctuaryDisplayMorphMode), postMessage sync to Twin Roots iframe, standalone Cloudflare deployment guide page. Observational/no backend authority.",
+      "ZEntry": "dashboard/scripts/z-display-morph-engine.js"
+    },
+    {
+      "ZId": "z-pis-projects-identifier-sharing",
+      "ZName": "Z-PI&S (Projects Identifier & Sharing)",
+      "ZLayer": "governance",
+      "ZOwner": "AMK-Goku+Z-EAII",
+      "ZStatus": "planned",
+      "ZDescription": "Z-Project Passport: data/z_project_passports/*.json; share_level enum; internal_notes rules. Validator: npm run z:project-passports:verify → data/reports/z_project_passport_validator.json. No secrets, no deploy. Future: Commander, Twin Roots, ledger refs.",
+      "ZEntry": "docs/Z-PIS-PROJECTS-IDENTIFIER-SHARING.md"
+    },
+    {
+      "ZId": "z-anima-core",
+      "ZName": "Z-ANIMA CORE (Human–Animal Connection Engine)",
+      "ZLayer": "governance",
+      "ZOwner": "AMK-Goku+Zuno",
+      "ZStatus": "planned",
+      "ZDescription": "Cross-module compassion layer: verified partners, quiet hours, no fake AI animal emotions, optional Z-PI&S z_anima_profile. Lite mock UI: dashboard/panels/z_anima_core_lite.html + data/z_anima_lite_mock.json (read-only). Phased real Lite later. Ethics in doc; no deploy or payment in mock.",
+      "ZEntry": "docs/Z-ANIMA-CORE-HUMAN-ANIMAL-CONNECTION.md"
+    }
+  ]
+}

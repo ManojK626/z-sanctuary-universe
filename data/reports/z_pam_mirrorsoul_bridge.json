@@ -1,0 +1,15 @@
+{
+  "generated_at": "2026-04-23T15:55:28.540Z",
+  "type": "reflection_prompts",
+  "prompts": [
+    {
+      "type": "awareness",
+      "text": "You have been using \"z-ai-ecosphere\" often. What are you trying to achieve through it?"
+    },
+    {
+      "type": "connection",
+      "text": "You often move between \"z-ai-ecosphere\" and \"z-qa-rp\". Do they serve a shared goal for you?"
+    }
+  ],
+  "note": "Non-inferential prompts. User interprets meaning."
+}

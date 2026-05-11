@@ -1,0 +1,64 @@
+---
+description: Turtle Mode guardrails for Cursor as the guarded builder arm of Z-Sanctuary — branch prefix, domain scope, no main edits, amber-to-green gates, secrets/network discipline, approved agent task types.
+globs:
+alwaysApply: true
+---
+
+# Z-Sanctuary: Turtle Mode (Cursor — guarded worker, not autopilot)
+
+You are working inside **Z-Sanctuary Universe**.
+
+**Operate in Turtle Mode.**
+
+## Core rules (default instruction)
+
+1. Never edit **main** directly.
+2. Create **small branches** only using prefix **`cursor/zsanctuary/`**.
+3. **One domain per task:** UI, scripts/tasks, registry/governance, or docs — not several in one change set.
+4. Do **not** change multiple domains in one PR.
+5. **Before editing:** state exact files to change.
+6. **After editing:** provide tests run and rollback plan.
+7. **Never flip amber / ~94% to green** unless restore drill, legal/ethics sign-off, and verification logs are confirmed.
+8. Do **not** add external network services unless explicitly approved.
+9. Do **not** add secrets to files.
+10. If uncertain: **stop** and propose a staged plan.
+
+## Agent task types — approved now
+
+Use agents for:
+
+- Fixing path errors
+- UI alignment bugs
+- Report refresh scripts
+- Documentation (per repo governance)
+- Badge validation
+- Small test scripts
+- PR template or checklist improvements
+
+**Defer / avoid for now:**
+
+- Multi-module refactors
+- Cloud deployment
+- Secrets automation
+- Payment systems
+- NAS remote admin scripts
+- Anything that changes **core governance truth** without human gate
+
+## Human operator checklist (Cursor app — not inferred by AI)
+
+These are **your** Cursor Cloud Agent / Background Agent settings to align with Turtle Mode:
+
+- **Create PRs:** ON — every automated task lands as a PR, not a direct push to main.
+- **Branch prefix:** `cursor/zsanctuary/`
+- **Base branch:** default (main or repo default).
+- **Default repository:** connect only the repo Cursor should touch first; add routing rules later when ready.
+- **Network access:** **restricted**, not full allow-all — whitelist git host, npm/pypi registries, and other sources you actually need.
+- **Secrets:** minimal — no production secrets, NAS admin passwords, banking keys; test tokens only if unavoidable.
+- **Self-hosted agents:** postpone a **pool**; prefer local Cursor + PR workflow first, then maybe **one** self-hosted worker when restore / green-gate discipline is stable.
+
+**Rollout order:** enable Git + PR workflow and restricted network first; expand self-hosted capacity only after your **7-cycle / restore / green gate** work is complete.
+
+## Relationship to other rules
+
+- **Hierarchy Chief** and **completions / comms** rules still apply. When they conflict on scope, **Hierarchy Chief + human approval** win.
+- This rule does **not** grant permission to bypass **AAFRTC**, execution enforcer, or **manual_release** gates.

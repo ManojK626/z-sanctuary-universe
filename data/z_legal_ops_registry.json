@@ -1,0 +1,68 @@
+{
+  "schema": "z.legal.ops.registry.v1",
+  "registry_name": "Z-Legal Ops Workstation",
+  "mode": "legal_governance_concept_only",
+  "phase": "Z-LEGAL-OPS-1",
+  "layers": [
+    "z_legal_evidence_core",
+    "z_lawyer_workstation",
+    "z_guardian_legal_circle",
+    "dual_knowledge_spine"
+  ],
+  "dashboard_panels": [
+    "ecosystem_map",
+    "risk_gate_panel",
+    "evidence_receipts",
+    "data_protection_panel",
+    "ai_safety_panel",
+    "xbus_external_connectors",
+    "contract_status",
+    "lawyer_review_queue",
+    "audit_export_concept"
+  ],
+  "advisor_identity_policy": {
+    "no_real_names_without_written_consent": true,
+    "no_endorsement_without_contract": true,
+    "no_ai_impersonation": true,
+    "placeholder_personas_only": true
+  },
+  "legal_boundary": {
+    "ai_organizes_evidence": true,
+    "ai_drafts_summaries": true,
+    "ai_does_not_give_legal_advice": true,
+    "lawyers_decide_legal_advice": true,
+    "humans_decide_sharing": true
+  },
+  "forbidden_actions": [
+    "legal_advice_claim",
+    "lawyer_impersonation",
+    "public_endorsement_claim",
+    "client_data_collection",
+    "evidence_upload_runtime",
+    "gdpr_sar_auto_send",
+    "court_filing",
+    "email_sending",
+    "payment_activation",
+    "provider_call",
+    "deployment",
+    "named_lawyer_ui_without_consent"
+  ],
+  "signal_rules": {
+    "GREEN": "concept/docs/policy only",
+    "YELLOW": "optional panel metadata missing",
+    "BLUE": "real lawyer onboarding/contract/consent decision required",
+    "RED": "legal advice claim, impersonation, client data, endorsement, filing, payment, deploy, or named lawyer without consent"
+  },
+  "locked_law": [
+    "Lawyer dashboard ≠ lawyer endorsement.",
+    "Legal circle ≠ runtime authority.",
+    "AI evidence summary ≠ legal advice.",
+    "Named lawyer persona ≠ consent.",
+    "Contract required before real advisor role.",
+    "Client data requires privacy/consent/security charter.",
+    "GREEN ≠ launch.",
+    "BLUE requires AMK/legal/human review.",
+    "RED blocks movement.",
+    "AMK-Goku owns sacred moves."
+  ]
+}

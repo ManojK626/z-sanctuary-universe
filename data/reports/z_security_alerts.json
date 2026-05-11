@@ -1,0 +1,1790 @@
+{
+  "generated_at": "2026-05-02T18:16:33.240Z",
+  "latest": {
+    "ts": "2026-05-02T18:16:33.240Z",
+    "status": "warn",
+    "critical_count": 0,
+    "warn_count": 3,
+    "checks": [
+      {
+        "id": "hygiene",
+        "status": "hold"
+      },
+      {
+        "id": "proof",
+        "status": "green"
+      },
+      {
+        "id": "autorun",
+        "status": "green"
+      },
+      {
+        "id": "storage",
+        "status": "hold"
+      },
+      {
+        "id": "layout",
+        "status": "hold"
+      }
+    ],
+    "lane_notify": [
+      "observe",
+      "protect",
+      "repair",
+      "report"
+    ],
+    "message": "Security sentinel warning: review hold/warn checks."
+  },
+  "history_tail": [
+    {
+      "ts": "2026-04-14T14:51:28.987Z",
+      "status": "warn",
+      "critical_count": 0,
+      "warn_count": 2,
+      "checks": [
+        {
+          "id": "hygiene",
+          "status": "green"
+        },
+        {
+          "id": "proof",
+          "status": "green"
+        },
+        {
+          "id": "autorun",
+          "status": "green"
+        },
+        {
+          "id": "storage",
+          "status": "hold"
+        },
+        {
+          "id": "layout",
+          "status": "hold"
+        }
+      ],
+      "lane_notify": [
+        "observe",
+        "protect",
+        "repair",
+        "report"
+      ],
+      "message": "Security sentinel warning: review hold/warn checks."
+    },
+    {
+      "ts": "2026-04-14T15:58:20.831Z",
+      "status": "warn",
+      "critical_count": 0,
+      "warn_count": 2,
+      "checks": [
+        {
+          "id": "hygiene",
+          "status": "green"
+        },
+        {
+          "id": "proof",
+          "status": "green"
+        },
+        {
+          "id": "autorun",
+          "status": "green"
+        },
+        {
+          "id": "storage",
+          "status": "hold"
+        },
+        {
+          "id": "layout",
+          "status": "hold"
+        }
+      ],
+      "lane_notify": [
+        "observe",
+        "protect",
+        "repair",
+        "report"
+      ],
+      "message": "Security sentinel warning: review hold/warn checks."
+    },
+    {
+      "ts": "2026-04-17T14:02:29.785Z",
+      "status": "warn",
+      "critical_count": 0,
+      "warn_count": 2,
+      "checks": [
+        {
+          "id": "hygiene",
+          "status": "green"
+        },
+        {
+          "id": "proof",
+          "status": "green"
+        },
+        {
+          "id": "autorun",
+          "status": "green"
+        },
+        {
+          "id": "storage",
+          "status": "hold"
+        },
+        {
+          "id": "layout",
+          "status": "hold"
+        }
+      ],
+      "lane_notify": [
+        "observe",
+        "protect",
+        "repair",
+        "report"
+      ],
+      "message": "Security sentinel warning: review hold/warn checks."
+    },
+    {
+      "ts": "2026-04-17T14:05:25.477Z",
+      "status": "warn",
+      "critical_count": 0,
+      "warn_count": 2,
+      "checks": [
+        {
+          "id": "hygiene",
+          "status": "green"
+        },
+        {
+          "id": "proof",
+          "status": "green"
+        },
+        {
+          "id": "autorun",
+          "status": "green"
+        },
+        {
+          "id": "storage",
+          "status": "hold"
+        },
+        {
+          "id": "layout",
+          "status": "hold"
+        }
+      ],
+      "lane_notify": [
+        "observe",
+        "protect",
+        "repair",
+        "report"
+      ],
+      "message": "Security sentinel warning: review hold/warn checks."
+    },
+    {
+      "ts": "2026-04-20T23:23:39.333Z",
+      "status": "warn",
+      "critical_count": 0,
+      "warn_count": 3,
+      "checks": [
+        {
+          "id": "hygiene",
+          "status": "hold"
+        },
+        {
+          "id": "proof",
+          "status": "green"
+        },
+        {
+          "id": "autorun",
+          "status": "green"
+        },
+        {
+          "id": "storage",
+          "status": "hold"
+        },
+        {
+          "id": "layout",
+          "status": "hold"
+        }
+      ],
+      "lane_notify": [
+        "observe",
+        "protect",
+        "repair",
+        "report"
+      ],
+      "message": "Security sentinel warning: review hold/warn checks."
+    },
+    {
+      "ts": "2026-04-23T17:40:03.750Z",
+      "status": "warn",
+      "critical_count": 0,
+      "warn_count": 3,
+      "checks": [
+        {
+          "id": "hygiene",
+          "status": "hold"
+        },
+        {
+          "id": "proof",
+          "status": "green"
+        },
+        {
+          "id": "autorun",
+          "status": "green"
+        },
+        {
+          "id": "storage",
+          "status": "hold"
+        },
+        {
+          "id": "layout",
+          "status": "hold"
+        }
+      ],
+      "lane_notify": [
+        "observe",
+        "protect",
+        "repair",
+        "report"
+      ],
+      "message": "Security sentinel warning: review hold/warn checks."
+    },
+    {
+      "ts": "2026-04-26T01:01:45.489Z",
+      "status": "warn",
+      "critical_count": 0,
+      "warn_count": 3,
+      "checks": [
+        {
+          "id": "hygiene",
+          "status": "hold"
+        },
+        {
+          "id": "proof",
+          "status": "green"
+        },
+        {
+          "id": "autorun",
+          "status": "green"
+        },
+        {
+          "id": "storage",
+          "status": "hold"
+        },
+        {
+          "id": "layout",
+          "status": "hold"
+        }
+      ],
+      "lane_notify": [
+        "observe",
+        "protect",
+        "repair",
+        "report"
+      ],
+      "message": "Security sentinel warning: review hold/warn checks."
+    },
+    {
+      "ts": "2026-04-26T01:12:06.753Z",
+      "status": "warn",
+      "critical_count": 0,
+      "warn_count": 3,
+      "checks": [
+        {
+          "id": "hygiene",
+          "status": "hold"
+        },
+        {
+          "id": "proof",
+          "status": "green"
+        },
+        {
+          "id": "autorun",
+          "status": "green"
+        },
+        {
+          "id": "storage",
+          "status": "hold"
+        },
+        {
+          "id": "layout",
+          "status": "hold"
+        }
+      ],
+      "lane_notify": [
+        "observe",
+        "protect",
+        "repair",
+        "report"
+      ],
+      "message": "Security sentinel warning: review hold/warn checks."
+    },
+    {
+      "ts": "2026-04-27T19:08:53.663Z",
+      "status": "warn",
+      "critical_count": 0,
+      "warn_count": 3,
+      "checks": [
+        {
+          "id": "hygiene",
+          "status": "hold"
+        },
+        {
+          "id": "proof",
+          "status": "green"
+        },
+        {
+          "id": "autorun",
+          "status": "green"
+        },
+        {
+          "id": "storage",
+          "status": "hold"
+        },
+        {
+          "id": "layout",
+          "status": "hold"
+        }
+      ],
+      "lane_notify": [
+        "observe",
+        "protect",
+        "repair",
+        "report"
+      ],
+      "message": "Security sentinel warning: review hold/warn checks."
+    },
+    {
+      "ts": "2026-04-27T20:16:10.350Z",
+      "status": "warn",
+      "critical_count": 0,
+      "warn_count": 3,
+      "checks": [
+        {
+          "id": "hygiene",
+          "status": "hold"
+        },
+        {
+          "id": "proof",
+          "status": "green"
+        },
+        {
+          "id": "autorun",
+          "status": "green"
+        },
+        {
+          "id": "storage",
+          "status": "hold"
+        },
+        {
+          "id": "layout",
+          "status": "hold"
+        }
+      ],
+      "lane_notify": [
+        "observe",
+        "protect",
+        "repair",
+        "report"
+      ],
+      "message": "Security sentinel warning: review hold/warn checks."
+    },
+    {
+      "ts": "2026-04-28T18:43:13.158Z",
+      "status": "warn",
+      "critical_count": 0,
+      "warn_count": 3,
+      "checks": [
+        {
+          "id": "hygiene",
+          "status": "hold"
+        },
+        {
+          "id": "proof",
+          "status": "green"
+        },
+        {
+          "id": "autorun",
+          "status": "green"
+        },
+        {
+          "id": "storage",
+          "status": "hold"
+        },
+        {
+          "id": "layout",
+          "status": "hold"
+        }
+      ],
+      "lane_notify": [
+        "observe",
+        "protect",
+        "repair",
+        "report"
+      ],
+      "message": "Security sentinel warning: review hold/warn checks."
+    },
+    {
+      "ts": "2026-04-28T18:52:22.480Z",
+      "status": "warn",
+      "critical_count": 0,
+      "warn_count": 3,
+      "checks": [
+        {
+          "id": "hygiene",
+          "status": "hold"
+        },
+        {
+          "id": "proof",
+          "status": "green"
+        },
+        {
+          "id": "autorun",
+          "status": "green"
+        },
+        {
+          "id": "storage",
+          "status": "hold"
+        },
+        {
+          "id": "layout",
+          "status": "hold"
+        }
+      ],
+      "lane_notify": [
+        "observe",
+        "protect",
+        "repair",
+        "report"
+      ],
+      "message": "Security sentinel warning: review hold/warn checks."
+    },
+    {
+      "ts": "2026-04-28T19:37:36.664Z",
+      "status": "warn",
+      "critical_count": 0,
+      "warn_count": 3,
+      "checks": [
+        {
+          "id": "hygiene",
+          "status": "hold"
+        },
+        {
+          "id": "proof",
+          "status": "green"
+        },
+        {
+          "id": "autorun",
+          "status": "green"
+        },
+        {
+          "id": "storage",
+          "status": "hold"
+        },
+        {
+          "id": "layout",
+          "status": "hold"
+        }
+      ],
+      "lane_notify": [
+        "observe",
+        "protect",
+        "repair",
+        "report"
+      ],
+      "message": "Security sentinel warning: review hold/warn checks."
+    },
+    {
+      "ts": "2026-04-29T14:43:34.082Z",
+      "status": "warn",
+      "critical_count": 0,
+      "warn_count": 3,
+      "checks": [
+        {
+          "id": "hygiene",
+          "status": "hold"
+        },
+        {
+          "id": "proof",
+          "status": "green"
+        },
+        {
+          "id": "autorun",
+          "status": "green"
+        },
+        {
+          "id": "storage",
+          "status": "hold"
+        },
+        {
+          "id": "layout",
+          "status": "hold"
+        }
+      ],
+      "lane_notify": [
+        "observe",
+        "protect",
+        "repair",
+        "report"
+      ],
+      "message": "Security sentinel warning: review hold/warn checks."
+    },
+    {
+      "ts": "2026-04-29T14:45:40.474Z",
+      "status": "warn",
+      "critical_count": 0,
+      "warn_count": 3,
+      "checks": [
+        {
+          "id": "hygiene",
+          "status": "hold"
+        },
+        {
+          "id": "proof",
+          "status": "green"
+        },
+        {
+          "id": "autorun",
+          "status": "green"
+        },
+        {
+          "id": "storage",
+          "status": "hold"
+        },
+        {
+          "id": "layout",
+          "status": "hold"
+        }
+      ],
+      "lane_notify": [
+        "observe",
+        "protect",
+        "repair",
+        "report"
+      ],
+      "message": "Security sentinel warning: review hold/warn checks."
+    },
+    {
+      "ts": "2026-04-29T14:49:05.678Z",
+      "status": "warn",
+      "critical_count": 0,
+      "warn_count": 3,
+      "checks": [
+        {
+          "id": "hygiene",
+          "status": "hold"
+        },
+        {
+          "id": "proof",
+          "status": "green"
+        },
+        {
+          "id": "autorun",
+          "status": "green"
+        },
+        {
+          "id": "storage",
+          "status": "hold"
+        },
+        {
+          "id": "layout",
+          "status": "hold"
+        }
+      ],
+      "lane_notify": [
+        "observe",
+        "protect",
+        "repair",
+        "report"
+      ],
+      "message": "Security sentinel warning: review hold/warn checks."
+    },
+    {
+      "ts": "2026-04-29T14:50:37.171Z",
+      "status": "warn",
+      "critical_count": 0,
+      "warn_count": 3,
+      "checks": [
+        {
+          "id": "hygiene",
+          "status": "hold"
+        },
+        {
+          "id": "proof",
+          "status": "green"
+        },
+        {
+          "id": "autorun",
+          "status": "green"
+        },
+        {
+          "id": "storage",
+          "status": "hold"
+        },
+        {
+          "id": "layout",
+          "status": "hold"
+        }
+      ],
+      "lane_notify": [
+        "observe",
+        "protect",
+        "repair",
+        "report"
+      ],
+      "message": "Security sentinel warning: review hold/warn checks."
+    },
+    {
+      "ts": "2026-04-29T14:57:31.222Z",
+      "status": "warn",
+      "critical_count": 0,
+      "warn_count": 3,
+      "checks": [
+        {
+          "id": "hygiene",
+          "status": "hold"
+        },
+        {
+          "id": "proof",
+          "status": "green"
+        },
+        {
+          "id": "autorun",
+          "status": "green"
+        },
+        {
+          "id": "storage",
+          "status": "hold"
+        },
+        {
+          "id": "layout",
+          "status": "hold"
+        }
+      ],
+      "lane_notify": [
+        "observe",
+        "protect",
+        "repair",
+        "report"
+      ],
+      "message": "Security sentinel warning: review hold/warn checks."
+    },
+    {
+      "ts": "2026-04-29T15:00:37.415Z",
+      "status": "warn",
+      "critical_count": 0,
+      "warn_count": 3,
+      "checks": [
+        {
+          "id": "hygiene",
+          "status": "hold"
+        },
+        {
+          "id": "proof",
+          "status": "green"
+        },
+        {
+          "id": "autorun",
+          "status": "green"
+        },
+        {
+          "id": "storage",
+          "status": "hold"
+        },
+        {
+          "id": "layout",
+          "status": "hold"
+        }
+      ],
+      "lane_notify": [
+        "observe",
+        "protect",
+        "repair",
+        "report"
+      ],
+      "message": "Security sentinel warning: review hold/warn checks."
+    },
+    {
+      "ts": "2026-04-29T15:05:04.680Z",
+      "status": "warn",
+      "critical_count": 0,
+      "warn_count": 3,
+      "checks": [
+        {
+          "id": "hygiene",
+          "status": "hold"
+        },
+        {
+          "id": "proof",
+          "status": "green"
+        },
+        {
+          "id": "autorun",
+          "status": "green"
+        },
+        {
+          "id": "storage",
+          "status": "hold"
+        },
+        {
+          "id": "layout",
+          "status": "hold"
+        }
+      ],
+      "lane_notify": [
+        "observe",
+        "protect",
+        "repair",
+        "report"
+      ],
+      "message": "Security sentinel warning: review hold/warn checks."
+    },
+    {
+      "ts": "2026-04-29T15:23:56.327Z",
+      "status": "warn",
+      "critical_count": 0,
+      "warn_count": 3,
+      "checks": [
+        {
+          "id": "hygiene",
+          "status": "hold"
+        },
+        {
+          "id": "proof",
+          "status": "green"
+        },
+        {
+          "id": "autorun",
+          "status": "green"
+        },
+        {
+          "id": "storage",
+          "status": "hold"
+        },
+        {
+          "id": "layout",
+          "status": "hold"
+        }
+      ],
+      "lane_notify": [
+        "observe",
+        "protect",
+        "repair",
+        "report"
+      ],
+      "message": "Security sentinel warning: review hold/warn checks."
+    },
+    {
+      "ts": "2026-04-29T15:36:50.241Z",
+      "status": "warn",
+      "critical_count": 0,
+      "warn_count": 3,
+      "checks": [
+        {
+          "id": "hygiene",
+          "status": "hold"
+        },
+        {
+          "id": "proof",
+          "status": "green"
+        },
+        {
+          "id": "autorun",
+          "status": "green"
+        },
+        {
+          "id": "storage",
+          "status": "hold"
+        },
+        {
+          "id": "layout",
+          "status": "hold"
+        }
+      ],
+      "lane_notify": [
+        "observe",
+        "protect",
+        "repair",
+        "report"
+      ],
+      "message": "Security sentinel warning: review hold/warn checks."
+    },
+    {
+      "ts": "2026-04-29T15:37:43.259Z",
+      "status": "warn",
+      "critical_count": 0,
+      "warn_count": 3,
+      "checks": [
+        {
+          "id": "hygiene",
+          "status": "hold"
+        },
+        {
+          "id": "proof",
+          "status": "green"
+        },
+        {
+          "id": "autorun",
+          "status": "green"
+        },
+        {
+          "id": "storage",
+          "status": "hold"
+        },
+        {
+          "id": "layout",
+          "status": "hold"
+        }
+      ],
+      "lane_notify": [
+        "observe",
+        "protect",
+        "repair",
+        "report"
+      ],
+      "message": "Security sentinel warning: review hold/warn checks."
+    },
+    {
+      "ts": "2026-04-29T15:38:03.120Z",
+      "status": "warn",
+      "critical_count": 0,
+      "warn_count": 3,
+      "checks": [
+        {
+          "id": "hygiene",
+          "status": "hold"
+        },
+        {
+          "id": "proof",
+          "status": "green"
+        },
+        {
+          "id": "autorun",
+          "status": "green"
+        },
+        {
+          "id": "storage",
+          "status": "hold"
+        },
+        {
+          "id": "layout",
+          "status": "hold"
+        }
+      ],
+      "lane_notify": [
+        "observe",
+        "protect",
+        "repair",
+        "report"
+      ],
+      "message": "Security sentinel warning: review hold/warn checks."
+    },
+    {
+      "ts": "2026-04-29T15:38:38.889Z",
+      "status": "warn",
+      "critical_count": 0,
+      "warn_count": 3,
+      "checks": [
+        {
+          "id": "hygiene",
+          "status": "hold"
+        },
+        {
+          "id": "proof",
+          "status": "green"
+        },
+        {
+          "id": "autorun",
+          "status": "green"
+        },
+        {
+          "id": "storage",
+          "status": "hold"
+        },
+        {
+          "id": "layout",
+          "status": "hold"
+        }
+      ],
+      "lane_notify": [
+        "observe",
+        "protect",
+        "repair",
+        "report"
+      ],
+      "message": "Security sentinel warning: review hold/warn checks."
+    },
+    {
+      "ts": "2026-04-29T15:40:38.525Z",
+      "status": "warn",
+      "critical_count": 0,
+      "warn_count": 3,
+      "checks": [
+        {
+          "id": "hygiene",
+          "status": "hold"
+        },
+        {
+          "id": "proof",
+          "status": "green"
+        },
+        {
+          "id": "autorun",
+          "status": "green"
+        },
+        {
+          "id": "storage",
+          "status": "hold"
+        },
+        {
+          "id": "layout",
+          "status": "hold"
+        }
+      ],
+      "lane_notify": [
+        "observe",
+        "protect",
+        "repair",
+        "report"
+      ],
+      "message": "Security sentinel warning: review hold/warn checks."
+    },
+    {
+      "ts": "2026-04-29T15:41:13.952Z",
+      "status": "warn",
+      "critical_count": 0,
+      "warn_count": 3,
+      "checks": [
+        {
+          "id": "hygiene",
+          "status": "hold"
+        },
+        {
+          "id": "proof",
+          "status": "green"
+        },
+        {
+          "id": "autorun",
+          "status": "green"
+        },
+        {
+          "id": "storage",
+          "status": "hold"
+        },
+        {
+          "id": "layout",
+          "status": "hold"
+        }
+      ],
+      "lane_notify": [
+        "observe",
+        "protect",
+        "repair",
+        "report"
+      ],
+      "message": "Security sentinel warning: review hold/warn checks."
+    },
+    {
+      "ts": "2026-04-29T15:44:32.534Z",
+      "status": "warn",
+      "critical_count": 0,
+      "warn_count": 3,
+      "checks": [
+        {
+          "id": "hygiene",
+          "status": "hold"
+        },
+        {
+          "id": "proof",
+          "status": "green"
+        },
+        {
+          "id": "autorun",
+          "status": "green"
+        },
+        {
+          "id": "storage",
+          "status": "hold"
+        },
+        {
+          "id": "layout",
+          "status": "hold"
+        }
+      ],
+      "lane_notify": [
+        "observe",
+        "protect",
+        "repair",
+        "report"
+      ],
+      "message": "Security sentinel warning: review hold/warn checks."
+    },
+    {
+      "ts": "2026-04-29T18:33:59.802Z",
+      "status": "warn",
+      "critical_count": 0,
+      "warn_count": 3,
+      "checks": [
+        {
+          "id": "hygiene",
+          "status": "hold"
+        },
+        {
+          "id": "proof",
+          "status": "green"
+        },
+        {
+          "id": "autorun",
+          "status": "green"
+        },
+        {
+          "id": "storage",
+          "status": "hold"
+        },
+        {
+          "id": "layout",
+          "status": "hold"
+        }
+      ],
+      "lane_notify": [
+        "observe",
+        "protect",
+        "repair",
+        "report"
+      ],
+      "message": "Security sentinel warning: review hold/warn checks."
+    },
+    {
+      "ts": "2026-04-29T18:35:23.621Z",
+      "status": "warn",
+      "critical_count": 0,
+      "warn_count": 3,
+      "checks": [
+        {
+          "id": "hygiene",
+          "status": "hold"
+        },
+        {
+          "id": "proof",
+          "status": "green"
+        },
+        {
+          "id": "autorun",
+          "status": "green"
+        },
+        {
+          "id": "storage",
+          "status": "hold"
+        },
+        {
+          "id": "layout",
+          "status": "hold"
+        }
+      ],
+      "lane_notify": [
+        "observe",
+        "protect",
+        "repair",
+        "report"
+      ],
+      "message": "Security sentinel warning: review hold/warn checks."
+    },
+    {
+      "ts": "2026-04-29T18:46:54.517Z",
+      "status": "warn",
+      "critical_count": 0,
+      "warn_count": 3,
+      "checks": [
+        {
+          "id": "hygiene",
+          "status": "hold"
+        },
+        {
+          "id": "proof",
+          "status": "green"
+        },
+        {
+          "id": "autorun",
+          "status": "green"
+        },
+        {
+          "id": "storage",
+          "status": "hold"
+        },
+        {
+          "id": "layout",
+          "status": "hold"
+        }
+      ],
+      "lane_notify": [
+        "observe",
+        "protect",
+        "repair",
+        "report"
+      ],
+      "message": "Security sentinel warning: review hold/warn checks."
+    },
+    {
+      "ts": "2026-04-29T18:47:31.003Z",
+      "status": "warn",
+      "critical_count": 0,
+      "warn_count": 3,
+      "checks": [
+        {
+          "id": "hygiene",
+          "status": "hold"
+        },
+        {
+          "id": "proof",
+          "status": "green"
+        },
+        {
+          "id": "autorun",
+          "status": "green"
+        },
+        {
+          "id": "storage",
+          "status": "hold"
+        },
+        {
+          "id": "layout",
+          "status": "hold"
+        }
+      ],
+      "lane_notify": [
+        "observe",
+        "protect",
+        "repair",
+        "report"
+      ],
+      "message": "Security sentinel warning: review hold/warn checks."
+    },
+    {
+      "ts": "2026-04-29T19:04:21.196Z",
+      "status": "warn",
+      "critical_count": 0,
+      "warn_count": 3,
+      "checks": [
+        {
+          "id": "hygiene",
+          "status": "hold"
+        },
+        {
+          "id": "proof",
+          "status": "green"
+        },
+        {
+          "id": "autorun",
+          "status": "green"
+        },
+        {
+          "id": "storage",
+          "status": "hold"
+        },
+        {
+          "id": "layout",
+          "status": "hold"
+        }
+      ],
+      "lane_notify": [
+        "observe",
+        "protect",
+        "repair",
+        "report"
+      ],
+      "message": "Security sentinel warning: review hold/warn checks."
+    },
+    {
+      "ts": "2026-04-29T19:04:58.629Z",
+      "status": "warn",
+      "critical_count": 0,
+      "warn_count": 3,
+      "checks": [
+        {
+          "id": "hygiene",
+          "status": "hold"
+        },
+        {
+          "id": "proof",
+          "status": "green"
+        },
+        {
+          "id": "autorun",
+          "status": "green"
+        },
+        {
+          "id": "storage",
+          "status": "hold"
+        },
+        {
+          "id": "layout",
+          "status": "hold"
+        }
+      ],
+      "lane_notify": [
+        "observe",
+        "protect",
+        "repair",
+        "report"
+      ],
+      "message": "Security sentinel warning: review hold/warn checks."
+    },
+    {
+      "ts": "2026-04-29T19:12:42.854Z",
+      "status": "warn",
+      "critical_count": 0,
+      "warn_count": 3,
+      "checks": [
+        {
+          "id": "hygiene",
+          "status": "hold"
+        },
+        {
+          "id": "proof",
+          "status": "green"
+        },
+        {
+          "id": "autorun",
+          "status": "green"
+        },
+        {
+          "id": "storage",
+          "status": "hold"
+        },
+        {
+          "id": "layout",
+          "status": "hold"
+        }
+      ],
+      "lane_notify": [
+        "observe",
+        "protect",
+        "repair",
+        "report"
+      ],
+      "message": "Security sentinel warning: review hold/warn checks."
+    },
+    {
+      "ts": "2026-04-29T19:13:19.203Z",
+      "status": "warn",
+      "critical_count": 0,
+      "warn_count": 3,
+      "checks": [
+        {
+          "id": "hygiene",
+          "status": "hold"
+        },
+        {
+          "id": "proof",
+          "status": "green"
+        },
+        {
+          "id": "autorun",
+          "status": "green"
+        },
+        {
+          "id": "storage",
+          "status": "hold"
+        },
+        {
+          "id": "layout",
+          "status": "hold"
+        }
+      ],
+      "lane_notify": [
+        "observe",
+        "protect",
+        "repair",
+        "report"
+      ],
+      "message": "Security sentinel warning: review hold/warn checks."
+    },
+    {
+      "ts": "2026-04-29T21:10:13.291Z",
+      "status": "warn",
+      "critical_count": 0,
+      "warn_count": 3,
+      "checks": [
+        {
+          "id": "hygiene",
+          "status": "hold"
+        },
+        {
+          "id": "proof",
+          "status": "green"
+        },
+        {
+          "id": "autorun",
+          "status": "green"
+        },
+        {
+          "id": "storage",
+          "status": "hold"
+        },
+        {
+          "id": "layout",
+          "status": "hold"
+        }
+      ],
+      "lane_notify": [
+        "observe",
+        "protect",
+        "repair",
+        "report"
+      ],
+      "message": "Security sentinel warning: review hold/warn checks."
+    },
+    {
+      "ts": "2026-04-29T21:10:50.379Z",
+      "status": "warn",
+      "critical_count": 0,
+      "warn_count": 3,
+      "checks": [
+        {
+          "id": "hygiene",
+          "status": "hold"
+        },
+        {
+          "id": "proof",
+          "status": "green"
+        },
+        {
+          "id": "autorun",
+          "status": "green"
+        },
+        {
+          "id": "storage",
+          "status": "hold"
+        },
+        {
+          "id": "layout",
+          "status": "hold"
+        }
+      ],
+      "lane_notify": [
+        "observe",
+        "protect",
+        "repair",
+        "report"
+      ],
+      "message": "Security sentinel warning: review hold/warn checks."
+    },
+    {
+      "ts": "2026-04-29T21:36:06.221Z",
+      "status": "warn",
+      "critical_count": 0,
+      "warn_count": 3,
+      "checks": [
+        {
+          "id": "hygiene",
+          "status": "hold"
+        },
+        {
+          "id": "proof",
+          "status": "green"
+        },
+        {
+          "id": "autorun",
+          "status": "green"
+        },
+        {
+          "id": "storage",
+          "status": "hold"
+        },
+        {
+          "id": "layout",
+          "status": "hold"
+        }
+      ],
+      "lane_notify": [
+        "observe",
+        "protect",
+        "repair",
+        "report"
+      ],
+      "message": "Security sentinel warning: review hold/warn checks."
+    },
+    {
+      "ts": "2026-04-29T22:35:37.232Z",
+      "status": "warn",
+      "critical_count": 0,
+      "warn_count": 3,
+      "checks": [
+        {
+          "id": "hygiene",
+          "status": "hold"
+        },
+        {
+          "id": "proof",
+          "status": "green"
+        },
+        {
+          "id": "autorun",
+          "status": "green"
+        },
+        {
+          "id": "storage",
+          "status": "hold"
+        },
+        {
+          "id": "layout",
+          "status": "hold"
+        }
+      ],
+      "lane_notify": [
+        "observe",
+        "protect",
+        "repair",
+        "report"
+      ],
+      "message": "Security sentinel warning: review hold/warn checks."
+    },
+    {
+      "ts": "2026-04-30T19:18:08.894Z",
+      "status": "warn",
+      "critical_count": 0,
+      "warn_count": 3,
+      "checks": [
+        {
+          "id": "hygiene",
+          "status": "hold"
+        },
+        {
+          "id": "proof",
+          "status": "green"
+        },
+        {
+          "id": "autorun",
+          "status": "green"
+        },
+        {
+          "id": "storage",
+          "status": "hold"
+        },
+        {
+          "id": "layout",
+          "status": "hold"
+        }
+      ],
+      "lane_notify": [
+        "observe",
+        "protect",
+        "repair",
+        "report"
+      ],
+      "message": "Security sentinel warning: review hold/warn checks."
+    },
+    {
+      "ts": "2026-04-30T19:18:49.138Z",
+      "status": "warn",
+      "critical_count": 0,
+      "warn_count": 3,
+      "checks": [
+        {
+          "id": "hygiene",
+          "status": "hold"
+        },
+        {
+          "id": "proof",
+          "status": "green"
+        },
+        {
+          "id": "autorun",
+          "status": "green"
+        },
+        {
+          "id": "storage",
+          "status": "hold"
+        },
+        {
+          "id": "layout",
+          "status": "hold"
+        }
+      ],
+      "lane_notify": [
+        "observe",
+        "protect",
+        "repair",
+        "report"
+      ],
+      "message": "Security sentinel warning: review hold/warn checks."
+    },
+    {
+      "ts": "2026-05-01T11:51:02.558Z",
+      "status": "warn",
+      "critical_count": 0,
+      "warn_count": 3,
+      "checks": [
+        {
+          "id": "hygiene",
+          "status": "hold"
+        },
+        {
+          "id": "proof",
+          "status": "green"
+        },
+        {
+          "id": "autorun",
+          "status": "green"
+        },
+        {
+          "id": "storage",
+          "status": "hold"
+        },
+        {
+          "id": "layout",
+          "status": "hold"
+        }
+      ],
+      "lane_notify": [
+        "observe",
+        "protect",
+        "repair",
+        "report"
+      ],
+      "message": "Security sentinel warning: review hold/warn checks."
+    },
+    {
+      "ts": "2026-05-01T12:20:14.139Z",
+      "status": "warn",
+      "critical_count": 0,
+      "warn_count": 3,
+      "checks": [
+        {
+          "id": "hygiene",
+          "status": "hold"
+        },
+        {
+          "id": "proof",
+          "status": "green"
+        },
+        {
+          "id": "autorun",
+          "status": "green"
+        },
+        {
+          "id": "storage",
+          "status": "hold"
+        },
+        {
+          "id": "layout",
+          "status": "hold"
+        }
+      ],
+      "lane_notify": [
+        "observe",
+        "protect",
+        "repair",
+        "report"
+      ],
+      "message": "Security sentinel warning: review hold/warn checks."
+    },
+    {
+      "ts": "2026-05-01T12:20:55.789Z",
+      "status": "warn",
+      "critical_count": 0,
+      "warn_count": 3,
+      "checks": [
+        {
+          "id": "hygiene",
+          "status": "hold"
+        },
+        {
+          "id": "proof",
+          "status": "green"
+        },
+        {
+          "id": "autorun",
+          "status": "green"
+        },
+        {
+          "id": "storage",
+          "status": "hold"
+        },
+        {
+          "id": "layout",
+          "status": "hold"
+        }
+      ],
+      "lane_notify": [
+        "observe",
+        "protect",
+        "repair",
+        "report"
+      ],
+      "message": "Security sentinel warning: review hold/warn checks."
+    },
+    {
+      "ts": "2026-05-01T12:33:55.464Z",
+      "status": "warn",
+      "critical_count": 0,
+      "warn_count": 3,
+      "checks": [
+        {
+          "id": "hygiene",
+          "status": "hold"
+        },
+        {
+          "id": "proof",
+          "status": "green"
+        },
+        {
+          "id": "autorun",
+          "status": "green"
+        },
+        {
+          "id": "storage",
+          "status": "hold"
+        },
+        {
+          "id": "layout",
+          "status": "hold"
+        }
+      ],
+      "lane_notify": [
+        "observe",
+        "protect",
+        "repair",
+        "report"
+      ],
+      "message": "Security sentinel warning: review hold/warn checks."
+    },
+    {
+      "ts": "2026-05-01T12:34:32.031Z",
+      "status": "warn",
+      "critical_count": 0,
+      "warn_count": 3,
+      "checks": [
+        {
+          "id": "hygiene",
+          "status": "hold"
+        },
+        {
+          "id": "proof",
+          "status": "green"
+        },
+        {
+          "id": "autorun",
+          "status": "green"
+        },
+        {
+          "id": "storage",
+          "status": "hold"
+        },
+        {
+          "id": "layout",
+          "status": "hold"
+        }
+      ],
+      "lane_notify": [
+        "observe",
+        "protect",
+        "repair",
+        "report"
+      ],
+      "message": "Security sentinel warning: review hold/warn checks."
+    },
+    {
+      "ts": "2026-05-01T17:22:46.796Z",
+      "status": "warn",
+      "critical_count": 0,
+      "warn_count": 3,
+      "checks": [
+        {
+          "id": "hygiene",
+          "status": "hold"
+        },
+        {
+          "id": "proof",
+          "status": "green"
+        },
+        {
+          "id": "autorun",
+          "status": "green"
+        },
+        {
+          "id": "storage",
+          "status": "hold"
+        },
+        {
+          "id": "layout",
+          "status": "hold"
+        }
+      ],
+      "lane_notify": [
+        "observe",
+        "protect",
+        "repair",
+        "report"
+      ],
+      "message": "Security sentinel warning: review hold/warn checks."
+    },
+    {
+      "ts": "2026-05-01T17:24:18.110Z",
+      "status": "warn",
+      "critical_count": 0,
+      "warn_count": 3,
+      "checks": [
+        {
+          "id": "hygiene",
+          "status": "hold"
+        },
+        {
+          "id": "proof",
+          "status": "green"
+        },
+        {
+          "id": "autorun",
+          "status": "green"
+        },
+        {
+          "id": "storage",
+          "status": "hold"
+        },
+        {
+          "id": "layout",
+          "status": "hold"
+        }
+      ],
+      "lane_notify": [
+        "observe",
+        "protect",
+        "repair",
+        "report"
+      ],
+      "message": "Security sentinel warning: review hold/warn checks."
+    },
+    {
+      "ts": "2026-05-02T18:16:33.240Z",
+      "status": "warn",
+      "critical_count": 0,
+      "warn_count": 3,
+      "checks": [
+        {
+          "id": "hygiene",
+          "status": "hold"
+        },
+        {
+          "id": "proof",
+          "status": "green"
+        },
+        {
+          "id": "autorun",
+          "status": "green"
+        },
+        {
+          "id": "storage",
+          "status": "hold"
+        },
+        {
+          "id": "layout",
+          "status": "hold"
+        }
+      ],
+      "lane_notify": [
+        "observe",
+        "protect",
+        "repair",
+        "report"
+      ],
+      "message": "Security sentinel warning: review hold/warn checks."
+    }
+  ]
+}

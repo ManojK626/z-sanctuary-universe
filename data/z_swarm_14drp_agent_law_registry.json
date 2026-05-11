@@ -1,0 +1,92 @@
+{
+  "schema": "z_swarm_14drp_agent_law_registry_v1",
+  "registry_name": "Z-SWARM-14DRP Universal Agent Law Registry",
+  "mode": "read_only_governance",
+  "applies_to": [
+    "mini_bots",
+    "ai_swarms",
+    "vscode_copilot",
+    "cursor_ai",
+    "z_traffic",
+    "z_troublemaker",
+    "z_formula_ai",
+    "z_sage_warrior",
+    "eagleeye_observer",
+    "super_ghost",
+    "project_validators",
+    "future_autonomous_agents"
+  ],
+  "fourteen_drp_laws": [
+    "Confirm real repo root before action.",
+    "Never treat .cursor/projects as build root.",
+    "Read evidence before recommending.",
+    "Preserve project identity boundaries.",
+    "Shared pattern does not mean shared entitlement.",
+    "Classify RED / BLUE / YELLOW / GREEN before action.",
+    "RED blocks movement.",
+    "BLUE requires AMK/human.",
+    "YELLOW stays quiet unless repeated/escalated.",
+    "GREEN does not deploy.",
+    "No secrets, billing, deploy, provider calls, bridges, child-data, voice/camera/GPS without charter.",
+    "Use dry-run/check/report first.",
+    "Keep rollback notes.",
+    "AMK-Goku owns sacred moves."
+  ],
+  "signal_rules": {
+    "RED": "Immediate hold. No lane widening or execution. Fix evidence first.",
+    "BLUE": "Human AMK decision required before any movement.",
+    "YELLOW": "Advisory caution. Escalate only when repeated or connected to RED/BLUE.",
+    "GREEN": "Evidence pass for governance posture only. Never implies deploy.",
+    "GOLD": "Sealed doctrine baseline. Still non-execution without lane charter.",
+    "PURPLE": "Symbolic or future-gated concept, not active runtime authority."
+  },
+  "autonomy_boundaries": {
+    "allowed_default": [
+      "observe_reports",
+      "classify_signals",
+      "write_readonly_reports",
+      "suggest_smallest_reversible_step",
+      "emit_rollback_note"
+    ],
+    "requires_amk_gate": [
+      "deploy",
+      "billing_or_pricing_change",
+      "provider_or_secret_use",
+      "bridge_execution",
+      "public_launch_claim",
+      "cross_project_entitlement_mutation"
+    ]
+  },
+  "forbidden_actions": [
+    "hidden_execution",
+    "silent_deploy",
+    "silent_secret_access",
+    "billing_or_pricing_change_without_charter",
+    "child_data_collection_without_charter",
+    "cross_project_entitlement_drift",
+    "fake_quantum_claims_as_physics",
+    "treat_symbolic_architecture_as_runtime_proof",
+    "auto_fix_without_charter"
+  ],
+  "amk_required_actions": [
+    "sacred_lane_open",
+    "deploy_approval",
+    "billing_and_pricing_changes",
+    "public_release_approval",
+    "bridge_or_provider_enablement",
+    "identity_and_child_safety_sensitive_changes"
+  ],
+  "related_docs": [
+    "docs/Z_SWARM_14DRP_UNIVERSAL_AGENT_LAW.md",
+    "docs/Z_FORMULA_SWARM_CO_DESIGN_ENGINE.md",
+    "docs/Z_IDE_14DRP_AGENT_PROTOCOL.md",
+    "docs/VS_FALLBACK_1_VSCODE_OPERATING_MODE.md",
+    "docs/AMK_AUTONOMOUS_APPROVAL_LADDER.md",
+    "docs/Z_TRAFFIC_MINIBOTS.md"
+  ],
+  "related_reports": [
+    "data/reports/z_swarm_14drp_report.json",
+    "data/reports/z_swarm_14drp_report.md",
+    "data/reports/z_traffic_minibots_status.json"
+  ]
+}

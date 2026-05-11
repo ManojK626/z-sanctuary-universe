@@ -1,0 +1,96 @@
+{
+  "schema": "z.cadence.cycle.registry.v1",
+  "registry_name": "Z-CADENCE Real Cycle Registry",
+  "mode": "read_only_cadence_runner",
+  "cycles": [
+    {
+      "id": "logical_brains_hub",
+      "description": "Read-only cadence cycle for Logical Brains hub monitoring.",
+      "allowed_commands": [
+        "npm run z:logical-brains:hub",
+        "npm run z:numen:hub",
+        "npm run z:mod:dist",
+        "npm run z:sec:triplecheck",
+        "npm run z:ide:fusion",
+        "npm run verify:md",
+        "npm run z:traffic",
+        "npm run z:car2"
+      ],
+      "required_commands": [
+        "npm run z:logical-brains:hub",
+        "npm run z:numen:hub",
+        "npm run z:mod:dist",
+        "npm run z:sec:triplecheck",
+        "npm run z:ide:fusion",
+        "npm run verify:md",
+        "npm run z:traffic",
+        "npm run z:car2"
+      ]
+    }
+  ],
+  "allowed_commands": [
+    "npm run z:logical-brains:hub",
+    "npm run z:numen:hub",
+    "npm run z:mod:dist",
+    "npm run z:sec:triplecheck",
+    "npm run z:ide:fusion",
+    "npm run verify:md",
+    "npm run z:traffic",
+    "npm run z:car2"
+  ],
+  "forbidden_commands": [
+    "deploy",
+    "start",
+    "dev",
+    "preview",
+    "cloudflare",
+    "wrangler",
+    "secrets",
+    "provider",
+    "billing",
+    "publish",
+    "release",
+    "migrate",
+    "seed",
+    "auth",
+    "bridge",
+    "auto-launch"
+  ],
+  "readiness_rules": {
+    "green_rule": "All required checks pass.",
+    "yellow_rule": "Safe advisory or optional evidence gap exists while required checks pass.",
+    "blue_rule": "AMK decision required.",
+    "red_rule": "Any required check fails or forbidden lane appears.",
+    "stable_green_rule": "If current cycle GREEN and previous cycle GREEN, set READY_FOR_HUB_2_1_MONTHLY_REVIEW_TEMPLATE.",
+    "forbidden_readiness_outputs": [
+      "ready_to_deploy",
+      "ready_for_public_release",
+      "ready_for_runtime_bridge"
+    ]
+  },
+  "notification_rules": {
+    "allow_candidates_only_for": [
+      "BLOCKED_RED",
+      "AMK_DECISION_REQUIRED",
+      "READY_FOR_HUB_2_1_MONTHLY_REVIEW_TEMPLATE"
+    ],
+    "no_notification_for_single_green": true
+  },
+  "dashboard_rules": {
+    "indicator_id": "z_logical_brains_cadence_cycle",
+    "go_no_go": "MONITORING_CADENCE_ONLY",
+    "recommended_next_action": "Run cadence; if two consecutive GREEN cycles, draft HUB-2.1 review from evidence."
+  },
+  "related_docs": [
+    "docs/Z_CADENCE_REAL_CYCLE_RUNNER.md",
+    "docs/Z_LOGICAL_BRAINS_MONITORING_CADENCE.md",
+    "docs/Z_LOGICAL_BRAINS_HUB_REFERENCE.md",
+    "docs/Z_NUMEN_HUB_REFERENCE.md",
+    "docs/Z_MOD_DIST_MODULE_DISTRIBUTOR.md",
+    "docs/PHASE_Z_CADENCE_1_GREEN_RECEIPT.md"
+  ],
+  "related_reports": [
+    "data/reports/z_cadence_cycle_report.json",
+    "data/reports/z_cadence_cycle_report.md"
+  ]
+}

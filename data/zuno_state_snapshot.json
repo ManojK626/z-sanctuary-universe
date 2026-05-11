@@ -1,0 +1,34 @@
+{
+  "schema": "zuno_state_snapshot_v1",
+  "generated_at": "2026-05-03T15:40:27.708Z",
+  "source_file": "docs/z_zuno_technology_snapshot.md",
+  "identity": {
+    "Snapshot ID": "ZUNO_SNAPSHOT_2026_05_03",
+    "Source": "Hub root + `z-questra` workspace",
+    "Integrity": "Verified via `verify:md`, `z:car2`, `z:traffic`, `z:cross-project:sync` (at snapshot time)",
+    "Posture": "Evidence-first / local-first / no runtime bridge",
+    "Autonomy level": "L0–L2 only (observe / report / gated hygiene — no execution daemon)"
+  },
+  "hub_gates": {
+    "Markdown": "GREEN (MD-HYGIENE-1 complete)",
+    "Drift detection": "Z-CAR² active (read-only)",
+    "Cross-project sync": "Validated (`z:cross-project:sync`)",
+    "Traffic monitoring": "ZTR-1 active (`z:traffic`)",
+    "Autonomy doctrine": "ZAG-1 (no daemon)"
+  },
+  "executive_summary": "The ecosystem is in a **disciplined, evidence-first posture**:\n\n- Markdown and metadata gates are green.\n- Cross-project JSON is validated.\n- Autonomy is **documented**, not daemonized.\n- Music engine is **explainable** and **consent-first**.\n- Magical UI layers are **free / local** only.\n\n### Explicit constraints\n\n- No runtime bridges from these slices.\n- No Firestore or streaming SDK in Z-SME paths described here.\n- No autoplay by default for audio.\n- No silent personalization in the shipped patterns.",
+  "magical_canvas": "- **ZMC-1** PlayKit present (`shared/magical-canvas/`).\n- Registered in capability and entitlement registries.\n- **Rule:** free visual layer only — no bridge or monetization inheritance from metadata alone.",
+  "z_questra": "- **Version:** 0.2.11\n- **Tests:** 76 passing (Vitest, at snapshot time)\n- **Posture:** local-only; no runtime Z-Sanctuary bridge in this build",
+  "z_sme": "### v1 core\n\n- Mood model, playlist engine, explainability contract.\n- Observer-based event logging (append-only, this device).\n- Firestore = **design-only** (no SDK).\n\n### v1.1 audio\n\n- Consent-first (**default OFF**).\n- Same-origin URLs only when attached (`audioSources.js`).\n- No autoplay; `preload=\"none\"` on `<audio>` when used.\n\n### v1.2 (planned only)\n\n- Same-origin directory `z-questra/public/audio/` — see `z_music_engine/PHASE_2_8_Z_SME_SAME_ORIGIN_AUDIO_RECEIPT.md`.\n- **Rule:** if file missing → `audioUrl` stays empty; no guessed paths.",
+  "verification_rhythm": "### Hub workspace\n\n```bash\nnpm run verify:md\nnpm run z:car2\nnpm run z:traffic\nnpm run z:cross-project:sync\n```\n\n### Z-QUESTRA package\n\n```bash\ncd z-questra && npm test\n```",
+  "explicit_non_claims": "- No production deployment added by these slices.\n- No billing integration.\n- No provider execution.\n- No streaming or CDN coupling in Z-SME.\n- No autonomy executor or silent self-merge.\n- No guaranteed audio playback without assets and consent.",
+  "suggested_next_lanes": "1. Add real MP3s per Phase 2.8 (same-origin only).\n2. Optional ZAG-2 manual read-only loop script.\n3. Read-only SME hub mirror (charter-gated if live).\n4. Continue traffic monitoring after material edits.",
+  "inference_hints": "- **Planned** features are **not** runtime features until shipped with paths and tests.\n- **Z-SME audio** is UI-ready but **data-empty** unless `audioUrl` is non-empty and the file exists.\n- **Autonomy** in hub policy is **L0–L2 posture** in documentation — not autonomous execution.\n- **Cross-project** rows are **metadata-only** — no live bridge implied.\n- Treat the system as **controlled**, not autonomous.",
+  "core_system_truth": "### What Z-Sanctuary is\n\n- Governance-first\n- Evidence-first\n- Non-extractive\n- Consent-driven (where user-facing media applies)\n- Modular and auditable\n\n### What Z-Sanctuary is not\n\n- AGI or unconstrained autonomy\n- A self-modifying runtime without human lanes\n- A provider-driven platform by default",
+  "truth_alignment_ref": {
+    "present": true,
+    "monster_registry_relative": "data/z_sanctuary_monster_project_registry.json",
+    "monster_required_count": 26,
+    "monster_required_ids_sha256": "b2afc57d300c79d73787b1bcad24721a2c97f81c40daa4da575361c20de539bf"
+  }
+}

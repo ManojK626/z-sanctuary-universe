@@ -1,0 +1,25 @@
+{
+  "schema_version": 1,
+  "generated_at": "2026-04-26T12:14:00.560Z",
+  "name": "z-mini-bot-patterns",
+  "advisory": true,
+  "drp_note": "Pattern summary from local decision history. Does not run fixes or change priorities outside bot:decision (which reads this file).",
+  "log_file": "data/logs/z_decision_history.jsonl",
+  "total_log_entries": 2,
+  "total_patterns": 1,
+  "patterns": [
+    {
+      "id": "investigate_missing_project",
+      "total_events": 2,
+      "reopen_count": 0,
+      "pattern_severity": "LOW",
+      "last_event_at": "2026-04-25T22:15:04.003Z"
+    }
+  ],
+  "spi_context": {
+    "structural_phase": "optimized",
+    "evolution_phase": "baseline",
+    "drift_detected": false,
+    "structural_patterns_score": 100
+  }
+}

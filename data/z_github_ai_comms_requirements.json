@@ -1,0 +1,84 @@
+{
+  "ZFormat": "v1",
+  "ZUpdatedAt": "2026-04-27T00:00:00.000Z",
+  "title": "GitHub + AI precautions bound to Z-Sanctuary communications flows",
+  "description": "Canonical requirement rows for tooling, operators, and future automation. Run npm run comms:github-ai to emit data/reports/z_github_ai_comms_manifest.json. Review quarterly or when GitHub/Copilot/Spark/Models/Actions change materially.",
+  "authority_chain": [
+    "docs/Z-HIERARCHY-CHIEF-AND-OBSERVER-VIEW.md",
+    "docs/Z-COMPLETIONS-TEST-AND-COMMUNICATIONS-FLOW.md",
+    "rules/Z_SANCTUARY_SECURITY_POLICY.md"
+  ],
+  "instructional_docs": [
+    {
+      "id": "github-ai-comms-master",
+      "path": "docs/Z-GITHUB-AI-COMMS-PRECAUTIONS.md",
+      "role": "Human + AI readable precautions and evolution notes"
+    },
+    {
+      "id": "ecosystem-github",
+      "path": "docs/Z-ECOSYSTEM-GITHUB-INTEGRATION.md",
+      "role": "Account, email, Git, Cursor alignment"
+    }
+  ],
+  "data_sources": [
+    {
+      "id": "ecosystem_identity",
+      "path": "data/z_ecosystem_github_identity.json",
+      "role": "Canonical GitHub login and email for ecosystem"
+    },
+    {
+      "id": "pc_root_projects",
+      "path": "data/z_pc_root_projects.json",
+      "role": "Project paths and dashboard URLs for comms surfaces"
+    },
+    {
+      "id": "pc_root_extras_sink",
+      "path": "docs/Z-PC-ROOT-EXTRAS-AND-TOOLS-SINK.md",
+      "role": "Canonical Extras & Tools folder under pc_root — ecosystem + Z-FPSMC awareness; hub Folder Manager does not apply there"
+    },
+    {
+      "id": "module_manifest",
+      "path": "data/z_module_manifest.json",
+      "role": "Registered modules — avoid duplicating work already manifested"
+    }
+  ],
+  "precaution_themes": [
+    {
+      "id": "secrets",
+      "severity": "block",
+      "summary": "Never commit PATs, SSH private keys, OAuth tokens, or vault payloads to any repo or AI chat.",
+      "comms_binding": "Z-Bridge logs and guardian reports must never echo secrets; CI logs must mask secrets."
+    },
+    {
+      "id": "third_party_ai",
+      "severity": "high",
+      "summary": "GitHub Copilot, Spark, and web AI are assistive — hub truth stays in PC/NAS, manifests, and approved docs.",
+      "comms_binding": "State reports and registry remain authority; external AI output is provisional until reviewed."
+    },
+    {
+      "id": "identity_consistency",
+      "severity": "medium",
+      "summary": "Use one verified GitHub identity and email per docs; match git config on each machine.",
+      "comms_binding": "data/z_ecosystem_github_identity.json + AGENTS.md for any AI touching GitHub context."
+    },
+    {
+      "id": "ci_actions",
+      "severity": "high",
+      "summary": "Workflows use repo Secrets only; pin actions versions where practical; review new permissions.",
+      "comms_binding": "verify:ci and release gate remain separate from hosting 'production' semantics."
+    },
+    {
+      "id": "future_platform_changes",
+      "severity": "medium",
+      "summary": "When GitHub ships new AI or API features, update this JSON + master MD and re-run comms:github-ai.",
+      "comms_binding": "Manifest report timestamps prove propagation through the comms-flow toolchain."
+    }
+  ],
+  "report_outputs": [
+    {
+      "path": "data/reports/z_github_ai_comms_manifest.json",
+      "producer": "scripts/z_github_ai_comms_sync.mjs",
+      "consumers": ["operators", "future dashboard panels", "Z-Bridge observability"]
+    }
+  ]
+}

@@ -1,0 +1,46 @@
+:root {
+  --lumina-bg-0: #05070d;
+  --lumina-bg-1: #0a0f1f;
+  --lumina-emerald: #00ffcc;
+  --lumina-blue: #00ccff;
+  --lumina-purple: #7a5cff;
+  --lumina-gold: #ffd700;
+  --lumina-text: #e9f4ff;
+  --lumina-text-dim: #9eb7cc;
+  --lumina-glass: rgba(255, 255, 255, 0.05);
+  --lumina-glass-border: rgba(255, 255, 255, 0.12);
+  --lumina-radius: 16px;
+  --lumina-panel-blur: 16px;
+}
+
+body.z-dashboard-organism.lumina-theme {
+  color: var(--lumina-text);
+  background:
+    radial-gradient(circle at 82% -10%, rgba(0, 255, 204, 0.14), transparent 38%),
+    radial-gradient(circle at 14% 2%, rgba(122, 92, 255, 0.13), transparent 42%),
+    linear-gradient(180deg, var(--lumina-bg-1), var(--lumina-bg-0));
+}
+
+body.z-dashboard-organism.lumina-theme::before {
+  content: '';
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  background:
+    radial-gradient(
+      460px circle at var(--lumina-cursor-x, 50%) var(--lumina-cursor-y, 35%),
+      rgba(0, 204, 255, 0.08),
+      transparent 62%
+    );
+  z-index: 1;
+}
+
+body.z-dashboard-organism.lumina-theme #zLivingPulseWrap {
+  filter: saturate(1.08) brightness(1.04);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  body.z-dashboard-organism.lumina-theme::before {
+    display: none;
+  }
+}

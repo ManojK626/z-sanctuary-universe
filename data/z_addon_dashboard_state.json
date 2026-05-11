@@ -1,0 +1,63 @@
+{
+  "schema_version": 1,
+  "title": "Z-Add On Dashboard",
+  "subtitle": "Staging for new flows, upgrades, and cross-project work before fusion to SKK and RKPK",
+  "updated_at": "2026-04-27T10:57:00.000Z",
+  "fusion_policy": "Promote to the main HODP only when: Master Register + z_module_manifest entry, structure verify pass, and operator or Zuno checkpoint as you define.",
+  "layers": {
+    "governance": "SPI, QOSMEI, predictive, validation, MirrorSoul human loop",
+    "cross_project": "PC-root registry, EAII, sibling repos (pointers only)"
+  },
+  "items": [
+    {
+      "id": "phase5-predictive",
+      "title": "Predictive intelligence (Phase 5)",
+      "summary": "z_predictive_intelligence.json, PR rail, second QOSMEI pass in Whale Bus.",
+      "status": "ready",
+      "layer": "governance",
+      "tags": ["PR", "QOSMEI", "advisory"],
+      "href": "/data/reports/z_predictive_intelligence.json",
+      "main_hodp": "Mini-bot rail + Zuno; optional future panel"
+    },
+    {
+      "id": "phase55-validation",
+      "title": "Prediction validation (Phase 5.5)",
+      "summary": "z_prediction_validation.json, PV rail, human-equivalent via MirrorSoul validate.",
+      "status": "ready",
+      "layer": "governance",
+      "tags": ["PV", "learning"],
+      "href": "/data/reports/z_prediction_validation.json",
+      "main_hodp": "Rail + learning cycle"
+    },
+    {
+      "id": "mirrorsoul-human-validate",
+      "title": "MirrorSoul human validation",
+      "summary": "POST /api/mirrorsoul/validate with user_feedback; appends to shared validation history for learning.",
+      "status": "test",
+      "layer": "governance",
+      "tags": ["MirrorSoul", "API"],
+      "href": null,
+      "main_hodp": "UI prompts when you add them; API live"
+    },
+    {
+      "id": "z-addon-surface",
+      "title": "This dashboard (Z-Add On)",
+      "summary": "Data-driven staging surface; edit this JSON to track modules and promotion.",
+      "status": "draft",
+      "layer": "meta",
+      "tags": ["HODP", "staging"],
+      "href": "/dashboard/Html/z-addon-dashboard.html",
+      "main_hodp": "Link in Control Centre; not yet on top rail by default"
+    },
+    {
+      "id": "z-heartpulse-engine-v1",
+      "title": "Z-HeartPulse Engine v1.0 (PREPARE ONLY)",
+      "summary": "Reflection and storytelling lane with strict dignity/consent boundaries. Non-scoring narrative states only.",
+      "status": "test",
+      "layer": "governance",
+      "tags": ["HeartPulse", "reflection", "prepare-only"],
+      "href": "/dashboard/panels/z_heartpulse_panel.html",
+      "main_hodp": "Staging only via Z-Add On; not on main HODP rail"
+    }
+  ]
+}

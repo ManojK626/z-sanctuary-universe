@@ -1,0 +1,17 @@
+{
+  "generated_at": "2026-02-14T00:00:00Z",
+  "requests": [
+    {
+      "url": "https://owasp.org/www-project-top-ten/",
+      "topic": "security-baseline",
+      "priority": "P2",
+      "requested_by": "Zuno"
+    },
+    {
+      "url": "https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP",
+      "topic": "frontend-hardening",
+      "priority": "P2",
+      "requested_by": "Zuno"
+    }
+  ]
+}

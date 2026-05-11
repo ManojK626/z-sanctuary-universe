@@ -1,0 +1,83 @@
+{
+  "schema_version": "1.0",
+  "generated_at": "2026-04-23T17:17:57.366Z",
+  "governance_note": "Advisory pre-alert brief only — Z-PAPAO does not execute actions, crawl the web, or read vault payloads.",
+  "sources_used": [
+    "data/reports/z_communication_health.json",
+    "data/reports/z_system_coherence.json",
+    "data/reports/z_ai_consistency_alerts.json",
+    "data/reports/z_guardian_report.json",
+    "data/z_visual_automation_boundary.json",
+    "data/z_pc_root_projects.json",
+    "data/reports/z_ai_signal_health.json",
+    "data/reports/z_system_health.json",
+    "data/reports/z_adaptive_coherence.json"
+  ],
+  "alerts": [
+    {
+      "severity": "medium",
+      "code": "STRUCTURAL_MODULE_WARN",
+      "message": "Structural health: 0 critical, 2 warning module(s) — inspect z_system_health before heavy deploy.",
+      "citation": "data/reports/z_system_health.json"
+    },
+    {
+      "severity": "high",
+      "code": "COMMS_DEGRADED",
+      "message": "Communication flow is degraded or needs attention — refresh comms manifests and AAFRTC before high-risk work.",
+      "citation": "data/reports/z_communication_health.json"
+    },
+    {
+      "severity": "high",
+      "code": "COHERENCE_MISALIGNED",
+      "message": "System coherence is misaligned or low — review contradictions in coherence report before promoting changes.",
+      "citation": "data/reports/z_system_coherence.json"
+    },
+    {
+      "severity": "medium",
+      "code": "CONSISTENCY_WATCH",
+      "message": "Consistency alerts present — resolve or consciously accept before large refactors.",
+      "citation": "data/reports/z_ai_consistency_alerts.json"
+    },
+    {
+      "severity": "medium",
+      "code": "SIGNAL_LOW",
+      "message": "Activity signal is low — outcomes and learning layers may be underfed.",
+      "citation": "data/reports/z_ai_signal_health.json"
+    },
+    {
+      "severity": "high",
+      "code": "ADAPTIVE_RISK_HIGH",
+      "message": "Adaptive coherence predicts elevated risk — follow top recommended actions in that report.",
+      "citation": "data/reports/z_adaptive_coherence.json"
+    }
+  ],
+  "precautions": [
+    {
+      "text": "Do not automate or bypass Cursor approval UIs (Allowlist, Run, Approve terminal) — use tasks, dashboards, and slash rituals per hub boundary.",
+      "citation": "data/z_visual_automation_boundary.json",
+      "doc": "docs/Z-AI-VISUAL-OVERLAY-CURSOR-APPROVALS-RESEARCH.md"
+    },
+    {
+      "text": "When unsure about authority or repo ownership, read Hierarchy Chief before cross-project edits.",
+      "citation": "docs/Z-HIERARCHY-CHIEF-AND-OBSERVER-VIEW.md"
+    },
+    {
+      "text": "Run npm run ecosystem:status-emit after registry edits to refresh on-disk path visibility.",
+      "citation": "data/z_pc_root_projects.json"
+    },
+    {
+      "text": "Run Phase COMMS from Z-NEXT roadmap: comms:github-ai, comms:cloudflare-ai, z_aafrtc_resolve.mjs.",
+      "citation": "docs/Z-NEXT-ROADMAP-CURSOR-AUTO.md"
+    },
+    {
+      "text": "Prefer Playbook A (FEED) and a fresh garage scan after adding real learning events.",
+      "citation": "docs/Z-NEXT-ROADMAP-CURSOR-AUTO.md"
+    }
+  ],
+  "meta": {
+    "json_out": "C:\\Cursor Projects Organiser\\ZSanctuary_Universe\\data\\reports\\z_papao_precaution_brief.json",
+    "md_out": "C:\\Cursor Projects Organiser\\ZSanctuary_Universe\\data\\reports\\z_papao_precaution_brief.md",
+    "system_health_status": "stable",
+    "visual_boundary_title": "Visual automation and Cursor approval boundaries (14 DRP aligned)"
+  }
+}

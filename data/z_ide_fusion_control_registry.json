@@ -1,0 +1,176 @@
+{
+  "schema": "z_ide_fusion_control_registry_v1",
+  "registry_name": "Z-IDE-FUSION Shared Workflow Control",
+  "mode": "read_only_coordination",
+  "canonical_repo_root": "C:/Cursor Projects Organiser/Z_Sanctuary_Universe",
+  "supported_ides": ["cursor_ide", "vscode_copilot", "vscode_manual", "future_external_agent"],
+  "session_rules": [
+    "confirm real repo root before action",
+    "read latest reports before work",
+    "write handoff after work",
+    "do not use .cursor/projects as build root",
+    "do not create package.json in archive/cache folders",
+    "do not edit same high-risk files from two IDEs without handoff",
+    "no deploy/secrets/billing/provider/bridge/auto-launch"
+  ],
+  "handoff_rules": {
+    "required_fields": [
+      "timestamp",
+      "session_id",
+      "ide",
+      "summary",
+      "files_touched",
+      "commands_run",
+      "signal_result",
+      "rollback_note",
+      "next_recommended_lane"
+    ],
+    "journal_path": "data/ide-fusion/handoff_journal.jsonl",
+    "stale_handoff_hours": 24
+  },
+  "shadow_workspace_map": [
+    {
+      "workspace_id": "main_super_saiyan_workspace",
+      "assigned_project": "AMK cockpit overview",
+      "workspace_file_or_profile": "workspaces/AMK-Goku-Super-Saiyan-Main.code-workspace",
+      "allowed_actions": ["read_reports", "review_docs", "run_l1_evidence_checks"],
+      "forbidden_actions": ["deploy", "bridge_exec", "billing_change", "provider_call"],
+      "required_preflight_reports": [
+        "data/reports/z_ide_fusion_report.md",
+        "data/reports/z_traffic_minibots_status.md",
+        "data/reports/amk_workspace_doorway_status.md"
+      ],
+      "indicator_ref": "z_ide_fusion_control",
+      "handoff_required": true,
+      "amk_gate_level": "L1",
+      "related_docs": ["docs/Z_IDE_FUSION_WORKFLOW_CONTROL.md", "docs/AMK_CURSOR_WORKSPACE_STRATEGY.md"],
+      "related_reports": ["data/reports/z_ide_fusion_report.json"]
+    },
+    {
+      "workspace_id": "franed_shadow_workspace",
+      "assigned_project": "Franed AI",
+      "workspace_file_or_profile": "profile:franed",
+      "allowed_actions": ["docs_edits", "ui_edits", "read_only_checks"],
+      "forbidden_actions": ["deploy", "secrets_write", "provider_call", "auto_launch"],
+      "required_preflight_reports": ["data/reports/z_ide_fusion_report.md", "data/reports/z_traffic_minibots_status.md"],
+      "indicator_ref": "z_ide_fusion_control",
+      "handoff_required": true,
+      "amk_gate_level": "L2",
+      "related_docs": ["docs/Z_IDE_FUSION_WORKFLOW_CONTROL.md"],
+      "related_reports": ["data/reports/z_ide_fusion_report.json"]
+    },
+    {
+      "workspace_id": "lumina_shadow_workspace",
+      "assigned_project": "Z-Saiyan Lumina",
+      "workspace_file_or_profile": "profile:lumina",
+      "allowed_actions": ["docs_edits", "review_only_validation"],
+      "forbidden_actions": ["deploy", "provider_call", "billing_change", "bridge_exec"],
+      "required_preflight_reports": ["data/reports/z_ide_fusion_report.md", "data/reports/z_traffic_minibots_status.md"],
+      "indicator_ref": "z_ide_fusion_control",
+      "handoff_required": true,
+      "amk_gate_level": "L2",
+      "related_docs": ["docs/Z_IDE_FUSION_WORKFLOW_CONTROL.md"],
+      "related_reports": ["data/reports/z_ide_fusion_report.json"]
+    },
+    {
+      "workspace_id": "creative_shadow_workspace",
+      "assigned_project": "Z-OMNAI creative lanes",
+      "workspace_file_or_profile": "profile:creative",
+      "allowed_actions": ["creative_registry_edits", "report_generation"],
+      "forbidden_actions": ["media_provider_call", "public_release", "deploy"],
+      "required_preflight_reports": ["data/reports/z_ide_fusion_report.md", "data/reports/z_amk_gtai_strategy_report.md"],
+      "indicator_ref": "z_ide_fusion_control",
+      "handoff_required": true,
+      "amk_gate_level": "L3",
+      "related_docs": ["docs/Z_IDE_FUSION_WORKFLOW_CONTROL.md", "docs/Z_FORMULA_SWARM_CO_DESIGN_ENGINE.md"],
+      "related_reports": ["data/reports/z_ide_fusion_report.json", "data/reports/z_amk_gtai_strategy_report.json"]
+    },
+    {
+      "workspace_id": "z_lab_shadow_workspace",
+      "assigned_project": "Z-Lab experiments",
+      "workspace_file_or_profile": "workspaces/AMK-Goku-Z-Lab.code-workspace",
+      "allowed_actions": ["experiments_docs", "isolated_checks", "non_runtime_validation"],
+      "forbidden_actions": ["deploy", "auto_launch", "bridge_exec"],
+      "required_preflight_reports": ["data/reports/z_ide_fusion_report.md"],
+      "indicator_ref": "z_ide_fusion_control",
+      "handoff_required": true,
+      "amk_gate_level": "L2",
+      "related_docs": ["docs/Z_IDE_FUSION_WORKFLOW_CONTROL.md"],
+      "related_reports": ["data/reports/z_ide_fusion_report.json"]
+    },
+    {
+      "workspace_id": "api_ssws_shadow_workspace",
+      "assigned_project": "API + SSWS governance lanes",
+      "workspace_file_or_profile": "profile:api_ssws",
+      "allowed_actions": ["registry_docs", "report_validation"],
+      "forbidden_actions": ["gateway_deploy", "auto_launch", "provider_bind"],
+      "required_preflight_reports": [
+        "data/reports/z_ide_fusion_report.md",
+        "data/reports/z_api_spine_report.md",
+        "data/reports/z_ssws_launch_requirements_report.md"
+      ],
+      "indicator_ref": "z_ide_fusion_control",
+      "handoff_required": true,
+      "amk_gate_level": "L3",
+      "related_docs": ["docs/Z_IDE_FUSION_WORKFLOW_CONTROL.md", "docs/Z_SSWS_WORKSPACE_SPINE.md"],
+      "related_reports": ["data/reports/z_ide_fusion_report.json", "data/reports/z_ssws_launch_requirements_report.json"]
+    }
+  ],
+  "signal_rules": {
+    "GREEN": "IDE sessions aligned; continue normal work with handoff discipline.",
+    "YELLOW": "Advisory gap such as missing handoff or stale optional report.",
+    "BLUE": "AMK decision required before movement.",
+    "RED": "Wrong root, forbidden action, or unsafe high-risk edit conflict.",
+    "GOLD": "Sealed baseline; hold posture.",
+    "PURPLE": "Future-gated automation; do not run."
+  },
+  "red_stop_conditions": [
+    "wrong repo root",
+    ".cursor/projects used as build root",
+    "package.json action in archive/cache path",
+    "two IDEs editing same high-risk file without handoff",
+    "deploy/secret/billing/provider/bridge action attempted",
+    "no rollback note in handoff",
+    "public/children/privacy lane opened without AMK"
+  ],
+  "blue_amk_decision_conditions": [
+    "deploy decision",
+    "cloudflare decision",
+    "secrets or API keys",
+    "provider calls",
+    "auto-launch approval",
+    "billing/pricing",
+    "public release",
+    "children/user-data/voice/camera/GPS"
+  ],
+  "forbidden_actions": [
+    "runtime_ide_remote_control",
+    "backend_bridge_execution",
+    "deployment",
+    "billing_mutation",
+    "secret_write",
+    "provider_calls",
+    "auto_merge",
+    "auto_launch"
+  ],
+  "required_checks": [
+    "data/reports/z_ide_fusion_report.md",
+    "data/reports/z_traffic_minibots_status.md",
+    "data/reports/amk_workspace_doorway_status.md",
+    "data/reports/amk_cursor_workspace_profiles_report.md",
+    "docs/VS_FALLBACK_1_VSCODE_OPERATING_MODE.md",
+    "docs/Z_SWARM_14DRP_UNIVERSAL_AGENT_LAW.md"
+  ],
+  "related_docs": [
+    "docs/Z_IDE_FUSION_WORKFLOW_CONTROL.md",
+    "docs/PHASE_Z_IDE_FUSION_1_GREEN_RECEIPT.md",
+    "docs/VS_FALLBACK_1_VSCODE_OPERATING_MODE.md",
+    "docs/Z_SWARM_14DRP_UNIVERSAL_AGENT_LAW.md",
+    "docs/AMK_PROJECT_INDICATORS_AND_GO_NO_GO.md"
+  ],
+  "related_reports": [
+    "data/reports/z_ide_fusion_report.json",
+    "data/reports/z_ide_fusion_report.md",
+    "data/reports/z_traffic_minibots_status.json"
+  ]
+}

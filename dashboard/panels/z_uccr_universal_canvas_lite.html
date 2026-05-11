@@ -1,0 +1,219 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Z-UCCR · Universal Canvas Realm (Lite)</title>
+    <style>
+      :root {
+        --bg: #070a12;
+        --surface: rgba(255, 255, 255, 0.055);
+        --border: rgba(140, 160, 220, 0.22);
+        --text: #e6eaf4;
+        --muted: #8b95b0;
+        --banner-bg: rgba(88, 120, 200, 0.12);
+        --banner-border: rgba(120, 150, 255, 0.42);
+        --section-title: #b8c4e8;
+      }
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        margin: 0;
+        padding: 0.75rem 0.85rem 1rem;
+        font-family: 'Segoe UI', system-ui, sans-serif;
+        background:
+          radial-gradient(ellipse 120% 80% at 50% -20%, rgba(60, 80, 140, 0.35), transparent 55%),
+          radial-gradient(ellipse 80% 50% at 100% 100%, rgba(40, 50, 90, 0.25), transparent 45%),
+          linear-gradient(180deg, #0c1020 0%, var(--bg) 100%);
+        color: var(--text);
+        font-size: 14px;
+        line-height: 1.48;
+      }
+      @media (prefers-reduced-motion: reduce) {
+        * {
+          transition: none !important;
+          animation: none !important;
+        }
+      }
+      h1 {
+        margin: 0 0 0.2rem;
+        font-size: 1.08rem;
+        font-weight: 700;
+        letter-spacing: 0.02em;
+      }
+      .subtitle {
+        margin: 0 0 0.55rem;
+        font-size: 0.82rem;
+        color: var(--muted);
+      }
+      .banner {
+        border-radius: 10px;
+        border: 2px solid var(--banner-border);
+        background: var(--banner-bg);
+        padding: 0.5rem 0.6rem;
+        margin-bottom: 0.65rem;
+        font-weight: 650;
+        letter-spacing: 0.06em;
+        font-size: 0.72rem;
+        color: var(--section-title);
+      }
+      .banner-sub {
+        font-weight: 400;
+        font-size: 0.74rem;
+        color: var(--muted);
+        margin-top: 0.35rem;
+        letter-spacing: 0.02em;
+      }
+      section {
+        border: 1px solid var(--border);
+        border-radius: 10px;
+        padding: 0.55rem 0.6rem;
+        margin-bottom: 0.55rem;
+        background: var(--surface);
+      }
+      h2 {
+        margin: 0 0 0.35rem;
+        font-size: 0.78rem;
+        font-weight: 650;
+        color: var(--section-title);
+        text-transform: uppercase;
+        letter-spacing: 0.05em;
+      }
+      p,
+      li {
+        margin: 0.25rem 0;
+        font-size: 0.82rem;
+      }
+      ul {
+        margin: 0.2rem 0 0;
+        padding-left: 1.1rem;
+      }
+      .doc-links {
+        margin-top: 0.65rem;
+        padding-top: 0.55rem;
+        border-top: 1px dashed var(--border);
+      }
+      .doc-links a {
+        display: block;
+        margin: 0.35rem 0;
+        font-size: 0.8rem;
+        color: #a8c4ff;
+        text-decoration: none;
+        border-radius: 6px;
+        padding: 0.2rem 0.15rem;
+      }
+      .doc-links a:hover {
+        text-decoration: underline;
+      }
+      .doc-links a:focus-visible {
+        outline: 2px solid rgba(120, 180, 255, 0.85);
+        outline-offset: 2px;
+      }
+      .roadmap {
+        list-style: none;
+        padding-left: 0;
+      }
+      .roadmap li {
+        padding: 0.25rem 0 0.25rem 0.5rem;
+        border-left: 2px solid rgba(120, 150, 255, 0.35);
+        margin-bottom: 0.35rem;
+        font-size: 0.78rem;
+        color: var(--muted);
+      }
+      .roadmap strong {
+        color: var(--text);
+        font-weight: 600;
+      }
+      .footnote {
+        margin-top: 0.65rem;
+        font-size: 0.7rem;
+        color: var(--muted);
+        font-style: italic;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Z-UCCR · Universal Canvas Realm</h1>
+      <p class="subtitle">Doctrine mirror — orientation only</p>
+      <div class="banner" role="status">
+        READ-ONLY / DOCTRINE MIRROR / NO EXECUTION
+        <div class="banner-sub">
+          No registry writes, no agents, no backend calls, no merge or deploy from this pane. Links open documentation only.
+        </div>
+      </div>
+    </header>
+
+    <section aria-labelledby="uccr-what">
+      <h2 id="uccr-what">What it is</h2>
+      <p>
+        A planned <strong>universe map and orientation layer</strong> for the full Z-Sanctuary hub: modules, guardians,
+        reports, safety posture, and future panels—so operators see the forest before touching tools.
+      </p>
+    </section>
+
+    <section aria-labelledby="uccr-not">
+      <h2 id="uccr-not">What it is not</h2>
+      <ul>
+        <li>Not a live control panel with execution power.</li>
+        <li>Not an automation hub or agent swarm launcher.</li>
+        <li>Not a source of data authority (receipts and verifiers remain canonical).</li>
+        <li>Not a path to Sovereign Vault contents.</li>
+      </ul>
+    </section>
+
+    <section aria-labelledby="uccr-cousin">
+      <h2 id="uccr-cousin">Cousin relationship</h2>
+      <p>
+        <strong>XL2 Storm Canvas</strong> (outside this repo) = product workstation for that pilot app.
+        <strong>Z-UCCR</strong> = whole-universe <strong>doctrine realm</strong> for Z-Sanctuary only. Cousins, not merged—no XL2
+        coupling from this panel.
+      </p>
+    </section>
+
+    <section aria-labelledby="uccr-guardian">
+      <h2 id="uccr-guardian">Guardian panels (summary)</h2>
+      <p>
+        Future guardian surfaces are <strong>symbolic and oversight</strong>: posture, STOP signals, audit pointers,
+        compassion reminders. They do not impersonate real people, give medical/legal/financial advice, or override
+        human authority. Detail: <code>docs/universal-canvas/GUARDIAN_PANEL_REQUIREMENTS.md</code> (open from repo).
+      </p>
+    </section>
+
+    <section aria-labelledby="uccr-a11y">
+      <h2 id="uccr-a11y">Accessibility promise</h2>
+      <ul>
+        <li>Mute / no audio by default for any future canvas media.</li>
+        <li>Calm mode and plain focus mode for overwhelm and density.</li>
+        <li>Reduced motion: no required animation to read state.</li>
+        <li>No flashing defaults; readable contrast goals.</li>
+      </ul>
+    </section>
+
+    <section aria-labelledby="uccr-roadmap">
+      <h2 id="uccr-roadmap">Future phases (locked roadmap — doctrine only)</h2>
+      <ul class="roadmap">
+        <li><strong>Z-UCCR-0</strong> — Doctrine only (current baseline).</li>
+        <li><strong>Z-UCCR-1</strong> — Static mock / wireframe.</li>
+        <li><strong>Z-UCCR-2</strong> — Read-only data panels.</li>
+        <li><strong>Z-UCCR-3</strong> — Operator workflow launcher (explicit actions only).</li>
+        <li><strong>Z-UCCR-4</strong> — Guardian / audit visualization.</li>
+        <li><strong>Z-UCCR-5</strong> — Controlled assistant routing.</li>
+        <li><strong>Z-UCCR-6</strong> — Optional public-safe trust view.</li>
+      </ul>
+    </section>
+
+    <nav class="doc-links" aria-label="Doctrine links">
+      <strong style="font-size: 0.76rem; color: var(--section-title)">Open in hub (serve repo root)</strong>
+      <a href="../../docs/universal-canvas/README.md" target="_blank" rel="noopener noreferrer">docs/universal-canvas/README.md</a>
+      <a href="../../docs/universal-canvas/Z_UCCR_CHARTER.md" target="_blank" rel="noopener noreferrer">docs/universal-canvas/Z_UCCR_CHARTER.md</a>
+      <a href="../../PHASE_Z_UCCR_UNIVERSAL_CANVAS_REPORT.md" target="_blank" rel="noopener noreferrer">PHASE_Z_UCCR_UNIVERSAL_CANVAS_REPORT.md</a>
+    </nav>
+
+    <p class="footnote">
+      This Lite panel is a doorway: mirror, map, orientation — not control. Full doctrine lives under
+      <code>docs/universal-canvas/</code>.
+    </p>
+  </body>
+</html>

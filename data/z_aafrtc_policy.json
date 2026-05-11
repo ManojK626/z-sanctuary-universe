@@ -1,0 +1,43 @@
+{
+  "ZFormat": "v1",
+  "ZUpdatedAt": "2026-04-17T00:00:00.000Z",
+  "acronym": "AAFRTC",
+  "title": "Auto-Approved Full Run Test Cursor — overseer-gated IDE pipeline",
+  "meaning_note": "Auto-approve refers to automatic execution of the predefined gate sequence (execution enforcer, folder verify, structure, registry omni, comms sync, etc.) — not waiving Z-OSHA / human release authority. Production deploy and manual_release in data/z_release_control.json remain separate.",
+  "authority": [
+    "docs/Z-HIERARCHY-CHIEF-AND-OBSERVER-VIEW.md",
+    "docs/Z-COMPLETIONS-TEST-AND-COMMUNICATIONS-FLOW.md",
+    "data/z_release_control.json"
+  ],
+  "hub_only": {
+    "package_name": "z-sanctuary-universe",
+    "registry_file": "data/z_pc_root_projects.json",
+    "rule": "AAFRTC npm scripts and Z: AAFRTC tasks must run with cwd = ZSanctuary_Universe repo root. In multi-root workspaces, focus that folder or set cwd explicitly."
+  },
+  "pipelines": {
+    "gate_ci": {
+      "npm": "verify:ci",
+      "description": "Enforcer gate + folders + structure + registry omni + comms manifests + freshness + system-status + guardian"
+    },
+    "full_core": {
+      "npm": "verify:full:core",
+      "description": "Heavy local gate: hygiene, lint, test, security, folder manager, python audits, Zuno, guardian"
+    },
+    "full_bridge": {
+      "npm": "verify:full",
+      "description": "verify:full:core plus Z-Bridge append-only log line"
+    }
+  },
+  "ide_integration": {
+    "vscode_tasks": "Z: AAFRTC — *",
+    "resolve_script": "scripts/z_aafrtc_resolve.mjs",
+    "runner_script": "scripts/z_aafrtc_ide_run.mjs",
+    "context_report": "data/reports/z_aafrtc_context.json"
+  },
+  "multi_project_ecosystem": {
+    "no_mixup": [
+      "Never assume ${workspaceFolder} is the hub in multi-root — run resolve first or use tasks from the ZSanctuary_Universe folder.",
+      "Sibling projects under pc_root keep their own package.json; EAII registry in hub lists them — AAFRTC does not mutate sibling repos."
+    ]
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "schema_version": 1,
+  "generated_at": "2026-04-26T01:11:33.156Z",
+  "name": "z-mini-bot-strategy",
+  "advisory": true,
+  "drp_note": "Strategy proposals only. No execution. Human/Overseer authority required for any change.",
+  "input_sources": {
+    "decisions_present": false,
+    "patterns_present": true,
+    "rootcause_present": true,
+    "predictions_present": true,
+    "adaptive_present": true
+  },
+  "strategy_count": 0,
+  "top_priority": null,
+  "strategies": []
+}

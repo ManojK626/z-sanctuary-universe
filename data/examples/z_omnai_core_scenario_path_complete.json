@@ -1,0 +1,20 @@
+{
+  "schema": "z_omnai_core_scenario_v1",
+  "label": "manifest: pathway COMPLETE rubric flag",
+  "rsi_cycles": 2,
+  "traffic_kind": "embedding",
+  "brains": [{ "id": "MB-0", "loadPct": 39 }, { "id": "BRAIN-5", "loadPct": 64 }],
+  "ants": {
+    "reasoningDagCycles": 90,
+    "ingestIntegrityOk": true,
+    "secretsDetected": false,
+    "ciGreen": true,
+    "formulaStable": true,
+    "pathwayDiverging": false,
+    "hiveSkewPct": 1,
+    "recursionDepth": 5,
+    "recursionLimit": 44
+  },
+  "pathway": { "completesRubric": true, "goalClarity": 0.99, "capacityRatio": 0.2, "residualDelta": -0.1 },
+  "entity": { "lane": "GHOST", "action": "dry_run_probe" }
+}

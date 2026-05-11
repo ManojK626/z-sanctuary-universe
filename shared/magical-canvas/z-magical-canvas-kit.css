@@ -1,0 +1,297 @@
+/**
+ * Z Magical Canvas PlayKit (ZMC-1) — local visual joy layer only.
+ * Host pages should pair with disclaimer copy in JS.
+ */
+
+.z-mck-root {
+  --mck-tone-a: #6b8cae;
+  --mck-tone-b: #8f7ab8;
+  --mck-tone-c: #5c9b8a;
+  --mck-tone-d: #c9a227;
+  --mck-aurora-opacity: 0.55;
+  --mck-orb-glow: rgba(255, 250, 235, 0.35);
+  font-family: system-ui, Segoe UI, Roboto, sans-serif;
+  color: #f4f6fb;
+  border-radius: 12px;
+  overflow: hidden;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  background: rgba(12, 18, 32, 0.92);
+}
+
+.z-mck-root[data-theme='eirmind'] {
+  --mck-tone-a: #c9a227;
+  --mck-tone-b: #2d8f6f;
+  --mck-tone-c: #4a5bbf;
+  --mck-tone-d: #7ecbff;
+}
+
+.z-mck-root[data-theme='princess_blacky'] {
+  --mck-tone-a: #b76e79;
+  --mck-tone-b: #7b9eb8;
+  --mck-tone-c: #a998c9;
+  --mck-tone-d: #e8c088;
+}
+
+.z-mck-root[data-theme='z_questra'] {
+  --mck-tone-a: #5eead4;
+  --mck-tone-b: #86efac;
+  --mck-tone-c: #c4b5fd;
+  --mck-tone-d: #7dd3fc;
+}
+
+.z-mck-root[data-theme='sanctuary_gold'] {
+  --mck-tone-a: #eab308;
+  --mck-tone-b: #f59e0b;
+  --mck-tone-c: #1e3a5f;
+  --mck-tone-d: #fde68a;
+}
+
+.z-mck-disclaimer {
+  padding: 0.45rem 0.65rem;
+  font-size: 0.68rem;
+  line-height: 1.35;
+  background: rgba(0, 0, 0, 0.25);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  color: rgba(255, 255, 255, 0.82);
+}
+
+.z-mck-toolbar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem 0.65rem;
+  padding: 0.45rem 0.55rem;
+  align-items: center;
+  font-size: 0.72rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.z-mck-toolbar label {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.25rem;
+  cursor: pointer;
+  opacity: 0.92;
+}
+
+.z-mck-stage-wrap {
+  position: relative;
+  min-height: 220px;
+  aspect-ratio: 16 / 10;
+  max-height: 56vh;
+}
+
+.z-mck-stage {
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+  border-radius: 0 0 10px 10px;
+}
+
+.z-mck-filter-host {
+  position: absolute;
+  inset: 0;
+  transition: filter 0.35s ease;
+}
+
+.z-mck-root[data-pixel='1'] .z-mck-filter-host {
+  filter: contrast(1.08) saturate(1.06);
+}
+
+.z-mck-root[data-sharp='1'] .z-mck-filter-host {
+  filter: contrast(1.14) saturate(1.02);
+}
+
+.z-mck-root[data-pixel='1'][data-sharp='1'] .z-mck-filter-host {
+  filter: contrast(1.16) saturate(1.08);
+}
+
+.z-mck-aurora {
+  position: absolute;
+  inset: -20%;
+  opacity: var(--mck-aurora-opacity);
+  background: radial-gradient(
+      ellipse 80% 60% at 30% 20%,
+      color-mix(in srgb, var(--mck-tone-a) 70%, transparent),
+      transparent 55%
+    ),
+    radial-gradient(
+      ellipse 70% 55% at 75% 65%,
+      color-mix(in srgb, var(--mck-tone-b) 65%, transparent),
+      transparent 50%
+    ),
+    radial-gradient(
+      ellipse 60% 45% at 50% 90%,
+      color-mix(in srgb, var(--mck-tone-c) 55%, transparent),
+      transparent 45%
+    );
+  animation: z-mck-aurora-drift 28s ease-in-out infinite alternate;
+}
+
+.z-mck-root.z-mck-reduced .z-mck-aurora,
+.z-mck-root[data-aurora='0'] .z-mck-aurora {
+  animation: none;
+  opacity: calc(var(--mck-aurora-opacity) * 0.65);
+}
+
+.z-mck-root[data-aurora='0'] .z-mck-aurora {
+  opacity: 0;
+  pointer-events: none;
+}
+
+@keyframes z-mck-aurora-drift {
+  0% {
+    transform: translate(0, 0) scale(1);
+  }
+  100% {
+    transform: translate(3%, 2%) scale(1.05);
+  }
+}
+
+.z-mck-orbs {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+}
+
+.z-mck-orb {
+  position: absolute;
+  width: var(--s, 12px);
+  height: var(--s, 12px);
+  border-radius: 50%;
+  background: radial-gradient(circle at 35% 30%, #fff8f0, var(--mck-orb-glow) 40%, transparent 70%);
+  box-shadow: 0 0 14px color-mix(in srgb, var(--mck-tone-d) 55%, transparent);
+  opacity: 0.75;
+  animation: z-mck-orb-float 14s ease-in-out infinite;
+  animation-delay: var(--d, 0s);
+}
+
+.z-mck-root[data-orbs='0'] .z-mck-orbs {
+  display: none;
+}
+
+.z-mck-root.z-mck-reduced .z-mck-orb {
+  animation: none;
+  opacity: 0.45;
+}
+
+.z-mck-root.z-mck-photophobia .z-mck-orb {
+  opacity: 0.28;
+  box-shadow: none;
+}
+
+@keyframes z-mck-orb-float {
+  0%,
+  100% {
+    transform: translate(0, 0);
+  }
+  50% {
+    transform: translate(var(--tx, 6px), var(--ty, -8px));
+  }
+}
+
+.z-mck-rings {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  pointer-events: none;
+  opacity: 0.35;
+}
+
+.z-mck-root[data-rings='0'] .z-mck-rings {
+  display: none;
+}
+
+.z-mck-rings svg {
+  width: 85%;
+  height: 85%;
+  max-width: 420px;
+  animation: z-mck-ring-spin 120s linear infinite;
+}
+
+.z-mck-root.z-mck-reduced .z-mck-rings svg {
+  animation: none;
+}
+
+@keyframes z-mck-ring-spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.z-mck-angels {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  pointer-events: none;
+  opacity: 0.22;
+  padding-bottom: 6%;
+}
+
+.z-mck-root[data-angels='0'] .z-mck-angels {
+  display: none;
+}
+
+.z-mck-angels svg {
+  width: 55%;
+  max-width: 280px;
+  height: auto;
+  fill: none;
+  stroke: color-mix(in srgb, var(--mck-tone-a) 70%, #fff);
+  stroke-width: 1.2;
+}
+
+.z-mck-sketch {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  cursor: crosshair;
+  touch-action: none;
+  background: transparent;
+}
+
+.z-mck-root[data-sketch='0'] .z-mck-sketch {
+  display: none;
+}
+
+.z-mck-sketch-tools {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.45rem;
+  align-items: center;
+  padding: 0.45rem 0.55rem;
+  font-size: 0.72rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.z-mck-sketch-tools button {
+  padding: 0.28rem 0.5rem;
+  border-radius: 6px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  background: rgba(255, 255, 255, 0.08);
+  color: inherit;
+  cursor: pointer;
+  font-size: 0.72rem;
+}
+
+.z-mck-sketch-tools button:focus-visible {
+  outline: 2px solid color-mix(in srgb, var(--mck-tone-d) 80%, white);
+  outline-offset: 2px;
+}
+
+.z-mck-sketch-tools input[type='color'] {
+  width: 32px;
+  height: 28px;
+  border: none;
+  padding: 0;
+  background: transparent;
+  cursor: pointer;
+}
+
+.z-mck-root[data-sketch='0'] .z-mck-sketch-tools {
+  display: none;
+}

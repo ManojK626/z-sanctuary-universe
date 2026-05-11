@@ -1,0 +1,36 @@
+{
+  "schema": "z_pc_ide_path_report_v1",
+  "generated_at": "2026-05-05T19:33:54.234Z",
+  "overall_signal": "GREEN",
+  "process_cwd": "C:\\Cursor Projects Organiser\\Z_Sanctuary_Universe",
+  "paths": {
+    "hub_root": "C:\\Cursor Projects Organiser\\Z_Sanctuary_Universe",
+    "hub_exists": true,
+    "labs_root": "C:\\Cursor Projects Organiser\\Z_Sanctuary_Universe\\ZSanctuary_Labs",
+    "labs_exists": true
+  },
+  "vscode": {
+    "code_on_path": true,
+    "code_exe_localappdata": "C:\\Users\\manoj\\AppData\\Local\\Programs\\Microsoft VS Code\\Code.exe",
+    "code_exe_localappdata_exists": true,
+    "code_exe_programfiles": "C:\\Program Files\\Microsoft VS Code\\Code.exe",
+    "code_exe_programfiles_exists": false,
+    "detected": true
+  },
+  "cursor": {
+    "cursor_on_path": true,
+    "cursor_exe_localappdata": "C:\\Users\\manoj\\AppData\\Local\\Programs\\cursor\\Cursor.exe",
+    "cursor_exe_localappdata_exists": true,
+    "detected": true
+  },
+  "archive_build_root_warning": false,
+  "warnings": [],
+  "notes": [],
+  "locked_law": [
+    "Explorer context menu ≠ project health.",
+    "CLI path proof beats Explorer right-click menus.",
+    ".cursor/projects is archive/cache — not authoritative hub.",
+    "This checker does not edit registry or install software.",
+    "GREEN ≠ deploy."
+  ]
+}

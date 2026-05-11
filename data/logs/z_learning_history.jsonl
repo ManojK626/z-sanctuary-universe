@@ -1,0 +1,2 @@
+{"ts":"2026-04-26T12:21:21.777Z","decision_id":"investigate_missing_project","action":"resolve","outcome":"success","guardian_missing_at_eval":0,"guardian_missing_previous":null,"spi_context":{"evolution_phase":"baseline","signals":["stability_convergence"]}}
+{"evaluated_at":"2026-04-26T17:48:08.094Z","decision_ts":"2026-04-25T22:15:04.003Z","decision_id":"investigate_missing_project","action":"resolve","outcome":"success","guardian_missing_at_eval":0,"guardian_missing_previous":0,"spi_context":{"evolution_phase":"baseline","signals":["stability_convergence"]}}

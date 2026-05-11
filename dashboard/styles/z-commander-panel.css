@@ -1,0 +1,311 @@
+/* AMK-Goku Commander — Lumina glass daily surface (read-only + light actions) */
+
+.z-commander-panel {
+  max-height: calc(100vh - 2rem);
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  overflow: hidden;
+}
+
+.z-commander-panel-v2 h3 {
+  margin: 0 0 0.35rem;
+  font-size: calc(1.02rem * var(--z-morph-font-scale, 1));
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  line-height: 1.25;
+  color: var(--lumina-text, #e9f4ff);
+}
+
+.z-commander-panel .z-commander-scroll {
+  flex: 1;
+  min-height: 0;
+  overflow: auto;
+  padding: 0 0.15rem 0.35rem 0;
+  scroll-behavior: smooth;
+}
+
+.z-commander-phase {
+  margin: 0 0 0.5rem;
+  font-size: calc(0.76rem * var(--z-morph-font-scale, 1));
+  color: var(--lumina-text-dim, #9eb7cc);
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  line-height: 1.45;
+  max-width: 36em;
+}
+
+.z-commander-strip {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.45rem;
+}
+
+.z-commander-panel-v2 .z-commander-chip {
+  border-radius: clamp(8px, var(--z-morph-radius, 16px), 22px);
+  box-shadow:
+    0 0 calc(14px * var(--z-morph-glow-strength, 1)) rgba(0, 204, 255, 0.12),
+    inset 0 1px 0 rgba(255, 255, 255, 0.05);
+  font-size: calc(0.72rem * var(--z-morph-font-scale, 1));
+}
+
+.z-commander-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  padding: 0.4rem 0.58rem;
+  border-radius: 999px;
+  font-size: 0.74rem;
+  line-height: 1.35;
+  border: 1px solid var(--lumina-glass-border, rgba(255, 255, 255, 0.12));
+  background: var(--lumina-glass, rgba(255, 255, 255, 0.05));
+  backdrop-filter: blur(var(--lumina-panel-blur, 16px));
+  box-shadow: 0 0 18px rgba(0, 204, 255, 0.09);
+  min-height: 2.35rem;
+  box-sizing: border-box;
+}
+
+.z-commander-status-bar.z-commander-strip {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+  gap: 0.55rem;
+  align-items: stretch;
+}
+
+.z-commander-chip strong {
+  color: var(--lumina-emerald, #00ffcc);
+  font-weight: 600;
+}
+
+#zCmdCommflowBrief {
+  display: inline-block;
+  max-width: min(12.5rem, 36vw);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  vertical-align: bottom;
+}
+
+body[data-display-mode='low-sensory'] #zCmdCommflowBrief,
+body.z-morph-low-sensory-active #zCmdCommflowBrief {
+  white-space: normal;
+  max-width: none;
+}
+
+.z-commander-section-title {
+  margin: 1rem 0 0.45rem;
+  padding-top: 0.55rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.06);
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--lumina-gold, #ffd700);
+  text-shadow: 0 0 12px rgba(255, 215, 0, 0.22);
+}
+
+.z-commander-panel-v2 .z-commander-scroll > .z-commander-section-title:first-of-type {
+  margin-top: 0;
+  padding-top: 0;
+  border-top: 0;
+}
+
+.z-commander-intel {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 0.55rem;
+  align-items: stretch;
+}
+
+@media (min-width: 520px) {
+  .z-commander-intel {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0.5rem;
+  }
+}
+
+.z-commander-card {
+  padding: 0.6rem 0.7rem;
+  border-radius: var(--lumina-radius, 16px);
+  border: 1px solid var(--lumina-glass-border, rgba(255, 255, 255, 0.12));
+  background: rgba(255, 255, 255, 0.04);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.06);
+  line-height: 1.45;
+  min-height: 4.25rem;
+  box-sizing: border-box;
+}
+
+.z-commander-card .z-tag {
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  opacity: 0.95;
+  margin-bottom: 0.4rem;
+  color: rgba(200, 230, 255, 0.88);
+}
+
+.z-commander-products {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-size: 0.82rem;
+}
+
+.z-commander-products li {
+  padding: 0.35rem 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 0.5rem;
+}
+
+.z-commander-products li:last-child {
+  border-bottom: 0;
+}
+
+.z-commander-products .z-pname {
+  color: var(--lumina-text, #e9f4ff);
+}
+
+.z-commander-products .z-pmeta {
+  font-size: 0.74rem;
+  color: var(--lumina-text-dim, #9eb7cc);
+  white-space: nowrap;
+}
+
+.z-commander-ledger {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-size: 0.78rem;
+}
+
+.z-commander-ledger li {
+  padding: 0.25rem 0;
+  color: var(--lumina-text-dim, #9eb7cc);
+}
+
+.z-commander-receipts {
+  margin: 0;
+  padding: 0 0 0 0.35rem;
+  list-style: none;
+  font-size: 0.78rem;
+  border-left: 2px solid rgba(0, 255, 200, 0.16);
+}
+
+.z-commander-receipts li {
+  padding: 0.32rem 0 0.32rem 0.15rem;
+  color: var(--lumina-text-dim, #9eb7cc);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.z-commander-receipts li:last-child {
+  border-bottom: 0;
+}
+
+.z-commander-lanes {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-size: 0.82rem;
+}
+
+.z-commander-lanes li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0.65rem;
+  padding: 0.48rem 0.1rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.z-commander-lanes li:last-child {
+  border-bottom: 0;
+}
+
+.z-commander-lanes .z-lane-name {
+  color: var(--lumina-text, #e9f4ff);
+}
+
+.z-commander-lanes .z-lane-pill {
+  font-size: 0.65rem;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  padding: 0.2rem 0.48rem;
+  border-radius: 999px;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+.z-commander-lanes .z-lane-wait {
+  border-color: rgba(255, 180, 80, 0.45);
+  color: rgba(255, 210, 140, 0.95);
+}
+
+.z-commander-lanes .z-lane-monitor {
+  border-color: rgba(120, 180, 255, 0.35);
+  color: rgba(180, 210, 255, 0.95);
+}
+
+.z-commander-lanes .z-lane-amber {
+  border-color: rgba(255, 200, 80, 0.5);
+  color: rgba(255, 220, 140, 0.98);
+}
+
+.z-commander-lanes .z-lane-ok {
+  border-color: rgba(0, 255, 200, 0.25);
+  color: rgba(160, 255, 225, 0.95);
+}
+
+.z-commander-inline-code {
+  font-size: 0.68rem;
+  padding: 0.12rem 0.35rem;
+  border-radius: 6px;
+  background: rgba(0, 0, 0, 0.35);
+}
+
+.z-commander-gold-muted {
+  display: block;
+  margin-top: 0.35rem;
+  font-size: 0.74rem;
+  font-weight: 400;
+  opacity: 0.88;
+  color: var(--lumina-text-dim, #9eb7cc);
+}
+
+.z-commander-footnote {
+  font-size: 0.72rem;
+  margin: 0.35rem 0 0;
+}
+
+.z-commander-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem 0.45rem;
+}
+
+.z-commander-actions .z-button {
+  flex: 1 1 calc(50% - 0.45rem);
+  min-width: 8rem;
+}
+
+.z-commander-gold {
+  margin: 0.25rem 0 0;
+  padding: 0.65rem 0.8rem;
+  border-radius: var(--lumina-radius, 16px);
+  border: 1px solid rgba(255, 215, 0, 0.35);
+  background: linear-gradient(135deg, rgba(255, 215, 0, 0.08), rgba(0, 204, 255, 0.05));
+  font-size: 0.86rem;
+  line-height: 1.45;
+}
+
+.z-commander-snippet {
+  display: block;
+  margin-top: 0.35rem;
+  padding: 0.35rem 0.45rem;
+  border-radius: 8px;
+  background: rgba(0, 0, 0, 0.35);
+  font-size: 0.72rem;
+  word-break: break-all;
+}

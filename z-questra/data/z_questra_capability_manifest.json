@@ -1,0 +1,58 @@
+{
+  "schema": "z_questra_capability_manifest_v1",
+  "project": "z-questra",
+  "version": "0.2.11",
+  "bridge_status": "reference_only",
+  "memory_status": "local_only_or_future_gated",
+  "posture": "metadata_only_no_live_bridge",
+  "drp_gate_required": true,
+  "charter_required_for_live_bridge": true,
+  "capabilities": [
+    "comfort_modes",
+    "accessibility_toolset",
+    "z_zebras_readiness",
+    "local_notebook",
+    "notebook_import_export",
+    "playgarden_2d_canvas",
+    "uncertainty_kaleidoscope",
+    "receipt_poster",
+    "z_music_engine_sme",
+    "future_shape_canvas",
+    "future_visual_mapper"
+  ],
+  "allowed_reuse_modes": ["docs_link", "hub_catalog_reference", "manual_operator_launch"],
+  "future_gated_reuse_modes": [
+    "iframe_embed",
+    "shared_component_package",
+    "local_file_bridge",
+    "cross_project_memory",
+    "live_service_api"
+  ],
+  "forbidden_without_charter": [
+    "cloud_sync",
+    "email_calendar_api",
+    "live_ai_generation",
+    "provider_calls",
+    "multiplayer",
+    "payments",
+    "kids_online_sharing",
+    "gambling_or_prediction_mechanics",
+    "heavy_3d_engine"
+  ],
+  "capability_family_hint": {
+    "Comfort Zone": ["comfort_modes", "accessibility_toolset"],
+    "Z-Zebras Family": ["z_zebras_readiness"],
+    "Local Notebook": ["local_notebook", "notebook_import_export"],
+    "PlayGarden": ["playgarden_2d_canvas"],
+    "Uncertainty Kaleidoscope": ["uncertainty_kaleidoscope"],
+    "Receipt Poster": ["receipt_poster"],
+    "Z-SME (Music intent)": ["z_music_engine_sme"],
+    "Future Shape Canvas": ["future_shape_canvas"],
+    "Future Sanctuary Bridge": ["future_visual_mapper"]
+  },
+  "catalog_links": {
+    "hub_nav_catalog_row_id": "z_questra_workstation",
+    "hub_manifest_cross_reference": "dashboard/data/z_universe_service_catalog.json"
+  },
+  "notes": "QX-1 — discoverability only. Runtime coupling remains blocked until charter + 14 DRP review. Z-SME v1.1 adds local opt-in audio consent (no streaming SDK)."
+}

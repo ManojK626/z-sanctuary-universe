@@ -1,0 +1,59 @@
+{
+  "schema": "z_susbv_benchmark_registry_v1",
+  "posture": "evidence_first_read_only",
+  "review_cadence": "quarterly",
+  "services": [
+    {
+      "service_id": "z_questra_local_notebook",
+      "service_name": "Z-QUESTRA Local Notebook",
+      "segment": "learning_tools",
+      "status": "local_free_or_future_gated",
+      "pricing_owner": "z-questra",
+      "entitlement_status": "local_feature",
+      "benchmark_required": false,
+      "cost_floor_required": false,
+      "public_price_allowed": false,
+      "notes": "Local tool; no billing lane open in hub metadata."
+    },
+    {
+      "service_id": "family_legacy_vault_future",
+      "service_name": "Family Legacy Vault",
+      "segment": "family_legacy",
+      "status": "future_commercial_candidate",
+      "pricing_owner": "z-sanctuary",
+      "entitlement_status": "future_gated",
+      "benchmark_required": true,
+      "cost_floor_required": true,
+      "required_comps": 5,
+      "commercial_readiness_required": true,
+      "public_price_allowed": false,
+      "notes": "Pre-charter; evidence pack incomplete by design for Phase ZSUSBV-1 sample posture."
+    },
+    {
+      "service_id": "school_wellness_mirror_future",
+      "service_name": "School wellness mirror (future)",
+      "segment": "school",
+      "status": "pre_charter",
+      "pricing_owner": "z-sanctuary",
+      "entitlement_status": "reference_only",
+      "benchmark_required": true,
+      "cost_floor_required": true,
+      "required_comps": 4,
+      "commercial_readiness_required": true,
+      "public_price_allowed": false,
+      "notes": "Children-adjacent segment; AMK/human gate before any offer or public claim."
+    },
+    {
+      "service_id": "hub_nav_catalog_readonly",
+      "service_name": "Hub NAV service catalog (read-only)",
+      "segment": "operator_visibility",
+      "status": "metadata_only",
+      "pricing_owner": "z-sanctuary-hub",
+      "entitlement_status": "reference_only",
+      "benchmark_required": false,
+      "cost_floor_required": false,
+      "public_price_allowed": false,
+      "notes": "NAV-1 visibility; no paid access implied by catalog rows."
+    }
+  ]
+}

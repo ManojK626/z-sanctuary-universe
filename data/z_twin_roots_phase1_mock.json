@@ -1,0 +1,139 @@
+{
+  "schema_version": 1,
+  "name": "z-twin-roots-phase1-mock",
+  "authority": "advisory_only_no_auto_execution",
+  "generated_note": "Local mock data for Z-Twin Roots Architecture Phase 1.",
+  "ai_tower": {
+    "name": "AI Tower",
+    "spine_modules": [
+      "Super Overseer",
+      "Eagle Eye",
+      "Zip Communication Flow",
+      "Zip PowerShell Wheel Bus",
+      "Extra Spine Containers"
+    ]
+  },
+  "mango_tree_core": {
+    "nodes": [
+      {
+        "id": "marketbot",
+        "type": "bot",
+        "label": "MarketBot",
+        "home_module": "Z-OMNI Overseer",
+        "status": "active",
+        "allowed_folders": [
+          "data/reports",
+          "docs"
+        ],
+        "forbidden_actions": [
+          "release_gate_change",
+          "destructive_file_ops"
+        ],
+        "receipt_refs": [
+          "data/reports/z_enterprise_os_phase1_status.md"
+        ]
+      },
+      {
+        "id": "guardianbot",
+        "type": "bot",
+        "label": "GuardianBot",
+        "home_module": "Guardian Layer",
+        "status": "active",
+        "allowed_folders": [
+          "data/reports",
+          "scripts"
+        ],
+        "forbidden_actions": [
+          "external_deploy",
+          "auto_quarantine"
+        ],
+        "receipt_refs": [
+          "data/reports/z_guardian_report.json"
+        ]
+      },
+      {
+        "id": "vhealth-core",
+        "type": "module",
+        "label": "Z-VHealth Core",
+        "status": "watch",
+        "owner": "Overseer",
+        "receipt_refs": [
+          "data/reports/z_vhealth_core_report.json"
+        ]
+      }
+    ],
+    "latest_activity": [
+      {
+        "ts": "2026-04-28T17:00:00Z",
+        "actor": "GuardianBot",
+        "summary": "Refreshed guardian report references."
+      },
+      {
+        "ts": "2026-04-28T17:05:00Z",
+        "actor": "MarketBot",
+        "summary": "Prepared enterprise phase1 readiness status."
+      }
+    ]
+  },
+  "tarzan_tree_core": {
+    "routes": [
+      {
+        "from": "MarketBot",
+        "to": "Receipt Ledger",
+        "kind": "advisory",
+        "status": "allowed"
+      },
+      {
+        "from": "GuardianBot",
+        "to": "Risk/Blocked Paths",
+        "kind": "verification",
+        "status": "allowed"
+      },
+      {
+        "from": "AnyBot",
+        "to": "Release Gate Mutation",
+        "kind": "critical",
+        "status": "blocked_human_approval_required"
+      }
+    ],
+    "helper_registry": [
+      {
+        "requester": "MarketBot",
+        "recommended_helper": "RiskBot",
+        "reason": "Consequence analysis for partner pathway."
+      },
+      {
+        "requester": "FeedbackBot",
+        "recommended_helper": "TrustBot",
+        "reason": "Validate claims before external response."
+      }
+    ],
+    "blocked_paths": [
+      {
+        "id": "blocked-001",
+        "title": "Auto deploy from advisory panel",
+        "risk": "high",
+        "rule": "human_gate_required"
+      }
+    ]
+  },
+  "z_fusion_grove": {
+    "active_sessions": [],
+    "session_template": {
+      "requester": "",
+      "helper": "",
+      "task": "",
+      "status": "planned",
+      "receipt_target": "data/reports/"
+    }
+  },
+  "mycelium_layer": {
+    "micro_nodes": [
+      "mini-bot:alerts",
+      "mini-bot:health",
+      "container:zuno-state",
+      "script:z_heartbeat_shadow_core",
+      "script:z_vhealth_core_report"
+    ]
+  }
+}

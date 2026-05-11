@@ -1,0 +1,5 @@
+{"kind":"PRODUCT_READINESS","product":"Z-OCTAVE","readiness":"amber","reason":"Scaffold created; pilots not yet populated.","timestamp":"2026-02-06T18:26:48.901Z"}
+{"kind":"ETHICS_FLAG","product":"Z-OCTAVE","severity":"warn","tag":"claims","message":"Ensure all copy stays non-medical (comfort/support only).","timestamp":"2026-02-06T18:26:48.903Z"}
+{"kind":"PILOT_METRIC","product":"Z-OCTAVE","track":"personal","metric":"would_use_again","value":1,"timestamp":"2026-02-06T18:26:48.904Z"}
+{"kind":"PILOT_METRIC","product":"Z-OCTAVE","track":"ngo","metric":"comfort_change","value":"worse","timestamp":"2026-02-06T18:26:48.904Z"}
+{"kind":"STOP_GATE","product":"Z-OCTAVE","gate":"RKPK","state":"BLOCK","reason":"Pilot discomfort reported (track=ngo). Pause & review.","timestamp":"2026-02-06T18:26:48.905Z"}

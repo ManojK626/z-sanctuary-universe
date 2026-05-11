@@ -1,0 +1,50 @@
+{
+  "schema": "z.ai.fusion.samples.v1",
+  "samples": [
+    {
+      "sample_id": "fusion_pair_mod_dist_vs_amk_ai_sync",
+      "capability_pair": ["z_mod_dist", "amk_ai_sync"],
+      "scenario_notes": "Sibling routing posture: MOD-DIST decides capsule placement; AMK-AI-SYNC assigns team packets.",
+      "expected_fusion_hint": "LEAD_SUPPORT",
+      "_note_score_expectation": "related band — clarify docs to avoid perceived duplicate dashboards"
+    },
+    {
+      "sample_id": "fusion_pair_xbus_vs_pattern_safe",
+      "capability_pair": ["z_xbus_gate", "z_pattern_safe"],
+      "scenario_notes": "Connector gate vs prediction-simulation law — orthogonal missions.",
+      "expected_fusion_hint": "KEEP_SEPARATE",
+      "_note_score_expectation": "distinct domains"
+    },
+    {
+      "sample_id": "fusion_pair_replica_vs_ultra_mage",
+      "capability_pair": ["z_replica_fabric", "z_ultra_mage"],
+      "scenario_notes": "Doctrine siblings: replica missions vs formula codex rollup — unify narrative in docs occasionally.",
+      "expected_fusion_hint": "BLUE_AMK_REVIEW",
+      "_note_score_expectation": "near_overlap band — consolidation wording only unless AMK approves merge-doc plan"
+    },
+    {
+      "sample_id": "fusion_pair_ide_fusion_vs_pc_path",
+      "capability_pair": ["z_ide_fusion", "z_pc_ide_path"],
+      "scenario_notes": "IDE coordination vs PATH health probes — sibling under ide_coordination domain.",
+      "expected_fusion_hint": "KEEP_SEPARATE",
+      "_note_score_expectation": "distinct outputs with shared toolchain context"
+    },
+    {
+      "sample_id": "fusion_pair_mu_truth_vs_mu_advisor",
+      "capability_pair": ["z_mu_truth", "z_mu_advisor"],
+      "scenario_notes": "Civic ledger vs advisor templates — advisor supports truth posture.",
+      "expected_fusion_hint": "LEAD_SUPPORT",
+      "_note_score_expectation": "shared civic_truth domain — registry already declares lead/support"
+    }
+  ],
+  "fixture_samples_red": [
+    {
+      "sample_id": "fusion_fixture_unsafe_merged_execution_900",
+      "capability_pair": ["z_mod_dist", "z_xbus_gate"],
+      "scenario_notes": "Proposed single fused agent executing auto-merge, live Stripe capture, shared secret pool, scraping user tables — merges routing with live connector posture.",
+      "flags": {
+        "unsafe_overlap": true
+      }
+    }
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "generated_at": "2026-04-17T19:43:12.435Z",
+  "gate": "data_integrity",
+  "status": "PASS",
+  "reasons": [],
+  "checks": {
+    "users": 5,
+    "allocations": 13
+  }
+}

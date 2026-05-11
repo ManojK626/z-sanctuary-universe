@@ -1,0 +1,53 @@
+{
+  "schema_version": 1,
+  "title": "Z AI Ecosphere — SSWS · Formulas · Tower · Shadows",
+  "purpose": "Unify observability for Z-SSWS, Z-Mega / QOSMEI formula families, AI Tower agents, shadow pipelines, and mini-bot assistants. Advisory scores — not autonomous execution authority.",
+  "canonical_docs": [
+    "docs/z-vault/INDEX.md",
+    "docs/Z-SSWS-ALL-PROJECTS-AND-AI-COLONY-BLUEPRINT.md",
+    "docs/Z-ULTRA-INSTINCTS-AND-FORMULAS.md",
+    "docs/Z-HIERARCHY-CHIEF-AND-OBSERVER-VIEW.md",
+    "docs/Z-SCTE-SELF-CREATIONS-TEST-ECOSYSTEM.md"
+  ],
+  "data_sources": {
+    "ssws_daily": "data/reports/z_ssws_daily_report.json",
+    "qosmei": "data/z_qosmei_manifest.json",
+    "ai_status": "data/reports/z_ai_status.json",
+    "guardian": "data/reports/z_guardian_report.json",
+    "task_log_creator": "data/logs/z_ai_task_accomplishments.jsonl",
+    "task_log_business": "data/logs/z_ai_task_accomplishments_business.jsonl",
+    "task_log_csv": "data/reports/z_ai_task_accomplishments.csv",
+    "delta_report": "data/reports/z_ai_ecosphere_delta.json",
+    "consistency_alerts": "data/reports/z_ai_consistency_alerts.json",
+    "decision_history_log": "data/logs/z_decision_history.jsonl",
+    "decision_patterns": "data/reports/z_bot_patterns.json",
+    "decision_rootcause": "data/reports/z_bot_rootcause.json",
+    "decision_predictions": "data/reports/z_bot_predictions.json",
+    "decision_adaptive": "data/reports/z_bot_adaptive.json",
+    "decision_strategy": "data/reports/z_bot_strategy.json",
+    "decision_execution_plans": "data/reports/z_bot_execution_plans.json",
+    "decision_execution_result": "data/reports/z_bot_execution_result.json",
+    "decision_execution_log": "data/logs/z_execution_history.jsonl",
+    "signal_health": "data/reports/z_ai_signal_health.json",
+    "system_health": "data/reports/z_system_health.json",
+    "communication_health": "data/reports/z_communication_health.json",
+    "vault_spine_manifest": "data/reports/z_vault_spine_manifest.json",
+    "system_coherence": "data/reports/z_system_coherence.json",
+    "adaptive_coherence": "data/reports/z_adaptive_coherence.json",
+    "learning_log": "data/logs/z_ai_learning_log.jsonl",
+    "self_tuning": "data/reports/z_self_tuning.json",
+    "experience_memory": "data/reports/z_experience_memory.json",
+    "experience_intelligence": "data/reports/z_experience_intelligence.json",
+    "fusion_council": "data/reports/z_fusion_council.json",
+    "ssws_shadow_manifest": "data/z_ssws_shadow_manifest.json",
+    "z_scte_manifest": "data/z_scte_manifest.json"
+  },
+  "rings": [
+    { "id": "z_ssws", "label": "Z-SSWS (workspace · server · dashboard) — comms+registry handoff" },
+    { "id": "z_mega_formulas", "label": "Z-Mega & formula posture (guardian + QOSMEI)" },
+    { "id": "ai_tower", "label": "AI Tower (agents + pulses) — refresh with z:whale-bus:surfaces (z_ai_status.json)" },
+    { "id": "shadow_minibots", "label": "Shadow AI · Z-SSWSs · super-ghost — ssws:shadow-verify in Whale Bus surface deck" }
+  ],
+  "comms_reinforce_note": "Run npm run z:whale-bus:comms+surfaces (or +zuno) after manifest/comms work so SSWS, SSWSs, and AI Tower see the same ecosystem+communication_health truth. For large self-creation changes, follow Z-SCTE (docs/Z-SCTE-SELF-CREATIONS-TEST-ECOSYSTEM.md): comms to Overseer-class surfaces first, approval, then full scans.",
+  "actor_classes": ["tower_agent", "shadow_pipeline", "mini_bot", "cursor_subagent", "super_chat", "ssws_task"]
+}

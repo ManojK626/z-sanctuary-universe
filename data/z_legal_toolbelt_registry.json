@@ -1,0 +1,115 @@
+{
+  "schema": "z.legal.toolbelt.registry.v1",
+  "registry_name": "Z-Lawyer Workstation Tool Dock",
+  "phase": "Z-LEGAL-TOOLBELT-1",
+  "mode": "legal_toolbelt_ui_metadata_only",
+  "ui_layout": {
+    "dock_structure": "left_tool_categories_center_active_panel_right_context_drawer_bottom_receipts_queue",
+    "compact_mode": true,
+    "multi_panel_sprawl_forbidden": true
+  },
+  "toolbelt_tools": [
+    {
+      "id": "document_viewer",
+      "name": "Document Viewer",
+      "purpose": "PDF/doc/image preview with report and receipt links",
+      "phase_1_posture": "read_only"
+    },
+    {
+      "id": "image_video_evidence_viewer",
+      "name": "Image and Video Evidence Viewer",
+      "purpose": "Visual evidence review panel",
+      "phase_1_posture": "no_ai_analysis_runtime"
+    },
+    {
+      "id": "timeline_builder",
+      "name": "Timeline Builder",
+      "purpose": "Events, dates, and proof-chain structure",
+      "phase_1_posture": "metadata_only"
+    },
+    {
+      "id": "extract_ocr_placeholder",
+      "name": "Extract and OCR Placeholder",
+      "purpose": "Future lane marker for extraction capability",
+      "phase_1_posture": "future_blue_no_runtime"
+    },
+    {
+      "id": "redaction_checklist",
+      "name": "Redaction Checklist",
+      "purpose": "Checklist for privacy/legal removals before sharing",
+      "phase_1_posture": "no_destructive_edit"
+    },
+    {
+      "id": "notebook",
+      "name": "Notebook",
+      "purpose": "Lawyer review notes and thoughts",
+      "phase_1_posture": "local_manual_later"
+    },
+    {
+      "id": "citation_source_binder",
+      "name": "Citation and Source Binder",
+      "purpose": "Claim to evidence to report linking",
+      "phase_1_posture": "read_only"
+    },
+    {
+      "id": "export_pack_builder",
+      "name": "Export Pack Builder",
+      "purpose": "Court/lawyer/doctor summary bundle drafting",
+      "phase_1_posture": "draft_concept_only"
+    },
+    {
+      "id": "risk_queue",
+      "name": "Risk Queue",
+      "purpose": "BLUE and RED legal decision queue",
+      "phase_1_posture": "dashboard_metadata_only"
+    },
+    {
+      "id": "contract_ip_tracker",
+      "name": "Contract and IP Tracker",
+      "purpose": "Product/manufacturer/legal review status",
+      "phase_1_posture": "no_filing_or_contract_claim"
+    },
+    {
+      "id": "client_consent_tracker",
+      "name": "Client Consent Tracker",
+      "purpose": "Sharing permissions posture",
+      "phase_1_posture": "no_client_data_intake"
+    },
+    {
+      "id": "ai_assistant_panel",
+      "name": "AI Assistant Panel",
+      "purpose": "Explain modules and reports",
+      "phase_1_posture": "no_legal_advice"
+    },
+    {
+      "id": "canvas_world_map",
+      "name": "Canvas and World Map",
+      "purpose": "Visual ecosystem/product/legal map",
+      "phase_1_posture": "visual_only"
+    }
+  ],
+  "forbidden_actions": [
+    "file_upload_runtime",
+    "client_data_intake_runtime",
+    "ocr_runtime_processing",
+    "video_analysis_runtime",
+    "legal_advice_runtime",
+    "named_lawyer_endorsement_claim",
+    "destructive_redaction",
+    "e_signature_runtime",
+    "court_filing",
+    "payment_activation",
+    "external_api_call",
+    "deployment"
+  ],
+  "locked_law": [
+    "Toolbelt != live case system.",
+    "Viewer != evidence intake.",
+    "OCR placeholder != document processing.",
+    "Notebook != privileged storage.",
+    "AI assistant != legal adviser.",
+    "Export draft != court filing.",
+    "GREEN != launch.",
+    "AMK-Goku owns sacred moves."
+  ]
+}

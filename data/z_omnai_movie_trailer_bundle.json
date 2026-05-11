@@ -1,0 +1,247 @@
+{
+  "schema": "z_omnai_movie_trailer_review_bundle_v1",
+  "bundle_id": "z_omnai_movie_trailer_review_bundle_v1",
+  "source_pipeline_id": "z_omnai_movie_trailer_v1",
+  "workbench_mode_id": "movie_trailer",
+  "status": "internal_review_only",
+  "public_release_status": "not_approved",
+  "autonomy_level": "L1_report",
+  "rights_posture": "original_or_permission_required",
+  "summary": "Internal AMK review scaffold for a movie or trailer slice. No generated media, no provider calls, no public release in this phase.",
+  "sections": {
+    "story_concept": {
+      "title": "Story concept",
+      "amk_input_prompts": [
+        "What is the one-sentence logline?",
+        "What change does the protagonist undergo by the end of the trailer arc?",
+        "What genre promise must the trailer keep without misleading the feature?",
+        "What is explicitly out of scope for this trailer versus the full film?"
+      ],
+      "outline_placeholders": [
+        "Hook (0–5s): [TBD]",
+        "Escalation (5–20s): [TBD]",
+        "Emotional turn (20–40s): [TBD]",
+        "Button or cliffhanger (40–60s): [TBD]"
+      ],
+      "checklist": [
+        "No uncited factual claims in on-screen text",
+        "No comparative superiority without evidence",
+        "No AGI positioning, uncapped capability claims, or outcome guarantees in copy"
+      ]
+    },
+    "world_bible": {
+      "title": "World bible (trailer scope)",
+      "amk_input_prompts": [
+        "What rules of the world must the audience grasp in under ninety seconds?",
+        "What locations, eras, or factions appear in the trailer only?",
+        "What must stay mysterious for the feature?"
+      ],
+      "outline_placeholders": [
+        "Setting anchors: [TBD]",
+        "Social order or stakes: [TBD]",
+        "Visual motifs: [TBD]"
+      ],
+      "checklist": [
+        "References to real groups or events are reviewed for fairness and risk",
+        "Fantasy violence level aligned to intended rating intent"
+      ]
+    },
+    "character_roles": {
+      "title": "Character roles (trailer)",
+      "amk_input_prompts": [
+        "Which characters appear in the trailer and why?",
+        "Who is the audience surrogate?",
+        "Any composite or fictionalized real persons? Document posture."
+      ],
+      "outline_placeholders": [
+        "Role A (name or codename): [TBD]",
+        "Role B: [TBD]",
+        "Antagonist or obstacle: [TBD]"
+      ],
+      "checklist": [
+        "No real-person likeness without consent and counsel where applicable",
+        "Child or youth portrayal triggers child or privacy review path if applicable"
+      ]
+    },
+    "trailer_structure": {
+      "title": "Trailer structure",
+      "amk_input_prompts": [
+        "Target runtime band (teaser versus theatrical trailer)?",
+        "Single-spine or parallel threads in this cut?",
+        "Title card and end-tag strategy?"
+      ],
+      "outline_placeholders": [
+        "Act I (establish): [TBD]",
+        "Act II (complicate): [TBD]",
+        "Act III (payoff tease): [TBD]",
+        "End card: [TBD]"
+      ],
+      "checklist": [
+        "Structure matches honest product (film or series) positioning",
+        "No bait-and-switch on tone or rating"
+      ]
+    },
+    "scene_beats": {
+      "title": "Scene beats",
+      "amk_input_prompts": [
+        "List 8–14 beats with approximate duration notes.",
+        "Which beats rely on borrowed score or temp track? Mark for replacement."
+      ],
+      "outline_placeholders": [
+        "Beat 1: [TBD]",
+        "Beat 2: [TBD]",
+        "Beat N: [TBD]"
+      ],
+      "checklist": [
+        "Each beat has a rights note: original, licensed, or clearance TBD",
+        "No uncleared news or third-party footage"
+      ]
+    },
+    "shot_list": {
+      "title": "Shot list",
+      "amk_input_prompts": [
+        "For each hero shot: lens intent, movement, and emotional job.",
+        "VFX or stock dependency per shot?"
+      ],
+      "outline_placeholders": [
+        "Shot 01: [TBD]",
+        "Shot 02: [TBD]",
+        "Shot N: [TBD]"
+      ],
+      "checklist": [
+        "Stock and VFX sources logged before external screeners",
+        "Stunt or sensitive action flagged for specialist review if needed"
+      ]
+    },
+    "visual_style_guide": {
+      "title": "Visual style guide",
+      "amk_input_prompts": [
+        "Primary palette and contrast intent (theatrical versus mobile-first)?",
+        "Typography and title treatment ownership?",
+        "Reference films for mood only — not for frame theft."
+      ],
+      "outline_placeholders": [
+        "Color direction: [TBD]",
+        "Texture and grain: [TBD]",
+        "Title lockup: [TBD]"
+      ],
+      "checklist": [
+        "Style guide describes intent; does not grant IP to mimic protected artists without permission",
+        "Logos and third-party marks usage cleared or avoided"
+      ]
+    },
+    "music_sound_brief": {
+      "title": "Music and sound brief",
+      "amk_input_prompts": [
+        "Temp track policy: internal only until licensed or original score path chosen?",
+        "Dialogue-to-music balance and loudness targets?",
+        "Sound design motifs that carry meaning for accessibility?"
+      ],
+      "outline_placeholders": [
+        "Temp mood: [TBD]",
+        "Stem plan: [TBD]",
+        "Final delivery format: [TBD]"
+      ],
+      "checklist": [
+        "Music brief is not a license — rights review before any public sync",
+        "No uncleared samples in any externalised cut"
+      ]
+    },
+    "poster_key_art_brief": {
+      "title": "Poster and key-art brief",
+      "amk_input_prompts": [
+        "Single hero image concept and safe margin for title?",
+        "Formats: one-sheet, digital 16:9, social crops?",
+        "Talent billing and contractual order requirements?"
+      ],
+      "outline_placeholders": [
+        "Hero pose or symbol: [TBD]",
+        "Tagline: [TBD]",
+        "Legal line block: [TBD]"
+      ],
+      "checklist": [
+        "Poster brief does not generate art — commission or design lane is separate",
+        "Billing and trademark lines reviewed before print or paid social"
+      ]
+    },
+    "accessibility_and_sensory_notes": {
+      "title": "Accessibility and sensory notes",
+      "amk_input_prompts": [
+        "Flashing or strobing risk? Seizure-safe cut plan?",
+        "Meaning carried by audio alone — captions plan?",
+        "Intensity or trauma themes — content warnings for marketing?"
+      ],
+      "outline_placeholders": [
+        "Flash profile: [TBD]",
+        "Caption coverage: [TBD]",
+        "Content warning line: [TBD]"
+      ],
+      "checklist": [
+        "Accessibility notes feed engineering and mastering checklists; not a substitute for platform policy review"
+      ]
+    },
+    "safety_rights_checklist": {
+      "title": "Safety and rights checklist",
+      "amk_input_prompts": [
+        "Attach clearance log links or file IDs when known.",
+        "List any pending unknowns explicitly."
+      ],
+      "outline_placeholders": [
+        "Music clearance: [TBD]",
+        "Stock footage: [TBD]",
+        "Talent and likeness: [TBD]",
+        "Brand and product placement: [TBD]"
+      ],
+      "checklist": [
+        "Rights posture is original or permission required — no silent assumption",
+        "Public or paid placement blocked until AMK and counsel where required"
+      ]
+    },
+    "review_questions_for_amk": {
+      "title": "Review questions for AMK",
+      "amk_input_prompts": [
+        "Does this trailer honestly represent the feature?",
+        "Are all superlatives evidenced or removed?",
+        "Are minors or sensitive populations treated per policy?",
+        "Is any pricing, donation, or commercial CTA attached? If yes, route Z-SUSBV and entitlement review."
+      ],
+      "outline_placeholders": [
+        "AMK decision: approve internal pack only — [date]",
+        "AMK decision: open public screener lane — [blocked until gate]"
+      ],
+      "checklist": [
+        "Indicator and bundle are advisory — AMK opens public release",
+        "No deploy, upload, or provider calls from this artefact"
+      ]
+    }
+  },
+  "forbidden_actions": [
+    "generate copyrighted media",
+    "mimic protected living artists without permission",
+    "use real-person likeness without consent",
+    "publish trailer",
+    "make legal or financial claims",
+    "call external AI or media APIs",
+    "deploy or upload",
+    "auto-merge trailer assets to production branches"
+  ],
+  "required_human_gates": [
+    "AMK creative approval",
+    "Rights or IP review before public use",
+    "Public release review",
+    "Music or audio rights review",
+    "Child or privacy review if minors or youth content involved"
+  ],
+  "related_docs": [
+    "docs/creative/Z_OMNAI_MOVIE_TRAILER_REVIEW_BUNDLE.md",
+    "docs/creative/Z_OMNAI_MOVIE_MARKETING_TOOL_PIPELINES.md",
+    "docs/creative/Z_OMNAI_BLUEPRINT_CAPABILITY_WORKBENCH.md",
+    "docs/Z_AUTONOMOUS_GUARDIAN_LOOP.md",
+    "docs/Z_TRAFFIC_MINIBOTS.md",
+    "docs/AMK_AUTONOMOUS_APPROVAL_LADDER.md"
+  ],
+  "related_reports": [
+    "data/reports/z_omnai_build_plan_report.json",
+    "data/reports/z_omnai_blueprint_report.json"
+  ]
+}

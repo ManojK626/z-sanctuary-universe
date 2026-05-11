@@ -1,0 +1,50 @@
+{
+  "schema": "z_continuous_verification_report_v1",
+  "timestamp": "2026-05-05T18:28:10.719Z",
+  "generation_time_ms": 183,
+  "overall_signal": "GREEN",
+  "gate_status_summary": {
+    "total_gates_checked": 2,
+    "passed": 2,
+    "failed": 0,
+    "gates": [
+      {
+        "gate_id": "z_ide_fusion",
+        "gate_name": "IDE Fusion Coordination",
+        "status": "PASS",
+        "signal": "GREEN",
+        "execution_time_ms": 94,
+        "error": null,
+        "checked_at": "2026-05-05T18:28:10.719Z"
+      },
+      {
+        "gate_id": "z_ide_14drp",
+        "gate_name": "14DRP Agent Protocol",
+        "status": "PASS",
+        "signal": "GREEN",
+        "execution_time_ms": 88,
+        "error": null,
+        "checked_at": "2026-05-05T18:28:10.719Z"
+      }
+    ]
+  },
+  "health_categories": {
+    "documentation_health": "UNKNOWN",
+    "ide_health": "GREEN",
+    "compliance_health": "GREEN"
+  },
+  "active_sessions": {
+    "count": 1,
+    "sessions": [
+      {}
+    ]
+  },
+  "alerts": [],
+  "latest_alerts": [],
+  "alert_count": {
+    "RED": 0,
+    "BLUE": 0,
+    "YELLOW": 0
+  },
+  "next_recommended_action": "CONTINUE_NORMAL_OPERATIONS"
+}

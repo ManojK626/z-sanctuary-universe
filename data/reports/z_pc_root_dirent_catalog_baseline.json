@@ -1,0 +1,140 @@
+{
+  "schema_version": 1,
+  "generated_at": "2026-04-25T22:51:17.313Z",
+  "name": "z-pc-root-dirent-catalog",
+  "advisory": true,
+  "drp_note": "Read-only inventory of pc_root. Does not modify disk or registry. Use Guardian + registry edits for authority.",
+  "registry_source": "data/z_pc_root_projects.json",
+  "pc_root": "C:/Cursor Projects Organiser",
+  "max_depth": 1,
+  "max_children_per_dir": 150,
+  "entry_count": 18,
+  "entries": [
+    {
+      "name": ".cursor",
+      "relative": ".cursor",
+      "kind": "directory",
+      "mtime_ms": 1776551022097,
+      "size_bytes": null
+    },
+    {
+      "name": "222222",
+      "relative": "222222",
+      "kind": "directory",
+      "mtime_ms": 1776198004092,
+      "size_bytes": null
+    },
+    {
+      "name": "Amk-Goku Vaults",
+      "relative": "Amk-Goku Vaults",
+      "kind": "directory",
+      "mtime_ms": 1776969614335,
+      "size_bytes": null
+    },
+    {
+      "name": "AT Princess&Blackie Copilot",
+      "relative": "AT Princess&Blackie Copilot",
+      "kind": "directory",
+      "mtime_ms": 1777142973354,
+      "size_bytes": null
+    },
+    {
+      "name": "Backups",
+      "relative": "Backups",
+      "kind": "directory",
+      "mtime_ms": 1773407736184,
+      "size_bytes": null
+    },
+    {
+      "name": "Extras & Tools",
+      "relative": "Extras & Tools",
+      "kind": "directory",
+      "mtime_ms": 1777056657574,
+      "size_bytes": null
+    },
+    {
+      "name": "node_modules",
+      "relative": "node_modules",
+      "kind": "directory",
+      "mtime_ms": 1773409940790,
+      "size_bytes": null
+    },
+    {
+      "name": "Z_Labs",
+      "relative": "Z_Labs",
+      "kind": "directory",
+      "mtime_ms": 1777149164269,
+      "size_bytes": null
+    },
+    {
+      "name": "Z-OMNI AI 3D",
+      "relative": "Z-OMNI AI 3D",
+      "kind": "directory",
+      "mtime_ms": 1776966048954,
+      "size_bytes": null
+    },
+    {
+      "name": "Z-OMNI-Sanctuary",
+      "relative": "Z-OMNI-Sanctuary",
+      "kind": "directory",
+      "mtime_ms": 1776802840624,
+      "size_bytes": null
+    },
+    {
+      "name": "Z-SANCTUARY AI SKYSCRAPER",
+      "relative": "Z-SANCTUARY AI SKYSCRAPER",
+      "kind": "directory",
+      "mtime_ms": 1776180774100,
+      "size_bytes": null
+    },
+    {
+      "name": "Z-Sanctuary Browser",
+      "relative": "Z-Sanctuary Browser",
+      "kind": "directory",
+      "mtime_ms": 1776969614344,
+      "size_bytes": null
+    },
+    {
+      "name": "Z-Sanctuary Claude",
+      "relative": "Z-Sanctuary Claude",
+      "kind": "directory",
+      "mtime_ms": 1776180774108,
+      "size_bytes": null
+    },
+    {
+      "name": "Z-Sanctuary G",
+      "relative": "Z-Sanctuary G",
+      "kind": "directory",
+      "mtime_ms": 1777149648883,
+      "size_bytes": null
+    },
+    {
+      "name": "Z-SANCTUARY_ZUNO_AI",
+      "relative": "Z-SANCTUARY_ZUNO_AI",
+      "kind": "directory",
+      "mtime_ms": 1772054862984,
+      "size_bytes": null
+    },
+    {
+      "name": "z-sanctuary-aimanity",
+      "relative": "z-sanctuary-aimanity",
+      "kind": "directory",
+      "mtime_ms": 1776180774110,
+      "size_bytes": null
+    },
+    {
+      "name": "Z-Sister Aisling Sol",
+      "relative": "Z-Sister Aisling Sol",
+      "kind": "directory",
+      "mtime_ms": 1777149158618,
+      "size_bytes": null
+    },
+    {
+      "name": "ZSanctuary_Universe",
+      "relative": "ZSanctuary_Universe",
+      "kind": "directory",
+      "mtime_ms": 1777058341294,
+      "size_bytes": null
+    }
+  ]
+}

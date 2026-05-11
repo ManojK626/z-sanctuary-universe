@@ -1,0 +1,87 @@
+{
+  "schema": "z_mcburb_backup_policy_v1",
+  "name": "Z-MCBURB",
+  "full_name": "Multi-Cores Backups Reconverge Booster",
+  "posture": "read_only_resilience_doctrine_metadata_only_phase_1",
+  "purpose": "Keep Z-Sanctuary resilient when files, reports, registries, dashboards, or project spines drift, duplicate, break, disappear, or split across folders — without silently overwriting source truth.",
+  "backup_domains": [
+    {
+      "id": "hub_reports",
+      "description": "Generated JSON/MD under data/reports and sibling receipt paths.",
+      "examples": ["z_traffic_minibots_status", "zuno_awareness_score", "z_susbv_validation_report", "z_car2_similarity_report"]
+    },
+    {
+      "id": "hub_registries",
+      "description": "Canonical JSON registries and manifests under data/ and dashboard data.",
+      "examples": ["z_master_module_registry.json", "z_service_entitlement_catalog.json", "z_universe_service_catalog.json"]
+    },
+    {
+      "id": "floating_spines",
+      "description": "Docs, cross-project links, AI Builder pack, Monster map, Zuno snapshot chain.",
+      "examples": ["docs/z_zuno_technology_snapshot.md", "docs/Z_SANCTUARY_MONSTER_PROJECT_MASTER_MAP.md", "AGENTS.md"]
+    },
+    {
+      "id": "workspace_spines",
+      "description": "Multi-root / Organiser alignment; PC root catalog baselines where used.",
+      "examples": ["z_pc_root_catalog", "cursor folder blueprint"]
+    },
+    {
+      "id": "pack_sync_artifacts",
+      "description": "Whale Bus / sync pack outputs when chartered — metadata movement only until gate.",
+      "examples": ["z_whale_bus_comms_run outputs where present"]
+    }
+  ],
+  "reconvergence_allowed_modes": [
+    {
+      "mode": "report_only",
+      "description": "Read-only scans and JSON/MD status; default for Phase MCBURB-1.",
+      "automation_level": "ZAG_L0_L1"
+    },
+    {
+      "mode": "suggest_paths",
+      "description": "Emit human-readable reconvergence suggestions in reports; no apply.",
+      "automation_level": "ZAG_L1"
+    },
+    {
+      "mode": "human_approved_apply",
+      "description": "Any merge, relink, copy-back, or overwrite requires explicit AMK/human gate and rollback plan.",
+      "automation_level": "ZAG_L4_L5_charter"
+    }
+  ],
+  "forbidden_actions": [
+    "silent_overwrite_of_canonical_source_truth",
+    "auto_restore_without_human_confirmation_and_backup",
+    "destructive_delete_or_merge_without_charter",
+    "runtime_bridge_or_deploy_from_mcburb_slice",
+    "billing_or_entitlement_enforcement_side_effects",
+    "deanonymization_or_vpn_bypass",
+    "network_surveillance_or_hidden_user_tracking"
+  ],
+  "required_checks": [
+    "registry_and_manifest_alignment_where_scripts_exist",
+    "duplicate_and_drift_scan_z_car2_after_material_doc_churn",
+    "traffic_tower_z_traffic_before_widening_operational_scope",
+    "monster_and_zuno_snapshot_rhythm_when_registries_change",
+    "backup_provenance_recorded_when_human_creates_official_backup_artifacts"
+  ],
+  "human_gate_categories": [
+    "cross_repo_write_or_merge",
+    "restore_from_backup_or_NAS",
+    "deletion_of_user_or_vault_tier_data",
+    "change_to_core_governance_json",
+    "commercial_or_pricing_surface",
+    "children_crisis_health_privacy_paths"
+  ],
+  "related_systems": [
+    { "id": "superpower_shell", "role": "command and check layer for scripted resilience" },
+    { "id": "whales_bus", "role": "large data or event movement spine when chartered" },
+    { "id": "ai_tower", "role": "project and service awareness surfaces" },
+    { "id": "floating_spines", "role": "docs, reports, registries, cross-project links" },
+    { "id": "ghost_core", "role": "backup and reflection trail (symbolic + operational receipts)" },
+    { "id": "alien_core", "role": "anomaly and out-of-pattern signals — advisory only in Phase 1" },
+    { "id": "z_car2", "role": "duplicate and drift scan" },
+    { "id": "z_traffic", "role": "proceed / hold / RED advisory tower" },
+    { "id": "zag", "role": "autonomy limits; MCBURB stays read-only until gate" }
+  ],
+  "future_outputs_note": "Phase MCBURB-2+ may add scripts/z_mcburb_status.mjs writing data/reports/z_mcburb_backup_reconvergence_status.{json,md} — not part of Phase MCBURB-1."
+}

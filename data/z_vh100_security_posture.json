@@ -1,0 +1,110 @@
+{
+  "schema": "z_vh100_security_posture_v1",
+  "name": "Z-VH100",
+  "full_name": "Vegeta & Harisha 100 Security Core",
+  "posture": "defensive_security_attitude_metadata_only_phase_1",
+  "purpose": "Defensive security posture engine: Vegeta-style defense and challenge logic plus Harisha/Hashirai mentor-guardian discipline — boosting Z-MCBURB, Z-FBAP, ZAG, Z-Traffic, Z-CAR², NAV/ZSX, and future AI Tower awareness without becoming an attack or surveillance tool.",
+  "vegeta_pillar": {
+    "namesake_role": "defense_and_pressure_check",
+    "meaning": "No-nonsense challenge to unsafe shortcuts: verify gates, refuse silent escalation, demand evidence before widen scope.",
+    "allowed": ["policy_challenge_questions", "severity_classification", "red_team_thought_experiments_in_docs_and_charters"],
+    "forbidden": ["offensive_exploitation", "external_target_scanning_without_charter", "surveillance_of_individuals", "vpn_deanonymization"]
+  },
+  "harisha_hashirai_pillar": {
+    "namesake_role": "mentor_guardian_council",
+    "meaning": "Harisha / Hashirai 100 — mentor-guardian layer and 100-point protection discipline: proportionality, care, and human-in-the-loop escalation.",
+    "allowed": ["guardian_response_modes", "mentor_review_checklists", "compassion_bounded_refusal_of_harmful_automation"],
+    "forbidden": ["replacing_human_moral_gate_on_sacred_commercial_paths", "autonomous_block_delete_restore"]
+  },
+  "posture_levels": [
+    {
+      "id": "VH0_observer",
+      "label": "Observer",
+      "description": "Read doctrine and metadata; no automated enforcement.",
+      "maps_to_zag": "L0"
+    },
+    {
+      "id": "VH1_advisor",
+      "label": "Advisor",
+      "description": "Classify risk and emit hints in reports; still no auto-block.",
+      "maps_to_zag": "L1"
+    },
+    {
+      "id": "VH2_guarded_hygiene",
+      "label": "Guarded hygiene",
+      "description": "Operator-invoked safe fixes only; never silent on production truth.",
+      "maps_to_zag": "L2"
+    },
+    {
+      "id": "VH3_human_gate",
+      "label": "Human gate",
+      "description": "Any material security posture change or public claim requires AMK/human.",
+      "maps_to_zag": "L3_plus_charter"
+    }
+  ],
+  "severity_bands": [
+    { "id": "info", "description": "Informational; no action required beyond awareness." },
+    { "id": "low", "description": "Track in next heartbeat; optional doc or registry refresh." },
+    { "id": "medium", "description": "Schedule human review; may elevate MCBURB/FBAP signals." },
+    { "id": "high", "description": "Stop widening scope; Z-Traffic and DRP path before proceed." },
+    { "id": "critical", "description": "Assume breach or governance break risk; human gate mandatory." }
+  ],
+  "response_modes": [
+    {
+      "id": "observe_only",
+      "description": "Record posture in receipts; no mutation.",
+      "default": true
+    },
+    {
+      "id": "recommend_human_actions",
+      "description": "List gated steps (rollback, charter, DRP review); operator executes."
+    },
+    {
+      "id": "escalate_to_council",
+      "description": "Route to mentor-guardian review (Hashirai layer) — human calendar, not bot autonomy."
+    },
+    {
+      "id": "block_automation_only",
+      "description": "Refuse further autonomous scripts in the affected lane until ZAG and human gate clear — not network block of users."
+    }
+  ],
+  "forbidden_actions": [
+    "offensive_security_tooling_or_exploit_code_in_hub_repo",
+    "network_scanning_of_external_targets_without_explicit_charter",
+    "surveillance_deanonymization_or_vpn_bypass",
+    "auto_blocking_auto_restore_auto_delete_merge_deploy_bridge_billing",
+    "provider_or_secret_calls_from_vh100_slice_phase_1",
+    "claiming_vh100_replaces_14_drp_14_dop_or_human_moral_gate"
+  ],
+  "related_systems": [
+    { "id": "z_mcburb", "role": "Backup/reconvergence severity framing; VH100 informs how hard to treat drift." },
+    { "id": "z_fbap", "role": "Fire-backs event taxonomy; VH100 aligns severity and response mode vocabulary." },
+    { "id": "z_traffic", "role": "Security posture hints aggregate with minibots chief signal." },
+    { "id": "zag", "role": "Blocks unsafe autonomy escalation; VH100 never exceeds ZAG for automation." },
+    { "id": "z_car2", "role": "Risky duplication/drift pressure-check (Vegeta-style questioning of sameness)." },
+    { "id": "zsx_nav", "role": "Bridge and catalog boundaries; VH100 reinforces reference-not-access posture." },
+    { "id": "ai_tower", "role": "Future overseer surfaces may display posture class — read-only until chartered." }
+  ],
+  "human_gate_required_actions": [
+    "any_change_to_core_security_or_vault_policy_json",
+    "any_new_automated_collection_of_identity_or_location_metadata",
+    "any_live_bridge_deploy_or_billing_touchpoint",
+    "children_crisis_health_memory_payment_surfaces",
+    "waiving_fbap_global_forbidden_metadata_rules"
+  ],
+  "drp_dop_note": "14 DRP / 14 DOP governs all escalation beyond VH1; sacred and commercial paths stay human-gated per Hierarchy Chief and vault policy.",
+  "future_phases": [
+    {
+      "phase": "VH100-2",
+      "summary": "Read-only posture report script merging MCBURB policy, FBAP taxonomy, Traffic, CAR² summaries — no enforcement."
+    },
+    {
+      "phase": "VH100-3",
+      "summary": "Operator-dashboard chips for posture class — UI read-only."
+    },
+    {
+      "phase": "VH100-4_plus",
+      "summary": "Chartered pressure tests and external scope — separate human approval; never bundled silently with Phase 1."
+    }
+  ]
+}

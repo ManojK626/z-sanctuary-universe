@@ -1,0 +1,199 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Z-Add On Dashboard · Staging (Z-Sanctuary)</title>
+    <link rel="stylesheet" href="../../interface/z_style.css" />
+    <style>
+      .z-addon-page {
+        max-width: 56rem;
+        margin: 0 auto;
+        padding: 1.25rem 1rem 2.5rem;
+      }
+      .z-addon-header {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: baseline;
+        justify-content: space-between;
+        gap: 0.75rem;
+        margin-bottom: 1.25rem;
+        padding-bottom: 1rem;
+        border-bottom: 1px solid rgba(120, 160, 255, 0.2);
+      }
+      .z-addon-grid {
+        display: grid;
+        gap: 0.75rem;
+        grid-template-columns: repeat(auto-fill, minmax(16rem, 1fr));
+      }
+      .z-addon-card {
+        border: 1px solid rgba(120, 160, 255, 0.25);
+        border-radius: 0.5rem;
+        padding: 0.85rem 1rem;
+        background: rgba(5, 12, 32, 0.55);
+      }
+      .z-addon-card h3 {
+        margin: 0 0 0.35rem 0;
+        font-size: 1rem;
+        font-weight: 600;
+      }
+      .z-badge-draft {
+        color: #94a3b8;
+      }
+      .z-badge-test {
+        color: #fbbf24;
+      }
+      .z-badge-ready {
+        color: #4ade80;
+      }
+      .z-badge-promoted {
+        color: #60a5fa;
+      }
+    </style>
+  </head>
+  <body class="z-dashboard-organism">
+    <div class="z-addon-page">
+      <a class="z-skip-link" href="#zAddonMain">Skip to add-on content</a>
+      <div class="z-addon-header">
+        <div>
+          <h1 id="zAddonTitle" style="margin: 0 0 0.25rem; font-size: 1.35rem">Z-Add On</h1>
+          <p id="zAddonSubtitle" class="z-muted" style="margin: 0; font-size: 0.9rem">Loading…</p>
+        </div>
+        <a class="z-button z-button-subtle" href="index-skk-rkpk.html" title="Main HODP SKK and RKPK"
+          >← Main SKK and RKPK</a
+        >
+      </div>
+      <div class="z-section" style="margin-bottom: 1.25rem">
+        <div class="z-section-title">Fusion policy</div>
+        <p id="zAddonFusion" class="z-muted" style="font-size: 0.88rem; margin: 0">—</p>
+      </div>
+      <div class="z-section" style="margin-bottom: 1.1rem">
+        <div class="z-section-title">GGAESP-360 (core engine)</div>
+        <p class="z-muted" style="font-size: 0.86rem; margin: 0">
+          Advisory v11–v19 pipeline (Guardian + Ethics). <a href="../panels/ggaesp_panel.html">Open GGAESP panel</a> (serve
+          hub root; run <code>npm run ts:build:ggaesp</code> if the panel cannot load the compiled module). Phase 2: memory
+          JSONL <code>data/ggaesp/memory_capsules.jsonl</code> — <code>npm run ggaesp:memory:append</code> from hub after export.
+        </p>
+      </div>
+      <div class="z-section" style="margin-bottom: 1.1rem">
+        <div class="z-section-title">HeartPulse (staging reflection lane)</div>
+        <p class="z-muted" style="font-size: 0.86rem; margin: 0">
+          <strong>PREPARE ONLY:</strong> emotional storytelling and self-reflection surface.
+          <a href="../panels/z_heartpulse_panel.html">Open HeartPulse panel</a>.
+          No people scoring, no relationship prediction, no control logic.
+        </p>
+      </div>
+      <div id="zAddonMeta" class="z-muted" style="font-size: 0.8rem; margin-bottom: 1rem"></div>
+      <div id="zAddonMain" class="z-addon-grid" aria-live="polite"></div>
+      <p class="z-muted" style="font-size: 0.75rem; margin-top: 1.5rem">
+        Edit <code>data/z_addon_dashboard_state.json</code> to add rows. Serve the hub root (e.g. Live Server on
+        <code>ZSanctuary_Universe</code>) so data loads. This page is secondary to the main dashboard until you promote
+        modules to production panels.
+      </p>
+    </div>
+    <script>
+      (function () {
+        var DATA = '../../data/z_addon_dashboard_state.json';
+        var grid = document.getElementById('zAddonMain');
+        var sub = document.getElementById('zAddonSubtitle');
+        var title = document.getElementById('zAddonTitle');
+        var fusion = document.getElementById('zAddonFusion');
+        var meta = document.getElementById('zAddonMeta');
+
+        function statusClass(s) {
+          var t = (s || '').toLowerCase();
+          if (t === 'ready') return 'z-badge-ready';
+          if (t === 'test') return 'z-badge-test';
+          if (t === 'promoted') return 'z-badge-promoted';
+          return 'z-badge-draft';
+        }
+
+        function render(d) {
+          if (d.title) title.textContent = d.title;
+          if (d.subtitle) sub.textContent = d.subtitle;
+          if (d.fusion_policy) fusion.textContent = d.fusion_policy;
+          if (d.layers) {
+            meta.textContent =
+              'Layers: ' +
+              (d.layers.governance || '—') +
+              ' · Cross-project: ' +
+              (d.layers.cross_project || '—');
+          }
+          if (d.updated_at) meta.textContent = (meta.textContent ? meta.textContent + ' · ' : '') + 'Updated ' + d.updated_at;
+          var items = Array.isArray(d.items) ? d.items : [];
+          grid.innerHTML = '';
+          items.forEach(function (it) {
+            var st = (it.status || 'draft').toLowerCase();
+            var card = document.createElement('article');
+            card.className = 'z-addon-card';
+            var h = document.createElement('h3');
+            h.appendChild(document.createTextNode(it.title || it.id));
+            var badge = document.createElement('span');
+            badge.className = statusClass(st);
+            badge.style.fontSize = '0.72rem';
+            badge.style.marginLeft = '0.5rem';
+            badge.textContent = st;
+            h.appendChild(badge);
+            card.appendChild(h);
+            if (it.summary) {
+              var p = document.createElement('p');
+              p.className = 'z-muted';
+              p.style.fontSize = '0.85rem';
+              p.style.margin = '0.35rem 0 0.5rem';
+              p.textContent = it.summary;
+              card.appendChild(p);
+            }
+            var tagRow = document.createElement('div');
+            tagRow.style.fontSize = '0.75rem';
+            tagRow.style.opacity = '0.9';
+            if (it.layer) tagRow.appendChild(document.createTextNode('Layer: ' + it.layer + ' '));
+            if (Array.isArray(it.tags) && it.tags.length) {
+              var tg = document.createElement('span');
+              tg.className = 'z-muted';
+              tg.textContent = '· ' + it.tags.join(', ');
+              tagRow.appendChild(tg);
+            }
+            card.appendChild(tagRow);
+            if (it.main_hodp) {
+              var mp = document.createElement('p');
+              mp.className = 'z-muted';
+              mp.style.fontSize = '0.72rem';
+              mp.style.margin = '0.5rem 0 0';
+              mp.textContent = 'Main HODP: ' + it.main_hodp;
+              card.appendChild(mp);
+            }
+            if (it.href) {
+              var a = document.createElement('a');
+              a.href = it.href;
+              a.className = 'z-button z-button-subtle';
+              a.style.display = 'inline-block';
+              a.style.marginTop = '0.65rem';
+              a.style.fontSize = '0.8rem';
+              a.textContent = it.href.indexOf('http') === 0 || it.href[0] === '/' ? 'Open link' : 'Resource';
+              a.target = '_blank';
+              a.rel = 'noopener noreferrer';
+              card.appendChild(a);
+            }
+            grid.appendChild(card);
+          });
+        }
+
+        fetch(DATA, { cache: 'no-store' })
+          .then(function (r) {
+            if (!r.ok) throw new Error('status ' + r.status);
+            return r.json();
+          })
+          .then(render)
+          .catch(function (e) {
+            sub.textContent = 'Could not load state JSON. Serve hub root and check data/z_addon_dashboard_state.json.';
+            fusion.textContent = e && e.message ? String(e.message) : 'Load failed';
+            var p = document.createElement('p');
+            p.className = 'z-muted';
+            p.textContent =
+              'Use Live Server (or any static server) with the workspace root set to ZSanctuary_Universe so ../../data/ resolves.';
+            grid.appendChild(p);
+          });
+      })();
+    </script>
+  </body>
+</html>

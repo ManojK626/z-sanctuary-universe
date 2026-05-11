@@ -1,0 +1,19 @@
+{
+  "schema": "z_project_awareness_capsule_v1",
+  "project_id": "ZSanctuary_Universe",
+  "project_name": "Z-Sanctuary Universe Hub",
+  "primary_domain": "hodp_governance",
+  "current_signal": "GREEN",
+  "growth_percent": 72,
+  "required_checks": ["npm run verify:md", "npm run z:traffic", "npm run z:ecosystem:awareness"],
+  "api_health": "not_required_for_hub_read_only",
+  "smoke_gate": "npm run z:traffic",
+  "build_gate": "npm run verify:full:technical optional; not run by Z-AWARE-1 validator",
+  "docs_gate": "npm run verify:md",
+  "autonomy_level": "L1",
+  "allowed_auto_checks": ["verify:md", "z:traffic", "z:car2", "dashboard:registry-verify", "z:ecosystem:awareness"],
+  "human_gated_actions": ["deploy", "cloudflare_bind", "billing", "bridge", "provider_keys", "auto_merge"],
+  "related_docs": ["docs/Z_ECOSYSTEM_AWARENESS_SPINE.md", "AGENTS.md"],
+  "related_reports": ["data/reports/z_ecosystem_awareness_report.json", "data/reports/z_traffic_minibots_status.json"],
+  "notes": "Canonical hub capsule. Sacred doctrine remains in hub docs/data only."
+}

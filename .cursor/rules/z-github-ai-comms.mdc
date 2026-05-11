@@ -1,0 +1,16 @@
+---
+description: GitHub and GitHub AI precautions; communications-flow bindings — use requirements JSON + master MD.
+globs:
+  - .github/**/*
+  - data/z_github_ai_comms_requirements.json
+  - data/z_ecosystem_github_identity.json
+  - docs/Z-GITHUB-AI-COMMS-PRECAUTIONS.md
+---
+
+# GitHub + AI and communications flows
+
+1. **Authority:** Hub manifests and PC/NAS outrank cloud AI output. Review before merge; see [docs/Z-GITHUB-AI-COMMS-PRECAUTIONS.md](docs/Z-GITHUB-AI-COMMS-PRECAUTIONS.md).
+2. **Requirements:** [data/z_github_ai_comms_requirements.json](data/z_github_ai_comms_requirements.json) — update themes when GitHub/Copilot/Spark/Actions change; run **`npm run comms:github-ai`** to refresh [data/reports/z_github_ai_comms_manifest.json](data/reports/z_github_ai_comms_manifest.json).
+3. **Secrets:** Never commit PATs, private keys, or vault content. CI uses repo Secrets only.
+4. **Identity:** [data/z_ecosystem_github_identity.json](data/z_ecosystem_github_identity.json) for canonical login/email.
+5. **Code refs:** [core/z_github_ai_comms_refs.js](core/z_github_ai_comms_refs.js) for stable paths in panels or scripts.

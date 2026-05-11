@@ -1,0 +1,17 @@
+{
+  "generated_at": "2026-04-27T20:03:27.957Z",
+  "votes": {
+    "signal_strengthening": 0.41500000000000004
+  },
+  "primary_focus": "signal_strengthening",
+  "consensus": 1,
+  "confidence": "high",
+  "conflicts": [],
+  "final_recommendation": "Focus on signal strengthening before secondary actions.",
+  "inputs_used": [
+    "adaptive_coherence",
+    "system_health",
+    "signal_health"
+  ],
+  "governance_note": "Advisory only — no execution or overrides."
+}

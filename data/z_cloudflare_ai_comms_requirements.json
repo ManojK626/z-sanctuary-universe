@@ -1,0 +1,80 @@
+{
+  "ZFormat": "v1",
+  "ZUpdatedAt": "2026-04-17T00:00:00.000Z",
+  "title": "Cloudflare + dashboard AI — contingency and comms-flow bindings",
+  "description": "Optional edge layer (Workers, Pages, Workers AI, Ask AI, integrations). Not required for daily hub operation. Run npm run comms:cloudflare-ai after edits.",
+  "authority_chain": [
+    "docs/Z-HIERARCHY-CHIEF-AND-OBSERVER-VIEW.md",
+    "docs/Z-COMPLETIONS-TEST-AND-COMMUNICATIONS-FLOW.md",
+    "rules/Z_SANCTUARY_SECURITY_POLICY.md",
+    "MONOREPO_GUIDE.md"
+  ],
+  "instructional_docs": [
+    {
+      "id": "cloudflare-ai-comms-master",
+      "path": "docs/Z-CLOUDFLARE-AI-COMMS-PRECAUTIONS.md",
+      "role": "Workers/Pages/AI precautions, emergencies, Agent Lee tokens"
+    },
+    {
+      "id": "task008_monorepo",
+      "path": "MONOREPO_GUIDE.md",
+      "role": "Wrangler, bundle, preview vs production boundaries"
+    }
+  ],
+  "data_sources": [
+    {
+      "id": "cloudflare_contingency_identity",
+      "path": "data/z_cloudflare_contingency_identity.json",
+      "role": "Non-secret edge identity notes (workers.dev subdomain, policy)"
+    },
+    {
+      "id": "ecosystem_github_identity",
+      "path": "data/z_ecosystem_github_identity.json",
+      "role": "Same operator email alignment across GitHub and Cloudflare accounts"
+    },
+    {
+      "id": "z_bridge",
+      "path": "data/z_bridge",
+      "role": "Optional: directory presence for Z-Bridge payloads (sync checks folder exists)"
+    }
+  ],
+  "precaution_themes": [
+    {
+      "id": "secrets_edge",
+      "severity": "block",
+      "summary": "Never commit Cloudflare API tokens, Account ID in tracked files, or Wrangler secrets. Use dashboard Secrets and local untracked env.",
+      "comms_binding": "Release gate and vault policy outrank edge deploy convenience."
+    },
+    {
+      "id": "ask_ai_cloudflare",
+      "severity": "medium",
+      "summary": "Cloudflare Ask AI is for navigation and how-to only — not a source of binding governance.",
+      "comms_binding": "Same as MONOREPO_GUIDE Phase 7; cross-check Z_SANCTUARY_SECURITY_POLICY."
+    },
+    {
+      "id": "third_party_agent_integrations",
+      "severity": "high",
+      "summary": "Read-only API tokens for dashboard agents (e.g. Agent Lee style prompts): minimum scope; review quarterly.",
+      "comms_binding": "Z-Bridge logs must not echo tokens; revoke on leak."
+    },
+    {
+      "id": "workers_ai_future",
+      "severity": "medium",
+      "summary": "Workers AI / Vectorize / R2 / KV: adopt only with a designed use case in Master Register — not required for hub core.",
+      "comms_binding": "Comms flows stay manifest- and file-driven until architecture approves edge AI data paths."
+    },
+    {
+      "id": "emergency_role",
+      "severity": "medium",
+      "summary": "Cloudflare is contingency + soft launch — restores read-only visibility; does not replace Cursor, registry, or Folder Manager authority.",
+      "comms_binding": "z_cloudflare_ai_comms_manifest.json timestamps document propagation through toolchain."
+    }
+  ],
+  "report_outputs": [
+    {
+      "path": "data/reports/z_cloudflare_ai_comms_manifest.json",
+      "producer": "scripts/z_cloudflare_ai_comms_sync.mjs",
+      "consumers": ["operators", "future dashboard panels", "Z-Bridge observability"]
+    }
+  ]
+}

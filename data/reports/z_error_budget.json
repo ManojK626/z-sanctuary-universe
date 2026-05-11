@@ -1,0 +1,70 @@
+{
+  "generated_at": "2026-05-02T18:16:33.826Z",
+  "mode": "read-only",
+  "overall_status": "green",
+  "profiles": [
+    {
+      "profile": "CORE",
+      "slo_target": 0.995,
+      "windows": [
+        {
+          "window_days": 7,
+          "window_start": "2026-04-25T18:16:33.828Z",
+          "window_end": "2026-05-02T18:16:33.828Z",
+          "allowed_downtime_seconds": 3024,
+          "spent_downtime_seconds": 0,
+          "remaining_downtime_seconds": 3024,
+          "burn_rate": 0,
+          "status": "green",
+          "failure_count": 0,
+          "sample_failures": []
+        },
+        {
+          "window_days": 30,
+          "window_start": "2026-04-02T18:16:33.828Z",
+          "window_end": "2026-05-02T18:16:33.828Z",
+          "allowed_downtime_seconds": 12960,
+          "spent_downtime_seconds": 0,
+          "remaining_downtime_seconds": 12960,
+          "burn_rate": 0,
+          "status": "green",
+          "failure_count": 0,
+          "sample_failures": []
+        }
+      ],
+      "overall_status": "green"
+    },
+    {
+      "profile": "LAB",
+      "slo_target": 0.99,
+      "windows": [
+        {
+          "window_days": 7,
+          "window_start": "2026-04-25T18:16:33.828Z",
+          "window_end": "2026-05-02T18:16:33.828Z",
+          "allowed_downtime_seconds": 6048,
+          "spent_downtime_seconds": 0,
+          "remaining_downtime_seconds": 6048,
+          "burn_rate": 0,
+          "status": "green",
+          "failure_count": 0,
+          "sample_failures": []
+        },
+        {
+          "window_days": 30,
+          "window_start": "2026-04-02T18:16:33.828Z",
+          "window_end": "2026-05-02T18:16:33.828Z",
+          "allowed_downtime_seconds": 25920,
+          "spent_downtime_seconds": 0,
+          "remaining_downtime_seconds": 25920,
+          "burn_rate": 0,
+          "status": "green",
+          "failure_count": 0,
+          "sample_failures": []
+        }
+      ],
+      "overall_status": "green"
+    }
+  ],
+  "notes": "Error budget is computed from incidents + guard status. No auto-actions. Adjust incident duration_seconds to improve precision."
+}

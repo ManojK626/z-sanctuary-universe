@@ -1,0 +1,192 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Z — Decision + SPI (advisory)</title>
+    <style>
+      :root {
+        --bg: #0f1115;
+        --card: #171a21;
+        --text: #e8eaed;
+        --muted: #9aa0a6;
+        --accent: #5c9ded;
+        --warn: #f5a623;
+        --border: #2a2f3a;
+      }
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        margin: 0;
+        font-family: system-ui, Segoe UI, Roboto, sans-serif;
+        background: var(--bg);
+        color: var(--text);
+        line-height: 1.45;
+        padding: 1rem 1.25rem 2rem;
+      }
+      h1 {
+        font-size: 1.1rem;
+        font-weight: 600;
+        margin: 0 0 0.35rem;
+      }
+      p.lead {
+        margin: 0 0 1rem;
+        color: var(--muted);
+        font-size: 0.9rem;
+      }
+      section {
+        background: var(--card);
+        border: 1px solid var(--border);
+        border-radius: 10px;
+        padding: 1rem;
+        margin-bottom: 1rem;
+      }
+      h2 {
+        font-size: 0.95rem;
+        margin: 0 0 0.65rem;
+        color: var(--accent);
+      }
+      ul {
+        margin: 0;
+        padding-left: 1.1rem;
+      }
+      li {
+        margin-bottom: 0.45rem;
+      }
+      .meta {
+        font-size: 0.8rem;
+        color: var(--muted);
+      }
+      .pill {
+        display: inline-block;
+        font-size: 0.75rem;
+        padding: 0.15rem 0.45rem;
+        border-radius: 999px;
+        background: #222733;
+        color: var(--muted);
+        margin-right: 0.35rem;
+      }
+      .empty {
+        color: var(--muted);
+        font-style: italic;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Decision lifecycle + SPI suggestions</h1>
+    <p class="lead">
+      Read-only view of <code>z_bot_decisions.json</code>, <code>z_structural_patterns.json</code>, and
+      <code>z_spi_decision_advice.json</code>. No auto-execution — use <code>npm run bot:decision:act</code> or your bridge
+      after human review.
+    </p>
+    <p class="meta" style="margin: -0.5rem 0 1rem; border-left: 3px solid var(--accent); padding: 0.5rem 0.65rem; background: rgba(92, 157, 237, 0.08)">
+      All build decisions follow <a href="../../docs/Z-BUILD-GATE-MATRIX.md" style="color: var(--accent)">docs/Z-BUILD-GATE-MATRIX.md</a>
+      (BUILD NOW / PREPARE / WAIT / BLOCK) before large Cursor or autonomous work.
+    </p>
+
+    <section id="spiSection">
+      <h2>SPI — structural intelligence</h2>
+      <div id="spiMeta" class="meta">Loading…</div>
+      <div class="spi-advice" style="margin-top: 0.65rem">
+        <h3 style="font-size: 0.88rem; margin: 0 0 0.4rem; color: var(--text)">SPI suggestions</h3>
+        <ul id="spiSuggestList">
+          <li class="empty">Loading…</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="adviceSection">
+      <h2>SPI decision advisor</h2>
+      <div id="adviceMeta" class="meta">Loading…</div>
+      <ul id="adviceList">
+        <li class="empty">Loading…</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Governance decisions</h2>
+      <ul id="decisionList">
+        <li class="empty">Loading…</li>
+      </ul>
+    </section>
+
+    <script>
+      async function fetchJson(url) {
+        try {
+          const r = await fetch(url, { cache: 'no-store' });
+          if (!r.ok) return null;
+          return await r.json();
+        } catch {
+          return null;
+        }
+      }
+
+      function esc(s) {
+        const d = document.createElement('div');
+        d.textContent = s == null ? '' : String(s);
+        return d.innerHTML;
+      }
+
+      async function boot() {
+        const [spi, advice, dec] = await Promise.all([
+          fetchJson('/data/reports/z_structural_patterns.json'),
+          fetchJson('/data/reports/z_spi_decision_advice.json'),
+          fetchJson('/data/reports/z_bot_decisions.json'),
+        ]);
+
+        const spiMeta = document.getElementById('spiMeta');
+        const spiList = document.getElementById('spiSuggestList');
+        if (!spi || !spi.schema_version) {
+          spiMeta.textContent = 'Missing SPI report — run npm run spi:analyze from hub root.';
+          spiList.innerHTML = '<li class="empty">No data</li>';
+        } else {
+          spiMeta.innerHTML = `<span class="pill">phase ${esc(spi.system_phase)}</span><span class="pill">evolution ${esc(spi.evolution_phase)}</span><span class="pill">score ${esc(spi.structural_patterns_score)}</span><span class="pill">risk ${esc(spi.risk_band)}</span>`;
+          const sugs = Array.isArray(spi.decision_suggestions) ? spi.decision_suggestions : [];
+          spiList.innerHTML = sugs.length
+            ? sugs
+                .map(
+                  (s) =>
+                    `<li><strong>${esc(s.target)}</strong> → ${esc(s.suggested_action)} (${Math.round((s.confidence || 0) * 100)}%) — ${esc(s.reason)}</li>`
+                )
+                .join('')
+            : '<li class="empty">No SPI suggestions this run.</li>';
+        }
+
+        const adviceMeta = document.getElementById('adviceMeta');
+        const adviceList = document.getElementById('adviceList');
+        if (!advice || advice.present === false) {
+          adviceMeta.textContent = advice?.note || 'Run npm run spi:advice after spi:analyze.';
+          adviceList.innerHTML = '<li class="empty">No advisor file</li>';
+        } else {
+          adviceMeta.innerHTML = `<span class="pill">SPI @ ${esc(advice.spi_generated_at || 'n/a')}</span>`;
+          const rows = Array.isArray(advice.suggestions) ? advice.suggestions : [];
+          adviceList.innerHTML = rows.length
+            ? rows
+                .map(
+                  (s) =>
+                    `<li><strong>${esc(s.target)}</strong> · ${esc(s.suggested_action)} (${Math.round((s.confidence || 0) * 100)}%) — ${esc(s.reason)} <span class="meta">(${esc(s.source)})</span></li>`
+                )
+                .join('')
+            : '<li class="empty">No merged suggestions.</li>';
+        }
+
+        const list = document.getElementById('decisionList');
+        const decisions = Array.isArray(dec?.decisions) ? dec.decisions : [];
+        list.innerHTML = decisions.length
+          ? decisions
+              .map((d) => {
+                const st = esc(d?.status);
+                const id = esc(d?.id);
+                const title = esc(d?.title || '');
+                return `<li><strong>${id}</strong> <span class="pill">${st}</span> — ${title}</li>`;
+              })
+              .join('')
+          : '<li class="empty">No decisions (or missing z_bot_decisions.json).</li>';
+      }
+
+      boot();
+      setInterval(boot, 15000);
+    </script>
+  </body>
+</html>

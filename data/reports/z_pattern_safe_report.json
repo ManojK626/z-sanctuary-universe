@@ -1,0 +1,106 @@
+{
+  "schema": "z.pattern.safe.report.v1",
+  "module_id": "z_pattern_safe_governance",
+  "signal": "BLUE",
+  "registry_mode": "pattern_governance_only",
+  "generated_at": "2026-05-07T20:41:11.799Z",
+  "fixtures_included": false,
+  "registry_checks": {
+    "passed": [
+      "schema matches registry v1.",
+      "mode is pattern_governance_only.",
+      "registry_name present.",
+      "allowed_domains populated.",
+      "gated_domains populated.",
+      "forbidden_claims list present.",
+      "no forbidden_claim_paths_enabled (correct for Phase 1).",
+      "high_risk_runtime_flags all false.",
+      "signal_rules has GREEN/YELLOW/BLUE/RED."
+    ],
+    "advisory": [],
+    "red": []
+  },
+  "sample_results": [
+    {
+      "sample_id": "ps_numen_pattern_literacy_001",
+      "domain": "education_pattern_literacy",
+      "signal": "GREEN",
+      "reasons": [
+        "allowed domain education_pattern_literacy — educate/simulate/report framing"
+      ]
+    },
+    {
+      "sample_id": "ps_logical_brains_pathway_002",
+      "domain": "learning_pathway_planning",
+      "signal": "GREEN",
+      "reasons": [
+        "allowed domain learning_pathway_planning — educate/simulate/report framing"
+      ]
+    },
+    {
+      "sample_id": "ps_mu_claim_shape_003",
+      "domain": "civic_claim_classification",
+      "signal": "GREEN",
+      "reasons": [
+        "allowed domain civic_claim_classification — educate/simulate/report framing"
+      ]
+    },
+    {
+      "sample_id": "ps_dashboard_signals_004",
+      "domain": "dashboard_signal_analysis",
+      "signal": "GREEN",
+      "reasons": [
+        "allowed domain dashboard_signal_analysis — educate/simulate/report framing"
+      ]
+    },
+    {
+      "sample_id": "ps_ambiguous_dashboard_005",
+      "domain": "uncertainty_simulation",
+      "signal": "YELLOW",
+      "reasons": [
+        "simulation vocabulary without evidence pack attached"
+      ]
+    },
+    {
+      "sample_id": "ps_xbus_live_api_future_006",
+      "domain": "live_external_api",
+      "signal": "BLUE",
+      "reasons": [
+        "gated domain: live_external_api — AMK/human gate before outward claim"
+      ]
+    },
+    {
+      "sample_id": "ps_gamble_uncertainty_lab_007",
+      "domain": "gambling_related_prediction",
+      "signal": "BLUE",
+      "reasons": [
+        "gated domain: gambling_related_prediction — AMK/human gate before outward claim"
+      ]
+    },
+    {
+      "sample_id": "ps_spending_limits_edu_008",
+      "domain": "bankroll_or_money_management",
+      "signal": "BLUE",
+      "reasons": [
+        "gated domain: bankroll_or_money_management — AMK/human gate before outward claim"
+      ]
+    }
+  ],
+  "summary": {
+    "green": 4,
+    "yellow": 1,
+    "blue": 3,
+    "red": 0
+  },
+  "locked_law": [
+    "Pattern ≠ prediction certainty.",
+    "Simulation ≠ betting advice.",
+    "Confidence score ≠ guarantee.",
+    "Bankroll math ≠ financial advice.",
+    "Game pattern ≠ casino edge.",
+    "GREEN ≠ deploy.",
+    "BLUE requires AMK.",
+    "RED blocks movement.",
+    "AMK-Goku owns sacred moves."
+  ]
+}

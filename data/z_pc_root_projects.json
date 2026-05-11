@@ -1,0 +1,167 @@
+{
+  "pc_root": "C:/Cursor Projects Organiser",
+  "hub": "ZSanctuary_Universe",
+  "updated_at": "2026-05-04T13:51:10Z",
+  "source": "z-eaii-registry.json + z-eaii-build-pc-workspace.mjs",
+  "projects": [
+    {
+      "id": "zsanctuary-universe",
+      "name": "ZSanctuary_Universe",
+      "path": "ZSanctuary_Universe",
+      "role": "hub",
+      "ssws": true,
+      "formula_aware": true,
+      "eaii_launch_task": "Z: SSWS Auto Boot",
+      "dashboard_url": "http://127.0.0.1:5502"
+    },
+    {
+      "id": "amk-goku-dashboards-2",
+      "name": "Amk-Goku Dashboards 2",
+      "path": "",
+      "role": "external",
+      "hosting": "link-only",
+      "ssws": false,
+      "formula_aware": true,
+      "eaii_launch_task": "",
+      "dashboard_url": "",
+      "migration_status": "path_unregistered",
+      "notes": "No matching local folder under pc_root as of 2026-04-26; keep as link-only entry until local path is restored."
+    },
+    {
+      "id": "amk-goku-vaults",
+      "name": "Amk-Goku Vaults",
+      "path": "Amk-Goku Vaults",
+      "role": "member",
+      "ssws": false,
+      "formula_aware": true,
+      "eaii_launch_task": "",
+      "dashboard_url": ""
+    },
+    {
+      "id": "at-princess-blackie-copilot",
+      "name": "AT Princess & Blackie Copilot",
+      "path": "AT Princess&Blackie Copilot",
+      "role": "member",
+      "ssws": false,
+      "formula_aware": true,
+      "eaii_launch_task": "",
+      "dashboard_url": ""
+    },
+    {
+      "id": "at-princess-blackie-copitol",
+      "name": "AT Princess & Blackie Copilot",
+      "path": "AT Princess&Blackie Copilot",
+      "role": "member",
+      "ssws": false,
+      "formula_aware": true,
+      "eaii_launch_task": "",
+      "dashboard_url": ""
+    },
+    {
+      "id": "pc-root-extras-and-tools",
+      "name": "Extras & Tools",
+      "path": "Extras & Tools",
+      "role": "member",
+      "ssws": false,
+      "formula_aware": false,
+      "eaii_launch_task": "",
+      "dashboard_url": "",
+      "notes": "Canonical PC-root sink for installers, portable tools, large downloads, zips, and other non-repo artefacts. Keeps product repos (hub + members) clean. Not an app codebase — do not run SSWS here. Z-Folder Manager hub policy (allowed_roots) applies only inside ZSanctuary_Universe; use this folder for PC-root hygiene. See docs/Z-PC-ROOT-EXTRAS-AND-TOOLS-SINK.md."
+    },
+    {
+      "id": "replit-roulette-z-amk-goku-mdcp",
+      "name": "Roulette Data Analyzer · Z-Amk-Goku MD/CP (Replit)",
+      "path": "",
+      "role": "external",
+      "hosting": "replit",
+      "ssws": false,
+      "formula_aware": true,
+      "eaii_launch_task": "",
+      "dashboard_url": "https://replit.com/@manojkeerpal/Roulette-Data-Analyzer",
+      "migration_status": "registered_linked",
+      "notes": "Hosted on Replit; no pc_root folder. Link-only until migrated to hub-controlled deploy (e.g. Cloudflare). Replace dashboard_url with live .replit.dev preview if you prefer that entry point."
+    },
+    {
+      "id": "sister-aisling-sol",
+      "name": "Sister Aisling Sol",
+      "path": "Z-Sister Aisling Sol",
+      "role": "member",
+      "ssws": false,
+      "formula_aware": true,
+      "eaii_launch_task": "",
+      "dashboard_url": ""
+    },
+    {
+      "id": "z-sanctuary-universe-2-continuation",
+      "name": "Z_Sanctuary_Universe 2",
+      "path": "ZSanctuary_Universe/Z_Sanctuary_Universe 2",
+      "role": "member",
+      "ssws": false,
+      "formula_aware": true,
+      "eaii_launch_task": "",
+      "dashboard_url": "",
+      "notes": "Continuation / parallel build lane on disk. Operational hub remains ZSanctuary_Universe (registry, Overseer, SSWS). Point Z-Formulas and governance to hub; no second SSWS auto-boot unless explicitly promoted."
+    },
+    {
+      "id": "z-omni-sanctuary",
+      "name": "Z-OMNI-Sanctuary",
+      "path": "Z-OMNI-Sanctuary",
+      "role": "member",
+      "ssws": false,
+      "formula_aware": true,
+      "eaii_launch_task": "",
+      "dashboard_url": ""
+    },
+    {
+      "id": "z-sanctuary-ai-skyscraper",
+      "name": "Z-SANCTUARY AI SKYSCRAPER",
+      "path": "Z-SANCTUARY AI SKYSCRAPER",
+      "role": "member",
+      "ssws": false,
+      "formula_aware": true,
+      "eaii_launch_task": "",
+      "dashboard_url": ""
+    },
+    {
+      "id": "z-sanctuary-browser-z-saiyan-lumina",
+      "name": "Z-Sanctuary Browser (Z-Saiyan Lumina)",
+      "path": "Z-Sanctuary Browser",
+      "role": "member",
+      "ssws": false,
+      "formula_aware": true,
+      "eaii_launch_task": "",
+      "dashboard_url": ""
+    },
+    {
+      "id": "z-sanctuary-claude-core",
+      "name": "Z-Sanctuary Claude (Core)",
+      "path": "Z-Sanctuary Claude",
+      "role": "member",
+      "ssws": false,
+      "formula_aware": true,
+      "eaii_launch_task": "",
+      "dashboard_url": ""
+    },
+    {
+      "id": "z-sanctuary-replit",
+      "name": "Z-Sanctuary Replit",
+      "path": "Z-Sanctuary_Replit",
+      "role": "member",
+      "ssws": false,
+      "formula_aware": true,
+      "eaii_launch_task": "",
+      "dashboard_url": "http://127.0.0.1:5190",
+      "notes": "Roulette-Data-Analyzer: from artifacts/roulette-dashboard run `pnpm dev` — use Vite printed Local URL only; not Live Server or raw index.html path."
+    },
+    {
+      "id": "z-sanctuary-aimanity",
+      "name": "z-sanctuary-aimanity",
+      "path": "z-sanctuary-aimanity",
+      "role": "member",
+      "ssws": false,
+      "formula_aware": true,
+      "eaii_launch_task": "",
+      "dashboard_url": ""
+    }
+  ]
+}

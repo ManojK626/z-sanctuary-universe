@@ -1,0 +1,11 @@
+{
+  "schema_version": 1,
+  "generated_at": "2026-04-25T22:14:58.393Z",
+  "name": "z-mini-bot-sync",
+  "advisory": true,
+  "drp_note": "Registry snapshot only. No full Organiser copy. For production backup, use NAS / Folder Manager per vault policy.",
+  "source_registry": "data/z_pc_root_projects.json",
+  "destination_dir": "data/reports/bot_sync_snapshots/2026-04-25T22-14-58-389Z",
+  "latest_snapshot_dir": "data/reports/bot_sync_snapshots/2026-04-25T22-14-58-389Z",
+  "copied": true
+}

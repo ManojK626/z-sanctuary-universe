@@ -1,0 +1,63 @@
+{
+  "schema": "z_lawgrid_observatory_registry_v1",
+  "posture": "read_only_metadata",
+  "phase": "LAWGRID-1A",
+  "title": "LAWGRID Observatory",
+  "subtitle": "Governance observatory · visibility only · no execution authority",
+  "law_strip": [
+    "Capability ≠ entitlement.",
+    "Readiness ≠ launch permission.",
+    "GREEN ≠ auto-deploy.",
+    "No orchestration from this surface."
+  ],
+  "universe_spine": [
+    { "id": "z_questra", "label": "Z-QUESTRA", "meaning": "Educational spine · accessibility · comfort lore" },
+    { "id": "at_princess_blackie", "label": "AT Princess & Blackie", "meaning": "Wellness · emotional · daily rhythm (separate SKU boundary)" },
+    { "id": "eirmind", "label": "ÉirMind", "meaning": "Magical AI · PREPARE · constellation creativity" },
+    { "id": "xl2_lane", "label": "XL2", "meaning": "Observation platform · reference lane · charter-only bridge" },
+    { "id": "z_legal", "label": "Z-Legal / UX-2", "meaning": "Governance cockpit · benchmark · receipts" },
+    { "id": "zsx", "label": "ZSX", "meaning": "Cross-project capability index · routing metadata" },
+    { "id": "zmv", "label": "ZMV", "meaning": "Magical visual bridge · presentation metaphors only" },
+    { "id": "z_ssws", "label": "Z-SSWS", "meaning": "Workspace launch spine · checklist posture" }
+  ],
+  "constellation": {
+    "caption": "Illustrative links only — metadata relationships, not live data flows.",
+    "viewBox": "0 0 100 100",
+    "nodes": [
+      { "id": "questra", "spine_ref": "z_questra", "label": "QUESTRA", "x": 18, "y": 72 },
+      { "id": "atpb", "spine_ref": "at_princess_blackie", "label": "AT P&B", "x": 12, "y": 42 },
+      { "id": "eirmind", "spine_ref": "eirmind", "label": "ÉIR", "x": 38, "y": 22 },
+      { "id": "xl2", "spine_ref": "xl2_lane", "label": "XL2", "x": 88, "y": 30 },
+      { "id": "legal", "spine_ref": "z_legal", "label": "LAW", "x": 58, "y": 55 },
+      { "id": "zsx", "spine_ref": "zsx", "label": "ZSX", "x": 42, "y": 78 },
+      { "id": "zmv", "spine_ref": "zmv", "label": "ZMV", "x": 28, "y": 54 },
+      { "id": "ssws", "spine_ref": "z_ssws", "label": "SSWS", "x": 72, "y": 76 }
+    ],
+    "edges": [
+      { "from": "questra", "to": "zmv", "note": "VIL-linked presentation metaphors (charter-bound)" },
+      { "from": "eirmind", "to": "zmv", "note": "Magical visual lineage" },
+      { "from": "zsx", "to": "legal", "meaning": "Capability facts inform readiness review · not entitlement merge" },
+      { "from": "legal", "to": "ssws", "meaning": "Benchmark + launch checklist alignment" },
+      { "from": "atpb", "to": "legal", "meaning": "Product boundary visibility for counsel / AMK" },
+      { "from": "xl2", "to": "zsx", "meaning": "Reference-only unless charter opens lane" },
+      { "from": "questra", "to": "zsx", "meaning": "Source manifest vs hub catalogue" }
+    ]
+  },
+  "radar_legend": [
+    { "id": "benchmark", "label": "Legal benchmark rows", "source": "dashboard/data/z_legal_benchmark_readiness.json" },
+    { "id": "ssws", "label": "SSWS launch posture", "source": "data/reports/z_ssws_launch_requirements_report.json" },
+    { "id": "indicators", "label": "AMK indicators layer", "source": "dashboard/data/amk_project_indicators.json" }
+  ],
+  "related_docs": [
+    { "label": "Z-UIL doctrine", "path": "docs/design/Z_UNIVERSAL_INTERACTION_LANGUAGE.md" },
+    { "label": "Z-VIL hub pointer", "path": "docs/design/Z_VISUAL_INTERACTION_LANGUAGE.md" },
+    { "label": "Global benchmark panel", "path": "docs/Z_LEGAL_GLOBAL_BENCHMARK_READINESS_PANEL.md" },
+    { "label": "Navigator (NAV-1)", "path": "docs/dashboard/Z_UNIVERSE_WORKSTATION_NAVIGATOR.md" },
+    { "label": "LAWGRID 1A governance doc", "path": "docs/LAWGRID_1A_GOVERNANCE_OBSERVATORY.md" }
+  ],
+  "related_surfaces_html": [
+    { "label": "Z-Lawyer workstation UX-2", "path": "dashboard/Html/z-legal-lawyer-workstation.html" },
+    { "label": "Living ecosphere map", "path": "dashboard/Html/z-universe-ecosphere-map.html" },
+    { "label": "Unified dashboard", "path": "dashboard/Html/index-skk-rkpk.html" }
+  ]
+}

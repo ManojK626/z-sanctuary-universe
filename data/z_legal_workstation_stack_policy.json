@@ -1,0 +1,20 @@
+{
+  "schema": "z.legal.workstation.stack.policy.v1",
+  "phase": "Z-LEGAL-WORKSTATION-STACK-1",
+  "no_legal_advice_runtime": true,
+  "no_human_lawyer_impersonation": true,
+  "no_named_lawyer_profile_without_written_consent": true,
+  "no_endorsement_claim_without_signed_agreement": true,
+  "no_live_client_data_intake_phase_1": true,
+  "no_privileged_data_runtime_storage_phase_1": true,
+  "no_court_filing_automation_phase_1": true,
+  "no_email_dispatch_automation_phase_1": true,
+  "no_payment_or_billing_activation_phase_1": true,
+  "no_provider_or_supplier_connector_phase_1": true,
+  "no_deployment_phase_1": true,
+  "no_surveillance_or_live_tracking_phase_1": true,
+  "allow_ai_evidence_indexing_drafts_only": true,
+  "allow_simulation_mode_with_synthetic_data_only": true,
+  "human_lawyer_approval_required_for_any_legal_advice": true,
+  "human_gate_required_for_external_sharing": true
+}

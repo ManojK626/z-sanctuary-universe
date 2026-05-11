@@ -1,0 +1,49 @@
+{
+  "generated_at": "2026-03-21T21:40:56.265Z",
+  "gene": "Z-ACG",
+  "version": "0.1.0",
+  "status": "green",
+  "vitality_score": 92,
+  "organism_posture": "alive_calm",
+  "acoustic_mode": "passive_bias",
+  "soundscape_tier": "ambient",
+  "metaphor": {
+    "passive_owl": "Transient and drift detection from reports (no raw audio in this build).",
+    "active_dolphin": "Echo-like checks via SLO / readiness / sweep reports."
+  },
+  "inputs": {
+    "indicator_attitude": "calm",
+    "indicator_integrity": 100,
+    "cycle_attitude": "calm",
+    "security_sentinel": "green",
+    "slo_guard": "hold",
+    "zuno_internal_operations": "stable-green",
+    "hygiene": "green",
+    "anydevices_analyzer": "amber"
+  },
+  "visual": {
+    "neon_glow": {
+      "primary": "rgba(0, 212, 255, 0.45)",
+      "secondary": "rgba(127, 209, 185, 0.35)"
+    },
+    "pulse_period_sec": 0.97,
+    "note": "Applied softly by dashboard panel; disabled when prefers-reduced-motion."
+  },
+  "sources": {
+    "indicator_watchdog": "2026-03-18T19:37:54.129Z",
+    "cycle_indicator": "2026-03-18T19:37:54.853Z",
+    "security_sentinel": "2026-03-18T19:38:28.976Z",
+    "slo_guard": "2026-03-21T16:31:55.787Z",
+    "zuno_report": "2026-03-18T19:38:29.716Z",
+    "hygiene_status": "2026-03-18T19:38:27.380Z",
+    "anydevices_analyzer": "2026-03-18T19:34:48.191Z"
+  },
+  "proposed_next_steps": [
+    "Run Z: Workspace Auto Sweep and Z: SLO Guard until SLO is green.",
+    "Review AnyDevices analyzer (TPM/capabilities); optional re-run z_anydevices_analyzer.mjs."
+  ],
+  "links": {
+    "architecture": "docs/Z-ACOUSTIC-LIVING-PULSE-ARCHITECTURE.md",
+    "living_pulse_spec": "docs/Z-LIVING-PULSE.md"
+  }
+}

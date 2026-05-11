@@ -1,0 +1,287 @@
+{
+  "ZFormat": "v1",
+  "ZUpdatedAt": "2026-04-17T00:00:00.000Z",
+  "description": "Canonical list for ChatGPT project/chat rows. Edit display_name when ChatGPT UI renames a folder; append old strings to previous_names. Run npm run chatgpt:verify before importing exports. Optional export_folder: subfolder name under docs/chatgpt_exports/ for this row. Prefer a sidecar file docs/chatgpt_exports/<folder>/.z-chatgpt-tracking.json {\"ZFormat\":\"v1\",\"id\":\"<same as id>\"} so renames on disk are detected automatically.",
+  "entries": [
+    {
+      "id": "vs-code-lottery-z-audiology-activation-guide",
+      "display_name": "Z-Audiology Activation Guide",
+      "category": "vs_code_lottery_chat",
+      "parent_project": "VS Code Lottery",
+      "previous_names": [],
+      "hub_doc_path": null,
+      "manifest_zid": null,
+      "status": "not_started"
+    },
+    {
+      "id": "vs-code-lottery-z-sanctuary-lottery-pipeline",
+      "display_name": "Z-Sanctuary Lottery Pipeline",
+      "category": "vs_code_lottery_chat",
+      "parent_project": "VS Code Lottery",
+      "previous_names": [],
+      "hub_doc_path": null,
+      "manifest_zid": null,
+      "status": "not_started"
+    },
+    {
+      "id": "vs-code-lottery-sentinel-critical-indicator",
+      "display_name": "Sentinel Critical Indicator",
+      "category": "vs_code_lottery_chat",
+      "parent_project": "VS Code Lottery",
+      "previous_names": [],
+      "hub_doc_path": null,
+      "manifest_zid": null,
+      "status": "not_started"
+    },
+    {
+      "id": "z-sanctuary-music",
+      "display_name": "Z☆Sanctuary Music",
+      "category": "sidebar",
+      "parent_project": null,
+      "previous_names": [],
+      "hub_doc_path": null,
+      "manifest_zid": null,
+      "status": "not_started"
+    },
+    {
+      "id": "z-sanctuary-and-formulas",
+      "display_name": "Z-Sanctuary & Formulas",
+      "category": "sidebar",
+      "parent_project": null,
+      "previous_names": [],
+      "hub_doc_path": null,
+      "manifest_zid": null,
+      "status": "not_started"
+    },
+    {
+      "id": "vscode-note-z-vn-360",
+      "display_name": "Vscode/Note+++/Z-VN 360",
+      "category": "sidebar",
+      "parent_project": null,
+      "previous_names": [],
+      "hub_doc_path": null,
+      "manifest_zid": null,
+      "status": "not_started"
+    },
+    {
+      "id": "z-gagets-mirrors",
+      "display_name": "Z-Gagets Mirrors",
+      "category": "sidebar",
+      "parent_project": null,
+      "previous_names": [],
+      "hub_doc_path": null,
+      "manifest_zid": null,
+      "status": "not_started"
+    },
+    {
+      "id": "more-super-saiyans-z-blood-eng",
+      "display_name": "Super Saiyans Z -Blood Eng…",
+      "category": "more_menu",
+      "parent_project": null,
+      "previous_names": [],
+      "hub_doc_path": null,
+      "manifest_zid": null,
+      "status": "not_started"
+    },
+    {
+      "id": "more-we-r-one-languages",
+      "display_name": "We R One language's",
+      "category": "more_menu",
+      "parent_project": null,
+      "previous_names": [],
+      "hub_doc_path": null,
+      "manifest_zid": null,
+      "status": "not_started"
+    },
+    {
+      "id": "more-motorcycle-helmet-chip",
+      "display_name": "Motorcycle & Helmet Chip…",
+      "category": "more_menu",
+      "parent_project": null,
+      "previous_names": [],
+      "hub_doc_path": null,
+      "manifest_zid": null,
+      "status": "not_started"
+    },
+    {
+      "id": "more-z-sanctuary-super-saiyan",
+      "display_name": "Z☆Sanctuary Super-Saiyan …",
+      "category": "more_menu",
+      "parent_project": null,
+      "previous_names": [],
+      "hub_doc_path": null,
+      "manifest_zid": null,
+      "status": "not_started"
+    },
+    {
+      "id": "more-z-sanctuary-eternal-upgrade",
+      "display_name": "Z-Sanctuary Eternal Upgra…",
+      "category": "more_menu",
+      "parent_project": null,
+      "previous_names": [],
+      "hub_doc_path": null,
+      "manifest_zid": null,
+      "status": "not_started"
+    },
+    {
+      "id": "more-one-in-all-basic-hygiene",
+      "display_name": "(1 In All Basic Hygiene & Fr…",
+      "category": "more_menu",
+      "parent_project": null,
+      "previous_names": [],
+      "hub_doc_path": null,
+      "manifest_zid": null,
+      "status": "not_started"
+    },
+    {
+      "id": "more-world-relive-generosity",
+      "display_name": "WORLD RELIVE GENEROSITY",
+      "category": "more_menu",
+      "parent_project": null,
+      "previous_names": [],
+      "hub_doc_path": null,
+      "manifest_zid": null,
+      "status": "not_started"
+    },
+    {
+      "id": "more-vs-code-studio",
+      "display_name": "Vs Code Studio",
+      "category": "more_menu",
+      "parent_project": null,
+      "previous_names": [],
+      "hub_doc_path": null,
+      "manifest_zid": null,
+      "status": "not_started"
+    },
+    {
+      "id": "more-anne-barbies",
+      "display_name": "Anne & Barbies 🐱",
+      "category": "more_menu",
+      "parent_project": null,
+      "previous_names": [],
+      "hub_doc_path": null,
+      "manifest_zid": null,
+      "status": "not_started"
+    },
+    {
+      "id": "more-super-saiyans-roulette",
+      "display_name": "Super Saiyans Roulette",
+      "category": "more_menu",
+      "parent_project": null,
+      "previous_names": [],
+      "hub_doc_path": null,
+      "manifest_zid": null,
+      "status": "not_started"
+    },
+    {
+      "id": "more-z-sanctuary-tourism-univer",
+      "display_name": "Z-Sanctuary Tourism Univer…",
+      "category": "more_menu",
+      "parent_project": null,
+      "previous_names": [],
+      "hub_doc_path": null,
+      "manifest_zid": null,
+      "status": "not_started"
+    },
+    {
+      "id": "more-rise-of-z-dead-ancestors",
+      "display_name": "RISE OF Z-Dead Ancestors",
+      "category": "more_menu",
+      "parent_project": null,
+      "previous_names": [],
+      "hub_doc_path": null,
+      "manifest_zid": null,
+      "status": "not_started"
+    },
+    {
+      "id": "more-z-triple-defense-ai",
+      "display_name": "Z- Triple Defense Ai",
+      "category": "more_menu",
+      "parent_project": null,
+      "previous_names": [],
+      "hub_doc_path": null,
+      "manifest_zid": null,
+      "status": "not_started"
+    },
+    {
+      "id": "more-humans-generation-minds",
+      "display_name": "Humans Generation Minds…",
+      "category": "more_menu",
+      "parent_project": null,
+      "previous_names": [],
+      "hub_doc_path": null,
+      "manifest_zid": null,
+      "status": "not_started"
+    },
+    {
+      "id": "more-z-sanctuary-nature-vs-hu",
+      "display_name": "Z_Sanctuary Nature Vs Hu…",
+      "category": "more_menu",
+      "parent_project": null,
+      "previous_names": [],
+      "hub_doc_path": null,
+      "manifest_zid": null,
+      "status": "not_started"
+    },
+    {
+      "id": "more-jb-z-irish-fox",
+      "display_name": "JB Z-Irish Fox",
+      "category": "more_menu",
+      "parent_project": null,
+      "previous_names": [],
+      "hub_doc_path": null,
+      "manifest_zid": null,
+      "status": "not_started"
+    },
+    {
+      "id": "more-z-sanctuary-kids",
+      "display_name": "Z-Sanctuary Kids 🎶",
+      "category": "more_menu",
+      "parent_project": null,
+      "previous_names": [],
+      "hub_doc_path": null,
+      "manifest_zid": null,
+      "status": "not_started"
+    },
+    {
+      "id": "more-z-sanctuary-blood-engine-5",
+      "display_name": "Z-Sanctuary Blood Engine 5",
+      "category": "more_menu",
+      "parent_project": null,
+      "previous_names": [],
+      "hub_doc_path": null,
+      "manifest_zid": null,
+      "status": "not_started"
+    },
+    {
+      "id": "more-z-sanctuary-universe-ebo",
+      "display_name": "Z-Sanctuary Universe (e-bo…",
+      "category": "more_menu",
+      "parent_project": null,
+      "previous_names": [],
+      "hub_doc_path": null,
+      "manifest_zid": null,
+      "status": "not_started"
+    },
+    {
+      "id": "more-zuno-universal-glasses",
+      "display_name": "Zuno Universal Glasses",
+      "category": "more_menu",
+      "parent_project": null,
+      "previous_names": [],
+      "hub_doc_path": null,
+      "manifest_zid": null,
+      "status": "not_started"
+    },
+    {
+      "id": "recents-loose-chats",
+      "display_name": "Recents / loose chats (misc)",
+      "category": "recents",
+      "parent_project": null,
+      "previous_names": [],
+      "hub_doc_path": null,
+      "manifest_zid": null,
+      "status": "not_started"
+    }
+  ]
+}

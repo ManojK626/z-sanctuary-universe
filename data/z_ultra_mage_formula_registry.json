@@ -1,0 +1,76 @@
+{
+  "schema": "z_ultra_mage_formula_registry_v1",
+  "registry_name": "Z-Ultra MAGE Formula Codex",
+  "phase": "Z-ULTRA-MAGE-1",
+  "mode": "formula_governance_only",
+  "forbidden_output_engagements": [],
+  "source_blueprints": [
+    "OMNAI Infinite-Power Architecture Blueprint",
+    "Z-Replica Fabric",
+    "Z-MOD-DIST",
+    "Z-XBUS",
+    "Z-SEC-TRIPLECHECK",
+    "Z-IDE-FUSION"
+  ],
+  "formula_layers": [
+    "omega_symbolic_expansion",
+    "z_ultra_alignment",
+    "mage_multiverse_alignment_governance",
+    "mod_dist_routing",
+    "xbus_connector_permission",
+    "replica_fabric_governance",
+    "traffic_signal_law",
+    "amk_sacred_gate"
+  ],
+  "allowed_outputs": [
+    "docs",
+    "schemas",
+    "reports",
+    "risk_classifications",
+    "route_suggestions",
+    "mock_plans",
+    "governance_formulas"
+  ],
+  "forbidden_outputs": [
+    "live_self_replication",
+    "autonomous_deployment",
+    "provider_call",
+    "payment_activation",
+    "secret_write",
+    "production_connector",
+    "child_data_flow",
+    "auto_merge",
+    "unbounded_loop"
+  ],
+  "signal_rules": {
+    "GREEN": "Formula posture is docs, schema, governance text, or report only; no forbidden engagements enabled.",
+    "YELLOW": "Optional mapping gaps or advisory metadata incomplete.",
+    "BLUE": "AMK or charter decision required before treating a formula lane as executable or external.",
+    "RED": "Any live forbidden output is marked enabled at registry or sample level."
+  },
+  "locked_law": [
+    "Formula is not execution.",
+    "Ultra is not permission.",
+    "MAGE is not a magic runtime claim.",
+    "Replica formula is not a live clone.",
+    "Connector formula is not a live API.",
+    "GREEN is never deploy.",
+    "BLUE requires AMK.",
+    "RED blocks movement.",
+    "AMK-Goku owns sacred moves."
+  ],
+  "related_docs": [
+    "docs/Z_ULTRA_MAGE_FORMULA_CODEX.md",
+    "docs/PHASE_Z_ULTRA_MAGE_1_GREEN_RECEIPT.md",
+    "docs/Z_REPLICA_FABRIC_GOVERNED_SELF_REPLICATION.md",
+    "docs/Z_MOD_DIST_MODULE_DISTRIBUTOR.md",
+    "docs/Z_XBUS_EXTERNAL_CONNECTOR_GATE.md",
+    "docs/Z_SEC_TRIPLECHECK_COMMUNICATION_FLOW_AUDIT.md",
+    "docs/Z_IDE_FUSION_WORKFLOW_CONTROL.md",
+    "docs/AI_BUILDER_CONTEXT.md"
+  ],
+  "related_reports": [
+    "data/reports/z_ultra_mage_formula_report.json",
+    "data/reports/z_ultra_mage_formula_report.md"
+  ]
+}

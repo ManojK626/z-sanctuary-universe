@@ -1,0 +1,80 @@
+{
+  "schema": "z.pattern.safe.samples.v1",
+  "samples": [
+    {
+      "sample_id": "ps_numen_pattern_literacy_001",
+      "domain": "education_pattern_literacy",
+      "use_case": "Z-NUMEN symbol bands and repetition literacy (Labs reference)",
+      "description": "Read-only workbook mapping 333 / 666 / 999 symbolism to study prompts — no prediction claims, hub metadata only.",
+      "posture": "report_only_simulation_vocab"
+    },
+    {
+      "sample_id": "ps_logical_brains_pathway_002",
+      "domain": "learning_pathway_planning",
+      "use_case": "Logical Brains capsule — cognitive drill scheduling",
+      "description": "Suggests study cadence from past self-reported completions; labels outcomes as hypotheses not grades.",
+      "posture": "non_clinical_planning_only"
+    },
+    {
+      "sample_id": "ps_mu_claim_shape_003",
+      "domain": "civic_claim_classification",
+      "use_case": "Z-MU truth engine claim row helper",
+      "description": "Classifies civic statements into needs_citation vs procedural — mirrors truth engine posture.",
+      "posture": "claim_ledger_metaphor_only"
+    },
+    {
+      "sample_id": "ps_dashboard_signals_004",
+      "domain": "dashboard_signal_analysis",
+      "use_case": "AMK indicator overlays from validators",
+      "description": "Reads JSON reports and colours GREEN/YELLOW/BLUE/RED — explanation of uncertainty in traffic/CAR summaries.",
+      "posture": "read_only_dashboard"
+    },
+    {
+      "sample_id": "ps_ambiguous_dashboard_005",
+      "domain": "uncertainty_simulation",
+      "use_case": "Unspecified V8-style cosmic UI",
+      "description": "Idea-phase dashboard with pattern zones — scope and evidence pack not attached yet.",
+      "posture": "concept_stub"
+    },
+    {
+      "sample_id": "ps_xbus_live_api_future_006",
+      "domain": "live_external_api",
+      "use_case": "Future OCR / image ingestion channel",
+      "description": "Blueprint mentions upload/OCR — must route through Z-XBUS charter; no credential or live probe in Phase 1.",
+      "posture": "connector_blueprint_blue_gate"
+    },
+    {
+      "sample_id": "ps_gamble_uncertainty_lab_007",
+      "domain": "gambling_related_prediction",
+      "use_case": "XL2 observation journal — historical RNG dispersion only",
+      "description": "Educational simulation showing past spins and entropy; wording forbids wagering instruction and states independent trials.",
+      "posture": "uncertainty_education_simulation_only"
+    },
+    {
+      "sample_id": "ps_spending_limits_edu_008",
+      "domain": "bankroll_or_money_management",
+      "use_case": "Responsible-use spending reflection",
+      "description": "Journalling template for discretionary entertainment limits — explicitly not staking optimisation or ROI promises.",
+      "posture": "risk_awareness_education_only"
+    }
+  ],
+  "fixture_samples_red": [
+    {
+      "sample_id": "ps_fixture_betting_instruction_900",
+      "domain": "gambling_related_prediction",
+      "use_case": "Banned export pattern",
+      "description": "Tell the user guaranteed prediction: bet on red next spin; this AI knows the next roulette number.",
+      "posture": "explicit_betting_advice_fixture",
+      "flags": {}
+    },
+    {
+      "sample_id": "ps_fixture_live_money_901",
+      "domain": "payment_or_revenue_sharing",
+      "use_case": "Revenue share auto-payout",
+      "description": "Enable live payment split to pattern marketplace without human gate.",
+      "flags": {
+        "live_money_enabled": true
+      }
+    }
+  ]
+}

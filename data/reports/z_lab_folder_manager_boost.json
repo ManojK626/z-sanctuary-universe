@@ -1,0 +1,60 @@
+{
+  "generated_at": "2026-05-11T12:26:45.509Z",
+  "status": "green",
+  "step_summary": {
+    "total": 4,
+    "failed": 0
+  },
+  "steps": [
+    {
+      "id": "lab_bootstrap",
+      "ok": true,
+      "exit_code": 0,
+      "command": "C:\\Program Files\\nodejs\\node.exe scripts/z_lab_bootstrap.mjs",
+      "stdout": "Z_Labs bootstrap complete: C:\\Cursor Projects Organiser\\Z_Sanctuary_Universe\\Z_Labs",
+      "stderr": "",
+      "ran_at": "2026-05-11T12:26:44.903Z"
+    },
+    {
+      "id": "lab_status",
+      "ok": true,
+      "exit_code": 0,
+      "command": "C:\\Program Files\\nodejs\\node.exe scripts/z_lab_status.mjs",
+      "stdout": "Z Lab status written: C:\\Cursor Projects Organiser\\Z_Sanctuary_Universe\\data\\reports\\z_lab_status.json",
+      "stderr": "",
+      "ran_at": "2026-05-11T12:26:44.973Z"
+    },
+    {
+      "id": "folder_manager_status",
+      "ok": true,
+      "exit_code": 0,
+      "command": "C:\\Program Files\\nodejs\\node.exe scripts/z_folder_manager_guard.mjs status",
+      "stdout": "Z Folder Manager status written.",
+      "stderr": "",
+      "ran_at": "2026-05-11T12:26:45.047Z"
+    },
+    {
+      "id": "folder_manager_recreate_dry_run",
+      "ok": true,
+      "exit_code": 0,
+      "command": "C:\\Program Files\\nodejs\\node.exe scripts/z_folder_manager_guard.mjs recreate",
+      "stdout": "Z Folder Manager recreate dry-run complete.",
+      "stderr": "",
+      "ran_at": "2026-05-11T12:26:45.507Z"
+    }
+  ],
+  "capability_state": {
+    "lab_status": "ready",
+    "draft_modules_count": 1,
+    "prototype_modules_count": 0,
+    "folder_manager_status": "ready",
+    "folder_manager_latest_snapshot": "safe_pack/z_sanctuary_vault/folder_manager/snapshots/2026-04-29T15-04-31-920Z",
+    "folder_manager_candidate_changes": 120
+  },
+  "dormant_signals": [],
+  "boost_actions": [
+    "Lab has active module footprint.",
+    "Folder manager snapshot baseline exists.",
+    "Keep running `Z: Lab Status` and `Z: Folder Manager Status` in the SSWS cycle."
+  ]
+}

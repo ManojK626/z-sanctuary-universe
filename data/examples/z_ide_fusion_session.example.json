@@ -1,0 +1,19 @@
+{
+  "session_id": "cursor-2026-05-05-amk-main-001",
+  "ide": "cursor_ide",
+  "operator": "amk",
+  "project_id": "zsanctuary_universe",
+  "workspace_id": "main_super_saiyan_workspace",
+  "repo_root": "C:/Cursor Projects Organiser/Z_Sanctuary_Universe",
+  "intended_task": "Update docs and run read-only verification commands",
+  "allowed_scope": ["docs", "dashboard/data", "scripts_readonly_validator"],
+  "started_at": "2026-05-05T13:00:00Z",
+  "latest_reports_read": [
+    "data/reports/z_ide_fusion_report.md",
+    "data/reports/z_traffic_minibots_status.md",
+    "data/reports/amk_workspace_doorway_status.md"
+  ],
+  "files_expected_to_touch": ["docs/Z_IDE_FUSION_WORKFLOW_CONTROL.md", "data/z_ide_fusion_control_registry.json"],
+  "forbidden_actions_acknowledged": true,
+  "handoff_required": true
+}

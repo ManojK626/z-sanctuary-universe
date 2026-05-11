@@ -1,0 +1,75 @@
+:root {
+  color-scheme: dark;
+  --bg: #0a0e27;
+  --card: rgba(10, 14, 39, 0.92);
+  --border: rgba(122, 211, 255, 0.25);
+  --text: #f0f0f0;
+  --muted: #9aa1b3;
+  --accent: #7ad3ff;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: radial-gradient(circle at top, rgba(10, 32, 36, 0.9), rgba(8, 12, 20, 0.95));
+  color: var(--text);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  padding: 2rem;
+}
+
+.snapshot {
+  max-width: 880px;
+  margin: 0 auto;
+  display: grid;
+  gap: 1rem;
+}
+
+.snapshot__header {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.snapshot__meta {
+  border: 1px solid var(--border);
+  padding: 0.6rem 0.8rem;
+  border-radius: 10px;
+  background: var(--card);
+  font-size: 0.9rem;
+}
+
+.card {
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  background: var(--card);
+  padding: 0.9rem 1rem;
+}
+
+.card h2 {
+  margin: 0 0 0.4rem;
+  color: var(--accent);
+  font-size: 1.05rem;
+}
+
+.list {
+  margin: 0.4rem 0 0;
+  padding-left: 1.2rem;
+}
+
+.muted {
+  color: var(--muted);
+  font-size: 0.9rem;
+}
+
+a {
+  color: var(--accent);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}

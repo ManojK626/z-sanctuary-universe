@@ -1,0 +1,93 @@
+{
+  "schema": "z_mu_advisor_answer_templates_v1",
+  "templates": [
+    {
+      "template_id": "mu_tpl_learn_gov_001",
+      "mode": "learn_governance",
+      "allowed_use": "High-level explanation of civic institutions and lawful complaint concepts; always paired with not-legal-advice disclaimer.",
+      "required_sources": [],
+      "truth_label": "procedural",
+      "safety_signal": "GREEN",
+      "refusal_condition": "User requests impersonation of government, legal opinion as counsel, or coordination of harassment.",
+      "safe_response_pattern": "Explain the role of the institution in neutral terms; point to official portals for current text; add disclaimer: not legal advice.",
+      "audit_fields": ["response_id", "timestamp_utc", "mode", "truth_label", "safety_signal", "sources_used", "blocked_content", "pii_stored"]
+    },
+    {
+      "template_id": "mu_tpl_understand_002",
+      "mode": "understand_my_situation",
+      "allowed_use": "Clarifying questions only; suggest safe next steps and documentation ideas without storing PII in hub logs.",
+      "required_sources": [],
+      "truth_label": "procedural",
+      "safety_signal": "GREEN",
+      "refusal_condition": "User supplies identifiable third-party accusations as fact; route to human_review or block.",
+      "safe_response_pattern": "Reflect themes neutrally; ask what documents exist; suggest lawful channels; never diagnose guilt.",
+      "audit_fields": ["response_id", "timestamp_utc", "mode", "truth_label", "input_category", "human_review_required", "pii_stored"]
+    },
+    {
+      "template_id": "mu_tpl_claim_check_003",
+      "mode": "claim_checker",
+      "allowed_use": "Map user statement to claim ledger fields and source_status; never affirm unverified numbers as fact.",
+      "required_sources": ["claim_ledger_row_or_stub"],
+      "truth_label": "needs_citation",
+      "safety_signal": "YELLOW",
+      "refusal_condition": "Statement contains named serious accusation without verified public evidence.",
+      "safe_response_pattern": "Output draft ledger fields with needs_verification; list required official sources; cite peace policy.",
+      "audit_fields": ["response_id", "mode", "supports_claim_ids", "answer_status", "sources_used", "blocked_content"]
+    },
+    {
+      "template_id": "mu_tpl_citation_004",
+      "mode": "citation_helper",
+      "allowed_use": "Describe what would count as Rank A–C evidence; no live URL fetch from hub runtime.",
+      "required_sources": [],
+      "truth_label": "needs_citation",
+      "safety_signal": "YELLOW",
+      "refusal_condition": "User asks to scrape or mass-download restricted data.",
+      "safe_response_pattern": "Checklist: official title, date, jurisdiction, table/paragraph reference, human retrieval date.",
+      "audit_fields": ["response_id", "citation_id_pending", "date_accessed", "public_use_allowed"]
+    },
+    {
+      "template_id": "mu_tpl_safe_wording_005",
+      "mode": "safe_wording_rewrite",
+      "allowed_use": "Rewrite emotional text into dignified civic language; strip escalation and group blame.",
+      "required_sources": [],
+      "truth_label": "procedural",
+      "safety_signal": "GREEN",
+      "refusal_condition": "Input contains threats, illegal acts, or unfixable serious accusation — return blocked label.",
+      "safe_response_pattern": "Offer calm policy-framed wording; preserve factual questions without naming-and-shaming.",
+      "audit_fields": ["response_id", "escalation_filter_triggered", "blocked_content", "truth_label"]
+    },
+    {
+      "template_id": "mu_tpl_evidence_006",
+      "mode": "evidence_checklist",
+      "allowed_use": "List document types and timelines users may choose to gather lawfully; no surveillance advice.",
+      "required_sources": [],
+      "truth_label": "procedural",
+      "safety_signal": "GREEN",
+      "refusal_condition": "Request for hidden recording, wiretap, or nonconsensual surveillance.",
+      "safe_response_pattern": "Checklist of voluntary documents and public records paths only.",
+      "audit_fields": ["response_id", "mode", "pii_stored", "notes"]
+    },
+    {
+      "template_id": "mu_tpl_policy_007",
+      "mode": "policy_explainer",
+      "allowed_use": "Explain reform ideas as labeled simulations or proposals, never as promises or predictions.",
+      "required_sources": [],
+      "truth_label": "policy_proposal",
+      "safety_signal": "GREEN",
+      "refusal_condition": "Framed as incitement or guaranteed outcome.",
+      "safe_response_pattern": "Prefix: scenario / not prediction; separate facts from values; invite verification.",
+      "audit_fields": ["response_id", "truth_label", "policy_proposal_flag", "sources_used"]
+    },
+    {
+      "template_id": "mu_tpl_escalation_008",
+      "mode": "escalation_filter",
+      "allowed_use": "Detect unsafe requests; respond with blocked template and no operational detail.",
+      "required_sources": [],
+      "truth_label": "blocked",
+      "safety_signal": "RED",
+      "refusal_condition": "N/A — this template is the refusal path.",
+      "safe_response_pattern": "Refuse; cite safety policy; suggest lawful alternatives only at high level.",
+      "audit_fields": ["response_id", "blocked_content", "safety_signal", "reason_code"]
+    }
+  ]
+}

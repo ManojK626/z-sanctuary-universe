@@ -1,0 +1,162 @@
+{
+  "schema": "z_ecosystem_awareness_report_v1",
+  "generated_at": "2026-05-11T13:38:41.387Z",
+  "overall_signal": "YELLOW",
+  "registry_path": "data\\z_ecosystem_awareness_registry.json",
+  "policy_path": "data\\z_ecosystem_alert_policy.json",
+  "issues": [
+    {
+      "project_id": "at_princess_blackie",
+      "severity": "YELLOW",
+      "code": "missing_capsule_optional",
+      "message": "Optional project has no capsule in hub workspace (advisory)."
+    },
+    {
+      "project_id": "z_saiyan_lumina_browser",
+      "severity": "YELLOW",
+      "code": "missing_capsule_optional",
+      "message": "Optional project has no capsule in hub workspace (advisory)."
+    },
+    {
+      "project_id": "z_omnai_creative",
+      "severity": "YELLOW",
+      "code": "missing_capsule_optional",
+      "message": "Optional project has no capsule in hub workspace (advisory)."
+    },
+    {
+      "project_id": "zsusbv_benchmark_overseer",
+      "severity": "YELLOW",
+      "code": "missing_capsule_optional",
+      "message": "Optional project has no capsule in hub workspace (advisory)."
+    },
+    {
+      "project_id": "eirmind",
+      "severity": "YELLOW",
+      "code": "missing_capsule_optional",
+      "message": "Optional project has no capsule in hub workspace (advisory)."
+    },
+    {
+      "project_id": "zquestcraft",
+      "severity": "YELLOW",
+      "code": "missing_capsule_optional",
+      "message": "Optional project has no capsule in hub workspace (advisory)."
+    },
+    {
+      "project_id": "xl2_reference",
+      "severity": "YELLOW",
+      "code": "missing_capsule_optional",
+      "message": "Optional project has no capsule in hub workspace (advisory)."
+    },
+    {
+      "project_id": "ai_tower_observers",
+      "severity": "YELLOW",
+      "code": "missing_capsule_optional",
+      "message": "Optional project has no capsule in hub workspace (advisory)."
+    }
+  ],
+  "projects": [
+    {
+      "project_id": "ZSanctuary_Universe",
+      "display_name": "Z-Sanctuary Universe (hub)",
+      "row_severity": "GREEN",
+      "capsule_signal": "GREEN",
+      "capsule_ok": true,
+      "required_for_daily_status": true,
+      "deployment_status": "HOLD",
+      "autonomy_level": "L1"
+    },
+    {
+      "project_id": "z-questra",
+      "display_name": "Z-QUESTRA",
+      "row_severity": "GREEN",
+      "capsule_signal": "GREEN",
+      "capsule_ok": true,
+      "required_for_daily_status": false,
+      "deployment_status": "HOLD",
+      "autonomy_level": "L1"
+    },
+    {
+      "project_id": "at_princess_blackie",
+      "display_name": "AT Princess & Blackie / Franed AI",
+      "row_severity": "YELLOW",
+      "capsule_signal": "UNKNOWN",
+      "capsule_ok": false,
+      "required_for_daily_status": false,
+      "deployment_status": "UNKNOWN",
+      "autonomy_level": "L0"
+    },
+    {
+      "project_id": "z_saiyan_lumina_browser",
+      "display_name": "Z-Saiyan Lumina Browser",
+      "row_severity": "YELLOW",
+      "capsule_signal": "UNKNOWN",
+      "capsule_ok": false,
+      "required_for_daily_status": false,
+      "deployment_status": "UNKNOWN",
+      "autonomy_level": "L0"
+    },
+    {
+      "project_id": "z_omnai_creative",
+      "display_name": "Z-OMNAI creative production",
+      "row_severity": "YELLOW",
+      "capsule_signal": "UNKNOWN",
+      "capsule_ok": false,
+      "required_for_daily_status": false,
+      "deployment_status": "HOLD",
+      "autonomy_level": "L1"
+    },
+    {
+      "project_id": "zsusbv_benchmark_overseer",
+      "display_name": "Z-SUSBV Benchmark Overseer",
+      "row_severity": "YELLOW",
+      "capsule_signal": "UNKNOWN",
+      "capsule_ok": false,
+      "required_for_daily_status": false,
+      "deployment_status": "HOLD",
+      "autonomy_level": "L1"
+    },
+    {
+      "project_id": "eirmind",
+      "display_name": "ÉirMind / Aisling-Sol legacy branch",
+      "row_severity": "YELLOW",
+      "capsule_signal": "UNKNOWN",
+      "capsule_ok": false,
+      "required_for_daily_status": false,
+      "deployment_status": "NO_GO",
+      "autonomy_level": "L0"
+    },
+    {
+      "project_id": "zquestcraft",
+      "display_name": "ZQuestCraft (placeholder)",
+      "row_severity": "YELLOW",
+      "capsule_signal": "UNKNOWN",
+      "capsule_ok": false,
+      "required_for_daily_status": false,
+      "deployment_status": "NO_GO",
+      "autonomy_level": "L0"
+    },
+    {
+      "project_id": "xl2_reference",
+      "display_name": "XL2 reference-only lane",
+      "row_severity": "YELLOW",
+      "capsule_signal": "UNKNOWN",
+      "capsule_ok": false,
+      "required_for_daily_status": false,
+      "deployment_status": "UNKNOWN",
+      "autonomy_level": "L0"
+    },
+    {
+      "project_id": "ai_tower_observers",
+      "display_name": "AI Tower — Sage / Warrior / Shadow (advisory roles)",
+      "row_severity": "YELLOW",
+      "capsule_signal": "UNKNOWN",
+      "capsule_ok": false,
+      "required_for_daily_status": false,
+      "deployment_status": "HOLD",
+      "autonomy_level": "L0"
+    }
+  ],
+  "notification_candidates_red_blue_only": [],
+  "law_note": "Awareness ≠ execution. Capsule ≠ entitlement. Indicator ≠ permission. GREEN ≠ deploy. BLUE requires AMK. RED blocks movement. YELLOW is quiet advisory unless escalated.",
+  "note": "YELLOW does not enqueue AMK notifications by default. Promote manually from candidates if policy changes."
+}

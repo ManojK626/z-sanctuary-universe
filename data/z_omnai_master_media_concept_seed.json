@@ -1,0 +1,87 @@
+{
+  "schema": "z_omnai_master_media_concept_seed_v1",
+  "seed_id": "z_omnai_master_media_concept_seed_v1",
+  "source_bundle_id": "z_omnai_movie_trailer_review_bundle_v1",
+  "status": "internal_review_only",
+  "public_release_status": "not_approved",
+  "autonomy_level": "L1_report",
+  "concept_title_placeholder": "[AMK: working title — internal codename OK]",
+  "core_message": "[AMK: one paragraph — what the audience should feel and why it matters now. No comparative superiority without evidence.]",
+  "target_audience": "[AMK: primary segment, age band intent, regions, and what they already love — avoid PII.]",
+  "emotional_tone": "[AMK: 3–6 adjectives plus one line on what we never joke about.]",
+  "world_setting": "[AMK: where and when; rules the viewer must understand in ninety seconds; what stays mysterious for the feature.]",
+  "main_characters": [
+    {
+      "name_placeholder": "Protagonist",
+      "role_note": "[AMK: want, flaw, arc beat visible in trailer.]"
+    },
+    {
+      "name_placeholder": "Antagonist or obstacle",
+      "role_note": "[AMK: force opposing the want — person, system, or inner conflict.]"
+    },
+    {
+      "name_placeholder": "Ensemble or guide (optional)",
+      "role_note": "[AMK: relationship that carries humour or heart — or remove if teaser is solo.]"
+    }
+  ],
+  "trailer_structure": [
+    "Hook (0–5s): [AMK: image or line that earns attention without misleading.]",
+    "Stakes (5–25s): [AMK: what can be lost or gained.]",
+    "Escalation (25–50s): [AMK: choice, reveal, or set-piece tease.]",
+    "Emotional turn (50–75s): [AMK: vulnerability or cost.]",
+    "Button (75–90s): [AMK: title card, date card, or cliffhanger — honest to product.]"
+  ],
+  "song_seed_hooks": [
+    "[AMK: chorus emotional thesis — one line, no borrowed lyric.]",
+    "[AMK: verse contrast — what is quiet versus loud in the story.]",
+    "[AMK: bridge lift — optional key change or silence before drop.]",
+    "[AMK: palette — acoustic, electronic, hybrid, or orchestral intent only.]"
+  ],
+  "podcast_episode_angle": "[AMK: behind-the-vision spine — origin of the idea, one ethical line we will not cross in the room, one craft lesson. Not a transcript of unreleased film.]",
+  "marketing_hook_candidates": [
+    "[AMK: honest genre promise — no bait-and-switch.]",
+    "[AMK: one-line invitation — curiosity without fear-mongering.]",
+    "[AMK: community or fandom alignment — inclusive, non-exploitative.]"
+  ],
+  "poster_key_art_direction": "[AMK: single hero image idea, palette, negative space for title, mood reference films for tone only — not frame theft.]",
+  "pdf_or_ebook_angle": "[AMK: companion PDF or e-book slice — world bible excerpt, director statement, or study guide; clarify free vs paid only after Z-SUSBV if commercial.]",
+  "rights_and_originality_notes": "Original story elements and commissioned art preferred. Third-party references require clearance log. Likeness and living-person allusions require consent path. Music hooks are thematic only — not a license to sync existing masters.",
+  "amk_decision_questions": [
+    "Is the trailer honest to the final feature or series rating intent?",
+    "Which beats depend on temp music or stock — list replacement plan?",
+    "Does any hook imply pricing, donation, or purchase — if yes, route Z-SUSBV and entitlement review?",
+    "Are minors or sensitive populations depicted — if yes, confirm child and privacy review path?",
+    "When do we want a public lane versus perpetual internal lab — who signs that gate?"
+  ],
+  "forbidden_actions": [
+    "live AI or provider calls for generation",
+    "generated video, audio, or raster art shipped from this seed",
+    "copying protected frames, lyrics, or key art",
+    "mimicking protected living artists without permission",
+    "public upload, broadcast, or ad spend without AMK release gate",
+    "deployment, billing change, or bridge execution from this artefact",
+    "uncleared real-person likeness",
+    "guaranteed outcome or superlative claims without evidence"
+  ],
+  "required_human_gates": [
+    "AMK creative sign-off on core message and tone",
+    "Rights and IP review before external materials",
+    "Music and audio rights review before public sync or stream",
+    "Public release and marketing lane opened only by AMK or human",
+    "Child and privacy review if youth or sensitive depictions apply",
+    "Z-SUSBV and entitlement review if any commercial or price language appears"
+  ],
+  "related_docs": [
+    "docs/creative/Z_OMNAI_MASTER_MEDIA_CONCEPT_SEED.md",
+    "docs/creative/Z_OMNAI_MOVIE_TRAILER_REVIEW_BUNDLE.md",
+    "docs/creative/Z_OMNAI_BLUEPRINT_CAPABILITY_WORKBENCH.md",
+    "docs/Z_AUTONOMOUS_GUARDIAN_LOOP.md",
+    "docs/Z_TRAFFIC_MINIBOTS.md",
+    "docs/AMK_AUTONOMOUS_APPROVAL_LADDER.md"
+  ],
+  "related_reports": [
+    "data/reports/z_omnai_movie_trailer_bundle_report.json",
+    "data/reports/z_omnai_build_plan_report.json",
+    "data/reports/z_omnai_blueprint_report.json"
+  ]
+}

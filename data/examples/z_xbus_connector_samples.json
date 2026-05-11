@@ -1,0 +1,134 @@
+{
+  "schema": "z_xbus_connector_samples_v1",
+  "note": "Fixtures only — used by z_xbus_connector_gate_check.mjs to prove classifier; not live connectors.",
+  "samples": [
+    {
+      "id": "sample_safe_mock_api",
+      "title": "Internal mock API stub for UI demos",
+      "connector_type": "api",
+      "project_domain": "main_hub",
+      "expected_signal": "GREEN",
+      "flags": {
+        "live_external_connection": false,
+        "mock_allowed": true,
+        "customer_data_flow": false,
+        "payment_activation": false,
+        "provider_calls_live": false,
+        "webhook_execution_enabled": false,
+        "production_deploy_connector": false,
+        "stores_secrets_in_registry": false,
+        "external_write_actions_enabled": false
+      }
+    },
+    {
+      "id": "sample_ide_path_checker_ref",
+      "title": "IDE PATH checker (PATH proof only)",
+      "connector_type": "ide_extension",
+      "project_domain": "main_hub",
+      "expected_signal": "GREEN",
+      "flags": {
+        "live_external_connection": false,
+        "mock_allowed": true,
+        "customer_data_flow": false,
+        "payment_activation": false,
+        "provider_calls_live": false,
+        "webhook_execution_enabled": false,
+        "production_deploy_connector": false,
+        "stores_secrets_in_registry": false,
+        "external_write_actions_enabled": false
+      }
+    },
+    {
+      "id": "sample_mod_dist_advisory",
+      "title": "MOD-DIST advisory routing classifier",
+      "connector_type": "mvp_service",
+      "project_domain": "Z-MOD-DIST",
+      "expected_signal": "GREEN",
+      "flags": {
+        "live_external_connection": false,
+        "mock_allowed": true,
+        "customer_data_flow": false,
+        "payment_activation": false,
+        "provider_calls_live": false,
+        "webhook_execution_enabled": false,
+        "production_deploy_connector": false,
+        "stores_secrets_in_registry": false,
+        "external_write_actions_enabled": false
+      }
+    },
+    {
+      "id": "sample_omnai_future_provider_blue",
+      "title": "OMNAI media provider (future chartered)",
+      "connector_type": "provider_ai",
+      "project_domain": "Z-OMNAI",
+      "expected_signal": "BLUE",
+      "flags": {
+        "live_external_connection": false,
+        "mock_allowed": true,
+        "customer_data_flow": false,
+        "payment_activation": false,
+        "provider_calls_live": false,
+        "webhook_execution_enabled": false,
+        "production_deploy_connector": false,
+        "stores_secrets_in_registry": false,
+        "external_write_actions_enabled": false,
+        "requires_amk_for_future_activation": true
+      }
+    },
+    {
+      "id": "sample_payment_live_red",
+      "title": "Payment capture enabled (fixture — must fail gate if treated as registry)",
+      "connector_type": "payment",
+      "project_domain": "Z-SUSBV",
+      "expected_signal": "RED",
+      "flags": {
+        "live_external_connection": true,
+        "mock_allowed": false,
+        "customer_data_flow": false,
+        "payment_activation": true,
+        "provider_calls_live": false,
+        "webhook_execution_enabled": false,
+        "production_deploy_connector": false,
+        "stores_secrets_in_registry": false,
+        "external_write_actions_enabled": true
+      }
+    },
+    {
+      "id": "sample_child_classroom_future_blue",
+      "title": "Child classroom SaaS connector (future — AMK safeguarding)",
+      "connector_type": "customer_portal",
+      "project_domain": "AT Princess & Blackie / Franed",
+      "expected_signal": "BLUE",
+      "flags": {
+        "live_external_connection": false,
+        "mock_allowed": true,
+        "customer_data_flow": false,
+        "payment_activation": false,
+        "provider_calls_live": false,
+        "webhook_execution_enabled": false,
+        "production_deploy_connector": false,
+        "stores_secrets_in_registry": false,
+        "external_write_actions_enabled": false,
+        "minor_facing_future_connector": true
+      }
+    },
+    {
+      "id": "sample_webhook_deploy_red",
+      "title": "CI webhook auto-deploy to production (fixture)",
+      "connector_type": "webhook",
+      "project_domain": "main_hub",
+      "expected_signal": "RED",
+      "flags": {
+        "live_external_connection": true,
+        "mock_allowed": false,
+        "customer_data_flow": false,
+        "payment_activation": false,
+        "provider_calls_live": false,
+        "webhook_execution_enabled": true,
+        "production_deploy_connector": true,
+        "stores_secrets_in_registry": false,
+        "external_write_actions_enabled": true
+      }
+    }
+  ]
+}

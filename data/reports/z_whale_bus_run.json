@@ -1,0 +1,145 @@
+{
+  "generated_at": "2026-05-03T14:39:07.153Z",
+  "started_at": "2026-05-03T14:38:55.928Z",
+  "decks": [
+    "comms_sync",
+    "surface_reinforce"
+  ],
+  "with_zuno": true,
+  "status": "green",
+  "steps": [
+    {
+      "label": "GitHub AI comms sync",
+      "command": "npm run comms:github-ai",
+      "exit_code": 0,
+      "ok": true,
+      "soft_fail": false
+    },
+    {
+      "label": "Cloudflare AI comms sync",
+      "command": "npm run comms:cloudflare-ai",
+      "exit_code": 0,
+      "ok": true,
+      "soft_fail": false
+    },
+    {
+      "label": "AI communication health",
+      "command": "npm run ai:communication:health",
+      "exit_code": 0,
+      "ok": true,
+      "soft_fail": false
+    },
+    {
+      "label": "Ecosystem commflow verify",
+      "command": "npm run ecosystem:commflow:verify",
+      "exit_code": 0,
+      "ok": true,
+      "soft_fail": true
+    },
+    {
+      "label": "AI ecosphere ledger refresh",
+      "command": "npm run ai:ecosphere:ledger",
+      "exit_code": 0,
+      "ok": true,
+      "soft_fail": false
+    },
+    {
+      "label": "Formula sync check",
+      "command": "npm run ai:formula:sync",
+      "exit_code": 0,
+      "ok": true,
+      "soft_fail": false
+    },
+    {
+      "label": "SSWS shadow verify",
+      "command": "npm run ssws:shadow-verify",
+      "exit_code": 0,
+      "ok": true,
+      "soft_fail": false
+    },
+    {
+      "label": "AI system health",
+      "command": "npm run ai:system:health",
+      "exit_code": 0,
+      "ok": true,
+      "soft_fail": false
+    },
+    {
+      "label": "SPI structural pattern intelligence",
+      "command": "npm run spi:analyze",
+      "exit_code": 0,
+      "ok": true,
+      "soft_fail": false
+    },
+    {
+      "label": "SPI decision advisor",
+      "command": "npm run spi:advice",
+      "exit_code": 0,
+      "ok": true,
+      "soft_fail": false
+    },
+    {
+      "label": "Adaptive learning cycle",
+      "command": "npm run learning:cycle",
+      "exit_code": 0,
+      "ok": true,
+      "soft_fail": false
+    },
+    {
+      "label": "QOSMEI core signal fusion",
+      "command": "npm run qosmei:signal",
+      "exit_code": 0,
+      "ok": true,
+      "soft_fail": false
+    },
+    {
+      "label": "Cross-system synthesizer",
+      "command": "npm run cross:system",
+      "exit_code": 0,
+      "ok": true,
+      "soft_fail": false
+    },
+    {
+      "label": "Predictive intelligence (Phase 5)",
+      "command": "npm run predictive:intel",
+      "exit_code": 0,
+      "ok": true,
+      "soft_fail": false
+    },
+    {
+      "label": "Prediction validation (Phase 5.5)",
+      "command": "npm run prediction:validate",
+      "exit_code": 0,
+      "ok": true,
+      "soft_fail": false
+    },
+    {
+      "label": "QOSMEI core signal fusion (post-predictive)",
+      "command": "npm run qosmei:signal",
+      "exit_code": 0,
+      "ok": true,
+      "soft_fail": false
+    },
+    {
+      "label": "AI status writer",
+      "command": "node scripts/z_ai_status_writer.js",
+      "exit_code": 0,
+      "ok": true,
+      "soft_fail": false
+    },
+    {
+      "label": "Dashboard registry verify",
+      "command": "npm run dashboard:registry-verify",
+      "exit_code": 0,
+      "ok": true,
+      "soft_fail": false
+    },
+    {
+      "label": "Zuno state refresh",
+      "command": "npm run zuno:state",
+      "exit_code": 0,
+      "ok": true,
+      "soft_fail": false
+    }
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "schema": "z_omnai_core_scenario_v1",
+  "purpose": "Deterministic demo input for core/omnai engines — no runtime orchestration.",
+  "rsi_cycles": 2,
+  "traffic_kind": "build",
+  "brains": [
+    { "id": "MB-0", "loadPct": 40 },
+    { "id": "BRAIN-3", "loadPct": 88 },
+    { "id": "BRAIN-7", "loadPct": 55 }
+  ],
+  "ants": {
+    "reasoningDagCycles": 120,
+    "ingestIntegrityOk": true,
+    "secretsDetected": false,
+    "ciGreen": true,
+    "formulaStable": true,
+    "pathwayDiverging": false,
+    "hiveSkewPct": 4,
+    "recursionDepth": 8,
+    "recursionLimit": 32
+  },
+  "pathway": {
+    "residualDelta": -0.02,
+    "goalClarity": 0.82,
+    "capacityRatio": 0.45,
+    "completesRubric": false
+  },
+  "entity": {
+    "lane": "ASSISTANT",
+    "action": "format_user_reply"
+  }
+}

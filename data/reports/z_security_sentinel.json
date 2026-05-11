@@ -1,0 +1,35 @@
+{
+  "ts": "2026-05-02T18:16:33.240Z",
+  "status": "warn",
+  "critical_count": 0,
+  "warn_count": 3,
+  "checks": [
+    {
+      "id": "hygiene",
+      "status": "hold"
+    },
+    {
+      "id": "proof",
+      "status": "green"
+    },
+    {
+      "id": "autorun",
+      "status": "green"
+    },
+    {
+      "id": "storage",
+      "status": "hold"
+    },
+    {
+      "id": "layout",
+      "status": "hold"
+    }
+  ],
+  "lane_notify": [
+    "observe",
+    "protect",
+    "repair",
+    "report"
+  ],
+  "message": "Security sentinel warning: review hold/warn checks."
+}

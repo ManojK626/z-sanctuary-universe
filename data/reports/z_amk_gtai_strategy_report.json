@@ -1,0 +1,213 @@
+{
+  "schema": "z_amk_gtai_strategy_report_v1",
+  "generated_at": "2026-05-04T17:52:51.160Z",
+  "council": "Z-AMK-GTAI",
+  "phase": "Z-AMK-GTAI-1",
+  "mode": "read_only_strategy_advisor",
+  "overall_signal": "RED",
+  "traffic_chief_signal": "RED",
+  "required_traffic_red": true,
+  "traffic_report_missing": false,
+  "rollup_note": "Exit 1 when overall_signal is RED (rollup across ingested report signals; missing optional reports contribute UNKNOWN only).",
+  "ingest_summary": [
+    {
+      "id": "traffic",
+      "path": "data/reports/z_traffic_minibots_status.json",
+      "status": "ok",
+      "signals": [
+        "RED"
+      ],
+      "required": true
+    },
+    {
+      "id": "ssws_requirements",
+      "path": "data/reports/z_ssws_launch_requirements_report.json",
+      "status": "ok",
+      "signals": [
+        "BLUE"
+      ],
+      "required": false
+    },
+    {
+      "id": "amk_doorway",
+      "path": "data/reports/amk_workspace_doorway_status.json",
+      "status": "ok",
+      "signals": [
+        "BLUE"
+      ],
+      "required": false
+    },
+    {
+      "id": "cursor_workspace_profiles",
+      "path": "data/reports/amk_cursor_workspace_profiles_report.json",
+      "status": "ok",
+      "signals": [
+        "YELLOW"
+      ],
+      "required": false
+    },
+    {
+      "id": "api_readiness_charter",
+      "path": "data/reports/z_api_readiness_report.json",
+      "status": "missing",
+      "signals": [
+        "UNKNOWN"
+      ],
+      "required": false
+    },
+    {
+      "id": "susbv_overseer",
+      "path": "data/reports/z_susbv_overseer_report.json",
+      "status": "ok",
+      "signals": [
+        "YELLOW"
+      ],
+      "required": false
+    },
+    {
+      "id": "omnai_build_plan",
+      "path": "data/reports/z_omnai_build_plan_report.json",
+      "status": "ok",
+      "signals": [
+        "BLUE",
+        "BLUE"
+      ],
+      "required": false
+    },
+    {
+      "id": "omnai_master_media_seed",
+      "path": "data/reports/z_omnai_master_media_seed_report.json",
+      "status": "ok",
+      "signals": [
+        "GREEN"
+      ],
+      "required": false
+    },
+    {
+      "id": "omnai_media_letter_gate",
+      "path": "data/reports/z_omnai_media_letter_gate_report.json",
+      "status": "ok",
+      "signals": [
+        "YELLOW"
+      ],
+      "required": false
+    },
+    {
+      "id": "car2",
+      "path": "data/reports/z_car2_similarity_report.json",
+      "status": "ok",
+      "signals": [
+        "YELLOW"
+      ],
+      "required": false,
+      "note": "CAR² histogram shows BLACK count 1 (advisory)."
+    }
+  ],
+  "red_findings": [
+    {
+      "source": "traffic",
+      "path": "data/reports/z_traffic_minibots_status.json",
+      "note": "Signal RED in report."
+    }
+  ],
+  "blue_decisions_required": [
+    {
+      "source": "ssws_requirements",
+      "path": "data/reports/z_ssws_launch_requirements_report.json",
+      "note": "BLUE posture — AMK decision."
+    },
+    {
+      "source": "amk_doorway",
+      "path": "data/reports/amk_workspace_doorway_status.json",
+      "note": "BLUE posture — AMK decision."
+    },
+    {
+      "source": "omnai_build_plan",
+      "path": "data/reports/z_omnai_build_plan_report.json",
+      "note": "BLUE posture — AMK decision."
+    },
+    {
+      "source": "omnai_build_plan",
+      "path": "data/reports/z_omnai_build_plan_report.json",
+      "note": "BLUE posture — AMK decision."
+    }
+  ],
+  "yellow_observations": [
+    {
+      "source": "cursor_workspace_profiles",
+      "path": "data/reports/amk_cursor_workspace_profiles_report.json",
+      "note": "YELLOW advisory."
+    },
+    {
+      "source": "susbv_overseer",
+      "path": "data/reports/z_susbv_overseer_report.json",
+      "note": "YELLOW advisory."
+    },
+    {
+      "source": "omnai_media_letter_gate",
+      "path": "data/reports/z_omnai_media_letter_gate_report.json",
+      "note": "YELLOW advisory."
+    },
+    {
+      "source": "car2",
+      "path": "data/reports/z_car2_similarity_report.json",
+      "note": "CAR² histogram shows BLACK count 1 (advisory)."
+    }
+  ],
+  "green_gold_baselines": [
+    {
+      "source": "omnai_master_media_seed",
+      "signal": "GREEN"
+    }
+  ],
+  "notification_candidates_red_blue_only": [
+    {
+      "class": "RED",
+      "source": "traffic",
+      "summary": "Signal RED in report."
+    },
+    {
+      "class": "BLUE",
+      "source": "ssws_requirements",
+      "summary": "BLUE posture — AMK decision."
+    },
+    {
+      "class": "BLUE",
+      "source": "amk_doorway",
+      "summary": "BLUE posture — AMK decision."
+    },
+    {
+      "class": "BLUE",
+      "source": "omnai_build_plan",
+      "summary": "BLUE posture — AMK decision."
+    },
+    {
+      "class": "BLUE",
+      "source": "omnai_build_plan",
+      "summary": "BLUE posture — AMK decision."
+    }
+  ],
+  "conclusion": {
+    "overall_signal": "RED",
+    "recommended_move": "Stop: inspect failing minibots in z_traffic_minibots_status.md; restore required evidence before a new lane.",
+    "amk_required": true,
+    "can_auto_lane_proceed_read_only": false,
+    "blocked_lanes": [
+      "new_feature_lane",
+      "deploy",
+      "merge_without_fix"
+    ],
+    "smallest_safe_next_action": "Run failing npm scripts individually (see traffic report); md:table-compact on docs if MD060; rollback = revert last doc batch.",
+    "hold_baseline": false
+  },
+  "laws": [
+    "Strategy report ≠ execution.",
+    "Recommendation ≠ permission.",
+    "BLUE requires AMK.",
+    "RED blocks movement.",
+    "GREEN does not deploy.",
+    "YELLOW stays quiet unless escalated.",
+    "AMK-Goku owns sacred moves."
+  ],
+  "exit_hint": 1
+}

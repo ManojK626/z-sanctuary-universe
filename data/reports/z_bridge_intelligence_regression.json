@@ -1,0 +1,33 @@
+{
+  "generated_at": "2026-04-26T02:12:34.917Z",
+  "status": "pass",
+  "cases_total": 3,
+  "cases_pass": 3,
+  "cases_fail": 0,
+  "cases": [
+    {
+      "id": "low_usage_boost",
+      "pass": true,
+      "expected_priority": 1.16,
+      "actual_priority": 1.16,
+      "expected_adjusted": 11,
+      "actual_adjusted": 11
+    },
+    {
+      "id": "heavy_usage_dampen",
+      "pass": true,
+      "expected_priority": 0.8,
+      "actual_priority": 0.8,
+      "expected_adjusted": 8,
+      "actual_adjusted": 8
+    },
+    {
+      "id": "flagged_penalty",
+      "pass": true,
+      "expected_priority": 0.99,
+      "actual_priority": 0.9900000000000001,
+      "expected_adjusted": 9,
+      "actual_adjusted": 9
+    }
+  ]
+}

@@ -1,0 +1,115 @@
+{
+  "schema_version": 1,
+  "title": "Z-MDGEV · Mega Dashboard Registry",
+  "subtitle": "Edit tiles[] to add or reorder hub dashboards — no build step. Optional merge with data/z_pc_root_projects.json for external links.",
+  "tiles": [
+    {
+      "id": "mdgev-self",
+      "title": "Z-MDGEV · Eagle Eyes (this grid)",
+      "category": "hub",
+      "description": "Manifest-driven mega dashboard; filter, search, open sibling UIs.",
+      "href": "/dashboard/z-mdgev/index.html",
+      "open_mode": "same",
+      "allow_preview": false
+    },
+    {
+      "id": "hodp-skk-rkpk",
+      "title": "HODP · SKK & RKPK Unified",
+      "category": "hub",
+      "description": "Primary Z-Sanctuary organism dashboard — SSWS banner, search, panels, living pulse.",
+      "href": "/dashboard/Html/index-skk-rkpk.html",
+      "open_mode": "same",
+      "allow_preview": false
+    },
+    {
+      "id": "hodp-redirect",
+      "title": "HODP · Compat entry",
+      "category": "hub",
+      "description": "Redirect stub to SKK/RKPK unified shell.",
+      "href": "/dashboard/Html/index.html",
+      "open_mode": "same",
+      "allow_preview": false
+    },
+    {
+      "id": "stub-root",
+      "title": "Dashboard root stub",
+      "category": "hub",
+      "description": "Minimal index for z_web_readiness_check; links into HODP and MDGEV.",
+      "href": "/dashboard/index.html",
+      "open_mode": "same",
+      "allow_preview": false
+    },
+    {
+      "id": "z-bridge-task006",
+      "title": "Z-Bridge · Pool & intelligence (Task 006)",
+      "category": "bridge",
+      "description": "Credits, allocations, ZCI + Z-Garage panels; static JSON under data/.",
+      "href": "/ui/z_bridge_dashboard/index.html",
+      "open_mode": "same",
+      "allow_preview": true
+    },
+    {
+      "id": "html-links-hub",
+      "title": "HTML links hub",
+      "category": "hub",
+      "description": "Curated HTML entry points under dashboard/Html.",
+      "href": "/dashboard/Html/z_html_links_hub.html",
+      "open_mode": "same",
+      "allow_preview": false
+    },
+    {
+      "id": "z-qa-rp",
+      "title": "Z-Q&A&RP · Pathways & DRP",
+      "category": "hub",
+      "description": "Questions, answers, resolutions, pathways; 14 DRP gates; feeds from ZCI, Z-Garage, Zuno. Registry: data/z_qa_rp_registry.json.",
+      "href": "/dashboard/z-qa-rp/index.html",
+      "open_mode": "same",
+      "allow_preview": true
+    },
+    {
+      "id": "z-ai-ecosphere",
+      "title": "Z AI Ecosphere · SSWS · Formulas · Tower",
+      "category": "hub",
+      "description": "Ledger: Z-SSWS, Z-Mega/QOSMEI, AI Tower, shadow/mini-bots; task log + potential bands. data/reports/z_ai_ecosphere_ledger.json.",
+      "href": "/dashboard/z-ai-ecosphere/index.html",
+      "open_mode": "same",
+      "allow_preview": true
+    },
+    {
+      "id": "radio-garden",
+      "title": "Radio Garden (dashboard)",
+      "category": "labs",
+      "description": "Experimental / media surface under dashboard/Html.",
+      "href": "/dashboard/Html/radio_garden.html",
+      "open_mode": "same",
+      "allow_preview": false
+    },
+    {
+      "id": "panels-explainer",
+      "title": "Panels · Explainer",
+      "category": "hub",
+      "description": "Explainer panel fragment.",
+      "href": "/dashboard/panels/explainer.html",
+      "open_mode": "same",
+      "allow_preview": false
+    },
+    {
+      "id": "panels-consent",
+      "title": "Panels · Consent center",
+      "category": "hub",
+      "description": "Consent center UI.",
+      "href": "/dashboard/panels/consent-center.html",
+      "open_mode": "same",
+      "allow_preview": false
+    },
+    {
+      "id": "panels-terms",
+      "title": "Panels · Terms & privacy",
+      "category": "hub",
+      "description": "Terms / privacy panel.",
+      "href": "/dashboard/panels/terms-privacy.html",
+      "open_mode": "same",
+      "allow_preview": false
+    }
+  ]
+}

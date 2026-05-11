@@ -1,0 +1,115 @@
+{
+  "schema": "z_omnai_core_engine_tick_v1",
+  "mode": "deterministic_simulation_only",
+  "omega": {
+    "tier": "TIER_3",
+    "rsi_cycles": 2,
+    "multiplier": 100,
+    "illustrative_rsi_step": 125.89254117941675
+  },
+  "gmb": {
+    "clone_threshold_pct": 80,
+    "suggested_clone": [
+      {
+        "id": "BRAIN-3",
+        "loadPct": 88
+      }
+    ],
+    "stable": [
+      {
+        "id": "MB-0",
+        "loadPct": 40
+      },
+      {
+        "id": "BRAIN-7",
+        "loadPct": 55
+      }
+    ],
+    "posture": "YELLOW_ELASTIC_CLONE_ADVISORY"
+  },
+  "quad_spine": {
+    "route": {
+      "spine": "BUILD",
+      "note": "mapped_kind"
+    },
+    "failsafe": "hold_promotions_queue_build"
+  },
+  "octo_ant": {
+    "ants": [
+      {
+        "ant": "ANT-1",
+        "ok": true,
+        "detail": "ok",
+        "action": null
+      },
+      {
+        "ant": "ANT-2",
+        "ok": true,
+        "detail": "ok",
+        "action": null
+      },
+      {
+        "ant": "ANT-3",
+        "ok": true,
+        "detail": "ok",
+        "action": null
+      },
+      {
+        "ant": "ANT-4",
+        "ok": true,
+        "detail": "ok",
+        "action": null
+      },
+      {
+        "ant": "ANT-5",
+        "ok": true,
+        "detail": "ok",
+        "action": null
+      },
+      {
+        "ant": "ANT-6",
+        "ok": true,
+        "detail": "ok",
+        "action": null
+      },
+      {
+        "ant": "ANT-7",
+        "ok": true,
+        "detail": "ok",
+        "action": null
+      },
+      {
+        "ant": "ANT-8",
+        "ok": true,
+        "detail": "ok",
+        "action": null
+      }
+    ],
+    "all_ok": true,
+    "veto_recommended": false,
+    "posture": "GREEN"
+  },
+  "pathway": {
+    "signal": "CONVERGE",
+    "note": "within_epsilon_band"
+  },
+  "entity_lane": {
+    "lane": "ASSISTANT",
+    "action": "format_user_reply",
+    "allowed": true,
+    "reason": "ok"
+  },
+  "rollup": {
+    "planning_posture": "YELLOW",
+    "suggested_operator_note": "GMB: elastic clone advisory active on at least one brain"
+  },
+  "trace_order": [
+    "omega_formula",
+    "gmb",
+    "spines",
+    "octo_ant",
+    "pathway",
+    "entity_lane"
+  ],
+  "scenario_path": "data\\z_omnai_core_engine_scenario_default.json"
+}

@@ -1,0 +1,68 @@
+{
+  "generated_at": "2026-05-03T14:38:57.684Z",
+  "health_score": 63,
+  "flow_status": "degraded",
+  "status": "attention",
+  "observer_alignment": "aligned",
+  "issues": [
+    {
+      "code": "aafrtc_stale",
+      "severity": "warning",
+      "message": "AAFRTC context older than freshness window"
+    }
+  ],
+  "stale_threshold_hours": 36,
+  "sources": {
+    "github_comms": {
+      "present": true,
+      "fresh": true,
+      "ok": true,
+      "generated_at": "2026-05-03T14:38:56.371Z",
+      "age_hours": 0
+    },
+    "cloudflare_comms": {
+      "present": true,
+      "fresh": true,
+      "ok": true,
+      "generated_at": "2026-05-03T14:38:57.110Z",
+      "age_hours": 0
+    },
+    "aafrtc_context": {
+      "present": true,
+      "fresh": false,
+      "generated_at": "2026-04-27T17:36:04.905Z",
+      "age_hours": 141.05
+    }
+  },
+  "observer_freshness": {
+    "status": "stale",
+    "stale_threshold_hours": 36,
+    "max_age_hours": 141.05,
+    "files_present": {
+      "aafrtc_context": true,
+      "github_comms_manifest": true,
+      "cloudflare_comms_manifest": true
+    }
+  },
+  "manifests": {
+    "github_ok": true,
+    "cloudflare_ok": true,
+    "alignment": "aligned"
+  },
+  "commflow": {
+    "posture": "attention",
+    "overall_status": "amber",
+    "generated_at": "2026-05-01T11:51:05.506Z",
+    "source": "data/reports/z_ecosystem_commflow_verifier.json"
+  },
+  "note": "Communication flow degraded — refresh comms/AAFRTC or review commflow; not a hard gate.",
+  "zuno_cross_check": {
+    "used_previous_zuno_report": true,
+    "zuno_generated_at": "2026-05-02T18:16:37.923Z"
+  },
+  "file_paths": {
+    "aafrtc_context": "data/reports/z_aafrtc_context.json",
+    "github_ai_comms_manifest": "data/reports/z_github_ai_comms_manifest.json",
+    "cloudflare_ai_comms_manifest": "data/reports/z_cloudflare_ai_comms_manifest.json"
+  }
+}

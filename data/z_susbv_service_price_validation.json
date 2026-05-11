@@ -1,0 +1,47 @@
+{
+  "schema": "z_susbv_service_price_validation_v1",
+  "posture": "evidence_metadata_only",
+  "last_human_review_iso": null,
+  "services": [
+    {
+      "service_id": "z_questra_local_notebook",
+      "evidence_status": "not_applicable",
+      "review_status": "waived_local_free",
+      "comps_documented": 0,
+      "cost_floor_documented": true,
+      "commercial_readiness_ref": null,
+      "claim_notes": "No public price claims; local learning surface only.",
+      "flags": []
+    },
+    {
+      "service_id": "family_legacy_vault_future",
+      "evidence_status": "partial",
+      "review_status": "pending_quarterly",
+      "comps_documented": 2,
+      "cost_floor_documented": false,
+      "commercial_readiness_ref": "docs/COMMERCIAL-READINESS.md",
+      "claim_notes": "Working name only; no superlative or uncited certification claims.",
+      "flags": ["needs_more_comps", "needs_cost_floor"]
+    },
+    {
+      "service_id": "school_wellness_mirror_future",
+      "evidence_status": "partial",
+      "review_status": "pending_human_gate",
+      "comps_documented": 1,
+      "cost_floor_documented": false,
+      "commercial_readiness_ref": "docs/COMMERCIAL-READINESS.md",
+      "claim_notes": "School segment — DRP review before any external marketing claims.",
+      "flags": ["needs_more_comps", "needs_cost_floor", "human_gating_required"]
+    },
+    {
+      "service_id": "hub_nav_catalog_readonly",
+      "evidence_status": "not_applicable",
+      "review_status": "waived_metadata",
+      "comps_documented": 0,
+      "cost_floor_documented": true,
+      "commercial_readiness_ref": null,
+      "claim_notes": "Operator catalog; no consumer price surface.",
+      "flags": []
+    }
+  ]
+}

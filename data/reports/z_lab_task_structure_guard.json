@@ -1,0 +1,26 @@
+{
+  "generated_at": "2026-05-11T12:26:37.761Z",
+  "status": "green",
+  "checks": [
+    {
+      "id": "policy_exists",
+      "pass": true,
+      "note": "config/z_lab_task_lanes.json present"
+    },
+    {
+      "id": "doc_exists",
+      "pass": true,
+      "note": "docs/Z_LAB_TASK_STRUCTURE.md present"
+    },
+    {
+      "id": "required_lanes_defined",
+      "pass": true,
+      "note": "all required lanes present"
+    },
+    {
+      "id": "doc_contains_lane_sections",
+      "pass": true,
+      "note": "sections present"
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "schema": "z_omnai_core_scenario_v1",
+  "label": "manifest: minibot benign action allowed",
+  "rsi_cycles": 0,
+  "traffic_kind": "ingest",
+  "brains": [{ "id": "MB-0", "loadPct": 44 }, { "id": "BRAIN-6", "loadPct": 58 }],
+  "ants": {
+    "reasoningDagCycles": 40,
+    "ingestIntegrityOk": true,
+    "secretsDetected": false,
+    "ciGreen": true,
+    "formulaStable": true,
+    "pathwayDiverging": false,
+    "hiveSkewPct": 2,
+    "recursionDepth": 3,
+    "recursionLimit": 40
+  },
+  "pathway": { "goalClarity": 0.76, "capacityRatio": 0.48, "residualDelta": -0.01, "completesRubric": false },
+  "entity": { "lane": "MINIBOT", "action": "lint_workspace_stub" }
+}

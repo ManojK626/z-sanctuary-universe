@@ -1,0 +1,432 @@
+{
+  "generated_at": "2026-04-23T18:54:52.223Z",
+  "total_entries": 30,
+  "registry": [
+    {
+      "name": "lottery_app_pack_latest",
+      "path": "./All APPs/lottery_app_pack_latest",
+      "type": "frontend",
+      "capabilities": [
+        "has_ui"
+      ],
+      "scripts": [],
+      "weaknesses": [],
+      "relationships": []
+    },
+    {
+      "name": "Amk_Goku Worldwide Loterry",
+      "path": "./Amk_Goku Worldwide Loterry",
+      "type": "frontend",
+      "capabilities": [
+        "has_scripts",
+        "has_data",
+        "has_ui"
+      ],
+      "scripts": [],
+      "weaknesses": [],
+      "relationships": []
+    },
+    {
+      "name": "core-engine",
+      "path": "./Amk_Goku Worldwide Loterry/core-engine",
+      "type": "data_system",
+      "capabilities": [
+        "has_data"
+      ],
+      "scripts": [],
+      "weaknesses": [],
+      "relationships": []
+    },
+    {
+      "name": "lottery_app_pack_20260130T225055Z",
+      "path": "./Amk_Goku Worldwide Loterry/exports/lottery_app_pack_20260130T225055Z",
+      "type": "frontend",
+      "capabilities": [
+        "has_ui"
+      ],
+      "scripts": [],
+      "weaknesses": [],
+      "relationships": []
+    },
+    {
+      "name": "lottery_app_pack_20260130T225320Z",
+      "path": "./Amk_Goku Worldwide Loterry/exports/lottery_app_pack_20260130T225320Z",
+      "type": "frontend",
+      "capabilities": [
+        "has_ui"
+      ],
+      "scripts": [],
+      "weaknesses": [],
+      "relationships": []
+    },
+    {
+      "name": "lottery_app_pack_20260131T130222Z",
+      "path": "./Amk_Goku Worldwide Loterry/exports/lottery_app_pack_20260131T130222Z",
+      "type": "frontend",
+      "capabilities": [
+        "has_ui"
+      ],
+      "scripts": [],
+      "weaknesses": [],
+      "relationships": []
+    },
+    {
+      "name": "lottery_app_pack_20260131T150700Z",
+      "path": "./Amk_Goku Worldwide Loterry/exports/lottery_app_pack_20260131T150700Z",
+      "type": "frontend",
+      "capabilities": [
+        "has_ui"
+      ],
+      "scripts": [],
+      "weaknesses": [],
+      "relationships": []
+    },
+    {
+      "name": "lottery_app_pack_20260131T150734Z",
+      "path": "./Amk_Goku Worldwide Loterry/exports/lottery_app_pack_20260131T150734Z",
+      "type": "frontend",
+      "capabilities": [
+        "has_ui"
+      ],
+      "scripts": [],
+      "weaknesses": [],
+      "relationships": []
+    },
+    {
+      "name": "lottery_app_pack_20260131T151828Z",
+      "path": "./Amk_Goku Worldwide Loterry/exports/lottery_app_pack_20260131T151828Z",
+      "type": "frontend",
+      "capabilities": [
+        "has_ui"
+      ],
+      "scripts": [],
+      "weaknesses": [],
+      "relationships": []
+    },
+    {
+      "name": "lottery_app_pack_20260131T152508Z",
+      "path": "./Amk_Goku Worldwide Loterry/exports/lottery_app_pack_20260131T152508Z",
+      "type": "frontend",
+      "capabilities": [
+        "has_ui"
+      ],
+      "scripts": [],
+      "weaknesses": [],
+      "relationships": []
+    },
+    {
+      "name": "lottery_app_pack_20260202T171438Z",
+      "path": "./Amk_Goku Worldwide Loterry/exports/lottery_app_pack_20260202T171438Z",
+      "type": "frontend",
+      "capabilities": [
+        "has_ui"
+      ],
+      "scripts": [],
+      "weaknesses": [],
+      "relationships": []
+    },
+    {
+      "name": "lottery_app_pack_20260215T154122Z",
+      "path": "./Amk_Goku Worldwide Loterry/exports/lottery_app_pack_20260215T154122Z",
+      "type": "frontend",
+      "capabilities": [
+        "has_ui"
+      ],
+      "scripts": [],
+      "weaknesses": [],
+      "relationships": []
+    },
+    {
+      "name": "lottery_app_pack_latest",
+      "path": "./Amk_Goku Worldwide Loterry/exports/lottery_app_pack_latest",
+      "type": "frontend",
+      "capabilities": [
+        "has_ui"
+      ],
+      "scripts": [],
+      "weaknesses": [],
+      "relationships": []
+    },
+    {
+      "name": "api",
+      "path": "./apps/api",
+      "type": "backend",
+      "capabilities": [
+        "node_project",
+        "has_scripts",
+        "scriptable",
+        "runnable_app",
+        "test_system",
+        "lint_system"
+      ],
+      "scripts": [
+        "dev",
+        "start",
+        "test",
+        "lint"
+      ],
+      "weaknesses": [],
+      "relationships": []
+    },
+    {
+      "name": "web",
+      "path": "./apps/web",
+      "type": "backend",
+      "capabilities": [
+        "node_project",
+        "scriptable",
+        "runnable_app",
+        "build_system",
+        "test_system",
+        "lint_system"
+      ],
+      "scripts": [
+        "dev",
+        "build",
+        "start",
+        "test",
+        "test:build",
+        "test:stress",
+        "test:release",
+        "lint",
+        "lint:eslint"
+      ],
+      "weaknesses": [],
+      "relationships": []
+    },
+    {
+      "name": "mirror_decision_engine",
+      "path": "./apps/z_gadget_mirrors/mirror_decision_engine",
+      "type": "data_system",
+      "capabilities": [
+        "has_data"
+      ],
+      "scripts": [],
+      "weaknesses": [],
+      "relationships": []
+    },
+    {
+      "name": "z_bridge",
+      "path": "./config/z_bridge",
+      "type": "bridge",
+      "capabilities": [
+        "z_bridge_module"
+      ],
+      "scripts": [],
+      "weaknesses": [],
+      "relationships": [
+        "connected_to_z_bridge"
+      ]
+    },
+    {
+      "name": "core",
+      "path": "./core",
+      "type": "data_system",
+      "capabilities": [
+        "has_scripts",
+        "has_data"
+      ],
+      "scripts": [],
+      "weaknesses": [],
+      "relationships": []
+    },
+    {
+      "name": "core",
+      "path": "./core/core",
+      "type": "data_system",
+      "capabilities": [
+        "has_data"
+      ],
+      "scripts": [],
+      "weaknesses": [],
+      "relationships": []
+    },
+    {
+      "name": "z_bridge",
+      "path": "./data/z_bridge",
+      "type": "bridge",
+      "capabilities": [
+        "z_bridge_module"
+      ],
+      "scripts": [],
+      "weaknesses": [],
+      "relationships": [
+        "connected_to_z_bridge"
+      ]
+    },
+    {
+      "name": "z_bridge_soft",
+      "path": "./deploy/z_bridge_soft",
+      "type": "bridge",
+      "capabilities": [
+        "node_project",
+        "z_bridge_module",
+        "scriptable",
+        "runnable_app",
+        "build_system",
+        "test_system",
+        "lint_system"
+      ],
+      "scripts": [
+        "start",
+        "build",
+        "test",
+        "lint"
+      ],
+      "weaknesses": [],
+      "relationships": [
+        "connected_to_z_bridge"
+      ]
+    },
+    {
+      "name": "martial-platform",
+      "path": "./martial-platform",
+      "type": "data_system",
+      "capabilities": [
+        "has_data"
+      ],
+      "scripts": [],
+      "weaknesses": [],
+      "relationships": []
+    },
+    {
+      "name": "z-intelligence",
+      "path": "./packages/z-intelligence",
+      "type": "backend",
+      "capabilities": [
+        "node_project",
+        "scriptable",
+        "build_system",
+        "test_system",
+        "lint_system"
+      ],
+      "scripts": [
+        "build",
+        "dev",
+        "test",
+        "lint"
+      ],
+      "weaknesses": [],
+      "relationships": []
+    },
+    {
+      "name": "z-sanctuary-core",
+      "path": "./packages/z-sanctuary-core",
+      "type": "backend",
+      "capabilities": [
+        "node_project",
+        "scriptable",
+        "test_system",
+        "lint_system"
+      ],
+      "scripts": [
+        "lint",
+        "test"
+      ],
+      "weaknesses": [],
+      "relationships": []
+    },
+    {
+      "name": "scripts",
+      "path": "./scripts",
+      "type": "data_system",
+      "capabilities": [
+        "has_data"
+      ],
+      "scripts": [],
+      "weaknesses": [],
+      "relationships": []
+    },
+    {
+      "name": "z_bridge",
+      "path": "./scripts/z_bridge",
+      "type": "bridge",
+      "capabilities": [
+        "node_project",
+        "z_bridge_module",
+        "scriptable",
+        "runnable_app",
+        "build_system",
+        "test_system",
+        "lint_system"
+      ],
+      "scripts": [
+        "start",
+        "build",
+        "test",
+        "lint"
+      ],
+      "weaknesses": [],
+      "relationships": [
+        "connected_to_z_bridge"
+      ]
+    },
+    {
+      "name": "z_garage_node_minimal",
+      "path": "./templates/z_garage_node_minimal",
+      "type": "backend",
+      "capabilities": [
+        "node_project",
+        "scriptable",
+        "runnable_app",
+        "build_system",
+        "test_system",
+        "lint_system"
+      ],
+      "scripts": [
+        "start",
+        "build",
+        "test",
+        "lint"
+      ],
+      "weaknesses": [],
+      "relationships": []
+    },
+    {
+      "name": "z_bridge_dashboard",
+      "path": "./ui/z_bridge_dashboard",
+      "type": "bridge",
+      "capabilities": [
+        "node_project",
+        "z_bridge_module",
+        "scriptable",
+        "runnable_app",
+        "build_system",
+        "test_system",
+        "lint_system"
+      ],
+      "scripts": [
+        "start",
+        "build",
+        "test",
+        "lint"
+      ],
+      "weaknesses": [],
+      "relationships": [
+        "connected_to_z_bridge"
+      ]
+    },
+    {
+      "name": "ZSanctuary_Labs",
+      "path": "./ZSanctuary_Labs",
+      "type": "unknown",
+      "capabilities": [
+        "has_scripts"
+      ],
+      "scripts": [],
+      "weaknesses": [],
+      "relationships": []
+    },
+    {
+      "name": "dashboard_copy",
+      "path": "./ZSanctuary_Labs/copies/dashboard_copy",
+      "type": "unknown",
+      "capabilities": [
+        "has_scripts"
+      ],
+      "scripts": [],
+      "weaknesses": [],
+      "relationships": []
+    }
+  ]
+}

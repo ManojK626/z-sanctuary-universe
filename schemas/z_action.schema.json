@@ -1,0 +1,27 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "z_action.schema.json",
+  "title": "Z-Action",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["type", "params"],
+  "properties": {
+    "type": {
+      "type": "string",
+      "enum": [
+        "ui_banner",
+        "ui_modal",
+        "start_breathing_timer",
+        "dim_effects",
+        "reduce_audio",
+        "soft_lock_module",
+        "start_cooldown",
+        "notify_contact",
+        "write_audit_note",
+        "pause_module",
+        "resume_module"
+      ]
+    },
+    "params": { "type": "object" }
+  }
+}

@@ -1,0 +1,55 @@
+{
+  "schema_version": 1,
+  "generated_at": "2026-05-03T14:39:04.776Z",
+  "advisory_only": true,
+  "drp_note": "Phase 5: heuristic predictions from merged signals. Does not run fixes, change registry, or auto-resolve decisions. Confidence is capped from learning cycle count. Phase 5.5 validation file may pre-scale per-prediction confidence. QOSMEI may apply small risk/confidence nudges from fusion_hint (bounded).",
+  "learning_cycles": 2,
+  "validation_adjustment": {
+    "applied": false,
+    "note": "insufficient or missing z_prediction_validation.json"
+  },
+  "confidence_cap_applied": 0.55,
+  "learning_history_lines": 2,
+  "confidence_model": {
+    "learning_density": 0.07,
+    "pattern_repeat_rate": 0,
+    "cross_system_alignment": 1,
+    "adaptive_weight_strength": 0.962,
+    "model_confidence": 0.42
+  },
+  "predictions": [
+    {
+      "id": "stability",
+      "type": "stability_hold",
+      "confidence": 0.50508,
+      "risk_level": "low",
+      "based_on": [
+        "spi.stability_convergence",
+        "learning not dominated by failure"
+      ],
+      "suggested_action": "Short-term: safe to keep current resolve posture; still log structural changes (advisory)."
+    },
+    {
+      "id": "convergence",
+      "type": "convergence",
+      "confidence": 0.534064,
+      "risk_level": "low",
+      "based_on": [
+        "spi.phase=optimized",
+        "cross_system=aligned",
+        "no HIGH pattern rows"
+      ],
+      "suggested_action": "Favor small friction tests so learning density stays honest (advisory)."
+    }
+  ],
+  "summary": {
+    "predictions_n": 2,
+    "highest_confidence": 0.534,
+    "dominant_signal": "convergence",
+    "high_risk_predictions": 0
+  },
+  "fusion_hint": {
+    "risk_delta": 0,
+    "confidence_delta": 2.5
+  }
+}

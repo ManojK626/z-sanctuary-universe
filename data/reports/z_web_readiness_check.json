@@ -1,0 +1,67 @@
+{
+  "generated_at": "2026-03-18T19:44:16.055Z",
+  "status": "green",
+  "base_url": "http://127.0.0.1:5502",
+  "warmup": {
+    "ok": true,
+    "exit": 0,
+    "stdout": "{\n  \"status\": \"ok\",\n  \"generated_at\": \"2026-03-18T19:44:16.156Z\",\n  \"links_discovered\": 34,\n  \"startup_count\": 2,\n  \"startup_profile\": \"core-only\",\n  \"open_performed\": false,\n  \"base_url_ready\": true,\n  \"base_url_started_local_server\": false,\n  \"catalog\": \"data/reports/z_html_links_catalog.json\",\n  \"hub\": \"core/z_html_links_hub.html\"\n}",
+    "stderr": ""
+  },
+  "totals": {
+    "pages_checked": 6,
+    "passed": 6,
+    "failed": 0
+  },
+  "checks": [
+    {
+      "id": "core/index.html",
+      "url": "http://127.0.0.1:5502/core/index.html",
+      "pass": true,
+      "status": 200,
+      "compass_present": true,
+      "note": "ok"
+    },
+    {
+      "id": "core/z_html_links_hub.html",
+      "url": "http://127.0.0.1:5502/core/z_html_links_hub.html",
+      "pass": true,
+      "status": 200,
+      "compass_present": true,
+      "note": "ok"
+    },
+    {
+      "id": "dashboard/index.html",
+      "url": "http://127.0.0.1:5502/dashboard/index.html",
+      "pass": true,
+      "status": 200,
+      "compass_present": true,
+      "note": "ok"
+    },
+    {
+      "id": "dashboard/panels/consent-center.html",
+      "url": "http://127.0.0.1:5502/dashboard/panels/consent-center.html",
+      "pass": true,
+      "status": 200,
+      "compass_present": true,
+      "note": "ok"
+    },
+    {
+      "id": "dashboard/panels/explainer.html",
+      "url": "http://127.0.0.1:5502/dashboard/panels/explainer.html",
+      "pass": true,
+      "status": 200,
+      "compass_present": true,
+      "note": "ok"
+    },
+    {
+      "id": "docs/public/snapshot/index.html",
+      "url": "http://127.0.0.1:5502/docs/public/snapshot/index.html",
+      "pass": true,
+      "status": 200,
+      "compass_present": true,
+      "note": "ok"
+    }
+  ],
+  "note": "Web readiness OK: key pages reachable and auto-compass active."
+}

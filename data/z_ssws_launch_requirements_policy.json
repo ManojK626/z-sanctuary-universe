@@ -1,0 +1,39 @@
+{
+  "schema": "z_ssws_launch_requirements_policy_v1",
+  "posture": "read_only_launch_manifest_no_execution",
+  "summary": "Z-SSWS-LINK-1: workspace spine launch requirements registry only. No extension install, no server auto-start, no auto-launch.",
+  "signal_meanings": {
+    "GREEN": "Required project rows validate; no unsafe port collisions.",
+    "YELLOW": "Optional gaps: extension lists to confirm, missing Node/PM hints, empty forbidden_auto_actions advisory.",
+    "BLUE": "Secrets required, deploy or Cloudflare posture, or human-gated launch lane.",
+    "RED": "Malformed required row, duplicate project_id, or required_for_daily_status row missing verify/smoke without known_hold_reason."
+  },
+  "extension_requirement_rules": [
+    "Registry lists required_extensions as advisory labels only; hub does not verify VS Code/Cursor install state in Phase 1.",
+    "Non-empty required_extensions produces YELLOW advisory unless project is reference_only (then quiet in extension_gap list only).",
+    "Auto-install of extensions is forbidden in SSWS-LINK-1."
+  ],
+  "launch_profile_rules": [
+    "manual_only — operator runs start_command by hand; no script may auto-run it from this phase.",
+    "checklist_only — SSWS-LINK-3+ may emit checklists; still no execution here.",
+    "approved_local_dev — metadata only until SSWS-LINK-4 charter; does not grant auto-start.",
+    "future_gated — no local start without new phase and AMK approval."
+  ],
+  "shadow_workspace_rules": [
+    "Z-SSWSs = shadow, staging, mirror spines; metadata only.",
+    "shadow_workspace_allowed false means do not open parallel workspace without charter.",
+    "Shadow workspace is not deploy and not entitlement to production."
+  ],
+  "allowed_auto_checks": ["z:ssws:requirements", "z:api:spine", "verify:md", "z:traffic", "dashboard:registry-verify"],
+  "human_gated_actions": ["extension_install", "server_start", "port_bind", "deploy", "cloudflare_bind", "secrets_write", "auto_launch_sequence"],
+  "forbidden_auto_actions": ["extension_auto_install", "server_auto_start", "auto_launch_full_stack", "deploy", "billing", "provider_call", "bridge_exec"],
+  "alert_policy": {
+    "notify_amk_default": ["RED", "BLUE"],
+    "quiet_by_default": ["GREEN", "YELLOW", "GOLD", "PURPLE", "UNKNOWN"]
+  },
+  "boundary_notes": {
+    "drp_14": "Children, privacy, voice, camera, GPS, and sacred commercial surfaces stay human-gated.",
+    "dop_14": "Staged rollout and shadow promotion require charter before any orchestration."
+  },
+  "law_note": "Launch requirement ≠ launch permission. Extension requirement ≠ auto-install. Start command ≠ execution. Shadow workspace ≠ deploy. GREEN ≠ auto-launch. BLUE requires AMK. RED blocks movement. AMK-Goku owns sacred moves."
+}

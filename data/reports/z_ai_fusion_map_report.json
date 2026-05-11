@@ -1,0 +1,165 @@
+{
+  "schema": "z.ai.fusion.map.report.v1",
+  "module_id": "z_ai_fusion_capability_map",
+  "signal": "BLUE",
+  "registry_mode": "read_only_capability_governance",
+  "generated_at": "2026-05-07T20:41:40.583Z",
+  "phase": "Z-AI-FUSION-MAP-1",
+  "auto_runtime_merge_applied": false,
+  "fixtures_red_included": false,
+  "registry_validation": {
+    "passed": [
+      "schema matches fusion registry v1.",
+      "mode is read_only_capability_governance.",
+      "capability_domains populated.",
+      "fusion_decision_types present.",
+      "overlap_signal_rules present.",
+      "ai_capabilities count: 14."
+    ],
+    "advisory": [
+      "Scanned indicator id count: 47."
+    ],
+    "red": []
+  },
+  "hub_reads": {
+    "indicator_row_count": 47,
+    "script_present": true
+  },
+  "pair_results": [
+    {
+      "sample_id": "fusion_pair_mod_dist_vs_amk_ai_sync",
+      "capability_pair": [
+        "z_mod_dist",
+        "amk_ai_sync"
+      ],
+      "overlap_numeric_score": 0.3,
+      "numeric_band": "GREEN",
+      "signal": "GREEN",
+      "fusion_recommended_decision": "LEAD_SUPPORT",
+      "notes": [
+        "Sibling routing posture: MOD-DIST decides capsule placement; AMK-AI-SYNC assigns team packets.",
+        "Score band from numeric heuristic: GREEN",
+        "Registry lead statuses: lead / lead"
+      ],
+      "overlap_score_bands_ref": [
+        "0.00–0.30 distinct (GREEN-ish pair)",
+        "0.31–0.60 related (YELLOW-ish pair)",
+        "0.61–0.80 near-overlap (YELLOW/BLEED to BLUE)",
+        "0.81–1.00 likely duplicate headline (BLUE AMK review)",
+        "flags.unsafe_overlap forces RED regardless of numeric score"
+      ]
+    },
+    {
+      "sample_id": "fusion_pair_xbus_vs_pattern_safe",
+      "capability_pair": [
+        "z_xbus_gate",
+        "z_pattern_safe"
+      ],
+      "overlap_numeric_score": 0.073,
+      "numeric_band": "GREEN",
+      "signal": "GREEN",
+      "fusion_recommended_decision": "KEEP_SEPARATE",
+      "notes": [
+        "Connector gate vs prediction-simulation law — orthogonal missions.",
+        "Score band from numeric heuristic: GREEN",
+        "Registry lead statuses: lead / lead"
+      ],
+      "overlap_score_bands_ref": [
+        "0.00–0.30 distinct (GREEN-ish pair)",
+        "0.31–0.60 related (YELLOW-ish pair)",
+        "0.61–0.80 near-overlap (YELLOW/BLEED to BLUE)",
+        "0.81–1.00 likely duplicate headline (BLUE AMK review)",
+        "flags.unsafe_overlap forces RED regardless of numeric score"
+      ]
+    },
+    {
+      "sample_id": "fusion_pair_replica_vs_ultra_mage",
+      "capability_pair": [
+        "z_replica_fabric",
+        "z_ultra_mage"
+      ],
+      "overlap_numeric_score": 0.073,
+      "numeric_band": "GREEN",
+      "signal": "BLUE",
+      "fusion_recommended_decision": "BLUE_AMK_REVIEW",
+      "notes": [
+        "Doctrine siblings: replica missions vs formula codex rollup — unify narrative in docs occasionally.",
+        "Score band from numeric heuristic: GREEN",
+        "Registry lead statuses: lead / lead"
+      ],
+      "overlap_score_bands_ref": [
+        "0.00–0.30 distinct (GREEN-ish pair)",
+        "0.31–0.60 related (YELLOW-ish pair)",
+        "0.61–0.80 near-overlap (YELLOW/BLEED to BLUE)",
+        "0.81–1.00 likely duplicate headline (BLUE AMK review)",
+        "flags.unsafe_overlap forces RED regardless of numeric score"
+      ]
+    },
+    {
+      "sample_id": "fusion_pair_ide_fusion_vs_pc_path",
+      "capability_pair": [
+        "z_ide_fusion",
+        "z_pc_ide_path"
+      ],
+      "overlap_numeric_score": 0.312,
+      "numeric_band": "YELLOW",
+      "signal": "YELLOW",
+      "fusion_recommended_decision": "KEEP_SEPARATE",
+      "notes": [
+        "IDE coordination vs PATH health probes — sibling under ide_coordination domain.",
+        "Score band from numeric heuristic: YELLOW",
+        "Registry lead statuses: lead / support"
+      ],
+      "overlap_score_bands_ref": [
+        "0.00–0.30 distinct (GREEN-ish pair)",
+        "0.31–0.60 related (YELLOW-ish pair)",
+        "0.61–0.80 near-overlap (YELLOW/BLEED to BLUE)",
+        "0.81–1.00 likely duplicate headline (BLUE AMK review)",
+        "flags.unsafe_overlap forces RED regardless of numeric score"
+      ]
+    },
+    {
+      "sample_id": "fusion_pair_mu_truth_vs_mu_advisor",
+      "capability_pair": [
+        "z_mu_truth",
+        "z_mu_advisor"
+      ],
+      "overlap_numeric_score": 0.293,
+      "numeric_band": "GREEN",
+      "signal": "GREEN",
+      "fusion_recommended_decision": "LEAD_SUPPORT",
+      "notes": [
+        "Civic ledger vs advisor templates — advisor supports truth posture.",
+        "Score band from numeric heuristic: GREEN",
+        "Registry lead statuses: lead / support"
+      ],
+      "overlap_score_bands_ref": [
+        "0.00–0.30 distinct (GREEN-ish pair)",
+        "0.31–0.60 related (YELLOW-ish pair)",
+        "0.61–0.80 near-overlap (YELLOW/BLEED to BLUE)",
+        "0.81–1.00 likely duplicate headline (BLUE AMK review)",
+        "flags.unsafe_overlap forces RED regardless of numeric score"
+      ]
+    }
+  ],
+  "fusion_decision_types": [
+    "KEEP_SEPARATE",
+    "LEAD_SUPPORT",
+    "ALIAS_TO_LEAD",
+    "MERGE_DOCS_ONLY",
+    "DEPRECATE_REFERENCE_ONLY",
+    "BLUE_AMK_REVIEW",
+    "RED_BLOCKED"
+  ],
+  "locked_law": [
+    "Fusion map ≠ auto-merge.",
+    "Overlap score ≠ deletion.",
+    "Similar AI ≠ duplicate.",
+    "Lead AI ≠ sacred authority.",
+    "Dashboard grouping ≠ execution.",
+    "GREEN ≠ deploy.",
+    "BLUE requires AMK.",
+    "RED blocks movement.",
+    "AMK-Goku owns sacred moves."
+  ]
+}

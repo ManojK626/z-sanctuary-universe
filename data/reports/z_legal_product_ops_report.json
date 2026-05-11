@@ -1,0 +1,114 @@
+{
+  "schema": "z.legal.product.ops.report.v1",
+  "module_id": "z_legal_product_ops_workstation",
+  "phase": "Z-LEGAL-PRODUCT-OPS-1",
+  "mode": "product_legal_governance_concept_only",
+  "signal": "BLUE",
+  "generated_at": "2026-05-08T12:55:55.573Z",
+  "runtime_features_enabled": false,
+  "fixtures_red_included": false,
+  "product_families": [
+    "z_octave",
+    "z_neuro_matrix",
+    "z_ankle_water_weight",
+    "z_natural_inhaler",
+    "z_gadget_mirrors",
+    "z_connected_devices",
+    "z_wearables_headsets_glasses",
+    "future_sensor_output_devices"
+  ],
+  "registry_validation": {
+    "passed": [
+      "registry schema ok.",
+      "policy schema ok.",
+      "mode product_legal_governance_concept_only.",
+      "six governance worlds mapped.",
+      "product family map present.",
+      "policy gates complete.",
+      "AMK gate list populated."
+    ],
+    "advisory": [],
+    "red": []
+  },
+  "summary": {
+    "green": 2,
+    "yellow": 1,
+    "blue": 3,
+    "red": 0
+  },
+  "sample_results": [
+    {
+      "sample_id": "lp_green_octave_invention_log_001",
+      "signal": "GREEN",
+      "reasons": [
+        "Governance concept only; no product launch or legal runtime enabled."
+      ],
+      "outputs_declared": [
+        "concept_summary"
+      ]
+    },
+    {
+      "sample_id": "lp_green_gadget_canvas_002",
+      "signal": "GREEN",
+      "reasons": [
+        "Governance concept only; no product launch or legal runtime enabled."
+      ],
+      "outputs_declared": [
+        "risk_observation"
+      ]
+    },
+    {
+      "sample_id": "lp_yellow_missing_safety_metadata_003",
+      "signal": "YELLOW",
+      "reasons": [
+        "Safety metadata incomplete; review panel needs completion."
+      ],
+      "outputs_declared": [
+        "missing_doc_suggestion"
+      ]
+    },
+    {
+      "sample_id": "lp_blue_inhaler_health_claim_review_004",
+      "signal": "BLUE",
+      "reasons": [
+        "Lawyer/IP/product-safety human decision gate required before any widening."
+      ],
+      "outputs_declared": [
+        "decision_packet_draft"
+      ]
+    },
+    {
+      "sample_id": "lp_blue_manufacturer_contact_005",
+      "signal": "BLUE",
+      "reasons": [
+        "Lawyer/IP/product-safety human decision gate required before any widening."
+      ],
+      "outputs_declared": [
+        "decision_packet_draft"
+      ]
+    },
+    {
+      "sample_id": "lp_blue_ip_filing_candidate_006",
+      "signal": "BLUE",
+      "reasons": [
+        "Lawyer/IP/product-safety human decision gate required before any widening."
+      ],
+      "outputs_declared": [
+        "decision_packet_draft"
+      ]
+    }
+  ],
+  "locked_law": [
+    "Product map ≠ product launch.",
+    "Prototype evidence ≠ safety certification.",
+    "Invention log ≠ patent filing.",
+    "IP candidate ≠ registered right.",
+    "Manufacturer list ≠ contract.",
+    "Canvas map ≠ live tracking.",
+    "AI summary ≠ legal advice.",
+    "GREEN ≠ launch.",
+    "BLUE requires AMK/legal/product-safety review.",
+    "RED blocks movement.",
+    "AMK-Goku owns sacred moves."
+  ]
+}

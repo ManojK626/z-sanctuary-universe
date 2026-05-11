@@ -1,0 +1,1227 @@
+{
+  "schema": "amk_control_dashboard_map_v3",
+  "phase": "AMK-MAP-3",
+  "posture": "read_only_visibility_map_no_execution",
+  "page_title": "AMK-Goku Main Control Dashboard",
+  "page_subtitle": "AMK-MAP-3 — universal domain lenses, side catalog, readiness observatory, launch ceremony (read-only metadata). No feedback collection, analytics, deploy, or bridges.",
+  "confirmation_notice": "Confirmation does not execute work. AMK opens the lane outside this panel. Gates still verify before work.",
+  "confirmation_law": [
+    "Notification ≠ execution",
+    "Confirmation ≠ deployment",
+    "Recommendation ≠ permission",
+    "AMK opens lanes outside this panel"
+  ],
+  "hero": {
+    "question": "What should AMK-Goku do now?",
+    "paths": [
+      {
+        "id": "hold",
+        "label": "Hold baseline",
+        "blurb": "Rest, preserve sealed posture, and avoid opening new lanes until intent is clear.",
+        "href": "#amk-section-safe-now",
+        "kind": "anchor"
+      },
+      {
+        "id": "verify",
+        "label": "Run verification",
+        "blurb": "Use Cursor or a terminal from hub root; this page does not run commands.",
+        "href": "../../docs/AMK_GOKU_MAIN_CONTROL_DASHBOARD.md#verification-rituals-reference",
+        "kind": "doc"
+      },
+      {
+        "id": "notifications",
+        "label": "Review notifications",
+        "blurb": "Open the full AMK notifications panel on the unified dashboard (read-only + localStorage stub).",
+        "href": "./index-skk-rkpk.html#zAmkNotificationsPanel",
+        "kind": "dashboard"
+      },
+      {
+        "id": "gated_lane",
+        "label": "Open one gated lane",
+        "blurb": "Pick a single lane in docs or JSON, then execute only through your normal human + gate workflow.",
+        "href": "../../docs/AMK_GOKU_OPERATOR_CONFIRMATION_POLICY.md",
+        "kind": "doc"
+      }
+    ]
+  },
+  "status_strip": {
+    "turtle_mode_line": "Turtle Mode: one domain per change set, one rollback plan, one verification path — no autopilot across domains.",
+    "runtime_line": "Runtime / bridge / provider / deploy: CLOSED on this page — visibility and links only."
+  },
+  "ecosystem_canvas": {
+    "title": "Living ecosystem canvas",
+    "intro": "Nodes sit on a local SVG map. Line styles: solid = hub metadata/docs relation only; dashed = future-gated or reference-only sibling; thick root tint = governance spine. Shapes encode role; stroke tint follows read-only health bind when data exists — never live bridge state.",
+    "viewBox": "0 0 920 640",
+    "center": {
+      "id": "amk_core",
+      "label": "AMK-Goku Core",
+      "shape": "octagon",
+      "x": 460,
+      "y": 320
+    },
+    "shape_legend": [
+      {
+        "shape": "circle",
+        "meaning": "Healthy / clear signal from report"
+      },
+      {
+        "shape": "diamond",
+        "meaning": "Caution — review metrics"
+      },
+      {
+        "shape": "hexagon",
+        "meaning": "Blocked or hold posture"
+      },
+      {
+        "shape": "octagon",
+        "meaning": "Human decision surface"
+      },
+      {
+        "shape": "star",
+        "meaning": "Creative / magical registry layer"
+      },
+      {
+        "shape": "shield",
+        "meaning": "Security / governance policy"
+      },
+      {
+        "shape": "square",
+        "meaning": "Service / module / report artifact"
+      },
+      {
+        "shape": "spiral",
+        "meaning": "Future-gated or external reference lane"
+      }
+    ],
+    "nodes": [
+      {
+        "id": "z_traffic",
+        "label": "Z-Traffic Minibots",
+        "angle_deg": -90,
+        "radius": 218,
+        "shape": "square",
+        "edge_to_core": "root",
+        "health_bind": "traffic_signal"
+      },
+      {
+        "id": "zuno",
+        "label": "Z-Zuno Coverage",
+        "angle_deg": -66,
+        "radius": 218,
+        "shape": "circle",
+        "edge_to_core": "solid",
+        "health_bind": "zuno_coverage"
+      },
+      {
+        "id": "car2",
+        "label": "Z-CAR²",
+        "angle_deg": -42,
+        "radius": 218,
+        "shape": "diamond",
+        "edge_to_core": "solid",
+        "health_bind": "car2_structure"
+      },
+      {
+        "id": "nav",
+        "label": "NAV Workstation",
+        "angle_deg": -18,
+        "radius": 218,
+        "shape": "square",
+        "edge_to_core": "solid",
+        "health_bind": "nav_catalog"
+      },
+      {
+        "id": "zsx",
+        "label": "ZSX Capability Sync",
+        "angle_deg": 6,
+        "radius": 218,
+        "shape": "square",
+        "edge_to_core": "solid",
+        "health_bind": "cross_project"
+      },
+      {
+        "id": "zmc",
+        "label": "ZMC Magical Canvas PlayKit",
+        "angle_deg": 30,
+        "radius": 218,
+        "shape": "star",
+        "edge_to_core": "solid",
+        "health_bind": "magical_registry"
+      },
+      {
+        "id": "ai_builder",
+        "label": "AI Builder Pack",
+        "angle_deg": 54,
+        "radius": 218,
+        "shape": "square",
+        "edge_to_core": "solid",
+        "health_bind": "ai_builder"
+      },
+      {
+        "id": "zag",
+        "label": "ZAG Guardian Loop",
+        "angle_deg": 78,
+        "radius": 218,
+        "shape": "shield",
+        "edge_to_core": "root",
+        "health_bind": "autonomy_policy"
+      },
+      {
+        "id": "vh100",
+        "label": "VH100 Security Core",
+        "angle_deg": 102,
+        "radius": 218,
+        "shape": "shield",
+        "edge_to_core": "root",
+        "health_bind": "vh100_posture"
+      },
+      {
+        "id": "mcburb",
+        "label": "MCBURB",
+        "angle_deg": 126,
+        "radius": 218,
+        "shape": "shield",
+        "edge_to_core": "root",
+        "health_bind": "mcburb_backup"
+      },
+      {
+        "id": "fbap",
+        "label": "FBAP",
+        "angle_deg": 150,
+        "radius": 218,
+        "shape": "shield",
+        "edge_to_core": "root",
+        "health_bind": "fbap_taxonomy"
+      },
+      {
+        "id": "questra",
+        "label": "Z-QUESTRA",
+        "angle_deg": 174,
+        "radius": 218,
+        "shape": "spiral",
+        "edge_to_core": "dashed",
+        "health_bind": "reference_lane"
+      },
+      {
+        "id": "eirmind",
+        "label": "ÉirMind",
+        "angle_deg": 198,
+        "radius": 218,
+        "shape": "spiral",
+        "edge_to_core": "dashed",
+        "health_bind": "reference_lane"
+      },
+      {
+        "id": "zquest",
+        "label": "ZQuestCraft",
+        "angle_deg": 222,
+        "radius": 218,
+        "shape": "spiral",
+        "edge_to_core": "dashed",
+        "health_bind": "reference_lane"
+      },
+      {
+        "id": "xl2",
+        "label": "XL2 Reference Lane",
+        "angle_deg": 246,
+        "radius": 218,
+        "shape": "spiral",
+        "edge_to_core": "dashed",
+        "health_bind": "reference_lane"
+      }
+    ]
+  },
+  "health_monitor_cards": [
+    {
+      "id": "traffic_signal",
+      "title": "Traffic signal",
+      "evaluator": "z_traffic",
+      "sources": [
+        "data/reports/z_traffic_minibots_status.json"
+      ],
+      "doc": "docs/Z_TRAFFIC_MINIBOTS.md"
+    },
+    {
+      "id": "md_lint_gate",
+      "title": "Markdown gate",
+      "evaluator": "markdown_no_json",
+      "sources": [],
+      "doc": "docs/AMK_GOKU_MAIN_CONTROL_DASHBOARD.md#verification-rituals-reference"
+    },
+    {
+      "id": "car2_structure",
+      "title": "Z-CAR² structure mirror",
+      "evaluator": "z_car2",
+      "sources": [
+        "data/reports/z_car2_similarity_report.json"
+      ],
+      "doc": "docs/Z_AUTONOMOUS_GUARDIAN_LOOP.md"
+    },
+    {
+      "id": "dashboard_registry",
+      "title": "Dashboard registry",
+      "evaluator": "dashboard_verify",
+      "sources": [
+        "data/reports/z_dashboard_registry_verify.json"
+      ],
+      "doc": "dashboard/README.md"
+    },
+    {
+      "id": "cross_project",
+      "title": "Cross-project capability index",
+      "evaluator": "cross_project_index",
+      "sources": [
+        "data/z_cross_project_capability_index.json"
+      ],
+      "doc": "docs/cross-project/PHASE_ZSX_1_GREEN_RECEIPT.md"
+    },
+    {
+      "id": "ai_builder",
+      "title": "AI Builder refresh rhythm",
+      "evaluator": "ai_builder_no_report",
+      "sources": [
+        "data/z_master_module_registry.json"
+      ],
+      "doc": "docs/AI_BUILDER_CONTEXT.md"
+    },
+    {
+      "id": "zuno_coverage",
+      "title": "Z-Zuno coverage audit",
+      "evaluator": "zuno_coverage",
+      "sources": [
+        "data/reports/z_zuno_coverage_audit.json"
+      ],
+      "doc": "docs/Z_SANCTUARY_MODULE_INDEX.md"
+    },
+    {
+      "id": "vh100_posture",
+      "title": "Security posture (VH100)",
+      "evaluator": "json_presence_blue",
+      "sources": [
+        "data/z_vh100_security_posture.json"
+      ],
+      "doc": "docs/security/Z_VH100_VEGETA_HARISHA_SECURITY_CORE.md"
+    },
+    {
+      "id": "mcburb_backup",
+      "title": "Backup / reconvergence (MCBURB)",
+      "evaluator": "json_presence_blue",
+      "sources": [
+        "data/z_mcburb_backup_policy.json"
+      ],
+      "doc": "docs/security/Z_MCBURB_BACKUP_RECONVERGE_BOOSTER.md"
+    },
+    {
+      "id": "fbap_taxonomy",
+      "title": "FBAP taxonomy",
+      "evaluator": "json_presence_blue",
+      "sources": [
+        "data/z_fbap_event_taxonomy.json"
+      ],
+      "doc": "docs/security/Z_FBAP_FIRE_BACKS_AWARENESS_PROTOCOL.md"
+    },
+    {
+      "id": "autonomy_policy",
+      "title": "Autonomy policy (ZAG)",
+      "evaluator": "json_presence_blue",
+      "sources": [
+        "data/z_autonomy_task_policy.json"
+      ],
+      "doc": "docs/Z_AUTONOMOUS_GUARDIAN_LOOP.md"
+    },
+    {
+      "id": "nav_catalog",
+      "title": "NAV service catalog",
+      "evaluator": "nav_catalog",
+      "sources": [
+        "dashboard/data/z_universe_service_catalog.json"
+      ],
+      "doc": "docs/dashboard/Z_UNIVERSE_WORKSTATION_NAVIGATOR.md"
+    },
+    {
+      "id": "magical_registry",
+      "title": "Magical visual capability registry",
+      "evaluator": "magical_registry",
+      "sources": [
+        "data/z_magical_visual_capability_registry.json"
+      ],
+      "doc": "docs/Z_SANCTUARY_MONSTER_PROJECT_MASTER_MAP.md"
+    }
+  ],
+  "rhythm_schedule": {
+    "title": "Health rhythm scheduler",
+    "disclaimer": "This scheduler is a visual reminder only. It does not run tasks.",
+    "chip_legend": "GREEN = normal safe rhythm · YELLOW = caution or optional deep check · BLUE = human decision or policy review · RED = blocked until fixed",
+    "items": [
+      {
+        "chip": "GREEN",
+        "when": "Daily / session start",
+        "commands": "npm run z:traffic"
+      },
+      {
+        "chip": "YELLOW",
+        "when": "After docs, dashboard, or catalog edits",
+        "commands": "npm run verify:md && npm run z:car2"
+      },
+      {
+        "chip": "YELLOW",
+        "when": "After cross-project catalog edits",
+        "commands": "npm run z:cross-project:sync"
+      },
+      {
+        "chip": "GREEN",
+        "when": "After dashboard HTML or registry edits",
+        "commands": "npm run dashboard:registry-verify"
+      },
+      {
+        "chip": "YELLOW",
+        "when": "After generated-doc waves",
+        "commands": "npm run z:ai-builder:refresh && npm run verify:md && npm run z:car2"
+      },
+      {
+        "chip": "BLUE",
+        "when": "After Z-QUESTRA code edits",
+        "commands": "cd z-questra && npm test"
+      },
+      {
+        "chip": "BLUE",
+        "when": "Quarterly operator review",
+        "commands": "Open docs/QUARTERLY-MARKET-AND-FACTS-REVIEW.md and follow its checklist (human-led)"
+      }
+    ]
+  },
+  "top_cards": [
+    {
+      "id": "traffic",
+      "title": "Today's signal (Z-Traffic)",
+      "body": "Loads from data/reports/z_traffic_minibots_status.json when served over HTTP. If missing, run npm run z:traffic from hub root.",
+      "fetch_hint": "z_traffic_status_json"
+    },
+    {
+      "id": "turtle",
+      "title": "Turtle Mode",
+      "body": "Small branches (cursor/zsanctuary/), one domain per PR, no silent bridges. See .cursor/rules/z-turtle-mode-cursor-agents.mdc and AGENTS.md."
+    },
+    {
+      "id": "runtime",
+      "title": "Execution posture",
+      "body": "This HTML map does not call providers, billing, deploy hooks, or live bridges. Operator runs gates in IDE or terminal."
+    },
+    {
+      "id": "reports",
+      "title": "Last known reports",
+      "body": "Regenerate traffic, CAR², dashboard registry verify, and Zuno coverage from hub; links below."
+    }
+  ],
+  "safe_now": {
+    "title": "What I can do now",
+    "intro": "Safe actions are observational or documented — not executed from this page.",
+    "items": [
+      {
+        "title": "Rest / hold baseline",
+        "note": "No lane change; read receipts only."
+      },
+      {
+        "title": "Run Z-Traffic (hub terminal)",
+        "note": "Documented command: npm run z:traffic — operator-run only."
+      },
+      {
+        "title": "Open next gated lane",
+        "note": "Use AMK notifications JSON + policy doc; confirm outside this UI."
+      },
+      {
+        "title": "Review notifications panel",
+        "note": "Unified dashboard anchor; decisions stay localStorage until a future gated export."
+      }
+    ]
+  },
+  "sealed_systems": [
+    {
+      "id": "z_traffic",
+      "name": "Z-Traffic Minibots",
+      "status_label": "Sealed (read-only reports)",
+      "summary": "Signal spine for minibots posture; GREEN/YELLOW/RED/BLUE in reports.",
+      "doc": "docs/Z_TRAFFIC_MINIBOTS.md",
+      "report": "data/reports/z_traffic_minibots_status.json"
+    },
+    {
+      "id": "zag",
+      "name": "ZAG (autonomy guard)",
+      "status_label": "Policy JSON",
+      "summary": "Allowed autonomy bands; does not dispatch tasks from dashboard.",
+      "doc": "docs/Z_AUTONOMOUS_GUARDIAN_LOOP.md",
+      "data": "data/z_autonomy_task_policy.json"
+    },
+    {
+      "id": "vh100",
+      "name": "Z-VH100",
+      "status_label": "Phase VH100-1 (docs + JSON)",
+      "summary": "Defensive posture core; no attack tooling.",
+      "doc": "docs/security/Z_VH100_VEGETA_HARISHA_SECURITY_CORE.md",
+      "data": "data/z_vh100_security_posture.json"
+    },
+    {
+      "id": "mcburb",
+      "name": "Z-MCBURB",
+      "status_label": "Phase MCBURB-1",
+      "summary": "Backup / reconvergence doctrine.",
+      "doc": "docs/security/Z_MCBURB_BACKUP_RECONVERGE_BOOSTER.md",
+      "data": "data/z_mcburb_backup_policy.json"
+    },
+    {
+      "id": "fbap",
+      "name": "Z-FBAP",
+      "status_label": "Taxonomy JSON",
+      "summary": "Fire-backs awareness protocol; observation-first.",
+      "doc": "docs/security/Z_FBAP_FIRE_BACKS_AWARENESS_PROTOCOL.md",
+      "data": "data/z_fbap_event_taxonomy.json"
+    },
+    {
+      "id": "nav",
+      "name": "NAV (Universe Workstation)",
+      "status_label": "NAV-1 read-only",
+      "summary": "Service catalog navigator; metadata and doc links only.",
+      "doc": "docs/dashboard/Z_UNIVERSE_WORKSTATION_NAVIGATOR.md",
+      "data": "dashboard/data/z_universe_service_catalog.json"
+    },
+    {
+      "id": "z_api_spine",
+      "name": "Z-API-SPINE-1 (API Power Cell)",
+      "status_label": "Registry + validator only",
+      "summary": "Universal API and route metadata catalog; collision checks; not a live API gateway or service mesh.",
+      "doc": "docs/Z_API_SPINE_POWER_CELL.md",
+      "data": "data/z_api_spine_registry.json",
+      "report": "data/reports/z_api_spine_report.json"
+    },
+    {
+      "id": "z_ssws_link",
+      "name": "Z-SSWS-LINK-1 (Workspace launch requirements)",
+      "status_label": "Launch manifest only",
+      "summary": "Links Z-SSWS / Z-SSWSs to API spine readiness; extension and start commands are metadata — no auto-launch.",
+      "doc": "docs/Z_SSWS_WORKSPACE_SPINE.md",
+      "data": "data/z_ssws_workspace_spine_registry.json",
+      "report": "data/reports/z_ssws_launch_requirements_report.json"
+    },
+    {
+      "id": "zsx",
+      "name": "ZSX",
+      "status_label": "Cross-project index",
+      "summary": "Capability index across projects; reference posture.",
+      "doc": "docs/cross-project/PHASE_ZSX_1_GREEN_RECEIPT.md",
+      "data": "data/z_cross_project_capability_index.json"
+    },
+    {
+      "id": "zmc",
+      "name": "ZMC (Monster / catalog)",
+      "status_label": "Registry-backed",
+      "summary": "Monster map and registry for scope; verify with z:monster:registry-verify when changing roster.",
+      "doc": "docs/Z_SANCTUARY_MONSTER_PROJECT_MASTER_MAP.md",
+      "data": "data/z_sanctuary_monster_project_registry.json"
+    },
+    {
+      "id": "z_questra",
+      "name": "Z-QUESTRA (QX)",
+      "status_label": "Separate Vite app",
+      "summary": "Comfort UI slice; build inside z-questra/; no live hub bridge in Phase 2.1.",
+      "doc": "docs/z_zuno_technology_snapshot.md",
+      "data": null
+    },
+    {
+      "id": "ai_builder",
+      "name": "AI Builder Pack",
+      "status_label": "Read-only docs",
+      "summary": "AI_BUILDER_CONTEXT.md and generated module index; truth pack for Cursor.",
+      "doc": "docs/AI_BUILDER_CONTEXT.md",
+      "data": "data/z_master_module_registry.json"
+    },
+    {
+      "id": "amk_notify",
+      "name": "AMK-Goku Notifications",
+      "status_label": "AMK-NOTIFY-1",
+      "summary": "Lane queue + human gate surface; localStorage stub only.",
+      "doc": "docs/AMK_GOKU_NOTIFICATIONS_PANEL.md",
+      "data": "data/amk_operator_notifications.json"
+    }
+  ],
+  "project_map": [
+    {
+      "name": "ZSanctuary_Universe (hub)",
+      "note": "This repo — dashboard, data, docs, scripts, gates.",
+      "href": "../../AGENTS.md"
+    },
+    {
+      "name": "Z-QUESTRA",
+      "note": "z-questra/ — operator UI lab; reference in snapshot.",
+      "href": "../../z-questra/README.md"
+    },
+    {
+      "name": "ÉirMind / ZQuestCraft / XL2",
+      "note": "Sibling or satellite projects — reference-only on this map; no auto-bridge.",
+      "href": "../../docs/Z-HIERARCHY-CHIEF-AND-OBSERVER-VIEW.md"
+    }
+  ],
+  "blocked_until_gate": {
+    "title": "Blocked until gate (not from this page)",
+    "categories": [
+      {
+        "title": "Deployment & runtime",
+        "items": [
+          "Production deploy",
+          "Live server bind beyond local http-server for viewing",
+          "Auto-merge to main"
+        ]
+      },
+      {
+        "title": "Billing & SKUs",
+        "items": [
+          "Pricing changes",
+          "SKU or entitlement mutations",
+          "Commercial checkout flows"
+        ]
+      },
+      {
+        "title": "Providers & APIs",
+        "items": [
+          "API keys in repo",
+          "Undeclared provider calls",
+          "Cloud AI memory sync as authority"
+        ]
+      },
+      {
+        "title": "Bridges & sync",
+        "items": [
+          "Cross-repo silent inheritance",
+          "Bridge execution without charter",
+          "NAS/cloud sync as execution"
+        ]
+      },
+      {
+        "title": "Auth & accounts",
+        "items": [
+          "OAuth flows from this HTML",
+          "Account linking",
+          "Credential storage"
+        ]
+      },
+      {
+        "title": "Sensitive modalities",
+        "items": [
+          "Children-directed features",
+          "GPS/voice/camera from this dashboard",
+          "Biometrics"
+        ]
+      }
+    ]
+  },
+  "receipts_reports": [
+    {
+      "label": "AMK-NOTIFY-1 receipt",
+      "doc": "docs/PHASE_AMK_NOTIFY_1_GREEN_RECEIPT.md"
+    },
+    {
+      "label": "AMK-MAP-1 receipt",
+      "doc": "docs/PHASE_AMK_MAP_1_GREEN_RECEIPT.md"
+    },
+    {
+      "label": "AMK-MAP-2 receipt",
+      "doc": "docs/PHASE_AMK_MAP_2_GREEN_RECEIPT.md"
+    },
+    {
+      "label": "AMK-MAP-3 receipt",
+      "doc": "docs/PHASE_AMK_MAP_3_GREEN_RECEIPT.md"
+    },
+    {
+      "label": "Z-ROOT-7 guardian coordination",
+      "doc": "docs/Z_ROOT_7_GUARDIAN_COORDINATION_LAYER.md"
+    },
+    {
+      "label": "Z-ROOT-7 green receipt",
+      "doc": "docs/PHASE_Z_ROOT_7_GREEN_RECEIPT.md"
+    },
+    {
+      "label": "Z-ROOT-7B 3D constellation receipt",
+      "doc": "docs/PHASE_Z_ROOT_7B_3D_GREEN_RECEIPT.md"
+    },
+    {
+      "label": "ZSX Phase 1 receipt",
+      "doc": "docs/cross-project/PHASE_ZSX_1_GREEN_RECEIPT.md"
+    },
+    {
+      "label": "Z-Traffic status (JSON)",
+      "report": "data/reports/z_traffic_minibots_status.json"
+    },
+    {
+      "label": "Z-Traffic status (MD)",
+      "report": "data/reports/z_traffic_minibots_status.md"
+    },
+    {
+      "label": "Zuno coverage audit",
+      "report": "data/reports/z_zuno_coverage_audit.json"
+    },
+    {
+      "label": "CAR² similarity report",
+      "report": "data/reports/z_car2_similarity_report.json"
+    },
+    {
+      "label": "Dashboard registry verify",
+      "report": "data/reports/z_dashboard_registry_verify.json"
+    },
+    {
+      "label": "Service entitlement catalog (metadata)",
+      "data": "data/z_service_entitlement_catalog.json"
+    }
+  ],
+  "notifications_fetch_path": "data/amk_operator_notifications.json",
+  "map3_disclaimer": "This dashboard does not execute tasks, collect user feedback, deploy, bill, or bridge services. It is a visual command map. Dashboard view ≠ service access. Service listing ≠ entitlement. Rating ≠ certification. Launch readiness ≠ deployment.",
+  "domain_views": [
+    {
+      "id": "amk_operator",
+      "label": "AMK-Goku / Operator",
+      "allowed_sensitivity": [
+        "none",
+        "learning",
+        "ops",
+        "commercial",
+        "admin",
+        "security"
+      ],
+      "hidden_section_ids": [],
+      "welcome_paragraph": "",
+      "emphasis_hint": "Full map: receipts, gates, blocked lanes — still no execution from this page."
+    },
+    {
+      "id": "kids",
+      "label": "Kids",
+      "allowed_sensitivity": [
+        "none",
+        "learning"
+      ],
+      "hidden_section_ids": [
+        "strip",
+        "law",
+        "ecosystem",
+        "health",
+        "rhythm",
+        "hero",
+        "topcards",
+        "queue",
+        "sealed",
+        "projects",
+        "safenow",
+        "blocked",
+        "receipts",
+        "inspector",
+        "observatory",
+        "launch",
+        "indicators",
+        "advisor"
+      ],
+      "welcome_paragraph": "Welcome — you are seeing a gentle, learning-safe slice of Z-Sanctuary. Grown-up tools, prices, and admin maps are hidden here.",
+      "emphasis_hint": "Play, comfort, and friendly learning notes only."
+    },
+    {
+      "id": "teens",
+      "label": "Teens",
+      "allowed_sensitivity": [
+        "none",
+        "learning",
+        "ops"
+      ],
+      "hidden_section_ids": [
+        "blocked",
+        "receipts",
+        "observatory",
+        "launch",
+        "queue"
+      ],
+      "welcome_paragraph": "Guided creativity and study-friendly surfaces. Deployment, billing, and sensitive admin language stay hidden.",
+      "emphasis_hint": "Creativity + learning + safety-first language."
+    },
+    {
+      "id": "adults",
+      "label": "Adults",
+      "allowed_sensitivity": [
+        "none",
+        "learning",
+        "ops",
+        "commercial"
+      ],
+      "hidden_section_ids": [],
+      "welcome_paragraph": "Personal tools, services, and family-friendly productivity — admin-only rows stay filtered.",
+      "emphasis_hint": "Wellness and services without kid-only framing."
+    },
+    {
+      "id": "family",
+      "label": "Family",
+      "allowed_sensitivity": [
+        "none",
+        "learning",
+        "ops",
+        "commercial"
+      ],
+      "hidden_section_ids": [
+        "queue"
+      ],
+      "welcome_paragraph": "Shared household lens: learning, services, and care — not operator admin consoles.",
+      "emphasis_hint": "Balances safety with everyday usefulness."
+    },
+    {
+      "id": "business",
+      "label": "Business",
+      "allowed_sensitivity": [
+        "none",
+        "learning",
+        "ops",
+        "commercial"
+      ],
+      "hidden_section_ids": [],
+      "welcome_paragraph": "Service catalog, workflows, and commercial-readiness metadata — no live checkout.",
+      "emphasis_hint": "Productivity and compliance-friendly links only."
+    },
+    {
+      "id": "enterprise",
+      "label": "Enterprise",
+      "allowed_sensitivity": [
+        "none",
+        "learning",
+        "ops",
+        "commercial",
+        "admin",
+        "security"
+      ],
+      "hidden_section_ids": [],
+      "welcome_paragraph": "Governance, audit, entitlements, and cross-project posture — still read-only here.",
+      "emphasis_hint": "VH100 / ZSX / receipts visible when sensitivity allows."
+    },
+    {
+      "id": "public_visitor",
+      "label": "Public Visitor",
+      "allowed_sensitivity": [
+        "none",
+        "learning"
+      ],
+      "hidden_section_ids": [
+        "strip",
+        "law",
+        "ecosystem",
+        "health",
+        "rhythm",
+        "hero",
+        "topcards",
+        "queue",
+        "sealed",
+        "projects",
+        "safenow",
+        "blocked",
+        "receipts",
+        "inspector",
+        "observatory",
+        "launch",
+        "indicators",
+        "advisor"
+      ],
+      "welcome_paragraph": "High-level, safe descriptions of the Sanctuary — no admin, pricing, or bridge controls.",
+      "emphasis_hint": "Orientation only."
+    }
+  ],
+  "service_catalog_sidebar": [
+    {
+      "project_id": "ZSanctuary_Universe",
+      "module_id": "z_zebras_family_preview",
+      "display_name": "Z-Zebras Family (preview)",
+      "icon": "🦓",
+      "domain": "Learning / Accessibility",
+      "age_suitability": [
+        "kids",
+        "teens",
+        "adults",
+        "family"
+      ],
+      "short_description": "Local readiness preview for inclusive learning patterns — not a live product.",
+      "status": "preview",
+      "bridge_status": "Not connected",
+      "pricing_owner": "N/A (preview)",
+      "entitlement_owner": "Hub metadata only",
+      "risk_class": "low",
+      "signal_color": "GREEN",
+      "sensitivity_tier": "learning",
+      "related_docs": [
+        "docs/Z_SANCTUARY_MONSTER_PROJECT_MASTER_MAP.md"
+      ],
+      "related_reports": []
+    },
+    {
+      "project_id": "ZSanctuary_Universe",
+      "module_id": "z_questra",
+      "display_name": "Z-QUESTRA",
+      "icon": "🌿",
+      "domain": "Comfort / creativity UI",
+      "age_suitability": [
+        "teens",
+        "adults",
+        "family"
+      ],
+      "short_description": "Separate Vite comfort lab — build under z-questra/; no live hub bridge in Phase 2.1.",
+      "status": "lab",
+      "bridge_status": "Not connected",
+      "pricing_owner": "N/A",
+      "entitlement_owner": "N/A",
+      "risk_class": "low",
+      "signal_color": "BLUE",
+      "sensitivity_tier": "ops",
+      "related_docs": [
+        "docs/z_zuno_technology_snapshot.md"
+      ],
+      "related_reports": []
+    },
+    {
+      "project_id": "ZSanctuary_Universe",
+      "module_id": "nav_workstation",
+      "display_name": "NAV Workstation",
+      "icon": "🧭",
+      "domain": "Operator catalog",
+      "age_suitability": [
+        "adults",
+        "business",
+        "enterprise",
+        "amk_operator"
+      ],
+      "short_description": "Read-only service catalog rail — metadata and doc links.",
+      "status": "read_only",
+      "bridge_status": "Not connected",
+      "pricing_owner": "N/A",
+      "entitlement_owner": "See data/z_service_entitlement_catalog.json (metadata)",
+      "risk_class": "low",
+      "signal_color": "GREEN",
+      "sensitivity_tier": "ops",
+      "related_docs": [
+        "docs/dashboard/Z_UNIVERSE_WORKSTATION_NAVIGATOR.md"
+      ],
+      "related_reports": []
+    },
+    {
+      "project_id": "ZSanctuary_Universe",
+      "module_id": "z_traffic",
+      "display_name": "Z-Traffic Minibots",
+      "icon": "🚦",
+      "domain": "Scripts / posture",
+      "age_suitability": [
+        "enterprise",
+        "amk_operator"
+      ],
+      "short_description": "Minibot signal reports — operator and enterprise lenses.",
+      "status": "sealed_reports",
+      "bridge_status": "Not connected",
+      "pricing_owner": "N/A",
+      "entitlement_owner": "N/A",
+      "risk_class": "low",
+      "signal_color": "GREEN",
+      "sensitivity_tier": "admin",
+      "related_docs": [
+        "docs/Z_TRAFFIC_MINIBOTS.md"
+      ],
+      "related_reports": [
+        "data/reports/z_traffic_minibots_status.json"
+      ]
+    },
+    {
+      "project_id": "ZSanctuary_Universe",
+      "module_id": "z_susbv",
+      "display_name": "Z-SUSBV benchmarks",
+      "icon": "📐",
+      "domain": "Commercial evidence (metadata)",
+      "age_suitability": [
+        "business",
+        "enterprise",
+        "amk_operator"
+      ],
+      "short_description": "Evidence-first benchmark metadata — no live research or billing in Phase 1.",
+      "status": "metadata_only",
+      "bridge_status": "Not connected",
+      "pricing_owner": "Policy + docs",
+      "entitlement_owner": "Catalog JSON",
+      "risk_class": "medium",
+      "signal_color": "YELLOW",
+      "sensitivity_tier": "commercial",
+      "related_docs": [
+        "commercial/Z_SUSBV_SANCTUARY_SELF_BENCHMARKS_VALIDATION.md"
+      ],
+      "related_reports": []
+    },
+    {
+      "project_id": "ZSanctuary_Universe",
+      "module_id": "vh100_core",
+      "display_name": "VH100 Security Core",
+      "icon": "🛡️",
+      "domain": "Security doctrine",
+      "age_suitability": [
+        "enterprise",
+        "amk_operator"
+      ],
+      "short_description": "Defensive posture JSON + docs — no attack tooling.",
+      "status": "phase_docs",
+      "bridge_status": "Not connected",
+      "pricing_owner": "N/A",
+      "entitlement_owner": "N/A",
+      "risk_class": "sacred",
+      "signal_color": "BLUE",
+      "sensitivity_tier": "security",
+      "related_docs": [
+        "docs/security/Z_VH100_VEGETA_HARISHA_SECURITY_CORE.md"
+      ],
+      "related_reports": []
+    },
+    {
+      "project_id": "ZSanctuary_Universe",
+      "module_id": "amk_notifications",
+      "display_name": "AMK-Goku Notifications",
+      "icon": "🔔",
+      "domain": "Human confirmation",
+      "age_suitability": [
+        "adults",
+        "enterprise",
+        "amk_operator"
+      ],
+      "short_description": "Lane queue + local decision stub — no task execution.",
+      "status": "AMK-NOTIFY-1",
+      "bridge_status": "Not connected",
+      "pricing_owner": "N/A",
+      "entitlement_owner": "N/A",
+      "risk_class": "low",
+      "signal_color": "GREEN",
+      "sensitivity_tier": "admin",
+      "related_docs": [
+        "docs/AMK_GOKU_NOTIFICATIONS_PANEL.md"
+      ],
+      "related_reports": [
+        "data/amk_operator_notifications.json"
+      ]
+    },
+    {
+      "project_id": "ZSanctuary_Universe",
+      "module_id": "z_legal_lawyer_workstation",
+      "display_name": "Z-Lawyer Command Workstation (UX-2)",
+      "icon": "⚖️",
+      "domain": "Legal / Product / IP governance",
+      "age_suitability": [
+        "adults",
+        "business",
+        "enterprise",
+        "amk_operator"
+      ],
+      "short_description": "UX-2 compact protector cockpit: read-only legal/product/IP visibility with protector modes, receipts drawer, and BLUE review overlays.",
+      "status": "read_only",
+      "bridge_status": "Not connected",
+      "pricing_owner": "N/A",
+      "entitlement_owner": "N/A",
+      "risk_class": "medium",
+      "signal_color": "BLUE",
+      "sensitivity_tier": "ops",
+      "related_docs": [
+        "docs/Z_LEGAL_PRODUCT_IP_COMPLIANCE_WORKSTATION.md",
+        "docs/Z_LEGAL_OPS_SAFETY_AND_BOUNDARY_POLICY.md"
+      ],
+      "related_reports": [
+        "data/reports/z_legal_ops_report.json",
+        "data/reports/z_legal_product_ops_report.json"
+      ]
+    },
+    {
+      "project_id": "satellite",
+      "module_id": "eirmind_ref",
+      "display_name": "ÉirMind (reference)",
+      "icon": "☘️",
+      "domain": "Sibling reference",
+      "age_suitability": [
+        "adults",
+        "business",
+        "family",
+        "amk_operator"
+      ],
+      "short_description": "Reference-only — no auto-bridge from this hub map.",
+      "status": "reference",
+      "bridge_status": "Future-gated",
+      "pricing_owner": "N/A",
+      "entitlement_owner": "N/A",
+      "risk_class": "low",
+      "signal_color": "BLUE",
+      "sensitivity_tier": "ops",
+      "related_docs": [
+        "docs/Z-HIERARCHY-CHIEF-AND-OBSERVER-VIEW.md"
+      ],
+      "related_reports": []
+    },
+    {
+      "project_id": "ZSanctuary_Universe",
+      "module_id": "living_pulse",
+      "display_name": "Living Pulse (comfort)",
+      "icon": "🦋",
+      "domain": "Ambient / calm UI",
+      "age_suitability": [
+        "kids",
+        "teens",
+        "adults",
+        "family",
+        "public_visitor"
+      ],
+      "short_description": "Optional calm visuals on hub dashboard — operator-toggled.",
+      "status": "optional",
+      "bridge_status": "Not connected",
+      "pricing_owner": "N/A",
+      "entitlement_owner": "N/A",
+      "risk_class": "low",
+      "signal_color": "GREEN",
+      "sensitivity_tier": "none",
+      "related_docs": [
+        "docs/Z-ACOUSTIC-LIVING-PULSE-ARCHITECTURE.md"
+      ],
+      "related_reports": []
+    },
+    {
+      "project_id": "ZSanctuary_Universe",
+      "module_id": "ai_builder_pack",
+      "display_name": "AI Builder Pack",
+      "icon": "📚",
+      "domain": "Cursor / docs spine",
+      "age_suitability": [
+        "teens",
+        "adults",
+        "business",
+        "enterprise",
+        "amk_operator"
+      ],
+      "short_description": "Read-only doc pack for builders — not public tutoring.",
+      "status": "read_only",
+      "bridge_status": "Not connected",
+      "pricing_owner": "N/A",
+      "entitlement_owner": "N/A",
+      "risk_class": "low",
+      "signal_color": "GREEN",
+      "sensitivity_tier": "ops",
+      "related_docs": [
+        "docs/AI_BUILDER_CONTEXT.md"
+      ],
+      "related_reports": []
+    }
+  ],
+  "readiness_observatory": [
+    {
+      "module_id": "z_questra_local_notebook",
+      "display_name": "Z-QUESTRA (local)",
+      "readiness_score": 82,
+      "trust_score": 90,
+      "accessibility_score": null,
+      "benchmark_status": "not_commercial",
+      "maintenance_signal": "YELLOW",
+      "upgrade_need": "medium",
+      "feedback_status": "future_gated",
+      "inspector_notes": "Internal readiness metadata only — not a public score."
+    },
+    {
+      "module_id": "nav_workstation",
+      "display_name": "NAV Workstation",
+      "readiness_score": null,
+      "trust_score": null,
+      "accessibility_score": null,
+      "benchmark_status": "read_only_phase",
+      "maintenance_signal": "GREEN",
+      "upgrade_need": "low",
+      "feedback_status": "future_gated",
+      "inspector_notes": "UNKNOWN numeric scores until a dedicated receipt exists."
+    },
+    {
+      "module_id": "z_traffic",
+      "display_name": "Z-Traffic",
+      "readiness_score": null,
+      "trust_score": null,
+      "accessibility_score": null,
+      "benchmark_status": "report_driven",
+      "maintenance_signal": "GREEN",
+      "upgrade_need": "low",
+      "feedback_status": "future_gated",
+      "inspector_notes": "Use z_traffic_minibots_status.json as ground signal."
+    },
+    {
+      "module_id": "z_susbv",
+      "display_name": "Z-SUSBV",
+      "readiness_score": null,
+      "trust_score": null,
+      "accessibility_score": null,
+      "benchmark_status": "metadata_validation",
+      "maintenance_signal": "YELLOW",
+      "upgrade_need": "high",
+      "feedback_status": "future_gated",
+      "inspector_notes": "No live user ratings; consent + privacy + 14 DRP before feedback."
+    }
+  ],
+  "inspector_advisory": {
+    "title": "AI inspector / upgrade advisor (read-only)",
+    "intro": "These inspectors advise only. They do not execute, auto-upgrade, change pricing, deploy, or merge. Tie-breaks stay with AMK and hub gates.",
+    "law_line": "Advise ≠ execute · Recommendation ≠ permission",
+    "rows": [
+      {
+        "id": "z_traffic",
+        "label": "Z-Traffic",
+        "watches": "Proceed / hold lane",
+        "source": "reports + docs"
+      },
+      {
+        "id": "car2",
+        "label": "Z-CAR²",
+        "watches": "Duplicate / drift windows",
+        "source": "similarity report"
+      },
+      {
+        "id": "susbv",
+        "label": "Z-SUSBV",
+        "watches": "Benchmark / pricing evidence posture",
+        "source": "commercial metadata"
+      },
+      {
+        "id": "vh100",
+        "label": "VH100",
+        "watches": "Security posture JSON",
+        "source": "docs + data"
+      },
+      {
+        "id": "mcburb_fbap",
+        "label": "MCBURB / FBAP",
+        "watches": "Backup + fire-backs awareness",
+        "source": "policy JSON"
+      },
+      {
+        "id": "zuno",
+        "label": "Z-Zuno",
+        "watches": "Coverage truth vs registry",
+        "source": "coverage audit"
+      },
+      {
+        "id": "zag",
+        "label": "ZAG",
+        "watches": "Autonomy level bands",
+        "source": "z_autonomy_task_policy.json"
+      },
+      {
+        "id": "zebras",
+        "label": "Z-Zebras (preview)",
+        "watches": "Accessibility / inclusive learning readiness",
+        "source": "catalog item"
+      }
+    ]
+  },
+  "launch_readiness": {
+    "ceremony_title": "Launch Readiness Ceremony",
+    "status": "PREPARE",
+    "status_note": "Launch readiness: PREPARE — human release review still required. This is not Cloudflare deploy, not npm publish, not bridge go-live.",
+    "launch_key_copy": "The Launch Key is symbolic: it gathers gates, receipts, and blocked items in one glance. AMK-Goku, Zuno, and Z-Family compassion stories stay outside execution paths until a separate human-approved deploy lane opens.",
+    "required_gates": [
+      "manual_release / release control JSON posture",
+      "npm run verify:md (when docs move)",
+      "npm run z:traffic + npm run z:car2 for drift posture",
+      "npm run dashboard:registry-verify after dashboard edits",
+      "AAFRTC / overseer pipeline when scope demands"
+    ],
+    "blocked_categories_mirror": true,
+    "human_approval_required": true
+  }
+}

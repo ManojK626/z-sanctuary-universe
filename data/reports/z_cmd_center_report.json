@@ -1,0 +1,69 @@
+{
+  "timestamp": "2026-05-05T20:32:51.311Z",
+  "phase": "Z_CMD_CENTER_1",
+  "signal": "GREEN",
+  "reason": "All checks pass - command center ready",
+  "checks": {
+    "mainHubExists": true,
+    "labsExists": true,
+    "cwdInArchive": false,
+    "cwd": "C:\\Cursor Projects Organiser\\Z_Sanctuary_Universe",
+    "codeAvailable": true,
+    "cursorAvailable": true,
+    "isElevated": true
+  },
+  "registry_version": "z-cmd-center-registry-v1",
+  "detected_roots": {
+    "main_hub_exists": true,
+    "labs_exists": true,
+    "cwd_safe": true
+  },
+  "detected_ide_commands": {
+    "code_available": true,
+    "cursor_available": true
+  },
+  "system_status": {
+    "process_elevated": true,
+    "current_cwd": "C:\\Cursor Projects Organiser\\Z_Sanctuary_Universe"
+  },
+  "safe_command_recommendations": {
+    "open_hub_vscode": {
+      "command": "code \"C:\\Cursor Projects Organiser\\Z_Sanctuary_Universe\"",
+      "description": "Open main hub in VS Code (normal mode)",
+      "note": "Use this for normal development"
+    },
+    "open_labs_vscode": {
+      "command": "code \"C:\\Cursor Projects Organiser\\Z_Sanctuary_Universe\\ZSanctuary_Labs\"",
+      "description": "Open Labs workspace in VS Code",
+      "note": "Use this for experimental work"
+    },
+    "open_labs_cursor": {
+      "command": "cursor \"C:\\Cursor Projects Organiser\\Z_Sanctuary_Universe\\ZSanctuary_Labs\"",
+      "description": "Open Labs workspace in Cursor IDE",
+      "note": "Use Cursor for advanced AI features"
+    }
+  },
+  "future_domains": [
+    "nas_synology",
+    "cloudflare",
+    "external_storage"
+  ],
+  "next_actions": [
+    "Use command recommendations to open IDE from correct root",
+    "Run safe commands from main hub: npm run z:pc:ide-path, z:ssws:cockpit, etc.",
+    "Do NOT modify registry, profiles, or auto-launch settings",
+    "Future NAS/Cloudflare integration pending AMK approval",
+    "Report signal: GREEN"
+  ],
+  "locked_laws": [
+    "Command center ≠ command authority.",
+    "MiniBot guide ≠ autonomous operator.",
+    "Windows Terminal layout ≠ deployment.",
+    "PowerShell shortcut ≠ permission.",
+    "NAS declared ≠ mounted.",
+    "Cloudflare declared ≠ deployed.",
+    "GREEN ≠ deploy.",
+    "AMK-Goku owns sacred moves."
+  ],
+  "exitCode": 0
+}

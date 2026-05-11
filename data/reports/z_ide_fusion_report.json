@@ -1,0 +1,34 @@
+{
+  "schema": "z_ide_fusion_report_v1",
+  "generated_at": "2026-05-07T20:47:03.293Z",
+  "overall_signal": "YELLOW",
+  "registry_valid": true,
+  "active_sessions_status": "ACTIVE",
+  "handoff_status": "PRESENT",
+  "session_count": 2,
+  "latest_handoff": {
+    "timestamp": "2026-05-05T19:45:00Z",
+    "summary": "MD-HYGIENE-ZUNO-SUMMARIES-1 sealed: markdown gate recovery on four Zuno report docs; verify:md PASS; traffic/cadence GREEN; full rhythm run. Dual-IDE fusion row added for coordinated VS Code + Cursor visibility.",
+    "session_id": "cursor-ide-2026-05-05-main-001"
+  },
+  "conflict_risk": "watch",
+  "next_amk_action": "approve_continued_docs_checks",
+  "amk_notification_candidates": [],
+  "issues": [
+    {
+      "signal": "YELLOW",
+      "code": "same_project_parallel",
+      "message": "zsanctuary_universe: multiple active sessions (2)"
+    }
+  ],
+  "locked_law": [
+    "IDE fusion != IDE remote control.",
+    "Shared handoff != execution.",
+    "Shadow workspace != deploy.",
+    "Active session != permission.",
+    "GREEN != deploy.",
+    "BLUE requires AMK.",
+    "RED blocks movement.",
+    "AMK-Goku owns sacred moves."
+  ]
+}

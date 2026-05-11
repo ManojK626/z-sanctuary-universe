@@ -1,0 +1,28 @@
+{
+  "generated_at": "2026-02-18T18:22:06.955Z",
+  "status": "approved",
+  "workspace": "CORE",
+  "peer_root": "C:/ZSanctuary_Universe",
+  "checks": [
+    {
+      "id": "promotion_flag_explicit",
+      "pass": true,
+      "note": "--promote provided"
+    },
+    {
+      "id": "local_workspace_version_present",
+      "pass": true,
+      "note": "local_version=0.2.0"
+    },
+    {
+      "id": "peer_workspace_version_present",
+      "pass": true,
+      "note": "peer_version=0.2.0"
+    },
+    {
+      "id": "version_match_for_merge",
+      "pass": true,
+      "note": "require_match=true local=0.2.0 peer=0.2.0"
+    }
+  ]
+}

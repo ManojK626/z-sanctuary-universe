@@ -1,0 +1,141 @@
+{
+  "schema_version": "1",
+  "generated_at": "2026-04-27T17:36:02.1044488Z",
+  "repo_root": "C:\\Cursor Projects Organiser\\ZSanctuary_Universe",
+  "drives": [
+    {
+      "device_id": "C:",
+      "volume_name": "Windows",
+      "file_system": "NTFS",
+      "size_bytes": 1022060654592,
+      "free_bytes": 823145324544
+    }
+  ],
+  "containers": [
+    {
+      "kind": "path_presence",
+      "path": "C:\\Program Files\\Docker",
+      "note": "Directory present (no mutation)"
+    },
+    {
+      "kind": "path_presence",
+      "path": "C:\\Users\\manoj\\.docker",
+      "note": "Directory present (no mutation)"
+    },
+    {
+      "kind": "docker",
+      "note": "docker volume ls (read-only)",
+      "result": {
+        "command": "docker volume ls",
+        "exit_code": 1,
+        "stdout": "failed to connect to the docker API at npipe:////./pipe/dockerDesktopLinuxEngine; check if the path is correct and if the daemon is running: open //./pipe/dockerDesktopLinuxEngine: The system cannot find the file specified."
+      }
+    }
+  ],
+  "project_roots": [
+    {
+      "kind": "pc_root",
+      "path": "C:\\Cursor Projects Organiser",
+      "exists": true
+    },
+    {
+      "kind": "hub",
+      "path": "C:\\Cursor Projects Organiser\\ZSanctuary_Universe",
+      "exists": true,
+      "relative": "ZSanctuary_Universe"
+    },
+    {
+      "id": "zsanctuary-universe",
+      "name": "ZSanctuary_Universe",
+      "path": "C:\\Cursor Projects Organiser\\ZSanctuary_Universe",
+      "exists": true,
+      "role": "hub",
+      "relative": "ZSanctuary_Universe"
+    },
+    {
+      "id": "pc-root-extras-and-tools",
+      "name": "Extras & Tools",
+      "path": "C:\\Cursor Projects Organiser\\Extras & Tools",
+      "exists": true,
+      "role": "member",
+      "relative": "Extras & Tools"
+    },
+    {
+      "id": "amk-goku-vaults",
+      "name": "Amk-Goku Vaults",
+      "path": "C:\\Cursor Projects Organiser\\Amk-Goku Vaults",
+      "exists": true,
+      "role": "member",
+      "relative": "Amk-Goku Vaults"
+    },
+    {
+      "id": "at-princess-blackie-copitol",
+      "name": "AT Princess & Blackie Copilot",
+      "path": "C:\\Cursor Projects Organiser\\AT Princess&Blackie Copilot",
+      "exists": true,
+      "role": "member",
+      "relative": "AT Princess&Blackie Copilot"
+    },
+    {
+      "id": "sister-aisling-sol",
+      "name": "Sister Aisling Sol",
+      "path": "C:\\Cursor Projects Organiser\\Z-Sister Aisling Sol",
+      "exists": true,
+      "role": "member",
+      "relative": "Z-Sister Aisling Sol"
+    },
+    {
+      "id": "z-omni-sanctuary",
+      "name": "Z-OMNI-Sanctuary",
+      "path": "C:\\Cursor Projects Organiser\\Z-OMNI-Sanctuary",
+      "exists": true,
+      "role": "member",
+      "relative": "Z-OMNI-Sanctuary"
+    },
+    {
+      "id": "z-sanctuary-ai-skyscraper",
+      "name": "Z-SANCTUARY AI SKYSCRAPER",
+      "path": "C:\\Cursor Projects Organiser\\Z-SANCTUARY AI SKYSCRAPER",
+      "exists": true,
+      "role": "member",
+      "relative": "Z-SANCTUARY AI SKYSCRAPER"
+    },
+    {
+      "id": "z-sanctuary-browser-z-saiyan-lumina",
+      "name": "Z-Sanctuary Browser (Z-Saiyan Lumina)",
+      "path": "C:\\Cursor Projects Organiser\\Z-Sanctuary Browser",
+      "exists": true,
+      "role": "member",
+      "relative": "Z-Sanctuary Browser"
+    },
+    {
+      "id": "z-sanctuary-claude-core",
+      "name": "Z-Sanctuary Claude (Core)",
+      "path": "C:\\Cursor Projects Organiser\\Z-Sanctuary Claude",
+      "exists": true,
+      "role": "member",
+      "relative": "Z-Sanctuary Claude"
+    },
+    {
+      "id": "z-sanctuary-aimanity",
+      "name": "z-sanctuary-aimanity",
+      "path": "C:\\Cursor Projects Organiser\\z-sanctuary-aimanity",
+      "exists": true,
+      "role": "member",
+      "relative": "z-sanctuary-aimanity"
+    },
+    {
+      "id": "z-sanctuary-universe-2-continuation",
+      "name": "Z_Sanctuary_Universe 2",
+      "path": "C:\\Cursor Projects Organiser\\ZSanctuary_Universe\\Z_Sanctuary_Universe 2",
+      "exists": true,
+      "role": "member",
+      "relative": "ZSanctuary_Universe/Z_Sanctuary_Universe 2"
+    }
+  ],
+  "free_space": {
+    "C:": 823145324544
+  },
+  "warnings": [],
+  "safety": "READ_ONLY_PHASE1_NO_DELETE_NO_MOVE"
+}

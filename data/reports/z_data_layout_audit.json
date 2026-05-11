@@ -1,0 +1,205 @@
+{
+  "generated_at": "2026-05-01T17:24:17.787Z",
+  "status": "hold",
+  "policy_version": "1.0.0",
+  "files_scanned": 1385,
+  "root_count": 10,
+  "group_count": 7,
+  "checks": [
+    {
+      "id": "unknown_files_limit",
+      "pass": false,
+      "note": "unknown=133, limit=50"
+    },
+    {
+      "id": "ungrouped_files_limit",
+      "pass": true,
+      "note": "ungrouped=0, limit=20"
+    },
+    {
+      "id": "roots_scanned",
+      "pass": true,
+      "note": "roots=10"
+    }
+  ],
+  "summary": {
+    "by_root": {
+      "core": 186,
+      "scripts": 266,
+      "docs": 209,
+      "rules": 21,
+      "schemas": 14,
+      "config": 31,
+      "data": 629,
+      "products": 14,
+      "interface": 13,
+      "Amk_Goku Worldwide Loterry": 2
+    },
+    "by_group": {
+      "data": 350,
+      "config": 13,
+      "code": 408,
+      "docs": 465,
+      "web": 15,
+      "archive": 1,
+      "unknown": 133
+    },
+    "top_extensions": [
+      {
+        "key": ".md",
+        "value": 460
+      },
+      {
+        "key": ".json",
+        "value": 338
+      },
+      {
+        "key": ".mjs",
+        "value": 203
+      },
+      {
+        "key": ".js",
+        "value": 181
+      },
+      {
+        "key": "(none)",
+        "value": 122
+      },
+      {
+        "key": ".py",
+        "value": 22
+      },
+      {
+        "key": ".html",
+        "value": 11
+      },
+      {
+        "key": ".code-workspace",
+        "value": 9
+      },
+      {
+        "key": ".jsonl",
+        "value": 9
+      },
+      {
+        "key": ".ps1",
+        "value": 6
+      },
+      {
+        "key": ".css",
+        "value": 4
+      },
+      {
+        "key": ".txt",
+        "value": 4
+      },
+      {
+        "key": ".cjs",
+        "value": 2
+      },
+      {
+        "key": ".jsonc",
+        "value": 2
+      },
+      {
+        "key": ".sha256",
+        "value": 2
+      },
+      {
+        "key": ".log",
+        "value": 2
+      },
+      {
+        "key": ".zip",
+        "value": 1
+      },
+      {
+        "key": ".sh",
+        "value": 1
+      },
+      {
+        "key": ".pem",
+        "value": 1
+      },
+      {
+        "key": ".tag",
+        "value": 1
+      },
+      {
+        "key": ".ods",
+        "value": 1
+      },
+      {
+        "key": ".pptx",
+        "value": 1
+      },
+      {
+        "key": ".csv",
+        "value": 1
+      },
+      {
+        "key": ". navigate to the sanctuary",
+        "value": 1
+      }
+    ]
+  },
+  "unknown": {
+    "count": 133,
+    "samples": [
+      "scripts/powershell/z_fpsmc_report.ps1",
+      "scripts/powershell/z_fpsmc_scan.ps1",
+      "scripts/powershell/z_vdk_report.ps1",
+      "scripts/powershell/z_vdk_scan.ps1",
+      "scripts/z_register_observer_scheduled_task.ps1",
+      "scripts/z_scheduled_observer_watchdog.ps1",
+      "data/.pytest_cache/.gitignore",
+      "data/.pytest_cache/CACHEDIR.TAG",
+      "data/.pytest_cache/v/cache/nodeids",
+      "data/ggaesp/.gitkeep",
+      "data/quarantine/.gitkeep",
+      "data/reports/exports/z_ecosphere_transparency_2026-04-23.pptx",
+      "data/reports/incidents/2026-02-24T19-40-44-833Z-web",
+      "data/reports/incidents/2026-02-24T19-40-44-834Z-workspace",
+      "data/reports/incidents/2026-02-24T20-34-28-614Z-web",
+      "data/reports/incidents/2026-02-24T20-34-28-615Z-workspace",
+      "data/reports/incidents/2026-02-24T20-34-54-767Z-web",
+      "data/reports/incidents/2026-02-24T20-34-54-768Z-workspace",
+      "data/reports/incidents/2026-02-24T21-03-05-458Z-web",
+      "data/reports/incidents/2026-02-24T21-03-05-459Z-workspace",
+      "data/reports/incidents/2026-02-24T21-03-26-965Z-web",
+      "data/reports/incidents/2026-02-24T21-03-26-966Z-workspace",
+      "data/reports/incidents/2026-02-27T11-26-14-867Z-web",
+      "data/reports/incidents/2026-02-27T11-26-14-868Z-workspace",
+      "data/reports/incidents/2026-02-27T18-51-24-957Z-web",
+      "data/reports/incidents/2026-02-27T18-51-24-958Z-workspace",
+      "data/reports/incidents/2026-02-27T18-54-07-781Z-web",
+      "data/reports/incidents/2026-02-27T18-54-07-782Z-workspace",
+      "data/reports/incidents/2026-02-28T03-07-07-704Z-web",
+      "data/reports/incidents/2026-02-28T03-07-07-705Z-workspace",
+      "data/reports/incidents/2026-02-28T03-07-07-981Z-web",
+      "data/reports/incidents/2026-02-28T03-07-07-982Z-workspace",
+      "data/reports/incidents/2026-02-28T11-05-13-005Z-web",
+      "data/reports/incidents/2026-02-28T11-05-13-006Z-workspace",
+      "data/reports/incidents/2026-02-28T11-05-13-279Z-web",
+      "data/reports/incidents/2026-02-28T11-05-13-279Z-workspace",
+      "data/reports/incidents/2026-03-03T13-13-58-539Z-web",
+      "data/reports/incidents/2026-03-03T13-13-58-540Z-workspace",
+      "data/reports/incidents/2026-03-05T00-45-27-959Z-web",
+      "data/reports/incidents/2026-03-05T00-45-27-960Z-workspace",
+      "data/reports/incidents/2026-03-05T15-44-40-814Z-web",
+      "data/reports/incidents/2026-03-05T15-44-40-814Z-workspace",
+      "data/reports/incidents/2026-03-05T15-56-13-152Z-web",
+      "data/reports/incidents/2026-03-05T15-56-13-155Z-workspace",
+      "data/reports/incidents/2026-03-08T13-27-57-390Z-web",
+      "data/reports/incidents/2026-03-08T13-27-57-390Z-workspace",
+      "data/reports/incidents/2026-03-08T17-05-11-611Z-web",
+      "data/reports/incidents/2026-03-08T17-05-11-612Z-workspace",
+      "data/reports/incidents/2026-03-09T17-05-24-181Z-web",
+      "data/reports/incidents/2026-03-09T17-05-24-183Z-workspace"
+    ]
+  },
+  "ungrouped": {
+    "count": 0,
+    "samples": []
+  }
+}

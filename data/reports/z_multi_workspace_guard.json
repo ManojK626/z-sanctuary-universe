@@ -1,0 +1,58 @@
+{
+  "generated_at": "2026-05-11T12:26:35.492Z",
+  "status": "green",
+  "workspace": "CORE",
+  "role": "production",
+  "checks": [
+    {
+      "id": "identity_file_present",
+      "pass": true,
+      "note": "workspace=CORE"
+    },
+    {
+      "id": "policy_file_present",
+      "pass": true,
+      "note": "policy_version=0.2"
+    },
+    {
+      "id": "identity_external_writes_disabled",
+      "pass": true,
+      "note": "allow_external_writes=false"
+    },
+    {
+      "id": "multi_workspace_enabled",
+      "pass": true,
+      "note": "enabled=true"
+    },
+    {
+      "id": "multi_workspace_strict_isolation",
+      "pass": true,
+      "note": "mode=strict"
+    },
+    {
+      "id": "cross_workspace_writes_disabled",
+      "pass": true,
+      "note": "cross_workspace_writes=false"
+    },
+    {
+      "id": "promotion_requires_flag",
+      "pass": true,
+      "note": "promotion_requires_explicit_flag=true"
+    },
+    {
+      "id": "version_match_required_for_merge",
+      "pass": true,
+      "note": "require_version_match_for_merge=true"
+    },
+    {
+      "id": "broadcast_workspace_matches_identity",
+      "pass": true,
+      "note": "broadcast.workspace=CORE"
+    },
+    {
+      "id": "version_workspace_matches_identity",
+      "pass": true,
+      "note": "version.workspace=CORE"
+    }
+  ]
+}

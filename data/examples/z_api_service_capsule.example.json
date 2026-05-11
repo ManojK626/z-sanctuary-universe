@@ -1,0 +1,18 @@
+{
+  "schema": "z_api_service_capsule_v1",
+  "service_id": "example_api",
+  "project_id": "example_project",
+  "health": {
+    "mode": "none_until_charter",
+    "path": "/healthz"
+  },
+  "routes": ["/api/v1/status"],
+  "dependencies": [],
+  "smoke_gate": "npm run z:traffic",
+  "data_sensitivity": "low",
+  "deployment_status": "HOLD",
+  "allowed_auto_checks": ["read_registry"],
+  "human_gated_actions": ["deploy", "provider_bind"],
+  "related_docs": ["docs/Z_API_SERVICE_CAPSULE_POLICY.md"],
+  "related_reports": ["data/reports/z_api_spine_report.json"]
+}

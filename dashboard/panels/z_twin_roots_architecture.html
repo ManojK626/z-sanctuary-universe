@@ -1,0 +1,223 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Z-Twin Roots Architecture · Phase 1</title>
+    <style>
+      :root {
+        --bg: #070b14;
+        --bg2: #0d1426;
+        --emerald: #00ffcc;
+        --gold: #ffd700;
+        --green: #1e7f5f;
+        --purple: #7a5cff;
+        --text: #eaf6ff;
+        --text-dim: #95acc2;
+      }
+      body {
+        margin: 0;
+        font-family: Inter, Segoe UI, Arial, sans-serif;
+        background:
+          radial-gradient(circle at 15% 10%, rgba(0, 255, 204, 0.08), transparent 35%),
+          radial-gradient(circle at 85% 6%, rgba(122, 92, 255, 0.09), transparent 35%),
+          linear-gradient(180deg, var(--bg2), var(--bg));
+        color: var(--text);
+      }
+      .wrap {
+        max-width: 1200px;
+        margin: 1.2rem auto 2rem;
+        padding: 0 1rem;
+      }
+      .title {
+        margin: 0 0 0.4rem;
+        font-size: 1.35rem;
+        text-shadow: 0 0 18px rgba(0, 255, 204, 0.25);
+      }
+      .sub {
+        margin: 0 0 1rem;
+        color: var(--text-dim);
+      }
+      .tower {
+        margin: 0.8rem 0 1rem;
+        padding: 0.9rem;
+        border-radius: 14px;
+        border: 1px solid rgba(255, 255, 255, 0.12);
+        background: rgba(255, 255, 255, 0.05);
+        box-shadow: 0 0 22px rgba(0, 204, 255, 0.15);
+      }
+      .grid {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(280px, 1fr));
+        gap: 0.9rem;
+      }
+      .card {
+        border-radius: 14px;
+        border: 1px solid rgba(255, 255, 255, 0.12);
+        background: rgba(255, 255, 255, 0.05);
+        box-shadow:
+          0 0 0 1px rgba(0, 255, 204, 0.09),
+          0 0 18px rgba(0, 255, 204, 0.09);
+        padding: 0.8rem;
+      }
+      .card h2 {
+        margin: 0 0 0.5rem;
+        font-size: 1rem;
+      }
+      .list {
+        margin: 0.5rem 0 0;
+        padding: 0 0 0 1rem;
+      }
+      .list li {
+        margin: 0.2rem 0;
+        color: var(--text-dim);
+      }
+      .tag {
+        display: inline-block;
+        font-size: 0.75rem;
+        border-radius: 999px;
+        padding: 0.14rem 0.55rem;
+        margin-right: 0.35rem;
+        border: 1px solid rgba(255, 255, 255, 0.16);
+        background: rgba(255, 255, 255, 0.04);
+      }
+      .mycelium {
+        margin-top: 1rem;
+        padding: 0.8rem;
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        border-radius: 14px;
+        background: rgba(255, 255, 255, 0.035);
+      }
+      .chips {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.45rem;
+        margin-top: 0.5rem;
+      }
+      .chip {
+        border-radius: 999px;
+        padding: 0.28rem 0.6rem;
+        font-size: 0.74rem;
+        background: rgba(30, 127, 95, 0.2);
+        border: 1px solid rgba(0, 255, 204, 0.25);
+      }
+      .muted {
+        color: var(--text-dim);
+      }
+      @media (max-width: 900px) {
+        .grid {
+          grid-template-columns: 1fr;
+        }
+      }
+    </style>
+    <link rel="stylesheet" href="../styles/z-display-morph-engine.css" />
+    <script defer src="../scripts/z-display-morph-engine.js" data-morph-init="iframe"></script>
+  </head>
+  <body data-twin-roots-morph="1">
+    <div class="wrap">
+      <h1 class="title">Z-Twin Roots Architecture · Phase 1</h1>
+      <p class="sub">
+        Mango Tree = memory and receipts. Tarzan Tree = pathways and routing. Fusion Grove = helper collaboration.
+      </p>
+
+      <section class="tower">
+        <strong>AI Tower</strong>
+        <div class="muted" id="towerSpine">Loading spine modules...</div>
+      </section>
+
+      <section class="grid">
+        <article class="card">
+          <h2>🥭 Mango Tree Core</h2>
+          <div class="muted">Memory / Receipts / Identity Registry</div>
+          <ul class="list" id="mangoNodes"></ul>
+        </article>
+        <article class="card">
+          <h2>🌳 Tarzan Tree Core</h2>
+          <div class="muted">Pathways / Allowed Routes / Blocked Paths</div>
+          <ul class="list" id="tarzanRoutes"></ul>
+          <div id="blockedPaths" class="muted" style="margin-top:0.5rem"></div>
+        </article>
+        <article class="card">
+          <h2>🤝 Z-Fusion Grove</h2>
+          <div class="muted">Helper-bot routing and collaboration guidance</div>
+          <ul class="list" id="fusionHints"></ul>
+        </article>
+        <article class="card">
+          <h2>🧾 Receipt Memory</h2>
+          <div class="muted">Latest activity and evidence references</div>
+          <ul class="list" id="latestActivity"></ul>
+        </article>
+      </section>
+
+      <section class="mycelium">
+        <strong>Mycelium Layer (mini-bots / scripts / containers)</strong>
+        <div class="chips" id="mycelium"></div>
+      </section>
+
+      <p class="muted" style="margin-top:1rem">
+        Authority: advisory_only_no_auto_execution · Phase 1 uses local mock data only.
+      </p>
+    </div>
+
+    <script>
+      (async function () {
+        const dataPath = '../../data/z_twin_roots_phase1_mock.json';
+        try {
+          const r = await fetch(dataPath, { cache: 'no-store' });
+          const d = await r.json();
+
+          document.getElementById('towerSpine').textContent =
+            (d.ai_tower && d.ai_tower.spine_modules ? d.ai_tower.spine_modules.join(' · ') : 'n/a');
+
+          const mango = document.getElementById('mangoNodes');
+          (d.mango_tree_core?.nodes || []).forEach((n) => {
+            const li = document.createElement('li');
+            li.innerHTML =
+              `<span class="tag">${n.type}</span><strong>${n.label}</strong> · ${n.status}` +
+              (n.home_module ? ` · ${n.home_module}` : '');
+            mango.appendChild(li);
+          });
+
+          const routes = document.getElementById('tarzanRoutes');
+          (d.tarzan_tree_core?.routes || []).forEach((rte) => {
+            const li = document.createElement('li');
+            li.textContent = `${rte.from} → ${rte.to} (${rte.status})`;
+            routes.appendChild(li);
+          });
+
+          const blocked = d.tarzan_tree_core?.blocked_paths || [];
+          document.getElementById('blockedPaths').textContent =
+            blocked.length
+              ? `Blocked: ${blocked.map((b) => `${b.title} [${b.rule}]`).join(' · ')}`
+              : 'Blocked: none';
+
+          const hints = document.getElementById('fusionHints');
+          (d.tarzan_tree_core?.helper_registry || []).forEach((h) => {
+            const li = document.createElement('li');
+            li.textContent = `${h.requester} ⇄ ${h.recommended_helper} · ${h.reason}`;
+            hints.appendChild(li);
+          });
+
+          const acts = document.getElementById('latestActivity');
+          (d.mango_tree_core?.latest_activity || []).forEach((a) => {
+            const li = document.createElement('li');
+            li.textContent = `${a.ts} · ${a.actor} · ${a.summary}`;
+            acts.appendChild(li);
+          });
+
+          const myc = document.getElementById('mycelium');
+          (d.mycelium_layer?.micro_nodes || []).forEach((m) => {
+            const chip = document.createElement('span');
+            chip.className = 'chip';
+            chip.textContent = m;
+            myc.appendChild(chip);
+          });
+        } catch (err) {
+          document.getElementById('towerSpine').textContent =
+            'Failed to load local mock data (serve from repo root to enable fetch).';
+          console.error(err);
+        }
+      })();
+    </script>
+  </body>
+</html>

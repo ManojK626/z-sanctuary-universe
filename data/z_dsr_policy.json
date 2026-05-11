@@ -1,0 +1,15 @@
+{
+  "schema_version": 1,
+  "title": "Z-DSR Policy",
+  "purpose": "Reduce noise in duplicate/similarity analysis by excluding known archive/export patterns.",
+  "exclude_path_substrings": [
+    "/exports/",
+    "\\exports\\",
+    "/safe_pack/",
+    "\\safe_pack\\"
+  ],
+  "exclude_name_regex": [
+    "^lottery_app_pack_\\d{8}t\\d{6}z$"
+  ],
+  "advisory_only": true
+}

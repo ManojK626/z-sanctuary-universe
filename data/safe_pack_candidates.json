@@ -1,0 +1,9 @@
+[
+  {
+    \ id\: \safe.docs.md022\,
+    \rule\: \MD022\,
+    \family\: \markdownlint\,
+    \description\: \Auto-add blank lines around headings in Z_AUTO_CODEX.md\,
+    \file\: \docs/Z_AUTO_CODEX.md\
+  }
+]

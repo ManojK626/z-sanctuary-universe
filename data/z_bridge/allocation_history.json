@@ -1,0 +1,82 @@
+{
+  "allocations": [
+    {
+      "userId": "user_001",
+      "amount": 10,
+      "source": "local_engine",
+      "time": "2026-04-14T14:24:17.864Z"
+    },
+    {
+      "userId": "user_001",
+      "amount": 10,
+      "source": "local_engine",
+      "time": "2026-04-14T14:30:05.374Z"
+    },
+    {
+      "userId": "user_002",
+      "amount": 11,
+      "source": "local_engine",
+      "time": "2026-04-14T14:37:40.927Z"
+    },
+    {
+      "userId": "user_low",
+      "amount": 12,
+      "source": "local_engine",
+      "time": "2026-04-14T14:49:52.786Z"
+    },
+    {
+      "userId": "user_heavy",
+      "amount": 4,
+      "source": "local_engine",
+      "time": "2026-04-14T14:49:52.790Z"
+    },
+    {
+      "userId": "user_low",
+      "amount": 12,
+      "source": "local_engine",
+      "time": "2026-04-17T12:46:14.819Z"
+    },
+    {
+      "userId": "user_heavy",
+      "amount": 11,
+      "source": "local_engine",
+      "time": "2026-04-17T12:46:14.841Z"
+    },
+    {
+      "userId": "user_low",
+      "amount": 12,
+      "source": "local_engine",
+      "time": "2026-04-17T12:46:27.077Z"
+    },
+    {
+      "userId": "user_heavy",
+      "amount": 4,
+      "source": "local_engine",
+      "time": "2026-04-17T12:46:27.096Z"
+    },
+    {
+      "userId": "user_low",
+      "amount": 12,
+      "source": "local_engine",
+      "time": "2026-04-17T13:10:48.706Z"
+    },
+    {
+      "userId": "user_heavy",
+      "amount": 4,
+      "source": "local_engine",
+      "time": "2026-04-17T13:10:48.725Z"
+    },
+    {
+      "userId": "user_low",
+      "amount": 12,
+      "source": "local_engine",
+      "time": "2026-04-17T13:12:56.198Z"
+    },
+    {
+      "userId": "user_heavy",
+      "amount": 4,
+      "source": "local_engine",
+      "time": "2026-04-17T13:12:56.211Z"
+    }
+  ]
+}

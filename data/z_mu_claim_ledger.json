@@ -1,0 +1,53 @@
+{
+  "schema": "z_mu_claim_ledger_v1",
+  "official_name_short": "Z-Mauritians Unite — Civic Truth & Dignity Engine",
+  "phase": "Z-MU-TRUTH-1",
+  "mode": "civic_claim_ledger_metadata_only",
+  "no_external_runtime": true,
+  "introduction": {
+    "peaceful_statement": "Z-Mauritians Unite is a peaceful civic evidence posture inside the Sanctuary hub: verify claims before voice, privilege dignity, route people toward lawful pathways, and avoid group blame or unverified accusations against named persons.",
+    "raw_material_policy": "Emotional documents may inform themes only. They MUST NOT ship as authoritative until every row passes source and peace checks."
+  },
+  "claims": [
+    {
+      "claim_id": "mu_rights_pathway_labour_info_001",
+      "claim_summary": "Workers seeking redress deserve clear pointers to lawful national complaint and representation routes.",
+      "category": "rights_pathways",
+      "source_status": "verified_official_neutral_language",
+      "public_wording": "Many workplace issues belong in formal labour grievance pathways. Operators should cite current Ministry guidance and statutes when advising next steps—not social rumor.",
+      "safety_class": "peaceful_navigation",
+      "next_verification_step": "Refresh links to official labour portals quarterly; annotate dates on any cited circulars.",
+      "evidence_rank_target": "A"
+    },
+    {
+      "claim_id": "mu_wage_facts_anchor_002",
+      "claim_summary": "Wage indices and headline minimum wage adjustments must be anchored to dated official or gazetted sources—not reposts alone.",
+      "category": "labour",
+      "source_status": "needs_verification",
+      "public_wording": "We are compiling official wage series and minimum wage regulations with retrieval dates. No headline number is affirmed here until the ledger row cites the legal instrument or official statistics release.",
+      "safety_class": "evidence_building",
+      "next_verification_step": "Pull Statistics Mauritius labour publications and Gazette wage orders; store citations in a future appendix row—not in this Phase 1 slice.",
+      "evidence_rank_target": "A"
+    },
+    {
+      "claim_id": "mu_debt_pressure_research_stub_003",
+      "claim_summary": "Household debt stress is socially salient but needs transparent methodology before any civic dashboard posts comparisons.",
+      "category": "debt_access",
+      "source_status": "needs_verification",
+      "public_wording": "Debt burden narratives require defined populations, reputable sources, and sensitivity; this hub stores research intent only—not advice or shaming.",
+      "safety_class": "research_stub",
+      "next_verification_step": "Commission literature review Rank A–C sources; forbid individual shaming narratives.",
+      "evidence_rank_target": "B"
+    },
+    {
+      "claim_id": "mu_pathway_human_rights_procedure_004",
+      "claim_summary": "International human rights mechanisms are procedural; expectations must stay precise and lawful.",
+      "category": "rights_pathways",
+      "source_status": "verified_official_neutral_language",
+      "public_wording": "Treaty mechanisms may offer communications procedures where applicable—they are slow, procedural, and not substitutes for courts. Operators must read OHCHR guidance verbatim before summarizing.",
+      "safety_class": "peaceful_navigation",
+      "next_verification_step": "Pair each pathway summary with verbatim OHCHR or treaty excerpts plus AMK/ethics gate for distribution.",
+      "evidence_rank_target": "B"
+    }
+  ]
+}

@@ -1,0 +1,3178 @@
+{
+  "generated_at": "2026-04-23T18:54:52.223Z",
+  "root": ".",
+  "summary": {
+    "total_nodes": 361
+  },
+  "structure": [
+    {
+      "name": ".cursor",
+      "path": "./.cursor",
+      "depth": 0,
+      "capabilities": [],
+      "package": null,
+      "children": [
+        {
+          "name": "agents",
+          "path": "./.cursor/agents",
+          "depth": 1,
+          "capabilities": [],
+          "package": null,
+          "children": []
+        },
+        {
+          "name": "commands",
+          "path": "./.cursor/commands",
+          "depth": 1,
+          "capabilities": [],
+          "package": null,
+          "children": []
+        },
+        {
+          "name": "rules",
+          "path": "./.cursor/rules",
+          "depth": 1,
+          "capabilities": [],
+          "package": null,
+          "children": []
+        }
+      ]
+    },
+    {
+      "name": ".github",
+      "path": "./.github",
+      "depth": 0,
+      "capabilities": [],
+      "package": null,
+      "children": [
+        {
+          "name": "workflows",
+          "path": "./.github/workflows",
+          "depth": 1,
+          "capabilities": [],
+          "package": null,
+          "children": []
+        }
+      ]
+    },
+    {
+      "name": ".pytest_basetemp_root",
+      "path": "./.pytest_basetemp_root",
+      "depth": 0,
+      "capabilities": [],
+      "package": null,
+      "children": [
+        {
+          "name": "test_build_summary0",
+          "path": "./.pytest_basetemp_root/test_build_summary0",
+          "depth": 1,
+          "capabilities": [],
+          "package": null,
+          "children": [
+            {
+              "name": "kairo",
+              "path": "./.pytest_basetemp_root/test_build_summary0/kairo",
+              "depth": 2,
+              "capabilities": [],
+              "package": null,
+              "children": []
+            }
+          ]
+        },
+        {
+          "name": "test_log_and_read_root_causes0",
+          "path": "./.pytest_basetemp_root/test_log_and_read_root_causes0",
+          "depth": 1,
+          "capabilities": [],
+          "package": null,
+          "children": []
+        }
+      ]
+    },
+    {
+      "name": ".pytest_cache",
+      "path": "./.pytest_cache",
+      "depth": 0,
+      "capabilities": [],
+      "package": null,
+      "children": []
+    },
+    {
+      "name": ".tmp",
+      "path": "./.tmp",
+      "depth": 0,
+      "capabilities": [],
+      "package": null,
+      "children": []
+    },
+    {
+      "name": ".vscode",
+      "path": "./.vscode",
+      "depth": 0,
+      "capabilities": [],
+      "package": null,
+      "children": [
+        {
+          "name": "core",
+          "path": "./.vscode/core",
+          "depth": 1,
+          "capabilities": [],
+          "package": null,
+          "children": [
+            {
+              "name": "core",
+              "path": "./.vscode/core/core",
+              "depth": 2,
+              "capabilities": [],
+              "package": null,
+              "children": []
+            },
+            {
+              "name": "engines",
+              "path": "./.vscode/core/engines",
+              "depth": 2,
+              "capabilities": [],
+              "package": null,
+              "children": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": ".zpam",
+      "path": "./.zpam",
+      "depth": 0,
+      "capabilities": [],
+      "package": null,
+      "children": []
+    },
+    {
+      "name": "ai_tower",
+      "path": "./ai_tower",
+      "depth": 0,
+      "capabilities": [],
+      "package": null,
+      "children": []
+    },
+    {
+      "name": "All APPs",
+      "path": "./All APPs",
+      "depth": 0,
+      "capabilities": [],
+      "package": null,
+      "children": [
+        {
+          "name": "lottery_app_pack_latest",
+          "path": "./All APPs/lottery_app_pack_latest",
+          "depth": 1,
+          "capabilities": [
+            "has_ui"
+          ],
+          "package": null,
+          "children": [
+            {
+              "name": "core",
+              "path": "./All APPs/lottery_app_pack_latest/core",
+              "depth": 2,
+              "capabilities": [],
+              "package": null,
+              "children": []
+            },
+            {
+              "name": "trust",
+              "path": "./All APPs/lottery_app_pack_latest/trust",
+              "depth": 2,
+              "capabilities": [],
+              "package": null,
+              "children": []
+            },
+            {
+              "name": "ui",
+              "path": "./All APPs/lottery_app_pack_latest/ui",
+              "depth": 2,
+              "capabilities": [],
+              "package": null,
+              "children": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Amk_Goku Worldwide Loterry",
+      "path": "./Amk_Goku Worldwide Loterry",
+      "depth": 0,
+      "capabilities": [
+        "has_scripts",
+        "has_data",
+        "has_ui"
+      ],
+      "package": null,
+      "children": [
+        {
+          "name": ".pytest_cache",
+          "path": "./Amk_Goku Worldwide Loterry/.pytest_cache",
+          "depth": 1,
+          "capabilities": [],
+          "package": null,
+          "children": []
+        },
+        {
+          "name": ".vscode",
+          "path": "./Amk_Goku Worldwide Loterry/.vscode",
+          "depth": 1,
+          "capabilities": [],
+          "package": null,
+          "children": []
+        },
+        {
+          "name": "ai-ecosystem",
+          "path": "./Amk_Goku Worldwide Loterry/ai-ecosystem",
+          "depth": 1,
+          "capabilities": [],
+          "package": null,
+          "children": [
+            {
+              "name": "assistant",
+              "path": "./Amk_Goku Worldwide Loterry/ai-ecosystem/assistant",
+              "depth": 2,
+              "capabilities": [],
+              "package": null,
+              "children": []
+            },
+            {
+              "name": "avatar3d",
+              "path": "./Amk_Goku Worldwide Loterry/ai-ecosystem/avatar3d",
+              "depth": 2,
+              "capabilities": [],
+              "package": null,
+              "children": []
+            },
+            {
+              "name": "feedback",
+              "path": "./Amk_Goku Worldwide Loterry/ai-ecosystem/feedback",
+              "depth": 2,
+              "capabilities": [],
+              "package": null,
+              "children": []
+            },
+            {
+              "name": "finance",
+              "path": "./Amk_Goku Worldwide Loterry/ai-ecosystem/finance",
+              "depth": 2,
+              "capabilities": [],
+              "package": null,
+              "children": []
+            },
+            {
+              "name": "scheduler",
+              "path": "./Amk_Goku Worldwide Loterry/ai-ecosystem/scheduler",
+              "depth": 2,
+              "capabilities": [],
+              "package": null,
+              "children": []
+            },
+            {
+              "name": "security",
+              "path": "./Amk_Goku Worldwide Loterry/ai-ecosystem/security",
+              "depth": 2,
+              "capabilities": [],
+              "package": null,
+              "children": []
+            },
+            {
+              "name": "wellness",
+              "path": "./Amk_Goku Worldwide Loterry/ai-ecosystem/wellness",
+              "depth": 2,
+              "capabilities": [],
+              "package": null,
+              "children": []
+            }
+          ]
+        },
+        {
+          "name": "core",
+          "path": "./Amk_Goku Worldwide Loterry/core",
+          "depth": 1,
+          "capabilities": [],
+          "package": null,
+          "children": [
+            {
+              "name": "audiology",
+              "path": "./Amk_Goku Worldwide Loterry/core/audiology",
+              "depth": 2,
+              "capabilities": [],
+              "package": null,
+              "children": []
+            },
+            {
+              "name": "circles",
+              "path": "./Amk_Goku Worldwide Loterry/core/circles",
+              "depth": 2,
+              "capabilities": [],
+              "package": null,
+              "children": []
+            },
+            {
+              "name": "feeling",
+              "path": "./Amk_Goku Worldwide Loterry/core/feeling",
+              "depth": 2,
+              "capabilities": [],
+              "package": null,
+              "children": []
+            },
+            {
+              "name": "harisha",
+              "path": "./Amk_Goku Worldwide Loterry/core/harisha",
+              "depth": 2,
+              "capabilities": [],
+              "package": null,
+              "children": []
+            }
+          ]
+        },
+        {
+          "name": "core-engine",
+          "path": "./Amk_Goku Worldwide Loterry/core-engine",
+          "depth": 1,
+          "capabilities": [
+            "has_data"
+          ],
+          "package": null,
+          "children": [
+            {
+              "name": "analytics",
+              "path": "./Amk_Goku Worldwide Loterry/core-engine/analytics",
+              "depth": 2,
+              "capabilities": [],
+              "package": null,
+              "children": []
+            },
+            {
+              "name": "api_conductor",
+              "path": "./Amk_Goku Worldwide Loterry/core-engine/api_conductor",
+              "depth": 2,
+              "capabilities": [],
+              "package": null,
+              "children": []
+            },
+            {
+              "name": "commentary",
+              "path": "./Amk_Goku Worldwide Loterry/core-engine/commentary",
+              "depth": 2,
+              "capabilities": [],
+              "package": null,
+              "children": []
+            },
+            {
+              "name": "config",
+              "path": "./Amk_Goku Worldwide Loterry/core-engine/config",
+              "depth": 2,
+              "capabilities": [],
+              "package": null,
+              "children": []
+            },
+            {
+              "name": "data",
+              "path": "./Amk_Goku Worldwide Loterry/core-engine/data",
+              "depth": 2,
+              "capabilities": [],
+              "package": null,
+              "children": []
+            },
+            {
+              "name": "history",
+              "path": "./Amk_Goku Worldwide Loterry/core-engine/history",
+              "depth": 2,
+              "capabilities": [],
+              "package": null,
+              "children": []
+            },
+            {
+              "name": "ingest",
+              "path": "./Amk_Goku Worldwide Loterry/core-engine/ingest",
+              "depth": 2,
+              "capabilities": [],
+              "package": null,
+              "children": []
+            },
+            {
+              "name": "integrity",
+              "path": "./Amk_Goku Worldwide Loterry/core-engine/integrity",
+              "depth": 2,
+              "capabilities": [],
+              "package": null,
+              "children": []
+            },
+            {
+              "name": "kairocell",
+              "path": "./Amk_Goku Worldwide Loterry/core-engine/kairocell",
+              "depth": 2,
+              "capabilities": [],
+              "package": null,
+              "children": []
+            },
+            {
+              "name": "metrics",
+              "path": "./Amk_Goku Worldwide Loterry/core-engine/metrics",
+              "depth": 2,
+              "capabilities": [],
+              "package": null,
+              "children": []
+            },
+            {
+              "name": "prediction",
+              "path": "./Amk_Goku Worldwide Loterry/core-engine/prediction",
+              "depth": 2,
+              "capabilities": [],
+              "package": null,
+              "children": []
+            },
+            {
+              "name": "regions",
+              "path": "./Amk_Goku Worldwide Loterry/core-engine/regions",
+              "depth": 2,
+              "capabilities": [],
+              "package": null,
+              "children": []
+            },
+            {
+              "name": "reports",
+              "path": "./Amk_Goku Worldwide Loterry/core-engine/reports",
+              "depth": 2,
+              "capabilities": [],
+              "package": null,
+              "children": []
+            },
+            {
+              "name": "root_cause",
+              "path": "./Amk_Goku Worldwide Loterry/core-engine/root_cause",
+              "depth": 2,
+              "capabilities": [],
+              "package": null,
+              "children": []
+            },
+            {
+              "name": "simulations",
+              "path": "./Amk_Goku Worldwide Loterry/core-engine/simulations",
+              "depth": 2,
+              "capabilities": [],
+              "package": null,
+              "children": []
+            },
+            {
+              "name": "world_observer",
+              "path": "./Amk_Goku Worldwide Loterry/core-engine/world_observer",
+              "depth": 2,
+              "capabilities": [],
+              "package": null,
+              "children": []
+            },
+            {
+              "name": "__pycache__",
+              "path": "./Amk_Goku Worldwide Loterry/core-engine/__pycache__",
+              "depth": 2,
+              "capabilities": [],
+              "package": null,
+              "children": []
+            }
+          ]
+        },
+        {
+          "name": "data",
+          "path": "./Amk_Goku Worldwide Loterry/data",
+          "depth": 1,
+          "capabilities": [],
+          "package": null,
+          "children": [
+            {
+              "name": "apicon",
+              "path": "./Amk_Goku Worldwide Loterry/data/apicon",
+              "depth": 2,
+              "capabilities": [],
+              "package": null,
+              "children": []
+            },
+            {
+              "name": "circles",
+              "path": "./Amk_Goku Worldwide Loterry/data/circles",
+              "depth": 2,
+              "capabilities": [],
+              "package": null,
+              "children": []
+            },
+            {
+              "name": "drift_watch",
+              "path": "./Amk_Goku Worldwide Loterry/data/drift_watch",
+              "depth": 2,
+              "capabilities": [],
+              "package": null,
+              "children": []
+            },
+            {
+              "name": "histories",
+              "path": "./Amk_Goku Worldwide Loterry/data/histories",
+              "depth": 2,
+              "capabilities": [],
+              "package": null,
+              "children": []
+            },
+            {
+              "name": "incoming",
+              "path": "./Amk_Goku Worldwide Loterry/data/incoming",
+              "depth": 2,
+              "capabilities": [],
+              "package": null,
+              "children": []
+            },
+            {
+              "name": "jailcell",
+              "path": "./Amk_Goku Worldwide Loterry/data/jailcell",
+              "depth": 2,
+              "capabilities": [],
+              "package": null,
+              "children": []
+            },
+            {
+              "name": "kairocell",
+              "path": "./Amk_Goku Worldwide Loterry/data/kairocell",
+              "depth": 2,
+              "capabilities": [],
+              "package": null,
+              "children": []
+            },
+            {
+              "name": "learning",
+              "path": "./Amk_Goku Worldwide Loterry/data/learning",
+              "depth": 2,
+              "capabilities": [],
+              "package": null,
+              "children": []
+            },
+            {
+              "name": "lottery_vault",
+              "path": "./Amk_Goku Worldwide Loterry/data/lottery_vault",
+              "depth": 2,
+              "capabilities": [],
+              "package": null,
+              "children": []
+            },
+            {
+              "name": "metrics",
+              "path": "./Amk_Goku Worldwide Loterry/data/metrics",
+              "depth": 2,
+              "capabilities": [],
+              "package": null,
+              "children": []
+            },
+            {
+              "name": "reports",
+              "path": "./Amk_Goku Worldwide Loterry/data/reports",
+              "depth": 2,
+              "capabilities": [],
+              "package": null,
+              "children": []
+            },
+            {
+              "name": "root_causes",
+              "path": "./Amk_Goku Worldwide Loterry/data/root_causes",
+              "depth": 2,
+              "capabilities": [],
+              "package": null,
+              "children": []
+            },
+            {
+              "name": "safe_vault",
+              "path": "./Amk_Goku Worldwide Loterry/data/safe_vault",
+              "depth": 2,
+              "capabilities": [],
+              "package": null,
+              "children": []
+            },
+            {
+              "name": "simulations",
+              "path": "./Amk_Goku Worldwide Loterry/data/simulations",
+              "depth": 2,
+              "capabilities": [],
+              "package": null,
+              "children": []
+            },
+            {
+              "name": "world_observer",
+              "path": "./Amk_Goku Worldwide Loterry/data/world_observer",
+              "depth": 2,
+              "capabilities": [],
+              "package": null,
+              "children": []
+            },
+            {
+              "name": "_snapshots",
+              "path": "./Amk_Goku Worldwide Loterry/data/_snapshots",
+              "depth": 2,
+              "capabilities": [],
+              "package": null,
+              "children": []
+            }
+          ]
+        },
+        {
+          "name": "docs",
+          "path": "./Amk_Goku Worldwide Loterry/docs",
+          "depth": 1,
+          "capabilities": [],
+          "package": null,
+          "children": [
+            {
+              "name": "audiology",
+              "path": "./Amk_Goku Worldwide Loterry/docs/audiology",
+              "depth": 2,
+              "capabilities": [],
+              "package": null,
+              "children": []
+            },
+            {
+              "name": "legal",
+              "path": "./Amk_Goku Worldwide Loterry/docs/legal",
+              "depth": 2,
+              "capabilities": [],
+              "package": null,
+              "children": []
+            },
+            {
+              "name": "snippets",
+              "path": "./Amk_Goku Worldwide Loterry/docs/snippets",
+              "depth": 2,
+              "capabilities": [],
+              "package": null,
+              "children": []
+            }
+          ]
+        },
+        {
+          "name": "education",
+          "path": "./Amk_Goku Worldwide Loterry/education",
+          "depth": 1,
+          "capabilities": [],
+          "package": null,
+          "children": []
+        },
+        {
+          "name": "exports",
+          "path": "./Amk_Goku Worldwide Loterry/exports",
+          "depth": 1,
+          "capabilities": [],
+          "package": null,
+          "children": [
+            {
+              "name": "legal_provenance_pack_20260131T131751Z",
+              "path": "./Amk_Goku Worldwide Loterry/exports/legal_provenance_pack_20260131T131751Z",
+              "depth": 2,
+              "capabilities": [],
+              "package": null,
+              "children": []
+            },
+            {
+              "name": "legal_provenance_pack_20260131T150656Z",
+              "path": "./Amk_Goku Worldwide Loterry/exports/legal_provenance_pack_20260131T150656Z",
+              "depth": 2,
+              "capabilities": [],
+              "package": null,
+              "children": []
+            },
+            {
+              "name": "legal_provenance_pack_20260131T152457Z",
+              "path": "./Amk_Goku Worldwide Loterry/exports/legal_provenance_pack_20260131T152457Z",
+              "depth": 2,
+              "capabilities": [],
+              "package": null,
+              "children": []
+            },
+            {
+              "name": "legal_provenance_pack_latest",
+              "path": "./Amk_Goku Worldwide Loterry/exports/legal_provenance_pack_latest",
+              "depth": 2,
+              "capabilities": [],
+              "package": null,
+              "children": []
+            },
+            {
+              "name": "lottery_app_pack_20260130T225055Z",
+              "path": "./Amk_Goku Worldwide Loterry/exports/lottery_app_pack_20260130T225055Z",
+              "depth": 2,
+              "capabilities": [
+                "has_ui"
+              ],
+              "package": null,
+              "children": []
+            },
+            {
+              "name": "lottery_app_pack_20260130T225320Z",
+              "path": "./Amk_Goku Worldwide Loterry/exports/lottery_app_pack_20260130T225320Z",
+              "depth": 2,
+              "capabilities": [
+                "has_ui"
+              ],
+              "package": null,
+              "children": []
+            },
+            {
+              "name": "lottery_app_pack_20260131T130222Z",
+              "path": "./Amk_Goku Worldwide Loterry/exports/lottery_app_pack_20260131T130222Z",
+              "depth": 2,
+              "capabilities": [
+                "has_ui"
+              ],
+              "package": null,
+              "children": []
+            },
+            {
+              "name": "lottery_app_pack_20260131T150700Z",
+              "path": "./Amk_Goku Worldwide Loterry/exports/lottery_app_pack_20260131T150700Z",
+              "depth": 2,
+              "capabilities": [
+                "has_ui"
+              ],
+              "package": null,
+              "children": []
+            },
+            {
+              "name": "lottery_app_pack_20260131T150734Z",
+              "path": "./Amk_Goku Worldwide Loterry/exports/lottery_app_pack_20260131T150734Z",
+              "depth": 2,
+              "capabilities": [
+                "has_ui"
+              ],
+              "package": null,
+              "children": []
+            },
+            {
+              "name": "lottery_app_pack_20260131T151828Z",
+              "path": "./Amk_Goku Worldwide Loterry/exports/lottery_app_pack_20260131T151828Z",
+              "depth": 2,
+              "capabilities": [
+                "has_ui"
+              ],
+              "package": null,
+              "children": []
+            },
+            {
+              "name": "lottery_app_pack_20260131T152508Z",
+              "path": "./Amk_Goku Worldwide Loterry/exports/lottery_app_pack_20260131T152508Z",
+              "depth": 2,
+              "capabilities": [
+                "has_ui"
+              ],
+              "package": null,
+              "children": []
+            },
+            {
+              "name": "lottery_app_pack_20260202T171438Z",
+              "path": "./Amk_Goku Worldwide Loterry/exports/lottery_app_pack_20260202T171438Z",
+              "depth": 2,
+              "capabilities": [
+                "has_ui"
+              ],
+              "package": null,
+              "children": []
+            },
+            {
+              "name": "lottery_app_pack_20260215T154122Z",
+              "path": "./Amk_Goku Worldwide Loterry/exports/lottery_app_pack_20260215T154122Z",
+              "depth": 2,
+              "capabilities": [
+                "has_ui"
+              ],
+              "package": null,
+              "children": []
+            },
+            {
+              "name": "lottery_app_pack_latest",
+              "path": "./Amk_Goku Worldwide Loterry/exports/lottery_app_pack_latest",
+              "depth": 2,
+              "capabilities": [
+                "has_ui"
+              ],
+              "package": null,
+              "children": []
+            },
+            {
+              "name": "safe_vault",
+              "path": "./Amk_Goku Worldwide Loterry/exports/safe_vault",
+              "depth": 2,
+              "capabilities": [],
+              "package": null,
+              "children": []
+            },
+            {
+              "name": "safe_vault_public",
+              "path": "./Amk_Goku Worldwide Loterry/exports/safe_vault_public",
+              "depth": 2,
+              "capabilities": [],
+              "package": null,
+              "children": []
+            },
+            {
+              "name": "trust_pack_20260131T130228Z",
+              "path": "./Amk_Goku Worldwide Loterry/exports/trust_pack_20260131T130228Z",
+              "depth": 2,
+              "capabilities": [],
+              "package": null,
+              "children": []
+            },
+            {
+              "name": "trust_pack_20260131T130401Z",
+              "path": "./Amk_Goku Worldwide Loterry/exports/trust_pack_20260131T130401Z",
+              "depth": 2,
+              "capabilities": [],
+              "package": null,
+              "children": []
+            },
+            {
+              "name": "trust_pack_20260131T150649Z",
+              "path": "./Amk_Goku Worldwide Loterry/exports/trust_pack_20260131T150649Z",
+              "depth": 2,
+              "capabilities": [],
+              "package": null,
+              "children": []
+            },
+            {
+              "name": "trust_pack_20260131T150727Z",
+              "path": "./Amk_Goku Worldwide Loterry/exports/trust_pack_20260131T150727Z",
+              "depth": 2,
+              "capabilities": [],
+              "package": null,
+              "children": []
+            },
+            {
+              "name": "trust_pack_20260131T152453Z",
+              "path": "./Amk_Goku Worldwide Loterry/exports/trust_pack_20260131T152453Z",
+              "depth": 2,
+              "capabilities": [],
+              "package": null,
+              "children": []
+            },
+            {
+              "name": "trust_pack_latest",
+              "path": "./Amk_Goku Worldwide Loterry/exports/trust_pack_latest",
+              "depth": 2,
+              "capabilities": [],
+              "package": null,
+              "children": []
+            }
+          ]
+        },
+        {
+          "name": "logs",
+          "path": "./Amk_Goku Worldwide Loterry/logs",
+          "depth": 1,
+          "capabilities": [],
+          "package": null,
+          "children": []
+        },
+        {
+          "name": "marketplace",
+          "path": "./Amk_Goku Worldwide Loterry/marketplace",
+          "depth": 1,
+          "capabilities": [],
+          "package": null,
+          "children": [
+            {
+              "name": "campaigns",
+              "path": "./Amk_Goku Worldwide Loterry/marketplace/campaigns",
+              "depth": 2,
+              "capabilities": [],
+              "package": null,
+              "children": []
+            },
+            {
+              "name": "eco-impact",
+              "path": "./Amk_Goku Worldwide Loterry/marketplace/eco-impact",
+              "depth": 2,
+              "capabilities": [],
+              "package": null,
+              "children": []
+            },
+            {
+              "name": "merchant-dashboard",
+              "path": "./Amk_Goku Worldwide Loterry/marketplace/merchant-dashboard",
+              "depth": 2,
+              "capabilities": [],
+              "package": null,
+              "children": []
+            },
+            {
+              "name": "payment",
+              "path": "./Amk_Goku Worldwide Loterry/marketplace/payment",
+              "depth": 2,
+              "capabilities": [],
+              "package": null,
+              "children": []
+            },
+            {
+              "name": "referral",
+              "path": "./Amk_Goku Worldwide Loterry/marketplace/referral",
+              "depth": 2,
+              "capabilities": [],
+              "package": null,
+              "children": []
+            }
+          ]
+        },
+        {
+          "name": "roadmap",
+          "path": "./Amk_Goku Worldwide Loterry/roadmap",
+          "depth": 1,
+          "capabilities": [],
+          "package": null,
+          "children": []
+        },
+        {
+          "name": "scripts",
+          "path": "./Amk_Goku Worldwide Loterry/scripts",
+          "depth": 1,
+          "capabilities": [],
+          "package": null,
+          "children": []
+        },
+        {
+          "name": "tests",
+          "path": "./Amk_Goku Worldwide Loterry/tests",
+          "depth": 1,
+          "capabilities": [],
+          "package": null,
+          "children": [
+            {
+              "name": "__pycache__",
+              "path": "./Amk_Goku Worldwide Loterry/tests/__pycache__",
+              "depth": 2,
+              "capabilities": [],
+              "package": null,
+              "children": []
+            }
+          ]
+        },
+        {
+          "name": "trust",
+          "path": "./Amk_Goku Worldwide Loterry/trust",
+          "depth": 1,
+          "capabilities": [],
+          "package": null,
+          "children": []
+        },
+        {
+          "name": "ui",
+          "path": "./Amk_Goku Worldwide Loterry/ui",
+          "depth": 1,
+          "capabilities": [],
+          "package": null,
+          "children": [
+            {
+              "name": "ai-assistant",
+              "path": "./Amk_Goku Worldwide Loterry/ui/ai-assistant",
+              "depth": 2,
+              "capabilities": [],
+              "package": null,
+              "children": []
+            },
+            {
+              "name": "circles",
+              "path": "./Amk_Goku Worldwide Loterry/ui/circles",
+              "depth": 2,
+              "capabilities": [],
+              "package": null,
+              "children": []
+            },
+            {
+              "name": "drift_watch",
+              "path": "./Amk_Goku Worldwide Loterry/ui/drift_watch",
+              "depth": 2,
+              "capabilities": [],
+              "package": null,
+              "children": []
+            },
+            {
+              "name": "eco-campaign",
+              "path": "./Amk_Goku Worldwide Loterry/ui/eco-campaign",
+              "depth": 2,
+              "capabilities": [],
+              "package": null,
+              "children": []
+            },
+            {
+              "name": "education",
+              "path": "./Amk_Goku Worldwide Loterry/ui/education",
+              "depth": 2,
+              "capabilities": [],
+              "package": null,
+              "children": []
+            },
+            {
+              "name": "internal",
+              "path": "./Amk_Goku Worldwide Loterry/ui/internal",
+              "depth": 2,
+              "capabilities": [],
+              "package": null,
+              "children": []
+            },
+            {
+              "name": "lottery-dashboard",
+              "path": "./Amk_Goku Worldwide Loterry/ui/lottery-dashboard",
+              "depth": 2,
+              "capabilities": [],
+              "package": null,
+              "children": []
+            },
+            {
+              "name": "lottery_vault",
+              "path": "./Amk_Goku Worldwide Loterry/ui/lottery_vault",
+              "depth": 2,
+              "capabilities": [],
+              "package": null,
+              "children": []
+            },
+            {
+              "name": "manual",
+              "path": "./Amk_Goku Worldwide Loterry/ui/manual",
+              "depth": 2,
+              "capabilities": [],
+              "package": null,
+              "children": []
+            },
+            {
+              "name": "notebook",
+              "path": "./Amk_Goku Worldwide Loterry/ui/notebook",
+              "depth": 2,
+              "capabilities": [],
+              "package": null,
+              "children": []
+            },
+            {
+              "name": "public_trust",
+              "path": "./Amk_Goku Worldwide Loterry/ui/public_trust",
+              "depth": 2,
+              "capabilities": [],
+              "package": null,
+              "children": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "apps",
+      "path": "./apps",
+      "depth": 0,
+      "capabilities": [],
+      "package": null,
+      "children": [
+        {
+          "name": ".vscode",
+          "path": "./apps/.vscode",
+          "depth": 1,
+          "capabilities": [],
+          "package": null,
+          "children": []
+        },
+        {
+          "name": "api",
+          "path": "./apps/api",
+          "depth": 1,
+          "capabilities": [
+            "node_project",
+            "has_scripts",
+            "scriptable",
+            "runnable_app",
+            "test_system",
+            "lint_system"
+          ],
+          "package": {
+            "name": "z-sanctuary-api",
+            "version": "0.1.0",
+            "scripts": [
+              "dev",
+              "start",
+              "test",
+              "lint"
+            ],
+            "dependencies": [
+              "@fastify/cors",
+              "fastify",
+              "zod"
+            ]
+          },
+          "children": [
+            {
+              "name": "prisma",
+              "path": "./apps/api/prisma",
+              "depth": 2,
+              "capabilities": [],
+              "package": null,
+              "children": []
+            },
+            {
+              "name": "scripts",
+              "path": "./apps/api/scripts",
+              "depth": 2,
+              "capabilities": [],
+              "package": null,
+              "children": []
+            },
+            {
+              "name": "src",
+              "path": "./apps/api/src",
+              "depth": 2,
+              "capabilities": [],
+              "package": null,
+              "children": []
+            },
+            {
+              "name": "test",
+              "path": "./apps/api/test",
+              "depth": 2,
+              "capabilities": [],
+              "package": null,
+              "children": []
+            }
+          ]
+        },
+        {
+          "name": "roulette-calculator",
+          "path": "./apps/roulette-calculator",
+          "depth": 1,
+          "capabilities": [],
+          "package": null,
+          "children": []
+        },
+        {
+          "name": "web",
+          "path": "./apps/web",
+          "depth": 1,
+          "capabilities": [
+            "node_project",
+            "scriptable",
+            "runnable_app",
+            "build_system",
+            "test_system",
+            "lint_system"
+          ],
+          "package": {
+            "name": "z-sanctuary-web",
+            "version": "0.1.0",
+            "scripts": [
+              "dev",
+              "build",
+              "start",
+              "test",
+              "test:build",
+              "test:stress",
+              "test:release",
+              "lint",
+              "lint:eslint"
+            ],
+            "dependencies": [
+              "z-sanctuary-core",
+              "@react-three/drei",
+              "@react-three/fiber",
+              "next",
+              "react",
+              "react-dom",
+              "three"
+            ]
+          },
+          "children": [
+            {
+              "name": "public",
+              "path": "./apps/web/public",
+              "depth": 2,
+              "capabilities": [],
+              "package": null,
+              "children": []
+            },
+            {
+              "name": "src",
+              "path": "./apps/web/src",
+              "depth": 2,
+              "capabilities": [],
+              "package": null,
+              "children": []
+            },
+            {
+              "name": "test",
+              "path": "./apps/web/test",
+              "depth": 2,
+              "capabilities": [],
+              "package": null,
+              "children": []
+            }
+          ]
+        },
+        {
+          "name": "z_gadget_mirrors",
+          "path": "./apps/z_gadget_mirrors",
+          "depth": 1,
+          "capabilities": [],
+          "package": null,
+          "children": [
+            {
+              "name": "docs",
+              "path": "./apps/z_gadget_mirrors/docs",
+              "depth": 2,
+              "capabilities": [],
+              "package": null,
+              "children": []
+            },
+            {
+              "name": "mirror_decision_engine",
+              "path": "./apps/z_gadget_mirrors/mirror_decision_engine",
+              "depth": 2,
+              "capabilities": [
+                "has_data"
+              ],
+              "package": null,
+              "children": []
+            },
+            {
+              "name": "ui_web_portal",
+              "path": "./apps/z_gadget_mirrors/ui_web_portal",
+              "depth": 2,
+              "capabilities": [],
+              "package": null,
+              "children": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "archive",
+      "path": "./archive",
+      "depth": 0,
+      "capabilities": [],
+      "package": null,
+      "children": [
+        {
+          "name": ".vscode",
+          "path": "./archive/.vscode",
+          "depth": 1,
+          "capabilities": [],
+          "package": null,
+          "children": []
+        },
+        {
+          "name": "cleanup_2026-02-13",
+          "path": "./archive/cleanup_2026-02-13",
+          "depth": 1,
+          "capabilities": [],
+          "package": null,
+          "children": []
+        }
+      ]
+    },
+    {
+      "name": "audio",
+      "path": "./audio",
+      "depth": 0,
+      "capabilities": [],
+      "package": null,
+      "children": [
+        {
+          "name": ".vscode",
+          "path": "./audio/.vscode",
+          "depth": 1,
+          "capabilities": [],
+          "package": null,
+          "children": []
+        }
+      ]
+    },
+    {
+      "name": "config",
+      "path": "./config",
+      "depth": 0,
+      "capabilities": [],
+      "package": null,
+      "children": [
+        {
+          "name": ".vscode",
+          "path": "./config/.vscode",
+          "depth": 1,
+          "capabilities": [],
+          "package": null,
+          "children": []
+        },
+        {
+          "name": "z_bridge",
+          "path": "./config/z_bridge",
+          "depth": 1,
+          "capabilities": [
+            "z_bridge_module"
+          ],
+          "package": null,
+          "children": []
+        }
+      ]
+    },
+    {
+      "name": "core",
+      "path": "./core",
+      "depth": 0,
+      "capabilities": [
+        "has_scripts",
+        "has_data"
+      ],
+      "package": null,
+      "children": [
+        {
+          "name": ".vscode",
+          "path": "./core/.vscode",
+          "depth": 1,
+          "capabilities": [],
+          "package": null,
+          "children": []
+        },
+        {
+          "name": "ai_tower",
+          "path": "./core/ai_tower",
+          "depth": 1,
+          "capabilities": [],
+          "package": null,
+          "children": []
+        },
+        {
+          "name": "assets",
+          "path": "./core/assets",
+          "depth": 1,
+          "capabilities": [],
+          "package": null,
+          "children": []
+        },
+        {
+          "name": "autopilot",
+          "path": "./core/autopilot",
+          "depth": 1,
+          "capabilities": [],
+          "package": null,
+          "children": []
+        },
+        {
+          "name": "core",
+          "path": "./core/core",
+          "depth": 1,
+          "capabilities": [
+            "has_data"
+          ],
+          "package": null,
+          "children": [
+            {
+              "name": "data",
+              "path": "./core/core/data",
+              "depth": 2,
+              "capabilities": [],
+              "package": null,
+              "children": []
+            }
+          ]
+        },
+        {
+          "name": "data",
+          "path": "./core/data",
+          "depth": 1,
+          "capabilities": [],
+          "package": null,
+          "children": []
+        },
+        {
+          "name": "exports",
+          "path": "./core/exports",
+          "depth": 1,
+          "capabilities": [],
+          "package": null,
+          "children": []
+        },
+        {
+          "name": "media",
+          "path": "./core/media",
+          "depth": 1,
+          "capabilities": [],
+          "package": null,
+          "children": []
+        },
+        {
+          "name": "radio",
+          "path": "./core/radio",
+          "depth": 1,
+          "capabilities": [],
+          "package": null,
+          "children": []
+        },
+        {
+          "name": "release_snapshot",
+          "path": "./core/release_snapshot",
+          "depth": 1,
+          "capabilities": [],
+          "package": null,
+          "children": []
+        },
+        {
+          "name": "release_snapshot_ver",
+          "path": "./core/release_snapshot_ver",
+          "depth": 1,
+          "capabilities": [],
+          "package": null,
+          "children": []
+        },
+        {
+          "name": "sanctuary-engine",
+          "path": "./core/sanctuary-engine",
+          "depth": 1,
+          "capabilities": [],
+          "package": null,
+          "children": [
+            {
+              "name": "guards",
+              "path": "./core/sanctuary-engine/guards",
+              "depth": 2,
+              "capabilities": [],
+              "package": null,
+              "children": []
+            }
+          ]
+        },
+        {
+          "name": "scripts",
+          "path": "./core/scripts",
+          "depth": 1,
+          "capabilities": [],
+          "package": null,
+          "children": []
+        },
+        {
+          "name": "signal-bus",
+          "path": "./core/signal-bus",
+          "depth": 1,
+          "capabilities": [],
+          "package": null,
+          "children": []
+        },
+        {
+          "name": "zals",
+          "path": "./core/zals",
+          "depth": 1,
+          "capabilities": [],
+          "package": null,
+          "children": [
+            {
+              "name": "__pycache__",
+              "path": "./core/zals/__pycache__",
+              "depth": 2,
+              "capabilities": [],
+              "package": null,
+              "children": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "dashboard",
+      "path": "./dashboard",
+      "depth": 0,
+      "capabilities": [],
+      "package": null,
+      "children": [
+        {
+          "name": ".vscode",
+          "path": "./dashboard/.vscode",
+          "depth": 1,
+          "capabilities": [],
+          "package": null,
+          "children": []
+        },
+        {
+          "name": "Html",
+          "path": "./dashboard/Html",
+          "depth": 1,
+          "capabilities": [],
+          "package": null,
+          "children": [
+            {
+              "name": "shadow",
+              "path": "./dashboard/Html/shadow",
+              "depth": 2,
+              "capabilities": [],
+              "package": null,
+              "children": []
+            }
+          ]
+        },
+        {
+          "name": "panels",
+          "path": "./dashboard/panels",
+          "depth": 1,
+          "capabilities": [],
+          "package": null,
+          "children": []
+        },
+        {
+          "name": "z-ai-ecosphere",
+          "path": "./dashboard/z-ai-ecosphere",
+          "depth": 1,
+          "capabilities": [],
+          "package": null,
+          "children": []
+        },
+        {
+          "name": "z-mdgev",
+          "path": "./dashboard/z-mdgev",
+          "depth": 1,
+          "capabilities": [],
+          "package": null,
+          "children": []
+        },
+        {
+          "name": "z-qa-rp",
+          "path": "./dashboard/z-qa-rp",
+          "depth": 1,
+          "capabilities": [],
+          "package": null,
+          "children": []
+        }
+      ]
+    },
+    {
+      "name": "data",
+      "path": "./data",
+      "depth": 0,
+      "capabilities": [],
+      "package": null,
+      "children": [
+        {
+          "name": ".pytest_cache",
+          "path": "./data/.pytest_cache",
+          "depth": 1,
+          "capabilities": [],
+          "package": null,
+          "children": [
+            {
+              "name": "v",
+              "path": "./data/.pytest_cache/v",
+              "depth": 2,
+              "capabilities": [],
+              "package": null,
+              "children": []
+            }
+          ]
+        },
+        {
+          "name": ".vscode",
+          "path": "./data/.vscode",
+          "depth": 1,
+          "capabilities": [],
+          "package": null,
+          "children": []
+        },
+        {
+          "name": "jailcell",
+          "path": "./data/jailcell",
+          "depth": 1,
+          "capabilities": [],
+          "package": null,
+          "children": []
+        },
+        {
+          "name": "logs",
+          "path": "./data/logs",
+          "depth": 1,
+          "capabilities": [],
+          "package": null,
+          "children": []
+        },
+        {
+          "name": "raw",
+          "path": "./data/raw",
+          "depth": 1,
+          "capabilities": [],
+          "package": null,
+          "children": []
+        },
+        {
+          "name": "reports",
+          "path": "./data/reports",
+          "depth": 1,
+          "capabilities": [],
+          "package": null,
+          "children": [
+            {
+              "name": "commflow",
+              "path": "./data/reports/commflow",
+              "depth": 2,
+              "capabilities": [],
+              "package": null,
+              "children": []
+            },
+            {
+              "name": "history",
+              "path": "./data/reports/history",
+              "depth": 2,
+              "capabilities": [],
+              "package": null,
+              "children": []
+            },
+            {
+              "name": "incidents",
+              "path": "./data/reports/incidents",
+              "depth": 2,
+              "capabilities": [],
+              "package": null,
+              "children": []
+            },
+            {
+              "name": "privacy",
+              "path": "./data/reports/privacy",
+              "depth": 2,
+              "capabilities": [],
+              "package": null,
+              "children": []
+            }
+          ]
+        },
+        {
+          "name": "research",
+          "path": "./data/research",
+          "depth": 1,
+          "capabilities": [],
+          "package": null,
+          "children": []
+        },
+        {
+          "name": "vaults",
+          "path": "./data/vaults",
+          "depth": 1,
+          "capabilities": [],
+          "package": null,
+          "children": []
+        },
+        {
+          "name": "z_bridge",
+          "path": "./data/z_bridge",
+          "depth": 1,
+          "capabilities": [
+            "z_bridge_module"
+          ],
+          "package": null,
+          "children": []
+        }
+      ]
+    },
+    {
+      "name": "deploy",
+      "path": "./deploy",
+      "depth": 0,
+      "capabilities": [],
+      "package": null,
+      "children": [
+        {
+          "name": "z_bridge_soft",
+          "path": "./deploy/z_bridge_soft",
+          "depth": 1,
+          "capabilities": [
+            "node_project",
+            "z_bridge_module",
+            "scriptable",
+            "runnable_app",
+            "build_system",
+            "test_system",
+            "lint_system"
+          ],
+          "package": {
+            "name": "z-bridge-soft-deploy",
+            "version": null,
+            "scripts": [
+              "start",
+              "build",
+              "test",
+              "lint"
+            ],
+            "dependencies": []
+          },
+          "children": []
+        }
+      ]
+    },
+    {
+      "name": "docs",
+      "path": "./docs",
+      "depth": 0,
+      "capabilities": [],
+      "package": null,
+      "children": [
+        {
+          "name": ".vscode",
+          "path": "./docs/.vscode",
+          "depth": 1,
+          "capabilities": [],
+          "package": null,
+          "children": []
+        },
+        {
+          "name": "bgc",
+          "path": "./docs/bgc",
+          "depth": 1,
+          "capabilities": [],
+          "package": null,
+          "children": []
+        },
+        {
+          "name": "canon",
+          "path": "./docs/canon",
+          "depth": 1,
+          "capabilities": [],
+          "package": null,
+          "children": []
+        },
+        {
+          "name": "chatgpt_exports",
+          "path": "./docs/chatgpt_exports",
+          "depth": 1,
+          "capabilities": [],
+          "package": null,
+          "children": []
+        },
+        {
+          "name": "codex",
+          "path": "./docs/codex",
+          "depth": 1,
+          "capabilities": [],
+          "package": null,
+          "children": []
+        },
+        {
+          "name": "governance",
+          "path": "./docs/governance",
+          "depth": 1,
+          "capabilities": [],
+          "package": null,
+          "children": []
+        },
+        {
+          "name": "octave",
+          "path": "./docs/octave",
+          "depth": 1,
+          "capabilities": [],
+          "package": null,
+          "children": []
+        },
+        {
+          "name": "public",
+          "path": "./docs/public",
+          "depth": 1,
+          "capabilities": [],
+          "package": null,
+          "children": [
+            {
+              "name": "creator_manual",
+              "path": "./docs/public/creator_manual",
+              "depth": 2,
+              "capabilities": [],
+              "package": null,
+              "children": []
+            },
+            {
+              "name": "snapshot",
+              "path": "./docs/public/snapshot",
+              "depth": 2,
+              "capabilities": [],
+              "package": null,
+              "children": []
+            },
+            {
+              "name": "super_chat",
+              "path": "./docs/public/super_chat",
+              "depth": 2,
+              "capabilities": [],
+              "package": null,
+              "children": []
+            }
+          ]
+        },
+        {
+          "name": "vault",
+          "path": "./docs/vault",
+          "depth": 1,
+          "capabilities": [],
+          "package": null,
+          "children": []
+        },
+        {
+          "name": "z-krtaa-prompt-packs",
+          "path": "./docs/z-krtaa-prompt-packs",
+          "depth": 1,
+          "capabilities": [],
+          "package": null,
+          "children": []
+        },
+        {
+          "name": "z-vault",
+          "path": "./docs/z-vault",
+          "depth": 1,
+          "capabilities": [],
+          "package": null,
+          "children": [
+            {
+              "name": "drp",
+              "path": "./docs/z-vault/drp",
+              "depth": 2,
+              "capabilities": [],
+              "package": null,
+              "children": []
+            },
+            {
+              "name": "ecosphere",
+              "path": "./docs/z-vault/ecosphere",
+              "depth": 2,
+              "capabilities": [],
+              "package": null,
+              "children": []
+            },
+            {
+              "name": "formulas",
+              "path": "./docs/z-vault/formulas",
+              "depth": 2,
+              "capabilities": [],
+              "package": null,
+              "children": []
+            },
+            {
+              "name": "guardian",
+              "path": "./docs/z-vault/guardian",
+              "depth": 2,
+              "capabilities": [],
+              "package": null,
+              "children": []
+            },
+            {
+              "name": "ssws",
+              "path": "./docs/z-vault/ssws",
+              "depth": 2,
+              "capabilities": [],
+              "package": null,
+              "children": []
+            },
+            {
+              "name": "vaults",
+              "path": "./docs/z-vault/vaults",
+              "depth": 2,
+              "capabilities": [],
+              "package": null,
+              "children": []
+            }
+          ]
+        },
+        {
+          "name": "z_combat",
+          "path": "./docs/z_combat",
+          "depth": 1,
+          "capabilities": [],
+          "package": null,
+          "children": []
+        }
+      ]
+    },
+    {
+      "name": "ethics",
+      "path": "./ethics",
+      "depth": 0,
+      "capabilities": [],
+      "package": null,
+      "children": []
+    },
+    {
+      "name": "exports",
+      "path": "./exports",
+      "depth": 0,
+      "capabilities": [],
+      "package": null,
+      "children": [
+        {
+          "name": "bundles",
+          "path": "./exports/bundles",
+          "depth": 1,
+          "capabilities": [],
+          "package": null,
+          "children": []
+        },
+        {
+          "name": "trust_pack_2026-01",
+          "path": "./exports/trust_pack_2026-01",
+          "depth": 1,
+          "capabilities": [],
+          "package": null,
+          "children": [
+            {
+              "name": "observatory",
+              "path": "./exports/trust_pack_2026-01/observatory",
+              "depth": 2,
+              "capabilities": [],
+              "package": null,
+              "children": []
+            },
+            {
+              "name": "registry",
+              "path": "./exports/trust_pack_2026-01/registry",
+              "depth": 2,
+              "capabilities": [],
+              "package": null,
+              "children": []
+            },
+            {
+              "name": "verification",
+              "path": "./exports/trust_pack_2026-01/verification",
+              "depth": 2,
+              "capabilities": [],
+              "package": null,
+              "children": []
+            }
+          ]
+        },
+        {
+          "name": "trust_pack_2026-02",
+          "path": "./exports/trust_pack_2026-02",
+          "depth": 1,
+          "capabilities": [],
+          "package": null,
+          "children": [
+            {
+              "name": "observatory",
+              "path": "./exports/trust_pack_2026-02/observatory",
+              "depth": 2,
+              "capabilities": [],
+              "package": null,
+              "children": []
+            },
+            {
+              "name": "registry",
+              "path": "./exports/trust_pack_2026-02/registry",
+              "depth": 2,
+              "capabilities": [],
+              "package": null,
+              "children": []
+            },
+            {
+              "name": "verification",
+              "path": "./exports/trust_pack_2026-02/verification",
+              "depth": 2,
+              "capabilities": [],
+              "package": null,
+              "children": []
+            }
+          ]
+        },
+        {
+          "name": "trust_pack_2026-03",
+          "path": "./exports/trust_pack_2026-03",
+          "depth": 1,
+          "capabilities": [],
+          "package": null,
+          "children": [
+            {
+              "name": "observatory",
+              "path": "./exports/trust_pack_2026-03/observatory",
+              "depth": 2,
+              "capabilities": [],
+              "package": null,
+              "children": []
+            },
+            {
+              "name": "registry",
+              "path": "./exports/trust_pack_2026-03/registry",
+              "depth": 2,
+              "capabilities": [],
+              "package": null,
+              "children": []
+            },
+            {
+              "name": "verification",
+              "path": "./exports/trust_pack_2026-03/verification",
+              "depth": 2,
+              "capabilities": [],
+              "package": null,
+              "children": []
+            }
+          ]
+        },
+        {
+          "name": "visuals",
+          "path": "./exports/visuals",
+          "depth": 1,
+          "capabilities": [],
+          "package": null,
+          "children": []
+        }
+      ]
+    },
+    {
+      "name": "extensions",
+      "path": "./extensions",
+      "depth": 0,
+      "capabilities": [],
+      "package": null,
+      "children": [
+        {
+          "name": ".vscode",
+          "path": "./extensions/.vscode",
+          "depth": 1,
+          "capabilities": [],
+          "package": null,
+          "children": []
+        },
+        {
+          "name": "example-extension",
+          "path": "./extensions/example-extension",
+          "depth": 1,
+          "capabilities": [],
+          "package": null,
+          "children": []
+        }
+      ]
+    },
+    {
+      "name": "gemini",
+      "path": "./gemini",
+      "depth": 0,
+      "capabilities": [],
+      "package": null,
+      "children": []
+    },
+    {
+      "name": "harisha",
+      "path": "./harisha",
+      "depth": 0,
+      "capabilities": [],
+      "package": null,
+      "children": [
+        {
+          "name": ".vscode",
+          "path": "./harisha/.vscode",
+          "depth": 1,
+          "capabilities": [],
+          "package": null,
+          "children": []
+        }
+      ]
+    },
+    {
+      "name": "interface",
+      "path": "./interface",
+      "depth": 0,
+      "capabilities": [],
+      "package": null,
+      "children": [
+        {
+          "name": ".vscode",
+          "path": "./interface/.vscode",
+          "depth": 1,
+          "capabilities": [],
+          "package": null,
+          "children": []
+        }
+      ]
+    },
+    {
+      "name": "logs",
+      "path": "./logs",
+      "depth": 0,
+      "capabilities": [],
+      "package": null,
+      "children": []
+    },
+    {
+      "name": "martial-platform",
+      "path": "./martial-platform",
+      "depth": 0,
+      "capabilities": [
+        "has_data"
+      ],
+      "package": null,
+      "children": [
+        {
+          "name": "backend",
+          "path": "./martial-platform/backend",
+          "depth": 1,
+          "capabilities": [],
+          "package": null,
+          "children": []
+        },
+        {
+          "name": "core",
+          "path": "./martial-platform/core",
+          "depth": 1,
+          "capabilities": [],
+          "package": null,
+          "children": []
+        },
+        {
+          "name": "data",
+          "path": "./martial-platform/data",
+          "depth": 1,
+          "capabilities": [],
+          "package": null,
+          "children": []
+        },
+        {
+          "name": "docs",
+          "path": "./martial-platform/docs",
+          "depth": 1,
+          "capabilities": [],
+          "package": null,
+          "children": []
+        },
+        {
+          "name": "exports",
+          "path": "./martial-platform/exports",
+          "depth": 1,
+          "capabilities": [],
+          "package": null,
+          "children": []
+        },
+        {
+          "name": "frontend",
+          "path": "./martial-platform/frontend",
+          "depth": 1,
+          "capabilities": [],
+          "package": null,
+          "children": []
+        }
+      ]
+    },
+    {
+      "name": "miniai",
+      "path": "./miniai",
+      "depth": 0,
+      "capabilities": [],
+      "package": null,
+      "children": [
+        {
+          "name": ".vscode",
+          "path": "./miniai/.vscode",
+          "depth": 1,
+          "capabilities": [],
+          "package": null,
+          "children": []
+        }
+      ]
+    },
+    {
+      "name": "nas_ready",
+      "path": "./nas_ready",
+      "depth": 0,
+      "capabilities": [],
+      "package": null,
+      "children": [
+        {
+          "name": "sync_packs",
+          "path": "./nas_ready/sync_packs",
+          "depth": 1,
+          "capabilities": [],
+          "package": null,
+          "children": [
+            {
+              "name": "2026-02-17",
+              "path": "./nas_ready/sync_packs/2026-02-17",
+              "depth": 2,
+              "capabilities": [],
+              "package": null,
+              "children": []
+            },
+            {
+              "name": "2026-02-18",
+              "path": "./nas_ready/sync_packs/2026-02-18",
+              "depth": 2,
+              "capabilities": [],
+              "package": null,
+              "children": []
+            },
+            {
+              "name": "2026-02-20",
+              "path": "./nas_ready/sync_packs/2026-02-20",
+              "depth": 2,
+              "capabilities": [],
+              "package": null,
+              "children": []
+            },
+            {
+              "name": "2026-02-23",
+              "path": "./nas_ready/sync_packs/2026-02-23",
+              "depth": 2,
+              "capabilities": [],
+              "package": null,
+              "children": []
+            },
+            {
+              "name": "2026-03-16",
+              "path": "./nas_ready/sync_packs/2026-03-16",
+              "depth": 2,
+              "capabilities": [],
+              "package": null,
+              "children": []
+            },
+            {
+              "name": "2026-03-30",
+              "path": "./nas_ready/sync_packs/2026-03-30",
+              "depth": 2,
+              "capabilities": [],
+              "package": null,
+              "children": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "observability",
+      "path": "./observability",
+      "depth": 0,
+      "capabilities": [],
+      "package": null,
+      "children": [
+        {
+          "name": "otel",
+          "path": "./observability/otel",
+          "depth": 1,
+          "capabilities": [],
+          "package": null,
+          "children": []
+        }
+      ]
+    },
+    {
+      "name": "ops",
+      "path": "./ops",
+      "depth": 0,
+      "capabilities": [],
+      "package": null,
+      "children": [
+        {
+          "name": "zps",
+          "path": "./ops/zps",
+          "depth": 1,
+          "capabilities": [],
+          "package": null,
+          "children": []
+        }
+      ]
+    },
+    {
+      "name": "packages",
+      "path": "./packages",
+      "depth": 0,
+      "capabilities": [],
+      "package": null,
+      "children": [
+        {
+          "name": ".vscode",
+          "path": "./packages/.vscode",
+          "depth": 1,
+          "capabilities": [],
+          "package": null,
+          "children": []
+        },
+        {
+          "name": "living-workspace-package",
+          "path": "./packages/living-workspace-package",
+          "depth": 1,
+          "capabilities": [],
+          "package": null,
+          "children": []
+        },
+        {
+          "name": "z-intelligence",
+          "path": "./packages/z-intelligence",
+          "depth": 1,
+          "capabilities": [
+            "node_project",
+            "scriptable",
+            "build_system",
+            "test_system",
+            "lint_system"
+          ],
+          "package": {
+            "name": "@z-sanctuary/z-intelligence",
+            "version": "1.0.0",
+            "scripts": [
+              "build",
+              "dev",
+              "test",
+              "lint"
+            ],
+            "dependencies": []
+          },
+          "children": [
+            {
+              "name": "src",
+              "path": "./packages/z-intelligence/src",
+              "depth": 2,
+              "capabilities": [],
+              "package": null,
+              "children": []
+            },
+            {
+              "name": "__tests__",
+              "path": "./packages/z-intelligence/__tests__",
+              "depth": 2,
+              "capabilities": [],
+              "package": null,
+              "children": []
+            }
+          ]
+        },
+        {
+          "name": "z-sanctuary-core",
+          "path": "./packages/z-sanctuary-core",
+          "depth": 1,
+          "capabilities": [
+            "node_project",
+            "scriptable",
+            "test_system",
+            "lint_system"
+          ],
+          "package": {
+            "name": "z-sanctuary-core",
+            "version": "1.0.0",
+            "scripts": [
+              "lint",
+              "test"
+            ],
+            "dependencies": []
+          },
+          "children": [
+            {
+              "name": "ai",
+              "path": "./packages/z-sanctuary-core/ai",
+              "depth": 2,
+              "capabilities": [],
+              "package": null,
+              "children": []
+            },
+            {
+              "name": "test",
+              "path": "./packages/z-sanctuary-core/test",
+              "depth": 2,
+              "capabilities": [],
+              "package": null,
+              "children": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "policies",
+      "path": "./policies",
+      "depth": 0,
+      "capabilities": [],
+      "package": null,
+      "children": [
+        {
+          "name": "opa",
+          "path": "./policies/opa",
+          "depth": 1,
+          "capabilities": [],
+          "package": null,
+          "children": []
+        }
+      ]
+    },
+    {
+      "name": "products",
+      "path": "./products",
+      "depth": 0,
+      "capabilities": [],
+      "package": null,
+      "children": [
+        {
+          "name": "Z-OCTAVE",
+          "path": "./products/Z-OCTAVE",
+          "depth": 1,
+          "capabilities": [],
+          "package": null,
+          "children": [
+            {
+              "name": "hardware",
+              "path": "./products/Z-OCTAVE/hardware",
+              "depth": 2,
+              "capabilities": [],
+              "package": null,
+              "children": []
+            },
+            {
+              "name": "integration",
+              "path": "./products/Z-OCTAVE/integration",
+              "depth": 2,
+              "capabilities": [],
+              "package": null,
+              "children": []
+            },
+            {
+              "name": "manufacturing",
+              "path": "./products/Z-OCTAVE/manufacturing",
+              "depth": 2,
+              "capabilities": [],
+              "package": null,
+              "children": []
+            },
+            {
+              "name": "pilots",
+              "path": "./products/Z-OCTAVE/pilots",
+              "depth": 2,
+              "capabilities": [],
+              "package": null,
+              "children": []
+            },
+            {
+              "name": "specs",
+              "path": "./products/Z-OCTAVE/specs",
+              "depth": 2,
+              "capabilities": [],
+              "package": null,
+              "children": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "releases",
+      "path": "./releases",
+      "depth": 0,
+      "capabilities": [],
+      "package": null,
+      "children": [
+        {
+          "name": ".vscode",
+          "path": "./releases/.vscode",
+          "depth": 1,
+          "capabilities": [],
+          "package": null,
+          "children": []
+        },
+        {
+          "name": "2026-01-28",
+          "path": "./releases/2026-01-28",
+          "depth": 1,
+          "capabilities": [],
+          "package": null,
+          "children": [
+            {
+              "name": "assets",
+              "path": "./releases/2026-01-28/assets",
+              "depth": 2,
+              "capabilities": [],
+              "package": null,
+              "children": []
+            },
+            {
+              "name": "bots",
+              "path": "./releases/2026-01-28/bots",
+              "depth": 2,
+              "capabilities": [],
+              "package": null,
+              "children": []
+            },
+            {
+              "name": "docs",
+              "path": "./releases/2026-01-28/docs",
+              "depth": 2,
+              "capabilities": [],
+              "package": null,
+              "children": []
+            },
+            {
+              "name": "handoff",
+              "path": "./releases/2026-01-28/handoff",
+              "depth": 2,
+              "capabilities": [],
+              "package": null,
+              "children": []
+            }
+          ]
+        },
+        {
+          "name": "2026-01-31",
+          "path": "./releases/2026-01-31",
+          "depth": 1,
+          "capabilities": [],
+          "package": null,
+          "children": [
+            {
+              "name": "links",
+              "path": "./releases/2026-01-31/links",
+              "depth": 2,
+              "capabilities": [],
+              "package": null,
+              "children": []
+            },
+            {
+              "name": "notes",
+              "path": "./releases/2026-01-31/notes",
+              "depth": 2,
+              "capabilities": [],
+              "package": null,
+              "children": []
+            },
+            {
+              "name": "observatory",
+              "path": "./releases/2026-01-31/observatory",
+              "depth": 2,
+              "capabilities": [],
+              "package": null,
+              "children": []
+            },
+            {
+              "name": "system",
+              "path": "./releases/2026-01-31/system",
+              "depth": 2,
+              "capabilities": [],
+              "package": null,
+              "children": []
+            },
+            {
+              "name": "trust",
+              "path": "./releases/2026-01-31/trust",
+              "depth": 2,
+              "capabilities": [],
+              "package": null,
+              "children": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "rules",
+      "path": "./rules",
+      "depth": 0,
+      "capabilities": [],
+      "package": null,
+      "children": [
+        {
+          "name": ".vscode",
+          "path": "./rules/.vscode",
+          "depth": 1,
+          "capabilities": [],
+          "package": null,
+          "children": []
+        }
+      ]
+    },
+    {
+      "name": "safe_pack",
+      "path": "./safe_pack",
+      "depth": 0,
+      "capabilities": [],
+      "package": null,
+      "children": [
+        {
+          "name": ".vscode",
+          "path": "./safe_pack/.vscode",
+          "depth": 1,
+          "capabilities": [],
+          "package": null,
+          "children": []
+        },
+        {
+          "name": "z_sanctuary_vault",
+          "path": "./safe_pack/z_sanctuary_vault",
+          "depth": 1,
+          "capabilities": [],
+          "package": null,
+          "children": [
+            {
+              "name": "folder_manager",
+              "path": "./safe_pack/z_sanctuary_vault/folder_manager",
+              "depth": 2,
+              "capabilities": [],
+              "package": null,
+              "children": []
+            },
+            {
+              "name": "storage_hygiene",
+              "path": "./safe_pack/z_sanctuary_vault/storage_hygiene",
+              "depth": 2,
+              "capabilities": [],
+              "package": null,
+              "children": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "sandbox",
+      "path": "./sandbox",
+      "depth": 0,
+      "capabilities": [],
+      "package": null,
+      "children": [
+        {
+          "name": "zgm_phase_lab",
+          "path": "./sandbox/zgm_phase_lab",
+          "depth": 1,
+          "capabilities": [],
+          "package": null,
+          "children": []
+        }
+      ]
+    },
+    {
+      "name": "schemas",
+      "path": "./schemas",
+      "depth": 0,
+      "capabilities": [],
+      "package": null,
+      "children": [
+        {
+          "name": ".vscode",
+          "path": "./schemas/.vscode",
+          "depth": 1,
+          "capabilities": [],
+          "package": null,
+          "children": []
+        }
+      ]
+    },
+    {
+      "name": "scripts",
+      "path": "./scripts",
+      "depth": 0,
+      "capabilities": [
+        "has_data"
+      ],
+      "package": null,
+      "children": [
+        {
+          "name": ".vscode",
+          "path": "./scripts/.vscode",
+          "depth": 1,
+          "capabilities": [],
+          "package": null,
+          "children": []
+        },
+        {
+          "name": "data",
+          "path": "./scripts/data",
+          "depth": 1,
+          "capabilities": [],
+          "package": null,
+          "children": [
+            {
+              "name": "reports",
+              "path": "./scripts/data/reports",
+              "depth": 2,
+              "capabilities": [],
+              "package": null,
+              "children": []
+            }
+          ]
+        },
+        {
+          "name": "load",
+          "path": "./scripts/load",
+          "depth": 1,
+          "capabilities": [],
+          "package": null,
+          "children": [
+            {
+              "name": "k6",
+              "path": "./scripts/load/k6",
+              "depth": 2,
+              "capabilities": [],
+              "package": null,
+              "children": []
+            }
+          ]
+        },
+        {
+          "name": "z_bridge",
+          "path": "./scripts/z_bridge",
+          "depth": 1,
+          "capabilities": [
+            "node_project",
+            "z_bridge_module",
+            "scriptable",
+            "runnable_app",
+            "build_system",
+            "test_system",
+            "lint_system"
+          ],
+          "package": {
+            "name": "z-bridge-engine",
+            "version": null,
+            "scripts": [
+              "start",
+              "build",
+              "test",
+              "lint"
+            ],
+            "dependencies": []
+          },
+          "children": []
+        },
+        {
+          "name": "z_super_chat",
+          "path": "./scripts/z_super_chat",
+          "depth": 1,
+          "capabilities": [],
+          "package": null,
+          "children": []
+        }
+      ]
+    },
+    {
+      "name": "src",
+      "path": "./src",
+      "depth": 0,
+      "capabilities": [],
+      "package": null,
+      "children": [
+        {
+          "name": ".vscode",
+          "path": "./src/.vscode",
+          "depth": 1,
+          "capabilities": [],
+          "package": null,
+          "children": []
+        },
+        {
+          "name": "miniai",
+          "path": "./src/miniai",
+          "depth": 1,
+          "capabilities": [],
+          "package": null,
+          "children": []
+        }
+      ]
+    },
+    {
+      "name": "super_ghost",
+      "path": "./super_ghost",
+      "depth": 0,
+      "capabilities": [],
+      "package": null,
+      "children": [
+        {
+          "name": ".vscode",
+          "path": "./super_ghost/.vscode",
+          "depth": 1,
+          "capabilities": [],
+          "package": null,
+          "children": []
+        }
+      ]
+    },
+    {
+      "name": "templates",
+      "path": "./templates",
+      "depth": 0,
+      "capabilities": [],
+      "package": null,
+      "children": [
+        {
+          "name": "z_garage_node_minimal",
+          "path": "./templates/z_garage_node_minimal",
+          "depth": 1,
+          "capabilities": [
+            "node_project",
+            "scriptable",
+            "runnable_app",
+            "build_system",
+            "test_system",
+            "lint_system"
+          ],
+          "package": {
+            "name": "z-rename-this-package",
+            "version": "0.0.0",
+            "scripts": [
+              "start",
+              "build",
+              "test",
+              "lint"
+            ],
+            "dependencies": []
+          },
+          "children": []
+        }
+      ]
+    },
+    {
+      "name": "tools",
+      "path": "./tools",
+      "depth": 0,
+      "capabilities": [],
+      "package": null,
+      "children": [
+        {
+          "name": ".vscode",
+          "path": "./tools/.vscode",
+          "depth": 1,
+          "capabilities": [],
+          "package": null,
+          "children": []
+        },
+        {
+          "name": "z_auto_codex",
+          "path": "./tools/z_auto_codex",
+          "depth": 1,
+          "capabilities": [],
+          "package": null,
+          "children": []
+        }
+      ]
+    },
+    {
+      "name": "ui",
+      "path": "./ui",
+      "depth": 0,
+      "capabilities": [],
+      "package": null,
+      "children": [
+        {
+          "name": "z_bridge_dashboard",
+          "path": "./ui/z_bridge_dashboard",
+          "depth": 1,
+          "capabilities": [
+            "node_project",
+            "z_bridge_module",
+            "scriptable",
+            "runnable_app",
+            "build_system",
+            "test_system",
+            "lint_system"
+          ],
+          "package": {
+            "name": "z-bridge-dashboard-static",
+            "version": null,
+            "scripts": [
+              "start",
+              "build",
+              "test",
+              "lint"
+            ],
+            "dependencies": []
+          },
+          "children": []
+        }
+      ]
+    },
+    {
+      "name": "uploads",
+      "path": "./uploads",
+      "depth": 0,
+      "capabilities": [],
+      "package": null,
+      "children": [
+        {
+          "name": "approved",
+          "path": "./uploads/approved",
+          "depth": 1,
+          "capabilities": [],
+          "package": null,
+          "children": []
+        },
+        {
+          "name": "quarantined",
+          "path": "./uploads/quarantined",
+          "depth": 1,
+          "capabilities": [],
+          "package": null,
+          "children": []
+        },
+        {
+          "name": "raw",
+          "path": "./uploads/raw",
+          "depth": 1,
+          "capabilities": [],
+          "package": null,
+          "children": []
+        }
+      ]
+    },
+    {
+      "name": "vault",
+      "path": "./vault",
+      "depth": 0,
+      "capabilities": [],
+      "package": null,
+      "children": [
+        {
+          "name": "personal",
+          "path": "./vault/personal",
+          "depth": 1,
+          "capabilities": [],
+          "package": null,
+          "children": []
+        }
+      ]
+    },
+    {
+      "name": "ZSanctuary_Labs",
+      "path": "./ZSanctuary_Labs",
+      "depth": 0,
+      "capabilities": [
+        "has_scripts"
+      ],
+      "package": null,
+      "children": [
+        {
+          "name": ".vscode",
+          "path": "./ZSanctuary_Labs/.vscode",
+          "depth": 1,
+          "capabilities": [],
+          "package": null,
+          "children": []
+        },
+        {
+          "name": "config",
+          "path": "./ZSanctuary_Labs/config",
+          "depth": 1,
+          "capabilities": [],
+          "package": null,
+          "children": []
+        },
+        {
+          "name": "copies",
+          "path": "./ZSanctuary_Labs/copies",
+          "depth": 1,
+          "capabilities": [],
+          "package": null,
+          "children": [
+            {
+              "name": "dashboard_copy",
+              "path": "./ZSanctuary_Labs/copies/dashboard_copy",
+              "depth": 2,
+              "capabilities": [
+                "has_scripts"
+              ],
+              "package": null,
+              "children": []
+            },
+            {
+              "name": "z_ssws_copy",
+              "path": "./ZSanctuary_Labs/copies/z_ssws_copy",
+              "depth": 2,
+              "capabilities": [],
+              "package": null,
+              "children": []
+            }
+          ]
+        },
+        {
+          "name": "docs",
+          "path": "./ZSanctuary_Labs/docs",
+          "depth": 1,
+          "capabilities": [],
+          "package": null,
+          "children": []
+        },
+        {
+          "name": "modules",
+          "path": "./ZSanctuary_Labs/modules",
+          "depth": 1,
+          "capabilities": [],
+          "package": null,
+          "children": [
+            {
+              "name": "template",
+              "path": "./ZSanctuary_Labs/modules/template",
+              "depth": 2,
+              "capabilities": [],
+              "package": null,
+              "children": []
+            }
+          ]
+        },
+        {
+          "name": "registry",
+          "path": "./ZSanctuary_Labs/registry",
+          "depth": 1,
+          "capabilities": [],
+          "package": null,
+          "children": []
+        },
+        {
+          "name": "scripts",
+          "path": "./ZSanctuary_Labs/scripts",
+          "depth": 1,
+          "capabilities": [],
+          "package": null,
+          "children": []
+        },
+        {
+          "name": "tools",
+          "path": "./ZSanctuary_Labs/tools",
+          "depth": 1,
+          "capabilities": [],
+          "package": null,
+          "children": []
+        },
+        {
+          "name": "workspaces",
+          "path": "./ZSanctuary_Labs/workspaces",
+          "depth": 1,
+          "capabilities": [],
+          "package": null,
+          "children": []
+        }
+      ]
+    },
+    {
+      "name": "z_colour",
+      "path": "./z_colour",
+      "depth": 0,
+      "capabilities": [],
+      "package": null,
+      "children": [
+        {
+          "name": ".vscode",
+          "path": "./z_colour/.vscode",
+          "depth": 1,
+          "capabilities": [],
+          "package": null,
+          "children": []
+        }
+      ]
+    },
+    {
+      "name": "Z_Labs",
+      "path": "./Z_Labs",
+      "depth": 0,
+      "capabilities": [],
+      "package": null,
+      "children": [
+        {
+          "name": "ai_experiments",
+          "path": "./Z_Labs/ai_experiments",
+          "depth": 1,
+          "capabilities": [],
+          "package": null,
+          "children": []
+        },
+        {
+          "name": "copies",
+          "path": "./Z_Labs/copies",
+          "depth": 1,
+          "capabilities": [],
+          "package": null,
+          "children": [
+            {
+              "name": "dashboard_copy",
+              "path": "./Z_Labs/copies/dashboard_copy",
+              "depth": 2,
+              "capabilities": [],
+              "package": null,
+              "children": []
+            },
+            {
+              "name": "z_ssws_copy",
+              "path": "./Z_Labs/copies/z_ssws_copy",
+              "depth": 2,
+              "capabilities": [],
+              "package": null,
+              "children": []
+            }
+          ]
+        },
+        {
+          "name": "exports",
+          "path": "./Z_Labs/exports",
+          "depth": 1,
+          "capabilities": [],
+          "package": null,
+          "children": []
+        },
+        {
+          "name": "modules_draft",
+          "path": "./Z_Labs/modules_draft",
+          "depth": 1,
+          "capabilities": [],
+          "package": null,
+          "children": []
+        },
+        {
+          "name": "module_prototypes",
+          "path": "./Z_Labs/module_prototypes",
+          "depth": 1,
+          "capabilities": [],
+          "package": null,
+          "children": []
+        },
+        {
+          "name": "notes",
+          "path": "./Z_Labs/notes",
+          "depth": 1,
+          "capabilities": [],
+          "package": null,
+          "children": []
+        },
+        {
+          "name": "roadmap_designs",
+          "path": "./Z_Labs/roadmap_designs",
+          "depth": 1,
+          "capabilities": [],
+          "package": null,
+          "children": []
+        },
+        {
+          "name": "storage_blueprints",
+          "path": "./Z_Labs/storage_blueprints",
+          "depth": 1,
+          "capabilities": [],
+          "package": null,
+          "children": []
+        },
+        {
+          "name": "workspaces",
+          "path": "./Z_Labs/workspaces",
+          "depth": 1,
+          "capabilities": [],
+          "package": null,
+          "children": []
+        }
+      ]
+    },
+    {
+      "name": "z_notebooks",
+      "path": "./z_notebooks",
+      "depth": 0,
+      "capabilities": [],
+      "package": null,
+      "children": [
+        {
+          "name": ".vscode",
+          "path": "./z_notebooks/.vscode",
+          "depth": 1,
+          "capabilities": [],
+          "package": null,
+          "children": []
+        }
+      ]
+    },
+    {
+      "name": "z_workspace",
+      "path": "./z_workspace",
+      "depth": 0,
+      "capabilities": [],
+      "package": null,
+      "children": [
+        {
+          "name": ".vscode",
+          "path": "./z_workspace/.vscode",
+          "depth": 1,
+          "capabilities": [],
+          "package": null,
+          "children": []
+        }
+      ]
+    }
+  ]
+}

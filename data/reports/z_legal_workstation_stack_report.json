@@ -1,0 +1,103 @@
+{
+  "schema": "z.legal.workstation.stack.report.v1",
+  "module_id": "z_legal_workstation_stack",
+  "phase": "Z-LEGAL-WORKSTATION-STACK-1",
+  "mode": "legal_workstation_governance_concept_only",
+  "signal": "BLUE",
+  "generated_at": "2026-05-08T12:55:54.705Z",
+  "runtime_features_enabled": false,
+  "fixtures_red_included": false,
+  "workstation_tool_domains": [
+    "matter_case_workspace",
+    "evidence_intake_and_chain_of_custody",
+    "media_review_suite",
+    "document_intelligence_and_drafting",
+    "review_approval_and_gates",
+    "communications_flow_hub",
+    "ip_product_safety_and_compliance",
+    "security_privacy_retention",
+    "simulation_mode_safe_training",
+    "audit_export_and_receipts"
+  ],
+  "registry_validation": {
+    "passed": [
+      "registry schema ok.",
+      "policy schema ok.",
+      "mode legal_workstation_governance_concept_only.",
+      "workstation tool domains are mapped.",
+      "policy safeguards complete.",
+      "document + media format coverage present."
+    ],
+    "advisory": [],
+    "red": []
+  },
+  "summary": {
+    "green": 2,
+    "yellow": 1,
+    "blue": 2,
+    "red": 0
+  },
+  "sample_results": [
+    {
+      "sample_id": "lws_green_case_workspace_001",
+      "signal": "GREEN",
+      "reasons": [
+        "Governance and requirements posture only; no runtime legal authority enabled."
+      ],
+      "outputs_declared": [
+        "requirements_summary"
+      ]
+    },
+    {
+      "sample_id": "lws_green_media_chain_002",
+      "signal": "GREEN",
+      "reasons": [
+        "Governance and requirements posture only; no runtime legal authority enabled."
+      ],
+      "outputs_declared": [
+        "evidence_map"
+      ]
+    },
+    {
+      "sample_id": "lws_yellow_retention_gap_003",
+      "signal": "YELLOW",
+      "reasons": [
+        "Metadata or workflow requirement gap detected."
+      ],
+      "outputs_declared": [
+        "gap_alert"
+      ]
+    },
+    {
+      "sample_id": "lws_blue_human_approval_004",
+      "signal": "BLUE",
+      "reasons": [
+        "Human legal/simulation governance decision gate required."
+      ],
+      "outputs_declared": [
+        "decision_packet_draft"
+      ]
+    },
+    {
+      "sample_id": "lws_blue_simulation_switch_005",
+      "signal": "BLUE",
+      "reasons": [
+        "Human legal/simulation governance decision gate required."
+      ],
+      "outputs_declared": [
+        "simulation_plan"
+      ]
+    }
+  ],
+  "locked_law": [
+    "Workstation power ≠ runtime legal authority.",
+    "AI workflow help ≠ legal advice.",
+    "Media processing ≠ permission to share.",
+    "Simulation mode ≠ live client operations.",
+    "Dashboard visibility ≠ endorsement.",
+    "GREEN ≠ launch.",
+    "BLUE requires AMK/legal/human review.",
+    "RED blocks movement.",
+    "AMK-Goku owns sacred moves."
+  ]
+}

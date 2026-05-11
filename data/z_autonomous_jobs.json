@@ -1,0 +1,138 @@
+{
+  "generated_note": "Z-Autonomous AI v1. High/sacred tier jobs need approval: set env Z_AUTONOMOUS_APPROVAL_TOKEN (8+ chars) or one-line file data/local/z_autonomous_approval_token (gitignored).",
+  "loop_interval_sec": 60,
+  "policy": {
+    "require_approval_for_risks": ["high", "sacred"],
+    "approval_env": "Z_AUTONOMOUS_APPROVAL_TOKEN",
+    "approval_token_min_length": 8,
+    "sacred_token_min_length": 16,
+    "approval_token_file": "data/local/z_autonomous_approval_token"
+  },
+  "jobs": [
+    {
+      "id": "freshness_refresh",
+      "label": "Project Freshness Refresh",
+      "kind": "npm",
+      "script": "freshness:refresh",
+      "interval_sec": 900,
+      "risk": "low",
+      "enabled": true,
+      "soft_fail": true
+    },
+    {
+      "id": "system_status_refresh",
+      "label": "System Status Refresh",
+      "kind": "npm",
+      "script": "system-status:refresh",
+      "interval_sec": 1200,
+      "risk": "low",
+      "enabled": true,
+      "soft_fail": true
+    },
+    {
+      "id": "guardian_report",
+      "label": "Guardian Report Refresh",
+      "kind": "npm",
+      "script": "guardian:report",
+      "interval_sec": 1800,
+      "risk": "low",
+      "enabled": true,
+      "soft_fail": true
+    },
+    {
+      "id": "folder_align_dry",
+      "label": "Folder Align Dry Run",
+      "kind": "npm",
+      "script": "folder:align",
+      "interval_sec": 3600,
+      "risk": "medium",
+      "enabled": true,
+      "soft_fail": true
+    },
+    {
+      "id": "lab_status",
+      "label": "Lab Status Refresh",
+      "kind": "npm",
+      "script": "lab:status",
+      "interval_sec": 1800,
+      "risk": "low",
+      "enabled": true,
+      "soft_fail": true
+    },
+    {
+      "id": "commflow_verify",
+      "label": "Commflow Verify",
+      "kind": "npm",
+      "script": "ecosystem:commflow:verify",
+      "interval_sec": 1800,
+      "risk": "medium",
+      "enabled": true,
+      "soft_fail": true
+    },
+    {
+      "id": "ataiecf_shadow_verify",
+      "label": "Z-ATAIECF Shadow Verify",
+      "kind": "npm",
+      "script": "ataiecf:shadow:verify",
+      "interval_sec": 1800,
+      "risk": "low",
+      "enabled": true,
+      "soft_fail": true,
+      "note": "Read-only shadow-copy communication + DRP alignment verification for criticism lane."
+    },
+    {
+      "id": "hygiene_autofix",
+      "label": "Hygiene Autofix Scoped (safe markdown lanes)",
+      "kind": "npm",
+      "script": "hygiene:autofix:scoped",
+      "interval_sec": 21600,
+      "risk": "medium",
+      "enabled": true,
+      "soft_fail": true,
+      "note": "Scoped markdown lanes only; avoids broad repo churn while keeping common docs healthy."
+    },
+    {
+      "id": "lint_md_validate",
+      "label": "Markdown Lint Validation (snapshot)",
+      "kind": "npm",
+      "script": "lint:md",
+      "interval_sec": 21600,
+      "risk": "low",
+      "enabled": true,
+      "soft_fail": true,
+      "note": "Informational full-repo snapshot; does not gate autonomous green if scoped hygiene passes."
+    },
+    {
+      "id": "dsr_analyze",
+      "label": "DSR Analyze (duplication clarity signal)",
+      "kind": "npm",
+      "script": "ai:dsr:analyze",
+      "interval_sec": 3600,
+      "risk": "low",
+      "enabled": true,
+      "soft_fail": true
+    },
+    {
+      "id": "folder_align_apply",
+      "label": "Folder Align (Apply Missing Folders)",
+      "kind": "npm",
+      "script": "folder:align:apply",
+      "interval_sec": 86400,
+      "risk": "high",
+      "enabled": false,
+      "soft_fail": true,
+      "note": "Example high-tier job: enable only with approval token set; mutates folder structure."
+    },
+    {
+      "id": "release_go_no_go",
+      "label": "GO/NO-GO Release Checklist",
+      "kind": "npm",
+      "script": "release:go-no-go",
+      "interval_sec": 86400,
+      "risk": "sacred",
+      "enabled": false,
+      "soft_fail": true,
+      "note": "Sacred tier: human release gate; keep disabled for ambient loops."
+    }
+  ]
+}

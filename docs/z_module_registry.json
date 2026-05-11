@@ -1,0 +1,13 @@
+{
+  "modules": [
+    { "id": "core-auth", "weight": 10, "done": true },
+    { "id": "core-audit", "weight": 10, "done": true },
+    { "id": "core-ai-gateway", "weight": 10, "done": true },
+    { "id": "dashboard-3d", "weight": 10, "done": true },
+    { "id": "roulette-mvp", "weight": 15, "done": true },
+    { "id": "z-gadget-mirrors", "weight": 15, "done": true },
+    { "id": "tiers-access", "weight": 15, "done": false },
+    { "id": "codex-autofix", "weight": 10, "done": true },
+    { "id": "deploy-cloudflare", "weight": 20, "done": false }
+  ]
+}

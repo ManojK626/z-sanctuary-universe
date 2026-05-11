@@ -1,0 +1,54 @@
+{
+  "users": [
+    {
+      "id": "user_001",
+      "credits": 20,
+      "created_at": "2026-04-14T14:23:22.023Z",
+      "last_allocation": "2026-04-14T14:30:05.374Z",
+      "daily_allocated": 10,
+      "last_daily_reset": "2026-04-14T14:30:05.321Z",
+      "flagged": false,
+      "reputation_score": 1
+    },
+    {
+      "id": "user_002",
+      "credits": 11,
+      "daily_allocated": 11,
+      "reputation_score": 1,
+      "last_daily_reset": "2026-04-14T14:37:40.927Z",
+      "flagged": false,
+      "created_at": "2026-04-14T14:37:40.927Z",
+      "last_allocation": "2026-04-14T14:37:40.927Z"
+    },
+    {
+      "id": "user_low",
+      "credits": 12,
+      "daily_allocated": 12,
+      "reputation_score": 1.2,
+      "last_daily_reset": "2026-04-17T13:12:56.171Z",
+      "flagged": false,
+      "created_at": "2026-04-14T14:49:52.784Z",
+      "last_allocation": "2026-04-17T13:12:56.198Z"
+    },
+    {
+      "id": "user_heavy",
+      "credits": 44,
+      "daily_allocated": 20,
+      "reputation_score": 1,
+      "last_daily_reset": "2026-04-17T13:12:56.171Z",
+      "flagged": false,
+      "created_at": "2026-04-14T14:49:52.785Z",
+      "last_allocation": "2026-04-17T13:12:56.211Z"
+    },
+    {
+      "id": "user_flagged",
+      "credits": 5,
+      "daily_allocated": 2,
+      "reputation_score": 1,
+      "last_daily_reset": "2026-04-17T13:12:56.171Z",
+      "flagged": true,
+      "created_at": "2026-04-17T12:46:27.068Z",
+      "last_allocation": null
+    }
+  ]
+}

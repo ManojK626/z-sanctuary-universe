@@ -1,0 +1,360 @@
+/**
+ * LAWGRID-1A — read-only governance observatory.
+ * Calm, low-motion, no flashy animations (respect prefers-reduced-motion).
+ */
+.z-lawgrid-page {
+  --zlg-bg: #0c1118;
+  --zlg-surface: rgba(18, 28, 44, 0.92);
+  --zlg-border: rgba(100, 140, 180, 0.28);
+  --zlg-text: #dce6f5;
+  --zlg-soft: #9eb4d6;
+  --zlg-accent: #7eb8dc;
+  margin: 0;
+  min-height: 100vh;
+  font-family: system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+  font-size: 0.92rem;
+  line-height: 1.5;
+  color: var(--zlg-text);
+  background:
+    radial-gradient(120% 80% at 10% 0%, rgba(35, 60, 90, 0.35), transparent 55%),
+    radial-gradient(90% 60% at 90% 20%, rgba(45, 40, 75, 0.22), transparent 50%),
+    linear-gradient(175deg, var(--zlg-bg), #06090e 92%);
+}
+
+.z-lawgrid-skip {
+  position: absolute;
+  left: -9999px;
+  z-index: 100;
+}
+
+.z-lawgrid-skip:focus {
+  left: 0.75rem;
+  top: 0.5rem;
+  padding: 0.35rem 0.6rem;
+  background: #172032;
+  color: var(--zlg-accent);
+  border-radius: 6px;
+  outline: 2px solid rgba(126, 184, 220, 0.8);
+}
+
+.z-lawgrid-head {
+  padding: 1rem 1.25rem 0.65rem;
+  border-bottom: 1px solid var(--zlg-border);
+  background: rgba(10, 16, 26, 0.55);
+}
+
+.z-lawgrid-head h1 {
+  margin: 0 0 0.25rem;
+  font-size: 1.35rem;
+  font-weight: 650;
+  letter-spacing: 0.02em;
+  color: #eaf2ff;
+}
+
+.z-lawgrid-tagline {
+  margin: 0 0 0.5rem;
+  color: var(--zlg-soft);
+  font-size: 0.86rem;
+  max-width: 62rem;
+}
+
+.z-lawgrid-nav-mini {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.65rem;
+  padding-bottom: 0.65rem;
+}
+
+.z-lawgrid-nav-mini a {
+  color: #9fd4ff;
+  text-decoration: none;
+  border-bottom: 1px solid rgba(120, 185, 230, 0.35);
+  font-size: 0.82rem;
+}
+
+.z-lawgrid-nav-mini a:hover,
+.z-lawgrid-nav-mini a:focus-visible {
+  color: #c8ebff;
+  border-bottom-color: rgba(180, 220, 255, 0.65);
+}
+
+.z-lawgrid-law {
+  margin: 0.65rem 1.25rem 0;
+  padding: 0.55rem 0.85rem;
+  border-radius: 8px;
+  border: 1px solid rgba(200, 160, 80, 0.28);
+  background: rgba(40, 32, 20, 0.35);
+  font-size: 0.81rem;
+  color: #e8d9c4;
+}
+
+.z-lawgrid-law ul {
+  margin: 0;
+  padding-left: 1.1rem;
+}
+
+.z-lawgrid-law li {
+  margin-bottom: 0.2rem;
+}
+
+.z-lawgrid-status {
+  margin: 0.5rem 1.25rem 0.35rem;
+  font-size: 0.8rem;
+  color: var(--zlg-soft);
+}
+
+.z-lawgrid-shell {
+  display: grid;
+  grid-template-columns: minmax(0, 200px) minmax(0, 1fr) minmax(0, 260px);
+  gap: 0.85rem;
+  padding: 0.85rem 1.25rem 1.25rem;
+  align-items: start;
+}
+
+.z-lawgrid-h-sr-screen {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+.z-lawgrid-col {
+  border: 1px solid var(--zlg-border);
+  border-radius: 12px;
+  background: var(--zlg-surface);
+  padding: 0.75rem;
+  box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.03);
+}
+
+.z-lawgrid-spine {
+  display: flex;
+  flex-direction: column;
+  gap: 0.45rem;
+}
+
+.z-lawgrid-spine-item {
+  border-radius: 8px;
+  border: 1px solid rgba(90, 120, 155, 0.35);
+  padding: 0.45rem 0.52rem;
+  background: rgba(12, 20, 36, 0.75);
+}
+
+.z-lawgrid-spine-item strong {
+  display: block;
+  font-size: 0.76rem;
+  color: var(--zlg-accent);
+  letter-spacing: 0.04em;
+}
+
+.z-lawgrid-spine-item span {
+  display: block;
+  font-size: 0.72rem;
+  color: var(--zlg-soft);
+  margin-top: 0.22rem;
+  line-height: 1.35;
+}
+
+.z-lawgrid-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  gap: 0.55rem;
+  margin-bottom: 0.75rem;
+}
+
+.z-lawgrid-card {
+  border-radius: 10px;
+  border: 1px solid rgba(85, 125, 170, 0.32);
+  padding: 0.55rem 0.62rem;
+  background: rgba(14, 22, 38, 0.88);
+}
+
+.z-lawgrid-card h3 {
+  margin: 0 0 0.38rem;
+  font-size: 0.74rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: #a8cce8;
+}
+
+.z-lawgrid-card p {
+  margin: 0;
+  font-size: 0.78rem;
+  color: var(--zlg-soft);
+  line-height: 1.4;
+}
+
+.z-lawgrid-card .z-lawgrid-card-metric {
+  margin-top: 0.42rem;
+  font-size: 1.05rem;
+  font-weight: 600;
+  color: #eaf2ff;
+}
+
+.z-lawgrid-constellation-wrap {
+  border-radius: 10px;
+  border: 1px solid rgba(80, 110, 150, 0.28);
+  padding: 0.55rem 0.62rem;
+  background: rgba(8, 14, 28, 0.65);
+}
+
+.z-lawgrid-const-cap {
+  margin: 0 0 0.45rem;
+  font-size: 0.72rem;
+  color: var(--zlg-soft);
+}
+
+.z-lawgrid-svg-host {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 5 / 3;
+  max-height: 260px;
+  border-radius: 8px;
+  background: radial-gradient(80% 80% at 50% 50%, rgba(30, 50, 85, 0.35), rgba(8, 12, 24, 0.95));
+  overflow: hidden;
+}
+
+.z-lawgrid-svg {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.z-lawgrid-svg line {
+  stroke: rgba(130, 170, 220, 0.22);
+  stroke-width: 0.65;
+}
+
+.z-lawgrid-svg circle {
+  fill: rgba(40, 70, 110, 0.55);
+  stroke: rgba(150, 200, 255, 0.35);
+  stroke-width: 0.4;
+}
+
+.z-lawgrid-node-labels {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+}
+
+.z-lawgrid-node-labels span {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  font-size: clamp(0.58rem, 1.35vw, 0.72rem);
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  color: rgba(200, 225, 255, 0.88);
+  text-shadow:
+    0 0 6px rgba(8, 12, 28, 0.95),
+    0 0 8px rgba(8, 12, 28, 0.85);
+  white-space: nowrap;
+}
+
+.z-lawgrid-col--queue h2 {
+  margin: 0 0 0.35rem;
+  font-size: 0.88rem;
+  color: #c5dff5;
+}
+
+.z-lawgrid-queue-intro {
+  margin: 0 0 0.55rem;
+  font-size: 0.75rem;
+  color: var(--zlg-soft);
+}
+
+.z-lawgrid-queue-item {
+  border-radius: 8px;
+  border: 1px solid rgba(100, 130, 170, 0.3);
+  padding: 0.45rem 0.5rem;
+  margin-bottom: 0.42rem;
+  background: rgba(10, 18, 32, 0.8);
+}
+
+.z-lawgrid-queue-item--red {
+  border-color: rgba(248, 113, 113, 0.35);
+  box-shadow: inset 2px 0 0 rgba(239, 68, 68, 0.55);
+}
+
+.z-lawgrid-queue-item--blue {
+  border-color: rgba(96, 165, 250, 0.35);
+  box-shadow: inset 2px 0 0 rgba(59, 130, 246, 0.55);
+}
+
+.z-lawgrid-queue-meta {
+  font-size: 0.7rem;
+  color: var(--zlg-soft);
+  margin-top: 0.25rem;
+}
+
+.z-lawgrid-h3 {
+  margin: 0.85rem 0 0.35rem;
+  font-size: 0.78rem;
+  color: #a8cce8;
+}
+
+.z-lawgrid-legend {
+  margin: 0;
+  padding-left: 1rem;
+  font-size: 0.72rem;
+  color: var(--zlg-soft);
+}
+
+.z-lawgrid-legend li {
+  margin-bottom: 0.28rem;
+}
+
+.z-lawgrid-foot {
+  padding: 1rem 1.25rem 1.75rem;
+  font-size: 0.74rem;
+  color: var(--zlg-soft);
+  border-top: 1px solid var(--zlg-border);
+  background: rgba(8, 12, 20, 0.55);
+}
+
+.z-lawgrid-foot code {
+  color: #b8daf5;
+}
+
+.z-lawgrid-foot-links {
+  margin-top: 0.55rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.65rem;
+}
+
+.z-lawgrid-foot-links a {
+  color: #8fd0ff;
+  font-size: 0.78rem;
+}
+
+@media (max-width: 980px) {
+  .z-lawgrid-shell {
+    grid-template-columns: 1fr;
+  }
+
+  .z-lawgrid-col--spine .z-lawgrid-spine {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .z-lawgrid-spine-item {
+    flex: 1 1 140px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .z-lawgrid-page *,
+  .z-lawgrid-page *::before,
+  .z-lawgrid-page *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}

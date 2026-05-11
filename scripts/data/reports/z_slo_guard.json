@@ -1,0 +1,13 @@
+{
+  "generated_at": "2026-03-05T16:03:09.358Z",
+  "status": "green",
+  "policy_version": "0.1",
+  "workspace": "UNKNOWN",
+  "profile": "UNKNOWN",
+  "totals": {
+    "targets": 0,
+    "passed": 0,
+    "failed": 0
+  },
+  "checks": []
+}

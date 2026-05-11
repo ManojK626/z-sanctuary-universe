@@ -1,0 +1,152 @@
+{
+  "schema": "amk_control_layout_registry_v1",
+  "phase": "AMK-DASH-FLEX-2",
+  "posture": "ui_shell_only_no_execution",
+  "categories": [
+    {
+      "id": "overview",
+      "label": "Overview",
+      "icon": "◎",
+      "inspector": {
+        "title": "Overview",
+        "signal": "Orientation and confirmation law — not permission to deploy.",
+        "next_safe": "Read confirmation law, pick one hero path, then verify in your own terminal if needed.",
+        "law": "Dashboard layout ≠ execution. Focus mode ≠ permission.",
+        "docs": ["docs/AMK_GOKU_MAIN_CONTROL_DASHBOARD.md", "docs/AMK_GOKU_OPERATOR_CONFIRMATION_POLICY.md"]
+      },
+      "haystack": "hero law strip turtle runtime overview confirmation"
+    },
+    {
+      "id": "indicators",
+      "label": "Indicators",
+      "icon": "◆",
+      "inspector": {
+        "title": "Indicators",
+        "signal": "Advisory Go/No-Go chips from JSON reports — UNKNOWN when reports missing.",
+        "next_safe": "Run hub verify scripts from your machine when you need receipts; this page only links.",
+        "law": "GREEN here is not deploy approval.",
+        "docs": ["docs/AMK_PROJECT_INDICATORS_AND_GO_NO_GO.md", "docs/AMK_GOKU_MAIN_CONTROL_DASHBOARD.md"]
+      },
+      "haystack": "indicator traffic zuno car2 dashboard health rhythm observatory"
+    },
+    {
+      "id": "api_ssws",
+      "label": "API / SSWS",
+      "icon": "⎈",
+      "inspector": {
+        "title": "API / SSWS posture",
+        "signal": "Queue and sealed rows describe policy posture — not live bridge state.",
+        "next_safe": "Review notifications JSON and SSWS docs outside this page.",
+        "law": "No silent provider calls from this dashboard.",
+        "docs": ["docs/Z-GITHUB-AI-COMMS-PRECAUTIONS.md", "docs/Z-SUPER-OVERSEER-AI.md"]
+      },
+      "haystack": "queue notification ssws traffic sealed api"
+    },
+    {
+      "id": "workspace",
+      "label": "Workspace / Doorway",
+      "icon": "▣",
+      "inspector": {
+        "title": "Workspace",
+        "signal": "AAL ladder and project map are read-only doctrine surfaces.",
+        "next_safe": "Use advisor copy as checklist language only — sacred moves stay with AMK-Goku.",
+        "law": "Advisor console does not run npm, Cursor, or deploy.",
+        "docs": ["docs/AMK_ZUNO_ADVISOR_CONSOLE.md", "docs/AMK_AUTONOMOUS_APPROVAL_LADDER.md"]
+      },
+      "haystack": "advisor aal zuno project catalog doorway workspace"
+    },
+    {
+      "id": "creative",
+      "label": "Creative / Z-OMNAI",
+      "icon": "✦",
+      "inspector": {
+        "title": "Creative layer",
+        "signal": "Ecosystem canvas is symbolic topology — shapes follow report binds when present.",
+        "next_safe": "Open linked docs for magical canvas registry when you extend creative modules.",
+        "law": "Canvas map ≠ live control mesh.",
+        "docs": ["docs/Z-ACN-MTEH-AUTO-CREATIONS-NEW-MODULES-TOOLS-EXTENSIONS.md"]
+      },
+      "haystack": "ecosystem canvas magical omna creative zmc star"
+    },
+    {
+      "id": "security",
+      "label": "Security / VH100",
+      "icon": "🛡",
+      "inspector": {
+        "title": "Security",
+        "signal": "Sealed systems and blocked lists are governance reminders.",
+        "next_safe": "Read VH100 / MCBURB / FBAP policy JSON through doc links.",
+        "law": "Visibility is not certification.",
+        "docs": ["docs/security/Z_VH100_VEGETA_HARISHA_SECURITY_CORE.md", "docs/security/Z_MCBURB_BACKUP_RECONVERGE_BOOSTER.md"]
+      },
+      "haystack": "sealed blocked gate vh100 mcburb fbap security shield"
+    },
+    {
+      "id": "root_guardians",
+      "label": "Root Guardians",
+      "icon": "✧",
+      "inspector": {
+        "title": "Z-ROOT-7",
+        "signal": "Symbolic guardian council — no WebGL, no live AI from this panel.",
+        "next_safe": "Use constellation as ethics map; open Z-ROOT-7 doc for full wording.",
+        "law": "Guardian council ≠ executor.",
+        "docs": ["docs/Z_ROOT_7_GUARDIAN_COORDINATION_LAYER.md", "docs/Z_ROOT_7_VISUAL_INTEGRATION_PROFILE.md"]
+      },
+      "haystack": "root seven guardian constellation z-root ethical"
+    },
+    {
+      "id": "launch_hold",
+      "label": "Launch / Hold",
+      "icon": "⏸",
+      "inspector": {
+        "title": "Launch / hold",
+        "signal": "Ceremony text mirrors JSON — human approval gates stay outside the browser.",
+        "next_safe": "If status is not GREEN, hold lane until overseer workflow agrees.",
+        "law": "Launch readiness ≠ deployment.",
+        "docs": ["docs/AMK_GOKU_MAIN_CONTROL_DASHBOARD.md"]
+      },
+      "haystack": "launch ceremony hold safe blocked gate readiness"
+    },
+    {
+      "id": "docs_receipts",
+      "label": "Docs / Receipts",
+      "icon": "📜",
+      "inspector": {
+        "title": "Docs and receipts",
+        "signal": "Links open artifacts only — no auto-sync from this page.",
+        "next_safe": "Keep receipts in git; refresh reports on your schedule.",
+        "law": "Receipt presence ≠ green gate sign-off alone.",
+        "docs": ["docs/Z-SANCTUARY-VERIFICATION-CHECKLIST.md"]
+      },
+      "haystack": "receipt report doc verify checklist foot footer"
+    }
+  ],
+  "mini_ecosphere": {
+    "title": "Domain pulse (read-only)",
+    "nodes": [
+      { "id": "overview", "label": "Overview", "category_id": "overview" },
+      { "id": "indicators", "label": "Indicators", "category_id": "indicators" },
+      { "id": "api", "label": "API/SSWS", "category_id": "api_ssws" },
+      { "id": "workspace", "label": "Workspace", "category_id": "workspace" },
+      { "id": "creative", "label": "Creative", "category_id": "creative" },
+      { "id": "security", "label": "Security", "category_id": "security" },
+      { "id": "root", "label": "Roots", "category_id": "root_guardians" },
+      { "id": "launch", "label": "Launch", "category_id": "launch_hold" },
+      { "id": "docs", "label": "Docs", "category_id": "docs_receipts" }
+    ]
+  },
+  "copy_commands": [
+    { "id": "verify_md", "label": "Copy verify:md", "command": "npm run verify:md" },
+    { "id": "dash_reg", "label": "Copy dashboard:registry-verify", "command": "npm run dashboard:registry-verify" },
+    { "id": "traffic", "label": "Copy z:traffic", "command": "npm run z:traffic" },
+    { "id": "car2", "label": "Copy z:car2", "command": "npm run z:car2" }
+  ],
+  "status_rail": {
+    "cloudflare_label": "Cloudflare",
+    "cloudflare_doc": "docs/Z-CLOUDFLARE-AI-COMMS-PRECAUTIONS.md",
+    "api_label": "Z-API posture",
+    "api_doc": "docs/Z-GITHUB-AI-COMMS-PRECAUTIONS.md",
+    "ssws_label": "Z-SSWS",
+    "ssws_doc": "docs/Z-SUPER-OVERSEER-AI.md"
+  }
+}

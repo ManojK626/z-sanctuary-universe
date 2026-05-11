@@ -1,0 +1,699 @@
+{
+  "generated_at": "2026-04-23T18:54:52.398Z",
+  "summary": {
+    "total": 30,
+    "critical": 0,
+    "high": 0,
+    "medium": 0,
+    "low": 30
+  },
+  "pressure": "low",
+  "patterns": [
+    {
+      "task": "Define project role clearly",
+      "count": 2
+    }
+  ],
+  "plan": [
+    {
+      "name": "lottery_app_pack_latest",
+      "path": "./All APPs/lottery_app_pack_latest",
+      "type": "frontend",
+      "score": 100,
+      "weight": 10,
+      "risk": "LOW",
+      "priority": "HIGH",
+      "next_action": "No action needed",
+      "tasks": []
+    },
+    {
+      "name": "Amk_Goku Worldwide Loterry",
+      "path": "./Amk_Goku Worldwide Loterry",
+      "type": "frontend",
+      "score": 100,
+      "weight": 10,
+      "risk": "LOW",
+      "priority": "HIGH",
+      "next_action": "No action needed",
+      "tasks": []
+    },
+    {
+      "name": "core-engine",
+      "path": "./Amk_Goku Worldwide Loterry/core-engine",
+      "type": "data_system",
+      "score": 100,
+      "weight": 10,
+      "risk": "LOW",
+      "priority": "HIGH",
+      "next_action": "No action needed",
+      "tasks": []
+    },
+    {
+      "name": "lottery_app_pack_20260130T225055Z",
+      "path": "./Amk_Goku Worldwide Loterry/exports/lottery_app_pack_20260130T225055Z",
+      "type": "frontend",
+      "score": 100,
+      "weight": 10,
+      "risk": "LOW",
+      "priority": "HIGH",
+      "next_action": "No action needed",
+      "tasks": []
+    },
+    {
+      "name": "lottery_app_pack_20260130T225320Z",
+      "path": "./Amk_Goku Worldwide Loterry/exports/lottery_app_pack_20260130T225320Z",
+      "type": "frontend",
+      "score": 100,
+      "weight": 10,
+      "risk": "LOW",
+      "priority": "HIGH",
+      "next_action": "No action needed",
+      "tasks": []
+    },
+    {
+      "name": "lottery_app_pack_20260131T130222Z",
+      "path": "./Amk_Goku Worldwide Loterry/exports/lottery_app_pack_20260131T130222Z",
+      "type": "frontend",
+      "score": 100,
+      "weight": 10,
+      "risk": "LOW",
+      "priority": "HIGH",
+      "next_action": "No action needed",
+      "tasks": []
+    },
+    {
+      "name": "lottery_app_pack_20260131T150700Z",
+      "path": "./Amk_Goku Worldwide Loterry/exports/lottery_app_pack_20260131T150700Z",
+      "type": "frontend",
+      "score": 100,
+      "weight": 10,
+      "risk": "LOW",
+      "priority": "HIGH",
+      "next_action": "No action needed",
+      "tasks": []
+    },
+    {
+      "name": "lottery_app_pack_20260131T150734Z",
+      "path": "./Amk_Goku Worldwide Loterry/exports/lottery_app_pack_20260131T150734Z",
+      "type": "frontend",
+      "score": 100,
+      "weight": 10,
+      "risk": "LOW",
+      "priority": "HIGH",
+      "next_action": "No action needed",
+      "tasks": []
+    },
+    {
+      "name": "lottery_app_pack_20260131T151828Z",
+      "path": "./Amk_Goku Worldwide Loterry/exports/lottery_app_pack_20260131T151828Z",
+      "type": "frontend",
+      "score": 100,
+      "weight": 10,
+      "risk": "LOW",
+      "priority": "HIGH",
+      "next_action": "No action needed",
+      "tasks": []
+    },
+    {
+      "name": "lottery_app_pack_20260131T152508Z",
+      "path": "./Amk_Goku Worldwide Loterry/exports/lottery_app_pack_20260131T152508Z",
+      "type": "frontend",
+      "score": 100,
+      "weight": 10,
+      "risk": "LOW",
+      "priority": "HIGH",
+      "next_action": "No action needed",
+      "tasks": []
+    },
+    {
+      "name": "lottery_app_pack_20260202T171438Z",
+      "path": "./Amk_Goku Worldwide Loterry/exports/lottery_app_pack_20260202T171438Z",
+      "type": "frontend",
+      "score": 100,
+      "weight": 10,
+      "risk": "LOW",
+      "priority": "HIGH",
+      "next_action": "No action needed",
+      "tasks": []
+    },
+    {
+      "name": "lottery_app_pack_20260215T154122Z",
+      "path": "./Amk_Goku Worldwide Loterry/exports/lottery_app_pack_20260215T154122Z",
+      "type": "frontend",
+      "score": 100,
+      "weight": 10,
+      "risk": "LOW",
+      "priority": "HIGH",
+      "next_action": "No action needed",
+      "tasks": []
+    },
+    {
+      "name": "lottery_app_pack_latest",
+      "path": "./Amk_Goku Worldwide Loterry/exports/lottery_app_pack_latest",
+      "type": "frontend",
+      "score": 100,
+      "weight": 10,
+      "risk": "LOW",
+      "priority": "HIGH",
+      "next_action": "No action needed",
+      "tasks": []
+    },
+    {
+      "name": "api",
+      "path": "./apps/api",
+      "type": "backend",
+      "score": 100,
+      "weight": 10,
+      "risk": "LOW",
+      "priority": "HIGH",
+      "next_action": "No action needed",
+      "tasks": []
+    },
+    {
+      "name": "web",
+      "path": "./apps/web",
+      "type": "backend",
+      "score": 100,
+      "weight": 10,
+      "risk": "LOW",
+      "priority": "HIGH",
+      "next_action": "No action needed",
+      "tasks": []
+    },
+    {
+      "name": "mirror_decision_engine",
+      "path": "./apps/z_gadget_mirrors/mirror_decision_engine",
+      "type": "data_system",
+      "score": 100,
+      "weight": 10,
+      "risk": "LOW",
+      "priority": "HIGH",
+      "next_action": "No action needed",
+      "tasks": []
+    },
+    {
+      "name": "z_bridge",
+      "path": "./config/z_bridge",
+      "type": "bridge",
+      "score": 100,
+      "weight": 10,
+      "risk": "LOW",
+      "priority": "HIGH",
+      "next_action": "No action needed",
+      "tasks": []
+    },
+    {
+      "name": "core",
+      "path": "./core",
+      "type": "data_system",
+      "score": 100,
+      "weight": 10,
+      "risk": "LOW",
+      "priority": "HIGH",
+      "next_action": "No action needed",
+      "tasks": []
+    },
+    {
+      "name": "core",
+      "path": "./core/core",
+      "type": "data_system",
+      "score": 100,
+      "weight": 10,
+      "risk": "LOW",
+      "priority": "HIGH",
+      "next_action": "No action needed",
+      "tasks": []
+    },
+    {
+      "name": "z_bridge",
+      "path": "./data/z_bridge",
+      "type": "bridge",
+      "score": 100,
+      "weight": 10,
+      "risk": "LOW",
+      "priority": "HIGH",
+      "next_action": "No action needed",
+      "tasks": []
+    },
+    {
+      "name": "z_bridge_soft",
+      "path": "./deploy/z_bridge_soft",
+      "type": "bridge",
+      "score": 100,
+      "weight": 10,
+      "risk": "LOW",
+      "priority": "HIGH",
+      "next_action": "No action needed",
+      "tasks": []
+    },
+    {
+      "name": "martial-platform",
+      "path": "./martial-platform",
+      "type": "data_system",
+      "score": 100,
+      "weight": 10,
+      "risk": "LOW",
+      "priority": "HIGH",
+      "next_action": "No action needed",
+      "tasks": []
+    },
+    {
+      "name": "z-intelligence",
+      "path": "./packages/z-intelligence",
+      "type": "backend",
+      "score": 100,
+      "weight": 10,
+      "risk": "LOW",
+      "priority": "HIGH",
+      "next_action": "No action needed",
+      "tasks": []
+    },
+    {
+      "name": "z-sanctuary-core",
+      "path": "./packages/z-sanctuary-core",
+      "type": "backend",
+      "score": 100,
+      "weight": 10,
+      "risk": "LOW",
+      "priority": "HIGH",
+      "next_action": "No action needed",
+      "tasks": []
+    },
+    {
+      "name": "scripts",
+      "path": "./scripts",
+      "type": "data_system",
+      "score": 100,
+      "weight": 10,
+      "risk": "LOW",
+      "priority": "HIGH",
+      "next_action": "No action needed",
+      "tasks": []
+    },
+    {
+      "name": "z_bridge",
+      "path": "./scripts/z_bridge",
+      "type": "bridge",
+      "score": 100,
+      "weight": 10,
+      "risk": "LOW",
+      "priority": "HIGH",
+      "next_action": "No action needed",
+      "tasks": []
+    },
+    {
+      "name": "z_garage_node_minimal",
+      "path": "./templates/z_garage_node_minimal",
+      "type": "backend",
+      "score": 100,
+      "weight": 10,
+      "risk": "LOW",
+      "priority": "HIGH",
+      "next_action": "No action needed",
+      "tasks": []
+    },
+    {
+      "name": "z_bridge_dashboard",
+      "path": "./ui/z_bridge_dashboard",
+      "type": "bridge",
+      "score": 100,
+      "weight": 10,
+      "risk": "LOW",
+      "priority": "HIGH",
+      "next_action": "No action needed",
+      "tasks": []
+    },
+    {
+      "name": "ZSanctuary_Labs",
+      "path": "./ZSanctuary_Labs",
+      "type": "unknown",
+      "score": 75,
+      "weight": 10,
+      "risk": "LOW",
+      "priority": "MEDIUM",
+      "next_action": "Define project role clearly",
+      "tasks": [
+        "Define project role clearly"
+      ]
+    },
+    {
+      "name": "dashboard_copy",
+      "path": "./ZSanctuary_Labs/copies/dashboard_copy",
+      "type": "unknown",
+      "score": 75,
+      "weight": 10,
+      "risk": "LOW",
+      "priority": "MEDIUM",
+      "next_action": "Define project role clearly",
+      "tasks": [
+        "Define project role clearly"
+      ]
+    }
+  ],
+  "grouped": {
+    "frontend": [
+      {
+        "name": "lottery_app_pack_latest",
+        "path": "./All APPs/lottery_app_pack_latest",
+        "type": "frontend",
+        "score": 100,
+        "weight": 10,
+        "risk": "LOW",
+        "priority": "HIGH",
+        "next_action": "No action needed",
+        "tasks": []
+      },
+      {
+        "name": "Amk_Goku Worldwide Loterry",
+        "path": "./Amk_Goku Worldwide Loterry",
+        "type": "frontend",
+        "score": 100,
+        "weight": 10,
+        "risk": "LOW",
+        "priority": "HIGH",
+        "next_action": "No action needed",
+        "tasks": []
+      },
+      {
+        "name": "lottery_app_pack_20260130T225055Z",
+        "path": "./Amk_Goku Worldwide Loterry/exports/lottery_app_pack_20260130T225055Z",
+        "type": "frontend",
+        "score": 100,
+        "weight": 10,
+        "risk": "LOW",
+        "priority": "HIGH",
+        "next_action": "No action needed",
+        "tasks": []
+      },
+      {
+        "name": "lottery_app_pack_20260130T225320Z",
+        "path": "./Amk_Goku Worldwide Loterry/exports/lottery_app_pack_20260130T225320Z",
+        "type": "frontend",
+        "score": 100,
+        "weight": 10,
+        "risk": "LOW",
+        "priority": "HIGH",
+        "next_action": "No action needed",
+        "tasks": []
+      },
+      {
+        "name": "lottery_app_pack_20260131T130222Z",
+        "path": "./Amk_Goku Worldwide Loterry/exports/lottery_app_pack_20260131T130222Z",
+        "type": "frontend",
+        "score": 100,
+        "weight": 10,
+        "risk": "LOW",
+        "priority": "HIGH",
+        "next_action": "No action needed",
+        "tasks": []
+      },
+      {
+        "name": "lottery_app_pack_20260131T150700Z",
+        "path": "./Amk_Goku Worldwide Loterry/exports/lottery_app_pack_20260131T150700Z",
+        "type": "frontend",
+        "score": 100,
+        "weight": 10,
+        "risk": "LOW",
+        "priority": "HIGH",
+        "next_action": "No action needed",
+        "tasks": []
+      },
+      {
+        "name": "lottery_app_pack_20260131T150734Z",
+        "path": "./Amk_Goku Worldwide Loterry/exports/lottery_app_pack_20260131T150734Z",
+        "type": "frontend",
+        "score": 100,
+        "weight": 10,
+        "risk": "LOW",
+        "priority": "HIGH",
+        "next_action": "No action needed",
+        "tasks": []
+      },
+      {
+        "name": "lottery_app_pack_20260131T151828Z",
+        "path": "./Amk_Goku Worldwide Loterry/exports/lottery_app_pack_20260131T151828Z",
+        "type": "frontend",
+        "score": 100,
+        "weight": 10,
+        "risk": "LOW",
+        "priority": "HIGH",
+        "next_action": "No action needed",
+        "tasks": []
+      },
+      {
+        "name": "lottery_app_pack_20260131T152508Z",
+        "path": "./Amk_Goku Worldwide Loterry/exports/lottery_app_pack_20260131T152508Z",
+        "type": "frontend",
+        "score": 100,
+        "weight": 10,
+        "risk": "LOW",
+        "priority": "HIGH",
+        "next_action": "No action needed",
+        "tasks": []
+      },
+      {
+        "name": "lottery_app_pack_20260202T171438Z",
+        "path": "./Amk_Goku Worldwide Loterry/exports/lottery_app_pack_20260202T171438Z",
+        "type": "frontend",
+        "score": 100,
+        "weight": 10,
+        "risk": "LOW",
+        "priority": "HIGH",
+        "next_action": "No action needed",
+        "tasks": []
+      },
+      {
+        "name": "lottery_app_pack_20260215T154122Z",
+        "path": "./Amk_Goku Worldwide Loterry/exports/lottery_app_pack_20260215T154122Z",
+        "type": "frontend",
+        "score": 100,
+        "weight": 10,
+        "risk": "LOW",
+        "priority": "HIGH",
+        "next_action": "No action needed",
+        "tasks": []
+      },
+      {
+        "name": "lottery_app_pack_latest",
+        "path": "./Amk_Goku Worldwide Loterry/exports/lottery_app_pack_latest",
+        "type": "frontend",
+        "score": 100,
+        "weight": 10,
+        "risk": "LOW",
+        "priority": "HIGH",
+        "next_action": "No action needed",
+        "tasks": []
+      }
+    ],
+    "data_system": [
+      {
+        "name": "core-engine",
+        "path": "./Amk_Goku Worldwide Loterry/core-engine",
+        "type": "data_system",
+        "score": 100,
+        "weight": 10,
+        "risk": "LOW",
+        "priority": "HIGH",
+        "next_action": "No action needed",
+        "tasks": []
+      },
+      {
+        "name": "mirror_decision_engine",
+        "path": "./apps/z_gadget_mirrors/mirror_decision_engine",
+        "type": "data_system",
+        "score": 100,
+        "weight": 10,
+        "risk": "LOW",
+        "priority": "HIGH",
+        "next_action": "No action needed",
+        "tasks": []
+      },
+      {
+        "name": "core",
+        "path": "./core",
+        "type": "data_system",
+        "score": 100,
+        "weight": 10,
+        "risk": "LOW",
+        "priority": "HIGH",
+        "next_action": "No action needed",
+        "tasks": []
+      },
+      {
+        "name": "core",
+        "path": "./core/core",
+        "type": "data_system",
+        "score": 100,
+        "weight": 10,
+        "risk": "LOW",
+        "priority": "HIGH",
+        "next_action": "No action needed",
+        "tasks": []
+      },
+      {
+        "name": "martial-platform",
+        "path": "./martial-platform",
+        "type": "data_system",
+        "score": 100,
+        "weight": 10,
+        "risk": "LOW",
+        "priority": "HIGH",
+        "next_action": "No action needed",
+        "tasks": []
+      },
+      {
+        "name": "scripts",
+        "path": "./scripts",
+        "type": "data_system",
+        "score": 100,
+        "weight": 10,
+        "risk": "LOW",
+        "priority": "HIGH",
+        "next_action": "No action needed",
+        "tasks": []
+      }
+    ],
+    "backend": [
+      {
+        "name": "api",
+        "path": "./apps/api",
+        "type": "backend",
+        "score": 100,
+        "weight": 10,
+        "risk": "LOW",
+        "priority": "HIGH",
+        "next_action": "No action needed",
+        "tasks": []
+      },
+      {
+        "name": "web",
+        "path": "./apps/web",
+        "type": "backend",
+        "score": 100,
+        "weight": 10,
+        "risk": "LOW",
+        "priority": "HIGH",
+        "next_action": "No action needed",
+        "tasks": []
+      },
+      {
+        "name": "z-intelligence",
+        "path": "./packages/z-intelligence",
+        "type": "backend",
+        "score": 100,
+        "weight": 10,
+        "risk": "LOW",
+        "priority": "HIGH",
+        "next_action": "No action needed",
+        "tasks": []
+      },
+      {
+        "name": "z-sanctuary-core",
+        "path": "./packages/z-sanctuary-core",
+        "type": "backend",
+        "score": 100,
+        "weight": 10,
+        "risk": "LOW",
+        "priority": "HIGH",
+        "next_action": "No action needed",
+        "tasks": []
+      },
+      {
+        "name": "z_garage_node_minimal",
+        "path": "./templates/z_garage_node_minimal",
+        "type": "backend",
+        "score": 100,
+        "weight": 10,
+        "risk": "LOW",
+        "priority": "HIGH",
+        "next_action": "No action needed",
+        "tasks": []
+      }
+    ],
+    "bridge": [
+      {
+        "name": "z_bridge",
+        "path": "./config/z_bridge",
+        "type": "bridge",
+        "score": 100,
+        "weight": 10,
+        "risk": "LOW",
+        "priority": "HIGH",
+        "next_action": "No action needed",
+        "tasks": []
+      },
+      {
+        "name": "z_bridge",
+        "path": "./data/z_bridge",
+        "type": "bridge",
+        "score": 100,
+        "weight": 10,
+        "risk": "LOW",
+        "priority": "HIGH",
+        "next_action": "No action needed",
+        "tasks": []
+      },
+      {
+        "name": "z_bridge_soft",
+        "path": "./deploy/z_bridge_soft",
+        "type": "bridge",
+        "score": 100,
+        "weight": 10,
+        "risk": "LOW",
+        "priority": "HIGH",
+        "next_action": "No action needed",
+        "tasks": []
+      },
+      {
+        "name": "z_bridge",
+        "path": "./scripts/z_bridge",
+        "type": "bridge",
+        "score": 100,
+        "weight": 10,
+        "risk": "LOW",
+        "priority": "HIGH",
+        "next_action": "No action needed",
+        "tasks": []
+      },
+      {
+        "name": "z_bridge_dashboard",
+        "path": "./ui/z_bridge_dashboard",
+        "type": "bridge",
+        "score": 100,
+        "weight": 10,
+        "risk": "LOW",
+        "priority": "HIGH",
+        "next_action": "No action needed",
+        "tasks": []
+      }
+    ],
+    "unknown": [
+      {
+        "name": "ZSanctuary_Labs",
+        "path": "./ZSanctuary_Labs",
+        "type": "unknown",
+        "score": 75,
+        "weight": 10,
+        "risk": "LOW",
+        "priority": "MEDIUM",
+        "next_action": "Define project role clearly",
+        "tasks": [
+          "Define project role clearly"
+        ]
+      },
+      {
+        "name": "dashboard_copy",
+        "path": "./ZSanctuary_Labs/copies/dashboard_copy",
+        "type": "unknown",
+        "score": 75,
+        "weight": 10,
+        "risk": "LOW",
+        "priority": "MEDIUM",
+        "next_action": "Define project role clearly",
+        "tasks": [
+          "Define project role clearly"
+        ]
+      }
+    ]
+  }
+}

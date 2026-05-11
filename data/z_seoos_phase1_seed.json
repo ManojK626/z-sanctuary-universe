@@ -1,0 +1,279 @@
+{
+  "schema_version": 1,
+  "name": "z-seoos-phase1-seed",
+  "generated_note": "Seed contract for Sovereign Enterprise OS Phase 1.",
+  "products": [
+    {
+      "id": "z-grid-mattress",
+      "name": "Z-Grid Mattress",
+      "category": "mobility_balance_support",
+      "shortDescription": "Adaptive support mattress for pressure distribution and safer movement assistance.",
+      "originStory": "Built to improve balance comfort and movement dignity for broad populations including limited mobility users.",
+      "materials": [
+        "breathable_cover",
+        "gel_or_fluid_grid",
+        "elastic_foam",
+        "support_foam",
+        "anti_slip_base"
+      ],
+      "functions": [
+        "pressure_redistribution",
+        "movement_support",
+        "stability_assist"
+      ],
+      "worldBenefits": [
+        "reduced pressure stress",
+        "improved confidence in movement"
+      ],
+      "ecoLifecyclePlan": "Design for repairable layers and controlled material sourcing.",
+      "allowedClaims": [
+        "balance support",
+        "movement assistance",
+        "pressure redistribution"
+      ],
+      "forbiddenClaims": [
+        "controls_gravity",
+        "medical_cure_claims"
+      ],
+      "status": "prototype_ready",
+      "ecoScore": 78,
+      "drpScore": 84,
+      "trustScore": 82,
+      "costEstimate": {
+        "materials": 240,
+        "labour": 95,
+        "packaging": 24,
+        "shipping": 48,
+        "qualityControl": 18,
+        "ethicalReserve": 22,
+        "total": 447
+      },
+      "supplierStatus": "review_needed",
+      "feedbackScore": 0,
+      "nextRecommendedAction": "Build and test v1 physical prototype",
+      "createdAt": "2026-04-27T00:00:00Z",
+      "updatedAt": "2026-04-28T00:00:00Z"
+    },
+    {
+      "id": "z-natural-inhaler",
+      "name": "Z-Natural Inhaler",
+      "category": "wellness_ritual_hardware",
+      "shortDescription": "Natural aroma ritual device for mindful breathing and grounding.",
+      "originStory": "Created as a calm ritual hardware concept under safety-first, non-medical wording discipline.",
+      "materials": [
+        "biodegradable_shell",
+        "replaceable_filter",
+        "safe_aroma_insert"
+      ],
+      "functions": [
+        "aroma_delivery",
+        "calm_ritual_support"
+      ],
+      "worldBenefits": [
+        "mindful breathing routine",
+        "non-invasive daily calming ritual"
+      ],
+      "ecoLifecyclePlan": "Use refill systems and recyclable cartridge pathways.",
+      "allowedClaims": [
+        "relaxation support",
+        "grounding ritual"
+      ],
+      "forbiddenClaims": [
+        "medical_treatment",
+        "nervous_system_cure"
+      ],
+      "status": "concept_review",
+      "ecoScore": 74,
+      "drpScore": 82,
+      "trustScore": 75,
+      "costEstimate": {
+        "materials": 52,
+        "labour": 26,
+        "packaging": 9,
+        "shipping": 14,
+        "qualityControl": 8,
+        "ethicalReserve": 5,
+        "total": 114
+      },
+      "supplierStatus": "unverified",
+      "feedbackScore": 0,
+      "nextRecommendedAction": "Finalize safety wording and component shortlist",
+      "createdAt": "2026-04-27T00:00:00Z",
+      "updatedAt": "2026-04-28T00:00:00Z"
+    },
+    {
+      "id": "z-saiyan-lumina-browser",
+      "name": "Z-Saiyan Lumina Browser",
+      "category": "digital_sanctuary_platform",
+      "shortDescription": "Privacy-first sanctuary browser and interface operating layer.",
+      "originStory": "Evolved from hardened browser roots into a local-first ethical digital sanctuary.",
+      "materials": [
+        "software_component"
+      ],
+      "functions": [
+        "privacy_navigation",
+        "adaptive_accessibility",
+        "dashboard_interface"
+      ],
+      "worldBenefits": [
+        "safer browsing posture",
+        "inclusive digital experience"
+      ],
+      "ecoLifecyclePlan": "Optimize compute and lifecycle support over forced hardware turnover.",
+      "allowedClaims": [
+        "privacy_first_design",
+        "accessibility_support"
+      ],
+      "forbiddenClaims": [
+        "absolute_security_guarantee"
+      ],
+      "status": "active_iteration",
+      "ecoScore": 83,
+      "drpScore": 90,
+      "trustScore": 86,
+      "costEstimate": {
+        "materials": 0,
+        "labour": 0,
+        "packaging": 0,
+        "shipping": 0,
+        "qualityControl": 0,
+        "ethicalReserve": 0,
+        "total": 0
+      },
+      "supplierStatus": "n/a",
+      "feedbackScore": 0,
+      "nextRecommendedAction": "Align communication panels and world map integration",
+      "createdAt": "2026-04-27T00:00:00Z",
+      "updatedAt": "2026-04-28T00:00:00Z"
+    }
+  ],
+  "industries": [
+    {
+      "id": "foam-manufacturing",
+      "name": "Foam Manufacturing",
+      "purpose": "Comfort and support structures for bedding and adaptive surfaces.",
+      "materialsUsed": [
+        "polyurethane",
+        "memory_foam_variants"
+      ],
+      "environmentalRisks": [
+        "petrochemical_source",
+        "end_of_life_waste"
+      ],
+      "labourRisks": [
+        "chemical_exposure_without_controls"
+      ],
+      "regulatoryNotes": [
+        "fire_safety",
+        "chemical_emissions_limits"
+      ],
+      "saferAlternatives": [
+        "bio_based_foams",
+        "repairable_modular_layers"
+      ],
+      "ecoScore": 62,
+      "drpScore": 70,
+      "status": "review"
+    },
+    {
+      "id": "logistics-delivery",
+      "name": "Logistics & Delivery",
+      "purpose": "Transport products from production to customers with proof and visibility.",
+      "materialsUsed": [
+        "packaging",
+        "fuel_energy"
+      ],
+      "environmentalRisks": [
+        "transport_emissions",
+        "packaging_waste"
+      ],
+      "labourRisks": [
+        "underpaid_handling_roles"
+      ],
+      "regulatoryNotes": [
+        "customs_rules",
+        "dangerous_goods_limits"
+      ],
+      "saferAlternatives": [
+        "optimized_routing",
+        "reduced_packaging"
+      ],
+      "ecoScore": 68,
+      "drpScore": 76,
+      "status": "review"
+    },
+    {
+      "id": "wearable-sensors",
+      "name": "Wearable Sensors",
+      "purpose": "Capture movement and physiological proxies for assistive and insight systems.",
+      "materialsUsed": [
+        "electronics",
+        "battery_components",
+        "textile_mounts"
+      ],
+      "environmentalRisks": [
+        "battery_disposal",
+        "electronics_waste"
+      ],
+      "labourRisks": [
+        "mineral_supply_chain_transparency_gaps"
+      ],
+      "regulatoryNotes": [
+        "consumer_safety",
+        "privacy_requirements"
+      ],
+      "saferAlternatives": [
+        "repairable_modules",
+        "long_life_battery_design"
+      ],
+      "ecoScore": 64,
+      "drpScore": 79,
+      "status": "review"
+    }
+  ],
+  "ledger_seed": [
+    {
+      "id": "seed-ledger-001",
+      "timestamp": "2026-04-28T16:40:00Z",
+      "type": "product_created",
+      "title": "Product Created: Z-Grid Mattress",
+      "summary": "Seed record for product schema and readiness tracking.",
+      "actor": "phase1_seed",
+      "status": "recorded",
+      "linkedProductId": "z-grid-mattress",
+      "hashPlaceholder": "pending"
+    },
+    {
+      "id": "seed-ledger-002",
+      "timestamp": "2026-04-28T16:41:00Z",
+      "type": "industry_reviewed",
+      "title": "Industry Reviewed: Foam Manufacturing",
+      "summary": "Initial eco/labour risk framing loaded.",
+      "actor": "phase1_seed",
+      "status": "recorded",
+      "linkedProductId": "z-grid-mattress",
+      "hashPlaceholder": "pending"
+    },
+    {
+      "id": "seed-ledger-003",
+      "timestamp": "2026-04-28T16:42:00Z",
+      "type": "trust_passport_drafted",
+      "title": "Trust Passport Drafted: Z-Natural Inhaler",
+      "summary": "Claims boundaries and safety wording staged.",
+      "actor": "phase1_seed",
+      "status": "recorded",
+      "linkedProductId": "z-natural-inhaler",
+      "hashPlaceholder": "pending"
+    }
+  ],
+  "communication_portals": [
+    "customer",
+    "partner_manufacturer",
+    "investor",
+    "media",
+    "government_regulator",
+    "finance_accountant",
+    "internal_amk_goku",
+    "public_transparency"
+  ]
+}

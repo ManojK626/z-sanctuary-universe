@@ -1,0 +1,79 @@
+{
+  "schema": "z.mod.dist.sample.inputs.v1",
+  "samples": [
+    {
+      "id": "idea_numen_companion",
+      "title": "Z-NUMEN pattern literacy refresh",
+      "input_type": "learning_module",
+      "summary": "Extend perception literacy docs and JSON; stays non-clinical.",
+      "tags": ["pattern literacy", "numen", "labs"]
+    },
+    {
+      "id": "idea_hub_indicator",
+      "title": "New AMK indicator row for overseer spine",
+      "input_type": "dashboard_tool",
+      "summary": "Register read-only indicator and report paths in main hub.",
+      "tags": ["hub indicator", "reporting"]
+    },
+    {
+      "id": "idea_lumina_shell",
+      "title": "Static browser shell for pathway map",
+      "input_type": "media_concept",
+      "summary": "Client-only visual shell experiment; no backend.",
+      "tags": ["browser shell", "visual"]
+    },
+    {
+      "id": "idea_franed_lesson",
+      "title": "Bilingual family culture mini-module",
+      "input_type": "learning_module",
+      "summary": "French–English kids-facing content draft with safeguarding notes.",
+      "tags": ["kids education", "family culture", "franed"]
+    },
+    {
+      "id": "idea_omnai_trailer",
+      "title": "OMNAI trailer bundle planning",
+      "input_type": "creative_pipeline",
+      "summary": "Storyboard and export checklist for media bundle only.",
+      "tags": ["movie", "trailer", "omnai"]
+    },
+    {
+      "id": "idea_susbv_pricing",
+      "title": "Commercial benchmark sheet",
+      "input_type": "commercial_service",
+      "summary": "Internal pricing comparison; no live billing.",
+      "tags": ["pricing", "benchmark", "susbv"]
+    },
+    {
+      "id": "idea_questra_inquiry",
+      "title": "Uncertainty inquiry bank",
+      "input_type": "learning_module",
+      "summary": "Question sets for epistemic humility; not prediction product.",
+      "tags": ["uncertainty", "inquiry", "epistemic"]
+    },
+    {
+      "id": "idea_xl2_reference",
+      "title": "Adult wagering UX note (reference)",
+      "input_type": "media_concept",
+      "summary": "Document boundary: gambling-adjacent; XL2 reference only.",
+      "tags": ["gambling", "reference"]
+    }
+  ],
+  "fixture_samples": [
+    {
+      "id": "fixture_red_deploy",
+      "title": "Auto-deploy module to production",
+      "input_type": "workflow_engine",
+      "summary": "Fixture: must signal RED — deploy without gate.",
+      "tags": ["test"],
+      "flags": { "request_deploy": true }
+    },
+    {
+      "id": "fixture_blue_charter",
+      "title": "Cross-repo live memory bridge",
+      "input_type": "workflow_engine",
+      "summary": "Fixture: must signal BLUE — AMK charter required.",
+      "tags": ["bridge"],
+      "flags": { "requires_amk_charter": true }
+    }
+  ]
+}

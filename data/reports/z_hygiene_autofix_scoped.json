@@ -1,0 +1,45 @@
+{
+  "generated_at": "2026-04-28T18:56:00.493Z",
+  "status": "hold",
+  "steps_total": 4,
+  "steps_passed": 1,
+  "note": "Scoped autofix must pass fully; repo-wide lint snapshot is informational and may fail due to legacy docs outside scope.",
+  "steps": [
+    {
+      "label": "markdownlint_fix_scoped",
+      "command": "npx.cmd markdownlint -c .markdownlint.json --fix \"README.md\" \"docs/chatgpt_exports/**/*.md\" \"docs/Z-LEARNING-LOG-QUICKSTART.md\" \"docs/z-vault/**/*.md\"",
+      "exit_code": 0,
+      "ok": true,
+      "stdout": "",
+      "stderr": "",
+      "error": null
+    },
+    {
+      "label": "prettier_markdown_scoped",
+      "command": "npx.cmd prettier --write \"README.md\" \"docs/chatgpt_exports/**/*.md\" \"docs/Z-LEARNING-LOG-QUICKSTART.md\" \"docs/z-vault/**/*.md\"",
+      "exit_code": 2,
+      "ok": false,
+      "stdout": "docs/chatgpt_exports/README.md 61ms (unchanged)\ndocs/Z-LEARNING-LOG-QUICKSTART.md 14ms (unchanged)\ndocs/z-vault/drp/README.md 3ms (unchanged)\ndocs/z-vault/ecosphere/README.md 6ms (unchanged)\ndocs/z-vault/formulas/README.md 1ms (unchanged)\ndocs/z-vault/guardian/README.md 1ms (unchanged)\ndocs/z-vault/INDEX.md 5ms\ndocs/z-vault/README.md 2ms (unchanged)\ndocs/z-vault/ssws/README.md 2ms (unchanged)\ndocs/z-vault/vaults/README.md 1ms (unchanged)",
+      "stderr": "[error] No files matching the pattern were found: \"README.md\".",
+      "error": null
+    },
+    {
+      "label": "markdownlint_validate_scoped",
+      "command": "npx.cmd markdownlint -c .markdownlint.json \"README.md\" \"docs/chatgpt_exports/**/*.md\" \"docs/Z-LEARNING-LOG-QUICKSTART.md\" \"docs/z-vault/**/*.md\"",
+      "exit_code": 1,
+      "ok": false,
+      "stdout": "",
+      "stderr": "docs/z-vault/INDEX.md:3:26 error MD060/table-column-style Table column style [Table pipe has extra space to the left for style \"compact\"]\ndocs/z-vault/INDEX.md:3:73 error MD060/table-column-style Table column style [Table pipe has extra space to the left for style \"compact\"]\ndocs/z-vault/INDEX.md:3:117 error MD060/table-column-style Table column style [Table pipe has extra space to the left for style \"compact\"]\ndocs/z-vault/INDEX.md:5:26 error MD060/table-column-style Table column style [Table pipe has extra space to the left for style \"compact\"]\ndocs/z-vault/INDEX.md:5:73 error MD060/table-column-style Table column style [Table pipe has extra space to the left for style \"compact\"]\ndocs/z-vault/INDEX.md:6:26 error MD060/table-column-style Table column style [Table pipe has extra space to the left for style \"compact\"]\ndocs/z-vault/INDEX.md:6:73 error MD060/table-column-style Table column style [Table pipe has extra space to the left for style \"compact\"]\ndocs/z-vault/INDEX.md:6:117 error MD060/table-column-style Table column style [Table pipe has extra space to the left for style \"compact\"]\ndocs/z-vault/INDEX.md:7:26 error MD060/table-column-style Table column style [Table pipe has extra space to the left for style \"compact\"]\ndocs/z-vault/INDEX.md:7:73 error MD060/table-column-style Table column style [Table pipe has extra space to the left for style \"compact\"]\ndocs/z-vault/INDEX.md:7:117 error MD060/table-column-style Table column style [Table pipe has extra space to the left for style \"compact\"]\ndocs/z-vault/INDEX.md:8:73 error MD060/table-column-style Table column style [Table pipe has extra space to the left for style \"compact\"]\ndocs/z-vault/INDEX.md:8:117 error MD060/table-column-style Table column style [Table pipe has extra space to the left for style \"compact\"]\ndocs/z-vault/INDEX.md:9:26 error MD060/table-column-style Table column style [Table pipe has extra space to the left for style \"compact\"]\ndocs/z-vault/INDEX.md:9:73 error MD060/table-column-style Table column style [Table pipe has extra space to the left for style \"compact\"]\ndocs/z-vault/INDEX.md:9:117 error MD060/table-column-style Table column style [Table pipe has extra space to the left for style \"compact\"]\ndocs/z-vault/INDEX.md:10:26 error MD060/table-column-style Table column style [Table pipe has extra space to the left for style \"compact\"]\ndocs/z-vault/INDEX.md:10:117 error MD060/table-column-style Table column style [Table pipe has extra space to the left for style \"compact\"]",
+      "error": null
+    },
+    {
+      "label": "lint_md_repo_snapshot",
+      "command": "npm.cmd run lint:md",
+      "exit_code": 1,
+      "ok": false,
+      "stdout": "> z-sanctuary-universe@1.0.0 lint:md\n> markdownlint -c .markdownlint.json --ignore \"safe_pack/**\" --ignore \"apps/**/node_modules/**\" --ignore \"Amk_Goku Worldwide Loterry/exports/**\" --ignore \"docs/ZALS_DELIVERABLE_*.md\" \"**/*.md\"",
+      "stderr": "docs/z-vault/INDEX.md:3:26 error MD060/table-column-style Table column style [Table pipe has extra space to the left for style \"compact\"]\ndocs/z-vault/INDEX.md:3:73 error MD060/table-column-style Table column style [Table pipe has extra space to the left for style \"compact\"]\ndocs/z-vault/INDEX.md:3:117 error MD060/table-column-style Table column style [Table pipe has extra space to the left for style \"compact\"]\ndocs/z-vault/INDEX.md:5:26 error MD060/table-column-style Table column style [Table pipe has extra space to the left for style \"compact\"]\ndocs/z-vault/INDEX.md:5:73 error MD060/table-column-style Table column style [Table pipe has extra space to the left for style \"compact\"]\ndocs/z-vault/INDEX.md:6:26 error MD060/table-column-style Table column style [Table pipe has extra space to the left for style \"compact\"]\ndocs/z-vault/INDEX.md:6:73 error MD060/table-column-style Table column style [Table pipe has extra space to the left for style \"compact\"]\ndocs/z-vault/INDEX.md:6:117 error MD060/table-column-style Table column style [Table pipe has extra space to the left for style \"compact\"]\ndocs/z-vault/INDEX.md:7:26 error MD060/table-column-style Table column style [Table pipe has extra space to the left for style \"compact\"]\ndocs/z-vault/INDEX.md:7:73 error MD060/table-column-style Table column style [Table pipe has extra space to the left for style \"compact\"]\ndocs/z-vault/INDEX.md:7:117 error MD060/table-column-style Table column style [Table pipe has extra space to the left for style \"compact\"]\ndocs/z-vault/INDEX.md:8:73 error MD060/table-column-style Table column style [Table pipe has extra space to the left for style \"compact\"]\ndocs/z-vault/INDEX.md:8:117 error MD060/table-column-style Table column style [Table pipe has extra space to the left for style \"compact\"]\ndocs/z-vault/INDEX.md:9:26 error MD060/table-column-style Table column style [Table pipe has extra space to the left for style \"compact\"]\ndocs/z-vault/INDEX.md:9:73 error MD060/table-column-style Table column style [Table pipe has extra space to the left for style \"compact\"]\ndocs/z-vault/INDEX.md:9:117 error MD060/table-column-style Table column style [Table pipe has extra space to the left for style \"compact\"]\ndocs/z-vault/INDEX.md:10:26 error MD060/table-column-style Table column style [Table pipe has extra space to the left for style \"compact\"]\ndocs/z-vault/INDEX.md:10:117 error MD060/table-column-style Table column style [Table pipe has extra space to the left for style \"compact\"]",
+      "error": null
+    }
+  ]
+}

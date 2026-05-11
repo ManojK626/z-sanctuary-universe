@@ -1,0 +1,153 @@
+{
+  "schema": "z_omnai_media_letter_gate_v1",
+  "phase": "Z-OMNAI-LETTER-GATE-1",
+  "posture": "read_only_letter_readiness_metadata_no_execution",
+  "summary": "Tracks Z-OMNAI media pipeline options A–E. Recommendations are advisory; AMK owns sacred moves.",
+  "law": [
+    "Letter recommendation ≠ execution.",
+    "Auto readiness ≠ permission.",
+    "GREEN internal ≠ public release.",
+    "BLUE requires AMK or human.",
+    "RED blocks movement."
+  ],
+  "letters": [
+    {
+      "letter": "A",
+      "lane_key": "master_media_concept_seed",
+      "title": "Fill real master media concept seed",
+      "status": "active_waiting_for_amk_input",
+      "signal": "YELLOW",
+      "current_condition": "BUILD-2A seed JSON may still contain [AMK: placeholders until filled.",
+      "auto_allowed_actions": [
+        "npm run z:omnai:media-seed",
+        "npm run z:omnai:letter-gate",
+        "Read data/reports/z_omnai_master_media_seed_report.md"
+      ],
+      "amk_required_actions": [
+        "Replace [AMK: …] placeholders in data/z_omnai_master_media_concept_seed.json",
+        "Creative sign-off on core message, tone, and audience"
+      ],
+      "blocked_until": ["amk_seed_content_present", "rights_notes_honest_for_derivatives"],
+      "required_checks": ["npm run z:omnai:media-seed", "npm run z:omnai:letter-gate"],
+      "related_docs": [
+        "docs/creative/Z_OMNAI_MASTER_MEDIA_CONCEPT_SEED.md",
+        "docs/creative/Z_OMNAI_MEDIA_LETTER_GATE.md"
+      ],
+      "related_reports": [
+        "data/reports/z_omnai_master_media_seed_report.json",
+        "data/reports/z_omnai_movie_trailer_bundle_report.json"
+      ],
+      "recommended_next_step": "Fill seed placeholders, re-run media-seed, re-run letter-gate.",
+      "autonomy_level": "L1_report",
+      "forbidden_actions": [
+        "public_release",
+        "ai_media_generation",
+        "live_provider_call",
+        "deploy",
+        "billing_change",
+        "bridge_exec"
+      ]
+    },
+    {
+      "letter": "B",
+      "lane_key": "marketing_campaign_bundle",
+      "title": "Marketing campaign bundle",
+      "status": "blue_human_lane",
+      "signal": "BLUE",
+      "current_condition": "Marketing touches public, legal, and commercial claims — AMK gate before externalisation.",
+      "auto_allowed_actions": [
+        "npm run z:omnai:build-plan -- --mode=marketing_campaign",
+        "npm run z:omnai",
+        "Read data/reports/z_omnai_build_plan_report.md"
+      ],
+      "amk_required_actions": [
+        "Open commercial lane with Z-SUSBV and entitlement review when copy includes price or tier",
+        "Legal and compliance read for public launch"
+      ],
+      "blocked_until": ["amk_marketing_lane", "claim_evidence_pack", "z_susbv_if_pricing"],
+      "required_checks": ["npm run z:susbv when commercial numbers appear", "npm run z:traffic"],
+      "related_docs": [
+        "docs/creative/Z_OMNAI_MOVIE_MARKETING_TOOL_PIPELINES.md",
+        "docs/AMK_PROJECT_INDICATORS_AND_GO_NO_GO.md"
+      ],
+      "related_reports": ["data/reports/z_omnai_build_plan_report.json"],
+      "recommended_next_step": "Do not open B until A is internally reviewed unless AMK explicitly widens scope.",
+      "autonomy_level": "L1_report",
+      "forbidden_actions": [
+        "auto_publish_ads",
+        "sku_or_checkout_change",
+        "live_provider_copy_generation",
+        "deploy"
+      ]
+    },
+    {
+      "letter": "C",
+      "lane_key": "tool_dashboard_prototype_bundle",
+      "title": "Tool or dashboard prototype bundle",
+      "status": "internal_build_plan_ready",
+      "signal": "GREEN",
+      "current_condition": "Workbench includes tool_dashboard_prototype; templates exist; internal-only posture.",
+      "auto_allowed_actions": [
+        "npm run z:omnai:build-plan -- --mode=tool_dashboard_prototype",
+        "npm run z:car2 after overlapping code edits"
+      ],
+      "amk_required_actions": [
+        "Charter review before any live API or cross-project data in prototypes"
+      ],
+      "blocked_until": ["charter_if_live_data_or_api"],
+      "required_checks": ["npm run z:omnai:build-plan"],
+      "related_docs": ["docs/creative/Z_OMNAI_BLUEPRINT_CAPABILITY_WORKBENCH.md"],
+      "related_reports": ["data/reports/z_omnai_build_plan_report.json"],
+      "recommended_next_step": "Optional after A is stable; keep prototypes internal until AMK opens build lane.",
+      "autonomy_level": "L1_report",
+      "forbidden_actions": ["production_merge_without_review", "live_provider_keys", "silent_bridge"]
+    },
+    {
+      "letter": "D",
+      "lane_key": "dashboard_deep_link_visibility",
+      "title": "Dashboard deep-link or visibility",
+      "status": "low_risk_metadata",
+      "signal": "GREEN",
+      "current_condition": "Docs and report paths exist; cockpit can link read-only JSON or MD when HTTP-served per AMK-INDICATOR-1.",
+      "auto_allowed_actions": [
+        "Wire href in dashboard registry when AMK approves a small UI slice",
+        "npm run dashboard:registry-verify after href edits"
+      ],
+      "amk_required_actions": [
+        "Approve any new dashboard tile or href that surfaces creative reports"
+      ],
+      "blocked_until": ["amk_ui_href_approval_if_changing_dashboard"],
+      "required_checks": ["dashboard:registry-verify after dashboard edits"],
+      "related_docs": ["docs/AMK_PROJECT_INDICATORS_AND_GO_NO_GO.md", "dashboard/README.md"],
+      "related_reports": [
+        "data/reports/z_omnai_media_letter_gate_report.json",
+        "data/reports/z_dashboard_registry_verify.json"
+      ],
+      "recommended_next_step": "Optional visibility slice after A content is real.",
+      "autonomy_level": "L1_report",
+      "forbidden_actions": ["task_exec_from_ui", "deploy_from_dashboard", "billing_from_ui"]
+    },
+    {
+      "letter": "E",
+      "lane_key": "hold_baseline",
+      "title": "Hold baseline",
+      "status": "sealed_rest",
+      "signal": "GOLD",
+      "current_condition": "Safe rest — no new lane until AMK chooses.",
+      "auto_allowed_actions": [
+        "npm run verify:md",
+        "npm run z:traffic",
+        "npm run z:car2",
+        "npm run z:omnai:letter-gate"
+      ],
+      "amk_required_actions": [],
+      "blocked_until": [],
+      "required_checks": [],
+      "related_docs": ["docs/Z_AUTONOMOUS_GUARDIAN_LOOP.md"],
+      "related_reports": ["data/reports/z_traffic_minibots_status.json"],
+      "recommended_next_step": "Rest, archive, or re-verify hub ritual; no mandatory creative advance.",
+      "autonomy_level": "L1_report",
+      "forbidden_actions": ["silent_autopilot_dispatch", "auto_merge"]
+    }
+  ]
+}

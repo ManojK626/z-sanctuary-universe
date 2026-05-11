@@ -1,0 +1,19 @@
+{
+  "panels": {
+    "zDashboard": { "docked": true, "column": "left", "order": 1 },
+    "zAwarenessPanel": { "docked": true, "column": "center", "order": 1 },
+    "zChroniclePanel": { "docked": true, "column": "center", "order": 2 },
+    "zGovernance": { "docked": true, "column": "right", "order": 1 },
+    "zPriorityPanel": { "docked": true, "column": "right", "order": 2 },
+    "zWisdomRingPanel": { "docked": true, "column": "right", "order": 3 },
+    "zModuleRegistryPanel": { "docked": true, "column": "right", "order": 4 },
+    "zAutopilotStatusPanel": { "docked": true, "column": "right", "order": 5 },
+    "zMasterControlPanel": { "docked": false, "column": "right", "order": 6 },
+    "zAutocompletePanel": { "docked": false, "column": "left", "order": 3 },
+    "zRecentSuggestions": { "docked": false, "column": "right", "order": 4 },
+    "zCodexPanel": { "docked": true, "column": "right", "order": 6 },
+    "zCompanion3dPanel": { "docked": true, "column": "right", "order": 7 },
+    "zGovTimelinePanel": { "docked": false, "column": "center", "order": 3 },
+    "zCodexSuggestionsPanel": { "docked": true, "column": "right", "order": 8 }
+  }
+}

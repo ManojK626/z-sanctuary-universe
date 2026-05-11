@@ -1,0 +1,718 @@
+{
+  "generated_at": "2026-05-02T18:16:33.637Z",
+  "mode": "audit",
+  "status": "hold",
+  "policy_version": "1.0.0",
+  "files_scanned": 1520,
+  "dirs_scanned": 136,
+  "checks": [
+    {
+      "id": "duplicate_file_groups_limit",
+      "pass": true,
+      "note": "actionable_groups=5, allowed_groups=9, limit=30"
+    },
+    {
+      "id": "empty_files_limit",
+      "pass": false,
+      "note": "empty_files=120, limit=20"
+    },
+    {
+      "id": "empty_dirs_limit",
+      "pass": true,
+      "note": "empty_dirs=13, limit=20"
+    },
+    {
+      "id": "unrelated_flags_limit",
+      "pass": true,
+      "note": "unrelated=1, limit=25"
+    }
+  ],
+  "metrics": {
+    "duplicate_file_groups": 14,
+    "duplicate_file_groups_actionable": 5,
+    "duplicate_file_groups_allowed": 9,
+    "duplicate_name_groups": 31,
+    "duplicate_folder_name_groups": 8,
+    "empty_files": 120,
+    "empty_dirs": 13,
+    "unrelated_flags": 1
+  },
+  "samples": {
+    "duplicate_file_groups": [
+      {
+        "hash": "21ceb2089e6dba25979d0757c1a885ddc523bf2d75c9fa0fcd6a2cd03e3a9d5a",
+        "keep": "core/.vscode/extensions.json",
+        "duplicates": [
+          "scripts/.vscode/extensions.json",
+          "docs/.vscode/extensions.json",
+          "rules/.vscode/extensions.json",
+          "schemas/.vscode/extensions.json",
+          "config/.vscode/extensions.json",
+          "data/.vscode/extensions.json",
+          "interface/.vscode/extensions.json"
+        ],
+        "count": 8
+      },
+      {
+        "hash": "dd7d72307b7fdedf64ca1eee9a0a18505d86152642ed9860447150d8ab5b0b72",
+        "keep": "core/.vscode/launch.json",
+        "duplicates": [
+          "scripts/.vscode/launch.json",
+          "docs/.vscode/launch.json",
+          "rules/.vscode/launch.json",
+          "schemas/.vscode/launch.json",
+          "config/.vscode/launch.json",
+          "data/.vscode/launch.json",
+          "interface/.vscode/launch.json"
+        ],
+        "count": 8
+      },
+      {
+        "hash": "9d2cc528a72a134fe45344c5dee5cbceebc38952d949ce850930715bcd6ad267",
+        "keep": "core/.vscode/profiles.json",
+        "duplicates": [
+          "scripts/.vscode/profiles.json",
+          "docs/.vscode/profiles.json",
+          "rules/.vscode/profiles.json",
+          "schemas/.vscode/profiles.json",
+          "config/.vscode/profiles.json",
+          "data/.vscode/profiles.json",
+          "interface/.vscode/profiles.json"
+        ],
+        "count": 8
+      },
+      {
+        "hash": "4cf906556227ad64b12ac7c155058d694bd7c5f9caf2c2fe1d12da35112c6a81",
+        "keep": "core/.vscode/settings.json",
+        "duplicates": [
+          "scripts/.vscode/settings.json",
+          "docs/.vscode/settings.json",
+          "rules/.vscode/settings.json",
+          "schemas/.vscode/settings.json",
+          "config/.vscode/settings.json",
+          "data/.vscode/settings.json",
+          "interface/.vscode/settings.json"
+        ],
+        "count": 8
+      },
+      {
+        "hash": "d494b6c5ec4d2d45a7bc65ef5ffe5cc4ab1a8303c57755d9826f0be78e33b544",
+        "keep": "core/.vscode/tasks.json",
+        "duplicates": [
+          "scripts/.vscode/tasks.json",
+          "docs/.vscode/tasks.json",
+          "rules/.vscode/tasks.json",
+          "schemas/.vscode/tasks.json",
+          "config/.vscode/tasks.json",
+          "data/.vscode/tasks.json",
+          "interface/.vscode/tasks.json"
+        ],
+        "count": 8
+      },
+      {
+        "hash": "2be9cd934613bb60c254a76a058dcfe89ce3e045783d37b6f1bb2834dbe19934",
+        "keep": "core/.vscode/ZSanctuary_Universe.code-workspace",
+        "duplicates": [
+          "scripts/.vscode/ZSanctuary_Universe.code-workspace",
+          "docs/.vscode/ZSanctuary_Universe.code-workspace",
+          "rules/.vscode/ZSanctuary_Universe.code-workspace",
+          "schemas/.vscode/ZSanctuary_Universe.code-workspace",
+          "config/.vscode/ZSanctuary_Universe.code-workspace",
+          "data/.vscode/ZSanctuary_Universe.code-workspace",
+          "interface/.vscode/ZSanctuary_Universe.code-workspace"
+        ],
+        "count": 8
+      },
+      {
+        "hash": "2c00958985069c7462a336beaea9ee88370f9b73b686a0f9eb460220a3a3bb3a",
+        "keep": "core/data/Z_module_registry.json",
+        "duplicates": [
+          "core/core/data/Z_module_registry.json"
+        ],
+        "count": 2
+      },
+      {
+        "hash": "92a458bf8d0ad8a61c9eadd4627d27f8e46e30fcf2bb382553cfe03119295ec9",
+        "keep": "core/exports/metadata_snapshot_20260223T191304Z.json",
+        "duplicates": [
+          "core/release_snapshot/metadata_snapshot_20260223T191304Z.json"
+        ],
+        "count": 2
+      },
+      {
+        "hash": "b0df250c8810322ec7f5a0cb8b056a58c3eb6552d80c0d6fa4755023ff13c2a6",
+        "keep": "core/exports/registry_snapshot_20260223T191304Z.json",
+        "duplicates": [
+          "core/release_snapshot/registry_snapshot_20260223T191304Z.json"
+        ],
+        "count": 2
+      },
+      {
+        "hash": "5ea46cc60b0735129efa158e5f29355fff201949414f7e866f281049f6dfa93f",
+        "keep": "core/z_registry_badge.js",
+        "duplicates": [
+          "core/release_snapshot/z_registry_badge.js",
+          "core/release_snapshot_ver/z_registry_badge.js"
+        ],
+        "count": 3
+      },
+      {
+        "hash": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+        "keep": "data/ai-memory.json",
+        "duplicates": [
+          "data/safe_packs.json"
+        ],
+        "count": 2
+      },
+      {
+        "hash": "9b74c0f4eac4325604904033967e5b3309950fd1ce2bf437a81fecf1ad63b5e0",
+        "keep": "data/reports/z_zuno_daily_report.json",
+        "duplicates": [
+          "data/reports/zuno_system_state_report.json"
+        ],
+        "count": 2
+      },
+      {
+        "hash": "f367298a1e8a37a7ff660d219444b69a250492b5ac633102d881e400fa5c84e5",
+        "keep": "data/reports/z_zuno_daily_report.md",
+        "duplicates": [
+          "data/reports/zuno_system_state_report.md"
+        ],
+        "count": 2
+      },
+      {
+        "hash": "71a7b80bd800fbc3c79177e4cdf7e17371463463373c50e85f9bacaa058723b7",
+        "keep": "data/z_header_non_utf8.txt",
+        "duplicates": [
+          "data/z_header_converted.txt"
+        ],
+        "count": 2
+      }
+    ],
+    "duplicate_file_groups_actionable": [
+      {
+        "hash": "2c00958985069c7462a336beaea9ee88370f9b73b686a0f9eb460220a3a3bb3a",
+        "keep": "core/data/Z_module_registry.json",
+        "duplicates": [
+          "core/core/data/Z_module_registry.json"
+        ],
+        "count": 2
+      },
+      {
+        "hash": "92a458bf8d0ad8a61c9eadd4627d27f8e46e30fcf2bb382553cfe03119295ec9",
+        "keep": "core/exports/metadata_snapshot_20260223T191304Z.json",
+        "duplicates": [
+          "core/release_snapshot/metadata_snapshot_20260223T191304Z.json"
+        ],
+        "count": 2
+      },
+      {
+        "hash": "b0df250c8810322ec7f5a0cb8b056a58c3eb6552d80c0d6fa4755023ff13c2a6",
+        "keep": "core/exports/registry_snapshot_20260223T191304Z.json",
+        "duplicates": [
+          "core/release_snapshot/registry_snapshot_20260223T191304Z.json"
+        ],
+        "count": 2
+      },
+      {
+        "hash": "5ea46cc60b0735129efa158e5f29355fff201949414f7e866f281049f6dfa93f",
+        "keep": "core/z_registry_badge.js",
+        "duplicates": [
+          "core/release_snapshot/z_registry_badge.js",
+          "core/release_snapshot_ver/z_registry_badge.js"
+        ],
+        "count": 3
+      },
+      {
+        "hash": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+        "keep": "data/ai-memory.json",
+        "duplicates": [
+          "data/safe_packs.json"
+        ],
+        "count": 2
+      }
+    ],
+    "duplicate_file_groups_allowed": [
+      {
+        "hash": "21ceb2089e6dba25979d0757c1a885ddc523bf2d75c9fa0fcd6a2cd03e3a9d5a",
+        "keep": "core/.vscode/extensions.json",
+        "duplicates": [
+          "scripts/.vscode/extensions.json",
+          "docs/.vscode/extensions.json",
+          "rules/.vscode/extensions.json",
+          "schemas/.vscode/extensions.json",
+          "config/.vscode/extensions.json",
+          "data/.vscode/extensions.json",
+          "interface/.vscode/extensions.json"
+        ],
+        "count": 8
+      },
+      {
+        "hash": "dd7d72307b7fdedf64ca1eee9a0a18505d86152642ed9860447150d8ab5b0b72",
+        "keep": "core/.vscode/launch.json",
+        "duplicates": [
+          "scripts/.vscode/launch.json",
+          "docs/.vscode/launch.json",
+          "rules/.vscode/launch.json",
+          "schemas/.vscode/launch.json",
+          "config/.vscode/launch.json",
+          "data/.vscode/launch.json",
+          "interface/.vscode/launch.json"
+        ],
+        "count": 8
+      },
+      {
+        "hash": "9d2cc528a72a134fe45344c5dee5cbceebc38952d949ce850930715bcd6ad267",
+        "keep": "core/.vscode/profiles.json",
+        "duplicates": [
+          "scripts/.vscode/profiles.json",
+          "docs/.vscode/profiles.json",
+          "rules/.vscode/profiles.json",
+          "schemas/.vscode/profiles.json",
+          "config/.vscode/profiles.json",
+          "data/.vscode/profiles.json",
+          "interface/.vscode/profiles.json"
+        ],
+        "count": 8
+      },
+      {
+        "hash": "4cf906556227ad64b12ac7c155058d694bd7c5f9caf2c2fe1d12da35112c6a81",
+        "keep": "core/.vscode/settings.json",
+        "duplicates": [
+          "scripts/.vscode/settings.json",
+          "docs/.vscode/settings.json",
+          "rules/.vscode/settings.json",
+          "schemas/.vscode/settings.json",
+          "config/.vscode/settings.json",
+          "data/.vscode/settings.json",
+          "interface/.vscode/settings.json"
+        ],
+        "count": 8
+      },
+      {
+        "hash": "d494b6c5ec4d2d45a7bc65ef5ffe5cc4ab1a8303c57755d9826f0be78e33b544",
+        "keep": "core/.vscode/tasks.json",
+        "duplicates": [
+          "scripts/.vscode/tasks.json",
+          "docs/.vscode/tasks.json",
+          "rules/.vscode/tasks.json",
+          "schemas/.vscode/tasks.json",
+          "config/.vscode/tasks.json",
+          "data/.vscode/tasks.json",
+          "interface/.vscode/tasks.json"
+        ],
+        "count": 8
+      },
+      {
+        "hash": "2be9cd934613bb60c254a76a058dcfe89ce3e045783d37b6f1bb2834dbe19934",
+        "keep": "core/.vscode/ZSanctuary_Universe.code-workspace",
+        "duplicates": [
+          "scripts/.vscode/ZSanctuary_Universe.code-workspace",
+          "docs/.vscode/ZSanctuary_Universe.code-workspace",
+          "rules/.vscode/ZSanctuary_Universe.code-workspace",
+          "schemas/.vscode/ZSanctuary_Universe.code-workspace",
+          "config/.vscode/ZSanctuary_Universe.code-workspace",
+          "data/.vscode/ZSanctuary_Universe.code-workspace",
+          "interface/.vscode/ZSanctuary_Universe.code-workspace"
+        ],
+        "count": 8
+      },
+      {
+        "hash": "9b74c0f4eac4325604904033967e5b3309950fd1ce2bf437a81fecf1ad63b5e0",
+        "keep": "data/reports/z_zuno_daily_report.json",
+        "duplicates": [
+          "data/reports/zuno_system_state_report.json"
+        ],
+        "count": 2
+      },
+      {
+        "hash": "f367298a1e8a37a7ff660d219444b69a250492b5ac633102d881e400fa5c84e5",
+        "keep": "data/reports/z_zuno_daily_report.md",
+        "duplicates": [
+          "data/reports/zuno_system_state_report.md"
+        ],
+        "count": 2
+      },
+      {
+        "hash": "71a7b80bd800fbc3c79177e4cdf7e17371463463373c50e85f9bacaa058723b7",
+        "keep": "data/z_header_non_utf8.txt",
+        "duplicates": [
+          "data/z_header_converted.txt"
+        ],
+        "count": 2
+      }
+    ],
+    "duplicate_name_groups": [
+      {
+        "name": "extensions.json",
+        "count": 8,
+        "files": [
+          "core/.vscode/extensions.json",
+          "scripts/.vscode/extensions.json",
+          "docs/.vscode/extensions.json",
+          "rules/.vscode/extensions.json",
+          "schemas/.vscode/extensions.json",
+          "config/.vscode/extensions.json",
+          "data/.vscode/extensions.json",
+          "interface/.vscode/extensions.json"
+        ]
+      },
+      {
+        "name": "launch.json",
+        "count": 8,
+        "files": [
+          "core/.vscode/launch.json",
+          "scripts/.vscode/launch.json",
+          "docs/.vscode/launch.json",
+          "rules/.vscode/launch.json",
+          "schemas/.vscode/launch.json",
+          "config/.vscode/launch.json",
+          "data/.vscode/launch.json",
+          "interface/.vscode/launch.json"
+        ]
+      },
+      {
+        "name": "profiles.json",
+        "count": 8,
+        "files": [
+          "core/.vscode/profiles.json",
+          "scripts/.vscode/profiles.json",
+          "docs/.vscode/profiles.json",
+          "rules/.vscode/profiles.json",
+          "schemas/.vscode/profiles.json",
+          "config/.vscode/profiles.json",
+          "data/.vscode/profiles.json",
+          "interface/.vscode/profiles.json"
+        ]
+      },
+      {
+        "name": "settings.json",
+        "count": 8,
+        "files": [
+          "core/.vscode/settings.json",
+          "scripts/.vscode/settings.json",
+          "docs/.vscode/settings.json",
+          "rules/.vscode/settings.json",
+          "schemas/.vscode/settings.json",
+          "config/.vscode/settings.json",
+          "data/.vscode/settings.json",
+          "interface/.vscode/settings.json"
+        ]
+      },
+      {
+        "name": "tasks.json",
+        "count": 8,
+        "files": [
+          "core/.vscode/tasks.json",
+          "scripts/.vscode/tasks.json",
+          "docs/.vscode/tasks.json",
+          "rules/.vscode/tasks.json",
+          "schemas/.vscode/tasks.json",
+          "config/.vscode/tasks.json",
+          "data/.vscode/tasks.json",
+          "interface/.vscode/tasks.json"
+        ]
+      },
+      {
+        "name": "zsanctuary_universe.code-workspace",
+        "count": 9,
+        "files": [
+          "core/.vscode/ZSanctuary_Universe.code-workspace",
+          "core/ZSanctuary_Universe.code-workspace",
+          "scripts/.vscode/ZSanctuary_Universe.code-workspace",
+          "docs/.vscode/ZSanctuary_Universe.code-workspace",
+          "rules/.vscode/ZSanctuary_Universe.code-workspace",
+          "schemas/.vscode/ZSanctuary_Universe.code-workspace",
+          "config/.vscode/ZSanctuary_Universe.code-workspace",
+          "data/.vscode/ZSanctuary_Universe.code-workspace",
+          "interface/.vscode/ZSanctuary_Universe.code-workspace"
+        ]
+      },
+      {
+        "name": "readme.md",
+        "count": 19,
+        "files": [
+          "core/assets/README.md",
+          "docs/ai-builder/README.md",
+          "docs/chatgpt_exports/README.md",
+          "docs/engines/README.md",
+          "docs/modules/README.md",
+          "docs/universal-canvas/README.md",
+          "docs/z-cursor-ops/README.md",
+          "docs/z-vault/drp/README.md",
+          "docs/z-vault/ecosphere/README.md",
+          "docs/z-vault/formulas/README.md",
+          "docs/z-vault/guardian/README.md",
+          "docs/z-vault/README.md",
+          "docs/z-vault/ssws/README.md",
+          "docs/z-vault/vaults/README.md",
+          "docs/zuno-4root/README.md",
+          "data/.pytest_cache/README.md",
+          "data/README.md",
+          "data/reports/README.md",
+          "interface/README.md"
+        ]
+      },
+      {
+        "name": "z_module_registry.json",
+        "count": 5,
+        "files": [
+          "core/core/data/Z_module_registry.json",
+          "core/data/Z_module_registry.json",
+          "core/release_snapshot_ver/Z_module_registry.json",
+          "docs/z_module_registry.json",
+          "data/Z_module_registry.json"
+        ]
+      },
+      {
+        "name": "metadata_snapshot_20260223t191304z.json",
+        "count": 2,
+        "files": [
+          "core/exports/metadata_snapshot_20260223T191304Z.json",
+          "core/release_snapshot/metadata_snapshot_20260223T191304Z.json"
+        ]
+      },
+      {
+        "name": "registry_snapshot_20260223t191304z.json",
+        "count": 2,
+        "files": [
+          "core/exports/registry_snapshot_20260223T191304Z.json",
+          "core/release_snapshot/registry_snapshot_20260223T191304Z.json"
+        ]
+      },
+      {
+        "name": "index.html",
+        "count": 7,
+        "files": [
+          "core/index.html",
+          "core/release_snapshot/index.html",
+          "core/release_snapshot_ver/index.html",
+          "docs/public/creator_manual/index.html",
+          "docs/public/snapshot/index.html",
+          "docs/public/super_chat/index.html",
+          "Amk_Goku Worldwide Loterry/ui/public_trust/index.html"
+        ]
+      },
+      {
+        "name": "launch_zsanctuary.js",
+        "count": 2,
+        "files": [
+          "core/launch_zsanctuary.js",
+          "scripts/launch_zsanctuary.js"
+        ]
+      },
+      {
+        "name": "z_registry_badge.js",
+        "count": 3,
+        "files": [
+          "core/release_snapshot/z_registry_badge.js",
+          "core/release_snapshot_ver/z_registry_badge.js",
+          "core/z_registry_badge.js"
+        ]
+      },
+      {
+        "name": "z_garage_system_map.json",
+        "count": 2,
+        "files": [
+          "scripts/data/reports/z_garage_system_map.json",
+          "data/reports/z_garage_system_map.json"
+        ]
+      },
+      {
+        "name": "z_security_alerts.json",
+        "count": 2,
+        "files": [
+          "scripts/data/reports/z_security_alerts.json",
+          "data/reports/z_security_alerts.json"
+        ]
+      },
+      {
+        "name": "z_security_alerts.jsonl",
+        "count": 2,
+        "files": [
+          "scripts/data/reports/z_security_alerts.jsonl",
+          "data/reports/z_security_alerts.jsonl"
+        ]
+      },
+      {
+        "name": "z_security_sentinel.json",
+        "count": 2,
+        "files": [
+          "scripts/data/reports/z_security_sentinel.json",
+          "data/reports/z_security_sentinel.json"
+        ]
+      },
+      {
+        "name": "z_slo_guard.json",
+        "count": 2,
+        "files": [
+          "scripts/data/reports/z_slo_guard.json",
+          "data/reports/z_slo_guard.json"
+        ]
+      },
+      {
+        "name": "z_slo_guard.md",
+        "count": 2,
+        "files": [
+          "scripts/data/reports/z_slo_guard.md",
+          "data/reports/z_slo_guard.md"
+        ]
+      },
+      {
+        "name": "z_garage_capability_registry.json",
+        "count": 2,
+        "files": [
+          "scripts/data/z_garage_capability_registry.json",
+          "data/z_garage_capability_registry.json"
+        ]
+      }
+    ],
+    "duplicate_folder_name_groups": [
+      {
+        "name": "core",
+        "count": 2,
+        "folders": [
+          "core",
+          "core/core"
+        ]
+      },
+      {
+        "name": ".vscode",
+        "count": 8,
+        "folders": [
+          "core/.vscode",
+          "scripts/.vscode",
+          "docs/.vscode",
+          "rules/.vscode",
+          "schemas/.vscode",
+          "config/.vscode",
+          "data/.vscode",
+          "interface/.vscode"
+        ]
+      },
+      {
+        "name": "data",
+        "count": 4,
+        "folders": [
+          "core/core/data",
+          "core/data",
+          "scripts/data",
+          "data"
+        ]
+      },
+      {
+        "name": "exports",
+        "count": 2,
+        "folders": [
+          "core/exports",
+          "data/reports/exports"
+        ]
+      },
+      {
+        "name": "scripts",
+        "count": 2,
+        "folders": [
+          "core/scripts",
+          "scripts"
+        ]
+      },
+      {
+        "name": "reports",
+        "count": 2,
+        "folders": [
+          "scripts/data/reports",
+          "data/reports"
+        ]
+      },
+      {
+        "name": "z_bridge",
+        "count": 3,
+        "folders": [
+          "scripts/z_bridge",
+          "config/z_bridge",
+          "data/z_bridge"
+        ]
+      },
+      {
+        "name": "vaults",
+        "count": 2,
+        "folders": [
+          "docs/z-vault/vaults",
+          "data/vaults"
+        ]
+      }
+    ],
+    "empty_files": [
+      "data/ggaesp/.gitkeep",
+      "data/quarantine/.gitkeep",
+      "data/reports/incidents/2026-02-24T19-40-44-833Z-web",
+      "data/reports/incidents/2026-02-24T19-40-44-834Z-workspace",
+      "data/reports/incidents/2026-02-24T20-34-28-614Z-web",
+      "data/reports/incidents/2026-02-24T20-34-28-615Z-workspace",
+      "data/reports/incidents/2026-02-24T20-34-54-767Z-web",
+      "data/reports/incidents/2026-02-24T20-34-54-768Z-workspace",
+      "data/reports/incidents/2026-02-24T21-03-05-458Z-web",
+      "data/reports/incidents/2026-02-24T21-03-05-459Z-workspace",
+      "data/reports/incidents/2026-02-24T21-03-26-965Z-web",
+      "data/reports/incidents/2026-02-24T21-03-26-966Z-workspace",
+      "data/reports/incidents/2026-02-27T11-26-14-867Z-web",
+      "data/reports/incidents/2026-02-27T11-26-14-868Z-workspace",
+      "data/reports/incidents/2026-02-27T18-51-24-957Z-web",
+      "data/reports/incidents/2026-02-27T18-51-24-958Z-workspace",
+      "data/reports/incidents/2026-02-27T18-54-07-781Z-web",
+      "data/reports/incidents/2026-02-27T18-54-07-782Z-workspace",
+      "data/reports/incidents/2026-02-28T03-07-07-704Z-web",
+      "data/reports/incidents/2026-02-28T03-07-07-705Z-workspace",
+      "data/reports/incidents/2026-02-28T03-07-07-981Z-web",
+      "data/reports/incidents/2026-02-28T03-07-07-982Z-workspace",
+      "data/reports/incidents/2026-02-28T11-05-13-005Z-web",
+      "data/reports/incidents/2026-02-28T11-05-13-006Z-workspace",
+      "data/reports/incidents/2026-02-28T11-05-13-279Z-web",
+      "data/reports/incidents/2026-02-28T11-05-13-279Z-workspace",
+      "data/reports/incidents/2026-03-03T13-13-58-539Z-web",
+      "data/reports/incidents/2026-03-03T13-13-58-540Z-workspace",
+      "data/reports/incidents/2026-03-05T00-45-27-959Z-web",
+      "data/reports/incidents/2026-03-05T00-45-27-960Z-workspace",
+      "data/reports/incidents/2026-03-05T15-44-40-814Z-web",
+      "data/reports/incidents/2026-03-05T15-44-40-814Z-workspace",
+      "data/reports/incidents/2026-03-05T15-56-13-152Z-web",
+      "data/reports/incidents/2026-03-05T15-56-13-155Z-workspace",
+      "data/reports/incidents/2026-03-08T13-27-57-390Z-web",
+      "data/reports/incidents/2026-03-08T13-27-57-390Z-workspace",
+      "data/reports/incidents/2026-03-08T17-05-11-611Z-web",
+      "data/reports/incidents/2026-03-08T17-05-11-612Z-workspace",
+      "data/reports/incidents/2026-03-09T17-05-24-181Z-web",
+      "data/reports/incidents/2026-03-09T17-05-24-183Z-workspace",
+      "data/reports/incidents/2026-03-09T17-11-43-315Z-web",
+      "data/reports/incidents/2026-03-09T17-11-43-316Z-workspace",
+      "data/reports/incidents/2026-03-09T22-02-52-783Z-web",
+      "data/reports/incidents/2026-03-09T22-02-52-784Z-workspace",
+      "data/reports/incidents/2026-03-09T22-07-27-964Z-web",
+      "data/reports/incidents/2026-03-09T22-07-27-965Z-workspace",
+      "data/reports/incidents/2026-03-09T22-20-28-013Z-web",
+      "data/reports/incidents/2026-03-09T22-20-28-014Z-workspace",
+      "data/reports/incidents/2026-03-09T22-41-23-158Z-web",
+      "data/reports/incidents/2026-03-09T22-41-23-159Z-workspace"
+    ],
+    "empty_dirs": [
+      "core/radio",
+      "core/zals/__pycache__",
+      "docs/public/z_cloudflare_deployment_master_guide",
+      "docs/public/z_ecosphere_transparency_report",
+      "docs/z-krtaa-prompt-packs",
+      "data/backups",
+      "data/logs",
+      "data/reports/commflow",
+      "data/reports/history",
+      "data/z_project_passports",
+      "products/Z-OCTAVE/hardware/shell-geometry",
+      "products/Z-OCTAVE/hardware/textile-layers",
+      "products/Z-OCTAVE/hardware/variants"
+    ],
+    "unrelated_flags": [
+      "core/scripts/backup_hook.py"
+    ]
+  },
+  "apply_actions": [],
+  "note": "Audit only. No filesystem changes."
+}

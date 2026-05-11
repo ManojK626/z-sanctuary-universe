@@ -1,0 +1,55 @@
+{
+  "schema_version": 1,
+  "generated_at": "2026-05-03T14:39:05.288Z",
+  "advisory_only": true,
+  "drp_note": "Phase 5.5: heuristic comparison of last predictive run vs current logs. Openly logs misses; no deletion from history. Used for QOSMEI and next predictive confidence nudge.",
+  "source_predictive": "data/reports/z_predictive_intelligence.json",
+  "this_run": [
+    {
+      "ts": "2026-05-03T14:39:05.286Z",
+      "predictive_run_at": "2026-05-03T14:39:04.776Z",
+      "prediction_id": "stability",
+      "prediction": "stability_hold",
+      "confidence": 0.50508,
+      "actual_outcome": "held",
+      "was_correct": true,
+      "inconclusive": false
+    },
+    {
+      "ts": "2026-05-03T14:39:05.287Z",
+      "predictive_run_at": "2026-05-03T14:39:04.776Z",
+      "prediction_id": "convergence",
+      "prediction": "convergence",
+      "confidence": 0.534064,
+      "actual_outcome": "converging",
+      "was_correct": true,
+      "inconclusive": false
+    }
+  ],
+  "validation_summary": {
+    "total_predictions": 2,
+    "validated": 4,
+    "correct": 4,
+    "incorrect": 0,
+    "accuracy": 1
+  },
+  "by_type": {
+    "stability_hold": {
+      "accuracy": 1,
+      "samples": 2
+    },
+    "convergence": {
+      "accuracy": 1,
+      "samples": 2
+    }
+  },
+  "confidence_calibration": {
+    "high_confidence_accuracy": 0,
+    "low_confidence_accuracy": 1,
+    "samples_high": 0,
+    "samples_low": 4
+  },
+  "trend": "insufficient",
+  "confidence_alignment": "insufficient",
+  "history_file": "data/logs/z_prediction_validation_history.jsonl"
+}

@@ -1,0 +1,171 @@
+{
+  "schema": "z_xbus_connector_registry_v1",
+  "registry_name": "Z-XBUS External Connector Gate",
+  "mode": "read_only_connector_governance",
+  "updated_at": "2026-05-05T21:05:00Z",
+  "connector_types": [
+    "api",
+    "webhook",
+    "ide_extension",
+    "mvp_service",
+    "payment",
+    "provider_ai",
+    "customer_portal",
+    "database",
+    "event_bus",
+    "file_transfer",
+    "analytics",
+    "enterprise_integration"
+  ],
+  "known_project_domains": [
+    "main_hub",
+    "ZSanctuary_Labs",
+    "Z-NUMEN",
+    "Z-Logical Brains",
+    "Z-MOD-DIST",
+    "Z-OMNAI",
+    "Z-SUSBV",
+    "Z-Saiyan Lumina",
+    "AT Princess & Blackie / Franed",
+    "z-questra",
+    "XL2 reference-only unless chartered"
+  ],
+  "forbidden_live_lanes": [
+    "silent_live_api_without_registry_row",
+    "provider_call_without_amk_gate",
+    "payment_capture_without_entitlement_review",
+    "customer_pii_without_charter_and_privacy_review",
+    "webhook_invoke_from_hub_scripts_phase_1",
+    "secrets_committed_as_connector_config",
+    "treat_mvp_demo_as_production_contract"
+  ],
+  "required_human_gates": [
+    "AMK-Goku sacred-move approval before any live connector",
+    "Charter review before cross-hub runtime bridge",
+    "Entitlement/legal review before payment or enterprise integration",
+    "Child-data safeguarding before classroom or minor-facing connectors"
+  ],
+  "entitlement_boundary_rules": [
+    "Paid or licensed capability (OMNAI, SUSBV, Franed tiers) stays separate registry rows with explicit SKU/entitlement notes — no silent sharing.",
+    "Cross-project capability claims require MOD-DIST route + XBUS classification before pilot."
+  ],
+  "privacy_boundary_rules": [
+    "Connectors declare minimum necessary data scopes; broaden only via BLUE/charter.",
+    "No customer payloads in Phase 1 registry JSON (metadata only)."
+  ],
+  "secret_boundary_rules": [
+    "Never store credentials, tokens, or raw keys in connector registry artifacts.",
+    "Secret policy references vault policy docs only — keys live outside repo."
+  ],
+  "rollback_rules": [
+    "Each future live connector charter must name disable path, config revert, and comms fallback.",
+    "Pilot connectors require time-box and kill-switch documentation before enable."
+  ],
+  "related_docs": [
+    "docs/Z_XBUS_EXTERNAL_CONNECTOR_GATE.md",
+    "docs/Z_XBUS_CONNECTOR_SECURITY_POLICY.md",
+    "docs/Z_MOD_DIST_MODULE_DISTRIBUTOR.md",
+    "docs/Z_SEC_TRIPLECHECK_COMMUNICATION_FLOW_AUDIT.md",
+    "docs/PHASE_Z_XBUS_GATE_1_GREEN_RECEIPT.md"
+  ],
+  "related_reports": [
+    "data/reports/z_xbus_connector_gate_report.json",
+    "data/reports/z_xbus_connector_gate_report.md"
+  ],
+  "connector_entries": [
+    {
+      "id": "z_pc_ide_path_internal",
+      "display_name": "Z-PC-IDE-PATH local PATH/install probe",
+      "connector_type": "ide_extension",
+      "project_domain": "main_hub",
+      "xbus_classification": "INTERNAL_REFERENCE_ONLY",
+      "lifecycle": "active_meta_only",
+      "description": "Read-only NODE script emitting reports; no remote IDE API.",
+      "flags": {
+        "live_external_connection": false,
+        "mock_allowed": true,
+        "customer_data_flow": false,
+        "payment_activation": false,
+        "provider_calls_live": false,
+        "webhook_execution_enabled": false,
+        "production_deploy_connector": false,
+        "stores_secrets_in_registry": false,
+        "external_write_actions_enabled": false
+      },
+      "required_next_gate_before_live": [],
+      "metadata_complete": true
+    },
+    {
+      "id": "z_mod_dist_advisory",
+      "display_name": "Z-MOD-DIST routing advisor",
+      "connector_type": "mvp_service",
+      "project_domain": "Z-MOD-DIST",
+      "xbus_classification": "INTERNAL_REFERENCE_ONLY",
+      "lifecycle": "active_meta_only",
+      "description": "Read-only classifier; suggests workspace placement — not execution.",
+      "flags": {
+        "live_external_connection": false,
+        "mock_allowed": true,
+        "customer_data_flow": false,
+        "payment_activation": false,
+        "provider_calls_live": false,
+        "webhook_execution_enabled": false,
+        "production_deploy_connector": false,
+        "stores_secrets_in_registry": false,
+        "external_write_actions_enabled": false
+      },
+      "required_next_gate_before_live": [],
+      "metadata_complete": true
+    },
+    {
+      "id": "z_omnai_provider_future",
+      "display_name": "OMNAI media provider connector (future)",
+      "connector_type": "provider_ai",
+      "project_domain": "Z-OMNAI",
+      "xbus_classification": "BLUE_AMK_DECISION_REQUIRED",
+      "lifecycle": "charter_pending",
+      "description": "Future provider integration — registry slot only; no outbound calls from gate scripts.",
+      "flags": {
+        "live_external_connection": false,
+        "mock_allowed": true,
+        "customer_data_flow": false,
+        "payment_activation": false,
+        "provider_calls_live": false,
+        "webhook_execution_enabled": false,
+        "production_deploy_connector": false,
+        "stores_secrets_in_registry": false,
+        "external_write_actions_enabled": false
+      },
+      "required_next_gate_before_live": [
+        "AMK charter",
+        "provider_compliance_review",
+        "mock_simulation_phase"
+      ],
+      "metadata_complete": true
+    },
+    {
+      "id": "xl2_cross_repo_placeholder",
+      "display_name": "XL2 cross-repo connector (reference-only)",
+      "connector_type": "enterprise_integration",
+      "project_domain": "XL2 reference-only unless chartered",
+      "xbus_classification": "FUTURE_CHARTER_REQUIRED",
+      "lifecycle": "blocked_until_charter",
+      "description": "No coupling without approved charter per hub law.",
+      "flags": {
+        "live_external_connection": false,
+        "mock_allowed": false,
+        "customer_data_flow": false,
+        "payment_activation": false,
+        "provider_calls_live": false,
+        "webhook_execution_enabled": false,
+        "production_deploy_connector": false,
+        "stores_secrets_in_registry": false,
+        "external_write_actions_enabled": false
+      },
+      "required_next_gate_before_live": [
+        "hub_charter_explicit"
+      ],
+      "metadata_complete": true
+    }
+  ]
+}

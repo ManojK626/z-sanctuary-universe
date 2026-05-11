@@ -1,0 +1,18 @@
+{
+  "schema": "z_omnai_core_engine_indicator_overlay_v1",
+  "advisory_only": true,
+  "signal": "RED",
+  "basis": {
+    "tick_posture": "YELLOW",
+    "chain_final_posture": "YELLOW",
+    "manifest_worst_posture": "RED",
+    "matrix_executions": 4800,
+    "matrix_red_fraction": 0.75
+  },
+  "posture_law_lines": [
+    "Simulation receipts only — GREEN ≠ execution",
+    "Veto advisory or ANT-RED review aligns kernel rollup to RED in strict mode",
+    "High RED share across matrix harness is exploratory — indicator can lift to YELLOW for visibility"
+  ],
+  "generated_unix_ms": 1778465060976
+}

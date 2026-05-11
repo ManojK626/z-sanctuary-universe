@@ -1,0 +1,108 @@
+{
+  "generated_at": "2026-04-17T13:10:48.067Z",
+  "mode": "dry-run",
+  "initial": {
+    "action": "BLOCK",
+    "reason": "P1 tasks open: 7 | Release gate: hold | Readiness gates: 0/4",
+    "blockers": [
+      "P1 tasks open: 7",
+      "Release gate: hold",
+      "Readiness gates: 0/4"
+    ],
+    "p1_open": 7,
+    "readiness_pass": 0,
+    "readiness_total": 4,
+    "release_gate": "hold"
+  },
+  "final": {
+    "action": "BLOCK",
+    "reason": "P1 tasks open: 7 | Release gate: hold | Readiness gates: 0/4",
+    "blockers": [
+      "P1 tasks open: 7",
+      "Release gate: hold",
+      "Readiness gates: 0/4"
+    ],
+    "p1_open": 7,
+    "readiness_pass": 0,
+    "readiness_total": 4,
+    "release_gate": "hold"
+  },
+  "steps": [
+    {
+      "id": "report_freshness",
+      "label": "Refresh report freshness artifact",
+      "command": "c:\\Users\\manoj\\AppData\\Local\\Programs\\cursor\\resources\\app\\resources\\helpers\\node.exe scripts/z_report_freshness_check.mjs",
+      "status": "dry-run",
+      "enforcer_after": {
+        "action": "BLOCK",
+        "reason": "P1 tasks open: 7 | Release gate: hold | Readiness gates: 0/4",
+        "blockers": [
+          "P1 tasks open: 7",
+          "Release gate: hold",
+          "Readiness gates: 0/4"
+        ],
+        "p1_open": 7,
+        "readiness_pass": 0,
+        "readiness_total": 4,
+        "release_gate": "hold"
+      }
+    },
+    {
+      "id": "cross_project_observer",
+      "label": "Refresh cross-project observer status",
+      "command": "npm.cmd run monitor:cross-project",
+      "status": "dry-run",
+      "enforcer_after": {
+        "action": "BLOCK",
+        "reason": "P1 tasks open: 7 | Release gate: hold | Readiness gates: 0/4",
+        "blockers": [
+          "P1 tasks open: 7",
+          "Release gate: hold",
+          "Readiness gates: 0/4"
+        ],
+        "p1_open": 7,
+        "readiness_pass": 0,
+        "readiness_total": 4,
+        "release_gate": "hold"
+      }
+    },
+    {
+      "id": "trust_scorecard",
+      "label": "Recompute trust scorecard",
+      "command": "npm.cmd run trust:scorecard",
+      "status": "dry-run",
+      "enforcer_after": {
+        "action": "BLOCK",
+        "reason": "P1 tasks open: 7 | Release gate: hold | Readiness gates: 0/4",
+        "blockers": [
+          "P1 tasks open: 7",
+          "Release gate: hold",
+          "Readiness gates: 0/4"
+        ],
+        "p1_open": 7,
+        "readiness_pass": 0,
+        "readiness_total": 4,
+        "release_gate": "hold"
+      }
+    },
+    {
+      "id": "release_gate",
+      "label": "Re-evaluate release gate verdict",
+      "command": "npm.cmd run release:gate",
+      "status": "dry-run",
+      "enforcer_after": {
+        "action": "BLOCK",
+        "reason": "P1 tasks open: 7 | Release gate: hold | Readiness gates: 0/4",
+        "blockers": [
+          "P1 tasks open: 7",
+          "Release gate: hold",
+          "Readiness gates: 0/4"
+        ],
+        "p1_open": 7,
+        "readiness_pass": 0,
+        "readiness_total": 4,
+        "release_gate": "hold"
+      }
+    }
+  ]
+}

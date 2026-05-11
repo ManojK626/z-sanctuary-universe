@@ -1,0 +1,83 @@
+{
+  "schema": "z_api_spine_report_v1",
+  "generated_at": "2026-05-11T13:38:41.805Z",
+  "overall_signal": "GREEN",
+  "registry_path": "data/z_api_spine_registry.json",
+  "policy_path": "data/z_api_communication_flow_policy.json",
+  "cli": {
+    "with_health_probe": false
+  },
+  "services": [
+    {
+      "service_id": "at_princess_blackie_api",
+      "display_name": "AT Princess & Blackie API core",
+      "environment": "reference_only",
+      "deployment_status": "HOLD",
+      "cloudflare_status": "HOLD",
+      "risk_class": "medium"
+    },
+    {
+      "service_id": "zs_hub_dashboard",
+      "display_name": "Z-Sanctuary HODP unified dashboard",
+      "environment": "local",
+      "deployment_status": "HOLD",
+      "cloudflare_status": "HOLD",
+      "risk_class": "low"
+    },
+    {
+      "service_id": "z_questra_app",
+      "display_name": "Z-QUESTRA Vite app",
+      "environment": "local",
+      "deployment_status": "HOLD",
+      "cloudflare_status": "HOLD",
+      "risk_class": "low"
+    },
+    {
+      "service_id": "z_saiyan_lumina_shell",
+      "display_name": "Z-Saiyan Lumina Browser (Electron shell)",
+      "environment": "reference_only",
+      "deployment_status": "UNKNOWN",
+      "cloudflare_status": "UNKNOWN",
+      "risk_class": "low"
+    },
+    {
+      "service_id": "z_omnai_creative_validator",
+      "display_name": "Z-OMNAI creative production validators",
+      "environment": "local",
+      "deployment_status": "HOLD",
+      "cloudflare_status": "HOLD",
+      "risk_class": "medium"
+    },
+    {
+      "service_id": "zsusbv_overseer_scripts",
+      "display_name": "Z-SUSBV overseer and validation scripts",
+      "environment": "local",
+      "deployment_status": "HOLD",
+      "cloudflare_status": "HOLD",
+      "risk_class": "high"
+    },
+    {
+      "service_id": "zquestcraft_placeholder",
+      "display_name": "ZQuestCraft placeholder",
+      "environment": "reference_only",
+      "deployment_status": "NO_GO",
+      "cloudflare_status": "HOLD",
+      "risk_class": "low"
+    },
+    {
+      "service_id": "xl2_reference_lane",
+      "display_name": "XL2 reference-only lane",
+      "environment": "reference_only",
+      "deployment_status": "UNKNOWN",
+      "cloudflare_status": "UNKNOWN",
+      "risk_class": "low"
+    }
+  ],
+  "route_collision_notes": [],
+  "wording_collision_notes": [],
+  "issues": [],
+  "notification_candidates_red_blue_only": [],
+  "health_probe_results": [],
+  "law_note": "API spine ≠ API gateway. Registry ≠ live service mesh. Health check ≠ deploy readiness. Similar name ≠ shared entitlement. GREEN ≠ deploy. BLUE requires AMK. RED blocks movement. AMK-Goku owns sacred moves.",
+  "note": "YELLOW stays quiet for AMK notifications by default. API spine is not a gateway and not a service mesh."
+}

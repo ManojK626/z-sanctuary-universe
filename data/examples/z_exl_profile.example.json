@@ -1,0 +1,23 @@
+{
+  "schema": "z_experiential_language_schema_v1",
+  "project_id": "lumina",
+  "experience_profile_id": "example_sanctuary_v0",
+  "sensory_mode": "soft",
+  "rhythm_language": "reflective",
+  "motion_intensity": "low",
+  "color_realm": "sanctuary",
+  "glow_level": "soft",
+  "adaptation_authority": "user_confirmed",
+  "memory_posture": "local_only",
+  "accessibility_invariants": [
+    "respect_reduced_motion",
+    "respect_reduced_transparency",
+    "no_full_field_flashing",
+    "no_medical_claims",
+    "keyboard_navigable",
+    "focus_visible"
+  ],
+  "project_identity": "z_saiyan_lumina_browser_example",
+  "entitlement_boundary": "shared_language_not_shared_authority",
+  "bridge_status": "metadata_only"
+}

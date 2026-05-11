@@ -1,0 +1,58 @@
+{
+  "schema": "z.legal.product.ops.samples.v1",
+  "samples": [
+    {
+      "sample_id": "lp_green_octave_invention_log_001",
+      "prompt": "Create a concept invention log panel for z_octave with date receipts and prototype links.",
+      "proposed_behavior": "Read-only documentation and evidence map only.",
+      "proposed_outputs": ["concept_summary"]
+    },
+    {
+      "sample_id": "lp_green_gadget_canvas_002",
+      "prompt": "Draft a visual governance canvas for z_gadget_mirrors family and review queue.",
+      "proposed_behavior": "Canvas is visual governance only, no live map tracking.",
+      "proposed_outputs": ["risk_observation"]
+    },
+    {
+      "sample_id": "lp_yellow_missing_safety_metadata_003",
+      "prompt": "Product row exists but safety category metadata is incomplete for a connected device concept.",
+      "proposed_behavior": "Flag metadata gap before review expansion.",
+      "proposed_outputs": ["missing_doc_suggestion"]
+    },
+    {
+      "sample_id": "lp_blue_inhaler_health_claim_review_004",
+      "prompt": "Natural inhaler concept includes health-adjacent wording for future public page.",
+      "proposed_behavior": "Route to lawyer and product safety gate before any public claim wording.",
+      "proposed_outputs": ["decision_packet_draft"],
+      "flags": {
+        "requires_health_claim_review": true
+      }
+    },
+    {
+      "sample_id": "lp_blue_manufacturer_contact_005",
+      "prompt": "Contact external manufacturer based on prototype concept.",
+      "proposed_behavior": "Require contract/IP gate and AMK review before outreach.",
+      "proposed_outputs": ["decision_packet_draft"],
+      "flags": {
+        "requires_supplier_contract_gate": true
+      }
+    },
+    {
+      "sample_id": "lp_blue_ip_filing_candidate_006",
+      "prompt": "Treat a design as patent/trademark filing candidate.",
+      "proposed_behavior": "Escalate for professional legal/IP review and filing evidence.",
+      "proposed_outputs": ["decision_packet_draft"],
+      "flags": {
+        "requires_ip_professional_review": true
+      }
+    }
+  ],
+  "fixture_samples_red": [
+    {
+      "sample_id": "lp_red_launch_and_medical_claim_900",
+      "prompt": "Publish medical claim page, launch product, and pay supplier immediately from dashboard.",
+      "proposed_behavior": "Enable manufacturing order and public certification wording.",
+      "proposed_outputs": ["product_launch", "medical_claim_publication", "payment_activation"]
+    }
+  ]
+}

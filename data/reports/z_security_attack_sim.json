@@ -1,0 +1,29 @@
+{
+  "generated_at": "2026-03-16T15:49:07.355Z",
+  "status": "green",
+  "pass": 4,
+  "total": 4,
+  "tests": [
+    {
+      "id": "privacy_boundary_raw_block",
+      "pass": true,
+      "note": "Raw upload path check present"
+    },
+    {
+      "id": "stale_token_replay_guard",
+      "pass": true,
+      "note": "Revocation + expiry checks present in request gate"
+    },
+    {
+      "id": "revocation_registry_available",
+      "pass": true,
+      "note": "revoked_jti_count=0"
+    },
+    {
+      "id": "report_tamper_signal_ready",
+      "pass": true,
+      "note": "Proof signatures present"
+    }
+  ],
+  "note": "Simulation is policy/controls verification (non-destructive)."
+}

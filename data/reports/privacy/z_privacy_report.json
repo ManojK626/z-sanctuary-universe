@@ -1,0 +1,13 @@
+{
+  "generated_at": "2026-05-02T18:16:32.793Z",
+  "root": "uploads/raw",
+  "apply_actions": false,
+  "summary": {
+    "scanned": 0,
+    "safe": 0,
+    "possible_personal": 0,
+    "high_risk": 0
+  },
+  "moved": [],
+  "results": []
+}

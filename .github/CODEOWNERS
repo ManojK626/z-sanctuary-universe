@@ -1,0 +1,13 @@
+# Z-Sanctuary — default and sensitive-path reviewers
+# Requires branch protection → "Require review from CODEOWNERS" when you want enforcement.
+# Update @handles when you add collaborators or org teams.
+
+* @ManojK626
+
+# Governance and registry truth
+/package.json @ManojK626
+/data/z_release_control.json @ManojK626
+/data/z_module_manifest.json @ManojK626
+/data/z_pc_root_projects.json @ManojK626
+/data/z_ecosystem_github_identity.json @ManojK626
+/.cursor/rules/ @ManojK626

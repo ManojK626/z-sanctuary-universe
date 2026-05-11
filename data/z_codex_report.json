@@ -1,0 +1,33 @@
+{
+  "ZFormat": "v1",
+  "ZGeneratedAt": "2026-01-26T14:22:54.303Z",
+  "ZIssues": [
+    {
+      "ZRule": "MD040",
+      "ZCount": 7,
+      "ZSample": "Amk_Goku Worldwide Loterry/roadmap/README.md:37"
+    },
+    {
+      "ZRule": "MD033",
+      "ZCount": 2,
+      "ZSample": "Amk_Goku Worldwide Loterry/roadmap/README.md:194"
+    },
+    {
+      "ZRule": "MD025",
+      "ZCount": 1,
+      "ZSample": "Amk_Goku Worldwide Loterry/roadmap/README.md:3"
+    }
+  ],
+  "ZRepeatIssues": [
+    {
+      "ZRule": "MD040",
+      "ZCount": 7,
+      "ZSample": "Amk_Goku Worldwide Loterry/roadmap/README.md:37"
+    },
+    {
+      "ZRule": "MD033",
+      "ZCount": 2,
+      "ZSample": "Amk_Goku Worldwide Loterry/roadmap/README.md:194"
+    }
+  ]
+}

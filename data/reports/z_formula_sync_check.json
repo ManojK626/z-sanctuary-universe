@@ -1,0 +1,55 @@
+{
+  "generated_at": "2026-05-03T14:38:59.836Z",
+  "summary": {
+    "checks_total": 7,
+    "checks_pass": 6,
+    "status": "ok",
+    "confidence": "high"
+  },
+  "top_guidance": "Formula posture, spine integrity, and base architecture are aligned.",
+  "checks": [
+    {
+      "ok": true,
+      "label": "formula_posture_present",
+      "detail": "posture=watch",
+      "source": "data/reports/z_guardian_report.json"
+    },
+    {
+      "ok": true,
+      "label": "drp_filter_strength",
+      "detail": "drp_filter=80",
+      "source": "data/reports/z_guardian_report.json"
+    },
+    {
+      "ok": false,
+      "label": "z_ui_readiness_strength",
+      "detail": "z_ui_readiness=76",
+      "source": "data/reports/z_guardian_report.json"
+    },
+    {
+      "ok": true,
+      "label": "vault_spine_integrity",
+      "detail": "status=green, broken=0",
+      "source": "data/reports/z_vault_spine_manifest.json"
+    },
+    {
+      "ok": true,
+      "label": "base_architecture_verify",
+      "detail": "verify=PASS, status=healthy",
+      "source": "data/system-status.json"
+    },
+    {
+      "ok": true,
+      "label": "communication_signal_present",
+      "detail": "flow_status=degraded",
+      "source": "data/reports/z_communication_health.json"
+    },
+    {
+      "ok": true,
+      "label": "ssws_ecosphere_sync_present",
+      "detail": "overall.sync_score=67, z_ssws.sync_score=92",
+      "source": "data/reports/z_ai_ecosphere_ledger.json"
+    }
+  ],
+  "governance_note": "Advisory only — formula sync check does not change authority or execute fixes."
+}

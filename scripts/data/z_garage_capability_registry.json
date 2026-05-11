@@ -1,0 +1,30 @@
+{
+  "generated_at": "2026-04-21T12:10:52.477Z",
+  "total_entries": 1,
+  "registry": [
+    {
+      "name": "z_bridge",
+      "path": "./z_bridge",
+      "type": "bridge",
+      "capabilities": [
+        "node_project",
+        "z_bridge_module",
+        "scriptable",
+        "runnable_app",
+        "build_system",
+        "test_system",
+        "lint_system"
+      ],
+      "scripts": [
+        "start",
+        "build",
+        "test",
+        "lint"
+      ],
+      "weaknesses": [],
+      "relationships": [
+        "connected_to_z_bridge"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,95 @@
+{
+  "generated_at": "2026-04-26T01:56:10.035Z",
+  "status": "hold",
+  "checks": [
+    {
+      "id": "privacy_raw_empty",
+      "pass": true,
+      "note": "uploads/raw files=0"
+    },
+    {
+      "id": "privacy_report_recent",
+      "pass": true,
+      "note": "privacy report age=0m"
+    },
+    {
+      "id": "pending_audit_clear",
+      "pass": true,
+      "note": "pending total=0"
+    },
+    {
+      "id": "autorun_enabled",
+      "pass": true,
+      "note": "task.allowAutomaticTasks=on"
+    },
+    {
+      "id": "autorun_tasks_present",
+      "pass": true,
+      "note": "auto tasks=1"
+    },
+    {
+      "id": "procurement_daily_present",
+      "pass": true,
+      "note": "procurement report=present"
+    },
+    {
+      "id": "data_layout_green",
+      "pass": false,
+      "note": "layout status=hold"
+    },
+    {
+      "id": "storage_hygiene_green",
+      "pass": false,
+      "note": "storage status=hold"
+    },
+    {
+      "id": "canonical_alias_green",
+      "pass": true,
+      "note": "alias status=green"
+    },
+    {
+      "id": "placeholder_dirs_green",
+      "pass": true,
+      "note": "placeholder status=green"
+    },
+    {
+      "id": "extension_guard_green",
+      "pass": false,
+      "note": "extension guard status=hold"
+    },
+    {
+      "id": "data_leak_audit_green",
+      "pass": true,
+      "note": "data leak status=green"
+    },
+    {
+      "id": "security_sentinel_not_critical",
+      "pass": true,
+      "note": "sentinel status=warn"
+    },
+    {
+      "id": "anydevices_analyzer_recent",
+      "pass": true,
+      "note": "anydevices analyzer age=7m"
+    },
+    {
+      "id": "anydevices_security_not_blocked",
+      "pass": true,
+      "note": "anydevices security status=green"
+    },
+    {
+      "id": "anydevices_security_recent",
+      "pass": true,
+      "note": "anydevices security age=7m"
+    }
+  ],
+  "metrics": {
+    "raw_files": 0,
+    "privacy_report_age_min": 0,
+    "pending_total": 0,
+    "auto_tasks": 1,
+    "anydevices_analyzer_age_min": 7,
+    "anydevices_security_age_min": 7
+  },
+  "notes": "Hygiene drift detected. Resolve failed checks before running heavy processing."
+}

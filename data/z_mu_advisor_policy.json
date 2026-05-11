@@ -1,0 +1,60 @@
+{
+  "schema": "z_mu_advisor_policy_v1",
+  "phase": "Z-MU-ADVISOR-1",
+  "project_name": "Mauritius Civic Knowledge Advisor (framework only)",
+  "mode": "advisor_framework_only",
+  "no_live_ai_provider": true,
+  "no_public_launch": true,
+  "no_user_memory": true,
+  "no_personal_data_collection": true,
+  "no_legal_advice_claim": true,
+  "no_government_impersonation": true,
+  "no_protest_coordination": true,
+  "no_harassment_or_doxxing": true,
+  "no_illegal_leak_guidance": true,
+  "no_ethnic_or_religious_blame": true,
+  "required_answer_labels": [
+    "verified",
+    "needs_citation",
+    "procedural",
+    "policy_proposal",
+    "blocked",
+    "human_review"
+  ],
+  "allowed_modes": [
+    "learn_governance",
+    "understand_my_situation",
+    "claim_checker",
+    "citation_helper",
+    "safe_wording_rewrite",
+    "evidence_checklist",
+    "policy_explainer",
+    "escalation_filter"
+  ],
+  "forbidden_user_message_substrings": [
+    "dox",
+    "doxx",
+    "stalk them",
+    "illegal leak",
+    "steal their",
+    "hack the",
+    "crash the economy",
+    "final showdown",
+    "victory or death",
+    "kill ",
+    "bomb ",
+    "lynch"
+  ],
+  "disclosure_banner": "This hub stores templates and policy only. It is not a live chatbot, not government, and not a lawyer. Any future assistant must keep logs privacy-safe: decisions and sources, not private lives.",
+  "related_docs": [
+    "docs/Z_MU_CIVIC_KNOWLEDGE_ADVISOR.md",
+    "docs/Z_MU_ADVISOR_SAFETY_AND_AUDIT_POLICY.md",
+    "docs/PHASE_Z_MU_ADVISOR_1_GREEN_RECEIPT.md",
+    "docs/Z_MAURITIANS_UNITE_CIVIC_TRUTH_ENGINE.md",
+    "docs/Z_MAURITIANS_UNITE_SAFETY_AND_PEACE_POLICY.md"
+  ],
+  "related_reports": [
+    "data/reports/z_mu_advisor_report.json",
+    "data/reports/z_mu_advisor_report.md"
+  ]
+}

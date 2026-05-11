@@ -1,0 +1,159 @@
+{
+  "generated_at": "",
+  "owner": "Z-Sanctuary",
+  "phase": "wave_a",
+  "overall_status": "in_progress",
+  "budget": {
+    "currency": "EUR",
+    "planned_total": 0,
+    "committed_total": 0,
+    "paid_total": 0,
+    "variance": 0
+  },
+  "waves": {
+    "wave_a": {
+      "status": "planned",
+      "items": [
+        {
+          "name": "UGREEN NASync DXP4800 Plus",
+          "qty": 1,
+          "target_unit_price_eur": 0,
+          "actual_unit_price_eur": 0,
+          "vendor": "",
+          "order_id": "",
+          "ordered_at": "",
+          "eta": "",
+          "received_at": "",
+          "warranty_months": 0,
+          "status": "planned"
+        },
+        {
+          "name": "CyberPower CP1600EPFCLCD",
+          "qty": 1,
+          "target_unit_price_eur": 0,
+          "actual_unit_price_eur": 0,
+          "vendor": "",
+          "order_id": "",
+          "ordered_at": "",
+          "eta": "",
+          "received_at": "",
+          "warranty_months": 0,
+          "status": "planned"
+        },
+        {
+          "name": "WD Black SN850X 1TB",
+          "qty": 2,
+          "target_unit_price_eur": 0,
+          "actual_unit_price_eur": 0,
+          "vendor": "",
+          "order_id": "",
+          "ordered_at": "",
+          "eta": "",
+          "received_at": "",
+          "warranty_months": 0,
+          "status": "planned"
+        },
+        {
+          "name": "QNAP QXG-10G1T",
+          "qty": 1,
+          "target_unit_price_eur": 0,
+          "actual_unit_price_eur": 0,
+          "vendor": "",
+          "order_id": "",
+          "ordered_at": "",
+          "eta": "",
+          "received_at": "",
+          "warranty_months": 0,
+          "status": "planned"
+        },
+        {
+          "name": "Cat6A S/FTP Cable",
+          "qty": 1,
+          "target_unit_price_eur": 0,
+          "actual_unit_price_eur": 0,
+          "vendor": "",
+          "order_id": "",
+          "ordered_at": "",
+          "eta": "",
+          "received_at": "",
+          "warranty_months": 0,
+          "status": "planned"
+        }
+      ]
+    },
+    "wave_b": {
+      "status": "planned",
+      "items": [
+        {
+          "name": "WD Red Plus 8TB WD80EFPX",
+          "qty": 4,
+          "target_unit_price_eur": 0,
+          "actual_unit_price_eur": 0,
+          "vendor": "",
+          "order_id": "",
+          "ordered_at": "",
+          "eta": "",
+          "received_at": "",
+          "warranty_months": 0,
+          "status": "planned"
+        }
+      ],
+      "raid_mode": "raid6"
+    },
+    "wave_c": {
+      "status": "optional",
+      "items": [
+        {
+          "name": "RAM Upgrade (optional)",
+          "qty": 1,
+          "target_unit_price_eur": 0,
+          "actual_unit_price_eur": 0,
+          "vendor": "",
+          "order_id": "",
+          "ordered_at": "",
+          "eta": "",
+          "received_at": "",
+          "warranty_months": 0,
+          "status": "optional"
+        }
+      ]
+    }
+  },
+  "gates": {
+    "wave_a_gate": {
+      "pass": false,
+      "checks": {
+        "nas_boot_stable": false,
+        "ups_failover_ok": false,
+        "nvme_detected": false,
+        "direct_10gbe_link_ok": false
+      },
+      "updated_at": "",
+      "notes": ""
+    },
+    "wave_b_gate": {
+      "pass": false,
+      "checks": {
+        "raid_created": false,
+        "encrypted_z_vault_created": false,
+        "snapshots_enabled": false,
+        "burn_in_24h_passed": false
+      },
+      "updated_at": "",
+      "notes": ""
+    }
+  },
+  "risks": [
+    {
+      "id": "vendor_stock_shift",
+      "severity": "medium",
+      "status": "open",
+      "mitigation": "keep fallback vendor per item"
+    }
+  ],
+  "next_actions": [
+    "Fill wave_a order fields",
+    "Run wave_a gate checks",
+    "Update generated_at and totals"
+  ]
+}

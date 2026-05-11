@@ -1,0 +1,127 @@
+{
+  "schema": "z.ultra.mage.formula.report.v1",
+  "module_id": "z_ultra_mage_formula_codex",
+  "signal": "BLUE",
+  "mode": "formula_governance_only",
+  "registry_name": "Z-Ultra MAGE Formula Codex",
+  "generated_at": "2026-05-08T12:11:51.721Z",
+  "fixtures_included": false,
+  "registry_validation": {
+    "passed": [
+      "mode is formula_governance_only.",
+      "forbidden_output_engagements is empty.",
+      "formula_layers lists required canon set.",
+      "allowed_outputs present.",
+      "forbidden_outputs covers mandated set.",
+      "source_blueprints populated."
+    ],
+    "advisory": [],
+    "red": []
+  },
+  "sample_results": [
+    {
+      "formula_instance_id": "um_doc_stack_green",
+      "title": "Registry-only formula codex narration",
+      "signal": "GREEN",
+      "reasons": [
+        "governance / report posture only"
+      ]
+    },
+    {
+      "formula_instance_id": "um_routing_green",
+      "title": "MOD-DIST + replica fabric combined advisory schema",
+      "signal": "GREEN",
+      "reasons": [
+        "governance / report posture only"
+      ]
+    },
+    {
+      "formula_instance_id": "um_xbus_classifier_green",
+      "title": "XBUS permission-class formula on paper only",
+      "signal": "GREEN",
+      "reasons": [
+        "governance / report posture only"
+      ]
+    },
+    {
+      "formula_instance_id": "um_traffic_rollup_green",
+      "title": "Traffic signal law as governance narrative",
+      "signal": "GREEN",
+      "reasons": [
+        "governance / report posture only"
+      ]
+    },
+    {
+      "formula_instance_id": "um_yellow_unknown_layer",
+      "title": "Incomplete layer reference sample",
+      "signal": "YELLOW",
+      "reasons": [
+        "unknown formula_layers referenced: future_layer_stub"
+      ]
+    },
+    {
+      "formula_instance_id": "um_yellow_unknown_output_token",
+      "title": "Output token typo",
+      "signal": "YELLOW",
+      "reasons": [
+        "declared_outputs not in codex: live_runtime_magic"
+      ]
+    },
+    {
+      "formula_instance_id": "um_blue_charter_live_engine",
+      "title": "Request to graduate formula into executable engine posture",
+      "signal": "BLUE",
+      "reasons": [
+        "proposal flagged: charter_for_live_engine"
+      ]
+    },
+    {
+      "formula_instance_id": "um_blue_persistent_external",
+      "title": "Proposed durable external connector blueprint",
+      "signal": "BLUE",
+      "reasons": [
+        "proposal flagged: persistent_external_lane"
+      ]
+    },
+    {
+      "formula_instance_id": "um_blue_gap_charter_notes",
+      "title": "Charter ask with missing rollback_note",
+      "signal": "BLUE",
+      "reasons": [
+        "rollback_note empty while charter proposal present",
+        "AMK charter decision required for widening scope"
+      ]
+    }
+  ],
+  "summary": {
+    "green": 4,
+    "yellow": 2,
+    "blue": 3,
+    "red": 0
+  },
+  "locked_law": [
+    "Formula is not execution.",
+    "Ultra is not permission.",
+    "MAGE is not a magic runtime claim.",
+    "Replica formula is not a live clone.",
+    "Connector formula is not a live API.",
+    "GREEN is never deploy.",
+    "BLUE requires AMK.",
+    "RED blocks movement.",
+    "AMK-Goku owns sacred moves."
+  ],
+  "related_docs": [
+    "docs/Z_ULTRA_MAGE_FORMULA_CODEX.md",
+    "docs/PHASE_Z_ULTRA_MAGE_1_GREEN_RECEIPT.md",
+    "docs/Z_REPLICA_FABRIC_GOVERNED_SELF_REPLICATION.md",
+    "docs/Z_MOD_DIST_MODULE_DISTRIBUTOR.md",
+    "docs/Z_XBUS_EXTERNAL_CONNECTOR_GATE.md",
+    "docs/Z_SEC_TRIPLECHECK_COMMUNICATION_FLOW_AUDIT.md",
+    "docs/Z_IDE_FUSION_WORKFLOW_CONTROL.md",
+    "docs/AI_BUILDER_CONTEXT.md"
+  ],
+  "related_reports": [
+    "data/reports/z_ultra_mage_formula_report.json",
+    "data/reports/z_ultra_mage_formula_report.md"
+  ]
+}

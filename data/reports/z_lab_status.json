@@ -1,0 +1,24 @@
+{
+  "generated_at": "2026-05-11T12:26:44.960Z",
+  "status": "ready",
+  "lab_root": "C:/Cursor Projects Organiser/Z_Sanctuary_Universe/Z_Labs",
+  "lab_policy": {
+    "mode": "internal-only",
+    "primary": "C:/Cursor Projects Organiser/Z_Sanctuary_Universe/Z_Labs",
+    "legacy_fallback": "C:/Cursor Projects Organiser/Z_Sanctuary_Universe/ZSanctuary_Labs",
+    "note": "Lab automation is restricted to in-repo lab roots to avoid cross-project linkage."
+  },
+  "draft_modules_count": 1,
+  "prototype_modules_count": 0,
+  "draft_modules": [
+    {
+      "id": "z_lab_seed_module",
+      "path": "C:/Cursor Projects Organiser/Z_Sanctuary_Universe/Z_Labs/modules_draft/z_lab_seed_module",
+      "has_draft_manifest": false,
+      "has_notes": false,
+      "has_readme": false
+    }
+  ],
+  "prototype_modules": [],
+  "notes": "Lab status is read-only. No production runtime folders were modified by this command."
+}

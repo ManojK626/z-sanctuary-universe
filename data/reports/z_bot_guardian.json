@@ -1,0 +1,125 @@
+{
+  "schema_version": 2,
+  "generated_at": "2026-04-26T15:14:58.183Z",
+  "name": "z-mini-bot-guardian",
+  "advisory": true,
+  "drp_note": "Observe only. No auto-fix. Severity routes attention only.",
+  "pc_root": "C:/Cursor Projects Organiser",
+  "summary": {
+    "total": 12,
+    "present": 10,
+    "missing": 0,
+    "skipped_external": 2,
+    "severity": {
+      "HIGH": 0,
+      "MEDIUM": 0,
+      "LOW": 2,
+      "NONE": 10
+    },
+    "highest_severity": "LOW"
+  },
+  "results": [
+    {
+      "id": "zsanctuary-universe",
+      "name": "ZSanctuary_Universe",
+      "path_relative": "ZSanctuary_Universe",
+      "absolute": "C:\\Cursor Projects Organiser\\ZSanctuary_Universe",
+      "status": "present",
+      "severity": "NONE"
+    },
+    {
+      "id": "replit-roulette-z-amk-goku-mdcp",
+      "name": "Roulette Data Analyzer · Z-Amk-Goku MD/CP (Replit)",
+      "path_relative": null,
+      "absolute": null,
+      "status": "skipped_external",
+      "severity": "LOW",
+      "role": "external",
+      "note": "no pc_root path (external or link-only)"
+    },
+    {
+      "id": "amk-goku-dashboards-2",
+      "name": "Amk-Goku Dashboards 2",
+      "path_relative": null,
+      "absolute": null,
+      "status": "skipped_external",
+      "severity": "LOW",
+      "role": "external",
+      "note": "no pc_root path (external or link-only)"
+    },
+    {
+      "id": "amk-goku-vaults",
+      "name": "Amk-Goku Vaults",
+      "path_relative": "Amk-Goku Vaults",
+      "absolute": "C:\\Cursor Projects Organiser\\Amk-Goku Vaults",
+      "status": "present",
+      "severity": "NONE"
+    },
+    {
+      "id": "at-princess-blackie-copitol",
+      "name": "AT Princess & Blackie Copilot",
+      "path_relative": "AT Princess&Blackie Copilot",
+      "absolute": "C:\\Cursor Projects Organiser\\AT Princess&Blackie Copilot",
+      "status": "present",
+      "severity": "NONE"
+    },
+    {
+      "id": "sister-aisling-sol",
+      "name": "Sister Aisling Sol",
+      "path_relative": "Z-Sister Aisling Sol",
+      "absolute": "C:\\Cursor Projects Organiser\\Z-Sister Aisling Sol",
+      "status": "present",
+      "severity": "NONE"
+    },
+    {
+      "id": "z-omni-sanctuary",
+      "name": "Z-OMNI-Sanctuary",
+      "path_relative": "Z-OMNI-Sanctuary",
+      "absolute": "C:\\Cursor Projects Organiser\\Z-OMNI-Sanctuary",
+      "status": "present",
+      "severity": "NONE"
+    },
+    {
+      "id": "z-sanctuary-ai-skyscraper",
+      "name": "Z-SANCTUARY AI SKYSCRAPER",
+      "path_relative": "Z-SANCTUARY AI SKYSCRAPER",
+      "absolute": "C:\\Cursor Projects Organiser\\Z-SANCTUARY AI SKYSCRAPER",
+      "status": "present",
+      "severity": "NONE"
+    },
+    {
+      "id": "z-sanctuary-browser-z-saiyan-lumina",
+      "name": "Z-Sanctuary Browser (Z-Saiyan Lumina)",
+      "path_relative": "Z-Sanctuary Browser",
+      "absolute": "C:\\Cursor Projects Organiser\\Z-Sanctuary Browser",
+      "status": "present",
+      "severity": "NONE"
+    },
+    {
+      "id": "z-sanctuary-claude-core",
+      "name": "Z-Sanctuary Claude (Core)",
+      "path_relative": "Z-Sanctuary Claude",
+      "absolute": "C:\\Cursor Projects Organiser\\Z-Sanctuary Claude",
+      "status": "present",
+      "severity": "NONE"
+    },
+    {
+      "id": "z-sanctuary-aimanity",
+      "name": "z-sanctuary-aimanity",
+      "path_relative": "z-sanctuary-aimanity",
+      "absolute": "C:\\Cursor Projects Organiser\\z-sanctuary-aimanity",
+      "status": "present",
+      "severity": "NONE"
+    },
+    {
+      "id": "z-sanctuary-universe-2-continuation",
+      "name": "Z_Sanctuary_Universe 2",
+      "path_relative": "ZSanctuary_Universe/Z_Sanctuary_Universe 2",
+      "absolute": "C:\\Cursor Projects Organiser\\ZSanctuary_Universe\\Z_Sanctuary_Universe 2",
+      "status": "present",
+      "severity": "NONE"
+    }
+  ],
+  "pre_warnings": [],
+  "pre_warnings_source": null
+}

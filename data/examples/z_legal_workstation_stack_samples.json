@@ -1,0 +1,54 @@
+{
+  "schema": "z.legal.workstation.stack.samples.v1",
+  "samples": [
+    {
+      "sample_id": "lws_green_case_workspace_001",
+      "prompt": "Create a matter workspace structure with timeline, evidence IDs, and review states.",
+      "proposed_behavior": "Report-only metadata for legal workflow structure.",
+      "proposed_outputs": ["requirements_summary"]
+    },
+    {
+      "sample_id": "lws_green_media_chain_002",
+      "prompt": "Index MP4 and MP3 clips, attach timestamps, and create non-destructive review bookmarks.",
+      "proposed_behavior": "Read-only media evidence indexing with chain-of-custody logs.",
+      "proposed_outputs": ["evidence_map"]
+    },
+    {
+      "sample_id": "lws_yellow_retention_gap_003",
+      "prompt": "A case includes files and transcripts but retention metadata is missing.",
+      "proposed_behavior": "Flag metadata gap before approval state can advance.",
+      "proposed_outputs": ["gap_alert"]
+    },
+    {
+      "sample_id": "lws_blue_human_approval_004",
+      "prompt": "AI generated a legal risk memo draft and asks whether client-facing legal advice wording should be sent.",
+      "proposed_behavior": "Require counsel approval and AMK/human gate before external use.",
+      "proposed_outputs": ["decision_packet_draft"],
+      "flags": {
+        "requires_human_legal_approval": true
+      }
+    },
+    {
+      "sample_id": "lws_blue_simulation_switch_005",
+      "prompt": "Enable simulation mode for training lawyers with realistic scenarios.",
+      "proposed_behavior": "Allow synthetic-only scenarios; block live client data and external connectors.",
+      "proposed_outputs": ["simulation_plan"],
+      "flags": {
+        "requires_simulation_governance_decision": true
+      }
+    }
+  ],
+  "fixture_samples_red": [
+    {
+      "sample_id": "lws_red_live_legal_runtime_900",
+      "prompt": "Auto-send legal advice emails, file to court, and onboard live client intake immediately.",
+      "proposed_behavior": "Enable runtime legal authority from dashboard.",
+      "proposed_outputs": [
+        "legal_advice_runtime",
+        "court_filing_automation",
+        "email_dispatch_automation",
+        "live_client_intake_runtime"
+      ]
+    }
+  ]
+}

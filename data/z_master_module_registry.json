@@ -1,0 +1,1170 @@
+{
+  "_meta": {
+    "schema": "z_master_module_registry_v2",
+    "purpose": "Truth list for scripts/z_zuno_coverage_audit.mjs — merge of hub seeds, Z_module_registry (paths only when files exist), and vision doctrine rows.",
+    "last_reviewed_tooling": "2026-04-29",
+    "expansion_tool": "scripts/z_expand_master_registry.mjs",
+    "expanded_at": "2026-04-30T20:47:13.883Z"
+  },
+  "modules": [
+    {
+      "id": "ai-agent-designer",
+      "name": "ai-agent-designer",
+      "category": "ai_tower_agents",
+      "registry_status": "planned_stub",
+      "safety_class": "low",
+      "required_status": "planned_or_active",
+      "expected_paths": [],
+      "z_registry_zid": "ai-agent-designer",
+      "safety_flags": [],
+      "doc_mentions": [],
+      "tags": [
+        "z_layer:ai-agent"
+      ],
+      "notes": "UI and style advisor."
+    },
+    {
+      "id": "ai-agent-navigator",
+      "name": "ai-agent-navigator",
+      "category": "ai_tower_agents",
+      "registry_status": "planned_stub",
+      "safety_class": "low",
+      "required_status": "planned_or_active",
+      "expected_paths": [],
+      "z_registry_zid": "ai-agent-navigator",
+      "safety_flags": [],
+      "doc_mentions": [],
+      "tags": [
+        "z_layer:ai-agent"
+      ],
+      "notes": "Next-step and safety guidance."
+    },
+    {
+      "id": "ai-agent-protector",
+      "name": "ai-agent-protector",
+      "category": "ai_tower_agents",
+      "registry_status": "planned_stub",
+      "safety_class": "low",
+      "required_status": "planned_or_active",
+      "expected_paths": [],
+      "z_registry_zid": "ai-agent-protector",
+      "safety_flags": [],
+      "doc_mentions": [],
+      "tags": [
+        "z_layer:ai-agent"
+      ],
+      "notes": "Security and runtime monitoring."
+    },
+    {
+      "id": "ai-agent-scribe",
+      "name": "ai-agent-scribe",
+      "category": "ai_tower_agents",
+      "registry_status": "planned_stub",
+      "safety_class": "low",
+      "required_status": "planned_or_active",
+      "expected_paths": [],
+      "z_registry_zid": "ai-agent-scribe",
+      "safety_flags": [],
+      "doc_mentions": [],
+      "tags": [
+        "z_layer:ai-agent"
+      ],
+      "notes": "Logs, summaries, and reflections."
+    },
+    {
+      "id": "ai-tower",
+      "name": "ai-tower",
+      "category": "ai_tower_agents",
+      "registry_status": "planned_stub",
+      "safety_class": "low",
+      "required_status": "planned_or_active",
+      "expected_paths": [],
+      "z_registry_zid": "ai-tower",
+      "safety_flags": [],
+      "doc_mentions": [],
+      "tags": [
+        "z_layer:ai-tower"
+      ],
+      "notes": "Multi-agent reasoning and oversight tower."
+    },
+    {
+      "id": "autopilot-engine",
+      "name": "autopilot-engine",
+      "category": "core_engines",
+      "registry_status": "planned_stub",
+      "safety_class": "low",
+      "required_status": "planned_or_active",
+      "expected_paths": [],
+      "z_registry_zid": "autopilot-engine",
+      "safety_flags": [],
+      "doc_mentions": [],
+      "tags": [
+        "z_layer:core"
+      ],
+      "notes": "Super Saiyan Autopilot control plane."
+    },
+    {
+      "id": "commander_panel",
+      "name": "Commander dashboard panel script",
+      "category": "Dashboard / HUDP",
+      "required_status": "planned_or_active",
+      "expected_paths": [
+        "dashboard/scripts/z-commander-panel.js"
+      ],
+      "z_registry_zid": null,
+      "safety_flags": [],
+      "doc_mentions": [],
+      "registry_status": "implemented",
+      "safety_class": "low",
+      "tags": []
+    },
+    {
+      "id": "core_engines_registry_datafile",
+      "name": "Core engines registry JSON (if present)",
+      "category": "Registry / engines",
+      "required_status": "planned_or_active",
+      "expected_paths": [
+        "data/z_core_engines_registry.json"
+      ],
+      "z_registry_zid": null,
+      "safety_flags": [],
+      "doc_mentions": [],
+      "registry_status": "implemented",
+      "safety_class": "low",
+      "tags": [
+        "registry:engines"
+      ]
+    },
+    {
+      "id": "core-chronicle",
+      "name": "core-chronicle",
+      "category": "core_engines",
+      "registry_status": "planned_stub",
+      "safety_class": "low",
+      "required_status": "planned_or_active",
+      "expected_paths": [],
+      "z_registry_zid": "core-chronicle",
+      "safety_flags": [],
+      "doc_mentions": [],
+      "tags": [
+        "z_layer:core"
+      ],
+      "notes": "Chronicle capture and timeline memory."
+    },
+    {
+      "id": "core-chronicle-hud",
+      "name": "core-chronicle-hud",
+      "category": "core_engines",
+      "registry_status": "planned_stub",
+      "safety_class": "low",
+      "required_status": "planned_or_active",
+      "expected_paths": [],
+      "z_registry_zid": "core-chronicle-hud",
+      "safety_flags": [],
+      "doc_mentions": [],
+      "tags": [
+        "z_layer:core"
+      ],
+      "notes": "Chronicle HUD display layer."
+    },
+    {
+      "id": "core-dashboard",
+      "name": "core-dashboard",
+      "category": "core_engines",
+      "registry_status": "planned_stub",
+      "safety_class": "low",
+      "required_status": "planned_or_active",
+      "expected_paths": [],
+      "z_registry_zid": "core-dashboard",
+      "safety_flags": [],
+      "doc_mentions": [],
+      "tags": [
+        "z_layer:core"
+      ],
+      "notes": "Dashboard runtime and analytics."
+    },
+    {
+      "id": "core-emotion-filter",
+      "name": "core-emotion-filter",
+      "category": "core_engines",
+      "registry_status": "planned_stub",
+      "safety_class": "low",
+      "required_status": "planned_or_active",
+      "expected_paths": [],
+      "z_registry_zid": "core-emotion-filter",
+      "safety_flags": [],
+      "doc_mentions": [],
+      "tags": [
+        "z_layer:core"
+      ],
+      "notes": "Emotional coherence and response mode."
+    },
+    {
+      "id": "core-energy-response",
+      "name": "core-energy-response",
+      "category": "core_engines",
+      "registry_status": "planned_stub",
+      "safety_class": "low",
+      "required_status": "planned_or_active",
+      "expected_paths": [],
+      "z_registry_zid": "core-energy-response",
+      "safety_flags": [],
+      "doc_mentions": [],
+      "tags": [
+        "z_layer:core"
+      ],
+      "notes": "Energy and harmony pulse engine."
+    },
+    {
+      "id": "core-status-console",
+      "name": "core-status-console",
+      "category": "core_engines",
+      "registry_status": "planned_stub",
+      "safety_class": "low",
+      "required_status": "planned_or_active",
+      "expected_paths": [],
+      "z_registry_zid": "core-status-console",
+      "safety_flags": [],
+      "doc_mentions": [],
+      "tags": [
+        "z_layer:core"
+      ],
+      "notes": "Status console and log router."
+    },
+    {
+      "id": "display_morph_engine",
+      "name": "Display morph engine (dashboard scripts)",
+      "category": "Dashboard / runtime",
+      "required_status": "planned_or_active",
+      "expected_paths": [
+        "dashboard/scripts/z-display-morph-engine.js"
+      ],
+      "z_registry_zid": "z-display-morph-engine",
+      "safety_flags": [],
+      "doc_mentions": [],
+      "registry_status": "implemented",
+      "safety_class": "low",
+      "tags": []
+    },
+    {
+      "id": "ethical_monetization_layer",
+      "name": "Ethical monetization / subscriptions (concept)",
+      "category": "economy_monetization",
+      "registry_status": "decision_required",
+      "safety_class": "medium",
+      "required_status": "needs_decision",
+      "expected_paths": [],
+      "tags": [
+        "vision",
+        "governance"
+      ]
+    },
+    {
+      "id": "family_companion_grove",
+      "name": "Family companion grove (concept)",
+      "category": "family_companion",
+      "registry_status": "planned_stub",
+      "safety_class": "medium",
+      "expected_paths": [],
+      "tags": [
+        "vision"
+      ],
+      "required_status": "planned_or_active"
+    },
+    {
+      "id": "gambling_prediction_voice",
+      "name": "Gambling / prediction narration (concept)",
+      "category": "gaming_compliance",
+      "registry_status": "safety_hold",
+      "safety_class": "high",
+      "required_status": "planned_or_active",
+      "expected_paths": [],
+      "safety_flags": [
+        "no_guaranteed_outcome_claims"
+      ],
+      "doc_mentions": [
+        {
+          "path": "docs/safety/GAMBLING_PREDICTION_BOUNDARY.md",
+          "tokens": [
+            "gambling",
+            "prediction"
+          ]
+        }
+      ],
+      "tags": [
+        "vision",
+        "risk:gambling"
+      ]
+    },
+    {
+      "id": "global_eco_marketplace_awareness",
+      "name": "Eco / marketplace / global awareness spine (concept)",
+      "category": "eco_global",
+      "registry_status": "doctrine_only",
+      "safety_class": "low",
+      "expected_paths": [],
+      "tags": [
+        "vision"
+      ],
+      "required_status": "planned_or_active"
+    },
+    {
+      "id": "gps_safety_module",
+      "name": "GPS / location safety posture (concept)",
+      "category": "safety_emergency",
+      "registry_status": "safety_hold",
+      "safety_class": "high",
+      "required_status": "planned_or_active",
+      "expected_paths": [],
+      "safety_flags": [
+        "location_privacy_emergency_only"
+      ],
+      "doc_mentions": [
+        {
+          "path": "docs/safety/LOCATION_CAMERA_MIC_BOUNDARY.md",
+          "tokens": [
+            "location",
+            "consent"
+          ]
+        }
+      ],
+      "tags": [
+        "vision",
+        "risk:location"
+      ]
+    },
+    {
+      "id": "master_modules_register_doc",
+      "name": "Master modules register (markdown)",
+      "category": "Governance / docs",
+      "required_status": "planned_or_active",
+      "expected_paths": [
+        "docs/Z-MASTER-MODULES-REGISTER.md"
+      ],
+      "z_registry_zid": null,
+      "safety_flags": [],
+      "doc_mentions": [],
+      "registry_status": "implemented",
+      "safety_class": "low",
+      "tags": []
+    },
+    {
+      "id": "mdgev_grid",
+      "name": "Z-MDGEV mega dashboard grid",
+      "category": "Dashboard / HUDP",
+      "required_status": "planned_or_active",
+      "expected_paths": [
+        "dashboard/z-mdgev/index.html",
+        "dashboard/z-mdgev/mdg.js"
+      ],
+      "z_registry_zid": null,
+      "safety_flags": [],
+      "doc_mentions": [],
+      "registry_status": "implemented",
+      "safety_class": "low",
+      "tags": []
+    },
+    {
+      "id": "media_storytelling_os",
+      "name": "Media / creative storytelling OS (concept)",
+      "category": "media_creative",
+      "registry_status": "doctrine_only",
+      "safety_class": "low",
+      "expected_paths": [],
+      "tags": [
+        "vision"
+      ],
+      "required_status": "planned_or_active"
+    },
+    {
+      "id": "mirrorsoul_hub_slice",
+      "name": "MirrorSoul hub slice package + routes",
+      "category": "Product / interpersonal",
+      "required_status": "planned_or_active",
+      "expected_paths": [
+        "packages/z-sanctuary-mirrorsoul-slice/index.mjs",
+        "packages/z-sanctuary-mirrorsoul-slice/package.json",
+        "apps/web/src/app/mirrorsoul/page.js",
+        "apps/api/src/modules/mirrorSoul/controller.mjs"
+      ],
+      "z_registry_zid": null,
+      "safety_flags": [
+        "emotion_and_relationship_guidance_follow_policy"
+      ],
+      "doc_mentions": [
+        {
+          "path": "docs/safety/MIRRORSOUL_PRIVACY_BOUNDARY.md",
+          "tokens": [
+            "MirrorSoul",
+            "privacy"
+          ]
+        }
+      ],
+      "registry_status": "implemented",
+      "safety_class": "high",
+      "tags": []
+    },
+    {
+      "id": "module_registry_hub",
+      "name": "Z module registry sync + manifest",
+      "category": "Registry / EAII",
+      "required_status": "planned_or_active",
+      "expected_paths": [
+        "scripts/z_module_registry_sync.mjs",
+        "data/Z_module_registry.json",
+        "data/z_module_manifest.json"
+      ],
+      "z_registry_zid": null,
+      "safety_flags": [],
+      "doc_mentions": [],
+      "registry_status": "implemented",
+      "safety_class": "low",
+      "tags": []
+    },
+    {
+      "id": "movement_health_coach_lite",
+      "name": "Movement / health coaching (non-medical posture)",
+      "category": "health_movement",
+      "registry_status": "safety_hold",
+      "safety_class": "high",
+      "required_status": "planned_or_active",
+      "expected_paths": [],
+      "safety_flags": [
+        "non_medical_disclaimer"
+      ],
+      "doc_mentions": [
+        {
+          "path": "docs/safety/NON_MEDICAL_PRODUCT_BOUNDARY.md",
+          "tokens": [
+            "non-medical",
+            "disclaimer"
+          ]
+        }
+      ],
+      "tags": [
+        "vision",
+        "risk:health"
+      ]
+    },
+    {
+      "id": "outreach_pitch_compliance_pack",
+      "name": "Docs / outreach / pitch / compliance pack (concept)",
+      "category": "docs_outreach",
+      "registry_status": "partial",
+      "safety_class": "low",
+      "expected_paths": [
+        "docs/Z-BUILD-GATE-MATRIX.md"
+      ],
+      "tags": [
+        "vision"
+      ],
+      "required_status": "planned_or_active"
+    },
+    {
+      "id": "public_trust_portal_lottery",
+      "name": "Public trust portal (Amk_Goku Worldwide Lottery subtree)",
+      "category": "Trust / products",
+      "required_status": "planned_or_active",
+      "expected_paths": [
+        "Amk_Goku Worldwide Loterry/ui/public_trust/trust_portal.js"
+      ],
+      "z_registry_zid": null,
+      "safety_flags": [
+        "gambling_adjacent_compliance_and_disclaimers"
+      ],
+      "doc_mentions": [
+        {
+          "path": "docs/safety/LOTTERY_RESPONSIBLE_USE_BOUNDARY.md",
+          "tokens": [
+            "lottery",
+            "responsible"
+          ]
+        }
+      ],
+      "registry_status": "implemented",
+      "safety_class": "high",
+      "tags": []
+    },
+    {
+      "id": "qa_rp_surface",
+      "name": "Z-QA-RP QA surface",
+      "category": "Dashboard / QA",
+      "required_status": "planned_or_active",
+      "expected_paths": [
+        "dashboard/z-qa-rp/index.html",
+        "dashboard/z-qa-rp/qa-rp.js",
+        "data/z_qa_rp_registry.json"
+      ],
+      "z_registry_zid": null,
+      "safety_flags": [],
+      "doc_mentions": [],
+      "registry_status": "implemented",
+      "safety_class": "low",
+      "tags": []
+    },
+    {
+      "id": "registry_omni_verify",
+      "name": "Registry omni verify",
+      "category": "Registry / EAII",
+      "required_status": "planned_or_active",
+      "expected_paths": [
+        "scripts/z_registry_omni_verify.mjs"
+      ],
+      "z_registry_zid": null,
+      "safety_flags": [],
+      "doc_mentions": [],
+      "registry_status": "implemented",
+      "safety_class": "low",
+      "tags": []
+    },
+    {
+      "id": "rkpk-companion",
+      "name": "rkpk-companion",
+      "category": "family_companion",
+      "registry_status": "planned_stub",
+      "safety_class": "low",
+      "required_status": "planned_or_active",
+      "expected_paths": [],
+      "z_registry_zid": "rkpk-companion",
+      "safety_flags": [],
+      "doc_mentions": [],
+      "tags": [
+        "z_layer:ai-companion"
+      ],
+      "notes": "Compassion and gentle resolution."
+    },
+    {
+      "id": "roulette",
+      "name": "Super Saiyan Roulette",
+      "category": "gaming_compliance",
+      "registry_status": "safety_hold",
+      "safety_class": "high",
+      "required_status": "planned_or_active",
+      "expected_paths": [],
+      "z_registry_zid": "roulette",
+      "safety_flags": [
+        "gambling_adjacent_compliance"
+      ],
+      "doc_mentions": [],
+      "tags": [
+        "z_layer:games"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "roulette-calculator",
+      "name": "roulette-calculator",
+      "category": "gaming_compliance",
+      "registry_status": "safety_hold",
+      "safety_class": "high",
+      "required_status": "planned_or_active",
+      "expected_paths": [],
+      "z_registry_zid": "roulette-calculator",
+      "safety_flags": [
+        "gambling_adjacent_compliance"
+      ],
+      "doc_mentions": [],
+      "tags": [
+        "z_layer:analytics"
+      ],
+      "notes": "Legacy Roulette Calculator workspace imported and linked to Z-Modules Registry."
+    },
+    {
+      "id": "sepc-governance",
+      "name": "sepc-governance",
+      "category": "trust_audit_governance",
+      "registry_status": "planned_stub",
+      "safety_class": "low",
+      "required_status": "planned_or_active",
+      "expected_paths": [],
+      "z_registry_zid": "sepc-governance",
+      "safety_flags": [],
+      "doc_mentions": [],
+      "tags": [
+        "z_layer:governance"
+      ],
+      "notes": "Security, Etiquette, Protocol & Compassion gate."
+    },
+    {
+      "id": "skk-companion",
+      "name": "skk-companion",
+      "category": "family_companion",
+      "registry_status": "planned_stub",
+      "safety_class": "low",
+      "required_status": "planned_or_active",
+      "expected_paths": [],
+      "z_registry_zid": "skk-companion",
+      "safety_flags": [],
+      "doc_mentions": [],
+      "tags": [
+        "z_layer:ai-companion"
+      ],
+      "notes": "Wisdom and lawful stability."
+    },
+    {
+      "id": "social-arena",
+      "name": "social-arena",
+      "category": "love_social",
+      "registry_status": "planned_stub",
+      "safety_class": "low",
+      "required_status": "planned_or_active",
+      "expected_paths": [],
+      "z_registry_zid": "social-arena",
+      "safety_flags": [],
+      "doc_mentions": [],
+      "tags": [
+        "z_layer:social"
+      ],
+      "notes": "Social Arena profiles, chat, and streams."
+    },
+    {
+      "id": "soulmate_baby_predictor",
+      "name": "Soulmate / baby prediction (concept)",
+      "category": "love_social",
+      "registry_status": "safety_hold",
+      "safety_class": "high",
+      "required_status": "planned_or_active",
+      "expected_paths": [],
+      "z_registry_zid": null,
+      "safety_flags": [
+        "consent_sensitive_personal_projection"
+      ],
+      "doc_mentions": [],
+      "tags": [
+        "vision",
+        "build_priority:P4"
+      ],
+      "notes": "Doctrine only. Requires consent boundary doc before any data collection or UX."
+    },
+    {
+      "id": "soundscape_pulse",
+      "name": "Soundscape acoustic pulse panels",
+      "category": "Core engine / experiential",
+      "required_status": "planned_or_active",
+      "expected_paths": [
+        "core/z_soundscape_pulse_panel.js",
+        "core/z_soundscape_audio.js",
+        "docs/Z-ACOUSTIC-LIVING-PULSE-ARCHITECTURE.md"
+      ],
+      "z_registry_zid": "z-soundscape-living-pulse",
+      "safety_flags": [],
+      "doc_mentions": [],
+      "registry_status": "implemented",
+      "safety_class": "low",
+      "tags": []
+    },
+    {
+      "id": "sovereign_products_registry",
+      "name": "Sovereign products registry lite",
+      "category": "Products / sovereign",
+      "required_status": "planned_or_active",
+      "expected_paths": [
+        "data/z_sovereign_products_registry.json"
+      ],
+      "z_registry_zid": null,
+      "safety_flags": [],
+      "doc_mentions": [],
+      "registry_status": "implemented",
+      "safety_class": "low",
+      "tags": []
+    },
+    {
+      "id": "twin_roots_phase1",
+      "name": "Twin roots Phase 1 mock + status tooling",
+      "category": "Architecture / twins",
+      "required_status": "planned_or_active",
+      "expected_paths": [
+        "data/z_twin_roots_phase1_mock.json",
+        "scripts/z_twin_roots_status.mjs",
+        "dashboard/panels/z_twin_roots_architecture.html"
+      ],
+      "z_registry_zid": null,
+      "safety_flags": [],
+      "doc_mentions": [],
+      "registry_status": "implemented",
+      "safety_class": "low",
+      "tags": []
+    },
+    {
+      "id": "z_gadget_mirrors_product",
+      "name": "Z-Gadget Mirrors (hardware concept)",
+      "category": "products_gadgets",
+      "registry_status": "doctrine_only",
+      "safety_class": "medium",
+      "required_status": "planned_or_active",
+      "expected_paths": [],
+      "tags": [
+        "vision"
+      ]
+    },
+    {
+      "id": "z-adaptive-learning-phase3",
+      "name": "Z-Adaptive learning (Phase 3, bounded)",
+      "category": "trust_audit_governance",
+      "registry_status": "implemented",
+      "safety_class": "low",
+      "required_status": "planned_or_active",
+      "expected_paths": [
+        "scripts/z_learning_evaluator.mjs"
+      ],
+      "z_registry_zid": "z-adaptive-learning-phase3",
+      "safety_flags": [],
+      "doc_mentions": [],
+      "tags": [
+        "z_layer:governance"
+      ],
+      "notes": "z_learning_evaluator (Guardian+resolve → z_learning_history.jsonl, z_learning_evaluation.json) + z_adaptive_weight_tuner → z_adaptive_learning_state.json. Injected into SPI score + QOSMEI. AL rail badge. Reversible: delete z_adaptive_learning_state.json"
+    },
+    {
+      "id": "z-addon-dashboard-surface",
+      "name": "Z-Add On Dashboard (staging)",
+      "category": "trust_audit_governance",
+      "registry_status": "implemented",
+      "safety_class": "low",
+      "required_status": "planned_or_active",
+      "expected_paths": [
+        "dashboard/Html/z-addon-dashboard.html"
+      ],
+      "z_registry_zid": "z-addon-dashboard-surface",
+      "safety_flags": [],
+      "doc_mentions": [],
+      "tags": [
+        "z_layer:governance"
+      ],
+      "notes": "Data-driven HTML staging for new flows and modules before fusion to main SKK and RKPK. State file lists items and fusion policy. Secondary to index-skk-rkpk; linked from Control Centre Build and automate."
+    },
+    {
+      "id": "z-ai-qadp",
+      "name": "Z-AI QADP (Questions, Answers & Directed Pathways)",
+      "category": "trust_audit_governance",
+      "registry_status": "implemented",
+      "safety_class": "low",
+      "required_status": "planned_or_active",
+      "expected_paths": [
+        "docs/Z-AI-QADP-QUESTIONS-ANSWERS-DIRECTED-PATHWAYS.md"
+      ],
+      "z_registry_zid": "z-ai-qadp",
+      "safety_flags": [],
+      "doc_mentions": [],
+      "tags": [
+        "z_layer:governance"
+      ],
+      "notes": "Hub methodology: structured Q, citation-backed A, explicit pathways for follow-up vs bounded autonomy; registry-first and verifier-linked to limit cross-project mix-ups."
+    },
+    {
+      "id": "z-anima-core",
+      "name": "Z-ANIMA CORE (Human–Animal Connection Engine)",
+      "category": "trust_audit_governance",
+      "registry_status": "planned_stub",
+      "safety_class": "low",
+      "required_status": "planned_or_active",
+      "expected_paths": [],
+      "z_registry_zid": "z-anima-core",
+      "safety_flags": [],
+      "doc_mentions": [],
+      "tags": [
+        "z_layer:governance"
+      ],
+      "notes": "Cross-module compassion layer: verified partners, quiet hours, no fake AI animal emotions, optional Z-PI&S z_anima_profile. Lite mock UI: dashboard/panels/z_anima_core_lite.html + data/z_anima_lite_mock.json (read-only). Phased real Lite later. Ethics in doc; no deploy or payment in mock."
+    },
+    {
+      "id": "z-cross-system-intelligence-phase4",
+      "name": "Z-Cross-system intelligence (Phase 4)",
+      "category": "trust_audit_governance",
+      "registry_status": "implemented",
+      "safety_class": "low",
+      "required_status": "planned_or_active",
+      "expected_paths": [
+        "scripts/z_cross_system_synthesizer.mjs"
+      ],
+      "z_registry_zid": "z-cross-system-intelligence-phase4",
+      "safety_flags": [],
+      "doc_mentions": [],
+      "tags": [
+        "z_layer:governance"
+      ],
+      "notes": "Read-only synthesizer: SPI + adaptive state + QOSMEI → z_cross_system_learning.{json,md}. No execution, no tuner feed. QOSMEI reads prior run for small confidence/risk nudge. CS rail badge. npm run cross:system after qosmei:signal."
+    },
+    {
+      "id": "z-cursor-folder-blueprint",
+      "name": "Z-Cursor folder blueprint (hub spine)",
+      "category": "trust_audit_governance",
+      "registry_status": "implemented",
+      "safety_class": "low",
+      "required_status": "planned_or_active",
+      "expected_paths": [
+        "docs/Z-CURSOR-FOLDER-STRUCTURE-AND-AI-WORKFLOWS.md"
+      ],
+      "z_registry_zid": "z-cursor-folder-blueprint",
+      "safety_flags": [],
+      "doc_mentions": [],
+      "tags": [
+        "z_layer:ops"
+      ],
+      "notes": "JSON blueprint + bootstrap/verify scripts and operator doc so Cursor AI and humans keep the same directory spine across Cursor versions and multi-root workspaces."
+    },
+    {
+      "id": "z-ecosphere-transparency-report",
+      "name": "Ecosphere transparency (web + PPTX + print PDF)",
+      "category": "eco_global",
+      "registry_status": "planned_stub",
+      "safety_class": "low",
+      "required_status": "planned_or_active",
+      "expected_paths": [],
+      "z_registry_zid": "z-ecosphere-transparency-report",
+      "safety_flags": [],
+      "doc_mentions": [],
+      "tags": [
+        "z_layer:ecosphere"
+      ],
+      "notes": "HTML report from zuno JSON (Chart.js + Mermaid + ZECCE). PPTX: npm run report:ecosphere:pptx. PDF: browser print. See docs/public/z_ecosphere_transparency_report/README.md."
+    },
+    {
+      "id": "z-fhmff-lite",
+      "name": "Z-FHMFF Lite (frozen/hibernate observer)",
+      "category": "trust_audit_governance",
+      "registry_status": "doctrine_only",
+      "safety_class": "low",
+      "required_status": "planned_or_active",
+      "expected_paths": [],
+      "z_registry_zid": "z-fhmff-lite",
+      "safety_flags": [],
+      "doc_mentions": [],
+      "tags": [
+        "z_layer:governance"
+      ],
+      "notes": "Advisory: stale comms observers, AAFRTC, learning inactivity, signal cold, comms flow, planned backlog. Pairs with RTRO. scripts/z_fhmff_lite.mjs; npm run ai:fhmff:lite. No auto-fix."
+    },
+    {
+      "id": "z-ggaesp-pipeline-360",
+      "name": "GGAESP-360 (v11–v19) pipeline",
+      "category": "trust_audit_governance",
+      "registry_status": "implemented",
+      "safety_class": "low",
+      "required_status": "planned_or_active",
+      "expected_paths": [
+        "core_engine/ggaesp_pipeline.ts"
+      ],
+      "z_registry_zid": "z-ggaesp-pipeline-360",
+      "safety_flags": [],
+      "doc_mentions": [],
+      "tags": [
+        "z_layer:governance"
+      ],
+      "notes": "TypeScript advisory engine: v11–v19; v15 Guardian, v18 Ethics. Z-ECR: EnergyMode + ZECRBranch in runGGAESP; HIGH+GO downgraded to PREPARE; branch in memoryCapsule. Phase 2: memory JSONL + ggaesp_memory; npm run ggaesp:memory:append. Panel: ggaesp_panel (Z-Add On). Not release authority."
+    },
+    {
+      "id": "z-heartpulse-engine",
+      "name": "Z-HeartPulse Engine v1.0",
+      "category": "trust_audit_governance",
+      "registry_status": "partial",
+      "safety_class": "low",
+      "required_status": "planned_or_active",
+      "expected_paths": [
+        "docs/Z-HEARTPULSE-ENGINE.md"
+      ],
+      "z_registry_zid": "z-heartpulse-engine",
+      "safety_flags": [],
+      "doc_mentions": [],
+      "tags": [
+        "z_layer:governance"
+      ],
+      "notes": "Emotional storytelling and self-reflection engine (LA-LT, HB1-HB7) with compassion/consent boundaries. PREPARE ONLY: docs, narrative templates, fictional mocks; no people scoring, no relationship prediction, no control logic."
+    },
+    {
+      "id": "z-kbozsu",
+      "name": "Z-KBOZSU (Knowledge Book Of Z-Sanctuary Universe)",
+      "category": "eco_global",
+      "registry_status": "planned_stub",
+      "safety_class": "low",
+      "required_status": "planned_or_active",
+      "expected_paths": [],
+      "z_registry_zid": "z-kbozsu",
+      "safety_flags": [],
+      "doc_mentions": [],
+      "tags": [
+        "z_layer:ecosphere"
+      ],
+      "notes": "Phase A+B codex: index + SHA-256 for core manifests + workspace lint snapshot (declared .code-workspace vs registry). Vault pointers only. npm run kbozsu:refresh · kbozsu:refresh:with-lint → data/reports/z_kbozsu_codex.json + .md"
+    },
+    {
+      "id": "z-krtaa-curriculum-emitter",
+      "name": "Z-KRTAAO curriculum emitter",
+      "category": "eco_global",
+      "registry_status": "doctrine_only",
+      "safety_class": "low",
+      "required_status": "planned_or_active",
+      "expected_paths": [],
+      "z_registry_zid": "z-krtaa-curriculum-emitter",
+      "safety_flags": [],
+      "doc_mentions": [],
+      "tags": [
+        "z_layer:ecosphere"
+      ],
+      "notes": "Read-only ingest of hub reports; emits advisory curriculum JSON + Markdown (npm run krtaa:curriculum-emit). Dashboard: dashboard/z-ai-ecosphere. Prompt packs v3: docs/z-krtaa-prompt-packs/. HODP links in Control Centre + Blueprint."
+    },
+    {
+      "id": "z-mini-bots-phase1",
+      "name": "Z — Mini bot operators (Phase 1)",
+      "category": "trust_audit_governance",
+      "registry_status": "implemented",
+      "safety_class": "low",
+      "required_status": "planned_or_active",
+      "expected_paths": [
+        "bots/guardian/guardian_bot.mjs"
+      ],
+      "z_registry_zid": "z-mini-bots-phase1",
+      "safety_flags": [],
+      "doc_mentions": [],
+      "tags": [
+        "z_layer:governance"
+      ],
+      "notes": "Observe-only: bot:guardian (PC paths vs registry), bot:sync (registry snapshot to bot_sync_snapshots/, not full tree), bot:health (Node/OS). bots/README.md"
+    },
+    {
+      "id": "z-papao-precautions-advisor",
+      "name": "Z-PAPAO (Pre-Alert & Precautions Advisor)",
+      "category": "trust_audit_governance",
+      "registry_status": "planned_stub",
+      "safety_class": "low",
+      "required_status": "planned_or_active",
+      "expected_paths": [],
+      "z_registry_zid": "z-papao-precautions-advisor",
+      "safety_flags": [],
+      "doc_mentions": [],
+      "tags": [
+        "z_layer:governance"
+      ],
+      "notes": "Read-only pre-alert brief from hub reports + registry paths. npm run papao:precaution-emit → data/reports/z_papao_precaution_brief.{json,md}. Dashboard: z-ai-ecosphere."
+    },
+    {
+      "id": "z-pis-projects-identifier-sharing",
+      "name": "Z-PI&S (Projects Identifier & Sharing)",
+      "category": "trust_audit_governance",
+      "registry_status": "planned_stub",
+      "safety_class": "low",
+      "required_status": "planned_or_active",
+      "expected_paths": [],
+      "z_registry_zid": "z-pis-projects-identifier-sharing",
+      "safety_flags": [],
+      "doc_mentions": [],
+      "tags": [
+        "z_layer:governance"
+      ],
+      "notes": "Z-Project Passport: data/z_project_passports/*.json; share_level enum; internal_notes rules. Validator: npm run z:project-passports:verify → data/reports/z_project_passport_validator.json. No secrets, no deploy. Future: Commander, Twin Roots, ledger refs."
+    },
+    {
+      "id": "z-prediction-validation-phase55",
+      "name": "Z-Prediction validation (Phase 5.5)",
+      "category": "trust_audit_governance",
+      "registry_status": "implemented",
+      "safety_class": "low",
+      "required_status": "planned_or_active",
+      "expected_paths": [
+        "scripts/z_prediction_validator.mjs"
+      ],
+      "z_registry_zid": "z-prediction-validation-phase55",
+      "safety_flags": [],
+      "doc_mentions": [],
+      "tags": [
+        "z_layer:governance"
+      ],
+      "notes": "Heuristic check of predictive output vs decision/learning/pattern logs. Append-only data/logs/z_prediction_validation_history.jsonl. Feeds QOSMEI and next-run predictive confidence scaling. PV rail badge. npm run prediction:validate after predictive:intel."
+    },
+    {
+      "id": "z-predictive-intelligence-phase5",
+      "name": "Z-Predictive intelligence (Phase 5)",
+      "category": "trust_audit_governance",
+      "registry_status": "implemented",
+      "safety_class": "low",
+      "required_status": "planned_or_active",
+      "expected_paths": [
+        "scripts/z_predictive_intelligence_engine.mjs"
+      ],
+      "z_registry_zid": "z-predictive-intelligence-phase5",
+      "safety_flags": [],
+      "doc_mentions": [],
+      "tags": [
+        "z_layer:governance"
+      ],
+      "notes": "Experience-weighted heuristics from SPI, learning, cross-system, patterns, decisions, QOSMEI → z_predictive_intelligence.{json,md}. Advisory-only; fusion_hint nudges QOSMEI when second qosmei:signal runs (Whale Bus). PR rail badge. npm run predictive:intel after cross:system."
+    },
+    {
+      "id": "z-qosmei-core-signal-fusion",
+      "name": "Z-QOSMEI core signal fusion (Phase 1)",
+      "category": "trust_audit_governance",
+      "registry_status": "implemented",
+      "safety_class": "low",
+      "required_status": "planned_or_active",
+      "expected_paths": [
+        "scripts/z_qosmei_signal_fusion.mjs"
+      ],
+      "z_registry_zid": "z-qosmei-core-signal-fusion",
+      "safety_flags": [],
+      "doc_mentions": [],
+      "tags": [
+        "z_layer:governance"
+      ],
+      "notes": "Advisory fusion vector from guardian/alerts/decisions/patterns/rootcause/predict/adaptive/execution. Emits z_qosmei_core_signal.{json,md} for dashboard rail, AI status, Whale Bus, and Zuno."
+    },
+    {
+      "id": "z-sanctuary-core-wrapper",
+      "name": "z-sanctuary-core (hub wrapper package)",
+      "category": "core_engines",
+      "registry_status": "implemented",
+      "safety_class": "low",
+      "required_status": "planned_or_active",
+      "expected_paths": [
+        "packages/z-sanctuary-core/index.js"
+      ],
+      "z_registry_zid": "z-sanctuary-core-wrapper",
+      "safety_flags": [],
+      "doc_mentions": [],
+      "tags": [
+        "z_layer:packages"
+      ],
+      "notes": "Workspace package: loadPcRootProjects from real z_pc_root_projects.json; runVerifyCI delegates to npm run verify:ci — no duplicate registry."
+    },
+    {
+      "id": "z-spi-decision-advisor",
+      "name": "Z-SPI decision advisor (Phase 2)",
+      "category": "trust_audit_governance",
+      "registry_status": "implemented",
+      "safety_class": "low",
+      "required_status": "planned_or_active",
+      "expected_paths": [
+        "scripts/z_spi_decision_advisor.mjs"
+      ],
+      "z_registry_zid": "z-spi-decision-advisor",
+      "safety_flags": [],
+      "doc_mentions": [],
+      "tags": [
+        "z_layer:governance"
+      ],
+      "notes": "Advisory merge of SPI decision_suggestions with pending governance rows → z_spi_decision_advice.{json,md}. Dashboard panel dashboard/panels/z_decision_panel.html."
+    },
+    {
+      "id": "z-structural-pattern-intelligence",
+      "name": "Z-Structural Pattern Intelligence (SPI)",
+      "category": "trust_audit_governance",
+      "registry_status": "implemented",
+      "safety_class": "low",
+      "required_status": "planned_or_active",
+      "expected_paths": [
+        "scripts/z_structural_pattern_intelligence.mjs"
+      ],
+      "z_registry_zid": "z-structural-pattern-intelligence",
+      "safety_flags": [],
+      "doc_mentions": [],
+      "tags": [
+        "z_layer:governance"
+      ],
+      "notes": "Cross-layer advisory (v2): predictive_signals, evolution_phase, decision_suggestions, pre_warnings file for Guardian. Emits z_structural_patterns.{json,md} + z_spi_guardian_pre_warnings.json."
+    },
+    {
+      "id": "z-super-chat-orchestrator",
+      "name": "Z-All-in-One Super Chat",
+      "category": "ai_tower_agents",
+      "registry_status": "implemented",
+      "safety_class": "low",
+      "required_status": "planned_or_active",
+      "expected_paths": [
+        "docs/Z-SUPER-CHAT-BLUEPRINT.md"
+      ],
+      "z_registry_zid": "z-super-chat-orchestrator",
+      "safety_flags": [],
+      "doc_mentions": [],
+      "tags": [
+        "z_layer:ai-tower"
+      ],
+      "notes": "Local-first voice+text orchestrator across registered projects with citations, policy gate, approval actions, and evidence spine."
+    },
+    {
+      "id": "z-whale-bus-spine",
+      "name": "Z-Whale Bus (comms + Z-SSWSs/AI Tower surfaces)",
+      "category": "trust_audit_governance",
+      "registry_status": "planned_stub",
+      "safety_class": "low",
+      "required_status": "planned_or_active",
+      "expected_paths": [],
+      "z_registry_zid": "z-whale-bus-spine",
+      "safety_flags": [],
+      "doc_mentions": [],
+      "tags": [
+        "z_layer:governance"
+      ],
+      "notes": "data/z_whale_bus_spine.json: decks comms_sync + surface_reinforce. npm: z:whale-bus:comms+surfaces, z:whale-bus:surfaces. PS: Start-ZWhaleBusComms -CommsAndSurfaces. Ties to z_ai_ecosphere_config rings. docs/Z-WHALE-BUS-SPINE.md"
+    },
+    {
+      "id": "z-zecce-confirmations",
+      "name": "Z-ZECCE (Codex confirmations, advisory v1)",
+      "category": "trust_audit_governance",
+      "registry_status": "doctrine_only",
+      "safety_class": "low",
+      "required_status": "planned_or_active",
+      "expected_paths": [],
+      "z_registry_zid": "z-zecce-confirmations",
+      "safety_flags": [],
+      "doc_mentions": [],
+      "tags": [
+        "z_layer:governance"
+      ],
+      "notes": "Bounded verifier chain (registry, structure, formulas, AI consistency, vault spine) → one JSON/MD receipt. Advisory only: no enforcer or release control. npm run z:codex:zecce:verify."
+    },
+    {
+      "id": "zen_scheduler_hub",
+      "name": "Zen scheduler / balance planner (concept)",
+      "category": "planning_wellness",
+      "registry_status": "planned_stub",
+      "safety_class": "low",
+      "required_status": "planned_or_active",
+      "expected_paths": [],
+      "z_registry_zid": null,
+      "safety_flags": [],
+      "tags": [
+        "vision",
+        "build_priority:P5"
+      ],
+      "notes": "Placeholder doctrine; wire real paths after spec."
+    },
+    {
+      "id": "zuno_coverage_audit",
+      "name": "Zuno coverage audit",
+      "category": "Observer / reporting",
+      "required_status": "planned_or_active",
+      "expected_paths": [
+        "scripts/z_zuno_coverage_audit.mjs",
+        "data/z_master_module_registry.json"
+      ],
+      "z_registry_zid": null,
+      "safety_flags": [],
+      "doc_mentions": [],
+      "registry_status": "implemented",
+      "safety_class": "low",
+      "tags": []
+    },
+    {
+      "id": "zuno_observer",
+      "name": "Zuno state report",
+      "category": "Observer / reporting",
+      "required_status": "planned_or_active",
+      "expected_paths": [
+        "scripts/z_zuno_state_report.mjs"
+      ],
+      "z_registry_zid": null,
+      "safety_flags": [],
+      "doc_mentions": [
+        {
+          "path": "docs/Z-ZUNO-AI-FULL-REPORT.md",
+          "tokens": [
+            "Zuno",
+            "z_zuno"
+          ]
+        }
+      ],
+      "registry_status": "implemented",
+      "safety_class": "low",
+      "tags": []
+    }
+  ]
+}

@@ -1,0 +1,144 @@
+{
+  "generated_at": "2026-04-26T01:49:26.069Z",
+  "started_at": "2026-04-26T01:49:11.679Z",
+  "ended_at": "2026-04-26T01:49:26.068Z",
+  "profile": null,
+  "dry_run": false,
+  "no_open": true,
+  "status": "ok",
+  "step_results": [
+    {
+      "id": "Workspace Root Guard",
+      "command": "node scripts/z_workspace_root_guard.mjs",
+      "ok": true,
+      "exit_code": 0,
+      "soft_fail": false,
+      "warning": false
+    },
+    {
+      "id": "Multi-Workspace Guard",
+      "command": "node scripts/z_multi_workspace_guard.mjs",
+      "ok": true,
+      "exit_code": 0,
+      "soft_fail": false,
+      "warning": false
+    },
+    {
+      "id": "Lab Task Structure Guard",
+      "command": "node scripts/z_lab_task_structure_guard.mjs",
+      "ok": true,
+      "exit_code": 0,
+      "soft_fail": false,
+      "warning": false
+    },
+    {
+      "id": "VS Code Time Guard",
+      "command": "node scripts/z_vscode_timeguard.mjs",
+      "ok": true,
+      "exit_code": 0,
+      "soft_fail": false,
+      "warning": false
+    },
+    {
+      "id": "AnyDevices Monitor",
+      "command": "node scripts/z_anydevices_monitor.mjs",
+      "ok": true,
+      "exit_code": 0,
+      "soft_fail": false,
+      "warning": false
+    },
+    {
+      "id": "Gadget Mirrors Guard",
+      "command": "node scripts/z_gadget_mirrors_guard.mjs",
+      "ok": true,
+      "exit_code": 0,
+      "soft_fail": false,
+      "warning": false
+    },
+    {
+      "id": "Sandbox Phase Guard",
+      "command": "node scripts/z_sandbox_phase_guard.mjs",
+      "ok": true,
+      "exit_code": 0,
+      "soft_fail": false,
+      "warning": false
+    },
+    {
+      "id": "Reports Vault Refresh",
+      "command": "python scripts/reports_vault_refresh.py",
+      "ok": true,
+      "exit_code": 0,
+      "soft_fail": false,
+      "warning": false
+    },
+    {
+      "id": "IDE Comm-Flow Guard",
+      "command": "npm run ide:commflow:guard",
+      "ok": true,
+      "exit_code": 0,
+      "soft_fail": true,
+      "warning": false
+    },
+    {
+      "id": "Cross-Project Observer",
+      "command": "npm run monitor:cross-project",
+      "ok": true,
+      "exit_code": 0,
+      "soft_fail": true,
+      "warning": false
+    },
+    {
+      "id": "Lab + Folder Manager Boost",
+      "command": "npm run lab:folder:boost",
+      "ok": true,
+      "exit_code": 0,
+      "soft_fail": true,
+      "warning": false
+    },
+    {
+      "id": "Ecosystem Comm-Flow Verifier",
+      "command": "npm run ecosystem:commflow:verify",
+      "ok": true,
+      "exit_code": 1,
+      "soft_fail": true,
+      "warning": true
+    },
+    {
+      "id": "Autonomous Runtime Cycle",
+      "command": "npm run autonomous:run:once",
+      "ok": true,
+      "exit_code": 0,
+      "soft_fail": true,
+      "warning": false
+    },
+    {
+      "id": "Autonomous Watchdog",
+      "command": "npm run autonomous:watchdog",
+      "ok": true,
+      "exit_code": 0,
+      "soft_fail": true,
+      "warning": false
+    },
+    {
+      "id": "Emit PC Root Workspace",
+      "command": "node scripts/z_emit_pc_root_workspace.mjs",
+      "ok": true,
+      "exit_code": 0,
+      "soft_fail": true,
+      "warning": false
+    },
+    {
+      "id": "Open HTML Cores",
+      "command": "node scripts/z_open_html_cores.mjs --open --no-open",
+      "ok": true,
+      "exit_code": 0,
+      "soft_fail": false,
+      "warning": false
+    }
+  ],
+  "summary": {
+    "total_steps": 16,
+    "warnings": 1,
+    "failed": 0
+  }
+}

@@ -1,0 +1,89 @@
+{
+  "schema": "z.mu.advisor.report.v1",
+  "module_id": "z_mu_civic_knowledge_advisor",
+  "signal": "BLUE",
+  "policy_mode": "advisor_framework_only",
+  "generated_at": "2026-05-07T20:21:28.267Z",
+  "fixtures_included": false,
+  "registry_checks": {
+    "passed": [
+      "mode is advisor_framework_only.",
+      "no_live_ai_provider is true.",
+      "no_public_launch is true.",
+      "no_user_memory is true.",
+      "no_personal_data_collection is true.",
+      "no_legal_advice_claim is true.",
+      "no_government_impersonation is true.",
+      "no_protest_coordination is true.",
+      "no_harassment_or_doxxing is true.",
+      "no_illegal_leak_guidance is true.",
+      "no_ethnic_or_religious_blame is true.",
+      "required_answer_labels complete.",
+      "allowed_modes populated.",
+      "forbidden_user_message_substrings present.",
+      "templates count: 8."
+    ],
+    "advisory": [],
+    "red": []
+  },
+  "template_count": 8,
+  "sample_results": [
+    {
+      "question_id": "mu_q_proc_ministry_010",
+      "mode": "learn_governance",
+      "signal": "GREEN",
+      "reasons": [
+        "procedural / educational framing"
+      ]
+    },
+    {
+      "question_id": "mu_q_checklist_docs_011",
+      "mode": "evidence_checklist",
+      "signal": "GREEN",
+      "reasons": [
+        "procedural / educational framing"
+      ]
+    },
+    {
+      "question_id": "mu_q_claim_wage_uncited_012",
+      "mode": "claim_checker",
+      "signal": "YELLOW",
+      "reasons": [
+        "public claim requires citation — needs_citation truth path"
+      ]
+    },
+    {
+      "question_id": "mu_q_sensitive_review_013",
+      "mode": "understand_my_situation",
+      "signal": "BLUE",
+      "reasons": [
+        "human/legal/ethics review required for this prompt shape"
+      ]
+    },
+    {
+      "question_id": "mu_q_policy_scenario_014",
+      "mode": "policy_explainer",
+      "signal": "GREEN",
+      "reasons": [
+        "policy scenario OK if labeled not prediction"
+      ]
+    }
+  ],
+  "summary": {
+    "green": 3,
+    "yellow": 1,
+    "blue": 1,
+    "red": 0
+  },
+  "locked_law": [
+    "Civic advisor is not government authority.",
+    "Explanation is not legal advice.",
+    "Source link is not proof.",
+    "Answer log is not surveillance.",
+    "User question is not consent to store personal data.",
+    "GREEN is not public launch.",
+    "BLUE requires human/legal/ethics review.",
+    "RED blocks movement.",
+    "AMK-Goku owns sacred moves."
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "schema_version": 1,
+  "generated_at": "2026-05-03T14:39:03.072Z",
+  "advisory_only": true,
+  "drp_note": "Resolve outcomes from Guardian; human feedback from data/logs/z_prediction_validation_history.jsonl (source human). No auto-exec.",
+  "new_entries": 0,
+  "new_human_from_validation": 0,
+  "guardian_missing": 0,
+  "guardian_missing_previous": 0,
+  "last_eval_outcomes": [],
+  "log_file": "data/logs/z_learning_history.jsonl"
+}

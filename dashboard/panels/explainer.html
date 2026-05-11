@@ -1,0 +1,44 @@
+T<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Why Did This Happen?</title>
+    <style>
+      body {
+        font-family: system-ui;
+        background: #0f172a;
+        color: #e5e7eb;
+      }
+      pre {
+        background: #1e293b;
+        color: #f0f0f0;
+        padding: 1em;
+        border-radius: 8px;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Why Did This Happen?</h2>
+    <div id="explanation"></div>
+    <script>
+      async function loadExplanation() {
+        const params = new URLSearchParams(window.location.search);
+        const id = params.get('id');
+        if (!id) return;
+        const res = await fetch(`/api/audit/${id}/explain`);
+        const data = await res.json();
+        document.getElementById('explanation').innerHTML = `
+        <b>Rule:</b> <pre>${JSON.stringify(data.rule, null, 2)}</pre>
+        <b>Context:</b> <pre>${JSON.stringify(data.context, null, 2)}</pre>
+        <b>Consent Path:</b> <pre>${JSON.stringify(data.consent, null, 2)}</pre>
+        <b>Explanation:</b> <pre>${data.explanation}</pre>
+      `;
+      }
+      loadExplanation();
+    </script>
+    <script src="/interface/z_accessibility.js"></script>
+    <script src="/interface/z_auto_compass.js"></script>
+
+    <script src="./z_security_gate.js"></script>
+  </body>
+</html>

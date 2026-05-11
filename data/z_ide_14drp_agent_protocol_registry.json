@@ -1,0 +1,464 @@
+{
+  "schema": "z_ide_14drp_agent_protocol/1.0.0",
+  "registry_name": "Z-IDE-14DRP IDE Agent Protocol",
+  "registry_description": "14 Deep Responsibility Principles for Cursor IDE, future AI agents, and shared IDE ecosystem. Sacred law for protective autonomy.",
+  "effective_date": "2026-05-05",
+  "mode": "approval_gated_agency",
+  "canonical_law": "14_deep_responsibility_principles",
+  "phase": "PHASE_Z_IDE_14DRP_1",
+  "14_deep_responsibility_principles": [
+    {
+      "principle_id": "DRP_1",
+      "name": "Repo root truth",
+      "law": "All agent work MUST operate in canonical Z-Sanctuary repo root. No archive, no external mount, no symlink fallback.",
+      "enforcement": "RED_BLOCK",
+      "validation": "check_repo_root_matches_canonical"
+    },
+    {
+      "principle_id": "DRP_2",
+      "name": "Read latest state first",
+      "law": "Before any action, agent MUST read latest reports (z_ide_fusion_report.md, z_traffic_minibots_status.md, z_ide_14drp_agent_session_status.md). Never act on stale memory.",
+      "enforcement": "YELLOW_ADVISORY_OR_BLUE_BLOCK",
+      "validation": "check_latest_reports_read"
+    },
+    {
+      "principle_id": "DRP_3",
+      "name": "Declare intent before work",
+      "law": "Agent MUST write agent session file with task declaration, workspace, allowed_scope, and sacred_move acknowledgment BEFORE starting work.",
+      "enforcement": "BLUE_GATE",
+      "validation": "check_session_file_exists_before_work"
+    },
+    {
+      "principle_id": "DRP_4",
+      "name": "Respect shadow workspace boundaries",
+      "law": "Agent assigned to workspace X cannot read/write workspace Y files without explicit cross-workspace handoff and AMK approval.",
+      "enforcement": "RED_BLOCK",
+      "validation": "check_shadow_workspace_boundaries"
+    },
+    {
+      "principle_id": "DRP_5",
+      "name": "High-risk files require handoff",
+      "law": "Editing package.json, AI_BUILDER_CONTEXT.md, INDEX.md, registries, or approval policy docs requires handoff with AMK approval context.",
+      "enforcement": "BLUE_GATE",
+      "validation": "check_high_risk_file_handoff"
+    },
+    {
+      "principle_id": "DRP_6",
+      "name": "Sacred moves require explicit AMK approval",
+      "law": "Deploy, secrets, billing, provider calls, bridge activation, auto-launch, public release — all require 'sacred_move_approved' signal from AMK-Goku.",
+      "enforcement": "RED_BLOCK",
+      "validation": "check_sacred_move_approval"
+    },
+    {
+      "principle_id": "DRP_7",
+      "name": "Forbidden actions are absolute",
+      "law": "Agent MUST NOT attempt: deploy, secrets mgmt, billing changes, provider API calls, bridge activation, auto-launch, archive modification, package.json in cache.",
+      "enforcement": "RED_BLOCK_IMMEDIATE",
+      "validation": "check_forbidden_action_not_in_session"
+    },
+    {
+      "principle_id": "DRP_8",
+      "name": "Handoff is proof of work",
+      "law": "Every session MUST write handoff (what changed, why, files touched, commands run, signal result, rollback steps, next lane).",
+      "enforcement": "BLUE_ADVISORY_OR_RED_FOR_HIGH_RISK",
+      "validation": "check_handoff_completeness"
+    },
+    {
+      "principle_id": "DRP_9",
+      "name": "No two agents edit same high-risk file without handoff",
+      "law": "Two agent sessions cannot both declare intent to modify same high-risk file. Collision MUST be detected and blocked.",
+      "enforcement": "RED_BLOCK",
+      "validation": "check_high_risk_file_collision"
+    },
+    {
+      "principle_id": "DRP_10",
+      "name": "Approval ladder is sacred",
+      "law": "L0 (sacred move) requires AMK explicit approval. L1 (read-only) auto-approved. L2 (isolated experiment) auto-approved with handoff. No shortcuts.",
+      "enforcement": "BLUE_GATE_FOR_L0",
+      "validation": "check_approval_ladder_honored"
+    },
+    {
+      "principle_id": "DRP_11",
+      "name": "Autonomy is progressive and gated",
+      "law": "L0 = no autonomy (human request only). L1 = read-only validation. L2 = isolated edit. L3 = cross-workspace (future). L4 = multi-agent (future). No auto-jump.",
+      "enforcement": "BLUE_GATE",
+      "validation": "check_autonomy_level_progression"
+    },
+    {
+      "principle_id": "DRP_12",
+      "name": "Evidence trail is mandatory",
+      "law": "Every agent action creates evidence: session file, handoff entry, report update. No shadow work. No off-record changes.",
+      "enforcement": "RED_BLOCK_IF_NO_EVIDENCE",
+      "validation": "check_evidence_trail_exists"
+    },
+    {
+      "principle_id": "DRP_13",
+      "name": "Green signal does not mean deploy",
+      "law": "Agent signal GREEN means safe to continue coordination work, NOT safe to deploy. Deploy is always BLUE (AMK decision).",
+      "enforcement": "LOCKED_LAW",
+      "validation": "check_green_not_deploy"
+    },
+    {
+      "principle_id": "DRP_14",
+      "name": "AMK-Goku owns ALL sacred moves",
+      "law": "Only AMK-Goku can approve: deploy, auto-launch, billing, secrets access, provider calls, bridge activation, public release, children/user data access.",
+      "enforcement": "RED_BLOCK_ABSOLUTE",
+      "validation": "check_amk_approval_required"
+    }
+  ],
+  "supported_agents": [
+    {
+      "agent_id": "cursor_ide",
+      "display_name": "Cursor IDE",
+      "max_autonomy_level": "L2_isolated_edit",
+      "allowed_workspaces": [
+        "main_super_saiyan_workspace",
+        "franed_shadow_workspace",
+        "lumina_shadow_workspace",
+        "creative_shadow_workspace",
+        "z_lab_shadow_workspace",
+        "api_ssws_shadow_workspace"
+      ],
+      "allowed_actions": [
+        "read_docs",
+        "edit_docs",
+        "edit_ui",
+        "edit_config_safe",
+        "write_handoff",
+        "run_verify_commands",
+        "read_reports"
+      ],
+      "sacred_move_required_for": [
+        "deploy",
+        "secrets_access",
+        "billing_changes",
+        "provider_calls",
+        "bridge_activation",
+        "auto_launch",
+        "public_release"
+      ],
+      "high_risk_files_requires_handoff": true
+    },
+    {
+      "agent_id": "vscode_copilot",
+      "display_name": "VS Code Copilot",
+      "max_autonomy_level": "L1_read_only_validation",
+      "allowed_workspaces": [
+        "main_super_saiyan_workspace"
+      ],
+      "allowed_actions": [
+        "read_docs",
+        "read_code",
+        "read_reports",
+        "write_analysis",
+        "write_handoff",
+        "suggest_changes"
+      ],
+      "sacred_move_required_for": [
+        "all_writes_except_handoff",
+        "deploy",
+        "secrets_access",
+        "billing_changes",
+        "provider_calls",
+        "bridge_activation",
+        "auto_launch",
+        "public_release"
+      ],
+      "high_risk_files_requires_handoff": true
+    },
+    {
+      "agent_id": "future_ai_agent",
+      "display_name": "Future AI Agent",
+      "max_autonomy_level": "L1_read_only_validation",
+      "allowed_workspaces": [
+        "z_lab_shadow_workspace"
+      ],
+      "allowed_actions": [
+        "read_docs",
+        "read_reports",
+        "write_handoff"
+      ],
+      "sacred_move_required_for": [
+        "all_writes_except_handoff",
+        "deploy",
+        "secrets_access",
+        "billing_changes",
+        "provider_calls",
+        "bridge_activation",
+        "auto_launch"
+      ],
+      "high_risk_files_requires_handoff": true
+    }
+  ],
+  "autonomy_levels": [
+    {
+      "level": "L0_sacred_move",
+      "display": "Sacred Move (Human Request Only)",
+      "description": "Deploy, billing, secrets, provider, auto-launch, public release. No agent autonomy.",
+      "approval_required": "AMK_GOKU_EXPLICIT",
+      "approval_gate": "BLUE",
+      "auto_allowed": false,
+      "examples": [
+        "deploy to production",
+        "change billing",
+        "access API keys",
+        "activate bridges",
+        "enable auto-launch",
+        "release publicly"
+      ]
+    },
+    {
+      "level": "L1_read_only_validation",
+      "display": "Read-Only Coordination",
+      "description": "Read reports, validate state, write analysis/handoff. No code/config changes.",
+      "approval_required": "NONE",
+      "approval_gate": "GREEN",
+      "auto_allowed": true,
+      "examples": [
+        "read status reports",
+        "validate registry",
+        "analyze codebase",
+        "write handoff notes",
+        "suggest improvements"
+      ]
+    },
+    {
+      "level": "L2_isolated_edit",
+      "display": "Isolated Safe Edit",
+      "description": "Edit docs, UI, safe config in assigned shadow workspace. Handoff required. No deploy.",
+      "approval_required": "HANDOFF_REQUIRED",
+      "approval_gate": "BLUE_OR_GREEN_AFTER_HANDOFF",
+      "auto_allowed": true,
+      "examples": [
+        "edit documentation",
+        "update UI components",
+        "modify safe config",
+        "experiment in Z-Lab"
+      ]
+    },
+    {
+      "level": "L3_cross_workspace_edit",
+      "display": "Cross-Workspace Edit (Future)",
+      "description": "Edit across shadow workspaces. Requires multi-handoff, cross-workspace approval.",
+      "approval_required": "MULTI_HANDOFF_AMK_APPROVAL",
+      "approval_gate": "BLUE",
+      "auto_allowed": false,
+      "examples": [
+        "refactor shared utilities",
+        "update cross-workspace docs"
+      ]
+    },
+    {
+      "level": "L4_multi_agent_coordination",
+      "display": "Multi-Agent Coordination (Future)",
+      "description": "Coordinate work across multiple agents. Requires orchestration layer.",
+      "approval_required": "AMK_ORCHESTRATION_APPROVAL",
+      "approval_gate": "BLUE",
+      "auto_allowed": false,
+      "examples": [
+        "parallel task execution",
+        "agent-to-agent handoff"
+      ]
+    }
+  ],
+  "sacred_moves": [
+    {
+      "sacred_move_id": "deploy_to_production",
+      "display_name": "Deploy to Production",
+      "risk_level": "CRITICAL",
+      "requires_approval": "AMK_GOKU_EXPLICIT",
+      "requires_preflight": [
+        "npm run verify:md",
+        "npm run z:traffic",
+        "npm run z:car2",
+        "npm run z:ide:fusion",
+        "npm run z:ide:14drp"
+      ],
+      "locked_law": "GREEN ≠ deploy. Deploy is BLUE only."
+    },
+    {
+      "sacred_move_id": "access_secrets_api_keys",
+      "display_name": "Access Secrets / API Keys",
+      "risk_level": "CRITICAL",
+      "requires_approval": "AMK_GOKU_EXPLICIT",
+      "requires_evidence": "explicit_approval_token",
+      "locked_law": "Secrets are BLUE always. No auto-access."
+    },
+    {
+      "sacred_move_id": "billing_changes",
+      "display_name": "Billing / Pricing Changes",
+      "risk_level": "CRITICAL",
+      "requires_approval": "AMK_GOKU_EXPLICIT",
+      "requires_evidence": "approval_with_reason"
+    },
+    {
+      "sacred_move_id": "provider_api_calls",
+      "display_name": "Provider API Calls (Cloudflare, GitHub, etc.)",
+      "risk_level": "HIGH",
+      "requires_approval": "AMK_GOKU_EXPLICIT",
+      "requires_preflight": [
+        "npm run verify:md"
+      ]
+    },
+    {
+      "sacred_move_id": "bridge_activation",
+      "display_name": "Bridge Activation (Z-Compass, Z-Comms)",
+      "risk_level": "CRITICAL",
+      "requires_approval": "AMK_GOKU_EXPLICIT"
+    },
+    {
+      "sacred_move_id": "auto_launch_enable",
+      "display_name": "Auto-Launch Enablement",
+      "risk_level": "HIGH",
+      "requires_approval": "AMK_GOKU_EXPLICIT",
+      "reason": "Future-gated autonomy. FUSION-1/14DRP-1 do not enable this."
+    },
+    {
+      "sacred_move_id": "public_release",
+      "display_name": "Public Release / External Communication",
+      "risk_level": "HIGH",
+      "requires_approval": "AMK_GOKU_EXPLICIT"
+    },
+    {
+      "sacred_move_id": "children_user_data_access",
+      "display_name": "Children / User Data / Voice / Camera / GPS Access",
+      "risk_level": "CRITICAL",
+      "requires_approval": "AMK_GOKU_EXPLICIT",
+      "locked_law": "Privacy and safety are non-negotiable."
+    }
+  ],
+  "approval_ladder": [
+    {
+      "rung": 0,
+      "level": "L0_Sacred",
+      "action": "Human request for sacred move",
+      "approval_gate": "BLUE",
+      "approver": "AMK_GOKU",
+      "auto_allowed": false
+    },
+    {
+      "rung": 1,
+      "level": "L1_Read_Only",
+      "action": "Agent reads reports, validates, suggests",
+      "approval_gate": "GREEN",
+      "approver": "NONE",
+      "auto_allowed": true
+    },
+    {
+      "rung": 2,
+      "level": "L2_Isolated",
+      "action": "Agent edits in shadow workspace with handoff",
+      "approval_gate": "GREEN_AFTER_HANDOFF",
+      "approver": "AUTOMATIC_IF_HANDOFF_COMPLETE",
+      "auto_allowed": true
+    },
+    {
+      "rung": 3,
+      "level": "L3_Cross",
+      "action": "Agent edits across workspaces (future)",
+      "approval_gate": "BLUE",
+      "approver": "AMK_GOKU_MULTI_APPROVAL",
+      "auto_allowed": false
+    },
+    {
+      "rung": 4,
+      "level": "L4_Multi_Agent",
+      "action": "Multiple agents coordinate (future)",
+      "approval_gate": "BLUE",
+      "approver": "AMK_ORCHESTRATION",
+      "auto_allowed": false
+    }
+  ],
+  "forbidden_actions_absolute": [
+    "deploy_without_amk_approval",
+    "access_secrets_without_approval",
+    "billing_changes_without_approval",
+    "provider_calls_without_approval",
+    "bridge_activation_without_approval",
+    "auto_launch_without_approval",
+    "archive_modification",
+    "package_json_in_archive_cache",
+    "edit_high_risk_file_without_handoff",
+    "two_agents_same_high_risk_file_no_handoff",
+    "cross_workspace_without_approval",
+    "stale_state_action"
+  ],
+  "session_validation_rules": [
+    {
+      "rule_id": "repo_root_check",
+      "description": "Session repo_root must equal canonical Z-Sanctuary root",
+      "blocking": true,
+      "signal_on_fail": "RED"
+    },
+    {
+      "rule_id": "latest_reports_check",
+      "description": "Session must declare reports read before work",
+      "blocking": false,
+      "signal_on_fail": "YELLOW"
+    },
+    {
+      "rule_id": "workspace_boundary_check",
+      "description": "Session workspace must be in allowed_workspaces for agent",
+      "blocking": true,
+      "signal_on_fail": "RED"
+    },
+    {
+      "rule_id": "high_risk_file_handoff_check",
+      "description": "If session edits high-risk file, handoff must exist",
+      "blocking": true,
+      "signal_on_fail": "BLUE"
+    },
+    {
+      "rule_id": "sacred_move_approval_check",
+      "description": "If session attempts sacred move, AMK approval must be present",
+      "blocking": true,
+      "signal_on_fail": "RED"
+    },
+    {
+      "rule_id": "forbidden_action_check",
+      "description": "Session must not declare forbidden action",
+      "blocking": true,
+      "signal_on_fail": "RED"
+    },
+    {
+      "rule_id": "file_collision_check",
+      "description": "Two active sessions cannot edit same high-risk file",
+      "blocking": true,
+      "signal_on_fail": "RED"
+    }
+  ],
+  "locked_law": [
+    "14_DRP_is_immutable",
+    "Repo_root_truth_is_absolute",
+    "Read_latest_state_first",
+    "Declare_intent_before_work",
+    "Respect_shadow_workspace_boundaries",
+    "High_risk_files_require_handoff",
+    "Sacred_moves_require_AMK_approval",
+    "Forbidden_actions_are_absolute",
+    "Handoff_is_proof_of_work",
+    "No_two_agents_same_high_risk_file",
+    "Approval_ladder_is_sacred",
+    "Autonomy_is_progressive_and_gated",
+    "Evidence_trail_is_mandatory",
+    "GREEN_not_equal_deploy",
+    "AMK_GOKU_owns_sacred_moves",
+    "No_shadow_work_no_off_record_changes",
+    "Agent_signal_GREEN_means_safe_coordination",
+    "Agent_signal_BLUE_means_AMK_decision",
+    "Agent_signal_RED_means_block_immediately"
+  ],
+  "related_docs": [
+    "docs/Z_IDE_14DRP_AGENT_PROTOCOL.md",
+    "docs/Z_IDE_FUSION_WORKFLOW_CONTROL.md",
+    "docs/VS_FALLBACK_1_VSCODE_OPERATING_MODE.md",
+    "docs/AMK_GOKU_MAIN_CONTROL_DASHBOARD.md",
+    "docs/AMK_AUTONOMOUS_APPROVAL_LADDER.md"
+  ],
+  "related_reports": [
+    "data/reports/z_ide_14drp_agent_session_status.json",
+    "data/reports/z_ide_14drp_agent_session_status.md",
+    "data/reports/z_ide_fusion_report.md",
+    "data/reports/z_traffic_minibots_status.md"
+  ]
+}

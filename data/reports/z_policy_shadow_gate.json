@@ -1,0 +1,41 @@
+{
+  "generated_at": "2026-04-17T16:54:10.422Z",
+  "mode": "shadow",
+  "enforcement": "advisory",
+  "status": "ready",
+  "binaries": {
+    "opa": false,
+    "conftest": false
+  },
+  "input": {
+    "formula_registry": {
+      "status": "internal-only"
+    },
+    "folder_policy": {
+      "mode": "internal-only"
+    },
+    "request_only_policy_present": true
+  },
+  "checks": [
+    {
+      "id": "formula_registry_internal_only",
+      "pass": true,
+      "note": "status=internal-only"
+    },
+    {
+      "id": "folder_policy_internal_only",
+      "pass": true,
+      "note": "mode=internal-only"
+    },
+    {
+      "id": "request_only_policy_present",
+      "pass": true,
+      "note": "policy file present"
+    },
+    {
+      "id": "rego_pack_present",
+      "pass": true,
+      "note": "opa/shadow_gate.rego present"
+    }
+  ]
+}

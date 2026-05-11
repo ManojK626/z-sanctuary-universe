@@ -1,0 +1,15 @@
+{
+  "generated_at": "2026-05-02T18:16:34.180815+00:00",
+  "workspace": "Z-SSWS",
+  "formula_registry": {
+    "status": "internal-only",
+    "count": 1,
+    "vault_path": "safe_pack/z_sanctuary_vault"
+  },
+  "system_status": {
+    "quiet_mode": null,
+    "rhythm_state": null,
+    "last_run": null
+  },
+  "notes": "Read-only summary. No execution authority."
+}

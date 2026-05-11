@@ -1,0 +1,1978 @@
+{
+  "schema": "amk_project_indicators_v1",
+  "phase": "AMK-INDICATOR-1",
+  "posture": "read_only_unified_readiness_no_execution",
+  "law_note": "Indicator ≠ permission. Percentage ≠ certification. Go/No-Go ≠ deployment. Notification ≠ execution. AMK/human opens lanes; gates verify before work.",
+  "percent_bands_doc": "0–25 concept/doctrine · 26–50 docs/metadata · 51–75 validator/report/dashboard visible · 76–90 tested local baseline · 91–99 release-candidate review · 100 human-signed release/deploy-ready receipt",
+  "cloudflare_go_no_go": {
+    "deployment_status": "HOLD",
+    "go_no_go_label": "NO_GO_FOR_DEPLOY",
+    "summary": "Cloudflare or edge deploy remains closed until a separate human-approved deployment lane exists. This card is advisory metadata only.",
+    "required_gates": [
+      "Explicit deployment charter + DRP review",
+      "npm run verify:md and dashboard:registry-verify when UI/docs move",
+      "Z-Traffic + CAR² posture acceptable for scope",
+      "Commercial Z-SUSBV / overseer signals not RED for paid surfaces",
+      "manual_release / release control posture per AGENTS.md"
+    ],
+    "blocked_categories": [
+      "Live production bind without overseer approval",
+      "Silent API token placement in repo",
+      "Auto-promote shadow HTML to production without merge ritual"
+    ],
+    "human_approval_required": true,
+    "related_docs": [
+      "docs/Z-CLOUDFLARE-AI-COMMS-PRECAUTIONS.md",
+      "docs/COMMERCIAL-READINESS.md"
+    ]
+  },
+  "indicators": [
+    {
+      "id": "amk_map_stack",
+      "name": "AMK-MAP stack (1–3)",
+      "domain": "operator_dashboard",
+      "project_or_system": "ZSanctuary_Universe",
+      "signal": "GREEN",
+      "growth_percent": 72,
+      "readiness_label": "Dashboard + domain lenses + catalog + observatory shipped read-only",
+      "go_no_go": "GO_FOR_LOCAL_REVIEW",
+      "autonomy_level": "L1_REPORT",
+      "recommended_next_action": "HTTP manual pass on lenses; tune JSON only unless a new lane opens.",
+      "human_confirmation_required": false,
+      "related_docs": [
+        "docs/AMK_GOKU_MAIN_CONTROL_DASHBOARD.md",
+        "docs/PHASE_AMK_MAP_3_UNIVERSAL_DOMAIN_VIEW.md"
+      ],
+      "related_reports": [],
+      "blocked_until": [],
+      "forbidden_actions": [
+        "deploy",
+        "bridge_exec",
+        "billing_change",
+        "live_research"
+      ],
+      "last_known_basis": "Phase receipts MAP-1–3; no runtime dispatch in HTML.",
+      "dynamic_overlay": "none"
+    },
+    {
+      "id": "amk_notifications",
+      "name": "AMK-Goku Notifications",
+      "domain": "human_confirmation",
+      "project_or_system": "ZSanctuary_Universe",
+      "signal": "GREEN",
+      "growth_percent": 68,
+      "readiness_label": "AMK-NOTIFY-1 sealed — localStorage stub only",
+      "go_no_go": "GO_FOR_LOCAL_REVIEW",
+      "autonomy_level": "L1_REPORT",
+      "recommended_next_action": "Review queue JSON; confirm lanes outside the panel.",
+      "human_confirmation_required": true,
+      "related_docs": [
+        "docs/AMK_GOKU_NOTIFICATIONS_PANEL.md",
+        "docs/AMK_GOKU_OPERATOR_CONFIRMATION_POLICY.md"
+      ],
+      "related_reports": [
+        "data/amk_operator_notifications.json"
+      ],
+      "blocked_until": [],
+      "forbidden_actions": [
+        "task_exec_from_ui",
+        "auto_merge"
+      ],
+      "last_known_basis": "Notifications panel wired on unified + shadow dashboards.",
+      "dynamic_overlay": "none"
+    },
+    {
+      "id": "z_traffic_minibots",
+      "name": "Z-Traffic Minibots",
+      "domain": "signals",
+      "project_or_system": "ZSanctuary_Universe",
+      "signal": "GREEN",
+      "growth_percent": null,
+      "readiness_label": "Overlay from z:traffic report when available",
+      "go_no_go": "PREPARE_FOR_RELEASE_REVIEW",
+      "autonomy_level": "L1_REPORT",
+      "recommended_next_action": "Run npm run z:traffic after hub ritual changes.",
+      "human_confirmation_required": false,
+      "related_docs": [
+        "docs/Z_TRAFFIC_MINIBOTS.md"
+      ],
+      "related_reports": [
+        "data/reports/z_traffic_minibots_status.json"
+      ],
+      "blocked_until": [],
+      "forbidden_actions": [
+        "auto_widen_commercial_lane"
+      ],
+      "last_known_basis": "Report JSON; signal may be overlaid live in UI.",
+      "dynamic_overlay": "z_traffic"
+    },
+    {
+      "id": "zag_guardian",
+      "name": "ZAG Guardian Loop",
+      "domain": "autonomy",
+      "project_or_system": "ZSanctuary_Universe",
+      "signal": "BLUE",
+      "growth_percent": 55,
+      "readiness_label": "Policy JSON present — human posture for autonomy bands",
+      "go_no_go": "BLUE_HUMAN_DECISION_REQUIRED",
+      "autonomy_level": "L2_POLICY",
+      "recommended_next_action": "Read docs/Z_AUTONOMOUS_GUARDIAN_LOOP.md before widening autonomy.",
+      "human_confirmation_required": true,
+      "related_docs": [
+        "docs/Z_AUTONOMOUS_GUARDIAN_LOOP.md"
+      ],
+      "related_reports": [],
+      "blocked_until": [
+        "charter_for_autonomous_dispatch"
+      ],
+      "forbidden_actions": [
+        "silent_autopilot_dispatch"
+      ],
+      "last_known_basis": "data/z_autonomy_task_policy.json metadata posture.",
+      "dynamic_overlay": "none"
+    },
+    {
+      "id": "z_swarm_14drp_universal_law",
+      "name": "Z-SWARM-14DRP universal law",
+      "domain": "governance",
+      "project_or_system": "ZSanctuary_Universe",
+      "signal": null,
+      "growth_percent": 53,
+      "readiness_label": "UNKNOWN until swarm validator report is present",
+      "go_no_go": "ADVISORY_GOVERNANCE_ONLY",
+      "autonomy_level": "L1_REPORT",
+      "recommended_next_action": "Use this law registry before allowing any AI swarm or mini-bot lane.",
+      "human_confirmation_required": true,
+      "related_docs": [
+        "docs/Z_SWARM_14DRP_UNIVERSAL_AGENT_LAW.md",
+        "docs/Z_FORMULA_SWARM_CO_DESIGN_ENGINE.md",
+        "docs/PHASE_Z_SWARM_14DRP_1_GREEN_RECEIPT.md"
+      ],
+      "related_reports": [
+        "data/reports/z_swarm_14drp_report.json",
+        "data/reports/z_swarm_14drp_report.md"
+      ],
+      "blocked_until": [],
+      "forbidden_actions": [
+        "swarm_runtime_execution",
+        "provider_call",
+        "deploy",
+        "billing_change",
+        "bridge_exec"
+      ],
+      "last_known_basis": "Overlay from z_swarm_14drp_report.json when available.",
+      "dynamic_overlay": "z_swarm_14drp"
+    },
+    {
+      "id": "z_ide_fusion_control",
+      "name": "Z-IDE-FUSION shared workflow control",
+      "domain": "governance",
+      "project_or_system": "ZSanctuary_Universe",
+      "signal": null,
+      "growth_percent": 52,
+      "readiness_label": "UNKNOWN until IDE fusion report exists",
+      "go_no_go": "ADVISORY_COORDINATION_ONLY",
+      "autonomy_level": "L1_REPORT",
+      "recommended_next_action": "Read fusion report before allowing parallel IDE work.",
+      "human_confirmation_required": true,
+      "related_docs": [
+        "docs/Z_IDE_FUSION_WORKFLOW_CONTROL.md",
+        "docs/PHASE_Z_IDE_FUSION_1_GREEN_RECEIPT.md",
+        "docs/VS_FALLBACK_1_VSCODE_OPERATING_MODE.md"
+      ],
+      "related_reports": [
+        "data/reports/z_ide_fusion_report.json",
+        "data/reports/z_ide_fusion_report.md"
+      ],
+      "blocked_until": [],
+      "forbidden_actions": [
+        "runtime_ide_remote_control",
+        "deploy",
+        "provider_call",
+        "billing_change",
+        "bridge_exec",
+        "auto_launch"
+      ],
+      "last_known_basis": "Overlay from z_ide_fusion_report.json when report is available.",
+      "dynamic_overlay": "z_ide_fusion_control"
+    },
+    {
+      "id": "z_sec_triplecheck_audit",
+      "name": "Z-SEC Triple-check audit",
+      "domain": "security_governance",
+      "project_or_system": "ZSanctuary_Universe",
+      "signal": null,
+      "growth_percent": 54,
+      "readiness_label": "UNKNOWN until triple-check report exists",
+      "go_no_go": "ADVISORY_SECURITY_AUDIT_ONLY",
+      "autonomy_level": "L1_REPORT",
+      "recommended_next_action": "Read triple-check report before opening new lanes.",
+      "human_confirmation_required": true,
+      "related_docs": [
+        "docs/Z_SEC_TRIPLECHECK_COMMUNICATION_FLOW_AUDIT.md",
+        "docs/Z_MR_BUG_MINI_FIXER_POLICY.md",
+        "docs/PHASE_Z_SEC_TRIPLECHECK_1_GREEN_RECEIPT.md"
+      ],
+      "related_reports": [
+        "data/reports/z_sec_triplecheck_report.json",
+        "data/reports/z_sec_triplecheck_report.md"
+      ],
+      "blocked_until": [],
+      "forbidden_actions": [
+        "deploy",
+        "billing_change",
+        "provider_call",
+        "bridge_exec",
+        "auto_launch",
+        "secrets_write"
+      ],
+      "last_known_basis": "Overlay from z_sec_triplecheck_report.json when available.",
+      "dynamic_overlay": "z_sec_triplecheck"
+    },
+    {
+      "id": "vh100",
+      "name": "VH100 Security Core",
+      "domain": "security",
+      "project_or_system": "ZSanctuary_Universe",
+      "signal": "GOLD",
+      "growth_percent": 48,
+      "readiness_label": "Phase VH100-1 sealed baseline (docs + JSON)",
+      "go_no_go": "GO_FOR_LOCAL_REVIEW",
+      "autonomy_level": "L1_REPORT",
+      "recommended_next_action": "Treat as sealed doctrine; no attack tooling.",
+      "human_confirmation_required": false,
+      "related_docs": [
+        "docs/security/Z_VH100_VEGETA_HARISHA_SECURITY_CORE.md"
+      ],
+      "related_reports": [],
+      "blocked_until": [],
+      "forbidden_actions": [
+        "offensive_tooling"
+      ],
+      "last_known_basis": "data/z_vh100_security_posture.json",
+      "dynamic_overlay": "none"
+    },
+    {
+      "id": "mcburb",
+      "name": "MCBURB backup posture",
+      "domain": "security",
+      "project_or_system": "ZSanctuary_Universe",
+      "signal": "GOLD",
+      "growth_percent": 48,
+      "readiness_label": "Phase MCBURB-1 doctrine + policy JSON",
+      "go_no_go": "GO_FOR_LOCAL_REVIEW",
+      "autonomy_level": "L1_REPORT",
+      "recommended_next_action": "Keep backup receipts current after infra changes.",
+      "human_confirmation_required": false,
+      "related_docs": [
+        "docs/security/Z_MCBURB_BACKUP_RECONVERGE_BOOSTER.md"
+      ],
+      "related_reports": [],
+      "blocked_until": [],
+      "forbidden_actions": [
+        "surveillance_expansion"
+      ],
+      "last_known_basis": "data/z_mcburb_backup_policy.json",
+      "dynamic_overlay": "none"
+    },
+    {
+      "id": "fbap",
+      "name": "FBAP fire-backs awareness",
+      "domain": "security",
+      "project_or_system": "ZSanctuary_Universe",
+      "signal": "GOLD",
+      "growth_percent": 46,
+      "readiness_label": "Taxonomy JSON + doctrine read-only",
+      "go_no_go": "GO_FOR_LOCAL_REVIEW",
+      "autonomy_level": "L1_REPORT",
+      "recommended_next_action": "Observation-first; no silent incident automation.",
+      "human_confirmation_required": false,
+      "related_docs": [
+        "docs/security/Z_FBAP_FIRE_BACKS_AWARENESS_PROTOCOL.md"
+      ],
+      "related_reports": [],
+      "blocked_until": [],
+      "forbidden_actions": [
+        "auto_incident_response"
+      ],
+      "last_known_basis": "data/z_fbap_event_taxonomy.json",
+      "dynamic_overlay": "none"
+    },
+    {
+      "id": "nav_workstation",
+      "name": "NAV Workstation (catalog)",
+      "domain": "operator_visibility",
+      "project_or_system": "ZSanctuary_Universe",
+      "signal": "GREEN",
+      "growth_percent": 62,
+      "readiness_label": "NAV-1 read-only catalog posture",
+      "go_no_go": "GO_FOR_LOCAL_REVIEW",
+      "autonomy_level": "L1_REPORT",
+      "recommended_next_action": "Run dashboard:registry-verify after dashboard edits.",
+      "human_confirmation_required": false,
+      "related_docs": [
+        "docs/dashboard/Z_UNIVERSE_WORKSTATION_NAVIGATOR.md"
+      ],
+      "related_reports": [],
+      "blocked_until": [],
+      "forbidden_actions": [
+        "catalog_implies_entitlement"
+      ],
+      "last_known_basis": "dashboard/data/z_universe_service_catalog.json",
+      "dynamic_overlay": "none"
+    },
+    {
+      "id": "zsx",
+      "name": "ZSX cross-project capability",
+      "domain": "cross_project",
+      "project_or_system": "ZSanctuary_Universe",
+      "signal": "YELLOW",
+      "growth_percent": 58,
+      "readiness_label": "Index present — some placeholders until manifests land",
+      "go_no_go": "PREPARE_FOR_RELEASE_REVIEW",
+      "autonomy_level": "L1_REPORT",
+      "recommended_next_action": "npm run z:cross-project:sync after catalog edits.",
+      "human_confirmation_required": false,
+      "related_docs": [
+        "docs/cross-project/PHASE_ZSX_1_GREEN_RECEIPT.md"
+      ],
+      "related_reports": [],
+      "blocked_until": [
+        "sibling_manifests_for_all_rows"
+      ],
+      "forbidden_actions": [
+        "silent_bridge_inheritance"
+      ],
+      "last_known_basis": "data/z_cross_project_capability_index.json",
+      "dynamic_overlay": "none"
+    },
+    {
+      "id": "zmc_magical",
+      "name": "ZMC Magical Canvas PlayKit",
+      "domain": "creative",
+      "project_or_system": "ZSanctuary_Universe",
+      "signal": "PURPLE",
+      "growth_percent": 35,
+      "readiness_label": "Visionary / registry slice — not a live commercial lane",
+      "go_no_go": "NO_GO_FOR_DEPLOY",
+      "autonomy_level": "L0_OBSERVE",
+      "recommended_next_action": "Treat as future-gated creative registry; do not price as shipped product.",
+      "human_confirmation_required": true,
+      "related_docs": [
+        "docs/Z_SANCTUARY_MONSTER_PROJECT_MASTER_MAP.md"
+      ],
+      "related_reports": [],
+      "blocked_until": [
+        "charter_for_magical_commercial_surface"
+      ],
+      "forbidden_actions": [
+        "public_price_claim"
+      ],
+      "last_known_basis": "Monster map + magical registry metadata; PURPLE = not active commercial.",
+      "dynamic_overlay": "none"
+    },
+    {
+      "id": "zsusbv_overseer",
+      "name": "Z-SUSBV Benchmark Overseer",
+      "domain": "commercial_benchmark",
+      "project_or_system": "ZSanctuary_Universe",
+      "signal": "YELLOW",
+      "growth_percent": 66,
+      "readiness_label": "Honest baseline — optional hub capsule pending (ZSUSBV-O1)",
+      "go_no_go": "NO_GO_FOR_PUBLIC_PRICING",
+      "autonomy_level": "L1_REPORT",
+      "recommended_next_action": "Open ZSUSBV-O2 hub capsule only when AMK chooses.",
+      "human_confirmation_required": true,
+      "related_docs": [
+        "docs/commercial/Z_SUSBV_BENCHMARK_OVERSEER.md",
+        "docs/commercial/Z_SUSBV_SANCTUARY_SELF_BENCHMARKS_VALIDATION.md"
+      ],
+      "related_reports": [
+        "data/reports/z_susbv_overseer_report.json",
+        "data/reports/z_susbv_validation_report.json"
+      ],
+      "blocked_until": [
+        "hub capsule declared",
+        "human pricing review",
+        "commercial readiness gate"
+      ],
+      "forbidden_actions": [
+        "live_web_research",
+        "auto_price_write"
+      ],
+      "last_known_basis": "npm run z:susbv:overseer + z:susbv reports; overseer_signal may overlay.",
+      "dynamic_overlay": "z_susbv_overseer"
+    },
+    {
+      "id": "z_car2",
+      "name": "Z-CAR² structure mirror",
+      "domain": "quality",
+      "project_or_system": "ZSanctuary_Universe",
+      "signal": null,
+      "growth_percent": null,
+      "readiness_label": "UNKNOWN until report fetch — never fake green",
+      "go_no_go": "PREPARE_FOR_RELEASE_REVIEW",
+      "autonomy_level": "L1_REPORT",
+      "recommended_next_action": "npm run z:car2 after large doc or dashboard churn.",
+      "human_confirmation_required": false,
+      "related_docs": [
+        "docs/Z_AUTONOMOUS_GUARDIAN_LOOP.md"
+      ],
+      "related_reports": [
+        "data/reports/z_car2_similarity_report.json"
+      ],
+      "blocked_until": [],
+      "forbidden_actions": [
+        "auto_refactor_from_report"
+      ],
+      "last_known_basis": "CAR² JSON optional overlay for histogram-derived caution.",
+      "dynamic_overlay": "z_car2"
+    },
+    {
+      "id": "zuno_coverage",
+      "name": "Z-Zuno coverage audit",
+      "domain": "registry_truth",
+      "project_or_system": "ZSanctuary_Universe",
+      "signal": null,
+      "growth_percent": null,
+      "readiness_label": "UNKNOWN without coverage JSON fetch",
+      "go_no_go": "PREPARE_FOR_RELEASE_REVIEW",
+      "autonomy_level": "L1_REPORT",
+      "recommended_next_action": "npm run zuno:coverage when registry or modules move.",
+      "human_confirmation_required": false,
+      "related_docs": [
+        "docs/AI_BUILDER_CONTEXT.md"
+      ],
+      "related_reports": [
+        "data/reports/z_zuno_coverage_audit.json"
+      ],
+      "blocked_until": [],
+      "forbidden_actions": [
+        "auto_registry_write"
+      ],
+      "last_known_basis": "Coverage audit JSON optional overlay.",
+      "dynamic_overlay": "zuno"
+    },
+    {
+      "id": "z_questra",
+      "name": "Z-QUESTRA",
+      "domain": "comfort_lab",
+      "project_or_system": "z-questra",
+      "signal": "GREEN",
+      "growth_percent": 70,
+      "readiness_label": "Local Vite lab; benchmark capsule example present",
+      "go_no_go": "GO_FOR_LOCAL_REVIEW",
+      "autonomy_level": "L1_REPORT",
+      "recommended_next_action": "cd z-questra && npm test after UI edits.",
+      "human_confirmation_required": false,
+      "related_docs": [
+        "z-questra/README.md",
+        "docs/z_zuno_technology_snapshot.md"
+      ],
+      "related_reports": [],
+      "blocked_until": [
+        "hub_bridge_charter"
+      ],
+      "forbidden_actions": [
+        "live_hub_bridge_without_charter"
+      ],
+      "last_known_basis": "z-questra/data/z_project_benchmark_capsule.json",
+      "dynamic_overlay": "none"
+    },
+    {
+      "id": "eirmind",
+      "name": "ÉirMind",
+      "domain": "sibling_reference",
+      "project_or_system": "satellite",
+      "signal": "PURPLE",
+      "growth_percent": 22,
+      "readiness_label": "Reference-only — no hub entitlement implied",
+      "go_no_go": "NO_GO_FOR_DEPLOY",
+      "autonomy_level": "L0_OBSERVE",
+      "recommended_next_action": "Hierarchy chief doc before any bridge narrative.",
+      "human_confirmation_required": true,
+      "related_docs": [
+        "docs/Z-HIERARCHY-CHIEF-AND-OBSERVER-VIEW.md"
+      ],
+      "related_reports": [],
+      "blocked_until": [
+        "charter_and_drp_for_bridge"
+      ],
+      "forbidden_actions": [
+        "silent_price_inheritance"
+      ],
+      "last_known_basis": "Cross-project reference posture only.",
+      "dynamic_overlay": "none"
+    },
+    {
+      "id": "zquestcraft",
+      "name": "ZQuestCraft (placeholder)",
+      "domain": "sibling_reference",
+      "project_or_system": "satellite",
+      "signal": "PURPLE",
+      "growth_percent": 18,
+      "readiness_label": "Placeholder until manifest and capsule exist",
+      "go_no_go": "NO_GO_FOR_DEPLOY",
+      "autonomy_level": "L0_OBSERVE",
+      "recommended_next_action": "Add capsule + index row when project publishes metadata.",
+      "human_confirmation_required": true,
+      "related_docs": [
+        "docs/Z-HIERARCHY-CHIEF-AND-OBSERVER-VIEW.md"
+      ],
+      "related_reports": [],
+      "blocked_until": [
+        "project_benchmark_capsule"
+      ],
+      "forbidden_actions": [
+        "treat_placeholder_as_live_service"
+      ],
+      "last_known_basis": "ZSX placeholder rows in capability index.",
+      "dynamic_overlay": "none"
+    },
+    {
+      "id": "entitlement_catalog",
+      "name": "Service entitlement catalog",
+      "domain": "entitlements",
+      "project_or_system": "ZSanctuary_Universe",
+      "signal": "BLUE",
+      "growth_percent": 52,
+      "readiness_label": "Metadata catalog — human boundary for billing vs reference",
+      "go_no_go": "BLUE_HUMAN_DECISION_REQUIRED",
+      "autonomy_level": "L2_POLICY",
+      "recommended_next_action": "Review data/z_service_entitlement_catalog.json with Folder Manager doctrine.",
+      "human_confirmation_required": true,
+      "related_docs": [
+        "docs/cross-project/Z_SERVICE_ENTITLEMENT_AND_PRICING_POLICY.md"
+      ],
+      "related_reports": [],
+      "blocked_until": [
+        "human_entitlement_review"
+      ],
+      "forbidden_actions": [
+        "catalog_as_checkout"
+      ],
+      "last_known_basis": "Entitlement JSON present; not enforcement runtime.",
+      "dynamic_overlay": "none"
+    },
+    {
+      "id": "z_aal_advisor",
+      "name": "Z-AAL Autonomous Approval Ladder + Zuno Advisor (AAL-1)",
+      "domain": "governance",
+      "project_or_system": "ZSanctuary_Universe",
+      "signal": "GREEN",
+      "growth_percent": 62,
+      "readiness_label": "Read-only ladder JSON + deterministic advisor UI on AMK main control — no API or execution",
+      "go_no_go": "GO_FOR_LOCAL_REVIEW",
+      "autonomy_level": "L1_REPORT",
+      "recommended_next_action": "Serve over HTTP; read docs/AMK_ZUNO_ADVISOR_CONSOLE.md; use Get guidance for next-step hints only.",
+      "human_confirmation_required": false,
+      "related_docs": [
+        "docs/AMK_AUTONOMOUS_APPROVAL_LADDER.md",
+        "docs/AMK_ZUNO_ADVISOR_CONSOLE.md",
+        "docs/PHASE_AAL_1_GREEN_RECEIPT.md"
+      ],
+      "related_reports": [
+        "data/reports/z_traffic_minibots_status.json"
+      ],
+      "blocked_until": [],
+      "forbidden_actions": [
+        "llm_api_call",
+        "voice_capture",
+        "npm_exec_from_button",
+        "deploy",
+        "bridge_exec"
+      ],
+      "last_known_basis": "Phase AAL-1; aligns with ZAG + AMK-INDICATOR-1 + Z-Traffic receipts.",
+      "dynamic_overlay": "none"
+    },
+    {
+      "id": "z_omnai_build_workbench",
+      "name": "Z-OMNAI Blueprint Capability Workbench",
+      "domain": "creative",
+      "project_or_system": "ZSanctuary_Universe",
+      "signal": "BLUE",
+      "growth_percent": 54,
+      "readiness_label": "Z-OMNAI-BUILD-1 — workbench JSON + build-plan generator; internal review bundles only",
+      "go_no_go": "NO_GO_FOR_PUBLIC_LAUNCH",
+      "autonomy_level": "L1_REPORT",
+      "recommended_next_action": "Use internally to prepare review bundles; AMK opens public, legal, pricing, and provider lanes.",
+      "human_confirmation_required": true,
+      "related_docs": [
+        "docs/creative/Z_OMNAI_BLUEPRINT_CAPABILITY_WORKBENCH.md",
+        "docs/creative/Z_OMNAI_CREATIVE_PRODUCTION_SYSTEM.md",
+        "docs/creative/PHASE_Z_OMNAI_BUILD_1_GREEN_RECEIPT.md"
+      ],
+      "related_reports": [
+        "data/reports/z_omnai_build_plan_report.json",
+        "data/reports/z_omnai_blueprint_report.json"
+      ],
+      "blocked_until": [
+        "amk_human_for_public_commercial_launch",
+        "z_susbv_for_pricing_surfaces"
+      ],
+      "forbidden_actions": [
+        "live_ai_provider_call",
+        "deploy",
+        "billing_change",
+        "bridge_exec",
+        "auto_merge",
+        "public_infinite_agi_claim"
+      ],
+      "last_known_basis": "data/z_omnai_capability_workbench.json + npm run z:omnai:build-plan reports.",
+      "dynamic_overlay": "none"
+    },
+    {
+      "id": "z_omnai_core_engine_simulation",
+      "name": "OMNAI core simulation (engines §02–09)",
+      "domain": "governance",
+      "project_or_system": "ZSanctuary_Universe",
+      "signal": null,
+      "growth_percent": 40,
+      "readiness_label": "Deterministic core/omnai tick + optional matrix harness — receipts only",
+      "go_no_go": "SIMULATION_GOVERNANCE_ONLY",
+      "autonomy_level": "L1_REPORT",
+      "recommended_next_action": "Run npm run omnai:core:simulate / omnai:core:all; overlay reads z_omnai_core_engine_indicator_overlay.json.",
+      "human_confirmation_required": false,
+      "posture_chips": [
+        "CORE ENGINES",
+        "NO RUNTIME FLIGHT",
+        "REPORTS ONLY",
+        "INDICATOR ≠ EXECUTE"
+      ],
+      "advisory_law_lines": [
+        "Matrix harness explores combinations — GREEN on chart ≠ production permission",
+        "Strict rollup elevates ANT veto and pathway stress into YELLOW/RED posture",
+        "Full matrix blobs require --matrix-full"
+      ],
+      "related_reports": [
+        "data/reports/z_omnai_core_engine_indicator_overlay.json",
+        "data/reports/z_omnai_core_engine_matrix_summary.json",
+        "data/reports/z_omnai_core_engine_tick_report.json",
+        "data/reports/z_omnai_core_engine_chain_report.json"
+      ],
+      "related_docs": [
+        "docs/creative/Z_OMNAI_BLUEPRINT_CAPABILITY_WORKBENCH.md",
+        "docs/OMNAI_CORE_ENGINE_SIMULATION.md",
+        "docs/PHASE_OMNAI_CORE_ENGINE_MATRIX_GREEN_RECEIPT.md"
+      ],
+      "blocked_until": [],
+      "forbidden_actions": [
+        "silent_auto_orchestration",
+        "deploy_from_simulation_green",
+        "provider_call_from_overlay",
+        "live_agent_fleet_spawn"
+      ],
+      "last_known_basis": "data/reports/z_omnai_core_engine_indicator_overlay.json + matrix summary overlay when receipts refreshed.",
+      "dynamic_overlay": "omnai_core_overlay"
+    },
+    {
+      "id": "z_omnai_movie_trailer_bundle",
+      "name": "Z-OMNAI movie trailer review bundle",
+      "domain": "creative",
+      "project_or_system": "ZSanctuary_Universe",
+      "signal": "GREEN",
+      "growth_percent": 56,
+      "readiness_label": "Z-OMNAI-BUILD-2 — internal trailer review bundle JSON + report; no generated media",
+      "go_no_go": "NO_GO_FOR_PUBLIC_RELEASE",
+      "autonomy_level": "L1_REPORT",
+      "recommended_next_action": "Fill AMK creative inputs, review rights checklist, keep internal until public release lane is opened.",
+      "human_confirmation_required": true,
+      "related_docs": [
+        "docs/creative/Z_OMNAI_MOVIE_TRAILER_REVIEW_BUNDLE.md",
+        "docs/creative/PHASE_Z_OMNAI_BUILD_2_GREEN_RECEIPT.md",
+        "docs/creative/Z_OMNAI_BLUEPRINT_CAPABILITY_WORKBENCH.md"
+      ],
+      "related_reports": [
+        "data/reports/z_omnai_movie_trailer_bundle_report.json",
+        "data/reports/z_omnai_build_plan_report.json"
+      ],
+      "blocked_until": [
+        "amk_public_release_lane",
+        "rights_ip_signoff",
+        "music_rights_for_external_sync"
+      ],
+      "forbidden_actions": [
+        "ai_media_generation",
+        "live_provider_call",
+        "public_upload",
+        "deploy",
+        "billing_change",
+        "uncleared_likeness_or_ip"
+      ],
+      "last_known_basis": "data/z_omnai_movie_trailer_bundle.json + npm run z:omnai:movie-bundle reports.",
+      "dynamic_overlay": "none"
+    },
+    {
+      "id": "z_omnai_master_media_seed",
+      "name": "Z-OMNAI master media concept seed",
+      "domain": "creative",
+      "project_or_system": "ZSanctuary_Universe",
+      "signal": "GREEN",
+      "growth_percent": 58,
+      "readiness_label": "Z-OMNAI-BUILD-2A — master seed JSON + report; branches to trailer, music, podcast, marketing",
+      "go_no_go": "NO_GO_FOR_PUBLIC_RELEASE",
+      "autonomy_level": "L1_REPORT",
+      "recommended_next_action": "Fill AMK creative concept fields and review rights before opening any public or media-generation lane.",
+      "human_confirmation_required": true,
+      "related_docs": [
+        "docs/creative/Z_OMNAI_MASTER_MEDIA_CONCEPT_SEED.md",
+        "docs/creative/PHASE_Z_OMNAI_BUILD_2A_GREEN_RECEIPT.md",
+        "docs/creative/Z_OMNAI_MOVIE_TRAILER_REVIEW_BUNDLE.md"
+      ],
+      "related_reports": [
+        "data/reports/z_omnai_master_media_seed_report.json",
+        "data/reports/z_omnai_movie_trailer_bundle_report.json"
+      ],
+      "blocked_until": [
+        "amk_seed_fields_filled",
+        "rights_review_for_derivatives",
+        "public_lane_charter"
+      ],
+      "forbidden_actions": [
+        "ai_media_generation",
+        "live_provider_call",
+        "public_upload",
+        "deploy",
+        "billing_change",
+        "uncleared_imitation_or_likeness"
+      ],
+      "last_known_basis": "data/z_omnai_master_media_concept_seed.json + npm run z:omnai:media-seed reports.",
+      "dynamic_overlay": "none"
+    },
+    {
+      "id": "z_omnai_media_letter_gate",
+      "name": "Z-OMNAI media letter gate (A–E)",
+      "domain": "creative",
+      "project_or_system": "ZSanctuary_Universe",
+      "signal": "YELLOW",
+      "growth_percent": 57,
+      "readiness_label": "Z-OMNAI-LETTER-GATE-1 — advisory A–E readiness; see letter gate report for live recommendation",
+      "go_no_go": "NO_GO_FOR_PUBLIC_RELEASE",
+      "autonomy_level": "L1_REPORT",
+      "recommended_next_action": "Follow recommended next letter in data/reports/z_omnai_media_letter_gate_report.json (re-run npm run z:omnai:letter-gate after seed edits).",
+      "human_confirmation_required": true,
+      "related_docs": [
+        "docs/creative/Z_OMNAI_MEDIA_LETTER_GATE.md",
+        "docs/creative/PHASE_Z_OMNAI_LETTER_GATE_1_GREEN_RECEIPT.md",
+        "docs/AMK_AUTONOMOUS_APPROVAL_LADDER.md"
+      ],
+      "related_reports": [
+        "data/reports/z_omnai_media_letter_gate_report.json"
+      ],
+      "blocked_until": [
+        "amk_follows_recommendation_only_when_chosen"
+      ],
+      "forbidden_actions": [
+        "auto_execute_recommended_letter",
+        "live_provider_call",
+        "public_publish",
+        "deploy",
+        "billing_change",
+        "bridge_exec"
+      ],
+      "last_known_basis": "npm run z:omnai:letter-gate; signal YELLOW typical while seed placeholders remain.",
+      "dynamic_overlay": "none"
+    },
+    {
+      "id": "z_ecosystem_awareness_spine",
+      "name": "Z-AWARE-1 Universal Ecosystem Awareness Spine",
+      "domain": "ecosystem_registry",
+      "project_or_system": "ZSanctuary_Universe",
+      "signal": null,
+      "growth_percent": 58,
+      "readiness_label": "Central registry + capsules + aggregated posture; YELLOW advisory common for optional external projects",
+      "go_no_go": "NO_GO_FOR_DEPLOY",
+      "autonomy_level": "L1_REPORT",
+      "recommended_next_action": "Review RED/BLUE notification_candidates in report only; let GREEN/GOLD/YELLOW stay dashboard evidence unless escalated.",
+      "human_confirmation_required": false,
+      "related_docs": [
+        "docs/Z_ECOSYSTEM_AWARENESS_SPINE.md",
+        "docs/Z_PROJECT_AWARENESS_CAPSULE_POLICY.md",
+        "docs/Z_ECOSYSTEM_ALERT_POLICY.md",
+        "docs/PHASE_Z_AWARE_1_GREEN_RECEIPT.md"
+      ],
+      "related_reports": [
+        "data/reports/z_ecosystem_awareness_report.json",
+        "data/reports/z_ecosystem_awareness_report.md"
+      ],
+      "blocked_until": [],
+      "forbidden_actions": [
+        "deploy",
+        "provider_call",
+        "bridge_exec",
+        "auto_merge",
+        "child_data_collection"
+      ],
+      "last_known_basis": "npm run z:ecosystem:awareness; overlay from z_ecosystem_awareness_report.json when HTTP-served.",
+      "dynamic_overlay": "z_ecosystem_awareness"
+    },
+    {
+      "id": "z_api_spine_power_cell",
+      "name": "Z-API-SPINE-1 Universal API Power Cell",
+      "domain": "api_registry",
+      "project_or_system": "ZSanctuary_Universe",
+      "signal": null,
+      "growth_percent": 56,
+      "readiness_label": "Central read-only API and communication-flow registry; validator writes reports; not a gateway or mesh",
+      "go_no_go": "NO_GO_FOR_DEPLOY",
+      "autonomy_level": "L1_REPORT",
+      "recommended_next_action": "Review RED and BLUE notification candidates only; keep the spine as read-only registry until a deployment or gateway charter opens.",
+      "human_confirmation_required": false,
+      "related_docs": [
+        "docs/Z_API_SPINE_POWER_CELL.md",
+        "docs/Z_API_COMMUNICATION_FLOW_POLICY.md",
+        "docs/Z_API_SERVICE_CAPSULE_POLICY.md",
+        "docs/Z_API_READINESS_AND_SMOKE_GATE.md",
+        "docs/PHASE_Z_API_SPINE_1_GREEN_RECEIPT.md"
+      ],
+      "related_reports": [
+        "data/reports/z_api_spine_report.json",
+        "data/reports/z_api_spine_report.md"
+      ],
+      "blocked_until": [],
+      "forbidden_actions": [
+        "deploy",
+        "live_gateway",
+        "service_mesh",
+        "provider_call",
+        "dns_change",
+        "billing_change",
+        "bridge_exec",
+        "auto_merge"
+      ],
+      "last_known_basis": "npm run z:api:spine; overlay from z_api_spine_report.json when HTTP-served.",
+      "dynamic_overlay": "z_api_spine"
+    },
+    {
+      "id": "z_ssws_launch_requirements",
+      "name": "Z-SSWS-LINK-1 Workspace launch requirements",
+      "domain": "workspace_spine",
+      "project_or_system": "ZSanctuary_Universe",
+      "signal": null,
+      "growth_percent": 54,
+      "readiness_label": "SSWS + SSWSs linked to API spine via read-only launch manifest; validator only",
+      "go_no_go": "NO_GO_FOR_AUTO_LAUNCH",
+      "autonomy_level": "L1_REPORT",
+      "recommended_next_action": "Review RED and BLUE notification candidates only; keep launch manual or checklist until AMK opens controlled local launch lane.",
+      "human_confirmation_required": false,
+      "related_docs": [
+        "docs/Z_SSWS_WORKSPACE_SPINE.md",
+        "docs/Z_SSWS_LAUNCH_REQUIREMENTS_POLICY.md",
+        "docs/Z_SSWS_SHADOW_SPINES_POLICY.md",
+        "docs/PHASE_Z_SSWS_LINK_1_GREEN_RECEIPT.md",
+        "docs/AMK_WORKSPACE_DOORWAY.md"
+      ],
+      "related_reports": [
+        "data/reports/z_ssws_launch_requirements_report.json",
+        "data/reports/z_ssws_launch_requirements_report.md"
+      ],
+      "blocked_until": [],
+      "forbidden_actions": [
+        "extension_auto_install",
+        "server_auto_start",
+        "auto_launch",
+        "deploy",
+        "bridge_exec",
+        "provider_call",
+        "secrets_write"
+      ],
+      "last_known_basis": "npm run z:ssws:requirements; overlay from z_ssws_launch_requirements_report.json when HTTP-served.",
+      "dynamic_overlay": "z_ssws"
+    },
+    {
+      "id": "amk_cursor_workspace_profiles",
+      "name": "AMK Cursor workspace profiles (Z-SSWS-LAB-1)",
+      "domain": "workspace_spine",
+      "project_or_system": "ZSanctuary_Universe",
+      "signal": null,
+      "growth_percent": 54,
+      "readiness_label": "Main cockpit + Z_Lab workspaces at control layer — no repo fusion",
+      "go_no_go": "NO_GO_FOR_AUTO_LAUNCH",
+      "autonomy_level": "L1_REPORT",
+      "recommended_next_action": "Open main workspace for overview; use deep work doorway profiles for intense single-repo edits.",
+      "human_confirmation_required": false,
+      "related_docs": [
+        "docs/AMK_CURSOR_WORKSPACE_STRATEGY.md",
+        "docs/AMK_WORKSPACE_DOORWAY.md",
+        "docs/PHASE_Z_SSWS_LAB_1_GREEN_RECEIPT.md"
+      ],
+      "related_reports": [
+        "data/reports/amk_cursor_workspace_profiles_report.json",
+        "data/reports/amk_cursor_workspace_profiles_report.md"
+      ],
+      "blocked_until": [],
+      "forbidden_actions": [
+        "server_auto_start",
+        "repo_merge",
+        "nas_auto_mount",
+        "secrets_write",
+        "deploy",
+        "extension_auto_install"
+      ],
+      "last_known_basis": "npm run amk:workspace:profiles; overlay from amk_cursor_workspace_profiles_report.json when HTTP-served.",
+      "dynamic_overlay": "amk_cursor_workspace_profiles"
+    },
+    {
+      "id": "z_amk_gtai_strategy_council",
+      "name": "Z-AMK-GTAI Strategy Council (decision reports)",
+      "domain": "governance",
+      "project_or_system": "ZSanctuary_Universe",
+      "signal": null,
+      "growth_percent": 55,
+      "readiness_label": "Read-only rollup of traffic, SSWS, doorway, OMNAI, SUSBV, CAR² — strategy before next move",
+      "go_no_go": "ADVISORY_ONLY",
+      "autonomy_level": "L1_REPORT",
+      "recommended_next_action": "Run npm run z:amk:strategy; read z_amk_gtai_strategy_report.md before opening the next lane.",
+      "human_confirmation_required": false,
+      "related_docs": [
+        "docs/Z_AMK_GTAI_STRATEGY_COUNCIL.md",
+        "docs/PHASE_Z_AMK_GTAI_1_GREEN_RECEIPT.md",
+        "docs/AMK_AUTONOMOUS_APPROVAL_LADDER.md"
+      ],
+      "related_reports": [
+        "data/reports/z_amk_gtai_strategy_report.json",
+        "data/reports/z_amk_gtai_strategy_report.md"
+      ],
+      "blocked_until": [],
+      "forbidden_actions": [
+        "deploy",
+        "provider_call",
+        "bridge_exec",
+        "billing_change",
+        "auto_merge",
+        "auto_fix",
+        "server_auto_start",
+        "secrets_write"
+      ],
+      "last_known_basis": "npm run z:amk:strategy; overlay from z_amk_gtai_strategy_report.json when HTTP-served.",
+      "dynamic_overlay": "z_amk_gtai_strategy_council"
+    },
+    {
+      "id": "amk_workspace_doorway",
+      "name": "AMK Workspace Doorway (Z-SSWS-DOOR-1)",
+      "domain": "workspace_spine",
+      "project_or_system": "ZSanctuary_Universe",
+      "signal": null,
+      "growth_percent": 52,
+      "readiness_label": "Local registry + status script + PowerShell opener — folders/workspaces only",
+      "go_no_go": "NO_GO_FOR_AUTO_LAUNCH",
+      "autonomy_level": "L1_REPORT",
+      "recommended_next_action": "Run npm run amk:doorway:status, then PowerShell -DryRun before opening; dashboard shows copy-command posture until a local helper exists.",
+      "human_confirmation_required": false,
+      "related_docs": [
+        "docs/AMK_WORKSPACE_DOORWAY.md",
+        "docs/Z_SSWS_WORKSPACE_SPINE.md",
+        "docs/Z_SSWS_LAUNCH_REQUIREMENTS_POLICY.md",
+        "docs/PHASE_Z_SSWS_DOOR_1_GREEN_RECEIPT.md"
+      ],
+      "related_reports": [
+        "data/reports/amk_workspace_doorway_status.json",
+        "data/reports/amk_workspace_doorway_status.md"
+      ],
+      "blocked_until": [],
+      "forbidden_actions": [
+        "server_auto_start",
+        "npm_install_from_ui",
+        "nas_auto_mount",
+        "secrets_write",
+        "deploy",
+        "auto_merge",
+        "provider_call"
+      ],
+      "last_known_basis": "npm run amk:doorway:status; overlay from amk_workspace_doorway_status.json when HTTP-served.",
+      "dynamic_overlay": "amk_workspace_doorway"
+    },
+    {
+      "id": "z_root_7_guardian_coordination",
+      "name": "Z-ROOT-7 Seven Guardian Coordination",
+      "domain": "ethics_visual",
+      "project_or_system": "ZSanctuary_Universe",
+      "signal": "GREEN",
+      "growth_percent": 58,
+      "readiness_label": "Z-ROOT-7B 3D-lite Milky Way guardian constellation (perspective + depth + orbit; CSS only, no WebGL)",
+      "go_no_go": "ADVISORY_VISUAL_ONLY",
+      "autonomy_level": "L0_SURFACE",
+      "recommended_next_action": "Use as visual ethics/council map on amk-goku-main-control.html; do not treat as execution or live AI.",
+      "human_confirmation_required": false,
+      "related_docs": [
+        "docs/Z_ROOT_7_GUARDIAN_COORDINATION_LAYER.md",
+        "docs/PHASE_Z_ROOT_7_GREEN_RECEIPT.md",
+        "docs/AMK_GOKU_MAIN_CONTROL_DASHBOARD.md"
+      ],
+      "related_reports": [],
+      "blocked_until": [],
+      "forbidden_actions": [
+        "live_ai_provider_call",
+        "web_scrape",
+        "deploy",
+        "bridge_exec",
+        "billing_change",
+        "voice_camera_gps_from_panel",
+        "auto_task_execution"
+      ],
+      "last_known_basis": "data/z_root_guardian_coordination.json wired to dashboard/scripts/z-root-guardian-coordination-readonly.js",
+      "dynamic_overlay": "none"
+    },
+    {
+      "id": "z_logical_brains_hub_reference",
+      "name": "Z-Logical Brains hub reference",
+      "domain": "cross_project",
+      "project_or_system": "zsanctuary_labs",
+      "signal": "UNKNOWN",
+      "growth_percent": 52,
+      "readiness_label": "Reference-only Labs capsule monitoring in hub",
+      "go_no_go": "NON_CLINICAL_PLANNING_ONLY",
+      "autonomy_level": "L1_REPORT",
+      "recommended_next_action": "Monitor Labs capsule as reference-only; do not open public/vault/provider/child-data lanes without AMK gate.",
+      "human_confirmation_required": true,
+      "related_docs": [
+        "docs/Z_LOGICAL_BRAINS_HUB_REFERENCE.md",
+        "docs/PHASE_Z_LOGICAL_BRAINS_HUB_1_GREEN_RECEIPT.md"
+      ],
+      "related_reports": [
+        "data/reports/z_logical_brains_hub_reference_report.json",
+        "data/reports/z_logical_brains_hub_reference_report.md"
+      ],
+      "blocked_until": [
+        "amk_human_gate_for_public_or_runtime_lanes"
+      ],
+      "forbidden_actions": [
+        "runtime_bridge_enable",
+        "deploy",
+        "provider_call",
+        "child_data_collection",
+        "vault_runtime_enable",
+        "cloud_sync_enable",
+        "voice_capture"
+      ],
+      "last_known_basis": "data/z_logical_brains_hub_reference.json and hub reference validator report.",
+      "dynamic_overlay": "none"
+    },
+    {
+      "id": "z_numen_hub_reference",
+      "name": "Z-NUMEN hub reference",
+      "domain": "cross_project",
+      "project_or_system": "zsanctuary_labs",
+      "signal": "UNKNOWN",
+      "growth_percent": 51,
+      "readiness_label": "Reference-only Labs Z-NUMEN pattern literacy monitoring in hub",
+      "go_no_go": "EDUCATIONAL_PATTERN_LITERACY_ONLY",
+      "autonomy_level": "L1_REPORT",
+      "recommended_next_action": "Monitor Z-NUMEN as reference-only; do not open runtime/canvas/provider/profiling lanes without AMK gate.",
+      "human_confirmation_required": true,
+      "related_docs": [
+        "docs/Z_NUMEN_HUB_REFERENCE.md",
+        "docs/PHASE_Z_NUMEN_HUB_1_GREEN_RECEIPT.md"
+      ],
+      "related_reports": [
+        "data/reports/z_numen_hub_reference_report.json",
+        "data/reports/z_numen_hub_reference_report.md"
+      ],
+      "blocked_until": [
+        "amk_human_gate_for_public_or_runtime_lanes"
+      ],
+      "forbidden_actions": [
+        "runtime_bridge_enable",
+        "deploy",
+        "provider_call",
+        "profiling",
+        "social_scraping",
+        "psychological_targeting",
+        "canvas_webgl_runtime",
+        "auto_launch",
+        "auto_merge"
+      ],
+      "last_known_basis": "data/z_numen_hub_reference.json and hub reference validator report.",
+      "dynamic_overlay": "none"
+    },
+    {
+      "id": "z_mod_dist_routing_advisor",
+      "name": "Z-MOD-DIST routing advisor",
+      "domain": "governance",
+      "project_or_system": "ZSanctuary_Universe",
+      "signal": "GREEN",
+      "growth_percent": 50,
+      "readiness_label": "Advisory router only — suggests where ideas may fit; cannot execute, deploy, merge, or grant permission.",
+      "go_no_go": "ADVISORY_ROUTING_ONLY",
+      "autonomy_level": "L1_REPORT",
+      "posture_chips": [
+        "ADVISORY",
+        "NO EXECUTION",
+        "NO DEPLOY",
+        "AMK GATE",
+        "REPORT LINKED"
+      ],
+      "advisory_law_lines": [
+        "Advisory router only",
+        "Routing suggestion ≠ permission",
+        "GREEN ≠ deploy",
+        "BLUE requires AMK",
+        "RED blocks movement"
+      ],
+      "recommended_next_action": "Open the Markdown report + doctrine links below; run npm run z:mod:dist after routing registry edits. Treat output as placement hints only.",
+      "human_confirmation_required": true,
+      "related_docs": [
+        "docs/Z_MOD_DIST_MODULE_DISTRIBUTOR.md",
+        "docs/PHASE_Z_MOD_DIST_1_GREEN_RECEIPT.md",
+        "docs/PHASE_AMK_DASH_MOD_DIST_1_GREEN_RECEIPT.md"
+      ],
+      "related_reports": [
+        "data/reports/z_mod_dist_report.md",
+        "data/reports/z_mod_dist_report.json"
+      ],
+      "blocked_until": [],
+      "forbidden_actions": [
+        "auto_merge",
+        "auto_deploy",
+        "runtime_bridge_enable",
+        "provider_call",
+        "automatic_project_creation",
+        "auto_launch"
+      ],
+      "last_known_basis": "data/z_mod_dist_routing_registry.json and Z-MOD-DIST routing report.",
+      "dynamic_overlay": "z_mod_dist"
+    },
+    {
+      "id": "z_xbus_connector_gate",
+      "name": "Z-XBUS external connector gate",
+      "domain": "governance",
+      "project_or_system": "ZSanctuary_Universe",
+      "signal": null,
+      "growth_percent": 52,
+      "readiness_label": "External connector registry + Phase 1 policy — metadata only until AMK opens live lanes",
+      "go_no_go": "CONNECTOR_GOVERNANCE_ONLY",
+      "autonomy_level": "L1_REPORT",
+      "posture_chips": [
+        "NO LIVE CONNECTORS",
+        "NO SECRETS",
+        "NO CUSTOMER DATA",
+        "MOCK ONLY",
+        "AMK GATE"
+      ],
+      "advisory_law_lines": [
+        "Registry ≠ live connector",
+        "API plan ≠ API call",
+        "MVP route ≠ production",
+        "GREEN ≠ deploy",
+        "BLUE requires AMK"
+      ],
+      "recommended_next_action": "Register connector concepts before any live external integration; run npm run z:xbus:gate after registry edits.",
+      "human_confirmation_required": true,
+      "related_docs": [
+        "docs/Z_XBUS_EXTERNAL_CONNECTOR_GATE.md",
+        "docs/Z_XBUS_CONNECTOR_SECURITY_POLICY.md",
+        "docs/PHASE_Z_XBUS_GATE_1_GREEN_RECEIPT.md"
+      ],
+      "related_reports": [
+        "data/reports/z_xbus_connector_gate_report.json",
+        "data/reports/z_xbus_connector_gate_report.md"
+      ],
+      "blocked_until": [],
+      "forbidden_actions": [
+        "live_connector_activation",
+        "provider_call",
+        "payment_capture",
+        "webhook_execute",
+        "customer_data_pipeline",
+        "secrets_in_registry",
+        "deploy",
+        "auto_launch",
+        "runtime_bridge_exec"
+      ],
+      "last_known_basis": "Z-XBUS registry + gate report; Phase 1 read-only posture.",
+      "dynamic_overlay": "z_xbus_gate"
+    },
+    {
+      "id": "z_ssws_super_saiyan_cockpit",
+      "name": "Z-SSWS Super Saiyan workspace cockpit",
+      "domain": "governance",
+      "project_or_system": "ZSanctuary_Universe",
+      "signal": null,
+      "growth_percent": 54,
+      "readiness_label": "Cockpit vs deep-work map + dry-run open plan — no auto-launch from validator",
+      "go_no_go": "WORKSPACE_ORCHESTRATION_ONLY",
+      "autonomy_level": "L1_REPORT",
+      "posture_chips": [
+        "COCKPIT",
+        "DEEP WORK",
+        "DRY RUN",
+        "NO AUTO-LAUNCH",
+        "AMK GATE"
+      ],
+      "advisory_law_lines": [
+        "Cockpit ≠ auto-launch",
+        "Visibility ≠ execution",
+        "Fusion YELLOW can be coordinated watch",
+        "GREEN ≠ deploy",
+        "AMK opens sacred lanes"
+      ],
+      "recommended_next_action": "Use cockpit for overview and one deep-work workspace for focused edits; run npm run z:ssws:cockpit after root or doorway changes.",
+      "human_confirmation_required": true,
+      "related_docs": [
+        "docs/Z_SSWS_SUPER_SAIYAN_WORKSPACE_COCKPIT.md",
+        "docs/PHASE_Z_SSWS_COCKPIT_1_GREEN_RECEIPT.md",
+        "docs/AMK_WORKSPACE_DOORWAY.md",
+        "docs/Z_SSWS_WORKSPACE_SPINE.md",
+        "docs/AMK_IDE_PATH_AND_FUSION_OPERATOR_RHYTHM.md"
+      ],
+      "related_reports": [
+        "data/reports/z_ssws_cockpit_report.json",
+        "data/reports/z_ssws_cockpit_report.md",
+        "data/reports/z_pc_ide_path_report.json",
+        "data/reports/z_ide_fusion_report.json"
+      ],
+      "blocked_until": [],
+      "forbidden_actions": [
+        "auto_launch",
+        "nas_auto_mount",
+        "cloud_deploy",
+        "wrangler_deploy",
+        "sync_jobs",
+        "runtime_bridge_execution",
+        "bulk_ide_spawn"
+      ],
+      "last_known_basis": "Z-SSWS cockpit registry + cockpit report mirrors IDE PATH and fusion posture.",
+      "dynamic_overlay": "z_ssws_cockpit"
+    },
+    {
+      "id": "z_logical_brains_cadence_cycle",
+      "name": "Z-Logical Brains cadence cycle",
+      "domain": "governance",
+      "project_or_system": "zsanctuary_labs",
+      "signal": "UNKNOWN",
+      "growth_percent": 55,
+      "readiness_label": "Cadence runner report status for Logical Brains hub monitoring",
+      "go_no_go": "MONITORING_CADENCE_ONLY",
+      "autonomy_level": "L1_REPORT",
+      "recommended_next_action": "Run cadence; if two consecutive GREEN cycles, draft HUB-2.1 review from evidence.",
+      "human_confirmation_required": true,
+      "related_docs": [
+        "docs/Z_CADENCE_REAL_CYCLE_RUNNER.md",
+        "docs/Z_LOGICAL_BRAINS_MONITORING_CADENCE.md",
+        "docs/PHASE_Z_CADENCE_1_GREEN_RECEIPT.md"
+      ],
+      "related_reports": [
+        "data/reports/z_cadence_cycle_report.json",
+        "data/reports/z_cadence_cycle_report.md"
+      ],
+      "blocked_until": [],
+      "forbidden_actions": [
+        "deploy",
+        "runtime_bridge_enable",
+        "provider_call",
+        "child_data_collection",
+        "vault_runtime_enable",
+        "auto_launch",
+        "auto_merge"
+      ],
+      "last_known_basis": "Cadence report output only; follow-up is advisory.",
+      "dynamic_overlay": "none"
+    },
+    {
+      "id": "z_pc_ide_path_health",
+      "name": "Z-PC-IDE-PATH install / PATH health",
+      "domain": "operator_dashboard",
+      "project_or_system": "ZSanctuary_Universe",
+      "signal": null,
+      "growth_percent": null,
+      "readiness_label": "UNKNOWN until PC IDE PATH report refresh",
+      "go_no_go": "ADVISORY_OPERATOR_ONLY",
+      "autonomy_level": "L1_REPORT",
+      "recommended_next_action": "Run npm run z:pc:ide-path after reinstall/PATH edits or Explorer context-menu drift.",
+      "human_confirmation_required": false,
+      "related_docs": [
+        "docs/Z_PC_IDE_PATH_HEALTH_CHECK.md",
+        "docs/VS_FALLBACK_1_VSCODE_OPERATING_MODE.md",
+        "docs/PHASE_Z_PC_IDE_PATH_1_GREEN_RECEIPT.md"
+      ],
+      "related_reports": [
+        "data/reports/z_pc_ide_path_report.json",
+        "data/reports/z_pc_ide_path_report.md"
+      ],
+      "blocked_until": [],
+      "forbidden_actions": [
+        "registry_auto_edit",
+        "silent_install",
+        "auto_launch_editor",
+        "deploy",
+        "secrets_write"
+      ],
+      "last_known_basis": "Read-only checker; Explorer menu ≠ IDE health.",
+      "dynamic_overlay": "none"
+    },
+    {
+      "id": "z_replica_fabric_governance",
+      "name": "Z-Replica Fabric governed replication",
+      "domain": "governance",
+      "project_or_system": "ZSanctuary_Universe",
+      "signal": "BLUE",
+      "growth_percent": 48,
+      "readiness_label": "Doctrine + sample mission classifier only — no live replica workers or execution",
+      "go_no_go": "REPLICATION_GOVERNANCE_ONLY",
+      "autonomy_level": "L1_REPORT",
+      "posture_chips": [
+        "GOVERNED",
+        "NO LIVE CLONES",
+        "NO DEPLOY",
+        "AMK GATE",
+        "REPORT ONLY"
+      ],
+      "advisory_law_lines": [
+        "Replica fabric ≠ autonomous spawn",
+        "Factory ≠ deployment",
+        "GREEN ≠ deploy",
+        "BLUE requires AMK for persistent or external lanes",
+        "RED blocks movement"
+      ],
+      "recommended_next_action": "Use replica fabric only for planning and reporting until AMK opens a charter. Run npm run z:replica:fabric after registry or sample edits.",
+      "human_confirmation_required": true,
+      "related_docs": [
+        "docs/Z_REPLICA_FABRIC_GOVERNED_SELF_REPLICATION.md",
+        "docs/PHASE_Z_REPLICA_FABRIC_1_GREEN_RECEIPT.md"
+      ],
+      "related_reports": [
+        "data/reports/z_replica_fabric_report.json",
+        "data/reports/z_replica_fabric_report.md"
+      ],
+      "blocked_until": [],
+      "forbidden_actions": [
+        "runtime_self_replication",
+        "autonomous_deploy",
+        "provider_call",
+        "payment_activation",
+        "secret_write",
+        "external_webhook",
+        "child_data_flow",
+        "auto_merge",
+        "production_connector",
+        "unbounded_loop",
+        "live_agent_pool"
+      ],
+      "last_known_basis": "data/z_replica_fabric_registry.json + z_replica_fabric_check.mjs report signal when refreshed.",
+      "dynamic_overlay": "z_replica_fabric"
+    },
+    {
+      "id": "z_ultra_mage_formula_codex",
+      "name": "Z-Ultra MAGE formula codex",
+      "domain": "governance",
+      "project_or_system": "ZSanctuary_Universe",
+      "signal": "BLUE",
+      "growth_percent": 49,
+      "readiness_label": "Universal formula vocabulary + samples only — no runtime engine or autonomous execution",
+      "go_no_go": "FORMULA_GOVERNANCE_ONLY",
+      "autonomy_level": "L1_REPORT",
+      "posture_chips": [
+        "FORMULA CODEX",
+        "NO LIVE MAGIC",
+        "NO DEPLOY",
+        "NO CLONES",
+        "AMK GATE"
+      ],
+      "advisory_law_lines": [
+        "Formula ≠ execution",
+        "Ultra ≠ permission",
+        "MAGE ≠ magic runtime",
+        "GREEN ≠ deploy",
+        "BLUE requires AMK"
+      ],
+      "recommended_next_action": "Use the codex for planning evidence; widen execution only via AMK charter. Run npm run z:ultra:mage after registry or sample edits.",
+      "human_confirmation_required": true,
+      "related_docs": [
+        "docs/Z_ULTRA_MAGE_FORMULA_CODEX.md",
+        "docs/PHASE_Z_ULTRA_MAGE_1_GREEN_RECEIPT.md"
+      ],
+      "related_reports": [
+        "data/reports/z_ultra_mage_formula_report.json",
+        "data/reports/z_ultra_mage_formula_report.md"
+      ],
+      "blocked_until": [],
+      "forbidden_actions": [
+        "live_formula_engine",
+        "runtime_self_replication",
+        "autonomous_deploy",
+        "provider_call",
+        "secret_write",
+        "production_connector",
+        "live_agent_pool",
+        "auto_merge",
+        "child_data_flow"
+      ],
+      "last_known_basis": "data/z_ultra_mage_formula_registry.json and formula report signal when refreshed.",
+      "dynamic_overlay": "z_ultra_mage"
+    },
+    {
+      "id": "z_mu_truth_civic_engine",
+      "name": "Z-MU Truth — Mauritius civic dignity engine",
+      "domain": "governance",
+      "project_or_system": "ZSanctuary_Universe",
+      "signal": "BLUE",
+      "growth_percent": 41,
+      "readiness_label": "Claim ledger + peace filter metadata only — no protest coordination or outbound campaign connectors",
+      "go_no_go": "CIVIC_AWARENESS_ONLY",
+      "autonomy_level": "L1_REPORT",
+      "posture_chips": [
+        "CIVIC TRUTH",
+        "PEACEFUL ONLY",
+        "VERIFY FIRST",
+        "NO HARASSMENT",
+        "AMK GATE"
+      ],
+      "advisory_law_lines": [
+        "Truth posture ≠ harassment",
+        "Pathway hints ≠ legal advice",
+        "GREEN ≠ public campaign launch",
+        "BLUE requires human/legal review",
+        "RED blocks movement"
+      ],
+      "recommended_next_action": "Expand claim rows only with dated official citations; run npm run z:mu:truth after ledger edits. Do not publish raw PDF as authoritative.",
+      "human_confirmation_required": true,
+      "related_docs": [
+        "docs/Z_MAURITIANS_UNITE_CIVIC_TRUTH_ENGINE.md",
+        "docs/Z_MAURITIANS_UNITE_SAFETY_AND_PEACE_POLICY.md",
+        "docs/PHASE_Z_MU_TRUTH_1_GREEN_RECEIPT.md"
+      ],
+      "related_reports": [
+        "data/reports/z_mu_truth_report.json",
+        "data/reports/z_mu_truth_report.md"
+      ],
+      "blocked_until": [],
+      "forbidden_actions": [
+        "protest_coordination_platform",
+        "mass_messaging_automation",
+        "doxxing_or_targeted_harassment",
+        "illegal_leak_workflow",
+        "economic_sabotage_incitement",
+        "payments_or_donations_in_hub_phase",
+        "live_api_connector",
+        "deploy_public_surface_without_charter",
+        "ethnic_or_religious_group_blame"
+      ],
+      "last_known_basis": "data/z_mu_claim_ledger.json + z_mu_source_policy.json + z_mu_truth_check.mjs report signal when refreshed.",
+      "dynamic_overlay": "z_mu_truth"
+    },
+    {
+      "id": "z_mu_civic_knowledge_advisor",
+      "name": "Z-MU Advisor — Mauritius civic knowledge framework",
+      "domain": "governance",
+      "project_or_system": "ZSanctuary_Universe",
+      "signal": "BLUE",
+      "growth_percent": 40,
+      "readiness_label": "Advisor templates + policy + read-only validator only — no live model, chat, memory, or PII collection",
+      "go_no_go": "ADVISOR_FRAMEWORK_ONLY",
+      "autonomy_level": "L1_REPORT",
+      "posture_chips": [
+        "CIVIC EDUCATION",
+        "NO LIVE AI",
+        "NO PERSONAL DATA",
+        "NO PROTEST TOOLING",
+        "HUMAN REVIEW"
+      ],
+      "advisory_law_lines": [
+        "Civic advisor is not government authority",
+        "Explanation is not legal advice",
+        "GREEN is not public launch",
+        "BLUE requires human/legal/ethics review",
+        "RED blocks movement"
+      ],
+      "recommended_next_action": "Run npm run z:mu:advisor after policy or template edits; Phase 2+ only after AMK gate.",
+      "human_confirmation_required": true,
+      "related_docs": [
+        "docs/Z_MU_CIVIC_KNOWLEDGE_ADVISOR.md",
+        "docs/Z_MU_ADVISOR_SAFETY_AND_AUDIT_POLICY.md",
+        "docs/Z_MAURITIANS_UNITE_CIVIC_TRUTH_ENGINE.md",
+        "docs/Z_MAURITIANS_UNITE_SAFETY_AND_PEACE_POLICY.md",
+        "docs/PHASE_Z_MU_ADVISOR_1_GREEN_RECEIPT.md"
+      ],
+      "related_reports": [
+        "data/reports/z_mu_advisor_report.json",
+        "data/reports/z_mu_advisor_report.md"
+      ],
+      "blocked_until": [],
+      "forbidden_actions": [
+        "live_ai_provider_call",
+        "public_chat_deploy",
+        "user_memory_storage",
+        "personal_data_collection",
+        "protest_coordination_tooling",
+        "mass_messaging_automation",
+        "doxxing_or_targeted_harassment",
+        "illegal_leak_workflow",
+        "government_impersonation_surface",
+        "legal_advice_as_counsel_claim"
+      ],
+      "last_known_basis": "data/z_mu_advisor_policy.json + z_mu_advisor_answer_templates.json + z_mu_advisor_check.mjs report signal when refreshed.",
+      "dynamic_overlay": "z_mu_advisor"
+    },
+    {
+      "id": "z_pattern_safe_governance",
+      "name": "Z-Pattern Safe — universal pattern simulation governance",
+      "domain": "governance",
+      "project_or_system": "ZSanctuary_Universe",
+      "signal": "BLUE",
+      "growth_percent": 38,
+      "readiness_label": "Pattern/domain registry + read-only classifier only — no live engines, wagering export, payments, or external connectors",
+      "go_no_go": "PATTERN_SIMULATION_GOVERNANCE_ONLY",
+      "autonomy_level": "L1_REPORT",
+      "posture_chips": [
+        "EDUCATIONAL",
+        "SIMULATION ONLY",
+        "NO BETTING ADVICE",
+        "NO GUARANTEES",
+        "AMK GATE"
+      ],
+      "advisory_law_lines": [
+        "Pattern ≠ prediction certainty",
+        "Simulation ≠ betting advice",
+        "Confidence ≠ guarantee",
+        "GREEN ≠ deploy",
+        "BLUE requires AMK"
+      ],
+      "recommended_next_action": "Run npm run z:pattern:safe after registry or sample edits; route live APIs through Z-XBUS charter.",
+      "human_confirmation_required": true,
+      "related_docs": [
+        "docs/Z_PATTERN_SAFE_UNIVERSAL_PATTERN_SIMULATION.md",
+        "docs/Z_PATTERN_SAFE_RESPONSIBLE_USE_POLICY.md",
+        "docs/PHASE_Z_PATTERN_SAFE_1_GREEN_RECEIPT.md"
+      ],
+      "related_reports": [
+        "data/reports/z_pattern_safe_report.json",
+        "data/reports/z_pattern_safe_report.md"
+      ],
+      "blocked_until": [],
+      "forbidden_actions": [
+        "live_prediction_engine_runtime",
+        "gambling_instruction_export",
+        "bankroll_optimisation_automation",
+        "payment_connector",
+        "scraping_connector",
+        "marketplace_live_trust_economy",
+        "vault_user_pii_runtime",
+        "provider_call_without_xbus_charter",
+        "deploy_prediction_surface_without_amk",
+        "auto_merge Sacred moves"
+      ],
+      "last_known_basis": "data/z_pattern_safe_registry.json + z_pattern_safe_check.mjs report signal when refreshed.",
+      "dynamic_overlay": "z_pattern_safe"
+    },
+    {
+      "id": "amk_ai_team_indicator_sync",
+      "name": "AMK AI Team — indicator sync + decision router",
+      "domain": "operator_dashboard",
+      "project_or_system": "ZSanctuary_Universe",
+      "signal": null,
+      "growth_percent": 56,
+      "readiness_label": "Read-only routing + drift hints — validates teams and packets without mutating indicators",
+      "go_no_go": "DECISION_ROUTING_ONLY",
+      "autonomy_level": "L1_REPORT",
+      "posture_chips": [
+        "RIGHT AI TEAM",
+        "INDICATOR SYNC",
+        "DECISION PACKET",
+        "NO AUTO-EXECUTION",
+        "AMK GATE"
+      ],
+      "advisory_law_lines": [
+        "Indicator sync ≠ auto-edit",
+        "Routing recommendation ≠ sacred approval",
+        "GREEN ≠ deploy",
+        "BLUE requires AMK",
+        "RED blocks movement"
+      ],
+      "recommended_next_action": "Use this report to route new work to the right AI team before action.",
+      "human_confirmation_required": true,
+      "related_docs": [
+        "docs/AMK_AI_TEAM_INDICATOR_SYNC_ROUTER.md",
+        "docs/AMK_PROJECT_INDICATORS_AND_GO_NO_GO.md",
+        "docs/PHASE_AMK_AI_SYNC_1_GREEN_RECEIPT.md"
+      ],
+      "related_reports": [
+        "data/reports/amk_ai_team_sync_report.json",
+        "data/reports/amk_ai_team_sync_report.md"
+      ],
+      "blocked_until": [],
+      "forbidden_actions": [
+        "silent_indicator_rewrite",
+        "auto_merge_sacred_moves",
+        "live_provider_activation",
+        "deploy_from_dashboard_ui",
+        "secret_write_via_router",
+        "child_data_connector",
+        "autonomous_execution"
+      ],
+      "last_known_basis": "data/amk_ai_team_router_registry.json + amk_ai_team_sync_report.json overlay when refreshed (Phase 1 never auto-writes indicators).",
+      "dynamic_overlay": "amk_ai_team_sync"
+    },
+    {
+      "id": "z_ai_fusion_capability_map",
+      "name": "Z-AI Fusion — capability overlap map",
+      "domain": "governance",
+      "project_or_system": "ZSanctuary_Universe",
+      "signal": null,
+      "growth_percent": 55,
+      "readiness_label": "Capability overlaps + fusion recommendations — no runtime merge or authority grant",
+      "go_no_go": "CAPABILITY_GOVERNANCE_ONLY",
+      "autonomy_level": "L1_REPORT",
+      "posture_chips": [
+        "CAPABILITY MAP",
+        "NO AUTO-MERGE",
+        "LEAD/SUPPORT",
+        "AMK REVIEW",
+        "REPORT ONLY"
+      ],
+      "advisory_law_lines": [
+        "Fusion recommendation ≠ deletion",
+        "Overlap score ≠ permission",
+        "GREEN ≠ deploy",
+        "BLUE requires AMK consolidation choice",
+        "RED unsafe overlap blocked"
+      ],
+      "recommended_next_action": "Use this report before minting duplicate AI-team slices or crowding dashboards.",
+      "human_confirmation_required": true,
+      "related_docs": [
+        "docs/Z_AI_FUSION_CAPABILITY_MAP.md",
+        "docs/Z_AI_FUSION_DEDUP_AND_ROLE_POLICY.md",
+        "docs/PHASE_Z_AI_FUSION_MAP_1_GREEN_RECEIPT.md",
+        "docs/AMK_AI_TEAM_INDICATOR_SYNC_ROUTER.md"
+      ],
+      "related_reports": [
+        "data/reports/z_ai_fusion_map_report.json",
+        "data/reports/z_ai_fusion_map_report.md"
+      ],
+      "blocked_until": [],
+      "forbidden_actions": [
+        "runtime_auto_merge_capabilities",
+        "silent_indicator_rewrite",
+        "provider_activation_from_fusion",
+        "deploy_from_fusion_heuristic",
+        "delete_modules_automatically"
+      ],
+      "last_known_basis": "data/z_ai_fusion_capability_registry.json + z_ai_fusion_map_report.json overlay when refreshed.",
+      "dynamic_overlay": "z_ai_fusion_map"
+    },
+    {
+      "id": "z_stillness_ai_learning_pathway",
+      "name": "Z-Stillness — AI learning pathway",
+      "domain": "governance",
+      "project_or_system": "ZSanctuary_Universe",
+      "signal": null,
+      "growth_percent": 52,
+      "readiness_label": "Idle alignment doctrine + sample classifier — no autonomous stillness runners",
+      "go_no_go": "STILLNESS_LEARNING_ONLY",
+      "autonomy_level": "L1_REPORT",
+      "posture_chips": [
+        "STILLNESS",
+        "LEARNING ONLY",
+        "NO AUTONOMY",
+        "NO SELF-UPGRADE",
+        "AMK GATE"
+      ],
+      "advisory_law_lines": [
+        "Stillness Mode ≠ background automation",
+        "Learning roadmap ≠ self-upgrade authority",
+        "GREEN ≠ deploy",
+        "BLUE requires AMK policy stance",
+        "RED blocks autonomy / deploy / provider / secret escalation"
+      ],
+      "recommended_next_action": "Use Stillness Mode for alignment learning when no active task is assigned.",
+      "human_confirmation_required": false,
+      "related_docs": [
+        "docs/Z_STILLNESS_MODE_AI_LEARNING_PATHWAY.md",
+        "docs/Z_SANCTUARY_ECOSYSTEM_BIOLOGY_MAP.md",
+        "docs/PHASE_Z_STILLNESS_LEARN_1_GREEN_RECEIPT.md"
+      ],
+      "related_reports": [
+        "data/reports/z_stillness_learning_report.json",
+        "data/reports/z_stillness_learning_report.md"
+      ],
+      "blocked_until": [],
+      "forbidden_actions": [
+        "background_stillness_daemon",
+        "autonomous_learning_loop",
+        "silent_self_upgrade",
+        "provider_finetuning_from_stillness",
+        "auto_merge_from_idle_state",
+        "deploy_from_learning_summary"
+      ],
+      "last_known_basis": "data/z_stillness_learning_registry.json + z_stillness_learning_report.json overlay when refreshed.",
+      "dynamic_overlay": "z_stillness_learning"
+    },
+    {
+      "id": "z_legal_ops_workstation",
+      "name": "Z-Legal Ops workstation",
+      "domain": "governance",
+      "project_or_system": "ZSanctuary_Universe",
+      "signal": null,
+      "growth_percent": 51,
+      "readiness_label": "Proof-first legal ops concept (docs + policy + validator) with strict no-runtime legal boundary",
+      "go_no_go": "LEGAL_GOVERNANCE_CONCEPT_ONLY",
+      "autonomy_level": "L1_REPORT",
+      "posture_chips": [
+        "LEGAL BOUNDARY",
+        "NO LEGAL ADVICE",
+        "NO ENDORSEMENT",
+        "NO CLIENT DATA",
+        "CONTRACT REQUIRED"
+      ],
+      "advisory_law_lines": [
+        "Lawyer dashboard ≠ lawyer endorsement",
+        "Legal circle ≠ runtime authority",
+        "AI evidence summary ≠ legal advice",
+        "Named lawyer profile requires written consent + contract",
+        "GREEN ≠ launch"
+      ],
+      "recommended_next_action": "Use as proof-first legal review concept; do not imply lawyer endorsement or collect client data.",
+      "human_confirmation_required": true,
+      "related_docs": [
+        "docs/Z_LEGAL_EVIDENCE_CORE.md",
+        "docs/Z_LAWYER_WORKSTATION_CONTROL_CENTRE.md",
+        "docs/Z_GUARDIAN_LEGAL_CIRCLE.md",
+        "docs/Z_LEGAL_OPS_SAFETY_AND_BOUNDARY_POLICY.md",
+        "docs/PHASE_Z_LEGAL_OPS_1_GREEN_RECEIPT.md"
+      ],
+      "related_reports": [
+        "data/reports/z_legal_ops_report.json",
+        "data/reports/z_legal_ops_report.md"
+      ],
+      "blocked_until": [],
+      "forbidden_actions": [
+        "legal_advice_runtime",
+        "lawyer_impersonation",
+        "public_endorsement_claim",
+        "client_data_collection",
+        "evidence_upload_runtime",
+        "gdpr_sar_auto_send",
+        "court_filing",
+        "email_sending",
+        "payment_activation",
+        "provider_call",
+        "deployment",
+        "named_lawyer_ui_without_consent"
+      ],
+      "last_known_basis": "data/z_legal_ops_registry.json + data/z_legal_ops_policy.json + z_legal_ops_report.json overlay when refreshed.",
+      "dynamic_overlay": "z_legal_ops"
+    },
+    {
+      "id": "z_legal_product_ops_workstation",
+      "name": "Z-Legal Product and IP workstation",
+      "domain": "governance",
+      "project_or_system": "ZSanctuary_Universe",
+      "signal": null,
+      "growth_percent": 53,
+      "readiness_label": "Product/IP/legal/safety/manufacturing governance concept map — no launch or runtime legal authority",
+      "go_no_go": "PRODUCT_LEGAL_GOVERNANCE_ONLY",
+      "autonomy_level": "L1_REPORT",
+      "posture_chips": [
+        "PRODUCT LAW",
+        "IP REVIEW",
+        "NO LAUNCH",
+        "NO MANUFACTURING",
+        "LAWYER REVIEW"
+      ],
+      "advisory_law_lines": [
+        "Product map ≠ product launch",
+        "IP candidate ≠ registered right",
+        "Prototype evidence ≠ safety certification",
+        "Canvas map ≠ live tracking",
+        "GREEN ≠ launch"
+      ],
+      "recommended_next_action": "Use as proof-first product/IP/legal review concept; no launch/manufacturing/legal endorsement.",
+      "human_confirmation_required": true,
+      "related_docs": [
+        "docs/Z_LEGAL_PRODUCT_IP_COMPLIANCE_WORKSTATION.md",
+        "docs/Z_LEGAL_PRODUCT_SAFETY_AND_IP_POLICY.md",
+        "docs/Z_LEGAL_CANVAS_WORLD_MAP_WORKSTATION.md",
+        "docs/PHASE_Z_LEGAL_PRODUCT_OPS_1_GREEN_RECEIPT.md"
+      ],
+      "related_reports": [
+        "data/reports/z_legal_product_ops_report.json",
+        "data/reports/z_legal_product_ops_report.md"
+      ],
+      "blocked_until": [],
+      "forbidden_actions": [
+        "product_launch",
+        "manufacturing_order",
+        "supplier_api_call",
+        "payment_activation",
+        "medical_claim_publication",
+        "safety_certification_claim",
+        "patent_filing_claim",
+        "trademark_registration_claim",
+        "legal_advice_claim",
+        "lawyer_endorsement_claim",
+        "client_data_collection",
+        "evidence_upload_runtime",
+        "world_tracking_or_surveillance",
+        "cloudflare_deploy"
+      ],
+      "last_known_basis": "data/z_legal_product_ops_registry.json + data/z_legal_product_ops_policy.json + z_legal_product_ops_report.json overlay when refreshed.",
+      "dynamic_overlay": "z_legal_product_ops"
+    },
+    {
+      "id": "z_legal_workstation_stack",
+      "name": "Z-Legal Workstation full stack requirements",
+      "domain": "governance",
+      "project_or_system": "ZSanctuary_Universe",
+      "signal": null,
+      "growth_percent": 55,
+      "readiness_label": "Lawyer workstation full-cycle stack (docs/evidence/media/comms/simulation) as governance architecture only",
+      "go_no_go": "LEGAL_WORKSTATION_GOVERNANCE_ONLY",
+      "autonomy_level": "L1_REPORT",
+      "posture_chips": [
+        "LEGAL OPS STACK",
+        "MEDIA + DOCS",
+        "SIMULATION SAFE",
+        "NO RUNTIME ADVICE",
+        "HUMAN LAWYER GATE"
+      ],
+      "advisory_law_lines": [
+        "Workstation power ≠ runtime legal authority",
+        "AI workflow help ≠ legal advice",
+        "Simulation mode ≠ live client operations",
+        "GREEN ≠ launch",
+        "BLUE requires AMK/legal/human review"
+      ],
+      "recommended_next_action": "Use this stack as the full requirements map for phased implementation; keep Phase 1 report-only and simulation-safe.",
+      "human_confirmation_required": true,
+      "related_docs": [
+        "docs/Z_LEGAL_WORKSTATION_STACK_REQUIREMENTS.md",
+        "docs/Z_LEGAL_WORKSTATION_SIMULATION_MODE.md",
+        "docs/PHASE_Z_LEGAL_WORKSTATION_STACK_1_GREEN_RECEIPT.md"
+      ],
+      "related_reports": [
+        "data/reports/z_legal_workstation_stack_report.json",
+        "data/reports/z_legal_workstation_stack_report.md"
+      ],
+      "blocked_until": [],
+      "forbidden_actions": [
+        "legal_advice_runtime",
+        "court_filing_automation",
+        "email_dispatch_automation",
+        "live_client_intake_runtime",
+        "privileged_data_upload_runtime",
+        "payment_or_billing_activation",
+        "provider_or_supplier_connector",
+        "deployment",
+        "surveillance_or_live_tracking",
+        "final_legal_approval_by_ai"
+      ],
+      "last_known_basis": "data/z_legal_workstation_stack_registry.json + data/z_legal_workstation_stack_policy.json + z_legal_workstation_stack_report.json overlay when refreshed.",
+      "dynamic_overlay": "z_legal_workstation_stack"
+    },
+    {
+      "id": "z_legal_toolbelt",
+      "name": "Z-Legal Toolbelt Dock",
+      "domain": "governance",
+      "project_or_system": "ZSanctuary_Universe",
+      "signal": "GREEN",
+      "growth_percent": 57,
+      "readiness_label": "Compact lawyer tool dock metadata and UI visibility slice only",
+      "go_no_go": "LEGAL_TOOLBELT_METADATA_ONLY",
+      "autonomy_level": "L1_REPORT",
+      "posture_chips": [
+        "TOOL DOCK",
+        "READ-ONLY",
+        "NO UPLOAD",
+        "NO LEGAL RUNTIME",
+        "NO DEPLOY"
+      ],
+      "advisory_law_lines": [
+        "Toolbelt != live case system",
+        "Viewer != evidence intake",
+        "OCR placeholder != document processing",
+        "AI assistant != legal adviser",
+        "GREEN != launch"
+      ],
+      "recommended_next_action": "Use the dock for compact legal workflow planning; keep all tools in visibility/planning posture.",
+      "human_confirmation_required": true,
+      "related_docs": [
+        "docs/Z_LEGAL_WORKSTATION_TOOLBELT.md",
+        "docs/PHASE_Z_LEGAL_TOOLBELT_1_GREEN_RECEIPT.md"
+      ],
+      "related_reports": [],
+      "blocked_until": [],
+      "forbidden_actions": [
+        "file_upload_runtime",
+        "client_data_intake_runtime",
+        "ocr_runtime_processing",
+        "video_analysis_runtime",
+        "legal_advice_runtime",
+        "e_signature_runtime",
+        "court_filing",
+        "payment_activation",
+        "external_api_call",
+        "deployment"
+      ],
+      "last_known_basis": "data/z_legal_toolbelt_registry.json and AMK main control legal tool dock section.",
+      "dynamic_overlay": "z_legal_toolbelt"
+    },
+    {
+      "id": "z_legal_workstation_ux",
+      "name": "Z-Lawyer Workstation UX-2 (compact protector)",
+      "domain": "governance",
+      "project_or_system": "ZSanctuary_Universe",
+      "signal": "GREEN",
+      "growth_percent": 61,
+      "readiness_label": "Interactive UX-2 cockpit: protector view modes, receipts/export drawer, synthetic mentor + simulation drills; strict legal safety boundaries",
+      "go_no_go": "UX_PROTOTYPE_ONLY",
+      "autonomy_level": "L1_REPORT",
+      "posture_chips": [
+        "SYNTHETIC DATA",
+        "INTERACTIVE UX",
+        "NO CLIENT DATA",
+        "NO LEGAL ADVICE",
+        "NO RUNTIME AUTHORITY"
+      ],
+      "advisory_law_lines": [
+        "Synthetic demo data != real case data",
+        "Legal AI mock != legal adviser",
+        "Canvas map != live tracking",
+        "Dashboard polish != runtime authority",
+        "GREEN != launch"
+      ],
+      "recommended_next_action": "Use this UI for lawyer workflow rehearsal and governance walkthroughs only.",
+      "human_confirmation_required": true,
+      "related_docs": [
+        "docs/PHASE_Z_LEGAL_WORKSTATION_UX_2_GREEN_RECEIPT.md",
+        "docs/PHASE_Z_LEGAL_WORKSTATION_UX_2A_GREEN_RECEIPT.md",
+        "docs/PHASE_Z_LEGAL_WORKSTATION_UX_1_GREEN_RECEIPT.md",
+        "docs/Z_LEGAL_WORKSTATION_TOOLBELT.md"
+      ],
+      "related_reports": [],
+      "blocked_until": [],
+      "forbidden_actions": [
+        "client_data_intake_runtime",
+        "upload_runtime",
+        "ocr_runtime_processing",
+        "video_analysis_runtime",
+        "legal_advice_runtime",
+        "provider_call",
+        "deployment"
+      ],
+      "last_known_basis": "dashboard/Html/z-legal-lawyer-workstation.html UX-2 compact protector cockpit + synthetic labeling (no runtime authority).",
+      "dynamic_overlay": "z_legal_workstation_ux"
+    },
+    {
+      "id": "dashboard_registry",
+      "name": "Dashboard registry verify",
+      "domain": "hodp",
+      "project_or_system": "ZSanctuary_Universe",
+      "signal": null,
+      "growth_percent": null,
+      "readiness_label": "UNKNOWN until registry verify JSON fetch",
+      "go_no_go": "PREPARE_FOR_RELEASE_REVIEW",
+      "autonomy_level": "L1_REPORT",
+      "recommended_next_action": "npm run dashboard:registry-verify after HTML path edits.",
+      "human_confirmation_required": false,
+      "related_docs": [
+        "dashboard/README.md"
+      ],
+      "related_reports": [
+        "data/reports/z_dashboard_registry_verify.json"
+      ],
+      "blocked_until": [],
+      "forbidden_actions": [],
+      "last_known_basis": "Overlay from z_dashboard_registry_verify.json when served.",
+      "dynamic_overlay": "dashboard_registry"
+    }
+  ]
+}

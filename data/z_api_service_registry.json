@@ -1,0 +1,15 @@
+{
+  "schema": "z_api_service_registry_v1",
+  "posture": "read_only_seed_for_spine_alignment_not_live_mesh",
+  "note": "AT Princess & Blackie / Franed AI API surface — placeholder rows for Z-API-SPINE-1; expand when sibling repo is chartered.",
+  "services": [
+    {
+      "service_id": "at_princess_blackie_core",
+      "display_name": "AT Princess & Blackie core API",
+      "base_path": "/api/v1",
+      "environment": "reference_only",
+      "status": "external_reference",
+      "related_docs": ["docs/Z_API_SPINE_POWER_CELL.md"]
+    }
+  ]
+}

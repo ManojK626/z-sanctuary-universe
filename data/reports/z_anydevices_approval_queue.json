@@ -1,0 +1,11 @@
+{
+  "generated_at": "2026-02-17T14:57:44.790Z",
+  "mode": "approval-required",
+  "policy": {
+    "auto_connect": false,
+    "auto_execute": false,
+    "approval_required": true,
+    "note": "No device action runs without explicit human approval."
+  },
+  "approvals": []
+}

@@ -1,0 +1,1902 @@
+{
+  "generated_at": "2026-05-05T18:25:51.727Z",
+  "root": "C:\\Cursor Projects Organiser\\Z_Sanctuary_Universe",
+  "reference_presence": {
+    "master": {
+      "repo_relative_path": "data/z_master_module_registry.json",
+      "exists": true
+    },
+    "zuno_report": {
+      "repo_relative_path": "docs/Z-ZUNO-AI-FULL-REPORT.md",
+      "exists": true
+    },
+    "master_index_md": {
+      "repo_relative_path": "docs/Z-SANCTUARY-MASTER-MODULE-INDEX.md",
+      "exists": false
+    },
+    "Z_module_registry": {
+      "repo_relative_path": "data/Z_module_registry.json",
+      "exists": true
+    },
+    "z_modules_registry": {
+      "repo_relative_path": "data/z_modules_registry.json",
+      "exists": false
+    },
+    "sovereign_products": {
+      "repo_relative_path": "data/z_sovereign_products_registry.json",
+      "exists": true
+    }
+  },
+  "ancillary": {
+    "z_modules_registry_duplicate_check": false,
+    "registry_module_count": 44,
+    "master_module_count": 68,
+    "master_registry_status_histogram": {
+      "planned_stub": 24,
+      "implemented": 29,
+      "decision_required": 1,
+      "safety_hold": 6,
+      "doctrine_only": 6,
+      "partial": 2
+    },
+    "orphaned_registry_ids_sample": []
+  },
+  "summary_counts": {
+    "FOUND_FULL": 29,
+    "FOUND_PARTIAL": 30,
+    "MISSING": 0,
+    "DUPLICATE_OR_CONFLICT": 0,
+    "NEEDS_SAFETY_REVIEW": 8,
+    "NEEDS_DECISION": 1
+  },
+  "modules": [
+    {
+      "module_id": "ai-agent-designer",
+      "module_name": "ai-agent-designer",
+      "category": "ai_tower_agents",
+      "registry_status": "planned_stub",
+      "safety_class": "low",
+      "tags": [
+        "z_layer:ai-agent"
+      ],
+      "notes": "UI and style advisor.",
+      "status": "FOUND_PARTIAL",
+      "required_status": "planned_or_active",
+      "safety_flags": [],
+      "evidence_paths_found": [],
+      "missing_expected_paths": [],
+      "duplicate_path_conflicts": [],
+      "doc_checks": [],
+      "doc_mention_notes": [],
+      "registry_note": null,
+      "zuno_doc_coarse_mention": {
+        "scanned": "C:\\Cursor Projects Organiser\\Z_Sanctuary_Universe\\docs\\Z-ZUNO-AI-FULL-REPORT.md",
+        "matched": false
+      },
+      "recommended_next_action": "Add missing paths or update master registry to match intentional layout."
+    },
+    {
+      "module_id": "ai-agent-navigator",
+      "module_name": "ai-agent-navigator",
+      "category": "ai_tower_agents",
+      "registry_status": "planned_stub",
+      "safety_class": "low",
+      "tags": [
+        "z_layer:ai-agent"
+      ],
+      "notes": "Next-step and safety guidance.",
+      "status": "FOUND_PARTIAL",
+      "required_status": "planned_or_active",
+      "safety_flags": [],
+      "evidence_paths_found": [],
+      "missing_expected_paths": [],
+      "duplicate_path_conflicts": [],
+      "doc_checks": [],
+      "doc_mention_notes": [],
+      "registry_note": null,
+      "zuno_doc_coarse_mention": {
+        "scanned": "C:\\Cursor Projects Organiser\\Z_Sanctuary_Universe\\docs\\Z-ZUNO-AI-FULL-REPORT.md",
+        "matched": false
+      },
+      "recommended_next_action": "Add missing paths or update master registry to match intentional layout."
+    },
+    {
+      "module_id": "ai-agent-protector",
+      "module_name": "ai-agent-protector",
+      "category": "ai_tower_agents",
+      "registry_status": "planned_stub",
+      "safety_class": "low",
+      "tags": [
+        "z_layer:ai-agent"
+      ],
+      "notes": "Security and runtime monitoring.",
+      "status": "FOUND_PARTIAL",
+      "required_status": "planned_or_active",
+      "safety_flags": [],
+      "evidence_paths_found": [],
+      "missing_expected_paths": [],
+      "duplicate_path_conflicts": [],
+      "doc_checks": [],
+      "doc_mention_notes": [],
+      "registry_note": null,
+      "zuno_doc_coarse_mention": {
+        "scanned": "C:\\Cursor Projects Organiser\\Z_Sanctuary_Universe\\docs\\Z-ZUNO-AI-FULL-REPORT.md",
+        "matched": false
+      },
+      "recommended_next_action": "Add missing paths or update master registry to match intentional layout."
+    },
+    {
+      "module_id": "ai-agent-scribe",
+      "module_name": "ai-agent-scribe",
+      "category": "ai_tower_agents",
+      "registry_status": "planned_stub",
+      "safety_class": "low",
+      "tags": [
+        "z_layer:ai-agent"
+      ],
+      "notes": "Logs, summaries, and reflections.",
+      "status": "FOUND_PARTIAL",
+      "required_status": "planned_or_active",
+      "safety_flags": [],
+      "evidence_paths_found": [],
+      "missing_expected_paths": [],
+      "duplicate_path_conflicts": [],
+      "doc_checks": [],
+      "doc_mention_notes": [],
+      "registry_note": null,
+      "zuno_doc_coarse_mention": {
+        "scanned": "C:\\Cursor Projects Organiser\\Z_Sanctuary_Universe\\docs\\Z-ZUNO-AI-FULL-REPORT.md",
+        "matched": false
+      },
+      "recommended_next_action": "Add missing paths or update master registry to match intentional layout."
+    },
+    {
+      "module_id": "ai-tower",
+      "module_name": "ai-tower",
+      "category": "ai_tower_agents",
+      "registry_status": "planned_stub",
+      "safety_class": "low",
+      "tags": [
+        "z_layer:ai-tower"
+      ],
+      "notes": "Multi-agent reasoning and oversight tower.",
+      "status": "FOUND_PARTIAL",
+      "required_status": "planned_or_active",
+      "safety_flags": [],
+      "evidence_paths_found": [],
+      "missing_expected_paths": [],
+      "duplicate_path_conflicts": [],
+      "doc_checks": [],
+      "doc_mention_notes": [],
+      "registry_note": null,
+      "zuno_doc_coarse_mention": {
+        "scanned": "C:\\Cursor Projects Organiser\\Z_Sanctuary_Universe\\docs\\Z-ZUNO-AI-FULL-REPORT.md",
+        "matched": false
+      },
+      "recommended_next_action": "Add missing paths or update master registry to match intentional layout."
+    },
+    {
+      "module_id": "autopilot-engine",
+      "module_name": "autopilot-engine",
+      "category": "core_engines",
+      "registry_status": "planned_stub",
+      "safety_class": "low",
+      "tags": [
+        "z_layer:core"
+      ],
+      "notes": "Super Saiyan Autopilot control plane.",
+      "status": "FOUND_PARTIAL",
+      "required_status": "planned_or_active",
+      "safety_flags": [],
+      "evidence_paths_found": [],
+      "missing_expected_paths": [],
+      "duplicate_path_conflicts": [],
+      "doc_checks": [],
+      "doc_mention_notes": [],
+      "registry_note": null,
+      "zuno_doc_coarse_mention": {
+        "scanned": "C:\\Cursor Projects Organiser\\Z_Sanctuary_Universe\\docs\\Z-ZUNO-AI-FULL-REPORT.md",
+        "matched": false
+      },
+      "recommended_next_action": "Add missing paths or update master registry to match intentional layout."
+    },
+    {
+      "module_id": "commander_panel",
+      "module_name": "Commander dashboard panel script",
+      "category": "Dashboard / HUDP",
+      "registry_status": "implemented",
+      "safety_class": "low",
+      "tags": [],
+      "notes": "",
+      "status": "FOUND_FULL",
+      "required_status": "planned_or_active",
+      "safety_flags": [],
+      "evidence_paths_found": [
+        "dashboard/scripts/z-commander-panel.js"
+      ],
+      "missing_expected_paths": [],
+      "duplicate_path_conflicts": [],
+      "doc_checks": [],
+      "doc_mention_notes": [],
+      "registry_note": null,
+      "zuno_doc_coarse_mention": {
+        "scanned": "C:\\Cursor Projects Organiser\\Z_Sanctuary_Universe\\docs\\Z-ZUNO-AI-FULL-REPORT.md",
+        "matched": false
+      },
+      "recommended_next_action": "None — keep synced on registry/manifest churn."
+    },
+    {
+      "module_id": "core_engines_registry_datafile",
+      "module_name": "Core engines registry JSON (if present)",
+      "category": "Registry / engines",
+      "registry_status": "implemented",
+      "safety_class": "low",
+      "tags": [
+        "registry:engines"
+      ],
+      "notes": "",
+      "status": "FOUND_FULL",
+      "required_status": "planned_or_active",
+      "safety_flags": [],
+      "evidence_paths_found": [
+        "data/z_core_engines_registry.json"
+      ],
+      "missing_expected_paths": [],
+      "duplicate_path_conflicts": [],
+      "doc_checks": [],
+      "doc_mention_notes": [],
+      "registry_note": null,
+      "zuno_doc_coarse_mention": {
+        "scanned": "C:\\Cursor Projects Organiser\\Z_Sanctuary_Universe\\docs\\Z-ZUNO-AI-FULL-REPORT.md",
+        "matched": false
+      },
+      "recommended_next_action": "None — keep synced on registry/manifest churn."
+    },
+    {
+      "module_id": "core-chronicle",
+      "module_name": "core-chronicle",
+      "category": "core_engines",
+      "registry_status": "planned_stub",
+      "safety_class": "low",
+      "tags": [
+        "z_layer:core"
+      ],
+      "notes": "Chronicle capture and timeline memory.",
+      "status": "FOUND_PARTIAL",
+      "required_status": "planned_or_active",
+      "safety_flags": [],
+      "evidence_paths_found": [],
+      "missing_expected_paths": [],
+      "duplicate_path_conflicts": [],
+      "doc_checks": [],
+      "doc_mention_notes": [],
+      "registry_note": null,
+      "zuno_doc_coarse_mention": {
+        "scanned": "C:\\Cursor Projects Organiser\\Z_Sanctuary_Universe\\docs\\Z-ZUNO-AI-FULL-REPORT.md",
+        "matched": false
+      },
+      "recommended_next_action": "Add missing paths or update master registry to match intentional layout."
+    },
+    {
+      "module_id": "core-chronicle-hud",
+      "module_name": "core-chronicle-hud",
+      "category": "core_engines",
+      "registry_status": "planned_stub",
+      "safety_class": "low",
+      "tags": [
+        "z_layer:core"
+      ],
+      "notes": "Chronicle HUD display layer.",
+      "status": "FOUND_PARTIAL",
+      "required_status": "planned_or_active",
+      "safety_flags": [],
+      "evidence_paths_found": [],
+      "missing_expected_paths": [],
+      "duplicate_path_conflicts": [],
+      "doc_checks": [],
+      "doc_mention_notes": [],
+      "registry_note": null,
+      "zuno_doc_coarse_mention": {
+        "scanned": "C:\\Cursor Projects Organiser\\Z_Sanctuary_Universe\\docs\\Z-ZUNO-AI-FULL-REPORT.md",
+        "matched": false
+      },
+      "recommended_next_action": "Add missing paths or update master registry to match intentional layout."
+    },
+    {
+      "module_id": "core-dashboard",
+      "module_name": "core-dashboard",
+      "category": "core_engines",
+      "registry_status": "planned_stub",
+      "safety_class": "low",
+      "tags": [
+        "z_layer:core"
+      ],
+      "notes": "Dashboard runtime and analytics.",
+      "status": "FOUND_PARTIAL",
+      "required_status": "planned_or_active",
+      "safety_flags": [],
+      "evidence_paths_found": [],
+      "missing_expected_paths": [],
+      "duplicate_path_conflicts": [],
+      "doc_checks": [],
+      "doc_mention_notes": [],
+      "registry_note": null,
+      "zuno_doc_coarse_mention": {
+        "scanned": "C:\\Cursor Projects Organiser\\Z_Sanctuary_Universe\\docs\\Z-ZUNO-AI-FULL-REPORT.md",
+        "matched": false
+      },
+      "recommended_next_action": "Add missing paths or update master registry to match intentional layout."
+    },
+    {
+      "module_id": "core-emotion-filter",
+      "module_name": "core-emotion-filter",
+      "category": "core_engines",
+      "registry_status": "planned_stub",
+      "safety_class": "low",
+      "tags": [
+        "z_layer:core"
+      ],
+      "notes": "Emotional coherence and response mode.",
+      "status": "FOUND_PARTIAL",
+      "required_status": "planned_or_active",
+      "safety_flags": [],
+      "evidence_paths_found": [],
+      "missing_expected_paths": [],
+      "duplicate_path_conflicts": [],
+      "doc_checks": [],
+      "doc_mention_notes": [],
+      "registry_note": null,
+      "zuno_doc_coarse_mention": {
+        "scanned": "C:\\Cursor Projects Organiser\\Z_Sanctuary_Universe\\docs\\Z-ZUNO-AI-FULL-REPORT.md",
+        "matched": false
+      },
+      "recommended_next_action": "Add missing paths or update master registry to match intentional layout."
+    },
+    {
+      "module_id": "core-energy-response",
+      "module_name": "core-energy-response",
+      "category": "core_engines",
+      "registry_status": "planned_stub",
+      "safety_class": "low",
+      "tags": [
+        "z_layer:core"
+      ],
+      "notes": "Energy and harmony pulse engine.",
+      "status": "FOUND_PARTIAL",
+      "required_status": "planned_or_active",
+      "safety_flags": [],
+      "evidence_paths_found": [],
+      "missing_expected_paths": [],
+      "duplicate_path_conflicts": [],
+      "doc_checks": [],
+      "doc_mention_notes": [],
+      "registry_note": null,
+      "zuno_doc_coarse_mention": {
+        "scanned": "C:\\Cursor Projects Organiser\\Z_Sanctuary_Universe\\docs\\Z-ZUNO-AI-FULL-REPORT.md",
+        "matched": false
+      },
+      "recommended_next_action": "Add missing paths or update master registry to match intentional layout."
+    },
+    {
+      "module_id": "core-status-console",
+      "module_name": "core-status-console",
+      "category": "core_engines",
+      "registry_status": "planned_stub",
+      "safety_class": "low",
+      "tags": [
+        "z_layer:core"
+      ],
+      "notes": "Status console and log router.",
+      "status": "FOUND_PARTIAL",
+      "required_status": "planned_or_active",
+      "safety_flags": [],
+      "evidence_paths_found": [],
+      "missing_expected_paths": [],
+      "duplicate_path_conflicts": [],
+      "doc_checks": [],
+      "doc_mention_notes": [],
+      "registry_note": null,
+      "zuno_doc_coarse_mention": {
+        "scanned": "C:\\Cursor Projects Organiser\\Z_Sanctuary_Universe\\docs\\Z-ZUNO-AI-FULL-REPORT.md",
+        "matched": false
+      },
+      "recommended_next_action": "Add missing paths or update master registry to match intentional layout."
+    },
+    {
+      "module_id": "display_morph_engine",
+      "module_name": "Display morph engine (dashboard scripts)",
+      "category": "Dashboard / runtime",
+      "registry_status": "implemented",
+      "safety_class": "low",
+      "tags": [],
+      "notes": "",
+      "status": "FOUND_FULL",
+      "required_status": "planned_or_active",
+      "safety_flags": [],
+      "evidence_paths_found": [
+        "dashboard/scripts/z-display-morph-engine.js"
+      ],
+      "missing_expected_paths": [],
+      "duplicate_path_conflicts": [],
+      "doc_checks": [],
+      "doc_mention_notes": [],
+      "registry_note": null,
+      "zuno_doc_coarse_mention": {
+        "scanned": "C:\\Cursor Projects Organiser\\Z_Sanctuary_Universe\\docs\\Z-ZUNO-AI-FULL-REPORT.md",
+        "matched": false
+      },
+      "recommended_next_action": "None — keep synced on registry/manifest churn."
+    },
+    {
+      "module_id": "ethical_monetization_layer",
+      "module_name": "Ethical monetization / subscriptions (concept)",
+      "category": "economy_monetization",
+      "registry_status": "decision_required",
+      "safety_class": "medium",
+      "tags": [
+        "vision",
+        "governance"
+      ],
+      "notes": "",
+      "status": "NEEDS_DECISION",
+      "required_status": "needs_decision",
+      "safety_flags": [],
+      "evidence_paths_found": [],
+      "missing_expected_paths": [],
+      "duplicate_path_conflicts": [],
+      "doc_checks": [],
+      "doc_mention_notes": [],
+      "registry_note": null,
+      "zuno_doc_coarse_mention": {
+        "scanned": "C:\\Cursor Projects Organiser\\Z_Sanctuary_Universe\\docs\\Z-ZUNO-AI-FULL-REPORT.md",
+        "matched": false
+      },
+      "recommended_next_action": "Governance: rename as active, deprecate registry row, or add data/core engine file."
+    },
+    {
+      "module_id": "family_companion_grove",
+      "module_name": "Family companion grove (concept)",
+      "category": "family_companion",
+      "registry_status": "planned_stub",
+      "safety_class": "medium",
+      "tags": [
+        "vision"
+      ],
+      "notes": "",
+      "status": "FOUND_PARTIAL",
+      "required_status": "planned_or_active",
+      "safety_flags": [],
+      "evidence_paths_found": [],
+      "missing_expected_paths": [],
+      "duplicate_path_conflicts": [],
+      "doc_checks": [],
+      "doc_mention_notes": [],
+      "registry_note": null,
+      "zuno_doc_coarse_mention": {
+        "scanned": "C:\\Cursor Projects Organiser\\Z_Sanctuary_Universe\\docs\\Z-ZUNO-AI-FULL-REPORT.md",
+        "matched": false
+      },
+      "recommended_next_action": "Add missing paths or update master registry to match intentional layout."
+    },
+    {
+      "module_id": "gambling_prediction_voice",
+      "module_name": "Gambling / prediction narration (concept)",
+      "category": "gaming_compliance",
+      "registry_status": "safety_hold",
+      "safety_class": "high",
+      "tags": [
+        "vision",
+        "risk:gambling"
+      ],
+      "notes": "",
+      "status": "NEEDS_SAFETY_REVIEW",
+      "required_status": "planned_or_active",
+      "safety_flags": [
+        "no_guaranteed_outcome_claims"
+      ],
+      "evidence_paths_found": [],
+      "missing_expected_paths": [],
+      "duplicate_path_conflicts": [],
+      "doc_checks": [
+        {
+          "path": "docs/safety/GAMBLING_PREDICTION_BOUNDARY.md",
+          "present": true,
+          "ok": true,
+          "matched": [
+            "gambling",
+            "prediction"
+          ],
+          "note": "matched"
+        }
+      ],
+      "doc_mention_notes": [
+        "docs/safety/GAMBLING_PREDICTION_BOUNDARY.md: ok (gambling, prediction)"
+      ],
+      "registry_note": null,
+      "zuno_doc_coarse_mention": {
+        "scanned": "C:\\Cursor Projects Organiser\\Z_Sanctuary_Universe\\docs\\Z-ZUNO-AI-FULL-REPORT.md",
+        "matched": false
+      },
+      "recommended_next_action": "Safety gate doc + disclaimers before user-facing rollout."
+    },
+    {
+      "module_id": "global_eco_marketplace_awareness",
+      "module_name": "Eco / marketplace / global awareness spine (concept)",
+      "category": "eco_global",
+      "registry_status": "doctrine_only",
+      "safety_class": "low",
+      "tags": [
+        "vision"
+      ],
+      "notes": "",
+      "status": "FOUND_PARTIAL",
+      "required_status": "planned_or_active",
+      "safety_flags": [],
+      "evidence_paths_found": [],
+      "missing_expected_paths": [],
+      "duplicate_path_conflicts": [],
+      "doc_checks": [],
+      "doc_mention_notes": [],
+      "registry_note": null,
+      "zuno_doc_coarse_mention": {
+        "scanned": "C:\\Cursor Projects Organiser\\Z_Sanctuary_Universe\\docs\\Z-ZUNO-AI-FULL-REPORT.md",
+        "matched": false
+      },
+      "recommended_next_action": "Add missing paths or update master registry to match intentional layout."
+    },
+    {
+      "module_id": "gps_safety_module",
+      "module_name": "GPS / location safety posture (concept)",
+      "category": "safety_emergency",
+      "registry_status": "safety_hold",
+      "safety_class": "high",
+      "tags": [
+        "vision",
+        "risk:location"
+      ],
+      "notes": "",
+      "status": "NEEDS_SAFETY_REVIEW",
+      "required_status": "planned_or_active",
+      "safety_flags": [
+        "location_privacy_emergency_only"
+      ],
+      "evidence_paths_found": [],
+      "missing_expected_paths": [],
+      "duplicate_path_conflicts": [],
+      "doc_checks": [
+        {
+          "path": "docs/safety/LOCATION_CAMERA_MIC_BOUNDARY.md",
+          "present": true,
+          "ok": true,
+          "matched": [
+            "location",
+            "consent"
+          ],
+          "note": "matched"
+        }
+      ],
+      "doc_mention_notes": [
+        "docs/safety/LOCATION_CAMERA_MIC_BOUNDARY.md: ok (location, consent)"
+      ],
+      "registry_note": null,
+      "zuno_doc_coarse_mention": {
+        "scanned": "C:\\Cursor Projects Organiser\\Z_Sanctuary_Universe\\docs\\Z-ZUNO-AI-FULL-REPORT.md",
+        "matched": false
+      },
+      "recommended_next_action": "Safety gate doc + disclaimers before user-facing rollout."
+    },
+    {
+      "module_id": "master_modules_register_doc",
+      "module_name": "Master modules register (markdown)",
+      "category": "Governance / docs",
+      "registry_status": "implemented",
+      "safety_class": "low",
+      "tags": [],
+      "notes": "",
+      "status": "FOUND_FULL",
+      "required_status": "planned_or_active",
+      "safety_flags": [],
+      "evidence_paths_found": [
+        "docs/Z-MASTER-MODULES-REGISTER.md"
+      ],
+      "missing_expected_paths": [],
+      "duplicate_path_conflicts": [],
+      "doc_checks": [],
+      "doc_mention_notes": [],
+      "registry_note": null,
+      "zuno_doc_coarse_mention": {
+        "scanned": "C:\\Cursor Projects Organiser\\Z_Sanctuary_Universe\\docs\\Z-ZUNO-AI-FULL-REPORT.md",
+        "matched": false
+      },
+      "recommended_next_action": "None — keep synced on registry/manifest churn."
+    },
+    {
+      "module_id": "mdgev_grid",
+      "module_name": "Z-MDGEV mega dashboard grid",
+      "category": "Dashboard / HUDP",
+      "registry_status": "implemented",
+      "safety_class": "low",
+      "tags": [],
+      "notes": "",
+      "status": "FOUND_FULL",
+      "required_status": "planned_or_active",
+      "safety_flags": [],
+      "evidence_paths_found": [
+        "dashboard/z-mdgev/index.html",
+        "dashboard/z-mdgev/mdg.js"
+      ],
+      "missing_expected_paths": [],
+      "duplicate_path_conflicts": [],
+      "doc_checks": [],
+      "doc_mention_notes": [],
+      "registry_note": null,
+      "zuno_doc_coarse_mention": {
+        "scanned": "C:\\Cursor Projects Organiser\\Z_Sanctuary_Universe\\docs\\Z-ZUNO-AI-FULL-REPORT.md",
+        "matched": false
+      },
+      "recommended_next_action": "None — keep synced on registry/manifest churn."
+    },
+    {
+      "module_id": "media_storytelling_os",
+      "module_name": "Media / creative storytelling OS (concept)",
+      "category": "media_creative",
+      "registry_status": "doctrine_only",
+      "safety_class": "low",
+      "tags": [
+        "vision"
+      ],
+      "notes": "",
+      "status": "FOUND_PARTIAL",
+      "required_status": "planned_or_active",
+      "safety_flags": [],
+      "evidence_paths_found": [],
+      "missing_expected_paths": [],
+      "duplicate_path_conflicts": [],
+      "doc_checks": [],
+      "doc_mention_notes": [],
+      "registry_note": null,
+      "zuno_doc_coarse_mention": {
+        "scanned": "C:\\Cursor Projects Organiser\\Z_Sanctuary_Universe\\docs\\Z-ZUNO-AI-FULL-REPORT.md",
+        "matched": false
+      },
+      "recommended_next_action": "Add missing paths or update master registry to match intentional layout."
+    },
+    {
+      "module_id": "mirrorsoul_hub_slice",
+      "module_name": "MirrorSoul hub slice package + routes",
+      "category": "Product / interpersonal",
+      "registry_status": "implemented",
+      "safety_class": "high",
+      "tags": [],
+      "notes": "",
+      "status": "NEEDS_SAFETY_REVIEW",
+      "required_status": "planned_or_active",
+      "safety_flags": [
+        "emotion_and_relationship_guidance_follow_policy"
+      ],
+      "evidence_paths_found": [
+        "packages/z-sanctuary-mirrorsoul-slice/index.mjs",
+        "packages/z-sanctuary-mirrorsoul-slice/package.json",
+        "apps/web/src/app/mirrorsoul/page.js",
+        "apps/api/src/modules/mirrorSoul/controller.mjs"
+      ],
+      "missing_expected_paths": [],
+      "duplicate_path_conflicts": [],
+      "doc_checks": [
+        {
+          "path": "docs/safety/MIRRORSOUL_PRIVACY_BOUNDARY.md",
+          "present": true,
+          "ok": true,
+          "matched": [
+            "MirrorSoul",
+            "privacy"
+          ],
+          "note": "matched"
+        }
+      ],
+      "doc_mention_notes": [
+        "docs/safety/MIRRORSOUL_PRIVACY_BOUNDARY.md: ok (MirrorSoul, privacy)"
+      ],
+      "registry_note": null,
+      "zuno_doc_coarse_mention": {
+        "scanned": "C:\\Cursor Projects Organiser\\Z_Sanctuary_Universe\\docs\\Z-ZUNO-AI-FULL-REPORT.md",
+        "matched": false
+      },
+      "recommended_next_action": "Safety gate doc + disclaimers before user-facing rollout."
+    },
+    {
+      "module_id": "module_registry_hub",
+      "module_name": "Z module registry sync + manifest",
+      "category": "Registry / EAII",
+      "registry_status": "implemented",
+      "safety_class": "low",
+      "tags": [],
+      "notes": "",
+      "status": "FOUND_FULL",
+      "required_status": "planned_or_active",
+      "safety_flags": [],
+      "evidence_paths_found": [
+        "scripts/z_module_registry_sync.mjs",
+        "data/Z_module_registry.json",
+        "data/z_module_manifest.json"
+      ],
+      "missing_expected_paths": [],
+      "duplicate_path_conflicts": [],
+      "doc_checks": [],
+      "doc_mention_notes": [],
+      "registry_note": null,
+      "zuno_doc_coarse_mention": {
+        "scanned": "C:\\Cursor Projects Organiser\\Z_Sanctuary_Universe\\docs\\Z-ZUNO-AI-FULL-REPORT.md",
+        "matched": false
+      },
+      "recommended_next_action": "None — keep synced on registry/manifest churn."
+    },
+    {
+      "module_id": "movement_health_coach_lite",
+      "module_name": "Movement / health coaching (non-medical posture)",
+      "category": "health_movement",
+      "registry_status": "safety_hold",
+      "safety_class": "high",
+      "tags": [
+        "vision",
+        "risk:health"
+      ],
+      "notes": "",
+      "status": "NEEDS_SAFETY_REVIEW",
+      "required_status": "planned_or_active",
+      "safety_flags": [
+        "non_medical_disclaimer"
+      ],
+      "evidence_paths_found": [],
+      "missing_expected_paths": [],
+      "duplicate_path_conflicts": [],
+      "doc_checks": [
+        {
+          "path": "docs/safety/NON_MEDICAL_PRODUCT_BOUNDARY.md",
+          "present": true,
+          "ok": true,
+          "matched": [
+            "non-medical",
+            "disclaimer"
+          ],
+          "note": "matched"
+        }
+      ],
+      "doc_mention_notes": [
+        "docs/safety/NON_MEDICAL_PRODUCT_BOUNDARY.md: ok (non-medical, disclaimer)"
+      ],
+      "registry_note": null,
+      "zuno_doc_coarse_mention": {
+        "scanned": "C:\\Cursor Projects Organiser\\Z_Sanctuary_Universe\\docs\\Z-ZUNO-AI-FULL-REPORT.md",
+        "matched": false
+      },
+      "recommended_next_action": "Safety gate doc + disclaimers before user-facing rollout."
+    },
+    {
+      "module_id": "outreach_pitch_compliance_pack",
+      "module_name": "Docs / outreach / pitch / compliance pack (concept)",
+      "category": "docs_outreach",
+      "registry_status": "partial",
+      "safety_class": "low",
+      "tags": [
+        "vision"
+      ],
+      "notes": "",
+      "status": "FOUND_FULL",
+      "required_status": "planned_or_active",
+      "safety_flags": [],
+      "evidence_paths_found": [
+        "docs/Z-BUILD-GATE-MATRIX.md"
+      ],
+      "missing_expected_paths": [],
+      "duplicate_path_conflicts": [],
+      "doc_checks": [],
+      "doc_mention_notes": [],
+      "registry_note": null,
+      "zuno_doc_coarse_mention": {
+        "scanned": "C:\\Cursor Projects Organiser\\Z_Sanctuary_Universe\\docs\\Z-ZUNO-AI-FULL-REPORT.md",
+        "matched": false
+      },
+      "recommended_next_action": "None — keep synced on registry/manifest churn."
+    },
+    {
+      "module_id": "public_trust_portal_lottery",
+      "module_name": "Public trust portal (Amk_Goku Worldwide Lottery subtree)",
+      "category": "Trust / products",
+      "registry_status": "implemented",
+      "safety_class": "high",
+      "tags": [],
+      "notes": "",
+      "status": "NEEDS_SAFETY_REVIEW",
+      "required_status": "planned_or_active",
+      "safety_flags": [
+        "gambling_adjacent_compliance_and_disclaimers"
+      ],
+      "evidence_paths_found": [
+        "Amk_Goku Worldwide Loterry/ui/public_trust/trust_portal.js"
+      ],
+      "missing_expected_paths": [],
+      "duplicate_path_conflicts": [],
+      "doc_checks": [
+        {
+          "path": "docs/safety/LOTTERY_RESPONSIBLE_USE_BOUNDARY.md",
+          "present": true,
+          "ok": true,
+          "matched": [
+            "lottery",
+            "responsible"
+          ],
+          "note": "matched"
+        }
+      ],
+      "doc_mention_notes": [
+        "docs/safety/LOTTERY_RESPONSIBLE_USE_BOUNDARY.md: ok (lottery, responsible)"
+      ],
+      "registry_note": null,
+      "zuno_doc_coarse_mention": {
+        "scanned": "C:\\Cursor Projects Organiser\\Z_Sanctuary_Universe\\docs\\Z-ZUNO-AI-FULL-REPORT.md",
+        "matched": false
+      },
+      "recommended_next_action": "Safety gate doc + disclaimers before user-facing rollout."
+    },
+    {
+      "module_id": "qa_rp_surface",
+      "module_name": "Z-QA-RP QA surface",
+      "category": "Dashboard / QA",
+      "registry_status": "implemented",
+      "safety_class": "low",
+      "tags": [],
+      "notes": "",
+      "status": "FOUND_FULL",
+      "required_status": "planned_or_active",
+      "safety_flags": [],
+      "evidence_paths_found": [
+        "dashboard/z-qa-rp/index.html",
+        "dashboard/z-qa-rp/qa-rp.js",
+        "data/z_qa_rp_registry.json"
+      ],
+      "missing_expected_paths": [],
+      "duplicate_path_conflicts": [],
+      "doc_checks": [],
+      "doc_mention_notes": [],
+      "registry_note": null,
+      "zuno_doc_coarse_mention": {
+        "scanned": "C:\\Cursor Projects Organiser\\Z_Sanctuary_Universe\\docs\\Z-ZUNO-AI-FULL-REPORT.md",
+        "matched": false
+      },
+      "recommended_next_action": "None — keep synced on registry/manifest churn."
+    },
+    {
+      "module_id": "registry_omni_verify",
+      "module_name": "Registry omni verify",
+      "category": "Registry / EAII",
+      "registry_status": "implemented",
+      "safety_class": "low",
+      "tags": [],
+      "notes": "",
+      "status": "FOUND_FULL",
+      "required_status": "planned_or_active",
+      "safety_flags": [],
+      "evidence_paths_found": [
+        "scripts/z_registry_omni_verify.mjs"
+      ],
+      "missing_expected_paths": [],
+      "duplicate_path_conflicts": [],
+      "doc_checks": [],
+      "doc_mention_notes": [],
+      "registry_note": null,
+      "zuno_doc_coarse_mention": {
+        "scanned": "C:\\Cursor Projects Organiser\\Z_Sanctuary_Universe\\docs\\Z-ZUNO-AI-FULL-REPORT.md",
+        "matched": false
+      },
+      "recommended_next_action": "None — keep synced on registry/manifest churn."
+    },
+    {
+      "module_id": "rkpk-companion",
+      "module_name": "rkpk-companion",
+      "category": "family_companion",
+      "registry_status": "planned_stub",
+      "safety_class": "low",
+      "tags": [
+        "z_layer:ai-companion"
+      ],
+      "notes": "Compassion and gentle resolution.",
+      "status": "FOUND_PARTIAL",
+      "required_status": "planned_or_active",
+      "safety_flags": [],
+      "evidence_paths_found": [],
+      "missing_expected_paths": [],
+      "duplicate_path_conflicts": [],
+      "doc_checks": [],
+      "doc_mention_notes": [],
+      "registry_note": null,
+      "zuno_doc_coarse_mention": {
+        "scanned": "C:\\Cursor Projects Organiser\\Z_Sanctuary_Universe\\docs\\Z-ZUNO-AI-FULL-REPORT.md",
+        "matched": false
+      },
+      "recommended_next_action": "Add missing paths or update master registry to match intentional layout."
+    },
+    {
+      "module_id": "roulette",
+      "module_name": "Super Saiyan Roulette",
+      "category": "gaming_compliance",
+      "registry_status": "safety_hold",
+      "safety_class": "high",
+      "tags": [
+        "z_layer:games"
+      ],
+      "notes": "",
+      "status": "NEEDS_SAFETY_REVIEW",
+      "required_status": "planned_or_active",
+      "safety_flags": [
+        "gambling_adjacent_compliance"
+      ],
+      "evidence_paths_found": [],
+      "missing_expected_paths": [],
+      "duplicate_path_conflicts": [],
+      "doc_checks": [],
+      "doc_mention_notes": [],
+      "registry_note": null,
+      "zuno_doc_coarse_mention": {
+        "scanned": "C:\\Cursor Projects Organiser\\Z_Sanctuary_Universe\\docs\\Z-ZUNO-AI-FULL-REPORT.md",
+        "matched": false
+      },
+      "recommended_next_action": "Safety gate doc + disclaimers before user-facing rollout."
+    },
+    {
+      "module_id": "roulette-calculator",
+      "module_name": "roulette-calculator",
+      "category": "gaming_compliance",
+      "registry_status": "safety_hold",
+      "safety_class": "high",
+      "tags": [
+        "z_layer:analytics"
+      ],
+      "notes": "Legacy Roulette Calculator workspace imported and linked to Z-Modules Registry.",
+      "status": "NEEDS_SAFETY_REVIEW",
+      "required_status": "planned_or_active",
+      "safety_flags": [
+        "gambling_adjacent_compliance"
+      ],
+      "evidence_paths_found": [],
+      "missing_expected_paths": [],
+      "duplicate_path_conflicts": [],
+      "doc_checks": [],
+      "doc_mention_notes": [],
+      "registry_note": null,
+      "zuno_doc_coarse_mention": {
+        "scanned": "C:\\Cursor Projects Organiser\\Z_Sanctuary_Universe\\docs\\Z-ZUNO-AI-FULL-REPORT.md",
+        "matched": false
+      },
+      "recommended_next_action": "Safety gate doc + disclaimers before user-facing rollout."
+    },
+    {
+      "module_id": "sepc-governance",
+      "module_name": "sepc-governance",
+      "category": "trust_audit_governance",
+      "registry_status": "planned_stub",
+      "safety_class": "low",
+      "tags": [
+        "z_layer:governance"
+      ],
+      "notes": "Security, Etiquette, Protocol & Compassion gate.",
+      "status": "FOUND_PARTIAL",
+      "required_status": "planned_or_active",
+      "safety_flags": [],
+      "evidence_paths_found": [],
+      "missing_expected_paths": [],
+      "duplicate_path_conflicts": [],
+      "doc_checks": [],
+      "doc_mention_notes": [],
+      "registry_note": null,
+      "zuno_doc_coarse_mention": {
+        "scanned": "C:\\Cursor Projects Organiser\\Z_Sanctuary_Universe\\docs\\Z-ZUNO-AI-FULL-REPORT.md",
+        "matched": false
+      },
+      "recommended_next_action": "Add missing paths or update master registry to match intentional layout."
+    },
+    {
+      "module_id": "skk-companion",
+      "module_name": "skk-companion",
+      "category": "family_companion",
+      "registry_status": "planned_stub",
+      "safety_class": "low",
+      "tags": [
+        "z_layer:ai-companion"
+      ],
+      "notes": "Wisdom and lawful stability.",
+      "status": "FOUND_PARTIAL",
+      "required_status": "planned_or_active",
+      "safety_flags": [],
+      "evidence_paths_found": [],
+      "missing_expected_paths": [],
+      "duplicate_path_conflicts": [],
+      "doc_checks": [],
+      "doc_mention_notes": [],
+      "registry_note": null,
+      "zuno_doc_coarse_mention": {
+        "scanned": "C:\\Cursor Projects Organiser\\Z_Sanctuary_Universe\\docs\\Z-ZUNO-AI-FULL-REPORT.md",
+        "matched": false
+      },
+      "recommended_next_action": "Add missing paths or update master registry to match intentional layout."
+    },
+    {
+      "module_id": "social-arena",
+      "module_name": "social-arena",
+      "category": "love_social",
+      "registry_status": "planned_stub",
+      "safety_class": "low",
+      "tags": [
+        "z_layer:social"
+      ],
+      "notes": "Social Arena profiles, chat, and streams.",
+      "status": "FOUND_PARTIAL",
+      "required_status": "planned_or_active",
+      "safety_flags": [],
+      "evidence_paths_found": [],
+      "missing_expected_paths": [],
+      "duplicate_path_conflicts": [],
+      "doc_checks": [],
+      "doc_mention_notes": [],
+      "registry_note": null,
+      "zuno_doc_coarse_mention": {
+        "scanned": "C:\\Cursor Projects Organiser\\Z_Sanctuary_Universe\\docs\\Z-ZUNO-AI-FULL-REPORT.md",
+        "matched": false
+      },
+      "recommended_next_action": "Add missing paths or update master registry to match intentional layout."
+    },
+    {
+      "module_id": "soulmate_baby_predictor",
+      "module_name": "Soulmate / baby prediction (concept)",
+      "category": "love_social",
+      "registry_status": "safety_hold",
+      "safety_class": "high",
+      "tags": [
+        "vision",
+        "build_priority:P4"
+      ],
+      "notes": "Doctrine only. Requires consent boundary doc before any data collection or UX.",
+      "status": "NEEDS_SAFETY_REVIEW",
+      "required_status": "planned_or_active",
+      "safety_flags": [
+        "consent_sensitive_personal_projection"
+      ],
+      "evidence_paths_found": [],
+      "missing_expected_paths": [],
+      "duplicate_path_conflicts": [],
+      "doc_checks": [],
+      "doc_mention_notes": [],
+      "registry_note": null,
+      "zuno_doc_coarse_mention": {
+        "scanned": "C:\\Cursor Projects Organiser\\Z_Sanctuary_Universe\\docs\\Z-ZUNO-AI-FULL-REPORT.md",
+        "matched": false
+      },
+      "recommended_next_action": "Safety gate doc + disclaimers before user-facing rollout."
+    },
+    {
+      "module_id": "soundscape_pulse",
+      "module_name": "Soundscape acoustic pulse panels",
+      "category": "Core engine / experiential",
+      "registry_status": "implemented",
+      "safety_class": "low",
+      "tags": [],
+      "notes": "",
+      "status": "FOUND_FULL",
+      "required_status": "planned_or_active",
+      "safety_flags": [],
+      "evidence_paths_found": [
+        "core/z_soundscape_pulse_panel.js",
+        "core/z_soundscape_audio.js",
+        "docs/Z-ACOUSTIC-LIVING-PULSE-ARCHITECTURE.md"
+      ],
+      "missing_expected_paths": [],
+      "duplicate_path_conflicts": [],
+      "doc_checks": [],
+      "doc_mention_notes": [],
+      "registry_note": null,
+      "zuno_doc_coarse_mention": {
+        "scanned": "C:\\Cursor Projects Organiser\\Z_Sanctuary_Universe\\docs\\Z-ZUNO-AI-FULL-REPORT.md",
+        "matched": false
+      },
+      "recommended_next_action": "None — keep synced on registry/manifest churn."
+    },
+    {
+      "module_id": "sovereign_products_registry",
+      "module_name": "Sovereign products registry lite",
+      "category": "Products / sovereign",
+      "registry_status": "implemented",
+      "safety_class": "low",
+      "tags": [],
+      "notes": "",
+      "status": "FOUND_FULL",
+      "required_status": "planned_or_active",
+      "safety_flags": [],
+      "evidence_paths_found": [
+        "data/z_sovereign_products_registry.json"
+      ],
+      "missing_expected_paths": [],
+      "duplicate_path_conflicts": [],
+      "doc_checks": [],
+      "doc_mention_notes": [],
+      "registry_note": null,
+      "zuno_doc_coarse_mention": {
+        "scanned": "C:\\Cursor Projects Organiser\\Z_Sanctuary_Universe\\docs\\Z-ZUNO-AI-FULL-REPORT.md",
+        "matched": false
+      },
+      "recommended_next_action": "None — keep synced on registry/manifest churn."
+    },
+    {
+      "module_id": "twin_roots_phase1",
+      "module_name": "Twin roots Phase 1 mock + status tooling",
+      "category": "Architecture / twins",
+      "registry_status": "implemented",
+      "safety_class": "low",
+      "tags": [],
+      "notes": "",
+      "status": "FOUND_FULL",
+      "required_status": "planned_or_active",
+      "safety_flags": [],
+      "evidence_paths_found": [
+        "data/z_twin_roots_phase1_mock.json",
+        "scripts/z_twin_roots_status.mjs",
+        "dashboard/panels/z_twin_roots_architecture.html"
+      ],
+      "missing_expected_paths": [],
+      "duplicate_path_conflicts": [],
+      "doc_checks": [],
+      "doc_mention_notes": [],
+      "registry_note": null,
+      "zuno_doc_coarse_mention": {
+        "scanned": "C:\\Cursor Projects Organiser\\Z_Sanctuary_Universe\\docs\\Z-ZUNO-AI-FULL-REPORT.md",
+        "matched": false
+      },
+      "recommended_next_action": "None — keep synced on registry/manifest churn."
+    },
+    {
+      "module_id": "z_gadget_mirrors_product",
+      "module_name": "Z-Gadget Mirrors (hardware concept)",
+      "category": "products_gadgets",
+      "registry_status": "doctrine_only",
+      "safety_class": "medium",
+      "tags": [
+        "vision"
+      ],
+      "notes": "",
+      "status": "FOUND_PARTIAL",
+      "required_status": "planned_or_active",
+      "safety_flags": [],
+      "evidence_paths_found": [],
+      "missing_expected_paths": [],
+      "duplicate_path_conflicts": [],
+      "doc_checks": [],
+      "doc_mention_notes": [],
+      "registry_note": null,
+      "zuno_doc_coarse_mention": {
+        "scanned": "C:\\Cursor Projects Organiser\\Z_Sanctuary_Universe\\docs\\Z-ZUNO-AI-FULL-REPORT.md",
+        "matched": false
+      },
+      "recommended_next_action": "Add missing paths or update master registry to match intentional layout."
+    },
+    {
+      "module_id": "z-adaptive-learning-phase3",
+      "module_name": "Z-Adaptive learning (Phase 3, bounded)",
+      "category": "trust_audit_governance",
+      "registry_status": "implemented",
+      "safety_class": "low",
+      "tags": [
+        "z_layer:governance"
+      ],
+      "notes": "z_learning_evaluator (Guardian+resolve → z_learning_history.jsonl, z_learning_evaluation.json) + z_adaptive_weight_tuner → z_adaptive_learning_state.json. Injected into SPI score + QOSMEI. AL rail badge. Reversible: delete z_adaptive_learning_state.json",
+      "status": "FOUND_FULL",
+      "required_status": "planned_or_active",
+      "safety_flags": [],
+      "evidence_paths_found": [
+        "scripts/z_learning_evaluator.mjs"
+      ],
+      "missing_expected_paths": [],
+      "duplicate_path_conflicts": [],
+      "doc_checks": [],
+      "doc_mention_notes": [],
+      "registry_note": null,
+      "zuno_doc_coarse_mention": {
+        "scanned": "C:\\Cursor Projects Organiser\\Z_Sanctuary_Universe\\docs\\Z-ZUNO-AI-FULL-REPORT.md",
+        "matched": false
+      },
+      "recommended_next_action": "None — keep synced on registry/manifest churn."
+    },
+    {
+      "module_id": "z-addon-dashboard-surface",
+      "module_name": "Z-Add On Dashboard (staging)",
+      "category": "trust_audit_governance",
+      "registry_status": "implemented",
+      "safety_class": "low",
+      "tags": [
+        "z_layer:governance"
+      ],
+      "notes": "Data-driven HTML staging for new flows and modules before fusion to main SKK and RKPK. State file lists items and fusion policy. Secondary to index-skk-rkpk; linked from Control Centre Build and automate.",
+      "status": "FOUND_FULL",
+      "required_status": "planned_or_active",
+      "safety_flags": [],
+      "evidence_paths_found": [
+        "dashboard/Html/z-addon-dashboard.html"
+      ],
+      "missing_expected_paths": [],
+      "duplicate_path_conflicts": [],
+      "doc_checks": [],
+      "doc_mention_notes": [],
+      "registry_note": null,
+      "zuno_doc_coarse_mention": {
+        "scanned": "C:\\Cursor Projects Organiser\\Z_Sanctuary_Universe\\docs\\Z-ZUNO-AI-FULL-REPORT.md",
+        "matched": false
+      },
+      "recommended_next_action": "None — keep synced on registry/manifest churn."
+    },
+    {
+      "module_id": "z-ai-qadp",
+      "module_name": "Z-AI QADP (Questions, Answers & Directed Pathways)",
+      "category": "trust_audit_governance",
+      "registry_status": "implemented",
+      "safety_class": "low",
+      "tags": [
+        "z_layer:governance"
+      ],
+      "notes": "Hub methodology: structured Q, citation-backed A, explicit pathways for follow-up vs bounded autonomy; registry-first and verifier-linked to limit cross-project mix-ups.",
+      "status": "FOUND_FULL",
+      "required_status": "planned_or_active",
+      "safety_flags": [],
+      "evidence_paths_found": [
+        "docs/Z-AI-QADP-QUESTIONS-ANSWERS-DIRECTED-PATHWAYS.md"
+      ],
+      "missing_expected_paths": [],
+      "duplicate_path_conflicts": [],
+      "doc_checks": [],
+      "doc_mention_notes": [],
+      "registry_note": null,
+      "zuno_doc_coarse_mention": {
+        "scanned": "C:\\Cursor Projects Organiser\\Z_Sanctuary_Universe\\docs\\Z-ZUNO-AI-FULL-REPORT.md",
+        "matched": false
+      },
+      "recommended_next_action": "None — keep synced on registry/manifest churn."
+    },
+    {
+      "module_id": "z-anima-core",
+      "module_name": "Z-ANIMA CORE (Human–Animal Connection Engine)",
+      "category": "trust_audit_governance",
+      "registry_status": "planned_stub",
+      "safety_class": "low",
+      "tags": [
+        "z_layer:governance"
+      ],
+      "notes": "Cross-module compassion layer: verified partners, quiet hours, no fake AI animal emotions, optional Z-PI&S z_anima_profile. Lite mock UI: dashboard/panels/z_anima_core_lite.html + data/z_anima_lite_mock.json (read-only). Phased real Lite later. Ethics in doc; no deploy or payment in mock.",
+      "status": "FOUND_PARTIAL",
+      "required_status": "planned_or_active",
+      "safety_flags": [],
+      "evidence_paths_found": [],
+      "missing_expected_paths": [],
+      "duplicate_path_conflicts": [],
+      "doc_checks": [],
+      "doc_mention_notes": [],
+      "registry_note": null,
+      "zuno_doc_coarse_mention": {
+        "scanned": "C:\\Cursor Projects Organiser\\Z_Sanctuary_Universe\\docs\\Z-ZUNO-AI-FULL-REPORT.md",
+        "matched": false
+      },
+      "recommended_next_action": "Add missing paths or update master registry to match intentional layout."
+    },
+    {
+      "module_id": "z-cross-system-intelligence-phase4",
+      "module_name": "Z-Cross-system intelligence (Phase 4)",
+      "category": "trust_audit_governance",
+      "registry_status": "implemented",
+      "safety_class": "low",
+      "tags": [
+        "z_layer:governance"
+      ],
+      "notes": "Read-only synthesizer: SPI + adaptive state + QOSMEI → z_cross_system_learning.{json,md}. No execution, no tuner feed. QOSMEI reads prior run for small confidence/risk nudge. CS rail badge. npm run cross:system after qosmei:signal.",
+      "status": "FOUND_FULL",
+      "required_status": "planned_or_active",
+      "safety_flags": [],
+      "evidence_paths_found": [
+        "scripts/z_cross_system_synthesizer.mjs"
+      ],
+      "missing_expected_paths": [],
+      "duplicate_path_conflicts": [],
+      "doc_checks": [],
+      "doc_mention_notes": [],
+      "registry_note": null,
+      "zuno_doc_coarse_mention": {
+        "scanned": "C:\\Cursor Projects Organiser\\Z_Sanctuary_Universe\\docs\\Z-ZUNO-AI-FULL-REPORT.md",
+        "matched": false
+      },
+      "recommended_next_action": "None — keep synced on registry/manifest churn."
+    },
+    {
+      "module_id": "z-cursor-folder-blueprint",
+      "module_name": "Z-Cursor folder blueprint (hub spine)",
+      "category": "trust_audit_governance",
+      "registry_status": "implemented",
+      "safety_class": "low",
+      "tags": [
+        "z_layer:ops"
+      ],
+      "notes": "JSON blueprint + bootstrap/verify scripts and operator doc so Cursor AI and humans keep the same directory spine across Cursor versions and multi-root workspaces.",
+      "status": "FOUND_FULL",
+      "required_status": "planned_or_active",
+      "safety_flags": [],
+      "evidence_paths_found": [
+        "docs/Z-CURSOR-FOLDER-STRUCTURE-AND-AI-WORKFLOWS.md"
+      ],
+      "missing_expected_paths": [],
+      "duplicate_path_conflicts": [],
+      "doc_checks": [],
+      "doc_mention_notes": [],
+      "registry_note": null,
+      "zuno_doc_coarse_mention": {
+        "scanned": "C:\\Cursor Projects Organiser\\Z_Sanctuary_Universe\\docs\\Z-ZUNO-AI-FULL-REPORT.md",
+        "matched": false
+      },
+      "recommended_next_action": "None — keep synced on registry/manifest churn."
+    },
+    {
+      "module_id": "z-ecosphere-transparency-report",
+      "module_name": "Ecosphere transparency (web + PPTX + print PDF)",
+      "category": "eco_global",
+      "registry_status": "planned_stub",
+      "safety_class": "low",
+      "tags": [
+        "z_layer:ecosphere"
+      ],
+      "notes": "HTML report from zuno JSON (Chart.js + Mermaid + ZECCE). PPTX: npm run report:ecosphere:pptx. PDF: browser print. See docs/public/z_ecosphere_transparency_report/README.md.",
+      "status": "FOUND_PARTIAL",
+      "required_status": "planned_or_active",
+      "safety_flags": [],
+      "evidence_paths_found": [],
+      "missing_expected_paths": [],
+      "duplicate_path_conflicts": [],
+      "doc_checks": [],
+      "doc_mention_notes": [],
+      "registry_note": null,
+      "zuno_doc_coarse_mention": {
+        "scanned": "C:\\Cursor Projects Organiser\\Z_Sanctuary_Universe\\docs\\Z-ZUNO-AI-FULL-REPORT.md",
+        "matched": false
+      },
+      "recommended_next_action": "Add missing paths or update master registry to match intentional layout."
+    },
+    {
+      "module_id": "z-fhmff-lite",
+      "module_name": "Z-FHMFF Lite (frozen/hibernate observer)",
+      "category": "trust_audit_governance",
+      "registry_status": "doctrine_only",
+      "safety_class": "low",
+      "tags": [
+        "z_layer:governance"
+      ],
+      "notes": "Advisory: stale comms observers, AAFRTC, learning inactivity, signal cold, comms flow, planned backlog. Pairs with RTRO. scripts/z_fhmff_lite.mjs; npm run ai:fhmff:lite. No auto-fix.",
+      "status": "FOUND_PARTIAL",
+      "required_status": "planned_or_active",
+      "safety_flags": [],
+      "evidence_paths_found": [],
+      "missing_expected_paths": [],
+      "duplicate_path_conflicts": [],
+      "doc_checks": [],
+      "doc_mention_notes": [],
+      "registry_note": null,
+      "zuno_doc_coarse_mention": {
+        "scanned": "C:\\Cursor Projects Organiser\\Z_Sanctuary_Universe\\docs\\Z-ZUNO-AI-FULL-REPORT.md",
+        "matched": false
+      },
+      "recommended_next_action": "Add missing paths or update master registry to match intentional layout."
+    },
+    {
+      "module_id": "z-ggaesp-pipeline-360",
+      "module_name": "GGAESP-360 (v11–v19) pipeline",
+      "category": "trust_audit_governance",
+      "registry_status": "implemented",
+      "safety_class": "low",
+      "tags": [
+        "z_layer:governance"
+      ],
+      "notes": "TypeScript advisory engine: v11–v19; v15 Guardian, v18 Ethics. Z-ECR: EnergyMode + ZECRBranch in runGGAESP; HIGH+GO downgraded to PREPARE; branch in memoryCapsule. Phase 2: memory JSONL + ggaesp_memory; npm run ggaesp:memory:append. Panel: ggaesp_panel (Z-Add On). Not release authority.",
+      "status": "FOUND_FULL",
+      "required_status": "planned_or_active",
+      "safety_flags": [],
+      "evidence_paths_found": [
+        "core_engine/ggaesp_pipeline.ts"
+      ],
+      "missing_expected_paths": [],
+      "duplicate_path_conflicts": [],
+      "doc_checks": [],
+      "doc_mention_notes": [],
+      "registry_note": null,
+      "zuno_doc_coarse_mention": {
+        "scanned": "C:\\Cursor Projects Organiser\\Z_Sanctuary_Universe\\docs\\Z-ZUNO-AI-FULL-REPORT.md",
+        "matched": false
+      },
+      "recommended_next_action": "None — keep synced on registry/manifest churn."
+    },
+    {
+      "module_id": "z-heartpulse-engine",
+      "module_name": "Z-HeartPulse Engine v1.0",
+      "category": "trust_audit_governance",
+      "registry_status": "partial",
+      "safety_class": "low",
+      "tags": [
+        "z_layer:governance"
+      ],
+      "notes": "Emotional storytelling and self-reflection engine (LA-LT, HB1-HB7) with compassion/consent boundaries. PREPARE ONLY: docs, narrative templates, fictional mocks; no people scoring, no relationship prediction, no control logic.",
+      "status": "FOUND_FULL",
+      "required_status": "planned_or_active",
+      "safety_flags": [],
+      "evidence_paths_found": [
+        "docs/Z-HEARTPULSE-ENGINE.md"
+      ],
+      "missing_expected_paths": [],
+      "duplicate_path_conflicts": [],
+      "doc_checks": [],
+      "doc_mention_notes": [],
+      "registry_note": null,
+      "zuno_doc_coarse_mention": {
+        "scanned": "C:\\Cursor Projects Organiser\\Z_Sanctuary_Universe\\docs\\Z-ZUNO-AI-FULL-REPORT.md",
+        "matched": false
+      },
+      "recommended_next_action": "None — keep synced on registry/manifest churn."
+    },
+    {
+      "module_id": "z-kbozsu",
+      "module_name": "Z-KBOZSU (Knowledge Book Of Z-Sanctuary Universe)",
+      "category": "eco_global",
+      "registry_status": "planned_stub",
+      "safety_class": "low",
+      "tags": [
+        "z_layer:ecosphere"
+      ],
+      "notes": "Phase A+B codex: index + SHA-256 for core manifests + workspace lint snapshot (declared .code-workspace vs registry). Vault pointers only. npm run kbozsu:refresh · kbozsu:refresh:with-lint → data/reports/z_kbozsu_codex.json + .md",
+      "status": "FOUND_PARTIAL",
+      "required_status": "planned_or_active",
+      "safety_flags": [],
+      "evidence_paths_found": [],
+      "missing_expected_paths": [],
+      "duplicate_path_conflicts": [],
+      "doc_checks": [],
+      "doc_mention_notes": [],
+      "registry_note": null,
+      "zuno_doc_coarse_mention": {
+        "scanned": "C:\\Cursor Projects Organiser\\Z_Sanctuary_Universe\\docs\\Z-ZUNO-AI-FULL-REPORT.md",
+        "matched": false
+      },
+      "recommended_next_action": "Add missing paths or update master registry to match intentional layout."
+    },
+    {
+      "module_id": "z-krtaa-curriculum-emitter",
+      "module_name": "Z-KRTAAO curriculum emitter",
+      "category": "eco_global",
+      "registry_status": "doctrine_only",
+      "safety_class": "low",
+      "tags": [
+        "z_layer:ecosphere"
+      ],
+      "notes": "Read-only ingest of hub reports; emits advisory curriculum JSON + Markdown (npm run krtaa:curriculum-emit). Dashboard: dashboard/z-ai-ecosphere. Prompt packs v3: docs/z-krtaa-prompt-packs/. HODP links in Control Centre + Blueprint.",
+      "status": "FOUND_PARTIAL",
+      "required_status": "planned_or_active",
+      "safety_flags": [],
+      "evidence_paths_found": [],
+      "missing_expected_paths": [],
+      "duplicate_path_conflicts": [],
+      "doc_checks": [],
+      "doc_mention_notes": [],
+      "registry_note": null,
+      "zuno_doc_coarse_mention": {
+        "scanned": "C:\\Cursor Projects Organiser\\Z_Sanctuary_Universe\\docs\\Z-ZUNO-AI-FULL-REPORT.md",
+        "matched": false
+      },
+      "recommended_next_action": "Add missing paths or update master registry to match intentional layout."
+    },
+    {
+      "module_id": "z-mini-bots-phase1",
+      "module_name": "Z — Mini bot operators (Phase 1)",
+      "category": "trust_audit_governance",
+      "registry_status": "implemented",
+      "safety_class": "low",
+      "tags": [
+        "z_layer:governance"
+      ],
+      "notes": "Observe-only: bot:guardian (PC paths vs registry), bot:sync (registry snapshot to bot_sync_snapshots/, not full tree), bot:health (Node/OS). bots/README.md",
+      "status": "FOUND_FULL",
+      "required_status": "planned_or_active",
+      "safety_flags": [],
+      "evidence_paths_found": [
+        "bots/guardian/guardian_bot.mjs"
+      ],
+      "missing_expected_paths": [],
+      "duplicate_path_conflicts": [],
+      "doc_checks": [],
+      "doc_mention_notes": [],
+      "registry_note": null,
+      "zuno_doc_coarse_mention": {
+        "scanned": "C:\\Cursor Projects Organiser\\Z_Sanctuary_Universe\\docs\\Z-ZUNO-AI-FULL-REPORT.md",
+        "matched": false
+      },
+      "recommended_next_action": "None — keep synced on registry/manifest churn."
+    },
+    {
+      "module_id": "z-papao-precautions-advisor",
+      "module_name": "Z-PAPAO (Pre-Alert & Precautions Advisor)",
+      "category": "trust_audit_governance",
+      "registry_status": "planned_stub",
+      "safety_class": "low",
+      "tags": [
+        "z_layer:governance"
+      ],
+      "notes": "Read-only pre-alert brief from hub reports + registry paths. npm run papao:precaution-emit → data/reports/z_papao_precaution_brief.{json,md}. Dashboard: z-ai-ecosphere.",
+      "status": "FOUND_PARTIAL",
+      "required_status": "planned_or_active",
+      "safety_flags": [],
+      "evidence_paths_found": [],
+      "missing_expected_paths": [],
+      "duplicate_path_conflicts": [],
+      "doc_checks": [],
+      "doc_mention_notes": [],
+      "registry_note": null,
+      "zuno_doc_coarse_mention": {
+        "scanned": "C:\\Cursor Projects Organiser\\Z_Sanctuary_Universe\\docs\\Z-ZUNO-AI-FULL-REPORT.md",
+        "matched": false
+      },
+      "recommended_next_action": "Add missing paths or update master registry to match intentional layout."
+    },
+    {
+      "module_id": "z-pis-projects-identifier-sharing",
+      "module_name": "Z-PI&S (Projects Identifier & Sharing)",
+      "category": "trust_audit_governance",
+      "registry_status": "planned_stub",
+      "safety_class": "low",
+      "tags": [
+        "z_layer:governance"
+      ],
+      "notes": "Z-Project Passport: data/z_project_passports/*.json; share_level enum; internal_notes rules. Validator: npm run z:project-passports:verify → data/reports/z_project_passport_validator.json. No secrets, no deploy. Future: Commander, Twin Roots, ledger refs.",
+      "status": "FOUND_PARTIAL",
+      "required_status": "planned_or_active",
+      "safety_flags": [],
+      "evidence_paths_found": [],
+      "missing_expected_paths": [],
+      "duplicate_path_conflicts": [],
+      "doc_checks": [],
+      "doc_mention_notes": [],
+      "registry_note": null,
+      "zuno_doc_coarse_mention": {
+        "scanned": "C:\\Cursor Projects Organiser\\Z_Sanctuary_Universe\\docs\\Z-ZUNO-AI-FULL-REPORT.md",
+        "matched": false
+      },
+      "recommended_next_action": "Add missing paths or update master registry to match intentional layout."
+    },
+    {
+      "module_id": "z-prediction-validation-phase55",
+      "module_name": "Z-Prediction validation (Phase 5.5)",
+      "category": "trust_audit_governance",
+      "registry_status": "implemented",
+      "safety_class": "low",
+      "tags": [
+        "z_layer:governance"
+      ],
+      "notes": "Heuristic check of predictive output vs decision/learning/pattern logs. Append-only data/logs/z_prediction_validation_history.jsonl. Feeds QOSMEI and next-run predictive confidence scaling. PV rail badge. npm run prediction:validate after predictive:intel.",
+      "status": "FOUND_FULL",
+      "required_status": "planned_or_active",
+      "safety_flags": [],
+      "evidence_paths_found": [
+        "scripts/z_prediction_validator.mjs"
+      ],
+      "missing_expected_paths": [],
+      "duplicate_path_conflicts": [],
+      "doc_checks": [],
+      "doc_mention_notes": [],
+      "registry_note": null,
+      "zuno_doc_coarse_mention": {
+        "scanned": "C:\\Cursor Projects Organiser\\Z_Sanctuary_Universe\\docs\\Z-ZUNO-AI-FULL-REPORT.md",
+        "matched": false
+      },
+      "recommended_next_action": "None — keep synced on registry/manifest churn."
+    },
+    {
+      "module_id": "z-predictive-intelligence-phase5",
+      "module_name": "Z-Predictive intelligence (Phase 5)",
+      "category": "trust_audit_governance",
+      "registry_status": "implemented",
+      "safety_class": "low",
+      "tags": [
+        "z_layer:governance"
+      ],
+      "notes": "Experience-weighted heuristics from SPI, learning, cross-system, patterns, decisions, QOSMEI → z_predictive_intelligence.{json,md}. Advisory-only; fusion_hint nudges QOSMEI when second qosmei:signal runs (Whale Bus). PR rail badge. npm run predictive:intel after cross:system.",
+      "status": "FOUND_FULL",
+      "required_status": "planned_or_active",
+      "safety_flags": [],
+      "evidence_paths_found": [
+        "scripts/z_predictive_intelligence_engine.mjs"
+      ],
+      "missing_expected_paths": [],
+      "duplicate_path_conflicts": [],
+      "doc_checks": [],
+      "doc_mention_notes": [],
+      "registry_note": null,
+      "zuno_doc_coarse_mention": {
+        "scanned": "C:\\Cursor Projects Organiser\\Z_Sanctuary_Universe\\docs\\Z-ZUNO-AI-FULL-REPORT.md",
+        "matched": false
+      },
+      "recommended_next_action": "None — keep synced on registry/manifest churn."
+    },
+    {
+      "module_id": "z-qosmei-core-signal-fusion",
+      "module_name": "Z-QOSMEI core signal fusion (Phase 1)",
+      "category": "trust_audit_governance",
+      "registry_status": "implemented",
+      "safety_class": "low",
+      "tags": [
+        "z_layer:governance"
+      ],
+      "notes": "Advisory fusion vector from guardian/alerts/decisions/patterns/rootcause/predict/adaptive/execution. Emits z_qosmei_core_signal.{json,md} for dashboard rail, AI status, Whale Bus, and Zuno.",
+      "status": "FOUND_FULL",
+      "required_status": "planned_or_active",
+      "safety_flags": [],
+      "evidence_paths_found": [
+        "scripts/z_qosmei_signal_fusion.mjs"
+      ],
+      "missing_expected_paths": [],
+      "duplicate_path_conflicts": [],
+      "doc_checks": [],
+      "doc_mention_notes": [],
+      "registry_note": null,
+      "zuno_doc_coarse_mention": {
+        "scanned": "C:\\Cursor Projects Organiser\\Z_Sanctuary_Universe\\docs\\Z-ZUNO-AI-FULL-REPORT.md",
+        "matched": false
+      },
+      "recommended_next_action": "None — keep synced on registry/manifest churn."
+    },
+    {
+      "module_id": "z-sanctuary-core-wrapper",
+      "module_name": "z-sanctuary-core (hub wrapper package)",
+      "category": "core_engines",
+      "registry_status": "implemented",
+      "safety_class": "low",
+      "tags": [
+        "z_layer:packages"
+      ],
+      "notes": "Workspace package: loadPcRootProjects from real z_pc_root_projects.json; runVerifyCI delegates to npm run verify:ci — no duplicate registry.",
+      "status": "FOUND_FULL",
+      "required_status": "planned_or_active",
+      "safety_flags": [],
+      "evidence_paths_found": [
+        "packages/z-sanctuary-core/index.js"
+      ],
+      "missing_expected_paths": [],
+      "duplicate_path_conflicts": [],
+      "doc_checks": [],
+      "doc_mention_notes": [],
+      "registry_note": null,
+      "zuno_doc_coarse_mention": {
+        "scanned": "C:\\Cursor Projects Organiser\\Z_Sanctuary_Universe\\docs\\Z-ZUNO-AI-FULL-REPORT.md",
+        "matched": false
+      },
+      "recommended_next_action": "None — keep synced on registry/manifest churn."
+    },
+    {
+      "module_id": "z-spi-decision-advisor",
+      "module_name": "Z-SPI decision advisor (Phase 2)",
+      "category": "trust_audit_governance",
+      "registry_status": "implemented",
+      "safety_class": "low",
+      "tags": [
+        "z_layer:governance"
+      ],
+      "notes": "Advisory merge of SPI decision_suggestions with pending governance rows → z_spi_decision_advice.{json,md}. Dashboard panel dashboard/panels/z_decision_panel.html.",
+      "status": "FOUND_FULL",
+      "required_status": "planned_or_active",
+      "safety_flags": [],
+      "evidence_paths_found": [
+        "scripts/z_spi_decision_advisor.mjs"
+      ],
+      "missing_expected_paths": [],
+      "duplicate_path_conflicts": [],
+      "doc_checks": [],
+      "doc_mention_notes": [],
+      "registry_note": null,
+      "zuno_doc_coarse_mention": {
+        "scanned": "C:\\Cursor Projects Organiser\\Z_Sanctuary_Universe\\docs\\Z-ZUNO-AI-FULL-REPORT.md",
+        "matched": false
+      },
+      "recommended_next_action": "None — keep synced on registry/manifest churn."
+    },
+    {
+      "module_id": "z-structural-pattern-intelligence",
+      "module_name": "Z-Structural Pattern Intelligence (SPI)",
+      "category": "trust_audit_governance",
+      "registry_status": "implemented",
+      "safety_class": "low",
+      "tags": [
+        "z_layer:governance"
+      ],
+      "notes": "Cross-layer advisory (v2): predictive_signals, evolution_phase, decision_suggestions, pre_warnings file for Guardian. Emits z_structural_patterns.{json,md} + z_spi_guardian_pre_warnings.json.",
+      "status": "FOUND_FULL",
+      "required_status": "planned_or_active",
+      "safety_flags": [],
+      "evidence_paths_found": [
+        "scripts/z_structural_pattern_intelligence.mjs"
+      ],
+      "missing_expected_paths": [],
+      "duplicate_path_conflicts": [],
+      "doc_checks": [],
+      "doc_mention_notes": [],
+      "registry_note": null,
+      "zuno_doc_coarse_mention": {
+        "scanned": "C:\\Cursor Projects Organiser\\Z_Sanctuary_Universe\\docs\\Z-ZUNO-AI-FULL-REPORT.md",
+        "matched": false
+      },
+      "recommended_next_action": "None — keep synced on registry/manifest churn."
+    },
+    {
+      "module_id": "z-super-chat-orchestrator",
+      "module_name": "Z-All-in-One Super Chat",
+      "category": "ai_tower_agents",
+      "registry_status": "implemented",
+      "safety_class": "low",
+      "tags": [
+        "z_layer:ai-tower"
+      ],
+      "notes": "Local-first voice+text orchestrator across registered projects with citations, policy gate, approval actions, and evidence spine.",
+      "status": "FOUND_FULL",
+      "required_status": "planned_or_active",
+      "safety_flags": [],
+      "evidence_paths_found": [
+        "docs/Z-SUPER-CHAT-BLUEPRINT.md"
+      ],
+      "missing_expected_paths": [],
+      "duplicate_path_conflicts": [],
+      "doc_checks": [],
+      "doc_mention_notes": [],
+      "registry_note": null,
+      "zuno_doc_coarse_mention": {
+        "scanned": "C:\\Cursor Projects Organiser\\Z_Sanctuary_Universe\\docs\\Z-ZUNO-AI-FULL-REPORT.md",
+        "matched": false
+      },
+      "recommended_next_action": "None — keep synced on registry/manifest churn."
+    },
+    {
+      "module_id": "z-whale-bus-spine",
+      "module_name": "Z-Whale Bus (comms + Z-SSWSs/AI Tower surfaces)",
+      "category": "trust_audit_governance",
+      "registry_status": "planned_stub",
+      "safety_class": "low",
+      "tags": [
+        "z_layer:governance"
+      ],
+      "notes": "data/z_whale_bus_spine.json: decks comms_sync + surface_reinforce. npm: z:whale-bus:comms+surfaces, z:whale-bus:surfaces. PS: Start-ZWhaleBusComms -CommsAndSurfaces. Ties to z_ai_ecosphere_config rings. docs/Z-WHALE-BUS-SPINE.md",
+      "status": "FOUND_PARTIAL",
+      "required_status": "planned_or_active",
+      "safety_flags": [],
+      "evidence_paths_found": [],
+      "missing_expected_paths": [],
+      "duplicate_path_conflicts": [],
+      "doc_checks": [],
+      "doc_mention_notes": [],
+      "registry_note": null,
+      "zuno_doc_coarse_mention": {
+        "scanned": "C:\\Cursor Projects Organiser\\Z_Sanctuary_Universe\\docs\\Z-ZUNO-AI-FULL-REPORT.md",
+        "matched": false
+      },
+      "recommended_next_action": "Add missing paths or update master registry to match intentional layout."
+    },
+    {
+      "module_id": "z-zecce-confirmations",
+      "module_name": "Z-ZECCE (Codex confirmations, advisory v1)",
+      "category": "trust_audit_governance",
+      "registry_status": "doctrine_only",
+      "safety_class": "low",
+      "tags": [
+        "z_layer:governance"
+      ],
+      "notes": "Bounded verifier chain (registry, structure, formulas, AI consistency, vault spine) → one JSON/MD receipt. Advisory only: no enforcer or release control. npm run z:codex:zecce:verify.",
+      "status": "FOUND_PARTIAL",
+      "required_status": "planned_or_active",
+      "safety_flags": [],
+      "evidence_paths_found": [],
+      "missing_expected_paths": [],
+      "duplicate_path_conflicts": [],
+      "doc_checks": [],
+      "doc_mention_notes": [],
+      "registry_note": null,
+      "zuno_doc_coarse_mention": {
+        "scanned": "C:\\Cursor Projects Organiser\\Z_Sanctuary_Universe\\docs\\Z-ZUNO-AI-FULL-REPORT.md",
+        "matched": false
+      },
+      "recommended_next_action": "Add missing paths or update master registry to match intentional layout."
+    },
+    {
+      "module_id": "zen_scheduler_hub",
+      "module_name": "Zen scheduler / balance planner (concept)",
+      "category": "planning_wellness",
+      "registry_status": "planned_stub",
+      "safety_class": "low",
+      "tags": [
+        "vision",
+        "build_priority:P5"
+      ],
+      "notes": "Placeholder doctrine; wire real paths after spec.",
+      "status": "FOUND_PARTIAL",
+      "required_status": "planned_or_active",
+      "safety_flags": [],
+      "evidence_paths_found": [],
+      "missing_expected_paths": [],
+      "duplicate_path_conflicts": [],
+      "doc_checks": [],
+      "doc_mention_notes": [],
+      "registry_note": null,
+      "zuno_doc_coarse_mention": {
+        "scanned": "C:\\Cursor Projects Organiser\\Z_Sanctuary_Universe\\docs\\Z-ZUNO-AI-FULL-REPORT.md",
+        "matched": false
+      },
+      "recommended_next_action": "Add missing paths or update master registry to match intentional layout."
+    },
+    {
+      "module_id": "zuno_coverage_audit",
+      "module_name": "Zuno coverage audit",
+      "category": "Observer / reporting",
+      "registry_status": "implemented",
+      "safety_class": "low",
+      "tags": [],
+      "notes": "",
+      "status": "FOUND_FULL",
+      "required_status": "planned_or_active",
+      "safety_flags": [],
+      "evidence_paths_found": [
+        "scripts/z_zuno_coverage_audit.mjs",
+        "data/z_master_module_registry.json"
+      ],
+      "missing_expected_paths": [],
+      "duplicate_path_conflicts": [],
+      "doc_checks": [],
+      "doc_mention_notes": [],
+      "registry_note": null,
+      "zuno_doc_coarse_mention": {
+        "scanned": "C:\\Cursor Projects Organiser\\Z_Sanctuary_Universe\\docs\\Z-ZUNO-AI-FULL-REPORT.md",
+        "matched": true
+      },
+      "recommended_next_action": "None — keep synced on registry/manifest churn."
+    },
+    {
+      "module_id": "zuno_observer",
+      "module_name": "Zuno state report",
+      "category": "Observer / reporting",
+      "registry_status": "implemented",
+      "safety_class": "low",
+      "tags": [],
+      "notes": "",
+      "status": "FOUND_FULL",
+      "required_status": "planned_or_active",
+      "safety_flags": [],
+      "evidence_paths_found": [
+        "scripts/z_zuno_state_report.mjs"
+      ],
+      "missing_expected_paths": [],
+      "duplicate_path_conflicts": [],
+      "doc_checks": [
+        {
+          "path": "docs/Z-ZUNO-AI-FULL-REPORT.md",
+          "present": true,
+          "ok": true,
+          "matched": [
+            "Zuno",
+            "z_zuno"
+          ],
+          "note": "matched"
+        }
+      ],
+      "doc_mention_notes": [
+        "docs/Z-ZUNO-AI-FULL-REPORT.md: ok (Zuno, z_zuno)"
+      ],
+      "registry_note": null,
+      "zuno_doc_coarse_mention": {
+        "scanned": "C:\\Cursor Projects Organiser\\Z_Sanctuary_Universe\\docs\\Z-ZUNO-AI-FULL-REPORT.md",
+        "matched": true
+      },
+      "recommended_next_action": "None — keep synced on registry/manifest churn."
+    }
+  ],
+  "readme": "Read-only audit. statuses are deterministic from master JSON + filesystem + optional doc tokens. No invented completions."
+}

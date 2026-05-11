@@ -1,0 +1,14 @@
+{
+  "generated_at": "2026-04-29T14:49:00.823Z",
+  "users_total": 5,
+  "users_flagged": 1,
+  "users_heavy_daily": 3,
+  "intelligence_events_total": 21,
+  "allocations_success": 13,
+  "allocations_reduced": 4,
+  "allocations_blocked": 4,
+  "priority_score_avg": 0.9547058823529414,
+  "priority_score_min": 0.8,
+  "priority_score_max": 1.16,
+  "last_event_at": "2026-04-17T13:12:56.246Z"
+}

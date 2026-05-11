@@ -1,0 +1,62 @@
+{
+  "version": 3,
+  "generated_at": "2026-04-23T17:30:30.325Z",
+  "hub_relative": "ZSanctuary_Universe",
+  "policy": "Each workspace file lists exactly two folders: hub first, one member second. Open one shadow per Cursor window for assignment-scoped work. Hub owns Z: SSWS Auto Boot and server 5502. Resolve pc_root from data/z_pc_root_projects.json at verify time; shadows[].member_relative is relative to that pc_root.",
+  "shadows": [
+    {
+      "project_id": "amk-goku-dashboards-2",
+      "name": "Amk-Goku Dashboards 2",
+      "workspace_file": "Z_SSWS_Shadow__amk-goku-dashboards-2.code-workspace",
+      "member_relative": "Amk-Goku Dashboards 2"
+    },
+    {
+      "project_id": "amk-goku-vaults",
+      "name": "Amk-Goku Vaults",
+      "workspace_file": "Z_SSWS_Shadow__amk-goku-vaults.code-workspace",
+      "member_relative": "Amk-Goku Vaults"
+    },
+    {
+      "project_id": "at-princess-blackie-copitol",
+      "name": "AT Princess & Blackie Copitol",
+      "workspace_file": "Z_SSWS_Shadow__at-princess-blackie-copitol.code-workspace",
+      "member_relative": "AT Princess&Blackie Copitol"
+    },
+    {
+      "project_id": "sister-aisling-sol",
+      "name": "Sister Aisling Sol",
+      "workspace_file": "Z_SSWS_Shadow__sister-aisling-sol.code-workspace",
+      "member_relative": "Z-Sister Aisling Sol"
+    },
+    {
+      "project_id": "z-omni-sanctuary",
+      "name": "Z-OMNI-Sanctuary",
+      "workspace_file": "Z_SSWS_Shadow__z-omni-sanctuary.code-workspace",
+      "member_relative": "Z-OMNI-Sanctuary"
+    },
+    {
+      "project_id": "z-sanctuary-ai-skyscraper",
+      "name": "Z-SANCTUARY AI SKYSCRAPER",
+      "workspace_file": "Z_SSWS_Shadow__z-sanctuary-ai-skyscraper.code-workspace",
+      "member_relative": "Z-SANCTUARY AI SKYSCRAPER"
+    },
+    {
+      "project_id": "z-sanctuary-browser-z-saiyan-lumina",
+      "name": "Z-Sanctuary Browser (Z-Saiyan Lumina)",
+      "workspace_file": "Z_SSWS_Shadow__z-sanctuary-browser-z-saiyan-lumina.code-workspace",
+      "member_relative": "Z-Sanctuary Browser"
+    },
+    {
+      "project_id": "z-sanctuary-claude-core",
+      "name": "Z-Sanctuary Claude (Core)",
+      "workspace_file": "Z_SSWS_Shadow__z-sanctuary-claude-core.code-workspace",
+      "member_relative": "Z-Sanctuary Claude"
+    },
+    {
+      "project_id": "z-sanctuary-aimanity",
+      "name": "z-sanctuary-aimanity",
+      "workspace_file": "Z_SSWS_Shadow__z-sanctuary-aimanity.code-workspace",
+      "member_relative": "z-sanctuary-aimanity"
+    }
+  ]
+}

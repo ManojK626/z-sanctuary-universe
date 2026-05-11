@@ -1,0 +1,68 @@
+{
+  "generated_at": "2026-04-26T02:12:34.811Z",
+  "source_reports": {
+    "zuno": "data/reports/zuno_system_state_report.json",
+    "release_gate": "data/reports/z_release_gate_summary.json",
+    "release_governance": "data/reports/z_release_governance.json",
+    "release_control": "data/z_release_control.json",
+    "ai_status": "data/reports/z_ai_status.json",
+    "module_manifest": "data/z_module_manifest.json",
+    "task_list": "data/z_task_list.json",
+    "system_coherence": "data/reports/z_system_coherence.json",
+    "adaptive_coherence": "data/reports/z_adaptive_coherence.json",
+    "self_tuning": "data/reports/z_self_tuning.json",
+    "experience_memory": "data/reports/z_experience_memory.json",
+    "experience_intelligence": "data/reports/z_experience_intelligence.json",
+    "fusion_council": "data/reports/z_fusion_council.json",
+    "dsr": "data/reports/z_dsr_analysis.json",
+    "formula_sync": "data/reports/z_formula_sync_check.json",
+    "traffic_intelligence": "data/reports/z_traffic_intelligence.json",
+    "fhmff_lite": "data/reports/z_fhmff_lite.json"
+  },
+  "mode": "stabilization",
+  "action": "ALLOW_PROGRESS",
+  "reason": "No blocking signals detected.",
+  "blockers": [],
+  "checks": {
+    "p1_open": 0,
+    "readiness_pass": 4,
+    "readiness_total": 4,
+    "release_gate": "ready",
+    "governance": {
+      "generated_at": "2026-04-26T02:12:34.809Z",
+      "readiness": "4/4",
+      "p1_open": 0,
+      "manual_release": true,
+      "approved_by": "AMK-Goku",
+      "timestamp": "2026-04-26T01:52:00Z",
+      "technical_ready": true,
+      "final_status": "READY",
+      "effective_release_gate": "ready"
+    },
+    "disturbance_watch": "clear",
+    "planned_modules": 16,
+    "promotion_allowed": false,
+    "zci_warning": "ok",
+    "upgrade_pressure": "ok",
+    "communication_health": "watch",
+    "coherence": "watch",
+    "adaptive_coherence": "attention",
+    "self_tuning": "learning",
+    "experience_memory": "learning",
+    "experience_intelligence": "learning",
+    "fusion_council": "mature",
+    "dsr": "attention",
+    "formula_sync": "ok",
+    "traffic_intelligence": "watch",
+    "fhmff_lite": "watch"
+  },
+  "enforcement": {
+    "build_allowed": true,
+    "deploy_allowed": true,
+    "diagnostics_required": false,
+    "module_promotion_allowed": false
+  },
+  "directives": [
+    "Keep planned modules from promotion until they are explicitly marked ready."
+  ]
+}

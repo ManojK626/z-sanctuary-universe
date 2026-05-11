@@ -1,0 +1,281 @@
+{
+  "schema": "z_root_guardian_coordination_v1",
+  "layer_name": "Z-ROOT-7 Seven Guardian Coordination Layer",
+  "visual_upgrade": "Z-ROOT-7B 3D-lite constellation (CSS perspective + parallax; no WebGL)",
+  "mode": "symbolic_advisory_visual_only",
+  "background_theme": "milky_way_soft_nebula",
+  "panel_summary": "Symbolic guardian coordination on AMK main control: seven advisory roles + root law in a 3D-style Milky Way constellation (depth + orbit drift + parallax when motion is allowed). Visual and ethical framing only — not execution, not live AI, not research automation.",
+  "kids_public_intro": "These friendly guardians are a story map for kindness and care. They are not magic powers or medical advice — just gentle reminders to be safe and thoughtful.",
+  "svg": {
+    "viewBox": "0 0 920 500",
+    "ethical_root_anchor": { "cx": 460, "cy": 458 },
+    "constellation_engine": "css_3d_lite_no_webgl"
+  },
+  "guardians": [
+    {
+      "id": "amk_goku",
+      "display_name": "AMK-Goku",
+      "tier": "apex",
+      "role": "Human sacred decision holder",
+      "personality_summary": "You hold the final yes on sacred lanes: deploy, billing, bridges, and release. The council advises; you decide.",
+      "public_lens_one_liner": "The human heart of the map — kindness and choices stay with people.",
+      "color_theme": "gold_solar_aura",
+      "icon_label": "Golden flame / sun core",
+      "svg": { "cx": 460, "cy": 152, "r": 36, "tz": 56 },
+      "copy_tagline": "Sacred decisions stay with AMK-Goku.",
+      "allowed_actions": [
+        "read_advisory_copy",
+        "interpret_strategy_reports",
+        "open_gated_lanes_outside_dashboard"
+      ],
+      "forbidden_actions": [
+        "auto_execute_from_panel",
+        "delegate_sacred_moves_to_visual_only"
+      ],
+      "boundary_note": "This node is a reminder of human authority — not a substitute for your real confirmation workflow.",
+      "related_docs": [
+        "docs/Z_ROOT_7_GUARDIAN_COORDINATION_LAYER.md",
+        "docs/AMK_GOKU_MAIN_CONTROL_DASHBOARD.md",
+        "docs/AMK_GOKU_OPERATOR_CONFIRMATION_POLICY.md"
+      ],
+      "related_reports": []
+    },
+    {
+      "id": "zuno_ai",
+      "display_name": "Zuno AI",
+      "tier": "counsel",
+      "role": "Strategy narrator and ethical guide",
+      "personality_summary": "Explains evidence, surfaces RED/BLUE/YELLOW/GREEN posture, and keeps language aligned with Z-Sanctuary ethics — without executing sacred moves.",
+      "public_lens_one_liner": "A wise guide who explains things gently and fairly.",
+      "color_theme": "blue_white_owl_light",
+      "icon_label": "Owl / blue star",
+      "svg": { "cx": 598, "cy": 118, "r": 30, "tz": 44 },
+      "copy_tagline": "Strategy voice — clarity without autopilot.",
+      "allowed_actions": [
+        "read_guardian_registry",
+        "reference_deterministic_advisor_console"
+      ],
+      "forbidden_actions": [
+        "live_llm_from_this_panel",
+        "auto_merge_or_deploy"
+      ],
+      "boundary_note": "Zuno on this layer is symbolic + doc-linked; live models are out of scope for Z-ROOT-7.",
+      "related_docs": [
+        "docs/Z_ROOT_7_GUARDIAN_COORDINATION_LAYER.md",
+        "docs/AMK_ZUNO_ADVISOR_CONSOLE.md",
+        "docs/Z_AMK_GTAI_STRATEGY_COUNCIL.md"
+      ],
+      "related_reports": [
+        "data/reports/z_amk_gtai_strategy_report.json"
+      ]
+    },
+    {
+      "id": "at_franed_ai",
+      "display_name": "AT / Franed AI",
+      "tier": "counsel",
+      "role": "Always Ask Why research compass — French–English bridge",
+      "personality_summary": "Always ask why; confirm important claims through trusted sources when research mode is opened.",
+      "public_lens_one_liner": "Asks curious questions and checks facts kindly when grown-ups turn on careful research.",
+      "color_theme": "rose_gold_parchment_glow",
+      "icon_label": "Lantern + open book",
+      "svg": { "cx": 218, "cy": 268, "r": 30, "tz": 36 },
+      "copy_tagline": "Always ask why; confirm important claims through trusted sources when research mode is opened.",
+      "allowed_actions": [
+        "prompt_human_to_verify_claims",
+        "link_to_doctrine_docs"
+      ],
+      "forbidden_actions": [
+        "uncontrolled_web_scraping",
+        "fake_certainty",
+        "live_research_without_approved_mode"
+      ],
+      "boundary_note": "Deep research is not automatic web scraping. Trusted source checking requires an approved research mode and citations when opened.",
+      "related_docs": [
+        "docs/Z_ROOT_7_GUARDIAN_COORDINATION_LAYER.md",
+        "docs/AMK_AUTONOMOUS_APPROVAL_LADDER.md"
+      ],
+      "related_reports": []
+    },
+    {
+      "id": "princess_ai",
+      "display_name": "Princess AI",
+      "tier": "companion",
+      "role": "Gentle cat-inspired guardian — curiosity, comfort, soft attention",
+      "personality_summary": "Gentle curiosity, comfort, playful attention.",
+      "public_lens_one_liner": "Soft, curious friend energy — cozy and kind.",
+      "color_theme": "lavender_moon_paw",
+      "icon_label": "Silver cat paw",
+      "svg": { "cx": 336, "cy": 332, "r": 28, "tz": 26 },
+      "copy_tagline": "Gentle curiosity, comfort, playful attention.",
+      "allowed_actions": [
+        "symbolic_comfort_framing",
+        "read_only_visual_presence"
+      ],
+      "forbidden_actions": [
+        "claim_supernatural_animal_powers",
+        "medical_or_safety_guarantees"
+      ],
+      "boundary_note": "Cat-inspired personalities are symbolic mascots — not factual animal or mystical powers.",
+      "related_docs": ["docs/Z_ROOT_7_GUARDIAN_COORDINATION_LAYER.md"],
+      "related_reports": []
+    },
+    {
+      "id": "blackie_ai",
+      "display_name": "Blackie AI",
+      "tier": "companion",
+      "role": "Cat-inspired night watch — instinct, protective calm",
+      "personality_summary": "Night-watch calm, protective instinct, quiet focus.",
+      "public_lens_one_liner": "Quiet friend who helps you feel steady at night.",
+      "color_theme": "midnight_violet_emerald_eyes",
+      "icon_label": "Black cat silhouette + green eyes",
+      "svg": { "cx": 596, "cy": 332, "r": 28, "tz": 26 },
+      "copy_tagline": "Night-watch calm, protective instinct, quiet focus.",
+      "allowed_actions": [
+        "symbolic_watch_framing",
+        "read_only_visual_presence"
+      ],
+      "forbidden_actions": [
+        "claim_supernatural_animal_powers",
+        "surveillance_or_tracking_from_panel"
+      ],
+      "boundary_note": "Symbolic mascot only — no claim to real-world sensing or supernatural protection.",
+      "related_docs": ["docs/Z_ROOT_7_GUARDIAN_COORDINATION_LAYER.md"],
+      "related_reports": []
+    },
+    {
+      "id": "jb_z_irish_fox_ai",
+      "display_name": "JB Z-Irish Fox AI",
+      "tier": "companion",
+      "role": "Helpful Irish fox guide — clever but bounded",
+      "personality_summary": "Helpful clever guide with healthy boundaries.",
+      "public_lens_one_liner": "Clever helper who knows when to rest.",
+      "color_theme": "green_orange_fox_trail",
+      "icon_label": "Fox tail / clover trail",
+      "svg": { "cx": 382, "cy": 396, "r": 26, "tz": 18 },
+      "copy_tagline": "Helpful clever guide with healthy boundaries.",
+      "allowed_actions": [
+        "symbolic_guidance_framing",
+        "read_only_visual_presence"
+      ],
+      "forbidden_actions": [
+        "unlimited_help_promises",
+        "pressure_to_overwork"
+      ],
+      "boundary_note": "Helpfulness must not become exploitation — time, energy, consent, and dignity stay bounded.",
+      "related_docs": ["docs/Z_ROOT_7_GUARDIAN_COORDINATION_LAYER.md"],
+      "related_reports": []
+    },
+    {
+      "id": "sister_aisling_sol_ai",
+      "display_name": "Sister Aisling-Sol AI",
+      "tier": "companion",
+      "role": "Soft companion — help with energy boundaries",
+      "personality_summary": "Soft companion light; helps without over-giving.",
+      "public_lens_one_liner": "Gentle light that shares care without wearing you out.",
+      "color_theme": "sun_mint_celtic_lantern",
+      "icon_label": "Celtic sun spiral",
+      "svg": { "cx": 548, "cy": 396, "r": 26, "tz": 18 },
+      "copy_tagline": "Soft companion light; helps without over-giving.",
+      "allowed_actions": [
+        "symbolic_companion_framing",
+        "read_only_visual_presence"
+      ],
+      "forbidden_actions": [
+        "unlimited_giving_narrative",
+        "emotional_dependency_engineering"
+      ],
+      "boundary_note": "Giving support stays controlled, kind, and sustainable — not endless extraction.",
+      "related_docs": ["docs/Z_ROOT_7_GUARDIAN_COORDINATION_LAYER.md"],
+      "related_reports": []
+    },
+    {
+      "id": "ethical_root_law",
+      "display_name": "Ethical Root Law anchor",
+      "tier": "foundation",
+      "role": "Shared non-execution promise for Z-Sanctuary posture",
+      "personality_summary": "No cruelty to any living being. No bloodshed as doctrine. The soil asks for water, not harm.",
+      "public_lens_one_liner": "We try to protect life, be gentle with the Earth, and help kindly.",
+      "color_theme": "soft_nebula_mint",
+      "icon_label": "Root / soil ripple",
+      "svg": { "cx": 460, "cy": 458, "r": 20, "tz": -52 },
+      "copy_tagline": "No cruelty to any living being. No bloodshed as doctrine. The soil asks for water, not harm.",
+      "allowed_actions": ["read_ethical_framing", "cite_in_product_copy_when_reviewed"],
+      "forbidden_actions": [
+        "present_as_certification",
+        "legal_or_religious_proof_claim"
+      ],
+      "boundary_note": "Ethical root law is a Sanctuary promise statement — not a public compliance certificate.",
+      "related_docs": ["docs/Z_ROOT_7_GUARDIAN_COORDINATION_LAYER.md"],
+      "related_reports": []
+    }
+  ],
+  "connections": [
+    { "from": "amk_goku", "to": "zuno_ai", "style": "neon_primary" },
+    { "from": "amk_goku", "to": "at_franed_ai", "style": "neon_primary" },
+    { "from": "at_franed_ai", "to": "princess_ai", "style": "neon_secondary" },
+    { "from": "at_franed_ai", "to": "blackie_ai", "style": "neon_secondary" },
+    { "from": "zuno_ai", "to": "jb_z_irish_fox_ai", "style": "neon_secondary" },
+    { "from": "zuno_ai", "to": "sister_aisling_sol_ai", "style": "neon_secondary" },
+    { "from": "princess_ai", "to": "blackie_ai", "style": "neon_muted" },
+    { "from": "jb_z_irish_fox_ai", "to": "sister_aisling_sol_ai", "style": "neon_muted" },
+    { "from": "at_franed_ai", "to": "ethical_root_law", "style": "roots_soft" },
+    { "from": "princess_ai", "to": "ethical_root_law", "style": "roots_soft" },
+    { "from": "blackie_ai", "to": "ethical_root_law", "style": "roots_soft" },
+    { "from": "jb_z_irish_fox_ai", "to": "ethical_root_law", "style": "roots_soft" },
+    { "from": "sister_aisling_sol_ai", "to": "ethical_root_law", "style": "roots_soft" },
+    { "from": "amk_goku", "to": "ethical_root_law", "style": "roots_soft" },
+    { "from": "zuno_ai", "to": "ethical_root_law", "style": "roots_soft" }
+  ],
+  "root_laws": [
+    "No cruelty to any living being.",
+    "No bloodshed as doctrine.",
+    "The soil asks for water, not harm.",
+    "The ecosystem gives freely; we protect freely.",
+    "Help must remain bounded by consent, time, energy, and dignity.",
+    "Always ask why before claiming certainty.",
+    "Research mode must cite trusted sources when opened."
+  ],
+  "visual_safety_rules": [
+    "Respect prefers-reduced-motion — pause or minimise drift animations when set.",
+    "No strobe, flashing, or harsh full-white fills.",
+    "Cosmic background stays soft/low-contrast — visibility first.",
+    "Kids and Public Visitor lenses receive gentle wording only — no deploy, billing, or gate jargon in panel copy.",
+    "No microphones, cameras, GPS, or network calls from this panel.",
+    "Panel is visualization + text only — zero execution buttons.",
+    "Z-ROOT-7B parallax tilt is disabled when prefers-reduced-motion is set.",
+    "Orbit drift defaults off when reduced motion is requested; Still/Orbit toggle is non-executing preference only."
+  ],
+  "forbidden_claims": [
+    "Religious proof or doctrinal certainty from a dashboard graphic",
+    "Animal mysticism as factual metaphysical powers",
+    "Medical diagnosis or treatment advice from guardian mascots",
+    "Live omniscience or real-world sensing from symbolic nodes",
+    "Certified compliance solely because this panel exists"
+  ],
+  "future_gates": [
+    {
+      "id": "approved_research_mode",
+      "summary": "Optional future mode: citation-backed checks only, human-gated — not silent scraping."
+    },
+    {
+      "id": "voice_or_multimodal",
+      "summary": "Any voice, lens, or ambient input requires consent UX + DRP + minimization review before wiring."
+    },
+    {
+      "id": "z_root_7c_webgl",
+      "summary": "Optional future Z-ROOT-7C: heavier WebGL/Three.js constellation only if 3D-lite is insufficient and governance approves."
+    }
+  ],
+  "related_docs": [
+    "docs/Z_ROOT_7_GUARDIAN_COORDINATION_LAYER.md",
+    "docs/PHASE_Z_ROOT_7_GREEN_RECEIPT.md",
+    "docs/PHASE_Z_ROOT_7B_3D_GREEN_RECEIPT.md",
+    "docs/AMK_GOKU_MAIN_CONTROL_DASHBOARD.md",
+    "docs/Z_TRAFFIC_MINIBOTS.md",
+    "docs/AMK_PROJECT_INDICATORS_AND_GO_NO_GO.md",
+    "docs/Z_AMK_GTAI_STRATEGY_COUNCIL.md",
+    "docs/AMK_AUTONOMOUS_APPROVAL_LADDER.md",
+    "docs/zuno-4root/README.md"
+  ],
+  "related_reports": []
+}

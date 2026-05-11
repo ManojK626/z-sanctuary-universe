@@ -1,0 +1,265 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Z-Product Sovereign Registry Lite</title>
+    <style>
+      :root {
+        --bg: #070b14;
+        --surface: rgba(255, 255, 255, 0.06);
+        --border: rgba(255, 255, 255, 0.14);
+        --text: #eaf6ff;
+        --muted: #94a8bc;
+        --warn-bg: rgba(255, 193, 7, 0.12);
+        --danger-bg: rgba(255, 82, 82, 0.12);
+        --ok-bg: rgba(52, 199, 89, 0.12);
+        --info-bg: rgba(88, 168, 255, 0.12);
+      }
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        margin: 0;
+        padding: 0.75rem 0.85rem 1rem;
+        font-family: 'Segoe UI', system-ui, sans-serif;
+        background: linear-gradient(180deg, #0d1426 0%, var(--bg) 100%);
+        color: var(--text);
+        font-size: 14px;
+        line-height: 1.45;
+      }
+      @media (prefers-reduced-motion: reduce) {
+        * {
+          transition: none !important;
+          animation: none !important;
+        }
+      }
+      .banner {
+        border-radius: 10px;
+        border: 2px solid rgba(255, 215, 0, 0.45);
+        background: rgba(255, 215, 0, 0.1);
+        padding: 0.55rem 0.65rem;
+        margin-bottom: 0.65rem;
+        font-weight: 600;
+        letter-spacing: 0.02em;
+      }
+      .banner-sub {
+        font-weight: 400;
+        font-size: 0.82rem;
+        color: var(--muted);
+        margin-top: 0.35rem;
+      }
+      h1 {
+        margin: 0 0 0.25rem;
+        font-size: 1.05rem;
+        font-weight: 700;
+      }
+      .muted {
+        color: var(--muted);
+        font-size: 0.82rem;
+        margin: 0 0 0.65rem;
+      }
+      #root {
+        min-height: 120px;
+      }
+      .err {
+        padding: 0.6rem;
+        border-radius: 8px;
+        background: var(--danger-bg);
+        border: 1px solid rgba(255, 82, 82, 0.35);
+      }
+      .grid {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 0.65rem;
+      }
+      @media (min-width: 560px) {
+        .grid {
+          grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+        }
+      }
+      article.card {
+        border: 1px solid var(--border);
+        border-radius: 12px;
+        padding: 0.65rem 0.7rem;
+        background: var(--surface);
+      }
+      article.card:focus-within {
+        outline: 2px solid rgba(88, 168, 255, 0.7);
+        outline-offset: 2px;
+      }
+      .card-title {
+        font-size: 0.98rem;
+        font-weight: 650;
+        margin: 0 0 0.35rem;
+      }
+      .card-id {
+        font-size: 0.74rem;
+        color: var(--muted);
+        font-family: ui-monospace, monospace;
+      }
+      .badges {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.3rem;
+        margin: 0.45rem 0;
+      }
+      .badge {
+        display: inline-flex;
+        align-items: center;
+        font-size: 0.7rem;
+        padding: 0.12rem 0.45rem;
+        border-radius: 999px;
+        border: 1px solid var(--border);
+        background: var(--surface);
+      }
+      .badge-type {
+        background: var(--info-bg);
+      }
+      .badge-status {
+        background: var(--warn-bg);
+      }
+      .badge-risk-low {
+        background: var(--ok-bg);
+      }
+      .badge-risk-medium {
+        background: var(--warn-bg);
+      }
+      .badge-risk-high {
+        background: var(--danger-bg);
+      }
+      .badge-trust {
+        background: rgba(186, 104, 200, 0.15);
+      }
+      .summary {
+        margin: 0;
+        font-size: 0.85rem;
+        color: var(--text);
+      }
+      .next {
+        margin-top: 0.5rem;
+        font-size: 0.82rem;
+        color: var(--muted);
+      }
+      .next strong {
+        color: var(--text);
+      }
+      .footnote {
+        margin-top: 0.85rem;
+        font-size: 0.74rem;
+        color: var(--muted);
+      }
+      .mini-bots {
+        margin-top: 0.45rem;
+        font-size: 0.72rem;
+        color: var(--muted);
+        border-top: 1px dashed var(--border);
+        padding-top: 0.35rem;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Z-Product Sovereign Registry Lite</h1>
+      <p class="muted">Central business/product intelligence · internal planning mirror</p>
+      <div class="banner" role="status">
+        READ-ONLY / INTERNAL PLANNING
+        <div class="banner-sub">
+          No purchase actions, supplier outreach, payments, or certification claims from this pane. Bots below are labeling
+          placeholders only.
+        </div>
+      </div>
+    </header>
+    <main id="root" aria-live="polite"><p class="muted">Loading registry…</p></main>
+    <p class="footnote">
+      Data: <code>data/z_sovereign_products_registry.json</code> · Verify:
+      <code>npm run z:products:verify</code>
+    </p>
+    <script>
+      (function () {
+        function esc(s) {
+          var t = document.createElement('span');
+          t.textContent = s == null ? '' : String(s);
+          return t.innerHTML;
+        }
+        function riskClass(level) {
+          var l = String(level || '').toLowerCase();
+          if (l === 'low') return 'badge-risk-low';
+          if (l === 'high') return 'badge-risk-high';
+          return 'badge-risk-medium';
+        }
+        function render(data) {
+          var products = (data && data.products) || [];
+          var html = '<div class="grid">';
+          for (var i = 0; i < products.length; i++) {
+            var p = products[i];
+            var bn = p.bot_notes_placeholder || {};
+            var botHtml = '';
+            var keys = Object.keys(bn);
+            if (keys.length) {
+              botHtml =
+                '<div class="mini-bots"><strong>Mini-bot labels (mock):</strong> ' +
+                keys
+                  .map(function (k) {
+                    return '<span class="badge">' + esc(k) + ': ' + esc(bn[k]) + '</span>';
+                  })
+                  .join(' ') +
+                '</div>';
+            }
+            html +=
+              '<article class="card" tabindex="0">' +
+              '<div class="card-title">' +
+              esc(p.name) +
+              '</div>' +
+              '<div class="card-id">' +
+              esc(p.product_id) +
+              ' · ' +
+              esc(p.project_origin) +
+              '</div>' +
+              '<div class="badges">' +
+              '<span class="badge badge-type">' +
+              esc(p.product_type) +
+              '</span>' +
+              '<span class="badge badge-status">' +
+              esc(p.status) +
+              '</span>' +
+              '<span class="badge ' +
+              riskClass(p.internal_risk_level) +
+              '">risk: ' +
+              esc(p.internal_risk_level) +
+              '</span>' +
+              '<span class="badge badge-trust">' +
+              esc(p.trust_status) +
+              '</span>' +
+              '</div>' +
+              '<p class="summary">' +
+              esc(p.public_summary) +
+              '</p>' +
+              '<p class="next"><strong>Industry:</strong> ' +
+              esc(p.industry_category) +
+              ' · <strong>Next:</strong> ' +
+              esc(p.next_action) +
+              '</p>' +
+              botHtml +
+              '</article>';
+          }
+          html += '</div>';
+          document.getElementById('root').innerHTML = html;
+        }
+        function fail(msg) {
+          document.getElementById('root').innerHTML =
+            '<div class="err" role="alert">' + esc(msg) + '</div>';
+        }
+        fetch('../../data/z_sovereign_products_registry.json', { cache: 'no-store' })
+          .then(function (r) {
+            if (!r.ok) throw new Error('Registry HTTP ' + r.status);
+            return r.json();
+          })
+          .then(render)
+          .catch(function () {
+            fail('Could not load z_sovereign_products_registry.json. Serve dashboard from hub root (e.g. live-server).');
+          });
+      })();
+    </script>
+  </body>
+</html>

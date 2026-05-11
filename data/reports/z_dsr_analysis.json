@@ -1,0 +1,214 @@
+{
+  "generated_at": "2026-04-28T18:56:02.909Z",
+  "summary": {
+    "duplicates": 2,
+    "similar": 1,
+    "conflicts": 9,
+    "redundant_data": 1,
+    "analyzed_entries": 20,
+    "excluded_entries": 10
+  },
+  "status": "attention",
+  "duplicates": [
+    {
+      "type": "module",
+      "items": [
+        "./config/z_bridge",
+        "./data/z_bridge",
+        "./scripts/z_bridge"
+      ],
+      "confidence": "high",
+      "reason": "Identical normalized names"
+    },
+    {
+      "type": "module",
+      "items": [
+        "./core",
+        "./core/core"
+      ],
+      "confidence": "high",
+      "reason": "Identical normalized names"
+    }
+  ],
+  "similar": [
+    {
+      "type": "module",
+      "items": [
+        "./packages/z-sanctuary-core",
+        "./ZSanctuary_Labs"
+      ],
+      "confidence": "medium",
+      "score": 0.714,
+      "reason": "High name similarity"
+    }
+  ],
+  "conflicts": [
+    {
+      "type": "capability_overlap",
+      "capability": "has_scripts",
+      "items": [
+        "./Amk_Goku Worldwide Loterry",
+        "./apps/api",
+        "./core",
+        "./ZSanctuary_Labs",
+        "./ZSanctuary_Labs/copies/dashboard_copy"
+      ],
+      "reason": "Multiple modules share same capability"
+    },
+    {
+      "type": "capability_overlap",
+      "capability": "has_data",
+      "items": [
+        "./Amk_Goku Worldwide Loterry",
+        "./Amk_Goku Worldwide Loterry/core-engine",
+        "./apps/z_gadget_mirrors/mirror_decision_engine",
+        "./core",
+        "./core/core",
+        "./martial-platform",
+        "./scripts"
+      ],
+      "reason": "Multiple modules share same capability"
+    },
+    {
+      "type": "capability_overlap",
+      "capability": "node_project",
+      "items": [
+        "./apps/api",
+        "./apps/web",
+        "./deploy/z_bridge_soft",
+        "./packages/z-intelligence",
+        "./packages/z-sanctuary-core",
+        "./scripts/z_bridge",
+        "./templates/z_garage_node_minimal",
+        "./ui/z_bridge_dashboard"
+      ],
+      "reason": "Multiple modules share same capability"
+    },
+    {
+      "type": "capability_overlap",
+      "capability": "scriptable",
+      "items": [
+        "./apps/api",
+        "./apps/web",
+        "./deploy/z_bridge_soft",
+        "./packages/z-intelligence",
+        "./packages/z-sanctuary-core",
+        "./scripts/z_bridge",
+        "./templates/z_garage_node_minimal",
+        "./ui/z_bridge_dashboard"
+      ],
+      "reason": "Multiple modules share same capability"
+    },
+    {
+      "type": "capability_overlap",
+      "capability": "runnable_app",
+      "items": [
+        "./apps/api",
+        "./apps/web",
+        "./deploy/z_bridge_soft",
+        "./scripts/z_bridge",
+        "./templates/z_garage_node_minimal",
+        "./ui/z_bridge_dashboard"
+      ],
+      "reason": "Multiple modules share same capability"
+    },
+    {
+      "type": "capability_overlap",
+      "capability": "test_system",
+      "items": [
+        "./apps/api",
+        "./apps/web",
+        "./deploy/z_bridge_soft",
+        "./packages/z-intelligence",
+        "./packages/z-sanctuary-core",
+        "./scripts/z_bridge",
+        "./templates/z_garage_node_minimal",
+        "./ui/z_bridge_dashboard"
+      ],
+      "reason": "Multiple modules share same capability"
+    },
+    {
+      "type": "capability_overlap",
+      "capability": "lint_system",
+      "items": [
+        "./apps/api",
+        "./apps/web",
+        "./deploy/z_bridge_soft",
+        "./packages/z-intelligence",
+        "./packages/z-sanctuary-core",
+        "./scripts/z_bridge",
+        "./templates/z_garage_node_minimal",
+        "./ui/z_bridge_dashboard"
+      ],
+      "reason": "Multiple modules share same capability"
+    },
+    {
+      "type": "capability_overlap",
+      "capability": "build_system",
+      "items": [
+        "./apps/web",
+        "./deploy/z_bridge_soft",
+        "./packages/z-intelligence",
+        "./scripts/z_bridge",
+        "./templates/z_garage_node_minimal",
+        "./ui/z_bridge_dashboard"
+      ],
+      "reason": "Multiple modules share same capability"
+    },
+    {
+      "type": "capability_overlap",
+      "capability": "z_bridge_module",
+      "items": [
+        "./config/z_bridge",
+        "./data/z_bridge",
+        "./deploy/z_bridge_soft",
+        "./scripts/z_bridge",
+        "./ui/z_bridge_dashboard"
+      ],
+      "reason": "Multiple modules share same capability"
+    }
+  ],
+  "redundant_data": [
+    {
+      "type": "export_archive_overlap",
+      "count": 10,
+      "reason": "Many export-like folders present in capability registry",
+      "sample_items": [
+        "./Amk_Goku Worldwide Loterry/exports/lottery_app_pack_20260130T225055Z",
+        "./Amk_Goku Worldwide Loterry/exports/lottery_app_pack_20260130T225320Z",
+        "./Amk_Goku Worldwide Loterry/exports/lottery_app_pack_20260131T130222Z",
+        "./Amk_Goku Worldwide Loterry/exports/lottery_app_pack_20260131T150700Z",
+        "./Amk_Goku Worldwide Loterry/exports/lottery_app_pack_20260131T150734Z",
+        "./Amk_Goku Worldwide Loterry/exports/lottery_app_pack_20260131T151828Z",
+        "./Amk_Goku Worldwide Loterry/exports/lottery_app_pack_20260131T152508Z",
+        "./Amk_Goku Worldwide Loterry/exports/lottery_app_pack_20260202T171438Z"
+      ]
+    }
+  ],
+  "recommendations": [
+    "Resolve duplicate modules: choose canonical source, then merge or isolate alternatives.",
+    "Clarify ownership where capabilities overlap; assign one owner and mark extensions.",
+    "Consider archive policy for export-style folders to reduce redundant registry noise."
+  ],
+  "policy_hints": {
+    "excluded_entries": 10,
+    "excluded_paths_sample": [
+      "./Amk_Goku Worldwide Loterry/exports/lottery_app_pack_20260130T225055Z",
+      "./Amk_Goku Worldwide Loterry/exports/lottery_app_pack_20260130T225320Z",
+      "./Amk_Goku Worldwide Loterry/exports/lottery_app_pack_20260131T130222Z",
+      "./Amk_Goku Worldwide Loterry/exports/lottery_app_pack_20260131T150700Z",
+      "./Amk_Goku Worldwide Loterry/exports/lottery_app_pack_20260131T150734Z",
+      "./Amk_Goku Worldwide Loterry/exports/lottery_app_pack_20260131T151828Z",
+      "./Amk_Goku Worldwide Loterry/exports/lottery_app_pack_20260131T152508Z",
+      "./Amk_Goku Worldwide Loterry/exports/lottery_app_pack_20260202T171438Z",
+      "./Amk_Goku Worldwide Loterry/exports/lottery_app_pack_20260215T154122Z",
+      "./Amk_Goku Worldwide Loterry/exports/lottery_app_pack_latest"
+    ],
+    "note": "Excluded by data/z_dsr_policy.json to reduce archive/export noise."
+  },
+  "policy": {
+    "file": "data/z_dsr_policy.json",
+    "applied": true
+  },
+  "governance_note": "Advisory only — no auto-merge, no auto-delete, no execution override."
+}

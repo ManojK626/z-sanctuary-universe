@@ -1,0 +1,23 @@
+{
+  "schema_version": 1,
+  "generated_at": "2026-04-26T01:11:29.880Z",
+  "name": "z-mini-bot-health",
+  "advisory": true,
+  "drp_note": "Local process metrics only. Not a replacement for SICMNS or service monitors.",
+  "hostname": "MKTiger",
+  "platform": "win32",
+  "release": "10.0.26200",
+  "loadavg": [
+    0,
+    0,
+    0
+  ],
+  "cpu_count": 16,
+  "memory": {
+    "total_bytes": 66277568512,
+    "free_bytes": 33110450176,
+    "used_bytes": 33167118336,
+    "used_pct": 50
+  },
+  "uptime_sec": 213406.609
+}

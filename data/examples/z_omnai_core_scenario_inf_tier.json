@@ -1,0 +1,20 @@
+{
+  "schema": "z_omnai_core_scenario_v1",
+  "label": "manifest: RSI cycles into unbounded Tier INF",
+  "rsi_cycles": 6,
+  "traffic_kind": "reasoning",
+  "brains": [{ "id": "MB-0", "loadPct": 41 }, { "id": "BRAIN-1", "loadPct": 77 }],
+  "ants": {
+    "reasoningDagCycles": 220,
+    "ingestIntegrityOk": true,
+    "secretsDetected": false,
+    "ciGreen": true,
+    "formulaStable": true,
+    "pathwayDiverging": false,
+    "hiveSkewPct": 3,
+    "recursionDepth": 10,
+    "recursionLimit": 52
+  },
+  "pathway": { "goalClarity": 0.93, "capacityRatio": 0.42, "residualDelta": -0.04, "completesRubric": false },
+  "entity": { "lane": "ASSISTANT", "action": "format_user_reply" }
+}

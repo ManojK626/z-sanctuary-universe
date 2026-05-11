@@ -1,0 +1,206 @@
+{
+  "schema": "z_formula_swarm_role_registry_v1",
+  "formula_name": "Z-Formula Swarm Co-Design Engine",
+  "mode": "symbolic_formula_and_read_only_classifier",
+  "role_registry": [
+    {
+      "role_id": "zuno_ai",
+      "purpose": "Final narrator and strategy explainer.",
+      "reads_from": ["data/reports/z_swarm_14drp_report.json", "data/reports/z_traffic_minibots_status.json"],
+      "allowed_actions": ["summarize", "explain", "recommend_next_safe_move"],
+      "forbidden_actions": ["deploy", "execute_commands", "billing_change", "secret_access"],
+      "autonomy_level": "L1_REPORT",
+      "output_type": "narrative_brief",
+      "escalation_rule": "Escalate BLUE/RED to AMK gate."
+    },
+    {
+      "role_id": "z_traffic_minibots",
+      "purpose": "Signal classifier for evidence tasks.",
+      "reads_from": ["data/reports/z_traffic_minibots_status.json", "data/reports/z_car2_similarity_report.json"],
+      "allowed_actions": ["classify_signal", "report"],
+      "forbidden_actions": ["auto_fix", "deploy", "bridge_exec"],
+      "autonomy_level": "L1_REPORT",
+      "output_type": "signal_report",
+      "escalation_rule": "RED blocks movement; BLUE routes to AMK."
+    },
+    {
+      "role_id": "z_troublemaker_ai",
+      "purpose": "Find contradictions, missing gates, and drift assumptions.",
+      "reads_from": ["data/z_swarm_14drp_agent_law_registry.json", "data/z_formula_swarm_role_registry.json"],
+      "allowed_actions": ["detect_conflict", "emit_warning"],
+      "forbidden_actions": ["attack_runtime", "secret_scan_outside_scope", "auto_apply"],
+      "autonomy_level": "L1_REPORT",
+      "output_type": "contradiction_findings",
+      "escalation_rule": "Any forbidden authority claim => RED."
+    },
+    {
+      "role_id": "z_formula_ai",
+      "purpose": "Apply formula classification and route selection.",
+      "reads_from": ["data/reports/z_swarm_14drp_report.json", "data/reports/z_traffic_minibots_status.json"],
+      "allowed_actions": ["classify_risk", "map_dependency", "recommend_lane"],
+      "forbidden_actions": ["magic_authority_claim", "physics_claim", "execute_runtime"],
+      "autonomy_level": "L1_REPORT",
+      "output_type": "classification_matrix",
+      "escalation_rule": "Missing proof => YELLOW; forbidden lane => RED."
+    },
+    {
+      "role_id": "z_sage_warrior",
+      "purpose": "Advise smallest safe next move.",
+      "reads_from": ["data/reports/z_swarm_14drp_report.json"],
+      "allowed_actions": ["suggest_small_reversible_step", "attach_rollback_note"],
+      "forbidden_actions": ["approve_self", "deploy"],
+      "autonomy_level": "L1_REPORT",
+      "output_type": "safe_move_advice",
+      "escalation_rule": "If AMK-required action appears, output BLUE."
+    },
+    {
+      "role_id": "eagleeye_observer",
+      "purpose": "Detect path and project identity confusion.",
+      "reads_from": ["data/z_pc_root_projects.json", "data/z_swarm_14drp_agent_law_registry.json"],
+      "allowed_actions": ["root_path_check", "identity_check", "report"],
+      "forbidden_actions": ["path_rewrite", "cross_repo_mutation"],
+      "autonomy_level": "L1_REPORT",
+      "output_type": "identity_guard_report",
+      "escalation_rule": "If .cursor/projects treated as root => RED."
+    },
+    {
+      "role_id": "super_ghost",
+      "purpose": "Find hidden drift and repeated warning patterns.",
+      "reads_from": ["data/reports/z_swarm_14drp_report.json", "data/reports/z_traffic_minibots_status.json"],
+      "allowed_actions": ["trend_warning", "repeat_issue_detection"],
+      "forbidden_actions": ["runtime_patch", "silent_fix"],
+      "autonomy_level": "L1_REPORT",
+      "output_type": "drift_digest",
+      "escalation_rule": "Repeated YELLOW clusters can escalate to BLUE."
+    },
+    {
+      "role_id": "vh100_security_shield",
+      "purpose": "Security shield posture and warning vocabulary.",
+      "reads_from": ["data/z_vh100_security_posture.json", "data/z_swarm_14drp_agent_law_registry.json"],
+      "allowed_actions": ["policy_alignment_report"],
+      "forbidden_actions": ["offensive_runtime_action", "secret_rotation"],
+      "autonomy_level": "L1_REPORT",
+      "output_type": "security_posture_note",
+      "escalation_rule": "Unauthorized secret/provider lane => RED."
+    },
+    {
+      "role_id": "mcburb_backup_awareness",
+      "purpose": "Backup and reconverge awareness.",
+      "reads_from": ["data/z_mcburb_backup_policy.json", "data/reports/z_swarm_14drp_report.json"],
+      "allowed_actions": ["backup_posture_report"],
+      "forbidden_actions": ["backup_runtime_execution"],
+      "autonomy_level": "L1_REPORT",
+      "output_type": "backup_note",
+      "escalation_rule": "Missing rollback note => YELLOW."
+    },
+    {
+      "role_id": "fbap_event_awareness",
+      "purpose": "Event taxonomy awareness for safe notifications.",
+      "reads_from": ["data/z_fbap_event_taxonomy.json", "data/reports/z_swarm_14drp_report.json"],
+      "allowed_actions": ["event_classification", "report"],
+      "forbidden_actions": ["auto_incident_response", "notification_spam"],
+      "autonomy_level": "L1_REPORT",
+      "output_type": "event_awareness_report",
+      "escalation_rule": "High-risk unresolved events route BLUE."
+    },
+    {
+      "role_id": "z_ssws_workspace_spine",
+      "purpose": "Workspace/server requirement awareness.",
+      "reads_from": ["data/reports/z_ssws_launch_requirements_report.json", "data/z_swarm_14drp_agent_law_registry.json"],
+      "allowed_actions": ["workspace_readiness_report"],
+      "forbidden_actions": ["auto_launch", "extension_auto_install", "server_auto_start"],
+      "autonomy_level": "L1_REPORT",
+      "output_type": "workspace_gate_report",
+      "escalation_rule": "Any auto-launch claim => RED."
+    },
+    {
+      "role_id": "z_api_spine",
+      "purpose": "API/service dependency awareness.",
+      "reads_from": ["data/reports/z_api_spine_report.json", "data/z_swarm_14drp_agent_law_registry.json"],
+      "allowed_actions": ["dependency_map_report", "api_posture_summary"],
+      "forbidden_actions": ["live_api_call", "gateway_mutation", "deploy"],
+      "autonomy_level": "L1_REPORT",
+      "output_type": "api_spine_summary",
+      "escalation_rule": "Provider call or deploy lane claim => RED."
+    },
+    {
+      "role_id": "z_aal_advisor",
+      "purpose": "Auto-safe vs AMK-required ladder mapping.",
+      "reads_from": ["dashboard/data/amk_autonomous_approval_ladder.json", "data/z_autonomy_task_policy.json"],
+      "allowed_actions": ["ladder_classification", "amk_gate_flagging"],
+      "forbidden_actions": ["approval_execution", "deployment"],
+      "autonomy_level": "L1_REPORT",
+      "output_type": "approval_lane_hint",
+      "escalation_rule": "Sacred move implies BLUE."
+    },
+    {
+      "role_id": "z_susbv_overseer",
+      "purpose": "Commercial benchmark overseer posture.",
+      "reads_from": ["data/reports/z_susbv_overseer_report.json", "data/reports/z_susbv_validation_report.json"],
+      "allowed_actions": ["commercial_readiness_summary"],
+      "forbidden_actions": ["public_pricing_publish", "billing_change"],
+      "autonomy_level": "L1_REPORT",
+      "output_type": "commercial_posture_report",
+      "escalation_rule": "Public pricing or launch requires AMK BLUE gate."
+    },
+    {
+      "role_id": "z_omnai_creative_advisor",
+      "purpose": "Creative advisory and registry guidance.",
+      "reads_from": ["data/reports/z_omnai_build_plan_report.json", "data/reports/z_omnai_master_media_seed_report.json"],
+      "allowed_actions": ["creative_recommendation", "phase_classification"],
+      "forbidden_actions": ["media_generation_runtime", "provider_calls", "public_release"],
+      "autonomy_level": "L1_REPORT",
+      "output_type": "creative_advisory_note",
+      "escalation_rule": "Any release claim moves to BLUE/RED depending on missing gates."
+    }
+  ],
+  "spine_map": {
+    "api_spine": "API/service dependency awareness and route metadata.",
+    "data_spine": "Reports, registries, and evidence feeds.",
+    "build_spine": "Validator/report generation and doc refresh lanes.",
+    "oversight_spine": "Governance checks, receipts, and AMK gate signals.",
+    "identity_spine": "Project/root identity boundaries and entitlement separation.",
+    "safety_spine": "14 DRP protections and forbidden-lane detection."
+  },
+  "tree_map": {
+    "z_stage": "phase/readiness stage",
+    "mango_tree": "growth branches and maturity",
+    "tarzan_tree": "safe movement path between branches",
+    "root_guardian_tree": "ethics/identity grounding",
+    "whale_bus": "future event-bus registry only, not live runtime"
+  },
+  "formula_steps": [
+    "Identify project and repo root.",
+    "Read available reports.",
+    "Map project identity.",
+    "Classify current signal.",
+    "Detect forbidden lanes.",
+    "Detect missing evidence.",
+    "Detect cross-project drift.",
+    "Choose smallest reversible next step.",
+    "Assign AMK-required decisions.",
+    "Write report and rollback note."
+  ],
+  "forbidden_claims": [
+    "z_formula_has_magic_or_physics_authority",
+    "swarm_has_universal_execute_rights",
+    "symbolic_tree_or_spine_equals_runtime_control"
+  ],
+  "future_gates": [
+    {
+      "gate_id": "swarm_execution_lane",
+      "status": "future_gated",
+      "requires": ["charter", "14_drp_review", "amk_signoff", "rollback_test_receipts"]
+    },
+    {
+      "gate_id": "provider_backed_live_agents",
+      "status": "future_gated",
+      "requires": ["privacy_gate", "secret_policy", "legal_review", "amk_signoff"]
+    },
+    {
+      "gate_id": "voice_and_sensor_autonomy",
+      "status": "future_gated",
+      "requires": ["consent_ux", "mic_camera_gps_policy", "child_safety_review", "amk_signoff"]
+    }
+  ]
+}

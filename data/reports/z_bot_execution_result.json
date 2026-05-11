@@ -1,0 +1,27 @@
+{
+  "schema_version": 1,
+  "generated_at": "2026-04-25T22:15:16.245Z",
+  "name": "z-mini-bot-execution-result",
+  "advisory": true,
+  "drp_note": "Preview/execute output. No destructive automation.",
+  "last_run": {
+    "ok": true,
+    "mode": "preview",
+    "decision_id": "investigate_missing_project",
+    "summary": "Read-only. Confirms which registry paths are missing on disk. No files modified. Similar folder names are hints only.",
+    "findings": {
+      "registry_present": true,
+      "pc_root": "C:/Cursor Projects Organiser",
+      "expected_paths": [
+        {
+          "id": "amk-goku-dashboards-2",
+          "name": "Amk-Goku Dashboards 2",
+          "path_relative": "Amk-Goku Dashboards 2",
+          "absolute": "C:/Cursor Projects Organiser/Amk-Goku Dashboards 2",
+          "exists_on_disk": false
+        }
+      ],
+      "similar_names": []
+    }
+  }
+}

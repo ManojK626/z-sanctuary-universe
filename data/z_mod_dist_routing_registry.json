@@ -1,0 +1,129 @@
+{
+  "schema": "z.mod.dist.routing.registry.v1",
+  "phase": "Z-MOD-DIST-1",
+  "router_name": "Z-MOD-DIST Module Distributor / Co-Design Router",
+  "mode": "read_only_routing_advisor",
+  "input_types": [
+    "learning_module",
+    "media_concept",
+    "dashboard_tool",
+    "security_policy",
+    "workflow_engine",
+    "creative_pipeline",
+    "commercial_service"
+  ],
+  "known_workspaces": {
+    "main_hub": "ZSanctuary_Universe (main hub — doctrine, indicators, overseer-class reporting)",
+    "ZSanctuary_Labs": "ZSanctuary_Labs — incubation / non-clinical learning & pattern literacy",
+    "z_questra": "z-questra — uncertainty / inquiry education lane (charter-bound)",
+    "Z_Saiyan_Lumina": "Z-Saiyan Lumina — browser / visual shell experiments (gated)",
+    "AT_Princess_Blackie_Franed": "AT Princess & Blackie / Franed — family / culture / kids education (Fr–En)",
+    "Z_OMNAI": "Z-OMNAI — creative / media / movie / song / podcast pipeline (gated)",
+    "Z_SUSBV": "Z-SUSBV — pricing / benchmark / commercial readiness evidence (gated)",
+    "xl2_reference_only": "XL2 — reference-only unless explicit cross-repo charter (gambling / adult commercial prediction-adjacent)"
+  },
+  "routing_rules": [
+    {
+      "id": "hub_overseer_reporting",
+      "input_types_any": ["security_policy", "workflow_engine", "dashboard_tool"],
+      "keywords_any": ["overseer", "hub indicator", "reporting spine", "registry sync", "aafrtc"],
+      "recommended_workspace": "main_hub",
+      "recommended_phase": "doctrine_json_registry_first",
+      "required_gates": ["hierarchy_chief_alignment", "verify_md_clear"],
+      "forbidden_lanes": ["auto_merge", "auto_deploy", "runtime_bridge_without_charter"],
+      "next_safe_action": "Draft hub docs + JSON registry; run read-only validators; no live bridge."
+    },
+    {
+      "id": "learning_perception_labs",
+      "input_types_any": ["learning_module"],
+      "keywords_any": ["learning", "perception", "cognitive education", "pattern literacy", "numen", "logical brains"],
+      "recommended_workspace": "ZSanctuary_Labs",
+      "recommended_phase": "labs_doctrine_validator_first",
+      "required_gates": ["non_clinical_framing", "no_profiling_phase_1"],
+      "forbidden_lanes": ["medical_claims", "conspiracy_proof_language"],
+      "next_safe_action": "Open Labs issue: docs + JSON + read-only report; pair with existing hub reference when ready."
+    },
+    {
+      "id": "browser_visual_lumina",
+      "keywords_any": ["browser shell", "visual shell", "neon pathway ui", "client-only prototype"],
+      "recommended_workspace": "Z_Saiyan_Lumina",
+      "recommended_phase": "static_or_local_ui_only",
+      "required_gates": ["no_provider_by_default", "amk_for_network"],
+      "forbidden_lanes": ["silent_deploy", "production_auth"],
+      "next_safe_action": "Scope local/static UI; document gates before any network feature."
+    },
+    {
+      "id": "family_culture_franed",
+      "keywords_any": ["french", "english", "kids education", "family culture", "franed", "princess blackie"],
+      "recommended_workspace": "AT_Princess_Blackie_Franed",
+      "recommended_phase": "content_and_safeguarding_review",
+      "required_gates": ["child_safeguarding", "no_data_harvest_by_default"],
+      "forbidden_lanes": ["open_child_data_pipeline"],
+      "next_safe_action": "Route to Franed repo charter; keep hub as reference only until AMK opens lane."
+    },
+    {
+      "id": "creative_media_omnai",
+      "input_types_any": ["media_concept", "creative_pipeline"],
+      "keywords_any": ["movie", "trailer", "song", "podcast", "media bundle", "omnai"],
+      "recommended_workspace": "Z_OMNAI",
+      "recommended_phase": "creative_pipeline_plan_only",
+      "required_gates": ["letter_gate", "non_harm_framing"],
+      "forbidden_lanes": ["unlicensed_release", "auto_publish"],
+      "next_safe_action": "Use Z-OMNAI planning validators; no silent public drop."
+    },
+    {
+      "id": "commercial_susbv",
+      "input_types_any": ["commercial_service"],
+      "keywords_any": ["pricing", "benchmark", "commercial readiness", "susbv"],
+      "recommended_workspace": "Z_SUSBV",
+      "recommended_phase": "commercial_evidence_only",
+      "required_gates": ["amk_pricing_authority", "no_live_billing_without_gate"],
+      "forbidden_lanes": ["live_payment_enforcement"],
+      "next_safe_action": "Capture benchmarks in SUSBV; hub stays advisory until AMK opens commercial lane."
+    },
+    {
+      "id": "uncertainty_questra",
+      "keywords_any": ["uncertainty", "inquiry", "question bank", "epistemic"],
+      "recommended_workspace": "z_questra",
+      "recommended_phase": "curriculum_charter_first",
+      "required_gates": ["14_drp_alignment"],
+      "forbidden_lanes": ["prediction_certainty_marketing"],
+      "next_safe_action": "Charter questra slice; keep routing as suggestion not permission."
+    },
+    {
+      "id": "gambling_xl2_reference",
+      "keywords_any": ["gambling", "sportsbook", "casino", "adult prediction market", "wagering"],
+      "recommended_workspace": "xl2_reference_only",
+      "recommended_phase": "reference_only_unless_chartered",
+      "required_gates": ["xl2_charter_if_shared_pattern"],
+      "forbidden_lanes": ["hub_runtime_coupling", "sanctuary_xl2_bridge_without_charter"],
+      "next_safe_action": "Record as XL2 reference; do not wire into Sanctuary runtime without charter."
+    }
+  ],
+  "safety_gates": [
+    "14_drp_alignment",
+    "hierarchy_chief_alignment",
+    "amk_human_gate_for_runtime",
+    "no_auto_merge",
+    "no_auto_deploy",
+    "charter_before_cross_repo_bridge"
+  ],
+  "forbidden_routing_claims": [
+    "routing equals permission",
+    "module forecast equals future certainty",
+    "good fit equals deployment approval",
+    "shared pattern equals shared entitlement",
+    "green equals deploy",
+    "automatic project creation",
+    "auto_merge",
+    "auto_deploy"
+  ],
+  "related_docs": [
+    "docs/Z_MOD_DIST_MODULE_DISTRIBUTOR.md",
+    "docs/PHASE_Z_MOD_DIST_1_GREEN_RECEIPT.md"
+  ],
+  "related_reports": [
+    "data/reports/z_mod_dist_report.json",
+    "data/reports/z_mod_dist_report.md"
+  ]
+}

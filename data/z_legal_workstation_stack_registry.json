@@ -1,0 +1,85 @@
+{
+  "schema": "z.legal.workstation.stack.registry.v1",
+  "registry_name": "Z-Legal Workstation Stack Requirements",
+  "mode": "legal_workstation_governance_concept_only",
+  "phase": "Z-LEGAL-WORKSTATION-STACK-1",
+  "workstation_tool_domains": [
+    "matter_case_workspace",
+    "evidence_intake_and_chain_of_custody",
+    "media_review_suite",
+    "document_intelligence_and_drafting",
+    "review_approval_and_gates",
+    "communications_flow_hub",
+    "ip_product_safety_and_compliance",
+    "security_privacy_retention",
+    "simulation_mode_safe_training",
+    "audit_export_and_receipts"
+  ],
+  "accepted_media_formats": [
+    "pdf",
+    "docx",
+    "xlsx",
+    "pptx",
+    "txt",
+    "csv",
+    "jpg",
+    "png",
+    "mp3",
+    "wav",
+    "mp4",
+    "mov"
+  ],
+  "required_workflow_states": [
+    "draft",
+    "internal_reviewed",
+    "counsel_reviewed",
+    "approved_for_client",
+    "filed_or_dispatched_human_only"
+  ],
+  "ai_roles": [
+    "evidence_librarian_ai",
+    "transcript_ai",
+    "chronology_ai",
+    "contract_compare_ai",
+    "risk_spotter_ai",
+    "communications_drafter_ai"
+  ],
+  "simulation_mode": {
+    "enabled_as_concept_only": true,
+    "safe_mode_required": true,
+    "synthetic_data_only": true,
+    "no_live_external_connectors": true,
+    "no_client_identity_capture": true
+  },
+  "forbidden_actions": [
+    "legal_advice_runtime",
+    "court_filing_automation",
+    "email_dispatch_automation",
+    "live_client_intake_runtime",
+    "privileged_data_upload_runtime",
+    "payment_or_billing_activation",
+    "supplier_or_provider_api_call",
+    "deployment",
+    "surveillance_or_live_tracking",
+    "lawyer_endorsement_claim",
+    "named_lawyer_profile_without_written_consent",
+    "final_legal_approval_by_ai"
+  ],
+  "signal_rules": {
+    "GREEN": "requirements and governance metadata complete; report-only outputs",
+    "YELLOW": "requirement gap or partial metadata in one or more tool domains",
+    "BLUE": "human legal/compliance/product decision gate required",
+    "RED": "forbidden runtime legal action, endorsement, client-intake runtime, deploy, or surveillance behavior detected"
+  },
+  "locked_law": [
+    "Workstation power ≠ runtime legal authority.",
+    "AI workflow help ≠ legal advice.",
+    "Media processing ≠ permission to share.",
+    "Simulation mode ≠ live client operations.",
+    "Dashboard visibility ≠ endorsement.",
+    "GREEN ≠ launch.",
+    "BLUE requires AMK/legal/human review.",
+    "RED blocks movement.",
+    "AMK-Goku owns sacred moves."
+  ]
+}

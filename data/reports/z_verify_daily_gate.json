@@ -1,0 +1,7 @@
+{
+  "generated_at": "2026-04-13T20:50:33.304Z",
+  "status": "hold",
+  "ran_verify_full": true,
+  "reason": "verify:full failed with exit code 1.",
+  "last_success_at": "2026-02-18T18:43:48.279Z"
+}

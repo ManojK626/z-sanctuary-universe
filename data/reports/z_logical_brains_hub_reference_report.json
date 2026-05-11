@@ -1,0 +1,22 @@
+{
+  "module_id": "z_logical_brains_hub_reference",
+  "project_id": "zsanctuary_labs",
+  "signal": "GREEN",
+  "generated_at": "2026-05-05T18:33:17.616Z",
+  "checks": {
+    "passed": [
+      "Project ID is zsanctuary_labs.",
+      "Module ID matches expected value.",
+      "Go/No-Go is non-clinical planning only.",
+      "Public release remains NO_GO.",
+      "Runtime bridge is closed.",
+      "Deploy lane is closed.",
+      "Provider lane is closed.",
+      "Child data collection is disabled.",
+      "Future-gated lanes remain listed."
+    ],
+    "yellow": [],
+    "blue": [],
+    "red": []
+  }
+}

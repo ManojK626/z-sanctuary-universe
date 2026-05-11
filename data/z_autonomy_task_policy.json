@@ -1,0 +1,396 @@
+{
+  "schema": "z_autonomy_task_policy_v1",
+  "posture": "doctrine_and_metadata_only_no_daemon_no_executor",
+  "golden_law": "Observe and report may run automatically; sacred and commercial truth stay human-gated. AI may keep the road clean; it does not choose the destination alone.",
+  "summary": "Z-Autonomous Guardian Loop defines safe background reflexes (evidence, scans, reports) versus lanes that require AMK/human or charter.",
+  "levels": {
+    "L0": {
+      "name": "Observe",
+      "automatic_default": true,
+      "description": "Read-only scans: files, configs, reports, drift counts. No writes to source truth.",
+      "examples": ["directory walks", "read JSON manifests", "diff inspection tools in read-only mode"]
+    },
+    "L1": {
+      "name": "Report",
+      "automatic_default": true,
+      "description": "Emit JSON/MD status artifacts under controlled paths. Does not change product behavior.",
+      "examples": ["traffic minibots reports", "CAR² reports", "registry verify outputs"]
+    },
+    "L2": {
+      "name": "Safe hygiene",
+      "automatic_default": false,
+      "gating": "operator_opt_in_or_explicit_task_only",
+      "description": "Formatting and lint autofix that does not alter semantics (markdown tables, whitespace). Never silent on main without policy.",
+      "examples": ["npm run lint:md:fix when invoked", "md:table-compact when invoked"]
+    },
+    "L3": {
+      "name": "Patch suggestion",
+      "automatic_default": false,
+      "gating": "human_review_required_before_any_apply",
+      "description": "Produce diffs, plans, or branch proposals. No merge, no push, no apply without human.",
+      "examples": ["Cursor PR proposals", "review-only refactor plans"]
+    },
+    "L4": {
+      "name": "Controlled apply",
+      "automatic_default": false,
+      "gating": "amk_human_approval_per_slice",
+      "description": "Small scoped edits (docs, scripts, UI) after explicit lane open; Turtle Mode one domain per change set.",
+      "examples": ["approved doc edit", "approved single-domain hub patch"]
+    },
+    "L5": {
+      "name": "Sacred / charter-only",
+      "automatic_default": false,
+      "gating": "charter_plus_14_drp_and_14_dop_review",
+      "description": "Deploy, billing, live bridges, provider secrets, cross-project memory, production auth.",
+      "examples": ["cloud deploy", "API keys in CI", "live entitlement enforcement", "database writes to shared prod"]
+    }
+  },
+  "allowed_automatic_evidence_tasks": [
+    {
+      "npm_script": "verify:md",
+      "level": "L1",
+      "notes": "Lint pass/fail is evidence; fixing is L2 when explicitly run."
+    },
+    {
+      "npm_script": "z:car2",
+      "level": "L1",
+      "notes": "Read-only similarity report."
+    },
+    {
+      "npm_script": "dashboard:registry-verify",
+      "level": "L1",
+      "notes": "Dashboard registry coherence check."
+    },
+    {
+      "npm_script": "z:cross-project:sync",
+      "level": "L1",
+      "notes": "Parse/validate cross-project JSON; no live bridge."
+    },
+    {
+      "npm_script": "z:traffic",
+      "level": "L1",
+      "notes": "Aggregates evidence; advisory signals GREEN/YELLOW/RED/BLUE."
+    },
+    {
+      "npm_script": "z:amk:strategy",
+      "level": "L1",
+      "notes": "Z-AMK-GTAI-1 read-only strategy council rollup across existing report JSON; writes strategy report; exit 1 only on overall RED; not execution."
+    },
+    {
+      "npm_script": "z:swarm:14drp",
+      "level": "L1",
+      "notes": "Z-SWARM-14DRP-1 governance validator for universal swarm law + role registry; classifier/report only, no runtime execution."
+    },
+    {
+      "npm_script": "z:ide:fusion",
+      "level": "L1",
+      "notes": "Z-IDE-FUSION-1 read-only coordination report for shared IDE session/handoff posture; no remote IDE control or execution."
+    },
+    {
+      "npm_script": "z:sec:triplecheck",
+      "level": "L1",
+      "notes": "Z-SEC-TRIPLECHECK-1 communication flow and safety drift audit; report-only, no execution."
+    },
+    {
+      "npm_script": "z:logical-brains:hub",
+      "level": "L1",
+      "notes": "Z-LOGICAL-BRAINS-HUB-1 reference-only capsule validator; report-only, no runtime bridge."
+    },
+    {
+      "npm_script": "z:numen:hub",
+      "level": "L1",
+      "notes": "Z-NUMEN-HUB-1 reference-only Labs module validator; report-only, no runtime bridge, no execution."
+    },
+    {
+      "npm_script": "z:mod:dist",
+      "level": "L1",
+      "notes": "Z-MOD-DIST-1 read-only routing advisor; classifies samples against routing registry; reports only — not execution or auto-merge."
+    },
+    {
+      "npm_script": "z:xbus:gate",
+      "level": "L1",
+      "notes": "Z-XBUS-GATE-1 read-only external connector registry + policy validator; classifies fixtures; Phase 1 forbids live API/provider/payment/webhook/customer-data execution."
+    },
+    {
+      "npm_script": "z:replica:fabric",
+      "level": "L1",
+      "notes": "Z-REPLICA-FABRIC-1 governed OMNAI replica doctrine validator; classifies advisory missions; writes reports; exit 1 only on RED; no runtime replication or autonomous agents."
+    },
+    {
+      "npm_script": "z:ultra:mage",
+      "level": "L1",
+      "notes": "Z-ULTRA-MAGE-1 formula governance codex validator; classifies advisory samples; writes reports; exit 1 only on RED; no runtime formula engine or live connectors."
+    },
+    {
+      "npm_script": "z:mu:truth",
+      "level": "L1",
+      "notes": "Z-MU-TRUTH-1 Mauritius civic truth engine validator; classifies claim ledger rows; peaceful civic scope only; writes reports; exit 1 only on RED; no protest coordination, scraping, payments, or deployment."
+    },
+    {
+      "npm_script": "z:mu:advisor",
+      "level": "L1",
+      "notes": "Z-MU-ADVISOR-1 civic knowledge advisor framework validator; templates + samples only; writes reports; exit 1 only on RED; no live AI provider, public chat, user memory, or PII collection."
+    },
+    {
+      "npm_script": "z:pattern:safe",
+      "level": "L1",
+      "notes": "Z-PATTERN-SAFE-1 pattern literacy and simulation governance validator; domain registry + classified samples only; writes reports; exit 1 only on RED; no live prediction engine, wagering instruction export, payments, or connectors."
+    },
+    {
+      "npm_script": "amk:ai-sync",
+      "level": "L1",
+      "notes": "AMK-AI-SYNC-1 indicator drift observer + Z-AI team router; reads indicators/package/reports only; emits decision packets; exit 1 only on RED; Phase 1 does not mutate amk_project_indicators.json from the validator."
+    },
+    {
+      "npm_script": "z:ai:fusion-map",
+      "level": "L1",
+      "notes": "Z-AI-FUSION-MAP-1 overlap governance classifier; pairwise capability scoring + fusion recommendations only; writes reports; exit 1 only on RED; forbids interpreting recommendations as sacred approval or silent merges."
+    },
+    {
+      "npm_script": "z:stillness:learn",
+      "level": "L1",
+      "notes": "Z-STILLNESS-LEARN-1 stillness learning registry + sample classifier; writes reports only; exit 1 only on overall RED; no background learning daemons, cron stillness, provider calls, self-upgrade, or autonomous execution."
+    },
+    {
+      "npm_script": "z:legal:ops",
+      "level": "L1",
+      "notes": "Z-LEGAL-OPS-1 proof-first legal workstation validator; concept/docs/policy/report only; exit 1 only on overall RED; no legal advice runtime, lawyer impersonation, named endorsement without consent, client-data intake, upload, filing, email, provider call, payment, or deploy lane."
+    },
+    {
+      "npm_script": "z:legal:product-ops",
+      "level": "L1",
+      "notes": "Z-LEGAL-PRODUCT-OPS-1 legal/product/IP workstation validator; concept/docs/policy/report only; exit 1 only on overall RED; no product launch, manufacturing commitment, supplier API call, payment activation, medical/certification/public IP registration claim, tracking/surveillance map, or deploy lane."
+    },
+    {
+      "npm_script": "z:legal:workstation-stack",
+      "level": "L1",
+      "notes": "Z-LEGAL-WORKSTATION-STACK-1 full lawyer workstation requirements validator; governance/report only; exit 1 only on overall RED; no legal runtime authority, live client intake, court filing automation, dispatch automation, deploy, or surveillance."
+    },
+    {
+      "npm_script": "z:ssws:cockpit",
+      "level": "L1",
+      "notes": "Z-SSWS-COCKPIT-1 cockpit vs deep-work registry check; merges IDE PATH + fusion mirrors; emits dry-run open plan text only — not execution or auto-launch."
+    },
+    {
+      "npm_script": "z:cadence:logical-brains",
+      "level": "L1",
+      "notes": "Z-CADENCE-1 allowlisted read-only cadence runner for Logical Brains hub monitoring and follow-up metadata."
+    },
+    {
+      "npm_script": "z:ecosystem:awareness",
+      "level": "L1",
+      "notes": "Z-AWARE-1 read-only ecosystem registry + capsule aggregation; writes reports; exit 1 only on overall RED; not execution."
+    },
+    {
+      "npm_script": "z:api:spine",
+      "level": "L1",
+      "notes": "Z-API-SPINE-1 read-only API power cell registry validation; writes reports; exit 1 only on overall RED; not execution or live probes unless explicit --with-health-probe on loopback."
+    },
+    {
+      "npm_script": "z:api:readiness",
+      "level": "L1",
+      "notes": "Phase 1 readiness charter: lists smoke/readiness command strings from spine registry only; does not execute them."
+    },
+    {
+      "npm_script": "z:ssws:requirements",
+      "level": "L1",
+      "notes": "Z-SSWS-LINK-1 read-only workspace launch requirements registry validation; writes reports; exit 1 only on overall RED; does not install extensions, start servers, or run launch commands."
+    },
+    {
+      "npm_script": "z:omnai",
+      "level": "L1",
+      "notes": "Read-only OMNAI translation and creative pipeline template validator; no provider calls."
+    },
+    {
+      "npm_script": "z:omnai:build-plan",
+      "level": "L1",
+      "notes": "Read-only build plan and review-bundle report from workbench + templates; not execution."
+    },
+    {
+      "npm_script": "z:omnai:movie-bundle",
+      "level": "L1",
+      "notes": "Read-only movie trailer review bundle report; no media generation or publishing."
+    },
+    {
+      "npm_script": "z:omnai:media-seed",
+      "level": "L1",
+      "notes": "Read-only master media concept seed report; no provider or media generation."
+    },
+    {
+      "npm_script": "z:omnai:letter-gate",
+      "level": "L1",
+      "notes": "Read-only media pipeline letter A–E readiness report; not execution."
+    },
+    {
+      "npm_script": "zuno:coverage",
+      "level": "L1",
+      "notes": "Coverage audit artifact; part of deeper packs when run."
+    },
+    {
+      "npm_script": "z:ai-builder:refresh",
+      "level": "L2",
+      "notes": "Regenerates many docs; treat as opt-in deep hygiene, not continuous background default."
+    }
+  ],
+  "optional_project_evidence": [
+    {
+      "command": "cd z-questra && npm test",
+      "level": "L1",
+      "notes": "Project-local; advisory unless release gate says otherwise."
+    }
+  ],
+  "human_gated_categories": [
+    "deployment_and_release_channels",
+    "billing_pricing_skus_entitlements_mutation",
+    "provider_api_keys_and_secrets",
+    "bridge_execution_and_live_service_coupling",
+    "cross_project_memory_and_shared_user_storage",
+    "authentication_accounts_and_identity_providers",
+    "children_privacy_biometrics_voice_camera_gps",
+    "cloud_sync_to_third_party_without_charter",
+    "production_database_writes",
+    "autonomous_merge_or_push_to_protected_branches"
+  ],
+  "traffic_signal_alignment": {
+    "BLUE": "Hints matching governance-sensitive lanes require AMK/human decision even when L0–L1 checks pass.",
+    "RED": "Required evidence failed; do not open lane until green.",
+    "reference_script": "scripts/z_traffic_minibots_status.mjs",
+    "reference_doc": "docs/Z_TRAFFIC_MINIBOTS.md"
+  },
+  "conceptual_integrations": [
+    {
+      "name": "Z-Traffic Minibots",
+      "role": "Readiness tower and lane hints",
+      "refs": ["docs/Z_TRAFFIC_MINIBOTS.md", "data/reports/z_traffic_minibots_status.json"]
+    },
+    {
+      "name": "Z-AMK-GTAI Strategy Council",
+      "role": "Read-only decision brief before next move; aggregates traffic, SSWS, doorway, OMNAI, SUSBV, CAR² signals",
+      "refs": ["npm run z:amk:strategy", "docs/Z_AMK_GTAI_STRATEGY_COUNCIL.md", "data/reports/z_amk_gtai_strategy_report.json"]
+    },
+    {
+      "name": "Z-SWARM-14DRP-1",
+      "role": "Universal swarm law + role governance validator; report-only classification lane",
+      "refs": ["npm run z:swarm:14drp", "docs/Z_SWARM_14DRP_UNIVERSAL_AGENT_LAW.md", "data/reports/z_swarm_14drp_report.json"]
+    },
+    {
+      "name": "Z-IDE-FUSION-1",
+      "role": "Shared IDE evidence spine and coordination validator across Cursor + VS Code lanes",
+      "refs": ["npm run z:ide:fusion", "docs/Z_IDE_FUSION_WORKFLOW_CONTROL.md", "data/reports/z_ide_fusion_report.json"]
+    },
+    {
+      "name": "Z-SEC-TRIPLECHECK-1",
+      "role": "Triple-check communication, drift, and path safety before new lanes",
+      "refs": ["npm run z:sec:triplecheck", "docs/Z_SEC_TRIPLECHECK_COMMUNICATION_FLOW_AUDIT.md", "data/reports/z_sec_triplecheck_report.json"]
+    },
+    {
+      "name": "Z-AWARE-1 Ecosystem Awareness Spine",
+      "role": "Central registry + capsules + aggregated signals; RED/BLUE notification candidates only",
+      "refs": ["npm run z:ecosystem:awareness", "docs/Z_ECOSYSTEM_AWARENESS_SPINE.md", "data/reports/z_ecosystem_awareness_report.json"]
+    },
+    {
+      "name": "Z-API-SPINE-1 Universal API Power Cell",
+      "role": "Hub canonical API and route metadata registry + collision validator; extends Z-API-GATE posture; not a live gateway",
+      "refs": ["npm run z:api:spine", "docs/Z_API_SPINE_POWER_CELL.md", "data/reports/z_api_spine_report.json"]
+    },
+    {
+      "name": "Z-XBUS-GATE-1 External Connector Gate",
+      "role": "Multiverse connector metadata registry + Phase 1 policy validator; classifies future external lanes; not a live bus",
+      "refs": ["npm run z:xbus:gate", "docs/Z_XBUS_EXTERNAL_CONNECTOR_GATE.md", "data/reports/z_xbus_connector_gate_report.json"]
+    },
+    {
+      "name": "Z-SSWS-COCKPIT-1 Workspace Cockpit Orchestrator",
+      "role": "One cockpit + one deep-work posture map; dry-run CLI plan; no NAS mount, no Cloudflare deploy, no IDE auto-launch",
+      "refs": ["npm run z:ssws:cockpit", "docs/Z_SSWS_SUPER_SAIYAN_WORKSPACE_COCKPIT.md", "data/reports/z_ssws_cockpit_report.json"]
+    },
+    {
+      "name": "Z-SSWS-LINK-1 Workspace launch requirements",
+      "role": "Z-SSWS / Z-SSWSs launch manifest linked to API spine; read-only validator; no auto-launch",
+      "refs": ["npm run z:ssws:requirements", "docs/Z_SSWS_WORKSPACE_SPINE.md", "data/reports/z_ssws_launch_requirements_report.json"]
+    },
+    {
+      "name": "Zuno coverage audit",
+      "role": "L1 evidence on documentation/registry coverage",
+      "refs": ["npm run zuno:coverage", "data/reports/z_zuno_coverage_audit.json"]
+    },
+    {
+      "name": "Z-CAR²",
+      "role": "L1 duplication/drift scan",
+      "refs": ["npm run z:car2", "data/reports/z_car2_similarity_report.json"]
+    },
+    {
+      "name": "Z-OMNAI-1",
+      "role": "Creative production blueprint adapter — translation registry and pipeline templates; read-only reports",
+      "refs": ["npm run z:omnai", "docs/creative/Z_OMNAI_CREATIVE_PRODUCTION_SYSTEM.md", "data/reports/z_omnai_blueprint_report.json"]
+    },
+    {
+      "name": "Z-OMNAI-BUILD-1",
+      "role": "Capability workbench metadata and build-plan reports for internal creative lanes",
+      "refs": ["npm run z:omnai:build-plan", "data/z_omnai_capability_workbench.json", "data/reports/z_omnai_build_plan_report.json"]
+    },
+    {
+      "name": "Z-OMNAI-BUILD-2",
+      "role": "Movie trailer internal review bundle JSON + report generator (GREEN lane)",
+      "refs": ["npm run z:omnai:movie-bundle", "data/z_omnai_movie_trailer_bundle.json", "data/reports/z_omnai_movie_trailer_bundle_report.json"]
+    },
+    {
+      "name": "Z-OMNAI-BUILD-2A",
+      "role": "Master media concept seed JSON + report for downstream trailer, music, podcast, and marketing branches",
+      "refs": ["npm run z:omnai:media-seed", "data/z_omnai_master_media_concept_seed.json", "data/reports/z_omnai_master_media_seed_report.json"]
+    },
+    {
+      "name": "Z-OMNAI-LETTER-GATE-1",
+      "role": "Media pipeline letter A–E readiness gate — advisory next-step only",
+      "refs": ["npm run z:omnai:letter-gate", "data/z_omnai_media_letter_gate.json", "data/reports/z_omnai_media_letter_gate_report.json"]
+    },
+    {
+      "name": "AI Builder pack",
+      "role": "L2 when explicitly refreshed; not default idle loop",
+      "refs": ["npm run z:ai-builder:refresh"]
+    },
+    {
+      "name": "Z-MAOS",
+      "role": "Operator routing and ritual surfaces — human-in-the-loop",
+      "refs": ["package.json scripts z:maos-*"]
+    },
+    {
+      "name": "NAV catalog / workstation navigator",
+      "role": "Metadata for cockpit; does not grant runtime entitlement",
+      "refs": ["docs/dashboard/Z_UNIVERSE_WORKSTATION_NAVIGATOR.md", "dashboard/data/z_universe_service_catalog.json"]
+    },
+    {
+      "name": "ZSX entitlement policy",
+      "role": "Capability vs entitlement separation",
+      "refs": ["docs/cross-project/Z_CROSS_PROJECT_CAPABILITY_SYNC.md", "data/z_service_entitlement_catalog.json"]
+    },
+    {
+      "name": "14 DRP and 14 DOP",
+      "role": "Gates before live bridge, memory, or sacred automation",
+      "refs": ["docs/Z-COMPLETIONS-TEST-AND-COMMUNICATIONS-FLOW.md", "docs/Z-SANCTUARY-VERIFICATION-CHECKLIST.md"]
+    }
+  ],
+  "future_automation_ladder": [
+    "ZAG-1: doctrine and policy metadata only (this file)",
+    "ZAG-2: read-only loop script invoked manually",
+    "ZAG-3: scheduled local task, report-only",
+    "ZAG-4: CI workflow, report-only",
+    "ZAG-5: patch suggestion bot",
+    "ZAG-6: human-approved apply mode",
+    "ZAG-7: chartered live automation for selected safe tasks only"
+  ],
+  "forbidden_in_zag_1": [
+    "daemon_processes",
+    "background_workers_unbounded",
+    "cron_without_human_charter",
+    "silent_automatic_apply_to_protected_truth",
+    "autonomous_deploy_or_billing",
+    "live_bridge_execution_from_this_policy_file"
+  ],
+  "related_docs": [
+    "docs/Z_AUTONOMOUS_GUARDIAN_LOOP.md",
+    "docs/Z_AUTONOMY_LEVELS_POLICY.md",
+    "docs/Z_TRAFFIC_MINIBOTS.md",
+    "docs/cross-project/Z_CROSS_PROJECT_CAPABILITY_SYNC.md",
+    ".cursor/rules/z-turtle-mode-cursor-agents.mdc"
+  ]
+}

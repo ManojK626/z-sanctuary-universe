@@ -1,0 +1,129 @@
+{
+  "generated_at": "2026-05-11T13:38:40.455Z",
+  "hub_root": "C:\\Cursor Projects Organiser\\Z_Sanctuary_Universe",
+  "status": "green",
+  "totals": {
+    "checks": 13,
+    "passed": 13,
+    "failed": 0
+  },
+  "checks": [
+    {
+      "kind": "mdgev_tile",
+      "id": "mdgev-self",
+      "title": "Z-MDGEV · Eagle Eyes (this grid)",
+      "href": "/dashboard/z-mdgev/index.html",
+      "fsPath": "C:\\Cursor Projects Organiser\\Z_Sanctuary_Universe\\dashboard\\z-mdgev\\index.html",
+      "pass": true,
+      "note": "ok"
+    },
+    {
+      "kind": "mdgev_tile",
+      "id": "hodp-skk-rkpk",
+      "title": "HODP · SKK & RKPK Unified",
+      "href": "/dashboard/Html/index-skk-rkpk.html",
+      "fsPath": "C:\\Cursor Projects Organiser\\Z_Sanctuary_Universe\\dashboard\\Html\\index-skk-rkpk.html",
+      "pass": true,
+      "note": "ok"
+    },
+    {
+      "kind": "mdgev_tile",
+      "id": "hodp-redirect",
+      "title": "HODP · Compat entry",
+      "href": "/dashboard/Html/index.html",
+      "fsPath": "C:\\Cursor Projects Organiser\\Z_Sanctuary_Universe\\dashboard\\Html\\index.html",
+      "pass": true,
+      "note": "ok"
+    },
+    {
+      "kind": "mdgev_tile",
+      "id": "stub-root",
+      "title": "Dashboard root stub",
+      "href": "/dashboard/index.html",
+      "fsPath": "C:\\Cursor Projects Organiser\\Z_Sanctuary_Universe\\dashboard\\index.html",
+      "pass": true,
+      "note": "ok"
+    },
+    {
+      "kind": "mdgev_tile",
+      "id": "z-bridge-task006",
+      "title": "Z-Bridge · Pool & intelligence (Task 006)",
+      "href": "/ui/z_bridge_dashboard/index.html",
+      "fsPath": "C:\\Cursor Projects Organiser\\Z_Sanctuary_Universe\\ui\\z_bridge_dashboard\\index.html",
+      "pass": true,
+      "note": "ok"
+    },
+    {
+      "kind": "mdgev_tile",
+      "id": "html-links-hub",
+      "title": "HTML links hub",
+      "href": "/dashboard/Html/z_html_links_hub.html",
+      "fsPath": "C:\\Cursor Projects Organiser\\Z_Sanctuary_Universe\\dashboard\\Html\\z_html_links_hub.html",
+      "pass": true,
+      "note": "ok"
+    },
+    {
+      "kind": "mdgev_tile",
+      "id": "z-qa-rp",
+      "title": "Z-Q&A&RP · Pathways & DRP",
+      "href": "/dashboard/z-qa-rp/index.html",
+      "fsPath": "C:\\Cursor Projects Organiser\\Z_Sanctuary_Universe\\dashboard\\z-qa-rp\\index.html",
+      "pass": true,
+      "note": "ok"
+    },
+    {
+      "kind": "mdgev_tile",
+      "id": "z-ai-ecosphere",
+      "title": "Z AI Ecosphere · SSWS · Formulas · Tower",
+      "href": "/dashboard/z-ai-ecosphere/index.html",
+      "fsPath": "C:\\Cursor Projects Organiser\\Z_Sanctuary_Universe\\dashboard\\z-ai-ecosphere\\index.html",
+      "pass": true,
+      "note": "ok"
+    },
+    {
+      "kind": "mdgev_tile",
+      "id": "radio-garden",
+      "title": "Radio Garden (dashboard)",
+      "href": "/dashboard/Html/radio_garden.html",
+      "fsPath": "C:\\Cursor Projects Organiser\\Z_Sanctuary_Universe\\dashboard\\Html\\radio_garden.html",
+      "pass": true,
+      "note": "ok"
+    },
+    {
+      "kind": "mdgev_tile",
+      "id": "panels-explainer",
+      "title": "Panels · Explainer",
+      "href": "/dashboard/panels/explainer.html",
+      "fsPath": "C:\\Cursor Projects Organiser\\Z_Sanctuary_Universe\\dashboard\\panels\\explainer.html",
+      "pass": true,
+      "note": "ok"
+    },
+    {
+      "kind": "mdgev_tile",
+      "id": "panels-consent",
+      "title": "Panels · Consent center",
+      "href": "/dashboard/panels/consent-center.html",
+      "fsPath": "C:\\Cursor Projects Organiser\\Z_Sanctuary_Universe\\dashboard\\panels\\consent-center.html",
+      "pass": true,
+      "note": "ok"
+    },
+    {
+      "kind": "mdgev_tile",
+      "id": "panels-terms",
+      "title": "Panels · Terms & privacy",
+      "href": "/dashboard/panels/terms-privacy.html",
+      "fsPath": "C:\\Cursor Projects Organiser\\Z_Sanctuary_Universe\\dashboard\\panels\\terms-privacy.html",
+      "pass": true,
+      "note": "ok"
+    },
+    {
+      "kind": "qa_rp_registry",
+      "id": "z-qa-rp",
+      "dashboard_ui": "/dashboard/z-qa-rp/index.html",
+      "fsPath": "C:\\Cursor Projects Organiser\\Z_Sanctuary_Universe\\dashboard\\z-qa-rp\\index.html",
+      "pass": true,
+      "note": "ok"
+    }
+  ],
+  "note": "All registered dashboard paths exist on disk."
+}

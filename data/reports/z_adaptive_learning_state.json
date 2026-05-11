@@ -1,0 +1,41 @@
+{
+  "schema_version": 1,
+  "advisory_only": true,
+  "drp_note": "Bounded weight multipliers (0.5–1.5). Tuner uses data/logs/z_learning_history.jsonl. Run learning:eval then learning:tune. Remove this file to reset.",
+  "last_updated": "2026-05-03T14:39:03.143Z",
+  "learning_cycles": 2,
+  "weights": {
+    "rename_instability": 1,
+    "silent_drift": 1,
+    "stability_convergence": 1.1600000000000001,
+    "phantom_project": 1,
+    "over_control": 1
+  },
+  "last_aggregate": {
+    "rename_instability": {
+      "s": 0,
+      "f": 0,
+      "p": 0
+    },
+    "silent_drift": {
+      "s": 0,
+      "f": 0,
+      "p": 0
+    },
+    "stability_convergence": {
+      "s": 2,
+      "f": 0,
+      "p": 0
+    },
+    "phantom_project": {
+      "s": 0,
+      "f": 0,
+      "p": 0
+    },
+    "over_control": {
+      "s": 0,
+      "f": 0,
+      "p": 0
+    }
+  }
+}

@@ -1,0 +1,84 @@
+{
+  "generated_at": "2026-05-03T14:39:05.969Z",
+  "ai_tower": {
+    "status": "clear",
+    "frozen": false,
+    "agent_count": 4,
+    "planned_rollout_only": true,
+    "tower_phase": "blueprint",
+    "intent_surface": "planned_agents_manifest_only"
+  },
+  "agents": [
+    {
+      "id": "ai-agent-scribe",
+      "owner": "SKK",
+      "status": "planned",
+      "lastPulse": null
+    },
+    {
+      "id": "ai-agent-protector",
+      "owner": "SKK",
+      "status": "planned",
+      "lastPulse": null
+    },
+    {
+      "id": "ai-agent-designer",
+      "owner": "RKPK",
+      "status": "planned",
+      "lastPulse": null
+    },
+    {
+      "id": "ai-agent-navigator",
+      "owner": "SKK",
+      "status": "planned",
+      "lastPulse": null
+    }
+  ],
+  "miniai": [
+    {
+      "name": "ScribeBot",
+      "online": false,
+      "mode": "observer"
+    },
+    {
+      "name": "ProtectorBot",
+      "online": false,
+      "mode": "observer"
+    },
+    {
+      "name": "DesignerBot",
+      "online": false,
+      "mode": "observer"
+    },
+    {
+      "name": "NavigatorBot",
+      "online": false,
+      "mode": "observer"
+    }
+  ],
+  "hygiene": {
+    "status": "hold",
+    "generated_at": "2026-04-26T01:56:10.035Z",
+    "pending_count": null
+  },
+  "disturbance_watch": {
+    "status": "green",
+    "risk_class": "low",
+    "disturbance_score": 0,
+    "failed_checks": 0
+  },
+  "super_ghost_feed": {
+    "status": "green",
+    "risk_class": "low",
+    "message": "Trouble Maker scan is clear. No disturbance chain detected."
+  },
+  "qosmei_core": {
+    "status": "clear",
+    "lane_priority": "optimize",
+    "composite_score": 100,
+    "confidence_band": "high",
+    "generated_at": "2026-05-03T14:39:05.818Z",
+    "advisory_only": true
+  },
+  "notes": "Observational only. No execution authority. AI Tower ai-agent modules in manifest are planned-only until explicitly promoted."
+}

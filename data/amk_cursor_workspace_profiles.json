@@ -1,0 +1,66 @@
+{
+  "schema": "amk_cursor_workspace_profiles_v1",
+  "profile_name": "Z-SSWS-LAB-1 Unified Cursor workspace control",
+  "phase": "Z-SSWS-LAB-1",
+  "updated_at": "2026-05-04",
+  "main_workspace": {
+    "id": "main_control",
+    "workspace_relative": "workspaces/AMK-Goku-Super-Saiyan-Main.code-workspace",
+    "purpose": "Single main Cursor cockpit: hub SSWS spine + Z_Lab lane for awareness; not every heavy repo root.",
+    "doorway_profile_id": "main_control"
+  },
+  "deep_work_profiles": [
+    {
+      "id": "z_lab",
+      "workspace_relative": "workspaces/AMK-Goku-Z-Lab.code-workspace",
+      "purpose": "Experiments and prototypes in Z_Labs only.",
+      "doorway_profile_id": "z_lab"
+    },
+    {
+      "id": "franed_deep_work",
+      "doorway_project_id": "franed_at_princess",
+      "purpose": "AT Princess & Blackie / Franed AI — one focused repo window.",
+      "doorway_profile_id": "franed"
+    },
+    {
+      "id": "lumina_deep_work",
+      "doorway_project_id": "lumina_browser",
+      "purpose": "Z-Saiyan Lumina browser — one focused repo window.",
+      "doorway_profile_id": "lumina"
+    },
+    {
+      "id": "questra_deep_work",
+      "doorway_project_id": "z_questra",
+      "purpose": "Z-QUESTRA comfort lab under hub — one focused window.",
+      "doorway_profile_id": "questra"
+    },
+    {
+      "id": "creative_deep_work",
+      "doorway_project_id": "hub_zsanctuary",
+      "purpose": "Z-OMNAI and creative pipeline evidence live in hub docs/data/scripts — hub window only for deep creative review.",
+      "doorway_profile_id": "creative_deep"
+    }
+  ],
+  "laws": [
+    "Workspace merge ≠ repo merge.",
+    "Open workspace ≠ run project.",
+    "Z-Lab experiment ≠ production.",
+    "Main cockpit ≠ deployment.",
+    "Cursor open ≠ code execution.",
+    "AMK-Goku owns sacred moves."
+  ],
+  "related_docs": [
+    "docs/AMK_CURSOR_WORKSPACE_STRATEGY.md",
+    "docs/AMK_WORKSPACE_DOORWAY.md",
+    "docs/Z_SSWS_WORKSPACE_SPINE.md",
+    "docs/Z_SSWS_SUPER_SAIYAN_WORKSPACE_COCKPIT.md",
+    "docs/PHASE_Z_SSWS_LAB_1_GREEN_RECEIPT.md",
+    "docs/PHASE_Z_SSWS_COCKPIT_1_GREEN_RECEIPT.md"
+  ],
+  "related_reports": [
+    "data/reports/amk_cursor_workspace_profiles_report.json",
+    "data/reports/amk_cursor_workspace_profiles_report.md",
+    "data/reports/z_ssws_cockpit_report.json",
+    "data/reports/z_ssws_cockpit_report.md"
+  ]
+}

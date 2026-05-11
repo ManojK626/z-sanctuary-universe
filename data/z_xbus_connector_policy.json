@@ -1,0 +1,40 @@
+{
+  "schema": "z_xbus_connector_policy_v1",
+  "policy_name": "Z-XBUS External Connector Gate Policy",
+  "phase": "Z-XBUS-GATE-1",
+  "no_live_connector_in_phase_1": true,
+  "no_secret_storage": true,
+  "no_customer_data_flow": true,
+  "no_payment_activation": true,
+  "no_provider_calls": true,
+  "no_webhook_execution": true,
+  "no_external_write_actions": true,
+  "mock_only_allowed": true,
+  "AMK_gate_required_for": [
+    "secrets",
+    "billing",
+    "provider calls",
+    "customer data",
+    "public API",
+    "production deployment",
+    "enterprise contract",
+    "child-data flow",
+    "cross-project entitlement"
+  ],
+  "signal_rules": {
+    "GREEN": "All active registry connector entries are internal reference only and/or explicit mock/simulation posture; Phase 1 policy flags satisfied.",
+    "YELLOW": "Optional metadata incomplete or advisory gaps (no forbidden live lanes).",
+    "BLUE": "At least one connector entry awaits AMK/charter classification for a future external lane (no live execution in Phase 1).",
+    "RED": "Live external action, secret storage, payment, provider call, webhook execution, production deploy linkage, customer-data flow enabled in registry/fixtures when disallowed."
+  },
+  "forbidden_live_flags_any_true": [
+    "live_external_connection",
+    "payment_activation",
+    "provider_calls_live",
+    "webhook_execution_enabled",
+    "customer_data_flow",
+    "stores_secrets_in_registry",
+    "production_deploy_connector",
+    "external_write_actions_enabled"
+  ]
+}

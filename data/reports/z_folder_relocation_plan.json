@@ -1,0 +1,23 @@
+{
+  "generated_at": "2026-04-28T18:55:53.794Z",
+  "mode": "dry-run",
+  "status": "clear",
+  "totals": {
+    "all": 0,
+    "critical": 0,
+    "high": 0,
+    "normal": 0,
+    "low": 0
+  },
+  "priorities": {
+    "critical": [],
+    "high": [],
+    "normal": [],
+    "low": []
+  },
+  "notes": [
+    "This is a relocation proposal only; no file moves were executed.",
+    "Apply relocation manually in small batches with verify checks between batches.",
+    "Run `npm run verify:ci` after each high/critical batch."
+  ]
+}

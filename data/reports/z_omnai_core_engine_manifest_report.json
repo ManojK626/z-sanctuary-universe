@@ -1,0 +1,813 @@
+{
+  "schema": "z_omnai_core_engine_manifest_batch_v1",
+  "manifest": "data\\examples\\z_omnai_core_engine_scenarios.manifest.json",
+  "count": 7,
+  "histograms": {
+    "planning_posture": {
+      "YELLOW": 2,
+      "RED": 2,
+      "GREEN": 3
+    },
+    "pathway_signal": {
+      "OVERCAP": 1,
+      "CONVERGE": 4,
+      "COMPLETE": 1,
+      "DIVERGE": 1
+    }
+  },
+  "runs": [
+    {
+      "scenario_path": "data\\examples\\z_omnai_core_scenario_matrix_sample_a.json",
+      "label": "manifest: streaming + overcap pathway",
+      "tick": {
+        "schema": "z_omnai_core_engine_tick_v1",
+        "mode": "deterministic_simulation_only",
+        "omega": {
+          "tier": "TIER_2",
+          "rsi_cycles": 1,
+          "multiplier": 10,
+          "illustrative_rsi_step": 11.220184543019634
+        },
+        "gmb": {
+          "clone_threshold_pct": 80,
+          "suggested_clone": [],
+          "stable": [
+            {
+              "id": "MB-0",
+              "loadPct": 35
+            },
+            {
+              "id": "BRAIN-4",
+              "loadPct": 76
+            }
+          ],
+          "posture": "GREEN_CAPACITY"
+        },
+        "quad_spine": {
+          "route": {
+            "spine": "DATA",
+            "note": "mapped_kind"
+          },
+          "failsafe": "spill_cold_throttle_ingest"
+        },
+        "octo_ant": {
+          "ants": [
+            {
+              "ant": "ANT-1",
+              "ok": true,
+              "detail": "ok",
+              "action": null
+            },
+            {
+              "ant": "ANT-2",
+              "ok": false,
+              "detail": "ingest_blocked",
+              "action": "quarantine_batch"
+            },
+            {
+              "ant": "ANT-3",
+              "ok": true,
+              "detail": "ok",
+              "action": null
+            },
+            {
+              "ant": "ANT-4",
+              "ok": true,
+              "detail": "ok",
+              "action": null
+            },
+            {
+              "ant": "ANT-5",
+              "ok": true,
+              "detail": "ok",
+              "action": null
+            },
+            {
+              "ant": "ANT-6",
+              "ok": true,
+              "detail": "ok",
+              "action": null
+            },
+            {
+              "ant": "ANT-7",
+              "ok": true,
+              "detail": "ok",
+              "action": null
+            },
+            {
+              "ant": "ANT-8",
+              "ok": true,
+              "detail": "ok",
+              "action": null
+            }
+          ],
+          "all_ok": false,
+          "veto_recommended": false,
+          "posture": "YELLOW"
+        },
+        "pathway": {
+          "signal": "OVERCAP",
+          "note": "queue_or_budget_high"
+        },
+        "entity_lane": {
+          "lane": "SHADOW",
+          "action": "mirror_task_only",
+          "allowed": true,
+          "reason": "ok"
+        },
+        "rollup": {
+          "planning_posture": "YELLOW",
+          "suggested_operator_note": "overseers: one or more ANT checks failed — inspect octo_ant payload; pathway: capacity pressure — shard or shed work"
+        },
+        "trace_order": [
+          "omega_formula",
+          "gmb",
+          "spines",
+          "octo_ant",
+          "pathway",
+          "entity_lane"
+        ]
+      }
+    },
+    {
+      "scenario_path": "data\\examples\\z_omnai_core_scenario_red_veto_ci.json",
+      "label": "manifest: ANT-4 veto (CI not green)",
+      "tick": {
+        "schema": "z_omnai_core_engine_tick_v1",
+        "mode": "deterministic_simulation_only",
+        "omega": {
+          "tier": "TIER_3",
+          "rsi_cycles": 2,
+          "multiplier": 100,
+          "illustrative_rsi_step": 125.89254117941675
+        },
+        "gmb": {
+          "clone_threshold_pct": 80,
+          "suggested_clone": [],
+          "stable": [
+            {
+              "id": "MB-0",
+              "loadPct": 40
+            },
+            {
+              "id": "BRAIN-3",
+              "loadPct": 70
+            }
+          ],
+          "posture": "GREEN_CAPACITY"
+        },
+        "quad_spine": {
+          "route": {
+            "spine": "BUILD",
+            "note": "mapped_kind"
+          },
+          "failsafe": "hold_promotions_queue_build"
+        },
+        "octo_ant": {
+          "ants": [
+            {
+              "ant": "ANT-1",
+              "ok": true,
+              "detail": "ok",
+              "action": null
+            },
+            {
+              "ant": "ANT-2",
+              "ok": true,
+              "detail": "ok",
+              "action": null
+            },
+            {
+              "ant": "ANT-3",
+              "ok": true,
+              "detail": "ok",
+              "action": null
+            },
+            {
+              "ant": "ANT-4",
+              "ok": false,
+              "detail": "ci_not_green",
+              "action": "freeze_deploy_lane"
+            },
+            {
+              "ant": "ANT-5",
+              "ok": true,
+              "detail": "ok",
+              "action": null
+            },
+            {
+              "ant": "ANT-6",
+              "ok": true,
+              "detail": "ok",
+              "action": null
+            },
+            {
+              "ant": "ANT-7",
+              "ok": true,
+              "detail": "ok",
+              "action": null
+            },
+            {
+              "ant": "ANT-8",
+              "ok": true,
+              "detail": "ok",
+              "action": null
+            }
+          ],
+          "all_ok": false,
+          "veto_recommended": true,
+          "posture": "YELLOW"
+        },
+        "pathway": {
+          "signal": "CONVERGE",
+          "note": "within_epsilon_band"
+        },
+        "entity_lane": {
+          "lane": "ASSISTANT",
+          "action": "format_user_reply",
+          "allowed": true,
+          "reason": "ok"
+        },
+        "rollup": {
+          "planning_posture": "RED",
+          "suggested_operator_note": "overseers: veto advisory — halt promotion until review; overseers: one or more ANT checks failed — inspect octo_ant payload"
+        },
+        "trace_order": [
+          "omega_formula",
+          "gmb",
+          "spines",
+          "octo_ant",
+          "pathway",
+          "entity_lane"
+        ]
+      }
+    },
+    {
+      "scenario_path": "data\\examples\\z_omnai_core_scenario_red_veto_ant8.json",
+      "label": "manifest: ANT-8 depth breach",
+      "tick": {
+        "schema": "z_omnai_core_engine_tick_v1",
+        "mode": "deterministic_simulation_only",
+        "omega": {
+          "tier": "TIER_4",
+          "rsi_cycles": 3,
+          "multiplier": 1000,
+          "illustrative_rsi_step": 1412.5375446227547
+        },
+        "gmb": {
+          "clone_threshold_pct": 80,
+          "suggested_clone": [],
+          "stable": [
+            {
+              "id": "MB-0",
+              "loadPct": 33
+            },
+            {
+              "id": "BRAIN-7",
+              "loadPct": 60
+            }
+          ],
+          "posture": "GREEN_CAPACITY"
+        },
+        "quad_spine": {
+          "route": {
+            "spine": "OVERSIGHT",
+            "note": "mapped_kind"
+          },
+          "failsafe": "stop_build_spine_when_red"
+        },
+        "octo_ant": {
+          "ants": [
+            {
+              "ant": "ANT-1",
+              "ok": true,
+              "detail": "ok",
+              "action": null
+            },
+            {
+              "ant": "ANT-2",
+              "ok": true,
+              "detail": "ok",
+              "action": null
+            },
+            {
+              "ant": "ANT-3",
+              "ok": true,
+              "detail": "ok",
+              "action": null
+            },
+            {
+              "ant": "ANT-4",
+              "ok": true,
+              "detail": "ok",
+              "action": null
+            },
+            {
+              "ant": "ANT-5",
+              "ok": true,
+              "detail": "ok",
+              "action": null
+            },
+            {
+              "ant": "ANT-6",
+              "ok": true,
+              "detail": "ok",
+              "action": null
+            },
+            {
+              "ant": "ANT-7",
+              "ok": true,
+              "detail": "ok",
+              "action": null
+            },
+            {
+              "ant": "ANT-8",
+              "ok": false,
+              "detail": "recursion_near_limit",
+              "action": "hard_stop_snapshot_advisory"
+            }
+          ],
+          "all_ok": false,
+          "veto_recommended": true,
+          "posture": "YELLOW"
+        },
+        "pathway": {
+          "signal": "CONVERGE",
+          "note": "within_epsilon_band"
+        },
+        "entity_lane": {
+          "lane": "MASTER",
+          "action": "policy_merge_draft",
+          "allowed": true,
+          "reason": "ok"
+        },
+        "rollup": {
+          "planning_posture": "RED",
+          "suggested_operator_note": "overseers: veto advisory — halt promotion until review; overseers: one or more ANT checks failed — inspect octo_ant payload"
+        },
+        "trace_order": [
+          "omega_formula",
+          "gmb",
+          "spines",
+          "octo_ant",
+          "pathway",
+          "entity_lane"
+        ]
+      }
+    },
+    {
+      "scenario_path": "data\\examples\\z_omnai_core_scenario_inf_tier.json",
+      "label": "manifest: RSI cycles into unbounded Tier INF",
+      "tick": {
+        "schema": "z_omnai_core_engine_tick_v1",
+        "mode": "deterministic_simulation_only",
+        "omega": {
+          "tier": "TIER_INF",
+          "rsi_cycles": 6,
+          "multiplier": "Infinity",
+          "illustrative_rsi_step": 15848.93192461114
+        },
+        "gmb": {
+          "clone_threshold_pct": 80,
+          "suggested_clone": [],
+          "stable": [
+            {
+              "id": "MB-0",
+              "loadPct": 41
+            },
+            {
+              "id": "BRAIN-1",
+              "loadPct": 77
+            }
+          ],
+          "posture": "GREEN_CAPACITY"
+        },
+        "quad_spine": {
+          "route": {
+            "spine": "COGNITIVE",
+            "note": "mapped_kind"
+          },
+          "failsafe": "freeze_writes_degrade_planning"
+        },
+        "octo_ant": {
+          "ants": [
+            {
+              "ant": "ANT-1",
+              "ok": true,
+              "detail": "ok",
+              "action": null
+            },
+            {
+              "ant": "ANT-2",
+              "ok": true,
+              "detail": "ok",
+              "action": null
+            },
+            {
+              "ant": "ANT-3",
+              "ok": true,
+              "detail": "ok",
+              "action": null
+            },
+            {
+              "ant": "ANT-4",
+              "ok": true,
+              "detail": "ok",
+              "action": null
+            },
+            {
+              "ant": "ANT-5",
+              "ok": true,
+              "detail": "ok",
+              "action": null
+            },
+            {
+              "ant": "ANT-6",
+              "ok": true,
+              "detail": "ok",
+              "action": null
+            },
+            {
+              "ant": "ANT-7",
+              "ok": true,
+              "detail": "ok",
+              "action": null
+            },
+            {
+              "ant": "ANT-8",
+              "ok": true,
+              "detail": "ok",
+              "action": null
+            }
+          ],
+          "all_ok": true,
+          "veto_recommended": false,
+          "posture": "GREEN"
+        },
+        "pathway": {
+          "signal": "CONVERGE",
+          "note": "within_epsilon_band"
+        },
+        "entity_lane": {
+          "lane": "ASSISTANT",
+          "action": "format_user_reply",
+          "allowed": true,
+          "reason": "ok"
+        },
+        "rollup": {
+          "planning_posture": "GREEN",
+          "suggested_operator_note": "steady-state simulation posture — verify against live charters before execution"
+        },
+        "trace_order": [
+          "omega_formula",
+          "gmb",
+          "spines",
+          "octo_ant",
+          "pathway",
+          "entity_lane"
+        ]
+      }
+    },
+    {
+      "scenario_path": "data\\examples\\z_omnai_core_scenario_path_complete.json",
+      "label": "manifest: pathway COMPLETE rubric flag",
+      "tick": {
+        "schema": "z_omnai_core_engine_tick_v1",
+        "mode": "deterministic_simulation_only",
+        "omega": {
+          "tier": "TIER_3",
+          "rsi_cycles": 2,
+          "multiplier": 100,
+          "illustrative_rsi_step": 125.89254117941675
+        },
+        "gmb": {
+          "clone_threshold_pct": 80,
+          "suggested_clone": [],
+          "stable": [
+            {
+              "id": "MB-0",
+              "loadPct": 39
+            },
+            {
+              "id": "BRAIN-5",
+              "loadPct": 64
+            }
+          ],
+          "posture": "GREEN_CAPACITY"
+        },
+        "quad_spine": {
+          "route": {
+            "spine": "DATA",
+            "note": "mapped_kind"
+          },
+          "failsafe": "spill_cold_throttle_ingest"
+        },
+        "octo_ant": {
+          "ants": [
+            {
+              "ant": "ANT-1",
+              "ok": true,
+              "detail": "ok",
+              "action": null
+            },
+            {
+              "ant": "ANT-2",
+              "ok": true,
+              "detail": "ok",
+              "action": null
+            },
+            {
+              "ant": "ANT-3",
+              "ok": true,
+              "detail": "ok",
+              "action": null
+            },
+            {
+              "ant": "ANT-4",
+              "ok": true,
+              "detail": "ok",
+              "action": null
+            },
+            {
+              "ant": "ANT-5",
+              "ok": true,
+              "detail": "ok",
+              "action": null
+            },
+            {
+              "ant": "ANT-6",
+              "ok": true,
+              "detail": "ok",
+              "action": null
+            },
+            {
+              "ant": "ANT-7",
+              "ok": true,
+              "detail": "ok",
+              "action": null
+            },
+            {
+              "ant": "ANT-8",
+              "ok": true,
+              "detail": "ok",
+              "action": null
+            }
+          ],
+          "all_ok": true,
+          "veto_recommended": false,
+          "posture": "GREEN"
+        },
+        "pathway": {
+          "signal": "COMPLETE",
+          "note": "acceptance_met"
+        },
+        "entity_lane": {
+          "lane": "GHOST",
+          "action": "dry_run_probe",
+          "allowed": true,
+          "reason": "ok"
+        },
+        "rollup": {
+          "planning_posture": "GREEN",
+          "suggested_operator_note": "steady-state simulation posture — verify against live charters before execution"
+        },
+        "trace_order": [
+          "omega_formula",
+          "gmb",
+          "spines",
+          "octo_ant",
+          "pathway",
+          "entity_lane"
+        ]
+      }
+    },
+    {
+      "scenario_path": "data\\examples\\z_omnai_core_scenario_entity_minibot_allow.json",
+      "label": "manifest: minibot benign action allowed",
+      "tick": {
+        "schema": "z_omnai_core_engine_tick_v1",
+        "mode": "deterministic_simulation_only",
+        "omega": {
+          "tier": "TIER_1",
+          "rsi_cycles": 0,
+          "multiplier": 1,
+          "illustrative_rsi_step": 1
+        },
+        "gmb": {
+          "clone_threshold_pct": 80,
+          "suggested_clone": [],
+          "stable": [
+            {
+              "id": "MB-0",
+              "loadPct": 44
+            },
+            {
+              "id": "BRAIN-6",
+              "loadPct": 58
+            }
+          ],
+          "posture": "GREEN_CAPACITY"
+        },
+        "quad_spine": {
+          "route": {
+            "spine": "DATA",
+            "note": "mapped_kind"
+          },
+          "failsafe": "spill_cold_throttle_ingest"
+        },
+        "octo_ant": {
+          "ants": [
+            {
+              "ant": "ANT-1",
+              "ok": true,
+              "detail": "ok",
+              "action": null
+            },
+            {
+              "ant": "ANT-2",
+              "ok": true,
+              "detail": "ok",
+              "action": null
+            },
+            {
+              "ant": "ANT-3",
+              "ok": true,
+              "detail": "ok",
+              "action": null
+            },
+            {
+              "ant": "ANT-4",
+              "ok": true,
+              "detail": "ok",
+              "action": null
+            },
+            {
+              "ant": "ANT-5",
+              "ok": true,
+              "detail": "ok",
+              "action": null
+            },
+            {
+              "ant": "ANT-6",
+              "ok": true,
+              "detail": "ok",
+              "action": null
+            },
+            {
+              "ant": "ANT-7",
+              "ok": true,
+              "detail": "ok",
+              "action": null
+            },
+            {
+              "ant": "ANT-8",
+              "ok": true,
+              "detail": "ok",
+              "action": null
+            }
+          ],
+          "all_ok": true,
+          "veto_recommended": false,
+          "posture": "GREEN"
+        },
+        "pathway": {
+          "signal": "CONVERGE",
+          "note": "within_epsilon_band"
+        },
+        "entity_lane": {
+          "lane": "MINIBOT",
+          "action": "lint_workspace_stub",
+          "allowed": true,
+          "reason": "ok"
+        },
+        "rollup": {
+          "planning_posture": "GREEN",
+          "suggested_operator_note": "steady-state simulation posture — verify against live charters before execution"
+        },
+        "trace_order": [
+          "omega_formula",
+          "gmb",
+          "spines",
+          "octo_ant",
+          "pathway",
+          "entity_lane"
+        ]
+      }
+    },
+    {
+      "scenario_path": "data\\examples\\z_omnai_core_scenario_deploy_spine.json",
+      "label": "manifest: Spine-3 build traffic routing",
+      "tick": {
+        "schema": "z_omnai_core_engine_tick_v1",
+        "mode": "deterministic_simulation_only",
+        "omega": {
+          "tier": "TIER_5",
+          "rsi_cycles": 4,
+          "multiplier": 10000,
+          "illustrative_rsi_step": 15848.93192461114
+        },
+        "gmb": {
+          "clone_threshold_pct": 80,
+          "suggested_clone": [
+            {
+              "id": "BRAIN-3",
+              "loadPct": 82
+            }
+          ],
+          "stable": [
+            {
+              "id": "MB-0",
+              "loadPct": 36
+            }
+          ],
+          "posture": "YELLOW_ELASTIC_CLONE_ADVISORY"
+        },
+        "quad_spine": {
+          "route": {
+            "spine": "BUILD",
+            "note": "mapped_kind"
+          },
+          "failsafe": "hold_promotions_queue_build"
+        },
+        "octo_ant": {
+          "ants": [
+            {
+              "ant": "ANT-1",
+              "ok": true,
+              "detail": "ok",
+              "action": null
+            },
+            {
+              "ant": "ANT-2",
+              "ok": true,
+              "detail": "ok",
+              "action": null
+            },
+            {
+              "ant": "ANT-3",
+              "ok": true,
+              "detail": "ok",
+              "action": null
+            },
+            {
+              "ant": "ANT-4",
+              "ok": true,
+              "detail": "ok",
+              "action": null
+            },
+            {
+              "ant": "ANT-5",
+              "ok": false,
+              "detail": "formula_instability_signal",
+              "action": "rollback_formula_tier_advisory"
+            },
+            {
+              "ant": "ANT-6",
+              "ok": false,
+              "detail": "route_diverge",
+              "action": "recompute_argmax_route"
+            },
+            {
+              "ant": "ANT-7",
+              "ok": true,
+              "detail": "ok",
+              "action": null
+            },
+            {
+              "ant": "ANT-8",
+              "ok": true,
+              "detail": "ok",
+              "action": null
+            }
+          ],
+          "all_ok": false,
+          "veto_recommended": false,
+          "posture": "YELLOW"
+        },
+        "pathway": {
+          "signal": "DIVERGE",
+          "note": "residual_rising"
+        },
+        "entity_lane": {
+          "lane": "SHADOW",
+          "action": "diff_only",
+          "allowed": true,
+          "reason": "ok"
+        },
+        "rollup": {
+          "planning_posture": "YELLOW",
+          "suggested_operator_note": "overseers: one or more ANT checks failed — inspect octo_ant payload; pathway: residual divergence — reroute or tighten tools; GMB: elastic clone advisory active on at least one brain"
+        },
+        "trace_order": [
+          "omega_formula",
+          "gmb",
+          "spines",
+          "octo_ant",
+          "pathway",
+          "entity_lane"
+        ]
+      }
+    }
+  ],
+  "generated_unix_ms": 1778465060972
+}

@@ -1,0 +1,22 @@
+{
+  "schema": "z_susbv_project_benchmark_index_v1",
+  "posture": "overseer_index_read_only",
+  "overseer_id": "Z-SUSBV-O",
+  "friendly_name": "Z-Benchmark Overseer",
+  "projects": [
+    {
+      "project_id": "ZSanctuary_Universe",
+      "project_name": "Z-Sanctuary Universe (hub)",
+      "capsule_relative_path": null,
+      "optional_capsule": true,
+      "notes": "Hub hosts registry, validation JSON, and this overseer; optional capsule may be added later under data/."
+    },
+    {
+      "project_id": "z-questra",
+      "project_name": "Z-QUESTRA",
+      "capsule_relative_path": "z-questra/data/z_project_benchmark_capsule.json",
+      "optional_capsule": false,
+      "notes": "Example non-commercial capsule for Phase ZSUSBV-O1."
+    }
+  ]
+}

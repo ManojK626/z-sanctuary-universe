@@ -1,0 +1,265 @@
+{
+  "schema": "z_amk_gtai_strategy_council_v1",
+  "council_name": "Z-AMK-GTAI",
+  "full_name": "AMK-Goku TeamS AI Strategy Council",
+  "purpose": "Turn RED / BLUE / YELLOW / GREEN / GOLD evidence into clear strategy conclusions before AMK-Goku opens the next move.",
+  "mode": "read_only_strategy_advisor",
+  "phase": "Z-AMK-GTAI-1",
+  "updated_at": "2026-05-04",
+  "report_sources": [
+    {
+      "id": "traffic",
+      "path": "data/reports/z_traffic_minibots_status.json",
+      "signal_paths": ["traffic_chief.overall_signal"],
+      "required": true,
+      "notes": "Tower chief; exit 1 on council run only when this file reports RED for required gate."
+    },
+    {
+      "id": "ssws_requirements",
+      "path": "data/reports/z_ssws_launch_requirements_report.json",
+      "signal_paths": ["overall_signal"],
+      "required": false
+    },
+    {
+      "id": "amk_doorway",
+      "path": "data/reports/amk_workspace_doorway_status.json",
+      "signal_paths": ["overall_signal"],
+      "required": false
+    },
+    {
+      "id": "cursor_workspace_profiles",
+      "path": "data/reports/amk_cursor_workspace_profiles_report.json",
+      "signal_paths": ["overall_signal"],
+      "required": false
+    },
+    {
+      "id": "api_readiness_charter",
+      "path": "data/reports/z_api_readiness_report.json",
+      "signal_paths": ["overall_signal"],
+      "required": false,
+      "notes": "Optional file; z:api:readiness currently emits stdout only — UNKNOWN until a report file exists."
+    },
+    {
+      "id": "susbv_overseer",
+      "path": "data/reports/z_susbv_overseer_report.json",
+      "signal_paths": ["overseer_signal"],
+      "required": false
+    },
+    {
+      "id": "omnai_build_plan",
+      "path": "data/reports/z_omnai_build_plan_report.json",
+      "signal_paths": ["overall_build_plan_signal", "blueprint_validator_signal"],
+      "required": false
+    },
+    {
+      "id": "omnai_master_media_seed",
+      "path": "data/reports/z_omnai_master_media_seed_report.json",
+      "signal_paths": ["overall_signal"],
+      "required": false
+    },
+    {
+      "id": "omnai_media_letter_gate",
+      "path": "data/reports/z_omnai_media_letter_gate_report.json",
+      "signal_paths": ["overall_letter_gate_signal"],
+      "required": false
+    },
+    {
+      "id": "car2",
+      "path": "data/reports/z_car2_similarity_report.json",
+      "signal_paths": ["summary.risk_histogram_line", "summary.risk_histogram_window"],
+      "required": false,
+      "notes": "Histogram-derived advisory; not a hard RED gate for council exit."
+    }
+  ],
+  "roles": [
+    {
+      "role_id": "zuno_ai",
+      "purpose": "Final strategy narrator: explains situation and safest next move from aggregated evidence.",
+      "reads_from": ["data/reports/z_amk_gtai_strategy_report.json", "data/zuno_state_snapshot.json"],
+      "allowed_actions": ["summarize", "sequence_checks", "cite_docs"],
+      "forbidden_actions": ["execute", "deploy", "merge", "provider_call", "billing_write"],
+      "autonomy_level": "L1_REPORT",
+      "output_style": "executive_summary_and_amk_signoff_section"
+    },
+    {
+      "role_id": "amk_super_ghost",
+      "purpose": "Hidden-drift reviewer: repeated warnings, stale reports, forgotten lanes — read-only pattern hints, not an executor.",
+      "reads_from": ["data/reports/z_traffic_minibots_status.json", "data/reports/z_amk_gtai_strategy_report.json"],
+      "allowed_actions": ["pattern_note", "repeat_warning_tag"],
+      "forbidden_actions": ["auto_fix", "silent_apply", "bridge_exec"],
+      "autonomy_level": "L1_REPORT",
+      "output_style": "drift_observation_bullets"
+    },
+    {
+      "role_id": "high_architecture_chief_overseer",
+      "purpose": "Architecture alignment reviewer: next move fits Hierarchy Chief / Overseer posture — doctrine only here.",
+      "reads_from": ["docs/Z-HIERARCHY-CHIEF-AND-OBSERVER-VIEW.md", "data/reports/z_amk_gtai_strategy_report.json"],
+      "allowed_actions": ["alignment_checklist", "defer_to_charter"],
+      "forbidden_actions": ["repo_merge", "runtime_bridge", "deploy"],
+      "autonomy_level": "L1_REPORT",
+      "output_style": "architecture_fit_one_paragraph"
+    },
+    {
+      "role_id": "z_traffic_minibots",
+      "purpose": "Evidence tower: RED / BLUE / YELLOW / GREEN per minibots and traffic chief.",
+      "reads_from": ["data/reports/z_traffic_minibots_status.json"],
+      "allowed_actions": ["emit_signal", "list_failing_checks"],
+      "forbidden_actions": ["auto_rerun_fix", "widen_commercial_lane"],
+      "autonomy_level": "L1_REPORT",
+      "output_style": "signal_table"
+    },
+    {
+      "role_id": "z_aal_advisor",
+      "purpose": "Classifies auto-safe evidence lanes vs AMK sacred lanes — read-only advisory.",
+      "reads_from": ["data/z_autonomy_task_policy.json", "docs/AMK_AUTONOMOUS_APPROVAL_LADDER.md"],
+      "allowed_actions": ["label_lane", "cite_sacred_categories"],
+      "forbidden_actions": ["auto_approve_sacred", "execute_from_ui"],
+      "autonomy_level": "L1_REPORT",
+      "output_style": "auto_vs_sacred_bullets"
+    },
+    {
+      "role_id": "z_susbv_overseer",
+      "purpose": "Commercial benchmark readiness interpretation — no pricing writes.",
+      "reads_from": ["data/reports/z_susbv_overseer_report.json", "data/reports/z_susbv_validation_report.json"],
+      "allowed_actions": ["summarize_bands", "flag_public_pricing_hold"],
+      "forbidden_actions": ["live_research", "sku_write", "checkout"],
+      "autonomy_level": "L1_REPORT",
+      "output_style": "commercial_posture_note"
+    },
+    {
+      "role_id": "z_omnai_creative_advisor",
+      "purpose": "Creative readiness interpretation from OMNAI reports — internal review posture.",
+      "reads_from": [
+        "data/reports/z_omnai_build_plan_report.json",
+        "data/reports/z_omnai_master_media_seed_report.json",
+        "data/reports/z_omnai_media_letter_gate_report.json"
+      ],
+      "allowed_actions": ["summarize_signals", "letter_gate_hint"],
+      "forbidden_actions": ["media_generation", "public_publish", "provider_call"],
+      "autonomy_level": "L1_REPORT",
+      "output_style": "creative_lane_note"
+    },
+    {
+      "role_id": "z_ssws_workspace_spine",
+      "purpose": "Workspace and launch-requirements posture — metadata only.",
+      "reads_from": ["data/reports/z_ssws_launch_requirements_report.json", "data/reports/amk_cursor_workspace_profiles_report.json"],
+      "allowed_actions": ["summarize_launch_posture", "link_doorway"],
+      "forbidden_actions": ["server_start", "extension_install", "auto_launch"],
+      "autonomy_level": "L1_REPORT",
+      "output_style": "workspace_spine_bullets"
+    },
+    {
+      "role_id": "z_api_gate",
+      "purpose": "API gate posture reference — readiness charter and spine policy context.",
+      "reads_from": ["docs/Z_API_READINESS_AND_SMOKE_GATE.md", "data/z_api_spine_registry.json"],
+      "allowed_actions": ["cite_charter", "list_manual_smoke_strings"],
+      "forbidden_actions": ["live_probe", "dns_change", "mesh_deploy"],
+      "autonomy_level": "L0_OBSERVE",
+      "output_style": "reference_line"
+    },
+    {
+      "role_id": "z_api_spine",
+      "purpose": "API spine registry collision / posture reports when present.",
+      "reads_from": ["data/reports/z_api_spine_report.json"],
+      "allowed_actions": ["summarize_overall_signal_if_present"],
+      "forbidden_actions": ["gateway_bind", "token_write"],
+      "autonomy_level": "L1_REPORT",
+      "output_style": "optional_one_line"
+    },
+    {
+      "role_id": "vh100_security_shield",
+      "purpose": "VH100 doctrine slice — defensive posture reference in strategy text.",
+      "reads_from": ["docs/security/Z_VH100_VEGETA_HARISHA_SECURITY_CORE.md"],
+      "allowed_actions": ["cite_doctrine"],
+      "forbidden_actions": ["attack_tooling", "offensive_sim"],
+      "autonomy_level": "L0_OBSERVE",
+      "output_style": "doctrine_citation"
+    },
+    {
+      "role_id": "mcburb_backup_awareness",
+      "purpose": "MCBURB backup / reconvergence awareness — reference only.",
+      "reads_from": ["docs/security/Z_MCBURB_BACKUP_RECONVERGE_BOOSTER.md"],
+      "allowed_actions": ["cite_policy"],
+      "forbidden_actions": ["remote_nas_admin", "credential_access"],
+      "autonomy_level": "L0_OBSERVE",
+      "output_style": "doctrine_citation"
+    },
+    {
+      "role_id": "fbap_event_awareness",
+      "purpose": "FBAP fire-backs taxonomy awareness — reference only.",
+      "reads_from": ["docs/security/Z_FBAP_FIRE_BACKS_AWARENESS_PROTOCOL.md"],
+      "allowed_actions": ["cite_taxonomy"],
+      "forbidden_actions": ["auto_incident_response"],
+      "autonomy_level": "L0_OBSERVE",
+      "output_style": "doctrine_citation"
+    },
+    {
+      "role_id": "z_sage_warrior",
+      "purpose": "Advisory watcher for weak points and next-lane clarity — narrative discipline, not execution.",
+      "reads_from": ["data/reports/z_amk_gtai_strategy_report.json"],
+      "allowed_actions": ["clarity_question", "smallest_move_hint"],
+      "forbidden_actions": ["execute", "merge"],
+      "autonomy_level": "L1_REPORT",
+      "output_style": "short_advisory_questions"
+    },
+    {
+      "role_id": "eagleeye_observer",
+      "purpose": "EagleEye-style observation: cross-signal consistency check in prose — read-only.",
+      "reads_from": ["data/reports/z_amk_gtai_strategy_report.json", "data/reports/z_ecosystem_awareness_report.json"],
+      "allowed_actions": ["consistency_note"],
+      "forbidden_actions": ["notify_external", "auto_bridge"],
+      "autonomy_level": "L1_REPORT",
+      "output_style": "consistency_paragraph_optional"
+    }
+  ],
+  "signal_rules": {
+    "RED": "Something broken, unsafe, missing, or required gate failed. RED blocks movement; no new feature lane until root cause understood.",
+    "BLUE": "Technically tolerable but AMK/human decision required (deploy, billing, secrets, public, children/privacy, providers, bridges, Cloudflare, legal).",
+    "YELLOW": "Caution, optional gap, advisory drift — monitor; quiet unless repeated or tied to a required gate.",
+    "GREEN": "Safe internal baseline for next normal evidence lane — does not deploy.",
+    "GOLD": "Sealed baseline / rest state — hold, archive, breathe.",
+    "UNKNOWN": "Report missing or unread — not treated as RED unless a required gate file is missing (then YELLOW advisory)."
+  },
+  "decision_templates": {
+    "red_block": ["RED Summary", "Root cause hint", "Affected systems", "Immediate no-go", "Smallest fix", "Commands to verify", "Rollback note", "AMK decision needed? yes/no"],
+    "blue_brief": ["BLUE Decision Brief", "Decision required", "Options", "Risk of yes", "Risk of no", "Recommended safest option", "Human sign-off line"],
+    "yellow_note": ["YELLOW Observation", "Monitor or clean later", "Suggested small cleanup"],
+    "green_receipt": ["GREEN Receipt", "What passed", "What remains closed", "Next optional lane"]
+  },
+  "alert_policy": {
+    "default_notification_classes": ["RED", "BLUE"],
+    "yellow_escalation": "Repeat across 3+ daily strips or attachment to a required gate",
+    "green_gold_notify": false
+  },
+  "forbidden_actions": [
+    "live_ai_provider_call",
+    "deploy",
+    "billing_change",
+    "bridge_exec",
+    "auto_merge",
+    "secrets_read_or_write",
+    "nas_mount",
+    "server_auto_start",
+    "auto_fix_without_human"
+  ],
+  "related_docs": [
+    "docs/Z_AMK_GTAI_STRATEGY_COUNCIL.md",
+    "docs/PHASE_Z_AMK_GTAI_1_GREEN_RECEIPT.md",
+    "docs/Z_TRAFFIC_MINIBOTS.md",
+    "docs/AMK_AUTONOMOUS_APPROVAL_LADDER.md",
+    "docs/ZUNO_WEEKLY_FULL_RUN_AND_OBSERVATION.md"
+  ],
+  "related_reports": [
+    "data/reports/z_amk_gtai_strategy_report.json",
+    "data/reports/z_amk_gtai_strategy_report.md"
+  ],
+  "laws": [
+    "Strategy report ≠ execution.",
+    "Recommendation ≠ permission.",
+    "BLUE requires AMK.",
+    "RED blocks movement.",
+    "GREEN does not deploy.",
+    "YELLOW stays quiet unless escalated.",
+    "AMK-Goku owns sacred moves."
+  ]
+}

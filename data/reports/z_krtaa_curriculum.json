@@ -1,0 +1,442 @@
+{
+  "schema_version": "1.0",
+  "generated_at": "2026-04-23T17:07:24.574Z",
+  "governance_note": "Advisory curriculum only — Z-KRTAAO does not execute governance or deploy.",
+  "sources_used": [
+    "data/reports/z_system_coherence.json",
+    "data/reports/z_ai_signal_health.json",
+    "data/reports/z_system_health.json",
+    "data/reports/z_communication_health.json",
+    "data/reports/z_ai_consistency_alerts.json",
+    "data/reports/z_adaptive_coherence.json",
+    "data/reports/z_self_tuning.json",
+    "data/reports/z_experience_intelligence.json",
+    "data/reports/z_fusion_council.json",
+    "data/reports/z_ai_ecosphere_ledger.json",
+    "data/z_pc_root_projects.json",
+    "rules/Z_FORMULA_REGISTRY.json",
+    "data/logs/z_ai_learning_log.jsonl"
+  ],
+  "global_lessons": [
+    {
+      "id": "L-signal",
+      "text": "Increase real activity signal so STIL / EML / XIL are not blind: append learning events and real task log lines, then re-run garage or signal health.",
+      "citations": [
+        {
+          "type": "report",
+          "ref": "data/reports/z_ai_signal_health.json"
+        },
+        {
+          "type": "drp",
+          "ref": "docs/Z-DRP-VERIFIER-CHECKLIST.md (gates: truth, audibility)"
+        },
+        {
+          "type": "formula",
+          "ref": "rules/Z_FORMULA_REGISTRY.json (Ω / compassion anchor)"
+        },
+        {
+          "type": "doc",
+          "ref": "docs/Z-NEXT-ROADMAP-CURSOR-AUTO.md (Playbook A — FEED)"
+        }
+      ],
+      "confidence": "high",
+      "student_id": null
+    },
+    {
+      "id": "L-comms",
+      "text": "Restore observer freshness: run comms sync scripts and AAFRTC resolve so communication health stops penalizing coherence.",
+      "citations": [
+        {
+          "type": "report",
+          "ref": "data/reports/z_communication_health.json"
+        },
+        {
+          "type": "doc",
+          "ref": "docs/Z-NEXT-ROADMAP-CURSOR-AUTO.md (Phase COMMS)"
+        }
+      ],
+      "confidence": "high",
+      "student_id": null
+    },
+    {
+      "id": "L-coherence",
+      "text": "Treat misalignment as curriculum: resolve contradictions listed in coherence (signal vs structure, comms, consistency) before scaling new AI surfaces.",
+      "citations": [
+        {
+          "type": "report",
+          "ref": "data/reports/z_system_coherence.json"
+        }
+      ],
+      "confidence": "high",
+      "student_id": null
+    },
+    {
+      "id": "L-aci-risk",
+      "text": "ACI flags elevated risk — prioritize top recommended_actions in adaptive coherence (usually signal + comms first).",
+      "citations": [
+        {
+          "type": "report",
+          "ref": "data/reports/z_adaptive_coherence.json"
+        }
+      ],
+      "confidence": "medium",
+      "student_id": null
+    },
+    {
+      "id": "L-consistency",
+      "text": "Resolve or consciously accept each consistency alert; re-run ai:consistency:check after changes.",
+      "citations": [
+        {
+          "type": "report",
+          "ref": "data/reports/z_ai_consistency_alerts.json"
+        },
+        {
+          "type": "drp",
+          "ref": "docs/Z-DRP-VERIFIER-CHECKLIST.md"
+        }
+      ],
+      "confidence": "medium",
+      "student_id": null
+    },
+    {
+      "id": "L-stil-seed",
+      "text": "Self-tuning is still early — feed the learning log with real outcomes so strategies can rank (see ai:learning:flow).",
+      "citations": [
+        {
+          "type": "report",
+          "ref": "data/reports/z_self_tuning.json"
+        },
+        {
+          "type": "report",
+          "ref": "data/logs/z_ai_learning_log.jsonl"
+        },
+        {
+          "type": "doc",
+          "ref": "docs/Z-KRTAAO-DESIGN.md"
+        }
+      ],
+      "confidence": "high",
+      "student_id": null
+    },
+    {
+      "id": "L-xil",
+      "text": "Experience intelligence stays low-confidence until more grounded events exist — do not treat XIL as execution authority; use it as advisory prioritization only.",
+      "citations": [
+        {
+          "type": "report",
+          "ref": "data/reports/z_experience_intelligence.json"
+        },
+        {
+          "type": "drp",
+          "ref": "docs/Z-DRP-VERIFIER-CHECKLIST.md (pause threshold)"
+        }
+      ],
+      "confidence": "high",
+      "student_id": null
+    }
+  ],
+  "students": [
+    {
+      "id": "zsanctuary-universe",
+      "name": "ZSanctuary_Universe",
+      "role": "hub",
+      "path": "ZSanctuary_Universe",
+      "lessons": [
+        {
+          "id": "S-zsanctuary-universe-hub-verify",
+          "text": "Hub owns registry truth and verify playbooks — run structure + registry omni before promoting any sibling.",
+          "citations": [
+            {
+              "type": "report",
+              "ref": "data/z_pc_root_projects.json"
+            },
+            {
+              "type": "doc",
+              "ref": "docs/Z-NEXT-ROADMAP-CURSOR-AUTO.md"
+            }
+          ],
+          "confidence": "high",
+          "student_id": "zsanctuary-universe"
+        },
+        {
+          "id": "S-zsanctuary-universe-tower",
+          "text": "AI Tower agents in this repo should prefer observation and citation over auto-apply when signal_health is low (colony blueprint §6).",
+          "citations": [
+            {
+              "type": "doc",
+              "ref": "docs/Z-SSWS-ALL-PROJECTS-AND-AI-COLONY-BLUEPRINT.md"
+            },
+            {
+              "type": "report",
+              "ref": "data/reports/z_ai_signal_health.json"
+            }
+          ],
+          "confidence": "medium",
+          "student_id": "zsanctuary-universe"
+        }
+      ]
+    },
+    {
+      "id": "replit-roulette-z-amk-goku-mdcp",
+      "name": "Roulette Data Analyzer · Z-Amk-Goku MD/CP (Replit)",
+      "role": "external",
+      "path": "",
+      "lessons": [
+        {
+          "id": "S-replit-roulette-z-amk-goku-mdcp-external",
+          "text": "External / link-only project: keep EAII registry URL and notes truthful; no implied SSWS until path exists on disk.",
+          "citations": [
+            {
+              "type": "report",
+              "ref": "data/z_pc_root_projects.json"
+            },
+            {
+              "type": "drp",
+              "ref": "docs/Z-DRP-VERIFIER-CHECKLIST.md (truth, disclosure)"
+            }
+          ],
+          "confidence": "high",
+          "student_id": "replit-roulette-z-amk-goku-mdcp"
+        }
+      ]
+    },
+    {
+      "id": "amk-goku-dashboards-2",
+      "name": "Amk-Goku Dashboards 2",
+      "role": "member",
+      "path": "Amk-Goku Dashboards 2",
+      "lessons": [
+        {
+          "id": "S-amk-goku-dashboards-2-card",
+          "text": "Member project: maintain a filled capability card (template docs/Z-ECOSYSTEM-CAPABILITY-CARD-TEMPLATE.md) and keep formula_aware aligned with practice.",
+          "citations": [
+            {
+              "type": "doc",
+              "ref": "docs/Z-ECOSYSTEM-CAPABILITY-CARD-TEMPLATE.md"
+            },
+            {
+              "type": "report",
+              "ref": "data/reports/z_ecosystem_status.md"
+            }
+          ],
+          "confidence": "medium",
+          "student_id": "amk-goku-dashboards-2"
+        }
+      ]
+    },
+    {
+      "id": "amk-goku-vaults",
+      "name": "Amk-Goku Vaults",
+      "role": "member",
+      "path": "Amk-Goku Vaults",
+      "lessons": [
+        {
+          "id": "S-amk-goku-vaults-card",
+          "text": "Member project: maintain a filled capability card (template docs/Z-ECOSYSTEM-CAPABILITY-CARD-TEMPLATE.md) and keep formula_aware aligned with practice.",
+          "citations": [
+            {
+              "type": "doc",
+              "ref": "docs/Z-ECOSYSTEM-CAPABILITY-CARD-TEMPLATE.md"
+            },
+            {
+              "type": "report",
+              "ref": "data/reports/z_ecosystem_status.md"
+            }
+          ],
+          "confidence": "medium",
+          "student_id": "amk-goku-vaults"
+        }
+      ]
+    },
+    {
+      "id": "at-princess-blackie-copitol",
+      "name": "AT Princess & Blackie Copitol",
+      "role": "member",
+      "path": "AT Princess&Blackie Copitol",
+      "lessons": [
+        {
+          "id": "S-at-princess-blackie-copitol-card",
+          "text": "Member project: maintain a filled capability card (template docs/Z-ECOSYSTEM-CAPABILITY-CARD-TEMPLATE.md) and keep formula_aware aligned with practice.",
+          "citations": [
+            {
+              "type": "doc",
+              "ref": "docs/Z-ECOSYSTEM-CAPABILITY-CARD-TEMPLATE.md"
+            },
+            {
+              "type": "report",
+              "ref": "data/reports/z_ecosystem_status.md"
+            }
+          ],
+          "confidence": "medium",
+          "student_id": "at-princess-blackie-copitol"
+        }
+      ]
+    },
+    {
+      "id": "sister-aisling-sol",
+      "name": "Sister Aisling Sol",
+      "role": "member",
+      "path": "Z-Sister Aisling Sol",
+      "lessons": [
+        {
+          "id": "S-sister-aisling-sol-card",
+          "text": "Member project: maintain a filled capability card (template docs/Z-ECOSYSTEM-CAPABILITY-CARD-TEMPLATE.md) and keep formula_aware aligned with practice.",
+          "citations": [
+            {
+              "type": "doc",
+              "ref": "docs/Z-ECOSYSTEM-CAPABILITY-CARD-TEMPLATE.md"
+            },
+            {
+              "type": "report",
+              "ref": "data/reports/z_ecosystem_status.md"
+            }
+          ],
+          "confidence": "medium",
+          "student_id": "sister-aisling-sol"
+        }
+      ]
+    },
+    {
+      "id": "z-omni-sanctuary",
+      "name": "Z-OMNI-Sanctuary",
+      "role": "member",
+      "path": "Z-OMNI-Sanctuary",
+      "lessons": [
+        {
+          "id": "S-z-omni-sanctuary-card",
+          "text": "Member project: maintain a filled capability card (template docs/Z-ECOSYSTEM-CAPABILITY-CARD-TEMPLATE.md) and keep formula_aware aligned with practice.",
+          "citations": [
+            {
+              "type": "doc",
+              "ref": "docs/Z-ECOSYSTEM-CAPABILITY-CARD-TEMPLATE.md"
+            },
+            {
+              "type": "report",
+              "ref": "data/reports/z_ecosystem_status.md"
+            }
+          ],
+          "confidence": "medium",
+          "student_id": "z-omni-sanctuary"
+        }
+      ]
+    },
+    {
+      "id": "z-sanctuary-ai-skyscraper",
+      "name": "Z-SANCTUARY AI SKYSCRAPER",
+      "role": "member",
+      "path": "Z-SANCTUARY AI SKYSCRAPER",
+      "lessons": [
+        {
+          "id": "S-z-sanctuary-ai-skyscraper-card",
+          "text": "Member project: maintain a filled capability card (template docs/Z-ECOSYSTEM-CAPABILITY-CARD-TEMPLATE.md) and keep formula_aware aligned with practice.",
+          "citations": [
+            {
+              "type": "doc",
+              "ref": "docs/Z-ECOSYSTEM-CAPABILITY-CARD-TEMPLATE.md"
+            },
+            {
+              "type": "report",
+              "ref": "data/reports/z_ecosystem_status.md"
+            }
+          ],
+          "confidence": "medium",
+          "student_id": "z-sanctuary-ai-skyscraper"
+        },
+        {
+          "id": "S-z-sanctuary-ai-skyscraper-sky",
+          "text": "Skyscraper / tall-stack sibling: consume hub reports via static server or registry links; do not duplicate Overseer or AI Tower runtime.",
+          "citations": [
+            {
+              "type": "doc",
+              "ref": "docs/Z-SSWS-ALL-PROJECTS-AND-AI-COLONY-BLUEPRINT.md"
+            }
+          ],
+          "confidence": "medium",
+          "student_id": "z-sanctuary-ai-skyscraper"
+        }
+      ]
+    },
+    {
+      "id": "z-sanctuary-browser-z-saiyan-lumina",
+      "name": "Z-Sanctuary Browser (Z-Saiyan Lumina)",
+      "role": "member",
+      "path": "Z-Sanctuary Browser",
+      "lessons": [
+        {
+          "id": "S-z-sanctuary-browser-z-saiyan-lumina-card",
+          "text": "Member project: maintain a filled capability card (template docs/Z-ECOSYSTEM-CAPABILITY-CARD-TEMPLATE.md) and keep formula_aware aligned with practice.",
+          "citations": [
+            {
+              "type": "doc",
+              "ref": "docs/Z-ECOSYSTEM-CAPABILITY-CARD-TEMPLATE.md"
+            },
+            {
+              "type": "report",
+              "ref": "data/reports/z_ecosystem_status.md"
+            }
+          ],
+          "confidence": "medium",
+          "student_id": "z-sanctuary-browser-z-saiyan-lumina"
+        }
+      ]
+    },
+    {
+      "id": "z-sanctuary-claude-core",
+      "name": "Z-Sanctuary Claude (Core)",
+      "role": "member",
+      "path": "Z-Sanctuary Claude",
+      "lessons": [
+        {
+          "id": "S-z-sanctuary-claude-core-card",
+          "text": "Member project: maintain a filled capability card (template docs/Z-ECOSYSTEM-CAPABILITY-CARD-TEMPLATE.md) and keep formula_aware aligned with practice.",
+          "citations": [
+            {
+              "type": "doc",
+              "ref": "docs/Z-ECOSYSTEM-CAPABILITY-CARD-TEMPLATE.md"
+            },
+            {
+              "type": "report",
+              "ref": "data/reports/z_ecosystem_status.md"
+            }
+          ],
+          "confidence": "medium",
+          "student_id": "z-sanctuary-claude-core"
+        }
+      ]
+    },
+    {
+      "id": "z-sanctuary-aimanity",
+      "name": "z-sanctuary-aimanity",
+      "role": "member",
+      "path": "z-sanctuary-aimanity",
+      "lessons": [
+        {
+          "id": "S-z-sanctuary-aimanity-card",
+          "text": "Member project: maintain a filled capability card (template docs/Z-ECOSYSTEM-CAPABILITY-CARD-TEMPLATE.md) and keep formula_aware aligned with practice.",
+          "citations": [
+            {
+              "type": "doc",
+              "ref": "docs/Z-ECOSYSTEM-CAPABILITY-CARD-TEMPLATE.md"
+            },
+            {
+              "type": "report",
+              "ref": "data/reports/z_ecosystem_status.md"
+            }
+          ],
+          "confidence": "medium",
+          "student_id": "z-sanctuary-aimanity"
+        }
+      ]
+    }
+  ],
+  "low_confidence_notes": [],
+  "meta": {
+    "learning_log_lines": 0,
+    "formula_count": 1,
+    "formula_first_id": "z-combat-360",
+    "pam_bridge_present": false,
+    "json_out": "C:\\Cursor Projects Organiser\\ZSanctuary_Universe\\data\\reports\\z_krtaa_curriculum.json",
+    "md_out": "C:\\Cursor Projects Organiser\\ZSanctuary_Universe\\data\\reports\\z_krtaa_curriculum.md",
+    "ecosphere_sync": 74
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "generated_at": "2026-04-17T15:50:37.066Z",
+  "status": "created",
+  "dry_run": true,
+  "module_id": "bridge_router_v2",
+  "lane": "CHAT_ONLY",
+  "type": "draft",
+  "lab_root": "C:/Cursor Projects Organiser/ZSanctuary_Universe/Z_Labs",
+  "lab_policy": {
+    "mode": "internal-only",
+    "primary": "C:/Cursor Projects Organiser/ZSanctuary_Universe/Z_Labs",
+    "legacy_fallback": "C:/Cursor Projects Organiser/ZSanctuary_Universe/ZSanctuary_Labs",
+    "note": "Lab automation is restricted to in-repo lab roots to avoid cross-project linkage."
+  },
+  "module_path": "C:/Cursor Projects Organiser/ZSanctuary_Universe/Z_Labs/modules_draft/bridge_router_v2",
+  "files": [
+    "module_manifest.draft.json",
+    "README.md",
+    "notes/plan.md",
+    "checklists/promotion_checklist.md"
+  ],
+  "notes": [
+    "Dry-run only. No files were created."
+  ]
+}

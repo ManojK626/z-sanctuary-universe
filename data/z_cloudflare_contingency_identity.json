@@ -1,0 +1,25 @@
+{
+  "ZFormat": "v1",
+  "ZUpdatedAt": "2026-04-17T00:00:00.000Z",
+  "description": "Optional Cloudflare edge layer for Task 008 (Z-Bridge soft launch) and emergency read-only access. Hub authority remains PC/NAS + this repo. Do not commit Account ID, API tokens, or Wrangler secrets — use dashboard + local env only.",
+  "purpose": [
+    "Contingency: serve static/read-only Z-Bridge or dashboard mirrors when local SSWS is unreachable.",
+    "Soft launch: preview hosting per MONOREPO_GUIDE Task 008 without binding hub governance to Cloudflare production semantics."
+  ],
+  "operator_email_note": "Dashboard login aligns with data/z_ecosystem_github_identity.json (primary email).",
+  "edge": {
+    "workers_dev_subdomain": "manojkeerpal.workers.dev",
+    "account_id_policy": "Set in Wrangler / dashboard only; never commit plaintext Account ID to git unless repo is private and policy allows."
+  },
+  "dashboard_ui_refs": [
+    "Workers & Pages (empty project list is OK until first deploy)",
+    "Ask AI — navigation hints only; verify against hub docs",
+    "Third-party agent prompts (e.g. read-only API access) — minimum scope; rotate on doubt"
+  ],
+  "instructional_refs": [
+    "docs/Z-CLOUDFLARE-AI-COMMS-PRECAUTIONS.md",
+    "data/z_cloudflare_ai_comms_requirements.json",
+    "data/reports/z_cloudflare_ai_comms_manifest.json",
+    "MONOREPO_GUIDE.md (Cloudflare / Task 008)"
+  ]
+}

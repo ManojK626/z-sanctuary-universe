@@ -1,0 +1,25 @@
+{
+  "schema": "z_project_benchmark_capsule_v1",
+  "project_id": "z-questra",
+  "project_name": "Z-QUESTRA",
+  "pricing_owner": "z-questra",
+  "entitlement_owner": "z-questra",
+  "bridge_status": "reference_only",
+  "memory_status": "local_only",
+  "benchmark_posture": "local_non_commercial",
+  "services": [
+    {
+      "service_id": "z_questra_local_notebook",
+      "module_ids": ["z-questra-local-notebook"],
+      "service_name": "Z-QUESTRA Local Notebook",
+      "segment": "learning_tools",
+      "commercial_status": "not_commercial",
+      "benchmark_required": false,
+      "cost_floor_required": false,
+      "public_price_allowed": false,
+      "entitlement_status": "local_feature",
+      "related_docs": ["z-questra/README.md", "docs/z_zuno_technology_snapshot.md"],
+      "related_reports": ["data/reports/z_susbv_validation_report.json"]
+    }
+  ]
+}

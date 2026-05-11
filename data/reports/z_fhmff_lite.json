@@ -1,0 +1,67 @@
+{
+  "schema_version": 1,
+  "generated_at": "2026-04-24T11:20:23.082Z",
+  "name": "Z-FHMFF Lite",
+  "advisory": true,
+  "governance_note": "Observer-only. No auto-fix, no freeze of processes, no override of enforcer, manual_release, or DRP. Containment = human/operator action.",
+  "rtro_pairing": {
+    "report": "data/reports/z_traffic_intelligence.json",
+    "role_rtro": "where_to_focus (priority lane, bottleneck)",
+    "role_fhmff": "what_is_frozen_or_cold (zones + hibernate candidates)"
+  },
+  "system_state": "partially_frozen",
+  "confidence": "high",
+  "frozen_zones": [
+    {
+      "component": "z_self_tuning",
+      "status": "inactive",
+      "learning_cycles": 0,
+      "impact": "medium",
+      "recommendation": "feed_learning",
+      "hint": "Append to learning log; run garage full scan to refresh STIL (observational only)."
+    },
+    {
+      "component": "z_experience_memory",
+      "status": "inactive",
+      "patterns_detected": 0,
+      "impact": "low",
+      "recommendation": "feed_learning",
+      "hint": "Optional: ai:learning:flow per docs—does not auto-execute."
+    },
+    {
+      "component": "z_communication_health",
+      "status": "flow_constrained",
+      "flow_status": "degraded",
+      "impact": "high",
+      "recommendation": "stabilize_comms",
+      "hint": "Whale Bus comms deck; ecosystem commflow verify — read-only until governance green where applicable."
+    },
+    {
+      "component": "z_ai_signal_health",
+      "status": "cold_signal",
+      "impact": "medium",
+      "recommendation": "feed_signal",
+      "hint": "Creator/business log activity — advisory; does not auto-post."
+    }
+  ],
+  "hibernate_candidates": [
+    {
+      "component": "module_registry_planned",
+      "count": 16,
+      "reason": "large planned backlog can starve focus",
+      "recommendation": "deprioritize_or_triage",
+      "hint": "Registry triage; no auto-archive."
+    },
+    {
+      "component": "priority_alignment",
+      "reason": "RTRO bottleneck=commflow — deprioritize broad learning until flow improves",
+      "recommendation": "align_with_traffic",
+      "hint": "See z_traffic_intelligence.json priority_lane"
+    }
+  ],
+  "counts": {
+    "frozen": 4,
+    "hibernate": 2,
+    "high_impact": 1
+  }
+}

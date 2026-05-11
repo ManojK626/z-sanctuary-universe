@@ -1,0 +1,34 @@
+{
+  "schema": "z_susbv_overseer_report_v1",
+  "generated_at": "2026-05-03T18:51:22.498Z",
+  "overseer_signal": "YELLOW",
+  "phase": "ZSUSBV-O1",
+  "counts": {
+    "red": 0,
+    "yellow": 1,
+    "blue": 0
+  },
+  "flags": {
+    "red": [],
+    "yellow": [
+      "ZSanctuary_Universe:optional_capsule_not_declared"
+    ],
+    "blue": []
+  },
+  "capsule_checks": [
+    {
+      "project_id": "z-questra",
+      "capsule_path": "z-questra/data/z_project_benchmark_capsule.json",
+      "services_checked": 1
+    }
+  ],
+  "inputs": {
+    "registry": "data/z_susbv_benchmark_registry.json",
+    "validation": "data/z_susbv_service_price_validation.json",
+    "module_map": "data/z_susbv_module_to_service_map.json",
+    "index": "data/z_susbv_project_benchmark_index.json",
+    "policy": "data/z_susbv_overseer_policy.json",
+    "global_registry": "data/z_susbv_global_market_comparison_registry.json"
+  },
+  "note": "Z-SUSBV-O advises; AMK/human decides pricing, SKUs, research charter, and public claims. Z-Spiral Scout is future-governed research only."
+}

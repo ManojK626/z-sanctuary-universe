@@ -1,0 +1,36 @@
+{
+  "generated_at": "2026-02-13T19:20:32.198Z",
+  "product": "Z-OCTAVE",
+  "ready": false,
+  "gates": [
+    {
+      "id": "core_stability",
+      "label": "Core stability",
+      "pass": false,
+      "note": "Awaiting stability hold"
+    },
+    {
+      "id": "ethics_lock",
+      "label": "Ethics lock",
+      "pass": false,
+      "note": "Crisis Charter pending final"
+    },
+    {
+      "id": "pilot_ready",
+      "label": "Pilot readiness",
+      "pass": false,
+      "note": "Pilot folders seeded; awaiting data"
+    },
+    {
+      "id": "governance_signal",
+      "label": "SKK/RKPK green",
+      "pass": false,
+      "note": "Awaiting first guardian pass"
+    }
+  ],
+  "overrides": {
+    "updated_at": "2026-02-06T00:00:00Z"
+  },
+  "base_ready": false,
+  "pilot_seed": true
+}

@@ -1,0 +1,39 @@
+{
+  "ZFormat": "v1",
+  "ZUpdatedAt": "2026-04-18T00:00:00.000Z",
+  "title": "Multi-option AI proposals — merge / select / route hints",
+  "stages": [
+    "capture",
+    "compare",
+    "decide",
+    "record",
+    "implement"
+  ],
+  "decision_modes": [
+    {
+      "id": "merge",
+      "summary": "Blend compatible parts into one spec + one implementation branch"
+    },
+    {
+      "id": "select",
+      "summary": "Choose one option; defer others with explicit note in register or lab"
+    },
+    {
+      "id": "route",
+      "summary": "Send each option to the owning multi-root project per Hierarchy Chief"
+    }
+  ],
+  "authority_docs": [
+    "docs/Z-HIERARCHY-CHIEF-AND-OBSERVER-VIEW.md",
+    "docs/Z-AI-MULTI-OPTION-MERGE-GUIDE.md",
+    "docs/Z-MASTER-MODULES-REGISTER.md"
+  ],
+  "registry_touchpoints": [
+    "data/z_pc_root_projects.json",
+    "data/z_module_manifest.json"
+  ],
+  "verification_after_hub_change": [
+    "npm run verify:ci",
+    "npm run aafrtc:ci"
+  ]
+}

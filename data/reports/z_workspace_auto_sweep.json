@@ -1,0 +1,108 @@
+{
+  "generated_at": "2026-03-18T19:44:17.140Z",
+  "status": "green",
+  "workspace": "CORE",
+  "role": "production",
+  "totals": {
+    "checks": 8,
+    "passed": 8,
+    "failed": 0
+  },
+  "summary": "all checks passed",
+  "checks": [
+    {
+      "id": "workspace_guard",
+      "title": "Multi-Workspace Guard",
+      "ok": true,
+      "command": "C:\\Program Files\\nodejs\\node.exe scripts/z_multi_workspace_guard.mjs",
+      "exit_code": 0,
+      "started_at": "2026-03-18T19:44:15.631Z",
+      "ended_at": "2026-03-18T19:44:15.704Z",
+      "stdout": "Z multi-workspace guard passed: C:\\Cursor Projects Organiser\\ZSanctuary_Universe\\data\\reports\\z_multi_workspace_guard.json",
+      "stderr": ""
+    },
+    {
+      "id": "extension_guard",
+      "title": "VS Code Extension Guard",
+      "ok": true,
+      "command": "C:\\Program Files\\nodejs\\node.exe scripts/z_extension_guard.mjs",
+      "exit_code": 0,
+      "started_at": "2026-03-18T19:44:15.704Z",
+      "ended_at": "2026-03-18T19:44:16.000Z",
+      "stdout": "✅ Extension guard written: C:\\Cursor Projects Organiser\\ZSanctuary_Universe\\data\\reports\\z_extension_guard.json",
+      "stderr": ""
+    },
+    {
+      "id": "web_readiness",
+      "title": "Web Readiness Check",
+      "ok": true,
+      "command": "C:\\Program Files\\nodejs\\node.exe scripts/z_web_readiness_check.mjs",
+      "exit_code": 0,
+      "started_at": "2026-03-18T19:44:16.000Z",
+      "ended_at": "2026-03-18T19:44:16.265Z",
+      "stdout": "Z web readiness check written: C:\\Cursor Projects Organiser\\ZSanctuary_Universe\\data\\reports\\z_web_readiness_check.json",
+      "stderr": ""
+    },
+    {
+      "id": "lab_task_guard",
+      "title": "Lab Task Structure Guard",
+      "ok": true,
+      "command": "C:\\Program Files\\nodejs\\node.exe scripts/z_lab_task_structure_guard.mjs",
+      "exit_code": 0,
+      "started_at": "2026-03-18T19:44:16.265Z",
+      "ended_at": "2026-03-18T19:44:16.348Z",
+      "stdout": "Z lab task structure guard passed: C:\\Cursor Projects Organiser\\ZSanctuary_Universe\\data\\reports\\z_lab_task_structure_guard.json",
+      "stderr": ""
+    },
+    {
+      "id": "workspace_timeguard",
+      "title": "Workspace Timeguard",
+      "ok": true,
+      "command": "C:\\Program Files\\nodejs\\node.exe scripts/z_vscode_timeguard.mjs",
+      "exit_code": 0,
+      "started_at": "2026-03-18T19:44:16.349Z",
+      "ended_at": "2026-03-18T19:44:16.889Z",
+      "stdout": "Z VS Code Time Guard passed.",
+      "stderr": ""
+    },
+    {
+      "id": "slo_guard",
+      "title": "SLO Guard",
+      "ok": false,
+      "command": "C:\\Program Files\\nodejs\\node.exe scripts/z_slo_guard.mjs",
+      "exit_code": 1,
+      "started_at": "2026-03-18T19:44:16.889Z",
+      "ended_at": "2026-03-18T19:44:16.955Z",
+      "stdout": "Z SLO guard written: C:\\Cursor Projects Organiser\\ZSanctuary_Universe\\data\\reports\\z_slo_guard.json",
+      "stderr": ""
+    },
+    {
+      "id": "provenance_check",
+      "title": "Provenance Check",
+      "ok": true,
+      "command": "C:\\Program Files\\nodejs\\node.exe scripts/z_provenance_check.mjs",
+      "exit_code": 0,
+      "started_at": "2026-03-18T19:44:16.955Z",
+      "ended_at": "2026-03-18T19:44:17.022Z",
+      "stdout": "Z provenance check written: C:\\Cursor Projects Organiser\\ZSanctuary_Universe\\data\\reports\\z_provenance_check.json",
+      "stderr": ""
+    },
+    {
+      "id": "incident_triage",
+      "title": "Incident Triage",
+      "ok": true,
+      "command": "C:\\Program Files\\nodejs\\node.exe scripts/z_incident_triage.mjs",
+      "exit_code": 0,
+      "started_at": "2026-03-18T19:44:17.022Z",
+      "ended_at": "2026-03-18T19:44:17.081Z",
+      "stdout": "Incident triage complete: 0 new",
+      "stderr": ""
+    }
+  ],
+  "broadcast": {
+    "ok": true,
+    "command": "C:\\Program Files\\nodejs\\node.exe scripts/z_workspace_broadcast_publish.mjs --notice=CORE auto-sweep GREEN: all checks passed --version=0.2 --impact=low --review=false",
+    "exit_code": 0,
+    "stderr": ""
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "ZGeneratedAt": "2026-02-02T15:55:00Z",
+  "ZTasks": [
+    { "ZId": "vault-audit", "ZTitle": "Vault audit", "ZStatus": "active" },
+    { "ZId": "ssws-sync", "ZTitle": "SSWS sync checks", "ZStatus": "active" },
+    { "ZId": "safe-pack", "ZTitle": "Safe Pack review", "ZStatus": "pending" },
+    { "ZId": "z-rhythm", "ZTitle": "Z-Rhythm alignment", "ZStatus": "planned" }
+  ]
+}

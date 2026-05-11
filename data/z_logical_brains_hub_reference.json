@@ -1,0 +1,39 @@
+{
+  "schema": "z.logical_brains.hub_reference.v1",
+  "phase": "Z-LOGICAL-BRAINS-HUB-1",
+  "project_id": "zsanctuary_labs",
+  "module_id": "z_logical_brains_learning_pathway",
+  "source_evidence": {
+    "handoff_doc": "C:\\Cursor Projects Organiser\\Z_Sanctuary_Universe\\ZSanctuary_Labs\\docs\\Z_LOGICAL_BRAINS_HUB_HANDOFF.md",
+    "capsule_json": "C:\\Cursor Projects Organiser\\Z_Sanctuary_Universe\\ZSanctuary_Labs\\data\\z_logical_brains_hub_capsule.json",
+    "labs_signal_source": "C:\\Cursor Projects Organiser\\Z_Sanctuary_Universe\\ZSanctuary_Labs\\data\\reports\\z_logical_brains_report.json"
+  },
+  "go_no_go": "NON_CLINICAL_PLANNING_ONLY",
+  "public_release": "NO_GO",
+  "runtime_bridge_enabled": false,
+  "deploy_enabled": false,
+  "provider_enabled": false,
+  "child_data_collection_enabled": false,
+  "future_gated_lanes": [
+    "secure_vault_runtime",
+    "personal_ai_memory",
+    "cloud_sync",
+    "teacher_dashboard",
+    "parent_dashboard",
+    "voice_input",
+    "live_ai_provider",
+    "multiplayer_classroom"
+  ],
+  "locked_law": [
+    "Logical Brains != medical device.",
+    "Learning pathway != diagnosis.",
+    "Self-reflection != therapy.",
+    "Future planning != prediction.",
+    "Labs GREEN != public release.",
+    "Hub capsule != runtime bridge.",
+    "GREEN != deploy.",
+    "BLUE requires AMK.",
+    "RED blocks movement.",
+    "AMK-Goku owns sacred moves."
+  ]
+}

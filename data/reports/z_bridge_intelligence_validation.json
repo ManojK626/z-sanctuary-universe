@@ -1,0 +1,8 @@
+{
+  "generated_at": "2026-04-17T19:43:12.776Z",
+  "gate": "intelligence",
+  "status": "PASS",
+  "delegate": "scripts/z_bridge/z_intelligence_regression.mjs",
+  "exit_code": 0,
+  "stderr_tail": ""
+}

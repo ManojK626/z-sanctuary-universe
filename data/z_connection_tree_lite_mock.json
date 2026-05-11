@@ -1,0 +1,57 @@
+{
+  "content_class": "mock_demo_only",
+  "privacy_mode": "consent_first",
+  "nodes": [
+    {
+      "node_id": "root-legacy-01",
+      "display_name": "Legacy seed (alias)",
+      "avatar_symbol": "🌳",
+      "join_era": "Era A — mock",
+      "region_label": "Coastal region (alias only)",
+      "visibility": "public_alias",
+      "invited_by_node_id": null,
+      "branches_created_count": 3,
+      "contribution_note": "Example only — no real people or places."
+    },
+    {
+      "node_id": "branch-ledger-02",
+      "display_name": "Quiet steward (alias)",
+      "avatar_symbol": "🛡️",
+      "join_era": "Era B — mock",
+      "region_label": "Inland hills (alias only)",
+      "visibility": "public_alias",
+      "invited_by_node_id": "root-legacy-01",
+      "branches_created_count": 1,
+      "contribution_note": "Supported calm onboarding rituals — fictional."
+    },
+    {
+      "node_id": "branch-witness-03",
+      "display_name": "Witness node (hidden)",
+      "avatar_symbol": "🫂",
+      "join_era": "Era B — mock",
+      "region_label": "Withheld in mock",
+      "visibility": "hidden",
+      "invited_by_node_id": "root-legacy-01",
+      "branches_created_count": 0,
+      "contribution_note": "Hidden visibility example — no exact location stored."
+    },
+    {
+      "node_id": "private-note-04",
+      "display_name": "Private memory slot",
+      "avatar_symbol": "✨",
+      "join_era": "Era C — mock",
+      "region_label": "Not disclosed",
+      "visibility": "private",
+      "invited_by_node_id": "branch-ledger-02",
+      "branches_created_count": 0,
+      "contribution_note": "Private branch — mock placeholder only."
+    }
+  ],
+  "ethics": {
+    "opt-in-only": true,
+    "anonymized-public-nodes": true,
+    "no-rank-pressure": true,
+    "delete-or-hide-anytime": true
+  },
+  "next_action": "When a real system exists: wire consent flow first; keep this file mock-only until policy sign-off."
+}

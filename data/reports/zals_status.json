@@ -1,0 +1,14 @@
+{
+  "generated_at": "2026-03-30T17:31:54.769411Z",
+  "mode": "DRY_RUN",
+  "queue_length": 0,
+  "node_count": 2,
+  "pressure": 0.2316,
+  "metrics": {
+    "timestamp": "2026-03-30T17:31:54.769794Z",
+    "cpu_percent": 13.6,
+    "ram_percent": 37.5,
+    "ram_available_mb": 39495.13
+  },
+  "simulated_assignments": []
+}

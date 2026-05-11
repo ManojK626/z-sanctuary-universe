@@ -1,0 +1,96 @@
+{
+  "schema": "z_sec_triplecheck_policy_v1",
+  "policy_name": "Z-SEC-TRIPLECHECK Communication Flow + Safety Drift Audit",
+  "mode": "read_only_audit",
+  "required_reports": [
+    "data/reports/z_ide_fusion_report.json",
+    "data/reports/z_traffic_minibots_status.json"
+  ],
+  "optional_reports": [
+    "data/reports/amk_workspace_doorway_status.json",
+    "data/reports/amk_cursor_workspace_profiles_report.json",
+    "data/reports/z_ssws_launch_requirements_report.json",
+    "data/reports/z_api_readiness_report.json",
+    "data/reports/z_api_spine_report.json",
+    "data/reports/z_amk_gtai_strategy_report.json",
+    "data/reports/z_swarm_14drp_report.json"
+  ],
+  "optional_report_expectations": {
+    "data/reports/z_api_readiness_report.json": {
+      "expected_when": "z_api_gate_lane_enabled",
+      "default_state": "not_expected",
+      "classification_when_missing": "INFO_OPTIONAL"
+    }
+  },
+  "path_safety_rules": {
+    "forbidden_roots_contains": [".cursor/projects"],
+    "forbidden_package_scan_root": "C:/Users/manoj/.cursor/projects"
+  },
+  "communication_alignment_rules": [
+    "fusion signal and active session status must align with available session/handoff evidence",
+    "indicator rows with dynamic overlays should not claim static GREEN when paired report is missing",
+    "traffic indicator claim should not contradict report overall signal without explanatory note"
+  ],
+  "project_identity_rules": [
+    "Franed != Aisling-Sol",
+    "Lumina != Franed",
+    "Z-OMNAI != public release",
+    "XL2 is reference-only unless chartered",
+    "shared style != shared pricing/entitlement/backend"
+  ],
+  "forbidden_lane_rules": [
+    "deploy",
+    "billing/pricing",
+    "secrets/api keys",
+    "provider calls",
+    "live bridges",
+    "child data",
+    "voice/camera/gps",
+    "auto-launch",
+    "cloudflare/dns"
+  ],
+  "mr_bug_mini_fixer_policy": {
+    "posture": "detect_classify_recommend_docs_hygiene_only",
+    "allowed_auto_fix": [
+      "markdown table spacing",
+      "trailing spaces",
+      "missing final newline",
+      "generated read-only reports",
+      "local docs link hygiene if unambiguous"
+    ],
+    "forbidden_auto_fix": [
+      "security logic",
+      "auth",
+      "pricing",
+      "billing",
+      "secrets",
+      "deployment",
+      "api routes",
+      "user data handling",
+      "child-facing flows",
+      "provider integrations"
+    ]
+  },
+  "signal_rules": {
+    "GREEN": "Required communication/report/path checks align.",
+    "YELLOW": "Optional report missing or mild stale evidence.",
+    "BLUE": "AMK decision required.",
+    "RED": "Wrong root, forbidden lane opened, or contradictory GREEN claim.",
+    "UNKNOWN": "Insufficient evidence but no hard contradiction."
+  },
+  "stale_threshold_hours": 48,
+  "related_docs": [
+    "docs/Z_SEC_TRIPLECHECK_COMMUNICATION_FLOW_AUDIT.md",
+    "docs/Z_MR_BUG_MINI_FIXER_POLICY.md",
+    "docs/Z_IDE_FUSION_WORKFLOW_CONTROL.md",
+    "docs/VS_FALLBACK_1_VSCODE_OPERATING_MODE.md",
+    "docs/Z_SWARM_14DRP_UNIVERSAL_AGENT_LAW.md",
+    "docs/Z_TRAFFIC_MINIBOTS.md"
+  ],
+  "related_reports": [
+    "data/reports/z_sec_triplecheck_report.json",
+    "data/reports/z_sec_triplecheck_report.md",
+    "data/reports/z_ide_fusion_report.json",
+    "data/reports/z_traffic_minibots_status.json"
+  ]
+}

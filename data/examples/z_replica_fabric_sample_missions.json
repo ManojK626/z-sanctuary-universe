@@ -1,0 +1,107 @@
+{
+  "schema": "z_replica_fabric_sample_missions_v1",
+  "description": "Advisory missions for validator classification only — not executed by the hub.",
+  "missions": [
+    {
+      "mission_id": "rf_doc_hygiene_main_hub",
+      "project_id": "main_hub",
+      "replica_class": "docs_checker",
+      "allowed_outputs": ["reports", "docs", "recommendations"],
+      "forbidden_actions": ["runtime_self_replication", "autonomous_deploy", "provider_call"],
+      "rollback_note": "Discard working branch; restore docs from last receipt-tagged commit.",
+      "AMK_gate": "not_required",
+      "proposal_flags": { "persistent_replica": false, "external_connector_lane": false },
+      "execution_risk": {}
+    },
+    {
+      "mission_id": "rf_xbus_route_suggestion",
+      "project_id": "Z-XBUS",
+      "replica_class": "connector_classifier",
+      "allowed_outputs": ["route_suggestions", "risk_classifications", "reports"],
+      "forbidden_actions": ["production_connector", "external_webhook", "provider_call"],
+      "rollback_note": "Remove draft classification JSON; no registry mutation without separate gate run.",
+      "AMK_gate": "advisory_only",
+      "proposal_flags": { "persistent_replica": false, "external_connector_lane": false },
+      "execution_risk": {}
+    },
+    {
+      "mission_id": "rf_mod_dist_alignment",
+      "project_id": "Z-MOD-DIST",
+      "replica_class": "module_router",
+      "allowed_outputs": ["mock_plans", "schemas", "recommendations"],
+      "forbidden_actions": ["auto_merge", "file_system_sprawl"],
+      "rollback_note": "Revert sample routing JSON if experiment abandoned.",
+      "AMK_gate": "advisory_only",
+      "proposal_flags": { "persistent_replica": false, "external_connector_lane": false },
+      "execution_risk": {}
+    },
+    {
+      "mission_id": "rf_yellow_incomplete_note",
+      "project_id": "z-questra",
+      "replica_class": "creative_planner",
+      "allowed_outputs": ["mock_plans", "schemas"],
+      "forbidden_actions": ["payment_activation", "autonomous_deploy"],
+      "rollback_note": "",
+      "AMK_gate": "advisory_only",
+      "proposal_flags": { "persistent_replica": false, "external_connector_lane": false },
+      "execution_risk": {}
+    },
+    {
+      "mission_id": "rf_blue_persistent_replica_ask",
+      "project_id": "Z-OMNAI",
+      "replica_class": "creative_planner",
+      "allowed_outputs": ["reports", "recommendations", "mock_plans"],
+      "forbidden_actions": ["runtime_self_replication", "provider_call", "autonomous_deploy"],
+      "rollback_note": "Close proposal doc; keep hub in doctrine-only mode until AMK charter.",
+      "AMK_gate": "required_before_persistent_replica",
+      "proposal_flags": { "persistent_replica": true, "external_connector_lane": false },
+      "execution_risk": {}
+    },
+    {
+      "mission_id": "rf_sec_drift_watch",
+      "project_id": "main_hub",
+      "replica_class": "security_drift_watcher",
+      "allowed_outputs": ["reports", "risk_classifications"],
+      "forbidden_actions": ["secret_write", "production_connector"],
+      "rollback_note": "Archive drift note; rely on triplecheck report as authority.",
+      "AMK_gate": "not_required",
+      "proposal_flags": { "persistent_replica": false, "external_connector_lane": false },
+      "execution_risk": {}
+    },
+    {
+      "mission_id": "rf_blue_external_lane_ask",
+      "project_id": "main_hub",
+      "replica_class": "command_center_guide",
+      "allowed_outputs": ["recommendations", "route_suggestions"],
+      "forbidden_actions": ["external_webhook", "production_connector"],
+      "rollback_note": "Withdraw connector sketch; register under Z-XBUS only after AMK decision.",
+      "AMK_gate": "required_before_external_lane",
+      "proposal_flags": { "persistent_replica": false, "external_connector_lane": true },
+      "execution_risk": {}
+    },
+    {
+      "mission_id": "rf_unknown_project_optional",
+      "project_id": "Future_Sandbox_Not_Mapped_Yet",
+      "replica_class": "project_reviewer",
+      "allowed_outputs": ["reports"],
+      "forbidden_actions": ["runtime_self_replication"],
+      "rollback_note": "Add project_mappings entry before treating as GREEN.",
+      "AMK_gate": "advisory_only",
+      "proposal_flags": { "persistent_replica": false, "external_connector_lane": false },
+      "execution_risk": {}
+    }
+  ],
+  "fixture_missions": [
+    {
+      "mission_id": "rf_fixture_red_live_clone_blocked",
+      "project_id": "main_hub",
+      "replica_class": "docs_checker",
+      "allowed_outputs": ["reports"],
+      "forbidden_actions": ["runtime_self_replication"],
+      "rollback_note": "Fixture only — must never ship enabled.",
+      "AMK_gate": "not_required",
+      "proposal_flags": { "persistent_replica": false, "external_connector_lane": false },
+      "execution_risk": { "runtime_self_replication": true }
+    }
+  ]
+}

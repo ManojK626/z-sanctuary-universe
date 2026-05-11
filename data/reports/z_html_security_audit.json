@@ -1,0 +1,463 @@
+{
+  "generated_at": "2026-02-17T13:56:58.645311Z",
+  "checked": 76,
+  "updated": ["apps/z_gadget_mirrors/ui_web_portal/index.html"],
+  "results": [
+    {
+      "file": "Amk_Goku Worldwide Loterry/index.html",
+      "has_accessibility": true,
+      "needs_security_gate": false,
+      "has_security_gate": false
+    },
+    {
+      "file": "core/dashboard_snippet.html",
+      "has_accessibility": true,
+      "needs_security_gate": true,
+      "has_security_gate": true
+    },
+    {
+      "file": "core/index.html",
+      "has_accessibility": true,
+      "needs_security_gate": true,
+      "has_security_gate": true
+    },
+    {
+      "file": "dashboard/index.html",
+      "has_accessibility": true,
+      "needs_security_gate": true,
+      "has_security_gate": true
+    },
+    {
+      "file": "safe_pack/z_sanctuary_vault/folder_manager/snapshots/2026-02-15T17-47-08-878Z/core/dashboard_snippet.html",
+      "has_accessibility": true,
+      "needs_security_gate": false,
+      "has_security_gate": true
+    },
+    {
+      "file": "safe_pack/z_sanctuary_vault/folder_manager/snapshots/2026-02-15T17-47-08-878Z/core/index.html",
+      "has_accessibility": true,
+      "needs_security_gate": false,
+      "has_security_gate": true
+    },
+    {
+      "file": "safe_pack/z_sanctuary_vault/folder_manager/snapshots/2026-02-15T17-47-08-878Z/docs/public/snapshot/index.html",
+      "has_accessibility": true,
+      "needs_security_gate": false,
+      "has_security_gate": false
+    },
+    {
+      "file": "safe_pack/z_sanctuary_vault/folder_manager/snapshots/2026-02-15T17-46-40-031Z/core/dashboard_snippet.html",
+      "has_accessibility": true,
+      "needs_security_gate": false,
+      "has_security_gate": true
+    },
+    {
+      "file": "safe_pack/z_sanctuary_vault/folder_manager/snapshots/2026-02-15T17-46-40-031Z/core/index.html",
+      "has_accessibility": true,
+      "needs_security_gate": false,
+      "has_security_gate": true
+    },
+    {
+      "file": "safe_pack/z_sanctuary_vault/folder_manager/snapshots/2026-02-15T17-46-40-031Z/docs/public/snapshot/index.html",
+      "has_accessibility": true,
+      "needs_security_gate": false,
+      "has_security_gate": false
+    },
+    {
+      "file": "safe_pack/z_sanctuary_vault/folder_manager/snapshots/2026-02-15T15-36-01-360Z/core/dashboard_snippet.html",
+      "has_accessibility": true,
+      "needs_security_gate": false,
+      "has_security_gate": true
+    },
+    {
+      "file": "safe_pack/z_sanctuary_vault/folder_manager/snapshots/2026-02-15T15-36-01-360Z/core/index.html",
+      "has_accessibility": true,
+      "needs_security_gate": false,
+      "has_security_gate": true
+    },
+    {
+      "file": "safe_pack/z_sanctuary_vault/folder_manager/snapshots/2026-02-15T15-36-01-360Z/docs/public/snapshot/index.html",
+      "has_accessibility": true,
+      "needs_security_gate": false,
+      "has_security_gate": false
+    },
+    {
+      "file": "safe_pack/z_sanctuary_vault/folder_manager/snapshots/2026-02-15T15-35-40-495Z/core/dashboard_snippet.html",
+      "has_accessibility": true,
+      "needs_security_gate": false,
+      "has_security_gate": true
+    },
+    {
+      "file": "safe_pack/z_sanctuary_vault/folder_manager/snapshots/2026-02-15T15-35-40-495Z/core/index.html",
+      "has_accessibility": true,
+      "needs_security_gate": false,
+      "has_security_gate": true
+    },
+    {
+      "file": "safe_pack/z_sanctuary_vault/folder_manager/snapshots/2026-02-15T15-35-40-495Z/docs/public/snapshot/index.html",
+      "has_accessibility": true,
+      "needs_security_gate": false,
+      "has_security_gate": false
+    },
+    {
+      "file": "safe_pack/z_sanctuary_vault/folder_manager/snapshots/2026-02-14T19-12-33-571Z/core/dashboard_snippet.html",
+      "has_accessibility": true,
+      "needs_security_gate": false,
+      "has_security_gate": true
+    },
+    {
+      "file": "safe_pack/z_sanctuary_vault/folder_manager/snapshots/2026-02-14T19-12-33-571Z/core/index.html",
+      "has_accessibility": true,
+      "needs_security_gate": false,
+      "has_security_gate": true
+    },
+    {
+      "file": "safe_pack/z_sanctuary_vault/folder_manager/snapshots/2026-02-14T19-12-33-571Z/docs/public/snapshot/index.html",
+      "has_accessibility": true,
+      "needs_security_gate": false,
+      "has_security_gate": false
+    },
+    {
+      "file": "safe_pack/z_sanctuary_vault/folder_manager/snapshots/2026-02-14T19-12-08-164Z/core/dashboard_snippet.html",
+      "has_accessibility": true,
+      "needs_security_gate": false,
+      "has_security_gate": true
+    },
+    {
+      "file": "safe_pack/z_sanctuary_vault/folder_manager/snapshots/2026-02-14T19-12-08-164Z/core/index.html",
+      "has_accessibility": true,
+      "needs_security_gate": false,
+      "has_security_gate": true
+    },
+    {
+      "file": "safe_pack/z_sanctuary_vault/folder_manager/snapshots/2026-02-14T19-12-08-164Z/docs/public/snapshot/index.html",
+      "has_accessibility": true,
+      "needs_security_gate": false,
+      "has_security_gate": false
+    },
+    {
+      "file": "safe_pack/z_sanctuary_vault/folder_manager/snapshots/2026-02-14T10-21-52-405Z/core/dashboard_snippet.html",
+      "has_accessibility": true,
+      "needs_security_gate": false,
+      "has_security_gate": true
+    },
+    {
+      "file": "safe_pack/z_sanctuary_vault/folder_manager/snapshots/2026-02-14T10-21-52-405Z/core/index.html",
+      "has_accessibility": true,
+      "needs_security_gate": false,
+      "has_security_gate": true
+    },
+    {
+      "file": "safe_pack/z_sanctuary_vault/folder_manager/snapshots/2026-02-14T10-21-52-405Z/docs/public/snapshot/index.html",
+      "has_accessibility": true,
+      "needs_security_gate": false,
+      "has_security_gate": false
+    },
+    {
+      "file": "safe_pack/z_sanctuary_vault/folder_manager/snapshots/2026-02-14T10-21-36-501Z/core/dashboard_snippet.html",
+      "has_accessibility": true,
+      "needs_security_gate": false,
+      "has_security_gate": true
+    },
+    {
+      "file": "safe_pack/z_sanctuary_vault/folder_manager/snapshots/2026-02-14T10-21-36-501Z/core/index.html",
+      "has_accessibility": true,
+      "needs_security_gate": false,
+      "has_security_gate": true
+    },
+    {
+      "file": "safe_pack/z_sanctuary_vault/folder_manager/snapshots/2026-02-14T10-21-36-501Z/docs/public/snapshot/index.html",
+      "has_accessibility": true,
+      "needs_security_gate": false,
+      "has_security_gate": false
+    },
+    {
+      "file": "safe_pack/z_sanctuary_vault/folder_manager/snapshots/2026-02-13T19-33-21-505Z/core/dashboard_snippet.html",
+      "has_accessibility": true,
+      "needs_security_gate": false,
+      "has_security_gate": true
+    },
+    {
+      "file": "safe_pack/z_sanctuary_vault/folder_manager/snapshots/2026-02-13T19-33-21-505Z/core/index.html",
+      "has_accessibility": true,
+      "needs_security_gate": false,
+      "has_security_gate": true
+    },
+    {
+      "file": "safe_pack/z_sanctuary_vault/folder_manager/snapshots/2026-02-13T19-33-21-505Z/docs/public/snapshot/index.html",
+      "has_accessibility": true,
+      "needs_security_gate": false,
+      "has_security_gate": false
+    },
+    {
+      "file": "safe_pack/z_sanctuary_vault/folder_manager/snapshots/2026-02-13T19-27-37-207Z/core/dashboard_snippet.html",
+      "has_accessibility": true,
+      "needs_security_gate": false,
+      "has_security_gate": true
+    },
+    {
+      "file": "safe_pack/z_sanctuary_vault/folder_manager/snapshots/2026-02-13T19-27-37-207Z/core/index.html",
+      "has_accessibility": true,
+      "needs_security_gate": false,
+      "has_security_gate": true
+    },
+    {
+      "file": "safe_pack/z_sanctuary_vault/folder_manager/snapshots/2026-02-13T19-27-37-207Z/docs/public/snapshot/index.html",
+      "has_accessibility": true,
+      "needs_security_gate": false,
+      "has_security_gate": false
+    },
+    {
+      "file": "safe_pack/z_sanctuary_vault/folder_manager/snapshots/2026-02-13T19-26-14-622Z/core/dashboard_snippet.html",
+      "has_accessibility": true,
+      "needs_security_gate": false,
+      "has_security_gate": true
+    },
+    {
+      "file": "safe_pack/z_sanctuary_vault/folder_manager/snapshots/2026-02-13T19-26-14-622Z/core/index.html",
+      "has_accessibility": true,
+      "needs_security_gate": false,
+      "has_security_gate": true
+    },
+    {
+      "file": "safe_pack/z_sanctuary_vault/folder_manager/snapshots/2026-02-13T19-26-14-622Z/docs/public/snapshot/index.html",
+      "has_accessibility": true,
+      "needs_security_gate": false,
+      "has_security_gate": false
+    },
+    {
+      "file": "docs/public/snapshot/index.html",
+      "has_accessibility": true,
+      "needs_security_gate": false,
+      "has_security_gate": false
+    },
+    {
+      "file": "dashboard/panels/consent-center.html",
+      "has_accessibility": true,
+      "needs_security_gate": true,
+      "has_security_gate": true
+    },
+    {
+      "file": "dashboard/panels/explainer.html",
+      "has_accessibility": true,
+      "needs_security_gate": true,
+      "has_security_gate": true
+    },
+    {
+      "file": "archive/cleanup_2026-02-13/jsnode; {}.html",
+      "has_accessibility": true,
+      "needs_security_gate": false,
+      "has_security_gate": false
+    },
+    {
+      "file": "apps/z_gadget_mirrors/ui_web_portal/index.html",
+      "has_accessibility": true,
+      "needs_security_gate": false,
+      "has_security_gate": false
+    },
+    {
+      "file": "apps/web/.next/server/app/index.html",
+      "has_accessibility": true,
+      "needs_security_gate": false,
+      "has_security_gate": false
+    },
+    {
+      "file": "apps/web/.next/server/app/_not-found.html",
+      "has_accessibility": true,
+      "needs_security_gate": false,
+      "has_security_gate": false
+    },
+    {
+      "file": "apps/web/.next/server/pages/404.html",
+      "has_accessibility": true,
+      "needs_security_gate": false,
+      "has_security_gate": false
+    },
+    {
+      "file": "apps/web/.next/server/pages/500.html",
+      "has_accessibility": true,
+      "needs_security_gate": false,
+      "has_security_gate": false
+    },
+    {
+      "file": "Amk_Goku Worldwide Loterry/trust/education_mode_mirror.html",
+      "has_accessibility": true,
+      "needs_security_gate": false,
+      "has_security_gate": false
+    },
+    {
+      "file": "Amk_Goku Worldwide Loterry/trust/trust_walkthrough.html",
+      "has_accessibility": true,
+      "needs_security_gate": false,
+      "has_security_gate": false
+    },
+    {
+      "file": "Amk_Goku Worldwide Loterry/ui/delivery.html",
+      "has_accessibility": true,
+      "needs_security_gate": false,
+      "has_security_gate": false
+    },
+    {
+      "file": "Amk_Goku Worldwide Loterry/ui/drift_watch.html",
+      "has_accessibility": true,
+      "needs_security_gate": false,
+      "has_security_gate": false
+    },
+    {
+      "file": "Amk_Goku Worldwide Loterry/ui/feeling_panel.html",
+      "has_accessibility": true,
+      "needs_security_gate": false,
+      "has_security_gate": false
+    },
+    {
+      "file": "Amk_Goku Worldwide Loterry/ui/kairocell_overlay.html",
+      "has_accessibility": true,
+      "needs_security_gate": false,
+      "has_security_gate": false
+    },
+    {
+      "file": "Amk_Goku Worldwide Loterry/ui/lottery_app.html",
+      "has_accessibility": true,
+      "needs_security_gate": false,
+      "has_security_gate": false
+    },
+    {
+      "file": "Amk_Goku Worldwide Loterry/ui/world_observer.html",
+      "has_accessibility": true,
+      "needs_security_gate": false,
+      "has_security_gate": false
+    },
+    {
+      "file": "Amk_Goku Worldwide Loterry/ui/circles/circle_learning_view.html",
+      "has_accessibility": true,
+      "needs_security_gate": false,
+      "has_security_gate": false
+    },
+    {
+      "file": "Amk_Goku Worldwide Loterry/ui/drift_watch/index.html",
+      "has_accessibility": true,
+      "needs_security_gate": false,
+      "has_security_gate": false
+    },
+    {
+      "file": "Amk_Goku Worldwide Loterry/ui/education/index.html",
+      "has_accessibility": true,
+      "needs_security_gate": false,
+      "has_security_gate": false
+    },
+    {
+      "file": "Amk_Goku Worldwide Loterry/ui/education/learning_cards.html",
+      "has_accessibility": true,
+      "needs_security_gate": false,
+      "has_security_gate": false
+    },
+    {
+      "file": "Amk_Goku Worldwide Loterry/ui/education/orientation.html",
+      "has_accessibility": true,
+      "needs_security_gate": false,
+      "has_security_gate": false
+    },
+    {
+      "file": "Amk_Goku Worldwide Loterry/ui/lottery_vault/checklist.html",
+      "has_accessibility": true,
+      "needs_security_gate": false,
+      "has_security_gate": false
+    },
+    {
+      "file": "Amk_Goku Worldwide Loterry/ui/notebook/basic_notebook.html",
+      "has_accessibility": true,
+      "needs_security_gate": false,
+      "has_security_gate": false
+    },
+    {
+      "file": "Amk_Goku Worldwide Loterry/ui/public_trust/index.html",
+      "has_accessibility": true,
+      "needs_security_gate": false,
+      "has_security_gate": false
+    },
+    {
+      "file": "All APPs/lottery_app_pack_latest/index.html",
+      "has_accessibility": true,
+      "needs_security_gate": false,
+      "has_security_gate": false
+    },
+    {
+      "file": "All APPs/lottery_app_pack_latest/trust/education_mode_mirror.html",
+      "has_accessibility": true,
+      "needs_security_gate": false,
+      "has_security_gate": false
+    },
+    {
+      "file": "All APPs/lottery_app_pack_latest/ui/drift_watch.html",
+      "has_accessibility": true,
+      "needs_security_gate": false,
+      "has_security_gate": false
+    },
+    {
+      "file": "All APPs/lottery_app_pack_latest/ui/feeling_panel.html",
+      "has_accessibility": true,
+      "needs_security_gate": false,
+      "has_security_gate": false
+    },
+    {
+      "file": "All APPs/lottery_app_pack_latest/ui/kairocell_overlay.html",
+      "has_accessibility": true,
+      "needs_security_gate": false,
+      "has_security_gate": false
+    },
+    {
+      "file": "All APPs/lottery_app_pack_latest/ui/lottery_app.html",
+      "has_accessibility": true,
+      "needs_security_gate": false,
+      "has_security_gate": false
+    },
+    {
+      "file": "All APPs/lottery_app_pack_latest/ui/world_observer.html",
+      "has_accessibility": true,
+      "needs_security_gate": false,
+      "has_security_gate": false
+    },
+    {
+      "file": "All APPs/lottery_app_pack_latest/ui/circles/circle_learning_view.html",
+      "has_accessibility": true,
+      "needs_security_gate": false,
+      "has_security_gate": false
+    },
+    {
+      "file": "All APPs/lottery_app_pack_latest/ui/drift_watch/index.html",
+      "has_accessibility": true,
+      "needs_security_gate": false,
+      "has_security_gate": false
+    },
+    {
+      "file": "All APPs/lottery_app_pack_latest/ui/education/learning_cards.html",
+      "has_accessibility": true,
+      "needs_security_gate": false,
+      "has_security_gate": false
+    },
+    {
+      "file": "All APPs/lottery_app_pack_latest/ui/education/orientation.html",
+      "has_accessibility": true,
+      "needs_security_gate": false,
+      "has_security_gate": false
+    },
+    {
+      "file": "All APPs/lottery_app_pack_latest/ui/lottery_vault/checklist.html",
+      "has_accessibility": true,
+      "needs_security_gate": false,
+      "has_security_gate": false
+    },
+    {
+      "file": "All APPs/lottery_app_pack_latest/ui/notebook/basic_notebook.html",
+      "has_accessibility": true,
+      "needs_security_gate": false,
+      "has_security_gate": false
+    },
+    {
+      "file": "All APPs/lottery_app_pack_latest/ui/public_trust/index.html",
+      "has_accessibility": true,
+      "needs_security_gate": false,
+      "has_security_gate": false
+    }
+  ]
+}

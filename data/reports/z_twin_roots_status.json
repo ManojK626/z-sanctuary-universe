@@ -1,0 +1,27 @@
+{
+  "schema_version": 1,
+  "name": "z-twin-roots-status",
+  "generated_at": "2026-04-28T18:51:39.323Z",
+  "authority": "advisory_only_no_auto_execution",
+  "readiness": {
+    "posture": "strong",
+    "score": 100,
+    "missing_inputs": []
+  },
+  "activity": {
+    "level": "active",
+    "last_update_timestamp": "2026-04-28T17:05:00Z"
+  },
+  "summary": {
+    "mango_nodes": 3,
+    "routes": 3,
+    "blocked_paths": 1,
+    "helper_matches": 2,
+    "mycelium_nodes": 5
+  },
+  "next_actions": [
+    "Wire panel entry in dashboard tab/directory when approved.",
+    "Map real activity feeds from reports_manifest and zuno summaries in Phase 2.",
+    "Add optional route confidence and risk tiers per helper suggestion."
+  ]
+}

@@ -1,0 +1,192 @@
+/**
+ * ZMV-1B — Living Ecosphere Map (read-only). No workflow execution styling hooks.
+ */
+.z-eco-page {
+  min-height: 100vh;
+  margin: 0;
+  font-family: system-ui, Segoe UI, Roboto, sans-serif;
+  background: radial-gradient(ellipse 120% 80% at 50% -20%, hsl(268 40% 22%), hsl(222 28% 8%) 45%);
+  color: hsl(210 20% 94%);
+  line-height: 1.45;
+}
+
+.z-eco-skip {
+  position: absolute;
+  left: -9999px;
+}
+.z-eco-skip:focus {
+  left: 0.5rem;
+  top: 0.5rem;
+  z-index: 99;
+  padding: 0.35rem 0.6rem;
+  background: hsl(268 52% 35%);
+  color: #fff;
+}
+
+.z-eco-header {
+  padding: 0.65rem 1rem;
+  border-bottom: 1px solid hsl(268 30% 28% / 0.6);
+  background: hsl(222 35% 12% / 0.85);
+  backdrop-filter: blur(8px);
+}
+
+.z-eco-header h1 {
+  margin: 0;
+  font-size: 1.05rem;
+  font-weight: 700;
+}
+
+.z-eco-header p {
+  margin: 0.35rem 0 0;
+  font-size: 0.78rem;
+  opacity: 0.88;
+}
+
+.z-eco-banner {
+  margin: 0.75rem 1rem;
+  padding: 0.55rem 0.75rem;
+  font-size: 0.72rem;
+  border-radius: 8px;
+  border: 1px solid hsl(46 40% 42% / 0.45);
+  background: hsl(46 25% 14% / 0.55);
+  color: hsl(46 30% 88%);
+}
+
+.z-eco-status {
+  margin: 0 1rem 0.5rem;
+  font-size: 0.72rem;
+  color: hsl(160 35% 72%);
+}
+
+.z-eco-toolbar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  align-items: center;
+  margin: 0 1rem 0.75rem;
+}
+
+.z-eco-toolbar label {
+  font-size: 0.72rem;
+  opacity: 0.85;
+}
+
+.z-eco-toolbar input[type='search'] {
+  flex: 1;
+  min-width: 180px;
+  max-width: 320px;
+  padding: 0.35rem 0.5rem;
+  border-radius: 6px;
+  border: 1px solid hsl(268 25% 38%);
+  background: hsl(222 28% 14%);
+  color: inherit;
+}
+
+.z-eco-toolbar a {
+  font-size: 0.72rem;
+  color: hsl(185 60% 72%);
+}
+
+.z-eco-main {
+  padding: 0 1rem 2rem;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.z-eco-sec {
+  margin-bottom: 1.25rem;
+  padding: 0.75rem 1rem;
+  border-radius: 10px;
+  border: 1px solid hsl(268 22% 30% / 0.55);
+  background: hsl(222 28% 11% / 0.72);
+}
+
+.z-eco-sec h2 {
+  margin: 0 0 0.5rem;
+  font-size: 0.95rem;
+  font-weight: 650;
+  color: hsl(280 45% 82%);
+}
+
+.z-eco-sub {
+  margin: 0 0 0.6rem;
+  font-size: 0.72rem;
+  opacity: 0.82;
+}
+
+.z-eco-grid {
+  display: grid;
+  gap: 0.45rem;
+}
+
+@media (min-width: 720px) {
+  .z-eco-grid--2 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.z-eco-card {
+  padding: 0.45rem 0.55rem;
+  border-radius: 8px;
+  border: 1px solid hsl(215 18% 28%);
+  background: hsl(222 26% 14% / 0.9);
+  font-size: 0.74rem;
+}
+
+.z-eco-card[data-hidden='1'] {
+  display: none;
+}
+
+.z-eco-card--magical {
+  border-color: hsl(280 45% 42% / 0.65);
+  box-shadow: 0 0 0 1px hsl(280 60% 50% / 0.12);
+}
+
+.z-eco-card h3 {
+  margin: 0 0 0.25rem;
+  font-size: 0.78rem;
+  font-weight: 600;
+}
+
+.z-eco-card dl {
+  margin: 0;
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 0.15rem 0.6rem;
+  font-size: 0.7rem;
+}
+
+.z-eco-card dt {
+  opacity: 0.65;
+}
+
+.z-eco-pill {
+  display: inline-block;
+  margin-right: 0.25rem;
+  padding: 0.08rem 0.35rem;
+  border-radius: 999px;
+  font-size: 0.62rem;
+  background: hsl(268 35% 28%);
+}
+
+.z-eco-details {
+  margin-top: 0.35rem;
+}
+
+.z-eco-details summary {
+  cursor: pointer;
+  font-size: 0.72rem;
+  color: hsl(185 55% 70%);
+}
+
+.z-eco-foot {
+  margin-top: 1.5rem;
+  padding-top: 0.75rem;
+  border-top: 1px solid hsl(268 20% 25%);
+  font-size: 0.68rem;
+  opacity: 0.75;
+}
+
+.z-eco-foot a {
+  color: hsl(185 55% 68%);
+}

@@ -1,0 +1,46 @@
+{
+  "id": "z-qosmei",
+  "version": "1.0.0",
+  "name": "Z-Quantum Omni-Swarm Mega-Entanglement Infinity Core",
+  "shortName": "Z-QOSMEI",
+  "status": "active",
+  "summary": "Umbrella vision for merged Z-formulas, LPBS-flex, GGAESP-360, shadows, micro-Z, and hub spine orchestration — mapped to real engineering (workers, mirrors, audit, governance).",
+  "engineeringMap": {
+    "quantumEntanglement": "Synchronized state across nodes (registry, mirrors, message fan-out)",
+    "superposition": "Parallel workers / queued jobs with bounded concurrency",
+    "annealing": "Scheduling and cost minimization under governance gates",
+    "swarm": "Supervised mini-agents with scoped roles and rate limits",
+    "shadows": "Shadow pipelines that do not affect production until promoted",
+    "selfReplication": "Idempotent deploys and horizontal scale — not unbounded local fork bombs"
+  },
+  "formulaFamilies": {
+    "zMega": { "role": "primary composite analytics / strategy shell", "shadow": true },
+    "lpbsFlexInfinite": { "role": "long-progression observation ladder with clamps (no sub-zero)", "shadow": true },
+    "ggaesp360": { "role": "full-circle governance + emotional posture chambers (metaphor + metrics)", "shadow": true },
+    "zPowerAZ": { "role": "ordered composition layer (a→z) for plug-in modules", "shadow": true },
+    "microZ": { "role": "per-pocket / per-number micro state hooks", "shadow": true }
+  },
+  "spine": {
+    "superShellWhaleBus": "Multi-deck service bus: user events → governance → workers",
+    "quadrupleSpines": "Four parallel integrity spines (safety, registry, comms, observability)",
+    "octoNeuralCore": "Eight-channel decision fan-in (can map to worker pools / regions)"
+  },
+  "web": {
+    "nextRoute": "/z-qosmei",
+    "legacyStaticRedirect": "/z-sanctuary-z-qosmei-quantum-swarm.html",
+    "notes": "Primary experience is the Next route (Three.js + observation panel). Legacy HTML redirects to /z-qosmei."
+  },
+  "observation": {
+    "lpbsDisplayCap": 48,
+    "dbzPrefixLines": 800,
+    "notes": "Cap shown in the drought column; true drought may exceed cap for LPBS-style scanning. DBZ aggregate imports read only this many prefix lines for speed."
+  },
+  "ethics": {
+    "roulette": "Observation and bankroll journaling only — no guaranteed outcomes; wheel size parameterized (37 / 38).",
+    "ai": "Explainable summaries; hub authority outranks opaque model output where policy applies.",
+    "claimsScope": {
+      "operational": "Operational coherence — registries, verifiers, and green builds — is the only kind of automated prediction this hub asserts across projects.",
+      "observation": "This panel summarizes loaded or demo history only: descriptive stats, not randomness certification, not next-spin forecasting, no guaranteed edge."
+    }
+  }
+}

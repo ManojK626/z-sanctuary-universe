@@ -1,0 +1,19 @@
+# OMNAI / Start-OMNAI — Z-Sanctuary guarded template only
+# SAFETY: This file does NOTHING destructive by default.
+# - Without OMNAI_DRILL=1 it only prints hypothetical docker-style lines (dry narrative).
+# - With OMNAI_DRILL=1 it STILL does not invoke Docker; it echoes the same lines for tabletop review only.
+#
+# Paste into ops docs after human charter; replace container names/tags with governed registry values.
+
+Write-Host '[OMNAI template] Narrative bootstrap only — no New-Container, no Mount, no fleets.' -ForegroundColor Cyan
+
+if ($env:OMNAI_DRILL -ne '1') {
+    Write-Host '[MODE] Locked: set OMNAI_DRILL=1 to reveal drill echo lines (still no execution from this repo script).' -ForegroundColor Yellow
+    exit 0
+}
+
+Write-Host '[MODE] Drill echo (no side effects)'
+Write-Host '# Example (NOT RUN): docker run --rm omnai/brain:latest --health'
+Write-Host '# Example (NOT RUN): docker compose up -d spine-cognitive spine-data spine-build spine-oversight'
+
+exit 0

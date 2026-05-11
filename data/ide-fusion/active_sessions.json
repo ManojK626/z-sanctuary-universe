@@ -1,0 +1,36 @@
+{
+  "schema": "z_ide_fusion_active_sessions_v1",
+  "sessions": [
+    {
+      "session_id": "vscode-manual-2026-05-05-main-001",
+      "ide": "vscode_manual",
+      "operator": "amk",
+      "project_id": "zsanctuary_universe",
+      "workspace_id": "main_super_saiyan_workspace",
+      "repo_root": "C:/Cursor Projects Organiser/Z_Sanctuary_Universe",
+      "intended_task": "docs/checks only",
+      "files_expected_to_touch": ["docs/INDEX.md", "docs/AI_BUILDER_CONTEXT.md"],
+      "requires_amk_decision": false,
+      "forbidden_actions_acknowledged": true,
+      "started_at": "2026-05-05T13:37:00Z"
+    },
+    {
+      "session_id": "cursor-ide-2026-05-05-main-001",
+      "ide": "cursor_ide",
+      "operator": "amk",
+      "project_id": "zsanctuary_universe",
+      "workspace_id": "main_super_saiyan_workspace",
+      "repo_root": "C:/Cursor Projects Organiser/Z_Sanctuary_Universe",
+      "intended_task": "docs/checks only",
+      "files_expected_to_touch": [
+        "docs/ZUNO_AI_EXECUTIVE_SUMMARY.md",
+        "docs/ZUNO_AI_FULL_ACCOMPLISHMENTS_REPORT.md",
+        "docs/COMPLETE_STATUS_REPORT.md",
+        "docs/ZUNO_REPORTS_INDEX.md"
+      ],
+      "requires_amk_decision": false,
+      "forbidden_actions_acknowledged": true,
+      "started_at": "2026-05-05T19:40:00Z"
+    }
+  ]
+}

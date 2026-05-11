@@ -1,0 +1,15 @@
+{
+  "schema_version": 1,
+  "title": "Z-Vault navigation spine",
+  "purpose": "Markdown entry points scanned by vault:spine:verify — human map; machine truth stays in JSON/reports.",
+  "spine_markdown": [
+    "docs/z-vault/README.md",
+    "docs/z-vault/INDEX.md",
+    "docs/z-vault/drp/README.md",
+    "docs/z-vault/formulas/README.md",
+    "docs/z-vault/ssws/README.md",
+    "docs/z-vault/guardian/README.md",
+    "docs/z-vault/vaults/README.md",
+    "docs/z-vault/ecosphere/README.md"
+  ]
+}

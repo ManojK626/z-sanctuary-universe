@@ -1,0 +1,75 @@
+{
+  "generated_at": "2026-04-21T14:13:58.704Z",
+  "schema_version": 1,
+  "governance_note": "Advisory guidance only — does not auto-fix, deploy, or override Enforcer / DRP / release control.",
+  "coherence_score": 53,
+  "status": "misaligned",
+  "confidence": "medium",
+  "root_causes": [
+    {
+      "type": "underfed_system",
+      "source": "low_signal_vs_high_structure",
+      "root_cause": "insufficient_real_activity",
+      "confidence": "high"
+    },
+    {
+      "type": "communication_stress",
+      "source": "communication_degraded",
+      "root_cause": "stale_comms_or_sync",
+      "confidence": "medium"
+    },
+    {
+      "type": "cross_signal_noise",
+      "source": "consistency_watch",
+      "root_cause": "misaligned_refresh_or_layer_mismatch",
+      "confidence": "medium"
+    }
+  ],
+  "recommended_actions": [
+    {
+      "priority": 1,
+      "action": "Append real creator + business lines to task JSONL logs (features, fixes, decisions) then re-run full scan.",
+      "impact": "high",
+      "domain": "signal",
+      "learning_boost": 0,
+      "learning_hint": null,
+      "learning_strategy": "increase_signal"
+    },
+    {
+      "priority": 2,
+      "action": "Refresh GitHub + Cloudflare comms manifests and AAFRTC context (`comms:github-ai`, `comms:cloudflare-ai`, `z_aafrtc_resolve`); verify manifest ok flags.",
+      "impact": "high",
+      "domain": "communication",
+      "learning_boost": 0,
+      "learning_hint": null,
+      "learning_strategy": "fix_communication"
+    },
+    {
+      "priority": 3,
+      "action": "Resolve or accept each row in z_ai_consistency_alerts.json; re-run npm run ai:consistency:check.",
+      "impact": "medium",
+      "domain": "consistency",
+      "learning_boost": 0,
+      "learning_hint": null,
+      "learning_strategy": "resolve_consistency"
+    }
+  ],
+  "prediction": {
+    "next_state": "unstable",
+    "risk_level": "high",
+    "reason": "Low activity plus weak comm flow — drift toward instability if unchanged."
+  },
+  "summary": {
+    "top_action": "Append real creator + business lines to task JSONL logs (features, fixes, decisions) then re-run full scan.",
+    "top_domain": "signal"
+  },
+  "sources": {
+    "system_coherence": "data/reports/z_system_coherence.json",
+    "signal_health": "data/reports/z_ai_signal_health.json",
+    "communication_health": "data/reports/z_communication_health.json",
+    "consistency_alerts": "data/reports/z_ai_consistency_alerts.json",
+    "garage_upgrade_plan": "data/reports/z_garage_upgrade_plan.json",
+    "self_tuning": "data/reports/z_self_tuning.json"
+  },
+  "self_tuning_applied": true
+}

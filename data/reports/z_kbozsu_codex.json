@@ -1,0 +1,375 @@
+{
+  "schema_version": 2,
+  "generated_at": "2026-04-24T19:21:19.942Z",
+  "name": "Z-KBOZSU",
+  "full_name": "Knowledge Book Of Z-Sanctuary Universe",
+  "phase": "A+B",
+  "advisory": true,
+  "drp_note": "Phase A+B: index + SHA-256 for core manifests + workspace lint snapshot; mini-bot report paths; Zuno presence. No sovereign vault content. Overseer + vault policy outrank this codex.",
+  "slices": {
+    "pc_root_projects": {
+      "pc_root": "C:/Cursor Projects Organiser",
+      "hub": "ZSanctuary_Universe",
+      "project_count": 11,
+      "project_ids": [
+        "zsanctuary-universe",
+        "replit-roulette-z-amk-goku-mdcp",
+        "amk-goku-dashboards-2",
+        "amk-goku-vaults",
+        "at-princess-blackie-copitol",
+        "sister-aisling-sol",
+        "z-omni-sanctuary",
+        "z-sanctuary-ai-skyscraper",
+        "z-sanctuary-browser-z-saiyan-lumina",
+        "z-sanctuary-claude-core",
+        "z-sanctuary-aimanity"
+      ],
+      "updated_at": "2026-04-17T00:00:00Z"
+    },
+    "module_manifest": {
+      "format": "v1",
+      "updated_at": "2026-04-24T17:00:00.000Z",
+      "module_count": 31,
+      "module_ids": [
+        "core-dashboard",
+        "core-status-console",
+        "core-energy-response",
+        "core-emotion-filter",
+        "core-chronicle",
+        "core-chronicle-hud",
+        "autopilot-engine",
+        "sepc-governance",
+        "skk-companion",
+        "rkpk-companion",
+        "ai-tower",
+        "ai-agent-scribe",
+        "ai-agent-protector",
+        "ai-agent-designer",
+        "ai-agent-navigator",
+        "roulette-calculator",
+        "social-arena",
+        "roulette",
+        "z-soundscape-living-pulse",
+        "z-super-chat-orchestrator",
+        "z-ai-qadp",
+        "z-cursor-folder-blueprint",
+        "z-sanctuary-core-wrapper",
+        "z-papao-precautions-advisor",
+        "z-krtaa-curriculum-emitter",
+        "z-fhmff-lite",
+        "z-zecce-confirmations",
+        "z-ecosphere-transparency-report",
+        "z-whale-bus-spine",
+        "z-kbozsu",
+        "z-mini-bots-phase1"
+      ]
+    },
+    "ssws_shadows": {
+      "manifest_version": 3,
+      "generated_at": "2026-04-23T17:30:30.325Z",
+      "shadow_count": 9,
+      "shadow_project_ids": [
+        "amk-goku-dashboards-2",
+        "amk-goku-vaults",
+        "at-princess-blackie-copitol",
+        "sister-aisling-sol",
+        "z-omni-sanctuary",
+        "z-sanctuary-ai-skyscraper",
+        "z-sanctuary-browser-z-saiyan-lumina",
+        "z-sanctuary-claude-core",
+        "z-sanctuary-aimanity"
+      ]
+    },
+    "whale_bus": {
+      "deck_ids": [
+        "comms_sync",
+        "surface_reinforce"
+      ],
+      "note": null
+    },
+    "ai_ecosphere": {
+      "title": "Z AI Ecosphere — SSWS · Formulas · Tower · Shadows",
+      "ring_ids": [
+        "z_ssws",
+        "z_mega_formulas",
+        "ai_tower",
+        "shadow_minibots"
+      ]
+    },
+    "mini_bots": {
+      "guardian": {
+        "generated_at": "2026-04-24T19:19:29.008Z",
+        "missing": 1,
+        "present": 9
+      },
+      "sync": {
+        "generated_at": "2026-04-24T19:19:29.391Z",
+        "latest_snapshot_dir": "data/reports/bot_sync_snapshots/2026-04-24T19-19-29-390Z"
+      },
+      "health": {
+        "generated_at": "2026-04-24T19:19:29.797Z",
+        "memory_used_pct": 48.8
+      }
+    },
+    "cross_references": {
+      "zuno_state_present": true,
+      "prior_kbozsu_generated_at": "2026-04-24T16:10:39.887Z",
+      "note": "Zuno and prior KBOZSU files read for presence only; refresh order: bots → kbozsu:refresh → zuno:state for full chain."
+    }
+  },
+  "entries": [
+    {
+      "id": "master-modules-register",
+      "kind": "registry",
+      "spine": "cognitive",
+      "classification": "public_ref",
+      "path": "docs/Z-MASTER-MODULES-REGISTER.md",
+      "present": true,
+      "bytes": 42051,
+      "mtime": "2026-04-24T19:19:45.981Z"
+    },
+    {
+      "id": "full-build-checklist",
+      "kind": "registry",
+      "spine": "cognitive",
+      "classification": "public_ref",
+      "path": "docs/Z-FULL-BUILD-CHECKLIST.md",
+      "present": true,
+      "bytes": 23324,
+      "mtime": "2026-03-30T17:28:03.970Z"
+    },
+    {
+      "id": "hierarchy-chief",
+      "kind": "registry",
+      "spine": "cognitive",
+      "classification": "public_ref",
+      "path": "docs/Z-HIERARCHY-CHIEF-AND-OBSERVER-VIEW.md",
+      "present": true,
+      "bytes": 22725,
+      "mtime": "2026-04-23T17:21:02.501Z"
+    },
+    {
+      "id": "z-pc-root-projects-json",
+      "kind": "manifest",
+      "spine": "data",
+      "classification": "internal",
+      "path": "data/z_pc_root_projects.json",
+      "present": true
+    },
+    {
+      "id": "z-module-manifest-json",
+      "kind": "manifest",
+      "spine": "data",
+      "classification": "internal",
+      "path": "data/z_module_manifest.json",
+      "present": true
+    },
+    {
+      "id": "z-ssws-shadow-manifest-json",
+      "kind": "manifest",
+      "spine": "data",
+      "classification": "internal",
+      "path": "data/z_ssws_shadow_manifest.json",
+      "present": true
+    },
+    {
+      "id": "z-whale-bus-spine-json",
+      "kind": "manifest",
+      "spine": "data",
+      "classification": "internal",
+      "path": "data/z_whale_bus_spine.json",
+      "present": true
+    },
+    {
+      "id": "z-ai-ecosphere-config-json",
+      "kind": "manifest",
+      "spine": "data",
+      "classification": "internal",
+      "path": "data/z_ai_ecosphere_config.json",
+      "present": true
+    },
+    {
+      "id": "z_kbozsu_codex",
+      "kind": "report",
+      "spine": "oversight",
+      "classification": "internal",
+      "path": "data/reports/z_kbozsu_codex.json",
+      "present": true
+    },
+    {
+      "id": "z_zecce_confirmations",
+      "kind": "report",
+      "spine": "oversight",
+      "classification": "internal",
+      "path": "data/reports/z_zecce_confirmations.json",
+      "present": true
+    },
+    {
+      "id": "z_pam_sicmns_bridge",
+      "kind": "report",
+      "spine": "oversight",
+      "classification": "internal",
+      "path": "data/reports/z_pam_sicmns_bridge.json",
+      "present": true
+    },
+    {
+      "id": "z_sicmns_maturity_probe",
+      "kind": "report",
+      "spine": "oversight",
+      "classification": "internal",
+      "path": "data/reports/z_sicmns_maturity_probe.json",
+      "present": true
+    },
+    {
+      "id": "z_cursor_workspace_lint",
+      "kind": "report",
+      "spine": "oversight",
+      "classification": "internal",
+      "path": "data/reports/z_cursor_workspace_lint.json",
+      "present": true
+    },
+    {
+      "id": "z_ssws_boot_report",
+      "kind": "report",
+      "spine": "oversight",
+      "classification": "internal",
+      "path": "data/reports/z_ssws_boot_report.json",
+      "present": true
+    },
+    {
+      "id": "z_communication_health",
+      "kind": "report",
+      "spine": "oversight",
+      "classification": "internal",
+      "path": "data/reports/z_communication_health.json",
+      "present": true
+    },
+    {
+      "id": "z_traffic_intelligence",
+      "kind": "report",
+      "spine": "oversight",
+      "classification": "internal",
+      "path": "data/reports/z_traffic_intelligence.json",
+      "present": true
+    },
+    {
+      "id": "z_fhmff_lite",
+      "kind": "report",
+      "spine": "oversight",
+      "classification": "internal",
+      "path": "data/reports/z_fhmff_lite.json",
+      "present": true
+    },
+    {
+      "id": "zuno_system_state_report",
+      "kind": "report",
+      "spine": "oversight",
+      "classification": "internal",
+      "path": "data/reports/zuno_system_state_report.json",
+      "present": true
+    },
+    {
+      "id": "z_bot_guardian",
+      "kind": "report",
+      "spine": "oversight",
+      "classification": "internal",
+      "path": "data/reports/z_bot_guardian.json",
+      "present": true
+    },
+    {
+      "id": "z_bot_sync",
+      "kind": "report",
+      "spine": "oversight",
+      "classification": "internal",
+      "path": "data/reports/z_bot_sync.json",
+      "present": true
+    },
+    {
+      "id": "z_bot_health",
+      "kind": "report",
+      "spine": "oversight",
+      "classification": "internal",
+      "path": "data/reports/z_bot_health.json",
+      "present": true
+    },
+    {
+      "id": "vault-access-map",
+      "kind": "vault_pointer",
+      "spine": "oversight",
+      "classification": "vault_ref_only",
+      "path": "docs/vault/Vault_Access_Map.md",
+      "present": true,
+      "note": "Sealed vault routing — codex never embeds Zone payloads."
+    },
+    {
+      "id": "security-policy",
+      "kind": "policy_ref",
+      "spine": "oversight",
+      "classification": "public_ref",
+      "path": "rules/Z_SANCTUARY_SECURITY_POLICY.md",
+      "present": true,
+      "note": "Hub security policy reference."
+    }
+  ],
+  "phase_b": {
+    "core_manifest_sha256": [
+      {
+        "path": "data/z_pc_root_projects.json",
+        "sha256": "745f38fd15a9380d348da14e80bfa53aedf55567157efe692197dbf7f25dfe2d",
+        "bytes": 3452,
+        "skipped": false
+      },
+      {
+        "path": "data/z_module_manifest.json",
+        "sha256": "2485c6e9fc06edbed4f88592e2bbc88b2c951915a7881317aaad90ae6dd1d0f5",
+        "bytes": 9662,
+        "skipped": false
+      },
+      {
+        "path": "data/z_ssws_shadow_manifest.json",
+        "sha256": "afb27e4404b9945f7aabc4e391a9b18d36d5a5274181fc1d4c6c5c452e8915f4",
+        "bytes": 2500,
+        "skipped": false
+      },
+      {
+        "path": "data/z_whale_bus_spine.json",
+        "sha256": "5eb68011e1889165e0f14866324cd5f86234e69aa13a2fe478c5d5a1cdfe5095",
+        "bytes": 5007,
+        "skipped": false
+      },
+      {
+        "path": "data/z_ai_ecosphere_config.json",
+        "sha256": "377391c129a168c3955d6da27227a5b96d607cc3c99513f08e64869a60c8d189",
+        "bytes": 2621,
+        "skipped": false
+      }
+    ],
+    "workspace_lint": {
+      "present": true,
+      "generated_at": "2026-04-24T16:35:11.499Z",
+      "status": "no_workspace_file",
+      "aligned": null,
+      "files_checked": 0,
+      "no_workspace_file": true,
+      "workspace_files_scanned": [],
+      "drift_files": []
+    },
+    "workspace_lint_refresh": {
+      "ran": false
+    },
+    "workspace_drift": null
+  },
+  "summary": {
+    "entry_count": 23,
+    "reports_present": 13,
+    "core_slices_present": {
+      "pc_root_projects": true,
+      "module_manifest": true,
+      "ssws_shadows": true,
+      "whale_bus": true,
+      "ai_ecosphere": true
+    },
+    "hashed_files": 5,
+    "workspace_lint_status": "no_workspace_file"
+  }
+}

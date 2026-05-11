@@ -1,0 +1,27 @@
+{
+  "timestamp": "2026-05-05T20:20:32.945Z",
+  "phase": "Z_PC_IDE_ADMIN_1",
+  "signal": "YELLOW",
+  "reason": "Process is running elevated/admin mode",
+  "checks": {
+    "isElevated": true,
+    "cwdInArchive": false,
+    "hubRootExists": true,
+    "currentCwd": "C:\\Cursor Projects Organiser\\Z_Sanctuary_Universe"
+  },
+  "hubRoot": "C:\\Cursor Projects Organiser\\Z_Sanctuary_Universe",
+  "recommendations": {
+    "launchCommand": "code \"C:\\Cursor Projects Organiser\\Z_Sanctuary_Universe\"",
+    "notes": [
+      "Administrator mode is not the default operating mode.",
+      "Admin mode may increase confusion and risk with paths and permissions.",
+      "Use normal VS Code for Sanctuary repo editing and task execution.",
+      "Use admin mode only for rare OS-level tasks, outside normal Sanctuary work.",
+      "Explorer context menu is convenience only; CLI path proof is stronger.",
+      "Normal mode is the locked law default.",
+      ".cursor/projects is cache/archive, not the build root.",
+      "GREEN signal means safe to proceed; not deployment approval."
+    ]
+  },
+  "exitCode": 0
+}

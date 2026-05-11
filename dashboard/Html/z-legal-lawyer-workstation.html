@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="z-project-id" content="ZSanctuary_Universe" />
+    <meta name="z-dashboard-role" content="legal-workstation-readonly" />
+    <title>Z Legal Workstation · UX-2 Protector</title>
+    <link rel="stylesheet" href="../styles/amk-project-indicators.css" />
+    <link rel="stylesheet" href="../styles/z-legal-lawyer-workstation.css" />
+  </head>
+  <body data-comfort="photophobia">
+    <main class="z-legal-wrap z-app-shell">
+      <header class="z-legal-head z-legal-head--compact" aria-label="Compact navigation">
+        <h1>Z-Lawyer Command Workstation (UX-2)</h1>
+        <p class="z-legal-sub z-legal-sub--single">
+          Synthetic demo data · read-only cockpit · no legal advice · no client data · no launch · no deploy.
+          <span class="z-legal-links z-legal-links--inline">
+            <a href="./amk-goku-main-control.html">AMK control</a>
+            <a href="./index-skk-rkpk.html">Unified dashboard</a>
+            <a href="../../docs/Z_LEGAL_PRODUCT_IP_COMPLIANCE_WORKSTATION.md">Doc</a>
+            <a href="../../docs/Z_LEGAL_GLOBAL_BENCHMARK_READINESS_PANEL.md">Global benchmark</a>
+          </span>
+        </p>
+      </header>
+
+      <section class="z-top-header-grid">
+        <div class="z-top-title-card">
+          <div class="z-top-title-row">
+            <h2>Z-LAWYER COMMAND WORKSTATION <span>(UX-2 PROTECTOR)</span></h2>
+            <label class="z-protector-label">
+              <span class="z-protector-label-t">Protector view</span>
+              <select id="zLegalProtectorMode" aria-describedby="zProtectorModeHint">
+                <option value="julianne">Z-Julianne View</option>
+                <option value="tom">Z-Tom View</option>
+                <option value="graph">Z-Graph View</option>
+              </select>
+            </label>
+          </div>
+          <p id="zProtectorModeHint" class="z-meta z-top-hint">
+            Modes reshape density and emphasis only. Synthetic personas only · not real lawyer endorsement.
+          </p>
+        </div>
+        <div id="zLegalTopMetrics" class="z-top-metrics" aria-live="polite">
+          Loading top metrics...
+        </div>
+      </section>
+
+      <section class="z-second-row-grid z-second-row-grid--compact">
+        <section class="z-legal-law z-legal-law--compact" id="zLockedLawCard">
+          <strong>Locked law</strong>: Visibility ≠ endorsement · AI summary ≠ legal advice · Product map ≠ launch · Mentor personas are synthetic · Simulation ≠ evidence.
+        </section>
+        <section id="zLegalReceiptStrip" class="z-legal-law" aria-live="polite">
+          Loading receipt status strip...
+        </section>
+        <section id="zLegalCommandStrip" class="z-legal-law z-legal-command-strip" aria-live="polite">
+          Loading governance posture...
+        </section>
+      </section>
+
+      <section id="zLegalWorkstationStandaloneMount"></section>
+
+      <div class="z-page-end-bar" role="region" aria-label="Tool bar">
+        <button type="button" class="z-drawer-trigger" id="zLegalOpenReceiptDrawer">
+          Receipts / Export Queue
+        </button>
+        <span class="z-page-end-meta">Governance mock toolbar · drawer only · no dispatch</span>
+      </div>
+
+      <footer class="z-legal-foot z-legal-foot--compact">
+        Source overlays: <code>data/reports/z_legal_ops_report.json</code>,
+        <code>data/reports/z_legal_product_ops_report.json</code>, and
+        <code>dashboard/data/z_legal_benchmark_readiness.json</code> (readiness metadata only — not certification). Missing files show UNKNOWN and never fake GREEN. SYNTHETIC DEMO DATA — NO CLIENT DATA.
+        This page is UX-2: a governance cockpit prototype only. No legal advice, no client intake, no privileged data, no runtime actions, no launch, no deploy.
+      </footer>
+    </main>
+
+    <div class="z-receipt-drawer-backdrop" id="zLegalDrawerBackdrop" hidden></div>
+    <aside
+      class="z-receipt-drawer"
+      id="zLegalReceiptDrawer"
+      aria-modal="true"
+      role="dialog"
+      aria-labelledby="zLegalDrawerTitle"
+      aria-hidden="true"
+      tabindex="-1"
+    >
+      <div class="z-receipt-drawer-head">
+        <h3 id="zLegalDrawerTitle">Receipts / Export Draft Queue (Mock)</h3>
+        <button type="button" class="z-drawer-close" id="zLegalDrawerClose" aria-label="Close receipts drawer">
+          Close
+        </button>
+      </div>
+      <p class="z-drawer-draft-label">DRAFT MOCK — NO COURT FILING OR DISPATCH RUNTIME</p>
+      <div class="z-receipt-drawer-body" id="zLegalDrawerBody">Loading drawer…</div>
+    </aside>
+
+    <script defer src="../scripts/z-legal-benchmark-readonly.js"></script>
+    <script defer src="../scripts/z-legal-lawyer-workstation-readonly.js"></script>
+  </body>
+</html>

@@ -1,0 +1,138 @@
+{
+  "schema_note": "Z-LEGAL-BENCH-1 internal readiness metadata — operator-edited signals only; not live scoring from user behaviour; not legal advice or certification.",
+  "panel_title": "Global Benchmark — Legal Readiness",
+  "disclaimer_heading": "Read this first",
+  "disclaimer_lines": [
+    "Internal readiness benchmark only.",
+    "Not legal advice.",
+    "Not certification.",
+    "Not valuation.",
+    "Not permission to launch or market services as compliant.",
+    "Signals are illustrative placeholders for lawyer and operator discussion — AMK/legal review decides next steps."
+  ],
+  "signal_legend": [
+    {
+      "code": "GREEN",
+      "meaning": "Documentation/evidence appears ready for the next governance or legal review step (still not certification)."
+    },
+    {
+      "code": "BLUE",
+      "meaning": "Human or qualified legal decision required before treating the area as launch-safe."
+    },
+    {
+      "code": "YELLOW",
+      "meaning": "Needs improvement, clarification, or more evidence before advancing."
+    },
+    {
+      "code": "RED",
+      "meaning": "Treat as blocking public launch or strong product claims until reviewed."
+    },
+    {
+      "code": "PURPLE",
+      "meaning": "Future concept or roadmap-only — not a present operational claim."
+    },
+    {
+      "code": "GOLD",
+      "meaning": "Internally strong narrative or artifacts — still not certification or legal sign-off."
+    }
+  ],
+  "categories": [
+    {
+      "id": "ai_governance",
+      "title": "AI governance readiness",
+      "measure": "AI Act awareness, human-gated automation, 14 DRP posture, provider/API boundaries, prohibited-practice and literacy obligations as applicable — internal checklist only.",
+      "signal": "BLUE",
+      "review_flag": "legal",
+      "notes": "Regulatory timelines and scopes evolve; map obligations to your actual stack with counsel.",
+      "doc_links": [
+        { "label": "Z-Swarm 14 DRP law", "path": "docs/Z_SWARM_14DRP_UNIVERSAL_AGENT_LAW.md" },
+        { "label": "New module discipline", "path": "docs/Z-NEW-MODULE-DISCIPLINE.md" },
+        { "label": "AI Builder context", "path": "docs/AI_BUILDER_CONTEXT.md" }
+      ]
+    },
+    {
+      "id": "data_protection",
+      "title": "GDPR / data protection readiness",
+      "measure": "Controller–processor clarity, data-processing agreements where personal data is processed on behalf of a controller, access/deletion posture, sub-processors, records of processing — documentation gap scan only.",
+      "signal": "BLUE",
+      "review_flag": "legal",
+      "notes": "Ireland DPC and other regulators publish controller–processor contract guidance; align contracts and facts with counsel.",
+      "doc_links": [
+        { "label": "Legal evidence core", "path": "docs/Z_LEGAL_EVIDENCE_CORE.md" },
+        { "label": "Legal ops safety policy", "path": "docs/Z_LEGAL_OPS_SAFETY_AND_BOUNDARY_POLICY.md" }
+      ]
+    },
+    {
+      "id": "product_ip",
+      "title": "Product / IP readiness",
+      "measure": "Invention logs, trademark searches/strategy, copyright ownership, patents where applicable, manufacturer and claims boundaries — inventory only.",
+      "signal": "YELLOW",
+      "review_flag": "legal",
+      "notes": "Product workstation maps are conceptual until IP counsel validates.",
+      "doc_links": [
+        { "label": "Product/IP workstation", "path": "docs/Z_LEGAL_PRODUCT_IP_COMPLIANCE_WORKSTATION.md" },
+        { "label": "Product safety & IP policy", "path": "docs/Z_LEGAL_PRODUCT_SAFETY_AND_IP_POLICY.md" }
+      ]
+    },
+    {
+      "id": "commercial",
+      "title": "Commercial / pricing readiness",
+      "measure": "Pricing clarity, refund terms, entitlement boundaries across projects, no accidental cross-entitlement — policy text and registry alignment only.",
+      "signal": "YELLOW",
+      "review_flag": "legal",
+      "notes": "Cross-project SKUs and bundles need explicit human-readable boundaries.",
+      "doc_links": [
+        { "label": "AGENTS.md (hub gates)", "path": "AGENTS.md" }
+      ]
+    },
+    {
+      "id": "accessibility",
+      "title": "Accessibility readiness",
+      "measure": "WCAG / EAA / EN 301 549-style checklist posture — readiness indicators, not a certification badge.",
+      "signal": "YELLOW",
+      "review_flag": "operator",
+      "notes": "Use audits and tooling; do not label as certified without an accredited process.",
+      "doc_links": [
+        { "label": "Verification checklist", "path": "docs/Z-SANCTUARY-VERIFICATION-CHECKLIST.md" }
+      ]
+    },
+    {
+      "id": "deployment",
+      "title": "Deployment readiness (e.g. Cloudflare Pages)",
+      "measure": "Git integration vs Direct Upload vs C3 posture, domain, privacy policy and terms presence, rollback plan, staging vs public — launch checklist only.",
+      "signal": "RED",
+      "review_flag": "legal",
+      "notes": "Pages can deploy via Git, Direct Upload, or C3; pair technical go-live with legal/compliance review before public marketing.",
+      "doc_links": [
+        { "label": "Cloudflare AI comms precautions", "path": "docs/Z-CLOUDFLARE-AI-COMMS-PRECAUTIONS.md" },
+        { "label": "SSWS workspace spine", "path": "docs/Z_SSWS_WORKSPACE_SPINE.md" }
+      ]
+    },
+    {
+      "id": "evidence_audit",
+      "title": "Evidence / audit readiness",
+      "measure": "Receipts, reports, green/blue/red signals, execution enforcer and registry verify outputs — traceability for humans.",
+      "signal": "GOLD",
+      "review_flag": "operator",
+      "notes": "Strong internal discipline does not replace external legal sign-off.",
+      "doc_links": [
+        { "label": "UX-2 green receipt", "path": "docs/PHASE_Z_LEGAL_WORKSTATION_UX_2_GREEN_RECEIPT.md" },
+        { "label": "UX-2A green receipt", "path": "docs/PHASE_Z_LEGAL_WORKSTATION_UX_2A_GREEN_RECEIPT.md" }
+      ]
+    },
+    {
+      "id": "risk_queue",
+      "title": "Risk queue readiness",
+      "measure": "Items routed for lawyer review before launch — derived from governance reports and human triage, not auto-prioritised.",
+      "signal": "BLUE",
+      "review_flag": "legal",
+      "notes": "BLUE in hub reports means decision/review gate; align language with counsel.",
+      "doc_links": [
+        { "label": "Legal ops report (JSON)", "path": "data/reports/z_legal_ops_report.json" },
+        { "label": "Legal product ops report (JSON)", "path": "data/reports/z_legal_product_ops_report.json" }
+      ]
+    }
+  ],
+  "risk_queue_banner": "Items marked BLUE or RED in this panel are explicitly not launch approvals. Route them through AMK and qualified legal review before any public-facing claim or deploy.",
+  "external_reference_hint": "EU AI Act, GDPR, Digital Services Act, and Pages deployment methods are summarized in companion docs — always verify primary sources with counsel."
+}

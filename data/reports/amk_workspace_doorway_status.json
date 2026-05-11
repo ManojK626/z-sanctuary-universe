@@ -1,0 +1,316 @@
+{
+  "schema": "amk_workspace_doorway_status_v1",
+  "generated_at": "2026-05-04T17:23:35.609Z",
+  "doorway_name": "AMK-Goku PC Gateway Doorway",
+  "mode": "local_manual_doorway",
+  "registry_schema": "amk_workspace_doorway_registry_v1",
+  "overall_signal": "BLUE",
+  "duplicate_paths": [
+    {
+      "path": "C:/Cursor Projects Organiser/Z_Sanctuary_Universe",
+      "project_ids": [
+        "main_ssws_lab_workspace",
+        "z_lab_workspace_only",
+        "hub_zsanctuary"
+      ]
+    }
+  ],
+  "cursor_cli": {
+    "available": true,
+    "command": "where cursor",
+    "exitCode": 0,
+    "stdout_tail": "C:\\Users\\manoj\\AppData\\Local\\Programs\\cursor\\resources\\app\\bin\\cursor\r\nC:\\Users\\manoj\\AppData\\Local\\Programs\\cursor\\resources\\app\\bin\\cursor.cmd",
+    "stderr_tail": ""
+  },
+  "profiles": [
+    {
+      "id": "morning",
+      "display_name": "Morning — main cockpit workspace + indicators posture",
+      "project_ids": [
+        "main_ssws_lab_workspace"
+      ],
+      "open_dashboard_default": true
+    },
+    {
+      "id": "main_control",
+      "display_name": "AMK Super-Saiyan main cockpit (.code-workspace)",
+      "project_ids": [
+        "main_ssws_lab_workspace"
+      ],
+      "open_dashboard_default": false
+    },
+    {
+      "id": "z_lab",
+      "display_name": "Z_Lab deep workspace (.code-workspace)",
+      "project_ids": [
+        "z_lab_workspace_only"
+      ],
+      "open_dashboard_default": false
+    },
+    {
+      "id": "questra",
+      "display_name": "Z-QUESTRA deep work only",
+      "project_ids": [
+        "z_questra"
+      ],
+      "open_dashboard_default": false
+    },
+    {
+      "id": "creative_deep",
+      "display_name": "Creative / Z-OMNAI hub evidence only",
+      "project_ids": [
+        "hub_zsanctuary"
+      ],
+      "open_dashboard_default": false
+    },
+    {
+      "id": "franed",
+      "display_name": "AT Princess & Blackie / Franed AI lane",
+      "project_ids": [
+        "franed_at_princess"
+      ],
+      "open_dashboard_default": false
+    },
+    {
+      "id": "lumina",
+      "display_name": "Z-Saiyan Lumina Browser lane",
+      "project_ids": [
+        "lumina_browser"
+      ],
+      "open_dashboard_default": false
+    },
+    {
+      "id": "creative",
+      "display_name": "Z-OMNAI + creative / OMNI lab folders",
+      "project_ids": [
+        "hub_zsanctuary",
+        "z_omni_sanctuary"
+      ],
+      "open_dashboard_default": false
+    },
+    {
+      "id": "dashboard_review",
+      "display_name": "AMK dashboard + hub evidence review",
+      "project_ids": [
+        "hub_zsanctuary"
+      ],
+      "open_dashboard_default": true
+    },
+    {
+      "id": "full_review_safe",
+      "display_name": "Multi-folder read-only review (no servers)",
+      "project_ids": [
+        "hub_zsanctuary",
+        "z_questra",
+        "z_labs_pc",
+        "z_omni_sanctuary",
+        "z_skyscraper",
+        "pc_eaii_all_projects_workspace"
+      ],
+      "open_dashboard_default": false
+    }
+  ],
+  "projects": [
+    {
+      "project_id": "main_ssws_lab_workspace",
+      "display_name": "AMK Super-Saiyan main cockpit (hub + Z_Lab workspace)",
+      "path": "C:/Cursor Projects Organiser/Z_Sanctuary_Universe",
+      "path_exists": true,
+      "workspace_resolved": "C:/Cursor Projects Organiser/Z_Sanctuary_Universe/workspaces/AMK-Goku-Super-Saiyan-Main.code-workspace",
+      "workspace_exists": true,
+      "path_tier": "required",
+      "workspace_tier": "required",
+      "signal": "YELLOW",
+      "issues": [
+        "YELLOW: duplicate path shared with another project_id (informational)."
+      ],
+      "nas_dependency": false,
+      "secrets_required": false
+    },
+    {
+      "project_id": "z_lab_workspace_only",
+      "display_name": "AMK Z-Lab workspace (Z_Labs only)",
+      "path": "C:/Cursor Projects Organiser/Z_Sanctuary_Universe",
+      "path_exists": true,
+      "workspace_resolved": "C:/Cursor Projects Organiser/Z_Sanctuary_Universe/workspaces/AMK-Goku-Z-Lab.code-workspace",
+      "workspace_exists": true,
+      "path_tier": "required",
+      "workspace_tier": "required",
+      "signal": "YELLOW",
+      "issues": [
+        "YELLOW: duplicate path shared with another project_id (informational)."
+      ],
+      "nas_dependency": false,
+      "secrets_required": false
+    },
+    {
+      "project_id": "hub_zsanctuary",
+      "display_name": "ZSanctuary_Universe (hub)",
+      "path": "C:/Cursor Projects Organiser/Z_Sanctuary_Universe",
+      "path_exists": true,
+      "workspace_resolved": "C:/Cursor Projects Organiser/Z_Sanctuary_Universe/Z_SSWS.code-workspace",
+      "workspace_exists": true,
+      "path_tier": "required",
+      "workspace_tier": "optional",
+      "signal": "YELLOW",
+      "issues": [
+        "YELLOW: duplicate path shared with another project_id (informational)."
+      ],
+      "nas_dependency": false,
+      "secrets_required": false
+    },
+    {
+      "project_id": "z_questra",
+      "display_name": "Z-QUESTRA (comfort lab)",
+      "path": "C:/Cursor Projects Organiser/Z_Sanctuary_Universe/z-questra",
+      "path_exists": true,
+      "workspace_resolved": null,
+      "workspace_exists": null,
+      "path_tier": "optional",
+      "workspace_tier": "optional",
+      "signal": "GREEN",
+      "issues": [],
+      "nas_dependency": false,
+      "secrets_required": false
+    },
+    {
+      "project_id": "franed_at_princess",
+      "display_name": "AT Princess & Blackie Copilot (Franed AI)",
+      "path": "C:/Cursor Projects Organiser/AT Princess&Blackie Copilot",
+      "path_exists": true,
+      "workspace_resolved": null,
+      "workspace_exists": null,
+      "path_tier": "required",
+      "workspace_tier": "optional",
+      "signal": "GREEN",
+      "issues": [],
+      "nas_dependency": false,
+      "secrets_required": false
+    },
+    {
+      "project_id": "lumina_browser",
+      "display_name": "Z-Sanctuary Browser (Z-Saiyan Lumina)",
+      "path": "C:/Cursor Projects Organiser/Z-Sanctuary Browser",
+      "path_exists": false,
+      "workspace_resolved": null,
+      "workspace_exists": null,
+      "path_tier": "optional",
+      "workspace_tier": "optional",
+      "signal": "YELLOW",
+      "issues": [
+        "YELLOW: optional path missing on disk."
+      ],
+      "nas_dependency": false,
+      "secrets_required": false
+    },
+    {
+      "project_id": "z_omni_sanctuary",
+      "display_name": "Z-OMNI-Sanctuary",
+      "path": "C:/Cursor Projects Organiser/Z-OMNI-Sanctuary",
+      "path_exists": true,
+      "workspace_resolved": null,
+      "workspace_exists": null,
+      "path_tier": "optional",
+      "workspace_tier": "optional",
+      "signal": "GREEN",
+      "issues": [],
+      "nas_dependency": false,
+      "secrets_required": false
+    },
+    {
+      "project_id": "z_labs_pc",
+      "display_name": "Z_Labs (PC root)",
+      "path": "C:/Cursor Projects Organiser/Z_Labs",
+      "path_exists": true,
+      "workspace_resolved": null,
+      "workspace_exists": null,
+      "path_tier": "optional",
+      "workspace_tier": "optional",
+      "signal": "GREEN",
+      "issues": [],
+      "nas_dependency": false,
+      "secrets_required": false
+    },
+    {
+      "project_id": "z_skyscraper",
+      "display_name": "Z-SANCTUARY AI SKYSCRAPER (reference lane)",
+      "path": "C:/Cursor Projects Organiser/Z-SANCTUARY AI SKYSCRAPER",
+      "path_exists": true,
+      "workspace_resolved": null,
+      "workspace_exists": null,
+      "path_tier": "optional",
+      "workspace_tier": "optional",
+      "signal": "BLUE",
+      "issues": [
+        "BLUE: human_gate_required — AMK decision before treating as launch-ready."
+      ],
+      "nas_dependency": false,
+      "secrets_required": false
+    },
+    {
+      "project_id": "pc_eaii_all_projects_workspace",
+      "display_name": "Z-EAII PC All Projects (multi-root workspace file)",
+      "path": "C:/Cursor Projects Organiser",
+      "path_exists": true,
+      "workspace_resolved": "C:/Cursor Projects Organiser/Z-EAII-PC-All-Projects.code-workspace",
+      "workspace_exists": true,
+      "path_tier": "optional",
+      "workspace_tier": "required",
+      "signal": "GREEN",
+      "issues": [],
+      "nas_dependency": false,
+      "secrets_required": false
+    },
+    {
+      "project_id": "xl2_placeholder",
+      "display_name": "XL2 reference lane (path TBD)",
+      "path": "",
+      "path_exists": null,
+      "workspace_resolved": null,
+      "workspace_exists": null,
+      "path_tier": "optional",
+      "workspace_tier": "optional",
+      "signal": "BLUE",
+      "issues": [
+        "BLUE: human_gate_required — AMK decision before treating as launch-ready."
+      ],
+      "nas_dependency": false,
+      "secrets_required": false
+    },
+    {
+      "project_id": "zquestcraft_placeholder",
+      "display_name": "ZQuestCraft (placeholder)",
+      "path": "",
+      "path_exists": null,
+      "workspace_resolved": null,
+      "workspace_exists": null,
+      "path_tier": "optional",
+      "workspace_tier": "optional",
+      "signal": "BLUE",
+      "issues": [
+        "BLUE: human_gate_required — AMK decision before treating as launch-ready."
+      ],
+      "nas_dependency": false,
+      "secrets_required": false
+    },
+    {
+      "project_id": "nas_synology_reference",
+      "display_name": "NAS / Synology mount (declaration only)",
+      "path": "",
+      "path_exists": null,
+      "workspace_resolved": null,
+      "workspace_exists": null,
+      "path_tier": "optional",
+      "workspace_tier": "optional",
+      "signal": "BLUE",
+      "issues": [
+        "BLUE: secrets or NAS declaration — manual AMK posture; doorway does not mount or read vault.",
+        "BLUE: human_gate_required — AMK decision before treating as launch-ready."
+      ],
+      "nas_dependency": true,
+      "secrets_required": true
+    }
+  ],
+  "nas_note": "NAS dependencies are declarations only; this script does not mount volumes or read credentials.",
+  "exit_hint": 0
+}

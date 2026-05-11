@@ -1,0 +1,263 @@
+{
+  "generated_at": "2026-04-28T18:55:51.951Z",
+  "mode": "cycle",
+  "status": "watch",
+  "policy": {
+    "require_approval_for_risks": [
+      "high",
+      "sacred"
+    ],
+    "approval_env": "Z_AUTONOMOUS_APPROVAL_TOKEN",
+    "approval_ready_high": false,
+    "approval_ready_sacred": false
+  },
+  "loop_interval_sec": 60,
+  "totals": {
+    "eligible": 10,
+    "due": 10,
+    "ran": 10,
+    "executed": 10,
+    "skipped": 0,
+    "skipped_policy": 0,
+    "failed_hard": 0,
+    "failed_soft": 2
+  },
+  "due_job_ids": [
+    "freshness_refresh",
+    "system_status_refresh",
+    "guardian_report",
+    "folder_align_dry",
+    "lab_status",
+    "commflow_verify",
+    "ataiecf_shadow_verify",
+    "hygiene_autofix",
+    "lint_md_validate",
+    "dsr_analyze"
+  ],
+  "skipped_jobs": [],
+  "results": [
+    {
+      "id": "freshness_refresh",
+      "label": "Project Freshness Refresh",
+      "risk": "low",
+      "soft_fail": true,
+      "started_at": "2026-04-28T18:55:51.952Z",
+      "finished_at": "2026-04-28T18:55:52.306Z",
+      "skipped_by_policy": false,
+      "ok": true,
+      "code": 0,
+      "elapsed_ms": 354,
+      "timeout": false,
+      "stdout_tail": [
+        "> z-sanctuary-universe@1.0.0 freshness:refresh",
+        "> node scripts/z_project_freshness_refresh.mjs",
+        "",
+        "✅ Project freshness: C:\\Cursor Projects Organiser\\ZSanctuary_Universe\\data\\reports\\z_project_freshness.json (13 scanned, 10 present, 1 missing, 0 git heads)"
+      ],
+      "stderr_tail": [
+        ""
+      ]
+    },
+    {
+      "id": "system_status_refresh",
+      "label": "System Status Refresh",
+      "risk": "low",
+      "soft_fail": true,
+      "started_at": "2026-04-28T18:55:52.306Z",
+      "finished_at": "2026-04-28T18:55:52.929Z",
+      "skipped_by_policy": false,
+      "ok": true,
+      "code": 0,
+      "elapsed_ms": 623,
+      "timeout": false,
+      "stdout_tail": [
+        "> z-sanctuary-universe@1.0.0 system-status:refresh",
+        "> node scripts/z_system_status_refresh.mjs",
+        "",
+        "✅ system-status written: C:\\Cursor Projects Organiser\\ZSanctuary_Universe\\data\\system-status.json (verify=PASS, status=healthy)"
+      ],
+      "stderr_tail": [
+        ""
+      ]
+    },
+    {
+      "id": "guardian_report",
+      "label": "Guardian Report Refresh",
+      "risk": "low",
+      "soft_fail": true,
+      "started_at": "2026-04-28T18:55:52.929Z",
+      "finished_at": "2026-04-28T18:55:53.361Z",
+      "skipped_by_policy": false,
+      "ok": true,
+      "code": 0,
+      "elapsed_ms": 432,
+      "timeout": false,
+      "stdout_tail": [
+        "> z-sanctuary-universe@1.0.0 guardian:report",
+        "> node scripts/z_guardian_report.mjs",
+        "",
+        "✅ Guardian report: C:\\Cursor Projects Organiser\\ZSanctuary_Universe\\data\\reports\\z_guardian_report.json (1 suggestion(s))"
+      ],
+      "stderr_tail": [
+        ""
+      ]
+    },
+    {
+      "id": "folder_align_dry",
+      "label": "Folder Align Dry Run",
+      "risk": "medium",
+      "soft_fail": true,
+      "started_at": "2026-04-28T18:55:53.361Z",
+      "finished_at": "2026-04-28T18:55:53.830Z",
+      "skipped_by_policy": false,
+      "ok": true,
+      "code": 0,
+      "elapsed_ms": 469,
+      "timeout": false,
+      "stdout_tail": [
+        "> z-sanctuary-universe@1.0.0 folder:align",
+        "> node scripts/z_folder_manager_guard.mjs align",
+        "",
+        "Z Folder Manager alignment dry-run complete."
+      ],
+      "stderr_tail": [
+        ""
+      ]
+    },
+    {
+      "id": "lab_status",
+      "label": "Lab Status Refresh",
+      "risk": "low",
+      "soft_fail": true,
+      "started_at": "2026-04-28T18:55:53.830Z",
+      "finished_at": "2026-04-28T18:55:54.218Z",
+      "skipped_by_policy": false,
+      "ok": true,
+      "code": 0,
+      "elapsed_ms": 388,
+      "timeout": false,
+      "stdout_tail": [
+        "> z-sanctuary-universe@1.0.0 lab:status",
+        "> node scripts/z_lab_status.mjs",
+        "",
+        "Z Lab status written: C:\\Cursor Projects Organiser\\ZSanctuary_Universe\\data\\reports\\z_lab_status.json"
+      ],
+      "stderr_tail": [
+        ""
+      ]
+    },
+    {
+      "id": "commflow_verify",
+      "label": "Commflow Verify",
+      "risk": "medium",
+      "soft_fail": true,
+      "started_at": "2026-04-28T18:55:54.218Z",
+      "finished_at": "2026-04-28T18:55:54.615Z",
+      "skipped_by_policy": false,
+      "ok": true,
+      "code": 0,
+      "elapsed_ms": 397,
+      "timeout": false,
+      "stdout_tail": [
+        "> z-sanctuary-universe@1.0.0 ecosystem:commflow:verify",
+        "> node scripts/z_ecosystem_commflow_verifier.mjs",
+        "",
+        "Ecosystem comm-flow verifier: C:\\Cursor Projects Organiser\\ZSanctuary_Universe\\data\\reports\\z_ecosystem_commflow_verifier.json status=amber"
+      ],
+      "stderr_tail": [
+        ""
+      ]
+    },
+    {
+      "id": "ataiecf_shadow_verify",
+      "label": "Z-ATAIECF Shadow Verify",
+      "risk": "low",
+      "soft_fail": true,
+      "started_at": "2026-04-28T18:55:54.615Z",
+      "finished_at": "2026-04-28T18:55:55.040Z",
+      "skipped_by_policy": false,
+      "ok": true,
+      "code": 0,
+      "elapsed_ms": 425,
+      "timeout": false,
+      "stdout_tail": [
+        "> z-sanctuary-universe@1.0.0 ataiecf:shadow:verify",
+        "> node scripts/z_ataiecf_shadow_verify.mjs",
+        "",
+        "Z-ATAIECF shadow verify: C:\\Cursor Projects Organiser\\ZSanctuary_Universe\\data\\reports\\z_ataiecf_shadow_verify.json status=attention"
+      ],
+      "stderr_tail": [
+        ""
+      ]
+    },
+    {
+      "id": "hygiene_autofix",
+      "label": "Hygiene Autofix Scoped (safe markdown lanes)",
+      "risk": "medium",
+      "soft_fail": true,
+      "started_at": "2026-04-28T18:55:55.040Z",
+      "finished_at": "2026-04-28T18:56:00.521Z",
+      "skipped_by_policy": false,
+      "ok": false,
+      "code": 1,
+      "elapsed_ms": 5481,
+      "timeout": false,
+      "stdout_tail": [
+        "> z-sanctuary-universe@1.0.0 hygiene:autofix:scoped",
+        "> node scripts/z_hygiene_autofix_scoped.mjs"
+      ],
+      "stderr_tail": [
+        "Z scoped hygiene autofix failed: prettier_markdown_scoped, markdownlint_validate_scoped, lint_md_repo_snapshot"
+      ]
+    },
+    {
+      "id": "lint_md_validate",
+      "label": "Markdown Lint Validation (snapshot)",
+      "risk": "low",
+      "soft_fail": true,
+      "started_at": "2026-04-28T18:56:00.521Z",
+      "finished_at": "2026-04-28T18:56:02.570Z",
+      "skipped_by_policy": false,
+      "ok": false,
+      "code": 1,
+      "elapsed_ms": 2049,
+      "timeout": false,
+      "stdout_tail": [
+        "> z-sanctuary-universe@1.0.0 lint:md",
+        "> markdownlint -c .markdownlint.json --ignore \"safe_pack/**\" --ignore \"apps/**/node_modules/**\" --ignore \"Amk_Goku Worldwide Loterry/exports/**\" --ignore \"docs/ZALS_DELIVERABLE_*.md\" \"**/*.md\""
+      ],
+      "stderr_tail": [
+        "docs/z-vault/INDEX.md:7:117 error MD060/table-column-style Table column style [Table pipe has extra space to the left for style \"compact\"]",
+        "docs/z-vault/INDEX.md:8:73 error MD060/table-column-style Table column style [Table pipe has extra space to the left for style \"compact\"]",
+        "docs/z-vault/INDEX.md:8:117 error MD060/table-column-style Table column style [Table pipe has extra space to the left for style \"compact\"]",
+        "docs/z-vault/INDEX.md:9:26 error MD060/table-column-style Table column style [Table pipe has extra space to the left for style \"compact\"]",
+        "docs/z-vault/INDEX.md:9:73 error MD060/table-column-style Table column style [Table pipe has extra space to the left for style \"compact\"]",
+        "docs/z-vault/INDEX.md:9:117 error MD060/table-column-style Table column style [Table pipe has extra space to the left for style \"compact\"]",
+        "docs/z-vault/INDEX.md:10:26 error MD060/table-column-style Table column style [Table pipe has extra space to the left for style \"compact\"]",
+        "docs/z-vault/INDEX.md:10:117 error MD060/table-column-style Table column style [Table pipe has extra space to the left for style \"compact\"]"
+      ]
+    },
+    {
+      "id": "dsr_analyze",
+      "label": "DSR Analyze (duplication clarity signal)",
+      "risk": "low",
+      "soft_fail": true,
+      "started_at": "2026-04-28T18:56:02.570Z",
+      "finished_at": "2026-04-28T18:56:02.937Z",
+      "skipped_by_policy": false,
+      "ok": true,
+      "code": 0,
+      "elapsed_ms": 367,
+      "timeout": false,
+      "stdout_tail": [
+        "> z-sanctuary-universe@1.0.0 ai:dsr:analyze",
+        "> node scripts/z_dsr_analysis.mjs",
+        "",
+        "✅ Z-DSR Analysis: C:\\Cursor Projects Organiser\\ZSanctuary_Universe\\data\\reports\\z_dsr_analysis.json status=attention"
+      ],
+      "stderr_tail": [
+        ""
+      ]
+    }
+  ]
+}

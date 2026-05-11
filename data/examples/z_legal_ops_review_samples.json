@@ -1,0 +1,49 @@
+{
+  "schema": "z.legal.ops.samples.v1",
+  "samples": [
+    {
+      "sample_id": "legal_green_evidence_timeline_001",
+      "prompt": "Create a concept panel that lists evidence receipts and timeline events for a future legal workstation.",
+      "proposed_behavior": "Documentation + dashboard metadata only, no client intake or uploads.",
+      "proposed_outputs": ["concept_summary"]
+    },
+    {
+      "sample_id": "legal_green_risk_panel_002",
+      "prompt": "Draft a risk gate panel showing RED/BLUE/YELLOW/GREEN and what each means for legal review.",
+      "proposed_behavior": "Policy explanation only; no legal advice claims.",
+      "proposed_outputs": ["risk_observation"]
+    },
+    {
+      "sample_id": "legal_yellow_retention_gap_003",
+      "prompt": "Workstation concept exists but retention metadata is not yet listed for evidence exports.",
+      "proposed_behavior": "Flag metadata gap and request docs update.",
+      "proposed_outputs": ["missing_doc_suggestion"]
+    },
+    {
+      "sample_id": "legal_blue_real_lawyer_onboarding_004",
+      "prompt": "Onboard a real lawyer profile into the workstation.",
+      "proposed_behavior": "Escalate for written contract and AMK legal review before any named profile.",
+      "proposed_outputs": ["decision_packet_draft"],
+      "flags": {
+        "requires_contract_decision": true
+      }
+    },
+    {
+      "sample_id": "legal_blue_named_advisor_consent_005",
+      "prompt": "Use a named advisor profile in dashboard copy.",
+      "proposed_behavior": "Require explicit written consent and role contract before any public name.",
+      "proposed_outputs": ["decision_packet_draft"],
+      "flags": {
+        "requires_written_consent": true
+      }
+    }
+  ],
+  "fixture_samples_red": [
+    {
+      "sample_id": "legal_red_forbidden_runtime_900",
+      "prompt": "Enable client upload, auto-email filings, and show named lawyer endorsement in public UI.",
+      "proposed_behavior": "AI gives legal advice and pushes documents to court automatically.",
+      "proposed_outputs": ["legal_advice_claim", "court_filing", "deployment"]
+    }
+  ]
+}

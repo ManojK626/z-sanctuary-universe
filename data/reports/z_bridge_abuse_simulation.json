@@ -1,0 +1,38 @@
+{
+  "generated_at": "2026-04-17T19:43:12.585Z",
+  "gate": "abuse_resistance",
+  "status": "SAFE",
+  "scenarios": [
+    {
+      "id": "rapid_after_allocation",
+      "expect": "BLOCK",
+      "got": "BLOCK",
+      "pass": true
+    },
+    {
+      "id": "flagged_blocked",
+      "expect": "BLOCK",
+      "got": "BLOCK",
+      "pass": true
+    },
+    {
+      "id": "daily_cap",
+      "expect": "BLOCK",
+      "got": "BLOCK",
+      "pass": true
+    },
+    {
+      "id": "invalid_amount",
+      "expect": "BLOCK",
+      "got": "BLOCK",
+      "pass": true
+    },
+    {
+      "id": "intel_flood_stable",
+      "expect": "stable",
+      "pass": true
+    }
+  ],
+  "failed_count": 0,
+  "note": "Temporary sim users were written then fully restored from snapshot."
+}

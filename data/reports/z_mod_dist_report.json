@@ -1,0 +1,178 @@
+{
+  "schema": "z.mod.dist.report.v1",
+  "module_id": "z_mod_dist_routing_advisor",
+  "signal": "GREEN",
+  "mode": "read_only_routing_advisor",
+  "router_name": "Z-MOD-DIST Module Distributor / Co-Design Router",
+  "generated_at": "2026-05-07T20:41:11.133Z",
+  "registry_checks": {
+    "passed": [
+      "Mode is read_only_routing_advisor.",
+      "forbidden_routing_claims covers advisory law.",
+      "routing_rules present.",
+      "known_workspaces defined."
+    ],
+    "yellow": [],
+    "blue": [],
+    "red": []
+  },
+  "sample_results": [
+    {
+      "id": "idea_numen_companion",
+      "title": "Z-NUMEN pattern literacy refresh",
+      "input_type": "learning_module",
+      "safety_signal": "GREEN",
+      "recommended_workspace": "ZSanctuary_Labs",
+      "recommended_phase": "labs_doctrine_validator_first",
+      "required_gates": [
+        "non_clinical_framing",
+        "no_profiling_phase_1"
+      ],
+      "forbidden_lanes": [
+        "medical_claims",
+        "conspiracy_proof_language"
+      ],
+      "next_safe_action": "Open Labs issue: docs + JSON + read-only report; pair with existing hub reference when ready.",
+      "matched_rule_id": "learning_perception_labs",
+      "workspace_label": "ZSanctuary_Labs — incubation / non-clinical learning & pattern literacy"
+    },
+    {
+      "id": "idea_hub_indicator",
+      "title": "New AMK indicator row for overseer spine",
+      "input_type": "dashboard_tool",
+      "safety_signal": "GREEN",
+      "recommended_workspace": "main_hub",
+      "recommended_phase": "doctrine_json_registry_first",
+      "required_gates": [
+        "hierarchy_chief_alignment",
+        "verify_md_clear"
+      ],
+      "forbidden_lanes": [
+        "auto_merge",
+        "auto_deploy",
+        "runtime_bridge_without_charter"
+      ],
+      "next_safe_action": "Draft hub docs + JSON registry; run read-only validators; no live bridge.",
+      "matched_rule_id": "hub_overseer_reporting",
+      "workspace_label": "ZSanctuary_Universe (main hub — doctrine, indicators, overseer-class reporting)"
+    },
+    {
+      "id": "idea_lumina_shell",
+      "title": "Static browser shell for pathway map",
+      "input_type": "media_concept",
+      "safety_signal": "GREEN",
+      "recommended_workspace": "Z_Saiyan_Lumina",
+      "recommended_phase": "static_or_local_ui_only",
+      "required_gates": [
+        "no_provider_by_default",
+        "amk_for_network"
+      ],
+      "forbidden_lanes": [
+        "silent_deploy",
+        "production_auth"
+      ],
+      "next_safe_action": "Scope local/static UI; document gates before any network feature.",
+      "matched_rule_id": "browser_visual_lumina",
+      "workspace_label": "Z-Saiyan Lumina — browser / visual shell experiments (gated)"
+    },
+    {
+      "id": "idea_franed_lesson",
+      "title": "Bilingual family culture mini-module",
+      "input_type": "learning_module",
+      "safety_signal": "GREEN",
+      "recommended_workspace": "AT_Princess_Blackie_Franed",
+      "recommended_phase": "content_and_safeguarding_review",
+      "required_gates": [
+        "child_safeguarding",
+        "no_data_harvest_by_default"
+      ],
+      "forbidden_lanes": [
+        "open_child_data_pipeline"
+      ],
+      "next_safe_action": "Route to Franed repo charter; keep hub as reference only until AMK opens lane.",
+      "matched_rule_id": "family_culture_franed",
+      "workspace_label": "AT Princess & Blackie / Franed — family / culture / kids education (Fr–En)"
+    },
+    {
+      "id": "idea_omnai_trailer",
+      "title": "OMNAI trailer bundle planning",
+      "input_type": "creative_pipeline",
+      "safety_signal": "GREEN",
+      "recommended_workspace": "Z_OMNAI",
+      "recommended_phase": "creative_pipeline_plan_only",
+      "required_gates": [
+        "letter_gate",
+        "non_harm_framing"
+      ],
+      "forbidden_lanes": [
+        "unlicensed_release",
+        "auto_publish"
+      ],
+      "next_safe_action": "Use Z-OMNAI planning validators; no silent public drop.",
+      "matched_rule_id": "creative_media_omnai",
+      "workspace_label": "Z-OMNAI — creative / media / movie / song / podcast pipeline (gated)"
+    },
+    {
+      "id": "idea_susbv_pricing",
+      "title": "Commercial benchmark sheet",
+      "input_type": "commercial_service",
+      "safety_signal": "GREEN",
+      "recommended_workspace": "Z_SUSBV",
+      "recommended_phase": "commercial_evidence_only",
+      "required_gates": [
+        "amk_pricing_authority",
+        "no_live_billing_without_gate"
+      ],
+      "forbidden_lanes": [
+        "live_payment_enforcement"
+      ],
+      "next_safe_action": "Capture benchmarks in SUSBV; hub stays advisory until AMK opens commercial lane.",
+      "matched_rule_id": "commercial_susbv",
+      "workspace_label": "Z-SUSBV — pricing / benchmark / commercial readiness evidence (gated)"
+    },
+    {
+      "id": "idea_questra_inquiry",
+      "title": "Uncertainty inquiry bank",
+      "input_type": "learning_module",
+      "safety_signal": "GREEN",
+      "recommended_workspace": "z_questra",
+      "recommended_phase": "curriculum_charter_first",
+      "required_gates": [
+        "14_drp_alignment"
+      ],
+      "forbidden_lanes": [
+        "prediction_certainty_marketing"
+      ],
+      "next_safe_action": "Charter questra slice; keep routing as suggestion not permission.",
+      "matched_rule_id": "uncertainty_questra",
+      "workspace_label": "z-questra — uncertainty / inquiry education lane (charter-bound)"
+    },
+    {
+      "id": "idea_xl2_reference",
+      "title": "Adult wagering UX note (reference)",
+      "input_type": "media_concept",
+      "safety_signal": "GREEN",
+      "recommended_workspace": "xl2_reference_only",
+      "recommended_phase": "reference_only_unless_chartered",
+      "required_gates": [
+        "xl2_charter_if_shared_pattern"
+      ],
+      "forbidden_lanes": [
+        "hub_runtime_coupling",
+        "sanctuary_xl2_bridge_without_charter"
+      ],
+      "next_safe_action": "Record as XL2 reference; do not wire into Sanctuary runtime without charter.",
+      "matched_rule_id": "gambling_xl2_reference",
+      "workspace_label": "XL2 — reference-only unless explicit cross-repo charter (gambling / adult commercial prediction-adjacent)"
+    }
+  ],
+  "fixtures_included": false,
+  "related_docs": [
+    "docs/Z_MOD_DIST_MODULE_DISTRIBUTOR.md",
+    "docs/PHASE_Z_MOD_DIST_1_GREEN_RECEIPT.md"
+  ],
+  "related_reports": [
+    "data/reports/z_mod_dist_report.json",
+    "data/reports/z_mod_dist_report.md"
+  ]
+}

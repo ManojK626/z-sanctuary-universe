@@ -1,0 +1,119 @@
+{
+  "schema": "z_fbap_event_taxonomy_v1",
+  "name": "Z-FBAP",
+  "full_name": "Fire Backs Awareness Protocol",
+  "posture": "defensive_authorized_metadata_only_no_surveillance_phase_1",
+  "definitions": {
+    "original_location": "Original file, folder, service identifier, or source path **inside the authorized Z-Sanctuary ecosystem** — not a user's real-world geographic location and not deanonymization behind a VPN.",
+    "proxy_or_vpn_signal": "Where legally and technically available, **aggregate or technical** hints that traffic may traverse proxy/VPN — logged only as **risk metadata**, never used to identify or track individuals without consent and DRP review."
+  },
+  "global_forbidden_metadata": [
+    "end_user_real_world_geolocation",
+    "deanonymized_identity_behind_vpn",
+    "non_consented_persistent_device_fingerprint",
+    "raw_credentials_or_secrets",
+    "private_communications_content_without_lawful_basis"
+  ],
+  "events": [
+    {
+      "type": "BACKUP_CREATED",
+      "meaning": "A backup or sync pack artifact was created under an approved flow.",
+      "severity": "info",
+      "privacy_class": "operational_metadata_only",
+      "allowed_metadata": ["timestamp", "source_path_authorized", "target_path_authorized", "artifact_id", "operator_actor"],
+      "forbidden_metadata": ["global_forbidden_metadata"],
+      "required_human_review": false,
+      "retention_note": "Align with vault and Folder Manager policy; no indefinite hoarding of redundant copies."
+    },
+    {
+      "type": "BACKUP_MISSING",
+      "meaning": "Expected backup or receipt artifact absent or stale beyond policy.",
+      "severity": "medium",
+      "privacy_class": "operational_metadata_only",
+      "allowed_metadata": ["expected_path_pattern", "last_seen_timestamp", "check_name"],
+      "forbidden_metadata": ["global_forbidden_metadata"],
+      "required_human_review": false,
+      "retention_note": "Status reports may be regenerated; do not log personal data to explain missing files."
+    },
+    {
+      "type": "REGISTRY_DRIFT",
+      "meaning": "Registry or catalog mismatch versus manifest or on-disk expectations.",
+      "severity": "medium",
+      "privacy_class": "operational_metadata_only",
+      "allowed_metadata": ["registry_id", "expected_vs_actual_summary", "script_name"],
+      "forbidden_metadata": ["global_forbidden_metadata"],
+      "required_human_review": false,
+      "retention_note": "Prefer relative paths; avoid absolute paths that expose OS username if policy says so."
+    },
+    {
+      "type": "REPORT_STALE",
+      "meaning": "Report older than expected cadence for that class of artifact.",
+      "severity": "low",
+      "privacy_class": "operational_metadata_only",
+      "allowed_metadata": ["report_path_relative", "generated_at", "threshold_rule"],
+      "forbidden_metadata": ["global_forbidden_metadata"],
+      "required_human_review": false,
+      "retention_note": "Refresh by re-running the originating script; no PII in staleness rows."
+    },
+    {
+      "type": "UNKNOWN_SOURCE_PATH",
+      "meaning": "File or artifact appeared from an unregistered or unexpected folder relative to hub policy.",
+      "severity": "high",
+      "privacy_class": "operational_metadata_only",
+      "allowed_metadata": ["relative_path", "first_seen_timestamp", "classification_guess"],
+      "forbidden_metadata": ["global_forbidden_metadata", "inferred_owner_identity"],
+      "required_human_review": true,
+      "retention_note": "Escalate to human triage; may be benign copy or policy gap."
+    },
+    {
+      "type": "PROXY_OR_VPN_SIGNAL",
+      "meaning": "Network metadata suggests proxy/VPN use — **risk flag only**, no deanonymization.",
+      "severity": "low",
+      "privacy_class": "aggregate_risk_signal_only",
+      "allowed_metadata": ["signal_type", "confidence_band", "jurisdiction_note", "no_identity_binding"],
+      "forbidden_metadata": ["global_forbidden_metadata", "client_real_ip_if_policy_forbids", "correlation_to_named_user"],
+      "required_human_review": true,
+      "retention_note": "If product ever logs this class, legal and DRP sign-off first; Phase 1 is taxonomy only."
+    },
+    {
+      "type": "SENSITIVE_DATA_MOVEMENT",
+      "meaning": "Possible movement of private, health, child-related, or vault-tier data — requires review.",
+      "severity": "critical",
+      "privacy_class": "high_sensitivity_operational",
+      "allowed_metadata": ["data_class", "authorized_source_path", "authorized_target_path", "charter_ref_if_any"],
+      "forbidden_metadata": ["global_forbidden_metadata", "payload_contents"],
+      "required_human_review": true,
+      "retention_note": "14 DRP / 14 DOP review mandatory before any automated handling."
+    },
+    {
+      "type": "RECONVERGENCE_SUGGESTED",
+      "meaning": "System recommends merge, relink, or copy-back path — **report only** until human approved.",
+      "severity": "medium",
+      "privacy_class": "operational_metadata_only",
+      "allowed_metadata": ["suggestion_id", "paths_involved_relative", "risk_summary"],
+      "forbidden_metadata": ["global_forbidden_metadata"],
+      "required_human_review": true,
+      "retention_note": "No auto-apply; Turtle Mode one domain per change set."
+    },
+    {
+      "type": "HUMAN_GATE_REQUIRED",
+      "meaning": "AMK or delegated human approval needed before proceeding.",
+      "severity": "high",
+      "privacy_class": "governance",
+      "allowed_metadata": ["gate_category", "reason_code", "related_doc_refs"],
+      "forbidden_metadata": ["global_forbidden_metadata"],
+      "required_human_review": true,
+      "retention_note": "Log intent, not secrets."
+    },
+    {
+      "type": "BLOCKED_BY_DRP",
+      "meaning": "Action not allowed under current DRP / DOP governance posture.",
+      "severity": "high",
+      "privacy_class": "governance",
+      "allowed_metadata": ["drp_rule_hint", "blocked_action_class"],
+      "forbidden_metadata": ["global_forbidden_metadata"],
+      "required_human_review": true,
+      "retention_note": "Appeal path is human charter and policy update — not automation."
+    }
+  ]
+}

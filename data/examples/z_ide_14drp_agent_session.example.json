@@ -1,0 +1,53 @@
+{
+  "session_id": "cursor_ide_14drp_example_session_001",
+  "timestamp_created": "2026-05-05T14:00:00Z",
+  "agent_id": "cursor_ide",
+  "agent_display_name": "Cursor IDE",
+  "operator": "human_or_agent_identifier",
+  "project_id": "franed_ai",
+  "workspace_id": "franed_shadow_workspace",
+  "workspace_display_name": "Franed Shadow Workspace (AI Builder Focus)",
+  "repo_root": "C:\\Cursor Projects Organiser\\Z_Sanctuary_Universe",
+  "canonical_repo_root": "C:\\Cursor Projects Organiser\\Z_Sanctuary_Universe",
+  "repo_root_verified": true,
+  "intended_task": "Edit documentation to add Franed project status",
+  "task_summary": "Update docs/AI_BUILDER_CONTEXT.md with row linking Z-IDE-14DRP documentation",
+  "allowed_scope": [
+    "docs/**",
+    "docs/AI_BUILDER_CONTEXT.md"
+  ],
+  "forbidden_scope": [
+    "deploy",
+    "secrets_management",
+    "billing",
+    "provider_calls",
+    "bridge_activation",
+    "auto_launch",
+    "archive/**",
+    "apps/**/package.json"
+  ],
+  "files_expected_to_touch": [
+    "docs/AI_BUILDER_CONTEXT.md"
+  ],
+  "commands_expected_to_run": [
+    "npm run verify:md",
+    "npm run z:traffic"
+  ],
+  "high_risk_files_in_scope": true,
+  "high_risk_file_handoff_required": true,
+  "sacred_moves_in_scope": false,
+  "sacred_move_approved": false,
+  "autonomy_level": "L2_isolated_edit",
+  "approval_required": "HANDOFF_AFTER_EDIT",
+  "14_drp_law_acknowledged": true,
+  "started_at": "2026-05-05T14:00:00Z",
+  "status": "ACTIVE",
+  "latest_reports_read": [
+    "data/reports/z_ide_fusion_report.md",
+    "data/reports/z_traffic_minibots_status.md"
+  ],
+  "latest_reports_read_at": "2026-05-05T13:55:00Z",
+  "handoff_required": true,
+  "handoff_deadline": "2026-05-05T18:00:00Z",
+  "notes": "Example session showing Cursor IDE working in Franed shadow workspace with handoff requirement"
+}

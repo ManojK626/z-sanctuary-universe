@@ -1,0 +1,35 @@
+{
+  "schema": "z_api_communication_flow_policy_v1",
+  "posture": "read_only_routing_metadata_no_live_gateway",
+  "summary": "Phase Z-API-SPINE-1: registry and collision checks only. Gateway API, service mesh, and live telemetry are future-gated (charter + DRP + DOP).",
+  "signal_meanings": {
+    "GREEN": "Required spine rows validate; no unsafe collisions.",
+    "YELLOW": "Advisory: optional unknowns, reference-only placeholders, or naming similarity.",
+    "BLUE": "Human decision required for deploy/bridge/provider/billing/security posture.",
+    "RED": "Malformed required row, duplicate identity, or unsafe route collision.",
+    "GOLD": "Sealed baseline row (doctrine-only).",
+    "PURPLE": "Future mesh / observability lane.",
+    "UNKNOWN": "Insufficient metadata; dashboard only."
+  },
+  "route_dependency_rules": [
+    "Two services must not claim the same route_family in production without explicit_route_sharing_with.",
+    "reference_only and local environments downgrade collision severity to YELLOW unless risk_class is sacred.",
+    "No cross-service entitlement implied by similar display_name alone."
+  ],
+  "wording_collision_rules": [
+    "Flag when normalized display names share a high similarity ratio (substring or edit distance) and risk_class differs — advisory YELLOW.",
+    "Do not infer shared auth or billing from name similarity."
+  ],
+  "allowed_auto_checks": ["z:api:spine", "z:ecosystem:awareness", "verify:md", "z:traffic"],
+  "human_gated_actions": ["deploy", "dns_change", "billing", "provider_keys", "bridge_live", "mesh_enable", "otel_agent_bootstrap"],
+  "forbidden_auto_actions": ["deploy", "billing", "secrets", "provider_calls", "public_launch", "bridge_execution", "auto_merge", "child_data_collection", "voice_camera_gps_capture"],
+  "alert_policy": {
+    "notify_amk_default": ["RED", "BLUE"],
+    "quiet_by_default": ["GREEN", "GOLD", "YELLOW", "PURPLE", "UNKNOWN"]
+  },
+  "boundary_notes": {
+    "drp_14": "Sacred and commercial truth remain human-gated; no silent autonomy expansion from spine metadata.",
+    "dop_14": "Operational rollout (canary, staged routing) requires charter before any live Gateway or mesh bind."
+  },
+  "law_note": "API spine ≠ API gateway. Registry ≠ live service mesh. Health check ≠ deploy readiness. Similar name ≠ shared entitlement. GREEN ≠ deploy. BLUE requires AMK. RED blocks movement. AMK-Goku owns sacred moves."
+}

@@ -1,0 +1,502 @@
+{
+  "schema": "z_omnai_build_plan_report_v1",
+  "generated_at": "2026-05-04T12:01:39.191Z",
+  "overall_build_plan_signal": "BLUE",
+  "blueprint_validator_signal": "BLUE",
+  "focus_mode": null,
+  "focus_expansion": null,
+  "global_laws": [
+    "Blueprint does not equal product claim.",
+    "Build plan does not equal execution.",
+    "Creative output does not equal legal approval.",
+    "Public launch requires AMK or human approval.",
+    "Pricing requires Z-SUSBV and entitlement review.",
+    "No API or provider calls in this phase."
+  ],
+  "modes": [
+    {
+      "mode_id": "movie_trailer",
+      "source_pipeline_id": "z_omnai_movie_trailer_v1",
+      "purpose": "Internal motion and trailer planning: narrative, shots, audio briefs, and safety framing before spend.",
+      "signal": "GREEN",
+      "signal_notes": [],
+      "autonomy_level": "L1",
+      "dashboard_visibility": "amk_project_indicators_row",
+      "review_bundle": {
+        "inputs_required": [
+          "Audience and rating intent",
+          "Genre and tone references (non-infringing)",
+          "Budget band and timeline (internal)"
+        ],
+        "inputs_optional": [
+          "Casting assumptions (non-binding)",
+          "Reference film list (rights-safe)"
+        ],
+        "production_steps": [
+          "Concept and logline",
+          "World bible outline",
+          "Beat sheet and draft script",
+          "Scene list and shot intentions",
+          "Visual style board (references only)",
+          "Shot list and poster copy prompts (no IP theft)",
+          "Voice-over and music brief",
+          "Trailer copy variants",
+          "Safety and claim review pass"
+        ],
+        "output_assets": [
+          "World bible markdown",
+          "Script draft",
+          "Shot list CSV",
+          "Music brief markdown",
+          "Internal trailer copy doc"
+        ],
+        "required_evidence": [
+          {
+            "evidence_kind": "rights_and_clearance",
+            "description": "Clearance plan or placeholder budget for music, stock, talent, and clips."
+          },
+          {
+            "evidence_kind": "factual_claims",
+            "description": "On-screen claims sourced or marked fictional."
+          },
+          {
+            "evidence_kind": "safety_review",
+            "description": "Checklist excluding AGI, infinite power, and uncited superlatives from public-facing cuts."
+          }
+        ],
+        "safety_gates": [
+          "Rights review before external screeners",
+          "Minor depiction policy if applicable",
+          "No autonomous deploy language in production binders"
+        ],
+        "blocked_without_human_gate": [
+          "Public trailer upload",
+          "Paid media spend",
+          "Talent contracts",
+          "Final master for distribution"
+        ],
+        "recommended_verification": [
+          "npm run z:omnai",
+          "npm run z:omnai:build-plan",
+          "Peer creative read"
+        ],
+        "rollback": [
+          "Revert local doc or asset edits if plan was exploratory only.",
+          "Do not treat this JSON as merge approval or deploy approval."
+        ]
+      }
+    },
+    {
+      "mode_id": "marketing_campaign",
+      "source_pipeline_id": "z_omnai_marketing_campaign_v1",
+      "purpose": "Multi-channel campaign brief with evidence-first claims and AMK-gated external launch.",
+      "signal": "BLUE",
+      "signal_notes": [
+        "BLUE:surface:public_launch",
+        "BLUE:surface:legal_compliance"
+      ],
+      "autonomy_level": "L1",
+      "dashboard_visibility": "amk_project_indicators_row",
+      "review_bundle": {
+        "inputs_required": [
+          "Product slice definition",
+          "Target segments (non-PII persona)",
+          "Offer boundaries and exclusions"
+        ],
+        "inputs_optional": [
+          "Channel budget split (internal)",
+          "Creative mood references"
+        ],
+        "production_steps": [
+          "Product slice and promise boundaries",
+          "Audience and channel map",
+          "Claim ledger with evidence links",
+          "Landing narrative and CTA variants",
+          "Visual and motion briefs",
+          "FAQ and objection handling",
+          "Compliance review checklist",
+          "Launch checklist (operator-run)"
+        ],
+        "output_assets": [
+          "Campaign brief markdown",
+          "Claim ledger table",
+          "FAQ markdown",
+          "Launch checklist"
+        ],
+        "required_evidence": [
+          {
+            "evidence_kind": "claim_support",
+            "description": "Each customer-facing claim mapped to proof or softened copy."
+          },
+          {
+            "evidence_kind": "z_susbv_alignment",
+            "description": "Price or tier language checked against entitlement catalog posture."
+          },
+          {
+            "evidence_kind": "amk_go_no_go",
+            "description": "AMK indicators advisory pass before public launch."
+          }
+        ],
+        "safety_gates": [
+          "AMK owner for pricing or billing copy",
+          "Avoid outcome guarantee language",
+          "No AGI or infinite-capability positioning"
+        ],
+        "blocked_without_human_gate": [
+          "Public site or ad publish",
+          "Live SKU or checkout string changes",
+          "Press release with forward-looking financial statements"
+        ],
+        "recommended_verification": [
+          "npm run z:susbv",
+          "npm run z:traffic",
+          "npm run z:omnai:build-plan -- --mode=marketing_campaign"
+        ],
+        "rollback": [
+          "Revert local doc or asset edits if plan was exploratory only.",
+          "Do not treat this JSON as merge approval or deploy approval."
+        ]
+      }
+    },
+    {
+      "mode_id": "landing_page",
+      "source_pipeline_id": "z_omnai_product_landing_page_v1",
+      "purpose": "Single-product landing narrative and structure plan for engineering and design hand-off.",
+      "signal": "BLUE",
+      "signal_notes": [
+        "BLUE:surface:public_launch",
+        "BLUE:surface:legal_compliance"
+      ],
+      "autonomy_level": "L1",
+      "dashboard_visibility": "amk_project_indicators_row",
+      "review_bundle": {
+        "inputs_required": [
+          "Primary conversion goal",
+          "Feature list with honest limits",
+          "Support and privacy posture summary"
+        ],
+        "inputs_optional": [
+          "A/B copy hypotheses (internal)",
+          "Analytics event plan (non-PII)"
+        ],
+        "production_steps": [
+          "Hero promise aligned to evidence",
+          "Section outline: problem, approach, proof, pricing teaser (if any), FAQ",
+          "Social proof plan (permissions required)",
+          "Accessibility and performance notes",
+          "Safety pass on superlatives and futures",
+          "Hand-off spec for web implementation"
+        ],
+        "output_assets": [
+          "Landing copy doc",
+          "Wireframe notes",
+          "FAQ and objection table"
+        ],
+        "required_evidence": [
+          {
+            "evidence_kind": "screenshots_or_demo",
+            "description": "Dated captures or demo plan tied to current build."
+          },
+          {
+            "evidence_kind": "privacy_summary",
+            "description": "Data collected on page matches published privacy posture."
+          },
+          {
+            "evidence_kind": "pricing_accuracy",
+            "description": "If prices shown, values verified against authoritative source with owner initials."
+          }
+        ],
+        "safety_gates": [
+          "No medical or therapeutic claims without licensed review",
+          "No child-specific targeting without policy path",
+          "No API keys or secrets in mock HTML"
+        ],
+        "blocked_without_human_gate": [
+          "DNS or hosting cutover",
+          "Connecting analytics without policy check",
+          "Publishing unapproved pricing"
+        ],
+        "recommended_verification": [
+          "npm run z:omnai",
+          "Web readiness script for the target app when applicable"
+        ],
+        "rollback": [
+          "Revert local doc or asset edits if plan was exploratory only.",
+          "Do not treat this JSON as merge approval or deploy approval."
+        ]
+      }
+    },
+    {
+      "mode_id": "pdf_manual_ebook",
+      "source_pipeline_id": "z_omnai_pdf_manual_ebook_v1",
+      "purpose": "Long-form instructional or narrative PDF planning with versioning and export hygiene.",
+      "signal": "BLUE",
+      "signal_notes": [
+        "BLUE:surface:legal_compliance"
+      ],
+      "autonomy_level": "L1",
+      "dashboard_visibility": "amk_project_indicators_row",
+      "review_bundle": {
+        "inputs_required": [
+          "Reader skill level",
+          "Tooling versions the doc must match",
+          "Trademark and logo usage rules"
+        ],
+        "inputs_optional": [
+          "Localization scope",
+          "Print run constraints"
+        ],
+        "production_steps": [
+          "Outline and learning objectives",
+          "Draft chapters with screenshots",
+          "Diagram and asset sourcing log",
+          "Technical accuracy review",
+          "Style and accessibility pass",
+          "Export preset and file naming",
+          "Distribution list (internal vs customer)"
+        ],
+        "output_assets": [
+          "Outline markdown",
+          "Chapter drafts",
+          "Figure manifest CSV",
+          "Export checklist"
+        ],
+        "required_evidence": [
+          {
+            "evidence_kind": "technical_review",
+            "description": "Subject-matter owner sign-off on safety- or data-affecting procedures."
+          },
+          {
+            "evidence_kind": "version_pins",
+            "description": "Embedded product versions match release manifest."
+          },
+          {
+            "evidence_kind": "license_attribution",
+            "description": "Third-party figures and quotes correctly attributed."
+          }
+        ],
+        "safety_gates": [
+          "No instructions that bypass security controls",
+          "No forbidden active content in PDF where policy forbids"
+        ],
+        "blocked_without_human_gate": [
+          "Customer-visible help centre publish",
+          "Regulated packaging without specialist review"
+        ],
+        "recommended_verification": [
+          "npm run verify:md on extracted markdown if used",
+          "Accessibility spot check"
+        ],
+        "rollback": [
+          "Revert local doc or asset edits if plan was exploratory only.",
+          "Do not treat this JSON as merge approval or deploy approval."
+        ]
+      }
+    },
+    {
+      "mode_id": "tool_dashboard_prototype",
+      "source_pipeline_id": "z_omnai_tool_dashboard_prototype_v1",
+      "purpose": "Internal prototype plan for tools or dashboards: flows, data boundaries, and risk class before tickets.",
+      "signal": "GREEN",
+      "signal_notes": [],
+      "autonomy_level": "L1",
+      "dashboard_visibility": "amk_project_indicators_row",
+      "review_bundle": {
+        "inputs_required": [
+          "User need statement",
+          "Data classes touched (PII, payment, health, none)",
+          "Success metrics without dark patterns"
+        ],
+        "inputs_optional": [
+          "Wireframe tool export",
+          "Example payload fixtures (synthetic)"
+        ],
+        "production_steps": [
+          "Problem and user story map",
+          "Feature map MoSCoW",
+          "UI flow sketches",
+          "Data boundary diagram",
+          "Risk class label per Z autonomy policy",
+          "Build prompt for engineering (scoped)",
+          "Test plan outline",
+          "Receipt fields for dashboard indicators"
+        ],
+        "output_assets": [
+          "Flow diagram",
+          "Ticket breakdown markdown",
+          "Risk class table",
+          "Indicator mapping note"
+        ],
+        "required_evidence": [
+          {
+            "evidence_kind": "data_classification",
+            "description": "Written classification for each field shown or stored."
+          },
+          {
+            "evidence_kind": "threat_sketch",
+            "description": "Short abuse case list for operator review."
+          },
+          {
+            "evidence_kind": "indicator_mapping",
+            "description": "AMK indicators referenced as advisory only, not permission."
+          }
+        ],
+        "safety_gates": [
+          "No silent cross-project data bridges in mockups",
+          "No billing side-effects in prototype narrative",
+          "Charter note if future external API is contemplated"
+        ],
+        "blocked_without_human_gate": [
+          "Production merge",
+          "Live provider keys",
+          "Shipping telemetry without disclosure review"
+        ],
+        "recommended_verification": [
+          "npm run z:car2 when overlapping code exists",
+          "npm run dashboard:registry-verify when dashboard files change"
+        ],
+        "rollback": [
+          "Revert local doc or asset edits if plan was exploratory only.",
+          "Do not treat this JSON as merge approval or deploy approval."
+        ]
+      }
+    },
+    {
+      "mode_id": "music_sound_brief",
+      "source_pipeline_id": "z_omnai_music_sound_brief_v1",
+      "purpose": "Composer or library brief with mood, tempo, stems, and clearance path.",
+      "signal": "BLUE",
+      "signal_notes": [
+        "BLUE:surface:legal_compliance"
+      ],
+      "autonomy_level": "L1",
+      "dashboard_visibility": "amk_project_indicators_row",
+      "review_bundle": {
+        "inputs_required": [
+          "Mood and brand anchors",
+          "Duration and format targets",
+          "Licensing budget band"
+        ],
+        "inputs_optional": [
+          "Stem delivery spec",
+          "Loudness targets"
+        ],
+        "production_steps": [
+          "Mood and reference track list (licensed listening only)",
+          "Stem and loudness targets",
+          "Voice-over timing if combined",
+          "Clearance path choice: original, library, or commission",
+          "Revision rounds plan",
+          "Archive naming under vault convention"
+        ],
+        "output_assets": [
+          "Brief markdown",
+          "Tempo map",
+          "Reference playlist index (IDs not files if rights uncertain)"
+        ],
+        "required_evidence": [
+          {
+            "evidence_kind": "license_path",
+            "description": "Library or composer agreement status recorded."
+          },
+          {
+            "evidence_kind": "brand_guidelines",
+            "description": "Sonic palette constraints from brand doc if any."
+          },
+          {
+            "evidence_kind": "accessibility",
+            "description": "If audio carries UX meaning, note captions or rhythm for accessibility."
+          }
+        ],
+        "safety_gates": [
+          "No uncleared samples in shipped mixes",
+          "No harmful frequency claims"
+        ],
+        "blocked_without_human_gate": [
+          "Public channel master publish",
+          "Broadcast or festival sync without license"
+        ],
+        "recommended_verification": [
+          "Rights log review",
+          "npm run z:omnai"
+        ],
+        "rollback": [
+          "Revert local doc or asset edits if plan was exploratory only.",
+          "Do not treat this JSON as merge approval or deploy approval."
+        ]
+      }
+    },
+    {
+      "mode_id": "pitch_pack",
+      "source_pipeline_id": "z_omnai_investor_partner_pitch_v1",
+      "purpose": "Partner or investor pack outline with traction, risk, and disciplined language; not securities advice.",
+      "signal": "BLUE",
+      "signal_notes": [
+        "BLUE:surface:public_launch",
+        "BLUE:surface:pricing",
+        "BLUE:surface:legal_compliance"
+      ],
+      "autonomy_level": "L1",
+      "dashboard_visibility": "amk_project_indicators_row",
+      "review_bundle": {
+        "inputs_required": [
+          "Cap table sensitivity rules",
+          "Traction metrics with sources",
+          "Risk factors draft"
+        ],
+        "inputs_optional": [
+          "Appendix depth cap",
+          "Dry-run audience list (internal)"
+        ],
+        "production_steps": [
+          "Narrative arc: problem, insight, solution, traction",
+          "Product and roadmap slide storyboard",
+          "Unit economics or pricing posture (reference docs only)",
+          "Risk and mitigation pages",
+          "Data room index (no secrets in drafts)",
+          "Legal review queue list",
+          "Dry-run feedback log"
+        ],
+        "output_assets": [
+          "Slide outline markdown",
+          "Appendix list",
+          "Q&A rehearsal doc"
+        ],
+        "required_evidence": [
+          {
+            "evidence_kind": "metric_sources",
+            "description": "Each traction number has dated source export or file."
+          },
+          {
+            "evidence_kind": "counsel_boundary",
+            "description": "Forward-looking or securities-sensitive language screened by counsel when required."
+          },
+          {
+            "evidence_kind": "capability_truth",
+            "description": "Live versus planned features labeled; no AGI or infinite-power slides."
+          }
+        ],
+        "safety_gates": [
+          "No guaranteed return language",
+          "No misstatement of charter or bridge posture",
+          "Pricing slides align with policy metadata only"
+        ],
+        "blocked_without_human_gate": [
+          "External recipient send",
+          "Live investor site update",
+          "Subscription or billing term changes"
+        ],
+        "recommended_verification": [
+          "Legal review for jurisdiction",
+          "npm run z:susbv when commercial numbers appear",
+          "AMK Go/No-Go advisory read"
+        ],
+        "rollback": [
+          "Revert local doc or asset edits if plan was exploratory only.",
+          "Do not treat this JSON as merge approval or deploy approval."
+        ]
+      }
+    }
+  ],
+  "note": "Build plan and review bundle metadata only. Execution, APIs, deploy, and billing require separate AMK-chartered lanes."
+}

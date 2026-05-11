@@ -1,0 +1,35 @@
+{
+  "ts": "2026-03-05T16:02:55.433Z",
+  "status": "critical",
+  "critical_count": 5,
+  "warn_count": 0,
+  "checks": [
+    {
+      "id": "hygiene",
+      "status": "unknown"
+    },
+    {
+      "id": "proof",
+      "status": "unknown"
+    },
+    {
+      "id": "autorun",
+      "status": "unknown"
+    },
+    {
+      "id": "storage",
+      "status": "unknown"
+    },
+    {
+      "id": "layout",
+      "status": "unknown"
+    }
+  ],
+  "lane_notify": [
+    "observe",
+    "protect",
+    "repair",
+    "report"
+  ],
+  "message": "Security sentinel critical: immediate governance review required."
+}

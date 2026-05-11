@@ -1,0 +1,72 @@
+{
+  "schema_version": 1,
+  "generated_at": "2026-04-23T21:44:06.996Z",
+  "name": "Z-ZECCE",
+  "tagline": "Zero unconfirmed outcomes — v1 advisory bundle (Codex-facing receipts)",
+  "advisory": true,
+  "v1": {
+    "no_execution_authority": true,
+    "process_always_exits_zero": true
+  },
+  "overall_posture": "aligned",
+  "pass_count": 5,
+  "total_steps": 5,
+  "drp_note": "Honest pass/fail only. Advisory mode does not override DRP, vault policy, or human overseer authority.",
+  "steps": [
+    {
+      "id": "registry_omni",
+      "label": "Registry omni (structure + rules touch)",
+      "script": "scripts/z_registry_omni_verify.mjs",
+      "ok": true,
+      "exit_code": 0,
+      "duration_ms": 52,
+      "stdout_tail": "…RTC policy: AAFRTC\n[OK] Ecosystem: visual automation boundary: DRP-aligned\n[OK] Ecosystem: AI multi-option merge hints: 5 stage(s)\n\n--------------------------------\nResult: 100% SYNCED with PC/NAS and the Omni-Heart.\nCursor is aligned with the Z-OMNI Unified Organism. Section 9 and Section 10 = Moral and Technical Law.",
+      "stderr_tail": ""
+    },
+    {
+      "id": "sanctuary_structure",
+      "label": "Sanctuary structure verify",
+      "script": "scripts/z_sanctuary_structure_verify.mjs",
+      "ok": true,
+      "exit_code": 0,
+      "duration_ms": 48,
+      "stdout_tail": "…t\n[OK] Zuno state report script\n[OK] Module Registry sync script\n[OK] Folder Manager guard script\n[OK] Cursor folder blueprint JSON: exists\n[OK] Cursor folder blueprint dirs: all verify paths present\n[OK] Cursor folder bootstrap script\n[OK] Z-Creator Manual\n\n--------------------------------\nResult: PASS (39 ok, 0 fail)",
+      "stderr_tail": ""
+    },
+    {
+      "id": "formula_registry",
+      "label": "Formula registry validation",
+      "script": "scripts/validate_formula_registry.mjs",
+      "ok": true,
+      "exit_code": 0,
+      "duration_ms": 46,
+      "stdout_tail": "Formula registry validated (1 formulas, all assets present, metadata checked).",
+      "stderr_tail": ""
+    },
+    {
+      "id": "ai_consistency",
+      "label": "AI consistency check (cross-artifact)",
+      "script": "scripts/z_ai_consistency_check.mjs",
+      "ok": true,
+      "exit_code": 0,
+      "duration_ms": 52,
+      "stdout_tail": "✅ Z AI consistency alerts: C:\\Cursor Projects Organiser\\ZSanctuary_Universe\\data\\reports\\z_ai_consistency_alerts.json (watch)",
+      "stderr_tail": ""
+    },
+    {
+      "id": "vault_spine",
+      "label": "Vault spine (doc link integrity)",
+      "script": "scripts/z_vault_spine_verify.mjs",
+      "ok": true,
+      "exit_code": 0,
+      "duration_ms": 60,
+      "stdout_tail": "Z-Vault spine: C:\\Cursor Projects Organiser\\ZSanctuary_Universe\\data\\reports\\z_vault_spine_manifest.json status=green broken=0",
+      "stderr_tail": ""
+    }
+  ],
+  "report_files": {
+    "json": "data/reports/z_zecce_confirmations.json",
+    "md": "data/reports/z_zecce_confirmations.md"
+  },
+  "garage_link": "Run after Z-Garage intelligence layer when you want a single Codex receipt bundle. Optional: npm run z:garage:full-scan already includes formula sync + consistency + vault spine; this script re-runs those verifiers for a fresh ZECCE-only stamp without repeating the full scan chain."
+}

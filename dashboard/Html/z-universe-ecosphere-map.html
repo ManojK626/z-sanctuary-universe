@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="z-dashboard-role" content="ecosphere-map-readonly" />
+    <meta name="z-phase" content="ZMV-1B" />
+    <title>Z-Sanctuary · Living Ecosphere Map (read-only)</title>
+    <link rel="stylesheet" href="../styles/z-universe-ecosphere-map.css" />
+  </head>
+  <body class="z-eco-page">
+    <a class="z-eco-skip" href="#zEcoMain">Skip to map content</a>
+    <header class="z-eco-header">
+      <h1>Living Ecosphere Map</h1>
+      <p>
+        ZMV-1B · Loads hub JSON catalogs only — no execution, billing, APIs, or deploy actions from this page.
+      </p>
+    </header>
+    <div class="z-eco-banner" role="note">
+      <strong>Law:</strong> Visual reuse does not grant service access. Capability reference does not grant entitlement.
+      Live bridge requires charter plus 14 DRP / 14 DOP review.
+    </div>
+    <p id="zEcoStatus" class="z-eco-status" aria-live="polite">Initializing…</p>
+    <div class="z-eco-toolbar">
+      <label for="zEcoFilter">Filter cards</label>
+      <input id="zEcoFilter" type="search" placeholder="Type to filter (client-side only)" autocomplete="off" />
+      <a href="./index-skk-rkpk.html">Main dashboard</a>
+      <a href="../../docs/dashboard/Z_SANCTUARY_LIVING_ECOSPHERE_MAP.md" target="_blank" rel="noopener noreferrer"
+        >Design doc</a
+      >
+    </div>
+    <main id="zEcoMain" class="z-eco-main"></main>
+    <footer class="z-eco-foot">
+      Sources:
+      <code>data/z_universe_service_catalog.json</code>,
+      <code>data/z_cross_project_capability_index.json</code>,
+      <code>data/z_service_entitlement_catalog.json</code>,
+      <code>data/z_magical_visual_capability_registry.json</code>,
+      <code>data/z_shadow_preview_policy.json</code>. Serve from repo root so <code>fetch</code> succeeds.
+    </footer>
+    <script defer src="../scripts/z-universe-ecosphere-map-readonly.js"></script>
+  </body>
+</html>

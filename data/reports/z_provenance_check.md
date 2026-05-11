@@ -1,0 +1,12 @@
+# Z Provenance Check
+
+- Generated: 2026-03-18T19:44:17.011Z
+- Status: GREEN
+- Manifest Version: 0.1
+
+## Entries
+
+- [x] scripts/z_workspace_auto_sweep.mjs (auto sweep) | expected=3dac12d709eea8161f03af4ffd253e043f56abb0b8fad69452f9258e70882692 | actual=3dac12d709eea8161f03af4ffd253e043f56abb0b8fad69452f9258e70882692
+- [x] scripts/z_slo_guard.mjs (slo guard) | expected=d1a4018c55a2663de700cb19ad58a0d3e89f537fea1a7e1f43274b3d6683cf85 | actual=d1a4018c55a2663de700cb19ad58a0d3e89f537fea1a7e1f43274b3d6683cf85
+- [x] scripts/z_multi_workspace_guard.mjs (multi workspace guard) | expected=3f34e0770e710fa61fc4849d1cd421955e5bf1e86a3478c44b6c0a646432aac5 | actual=3f34e0770e710fa61fc4849d1cd421955e5bf1e86a3478c44b6c0a646432aac5
+- [x] scripts/z_workspace_broadcast_publish.mjs (broadcast publish) | expected=4d1f04b81679e03963f29e754976d5b736b3c923844cf8ea9e6c51d5140d13c6 | actual=4d1f04b81679e03963f29e754976d5b736b3c923844cf8ea9e6c51d5140d13c6

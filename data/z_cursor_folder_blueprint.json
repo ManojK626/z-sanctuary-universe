@@ -1,0 +1,25 @@
+{
+  "ZFormat": "v1",
+  "ZId": "z-cursor-folder-blueprint",
+  "ZUpdatedAt": "2026-04-14T00:00:00.000Z",
+  "ZDescription": "Canonical spine directories for ZSanctuary_Universe so Cursor, Zuno snapshots, and verifiers agree on layout. Use with scripts/z_cursor_folder_bootstrap.mjs.",
+  "ZHumanPrompt": "Zuno, create full folder structure for Cursor.",
+  "directories": [
+    { "path": ".cursor/rules", "note": "Project rules (.mdc) — always-applied governance", "verify": true, "mkdirOnApply": true },
+    { "path": ".cursor/commands", "note": "Slash-command workflow prompts", "verify": true, "mkdirOnApply": true },
+    { "path": ".cursor/agents", "note": "Custom subagent definitions", "verify": true, "mkdirOnApply": true },
+    { "path": ".vscode", "note": "Tasks, launch, workspace helpers", "verify": true, "mkdirOnApply": true },
+    { "path": "scripts", "note": "Node/Python tooling and verifiers", "verify": true, "mkdirOnApply": true },
+    { "path": "docs", "note": "Authority docs, specs, INDEX targets", "verify": true, "mkdirOnApply": true },
+    { "path": "docs/public", "note": "Static HTML apps (Super Chat, Creator Manual, …)", "verify": true, "mkdirOnApply": true },
+    { "path": "docs/vault", "note": "Vault policy refs (no raw secrets)", "verify": true, "mkdirOnApply": true },
+    { "path": "data", "note": "JSON registries, manifests, queues", "verify": true, "mkdirOnApply": true },
+    { "path": "data/reports", "note": "Generated reports, Zuno, hygiene, evidence", "verify": true, "mkdirOnApply": true },
+    { "path": "core", "note": "Dashboard panels and client scripts", "verify": true, "mkdirOnApply": true },
+    { "path": "dashboard/Html", "note": "Z-HODP dashboard entry HTML", "verify": true, "mkdirOnApply": true },
+    { "path": "interface", "note": "Shared CSS and UI chrome", "verify": true, "mkdirOnApply": true },
+    { "path": "rules", "note": "Formula registry and policy JSON", "verify": true, "mkdirOnApply": true },
+    { "path": "packages", "note": "npm workspaces packages", "verify": true, "mkdirOnApply": true },
+    { "path": "apps", "note": "npm workspaces apps (e.g. web)", "verify": true, "mkdirOnApply": true }
+  ]
+}

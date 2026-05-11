@@ -1,0 +1,14 @@
+---
+description: When AI lists multiple options — compare, merge, or route per Hierarchy Chief; record in register.
+globs:
+  - docs/Z-AI-MULTI-OPTION-MERGE-GUIDE.md
+  - data/z_ai_option_merge_hints.json
+  - data/z_pc_root_projects.json
+---
+
+# Multi-option proposals (Z-Sanctuary)
+
+1. **Do not** treat every option as equal — check **[docs/Z-HIERARCHY-CHIEF-AND-OBSERVER-VIEW.md](docs/Z-HIERARCHY-CHIEF-AND-OBSERVER-VIEW.md)** for **which repo owns** the work.
+2. **Prefer** one clear outcome: **merge** (synthesise), **select** (pick one + defer others), or **route** (split by project). See **[docs/Z-AI-MULTI-OPTION-MERGE-GUIDE.md](docs/Z-AI-MULTI-OPTION-MERGE-GUIDE.md)**.
+3. **Record** material decisions in **[docs/Z-MASTER-MODULES-REGISTER.md](docs/Z-MASTER-MODULES-REGISTER.md)** or **`data/z_module_manifest.json`** when modules are involved; **`data/z_pc_root_projects.json`** when a sibling’s role or URL changes.
+4. **Multi-root:** Never assume `${workspaceFolder}` is the hub — use **[data/z_pc_root_projects.json](data/z_pc_root_projects.json)** and hub tasks (**AAFRTC**) from **ZSanctuary_Universe** root when verifying hub changes.

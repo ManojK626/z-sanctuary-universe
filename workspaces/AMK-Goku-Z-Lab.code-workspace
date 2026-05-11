@@ -1,0 +1,23 @@
+{
+  "folders": [
+    {
+      "path": "C:/Cursor Projects Organiser/Z_Labs",
+      "name": "Z_Labs (deep work)"
+    }
+  ],
+  "settings": {
+    "files.insertFinalNewline": true,
+    "files.trimTrailingWhitespace": true,
+    "search.exclude": {
+      "**/node_modules": true,
+      "**/dist": true,
+      "**/build": true,
+      "**/.pytest_cache": true
+    },
+    "files.watcherExclude": {
+      "**/node_modules/**": true,
+      "**/dist/**": true,
+      "**/build/**": true
+    }
+  }
+}

@@ -1,0 +1,107 @@
+{
+  "generated_at": "2026-05-03T14:38:57.110Z",
+  "requirements_version": "2026-04-17T00:00:00.000Z",
+  "requirements_file": "data/z_cloudflare_ai_comms_requirements.json",
+  "contingency_purpose": [
+    "Contingency: serve static/read-only Z-Bridge or dashboard mirrors when local SSWS is unreachable.",
+    "Soft launch: preview hosting per MONOREPO_GUIDE Task 008 without binding hub governance to Cloudflare production semantics."
+  ],
+  "workers_dev_subdomain": "manojkeerpal.workers.dev",
+  "operator_email_ref": "manojkeerpal@gmail.com",
+  "precaution_themes": [
+    {
+      "id": "secrets_edge",
+      "severity": "block",
+      "summary": "Never commit Cloudflare API tokens, Account ID in tracked files, or Wrangler secrets. Use dashboard Secrets and local untracked env.",
+      "comms_binding": "Release gate and vault policy outrank edge deploy convenience."
+    },
+    {
+      "id": "ask_ai_cloudflare",
+      "severity": "medium",
+      "summary": "Cloudflare Ask AI is for navigation and how-to only — not a source of binding governance.",
+      "comms_binding": "Same as MONOREPO_GUIDE Phase 7; cross-check Z_SANCTUARY_SECURITY_POLICY."
+    },
+    {
+      "id": "third_party_agent_integrations",
+      "severity": "high",
+      "summary": "Read-only API tokens for dashboard agents (e.g. Agent Lee style prompts): minimum scope; review quarterly.",
+      "comms_binding": "Z-Bridge logs must not echo tokens; revoke on leak."
+    },
+    {
+      "id": "workers_ai_future",
+      "severity": "medium",
+      "summary": "Workers AI / Vectorize / R2 / KV: adopt only with a designed use case in Master Register — not required for hub core.",
+      "comms_binding": "Comms flows stay manifest- and file-driven until architecture approves edge AI data paths."
+    },
+    {
+      "id": "emergency_role",
+      "severity": "medium",
+      "summary": "Cloudflare is contingency + soft launch — restores read-only visibility; does not replace Cursor, registry, or Folder Manager authority.",
+      "comms_binding": "z_cloudflare_ai_comms_manifest.json timestamps document propagation through toolchain."
+    }
+  ],
+  "resolved_paths": [
+    {
+      "kind": "authority",
+      "path": "docs/Z-HIERARCHY-CHIEF-AND-OBSERVER-VIEW.md",
+      "exists": true,
+      "absolute": "C:\\Cursor Projects Organiser\\ZSanctuary_Universe\\docs\\Z-HIERARCHY-CHIEF-AND-OBSERVER-VIEW.md"
+    },
+    {
+      "kind": "authority",
+      "path": "docs/Z-COMPLETIONS-TEST-AND-COMMUNICATIONS-FLOW.md",
+      "exists": true,
+      "absolute": "C:\\Cursor Projects Organiser\\ZSanctuary_Universe\\docs\\Z-COMPLETIONS-TEST-AND-COMMUNICATIONS-FLOW.md"
+    },
+    {
+      "kind": "authority",
+      "path": "rules/Z_SANCTUARY_SECURITY_POLICY.md",
+      "exists": true,
+      "absolute": "C:\\Cursor Projects Organiser\\ZSanctuary_Universe\\rules\\Z_SANCTUARY_SECURITY_POLICY.md"
+    },
+    {
+      "kind": "authority",
+      "path": "MONOREPO_GUIDE.md",
+      "exists": true,
+      "absolute": "C:\\Cursor Projects Organiser\\ZSanctuary_Universe\\MONOREPO_GUIDE.md"
+    },
+    {
+      "kind": "instructional_doc",
+      "path": "docs/Z-CLOUDFLARE-AI-COMMS-PRECAUTIONS.md",
+      "id": "cloudflare-ai-comms-master",
+      "exists": true,
+      "absolute": "C:\\Cursor Projects Organiser\\ZSanctuary_Universe\\docs\\Z-CLOUDFLARE-AI-COMMS-PRECAUTIONS.md"
+    },
+    {
+      "kind": "instructional_doc",
+      "path": "MONOREPO_GUIDE.md",
+      "id": "task008_monorepo",
+      "exists": true,
+      "absolute": "C:\\Cursor Projects Organiser\\ZSanctuary_Universe\\MONOREPO_GUIDE.md"
+    },
+    {
+      "kind": "data_source",
+      "path": "data/z_cloudflare_contingency_identity.json",
+      "id": "cloudflare_contingency_identity",
+      "exists": true,
+      "absolute": "C:\\Cursor Projects Organiser\\ZSanctuary_Universe\\data\\z_cloudflare_contingency_identity.json"
+    },
+    {
+      "kind": "data_source",
+      "path": "data/z_ecosystem_github_identity.json",
+      "id": "ecosystem_github_identity",
+      "exists": true,
+      "absolute": "C:\\Cursor Projects Organiser\\ZSanctuary_Universe\\data\\z_ecosystem_github_identity.json"
+    },
+    {
+      "kind": "data_source",
+      "path": "data/z_bridge",
+      "id": "z_bridge",
+      "exists": true,
+      "absolute": "C:\\Cursor Projects Organiser\\ZSanctuary_Universe\\data\\z_bridge"
+    }
+  ],
+  "missing_paths": [],
+  "comms_flow_doc": "docs/Z-COMPLETIONS-TEST-AND-COMMUNICATIONS-FLOW.md",
+  "ok": true
+}

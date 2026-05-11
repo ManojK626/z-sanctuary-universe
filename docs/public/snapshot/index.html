@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Z-Sanctuary Snapshot</title>
+    <link rel="stylesheet" href="./snapshot.css" />
+  </head>
+  <body>
+    <main class="snapshot">
+      <header class="snapshot__header">
+        <div>
+          <h1>Z-Sanctuary External Snapshot</h1>
+          <p class="muted">Simple facts only · read-only · privacy-first</p>
+        </div>
+        <div class="snapshot__meta">
+          <div>Generated: <span id="snapGenerated">—</span></div>
+          <div>Rhythm: <span id="snapMode">—</span></div>
+        </div>
+      </header>
+
+      <section class="card">
+        <h2>System State</h2>
+        <div>Quiet Mode: <span id="quietModeStatus">—</span></div>
+        <div class="muted" id="quietModeReason">—</div>
+      </section>
+
+      <section class="card">
+        <h2>Z-OCTAVE</h2>
+        <div>Public Ready: <span id="octaveReady">—</span></div>
+        <div>Pilot Seed: <span id="octavePilotSeed">—</span></div>
+      </section>
+
+      <section class="card">
+        <h2>Auto-Run</h2>
+        <div>Auto tasks: <span id="autoTasksSetting">—</span></div>
+        <div class="muted" id="autoTasksList">—</div>
+      </section>
+
+      <section class="card">
+        <h2>Pending Audit</h2>
+        <div>Total markers: <span id="pendingTotal">—</span></div>
+        <div class="muted" id="pendingUpdated">—</div>
+      </section>
+
+      <section class="card">
+        <h2>Charter</h2>
+        <div class="muted">
+          <a href="../../ethics/crisis-charter.md" target="_blank">Open Crisis & Ethics Charter</a>
+        </div>
+      </section>
+
+      <section class="card">
+        <h2>Deeper Information</h2>
+        <p class="muted">
+          For deeper information, submit questions through the Trust Portal. Requests are reviewed
+          by Z-Sanctuary governance and connected AI guardians.
+        </p>
+        <div class="muted">
+          <a href="../../Amk_Goku Worldwide Loterry/ui/public_trust/index.html" target="_blank">
+            Open Trust Portal
+          </a>
+        </div>
+      </section>
+
+      <footer class="muted">
+        This snapshot is observational only. It shows simple facts to respect privacy and keep the
+        system grounded.
+      </footer>
+    </main>
+
+    <script src="./snapshot.js"></script>
+
+    <script src="/interface/z_accessibility.js"></script>
+    <script src="/interface/z_auto_compass.js"></script>
+  </body>
+</html>

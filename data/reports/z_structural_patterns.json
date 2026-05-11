@@ -1,0 +1,60 @@
+{
+  "schema_version": 2,
+  "generated_at": "2026-05-03T14:39:01.970Z",
+  "advisory_only": true,
+  "drp_note": "SPI is heuristic and advisory. Confirm rename_suspects and catalog deltas on disk before registry edits. No auto-fix.",
+  "system_phase": "optimized",
+  "evolution_phase": "baseline",
+  "predictive_signals": {
+    "silent_drift_detected": false,
+    "rename_instability_detected": false,
+    "stability_convergence_detected": true,
+    "phantom_project_detected": false,
+    "over_control_detected": false
+  },
+  "risk_band": "low",
+  "top_note": "stability convergence (low confidence=0.78)",
+  "structural_patterns_score": 100,
+  "adaptive_learning": {
+    "present": true,
+    "learning_cycles": 1,
+    "last_updated": "2026-04-26T12:21:21.827Z",
+    "structural_patterns_score_baseline": 100,
+    "structural_patterns_score_tuned": 100,
+    "weight_blend": 1.0176,
+    "drp_note": "Bounded multipliers from data/reports/z_adaptive_learning_state.json (remove file to reset)."
+  },
+  "structural_patterns": [
+    {
+      "type": "stability_convergence",
+      "confidence": 0.7799999999999999,
+      "impact": "low",
+      "evidence": [
+        "no_catalog_delta",
+        "no_guardian_misses",
+        "no_pending_decisions",
+        "no_rollout_alerts"
+      ]
+    }
+  ],
+  "decision_suggestions": [],
+  "pre_warnings": [],
+  "inputs": {
+    "diff_file": "data/reports/z_pc_root_dirent_catalog_diff.json",
+    "diff_present": true,
+    "added_count": 0,
+    "removed_count": 0,
+    "rename_suspects_count": 0,
+    "structural_delta": 0,
+    "diff_generated_at": "2026-04-25T22:51:17.692Z",
+    "decision_log_entries_last_7d": 0,
+    "decision_log_entries_after_diff": 0,
+    "guardian_missing": 0,
+    "pending_decisions": 0,
+    "rollup_alerts": 0,
+    "pattern_reopen_sum": 0,
+    "high_severity_patterns": 0,
+    "qosmei_composite_snapshot": 100,
+    "drift_detected": false
+  }
+}

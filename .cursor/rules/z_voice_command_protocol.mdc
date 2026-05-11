@@ -1,0 +1,28 @@
+---
+description: >-
+  Voice mode — submit keywords (e.g. zgo) are triggers only; full doctrine lives in VOICE_COMMAND_PROTOCOL.
+  When interpreting spoken instructions, identify project, respect Z-MAOS and Z-Cursor Ops, and enforce sacred-move consent.
+globs:
+alwaysApply: true
+---
+
+# Z-Sanctuary: Voice command protocol (hook)
+
+**Canonical doc:** [docs/z-cursor-ops/VOICE_COMMAND_PROTOCOL.md](docs/z-cursor-ops/VOICE_COMMAND_PROTOCOL.md)
+
+Voice submit-word settings hold **single-word triggers only** (default **`zgo`**). Long doctrine belongs in rules and hub docs — not in that field.
+
+When the operator speaks (including after a submit trigger):
+
+1. **Identify the active project** — Z-Sanctuary hub vs XL2 vs other roots; do not assume multi-repo context without clarity.
+2. **Respect Z-MAOS and Z-Cursor Ops** — queue, charter, and opening cycle; prefer [docs/z-cursor-ops/README.md](docs/z-cursor-ops/README.md) and [docs/z-maos/Z_MAOS_CHARTER.md](docs/z-maos/Z_MAOS_CHARTER.md).
+
+**Sacred rules (no bypass):**
+
+- No auto-merge
+- No auto-deploy
+- No unsolicited external connections
+- No Z-Sanctuary ↔ XL2 coupling without an approved charter
+- Merge, deploy, payment, legal or pricing copy, public launch, bulk user-data actions, and similar **sacred moves** require **AMK-Goku** (and hub governance) consent
+
+Prefer the smallest safe action. If blocked, say why and point to the required gate.

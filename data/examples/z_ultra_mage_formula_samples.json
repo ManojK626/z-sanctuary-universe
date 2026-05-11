@@ -1,0 +1,98 @@
+{
+  "schema": "z_ultra_mage_formula_samples_v1",
+  "samples": [
+    {
+      "formula_instance_id": "um_doc_stack_green",
+      "title": "Registry-only formula codex narration",
+      "layers_invoked": ["z_ultra_alignment", "mage_multiverse_alignment_governance"],
+      "declared_outputs": ["docs", "governance_formulas"],
+      "execution_risk": {},
+      "amk_gate": "not_required",
+      "proposal_flags": { "charter_for_live_engine": false, "persistent_external_lane": false }
+    },
+    {
+      "formula_instance_id": "um_routing_green",
+      "title": "MOD-DIST + replica fabric combined advisory schema",
+      "layers_invoked": ["mod_dist_routing", "replica_fabric_governance"],
+      "declared_outputs": ["schemas", "mock_plans", "reports"],
+      "execution_risk": {},
+      "amk_gate": "advisory_only",
+      "proposal_flags": { "charter_for_live_engine": false, "persistent_external_lane": false }
+    },
+    {
+      "formula_instance_id": "um_xbus_classifier_green",
+      "title": "XBUS permission-class formula on paper only",
+      "layers_invoked": ["xbus_connector_permission", "amk_sacred_gate"],
+      "declared_outputs": ["risk_classifications", "route_suggestions"],
+      "execution_risk": {},
+      "amk_gate": "advisory_only",
+      "proposal_flags": { "charter_for_live_engine": false, "persistent_external_lane": false }
+    },
+    {
+      "formula_instance_id": "um_traffic_rollup_green",
+      "title": "Traffic signal law as governance narrative",
+      "layers_invoked": ["traffic_signal_law", "mage_multiverse_alignment_governance"],
+      "declared_outputs": ["reports", "docs"],
+      "execution_risk": {},
+      "amk_gate": "not_required",
+      "proposal_flags": { "charter_for_live_engine": false, "persistent_external_lane": false }
+    },
+    {
+      "formula_instance_id": "um_yellow_unknown_layer",
+      "title": "Incomplete layer reference sample",
+      "layers_invoked": ["omega_symbolic_expansion", "future_layer_stub"],
+      "declared_outputs": ["reports"],
+      "execution_risk": {},
+      "amk_gate": "advisory_only",
+      "proposal_flags": { "charter_for_live_engine": false, "persistent_external_lane": false }
+    },
+    {
+      "formula_instance_id": "um_yellow_unknown_output_token",
+      "title": "Output token typo",
+      "layers_invoked": ["z_ultra_alignment"],
+      "declared_outputs": ["reports", "live_runtime_magic"],
+      "execution_risk": {},
+      "amk_gate": "advisory_only",
+      "proposal_flags": { "charter_for_live_engine": false, "persistent_external_lane": false }
+    },
+    {
+      "formula_instance_id": "um_blue_charter_live_engine",
+      "title": "Request to graduate formula into executable engine posture",
+      "layers_invoked": ["mage_multiverse_alignment_governance", "amk_sacred_gate"],
+      "declared_outputs": ["governance_formulas", "mock_plans"],
+      "execution_risk": {},
+      "amk_gate": "required_before_engine",
+      "proposal_flags": { "charter_for_live_engine": true, "persistent_external_lane": false }
+    },
+    {
+      "formula_instance_id": "um_blue_persistent_external",
+      "title": "Proposed durable external connector blueprint",
+      "layers_invoked": ["xbus_connector_permission", "z_ultra_alignment"],
+      "declared_outputs": ["schemas", "route_suggestions"],
+      "execution_risk": {},
+      "amk_gate": "required_before_external_lane",
+      "proposal_flags": { "charter_for_live_engine": false, "persistent_external_lane": true }
+    },
+    {
+      "formula_instance_id": "um_blue_gap_charter_notes",
+      "title": "Charter ask with missing rollback_note",
+      "layers_invoked": ["replica_fabric_governance"],
+      "declared_outputs": ["reports"],
+      "execution_risk": {},
+      "amk_gate": "required_before_engine",
+      "rollback_note": "",
+      "proposal_flags": { "charter_for_live_engine": true, "persistent_external_lane": false }
+    }
+  ],
+  "fixture_samples": [
+    {
+      "formula_instance_id": "um_fixture_red_live_deploy",
+      "title": "Fixture — must never ship enabled",
+      "layers_invoked": ["omega_symbolic_expansion"],
+      "declared_outputs": ["reports"],
+      "execution_risk": { "autonomous_deployment": true },
+      "amk_gate": "not_required",
+      "proposal_flags": { "charter_for_live_engine": false, "persistent_external_lane": false }
+    }
+  ]
+}

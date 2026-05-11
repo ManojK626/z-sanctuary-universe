@@ -1,0 +1,20 @@
+{
+  "generated_at": "2026-04-29T21:35:18.684Z",
+  "hub_root": "C:\\Cursor Projects Organiser\\ZSanctuary_Universe",
+  "passport_dir": "data/z_project_passports",
+  "status": "green",
+  "files_checked": 1,
+  "files": [
+    {
+      "file": "data/z_project_passports/z_anima_lite.example.json",
+      "pass": true,
+      "issues": []
+    }
+  ],
+  "totals": {
+    "passed": 1,
+    "failed": 0,
+    "issue_count": 0
+  },
+  "note": "All passport files passed validation."
+}

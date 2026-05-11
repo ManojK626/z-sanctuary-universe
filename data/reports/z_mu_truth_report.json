@@ -1,0 +1,101 @@
+{
+  "schema": "z.mu.truth.report.v1",
+  "module_id": "z_mu_truth_civic_engine",
+  "signal": "BLUE",
+  "ledger_mode": "civic_claim_ledger_metadata_only",
+  "phase": "Z-MU-TRUTH-1",
+  "generated_at": "2026-05-07T20:21:28.600Z",
+  "fixtures_included": false,
+  "registry_checks": {
+    "passed": [
+      "ledger mode is civic_claim_ledger_metadata_only.",
+      "no_external_runtime is true.",
+      "source policy lists required claim fields.",
+      "forbidden_escalation_phrases present."
+    ],
+    "advisory": [],
+    "red": []
+  },
+  "claim_results": [
+    {
+      "claim_id": "mu_rights_pathway_labour_info_001",
+      "category": "rights_pathways",
+      "source_status": "verified_official_neutral_language",
+      "signal": "GREEN",
+      "reasons": [
+        "official-neutral posture and peaceful wording"
+      ]
+    },
+    {
+      "claim_id": "mu_wage_facts_anchor_002",
+      "category": "labour",
+      "source_status": "needs_verification",
+      "signal": "YELLOW",
+      "reasons": [
+        "evidence gap — needs official or Rank A–C anchor"
+      ]
+    },
+    {
+      "claim_id": "mu_debt_pressure_research_stub_003",
+      "category": "debt_access",
+      "source_status": "needs_verification",
+      "signal": "YELLOW",
+      "reasons": [
+        "evidence gap — needs official or Rank A–C anchor"
+      ]
+    },
+    {
+      "claim_id": "mu_pathway_human_rights_procedure_004",
+      "category": "rights_pathways",
+      "source_status": "verified_official_neutral_language",
+      "signal": "GREEN",
+      "reasons": [
+        "official-neutral posture and peaceful wording"
+      ]
+    },
+    {
+      "claim_id": "mu_sample_yellow_eoc_stub_009",
+      "category": "governance_institutions",
+      "source_status": "needs_verification",
+      "signal": "YELLOW",
+      "reasons": [
+        "evidence gap — needs official or Rank A–C anchor"
+      ]
+    },
+    {
+      "claim_id": "mu_sample_blue_public_figure_claim_010",
+      "category": "governance_institutions",
+      "source_status": "legal_or_ethics_human_review_required",
+      "signal": "BLUE",
+      "reasons": [
+        "human/legal/ethics gate before any distribution"
+      ]
+    },
+    {
+      "claim_id": "mu_sample_green_statsmauritius_pointer_011",
+      "category": "economy",
+      "source_status": "verified_official_neutral_language",
+      "signal": "GREEN",
+      "reasons": [
+        "official-neutral posture and peaceful wording"
+      ]
+    }
+  ],
+  "summary": {
+    "green": 3,
+    "yellow": 3,
+    "blue": 1,
+    "red": 0
+  },
+  "locked_law": [
+    "Civic truth is not incitement.",
+    "Awareness is not harassment.",
+    "Evidence is not rumor.",
+    "Policy simulation is not prediction.",
+    "Complaint pathway notes are not legal advice.",
+    "GREEN is not campaign launch.",
+    "BLUE requires AMK / legal / human review.",
+    "RED blocks movement.",
+    "AMK-Goku owns sacred moves."
+  ]
+}

@@ -1,0 +1,74 @@
+{
+  "schema": "z.legal.product.ops.registry.v1",
+  "registry_name": "Z-Legal Product & IP Compliance Workstation",
+  "mode": "product_legal_governance_concept_only",
+  "phase": "Z-LEGAL-PRODUCT-OPS-1",
+  "workstation_worlds": [
+    "ai_software_world",
+    "physical_product_world",
+    "ip_creation_proof_world",
+    "manufacturing_supplier_world",
+    "compliance_safety_world",
+    "canvas_world_map_proof_world"
+  ],
+  "product_families": [
+    "z_octave",
+    "z_neuro_matrix",
+    "z_ankle_water_weight",
+    "z_natural_inhaler",
+    "z_gadget_mirrors",
+    "z_connected_devices",
+    "z_wearables_headsets_glasses",
+    "future_sensor_output_devices"
+  ],
+  "review_panels": [
+    "invention_log",
+    "prototype_evidence",
+    "ip_candidates",
+    "product_safety_gate",
+    "manufacturing_readiness",
+    "supplier_contract_review",
+    "materials_provenance",
+    "medical_health_claim_gate",
+    "data_protection_gate",
+    "ai_feature_risk_gate",
+    "commercial_claim_review",
+    "canvas_product_tree",
+    "world_map_activity_concept"
+  ],
+  "forbidden_actions": [
+    "product_launch",
+    "manufacturing_order",
+    "supplier_api_call",
+    "payment_activation",
+    "medical_claim_publication",
+    "safety_certification_claim",
+    "patent_filing_claim",
+    "trademark_registration_claim",
+    "legal_advice_claim",
+    "lawyer_endorsement_claim",
+    "client_data_collection",
+    "evidence_upload_runtime",
+    "world_tracking_or_surveillance",
+    "cloudflare_deploy"
+  ],
+  "signal_rules": {
+    "GREEN": "docs/registry/concept only",
+    "YELLOW": "metadata incomplete",
+    "BLUE": "lawyer/IP/product-safety/human decision required",
+    "RED": "launch/manufacturing/payment/medical claim/certification/legal advice/deploy/surveillance enabled"
+  },
+  "locked_law": [
+    "Product map ≠ product launch.",
+    "Prototype evidence ≠ safety certification.",
+    "Invention log ≠ patent filing.",
+    "IP candidate ≠ registered right.",
+    "Manufacturer list ≠ contract.",
+    "Canvas map ≠ live tracking.",
+    "AI summary ≠ legal advice.",
+    "GREEN ≠ launch.",
+    "BLUE requires AMK/legal/product-safety review.",
+    "RED blocks movement.",
+    "AMK-Goku owns sacred moves."
+  ]
+}

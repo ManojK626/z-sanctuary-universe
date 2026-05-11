@@ -1,0 +1,30 @@
+{
+  "schema_version": 1,
+  "generated_at": "2026-04-24T11:53:23.633Z",
+  "advisory": true,
+  "name": "PAM + SICMNS maturity bridge",
+  "drp_note": "Heuristic join of local usage aggregates and SICMNS probe facts. Not in-product learning.",
+  "user_pattern": "light_hub_user",
+  "system_state": "weak_stream",
+  "system_state_key": "low_signal",
+  "weakest": "signal",
+  "recommendation": "Run 3–5 simulations, emit varied events, then re-run the maturity probe.",
+  "sources": [
+    ".zpam/patterns.json",
+    "data/reports/z_sicmns_maturity_probe.json"
+  ],
+  "pam_summary": {
+    "total_events": 2,
+    "top_modules": [
+      "z-ai-ecosphere",
+      "z-qa-rp"
+    ]
+  },
+  "probe_summary": {
+    "system_alive": true,
+    "event_count": 1,
+    "simulation_runs": 0,
+    "error_rate": "low",
+    "signal_strength": "low"
+  }
+}

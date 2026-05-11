@@ -1,0 +1,254 @@
+body {
+  margin: 0;
+  font-family: system-ui, Segoe UI, Roboto, sans-serif;
+  background: #0a0e14;
+  color: #dce8f2;
+  line-height: 1.5;
+}
+
+.eco {
+  max-width: 760px;
+  margin: 0 auto;
+  padding: 1.5rem 1.25rem 3rem;
+}
+
+.eco-hero h1 {
+  margin: 0 0 0.5rem;
+  font-size: 1.65rem;
+  color: #7ee8ff;
+}
+
+.eco-lead {
+  margin: 0;
+  font-size: 0.92rem;
+  color: #9aa;
+}
+
+.eco-panel {
+  margin-top: 1.35rem;
+  padding: 1rem 1.1rem;
+  border-radius: 10px;
+  border: 1px solid #1e3a4d;
+  background: #0f1822;
+}
+
+.eco-panel h2 {
+  margin: 0 0 0.65rem;
+  font-size: 1.05rem;
+  color: #9cf7d0;
+}
+
+.eco-muted {
+  color: #8aa;
+  font-size: 0.86rem;
+}
+
+.eco-links {
+  margin: 0;
+  padding-left: 1.2rem;
+}
+
+.eco-links a {
+  color: #5ee7ff;
+}
+
+.eco-foot {
+  margin-top: 2rem;
+  font-size: 0.78rem;
+  color: #678;
+}
+
+.eco-krtaa h3 {
+  margin: 0.75rem 0 0.35rem;
+  font-size: 0.95rem;
+  color: #b8a8ff;
+}
+
+.eco-krtaa-lesson {
+  margin: 0.5rem 0 0;
+  padding-left: 1rem;
+  border-left: 2px solid #3d3566;
+  font-size: 0.88rem;
+}
+
+.eco-krtaa-cite {
+  display: block;
+  margin: 0.2rem 0 0 0.5rem;
+  font-size: 0.78rem;
+  color: #7a8899;
+}
+
+.eco-zuno h2 {
+  margin-top: 0;
+}
+
+.eco-zuno-exec {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+  gap: 0.35rem 0.75rem;
+  margin: 0.65rem 0 0.85rem;
+  font-size: 0.85rem;
+}
+
+.eco-zuno-exec div span:first-child {
+  color: #7a8899;
+  display: block;
+  font-size: 0.76rem;
+}
+
+.eco-zuno-exec strong {
+  color: #c4e4ff;
+  font-weight: 600;
+}
+
+.eco-zuno-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  align-items: center;
+  margin: 0.75rem 0 0.5rem;
+}
+
+.eco-zuno-btn {
+  font: inherit;
+  font-size: 0.86rem;
+  padding: 0.4rem 0.75rem;
+  border-radius: 6px;
+  border: 1px solid #2a4a5e;
+  background: #152028;
+  color: #7ee8ff;
+  cursor: pointer;
+}
+
+.eco-zuno-btn:hover,
+.eco-zuno-btn:focus-visible {
+  border-color: #3d6a80;
+  background: #1a2a35;
+  outline: none;
+}
+
+.eco-zuno-btn:disabled {
+  opacity: 0.45;
+  cursor: not-allowed;
+}
+
+.eco-zuno-status {
+  min-height: 1.1rem;
+  font-size: 0.8rem;
+  color: #7cfd9a;
+  margin: 0;
+}
+
+code {
+  font-size: 0.85em;
+  background: #050a10;
+  padding: 0.1em 0.35em;
+  border-radius: 4px;
+}
+
+.eco-overall {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin-bottom: 1rem;
+}
+
+.eco-meter {
+  width: 72px;
+  height: 72px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 1.1rem;
+  border: 3px solid currentColor;
+}
+
+.eco-rings {
+  display: grid;
+  gap: 0.65rem;
+}
+
+.eco-ring {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 0.5rem 1rem;
+  align-items: center;
+  padding: 0.55rem 0.65rem;
+  border-radius: 8px;
+  border-left: 4px solid var(--ring-color, #789);
+  background: rgba(255, 255, 255, 0.03);
+}
+
+.eco-ring h3 {
+  margin: 0;
+  font-size: 0.88rem;
+  color: #cde;
+}
+
+.eco-ring .pct {
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+.eco-ring .band {
+  grid-column: 1 / -1;
+  font-size: 0.78rem;
+  color: #9aa;
+}
+
+.eco-tasks {
+  font-size: 0.82rem;
+  margin-top: 0.75rem;
+}
+
+.eco-tasks ul {
+  margin: 0.35rem 0 0;
+  padding-left: 1.1rem;
+}
+
+.eco-health-card {
+  margin-top: 1.25rem;
+  padding: 0.75rem 0.85rem;
+  border-radius: 8px;
+  border: 1px solid #2a5a4a;
+  background: rgba(100, 200, 150, 0.08);
+  font-size: 0.84rem;
+}
+
+.eco-health-card h2 {
+  margin: 0 0 0.45rem;
+  font-size: 0.95rem;
+  color: #9cf7d0;
+}
+
+.eco-health-card .eco-muted {
+  margin-top: 0.35rem;
+}
+
+.eco-comm-card {
+  margin-top: 1rem;
+  padding: 0.75rem 0.85rem;
+  border-radius: 8px;
+  border: 1px solid #3d4a6e;
+  background: rgba(120, 160, 255, 0.08);
+  font-size: 0.84rem;
+}
+
+.eco-comm-card h2 {
+  margin: 0 0 0.45rem;
+  font-size: 0.95rem;
+  color: #a8c4ff;
+}
+
+.eco-comm-card .eco-muted {
+  margin-top: 0.35rem;
+}
+
+.eco-comm-sources {
+  margin-top: 0.45rem;
+  font-size: 0.8rem;
+  line-height: 1.45;
+}

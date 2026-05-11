@@ -1,0 +1,13 @@
+{
+  "schema": "z_omnai_core_scenarios_manifest_v1",
+  "description": "Hand-crafted edge mixes to combine with cartesian matrix in npm run omnai:core:all",
+  "scenarios": [
+    "data/examples/z_omnai_core_scenario_matrix_sample_a.json",
+    "data/examples/z_omnai_core_scenario_red_veto_ci.json",
+    "data/examples/z_omnai_core_scenario_red_veto_ant8.json",
+    "data/examples/z_omnai_core_scenario_inf_tier.json",
+    "data/examples/z_omnai_core_scenario_path_complete.json",
+    "data/examples/z_omnai_core_scenario_entity_minibot_allow.json",
+    "data/examples/z_omnai_core_scenario_deploy_spine.json"
+  ]
+}

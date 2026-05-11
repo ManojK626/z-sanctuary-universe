@@ -1,0 +1,21 @@
+{
+  "version": "1.0.0",
+  "generated_at": "2026-02-14T00:00:00Z",
+  "dirs": [
+    {
+      "path": "products/Z-OCTAVE/hardware/shell-geometry",
+      "intent": "placeholder",
+      "note": "Reserved for future CAD/silhouette assets"
+    },
+    {
+      "path": "products/Z-OCTAVE/hardware/textile-layers",
+      "intent": "placeholder",
+      "note": "Reserved for layer stack references"
+    },
+    {
+      "path": "products/Z-OCTAVE/hardware/variants",
+      "intent": "placeholder",
+      "note": "Reserved for variant-specific physical specs"
+    }
+  ]
+}

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="z-project-id" content="dashboard-z-ai-ecosphere" />
+    <meta name="z-dashboard-role" content="subsystem-dashboard" />
+    <meta name="z-project-family" content="Z-Sanctuary Universe" />
+    <title>Z AI Ecosphere · SSWS · Formulas · Tower</title>
+    <link rel="stylesheet" href="ecosphere.css" />
+  </head>
+  <body>
+    <div class="eco">
+      <header class="eco-hero" data-z-project="dashboard-z-ai-ecosphere">
+        <h1>Z AI Ecosphere ledger</h1>
+        <p class="eco-lead">
+          Main Dashboard · Project folder:
+          <code>dashboard/z-ai-ecosphere</code> — Z-SSWS, Z-Mega / QOSMEI formulas, AI Tower, shadow &amp; mini-bots — synced from hub reports.
+          Advisory only.
+        </p>
+      </header>
+      <section class="eco-panel" id="eco-loaded" aria-live="polite">
+        <p class="eco-muted">Loading <code>data/reports/z_ai_ecosphere_ledger.json</code>…</p>
+      </section>
+      <section class="eco-panel eco-krtaa" id="eco-krtaa" aria-live="polite">
+        <p class="eco-muted">Loading Z-KRTAAO curriculum from <code>data/reports/z_krtaa_curriculum.json</code>…</p>
+      </section>
+      <section class="eco-panel eco-krtaa" id="eco-papao" aria-live="polite">
+        <p class="eco-muted">Loading Z-PAPAO brief from <code>data/reports/z_papao_precaution_brief.json</code>…</p>
+      </section>
+      <section class="eco-panel eco-zuno" id="eco-zuno" aria-live="polite">
+        <p class="eco-muted">Loading Zuno system state from <code>data/reports/zuno_system_state_report.json</code>…</p>
+      </section>
+      <section class="eco-panel">
+        <h2>Canonical docs</h2>
+        <ul class="eco-links">
+          <li><a href="../../docs/Z-SSWS-ALL-PROJECTS-AND-AI-COLONY-BLUEPRINT.md">Z-SSWS &amp; AI colony blueprint</a></li>
+          <li><a href="../../docs/Z-ULTRA-INSTINCTS-AND-FORMULAS.md">Z-Ultra &amp; Z-Mega formulas</a></li>
+          <li><a href="../../data/z_qosmei_manifest.json">Z-QOSMEI manifest</a></li>
+          <li><a href="../../data/z_ai_ecosphere_config.json">Ecosphere config</a> · <a href="../../data/z_scte_manifest.json">Z-SCTE manifest</a></li>
+          <li><a href="../../docs/Z-KRTAAO-DESIGN.md">Z-KRTAAO design</a> · emit: <code>npm run krtaa:curriculum-emit</code></li>
+          <li><a href="../../docs/z-krtaa-prompt-packs/README.md">Z-KRTAAO prompt packs (v3)</a> — copy-paste preambles for Cursor / Tower</li>
+          <li><a href="../../docs/Z-PAPAO-DESIGN.md">Z-PAPAO design</a> · emit: <code>npm run papao:precaution-emit</code></li>
+          <li><a href="../../docs/Z-ECOSYSTEM-CAUSE-EFFECT-MARKET-MAP.md">Z-Ecosystem — cause, effect &amp; market map (living)</a></li>
+        </ul>
+        <p class="eco-muted">
+          Creator log: <code>data/logs/z_ai_task_accomplishments.jsonl</code> · Business:
+          <code>data/logs/z_ai_task_accomplishments_business.jsonl</code> — then
+          <code>npm run ai:ecosphere:refresh</code> (ledger + CSV) or
+          <code>npm run ai:task-log:csv</code> only.
+        </p>
+      </section>
+      <footer class="eco-foot">Refresh ledger after SSWS daily, guardian, or AI status updates.</footer>
+    </div>
+    <script src="ecosphere.js" defer></script>
+  </body>
+</html>

@@ -1,0 +1,598 @@
+Amk_Goku Worldwide Loterry\data\reports\commentary\euromillions.20260123T211002Z.commentary.md
+Amk_Goku Worldwide Loterry\data\reports\commentary\euromillions.20260123T214833Z.commentary.md
+Amk_Goku Worldwide Loterry\data\reports\commentary\euromillions.20260123T214846Z.commentary.md
+Amk_Goku Worldwide Loterry\data\reports\commentary\euromillions.20260124T190405Z.commentary.md
+Amk_Goku Worldwide Loterry\data\reports\commentary\euromillions.20260125T150309Z.commentary.md
+Amk_Goku Worldwide Loterry\data\reports\commentary\euromillions.20260125T155409Z.commentary.md
+Amk_Goku Worldwide Loterry\data\reports\commentary\euromillions.20260125T170421Z.commentary.md
+Amk_Goku Worldwide Loterry\data\reports\commentary\euromillions.20260126T181502Z.commentary.md
+Amk_Goku Worldwide Loterry\data\reports\commentary\euromillions.20260126T184237Z.commentary.md
+Amk_Goku Worldwide Loterry\data\reports\commentary\euromillions.20260127T192546Z.commentary.md
+Amk_Goku Worldwide Loterry\data\reports\commentary\global-sevens.20260123T211002Z.commentary.md
+Amk_Goku Worldwide Loterry\data\reports\commentary\global-sevens.20260123T214833Z.commentary.md
+Amk_Goku Worldwide Loterry\data\reports\commentary\global-sevens.20260123T214846Z.commentary.md
+Amk_Goku Worldwide Loterry\data\reports\commentary\global-sevens.20260124T190405Z.commentary.md
+Amk_Goku Worldwide Loterry\data\reports\commentary\global-sevens.20260125T150309Z.commentary.md
+Amk_Goku Worldwide Loterry\data\reports\commentary\global-sevens.20260125T155409Z.commentary.md
+Amk_Goku Worldwide Loterry\data\reports\commentary\global-sevens.20260125T170421Z.commentary.md
+Amk_Goku Worldwide Loterry\data\reports\commentary\global-sevens.20260126T181502Z.commentary.md
+Amk_Goku Worldwide Loterry\data\reports\commentary\global-sevens.20260126T184237Z.commentary.md
+Amk_Goku Worldwide Loterry\data\reports\commentary\global-sevens.20260127T192546Z.commentary.md
+Amk_Goku Worldwide Loterry\data\reports\commentary\mega-millions.20260125T150309Z.commentary.md
+Amk_Goku Worldwide Loterry\data\reports\commentary\mega-millions.20260125T155409Z.commentary.md
+Amk_Goku Worldwide Loterry\data\reports\commentary\mega-millions.20260125T170421Z.commentary.md
+Amk_Goku Worldwide Loterry\data\reports\commentary\mega-millions.20260126T181502Z.commentary.md
+Amk_Goku Worldwide Loterry\data\reports\commentary\mega-millions.20260126T184237Z.commentary.md
+Amk_Goku Worldwide Loterry\data\reports\commentary\mega-millions.20260127T192546Z.commentary.md
+Amk_Goku Worldwide Loterry\data\reports\commentary\powerball.20260125T150309Z.commentary.md
+Amk_Goku Worldwide Loterry\data\reports\commentary\powerball.20260125T155409Z.commentary.md
+Amk_Goku Worldwide Loterry\data\reports\commentary\powerball.20260125T170421Z.commentary.md
+Amk_Goku Worldwide Loterry\data\reports\commentary\powerball.20260126T181502Z.commentary.md
+Amk_Goku Worldwide Loterry\data\reports\commentary\powerball.20260126T184237Z.commentary.md
+Amk_Goku Worldwide Loterry\data\reports\commentary\powerball.20260127T192546Z.commentary.md
+Amk_Goku Worldwide Loterry\data\safe_vault\CONDITIONS.md
+Amk_Goku Worldwide Loterry\data\safe_vault\README.md
+Amk_Goku Worldwide Loterry\data\safe_vault\REPORT_SUMMARY.md
+Amk_Goku Worldwide Loterry\data\_snapshots\20260126T184111Z\commentary\eurojackpot.20260123T211002Z.commentary.md
+Amk_Goku Worldwide Loterry\data\_snapshots\20260126T184111Z\commentary\eurojackpot.20260123T214833Z.commentary.md
+Amk_Goku Worldwide Loterry\data\_snapshots\20260126T184111Z\commentary\eurojackpot.20260123T214846Z.commentary.md
+Amk_Goku Worldwide Loterry\data\_snapshots\20260126T184111Z\commentary\eurojackpot.20260124T190405Z.commentary.md
+Amk_Goku Worldwide Loterry\data\_snapshots\20260126T184111Z\commentary\eurojackpot.20260125T150309Z.commentary.md
+Amk_Goku Worldwide Loterry\data\_snapshots\20260126T184111Z\commentary\eurojackpot.20260125T155409Z.commentary.md
+Amk_Goku Worldwide Loterry\data\_snapshots\20260126T184111Z\commentary\eurojackpot.20260125T170421Z.commentary.md
+Amk_Goku Worldwide Loterry\data\_snapshots\20260126T184111Z\commentary\eurojackpot.20260126T181502Z.commentary.md
+Amk_Goku Worldwide Loterry\data\_snapshots\20260126T184111Z\commentary\euromillions.20260123T211002Z.commentary.md
+Amk_Goku Worldwide Loterry\data\_snapshots\20260126T184111Z\commentary\euromillions.20260123T214833Z.commentary.md
+Amk_Goku Worldwide Loterry\data\_snapshots\20260126T184111Z\commentary\euromillions.20260123T214846Z.commentary.md
+Amk_Goku Worldwide Loterry\data\_snapshots\20260126T184111Z\commentary\euromillions.20260124T190405Z.commentary.md
+Amk_Goku Worldwide Loterry\data\_snapshots\20260126T184111Z\commentary\euromillions.20260125T150309Z.commentary.md
+Amk_Goku Worldwide Loterry\data\_snapshots\20260126T184111Z\commentary\euromillions.20260125T155409Z.commentary.md
+Amk_Goku Worldwide Loterry\data\_snapshots\20260126T184111Z\commentary\euromillions.20260125T170421Z.commentary.md
+Amk_Goku Worldwide Loterry\data\_snapshots\20260126T184111Z\commentary\euromillions.20260126T181502Z.commentary.md
+Amk_Goku Worldwide Loterry\data\_snapshots\20260126T184111Z\commentary\global-sevens.20260123T211002Z.commentary.md
+Amk_Goku Worldwide Loterry\data\_snapshots\20260126T184111Z\commentary\global-sevens.20260123T214833Z.commentary.md
+Amk_Goku Worldwide Loterry\data\_snapshots\20260126T184111Z\commentary\global-sevens.20260123T214846Z.commentary.md
+Amk_Goku Worldwide Loterry\data\_snapshots\20260126T184111Z\commentary\global-sevens.20260124T190405Z.commentary.md
+Amk_Goku Worldwide Loterry\data\_snapshots\20260126T184111Z\commentary\global-sevens.20260125T150309Z.commentary.md
+Amk_Goku Worldwide Loterry\data\_snapshots\20260126T184111Z\commentary\global-sevens.20260125T155409Z.commentary.md
+Amk_Goku Worldwide Loterry\data\_snapshots\20260126T184111Z\commentary\global-sevens.20260125T170421Z.commentary.md
+Amk_Goku Worldwide Loterry\data\_snapshots\20260126T184111Z\commentary\global-sevens.20260126T181502Z.commentary.md
+Amk_Goku Worldwide Loterry\data\_snapshots\20260126T184111Z\commentary\mega-millions.20260125T150309Z.commentary.md
+Amk_Goku Worldwide Loterry\data\_snapshots\20260126T184111Z\commentary\mega-millions.20260125T155409Z.commentary.md
+Amk_Goku Worldwide Loterry\data\_snapshots\20260126T184111Z\commentary\mega-millions.20260125T170421Z.commentary.md
+Amk_Goku Worldwide Loterry\data\_snapshots\20260126T184111Z\commentary\mega-millions.20260126T181502Z.commentary.md
+Amk_Goku Worldwide Loterry\data\_snapshots\20260126T184111Z\commentary\powerball.20260125T150309Z.commentary.md
+Amk_Goku Worldwide Loterry\data\_snapshots\20260126T184111Z\commentary\powerball.20260125T155409Z.commentary.md
+Amk_Goku Worldwide Loterry\data\_snapshots\20260126T184111Z\commentary\powerball.20260125T170421Z.commentary.md
+Amk_Goku Worldwide Loterry\data\_snapshots\20260126T184111Z\commentary\powerball.20260126T181502Z.commentary.md
+Amk_Goku Worldwide Loterry\data\_snapshots\20260126T184132Z\commentary\eurojackpot.20260123T211002Z.commentary.md
+Amk_Goku Worldwide Loterry\data\_snapshots\20260126T184132Z\commentary\eurojackpot.20260123T214833Z.commentary.md
+Amk_Goku Worldwide Loterry\data\_snapshots\20260126T184132Z\commentary\eurojackpot.20260123T214846Z.commentary.md
+Amk_Goku Worldwide Loterry\data\_snapshots\20260126T184132Z\commentary\eurojackpot.20260124T190405Z.commentary.md
+Amk_Goku Worldwide Loterry\data\_snapshots\20260126T184132Z\commentary\eurojackpot.20260125T150309Z.commentary.md
+Amk_Goku Worldwide Loterry\data\_snapshots\20260126T184132Z\commentary\eurojackpot.20260125T155409Z.commentary.md
+Amk_Goku Worldwide Loterry\data\_snapshots\20260126T184132Z\commentary\eurojackpot.20260125T170421Z.commentary.md
+Amk_Goku Worldwide Loterry\data\_snapshots\20260126T184132Z\commentary\eurojackpot.20260126T181502Z.commentary.md
+Amk_Goku Worldwide Loterry\data\_snapshots\20260126T184132Z\commentary\euromillions.20260123T211002Z.commentary.md
+Amk_Goku Worldwide Loterry\data\_snapshots\20260126T184132Z\commentary\euromillions.20260123T214833Z.commentary.md
+Amk_Goku Worldwide Loterry\data\_snapshots\20260126T184132Z\commentary\euromillions.20260123T214846Z.commentary.md
+Amk_Goku Worldwide Loterry\data\_snapshots\20260126T184132Z\commentary\euromillions.20260124T190405Z.commentary.md
+Amk_Goku Worldwide Loterry\data\_snapshots\20260126T184132Z\commentary\euromillions.20260125T150309Z.commentary.md
+Amk_Goku Worldwide Loterry\data\_snapshots\20260126T184132Z\commentary\euromillions.20260125T155409Z.commentary.md
+Amk_Goku Worldwide Loterry\data\_snapshots\20260126T184132Z\commentary\euromillions.20260125T170421Z.commentary.md
+Amk_Goku Worldwide Loterry\data\_snapshots\20260126T184132Z\commentary\euromillions.20260126T181502Z.commentary.md
+Amk_Goku Worldwide Loterry\data\_snapshots\20260126T184132Z\commentary\global-sevens.20260123T211002Z.commentary.md
+Amk_Goku Worldwide Loterry\data\_snapshots\20260126T184132Z\commentary\global-sevens.20260123T214833Z.commentary.md
+Amk_Goku Worldwide Loterry\data\_snapshots\20260126T184132Z\commentary\global-sevens.20260123T214846Z.commentary.md
+Amk_Goku Worldwide Loterry\data\_snapshots\20260126T184132Z\commentary\global-sevens.20260124T190405Z.commentary.md
+Amk_Goku Worldwide Loterry\data\_snapshots\20260126T184132Z\commentary\global-sevens.20260125T150309Z.commentary.md
+Amk_Goku Worldwide Loterry\data\_snapshots\20260126T184132Z\commentary\global-sevens.20260125T155409Z.commentary.md
+Amk_Goku Worldwide Loterry\data\_snapshots\20260126T184132Z\commentary\global-sevens.20260125T170421Z.commentary.md
+Amk_Goku Worldwide Loterry\data\_snapshots\20260126T184132Z\commentary\global-sevens.20260126T181502Z.commentary.md
+Amk_Goku Worldwide Loterry\data\_snapshots\20260126T184132Z\commentary\mega-millions.20260125T150309Z.commentary.md
+Amk_Goku Worldwide Loterry\data\_snapshots\20260126T184132Z\commentary\mega-millions.20260125T155409Z.commentary.md
+Amk_Goku Worldwide Loterry\data\_snapshots\20260126T184132Z\commentary\mega-millions.20260125T170421Z.commentary.md
+Amk_Goku Worldwide Loterry\data\_snapshots\20260126T184132Z\commentary\mega-millions.20260126T181502Z.commentary.md
+Amk_Goku Worldwide Loterry\data\_snapshots\20260126T184132Z\commentary\powerball.20260125T150309Z.commentary.md
+Amk_Goku Worldwide Loterry\data\_snapshots\20260126T184132Z\commentary\powerball.20260125T155409Z.commentary.md
+Amk_Goku Worldwide Loterry\data\_snapshots\20260126T184132Z\commentary\powerball.20260125T170421Z.commentary.md
+Amk_Goku Worldwide Loterry\data\_snapshots\20260126T184132Z\commentary\powerball.20260126T181502Z.commentary.md
+Amk_Goku Worldwide Loterry\data\_snapshots\20260126T184152Z\commentary\eurojackpot.20260123T211002Z.commentary.md
+Amk_Goku Worldwide Loterry\data\_snapshots\20260126T184152Z\commentary\eurojackpot.20260123T214833Z.commentary.md
+Amk_Goku Worldwide Loterry\data\_snapshots\20260126T184152Z\commentary\eurojackpot.20260123T214846Z.commentary.md
+Amk_Goku Worldwide Loterry\data\_snapshots\20260126T184152Z\commentary\eurojackpot.20260124T190405Z.commentary.md
+Amk_Goku Worldwide Loterry\data\_snapshots\20260126T184152Z\commentary\eurojackpot.20260125T150309Z.commentary.md
+Amk_Goku Worldwide Loterry\data\_snapshots\20260126T184152Z\commentary\eurojackpot.20260125T155409Z.commentary.md
+Amk_Goku Worldwide Loterry\data\_snapshots\20260126T184152Z\commentary\eurojackpot.20260125T170421Z.commentary.md
+Amk_Goku Worldwide Loterry\data\_snapshots\20260126T184152Z\commentary\eurojackpot.20260126T181502Z.commentary.md
+Amk_Goku Worldwide Loterry\data\_snapshots\20260126T184152Z\commentary\euromillions.20260123T211002Z.commentary.md
+Amk_Goku Worldwide Loterry\data\_snapshots\20260126T184152Z\commentary\euromillions.20260123T214833Z.commentary.md
+Amk_Goku Worldwide Loterry\data\_snapshots\20260126T184152Z\commentary\euromillions.20260123T214846Z.commentary.md
+Amk_Goku Worldwide Loterry\data\_snapshots\20260126T184152Z\commentary\euromillions.20260124T190405Z.commentary.md
+Amk_Goku Worldwide Loterry\data\_snapshots\20260126T184152Z\commentary\euromillions.20260125T150309Z.commentary.md
+Amk_Goku Worldwide Loterry\data\_snapshots\20260126T184152Z\commentary\euromillions.20260125T155409Z.commentary.md
+Amk_Goku Worldwide Loterry\data\_snapshots\20260126T184152Z\commentary\euromillions.20260125T170421Z.commentary.md
+Amk_Goku Worldwide Loterry\data\_snapshots\20260126T184152Z\commentary\euromillions.20260126T181502Z.commentary.md
+Amk_Goku Worldwide Loterry\data\_snapshots\20260126T184152Z\commentary\global-sevens.20260123T211002Z.commentary.md
+Amk_Goku Worldwide Loterry\data\_snapshots\20260126T184152Z\commentary\global-sevens.20260123T214833Z.commentary.md
+Amk_Goku Worldwide Loterry\data\_snapshots\20260126T184152Z\commentary\global-sevens.20260123T214846Z.commentary.md
+Amk_Goku Worldwide Loterry\data\_snapshots\20260126T184152Z\commentary\global-sevens.20260124T190405Z.commentary.md
+Amk_Goku Worldwide Loterry\data\_snapshots\20260126T184152Z\commentary\global-sevens.20260125T150309Z.commentary.md
+Amk_Goku Worldwide Loterry\data\_snapshots\20260126T184152Z\commentary\global-sevens.20260125T155409Z.commentary.md
+Amk_Goku Worldwide Loterry\data\_snapshots\20260126T184152Z\commentary\global-sevens.20260125T170421Z.commentary.md
+Amk_Goku Worldwide Loterry\data\_snapshots\20260126T184152Z\commentary\global-sevens.20260126T181502Z.commentary.md
+Amk_Goku Worldwide Loterry\data\_snapshots\20260126T184152Z\commentary\mega-millions.20260125T150309Z.commentary.md
+Amk_Goku Worldwide Loterry\data\_snapshots\20260126T184152Z\commentary\mega-millions.20260125T155409Z.commentary.md
+Amk_Goku Worldwide Loterry\data\_snapshots\20260126T184152Z\commentary\mega-millions.20260125T170421Z.commentary.md
+Amk_Goku Worldwide Loterry\data\_snapshots\20260126T184152Z\commentary\mega-millions.20260126T181502Z.commentary.md
+Amk_Goku Worldwide Loterry\data\_snapshots\20260126T184152Z\commentary\powerball.20260125T150309Z.commentary.md
+Amk_Goku Worldwide Loterry\data\_snapshots\20260126T184152Z\commentary\powerball.20260125T155409Z.commentary.md
+Amk_Goku Worldwide Loterry\data\_snapshots\20260126T184152Z\commentary\powerball.20260125T170421Z.commentary.md
+Amk_Goku Worldwide Loterry\data\_snapshots\20260126T184152Z\commentary\powerball.20260126T181502Z.commentary.md
+Amk_Goku Worldwide Loterry\data\_snapshots\20260129T165827Z\commentary\eurojackpot.20260123T211002Z.commentary.md
+Amk_Goku Worldwide Loterry\data\_snapshots\20260129T165827Z\commentary\eurojackpot.20260123T214833Z.commentary.md
+Amk_Goku Worldwide Loterry\data\_snapshots\20260129T165827Z\commentary\eurojackpot.20260123T214846Z.commentary.md
+Amk_Goku Worldwide Loterry\data\_snapshots\20260129T165827Z\commentary\eurojackpot.20260124T190405Z.commentary.md
+Amk_Goku Worldwide Loterry\data\_snapshots\20260129T165827Z\commentary\eurojackpot.20260125T150309Z.commentary.md
+Amk_Goku Worldwide Loterry\data\_snapshots\20260129T165827Z\commentary\eurojackpot.20260125T155409Z.commentary.md
+Amk_Goku Worldwide Loterry\data\_snapshots\20260129T165827Z\commentary\eurojackpot.20260125T170421Z.commentary.md
+Amk_Goku Worldwide Loterry\data\_snapshots\20260129T165827Z\commentary\eurojackpot.20260126T181502Z.commentary.md
+Amk_Goku Worldwide Loterry\data\_snapshots\20260129T165827Z\commentary\eurojackpot.20260126T184237Z.commentary.md
+Amk_Goku Worldwide Loterry\data\_snapshots\20260129T165827Z\commentary\eurojackpot.20260127T192546Z.commentary.md
+Amk_Goku Worldwide Loterry\data\_snapshots\20260129T165827Z\commentary\euromillions.20260123T211002Z.commentary.md
+Amk_Goku Worldwide Loterry\data\_snapshots\20260129T165827Z\commentary\euromillions.20260123T214833Z.commentary.md
+Amk_Goku Worldwide Loterry\data\_snapshots\20260129T165827Z\commentary\euromillions.20260123T214846Z.commentary.md
+Amk_Goku Worldwide Loterry\data\_snapshots\20260129T165827Z\commentary\euromillions.20260124T190405Z.commentary.md
+Amk_Goku Worldwide Loterry\data\_snapshots\20260129T165827Z\commentary\euromillions.20260125T150309Z.commentary.md
+Amk_Goku Worldwide Loterry\data\_snapshots\20260129T165827Z\commentary\euromillions.20260125T155409Z.commentary.md
+Amk_Goku Worldwide Loterry\data\_snapshots\20260129T165827Z\commentary\euromillions.20260125T170421Z.commentary.md
+Amk_Goku Worldwide Loterry\data\_snapshots\20260129T165827Z\commentary\euromillions.20260126T181502Z.commentary.md
+Amk_Goku Worldwide Loterry\data\_snapshots\20260129T165827Z\commentary\euromillions.20260126T184237Z.commentary.md
+Amk_Goku Worldwide Loterry\data\_snapshots\20260129T165827Z\commentary\euromillions.20260127T192546Z.commentary.md
+Amk_Goku Worldwide Loterry\data\_snapshots\20260129T165827Z\commentary\global-sevens.20260123T211002Z.commentary.md
+Amk_Goku Worldwide Loterry\data\_snapshots\20260129T165827Z\commentary\global-sevens.20260123T214833Z.commentary.md
+Amk_Goku Worldwide Loterry\data\_snapshots\20260129T165827Z\commentary\global-sevens.20260123T214846Z.commentary.md
+Amk_Goku Worldwide Loterry\data\_snapshots\20260129T165827Z\commentary\global-sevens.20260124T190405Z.commentary.md
+Amk_Goku Worldwide Loterry\data\_snapshots\20260129T165827Z\commentary\global-sevens.20260125T150309Z.commentary.md
+Amk_Goku Worldwide Loterry\data\_snapshots\20260129T165827Z\commentary\global-sevens.20260125T155409Z.commentary.md
+Amk_Goku Worldwide Loterry\data\_snapshots\20260129T165827Z\commentary\global-sevens.20260125T170421Z.commentary.md
+Amk_Goku Worldwide Loterry\data\_snapshots\20260129T165827Z\commentary\global-sevens.20260126T181502Z.commentary.md
+Amk_Goku Worldwide Loterry\data\_snapshots\20260129T165827Z\commentary\global-sevens.20260126T184237Z.commentary.md
+Amk_Goku Worldwide Loterry\data\_snapshots\20260129T165827Z\commentary\global-sevens.20260127T192546Z.commentary.md
+Amk_Goku Worldwide Loterry\data\_snapshots\20260129T165827Z\commentary\mega-millions.20260125T150309Z.commentary.md
+Amk_Goku Worldwide Loterry\data\_snapshots\20260129T165827Z\commentary\mega-millions.20260125T155409Z.commentary.md
+Amk_Goku Worldwide Loterry\data\_snapshots\20260129T165827Z\commentary\mega-millions.20260125T170421Z.commentary.md
+Amk_Goku Worldwide Loterry\data\_snapshots\20260129T165827Z\commentary\mega-millions.20260126T181502Z.commentary.md
+Amk_Goku Worldwide Loterry\data\_snapshots\20260129T165827Z\commentary\mega-millions.20260126T184237Z.commentary.md
+Amk_Goku Worldwide Loterry\data\_snapshots\20260129T165827Z\commentary\mega-millions.20260127T192546Z.commentary.md
+Amk_Goku Worldwide Loterry\data\_snapshots\20260129T165827Z\commentary\powerball.20260125T150309Z.commentary.md
+Amk_Goku Worldwide Loterry\data\_snapshots\20260129T165827Z\commentary\powerball.20260125T155409Z.commentary.md
+Amk_Goku Worldwide Loterry\data\_snapshots\20260129T165827Z\commentary\powerball.20260125T170421Z.commentary.md
+Amk_Goku Worldwide Loterry\data\_snapshots\20260129T165827Z\commentary\powerball.20260126T181502Z.commentary.md
+Amk_Goku Worldwide Loterry\data\_snapshots\20260129T165827Z\commentary\powerball.20260126T184237Z.commentary.md
+Amk_Goku Worldwide Loterry\data\_snapshots\20260129T165827Z\commentary\powerball.20260127T192546Z.commentary.md
+Amk_Goku Worldwide Loterry\docs\automation.md
+Amk_Goku Worldwide Loterry\docs\changelog.md
+Amk_Goku Worldwide Loterry\docs\deployment.md
+Amk_Goku Worldwide Loterry\docs\drift_watch.md
+Amk_Goku Worldwide Loterry\docs\global_lotteries.md
+Amk_Goku Worldwide Loterry\docs\integration.md
+Amk_Goku Worldwide Loterry\docs\learning_spine_overview.md
+Amk_Goku Worldwide Loterry\docs\missing_data_checklist.md
+Amk_Goku Worldwide Loterry\docs\OPERATIONS_RUNBOOK.md
+Amk_Goku Worldwide Loterry\docs\PRIVATE_NOTE.md
+Amk_Goku Worldwide Loterry\docs\README.md
+Amk_Goku Worldwide Loterry\docs\release_notes.md
+Amk_Goku Worldwide Loterry\docs\system_status_scheduler.md
+Amk_Goku Worldwide Loterry\docs\testing.md
+Amk_Goku Worldwide Loterry\docs\Z_EDITOR_COVENANT.md
+Amk_Goku Worldwide Loterry\docs\audiology\Z_AUDIOLOGY_CHARTER.md
+Amk_Goku Worldwide Loterry\docs\audiology\Z_AUDIOLOGY_MULTILINGUAL_POLICY.md
+Amk_Goku Worldwide Loterry\docs\audiology\Z_AUDIOLOGY_OATH.md
+Amk_Goku Worldwide Loterry\docs\audiology\Z_AUDIOLOGY_TESTS.md
+Amk_Goku Worldwide Loterry\docs\audiology\Z_AUDIOLOGY_UI_POLICY.md
+Amk_Goku Worldwide Loterry\docs\legal\LEGAL.md
+Amk_Goku Worldwide Loterry\education\learning_registry.js
+Amk_Goku Worldwide Loterry\education\learning_viewer.js
+Amk_Goku Worldwide Loterry\education\z_teacher_cards.js
+Amk_Goku Worldwide Loterry\exports\legal_provenance_pack_20260131T131751Z\LEGAL.md
+Amk_Goku Worldwide Loterry\exports\legal_provenance_pack_20260131T131751Z\SAFE_VAULT_CONDITIONS.md
+Amk_Goku Worldwide Loterry\exports\legal_provenance_pack_20260131T131751Z\SAFE_VAULT_SUMMARY.md
+Amk_Goku Worldwide Loterry\exports\legal_provenance_pack_20260131T131751Z\audiology\Z_AUDIOLOGY_CHARTER.md
+Amk_Goku Worldwide Loterry\exports\legal_provenance_pack_20260131T131751Z\audiology\Z_AUDIOLOGY_MULTILINGUAL_POLICY.md
+Amk_Goku Worldwide Loterry\exports\legal_provenance_pack_20260131T131751Z\audiology\Z_AUDIOLOGY_OATH.md
+Amk_Goku Worldwide Loterry\exports\legal_provenance_pack_20260131T131751Z\audiology\Z_AUDIOLOGY_TESTS.md
+Amk_Goku Worldwide Loterry\exports\legal_provenance_pack_20260131T131751Z\audiology\Z_AUDIOLOGY_UI_POLICY.md
+Amk_Goku Worldwide Loterry\exports\legal_provenance_pack_20260131T150656Z\LEGAL.md
+Amk_Goku Worldwide Loterry\exports\legal_provenance_pack_20260131T150656Z\SAFE_VAULT_CONDITIONS.md
+Amk_Goku Worldwide Loterry\exports\legal_provenance_pack_20260131T150656Z\SAFE_VAULT_SUMMARY.md
+Amk_Goku Worldwide Loterry\exports\legal_provenance_pack_20260131T150656Z\audiology\Z_AUDIOLOGY_CHARTER.md
+Amk_Goku Worldwide Loterry\exports\legal_provenance_pack_20260131T150656Z\audiology\Z_AUDIOLOGY_MULTILINGUAL_POLICY.md
+Amk_Goku Worldwide Loterry\exports\legal_provenance_pack_20260131T150656Z\audiology\Z_AUDIOLOGY_OATH.md
+Amk_Goku Worldwide Loterry\exports\legal_provenance_pack_20260131T150656Z\audiology\Z_AUDIOLOGY_TESTS.md
+Amk_Goku Worldwide Loterry\exports\legal_provenance_pack_20260131T150656Z\audiology\Z_AUDIOLOGY_UI_POLICY.md
+Amk_Goku Worldwide Loterry\exports\legal_provenance_pack_20260131T152457Z\LEGAL.md
+Amk_Goku Worldwide Loterry\exports\legal_provenance_pack_20260131T152457Z\SAFE_VAULT_CONDITIONS.md
+Amk_Goku Worldwide Loterry\exports\legal_provenance_pack_20260131T152457Z\SAFE_VAULT_SUMMARY.md
+Amk_Goku Worldwide Loterry\exports\legal_provenance_pack_20260131T152457Z\audiology\Z_AUDIOLOGY_CHARTER.md
+Amk_Goku Worldwide Loterry\exports\legal_provenance_pack_20260131T152457Z\audiology\Z_AUDIOLOGY_MULTILINGUAL_POLICY.md
+Amk_Goku Worldwide Loterry\exports\legal_provenance_pack_20260131T152457Z\audiology\Z_AUDIOLOGY_OATH.md
+Amk_Goku Worldwide Loterry\exports\legal_provenance_pack_20260131T152457Z\audiology\Z_AUDIOLOGY_TESTS.md
+Amk_Goku Worldwide Loterry\exports\legal_provenance_pack_20260131T152457Z\audiology\Z_AUDIOLOGY_UI_POLICY.md
+Amk_Goku Worldwide Loterry\exports\legal_provenance_pack_latest\LEGAL.md
+Amk_Goku Worldwide Loterry\exports\legal_provenance_pack_latest\SAFE_VAULT_CONDITIONS.md
+Amk_Goku Worldwide Loterry\exports\legal_provenance_pack_latest\SAFE_VAULT_SUMMARY.md
+Amk_Goku Worldwide Loterry\exports\legal_provenance_pack_latest\audiology\Z_AUDIOLOGY_CHARTER.md
+Amk_Goku Worldwide Loterry\exports\legal_provenance_pack_latest\audiology\Z_AUDIOLOGY_MULTILINGUAL_POLICY.md
+Amk_Goku Worldwide Loterry\exports\legal_provenance_pack_latest\audiology\Z_AUDIOLOGY_OATH.md
+Amk_Goku Worldwide Loterry\exports\legal_provenance_pack_latest\audiology\Z_AUDIOLOGY_TESTS.md
+Amk_Goku Worldwide Loterry\exports\legal_provenance_pack_latest\audiology\Z_AUDIOLOGY_UI_POLICY.md
+Amk_Goku Worldwide Loterry\exports\lottery_app_pack_20260130T225055Z\core\z_chronicle.js
+Amk_Goku Worldwide Loterry\exports\lottery_app_pack_20260130T225055Z\core\z_super_ghost_ingest.js
+Amk_Goku Worldwide Loterry\exports\lottery_app_pack_20260130T225055Z\core\feeling\feeling_panel.js
+Amk_Goku Worldwide Loterry\exports\lottery_app_pack_20260130T225055Z\core\feeling\z_feeling_analyzer.js
+Amk_Goku Worldwide Loterry\exports\lottery_app_pack_20260130T225055Z\ui\z_bootstrap.js
+Amk_Goku Worldwide Loterry\exports\lottery_app_pack_20260130T225320Z\core\z_chronicle.js
+Amk_Goku Worldwide Loterry\exports\lottery_app_pack_20260130T225320Z\core\z_super_ghost_ingest.js
+Amk_Goku Worldwide Loterry\exports\lottery_app_pack_20260130T225320Z\core\feeling\feeling_panel.js
+Amk_Goku Worldwide Loterry\exports\lottery_app_pack_20260130T225320Z\core\feeling\z_feeling_analyzer.js
+Amk_Goku Worldwide Loterry\exports\lottery_app_pack_20260130T225320Z\ui\z_bootstrap.js
+Amk_Goku Worldwide Loterry\exports\lottery_app_pack_20260131T130222Z\core\z_chronicle.js
+Amk_Goku Worldwide Loterry\exports\lottery_app_pack_20260131T130222Z\core\z_super_ghost_ingest.js
+Amk_Goku Worldwide Loterry\exports\lottery_app_pack_20260131T130222Z\core\feeling\feeling_panel.js
+Amk_Goku Worldwide Loterry\exports\lottery_app_pack_20260131T130222Z\core\feeling\z_feeling_analyzer.js
+Amk_Goku Worldwide Loterry\exports\lottery_app_pack_20260131T130222Z\docs\audiology\Z_AUDIOLOGY_CHARTER.md
+Amk_Goku Worldwide Loterry\exports\lottery_app_pack_20260131T130222Z\docs\audiology\Z_AUDIOLOGY_MULTILINGUAL_POLICY.md
+Amk_Goku Worldwide Loterry\exports\lottery_app_pack_20260131T130222Z\docs\audiology\Z_AUDIOLOGY_OATH.md
+Amk_Goku Worldwide Loterry\exports\lottery_app_pack_20260131T130222Z\docs\audiology\Z_AUDIOLOGY_TESTS.md
+Amk_Goku Worldwide Loterry\exports\lottery_app_pack_20260131T130222Z\docs\audiology\Z_AUDIOLOGY_UI_POLICY.md
+Amk_Goku Worldwide Loterry\exports\lottery_app_pack_20260131T130222Z\ui\z_bootstrap.js
+Amk_Goku Worldwide Loterry\exports\lottery_app_pack_20260131T150700Z\core\z_chronicle.js
+Amk_Goku Worldwide Loterry\exports\lottery_app_pack_20260131T150700Z\core\z_super_ghost_ingest.js
+Amk_Goku Worldwide Loterry\exports\lottery_app_pack_20260131T150700Z\core\feeling\feeling_panel.js
+Amk_Goku Worldwide Loterry\exports\lottery_app_pack_20260131T150700Z\core\feeling\z_feeling_analyzer.js
+Amk_Goku Worldwide Loterry\exports\lottery_app_pack_20260131T150700Z\docs\audiology\Z_AUDIOLOGY_CHARTER.md
+Amk_Goku Worldwide Loterry\exports\lottery_app_pack_20260131T150700Z\docs\audiology\Z_AUDIOLOGY_MULTILINGUAL_POLICY.md
+Amk_Goku Worldwide Loterry\exports\lottery_app_pack_20260131T150700Z\docs\audiology\Z_AUDIOLOGY_OATH.md
+Amk_Goku Worldwide Loterry\exports\lottery_app_pack_20260131T150700Z\docs\audiology\Z_AUDIOLOGY_TESTS.md
+Amk_Goku Worldwide Loterry\exports\lottery_app_pack_20260131T150700Z\docs\audiology\Z_AUDIOLOGY_UI_POLICY.md
+Amk_Goku Worldwide Loterry\exports\lottery_app_pack_20260131T150700Z\ui\z_bootstrap.js
+Amk_Goku Worldwide Loterry\exports\lottery_app_pack_20260131T150734Z\core\z_chronicle.js
+Amk_Goku Worldwide Loterry\exports\lottery_app_pack_20260131T150734Z\core\z_super_ghost_ingest.js
+Amk_Goku Worldwide Loterry\exports\lottery_app_pack_20260131T150734Z\core\feeling\feeling_panel.js
+Amk_Goku Worldwide Loterry\exports\lottery_app_pack_20260131T150734Z\core\feeling\z_feeling_analyzer.js
+Amk_Goku Worldwide Loterry\exports\lottery_app_pack_20260131T150734Z\docs\audiology\Z_AUDIOLOGY_CHARTER.md
+Amk_Goku Worldwide Loterry\exports\lottery_app_pack_20260131T150734Z\docs\audiology\Z_AUDIOLOGY_MULTILINGUAL_POLICY.md
+Amk_Goku Worldwide Loterry\exports\lottery_app_pack_20260131T150734Z\docs\audiology\Z_AUDIOLOGY_OATH.md
+Amk_Goku Worldwide Loterry\exports\lottery_app_pack_20260131T150734Z\docs\audiology\Z_AUDIOLOGY_TESTS.md
+Amk_Goku Worldwide Loterry\exports\lottery_app_pack_20260131T150734Z\docs\audiology\Z_AUDIOLOGY_UI_POLICY.md
+Amk_Goku Worldwide Loterry\exports\lottery_app_pack_20260131T150734Z\ui\z_bootstrap.js
+Amk_Goku Worldwide Loterry\exports\lottery_app_pack_20260131T151828Z\core\z_chronicle.js
+Amk_Goku Worldwide Loterry\exports\lottery_app_pack_20260131T151828Z\core\z_super_ghost_ingest.js
+Amk_Goku Worldwide Loterry\exports\lottery_app_pack_20260131T151828Z\core\feeling\feeling_panel.js
+Amk_Goku Worldwide Loterry\exports\lottery_app_pack_20260131T151828Z\core\feeling\z_feeling_analyzer.js
+Amk_Goku Worldwide Loterry\exports\lottery_app_pack_20260131T151828Z\docs\audiology\Z_AUDIOLOGY_CHARTER.md
+Amk_Goku Worldwide Loterry\exports\lottery_app_pack_20260131T151828Z\docs\audiology\Z_AUDIOLOGY_MULTILINGUAL_POLICY.md
+Amk_Goku Worldwide Loterry\exports\lottery_app_pack_20260131T151828Z\docs\audiology\Z_AUDIOLOGY_OATH.md
+Amk_Goku Worldwide Loterry\exports\lottery_app_pack_20260131T151828Z\docs\audiology\Z_AUDIOLOGY_TESTS.md
+Amk_Goku Worldwide Loterry\exports\lottery_app_pack_20260131T151828Z\docs\audiology\Z_AUDIOLOGY_UI_POLICY.md
+Amk_Goku Worldwide Loterry\exports\lottery_app_pack_20260131T151828Z\ui\z_bootstrap.js
+Amk_Goku Worldwide Loterry\exports\lottery_app_pack_20260131T152508Z\core\z_chronicle.js
+Amk_Goku Worldwide Loterry\exports\lottery_app_pack_20260131T152508Z\core\z_super_ghost_ingest.js
+Amk_Goku Worldwide Loterry\exports\lottery_app_pack_20260131T152508Z\core\feeling\feeling_panel.js
+Amk_Goku Worldwide Loterry\exports\lottery_app_pack_20260131T152508Z\core\feeling\z_feeling_analyzer.js
+Amk_Goku Worldwide Loterry\exports\lottery_app_pack_20260131T152508Z\docs\audiology\Z_AUDIOLOGY_CHARTER.md
+Amk_Goku Worldwide Loterry\exports\lottery_app_pack_20260131T152508Z\docs\audiology\Z_AUDIOLOGY_MULTILINGUAL_POLICY.md
+Amk_Goku Worldwide Loterry\exports\lottery_app_pack_20260131T152508Z\docs\audiology\Z_AUDIOLOGY_OATH.md
+Amk_Goku Worldwide Loterry\exports\lottery_app_pack_20260131T152508Z\docs\audiology\Z_AUDIOLOGY_TESTS.md
+Amk_Goku Worldwide Loterry\exports\lottery_app_pack_20260131T152508Z\docs\audiology\Z_AUDIOLOGY_UI_POLICY.md
+Amk_Goku Worldwide Loterry\exports\lottery_app_pack_20260131T152508Z\ui\z_bootstrap.js
+Amk_Goku Worldwide Loterry\exports\lottery_app_pack_latest\core\z_chronicle.js
+Amk_Goku Worldwide Loterry\exports\lottery_app_pack_latest\core\z_super_ghost_ingest.js
+Amk_Goku Worldwide Loterry\exports\lottery_app_pack_latest\core\feeling\feeling_panel.js
+Amk_Goku Worldwide Loterry\exports\lottery_app_pack_latest\core\feeling\z_feeling_analyzer.js
+Amk_Goku Worldwide Loterry\exports\lottery_app_pack_latest\docs\audiology\Z_AUDIOLOGY_CHARTER.md
+Amk_Goku Worldwide Loterry\exports\lottery_app_pack_latest\docs\audiology\Z_AUDIOLOGY_MULTILINGUAL_POLICY.md
+Amk_Goku Worldwide Loterry\exports\lottery_app_pack_latest\docs\audiology\Z_AUDIOLOGY_OATH.md
+Amk_Goku Worldwide Loterry\exports\lottery_app_pack_latest\docs\audiology\Z_AUDIOLOGY_TESTS.md
+Amk_Goku Worldwide Loterry\exports\lottery_app_pack_latest\docs\audiology\Z_AUDIOLOGY_UI_POLICY.md
+Amk_Goku Worldwide Loterry\exports\lottery_app_pack_latest\ui\z_bootstrap.js
+Amk_Goku Worldwide Loterry\exports\safe_vault\safe_vault_20260131T150645.057872+0000\CONDITIONS.md
+Amk_Goku Worldwide Loterry\exports\safe_vault\safe_vault_20260131T150645.057872+0000\REPORT_SUMMARY.md
+Amk_Goku Worldwide Loterry\exports\safe_vault\safe_vault_20260131T150645.057872+0000\docs\audiology\Z_AUDIOLOGY_CHARTER.md
+Amk_Goku Worldwide Loterry\exports\safe_vault\safe_vault_20260131T150645.057872+0000\docs\audiology\Z_AUDIOLOGY_MULTILINGUAL_POLICY.md
+Amk_Goku Worldwide Loterry\exports\safe_vault\safe_vault_20260131T150645.057872+0000\docs\audiology\Z_AUDIOLOGY_OATH.md
+Amk_Goku Worldwide Loterry\exports\safe_vault\safe_vault_20260131T150645.057872+0000\docs\audiology\Z_AUDIOLOGY_TESTS.md
+Amk_Goku Worldwide Loterry\exports\safe_vault\safe_vault_20260131T150645.057872+0000\docs\audiology\Z_AUDIOLOGY_UI_POLICY.md
+Amk_Goku Worldwide Loterry\exports\safe_vault\safe_vault_20260131T152449.419652+0000\CONDITIONS.md
+Amk_Goku Worldwide Loterry\exports\safe_vault\safe_vault_20260131T152449.419652+0000\REPORT_SUMMARY.md
+Amk_Goku Worldwide Loterry\exports\safe_vault\safe_vault_20260131T152449.419652+0000\docs\audiology\Z_AUDIOLOGY_CHARTER.md
+Amk_Goku Worldwide Loterry\exports\safe_vault\safe_vault_20260131T152449.419652+0000\docs\audiology\Z_AUDIOLOGY_MULTILINGUAL_POLICY.md
+Amk_Goku Worldwide Loterry\exports\safe_vault\safe_vault_20260131T152449.419652+0000\docs\audiology\Z_AUDIOLOGY_OATH.md
+Amk_Goku Worldwide Loterry\exports\safe_vault\safe_vault_20260131T152449.419652+0000\docs\audiology\Z_AUDIOLOGY_TESTS.md
+Amk_Goku Worldwide Loterry\exports\safe_vault\safe_vault_20260131T152449.419652+0000\docs\audiology\Z_AUDIOLOGY_UI_POLICY.md
+Amk_Goku Worldwide Loterry\exports\safe_vault_public\safe_vault_20260130T221848.950270+0000\CONDITIONS.md
+Amk_Goku Worldwide Loterry\exports\safe_vault_public\safe_vault_20260130T221848.950270+0000\REPORT_SUMMARY.md
+Amk_Goku Worldwide Loterry\exports\safe_vault_public\safe_vault_20260130T222916.233266+0000\CONDITIONS.md
+Amk_Goku Worldwide Loterry\exports\safe_vault_public\safe_vault_20260130T222916.233266+0000\REPORT_SUMMARY.md
+Amk_Goku Worldwide Loterry\exports\safe_vault_public\safe_vault_20260130T224752.993341+0000\CONDITIONS.md
+Amk_Goku Worldwide Loterry\exports\safe_vault_public\safe_vault_20260130T224752.993341+0000\REPORT_SUMMARY.md
+Amk_Goku Worldwide Loterry\exports\safe_vault_public\safe_vault_20260131T130102.332466+0000\CONDITIONS.md
+Amk_Goku Worldwide Loterry\exports\safe_vault_public\safe_vault_20260131T130102.332466+0000\REPORT_SUMMARY.md
+Amk_Goku Worldwide Loterry\exports\safe_vault_public\safe_vault_20260131T130102.332466+0000\docs\audiology\Z_AUDIOLOGY_CHARTER.md
+Amk_Goku Worldwide Loterry\exports\safe_vault_public\safe_vault_20260131T130102.332466+0000\docs\audiology\Z_AUDIOLOGY_MULTILINGUAL_POLICY.md
+Amk_Goku Worldwide Loterry\exports\safe_vault_public\safe_vault_20260131T130102.332466+0000\docs\audiology\Z_AUDIOLOGY_OATH.md
+Amk_Goku Worldwide Loterry\exports\safe_vault_public\safe_vault_20260131T130102.332466+0000\docs\audiology\Z_AUDIOLOGY_TESTS.md
+Amk_Goku Worldwide Loterry\exports\safe_vault_public\safe_vault_20260131T130102.332466+0000\docs\audiology\Z_AUDIOLOGY_UI_POLICY.md
+Amk_Goku Worldwide Loterry\exports\safe_vault_public\safe_vault_20260131T135443.602905+0000\CONDITIONS.md
+Amk_Goku Worldwide Loterry\exports\safe_vault_public\safe_vault_20260131T135443.602905+0000\REPORT_SUMMARY.md
+Amk_Goku Worldwide Loterry\exports\safe_vault_public\safe_vault_20260131T135443.602905+0000\docs\audiology\Z_AUDIOLOGY_CHARTER.md
+Amk_Goku Worldwide Loterry\exports\safe_vault_public\safe_vault_20260131T135443.602905+0000\docs\audiology\Z_AUDIOLOGY_MULTILINGUAL_POLICY.md
+Amk_Goku Worldwide Loterry\exports\safe_vault_public\safe_vault_20260131T135443.602905+0000\docs\audiology\Z_AUDIOLOGY_OATH.md
+Amk_Goku Worldwide Loterry\exports\safe_vault_public\safe_vault_20260131T135443.602905+0000\docs\audiology\Z_AUDIOLOGY_TESTS.md
+Amk_Goku Worldwide Loterry\exports\safe_vault_public\safe_vault_20260131T135443.602905+0000\docs\audiology\Z_AUDIOLOGY_UI_POLICY.md
+Amk_Goku Worldwide Loterry\exports\safe_vault_public\safe_vault_20260131T150645.057872+0000\CONDITIONS.md
+Amk_Goku Worldwide Loterry\exports\safe_vault_public\safe_vault_20260131T150645.057872+0000\REPORT_SUMMARY.md
+Amk_Goku Worldwide Loterry\exports\safe_vault_public\safe_vault_20260131T150645.057872+0000\docs\audiology\Z_AUDIOLOGY_CHARTER.md
+Amk_Goku Worldwide Loterry\exports\safe_vault_public\safe_vault_20260131T150645.057872+0000\docs\audiology\Z_AUDIOLOGY_MULTILINGUAL_POLICY.md
+Amk_Goku Worldwide Loterry\exports\safe_vault_public\safe_vault_20260131T150645.057872+0000\docs\audiology\Z_AUDIOLOGY_OATH.md
+Amk_Goku Worldwide Loterry\exports\safe_vault_public\safe_vault_20260131T150645.057872+0000\docs\audiology\Z_AUDIOLOGY_TESTS.md
+Amk_Goku Worldwide Loterry\exports\safe_vault_public\safe_vault_20260131T150645.057872+0000\docs\audiology\Z_AUDIOLOGY_UI_POLICY.md
+Amk_Goku Worldwide Loterry\exports\safe_vault_public\safe_vault_20260131T152449.419652+0000\CONDITIONS.md
+Amk_Goku Worldwide Loterry\exports\safe_vault_public\safe_vault_20260131T152449.419652+0000\REPORT_SUMMARY.md
+Amk_Goku Worldwide Loterry\exports\safe_vault_public\safe_vault_20260131T152449.419652+0000\docs\audiology\Z_AUDIOLOGY_CHARTER.md
+Amk_Goku Worldwide Loterry\exports\safe_vault_public\safe_vault_20260131T152449.419652+0000\docs\audiology\Z_AUDIOLOGY_MULTILINGUAL_POLICY.md
+Amk_Goku Worldwide Loterry\exports\safe_vault_public\safe_vault_20260131T152449.419652+0000\docs\audiology\Z_AUDIOLOGY_OATH.md
+Amk_Goku Worldwide Loterry\exports\safe_vault_public\safe_vault_20260131T152449.419652+0000\docs\audiology\Z_AUDIOLOGY_TESTS.md
+Amk_Goku Worldwide Loterry\exports\safe_vault_public\safe_vault_20260131T152449.419652+0000\docs\audiology\Z_AUDIOLOGY_UI_POLICY.md
+Amk_Goku Worldwide Loterry\exports\trust_pack_20260131T130228Z\audiology\Z_AUDIOLOGY_CHARTER.md
+Amk_Goku Worldwide Loterry\exports\trust_pack_20260131T130228Z\audiology\Z_AUDIOLOGY_MULTILINGUAL_POLICY.md
+Amk_Goku Worldwide Loterry\exports\trust_pack_20260131T130228Z\audiology\Z_AUDIOLOGY_OATH.md
+Amk_Goku Worldwide Loterry\exports\trust_pack_20260131T130228Z\audiology\Z_AUDIOLOGY_TESTS.md
+Amk_Goku Worldwide Loterry\exports\trust_pack_20260131T130228Z\audiology\Z_AUDIOLOGY_UI_POLICY.md
+Amk_Goku Worldwide Loterry\exports\trust_pack_20260131T130401Z\audiology\Z_AUDIOLOGY_CHARTER.md
+Amk_Goku Worldwide Loterry\exports\trust_pack_20260131T130401Z\audiology\Z_AUDIOLOGY_MULTILINGUAL_POLICY.md
+Amk_Goku Worldwide Loterry\exports\trust_pack_20260131T130401Z\audiology\Z_AUDIOLOGY_OATH.md
+Amk_Goku Worldwide Loterry\exports\trust_pack_20260131T130401Z\audiology\Z_AUDIOLOGY_TESTS.md
+Amk_Goku Worldwide Loterry\exports\trust_pack_20260131T130401Z\audiology\Z_AUDIOLOGY_UI_POLICY.md
+Amk_Goku Worldwide Loterry\exports\trust_pack_20260131T150649Z\audiology\Z_AUDIOLOGY_CHARTER.md
+Amk_Goku Worldwide Loterry\exports\trust_pack_20260131T150649Z\audiology\Z_AUDIOLOGY_MULTILINGUAL_POLICY.md
+Amk_Goku Worldwide Loterry\exports\trust_pack_20260131T150649Z\audiology\Z_AUDIOLOGY_OATH.md
+Amk_Goku Worldwide Loterry\exports\trust_pack_20260131T150649Z\audiology\Z_AUDIOLOGY_TESTS.md
+Amk_Goku Worldwide Loterry\exports\trust_pack_20260131T150649Z\audiology\Z_AUDIOLOGY_UI_POLICY.md
+Amk_Goku Worldwide Loterry\exports\trust_pack_20260131T150727Z\audiology\Z_AUDIOLOGY_CHARTER.md
+Amk_Goku Worldwide Loterry\exports\trust_pack_20260131T150727Z\audiology\Z_AUDIOLOGY_MULTILINGUAL_POLICY.md
+Amk_Goku Worldwide Loterry\exports\trust_pack_20260131T150727Z\audiology\Z_AUDIOLOGY_OATH.md
+Amk_Goku Worldwide Loterry\exports\trust_pack_20260131T150727Z\audiology\Z_AUDIOLOGY_TESTS.md
+Amk_Goku Worldwide Loterry\exports\trust_pack_20260131T150727Z\audiology\Z_AUDIOLOGY_UI_POLICY.md
+Amk_Goku Worldwide Loterry\exports\trust_pack_20260131T152453Z\audiology\Z_AUDIOLOGY_CHARTER.md
+Amk_Goku Worldwide Loterry\exports\trust_pack_20260131T152453Z\audiology\Z_AUDIOLOGY_MULTILINGUAL_POLICY.md
+Amk_Goku Worldwide Loterry\exports\trust_pack_20260131T152453Z\audiology\Z_AUDIOLOGY_OATH.md
+Amk_Goku Worldwide Loterry\exports\trust_pack_20260131T152453Z\audiology\Z_AUDIOLOGY_TESTS.md
+Amk_Goku Worldwide Loterry\exports\trust_pack_20260131T152453Z\audiology\Z_AUDIOLOGY_UI_POLICY.md
+Amk_Goku Worldwide Loterry\exports\trust_pack_latest\audiology\Z_AUDIOLOGY_CHARTER.md
+Amk_Goku Worldwide Loterry\exports\trust_pack_latest\audiology\Z_AUDIOLOGY_MULTILINGUAL_POLICY.md
+Amk_Goku Worldwide Loterry\exports\trust_pack_latest\audiology\Z_AUDIOLOGY_OATH.md
+Amk_Goku Worldwide Loterry\exports\trust_pack_latest\audiology\Z_AUDIOLOGY_TESTS.md
+Amk_Goku Worldwide Loterry\exports\trust_pack_latest\audiology\Z_AUDIOLOGY_UI_POLICY.md
+Amk_Goku Worldwide Loterry\marketplace\README.md
+Amk_Goku Worldwide Loterry\roadmap\README.md
+Amk_Goku Worldwide Loterry\trust\TRUST_BOND.md
+Amk_Goku Worldwide Loterry\trust\trust_stats.js
+Amk_Goku Worldwide Loterry\ui\bias_lens.js
+Amk_Goku Worldwide Loterry\ui\education_mode_toggle.js
+Amk_Goku Worldwide Loterry\ui\explanation_overlay.js
+Amk_Goku Worldwide Loterry\ui\README.md
+Amk_Goku Worldwide Loterry\ui\role_badge.js
+Amk_Goku Worldwide Loterry\ui\trust_bond_modal.js
+Amk_Goku Worldwide Loterry\ui\z_apicon_panel.js
+Amk_Goku Worldwide Loterry\ui\z_bootstrap.js
+Amk_Goku Worldwide Loterry\ui\z_notebook_rhythm.js
+Amk_Goku Worldwide Loterry\ui\z_rhythm_indicator.js
+Amk_Goku Worldwide Loterry\ui\z_teacher_panel.js
+Amk_Goku Worldwide Loterry\ui\drift_watch\drift_watch.js
+Amk_Goku Worldwide Loterry\ui\education\edu_mode.js
+Amk_Goku Worldwide Loterry\ui\internal\jailcell_panel.js
+Amk_Goku Worldwide Loterry\ui\lottery-dashboard\README.md
+Amk_Goku Worldwide Loterry\ui\lottery_vault\checklist.js
+Amk_Goku Worldwide Loterry\ui\notebook\basic_notebook.js
+Amk_Goku Worldwide Loterry\ui\public_trust\trust_portal.js
+apps\api\src\mini_express.js
+apps\api\src\server.js
+apps\api\src\routes\dashboard.js
+apps\roulette-calculator\README.md
+apps\web\next.config.js
+apps\web\src\components\skk-rkpk\useGovernanceState.js
+apps\web\src\components\skk-rkpk\useVoice.js
+apps\web\src\lib\api.js
+archive\README.md
+audio\README.md
+core\action-executor.js
+core\audit-writer.js
+core\consent-manager.js
+core\correlation.js
+core\co_autopilot_preview.js
+core\event-bus.js
+core\exp_smooth_predict.js
+core\extension-loader.js
+core\harisha.js
+core\harisha_guidance.js
+core\harisha_integration.js
+core\harisha_shortcuts.js
+core\harisha_tooltips.js
+core\harisha_zone_panel.js
+core\insight_cards.js
+core\insight_feed.js
+core\intelligence_panel.js
+core\launch_zsanctuary.js
+core\lens_status.js
+core\module_health.js
+core\module_registry_panel.js
+core\monetization_layer.js
+core\monetization_ui.js
+core\quiet_mode_chip.js
+core\roulette_history_loader.js
+core\roulette_intelligence.js
+core\rule-engine.js
+core\safe_pack_engine.js
+core\safe_pack_panel.js
+core\safe_pack_reflection.js
+core\social_layer.js
+core\social_ui.js
+core\super_ghost_panel.js
+core\super_ghost_reflection_ui.js
+core\sync-manager.js
+core\trend_predict.js
+core\trust_pack_chip.js
+core\vault_status.js
+core\world_pulse_panel.js
+core\z_autobranch.js
+core\z_autocomplete.js
+core\z_automerge.js
+core\z_autopilot_controls.js
+core\z_awareness.js
+core\z_branch_bridge.js
+core\z_chain_history.js
+core\z_chain_registry.js
+core\z_chain_view.js
+core\z_chronicle.js
+core\z_chronicle_hud.js
+core\z_codex_suggestions.js
+core\z_commit_core.js
+core\z_companion_3d.js
+core\z_dashboard.js
+core\z_dev_mode.js
+core\z_emotion_filter.js
+core\z_energy_response.js
+core\z_formula_registry_panel.js
+core\z_governance_hud.js
+core\z_heartbeat_engine.js
+core\z_kairocell_engine.js
+core\z_miniai_boot.js
+core\z_module_registry.js
+core\z_module_registry_autoscan.js
+core\z_module_registry_boot.js
+core\z_module_registry_panel.js
+core\z_notebooks_panel.js
+core\z_notebook_tooltips.js
+core\z_priority_board.js
+core\z_safe_pack_status.js
+core\z_ssws_banner.js
+core\z_status_console.js
+core\z_super_ghost_ingest.js
+core\z_system_metrics.js
+core\z_trust_certificate_panel.js
+core\z_ui_extras.js
+core\z_wisdom_ring.js
+core\z_wisdom_ring_panel.js
+core\z_world_pulse.js
+core\ai_tower\z_ai_agent_base.js
+core\ai_tower\z_ai_tower_core.js
+core\ai_tower\z_super_ghost.js
+core\assets\README.md
+core\autopilot\z_autopilot_replay.js
+core\autopilot\z_autopilot_replay_ui.js
+core\autopilot\z_autopilot_simulator.js
+core\autopilot\z_governance_reports.js
+core\autopilot\z_governance_review.js
+core\media\z_screen_recorder.js
+dashboard\rkpk-avatar.js
+dashboard\skk-avatar.js
+dashboard\skk-dashboard.js
+data\README.md
+data\reports\Z_SYSTEM_HEALTH_CERTIFICATE.md
+docs\CONFLICT_HANDLING_PUBLIC.md
+docs\CONTRIBUTE_GUIDE.md
+docs\co_autopilot_preview.md
+docs\executive_living_workspace_summary.md
+docs\gentle_trust_mode.md
+docs\GOVERNANCE_FLOW_MAP.md
+docs\INSIGHT_FEED.md
+docs\Living-Workspace-Brief.md
+docs\notebook_contract.md
+docs\PHASE_1_CHECKLIST.md
+docs\POLICE_NGO_BRIEF.md
+docs\ROULETTE_PUBLIC_OVERVIEW.md
+docs\SAFE_PACK_WEBHOOK.md
+docs\SANCTUARY_WORKSPACE_LENSES.md
+docs\SEPC.md
+docs\SKK_DASHBOARD_PRIORITY.md
+docs\SKK_RKPK_COMPANION_CHARTER.md
+docs\technical_living_workspace_summary.md
+docs\UI_PANEL_AUDIT_CHECKLIST.md
+docs\Z_DOC_TAXONOMY.md
+docs\Z_NOTEBOOKS_CONTRACT.md
+docs\canon\Z_SANCTUARY_CANON_V1.md
+docs\canon\Z_SANCTUARY_CANON_V1_SUMMARY.md
+docs\codex\Z_AUTO_CODEX.md
+docs\codex\Z_CREATOR_PROTOCOL.md
+docs\codex\Z_MAINTENANCE_RITUAL.md
+docs\codex\Z_THINKING_RULES.md
+docs\governance\SEPC.md
+docs\governance\SKK_RKPK_COMPANION_CHARTER.md
+docs\governance\Z_RESOLUTION_PATHWAYS.md
+docs\public\Z_MIRROR_PUBLIC.md
+docs\vault\Vault_Access_Map.md
+docs\vault\Vault_Policy_Sheet.md
+docs\vault\Vault_Policy_Sheet_PRINT.md
+docs\vault\Z_SANCTUARY_SAFETY_PANEL.md
+docs\z_combat\Z_COMBAT_360_RING_CODEX.md
+docs\z_combat\Z_COMBAT_EMBODIMENT_LAYER.md
+docs\z_combat\Z_FORMULA_SECURITY_NOTICE.md
+exports\trust_pack_2026-01\HEALTH_CERTIFICATE.md
+exports\trust_pack_2026-01\README.md
+interface\README.md
+miniai\base_bot.js
+miniai\designer_bot.js
+miniai\navigator_bot.js
+miniai\protector_bot.js
+miniai\scribe_bot.js
+packages\living-workspace-package\Living-Workspace-Brief.md
+packages\z-intelligence\README.md
+packages\z-intelligence\__tests__\smoke.test.js
+releases\2026-01-28\README.md
+releases\2026-01-28\assets\living-workspace-package\Living-Workspace-Brief.md
+releases\2026-01-28\bots\README.md
+releases\2026-01-28\docs\executive_living_workspace_summary.md
+releases\2026-01-28\docs\Living-Workspace-Brief.md
+releases\2026-01-28\docs\technical_living_workspace_summary.md
+releases\2026-01-31\README.md
+releases\2026-01-31\links\LINKS.md
+releases\2026-01-31\notes\RELEASE_CHECKLIST.md
+releases\2026-01-31\trust\trust_pack_2026-01\README.md
+rules\SECURITY_ASSET_INDEX.md
+rules\Z_BREATH_TIME_GOVERNOR.md
+rules\Z_DELTA_ETHICAL_DRIFT_DISSOLUTION.md
+rules\Z_LOTUS_GATE.md
+rules\Z_PHILOSOPHICAL_PROTECTION_PROTOCOL.md
+rules\Z_SANCTUARY_SECURITY_POLICY.md
+safe_pack\Z_SANCTUARY_CARE_CHARTER.md
+safe_pack\z_sanctuary_vault\README.md
+safe_pack\z_sanctuary_vault\VAULT_MANIFEST.md
+scripts\chronicle_server.js
+scripts\create_dummy_history.js
+scripts\create_release_snapshot.js
+scripts\daily_report.js
+scripts\dk_vault_guard.js
+scripts\doctor.js
+scripts\fix_md031.js
+scripts\import_history.js
+scripts\package_living_workspace.js
+scripts\prepare_history_template.js
+scripts\safe_pack_runner.js
+scripts\sync_chronicle_to_localstorage.js
+scripts\sync_history.js
+scripts\validate_commit_message.js
+scripts\validate_history.js
+scripts\ws_bridge.js
+scripts\z_change_packager.js
+scripts\z_commit_scribe.js
+scripts\z_policy_lint.js
+scripts\z_priority_queue.js
+scripts\z_priority_sync.js
+src\miniai\README.md
+z_colour\z_colour_binding.js
+z_colour\z_colour_engine.js
+z_colour\z_colour_profiles.js
+z_notebooks\z_notebooks_engine.js
+z_workspace\orchestrator.js

@@ -1,0 +1,112 @@
+{
+  "schema_version": 1,
+  "name": "z-vdk-scan",
+  "safety": "READ_ONLY_PHASE1_NO_DELETE_NO_KILL",
+  "generated_at": "2026-04-27T19:18:00.4449563Z",
+  "scan_roots": [
+    "C:\\Cursor Projects Organiser\\ZSanctuary_Universe",
+    "C:\\Cursor Projects Organiser\\Extras & Tools",
+    "C:\\Users\\manoj\\Downloads"
+  ],
+  "findings": [
+    {
+      "path": "C:\\Cursor Projects Organiser\\ZSanctuary_Universe\\martial-platform\\log_summary.ps1",
+      "risk": "medium",
+      "reason": "PowerShell script outside trusted scripts/.github workflows paths",
+      "sha256": "a04b9805e75ea129c8e470d4b60001a7e80e32ceb13b4857db73532f6564d479",
+      "action": "review_or_quarantine_proposal"
+    },
+    {
+      "path": "C:\\Cursor Projects Organiser\\ZSanctuary_Universe\\martial-platform\\nas_backup.ps1",
+      "risk": "medium",
+      "reason": "PowerShell script outside trusted scripts/.github workflows paths",
+      "sha256": "1334adccd1751bbd056258d063afd93dec475cdda17193c8f7e5691ae9f93bd1",
+      "action": "review_or_quarantine_proposal"
+    },
+    {
+      "path": "C:\\Cursor Projects Organiser\\ZSanctuary_Universe\\martial-platform\\schedule_backup.ps1",
+      "risk": "medium",
+      "reason": "PowerShell script outside trusted scripts/.github workflows paths",
+      "sha256": "ba0a9426af29f9a39567fc5674ddfdcf5d0f85792984d2b764bc1a8aca449c88",
+      "action": "review_or_quarantine_proposal"
+    },
+    {
+      "path": "C:\\Cursor Projects Organiser\\ZSanctuary_Universe\\ops\\zps\\profile_snippet.ps1",
+      "risk": "medium",
+      "reason": "PowerShell script outside trusted scripts/.github workflows paths",
+      "sha256": "d5df39deb6ec13a36947742a5e397689a7282e73e15421da37ca9119a502a7db",
+      "action": "review_or_quarantine_proposal"
+    },
+    {
+      "path": "C:\\Cursor Projects Organiser\\ZSanctuary_Universe\\ZSanctuary_Labs\\sync_lab_registry.cmd",
+      "risk": "medium",
+      "reason": "Suspicious extension .cmd under scan root",
+      "sha256": "1984edab2da53bac1d7d499dfd0f431f691ece228c54ec8575509bcfa4c39c8e",
+      "action": "review_or_quarantine_proposal"
+    },
+    {
+      "path": "C:\\Cursor Projects Organiser\\ZSanctuary_Universe\\ZSanctuary_Labs\\workspaces\\launch_4_windows.cmd",
+      "risk": "medium",
+      "reason": "Suspicious extension .cmd under scan root",
+      "sha256": "593ebc5bc8ac353006f9da3069346765fea910cb121f18189121f4e85d9bd35e",
+      "action": "review_or_quarantine_proposal"
+    },
+    {
+      "path": "C:\\Cursor Projects Organiser\\ZSanctuary_Universe\\ZSanctuary_Labs\\workspaces\\launch_4_windows.ps1",
+      "risk": "medium",
+      "reason": "PowerShell script outside trusted scripts/.github workflows paths",
+      "sha256": "a36186d623186600f037f9d62c387877f93807637daa111f7b48eaf65c59d2be",
+      "action": "review_or_quarantine_proposal"
+    },
+    {
+      "path": "C:\\Cursor Projects Organiser\\ZSanctuary_Universe\\Z_Labs\\uvx.cmd",
+      "risk": "medium",
+      "reason": "Suspicious extension .cmd under scan root",
+      "sha256": "312f480c7535770d29beeab810fb4bad2910fe386b9a09af611971dbe753670d",
+      "action": "review_or_quarantine_proposal"
+    },
+    {
+      "path": "C:\\Cursor Projects Organiser\\ZSanctuary_Universe\\Z_Labs\\workspaces\\launch_4_windows.cmd",
+      "risk": "medium",
+      "reason": "Suspicious extension .cmd under scan root",
+      "sha256": "9341f39b9935c9bbfad4dc71e45be63d00ad88ed908e93970b3457b1a5fb08c6",
+      "action": "review_or_quarantine_proposal"
+    },
+    {
+      "path": "C:\\Cursor Projects Organiser\\Extras & Tools\\thebcs.exe",
+      "risk": "medium",
+      "reason": "Binary in tools sink (Extras & Tools); verify origin",
+      "sha256": "59426caedeeb08c34f1a23daddc2294891932b4d92f6218224b6ae63df280ad1",
+      "action": "review_or_quarantine_proposal"
+    },
+    {
+      "path": "C:\\Cursor Projects Organiser\\Extras & Tools\\scripts\\build-all-projects.ps1",
+      "risk": "medium",
+      "reason": "Suspicious extension .ps1 under scan root",
+      "sha256": "87b4e5ea36bb4638ab8c7fe81dc05f1a0c3fb7e3b4851f4c0d99439bb91388e8",
+      "action": "review_or_quarantine_proposal"
+    },
+    {
+      "path": "C:\\Users\\manoj\\Downloads\\Claude Setup.exe",
+      "risk": "high",
+      "reason": "Executable/installer in Downloads",
+      "sha256": "bb3299c619619b74d3b9aa7491a1edc3e59c40cf04043baa5cc9a64070151e9f",
+      "action": "review_or_quarantine_proposal"
+    },
+    {
+      "path": "C:\\Users\\manoj\\Downloads\\CursorUserSetup-x64-2.6.14.exe",
+      "risk": "high",
+      "reason": "Executable/installer in Downloads; Large binary (171.1 MiB); SHA256 skipped (file over cap)",
+      "sha256": null,
+      "action": "review_or_quarantine_proposal"
+    }
+  ],
+  "summary": {
+    "total_files_scanned": 8849,
+    "findings_total": 13,
+    "critical": 0,
+    "high": 2,
+    "medium": 11,
+    "low": 0
+  }
+}

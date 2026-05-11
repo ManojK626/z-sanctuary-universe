@@ -1,0 +1,7 @@
+{
+  "generated_at": "2026-04-27T17:36:04.905Z",
+  "cwd": "C:\\Cursor Projects Organiser\\ZSanctuary_Universe",
+  "is_zsanctuary_hub_root": true,
+  "policy_file": "data/z_aafrtc_policy.json",
+  "note": "AAFRTC pipelines may run here; overseer gates apply via npm scripts."
+}

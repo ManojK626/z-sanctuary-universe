@@ -1,0 +1,53 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "z_context_snapshot.schema.json",
+  "title": "Z-Context Snapshot",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "timestamp",
+    "module",
+    "z_state",
+    "lpbs_state",
+    "ggaesp_360",
+    "wellbeing_state",
+    "session_meta"
+  ],
+  "properties": {
+    "timestamp": { "type": "string", "format": "date-time" },
+    "module": { "type": "string", "minLength": 1, "maxLength": 128 },
+    "z_state": { "type": "object" },
+    "lpbs_state": { "type": "object" },
+    "ggaesp_360": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["momentum", "stability", "deviation", "trend_slope"],
+      "properties": {
+        "momentum": { "type": "number" },
+        "stability": { "type": "number" },
+        "deviation": { "type": "number" },
+        "trend_slope": { "type": "number" }
+      }
+    },
+    "wellbeing_state": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["focus_level", "fatigue_index", "stress_index"],
+      "properties": {
+        "focus_level": { "type": "number", "minimum": 0, "maximum": 1 },
+        "fatigue_index": { "type": "number", "minimum": 0, "maximum": 1 },
+        "stress_index": { "type": "number", "minimum": 0, "maximum": 1 },
+        "sleep_debt_hours": { "type": "number", "minimum": 0 }
+      }
+    },
+    "session_meta": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["session_id", "duration_seconds"],
+      "properties": {
+        "session_id": { "type": "string", "minLength": 6, "maxLength": 128 },
+        "duration_seconds": { "type": "integer", "minimum": 0 }
+      }
+    }
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "generated_at": "2026-05-01T17:24:18.811993Z",
+  "core_engine_purpose": {
+    "module_registry": "Tracks and syncs module inventory across sanctuary",
+    "reports_vault": "Manages reports inventory, tags, and retention",
+    "vault_guard": "Protects formula vault access and device-key controls",
+    "panel_directory": "Manages panel list, status, and visibility"
+  },
+  "checks": {
+    "vault_audit_present": true,
+    "html_audit_present": true,
+    "zuno_daily_present": true,
+    "weekly_reflection_present": true
+  }
+}

@@ -1,0 +1,74 @@
+{
+  "generated_at": "2026-04-26T02:12:35.252Z",
+  "verdict": "GO",
+  "total_gates": 8,
+  "passed_gates": 8,
+  "failed_gates": 0,
+  "gates": [
+    {
+      "id": "execution_enforcer",
+      "label": "Execution enforcer must allow progress",
+      "pass": true,
+      "value": "ALLOW_PROGRESS",
+      "required": "ALLOW_PROGRESS",
+      "notes": ""
+    },
+    {
+      "id": "release_gate",
+      "label": "Release gate verdict",
+      "pass": true,
+      "value": "ready",
+      "required": "ready/go",
+      "notes": ""
+    },
+    {
+      "id": "readiness",
+      "label": "Readiness gates",
+      "pass": true,
+      "value": "4/4",
+      "required": "4/4",
+      "notes": ""
+    },
+    {
+      "id": "p1_backlog",
+      "label": "P1 tasks open",
+      "pass": true,
+      "value": 0,
+      "required": 0,
+      "notes": ""
+    },
+    {
+      "id": "trust_score",
+      "label": "Trust score minimum",
+      "pass": true,
+      "value": 90,
+      "required": ">= 85",
+      "notes": ""
+    },
+    {
+      "id": "qosmei_advisory_signal",
+      "label": "QOSMEI advisory signal",
+      "pass": true,
+      "value": "100 (clear)",
+      "required": ">= 75 (advisory)",
+      "notes": "QOSMEI clear: keep optimize lane and continue observer cadence."
+    },
+    {
+      "id": "bridge_regression",
+      "label": "Bridge intelligence regression",
+      "pass": true,
+      "value": "pass",
+      "required": "pass",
+      "notes": ""
+    },
+    {
+      "id": "bridge_blocked_ratio",
+      "label": "Bridge blocked decisions trend",
+      "pass": true,
+      "value": 4,
+      "required": "<= 2 (strict) | <= 4 (QOSMEI advisory lane)",
+      "notes": "Bounded advisory lane active: enforcer=ALLOW_PROGRESS, trust>=85, QOSMEI=clear/high."
+    }
+  ],
+  "blockers": []
+}

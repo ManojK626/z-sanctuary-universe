@@ -1,0 +1,30 @@
+{
+  "generated_at": "2026-04-21T14:13:58.372Z",
+  "schema_version": 1,
+  "governance_note": "Advisory coherence score — does not override Enforcer, DRP, or release gates.",
+  "coherence_score": 53,
+  "status": "misaligned",
+  "confidence": "medium",
+  "contradictions": [
+    "low_signal_vs_high_structure",
+    "communication_degraded",
+    "consistency_watch"
+  ],
+  "signals": {
+    "system_health": "stable",
+    "system_health_score": 93,
+    "signal_health": "low",
+    "communication_flow": "degraded",
+    "consistency": "watch",
+    "garage_pressure": "low"
+  },
+  "note": "Several layers disagree — investigate signal, flow, or consistency before scaling.",
+  "sources": {
+    "system_health": "data/reports/z_system_health.json",
+    "signal_health": "data/reports/z_ai_signal_health.json",
+    "communication_health": "data/reports/z_communication_health.json",
+    "consistency_alerts": "data/reports/z_ai_consistency_alerts.json",
+    "garage_upgrade_plan": "data/reports/z_garage_upgrade_plan.json",
+    "z_ci_intelligence": "data/reports/z_ci_intelligence.json"
+  }
+}

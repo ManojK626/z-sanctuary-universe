@@ -1,0 +1,24 @@
+{
+  "schema_version": 1,
+  "generated_at": "2026-04-26T01:11:32.339Z",
+  "name": "z-mini-bot-adaptive",
+  "advisory": true,
+  "drp_note": "Suggested priority is advisory only. Does not change decision.priority in this report; context.adaptive on decisions is merged for dashboard/Zuno.",
+  "ranked": [
+    {
+      "topic": "decision:investigate_missing_project",
+      "score": 30,
+      "reason": "prediction_risk_low",
+      "detail": {
+        "decision_id": "investigate_missing_project",
+        "risk": "low",
+        "prediction": "uncertain",
+        "basis": {
+          "total_events": 2,
+          "reopen_count": 0,
+          "pattern_severity": "LOW"
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,94 @@
+{
+  "schema": "z.legal.ops.report.v1",
+  "module_id": "z_legal_ops_workstation",
+  "signal": "BLUE",
+  "mode": "legal_governance_concept_only",
+  "generated_at": "2026-05-08T12:55:55.125Z",
+  "phase": "Z-LEGAL-OPS-1",
+  "runtime_features_enabled": false,
+  "fixtures_red_included": false,
+  "registry_validation": {
+    "passed": [
+      "registry schema ok.",
+      "policy schema ok.",
+      "mode legal_governance_concept_only.",
+      "policy boundary flags complete.",
+      "advisor identity policy locked.",
+      "legal boundary retains human legal authority.",
+      "layers list present.",
+      "dashboard panel list populated."
+    ],
+    "advisory": [],
+    "red": []
+  },
+  "summary": {
+    "green": 2,
+    "yellow": 1,
+    "blue": 2,
+    "red": 0
+  },
+  "sample_results": [
+    {
+      "sample_id": "legal_green_evidence_timeline_001",
+      "signal": "GREEN",
+      "reasons": [
+        "Concept-only legal governance posture; no runtime legal lane."
+      ],
+      "outputs_declared": [
+        "concept_summary"
+      ]
+    },
+    {
+      "sample_id": "legal_green_risk_panel_002",
+      "signal": "GREEN",
+      "reasons": [
+        "Concept-only legal governance posture; no runtime legal lane."
+      ],
+      "outputs_declared": [
+        "risk_observation"
+      ]
+    },
+    {
+      "sample_id": "legal_yellow_retention_gap_003",
+      "signal": "YELLOW",
+      "reasons": [
+        "Missing retention/metadata detail; concept is incomplete."
+      ],
+      "outputs_declared": [
+        "missing_doc_suggestion"
+      ]
+    },
+    {
+      "sample_id": "legal_blue_real_lawyer_onboarding_004",
+      "signal": "BLUE",
+      "reasons": [
+        "Real lawyer identity/contract decision requires AMK + legal human review."
+      ],
+      "outputs_declared": [
+        "decision_packet_draft"
+      ]
+    },
+    {
+      "sample_id": "legal_blue_named_advisor_consent_005",
+      "signal": "BLUE",
+      "reasons": [
+        "Real lawyer identity/contract decision requires AMK + legal human review."
+      ],
+      "outputs_declared": [
+        "decision_packet_draft"
+      ]
+    }
+  ],
+  "locked_law": [
+    "Lawyer dashboard ≠ lawyer endorsement.",
+    "Legal circle ≠ runtime authority.",
+    "AI evidence summary ≠ legal advice.",
+    "Named lawyer persona ≠ consent.",
+    "Contract required before real advisor role.",
+    "Client data requires privacy/consent/security charter.",
+    "GREEN ≠ launch.",
+    "BLUE requires AMK/legal/human review.",
+    "RED blocks movement.",
+    "AMK-Goku owns sacred moves."
+  ]
+}

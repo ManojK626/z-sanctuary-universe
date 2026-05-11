@@ -1,0 +1,40 @@
+{
+  "generated_at": "2026-02-14T17:29:16.472Z",
+  "mode": "auto-intake-manual-adoption",
+  "queue_count": 2,
+  "captured_count": 2,
+  "blocked_count": 0,
+  "error_count": 0,
+  "items": [
+    {
+      "url": "https://owasp.org/www-project-top-ten/",
+      "topic": "security-baseline",
+      "priority": "P2",
+      "requested_by": "Zuno",
+      "host": "owasp.org",
+      "state": "captured",
+      "http_status": 200,
+      "content_type": "text/html; charset=utf-8",
+      "title": "OWASP Top Ten Web Application Security Risks | OWASP Foundation",
+      "summary": "OWASP Top Ten Web Application Security Risks | OWASP Foundation For full functionality of this site it is necessary to enable JavaScript. Here are the instructions how to enable JavaScript in your web browser . Store Donate Join This website uses cookies to analyze our traffic and only share that information with our analytics partners. Accept x Store Donate Join Main Translation Efforts Sponsors Data 2025 OWASP Top ",
+      "error": null,
+      "approved": false,
+      "adoption_note": "Manual review required before any model/module change."
+    },
+    {
+      "url": "https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP",
+      "topic": "frontend-hardening",
+      "priority": "P2",
+      "requested_by": "Zuno",
+      "host": "developer.mozilla.org",
+      "state": "captured",
+      "http_status": 200,
+      "content_type": "text/html",
+      "title": "Content Security Policy (CSP) - HTTP | MDN",
+      "summary": "Content Security Policy (CSP) - HTTP | MDN Skip to main content Skip to search MDN HTML HTML: Markup language HTML reference Elements Global attributes Attributes See all… HTML guides Responsive images HTML cheatsheet Date &amp; time formats See all… Markup languages SVG MathML XML CSS CSS: Styling language CSS reference Properties Selectors At-rules Values See all… CSS guides Box model Animations Flexbox Colors See ",
+      "error": null,
+      "approved": false,
+      "adoption_note": "Manual review required before any model/module change."
+    }
+  ]
+}

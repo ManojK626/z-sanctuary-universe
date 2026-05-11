@@ -1,0 +1,44 @@
+{
+  "generated_at": "2026-02-18T17:40:10.694Z",
+  "profile": "quad-lane",
+  "cpu_count": 16,
+  "lane_count": 4,
+  "lanes": [
+    {
+      "id": "observe",
+      "priority": "high",
+      "resource_bias": "cpu",
+      "slot": 1,
+      "thread_hint": 4,
+      "tasks": ["Z: Data Layout Audit", "Z: Storage Hygiene Audit", "Z: Pending Audit"]
+    },
+    {
+      "id": "protect",
+      "priority": "critical",
+      "resource_bias": "cpu",
+      "slot": 2,
+      "thread_hint": 4,
+      "tasks": ["Z: Privacy Gate Check", "Z: Protection Audit", "Z: Proof Gate Check"]
+    },
+    {
+      "id": "repair",
+      "priority": "medium",
+      "resource_bias": "mixed",
+      "slot": 3,
+      "thread_hint": 8,
+      "tasks": [
+        "Z: Folder Manager Recreate (Dry Run)",
+        "Z: Storage Hygiene Apply (Safe Quarantine)"
+      ]
+    },
+    {
+      "id": "report",
+      "priority": "high",
+      "resource_bias": "cpu",
+      "slot": 4,
+      "thread_hint": 4,
+      "tasks": ["Z: Hygiene Cycle", "Z: Zuno State Report", "Z: Proof Mesh Card"]
+    }
+  ],
+  "note": "Dispatch plan only (read-only). Execution remains task-driven."
+}

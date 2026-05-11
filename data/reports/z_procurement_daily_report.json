@@ -1,0 +1,61 @@
+{
+  "generated_at": "2026-02-17T13:57:01.509Z",
+  "phase": "wave_a",
+  "overall_status": "in_progress",
+  "budget": {
+    "currency": "EUR",
+    "planned_total": 0,
+    "committed_total": 0,
+    "paid_total": 0,
+    "variance": 0
+  },
+  "wave_status": {
+    "wave_a": "planned",
+    "wave_b": "planned",
+    "wave_c": "optional"
+  },
+  "wave_item_counts": {
+    "wave_a": {
+      "planned": 5,
+      "ordered": 0,
+      "received": 0,
+      "optional": 0,
+      "other": 0
+    },
+    "wave_b": {
+      "planned": 1,
+      "ordered": 0,
+      "received": 0,
+      "optional": 0,
+      "other": 0
+    },
+    "wave_c": {
+      "planned": 0,
+      "ordered": 0,
+      "received": 0,
+      "optional": 1,
+      "other": 0
+    }
+  },
+  "gates": {
+    "wave_a_gate_pass": false,
+    "wave_b_gate_pass": false
+  },
+  "validation": {
+    "burnin_status": "UNKNOWN",
+    "restore_status": "UNKNOWN"
+  },
+  "risks": [
+    {
+      "id": "vendor_stock_shift",
+      "severity": "medium",
+      "status": "open",
+      "mitigation": "keep fallback vendor per item"
+    }
+  ],
+  "next_actions": [
+    "Fill wave_a order fields",
+    "Run wave_a gate checks",
+    "Update generated_at and totals"
+  ]
+}

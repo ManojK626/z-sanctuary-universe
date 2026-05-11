@@ -1,0 +1,82 @@
+{
+  "generated_at": "2026-04-17T16:54:54.344Z",
+  "status": "green",
+  "disturbance_score": 0,
+  "risk_class": "low",
+  "summary": {
+    "checks_total": 6,
+    "checks_pass": 6,
+    "checks_fail": 0,
+    "folder_open_autoruns": 1
+  },
+  "checks": [
+    {
+      "id": "single_folder_open_autorun",
+      "pass": true,
+      "weight": 20,
+      "note": "folder-open tasks=1",
+      "details": [
+        "Z: SSWS Auto Boot"
+      ]
+    },
+    {
+      "id": "workspace_root_canonical",
+      "pass": true,
+      "weight": 20,
+      "note": "hub_ok=C:\\Cursor Projects Organiser\\ZSanctuary_Universe"
+    },
+    {
+      "id": "boot_chain_no_dangerous_tokens",
+      "pass": true,
+      "weight": 20,
+      "note": "no --force/--apply-actions in boot chain"
+    },
+    {
+      "id": "formula_registry_internal_only",
+      "pass": true,
+      "weight": 20,
+      "note": "status=internal-only"
+    },
+    {
+      "id": "folder_policy_internal_only",
+      "pass": true,
+      "weight": 20,
+      "note": "mode=internal-only"
+    },
+    {
+      "id": "critical_reports_fresh",
+      "pass": true,
+      "weight": 15,
+      "note": "critical reports within freshness window"
+    }
+  ],
+  "freshness": [
+    {
+      "file": "z_ssws_daily_report.json",
+      "exists": true,
+      "age_hours": 2.82
+    },
+    {
+      "file": "z_ai_status.json",
+      "exists": true,
+      "age_hours": 2.82
+    },
+    {
+      "file": "z_autorun_audit.json",
+      "exists": true,
+      "age_hours": 0.01
+    },
+    {
+      "file": "z_policy_shadow_gate.json",
+      "exists": true,
+      "age_hours": 0.01
+    },
+    {
+      "file": "z_otel_shadow_status.json",
+      "exists": true,
+      "age_hours": 0
+    }
+  ],
+  "failed_ids": [],
+  "protocol": "observational-only"
+}

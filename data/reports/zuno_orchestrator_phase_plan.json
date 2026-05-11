@@ -1,0 +1,69 @@
+{
+  "schema": "zuno_orchestrator_phase_plan_v1",
+  "generated_at": "2026-05-03T12:30:00.000Z",
+  "sources_note": "Planning-only artefact. Refresh after orchestration docs, contracts package, or registry material changes.",
+  "foundations_present": [
+    "data/z_master_module_registry.json and data/z_core_engines_registry.json",
+    "Zuno coverage audit and Phase 3 plan reports under data/reports/",
+    "Z-CAR² similarity and refactor plan reports under data/reports/",
+    "AI Builder pack: docs/AI_BUILDER_CONTEXT.md, docs/ai-builder/, generated module/engine/safety indexes",
+    "docs/Z_SANCTUARY_BUILD_RULES.md and implementation lanes",
+    "Z-MAOS charter and npm z:maos-* scripts",
+    "Z-Cursor Ops queue and handoff templates",
+    "Dashboard README and registry verify script",
+    "Indicators refresh pipeline (privacy + dashboard indicators)",
+    "Doctrine: Doorway/Escort, RPWC, SAGE, EDII (docs)",
+    "packages/zuno-orchestrator-contracts — Phase 1A TypeScript contracts (@z-sanctuary/zuno-orchestrator-contracts)",
+    "packages/zuno-orchestrator-contracts/examples/ — Phase 1B non-executable JSON fixtures",
+    "packages/zuno-orchestrator-contracts/scripts/validate_examples.mjs — Phase 1C local validation",
+    "data/reports/zuno_orchestrator_contract_examples_check.{json,md}",
+    "docs/orchestration/ZUNO_CONTRACT_EXAMPLES.md",
+    "packages/zuno-orchestrator-contracts/README.md — Phase 1D usage boundaries",
+    "packages/zuno-orchestrator-contracts/scripts/lint_task_plan.mjs — Phase 2A read-only ZunoTaskPlan lint",
+    "data/reports/zuno_task_plan_lint_report.{json,md}",
+    "dashboard/scripts/z-orchestration-status-readonly.js — Phase 2B HODP orchestration status card"
+  ],
+  "new_docs_added": [
+    "docs/orchestration/ZUNO_CONTRACT_EXAMPLES.md",
+    "docs/orchestration/README.md",
+    "docs/orchestration/ZUNO_ORCHESTRATOR_BLUEPRINT.md",
+    "docs/orchestration/ZUNO_CAPABILITY_ROUTER.md",
+    "docs/orchestration/ZUNO_PROVIDER_ADAPTER_CONTRACT.md",
+    "docs/orchestration/ZUNO_MEMORY_KNOWLEDGE_LAYER.md",
+    "docs/orchestration/ZUNO_OUTPUT_VERIFIER.md",
+    "docs/orchestration/Z_SANCTUARY_MASTER_ORCHESTRATION_ROADMAP.md"
+  ],
+  "missing_contracts": [
+    "Runtime orchestration consuming contracts package (Phase 2+)",
+    "data/formulas/z_formula_registry.json (Phase 3)",
+    "data/providers/z_provider_capability_registry.json (Phase 5)",
+    "scripts/z_drp_check.mjs read-only mode (Phase 4 — proposed)",
+    "scripts/z_knowledge_index_scan.mjs (Phase 6 — proposed)",
+    "data/z_project_registry.json for bridge map (Phase 8 — proposed)"
+  ],
+  "safe_first_code_interfaces": [
+    "Optional JSON schema stubs for provider registry (metadata only, disabled)",
+    "DRP read-only report script with zero blocking behaviour until validated",
+    "Knowledge index: local glob scan to Markdown or JSON report"
+  ],
+  "blocked_unsafe_until_charter": [
+    "Live provider API execution",
+    "Repo-stored API keys",
+    "Payments, GPS, camera, mic capture, gambling automation",
+    "Baby or soulmate predictors, health or emergency automation",
+    "Auto-merge, auto-deploy, silent cross-repo coupling",
+    "XL2 merge without explicit coupling charter"
+  ],
+  "recommended_phase1_implementation_slice": "Phase 2A task-plan linter + Phase 2B HODP orchestration status card are live (read-only). Runtime consumer still deferred; optional disabled provider registry JSON or read-only DRP report script.",
+  "test_commands": [
+    "npm run examples:check --workspace=@z-sanctuary/zuno-orchestrator-contracts",
+    "npm run task-plan:lint --workspace=@z-sanctuary/zuno-orchestrator-contracts",
+    "npm run test --workspace=@z-sanctuary/zuno-orchestrator-contracts",
+    "npm run build --workspace=@z-sanctuary/zuno-orchestrator-contracts",
+    "npm run z:ai-builder:refresh",
+    "npm run z:car2",
+    "npm run dashboard:registry-verify",
+    "npm run zuno:coverage && npm run zuno:phase3-plan"
+  ],
+  "rollback_plan": "Remove packages/zuno-orchestrator-contracts/; revert docs/orchestration edits; restore phase plan prior version if desired; npm install at hub root."
+}

@@ -1,0 +1,52 @@
+{
+  "generated_at": "2026-04-26T01:49:12.597Z",
+  "status": "green",
+  "checks": [
+    {
+      "id": "sandbox/zgm_phase_lab/README.md",
+      "pass": true,
+      "note": "present"
+    },
+    {
+      "id": "sandbox/zgm_phase_lab/phase_manifest.json",
+      "pass": true,
+      "note": "present"
+    },
+    {
+      "id": "sandbox/zgm_phase_lab/CAPABILITY_ENVELOPE.md",
+      "pass": true,
+      "note": "present"
+    },
+    {
+      "id": "docs/Z_SANDBOX_ISOLATION_PROTOCOL.md",
+      "pass": true,
+      "note": "present"
+    },
+    {
+      "id": "core_registry_no_sandbox_entry",
+      "pass": true,
+      "note": "no sandbox registration in core registry"
+    },
+    {
+      "id": "docs_registry_no_sandbox_entry",
+      "pass": true,
+      "note": "no sandbox registration in docs registry"
+    },
+    {
+      "id": "manifest_isolation_controls",
+      "pass": true,
+      "note": "sandbox controls valid"
+    },
+    {
+      "id": "manifest_pause_state",
+      "pass": true,
+      "note": "pause state valid"
+    },
+    {
+      "id": "manifest_freeze_controls",
+      "pass": true,
+      "note": "freeze controls active"
+    }
+  ],
+  "note": "Sandbox remains isolated; safe to continue experimental phases."
+}

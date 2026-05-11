@@ -1,0 +1,94 @@
+{
+  "jobs": {
+    "freshness_refresh": {
+      "last_started_at": "2026-04-28T18:55:51.952Z",
+      "last_finished_at": "2026-04-28T18:55:52.306Z",
+      "last_finished_ms": 1777402552306,
+      "last_ok": true,
+      "last_code": 0,
+      "last_skipped_policy": false,
+      "risk": "low"
+    },
+    "system_status_refresh": {
+      "last_started_at": "2026-04-28T18:55:52.306Z",
+      "last_finished_at": "2026-04-28T18:55:52.929Z",
+      "last_finished_ms": 1777402552929,
+      "last_ok": true,
+      "last_code": 0,
+      "last_skipped_policy": false,
+      "risk": "low"
+    },
+    "guardian_report": {
+      "last_started_at": "2026-04-28T18:55:52.929Z",
+      "last_finished_at": "2026-04-28T18:55:53.361Z",
+      "last_finished_ms": 1777402553361,
+      "last_ok": true,
+      "last_code": 0,
+      "last_skipped_policy": false,
+      "risk": "low"
+    },
+    "folder_align_dry": {
+      "last_started_at": "2026-04-28T18:55:53.361Z",
+      "last_finished_at": "2026-04-28T18:55:53.830Z",
+      "last_finished_ms": 1777402553830,
+      "last_ok": true,
+      "last_code": 0,
+      "last_skipped_policy": false,
+      "risk": "medium"
+    },
+    "lab_status": {
+      "last_started_at": "2026-04-28T18:55:53.830Z",
+      "last_finished_at": "2026-04-28T18:55:54.218Z",
+      "last_finished_ms": 1777402554218,
+      "last_ok": true,
+      "last_code": 0,
+      "last_skipped_policy": false,
+      "risk": "low"
+    },
+    "commflow_verify": {
+      "last_started_at": "2026-04-28T18:55:54.218Z",
+      "last_finished_at": "2026-04-28T18:55:54.615Z",
+      "last_finished_ms": 1777402554615,
+      "last_ok": true,
+      "last_code": 0,
+      "last_skipped_policy": false,
+      "risk": "medium"
+    },
+    "hygiene_autofix": {
+      "last_started_at": "2026-04-28T18:55:55.040Z",
+      "last_finished_at": "2026-04-28T18:56:00.521Z",
+      "last_finished_ms": 1777402560521,
+      "last_ok": false,
+      "last_code": 1,
+      "last_skipped_policy": false,
+      "risk": "medium"
+    },
+    "lint_md_validate": {
+      "last_started_at": "2026-04-28T18:56:00.521Z",
+      "last_finished_at": "2026-04-28T18:56:02.570Z",
+      "last_finished_ms": 1777402562570,
+      "last_ok": false,
+      "last_code": 1,
+      "last_skipped_policy": false,
+      "risk": "low"
+    },
+    "dsr_analyze": {
+      "last_started_at": "2026-04-28T18:56:02.570Z",
+      "last_finished_at": "2026-04-28T18:56:02.937Z",
+      "last_finished_ms": 1777402562937,
+      "last_ok": true,
+      "last_code": 0,
+      "last_skipped_policy": false,
+      "risk": "low"
+    },
+    "ataiecf_shadow_verify": {
+      "last_started_at": "2026-04-28T18:55:54.615Z",
+      "last_finished_at": "2026-04-28T18:55:55.040Z",
+      "last_finished_ms": 1777402555040,
+      "last_ok": true,
+      "last_code": 0,
+      "last_skipped_policy": false,
+      "risk": "low"
+    }
+  }
+}

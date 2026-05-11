@@ -1,0 +1,85 @@
+{
+  "generated_at": "2026-04-21T12:10:52.477Z",
+  "root": ".",
+  "summary": {
+    "total_nodes": 7
+  },
+  "structure": [
+    {
+      "name": ".vscode",
+      "path": "./.vscode",
+      "depth": 0,
+      "capabilities": [],
+      "package": null,
+      "children": []
+    },
+    {
+      "name": "data",
+      "path": "./data",
+      "depth": 0,
+      "capabilities": [],
+      "package": null,
+      "children": [
+        {
+          "name": "reports",
+          "path": "./data/reports",
+          "depth": 1,
+          "capabilities": [],
+          "package": null,
+          "children": []
+        }
+      ]
+    },
+    {
+      "name": "load",
+      "path": "./load",
+      "depth": 0,
+      "capabilities": [],
+      "package": null,
+      "children": [
+        {
+          "name": "k6",
+          "path": "./load/k6",
+          "depth": 1,
+          "capabilities": [],
+          "package": null,
+          "children": []
+        }
+      ]
+    },
+    {
+      "name": "z_bridge",
+      "path": "./z_bridge",
+      "depth": 0,
+      "capabilities": [
+        "node_project",
+        "z_bridge_module",
+        "scriptable",
+        "runnable_app",
+        "build_system",
+        "test_system",
+        "lint_system"
+      ],
+      "package": {
+        "name": "z-bridge-engine",
+        "version": null,
+        "scripts": [
+          "start",
+          "build",
+          "test",
+          "lint"
+        ],
+        "dependencies": []
+      },
+      "children": []
+    },
+    {
+      "name": "z_super_chat",
+      "path": "./z_super_chat",
+      "depth": 0,
+      "capabilities": [],
+      "package": null,
+      "children": []
+    }
+  ]
+}

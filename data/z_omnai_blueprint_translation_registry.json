@@ -1,0 +1,164 @@
+{
+  "schema": "z_omnai_blueprint_translation_registry_v1",
+  "phase": "Z-OMNAI-1",
+  "posture": "architecture_inspiration_only_no_public_agi_claims",
+  "summary": "Maps OMNAI blueprint metaphors to governed Z-Sanctuary creative production equivalents. Blueprint is not product truth.",
+  "law": "Blueprint ≠ product claim. Architecture metaphor ≠ AGI proof.",
+  "translations": [
+    {
+      "source_concept": "Omega Infinity Formula",
+      "safe_z_equivalent": "Creative production routing score — ranks next internal step, lane, and evidence gaps; not a convergence proof or intelligence measure.",
+      "allowed_use": "Internal routing hints, backlog prioritisation for creative packs, AMK dashboard advisory text backed by receipts.",
+      "forbidden_claims": [
+        "Guaranteed creative or business convergence",
+        "Mathematical proof of superhuman outcomes",
+        "Public statement that a formula replaces human judgment"
+      ],
+      "related_existing_systems": [
+        "docs/AI_BUILDER_CONTEXT.md",
+        "data/z_autonomy_task_policy.json",
+        "npm run zuno:awareness-score"
+      ],
+      "autonomy_level": "L1",
+      "human_gate_required": false,
+      "output_examples": [
+        "Internal step-rank JSON",
+        "Creative lane suggestion in Zuno Advisor context"
+      ]
+    },
+    {
+      "source_concept": "Giant Multiplying Brains",
+      "safe_z_equivalent": "Specialist production lanes — discrete workflows (film, marketing, tool spec) with fixed checklists; not cloned autonomous minds.",
+      "allowed_use": "Template libraries, lane-specific validators, human-assigned roles in docs.",
+      "forbidden_claims": [
+        "Thousands of autonomous agent entities acting without oversight",
+        "Self-replicating intelligence",
+        "Unbounded parallel cognition as shipped product"
+      ],
+      "related_existing_systems": [
+        "docs/Z_TRAFFIC_MINIBOTS.md",
+        "data/z_cross_project_capability_index.json"
+      ],
+      "autonomy_level": "L1",
+      "human_gate_required": false,
+      "output_examples": [
+        "Lane checklist markdown",
+        "Pipeline row in z_omnai_creative_pipeline_templates.json"
+      ]
+    },
+    {
+      "source_concept": "Quadruple Spine",
+      "safe_z_equivalent": "Four-track workflow: cognitive (intent), data (evidence), build (assets), oversight (safety and AMK indicators).",
+      "allowed_use": "Phase plans, RACI-style maps, internal factory diagrams.",
+      "forbidden_claims": [
+        "Four spines as autonomous nervous system replacing governance",
+        "Spine as live production control without human charter"
+      ],
+      "related_existing_systems": [
+        "docs/Z_AUTONOMOUS_GUARDIAN_LOOP.md",
+        "dashboard/data/amk_project_indicators.json"
+      ],
+      "autonomy_level": "L1",
+      "human_gate_required": false,
+      "output_examples": [
+        "Project charter section headers",
+        "Receipt tables tying evidence to build artefacts"
+      ]
+    },
+    {
+      "source_concept": "Octo-Ant Overseer",
+      "safe_z_equivalent": "Eight quality and safety minibots — themed checks (claims, PII, licensing, accessibility, performance hints, link rot, tone, charter alignment).",
+      "allowed_use": "Read-only scripts, markdown reports, dashboard overlays where policy allows.",
+      "forbidden_claims": [
+        "Autonomous enforcement or auto-merge from overseer output",
+        "Ant colony as literal multi-agent runtime in production"
+      ],
+      "related_existing_systems": [
+        "docs/Z_TRAFFIC_MINIBOTS.md",
+        "npm run z:traffic"
+      ],
+      "autonomy_level": "L1",
+      "human_gate_required": false,
+      "output_examples": [
+        "z_traffic_minibots_status.json signals",
+        "Manual review checklist with eight sections"
+      ]
+    },
+    {
+      "source_concept": "1000× File System",
+      "safe_z_equivalent": "Asset vault and folder conventions — versioned creative packs, manifests, and read-only indexes; not a claim of infinite storage or generation.",
+      "allowed_use": "Naming conventions, vault paths, export bundles under governance.",
+      "forbidden_claims": [
+        "Thousand-fold intelligence multiplier",
+        "Automatic rights clearance for third-party IP"
+      ],
+      "related_existing_systems": [
+        "docs/cross-project/Z_SERVICE_ENTITLEMENT_AND_PRICING_POLICY.md",
+        "data/z_service_entitlement_catalog.json"
+      ],
+      "autonomy_level": "L0",
+      "human_gate_required": false,
+      "output_examples": [
+        "Structured asset manifest JSON",
+        "Creative pack zip layout spec"
+      ]
+    },
+    {
+      "source_concept": "PowerShell Orchestration",
+      "safe_z_equivalent": "Gated manual scripts — npm and PowerShell tasks run by operators with Turtle Mode and charter awareness; no silent fleet orchestration.",
+      "allowed_use": "Documented npm scripts, local validation, operator-run maintenance.",
+      "forbidden_claims": [
+        "Fully autonomous cross-machine orchestration without approval",
+        "Self-spawning script networks"
+      ],
+      "related_existing_systems": [
+        "package.json scripts",
+        "docs/AGENTS.md"
+      ],
+      "autonomy_level": "L2",
+      "human_gate_required": true,
+      "output_examples": [
+        "npm run z:omnai",
+        "npm run verify:md"
+      ]
+    },
+    {
+      "source_concept": "Self-Guiding Pathway",
+      "safe_z_equivalent": "Next-step planner plus reroute report — deterministic hints from JSON and docs; advisor, not executor.",
+      "allowed_use": "AMK Zuno Advisor Console copy, internal wizards, phase receipts.",
+      "forbidden_claims": [
+        "Self-routing that applies patches or deploys",
+        "LLM-driven pathway without disclosed provider and charter"
+      ],
+      "related_existing_systems": [
+        "docs/AMK_ZUNO_ADVISOR_CONSOLE.md",
+        "docs/AMK_AUTONOMOUS_APPROVAL_LADDER.md"
+      ],
+      "autonomy_level": "L1",
+      "human_gate_required": false,
+      "output_examples": [
+        "What-next markdown block",
+        "AAL ladder hint JSON consumed read-only"
+      ]
+    },
+    {
+      "source_concept": "Infinite Mode",
+      "safe_z_equivalent": "Future-gated capability flag in registries only — no active runtime, no public marketing of infinite capability.",
+      "allowed_use": "Roadmap placeholders, internal phase labels, charter-gated design notes.",
+      "forbidden_claims": [
+        "Infinite intelligence or infinite power as shipped feature",
+        "Active infinite mode in production without DRP review"
+      ],
+      "related_existing_systems": [
+        "data/z_autonomy_task_policy.json",
+        "docs/AMK_PROJECT_INDICATORS_AND_GO_NO_GO.md"
+      ],
+      "autonomy_level": "L5",
+      "human_gate_required": true,
+      "output_examples": [
+        "Registry row marked future_gated",
+        "Internal roadmap stub with no customer-facing copy"
+      ]
+    }
+  ]
+}

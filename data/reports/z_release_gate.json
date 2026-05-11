@@ -1,0 +1,71 @@
+{
+  "generated_at": "2026-04-26T01:55:22.023Z",
+  "verdict": "go",
+  "steps": [
+    {
+      "name": "execution_enforcer_gate",
+      "command": "C:\\Program Files\\nodejs\\node.exe scripts/z_execution_enforcer_gate.mjs",
+      "exit_code": 0,
+      "ok": true,
+      "error": null
+    },
+    {
+      "name": "cursor_folders_verify",
+      "command": "C:\\Program Files\\nodejs\\node.exe scripts/z_cursor_folder_bootstrap.mjs --verify",
+      "exit_code": 0,
+      "ok": true,
+      "error": null
+    },
+    {
+      "name": "structure_verify",
+      "command": "C:\\Program Files\\nodejs\\node.exe scripts/z_sanctuary_structure_verify.mjs",
+      "exit_code": 0,
+      "ok": true,
+      "error": null
+    },
+    {
+      "name": "registry_omni_verify",
+      "command": "C:\\Program Files\\nodejs\\node.exe scripts/z_registry_omni_verify.mjs",
+      "exit_code": 0,
+      "ok": true,
+      "error": null
+    },
+    {
+      "name": "report_freshness",
+      "command": "C:\\Program Files\\nodejs\\node.exe scripts/z_report_freshness_check.mjs",
+      "exit_code": 0,
+      "ok": true,
+      "error": null
+    },
+    {
+      "name": "cross_project_observer",
+      "command": "C:\\Program Files\\nodejs\\node.exe scripts/z_cross_project_health_probe.mjs",
+      "exit_code": 0,
+      "ok": true,
+      "error": null
+    },
+    {
+      "name": "boundary_ownership",
+      "command": "C:\\Program Files\\nodejs\\node.exe scripts/z_boundary_service_ownership_check.mjs",
+      "exit_code": 0,
+      "ok": true,
+      "error": null
+    },
+    {
+      "name": "trust_scorecard",
+      "command": "C:\\Program Files\\nodejs\\node.exe scripts/z_trust_scorecard.mjs",
+      "exit_code": 0,
+      "ok": true,
+      "error": null
+    }
+  ],
+  "checks": {
+    "freshness_status": "green",
+    "observer_status": "watch",
+    "boundary_violations": 0,
+    "trust_score": 80,
+    "trust_grade": "B",
+    "trust_release_gate": "go"
+  },
+  "blockers": []
+}

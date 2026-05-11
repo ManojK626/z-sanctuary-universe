@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="z-project-id" content="dashboard-z-mdgev" />
+    <meta name="z-dashboard-role" content="subsystem-dashboard" />
+    <meta name="z-project-family" content="Z-Sanctuary Universe" />
+    <title>Z-MDGEV · Mega Dashboard Grid · Eagle Eyes</title>
+    <link rel="stylesheet" href="mdg.css" />
+  </head>
+  <body class="mdg-body">
+    <div class="mdg-shell">
+      <header class="mdg-header" data-z-project="dashboard-z-mdgev">
+        <div>
+          <h1 class="mdg-title" id="mdg-registry-title">Z-MDGEV</h1>
+          <p class="mdg-sub" id="mdg-registry-sub">
+            Main Dashboard · Project folder:
+            <code>dashboard/z-mdgev</code> · One grid for hub + sibling projects (after discovery). Registry + PC roster +
+            indexed HTML.
+          </p>
+        </div>
+        <div class="mdg-controls">
+          <input
+            id="mdg-search"
+            class="mdg-search"
+            type="search"
+            placeholder="Search Amk-Goku, control, creator, paths…"
+            autocomplete="off"
+            aria-label="Filter dashboards"
+          />
+          <div class="mdg-filters" role="group" aria-label="Category">
+            <button type="button" class="mdg-chip" data-filter="all" aria-pressed="true">All</button>
+            <button type="button" class="mdg-chip" data-filter="hub" aria-pressed="false">Hub</button>
+            <button type="button" class="mdg-chip" data-filter="bridge" aria-pressed="false">Bridge</button>
+            <button type="button" class="mdg-chip" data-filter="labs" aria-pressed="false">Labs</button>
+            <button type="button" class="mdg-chip" data-filter="discovered" aria-pressed="false">Discovered</button>
+            <button type="button" class="mdg-chip" data-filter="external" aria-pressed="false">External</button>
+            <button type="button" class="mdg-chip" data-filter="member" aria-pressed="false">Members</button>
+          </div>
+        </div>
+      </header>
+
+      <div id="mdg-banner" class="mdg-banner" role="status"></div>
+
+      <div class="mdg-toolbar" aria-label="Layout">
+        <span class="mdg-toolbar-label">Layout</span>
+        <button type="button" class="mdg-layout-btn" id="mdg-layout-grid" data-split="" aria-pressed="true">Grid</button>
+        <button type="button" class="mdg-layout-btn" id="mdg-layout-group" aria-pressed="false">Group by project</button>
+        <button type="button" class="mdg-layout-btn" id="mdg-btn-split-2" data-split="2" aria-pressed="false">Split 2</button>
+        <button type="button" class="mdg-layout-btn" id="mdg-btn-split-4" data-split="4" aria-pressed="false">Split 4</button>
+      </div>
+
+      <p class="mdg-hint">
+        <strong>Cross-project embeds:</strong> run <code>npx serve .</code> from
+        <code>Cursor Projects Organiser</code> (parent of all project folders), then open this page via
+        <code>/ZSanctuary_Universe/dashboard/z-mdgev/index.html</code>. Hub-only serve cannot load sibling project
+        paths.
+      </p>
+
+      <p id="mdg-status" class="mdg-status" aria-live="polite"></p>
+
+      <div id="mdg-split-wrap" class="mdg-split-wrap" data-active="false">
+        <div id="mdg-split-grid" class="mdg-split-grid cols-2">
+          <div class="mdg-split-panel" data-split-panel="0">
+            <select id="mdg-slot-0" aria-label="Dashboard slot 1"></select>
+            <iframe id="mdg-slot-if-0" title="Split panel 1"></iframe>
+          </div>
+          <div class="mdg-split-panel" data-split-panel="1">
+            <select id="mdg-slot-1" aria-label="Dashboard slot 2"></select>
+            <iframe id="mdg-slot-if-1" title="Split panel 2"></iframe>
+          </div>
+          <div class="mdg-split-panel" data-split-panel="2" hidden>
+            <select id="mdg-slot-2" aria-label="Dashboard slot 3"></select>
+            <iframe id="mdg-slot-if-2" title="Split panel 3"></iframe>
+          </div>
+          <div class="mdg-split-panel" data-split-panel="3" hidden>
+            <select id="mdg-slot-3" aria-label="Dashboard slot 4"></select>
+            <iframe id="mdg-slot-if-3" title="Split panel 4"></iframe>
+          </div>
+        </div>
+      </div>
+
+      <div id="mdg-main-flow" class="mdg-main-flow">
+        <main id="mdg-grid" class="mdg-grid" aria-label="Dashboard tiles"></main>
+      </div>
+
+      <div id="mdg-modal-backdrop" class="mdg-modal-backdrop" data-open="false" aria-hidden="true">
+        <div class="mdg-modal" role="dialog" aria-modal="true" aria-labelledby="mdg-modal-title">
+          <div class="mdg-modal-bar">
+            <span id="mdg-modal-title">Dashboard</span>
+            <div>
+              <button type="button" class="mdg-btn mdg-modal-close" id="mdg-modal-tab">Open in tab</button>
+              <button type="button" class="mdg-modal-close" id="mdg-modal-close">Close · Esc</button>
+            </div>
+          </div>
+          <iframe id="mdg-modal-frame" title="Fullscreen dashboard preview"></iframe>
+        </div>
+      </div>
+
+      <section class="mdg-autofix" aria-labelledby="mdg-af-h">
+        <h2 id="mdg-af-h">Operator tools (advisory)</h2>
+        <ul>
+          <li><code>npm run dashboard:mdgev-discover</code> — index HTML in all PC-root project folders</li>
+          <li><code>npm run z:garage:full-scan</code> — Z-Garage + ZCI + planner + Zuno</li>
+          <li><code>npm run enforcer:refresh</code></li>
+        </ul>
+      </section>
+
+      <footer class="mdg-footer">
+        Z-MDGEV v2 · Tiles from registry + roster + discovery JSON · Pop-in / Split / Group views.
+      </footer>
+    </div>
+    <script src="mdg.js" defer></script>
+  </body>
+</html>

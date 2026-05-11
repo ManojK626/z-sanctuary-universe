@@ -1,0 +1,112 @@
+{
+  "schema": "z_ssws_launch_requirements_report_v1",
+  "generated_at": "2026-05-11T13:38:42.207Z",
+  "overall_signal": "BLUE",
+  "registry_path": "data/z_ssws_workspace_spine_registry.json",
+  "policy_path": "data/z_ssws_launch_requirements_policy.json",
+  "projects": [
+    {
+      "project_id": "zs_hub_universe",
+      "display_name": "ZSanctuary_Universe hub",
+      "workspace_type": "hub",
+      "launch_profile": "manual_only",
+      "secrets_required": false,
+      "deployment_status": "HOLD"
+    },
+    {
+      "project_id": "at_princess_blackie",
+      "display_name": "AT Princess & Blackie / Franed AI",
+      "workspace_type": "reference_only",
+      "launch_profile": "future_gated",
+      "secrets_required": true,
+      "deployment_status": "HOLD"
+    },
+    {
+      "project_id": "z_questra",
+      "display_name": "Z-QUESTRA",
+      "workspace_type": "frontend",
+      "launch_profile": "manual_only",
+      "secrets_required": false,
+      "deployment_status": "HOLD"
+    },
+    {
+      "project_id": "z_saiyan_lumina",
+      "display_name": "Z-Saiyan Lumina Browser",
+      "workspace_type": "electron_app",
+      "launch_profile": "future_gated",
+      "secrets_required": false,
+      "deployment_status": "UNKNOWN"
+    },
+    {
+      "project_id": "z_omnai_scripts",
+      "display_name": "Z-OMNAI creative production scripts",
+      "workspace_type": "script_service",
+      "launch_profile": "checklist_only",
+      "secrets_required": false,
+      "deployment_status": "HOLD"
+    },
+    {
+      "project_id": "z_susbv_scripts",
+      "display_name": "Z-SUSBV Benchmark Overseer scripts",
+      "workspace_type": "script_service",
+      "launch_profile": "checklist_only",
+      "secrets_required": false,
+      "deployment_status": "HOLD"
+    },
+    {
+      "project_id": "z_api_spine_gate",
+      "display_name": "Z-API-SPINE / Z-API-GATE (hub registry)",
+      "workspace_type": "script_service",
+      "launch_profile": "manual_only",
+      "secrets_required": false,
+      "deployment_status": "HOLD"
+    },
+    {
+      "project_id": "zquestcraft",
+      "display_name": "ZQuestCraft placeholder",
+      "workspace_type": "reference_only",
+      "launch_profile": "future_gated",
+      "secrets_required": false,
+      "deployment_status": "NO_GO"
+    },
+    {
+      "project_id": "xl2_lane",
+      "display_name": "XL2 reference-only lane",
+      "workspace_type": "reference_only",
+      "launch_profile": "future_gated",
+      "secrets_required": false,
+      "deployment_status": "UNKNOWN"
+    }
+  ],
+  "extension_gaps": [],
+  "port_collision_notes": [],
+  "issues": [
+    {
+      "project_id": "at_princess_blackie",
+      "severity": "BLUE",
+      "code": "secrets_human",
+      "message": "secrets_required true — AMK/human confirms vault and CI posture before launch."
+    },
+    {
+      "project_id": "z_saiyan_lumina",
+      "severity": "YELLOW",
+      "code": "node_version",
+      "message": "Missing required_node_version hint for non-reference project."
+    },
+    {
+      "project_id": "z_saiyan_lumina",
+      "severity": "YELLOW",
+      "code": "package_manager",
+      "message": "Missing package_manager hint for non-reference project."
+    }
+  ],
+  "notification_candidates_red_blue_only": [
+    {
+      "signal": "BLUE",
+      "title": "BLUE: secrets_human",
+      "detail": "at_princess_blackie: secrets_required true — AMK/human confirms vault and CI posture before launch."
+    }
+  ],
+  "law_note": "Launch requirement ≠ launch permission. Extension requirement ≠ auto-install. Start command ≠ execution. Shadow workspace ≠ deploy. GREEN ≠ auto-launch. BLUE requires AMK. RED blocks movement. AMK-Goku owns sacred moves.",
+  "note": "YELLOW extension or metadata gaps stay off AMK notifications by default. No auto-launch in SSWS-LINK-1."
+}

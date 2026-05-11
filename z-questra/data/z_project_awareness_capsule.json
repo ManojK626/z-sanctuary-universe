@@ -1,0 +1,19 @@
+{
+  "schema": "z_project_awareness_capsule_v1",
+  "project_id": "z-questra",
+  "project_name": "Z-QUESTRA comfort lab",
+  "primary_domain": "creative_lab",
+  "current_signal": "GREEN",
+  "growth_percent": 70,
+  "required_checks": ["cd z-questra && npm test"],
+  "api_health": "not_required",
+  "smoke_gate": "npm test in z-questra when lane opened",
+  "build_gate": "npm run build in z-questra before dist serve",
+  "docs_gate": "z-questra/README.md",
+  "autonomy_level": "L1",
+  "allowed_auto_checks": ["z-questra npm test when invoked"],
+  "human_gated_actions": ["live_hub_bridge", "deploy", "billing"],
+  "related_docs": ["z-questra/README.md", "docs/z_zuno_technology_snapshot.md"],
+  "related_reports": [],
+  "notes": "Sibling-style app; hub bridge is human-gated."
+}

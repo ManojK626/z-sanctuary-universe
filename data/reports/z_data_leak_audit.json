@@ -1,0 +1,26 @@
+{
+  "generated_at": "2026-05-01T17:24:18.633Z",
+  "status": "green",
+  "mode": "audit-only",
+  "files_scanned": 1385,
+  "findings_count": 0,
+  "counts": {
+    "critical": 0,
+    "high": 0,
+    "warn": 0
+  },
+  "checks": [
+    {
+      "id": "critical_leaks_limit",
+      "pass": true,
+      "note": "critical=0, limit=0"
+    },
+    {
+      "id": "high_leaks_limit",
+      "pass": true,
+      "note": "high=0, limit=0"
+    }
+  ],
+  "findings": [],
+  "note": "Audit-only leak detector. No automatic file mutation."
+}

@@ -1,0 +1,19 @@
+{
+  "schema_version": 1,
+  "generated_at": "2026-04-24T16:35:11.499Z",
+  "advisory": true,
+  "name": "Cursor / VS Code workspace lint (declared files only)",
+  "drp_note": "Compares on-disk .code-workspace folder list to EAII PC-root registry entries that exist on disk. Does not detect which workspace Cursor currently has open.",
+  "pc_root": "C:/Cursor Projects Organiser",
+  "hub": "ZSanctuary_Universe",
+  "registry_on_disk_project_count": 9,
+  "workspace_files_scanned": [],
+  "no_workspace_file": true,
+  "hint": "No workspace file found. Run: npm run workspace:emit-pc-root — then re-run, or set Z_WORKSPACE_LINT_FILES or --workspace=...",
+  "results": [],
+  "summary": {
+    "status": "no_workspace_file",
+    "aligned": null,
+    "files_checked": 0
+  }
+}

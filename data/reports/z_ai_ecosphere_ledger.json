@@ -1,0 +1,220 @@
+{
+  "generated_at": "2026-05-03T14:38:59.183Z",
+  "schema_version": 1,
+  "governance_note": "Advisory ledger only — Hierarchy Chief, DRP, and Enforcer are not overridden. Scores derive from hub JSON reports.",
+  "config_file": "data/z_ai_ecosphere_config.json",
+  "overall": {
+    "sync_score": 67,
+    "band": "yellow",
+    "potential_label": "developing",
+    "color": "#ffca28"
+  },
+  "rings": [
+    {
+      "id": "z_ssws",
+      "ring_title": "Z-SSWS",
+      "band": "green",
+      "potential_label": "high potential",
+      "color": "#66bb6a",
+      "sync_score": 92,
+      "detail": {
+        "sync_score": 92,
+        "notes": [
+          "Workspace: Z-SSWS",
+          "Formula registry entries: 1"
+        ]
+      }
+    },
+    {
+      "id": "z_mega_formulas",
+      "ring_title": "Z-Mega & formulas",
+      "band": "yellow",
+      "potential_label": "developing",
+      "color": "#ffca28",
+      "sync_score": 66,
+      "detail": {
+        "sync_score": 66,
+        "notes": [
+          "Formula posture: watch",
+          "QOSMEI families: zMega, lpbsFlexInfinite, ggaesp360, zPowerAZ, microZ"
+        ]
+      }
+    },
+    {
+      "id": "ai_tower",
+      "ring_title": "AI Tower",
+      "band": "green",
+      "potential_label": "high potential",
+      "color": "#66bb6a",
+      "sync_score": 81,
+      "detail": {
+        "sync_score": 81,
+        "notes": [
+          "Tower status: clear · agents: 4",
+          "4 agent(s) still planned — promote with governance"
+        ]
+      }
+    },
+    {
+      "id": "shadow_minibots",
+      "ring_title": "Shadow · mini-bots",
+      "band": "red",
+      "potential_label": "needs attention",
+      "color": "#ef5350",
+      "sync_score": 30,
+      "detail": {
+        "sync_score": 30,
+        "notes": [
+          "Mini-bots online: 0/4",
+          "Super ghost feed: green",
+          "5 formula famil(ies) marked shadow in QOSMEI"
+        ]
+      }
+    }
+  ],
+  "task_accomplishments": {
+    "log_files": {
+      "creator": "data/logs/z_ai_task_accomplishments.jsonl",
+      "business": "data/logs/z_ai_task_accomplishments_business.jsonl",
+      "csv_export": "data/reports/z_ai_task_accomplishments.csv"
+    },
+    "by_namespace": {
+      "creator": {
+        "count": 1,
+        "avg_rating_pct": 88,
+        "by_actor_class": {
+          "mini_bot": 1
+        }
+      },
+      "business": {
+        "count": 1,
+        "avg_rating_pct": 82,
+        "by_actor_class": {
+          "ssws_task": 1
+        }
+      }
+    },
+    "combined": {
+      "total_entries": 2,
+      "avg_rating_pct": 85,
+      "by_actor_class": {
+        "ssws_task": 1,
+        "mini_bot": 1
+      }
+    },
+    "total_entries": 2,
+    "avg_rating_pct": 85,
+    "by_actor_class": {
+      "ssws_task": 1,
+      "mini_bot": 1
+    },
+    "recent_sample": [
+      {
+        "schema": "z_ai_task_accomplishment_v1",
+        "namespace": "business",
+        "ts": "2026-04-19T14:30:00.000Z",
+        "actor_class": "ssws_task",
+        "actor_id": "hub-verify",
+        "task": "Example: customer-facing dashboard smoke test passed",
+        "rating_pct": 82,
+        "potential_note": "Automate in CI when GitHub Actions enabled",
+        "drp_ok": true
+      },
+      {
+        "schema": "z_ai_task_accomplishment_v1",
+        "namespace": "creator",
+        "ts": "2026-04-19T12:00:00.000Z",
+        "actor_class": "mini_bot",
+        "actor_id": "DesignerBot",
+        "task": "Example: dashboard registry verify wired to daily gate",
+        "rating_pct": 88,
+        "potential_note": "Extend rollup to GitHub Actions bots when enabled",
+        "drp_ok": true
+      }
+    ]
+  },
+  "delta": {
+    "first_run": false,
+    "overall_change": 0,
+    "rings": {
+      "z_ssws": {
+        "change": 0,
+        "current": 92,
+        "previous": 92
+      },
+      "z_mega_formulas": {
+        "change": 0,
+        "current": 94,
+        "previous": 94
+      },
+      "ai_tower": {
+        "change": 0,
+        "current": 81,
+        "previous": 81
+      },
+      "shadow_minibots": {
+        "change": 0,
+        "current": 30,
+        "previous": 30
+      }
+    },
+    "new_tasks": 0
+  },
+  "consistency_alerts": {
+    "generated_at": "2026-04-23T21:44:06.922Z",
+    "inputs": {
+      "ecosphere_overall_sync": 74,
+      "ecosphere_band": "yellow",
+      "garage_pressure": "low",
+      "zci_low_priority": 0,
+      "vault_spine_status": "green",
+      "communication_flow_status": "degraded",
+      "system_health_status": "stable",
+      "system_health_score": 93
+    },
+    "alerts": [
+      {
+        "type": "COMM_FLOW_DEGRADED",
+        "message": "Communication flow degraded — stale observers, drift, or commflow attention.",
+        "severity": "low"
+      },
+      {
+        "type": "STRUCTURAL_FLOW_MISMATCH",
+        "message": "Structural health is strong but communication flow is not healthy — possible silent disconnect.",
+        "severity": "medium"
+      }
+    ],
+    "total": 2,
+    "status": "watch"
+  },
+  "vault_spine": {
+    "present": true,
+    "status": "green",
+    "spine_files": 8,
+    "links_checked": 40,
+    "broken": 0,
+    "file": "data/reports/z_vault_spine_manifest.json"
+  },
+  "likely_causes": [
+    {
+      "ring": "Z-Mega & formulas",
+      "reason": "Define project role clearly"
+    },
+    {
+      "ring": "AI Tower",
+      "reason": "Define project role clearly"
+    },
+    {
+      "ring": "Shadow · mini-bots",
+      "reason": "Define project role clearly"
+    }
+  ],
+  "links": {
+    "blueprint_ssws_ai_colony": "docs/Z-SSWS-ALL-PROJECTS-AND-AI-COLONY-BLUEPRINT.md",
+    "formulas": "docs/Z-ULTRA-INSTINCTS-AND-FORMULAS.md",
+    "qosmei": "data/z_qosmei_manifest.json",
+    "delta_report": "data/reports/z_ai_ecosphere_delta.json",
+    "consistency_alerts": "data/reports/z_ai_consistency_alerts.json",
+    "vault_spine_index": "docs/z-vault/INDEX.md"
+  }
+}

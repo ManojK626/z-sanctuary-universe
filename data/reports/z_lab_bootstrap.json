@@ -1,0 +1,29 @@
+{
+  "generated_at": "2026-05-11T12:26:44.890Z",
+  "status": "ready",
+  "lab_root": "C:\\Cursor Projects Organiser\\Z_Sanctuary_Universe\\Z_Labs",
+  "lab_policy": {
+    "mode": "internal-only",
+    "primary": "C:/Cursor Projects Organiser/Z_Sanctuary_Universe/Z_Labs",
+    "legacy_fallback": "C:/Cursor Projects Organiser/Z_Sanctuary_Universe/ZSanctuary_Labs",
+    "note": "Lab automation is restricted to in-repo lab roots to avoid cross-project linkage."
+  },
+  "folders_created": [
+    "C:/Cursor Projects Organiser/Z_Sanctuary_Universe/Z_Labs",
+    "C:/Cursor Projects Organiser/Z_Sanctuary_Universe/Z_Labs/modules_draft",
+    "C:/Cursor Projects Organiser/Z_Sanctuary_Universe/Z_Labs/ai_experiments",
+    "C:/Cursor Projects Organiser/Z_Sanctuary_Universe/Z_Labs/roadmap_designs",
+    "C:/Cursor Projects Organiser/Z_Sanctuary_Universe/Z_Labs/storage_blueprints",
+    "C:/Cursor Projects Organiser/Z_Sanctuary_Universe/Z_Labs/module_prototypes",
+    "C:/Cursor Projects Organiser/Z_Sanctuary_Universe/Z_Labs/notes",
+    "C:/Cursor Projects Organiser/Z_Sanctuary_Universe/Z_Labs/exports"
+  ],
+  "files_created": [],
+  "files_already_present": [
+    "C:/Cursor Projects Organiser/Z_Sanctuary_Universe/Z_Labs/Z_AGENT_PROTOCOL.md",
+    "C:/Cursor Projects Organiser/Z_Sanctuary_Universe/Z_Labs/Z_DEPLOYMENT_PIPELINE.md",
+    "C:/Cursor Projects Organiser/Z_Sanctuary_Universe/Z_Labs/README.md",
+    "C:/Cursor Projects Organiser/Z_Sanctuary_Universe/Z_Labs/.gitignore"
+  ],
+  "notes": "Z_Labs bootstrap completed without modifying existing Sanctuary runtime folders."
+}

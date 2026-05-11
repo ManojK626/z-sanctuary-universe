@@ -1,0 +1,23 @@
+{
+  "schema": "z_ssws_project_launch_capsule_v1",
+  "project_id": "example_project",
+  "workspace_profile": "frontend",
+  "commands": {
+    "install": "npm install",
+    "start": "npm run dev",
+    "verify": ["npm run verify:md"],
+    "smoke": ["npm test"]
+  },
+  "ports": ["5173"],
+  "extensions": {
+    "required": [],
+    "recommended": ["dbaeumer.vscode-eslint"]
+  },
+  "smoke_gate": "npm test",
+  "api_gate": "docs/Z_API_READINESS_AND_SMOKE_GATE.md",
+  "secrets": { "required": false, "notes": "No production keys in repo" },
+  "shadow_allowed": false,
+  "human_gates": ["deploy", "edge_bind"],
+  "related_docs": ["docs/Z_SSWS_WORKSPACE_SPINE.md"],
+  "related_reports": ["data/reports/z_ssws_launch_requirements_report.json"]
+}

@@ -1,0 +1,25 @@
+{
+  "generated_at": "2026-05-03T14:39:00.825Z",
+  "started_at": "2026-05-03T14:39:00.397Z",
+  "status": "green",
+  "steps": [
+    {
+      "label": "SSWS base verify",
+      "command": "python scripts/z_ssws_verify.py",
+      "exit_code": 0,
+      "ok": true
+    },
+    {
+      "label": "IDE comm-flow guard",
+      "command": "node scripts/z_ide_commflow_guard.mjs",
+      "exit_code": 0,
+      "ok": true
+    },
+    {
+      "label": "ATAIECF shadow verify",
+      "command": "node scripts/z_ataiecf_shadow_verify.mjs",
+      "exit_code": 0,
+      "ok": true
+    }
+  ]
+}

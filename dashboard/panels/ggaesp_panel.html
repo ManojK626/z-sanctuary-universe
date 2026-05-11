@@ -1,0 +1,194 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>GGAESP-360 (v11–v19) — advisory</title>
+    <link rel="stylesheet" href="../../interface/z_style.css" />
+    <style>
+      body {
+        margin: 0;
+        padding: 1rem 1.25rem 2rem;
+        max-width: 48rem;
+      }
+      h1 {
+        font-size: 1.1rem;
+        margin: 0 0 0.35rem;
+      }
+      .z-muted {
+        color: #9aa0a6;
+        font-size: 0.88rem;
+        margin: 0 0 1rem;
+      }
+      pre {
+        font-size: 0.8rem;
+        line-height: 1.4;
+        overflow: auto;
+        max-height: 50vh;
+        padding: 0.75rem 1rem;
+        background: rgba(5, 12, 32, 0.75);
+        border: 1px solid rgba(120, 160, 255, 0.25);
+        border-radius: 0.4rem;
+      }
+      .z-kv {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.75rem 1.25rem;
+        margin: 0.5rem 0 1rem;
+        font-size: 0.88rem;
+      }
+      .z-mem-tools {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        gap: 0.5rem;
+        margin: 0.75rem 0;
+      }
+      #zGgaespMemStatus {
+        font-size: 0.8rem;
+        min-height: 1.2rem;
+        margin: 0.25rem 0 0.75rem;
+      }
+    </style>
+  </head>
+  <body class="z-dashboard-organism">
+    <h1>GGAESP-360 — unified pipeline (advisory only)</h1>
+    <p class="z-muted">
+      v11–v19 includes Guardian and Ethics. Loads compiled ESM from
+      <code>core_engine/browser/ggaesp_pipeline.js</code> (run <code>npm run ts:build:ggaesp</code> after TS edits). This page
+      does <strong>not</strong> auto-write the hub’s JSONL store. Use <strong>Save Memory Capsule</strong> to export, then
+      <code>npm run ggaesp:memory:append &lt;file.json&gt;</code> from the hub root for true append-only disk persistence.
+    </p>
+    <div class="z-kv" id="zGgaespSummary" aria-live="polite"></div>
+    <div class="z-mem-tools" role="group" aria-label="Memory capsule (Phase 2)">
+      <button type="button" class="z-button" id="zGgaespSaveMemBtn" title="Copy or download the JSONL line; disk append is via CLI">
+        Save Memory Capsule
+      </button>
+      <span class="z-muted" style="font-size: 0.78rem">(exports line — not silent auto-save)</span>
+    </div>
+    <div id="zGgaespMemStatus" role="status" aria-live="polite"></div>
+    <pre id="zGgaespOut" role="region" aria-label="GGAESP JSON result">Loading…</pre>
+    <p class="z-muted" style="font-size: 0.8rem; margin-top: 1rem">
+      <a href="z_decision_panel.html" target="_blank" rel="noopener noreferrer">Decision + SPI</a> ·
+      <a href="../Html/z-addon-dashboard.html">Z-Add On staging</a> ·
+      <a href="../../docs/Z-BUILD-GATE-MATRIX.md" target="_blank" rel="noopener noreferrer">Build Gate Matrix</a> ·
+      <code>data/ggaesp/memory_capsules.jsonl</code> (append-only, hub disk)
+    </p>
+    <script type="module">
+      const sample = {
+        moduleId: "roulette_ai",
+        data: {
+          profit: 72,
+          risk: 48,
+          noise: 26,
+          build: true,
+          collectiveAgreement: 70,
+          herdRisk: 20,
+          falseCorrelation: 15,
+        },
+        humanState: {
+          calm: 70,
+          fatigue: 20,
+          anxiety: 15,
+          confidence: 65,
+        },
+      };
+
+      let lastResult = null;
+
+      function setMemStatus(type, text) {
+        const el = document.getElementById("zGgaespMemStatus");
+        el.textContent = text;
+        el.style.color = type === "error" ? "#f87171" : type === "ok" ? "#4ade80" : "#9aa0a6";
+      }
+
+      function buildJsonlLine(result) {
+        if (!result || !result.memoryCapsule) return null;
+        if (result.energyMode && result.branch) {
+          return (
+            JSON.stringify({
+              written_at: new Date().toISOString(),
+              schema: "GGAESP_MEMORY_V2",
+              source: "dashboard/panels/ggaesp_panel.html (export)",
+              store_file: "data/ggaesp/memory_capsules.jsonl",
+              moduleId: result.moduleId,
+              timestamp: result.timestamp,
+              energyMode: result.energyMode,
+              branch: result.branch,
+              zecr_memory_return_hint: result.branch && result.branch.memory_return_path
+                ? result.branch.memory_return_path
+                : null,
+              memoryCapsule: result.memoryCapsule,
+            }) + "\n"
+          );
+        }
+        return (
+          JSON.stringify({
+            written_at: new Date().toISOString(),
+            schema: "GGAESP_MEMORY_V1",
+            source: "dashboard/panels/ggaesp_panel.html (export)",
+            memoryCapsule: result.memoryCapsule,
+          }) + "\n"
+        );
+      }
+
+      function saveMemClick() {
+        if (!lastResult) {
+          setMemStatus("error", "No result loaded yet. Reload the page.");
+          return;
+        }
+        const line = buildJsonlLine(lastResult);
+        if (!line) {
+          setMemStatus("error", "memoryCapsule missing in last run — cannot export.");
+          return;
+        }
+        (async function () {
+          let copied = false;
+          if (navigator.clipboard && typeof navigator.clipboard.writeText === "function") {
+            try {
+              await navigator.clipboard.writeText(line);
+              copied = true;
+            } catch {
+              copied = false;
+            }
+          }
+          if (!copied) {
+            const blob = new Blob([line], { type: "application/x-ndjson;charset=utf-8" });
+            const a = document.createElement("a");
+            a.href = URL.createObjectURL(blob);
+            a.download = "ggaesp_memory_line_" + Date.now() + ".jsonl";
+            a.rel = "nofollow";
+            a.click();
+            URL.revokeObjectURL(a.href);
+            setMemStatus("ok", "V2 line downloaded (Z-ECR+memory). From hub: node scripts/z_ggaesp_memory_append.mjs saved.jsonl");
+            return;
+          }
+          setMemStatus("ok", "V2 line copied. Save to a .json file; from hub: node scripts/z_ggaesp_memory_append.mjs file.json (npm run ggaesp:memory:append <file>).");
+        })();
+      }
+
+      document.getElementById("zGgaespSaveMemBtn").addEventListener("click", saveMemClick);
+
+      async function load() {
+        const pre = document.getElementById("zGgaespOut");
+        const summary = document.getElementById("zGgaespSummary");
+        try {
+          const mod = await import("../../core_engine/browser/ggaesp_pipeline.js");
+          const { runGGAESP } = mod;
+          if (typeof runGGAESP !== "function") throw new Error("runGGAESP missing");
+          lastResult = runGGAESP(sample);
+          summary.innerHTML = `<span><strong>Z-ECR</strong> ${lastResult.energyMode} · ${lastResult.branch?.guardian_status ?? "—"}</span> <span><strong>decision</strong> ${lastResult.decision}</span> <span><strong>polarity</strong> ${lastResult.polarity}</span> <span><strong>metaScore</strong> ${lastResult.metaScore}</span> <span><strong>confidence</strong> ${lastResult.confidence}</span>`;
+          pre.textContent = JSON.stringify(lastResult, null, 2);
+          setMemStatus("", "Click Save to export the memory capsule (no auto-save to disk on load).");
+        } catch (e) {
+          setMemStatus("error", "Pipeline load failed. See pre block.");
+          pre.textContent =
+            String(e) +
+            "\n\nIf the module failed to load, from hub root run: npm run ts:build:ggaesp\nthen reload this page (served from hub root, e.g. port 5502).";
+        }
+      }
+
+      load();
+    </script>
+  </body>
+</html>

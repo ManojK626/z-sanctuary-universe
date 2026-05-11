@@ -1,0 +1,53 @@
+{
+  "schema": "z_susbv_validation_report_v1",
+  "generated_at": "2026-05-03T18:33:02.472Z",
+  "overall_signal": "BLUE",
+  "counts": {
+    "red": 0,
+    "yellow": 4,
+    "blue": 2
+  },
+  "flags": {
+    "red": [],
+    "yellow": [
+      "family_legacy_vault_future:comps_below_required(2/5)",
+      "family_legacy_vault_future:evidence_not_sufficient",
+      "school_wellness_mirror_future:comps_below_required(1/4)",
+      "school_wellness_mirror_future:evidence_not_sufficient"
+    ],
+    "blue": [
+      "school_wellness_mirror_future:human_gating_required_flag",
+      "school_wellness_mirror_future:segment_requires_amk_human_commercial_posture"
+    ]
+  },
+  "per_service": [
+    {
+      "service_id": "z_questra_local_notebook",
+      "signals": []
+    },
+    {
+      "service_id": "family_legacy_vault_future",
+      "signals": [
+        "YELLOW:comps_gap",
+        "YELLOW:evidence"
+      ]
+    },
+    {
+      "service_id": "school_wellness_mirror_future",
+      "signals": [
+        "YELLOW:comps_gap",
+        "YELLOW:evidence",
+        "BLUE:human_gate",
+        "BLUE:sensitive_segment"
+      ]
+    },
+    {
+      "service_id": "hub_nav_catalog_readonly",
+      "signals": []
+    }
+  ],
+  "registry_path": "data/z_susbv_benchmark_registry.json",
+  "validation_path": "data/z_susbv_service_price_validation.json",
+  "entitlement_catalog_loaded": true,
+  "note": "Z-SUSBV advises; AMK/human decides pricing, SKUs, and public claims."
+}

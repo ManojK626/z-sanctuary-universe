@@ -1,0 +1,35 @@
+{
+  "schema": "Z_SAGE_SIGNALS_V1",
+  "generated_at": "2026-05-02T12:00:00.000Z",
+  "source": "z-sage-readonly",
+  "posture": "observe_only",
+  "pulse": [
+    {
+      "id": "pulse-001",
+      "level": "info",
+      "title": "System health refreshed",
+      "summary": "Latest read-only status report is available.",
+      "timestamp": "2026-05-02T12:00:00.000Z"
+    }
+  ],
+  "upgrades": [
+    {
+      "id": "upgrade-001",
+      "status": "completed",
+      "title": "Commander SAGE panel added",
+      "summary": "Read-only SAGE signals now appear in Commander.",
+      "timestamp": "2026-05-02T12:00:00.000Z",
+      "links": ["docs/Z-SAGE-COMMANDER-BRIDGE.md", "docs/Z-SAGE-SIGNAL-SCHEMA-V1.md"]
+    }
+  ],
+  "drift": [
+    {
+      "id": "drift-001",
+      "level": "watch",
+      "title": "No active drift",
+      "summary": "No schema, doctrine, or boundary drift detected.",
+      "timestamp": "2026-05-02T12:00:00.000Z"
+    }
+  ],
+  "actions_allowed": false
+}

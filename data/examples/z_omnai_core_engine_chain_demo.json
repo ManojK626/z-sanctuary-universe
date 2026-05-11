@@ -1,0 +1,11 @@
+{
+  "schema": "z_omnai_core_chain_v1",
+  "description": "Multi-step merge: baseline → stress secrets → clear → entity block",
+  "steps": [
+    { "rsi_cycles": 0, "traffic_kind": "reasoning", "pathway": { "goalClarity": 0.9, "capacityRatio": 0.4, "residualDelta": -0.02, "completesRubric": false } },
+    { "ants": { "secretsDetected": true, "ciGreen": true } },
+    { "ants": { "secretsDetected": false }, "pathway": { "capacityRatio": 0.96 } },
+    { "entity": { "lane": "GHOST", "action": "production_mutation" } },
+    { "entity": { "lane": "ASSISTANT", "action": "format_user_reply" }, "ants": { "ciGreen": true, "recursionDepth": 4 } }
+  ]
+}

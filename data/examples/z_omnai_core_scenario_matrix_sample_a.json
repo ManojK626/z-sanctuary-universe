@@ -1,0 +1,25 @@
+{
+  "schema": "z_omnai_core_scenario_v1",
+  "label": "manifest: streaming + overcap pathway",
+  "rsi_cycles": 1,
+  "traffic_kind": "stream",
+  "brains": [{ "id": "MB-0", "loadPct": 35 }, { "id": "BRAIN-4", "loadPct": 76 }],
+  "ants": {
+    "ingestIntegrityOk": false,
+    "secretsDetected": false,
+    "ciGreen": true,
+    "formulaStable": true,
+    "pathwayDiverging": false,
+    "hiveSkewPct": 8,
+    "recursionDepth": 4,
+    "recursionLimit": 40,
+    "reasoningDagCycles": 80
+  },
+  "pathway": {
+    "capacityRatio": 0.94,
+    "goalClarity": 0.8,
+    "residualDelta": 0.01,
+    "completesRubric": false
+  },
+  "entity": { "lane": "SHADOW", "action": "mirror_task_only" }
+}

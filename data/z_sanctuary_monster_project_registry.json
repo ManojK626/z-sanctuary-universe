@@ -1,0 +1,233 @@
+{
+  "_meta": {
+    "schema": "z_sanctuary_monster_project_registry_v1",
+    "purpose": "Machine-readable roster of Monster Project cores, rings, and ethics anchors. Human narrative and cross-links live in docs/Z_SANCTUARY_MONSTER_PROJECT_MASTER_MAP.md.",
+    "authoritative_map_md": "docs/Z_SANCTUARY_MONSTER_PROJECT_MASTER_MAP.md",
+    "required_entry_ids": [
+      "z_tree_motherboard",
+      "tree_pyramid",
+      "tree_of_life",
+      "chakra_tree",
+      "virtual_motherboard",
+      "one_penny_engine",
+      "give_and_receive",
+      "money_pathway_cores",
+      "zes_zecc",
+      "ghost_core",
+      "alien_core",
+      "bee_vision",
+      "hashirai_mentors",
+      "heart_and_genes",
+      "tmk_goku_codex",
+      "movie_eternal_storytelling",
+      "z_passport",
+      "panic_mode",
+      "recovery_angels",
+      "aftercare",
+      "z_world",
+      "ggaesp_360",
+      "z_pee_planetary_ethics",
+      "z_questra",
+      "z_sme",
+      "magical_canvas_playkit"
+    ]
+  },
+  "build_order": [
+    { "step": "A", "name": "catalog_everything", "description": "Inventory names, layers, and evidence posture before code." },
+    { "step": "B", "name": "registry_entries", "description": "IDs in registries and manifests; no silent orphans." },
+    { "step": "C", "name": "readonly_dashboards", "description": "Metadata and navigation surfaces only." },
+    { "step": "D", "name": "local_ui_prototypes", "description": "Sandboxed UI without production coupling." },
+    { "step": "E", "name": "verification_scripts", "description": "Read-only checks and receipts." },
+    { "step": "F", "name": "green_receipts", "description": "Evidence-backed pass artifacts before widening scope." },
+    { "step": "G", "name": "controlled_runtime", "description": "Runtime features only after charter, gates, and receipts." }
+  ],
+  "rings_and_spines": [
+    { "id": "quadruple_spine", "label": "Quadruple Spine (cognitive, data, build, oversight)", "doc_hint": "docs/Z-ULTRA-INSTINCTS-AND-FORMULAS.md" },
+    { "id": "omega_compassion_anchor", "label": "Ω compassion anchor / DRP stack", "doc_hint": "docs/Z-ULTRA-INSTINCTS-AND-FORMULAS.md" },
+    { "id": "operational_roof", "label": "Z-Super Overseer roof (Z-EAII, Z-SSWS, auto-run discipline)", "doc_hint": "docs/Z-HIERARCHY-CHIEF-AND-OBSERVER-VIEW.md" }
+  ],
+  "entries": [
+    {
+      "id": "z_tree_motherboard",
+      "label": "Z-Tree Motherboard",
+      "family": "tree_spine",
+      "representation": "mixed",
+      "notes": "Structural spine for sanctuary trees and dashboards; keep symbolic vs shipped explicit."
+    },
+    {
+      "id": "tree_pyramid",
+      "label": "Tree Pyramid",
+      "family": "tree_spine",
+      "representation": "metadata",
+      "notes": "Layered priority / visibility model; document before automating."
+    },
+    {
+      "id": "tree_of_life",
+      "label": "Tree of Life",
+      "family": "tree_spine",
+      "representation": "metadata",
+      "notes": "Symbolic and narrative anchor; UI/docs first unless chartered."
+    },
+    {
+      "id": "chakra_tree",
+      "label": "Chakra Tree",
+      "family": "tree_spine",
+      "representation": "metadata",
+      "notes": "Metaphor for energy / phase routing; no biometric capture by default."
+    },
+    {
+      "id": "virtual_motherboard",
+      "label": "Virtual Motherboard",
+      "family": "tree_spine",
+      "representation": "simulation",
+      "notes": "Logical wiring diagram; registry and docs as primary artifacts."
+    },
+    {
+      "id": "one_penny_engine",
+      "label": "1 Penny Engine",
+      "family": "economics",
+      "representation": "metadata",
+      "notes": "Micro-value ethics engine; money-adjacent — gated and receipt-backed."
+    },
+    {
+      "id": "give_and_receive",
+      "label": "Give & Receive",
+      "family": "economics",
+      "representation": "metadata",
+      "notes": "Circular value posture; symbolic until explicit commerce charter."
+    },
+    {
+      "id": "money_pathway_cores",
+      "label": "Money Pathway Cores",
+      "family": "economics",
+      "representation": "metadata",
+      "notes": "High sensitivity; no new payment rails without explicit charter."
+    },
+    {
+      "id": "zes_zecc",
+      "label": "ZES / ZECC",
+      "family": "ecosystem_core",
+      "representation": "mixed",
+      "notes": "Ecosystem state and ethics coordination layers; align with Zuno and registry."
+    },
+    {
+      "id": "ghost_core",
+      "label": "Ghost Core",
+      "family": "ecosystem_core",
+      "representation": "metadata",
+      "notes": "Shadow / latent capability holder; read-only observability preferred."
+    },
+    {
+      "id": "alien_core",
+      "label": "Alien Core",
+      "family": "ecosystem_core",
+      "representation": "metadata",
+      "notes": "Out-of-pattern integrations; treat as untrusted until proven."
+    },
+    {
+      "id": "bee_vision",
+      "label": "Bee Vision",
+      "family": "perception",
+      "representation": "ui",
+      "notes": "Collective pattern visualization; avoid live surveillance semantics."
+    },
+    {
+      "id": "hashirai_mentors",
+      "label": "Hashirai Mentors",
+      "family": "lineage",
+      "representation": "docs",
+      "notes": "Mentor archetypes and guidance layers; narrative and registry, not autonomous agents."
+    },
+    {
+      "id": "heart_and_genes",
+      "label": "Heart & Genes",
+      "family": "lineage",
+      "representation": "metadata",
+      "notes": "Lineage and care metaphor; health-adjacent — no clinical claims without gates."
+    },
+    {
+      "id": "tmk_goku_codex",
+      "label": "TMK-Goku Codex",
+      "family": "lineage",
+      "representation": "docs",
+      "notes": "Creator doctrine and canon; vault policy applies where personal."
+    },
+    {
+      "id": "movie_eternal_storytelling",
+      "label": "Movie / Eternal Storytelling",
+      "family": "narrative",
+      "representation": "docs",
+      "notes": "Long-arc narrative surface; media rights and safety copy are human-gated."
+    },
+    {
+      "id": "z_passport",
+      "label": "Z-Passport",
+      "family": "identity",
+      "representation": "registry",
+      "notes": "Identity and portability metaphor; identity-touching flows stay gated."
+    },
+    {
+      "id": "panic_mode",
+      "label": "Panic Mode",
+      "family": "safety_lifecycle",
+      "representation": "ui",
+      "notes": "Emergency posture UI; must be calm, local-first, and receipt-backed."
+    },
+    {
+      "id": "recovery_angels",
+      "label": "Recovery Angels",
+      "family": "safety_lifecycle",
+      "representation": "metadata",
+      "notes": "After-incident care narrative; recovery flows require human-in-the-loop."
+    },
+    {
+      "id": "aftercare",
+      "label": "Aftercare",
+      "family": "safety_lifecycle",
+      "representation": "metadata",
+      "notes": "Post-event stabilization; pair with verification and guardian reports."
+    },
+    {
+      "id": "z_world",
+      "label": "Z-World",
+      "family": "world_layer",
+      "representation": "mixed",
+      "notes": "World-scale metaphor for sanctuary scope; no silent cross-repo execution."
+    },
+    {
+      "id": "ggaesp_360",
+      "label": "GGAESP-360",
+      "family": "ethics_stack",
+      "representation": "docs",
+      "notes": "Governance and posture ring; see Z-NEW-MODULE-DISCIPLINE and GGAESP refs."
+    },
+    {
+      "id": "z_pee_planetary_ethics",
+      "label": "Z-PEE Planetary Ethics",
+      "family": "ethics_stack",
+      "representation": "docs",
+      "notes": "Planetary ethics layer; policy and receipts before automation."
+    },
+    {
+      "id": "z_questra",
+      "label": "Z-QUESTRA",
+      "family": "implementation_projects",
+      "representation": "code",
+      "notes": "Packaged app / prototype in workspace; keep bounded from hub overseer runtime."
+    },
+    {
+      "id": "z_sme",
+      "label": "Z-SME",
+      "family": "implementation_projects",
+      "representation": "mixed",
+      "notes": "Sanctuary module ecosystem label; map to module registry IDs when concrete."
+    },
+    {
+      "id": "magical_canvas_playkit",
+      "label": "Magical Canvas PlayKit",
+      "family": "implementation_projects",
+      "representation": "ui",
+      "notes": "Creative / canvas surfaces; playful UI — still under Turtle and hierarchy chief."
+    }
+  ]
+}

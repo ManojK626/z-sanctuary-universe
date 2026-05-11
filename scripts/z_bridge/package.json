@@ -1,0 +1,11 @@
+{
+  "name": "z-bridge-engine",
+  "private": true,
+  "description": "Z-Bridge engine (.mjs). Hub also exposes these via npm run z:bridge:* from repo root.",
+  "scripts": {
+    "start": "node z_bridge_loader.mjs",
+    "build": "node -e \"console.log('z-bridge engine: no separate build artifact; use hub apps for web bundles.'); process.exit(0);\"",
+    "test": "node test_run.mjs --dry-run",
+    "lint": "node -e \"console.log('z-bridge: run npm run lint:root from hub root for shared ESLint.'); process.exit(0);\""
+  }
+}

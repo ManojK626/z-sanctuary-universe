@@ -1,0 +1,31 @@
+{
+  "schema": "z_susbv_module_to_service_map_v1",
+  "posture": "hub_truth_mapping_read_only",
+  "generated_note": "Maps hub-declared module labels to Z-SUSBV service_id rows in z_susbv_benchmark_registry.json. Extend when new commercial or benchmarked surfaces ship.",
+  "mappings": [
+    {
+      "module_id": "z-questra-local-notebook",
+      "project_id": "z-questra",
+      "service_id": "z_questra_local_notebook",
+      "notes": "Comfort / local notebook slice; not a billing surface."
+    },
+    {
+      "module_id": "hub-nav-catalog-readonly",
+      "project_id": "ZSanctuary_Universe",
+      "service_id": "hub_nav_catalog_readonly",
+      "notes": "NAV-1 catalog visibility; metadata only."
+    },
+    {
+      "module_id": "family-legacy-vault-future",
+      "project_id": "ZSanctuary_Universe",
+      "service_id": "family_legacy_vault_future",
+      "notes": "Future commercial candidate; benchmark_required in registry."
+    },
+    {
+      "module_id": "school-wellness-mirror-future",
+      "project_id": "ZSanctuary_Universe",
+      "service_id": "school_wellness_mirror_future",
+      "notes": "School-adjacent; human gate before offers."
+    }
+  ]
+}

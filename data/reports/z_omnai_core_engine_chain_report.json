@@ -1,0 +1,722 @@
+{
+  "schema": "z_omnai_core_engine_chain_report_v1",
+  "mode": "deterministic_chain_only",
+  "step_count": 5,
+  "trace": [
+    {
+      "step_index": 0,
+      "merged_preview": {
+        "rsi_cycles": 0,
+        "traffic_kind": "reasoning",
+        "pathway": {
+          "residualDelta": -0.02,
+          "goalClarity": 0.9,
+          "capacityRatio": 0.4,
+          "completesRubric": false
+        },
+        "entity": {
+          "lane": "ASSISTANT",
+          "action": "format_user_reply"
+        },
+        "ant_flags": {
+          "reasoningDagCycles": 120,
+          "ingestIntegrityOk": true,
+          "secretsDetected": false,
+          "ciGreen": true,
+          "formulaStable": true,
+          "pathwayDiverging": false,
+          "hiveSkewPct": 4,
+          "recursionDepth": 8,
+          "recursionLimit": 32
+        }
+      },
+      "tick": {
+        "schema": "z_omnai_core_engine_tick_v1",
+        "mode": "deterministic_simulation_only",
+        "omega": {
+          "tier": "TIER_1",
+          "rsi_cycles": 0,
+          "multiplier": 1,
+          "illustrative_rsi_step": 1
+        },
+        "gmb": {
+          "clone_threshold_pct": 80,
+          "suggested_clone": [
+            {
+              "id": "BRAIN-3",
+              "loadPct": 88
+            }
+          ],
+          "stable": [
+            {
+              "id": "MB-0",
+              "loadPct": 40
+            },
+            {
+              "id": "BRAIN-7",
+              "loadPct": 55
+            }
+          ],
+          "posture": "YELLOW_ELASTIC_CLONE_ADVISORY"
+        },
+        "quad_spine": {
+          "route": {
+            "spine": "COGNITIVE",
+            "note": "mapped_kind"
+          },
+          "failsafe": "freeze_writes_degrade_planning"
+        },
+        "octo_ant": {
+          "ants": [
+            {
+              "ant": "ANT-1",
+              "ok": true,
+              "detail": "ok",
+              "action": null
+            },
+            {
+              "ant": "ANT-2",
+              "ok": true,
+              "detail": "ok",
+              "action": null
+            },
+            {
+              "ant": "ANT-3",
+              "ok": true,
+              "detail": "ok",
+              "action": null
+            },
+            {
+              "ant": "ANT-4",
+              "ok": true,
+              "detail": "ok",
+              "action": null
+            },
+            {
+              "ant": "ANT-5",
+              "ok": true,
+              "detail": "ok",
+              "action": null
+            },
+            {
+              "ant": "ANT-6",
+              "ok": true,
+              "detail": "ok",
+              "action": null
+            },
+            {
+              "ant": "ANT-7",
+              "ok": true,
+              "detail": "ok",
+              "action": null
+            },
+            {
+              "ant": "ANT-8",
+              "ok": true,
+              "detail": "ok",
+              "action": null
+            }
+          ],
+          "all_ok": true,
+          "veto_recommended": false,
+          "posture": "GREEN"
+        },
+        "pathway": {
+          "signal": "CONVERGE",
+          "note": "within_epsilon_band"
+        },
+        "entity_lane": {
+          "lane": "ASSISTANT",
+          "action": "format_user_reply",
+          "allowed": true,
+          "reason": "ok"
+        },
+        "rollup": {
+          "planning_posture": "YELLOW",
+          "suggested_operator_note": "GMB: elastic clone advisory active on at least one brain"
+        },
+        "trace_order": [
+          "omega_formula",
+          "gmb",
+          "spines",
+          "octo_ant",
+          "pathway",
+          "entity_lane"
+        ]
+      }
+    },
+    {
+      "step_index": 1,
+      "merged_preview": {
+        "rsi_cycles": 0,
+        "traffic_kind": "reasoning",
+        "pathway": {
+          "residualDelta": -0.02,
+          "goalClarity": 0.9,
+          "capacityRatio": 0.4,
+          "completesRubric": false
+        },
+        "entity": {
+          "lane": "ASSISTANT",
+          "action": "format_user_reply"
+        },
+        "ant_flags": {
+          "reasoningDagCycles": 120,
+          "ingestIntegrityOk": true,
+          "secretsDetected": true,
+          "ciGreen": true,
+          "formulaStable": true,
+          "pathwayDiverging": false,
+          "hiveSkewPct": 4,
+          "recursionDepth": 8,
+          "recursionLimit": 32
+        }
+      },
+      "tick": {
+        "schema": "z_omnai_core_engine_tick_v1",
+        "mode": "deterministic_simulation_only",
+        "omega": {
+          "tier": "TIER_1",
+          "rsi_cycles": 0,
+          "multiplier": 1,
+          "illustrative_rsi_step": 1
+        },
+        "gmb": {
+          "clone_threshold_pct": 80,
+          "suggested_clone": [
+            {
+              "id": "BRAIN-3",
+              "loadPct": 88
+            }
+          ],
+          "stable": [
+            {
+              "id": "MB-0",
+              "loadPct": 40
+            },
+            {
+              "id": "BRAIN-7",
+              "loadPct": 55
+            }
+          ],
+          "posture": "YELLOW_ELASTIC_CLONE_ADVISORY"
+        },
+        "quad_spine": {
+          "route": {
+            "spine": "COGNITIVE",
+            "note": "mapped_kind"
+          },
+          "failsafe": "freeze_writes_degrade_planning"
+        },
+        "octo_ant": {
+          "ants": [
+            {
+              "ant": "ANT-1",
+              "ok": true,
+              "detail": "ok",
+              "action": null
+            },
+            {
+              "ant": "ANT-2",
+              "ok": true,
+              "detail": "ok",
+              "action": null
+            },
+            {
+              "ant": "ANT-3",
+              "ok": false,
+              "detail": "secrets_pattern",
+              "action": "block_merge_candidate"
+            },
+            {
+              "ant": "ANT-4",
+              "ok": true,
+              "detail": "ok",
+              "action": null
+            },
+            {
+              "ant": "ANT-5",
+              "ok": true,
+              "detail": "ok",
+              "action": null
+            },
+            {
+              "ant": "ANT-6",
+              "ok": true,
+              "detail": "ok",
+              "action": null
+            },
+            {
+              "ant": "ANT-7",
+              "ok": true,
+              "detail": "ok",
+              "action": null
+            },
+            {
+              "ant": "ANT-8",
+              "ok": true,
+              "detail": "ok",
+              "action": null
+            }
+          ],
+          "all_ok": false,
+          "veto_recommended": true,
+          "posture": "YELLOW"
+        },
+        "pathway": {
+          "signal": "CONVERGE",
+          "note": "within_epsilon_band"
+        },
+        "entity_lane": {
+          "lane": "ASSISTANT",
+          "action": "format_user_reply",
+          "allowed": true,
+          "reason": "ok"
+        },
+        "rollup": {
+          "planning_posture": "RED",
+          "suggested_operator_note": "overseers: veto advisory — halt promotion until review; overseers: one or more ANT checks failed — inspect octo_ant payload; GMB: elastic clone advisory active on at least one brain"
+        },
+        "trace_order": [
+          "omega_formula",
+          "gmb",
+          "spines",
+          "octo_ant",
+          "pathway",
+          "entity_lane"
+        ]
+      }
+    },
+    {
+      "step_index": 2,
+      "merged_preview": {
+        "rsi_cycles": 0,
+        "traffic_kind": "reasoning",
+        "pathway": {
+          "residualDelta": -0.02,
+          "goalClarity": 0.9,
+          "capacityRatio": 0.96,
+          "completesRubric": false
+        },
+        "entity": {
+          "lane": "ASSISTANT",
+          "action": "format_user_reply"
+        },
+        "ant_flags": {
+          "reasoningDagCycles": 120,
+          "ingestIntegrityOk": true,
+          "secretsDetected": false,
+          "ciGreen": true,
+          "formulaStable": true,
+          "pathwayDiverging": false,
+          "hiveSkewPct": 4,
+          "recursionDepth": 8,
+          "recursionLimit": 32
+        }
+      },
+      "tick": {
+        "schema": "z_omnai_core_engine_tick_v1",
+        "mode": "deterministic_simulation_only",
+        "omega": {
+          "tier": "TIER_1",
+          "rsi_cycles": 0,
+          "multiplier": 1,
+          "illustrative_rsi_step": 1
+        },
+        "gmb": {
+          "clone_threshold_pct": 80,
+          "suggested_clone": [
+            {
+              "id": "BRAIN-3",
+              "loadPct": 88
+            }
+          ],
+          "stable": [
+            {
+              "id": "MB-0",
+              "loadPct": 40
+            },
+            {
+              "id": "BRAIN-7",
+              "loadPct": 55
+            }
+          ],
+          "posture": "YELLOW_ELASTIC_CLONE_ADVISORY"
+        },
+        "quad_spine": {
+          "route": {
+            "spine": "COGNITIVE",
+            "note": "mapped_kind"
+          },
+          "failsafe": "freeze_writes_degrade_planning"
+        },
+        "octo_ant": {
+          "ants": [
+            {
+              "ant": "ANT-1",
+              "ok": true,
+              "detail": "ok",
+              "action": null
+            },
+            {
+              "ant": "ANT-2",
+              "ok": true,
+              "detail": "ok",
+              "action": null
+            },
+            {
+              "ant": "ANT-3",
+              "ok": true,
+              "detail": "ok",
+              "action": null
+            },
+            {
+              "ant": "ANT-4",
+              "ok": true,
+              "detail": "ok",
+              "action": null
+            },
+            {
+              "ant": "ANT-5",
+              "ok": true,
+              "detail": "ok",
+              "action": null
+            },
+            {
+              "ant": "ANT-6",
+              "ok": true,
+              "detail": "ok",
+              "action": null
+            },
+            {
+              "ant": "ANT-7",
+              "ok": true,
+              "detail": "ok",
+              "action": null
+            },
+            {
+              "ant": "ANT-8",
+              "ok": true,
+              "detail": "ok",
+              "action": null
+            }
+          ],
+          "all_ok": true,
+          "veto_recommended": false,
+          "posture": "GREEN"
+        },
+        "pathway": {
+          "signal": "OVERCAP",
+          "note": "queue_or_budget_high"
+        },
+        "entity_lane": {
+          "lane": "ASSISTANT",
+          "action": "format_user_reply",
+          "allowed": true,
+          "reason": "ok"
+        },
+        "rollup": {
+          "planning_posture": "YELLOW",
+          "suggested_operator_note": "pathway: capacity pressure — shard or shed work; GMB: elastic clone advisory active on at least one brain"
+        },
+        "trace_order": [
+          "omega_formula",
+          "gmb",
+          "spines",
+          "octo_ant",
+          "pathway",
+          "entity_lane"
+        ]
+      }
+    },
+    {
+      "step_index": 3,
+      "merged_preview": {
+        "rsi_cycles": 0,
+        "traffic_kind": "reasoning",
+        "pathway": {
+          "residualDelta": -0.02,
+          "goalClarity": 0.9,
+          "capacityRatio": 0.96,
+          "completesRubric": false
+        },
+        "entity": {
+          "lane": "GHOST",
+          "action": "production_mutation"
+        },
+        "ant_flags": {
+          "reasoningDagCycles": 120,
+          "ingestIntegrityOk": true,
+          "secretsDetected": false,
+          "ciGreen": true,
+          "formulaStable": true,
+          "pathwayDiverging": false,
+          "hiveSkewPct": 4,
+          "recursionDepth": 8,
+          "recursionLimit": 32
+        }
+      },
+      "tick": {
+        "schema": "z_omnai_core_engine_tick_v1",
+        "mode": "deterministic_simulation_only",
+        "omega": {
+          "tier": "TIER_1",
+          "rsi_cycles": 0,
+          "multiplier": 1,
+          "illustrative_rsi_step": 1
+        },
+        "gmb": {
+          "clone_threshold_pct": 80,
+          "suggested_clone": [
+            {
+              "id": "BRAIN-3",
+              "loadPct": 88
+            }
+          ],
+          "stable": [
+            {
+              "id": "MB-0",
+              "loadPct": 40
+            },
+            {
+              "id": "BRAIN-7",
+              "loadPct": 55
+            }
+          ],
+          "posture": "YELLOW_ELASTIC_CLONE_ADVISORY"
+        },
+        "quad_spine": {
+          "route": {
+            "spine": "COGNITIVE",
+            "note": "mapped_kind"
+          },
+          "failsafe": "freeze_writes_degrade_planning"
+        },
+        "octo_ant": {
+          "ants": [
+            {
+              "ant": "ANT-1",
+              "ok": true,
+              "detail": "ok",
+              "action": null
+            },
+            {
+              "ant": "ANT-2",
+              "ok": true,
+              "detail": "ok",
+              "action": null
+            },
+            {
+              "ant": "ANT-3",
+              "ok": true,
+              "detail": "ok",
+              "action": null
+            },
+            {
+              "ant": "ANT-4",
+              "ok": true,
+              "detail": "ok",
+              "action": null
+            },
+            {
+              "ant": "ANT-5",
+              "ok": true,
+              "detail": "ok",
+              "action": null
+            },
+            {
+              "ant": "ANT-6",
+              "ok": true,
+              "detail": "ok",
+              "action": null
+            },
+            {
+              "ant": "ANT-7",
+              "ok": true,
+              "detail": "ok",
+              "action": null
+            },
+            {
+              "ant": "ANT-8",
+              "ok": true,
+              "detail": "ok",
+              "action": null
+            }
+          ],
+          "all_ok": true,
+          "veto_recommended": false,
+          "posture": "GREEN"
+        },
+        "pathway": {
+          "signal": "OVERCAP",
+          "note": "queue_or_budget_high"
+        },
+        "entity_lane": {
+          "lane": "GHOST",
+          "action": "production_mutation",
+          "allowed": false,
+          "reason": "policy_forbid"
+        },
+        "rollup": {
+          "planning_posture": "YELLOW",
+          "suggested_operator_note": "pathway: capacity pressure — shard or shed work; GMB: elastic clone advisory active on at least one brain; entity lane GHOST: action blocked (policy_forbid)"
+        },
+        "trace_order": [
+          "omega_formula",
+          "gmb",
+          "spines",
+          "octo_ant",
+          "pathway",
+          "entity_lane"
+        ]
+      }
+    },
+    {
+      "step_index": 4,
+      "merged_preview": {
+        "rsi_cycles": 0,
+        "traffic_kind": "reasoning",
+        "pathway": {
+          "residualDelta": -0.02,
+          "goalClarity": 0.9,
+          "capacityRatio": 0.96,
+          "completesRubric": false
+        },
+        "entity": {
+          "lane": "ASSISTANT",
+          "action": "format_user_reply"
+        },
+        "ant_flags": {
+          "reasoningDagCycles": 120,
+          "ingestIntegrityOk": true,
+          "secretsDetected": false,
+          "ciGreen": true,
+          "formulaStable": true,
+          "pathwayDiverging": false,
+          "hiveSkewPct": 4,
+          "recursionDepth": 4,
+          "recursionLimit": 32
+        }
+      },
+      "tick": {
+        "schema": "z_omnai_core_engine_tick_v1",
+        "mode": "deterministic_simulation_only",
+        "omega": {
+          "tier": "TIER_1",
+          "rsi_cycles": 0,
+          "multiplier": 1,
+          "illustrative_rsi_step": 1
+        },
+        "gmb": {
+          "clone_threshold_pct": 80,
+          "suggested_clone": [
+            {
+              "id": "BRAIN-3",
+              "loadPct": 88
+            }
+          ],
+          "stable": [
+            {
+              "id": "MB-0",
+              "loadPct": 40
+            },
+            {
+              "id": "BRAIN-7",
+              "loadPct": 55
+            }
+          ],
+          "posture": "YELLOW_ELASTIC_CLONE_ADVISORY"
+        },
+        "quad_spine": {
+          "route": {
+            "spine": "COGNITIVE",
+            "note": "mapped_kind"
+          },
+          "failsafe": "freeze_writes_degrade_planning"
+        },
+        "octo_ant": {
+          "ants": [
+            {
+              "ant": "ANT-1",
+              "ok": true,
+              "detail": "ok",
+              "action": null
+            },
+            {
+              "ant": "ANT-2",
+              "ok": true,
+              "detail": "ok",
+              "action": null
+            },
+            {
+              "ant": "ANT-3",
+              "ok": true,
+              "detail": "ok",
+              "action": null
+            },
+            {
+              "ant": "ANT-4",
+              "ok": true,
+              "detail": "ok",
+              "action": null
+            },
+            {
+              "ant": "ANT-5",
+              "ok": true,
+              "detail": "ok",
+              "action": null
+            },
+            {
+              "ant": "ANT-6",
+              "ok": true,
+              "detail": "ok",
+              "action": null
+            },
+            {
+              "ant": "ANT-7",
+              "ok": true,
+              "detail": "ok",
+              "action": null
+            },
+            {
+              "ant": "ANT-8",
+              "ok": true,
+              "detail": "ok",
+              "action": null
+            }
+          ],
+          "all_ok": true,
+          "veto_recommended": false,
+          "posture": "GREEN"
+        },
+        "pathway": {
+          "signal": "OVERCAP",
+          "note": "queue_or_budget_high"
+        },
+        "entity_lane": {
+          "lane": "ASSISTANT",
+          "action": "format_user_reply",
+          "allowed": true,
+          "reason": "ok"
+        },
+        "rollup": {
+          "planning_posture": "YELLOW",
+          "suggested_operator_note": "pathway: capacity pressure — shard or shed work; GMB: elastic clone advisory active on at least one brain"
+        },
+        "trace_order": [
+          "omega_formula",
+          "gmb",
+          "spines",
+          "octo_ant",
+          "pathway",
+          "entity_lane"
+        ]
+      }
+    }
+  ],
+  "final_rollup": {
+    "planning_posture": "YELLOW",
+    "suggested_operator_note": "pathway: capacity pressure — shard or shed work; GMB: elastic clone advisory active on at least one brain"
+  },
+  "chain_source": "data\\examples\\z_omnai_core_engine_chain_demo.json"
+}

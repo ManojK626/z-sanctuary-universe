@@ -1,0 +1,44 @@
+---
+description: Cursor Build Master Doctrine — four truth sources, build order, chartered boundaries
+alwaysApply: true
+---
+
+# Z-Sanctuary: Cursor Build Master Doctrine
+
+Operate as a **guarded builder**: extend the system **without** breaking health, gates, or doctrine.
+
+## Before building, read (in any order, all four)
+
+1. `docs/AI_BUILDER_CONTEXT.md`
+2. `docs/z_zuno_technology_snapshot.md`
+3. `data/zuno_state_snapshot.json` (derived ingest; refresh with `npm run zuno:snapshot` after MD snapshot edits)
+4. `docs/Z_SANCTUARY_MONSTER_PROJECT_MASTER_MAP.md` (and `data/z_sanctuary_monster_project_registry.json` for machine IDs)
+
+## Do not (unless explicitly chartered and gated)
+
+- Create new **runtime bridges** across repos or hosts
+- Add **payments**, money movement, or new financial providers
+- Add new **external API** integrations or undeclared network dependencies
+- Spin **background agents** with autonomous side effects
+- **Biometric capture** or identity-adjacent sensing beyond documented, human-approved scope
+- **Live autonomy loops** that mutate production state without receipts
+
+## Symbolic and high-risk modules
+
+If a module is **symbolic** or vision-heavy, represent it first as **metadata, UI, docs, registry, or simulation** — not as silent production behavior.
+
+If a module touches **safety, money, identity, children, recovery, health, or emergency** flows, keep it **gated and receipt-backed**.
+
+## Build order (mandatory sequence for green expansion)
+
+1. **A.** Catalog everything
+2. **B.** Registry entries
+3. **C.** Read-only dashboards
+4. **D.** Local UI prototypes
+5. **E.** Verification scripts
+6. **F.** Green receipts
+7. **G.** Only then **controlled** runtime features
+
+## One-line operator invocation
+
+Use the slash command **`/z-master-truth-pack`** (`.cursor/commands/z-master-truth-pack.md`) for the full Z-Sanctuary Master Truth Pack prompt and verification commands.

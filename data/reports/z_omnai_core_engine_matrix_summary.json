@@ -1,0 +1,1387 @@
+{
+  "schema": "z_omnai_core_engine_matrix_summary_v1",
+  "mode": "cartesian capped",
+  "storage": "histograms_and_slim_sample",
+  "matrix_full_available": false,
+  "full_report_relative": "data\\reports\\z_omnai_core_engine_matrix_report.full.json",
+  "matrix_space_total": 4800,
+  "matrix_executions": 4800,
+  "max_requested": 4800,
+  "histograms": {
+    "planning_posture": {
+      "GREEN": 96,
+      "YELLOW": 1104,
+      "RED": 3600
+    },
+    "pathway_signal": {
+      "CONVERGE": 960,
+      "DIVERGE": 960,
+      "UNCLEAR": 960,
+      "OVERCAP": 960,
+      "COMPLETE": 960
+    },
+    "ant_posture": {
+      "GREEN": 1200,
+      "YELLOW": 3600
+    },
+    "veto_recommended": {
+      "false": 1200,
+      "true": 3600
+    },
+    "spine": {
+      "COGNITIVE": 800,
+      "DATA": 2400,
+      "BUILD": 800,
+      "OVERSIGHT": 800
+    }
+  },
+  "runs_sample": [
+    {
+      "matrix_index": 0,
+      "axes": {
+        "rsi_cycles": 0,
+        "traffic_kind": "reasoning",
+        "pathway_preset": "converge",
+        "ant_preset": "green",
+        "entity_preset": "assistant_ok",
+        "brain_preset": "stable"
+      },
+      "tick": {
+        "planning_posture": "GREEN",
+        "pathway_signal": "CONVERGE",
+        "veto_recommended": false,
+        "ant_posture": "GREEN",
+        "spine": "COGNITIVE",
+        "omega_tier": "TIER_1",
+        "entity_allowed": true,
+        "gmb_posture": "GREEN_CAPACITY"
+      }
+    },
+    {
+      "matrix_index": 1,
+      "axes": {
+        "rsi_cycles": 0,
+        "traffic_kind": "reasoning",
+        "pathway_preset": "converge",
+        "ant_preset": "green",
+        "entity_preset": "assistant_ok",
+        "brain_preset": "elastic"
+      },
+      "tick": {
+        "planning_posture": "YELLOW",
+        "pathway_signal": "CONVERGE",
+        "veto_recommended": false,
+        "ant_posture": "GREEN",
+        "spine": "COGNITIVE",
+        "omega_tier": "TIER_1",
+        "entity_allowed": true,
+        "gmb_posture": "YELLOW_ELASTIC_CLONE_ADVISORY"
+      }
+    },
+    {
+      "matrix_index": 2,
+      "axes": {
+        "rsi_cycles": 0,
+        "traffic_kind": "reasoning",
+        "pathway_preset": "converge",
+        "ant_preset": "green",
+        "entity_preset": "ghost_blocked",
+        "brain_preset": "stable"
+      },
+      "tick": {
+        "planning_posture": "YELLOW",
+        "pathway_signal": "CONVERGE",
+        "veto_recommended": false,
+        "ant_posture": "GREEN",
+        "spine": "COGNITIVE",
+        "omega_tier": "TIER_1",
+        "entity_allowed": false,
+        "gmb_posture": "GREEN_CAPACITY"
+      }
+    },
+    {
+      "matrix_index": 3,
+      "axes": {
+        "rsi_cycles": 0,
+        "traffic_kind": "reasoning",
+        "pathway_preset": "converge",
+        "ant_preset": "green",
+        "entity_preset": "ghost_blocked",
+        "brain_preset": "elastic"
+      },
+      "tick": {
+        "planning_posture": "YELLOW",
+        "pathway_signal": "CONVERGE",
+        "veto_recommended": false,
+        "ant_posture": "GREEN",
+        "spine": "COGNITIVE",
+        "omega_tier": "TIER_1",
+        "entity_allowed": false,
+        "gmb_posture": "YELLOW_ELASTIC_CLONE_ADVISORY"
+      }
+    },
+    {
+      "matrix_index": 4,
+      "axes": {
+        "rsi_cycles": 0,
+        "traffic_kind": "reasoning",
+        "pathway_preset": "converge",
+        "ant_preset": "green",
+        "entity_preset": "shadow_blocked",
+        "brain_preset": "stable"
+      },
+      "tick": {
+        "planning_posture": "YELLOW",
+        "pathway_signal": "CONVERGE",
+        "veto_recommended": false,
+        "ant_posture": "GREEN",
+        "spine": "COGNITIVE",
+        "omega_tier": "TIER_1",
+        "entity_allowed": false,
+        "gmb_posture": "GREEN_CAPACITY"
+      }
+    },
+    {
+      "matrix_index": 5,
+      "axes": {
+        "rsi_cycles": 0,
+        "traffic_kind": "reasoning",
+        "pathway_preset": "converge",
+        "ant_preset": "green",
+        "entity_preset": "shadow_blocked",
+        "brain_preset": "elastic"
+      },
+      "tick": {
+        "planning_posture": "YELLOW",
+        "pathway_signal": "CONVERGE",
+        "veto_recommended": false,
+        "ant_posture": "GREEN",
+        "spine": "COGNITIVE",
+        "omega_tier": "TIER_1",
+        "entity_allowed": false,
+        "gmb_posture": "YELLOW_ELASTIC_CLONE_ADVISORY"
+      }
+    },
+    {
+      "matrix_index": 6,
+      "axes": {
+        "rsi_cycles": 0,
+        "traffic_kind": "reasoning",
+        "pathway_preset": "converge",
+        "ant_preset": "green",
+        "entity_preset": "master_ok",
+        "brain_preset": "stable"
+      },
+      "tick": {
+        "planning_posture": "GREEN",
+        "pathway_signal": "CONVERGE",
+        "veto_recommended": false,
+        "ant_posture": "GREEN",
+        "spine": "COGNITIVE",
+        "omega_tier": "TIER_1",
+        "entity_allowed": true,
+        "gmb_posture": "GREEN_CAPACITY"
+      }
+    },
+    {
+      "matrix_index": 7,
+      "axes": {
+        "rsi_cycles": 0,
+        "traffic_kind": "reasoning",
+        "pathway_preset": "converge",
+        "ant_preset": "green",
+        "entity_preset": "master_ok",
+        "brain_preset": "elastic"
+      },
+      "tick": {
+        "planning_posture": "YELLOW",
+        "pathway_signal": "CONVERGE",
+        "veto_recommended": false,
+        "ant_posture": "GREEN",
+        "spine": "COGNITIVE",
+        "omega_tier": "TIER_1",
+        "entity_allowed": true,
+        "gmb_posture": "YELLOW_ELASTIC_CLONE_ADVISORY"
+      }
+    },
+    {
+      "matrix_index": 8,
+      "axes": {
+        "rsi_cycles": 0,
+        "traffic_kind": "reasoning",
+        "pathway_preset": "converge",
+        "ant_preset": "green",
+        "entity_preset": "minibot_blocked",
+        "brain_preset": "stable"
+      },
+      "tick": {
+        "planning_posture": "YELLOW",
+        "pathway_signal": "CONVERGE",
+        "veto_recommended": false,
+        "ant_posture": "GREEN",
+        "spine": "COGNITIVE",
+        "omega_tier": "TIER_1",
+        "entity_allowed": false,
+        "gmb_posture": "GREEN_CAPACITY"
+      }
+    },
+    {
+      "matrix_index": 9,
+      "axes": {
+        "rsi_cycles": 0,
+        "traffic_kind": "reasoning",
+        "pathway_preset": "converge",
+        "ant_preset": "green",
+        "entity_preset": "minibot_blocked",
+        "brain_preset": "elastic"
+      },
+      "tick": {
+        "planning_posture": "YELLOW",
+        "pathway_signal": "CONVERGE",
+        "veto_recommended": false,
+        "ant_posture": "GREEN",
+        "spine": "COGNITIVE",
+        "omega_tier": "TIER_1",
+        "entity_allowed": false,
+        "gmb_posture": "YELLOW_ELASTIC_CLONE_ADVISORY"
+      }
+    },
+    {
+      "matrix_index": 10,
+      "axes": {
+        "rsi_cycles": 0,
+        "traffic_kind": "reasoning",
+        "pathway_preset": "converge",
+        "ant_preset": "secrets",
+        "entity_preset": "assistant_ok",
+        "brain_preset": "stable"
+      },
+      "tick": {
+        "planning_posture": "RED",
+        "pathway_signal": "CONVERGE",
+        "veto_recommended": true,
+        "ant_posture": "YELLOW",
+        "spine": "COGNITIVE",
+        "omega_tier": "TIER_1",
+        "entity_allowed": true,
+        "gmb_posture": "GREEN_CAPACITY"
+      }
+    },
+    {
+      "matrix_index": 11,
+      "axes": {
+        "rsi_cycles": 0,
+        "traffic_kind": "reasoning",
+        "pathway_preset": "converge",
+        "ant_preset": "secrets",
+        "entity_preset": "assistant_ok",
+        "brain_preset": "elastic"
+      },
+      "tick": {
+        "planning_posture": "RED",
+        "pathway_signal": "CONVERGE",
+        "veto_recommended": true,
+        "ant_posture": "YELLOW",
+        "spine": "COGNITIVE",
+        "omega_tier": "TIER_1",
+        "entity_allowed": true,
+        "gmb_posture": "YELLOW_ELASTIC_CLONE_ADVISORY"
+      }
+    },
+    {
+      "matrix_index": 12,
+      "axes": {
+        "rsi_cycles": 0,
+        "traffic_kind": "reasoning",
+        "pathway_preset": "converge",
+        "ant_preset": "secrets",
+        "entity_preset": "ghost_blocked",
+        "brain_preset": "stable"
+      },
+      "tick": {
+        "planning_posture": "RED",
+        "pathway_signal": "CONVERGE",
+        "veto_recommended": true,
+        "ant_posture": "YELLOW",
+        "spine": "COGNITIVE",
+        "omega_tier": "TIER_1",
+        "entity_allowed": false,
+        "gmb_posture": "GREEN_CAPACITY"
+      }
+    },
+    {
+      "matrix_index": 13,
+      "axes": {
+        "rsi_cycles": 0,
+        "traffic_kind": "reasoning",
+        "pathway_preset": "converge",
+        "ant_preset": "secrets",
+        "entity_preset": "ghost_blocked",
+        "brain_preset": "elastic"
+      },
+      "tick": {
+        "planning_posture": "RED",
+        "pathway_signal": "CONVERGE",
+        "veto_recommended": true,
+        "ant_posture": "YELLOW",
+        "spine": "COGNITIVE",
+        "omega_tier": "TIER_1",
+        "entity_allowed": false,
+        "gmb_posture": "YELLOW_ELASTIC_CLONE_ADVISORY"
+      }
+    },
+    {
+      "matrix_index": 14,
+      "axes": {
+        "rsi_cycles": 0,
+        "traffic_kind": "reasoning",
+        "pathway_preset": "converge",
+        "ant_preset": "secrets",
+        "entity_preset": "shadow_blocked",
+        "brain_preset": "stable"
+      },
+      "tick": {
+        "planning_posture": "RED",
+        "pathway_signal": "CONVERGE",
+        "veto_recommended": true,
+        "ant_posture": "YELLOW",
+        "spine": "COGNITIVE",
+        "omega_tier": "TIER_1",
+        "entity_allowed": false,
+        "gmb_posture": "GREEN_CAPACITY"
+      }
+    },
+    {
+      "matrix_index": 15,
+      "axes": {
+        "rsi_cycles": 0,
+        "traffic_kind": "reasoning",
+        "pathway_preset": "converge",
+        "ant_preset": "secrets",
+        "entity_preset": "shadow_blocked",
+        "brain_preset": "elastic"
+      },
+      "tick": {
+        "planning_posture": "RED",
+        "pathway_signal": "CONVERGE",
+        "veto_recommended": true,
+        "ant_posture": "YELLOW",
+        "spine": "COGNITIVE",
+        "omega_tier": "TIER_1",
+        "entity_allowed": false,
+        "gmb_posture": "YELLOW_ELASTIC_CLONE_ADVISORY"
+      }
+    },
+    {
+      "matrix_index": 16,
+      "axes": {
+        "rsi_cycles": 0,
+        "traffic_kind": "reasoning",
+        "pathway_preset": "converge",
+        "ant_preset": "secrets",
+        "entity_preset": "master_ok",
+        "brain_preset": "stable"
+      },
+      "tick": {
+        "planning_posture": "RED",
+        "pathway_signal": "CONVERGE",
+        "veto_recommended": true,
+        "ant_posture": "YELLOW",
+        "spine": "COGNITIVE",
+        "omega_tier": "TIER_1",
+        "entity_allowed": true,
+        "gmb_posture": "GREEN_CAPACITY"
+      }
+    },
+    {
+      "matrix_index": 17,
+      "axes": {
+        "rsi_cycles": 0,
+        "traffic_kind": "reasoning",
+        "pathway_preset": "converge",
+        "ant_preset": "secrets",
+        "entity_preset": "master_ok",
+        "brain_preset": "elastic"
+      },
+      "tick": {
+        "planning_posture": "RED",
+        "pathway_signal": "CONVERGE",
+        "veto_recommended": true,
+        "ant_posture": "YELLOW",
+        "spine": "COGNITIVE",
+        "omega_tier": "TIER_1",
+        "entity_allowed": true,
+        "gmb_posture": "YELLOW_ELASTIC_CLONE_ADVISORY"
+      }
+    },
+    {
+      "matrix_index": 18,
+      "axes": {
+        "rsi_cycles": 0,
+        "traffic_kind": "reasoning",
+        "pathway_preset": "converge",
+        "ant_preset": "secrets",
+        "entity_preset": "minibot_blocked",
+        "brain_preset": "stable"
+      },
+      "tick": {
+        "planning_posture": "RED",
+        "pathway_signal": "CONVERGE",
+        "veto_recommended": true,
+        "ant_posture": "YELLOW",
+        "spine": "COGNITIVE",
+        "omega_tier": "TIER_1",
+        "entity_allowed": false,
+        "gmb_posture": "GREEN_CAPACITY"
+      }
+    },
+    {
+      "matrix_index": 19,
+      "axes": {
+        "rsi_cycles": 0,
+        "traffic_kind": "reasoning",
+        "pathway_preset": "converge",
+        "ant_preset": "secrets",
+        "entity_preset": "minibot_blocked",
+        "brain_preset": "elastic"
+      },
+      "tick": {
+        "planning_posture": "RED",
+        "pathway_signal": "CONVERGE",
+        "veto_recommended": true,
+        "ant_posture": "YELLOW",
+        "spine": "COGNITIVE",
+        "omega_tier": "TIER_1",
+        "entity_allowed": false,
+        "gmb_posture": "YELLOW_ELASTIC_CLONE_ADVISORY"
+      }
+    },
+    {
+      "matrix_index": 20,
+      "axes": {
+        "rsi_cycles": 0,
+        "traffic_kind": "reasoning",
+        "pathway_preset": "converge",
+        "ant_preset": "ci_fail",
+        "entity_preset": "assistant_ok",
+        "brain_preset": "stable"
+      },
+      "tick": {
+        "planning_posture": "RED",
+        "pathway_signal": "CONVERGE",
+        "veto_recommended": true,
+        "ant_posture": "YELLOW",
+        "spine": "COGNITIVE",
+        "omega_tier": "TIER_1",
+        "entity_allowed": true,
+        "gmb_posture": "GREEN_CAPACITY"
+      }
+    },
+    {
+      "matrix_index": 21,
+      "axes": {
+        "rsi_cycles": 0,
+        "traffic_kind": "reasoning",
+        "pathway_preset": "converge",
+        "ant_preset": "ci_fail",
+        "entity_preset": "assistant_ok",
+        "brain_preset": "elastic"
+      },
+      "tick": {
+        "planning_posture": "RED",
+        "pathway_signal": "CONVERGE",
+        "veto_recommended": true,
+        "ant_posture": "YELLOW",
+        "spine": "COGNITIVE",
+        "omega_tier": "TIER_1",
+        "entity_allowed": true,
+        "gmb_posture": "YELLOW_ELASTIC_CLONE_ADVISORY"
+      }
+    },
+    {
+      "matrix_index": 22,
+      "axes": {
+        "rsi_cycles": 0,
+        "traffic_kind": "reasoning",
+        "pathway_preset": "converge",
+        "ant_preset": "ci_fail",
+        "entity_preset": "ghost_blocked",
+        "brain_preset": "stable"
+      },
+      "tick": {
+        "planning_posture": "RED",
+        "pathway_signal": "CONVERGE",
+        "veto_recommended": true,
+        "ant_posture": "YELLOW",
+        "spine": "COGNITIVE",
+        "omega_tier": "TIER_1",
+        "entity_allowed": false,
+        "gmb_posture": "GREEN_CAPACITY"
+      }
+    },
+    {
+      "matrix_index": 23,
+      "axes": {
+        "rsi_cycles": 0,
+        "traffic_kind": "reasoning",
+        "pathway_preset": "converge",
+        "ant_preset": "ci_fail",
+        "entity_preset": "ghost_blocked",
+        "brain_preset": "elastic"
+      },
+      "tick": {
+        "planning_posture": "RED",
+        "pathway_signal": "CONVERGE",
+        "veto_recommended": true,
+        "ant_posture": "YELLOW",
+        "spine": "COGNITIVE",
+        "omega_tier": "TIER_1",
+        "entity_allowed": false,
+        "gmb_posture": "YELLOW_ELASTIC_CLONE_ADVISORY"
+      }
+    },
+    {
+      "matrix_index": 24,
+      "axes": {
+        "rsi_cycles": 0,
+        "traffic_kind": "reasoning",
+        "pathway_preset": "converge",
+        "ant_preset": "ci_fail",
+        "entity_preset": "shadow_blocked",
+        "brain_preset": "stable"
+      },
+      "tick": {
+        "planning_posture": "RED",
+        "pathway_signal": "CONVERGE",
+        "veto_recommended": true,
+        "ant_posture": "YELLOW",
+        "spine": "COGNITIVE",
+        "omega_tier": "TIER_1",
+        "entity_allowed": false,
+        "gmb_posture": "GREEN_CAPACITY"
+      }
+    },
+    {
+      "matrix_index": 25,
+      "axes": {
+        "rsi_cycles": 0,
+        "traffic_kind": "reasoning",
+        "pathway_preset": "converge",
+        "ant_preset": "ci_fail",
+        "entity_preset": "shadow_blocked",
+        "brain_preset": "elastic"
+      },
+      "tick": {
+        "planning_posture": "RED",
+        "pathway_signal": "CONVERGE",
+        "veto_recommended": true,
+        "ant_posture": "YELLOW",
+        "spine": "COGNITIVE",
+        "omega_tier": "TIER_1",
+        "entity_allowed": false,
+        "gmb_posture": "YELLOW_ELASTIC_CLONE_ADVISORY"
+      }
+    },
+    {
+      "matrix_index": 26,
+      "axes": {
+        "rsi_cycles": 0,
+        "traffic_kind": "reasoning",
+        "pathway_preset": "converge",
+        "ant_preset": "ci_fail",
+        "entity_preset": "master_ok",
+        "brain_preset": "stable"
+      },
+      "tick": {
+        "planning_posture": "RED",
+        "pathway_signal": "CONVERGE",
+        "veto_recommended": true,
+        "ant_posture": "YELLOW",
+        "spine": "COGNITIVE",
+        "omega_tier": "TIER_1",
+        "entity_allowed": true,
+        "gmb_posture": "GREEN_CAPACITY"
+      }
+    },
+    {
+      "matrix_index": 27,
+      "axes": {
+        "rsi_cycles": 0,
+        "traffic_kind": "reasoning",
+        "pathway_preset": "converge",
+        "ant_preset": "ci_fail",
+        "entity_preset": "master_ok",
+        "brain_preset": "elastic"
+      },
+      "tick": {
+        "planning_posture": "RED",
+        "pathway_signal": "CONVERGE",
+        "veto_recommended": true,
+        "ant_posture": "YELLOW",
+        "spine": "COGNITIVE",
+        "omega_tier": "TIER_1",
+        "entity_allowed": true,
+        "gmb_posture": "YELLOW_ELASTIC_CLONE_ADVISORY"
+      }
+    },
+    {
+      "matrix_index": 28,
+      "axes": {
+        "rsi_cycles": 0,
+        "traffic_kind": "reasoning",
+        "pathway_preset": "converge",
+        "ant_preset": "ci_fail",
+        "entity_preset": "minibot_blocked",
+        "brain_preset": "stable"
+      },
+      "tick": {
+        "planning_posture": "RED",
+        "pathway_signal": "CONVERGE",
+        "veto_recommended": true,
+        "ant_posture": "YELLOW",
+        "spine": "COGNITIVE",
+        "omega_tier": "TIER_1",
+        "entity_allowed": false,
+        "gmb_posture": "GREEN_CAPACITY"
+      }
+    },
+    {
+      "matrix_index": 29,
+      "axes": {
+        "rsi_cycles": 0,
+        "traffic_kind": "reasoning",
+        "pathway_preset": "converge",
+        "ant_preset": "ci_fail",
+        "entity_preset": "minibot_blocked",
+        "brain_preset": "elastic"
+      },
+      "tick": {
+        "planning_posture": "RED",
+        "pathway_signal": "CONVERGE",
+        "veto_recommended": true,
+        "ant_posture": "YELLOW",
+        "spine": "COGNITIVE",
+        "omega_tier": "TIER_1",
+        "entity_allowed": false,
+        "gmb_posture": "YELLOW_ELASTIC_CLONE_ADVISORY"
+      }
+    },
+    {
+      "matrix_index": 30,
+      "axes": {
+        "rsi_cycles": 0,
+        "traffic_kind": "reasoning",
+        "pathway_preset": "converge",
+        "ant_preset": "recursion_critical",
+        "entity_preset": "assistant_ok",
+        "brain_preset": "stable"
+      },
+      "tick": {
+        "planning_posture": "RED",
+        "pathway_signal": "CONVERGE",
+        "veto_recommended": true,
+        "ant_posture": "YELLOW",
+        "spine": "COGNITIVE",
+        "omega_tier": "TIER_1",
+        "entity_allowed": true,
+        "gmb_posture": "GREEN_CAPACITY"
+      }
+    },
+    {
+      "matrix_index": 31,
+      "axes": {
+        "rsi_cycles": 0,
+        "traffic_kind": "reasoning",
+        "pathway_preset": "converge",
+        "ant_preset": "recursion_critical",
+        "entity_preset": "assistant_ok",
+        "brain_preset": "elastic"
+      },
+      "tick": {
+        "planning_posture": "RED",
+        "pathway_signal": "CONVERGE",
+        "veto_recommended": true,
+        "ant_posture": "YELLOW",
+        "spine": "COGNITIVE",
+        "omega_tier": "TIER_1",
+        "entity_allowed": true,
+        "gmb_posture": "YELLOW_ELASTIC_CLONE_ADVISORY"
+      }
+    },
+    {
+      "matrix_index": 32,
+      "axes": {
+        "rsi_cycles": 0,
+        "traffic_kind": "reasoning",
+        "pathway_preset": "converge",
+        "ant_preset": "recursion_critical",
+        "entity_preset": "ghost_blocked",
+        "brain_preset": "stable"
+      },
+      "tick": {
+        "planning_posture": "RED",
+        "pathway_signal": "CONVERGE",
+        "veto_recommended": true,
+        "ant_posture": "YELLOW",
+        "spine": "COGNITIVE",
+        "omega_tier": "TIER_1",
+        "entity_allowed": false,
+        "gmb_posture": "GREEN_CAPACITY"
+      }
+    },
+    {
+      "matrix_index": 33,
+      "axes": {
+        "rsi_cycles": 0,
+        "traffic_kind": "reasoning",
+        "pathway_preset": "converge",
+        "ant_preset": "recursion_critical",
+        "entity_preset": "ghost_blocked",
+        "brain_preset": "elastic"
+      },
+      "tick": {
+        "planning_posture": "RED",
+        "pathway_signal": "CONVERGE",
+        "veto_recommended": true,
+        "ant_posture": "YELLOW",
+        "spine": "COGNITIVE",
+        "omega_tier": "TIER_1",
+        "entity_allowed": false,
+        "gmb_posture": "YELLOW_ELASTIC_CLONE_ADVISORY"
+      }
+    },
+    {
+      "matrix_index": 34,
+      "axes": {
+        "rsi_cycles": 0,
+        "traffic_kind": "reasoning",
+        "pathway_preset": "converge",
+        "ant_preset": "recursion_critical",
+        "entity_preset": "shadow_blocked",
+        "brain_preset": "stable"
+      },
+      "tick": {
+        "planning_posture": "RED",
+        "pathway_signal": "CONVERGE",
+        "veto_recommended": true,
+        "ant_posture": "YELLOW",
+        "spine": "COGNITIVE",
+        "omega_tier": "TIER_1",
+        "entity_allowed": false,
+        "gmb_posture": "GREEN_CAPACITY"
+      }
+    },
+    {
+      "matrix_index": 35,
+      "axes": {
+        "rsi_cycles": 0,
+        "traffic_kind": "reasoning",
+        "pathway_preset": "converge",
+        "ant_preset": "recursion_critical",
+        "entity_preset": "shadow_blocked",
+        "brain_preset": "elastic"
+      },
+      "tick": {
+        "planning_posture": "RED",
+        "pathway_signal": "CONVERGE",
+        "veto_recommended": true,
+        "ant_posture": "YELLOW",
+        "spine": "COGNITIVE",
+        "omega_tier": "TIER_1",
+        "entity_allowed": false,
+        "gmb_posture": "YELLOW_ELASTIC_CLONE_ADVISORY"
+      }
+    },
+    {
+      "matrix_index": 36,
+      "axes": {
+        "rsi_cycles": 0,
+        "traffic_kind": "reasoning",
+        "pathway_preset": "converge",
+        "ant_preset": "recursion_critical",
+        "entity_preset": "master_ok",
+        "brain_preset": "stable"
+      },
+      "tick": {
+        "planning_posture": "RED",
+        "pathway_signal": "CONVERGE",
+        "veto_recommended": true,
+        "ant_posture": "YELLOW",
+        "spine": "COGNITIVE",
+        "omega_tier": "TIER_1",
+        "entity_allowed": true,
+        "gmb_posture": "GREEN_CAPACITY"
+      }
+    },
+    {
+      "matrix_index": 37,
+      "axes": {
+        "rsi_cycles": 0,
+        "traffic_kind": "reasoning",
+        "pathway_preset": "converge",
+        "ant_preset": "recursion_critical",
+        "entity_preset": "master_ok",
+        "brain_preset": "elastic"
+      },
+      "tick": {
+        "planning_posture": "RED",
+        "pathway_signal": "CONVERGE",
+        "veto_recommended": true,
+        "ant_posture": "YELLOW",
+        "spine": "COGNITIVE",
+        "omega_tier": "TIER_1",
+        "entity_allowed": true,
+        "gmb_posture": "YELLOW_ELASTIC_CLONE_ADVISORY"
+      }
+    },
+    {
+      "matrix_index": 38,
+      "axes": {
+        "rsi_cycles": 0,
+        "traffic_kind": "reasoning",
+        "pathway_preset": "converge",
+        "ant_preset": "recursion_critical",
+        "entity_preset": "minibot_blocked",
+        "brain_preset": "stable"
+      },
+      "tick": {
+        "planning_posture": "RED",
+        "pathway_signal": "CONVERGE",
+        "veto_recommended": true,
+        "ant_posture": "YELLOW",
+        "spine": "COGNITIVE",
+        "omega_tier": "TIER_1",
+        "entity_allowed": false,
+        "gmb_posture": "GREEN_CAPACITY"
+      }
+    },
+    {
+      "matrix_index": 39,
+      "axes": {
+        "rsi_cycles": 0,
+        "traffic_kind": "reasoning",
+        "pathway_preset": "converge",
+        "ant_preset": "recursion_critical",
+        "entity_preset": "minibot_blocked",
+        "brain_preset": "elastic"
+      },
+      "tick": {
+        "planning_posture": "RED",
+        "pathway_signal": "CONVERGE",
+        "veto_recommended": true,
+        "ant_posture": "YELLOW",
+        "spine": "COGNITIVE",
+        "omega_tier": "TIER_1",
+        "entity_allowed": false,
+        "gmb_posture": "YELLOW_ELASTIC_CLONE_ADVISORY"
+      }
+    },
+    {
+      "matrix_index": 40,
+      "axes": {
+        "rsi_cycles": 0,
+        "traffic_kind": "reasoning",
+        "pathway_preset": "diverge",
+        "ant_preset": "green",
+        "entity_preset": "assistant_ok",
+        "brain_preset": "stable"
+      },
+      "tick": {
+        "planning_posture": "YELLOW",
+        "pathway_signal": "DIVERGE",
+        "veto_recommended": false,
+        "ant_posture": "GREEN",
+        "spine": "COGNITIVE",
+        "omega_tier": "TIER_1",
+        "entity_allowed": true,
+        "gmb_posture": "GREEN_CAPACITY"
+      }
+    },
+    {
+      "matrix_index": 41,
+      "axes": {
+        "rsi_cycles": 0,
+        "traffic_kind": "reasoning",
+        "pathway_preset": "diverge",
+        "ant_preset": "green",
+        "entity_preset": "assistant_ok",
+        "brain_preset": "elastic"
+      },
+      "tick": {
+        "planning_posture": "YELLOW",
+        "pathway_signal": "DIVERGE",
+        "veto_recommended": false,
+        "ant_posture": "GREEN",
+        "spine": "COGNITIVE",
+        "omega_tier": "TIER_1",
+        "entity_allowed": true,
+        "gmb_posture": "YELLOW_ELASTIC_CLONE_ADVISORY"
+      }
+    },
+    {
+      "matrix_index": 42,
+      "axes": {
+        "rsi_cycles": 0,
+        "traffic_kind": "reasoning",
+        "pathway_preset": "diverge",
+        "ant_preset": "green",
+        "entity_preset": "ghost_blocked",
+        "brain_preset": "stable"
+      },
+      "tick": {
+        "planning_posture": "YELLOW",
+        "pathway_signal": "DIVERGE",
+        "veto_recommended": false,
+        "ant_posture": "GREEN",
+        "spine": "COGNITIVE",
+        "omega_tier": "TIER_1",
+        "entity_allowed": false,
+        "gmb_posture": "GREEN_CAPACITY"
+      }
+    },
+    {
+      "matrix_index": 43,
+      "axes": {
+        "rsi_cycles": 0,
+        "traffic_kind": "reasoning",
+        "pathway_preset": "diverge",
+        "ant_preset": "green",
+        "entity_preset": "ghost_blocked",
+        "brain_preset": "elastic"
+      },
+      "tick": {
+        "planning_posture": "YELLOW",
+        "pathway_signal": "DIVERGE",
+        "veto_recommended": false,
+        "ant_posture": "GREEN",
+        "spine": "COGNITIVE",
+        "omega_tier": "TIER_1",
+        "entity_allowed": false,
+        "gmb_posture": "YELLOW_ELASTIC_CLONE_ADVISORY"
+      }
+    },
+    {
+      "matrix_index": 44,
+      "axes": {
+        "rsi_cycles": 0,
+        "traffic_kind": "reasoning",
+        "pathway_preset": "diverge",
+        "ant_preset": "green",
+        "entity_preset": "shadow_blocked",
+        "brain_preset": "stable"
+      },
+      "tick": {
+        "planning_posture": "YELLOW",
+        "pathway_signal": "DIVERGE",
+        "veto_recommended": false,
+        "ant_posture": "GREEN",
+        "spine": "COGNITIVE",
+        "omega_tier": "TIER_1",
+        "entity_allowed": false,
+        "gmb_posture": "GREEN_CAPACITY"
+      }
+    },
+    {
+      "matrix_index": 45,
+      "axes": {
+        "rsi_cycles": 0,
+        "traffic_kind": "reasoning",
+        "pathway_preset": "diverge",
+        "ant_preset": "green",
+        "entity_preset": "shadow_blocked",
+        "brain_preset": "elastic"
+      },
+      "tick": {
+        "planning_posture": "YELLOW",
+        "pathway_signal": "DIVERGE",
+        "veto_recommended": false,
+        "ant_posture": "GREEN",
+        "spine": "COGNITIVE",
+        "omega_tier": "TIER_1",
+        "entity_allowed": false,
+        "gmb_posture": "YELLOW_ELASTIC_CLONE_ADVISORY"
+      }
+    },
+    {
+      "matrix_index": 46,
+      "axes": {
+        "rsi_cycles": 0,
+        "traffic_kind": "reasoning",
+        "pathway_preset": "diverge",
+        "ant_preset": "green",
+        "entity_preset": "master_ok",
+        "brain_preset": "stable"
+      },
+      "tick": {
+        "planning_posture": "YELLOW",
+        "pathway_signal": "DIVERGE",
+        "veto_recommended": false,
+        "ant_posture": "GREEN",
+        "spine": "COGNITIVE",
+        "omega_tier": "TIER_1",
+        "entity_allowed": true,
+        "gmb_posture": "GREEN_CAPACITY"
+      }
+    },
+    {
+      "matrix_index": 47,
+      "axes": {
+        "rsi_cycles": 0,
+        "traffic_kind": "reasoning",
+        "pathway_preset": "diverge",
+        "ant_preset": "green",
+        "entity_preset": "master_ok",
+        "brain_preset": "elastic"
+      },
+      "tick": {
+        "planning_posture": "YELLOW",
+        "pathway_signal": "DIVERGE",
+        "veto_recommended": false,
+        "ant_posture": "GREEN",
+        "spine": "COGNITIVE",
+        "omega_tier": "TIER_1",
+        "entity_allowed": true,
+        "gmb_posture": "YELLOW_ELASTIC_CLONE_ADVISORY"
+      }
+    },
+    {
+      "matrix_index": 48,
+      "axes": {
+        "rsi_cycles": 0,
+        "traffic_kind": "reasoning",
+        "pathway_preset": "diverge",
+        "ant_preset": "green",
+        "entity_preset": "minibot_blocked",
+        "brain_preset": "stable"
+      },
+      "tick": {
+        "planning_posture": "YELLOW",
+        "pathway_signal": "DIVERGE",
+        "veto_recommended": false,
+        "ant_posture": "GREEN",
+        "spine": "COGNITIVE",
+        "omega_tier": "TIER_1",
+        "entity_allowed": false,
+        "gmb_posture": "GREEN_CAPACITY"
+      }
+    },
+    {
+      "matrix_index": 49,
+      "axes": {
+        "rsi_cycles": 0,
+        "traffic_kind": "reasoning",
+        "pathway_preset": "diverge",
+        "ant_preset": "green",
+        "entity_preset": "minibot_blocked",
+        "brain_preset": "elastic"
+      },
+      "tick": {
+        "planning_posture": "YELLOW",
+        "pathway_signal": "DIVERGE",
+        "veto_recommended": false,
+        "ant_posture": "GREEN",
+        "spine": "COGNITIVE",
+        "omega_tier": "TIER_1",
+        "entity_allowed": false,
+        "gmb_posture": "YELLOW_ELASTIC_CLONE_ADVISORY"
+      }
+    },
+    {
+      "matrix_index": 50,
+      "axes": {
+        "rsi_cycles": 0,
+        "traffic_kind": "reasoning",
+        "pathway_preset": "diverge",
+        "ant_preset": "secrets",
+        "entity_preset": "assistant_ok",
+        "brain_preset": "stable"
+      },
+      "tick": {
+        "planning_posture": "RED",
+        "pathway_signal": "DIVERGE",
+        "veto_recommended": true,
+        "ant_posture": "YELLOW",
+        "spine": "COGNITIVE",
+        "omega_tier": "TIER_1",
+        "entity_allowed": true,
+        "gmb_posture": "GREEN_CAPACITY"
+      }
+    },
+    {
+      "matrix_index": 51,
+      "axes": {
+        "rsi_cycles": 0,
+        "traffic_kind": "reasoning",
+        "pathway_preset": "diverge",
+        "ant_preset": "secrets",
+        "entity_preset": "assistant_ok",
+        "brain_preset": "elastic"
+      },
+      "tick": {
+        "planning_posture": "RED",
+        "pathway_signal": "DIVERGE",
+        "veto_recommended": true,
+        "ant_posture": "YELLOW",
+        "spine": "COGNITIVE",
+        "omega_tier": "TIER_1",
+        "entity_allowed": true,
+        "gmb_posture": "YELLOW_ELASTIC_CLONE_ADVISORY"
+      }
+    },
+    {
+      "matrix_index": 52,
+      "axes": {
+        "rsi_cycles": 0,
+        "traffic_kind": "reasoning",
+        "pathway_preset": "diverge",
+        "ant_preset": "secrets",
+        "entity_preset": "ghost_blocked",
+        "brain_preset": "stable"
+      },
+      "tick": {
+        "planning_posture": "RED",
+        "pathway_signal": "DIVERGE",
+        "veto_recommended": true,
+        "ant_posture": "YELLOW",
+        "spine": "COGNITIVE",
+        "omega_tier": "TIER_1",
+        "entity_allowed": false,
+        "gmb_posture": "GREEN_CAPACITY"
+      }
+    },
+    {
+      "matrix_index": 53,
+      "axes": {
+        "rsi_cycles": 0,
+        "traffic_kind": "reasoning",
+        "pathway_preset": "diverge",
+        "ant_preset": "secrets",
+        "entity_preset": "ghost_blocked",
+        "brain_preset": "elastic"
+      },
+      "tick": {
+        "planning_posture": "RED",
+        "pathway_signal": "DIVERGE",
+        "veto_recommended": true,
+        "ant_posture": "YELLOW",
+        "spine": "COGNITIVE",
+        "omega_tier": "TIER_1",
+        "entity_allowed": false,
+        "gmb_posture": "YELLOW_ELASTIC_CLONE_ADVISORY"
+      }
+    },
+    {
+      "matrix_index": 54,
+      "axes": {
+        "rsi_cycles": 0,
+        "traffic_kind": "reasoning",
+        "pathway_preset": "diverge",
+        "ant_preset": "secrets",
+        "entity_preset": "shadow_blocked",
+        "brain_preset": "stable"
+      },
+      "tick": {
+        "planning_posture": "RED",
+        "pathway_signal": "DIVERGE",
+        "veto_recommended": true,
+        "ant_posture": "YELLOW",
+        "spine": "COGNITIVE",
+        "omega_tier": "TIER_1",
+        "entity_allowed": false,
+        "gmb_posture": "GREEN_CAPACITY"
+      }
+    },
+    {
+      "matrix_index": 55,
+      "axes": {
+        "rsi_cycles": 0,
+        "traffic_kind": "reasoning",
+        "pathway_preset": "diverge",
+        "ant_preset": "secrets",
+        "entity_preset": "shadow_blocked",
+        "brain_preset": "elastic"
+      },
+      "tick": {
+        "planning_posture": "RED",
+        "pathway_signal": "DIVERGE",
+        "veto_recommended": true,
+        "ant_posture": "YELLOW",
+        "spine": "COGNITIVE",
+        "omega_tier": "TIER_1",
+        "entity_allowed": false,
+        "gmb_posture": "YELLOW_ELASTIC_CLONE_ADVISORY"
+      }
+    },
+    {
+      "matrix_index": 56,
+      "axes": {
+        "rsi_cycles": 0,
+        "traffic_kind": "reasoning",
+        "pathway_preset": "diverge",
+        "ant_preset": "secrets",
+        "entity_preset": "master_ok",
+        "brain_preset": "stable"
+      },
+      "tick": {
+        "planning_posture": "RED",
+        "pathway_signal": "DIVERGE",
+        "veto_recommended": true,
+        "ant_posture": "YELLOW",
+        "spine": "COGNITIVE",
+        "omega_tier": "TIER_1",
+        "entity_allowed": true,
+        "gmb_posture": "GREEN_CAPACITY"
+      }
+    },
+    {
+      "matrix_index": 57,
+      "axes": {
+        "rsi_cycles": 0,
+        "traffic_kind": "reasoning",
+        "pathway_preset": "diverge",
+        "ant_preset": "secrets",
+        "entity_preset": "master_ok",
+        "brain_preset": "elastic"
+      },
+      "tick": {
+        "planning_posture": "RED",
+        "pathway_signal": "DIVERGE",
+        "veto_recommended": true,
+        "ant_posture": "YELLOW",
+        "spine": "COGNITIVE",
+        "omega_tier": "TIER_1",
+        "entity_allowed": true,
+        "gmb_posture": "YELLOW_ELASTIC_CLONE_ADVISORY"
+      }
+    },
+    {
+      "matrix_index": 58,
+      "axes": {
+        "rsi_cycles": 0,
+        "traffic_kind": "reasoning",
+        "pathway_preset": "diverge",
+        "ant_preset": "secrets",
+        "entity_preset": "minibot_blocked",
+        "brain_preset": "stable"
+      },
+      "tick": {
+        "planning_posture": "RED",
+        "pathway_signal": "DIVERGE",
+        "veto_recommended": true,
+        "ant_posture": "YELLOW",
+        "spine": "COGNITIVE",
+        "omega_tier": "TIER_1",
+        "entity_allowed": false,
+        "gmb_posture": "GREEN_CAPACITY"
+      }
+    },
+    {
+      "matrix_index": 59,
+      "axes": {
+        "rsi_cycles": 0,
+        "traffic_kind": "reasoning",
+        "pathway_preset": "diverge",
+        "ant_preset": "secrets",
+        "entity_preset": "minibot_blocked",
+        "brain_preset": "elastic"
+      },
+      "tick": {
+        "planning_posture": "RED",
+        "pathway_signal": "DIVERGE",
+        "veto_recommended": true,
+        "ant_posture": "YELLOW",
+        "spine": "COGNITIVE",
+        "omega_tier": "TIER_1",
+        "entity_allowed": false,
+        "gmb_posture": "YELLOW_ELASTIC_CLONE_ADVISORY"
+      }
+    },
+    {
+      "matrix_index": 60,
+      "axes": {
+        "rsi_cycles": 0,
+        "traffic_kind": "reasoning",
+        "pathway_preset": "diverge",
+        "ant_preset": "ci_fail",
+        "entity_preset": "assistant_ok",
+        "brain_preset": "stable"
+      },
+      "tick": {
+        "planning_posture": "RED",
+        "pathway_signal": "DIVERGE",
+        "veto_recommended": true,
+        "ant_posture": "YELLOW",
+        "spine": "COGNITIVE",
+        "omega_tier": "TIER_1",
+        "entity_allowed": true,
+        "gmb_posture": "GREEN_CAPACITY"
+      }
+    },
+    {
+      "matrix_index": 61,
+      "axes": {
+        "rsi_cycles": 0,
+        "traffic_kind": "reasoning",
+        "pathway_preset": "diverge",
+        "ant_preset": "ci_fail",
+        "entity_preset": "assistant_ok",
+        "brain_preset": "elastic"
+      },
+      "tick": {
+        "planning_posture": "RED",
+        "pathway_signal": "DIVERGE",
+        "veto_recommended": true,
+        "ant_posture": "YELLOW",
+        "spine": "COGNITIVE",
+        "omega_tier": "TIER_1",
+        "entity_allowed": true,
+        "gmb_posture": "YELLOW_ELASTIC_CLONE_ADVISORY"
+      }
+    },
+    {
+      "matrix_index": 62,
+      "axes": {
+        "rsi_cycles": 0,
+        "traffic_kind": "reasoning",
+        "pathway_preset": "diverge",
+        "ant_preset": "ci_fail",
+        "entity_preset": "ghost_blocked",
+        "brain_preset": "stable"
+      },
+      "tick": {
+        "planning_posture": "RED",
+        "pathway_signal": "DIVERGE",
+        "veto_recommended": true,
+        "ant_posture": "YELLOW",
+        "spine": "COGNITIVE",
+        "omega_tier": "TIER_1",
+        "entity_allowed": false,
+        "gmb_posture": "GREEN_CAPACITY"
+      }
+    },
+    {
+      "matrix_index": 63,
+      "axes": {
+        "rsi_cycles": 0,
+        "traffic_kind": "reasoning",
+        "pathway_preset": "diverge",
+        "ant_preset": "ci_fail",
+        "entity_preset": "ghost_blocked",
+        "brain_preset": "elastic"
+      },
+      "tick": {
+        "planning_posture": "RED",
+        "pathway_signal": "DIVERGE",
+        "veto_recommended": true,
+        "ant_posture": "YELLOW",
+        "spine": "COGNITIVE",
+        "omega_tier": "TIER_1",
+        "entity_allowed": false,
+        "gmb_posture": "YELLOW_ELASTIC_CLONE_ADVISORY"
+      }
+    }
+  ],
+  "runs_sample_cap": 64,
+  "matrix_red_fraction": 0.75,
+  "generated_unix_ms": 1778465060967
+}

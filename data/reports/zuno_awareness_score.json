@@ -1,0 +1,55 @@
+{
+  "schema": "zuno_awareness_score_v1",
+  "generated_at": "2026-05-03T15:52:29.702Z",
+  "band": "RED",
+  "score": 10,
+  "dominant_drivers": [
+    "z_traffic_RED",
+    "a2a_temporal_deltas_present",
+    "a2b_truth_layer_YELLOW"
+  ],
+  "rationale": "- z_traffic_RED\n- a2a_temporal_deltas_present\n- a2b_truth_layer_YELLOW",
+  "signals": {
+    "monster_registry_verify": {
+      "script_exit_code": 0,
+      "receipt_pass": true,
+      "receipt_path": "data/reports/z_monster_project_registry_verify.json"
+    },
+    "snapshot_ingest": {
+      "snapshot_present": true,
+      "truth_alignment_ref_ok": true,
+      "snapshot_id": "ZUNO_SNAPSHOT_2026_05_03"
+    },
+    "a2a_temporal": {
+      "script_exit_code": 0,
+      "status": "ok",
+      "baseline_path": "data/zuno_state_snapshot.baseline.json",
+      "summary": {
+        "added": 1,
+        "removed": 0,
+        "changed": 1,
+        "non_claim_changed": 0,
+        "posture_changed": 0
+      },
+      "note": null
+    },
+    "a2b_truth_layer": {
+      "script_exit_code": 0,
+      "status": "YELLOW",
+      "echo_in_sync": true,
+      "narrative_missing_count": 23
+    },
+    "z_traffic_chief": {
+      "script_exit_code": 1,
+      "overall_signal": "RED",
+      "human_decision_required": false
+    },
+    "non_claims": {
+      "band": "GREEN"
+    },
+    "posture_language": {
+      "band": "GREEN"
+    }
+  },
+  "note": "Score is heuristic and receipt-backed. YELLOW narrative gaps are expected until the technology snapshot names more Monster roster items."
+}

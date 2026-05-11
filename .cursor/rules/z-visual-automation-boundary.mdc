@@ -1,0 +1,12 @@
+---
+description: No bypass of Cursor approval UI; hub-side supervision only — see z_visual_automation_boundary.json
+globs:
+  - docs/Z-AI-VISUAL-OVERLAY-CURSOR-APPROVALS-RESEARCH.md
+  - data/z_visual_automation_boundary.json
+---
+
+# Visual automation boundary (14 DRP)
+
+1. **Do not** implement or suggest RPA, synthetic mouse/keyboard, or auto-clicking **Allowlist / Run / Approve** in Cursor — [data/z_visual_automation_boundary.json](data/z_visual_automation_boundary.json).
+2. **Do** use hub dashboard HTML, Z-Bridge logs, AAFRTC tasks, and slash commands to reduce chaos and clarify safe pipelines — [docs/Z-AI-VISUAL-OVERLAY-CURSOR-APPROVALS-RESEARCH.md](docs/Z-AI-VISUAL-OVERLAY-CURSOR-APPROVALS-RESEARCH.md).
+3. **DRP:** consent, transparency, non-harm — operator must remain able to deny any risky action.

@@ -1,0 +1,48 @@
+{
+  "schema_version": 1,
+  "generated_at": "2026-04-24T11:53:23.400Z",
+  "advisory": true,
+  "name": "SICMNS maturity probe",
+  "drp_note": "Observational only: reports HTTP facts and simple aggregates. Not a learning or reasoning layer.",
+  "base_url": "http://127.0.0.1:8787",
+  "system_alive": true,
+  "event_count": 1,
+  "simulation_runs": 0,
+  "error_rate": "low",
+  "error_event_sample_size": 0,
+  "signal_strength": "low",
+  "paths_used": {
+    "health": "/api/v1/health",
+    "stats": "/api/v1/stats",
+    "events": "/api/v1/dashboard/events/stream?limit=50"
+  },
+  "health_ok": true,
+  "stats_ok": true,
+  "events_reachable": true,
+  "attempts": {
+    "health": [
+      {
+        "path": "/api/v1/health",
+        "status": 200,
+        "ok": true,
+        "error": null
+      }
+    ],
+    "stats": [
+      {
+        "path": "/api/v1/stats",
+        "status": 200,
+        "ok": true,
+        "error": null
+      }
+    ],
+    "events": [
+      {
+        "path": "/api/v1/dashboard/events/stream?limit=50",
+        "status": 200,
+        "ok": true,
+        "error": null
+      }
+    ]
+  }
+}

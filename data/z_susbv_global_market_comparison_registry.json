@@ -1,0 +1,27 @@
+{
+  "schema": "z_susbv_global_market_comparison_registry_v1",
+  "posture": "placeholder_evidence_structure_only",
+  "currency_policy": "no_invented_dollar_amounts",
+  "comparison_groups": [
+    {
+      "comparison_group": "learning_comfort_ui",
+      "job_to_be_done": "Calm personal journaling / planning without surveillance pricing",
+      "target_segment": "individual_learning",
+      "required_comp_count": 0,
+      "evidence_status": "not_started",
+      "freshness": "unknown",
+      "notes": "Placeholder row — populate only with sourced evidence after charter.",
+      "source_policy": "Primary sources only; no scraped competitor pricing without governance."
+    },
+    {
+      "comparison_group": "family_legacy_metadata",
+      "job_to_be_done": "Secure family story preservation (future)",
+      "target_segment": "family_legacy",
+      "required_comp_count": 5,
+      "evidence_status": "pending",
+      "freshness": "stale",
+      "notes": "Registry marks benchmark_required; evidence pack incomplete by design in Phase 1 sample.",
+      "source_policy": "Quarterly review doc + explicit human-approved research lane only."
+    }
+  ]
+}

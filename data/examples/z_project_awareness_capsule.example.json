@@ -1,0 +1,19 @@
+{
+  "schema": "z_project_awareness_capsule_v1",
+  "project_id": "example_project",
+  "project_name": "Example Project (copy into your repo)",
+  "primary_domain": "operator_visibility",
+  "current_signal": "GREEN",
+  "growth_percent": 55,
+  "required_checks": ["npm run verify:md", "npm run z:traffic"],
+  "api_health": "not_required",
+  "smoke_gate": "npm run z:traffic",
+  "build_gate": "optional — do not run heavy builds by default from hub",
+  "docs_gate": "npm run verify:md",
+  "autonomy_level": "L1",
+  "allowed_auto_checks": ["verify:md", "z:traffic", "z:car2"],
+  "human_gated_actions": ["deploy", "billing", "bridge", "provider_keys"],
+  "related_docs": ["docs/Z_PROJECT_AWARENESS_CAPSULE_POLICY.md"],
+  "related_reports": ["data/reports/z_ecosystem_awareness_report.json"],
+  "notes": "Keep this file small. Hub law stays in ZSanctuary_Universe; do not paste full doctrine here."
+}

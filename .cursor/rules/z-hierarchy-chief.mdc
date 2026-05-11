@@ -1,0 +1,33 @@
+---
+description: When unsure about architecture, modules, or cross-project impact, check the Hierarchy Chief (Observer View) first so all works stay aligned with Z-Super Overseer, Z-HODP, Z-EAII, and Folder Manager.
+globs:
+alwaysApply: true
+---
+
+# Z-Sanctuary: Check Hierarchy Chief When Unsure
+
+When working in **ZSanctuary_Universe** or any Z-Sanctuary-related project:
+
+## Rule
+
+**When unsure** about any of the following, **read [docs/Z-HIERARCHY-CHIEF-AND-OBSERVER-VIEW.md](docs/Z-HIERARCHY-CHIEF-AND-OBSERVER-VIEW.md) first** (the Hierarchy Chief / Observer View), then the linked doc for the relevant layer:
+
+- Where a new module or feature belongs
+- Whether a change conflicts with the operational roof (Z-Super Overseer, Z-EAII, Z-SSWS)
+- How dashboard, registry, vault, or state reports relate
+- Which project owns a capability (Organiser vs ZSanctuary vs Amk-Goku)
+- How to keep upgrades aligned with Z-EAII, Z-HODP, Folder Manager AI, and Zuno
+
+## Authority order (use when resolving conflicts)
+
+1. **Z-HIERARCHY-CHIEF-AND-OBSERVER-VIEW.md** — defines hierarchy and chief
+2. **Z-Super Overseer** (Organiser docs/Z-SUPER-OVERSEER-AI.md) — operational roof
+3. **Z-HODP** (Head Organiser Dashboards) — Control Centre, Z Blueprint, Panel Directory
+4. **Z-EAII** — registry, ping, launcher
+5. **Folder Manager AI** — vault, snapshots, policy
+6. **Zuno** — state/reflection only
+7. **Master Register & Full Build Checklist** — module list and coverage
+
+## Outcome
+
+All works and upgrades stay **bullet** (aligned) with the single vision: Z-Super Overseer as chief, Z-HODP as dashboard surface, Z-EAII as registry, Folder Manager as vault, Zuno as observer. Cursor and any AI check the chief first when unsure.

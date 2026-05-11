@@ -1,0 +1,12 @@
+{
+  "generated_at": "2026-04-28T18:56:03.298Z",
+  "status": "watch",
+  "runtime_status": "watch",
+  "runtime_age_sec": 11,
+  "stale": false,
+  "hard_failed_jobs": [],
+  "self_heal": {
+    "requested": false,
+    "actions": []
+  }
+}

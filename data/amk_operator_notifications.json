@@ -1,0 +1,567 @@
+{
+  "schema": "amk_operator_notifications_v1",
+  "posture": "read_only_metadata_human_confirmation_surface_phase_1",
+  "generated_note": "Operator edits this file to change default lane queue; dashboard buttons only persist decisions in browser localStorage until a future gated export.",
+  "notifications": [
+    {
+      "id": "lane_traffic_heartbeat",
+      "title": "Run hub heartbeat (Traffic + CAR²)",
+      "domain": "scripts_tasks",
+      "recommended_by": "Z-Traffic Minibots + operator ritual",
+      "signal": "GREEN",
+      "risk_class": "low",
+      "autonomy_level": "L1",
+      "status": "pending",
+      "required_checks": [
+        "npm run z:traffic",
+        "npm run z:car2",
+        "npm run verify:md"
+      ],
+      "related_reports": [
+        "data/reports/z_traffic_minibots_status.json",
+        "data/reports/z_car2_similarity_report.json"
+      ],
+      "related_docs": [
+        "docs/Z_TRAFFIC_MINIBOTS.md",
+        "docs/AMK_GOKU_NOTIFICATIONS_PANEL.md"
+      ],
+      "rollback_note": "Receipts are regenerable; no repo mutation from panel.",
+      "human_confirmation_required": false,
+      "forbidden_actions": [
+        "auto_merge",
+        "deploy",
+        "bridge_execution",
+        "billing_change"
+      ]
+    },
+    {
+      "id": "lane_zuno_truth_refresh",
+      "title": "Refresh Zuno snapshot + truth alignment after MD/registry edits",
+      "domain": "zuno_registry",
+      "recommended_by": "Zuno ingest + A2b alignment receipts",
+      "signal": "YELLOW",
+      "risk_class": "medium",
+      "autonomy_level": "L1",
+      "status": "pending",
+      "required_checks": [
+        "npm run zuno:snapshot",
+        "npm run zuno:snapshot:truth-align",
+        "npm run z:monster:registry-verify"
+      ],
+      "related_reports": [
+        "data/reports/zuno_truth_layer_alignment.json",
+        "data/reports/z_monster_project_registry_verify.json"
+      ],
+      "related_docs": [
+        "docs/ZUNO_A1_SNAPSHOT_INGESTION.md",
+        "docs/ZUNO_A2_SNAPSHOT_DIFF.md"
+      ],
+      "rollback_note": "Revert MD or JSON and re-run ingest; baseline diff may need zuno:snapshot:baseline when intentional.",
+      "human_confirmation_required": true,
+      "forbidden_actions": [
+        "auto_phase_advance",
+        "autonomy_loop",
+        "hub_http_listener"
+      ]
+    },
+    {
+      "id": "lane_susbv_review",
+      "title": "Review Z-SUSBV validation band before commercial doc expansion",
+      "domain": "commercial_governance",
+      "recommended_by": "Z-SUSBV validator + entitlement catalog posture",
+      "signal": "BLUE",
+      "risk_class": "sacred",
+      "autonomy_level": "L3",
+      "status": "pending",
+      "required_checks": [
+        "npm run z:susbv",
+        "read docs/commercial/Z_SUSBV_PRICE_CLAIM_POLICY.md"
+      ],
+      "related_reports": [
+        "data/reports/z_susbv_validation_report.json"
+      ],
+      "related_docs": [
+        "docs/commercial/Z_SUSBV_SANCTUARY_SELF_BENCHMARKS_VALIDATION.md",
+        "docs/COMMERCIAL-READINESS.md"
+      ],
+      "rollback_note": "AMK holds lane until evidence and DRP posture are satisfied; no SKU or public copy from panel.",
+      "human_confirmation_required": true,
+      "forbidden_actions": [
+        "pricing_publish",
+        "provider_call",
+        "live_research",
+        "auto_rewrite_copy"
+      ]
+    },
+    {
+      "id": "lane_z_aware_ecosystem_digest",
+      "title": "Run Z-AWARE-1 ecosystem awareness check after registry or capsule edits",
+      "domain": "governance",
+      "recommended_by": "Z-AWARE-1 Universal Ecosystem Awareness Spine",
+      "signal": "GREEN",
+      "risk_class": "low",
+      "autonomy_level": "L1",
+      "status": "pending",
+      "required_checks": [
+        "npm run z:ecosystem:awareness",
+        "read data/reports/z_ecosystem_awareness_report.md"
+      ],
+      "related_reports": [
+        "data/reports/z_ecosystem_awareness_report.json",
+        "data/reports/z_ecosystem_awareness_report.md"
+      ],
+      "related_docs": [
+        "docs/Z_ECOSYSTEM_AWARENESS_SPINE.md",
+        "docs/Z_ECOSYSTEM_ALERT_POLICY.md"
+      ],
+      "rollback_note": "Reports are regenerable; promote RED/BLUE rows from report.notification_candidates into this file only when AMK wants interrupt lanes.",
+      "human_confirmation_required": false,
+      "forbidden_actions": [
+        "auto_notify_external",
+        "deploy",
+        "bridge_execution",
+        "provider_call"
+      ]
+    },
+    {
+      "id": "lane_z_aware_candidate_blue_template",
+      "title": "[When report shows BLUE] AMK decision from Z-AWARE-1 notification_candidates",
+      "domain": "governance",
+      "recommended_by": "Z-AWARE-1 alert policy (manual promotion)",
+      "signal": "BLUE",
+      "risk_class": "medium",
+      "autonomy_level": "L3",
+      "status": "held",
+      "required_checks": [
+        "Open data/reports/z_ecosystem_awareness_report.json",
+        "Copy candidate into a new pending lane if needed"
+      ],
+      "related_reports": [
+        "data/reports/z_ecosystem_awareness_report.json"
+      ],
+      "related_docs": [
+        "docs/AMK_GOKU_NOTIFICATIONS_PANEL.md",
+        "docs/Z_ECOSYSTEM_ALERT_POLICY.md"
+      ],
+      "rollback_note": "Leave as held until a BLUE candidate appears in the report; do not auto-page.",
+      "human_confirmation_required": true,
+      "forbidden_actions": [
+        "auto_dispatch",
+        "deploy",
+        "billing_change"
+      ]
+    },
+    {
+      "id": "lane_z_aware_candidate_red_template",
+      "title": "[When report shows RED] Required gate failure from Z-AWARE-1",
+      "domain": "governance",
+      "recommended_by": "Z-AWARE-1 alert policy (manual promotion)",
+      "signal": "RED",
+      "risk_class": "high",
+      "autonomy_level": "L5",
+      "status": "held",
+      "required_checks": [
+        "Fix registry/capsule issues",
+        "npm run z:ecosystem:awareness until overall GREEN/YELLOW/BLUE"
+      ],
+      "related_reports": [
+        "data/reports/z_ecosystem_awareness_report.json"
+      ],
+      "related_docs": [
+        "docs/Z_ECOSYSTEM_AWARENESS_SPINE.md"
+      ],
+      "rollback_note": "Held by default so YELLOW noise does not duplicate; escalate when overall_signal is RED.",
+      "human_confirmation_required": true,
+      "forbidden_actions": [
+        "ignore_red_required_project",
+        "auto_merge"
+      ]
+    },
+    {
+      "id": "lane_z_api_spine_digest",
+      "title": "Run Z-API-SPINE-1 check after spine registry or flow policy edits",
+      "domain": "api_registry",
+      "recommended_by": "Z-API-SPINE-1 Universal API Power Cell",
+      "signal": "GREEN",
+      "risk_class": "low",
+      "autonomy_level": "L1",
+      "status": "pending",
+      "required_checks": [
+        "npm run z:api:spine",
+        "read data/reports/z_api_spine_report.md"
+      ],
+      "related_reports": [
+        "data/reports/z_api_spine_report.json",
+        "data/reports/z_api_spine_report.md"
+      ],
+      "related_docs": [
+        "docs/Z_API_SPINE_POWER_CELL.md",
+        "docs/Z_API_COMMUNICATION_FLOW_POLICY.md",
+        "docs/AMK_GOKU_NOTIFICATIONS_PANEL.md"
+      ],
+      "rollback_note": "Reports are regenerable; registry JSON is source truth.",
+      "human_confirmation_required": false,
+      "forbidden_actions": [
+        "deploy",
+        "live_gateway",
+        "provider_call",
+        "bridge_execution",
+        "billing_change"
+      ]
+    },
+    {
+      "id": "lane_z_api_spine_candidate_blue_template",
+      "title": "[When report shows BLUE] AMK decision from Z-API-SPINE-1 notification_candidates",
+      "domain": "api_registry",
+      "recommended_by": "Z-API-SPINE-1 alert policy (manual promotion)",
+      "signal": "BLUE",
+      "risk_class": "medium",
+      "autonomy_level": "L3",
+      "status": "held",
+      "required_checks": [
+        "Open data/reports/z_api_spine_report.json",
+        "Copy candidate into a new pending lane if needed"
+      ],
+      "related_reports": [
+        "data/reports/z_api_spine_report.json"
+      ],
+      "related_docs": [
+        "docs/Z_API_SPINE_POWER_CELL.md",
+        "docs/Z_API_COMMUNICATION_FLOW_POLICY.md",
+        "docs/AMK_GOKU_NOTIFICATIONS_PANEL.md"
+      ],
+      "rollback_note": "Held by default; promote only when a BLUE row appears in notification_candidates_red_blue_only.",
+      "human_confirmation_required": true,
+      "forbidden_actions": [
+        "auto_dispatch",
+        "deploy",
+        "gateway_bind"
+      ]
+    },
+    {
+      "id": "lane_z_api_spine_candidate_red_template",
+      "title": "[When report shows RED] Malformed spine row or unsafe collision from Z-API-SPINE-1",
+      "domain": "api_registry",
+      "recommended_by": "Z-API-SPINE-1 alert policy (manual promotion)",
+      "signal": "RED",
+      "risk_class": "high",
+      "autonomy_level": "L5",
+      "status": "held",
+      "required_checks": [
+        "Fix data/z_api_spine_registry.json or policy",
+        "npm run z:api:spine until overall non-RED"
+      ],
+      "related_reports": [
+        "data/reports/z_api_spine_report.json"
+      ],
+      "related_docs": [
+        "docs/Z_API_SPINE_POWER_CELL.md",
+        "docs/PHASE_Z_API_SPINE_1_GREEN_RECEIPT.md"
+      ],
+      "rollback_note": "Revert last registry edit or relax incorrect collision; re-run validator.",
+      "human_confirmation_required": true,
+      "forbidden_actions": [
+        "ignore_red_collision",
+        "auto_merge",
+        "live_mesh"
+      ]
+    },
+    {
+      "id": "lane_z_ssws_requirements_digest",
+      "title": "Run Z-SSWS-LINK-1 check after workspace spine or launch policy edits",
+      "domain": "workspace_spine",
+      "recommended_by": "Z-SSWS-LINK-1 Workspace Spine Launch Requirements Registry",
+      "signal": "GREEN",
+      "risk_class": "low",
+      "autonomy_level": "L1",
+      "status": "pending",
+      "required_checks": [
+        "npm run z:ssws:requirements",
+        "read data/reports/z_ssws_launch_requirements_report.md"
+      ],
+      "related_reports": [
+        "data/reports/z_ssws_launch_requirements_report.json",
+        "data/reports/z_ssws_launch_requirements_report.md"
+      ],
+      "related_docs": [
+        "docs/Z_SSWS_WORKSPACE_SPINE.md",
+        "docs/Z_SSWS_LAUNCH_REQUIREMENTS_POLICY.md",
+        "docs/AMK_GOKU_NOTIFICATIONS_PANEL.md"
+      ],
+      "rollback_note": "Reports are regenerable; registry JSON is source truth.",
+      "human_confirmation_required": false,
+      "forbidden_actions": [
+        "extension_auto_install",
+        "server_auto_start",
+        "auto_launch",
+        "deploy",
+        "bridge_execution"
+      ]
+    },
+    {
+      "id": "lane_z_ssws_candidate_blue_template",
+      "title": "[When report shows BLUE] AMK decision from Z-SSWS-LINK-1 notification_candidates",
+      "domain": "workspace_spine",
+      "recommended_by": "Z-SSWS-LINK-1 alert policy (manual promotion)",
+      "signal": "BLUE",
+      "risk_class": "medium",
+      "autonomy_level": "L3",
+      "status": "held",
+      "required_checks": [
+        "Open data/reports/z_ssws_launch_requirements_report.json",
+        "Copy candidate into a new pending lane if needed"
+      ],
+      "related_reports": [
+        "data/reports/z_ssws_launch_requirements_report.json"
+      ],
+      "related_docs": [
+        "docs/Z_SSWS_WORKSPACE_SPINE.md",
+        "docs/Z_SSWS_LAUNCH_REQUIREMENTS_POLICY.md",
+        "docs/AMK_GOKU_NOTIFICATIONS_PANEL.md"
+      ],
+      "rollback_note": "Held by default; promote when BLUE appears in notification_candidates_red_blue_only.",
+      "human_confirmation_required": true,
+      "forbidden_actions": [
+        "auto_launch",
+        "extension_auto_install",
+        "server_auto_start"
+      ]
+    },
+    {
+      "id": "lane_z_ssws_candidate_red_template",
+      "title": "[When report shows RED] Malformed SSWS row or unsafe collision from Z-SSWS-LINK-1",
+      "domain": "workspace_spine",
+      "recommended_by": "Z-SSWS-LINK-1 alert policy (manual promotion)",
+      "signal": "RED",
+      "risk_class": "high",
+      "autonomy_level": "L5",
+      "status": "held",
+      "required_checks": [
+        "Fix data/z_ssws_workspace_spine_registry.json or policy",
+        "npm run z:ssws:requirements until overall non-RED"
+      ],
+      "related_reports": [
+        "data/reports/z_ssws_launch_requirements_report.json"
+      ],
+      "related_docs": [
+        "docs/Z_SSWS_WORKSPACE_SPINE.md",
+        "docs/PHASE_Z_SSWS_LINK_1_GREEN_RECEIPT.md"
+      ],
+      "rollback_note": "Revert registry edit; re-run validator.",
+      "human_confirmation_required": true,
+      "forbidden_actions": [
+        "ignore_red_required_row",
+        "auto_merge",
+        "auto_launch"
+      ]
+    },
+    {
+      "id": "lane_z_amk_gtai_strategy_council",
+      "title": "Read Z-AMK-GTAI strategy council report before the next lane",
+      "domain": "governance",
+      "recommended_by": "Z-AMK-GTAI-1 read-only rollup of hub evidence reports",
+      "signal": "YELLOW",
+      "risk_class": "low",
+      "autonomy_level": "L1",
+      "status": "pending",
+      "required_checks": [
+        "npm run z:amk:strategy",
+        "Read data/reports/z_amk_gtai_strategy_report.md"
+      ],
+      "related_reports": [
+        "data/reports/z_amk_gtai_strategy_report.json",
+        "data/reports/z_amk_gtai_strategy_report.md"
+      ],
+      "related_docs": [
+        "docs/Z_AMK_GTAI_STRATEGY_COUNCIL.md",
+        "docs/PHASE_Z_AMK_GTAI_1_GREEN_RECEIPT.md",
+        "docs/AMK_GOKU_NOTIFICATIONS_PANEL.md"
+      ],
+      "rollback_note": "Delete regenerable strategy report files only; council JSON is source doctrine.",
+      "human_confirmation_required": false,
+      "forbidden_actions": [
+        "deploy",
+        "provider_call",
+        "bridge_exec",
+        "billing_change",
+        "auto_merge",
+        "auto_fix"
+      ]
+    },
+    {
+      "id": "lane_z_ide_fusion_candidate_blue_template",
+      "title": "[When report shows BLUE] AMK decision from Z-IDE-FUSION report",
+      "domain": "governance",
+      "recommended_by": "Z-IDE-FUSION-1 report (manual promotion)",
+      "signal": "BLUE",
+      "risk_class": "medium",
+      "autonomy_level": "L3",
+      "status": "held",
+      "required_checks": [
+        "Open data/reports/z_ide_fusion_report.json",
+        "Copy BLUE candidate into a pending lane if needed"
+      ],
+      "related_reports": [
+        "data/reports/z_ide_fusion_report.json"
+      ],
+      "related_docs": [
+        "docs/Z_IDE_FUSION_WORKFLOW_CONTROL.md",
+        "docs/AMK_GOKU_NOTIFICATIONS_PANEL.md"
+      ],
+      "rollback_note": "Held by default; promote only when fusion report asks for AMK decision.",
+      "human_confirmation_required": true,
+      "forbidden_actions": [
+        "auto_dispatch",
+        "deploy",
+        "provider_call",
+        "auto_launch"
+      ]
+    },
+    {
+      "id": "lane_z_ide_fusion_candidate_red_template",
+      "title": "[When report shows RED] Wrong root or unsafe IDE conflict from Z-IDE-FUSION",
+      "domain": "governance",
+      "recommended_by": "Z-IDE-FUSION-1 report (manual promotion)",
+      "signal": "RED",
+      "risk_class": "high",
+      "autonomy_level": "L5",
+      "status": "held",
+      "required_checks": [
+        "Fix root/conflict issue",
+        "npm run z:ide:fusion until overall non-RED"
+      ],
+      "related_reports": [
+        "data/reports/z_ide_fusion_report.json"
+      ],
+      "related_docs": [
+        "docs/Z_IDE_FUSION_WORKFLOW_CONTROL.md",
+        "docs/VS_FALLBACK_1_VSCODE_OPERATING_MODE.md"
+      ],
+      "rollback_note": "Revert unsafe changes, restore handoff discipline, and rerun fusion report.",
+      "human_confirmation_required": true,
+      "forbidden_actions": [
+        "ignore_red_conflict",
+        "auto_merge",
+        "deploy",
+        "bridge_exec"
+      ]
+    },
+    {
+      "id": "lane_z_cadence_candidate_blue_template",
+      "title": "[When cadence shows BLUE] AMK decision required for cadence follow-up",
+      "domain": "governance",
+      "recommended_by": "Z-CADENCE-1 report (manual promotion)",
+      "signal": "BLUE",
+      "risk_class": "medium",
+      "autonomy_level": "L3",
+      "status": "held",
+      "required_checks": [
+        "Open data/reports/z_cadence_cycle_report.json",
+        "Confirm next_follow_up AMK_DECISION_REQUIRED and copy candidate into pending lane if needed"
+      ],
+      "related_reports": [
+        "data/reports/z_cadence_cycle_report.json"
+      ],
+      "related_docs": [
+        "docs/Z_CADENCE_REAL_CYCLE_RUNNER.md",
+        "docs/Z_LOGICAL_BRAINS_MONITORING_CADENCE.md"
+      ],
+      "rollback_note": "Held by default; promote only when cadence report asks for AMK decision.",
+      "human_confirmation_required": true,
+      "forbidden_actions": [
+        "auto_dispatch",
+        "deploy",
+        "provider_call",
+        "auto_launch"
+      ]
+    },
+    {
+      "id": "lane_z_cadence_candidate_red_template",
+      "title": "[When cadence shows RED] Cadence blocked state from required check failure or forbidden lane",
+      "domain": "governance",
+      "recommended_by": "Z-CADENCE-1 report (manual promotion)",
+      "signal": "RED",
+      "risk_class": "high",
+      "autonomy_level": "L5",
+      "status": "held",
+      "required_checks": [
+        "Fix failing required checks and rerun cadence",
+        "npm run z:cadence:logical-brains until overall non-RED"
+      ],
+      "related_reports": [
+        "data/reports/z_cadence_cycle_report.json"
+      ],
+      "related_docs": [
+        "docs/Z_CADENCE_REAL_CYCLE_RUNNER.md",
+        "docs/PHASE_Z_CADENCE_1_GREEN_RECEIPT.md"
+      ],
+      "rollback_note": "Revert unsafe edits, keep cadence read-only, rerun required checks.",
+      "human_confirmation_required": true,
+      "forbidden_actions": [
+        "ignore_red_block",
+        "auto_merge",
+        "deploy",
+        "bridge_exec"
+      ]
+    },
+    {
+      "id": "lane_z_cadence_ready_review_template",
+      "title": "[When cadence shows READY_REVIEW] Draft HUB-2.1 monthly review template from evidence",
+      "domain": "governance",
+      "recommended_by": "Z-CADENCE-1 stable green rule (manual promotion)",
+      "signal": "GREEN",
+      "risk_class": "low",
+      "autonomy_level": "L1",
+      "status": "held",
+      "required_checks": [
+        "Confirm two consecutive GREEN cadence cycles",
+        "Draft HUB-2.1 monthly review template from reports only"
+      ],
+      "related_reports": [
+        "data/reports/z_cadence_cycle_report.json",
+        "data/reports/z_cadence_cycle_report.md"
+      ],
+      "related_docs": [
+        "docs/Z_CADENCE_REAL_CYCLE_RUNNER.md",
+        "docs/Z_LOGICAL_BRAINS_HUB_REFERENCE.md"
+      ],
+      "rollback_note": "Return to CONTINUE_CADENCE if stable green rule no longer holds.",
+      "human_confirmation_required": true,
+      "forbidden_actions": [
+        "ready_to_deploy",
+        "public_release_approval",
+        "runtime_bridge_enable"
+      ]
+    },
+    {
+      "id": "z_logical_brains_cadence_blocked_red",
+      "title": "Logical Brains cadence blocked (RED)",
+      "domain": "governance",
+      "recommended_by": "Z-CADENCE-1 Real Cycle Runner",
+      "signal": "RED",
+      "risk_class": "high",
+      "autonomy_level": "L3",
+      "status": "pending",
+      "required_checks": [
+        "npm run z:cadence:logical-brains"
+      ],
+      "related_reports": [
+        "data/reports/z_cadence_cycle_report.json",
+        "data/reports/z_cadence_cycle_report.md"
+      ],
+      "related_docs": [
+        "docs/Z_CADENCE_REAL_CYCLE_RUNNER.md",
+        "docs/Z_LOGICAL_BRAINS_MONITORING_CADENCE.md"
+      ],
+      "rollback_note": "Delete this notification candidate and rerun cadence.",
+      "human_confirmation_required": true,
+      "forbidden_actions": [
+        "deploy",
+        "bridge_execution",
+        "provider_call",
+        "child_data_collection",
+        "vault_runtime_enable"
+      ]
+    }
+  ]
+}

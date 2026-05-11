@@ -1,0 +1,152 @@
+{
+  "generated_at": "2026-04-26T01:49:12.453Z",
+  "status": "green",
+  "device_change_detected": false,
+  "device_change_summary": "no_change",
+  "analyzer_age_minutes": 0,
+  "security_age_minutes": 0,
+  "analyzer_status": "amber",
+  "security_status": "green",
+  "pending_approvals": 0,
+  "device_fingerprint": {
+    "hash": "65010bb3254bb4d07ef8fdb832537c9ad33be0c513b9624c00b6f717038613a4",
+    "material": {
+      "platform": "win32",
+      "release": "10.0.26200",
+      "cpu_model": "AMD Ryzen 7 7840HS w/ Radeon 780M Graphics     ",
+      "cpu_cores": 16,
+      "memory_total_gb": 61.73,
+      "storage_total_gb": 951.87,
+      "storage_free_gb": 778.21,
+      "device_classes": [
+        {
+          "Name": "System",
+          "Count": 70
+        },
+        {
+          "Name": "Bluetooth",
+          "Count": 30
+        },
+        {
+          "Name": "USB",
+          "Count": 16
+        },
+        {
+          "Name": "Net",
+          "Count": 16
+        },
+        {
+          "Name": "Processor",
+          "Count": 16
+        },
+        {
+          "Name": "MEDIA",
+          "Count": 15
+        },
+        {
+          "Name": "SoftwareComponent",
+          "Count": 8
+        },
+        {
+          "Name": "HIDClass",
+          "Count": 8
+        },
+        {
+          "Name": "SoftwareDevice",
+          "Count": 8
+        },
+        {
+          "Name": "AudioEndpoint",
+          "Count": 5
+        },
+        {
+          "Name": "Volume",
+          "Count": 5
+        },
+        {
+          "Name": "Ports",
+          "Count": 4
+        },
+        {
+          "Name": "PrintQueue",
+          "Count": 3
+        },
+        {
+          "Name": "SCSIAdapter",
+          "Count": 3
+        },
+        {
+          "Name": "AudioProcessingObject",
+          "Count": 2
+        },
+        {
+          "Name": "Computer",
+          "Count": 2
+        },
+        {
+          "Name": "SecurityDevices",
+          "Count": 2
+        },
+        {
+          "Name": "Monitor",
+          "Count": 2
+        },
+        {
+          "Name": "Keyboard",
+          "Count": 1
+        },
+        {
+          "Name": "DiskDrive",
+          "Count": 1
+        },
+        {
+          "Name": "Display",
+          "Count": 1
+        },
+        {
+          "Name": "Firmware",
+          "Count": 1
+        },
+        {
+          "Name": "Mouse",
+          "Count": 1
+        }
+      ],
+      "adapters": [
+        {
+          "Name": "Ethernet 4",
+          "Status": "Up",
+          "LinkSpeed": "100 Mbps"
+        },
+        {
+          "Name": "Wi-Fi 3",
+          "Status": "Disconnected",
+          "LinkSpeed": "0 bps"
+        },
+        {
+          "Name": "Bluetooth Network Connection 2",
+          "Status": "Disconnected",
+          "LinkSpeed": "3 Mbps"
+        },
+        {
+          "Name": "Ethernet 3",
+          "Status": "Up",
+          "LinkSpeed": "100 Mbps"
+        },
+        {
+          "Name": "Local Area Connection",
+          "Status": "Disconnected",
+          "LinkSpeed": "10 Gbps"
+        }
+      ],
+      "gpus": [
+        {
+          "Name": "AMD Radeon 780M Graphics",
+          "DriverVersion": "32.0.21030.2001"
+        }
+      ]
+    }
+  },
+  "actions": [],
+  "notes": "AnyDevices posture refreshed and aligned."
+}

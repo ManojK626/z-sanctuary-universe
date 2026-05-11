@@ -1,0 +1,4 @@
+{"ts":"2026-04-26T17:30:35.814Z","predictive_run_at":"2026-04-26T17:30:35.331Z","prediction_id":"stability","prediction":"stability_hold","confidence":0.50254,"actual_outcome":"held","was_correct":true,"inconclusive":false}
+{"ts":"2026-04-26T17:30:35.815Z","predictive_run_at":"2026-04-26T17:30:35.331Z","prediction_id":"convergence","prediction":"convergence","confidence":0.5320320000000001,"actual_outcome":"converging","was_correct":true,"inconclusive":false}
+{"ts":"2026-05-03T14:39:05.286Z","predictive_run_at":"2026-05-03T14:39:04.776Z","prediction_id":"stability","prediction":"stability_hold","confidence":0.50508,"actual_outcome":"held","was_correct":true,"inconclusive":false}
+{"ts":"2026-05-03T14:39:05.287Z","predictive_run_at":"2026-05-03T14:39:04.776Z","prediction_id":"convergence","prediction":"convergence","confidence":0.534064,"actual_outcome":"converging","was_correct":true,"inconclusive":false}

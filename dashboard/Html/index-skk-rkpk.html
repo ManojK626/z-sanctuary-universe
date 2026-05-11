@@ -1,0 +1,2739 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Guard: Critical dashboard entrypoint. Review -> Verify -> Apply required. -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="z-project-id" content="ZSanctuary_Universe" />
+    <meta name="z-dashboard-role" content="main-dashboard" />
+    <meta name="z-project-family" content="Z-Sanctuary Universe" />
+    <title>Z-Sanctuary Universe · SKK &amp; RKPK · Dashboard (Unified)</title>
+    <link rel="stylesheet" href="../../interface/z_style.css" />
+    <link rel="stylesheet" href="../styles/lumina-theme.css" />
+    <link rel="stylesheet" href="../styles/lumina-components.css" />
+    <link rel="stylesheet" href="../styles/zuno-hand.css" />
+    <link rel="stylesheet" href="../styles/z-commander-panel.css" />
+    <link rel="stylesheet" href="../styles/z-universe-navigator.css" />
+    <link rel="stylesheet" href="../styles/amk-goku-notifications.css" />
+    <link rel="stylesheet" href="../styles/amk-project-indicators.css" />
+    <link rel="stylesheet" href="../styles/z-display-morph-engine.css" />
+    <link rel="stylesheet" href="../styles/z-root-guardian-coordination.css" />
+    <script defer src="../scripts/z-display-morph-engine.js"></script>
+  </head>
+  <body class="z-dashboard-organism" data-display-mode="standard">
+    <!-- Z-Display Morph: apply saved mode synchronously before paint (same key/storage as morph engine) -->
+    <script>
+      (function () {
+        var KEY = 'zSanctuaryDisplayMorphMode';
+        var RE =
+          /^(standard|classic|fusion|business|workstation|game|creator|presentation|eco|low-sensory)$/i;
+        try {
+          var raw = localStorage.getItem(KEY);
+          var m = raw ? String(raw).toLowerCase() : '';
+          if (!m || !RE.test(m)) return;
+          document.body.dataset.displayMode = m;
+          document.body.classList.toggle('z-morph-low-sensory-active', m === 'low-sensory');
+        } catch (_) {
+          /* private mode */
+        }
+      })();
+    </script>
+    <a class="z-skip-link" href="#zHiveRoot">Skip to main dashboard</a>
+    <header
+      class="z-index-identity-intro"
+      data-z-project="ZSanctuary_Universe"
+      style="
+        padding: 0.4rem 0.85rem;
+        background: rgba(255, 255, 255, 0.06);
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+      "
+    >
+      <h1 style="margin: 0; font-size: 1.02rem; font-weight: 700">Z-Sanctuary Universe</h1>
+      <p style="margin: 0.25rem 0 0; font-size: 0.8rem; opacity: 0.9">
+        Main Dashboard · Project folder: ZSanctuary_Universe
+      </p>
+      <p style="margin: 0.35rem 0 0; font-size: 0.74rem; opacity: 0.88">
+        <a
+          href="./z-universe-ecosphere-map.html"
+          style="color: inherit; font-weight: 600; text-decoration: underline"
+          >Living Ecosphere Map</a
+        >
+        — read-only catalog view (serve hub over HTTP for JSON fetch).
+        <br />
+        <a
+          href="./amk-goku-main-control.html"
+          style="color: inherit; font-weight: 600; text-decoration: underline"
+          >AMK-Goku Main Control Map</a
+        >
+        — AMK-MAP-1 compass (read-only; links + JSON fetch only).
+        <br />
+        <a
+          href="./z-legal-lawyer-workstation.html"
+          style="color: inherit; font-weight: 600; text-decoration: underline"
+          >Z-Lawyer Command Workstation (UX-2)</a
+        >
+        — compact protector cockpit: legal/product/IP governance visibility (read-only; no runtime authority).
+        <br />
+        <a
+          href="#zCompanionRootSevenLayer"
+          style="color: inherit; font-weight: 600; text-decoration: underline"
+          >Z-ROOT-7 seven-guardian constellation</a
+        >
+        — embedded in the <strong>ZUNO-4ROOT Guardian</strong> panel under the four-root canvas (or tap
+        <strong>7·ROOT</strong> lower-right). Hard-refresh (Ctrl+F5) if the HTML file was just updated.
+      </p>
+    </header>
+    <!-- Z-Living Pulse: butterfly particles background (behind all content) -->
+    <div id="zLivingPulseWrap" class="z-living-pulse-wrap" aria-hidden="true">
+      <canvas id="zLivingPulseCanvas" class="z-living-pulse-canvas"></canvas>
+    </div>
+    <div id="zConsole"></div>
+    <!-- Top indicator panel: Z-SSWS, search, nav, Low Light, Status Rail toggle -->
+    <div id="zTopIndicatorPanel" class="z-top-indicator-panel" aria-label="Top indicator panel">
+      <div id="zSSWSBanner" class="z-ssws-banner">Z-SSWS: inactive · SKK &amp; RKPK · Dashboard Unified</div>
+      <div
+        id="zDashboardSearch"
+        class="z-dashboard-search"
+        role="search"
+        aria-label="Dashboard search"
+      >
+      <input
+        id="zDashboardSearchInput"
+        class="z-input"
+        type="search"
+        placeholder="Search panels, modules, logs..."
+        autocomplete="off"
+        spellcheck="false"
+      />
+      <button id="zDashboardSearchBtn" class="z-button z-button-subtle" type="button">Go</button>
+      <button id="zDashboardSearchClearBtn" class="z-button z-button-subtle" type="button">
+        Clear
+      </button>
+      <div
+        id="zTopRailInlineNav"
+        class="z-top-tab-inline-nav"
+        aria-label="Z top rail quick navigation"
+      >
+        <button
+          id="zTopRailInlineNavLeft"
+          type="button"
+          class="z-top-tab-nav z-top-tab-nav-inline-btn"
+          aria-label="Z Scroll top rail left"
+          title="Z Move top rail left"
+        >
+          Z◀
+        </button>
+        <button
+          id="zTopRailInlineNavRight"
+          type="button"
+          class="z-top-tab-nav z-top-tab-nav-inline-btn"
+          aria-label="Z Scroll top rail right"
+          title="Z Move top rail right"
+        >
+          Z▶
+        </button>
+      </div>
+      <div id="zDashboardSearchSuggest" class="z-dashboard-search-suggest" aria-live="polite"></div>
+      <button
+        id="zLowLightToggle"
+        class="z-button z-button-subtle"
+        type="button"
+        title="Toggle low-light reading mode"
+        style="margin-left: 0.5rem"
+      >
+        Low Light Off
+      </button>
+      <button
+        id="zStatusRailToggleBtn"
+        class="z-button z-button-subtle z-status-rail-toggle"
+        type="button"
+      >
+        Status Rail: On
+      </button>
+      <a
+        id="zBuildGateMatrixTopLink"
+        class="z-button z-button-subtle"
+        href="../../docs/Z-BUILD-GATE-MATRIX.md"
+        target="_blank"
+        rel="noopener noreferrer"
+        style="margin-left: 0.5rem; text-decoration: none; display: inline-flex; align-items: center; gap: 0.2rem; white-space: nowrap"
+        title="Decide BUILD NOW / PREPARE / WAIT / BLOCK before any module build."
+        >🧭 Build Gate Matrix</a
+      >
+      <div
+        class="z-top-a11y-strip"
+        role="group"
+        aria-labelledby="zTopA11yStripLabel"
+        title="Same options as Control Centre — Display and accessibility"
+      >
+        <span id="zTopA11yStripLabel" class="z-top-a11y-strip-title">Display</span>
+        <label class="z-top-a11y-chip">
+          <input type="checkbox" data-z-a11y="large" />
+          <span>Large</span>
+        </label>
+        <label class="z-top-a11y-chip">
+          <input type="checkbox" data-z-a11y="contrast" />
+          <span>Contrast</span>
+        </label>
+        <label class="z-top-a11y-chip">
+          <input type="checkbox" data-z-a11y="focus" />
+          <span>Focus</span>
+        </label>
+        <label class="z-top-a11y-chip">
+          <input type="checkbox" data-z-a11y="reduceDecor" />
+          <span>Calm</span>
+        </label>
+      </div>
+      <div class="z-display-morph-strip" role="group" aria-label="Z-Display Morph Engine">
+        <label for="zDisplayMorphSelect" class="z-display-morph-label">Morph</label>
+        <select
+          id="zDisplayMorphSelect"
+          class="z-input z-display-morph-select"
+          title="Z-Display Morph Engine — one system, many visual realities"
+        >
+          <option value="standard">Standard</option>
+          <option value="classic">Classic</option>
+          <option value="fusion">Fusion</option>
+          <option value="business">Business</option>
+          <option value="workstation">Workstation</option>
+          <option value="game">Game Mode</option>
+          <option value="creator">Creator Mode</option>
+          <option value="presentation">Presentation Mode</option>
+          <option value="eco">Eco Mode</option>
+          <option value="low-sensory">Low-Sensory Mode</option>
+        </select>
+        <span
+          id="zDisplayMorphBadge"
+          class="edge-status-badge z-display-morph-badge"
+          title="Active Z-Display Morph mode"
+          >Display: Standard</span
+        >
+      </div>
+    </div>
+    </div>
+    <div id="zDisplayMorphReceipt" class="z-display-morph-receipt" role="status" aria-live="polite" hidden></div>
+    <div id="zStatusRail" class="z-status-rail">
+      <div id="zSSWSStatusPanel" class="z-ssws-status-panel">
+        <div class="z-ssws-status-title">Z-SSWS Status</div>
+        <div id="zSSWSStatusBody" class="z-ssws-status-body">Loading…</div>
+      </div>
+      <div
+        id="zAutoRunAlert"
+        class="z-autorun-alert"
+        role="status"
+        aria-live="polite"
+        style="display: none"
+      >
+        Z Auto-Run is blocked. Check VS Code auto-tasks and run the audit.
+      </div>
+      <div id="zAutoRunStatusPanel" class="z-ssws-status-panel z-autorun-status-panel">
+        <div class="z-ssws-status-title">Z Auto-Run</div>
+        <div id="zAutoRunStatusBody" class="z-ssws-status-body">Loading…</div>
+        <button
+          id="zAutoRunAuditBtn"
+          class="z-button z-button-subtle"
+          type="button"
+          style="margin-top: 0.35rem"
+        >
+          Run Audit Now
+        </button>
+      </div>
+      <div id="zPendingAuditPanel" class="z-ssws-status-panel z-pending-audit-panel">
+        <div class="z-ssws-status-title">Z Pending Audit</div>
+        <div id="zPendingAuditBody" class="z-ssws-status-body">Loading…</div>
+      </div>
+      <div id="zZunoTrendPanel" class="z-ssws-status-panel z-zuno-trend-panel">
+        <div class="z-ssws-status-title">Zuno 7-Day Trend</div>
+        <div id="zZunoTrendBody" class="z-ssws-status-body">Loading…</div>
+      </div>
+      <div id="zExecutionEnforcerPanel" class="z-ssws-status-panel z-execution-enforcer-panel">
+        <div class="z-ssws-status-title">Z-Execution Enforcer</div>
+        <div id="zExecutionEnforcerBody" class="z-ssws-status-body">Loading…</div>
+      </div>
+      <div id="zBridgeIntelligencePanel" class="z-ssws-status-panel z-bridge-intelligence-panel">
+        <div class="z-ssws-status-title">Z-Bridge Intelligence</div>
+        <div id="zBridgeIntelligenceBody" class="z-ssws-status-body">Loading…</div>
+      </div>
+      <div id="zSSWSEcosystemHealthPanel" class="z-ssws-status-panel z-ssws-ecosystem-health-panel">
+        <div class="z-ssws-status-title">Z-SSWS Ecosystem Health</div>
+        <div id="zSSWSEcosystemHealthBody" class="z-ssws-status-body">Loading…</div>
+      </div>
+      <div id="zStorageHygienePanel" class="z-ssws-status-panel z-storage-hygiene-panel">
+        <div class="z-ssws-status-title">Z Storage Hygiene</div>
+        <div id="zStorageHygieneBody" class="z-ssws-status-body">Loading…</div>
+      </div>
+      <div id="zAnyDevicesPanel" class="z-ssws-status-panel z-anydevices-panel">
+        <div class="z-ssws-status-title">Z AnyDevices</div>
+        <div id="zAnyDevicesBody" class="z-ssws-status-body">Loading…</div>
+      </div>
+      <div id="zCycleIndicatorPanel" class="z-ssws-status-panel z-cycle-indicator-panel">
+        <div class="z-ssws-status-title">Z Indication Cycles</div>
+        <div id="zCycleIndicatorBody" class="z-ssws-status-body">Loading…</div>
+      </div>
+      <div id="zErrorBudgetPanel" class="z-ssws-status-panel z-error-budget-panel">
+        <div class="z-ssws-status-title">Z Error Budget</div>
+        <div id="zErrorBudgetBody" class="z-ssws-status-body">Loading…</div>
+      </div>
+      <div id="zAutonomousHealthPanel" class="z-ssws-status-panel z-autonomous-health-panel">
+        <div class="z-ssws-status-title">Z-Autonomous AI</div>
+        <div id="zAutonomousHealthBody" class="z-ssws-status-body">Loading…</div>
+      </div>
+      <div id="zFormulaPosturePanel" class="z-ssws-status-panel z-formula-posture-panel">
+        <div class="z-ssws-status-title">Z Formula Posture (DRP)</div>
+        <div id="zFormulaPostureBody" class="z-ssws-status-body">Loading…</div>
+      </div>
+    </div>
+
+    <!-- Dashboard Edge Bars: Top (Indicators Bar) + Bottom (Toolts bar) -->
+    <div
+      id="zTopTabContainer"
+      class="dashboard-edge-bar edge-top"
+      aria-label="Top dashboard quick actions"
+      role="tablist"
+    >
+      <button
+        data-panel="zControlCentrePanel"
+        data-module="core-control-centre"
+        data-label="Control Centre"
+        data-short="CT"
+        title="Z Control Centre — operator home"
+      >
+        Control Centre
+      </button>
+      <button
+        data-panel="zCommanderPanel"
+        data-module="z-commander-daily"
+        data-label="Commander"
+        data-short="CMD"
+        title="AMK-Goku Commander — daily rhythm, health strip, actions"
+      >
+        Commander
+      </button>
+      <button
+        data-panel="zAwarenessPanel"
+        data-module="ai-agent"
+        data-label="AI Assistant"
+        data-short="AI"
+        title="AI Assistant"
+      >
+        AI Assistant
+      </button>
+      <button
+        data-panel="zScreenRecorderPanel"
+        data-module="media"
+        data-label="Images"
+        data-short="IM"
+        title="Images"
+      >
+        Images
+      </button>
+      <button
+        data-panel="zPanelDirectory"
+        data-module="core-status-console"
+        data-label="Panel Directory"
+        data-short="PN"
+        title="Show All / Hide All / Layout presets"
+      >
+        Panel Directory
+      </button>
+      <button
+        data-panel="zCodexSuggestionsPanel"
+        data-module="core-chronicle-hud"
+        data-label="Commit Content"
+        data-short="CC"
+        title="Commit Content"
+      >
+        Commit Content
+      </button>
+      <button
+        data-panel="zInsightLabPanel"
+        data-module="ai-agent-scribe"
+        data-label="AI Reasonance"
+        data-short="AR"
+        title="AI Reasonance"
+      >
+        AI Reasonance
+      </button>
+      <button
+        data-panel="zGovernancePanel"
+        data-module="governance"
+        data-label="Governance Console"
+        data-short="GV"
+        title="Governance Console"
+      >
+        Governance Console
+      </button>
+      <button
+        data-panel="zAutopilotStatusPanel"
+        data-module="autopilot-engine"
+        data-label="Autopilot Status"
+        data-short="AP"
+        title="Autopilot Status"
+      >
+        Autopilot Status
+      </button>
+      <button
+        data-panel="zModuleRegistryPanel"
+        data-module="core-registry"
+        data-label="Module Registry"
+        data-short="MR"
+        title="Module Registry"
+      >
+        Module Registry
+      </button>
+      <button
+        data-panel="zBenchmarksPanel"
+        data-module="benchmarks-adviser"
+        data-label="Benchmarks Adviser"
+        data-short="BA"
+        title="Benchmarks Adviser"
+      >
+        Benchmarks
+      </button>
+      <button
+        data-panel="zLegalHelpPanel"
+        data-module="legal-help"
+        data-label="Legal & Help"
+        data-short="LH"
+        title="Legal, Terms & Help Center"
+      >
+        Legal &amp; Help
+      </button>
+      <button
+        data-panel="zLegalWorkstationPanel"
+        data-module="legal-workstation-readonly"
+        data-label="Lawyer Workstation UX-2"
+        data-short="LW"
+        title="Z-Lawyer Command Workstation UX-2 (read-only)"
+      >
+        Lawyer UX-2
+      </button>
+      <button
+        data-panel="zBlueprintPanel"
+        data-module="z-canvas-blueprint"
+        data-label="Z Blueprint"
+        data-short="ZB"
+        title="Master Register, Checklist & Canvas control"
+      >
+        Blueprint
+      </button>
+      <button
+        data-panel="zLivingPulsePanel"
+        data-module="z-living-pulse"
+        data-label="Z-Living Pulse"
+        data-short="Pulse"
+        title="Butterfly particles & sound — memory of our creations together"
+      >
+        Pulse
+      </button>
+      <button
+        data-panel="zTwinRootsPanel"
+        data-module="z-twin-roots-architecture"
+        data-label="Twin Roots"
+        data-short="TR"
+        title="Z-Twin Roots Architecture (Phase 1 mock)"
+      >
+        Twin Roots
+      </button>
+      <span id="zModuleCoverageBadge" class="edge-status-badge" title="Module registry coverage"
+        >Coverage: --</span
+      >
+      <span id="zPriorityOpenBadge" class="edge-status-badge" title="Priority open count"
+        >Priority: --</span
+      >
+      <span id="zSloHealthBadge" class="edge-status-badge" title="SLO guard health">SLO: --</span>
+      <span id="zExtensionGuardBadge" class="edge-status-badge" title="Extension guard health"
+        >Ext Guard: --</span
+      >
+      <span id="zZunoTrendBadge" class="edge-status-badge" title="Zuno 7-day trend">Zuno: --</span>
+      <span id="zExecutionEnforcerBadge" class="edge-status-badge" title="Z-Execution Enforcer state"
+        >Z-EE: --</span
+      >
+      <span
+        id="zBridgeIntelligenceBadge"
+        class="edge-status-badge"
+        title="Z-Bridge intelligence summary"
+        >Bridge IQ: --</span
+      >
+      <span
+        id="zSSWSEcosystemHealthBadge"
+        class="edge-status-badge"
+        title="SSWS ecosystem health, warnings, and linked systems readiness"
+        >SSWS Link: --</span
+      >
+      <span id="zStorageHygieneBadge" class="edge-status-badge" title="Storage hygiene posture"
+        >Storage: --</span
+      >
+      <span id="zAnyDevicesBadge" class="edge-status-badge" title="AnyDevices capability posture"
+        >Devices: --</span
+      >
+      <span
+        id="zCycleIndicatorBadge"
+        class="edge-status-badge"
+        title="Stabilization cycle indicator"
+        >Cycles: --</span
+      >
+      <span id="zSecuritySentinelBadge" class="edge-status-badge" title="Security sentinel posture"
+        >Sentinel: --</span
+      >
+      <span id="zAutonomousBadge" class="edge-status-badge" title="Z-Autonomous runtime and watchdog status"
+        >Auto AI: --</span
+      >
+      <span
+        id="zFormulaPostureBadge"
+        class="edge-status-badge"
+        title="Z-Ultra / Mega formula posture from guardian report (governance, media, business, Q&amp;A AI)"
+        >Ω: --</span
+      >
+      <span
+        id="zARRBCEBadge"
+        class="edge-status-badge"
+        title="Z-ARRBCE — last bulk core refresh (freshness, system-status, guardian)"
+        >ARRBCE: --</span
+      >
+      <span
+        id="zCrossProjectObserveBadge"
+        class="edge-status-badge"
+        title="Read-only PC-root project observer (no writes to member repos)"
+        >Observe: --</span
+      >
+      <span id="zTwinRootsBadge" class="edge-status-badge" title="Z-Twin Roots Architecture posture"
+        >TwinRoots: --</span
+      >
+      <span id="zZunoHandBadge" class="edge-status-badge" title="Zuno Hand assist layer state"
+        >ZunoHand: --</span
+      >
+      <span id="zHubMiniBotRailWrap" class="z-hub-mini-bot-rail" aria-label="Hub mini-bot status">
+        <span
+          id="zHubAwarenessMiniBadge"
+          class="edge-status-badge edge-status-warn"
+          title="Roll-up attention (guardian + alerts + pending decisions)"
+          >AW:…</span
+        >
+        <span
+          id="zHubSyncMiniBadge"
+          class="edge-status-badge edge-status-good"
+          title="Registry snapshot bot (data/reports/z_bot_sync.json)"
+          >SYNC:…</span
+        >
+        <span
+          id="zHubHealthMiniBadge"
+          class="edge-status-badge edge-status-good"
+          title="Local host health (data/reports/z_bot_health.json)"
+          >HLT:…</span
+        >
+        <span
+          id="zHubDecisionMiniBadge"
+          class="edge-status-badge edge-status-good"
+          title="Decision bot (data/reports/z_bot_decisions.json)"
+          >DC:…</span
+        >
+        <span
+          id="zHubExecutionMiniBadge"
+          class="edge-status-badge edge-status-good"
+          title="Execution result (data/reports/z_bot_execution_result.json)"
+          >EX:…</span
+        >
+        <span
+          id="zHubQosmeiMiniBadge"
+          class="edge-status-badge edge-status-warn"
+          title="QOSMEI fusion vector (data/reports/z_qosmei_core_signal.json)"
+          >QO:…</span
+        >
+        <span
+          id="zHubSpiMiniBadge"
+          class="edge-status-badge edge-status-warn"
+          title="Structural pattern intelligence (data/reports/z_structural_patterns.json)"
+          >SP:…</span
+        >
+        <span
+          id="zHubAdaptiveLearnMiniBadge"
+          class="edge-status-badge edge-status-warn"
+          title="Phase 3 adaptive learning (data/reports/z_adaptive_learning_state.json)"
+          >AL:…</span
+        >
+        <span
+          id="zHubCrossSystemMiniBadge"
+          class="edge-status-badge edge-status-warn"
+          title="Phase 4 cross-system alignment (data/reports/z_cross_system_learning.json)"
+          >CS:…</span
+        >
+        <span
+          id="zHubPredictiveMiniBadge"
+          class="edge-status-badge edge-status-warn"
+          title="Predictive foresight based on real learning cycles (data/reports/z_predictive_intelligence.json)"
+          >PR:…</span
+        >
+        <span
+          id="zHubPredValMiniBadge"
+          class="edge-status-badge edge-status-warn"
+          title="Prediction validation vs actual outcomes (data/reports/z_prediction_validation.json)"
+          >PV:…</span
+        >
+        <span
+          id="zHubGuardianMiniBadge"
+          class="edge-status-badge edge-status-warn"
+          title="PC-root registry vs disk (data/reports/z_bot_guardian.json)"
+          >GRD:…</span
+        >
+        <span
+          id="zHubAlertsMiniBadge"
+          class="edge-status-badge edge-status-good"
+          title="Notify-only rollup (data/reports/z_bot_alerts.json)"
+          >ALT:…</span
+        >
+      </span>
+    </div>
+    <!-- Lens mode: Calm / Focus / Governance (operator view) -->
+    <div id="lens-mode-toggle" class="lens-mode-toggle z-lens-mode-strip" aria-label="Lens mode">
+      <button type="button" class="z-button z-button-subtle lens-chip" data-lens-mode="calm" title="Calm — default view">Calm</button>
+      <button type="button" class="z-button z-button-subtle lens-chip" data-lens-mode="focus" title="Focus — reduced clutter">Focus</button>
+      <button type="button" class="z-button z-button-subtle lens-chip" data-lens-mode="governance" title="Governance — trust &amp; compliance">Governance</button>
+      <button
+        type="button"
+        id="zGrowthModeToggle"
+        class="z-button z-button-subtle lens-chip"
+        aria-pressed="false"
+        title="Slower dashboard mirror polls when working in huge multi-root workspaces"
+      >
+        Growth: Normal
+      </button>
+      <button
+        type="button"
+        id="zOnlyFixModeToggle"
+        class="z-button z-button-subtle lens-chip"
+        aria-pressed="false"
+        title="Only Fix mode blocks non-fix controls"
+      >
+        Only Fix: Off
+      </button>
+    </div>
+    <div
+      id="zTooltsBar"
+      class="dashboard-edge-bar edge-bottom z-tools-dock"
+      aria-label="Bottom dashboard quick actions (merged Toolts dock)"
+      role="toolbar"
+    >
+      <div class="z-tools-section" role="group" aria-label="Autopilot">
+        <span class="z-tools-section__label">Autopilot</span>
+        <div class="z-tools-section__cluster">
+          <button id="autopilotStartBtn" class="z-button" title="Start Autopilot">
+            Start Autopilot
+          </button>
+          <button id="autopilotStopBtn" class="z-button" title="Stop Autopilot">
+            Stop Autopilot
+          </button>
+          <button id="governanceCheckBtn" class="z-button" title="Run Governance Check">
+            Governance Check
+          </button>
+        </div>
+      </div>
+      <div class="z-tools-section" role="group" aria-label="Companion and workspace">
+        <span class="z-tools-section__label">Companion</span>
+        <div class="z-tools-section__cluster">
+          <button id="summonCompanionBtn" class="z-button" title="Summon S-2-R (SKK + RKPK)">
+            Summon S-2-R
+          </button>
+          <button id="toggleAutocompleteBtn" class="z-button" title="Autocompile / Rule Commit">
+            Autocompile
+          </button>
+          <button id="toggleSuggestionsBtn" class="z-button" title="Suggestions">
+            Suggestions
+          </button>
+        </div>
+      </div>
+      <div class="z-tools-section" role="group" aria-label="Console">
+        <span class="z-tools-section__label">Console</span>
+        <div class="z-tools-section__cluster">
+          <button id="zPrivateConsoleBtn" class="z-button" title="Private Console">
+            Private Console
+          </button>
+          <button id="zAddLogBtn" class="z-button" title="Add Log">
+            Add Log
+          </button>
+        </div>
+      </div>
+      <div class="z-tools-section z-tools-section--status" role="group" aria-label="Autopilot status">
+        <span class="z-tools-section__label">Status</span>
+        <div class="z-tools-section__cluster z-tools-section__cluster--end">
+          <span class="z-status-line" style="font-size: 0.85em; color: var(--z-harmony);">
+            <b>Status:</b> <span id="autopilotStatus">Idle</span>
+          </span>
+        </div>
+      </div>
+      <div class="z-tools-section z-tools-section--coauto" role="group" aria-label="Co-Autopilot and audit">
+        <span class="z-tools-section__label">Co-Autopilot</span>
+        <div class="z-tools-section__cluster z-tools-section__cluster--wrap">
+          <button id="coAutopilotPreviewBtn" class="z-button" type="button" title="Enable Co-Autopilot Preview (read-only)">
+            Co-Autopilot Preview
+          </button>
+          <span id="coAutopilotPreviewBadge" class="z-coauto-badge">Preview Only</span>
+          <button id="viewAuditBtn" class="z-button" type="button" title="View Audit Log">Audit Log</button>
+        </div>
+        <div class="z-tools-coauto-meta">
+          <span class="z-tools-coauto-meta__line" title="Co-Autopilot Preview status"
+            ><span id="coAutopilotPreviewStatus">Co-Autopilot Preview: Off</span></span
+          >
+          <span id="heartbeatStatus" class="z-tools-coauto-meta__line" title="Heartbeat status">Heartbeat: idle</span>
+          <span id="quietModeStatus" class="z-tools-coauto-meta__line" title="Quiet mode status">Quiet mode: --</span>
+        </div>
+        <div id="harishaGuidance" class="harisha-guidance z-tools-harisha-hint">Harisha guidance boots after sensors initialize.</div>
+      </div>
+    </div>
+    <!-- Narrow viewport: mirrors key edge badges when the status rail is hidden (see z_narrow_health_strip.js) -->
+    <div
+      id="zNarrowHealthStrip"
+      class="z-narrow-health-strip"
+      role="status"
+      aria-label="Key health indicators"
+    >
+      <span class="z-narrow-health-strip__title">Signals</span>
+      <div class="z-narrow-health-strip__badges">
+        <span id="zNarrowBadgeSlo" class="edge-status-badge">SLO: --</span>
+        <span id="zNarrowBadgeZuno" class="edge-status-badge">Zuno: --</span>
+        <span id="zNarrowBadgeSSWSLink" class="edge-status-badge">SSWS Link: --</span>
+        <span id="zNarrowBadgeStorage" class="edge-status-badge">Storage: --</span>
+        <span id="zNarrowBadgeDevices" class="edge-status-badge">Devices: --</span>
+        <span id="zNarrowBadgeCycles" class="edge-status-badge">Cycles: --</span>
+        <span id="zNarrowBadgeSentinel" class="edge-status-badge">Sentinel: --</span>
+        <span id="zNarrowBadgeAutonomous" class="edge-status-badge">Auto AI: --</span>
+        <span id="zNarrowBadgeFormula" class="edge-status-badge">Ω: --</span>
+        <span id="zNarrowBadgeARRBCE" class="edge-status-badge">ARRBCE: --</span>
+        <span id="zNarrowBadgeObserve" class="edge-status-badge">Observe: --</span>
+        <span id="zNarrowBadgeTwinRoots" class="edge-status-badge">TwinRoots: --</span>
+        <span id="zNarrowBadgeZunoHand" class="edge-status-badge">ZunoHand: --</span>
+      </div>
+    </div>
+    <!-- Bottom status strip: Harisha running ops + Safe work window (old view) -->
+    <div id="zBottomStatusStrip" class="z-bottom-status-strip" aria-label="Harisha operational status">
+      <span id="zBottomHarishaOps">Harisha 100: running normal operations.</span>
+      <span id="zBottomHarishaWindow">Harisha 100: Safe work window.</span>
+    </div>
+
+    <aside id="zunoHandPanel" class="zuno-hand-panel" aria-label="Zuno Hand assistant">
+      <div class="zuno-hand-head">
+        <div>
+          <div class="zuno-hand-title">Zuno Hand</div>
+          <div id="zunoHandStatusText" class="zuno-hand-status">OBSERVE · SAFE</div>
+        </div>
+        <button id="zunoHandCollapseBtn" class="zuno-hand-icon-btn" type="button" title="Collapse panel">—</button>
+      </div>
+      <div id="zunoHandBody" class="zuno-hand-body">
+        <label class="zuno-hand-label" for="zunoHandModeSelect">Mode</label>
+        <select id="zunoHandModeSelect" class="z-input zuno-hand-input">
+          <option value="observe">Observe</option>
+          <option value="assist">Assist</option>
+          <option value="draft">Draft</option>
+          <option value="approval">Await approval</option>
+          <option value="admin">Admin (restricted)</option>
+        </select>
+
+        <div class="zuno-hand-card">
+          <div class="zuno-hand-card-title">Suggestion</div>
+          <div id="zunoHandSuggestionText" class="zuno-hand-card-body">
+            Open Twin Roots panel and verify latest route posture.
+          </div>
+          <div class="zuno-hand-actions">
+            <button id="zunoHandPreviewBtn" class="z-button z-button-subtle" type="button">Preview</button>
+            <button id="zunoHandIgnoreBtn" class="z-button z-button-subtle" type="button">Ignore</button>
+          </div>
+        </div>
+
+        <div class="zuno-hand-actions">
+          <button id="zunoHandPauseBtn" class="z-button z-button-subtle" type="button">Pause AI</button>
+          <button id="zunoHandStopBtn" class="z-button z-button-subtle" type="button">Stop All Actions</button>
+        </div>
+        <div class="zuno-hand-receipt">This action path logs to Twin Roots / Ledger (mock hook).</div>
+      </div>
+    </aside>
+
+    <div id="zunoHandApprovalModal" class="zuno-hand-modal" aria-hidden="true">
+      <div class="zuno-hand-modal-card" role="dialog" aria-modal="true" aria-labelledby="zunoHandModalTitle">
+        <h3 id="zunoHandModalTitle">Confirm Assisted Action</h3>
+        <p id="zunoHandModalSummary" class="z-muted">
+          You are about to run a draft/assist action. No blocked operations will auto-execute.
+        </p>
+        <ul class="z-list">
+          <li>DRP Check: Passed (mock)</li>
+          <li>Risk Level: Low</li>
+          <li>Approval required: Yes</li>
+        </ul>
+        <div class="zuno-hand-actions">
+          <button id="zunoHandApproveBtn" class="z-button" type="button">Approve</button>
+          <button id="zunoHandCancelBtn" class="z-button z-button-subtle" type="button">Cancel</button>
+        </div>
+      </div>
+    </div>
+
+    <div id="zHiveRoot" class="z-hive-root" role="main" aria-label="Z Sanctuary main dashboard">
+      <div id="zHiveMantle" class="z-hive-mantle">
+        <div class="z-hive-mantle-title">Z Neural Hive</div>
+        <div class="z-hive-mantle-sub" id="zHiveMantleSub">
+          Core hub · Click a workflow thread to focus · Panels here stack as one organism
+        </div>
+      </div>
+      <div id="zHiveThreads" class="z-hive-threads">
+        <div id="zHiveObserve" class="z-hive-thread">
+          <div class="z-hive-thread-title">Observe</div>
+        </div>
+        <div id="zHiveThink" class="z-hive-thread">
+          <div class="z-hive-thread-title">Think</div>
+        </div>
+        <div id="zHiveBuild" class="z-hive-thread">
+          <div class="z-hive-thread-title">Build</div>
+        </div>
+        <div id="zHiveGovern" class="z-hive-thread">
+          <div class="z-hive-thread-title">Govern</div>
+        </div>
+        <div id="zHiveRegistry" class="z-hive-thread">
+          <div class="z-hive-thread-title">Registry</div>
+        </div>
+        <div id="zHiveSocial" class="z-hive-thread">
+          <div class="z-hive-thread-title">Social</div>
+        </div>
+      </div>
+      <div id="zHiveCompass" class="z-hive-compass" aria-hidden="true">
+        <div class="z-hive-compass-ring"></div>
+        <div class="z-hive-compass-n">N</div>
+        <div class="z-hive-compass-e">E</div>
+        <div class="z-hive-compass-s">S</div>
+        <div class="z-hive-compass-w">W</div>
+        <div id="zHiveActiveThread" class="z-hive-compass-active">Active: --</div>
+      </div>
+    </div>
+
+    <!-- Unified readiness indicators (Phase AMK-INDICATOR-1: read-only; optional report overlays) -->
+    <div
+      id="zAmkIndicatorsPanel"
+      class="z-panel z-amk-indicators-panel"
+      data-title="Unified readiness indicators"
+      style="position: fixed; left: 1rem; top: 5.5rem; width: min(380px, 92vw); max-height: 72vh; overflow: auto; z-index: 9094"
+      role="region"
+      aria-label="Unified AMK readiness indicators"
+    >
+      <h3>Unified readiness indicators</h3>
+      <div id="zAmkIndicatorsMount"></div>
+      <div id="zAmkCloudflareGoNoGoMount"></div>
+      <p class="z-amk-notifications-disclaimer">
+        <strong>This board does not execute work.</strong> Colors, percentages, and Go/No-Go labels are advisory internal
+        readiness signals — not certification, not deployment permission, not billing authority. Open docs and run hub
+        checks in a terminal after your own decision. The acknowledgement button stores a note in
+        <strong>browser localStorage</strong> only.
+      </p>
+    </div>
+
+    <!-- AMK-Goku Notifications Panel (Phase AMK-NOTIFY-1: read-only + localStorage decision stub only) -->
+    <div
+      id="zAmkNotificationsPanel"
+      class="z-panel z-amk-notifications-panel"
+      data-title="AMK-Goku Notifications"
+      style="position: fixed; right: 1rem; top: 5.5rem; width: min(420px, 94vw); max-height: 78vh; overflow: auto; z-index: 9095"
+      role="region"
+      aria-label="AMK-Goku operator notifications"
+    >
+      <h3>AMK-Goku · Notifications</h3>
+      <div id="zAmkNotificationsMount" class="z-amk-notifications-mount" aria-live="polite"></div>
+      <p class="z-amk-notifications-disclaimer">
+        <strong>This panel does not execute work.</strong> Signals and lanes are advisory. Buttons store your choice in
+        <strong>browser localStorage</strong> only — open the lane in Cursor/terminal/PR after your own confirmation.
+        Edit <code>data/amk_operator_notifications.json</code> to change the default queue in git.
+      </p>
+    </div>
+
+    <!-- Developer mode: gated controls for testing (development only) -->
+    <button id="devToggle" style="position: fixed; right: 1rem; bottom: 1rem; z-index: 9999">
+      Developer Mode
+    </button>
+
+    <!-- Legacy anchor: Co-Autopilot UI merged into #zTooltsBar (section Co-Autopilot). -->
+    <div id="zAutopilotControls" class="z-autopilot-controls-placeholder" hidden aria-hidden="true"></div>
+
+    <!-- Z Control Centre (operator home — merged from both dashboards) -->
+    <div
+      id="zControlCentrePanel"
+      class="z-panel"
+      data-title="Z Control Centre"
+      style="left: 1rem; top: 1rem; width: 380px; z-index: 9100"
+    >
+      <h3>Z Control Centre</h3>
+      <div class="z-section">
+        <div id="zControlCentreSummary" class="z-muted" style="font-size: 0.95rem;">Universe status · One place for operators.</div>
+        <div id="zControlCentreBadges" style="display: flex; flex-wrap: wrap; gap: 0.35rem; margin-top: 0.5rem;">
+          <span id="quietModeBadge" class="z-summary-badge">Quiet: --</span>
+          <span id="trustPackBadge" class="z-summary-badge">Trust Pack: --</span>
+        </div>
+      </div>
+      <div class="z-section">
+        <div class="z-section-title">Quick links</div>
+        <ul class="z-list" style="font-size: 0.88rem;">
+          <li><a href="../../docs/Z-HIERARCHY-CHIEF-AND-OBSERVER-VIEW.md" target="_blank" rel="noopener noreferrer" title="Authority & full architecture — check first when unsure">Hierarchy Chief</a></li>
+          <li>
+            <a
+              href="../../docs/Z-BUILD-GATE-MATRIX.md"
+              target="_blank"
+              rel="noopener noreferrer"
+              title="Decide BUILD NOW / PREPARE / WAIT / BLOCK before any module build."
+              >🧭 Build Gate Matrix</a
+            >
+          </li>
+          <li>
+            <a
+              href="../../docs/Z-TRUTH-CHAIN-AND-OPERATOR-DISCIPLINE.md"
+              target="_blank"
+              rel="noopener noreferrer"
+              title="Truth chain, learning cycles, backup ritual, privacy rule"
+              >Truth chain &amp; operator discipline</a
+            >
+          </li>
+          <li><a href="../../docs/Z-MASTER-MODULES-REGISTER.md" target="_blank" rel="noopener noreferrer">Master Register</a></li>
+          <li><a href="../../docs/Z-FULL-BUILD-CHECKLIST.md" target="_blank" rel="noopener noreferrer">Full Build Checklist</a></li>
+          <li><a href="../../docs/Z-ULTRA-INSTINCTS-AND-FORMULAS.md" target="_blank" rel="noopener noreferrer">Z-Ultra Instincts &amp; Formulas</a></li>
+          <li><a href="../../INDEX.md" target="_blank" rel="noopener noreferrer">INDEX</a></li>
+          <li><a href="../../docs/Z-GUARDIANS-MANIFESTO.md" target="_blank" rel="noopener noreferrer">Guardian's Manifesto</a></li>
+          <li><a href="../../docs/public/creator_manual/index.html" target="_blank" rel="noopener noreferrer" title="Z-Creator Manual · Q&amp;A + Z-Note Taker">Z-Creator Manual (Web)</a></li>
+          <li>
+            <a
+              href="../../docs/public/z_cloudflare_deployment_master_guide/index.html"
+              target="_blank"
+              rel="noopener noreferrer"
+              title="Wrangler-oriented Task 008 roadmap + Z-Display Morph (client-side preview)"
+              >Cloudflare Deployment Master Guide (Web)</a
+            >
+          </li>
+          <li><a href="../z-ai-ecosphere/index.html" target="_blank" rel="noopener noreferrer" title="Ledger + system/comms health + Z-KRTAAO curriculum">Z AI Ecosphere (ledger + KRTAAO)</a> · <code>npm run krtaa:curriculum-emit</code></li>
+          <li><a href="../../docs/Z-KRTAAO-DESIGN.md" target="_blank" rel="noopener noreferrer">Z-KRTAAO design</a> · <a href="../../docs/z-krtaa-prompt-packs/README.md" target="_blank" rel="noopener noreferrer">Prompt packs (v3)</a></li>
+          <li><a href="../../docs/Z-PAPAO-DESIGN.md" target="_blank" rel="noopener noreferrer">Z-PAPAO design</a> · <code>npm run papao:precaution-emit</code></li>
+        </ul>
+      </div>
+      <div class="z-section">
+        <div class="z-section-title">Compassion &amp; truth</div>
+        <ul class="z-list" style="font-size: 0.85rem;">
+          <li><a href="../../docs/Z-DACNETS.md" target="_blank" rel="noopener noreferrer">Z-DACNETS</a></li>
+          <li><a href="../../docs/Z-HvsP.md" target="_blank" rel="noopener noreferrer">Z-HvsP</a></li>
+        </ul>
+      </div>
+      <div class="z-section">
+        <div class="z-section-title">All projects</div>
+        <div id="zAllProjectsBody" class="z-all-projects-body" style="font-size: 0.85rem;">
+          <span class="z-muted">Loading…</span>
+        </div>
+        <div class="z-muted" style="font-size: 0.7rem; margin-top: 0.35rem;">
+          <a href="../../docs/Z-SSWS-ALL-PROJECTS-AND-AI-COLONY-BLUEPRINT.md" target="_blank" rel="noopener noreferrer">SSWS + All Projects blueprint</a>
+        </div>
+      </div>
+      <div class="z-section" id="zControlCentreGroupedTools">
+        <div class="z-section-title">Grouped tools (control panels)</div>
+        <p class="z-muted" style="font-size: 0.78rem; margin: 0 0 0.45rem 0">
+          Tools are clustered by job. Expand a group for links and commands. Top rail tabs also open panels — use
+          <kbd>Tab</kbd> then <kbd>Enter</kbd>. For show/hide all panels use <strong>Panel Directory</strong>.
+        </p>
+        <details class="z-tool-group" open>
+          <summary class="z-tool-group-summary">Observe &amp; verify</summary>
+          <ul class="z-list">
+            <li>
+              <button type="button" class="z-button z-button-subtle" data-z-open-panel="zCommanderPanel" data-z-open-label="Commander">
+                Open Commander (daily rhythm)
+              </button>
+            </li>
+            <li>
+              <button type="button" class="z-button z-button-subtle" data-z-open-panel="zModuleRegistryPanel" data-z-open-label="Module Registry">
+                Open Module Registry
+              </button>
+            </li>
+            <li>
+              <button type="button" class="z-button z-button-subtle" data-z-open-panel="zBenchmarksPanel" data-z-open-label="Benchmarks">
+                Open Benchmarks
+              </button>
+            </li>
+            <li><code>npm run super-chat:verify</code> — Super Chat static checks (hub terminal)</li>
+            <li><code>node scripts/z_registry_omni_verify.mjs</code> — PC/NAS + rules sync</li>
+            <li><code>node scripts/z_sanctuary_structure_verify.mjs</code> — dashboard wiring</li>
+            <li><a href="../z-ai-ecosphere/index.html" target="_blank" rel="noopener noreferrer">Z AI Ecosphere</a> — ledger + KRTAAO curriculum (serve hub root)</li>
+            <li><code>npm run krtaa:curriculum-emit</code> — advisory curriculum JSON + Markdown</li>
+            <li><code>npm run papao:precaution-emit</code> — Z-PAPAO pre-alert + precautions brief</li>
+            <li>
+              <div
+                id="zZunoCoverageCockpit"
+                class="z-zuno-coverage-cockpit"
+                data-z-reports-base="../../data/reports"
+                aria-live="polite"
+              ></div>
+              <p class="z-muted" style="font-size: 0.72rem; margin: 0.35rem 0 0 0">
+                Hub coverage + Phase 3 plan (read-only). Regenerate:
+                <code>npm run zuno:coverage &amp;&amp; npm run zuno:phase3-plan</code>
+              </p>
+            </li>
+            <li>
+              <div
+                id="zOrchestrationStatusCockpit"
+                class="z-orchestration-status-cockpit"
+                data-z-reports-base="../../data/reports"
+                data-z-contracts-package="../../packages/zuno-orchestrator-contracts/package.json"
+                aria-live="polite"
+              ></div>
+              <p class="z-muted" style="font-size: 0.72rem; margin: 0.35rem 0 0 0">
+                Contracts + example validation + task-plan lint (read-only). No runtime orchestrator.
+              </p>
+            </li>
+            <li>
+              <a
+                href="../../z-questra/dist/index.html"
+                target="_blank"
+                rel="noopener noreferrer"
+                title="Requires npm run build inside z-questra/; serve hub from repo root"
+                >Z-QUESTRA</a
+              >
+              — adaptive workstation shell (Phase 2.1). Static:
+              <code>z-questra/dist/index.html</code> · dev:
+              <code>cd z-questra &amp;&amp; npm run dev</code> · no live hub bridge.
+            </li>
+            <li>
+              <button
+                type="button"
+                class="z-button z-button-subtle"
+                data-z-open-panel="zConnectionTreeLitePanel"
+                data-z-open-label="Z-Connection Tree Lite"
+                title="Mock read-only — consent-first legacy tree, no real user data"
+              >
+                Open Z-Connection Tree Lite (mock)
+              </button>
+            </li>
+            <li>
+              <button
+                type="button"
+                class="z-button z-button-subtle"
+                data-z-open-panel="zUccrUniversalCanvasLitePanel"
+                data-z-open-label="Z-UCCR Universal Canvas Lite"
+                title="Doctrine mirror only — no execution, no XL2 coupling"
+              >
+                Open Z-UCCR Universal Canvas Lite
+              </button>
+            </li>
+          </ul>
+        </details>
+        <details class="z-tool-group">
+          <summary class="z-tool-group-summary">Operate &amp; safety</summary>
+          <ul class="z-list">
+            <li>
+              <button type="button" class="z-button z-button-subtle" data-z-open-panel="zGovernancePanel" data-z-open-label="Governance">
+                Open Governance
+              </button>
+            </li>
+            <li>
+              <button type="button" class="z-button z-button-subtle" data-z-open-panel="zLegalHelpPanel" data-z-open-label="Legal and Help">
+                Open Legal &amp; Help
+              </button>
+            </li>
+            <li>Use <strong>Status Rail</strong> toggle (top) for Z-SSWS, Auto-Run, Zuno, storage, devices, cycles.</li>
+            <li><strong>Low Light</strong> (top) eases contrast for long sessions.</li>
+          </ul>
+        </details>
+        <details class="z-tool-group">
+          <summary class="z-tool-group-summary">Build &amp; automate</summary>
+          <ul class="z-list">
+            <li>
+              <a
+                class="z-button z-button-subtle"
+                href="z-addon-dashboard.html"
+                style="display: inline-block; text-decoration: none"
+                title="Staging: new modules and fusion queue before main HODP"
+                >Z-Add On staging</a
+              >
+              — data: <code>data/z_addon_dashboard_state.json</code>
+            </li>
+            <li>
+              <button type="button" class="z-button z-button-subtle" data-z-open-panel="zAutopilotStatusPanel" data-z-open-label="Autopilot">
+                Open Autopilot Status
+              </button>
+            </li>
+            <li>
+              <button type="button" class="z-button z-button-subtle" data-z-open-panel="zPanelDirectory" data-z-open-label="Panel Directory">
+                Open Panel Directory
+              </button>
+            </li>
+            <li>
+              <button type="button" class="z-button z-button-subtle" data-z-open-panel="zTwinRootsPanel" data-z-open-label="Twin Roots">
+                Open Twin Roots
+              </button>
+            </li>
+            <li>
+              <button
+                type="button"
+                class="z-button z-button-subtle"
+                data-z-open-panel="zAnimaCoreLitePanel"
+                data-z-open-label="Z-ANIMA CORE Lite"
+                title="Read-only mock panel — no live stream or payments"
+              >
+                Open Z-ANIMA CORE Lite (mock)
+              </button>
+            </li>
+            <li>
+              <button
+                type="button"
+                class="z-button z-button-subtle"
+                data-z-open-panel="zProductSovereignRegistryLitePanel"
+                data-z-open-label="Z-Product Sovereign Registry Lite"
+                title="Central product intelligence — JSON-driven, planning only"
+              >
+                Open Z-Product Sovereign Registry Lite
+              </button>
+            </li>
+            <li>
+              <button
+                type="button"
+                class="z-button z-button-subtle"
+                data-z-open-panel="zConnectionTreeLitePanel"
+                data-z-open-label="Z-Connection Tree Lite"
+                title="Living Connection Legacy — mock tree only, consent-first"
+              >
+                Open Z-Connection Tree Lite (mock)
+              </button>
+            </li>
+            <li>
+              <button
+                type="button"
+                class="z-button z-button-subtle"
+                data-z-open-panel="zUccrUniversalCanvasLitePanel"
+                data-z-open-label="Z-UCCR Universal Canvas Lite"
+                title="Read-only doctrine doorway — whole-universe canvas realm"
+              >
+                Open Z-UCCR Universal Canvas Lite
+              </button>
+            </li>
+            <li>
+              <button type="button" class="z-button z-button-subtle" data-z-open-panel="zBlueprintPanel" data-z-open-label="Z Blueprint">
+                Open Z Blueprint
+              </button>
+            </li>
+            <li><code>npm run verify:full</code> — full hub pipeline (when you are ready for a long run)</li>
+          </ul>
+        </details>
+        <details class="z-tool-group">
+          <summary class="z-tool-group-summary">Advanced (power operators)</summary>
+          <ul class="z-list">
+            <li><strong>Growth mode:</strong> use the lens / growth chip (when present) to slow heavy mirror polling.</li>
+            <li><strong>Developer mode:</strong> bottom-right toggle — development gates only.</li>
+            <li><strong>Multi-root:</strong> open <code>Z_All_Projects.code-workspace</code> in Cursor for sibling repos.</li>
+            <li><strong>Super Chat gated npm:</strong> <code>Z_SUPER_CHAT_ALLOW_TASK_EXECUTE=1</code> then <code>npm run super-chat:readonly</code> (see blueprint).</li>
+          </ul>
+        </details>
+      </div>
+      <div class="z-section" id="zControlCentreA11y" aria-labelledby="zControlCentreA11yTitle">
+        <div class="z-section-title" id="zControlCentreA11yTitle">Display &amp; accessibility</div>
+        <p class="z-muted" style="font-size: 0.76rem; margin: 0 0 0.5rem 0">
+          These options stay on this browser (saved locally). They stack with your OS screen reader / magnifier. The
+          accessibility bar (when loaded) still handles language / voice labels.
+        </p>
+        <label class="z-kv" style="align-items: center; gap: 0.5rem; margin-bottom: 0.35rem;">
+          <input type="checkbox" id="zDashA11yLargeTargets" data-z-a11y="large" />
+          <span>Larger tap targets (44px minimum)</span>
+        </label>
+        <label class="z-kv" style="align-items: center; gap: 0.5rem; margin-bottom: 0.35rem;">
+          <input type="checkbox" id="zDashA11yHighContrast" data-z-a11y="contrast" />
+          <span>Stronger panel borders &amp; contrast</span>
+        </label>
+        <label class="z-kv" style="align-items: center; gap: 0.5rem; margin-bottom: 0.35rem;">
+          <input type="checkbox" id="zDashA11yStrongFocus" data-z-a11y="focus" />
+          <span>High-visibility keyboard focus rings</span>
+        </label>
+        <label class="z-kv" style="align-items: center; gap: 0.5rem;">
+          <input type="checkbox" id="zDashA11yReduceDecor" data-z-a11y="reduceDecor" />
+          <span>Reduce motion decoration (hide Living Pulse canvas &amp; meter breathe)</span>
+        </label>
+      </div>
+      <div class="z-muted" style="font-size: 0.75rem; margin-top: 0.5rem;">SKK &amp; RKPK · Dashboard Unified · All Z-Sanctuary in one view.</div>
+    </div>
+
+    <!-- AMK-Goku Commander Panel — daily control view (UI + local/mock receipts, advisory-only) -->
+    <div
+      id="zCommanderPanel"
+      class="z-panel z-commander-panel z-commander-panel-v2"
+      data-title="AMK-Goku Commander"
+      style="right: 1rem; top: 5.5rem; width: 432px; z-index: 9100"
+    >
+      <h3>AMK-Goku Commander</h3>
+      <p id="zCommanderPhaseLine" class="z-commander-phase">
+        Daily rhythm · mock + local receipts · Z-Display Morph tokens · advisory-only (no execution)
+      </p>
+      <div class="z-commander-scroll">
+        <div class="z-commander-section-title">System status bar</div>
+        <div id="zCommanderBadgeLine" class="z-commander-strip z-commander-status-bar" aria-live="polite">
+          <span class="z-commander-chip">
+            <strong>TwinRoots</strong> <span id="zCmdTwinRoots">…</span>
+          </span>
+          <span class="z-commander-chip">
+            <strong>ZunoHand</strong>
+            <span id="zCmdZunoHand" title="Zuno Assist layer placeholder — OBSERVE mirrors status rail">…</span>
+          </span>
+          <span class="z-commander-chip" id="zCmdCommflowChip" title="From last ecosystem comm-flow verifier refresh">
+            <strong>Commflow</strong> <span id="zCmdCommflowBrief">…</span>
+          </span>
+          <span class="z-commander-chip z-commander-chip-staging">
+            <strong>Staging DB</strong>
+            <span id="zCmdStagingDb" title="No live DB bind in dashboard — watcher mock">
+              WAIT · watcher idle (mock)
+            </span>
+          </span>
+        </div>
+
+        <div class="z-commander-section-title">Today’s intelligence</div>
+        <div class="z-commander-intel">
+          <div class="z-commander-card">
+            <div class="z-tag">Review (paused lane)</div>
+            <div>
+              <strong>Z-Product Sovereign Registry Lite</strong> —
+              open from Action panel; scan <code class="z-commander-inline-code">data/z_sovereign_products_registry.json</code>
+              (<code class="z-commander-inline-code">npm run z:products:verify</code>).
+              <strong>IndustryBot</strong>-style read-only generated notes: planned later — not wired yet.
+            </div>
+          </div>
+          <div class="z-commander-card">
+            <div class="z-tag">Best opportunity</div>
+            <div>
+              Ship Commander-first workflow: one calm pane before branching staging DB lanes or heavier visuals.
+            </div>
+          </div>
+          <div class="z-commander-card">
+            <div class="z-tag">Watch item</div>
+            <div>
+              Regenerate verifier reports (<code class="z-commander-inline-code">npm run ecosystem:commflow:verify</code>)
+              before treating comm-flow as changed.
+            </div>
+          </div>
+          <div class="z-commander-card">
+            <div class="z-tag">Risk</div>
+            <div>
+              Broad ROUTING exemptions (especially lottery subtree)—see the
+              <a href="../../docs/Z-IDE-COMMFLOW-GUARD-DIAGNOSIS-POLICY.md" target="_blank" rel="noopener noreferrer"
+                >routing policy doc</a
+              >
+              — advisory gate; not urgent system breakage from this pane.
+            </div>
+          </div>
+        </div>
+
+        <details class="z-commander-sage-details" id="zCommanderSageDetails">
+          <summary class="z-commander-section-title" style="cursor: pointer">SAGE Signals (read-only)</summary>
+          <p class="z-muted" style="font-size: 0.78rem; margin: 0.35rem 0">
+            Observer doctrine — no actions.
+            <a href="../../docs/Z-SAGE-COMMANDER-BRIDGE.md" target="_blank" rel="noopener noreferrer">Bridge doc</a>
+            ·
+            <a href="../../docs/Z-SAGE-SIGNAL-SCHEMA-V1.md" target="_blank" rel="noopener noreferrer">Schema v1</a>
+          </p>
+          <div id="zCommanderSageStatus" class="z-muted" style="font-size: 0.82rem">Loading…</div>
+          <div class="z-commander-section-title" style="font-size: 0.75rem; margin-top: 0.35rem">Pulse</div>
+          <ul id="zCommanderSagePulseList" class="z-commander-receipts" style="margin-top: 0.25rem"></ul>
+          <div id="zCommanderSageFreshness" class="z-muted" style="font-size: 0.72rem; margin-top: 0.25rem"></div>
+          <div class="z-commander-section-title" style="font-size: 0.75rem; margin-top: 0.5rem">Upgrade chronicle</div>
+          <ul id="zCommanderSageUpgrades" class="z-commander-receipts" style="margin-top: 0.25rem"></ul>
+          <div class="z-commander-section-title" style="font-size: 0.75rem; margin-top: 0.35rem">Drift signals</div>
+          <ul id="zCommanderSageDrift" class="z-commander-receipts" style="margin-top: 0.25rem"></ul>
+        </details>
+
+        <div class="z-commander-section-title">Active work lanes</div>
+        <ul id="zCommanderLanesList" class="z-commander-lanes" aria-label="Active work lanes">
+          <li>
+            <span class="z-lane-name">Staging DB readiness</span>
+            <span class="z-lane-pill z-lane-wait">WAIT</span>
+          </li>
+          <li>
+            <span class="z-lane-name">Replit deployment gate</span>
+            <span class="z-lane-pill z-lane-monitor">monitor</span>
+          </li>
+          <li>
+            <span class="z-lane-name">Commflow advisory</span>
+            <span class="z-lane-pill z-lane-amber">amber</span>
+          </li>
+          <li>
+            <span class="z-lane-name">Display Morph Engine</span>
+            <span class="z-lane-pill z-lane-ok">ready</span>
+          </li>
+          <li>
+            <span class="z-lane-name">Twin Roots</span>
+            <span class="z-lane-pill z-lane-ok">local mock</span>
+          </li>
+          <li>
+            <span class="z-lane-name">Z-Product Sovereign Registry Lite</span>
+            <span class="z-lane-pill z-lane-monitor" title="No new edits or IndustryBot automation — Commander review only">review · paused</span>
+          </li>
+        </ul>
+
+        <div class="z-commander-section-title">Latest receipts</div>
+        <ul id="zCommanderReceiptsList" class="z-commander-receipts"></ul>
+
+        <div class="z-commander-section-title">Next best action</div>
+        <div id="zCommanderNextAction" class="z-commander-gold">
+          <strong>Wait for staging DB READY</strong> — meanwhile continue UI and operator-only work lanes.
+          <span class="z-commander-gold-muted">
+            Sovereign Registry lane is paused — use Action panel when you want a catalogue review session; IndustryBot additions stay off for now.</span>
+          <span class="z-commander-gold-muted">Deployment-sensitive paths unchanged from this panel.</span>
+        </div>
+
+        <div class="z-commander-section-title">Action panel</div>
+        <div class="z-commander-actions">
+          <button type="button" class="z-button z-button-subtle" data-z-commander-action="run-watcher">
+            Run watcher
+          </button>
+          <button type="button" class="z-button z-button-subtle" data-z-open-panel="zTwinRootsPanel" data-z-open-label="Twin Roots">
+            Open Twin Roots
+          </button>
+            <button
+              type="button"
+              class="z-button z-button-subtle"
+              data-z-open-panel="zAnimaCoreLitePanel"
+              data-z-open-label="Z-ANIMA CORE Lite"
+              title="Mock read-only — compassion engine Lite"
+            >
+              Z-ANIMA Lite (mock)
+            </button>
+          <button
+            type="button"
+            class="z-button z-button-subtle"
+            data-z-open-panel="zProductSovereignRegistryLitePanel"
+            data-z-open-label="Z-Product Sovereign Registry Lite"
+            title="Read-only sovereign product catalogue — planning only"
+          >
+            Sovereign Products (Lite)
+          </button>
+          <button
+            type="button"
+            class="z-button z-button-subtle"
+            data-z-open-panel="zConnectionTreeLitePanel"
+            data-z-open-label="Z-Connection Tree Lite"
+            title="Mock legacy tree — consent-first, no real user data"
+          >
+            Connection Tree Lite (mock)
+          </button>
+          <button
+            type="button"
+            class="z-button z-button-subtle"
+            data-z-open-panel="zUccrUniversalCanvasLitePanel"
+            data-z-open-label="Z-UCCR Universal Canvas Lite"
+            title="Doctrine mirror — read-only, no execution"
+          >
+            Z-UCCR Canvas Lite
+          </button>
+          <a
+            class="z-button z-button-subtle"
+            href="../../data/reports/z_ecosystem_commflow_verifier.md"
+            target="_blank"
+            rel="noopener noreferrer"
+            title="Local report — open from hub root static server when local"
+          >Open commflow report</a>
+          <a
+            class="z-button z-button-subtle"
+            href="https://replit.com/@manojkeerpal/Roulette-Data-Analyzer"
+            target="_blank"
+            rel="noopener noreferrer"
+            title="External Replit workspace — governance in MONOREPO_GUIDE.md"
+          >Open Replit gate</a>
+          <button type="button" class="z-button z-button-subtle" data-z-commander-action="pause-ai">
+            Pause AI
+          </button>
+        </div>
+        <p class="z-muted z-commander-footnote">
+          Zuno Assist: OBSERVE / SUGGEST only. Pause relays to Zuno Hand when loaded —
+          no deploy, Stripe, vault, or governance writes from here.
+          <a href="../../docs/Z-GITHUB-FIRST-PR-OBSERVATION.md" target="_blank" rel="noopener noreferrer">First PR observation</a>
+        </p>
+      </div>
+    </div>
+
+    <!-- Z-Twin Roots Architecture Panel (Phase 1 mock visual map) -->
+    <div
+      id="zTwinRootsPanel"
+      class="z-panel"
+      data-title="Z Twin Roots Architecture"
+      style="left: 380px; top: 420px; width: 760px; height: 520px"
+    >
+      <h3>Z-Twin Roots Architecture</h3>
+      <div class="z-muted" style="margin-bottom: 0.4rem">
+        Mango Tree + Tarzan Tree + Fusion Grove (local mock data, advisory-only).
+      </div>
+      <iframe
+        src="../panels/z_twin_roots_architecture.html"
+        title="Z-Twin Roots Architecture Panel"
+        style="width: 100%; height: calc(100% - 56px); border: 1px solid rgba(255,255,255,0.12); border-radius: 10px; background: rgba(0,0,0,0.25)"
+        loading="lazy"
+      ></iframe>
+    </div>
+
+    <!-- Z-ANIMA CORE Lite — read-only mock panel (no live stream, no payments) -->
+    <div
+      id="zAnimaCoreLitePanel"
+      class="z-panel"
+      data-title="Z-ANIMA CORE Lite"
+      style="right: 1rem; top: 420px; width: 420px; height: 520px; z-index: 9050"
+    >
+      <h3>Z-ANIMA CORE Lite</h3>
+      <p class="z-muted" style="margin-bottom: 0.4rem">
+        Mock / example only — read-only. No live partner, stream, or donation data.
+      </p>
+      <iframe
+        src="../panels/z_anima_core_lite.html"
+        title="Z-ANIMA CORE Lite mock panel"
+        style="width: 100%; height: calc(100% - 72px); border: 1px solid rgba(255,255,255,0.12); border-radius: 10px; background: rgba(0,0,0,0.25)"
+        loading="lazy"
+      ></iframe>
+    </div>
+
+    <!-- Z-Product Sovereign Registry Lite — read-only internal planning -->
+    <div
+      id="zProductSovereignRegistryLitePanel"
+      class="z-panel"
+      data-title="Z-Product Sovereign Registry Lite"
+      style="left: 22rem; top: 6rem; width: min(920px, 92vw); height: min(540px, 78vh); z-index: 9040"
+    >
+      <h3>Z-Product Sovereign Registry Lite</h3>
+      <p class="z-muted" style="margin-bottom: 0.4rem">
+        READ-ONLY · No purchases, outreach, or certification claims · data from hub JSON only.
+      </p>
+      <iframe
+        src="../panels/z_product_sovereign_registry_lite.html"
+        title="Z-Product Sovereign Registry Lite panel"
+        style="width: 100%; height: calc(100% - 68px); border: 1px solid rgba(255,255,255,0.12); border-radius: 10px; background: rgba(0,0,0,0.25)"
+        loading="lazy"
+      ></iframe>
+    </div>
+
+    <!-- Z-Connection Tree Lite — mock / consent-first / read-only -->
+    <div
+      id="zConnectionTreeLitePanel"
+      class="z-panel"
+      data-title="Z-Connection Tree Lite"
+      style="left: 2rem; top: 22rem; width: min(440px, 92vw); height: min(520px, 78vh); z-index: 9038"
+    >
+      <h3>Z-Connection Tree Lite</h3>
+      <p class="z-muted" style="margin-bottom: 0.4rem">
+        MOCK · consent-first · no real user data · no auth or API changes from this pane.
+      </p>
+      <iframe
+        src="../panels/z_connection_tree_lite.html"
+        title="Z-Connection Tree Lite mock panel"
+        style="width: 100%; height: calc(100% - 72px); border: 1px solid rgba(255,255,255,0.12); border-radius: 10px; background: rgba(0,0,0,0.25)"
+        loading="lazy"
+      ></iframe>
+    </div>
+
+    <!-- Z-UCCR Universal Canvas Lite — static doctrine mirror (no execution) -->
+    <div
+      id="zUccrUniversalCanvasLitePanel"
+      class="z-panel"
+      data-title="Z-UCCR Universal Canvas Lite"
+      style="right: 1rem; top: 28rem; width: min(420px, 92vw); height: min(480px, 76vh); z-index: 9037"
+    >
+      <h3>Z-UCCR Universal Canvas Lite</h3>
+      <p class="z-muted" style="margin-bottom: 0.4rem">
+        READ-ONLY · doctrine mirror · no agents, no registry writes, no XL2 coupling from this pane.
+      </p>
+      <iframe
+        src="../panels/z_uccr_universal_canvas_lite.html"
+        title="Z-UCCR Universal Canvas Lite static prototype"
+        style="width: 100%; height: calc(100% - 72px); border: 1px solid rgba(255,255,255,0.12); border-radius: 10px; background: rgba(0,0,0,0.25)"
+        loading="lazy"
+      ></iframe>
+    </div>
+
+    <!-- Z Panel Directory (Show All / Hide All / Layout presets — merged from backup) -->
+    <div
+      id="zPanelDirectory"
+      class="z-panel"
+      data-title="Z Panel Directory"
+      style="left: 1rem; top: 420px; width: 340px"
+    >
+      <h3>Z Panel Directory</h3>
+      <div class="z-muted" style="margin-bottom: 0.35rem;">Choose which panels are visible. Layout presets for operator focus.</div>
+      <div id="zPanelDirectoryTree" class="z-panel-tree"></div>
+      <div class="z-section z-panel-tree-actions" style="flex-wrap: wrap; gap: 0.35rem;">
+        <button id="zPanelShowAllBtn" class="z-button" title="Reveal all panels">Show All</button>
+        <button id="zPanelHideAllBtn" class="z-button" title="Hide all panels">Hide All</button>
+        <button id="zPanelPopoutBtn" class="z-button z-button-subtle" title="Popout selected panel">Popout</button>
+        <button id="zPanelResetSizesBtn" class="z-button z-button-subtle" title="Reset panel sizes">Reset Sizes</button>
+      </div>
+      <div class="z-section">
+        <div class="z-section-title">Layout presets</div>
+        <div class="z-panel-tree-actions" style="flex-wrap: wrap; gap: 0.35rem;">
+          <button id="zLayoutPresetFocusBtn" class="z-button" title="Focus layout">Focus</button>
+          <button id="zLayoutPresetAnalysisBtn" class="z-button" title="Analysis layout">Analysis</button>
+          <button id="zLayoutPresetGovernanceBtn" class="z-button" title="Governance layout">Governance</button>
+        </div>
+        <div id="zLayoutPresetLabel" class="z-muted" style="font-size: 0.8rem; margin-top: 0.25rem;">Active: —</div>
+      </div>
+      <div class="z-section">
+        <div class="z-section-title">Split layout</div>
+        <select id="zSplitLayoutSelect" class="z-input" style="max-width: 160px;">
+          <option value="auto">Auto</option>
+          <option value="split-2">Split 1/2</option>
+          <option value="split-4">Split 1/4</option>
+        </select>
+      </div>
+    </div>
+
+    <!-- Autocomplete Panel (hidden by default) -->
+    <div
+      id="zAutocompletePanel"
+      class="z-panel"
+      data-title="Z Autocomplete"
+      style="left: 1rem; top: 1rem; width: 320px; display: none"
+    >
+      <h3>Z Autocomplete</h3>
+      <div class="z-section">
+        <input
+          id="autocompleteInput"
+          class="z-input"
+          type="text"
+          placeholder="Type to search..."
+          spellcheck="false"
+        />
+      </div>
+      <div class="z-section">
+        <h4>Preview</h4>
+        <div id="autocompletePreview" class="z-muted">No selection</div>
+      </div>
+      <div class="z-action-bar">
+        <button id="generateAutocompleteBtn" class="z-button">Generate</button>
+      </div>
+    </div>
+
+    <!-- Recent Suggestions Panel (hidden by default) -->
+    <div
+      id="zRecentSuggestions"
+      class="z-panel"
+      data-title="Z Recent Suggestions"
+      style="left: 1rem; top: 400px; width: 320px; display: none"
+    >
+      <h3>Z Recent Suggestions</h3>
+      <div id="suggestionFilterLabel" class="z-muted">
+        Filtered by recent activity
+        <div class="z-filter-row" id="zFilterChips"></div>
+      </div>
+      <ul id="suggestionList" class="z-list"></ul>
+    </div>
+
+    <!-- Awareness Panel -->
+    <div
+      id="zAwarenessPanel"
+      class="z-panel"
+      data-title="Z AI Awareness"
+      style="left: 1rem; top: 820px; width: 320px"
+    >
+      <h3>Z AI Awareness</h3>
+      <div class="z-section">
+        <div class="z-kv">
+          <span>State</span>
+          <span id="zAwarenessStateValue">loading…</span>
+        </div>
+        <div class="z-kv">
+          <span>Energy</span>
+          <span id="zAwarenessEnergyValue">--%</span>
+        </div>
+        <div class="z-kv">
+          <span>Harmony</span>
+          <span id="zAwarenessHarmonyValue">--%</span>
+        </div>
+      </div>
+      <div id="zAwarenessState" class="z-section"></div>
+      <div class="z-section">
+        <div id="zMiniAiFeed" aria-live="polite" aria-label="Mini AI feed"></div>
+      </div>
+    </div>
+
+    <!-- Governance Panel -->
+    <div
+      id="zGovernancePanel"
+      class="z-panel"
+      data-title="Z Governance"
+      style="right: 1rem; top: 1rem; width: 360px"
+    >
+      <h3>Z Governance Flow</h3>
+      <div class="z-section">
+        <div class="z-kv">
+          <span>SKK Score</span>
+          <span id="zSkkScore">--</span>
+        </div>
+        <div class="z-kv">
+          <span>RKPK Score</span>
+          <span id="zRkpkScore">--</span>
+        </div>
+        <div class="z-kv">
+          <span>Coherence</span>
+          <span id="zCoherence">--%</span>
+        </div>
+      </div>
+      <div class="z-section">
+        <div class="z-section-title">Trust Status</div>
+        <div id="zTrustStatus" class="z-status-pill">
+          <span class="z-status-dot"></span>
+          <span>Loading…</span>
+        </div>
+      </div>
+      <div class="z-section">
+        <button id="zGovernanceRefresh" class="z-button">Refresh</button>
+      </div>
+    </div>
+
+    <!-- Module Health Panel -->
+    <div
+      id="zModuleHealthPanel"
+      class="z-panel"
+      data-title="Z Module Health"
+      style="right: 1rem; top: 420px; width: 360px"
+    >
+      <h3>Z Module Health</h3>
+      <div class="z-section">
+        <div class="z-kv">
+          <span>Online</span>
+          <span id="zModulesOnline">0</span>
+        </div>
+        <div class="z-kv">
+          <span>Active</span>
+          <span id="zModulesActive">0</span>
+        </div>
+        <div class="z-kv">
+          <span>Total</span>
+          <span id="zModulesTotal">0</span>
+        </div>
+      </div>
+      <div id="zModuleList" class="z-module-list"></div>
+    </div>
+
+    <!-- Benchmarks Adviser Panel -->
+    <div
+      id="zBenchmarksPanel"
+      class="z-panel"
+      data-title="Z Benchmarks Adviser"
+      style="right: 1rem; top: 1260px; width: 360px"
+    >
+      <h3>Z Benchmarks Adviser</h3>
+      <div class="z-section">
+        <div class="z-kv">
+          <span>Universe score</span>
+          <span id="zBenchmarksUniverseScore">--</span>
+        </div>
+        <div class="z-muted" id="zBenchmarksUniverseSummary">Waiting for metrics…</div>
+      </div>
+      <div class="z-section">
+        <div class="z-section-title">Key Benchmarks</div>
+        <ul id="zBenchmarksList" class="z-insight-list"></ul>
+      </div>
+      <div class="z-section">
+        <div class="z-section-title">Advisor Focus</div>
+        <div id="zBenchmarksAdvisorFocus" class="z-muted">
+          The Benchmarks Adviser will highlight up to 3 focus areas based on current indicators.
+        </div>
+      </div>
+    </div>
+
+    <!-- Z Blueprint Panel (Canvas / Register / Checklist control centre) -->
+    <div
+      id="zBlueprintPanel"
+      class="z-panel"
+      data-title="Z Blueprint"
+      style="right: 1rem; top: 2040px; width: 380px"
+    >
+      <h3>Z Blueprint</h3>
+      <div class="z-section">
+        <p class="z-muted">
+          Single control centre for the Master Register, Full Build Checklist, and Cursor Canvas. Use this + Canvas to manage all modules and phases. This pattern (with on/off/auto/Read) applies to other Z-Sanctuary sections too.
+        </p>
+      </div>
+      <div class="z-section">
+        <div class="z-section-title">Panel mode (optional)</div>
+        <div class="z-kv" style="flex-wrap: wrap; gap: 0.5rem;">
+          <span>Mode:</span>
+          <span id="zBlueprintModeChips" style="display: flex; flex-wrap: wrap; gap: 0.35rem;">
+            <button type="button" class="z-button z-button-subtle z-mode-chip" data-mode="on" title="Blueprint panel active">On</button>
+            <button type="button" class="z-button z-button-subtle z-mode-chip" data-mode="off" title="Minimise or hide">Off</button>
+            <button type="button" class="z-button z-button-subtle z-mode-chip" data-mode="auto" title="Auto-show when Register/Checklist updated">Auto</button>
+            <button type="button" class="z-button z-button-subtle z-mode-chip" data-mode="read" title="Read-only: links only, no edit">Read</button>
+          </span>
+        </div>
+        <div class="z-muted" style="font-size: 0.75rem; margin-top: 0.25rem;">Same on/off/auto/Read options can be applied to other sections. See docs.</div>
+      </div>
+      <div class="z-section">
+        <div class="z-section-title">Core docs</div>
+        <ul class="z-list">
+          <li><a href="../../docs/Z-HIERARCHY-CHIEF-AND-OBSERVER-VIEW.md" target="_blank" rel="noopener noreferrer">Hierarchy Chief (when unsure)</a></li>
+          <li>
+            <a
+              href="../../docs/Z-BUILD-GATE-MATRIX.md"
+              target="_blank"
+              rel="noopener noreferrer"
+              title="Decide BUILD NOW / PREPARE / WAIT / BLOCK before any module build."
+              >🧭 Build Gate Matrix</a
+            >
+            <span class="z-muted" style="font-size: 0.78rem"> — build governance: classify modules before big code</span>
+          </li>
+          <li>
+            <a
+              href="../../docs/Z-TRUTH-CHAIN-AND-OPERATOR-DISCIPLINE.md"
+              target="_blank"
+              rel="noopener noreferrer"
+              title="Truth chain, learning cycles, backup ritual, privacy rule"
+              >Truth chain &amp; operator discipline</a
+            >
+            <span class="z-muted" style="font-size: 0.78rem"> — why discipline beats raw power</span>
+          </li>
+          <li><a href="../../docs/Z-MASTER-MODULES-REGISTER.md" target="_blank" rel="noopener noreferrer">Master Modules Register</a></li>
+          <li><a href="../../docs/Z-FULL-BUILD-CHECKLIST.md" target="_blank" rel="noopener noreferrer">Full Build Checklist</a></li>
+          <li><a href="../../docs/Z-ULTRA-INSTINCTS-AND-FORMULAS.md" target="_blank" rel="noopener noreferrer">Z-Ultra Instincts &amp; Formulas</a></li>
+          <li><a href="../../INDEX.md" target="_blank" rel="noopener noreferrer">INDEX</a></li>
+          <li><a href="../../docs/Z-CURSOR-CANVAS-GUIDE.md" target="_blank" rel="noopener noreferrer">Cursor Canvas Guide</a></li>
+          <li><a href="../../docs/Z-SUPER-CHAT-BLUEPRINT.md" target="_blank" rel="noopener noreferrer">Z Super Chat blueprint</a></li>
+          <li><a href="../../docs/Z-AI-QADP-QUESTIONS-ANSWERS-DIRECTED-PATHWAYS.md" target="_blank" rel="noopener noreferrer">Z-AI QADP (grounded questions, answers, pathways)</a></li>
+          <li><a href="../../docs/Z-KRTAAO-DESIGN.md" target="_blank" rel="noopener noreferrer">Z-KRTAAO (pedagogy layer)</a> · <a href="../z-ai-ecosphere/index.html" target="_blank" rel="noopener noreferrer">Ecosphere UI</a> · <a href="../../docs/z-krtaa-prompt-packs/README.md" target="_blank" rel="noopener noreferrer">Prompt packs</a></li>
+          <li><a href="../../docs/Z-PAPAO-DESIGN.md" target="_blank" rel="noopener noreferrer">Z-PAPAO (pre-alert)</a> · <code>npm run papao:precaution-emit</code></li>
+        </ul>
+      </div>
+      <div class="z-section">
+        <div class="z-section-title">AI Builder Insight Pack</div>
+        <p class="z-muted" style="font-size: 0.8rem; margin: 0 0 0.5rem 0">
+          Registry-backed Markdown for Cursor and operators: module IDs, on-disk evidence, safety pointers. Evidence-first; no fake paths; deployment HOLD.
+        </p>
+        <ul class="z-list" style="font-size: 0.85rem;">
+          <li>
+            <a href="../../docs/AI_BUILDER_CONTEXT.md" target="_blank" rel="noopener noreferrer">AI Builder context</a>
+            ·
+            <a href="../../docs/ai-builder/README.md" target="_blank" rel="noopener noreferrer">Cursor briefs</a>
+            ·
+            <a href="../../docs/Z_SANCTUARY_BUILD_RULES.md" target="_blank" rel="noopener noreferrer">Build rules</a>
+          </li>
+          <li>
+            <a href="../../docs/Z_SANCTUARY_MODULE_INDEX.md" target="_blank" rel="noopener noreferrer">Module index</a>
+            ·
+            <a href="../../docs/Z_SANCTUARY_ENGINE_INDEX.md" target="_blank" rel="noopener noreferrer">Engine index</a>
+            ·
+            <a href="../../docs/Z_SANCTUARY_SAFETY_INDEX.md" target="_blank" rel="noopener noreferrer">Safety index</a>
+          </li>
+          <li><strong>Refresh from hub:</strong> <code>npm run z:ai-builder:refresh</code> · <strong>After big doc churn:</strong> <code>npm run z:car2</code></li>
+          <li><strong>Regenerate module pages only:</strong> <code>npm run z:docs:modules</code></li>
+        </ul>
+      </div>
+      <div class="z-section">
+        <div class="z-section-title">Canvas &amp; Cursor tools (upgrade your stack)</div>
+        <p class="z-muted" style="font-size: 0.8rem; margin: 0 0 0.5rem 0">
+          Mirror Cursor’s best surfaces on a <strong>Canvas</strong> (cards + file links + diagrams), then keep the same truth in the browser here.
+        </p>
+        <ul class="z-list" style="font-size: 0.85rem;">
+          <li><strong>Canvas:</strong> Register + Checklist + INDEX + QADP + Super Chat links (see Canvas Guide).</li>
+          <li><strong>Commands:</strong> project <code>.cursor/commands/</code> — run slash workflows from chat.</li>
+          <li><strong>Multi-root:</strong> <code>Z_All_Projects.code-workspace</code> when you need every sibling repo in one Cursor window.</li>
+          <li><strong>Rules &amp; agents:</strong> <code>.cursor/rules/</code>, <code>.cursor/agents/</code> — same rituals across roots.</li>
+          <li><strong>Composer / Agent:</strong> use <code>@file</code> and small scopes so edits stay project-true (pairs with QADP).</li>
+        </ul>
+      </div>
+      <div class="z-section">
+        <div class="z-section-title">Z Super Chat (Phase A)</div>
+        <p class="z-muted" style="font-size: 0.8rem; margin: 0 0 0.5rem 0">
+          Read-only search across registered roots. Start the local server from the hub, then open the UI URL it prints (default <code>http://127.0.0.1:5510/</code>).
+        </p>
+        <ul class="z-list" style="font-size: 0.85rem;">
+          <li><strong>Run:</strong> <code>npm run super-chat:readonly</code></li>
+          <li><strong>Optional gated npm from UI:</strong> set <code>Z_SUPER_CHAT_ALLOW_TASK_EXECUTE=1</code> in the same environment, then use Prepare run in the Super Chat page (type EXECUTE).</li>
+          <li><strong>Verify:</strong> <code>npm run super-chat:verify</code> (add <code>--probe</code> if the server is already running)</li>
+          <li><a href="../../docs/public/super_chat/index.html" target="_blank" rel="noopener noreferrer">Static UI file</a> (search needs the server; this link is for layout reference)</li>
+        </ul>
+      </div>
+      <div class="z-section">
+        <div class="z-section-title">Perspective radar (illustrative)</div>
+        <p class="z-muted" style="font-size: 0.75rem; margin: 0 0 0.4rem 0">
+          Demo Chart.js radar — replace dataset with live indicators (governance, Zuno, verifiers) when wired. Shows how far the stack can read across mindsets at a glance.
+        </p>
+        <div style="position: relative; height: 220px; max-width: 100%">
+          <canvas id="zBlueprintPotentialRadar" aria-label="Illustrative potential radar chart"></canvas>
+        </div>
+      </div>
+      <div class="z-section">
+        <div class="z-section-title">Our best — priorities</div>
+        <ol id="zBlueprintPriorities" class="z-list" style="font-size: 0.9rem;">
+          <li>Operational: Overseer, Z-EAII, Z-SSWS; dashboard via http://5502; Z-KRTAAO curriculum + prompt packs for aligned AI work</li>
+          <li>Core engines: Security, heartbeat, soft-fail, miniai graceful</li>
+          <li>Experience: Z-ACR panel, Z Life Rhythm stub, HeartLink link</li>
+          <li>AMK-Goku: Z Combat 360, Creator doc, ZES ↔ trust pack</li>
+          <li>Gamification: Badges + ZES; Penny Missions in register</li>
+          <li>Monster Main: Governance here; Coming soon / links for zones</li>
+          <li>Content: Quotes/Sanctuary card; Z-Melody, Outdoors links</li>
+          <li>Reports: Align schema; optional live stream</li>
+          <li>Mindsets: Compassion-first, SKK/RKPK, cross-link ethics</li>
+        </ol>
+      </div>
+      <div class="z-section">
+        <div class="z-muted" style="font-size: 0.8rem;">
+          Open Cursor Canvas and add Register + Checklist + this guide to manage everything in one place. See Canvas Guide.
+        </div>
+      </div>
+    </div>
+
+    <!-- Z-Living Pulse Panel (Butterfly Particles + Sound; On/Off/Auto/Read) -->
+    <div
+      id="zLivingPulsePanel"
+      class="z-panel"
+      data-title="Z-Living Pulse"
+      style="right: 1rem; top: 2380px; width: 340px"
+    >
+      <h3>Z-Living Pulse</h3>
+      <div class="z-section">
+        <p class="z-muted">
+          Colour streams &amp; butterfly particles + optional sound. True Reality of Genius Super Saiyan Styles — in memory of our creations together. Same On/Off/Auto/Read pattern as other sections.
+        </p>
+      </div>
+      <div class="z-section">
+        <div class="z-section-title">Mode</div>
+        <div class="z-kv" style="flex-wrap: wrap; gap: 0.5rem;">
+          <span>Mode:</span>
+          <span id="zLivingPulseModeChips" style="display: flex; flex-wrap: wrap; gap: 0.35rem;">
+            <button type="button" class="z-button z-button-subtle z-mode-chip" data-mode="on" title="Particles on">On</button>
+            <button type="button" class="z-button z-button-subtle z-mode-chip" data-mode="off" title="Particles off">Off</button>
+            <button type="button" class="z-button z-button-subtle z-mode-chip" data-mode="auto" title="Auto by context">Auto</button>
+            <button type="button" class="z-button z-button-subtle z-mode-chip" data-mode="read" title="Minimal, read-friendly">Read</button>
+          </span>
+        </div>
+      </div>
+      <div class="z-section">
+        <label class="z-kv" style="align-items: center; gap: 0.5rem;">
+          <input type="checkbox" id="zLivingPulseSound" />
+          <span>Z-Sound Effects (optional) — soft rain &amp; wind ambience (synthetic Web Audio)</span>
+        </label>
+        <label class="z-kv" style="align-items: center; gap: 0.5rem; margin-top: 0.35rem;">
+          <input
+            type="checkbox"
+            id="zLivingPulseMic"
+            title="HTTPS or localhost only · permission required · local analysis · no recording · reduced-motion disables live meter blend"
+          />
+          <span>Enable Z-Soundscape Mic (optional)</span>
+        </label>
+        <p id="zLivingPulseMicNote" class="z-muted" style="font-size: 0.7rem; margin: 0.4rem 0 0 1.5rem; line-height: 1.35;">
+          Audio is analysed only in this browser — nothing is recorded or uploaded. Many browsers require <strong>HTTPS</strong> or <strong>localhost</strong> for microphone access.
+        </p>
+        <ul id="zLivingPulseMicChecklist" class="z-muted" style="font-size: 0.68rem; margin: 0.35rem 0 0 1.25rem; line-height: 1.4; padding-left: 1rem">
+          <li>Mic works only on HTTPS or localhost.</li>
+          <li>Permission is required.</li>
+          <li>Audio is analysed locally in the browser.</li>
+          <li>No recording is created by this feature.</li>
+          <li>Reduced-motion mode disables live mic blending.</li>
+        </ul>
+        <div
+          id="zLivingPulseMicStatus"
+          class="z-muted"
+          style="font-size: 0.72rem; margin: 0.25rem 0 0 1.5rem; color: #c5a000; display: none"
+          role="status"
+          aria-live="polite"
+        ></div>
+      </div>
+      <div class="z-section">
+        <div class="z-section-title">Z-Soundscape Posture (Z-ACG)</div>
+        <p class="z-muted" style="font-size: 0.75rem; margin: 0 0 0.35rem 0;">
+          Owl/dolphin-inspired <strong>hybrid</strong> posture from live reports (vitality meter + soft glow hints).
+        </p>
+        <div id="zSoundscapePostureBody" class="z-muted" style="font-size: 0.78rem;">
+          Loading soundscape posture…
+        </div>
+        <div class="z-soundscape-meter" aria-hidden="true">
+          <div id="zSoundscapeMeterFill" class="z-soundscape-meter-fill"></div>
+        </div>
+      </div>
+      <div class="z-section">
+        <a href="../../docs/Z-LIVING-PULSE.md" target="_blank" rel="noopener noreferrer" class="z-muted" style="font-size: 0.8rem;">Spec: Z-LIVING-PULSE.md</a>
+        ·
+        <a href="../../docs/Z-ACOUSTIC-LIVING-PULSE-ARCHITECTURE.md" target="_blank" rel="noopener noreferrer" class="z-muted" style="font-size: 0.8rem;">Z-ACG architecture</a>
+      </div>
+    </div>
+
+    <!-- Legal & Help Center Panel -->
+    <div
+      id="zLegalHelpPanel"
+      class="z-panel"
+      data-title="Z Legal & Help Center"
+      style="right: 1rem; top: 1700px; width: 360px"
+    >
+      <h3>Z Legal & Help Center</h3>
+      <div class="z-section">
+        <p class="z-muted">
+          This panel gives a high-level overview of your member manual, terms, privacy posture, and
+          Q&amp;A channels. It is backed by the Consent Center and Z-Secretary AI.
+        </p>
+      </div>
+      <div class="z-section">
+        <div class="z-section-title">Quick Links</div>
+        <ul class="z-list">
+          <li>
+            <a href="./z-legal-lawyer-workstation.html" target="_blank" rel="noopener noreferrer"
+              >Open Z-Lawyer Workstation UX-2 (read-only)</a
+            >
+          </li>
+          <li>
+            <a href="../panels/consent-center.html" target="_blank" rel="noopener noreferrer"
+              >Legal &amp; Consent Center</a
+            >
+          </li>
+          <li>
+            <a href="../panels/explainer.html" target="_blank" rel="noopener noreferrer"
+              >Why Did This Happen? (Audit Explainer)</a
+            >
+          </li>
+          <li>
+            <a href="../panels/terms-privacy.html" target="_blank" rel="noopener noreferrer"
+              >Member Terms &amp; Privacy Overview</a
+            >
+          </li>
+        </ul>
+      </div>
+      <div class="z-section">
+        <div class="z-section-title">Compassion &amp; truth</div>
+        <ul class="z-list">
+          <li><a href="../../docs/Z-GUARDIANS-MANIFESTO.md" target="_blank" rel="noopener noreferrer">Guardian's Manifesto</a></li>
+          <li><a href="../../docs/Z-DACNETS.md" target="_blank" rel="noopener noreferrer">Z-DACNETS</a></li>
+          <li><a href="../../docs/Z-HvsP.md" target="_blank" rel="noopener noreferrer">Z-HvsP</a></li>
+          <li><a href="../../INDEX.md" target="_blank" rel="noopener noreferrer">INDEX (all docs)</a></li>
+        </ul>
+      </div>
+      <div class="z-section">
+        <div class="z-section-title">Z-Secretary AI</div>
+        <p class="z-muted">
+          For any account, terms, privacy, or feedback questions, summon Z-Secretary AI. All
+          conversations are logged through Governance and Consent Center.
+        </p>
+        <button id="zLegalSummonSecretaryBtn" class="z-button">Ask Z-Secretary AI</button>
+      </div>
+    </div>
+
+    <!-- Z-Lawyer Workstation UX-2 panel (read-only visibility iframe) -->
+    <div
+      id="zLegalWorkstationPanel"
+      class="z-panel"
+      data-title="Z-Lawyer Workstation UX-2"
+      style="left: 360px; top: 1700px; width: 700px; height: 620px"
+    >
+      <h3>Z-Lawyer Command Workstation UX-2 (read-only)</h3>
+      <div class="z-section">
+        <p class="z-muted">
+          Visibility panel only: no legal advice runtime, no endorsement, no client data intake, no product launch authority.
+        </p>
+      </div>
+      <iframe
+        src="./z-legal-lawyer-workstation.html"
+        title="Z-Lawyer Command Workstation UX-2 read-only cockpit"
+        loading="lazy"
+        style="width: 100%; min-height: 500px; border: 1px solid rgba(255,255,255,0.12); border-radius: 10px; background: #0f1420;"
+      ></iframe>
+    </div>
+
+    <!-- Insight Lab Panel -->
+    <div
+      id="zInsightLabPanel"
+      class="z-panel"
+      data-title="Z Insight Lab"
+      style="right: 1rem; top: 840px; width: 360px"
+    >
+      <h3>Z Insight Lab</h3>
+      <div class="z-section">
+        <div class="z-section-title">Latest Insights</div>
+        <ul id="zInsightList" class="z-insight-list"></ul>
+      </div>
+      <div class="z-section">
+        <button id="zInsightRefresh" class="z-button">Refresh Insights</button>
+      </div>
+    </div>
+
+    <!-- Autopilot Replay Panel -->
+    <div
+      id="zAutopilotReplayPanel"
+      class="z-panel"
+      data-title="Z Autopilot Replay"
+      style="left: 360px; top: 420px; width: 380px"
+    >
+      <h3>Z Autopilot Replay</h3>
+      <div class="z-section">
+        <div class="z-muted">Recent autopilot runs</div>
+      </div>
+      <div class="z-replay-list" id="zReplayList"></div>
+      <div id="zReplayDetail" class="z-replay-detail" style="display: none"></div>
+      <div class="z-action-bar">
+        <button id="zReplayLoadBtn" class="z-button">Load Session</button>
+        <button id="zReplayPlayBtn" class="z-button" disabled>Play</button>
+      </div>
+    </div>
+
+    <!-- Chain View Panel -->
+    <div
+      id="zChainViewPanel"
+      class="z-panel"
+      data-title="Z Chain View"
+      style="left: 360px; top: 900px; width: 380px"
+    >
+      <h3>Z Chain View</h3>
+      <div id="zChainInfo" class="z-section">
+        <div class="z-muted">Loaded: <span id="zChainLoadedCount">0</span></div>
+        <div class="z-muted">Selected: <span id="zChainSelectedCount">0</span></div>
+        <div id="zChainSuggestion" class="z-muted"></div>
+        <div id="zChainStatus" class="z-muted">Status: idle.</div>
+        <pre id="zChainPathSummary" class="z-chain-summary">No path selected.</pre>
+      </div>
+    </div>
+
+    <!-- ZUNO-4ROOT Communication Spine (read-only doctrine surface) -->
+    <div
+      id="zZuno4RootSpinePanel"
+      class="z-panel"
+      data-title="ZUNO-4ROOT Communication Spine"
+      style="left: 1rem; top: 1180px; width: 380px"
+    >
+      <h3>ZUNO-4ROOT Communication Spine</h3>
+      <p class="z-muted" style="font-size: 0.82rem; margin-top: 0">
+        All ecosystem signals are routed through read-only observation, 14DRP review, SKK/RKPK guardian
+        display, and human approval before any meaningful action.
+      </p>
+      <div class="z-section">
+        <div class="z-section-title">Flow labels (doctrine)</div>
+        <div style="display: flex; flex-wrap: wrap; gap: 0.35rem; margin-top: 0.35rem">
+          <span class="z-badge z-risk-low">USER_INPUT</span>
+          <span class="z-badge z-risk-low">AI_SIGNAL</span>
+          <span class="z-badge z-risk-low">SYSTEM_HEALTH</span>
+          <span class="z-badge z-risk-medium">14DRP_CHECK</span>
+          <span class="z-badge z-risk-low">SKK_RKPK_REVIEW</span>
+          <span class="z-badge z-risk-high">STOP_GATE</span>
+          <span class="z-badge z-risk-sacred">HUMAN_APPROVAL</span>
+          <span class="z-badge z-risk-low">AUDIT_LOG</span>
+        </div>
+        <p class="z-muted" style="font-size: 0.72rem; margin: 0.5rem 0 0 0">
+          Badges name signal classes — not live counters unless wired later with real metrics (see
+          doctrine).
+        </p>
+      </div>
+      <div class="z-section">
+        <div class="z-section-title">Flow</div>
+        <pre class="z-muted" style="font-size: 0.72rem; white-space: pre-wrap; margin: 0">USER / MODULE / AI / SYSTEM EVENT → SIGNAL CAPTURE → ZUNO-4ROOT CLASSIFICATION → 14DRP CHECK →
+SKK/RKPK DASHBOARD → HUMAN REVIEW → APPROVED ACTION OR STOP_GATE → AUDIT LOG / REPORT</pre>
+      </div>
+      <div class="z-section">
+        <div class="z-section-title">Doctrine</div>
+        <ul class="z-list" style="font-size: 0.82rem">
+          <li><a href="../../docs/zuno-4root/ZUNO_4ROOT_COMMUNICATION_SPINE.md" target="_blank" rel="noopener noreferrer">Communication spine</a></li>
+          <li><a href="../../docs/zuno-4root/ZUNO_4ROOT_AI_PROTOCOL.md" target="_blank" rel="noopener noreferrer">AI protocol</a></li>
+          <li><a href="../../docs/zuno-4root/SIGNALS_AND_GATES.md" target="_blank" rel="noopener noreferrer">Signals &amp; gates</a></li>
+          <li><a href="../../docs/zuno-4root/14DR_ALIGNMENT.md" target="_blank" rel="noopener noreferrer">14 DRP alignment</a></li>
+        </ul>
+      </div>
+      <p class="z-muted" style="font-size: 0.78rem; margin: 0">
+        ZUNO-4ROOT improves ecosystem awareness but does not grant autonomous authority. Serious
+        actions require lawful human review.
+      </p>
+    </div>
+
+    <!-- Companion panel — ZUNO-4ROOT canvas + Z-ROOT-7 council (docs/Z_ROOT_7_VISUAL_INTEGRATION_PROFILE.md) -->
+    <div
+      id="zCompanion3dPanel"
+      class="z-panel"
+      data-title="ZUNO-4ROOT + Z-ROOT-7 Guardian Council"
+      data-length="tall"
+      style="left: 1rem; top: 1560px; width: min(560px, 96vw)"
+    >
+      <h3>ZUNO-4ROOT · Guardian council panel</h3>
+      <p class="z-muted" style="font-size: 0.82rem; margin-top: 0">
+        One panel: four-root doctrine canvas above, plus <strong>Z-ROOT-7</strong> seven-guardian coordination below (visual
+        ethics map — not live AI, no execution).
+      </p>
+      <div id="zCompanionMeta" class="z-companion-meta">
+        <div id="zCompanionMood" class="z-muted">Mood: loading</div>
+        <div id="zCompanionCompletion" class="z-muted">Completion: 0%</div>
+      </div>
+      <div class="z-progress">
+        <div id="zCompanionProgress" class="z-progress-fill" style="width: 0%"></div>
+      </div>
+      <canvas id="zCompanion3dCanvas" class="z-companion-canvas" aria-label="Four-root guardian canvas"></canvas>
+      <p class="z-muted" style="font-size: 0.72rem; margin: 0.35rem 0 0 0">
+        <strong style="color: rgba(251, 113, 133, 0.95)">Red line</strong> — SKK↔RKPK parent-guardian pair (doctrine layer). Pale mint — AMK/Zuno hubs and orbit mesh.
+      </p>
+
+      <div
+        id="zCompanionRootSevenLayer"
+        class="z-section z-companion-root-seven-embed z-companion-root-seven-embed--council"
+        tabindex="-1"
+        role="region"
+        aria-label="Z-ROOT-7 seven guardian coordination"
+      >
+        <div class="z-companion-seven-header">
+          <h4 class="z-companion-seven-h4">Z-ROOT-7 · Seven Guardian Coordination</h4>
+          <p class="z-muted z-companion-seven-sub">Symbolic advisory council — visual ethics map only.</p>
+        </div>
+        <div class="z-hub-root7-galaxy-wrap z-hub-root7-galaxy-wrap--in-companion">
+          <p id="zHubRoot7Lead" class="z-root7-lead z-root7-lead--companion"></p>
+          <div id="zHubRoot7GuardianMount" aria-label="Seven guardian 3D-lite constellation"></div>
+        </div>
+        <div
+          id="zHubRoot7CardStrip"
+          class="z-hub-root7-card-strip-host"
+          aria-label="Guardian roster fallback and keyboard path"
+        ></div>
+        <div class="z-section" style="margin-top: 0.65rem; padding-top: 0">
+          <div class="z-section-title" style="font-size: 0.75rem">Hub spine (read-only)</div>
+          <ul class="z-hub-root7-spine-links">
+            <li>
+              <a href="../../docs/zuno-4root/ZUNO_4ROOT_COMMUNICATION_SPINE.md" target="_blank" rel="noopener noreferrer"
+                >ZUNO-4ROOT spine</a
+              >
+              ·
+              <a href="../../docs/Z_TRAFFIC_MINIBOTS.md" target="_blank" rel="noopener noreferrer">Z-Traffic</a>
+              ·
+              <a href="../../docs/Z_AMK_GTAI_STRATEGY_COUNCIL.md" target="_blank" rel="noopener noreferrer">Z-AMK-GTAI</a>
+              ·
+              <a href="../../docs/security/Z_VH100_VEGETA_HARISHA_SECURITY_CORE.md" target="_blank" rel="noopener noreferrer"
+                >VH100</a
+              >
+              /
+              <a href="../../docs/security/Z_MCBURB_BACKUP_RECONVERGE_BOOSTER.md" target="_blank" rel="noopener noreferrer"
+                >MCBURB</a
+              >
+              ·
+              <a href="./amk-goku-main-control.html">AMK map</a>
+            </li>
+          </ul>
+        </div>
+        <p class="z-muted" style="font-size: 0.72rem; margin: 0.5rem 0 0 0">
+          <strong>Observation:</strong> no providers, scraping, deploy, autopilot. Orbit / parallax obey reduced motion.
+          <strong class="z-companion-seven-rank">Council roster:</strong>
+          AMK-Goku · Zuno AI · AT / Franed AI · Princess AI · Blackie AI · JB Z-Irish Fox AI · Sister Aisling-Sol AI · Ethical
+          Root Law anchor.
+        </p>
+      </div>
+
+      <details class="z-companion-four-root-details">
+        <summary>Four-root per-root notes &amp; doctrine (optional)</summary>
+        <div class="z-section">
+          <div class="z-muted" style="font-size: 0.78rem">
+            Completion weights when registry fetch succeeds; otherwise indicative —
+            <a href="../../docs/zuno-4root/HERE_VS_THERE_LAW.md" target="_blank" rel="noopener noreferrer">Here vs there law</a>.
+          </div>
+        </div>
+        <div class="z-section">
+          <div class="z-section-title">AMK-Goku root</div>
+          <div id="zCompanionAmk" class="z-muted">Loading...</div>
+        </div>
+        <div class="z-section">
+          <div class="z-section-title">SKK root</div>
+          <div id="zCompanionSkk" class="z-muted">Loading...</div>
+        </div>
+        <div class="z-section">
+          <div class="z-section-title">RKPK root</div>
+          <div id="zCompanionRkpk" class="z-muted">Loading...</div>
+        </div>
+        <div class="z-section">
+          <div class="z-section-title">Zuno root</div>
+          <div id="zCompanionZuno" class="z-muted">Loading...</div>
+        </div>
+        <div class="z-section">
+          <div class="z-section-title">Doctrine links</div>
+          <ul class="z-list" style="font-size: 0.82rem">
+            <li><a href="../../docs/zuno-4root/FOUR_ROOT_DOCTRINE.md" target="_blank" rel="noopener noreferrer">Four-root doctrine</a></li>
+            <li><a href="../../docs/zuno-4root/PARENT_LAYER_SKK_RKPK.md" target="_blank" rel="noopener noreferrer">SKK/RPK parent-guardian layer</a></li>
+            <li><a href="../../docs/zuno-4root/HERE_VS_THERE_LAW.md" target="_blank" rel="noopener noreferrer">Here vs there law</a></li>
+          </ul>
+        </div>
+        <p class="z-muted" style="font-size: 0.78rem; margin: 0">
+          ZUNO-4ROOT observes, reflects, audits, and advises. It does not replace lawful human oversight.
+        </p>
+      </details>
+
+      <div class="z-section z-companion-actions">
+        <button id="zCompanionMuteBtn" class="z-button">Voice: Off</button>
+      </div>
+    </div>
+
+    <!-- Harisha Status Panel -->
+    <div
+      id="zHarishaStatusPanel"
+      class="z-panel"
+      data-title="Z Harisha Status & Zones"
+      style="left: 1rem; top: 2480px; width: 360px"
+    >
+      <h3>Z Harisha + Zones</h3>
+      <div class="z-section">
+        <div class="z-kv">
+          <span>Harisha score</span>
+          <span id="zHarishaScoreValue">--</span>
+        </div>
+        <div class="z-muted" id="zHarishaMood">State: loading…</div>
+      </div>
+      <div class="z-section">
+        <div class="z-kv">
+          <span>Zone</span>
+          <span id="zHarishaZoneValue">unknown</span>
+        </div>
+        <div class="z-muted" id="zHarishaZoneReason">Reason: not set</div>
+      </div>
+      <div class="z-section">
+        <div class="z-section-title">Recent reflection</div>
+        <p id="zHarishaReflectionSummary" class="z-muted">Waiting for Super Ghost summary…</p>
+      </div>
+      <div class="z-section">
+        <button
+          id="zReflectionQuickRun"
+          class="z-button"
+          data-harisha-action="Trigger quick reflection"
+        >
+          Run reflection now
+        </button>
+      </div>
+    </div>
+
+    <!-- Summon FAB -->
+    <button
+      id="summonCompanionFab"
+      class="z-summon-fab"
+      title="Summon ZUNO-4ROOT guardian layer"
+      aria-label="Summon ZUNO-4ROOT guardian layer"
+    >
+      4-ROOT
+    </button>
+    <button
+      id="summonRoot7Fab"
+      type="button"
+      class="z-summon-fab z-summon-fab--seven"
+      title="Scroll to seven-guardian constellation in ZUNO-4ROOT panel"
+      aria-label="Scroll to seven-guardian constellation in ZUNO-4ROOT panel"
+    >
+      7·ROOT
+    </button>
+
+    <!-- Core System Scripts -->
+    <script src="../../core/z_module_registry.js"></script>
+    <script src="../../core/z_module_registry_boot.js"></script>
+    <script src="../../core/ai_tower/z_ai_tower_core.js"></script>
+    <script src="../../core/z_module_registry_autoscan.js"></script>
+    <script src="../../core/z_system_metrics.js"></script>
+    <script src="../../core/z_chain_registry.js"></script>
+    <script src="../../core/z_chain_history.js"></script>
+    <script src="../../core/z_wisdom_ring.js"></script>
+    <script src="../../core/z_chain_view.js"></script>
+    <script src="../../core/z_awareness.js"></script>
+    <script src="../../interface/z_accessibility.js"></script>
+    <script src="../../core/z_dashboard_tools_a11y.js"></script>
+    <script src="../../interface/z_auto_compass.js"></script>
+    <script src="../../core/z_security_gate.js"></script>
+    <script src="../../core/z_privacy_boundary.js"></script>
+    <script src="../../core/z_status_console.js"></script>
+    <script src="../../core/z_emotion_filter.js"></script>
+    <script src="../../core/z_energy_response.js"></script>
+    <script src="../../core/z_chronicle.js"></script>
+    <script src="../../core/z_chronicle_hud.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="../../core/correlation.js"></script>
+    <script src="../../core/trend_predict.js"></script>
+    <script src="../../core/exp_smooth_predict.js"></script>
+    <script src="../../core/z_dashboard.js"></script>
+    <script src="../../core/z_dev_mode.js"></script>
+    <script src="../../core/z_governance_hud.js"></script>
+    <script src="../../core/z_codex_suggestions.js"></script>
+    <script src="../../core/z_priority_board.js"></script>
+    <script src="../../core/z_module_registry_panel.js"></script>
+    <script src="../../core/z_module_health_panel.js"></script>
+    <script src="../../core/z_governance_panel_boot.js"></script>
+    <script src="../../core/z_formula_registry_panel.js"></script>
+    <script src="../../core/z_heartbeat_engine.js"></script>
+    <script src="../../core/z_formula_runtime_heartbeat.js"></script>
+    <script src="../../core/z_folder_manager_panel.js"></script>
+    <script src="../../core/z_wisdom_ring_panel.js"></script>
+    <script src="../../core/z_companion_3d.js"></script>
+    <script defer src="../scripts/z-root-guardian-coordination-readonly.js"></script>
+    <script defer src="../scripts/z-hub-root-seven-boot.js"></script>
+    <script src="../../core/z_autopilot_controls.js"></script>
+    <script src="../../core/co_autopilot_preview.js"></script>
+    <script src="../../core/lens_status.js"></script>
+    <script src="../../core/quiet_mode_chip.js"></script>
+    <script src="../../core/trust_pack_chip.js"></script>
+    <script src="../../core/autopilot/z_autopilot_replay.js"></script>
+    <script src="../../core/autopilot/z_autopilot_replay_ui.js"></script>
+    <script src="../../core/insight_feed.js"></script>
+    <script src="../../core/z_autocomplete.js"></script>
+    <script src="../../miniai/base_bot.js"></script>
+    <script src="../../miniai/scribe_bot.js"></script>
+    <script src="../../miniai/protector_bot.js"></script>
+    <script src="../../miniai/designer_bot.js"></script>
+    <script src="../../miniai/navigator_bot.js"></script>
+    <script src="../../miniai/folder_manager_bot.js"></script>
+    <script src="../../core/z_miniai_boot.js"></script>
+    <script src="../../core/z_ssws_banner.js"></script>
+    <script src="../../core/z_pc_root_projects_panel.js"></script>
+    <script src="../../core/z_autorun_monitor.js"></script>
+    <script src="../../core/z_pending_audit_monitor.js"></script>
+    <script src="../../core/z_zuno_trend_panel.js"></script>
+    <script src="../../core/z_execution_enforcer_panel.js"></script>
+    <script src="../../core/z_bridge_intelligence_panel.js"></script>
+    <script src="../../core/z_ssws_ecosystem_health_card.js"></script>
+    <script src="../../core/z_storage_hygiene_panel.js"></script>
+    <script src="../../core/z_storage_hygiene_badge.js"></script>
+    <script src="../../core/z_anydevices_panel.js"></script>
+    <script src="../../core/z_anydevices_badge.js"></script>
+    <script src="../../core/z_cycle_indicator_panel.js"></script>
+    <script src="../../core/z_soundscape_audio.js"></script>
+    <script src="../../core/z_ambient_weather_audio.js"></script>
+    <script src="../../core/z_soundscape_pulse_panel.js"></script>
+    <script src="../../core/z_blueprint_potential_radar.js"></script>
+    <script src="../../core/z_error_budget_panel.js"></script>
+    <script src="../../core/z_cycle_indicator_badge.js"></script>
+    <script src="../../core/z_security_sentinel_badge.js"></script>
+    <script src="../../core/z_growth_mode.js"></script>
+    <script src="../../core/z_growth_mode_toggle.js"></script>
+    <script src="../../core/z_cross_project_observer_badge.js"></script>
+    <script src="../../core/z_slo_badge.js"></script>
+    <script src="../../core/z_extension_guard_badge.js"></script>
+    <script src="../../core/z_error_budget_badge.js"></script>
+    <script src="../../core/z_autonomous_health_panel.js"></script>
+    <script src="../../core/z_formula_posture_panel.js"></script>
+    <script src="../../core/z_arrbce_last_run_badge.js"></script>
+    <script src="../../core/z_narrow_health_strip.js"></script>
+    <script src="../../core/z_low_light_toggle.js"></script>
+    <script src="../../core/z_hygiene_miniai_hook.js"></script>
+    <script src="../../core/z_trust_certificate_panel.js"></script>
+    <script src="../../core/z_overlay_adjuster.js"></script>
+    <script src="../../core/z_ui_extras.js"></script>
+    <script src="../../core/z_hub_mini_bot_rail_sync.js"></script>
+    <script src="../../core/z_layout_engine.js"></script>
+    <script src="../../core/z_registry_badge.js"></script>
+
+    <script type="module" src="../../core/z_sanctuary_boot.js"></script>
+    <script src="../../core/vault_status.js"></script>
+    <script src="../../core/autopilot/z_autopilot_simulator.js"></script>
+    <script src="../../core/autopilot/z_governance_reports.js"></script>
+    <script src="../../core/autopilot/z_governance_review.js"></script>
+    <script src="../../core/ai_tower/z_super_ghost.js"></script>
+    <script src="../../core/super_ghost_panel.js"></script>
+    <script src="../../core/z_ai_status_check.js"></script>
+    <script src="../../core/z_ai_status_export.js"></script>
+    <script src="../../core/media/z_screen_recorder.js"></script>
+    <script src="../../core/roulette_history_loader.js"></script>
+    <script src="../../core/monetization_layer.js"></script>
+    <script src="../../core/monetization_ui.js"></script>
+    <script src="../../core/roulette_intelligence.js"></script>
+    <script src="../../core/intelligence_panel.js"></script>
+    <script src="../../core/social_layer.js"></script>
+    <script src="../../core/social_ui.js"></script>
+    <script src="../../core/harisha.js"></script>
+    <script src="../../core/harisha_guidance.js"></script>
+    <script src="../../core/harisha_zone_panel.js"></script>
+    <script src="../../core/harisha_tooltips.js" type="module"></script>
+    <script src="../../core/harisha_integration.js" type="module"></script>
+    <script src="../../core/super_ghost_reflection_ui.js"></script>
+    <script src="../../z_colour/z_colour_binding.js" type="module"></script>
+    <script src="../scripts/zuno-hand-ui.js"></script>
+    <script src="../scripts/z-commander-panel.js"></script>
+    <script>
+      (function () {
+        var TONE = ['edge-status-good', 'edge-status-warn', 'edge-status-bad'];
+
+        function applyTone(el, tone) {
+          if (!el) return;
+          TONE.forEach(function (c) {
+            el.classList.remove(c);
+          });
+          if (tone && TONE.indexOf(tone) !== -1) {
+            el.classList.add(tone);
+          }
+        }
+
+        function hhmm(iso) {
+          if (!iso) return '--:--';
+          var d = new Date(iso);
+          if (isNaN(d.getTime())) return '--:--';
+          var h = String(d.getHours()).padStart(2, '0');
+          var m = String(d.getMinutes()).padStart(2, '0');
+          return h + ':' + m;
+        }
+
+        function applyTwinRootsBadge(state, posture, lastUpdate, tooltipJson) {
+          var stateUp = String(state || '--').toUpperCase();
+          var postureUp = posture ? String(posture).toUpperCase() : null;
+          var text = 'TwinRoots: ' + stateUp;
+          if (postureUp) text += ' · ' + postureUp;
+          if (lastUpdate) text += ' · ' + hhmm(lastUpdate);
+          var top = document.getElementById('zTwinRootsBadge');
+          if (top) top.textContent = text;
+          if (top) top.title = tooltipJson || top.title;
+          applyTone(
+            top,
+            state === 'offline' ? 'edge-status-bad' : state === 'mock' ? 'edge-status-warn' : 'edge-status-good'
+          );
+        }
+
+        async function refreshTwinRootsBadge() {
+          try {
+            var mockResp = await fetch('../../data/z_twin_roots_phase1_mock.json', { cache: 'no-store' });
+            if (!mockResp.ok) throw new Error('mock_missing');
+
+            var statusResp = await fetch('../../data/reports/z_twin_roots_status.json', { cache: 'no-store' });
+            if (statusResp.ok) {
+              var status = await statusResp.json();
+              var posture = status?.readiness?.posture || null;
+              var lastUpdate = status?.activity?.last_update_timestamp || status?.generated_at || null;
+              var tooltipJson = JSON.stringify(status, null, 2);
+              applyTwinRootsBadge('mock', posture, lastUpdate, tooltipJson);
+            } else {
+              applyTwinRootsBadge('mock', null, null, 'Twin Roots status report not found.');
+            }
+          } catch (err) {
+            applyTwinRootsBadge('offline', null, null, 'Twin Roots status is OFFLINE.');
+          }
+        }
+
+        if (document.readyState === 'loading') {
+          document.addEventListener('DOMContentLoaded', refreshTwinRootsBadge);
+        } else {
+          refreshTwinRootsBadge();
+        }
+      })();
+    </script>
+    <script>
+      (function () {
+        function wireLegalHelpPanel() {
+          var btn = document.getElementById('zLegalSummonSecretaryBtn');
+          if (!btn) return;
+          btn.addEventListener('click', function () {
+            if (window.ZLayoutOS && typeof window.ZLayoutOS.revealPanel === 'function') {
+              window.ZLayoutOS.revealPanel('zAwarenessPanel', {
+                userInitiated: true,
+                label: 'Legal & Help with Z-Secretary AI',
+              });
+            } else {
+              alert('Z-Secretary AI will answer your legal and help questions from the main dashboard.');
+            }
+          });
+        }
+        if (document.readyState === 'loading') {
+          document.addEventListener('DOMContentLoaded', wireLegalHelpPanel);
+        } else {
+          wireLegalHelpPanel();
+        }
+      })();
+    </script>
+    <script>
+      (function () {
+        function parseBadgePercent(text) {
+          if (!text) return null;
+          var match = text.match(/(\d+)%/);
+          return match ? parseInt(match[1], 10) : null;
+        }
+
+        function collectMetricScore() {
+          var slo = parseBadgePercent(document.getElementById('zSloHealthBadge')?.textContent || '');
+          var storage = parseBadgePercent(document.getElementById('zStorageHygieneBadge')?.textContent || '');
+          var devices = parseBadgePercent(document.getElementById('zAnyDevicesBadge')?.textContent || '');
+          var cycles = parseBadgePercent(document.getElementById('zCycleIndicatorBadge')?.textContent || '');
+          var sentinel = parseBadgePercent(document.getElementById('zSecuritySentinelBadge')?.textContent || '');
+
+          var values = [slo, storage, devices, cycles, sentinel].filter(function (v) {
+            return typeof v === 'number' && !isNaN(v);
+          });
+          if (!values.length) return null;
+
+          var sum = values.reduce(function (acc, v) {
+            return acc + v;
+          }, 0);
+          return Math.round(sum / values.length);
+        }
+
+        function buildBenchmarks() {
+          var list = document.getElementById('zBenchmarksList');
+          var scoreEl = document.getElementById('zBenchmarksUniverseScore');
+          var summaryEl = document.getElementById('zBenchmarksUniverseSummary');
+          if (!list || !scoreEl || !summaryEl) return;
+
+          list.innerHTML = '';
+
+          var score = collectMetricScore();
+          if (score == null) {
+            scoreEl.textContent = '--';
+            summaryEl.textContent = 'No metric badges available yet. Let Z-EAII run its scans.';
+            return;
+          }
+
+          scoreEl.textContent = score + '%';
+          if (score >= 85) {
+            summaryEl.textContent = 'Universe is in a strong state. Focus on refinement and new experiments.';
+          } else if (score >= 65) {
+            summaryEl.textContent = 'Universe is stable but has active friction points. Clear reds and ambers first.';
+          } else {
+            summaryEl.textContent = 'Universe needs focused healing. Resolve red indicators and re-run Z-AIDFU.';
+          }
+
+          function addItem(label, detail) {
+            var li = document.createElement('li');
+            li.className = 'z-insight-item';
+            li.textContent = label + ' — ' + detail;
+            list.appendChild(li);
+          }
+
+          var sloText = document.getElementById('zSloHealthBadge')?.textContent || 'SLO: --';
+          var storageText = document.getElementById('zStorageHygieneBadge')?.textContent || 'Storage: --';
+          var sentinelText = document.getElementById('zSecuritySentinelBadge')?.textContent || 'Sentinel: --';
+
+          addItem('SLO Guard', sloText.trim());
+          addItem('Storage Hygiene', storageText.trim());
+          addItem('Security Sentinel', sentinelText.trim());
+        }
+
+        var benchmarksTimer = null;
+
+        function startBenchmarksPolling() {
+          if (benchmarksTimer) return;
+          benchmarksTimer = setInterval(buildBenchmarks, 60000);
+        }
+
+        function bootBenchmarks() {
+          buildBenchmarks();
+          startBenchmarksPolling();
+        }
+
+        if (document.readyState === 'loading') {
+          document.addEventListener('DOMContentLoaded', bootBenchmarks);
+        } else {
+          bootBenchmarks();
+        }
+
+        window.ZBenchmarksAdviser = {
+          refresh: buildBenchmarks,
+          stop: function () {
+            if (benchmarksTimer) {
+              clearInterval(benchmarksTimer);
+              benchmarksTimer = null;
+            }
+          },
+        };
+      })();
+    </script>
+    <script>
+      (function () {
+        function wireTooltsExtras() {
+          var privateBtn = document.getElementById('zPrivateConsoleBtn');
+          var addLogBtn = document.getElementById('zAddLogBtn');
+          if (privateBtn) {
+            privateBtn.addEventListener('click', function () {
+              if (window.ZLayoutOS && typeof window.ZLayoutOS.revealPanel === 'function') {
+                window.ZLayoutOS.revealPanel('zPanelDirectory', { userInitiated: true, label: 'Private Console' });
+              } else {
+                var rail = document.getElementById('zStatusRail');
+                if (rail) rail.style.display = rail.style.display === 'none' ? '' : 'none';
+              }
+            });
+          }
+          if (addLogBtn) {
+            addLogBtn.addEventListener('click', function () {
+              if (window.ZLayoutOS && typeof window.ZLayoutOS.revealPanel === 'function') {
+                window.ZLayoutOS.revealPanel('zChroniclePanel', { userInitiated: true, label: 'Add Log' });
+              }
+              if (window.ZChronicle && typeof window.ZChronicle.startRecord === 'function') {
+                window.ZChronicle.startRecord();
+              }
+            });
+          }
+        }
+        if (document.readyState === 'loading') {
+          document.addEventListener('DOMContentLoaded', wireTooltsExtras);
+        } else {
+          wireTooltsExtras();
+        }
+      })();
+    </script>
+    <script>
+      (function () {
+        var KEY = 'zBlueprintPanelMode';
+        function wireBlueprintModeChips() {
+          var container = document.getElementById('zBlueprintModeChips');
+          if (!container) return;
+          var chips = container.querySelectorAll('.z-mode-chip');
+          var current = (typeof localStorage !== 'undefined' && localStorage.getItem(KEY)) || 'on';
+          function setMode(mode) {
+            current = mode;
+            chips.forEach(function (btn) {
+              btn.classList.toggle('z-mode-active', btn.getAttribute('data-mode') === mode);
+            });
+            try { localStorage.setItem(KEY, mode); } catch (e) {}
+          }
+          chips.forEach(function (btn) {
+            btn.addEventListener('click', function () { setMode(btn.getAttribute('data-mode')); });
+          });
+          setMode(current);
+        }
+        if (document.readyState === 'loading') {
+          document.addEventListener('DOMContentLoaded', wireBlueprintModeChips);
+        } else {
+          wireBlueprintModeChips();
+        }
+      })();
+    </script>
+    <script>
+      (function () {
+        var MODE_KEY = 'zLivingPulseMode';
+        var SOUND_KEY = 'zLivingPulseSound';
+        var MIC_KEY = 'zLivingPulseMic';
+        var wrap = document.getElementById('zLivingPulseWrap');
+        var canvas = document.getElementById('zLivingPulseCanvas');
+        var modeChips = document.getElementById('zLivingPulseModeChips');
+        var soundCb = document.getElementById('zLivingPulseSound');
+        var micCb = document.getElementById('zLivingPulseMic');
+        var micStatusEl = document.getElementById('zLivingPulseMicStatus');
+
+        function updateMicStatus() {
+          if (!micStatusEl) return;
+          var st = window.ZSoundscapeAudio;
+          if (micCb && !micCb.checked) {
+            micStatusEl.textContent = '';
+            micStatusEl.style.display = 'none';
+            return;
+          }
+          if (st && st.active) {
+            micStatusEl.textContent = '';
+            micStatusEl.style.display = 'none';
+            return;
+          }
+          if (st && st.error) {
+            micStatusEl.textContent = st.error;
+            micStatusEl.style.display = 'block';
+            return;
+          }
+          micStatusEl.textContent = '';
+          micStatusEl.style.display = 'none';
+        }
+
+        function getMode() {
+          return (typeof localStorage !== 'undefined' && localStorage.getItem(MODE_KEY)) || 'on';
+        }
+        function getSound() {
+          try { return localStorage.getItem(SOUND_KEY) === 'true'; } catch (e) { return false; }
+        }
+        function getMic() {
+          try { return localStorage.getItem(MIC_KEY) === 'true'; } catch (e) { return false; }
+        }
+        function setMic(on) {
+          try { localStorage.setItem(MIC_KEY, on ? 'true' : 'false'); } catch (e) {}
+          var api = window.ZSoundscapeAudioAPI;
+          if (api) {
+            if (on) {
+              api.startWithConsent().then(function () {
+                updateMicStatus();
+              });
+            } else {
+              api.stop();
+              updateMicStatus();
+            }
+          }
+          runPulse();
+        }
+        function setMode(mode) {
+          try { localStorage.setItem(MODE_KEY, mode); } catch (e) {}
+          if (modeChips) {
+            modeChips.querySelectorAll('.z-mode-chip').forEach(function (btn) {
+              btn.classList.toggle('z-mode-active', btn.getAttribute('data-mode') === mode);
+            });
+          }
+          runPulse();
+        }
+        function setSound(on) {
+          try { localStorage.setItem(SOUND_KEY, on ? 'true' : 'false'); } catch (e) {}
+          var amb = window.ZAmbientWeather;
+          if (amb) {
+            if (on) {
+              amb.start({ rain: 0.42, wind: 0.36 });
+            } else {
+              amb.stop();
+            }
+          }
+          runPulse();
+        }
+
+        var animId = null;
+        var reducedMotion = typeof window !== 'undefined' && window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+        function runPulse() {
+          var mode = getMode();
+          var active = (mode === 'on') || (mode === 'auto') || (mode === 'read');
+          if (mode === 'read') active = true;
+          if (!canvas || !wrap) return;
+          if (animId) { cancelAnimationFrame(animId); animId = null; }
+          wrap.style.visibility = (active && !reducedMotion) ? 'visible' : 'hidden';
+          if (!active || reducedMotion) return;
+
+          var ctx = canvas.getContext('2d');
+          var w = canvas.width = canvas.offsetWidth || window.innerWidth;
+          var h = canvas.height = canvas.offsetHeight || window.innerHeight;
+          var baseCount = mode === 'read' ? 8 : 28;
+          var extRms = (window.ZSoundscapeAudio && window.ZSoundscapeAudio.active && window.ZSoundscapeAudio.rms) || 0.5;
+          var count = Math.round(baseCount * (0.6 + 0.4 * extRms));
+          var particles = [];
+          var palette = ['rgba(100,180,255,0.25)', 'rgba(180,140,255,0.2)', 'rgba(255,200,150,0.2)', 'rgba(150,220,200,0.2)'];
+          for (var i = 0; i < count; i++) {
+            particles.push({
+              x: Math.random() * w, y: Math.random() * h,
+              vx: (Math.random() - 0.5) * 0.4, vy: (Math.random() - 0.5) * 0.3,
+              r: 2 + Math.random() * 4, color: palette[i % palette.length],
+              phase: Math.random() * Math.PI * 2
+            });
+          }
+
+          function tick() {
+            w = canvas.width = canvas.offsetWidth || window.innerWidth;
+            h = canvas.height = canvas.offsetHeight || window.innerHeight;
+            ctx.clearRect(0, 0, w, h);
+            var t = Date.now() * 0.001;
+            var rms = (window.ZSoundscapeAudio && window.ZSoundscapeAudio.active && window.ZSoundscapeAudio.rms) || 0.5;
+            var opacityScale = 0.7 + 0.3 * rms;
+            particles.forEach(function (p) {
+              var bx = Math.sin(t + p.phase) * 12;
+              var by = Math.cos(t * 0.7 + p.phase) * 8;
+              p.x += p.vx + bx * 0.02;
+              p.y += p.vy + by * 0.02;
+              if (p.x < 0 || p.x > w) p.vx *= -1;
+              if (p.y < 0 || p.y > h) p.vy *= -1;
+              p.x = Math.max(0, Math.min(w, p.x));
+              p.y = Math.max(0, Math.min(h, p.y));
+              ctx.beginPath();
+              ctx.ellipse(p.x, p.y, p.r * 1.2, p.r, 0, 0, Math.PI * 2);
+              var alpha = parseFloat((p.color.match(/[\d.]+(?=\)$)/) || [0.2])[0]) || 0.2;
+              ctx.fillStyle = p.color.replace(/[\d.]+\)$/, (opacityScale * alpha) + ')');
+              ctx.fill();
+            });
+            animId = requestAnimationFrame(tick);
+          }
+          tick();
+        }
+
+        function wire() {
+          if (modeChips) {
+            modeChips.querySelectorAll('.z-mode-chip').forEach(function (btn) {
+              btn.addEventListener('click', function () { setMode(btn.getAttribute('data-mode')); });
+            });
+          }
+          if (soundCb) {
+            soundCb.checked = getSound();
+            soundCb.addEventListener('change', function () { setSound(soundCb.checked); });
+            if (getSound() && window.ZAmbientWeather) {
+              window.ZAmbientWeather.start({ rain: 0.42, wind: 0.36 });
+            }
+          }
+          if (micCb) {
+            micCb.checked = getMic();
+            micCb.addEventListener('change', function () { setMic(micCb.checked); });
+            if (getMic() && window.ZSoundscapeAudioAPI) {
+              window.ZSoundscapeAudioAPI.startWithConsent().then(function () { updateMicStatus(); });
+            }
+            setInterval(updateMicStatus, 1500);
+            updateMicStatus();
+          }
+          setMode(getMode());
+          window.addEventListener('resize', runPulse);
+        }
+        if (document.readyState === 'loading') {
+          document.addEventListener('DOMContentLoaded', wire);
+        } else {
+          wire();
+        }
+      })();
+    </script>
+    <script defer src="../scripts/z-universe-service-map.js"></script>
+    <script defer src="../scripts/amk-goku-notifications-readonly.js"></script>
+    <script defer src="../scripts/amk-project-indicators-readonly.js"></script>
+    <script defer src="../scripts/z-universe-navigator-readonly.js"></script>
+    <script defer src="../scripts/z-zuno-coverage-readonly.js"></script>
+    <script defer src="../scripts/z-orchestration-status-readonly.js"></script>
+    <script src="../scripts/lumina-effects.js"></script>
+  </body>
+</html>

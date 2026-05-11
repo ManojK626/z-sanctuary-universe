@@ -1,0 +1,36 @@
+{
+  "generated_at": "2026-02-18T16:59:21.822Z",
+  "mode": "dry-run",
+  "status": "blocked",
+  "source_root": "C:/Z_Labs/modules_draft",
+  "target_root": "C:/ZSanctuary_Universe/staging_modules",
+  "module": "Z_SAMPLE_MODULE",
+  "source_module_path": "C:/Z_Labs/modules_draft/Z_SAMPLE_MODULE",
+  "target_module_path": "C:/ZSanctuary_Universe/staging_modules/Z_SAMPLE_MODULE",
+  "checks": [
+    {
+      "id": "lab_root_exists",
+      "pass": true,
+      "note": "C:/Z_Labs"
+    },
+    {
+      "id": "source_root_exists",
+      "pass": true,
+      "note": "C:/Z_Labs/modules_draft"
+    },
+    {
+      "id": "module_provided",
+      "pass": true,
+      "note": "Z_SAMPLE_MODULE"
+    },
+    {
+      "id": "module_exists_in_source",
+      "pass": false,
+      "note": "C:/Z_Labs/modules_draft/Z_SAMPLE_MODULE"
+    }
+  ],
+  "promoted": false,
+  "overwritten_target": false,
+  "copied_entries_estimate": 0,
+  "notes": "Dry-run only. No files changed."
+}

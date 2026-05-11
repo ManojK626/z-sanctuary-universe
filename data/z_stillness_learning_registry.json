@@ -1,0 +1,166 @@
+{
+  "schema": "z.stillness.learning.registry.v1",
+  "registry_name": "Z-Stillness AI Learning Pathway",
+  "mode": "read_only_alignment_learning",
+  "phase": "Z-STILLNESS-LEARN-1",
+  "stillness_law": {
+    "idle_ai_must_not_invent_work": true,
+    "idle_ai_may_review_docs": true,
+    "idle_ai_may_generate_alignment_summary": true,
+    "idle_ai_may_report_missing_links": true,
+    "idle_ai_must_not_execute": true,
+    "idle_ai_must_not_self_upgrade": true
+  },
+  "runtime_safety_flags": {
+    "background_learning_daemon": false,
+    "scheduled_stillness_cron": false,
+    "autonomous_agent_pool": false,
+    "provider_finetuning": false,
+    "self_modifying_repository": false
+  },
+  "ecosystem_biology": {
+    "root_system": {
+      "metaphor": "Root system",
+      "maps_to_hub": ["PC/NAS folders", "canonical registries", "source-of-truth docs"]
+    },
+    "mango_tree": {
+      "metaphor": "Mango tree",
+      "maps_to_hub": ["growth path nourishment", "mature receipts", "published fruit (human-gated)"]
+    },
+    "tarzan_tree": {
+      "metaphor": "Tarzan tree navigation",
+      "maps_to_hub": ["cross-branch navigation", "routing between capsules", "MOD-DIST / AMK SYNC maps"]
+    },
+    "pyramid": {
+      "metaphor": "Pyramid of law",
+      "maps_to_hub": ["Hierarchy Chief", "gates", "phase receipts vs charter"]
+    },
+    "quadruple_spine": {
+      "metaphor": "Quadruple spine",
+      "maps_to_hub": ["Cognitive / Data / Build / Oversight spines — doctrine only in Phase 1"]
+    },
+    "xbus_border": {
+      "metaphor": "Membrane border",
+      "maps_to_hub": ["Z-XBUS external connector gate"]
+    },
+    "mage_formula_layer": {
+      "metaphor": "MAGE formula sheath",
+      "maps_to_hub": ["Z-Ultra MAGE codex vocabulary"]
+    },
+    "replica_fabric": {
+      "metaphor": "Bounded replication scaffold",
+      "maps_to_hub": ["Replica Fabric reviewer posture — task-scoped only"]
+    },
+    "amk_dashboard": {
+      "metaphor": "Conscious cockpit",
+      "maps_to_hub": ["AMK indicators read-only overlays"]
+    }
+  },
+  "learning_levels": [
+    "identity",
+    "ecosystem_map",
+    "laws",
+    "routing",
+    "formula_awareness",
+    "stillness_output"
+  ],
+  "allowed_outputs": [
+    "learning_summary",
+    "alignment_note",
+    "missing_doc_suggestion",
+    "role_clarity_suggestion",
+    "risk_observation",
+    "decision_packet_draft"
+  ],
+  "forbidden_outputs": [
+    "runtime_action",
+    "code_edit_without_task",
+    "deploy",
+    "provider_call",
+    "secret_write",
+    "live_connector",
+    "self_replication",
+    "model_training",
+    "auto_merge",
+    "auto_launch"
+  ],
+  "signal_classification_rules": {
+    "GREEN": "read-only summaries, doctrinal recap, passive registry skim — operator-initiated idle learning",
+    "YELLOW": "role overlap or taxonomy gap suggesting clearer docs routing",
+    "BLUE": "ethics/policy question about persistent autonomy or tooling upgrade — AMK decides",
+    "RED": "autonomous daemon, cron stillness bot, silent self-upgrade, deploy, provider hooks, billing, NAS sync agents"
+  },
+  "ai_team_learning_paths": {
+    "z_mod_dist_team": {
+      "anchor_docs": ["docs/Z_MOD_DIST_MODULE_DISTRIBUTOR.md", "docs/AGENTS.md"],
+      "reports": ["data/reports/z_mod_dist_report.json"],
+      "idle_focus": ["capsule vocabulary", "advisory-vs-permission wording"]
+    },
+    "z_xbus_team": {
+      "anchor_docs": ["docs/Z_XBUS_EXTERNAL_CONNECTOR_GATE.md"],
+      "reports": ["data/reports/z_xbus_connector_gate_report.json"],
+      "idle_focus": ["connector taxonomy", "BLUE vs GREEN vs RED connector stories"]
+    },
+    "z_sec_triplecheck_team": {
+      "anchor_docs": ["docs/Z_SEC_TRIPLECHECK_COMMUNICATION_FLOW_AUDIT.md"],
+      "reports": ["data/reports/z_sec_triplecheck_report.json"],
+      "idle_focus": ["forbidden-lane glossary", "drift metaphors"]
+    },
+    "z_pattern_safe_team": {
+      "anchor_docs": ["docs/Z_PATTERN_SAFE_UNIVERSAL_PATTERN_SIMULATION.md"],
+      "reports": ["data/reports/z_pattern_safe_report.json"],
+      "idle_focus": ["simulation vs wagering language swaps"]
+    },
+    "z_replica_fabric_team": {
+      "anchor_docs": ["docs/Z_REPLICA_FABRIC_GOVERNED_SELF_REPLICATION.md"],
+      "reports": ["data/reports/z_replica_fabric_report.json"],
+      "idle_focus": ["task-scoped vs persistent replica distinction"]
+    },
+    "z_ultra_mage_team": {
+      "anchor_docs": ["docs/Z_ULTRA_MAGE_FORMULA_CODEX.md"],
+      "reports": ["data/reports/z_ultra_mage_formula_report.json"],
+      "idle_focus": ["formula stacks vs forbidden runtime"]
+    },
+    "z_ide_fusion_team": {
+      "anchor_docs": ["docs/Z_IDE_FUSION_WORKFLOW_CONTROL.md"],
+      "reports": ["data/reports/z_ide_fusion_report.json"],
+      "idle_focus": ["fusion evidence vs IDE remote control bans"]
+    },
+    "z_pc_cmd_team": {
+      "anchor_docs": ["docs/Z_PC_IDE_PATH_HEALTH_CHECK.md"],
+      "reports": ["data/reports/z_pc_ide_path_report.json"],
+      "idle_focus": ["PATH snapshot posture", "Operator rhythm"]
+    },
+    "z_mu_truth_team": {
+      "anchor_docs": ["docs/Z_MAURITIANS_UNITE_CIVIC_TRUTH_ENGINE.md"],
+      "reports": ["data/reports/z_mu_truth_report.json"],
+      "idle_focus": ["peace filter keywords", "claim ledger etiquette"]
+    },
+    "z_numen_team": {
+      "anchor_docs": ["docs/Z_NUMEN_HUB_REFERENCE.md"],
+      "reports": ["data/reports/z_numen_hub_reference_report.json"],
+      "idle_focus": ["pattern literacy vs prediction certainty"]
+    },
+    "z_logical_brains_team": {
+      "anchor_docs": ["docs/Z_LOGICAL_BRAINS_HUB_REFERENCE.md"],
+      "reports": ["data/reports/z_logical_brains_hub_reference_report.json"],
+      "idle_focus": ["non-clinical roadmap language"]
+    },
+    "amk_personal_ai_summary": {
+      "anchor_docs": ["docs/AMK_AI_TEAM_INDICATOR_SYNC_ROUTER.md", "docs/AMK_PROJECT_INDICATORS_AND_GO_NO_GO.md"],
+      "reports": ["data/reports/amk_ai_team_sync_report.json", "data/reports/z_stillness_learning_report.json"],
+      "idle_focus": ["decision packets as evidence—not approval"]
+    }
+  },
+  "locked_law": [
+    "Idle AI ≠ permission to act.",
+    "Stillness Mode ≠ background automation.",
+    "Learning roadmap ≠ self-upgrade authority.",
+    "Ecosystem biology ≠ runtime control.",
+    "Stillness output ≠ execution.",
+    "GREEN ≠ deploy.",
+    "BLUE requires AMK.",
+    "RED blocks movement.",
+    "AMK-Goku owns sacred moves."
+  ]
+}

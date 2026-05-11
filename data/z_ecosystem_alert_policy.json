@@ -1,0 +1,40 @@
+{
+  "schema": "z_ecosystem_alert_policy_v1",
+  "posture": "read_only_notification_routing_no_auto_dispatch",
+  "summary": "Only RED and BLUE should become AMK notification candidates by default. YELLOW stays quiet advisory unless explicitly escalated. GREEN and GOLD do not notify. PURPLE is future-gated. UNKNOWN is dashboard-only unless the project is required for daily status.",
+  "signal_meanings": {
+    "GREEN": "Required checks OK; no AMK interrupt.",
+    "YELLOW": "Advisory gap or optional missing capsule; quiet on notifications unless repeated/escalated.",
+    "BLUE": "Human decision required; notify AMK.",
+    "RED": "Required gate failed or malformed required project; notify AMK urgently.",
+    "GOLD": "Sealed baseline; no alert.",
+    "PURPLE": "Future-gated; no alert.",
+    "UNKNOWN": "Insufficient evidence; dashboard only unless project is required_for_daily_status."
+  },
+  "notify_amk_when": [
+    "overall_signal or project row is RED and required_for_daily_status is true",
+    "capsule current_signal is BLUE for human decision",
+    "security / privacy / children / deploy / billing / provider / bridge decision surfaced as BLUE or RED",
+    "repeated YELLOW over threshold — optional future flag; off by default in AWARE-1"
+  ],
+  "do_not_notify_when": [
+    "GREEN",
+    "GOLD sealed baseline",
+    "PURPLE future-gated",
+    "YELLOW advisory only (default)",
+    "UNKNOWN for optional projects"
+  ],
+  "forbidden_auto_actions": [
+    "deploy",
+    "billing_or_pricing_mutation",
+    "secrets_or_api_keys",
+    "provider_calls",
+    "public_launch",
+    "bridge_execution",
+    "child_data_collection",
+    "user_feedback_without_consent",
+    "voice_camera_gps_capture",
+    "auto_merge"
+  ],
+  "law_note": "Awareness ≠ execution. Capsule ≠ entitlement. Indicator ≠ permission. GREEN ≠ deploy. BLUE requires AMK. RED blocks movement. YELLOW is quiet advisory unless escalated."
+}

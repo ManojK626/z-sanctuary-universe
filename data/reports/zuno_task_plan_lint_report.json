@@ -1,0 +1,8 @@
+{
+  "schema": "zuno_task_plan_lint_report_v1",
+  "generated_at": "2026-05-02T18:51:10.169Z",
+  "ok": true,
+  "input_path": "packages/zuno-orchestrator-contracts/examples/zuno_task_plan.example.json",
+  "errors": [],
+  "warnings": []
+}

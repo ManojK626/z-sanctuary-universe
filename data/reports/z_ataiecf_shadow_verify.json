@@ -1,0 +1,196 @@
+{
+  "generated_at": "2026-05-03T14:39:00.806Z",
+  "system": "Z-ATAIECF",
+  "mode": "advisory_shadow_copy",
+  "governance_note": "Read-only verifier. No autonomous mutation. Human approval required for operational changes.",
+  "summary": {
+    "status": "attention",
+    "feed_total": 9,
+    "feed_attention": 4,
+    "feed_watch": 2,
+    "drp_gates_total": 14,
+    "drp_pass": 11,
+    "drp_watch": 3
+  },
+  "feeds": [
+    {
+      "id": "commflow",
+      "path": "data/reports/z_ecosystem_commflow_verifier.json",
+      "present": true,
+      "generated_at": "2026-05-03T14:38:58.320Z",
+      "age_minutes": 0,
+      "freshness": "ok",
+      "status": "amber"
+    },
+    {
+      "id": "execution_enforcer",
+      "path": "data/reports/z_execution_enforcer.json",
+      "present": true,
+      "generated_at": "2026-04-26T02:12:34.811Z",
+      "age_minutes": 10826,
+      "freshness": "attention",
+      "status": "attention"
+    },
+    {
+      "id": "ai_status",
+      "path": "data/reports/z_ai_status.json",
+      "present": true,
+      "generated_at": "2026-05-02T18:16:33.885Z",
+      "age_minutes": 1222,
+      "freshness": "attention",
+      "status": "attention"
+    },
+    {
+      "id": "guardian",
+      "path": "data/reports/z_guardian_report.json",
+      "present": true,
+      "generated_at": "2026-05-01T17:24:19.160Z",
+      "age_minutes": 2714,
+      "freshness": "attention",
+      "status": "attention"
+    },
+    {
+      "id": "ide_commflow_guard",
+      "path": "data/reports/z_ide_commflow_guard.json",
+      "present": true,
+      "generated_at": "2026-05-03T14:39:00.721Z",
+      "age_minutes": 0,
+      "freshness": "ok",
+      "status": "watch"
+    },
+    {
+      "id": "github_ai_comms_manifest",
+      "path": "data/reports/z_github_ai_comms_manifest.json",
+      "present": true,
+      "generated_at": "2026-05-03T14:38:56.371Z",
+      "age_minutes": 0,
+      "freshness": "ok",
+      "status": "ok"
+    },
+    {
+      "id": "cloudflare_ai_comms_manifest",
+      "path": "data/reports/z_cloudflare_ai_comms_manifest.json",
+      "present": true,
+      "generated_at": "2026-05-03T14:38:57.110Z",
+      "age_minutes": 0,
+      "freshness": "ok",
+      "status": "ok"
+    },
+    {
+      "id": "release_gate_summary",
+      "path": "data/reports/z_release_gate_summary.json",
+      "present": true,
+      "generated_at": "2026-04-26T02:12:35.239Z",
+      "age_minutes": 10826,
+      "freshness": "attention",
+      "status": "attention"
+    },
+    {
+      "id": "security_sentinel",
+      "path": "data/reports/z_security_sentinel.json",
+      "present": true,
+      "generated_at": null,
+      "age_minutes": null,
+      "freshness": "watch",
+      "status": "watch"
+    }
+  ],
+  "shadow_copy": {
+    "source": "data/reports/z_ai_ecosphere_ledger.prev.json",
+    "parity": {
+      "available": true,
+      "changed_keys": [
+        "overall",
+        "rings"
+      ],
+      "confidence": "medium"
+    },
+    "recommendation": "Shadow parity stable for tracked keys."
+  },
+  "drp_alignment": {
+    "expected_gates": 14,
+    "checks": [
+      {
+        "gate_id": "no_harm",
+        "pass": true,
+        "status": "ok"
+      },
+      {
+        "gate_id": "protect_innocent",
+        "pass": false,
+        "status": "watch"
+      },
+      {
+        "gate_id": "lift_others",
+        "pass": true,
+        "status": "ok"
+      },
+      {
+        "gate_id": "disclosure",
+        "pass": true,
+        "status": "ok"
+      },
+      {
+        "gate_id": "responsibility",
+        "pass": true,
+        "status": "ok"
+      },
+      {
+        "gate_id": "protection_data_vault",
+        "pass": false,
+        "status": "watch"
+      },
+      {
+        "gate_id": "consent_first",
+        "pass": true,
+        "status": "ok"
+      },
+      {
+        "gate_id": "truth_in_verification",
+        "pass": true,
+        "status": "ok"
+      },
+      {
+        "gate_id": "audibility",
+        "pass": true,
+        "status": "ok"
+      },
+      {
+        "gate_id": "accessibility_calm_ux",
+        "pass": true,
+        "status": "ok"
+      },
+      {
+        "gate_id": "fairness_value_flows",
+        "pass": true,
+        "status": "ok"
+      },
+      {
+        "gate_id": "sovereignty_policy",
+        "pass": true,
+        "status": "ok"
+      },
+      {
+        "gate_id": "registry_truth",
+        "pass": true,
+        "status": "ok"
+      },
+      {
+        "gate_id": "pause_threshold_z_ui",
+        "pass": false,
+        "status": "watch"
+      }
+    ]
+  },
+  "criticism_lane": {
+    "enabled": true,
+    "source_registry": "data/z_qa_rp_registry.json",
+    "note": "Use Q&A&RP templates to challenge recommendations before applying changes.",
+    "templates": [
+      "What is the true current state (reports + paths), not assumptions?",
+      "What can be done within repo policy and DRP?",
+      "What should be done next for the poorest / most excluded stakeholder affected?",
+      "Which DRP gates apply to this change (list 1–14)?"
+    ]
+  }
+}

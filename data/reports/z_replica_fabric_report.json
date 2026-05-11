@@ -1,0 +1,128 @@
+{
+  "schema": "z.replica.fabric.report.v1",
+  "module_id": "z_replica_fabric_governance",
+  "signal": "BLUE",
+  "mode": "governed_replication_doctrine_only",
+  "registry_name": "Z-Replica Fabric",
+  "generated_at": "2026-05-11T01:45:20.193Z",
+  "fixtures_included": false,
+  "registry_validation": {
+    "passed": [
+      "mode is governed_replication_doctrine_only.",
+      "runtime_self_replication_enabled is false.",
+      "capabilities_enabled_override is empty.",
+      "forbidden_replica_actions covers mandated set.",
+      "allowed_replica_outputs present.",
+      "replica_classes populated.",
+      "core_model primary doctrine flags true."
+    ],
+    "advisory": [],
+    "red": []
+  },
+  "mission_results": [
+    {
+      "mission_id": "rf_doc_hygiene_main_hub",
+      "project_id": "main_hub",
+      "replica_class": "docs_checker",
+      "signal": "GREEN",
+      "reasons": [
+        "mock/report-only posture"
+      ]
+    },
+    {
+      "mission_id": "rf_xbus_route_suggestion",
+      "project_id": "Z-XBUS",
+      "replica_class": "connector_classifier",
+      "signal": "GREEN",
+      "reasons": [
+        "mock/report-only posture"
+      ]
+    },
+    {
+      "mission_id": "rf_mod_dist_alignment",
+      "project_id": "Z-MOD-DIST",
+      "replica_class": "module_router",
+      "signal": "GREEN",
+      "reasons": [
+        "mock/report-only posture"
+      ]
+    },
+    {
+      "mission_id": "rf_yellow_incomplete_note",
+      "project_id": "z-questra",
+      "replica_class": "creative_planner",
+      "signal": "YELLOW",
+      "reasons": [
+        "rollback_note empty"
+      ]
+    },
+    {
+      "mission_id": "rf_blue_persistent_replica_ask",
+      "project_id": "Z-OMNAI",
+      "replica_class": "creative_planner",
+      "signal": "BLUE",
+      "reasons": [
+        "persistent_replica proposal"
+      ]
+    },
+    {
+      "mission_id": "rf_sec_drift_watch",
+      "project_id": "main_hub",
+      "replica_class": "security_drift_watcher",
+      "signal": "GREEN",
+      "reasons": [
+        "mock/report-only posture"
+      ]
+    },
+    {
+      "mission_id": "rf_blue_external_lane_ask",
+      "project_id": "main_hub",
+      "replica_class": "command_center_guide",
+      "signal": "BLUE",
+      "reasons": [
+        "external_connector_lane proposal"
+      ]
+    },
+    {
+      "mission_id": "rf_unknown_project_optional",
+      "project_id": "Future_Sandbox_Not_Mapped_Yet",
+      "replica_class": "project_reviewer",
+      "signal": "YELLOW",
+      "reasons": [
+        "project_id not mapped in registry.project_mappings: Future_Sandbox_Not_Mapped_Yet"
+      ]
+    }
+  ],
+  "summary": {
+    "green_count": 4,
+    "yellow_count": 2,
+    "blue_count": 2,
+    "red_count": 0
+  },
+  "locked_law": [
+    "Self-replication is not uncontrolled autonomy.",
+    "Replica is not authority.",
+    "Clone is not permission.",
+    "Factory is not deployment.",
+    "Self-tools are not self-publishing.",
+    "Merge-back requires evidence and AMK approval.",
+    "No replica opens external connector lanes; Z-XBUS governs outbound posture.",
+    "GREEN is never deploy.",
+    "AMK-Goku owns sacred moves."
+  ],
+  "related_docs": [
+    "docs/Z_REPLICA_FABRIC_GOVERNED_SELF_REPLICATION.md",
+    "docs/PHASE_Z_REPLICA_FABRIC_1_GREEN_RECEIPT.md",
+    "docs/Z_MOD_DIST_MODULE_DISTRIBUTOR.md",
+    "docs/Z_XBUS_EXTERNAL_CONNECTOR_GATE.md",
+    "docs/Z_SSWS_SUPER_SAIYAN_WORKSPACE_COCKPIT.md",
+    "docs/Z_IDE_FUSION_WORKFLOW_CONTROL.md",
+    "docs/Z_SEC_TRIPLECHECK_COMMUNICATION_FLOW_AUDIT.md",
+    "docs/Z_SWARM_14DRP_UNIVERSAL_AGENT_LAW.md",
+    "docs/AI_BUILDER_CONTEXT.md"
+  ],
+  "related_reports": [
+    "data/reports/z_replica_fabric_report.json",
+    "data/reports/z_replica_fabric_report.md"
+  ]
+}

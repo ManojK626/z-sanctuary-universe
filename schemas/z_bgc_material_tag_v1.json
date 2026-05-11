@@ -1,0 +1,36 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Z BGC Material Tag v1",
+  "type": "object",
+  "required": ["id", "type", "condition", "safety", "location"],
+  "properties": {
+    "id": { "type": "string" },
+    "type": { "type": "string" },
+    "condition": {
+      "type": "string",
+      "enum": ["intact", "repairable", "partial", "unsafe"]
+    },
+    "safety": {
+      "type": "string",
+      "enum": ["safe", "caution", "unsafe"]
+    },
+    "location": {
+      "type": "object",
+      "required": ["radius_km", "label"],
+      "properties": {
+        "radius_km": { "type": "number", "minimum": 0 },
+        "label": { "type": "string" }
+      }
+    },
+    "notes": { "type": "string" },
+    "potential_uses": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "consent": {
+      "type": "string",
+      "enum": ["unknown", "confirmed", "denied"]
+    },
+    "created_at": { "type": "string", "format": "date-time" }
+  }
+}

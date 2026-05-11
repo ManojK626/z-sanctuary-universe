@@ -1,0 +1,150 @@
+{
+  "registry_version": "1.0.0",
+  "trust_posture": "read-only-mock-internal-planning",
+  "disclaimer": "No manufacturing outreach, payments, supplier claims, or certification claims unless trust_status and related_docs explicitly support it. Ledger and partner fields are planning placeholders only.",
+  "products": [
+    {
+      "product_id": "z-octave",
+      "name": "Z-Octave",
+      "category": "Readiness / governance signal",
+      "project_origin": "ZSanctuary_Universe",
+      "product_type": "digital",
+      "status": "hold",
+      "public_summary": "Operator readiness and public-launch posture framing; advisory signals only.",
+      "internal_risk_level": "medium",
+      "industry_category": "Software / governance tooling",
+      "linked_modules": ["z-octave-readiness", "Z-HODP"],
+      "trust_status": "mock",
+      "next_action": "Keep posture conservative until charter and staging gates lift; document in readiness reports.",
+      "related_docs": ["docs/Z-ACOUSTIC-LIVING-PULSE-ARCHITECTURE.md"],
+      "related_receipts": ["data/reports/zuno_system_state_report.md"],
+      "bot_notes_placeholder": {
+        "industry_bot": "RegTech-adjacent posture signaling (non-binding).",
+        "risk_bot": "Avoid implying certified launch readiness.",
+        "market_bot": "B2B operator dashboard narrative potential.",
+        "ledger_bot": "No financial ledger tied to Octave posture.",
+        "partner_bot": "N/A until governance sign-off."
+      }
+    },
+    {
+      "product_id": "z-inhaler",
+      "name": "Z-Inhaler",
+      "category": "Wellness hardware (concept)",
+      "project_origin": "ZSanctuary_Universe / planning",
+      "product_type": "physical",
+      "status": "concept",
+      "public_summary": "Concept placeholder for inhaler-aligned wellness SKU; no specs or certifications claimed.",
+      "internal_risk_level": "high",
+      "industry_category": "Medical device adjacent (concept only)",
+      "linked_modules": [],
+      "trust_status": "mock",
+      "next_action": "Legal class review before any public detail; classify as novelty vs regulated path.",
+      "related_docs": [],
+      "related_receipts": [],
+      "bot_notes_placeholder": {
+        "product_bot": "Card only until industrial design freeze.",
+        "risk_bot": "High: regulatory pathway undefined.",
+        "partner_bot": "No OEM or distributor outreach."
+      }
+    },
+    {
+      "product_id": "z-gadgets",
+      "name": "Z-Gadgets",
+      "category": "Accessory / companion devices",
+      "project_origin": "ZSanctuary_Universe",
+      "product_type": "hybrid",
+      "status": "mock",
+      "public_summary": "Umbrella for small companion hardware or digital twins; catalogue entry only.",
+      "internal_risk_level": "medium",
+      "industry_category": "Consumer electronics / accessories",
+      "linked_modules": ["dashboard"],
+      "trust_status": "mock",
+      "next_action": "Split into discrete SKUs when designs firm; attach safety sheets per SKU.",
+      "related_docs": ["docs/Z-FULL-BUILD-CHECKLIST.md"],
+      "related_receipts": [],
+      "bot_notes_placeholder": {
+        "product_bot": "Aggregate until SKU split.",
+        "market_bot": "Bundle narrative optional; avoid false SKU count."
+      }
+    },
+    {
+      "product_id": "z-grid-mattress",
+      "name": "Z-Grid Mattress",
+      "category": "Sleep surface (concept)",
+      "project_origin": "planning",
+      "product_type": "physical",
+      "status": "concept",
+      "public_summary": "Planning token for structured sleep / grid-pattern mattress concept; no test claims.",
+      "internal_risk_level": "high",
+      "industry_category": "Furniture / sleep products",
+      "linked_modules": [],
+      "trust_status": "mock",
+      "next_action": "Safety and materials dossier required before prototype language.",
+      "related_docs": [],
+      "related_receipts": [],
+      "bot_notes_placeholder": {
+        "risk_bot": "Flammability and consumer safety unknown.",
+        "partner_bot": "No supplier claims."
+      }
+    },
+    {
+      "product_id": "z-ride-mobility",
+      "name": "Z-Ride Mobility",
+      "category": "Mobility aid (concept)",
+      "project_origin": "planning",
+      "product_type": "physical",
+      "status": "concept",
+      "public_summary": "Concept registry slot for mobility product line; regulatory path TBD.",
+      "internal_risk_level": "high",
+      "industry_category": "Mobility / assistive technology",
+      "linked_modules": [],
+      "trust_status": "mock",
+      "next_action": "Stakeholder clarity on regulated vs hobby classification before prototyping.",
+      "related_docs": [],
+      "related_receipts": [],
+      "bot_notes_placeholder": {
+        "risk_bot": "High liability class; certifications required for any public sale narrative."
+      }
+    },
+    {
+      "product_id": "z-lumina-browser",
+      "name": "Z-Lumina Browser",
+      "category": "Client software",
+      "project_origin": "ZSanctuary_Universe",
+      "product_type": "digital",
+      "status": "prototype",
+      "public_summary": "Browser or shell experience aligned with Sanctuary UX themes; staging only.",
+      "internal_risk_level": "medium",
+      "industry_category": "Application software",
+      "linked_modules": ["dashboard", "Z-HODP"],
+      "trust_status": "prototype-tested",
+      "next_action": "Security review for any network surface; privacy policy linkage before wider beta.",
+      "related_docs": ["dashboard/README.md"],
+      "related_receipts": [],
+      "bot_notes_placeholder": {
+        "risk_bot": "Data handling and update channel must be explicit.",
+        "market_bot": "Differentiate from generic Chromium fork messaging."
+      }
+    },
+    {
+      "product_id": "z-anima-core",
+      "name": "Z-ANIMA Core",
+      "category": "Compassion-aligned services",
+      "project_origin": "ZSanctuary_Universe",
+      "product_type": "service",
+      "status": "mock",
+      "public_summary": "Service framing for compassion-first experiences; Lite mock panel illustrates posture only.",
+      "internal_risk_level": "low",
+      "industry_category": "Digital wellbeing / NGO-style services",
+      "linked_modules": ["z_anima_core_lite", "Z-ALD"],
+      "trust_status": "internal-reviewed",
+      "next_action": "Keep mock receipts; separate live donor paths behind explicit gates.",
+      "related_docs": ["dashboard/panels/z_anima_core_lite.html"],
+      "related_receipts": [],
+      "bot_notes_placeholder": {
+        "risk_bot": "Donation and vulnerable-user flows need policy review live.",
+        "partner_bot": "Suggest NGO-style partner archetype only."
+      }
+    }
+  ]
+}

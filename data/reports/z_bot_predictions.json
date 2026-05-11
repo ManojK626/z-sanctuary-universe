@@ -1,0 +1,19 @@
+{
+  "schema_version": 1,
+  "generated_at": "2026-04-26T01:11:31.937Z",
+  "name": "z-mini-bot-predict",
+  "advisory": true,
+  "drp_note": "Predictions do not trigger actions. Inform human prioritization only.",
+  "predictions": [
+    {
+      "decision_id": "investigate_missing_project",
+      "risk": "low",
+      "prediction": "uncertain",
+      "basis": {
+        "total_events": 2,
+        "reopen_count": 0,
+        "pattern_severity": "LOW"
+      }
+    }
+  ]
+}

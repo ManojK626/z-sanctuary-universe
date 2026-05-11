@@ -1,0 +1,156 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Consent Center</title>
+    <style>
+      body {
+        font-family: system-ui;
+        background: #0f172a;
+        color: #e5e7eb;
+      }
+      .consent {
+        padding: 12px;
+        border-bottom: 1px solid #334155;
+      }
+      .pending {
+        color: #fde68a;
+      }
+      .approved {
+        color: #86efac;
+      }
+      .denied {
+        color: #fca5a5;
+      }
+      button {
+        margin-left: 1em;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Z-Sanctuary Legal & Consent Center</h1>
+    <p>
+      This page keeps a clear record of how Z-Sanctuary uses automation, AI, and data across all
+      services. It is written in plain language but designed to meet high-standard business practice.
+    </p>
+
+    <section>
+      <h2>Member Account & Sign-In</h2>
+      <p>
+        Z-Sanctuary identifies a member by their verified account (local login, workspace identity,
+        or other configured identity provider). All project actions, dashboards, and rituals are
+        linked back to that member identity for audit and safety.
+      </p>
+      <ul>
+        <li>Every sign-in event is logged with time, location context, and device fingerprint.</li>
+        <li>Suspicious or impossible sign-in patterns trigger Security Sentinel review.</li>
+        <li>Members can request a summary of recent sign-ins and active sessions at any time.</li>
+      </ul>
+      <button id="openSignInHelp">Open sign-in help with Z-Secretary AI</button>
+    </section>
+
+    <section>
+      <h2>Service Terms & Fair Use</h2>
+      <p>
+        By using Z-Sanctuary dashboards and automated services, the member agrees to act within
+        fair-use boundaries: no abuse, no fraud, no misuse of AI outputs, and no re-sale of system
+        behaviors without a written agreement.
+      </p>
+      <ul>
+        <li>All automation is assistive; the member remains responsible for final decisions.</li>
+        <li>Critical financial or legal actions must pass an explicit consent step.</li>
+        <li>System health and safety rules can temporarily override automation to protect the member.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Privacy & Data Use</h2>
+      <p>
+        Z-Sanctuary treats all member inputs (text, configurations, rituals, metrics) as private by
+        default. Data is used to run the services, improve reliability, and personalize guidance,
+        never to build external profiles or sell to third parties.
+      </p>
+      <ul>
+        <li>Audit logs store minimal necessary context for safety and troubleshooting.</li>
+        <li>Where external AI services are used, only scoped, necessary snippets are sent.</li>
+        <li>Members can request redaction or export of their personal data as supported by law.</li>
+      </ul>
+      <button id="openPrivacyHelp">Ask Z-Secretary AI about privacy</button>
+    </section>
+
+    <section>
+      <h2>Consent Events & Approvals</h2>
+      <p>
+        Below is the live queue of consent events that require a human decision. Each event
+        describes the rule, context, and requested action so you can approve or deny with clarity.
+      </p>
+    </section>
+
+    <h2>Pending Consents</h2>
+    <div id="consents"></div>
+    <script>
+      async function loadConsents() {
+        const res = await fetch('/api/consent/pending');
+        const consents = await res.json();
+        const container = document.getElementById('consents');
+        container.innerHTML = '';
+        consents.forEach((c) => {
+          const div = document.createElement('div');
+          div.className = `consent ${c.status}`;
+          div.innerHTML = `
+          <strong>Event:</strong> ${c.event.type}<br/>
+          <strong>Status:</strong> ${c.status}<br/>
+          <button onclick="approve(${c.id})">Approve</button>
+          <button onclick="deny(${c.id})">Deny</button>
+        `;
+          container.appendChild(div);
+        });
+      }
+      async function approve(id) {
+        await fetch(`/api/consent/approve/${id}`, { method: 'POST' });
+        loadConsents();
+      }
+      async function deny(id) {
+        await fetch(`/api/consent/deny/${id}`, { method: 'POST' });
+        loadConsents();
+      }
+      setInterval(loadConsents, 3000);
+      loadConsents();
+
+      function wireSecretaryButtons() {
+        function summon(label) {
+          if (window.ZLayoutOS && typeof window.ZLayoutOS.revealPanel === 'function') {
+            window.ZLayoutOS.revealPanel('zAwarenessPanel', {
+              userInitiated: true,
+              label: label || 'Z-Secretary AI',
+            });
+          } else {
+            alert('Z-Secretary AI panel will be available from the main dashboard.');
+          }
+        }
+        var signInBtn = document.getElementById('openSignInHelp');
+        var privacyBtn = document.getElementById('openPrivacyHelp');
+        if (signInBtn) {
+          signInBtn.addEventListener('click', function () {
+            summon('Sign-in help with Z-Secretary AI');
+          });
+        }
+        if (privacyBtn) {
+          privacyBtn.addEventListener('click', function () {
+            summon('Privacy questions with Z-Secretary AI');
+          });
+        }
+      }
+
+      if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', wireSecretaryButtons);
+      } else {
+        wireSecretaryButtons();
+      }
+    </script>
+    <script src="/interface/z_accessibility.js"></script>
+    <script src="/interface/z_auto_compass.js"></script>
+
+    <script src="./z_security_gate.js"></script>
+  </body>
+</html>

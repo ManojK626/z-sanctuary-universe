@@ -1,0 +1,285 @@
+{
+  "generated_at": "2026-04-23T18:54:52.339Z",
+  "summary": {
+    "total_projects": 30,
+    "high_priority": 28,
+    "medium_priority": 2,
+    "low_priority": 0
+  },
+  "projects": [
+    {
+      "name": "lottery_app_pack_latest",
+      "path": "./All APPs/lottery_app_pack_latest",
+      "type": "frontend",
+      "score": 100,
+      "priority": "HIGH",
+      "weaknesses": [],
+      "recommendations": []
+    },
+    {
+      "name": "Amk_Goku Worldwide Loterry",
+      "path": "./Amk_Goku Worldwide Loterry",
+      "type": "frontend",
+      "score": 100,
+      "priority": "HIGH",
+      "weaknesses": [],
+      "recommendations": []
+    },
+    {
+      "name": "core-engine",
+      "path": "./Amk_Goku Worldwide Loterry/core-engine",
+      "type": "data_system",
+      "score": 100,
+      "priority": "HIGH",
+      "weaknesses": [],
+      "recommendations": []
+    },
+    {
+      "name": "lottery_app_pack_20260130T225055Z",
+      "path": "./Amk_Goku Worldwide Loterry/exports/lottery_app_pack_20260130T225055Z",
+      "type": "frontend",
+      "score": 100,
+      "priority": "HIGH",
+      "weaknesses": [],
+      "recommendations": []
+    },
+    {
+      "name": "lottery_app_pack_20260130T225320Z",
+      "path": "./Amk_Goku Worldwide Loterry/exports/lottery_app_pack_20260130T225320Z",
+      "type": "frontend",
+      "score": 100,
+      "priority": "HIGH",
+      "weaknesses": [],
+      "recommendations": []
+    },
+    {
+      "name": "lottery_app_pack_20260131T130222Z",
+      "path": "./Amk_Goku Worldwide Loterry/exports/lottery_app_pack_20260131T130222Z",
+      "type": "frontend",
+      "score": 100,
+      "priority": "HIGH",
+      "weaknesses": [],
+      "recommendations": []
+    },
+    {
+      "name": "lottery_app_pack_20260131T150700Z",
+      "path": "./Amk_Goku Worldwide Loterry/exports/lottery_app_pack_20260131T150700Z",
+      "type": "frontend",
+      "score": 100,
+      "priority": "HIGH",
+      "weaknesses": [],
+      "recommendations": []
+    },
+    {
+      "name": "lottery_app_pack_20260131T150734Z",
+      "path": "./Amk_Goku Worldwide Loterry/exports/lottery_app_pack_20260131T150734Z",
+      "type": "frontend",
+      "score": 100,
+      "priority": "HIGH",
+      "weaknesses": [],
+      "recommendations": []
+    },
+    {
+      "name": "lottery_app_pack_20260131T151828Z",
+      "path": "./Amk_Goku Worldwide Loterry/exports/lottery_app_pack_20260131T151828Z",
+      "type": "frontend",
+      "score": 100,
+      "priority": "HIGH",
+      "weaknesses": [],
+      "recommendations": []
+    },
+    {
+      "name": "lottery_app_pack_20260131T152508Z",
+      "path": "./Amk_Goku Worldwide Loterry/exports/lottery_app_pack_20260131T152508Z",
+      "type": "frontend",
+      "score": 100,
+      "priority": "HIGH",
+      "weaknesses": [],
+      "recommendations": []
+    },
+    {
+      "name": "lottery_app_pack_20260202T171438Z",
+      "path": "./Amk_Goku Worldwide Loterry/exports/lottery_app_pack_20260202T171438Z",
+      "type": "frontend",
+      "score": 100,
+      "priority": "HIGH",
+      "weaknesses": [],
+      "recommendations": []
+    },
+    {
+      "name": "lottery_app_pack_20260215T154122Z",
+      "path": "./Amk_Goku Worldwide Loterry/exports/lottery_app_pack_20260215T154122Z",
+      "type": "frontend",
+      "score": 100,
+      "priority": "HIGH",
+      "weaknesses": [],
+      "recommendations": []
+    },
+    {
+      "name": "lottery_app_pack_latest",
+      "path": "./Amk_Goku Worldwide Loterry/exports/lottery_app_pack_latest",
+      "type": "frontend",
+      "score": 100,
+      "priority": "HIGH",
+      "weaknesses": [],
+      "recommendations": []
+    },
+    {
+      "name": "api",
+      "path": "./apps/api",
+      "type": "backend",
+      "score": 100,
+      "priority": "HIGH",
+      "weaknesses": [],
+      "recommendations": []
+    },
+    {
+      "name": "web",
+      "path": "./apps/web",
+      "type": "backend",
+      "score": 100,
+      "priority": "HIGH",
+      "weaknesses": [],
+      "recommendations": []
+    },
+    {
+      "name": "mirror_decision_engine",
+      "path": "./apps/z_gadget_mirrors/mirror_decision_engine",
+      "type": "data_system",
+      "score": 100,
+      "priority": "HIGH",
+      "weaknesses": [],
+      "recommendations": []
+    },
+    {
+      "name": "z_bridge",
+      "path": "./config/z_bridge",
+      "type": "bridge",
+      "score": 100,
+      "priority": "HIGH",
+      "weaknesses": [],
+      "recommendations": []
+    },
+    {
+      "name": "core",
+      "path": "./core",
+      "type": "data_system",
+      "score": 100,
+      "priority": "HIGH",
+      "weaknesses": [],
+      "recommendations": []
+    },
+    {
+      "name": "core",
+      "path": "./core/core",
+      "type": "data_system",
+      "score": 100,
+      "priority": "HIGH",
+      "weaknesses": [],
+      "recommendations": []
+    },
+    {
+      "name": "z_bridge",
+      "path": "./data/z_bridge",
+      "type": "bridge",
+      "score": 100,
+      "priority": "HIGH",
+      "weaknesses": [],
+      "recommendations": []
+    },
+    {
+      "name": "z_bridge_soft",
+      "path": "./deploy/z_bridge_soft",
+      "type": "bridge",
+      "score": 100,
+      "priority": "HIGH",
+      "weaknesses": [],
+      "recommendations": []
+    },
+    {
+      "name": "martial-platform",
+      "path": "./martial-platform",
+      "type": "data_system",
+      "score": 100,
+      "priority": "HIGH",
+      "weaknesses": [],
+      "recommendations": []
+    },
+    {
+      "name": "z-intelligence",
+      "path": "./packages/z-intelligence",
+      "type": "backend",
+      "score": 100,
+      "priority": "HIGH",
+      "weaknesses": [],
+      "recommendations": []
+    },
+    {
+      "name": "z-sanctuary-core",
+      "path": "./packages/z-sanctuary-core",
+      "type": "backend",
+      "score": 100,
+      "priority": "HIGH",
+      "weaknesses": [],
+      "recommendations": []
+    },
+    {
+      "name": "scripts",
+      "path": "./scripts",
+      "type": "data_system",
+      "score": 100,
+      "priority": "HIGH",
+      "weaknesses": [],
+      "recommendations": []
+    },
+    {
+      "name": "z_bridge",
+      "path": "./scripts/z_bridge",
+      "type": "bridge",
+      "score": 100,
+      "priority": "HIGH",
+      "weaknesses": [],
+      "recommendations": []
+    },
+    {
+      "name": "z_garage_node_minimal",
+      "path": "./templates/z_garage_node_minimal",
+      "type": "backend",
+      "score": 100,
+      "priority": "HIGH",
+      "weaknesses": [],
+      "recommendations": []
+    },
+    {
+      "name": "z_bridge_dashboard",
+      "path": "./ui/z_bridge_dashboard",
+      "type": "bridge",
+      "score": 100,
+      "priority": "HIGH",
+      "weaknesses": [],
+      "recommendations": []
+    },
+    {
+      "name": "ZSanctuary_Labs",
+      "path": "./ZSanctuary_Labs",
+      "type": "unknown",
+      "score": 75,
+      "priority": "MEDIUM",
+      "weaknesses": [],
+      "recommendations": [
+        "Clarify project role (frontend/backend/ai/infra)"
+      ]
+    },
+    {
+      "name": "dashboard_copy",
+      "path": "./ZSanctuary_Labs/copies/dashboard_copy",
+      "type": "unknown",
+      "score": 75,
+      "priority": "MEDIUM",
+      "weaknesses": [],
+      "recommendations": [
+        "Clarify project role (frontend/backend/ai/infra)"
+      ]
+    }
+  ]
+}

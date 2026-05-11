@@ -1,0 +1,27 @@
+{
+  "generated_at": "2026-04-23T21:44:06.922Z",
+  "inputs": {
+    "ecosphere_overall_sync": 74,
+    "ecosphere_band": "yellow",
+    "garage_pressure": "low",
+    "zci_low_priority": 0,
+    "vault_spine_status": "green",
+    "communication_flow_status": "degraded",
+    "system_health_status": "stable",
+    "system_health_score": 93
+  },
+  "alerts": [
+    {
+      "type": "COMM_FLOW_DEGRADED",
+      "message": "Communication flow degraded — stale observers, drift, or commflow attention.",
+      "severity": "low"
+    },
+    {
+      "type": "STRUCTURAL_FLOW_MISMATCH",
+      "message": "Structural health is strong but communication flow is not healthy — possible silent disconnect.",
+      "severity": "medium"
+    }
+  ],
+  "total": 2,
+  "status": "watch"
+}

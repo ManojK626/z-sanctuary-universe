@@ -1,0 +1,15 @@
+---
+description: Before importing ChatGPT exports into the hub, verify tracking and avoid duplicate work.
+globs:
+  - docs/chatgpt_exports/**/*
+  - data/z_chatgpt_projects_tracking.json
+  - docs/Z-CHATGPT-MODULES-INDEX.md
+---
+
+# Z-ChatGPT → hub import discipline
+
+1. **Run** `npm run chatgpt:verify` and read `data/reports/z_chatgpt_integration_verify.md` before adding large pasted content or new `docs/chatgpt_exports/` trees.
+2. **Canonical rows** live in **`data/z_chatgpt_projects_tracking.json`**. Update **`display_name`** when the ChatGPT UI renames a project; append the old label to **`previous_names`** so Folder Manager alignment and Cursor stay consistent. For each export subfolder, add **`docs/chatgpt_exports/<folder>/.z-chatgpt-tracking.json`** (`{ "ZFormat": "v1", "id": "<entry id>" }`) and optional **`export_folder`** on the row — verify then detects disk renames vs tracking and writes **`data/reports/z_chatgpt_export_folder_index.json`**.
+3. **Do not** duplicate **`hub_doc_path`** across entries. Link **`manifest_zid`** when a row maps to an existing `data/z_module_manifest.json` module instead of creating parallel docs.
+4. **Folder Manager** (`z_folder_manager_guard.mjs`) guards hub tree layout — after moving or renaming hub files, follow **Review → Verify → Apply** and policy under `data/z_folder_manager_policy.json`.
+5. Vault and proprietary content: never commit raw exports with secrets.

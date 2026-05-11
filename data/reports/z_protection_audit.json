@@ -1,0 +1,22 @@
+{
+  "generated_at": "2026-03-16T15:49:06.935Z",
+  "protected_count": 1,
+  "checked_count": 1,
+  "optional_checked_count": 1,
+  "results": [
+    {
+      "file": "Amk_Goku Worldwide Loterry/ui/public_trust/index.html",
+      "required": true,
+      "exists": true,
+      "protected": true,
+      "note": "ok"
+    },
+    {
+      "file": "core/index.html",
+      "required": false,
+      "exists": false,
+      "protected": false,
+      "note": "missing"
+    }
+  ]
+}

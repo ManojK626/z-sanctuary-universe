@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Z-Creator Manual · Web App</title>
+  <link rel="stylesheet" href="../../../interface/z_style.css" />
+  <style>
+    .creator-manual-app { --z-creator-bg: rgba(10, 14, 39, 0.98); --z-creator-accent: #00d4ff; --z-creator-muted: #8a9ba8; }
+    .creator-manual-app { font-family: inherit; background: var(--z-creator-bg); color: #f0f0f0; min-height: 100vh; }
+    .creator-manual-app .nav { display: flex; gap: 0.5rem; padding: 0.75rem 1rem; border-bottom: 1px solid var(--z-creator-accent); flex-wrap: wrap; }
+    .creator-manual-app .nav-btn { padding: 0.4rem 0.8rem; background: transparent; color: var(--z-creator-accent); border: 1px solid var(--z-creator-accent); border-radius: 6px; cursor: pointer; font-size: 0.9rem; }
+    .creator-manual-app .nav-btn:hover, .creator-manual-app .nav-btn.active { background: var(--z-creator-accent); color: #0a0e27; }
+    .creator-manual-app .pane { display: none; padding: 1rem 1.5rem; max-width: 900px; margin: 0 auto; }
+    .creator-manual-app .pane.active { display: block; }
+    .creator-manual-app h1 { font-size: 1.5rem; color: var(--z-creator-accent); margin-bottom: 0.5rem; }
+    .creator-manual-app h2 { font-size: 1.2rem; margin-top: 1.5rem; margin-bottom: 0.5rem; color: #b0e0ff; }
+    .creator-manual-app .section-card { background: rgba(0,212,255,0.06); border: 1px solid rgba(0,212,255,0.3); border-radius: 8px; padding: 1rem; margin-bottom: 1rem; }
+    .creator-manual-app .section-card .add-note-btn { margin-top: 0.5rem; font-size: 0.8rem; padding: 0.25rem 0.5rem; }
+    .creator-manual-app a { color: var(--z-creator-accent); }
+    .creator-manual-app .qa-item { margin-bottom: 1rem; border-bottom: 1px solid rgba(255,255,255,0.1); padding-bottom: 0.75rem; }
+    .creator-manual-app .qa-q { font-weight: 600; color: var(--z-creator-accent); margin-bottom: 0.35rem; }
+    .creator-manual-app .qa-a { color: var(--z-creator-muted); font-size: 0.95rem; }
+    .creator-manual-app .note-taker-box { margin-bottom: 1rem; }
+    .creator-manual-app .note-taker-box textarea { width: 100%; min-height: 80px; padding: 0.5rem; background: #181c2f; color: #f0f0f0; border: 1px solid var(--z-creator-accent); border-radius: 6px; font-family: inherit; font-size: 0.9rem; }
+    .creator-manual-app .note-taker-box .section-context { font-size: 0.8rem; color: var(--z-creator-muted); margin-bottom: 0.35rem; }
+    .creator-manual-app .note-list { list-style: none; padding: 0; }
+    .creator-manual-app .note-list li { background: rgba(0,0,0,0.2); padding: 0.6rem; margin-bottom: 0.5rem; border-radius: 6px; font-size: 0.9rem; }
+    .creator-manual-app .note-list .note-meta { font-size: 0.75rem; color: var(--z-creator-muted); margin-top: 0.25rem; }
+    .creator-manual-app .search-qa { width: 100%; max-width: 400px; padding: 0.4rem; margin-bottom: 1rem; background: #181c2f; color: #f0f0f0; border: 1px solid rgba(0,212,255,0.3); border-radius: 6px; }
+    .creator-manual-app .note-action-badge { font-size: 0.7rem; padding: 0.15rem 0.4rem; border-radius: 4px; margin-right: 0.35rem; }
+    .creator-manual-app .note-action-fix { background: #c62828; color: #fff; }
+    .creator-manual-app .note-action-upgrade { background: #1565c0; color: #fff; }
+    .creator-manual-app .note-action-review { background: #6a1b9a; color: #fff; }
+    .creator-manual-app .note-issue { border-left: 3px solid #ff9800; }
+    .creator-manual-app .note-resolved { opacity: 0.7; text-decoration: line-through; }
+    .creator-manual-app .note-actions-row { margin-top: 0.35rem; display: flex; flex-wrap: wrap; gap: 0.25rem; align-items: center; }
+    .creator-manual-app .note-actions-row button { font-size: 0.75rem; padding: 0.2rem 0.4rem; }
+    .creator-manual-app .scan-issues-box { background: rgba(255,152,0,0.1); border: 1px solid rgba(255,152,0,0.4); border-radius: 8px; padding: 0.75rem; margin-bottom: 1rem; }
+    .creator-manual-app .filter-chips { display: flex; flex-wrap: wrap; gap: 0.35rem; margin-bottom: 0.75rem; }
+    .creator-manual-app .filter-chips button { font-size: 0.8rem; padding: 0.25rem 0.5rem; }
+  </style>
+</head>
+<body class="creator-manual-app">
+  <header class="nav">
+    <button type="button" class="nav-btn active" data-pane="manual">Manual</button>
+    <button type="button" class="nav-btn" data-pane="qa">Q&amp;A</button>
+    <button type="button" class="nav-btn" data-pane="notes">Z-Note Taker</button>
+    <a href="../../../docs/Z-CREATOR-MANUAL.md" target="_blank" rel="noopener" style="margin-left: auto; align-self: center; font-size: 0.85rem;">Full doc (Markdown)</a>
+  </header>
+
+  <main id="pane-manual" class="pane active">
+    <h1>Z-Creator Manual</h1>
+    <p class="z-muted">Technology structure, AI design, tasks — for everyone who builds and operates the Z-Sanctuary.</p>
+
+    <div id="section-1" class="section-card">
+      <h2>1. What the Z-Sanctuary Is</h2>
+      <p>Single hub repo (dashboard, Zuno, module registry, folder manager, Z-formulas, AI colony). SSWS hub: server 5502, one workspace, auto-boot. All projects under PC root linked via <code>data/z_pc_root_projects.json</code> and Z-EAII. One authority (Hierarchy Chief), one roof (Z-Super Overseer).</p>
+      <button type="button" class="z-button add-note-btn" data-section="1" data-title="What the Z-Sanctuary Is">Add to Z-Note</button>
+    </div>
+    <div id="section-2" class="section-card">
+      <h2>2. Technology Structure</h2>
+      <p>Chief → Z-HODP, Z-EAII, Z-SSWS → Folder Manager, Zuno, Module Registry, Master Register. OctoNero = 8 guardians. AI Colony = AI Tower + AI Skyscraper.</p>
+      <button type="button" class="z-button add-note-btn" data-section="2" data-title="Technology Structure">Add to Z-Note</button>
+    </div>
+    <div id="section-3" class="section-card">
+      <h2>3. PC Root and All Projects</h2>
+      <p>PC root = folder containing all Z projects. Hub = ZSanctuary_Universe. Members = other folders; registered in <code>z_pc_root_projects.json</code> and Z-EAII. Dashboard shows All projects in Control Centre.</p>
+      <button type="button" class="z-button add-note-btn" data-section="3" data-title="PC Root and All Projects">Add to Z-Note</button>
+    </div>
+    <div id="section-4" class="section-card">
+      <h2>4. Hierarchy Chief and Authority</h2>
+      <p>When unsure, check <a href="../../../docs/Z-HIERARCHY-CHIEF-AND-OBSERVER-VIEW.md" target="_blank">Hierarchy Chief</a> first. Authority order: Observer View → Overseer → Z-HODP → Z-EAII → Folder Manager → Zuno → Register. AGENTS.md and .cursor/rules enforce this for Cursor and any AI.</p>
+      <button type="button" class="z-button add-note-btn" data-section="4" data-title="Hierarchy Chief">Add to Z-Note</button>
+    </div>
+    <div id="section-5" class="section-card">
+      <h2>5. Z-SSWS</h2>
+      <p>Z_SSWS.code-workspace, server 5502, Z: SSWS Auto Boot (on folder open), Z: SSWS Verify, Z: SSWS Daily Report. Allow Automatic Tasks = on.</p>
+      <button type="button" class="z-button add-note-btn" data-section="5" data-title="Z-SSWS">Add to Z-Note</button>
+    </div>
+    <div id="section-6" class="section-card">
+      <h2>6. Z-EAII, Overseer, Z-HODP, Folder Manager</h2>
+      <p>Z-EAII: registry and launcher (Organiser). Overseer: one roof. Z-HODP: single dashboard, Control Centre, Blueprint, Panel Directory. Folder Manager: vault, snapshots, <code>z_folder_manager_guard.mjs</code>.</p>
+      <button type="button" class="z-button add-note-btn" data-section="6" data-title="EAII, HODP, Folder Manager">Add to Z-Note</button>
+    </div>
+    <div id="section-7" class="section-card">
+      <h2>7. Z-Formulas and OctoNero</h2>
+      <p>Z-Formulas (Z-ULTRA-INSTINCTS); OctoNero = 8 guardians (Zuno, Folder Manager, EAII, SSWS, Z-HODP, Module Registry, Security, Formula Registry). <code>rules/Z_FORMULA_REGISTRY.json</code>.</p>
+      <button type="button" class="z-button add-note-btn" data-section="7" data-title="Formulas and OctoNero">Add to Z-Note</button>
+    </div>
+    <div id="section-8" class="section-card">
+      <h2>8. AI Colony</h2>
+      <p>AI Tower in hub (<code>core/ai_tower/</code>). AI Skyscraper = member project. One dashboard, one state.</p>
+      <button type="button" class="z-button add-note-btn" data-section="8" data-title="AI Colony">Add to Z-Note</button>
+    </div>
+    <div id="section-9" class="section-card">
+      <h2>9. Tasks Reference</h2>
+      <p>Z: Sanctuary Structure Verify, Z: SSWS Verify / Auto Boot / Daily Report, Z: Zuno State Report / Weekly Reflection, Z: Module Registry Sync, Z: Workspace Root Guard, Z: Folder Manager, Z: HTML Static Server (5502), Z: Open Main Dashboard.</p>
+      <button type="button" class="z-button add-note-btn" data-section="9" data-title="Tasks">Add to Z-Note</button>
+    </div>
+    <div id="section-10" class="section-card">
+      <h2>10. Dashboard Guide</h2>
+      <p>URL: <code>http://127.0.0.1:5502/dashboard/Html/index-skk-rkpk.html</code>. Control Centre (All projects), Panel Directory, Z Blueprint, Status Rail.</p>
+      <button type="button" class="z-button add-note-btn" data-section="10" data-title="Dashboard">Add to Z-Note</button>
+    </div>
+    <div id="section-11" class="section-card">
+      <h2>11. Adding a New Project</h2>
+      <p>Create folder under PC root → edit <code>z_pc_root_projects.json</code> → register in Z-EAII → optional <code>z_sanctuary_link.json</code> → refresh dashboard.</p>
+      <button type="button" class="z-button add-note-btn" data-section="11" data-title="Adding a Project">Add to Z-Note</button>
+    </div>
+    <div id="section-12" class="section-card">
+      <h2>12. NAS (Brief)</h2>
+      <p>Sanctuary_Core, Z_Projects, Z_Backups, etc. on NAS; hub can live there; PC = terminal. See <a href="../../../docs/Z-SANCTUARY-NAS-ARCHITECTURE-BLUEPRINT.md" target="_blank">NAS blueprint</a>.</p>
+      <button type="button" class="z-button add-note-btn" data-section="12" data-title="NAS">Add to Z-Note</button>
+    </div>
+    <div id="section-13" class="section-card">
+      <h2>13. Verification</h2>
+      <p>Run <code>node scripts/z_sanctuary_structure_verify.mjs</code> and <a href="../../../docs/Z-SANCTUARY-VERIFICATION-CHECKLIST.md" target="_blank">verification checklist</a>.</p>
+      <button type="button" class="z-button add-note-btn" data-section="13" data-title="Verification">Add to Z-Note</button>
+    </div>
+    <div id="section-14" class="section-card">
+      <h2>14. Document Map</h2>
+      <p><a href="../../../docs/Z-CREATOR-MANUAL.md" target="_blank">Z-CREATOR-MANUAL.md</a> §14 lists Hierarchy Chief, SSWS blueprint, NAS blueprint, Verification checklist, Register, Canvas guide, Formulas, Zuno report, INDEX.</p>
+      <button type="button" class="z-button add-note-btn" data-section="14" data-title="Document Map">Add to Z-Note</button>
+    </div>
+    <div id="section-15" class="section-card">
+      <h2>15. Summary</h2>
+      <p>One hub, one dashboard, one registry, one authority. All projects in <code>z_pc_root_projects.json</code> and EAII. AI = Zuno, AI Tower, OctoNero. Run Structure Verify and checklist, use Control Centre and All projects.</p>
+      <button type="button" class="z-button add-note-btn" data-section="15" data-title="Summary">Add to Z-Note</button>
+    </div>
+  </main>
+
+  <main id="pane-qa" class="pane">
+    <h1>Q&amp;A</h1>
+    <input type="search" class="search-qa" id="qaSearch" placeholder="Search questions…" aria-label="Search Q&A" />
+    <div id="qaList">
+      <div class="qa-item" data-qa="what is z sanctuary">
+        <div class="qa-q">What is the Z-Sanctuary?</div>
+        <div class="qa-a">The Z-Sanctuary Universe is a single hub repo that holds the dashboard, Zuno state, module registry, folder manager, Z-formulas, and AI colony. It is the SSWS hub (server 5502, one workspace, auto-boot) and is linked to all other projects under your PC root via the project list and Z-EAII. One authority, one operational roof.</div>
+      </div>
+      <div class="qa-item" data-qa="what is pc root">
+        <div class="qa-q">What is PC root?</div>
+        <div class="qa-a">The folder on your machine that contains all Z and related projects (e.g. C:\Cursor Projects Organiser). The hub (ZSanctuary_Universe) and member projects (Z-OMNI, AI Skyscraper, Amk-Goku, etc.) live under it.</div>
+      </div>
+      <div class="qa-item" data-qa="when to check hierarchy chief">
+        <div class="qa-q">When should I check the Hierarchy Chief?</div>
+        <div class="qa-a">When unsure about where a change belongs, whether something conflicts with the operational roof, or how modules relate. Read docs/Z-HIERARCHY-CHIEF-AND-OBSERVER-VIEW.md first; Cursor and any AI are instructed to do the same via AGENTS.md and .cursor/rules.</div>
+      </div>
+      <div class="qa-item" data-qa="what is z ssws">
+        <div class="qa-q">What is Z-SSWS?</div>
+        <div class="qa-a">The system that ties workspace, server, and dashboard: Z_SSWS.code-workspace, server on port 5502, Z: SSWS Auto Boot (on folder open), Z: SSWS Verify, and Z: SSWS Daily Report. Ensure Allow Automatic Tasks is on.</div>
+      </div>
+      <div class="qa-item" data-qa="what is z eaii">
+        <div class="qa-q">What is Z-EAII?</div>
+        <div class="qa-a">Registry and launcher (in Cursor Projects Organiser) for all projects/apps. Keep data/z_pc_root_projects.json in the hub in sync with the EAII registry.</div>
+      </div>
+      <div class="qa-item" data-qa="what is z hodp">
+        <div class="qa-q">What is Z-HODP?</div>
+        <div class="qa-a">Head Organiser Dashboards: the single dashboard (dashboard/Html/index-skk-rkpk.html) with Control Centre, Z Blueprint, Panel Directory, and the All projects block.</div>
+      </div>
+      <div class="qa-item" data-qa="what is octonero">
+        <div class="qa-q">What is OctoNero?</div>
+        <div class="qa-a">The orchestration layer that applies Z-formulas and the 8 guardians across all projects. The eight are: Zuno, Folder Manager, EAII, SSWS, Z-HODP, Module Registry, Security/Policy, Formula Registry.</div>
+      </div>
+      <div class="qa-item" data-qa="how to add new project">
+        <div class="qa-q">How do I add a new project under PC root?</div>
+        <div class="qa-a">Create the folder under PC root, edit data/z_pc_root_projects.json (add id, name, path, role member, ssws false, formula_aware), register in Z-EAII, optionally add z_sanctuary_link.json in the new project, refresh the dashboard.</div>
+      </div>
+      <div class="qa-item" data-qa="how to verify">
+        <div class="qa-q">How do I verify everything works?</div>
+        <div class="qa-a">Run node scripts/z_sanctuary_structure_verify.mjs (or task Z: Sanctuary Structure Verify) and follow docs/Z-SANCTUARY-VERIFICATION-CHECKLIST.md. Expect PASS and all checklist items checked.</div>
+      </div>
+      <div class="qa-item" data-qa="key tasks">
+        <div class="qa-q">What are the key tasks?</div>
+        <div class="qa-a">Z: Sanctuary Structure Verify, Z: SSWS Verify / Auto Boot / Daily Report, Z: Zuno State Report / Weekly Reflection, Z: Module Registry Sync, Z: Folder Manager, Z: HTML Static Server (5502), Z: Open Main Dashboard. Run from Cursor: Terminal → Run Task.</div>
+      </div>
+    </div>
+  </main>
+
+  <main id="pane-notes" class="pane">
+    <h1>Z-Note Taker</h1>
+    <p class="z-muted">Notes are stored in this browser (localStorage). Use “Add to Z-Note” in the Manual to attach a note to a section.    </p>
+    <div class="scan-issues-box">
+      <strong>Auto-capture issues</strong>
+      <p class="z-muted" style="font-size: 0.85rem; margin: 0.35rem 0;">Scan Zuno State and Troublemaker reports; issues are added as notes so you can fix, upgrade, or review.</p>
+      <button type="button" class="z-button" id="scanIssuesBtn">Scan for issues now</button>
+      <span id="scanStatus" class="z-muted" style="font-size: 0.8rem; margin-left: 0.5rem;"></span>
+    </div>
+    <div class="note-taker-box">
+      <div class="section-context" id="noteSectionContext"></div>
+      <textarea id="noteInput" placeholder="Type your note…" aria-label="Note text"></textarea>
+      <button type="button" class="z-button" id="noteSaveBtn" style="margin-top: 0.5rem;">Save note</button>
+    </div>
+    <h2>Your notes · Reference for fix / upgrade / review</h2>
+    <div class="filter-chips">
+      <button type="button" class="z-button filter-note-btn active" data-filter="all">All</button>
+      <button type="button" class="z-button z-button-subtle filter-note-btn" data-filter="issue">Issues only</button>
+      <button type="button" class="z-button z-button-subtle filter-note-btn" data-filter="fix">To fix</button>
+      <button type="button" class="z-button z-button-subtle filter-note-btn" data-filter="upgrade">To upgrade</button>
+      <button type="button" class="z-button z-button-subtle filter-note-btn" data-filter="review">To review</button>
+      <button type="button" class="z-button z-button-subtle filter-note-btn" data-filter="resolved">Resolved</button>
+    </div>
+    <ul class="note-list" id="noteList"></ul>
+  </main>
+
+  <script>
+(function () {
+  var STORAGE_KEY = 'z_creator_manual_notes';
+  var pendingSection = null;
+
+  function loadNotes() {
+    try {
+      return JSON.parse(localStorage.getItem(STORAGE_KEY) || '[]');
+    } catch (e) {
+      return [];
+    }
+  }
+  function saveNotes(notes) {
+    localStorage.setItem(STORAGE_KEY, JSON.stringify(notes.slice(-100)));
+  }
+
+  function switchPane(name) {
+    document.querySelectorAll('.pane').forEach(function (p) { p.classList.remove('active'); });
+    document.querySelectorAll('.nav-btn').forEach(function (b) { b.classList.remove('active'); });
+    var pane = document.getElementById('pane-' + name);
+    var btn = document.querySelector('.nav-btn[data-pane="' + name + '"]');
+    if (pane) pane.classList.add('active');
+    if (btn) btn.classList.add('active');
+    if (name === 'notes') {
+      renderNoteList();
+      if (pendingSection) {
+        document.getElementById('noteSectionContext').textContent = 'Section: ' + pendingSection.title;
+        document.getElementById('noteInput').focus();
+        pendingSection = null;
+      } else {
+        document.getElementById('noteSectionContext').textContent = '';
+      }
+    }
+  }
+
+  var currentFilter = 'all';
+  function renderNoteList() {
+    var notes = loadNotes();
+    var ul = document.getElementById('noteList');
+    ul.innerHTML = '';
+    var filtered = notes.slice().reverse().filter(function (n) {
+      var type = n.type || 'manual';
+      var action = n.action || '';
+      var resolved = !!n.resolved;
+      if (currentFilter === 'all') return true;
+      if (currentFilter === 'issue') return type === 'issue';
+      if (currentFilter === 'fix') return action === 'fix';
+      if (currentFilter === 'upgrade') return action === 'upgrade';
+      if (currentFilter === 'review') return action === 'review';
+      if (currentFilter === 'resolved') return resolved;
+      return true;
+    });
+    filtered.forEach(function (n) {
+      var li = document.createElement('li');
+      var type = n.type || 'manual';
+      var action = n.action || '';
+      var resolved = !!n.resolved;
+      if (type === 'issue') li.classList.add('note-issue');
+      if (resolved) li.classList.add('note-resolved');
+      var actionBadge = '';
+      if (action === 'fix') actionBadge = '<span class="note-action-badge note-action-fix">fix</span>';
+      else if (action === 'upgrade') actionBadge = '<span class="note-action-badge note-action-upgrade">upgrade</span>';
+      else if (action === 'review') actionBadge = '<span class="note-action-badge note-action-review">review</span>';
+      var meta = (n.source ? 'Source: ' + escapeHtml(n.source) + ' · ' : '') + (n.createdAt || '').slice(0, 19);
+      var actions = '<div class="note-actions-row">' +
+        '<button type="button" class="z-button z-button-subtle set-action-btn" data-id="' + escapeHtml(n.id) + '" data-action="fix">Fix</button>' +
+        '<button type="button" class="z-button z-button-subtle set-action-btn" data-id="' + escapeHtml(n.id) + '" data-action="upgrade">Upgrade</button>' +
+        '<button type="button" class="z-button z-button-subtle set-action-btn" data-id="' + escapeHtml(n.id) + '" data-action="review">Review</button>' +
+        '<button type="button" class="z-button z-button-subtle resolve-btn" data-id="' + escapeHtml(n.id) + '">' + (n.resolved ? 'Unresolve' : 'Resolve') + '</button>' +
+        '</div>';
+      li.innerHTML = actionBadge + (n.sectionTitle ? '<strong>' + escapeHtml(n.sectionTitle) + '</strong><br/>' : '') + escapeHtml(n.body) + '<div class="note-meta">' + meta + '</div>' + actions;
+      li.dataset.noteId = n.id;
+      ul.appendChild(li);
+    });
+    ul.querySelectorAll('.set-action-btn').forEach(function (btn) {
+      btn.addEventListener('click', function () {
+        var notes = loadNotes();
+        var id = btn.getAttribute('data-id');
+        var action = btn.getAttribute('data-action');
+        var idx = notes.findIndex(function (x) { return x.id === id; });
+        if (idx !== -1) { notes[idx].action = action; saveNotes(notes); renderNoteList(); }
+      });
+    });
+    ul.querySelectorAll('.resolve-btn').forEach(function (btn) {
+      btn.addEventListener('click', function () {
+        var notes = loadNotes();
+        var id = btn.getAttribute('data-id');
+        var idx = notes.findIndex(function (x) { return x.id === id; });
+        if (idx !== -1) { notes[idx].resolved = !notes[idx].resolved; saveNotes(notes); renderNoteList(); }
+      });
+    });
+  }
+
+  function escapeHtml(s) {
+    if (s == null) return '';
+    var div = document.createElement('div');
+    div.textContent = s;
+    return div.innerHTML;
+  }
+
+  function addNote(sectionId, sectionTitle) {
+    pendingSection = { id: sectionId, title: sectionTitle };
+    switchPane('notes');
+  }
+
+  document.querySelectorAll('.nav-btn[data-pane]').forEach(function (btn) {
+    btn.addEventListener('click', function () { switchPane(btn.getAttribute('data-pane')); });
+  });
+  document.querySelectorAll('.add-note-btn').forEach(function (btn) {
+    btn.addEventListener('click', function () {
+      addNote(btn.getAttribute('data-section'), btn.getAttribute('data-title'));
+    });
+  });
+
+  document.getElementById('noteSaveBtn').addEventListener('click', function () {
+    var input = document.getElementById('noteInput');
+    var body = (input && input.value || '').trim();
+    if (!body) return;
+    var sectionContext = document.getElementById('noteSectionContext').textContent.replace(/^Section:\s*/, '');
+    var notes = loadNotes();
+    notes.push({
+      id: 'n' + Date.now(),
+      type: 'manual',
+      sectionId: pendingSection ? pendingSection.id : null,
+      sectionTitle: sectionContext || (pendingSection ? pendingSection.title : null),
+      body: body,
+      source: 'Manual',
+      action: '',
+      resolved: false,
+      createdAt: new Date().toISOString()
+    });
+    saveNotes(notes);
+    input.value = '';
+    document.getElementById('noteSectionContext').textContent = '';
+    pendingSection = null;
+    renderNoteList();
+  });
+
+  document.getElementById('qaSearch').addEventListener('input', function () {
+    var q = (this.value || '').toLowerCase().trim();
+    document.querySelectorAll('#qaList .qa-item').forEach(function (el) {
+      var show = !q || (el.getAttribute('data-qa') || '').indexOf(q) !== -1 || el.textContent.toLowerCase().indexOf(q) !== -1;
+      el.style.display = show ? '' : 'none';
+    });
+  });
+
+  document.querySelectorAll('.filter-note-btn').forEach(function (btn) {
+    btn.addEventListener('click', function () {
+      document.querySelectorAll('.filter-note-btn').forEach(function (b) { b.classList.remove('active'); b.classList.add('z-button-subtle'); });
+      btn.classList.add('active'); btn.classList.remove('z-button-subtle');
+      currentFilter = btn.getAttribute('data-filter') || 'all';
+      renderNoteList();
+    });
+  });
+
+  function addIssueNote(issueKey, body, source) {
+    var notes = loadNotes();
+    var existing = notes.find(function (n) { return n.issueKey === issueKey && n.type === 'issue' && !n.resolved; });
+    if (existing) return 0;
+    notes.push({
+      id: 'n' + Date.now(),
+      type: 'issue',
+      issueKey: issueKey,
+      body: body,
+      source: source,
+      action: 'review',
+      resolved: false,
+      createdAt: new Date().toISOString()
+    });
+    saveNotes(notes);
+    return 1;
+  }
+
+  document.getElementById('scanIssuesBtn').addEventListener('click', function () {
+    var statusEl = document.getElementById('scanStatus');
+    statusEl.textContent = 'Scanning…';
+    var base = window.location.origin || '';
+    var added = 0;
+    Promise.all([
+      fetch(base + '/data/reports/zuno_system_state_report.json', { cache: 'no-store' }).then(function (r) { return r.ok ? r.json() : null; }).catch(function () { return null; }),
+      fetch(base + '/data/reports/z_troublemaker_scan.json', { cache: 'no-store' }).then(function (r) { return r.ok ? r.json() : null; }).catch(function () { return null; })
+    ]).then(function (results) {
+      var zuno = results[0];
+      var troublemaker = results[1];
+      if (zuno && zuno.executive_status) {
+        var es = zuno.executive_status;
+        if (es.internal_operations && es.internal_operations !== 'stable-green') added += addIssueNote('zuno:internal_operations', 'Internal operations: ' + es.internal_operations + '. Run Zuno State Report and check hygiene.', 'Zuno State');
+        if (es.public_launch && es.public_launch !== 'ready') added += addIssueNote('zuno:public_launch', 'Public launch: not ready. Check Z-OCTAVE gates.', 'Zuno State');
+        if (es.extension_guard && (es.extension_guard === 'attention' || es.extension_guard === 'hold')) added += addIssueNote('zuno:extension_guard', 'Extension guard: ' + es.extension_guard + '. Review extensions.', 'Zuno State');
+        if (es.disturbance_watch && es.disturbance_watch !== 'clear') added += addIssueNote('zuno:disturbance_watch', 'Disturbance watch: ' + es.disturbance_watch + '. Check Troublemaker scan.', 'Zuno State');
+      }
+      if (zuno && zuno.current && zuno.current.metrics && zuno.current.metrics.hygiene_green === false) added += addIssueNote('zuno:hygiene', 'Hygiene: not green. Run hygiene/autofix tasks.', 'Zuno State');
+      if (troublemaker && troublemaker.checks) {
+        troublemaker.checks.forEach(function (c) {
+          if (c.pass === false) added += addIssueNote('troublemaker:' + (c.id || 'check'), 'Troublemaker: ' + (c.note || c.id) + '. Fix or refresh reports.', 'Troublemaker Scan');
+        });
+      }
+      if (troublemaker && (troublemaker.status === 'watch' || troublemaker.status === 'alert')) added += addIssueNote('troublemaker:status', 'Troublemaker status: ' + troublemaker.status + ' (score ' + (troublemaker.disturbance_score || 0) + '). Review failed checks.', 'Troublemaker Scan');
+      statusEl.textContent = added ? 'Added ' + added + ' issue(s).' : 'No new issues (or reports unavailable).';
+      renderNoteList();
+    });
+  });
+
+  renderNoteList();
+})();
+  </script>
+</body>
+</html>

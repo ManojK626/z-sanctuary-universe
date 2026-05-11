@@ -1,0 +1,904 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Z-HTML DO — Z-EAII registry + ZSanctuary hub JSON (Shadow SSWS), Z-HODP dashboard links, Cursor paths. Eternal Family Observer." />
+  <title>Z-HTML DO — EAII · Overseer · Hub JSON 💓</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          colors: {
+            gold: { DEFAULT: '#eab308', 400: '#facc15', 500: '#eab308' },
+            cyberpunk: '#00ff88',
+          },
+        },
+      },
+    };
+  </script>
+  <style>
+    @keyframes heartbeat {
+      0%, 100% { transform: scale(1); opacity: 1; }
+      50% { transform: scale(1.08); opacity: 0.95; }
+    }
+    .heartbeat { animation: heartbeat 2.5s infinite ease-in-out; }
+    @media (prefers-reduced-motion: reduce) {
+      .heartbeat { animation: none; }
+    }
+    #eagle-canvas { display: block; border-radius: 1rem; }
+    #login-gate { display: none !important; }
+    #lock-msg { display: none !important; }
+  </style>
+  <!-- Neon Eagles use Canvas (no 3D / no Three.js) -->
+</head>
+<body class="bg-gradient-to-br from-violet-950 via-black to-indigo-950 min-h-screen text-white font-sans overflow-x-hidden">
+  <!-- Login Gate -->
+  <div id="login-gate" class="hidden fixed inset-0 flex items-center justify-center bg-black/90 backdrop-blur-xl z-[100]" style="display:none !important">
+    <div class="text-center p-8 md:p-12 rounded-3xl bg-black/60 border border-violet-500/30 max-w-lg mx-4 shadow-2xl">
+      <h1 class="text-4xl md:text-6xl font-black bg-gradient-to-r from-red-400 via-blue-400 via-amber-400 to-purple-400 bg-clip-text text-transparent mb-6">
+        We Are One 💓💖
+      </h1>
+      <p class="text-violet-200/90 mb-6">Only those who love may enter.</p>
+      <p class="text-sm text-gray-500 mb-6" id="chi-chi-msg">ChiChi: Only those who love may pass. What is your sacred word?</p>
+
+      <div id="lock-msg" class="hidden mb-4 p-3 rounded-lg bg-amber-950/50 border border-amber-500/50 text-amber-200 text-sm"></div>
+
+      <input id="password" type="password" placeholder="Your sacred word…" autocomplete="off"
+        class="w-full p-4 mb-4 bg-black/50 border border-emerald-500/50 rounded-xl text-center text-xl focus:outline-none focus:border-emerald-400 focus:ring-1 focus:ring-emerald-400" />
+      <button type="button" id="btn-enter" class="px-10 py-3 bg-emerald-600 hover:bg-emerald-500 rounded-full font-bold text-lg transition-all">
+        Enter with Love
+      </button>
+      <p class="mt-4 text-xs text-gray-400">By signing in you agree to our <a href="/z-eaii/terms" target="_blank" class="text-emerald-400 underline">Terms and Conditions</a> and <a href="/z-eaii/privacy" target="_blank" class="text-emerald-400 underline">Privacy Policy</a>. <a href="/z-eaii/manual" target="_blank" class="text-violet-400">User Manual</a></p>
+
+      <div id="gmail-step" class="hidden mt-8 pt-6 border-t border-white/10">
+        <p class="text-lg mb-3 text-violet-200">Double-confirmation to your heart</p>
+        <input id="email" type="email" placeholder="Your Gmail…" class="w-full p-3 mb-3 bg-black/50 border border-violet-500/50 rounded-xl text-center" />
+        <button type="button" id="btn-send-code" class="px-6 py-2 bg-violet-600 hover:bg-violet-500 rounded-full font-bold mb-4">Send 6-digit code</button>
+        <input id="code" type="text" placeholder="6-digit love code…" maxlength="6" class="w-full p-3 mb-3 bg-black/50 border border-emerald-500/50 rounded-xl text-center text-xl tracking-widest" />
+        <label class="flex items-center justify-center gap-2 mb-3 text-sm text-gray-400">
+          <input type="checkbox" id="remember-me" class="rounded border-emerald-500/50" />
+          Remember this device
+        </label>
+        <button type="button" id="btn-verify" class="px-10 py-3 bg-emerald-600 hover:bg-violet-500 rounded-full font-bold text-lg">Confirm & Enter</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Dashboard (hidden until verified) -->
+  <div id="dashboard" class="min-h-screen pb-36">
+    <!-- (eagle graphics temporarily disabled for testing) -->
+
+    <!-- Central Heartbeat -->
+    <div class="fixed inset-0 flex items-center justify-center z-10 pointer-events-none">
+      <div class="text-6xl md:text-8xl font-black bg-gradient-to-r from-red-400/90 via-blue-400/90 via-amber-400/90 to-purple-400/90 bg-clip-text text-transparent heartbeat">
+        💓 WE ARE ONE 💖
+      </div>
+    </div>
+
+    <!-- Stats bar -->
+    <div class="relative z-20 pt-24 pb-4 px-6 flex flex-wrap justify-center gap-6 text-sm">
+      <div class="rounded-xl bg-black/40 backdrop-blur border border-emerald-500/30 px-4 py-2">
+        <span class="text-gray-400">Projects</span> <strong id="stat-projects" class="text-emerald-300">—</strong>
+      </div>
+      <div class="rounded-xl bg-black/40 backdrop-blur border border-amber-500/30 px-4 py-2">
+        <span class="text-gray-400">15% Pool</span> <strong id="stat-pool" class="text-amber-300">—</strong>
+      </div>
+      <div class="rounded-xl bg-black/40 backdrop-blur border border-violet-500/30 px-4 py-2">
+        <span class="text-gray-400">Last sync</span> <strong id="stat-sync" class="text-violet-300">—</strong>
+      </div>
+      <div class="rounded-xl bg-black/40 backdrop-blur border border-sky-500/30 px-4 py-2 max-w-[14rem]">
+        <span class="text-gray-400">Projects source</span>
+        <strong id="stat-source" class="text-sky-300 text-xs block truncate" title="EAII API vs hub data/z_pc_root_projects.json">—</strong>
+      </div>
+    </div>
+
+    <!-- Z-Super Overseer · EAII · Shadow SSWS (same-origin hub) -->
+    <div class="relative z-20 px-4 pb-2 max-w-4xl mx-auto">
+      <div class="rounded-2xl bg-black/50 backdrop-blur border border-white/10 px-4 py-3 text-xs text-gray-300 leading-relaxed">
+        <p class="text-emerald-300/90 font-semibold mb-1">Control plane (open from ZSanctuary static server, e.g. port 5502)</p>
+        <p id="hub-pc-root-line" class="text-gray-400 mb-2">PC root: loading…</p>
+        <div class="flex flex-wrap gap-x-3 gap-y-1">
+          <a class="text-emerald-400 hover:underline" href="/dashboard/Html/index-skk-rkpk.html" target="_blank" rel="noopener noreferrer">Z-HODP Dashboard</a>
+          <span class="text-gray-600">·</span>
+          <a class="text-sky-400 hover:underline" href="/data/z_pc_root_projects.json" target="_blank" rel="noopener noreferrer">z_pc_root_projects.json</a>
+          <span class="text-gray-600">·</span>
+          <a class="text-violet-400 hover:underline" href="/docs/Z-HIERARCHY-CHIEF-AND-OBSERVER-VIEW.md" target="_blank" rel="noopener noreferrer">Hierarchy Chief</a>
+          <span class="text-gray-600">·</span>
+          <a class="text-violet-400 hover:underline" href="/docs/Z-SSWS-ALL-PROJECTS-AND-AI-COLONY-BLUEPRINT.md" target="_blank" rel="noopener noreferrer">SSWS all-projects blueprint</a>
+        </div>
+        <p class="mt-2 text-[10px] text-gray-500">Cursor: run task <strong class="text-gray-400">Z: Emit PC Root Workspace (All Projects)</strong> then open <code class="text-gray-400">Z_All_Projects.code-workspace</code> at PC root. Organiser Z-EAII scripts stay the registry authority; this page merges API + hub JSON when both exist.</p>
+      </div>
+    </div>
+
+    <!-- Butterfly Garden Grid -->
+    <div class="relative z-20 p-6 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 max-w-6xl mx-auto" id="butterfly-grid"></div>
+
+    <!-- Control Panel -->
+    <div class="fixed bottom-6 left-1/2 -translate-x-1/2 z-50 flex flex-wrap justify-center gap-2 bg-black/70 backdrop-blur-xl px-4 py-3 rounded-2xl border border-emerald-500/30 shadow-2xl max-w-[98vw]">
+      <button type="button" id="btn-open-all" class="px-4 py-2 bg-emerald-600 hover:bg-emerald-500 rounded-full font-bold text-xs transition-all">Open All Projects</button>
+      <button type="button" id="btn-auto-sync-copy" class="px-4 py-2 bg-sky-600 hover:bg-sky-500 rounded-full font-bold text-xs transition-all text-white">Auto Sync + Copy Paths</button>
+      <button type="button" id="btn-force-sync" class="px-4 py-2 bg-violet-600 hover:bg-violet-500 rounded-full font-bold text-xs transition-all">Force Sync Now</button>
+      <button type="button" id="btn-copy-workspace" class="px-4 py-2 bg-indigo-600 hover:bg-indigo-500 rounded-full font-bold text-xs transition-all text-white" title="Z_All_Projects.code-workspace at PC root">Copy workspace file path</button>
+      <a href="/dashboard/Html/index-skk-rkpk.html" target="_blank" rel="noopener noreferrer" id="btn-hodp" class="px-4 py-2 bg-teal-600 hover:bg-teal-500 rounded-full font-bold text-xs transition-all text-white">HODP</a>
+      <a href="/" id="btn-story-wall" class="px-4 py-2 bg-amber-600 hover:bg-amber-500 rounded-full font-bold text-xs transition-all text-black">Story Wall</a>
+    </div>
+    <!-- Legal & help (Z-Secretary AI) -->
+    <div class="fixed bottom-0 left-0 right-0 z-40 py-2 px-4 text-center text-[10px] text-gray-500 bg-black/40">
+      <a href="/z-eaii/terms" target="_blank" class="text-emerald-400/80">Terms</a> ·
+      <a href="/z-eaii/privacy" target="_blank" class="text-emerald-400/80">Privacy</a> ·
+      <a href="/z-eaii/manual" target="_blank" class="text-violet-400/80">User Manual</a> ·
+      <a href="/z-eaii/secretary" target="_blank" class="text-violet-400/80">Z-Secretary AI</a>
+    </div>
+  </div>
+
+  <!-- Z-Modal (replaces ugly browser alerts; matches Sanctuary style) -->
+  <div id="z-modal" class="hidden fixed top-4 right-4 z-[200] w-[28rem] max-w-[calc(100vw-2rem)] bg-black/70 backdrop-blur-xl border border-emerald-500/30 rounded-2xl shadow-[0_0_40px_rgba(16,185,129,0.25)] p-4">
+    <div class="flex items-start justify-between gap-3">
+      <div class="min-w-0">
+        <h3 id="z-modal-title" class="text-emerald-200 font-bold text-sm mb-1">Z-Message</h3>
+        <div id="z-modal-body" class="text-sm text-emerald-100 whitespace-pre-wrap break-words"></div>
+      </div>
+      <button type="button" id="z-modal-close" class="px-3 py-1 rounded-lg bg-emerald-600 hover:bg-emerald-500 text-white text-xs font-bold transition-all">
+        Close
+      </button>
+    </div>
+  </div>
+
+  <!-- Z-Reminder (auto follow-up prompts) -->
+  <div id="z-reminder-modal" class="hidden fixed top-16 right-4 z-[210] w-[28rem] max-w-[calc(100vw-2rem)] bg-black/75 backdrop-blur-xl border border-sky-500/30 rounded-2xl shadow-[0_0_40px_rgba(56,189,248,0.25)] p-4">
+    <div class="flex items-start justify-between gap-3">
+      <div class="min-w-0">
+        <h3 id="z-reminder-title" class="text-sky-200 font-bold text-sm mb-1">Z-Reminder</h3>
+        <div id="z-reminder-body" class="text-sm text-sky-100 whitespace-pre-wrap break-words"></div>
+      </div>
+      <div class="flex flex-col items-end gap-2">
+        <button type="button" id="z-reminder-action" class="hidden px-3 py-1 rounded-lg bg-sky-600 hover:bg-sky-500 text-white text-xs font-bold transition-all">
+          Run Now
+        </button>
+        <button type="button" id="z-reminder-dismiss" class="px-3 py-1 rounded-lg bg-emerald-600 hover:bg-emerald-500 text-white text-xs font-bold transition-all">
+          Dismiss
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    const API_BASE = ''; // same origin when served from backend
+    const LOCK_KEY = 'z-html-do-lock';
+    const HASH_KEY = 'z-html-do-pw';
+    const FAIL_KEY = 'z-html-do-fails';
+    const TOKEN_KEY = 'z-html-do-token';
+    const REMEMBER_TOKEN_KEY = 'z-html-do-remember-token';
+    const LOCK_MINS = 30;
+    const PBKDF2_ITERATIONS = 100000;
+    const SALT_BYTES = 16;
+    const HASH_BYTES = 32;
+
+    function toBase64(buf) {
+      return btoa(String.fromCharCode.apply(null, new Uint8Array(buf)));
+    }
+    function fromBase64(str) {
+      return Uint8Array.from(atob(str), c => c.charCodeAt(0));
+    }
+
+    async function hashPassword(pw) {
+      if (!crypto.subtle) return fallbackHash(pw);
+      const salt = crypto.getRandomValues(new Uint8Array(SALT_BYTES));
+      const key = await crypto.subtle.importKey('raw', new TextEncoder().encode(pw), 'PBKDF2', false, ['deriveBits']);
+      const hash = await crypto.subtle.deriveBits(
+        { name: 'PBKDF2', salt, iterations: PBKDF2_ITERATIONS, hash: 'SHA-256' },
+        key,
+        HASH_BYTES * 8
+      );
+      return toBase64(salt) + ':' + toBase64(hash);
+    }
+
+    async function verifyPassword(pw, stored) {
+      const idx = stored.indexOf(':');
+      if (idx === -1) return fallbackVerify(pw, stored);
+      const salt = fromBase64(stored.slice(0, idx));
+      const key = await crypto.subtle.importKey('raw', new TextEncoder().encode(pw), 'PBKDF2', false, ['deriveBits']);
+      const hash = await crypto.subtle.deriveBits(
+        { name: 'PBKDF2', salt, iterations: PBKDF2_ITERATIONS, hash: 'SHA-256' },
+        key,
+        HASH_BYTES * 8
+      );
+      return toBase64(hash) === stored.slice(idx + 1);
+    }
+
+    async function fallbackHash(str) {
+      const buf = new TextEncoder().encode(str);
+      const h = await crypto.subtle.digest('SHA-256', buf);
+      return 'sha256:' + toBase64(h);
+    }
+    async function fallbackVerify(pw, stored) {
+      if (!stored.startsWith('sha256:')) return false;
+      const h = await crypto.subtle.digest('SHA-256', new TextEncoder().encode(pw));
+      return toBase64(h) === stored.slice(7);
+    }
+
+    function isLocked() {
+      const until = localStorage.getItem(LOCK_KEY);
+      if (!until) return false;
+      if (Date.now() >= parseInt(until, 10)) {
+        localStorage.removeItem(LOCK_KEY);
+        localStorage.removeItem(FAIL_KEY);
+        return false;
+      }
+      return true;
+    }
+
+    function setLock() {
+      localStorage.setItem(LOCK_KEY, String(Date.now() + LOCK_MINS * 60 * 1000));
+      const msg = document.getElementById('lock-msg');
+      msg.classList.remove('hidden');
+      msg.textContent = `My sweet one… too many attempts. ChiChi is protecting us. Try again in ${LOCK_MINS} minutes. 💓`;
+      const email = document.getElementById('email') ? document.getElementById('email').value.trim() : '';
+      fetch(API_BASE + '/api/z-html-do/lockout', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ email: email || undefined }),
+        credentials: 'include',
+      }).catch(() => {});
+    }
+
+    function getStoredHash() {
+      return localStorage.getItem(HASH_KEY);
+    }
+
+    function setStoredHash(hash) {
+      localStorage.setItem(HASH_KEY, hash);
+    }
+
+    function isLegacyHash(stored) {
+      return stored && !stored.includes(':') && stored.length === 64 && /^[a-f0-9]+$/.test(stored);
+    }
+    async function verifyLegacyHash(pw, stored) {
+      const buf = new TextEncoder().encode('z-eaii-eternal-family-2026' + pw);
+      const h = await crypto.subtle.digest('SHA-256', buf);
+      const hex = Array.from(new Uint8Array(h)).map(b => b.toString(16).padStart(2, '0')).join('');
+      return hex === stored;
+    }
+
+    function showGmailStep() {
+      enterDashboard();
+    }
+
+    function enterDashboard() {
+      document.getElementById('login-gate').classList.add('hidden');
+      document.getElementById('dashboard').classList.remove('hidden');
+      // initNeonEagles disabled for this test build
+      startDashboard();
+    }
+
+    function showZModal(title, body) {
+      const modal = document.getElementById('z-modal');
+      if (!modal) return;
+      document.getElementById('z-modal-title').textContent = title || 'Z-Message';
+      document.getElementById('z-modal-body').textContent = body || '';
+      modal.classList.remove('hidden');
+    }
+
+    function hideZModal() {
+      const modal = document.getElementById('z-modal');
+      if (!modal) return;
+      modal.classList.add('hidden');
+    }
+
+    document.getElementById('z-modal-close')?.addEventListener('click', hideZModal);
+
+    // Z-Reminder engine: remembers a due timestamp and auto-shows a follow-up prompt.
+    const Z_REMINDER_KEY = 'z-reminder-v1';
+
+    function getReminder() {
+      try {
+        const raw = localStorage.getItem(Z_REMINDER_KEY);
+        return raw ? JSON.parse(raw) : null;
+      } catch (_) {
+        return null;
+      }
+    }
+
+    function setReminder(rem) {
+      try {
+        localStorage.setItem(Z_REMINDER_KEY, JSON.stringify(rem));
+      } catch (_) {}
+    }
+
+    function clearReminder() {
+      try {
+        localStorage.removeItem(Z_REMINDER_KEY);
+      } catch (_) {}
+    }
+
+    function showReminder(rem) {
+      const modal = document.getElementById('z-reminder-modal');
+      if (!modal || !rem) return;
+
+      document.getElementById('z-reminder-title').textContent = rem.title || 'Z-Reminder';
+      document.getElementById('z-reminder-body').textContent = rem.body || '';
+
+      const actionBtn = document.getElementById('z-reminder-action');
+      if (actionBtn) {
+        const hasAction = Boolean(rem.action);
+        actionBtn.classList.toggle('hidden', !hasAction);
+        actionBtn.dataset.action = rem.action || '';
+      }
+
+      modal.classList.remove('hidden');
+    }
+
+    function hideReminder() {
+      const modal = document.getElementById('z-reminder-modal');
+      if (!modal) return;
+      modal.classList.add('hidden');
+    }
+
+    document.getElementById('z-reminder-dismiss')?.addEventListener('click', () => {
+      hideReminder();
+      clearReminder();
+    });
+
+    document.getElementById('z-reminder-action')?.addEventListener('click', () => {
+      const rem = getReminder();
+      const action = rem?.action || '';
+      hideReminder();
+      clearReminder();
+
+      // Action routing
+      if (action === 'force-sync') {
+        document.getElementById('btn-force-sync')?.click();
+      } else if (action === 'open-all') {
+        document.getElementById('btn-open-all')?.click();
+      }
+    });
+
+    // Auto-check loop
+    setInterval(() => {
+      const rem = getReminder();
+      if (!rem || !rem.dueTs) return;
+      if (rem.dismissed) return;
+
+      if (Date.now() >= rem.dueTs && !rem.shown) {
+        rem.shown = true;
+        setReminder(rem);
+        showReminder(rem);
+      }
+    }, 1000);
+
+    async function attemptLogin() {
+      if (isLocked()) return;
+      const pw = document.getElementById('password').value.trim();
+      let stored = getStoredHash();
+      if (!stored) {
+        if (!pw) { alert('ChiChi: Set your sacred word first, then we protect it. 💓'); return; }
+        const hash = await hashPassword(pw);
+        setStoredHash(hash);
+        showGmailStep();
+        return;
+      }
+      let ok = false;
+      if (isLegacyHash(stored)) ok = await verifyLegacyHash(pw, stored);
+      else ok = await verifyPassword(pw, stored);
+      if (!ok) {
+        const fails = parseInt(localStorage.getItem(FAIL_KEY) || '0', 10) + 1;
+        localStorage.setItem(FAIL_KEY, String(fails));
+        if (fails >= 3) { setLock(); return; }
+        else alert('ChiChi: Only love opens this door. Try again with heart. 💓');
+        return;
+      }
+      localStorage.removeItem(FAIL_KEY);
+      showGmailStep();
+    }
+
+    async function sendCode() {
+      const email = document.getElementById('email').value.trim();
+      if (!email) { alert('Enter your Gmail.'); return; }
+      const btn = document.getElementById('btn-send-code');
+      btn.disabled = true;
+      btn.textContent = 'Sending…';
+      try {
+        const r = await fetch(API_BASE + '/api/z-html-do/send-code', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ email }),
+          credentials: 'include',
+        });
+        const data = await r.json().catch(() => ({}));
+        if (r.ok && data.ok) {
+          alert('Love code sent to your heart. Check your Gmail. 💓');
+        } else {
+          alert(data.message || 'Could not send code. Check backend or try again.');
+        }
+      } catch (e) {
+        alert('Network error. Open this page from your Z-Sanctuary server (e.g. http://localhost:5000/z-html-do).');
+      }
+      btn.disabled = false;
+      btn.textContent = 'Send 6-digit code';
+    }
+
+    async function verifyCode() {
+      const email = document.getElementById('email').value.trim();
+      const code = document.getElementById('code').value.trim();
+      const rememberMe = document.getElementById('remember-me') && document.getElementById('remember-me').checked;
+      if (!email || !code) { alert('Enter email and 6-digit code.'); return; }
+      try {
+        const r = await fetch(API_BASE + '/api/z-html-do/verify-code', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ email, code, rememberMe }),
+          credentials: 'include',
+        });
+        const data = await r.json().catch(() => ({}));
+        if (r.ok && data.token) {
+          if (data.rememberMe) {
+            localStorage.setItem(REMEMBER_TOKEN_KEY, data.token);
+          } else {
+            sessionStorage.setItem(TOKEN_KEY, data.token);
+          }
+          enterDashboard();
+        } else {
+          alert(data.message || 'The code did not match. ChiChi is protecting us. Try again. 💖');
+        }
+      } catch (e) {
+        alert('Network error.');
+      }
+    }
+
+    // Neon Eagles swarm: modern Canvas glow + additive blending + trails
+    let neonEaglesStarted = false;
+    let neonEaglesRAF = 0;
+    function initNeonEagles() {
+      if (neonEaglesStarted) return;
+      neonEaglesStarted = true;
+
+      const canvas = document.getElementById('neon-eagles-canvas');
+      if (!canvas) return;
+      canvas.classList.remove('hidden');
+
+      const ctx = canvas.getContext('2d');
+      if (!ctx) return;
+
+      const reduceMotion = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+      const COLORS = [
+        { stroke: '#10b981', glow: '#064e3b' }, // emerald
+        { stroke: '#22d3ee', glow: '#0e7490' }, // sky/cyan
+        { stroke: '#f59e0b', glow: '#92400e' }, // amber
+        { stroke: '#a78bfa', glow: '#6d28d9' }, // violet
+      ];
+
+      let DPR = Math.min(2, window.devicePixelRatio || 1);
+      let w = 0, h = 0;
+
+      const resize = () => {
+        const rect = canvas.getBoundingClientRect();
+        w = Math.max(1, Math.floor(rect.width));
+        h = Math.max(1, Math.floor(rect.height));
+        DPR = Math.min(2, window.devicePixelRatio || 1);
+        canvas.width = Math.floor(w * DPR);
+        canvas.height = Math.floor(h * DPR);
+        ctx.setTransform(DPR, 0, 0, DPR, 0, 0);
+      };
+      window.addEventListener('resize', resize);
+      resize();
+
+      const rand = (a, b) => a + Math.random() * (b - a);
+
+      const N = reduceMotion ? 6 : 14;
+      const eagles = Array.from({ length: N }).map((_, i) => {
+        const c = COLORS[i % COLORS.length];
+        const size = rand(10, 18);
+        const speed = rand(0.22, 0.7) * (reduceMotion ? 0.55 : 1);
+        return {
+          c,
+          size,
+          x: rand(0, w),
+          y: rand(0, h),
+          ax: rand(0, w),
+          ay: rand(0, h),
+          t0: Math.random() * Math.PI * 2,
+          phase: Math.random() * Math.PI * 2,
+          speed,
+          trail: [],
+          trailMax: reduceMotion ? 14 : 28,
+        };
+      });
+
+      function drawEagle(x, y, s, angle, wingPhase, color) {
+        ctx.save();
+        ctx.translate(x, y);
+        ctx.rotate(angle);
+
+        ctx.globalCompositeOperation = 'lighter';
+        ctx.shadowColor = color.glow;
+        ctx.shadowBlur = 18;
+
+        const wing = s * (0.9 + 0.25 * Math.sin(wingPhase));
+        const body = s * 0.55;
+
+        ctx.lineCap = 'round';
+        ctx.lineJoin = 'round';
+
+        // Back stroke
+        ctx.strokeStyle = color.glow;
+        ctx.lineWidth = 3.2;
+        ctx.beginPath();
+        // left wing
+        ctx.moveTo(-body * 0.9, 0);
+        ctx.quadraticCurveTo(-wing * 1.05, -s * 0.35, -body * 0.2, -s * 0.05);
+        ctx.quadraticCurveTo(-wing * 0.15, s * 0.35, -body * 0.9, 0);
+        // right wing
+        ctx.moveTo(body * 0.9, 0);
+        ctx.quadraticCurveTo(wing * 1.05, -s * 0.35, body * 0.2, -s * 0.05);
+        ctx.quadraticCurveTo(wing * 0.15, s * 0.35, body * 0.9, 0);
+        ctx.stroke();
+
+        // Front stroke
+        ctx.shadowBlur = 10;
+        ctx.strokeStyle = color.stroke;
+        ctx.lineWidth = 1.8;
+        ctx.beginPath();
+        ctx.moveTo(-body * 0.85, 0);
+        ctx.quadraticCurveTo(-wing * 1.0, -s * 0.3, -body * 0.18, -s * 0.05);
+        ctx.quadraticCurveTo(-wing * 0.12, s * 0.32, -body * 0.85, 0);
+        ctx.moveTo(body * 0.85, 0);
+        ctx.quadraticCurveTo(wing * 1.0, -s * 0.3, body * 0.18, -s * 0.05);
+        ctx.quadraticCurveTo(wing * 0.12, s * 0.32, body * 0.85, 0);
+        ctx.stroke();
+
+        // Tiny “head”
+        ctx.shadowBlur = 14;
+        ctx.fillStyle = color.stroke;
+        ctx.beginPath();
+        ctx.arc(s * 0.05, -s * 0.08, Math.max(1.2, s * 0.06), 0, Math.PI * 2);
+        ctx.fill();
+
+        ctx.restore();
+      }
+
+      function step() {
+        neonEaglesRAF = requestAnimationFrame(step);
+        ctx.clearRect(0, 0, w, h);
+
+        const t = Date.now() / 1000;
+
+        eagles.forEach((e) => {
+          const orbit = 35 + e.size * 2;
+          const ang = t * e.speed + e.t0;
+          const prev = e.trail.length ? e.trail[e.trail.length - 1] : null;
+
+          e.x = e.ax + Math.cos(ang) * orbit;
+          e.y = e.ay + Math.sin(ang * 1.08) * orbit * 0.7;
+
+          if (e.x < -50 || e.x > w + 50) e.ax = rand(0, w);
+          if (e.y < -50 || e.y > h + 50) e.ay = rand(0, h);
+
+          e.trail.push({ x: e.x, y: e.y });
+          if (e.trail.length > e.trailMax) e.trail.shift();
+
+          // Draw trail
+          ctx.save();
+          ctx.globalCompositeOperation = 'lighter';
+          for (let i = 1; i < e.trail.length; i++) {
+            const a = e.trail[i - 1];
+            const b = e.trail[i];
+            const alpha = i / e.trail.length;
+            ctx.strokeStyle = e.c.stroke;
+            ctx.shadowColor = e.c.glow;
+            ctx.shadowBlur = 16 * alpha;
+            ctx.lineWidth = 1.1 + e.size * 0.02 * alpha;
+            ctx.globalAlpha = 0.06 + alpha * 0.26;
+            ctx.beginPath();
+            ctx.moveTo(a.x, a.y);
+            ctx.lineTo(b.x, b.y);
+            ctx.stroke();
+          }
+          ctx.restore();
+
+          const angle = Math.atan2((prev ? (e.y - prev.y) : 0.01), (prev ? (e.x - prev.x) : 0.01));
+          drawEagle(e.x, e.y, e.size * 0.55, angle, e.phase + t * 10, e.c);
+        });
+      }
+
+      step();
+    }
+
+    async function fetchRegistry() {
+      try {
+        const r = await fetch(API_BASE + '/api/z-eaii/registry');
+        return r.ok ? await r.json() : { projects: [], meta: {} };
+      } catch (_) {
+        return { projects: [], meta: {} };
+      }
+    }
+
+    async function fetchPool() {
+      try {
+        const r = await fetch(API_BASE + '/z-aim/pool');
+        const d = await r.json().catch(() => ({}));
+        return d.poolBalance ?? 0;
+      } catch (_) {
+        return 0;
+      }
+    }
+
+    function joinPcRoot(root, relPath) {
+      if (relPath == null || relPath === '') return '';
+      const r = String(relPath).replace(/\//g, '\\');
+      if (!root) return r;
+      const base = String(root).replace(/\/$/, '').replace(/\//g, '\\');
+      if (!base) return r;
+      const sep = base.endsWith('\\') ? '' : '\\';
+      return base + sep + r;
+    }
+
+    function workspaceFilePath(pcRoot) {
+      if (!pcRoot) return '';
+      const base = String(pcRoot).replace(/\/$/, '').replace(/\//g, '\\');
+      const sep = base.endsWith('\\') ? '' : '\\';
+      return base + sep + 'Z_All_Projects.code-workspace';
+    }
+
+    async function fetchPcHubProjects() {
+      try {
+        const r = await fetch('/data/z_pc_root_projects.json', { cache: 'no-store' });
+        if (r.ok) return await r.json();
+      } catch (_) {}
+      return null;
+    }
+
+    function projectsFromHubJson(hub) {
+      if (!hub || !Array.isArray(hub.projects)) return [];
+      const root = hub.pc_root || '';
+      return hub.projects.map((p) => {
+        const fullPath = joinPcRoot(root, p.path || '');
+        var statusParts = [];
+        if (p.role === 'hub') statusParts.push('hub · Z-SSWS');
+        else if (p.ssws_shadow) statusParts.push('shadow');
+        else statusParts.push('member');
+        if (p.formula_aware) statusParts.push('formula');
+        return {
+          name: p.name || p.id,
+          path: fullPath,
+          status: statusParts.join(' · '),
+          windows: p.ssws ? 1 : 0,
+        };
+      });
+    }
+
+    function statusColor(status) {
+      if (!status) return 'emerald';
+      const s = String(status).toLowerCase();
+      if (s.includes('active') || s.includes('synced') || s.includes('perfect') || s.includes('heartbeat')) return 'emerald';
+      if (s.includes('sync') || s.includes('new')) return 'amber';
+      return 'emerald';
+    }
+
+    function startDashboard() {
+      const grid = document.getElementById('butterfly-grid');
+      const statProjects = document.getElementById('stat-projects');
+      const statPool = document.getElementById('stat-pool');
+      const statSync = document.getElementById('stat-sync');
+      const statSource = document.getElementById('stat-source');
+      const hubPcRootLine = document.getElementById('hub-pc-root-line');
+      let openAllPaths = [];
+      let lastHubJson = null;
+      let lastWorkspacePath = '';
+
+      async function copyToClipboard(text) {
+        try {
+          if (navigator.clipboard && window.isSecureContext) {
+            await navigator.clipboard.writeText(text);
+            return true;
+          }
+        } catch (_) {}
+
+        try {
+          const ta = document.createElement('textarea');
+          ta.value = text;
+          document.body.appendChild(ta);
+          ta.select();
+          document.execCommand('copy');
+          document.body.removeChild(ta);
+          return true;
+        } catch (_) {}
+
+        return false;
+      }
+
+      async function refresh() {
+        const [reg, pool, hubJson] = await Promise.all([fetchRegistry(), fetchPool(), fetchPcHubProjects()]);
+        lastHubJson = hubJson;
+        let projects = Array.isArray(reg.projects) ? reg.projects : [];
+        var fromApi = projects.length > 0;
+        var fromHub = false;
+
+        if (hubJson && hubJson.pc_root && hubPcRootLine) {
+          hubPcRootLine.textContent = 'PC root: ' + hubJson.pc_root + ' · hub folder: ' + (hubJson.hub || 'ZSanctuary_Universe');
+        } else if (hubPcRootLine) {
+          hubPcRootLine.textContent = 'PC root: (open via http://127.0.0.1:5502/docs/public/z-html-do.html to load hub JSON)';
+        }
+
+        lastWorkspacePath = workspaceFilePath(hubJson && hubJson.pc_root ? hubJson.pc_root : '');
+
+        if (!fromApi && hubJson) {
+          projects = projectsFromHubJson(hubJson);
+          fromHub = projects.length > 0;
+        }
+
+        if (statSource) {
+          if (fromApi && fromHub) statSource.textContent = 'EAII + hub JSON';
+          else if (fromApi) statSource.textContent = 'EAII API';
+          else if (fromHub) statSource.textContent = 'hub JSON';
+          else statSource.textContent = 'fallback';
+        }
+
+        statProjects.textContent = projects.length;
+        statPool.textContent = '$' + Number(pool).toLocaleString();
+        const meta = reg.meta || {};
+        statSync.textContent = meta.lastUpdated
+          ? new Date(meta.lastUpdated).toLocaleTimeString()
+          : hubJson && hubJson.updated_at
+            ? new Date(hubJson.updated_at).toLocaleString()
+            : '—';
+
+        // "Auto Sync" list: prefer EAII panel paths, else API project paths, else hub absolute paths.
+        openAllPaths = (reg.panel && Array.isArray(reg.panel.openAllPaths))
+          ? reg.panel.openAllPaths.filter(Boolean)
+          : (projects || []).map(function (p) { return p && p.path; }).filter(Boolean);
+
+        grid.innerHTML = projects.map(p => {
+          const color = statusColor(p.status);
+          const border = color === 'emerald' ? 'border-emerald-500/50 bg-emerald-950/20' : 'border-amber-500/50 bg-amber-950/20';
+          const dot = color === 'emerald' ? 'bg-emerald-400' : 'bg-amber-400';
+          return `
+            <div class="p-5 rounded-2xl backdrop-blur-xl border ${border} hover:shadow-[0_0_24px_rgba(16,185,129,0.3)] transition-all duration-300">
+              <div class="flex items-center gap-3 mb-2">
+                <div class="w-3 h-3 rounded-full ${dot} animate-pulse"></div>
+                <h3 class="font-bold text-white truncate">${escapeHtml(p.name || 'Project')}</h3>
+              </div>
+              <p class="text-sm text-gray-400">Windows: ${p.windows ?? 0} · ${escapeHtml(String(p.status || '—'))}</p>
+              <p class="text-xs text-gray-500 mt-1">${escapeHtml(p.path || '')}</p>
+            </div>
+          `;
+        }).join('');
+
+        return openAllPaths;
+      }
+
+      refresh();
+      setInterval(refresh, 8000);
+
+      // Cursor deep-links are sometimes blocked by browsers.
+      // Reliable option: ask the backend to open folders via Cursor CLI.
+      async function openFoldersViaBackend(paths) {
+        try {
+          const host = window.location.hostname || '';
+          const port = window.location.port || '';
+          const isOnBackend = (host === 'localhost' || host === '127.0.0.1') && String(port) === '5000';
+          const base = isOnBackend ? '' : 'http://127.0.0.1:5000';
+
+          const r = await fetch(base + '/api/z-eaii/open-cursor-folders', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({ paths }),
+            credentials: 'include',
+          });
+          return await r.json();
+        } catch (e) {
+          return { ok: false, error: String(e) };
+        }
+      }
+
+      document.getElementById('btn-open-all').onclick = () => {
+        // Z-Reminder: follow up after opening projects.
+        setReminder({
+          title: 'Z-Reminder: verify opened cities',
+          body: '2 minutes passed. Check for any failed folders, then run Force Sync Now if needed.',
+          dueTs: Date.now() + 2 * 60 * 1000,
+          action: 'force-sync',
+          dismissed: false,
+          shown: false,
+        });
+
+        (async () => {
+          // Always sync first so the open list matches current registry state.
+          const syncedPaths = await refresh();
+          const paths = syncedPaths && syncedPaths.length ? syncedPaths : [
+            'C:\\Cursor Projects Organiser\\Z-SANCTUARY AI SKYSCRAPER',
+            'C:\\Cursor Projects Organiser\\Z-OMNI-Sanctuary',
+            'C:\\Cursor Projects Organiser\\Amk-Goku Dashboards 2',
+            'C:\\Cursor Projects Organiser\\ZSanctuary_Universe',
+          ];
+
+          const result = await openFoldersViaBackend(paths);
+          const details = result?.results || [];
+          const failed = details.filter((x) => !x.ok).map((x) => `${x.path}${x.reason ? ' — ' + x.reason : ''}`);
+          const okCount = details.filter((x) => x.ok).length;
+          const hasFail = failed.length > 0;
+
+          showZModal(
+            hasFail ? 'Open finished (some failed)' : 'Open finished (all accepted)',
+            (hasFail
+              ? 'Some folders could not open in Cursor. Failed:\n\n' + failed.join('\n') + '\n\n'
+              : `Backend requested Cursor to open ${details.length} folders.\nAccepted: ${okCount}\n\n`) +
+            'Auto Sync + Open list:\n' +
+            paths.join('\n') +
+            '\n\nIf some failed, paste/open these manually:\n(File → Open Folder)'
+          );
+        })();
+      };
+
+      // Auto Sync + Copy: sync from registry, copy paths only (no open).
+      document.getElementById('btn-auto-sync-copy').onclick = () => {
+        (async () => {
+          const paths = await refresh();
+          const pathsText = (paths || []).join('\n');
+          const ok = await copyToClipboard(pathsText);
+          showZModal(
+            'Auto Sync + Copy Paths',
+            (ok
+              ? 'Copied paths to clipboard.\n\n'
+              : 'Could not auto-copy. Here are the paths instead:\n\n') +
+            pathsText +
+            '\n\nPaste into Cursor via File → Open Folder.'
+          );
+        })();
+      };
+      document.getElementById('btn-force-sync').onclick = () => {
+        // Z-Reminder: follow up after sync.
+        setReminder({
+          title: 'Z-Reminder: registry follow-up',
+          body: '3 minutes passed. Re-check if the registry updated fully. Run Open All Projects if you still see missing/failed windows.',
+          dueTs: Date.now() + 3 * 60 * 1000,
+          action: 'open-all',
+          dismissed: false,
+          shown: false,
+        });
+
+        refresh();
+        showZModal('Sync refreshed', 'Sync refreshed. We Are One 💓');
+      };
+
+      document.getElementById('btn-copy-workspace')?.addEventListener('click', function () {
+        var p = lastWorkspacePath || workspaceFilePath(lastHubJson && lastHubJson.pc_root);
+        if (!p) {
+          showZModal('Workspace path', 'Load this page from the ZSanctuary server (5502) so hub JSON is available, or run Z: Emit PC Root Workspace and open the file at your PC root.');
+          return;
+        }
+        copyToClipboard(p).then(function (ok) {
+          showZModal(ok ? 'Copied' : 'Path', (ok ? 'Copied to clipboard:\n\n' : '') + p);
+        });
+      });
+    }
+
+    function escapeHtml(s) {
+      const div = document.createElement('div');
+      div.textContent = s;
+      return div.innerHTML;
+    }
+
+    // document.getElementById('btn-enter').addEventListener('click', attemptLogin);
+    // document.getElementById('password').addEventListener('keydown', e => { if (e.key === 'Enter') attemptLogin(); });
+    // document.getElementById('btn-send-code').addEventListener('click', sendCode);
+    // document.getElementById('btn-verify').addEventListener('click', verifyCode);
+
+    const boot = () => {
+      document.getElementById('login-gate')?.classList?.add('hidden');
+      document.getElementById('lock-msg')?.classList?.add('hidden');
+      document.getElementById('dashboard')?.classList?.remove('hidden');
+      startDashboard();
+    };
+
+    if (document.readyState === 'loading') {
+      document.addEventListener('DOMContentLoaded', boot);
+    } else {
+      boot();
+    }
+  </script>
+</body>
+</html>

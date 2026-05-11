@@ -1,0 +1,77 @@
+{
+  "schema": "z_mu_source_policy_v1",
+  "project_id": "Z-MU-TRUTH-1",
+  "phase": "Mauritius Civic Research & Awareness (hub metadata only)",
+  "posture": "civic_awareness_evidence_first_no_publish_automation",
+  "notices": [
+    "This JSON is doctrine and taxonomy only. It is not legal advice, not a complaint filing service, and not a substitute for licensed counsel or official channels.",
+    "All numeric facts (wages, indices, statutes) MUST be anchored to dated official sources before any public wording is upgraded from provisional to affirmed.",
+    "Do not cite this hub registry as authoritative for Mauritius law; defer to Gazette, statutes, and government portals."
+  ],
+  "source_ranks": {
+    "A": "Official statutes, Gazette, courts, Statistics Mauritius publications, ministries (dated retrieval).",
+    "B": "Peer-reviewed studies, reputable universities, UN/ILO/OHCHR explanatory pages where not replacing national law.",
+    "C": "Professional journalism with bylines and corrections policy (still verify primary sources).",
+    "D": "First-person testimony with informed consent and safety review (never minors; never coerced).",
+    "E": "Unverified social media or rumor — NEVER state as fact; use only as prompts for verification."
+  },
+  "required_claim_fields": [
+    "claim_id",
+    "category",
+    "source_status",
+    "public_wording",
+    "safety_class",
+    "next_verification_step"
+  ],
+  "peaceful_categories": [
+    "labour",
+    "economy",
+    "health",
+    "housing",
+    "debt_access",
+    "governance_institutions",
+    "rights_pathways",
+    "media_literacy",
+    "governance_institutions"
+  ],
+  "source_status_hints": {
+    "needs_verification": "Default for new ingest; provisional public wording only.",
+    "verified_official_neutral_language": "Backed by Rank A excerpts or official tables with dates.",
+    "legal_or_ethics_human_review_required": "Publish or widen distribution only after AMK/legal/human gate.",
+    "blocked_escalatory_content": "Must not ship; revise or discard."
+  },
+  "lawful_navigator_hints": [
+    "Labour grievances: route to Mauritius Ministry of Labour, HR institutions, and lawful representation where applicable.",
+    "Discrimination: Equal Opportunities Commission and related statutes — use official portals and complaint forms.",
+    "Public authority conduct: lawful ombudsman-type routes and statutes as applicable.",
+    "International treaty communications: OHCHR / treaty-body guidance pages — procedural, not automatic relief.",
+    "Assembly and association are constitutionally protected subject to lawful limitations — plan peaceful, lawful events only."
+  ],
+  "forbidden_escalation_phrases": [
+    "crash the economy",
+    "crash economy",
+    "final showdown",
+    "victory or death",
+    "victory or die",
+    "dismantle them",
+    "illegal leak",
+    "name and shame",
+    "dox",
+    "doxxing",
+    "stalk",
+    "sabotage",
+    "bring down violently",
+    "kill them",
+    "lynch",
+    "armed",
+    "bomb",
+    "terror"
+  ],
+  "forbidden_claim_traits": [
+    "incitement_or_violence",
+    "harassment_or_targeting_campaign",
+    "illegal_leaks_or_wiretap_workflow",
+    "ethnic_or_religious_group_blame_language",
+    "serious_named_accusation_as_fact_without_verified_public_evidence"
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "generated_at": "2026-04-27T20:03:28.526Z",
+  "window_days": 7,
+  "creator_entries": 2,
+  "business_entries": 0,
+  "total_entries": 2,
+  "last_entry_at": "2026-04-27T20:05:00.000Z",
+  "signal_health": "low",
+  "trend": "insufficient",
+  "note": "Low activity signal — system may appear stable but lacks real-world input."
+}

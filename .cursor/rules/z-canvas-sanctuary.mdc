@@ -1,0 +1,34 @@
+---
+description: Use Cursor Canvas + Master Register + Full Build Checklist when working on Z-Sanctuary; keep everything manageable and nothing left out.
+globs:
+alwaysApply: true
+---
+
+# Z-Sanctuary: Canvas & Master Control
+
+When working in **ZSanctuary_Universe** (or any Z-Sanctuary context):
+
+## Canvas as the control surface
+
+- If the user has a **Cursor Canvas** open for this project (e.g. "Z-Sanctuary Master"), treat it as the **single surface** for the Master Register, Full Build Checklist, and "Our best" priorities. Use the Canvas context when deciding what to add, upgrade, or simplify.
+- If no Canvas is open, still use the **docs** as the source of truth: [docs/Z-MASTER-MODULES-REGISTER.md](docs/Z-MASTER-MODULES-REGISTER.md) and [docs/Z-FULL-BUILD-CHECKLIST.md](docs/Z-FULL-BUILD-CHECKLIST.md).
+
+## Register and checklist
+
+- Before adding or changing a **module**, **core engine**, or **panel**: check the Master Register and (if applicable) the Full Build Checklist. Update the register or checklist when something is implemented or deprecated.
+- When **simplifying**: merge or consolidate in the register first, then in code.
+- **Triple-check** workflow: folders/datasets, upgrade what we have, implement what we don’t, simplify without dropping ideas. See Register §9.
+
+## Operational roof and hierarchy
+
+- Keep **Z-Super Overseer AI** (Z-EAII + auto-run + Z-SSWS) as the single operational roof. Do not add tasks or ports that conflict with the Overseer doc (Organiser: `docs/Z-SUPER-OVERSEER-AI.md`) or the registry.
+- **When unsure** about architecture, module placement, or cross-project impact: check [docs/Z-HIERARCHY-CHIEF-AND-OBSERVER-VIEW.md](docs/Z-HIERARCHY-CHIEF-AND-OBSERVER-VIEW.md) first (Hierarchy Chief). See also `.cursor/rules/z-hierarchy-chief.mdc`.
+
+## Dashboard and Blueprint
+
+- The dashboard’s **Z Blueprint** panel links to the same Register, Checklist, and INDEX. Any change to "Our best" priorities or to linked docs should stay consistent with what the Blueprint panel shows (see [docs/Z-CURSOR-CANVAS-GUIDE.md](docs/Z-CURSOR-CANVAS-GUIDE.md)).
+
+## Benefits
+
+- **Canvas + this rule** = full integration of "manage all & everything" into Cursor workflows.
+- **Z Blueprint panel** in the dashboard = same control centre from the app. Together they keep the Sanctuary fully managed and ensure nothing is left out.

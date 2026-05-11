@@ -1,0 +1,501 @@
+{
+  "generated_at": "2026-04-14T15:46:24.643Z",
+  "organiser_root": "C:\\Cursor Projects Organiser",
+  "registry_path": "C:\\Cursor Projects Organiser\\z-eaii-registry.json",
+  "overall": "PASS_WITH_GAPS",
+  "summary": {
+    "total_projects": 11,
+    "pass": 8,
+    "pass_with_gaps": 3,
+    "fail": 0
+  },
+  "projects": [
+    {
+      "name": "AT Princess & Blackie Copitol",
+      "path": "C:\\Cursor Projects Organiser\\AT Princess&Blackie Copitol",
+      "markers": [
+        "Remembrance Vault",
+        "Z-Hub",
+        "Z-SWMW",
+        "Z-Stories",
+        "Z-Market & Futures",
+        "We Are One"
+      ],
+      "ports": {
+        "backend": 4000
+      },
+      "checks": [
+        {
+          "id": "path_exists",
+          "status": "PASS",
+          "evidence": "C:\\Cursor Projects Organiser\\AT Princess&Blackie Copitol"
+        },
+        {
+          "id": "package_json",
+          "status": "PASS",
+          "evidence": "C:\\Cursor Projects Organiser\\AT Princess&Blackie Copitol\\package.json"
+        },
+        {
+          "id": "scripts_lint_test_verify",
+          "status": "PASS",
+          "evidence": "lint=true, test=true, verify=true"
+        },
+        {
+          "id": "dashboard_z_html_do",
+          "status": "PASS",
+          "evidence": "C:\\Cursor Projects Organiser\\AT Princess&Blackie Copitol\\z-html-do.html"
+        },
+        {
+          "id": "sanctuary_link_file",
+          "status": "PASS",
+          "evidence": "z_sanctuary_link.json present"
+        },
+        {
+          "id": "powershell_docs_presence",
+          "status": "PASS",
+          "evidence": ".ps1=3, .md=39, runtime_manifest=false (sample depth<=3)"
+        }
+      ],
+      "verdict": "PASS"
+    },
+    {
+      "name": "Z-SANCTUARY AI SKYSCRAPER",
+      "path": "C:\\Cursor Projects Organiser\\Z-SANCTUARY AI SKYSCRAPER",
+      "markers": [
+        "PROJECT-CONTEXT.md",
+        "Whales Bus",
+        "We Are One",
+        "15% Pool",
+        "DRP-Gate",
+        "Story Wall",
+        "Gifts Nodes"
+      ],
+      "ports": {
+        "frontend": 3000,
+        "backend": 5000,
+        "launcher": 5556
+      },
+      "checks": [
+        {
+          "id": "path_exists",
+          "status": "PASS",
+          "evidence": "C:\\Cursor Projects Organiser\\Z-SANCTUARY AI SKYSCRAPER"
+        },
+        {
+          "id": "package_json",
+          "status": "PASS",
+          "evidence": "C:\\Cursor Projects Organiser\\Z-SANCTUARY AI SKYSCRAPER\\z_project_runtime.json"
+        },
+        {
+          "id": "scripts_lint_test_verify",
+          "status": "N/A",
+          "evidence": "non-node-runtime-or-missing-package"
+        },
+        {
+          "id": "dashboard_z_html_do",
+          "status": "PASS",
+          "evidence": "C:\\Cursor Projects Organiser\\Z-SANCTUARY AI SKYSCRAPER\\z-sanctuary-aimanity\\z-html-do.html"
+        },
+        {
+          "id": "sanctuary_link_file",
+          "status": "PASS",
+          "evidence": "z_sanctuary_link.json present"
+        },
+        {
+          "id": "powershell_docs_presence",
+          "status": "PASS",
+          "evidence": ".ps1=0, .md=30, runtime_manifest=true (sample depth<=3)"
+        }
+      ],
+      "verdict": "PASS"
+    },
+    {
+      "name": "Z-OMNI-Sanctuary",
+      "path": "C:\\Cursor Projects Organiser\\Z-OMNI-Sanctuary",
+      "markers": [],
+      "ports": {},
+      "checks": [
+        {
+          "id": "path_exists",
+          "status": "PASS",
+          "evidence": "C:\\Cursor Projects Organiser\\Z-OMNI-Sanctuary"
+        },
+        {
+          "id": "package_json",
+          "status": "PASS",
+          "evidence": "C:\\Cursor Projects Organiser\\Z-OMNI-Sanctuary\\z_project_runtime.json"
+        },
+        {
+          "id": "scripts_lint_test_verify",
+          "status": "N/A",
+          "evidence": "non-node-runtime-or-missing-package"
+        },
+        {
+          "id": "dashboard_z_html_do",
+          "status": "PASS",
+          "evidence": "C:\\Cursor Projects Organiser\\Z-OMNI-Sanctuary\\z-html-do.html"
+        },
+        {
+          "id": "sanctuary_link_file",
+          "status": "PASS",
+          "evidence": "z_sanctuary_link.json present"
+        },
+        {
+          "id": "powershell_docs_presence",
+          "status": "PASS",
+          "evidence": ".ps1=0, .md=10, runtime_manifest=true (sample depth<=3)"
+        }
+      ],
+      "verdict": "PASS"
+    },
+    {
+      "name": "Amk-Goku Dashboards 2",
+      "path": "C:\\Cursor Projects Organiser\\Amk-Goku Dashboards 2",
+      "markers": [
+        "Harmony Hub",
+        "Ask Sanctuary",
+        "14 DRP",
+        "We Are One"
+      ],
+      "ports": {
+        "launcher": 5555
+      },
+      "checks": [
+        {
+          "id": "path_exists",
+          "status": "PASS",
+          "evidence": "C:\\Cursor Projects Organiser\\Amk-Goku Dashboards 2"
+        },
+        {
+          "id": "package_json",
+          "status": "PASS",
+          "evidence": "C:\\Cursor Projects Organiser\\Amk-Goku Dashboards 2\\package.json"
+        },
+        {
+          "id": "scripts_lint_test_verify",
+          "status": "PASS",
+          "evidence": "lint=true, test=true, verify=true"
+        },
+        {
+          "id": "dashboard_z_html_do",
+          "status": "PASS",
+          "evidence": "C:\\Cursor Projects Organiser\\Amk-Goku Dashboards 2\\z-html-do.html"
+        },
+        {
+          "id": "sanctuary_link_file",
+          "status": "PASS",
+          "evidence": "z_sanctuary_link.json present"
+        },
+        {
+          "id": "powershell_docs_presence",
+          "status": "PASS",
+          "evidence": ".ps1=0, .md=36, runtime_manifest=true (sample depth<=3)"
+        }
+      ],
+      "verdict": "PASS"
+    },
+    {
+      "name": "Amk-Goku Vaults",
+      "path": "C:\\Cursor Projects Organiser\\Amk-Goku Vaults",
+      "markers": [
+        "Vault",
+        "We Are One"
+      ],
+      "ports": {},
+      "checks": [
+        {
+          "id": "path_exists",
+          "status": "PASS",
+          "evidence": "C:\\Cursor Projects Organiser\\Amk-Goku Vaults"
+        },
+        {
+          "id": "package_json",
+          "status": "PASS",
+          "evidence": "C:\\Cursor Projects Organiser\\Amk-Goku Vaults\\z_project_runtime.json"
+        },
+        {
+          "id": "scripts_lint_test_verify",
+          "status": "N/A",
+          "evidence": "non-node-runtime-or-missing-package"
+        },
+        {
+          "id": "dashboard_z_html_do",
+          "status": "PASS",
+          "evidence": "C:\\Cursor Projects Organiser\\Amk-Goku Vaults\\z-html-do.html"
+        },
+        {
+          "id": "sanctuary_link_file",
+          "status": "PASS",
+          "evidence": "z_sanctuary_link.json present"
+        },
+        {
+          "id": "powershell_docs_presence",
+          "status": "GAPS",
+          "evidence": ".ps1=0, .md=0, runtime_manifest=true (sample depth<=3)"
+        }
+      ],
+      "verdict": "PASS_WITH_GAPS"
+    },
+    {
+      "name": "Ireland Projects (ÉirMind)",
+      "path": "C:\\Cursor Projects Organiser\\Ireland Projects",
+      "markers": [
+        "ÉirMind",
+        "TriLuma",
+        "Sister Aisling",
+        "Compassionate Wings"
+      ],
+      "ports": {
+        "web": 3010
+      },
+      "checks": [
+        {
+          "id": "path_exists",
+          "status": "GAPS",
+          "evidence": "C:\\Cursor Projects Organiser\\Ireland Projects (registry status: Missing (needs re-link))"
+        },
+        {
+          "id": "package_json",
+          "status": "N/A",
+          "evidence": "project marked missing/retired in registry"
+        },
+        {
+          "id": "scripts_lint_test_verify",
+          "status": "N/A",
+          "evidence": "project marked missing/retired in registry"
+        },
+        {
+          "id": "dashboard_z_html_do",
+          "status": "N/A",
+          "evidence": "project marked missing/retired in registry"
+        },
+        {
+          "id": "sanctuary_link_file",
+          "status": "N/A",
+          "evidence": "project marked missing/retired in registry"
+        },
+        {
+          "id": "powershell_docs_presence",
+          "status": "N/A",
+          "evidence": "project marked missing/retired in registry"
+        }
+      ],
+      "verdict": "PASS_WITH_GAPS"
+    },
+    {
+      "name": "ZSanctuary_Universe",
+      "path": "C:\\Cursor Projects Organiser\\ZSanctuary_Universe",
+      "markers": [
+        "Z-SSWS",
+        "Auto multi-workspace",
+        "Dashboard 5502"
+      ],
+      "ports": {
+        "dashboard": 5502
+      },
+      "checks": [
+        {
+          "id": "path_exists",
+          "status": "PASS",
+          "evidence": "C:\\Cursor Projects Organiser\\ZSanctuary_Universe"
+        },
+        {
+          "id": "package_json",
+          "status": "PASS",
+          "evidence": "C:\\Cursor Projects Organiser\\ZSanctuary_Universe\\package.json"
+        },
+        {
+          "id": "scripts_lint_test_verify",
+          "status": "PASS",
+          "evidence": "lint=true, test=true, verify=true"
+        },
+        {
+          "id": "dashboard_z_html_do",
+          "status": "PASS",
+          "evidence": "C:\\Cursor Projects Organiser\\ZSanctuary_Universe\\docs\\public\\z-html-do.html"
+        },
+        {
+          "id": "sanctuary_link_file",
+          "status": "N/A",
+          "evidence": "hub skipped by emitter design"
+        },
+        {
+          "id": "powershell_docs_presence",
+          "status": "PASS",
+          "evidence": ".ps1=7, .md=421, runtime_manifest=false (sample depth<=3)"
+        }
+      ],
+      "verdict": "PASS"
+    },
+    {
+      "name": "Sister Aisling Sol",
+      "path": "C:\\Cursor Projects Organiser\\Z-Sister Aisling Sol",
+      "markers": [
+        "ÉirMind",
+        "Compassionate Wings"
+      ],
+      "ports": {},
+      "checks": [
+        {
+          "id": "path_exists",
+          "status": "PASS",
+          "evidence": "C:\\Cursor Projects Organiser\\Z-Sister Aisling Sol"
+        },
+        {
+          "id": "package_json",
+          "status": "PASS",
+          "evidence": "C:\\Cursor Projects Organiser\\Z-Sister Aisling Sol\\z_project_runtime.json"
+        },
+        {
+          "id": "scripts_lint_test_verify",
+          "status": "N/A",
+          "evidence": "non-node-runtime-or-missing-package"
+        },
+        {
+          "id": "dashboard_z_html_do",
+          "status": "PASS",
+          "evidence": "C:\\Cursor Projects Organiser\\Z-Sister Aisling Sol\\z-html-do.html"
+        },
+        {
+          "id": "sanctuary_link_file",
+          "status": "PASS",
+          "evidence": "z_sanctuary_link.json present"
+        },
+        {
+          "id": "powershell_docs_presence",
+          "status": "PASS",
+          "evidence": ".ps1=0, .md=24, runtime_manifest=true (sample depth<=3)"
+        }
+      ],
+      "verdict": "PASS"
+    },
+    {
+      "name": "AT PB Copilot",
+      "path": "C:\\Cursor Projects Organiser\\AT PB Copilot",
+      "markers": [],
+      "ports": {},
+      "checks": [
+        {
+          "id": "path_exists",
+          "status": "GAPS",
+          "evidence": "C:\\Cursor Projects Organiser\\AT PB Copilot (registry status: Missing (needs re-link))"
+        },
+        {
+          "id": "package_json",
+          "status": "N/A",
+          "evidence": "project marked missing/retired in registry"
+        },
+        {
+          "id": "scripts_lint_test_verify",
+          "status": "N/A",
+          "evidence": "project marked missing/retired in registry"
+        },
+        {
+          "id": "dashboard_z_html_do",
+          "status": "N/A",
+          "evidence": "project marked missing/retired in registry"
+        },
+        {
+          "id": "sanctuary_link_file",
+          "status": "N/A",
+          "evidence": "project marked missing/retired in registry"
+        },
+        {
+          "id": "powershell_docs_presence",
+          "status": "N/A",
+          "evidence": "project marked missing/retired in registry"
+        }
+      ],
+      "verdict": "PASS_WITH_GAPS"
+    },
+    {
+      "name": "Z-Sanctuary Claude (Core)",
+      "path": "C:\\Cursor Projects Organiser\\Z-Sanctuary Claude",
+      "markers": [
+        "z-sanctuary-core",
+        "HTML launcher + OMNAI pages",
+        "Express API 8787",
+        "Z-EAII ping + Watchdog",
+        "We Are One"
+      ],
+      "ports": {
+        "api": 8787,
+        "static": "vscode-live-server-on-src"
+      },
+      "checks": [
+        {
+          "id": "path_exists",
+          "status": "PASS",
+          "evidence": "C:\\Cursor Projects Organiser\\Z-Sanctuary Claude"
+        },
+        {
+          "id": "package_json",
+          "status": "PASS",
+          "evidence": "C:\\Cursor Projects Organiser\\Z-Sanctuary Claude\\z_project_runtime.json"
+        },
+        {
+          "id": "scripts_lint_test_verify",
+          "status": "N/A",
+          "evidence": "non-node-runtime-or-missing-package"
+        },
+        {
+          "id": "dashboard_z_html_do",
+          "status": "PASS",
+          "evidence": "C:\\Cursor Projects Organiser\\Z-Sanctuary Claude\\z-html-do.html"
+        },
+        {
+          "id": "sanctuary_link_file",
+          "status": "PASS",
+          "evidence": "z_sanctuary_link.json present"
+        },
+        {
+          "id": "powershell_docs_presence",
+          "status": "PASS",
+          "evidence": ".ps1=7, .md=23, runtime_manifest=true (sample depth<=3)"
+        }
+      ],
+      "verdict": "PASS"
+    },
+    {
+      "name": "z-sanctuary-aimanity",
+      "path": "C:\\Cursor Projects Organiser\\z-sanctuary-aimanity",
+      "markers": [
+        "We Are One"
+      ],
+      "ports": {},
+      "checks": [
+        {
+          "id": "path_exists",
+          "status": "PASS",
+          "evidence": "C:\\Cursor Projects Organiser\\z-sanctuary-aimanity"
+        },
+        {
+          "id": "package_json",
+          "status": "PASS",
+          "evidence": "C:\\Cursor Projects Organiser\\z-sanctuary-aimanity\\package.json"
+        },
+        {
+          "id": "scripts_lint_test_verify",
+          "status": "PASS",
+          "evidence": "lint=true, test=true, verify=true"
+        },
+        {
+          "id": "dashboard_z_html_do",
+          "status": "PASS",
+          "evidence": "C:\\Cursor Projects Organiser\\z-sanctuary-aimanity\\z-html-do.html"
+        },
+        {
+          "id": "sanctuary_link_file",
+          "status": "PASS",
+          "evidence": "z_sanctuary_link.json present"
+        },
+        {
+          "id": "powershell_docs_presence",
+          "status": "PASS",
+          "evidence": ".ps1=0, .md=30, runtime_manifest=true (sample depth<=3)"
+        }
+      ],
+      "verdict": "PASS"
+    }
+  ]
+}

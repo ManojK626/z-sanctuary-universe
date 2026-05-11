@@ -1,0 +1,33 @@
+{
+  "schema_version": 1,
+  "generated_at": "2026-05-03T14:39:04.285Z",
+  "advisory_only": true,
+  "drp_note": "Read-only alignment across SPI, adaptive learning state, and QOSMEI. Not fed into learning tuner or decision execution. QOSMEI may read this file on the next fusion run (one-cycle lag after qosmei:signal).",
+  "alignment": {
+    "status": "aligned",
+    "confidence": 1,
+    "checks": 3,
+    "checks_passed": 3
+  },
+  "conflicts": [],
+  "consensus_signals": [
+    "spi_qosmei_composite_close",
+    "spi_vs_qosmei_confidence_band_ok"
+  ],
+  "summary": {
+    "spi_score": 100,
+    "spi_phase": "optimized",
+    "spi_evolution_phase": "baseline",
+    "qosmei_composite": 100,
+    "qosmei_posture": "clear",
+    "qosmei_confidence": 100,
+    "learning_cycles": 2,
+    "learning_mean_weight": 1.032,
+    "spi_weight_blend": 1.0176
+  },
+  "sources": [
+    "data/reports/z_structural_patterns.json",
+    "data/reports/z_adaptive_learning_state.json",
+    "data/reports/z_qosmei_core_signal.json"
+  ]
+}

@@ -1,0 +1,86 @@
+{
+  "schema_version": 1,
+  "id": "z-qa-rp",
+  "title": "Z-Q&A&RP",
+  "subtitle": "Questions · Answers · Resolutions · Pathways — DRP-aligned ecosystem loop",
+  "purpose": "Ground Q&A and self-inquiry in full-system knowledge and reports; route improvements through governance (SEPC, DRP, Enforcer). No autonomous execution.",
+  "drp": {
+    "canonical_doc": "docs/Z-DRP-VERIFIER-CHECKLIST.md",
+    "formula_doc": "docs/Z-ULTRA-INSTINCTS-AND-FORMULAS.md",
+    "gates_count": 14,
+    "gate_ids": [
+      "no_harm",
+      "protect_innocent",
+      "lift_others",
+      "disclosure",
+      "responsibility",
+      "protection_data_vault",
+      "consent_first",
+      "truth_in_verification",
+      "audibility",
+      "accessibility_calm_ux",
+      "fairness_value_flows",
+      "sovereignty_policy",
+      "registry_truth",
+      "pause_threshold_z_ui"
+    ]
+  },
+  "pathways": {
+    "resolution_doc": "docs/Z_RESOLUTION_PATHWAYS.md",
+    "stages": [
+      "root_detection",
+      "cause_mapping",
+      "action_selection",
+      "verification",
+      "codex_update"
+    ],
+    "sepc_note": "SKK + RKPK dual pass before escalation — see Z_RESOLUTION_PATHWAYS.md"
+  },
+  "ecosystem_feeds": [
+    {
+      "id": "garage_scan",
+      "path": "data/reports/z_garage_system_map.json",
+      "role": "structural awareness"
+    },
+    {
+      "id": "capability_registry",
+      "path": "data/z_garage_capability_registry.json",
+      "role": "capability memory"
+    },
+    {
+      "id": "zci",
+      "path": "data/reports/z_ci_intelligence.json",
+      "role": "advisory intelligence"
+    },
+    {
+      "id": "garage_plan",
+      "path": "data/reports/z_garage_upgrade_plan.json",
+      "role": "strategic upgrade patterns"
+    },
+    {
+      "id": "zuno",
+      "path": "data/reports/zuno_system_state_report.json",
+      "role": "observer state"
+    },
+    {
+      "id": "enforcer",
+      "path": "data/reports/z_execution_enforcer.json",
+      "role": "governance context (advisory signals only)"
+    }
+  ],
+  "self_inquiry_templates": [
+    "What is the true current state (reports + paths), not assumptions?",
+    "What can be done within repo policy and DRP?",
+    "What should be done next for the poorest / most excluded stakeholder affected?",
+    "Which DRP gates apply to this change (list 1–14)?",
+    "Does SEPC allow escalation, or should we pause?",
+    "What would Zuno + ZCI + Garage planner say — and where is human approval required?"
+  ],
+  "handoff_rules": [
+    "Recommendations may feed Z-Garage / ZCI / Zuno artifacts via existing scripts (e.g. npm run z:garage:full-scan).",
+    "Never imply Enforcer or release gates are overridden.",
+    "Cross-project paths must match z_pc_root_projects.json / EAII registry truth (gate 13)."
+  ],
+  "intake_log_append_only": "data/logs/z_qa_rp_intake.jsonl",
+  "dashboard_ui": "/dashboard/z-qa-rp/index.html"
+}

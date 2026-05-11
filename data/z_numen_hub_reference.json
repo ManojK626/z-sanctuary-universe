@@ -1,0 +1,64 @@
+{
+  "schema": "z.numen.hub_reference.v1",
+  "phase": "Z-NUMEN-HUB-1",
+  "project_id": "zsanctuary_labs",
+  "module_id": "z_numen_cognitive_geometry",
+  "module_name": "Z-NUMEN Cognitive Geometry Pattern Literacy Engine",
+  "mode": "educational_pattern_literacy_reference_only",
+  "labs_path": "ZSanctuary_Labs",
+  "labs_signal_source": "ZSanctuary_Labs/data/reports/z_numen_signal_report.json",
+  "labs_symbol_registry_source": "ZSanctuary_Labs/data/z_numen_symbol_registry.json",
+  "labs_signal_bands_source": "ZSanctuary_Labs/data/z_numen_signal_bands.json",
+  "companion_map_source": "ZSanctuary_Labs/data/z_numen_logical_brains_companion_map.json",
+  "related_logical_brains_module": "z_logical_brains_learning_pathway",
+  "runtime_bridge_enabled": false,
+  "deploy_enabled": false,
+  "provider_enabled": false,
+  "profiling_enabled": false,
+  "social_scraping_enabled": false,
+  "psychological_targeting_enabled": false,
+  "canvas_runtime_enabled": false,
+  "public_release": "NO_GO",
+  "go_no_go": "EDUCATIONAL_PATTERN_LITERACY_ONLY",
+  "future_gated_lanes": [
+    "canvas_3d_visual_runtime",
+    "classroom_mode",
+    "live_ai_provider",
+    "public_demo",
+    "hub_runtime_bridge"
+  ],
+  "forbidden_claims": [
+    "conspiracy proof",
+    "hidden control proof",
+    "supernatural evidence",
+    "future prediction certainty",
+    "diagnosis",
+    "therapy",
+    "danger by number alone"
+  ],
+  "related_docs": [
+    "docs/Z_NUMEN_HUB_REFERENCE.md",
+    "docs/PHASE_Z_NUMEN_HUB_1_GREEN_RECEIPT.md",
+    "ZSanctuary_Labs/docs/Z_NUMEN_COGNITIVE_GEOMETRY_ENGINE.md",
+    "ZSanctuary_Labs/docs/Z_NUMEN_SAFETY_AND_PERCEPTION_POLICY.md",
+    "ZSanctuary_Labs/docs/Z_NUMEN_LOGICAL_BRAINS_COMPANION_MAP.md"
+  ],
+  "related_reports": [
+    "data/reports/z_numen_hub_reference_report.json",
+    "data/reports/z_numen_hub_reference_report.md",
+    "ZSanctuary_Labs/data/reports/z_numen_signal_report.json",
+    "ZSanctuary_Labs/data/reports/z_numen_signal_report.md"
+  ],
+  "locked_law": [
+    "Z-NUMEN is not a conspiracy detector.",
+    "Pattern literacy is not hidden-control proof.",
+    "Signal score is not danger.",
+    "Symbolic geometry is not supernatural evidence.",
+    "Companion map is not a runtime merge.",
+    "Hub reference is not a runtime bridge.",
+    "GREEN is not deploy.",
+    "BLUE requires AMK.",
+    "RED blocks movement.",
+    "AMK-Goku owns sacred moves."
+  ]
+}

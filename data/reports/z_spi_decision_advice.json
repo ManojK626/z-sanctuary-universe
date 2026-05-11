@@ -1,0 +1,11 @@
+{
+  "schema_version": 1,
+  "generated_at": "2026-05-03T14:39:02.514Z",
+  "advisory_only": true,
+  "drp_note": "Suggestions do not execute bot:decision:act; operator confirms actions.",
+  "spi_generated_at": "2026-05-03T14:39:01.970Z",
+  "spi_phase": "optimized",
+  "spi_evolution_phase": "baseline",
+  "pending_decisions": [],
+  "suggestions": []
+}

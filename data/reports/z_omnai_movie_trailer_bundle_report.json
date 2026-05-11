@@ -1,0 +1,151 @@
+{
+  "schema": "z_omnai_movie_trailer_bundle_report_v1",
+  "generated_at": "2026-05-04T12:01:39.598Z",
+  "overall_signal": "GREEN",
+  "flags": {
+    "red": [],
+    "yellow": [],
+    "blue": [
+      "advisory:public_or_rights_or_music_review_required_before_any_externalisation"
+    ]
+  },
+  "bundle_summary": {
+    "bundle_id": "z_omnai_movie_trailer_review_bundle_v1",
+    "source_pipeline_id": "z_omnai_movie_trailer_v1",
+    "workbench_mode_id": "movie_trailer",
+    "status": "internal_review_only",
+    "public_release_status": "not_approved",
+    "autonomy_level": "L1_report",
+    "rights_posture": "original_or_permission_required"
+  },
+  "build_plan_context": {
+    "overall_build_plan_signal": "BLUE",
+    "movie_mode_signal": "GREEN"
+  },
+  "workbench_mode_summary": {
+    "purpose": "Internal motion and trailer planning: narrative, shots, audio briefs, and safety framing before spend.",
+    "recommended_verification": [
+      "npm run z:omnai",
+      "npm run z:omnai:build-plan",
+      "Peer creative read"
+    ]
+  },
+  "trailer_outline_placeholders": [
+    "1. Concept and logline — [TBD notes]",
+    "2. World bible outline — [TBD notes]",
+    "3. Beat sheet and draft script — [TBD notes]",
+    "4. Scene list and shot intentions — [TBD notes]",
+    "5. Visual style board (references only) — [TBD notes]",
+    "6. Shot list and poster copy prompts (no IP theft) — [TBD notes]",
+    "7. Voice-over and music brief — [TBD notes]",
+    "8. Trailer copy variants — [TBD notes]",
+    "9. Safety and claim review pass — [TBD notes]"
+  ],
+  "amk_prompt_index": [
+    {
+      "section": "story_concept",
+      "count": 4
+    },
+    {
+      "section": "world_bible",
+      "count": 3
+    },
+    {
+      "section": "character_roles",
+      "count": 3
+    },
+    {
+      "section": "trailer_structure",
+      "count": 3
+    },
+    {
+      "section": "scene_beats",
+      "count": 2
+    },
+    {
+      "section": "shot_list",
+      "count": 2
+    },
+    {
+      "section": "visual_style_guide",
+      "count": 3
+    },
+    {
+      "section": "music_sound_brief",
+      "count": 3
+    },
+    {
+      "section": "poster_key_art_brief",
+      "count": 3
+    },
+    {
+      "section": "accessibility_and_sensory_notes",
+      "count": 3
+    },
+    {
+      "section": "safety_rights_checklist",
+      "count": 2
+    },
+    {
+      "section": "review_questions_for_amk",
+      "count": 4
+    }
+  ],
+  "output_asset_checklist": [
+    "Logline and story spine notes",
+    "World bible (trailer-scoped)",
+    "Character list for trailer",
+    "Trailer structure beat sheet",
+    "Scene beat list with duration notes",
+    "Shot list with rights notes per shot",
+    "Visual style guide (intent only)",
+    "Music and sound brief (no license implied)",
+    "Poster or key-art brief (no generated art)",
+    "Accessibility and sensory notes",
+    "Safety and rights checklist with clearance TBDs",
+    "AMK review question answers (dated)"
+  ],
+  "rights_safety_summary": [
+    "original_or_permission_required",
+    "Original material or documented permission before any public screeners.",
+    "Music brief does not grant sync or master use — separate rights path.",
+    "Poster or key-art brief does not grant IP — design or commission lane is separate.",
+    "Child or youth depiction triggers additional review per policy.",
+    "Commercial claims in trailer copy route through Z-SUSBV and entitlement posture when applicable."
+  ],
+  "review_questions_flat": [
+    "Does this trailer honestly represent the feature?",
+    "Are all superlatives evidenced or removed?",
+    "Are minors or sensitive populations treated per policy?",
+    "Is any pricing, donation, or commercial CTA attached? If yes, route Z-SUSBV and entitlement review.",
+    "AMK decision: approve internal pack only — [date]",
+    "AMK decision: open public screener lane — [blocked until gate]"
+  ],
+  "forbidden_actions": [
+    "generate copyrighted media",
+    "mimic protected living artists without permission",
+    "use real-person likeness without consent",
+    "publish trailer",
+    "make legal or financial claims",
+    "call external AI or media APIs",
+    "deploy or upload",
+    "auto-merge trailer assets to production branches"
+  ],
+  "required_human_gates": [
+    "AMK creative approval",
+    "Rights or IP review before public use",
+    "Public release review",
+    "Music or audio rights review",
+    "Child or privacy review if minors or youth content involved"
+  ],
+  "public_release_blocked_note": "Public release, upload, paid media, and distribution remain blocked until AMK or human opens that lane with rights and policy sign-off.",
+  "law": [
+    "Review bundle ≠ final movie.",
+    "Trailer outline ≠ public release.",
+    "Style guide ≠ copyrighted asset permission.",
+    "Music brief ≠ music rights.",
+    "Poster brief ≠ generated key art.",
+    "AMK or human opens public release."
+  ],
+  "note": "Read-only generator output. No binaries, no provider calls, no deploy."
+}

@@ -1,0 +1,453 @@
+{
+  "generated_at": "2026-04-30T19:45:32.505Z",
+  "hub_root": "C:\\Cursor Projects Organiser\\ZSanctuary_Universe",
+  "mode": "read_only_scan",
+  "summary": {
+    "files_scanned": 59,
+    "main_dashboard_candidates": 5,
+    "failures_total": 0,
+    "failures_main_dashboard": 0,
+    "status": "green"
+  },
+  "entries": [
+    {
+      "path": "All APPs/lottery_app_pack_latest/index.html",
+      "classification": "skipped_not_main_candidate",
+      "pass": true,
+      "note": "index.html outside main-dashboard heuristics — informational"
+    },
+    {
+      "path": "All APPs/lottery_app_pack_latest/ui/drift_watch/index.html",
+      "classification": "skipped_not_main_candidate",
+      "pass": true,
+      "note": "index.html outside main-dashboard heuristics — informational"
+    },
+    {
+      "path": "All APPs/lottery_app_pack_latest/ui/public_trust/index.html",
+      "classification": "skipped_not_main_candidate",
+      "pass": true,
+      "note": "index.html outside main-dashboard heuristics — informational"
+    },
+    {
+      "path": "Amk_Goku Worldwide Loterry/exports/lottery_app_pack_20260130T225055Z/index.html",
+      "classification": "skipped_not_main_candidate",
+      "pass": true,
+      "note": "index.html outside main-dashboard heuristics — informational"
+    },
+    {
+      "path": "Amk_Goku Worldwide Loterry/exports/lottery_app_pack_20260130T225055Z/ui/drift_watch/index.html",
+      "classification": "skipped_not_main_candidate",
+      "pass": true,
+      "note": "index.html outside main-dashboard heuristics — informational"
+    },
+    {
+      "path": "Amk_Goku Worldwide Loterry/exports/lottery_app_pack_20260130T225055Z/ui/public_trust/index.html",
+      "classification": "skipped_not_main_candidate",
+      "pass": true,
+      "note": "index.html outside main-dashboard heuristics — informational"
+    },
+    {
+      "path": "Amk_Goku Worldwide Loterry/exports/lottery_app_pack_20260130T225320Z/index.html",
+      "classification": "skipped_not_main_candidate",
+      "pass": true,
+      "note": "index.html outside main-dashboard heuristics — informational"
+    },
+    {
+      "path": "Amk_Goku Worldwide Loterry/exports/lottery_app_pack_20260130T225320Z/ui/drift_watch/index.html",
+      "classification": "skipped_not_main_candidate",
+      "pass": true,
+      "note": "index.html outside main-dashboard heuristics — informational"
+    },
+    {
+      "path": "Amk_Goku Worldwide Loterry/exports/lottery_app_pack_20260130T225320Z/ui/public_trust/index.html",
+      "classification": "skipped_not_main_candidate",
+      "pass": true,
+      "note": "index.html outside main-dashboard heuristics — informational"
+    },
+    {
+      "path": "Amk_Goku Worldwide Loterry/exports/lottery_app_pack_20260131T130222Z/index.html",
+      "classification": "skipped_not_main_candidate",
+      "pass": true,
+      "note": "index.html outside main-dashboard heuristics — informational"
+    },
+    {
+      "path": "Amk_Goku Worldwide Loterry/exports/lottery_app_pack_20260131T130222Z/ui/drift_watch/index.html",
+      "classification": "skipped_not_main_candidate",
+      "pass": true,
+      "note": "index.html outside main-dashboard heuristics — informational"
+    },
+    {
+      "path": "Amk_Goku Worldwide Loterry/exports/lottery_app_pack_20260131T130222Z/ui/public_trust/index.html",
+      "classification": "skipped_not_main_candidate",
+      "pass": true,
+      "note": "index.html outside main-dashboard heuristics — informational"
+    },
+    {
+      "path": "Amk_Goku Worldwide Loterry/exports/lottery_app_pack_20260131T150700Z/index.html",
+      "classification": "skipped_not_main_candidate",
+      "pass": true,
+      "note": "index.html outside main-dashboard heuristics — informational"
+    },
+    {
+      "path": "Amk_Goku Worldwide Loterry/exports/lottery_app_pack_20260131T150700Z/ui/drift_watch/index.html",
+      "classification": "skipped_not_main_candidate",
+      "pass": true,
+      "note": "index.html outside main-dashboard heuristics — informational"
+    },
+    {
+      "path": "Amk_Goku Worldwide Loterry/exports/lottery_app_pack_20260131T150700Z/ui/public_trust/index.html",
+      "classification": "skipped_not_main_candidate",
+      "pass": true,
+      "note": "index.html outside main-dashboard heuristics — informational"
+    },
+    {
+      "path": "Amk_Goku Worldwide Loterry/exports/lottery_app_pack_20260131T150734Z/index.html",
+      "classification": "skipped_not_main_candidate",
+      "pass": true,
+      "note": "index.html outside main-dashboard heuristics — informational"
+    },
+    {
+      "path": "Amk_Goku Worldwide Loterry/exports/lottery_app_pack_20260131T150734Z/ui/drift_watch/index.html",
+      "classification": "skipped_not_main_candidate",
+      "pass": true,
+      "note": "index.html outside main-dashboard heuristics — informational"
+    },
+    {
+      "path": "Amk_Goku Worldwide Loterry/exports/lottery_app_pack_20260131T150734Z/ui/public_trust/index.html",
+      "classification": "skipped_not_main_candidate",
+      "pass": true,
+      "note": "index.html outside main-dashboard heuristics — informational"
+    },
+    {
+      "path": "Amk_Goku Worldwide Loterry/exports/lottery_app_pack_20260131T151828Z/index.html",
+      "classification": "skipped_not_main_candidate",
+      "pass": true,
+      "note": "index.html outside main-dashboard heuristics — informational"
+    },
+    {
+      "path": "Amk_Goku Worldwide Loterry/exports/lottery_app_pack_20260131T151828Z/ui/drift_watch/index.html",
+      "classification": "skipped_not_main_candidate",
+      "pass": true,
+      "note": "index.html outside main-dashboard heuristics — informational"
+    },
+    {
+      "path": "Amk_Goku Worldwide Loterry/exports/lottery_app_pack_20260131T151828Z/ui/public_trust/index.html",
+      "classification": "skipped_not_main_candidate",
+      "pass": true,
+      "note": "index.html outside main-dashboard heuristics — informational"
+    },
+    {
+      "path": "Amk_Goku Worldwide Loterry/exports/lottery_app_pack_20260131T152508Z/index.html",
+      "classification": "skipped_not_main_candidate",
+      "pass": true,
+      "note": "index.html outside main-dashboard heuristics — informational"
+    },
+    {
+      "path": "Amk_Goku Worldwide Loterry/exports/lottery_app_pack_20260131T152508Z/ui/drift_watch/index.html",
+      "classification": "skipped_not_main_candidate",
+      "pass": true,
+      "note": "index.html outside main-dashboard heuristics — informational"
+    },
+    {
+      "path": "Amk_Goku Worldwide Loterry/exports/lottery_app_pack_20260131T152508Z/ui/public_trust/index.html",
+      "classification": "skipped_not_main_candidate",
+      "pass": true,
+      "note": "index.html outside main-dashboard heuristics — informational"
+    },
+    {
+      "path": "Amk_Goku Worldwide Loterry/exports/lottery_app_pack_20260202T171438Z/index.html",
+      "classification": "skipped_not_main_candidate",
+      "pass": true,
+      "note": "index.html outside main-dashboard heuristics — informational"
+    },
+    {
+      "path": "Amk_Goku Worldwide Loterry/exports/lottery_app_pack_20260202T171438Z/ui/drift_watch/index.html",
+      "classification": "skipped_not_main_candidate",
+      "pass": true,
+      "note": "index.html outside main-dashboard heuristics — informational"
+    },
+    {
+      "path": "Amk_Goku Worldwide Loterry/exports/lottery_app_pack_20260202T171438Z/ui/public_trust/index.html",
+      "classification": "skipped_not_main_candidate",
+      "pass": true,
+      "note": "index.html outside main-dashboard heuristics — informational"
+    },
+    {
+      "path": "Amk_Goku Worldwide Loterry/exports/lottery_app_pack_20260215T154122Z/index.html",
+      "classification": "skipped_not_main_candidate",
+      "pass": true,
+      "note": "index.html outside main-dashboard heuristics — informational"
+    },
+    {
+      "path": "Amk_Goku Worldwide Loterry/exports/lottery_app_pack_20260215T154122Z/ui/drift_watch/index.html",
+      "classification": "skipped_not_main_candidate",
+      "pass": true,
+      "note": "index.html outside main-dashboard heuristics — informational"
+    },
+    {
+      "path": "Amk_Goku Worldwide Loterry/exports/lottery_app_pack_20260215T154122Z/ui/public_trust/index.html",
+      "classification": "skipped_not_main_candidate",
+      "pass": true,
+      "note": "index.html outside main-dashboard heuristics — informational"
+    },
+    {
+      "path": "Amk_Goku Worldwide Loterry/exports/lottery_app_pack_latest/index.html",
+      "classification": "skipped_not_main_candidate",
+      "pass": true,
+      "note": "index.html outside main-dashboard heuristics — informational"
+    },
+    {
+      "path": "Amk_Goku Worldwide Loterry/exports/lottery_app_pack_latest/ui/drift_watch/index.html",
+      "classification": "skipped_not_main_candidate",
+      "pass": true,
+      "note": "index.html outside main-dashboard heuristics — informational"
+    },
+    {
+      "path": "Amk_Goku Worldwide Loterry/exports/lottery_app_pack_latest/ui/public_trust/index.html",
+      "classification": "skipped_not_main_candidate",
+      "pass": true,
+      "note": "index.html outside main-dashboard heuristics — informational"
+    },
+    {
+      "path": "Amk_Goku Worldwide Loterry/index.html",
+      "classification": "skipped_not_main_candidate",
+      "pass": true,
+      "note": "index.html outside main-dashboard heuristics — informational"
+    },
+    {
+      "path": "Amk_Goku Worldwide Loterry/ui/drift_watch/index.html",
+      "classification": "skipped_not_main_candidate",
+      "pass": true,
+      "note": "index.html outside main-dashboard heuristics — informational"
+    },
+    {
+      "path": "Amk_Goku Worldwide Loterry/ui/education/index.html",
+      "classification": "skipped_not_main_candidate",
+      "pass": true,
+      "note": "index.html outside main-dashboard heuristics — informational"
+    },
+    {
+      "path": "Amk_Goku Worldwide Loterry/ui/public_trust/index.html",
+      "classification": "skipped_not_main_candidate",
+      "pass": true,
+      "note": "index.html outside main-dashboard heuristics — informational"
+    },
+    {
+      "path": "apps/z_gadget_mirrors/ui_web_portal/index.html",
+      "classification": "skipped_not_main_candidate",
+      "pass": true,
+      "note": "index.html outside main-dashboard heuristics — informational"
+    },
+    {
+      "path": "core/index.html",
+      "classification": "skipped_not_main_candidate",
+      "pass": true,
+      "note": "index.html outside main-dashboard heuristics — informational"
+    },
+    {
+      "path": "core/release_snapshot_ver/index.html",
+      "classification": "skipped_not_main_candidate",
+      "pass": true,
+      "note": "index.html outside main-dashboard heuristics — informational"
+    },
+    {
+      "path": "core/release_snapshot/index.html",
+      "classification": "skipped_not_main_candidate",
+      "pass": true,
+      "note": "index.html outside main-dashboard heuristics — informational"
+    },
+    {
+      "path": "dashboard/Html/index-skk-rkpk.html",
+      "classification": "main_dashboard_candidate",
+      "pass": true,
+      "checks": {
+        "title_meaningful": true,
+        "z_project_id": true,
+        "z_dashboard_role": true,
+        "z_project_family": true,
+        "header_data_z_project": true,
+        "visible_h1": true
+      },
+      "missing": [],
+      "snippets": {
+        "title": "Z-Sanctuary Universe · SKK &amp; RKPK · Dashboard (Unified)",
+        "z_project_id": "ZSanctuary_Universe",
+        "z_dashboard_role": "main-dashboard",
+        "z_project_family": "Z-Sanctuary Universe"
+      },
+      "pass_detail": true
+    },
+    {
+      "path": "dashboard/Html/index.html",
+      "classification": "redirect_stub",
+      "pass": true,
+      "checks": {
+        "title_meaningful": true,
+        "z_project_id": true,
+        "z_dashboard_role": true,
+        "z_project_family": true,
+        "header_data_z_project": false,
+        "visible_h1": false
+      },
+      "missing": [],
+      "titlePreview": "Z-Sanctuary Universe · HODP Entry Redirect → SKK&amp;RKPK",
+      "pass_detail": true
+    },
+    {
+      "path": "dashboard/Html/shadow/index-skk-rkpk.workbench.html",
+      "classification": "main_dashboard_candidate",
+      "pass": true,
+      "checks": {
+        "title_meaningful": true,
+        "z_project_id": true,
+        "z_dashboard_role": true,
+        "z_project_family": true,
+        "header_data_z_project": true,
+        "visible_h1": true
+      },
+      "missing": [],
+      "snippets": {
+        "title": "Z-Sanctuary Universe · SKK &amp; RKPK · Dashboard (Unified)",
+        "z_project_id": "ZSanctuary_Universe-shadow-workbench",
+        "z_dashboard_role": "main-dashboard",
+        "z_project_family": "Z-Sanctuary Universe"
+      },
+      "pass_detail": true
+    },
+    {
+      "path": "dashboard/index.html",
+      "classification": "skipped_not_main_candidate",
+      "pass": true,
+      "note": "index.html outside main-dashboard heuristics — informational"
+    },
+    {
+      "path": "dashboard/z-ai-ecosphere/index.html",
+      "classification": "main_dashboard_candidate",
+      "pass": true,
+      "checks": {
+        "title_meaningful": true,
+        "z_project_id": true,
+        "z_dashboard_role": true,
+        "z_project_family": true,
+        "header_data_z_project": true,
+        "visible_h1": true
+      },
+      "missing": [],
+      "snippets": {
+        "title": "Z AI Ecosphere · SSWS · Formulas · Tower",
+        "z_project_id": "dashboard-z-ai-ecosphere",
+        "z_dashboard_role": "subsystem-dashboard",
+        "z_project_family": "Z-Sanctuary Universe"
+      },
+      "pass_detail": true
+    },
+    {
+      "path": "dashboard/z-mdgev/index.html",
+      "classification": "main_dashboard_candidate",
+      "pass": true,
+      "checks": {
+        "title_meaningful": true,
+        "z_project_id": true,
+        "z_dashboard_role": true,
+        "z_project_family": true,
+        "header_data_z_project": true,
+        "visible_h1": true
+      },
+      "missing": [],
+      "snippets": {
+        "title": "Z-MDGEV · Mega Dashboard Grid · Eagle Eyes",
+        "z_project_id": "dashboard-z-mdgev",
+        "z_dashboard_role": "subsystem-dashboard",
+        "z_project_family": "Z-Sanctuary Universe"
+      },
+      "pass_detail": true
+    },
+    {
+      "path": "dashboard/z-qa-rp/index.html",
+      "classification": "main_dashboard_candidate",
+      "pass": true,
+      "checks": {
+        "title_meaningful": true,
+        "z_project_id": true,
+        "z_dashboard_role": true,
+        "z_project_family": true,
+        "header_data_z_project": true,
+        "visible_h1": true
+      },
+      "missing": [],
+      "snippets": {
+        "title": "Z-Q&A&RP · Pathways & DRP",
+        "z_project_id": "dashboard-z-qa-rp",
+        "z_dashboard_role": "subsystem-dashboard",
+        "z_project_family": "Z-Sanctuary Universe"
+      },
+      "pass_detail": true
+    },
+    {
+      "path": "docs/public/creator_manual/index.html",
+      "classification": "skipped_not_main_candidate",
+      "pass": true,
+      "note": "index.html outside main-dashboard heuristics — informational"
+    },
+    {
+      "path": "docs/public/snapshot/index.html",
+      "classification": "skipped_not_main_candidate",
+      "pass": true,
+      "note": "index.html outside main-dashboard heuristics — informational"
+    },
+    {
+      "path": "docs/public/super_chat/index.html",
+      "classification": "skipped_not_main_candidate",
+      "pass": true,
+      "note": "index.html outside main-dashboard heuristics — informational"
+    },
+    {
+      "path": "martial-platform/frontend/index.html",
+      "classification": "skipped_not_main_candidate",
+      "pass": true,
+      "note": "index.html outside main-dashboard heuristics — informational"
+    },
+    {
+      "path": "ui/z_bridge_dashboard/index.html",
+      "classification": "skipped_not_main_candidate",
+      "pass": true,
+      "note": "index.html outside main-dashboard heuristics — informational"
+    },
+    {
+      "path": "Z_Labs/copies/dashboard_copy/index.html",
+      "classification": "skipped_not_main_candidate",
+      "pass": true,
+      "note": "index.html outside main-dashboard heuristics — informational"
+    },
+    {
+      "path": "Z_Labs/copies/z_ssws_copy/index.html",
+      "classification": "skipped_not_main_candidate",
+      "pass": true,
+      "note": "index.html outside main-dashboard heuristics — informational"
+    },
+    {
+      "path": "Z_Sanctuary_Universe 2/lab-outputs/z-suc-2-reader/index.html",
+      "classification": "skipped_not_main_candidate",
+      "pass": true,
+      "note": "index.html outside main-dashboard heuristics — informational"
+    },
+    {
+      "path": "Z_Sanctuary_Universe 2/Z-Sanctuary Browser/renderer/index.html",
+      "classification": "skipped_not_main_candidate",
+      "pass": true,
+      "note": "index.html outside main-dashboard heuristics — informational"
+    },
+    {
+      "path": "ZSanctuary_Labs/copies/dashboard_copy/index.html",
+      "classification": "skipped_not_main_candidate",
+      "pass": true,
+      "note": "index.html outside main-dashboard heuristics — informational"
+    },
+    {
+      "path": "ZSanctuary_Labs/copies/z_ssws_copy/index.html",
+      "classification": "skipped_not_main_candidate",
+      "pass": true,
+      "note": "index.html outside main-dashboard heuristics — informational"
+    }
+  ]
+}

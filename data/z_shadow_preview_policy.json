@@ -1,0 +1,23 @@
+{
+  "schema": "z_shadow_preview_policy_v1",
+  "purpose": "Shadow previews are read-only references to another project's capability metadata or UI snapshot — never an implied live service, entitlement, or billing grant.",
+  "shadow_preview_definition": "A static copy, screenshot, excerpt, or mirrored JSON/doc slice that documents what exists elsewhere, under explicit source labeling.",
+  "required_declarations": [
+    "source_project",
+    "source_version_or_freshness_date",
+    "copied_capability_or_surface_name",
+    "pricing_owner",
+    "bridge_status",
+    "not_live_warning",
+    "entitlement_disclaimer"
+  ],
+  "example_label_template": "Shadow preview from {{source_project}} v{{version}} (freshness: {{iso_date}}). Read-only reference. Not a live service. Pricing and access remain owned by {{pricing_owner}} until a formal bundle charter exists.",
+  "rules": [
+    "Shadow previews must not imply that the hosting project ships or bills for the source capability.",
+    "Freshness or version must be visible next to the preview.",
+    "Live execution, shared memory, iframe embeds, or API bridges require charter plus 14 DRP/DOP gate — not satisfied by a shadow preview.",
+    "Operators may remove or stale-mark previews when the source project revokes reference permission."
+  ],
+  "live_use_requires": ["written_charter", "compatibility_review", "14_drp_dop_gate", "privacy_consent_and_deletion_story_where_applicable"],
+  "related_docs": ["docs/cross-project/Z_SHADOW_PREVIEW_POLICY.md", "docs/cross-project/Z_SERVICE_ENTITLEMENT_AND_PRICING_POLICY.md"]
+}

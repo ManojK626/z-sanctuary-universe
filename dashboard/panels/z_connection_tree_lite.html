@@ -1,0 +1,354 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Z-Connection Tree Lite</title>
+    <style>
+      :root {
+        --bg: #0a1018;
+        --surface: rgba(255, 255, 255, 0.06);
+        --border: rgba(255, 255, 255, 0.12);
+        --text: #e8f0ea;
+        --muted: #8fa39a;
+        --banner: rgba(52, 199, 89, 0.12);
+        --banner-border: rgba(52, 199, 89, 0.45);
+      }
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        margin: 0;
+        padding: 0.75rem 0.85rem 1rem;
+        font-family: 'Segoe UI', system-ui, sans-serif;
+        background: linear-gradient(180deg, #0f1820 0%, var(--bg) 100%);
+        color: var(--text);
+        font-size: 14px;
+        line-height: 1.45;
+      }
+      @media (prefers-reduced-motion: reduce) {
+        * {
+          transition: none !important;
+          animation: none !important;
+        }
+      }
+      .presence-zone {
+        margin: 0 0 0.85rem;
+        padding: 0.55rem 0.65rem;
+        border-radius: 10px;
+        border: 1px solid var(--border);
+        background: var(--surface);
+      }
+      .presence-zone-title {
+        font-size: 0.72rem;
+        font-weight: 600;
+        color: var(--muted);
+        letter-spacing: 0.04em;
+        text-transform: uppercase;
+        margin: 0 0 0.4rem;
+      }
+      .presence-btn {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        min-height: 44px;
+        padding: 0.45rem 0.85rem;
+        font-size: 0.88rem;
+        font-weight: 600;
+        color: var(--text);
+        background: rgba(52, 199, 89, 0.14);
+        border: 1px solid rgba(52, 199, 89, 0.35);
+        border-radius: 10px;
+        cursor: pointer;
+        font-family: inherit;
+      }
+      .presence-btn:hover {
+        background: rgba(52, 199, 89, 0.22);
+      }
+      .presence-btn:focus-visible {
+        outline: 2px solid rgba(88, 168, 255, 0.85);
+        outline-offset: 2px;
+      }
+      .presence-sub {
+        margin: 0.4rem 0 0;
+        font-size: 0.74rem;
+        color: var(--muted);
+        line-height: 1.4;
+      }
+      .presence-message {
+        margin-top: 0.55rem;
+        padding: 0.55rem 0.6rem;
+        border-radius: 8px;
+        border: 1px solid rgba(52, 199, 89, 0.28);
+        background: rgba(52, 199, 89, 0.07);
+        line-height: 1.55;
+        font-size: 0.84rem;
+        opacity: 0;
+        max-height: 0;
+        overflow: hidden;
+        visibility: hidden;
+        transition: opacity 0.45s ease, max-height 0.45s ease, margin-top 0.45s ease;
+      }
+      .presence-message.is-on {
+        opacity: 1;
+        max-height: 14rem;
+        visibility: visible;
+        margin-top: 0.55rem;
+      }
+      .presence-message .presence-poetic {
+        margin: 0.55rem 0 0;
+        font-size: 0.8rem;
+        color: var(--muted);
+        font-style: italic;
+        font-weight: 400;
+      }
+      .presence-symbolic-note {
+        margin: 0.5rem 0 0;
+        font-size: 0.7rem;
+        color: var(--muted);
+        font-style: italic;
+      }
+      h1 {
+        margin: 0 0 0.25rem;
+        font-size: 1.05rem;
+        font-weight: 700;
+      }
+      .muted {
+        color: var(--muted);
+        font-size: 0.82rem;
+        margin: 0 0 0.55rem;
+      }
+      .banner {
+        border-radius: 10px;
+        border: 2px solid var(--banner-border);
+        background: var(--banner);
+        padding: 0.5rem 0.6rem;
+        margin-bottom: 0.65rem;
+        font-weight: 600;
+        letter-spacing: 0.03em;
+        font-size: 0.78rem;
+      }
+      .banner-sub {
+        font-weight: 400;
+        font-size: 0.76rem;
+        color: var(--muted);
+        margin-top: 0.35rem;
+      }
+      .badges {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.35rem;
+        margin: 0.5rem 0 0.65rem;
+      }
+      .badge {
+        font-size: 0.68rem;
+        padding: 0.15rem 0.45rem;
+        border-radius: 999px;
+        border: 1px solid var(--border);
+        background: var(--surface);
+        color: var(--text);
+      }
+      .tree {
+        margin: 0;
+        padding-left: 0;
+        list-style: none;
+      }
+      .tree ul {
+        margin: 0.35rem 0 0 0.85rem;
+        padding-left: 0.5rem;
+        border-left: 1px solid var(--border);
+        list-style: none;
+      }
+      .node-card {
+        border: 1px solid var(--border);
+        border-radius: 10px;
+        padding: 0.5rem 0.55rem;
+        margin-bottom: 0.4rem;
+        background: var(--surface);
+        max-width: 100%;
+      }
+      .node-title {
+        font-weight: 650;
+        font-size: 0.92rem;
+        margin: 0 0 0.2rem;
+      }
+      .node-meta {
+        font-size: 0.72rem;
+        color: var(--muted);
+        font-family: ui-monospace, monospace;
+      }
+      .node-note {
+        margin: 0.35rem 0 0;
+        font-size: 0.8rem;
+      }
+      .vis-hidden {
+        opacity: 0.75;
+        font-style: italic;
+      }
+      .next {
+        margin-top: 0.75rem;
+        font-size: 0.8rem;
+        color: var(--muted);
+      }
+      .next strong {
+        color: var(--text);
+      }
+      .err {
+        padding: 0.6rem;
+        border-radius: 8px;
+        background: rgba(255, 82, 82, 0.12);
+        border: 1px solid rgba(255, 82, 82, 0.35);
+      }
+      .footnote {
+        margin-top: 0.75rem;
+        font-size: 0.72rem;
+        color: var(--muted);
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Z-Connection Tree Lite</h1>
+      <p class="muted">Living Connection Legacy System — read-only preview</p>
+      <div class="banner" role="status">
+        MOCK / CONSENT-FIRST / NO REAL USER DATA
+        <div class="banner-sub">
+          Example nodes only. Language uses “branches created,” not recruiting. No rankings, rewards, or exact locations.
+        </div>
+      </div>
+      <div class="badges" aria-label="Privacy posture">
+        <span class="badge">opt-in only</span>
+        <span class="badge">anonymized public nodes</span>
+        <span class="badge">no ranking</span>
+        <span class="badge">delete/hide anytime</span>
+      </div>
+    </header>
+    <section class="presence-zone" aria-label="Presence moment demo">
+      <p class="presence-zone-title">Presence moment (demo)</p>
+      <button type="button" class="presence-btn" id="presenceMarkBtn" aria-pressed="false">
+        Mark Presence (demo)
+      </button>
+      <p class="presence-sub">A quiet acknowledgment — not recorded, not tracked.</p>
+      <div
+        id="presenceMessage"
+        class="presence-message"
+        role="region"
+        aria-label="Acknowledgment message"
+        aria-hidden="true"
+      >
+        <p style="margin: 0 0 0.4rem">You are part of this moment.</p>
+        <p style="margin: 0 0 0.35rem">Nothing is stored.</p>
+        <p style="margin: 0 0 0.35rem">Nothing is measured.</p>
+        <p style="margin: 0 0 0.4rem">Only acknowledged.</p>
+        <p class="presence-poetic">— a quiet presence, here and now —</p>
+      </div>
+    </section>
+    <main id="root" aria-live="polite"><p class="muted">Loading mock tree…</p></main>
+    <p class="footnote">
+      Data: <code>data/z_connection_tree_lite_mock.json</code> · Verify:
+      <code>npm run z:connection-tree:verify</code>
+    </p>
+    <p class="presence-symbolic-note">Presence here is symbolic in this Lite version.</p>
+    <script>
+      (function () {
+        function esc(s) {
+          var t = document.createElement('span');
+          t.textContent = s == null ? '' : String(s);
+          return t.innerHTML;
+        }
+        function byParent(nodes) {
+          var map = {};
+          for (var i = 0; i < nodes.length; i++) {
+            var p = nodes[i].invited_by_node_id;
+            var k = p == null || p === '' ? '__root__' : p;
+            if (!map[k]) map[k] = [];
+            map[k].push(nodes[i]);
+          }
+          return map;
+        }
+        function renderBranch(map, parentId) {
+          var kids = map[parentId] || [];
+          if (!kids.length) return '';
+          var html = '<ul class="tree">';
+          for (var j = 0; j < kids.length; j++) {
+            var n = kids[j];
+            var visClass = n.visibility === 'hidden' ? ' vis-hidden' : '';
+            html +=
+              '<li>' +
+              '<div class="node-card' +
+              visClass +
+              '">' +
+              '<div class="node-title">' +
+              esc(n.avatar_symbol) +
+              ' ' +
+              esc(n.display_name) +
+              '</div>' +
+              '<div class="node-meta">' +
+              esc(n.node_id) +
+              ' · ' +
+              esc(n.join_era) +
+              ' · ' +
+              esc(n.region_label) +
+              ' · visibility: ' +
+              esc(n.visibility) +
+              '</div>' +
+              '<div class="node-meta">Branches created: ' +
+              esc(String(n.branches_created_count)) +
+              '</div>' +
+              '<p class="node-note">' +
+              esc(n.contribution_note) +
+              '</p>' +
+              '</div>' +
+              renderBranch(map, n.node_id) +
+              '</li>';
+          }
+          html += '</ul>';
+          return html;
+        }
+        function render(data) {
+          var nodes = (data && data.nodes) || [];
+          var map = byParent(nodes);
+          var roots = map['__root__'] || [];
+          var body = '';
+          if (!roots.length) {
+            body = '<p class="muted">No root nodes in mock.</p>';
+          } else {
+            body = '<p class="muted" style="margin-top:0">Example tree (read-only)</p>' + renderBranch(map, '__root__');
+          }
+          if (data.next_action) {
+            body += '<p class="next"><strong>Next (doctrine):</strong> ' + esc(data.next_action) + '</p>';
+          }
+          document.getElementById('root').innerHTML = body;
+        }
+        function fail(msg) {
+          document.getElementById('root').innerHTML = '<div class="err" role="alert">' + esc(msg) + '</div>';
+        }
+        function initPresenceMoment() {
+          var btn = document.getElementById('presenceMarkBtn');
+          var msg = document.getElementById('presenceMessage');
+          if (!btn || !msg) return;
+          btn.addEventListener('click', function () {
+            msg.classList.add('is-on');
+            msg.setAttribute('aria-hidden', 'false');
+            btn.setAttribute('aria-pressed', 'true');
+          });
+        }
+        fetch('../../data/z_connection_tree_lite_mock.json', { cache: 'no-store' })
+          .then(function (r) {
+            if (!r.ok) throw new Error('HTTP ' + r.status);
+            return r.json();
+          })
+          .then(function (data) {
+            render(data);
+            initPresenceMoment();
+          })
+          .catch(function () {
+            fail(
+              'Could not load z_connection_tree_lite_mock.json. Serve the hub from repo root so ../../data resolves.'
+            );
+            initPresenceMoment();
+          });
+      })();
+    </script>
+  </body>
+</html>

@@ -1,0 +1,173 @@
+{
+  "schema": "zuno_truth_layer_alignment_v1",
+  "generated_at": "2026-05-03T15:52:29.865Z",
+  "status": "YELLOW",
+  "snapshot_path": "data/zuno_state_snapshot.json",
+  "registry_path": "data/z_sanctuary_monster_project_registry.json",
+  "registry_vs_snapshot_echo": {
+    "echo_in_sync": true,
+    "snapshot_ref_present": true,
+    "live_required_count": 26,
+    "snapshot_required_count": 26
+  },
+  "narrative_presence": {
+    "missing_ids": [
+      "aftercare",
+      "alien_core",
+      "bee_vision",
+      "chakra_tree",
+      "ggaesp_360",
+      "ghost_core",
+      "give_and_receive",
+      "hashirai_mentors",
+      "heart_and_genes",
+      "money_pathway_cores",
+      "movie_eternal_storytelling",
+      "one_penny_engine",
+      "panic_mode",
+      "recovery_angels",
+      "tmk_goku_codex",
+      "tree_of_life",
+      "tree_pyramid",
+      "virtual_motherboard",
+      "z_passport",
+      "z_pee_planetary_ethics",
+      "z_tree_motherboard",
+      "z_world",
+      "zes_zecc"
+    ],
+    "rows": [
+      {
+        "id": "aftercare",
+        "label": "Aftercare",
+        "tier": "none"
+      },
+      {
+        "id": "alien_core",
+        "label": "Alien Core",
+        "tier": "none"
+      },
+      {
+        "id": "bee_vision",
+        "label": "Bee Vision",
+        "tier": "none"
+      },
+      {
+        "id": "chakra_tree",
+        "label": "Chakra Tree",
+        "tier": "none"
+      },
+      {
+        "id": "ggaesp_360",
+        "label": "GGAESP-360",
+        "tier": "none"
+      },
+      {
+        "id": "ghost_core",
+        "label": "Ghost Core",
+        "tier": "none"
+      },
+      {
+        "id": "give_and_receive",
+        "label": "Give & Receive",
+        "tier": "none"
+      },
+      {
+        "id": "hashirai_mentors",
+        "label": "Hashirai Mentors",
+        "tier": "none"
+      },
+      {
+        "id": "heart_and_genes",
+        "label": "Heart & Genes",
+        "tier": "none"
+      },
+      {
+        "id": "magical_canvas_playkit",
+        "label": "Magical Canvas PlayKit",
+        "tier": "label_words"
+      },
+      {
+        "id": "money_pathway_cores",
+        "label": "Money Pathway Cores",
+        "tier": "none"
+      },
+      {
+        "id": "movie_eternal_storytelling",
+        "label": "Movie / Eternal Storytelling",
+        "tier": "none"
+      },
+      {
+        "id": "one_penny_engine",
+        "label": "1 Penny Engine",
+        "tier": "none"
+      },
+      {
+        "id": "panic_mode",
+        "label": "Panic Mode",
+        "tier": "none"
+      },
+      {
+        "id": "recovery_angels",
+        "label": "Recovery Angels",
+        "tier": "none"
+      },
+      {
+        "id": "tmk_goku_codex",
+        "label": "TMK-Goku Codex",
+        "tier": "none"
+      },
+      {
+        "id": "tree_of_life",
+        "label": "Tree of Life",
+        "tier": "none"
+      },
+      {
+        "id": "tree_pyramid",
+        "label": "Tree Pyramid",
+        "tier": "none"
+      },
+      {
+        "id": "virtual_motherboard",
+        "label": "Virtual Motherboard",
+        "tier": "none"
+      },
+      {
+        "id": "z_passport",
+        "label": "Z-Passport",
+        "tier": "none"
+      },
+      {
+        "id": "z_pee_planetary_ethics",
+        "label": "Z-PEE Planetary Ethics",
+        "tier": "none"
+      },
+      {
+        "id": "z_questra",
+        "label": "Z-QUESTRA",
+        "tier": "id_literal"
+      },
+      {
+        "id": "z_sme",
+        "label": "Z-SME",
+        "tier": "id_literal"
+      },
+      {
+        "id": "z_tree_motherboard",
+        "label": "Z-Tree Motherboard",
+        "tier": "none"
+      },
+      {
+        "id": "z_world",
+        "label": "Z-World",
+        "tier": "none"
+      },
+      {
+        "id": "zes_zecc",
+        "label": "ZES / ZECC",
+        "tier": "none"
+      }
+    ]
+  },
+  "note": "YELLOW means refresh snapshot and/or deepen technology snapshot MD so registry cores are visible in narrative. No automatic mutation."
+}

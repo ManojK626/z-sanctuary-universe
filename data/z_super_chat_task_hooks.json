@@ -1,0 +1,202 @@
+{
+  "version": 1,
+  "read_only_manifest": true,
+  "description": "Suggested hub commands. Copy to terminal, use VS Code tasks, or (if Z_SUPER_CHAT_ALLOW_TASK_EXECUTE=1) run allowlisted npm scripts from the Super Chat UI after typing EXECUTE — never for super-chat:readonly or verify:probe (deadlock / self-probe).",
+  "hooks": [
+    {
+      "id": "verify-full",
+      "label": "Full hub verify",
+      "npmScript": "verify:full",
+      "phase": "B",
+      "risk": "read_only_verify"
+    },
+    {
+      "id": "registry-omni",
+      "label": "Registry omni verify",
+      "shell": "node scripts/z_registry_omni_verify.mjs",
+      "phase": "B",
+      "risk": "read_only_verify"
+    },
+    {
+      "id": "structure-verify",
+      "label": "Sanctuary structure verify",
+      "shell": "node scripts/z_sanctuary_structure_verify.mjs",
+      "phase": "B",
+      "risk": "read_only_verify"
+    },
+    {
+      "id": "super-chat-verify",
+      "label": "Super Chat Phase A verify (static)",
+      "npmScript": "super-chat:verify",
+      "phase": "B",
+      "risk": "read_only_verify",
+      "allowServerExecute": true
+    },
+    {
+      "id": "z-bridge-validate",
+      "label": "Z-Bridge validate",
+      "npmScript": "z:bridge:validate",
+      "phase": "B",
+      "risk": "read_only_verify",
+      "allowServerExecute": true
+    },
+    {
+      "id": "z-bridge-test",
+      "label": "Z-Bridge loader smoke",
+      "npmScript": "z:bridge:test",
+      "phase": "B",
+      "risk": "read_only_verify",
+      "allowServerExecute": true
+    },
+    {
+      "id": "operator-digest",
+      "label": "Operator digest (Super Chat awareness JSON)",
+      "npmScript": "operator:digest",
+      "phase": "B",
+      "risk": "hub_reports_write",
+      "allowServerExecute": true
+    },
+    {
+      "id": "super-chat-verify-probe",
+      "label": "Super Chat verify with live probe",
+      "npmScript": "super-chat:verify:probe",
+      "phase": "B",
+      "risk": "read_only_verify"
+    },
+    {
+      "id": "dashboard-live",
+      "label": "Dashboard (live-server)",
+      "hint": "npx live-server dashboard/Html --port=5502 --entry-file=index.html",
+      "phase": "B",
+      "risk": "local_server"
+    },
+    {
+      "id": "dashboard-registry-verify",
+      "label": "Dashboard registry verify (MDGEV tiles + Q&A&RP paths on disk)",
+      "npmScript": "dashboard:registry-verify",
+      "phase": "B",
+      "risk": "read_only_verify",
+      "allowServerExecute": true
+    },
+    {
+      "id": "ai-ecosphere-ledger",
+      "label": "Z AI Ecosphere ledger (SSWS · formulas · tower · task log)",
+      "npmScript": "ai:ecosphere:ledger",
+      "phase": "B",
+      "risk": "hub_reports_write",
+      "allowServerExecute": true
+    },
+    {
+      "id": "ai-ecosphere-refresh",
+      "label": "Z AI Ecosphere refresh (ledger + task CSV)",
+      "npmScript": "ai:ecosphere:refresh",
+      "phase": "B",
+      "risk": "hub_reports_write",
+      "allowServerExecute": true
+    },
+    {
+      "id": "ai-ecosphere-delta",
+      "label": "Z AI Ecosphere delta (temporal change report)",
+      "npmScript": "ai:ecosphere:delta",
+      "phase": "B",
+      "risk": "hub_reports_write",
+      "allowServerExecute": true
+    },
+    {
+      "id": "ai-consistency-check",
+      "label": "Z AI consistency check (cross-signal mismatch)",
+      "npmScript": "ai:consistency:check",
+      "phase": "B",
+      "risk": "hub_reports_write",
+      "allowServerExecute": true
+    },
+    {
+      "id": "ai-signal-health",
+      "label": "Z AI signal health (7-day activity pulse)",
+      "npmScript": "ai:signal:health",
+      "phase": "B",
+      "risk": "hub_reports_write",
+      "allowServerExecute": true
+    },
+    {
+      "id": "ai-system-health",
+      "label": "Z-System health (ZCI + garage pressure)",
+      "npmScript": "ai:system:health",
+      "phase": "B",
+      "risk": "hub_reports_write",
+      "allowServerExecute": true
+    },
+    {
+      "id": "ai-communication-health",
+      "label": "Z-Communication health (manifests + commflow lens)",
+      "npmScript": "ai:communication:health",
+      "phase": "B",
+      "risk": "hub_reports_write",
+      "allowServerExecute": true
+    },
+    {
+      "id": "vault-spine-verify",
+      "label": "Z-Vault spine verify (docs link manifest)",
+      "npmScript": "vault:spine:verify",
+      "phase": "B",
+      "risk": "hub_reports_write",
+      "allowServerExecute": true
+    },
+    {
+      "id": "ai-system-coherence",
+      "label": "Z-System coherence (cross-layer score)",
+      "npmScript": "ai:system:coherence",
+      "phase": "B",
+      "risk": "hub_reports_write",
+      "allowServerExecute": true
+    },
+    {
+      "id": "ai-adaptive-coherence",
+      "label": "Z-Adaptive coherence (ACI — actions + forecast)",
+      "npmScript": "ai:adaptive:coherence",
+      "phase": "B",
+      "risk": "hub_reports_write",
+      "allowServerExecute": true
+    },
+    {
+      "id": "ai-self-tuning",
+      "label": "Z-Self-tuning intelligence (STIL — learning log aggregation)",
+      "npmScript": "ai:self:tuning",
+      "phase": "B",
+      "risk": "hub_reports_write",
+      "allowServerExecute": true
+    },
+    {
+      "id": "ai-experience-memory",
+      "label": "Z-Experience memory (EML — long-term patterns from learning log)",
+      "npmScript": "ai:experience:memory",
+      "phase": "B",
+      "risk": "hub_reports_write",
+      "allowServerExecute": true
+    },
+    {
+      "id": "ai-experience-intelligence",
+      "label": "Z-Experience intelligence (XIL — long-term strategy synthesis)",
+      "npmScript": "ai:experience:intelligence",
+      "phase": "B",
+      "risk": "hub_reports_write",
+      "allowServerExecute": true
+    },
+    {
+      "id": "ai-fusion-council",
+      "label": "Z-Fusion council (advisory consensus + conflict synthesis)",
+      "npmScript": "ai:fusion:council",
+      "phase": "B",
+      "risk": "hub_reports_write",
+      "allowServerExecute": true
+    },
+    {
+      "id": "ai-task-log-csv",
+      "label": "AI task log → CSV (creator + business)",
+      "npmScript": "ai:task-log:csv",
+      "phase": "B",
+      "risk": "hub_reports_write",
+      "allowServerExecute": true
+    }
+  ]
+}

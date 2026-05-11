@@ -1,0 +1,85 @@
+{
+  "schema_version": 1,
+  "name": "z-vhealth-core",
+  "generated_at": "2026-04-27T20:03:29.091Z",
+  "posture": "caution",
+  "health_score": 70,
+  "future_risk": "medium",
+  "top_risk": "Learning/signal health is low — add real task log / signal before scaling work.",
+  "top_risks": [
+    "Learning/signal health is low — add real task log / signal before scaling work.",
+    "System coherence misaligned — layers disagree; resolve signal vs structure.",
+    "Z-VDK: 2 high-severity path(s) (often Downloads installers) — confirm origin."
+  ],
+  "recommended_challenge": {
+    "id": "signal_coherence_refresh",
+    "title": "Signal + coherence refresh",
+    "reason": "Coherence or signal reports show strain — strengthen real log lines and refresh scans.",
+    "safe_action": "Append task JSONL entries, then npm run zuno:state"
+  },
+  "challenge_queue": [
+    {
+      "id": "signal_coherence_refresh",
+      "title": "Signal + coherence refresh",
+      "difficulty": "medium",
+      "reward": "coherence + signal alignment",
+      "why": "Coherence or signal reports show strain — strengthen real log lines and refresh scans.",
+      "safe_command": "Append task JSONL entries, then npm run zuno:state"
+    },
+    {
+      "id": "vdk_calm_review",
+      "title": "VDK calm review",
+      "difficulty": "easy",
+      "reward": "VDK confidence +10",
+      "why": "VDK has multiple findings — review the latest findings report; no quarantine in Phase 1.",
+      "safe_command": "Read data/reports/z_vdk_findings_review_*.md and z_vdk_scan_report.json"
+    },
+    {
+      "id": "freshness_challenge",
+      "title": "Observer freshness",
+      "difficulty": "easy",
+      "reward": "observer freshness",
+      "why": "Keep AAFRTC + comms manifests in window for clear cross-layer reads.",
+      "safe_command": "node scripts/z_aafrtc_resolve.mjs  # then npm run comms:github-ai as needed"
+    }
+  ],
+  "preparation_plan": [
+    "npm run zuno:state",
+    "npm run vhealth:report",
+    "If VDK age is stale: npm run vdk:scan && npm run vdk:report",
+    "If storage unknown: npm run fpsmc:scan && npm run fpsmc:report",
+    "Archive Zuno if desired: npm run zuno:state:archive -- --force"
+  ],
+  "authority": "advisory_only_no_auto_execution",
+  "sources_read": [
+    "zuno_system_state_report.json",
+    "z_qosmei_core_signal.json",
+    "z_system_coherence.json",
+    "z_adaptive_coherence.json",
+    "z_communication_health.json",
+    "z_bot_guardian.json",
+    "z_bot_alerts.json",
+    "z_fpsmc_storage_map.json",
+    "z_vdk_scan_report.json",
+    "z_prediction_validation.json",
+    "z_release_gate_summary.json"
+  ],
+  "inputs_present": {
+    "zuno_system_state_report.json": true,
+    "z_qosmei_core_signal.json": true,
+    "z_system_coherence.json": true,
+    "z_adaptive_coherence.json": true,
+    "z_communication_health.json": true,
+    "z_bot_guardian.json": true,
+    "z_bot_alerts.json": true,
+    "z_fpsmc_storage_map.json": true,
+    "z_vdk_scan_report.json": true,
+    "z_prediction_validation.json": true,
+    "z_release_gate_summary.json": true,
+    "z_execution_enforcer.json (optional)": true
+  },
+  "notes": {
+    "enforcer_considered": true,
+    "scoring": "Heuristic blend from Zuno, QOSMEI, coherence, comms, guardian, alerts, FPSMC, VDK, release, optional enforcer"
+  }
+}

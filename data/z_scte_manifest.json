@@ -1,0 +1,48 @@
+{
+  "schema_version": 1,
+  "id": "Z-SCTE",
+  "title": "Self Creations Test Ecosystem",
+  "status": "active",
+  "purpose": "Comms-first loop to major overseers and AI Tower surfaces, then human approval, then full health scans. Advisory — no auto-destructive execution.",
+  "canonical_doc": "docs/Z-SCTE-SELF-CREATIONS-TEST-ECOSYSTEM.md",
+  "comms_recipients": [
+    {
+      "id": "z_super_overseer",
+      "label": "Z-Super Overseer (operational roof)",
+      "ref": "Organiser: docs/Z-SUPER-OVERSEER-AI.md; hub: Z-HIERARCHY-CHIEF-AND-OBSERVER-VIEW.md"
+    },
+    {
+      "id": "z_hodp",
+      "label": "Z-HODP (Control Centre, Blueprint, Panel Directory)",
+      "ref": "dashboard/Html/index-skk-rkpk.html"
+    },
+    {
+      "id": "z_eaii",
+      "label": "Z-EAII / PC-root registry",
+      "ref": "data/z_pc_root_projects.json; Organiser z-eaii-registry.json"
+    },
+    {
+      "id": "ai_tower",
+      "label": "AI Tower & ecosphere surfaces",
+      "ref": "data/reports/z_ai_status.json; npm run z:whale-bus:comms+surfaces"
+    },
+    {
+      "id": "zuno",
+      "label": "Zuno (state & reflection)",
+      "ref": "node scripts/z_zuno_state_report.mjs; dashboard/z-ai-ecosphere/index.html"
+    }
+  ],
+  "comms_freshness_commands": [
+    "npm run comms:github-ai",
+    "npm run comms:cloudflare-ai",
+    "node scripts/z_aafrtc_resolve.mjs"
+  ],
+  "approval_note": "Human operator; Z-OSHA / release / execution enforcer per hub policy. No machine-only sign-off for production impact.",
+  "full_scans_suggested": [
+    "npm run verify:full:technical",
+    "npm run verify:ci",
+    "npm run bot:awareness:plus",
+    "node scripts/z_zuno_state_report.mjs"
+  ],
+  "completions_doc": "docs/Z-COMPLETIONS-TEST-AND-COMMUNICATIONS-FLOW.md"
+}

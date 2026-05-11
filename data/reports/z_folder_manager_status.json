@@ -1,0 +1,513 @@
+{
+  "generated_at": "2026-05-11T12:26:45.123Z",
+  "status": "ready",
+  "guard_checks": [
+    {
+      "id": "registry_internal_only",
+      "pass": true,
+      "note": "registry status=internal-only"
+    },
+    {
+      "id": "registry_miniai_authorized",
+      "pass": true,
+      "note": "registry access includes Mini-AI"
+    },
+    {
+      "id": "security_policy_present",
+      "pass": true,
+      "note": "security policy file present"
+    },
+    {
+      "id": "policy_internal_mode",
+      "pass": true,
+      "note": "policy mode=internal-only"
+    }
+  ],
+  "mode": "recreate_dry_run",
+  "source_snapshot": "safe_pack/z_sanctuary_vault/folder_manager/snapshots/2026-04-29T15-04-31-920Z",
+  "drift_warn_threshold": 10,
+  "drift_warning": true,
+  "candidate_changes": 120,
+  "changes": [
+    {
+      "path": "core/z_companion_3d.js",
+      "action": "update"
+    },
+    {
+      "path": "core/z_ui_extras.js",
+      "action": "update"
+    },
+    {
+      "path": "scripts/z_ai_status_writer.js",
+      "action": "update"
+    },
+    {
+      "path": "scripts/z_ecosystem_commflow_verifier.mjs",
+      "action": "update"
+    },
+    {
+      "path": "scripts/z_lab_folder_manager_boost.mjs",
+      "action": "update"
+    },
+    {
+      "path": "scripts/z_markdown_table_compact.mjs",
+      "action": "update"
+    },
+    {
+      "path": "interface/z_style.css",
+      "action": "update"
+    },
+    {
+      "path": "docs/IMPLEMENTATION_GUIDE_FUTURE_PROOFING.md",
+      "action": "update"
+    },
+    {
+      "path": "docs/Z-ACOUSTIC-LIVING-PULSE-ARCHITECTURE.md",
+      "action": "update"
+    },
+    {
+      "path": "docs/Z-CREATOR-MANUAL.md",
+      "action": "update"
+    },
+    {
+      "path": "docs/Z-FULL-VISION-AND-REINFORCEMENT.md",
+      "action": "update"
+    },
+    {
+      "path": "docs/Z-GITHUB-FIRST-PR-OBSERVATION.md",
+      "action": "update"
+    },
+    {
+      "path": "docs/Z-GITHUB-SANCTUARY-GATE.md",
+      "action": "update"
+    },
+    {
+      "path": "docs/Z-HIERARCHY-CHIEF-AND-OBSERVER-VIEW.md",
+      "action": "update"
+    },
+    {
+      "path": "docs/Z-MASTER-MODULES-REGISTER.md",
+      "action": "update"
+    },
+    {
+      "path": "docs/Z-SANCTUARY-NAS-ARCHITECTURE-BLUEPRINT.md",
+      "action": "update"
+    },
+    {
+      "path": "docs/Z-SSWS-ALL-PROJECTS-AND-AI-COLONY-BLUEPRINT.md",
+      "action": "update"
+    },
+    {
+      "path": "docs/z-vault/INDEX.md",
+      "action": "update"
+    },
+    {
+      "path": "docs/Z-ZUNO-AI-FULL-REPORT.md",
+      "action": "update"
+    },
+    {
+      "path": "data/reports/incidents/2026-04-29T14-19-10-442Z-extension_guard.md",
+      "action": "update"
+    },
+    {
+      "path": "data/reports/INDEX.md",
+      "action": "update"
+    },
+    {
+      "path": "data/reports/privacy/z_privacy_report.json",
+      "action": "update"
+    },
+    {
+      "path": "data/reports/reports_manifest.json",
+      "action": "update"
+    },
+    {
+      "path": "data/reports/zuno_state_history.json",
+      "action": "update"
+    },
+    {
+      "path": "data/reports/zuno_system_state_report.json",
+      "action": "update"
+    },
+    {
+      "path": "data/reports/zuno_system_state_report.md",
+      "action": "update"
+    },
+    {
+      "path": "data/reports/z_adaptive_learning_state.json",
+      "action": "update"
+    },
+    {
+      "path": "data/reports/z_ai_ecosphere_ledger.json",
+      "action": "update"
+    },
+    {
+      "path": "data/reports/z_ai_ecosphere_ledger.md",
+      "action": "update"
+    },
+    {
+      "path": "data/reports/z_ai_status.json",
+      "action": "update"
+    },
+    {
+      "path": "data/reports/z_ataiecf_shadow_verify.json",
+      "action": "update"
+    },
+    {
+      "path": "data/reports/z_ataiecf_shadow_verify.md",
+      "action": "update"
+    },
+    {
+      "path": "data/reports/z_autorun_audit.json",
+      "action": "update"
+    },
+    {
+      "path": "data/reports/z_canonical_alias_audit.json",
+      "action": "update"
+    },
+    {
+      "path": "data/reports/z_canonical_alias_audit.md",
+      "action": "update"
+    },
+    {
+      "path": "data/reports/z_cloudflare_ai_comms_manifest.json",
+      "action": "update"
+    },
+    {
+      "path": "data/reports/z_communication_health.json",
+      "action": "update"
+    },
+    {
+      "path": "data/reports/z_core_engine_audit.json",
+      "action": "update"
+    },
+    {
+      "path": "data/reports/z_core_engine_audit.md",
+      "action": "update"
+    },
+    {
+      "path": "data/reports/z_cross_project_observer.json",
+      "action": "update"
+    },
+    {
+      "path": "data/reports/z_cross_project_observer.md",
+      "action": "update"
+    },
+    {
+      "path": "data/reports/z_cross_system_learning.json",
+      "action": "update"
+    },
+    {
+      "path": "data/reports/z_cross_system_learning.md",
+      "action": "update"
+    },
+    {
+      "path": "data/reports/z_cycle_indicator.json",
+      "action": "update"
+    },
+    {
+      "path": "data/reports/z_cycle_indicator.md",
+      "action": "update"
+    },
+    {
+      "path": "data/reports/z_cycle_ledger.jsonl",
+      "action": "update"
+    },
+    {
+      "path": "data/reports/z_dashboard_registry_verify.json",
+      "action": "update"
+    },
+    {
+      "path": "data/reports/z_dashboard_registry_verify.md",
+      "action": "update"
+    },
+    {
+      "path": "data/reports/z_data_layout_audit.json",
+      "action": "update"
+    },
+    {
+      "path": "data/reports/z_data_layout_audit.md",
+      "action": "update"
+    },
+    {
+      "path": "data/reports/z_data_leak_audit.json",
+      "action": "update"
+    },
+    {
+      "path": "data/reports/z_data_leak_audit.md",
+      "action": "update"
+    },
+    {
+      "path": "data/reports/z_ecosystem_commflow_verifier.json",
+      "action": "update"
+    },
+    {
+      "path": "data/reports/z_ecosystem_commflow_verifier.md",
+      "action": "update"
+    },
+    {
+      "path": "data/reports/z_error_budget.json",
+      "action": "update"
+    },
+    {
+      "path": "data/reports/z_error_budget.md",
+      "action": "update"
+    },
+    {
+      "path": "data/reports/z_error_budget_ledger.jsonl",
+      "action": "update"
+    },
+    {
+      "path": "data/reports/z_extension_guard.json",
+      "action": "update"
+    },
+    {
+      "path": "data/reports/z_extension_guard.md",
+      "action": "update"
+    },
+    {
+      "path": "data/reports/z_folder_manager_status.json",
+      "action": "update"
+    },
+    {
+      "path": "data/reports/z_folder_manager_status.md",
+      "action": "update"
+    },
+    {
+      "path": "data/reports/z_formula_sync_check.json",
+      "action": "update"
+    },
+    {
+      "path": "data/reports/z_formula_sync_check.md",
+      "action": "update"
+    },
+    {
+      "path": "data/reports/z_github_ai_comms_manifest.json",
+      "action": "update"
+    },
+    {
+      "path": "data/reports/z_guardian_report.json",
+      "action": "update"
+    },
+    {
+      "path": "data/reports/z_hygiene_autofix.json",
+      "action": "update"
+    },
+    {
+      "path": "data/reports/z_hygiene_autofix.md",
+      "action": "update"
+    },
+    {
+      "path": "data/reports/z_ide_commflow_guard.json",
+      "action": "update"
+    },
+    {
+      "path": "data/reports/z_ide_commflow_guard.md",
+      "action": "update"
+    },
+    {
+      "path": "data/reports/z_indicator_watchdog.json",
+      "action": "update"
+    },
+    {
+      "path": "data/reports/z_indicator_watchdog.md",
+      "action": "update"
+    },
+    {
+      "path": "data/reports/z_indicator_watchdog_advisory.json",
+      "action": "update"
+    },
+    {
+      "path": "data/reports/z_indicator_watchdog_advisory.md",
+      "action": "update"
+    },
+    {
+      "path": "data/reports/z_lab_bootstrap.json",
+      "action": "update"
+    },
+    {
+      "path": "data/reports/z_lab_bootstrap.md",
+      "action": "update"
+    },
+    {
+      "path": "data/reports/z_lab_folder_manager_boost.json",
+      "action": "update"
+    },
+    {
+      "path": "data/reports/z_lab_folder_manager_boost.md",
+      "action": "update"
+    },
+    {
+      "path": "data/reports/z_lab_status.json",
+      "action": "update"
+    },
+    {
+      "path": "data/reports/z_lab_status.md",
+      "action": "update"
+    },
+    {
+      "path": "data/reports/z_lab_task_structure_guard.json",
+      "action": "update"
+    },
+    {
+      "path": "data/reports/z_lab_task_structure_guard.md",
+      "action": "update"
+    },
+    {
+      "path": "data/reports/z_learning_evaluation.json",
+      "action": "update"
+    },
+    {
+      "path": "data/reports/z_module_registry_audit.json",
+      "action": "update"
+    },
+    {
+      "path": "data/reports/z_module_registry_audit.md",
+      "action": "update"
+    },
+    {
+      "path": "data/reports/z_multi_workspace_guard.json",
+      "action": "update"
+    },
+    {
+      "path": "data/reports/z_multi_workspace_guard.md",
+      "action": "update"
+    },
+    {
+      "path": "data/reports/z_pending_audit.json",
+      "action": "update"
+    },
+    {
+      "path": "data/reports/z_pending_audit.md",
+      "action": "update"
+    },
+    {
+      "path": "data/reports/z_placeholder_dir_audit.json",
+      "action": "update"
+    },
+    {
+      "path": "data/reports/z_placeholder_dir_audit.md",
+      "action": "update"
+    },
+    {
+      "path": "data/reports/z_prediction_validation.json",
+      "action": "update"
+    },
+    {
+      "path": "data/reports/z_prediction_validation.md",
+      "action": "update"
+    },
+    {
+      "path": "data/reports/z_predictive_intelligence.json",
+      "action": "update"
+    },
+    {
+      "path": "data/reports/z_predictive_intelligence.md",
+      "action": "update"
+    },
+    {
+      "path": "data/reports/z_project_freshness.json",
+      "action": "update"
+    },
+    {
+      "path": "data/reports/z_qosmei_core_signal.json",
+      "action": "update"
+    },
+    {
+      "path": "data/reports/z_qosmei_core_signal.md",
+      "action": "update"
+    },
+    {
+      "path": "data/reports/z_report_freshness.json",
+      "action": "update"
+    },
+    {
+      "path": "data/reports/z_report_freshness.md",
+      "action": "update"
+    },
+    {
+      "path": "data/reports/z_security_alerts.json",
+      "action": "update"
+    },
+    {
+      "path": "data/reports/z_security_alerts.jsonl",
+      "action": "update"
+    },
+    {
+      "path": "data/reports/z_security_sentinel.json",
+      "action": "update"
+    },
+    {
+      "path": "data/reports/z_slo_guard.json",
+      "action": "update"
+    },
+    {
+      "path": "data/reports/z_slo_guard.md",
+      "action": "update"
+    },
+    {
+      "path": "data/reports/z_spi_decision_advice.json",
+      "action": "update"
+    },
+    {
+      "path": "data/reports/z_spi_decision_advice.md",
+      "action": "update"
+    },
+    {
+      "path": "data/reports/z_spi_guardian_pre_warnings.json",
+      "action": "update"
+    },
+    {
+      "path": "data/reports/z_ssws_daily_report.json",
+      "action": "update"
+    },
+    {
+      "path": "data/reports/z_ssws_shadow_verify.json",
+      "action": "update"
+    },
+    {
+      "path": "data/reports/z_storage_hygiene_audit.json",
+      "action": "update"
+    },
+    {
+      "path": "data/reports/z_storage_hygiene_audit.md",
+      "action": "update"
+    },
+    {
+      "path": "data/reports/z_structural_patterns.json",
+      "action": "update"
+    },
+    {
+      "path": "data/reports/z_structural_patterns.md",
+      "action": "update"
+    },
+    {
+      "path": "data/reports/z_system_health.json",
+      "action": "update"
+    },
+    {
+      "path": "data/reports/z_topic_prefix_guard.json",
+      "action": "update"
+    },
+    {
+      "path": "data/reports/z_vscode_timeguard.json",
+      "action": "update"
+    },
+    {
+      "path": "data/reports/z_vscode_timeguard.md",
+      "action": "update"
+    },
+    {
+      "path": "data/reports/z_whale_bus_run.json",
+      "action": "update"
+    },
+    {
+      "path": "data/reports/z_zuno_daily_report.json",
+      "action": "update"
+    },
+    {
+      "path": "data/reports/z_zuno_daily_report.md",
+      "action": "update"
+    }
+  ]
+}

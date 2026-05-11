@@ -1,0 +1,61 @@
+{
+  "schema": "z_swarm_14drp_report_v1",
+  "generated_at": "2026-05-05T13:22:30.498Z",
+  "overall_signal": "GREEN",
+  "law_registry_path": "data/z_swarm_14drp_agent_law_registry.json",
+  "role_registry_path": "data/z_formula_swarm_role_registry.json",
+  "summary": {
+    "fourteen_drp_count": 14,
+    "role_count": 15,
+    "signal_counts": {
+      "RED": 0,
+      "BLUE": 0,
+      "YELLOW": 0,
+      "GREEN": 0
+    }
+  },
+  "amk_gated_future_lanes": [
+    {
+      "gate_id": "swarm_execution_lane",
+      "status": "future_gated",
+      "requires": [
+        "charter",
+        "14_drp_review",
+        "amk_signoff",
+        "rollback_test_receipts"
+      ]
+    },
+    {
+      "gate_id": "provider_backed_live_agents",
+      "status": "future_gated",
+      "requires": [
+        "privacy_gate",
+        "secret_policy",
+        "legal_review",
+        "amk_signoff"
+      ]
+    },
+    {
+      "gate_id": "voice_and_sensor_autonomy",
+      "status": "future_gated",
+      "requires": [
+        "consent_ux",
+        "mic_camera_gps_policy",
+        "child_safety_review",
+        "amk_signoff"
+      ]
+    }
+  ],
+  "rollback_note": "Revert added Z-SWARM-14DRP-1 docs/registries/script/package indicator rows and rerun verify:md, z:traffic, z:car2.",
+  "issues": [],
+  "locked_law": [
+    "Swarm law != swarm execution.",
+    "Z-Formula != magic authority.",
+    "Mini-bot suggestion != permission.",
+    "Quantum label != physics claim.",
+    "GREEN != deploy.",
+    "BLUE requires AMK.",
+    "RED blocks movement.",
+    "AMK-Goku owns sacred moves."
+  ]
+}

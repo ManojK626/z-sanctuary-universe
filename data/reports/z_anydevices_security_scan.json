@@ -1,0 +1,25 @@
+{
+  "generated_at": "2026-04-26T01:48:45.712Z",
+  "mode": "local-read-only",
+  "status": "green",
+  "collectors": {
+    "defender": "ok",
+    "removable_drives": "ok"
+  },
+  "defender": {
+    "service_enabled": true,
+    "antivirus_enabled": true,
+    "antispyware_enabled": true,
+    "realtime_enabled": true,
+    "quick_scan_age_days": 2,
+    "full_scan_age_days": 4294967295,
+    "signature_age_days": 0,
+    "nis_enabled": true
+  },
+  "removable_drives": [],
+  "findings": {
+    "severe": [],
+    "warnings": []
+  },
+  "notes": "Device security posture is clear for read-only monitoring."
+}

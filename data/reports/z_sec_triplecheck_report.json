@@ -1,0 +1,117 @@
+{
+  "schema": "z_sec_triplecheck_report_v1",
+  "generated_at": "2026-05-08T12:11:51.319Z",
+  "overall_signal": "YELLOW",
+  "policy_path": "data/z_sec_triplecheck_policy.json",
+  "summary": {
+    "red_count": 0,
+    "blue_count": 0,
+    "yellow_count": 4,
+    "required_reports_checked": 2,
+    "optional_reports_checked": 7
+  },
+  "report_states": [
+    {
+      "report": "data/reports/z_ide_fusion_report.json",
+      "state": "OK",
+      "required": true,
+      "age_hours": 15.41
+    },
+    {
+      "report": "data/reports/z_traffic_minibots_status.json",
+      "state": "OK",
+      "required": true,
+      "age_hours": 0.01
+    },
+    {
+      "report": "data/reports/amk_workspace_doorway_status.json",
+      "state": "OK",
+      "required": false,
+      "age_hours": 90.8
+    },
+    {
+      "report": "data/reports/amk_cursor_workspace_profiles_report.json",
+      "state": "OK",
+      "required": false,
+      "age_hours": 90.8
+    },
+    {
+      "report": "data/reports/z_ssws_launch_requirements_report.json",
+      "state": "OK",
+      "required": false,
+      "age_hours": 0.01
+    },
+    {
+      "report": "data/reports/z_api_readiness_report.json",
+      "state": "NOT_EXPECTED",
+      "required": false,
+      "expectation": "z_api_gate_lane_enabled",
+      "classification_when_missing": "INFO_OPTIONAL"
+    },
+    {
+      "report": "data/reports/z_api_spine_report.json",
+      "state": "OK",
+      "required": false,
+      "age_hours": 0.01
+    },
+    {
+      "report": "data/reports/z_amk_gtai_strategy_report.json",
+      "state": "OK",
+      "required": false,
+      "age_hours": 90.32
+    },
+    {
+      "report": "data/reports/z_swarm_14drp_report.json",
+      "state": "OK",
+      "required": false,
+      "age_hours": 70.82
+    }
+  ],
+  "red_findings": [],
+  "blue_decisions": [],
+  "yellow_observations": [
+    {
+      "signal": "YELLOW",
+      "code": "optional_report_stale",
+      "message": "Optional report is stale (data/reports/amk_workspace_doorway_status.json, 90.8h).",
+      "bucket": "communication"
+    },
+    {
+      "signal": "YELLOW",
+      "code": "optional_report_stale",
+      "message": "Optional report is stale (data/reports/amk_cursor_workspace_profiles_report.json, 90.8h).",
+      "bucket": "communication"
+    },
+    {
+      "signal": "YELLOW",
+      "code": "optional_report_stale",
+      "message": "Optional report is stale (data/reports/z_amk_gtai_strategy_report.json, 90.3h).",
+      "bucket": "communication"
+    },
+    {
+      "signal": "YELLOW",
+      "code": "optional_report_stale",
+      "message": "Optional report is stale (data/reports/z_swarm_14drp_report.json, 70.8h).",
+      "bucket": "communication"
+    }
+  ],
+  "mr_bug_eligible_safe_fixes": [
+    "markdown table spacing",
+    "trailing spaces",
+    "missing final newline",
+    "generated read-only reports",
+    "local docs link hygiene if unambiguous"
+  ],
+  "no_runtime_execution_added": true,
+  "locked_law": [
+    "Triple-check != execution.",
+    "Mr Bug suggestion != permission.",
+    "Auto-fix is docs-hygiene only.",
+    "Security fix requires AMK.",
+    "GREEN != deploy.",
+    "BLUE requires AMK.",
+    "RED blocks movement.",
+    "AMK-Goku owns sacred moves."
+  ],
+  "rollback_note": "Revert Z-SEC-TRIPLECHECK-1 docs/data/script/indicator changes, then rerun verify:md, z:traffic, z:car2."
+}

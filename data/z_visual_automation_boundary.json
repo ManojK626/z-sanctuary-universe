@@ -1,0 +1,28 @@
+{
+  "ZFormat": "v1",
+  "ZUpdatedAt": "2026-04-18T12:00:00.000Z",
+  "title": "Visual automation and Cursor approval boundaries (14 DRP aligned)",
+  "principle": "No automation shall simulate human input or programmatically bypass Cursor/VS Code approval surfaces (Allowlist, Run, Approve terminal command). Operator consent and platform security outrank convenience.",
+  "drp_anchor": [
+    "docs/Z-ULTRA-INSTINCTS-AND-FORMULAS.md",
+    "docs/Z-DRP-VERIFIER-CHECKLIST.md"
+  ],
+  "research_doc": "docs/Z-AI-VISUAL-OVERLAY-CURSOR-APPROVALS-RESEARCH.md",
+  "approved_patterns": [
+    "Hub dashboard HTML (e.g. port 5502) for supervision and links — human-initiated",
+    "Z-Bridge / guardian / operator digest JSON — append-only observability",
+    "AAFRTC and Z: tasks — predefined npm pipelines from hub root only",
+    "Cursor slash commands and hooks for logging / ritual — not approval forgery"
+  ],
+  "rejected_patterns": [
+    "RPA or OS-level synthetic mouse/keyboard targeting Cursor UI",
+    "Hidden auto-accept of terminal or file-access prompts",
+    "Undisclosed remote control of the operator desktop"
+  ],
+  "deeper_sections_in_doc": [
+    "Legitimate levers (tasks, slash commands, dashboard, hooks logging)",
+    "Future platform watchlist (DRP-gated)",
+    "Operator checklist"
+  ],
+  "review_cadence": "Quarterly or after major Cursor upgrade; re-check data/z_visual_automation_boundary.json against new platform features"
+}

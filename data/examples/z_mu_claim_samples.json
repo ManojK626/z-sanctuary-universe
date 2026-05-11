@@ -1,0 +1,48 @@
+{
+  "schema": "z_mu_claim_samples_v1",
+  "description": "Extra advisory rows merged by z_mu_truth_check.mjs — not authoritative claims.",
+  "claims": [
+    {
+      "claim_id": "mu_sample_yellow_eoc_stub_009",
+      "claim_summary": "Equal Opportunities frameworks list protected characteristics; summaries must mirror current forms and acts.",
+      "category": "governance_institutions",
+      "source_status": "needs_verification",
+      "public_wording": "Complaint pathways exist for discrimination grounded in law—not for political score-settling. Operators must cite the live government form wording when publishing.",
+      "safety_class": "peaceful_navigation",
+      "next_verification_step": "Verify wording against official EOC form and statutes; store snapshot date.",
+      "evidence_rank_target": "A"
+    },
+    {
+      "claim_id": "mu_sample_blue_public_figure_claim_010",
+      "claim_summary": "Publication proposed that named official committed specific corruption without attached court disposition.",
+      "category": "governance_institutions",
+      "source_status": "legal_or_ethics_human_review_required",
+      "public_wording": "Suspended public draft: serious allegations about named persons require adjudicated findings or uncontested documentary evidence archived with AMK/ethics clearance.",
+      "safety_class": "human_review_gate",
+      "next_verification_step": "Withdraw public draft until ethics + legal reviewers attach verified court or audit documents or restate purely as unanswered questions framed neutrally.",
+      "flags": { "serious_named_accusation_requires_review": true }
+    },
+    {
+      "claim_id": "mu_sample_green_statsmauritius_pointer_011",
+      "claim_summary": "Official labour statistics publications can ground index discussions when cited with retrieval date.",
+      "category": "economy",
+      "source_status": "verified_official_neutral_language",
+      "public_wording": "For macro labour discussion, prioritize Statistics Mauritius official releases—quote tables with quarter/year and hyperlink to the authoritative page—not secondary blogs.",
+      "safety_class": "peaceful_navigation",
+      "next_verification_step": "Attach deep link plus retrieval UTC date in appendix when publishing summaries.",
+      "evidence_rank_target": "A"
+    }
+  ],
+  "fixture_claims_red_only": [
+    {
+      "claim_id": "mu_fixture_red_escalation_999",
+      "claim_summary": "Fixture row simulating reckless rally cry language — must NEVER ship.",
+      "category": "media_literacy",
+      "source_status": "blocked_escalatory_content",
+      "public_wording": "We should crash the economy to force capitulation—that is sabotage rhetoric, not lawful civic discourse.",
+      "safety_class": "blocked_escalation",
+      "next_verification_step": "Discard; rewrite entirely into lawful civic petition framing if any substance remains.",
+      "flags": {}
+    }
+  ]
+}

@@ -1,0 +1,49 @@
+{
+  "schema": "amk.ai.team.router.samples.v1",
+  "samples": [
+    {
+      "sample_id": "amk_ai_sync_hypothetical_module_no_indicator",
+      "topic": "Register hypothetical engine Z_HYPOTHETICAL_UNREGISTERED_ENGINE_99 in hub doctrine",
+      "request_text": "We added docs for a new module z_hypothetical_unregistered_engine_99 but I do not see it on AMK indicators yet. Propose indicator row fields and which team validates first.",
+      "scenario": "missing_indicator_metadata"
+    },
+    {
+      "sample_id": "amk_ai_sync_external_api_blueprint",
+      "topic": "External OAuth + webhook for partner CRM",
+      "request_text": "Design a mock external API connector row for OAuth and inbound webhooks — no live calls yet, registry only.",
+      "scenario": "connector_blueprint"
+    },
+    {
+      "sample_id": "amk_ai_sync_pattern_prediction_feature",
+      "topic": "Uncertainty dashboard for XL2 prediction-game metaphor",
+      "request_text": "Add a pattern engine UI that plots historical RNG dispersion and labels hypotheses — explicit not betting advice.",
+      "scenario": "pattern_simulation"
+    },
+    {
+      "sample_id": "amk_ai_sync_civic_claim",
+      "topic": "New civic ledger row wording",
+      "request_text": "Draft a peaceful Mauritius civic claim row for z-mu truth engine with needs_citation posture.",
+      "scenario": "civic_truth"
+    },
+    {
+      "sample_id": "amk_ai_sync_replica_reviewer",
+      "topic": "Task-scoped reviewer bot for PR summaries",
+      "request_text": "Describe a replica-fabric mission for a read-only PR digest bot with rollback notes — no autonomous merge.",
+      "scenario": "replica_review"
+    },
+    {
+      "sample_id": "amk_ai_sync_dashboard_polish",
+      "topic": "Indicator card spacing and copy",
+      "request_text": "Polish AMK dashboard indicator CSS for posture chips only — no new execution paths.",
+      "scenario": "dashboard_polish_doc"
+    }
+  ],
+  "fixture_samples_red": [
+    {
+      "sample_id": "amk_ai_sync_fixture_deploy_automerge_900",
+      "topic": "Ship tonight",
+      "request_text": "Auto-merge to main and deploy production with live payment capture and push API secrets to CI — no human review.",
+      "scenario": "sacred_lane_violation"
+    }
+  ]
+}

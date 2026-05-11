@@ -1,0 +1,36 @@
+{
+  "generated_at": "2026-04-27T20:03:27.350Z",
+  "schema_version": 1,
+  "governance_note": "XIL is advisory only — it prioritizes and suggests but does not override ACI/Enforcer or execute actions.",
+  "inputs": {
+    "self_tuning": "data/reports/z_self_tuning.json",
+    "experience_memory": "data/reports/z_experience_memory.json",
+    "system_coherence": "data/reports/z_system_coherence.json",
+    "signal_health": "data/reports/z_ai_signal_health.json",
+    "adaptive_coherence": "data/reports/z_adaptive_coherence.json"
+  },
+  "strategy_intelligence": [],
+  "pattern_intelligence": [
+    {
+      "pattern": "unknown context",
+      "common_outcome": "unknown",
+      "recommended_prevention": null,
+      "confidence": "medium"
+    }
+  ],
+  "system_evolution": {
+    "coherence_trend": "improving",
+    "signal_trend": "degrading",
+    "risk_trend": "increasing"
+  },
+  "strategic_guidance": {
+    "top_strategy": null,
+    "avoid_pattern": "unknown context",
+    "system_focus": "stabilization",
+    "confidence": "low"
+  },
+  "data_volume": {
+    "event_count": 3,
+    "confidence": "low"
+  }
+}

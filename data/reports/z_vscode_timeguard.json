@@ -1,0 +1,8 @@
+{
+  "generated_at": "2026-05-11T12:26:39.868Z",
+  "status": "green",
+  "scanned_files": 26,
+  "findings_count": 0,
+  "findings": [],
+  "note": "Prevents reintroduction of prompt-based timezone/window inputs."
+}

@@ -1,0 +1,24 @@
+{
+  "schema": "z_omnai_core_engine_combo_rollup_v1",
+  "narrative": "--all: default tick + matrix summary (+ optional full via --matrix-full) + manifest + chain; indicator overlay refreshed.",
+  "artefacts": [
+    {
+      "path": "C:\\Cursor Projects Organiser\\Z_Sanctuary_Universe\\data\\reports\\z_omnai_core_engine_tick_report.json",
+      "rollup": "YELLOW"
+    },
+    {
+      "path": "C:\\Cursor Projects Organiser\\Z_Sanctuary_Universe\\data\\reports\\z_omnai_core_engine_matrix_summary.json",
+      "executions": 4800
+    },
+    {
+      "path": "C:\\Cursor Projects Organiser\\Z_Sanctuary_Universe\\data\\reports\\z_omnai_core_engine_manifest_report.json",
+      "count": 7
+    },
+    {
+      "path": "C:\\Cursor Projects Organiser\\Z_Sanctuary_Universe\\data\\reports\\z_omnai_core_engine_chain_report.json",
+      "steps": 5
+    }
+  ],
+  "indicator_overlay_relative": "data\\reports\\z_omnai_core_engine_indicator_overlay.json",
+  "generated_unix_ms": 1778465060977
+}

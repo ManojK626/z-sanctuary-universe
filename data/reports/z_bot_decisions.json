@@ -1,0 +1,20 @@
+{
+  "schema_version": 2,
+  "generated_at": "2026-04-26T01:11:31.126Z",
+  "name": "z-mini-bot-decision",
+  "advisory": true,
+  "drp_note": "Guidance only. Does not run shell, move files, or change registry. Use bot:decision:act or decision:bridge to update lifecycle. Human/Overseer authority for all actions.",
+  "input_sources": {
+    "guardian_present": true,
+    "health_present": true,
+    "alerts_present": true,
+    "patterns_report_present": true,
+    "rootcause_report_present": true,
+    "predictions_report_present": true,
+    "adaptive_report_present": true,
+    "execution_plans_present": true,
+    "strategy_report_present": true
+  },
+  "total_decisions": 0,
+  "decisions": []
+}

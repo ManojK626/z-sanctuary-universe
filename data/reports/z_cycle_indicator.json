@@ -1,0 +1,44 @@
+{
+  "generated_at": "2026-05-02T18:16:33.704Z",
+  "status": "green",
+  "total_cycles": 110,
+  "calm_streak": 61,
+  "calm_rate_pct": 97.3,
+  "latest_cycle": {
+    "cycle_id": "2026-05-02T18-16-33-701Z",
+    "cycle_date": "2026-05-02",
+    "operator": "AMK",
+    "operating_state": "paused_pending_nas_sync",
+    "freeze_ok": true,
+    "phase_guard": {
+      "status": "green",
+      "report_path": "data/reports/z_sandbox_phase_guard.json"
+    },
+    "sync_pack": {
+      "folder": "nas_ready/sync_packs/2026-03-30",
+      "zip": "ZSANCTUARY_SYNC_PACK_v1.zip",
+      "sha256_zip": "f18b25f386007a08c0045eff80cad0050e1c0d0ace3650c7538e315652638458",
+      "sha256_manifest": "04c894803b6ee0cd17ab3aba1e6dac76a464a1598f9e807dd550a0c0bbf38c68"
+    },
+    "reports_refresh": {
+      "status": "ok"
+    },
+    "attitude": "calm",
+    "notes": "stabilization cycle record",
+    "created_at": "2026-05-02T18:16:33.701Z"
+  },
+  "recent_attitudes": [
+    "calm",
+    "calm",
+    "calm",
+    "calm",
+    "calm",
+    "calm",
+    "calm"
+  ],
+  "attitude_counts": {
+    "calm": 107,
+    "drift": 1,
+    "caution": 2
+  }
+}

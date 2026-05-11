@@ -1,0 +1,718 @@
+/**
+ * Z-ROOT-7 / Z-ROOT-7B — Guardian constellation (3D-lite: CSS perspective + orbit + parallax).
+ * No WebGL. prefers-reduced-motion disables drift and pointer parallax.
+ */
+
+.z-root7-body {
+  --z7-gold: #e8c547;
+  --z7-zuno: #93c5fd;
+  --z7-at: #f0ab8c;
+  --z7-princess: #c4b5fd;
+  --z7-blackie: #6d28d9;
+  --z7-blackie-ring: #34d399;
+  --z7-fox: #22c55e;
+  --z7-fox-accent: #f97316;
+  --z7-aisling: #5eead4;
+  --z7-aisling-accent: #fef08a;
+  --z7-root: #6ee7b7;
+  --z7-line-strong: rgba(147, 197, 253, 0.52);
+  --z7-line-soft: rgba(167, 139, 250, 0.32);
+  --z7-line-root: rgba(110, 231, 183, 0.36);
+  --z7-tilt-x: 0deg;
+  --z7-tilt-y: 0deg;
+}
+
+.z-root7-lead {
+  margin: 0 0 0.85rem;
+  font-size: 0.92rem;
+  color: var(--amk-muted, #94a3b8);
+  line-height: 1.45;
+  max-width: 58rem;
+}
+
+.z-root7-wrap {
+  position: relative;
+  border-radius: 12px;
+  overflow: visible;
+  border: 1px solid rgba(148, 163, 184, 0.25);
+  background:
+    radial-gradient(ellipse 120% 80% at 20% 18%, rgba(99, 102, 241, 0.2), transparent 55%),
+    radial-gradient(ellipse 90% 55% at 82% 28%, rgba(56, 189, 248, 0.12), transparent 48%),
+    radial-gradient(ellipse 95% 95% at 50% 100%, rgba(30, 41, 59, 0.92), rgba(15, 23, 42, 0.99));
+  box-shadow: inset 0 0 90px rgba(15, 23, 42, 0.55);
+}
+
+.z-root7-controls {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  gap: 0.65rem 1rem;
+  padding: 0.65rem 0.85rem 0.35rem;
+  border-bottom: 1px solid rgba(148, 163, 184, 0.15);
+  background: rgba(15, 23, 42, 0.35);
+  border-radius: 12px 12px 0 0;
+}
+
+.z-root7-orbit-toggle {
+  appearance: none;
+  border: 1px solid rgba(147, 197, 253, 0.45);
+  background: rgba(30, 41, 59, 0.85);
+  color: #e2e8f0;
+  font-size: 0.82rem;
+  padding: 0.35rem 0.65rem;
+  border-radius: 999px;
+  cursor: pointer;
+}
+
+.z-root7-orbit-toggle:hover:not(:disabled) {
+  border-color: rgba(167, 139, 250, 0.55);
+  background: rgba(51, 65, 85, 0.9);
+}
+
+.z-root7-orbit-toggle:disabled {
+  opacity: 0.55;
+  cursor: not-allowed;
+}
+
+.z-root7-visual-law {
+  margin: 0;
+  flex: 1;
+  min-width: 220px;
+  font-size: 0.79rem;
+  line-height: 1.42;
+  color: rgba(186, 200, 220, 0.95);
+}
+
+.z-root7-motion-note {
+  margin: 0;
+  width: 100%;
+  font-size: 0.75rem;
+  color: rgba(110, 231, 183, 0.85);
+}
+
+.z-root7-stage {
+  position: relative;
+  perspective: 1180px;
+  perspective-origin: 50% 38%;
+  padding: 0.6rem 0.85rem 0.85rem;
+  min-height: 24rem;
+  overflow: visible;
+}
+
+.z-root7-parallax {
+  position: relative;
+  transform-style: preserve-3d;
+  transform: rotateX(var(--z7-tilt-x)) rotateY(var(--z7-tilt-y));
+  transition: transform 0.18s ease-out;
+  min-height: 23rem;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .z-root7-parallax {
+    transition: none;
+  }
+}
+
+.z-root7-stars-far,
+.z-root7-stars-mid,
+.z-root7-mist {
+  position: absolute;
+  inset: -4%;
+  border-radius: inherit;
+  pointer-events: none;
+  transform-style: preserve-3d;
+}
+
+.z-root7-stars-far {
+  transform: translateZ(-140px) scale(1.05);
+  opacity: 0.38;
+  background-image:
+    radial-gradient(1px 1px at 8% 18%, rgba(255, 255, 255, 0.75), transparent),
+    radial-gradient(1px 1px at 22% 78%, rgba(255, 255, 255, 0.4), transparent),
+    radial-gradient(1px 1px at 55% 12%, rgba(255, 255, 255, 0.5), transparent),
+    radial-gradient(1px 1px at 88% 36%, rgba(255, 255, 255, 0.45), transparent),
+    radial-gradient(1px 1px at 71% 84%, rgba(255, 255, 255, 0.35), transparent),
+    radial-gradient(1px 1px at 40% 48%, rgba(255, 255, 255, 0.3), transparent);
+  animation: z7-star-drift 130s linear infinite;
+}
+
+.z-root7-stars-mid {
+  transform: translateZ(-55px);
+  opacity: 0.45;
+  background-image:
+    radial-gradient(1.5px 1.5px at 18% 28%, rgba(186, 200, 255, 0.55), transparent),
+    radial-gradient(1px 1px at 64% 64%, rgba(255, 255, 255, 0.4), transparent),
+    radial-gradient(1px 1px at 42% 12%, rgba(255, 255, 255, 0.35), transparent);
+}
+
+.z-root7-mist {
+  transform: translateZ(-88px);
+  background: radial-gradient(ellipse 80% 65% at 50% 45%, rgba(99, 102, 241, 0.12), transparent 70%);
+  mix-blend-mode: screen;
+  opacity: 0.85;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .z-root7-stars-far {
+    animation: none;
+  }
+}
+
+@keyframes z7-star-drift {
+  from {
+    transform: translateZ(-140px) scale(1.05) translate3d(0, 0, 0);
+  }
+
+  to {
+    transform: translateZ(-140px) scale(1.05) translate3d(-1.2%, -0.9%, 0);
+  }
+}
+
+.z-root7-orbit-spin {
+  transform-style: preserve-3d;
+}
+
+.z-root7-orbit-spin--animate {
+  animation: z-root7-orbit-spin 260s linear infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .z-root7-orbit-spin--animate {
+    animation: none !important;
+  }
+}
+
+@keyframes z-root7-orbit-spin {
+  from {
+    transform: rotateY(0deg);
+  }
+
+  to {
+    transform: rotateY(-360deg);
+  }
+}
+
+.z-root7-orbit-rings {
+  position: absolute;
+  left: 5%;
+  right: 5%;
+  top: 10%;
+  bottom: 22%;
+  transform-style: preserve-3d;
+  pointer-events: none;
+  z-index: 0;
+}
+
+.z-root7-el {
+  position: absolute;
+  left: 50%;
+  top: 52%;
+  border-radius: 50%;
+  border: 1px solid rgba(129, 140, 248, 0.12);
+  transform: translate(-50%, -50%) rotateX(76deg);
+  box-shadow: 0 0 22px rgba(99, 102, 241, 0.08);
+}
+
+.z-root7-el--lg {
+  width: 92%;
+  height: 48%;
+}
+
+.z-root7-el--md {
+  width: 76%;
+  height: 39%;
+  border-color: rgba(56, 189, 248, 0.1);
+}
+
+.z-root7-el--sm {
+  width: 58%;
+  height: 30%;
+  border-color: rgba(167, 139, 250, 0.09);
+}
+
+.z-root7-chart {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 920 / 500;
+  transform-style: preserve-3d;
+  z-index: 1;
+}
+
+.z-root7-svg-layer {
+  position: absolute;
+  inset: 0;
+  transform: translateZ(-4px);
+  transform-style: preserve-3d;
+}
+
+.z-root7-svg-layer svg {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.z-root7-nodes-layer {
+  position: absolute;
+  inset: 0;
+  transform-style: preserve-3d;
+  pointer-events: none;
+}
+
+.z-root7-node-3d {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 0;
+  height: 0;
+  transform-style: preserve-3d;
+  pointer-events: auto;
+  z-index: 2;
+}
+
+.z-root7-card-inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.08rem;
+  flex-shrink: 0;
+  min-width: 4.75rem;
+  padding: 0.35rem 0.42rem;
+  transform-style: preserve-3d;
+  border-radius: 14px;
+  border: 2px solid rgba(226, 232, 240, 0.2);
+  background: rgba(15, 23, 42, 0.75);
+  box-shadow:
+    0 4px 18px rgba(0, 0, 0, 0.45),
+    inset 0 1px 0 rgba(255, 255, 255, 0.06);
+  transition:
+    transform 0.26s cubic-bezier(0.34, 1.56, 0.64, 1),
+    box-shadow 0.22s ease,
+    filter 0.22s ease;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .z-root7-card-inner {
+    transition: none;
+  }
+}
+
+.z-root7-glyph {
+  font-size: 1rem;
+  line-height: 1;
+  filter: drop-shadow(0 0 4px rgba(0, 0, 0, 0.5));
+}
+
+.z-root7-node-label {
+  font-size: 0.58rem;
+  font-weight: 700;
+  color: rgba(241, 245, 249, 0.98);
+  text-align: center;
+  line-height: 1.1;
+  max-width: 7rem;
+  white-space: normal;
+}
+
+.z-root7-node-3d:hover .z-root7-card-inner,
+.z-root7-node-3d:focus .z-root7-card-inner {
+  transform: rotateX(-6deg) rotateY(5deg) translateZ(16px) scale(1.08);
+  box-shadow:
+    0 14px 32px rgba(0, 0, 0, 0.5),
+    0 0 22px rgba(147, 197, 253, 0.18);
+}
+
+.z-root7-node-3d:focus {
+  outline: none;
+}
+
+.z-root7-node-3d:focus .z-root7-card-inner {
+  outline: 2px solid rgba(147, 197, 253, 0.85);
+  outline-offset: 3px;
+}
+
+.z-root7-line {
+  fill: none;
+  stroke-linecap: round;
+  stroke-width: 2;
+  transition:
+    stroke-opacity 0.2s ease,
+    filter 0.2s ease;
+}
+
+.z-root7-line--primary {
+  stroke: var(--z7-line-strong);
+  stroke-width: 2.35;
+}
+
+.z-root7-line--secondary {
+  stroke: rgba(232, 197, 71, 0.33);
+  stroke-width: 1.9;
+}
+
+.z-root7-line--muted {
+  stroke: var(--z7-line-soft);
+  stroke-width: 1.45;
+}
+
+.z-root7-line--roots {
+  stroke: var(--z7-line-root);
+  stroke-width: 1.4;
+  stroke-dasharray: 6 10;
+}
+
+.z-root7-line--deep {
+  opacity: 0.78;
+}
+
+.z-root7-line--far {
+  opacity: 0.62;
+  filter: blur(0.25px);
+}
+
+.z-root7-lines-g.z-root7-lines-g--dim .z-root7-line:not(.z-root7-line--hot) {
+  stroke-opacity: 0.26;
+}
+
+.z-root7-line--hot {
+  stroke-opacity: 1;
+  opacity: 1 !important;
+  filter: drop-shadow(0 0 7px rgba(147, 197, 253, 0.75));
+}
+
+.z-root7-detail {
+  position: relative;
+  z-index: 3;
+  margin: 0;
+  padding: 0.75rem 1rem 1rem;
+  background: rgba(15, 23, 42, 0.88);
+  border-top: 1px solid rgba(148, 163, 184, 0.2);
+  min-height: 6.5rem;
+}
+
+.z-root7-detail h3 {
+  margin: 0 0 0.35rem;
+  font-size: 1rem;
+  color: var(--amk-text-soft, #e2e8f0);
+}
+
+.z-root7-detail .z-root7-role {
+  margin: 0 0 0.35rem;
+  font-size: 0.82rem;
+  color: rgba(148, 163, 184, 0.95);
+}
+
+.z-root7-detail .z-root7-copy {
+  margin: 0;
+  font-size: 0.88rem;
+  line-height: 1.45;
+  color: var(--amk-muted, #cbd5e1);
+}
+
+.z-root7-detail .z-root7-boundary {
+  margin: 0.5rem 0 0;
+  font-size: 0.78rem;
+  color: rgba(148, 163, 184, 0.85);
+  font-style: italic;
+}
+
+.z-root7-law-box {
+  position: relative;
+  z-index: 3;
+  padding: 0.65rem 1rem 0.85rem;
+  background: rgba(15, 23, 42, 0.55);
+  border-top: 1px solid rgba(110, 231, 183, 0.2);
+  border-radius: 0 0 12px 12px;
+}
+
+.z-root7-law-title {
+  margin: 0 0 0.35rem;
+  font-size: 0.78rem;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: rgba(110, 231, 183, 0.9);
+}
+
+.z-root7-law-list {
+  margin: 0;
+  padding-left: 1.15rem;
+  font-size: 0.8rem;
+  line-height: 1.42;
+  color: rgba(226, 232, 240, 0.85);
+}
+
+.z-root7-law-note {
+  margin: 0.5rem 0 0;
+  font-size: 0.74rem;
+  color: rgba(148, 163, 184, 0.9);
+}
+
+.z-root7-doc-link {
+  margin: 0.5rem 0 0;
+  font-size: 0.82rem;
+}
+
+.z-root7-doc-link a {
+  color: #93c5fd;
+}
+
+.z-root7-error {
+  padding: 0.75rem;
+  color: #fecaca;
+  font-size: 0.88rem;
+}
+
+.z-root7-amk .z-root7-card-inner {
+  border-color: rgba(232, 197, 71, 0.45);
+  background: radial-gradient(circle at 40% 30%, rgba(232, 197, 71, 0.18), rgba(15, 23, 42, 0.88));
+}
+
+.z-root7-zuno .z-root7-card-inner {
+  border-color: rgba(147, 197, 253, 0.45);
+  background: radial-gradient(circle at 35% 25%, rgba(147, 197, 253, 0.15), rgba(15, 23, 42, 0.88));
+}
+
+.z-root7-at .z-root7-card-inner {
+  border-color: rgba(240, 171, 140, 0.42);
+}
+
+.z-root7-princess .z-root7-card-inner {
+  border-color: rgba(196, 181, 253, 0.42);
+}
+
+.z-root7-blackie .z-root7-card-inner {
+  border-color: rgba(52, 211, 153, 0.4);
+}
+
+.z-root7-fox .z-root7-card-inner {
+  border-color: rgba(249, 115, 22, 0.4);
+}
+
+.z-root7-aisling .z-root7-card-inner {
+  border-color: rgba(254, 240, 138, 0.35);
+}
+
+.z-root7-rootlaw .z-root7-card-inner {
+  min-width: 3.5rem;
+  padding: 0.22rem;
+  border-color: rgba(110, 231, 183, 0.4);
+}
+
+.z-root7-rootlaw .z-root7-node-label {
+  font-size: 0.48rem;
+}
+
+/* ─── Unified hub (index-skk-rkpk): extra galaxy halo behind constellation ─── */
+.z-hub-root7-galaxy-wrap {
+  position: relative;
+  padding: 0.35rem 0;
+  margin: 0 -0.25rem;
+  border-radius: 14px;
+  overflow: visible;
+}
+
+.z-hub-root7-galaxy-wrap::before {
+  content: '';
+  position: absolute;
+  inset: -12px -8px -6px;
+  border-radius: 18px;
+  pointer-events: none;
+  z-index: 0;
+  background:
+    radial-gradient(ellipse 100% 85% at 48% 18%, rgba(88, 28, 135, 0.22), transparent 58%),
+    radial-gradient(ellipse 90% 70% at 72% 55%, rgba(34, 211, 238, 0.09), transparent 52%),
+    radial-gradient(ellipse 80% 95% at 30% 72%, rgba(59, 130, 246, 0.08), transparent 55%);
+  opacity: 0.95;
+}
+
+.z-hub-root7-galaxy-wrap .z-root7-wrap {
+  position: relative;
+  z-index: 1;
+}
+
+.z-hub-root7-spine-links {
+  margin: 0;
+  padding-left: 1.1rem;
+  font-size: 0.8rem;
+  line-height: 1.45;
+  color: rgba(195, 206, 226, 0.95);
+}
+
+.z-hub-root7-spine-links a {
+  color: #93c5fd;
+}
+
+/* Anchor scroll — seven layer lives inside ZUNO-4ROOT companion on unified hub */
+#zCompanionRootSevenLayer {
+  scroll-margin-top: 5rem;
+}
+
+/* Slightly tighter constellation chrome when nested in companion panel */
+.z-hub-root7-galaxy-wrap--in-companion .z-root7-wrap {
+  border-radius: 10px;
+}
+
+.z-hub-root7-galaxy-wrap--in-companion .z-root7-stage {
+  min-height: 20rem;
+}
+
+.z-companion-root-seven-embed .z-root7-doc-link {
+  margin-bottom: 0;
+}
+
+/* ZUNO-4ROOT companion: four-root canvas + doctrine + Z-ROOT-7 — taller scroll body */
+/* Taller viewport for guardian council — still one scroll pane, not nested micro-scroll */
+#zCompanion3dPanel.z-panel .z-panel-body {
+  max-height: min(92vh, 960px);
+}
+
+/* Compact doctrine canvas frees vertical space before Z-ROOT-7 */
+#zCompanion3dPanel .z-companion-canvas {
+  height: 130px;
+}
+
+.z-companion-root-seven-embed--council {
+  margin-top: 0.85rem;
+  padding: 0.85rem 0.75rem 1rem;
+  border-radius: 14px;
+  border: 1px solid rgba(167, 139, 250, 0.35);
+  background:
+    radial-gradient(ellipse 90% 60% at 50% 0%, rgba(99, 102, 241, 0.12), transparent 55%),
+    rgba(15, 23, 42, 0.45);
+  box-shadow:
+    0 0 0 1px rgba(56, 189, 248, 0.12),
+    0 12px 40px rgba(0, 0, 0, 0.35);
+}
+
+.z-companion-seven-header {
+  margin-bottom: 0.65rem;
+}
+
+.z-companion-seven-h4 {
+  margin: 0 0 0.25rem;
+  font-size: 1.05rem;
+  font-weight: 750;
+  color: rgba(226, 232, 240, 0.98);
+  letter-spacing: 0.02em;
+}
+
+.z-companion-seven-sub {
+  margin: 0;
+  font-size: 0.8rem !important;
+  line-height: 1.4;
+}
+
+.z-root7-lead--companion {
+  font-size: 0.82rem !important;
+  margin-bottom: 0.55rem !important;
+}
+
+.z-companion-seven-rank {
+  font-weight: 600;
+  color: rgba(186, 230, 253, 0.95);
+}
+
+.z-companion-four-root-details {
+  margin-top: 0.75rem;
+  padding: 0.55rem 0.65rem;
+  border-radius: 10px;
+  border: 1px dashed rgba(148, 163, 184, 0.35);
+  background: rgba(15, 23, 42, 0.25);
+}
+
+.z-companion-four-root-details summary {
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 0.82rem;
+  color: rgba(148, 197, 255, 0.95);
+}
+
+.z-hub-root7-card-strip-host {
+  margin-top: 0.65rem;
+}
+
+.z-root7-strip-title {
+  margin: 0 0 0.45rem;
+  font-size: 0.78rem;
+  font-weight: 600;
+  color: rgba(186, 200, 220, 0.95);
+}
+
+.z-root7-card-strip {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.45rem;
+}
+
+.z-root7-card-chip {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.42rem;
+  text-align: left;
+  appearance: none;
+  border-radius: 10px;
+  border: 1px solid rgba(148, 163, 184, 0.4);
+  background: rgba(15, 23, 42, 0.75);
+  color: rgba(226, 232, 240, 0.95);
+  padding: 0.4rem 0.55rem;
+  max-width: 100%;
+  cursor: pointer;
+  font-family: inherit;
+  transition:
+    border-color 0.15s ease,
+    box-shadow 0.15s ease,
+    transform 0.15s ease;
+}
+
+.z-root7-card-chip:focus-visible {
+  outline: 2px solid rgba(56, 189, 248, 0.8);
+  outline-offset: 2px;
+}
+
+.z-root7-card-chip:hover {
+  border-color: rgba(167, 139, 250, 0.55);
+  box-shadow: 0 0 18px rgba(99, 102, 241, 0.2);
+}
+
+.z-root7-chip-glyph {
+  font-size: 1.05rem;
+  line-height: 1;
+}
+
+.z-root7-chip-copy {
+  display: flex;
+  flex-direction: column;
+  gap: 0.12rem;
+  min-width: 0;
+}
+
+.z-root7-chip-name {
+  font-size: 0.74rem;
+  display: block;
+}
+
+.z-root7-chip-role {
+  font-size: 0.67rem;
+  color: rgba(186, 200, 220, 0.88);
+  line-height: 1.35;
+}
+
+.z-root7-rootlaw .z-root7-chip-role {
+  font-size: 0.62rem;
+}
+
+.z-root7-node-3d--strip-active .z-root7-card-inner {
+  box-shadow: 0 0 16px rgba(56, 189, 248, 0.35);
+}
+
+.z-hub-root7-galaxy-wrap--in-companion .z-root7-stage {
+  min-height: 17.5rem;
+}
+
+.z-hub-root7-galaxy-wrap--in-companion .z-root7-parallax {
+  min-height: 16rem;
+}
+
+.z-hub-root7-galaxy-wrap--in-companion .z-root7-doc-link {
+  font-size: 0.76rem;
+}

@@ -1,0 +1,99 @@
+{
+  "ZFormat": "v1",
+  "ZUpdatedAt": "2026-04-17T17:15:00.000Z",
+  "ZItems": [
+    {
+      "ZId": "P1-001",
+      "ZTitle": "Stabilize recurring dashboard warnings",
+      "ZPriority": "P1",
+      "ZStatus": "done",
+      "ZSource": "seed",
+      "ZTags": ["dashboard", "governance"]
+    },
+    {
+      "ZId": "P2-001",
+      "ZTitle": "Refine SKK/RKPK 3D assets",
+      "ZPriority": "P2",
+      "ZStatus": "open",
+      "ZSource": "seed",
+      "ZTags": ["visuals"]
+    },
+    {
+      "ZId": "codex:no-unused-vars",
+      "ZTitle": "Repeat: no-unused-vars",
+      "ZPriority": "P1",
+      "ZStatus": "done",
+      "ZSource": "codex",
+      "ZTags": ["codex", "repeat"],
+      "ZCreatedAt": "2026-01-23T13:04:54.304Z",
+      "ZClosedAt": "2026-04-17T17:15:00.000Z",
+      "ZClosureReason": "npm run lint (2026-04-17): root ESLint clean; fixes in launch_zsanctuary.js, z_autonomous_orchestrator.mjs, z_lab_readiness.mjs."
+    },
+    {
+      "ZId": "codex:no-undef",
+      "ZTitle": "Repeat: no-undef",
+      "ZPriority": "P1",
+      "ZStatus": "done",
+      "ZSource": "codex",
+      "ZTags": ["codex", "repeat"],
+      "ZCreatedAt": "2026-01-23T13:04:54.305Z",
+      "ZClosedAt": "2026-04-17T17:15:00.000Z",
+      "ZClosureReason": "npm run lint (2026-04-17): root ESLint clean."
+    },
+    {
+      "ZId": "codex:eslint",
+      "ZTitle": "Repeat: eslint",
+      "ZPriority": "P1",
+      "ZStatus": "done",
+      "ZSource": "codex",
+      "ZTags": ["codex", "repeat"],
+      "ZCreatedAt": "2026-01-23T13:04:54.305Z",
+      "ZClosedAt": "2026-04-17T17:15:00.000Z",
+      "ZClosureReason": "npm run lint (2026-04-17): lint:root + workspaces PASS; added packages/z-sanctuary-core lint script."
+    },
+    {
+      "ZId": "codex:no-empty",
+      "ZTitle": "Repeat: no-empty",
+      "ZPriority": "P1",
+      "ZStatus": "done",
+      "ZSource": "codex",
+      "ZTags": ["codex", "repeat"],
+      "ZCreatedAt": "2026-01-23T13:04:54.305Z",
+      "ZClosedAt": "2026-04-17T17:15:00.000Z",
+      "ZClosureReason": "npm run lint (2026-04-17): root ESLint clean."
+    },
+    {
+      "ZId": "codex:MD040",
+      "ZTitle": "Repeat: MD040",
+      "ZPriority": "P1",
+      "ZStatus": "done",
+      "ZSource": "codex",
+      "ZTags": ["codex", "repeat"],
+      "ZCreatedAt": "2026-01-23T21:40:15.768Z",
+      "ZClosedAt": "2026-04-17T17:15:00.000Z",
+      "ZClosureReason": "npm run lint:md (2026-04-17): fixed fence typo in docs/IMPLEMENTATION_GUIDE_FUTURE_PROOFING.md; markdownlint PASS."
+    },
+    {
+      "ZId": "codex:MD031",
+      "ZTitle": "Repeat: MD031",
+      "ZPriority": "P1",
+      "ZStatus": "done",
+      "ZSource": "codex",
+      "ZTags": ["codex", "repeat"],
+      "ZCreatedAt": "2026-01-23T21:40:15.769Z",
+      "ZClosedAt": "2026-04-17T17:15:00.000Z",
+      "ZClosureReason": "npm run lint:md (2026-04-17): MD031 resolved with guide fix + Z_Labs/workspaces/Z_4_WINDOW_PLAN.md blank line."
+    },
+    {
+      "ZId": "codex:MD033",
+      "ZTitle": "Repeat: MD033",
+      "ZPriority": "P1",
+      "ZStatus": "done",
+      "ZSource": "codex",
+      "ZTags": ["codex", "repeat"],
+      "ZCreatedAt": "2026-01-26T14:22:54.397Z",
+      "ZClosedAt": "2026-04-17T17:15:00.000Z",
+      "ZClosureReason": "npm run lint:md (2026-04-17): no remaining MD033 violations in lint scope."
+    }
+  ]
+}
