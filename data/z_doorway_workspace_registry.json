@@ -1,0 +1,69 @@
+{
+  "schema": "z_doorway_workspace_registry_v1",
+  "phase": "Z-DOORWAY-2",
+  "updated_at": "2026-05-11T00:00:00Z",
+  "title": "SSWS governed workspace and folder targets (registry-only paths)",
+  "policy_note": "Opening a workspace or folder is not npm start, deploy, or git. NAS paths are declaration-only until mounted and verified.",
+  "entries": [
+    {
+      "id": "ssws_hub_workspace",
+      "name": "Z-Sanctuary SSWS multi-root workspace",
+      "path": "C:/Cursor Projects Organiser/Z_Sanctuary_Universe/Z_SSWS.code-workspace",
+      "type": "workspace",
+      "enabled": true,
+      "status": "GREEN",
+      "tags": ["ssws", "hub"],
+      "preferred_entry": "cursor",
+      "notes": "Primary SSWS workspace file; use doorway opener only — no auto-run of SSWS boot.",
+      "nas_required": false
+    },
+    {
+      "id": "ssws_hub_folder",
+      "name": "Z-Sanctuary Universe repository folder",
+      "path": "C:/Cursor Projects Organiser/Z_Sanctuary_Universe",
+      "type": "folder",
+      "enabled": true,
+      "status": "GREEN",
+      "tags": ["ssws", "hub", "folder"],
+      "preferred_entry": "cursor",
+      "notes": "Folder-only entry when workspace file is not the target.",
+      "nas_required": false
+    },
+    {
+      "id": "example_hold_lane",
+      "name": "Example HOLD (decision lane)",
+      "path": "C:/Cursor Projects Organiser/Z_Sanctuary_Universe",
+      "type": "folder",
+      "enabled": true,
+      "status": "HOLD",
+      "tags": ["example", "hold"],
+      "preferred_entry": "none",
+      "notes": "Illustrative HOLD; opener and apply must skip until status is lifted.",
+      "nas_required": false
+    },
+    {
+      "id": "example_red_blocked",
+      "name": "Example RED blocked path (disabled by default)",
+      "path": "C:/__Z_DOORWAY_DO_NOT_CREATE__/blocked_placeholder",
+      "type": "folder",
+      "enabled": false,
+      "status": "RED",
+      "tags": ["example", "blocked"],
+      "preferred_entry": "none",
+      "notes": "Keep disabled for routine status runs; enable only for RED drill — opener must never open RED.",
+      "nas_required": false
+    },
+    {
+      "id": "nas_workspace_declaration",
+      "name": "Future NAS workspace (declaration only)",
+      "path": "Z:/SanctuaryWorkspaces/_stub/Z_SSWS.code-workspace",
+      "type": "workspace",
+      "enabled": false,
+      "status": "NAS_WAIT",
+      "tags": ["nas", "ssws"],
+      "preferred_entry": "none",
+      "notes": "Keep disabled until Synology volume is mounted, path verified, then enable with AMK posture.",
+      "nas_required": true
+    }
+  ]
+}
