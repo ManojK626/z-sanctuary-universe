@@ -1,0 +1,117 @@
+{
+  "schema": "amk_project_doorway_registry_v1",
+  "phase": "Z-DOORWAY-2",
+  "updated_at": "2026-05-11T12:00:00Z",
+  "pc_root_declaration": "C:/Cursor Projects Organiser",
+  "nas_note": "Paths under Synology/NAS are declaration-only until the mount exists; nas_required=true rows skip folder open when path is missing.",
+  "projects": [
+    {
+      "id": "zsanctuary_hub",
+      "name": "Z-Sanctuary Universe hub",
+      "path": "C:/Cursor Projects Organiser/Z_Sanctuary_Universe",
+      "workspace": "C:/Cursor Projects Organiser/Z_Sanctuary_Universe/Z_SSWS.code-workspace",
+      "status": "GREEN",
+      "open_group": ["all_safe", "deployment_ready", "review"],
+      "deployment_posture": "preview_dashboard_ok_production_hold",
+      "nas_required": false,
+      "allowed_action": "cursor_workspace_first",
+      "forbidden_actions": [
+        "npm_install",
+        "npm_start",
+        "deploy",
+        "wrangler",
+        "git_push",
+        "secrets",
+        "domain_bind",
+        "background_services"
+      ]
+    },
+    {
+      "id": "z_skyscraper_aimanity",
+      "name": "Z-Sanctuary Aimanity (Ai Skyscraper / Whales Bus)",
+      "path": "C:/Cursor Projects Organiser/Z-SANCTUARY AI SKYSCRAPER/z-sanctuary-aimanity",
+      "workspace": "",
+      "status": "GREEN",
+      "open_group": ["all_safe", "deployment_ready", "review"],
+      "deployment_posture": "local_dev_ok_cloudflare_preview_separate",
+      "nas_required": false,
+      "allowed_action": "cursor",
+      "forbidden_actions": [
+        "npm_install",
+        "npm_start",
+        "deploy",
+        "wrangler",
+        "git_push",
+        "secrets",
+        "domain_bind",
+        "background_services"
+      ]
+    },
+    {
+      "id": "z_lab_sibling",
+      "name": "Z_Labs (sibling capsule)",
+      "path": "C:/Cursor Projects Organiser/Z_Labs",
+      "workspace": "",
+      "status": "YELLOW",
+      "open_group": ["review"],
+      "deployment_posture": "local_dev_review",
+      "nas_required": false,
+      "allowed_action": "cursor",
+      "forbidden_actions": [
+        "npm_install",
+        "npm_start",
+        "deploy",
+        "wrangler",
+        "git_push",
+        "secrets",
+        "domain_bind",
+        "background_services"
+      ]
+    },
+    {
+      "id": "commercial_lane_hold",
+      "name": "Commercial / SUSBV lane (illustrative hold)",
+      "path": "C:/Cursor Projects Organiser/Z_Sanctuary_Universe",
+      "workspace": "",
+      "status": "BLUE",
+      "open_group": ["review"],
+      "deployment_posture": "amk_hold",
+      "nas_required": false,
+      "allowed_action": "none_until_amk",
+      "forbidden_actions": [
+        "cursor_auto_open",
+        "npm_install",
+        "deploy",
+        "provider_call"
+      ]
+    },
+    {
+      "id": "blocked_example",
+      "name": "Example blocked entry (audit fail posture)",
+      "path": "C:/Cursor Projects Organiser/_DO_NOT_CREATE_THIS_PATH blocked",
+      "workspace": "",
+      "status": "RED",
+      "open_group": ["deployment_ready", "review"],
+      "deployment_posture": "blocked",
+      "nas_required": false,
+      "allowed_action": "none",
+      "forbidden_actions": ["any_open"]
+    },
+    {
+      "id": "nas_future_docs",
+      "name": "Future Synology-backed vault (declaration only)",
+      "path": "Z:/SanctuaryVault/Projects/readiness_stub",
+      "workspace": "",
+      "status": "NAS_WAIT",
+      "open_group": ["deployment_ready", "review"],
+      "deployment_posture": "production_hold_until_nas",
+      "nas_required": true,
+      "allowed_action": "explorer_when_mounted",
+      "forbidden_actions": [
+        "npm_install",
+        "deploy",
+        "secrets_mount_auto"
+      ]
+    }
+  ]
+}
