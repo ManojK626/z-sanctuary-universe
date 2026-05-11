@@ -1,0 +1,33 @@
+{
+  "schema": "z.numen.logical.brains.companion.map.v1",
+  "phase": "Z-NUMEN-LB-1",
+  "source_module": "z_numen_cognitive_geometry",
+  "target_module": "z_logical_brains_learning_pathway",
+  "mode": "reference_only_companion_mapping",
+  "runtime_coupling": false,
+  "public_release": "NO_GO",
+  "notes": "Conceptual pairing only. No merged runtime, no shared execution path, no data bridge.",
+  "related_docs": [
+    "docs/Z_NUMEN_LOGICAL_BRAINS_COMPANION_MAP.md",
+    "docs/PHASE_Z_NUMEN_LB_1_GREEN_RECEIPT.md"
+  ],
+  "map": {
+    "learning_stage": "pattern_difficulty_level",
+    "knowledge_category": "pattern_domain",
+    "self_reflection_prompt": "zero_core_grounding",
+    "visual_pathway": "triangle_tetra_pyramid_map",
+    "progress_planning": "perception_pressure_awareness",
+    "guardian_copy": "safe_pattern_interpretation"
+  },
+  "safety_alignment": [
+    "no_medical_or_therapy_claims",
+    "no_prediction_certainty",
+    "no_hidden_control_or_conspiracy_proof",
+    "no_runtime_merge_until_chartered",
+    "future_3d_canvas_remains_future_gated"
+  ],
+  "locked_law_refs": [
+    "docs/Z_NUMEN_SAFETY_AND_PERCEPTION_POLICY.md",
+    "docs/Z_LOGICAL_BRAINS_SAFETY_AND_PRIVACY_POLICY.md"
+  ]
+}

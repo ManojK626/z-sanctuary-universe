@@ -1,0 +1,33 @@
+{
+  "version": "1.0.0",
+  "profile": "quad-lane",
+  "lanes": [
+    {
+      "id": "observe",
+      "priority": "high",
+      "resource_bias": "cpu",
+      "tasks": ["Z: Data Layout Audit", "Z: Storage Hygiene Audit", "Z: Pending Audit"]
+    },
+    {
+      "id": "protect",
+      "priority": "critical",
+      "resource_bias": "cpu",
+      "tasks": ["Z: Privacy Gate Check", "Z: Protection Audit", "Z: Proof Gate Check"]
+    },
+    {
+      "id": "repair",
+      "priority": "medium",
+      "resource_bias": "mixed",
+      "tasks": [
+        "Z: Folder Manager Recreate (Dry Run)",
+        "Z: Storage Hygiene Apply (Safe Quarantine)"
+      ]
+    },
+    {
+      "id": "report",
+      "priority": "high",
+      "resource_bias": "cpu",
+      "tasks": ["Z: Hygiene Cycle", "Z: Zuno State Report", "Z: Proof Mesh Card"]
+    }
+  ]
+}

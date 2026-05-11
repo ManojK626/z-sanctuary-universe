@@ -1,0 +1,82 @@
+{
+  "run_id": "20260126T184237Z",
+  "generated_at": "2026-01-26T18:42:38.334874+00:00",
+  "lotteries": [
+    {
+      "code": "eurojackpot",
+      "phase": "Observe",
+      "micro_cell": "Focus Cell",
+      "orientation": "Calm Ring",
+      "confidence": 0.82,
+      "entropy": {
+        "frequency": 5.483856,
+        "gap": 1.5,
+        "pair": 6.643856
+      },
+      "history_hash": "sha256:e7907a127334122365fe77d8cb9e83c472879cd75214b7998aff66cedd69ab13",
+      "notes": []
+    },
+    {
+      "code": "euromillions",
+      "phase": "Align",
+      "micro_cell": "Focus Cell",
+      "orientation": "Calm Ring",
+      "confidence": 0.88,
+      "entropy": {
+        "frequency": 5.573557,
+        "gap": 1.760964,
+        "pair": 6.840224
+      },
+      "history_hash": "sha256:6d4d3b5dcadd6260c7107572b6d07e78516e579fa8329890a07add45d71b3c40",
+      "notes": []
+    },
+    {
+      "code": "global-sevens",
+      "phase": "Align",
+      "micro_cell": "Focus Cell",
+      "orientation": "Calm Ring",
+      "confidence": 0.88,
+      "entropy": {
+        "frequency": 5.563856,
+        "gap": 1.0,
+        "pair": 6.643856
+      },
+      "history_hash": "sha256:311f088f7a882e0fcc22793cf6a1f947330448ff364b83acbd88a87f46591e24",
+      "notes": []
+    },
+    {
+      "code": "mega-millions",
+      "phase": "Observe",
+      "micro_cell": "Focus Cell",
+      "orientation": "Calm Ring",
+      "confidence": 0.0,
+      "entropy": {
+        "frequency": 0.0,
+        "gap": 0.0,
+        "pair": 0.0
+      },
+      "history_hash": "sha256:edb336a1780cbf0e3fcfab08f05d6b370d7ae53a6c3a4adcb8f4bc634a5909b7",
+      "notes": []
+    },
+    {
+      "code": "powerball",
+      "phase": "Observe",
+      "micro_cell": "Focus Cell",
+      "orientation": "Calm Ring",
+      "confidence": 0.0,
+      "entropy": {
+        "frequency": 0.0,
+        "gap": 0.0,
+        "pair": 0.0
+      },
+      "history_hash": "sha256:edb336a1780cbf0e3fcfab08f05d6b370d7ae53a6c3a4adcb8f4bc634a5909b7",
+      "notes": []
+    }
+  ],
+  "ring": {
+    "lotteries": 5,
+    "avg_frequency": 3.324,
+    "avg_gap": 0.852,
+    "avg_pair": 4.026
+  }
+}

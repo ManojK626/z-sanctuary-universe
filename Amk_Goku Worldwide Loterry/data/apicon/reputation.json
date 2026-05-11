@@ -1,0 +1,65 @@
+{
+  "generated_at": "2026-04-14T16:20:17Z",
+  "reputation": {
+    "inshorts": {
+      "score": 100,
+      "category": "news",
+      "type": "free",
+      "notes": "Observational score only; no execution authority."
+    },
+    "reddit": {
+      "score": 100,
+      "category": "news",
+      "type": "free",
+      "notes": "Observational score only; no execution authority."
+    },
+    "powerball": {
+      "score": 100,
+      "category": "lottery",
+      "type": "official",
+      "notes": "Observational score only; no execution authority."
+    },
+    "mega-millions": {
+      "score": 100,
+      "category": "lottery",
+      "type": "official",
+      "notes": "Observational score only; no execution authority."
+    },
+    "uk-lotto": {
+      "score": 100,
+      "category": "lottery",
+      "type": "manual",
+      "notes": "Observational score only; no execution authority."
+    },
+    "la-primitiva": {
+      "score": 100,
+      "category": "lottery",
+      "type": "manual",
+      "notes": "Observational score only; no execution authority."
+    },
+    "mauritius-loto-vert": {
+      "score": 100,
+      "category": "lottery",
+      "type": "manual",
+      "notes": "Observational score only; no execution authority."
+    },
+    "eurojackpot": {
+      "score": 100,
+      "category": "lottery",
+      "type": "manual",
+      "notes": "Observational score only; no execution authority."
+    },
+    "euromillions": {
+      "score": 100,
+      "category": "lottery",
+      "type": "manual",
+      "notes": "Observational score only; no execution authority."
+    },
+    "global-sevens": {
+      "score": 100,
+      "category": "lottery",
+      "type": "manual",
+      "notes": "Observational score only; no execution authority."
+    }
+  }
+}

@@ -1,0 +1,18 @@
+
+{
+   description: Z-Notebooks entry schema,
+   type: object,
+   properties: {
+     note_id: {type: string},
+     author_type: {type: string, enum: [individual, team, family, association]},
+     linked_formula: {type: array, items: {type: string}},
+     run_id: {type: string},
+     context: {type: string},
+     dataset_state: {type: string, description: manual \u007C missing \u007C verified},
+     body: {type: string},
+     tone: {type: string, enum: [reflective, alert, learning]},
+     tags: {type: array, items: {type: string}},
+     created_at: {type: string, format: date-time}
+  },
+   required: [note_id, author_type, linked_formula, run_id, context, dataset_state, body, created_at]
+}

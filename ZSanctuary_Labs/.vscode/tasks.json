@@ -1,0 +1,728 @@
+{
+  "version": "2.0.0",
+  "_z_guard_note": "Critical workspace file. Review -> Verify -> Apply required.",
+  "tasks": [
+    {
+      "label": "🧭 Lens: Citizen",
+      "type": "shell",
+      "command": "node z_workspace/orchestrator.js citizen",
+      "problemMatcher": []
+    },
+    {
+      "label": "⚙️ Lens: Physics",
+      "type": "shell",
+      "command": "node z_workspace/orchestrator.js physics",
+      "problemMatcher": []
+    },
+    {
+      "label": "👁 Lens: Observer",
+      "type": "shell",
+      "command": "node z_workspace/orchestrator.js observer",
+      "problemMatcher": []
+    },
+    {
+      "label": "🕵️ Watch Lens State",
+      "type": "shell",
+      "command": "node z_workspace/watcher.cjs",
+      "problemMatcher": [],
+      "isBackground": true,
+      "presentation": {
+        "reveal": "silent",
+        "panel": "dedicated"
+      }
+    },
+    {
+      "label": "Z: Check VS Code Hygiene",
+      "type": "shell",
+      "command": "Push-Location 'Amk_Goku Worldwide Loterry'; python scripts/check_vscode_hygiene.py; Pop-Location",
+      "problemMatcher": []
+    },
+    {
+      "label": "Z: Vault Health",
+      "type": "shell",
+      "command": "Push-Location 'Amk_Goku Worldwide Loterry'; python scripts/lottery_vault_health.py; Pop-Location",
+      "problemMatcher": []
+    },
+    {
+      "label": "Z: JailCell Summary",
+      "type": "shell",
+      "command": "Push-Location 'Amk_Goku Worldwide Loterry'; python scripts/jailcell_public_summary.py; Pop-Location",
+      "problemMatcher": []
+    },
+    {
+      "label": "Z: System Status",
+      "type": "shell",
+      "command": "Push-Location 'Amk_Goku Worldwide Loterry'; python scripts/system_status.py; Pop-Location",
+      "problemMatcher": []
+    },
+    {
+      "label": "Z: System Status + Reputation",
+      "type": "shell",
+      "command": "Push-Location 'Amk_Goku Worldwide Loterry'; python scripts/apicon_reputation.py; python scripts/system_status.py; Pop-Location",
+      "problemMatcher": []
+    },
+    {
+      "label": "Z: System Status + Trust Pack",
+      "type": "shell",
+      "command": "Push-Location 'Amk_Goku Worldwide Loterry'; python scripts/system_status.py; Pop-Location; python scripts/build_trust_pack.py",
+      "problemMatcher": []
+    },
+    {
+      "label": "Z: AI + System Status (Grouped)",
+      "type": "shell",
+      "command": "node scripts/z_ai_status_writer.js; Push-Location 'Amk_Goku Worldwide Loterry'; python scripts/system_status.py; Pop-Location",
+      "problemMatcher": []
+    },
+    {
+      "label": "Z: Trust Pack + AI Status (Grouped)",
+      "type": "shell",
+      "command": "node scripts/z_ai_status_writer.js; Push-Location 'Amk_Goku Worldwide Loterry'; python scripts/system_status.py; Pop-Location; python scripts/build_trust_pack.py",
+      "problemMatcher": []
+    },
+    {
+      "label": "Z: Formula Vault Audit",
+      "type": "shell",
+      "command": "python scripts/audit_formula_vault.py",
+      "problemMatcher": []
+    },
+    {
+      "label": "Z: SSWS Verify",
+      "type": "shell",
+      "command": "python scripts/z_ssws_verify.py",
+      "problemMatcher": []
+    },
+    {
+      "label": "Z: SSWS Daily Report",
+      "type": "shell",
+      "command": "python scripts/z_ssws_daily_report.py",
+      "problemMatcher": []
+    },
+    {
+      "label": "Z: Reports Vault Refresh",
+      "type": "shell",
+      "command": "python scripts/reports_vault_refresh.py",
+      "problemMatcher": []
+    },
+    {
+      "label": "Z: Reports Retention (Monthly)",
+      "type": "shell",
+      "command": "python scripts/reports_retention.py",
+      "problemMatcher": []
+    },
+    {
+      "label": "Z: HTML Security Audit",
+      "type": "shell",
+      "command": "python scripts/html_security_audit.py",
+      "problemMatcher": []
+    },
+    {
+      "label": "Z: Core Engine Audit",
+      "type": "shell",
+      "command": "python scripts/core_engine_audit.py",
+      "problemMatcher": []
+    },
+    {
+      "label": "Z: Folder Manager Snapshot",
+      "type": "shell",
+      "command": "node scripts/z_folder_manager_guard.mjs snapshot",
+      "problemMatcher": []
+    },
+    {
+      "label": "Z: Folder Manager Recreate (Dry Run)",
+      "type": "shell",
+      "command": "node scripts/z_folder_manager_guard.mjs recreate",
+      "problemMatcher": []
+    },
+    {
+      "label": "Z: Folder Manager Status",
+      "type": "shell",
+      "command": "node scripts/z_folder_manager_guard.mjs status",
+      "problemMatcher": []
+    },
+    {
+      "label": "Z: Folder Manager Retention (Weekly)",
+      "type": "shell",
+      "command": "node scripts/z_folder_manager_weekly_retention.mjs --keep 30 --days 7",
+      "problemMatcher": []
+    },
+    {
+      "label": "Z: Zuno Weekly Reflection",
+      "type": "shell",
+      "command": "python scripts/zuno_weekly_reflection.py",
+      "problemMatcher": []
+    },
+    {
+      "label": "Z: AI Status Writer",
+      "type": "shell",
+      "command": "node scripts/z_ai_status_writer.js",
+      "problemMatcher": []
+    },
+    {
+      "label": "Z: ZALS Dry Run",
+      "type": "shell",
+      "command": "python core/zals/zals_router.py",
+      "problemMatcher": []
+    },
+    {
+      "label": "Z: Z-OCTAVE Readiness Refresh",
+      "type": "shell",
+      "command": "node scripts/z_octave_readiness_refresh.mjs",
+      "problemMatcher": []
+    },
+    {
+      "label": "Z: Privacy Scan (Deterministic)",
+      "type": "shell",
+      "command": "node scripts/z_privacy_scan.mjs",
+      "problemMatcher": []
+    },
+    {
+      "label": "Z: Privacy Scan (Apply Actions)",
+      "type": "shell",
+      "command": "node scripts/z_privacy_scan.mjs --apply-actions",
+      "problemMatcher": []
+    },
+    {
+      "label": "Z: Privacy Gate Check",
+      "type": "shell",
+      "command": "node scripts/z_privacy_gate_check.mjs",
+      "problemMatcher": []
+    },
+    {
+      "label": "Z: Protection Audit",
+      "type": "shell",
+      "command": "node scripts/z_protection_audit.mjs",
+      "problemMatcher": []
+    },
+    {
+      "label": "Z: Trouble Maker Scan",
+      "type": "shell",
+      "command": "node scripts/z_troublemaker_scan.mjs",
+      "problemMatcher": []
+    },
+    {
+      "label": "Z: OTel Shadow Check",
+      "type": "shell",
+      "command": "node scripts/z_otel_shadow_check.mjs",
+      "problemMatcher": []
+    },
+    {
+      "label": "Z: Policy Shadow Gate",
+      "type": "shell",
+      "command": "node scripts/z_policy_shadow_gate.mjs",
+      "problemMatcher": []
+    },
+    {
+      "label": "Z: Legal Readiness Delta",
+      "type": "shell",
+      "command": "node scripts/z_legal_readiness_delta.mjs",
+      "problemMatcher": []
+    },
+    {
+      "label": "Z: Research Intake (Allowlist + Review)",
+      "type": "shell",
+      "command": "node scripts/z_research_intake.mjs",
+      "problemMatcher": []
+    },
+    {
+      "label": "Z: Proof Mesh Card",
+      "type": "shell",
+      "command": "node scripts/z_proof_mesh_card.mjs",
+      "problemMatcher": []
+    },
+    {
+      "label": "Z: Proof Gate Check",
+      "type": "shell",
+      "command": "node scripts/z_proof_gate_check.mjs",
+      "problemMatcher": []
+    },
+    {
+      "label": "Z: Canonical Alias Audit",
+      "type": "shell",
+      "command": "node scripts/z_canonical_alias_audit.mjs",
+      "problemMatcher": []
+    },
+    {
+      "label": "Z: Placeholder Dir Audit",
+      "type": "shell",
+      "command": "node scripts/z_placeholder_dir_audit.mjs",
+      "problemMatcher": []
+    },
+    {
+      "label": "Z: Security Sentinel",
+      "type": "shell",
+      "command": "node scripts/z_security_sentinel.mjs",
+      "problemMatcher": []
+    },
+    {
+      "label": "Z: Sentinel Refresh (Green Path)",
+      "type": "shell",
+      "command": "npm run security:sentinel-refresh",
+      "problemMatcher": []
+    },
+    {
+      "label": "Z: Security Attack Simulation",
+      "type": "shell",
+      "command": "node scripts/z_security_attack_sim.mjs",
+      "problemMatcher": []
+    },
+    {
+      "label": "Z: Extension Guard",
+      "type": "shell",
+      "command": "node scripts/z_extension_guard.mjs",
+      "problemMatcher": []
+    },
+    {
+      "label": "Z: Extension Guard (Apply)",
+      "type": "shell",
+      "command": "node scripts/z_extension_guard.mjs --apply",
+      "problemMatcher": []
+    },
+    {
+      "label": "Z: Data Leak Detector",
+      "type": "shell",
+      "command": "node scripts/z_data_leak_detector.mjs",
+      "problemMatcher": []
+    },
+    {
+      "label": "Z: AnyDevices Analyzer",
+      "type": "shell",
+      "command": "node scripts/z_anydevices_analyzer.mjs",
+      "problemMatcher": []
+    },
+    {
+      "label": "Z: AnyDevices Security Scan",
+      "type": "shell",
+      "command": "node scripts/z_anydevices_security_scan.mjs",
+      "problemMatcher": []
+    },
+    {
+      "label": "Z: AnyDevices Monitor",
+      "type": "shell",
+      "command": "node scripts/z_anydevices_monitor.mjs",
+      "problemMatcher": []
+    },
+    {
+      "label": "Z: AnyDevices Approval Queue Init",
+      "type": "shell",
+      "command": "node scripts/z_anydevices_approval_queue.mjs init",
+      "problemMatcher": []
+    },
+    {
+      "label": "Z: AnyDevices Approval Queue List",
+      "type": "shell",
+      "command": "node scripts/z_anydevices_approval_queue.mjs list",
+      "problemMatcher": []
+    },
+    {
+      "label": "Z: Gadget Mirrors Guard",
+      "type": "shell",
+      "command": "node scripts/z_gadget_mirrors_guard.mjs",
+      "problemMatcher": []
+    },
+    {
+      "label": "Z: Sandbox Phase Guard",
+      "type": "shell",
+      "command": "node scripts/z_sandbox_phase_guard.mjs",
+      "problemMatcher": []
+    },
+    {
+      "label": "Z: Cycle Record",
+      "type": "shell",
+      "command": "npm run cycle:record",
+      "problemMatcher": []
+    },
+    {
+      "label": "Z: Indicator Watchdog",
+      "type": "shell",
+      "command": "npm run indicator:watchdog",
+      "problemMatcher": []
+    },
+    {
+      "label": "Z: Cycle Routine",
+      "type": "shell",
+      "command": "npm run cycle:routine",
+      "problemMatcher": []
+    },
+    {
+      "label": "Z: Runtime Lane Dispatch",
+      "type": "shell",
+      "command": "node scripts/z_runtime_lane_dispatch.mjs",
+      "problemMatcher": []
+    },
+    {
+      "label": "Z: HTML Static Server (5502)",
+      "type": "shell",
+      "command": "node scripts/z_local_static_server.mjs --host=127.0.0.1 --port=5502 --root=.",
+      "isBackground": true,
+      "presentation": {
+        "reveal": "never",
+        "panel": "dedicated",
+        "clear": true
+      },
+      "problemMatcher": {
+        "pattern": {
+          "regexp": "^.*$"
+        },
+        "background": {
+          "activeOnStart": true,
+          "beginsPattern": "^Starting Z local static server",
+          "endsPattern": "^Z static server ready at"
+        }
+      }
+    },
+    {
+      "label": "Z: Open HTML Cores",
+      "type": "shell",
+      "command": "node scripts/z_open_html_cores.mjs --open",
+      "presentation": {
+        "reveal": "never",
+        "panel": "dedicated",
+        "clear": true
+      },
+      "problemMatcher": []
+    },
+    {
+      "label": "Z: Open HTML Cores (Light)",
+      "type": "shell",
+      "command": "node scripts/z_open_html_cores.mjs --open --profile=light-mode",
+      "presentation": {
+        "reveal": "silent",
+        "panel": "dedicated",
+        "clear": true
+      },
+      "problemMatcher": []
+    },
+    {
+      "label": "Z: Open HTML Cores (Core)",
+      "type": "shell",
+      "command": "node scripts/z_open_html_cores.mjs --open --profile=core-only",
+      "presentation": {
+        "reveal": "silent",
+        "panel": "dedicated",
+        "clear": true
+      },
+      "problemMatcher": []
+    },
+    {
+      "label": "Z: Open HTML Cores (Full)",
+      "type": "shell",
+      "command": "node scripts/z_open_html_cores.mjs --open --profile=full-sanctuary",
+      "presentation": {
+        "reveal": "silent",
+        "panel": "dedicated",
+        "clear": true
+      },
+      "problemMatcher": []
+    },
+    {
+      "label": "Z: Web Readiness Check",
+      "type": "shell",
+      "command": "npm run web:readiness",
+      "problemMatcher": []
+    },
+    {
+      "label": "Z: Access Keygen",
+      "type": "shell",
+      "command": "node scripts/z_access_keygen.mjs",
+      "problemMatcher": []
+    },
+    {
+      "label": "Z: Access Token Revoke",
+      "type": "shell",
+      "command": "node scripts/z_access_token_revoke.mjs --revoke-before-now=1",
+      "problemMatcher": []
+    },
+    {
+      "label": "Z: Access Token Sign (8h)",
+      "type": "shell",
+      "command": "node scripts/z_access_token_sign.mjs --scope=trust_portal_deep --hours=8 --path-prefix=/Amk_Goku%20Worldwide%20Loterry/ui/public_trust/",
+      "problemMatcher": []
+    },
+    {
+      "label": "Z: Hygiene Cycle",
+      "type": "shell",
+      "command": "node scripts/z_hygiene_cycle.mjs",
+      "problemMatcher": []
+    },
+    {
+      "label": "Z: Script Path Audit",
+      "type": "shell",
+      "command": "node scripts/z_script_path_audit.mjs",
+      "problemMatcher": []
+    },
+    {
+      "label": "Z: Report Freshness Check",
+      "type": "shell",
+      "command": "node scripts/z_report_freshness_check.mjs",
+      "problemMatcher": []
+    },
+    {
+      "label": "Z: Data Layout Audit",
+      "type": "shell",
+      "command": "node scripts/z_data_layout_audit.mjs",
+      "problemMatcher": []
+    },
+    {
+      "label": "Z: Hygiene Autofix",
+      "type": "shell",
+      "command": "npm run hygiene:autofix",
+      "problemMatcher": []
+    },
+    {
+      "label": "Z: Storage Hygiene Audit",
+      "type": "shell",
+      "command": "node scripts/z_storage_hygiene_guard.mjs",
+      "problemMatcher": []
+    },
+    {
+      "label": "Z: Storage Hygiene Apply (Safe Quarantine)",
+      "type": "shell",
+      "command": "node scripts/z_storage_hygiene_guard.mjs --apply --confirm",
+      "problemMatcher": []
+    },
+    {
+      "label": "Z: Procurement Daily Report",
+      "type": "shell",
+      "command": "node scripts/z_procurement_daily_report.mjs",
+      "problemMatcher": []
+    },
+    {
+      "label": "Z: Zuno State Report",
+      "type": "shell",
+      "command": "node scripts/z_zuno_state_report.mjs",
+      "problemMatcher": []
+    },
+    {
+      "label": "Z: Daily Full Verify Gate",
+      "type": "shell",
+      "command": "npm run verify:daily-gate",
+      "problemMatcher": []
+    },
+    {
+      "label": "Z: Z-OCTAVE Gate Set",
+      "type": "shell",
+      "command": "node scripts/z_octave_gate_set.mjs ${input:ZOCTAVE_GATE_ID} ${input:ZOCTAVE_GATE_PASS} ${input:ZOCTAVE_GATE_NOTE}",
+      "problemMatcher": []
+    },
+    {
+      "label": "Z: Health Certificate Hash",
+      "type": "shell",
+      "command": "python scripts/hash_health_certificate.py",
+      "problemMatcher": []
+    },
+    {
+      "label": "Z: Workspace Root Guard",
+      "type": "shell",
+      "command": "node scripts/z_workspace_root_guard.mjs",
+      "problemMatcher": []
+    },
+    {
+      "label": "Z: Multi-Workspace Guard",
+      "type": "shell",
+      "command": "node scripts/z_multi_workspace_guard.mjs",
+      "problemMatcher": []
+    },
+    {
+      "label": "Z: Lab Task Structure Guard",
+      "type": "shell",
+      "command": "node scripts/z_lab_task_structure_guard.mjs",
+      "problemMatcher": []
+    },
+    {
+      "label": "Z: VS Code Time Guard",
+      "type": "shell",
+      "command": "node scripts/z_vscode_timeguard.mjs",
+      "problemMatcher": []
+    },
+    {
+      "label": "Z: SLO Guard",
+      "type": "shell",
+      "command": "node scripts/z_slo_guard.mjs",
+      "problemMatcher": []
+    },
+    {
+      "label": "Z: Provenance Check",
+      "type": "shell",
+      "command": "node scripts/z_provenance_check.mjs",
+      "problemMatcher": []
+    },
+    {
+      "label": "Z: Workspace Auto Sweep",
+      "type": "shell",
+      "command": "node scripts/z_workspace_auto_sweep.mjs",
+      "problemMatcher": []
+    },
+    {
+      "label": "Z: SSWS Auto Boot",
+      "type": "shell",
+      "command": "echo Z-SSWS auto-boot",
+      "dependsOrder": "sequence",
+      "dependsOn": [
+        "Z: Workspace Root Guard",
+        "Z: Multi-Workspace Guard",
+        "Z: Lab Task Structure Guard",
+        "Z: VS Code Time Guard",
+        "Z: SLO Guard",
+        "Z: Provenance Check",
+        "Z: Workspace Auto Sweep",
+        "Z: Hygiene Autofix",
+        "Z: AnyDevices Monitor",
+        "Z: Gadget Mirrors Guard",
+        "Z: Sandbox Phase Guard",
+        "Z: Reports Vault Refresh",
+        "Z: HTML Static Server (5502)",
+        "Z: Open HTML Cores",
+        "🕵️ Watch Lens State"
+      ],
+      "runOptions": {
+        "runOn": "manual"
+      },
+      "presentation": {
+        "reveal": "never",
+        "panel": "dedicated",
+        "clear": true
+      },
+      "problemMatcher": []
+    },
+    {
+      "label": "Z: Build Safe Vault",
+      "type": "shell",
+      "command": "python \"Amk_Goku Worldwide Loterry/scripts/build_safe_vault.py\"",
+      "problemMatcher": []
+    },
+    {
+      "label": "Z: Pytest",
+      "type": "shell",
+      "command": "python -m pytest",
+      "problemMatcher": []
+    },
+    {
+      "label": "Z: Full Background Run",
+      "type": "shell",
+      "command": "python scripts/background_run.py --weekly --on-changes --tz LOCAL",
+      "problemMatcher": []
+    },
+    {
+      "label": "Z: Full Background Run (Quiet)",
+      "type": "shell",
+      "command": "python scripts/background_run.py --weekly --on-changes --tz LOCAL --quiet",
+      "problemMatcher": []
+    },
+    {
+      "label": "Z: Full Background Run (Force)",
+      "type": "shell",
+      "command": "node scripts/z_privacy_gate_check.mjs && python \"Amk_Goku Worldwide Loterry/scripts/background_run.py\"",
+      "problemMatcher": []
+    },
+    {
+      "label": "Z: Full Background Run (Auto)",
+      "type": "shell",
+      "command": "python \"Amk_Goku Worldwide Loterry/scripts/background_run.py\" --weekly --on-changes --quiet --tz LOCAL",
+      "dependsOn": [
+        "Z: Privacy Gate Check"
+      ],
+      "presentation": {
+        "reveal": "never",
+        "panel": "dedicated",
+        "clear": true
+      },
+      "problemMatcher": []
+    },
+    {
+      "label": "Z: Full Health Sweep",
+      "type": "shell",
+      "command": "node scripts/z_privacy_gate_check.mjs; node scripts/z_extension_guard.mjs; node scripts/z_data_leak_detector.mjs; node scripts/z_protection_audit.mjs; node scripts/z_proof_mesh_card.mjs; node scripts/z_proof_gate_check.mjs; node scripts/z_canonical_alias_audit.mjs; node scripts/z_placeholder_dir_audit.mjs; node scripts/z_security_sentinel.mjs; node scripts/z_security_attack_sim.mjs; npm run lint; python scripts/audit_formula_vault.py; python scripts/hash_health_certificate.py; node scripts/z_ai_status_writer.js; npm test; $env:RUN_NEXT_BUILD_SMOKE='1'; npm test",
+      "problemMatcher": []
+    },
+    {
+      "label": "Z: Rhythm Digest",
+      "type": "shell",
+      "command": "python scripts/gen_rhythm_digest.py",
+      "problemMatcher": []
+    },
+    {
+      "label": "Z: Learning Digest",
+      "type": "shell",
+      "command": "python scripts/gen_learning_digest.py",
+      "problemMatcher": []
+    },
+    {
+      "label": "Z: Monthly Change Log",
+      "type": "shell",
+      "command": "python scripts/gen_monthly_change_log.py",
+      "problemMatcher": []
+    },
+    {
+      "label": "Z: Full Trust Digest (Grouped)",
+      "type": "shell",
+      "command": "node scripts/z_ai_status_writer.js && python \"Amk_Goku Worldwide Loterry/scripts/system_status.py\" && python scripts/build_trust_pack.py && python scripts/gen_rhythm_digest.py && python scripts/gen_learning_digest.py && python scripts/gen_monthly_change_log.py",
+      "problemMatcher": []
+    },
+    {
+      "label": "Z: View Background Log",
+      "type": "shell",
+      "command": "Get-Content logs\\background_run.log -Tail 200",
+      "problemMatcher": []
+    },
+    {
+      "label": "Z: Auto Run Audit",
+      "type": "shell",
+      "command": "node scripts/z_autorun_audit.mjs",
+      "problemMatcher": []
+    },
+    {
+      "label": "Z: Pending Audit",
+      "type": "shell",
+      "command": "node scripts/z_pending_audit.mjs",
+      "problemMatcher": []
+    },
+    {
+      "label": "Z: Module Registry Sync",
+      "type": "shell",
+      "command": "node scripts/z_module_registry_sync.mjs",
+      "problemMatcher": []
+    },
+    {
+      "label": "Z: Priority Sync",
+      "type": "shell",
+      "command": "node scripts/z_priority_sync.js",
+      "problemMatcher": []
+    },
+    {
+      "label": "Z: Priority Audit",
+      "type": "shell",
+      "command": "node scripts/z_priority_audit.mjs",
+      "problemMatcher": []
+    }
+  ],
+  "inputs": [
+    {
+      "id": "ZOCTAVE_GATE_ID",
+      "type": "pickString",
+      "description": "Z-OCTAVE gate id",
+      "options": [
+        "core_stability",
+        "ethics_lock",
+        "pilot_ready",
+        "governance_signal"
+      ],
+      "default": "core_stability"
+    },
+    {
+      "id": "ZOCTAVE_GATE_PASS",
+      "type": "pickString",
+      "description": "Gate pass value",
+      "options": [
+        "true",
+        "false"
+      ],
+      "default": "true"
+    },
+    {
+      "id": "ZOCTAVE_GATE_NOTE",
+      "type": "promptString",
+      "description": "Optional note for the gate override",
+      "default": ""
+    }
+  ]
+}

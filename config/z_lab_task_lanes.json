@@ -1,0 +1,26 @@
+{
+  "version": "1.0.0",
+  "lanes": [
+    {
+      "id": "CORRESPONDENCE",
+      "purpose": "Formal outputs and stakeholder-visible artifacts.",
+      "mixing_forbidden_with": ["INACCORDANCE", "CHAT_ONLY"]
+    },
+    {
+      "id": "INACCORDANCE",
+      "purpose": "Conflict/risk analysis and contradiction handling only.",
+      "mixing_forbidden_with": ["CORRESPONDENCE", "CHAT_ONLY"]
+    },
+    {
+      "id": "CHAT_ONLY",
+      "purpose": "Exploratory discussion, ideation, and non-committal drafts.",
+      "mixing_forbidden_with": ["CORRESPONDENCE", "INACCORDANCE"]
+    }
+  ],
+  "global_rules": [
+    "A single task must belong to one lane only.",
+    "Cross-lane promotion requires explicit manual confirmation.",
+    "No automatic merging between lane outputs.",
+    "Lane transitions must leave an audit note."
+  ]
+}

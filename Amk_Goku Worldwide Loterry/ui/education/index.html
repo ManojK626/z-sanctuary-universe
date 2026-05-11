@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Z-Sanctuary · Education Mode</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <style>
+      body {
+        font-family:
+          system-ui,
+          -apple-system,
+          Segoe UI,
+          Roboto,
+          sans-serif;
+        background: #0f1218;
+        color: #e6e8ee;
+        padding: 24px;
+        max-width: 920px;
+        margin: auto;
+        line-height: 1.5;
+      }
+      h1 {
+        font-size: 22px;
+      }
+      h2 {
+        font-size: 16px;
+        margin-top: 28px;
+      }
+      .box {
+        background: rgba(255, 255, 255, 0.04);
+        border-radius: 12px;
+        padding: 14px;
+        margin-top: 10px;
+      }
+      .muted {
+        opacity: 0.7;
+        font-size: 13px;
+      }
+      a:focus {
+        outline: 2px solid rgba(147, 197, 253, 0.6);
+        outline-offset: 2px;
+      }
+    </style>
+  </head>
+  <body data-public="true">
+    <h1>Education Mode — How Observatories Handle Uncertainty</h1>
+    <div class="muted">
+      This section explains how the system thinks. It does not predict, advise, or act.
+    </div>
+
+    <div class="box">
+      <div><a href="./orientation.html">Orientation (Level 0)</a></div>
+      <div class="muted">Start here for the calm overview of what Z-Sanctuary is.</div>
+    </div>
+
+    <div class="box">
+      <div><a href="./learning_cards.html">Learning Cards</a></div>
+      <div class="muted">
+        Short explanations for Rhythm, Feeling, Trust, JailCell, and KAIROCELL.
+      </div>
+    </div>
+
+    <div id="edu-root"></div>
+
+    <script type="module" src="./edu_mode.js"></script>
+    <script
+      src="../z_bootstrap.js"
+      data-z-root="../../"
+      data-z-rhythm="true"
+      data-z-feeling="true"
+    ></script>
+    <script src="/interface/z_accessibility.js"></script>
+  </body>
+</html>

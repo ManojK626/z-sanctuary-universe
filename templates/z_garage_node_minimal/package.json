@@ -1,0 +1,12 @@
+{
+  "name": "z-rename-this-package",
+  "version": "0.0.0",
+  "private": true,
+  "description": "Z-Garage minimal script stubs — replace with real commands after copy.",
+  "scripts": {
+    "start": "node -e \"console.warn('[z-garage] TODO: point start at your entry'); process.exit(0);\"",
+    "build": "node -e \"console.warn('[z-garage] TODO: your build step'); process.exit(0);\"",
+    "test": "node -e \"console.warn('[z-garage] TODO: add Vitest/Jest/tap'); process.exit(0);\"",
+    "lint": "node -e \"console.warn('[z-garage] TODO: wire ESLint'); process.exit(0);\""
+  }
+}

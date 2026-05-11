@@ -1,0 +1,154 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Z-Sanctuary — Public Trust Portal</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <style>
+      body {
+        font-family:
+          system-ui,
+          -apple-system,
+          Segoe UI,
+          Roboto,
+          sans-serif;
+        background: #0f1218;
+        color: #e6e8ee;
+        padding: 24px;
+        max-width: 900px;
+        margin: auto;
+      }
+      h1 {
+        font-size: 22px;
+      }
+      h2 {
+        font-size: 16px;
+        margin-top: 24px;
+      }
+      .box {
+        background: rgba(255, 255, 255, 0.04);
+        border-radius: 10px;
+        padding: 12px 14px;
+        margin-top: 8px;
+      }
+      .zRow {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        gap: 16px;
+        flex-wrap: wrap;
+      }
+      .badge-row {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px;
+        margin-top: 10px;
+      }
+      .badge {
+        padding: 2px 10px;
+        border-radius: 999px;
+        font-size: 11px;
+        background: rgba(255, 255, 255, 0.08);
+      }
+      .muted {
+        opacity: 0.65;
+        font-size: 13px;
+      }
+      a {
+        color: #93c5fd;
+        text-decoration: none;
+      }
+      a:focus {
+        outline: 2px solid rgba(147, 197, 253, 0.6);
+        outline-offset: 2px;
+      }
+    </style>
+  </head>
+  <body data-public="true">
+    <div class="zRow">
+      <div>
+        <h1>Z-Sanctuary Public Trust Portal</h1>
+        <div class="muted">
+          Read-only transparency view. No predictions. No actions. Observational only.
+        </div>
+      </div>
+      <div id="trustRhythmPill" class="badge">Rhythm: —</div>
+    </div>
+    <div id="trustBadges" class="badge-row"></div>
+
+    <div class="box muted">
+      Lottery Registry Notice: Listed lotteries represent registered formats known to the
+      observatory. Registration indicates structural awareness only. Historical draw data,
+      predictions, or analytics are produced only when verified datasets are ingested and validated.
+      Absence of data is tracked and reported as manual/missing.
+    </div>
+
+    <div class="box">
+      <div><a href="../../SYSTEM_STATUS.md">System Status (latest)</a></div>
+      <div class="muted">Auto-generated operational summary.</div>
+    </div>
+
+    <div class="box">
+      <div><a href="../education/orientation.html">Orientation (Level 0)</a></div>
+      <div class="muted">What this system is, and what it is not.</div>
+    </div>
+
+    <div class="box">
+      <div><a href="../education/learning_cards.html">Learning Cards</a></div>
+      <div class="muted">
+        Read-only explanations for Rhythm, Feeling, Trust, JailCell, and KAIROCELL.
+      </div>
+    </div>
+
+    <div id="trust-root"></div>
+
+    <script type="module" src="./trust_portal.js">
+      const tzDisplay = document.getElementById('tzDisplay');
+      function updateAutoLabel() {
+        const autoTz = Intl.DateTimeFormat().resolvedOptions().timeZone || 'UTC';
+        if (tzDisplay) {
+          tzDisplay.textContent = `Timezone: Local (auto · ${autoTz})`;
+        }
+        renderPackTimestamp();
+      }
+      updateAutoLabel();
+      setInterval(updateAutoLabel, 60_000);
+    </script>
+    <script type="module">
+      async function loadRhythm() {
+        try {
+          const res = await fetch('../../data/reports/system_status.json', { cache: 'no-store' });
+          const status = await res.json();
+          const pill = document.getElementById('trustRhythmPill');
+          if (pill) {
+            pill.textContent = `Rhythm: ${status?.rhythm_state || '—'}`;
+          }
+        } catch {}
+      }
+      loadRhythm();
+
+      const tzDisplay = document.getElementById('tzDisplay');
+      function updateAutoLabel() {
+        const autoTz = Intl.DateTimeFormat().resolvedOptions().timeZone || 'UTC';
+        if (tzDisplay) {
+          tzDisplay.textContent = `Timezone: Local (auto · ${autoTz})`;
+        }
+        renderPackTimestamp();
+      }
+      updateAutoLabel();
+      setInterval(updateAutoLabel, 60_000);
+    </script>
+    <script src="../z_bootstrap.js" data-z-root="../../" data-z-rhythm="true" data-z-feeling="true">
+      const tzDisplay = document.getElementById('tzDisplay');
+      function updateAutoLabel() {
+        const autoTz = Intl.DateTimeFormat().resolvedOptions().timeZone || 'UTC';
+        if (tzDisplay) {
+          tzDisplay.textContent = `Timezone: Local (auto · ${autoTz})`;
+        }
+        renderPackTimestamp();
+      }
+      updateAutoLabel();
+      setInterval(updateAutoLabel, 60_000);
+    </script>
+  </body>
+</html>

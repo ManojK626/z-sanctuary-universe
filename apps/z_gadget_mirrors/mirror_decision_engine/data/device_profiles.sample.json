@@ -1,0 +1,92 @@
+[
+  {
+    "id": "apple_ios_phone_generic_2024",
+    "brand": "Apple",
+    "ecosystem": "iOS",
+    "category": "phone",
+    "model_name": "iPhone (generic profile)",
+    "released_year": 2024,
+    "msrp_eur": 999,
+    "notes_public": "Generic iOS phone profile for workflow comparison.",
+    "metrics": {
+      "customization": 3,
+      "lock_in": 8,
+      "repairability": 4,
+      "resale_retention": 75,
+      "privacy_posture": "closed",
+      "durability": 7,
+      "software_support_years": 6,
+      "accessibility": 9,
+      "enterprise_readiness": 8
+    },
+    "role_strengths": {
+      "creator": 8,
+      "enterprise": 8,
+      "student": 7,
+      "gaming": 6,
+      "family": 8,
+      "health": 7,
+      "travel": 8
+    }
+  },
+  {
+    "id": "samsung_android_phone_generic_2024",
+    "brand": "Samsung",
+    "ecosystem": "Android",
+    "category": "phone",
+    "model_name": "Galaxy (generic profile)",
+    "released_year": 2024,
+    "msrp_eur": 899,
+    "notes_public": "Generic Android phone profile for workflow comparison.",
+    "metrics": {
+      "customization": 8,
+      "lock_in": 6,
+      "repairability": 5,
+      "resale_retention": 60,
+      "privacy_posture": "mixed",
+      "durability": 8,
+      "software_support_years": 5,
+      "accessibility": 8,
+      "enterprise_readiness": 8
+    },
+    "role_strengths": {
+      "creator": 8,
+      "enterprise": 8,
+      "student": 8,
+      "gaming": 8,
+      "family": 7,
+      "health": 6,
+      "travel": 8
+    }
+  },
+  {
+    "id": "windows_laptop_generic_2024",
+    "brand": "Windows OEM",
+    "ecosystem": "Windows",
+    "category": "laptop",
+    "model_name": "Windows laptop (generic profile)",
+    "released_year": 2024,
+    "msrp_eur": 1199,
+    "notes_public": "Generic Windows laptop profile for workflow comparison.",
+    "metrics": {
+      "customization": 7,
+      "lock_in": 4,
+      "repairability": 6,
+      "resale_retention": 55,
+      "privacy_posture": "mixed",
+      "durability": 7,
+      "software_support_years": 6,
+      "accessibility": 7,
+      "enterprise_readiness": 9
+    },
+    "role_strengths": {
+      "creator": 9,
+      "enterprise": 9,
+      "student": 8,
+      "gaming": 7,
+      "family": 6,
+      "health": 6,
+      "travel": 6
+    }
+  }
+]

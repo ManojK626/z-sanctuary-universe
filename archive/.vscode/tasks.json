@@ -1,0 +1,130 @@
+{
+  "tasks": [
+    {
+      "label": "🧭 Lens: Citizen",
+      "type": "shell",
+      "command": "node z_workspace/orchestrator.js citizen",
+      "problemMatcher": []
+    },
+    {
+      "label": "⚙️ Lens: Physics",
+      "type": "shell",
+      "command": "node z_workspace/orchestrator.js physics",
+      "problemMatcher": []
+    },
+    {
+      "label": "👁 Lens: Observer",
+      "type": "shell",
+      "command": "node z_workspace/orchestrator.js observer",
+      "problemMatcher": []
+    },
+    {
+      "label": "🕵️ Watch Lens State",
+      "type": "shell",
+      "command": "node z_workspace/watcher.cjs",
+      "problemMatcher": [],
+      "isBackground": true,
+      "presentation": {
+        "reveal": "silent",
+        "panel": "dedicated"
+      }
+    },
+    {
+      "label": "Z: Check VS Code Hygiene",
+      "type": "shell",
+      "command": "python scripts/check_vscode_hygiene.py",
+      "problemMatcher": []
+    },
+    {
+      "label": "Z: Vault Health",
+      "type": "shell",
+      "command": "python scripts/lottery_vault_health.py",
+      "problemMatcher": []
+    },
+    {
+      "label": "Z: JailCell Summary",
+      "type": "shell",
+      "command": "python scripts/jailcell_public_summary.py",
+      "problemMatcher": []
+    },
+    {
+      "label": "Z: System Status",
+      "type": "shell",
+      "command": "python scripts/system_status.py",
+      "problemMatcher": []
+    },
+    {
+      "label": "Z: System Status + Reputation",
+      "type": "shell",
+      "command": "python scripts/apicon_reputation.py && python scripts/system_status.py",
+      "problemMatcher": []
+    },
+    {
+      "label": "Z: System Status + Trust Pack",
+      "type": "shell",
+      "command": "python scripts/system_status.py && python scripts/build_trust_pack.py",
+      "problemMatcher": []
+    },
+    {
+      "label": "Z: Build Safe Vault",
+      "type": "shell",
+      "command": "python scripts/build_safe_vault.py",
+      "problemMatcher": []
+    },
+    {
+      "label": "Z: Pytest",
+      "type": "shell",
+      "command": "python -m pytest",
+      "problemMatcher": []
+    },
+    {
+      "label": "Z: Full Background Run",
+      "type": "shell",
+      "command": "python scripts/background_run.py --weekly --on-changes --tz LOCAL",
+      "problemMatcher": []
+    },
+    {
+      "label": "Z: Full Background Run (Quiet)",
+      "type": "shell",
+      "command": "python scripts/background_run.py --weekly --on-changes --tz LOCAL --quiet",
+      "problemMatcher": []
+    },
+    {
+      "label": "Z: Full Background Run (Force)",
+      "type": "shell",
+      "command": "python scripts/background_run.py",
+      "problemMatcher": []
+    },
+    {
+      "label": "Z: Full Health Sweep",
+      "type": "shell",
+      "command": "npm run lint; npm test; $env:RUN_NEXT_BUILD_SMOKE='1'; npm test",
+      "problemMatcher": []
+    },
+    {
+      "label": "Z: Rhythm Digest",
+      "type": "shell",
+      "command": "python scripts/gen_rhythm_digest.py",
+      "problemMatcher": []
+    },
+    {
+      "label": "Z: Learning Digest",
+      "type": "shell",
+      "command": "python scripts/gen_learning_digest.py",
+      "problemMatcher": []
+    },
+    {
+      "label": "Z: Monthly Change Log",
+      "type": "shell",
+      "command": "python scripts/gen_monthly_change_log.py",
+      "problemMatcher": []
+    },
+    {
+      "label": "Z: View Background Log",
+      "type": "shell",
+      "command": "Get-Content logs\\background_run.log -Tail 200",
+      "problemMatcher": []
+    }
+  ]
+}
+

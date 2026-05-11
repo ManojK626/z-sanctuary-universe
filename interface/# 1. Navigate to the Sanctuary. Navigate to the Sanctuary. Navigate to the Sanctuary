@@ -1,0 +1,18 @@
+# 1. Navigate to the Sanctuary
+cd C:\ZSanctuary_Universe
+
+# 2. Initialize Git for local version tracking
+git init
+git add .
+git commit -m "Initial Z-Sanctuary setup"
+
+# 3. Verify core files exist
+dir /s core
+
+# 4. Start Live Server (right-click core\index.html → Open with Live Server)
+# OR use the command palette (Ctrl + Shift + P) → "Live Server: Open"
+# Install extensions via command line
+code --install-extension ritwickdey.LiveServer
+code --install-extension formulahendry.code-runner
+code --install-extension esbenp.prettier-vscode
+code --install-extension dbaeumer.vscode-eslint💫 Z-Sanctuary Universe initializing...

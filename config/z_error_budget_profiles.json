@@ -1,0 +1,26 @@
+{
+  "version": "1",
+  "default": {
+    "windows_days": [7, 30],
+    "warn_burn_rate": 1.0,
+    "critical_burn_rate": 2.0
+  },
+  "profiles": [
+    {
+      "name": "CORE",
+      "slo_target": 0.995,
+      "sources": {
+        "slo_guard": "data/reports/z_slo_guard.json",
+        "incidents_dir": "data/reports/incidents"
+      }
+    },
+    {
+      "name": "LAB",
+      "slo_target": 0.99,
+      "sources": {
+        "slo_guard": "data/reports/z_slo_guard.json",
+        "incidents_dir": "data/reports/incidents"
+      }
+    }
+  ]
+}

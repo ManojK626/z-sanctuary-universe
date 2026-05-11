@@ -1,0 +1,19 @@
+{
+  "name": "Mauritius Loto Vert",
+  "code": "mauritius-loto-vert",
+  "region": "AFRICA",
+  "main": {
+    "min": 1,
+    "max": 28,
+    "count": 5
+  },
+  "lucky": {
+    "min": 1,
+    "max": 28,
+    "count": 2
+  },
+  "format": "5+2 (extracted from the 7-number draw)",
+  "draw_schedule": ["Friday", "Tuesday"],
+  "notes": "Loto Vert winners pick seven numbers (1-28). This configuration extracts the first five as main and the last two as lucky numbers to align with the Z-Sanctuary core engine schema.",
+  "history": "data/histories/mauritius-loto-vert.csv"
+}

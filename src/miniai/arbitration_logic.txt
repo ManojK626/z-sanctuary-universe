@@ -1,0 +1,6 @@
+# Supreme Core Arbitration Logic (placeholder)
+# This file will contain the logic for resolving conflicts and coordinating actions between Mini-AI bots.
+
+- Arbitration strategies
+- Priority rules
+- Collaboration patterns

@@ -1,0 +1,57 @@
+{
+  "generated_at": "2026-04-14 16:20 UTC",
+  "registry": {
+    "formats_total": 6,
+    "formats": [
+      {
+        "code": "uk-lotto",
+        "mode": "manual"
+      },
+      {
+        "code": "la-primitiva",
+        "mode": "manual"
+      },
+      {
+        "code": "mauritius-loto-vert",
+        "mode": "manual"
+      },
+      {
+        "code": "eurojackpot",
+        "mode": "manual"
+      },
+      {
+        "code": "euromillions",
+        "mode": "manual"
+      },
+      {
+        "code": "global-sevens",
+        "mode": "manual"
+      }
+    ]
+  },
+  "data_coverage": {
+    "available": 0,
+    "missing": 6,
+    "note": "Manual sources require verified CSV ingestion."
+  },
+  "observatory": {
+    "apicon_avg": 100.0,
+    "jailcell_total": 0,
+    "execution_authority": "none",
+    "notes": "Observational only"
+  },
+  "drift_codes": "eurojackpot, euromillions, global-sevens, mega-millions, powerball",
+  "rhythm_state": "REGENERATION",
+  "quiet_mode": {
+    "active": true,
+    "reason": "Core v1.0 stabilization",
+    "next_review": "on-demand"
+  },
+  "trust_bundle": "data\\reports\\trust\\trust_bundle_20260130T224727Z.json",
+  "audiology": {
+    "status": "active",
+    "mode": "opt-in",
+    "priority": "quiet-first",
+    "listen": false
+  }
+}

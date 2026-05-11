@@ -1,0 +1,19 @@
+{
+  "name": "Global Sevens",
+  "code": "global-sevens",
+  "region": "GLOBAL",
+  "main": {
+    "min": 1,
+    "max": 49,
+    "count": 5
+  },
+  "lucky": {
+    "min": 1,
+    "max": 12,
+    "count": 2
+  },
+  "format": "5+2",
+  "draw_schedule": ["Wednesday", "Sunday"],
+  "notes": "Custom prototype format for testing multiple draw types simultaneously.",
+  "history": "data/histories/global-sevens.csv"
+}

@@ -1,0 +1,21 @@
+{
+  "lenses": {
+    "citizen": {
+      "folders": ["dashboard", "governance", "interface"],
+      "ports": [5500],
+      "ai_mode": "assist",
+      "focus": "safety"
+    },
+    "physics": {
+      "folders": ["core", "miniai", "engine"],
+      "ports": [3000, 5173],
+      "ai_mode": "analysis",
+      "focus": "systems"
+    },
+    "observer": {
+      "folders": ["docs", "chronicle"],
+      "ai_mode": "read-only",
+      "focus": "audit"
+    }
+  }
+}

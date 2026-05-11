@@ -1,0 +1,53 @@
+{
+  "files": {
+    "data/z_task_list.json": "data/Z_task_list.json",
+    "data/z_priority_queue.json": "data/Z_priority_queue.json",
+    "data/z_codex_report.json": "data/Z_codex_report.json",
+    "data/z_module_manifest.json": "data/Z_module_manifest.json"
+  },
+  "keys": {
+    "data/Z_task_list.json": {
+      "generated_at": "ZGeneratedAt",
+      "tasks": "ZTasks",
+      "id": "ZId",
+      "title": "ZTitle",
+      "status": "ZStatus"
+    },
+    "data/Z_priority_queue.json": {
+      "updatedAt": "ZUpdatedAt",
+      "items": "ZItems",
+      "id": "ZId",
+      "title": "ZTitle",
+      "priority": "ZPriority",
+      "status": "ZStatus",
+      "source": "ZSource",
+      "tags": "ZTags",
+      "createdAt": "ZCreatedAt"
+    },
+    "data/Z_codex_report.json": {
+      "generatedAt": "ZGeneratedAt",
+      "issues": "ZIssues",
+      "repeatIssues": "ZRepeatIssues",
+      "rule": "ZRule",
+      "count": "ZCount",
+      "sample": "ZSample"
+    },
+    "data/Z_module_manifest.json": {
+      "updatedAt": "ZUpdatedAt",
+      "modules": "ZModules",
+      "id": "ZId",
+      "name": "ZName",
+      "layer": "ZLayer",
+      "owner": "ZOwner",
+      "status": "ZStatus",
+      "description": "ZDescription",
+      "category": "ZCategory",
+      "entry": "ZEntry",
+      "launchTask": "ZLaunchTask",
+      "openMode": "ZOpenMode",
+      "requires": "ZRequires",
+      "ethics": "ZEthics"
+    }
+  },
+  "notes": "Legacy keys are accepted; new Z-keys are preferred."
+}

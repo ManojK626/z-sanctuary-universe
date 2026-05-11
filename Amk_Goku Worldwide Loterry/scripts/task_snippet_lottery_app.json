@@ -1,0 +1,6 @@
+{
+  "label": "Z: Open Lottery App",
+  "type": "shell",
+  "command": "powershell -NoProfile -Command \"Write-Host 'Open ui/lottery_app.html in Live Server or browser.'\"",
+  "problemMatcher": []
+}

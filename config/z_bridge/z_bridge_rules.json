@@ -1,0 +1,16 @@
+{
+  "max_daily_per_user": 100,
+  "tier_limits": {
+    "tier_0": 20,
+    "tier_1": 50,
+    "tier_2": 100,
+    "tier_3": 200
+  },
+  "cooldown_hours": 24,
+  "abuse_threshold": 3,
+  "system_modes": [
+    "ACTIVE",
+    "LIMITED",
+    "PAUSED"
+  ]
+}

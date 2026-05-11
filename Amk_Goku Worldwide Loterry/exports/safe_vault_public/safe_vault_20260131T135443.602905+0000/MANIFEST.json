@@ -1,0 +1,19 @@
+{
+  "vault": "Z-Sanctuary Safe Vault",
+  "version": "1.0.0",
+  "generated_at": "2026-01-31T13:54:43.602905+00:00",
+  "authority": "observational-only",
+  "audience_tiers": ["internal", "partner", "public-redacted"],
+  "conditions_file": "CONDITIONS.md",
+  "contents": [
+    "REPORT_SUMMARY.md",
+    "CONDITIONS.md",
+    "docs/audiology/Z_AUDIOLOGY_CHARTER.md",
+    "docs/audiology/Z_AUDIOLOGY_OATH.md",
+    "docs/audiology/Z_AUDIOLOGY_TESTS.md",
+    "docs/audiology/Z_AUDIOLOGY_MULTILINGUAL_POLICY.md",
+    "docs/audiology/Z_AUDIOLOGY_UI_POLICY.md",
+    "core/audiology/z_audiology_manifest.json",
+    "core/audiology/z_audiology_schema.json"
+  ]
+}

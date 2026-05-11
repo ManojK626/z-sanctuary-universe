@@ -1,0 +1,35 @@
+{
+  "name": "@z-sanctuary/z-intelligence",
+  "version": "1.0.0",
+  "description": "Z-Sanctuary adaptive intelligence system: Memory, Learning, Planning, Reflection, and Command orchestration",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc --watch",
+    "test": "jest",
+    "lint": "eslint src/**/*.ts"
+  },
+  "keywords": [
+    "z-sanctuary",
+    "adaptive-ai",
+    "autonomous-systems",
+    "governance",
+    "ethics",
+    "pattern-learning",
+    "reflection"
+  ],
+  "author": "Zuno + Z-Sanctuary Team",
+  "license": "MIT",
+  "dependencies": {},
+  "devDependencies": {
+    "typescript": "^5.0.0",
+    "@types/node": "^20.0.0",
+    "jest": "^29.0.0",
+    "@types/jest": "^29.0.0",
+    "ts-jest": "^29.0.0"
+  },
+  "engines": {
+    "node": ">=16.0.0"
+  }
+}

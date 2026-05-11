@@ -1,0 +1,5 @@
+# Redis Messaging Schema (placeholder)
+# Define channels, message formats, and keys for Mini-AI bot communication.
+
+CHANNEL: miniai:events
+MESSAGE: { "bot": "name", "type": "event", "payload": { ... } }

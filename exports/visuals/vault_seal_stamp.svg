@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512" role="img" aria-label="Z-Sanctuary Vault Seal">
+  <defs>
+    <radialGradient id="sealGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#f5e7b2" stop-opacity="0.9"/>
+      <stop offset="55%" stop-color="#c9b46a" stop-opacity="0.6"/>
+      <stop offset="100%" stop-color="#6c5b2d" stop-opacity="0.9"/>
+    </radialGradient>
+    <linearGradient id="ring" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f7f1d0"/>
+      <stop offset="100%" stop-color="#9a8442"/>
+    </linearGradient>
+  </defs>
+  <rect width="512" height="512" fill="none"/>
+  <circle cx="256" cy="256" r="220" fill="url(#sealGlow)" stroke="url(#ring)" stroke-width="8"/>
+  <circle cx="256" cy="256" r="180" fill="none" stroke="#f5e7b2" stroke-width="3" stroke-dasharray="10 8"/>
+  <circle cx="256" cy="256" r="140" fill="none" stroke="#f7f1d0" stroke-width="2"/>
+  <g fill="none" stroke="#f7f1d0" stroke-width="2">
+    <path d="M256 120 L256 392"/>
+    <path d="M120 256 L392 256"/>
+    <path d="M166 166 L346 346"/>
+    <path d="M346 166 L166 346"/>
+  </g>
+  <g fill="#f7f1d0">
+    <circle cx="256" cy="256" r="10"/>
+    <circle cx="256" cy="116" r="6"/>
+    <circle cx="256" cy="396" r="6"/>
+    <circle cx="116" cy="256" r="6"/>
+    <circle cx="396" cy="256" r="6"/>
+  </g>
+  <g fill="#f7f1d0" font-family="Georgia, 'Times New Roman', serif" text-anchor="middle">
+    <text x="256" y="236" font-size="18" letter-spacing="2">Z-SANCTUARY</text>
+    <text x="256" y="262" font-size="16" letter-spacing="3">VAULT SEAL</text>
+    <text x="256" y="292" font-size="12">INTERNAL • SEALED • ONEBLOOD</text>
+  </g>
+</svg>

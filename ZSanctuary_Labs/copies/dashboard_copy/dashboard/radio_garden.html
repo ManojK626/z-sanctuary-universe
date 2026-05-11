@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Z-Sanctuary · Radio Garden</title>
+    <link rel="stylesheet" href="../interface/z_style.css" />
+    <style>
+      body {
+        margin: 0;
+        min-height: 100vh;
+        background: radial-gradient(circle at top, rgba(0, 212, 255, 0.12), transparent 40%),
+          #030510;
+        font-family: "Segoe UI", system-ui, sans-serif;
+        color: #e8f4ff;
+        display: flex;
+        flex-direction: column;
+      }
+      main {
+        padding: 2rem;
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+        flex: 1;
+      }
+      header {
+        text-transform: uppercase;
+        letter-spacing: 0.08em;
+        display: flex;
+        align-items: center;
+        gap: 0.75rem;
+      }
+      header h1 {
+        margin: 0;
+        font-size: 1.75rem;
+      }
+      header .subtitle {
+        font-size: 0.95rem;
+        color: var(--z-muted, #a7b7ca);
+      }
+      .panel {
+        background: var(--zs-panel-gradient);
+        border: 1px solid var(--zs-theme-turquoise-purple-border);
+        border-radius: 20px;
+        padding: 1.5rem;
+        box-shadow:
+          0 0 0 1px rgba(105, 233, 255, 0.35),
+          0 0 18px rgba(255, 182, 66, 0.35),
+          0 20px 45px rgba(0, 0, 0, 0.45);
+      }
+      .panel strong {
+        color: var(--zs-theme-turquoise-purple-text);
+      }
+      .panel p {
+        margin: 0.4rem 0 0;
+        color: #cfe8ff;
+      }
+      .grid {
+        display: grid;
+        gap: 1.25rem;
+      }
+      .grid > iframe {
+        width: 100%;
+        min-height: 420px;
+        border: 0;
+        border-radius: 18px;
+        box-shadow: 0 12px 30px rgba(0, 0, 0, 0.35);
+      }
+      .grid .notes {
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+      }
+      .grid .notes span {
+        font-size: 0.88rem;
+        color: var(--z-muted, #9aa5b9);
+      }
+      .badge {
+        display: inline-flex;
+        gap: 0.35rem;
+        align-items: center;
+        border-radius: 999px;
+        padding: 0.4rem 0.85rem;
+        border: 1px solid rgba(255, 183, 3, 0.35);
+        background: rgba(255, 183, 3, 0.1);
+        font-size: 0.76rem;
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+      }
+      footer {
+        padding: 1rem 2rem 2rem;
+        font-size: 0.8rem;
+        color: var(--zs-muted, #9aa5b9);
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <header>
+        <div>
+          <span class="badge">Streaming partner</span>
+          <h1>Radio Garden · Live</h1>
+        </div>
+        <div class="subtitle">Free global radio feeds embedded respectfully into Z-Sanctuary Universe.</div>
+      </header>
+      <section class="grid">
+        <iframe
+          src="https://radio.garden/embed"
+          title="Radio Garden globe"
+          loading="lazy"
+        ></iframe>
+        <div class="panel notes">
+          <strong>Originality &amp; Alignment</strong>
+          <p>
+            Radio Garden is a publicly accessible platform whose iframe embed exposes live broadcasts from over 8,000 radio
+            stations. We layer it into the Sanctuary as a node of open listening, crediting the service and keeping the feed
+            lawfully free for our audience.
+          </p>
+          <p>
+            Use this page to explore radio gardens, honor local cultures, and prove that Z-Sanctuary never charges for shared
+            soundscapes. The embed runs entirely inside the browser; no extraction or redistribution beyond the official widget
+            occurs.
+          </p>
+          <span>Powered by: https://radio.garden/embed (Public API/iframe)</span>
+          <span>Governance status: Observational · No auto-play policy overrides.</span>
+        </div>
+      </section>
+    </main>
+    <footer>
+      Z-Sanctuary Universe · Harisha-safe streaming · Implements Radio Garden’s official embed under the Terms described
+      at https://radio.garden/about. All content stays within their API boundaries and your local listening data is not stored
+      here.
+    </footer>
+  </body>
+</html>

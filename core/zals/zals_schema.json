@@ -1,0 +1,4 @@
+{
+  "job_fields": ["id", "type", "priority", "est_cost", "allowed_nodes", "created_at"],
+  "routing_strategies": ["RANDOM", "FFS"]
+}

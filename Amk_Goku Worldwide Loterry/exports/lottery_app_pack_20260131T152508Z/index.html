@@ -1,0 +1,215 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Z-Sanctuary Lottery App</title>
+    <style>
+      body {
+        font-family:
+          system-ui,
+          -apple-system,
+          Segoe UI,
+          Roboto,
+          sans-serif;
+        margin: 0;
+        background: #0b0f18;
+        color: #e6e8ee;
+        display: grid;
+        place-items: center;
+        min-height: 100vh;
+      }
+      .card {
+        background: rgba(18, 20, 26, 0.9);
+        border-radius: 14px;
+        padding: 20px 24px;
+        border: 1px solid rgba(255, 255, 255, 0.08);
+        max-width: 520px;
+        text-align: center;
+      }
+      a {
+        color: #93c5fd;
+        text-decoration: none;
+      }
+      .muted {
+        opacity: 0.7;
+        font-size: 12px;
+      }
+      .pill {
+        display: inline-block;
+        padding: 2px 8px;
+        border-radius: 999px;
+        font-size: 11px;
+        background: rgba(255, 255, 255, 0.08);
+        margin-left: 6px;
+        border: 1px solid rgba(255, 255, 255, 0.08);
+      }
+      .pill:hover {
+        background: rgba(255, 255, 255, 0.14);
+      }
+      .pill:active {
+        background: rgba(255, 255, 255, 0.2);
+      }
+      select {
+        background: rgba(255, 255, 255, 0.06);
+        color: #e6e8ee;
+        border: 1px solid rgba(255, 255, 255, 0.12);
+        border-radius: 8px;
+        padding: 2px 6px;
+        font-size: 12px;
+        min-width: 210px;
+        appearance: none;
+        padding-right: 22px;
+        background-image:
+          linear-gradient(45deg, transparent 50%, rgba(230, 232, 238, 0.9) 50%),
+          linear-gradient(135deg, rgba(230, 232, 238, 0.9) 50%, transparent 50%);
+        background-position:
+          calc(100% - 14px) 9px,
+          calc(100% - 9px) 9px;
+        background-size:
+          5px 5px,
+          5px 5px;
+        background-repeat: no-repeat;
+      }
+      select:focus,
+      .pill:focus {
+        outline: 2px solid rgba(147, 197, 253, 0.6);
+        outline-offset: 2px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="card">
+      <h1>🎯 Z-Sanctuary Lottery App</h1>
+      <p class="muted">Observer-only · Trust-first · Core v1.0 locked</p>
+      <p>
+        <a href="ui/delivery.html">Open Delivery Hub</a>
+        ·
+        <a href="ui/lottery_app.html">Open the Lottery App</a>
+      </p>
+      <p class="muted">
+        <a href="ui/public_trust/index.html">Trust Pack</a>
+        ·
+        <a href="exports/trust_pack_latest.zip">Trust Pack ZIP</a>
+        ·
+        <a href="exports/legal_provenance_pack_latest.zip">Legal Provenance Pack</a>
+        ·
+        <a href="trust/trust_walkthrough.html">Trust Walkthrough</a>
+        ·
+        <a href="docs/OPERATIONS_RUNBOOK.md">Operations Runbook</a>
+        ·
+        <a href="exports/lottery_app_pack_latest.zip">Download Latest Pack</a>
+      </p>
+      <p class="muted" id="legalPackTimestamp">Legal pack: —</p>
+      <p class="muted" id="trustPackTimestamp">Trust pack: —</p>
+      <p class="muted" id="packTimestamp">Latest pack: —</p>
+      <p class="muted" id="tzDisplay">Timezone: Local (auto)</p>
+    </div>
+    <script>
+      function formatTimestamp(value, timeZone = 'UTC') {
+        if (!value) return 'unknown';
+        const date = new Date(value);
+        if (Number.isNaN(date.getTime())) return value;
+        const opts = {
+          year: 'numeric',
+          month: 'short',
+          day: '2-digit',
+          hour: '2-digit',
+          minute: '2-digit',
+          timeZone,
+          timeZoneName: 'short',
+        };
+        return date.toLocaleString('en-US', opts);
+      }
+
+      let lastGeneratedAt = null;
+      let lastTrustGeneratedAt = null;
+      let lastLegalGeneratedAt = null;
+
+      function renderPackTimestamp() {
+        const el = document.getElementById('packTimestamp');
+        const trustEl = document.getElementById('trustPackTimestamp');
+        const legalEl = document.getElementById('legalPackTimestamp');
+        const autoTz = Intl.DateTimeFormat().resolvedOptions().timeZone || 'UTC';
+        const autoTz = Intl.DateTimeFormat().resolvedOptions().timeZone || 'UTC';
+        const tz = autoTz;
+        if (!el) return;
+        if (!lastGeneratedAt) {
+          el.textContent = 'Latest pack: unavailable';
+          return;
+        }
+        const label = `Local (${autoTz})`;
+        el.textContent = `Latest pack: ${formatTimestamp(lastGeneratedAt, tz)} · ${label}`;
+        if (trustEl) {
+          if (!lastTrustGeneratedAt) {
+            trustEl.textContent = 'Trust pack: unavailable';
+          } else {
+            trustEl.textContent = `Trust pack: ${formatTimestamp(lastTrustGeneratedAt, tz)} · ${label}`;
+          }
+        }
+        if (legalEl) {
+          if (!lastLegalGeneratedAt) {
+            legalEl.textContent = 'Legal pack: unavailable';
+          } else {
+            legalEl.textContent = `Legal pack: ${formatTimestamp(lastLegalGeneratedAt, tz)} · ${label}`;
+          }
+        }
+      }
+
+      async function loadPackTimestamp() {
+        try {
+          const res = await fetch('exports/lottery_app_pack_latest/MANIFEST.json', {
+            cache: 'no-store',
+          });
+          if (!res.ok) throw new Error('manifest missing');
+          const data = await res.json();
+          lastGeneratedAt = data.generated_at || null;
+          renderPackTimestamp();
+        } catch {
+          const el = document.getElementById('packTimestamp');
+          if (el) el.textContent = 'Latest pack: unavailable';
+        }
+      }
+      async function loadTrustPackTimestamp() {
+        try {
+          const res = await fetch('exports/trust_pack_latest/MANIFEST.json', { cache: 'no-store' });
+          if (!res.ok) throw new Error('trust manifest missing');
+          const data = await res.json();
+          lastTrustGeneratedAt = data.generated_at || null;
+          renderPackTimestamp();
+        } catch {
+          const el = document.getElementById('trustPackTimestamp');
+          if (el) el.textContent = 'Trust pack: unavailable';
+        }
+      }
+      loadPackTimestamp();
+      loadTrustPackTimestamp();
+      async function loadLegalPackTimestamp() {
+        try {
+          const res = await fetch('exports/legal_provenance_pack_latest/MANIFEST.json', {
+            cache: 'no-store',
+          });
+          if (!res.ok) throw new Error('legal manifest missing');
+          const data = await res.json();
+          lastLegalGeneratedAt = data.generated_at || null;
+          renderPackTimestamp();
+        } catch {
+          const el = document.getElementById('legalPackTimestamp');
+          if (el) el.textContent = 'Legal pack: unavailable';
+        }
+      }
+      loadLegalPackTimestamp();
+
+      const tzDisplay = document.getElementById('tzDisplay');
+      function updateAutoLabel() {
+        const autoTz = Intl.DateTimeFormat().resolvedOptions().timeZone || 'UTC';
+        if (tzDisplay) {
+          tzDisplay.textContent = `Timezone: Local (auto · ${autoTz})`;
+        }
+        renderPackTimestamp();
+      }
+      updateAutoLabel();
+      setInterval(updateAutoLabel, 60_000);
+    </script>
+  </body>
+</html>

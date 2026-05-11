@@ -1,0 +1,7 @@
+{
+  "status": "reference",
+  "core_version": "v1.0",
+  "learning_spine": "active",
+  "mutation_policy": "append-only",
+  "note": "This pack represents a stable trust baseline."
+}

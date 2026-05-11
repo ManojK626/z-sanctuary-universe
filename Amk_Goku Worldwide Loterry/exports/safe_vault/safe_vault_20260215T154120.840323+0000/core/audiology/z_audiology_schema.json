@@ -1,0 +1,72 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Z-Audiology Event",
+  "type": "object",
+  "required": [
+    "enabled",
+    "mode",
+    "quietMode",
+    "userScope",
+    "event",
+    "context",
+    "content",
+    "delivery",
+    "audit"
+  ],
+  "properties": {
+    "enabled": { "type": "boolean" },
+    "mode": { "type": "string", "enum": ["opt-in", "off"] },
+    "quietMode": { "type": "boolean" },
+    "userScope": { "type": "string", "enum": ["child", "youth", "adult", "elder"] },
+    "voiceLayer": { "type": "string", "enum": ["system", "guardian", "stillness", "child-safe"] },
+    "event": {
+      "type": "object",
+      "required": ["type", "source", "severity"],
+      "properties": {
+        "type": { "type": "string" },
+        "source": { "type": "string" },
+        "severity": { "type": "string", "enum": ["info", "warn", "error"] }
+      }
+    },
+    "context": {
+      "type": "object",
+      "required": ["trustPack", "stillness", "emotionalInput", "contentSensitivity"],
+      "properties": {
+        "trustPack": { "type": "string", "enum": ["green", "yellow", "red"] },
+        "stillness": { "type": "boolean" },
+        "emotionalInput": { "type": "string", "enum": ["none", "self-reported"] },
+        "contentSensitivity": {
+          "type": "string",
+          "enum": ["neutral", "sensitive", "grief", "legal"]
+        }
+      }
+    },
+    "content": {
+      "type": "object",
+      "required": ["text", "summaryOnly"],
+      "properties": {
+        "text": { "type": "string" },
+        "summaryOnly": { "type": "boolean" }
+      }
+    },
+    "delivery": {
+      "type": "object",
+      "required": ["speed", "volume", "repeatable"],
+      "properties": {
+        "speed": { "type": "string", "enum": ["slow", "normal"] },
+        "volume": { "type": "string", "enum": ["low", "medium"] },
+        "repeatable": { "type": "boolean" }
+      }
+    },
+    "audit": {
+      "type": "object",
+      "required": ["spoken", "timestamp", "hash", "rollbackAvailable"],
+      "properties": {
+        "spoken": { "type": "boolean" },
+        "timestamp": { "type": "string", "format": "date-time" },
+        "hash": { "type": "string" },
+        "rollbackAvailable": { "type": "boolean" }
+      }
+    }
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "status": "internal-only",
+  "access": ["AMK-Goku", "Z-Family", "Z-AI", "Mini-AI"],
+  "vault_required": true,
+  "vault_path": "safe_pack/z_sanctuary_vault",
+  "review_verify_apply": true,
+  "philosophical_protection": "rules/Z_PHILOSOPHICAL_PROTECTION_PROTOCOL.md",
+  "lotus_gate": "rules/Z_LOTUS_GATE.md",
+  "breath_time_governor": "rules/Z_BREATH_TIME_GOVERNOR.md",
+  "ethical_drift_dissolution": "rules/Z_DELTA_ETHICAL_DRIFT_DISSOLUTION.md",
+  "canon": "docs/canon/Z_SANCTUARY_CANON_V1.md",
+  "formulas": [
+    {
+      "id": "z-combat-360",
+      "name": "Z Combat 360 Ring",
+      "docs": "docs/z_combat/Z_COMBAT_360_RING_CODEX.md",
+      "embodiment": "docs/z_combat/Z_COMBAT_EMBODIMENT_LAYER.md",
+      "schema": "schemas/z_combat_360_schema_v1.json",
+      "visual": "exports/visuals/z_combat_360_ring_v1_2.svg",
+      "notice": "docs/z_combat/Z_FORMULA_SECURITY_NOTICE.md",
+      "exposure": "internal-only",
+      "integration_targets": [
+        "core/*",
+        "dashboard/*",
+        "miniai/*",
+        "ai_tower/*",
+        "safe_pack/*",
+        "z_workspace/*",
+        "z_notebooks/*",
+        "rules/*"
+      ],
+      "integration_state": "active"
+    }
+  ]
+}

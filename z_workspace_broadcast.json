@@ -1,0 +1,8 @@
+{
+  "generated_at": "2026-04-19T17:17:36.705Z",
+  "workspace": "CORE",
+  "upgrade_notice": "Hub workspace broadcast aligned with config/z_workspace_identity.json",
+  "version": "0.2",
+  "impact_level": "low",
+  "requires_manual_review": false
+}

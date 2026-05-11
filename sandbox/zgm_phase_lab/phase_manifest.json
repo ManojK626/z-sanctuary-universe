@@ -1,0 +1,57 @@
+{
+  "id": "zgm_phase_lab",
+  "mode": "sandbox_only",
+  "integration": "blocked",
+  "updated_at": "2026-02-17T00:00:00Z",
+  "operating_state": "paused_pending_nas_sync",
+  "pause_reason": "Consolidation hold while waiting for NAS synchronology devices.",
+  "freeze": {
+    "new_phase_development": true,
+    "core_promotion": true,
+    "auto_bridge": true,
+    "core_writes": true
+  },
+  "phases": [
+    {
+      "phase": "11",
+      "name": "Stability Hardening",
+      "status": "ready_for_sandbox_validation"
+    },
+    {
+      "phase": "12.2",
+      "name": "Forecast Safety Controls",
+      "status": "ready_for_sandbox_validation"
+    },
+    {
+      "phase": "14",
+      "name": "Transparency Expansion",
+      "status": "ready_for_sandbox_validation"
+    },
+    {
+      "phase": "15",
+      "name": "Integrity Seals",
+      "status": "ready_for_sandbox_validation"
+    },
+    {
+      "phase": "16",
+      "name": "Decision Memory Governance",
+      "status": "ready_for_sandbox_validation"
+    },
+    {
+      "phase": "17",
+      "name": "Mitigation Lane Optimization",
+      "status": "ready_for_sandbox_validation"
+    },
+    {
+      "phase": "18",
+      "name": "Promotion Gate",
+      "status": "blocked_until_manual_approval"
+    }
+  ],
+  "controls": {
+    "core_registry_changes": false,
+    "core_route_changes": false,
+    "production_module_registration": false,
+    "audit_report_required": true
+  }
+}

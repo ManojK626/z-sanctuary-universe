@@ -1,0 +1,50 @@
+{
+  "rule_id": "ROU-900",
+  "rule_name": "Sacred Override Stop",
+  "trigger": {
+    "type": "manual",
+    "source": "roulette-ui",
+    "event_type": "MANUAL_STOP_REQUESTED",
+    "payload_schema_ref": "schemas/z_context_snapshot.schema.json"
+  },
+  "context_requirements": {
+    "z_state": true,
+    "lpbs_state": true,
+    "ggaesp_360": true,
+    "wellbeing_state": true,
+    "session_meta": true
+  },
+  "conditions": [],
+  "risk_class": "sacred",
+  "consent": {
+    "level": "require_human",
+    "timeout_policy": "wait",
+    "timeout_seconds": 0
+  },
+  "action_set": {
+    "allowed_actions": [
+      { "type": "pause_module", "params": { "module": "roulette" } },
+      { "type": "write_audit_note", "params": { "note": "Manual stop requested by user." } },
+      { "type": "ui_banner", "params": { "message": "Betting paused. Your choice is protected." } }
+    ],
+    "max_repetitions": 10,
+    "cooldown_seconds": 0,
+    "rollback_allowed": false
+  },
+  "governance": {
+    "ai_allowed": ["observe", "suggest", "explain"],
+    "ai_forbidden": ["execute", "authorize", "modify_rules", "bypass_consent"],
+    "human_override": "always_true"
+  },
+  "audit_seal": {
+    "ethical_intent": "Honor an explicit stop request immediately and preserve agency.",
+    "creator_signature": "z-sanctuary-core",
+    "creation_time": "2026-01-16T00:00:00Z",
+    "version": "1.0.0"
+  },
+  "lifecycle": {
+    "status": "active",
+    "activation_date": "2026-01-16T00:00:00Z",
+    "review_interval_days": 90
+  }
+}

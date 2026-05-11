@@ -1,0 +1,28 @@
+{
+  "timestamp": "2026-02-25T21:01:48.212598",
+  "overall_status": "HEALTHY",
+  "file_integrity": {
+    "slot_engine.html": {
+      "exists": true,
+      "description": "PRNG Simulator UI",
+      "status": "\u2705 OK"
+    },
+    "gemini_monitor.py": {
+      "exists": true,
+      "description": "Health monitoring script",
+      "status": "\u2705 OK"
+    }
+  },
+  "prng_integrity": {
+    "file_exists": true,
+    "has_prng_logic": true,
+    "has_rtp_target": true,
+    "has_volatility_selector": true,
+    "file_size_kb": 11.3369140625
+  },
+  "suggestions": [
+    "\u2705 All systems nominal. Ready for simulation.",
+    "\ud83d\udca1 Tip: Use volatility selector to test different RTP distributions.",
+    "\ud83d\udca1 Tip: Run 1000-spin simulations to observe mathematical convergence."
+  ]
+}

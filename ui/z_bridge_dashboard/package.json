@@ -1,0 +1,11 @@
+{
+  "name": "z-bridge-dashboard-static",
+  "private": true,
+  "description": "Static HTML dashboard (Task 006). Serve repo root and open /ui/z_bridge_dashboard/.",
+  "scripts": {
+    "start": "node -e \"console.log('From hub root run: npx serve .  then open /ui/z_bridge_dashboard/'); process.exit(0);\"",
+    "build": "node -e \"console.log('No build step; static HTML/CSS/JS.'); process.exit(0);\"",
+    "test": "node -e \"console.log('No unit tests in this folder; validate via z:bridge:validate at hub root.'); process.exit(0);\"",
+    "lint": "node -e \"console.log('Lint hub with npm run lint:root from repo root.'); process.exit(0);\""
+  }
+}

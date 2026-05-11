@@ -1,0 +1,35 @@
+{
+  "_readme": "Growth-safe operations: the hub observes sibling projects without mutating them. Autonomous repair stays inside ZSanctuary_Universe unless an explicit env flag and separate runbook approve cross-repo writes.",
+  "cross_project": {
+    "probe_mode": "read_only",
+    "allow_writes_to_member_project_folders": false,
+    "env_flag_for_member_writes": "Z_MEMBER_MUTATION_OK",
+    "notes": "Shadow SSWS nodes are listed in data/z_pc_root_projects.json. Full Z-SSWS Auto Boot and indicator refresh run only in the hub repo so member dev servers and git state are not disturbed."
+  },
+  "z_arrbce": {
+    "name": "Z-ARRBCE — Auto Refresh + Regenerate Backup Core Engines",
+    "npm_scripts": ["arrbce:bulk-refresh", "arrbce:bulk-refresh:full"],
+    "script": "scripts/z_arrbce_bulk_refresh.mjs",
+    "purpose": "Hub-only sequential refresh of freshness, system-status, guardian (light); optional dashboard indicators chain for bulk-load days.",
+    "security_note": "Complements Harisha UX and Vegeta guardian-tier awareness (Z-ALD → Z-Security); does not bypass enforcer, vault, or autonomous approvals."
+  },
+  "monitoring": {
+    "indicator_poll_recommend_seconds": 60,
+    "add_jitter_seconds_max": 15,
+    "respect_prefers_reduced_motion": true,
+    "dashboard_growth_mode": "Lens strip toggle Growth Calm/Normal stores zSanctuaryGrowthMode in localStorage; multiplies narrow-strip and Observe badge poll spacing (~2.5x when Calm).",
+    "notes": "Prefer read-only probes + report JSON over frequent writes to member trees. Escalate fixes to hub-only tasks first."
+  },
+  "hub_autonomous_repair": {
+    "scope": "hub_repository_only",
+    "never_auto_run_on_member_paths": true,
+    "typical_autonomous_hub_tasks": [
+      "z_hygiene_autofix.mjs",
+      "reports_vault_refresh.py",
+      "z_dashboard_indicators_refresh.mjs",
+      "z_indicator_watchdog.mjs",
+      "z_privacy_scan.mjs"
+    ],
+    "notes": "Member-project npm install, git reset, or deletes require human intent; use EAII launcher + Cursor, not silent hub scripts."
+  }
+}

@@ -1,0 +1,68 @@
+{
+  "version": 1,
+  "description": "MAOS-visible projects; hub is canonical. Satellite paths may be null—configure locally.",
+  "projects": [
+    {
+      "id": "zsanctuary-universe",
+      "name": "Z-Sanctuary Universe (hub)",
+      "repoPath": ".",
+      "status": "hub_governance",
+      "allowedCoupling": "canonical_root",
+      "healthCommands": [
+        "npm run z:maos-status",
+        "node scripts/z_sanctuary_structure_verify.mjs",
+        "node scripts/z_registry_omni_verify.mjs"
+      ],
+      "consentRequiredFor": [
+        "deploy",
+        "payment",
+        "legal_copy",
+        "external_connector",
+        "xl2_code_coupling",
+        "data_deletion"
+      ],
+      "responsibleBot": "Workspace Sentinel",
+      "lastReportNote": "Use data/reports/ and zuno_system_state_report.md"
+    },
+    {
+      "id": "xl2",
+      "name": "XXXtreme Lightning 2",
+      "repoPath": null,
+      "repoPathNote": "Standalone product; configure absolute path on operator PC only—not in this workspace.",
+      "status": "standalone_private_pilot",
+      "allowedCoupling": "reference_only",
+      "healthCommands": [
+        "(run inside XL2 repo) npm run xl2:pilot-patch-gate",
+        "(run inside XL2 repo) npm run xl2:control-status"
+      ],
+      "consentRequiredFor": [
+        "deploy",
+        "payment",
+        "legal_copy",
+        "z_sanctuary_coupling"
+      ],
+      "responsibleBot": "Project Router",
+      "lastReportNote": "Tracker and gates live in XL2 repo only"
+    },
+    {
+      "id": "z-octave",
+      "name": "Z-OCTAVE",
+      "repoPath": null,
+      "status": "module_family",
+      "allowedCoupling": "reference_only",
+      "healthCommands": ["docs/octave/INDEX.md"],
+      "consentRequiredFor": ["deploy", "medical_claims"],
+      "responsibleBot": "Health Cycle Bot"
+    },
+    {
+      "id": "z-uccr",
+      "name": "Z-UCCR Universal Canvas",
+      "repoPath": ".",
+      "status": "doctrine_z_uccr_0",
+      "allowedCoupling": "canonical_root",
+      "healthCommands": ["docs/universal-canvas/Z_UCCR_CHARTER.md"],
+      "consentRequiredFor": ["live_canvas_automation"],
+      "responsibleBot": "Phase Guardian"
+    }
+  ]
+}

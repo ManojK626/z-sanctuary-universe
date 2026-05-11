@@ -1,0 +1,20 @@
+{
+  "version": "1.0.0",
+  "mode": "audit",
+  "required_settings": {
+    "task.allowAutomaticTasks": "on",
+    "extensions.autoCheckUpdates": true,
+    "extensions.autoUpdate": true,
+    "update.mode": "default",
+    "extensions.ignoreRecommendations": false
+  },
+  "required_recommendations": [
+    "dbaeumer.vscode-eslint",
+    "DavidAnson.vscode-markdownlint",
+    "esbenp.prettier-vscode",
+    "ms-vscode.vscode-typescript-next",
+    "eamodio.gitlens",
+    "naumovs.color-highlight",
+    "mutantdino.resourcemonitor"
+  ]
+}

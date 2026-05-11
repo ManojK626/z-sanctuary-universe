@@ -1,0 +1,23 @@
+{
+  "generated_at": "2026-01-30T00:00:00Z",
+  "circles": [
+    {
+      "id": "amk-home",
+      "type": "FAMILY",
+      "name": "AMK Home Circle",
+      "description": "Gentle family reflections + Memory Garden",
+      "visibility": "INVITE_ONLY",
+      "rhythm": "REST",
+      "gentle_mode": true,
+      "automation": "OFF",
+      "jailcell_mode": "EDUCATION_ONLY",
+      "roles": {
+        "stewards": ["AMK"],
+        "members": ["JB"],
+        "observers": []
+      },
+      "created_at": "2026-01-30T00:00:00Z",
+      "updated_at": "2026-01-30T00:00:00Z"
+    }
+  ]
+}

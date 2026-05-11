@@ -1,0 +1,11 @@
+{
+  "name": "z-bridge-soft-deploy",
+  "private": true,
+  "description": "Cloudflare Pages soft bundle (wrangler.toml). Bundle is produced by hub script deploy:cf-z-bridge:bundle.",
+  "scripts": {
+    "start": "node -e \"console.log('Preview: npm run deploy:cf-z-bridge:pages:preview from hub root after bundle.'); process.exit(0);\"",
+    "build": "npm run deploy:cf-z-bridge:bundle --prefix ../..",
+    "test": "node -e \"console.log('Run bridge readiness scripts from hub (readiness:*).'); process.exit(0);\"",
+    "lint": "node -e \"console.log('Lint from hub root: npm run lint:root'); process.exit(0);\""
+  }
+}

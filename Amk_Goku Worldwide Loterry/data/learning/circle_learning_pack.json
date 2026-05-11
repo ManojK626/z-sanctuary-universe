@@ -1,0 +1,15 @@
+{
+  "packs": [
+    {
+      "circle_id": "amk-home",
+      "learning_pack": [
+        "learning.orientation.level0",
+        "learning.rhythm.basics",
+        "learning.trust.basics"
+      ],
+      "mode": "read-only",
+      "shared_reflection": true,
+      "execution_authority": "none"
+    }
+  ]
+}

@@ -1,0 +1,54 @@
+(function () {
+  const PANEL_ID = 'zWorldPulsePanel';
+  function createPanel() {
+    if (document.getElementById(PANEL_ID)) return;
+    const panel = document.createElement('div');
+    panel.id = PANEL_ID;
+    panel.style.cssText = 'position:relative;padding:10px 12px;margin:10px;background:rgba(12,15,20,0.9);color:#edf4ff;font-family:"Inter",Segoe UI,sans-serif;font-size:12px;border-radius:10px;max-width:360px;';
+    panel.innerHTML = `
+      <div style="font-weight:600;margin-bottom:6px;">🌍 World Pulse (Observational)</div>
+      <div id="zWorldPulseContent">Waiting for signals…</div>
+      <div id="zWorldPulseWebhook" style="margin-top:6px;font-size:11px;opacity:0.7;">No webhook events yet</div>
+      <div id="zWorldPulseSafePack" style="margin-top:4px;font-size:11px;opacity:0.7;">Safe Pack status idle</div>
+    `;
+    document.body.appendChild(panel);
+  }
+  function render(snapshot) {
+    const container = document.getElementById('zWorldPulseContent');
+    if (!container) return;
+    const rows = snapshot.signals
+      .map((sig) => {
+        const pct = Math.round(sig.intensity * 100);
+        return `<div style="display:flex;justify-content:space-between;margin:2px 0;"><span>${sig.topic}</span><span style="opacity:0.7;">${pct}%</span></div>`;
+      })
+      .join('');
+    container.innerHTML = `<div style="opacity:0.6;font-size:11px;margin-bottom:4px;">${snapshot.ts}</div>${rows}`;
+  }
+  function hookChronicle() {
+    if (!window.ZChronicle) return;
+    const originalRecord = window.ZChronicle.record;
+    window.ZChronicle.record = function (entry) {
+      originalRecord.call(this, entry);
+      if (entry.module === 'world_pulse' && entry.meta) {
+        render({ ts: entry.ts || new Date().toISOString(), signals: [entry.meta] });
+      }
+      if (entry.source === 'safe_pack' || entry.type?.startsWith('z.safe_pack')) {
+        const summary = document.getElementById('zWorldPulseWebhook');
+        if (summary) {
+          summary.textContent = `${entry.type || entry.event || 'safe_pack'} status ${entry.pack?.status || 'ok'} (${entry.pack?.rule || entry.module || 'n/a'})`;
+        }
+        const chip = document.getElementById('zWorldPulseSafePack');
+        if (chip) {
+          chip.textContent = `Safe Pack webhook ${entry.pack?.status || 'ok'} @ ${new Date(entry.ts || Date.now()).toLocaleTimeString()}`;
+        }
+      }
+    };
+  }
+  window.ZWorldPulsePanel = {
+    init() {
+      createPanel();
+      hookChronicle();
+      console.info('[WorldPulsePanel] Ready');
+    }
+  };
+})();

@@ -1,0 +1,20 @@
+{
+  "run_id": "20260129T165225Z",
+  "lottery_code": "eurojackpot",
+  "real_entropy": {
+    "frequency_entropy": 5.483856,
+    "gap_entropy": 1.5,
+    "pair_entropy": 6.643856
+  },
+  "simulated_entropy": {
+    "frequency_entropy": 4.933661,
+    "gap_entropy": 2.424836,
+    "pair_entropy": 6.643856
+  },
+  "delta": {
+    "frequency_entropy": 0.550195,
+    "gap_entropy": -0.924836,
+    "pair_entropy": 0.0
+  },
+  "method": "baseline_uniform"
+}

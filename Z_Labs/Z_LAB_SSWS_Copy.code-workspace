@@ -1,0 +1,16 @@
+{
+  "folders": [
+    { "path": "core" },
+    { "path": "scripts" },
+    { "path": "data" },
+    { "path": "harisha" }
+  ],
+  "settings": {
+    "window.newWindowDimensions": "maximized",
+    "files.exclude": {
+      "**/.cache": true,
+      "**/node_modules": false
+    },
+    "liveServer.settings.multiRootWorkspaceName": "core"
+  }
+}

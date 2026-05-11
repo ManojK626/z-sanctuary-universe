@@ -1,0 +1,5 @@
+{
+  "energy": { "min": 20, "max": 85, "spike": 15 },
+  "harmony": { "min": 30, "max": 80, "spike": 12 },
+  "coherence": { "min": 40, "max": 90, "spike": 10 }
+}

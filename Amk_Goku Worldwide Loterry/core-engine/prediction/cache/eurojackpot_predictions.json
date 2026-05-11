@@ -1,0 +1,29 @@
+{
+  "format": "eurojackpot",
+  "generated": "2026-01-26T18:15:02.308970+00:00",
+  "history": "data\\histories\\eurojackpot.csv",
+  "lookback": 12,
+  "settings": {
+    "lookback": 12,
+    "lines": 3,
+    "mix_hot": true,
+    "hot_bias": 0.12,
+    "cold_bias": 1.0,
+    "main_depth": 12,
+    "lucky_depth": 8
+  },
+  "lines": [
+    {
+      "main": [10, 15, 38, 1, 2],
+      "lucky": [1, 4]
+    },
+    {
+      "main": [10, 15, 38, 1, 2],
+      "lucky": [1, 8]
+    },
+    {
+      "main": [10, 15, 38, 1, 2],
+      "lucky": [1, 11]
+    }
+  ]
+}

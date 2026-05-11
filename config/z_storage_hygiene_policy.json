@@ -1,0 +1,57 @@
+{
+  "version": "1.0.0",
+  "mode": "audit-first",
+  "scan_roots": [
+    "core",
+    "scripts",
+    "docs",
+    "rules",
+    "schemas",
+    "config",
+    "data",
+    "products",
+    "interface",
+    "Amk_Goku Worldwide Loterry/ui/public_trust"
+  ],
+  "exclude_contains": [
+    ".git/",
+    "node_modules/",
+    "logs/",
+    "__pycache__/",
+    "safe_pack/z_sanctuary_vault/folder_manager/snapshots/",
+    "safe_pack/z_sanctuary_vault/storage_hygiene/quarantine/"
+  ],
+  "unrelated_name_patterns": [
+    " copy",
+    " - copy",
+    "(copy)",
+    "(1)",
+    "(2)",
+    "final final",
+    "tmp",
+    "temp",
+    "backup"
+  ],
+  "allowed_duplicate_contains": [
+    "/.vscode/extensions.json",
+    "/.vscode/launch.json",
+    "/.vscode/profiles.json",
+    "/.vscode/settings.json",
+    "/.vscode/tasks.json",
+    "ZSanctuary_Universe.code-workspace",
+    "data/reports/z_zuno_daily_report.json",
+    "data/reports/zuno_system_state_report.json",
+    "data/reports/z_zuno_daily_report.md",
+    "data/reports/zuno_system_state_report.md",
+    "data/z_header_non_utf8.txt",
+    "data/z_header_converted.txt"
+  ],
+  "prune_empty_dir_contains": ["__pycache__", "_archive", "temp", "tmp"],
+  "max_hash_size_mb": 20,
+  "limits": {
+    "max_duplicate_file_groups": 30,
+    "max_empty_files": 20,
+    "max_empty_dirs": 20,
+    "max_unrelated_flags": 25
+  }
+}

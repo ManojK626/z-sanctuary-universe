@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Z-Sanctuary · Basic Notebook</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="./basic_notebook.css" />
+  </head>
+  <body>
+    <h1>Notebook</h1>
+    <div class="muted">Gentle, local notes. No predictions. No automation.</div>
+
+    <div class="box">
+      <div class="row">
+        <div>
+          <div class="muted">Trust Bond required for protected access.</div>
+          <div class="muted">Rhythm state is observational only.</div>
+        </div>
+        <div class="pill" id="rhythmPill">Rhythm: —</div>
+      </div>
+      <div class="row" style="margin-top: 10px">
+        <label class="chip">
+          <input id="gentleToggle" type="checkbox" />
+          Gentle Mode
+        </label>
+        <label class="chip">
+          <input id="privateToggle" type="checkbox" />
+          Private Mode
+        </label>
+        <button id="trustPackBtn" class="btn secondary">Trust Pack</button>
+      </div>
+    </div>
+
+    <div class="box">
+      <textarea id="noteInput" class="input" placeholder="Write gently…"></textarea>
+      <button id="addNoteBtn" class="btn">Add Note</button>
+    </div>
+
+    <div class="box">
+      <div id="notesList"></div>
+    </div>
+
+    <div class="box" id="circleBox">
+      <div class="row">
+        <div>
+          <div class="muted">Circle-linked view (optional)</div>
+          <select id="circleSelect" class="select"></select>
+        </div>
+        <button id="circleSyncBtn" class="btn secondary" disabled>Copy last note to circle</button>
+      </div>
+      <div id="circleNotes" class="muted" style="margin-top: 10px">Circles not loaded.</div>
+      <div id="circleLearning" style="margin-top: 10px"></div>
+      <div id="circlePrompt" class="muted" style="margin-top: 10px"></div>
+    </div>
+
+    <aside id="learningSidebar" class="box" style="margin-top: 12px">
+      <div class="row">
+        <div>🌱 Related Learning</div>
+        <button id="learningHideBtn" class="btn secondary">Hide</button>
+      </div>
+      <div id="learningCards" class="muted" style="margin-top: 8px">No related cards yet.</div>
+    </aside>
+
+    <script
+      src="../z_bootstrap.js"
+      data-z-root="../../"
+      data-z-notebook="true"
+      data-z-rhythm="true"
+    ></script>
+    <script type="module" src="./basic_notebook.js"></script>
+    <script src="/interface/z_accessibility.js"></script>
+  </body>
+</html>

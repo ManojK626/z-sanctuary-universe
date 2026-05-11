@@ -1,0 +1,15 @@
+{
+  "folders": [
+    { "path": "dashboard" },
+    { "path": "docs" },
+    { "path": "interface" },
+    { "path": "policies" }
+  ],
+  "settings": {
+    "window.newWindowDimensions": "maximized",
+    "files.autoSave": "onFocusChange",
+    "markdownlint.run": "onType",
+    "liveServer.settings.multiRootWorkspaceName": "dashboard",
+    "liveServer.settings.port": 5501
+  }
+}

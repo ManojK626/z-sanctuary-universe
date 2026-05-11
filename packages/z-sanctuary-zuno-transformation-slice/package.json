@@ -1,0 +1,14 @@
+{
+  "name": "z-sanctuary-zuno-transformation-slice",
+  "version": "0.1.0",
+  "description": "Zuno transformation flow: phased experience + knowledge synthesis, optional scientific stress self-report (non-diagnostic)",
+  "type": "module",
+  "main": "zuno_transformation_core.mjs",
+  "exports": {
+    ".": "./zuno_transformation_core.mjs"
+  },
+  "scripts": {
+    "lint": "eslint . --ext .mjs --no-error-on-unmatched-pattern",
+    "test": "node --test test/zuno_flow.test.mjs"
+  }
+}

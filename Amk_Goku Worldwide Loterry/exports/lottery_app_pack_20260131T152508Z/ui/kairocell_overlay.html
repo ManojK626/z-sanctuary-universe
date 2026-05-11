@@ -1,0 +1,189 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Z-KAIROCELL Micro Overlay</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="../core/feeling/feeling_panel.css" />
+    <style>
+      body {
+        background: #010410;
+        color: #e0f2ff;
+        font-family: 'Inter', 'Segoe UI', sans-serif;
+        margin: 0;
+        padding: 24px;
+      }
+
+      header {
+        text-align: center;
+        margin-bottom: 16px;
+      }
+
+      .panel {
+        background: rgba(7, 18, 40, 0.9);
+        border-radius: 14px;
+        border: 1px solid rgba(255, 255, 255, 0.08);
+        padding: 24px;
+        box-shadow: 0 30px 60px rgba(0, 0, 0, 0.55);
+        max-width: 1100px;
+        margin: 0 auto 32px;
+      }
+
+      .lottery-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 16px;
+      }
+
+      .lottery-card {
+        border-radius: 12px;
+        background: rgba(255, 255, 255, 0.02);
+        padding: 16px;
+        border: 1px solid rgba(255, 255, 255, 0.08);
+        position: relative;
+        min-height: 200px;
+      }
+
+      .cell-badge {
+        position: absolute;
+        top: 14px;
+        right: 14px;
+        background: rgba(255, 255, 255, 0.08);
+        padding: 6px 10px;
+        border-radius: 999px;
+        font-size: 12px;
+        letter-spacing: 0.04em;
+        text-transform: uppercase;
+      }
+
+      .phase {
+        font-size: 32px;
+        margin: 0;
+      }
+
+      .phase span {
+        color: #40e0d0;
+      }
+
+      .pill {
+        display: inline-flex;
+        align-items: center;
+        gap: 6px;
+        font-size: 12px;
+        text-transform: uppercase;
+        letter-spacing: 0.08em;
+        padding: 6px 10px;
+        border-radius: 999px;
+        border: 1px solid rgba(255, 255, 255, 0.2);
+      }
+
+      .confidence-meter {
+        width: 100%;
+        height: 8px;
+        margin-top: 16px;
+        background: rgba(255, 255, 255, 0.1);
+        border-radius: 4px;
+      }
+
+      .confidence-meter span {
+        display: block;
+        height: 100%;
+        border-radius: 4px;
+        background: linear-gradient(90deg, #4dd0ff, #76ff03);
+      }
+
+      .status {
+        margin-top: 12px;
+        font-size: 14px;
+        color: #9dc6ff;
+      }
+
+      .ring {
+        margin-top: 12px;
+        font-size: 14px;
+      }
+
+      .pill + .pill {
+        margin-left: 8px;
+      }
+      a:focus {
+        outline: 2px solid rgba(147, 197, 253, 0.6);
+        outline-offset: 2px;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Z-KAIROCELL Micro Overlay</h1>
+      <p>
+        Precision phases, micro-cell badges, and orientation context layered on the existing
+        observatory metrics.
+      </p>
+      <p id="run-info">Waiting for KAIROCELL summary...</p>
+    </header>
+
+    <div class="panel">
+      <div class="lottery-grid" id="lotteryGrid"></div>
+      <div class="ring" id="ringDetails"></div>
+    </div>
+
+    <script>
+      async function loadSummary() {
+        const runInfo = document.getElementById('run-info');
+        const grid = document.getElementById('lotteryGrid');
+        const ring = document.getElementById('ringDetails');
+        try {
+          const resp = await fetch('../data/kairocell/summary.json');
+          if (!resp.ok) {
+            throw new Error('Summary missing');
+          }
+          const summary = await resp.json();
+          runInfo.textContent = `Run ${summary.run_id} · observed ${summary.lotteries.length} lotteries`;
+          grid.innerHTML = '';
+          summary.lotteries.forEach((lottery) => {
+            const card = document.createElement('article');
+            card.className = 'lottery-card';
+
+            const badge = document.createElement('div');
+            badge.className = 'cell-badge';
+            badge.textContent = lottery.micro_cell;
+            card.appendChild(badge);
+
+            card.innerHTML += `
+              <h2 class="phase"><span>${lottery.code}</span> · ${lottery.phase}</h2>
+              <div class="pill">${lottery.orientation}</div>
+              <div class="status">Confidence ${Math.round(lottery.confidence * 100)}%</div>
+              <div class="status">Freq ${lottery.entropy.frequency.toFixed(3)} · Gap ${lottery.entropy.gap.toFixed(
+                3
+              )} · Pair ${lottery.entropy.pair.toFixed(3)}</div>
+            `;
+
+            const meter = document.createElement('div');
+            meter.className = 'confidence-meter';
+            const bar = document.createElement('span');
+            bar.style.width = `${Math.round(lottery.confidence * 100)}%`;
+            meter.appendChild(bar);
+            card.appendChild(meter);
+
+            grid.appendChild(card);
+          });
+
+          ring.innerHTML = `Ring pulse: avg freq ${
+            summary.ring.avg_frequency || 0
+          } · avg gap ${summary.ring.avg_gap || 0} · avg pair ${summary.ring.avg_pair || 0}`;
+        } catch (err) {
+          runInfo.textContent = 'KAIROCELL summary unavailable — run the pipeline.';
+          grid.innerHTML = `<p style="color:#ff8c42;">${err.message}</p>`;
+        }
+      }
+
+      loadSummary();
+    </script>
+    <script
+      src="./z_bootstrap.js"
+      data-z-root="../"
+      data-z-rhythm="true"
+      data-z-feeling="true"
+    ></script>
+  </body>
+</html>

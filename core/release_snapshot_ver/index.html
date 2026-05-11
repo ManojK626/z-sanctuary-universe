@@ -1,0 +1,1990 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Guard: Critical dashboard entrypoint. Review -> Verify -> Apply required. -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Z-Sanctuary Universe</title>
+    <link rel="stylesheet" href="../interface/z_style.css" />
+  </head>
+  <body>
+    <div id="zConsole"></div>
+    <div id="zSSWSBanner" class="z-ssws-banner">Z-SSWS: inactive</div>
+    <div
+      id="zDashboardSearch"
+      class="z-dashboard-search"
+      role="search"
+      aria-label="Dashboard search"
+    >
+      <input
+        id="zDashboardSearchInput"
+        class="z-input"
+        type="search"
+        placeholder="Search panels, modules, logs..."
+        autocomplete="off"
+        spellcheck="false"
+      />
+      <button id="zDashboardSearchBtn" class="z-button z-button-subtle" type="button">Go</button>
+      <button id="zDashboardSearchClearBtn" class="z-button z-button-subtle" type="button">
+        Clear
+      </button>
+      <div
+        id="zTopRailInlineNav"
+        class="z-top-tab-inline-nav"
+        aria-label="Z top rail quick navigation"
+      >
+        <button
+          id="zTopRailInlineNavLeft"
+          type="button"
+          class="z-top-tab-nav z-top-tab-nav-inline-btn"
+          aria-label="Z Scroll top rail left"
+          title="Z Move top rail left"
+        >
+          Z◀
+        </button>
+        <button
+          id="zTopRailInlineNavRight"
+          type="button"
+          class="z-top-tab-nav z-top-tab-nav-inline-btn"
+          aria-label="Z Scroll top rail right"
+          title="Z Move top rail right"
+        >
+          Z▶
+        </button>
+      </div>
+      <div id="zDashboardSearchSuggest" class="z-dashboard-search-suggest" aria-live="polite"></div>
+      <button
+        id="zLowLightToggle"
+        class="z-button z-button-subtle"
+        type="button"
+        title="Toggle low-light reading mode"
+        style="margin-left: 0.5rem"
+      >
+        Low Light Off
+      </button>
+    </div>
+    <button
+      id="zStatusRailToggleBtn"
+      class="z-button z-button-subtle z-status-rail-toggle"
+      type="button"
+    >
+      Status Rail: On
+    </button>
+    <div id="zStatusRail" class="z-status-rail">
+      <div id="zSSWSStatusPanel" class="z-ssws-status-panel">
+        <div class="z-ssws-status-title">Z-SSWS Status</div>
+        <div id="zSSWSStatusBody" class="z-ssws-status-body">Loading…</div>
+      </div>
+      <div
+        id="zAutoRunAlert"
+        class="z-autorun-alert"
+        role="status"
+        aria-live="polite"
+        style="display: none"
+      >
+        Z Auto-Run is blocked. Check VS Code auto-tasks and run the audit.
+      </div>
+      <div id="zAutoRunStatusPanel" class="z-ssws-status-panel z-autorun-status-panel">
+        <div class="z-ssws-status-title">Z Auto-Run</div>
+        <div id="zAutoRunStatusBody" class="z-ssws-status-body">Loading…</div>
+        <button
+          id="zAutoRunAuditBtn"
+          class="z-button z-button-subtle"
+          type="button"
+          style="margin-top: 0.35rem"
+        >
+          Run Audit Now
+        </button>
+      </div>
+      <div id="zPendingAuditPanel" class="z-ssws-status-panel z-pending-audit-panel">
+        <div class="z-ssws-status-title">Z Pending Audit</div>
+        <div id="zPendingAuditBody" class="z-ssws-status-body">Loading…</div>
+      </div>
+      <div id="zZunoTrendPanel" class="z-ssws-status-panel z-zuno-trend-panel">
+        <div class="z-ssws-status-title">Zuno 7-Day Trend</div>
+        <div id="zZunoTrendBody" class="z-ssws-status-body">Loading…</div>
+      </div>
+      <div id="zStorageHygienePanel" class="z-ssws-status-panel z-storage-hygiene-panel">
+        <div class="z-ssws-status-title">Z Storage Hygiene</div>
+        <div id="zStorageHygieneBody" class="z-ssws-status-body">Loading…</div>
+      </div>
+      <div id="zAnyDevicesPanel" class="z-ssws-status-panel z-anydevices-panel">
+        <div class="z-ssws-status-title">Z AnyDevices</div>
+        <div id="zAnyDevicesBody" class="z-ssws-status-body">Loading…</div>
+      </div>
+      <div id="zCycleIndicatorPanel" class="z-ssws-status-panel z-cycle-indicator-panel">
+        <div class="z-ssws-status-title">Z Indication Cycles</div>
+        <div id="zCycleIndicatorBody" class="z-ssws-status-body">Loading…</div>
+      </div>
+      <div id="zErrorBudgetPanel" class="z-ssws-status-panel z-error-budget-panel">
+        <div class="z-ssws-status-title">Z Error Budget</div>
+        <div id="zErrorBudgetBody" class="z-ssws-status-body">Loading…</div>
+      </div>
+    </div>
+
+    <div id="zHiveRoot" class="z-hive-root">
+      <div id="zHiveMantle" class="z-hive-mantle">
+        <div class="z-hive-mantle-title">Z Neural Hive</div>
+        <div class="z-hive-mantle-sub">Core hub · Calm by default</div>
+      </div>
+      <div id="zHiveThreads" class="z-hive-threads">
+        <div id="zHiveObserve" class="z-hive-thread">
+          <div class="z-hive-thread-title">Observe</div>
+        </div>
+        <div id="zHiveThink" class="z-hive-thread">
+          <div class="z-hive-thread-title">Think</div>
+        </div>
+        <div id="zHiveBuild" class="z-hive-thread">
+          <div class="z-hive-thread-title">Build</div>
+        </div>
+        <div id="zHiveGovern" class="z-hive-thread">
+          <div class="z-hive-thread-title">Govern</div>
+        </div>
+        <div id="zHiveRegistry" class="z-hive-thread">
+          <div class="z-hive-thread-title">Registry</div>
+        </div>
+        <div id="zHiveSocial" class="z-hive-thread">
+          <div class="z-hive-thread-title">Social</div>
+        </div>
+      </div>
+      <div id="zHiveCompass" class="z-hive-compass" aria-hidden="true">
+        <div class="z-hive-compass-ring"></div>
+        <div class="z-hive-compass-n">N</div>
+        <div class="z-hive-compass-e">E</div>
+        <div class="z-hive-compass-s">S</div>
+        <div class="z-hive-compass-w">W</div>
+        <div id="zHiveActiveThread" class="z-hive-compass-active">Active: --</div>
+      </div>
+    </div>
+
+    <!-- Developer mode: gated controls for testing (development only) -->
+    <button id="devToggle" style="position: fixed; right: 1rem; bottom: 1rem; z-index: 9999">
+      Developer Mode
+    </button>
+
+    <!-- Super Saiyan Autopilot Controls -->
+    <div
+      id="zAutopilotControls"
+      class="z-action-bar"
+      style="
+        position: fixed;
+        left: auto;
+        right: calc(var(--z-status-rail-width) + 1rem);
+        bottom: 1rem;
+        z-index: 9999;
+        background: rgba(10, 14, 39, 0.92);
+        border: 1px solid #00d4ff;
+        border-radius: 8px;
+        padding: 0.75rem;
+        width: auto;
+        max-width: calc(100vw - var(--z-status-rail-width) - 2rem);
+      "
+    >
+      <div class="z-action-row" aria-label="Autopilot quick controls">
+        <button id="autopilotStartBtn" class="z-button" title="Activate Super Saiyan Autopilot">
+          Start Autopilot
+        </button>
+        <button id="autopilotStopBtn" class="z-button" title="Deactivate Autopilot">
+          Stop Autopilot
+        </button>
+        <button id="governanceCheckBtn" class="z-button" title="Run Governance Check">
+          Governance Check
+        </button>
+        <button id="summonCompanionBtn" class="z-button" title="Summon SKK + RKPK">
+          Summon SKK + RKPK
+        </button>
+        <button id="toggleAutocompleteBtn" class="z-button" title="Toggle Autocomplete Panel">
+          Autocomplete
+        </button>
+        <button id="toggleSuggestionsBtn" class="z-button" title="Toggle Suggestions Panel">
+          Suggestions
+        </button>
+        <button
+          id="coAutopilotPreviewBtn"
+          class="z-button"
+          title="Enable Co-Autopilot Preview (read-only)"
+        >
+          Co-Autopilot Preview
+        </button>
+        <span
+          id="coAutopilotPreviewBadge"
+          style="display: inline-block; margin-left: 0.5rem; font-size: 0.75em; color: #7ad3ff"
+          >Preview Only</span
+        >
+        <button id="viewAuditBtn" class="z-button" title="View Audit Log">Audit Log</button>
+      </div>
+      <div class="z-status-line" style="margin-top: 0.35rem">
+        <span
+          style="margin-right: 0.75rem; color: var(--z-harmony); font-size: 0.85em"
+          title="Autopilot status indicator"
+          ><b>Status:</b> <span id="autopilotStatus">Idle</span></span
+        >
+        <span
+          id="coAutopilotPreviewStatus"
+          style="margin-right: 0.75rem; font-size: 0.8em; color: #9aa1b3"
+          title="Co-Autopilot Preview status"
+          >Co-Autopilot Preview: Off</span
+        >
+        <span
+          id="heartbeatStatus"
+          style="margin-right: 0.75rem; font-size: 0.8em; color: #ffa6c2"
+          title="Heartbeat status"
+          >Heartbeat: idle</span
+        >
+        <span
+          id="heartbeatSoundHint"
+          style="margin-right: 0.75rem; font-size: 0.78em; color: #9aa1b3; display: none"
+          title="Heartbeat sound helper"
+          >Sound hint: if silent, unmute this browser tab.</span
+        >
+        <span
+          id="quietModeStatus"
+          style="font-size: 0.8em; color: #9aa1b3"
+          title="Quiet mode status"
+          >Quiet mode: --</span
+        >
+      </div>
+      <div id="harishaGuidance" class="harisha-guidance">
+        Harisha guidance boots after sensors initialize.
+      </div>
+    </div>
+
+    <!-- Dashboard Edge Bars -->
+    <div
+      id="zTopTabContainer"
+      class="dashboard-edge-bar edge-top"
+      aria-label="Top dashboard quick actions"
+      role="tablist"
+    >
+      <button
+        data-panel="zMasterControlPanel"
+        data-module="core-dashboard"
+        data-label="Master Control"
+        data-short="MC"
+        title="Master Control"
+      >
+        Master Control
+      </button>
+      <button
+        data-panel="zAutopilotStatusPanel"
+        data-module="autopilot-engine"
+        data-label="Autopilot Status"
+        data-short="AP"
+        title="Autopilot Status"
+      >
+        Autopilot
+      </button>
+      <button
+        data-panel="zInsightLabPanel"
+        data-module="ai-agent-scribe"
+        data-label="Insight Lab"
+        data-short="IL"
+        title="Insight Lab"
+      >
+        Insight Lab
+      </button>
+      <button
+        data-panel="zPanelDirectory"
+        data-module="core-status-console"
+        data-label="Panel Directory"
+        data-short="PN"
+        title="Panel Directory"
+      >
+        Panels
+      </button>
+      <button
+        id="openContributeGuide"
+        class="z-button"
+        title="Open contributor guide"
+        style="border-color: rgba(255, 255, 255, 0.25)"
+        data-short="CG"
+        data-label="Contributor Guide"
+      >
+        Contributor Guide
+      </button>
+      <button id="zSswsQuick" class="z-button" data-short="SSWS" title="Z-SSWS Status">
+        Z SSWS
+      </button>
+      <button
+        data-panel="zAutocompletePanel"
+        data-module="core-chronicle-hud"
+        data-label="Rule / Commit"
+        data-short="RC"
+        title="Rule / Commit"
+      >
+        Rule / Commit
+      </button>
+      <button
+        data-panel="zSocialPanel"
+        data-module="social-arena"
+        data-label="Social Arena"
+        data-short="SA"
+        title="Social Arena"
+      >
+        Social Arena
+      </button>
+      <button
+        data-panel="zChroniclePanel"
+        data-module="core-chronicle"
+        data-label="Chronicle Feed"
+        data-short="CF"
+        title="Chronicle Feed"
+      >
+        Chronicle Feed
+      </button>
+      <span id="zModuleCoverageBadge" class="edge-status-badge" title="Module registry coverage"
+        >Coverage: --</span
+      >
+      <span id="zPriorityOpenBadge" class="edge-status-badge" title="Priority open count"
+        >Priority: --</span
+      >
+      <span id="zPriorityPinModeBadge" class="edge-status-badge" title="Priority pin mode"
+        >Pin: --</span
+      >
+      <span id="zSloHealthBadge" class="edge-status-badge" title="SLO guard health">SLO: --</span>
+      <span id="zExtensionGuardBadge" class="edge-status-badge" title="Extension guard health"
+        >Ext Guard: --</span
+      >
+      <span id="zErrorBudgetBadge" class="edge-status-badge" title="Error budget overall status"
+        >Budget: --</span
+      >
+      <span id="zZunoTrendBadge" class="edge-status-badge" title="Zuno 7-day trend">Zuno: --</span>
+      <span id="zStorageHygieneBadge" class="edge-status-badge" title="Storage hygiene posture"
+        >Storage: --</span
+      >
+      <span id="zAnyDevicesBadge" class="edge-status-badge" title="AnyDevices capability posture"
+        >Devices: --</span
+      >
+      <span
+        id="zCycleIndicatorBadge"
+        class="edge-status-badge"
+        title="Stabilization cycle indicator"
+        >Cycles: --</span
+      >
+      <span id="zSecuritySentinelBadge" class="edge-status-badge" title="Security sentinel posture"
+        >Sentinel: --</span
+      >
+    </div>
+    <div class="dashboard-edge-bar edge-bottom" aria-label="Bottom dashboard quick actions"></div>
+    <div class="dashboard-edge-bar edge-left" aria-label="Left dashboard quick actions">
+      <button
+        data-panel="zPanelDirectory"
+        data-module="core-status-console"
+        data-label="Panel Directory"
+        data-short="PN"
+        title="Panel Directory"
+      >
+        Directory
+      </button>
+      <button
+        data-panel="zInsightLabPanel"
+        data-module="ai-agent-scribe"
+        data-label="Insight Lab"
+        data-short="IL"
+        title="Insight Lab"
+      >
+        Insight
+      </button>
+      <button
+        data-panel="zSocialPanel"
+        data-module="social-arena"
+        data-label="Social Arena"
+        data-short="SA"
+        title="Social Arena"
+      >
+        Social
+      </button>
+    </div>
+    <div class="dashboard-edge-bar edge-right" aria-label="Right dashboard quick actions">
+      <button
+        data-panel="zAutopilotStatusPanel"
+        data-module="autopilot-engine"
+        data-label="Autopilot Status"
+        data-short="AP"
+        title="Autopilot Status"
+      >
+        Autopilot
+      </button>
+      <button
+        data-panel="zMasterControlPanel"
+        data-module="core-dashboard"
+        data-label="Master Control"
+        data-short="MC"
+        title="Master Control"
+      >
+        Control
+      </button>
+      <button
+        data-panel="zInsightLabPanel"
+        data-module="ai-agent-scribe"
+        data-label="Insight Lab"
+        data-short="IL"
+        title="Insight Lab"
+      >
+        Insight
+      </button>
+    </div>
+
+    <div id="lens-status-bar" class="lens-status-bar" aria-hidden="true">
+      <span class="lens-chip" data-lens="manual">Manual</span>
+      <span class="lens-chip" data-lens="preset">Preset</span>
+      <span class="lens-chip" data-lens="autopilot">Autopilot</span>
+      <span class="lens-chip lens-governance" data-lens="governance">Governance</span>
+      <span id="quietModeChip" class="lens-chip" data-lens="quiet">Quiet: --</span>
+      <span id="trustPackChip" class="lens-chip" data-lens="trust">Trust Pack: --</span>
+    </div>
+    <div id="lens-legend" class="lens-legend" aria-hidden="true">
+      Quiet: stabilization · Trust Pack: reference baseline ·
+      <a
+        href="../data/reports/Z_SYSTEM_HEALTH_CERTIFICATE.md"
+        target="_blank"
+        class="z-secure-doc"
+        data-secure-doc="true"
+        data-i18n="Health Certificate"
+        >Health Certificate</a
+      >
+      <span class="lens-chip" data-lens="trust" style="margin-left: 0.35rem">verified</span>
+    </div>
+    <div id="lens-mode-toggle" class="lens-mode-toggle" aria-label="Lens mode selector">
+      <button data-lens-mode="calm" type="button">Calm</button>
+      <button data-lens-mode="focus" type="button">Focus</button>
+      <button data-lens-mode="governance" type="button">Governance</button>
+    </div>
+
+    <!-- Autopilot Status Panel -->
+    <div
+      id="zAutopilotStatusPanel"
+      class="z-panel"
+      data-title="Z Autopilot Status"
+      style="right: 1rem; top: 440px; width: 360px; display: none"
+    >
+      <h3>Z Autopilot Status</h3>
+      <div class="z-section">
+        <div class="z-kv"><span>Activation</span><span id="autopilotActive">No</span></div>
+        <div class="z-kv"><span>Paused</span><span id="autopilotPaused">No</span></div>
+        <div class="z-kv"><span>Override</span><span id="autopilotOverride">Available</span></div>
+        <div class="z-kv"><span>Last Action</span><span id="autopilotLastAction">--</span></div>
+        <div class="z-kv"><span>Quiet Mode</span><span id="quietModePanelStatus">--</span></div>
+      </div>
+      <div class="z-section">
+        <button id="autopilotPauseBtn" class="z-button" title="Pause Autopilot">Pause</button>
+        <button
+          id="autopilotResumeBtn"
+          class="z-button"
+          title="Resume Autopilot"
+          style="display: none"
+        >
+          Resume
+        </button>
+        <button id="autopilotOverrideBtn" class="z-button" title="Override Autopilot">
+          Override
+        </button>
+      </div>
+      <div class="z-section">
+        <span style="color: var(--z-accent); font-size: 0.9em"
+          >Autopilot is always human-overridable. See
+          <a href="../SKK_RAINBOW_CLOUD_V0_1.md" target="_blank">SKK Rainbow Cloud Law</a>.</span
+        >
+      </div>
+    </div>
+
+    <!-- Master Control Panel -->
+    <div
+      id="zMasterControlPanel"
+      class="z-panel"
+      data-title="Z Master Control"
+      style="left: 440px; top: 1rem; width: 360px; display: none"
+    >
+      <h3>Z Master Control</h3>
+      <div class="z-section">
+        <button id="masterPauseAllBtn" class="z-button" title="Pause all modules">Pause All</button>
+        <button id="masterResumeAllBtn" class="z-button" title="Resume all modules">
+          Resume All
+        </button>
+        <button id="masterShutdownBtn" class="z-button" title="Shutdown Sanctuary">Shutdown</button>
+      </div>
+      <div class="z-section">
+        <button id="nightModeToggleBtn" class="z-button" title="Toggle night-safe mode">
+          Night Mode: Auto
+        </button>
+        <span id="nightModeStatus" class="z-muted" style="margin-left: 0.5rem"></span>
+      </div>
+      <div id="zHeatmapPanel" style="margin-bottom: 1rem">
+        <h4 style="color: var(--z-accent); margin: 0 0 0.5em 0">Emotional Heatmap</h4>
+        <canvas
+          id="zHeatmapCanvas"
+          width="400"
+          height="60"
+          style="background: #181c2a; border-radius: 6px"
+        ></canvas>
+      </div>
+      <div class="z-section">
+        <span style="color: var(--z-harmony); font-size: 0.9em"
+          >Unified management for all modules. Human dignity and override always enforced.</span
+        >
+      </div>
+    </div>
+
+    <!-- Rule/Commit Autocompletion Panel -->
+    <div
+      id="zAutocompletePanel"
+      class="z-panel"
+      data-title="Z Rule/Commit Autocompletion"
+      style="left: 1rem; top: 480px; width: 420px; display: none"
+    >
+      <h3>Z Rule/Commit Autocompletion</h3>
+      <div class="z-section">
+        <label for="autocompleteInput" style="color: var(--z-accent)"
+          >Describe your change or rule:</label
+        >
+        <textarea
+          id="autocompleteInput"
+          rows="3"
+          style="width: 100%; margin-bottom: 0.5rem"
+        ></textarea>
+        <button
+          id="generateAutocompleteBtn"
+          class="z-button"
+          title="Generate commit message or rule"
+        >
+          Generate
+        </button>
+      </div>
+      <div class="z-section">
+        <label style="color: var(--z-harmony)">Preview:</label>
+        <pre
+          id="autocompletePreview"
+          style="
+            background: rgba(10, 14, 39, 0.85);
+            color: #f0f0f0;
+            padding: 0.5rem;
+            border-radius: 6px;
+            max-height: 120px;
+            overflow: auto;
+          "
+        ></pre>
+      </div>
+      <div class="z-section">
+        <label style="color: var(--z-primary)">Local Scribe Config:</label>
+        <input
+          id="scribeEndpointInput"
+          class="z-input"
+          type="text"
+          placeholder="http://127.0.0.1:11434/api/generate"
+          style="width: 100%; margin-bottom: 0.4rem"
+        />
+        <input
+          id="scribeModelInput"
+          class="z-input"
+          type="text"
+          placeholder="qwen2.5-coder:7b"
+          style="width: 100%; margin-bottom: 0.4rem"
+        />
+        <div style="display: flex; gap: 0.5rem; flex-wrap: wrap">
+          <button id="saveScribeConfigBtn" class="z-button" title="Save local scribe config">
+            Save
+          </button>
+          <button id="resetScribeConfigBtn" class="z-button" title="Reset to defaults">
+            Reset
+          </button>
+          <button id="testScribeConfigBtn" class="z-button" title="Test scribe connection">
+            Test Connection
+          </button>
+          <span id="scribeConfigStatus" class="z-muted" style="align-self: center"></span>
+          <span id="scribeConnectionStatus" class="z-muted" style="align-self: center"></span>
+        </div>
+      </div>
+      <div class="z-section">
+        <span style="color: var(--z-accent); font-size: 0.9em"
+          >Uses local AI scribe for suggestions. Edit before applying.</span
+        >
+      </div>
+      <div class="z-section" style="font-size: 0.85em; color: var(--z-light)">
+        <div><b>Preview Legend (click to filter suggestions):</b></div>
+        <div id="suggestionFilters" class="z-filter-row">
+          <button type="button" class="z-filter-chip z-filter-active" data-risk="all">All</button>
+          <button type="button" class="z-filter-chip" data-risk="low">Low</button>
+          <button type="button" class="z-filter-chip" data-risk="medium">Medium</button>
+          <button type="button" class="z-filter-chip" data-risk="high">High</button>
+          <button type="button" class="z-filter-chip" data-risk="sacred">Sacred</button>
+          <button type="button" class="z-filter-chip" data-risk="unknown">Unknown</button>
+        </div>
+        <div style="margin-top: 0.2rem; color: #9aa1b3">
+          Border glow: rule (blue) or commit (pink).
+        </div>
+      </div>
+    </div>
+
+    <!-- Recent Suggestions Dashboard Section -->
+    <div
+      id="zRecentSuggestions"
+      class="z-panel"
+      data-title="Z Recent Suggestions"
+      style="left: 880px; top: 1rem; width: 360px; display: none"
+    >
+      <h3>
+        Z Recent Suggestions <span id="suggestionFilterLabel" class="z-muted">Filter: All</span>
+      </h3>
+      <ul id="suggestionList" class="z-list"></ul>
+    </div>
+
+    <div
+      id="devControls"
+      style="
+        display: none;
+        position: fixed;
+        right: 1rem;
+        bottom: 3.5rem;
+        background: rgba(0, 0, 0, 0.85);
+        padding: 0.5rem;
+        border: 1px solid #00d4ff;
+        border-radius: 6px;
+        z-index: 9999;
+      "
+    >
+      <div style="margin-bottom: 0.5rem; color: #f0f0f0">Z-Sanctuary Dev Controls</div>
+      <button id="startRecordBtn">Start Record</button>
+      <button id="stopRecordBtn">Stop Record</button>
+      <div style="margin-top: 0.5rem">
+        <button id="quietModeOnBtn">Quiet On</button>
+        <button id="quietModeOffBtn">Quiet Off</button>
+        <button id="quietModeAutoBtn">Quiet Auto</button>
+      </div>
+    </div>
+
+    <div
+      id="devLogin"
+      style="
+        display: none;
+        position: fixed;
+        right: 1rem;
+        bottom: 8rem;
+        background: rgba(10, 14, 39, 0.95);
+        padding: 0.75rem;
+        border: 1px solid #a0e4cb;
+        border-radius: 6px;
+        z-index: 10000;
+      "
+    >
+      <div style="color: var(--z-light); margin-bottom: 0.5rem">Developer passphrase</div>
+      <input id="devPass" type="password" style="width: 200px; margin-bottom: 0.5rem" />
+      <div>
+        <button id="devLoginBtn">Unlock</button>
+        <button id="devCancelBtn">Cancel</button>
+      </div>
+      <div id="devMsg" style="color: #ffb3b3; margin-top: 0.5rem; display: none"></div>
+    </div>
+
+    <div
+      id="zDashboard"
+      class="z-panel"
+      data-title="Z Sanctuary Dashboard"
+      style="
+        position: fixed;
+        left: 1rem;
+        top: 1rem;
+        width: 420px;
+        height: 320px;
+        background: rgba(10, 14, 39, 0.92);
+        border: 1px solid #a0e4cb;
+        border-radius: 10px;
+        z-index: 9000;
+        padding: 1rem;
+        overflow: auto;
+      "
+    >
+      <h3 style="color: var(--z-harmony); margin-top: 0">Sanctuary Dashboard</h3>
+      <div
+        id="zSummary"
+        style="margin-bottom: 0.35rem; color: var(--z-light); font-size: 1.05em"
+      ></div>
+      <div id="zSummaryBadges" class="z-summary-badges">
+        <span id="quietModeBadge" class="z-summary-badge">Quiet: --</span>
+        <span id="trustPackBadge" class="z-summary-badge">Trust Pack: --</span>
+      </div>
+      <canvas id="energyChart" width="400" height="120"></canvas>
+      <canvas id="harmonyChart" width="400" height="120"></canvas>
+      <canvas id="emotionChart" width="400" height="120"></canvas>
+      <div style="margin-bottom: 0.5rem">
+        <button id="exportCSV" class="z-button">Export CSV</button>
+        <button id="exportJSON" class="z-button">Export JSON</button>
+        <button id="downloadReport" class="z-button">Download Report</button>
+      </div>
+      <canvas id="emotionBreakdown" width="400" height="120"></canvas>
+      <div style="margin-top: 1rem">
+        <label for="dataSourceInput" style="color: var(--z-harmony)">Connect Data Source:</label>
+        <input
+          id="dataSourceInput"
+          type="text"
+          placeholder="ws:// or http://..."
+          style="width: 220px"
+          class="z-input"
+        />
+        <button id="connectSourceBtn" class="z-button">Connect</button>
+      </div>
+      <div style="margin-top: 1rem">
+        <label for="apiSourceInput" style="color: var(--z-accent)">External API URL:</label>
+        <input
+          id="apiSourceInput"
+          type="text"
+          placeholder="https://api.example.com/data"
+          style="width: 220px"
+          class="z-input"
+        />
+        <button id="fetchApiBtn" class="z-button">Fetch API</button>
+      </div>
+      <div style="margin-top: 1rem">
+        <label style="color: var(--z-harmony)">Edit Thresholds:</label>
+        <input id="energyMin" type="number" style="width: 60px" placeholder="Energy min" />
+        <input id="energyMax" type="number" style="width: 60px" placeholder="Energy max" />
+        <input id="harmonyMin" type="number" style="width: 60px" placeholder="Harmony min" />
+        <input id="harmonyMax" type="number" style="width: 60px" placeholder="Harmony max" />
+        <button id="saveThresholds" class="z-button">Save</button>
+      </div>
+      <div style="margin-top: 0.5rem">
+        <label style="color: var(--z-accent)">Model Alpha (Exp. Smoothing):</label>
+        <input
+          id="expAlpha"
+          type="number"
+          min="0"
+          max="1"
+          step="0.01"
+          style="width: 60px"
+          value="0.3"
+        />
+        <button id="saveAlpha" class="z-button">Set</button>
+      </div>
+      <div style="margin-top: 0.5rem">
+        <button id="pauseAnalytics" class="z-button">Pause Analytics</button>
+        <button id="resumeAnalytics" class="z-button" style="display: none">
+          Resume Analytics
+        </button>
+      </div>
+    </div>
+
+    <div
+      id="zVaultStatusPanel"
+      class="z-panel"
+      data-title="Z Vault Status"
+      style="right: 1rem; top: 1rem; width: 320px"
+    >
+      <h3>Z Vault Status</h3>
+      <div class="z-muted" style="margin-bottom: 0.4rem">
+        DK‑Vault is local‑only. Status updates when the unlock file is present.
+      </div>
+      <div class="z-section">
+        <div class="z-kv"><span>Status</span><span id="zVaultStatusValue">--</span></div>
+        <div class="z-kv"><span>Last unlock</span><span id="zVaultUnlockedAt">--</span></div>
+      </div>
+      <div class="z-muted" style="font-size: 0.85rem">
+        Use: <code>node scripts/dk_vault_guard.js unlock</code>
+      </div>
+    </div>
+
+    <div
+      id="zPublicMirrorPanel"
+      class="z-panel"
+      data-title="Z Public Mirror"
+      style="right: 1rem; top: 260px; width: 320px"
+    >
+      <h3>Z Public Mirror</h3>
+      <div class="z-muted" style="margin-bottom: 0.4rem">
+        Transparency only. No formulas. No execution.
+      </div>
+      <div class="z-section">
+        <div class="z-kv"><span>Quiet mode</span><span id="zMirrorQuiet">--</span></div>
+        <div class="z-kv"><span>Stability</span><span id="zMirrorStability">--</span></div>
+        <div class="z-kv"><span>Alignment</span><span id="zMirrorAlignment">--</span></div>
+        <div class="z-kv"><span>Ethics</span><span id="zMirrorEthics">--</span></div>
+      </div>
+      <div class="z-muted" style="font-size: 0.85rem">
+        “We observe reality. We do not manipulate it.”
+      </div>
+    </div>
+
+    <div
+      id="zPanelDirectory"
+      class="z-panel"
+      data-title="Z Panel Directory"
+      style="left: 1rem; top: 360px; width: 320px"
+    >
+      <h3>Z Panel Directory</h3>
+      <div class="z-muted">Choose which panels are visible right now.</div>
+      <div id="zPanelDirectoryTree" class="z-panel-tree"></div>
+      <div class="z-section z-panel-tree-actions">
+        <button id="zPanelShowAllBtn" class="z-button">Show All</button>
+        <button id="zPanelHideAllBtn" class="z-button">Hide All</button>
+        <button id="zPanelPopoutBtn" class="z-button">Popout Selected</button>
+        <button id="zPanelResetSizesBtn" class="z-button z-button-subtle">Reset Sizes</button>
+        <button id="zPriorityMemoryResetBtn" class="z-button z-button-subtle">
+          Reset Learned Memory
+        </button>
+        <button id="zPanelResetOverridesBtn" class="z-button z-button-subtle">
+          Reset Overrides
+        </button>
+      </div>
+      <div class="z-section">
+        <div class="z-section-title">Layout Presets</div>
+        <div class="z-panel-tree-actions">
+          <button id="zLayoutPresetFocusBtn" class="z-button">Focus</button>
+          <button id="zLayoutPresetAnalysisBtn" class="z-button">Analysis</button>
+          <button id="zLayoutPresetGovernanceBtn" class="z-button">Governance</button>
+        </div>
+        <div class="z-panel-tree-actions">
+          <button id="zFocusQueueModeBtn" class="z-button z-button-subtle">
+            Focus Queue: Auto
+          </button>
+        </div>
+        <div id="zLayoutPresetLabel" class="z-muted">Active: Analysis</div>
+      </div>
+      <div class="z-section">
+        <div class="z-section-title">Split Layout</div>
+        <select id="zSplitLayoutSelect" class="z-input">
+          <option value="auto">Auto</option>
+          <option value="split-2">Split 1/2</option>
+          <option value="split-4">Split 1/4</option>
+        </select>
+      </div>
+      <div class="z-section" id="zModuleReadinessStrip"></div>
+      <div class="z-section" id="zModuleRegistryList"></div>
+      <div class="z-section z-panel-toggle-list">
+        <label class="z-toggle-row">
+          <input id="zCalmModeToggle" type="checkbox" />
+          Calm Mode
+        </label>
+        <label class="z-toggle-row">
+          <input id="zAutopilotToggle" type="checkbox" />
+          Autopilot Dev Mode
+        </label>
+        <label class="z-toggle-row">
+          <input id="zVoiceControlToggle" type="checkbox" />
+          Voice Control
+        </label>
+        <label class="z-toggle-row">
+          <input id="zListeningToggle" type="checkbox" />
+          Sanctuary Listening
+        </label>
+        <label class="z-toggle-row">
+          <input id="zVoiceWhisperToggle" type="checkbox" />
+          RKPK Voice Whisper
+        </label>
+        <label class="z-toggle-row">
+          <input id="zSystemSoundToggle" type="checkbox" />
+          System Sounds
+        </label>
+        <label class="z-toggle-row">
+          Sound Level: <span id="zSystemSoundVolumeLabel">60%</span>
+          <input
+            id="zSystemSoundVolume"
+            type="range"
+            min="0"
+            max="100"
+            step="5"
+            value="60"
+            style="width: 120px; margin-left: 0.35rem"
+          />
+        </label>
+        <div class="z-panel-tree-actions" style="margin-top: 0.25rem">
+          <button id="zSystemSoundTest" class="z-button">Test Beep</button>
+        </div>
+        <label class="z-toggle-row">
+          <input id="zAutoLayoutToggle" type="checkbox" />
+          Auto Layout
+        </label>
+        <label class="z-toggle-row">
+          <input id="zCompactControlsToggle" type="checkbox" />
+          Compact Panel Controls
+        </label>
+        <label class="z-toggle-row">
+          <input id="zCompactEdgebarToggle" type="checkbox" />
+          Compact Edge Bar
+        </label>
+        <label class="z-toggle-row">
+          <input id="zGridLayoutToggle" type="checkbox" />
+          Z Grid Layout v1
+        </label>
+        <label class="z-toggle-row">
+          <input id="zReduceMotionToggle" type="checkbox" />
+          Reduce Motion
+        </label>
+        <label class="z-toggle-row">
+          <input id="zAccessibleActionsToggle" type="checkbox" />
+          Accessible Quick Actions
+        </label>
+        <label class="z-toggle-row">
+          <input id="zSingleTapModeToggle" type="checkbox" />
+          Single-Tap Mode
+        </label>
+        <label class="z-toggle-row">
+          <input id="zHiveGlowToggle" type="checkbox" />
+          Hive Glow
+        </label>
+        <label class="z-toggle-row">
+          <input id="zHiveSpinToggle" type="checkbox" />
+          360 Spin (subtle)
+        </label>
+        <label class="z-toggle-row">
+          <input id="zHive3dToggle" type="checkbox" />
+          3D Hive
+        </label>
+        <label class="z-toggle-row">
+          Spin Speed: <span id="zHiveSpinSpeedLabel">90s</span>
+          <input
+            id="zHiveSpinSpeed"
+            type="range"
+            min="40"
+            max="240"
+            step="10"
+            value="90"
+            style="width: 140px; margin-left: 0.35rem"
+          />
+        </label>
+        <div class="z-panel-tree-actions" style="margin-top: 0.35rem">
+          <button id="zHiveSpinSlow" class="z-button">Spin: Slow</button>
+          <button id="zHiveSpinCalm" class="z-button">Spin: Calm</button>
+          <button id="zHiveSpinFocus" class="z-button">Spin: Focus</button>
+        </div>
+        <div class="z-panel-tree-actions" style="margin-top: 0.35rem">
+          <button id="zHiveCenterSnap" class="z-button">Center Snap</button>
+        </div>
+        <div id="zReduceMotionLabel" class="z-muted" style="margin-top: 0.25rem">
+          Motion: Manual
+        </div>
+        <label class="z-toggle-row">
+          <input id="zCompactModeToggle" type="checkbox" />
+          Compact Mode
+        </label>
+        <label class="z-toggle-row">
+          <input id="zUltraCompactToggle" type="checkbox" />
+          Ultra Compact
+        </label>
+        <div class="z-panel-tree-actions" style="margin-top: 0.35rem">
+          <button id="zDensityPresetNormal" class="z-button">Normal</button>
+          <button id="zDensityPresetCompact" class="z-button">Compact</button>
+          <button id="zDensityPresetUltra" class="z-button">Ultra</button>
+        </div>
+        <div id="zDensityPresetLabel" class="z-muted" style="margin-top: 0.25rem">
+          <span class="z-density-dot" aria-hidden="true"></span>
+          Density: Normal
+        </div>
+      </div>
+      <div class="z-section z-panel-tree-actions">
+        <button id="zLayoutExportBtn" class="z-button">Export Layout</button>
+        <button id="zLayoutImportBtn" class="z-button">Import Layout</button>
+      </div>
+      <div class="z-section z-panel-tree-actions">
+        <button id="zAuditFormulaVaultBtn" class="z-button">Audit Formula Vault</button>
+      </div>
+      <div class="z-section">
+        <div class="z-section-title">Zoom</div>
+        <div class="z-panel-tree-actions">
+          <button id="zZoomOutBtn" class="z-button">-</button>
+          <button id="zZoomResetBtn" class="z-button">100%</button>
+          <button id="zZoomInBtn" class="z-button">+</button>
+        </div>
+        <label class="z-toggle-row" style="margin-top: 0.35rem">
+          <input id="zSmartZoomToggle" type="checkbox" />
+          Smart Zoom (auto)
+        </label>
+        <div class="z-panel-tree-actions" style="margin-top: 0.35rem">
+          <button id="zZoomPresetWindows" class="z-button">Windows</button>
+          <button id="zZoomPresetMac" class="z-button">macOS</button>
+          <button id="zZoomPresetLinux" class="z-button">Linux</button>
+        </div>
+      </div>
+      <div class="z-section">
+        <div class="z-section-title">Auto Scroll</div>
+        <div class="z-panel-tree-actions">
+          <label for="zAutoScrollSpeedSelect" class="z-muted">Speed</label>
+          <select
+            id="zAutoScrollSpeedSelect"
+            class="z-input"
+            style="width: 120px; margin-left: 0.35rem"
+          >
+            <option value="calm">Calm</option>
+            <option value="balanced" selected>Balanced</option>
+            <option value="fast">Fast</option>
+          </select>
+        </div>
+        <div id="zAutoScrollSpeedLabel" class="z-muted" style="margin-top: 0.25rem">
+          Auto scroll: Balanced
+        </div>
+        <div
+          class="z-panel-tree-actions"
+          style="margin-top: 0.4rem; flex-direction: column; align-items: flex-start; gap: 0.3rem"
+        >
+          <label class="z-muted" for="zAutoScrollChronicleSelect">Chronicle</label>
+          <select id="zAutoScrollChronicleSelect" class="z-input" style="width: 130px">
+            <option value="inherit" selected>Inherit</option>
+            <option value="calm">Calm</option>
+            <option value="balanced">Balanced</option>
+            <option value="fast">Fast</option>
+          </select>
+          <label class="z-muted" for="zAutoScrollCodexSelect">Codex Suggestions</label>
+          <select id="zAutoScrollCodexSelect" class="z-input" style="width: 130px">
+            <option value="inherit" selected>Inherit</option>
+            <option value="calm">Calm</option>
+            <option value="balanced">Balanced</option>
+            <option value="fast">Fast</option>
+          </select>
+          <label class="z-muted" for="zAutoScrollAwarenessSelect">AI Awareness</label>
+          <select id="zAutoScrollAwarenessSelect" class="z-input" style="width: 130px">
+            <option value="inherit" selected>Inherit</option>
+            <option value="calm">Calm</option>
+            <option value="balanced">Balanced</option>
+            <option value="fast">Fast</option>
+          </select>
+        </div>
+      </div>
+    </div>
+
+    <div
+      id="zAwarenessPanel"
+      class="z-panel"
+      data-title="Z AI Awareness"
+      style="left: 450px; right: auto; top: 1rem; width: 320px; height: auto"
+    >
+      <h3>Z AI Awareness</h3>
+      <div id="zAwarenessState" class="z-muted">Loading awareness...</div>
+      <div class="z-section" style="margin-top: 0.75rem">
+        <div class="z-section-title">Chronicle Sync</div>
+        <div style="display: flex; gap: 0.5rem; flex-wrap: wrap">
+          <button id="chroniclePingBtn" class="z-button">Check Server</button>
+          <button id="chronicleCopyCmdBtn" class="z-button">Copy Start Cmd</button>
+          <button id="chronicleStartBtn" class="z-button">Start Server</button>
+          <span id="chronicleServerStatus" class="z-status-pill z-muted">
+            <span id="chronicleServerDot" class="z-status-dot"></span>
+            <span id="chronicleServerText">Not checked</span>
+          </span>
+        </div>
+        <div class="z-muted" style="font-size: 0.8rem; margin-top: 0.35rem">
+          Start with: <code>node scripts/chronicle_server.js</code>
+        </div>
+      </div>
+      <div class="z-section" style="margin-top: 0.75rem">
+        <div class="z-section-title">Mini-AI Status</div>
+        <div id="zMiniAiStatus" class="z-muted">Bots not loaded.</div>
+      </div>
+      <div class="z-section" style="margin-top: 0.75rem">
+        <div class="z-section-title">
+          Mini-AI Feed
+          <button id="miniAiFeedToggleBtn" class="z-panel-btn" style="margin-left: 0.35rem">
+            Pause Feed
+          </button>
+          <button id="miniAiFeedClearBtn" class="z-panel-btn" style="margin-left: 0.35rem">
+            Clear
+          </button>
+        </div>
+        <div id="zMiniAiFeed" class="z-mini-feed z-muted">No bot activity yet.</div>
+      </div>
+    </div>
+
+    <div
+      id="zChroniclePanel"
+      class="z-panel"
+      data-title="Z-Chronicle Feed"
+      style="left: 450px; right: auto; top: 360px; width: 340px; height: 240px"
+    >
+      <h3 style="color: var(--z-harmony); margin-top: 0">Z-Chronicle Feed</h3>
+      <div id="zChronicleFeed" class="feed" style="color: var(--z-light); font-size: 1em"></div>
+      <div id="zChroniclePlaybackPanel" style="margin-top: 1.5em">
+        <h4 style="color: var(--z-accent); margin: 0 0 0.5em 0">Chronicle Playback</h4>
+        <button id="playbackStartBtn" class="z-button">Play</button>
+        <button id="playbackPauseBtn" class="z-button" style="display: none">Pause</button>
+        <input
+          id="playbackSpeed"
+          type="range"
+          min="0.5"
+          max="3"
+          step="0.1"
+          value="1"
+          style="width: 100px; vertical-align: middle"
+        />
+        <span id="playbackSpeedLabel" style="color: var(--z-harmony); font-size: 0.95em">1x</span>
+        <div
+          id="playbackTimeline"
+          style="
+            margin-top: 0.5em;
+            height: 18px;
+            background: #222;
+            border-radius: 6px;
+            overflow: hidden;
+          "
+        ></div>
+      </div>
+    </div>
+
+    <script src="./z_chronicle.js"></script>
+    <script src="./z_super_ghost_ingest.js"></script>
+    <script type="module" src="./z_kairocell_engine.js"></script>
+    <script src="./safe_pack_engine.js"></script>
+    <script src="./safe_pack_panel.js"></script>
+    <script src="./safe_pack_reflection.js"></script>
+    <script src="./z_world_pulse.js"></script>
+    <script src="./world_pulse_panel.js"></script>
+    <script src="./insight_cards.js"></script>
+    <script src="./module_health.js"></script>
+    <script src="./module_registry_panel.js"></script>
+    <!-- Safe Pack Auto-Apply Panel -->
+    <div
+      id="zSafePackPanel"
+      class="z-panel"
+      data-title="Z Safe Pack Auto-Apply"
+      style="left: 2rem; top: 230px; width: 360px; display: none"
+    >
+      <h3>Z Safe Pack Auto-Apply</h3>
+      <div class="z-section">
+        <span class="z-muted">Auto-applied doc & lint hygiene steps. Rollback if needed.</span>
+        <button id="zSafePackRefresh" class="z-button" style="margin-left: 0.5rem">Refresh</button>
+      </div>
+      <div class="z-section" id="zSafePackPreview">
+        <div class="z-section-title">Suggestions</div>
+        <div id="zSafePackCandidate" class="z-card z-card-subtle">Loading suggestions…</div>
+        <button id="zSafePackApplyPreview" class="z-button" style="margin-top: 0.5rem">
+          Apply Suggested Safe Pack
+        </button>
+      </div>
+      <div class="z-section">
+        <div
+          id="zWebhookStatusCard"
+          class="z-muted"
+          style="display: flex; gap: 0.75rem; flex-wrap: wrap; font-size: 11px"
+        >
+          No webhook events yet
+        </div>
+        <span id="zSafePackWebhookStatus" class="z-muted" style="margin-top: 0.5rem; display: block"
+          >Webhook disabled.</span
+        >
+        <button id="zSafePackExport" class="z-button z-button-subtle" style="margin-left: 1rem">
+          Export Webhook History
+        </button>
+      </div>
+      <div
+        id="zSafePackList"
+        class="z-section"
+        style="display: flex; flex-direction: column; gap: 0.35rem"
+      ></div>
+    </div>
+
+    <div id="zGovernance" class="z-panel" data-title="Z Governance Console">
+      <h3>Z Governance Console</h3>
+      <div class="z-section">
+        <div class="z-kv">
+          <span>Risk Class</span>
+          <span id="zGovRisk" class="z-badge z-risk-unknown">unknown</span>
+        </div>
+        <div class="z-kv">
+          <span>Consent Level</span>
+          <span id="zGovConsent" class="z-muted">notify</span>
+        </div>
+        <div class="z-kv">
+          <span>AI Boundary</span>
+          <span id="zGovAi" class="z-muted">observe / suggest</span>
+        </div>
+        <div class="z-kv">
+          <span>Human Override</span>
+          <span id="zGovHuman" class="z-muted">available</span>
+        </div>
+        <div class="z-kv">
+          <span>LPBS Governor</span>
+          <span id="zGovGovernor" class="z-muted">waiting</span>
+        </div>
+        <div class="z-kv">
+          <span>Snapshot</span>
+          <span id="zGovSignals" class="z-muted">E:-- H:-- C:-- L:--</span>
+        </div>
+        <div class="z-kv">
+          <span>Listening</span>
+          <span id="zGovListening" class="z-muted">off</span>
+        </div>
+        <div class="z-kv">
+          <span>Voice Whisper</span>
+          <span id="zGovVoiceWhisper" class="z-muted">off</span>
+        </div>
+        <div class="z-kv">
+          <span>Formula Vault</span>
+          <span id="zGovFormulaVault" class="z-badge z-risk-unknown">loading</span>
+        </div>
+        <div class="z-kv">
+          <span>Z-SSWS</span>
+          <span id="zGovSSWS" class="z-badge z-risk-unknown">loading</span>
+        </div>
+      </div>
+      <div class="z-section">
+        <div class="z-section-title">SEPC Gate</div>
+        <div class="z-kv">
+          <span>SEPC</span>
+          <span id="zGovSepc" class="z-muted">active</span>
+        </div>
+        <div class="z-kv">
+          <span>Dual Pass</span>
+          <span id="zGovCompanion" class="z-muted">SKK + RKPK</span>
+        </div>
+        <div class="z-kv">
+          <span>Resolution</span>
+          <span id="zGovResolution" class="z-muted">de-escalation first</span>
+        </div>
+        <div class="z-muted" style="font-size: 0.85rem">
+          <a href="../docs/governance/SEPC.md" target="_blank">SEPC</a> |
+          <a href="../docs/governance/SKK_RKPK_COMPANION_CHARTER.md" target="_blank"
+            >Companion Charter</a
+          >
+        </div>
+      </div>
+      <div class="z-section">
+        <div class="z-section-title">
+          Active Rules <span id="zGovRuleCount" class="z-muted"></span>
+        </div>
+        <ul id="zRuleItems" class="z-list"></ul>
+      </div>
+      <div class="z-section">
+        <div class="z-section-title">Audit Trail</div>
+        <div id="zAuditTrail" class="z-audit-list"></div>
+      </div>
+      <div class="z-section">
+        <div class="z-section-title">Z-SSWS Status</div>
+        <div id="zSSWSGovernanceLog" class="z-muted">No SSWS entries yet.</div>
+      </div>
+      <div class="z-section">
+        <div class="z-section-title">🌸 Safety & Care</div>
+        <div class="z-muted" style="line-height: 1.5">This system is built to protect life.</div>
+        <div class="z-muted" style="line-height: 1.5; margin-top: 0.35rem">
+          • It cannot be used to hurt anyone.<br />
+          • Power only works when used with kindness.<br />
+          • If misuse is attempted, the system becomes quiet.<br />
+          • Quiet means everything is healthy.<br />
+          • Daily safety checks run automatically.<br />
+          • If something needs attention, you will be informed.<br />
+          • Otherwise, rest.
+        </div>
+        <div class="z-muted" style="line-height: 1.5; margin-top: 0.35rem">
+          This space exists for reassurance only. Nothing is required from you.
+        </div>
+      </div>
+      <div class="z-section">
+        <div class="z-section-title">
+          P1 Blockers <span id="zGovP1Count" class="z-muted"></span>
+        </div>
+        <ul id="zGovP1List" class="z-list"></ul>
+      </div>
+      <div class="z-section">
+        <div class="z-section-title">Wisdom Ring</div>
+        <div id="zGovWisdomNote" class="z-muted">No wisdom notes yet.</div>
+        <div id="zGovWisdomStamp" class="z-muted" style="font-size: 0.75rem"></div>
+      </div>
+      <div class="z-section">
+        <button id="zGovSilenceVoiceBtn" class="z-button">Silence All Voice</button>
+        <button
+          id="zGovExportSnapshotBtn"
+          class="z-button z-button-subtle"
+          style="margin-left: 0.5rem"
+        >
+          Export Governance Snapshot
+        </button>
+      </div>
+    </div>
+
+    <div id="trust-certificate" class="z-panel" data-title="Z Trust Certificate"></div>
+
+    <div
+      id="zWisdomRingPanel"
+      class="z-panel"
+      data-title="Z Wisdom Ring"
+      style="left: 1rem; top: 1400px; width: 320px; display: none"
+    >
+      <h3>Z Wisdom Ring</h3>
+      <div class="z-muted">Inter-chain reflections and gentle lessons.</div>
+      <div class="z-section z-wisdom-actions">
+        <button id="zWisdomRefreshBtn" class="z-button">Refresh</button>
+        <button id="zWisdomExportWeekBtn" class="z-button">Export Weekly</button>
+        <button id="zWisdomExportAllBtn" class="z-button">Export All</button>
+      </div>
+      <div id="zWisdomList" class="z-wisdom-list"></div>
+    </div>
+
+    <div
+      id="zAutopilotDebugPanel"
+      class="z-panel"
+      data-title="Z SKK Autopilot Debug"
+      style="left: 1rem; top: 1580px; width: 320px; display: none"
+    >
+      <h3>Z SKK Autopilot Debug</h3>
+      <div class="z-muted">Live state for chaos, rescue, freeze, and rotation.</div>
+      <pre id="zAutopilotDebugOutput" class="z-autopilot-debug-output">Initializing...</pre>
+    </div>
+
+    <div
+      id="zAutopilotReplayPanel"
+      class="z-panel"
+      data-title="Z Autopilot Replay"
+      style="left: 1rem; top: 1780px; width: 360px; display: none"
+    >
+      <h3>Z Autopilot Replay</h3>
+      <div class="z-muted">Explainable actions from Autopilot.</div>
+      <div class="z-section z-replay-controls">
+        <label for="zAutopilotReplayFilter" class="z-muted">Filter</label>
+        <select id="zAutopilotReplayFilter" class="z-input">
+          <option value="all">All</option>
+          <option value="layout_stabilize">Layout Stabilize</option>
+          <option value="rescue_calm">Rescue Calm</option>
+          <option value="freeze">Freeze</option>
+          <option value="rotation">Rotation</option>
+        </select>
+      </div>
+      <div class="z-section z-replay-actions">
+        <button id="zAutopilotReplayExportBtn" class="z-button">Export JSON</button>
+        <button id="zAutopilotReplayClearBtn" class="z-button">Clear</button>
+        <button id="zAutopilotReplayExplainBtn" class="z-button">Explain Path</button>
+        <button id="zAutopilotReplayCopyBtn" class="z-button">Copy Narrative</button>
+        <button id="zAutopilotReplayOpenChainBtn" class="z-button">Open Chain View</button>
+      </div>
+      <div id="zAutopilotReplayList" class="z-replay-list"></div>
+      <div id="zAutopilotReplayDetail" class="z-replay-detail">
+        Select an entry to view details.
+      </div>
+    </div>
+
+    <div
+      id="zIntelligencePanel"
+      class="z-panel"
+      data-title="Z Intelligence Engine"
+      style="left: 1rem; top: 2300px; width: 360px; display: none"
+    >
+      <h3>Z Intelligence Engine</h3>
+      <div class="z-muted">Pattern alerts, combos, categories and multipliers.</div>
+      <div class="z-section">
+        <div id="zIntelligenceAlerts" class="z-intel-alerts">Waiting for alerts.</div>
+        <div id="zIntelligenceList" class="z-intel-list"></div>
+      </div>
+      <div class="z-section">
+        <div class="z-section-title">Predicted numbers</div>
+        <div id="zIntelligencePredictions" class="z-intel-predictions">Loading...</div>
+      </div>
+      <div class="z-section z-replay-actions">
+        <button id="zIntelligenceExport" class="z-button">Export Snapshot</button>
+      </div>
+      <div class="z-section">
+        <div class="z-section-title">Webhook export</div>
+        <input id="zIntelligenceWebhook" class="z-input" placeholder="https://your-endpoint" />
+        <button id="zIntelligenceSend" class="z-button">Send Snapshot</button>
+      </div>
+    </div>
+
+    <div
+      id="zSocialPanel"
+      class="z-panel"
+      data-title="Z Social Arena"
+      style="left: 1rem; top: 2700px; width: 360px; display: none"
+    >
+      <h3>Z Social Arena</h3>
+      <div class="z-muted">Profiles, chat, tips & live streams.</div>
+      <div class="z-section" id="zSocialProfiles"></div>
+      <div class="z-section">
+        <div class="z-section-title">Chat Feed</div>
+        <div id="zSocialChat" class="z-social-chat"></div>
+        <textarea
+          id="zSocialMessage"
+          class="z-input"
+          rows="3"
+          placeholder="Share encouragement or tips..."
+        ></textarea>
+        <button id="zSocialSend" class="z-button">Send</button>
+      </div>
+      <div class="z-section">
+        <div class="z-section-title">Tip / Support</div>
+        <input id="zSocialTipAmount" class="z-input" placeholder="Amount" />
+        <input id="zSocialTipNote" class="z-input" placeholder="Private message" />
+        <button id="zSocialTip" class="z-button">Tip a player</button>
+      </div>
+      <div class="z-section">
+        <div class="z-section-title">Live Stream</div>
+        <div id="zSocialStreamStatus" class="z-social-stream">No stream active.</div>
+        <button id="zSocialStreamToggle" class="z-button">Start Stream</button>
+      </div>
+    </div>
+    <div
+      id="zMonetizationPanel"
+      class="z-panel"
+      data-title="Z Monetization & Security"
+      style="left: 1rem; top: 3100px; width: 360px; display: none"
+    >
+      <h3>Z Monetization & Security</h3>
+      <div class="z-muted">Subscriptions, referrals, and bankroll safeguards.</div>
+      <div class="z-section">
+        <div id="zSubscriptionStatus" class="z-subscription-status"></div>
+        <button id="zStartTrial" class="z-button">Start 14-day Trial</button>
+        <button id="zStartPro" class="z-button">Start Monthly Pro</button>
+        <button id="zCancelPlan" class="z-button subtle">Cancel Plan</button>
+      </div>
+      <div class="z-section">
+        <div class="z-section-title">Referral & Commission</div>
+        <input id="zReferralCode" class="z-input" placeholder="Friend code" />
+        <input id="zReferralAmount" class="z-input" placeholder="Stake amount" type="number" />
+        <button id="zReferralSubmit" class="z-button">Log Referral</button>
+        <div id="zCommissionInfo" class="z-muted">Commission: 0</div>
+      </div>
+      <div class="z-section">
+        <div class="z-section-title">Bankroll Tracker</div>
+        <div id="zBankrollStatus" class="z-muted">Capital: 0 | Profit: 0 | Loss: 0</div>
+        <button id="zResetBankroll" class="z-button subtle">Reset Tracker</button>
+      </div>
+    </div>
+
+    <div
+      id="zAutopilotSimPanel"
+      class="z-panel"
+      data-title="Z Autopilot Simulation"
+      style="left: 1rem; top: 2000px; width: 360px; display: none"
+    >
+      <h3>Z Autopilot Simulation</h3>
+      <div class="z-muted">Run safe tests without touching backend.</div>
+      <div class="z-section z-sim-actions">
+        <button id="zSimToggleBtn" class="z-button">Enable</button>
+        <button id="zSimStartBtn" class="z-button">Start</button>
+        <button id="zSimStopBtn" class="z-button">Stop</button>
+      </div>
+      <div class="z-section">
+        <label for="zSimScenarioSelect" class="z-muted">Scenario</label>
+        <select id="zSimScenarioSelect" class="z-input">
+          <option value="baseline">baseline</option>
+          <option value="rkpk_calm_rescue">rkpk_calm_rescue</option>
+          <option value="skk_governance_freeze">skk_governance_freeze</option>
+          <option value="panel_chaos_storm">panel_chaos_storm</option>
+        </select>
+      </div>
+      <div class="z-section z-sim-actions">
+        <button id="zSimChaosBtn" class="z-button">Trigger Chaos</button>
+        <button id="zSimStressBtn" class="z-button">Trigger Stress</button>
+        <button id="zSimFreezeBtn" class="z-button">Trigger Freeze</button>
+      </div>
+      <div class="z-section z-sim-actions">
+        <button id="zSimFullBtn" class="z-button">Run Full Test</button>
+        <button id="zSimResetBtn" class="z-button">Reset Simulation</button>
+      </div>
+      <div id="zSimStatus" class="z-muted">Idle.</div>
+      <pre id="zSimReadout" class="z-sim-readout">Simulation readout will appear here.</pre>
+    </div>
+
+    <div
+      id="zGovernanceReportPanel"
+      class="z-panel"
+      data-title="Z Governance Report"
+      style="left: 1rem; top: 2240px; width: 360px; display: none"
+    >
+      <h3>Z Governance Report</h3>
+      <div class="z-muted">Weekly summaries from Autopilot replay.</div>
+      <div class="z-section z-report-actions">
+        <button id="zGovReportGenerateBtn" class="z-button">Generate</button>
+        <button id="zGovReportExportJsonBtn" class="z-button">Export JSON</button>
+        <button id="zGovReportExportMdBtn" class="z-button">Export MD</button>
+      </div>
+      <div class="z-muted">Last run: <span id="zGovReportLastRun">never</span></div>
+      <pre id="zGovReportOutput" class="z-report-output">No report generated yet.</pre>
+    </div>
+
+    <div
+      id="zGovernanceReviewPanel"
+      class="z-panel"
+      data-title="Z Governance Review"
+      style="left: 1rem; top: 2440px; width: 360px; display: none"
+    >
+      <h3>Z Governance Review</h3>
+      <div class="z-muted">Companion-guided reflection.</div>
+      <div class="z-section z-report-actions">
+        <button id="zGovReviewGenerateBtn" class="z-button">Generate Review</button>
+      </div>
+      <div id="zGovReviewMeta" class="z-muted">No report available yet.</div>
+      <div class="z-section">
+        <div class="z-section-title">SKK Summary</div>
+        <div id="zGovReviewSkk" class="z-muted">Waiting for review.</div>
+      </div>
+      <div class="z-section">
+        <div class="z-section-title">RKPK Reflection</div>
+        <div id="zGovReviewRkpk" class="z-muted">Waiting for review.</div>
+      </div>
+    </div>
+
+    <div
+      id="zInsightLabPanel"
+      class="z-panel"
+      data-title="Z Insight Lab"
+      style="left: 1rem; top: 2660px; width: 360px; display: none"
+    >
+      <h3>Z Insight Lab</h3>
+      <div class="z-muted">Super Ghost intelligence + insight stream.</div>
+      <div class="z-section z-insight-actions">
+        <button id="zLiveAiStatusBtn" class="z-button">Run Live AI Status</button>
+        <button id="zLiveAiStatusExportBtn" class="z-button">Export JSON</button>
+      </div>
+      <pre id="zLiveAiStatusOutput" class="z-report-output">No status run yet.</pre>
+      <div class="z-section z-insight-actions">
+        <button id="zInsightRefreshBtn" class="z-button">Refresh</button>
+        <button id="zInsightExportBtn" class="z-button">Export JSON</button>
+      </div>
+      <div id="zInsightSummary" class="z-section z-insight-summary">Insights will appear here.</div>
+      <ul id="zInsightList" class="z-list z-insight-list"></ul>
+      <div class="z-section">
+        <div class="z-section-title">Weekly Reflection</div>
+        <div id="zInsightReflection" class="z-muted">
+          Reflection will appear once enough data is recorded.
+        </div>
+      </div>
+      <div id="zEthicsWatcher" class="z-muted z-insight-ethics">
+        Ethics watch is waiting for drift.
+      </div>
+    </div>
+
+    <div
+      id="zScreenRecorderPanel"
+      class="z-panel"
+      data-title="Z Screen Recorder"
+      style="left: 1rem; top: 2520px; width: 360px; display: none"
+    >
+      <h3>Z Screen Recorder</h3>
+      <div class="z-muted">Local-only capture with consent gates.</div>
+      <div class="z-section z-recorder-controls">
+        <label class="z-toggle-row">
+          <input id="zRecorderConsent" type="checkbox" />
+          I consent to recording
+        </label>
+        <label class="z-toggle-row">
+          <input id="zRecorderIncludeSystem" type="checkbox" />
+          Include system audio
+        </label>
+        <label class="z-toggle-row">
+          <input id="zRecorderIncludeMic" type="checkbox" />
+          Include microphone
+        </label>
+      </div>
+      <div class="z-section z-recorder-security">
+        <label class="z-toggle-row">
+          <input id="zRecorderRequireUnlock" type="checkbox" />
+          Require unlock
+        </label>
+        <input
+          id="zRecorderUnlockInput"
+          class="z-input"
+          type="password"
+          placeholder="Passphrase (local only)"
+        />
+      </div>
+      <div class="z-section z-recorder-controls">
+        <label for="zRecorderAutoStop" class="z-muted">Auto-stop</label>
+        <select id="zRecorderAutoStop" class="z-input">
+          <option value="0">Off</option>
+          <option value="10">10 min</option>
+          <option value="30">30 min</option>
+          <option value="60">60 min</option>
+        </select>
+      </div>
+      <div class="z-section z-recorder-actions">
+        <button id="zRecorderStartBtn" class="z-button">Start Recording</button>
+        <button id="zRecorderStopBtn" class="z-button">Stop</button>
+        <button id="zRecorderSnapshotBtn" class="z-button">Snapshot</button>
+        <button id="zRecorderMuteMicBtn" class="z-button">Mute Mic</button>
+      </div>
+      <div class="z-muted">Status: <span id="zRecorderStatus">Idle</span></div>
+      <div class="z-muted">Timer: <span id="zRecorderTimer">00:00</span></div>
+    </div>
+
+    <div
+      id="zCodexPanel"
+      class="z-panel"
+      data-title="Z Codex"
+      style="left: 1rem; top: 700px; width: 320px"
+    >
+      <h3>Z Codex</h3>
+      <div class="z-section">
+        <div class="z-section-title">Core Guides</div>
+        <ul class="z-list">
+          <li><a href="../docs/codex/Z_AUTO_CODEX.md" target="_blank">Z-AUTO CODEX</a></li>
+          <li>
+            <a href="../docs/codex/Z_CREATOR_PROTOCOL.md" target="_blank">Z Creator Protocol</a>
+          </li>
+          <li><a href="../docs/codex/Z_THINKING_RULES.md" target="_blank">Z-THINKING RULES</a></li>
+          <li>
+            <a href="../docs/codex/Z_MAINTENANCE_RITUAL.md" target="_blank">Z-MAINTENANCE RITUAL</a>
+          </li>
+        </ul>
+      </div>
+      <div class="z-section">
+        <span style="color: var(--z-accent); font-size: 0.9em"
+          >Use these when things repeat or feel noisy.</span
+        >
+      </div>
+      <div class="z-section">
+        <button id="openCodexBundleBtn" class="z-button" title="Open all Codex docs">
+          Open All Codex Docs
+        </button>
+      </div>
+    </div>
+
+    <div
+      id="zCreatorProtocolPanel"
+      class="z-panel"
+      data-title="Z Creator Protocol"
+      style="left: 1rem; top: 980px; width: 320px; display: none"
+    >
+      <h3>Z Creator Protocol</h3>
+      <div class="z-section">
+        <div class="z-muted" style="margin-bottom: 0.5rem">
+          The Creator-Architect mindset for Z-Sanctuary.
+        </div>
+        <a href="../docs/codex/Z_CREATOR_PROTOCOL.md" target="_blank">Open Creator Protocol</a>
+      </div>
+    </div>
+
+    <div
+      id="zGovTimelinePanel"
+      class="z-panel"
+      data-title="Z Governance Timeline"
+      style="left: 1rem; top: 1180px; width: 360px; display: none"
+    >
+      <h3>Z Governance Timeline</h3>
+      <ul id="zGovTimelineList" class="z-list"></ul>
+    </div>
+
+    <div
+      id="zCodexSuggestionsPanel"
+      class="z-panel"
+      data-title="Z Codex Suggestions"
+      style="left: 1rem; top: 1380px; width: 360px"
+    >
+      <h3>Z Codex Suggestions</h3>
+      <div class="z-muted" style="margin-bottom: 0.4rem">
+        Last run: <span id="zCodexLastRun">never</span>
+      </div>
+      <ul id="zCodexSuggestionsList" class="z-list"></ul>
+      <div class="z-section" style="margin-top: 0.5rem">
+        <a href="../docs/codex/Z_AUTO_CODEX.md" target="_blank">Open Z-AUTO CODEX</a>
+      </div>
+    </div>
+
+    <div
+      id="zPriorityPanel"
+      class="z-panel"
+      data-title="Z Priority Board"
+      style="left: 1rem; top: 1580px; width: 360px"
+    >
+      <h3>Z Priority Board</h3>
+      <div class="z-section">
+        <div class="z-kv"><span>Open</span><span id="zPriorityOpenCount">0</span></div>
+        <div class="z-kv"><span>P1 Blockers</span><span id="zPriorityP1Count">0</span></div>
+        <div class="z-kv"><span>Audit Total</span><span id="zPriorityAuditTotal">0</span></div>
+        <div class="z-kv"><span>Audit Open</span><span id="zPriorityAuditOpen">0</span></div>
+        <div class="z-kv"><span>Audit P1</span><span id="zPriorityAuditP1">0</span></div>
+        <div class="z-muted" style="font-size: 0.85rem">
+          Queue updated: <span id="zPriorityUpdated">--</span>
+        </div>
+        <div class="z-muted" style="font-size: 0.85rem">
+          Audit updated: <span id="zPriorityAuditUpdated">--</span>
+        </div>
+      </div>
+      <ul id="zPriorityList" class="z-list"></ul>
+      <div class="z-section">
+        <a href="../data/Z_priority_queue.json" target="_blank">Open Priority Queue</a>
+      </div>
+    </div>
+
+    <div
+      id="zModuleRegistryPanel"
+      class="z-panel"
+      data-title="Z Module Registry"
+      style="left: 1rem; top: 1780px; width: 360px"
+    >
+      <h3>Z Module Registry</h3>
+      <div class="z-section">
+        <div class="z-kv"><span>Total</span><span id="zModuleRegistryCount">0</span></div>
+        <div class="z-kv"><span>AI Agents</span><span id="zModuleRegistryAgentCount">0</span></div>
+        <div class="z-kv"><span>Online</span><span id="zModuleRegistryOnlineCount">0</span></div>
+        <div class="z-kv"><span>Planned</span><span id="zModuleRegistryPlannedCount">0</span></div>
+        <div class="z-kv"><span>Coverage</span><span id="zModuleRegistryCoverage">0%</span></div>
+        <div class="z-kv"><span>Done</span><span id="zModuleRegistryDoneCount">0</span></div>
+        <div class="z-muted" style="font-size: 0.85rem">
+          Updated: <span id="zModuleRegistryUpdated">--</span>
+        </div>
+        <div class="z-muted" style="font-size: 0.85rem">
+          Audit: <span id="zModuleRegistryAuditUpdated">--</span>
+        </div>
+      </div>
+      <div class="z-section">
+        <div class="z-filter-row" id="zModuleRegistryFilters">
+          <button type="button" class="z-filter-chip z-filter-active" data-filter="all">All</button>
+          <button type="button" class="z-filter-chip" data-filter="core">Core</button>
+          <button type="button" class="z-filter-chip" data-filter="governance">Governance</button>
+          <button type="button" class="z-filter-chip" data-filter="ai">AI</button>
+        </div>
+      </div>
+      <div class="z-section">
+        <button id="zModuleRegistryRefresh" class="z-button">Refresh</button>
+        <button id="zModuleRegistrySync" class="z-button">Sync from Docs</button>
+      </div>
+      <div id="zModuleRegistryList" class="z-module-list"></div>
+    </div>
+
+    <div
+      id="zTaskListPanel"
+      class="z-panel"
+      data-title="Z Task List"
+      style="left: 1rem; top: 1880px; width: 360px"
+    >
+      <h3>Z Task List</h3>
+      <div class="z-section z-muted">
+        Links to active, pending, and planned tasks across all domains.
+      </div>
+      <div class="z-section">
+        <div class="z-kv"><span>Active</span><span id="zTaskActiveCount">0</span></div>
+        <div class="z-kv"><span>Pending</span><span id="zTaskPendingCount">0</span></div>
+        <div class="z-kv"><span>Planned</span><span id="zTaskPlannedCount">0</span></div>
+      </div>
+      <div class="z-section">
+        <ul id="zTaskListItems" class="z-list">
+          <li>Connect to Z-Sanctuary task registry.</li>
+          <li>Show domain status and verification gates.</li>
+          <li>Expose links to SSWS, Safe Pack, and Vault checks.</li>
+        </ul>
+      </div>
+    </div>
+
+    <div
+      id="zFormulaRegistryPanel"
+      class="z-panel"
+      data-title="Z Formula Registry (Private)"
+      style="left: 1rem; top: 1980px; width: 360px"
+    >
+      <h3>Z Formula Registry (Private)</h3>
+      <div class="z-muted" style="margin-bottom: 0.4rem">
+        Restricted: AMK-Goku + Z-Family + Z-AI only.
+      </div>
+      <div id="zFormulaRegistryStatus" class="z-muted" style="margin-bottom: 0.4rem">
+        Status: --
+      </div>
+      <div id="zFormulaRuntimeHeartbeat" class="z-muted" style="margin-bottom: 0.4rem">
+        Runtime: loading...
+      </div>
+      <div class="z-section">
+        <button id="zFormulaRegistryRefresh" class="z-button">Refresh</button>
+        <button id="zFormulaRegistryOpen" class="z-button z-button-subtle">Open Registry</button>
+      </div>
+      <div id="zFormulaRegistryList" class="z-list"></div>
+    </div>
+
+    <div
+      id="zFolderManagerPanel"
+      class="z-panel"
+      data-title="Z Folder Manager (Read-Only)"
+      style="left: 1rem; top: 2140px; width: 360px; display: none"
+    >
+      <h3>Z Folder Manager (Read-Only)</h3>
+      <div id="zFolderManagerMeta" class="z-muted" style="margin-bottom: 0.4rem">Updated: --</div>
+      <div id="zFolderManagerBody" class="z-section">
+        <div class="z-muted">Loading...</div>
+      </div>
+    </div>
+
+    <div
+      id="zChainViewPanel"
+      class="z-panel"
+      data-title="Z Chain View"
+      style="left: 1rem; top: 2060px; width: 360px; display: none"
+    >
+      <h3>Z Chain View</h3>
+      <div class="z-muted">Visualize dependencies and explain paths.</div>
+      <div class="z-section z-chain-actions">
+        <button id="zChainToggleBtn" class="z-button">Enable Chain View</button>
+        <button id="zChainExplainPathBtn" class="z-button">Explain Path</button>
+        <button id="zChainSuggestPathBtn" class="z-button">Suggest Calm Path</button>
+        <button id="zChainTimelapseBtn" class="z-button">Play Timelapse</button>
+        <button id="zChainClearSelectionBtn" class="z-button">Clear Selection</button>
+      </div>
+      <div class="z-muted">Selected: <span id="zChainSelectedCount">0</span></div>
+      <div id="zChainSuggestion" class="z-muted"></div>
+      <div id="zChainStatus" class="z-muted">Status: idle.</div>
+      <pre id="zChainPathSummary" class="z-chain-summary">No path selected.</pre>
+    </div>
+
+    <div
+      id="zCompanion3dPanel"
+      class="z-panel"
+      data-title="Z SKK + RKPK 3D"
+      style="left: 1rem; top: 980px; width: 360px"
+    >
+      <h3>Z SKK + RKPK 3D</h3>
+      <div id="zCompanionMeta" class="z-companion-meta">
+        <div id="zCompanionMood" class="z-muted">Mood: loading</div>
+        <div id="zCompanionCompletion" class="z-muted">Completion: 0%</div>
+      </div>
+      <div class="z-progress">
+        <div id="zCompanionProgress" class="z-progress-fill" style="width: 0%"></div>
+      </div>
+      <canvas id="zCompanion3dCanvas" class="z-companion-canvas"></canvas>
+      <div class="z-section" style="margin-top: 0.6rem">
+        <div class="z-muted" style="font-size: 0.85rem">
+          Dual-pass governance orbiting a shared SEPC core.
+        </div>
+      </div>
+      <div class="z-section">
+        <div class="z-section-title">SKK</div>
+        <div id="zCompanionSkk" class="z-muted">Loading...</div>
+      </div>
+      <div class="z-section">
+        <div class="z-section-title">RKPK</div>
+        <div id="zCompanionRkpk" class="z-muted">Loading...</div>
+      </div>
+      <div class="z-section">
+        <div class="z-section-title">Guidance</div>
+        <div class="z-muted" style="font-size: 0.85rem">RKPK: Feeling stuck? Slow the pace.</div>
+        <div class="z-muted" style="font-size: 0.85rem">
+          SKK: System map and governance references.
+        </div>
+        <a href="../INDEX.md" target="_blank">Open Documentation</a>
+      </div>
+      <div class="z-section z-companion-actions">
+        <button id="zCompanionMuteBtn" class="z-button">Voice: Off</button>
+      </div>
+    </div>
+
+    <div
+      id="zHarishaStatusPanel"
+      class="z-panel"
+      data-title="Z Harisha Status & Zones"
+      style="left: 1rem; top: 2480px; width: 360px"
+    >
+      <h3>Z Harisha + Zones</h3>
+      <div class="z-section">
+        <div class="z-kv">
+          <span>Harisha score</span>
+          <span id="zHarishaScoreValue">--</span>
+        </div>
+        <div class="z-muted" id="zHarishaMood">State: loading…</div>
+      </div>
+      <div class="z-section">
+        <div class="z-kv">
+          <span>Zone</span>
+          <span id="zHarishaZoneValue">unknown</span>
+        </div>
+        <div class="z-muted" id="zHarishaZoneReason">Reason: not set</div>
+      </div>
+      <div class="z-section">
+        <div class="z-section-title">Recent reflection</div>
+        <p id="zHarishaReflectionSummary" class="z-muted">Waiting for Super Ghost summary…</p>
+      </div>
+      <div class="z-section">
+        <button
+          id="zReflectionQuickRun"
+          class="z-button"
+          data-harisha-action="Trigger quick reflection"
+        >
+          Run reflection now
+        </button>
+      </div>
+    </div>
+
+    <button
+      id="summonCompanionFab"
+      class="z-summon-fab"
+      title="Summon SKK + RKPK"
+      aria-label="Summon SKK + RKPK"
+    >
+      SKK+RKPK
+    </button>
+
+    <script src="./z_module_registry.js"></script>
+    <script src="./z_module_registry_boot.js"></script>
+    <script src="./ai_tower/z_ai_tower_core.js"></script>
+    <script src="./z_module_registry_autoscan.js"></script>
+    <script src="./z_system_metrics.js"></script>
+    <script src="./z_chain_registry.js"></script>
+    <script src="./z_chain_history.js"></script>
+    <script src="./z_wisdom_ring.js"></script>
+    <script src="./z_chain_view.js"></script>
+    <script src="./z_awareness.js"></script>
+    <script src="/interface/z_accessibility.js"></script>
+    <script src="/interface/z_auto_compass.js"></script>
+    <script src="./z_security_gate.js"></script>
+    <script src="./z_privacy_boundary.js"></script>
+    <script src="./z_status_console.js"></script>
+    <script src="./z_emotion_filter.js"></script>
+    <script src="./z_energy_response.js"></script>
+    <script src="./z_chronicle.js"></script>
+    <script src="./z_chronicle_hud.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="./correlation.js"></script>
+    <script src="./trend_predict.js"></script>
+    <script src="./exp_smooth_predict.js"></script>
+    <script src="./z_dashboard.js"></script>
+    <script src="./z_dev_mode.js"></script>
+    <script src="./z_governance_hud.js"></script>
+    <script src="./z_codex_suggestions.js"></script>
+    <script src="./z_priority_board.js"></script>
+    <script src="./z_module_registry_panel.js"></script>
+    <script src="./z_formula_registry_panel.js"></script>
+    <script src="./z_heartbeat_engine.js"></script>
+    <script src="./z_formula_runtime_heartbeat.js"></script>
+    <script src="./z_folder_manager_panel.js"></script>
+    <script src="./z_wisdom_ring_panel.js"></script>
+    <script src="./z_companion_3d.js"></script>
+    <script src="./z_autopilot_controls.js"></script>
+    <script src="./co_autopilot_preview.js"></script>
+    <script src="./lens_status.js"></script>
+    <script src="./quiet_mode_chip.js"></script>
+    <script src="./trust_pack_chip.js"></script>
+    <script src="./autopilot/z_autopilot_replay.js"></script>
+    <script src="./autopilot/z_autopilot_replay_ui.js"></script>
+    <script src="./insight_feed.js"></script>
+    <script src="./z_autocomplete.js"></script>
+    <script src="/miniai/base_bot.js"></script>
+    <script src="/miniai/scribe_bot.js"></script>
+    <script src="/miniai/protector_bot.js"></script>
+    <script src="/miniai/designer_bot.js"></script>
+    <script src="/miniai/navigator_bot.js"></script>
+    <script src="/miniai/folder_manager_bot.js"></script>
+    <script src="./z_miniai_boot.js"></script>
+    <script src="./z_ssws_banner.js"></script>
+    <script src="./z_autorun_monitor.js"></script>
+    <script src="./z_pending_audit_monitor.js"></script>
+    <script src="./z_zuno_trend_panel.js"></script>
+    <script src="./z_storage_hygiene_panel.js"></script>
+    <script src="./z_storage_hygiene_badge.js"></script>
+    <script src="./z_anydevices_panel.js"></script>
+    <script src="./z_anydevices_badge.js"></script>
+    <script src="./z_cycle_indicator_panel.js"></script>
+    <script src="./z_error_budget_panel.js"></script>
+    <script src="./z_cycle_indicator_badge.js"></script>
+    <script src="./z_security_sentinel_badge.js"></script>
+    <script src="./z_slo_badge.js"></script>
+    <script src="./z_extension_guard_badge.js"></script>
+    <script src="./z_error_budget_badge.js"></script>
+    <script src="./z_low_light_toggle.js"></script>
+    <script src="./z_hygiene_miniai_hook.js"></script>
+    <script src="./z_trust_certificate_panel.js"></script>
+    <script src="./z_overlay_adjuster.js"></script>
+    <script src="./z_ui_extras.js"></script>
+    <script src="./z_layout_engine.js"></script>
+    <script src="./z_registry_badge.js"></script>
+    <script type="module" src="./z_sanctuary_boot.js"></script>
+    <script src="./vault_status.js"></script>
+    <script src="./autopilot/z_autopilot_simulator.js"></script>
+    <script src="./autopilot/z_governance_reports.js"></script>
+    <script src="./autopilot/z_governance_review.js"></script>
+    <script src="./ai_tower/z_super_ghost.js"></script>
+    <script src="./super_ghost_panel.js"></script>
+    <script src="./z_ai_status_check.js"></script>
+    <script src="./z_ai_status_export.js"></script>
+    <script src="./media/z_screen_recorder.js"></script>
+    <script src="./roulette_history_loader.js"></script>
+    <script src="./monetization_layer.js"></script>
+    <script src="./monetization_ui.js"></script>
+    <script src="./roulette_intelligence.js"></script>
+    <script src="./intelligence_panel.js"></script>
+    <script src="./social_layer.js"></script>
+    <script src="./social_ui.js"></script>
+    <script src="./harisha.js"></script>
+    <script src="./harisha_guidance.js"></script>
+    <script src="./harisha_zone_panel.js"></script>
+    <script src="./harisha_tooltips.js" type="module"></script>
+    <script src="./harisha_integration.js" type="module"></script>
+    <script src="./super_ghost_reflection_ui.js"></script>
+    <script src="../z_colour/z_colour_binding.js" type="module"></script>
+  </body>
+</html>

@@ -1,0 +1,32 @@
+{
+  "name": "z-sanctuary-web",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "test": "node --test",
+    "test:build": "node --test --test-name-pattern \"next build smoke\"",
+    "test:stress": "node --test test/load_stress.test.mjs",
+    "test:release": "npm run lint && npm test && npm run build",
+    "lint": "next lint",
+    "lint:eslint": "node ../../node_modules/eslint/bin/eslint.js src --ext .js,.jsx"
+  },
+  "dependencies": {
+    "z-sanctuary-mirrorsoul-slice": "file:../../packages/z-sanctuary-mirrorsoul-slice",
+    "z-sanctuary-zuno-transformation-slice": "file:../../packages/z-sanctuary-zuno-transformation-slice",
+    "z-sanctuary-core": "file:../../packages/z-sanctuary-core",
+    "@react-three/drei": "^9.105.3",
+    "@react-three/fiber": "^8.17.10",
+    "next": "14.2.35",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "three": "^0.167.1"
+  },
+  "devDependencies": {
+    "eslint": "^8.57.1",
+    "eslint-config-next": "14.2.35"
+  }
+}

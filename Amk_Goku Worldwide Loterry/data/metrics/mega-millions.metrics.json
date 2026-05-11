@@ -1,0 +1,24 @@
+{
+  "run_id": "20260130T224727Z",
+  "lottery_code": "mega-millions",
+  "history_hash": "sha256:5c00a510e38b3b78bc7415f7fd1d1f55c798dc6d6bae4e4fcd475b962ebed946",
+  "draws_count": 2312,
+  "number_space": {
+    "main": {
+      "min": 1,
+      "max": 70,
+      "count": 5
+    },
+    "lucky": {
+      "min": 1,
+      "max": 25,
+      "count": 1
+    }
+  },
+  "entropy": {
+    "frequency_entropy": 6.023866,
+    "gap_entropy": 5.056915,
+    "pair_entropy": 11.13634
+  },
+  "notes": []
+}

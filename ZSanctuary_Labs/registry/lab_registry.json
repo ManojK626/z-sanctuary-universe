@@ -1,0 +1,35 @@
+{
+  "generated_at": "2026-02-18T17:19:13.190Z",
+  "status": "ready",
+  "lab_root": "C:/Cursor Projects Organiser/Z_Sanctuary_Universe/ZSanctuary_Labs",
+  "total_modules": 2,
+  "by_track": {
+    "modules_draft": 2,
+    "module_prototypes": 0
+  },
+  "modules": [
+    {
+      "module_id": "z_logical_brains_learning_pathway",
+      "track": "modules_draft",
+      "signal_source": "data/reports/z_logical_brains_report.json",
+      "hub_capsule": "data/z_logical_brains_hub_capsule.json",
+      "go_no_go": "NON_CLINICAL_PLANNING_ONLY",
+      "public_release": "NO_GO"
+    },
+    {
+      "module_id": "z_numen_cognitive_geometry",
+      "track": "modules_draft",
+      "signal_source": "data/reports/z_numen_signal_report.json",
+      "hub_capsule": null,
+      "go_no_go": "PERCEPTION_LITERACY_PLANNING_ONLY",
+      "public_release": "NO_GO",
+      "companion_mapping": {
+        "phase": "Z-NUMEN-LB-1",
+        "map_path": "data/z_numen_logical_brains_companion_map.json",
+        "mode": "reference_only_companion_mapping",
+        "runtime_coupling": false
+      }
+    }
+  ],
+  "notes": "Lab-only simulation registry. No Sanctuary runtime linkage. Hub capsule is reference-only for monitoring."
+}

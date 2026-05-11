@@ -1,0 +1,19 @@
+{
+  "name": "Spain La Primitiva",
+  "code": "la-primitiva",
+  "region": "EU",
+  "main": {
+    "min": 1,
+    "max": 49,
+    "count": 6
+  },
+  "lucky": {
+    "min": 0,
+    "max": 9,
+    "count": 1
+  },
+  "format": "6+1",
+  "draw_schedule": ["Thursday", "Saturday"],
+  "notes": "Six main numbers plus a 0-9 Reintegro digit (treated here as lucky).",
+  "history": "data/histories/la-primitiva.csv"
+}

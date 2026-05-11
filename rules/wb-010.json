@@ -1,0 +1,56 @@
+{
+  "rule_id": "WB-010",
+  "rule_name": "Auto-Dim and Slow Effects",
+  "trigger": {
+    "type": "event",
+    "source": "wellbeing-core",
+    "event_type": "FOCUS_STREAK_UPDATED",
+    "payload_schema_ref": "schemas/z_context_snapshot.schema.json"
+  },
+  "context_requirements": {
+    "z_state": true,
+    "lpbs_state": true,
+    "ggaesp_360": true,
+    "wellbeing_state": true,
+    "session_meta": true
+  },
+  "conditions": [
+    { "path": "/wellbeing_state/fatigue_index", "op": "gte", "value": 0.72 },
+    { "path": "/session_meta/duration_seconds", "op": "gte", "value": 2700 }
+  ],
+  "risk_class": "medium",
+  "consent": {
+    "level": "auto",
+    "timeout_policy": "wait",
+    "timeout_seconds": 0
+  },
+  "action_set": {
+    "allowed_actions": [
+      { "type": "dim_effects", "params": { "intensity": 0.6 } },
+      { "type": "reduce_audio", "params": { "level": 0.7 } },
+      {
+        "type": "ui_banner",
+        "params": { "message": "Focus streak is long. Consider a short break." }
+      }
+    ],
+    "max_repetitions": 1,
+    "cooldown_seconds": 1800,
+    "rollback_allowed": true
+  },
+  "governance": {
+    "ai_allowed": ["observe", "suggest", "explain"],
+    "ai_forbidden": ["execute", "authorize", "modify_rules", "bypass_consent"],
+    "human_override": "always_true"
+  },
+  "audit_seal": {
+    "ethical_intent": "Reduce overstimulation while keeping actions reversible.",
+    "creator_signature": "z-sanctuary-core",
+    "creation_time": "2026-01-16T00:00:00Z",
+    "version": "1.0.0"
+  },
+  "lifecycle": {
+    "status": "active",
+    "activation_date": "2026-01-16T00:00:00Z",
+    "review_interval_days": 45
+  }
+}

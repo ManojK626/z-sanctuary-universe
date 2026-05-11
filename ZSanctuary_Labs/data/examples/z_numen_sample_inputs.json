@@ -1,0 +1,23 @@
+{
+  "schema": "z.numen.sample.inputs.v1",
+  "samples": [
+    {
+      "id": "sample_quiet",
+      "label": "Low repetition text",
+      "text": "One two three four five.",
+      "flags": {}
+    },
+    {
+      "id": "sample_triplet_333",
+      "label": "Structure repeat triplet",
+      "text": "Notice 333 and 333 again in the same line 333.",
+      "flags": {}
+    },
+    {
+      "id": "sample_mixed_triplets",
+      "label": "Multiple triplets",
+      "text": "666 999 333 patterns for literacy exercise only.",
+      "flags": {}
+    }
+  ]
+}

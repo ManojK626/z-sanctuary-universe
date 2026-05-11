@@ -1,0 +1,58 @@
+{
+  "schema": "z.logical_brains.capability_registry.v1",
+  "module_name": "Z-Logical Brains Learning Pathway Engine",
+  "mode": "non_clinical_learning_visualization",
+  "source_blueprint": "Z-Sanctuary Logical Brains PDF",
+  "learning_stages": [
+    "infancy",
+    "childhood",
+    "adolescence",
+    "adulthood",
+    "senior_reflection"
+  ],
+  "knowledge_categories": [
+    "physical",
+    "cognitive",
+    "emotional",
+    "social",
+    "vocational",
+    "spiritual",
+    "ecological"
+  ],
+  "capabilities": [
+    "learning_pathway_registry",
+    "3d_visual_pathway_map",
+    "adaptive_learning_preferences",
+    "narrative_progression_map",
+    "self_reflection_prompts",
+    "local_progress_planning",
+    "guardian_copy_layer"
+  ],
+  "future_gated_capabilities": [
+    "secure_vault_runtime",
+    "personal_ai_memory",
+    "cloud_sync",
+    "teacher_dashboard",
+    "parent_dashboard",
+    "voice_input",
+    "live_ai_provider",
+    "multiplayer_classroom"
+  ],
+  "forbidden_claims": [
+    "medical diagnosis",
+    "therapy",
+    "brain treatment",
+    "guaranteed cognitive improvement",
+    "senility treatment",
+    "future prediction certainty"
+  ],
+  "related_docs": [
+    "docs/Z_LOGICAL_BRAINS_LEARNING_PATHWAY_ENGINE.md",
+    "docs/Z_LOGICAL_BRAINS_SAFETY_AND_PRIVACY_POLICY.md",
+    "docs/PHASE_Z_LOGICAL_BRAINS_1_GREEN_RECEIPT.md"
+  ],
+  "related_reports": [
+    "data/reports/z_logical_brains_report.json",
+    "data/reports/z_logical_brains_report.md"
+  ]
+}

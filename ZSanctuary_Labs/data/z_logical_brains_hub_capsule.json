@@ -1,0 +1,15 @@
+{
+  "schema": "z.sanctuary.hub.capsule.v1",
+  "project_id": "zsanctuary_labs",
+  "module": "z_logical_brains_learning_pathway",
+  "workspace_path": "C:\\Cursor Projects Organiser\\Z_Sanctuary_Universe\\ZSanctuary_Labs",
+  "signal_source": "data/reports/z_logical_brains_report.json",
+  "go_no_go": "NON_CLINICAL_PLANNING_ONLY",
+  "public_release": "NO_GO",
+  "monitoring_notes": [
+    "Logical Brains is non-clinical learning visualization only.",
+    "Runtime AI/backend/provider/deploy lanes stay closed in Labs.",
+    "BLUE requires AMK gate.",
+    "RED blocks movement."
+  ]
+}

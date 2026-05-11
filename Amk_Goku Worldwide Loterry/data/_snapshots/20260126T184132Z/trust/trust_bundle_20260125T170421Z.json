@@ -1,0 +1,539 @@
+{
+  "trust_bundle_version": "1.0",
+  "run": {
+    "run_id": "20260125T170421Z",
+    "generated_at": "2026-01-25T17:04:23.894914+00:00",
+    "engine_version": "0.1.0"
+  },
+  "inputs": {
+    "histories": [
+      {
+        "path": "C:\\ZSanctuary_Universe\\Amk_Goku Worldwide Loterry\\data\\histories\\eurojackpot.csv",
+        "hash": "sha256:e7907a127334122365fe77d8cb9e83c472879cd75214b7998aff66cedd69ab13",
+        "size": 358
+      },
+      {
+        "path": "C:\\ZSanctuary_Universe\\Amk_Goku Worldwide Loterry\\data\\histories\\euromillions.csv",
+        "hash": "sha256:6d4d3b5dcadd6260c7107572b6d07e78516e579fa8329890a07add45d71b3c40",
+        "size": 419
+      },
+      {
+        "path": "C:\\ZSanctuary_Universe\\Amk_Goku Worldwide Loterry\\data\\histories\\global-sevens.csv",
+        "hash": "sha256:311f088f7a882e0fcc22793cf6a1f947330448ff364b83acbd88a87f46591e24",
+        "size": 358
+      },
+      {
+        "path": "C:\\ZSanctuary_Universe\\Amk_Goku Worldwide Loterry\\data\\histories\\mega-millions.csv",
+        "hash": "sha256:5180d3e07125bbf63fd4d500ecd96b1ca5ed5e346082ea5b58c31dc44de8c16e",
+        "size": 75948
+      },
+      {
+        "path": "C:\\ZSanctuary_Universe\\Amk_Goku Worldwide Loterry\\data\\histories\\powerball.csv",
+        "hash": "sha256:33d4ffe6e29e042c7ba46eef08c274d63ab00a403837c7f1a0f7b9b4037e10d1",
+        "size": 58590
+      }
+    ],
+    "formats": [
+      {
+        "path": "C:\\ZSanctuary_Universe\\Amk_Goku Worldwide Loterry\\core-engine\\config\\global-formats\\eurojackpot.json",
+        "hash": "sha256:d506859fc5c0fbc7a0cc31dc8ee045d4765d28c6ba86477e49facf94981e9907",
+        "content": {
+          "name": "EuroJackpot",
+          "code": "eurojackpot",
+          "region": "EU",
+          "main": {
+            "min": 1,
+            "max": 50,
+            "count": 5
+          },
+          "lucky": {
+            "min": 1,
+            "max": 12,
+            "count": 2
+          },
+          "format": "5+2",
+          "draw_schedule": ["Friday"],
+          "notes": "European jackpot with two additional euro numbers.",
+          "history": "data/histories/eurojackpot.csv"
+        }
+      },
+      {
+        "path": "C:\\ZSanctuary_Universe\\Amk_Goku Worldwide Loterry\\core-engine\\config\\global-formats\\euromillions.json",
+        "hash": "sha256:a73bc81b50973b95a360ba14b005efe2c8f6267dbac6937591f4e3a80e9232cf",
+        "content": {
+          "name": "EuroMillions",
+          "code": "euromillions",
+          "region": "EU",
+          "main": {
+            "min": 1,
+            "max": 50,
+            "count": 5,
+            "pool": 50
+          },
+          "lucky": {
+            "min": 1,
+            "max": 12,
+            "count": 2
+          },
+          "format": "5+2",
+          "draw_schedule": ["Tuesday", "Friday"],
+          "notes": "Use this as the baseline format when ingesting history.",
+          "history": "data/histories/euromillions.csv"
+        }
+      },
+      {
+        "path": "C:\\ZSanctuary_Universe\\Amk_Goku Worldwide Loterry\\core-engine\\config\\global-formats\\global-sevens.json",
+        "hash": "sha256:c592f8794353eb5082f8a9ee2376843b48a9d9a0ac1484fb27e5a63275cba6ce",
+        "content": {
+          "name": "Global Sevens",
+          "code": "global-sevens",
+          "region": "GLOBAL",
+          "main": {
+            "min": 1,
+            "max": 49,
+            "count": 5
+          },
+          "lucky": {
+            "min": 1,
+            "max": 12,
+            "count": 2
+          },
+          "format": "5+2",
+          "draw_schedule": ["Wednesday", "Sunday"],
+          "notes": "Custom prototype format for testing multiple draw types simultaneously.",
+          "history": "data/histories/global-sevens.csv"
+        }
+      },
+      {
+        "path": "C:\\ZSanctuary_Universe\\Amk_Goku Worldwide Loterry\\core-engine\\config\\global-formats\\la-primitiva.json",
+        "hash": "sha256:a5c95016311820e5222131c85a2f09b788c1a92aabef16dea2963804fe56d5aa",
+        "content": {
+          "name": "Spain La Primitiva",
+          "code": "la-primitiva",
+          "region": "EU",
+          "main": {
+            "min": 1,
+            "max": 49,
+            "count": 6
+          },
+          "lucky": {
+            "min": 0,
+            "max": 9,
+            "count": 1
+          },
+          "format": "6+1",
+          "draw_schedule": ["Thursday", "Saturday"],
+          "notes": "Six main numbers plus a 0-9 Reintegro digit (treated here as lucky).",
+          "history": "data/histories/la-primitiva.csv"
+        }
+      },
+      {
+        "path": "C:\\ZSanctuary_Universe\\Amk_Goku Worldwide Loterry\\core-engine\\config\\global-formats\\mauritius-loto-vert.json",
+        "hash": "sha256:53f52f2dc0c3c36d91cbab1a22bc37aa12c901674e429310d24ceee0e04473a6",
+        "content": {
+          "name": "Mauritius Loto Vert",
+          "code": "mauritius-loto-vert",
+          "region": "AFRICA",
+          "main": {
+            "min": 1,
+            "max": 28,
+            "count": 5
+          },
+          "lucky": {
+            "min": 1,
+            "max": 28,
+            "count": 2
+          },
+          "format": "5+2 (extracted from the 7-number draw)",
+          "draw_schedule": ["Friday", "Tuesday"],
+          "notes": "Loto Vert winners pick seven numbers (1-28). This configuration extracts the first five as main and the last two as lucky numbers to align with the Z-Sanctuary core engine schema.",
+          "history": "data/histories/mauritius-loto-vert.csv"
+        }
+      },
+      {
+        "path": "C:\\ZSanctuary_Universe\\Amk_Goku Worldwide Loterry\\core-engine\\config\\global-formats\\mega-millions.json",
+        "hash": "sha256:9e076aedac1bc0cc1e7160991ec6483186e06a5ed1152fa8b42b43efb6fb77c3",
+        "content": {
+          "name": "Mega Millions",
+          "code": "mega-millions",
+          "region": "US",
+          "main": {
+            "min": 1,
+            "max": 70,
+            "count": 5
+          },
+          "lucky": {
+            "min": 1,
+            "max": 25,
+            "count": 1
+          },
+          "format": "5+1",
+          "draw_schedule": ["Tuesday", "Friday"],
+          "notes": "US multi-state draw with a Mega Ball between 1 and 25.",
+          "history": "data/histories/mega-millions.csv",
+          "history_file": "data\\histories\\mega-millions.csv",
+          "history_hash": "sha256:5180d3e07125bbf63fd4d500ecd96b1ca5ed5e346082ea5b58c31dc44de8c16e",
+          "schema_hash": "sha1:26c10bfac1a726899fd6c9d148fd8f1e8ec9a1f2"
+        }
+      },
+      {
+        "path": "C:\\ZSanctuary_Universe\\Amk_Goku Worldwide Loterry\\core-engine\\config\\global-formats\\powerball.json",
+        "hash": "sha256:12d2ef2482e8a65b5e42b670ad8f0aa6f48d5a5d964271e8bf36317df57538ce",
+        "content": {
+          "name": "US Powerball",
+          "code": "powerball",
+          "region": "US",
+          "main": {
+            "min": 1,
+            "max": 69,
+            "count": 5
+          },
+          "lucky": {
+            "min": 1,
+            "max": 26,
+            "count": 1
+          },
+          "format": "5+1",
+          "draw_schedule": ["Wednesday", "Saturday"],
+          "notes": "One of the largest jackpots worldwide; features one red Powerball from 1-26.",
+          "history": "data/histories/powerball.csv",
+          "history_file": "data\\histories\\powerball.csv",
+          "history_hash": "sha256:33d4ffe6e29e042c7ba46eef08c274d63ab00a403837c7f1a0f7b9b4037e10d1",
+          "schema_hash": "sha1:26c10bfac1a726899fd6c9d148fd8f1e8ec9a1f2"
+        }
+      },
+      {
+        "path": "C:\\ZSanctuary_Universe\\Amk_Goku Worldwide Loterry\\core-engine\\config\\global-formats\\uk-lotto.json",
+        "hash": "sha256:380c63a96d06999b9b0e5a5847663ea455a6b5b9c07b2f2e3c537cf036ca6c63",
+        "content": {
+          "name": "UK Lotto",
+          "code": "uk-lotto",
+          "region": "EU",
+          "main": {
+            "min": 1,
+            "max": 59,
+            "count": 6
+          },
+          "lucky": {
+            "min": 1,
+            "max": 59,
+            "count": 1
+          },
+          "format": "6+1",
+          "draw_schedule": ["Wednesday", "Saturday"],
+          "notes": "Six main balls plus a bonus ball; represented here as a single lucky number.",
+          "history": "data/histories/uk-lotto.csv"
+        }
+      }
+    ]
+  },
+  "outputs": {
+    "lottery_metrics": [
+      {
+        "path": "C:\\ZSanctuary_Universe\\Amk_Goku Worldwide Loterry\\data\\metrics\\eurojackpot.metrics.json",
+        "hash": "sha256:65518836243347276d3fa156c84855be605d62a70dec8f7fe2828668a53138d9",
+        "content": {
+          "run_id": "20260125T170421Z",
+          "lottery_code": "eurojackpot",
+          "history_hash": "sha256:e7907a127334122365fe77d8cb9e83c472879cd75214b7998aff66cedd69ab13",
+          "draws_count": 10,
+          "number_space": {
+            "main": {
+              "min": 1,
+              "max": 50,
+              "count": 5
+            },
+            "lucky": {
+              "min": 1,
+              "max": 12,
+              "count": 2
+            }
+          },
+          "entropy": {
+            "frequency_entropy": 5.483856,
+            "gap_entropy": 1.5,
+            "pair_entropy": 6.643856
+          },
+          "notes": []
+        }
+      },
+      {
+        "path": "C:\\ZSanctuary_Universe\\Amk_Goku Worldwide Loterry\\data\\metrics\\euromillions.metrics.json",
+        "hash": "sha256:b4167779164ce42e91b4fd15d2de17c8643cdeb1956d159aeb40fcee0148bb6f",
+        "content": {
+          "run_id": "20260125T170421Z",
+          "lottery_code": "euromillions",
+          "history_hash": "sha256:6d4d3b5dcadd6260c7107572b6d07e78516e579fa8329890a07add45d71b3c40",
+          "draws_count": 12,
+          "number_space": {
+            "main": {
+              "min": 1,
+              "max": 50,
+              "count": 5,
+              "pool": 50
+            },
+            "lucky": {
+              "min": 1,
+              "max": 12,
+              "count": 2
+            }
+          },
+          "entropy": {
+            "frequency_entropy": 5.573557,
+            "gap_entropy": 1.760964,
+            "pair_entropy": 6.840224
+          },
+          "notes": []
+        }
+      },
+      {
+        "path": "C:\\ZSanctuary_Universe\\Amk_Goku Worldwide Loterry\\data\\metrics\\global-sevens.metrics.json",
+        "hash": "sha256:886041d43111b525a3399f28090a90a5ea034de570650438f2fe9984547bdfa2",
+        "content": {
+          "run_id": "20260125T170421Z",
+          "lottery_code": "global-sevens",
+          "history_hash": "sha256:311f088f7a882e0fcc22793cf6a1f947330448ff364b83acbd88a87f46591e24",
+          "draws_count": 10,
+          "number_space": {
+            "main": {
+              "min": 1,
+              "max": 49,
+              "count": 5
+            },
+            "lucky": {
+              "min": 1,
+              "max": 12,
+              "count": 2
+            }
+          },
+          "entropy": {
+            "frequency_entropy": 5.563856,
+            "gap_entropy": 1.0,
+            "pair_entropy": 6.643856
+          },
+          "notes": []
+        }
+      },
+      {
+        "path": "C:\\ZSanctuary_Universe\\Amk_Goku Worldwide Loterry\\data\\metrics\\mega-millions.metrics.json",
+        "hash": "sha256:84d4aa45418c75f849d9ec20e28c66a5bb4d427cf6f17cb2fcf12ac4608059dd",
+        "content": {
+          "run_id": "20260125T170421Z",
+          "lottery_code": "mega-millions",
+          "history_hash": "sha256:5180d3e07125bbf63fd4d500ecd96b1ca5ed5e346082ea5b58c31dc44de8c16e",
+          "draws_count": 2467,
+          "number_space": {
+            "main": {
+              "min": 1,
+              "max": 70,
+              "count": 5
+            },
+            "lucky": {
+              "min": 1,
+              "max": 25,
+              "count": 1
+            }
+          },
+          "entropy": {
+            "frequency_entropy": 6.018265,
+            "gap_entropy": 5.041828,
+            "pair_entropy": 11.118812
+          },
+          "notes": []
+        }
+      },
+      {
+        "path": "C:\\ZSanctuary_Universe\\Amk_Goku Worldwide Loterry\\data\\metrics\\powerball.metrics.json",
+        "hash": "sha256:486b1ab69e5554686e4e9fcd3b0345319f11da220129aa08d5fbe9928d75551f",
+        "content": {
+          "run_id": "20260125T170421Z",
+          "lottery_code": "powerball",
+          "history_hash": "sha256:33d4ffe6e29e042c7ba46eef08c274d63ab00a403837c7f1a0f7b9b4037e10d1",
+          "draws_count": 1888,
+          "number_space": {
+            "main": {
+              "min": 1,
+              "max": 69,
+              "count": 5
+            },
+            "lucky": {
+              "min": 1,
+              "max": 26,
+              "count": 1
+            }
+          },
+          "entropy": {
+            "frequency_entropy": 6.094524,
+            "gap_entropy": 5.090251,
+            "pair_entropy": 11.087359
+          },
+          "notes": []
+        }
+      }
+    ],
+    "region_summary": {
+      "path": "C:\\ZSanctuary_Universe\\Amk_Goku Worldwide Loterry\\data\\metrics\\regions.summary.json",
+      "hash": "sha256:aae6c14919869d4f4c36e18a0502e8c89c226eb2a521f191ca024679690e11b5",
+      "content": {
+        "run_id": "20260125T170421Z",
+        "regions": {
+          "EU": {
+            "lotteries": 2,
+            "avg_entropy": {
+              "frequency_entropy": 5.528707,
+              "gap_entropy": 1.630482,
+              "pair_entropy": 6.74204
+            }
+          },
+          "GLOBAL": {
+            "lotteries": 1,
+            "avg_entropy": {
+              "frequency_entropy": 5.563856,
+              "gap_entropy": 1.0,
+              "pair_entropy": 6.643856
+            }
+          },
+          "US": {
+            "lotteries": 2,
+            "avg_entropy": {
+              "frequency_entropy": 6.056394,
+              "gap_entropy": 5.06604,
+              "pair_entropy": 11.103085
+            }
+          }
+        },
+        "divergence": {
+          "EU vs GLOBAL": 0.055338,
+          "EU vs US": 1.064017,
+          "GLOBAL vs US": 1.490335
+        }
+      }
+    },
+    "delta_reports": [
+      {
+        "path": "C:\\ZSanctuary_Universe\\Amk_Goku Worldwide Loterry\\data\\reports\\deltas\\eurojackpot.delta.json",
+        "hash": "sha256:0e51bbe849b346f429282ab8af2d6dc72050ddf6f793c2ef123fce7acbbbcd06",
+        "content": {
+          "run_id": "20260125T170421Z",
+          "lottery_code": "eurojackpot",
+          "real_entropy": {
+            "frequency_entropy": 5.483856,
+            "gap_entropy": 1.5,
+            "pair_entropy": 6.643856
+          },
+          "simulated_entropy": {
+            "frequency_entropy": 5.043856,
+            "gap_entropy": 2.549523,
+            "pair_entropy": 6.603856
+          },
+          "delta": {
+            "frequency_entropy": 0.44,
+            "gap_entropy": -1.049523,
+            "pair_entropy": 0.04
+          },
+          "method": "baseline_uniform"
+        }
+      },
+      {
+        "path": "C:\\ZSanctuary_Universe\\Amk_Goku Worldwide Loterry\\data\\reports\\deltas\\euromillions.delta.json",
+        "hash": "sha256:4540bb2118ef7c66441331380bb8179ac87fd8e74cd0499a0672751ed5954b37",
+        "content": {
+          "run_id": "20260125T170421Z",
+          "lottery_code": "euromillions",
+          "real_entropy": {
+            "frequency_entropy": 5.573557,
+            "gap_entropy": 1.760964,
+            "pair_entropy": 6.840224
+          },
+          "simulated_entropy": {
+            "frequency_entropy": 4.977317,
+            "gap_entropy": 2.721252,
+            "pair_entropy": 6.773557
+          },
+          "delta": {
+            "frequency_entropy": 0.59624,
+            "gap_entropy": -0.960288,
+            "pair_entropy": 0.066667
+          },
+          "method": "baseline_uniform"
+        }
+      },
+      {
+        "path": "C:\\ZSanctuary_Universe\\Amk_Goku Worldwide Loterry\\data\\reports\\deltas\\global-sevens.delta.json",
+        "hash": "sha256:f296fedd4ca6d5d6c40d93eb4a69d4c90cd8899497e6d0d15ef6421ea2ab66a8",
+        "content": {
+          "run_id": "20260125T170421Z",
+          "lottery_code": "global-sevens",
+          "real_entropy": {
+            "frequency_entropy": 5.563856,
+            "gap_entropy": 1.0,
+            "pair_entropy": 6.643856
+          },
+          "simulated_entropy": {
+            "frequency_entropy": 4.918563,
+            "gap_entropy": 2.654255,
+            "pair_entropy": 6.583856
+          },
+          "delta": {
+            "frequency_entropy": 0.645293,
+            "gap_entropy": -1.654255,
+            "pair_entropy": 0.06
+          },
+          "method": "baseline_uniform"
+        }
+      },
+      {
+        "path": "C:\\ZSanctuary_Universe\\Amk_Goku Worldwide Loterry\\data\\reports\\deltas\\mega-millions.delta.json",
+        "hash": "sha256:608d6f56ea8c8f70c4ababf38486a9036bb6a85a95e7e5f92954ff105d246dff",
+        "content": {
+          "run_id": "20260125T170421Z",
+          "lottery_code": "mega-millions",
+          "real_entropy": {
+            "frequency_entropy": 6.018265,
+            "gap_entropy": 5.041828,
+            "pair_entropy": 11.118812
+          },
+          "simulated_entropy": {
+            "frequency_entropy": 6.1253,
+            "gap_entropy": 5.182976,
+            "pair_entropy": 11.168436
+          },
+          "delta": {
+            "frequency_entropy": -0.107035,
+            "gap_entropy": -0.141148,
+            "pair_entropy": -0.049624
+          },
+          "method": "baseline_uniform"
+        }
+      },
+      {
+        "path": "C:\\ZSanctuary_Universe\\Amk_Goku Worldwide Loterry\\data\\reports\\deltas\\powerball.delta.json",
+        "hash": "sha256:c128f2f369c06bc973b6e19839e8d3b6157cbc05db1c5fb2945481eb0c0721f4",
+        "content": {
+          "run_id": "20260125T170421Z",
+          "lottery_code": "powerball",
+          "real_entropy": {
+            "frequency_entropy": 6.094524,
+            "gap_entropy": 5.090251,
+            "pair_entropy": 11.087359
+          },
+          "simulated_entropy": {
+            "frequency_entropy": 6.10368,
+            "gap_entropy": 5.156614,
+            "pair_entropy": 11.102886
+          },
+          "delta": {
+            "frequency_entropy": -0.009156,
+            "gap_entropy": -0.066363,
+            "pair_entropy": -0.015527
+          },
+          "method": "baseline_uniform"
+        }
+      }
+    ]
+  },
+  "verification_notes": [
+    "This bundle captures every input, hash, and computed artifact.",
+    "No prediction promises\u2014only measured statistics and sanity checks."
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "version": "1.0.0",
+  "policy": "allowlist-only",
+  "domains": [
+    "openai.com",
+    "developer.mozilla.org",
+    "w3.org",
+    "ietf.org",
+    "nist.gov",
+    "owasp.org",
+    "python.org",
+    "nodejs.org",
+    "cloudflare.com",
+    "github.com"
+  ]
+}

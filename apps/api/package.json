@@ -1,0 +1,21 @@
+{
+  "name": "z-sanctuary-api",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "node src/server.js",
+    "start": "node src/server.js",
+    "test": "node --test",
+    "lint": "npx eslint src --ext .js,.mjs"
+  },
+  "dependencies": {
+    "@fastify/cors": "^9.0.1",
+    "cors": "^2.8.5",
+    "express": "^4.21.0",
+    "fastify": "^4.27.0",
+    "zod": "^3.23.8",
+    "z-sanctuary-mirrorsoul-slice": "file:../../packages/z-sanctuary-mirrorsoul-slice",
+    "z-sanctuary-zuno-transformation-slice": "file:../../packages/z-sanctuary-zuno-transformation-slice"
+  }
+}

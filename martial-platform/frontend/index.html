@@ -1,0 +1,170 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Martial Core Launcher</title>
+    <style>
+      body {
+        font-family: system-ui, sans-serif;
+        background: #0d0d14;
+        color: #f5f5f5;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 24px;
+        min-height: 100vh;
+      }
+      section {
+        width: 100%;
+        max-width: 640px;
+        margin-bottom: 24px;
+        border: 1px solid rgba(255, 255, 255, 0.08);
+        border-radius: 14px;
+        padding: 20px;
+        background: rgba(13, 13, 20, 0.9);
+        box-shadow: 0 20px 60px rgba(0, 0, 0, 0.35);
+      }
+      h1 {
+        margin-top: 0;
+        font-size: 24px;
+      }
+      label {
+        display: block;
+        margin-top: 12px;
+        font-size: 14px;
+        text-transform: uppercase;
+        letter-spacing: 0.08em;
+        color: #9aa0c7;
+      }
+      input,
+      button,
+      textarea {
+        width: 100%;
+        box-sizing: border-box;
+        padding: 10px 12px;
+        border-radius: 8px;
+        border: 1px solid rgba(255, 255, 255, 0.18);
+        background: #141722;
+        color: #fff;
+        font-size: 16px;
+      }
+      button {
+        margin-top: 12px;
+        cursor: pointer;
+        background: linear-gradient(120deg, #29d3ff, #7251ff);
+        border: none;
+        font-weight: 600;
+      }
+      pre {
+        background: #080d16;
+        border-radius: 8px;
+        padding: 12px;
+        max-height: 200px;
+        overflow: auto;
+        color: #a6d8ff;
+      }
+      small {
+        display: block;
+        margin-top: 8px;
+        color: #9aa0c7;
+      }
+    </style>
+  </head>
+  <body>
+    <section>
+      <h1>Martial Platform Phase 1</h1>
+      <p>Submit scores and view the leaderboard via the backend API.</p>
+    </section>
+    <section>
+      <h1>Create Challenge</h1>
+      <label for="challenge-title">Challenge Title</label>
+      <input id="challenge-title" placeholder="Flow Power Core" value="Flow Power Trial" />
+      <button id="create-challenge">Create Challenge</button>
+      <pre id="challenge-output">Click "Create Challenge" to register a challenge.</pre>
+    </section>
+    <section>
+      <h1>Post Score</h1>
+      <label for="user-name">Warrior Name</label>
+      <input id="user-name" placeholder="warrior-82c0b7" />
+      <label for="score-value">Score Value</label>
+      <input id="score-value" type="number" min="0" max="200" value="88" />
+      <button id="post-score">Submit Score</button>
+      <pre id="score-output">Submit a noble strike score to the backend.</pre>
+    </section>
+    <section>
+      <h1>Leaderboard</h1>
+      <button id="refresh-lb">Refresh</button>
+      <pre id="leaderboard-output">Leaderboard appears here.</pre>
+    </section>
+    <section>
+      <h1>Spectator Snapshot</h1>
+      <button id="refresh-spectator">Refresh Spectator Stats</button>
+      <pre id="spectator-output">Lobby stats appear here.</pre>
+      <small>Shows total/average scores to share with watchers.</small>
+    </section>
+    <script>
+      const api = 'http://localhost:8008';
+      const challengeOutput = document.getElementById('challenge-output');
+      const scoreOutput = document.getElementById('score-output');
+      const leaderboardOutput = document.getElementById('leaderboard-output');
+
+      document.getElementById('create-challenge').addEventListener('click', async () => {
+        const title = document.getElementById('challenge-title').value.trim() || 'Flow Power Trial';
+        try {
+          const res = await fetch(`${api}/challenge`, {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({ title }),
+          });
+          const json = await res.json();
+          challengeOutput.textContent = JSON.stringify(json, null, 2);
+          refreshLeaderboard();
+        } catch (err) {
+          challengeOutput.textContent = 'Failed: ' + err;
+        }
+      });
+
+      document.getElementById('post-score').addEventListener('click', async () => {
+        const user = document.getElementById('user-name').value.trim() || 'warrior-x';
+        const value = parseInt(document.getElementById('score-value').value, 10) || 80;
+        try {
+          const res = await fetch(`${api}/score`, {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({ challengeId: 'challenge-1', user, value }),
+          });
+          const json = await res.json();
+          scoreOutput.textContent = JSON.stringify(json, null, 2);
+          refreshLeaderboard();
+        } catch (err) {
+          scoreOutput.textContent = 'Failed: ' + err;
+        }
+      });
+
+      document.getElementById('refresh-lb').addEventListener('click', refreshLeaderboard);
+      document.getElementById('refresh-spectator').addEventListener('click', refreshSpectator);
+
+      async function refreshLeaderboard() {
+        try {
+          const res = await fetch(`${api}/leaderboard`);
+          const json = await res.json();
+          leaderboardOutput.textContent = JSON.stringify(json, null, 2);
+        } catch (err) {
+          leaderboardOutput.textContent = 'Failed to load leaderboard: ' + err;
+        }
+      }
+      async function refreshSpectator() {
+        try {
+          const res = await fetch(`${api}/spectator`);
+          const json = await res.json();
+          spectatorOutput.textContent = JSON.stringify(json, null, 2);
+        } catch (err) {
+          spectatorOutput.textContent = 'Failed to load spectator stats: ' + err;
+        }
+      }
+
+      refreshLeaderboard();
+      refreshSpectator();
+    </script>
+  </body>
+</html>

@@ -1,0 +1,100 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "last_updated": "2026-01-29",
+    "canonical_columns": [
+      "draw_date",
+      "main_1",
+      "main_2",
+      "main_3",
+      "main_4",
+      "main_5",
+      "bonus_1",
+      "bonus_2"
+    ]
+  },
+  "lotteries": [
+    {
+      "id": "powerball",
+      "name": "Powerball",
+      "region": "US",
+      "vault_path": "us/powerball",
+      "update_method": "auto_http",
+      "source_url": "https://www.texaslottery.com/export/sites/lottery/Games/Powerball/Winning_Numbers/powerball.csv",
+      "status": "active",
+      "optional_services": ["normalize", "stage_incoming", "hash_audit"],
+      "notes": "Official Texas Lottery CSV."
+    },
+    {
+      "id": "mega-millions",
+      "name": "Mega Millions",
+      "region": "US",
+      "vault_path": "us/mega-millions",
+      "update_method": "auto_http",
+      "source_url": "https://www.texaslottery.com/export/sites/lottery/Games/Mega_Millions/Winning_Numbers/megamillions.csv",
+      "status": "active",
+      "optional_services": ["normalize", "stage_incoming", "hash_audit"],
+      "notes": "Official Texas Lottery CSV."
+    },
+    {
+      "id": "uk-lotto",
+      "name": "UK Lotto",
+      "region": "UK",
+      "vault_path": "uk/uk-lotto",
+      "update_method": "manual_drop",
+      "status": "manual_required",
+      "optional_services": ["normalize", "stage_incoming"],
+      "notes": "Manual CSV drop required."
+    },
+    {
+      "id": "la-primitiva",
+      "name": "La Primitiva",
+      "region": "ES",
+      "vault_path": "es/la-primitiva",
+      "update_method": "manual_drop",
+      "status": "manual_required",
+      "optional_services": ["normalize", "stage_incoming"],
+      "notes": "Manual CSV drop required."
+    },
+    {
+      "id": "mauritius-loto-vert",
+      "name": "Mauritius Loto Vert",
+      "region": "MU",
+      "vault_path": "mu/mauritius-loto-vert",
+      "update_method": "manual_drop",
+      "status": "manual_required",
+      "optional_services": ["normalize", "stage_incoming"],
+      "notes": "Manual CSV drop required."
+    },
+    {
+      "id": "eurojackpot",
+      "name": "Eurojackpot",
+      "region": "EU",
+      "vault_path": "eu/eurojackpot",
+      "update_method": "manual_drop",
+      "status": "manual_required",
+      "optional_services": ["normalize", "stage_incoming"],
+      "notes": "Manual CSV drop required."
+    },
+    {
+      "id": "euromillions",
+      "name": "EuroMillions",
+      "region": "EU",
+      "vault_path": "eu/euromillions",
+      "update_method": "manual_drop",
+      "status": "manual_required",
+      "optional_services": ["normalize", "stage_incoming"],
+      "notes": "Manual CSV drop required."
+    },
+    {
+      "id": "global-sevens",
+      "name": "Global Sevens",
+      "region": "Global",
+      "vault_path": "global/global-sevens",
+      "update_method": "manual_drop",
+      "status": "manual_required",
+      "optional_services": ["normalize", "stage_incoming"],
+      "notes": "Manual CSV drop required."
+    }
+  ]
+}

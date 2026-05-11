@@ -1,0 +1,9 @@
+{
+  "module_id": "<MODULE_ID>",
+  "status": "draft",
+  "runtime_linked": false,
+  "approval_required": true,
+  "inputs": [],
+  "outputs": [],
+  "notes": "Lab template only"
+}

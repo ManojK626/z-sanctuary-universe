@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Z-Sanctuary · Circle Learning</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <style>
+      body {
+        font-family:
+          system-ui,
+          -apple-system,
+          Segoe UI,
+          Roboto,
+          sans-serif;
+        background: #0f1218;
+        color: #e6e8ee;
+        padding: 24px;
+        max-width: 900px;
+        margin: auto;
+      }
+      h1 {
+        font-size: 22px;
+      }
+      .muted {
+        opacity: 0.7;
+        font-size: 13px;
+      }
+      .box {
+        background: rgba(255, 255, 255, 0.04);
+        border-radius: 12px;
+        padding: 14px;
+        margin-top: 12px;
+      }
+      .row {
+        display: flex;
+        gap: 10px;
+        align-items: center;
+        flex-wrap: wrap;
+      }
+      .card {
+        margin-top: 8px;
+        padding: 10px;
+        border-radius: 10px;
+        background: rgba(255, 255, 255, 0.05);
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Circle Learning (Read‑Only)</h1>
+    <div class="muted">Shared understanding · no scoring · no enforcement</div>
+
+    <div class="box">
+      <div class="row">
+        <label class="muted">Circle</label>
+        <select id="circleSelect"></select>
+      </div>
+      <div id="circlePrompt" class="muted" style="margin-top: 10px"></div>
+    </div>
+
+    <div class="box" id="circleCards">Loading…</div>
+
+    <script src="../z_bootstrap.js" data-z-root="../../" data-z-notebook="true"></script>
+    <script type="module">
+      async function loadPrompts() {
+        try {
+          const res = await fetch('../../data/learning/circle_prompts.json', { cache: 'no-store' });
+          if (!res.ok) return [];
+          const payload = await res.json();
+          return payload.prompts || [];
+        } catch {
+          return [];
+        }
+      }
+
+      async function render() {
+        await window.ZLearningRegistryLoad?.();
+        await window.ZCircles?.bootstrap?.();
+
+        const select = document.getElementById('circleSelect');
+        const promptEl = document.getElementById('circlePrompt');
+        const cardsEl = document.getElementById('circleCards');
+
+        const circles = window.ZCircles?.listCircles?.() || [];
+        select.innerHTML = circles
+          .map((c) => `<option value="${c.id}">${c.name}</option>`)
+          .join('');
+        select.value = circles[0]?.id || '';
+
+        const prompts = await loadPrompts();
+
+        function renderCircle() {
+          const circleId = select.value;
+          const pack = window.ZCircles?.getLearningPack?.(circleId);
+          const cards = (pack?.learning_pack || [])
+            .map((id) => window.ZLearningRegistryGet?.(id) || window.ZLearningRegistry?.[id])
+            .filter(Boolean);
+
+          cardsEl.innerHTML = cards.length
+            ? cards
+                .map(
+                  (card) => `
+              <div class="card">
+                <div><strong>${card.title}</strong></div>
+                <div class="muted">${card.summary}</div>
+                <div><a href="#" onclick="openLearningCard('${card.id}')">Why?</a></div>
+              </div>
+            `
+                )
+                .join('')
+            : '<div class="muted">No learning cards attached.</div>';
+
+          const prompt = prompts[0];
+          promptEl.textContent = prompt ? `Prompt: ${prompt.text}` : '';
+        }
+
+        select.addEventListener('change', renderCircle);
+        renderCircle();
+      }
+
+      render();
+    </script>
+    <script src="/interface/z_accessibility.js"></script>
+  </body>
+</html>

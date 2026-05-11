@@ -1,0 +1,110 @@
+:root {
+  --hlms-bg: #04060d;
+  --hlms-panel-bg: linear-gradient(145deg, rgba(8, 72, 86, 0.95), rgba(30, 5, 45, 0.95));
+  --hlms-panel-border: rgba(126, 219, 255, 0.42);
+  --hlms-text: #ecf6ff;
+  --hlms-muted: rgba(233, 245, 255, 0.7);
+  --hlms-accent: #00d4ff;
+}
+
+body.hlms,
+.hlms-page {
+  background: var(--hlms-bg);
+  color: var(--hlms-text);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.45;
+  min-height: 100vh;
+  margin: 0;
+}
+
+.hlms-panel,
+.hlms-indicator,
+.hlms-info {
+  background: var(--hlms-panel-bg);
+  border: 1px solid var(--hlms-panel-border);
+  border-radius: 18px;
+  padding: 1.1rem;
+  box-shadow: 0 12px 40px rgba(7, 10, 21, 0.7);
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.hlms-panel:hover,
+.hlms-indicator:hover,
+.hlms-info:hover {
+  transform: translateY(-2px);
+  box-shadow:
+    0 18px 52px rgba(7, 10, 21, 0.85),
+    0 0 0 1px rgba(126, 219, 255, 0.35);
+}
+
+.hlms-panel-title,
+.hlms-indicator-title {
+  font-size: 1.2rem;
+  letter-spacing: 0.02em;
+  font-weight: 600;
+  color: #eaf9ff;
+  margin-bottom: 0.4rem;
+}
+
+.hlms-panel-body {
+  background: rgba(8, 12, 24, 0.9);
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  padding: 0.85rem;
+}
+
+.hlms-panel-body p,
+.hlms-indicator-body p,
+.hlms-info p {
+  margin: 0;
+  color: var(--hlms-muted);
+  font-size: 0.93rem;
+}
+
+.hlms-link-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  gap: 0.45rem;
+}
+
+.hlms-link-list li {
+  background: rgba(0, 0, 0, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 10px;
+  padding: 0.4rem 0.6rem;
+}
+
+.hlms-link-list a {
+  color: var(--hlms-accent);
+  text-decoration: none;
+  font-size: 0.95rem;
+}
+
+.hlms-link-list a:hover {
+  text-decoration: underline;
+}
+
+.hlms-hero {
+  background: var(--hlms-panel-bg);
+  border-radius: 16px;
+  padding: 1rem 1.3rem;
+  border: 1px solid var(--hlms-panel-border);
+  margin-bottom: 1rem;
+  box-shadow: 0 18px 50px rgba(7, 10, 21, 0.7);
+}
+
+.hlms-hero h1 {
+  margin: 0;
+  font-size: 1.8rem;
+  color: var(--hlms-text);
+}
+
+.hlms-hero .meta {
+  color: var(--hlms-muted);
+  font-size: 0.85rem;
+  margin-top: 0.2rem;
+}

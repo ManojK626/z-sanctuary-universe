@@ -1,0 +1,60 @@
+{
+  "version": "0.1",
+  "default": {
+    "multi_workspace_guard": {
+      "max_age_minutes": 120
+    },
+    "web_readiness": {
+      "max_age_minutes": 60
+    },
+    "extension_guard": {
+      "max_age_minutes": 240
+    },
+    "lab_task_guard": {
+      "max_age_minutes": 240
+    },
+    "vscode_timeguard": {
+      "max_age_minutes": 240
+    }
+  },
+  "profiles": {
+    "CORE": {
+      "multi_workspace_guard": {
+        "max_age_minutes": 60
+      },
+      "web_readiness": {
+        "max_age_minutes": 30
+      }
+    },
+    "LAB": {
+      "extension_guard": {
+        "max_age_minutes": 360
+      }
+    },
+    "NAS": {
+      "web_readiness": {
+        "max_age_minutes": 120
+      }
+    },
+    "EXP": {
+      "lab_task_guard": {
+        "max_age_minutes": 480
+      }
+    }
+  },
+  "roles": {
+    "sandbox": {
+      "web_readiness": {
+        "max_age_minutes": 120
+      },
+      "extension_guard": {
+        "max_age_minutes": 480
+      }
+    },
+    "production": {
+      "web_readiness": {
+        "max_age_minutes": 45
+      }
+    }
+  }
+}

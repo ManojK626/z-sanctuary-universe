@@ -1,0 +1,13 @@
+{
+  "name": "zsanctuary-labs",
+  "private": true,
+  "version": "0.1.0",
+  "description": "Incubation workspace for governed doctrine-first modules.",
+  "scripts": {
+    "z:formula": "node scripts/z_formula_validator.mjs",
+    "z:logical-brains": "node scripts/z_logical_brains_validate.mjs",
+    "z:numen": "node scripts/z_numen_signal_check.mjs",
+    "verify:local": "npm run z:logical-brains && npm run z:numen",
+    "z:labs:health": "npm run z:logical-brains && npm run z:numen"
+  }
+}

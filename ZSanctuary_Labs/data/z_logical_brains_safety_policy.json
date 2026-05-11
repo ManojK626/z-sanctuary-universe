@@ -1,0 +1,78 @@
+{
+  "non_clinical_framing": {
+    "required_mode": "non_clinical_learning_visualization",
+    "allowed_language": [
+      "learning pathway",
+      "visual reasoning",
+      "comfort learning",
+      "self-reflection",
+      "educational planning",
+      "age-aware exploration",
+      "non-clinical support"
+    ],
+    "forbidden_language": [
+      "medical diagnosis",
+      "therapy",
+      "brain treatment",
+      "senility treatment",
+      "future prediction certainty"
+    ]
+  },
+  "child_safety_rules": [
+    "no_child_data_collection_by_default",
+    "no_accounts_phase_1",
+    "no_cloud_sync_phase_1"
+  ],
+  "privacy_rules": [
+    "no_hidden_tracking",
+    "no_voice_camera_gps",
+    "no_provider_calls_phase_1",
+    "local_read_only_validation_only"
+  ],
+  "consent_rules": [
+    "explicit_opt_in_required_for_future_personal_data",
+    "guardian_consent_required_for_future_child_flows",
+    "future_delete_and_revoke_must_exist_before_live_storage"
+  ],
+  "age_mode_rules": [
+    "age_stages_are_educational_only",
+    "no_deterministic_outcome_claims",
+    "no_medical_interpretation"
+  ],
+  "forbidden_data_flows": [
+    "child_data_to_cloud",
+    "live_provider_transmission",
+    "medical_output_generation",
+    "biometric_capture"
+  ],
+  "allowed_phase_1_actions": [
+    "create_docs",
+    "define_registry_json",
+    "define_safety_json",
+    "run_read_only_validator",
+    "write_static_reports",
+    "set_dashboard_indicator"
+  ],
+  "future_gates": [
+    "secure_vault_runtime",
+    "personal_ai_memory",
+    "cloud_sync",
+    "teacher_dashboard",
+    "parent_dashboard",
+    "voice_input",
+    "live_ai_provider",
+    "multiplayer_classroom"
+  ],
+  "14_drp_alignment": {
+    "non_harm": true,
+    "consent": true,
+    "transparency": true,
+    "autonomy": true,
+    "ecological_respect": true
+  },
+  "rollback_rules": [
+    "delete_phase_1_reports_if_invalid",
+    "revert_indicator_to_unknown_on_missing_report",
+    "block_upgrade_on_red_signal"
+  ]
+}

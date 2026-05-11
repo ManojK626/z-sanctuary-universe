@@ -1,0 +1,329 @@
+{
+  "schemaVersion": 1,
+  "title": "Z-SUC-2 continuation vault — slice index",
+  "generated": "2026-04-26T21:13:57.125Z",
+  "readerGenerated": "2026-04-26T21:13:57.054Z",
+  "monolith": "Z-SUC 2.txt",
+  "continuationLab": "ZSanctuary_Universe/Z_Sanctuary_Universe 2",
+  "vaultRoot": "Amk-Goku Vaults/Z-SUC-2",
+  "vaultRootAbsoluteHint": "C:\\Cursor Projects Organiser\\Amk-Goku Vaults\\Z-SUC-2",
+  "piiIncludedInHub": false,
+  "moduleHintsSource": "Z_Sanctuary_Universe 2/scripts/z_suc2_slice_product_module_hints.json",
+  "governance": {
+    "lastReview": "2026-04-26Z",
+    "authoritativeRoof": "ZSanctuary_Universe (hub) + Hierarchy Chief / Z-SSWS governance in docs; Amk-Goku Vaults are member storage, not a second control plane.",
+    "safeModeDefinition": {
+      "summary": "Safe mode = advisory and bounded automation: AIs and engines may explain, label, suggest, and route data inside declared trust boundaries; they do not auto-execute money, law, medical, or vehicle actuation, and do not exfiltrate PII or bypass multisig / council policy when those exist.",
+      "inHubToday": [
+        "MirrorSoul: entry/reflect/history/validate are structured; use validation + adaptive fuel as review aids, not sole decisions.",
+        "Z-QOSMEI: observation / swarm demo; treat as governance visualization, not remote control of other projects.",
+        "ZES API: stub / advisory JSON — never treat as a live economy without explicit product sign-off and compliance.",
+        "Zuno transformation flow: web at /zuno/flow, API /api/zuno/flow/* — phased experience + optional 7-item stress self-report (advisory, not diagnosis); sessions in data/zunoFlow/sessions/."
+      ],
+      "inCorpusNotAutoWired": "Slices may describe Hashirai mentors, Z-Guardian, vehicle reflex, BCI, or council bots — that text is a spec; wiring must go through A0 (platform shell) + security review before any production execution path."
+    },
+    "useByStructure": [
+      {
+        "id": "zuno",
+        "role": "Narrative voice in corpus; hub: transformation flow engine (packages/z-sanctuary-zuno-transformation-slice) at /zuno/flow.",
+        "capabilities": [
+          "alignment copy",
+          "flow diagrams",
+          "8-phase run: transformation → continue → next phase → scientific 7-item profile → diagnostic → next core → synthesis → final integration"
+        ],
+        "safeUse": "Advisory only; flow sessions are user-owned files under data/zunoFlow/. The anxiety step is a structured self-report, not a medical device. Do not exfiltrate; keep PII and legal claims human-reviewed."
+      },
+      {
+        "id": "mentors-skk-rkpk",
+        "role": "Hub: SKK + RKPK WebGL/governance overlay (Z-QOSMEI + dashboard state); corpus: Hashirai / family mentor names as lore.",
+        "capabilities": [
+          "visual governance metaphor",
+          "state-fed companions",
+          "educational framing"
+        ],
+        "safeUse": "Render-only + read dashboard signals; no automatic execution. Keep accessibility and content moderation for any user-facing text."
+      },
+      {
+        "id": "mirrorsoul-core",
+        "role": "Shipped slice package + API routes: journal-like entry, reflect, history, validate.",
+        "capabilities": [
+          "emotional reflection",
+          "prediction_id linkage",
+          "advisory validation outcomes"
+        ],
+        "safeUse": "Advisory only; no therapy or medical claims. Optional predictive hooks stay off the hot path unless env-gated. Encrypt/stage sensitive data per MODULE-BUILD-PLAN and hub policy, not the raw monolog defaults."
+      },
+      {
+        "id": "council-multisig-ops",
+        "role": "Spec in slices 6–8 (cooldown, drift, canary) — implementation fragments in text.",
+        "capabilities": [
+          "governance process design",
+          "admin UX sketches",
+          "audit narrative"
+        ],
+        "safeUse": "If ported to hub, require real auth, role claims, and immutable audit log; use multisig for destructive actions; never ship a single 'god' key from corpus examples without security review."
+      },
+      {
+        "id": "z-es-karma-ledger",
+        "role": "Economic + spiritual narrative; hub stub at /api/zes.",
+        "capabilities": [
+          "advisory state display",
+          "future ledger hooks (designed, not full economy)"
+        ],
+        "safeUse": "Do not connect real money, tokens, or charity flows until payments, KYC, and legal are explicitly built; show disclaimers; treat as placeholder."
+      },
+      {
+        "id": "z-guardian-vehicle-reflex",
+        "role": "Concept only in corpus (collision, baby-on-board, Z-Reflex).",
+        "capabilities": [
+          "safety architecture narrative"
+        ],
+        "safeUse": "Not for road use. Any future driver assist must use certified stacks, OBD/regulatory path, and separate validation — this repo text is not an automotive product."
+      },
+      {
+        "id": "external-llm-gemini-thread",
+        "role": "Slice 1 source material from Gemini; export / research.",
+        "capabilities": [
+          "optics and hardware education, draft specs"
+        ],
+        "safeUse": "Do not auto-trust; verify against datasheets, safety standards, and your hardware partner. For live LLM use, use your org's approved model policy and data-handling rules."
+      },
+      {
+        "id": "unity-flutter-paste-engines",
+        "role": "Pasted code blocks (Unity, Dart, TS) are fragments, not a unified engine.",
+        "capabilities": [
+          "accelerate hand-port to hub patterns",
+          "inspire API shapes"
+        ],
+        "safeUse": "Run only in dev after dependency audit; do not copy secrets; align with Option W (API-first) so native clients are generated against the same contract later."
+      }
+    ],
+    "newAiOrCoreEngineChecklist": [
+      "1. Name the layer: product AI vs governance visual vs data pipeline vs dev-only copilot — document in module manifest (see hub MODULE-BUILD-PLAN).",
+      "2. Set trust boundary: which inputs/outputs, retention, and whether output is advisory or can trigger an action (default: advisory).",
+      "3. Add kill switch + feature flag + logging compatible with AAFRTC / Z-SCTE when the change is large.",
+      "4. Reuse QOSMEI / quality gates where the hub already defines contracts; do not invent a second SSWS authority.",
+      "5. PII: default deny; 01-identity-contact exports stay out of public build and out of unredacted training.",
+      "6. Gambling / lottery / Z-All Win: follow jurisdiction + responsible-gaming posture from MODULE-BUILD-PLAN before any real-money or sweepstakes wiring.",
+      "7. For new 'cores' (Z-SSS, Bee Vision, etc.): ship as versioned services behind OpenAPI, one slice at a time, with tests and a demo page — not as a monolith paste."
+    ],
+    "relatedHubDocs": [
+      "ZSanctuary_Universe/AGENTS.md (Hierarchy Chief, AAFRTC, comms, SSWS guardrails)",
+      "Amk-Goku Vaults/Z-SUC-1/05-modules-technical/Z-SUC-1-MODULE-BUILD-PLAN.txt"
+    ]
+  },
+  "files": [
+    {
+      "slice": 1,
+      "name": "2026-04-26__z-suc-2-01__gemini-color-vantablack-aura-precursor__talk.txt",
+      "folder": "04-discussions-by-topic",
+      "bytes": 102478,
+      "range": "1–1323 (1-based, inclusive)",
+      "class": "talk",
+      "summary": "Gemini-led optics thread: color & light, Vantablack, consumer AR/glasses building blocks, early Project AURA v3 shell.",
+      "productsAndInventions": [
+        "Multi-colour LED + waveguide / Micro-LED overlay concepts",
+        "Vantablack on frames (stray-light control), not as lens",
+        "DIY smart-glasses component stack (Raspberry / Arduino class ideas)"
+      ],
+      "namedModulesInCorpus": [
+        "Project AURA (precursor spec)",
+        "Gemini export thread"
+      ],
+      "hubBuildStatus": "No shipped hardware stack. Hub: /project-aura placeholder only.",
+      "partialCodeNote": "Reference / discussion only in corpus — no matching device firmware or optics driver in repo."
+    },
+    {
+      "slice": 2,
+      "name": "2026-04-26__z-suc-2-02__aura-z-sanctuary-bridge-insect-repel-health-turn__talk.txt",
+      "folder": "04-discussions-by-topic",
+      "bytes": 293460,
+      "range": "1324–8000 (1-based, inclusive)",
+      "class": "talk",
+      "summary": "Co-founder narrative: AURA as bridge into Z-Sanctuary cores; Zuno & Z-Bee Aura Glasses; insect repel; space-grade gadget upgrades.",
+      "productsAndInventions": [
+        "Zuno & Z-Bee Aura Glasses (renamed AURA bridge)",
+        "Ultrasonic insect-repellent halo per device class",
+        "Mesh + Li-Fi + acoustic modem continuity story"
+      ],
+      "namedModulesInCorpus": [
+        "Z-Sanctuary Core",
+        "Z-Blood",
+        "Ghost / Alien cores",
+        "Bee Vision",
+        "Hashirai Mentors",
+        "Z-Kai / Quantum Core hooks"
+      ],
+      "hubBuildStatus": "MirrorSoul API + slice package live; no Aura glasses pipeline. Dashboard/QOSMEI shells exist separately.",
+      "partialCodeNote": "Corpus is product + integration storyboard; hub has emotional journal path only for overlapping MirrorSoul theme."
+    },
+    {
+      "slice": 3,
+      "name": "2026-04-26__z-suc-2-03__health-ecosystem-seaguardian-continuations__talk.txt",
+      "folder": "04-discussions-by-topic",
+      "bytes": 404870,
+      "range": "8001–16000 (1-based, inclusive)",
+      "class": "talk",
+      "summary": "Health / ecosystem / SeaGuardian-style analysis threads and expanded Q&A.",
+      "productsAndInventions": [
+        "SeaGuardian (ship + rings + holo aura concept)",
+        "Human health concern breakdowns → medicinal planning angle (ideation)"
+      ],
+      "namedModulesInCorpus": [
+        "SeaGuardian (named concept)",
+        "Z-Creator health extensions"
+      ],
+      "hubBuildStatus": "No SeaGuardian or health vertical module in hub.",
+      "partialCodeNote": "Ideation and research framing only — not wired to hub telemetry or medical compliance paths."
+    },
+    {
+      "slice": 4,
+      "name": "2026-04-26__z-suc-2-04__z-sss-vision-mirrorsoul-creator-zones__module.txt",
+      "folder": "05-modules-technical",
+      "bytes": 414664,
+      "range": "16001–25500 (1-based, inclusive)",
+      "class": "module",
+      "summary": "Z-SSS naming, Monster Universal Formula, Z-Creator Living/Dead zones, rings grid, MirrorSoul emotional mesh language.",
+      "productsAndInventions": [
+        "Z-SSS gadget line (Aura Glasses, Saiyan Crown, Wristband, Bee Vision, Z-Pulse Sentinel)",
+        "Z-ΩSS twin-engine backup formula (narrative architecture)"
+      ],
+      "namedModulesInCorpus": [
+        "Z-SSS",
+        "Z-ΩSS",
+        "MirrorSoul (deep integration language)",
+        "Z-Creator Visionary zones",
+        "Fourteen Rings grid (early)"
+      ],
+      "hubBuildStatus": "MirrorSoul slice + web/API routes shipped. No Z-SSS engine package, no rings runtime.",
+      "partialCodeNote": "Large overlap with product bible; code in hub covers only MirrorSoul vertical slice, not Z-SSS compiler/genetic engine described in text."
+    },
+    {
+      "slice": 5,
+      "name": "2026-04-26__z-suc-2-05__unity-rive-lottie-asset-cinematic-specs__module.txt",
+      "folder": "05-modules-technical",
+      "bytes": 543748,
+      "range": "25501–40000 (1-based, inclusive)",
+      "class": "module",
+      "summary": "Heavy asset + engine paste: Unity HDRP, Rive/Lottie, storyboards, Flutter hooks, 3D avatar paths.",
+      "productsAndInventions": [
+        "Cinematic intro pipeline (F01–F10 storyboard naming)",
+        "2.5D vs 3D route split (Unity vs Flutter+Rive)"
+      ],
+      "namedModulesInCorpus": [
+        "Unity/HDRP aura shaders",
+        "Addressables avatar pipeline"
+      ],
+      "hubBuildStatus": "Three.js / R3F used in Z-QOSMEI + SKK/RKPK overlay — not the Unity project from corpus.",
+      "partialCodeNote": "Corpus contains concrete Unity/Dart snippets; hub web app is Next.js — treat as portable spec, not drop-in build."
+    },
+    {
+      "slice": 6,
+      "name": "2026-04-26__z-suc-2-06__ts-dart-functions-stats-implementation-mid__module.txt",
+      "folder": "05-modules-technical",
+      "bytes": 362138,
+      "range": "40001–50000 (1-based, inclusive)",
+      "class": "module",
+      "summary": "TypeScript / stats (e.g. Mann–Whitney), Cloud Functions patterns, council/cooldown scaffolding in prose + code blocks.",
+      "productsAndInventions": [
+        "Experiment / canary / bandit ops (A/B style) in narrative",
+        "Council cooldown + drift guard concepts"
+      ],
+      "namedModulesInCorpus": [
+        "Council wire",
+        "Cooldown bar",
+        "Ops chaos orchestrator (named in text)"
+      ],
+      "hubBuildStatus": "Hub has governance APIs and dashboard patterns; no 1:1 Flutter council console from monolith.",
+      "partialCodeNote": "Many paste-ready TS/Dart fragments in corpus — partial designs, not imported as a single hub package."
+    },
+    {
+      "slice": 7,
+      "name": "2026-04-26__z-suc-2-07__zes-karma-firebase-council-ops-continued__module.txt",
+      "folder": "05-modules-technical",
+      "bytes": 348921,
+      "range": "50001–60000 (1-based, inclusive)",
+      "class": "module",
+      "summary": "ZES / Karma UI, Firestore schemas, ZES Madagascar narrative, diary vault, multisig admin flows.",
+      "productsAndInventions": [
+        "ZES contribution + marketplace story",
+        "Glow Meter / Karma journal / Blessing Tree UX ideas",
+        "DiaryVault encrypted storage pattern (spec)"
+      ],
+      "namedModulesInCorpus": [
+        "ZES",
+        "Blessing Tree",
+        "Council multisig",
+        "DiaryVault"
+      ],
+      "hubBuildStatus": "Stub / advisory ZES JSON via /api/zes/[userId]; no full token economy or Flutter screens.",
+      "partialCodeNote": "Corpus → large partial product spec; hub only exposes lightweight ZES state placeholder."
+    },
+    {
+      "slice": 8,
+      "name": "2026-04-26__z-suc-2-08__security-vehicle-legal-guardian-stack__module.txt",
+      "folder": "05-modules-technical",
+      "bytes": 405279,
+      "range": "60001–70000 (1-based, inclusive)",
+      "class": "module",
+      "summary": "Security hardening, parity/Merkle backups, legal packs, vehicle collision / Z-Reflex / baby-on-board style safety.",
+      "productsAndInventions": [
+        "Z-Guardian / Reflex Halo collision stack (vehicle)",
+        "Legal incident PDF pipeline sketches",
+        "Rainbow Cloud / backup tier language"
+      ],
+      "namedModulesInCorpus": [
+        "Z-Guardian",
+        "Z-Reflex Loop",
+        "Rainbow Cloud",
+        "Merkle receipt vaults"
+      ],
+      "hubBuildStatus": "Governance + comms docs in hub; no vehicle MCU or legal PDF generator productized here.",
+      "partialCodeNote": "Safety stack described as engineering text — not compiled into a driving or legal product in this repo."
+    },
+    {
+      "slice": 9,
+      "name": "2026-04-26__z-suc-2-09__jupiter-empath-lattice-philosophy-technical__talk.txt",
+      "folder": "04-discussions-by-topic",
+      "bytes": 386162,
+      "range": "70001–80000 (1-based, inclusive)",
+      "class": "talk",
+      "summary": "Jung / empathy / telepathy design layers, Z-Infinity, Universal Knowledge Lattice, watermark trinity, empath spin UI language.",
+      "productsAndInventions": [
+        "Sigma-Empath telepathic mirror blueprint",
+        "Universal Knowledge Lattice v1",
+        "Watermark / seal trinity for exports"
+      ],
+      "namedModulesInCorpus": [
+        "Z-Infinity",
+        "Universal Knowledge Lattice",
+        "MirrorSoul extension language",
+        "Z-Crystal Reality Engine (references)"
+      ],
+      "hubBuildStatus": "Philosophy + governance alignment in docs; /continuation + manifests only for this batch.",
+      "partialCodeNote": "Spec-heavy slice; hub has no dedicated lattice runtime — keep as design input for future HOLO/empath layers."
+    },
+    {
+      "slice": 10,
+      "name": "2026-04-26__z-suc-2-10__infinity-light-bundle-seals-splash-lottery-tail__ref.txt",
+      "folder": "07-references-attachments",
+      "bytes": 184142,
+      "range": "80001–84734 (1-based, inclusive)",
+      "class": "ref",
+      "summary": "Z-Infinity Light bundle, AnchorHash, PDF/Lottie integrity, splash heartbeat, lottery / Z-All Win closing research.",
+      "productsAndInventions": [
+        "ZInfinityLight_AllIn zip bundle (PDF + Lottie + receipts)",
+        "Saiyan heartbeat verification UX",
+        "Z-All Win lottery / contributor pool framing"
+      ],
+      "namedModulesInCorpus": [
+        "Z-Infinity Light",
+        "Z-All Win Lottery",
+        "AnchorHash chain"
+      ],
+      "hubBuildStatus": "No lottery or bundle pipeline in hub; roulette/core game still future per MODULE-BUILD-PLAN.",
+      "partialCodeNote": "Closing slice mixes reference exports + product GTM — code fragments are illustrative, not a finished hub feature."
+    }
+  ],
+  "syncNote": "Regenerated by npm run suc2:sync-manifest-hub from continuation lab (after suc2:build-reader)."
+}

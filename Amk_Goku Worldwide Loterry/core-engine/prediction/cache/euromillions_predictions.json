@@ -1,0 +1,29 @@
+{
+  "format": "euromillions",
+  "generated": "2026-01-26T18:15:02.437085+00:00",
+  "history": "data\\histories\\euromillions.csv",
+  "lookback": 12,
+  "settings": {
+    "lookback": 12,
+    "lines": 3,
+    "mix_hot": true,
+    "hot_bias": 0.12,
+    "cold_bias": 1.0,
+    "main_depth": 12,
+    "lucky_depth": 8
+  },
+  "lines": [
+    {
+      "main": [1, 2, 3, 4, 5],
+      "lucky": [1, 2]
+    },
+    {
+      "main": [1, 2, 3, 4, 5],
+      "lucky": [1, 3]
+    },
+    {
+      "main": [1, 2, 3, 4, 5],
+      "lucky": [1, 4]
+    }
+  ]
+}

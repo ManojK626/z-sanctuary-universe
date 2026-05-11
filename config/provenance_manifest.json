@@ -1,0 +1,26 @@
+{
+  "version": "0.1",
+  "generated_at": "2026-02-19T00:00:00.000Z",
+  "entries": [
+    {
+      "path": "scripts/z_workspace_auto_sweep.mjs",
+      "sha256": "3dac12d709eea8161f03af4ffd253e043f56abb0b8fad69452f9258e70882692",
+      "role": "auto sweep"
+    },
+    {
+      "path": "scripts/z_slo_guard.mjs",
+      "sha256": "d1a4018c55a2663de700cb19ad58a0d3e89f537fea1a7e1f43274b3d6683cf85",
+      "role": "slo guard"
+    },
+    {
+      "path": "scripts/z_multi_workspace_guard.mjs",
+      "sha256": "3f34e0770e710fa61fc4849d1cd421955e5bf1e86a3478c44b6c0a646432aac5",
+      "role": "multi workspace guard"
+    },
+    {
+      "path": "scripts/z_workspace_broadcast_publish.mjs",
+      "sha256": "4d1f04b81679e03963f29e754976d5b736b3c923844cf8ea9e6c51d5140d13c6",
+      "role": "broadcast publish"
+    }
+  ]
+}

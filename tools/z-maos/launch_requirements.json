@@ -1,0 +1,44 @@
+{
+  "version": 1,
+  "entries": [
+    {
+      "projectId": "zsanctuary-universe",
+      "requiredExtensions": [
+        "DavidAnson.vscode-markdownlint",
+        "esbenp.prettier-vscode",
+        "dbaeumer.vscode-eslint"
+      ],
+      "openingChecks": [
+        "npm run z:maos-status",
+        "node scripts/z_sanctuary_structure_verify.mjs"
+      ],
+      "safeReports": [
+        "data/reports/zuno_system_state_report.md",
+        "data/system-status.json",
+        "data/reports/z_guardian_report.json"
+      ],
+      "forbiddenWithoutConsent": [
+        "deploy",
+        "public_dispatch",
+        "external_connector",
+        "data_deletion",
+        "payment",
+        "extension_auto_install"
+      ]
+    },
+    {
+      "projectId": "xl2",
+      "requiredExtensions": [],
+      "openingChecks": [
+        "(in XL2 repo) pilot discipline scripts per that repo"
+      ],
+      "safeReports": [],
+      "forbiddenWithoutConsent": [
+        "deploy",
+        "payment",
+        "legal_copy",
+        "z_sanctuary_coupling"
+      ]
+    }
+  ]
+}

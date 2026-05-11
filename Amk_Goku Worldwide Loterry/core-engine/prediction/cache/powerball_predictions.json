@@ -1,0 +1,29 @@
+{
+  "format": "powerball",
+  "generated": "2026-01-30T22:47:28.231212+00:00",
+  "history": "data\\histories\\powerball.csv",
+  "lookback": 12,
+  "settings": {
+    "lookback": 12,
+    "lines": 3,
+    "mix_hot": true,
+    "hot_bias": 0.12,
+    "cold_bias": 1.0,
+    "main_depth": 12,
+    "lucky_depth": 8
+  },
+  "lines": [
+    {
+      "main": [1, 3, 7, 9, 10],
+      "lucky": [1]
+    },
+    {
+      "main": [1, 3, 7, 9, 10],
+      "lucky": [6]
+    },
+    {
+      "main": [1, 3, 7, 9, 10],
+      "lucky": [7]
+    }
+  ]
+}

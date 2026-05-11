@@ -1,0 +1,583 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="project-id" content="ZUNO_AI_001">
+    <meta name="project-name" content="Z-SANCTUARY ZUNO AI Universe">
+    <title>Roulette Matrix | AI Prediction</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@500;600;700&family=JetBrains+Mono:wght@400;700&display=swap');
+
+        body, html {
+            margin: 0; padding: 0;
+            font-family: 'JetBrains Mono', monospace; /* Switched to a math/coding font */
+            background-color: #050202; color: #ffffff;
+            height: 100vh; display: flex; flex-direction: column;
+            align-items: center; justify-content: center;
+            overflow: hidden;
+        }
+
+        /* Terminal Container */
+        .terminal-app {
+            width: 420px; height: 850px;
+            background: linear-gradient(180deg, #1a0505 0%, #050202 100%);
+            border: 2px solid #ff4d4d; border-radius: 20px;
+            box-shadow: 0 0 40px rgba(255, 77, 77, 0.2);
+            position: relative; overflow: hidden; display: flex; flex-direction: column;
+        }
+
+        .header {
+            padding: 1.5rem; border-bottom: 1px dashed #ff4d4d;
+            display: flex; justify-content: space-between; align-items: center;
+            background: rgba(255, 77, 77, 0.05);
+        }
+
+        .logo { font-family: 'Rajdhani', sans-serif; font-size: 1.5rem; font-weight: 700; color: #ff4d4d; text-transform: uppercase; letter-spacing: 2px; }
+        .fox-node { color: #ffd700; font-size: 0.8rem; border: 1px solid #ffd700; padding: 3px 8px; border-radius: 4px; }
+
+        .content { padding: 1.5rem; flex-grow: 1; display: flex; flex-direction: column; gap: 1.5rem; overflow-y: auto;}
+        .content::-webkit-scrollbar { width: 0; background: transparent; }
+        .content { scrollbar-width: none; -ms-overflow-style: none; }
+
+        /* Radar / Bias Scanner */
+        .scanner-display {
+            background: #0a0202; border: 1px solid #330a0a; border-radius: 12px;
+            padding: 1.5rem; position: relative; text-align: center;
+            box-shadow: inset 0 0 20px rgba(255, 77, 77, 0.1);
+        }
+
+        .radar-circle {
+            width: 140px; height: 140px; margin: 0 auto;
+            border-radius: 50%; border: 2px dashed #ff4d4d;
+            display: flex; justify-content: center; align-items: center;
+            position: relative; overflow: hidden;
+        }
+
+        .radar-sweep {
+            position: absolute; width: 50%; height: 50%; top: 0; right: 0;
+            background: linear-gradient(45deg, rgba(255, 77, 77, 0) 0%, rgba(255, 77, 77, 0.4) 100%);
+            transform-origin: bottom left;
+            animation: sweep 2s linear infinite; display: none;
+        }
+
+        @keyframes sweep { 100% { transform: rotate(360deg); } }
+
+        .ev-value { font-family: 'Rajdhani', sans-serif; font-size: 2.5rem; font-weight: 700; color: #ffd700; text-shadow: 0 0 10px rgba(255, 215, 0, 0.5); }
+
+        /* Analytics Output */
+        .data-log { font-size: 0.8rem; color: #a0a0a0; display: flex; flex-direction: column; gap: 8px; margin-top: 1rem; text-align: left; }
+        .data-row { display: flex; justify-content: space-between; border-bottom: 1px solid #1a0505; padding-bottom: 4px; }
+        .data-highlight { color: #ff4d4d; }
+
+        /* Input Keypad */
+        .keypad-section { background: #0a0202; border: 1px solid #330a0a; border-radius: 12px; padding: 1.5rem; }
+        .keypad-header { font-size: 0.8rem; color: #888; margin-bottom: 10px; text-transform: uppercase; }
+
+        .grid-pad { display: grid; grid-template-columns: repeat(5, 1fr); gap: 10px; }
+
+        .btn-num {
+            background: transparent; border: 1px solid #330a0a; border-radius: 6px;
+            padding: 12px 0; color: #fff; font-family: 'JetBrains Mono', monospace; font-size: 1.1rem;
+            cursor: pointer; transition: all 0.2s;
+        }
+
+        .btn-num:hover { background: rgba(255, 77, 77, 0.1); border-color: #ff4d4d; }
+        .btn-red { color: #ff4d4d; border-color: rgba(255, 77, 77, 0.3); }
+        .btn-black { color: #aaa; border-color: rgba(170, 170, 170, 0.3); }
+        .btn-green { color: #00e676; border-color: rgba(0, 230, 118, 0.3); grid-column: span 4; }
+
+        /* Sequence Log */
+        .wheel-selector {
+            display: flex;
+            gap: 0.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .selector-btn {
+            flex: 1;
+            background: transparent;
+            border: 1px solid #330a0a;
+            padding: 0.6rem 0;
+            border-radius: 6px;
+            cursor: pointer;
+            color: #a0a0a0;
+            font-family: 'Rajdhani', sans-serif;
+            letter-spacing: 1px;
+            transition: all 0.3s;
+        }
+
+        .selector-btn.active {
+            border-color: #ffd700;
+            color: #ffd700;
+            background: rgba(255, 215, 0, 0.1);
+        }
+
+        .selector-btn {
+            flex: 1;
+            background: transparent;
+            border: 1px solid #330a0a;
+            padding: 0.6rem 0;
+            border-radius: 6px;
+            cursor: pointer;
+            color: #a0a0a0;
+            font-family: 'Rajdhani', sans-serif;
+            letter-spacing: 1px;
+            transition: all 0.3s;
+        }
+
+        .selector-btn.active {
+            border-color: #ffd700;
+            color: #ffd700;
+            background: rgba(255, 215, 0, 0.1);
+        }
+
+        .history-controls {
+            display: flex;
+            gap: 0.5rem;
+            justify-content: space-between;
+            margin-top: 1rem;
+        }
+
+        .history-controls button {
+            flex: 1;
+            background: transparent;
+            border: 1px solid #1f1f2e;
+            color: #a0a0a0;
+            padding: 0.6rem;
+            border-radius: 6px;
+            cursor: pointer;
+            font-family: 'Rajdhani', sans-serif;
+            font-size: 0.85rem;
+            letter-spacing: 0.5px;
+        }
+
+        .history-controls button:hover {
+            border-color: #ffd700;
+            color: #ffd700;
+        }
+
+        .history-log {
+            background: rgba(0,0,0,0.4);
+            border: 1px solid #1f1f2e;
+            border-radius: 8px;
+            padding: 1rem;
+            font-family: monospace;
+            font-size: 0.75rem;
+            max-height: 110px;
+            overflow-y: auto;
+            margin-top: 0.8rem;
+        }
+
+        .history-log::-webkit-scrollbar {
+            width: 6px;
+        }
+
+        .history-log::-webkit-scrollbar-thumb {
+            background: rgba(255, 215, 0, 0.4);
+            border-radius: 3px;
+        }
+
+        .history-entry {
+            margin-bottom: 0.4rem;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .history-entry span {
+            color: #ffd700;
+        }
+
+        .sequence-tray {
+            display: flex; gap: 8px; overflow-x: auto; padding: 10px 0;
+            border-top: 1px dashed #330a0a; margin-top: 10px;
+        }
+        .logged-num {
+            min-width: 30px; height: 30px; display: flex; justify-content: center; align-items: center;
+            border-radius: 4px; font-size: 0.9rem; font-weight: bold;
+        }
+        .bg-red { background: #ff4d4d; color: #fff; }
+        .bg-black { background: #222; color: #fff; border: 1px solid #444; }
+        .bg-green { background: #00e676; color: #000; }
+
+        .academy-gate-overlay {
+            position: absolute;
+            inset: 0;
+            background: rgba(0, 0, 0, 0.9);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 5;
+        }
+
+        .academy-gate-card {
+            width: 360px;
+            background: #0a0a0f;
+            border: 1px solid #1f1f2e;
+            border-radius: 16px;
+            padding: 2rem;
+            text-align: center;
+            box-shadow: 0 0 30px rgba(0, 0, 0, 0.7);
+        }
+
+        .academy-gate-title {
+            font-family: 'Rajdhani', sans-serif;
+            font-size: 1.5rem;
+            letter-spacing: 1px;
+            margin-bottom: 1rem;
+            color: #ffd700;
+        }
+
+        .academy-question {
+            margin-bottom: 1rem;
+            text-align: left;
+        }
+
+        .academy-question label {
+            display: block;
+            font-size: 0.85rem;
+            color: #a0a0a0;
+            margin-bottom: 0.4rem;
+        }
+
+        .academy-gate-card select {
+            width: 100%;
+            padding: 0.6rem 0.5rem;
+            border-radius: 6px;
+            border: 1px solid #333;
+            background: #050202;
+            color: #fff;
+        }
+
+        .academy-actions {
+            display: flex;
+            justify-content: space-between;
+            gap: 0.5rem;
+            margin-bottom: 0.8rem;
+        }
+
+        .academy-actions button {
+            flex: 1;
+            padding: 0.8rem;
+            border-radius: 8px;
+            border: none;
+            background: linear-gradient(90deg, #4a54e8, #7a82ff);
+            color: #fff;
+            font-family: 'Rajdhani', sans-serif;
+            font-size: 0.85rem;
+            letter-spacing: 0.5px;
+            cursor: pointer;
+        }
+
+        .academy-actions .ghost {
+            background: transparent;
+            border: 1px solid #555;
+            color: #aaa;
+        }
+
+        .academy-hint {
+            font-size: 0.8rem;
+            color: #00e676;
+            margin-top: 0.5rem;
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="terminal-app">
+        <div class="academy-gate-overlay" id="academyGate">
+            <div class="academy-gate-card">
+                <div class="academy-gate-title">Z-Academy Certification</div>
+                <p>Your training proves you understand probability. Pass this gate before the Fox Node lets you interact.</p>
+                <div class="academy-question">
+                    <label for="academyAnswer">On a perfectly balanced wheel, the Expected Value (EV) for the player is:</label>
+                    <select id="academyAnswer">
+                        <option value="">Select answer</option>
+                        <option value="positive">Positive (> 0)</option>
+                        <option value="zero">Zero</option>
+                        <option value="negative">Negative (&lt; 0)</option>
+                    </select>
+                </div>
+                <div class="academy-actions">
+                    <button id="academySubmit">Submit & Unlock</button>
+                    <button id="academyReset" class="ghost">Reset Certification</button>
+                </div>
+                <p class="academy-hint">The house edge pins EV below zero. Choose wisely, hero.</p>
+            </div>
+        </div>
+
+        <div class="header">
+            <div class="logo">Matrix // RNG</div>
+            <div class="fox-node">Fox Node Active</div>
+        </div>
+
+        <div class="content">
+
+            <div class="scanner-display">
+                <div style="font-size: 0.75rem; color: #ff4d4d; margin-bottom: 10px; text-transform: uppercase; letter-spacing: 1px;">Live EV Calculation</div>
+                <div class="radar-circle" id="radar">
+                    <div class="radar-sweep" id="sweep"></div>
+                    <div class="ev-value" id="ev-display">-2.70%</div>
+                </div>
+
+                <div class="data-log">
+                    <div class="data-row"><span>Variance Level:</span> <span id="var-level" style="color: #fff;">Standard</span></div>
+                    <div class="data-row"><span>Wheel Bias:</span> <span id="bias-status" style="color: #a0a0a0;">Gathering Data...</span></div>
+                    <div class="data-row"><span>Algorithm Action:</span> <span id="algo-action" class="data-highlight">WAIT FOR SPINS</span></div>
+                </div>
+            </div>
+
+            <div class="keypad-section">
+                <div class="keypad-header">Log Live Wheel Results:</div>
+                <div class="wheel-selector">
+                    <button class="selector-btn active" data-wheel="european">European (37)</button>
+                    <button class="selector-btn" data-wheel="american">American (38)</button>
+                </div>
+                <div class="grid-pad" id="dynamicGrid"></div>
+            </div>
+
+                <div class="sequence-tray" id="sequence">
+                    </div>
+                <div class="history-controls">
+                    <button id="undoLast">Undo Last</button>
+                    <button id="resetHistory">Reset History</button>
+                    <button id="saveHistory">Save History</button>
+                    <button id="deleteHistory">Delete All</button>
+                </div>
+                <div class="history-log" id="historyLog"></div>
+            </div>
+
+            <div style="font-size: 0.7rem; color: #555; text-align: center; margin-top: auto;">
+                Amk-Goku Protocol: Destroy the Gambler's Fallacy.
+            </div>
+
+        </div>
+    </div>
+
+    <script>
+        const rouletteRed = new Set([1,3,5,7,9,12,14,16,18,19,21,23,25,27,30,32,34,36]);
+        const wheelLayouts = {
+            european: [
+                { label: '0', color: 'green' },
+                ...Array.from({ length: 36 }, (_, i) => {
+                    const num = i + 1;
+                    return { label: String(num), color: rouletteRed.has(num) ? 'red' : 'black' };
+                })
+            ],
+            american: [
+                { label: '00', color: 'green' },
+                { label: '0', color: 'green' },
+                ...Array.from({ length: 36 }, (_, i) => {
+                    const num = i + 1;
+                    return { label: String(num), color: rouletteRed.has(num) ? 'red' : 'black' };
+                })
+            ]
+        };
+
+        const gridPad = document.getElementById('dynamicGrid');
+        const selectorButtons = document.querySelectorAll('.selector-btn');
+        const historyLogElement = document.getElementById('historyLog');
+        let currentWheel = 'european';
+        const sequenceHistory = JSON.parse(localStorage.getItem('rouletteSequence') || '[]');
+        const MAX_HISTORY = 40;
+
+        const wheelLabels = {
+            european: 'European (37)',
+            american: 'American (38)'
+        };
+
+        function persistHistory() {
+            localStorage.setItem('rouletteSequence', JSON.stringify(sequenceHistory));
+        }
+
+        function refreshHistoryLog() {
+            if (!historyLogElement) return;
+            historyLogElement.innerHTML = sequenceHistory.map(entry => `
+                <div class="history-entry">
+                    <span>${entry.label}</span>
+                    <span>${entry.timestamp}</span>
+                </div>`).join('');
+        }
+
+        function recordHistory(label, color) {
+            sequenceHistory.unshift({
+                label,
+                color,
+                timestamp: new Date().toLocaleTimeString()
+            });
+            if (sequenceHistory.length > MAX_HISTORY) {
+                sequenceHistory.pop();
+            }
+            persistHistory();
+            refreshHistoryLog();
+        }
+
+        function undoLast() {
+            const tray = document.getElementById('sequence');
+            if (sequenceHistory.length === 0) return;
+            sequenceHistory.shift();
+            persistHistory();
+            if (tray.firstChild) tray.removeChild(tray.firstChild);
+            refreshHistoryLog();
+        }
+
+        function resetHistory() {
+            const tray = document.getElementById('sequence');
+            sequenceHistory.length = 0;
+            persistHistory();
+            tray.innerHTML = '';
+            refreshHistoryLog();
+        }
+
+        function saveHistory() {
+            if (sequenceHistory.length === 0) return;
+            const lines = sequenceHistory.map(entry => `${entry.timestamp} - ${entry.label}`);
+            const blob = new Blob([lines.join('\\n')], { type: 'text/plain' });
+            const url = URL.createObjectURL(blob);
+            const link = document.createElement('a');
+            link.href = url;
+            link.download = 'roulette-history.txt';
+            document.body.appendChild(link);
+            link.click();
+            document.body.removeChild(link);
+            URL.revokeObjectURL(url);
+        }
+
+        function deleteHistory() {
+            resetHistory();
+        }
+        function renderWheel(type) {
+            currentWheel = type;
+            gridPad.innerHTML = '';
+            wheelLayouts[type].forEach(entry => {
+                const btn = document.createElement('button');
+                btn.className = `btn-num btn-${entry.color}`;
+                btn.innerText = entry.label;
+                btn.addEventListener('click', () => logNumber(entry.label, entry.color));
+                gridPad.appendChild(btn);
+            });
+
+            selectorButtons.forEach(btn => {
+                btn.classList.toggle('active', btn.dataset.wheel === type);
+            });
+        }
+
+        selectorButtons.forEach(btn => {
+            btn.addEventListener('click', () => renderWheel(btn.dataset.wheel));
+        });
+
+        renderWheel(currentWheel);
+        refreshHistoryLog();
+        document.getElementById('undoLast').addEventListener('click', undoLast);
+        document.getElementById('resetHistory').addEventListener('click', resetHistory);
+        document.getElementById('saveHistory').addEventListener('click', saveHistory);
+        document.getElementById('deleteHistory').addEventListener('click', deleteHistory);
+
+        let spinCount = 0;
+
+        function logNumber(num, color) {
+            spinCount++;
+
+            const tray = document.getElementById('sequence');
+            const newNum = document.createElement('div');
+            newNum.className = `logged-num bg-${color}`;
+            newNum.innerText = num;
+            tray.prepend(newNum); // Add to the front
+
+            recordHistory(num, color);
+
+            // Keep tray clean (max 8 visible for UI sake)
+            if (tray.children.length > 8) {
+                tray.removeChild(tray.lastChild);
+            }
+
+            // 2. Trigger the "Algorithm Calculation" Visuals
+            const sweep = document.getElementById('sweep');
+            const actionText = document.getElementById('algo-action');
+            const biasText = document.getElementById('bias-status');
+            const evDisplay = document.getElementById('ev-display');
+
+            sweep.style.display = 'block';
+            actionText.innerText = "CALCULATING MATRICES...";
+            actionText.style.color = "#ffd700";
+
+            // 3. Simulate the AI processing after 1.5 seconds
+            setTimeout(() => {
+                sweep.style.display = 'none';
+
+                if (spinCount < 5) {
+                    actionText.innerText = "REQUIRE MORE DATA";
+                    actionText.style.color = "#ff4d4d";
+                } else if (spinCount >= 5 && spinCount < 10) {
+                    biasText.innerText = "Micro-variance Detected";
+                    biasText.style.color = "#ffd700";
+                    actionText.innerText = "TRACKING SECTOR 3...";
+                    actionText.style.color = "#ffd700";
+                    evDisplay.innerText = "-2.65%"; // Slight EV shift
+                } else {
+                    biasText.innerText = "Mechanical Bias Found";
+                    biasText.style.color = "#00e676";
+                    actionText.innerText = "BIAS CONFIRMED: AVOID PLAY";
+                    actionText.style.color = "#00e676";
+                    evDisplay.innerText = "ERR"; // House edge fluctuates
+                }
+            }, 1000);
+        }
+    </script>
+
+    <script>
+        window.PROJECT_ID = "ZUNO_AI_001";
+        window.PROJECT_MANIFEST = {
+            project_id: "ZUNO_AI_001",
+            project_name: "Z-SANCTUARY ZUNO AI Universe"
+        };
+    </script>
+
+    <script>
+        if (typeof ProtocolEnforcer_Instance !== 'undefined') {
+            ProtocolEnforcer_Instance.recordAuditTrail('DASHBOARD_INIT', {
+                dashboard: 'Roulette Matrix',
+                timestamp: new Date().toISOString()
+            });
+        }
+    </script>
+
+    <script>
+        const gateOverlay = document.getElementById('academyGate');
+        const answerSelect = document.getElementById('academyAnswer');
+        const submitBtn = document.getElementById('academySubmit');
+        const resetBtn = document.getElementById('academyReset');
+
+        function unlockAcademy() {
+            gateOverlay.style.display = 'none';
+            localStorage.setItem('zAcademyCertified', 'true');
+        }
+
+        function showGate() {
+            gateOverlay.style.display = 'flex';
+        }
+
+        if (localStorage.getItem('zAcademyCertified') === 'true') {
+            gateOverlay.style.display = 'none';
+        } else {
+            showGate();
+        }
+
+        submitBtn.addEventListener('click', () => {
+            if (answerSelect.value === 'negative') {
+                unlockAcademy();
+                alert('Certification complete. Fox Node unlocked.');
+            } else {
+                alert('The house edge means the Expected Value is negative. Please review the Academy and try again.');
+            }
+        });
+
+        resetBtn.addEventListener('click', () => {
+            localStorage.removeItem('zAcademyCertified');
+            answerSelect.value = '';
+            showGate();
+        });
+    </script>
+</body>
+</html>

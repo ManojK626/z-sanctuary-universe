@@ -1,0 +1,14 @@
+{
+  "version": "1",
+  "description": "Canonical HODP / multi-surface dashboard entry naming. index.html stubs redirect to named primaries.",
+  "surfaces": [
+    {
+      "id": "hodp-skk-rkpk",
+      "label": "SKK & RKPK · Unified HODP",
+      "canonical_relative": "dashboard/Html/index-skk-rkpk.html",
+      "compat_redirects": ["dashboard/Html/index.html"],
+      "shadow_workbench": "dashboard/Html/shadow/index-skk-rkpk.workbench.html",
+      "pattern": "primary_html → shadow copy for iteration → thin index stub for URLs and readiness"
+    }
+  ]
+}

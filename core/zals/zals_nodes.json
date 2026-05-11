@@ -1,0 +1,17 @@
+{
+  "generated_at": null,
+  "nodes": [
+    {
+      "id": "PC_NODE",
+      "label": "AMK-PC",
+      "capacity_score": 1.0,
+      "enabled": true
+    },
+    {
+      "id": "NAS_NODE",
+      "label": "Z-SKK-Rainbow-NAS",
+      "capacity_score": 1.5,
+      "enabled": true
+    }
+  ]
+}

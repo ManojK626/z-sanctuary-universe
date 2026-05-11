@@ -1,0 +1,83 @@
+{
+  "schema": "z.numen.symbol.registry.v1",
+  "module_name": "Z-NUMEN Cognitive Geometry Engine",
+  "mode": "educational_pattern_literacy",
+  "related_module": "z_logical_brains_learning_pathway",
+  "core_symbols": {
+    "0": "zero core / observer point",
+    "3": "triangle / minimum stable relation",
+    "6": "edges / connection strength",
+    "9": "amplification / spread",
+    "12": "full ground layer / tetra panel-points",
+    "13": "seed symbolic code",
+    "31": "completed pyramid total",
+    "333": "structure repeat",
+    "666": "reinforcement pressure",
+    "999": "saturation wave"
+  },
+  "geometry_foundation": {
+    "triangle_points": 3,
+    "tetrahedron_triangular_faces": 4,
+    "tetrahedron_edges": 6,
+    "faces_times_points": "4 faces x 3 points = 12 symbolic panel-points"
+  },
+  "layer_pyramid": {
+    "layers": [1, 3, 6, 9, 12],
+    "total": 31,
+    "notes": "Symbolic stacking for literacy only; not a claim about reality."
+  },
+  "engine_modules": [
+    "ZeroCore",
+    "TriangleBuilder",
+    "TetraNetwork",
+    "SignalDetector",
+    "FlowTracker",
+    "VisualEngine3D",
+    "GuardianInterpreter"
+  ],
+  "future_gated": [
+    "VisualEngine3D_runtime",
+    "live_mesh_canvas",
+    "provider_visualization"
+  ],
+  "variables": {
+    "Z": "zero-center balance",
+    "T": "triangle coherence",
+    "C": "connection strength",
+    "R": "repetition intensity",
+    "E": "emotional charge",
+    "F": "flow spread",
+    "P": "perception pressure",
+    "S": "signal score"
+  },
+  "formulas": {
+    "documentation_only": true,
+    "not_for_profiling": true,
+    "definitions": {
+      "P": "(T + C + R + F) / 4",
+      "S": "(R + E + F) / 3",
+      "Z": "PositivePull - NegativePull"
+    },
+    "note": "Formulas exist for educational explanation only. Validator scores use simple local heuristics, not persistent profiling."
+  },
+  "forbidden_claims": [
+    "hidden control proof",
+    "secret society confirmation",
+    "supernatural proof",
+    "future prediction certainty",
+    "danger by number alone",
+    "diagnosis",
+    "therapy",
+    "psychological targeting",
+    "conspiracy proof"
+  ],
+  "related_docs": [
+    "docs/Z_NUMEN_COGNITIVE_GEOMETRY_ENGINE.md",
+    "docs/Z_NUMEN_SAFETY_AND_PERCEPTION_POLICY.md",
+    "docs/PHASE_Z_NUMEN_1_GREEN_RECEIPT.md"
+  ],
+  "related_reports": [
+    "data/reports/z_numen_signal_report.json",
+    "data/reports/z_numen_signal_report.md"
+  ]
+}

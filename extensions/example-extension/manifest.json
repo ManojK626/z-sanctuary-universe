@@ -1,0 +1,8 @@
+{
+  "id": "example-extension",
+  "name": "Example Extension",
+  "version": "0.1.0",
+  "capabilities": ["emit_events", "read_public_state"],
+  "eventsEmitted": ["EXAMPLE_EVENT"],
+  "publicStateRead": ["energy", "harmony"]
+}

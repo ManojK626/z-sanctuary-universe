@@ -1,0 +1,50 @@
+{
+	"folders": [
+		{
+			"name": "ZSanctuary_Universe",
+			"path": ".."
+		}
+	],
+	"settings": {
+		"terminal.integrated.accessibleViewFocusOnCommandExecution": true,
+		"terminal.integrated.accessibleViewPreserveCursorPosition": true,
+		"terminal.integrated.allowMnemonics": true,
+		"terminal.integrated.automationProfile.osx": {},
+		"terminal.integrated.confirmOnKill": "never",
+		"terminal.integrated.copyOnSelection": true,
+		"terminal.integrated.cursorBlinking": true,
+		"terminal.integrated.cursorStyle": "line",
+		"terminal.integrated.cursorWidth": 14,
+		"terminal.integrated.customGlyphs": true,
+		"terminal.integrated.defaultProfile.windows": "PowerShell",
+		"terminal.integrated.enableVisualBell": true,
+		"terminal.integrated.focusAfterRun": "accessible-buffer",
+		"terminal.integrated.fontLigatures.enabled": true,
+		"terminal.integrated.mouseWheelZoom": true,
+		"terminal.integrated.scrollback": 10000,
+		"terminal.integrated.shellIntegration.environmentReporting": true,
+		"editor.accessibilityPageSize": 5000,
+		"editor.minimap.enabled": true,
+		"editor.mouseWheelZoom": true,
+		"editor.renderWhitespace": "selection",
+		"editor.wordWrap": "on",
+		"files.autoSave": "afterDelay",
+		"files.autoSaveDelay": 1000,
+		"window.zoomLevel": 0,
+		"window.newWindowDimensions": "maximized",
+		"workbench.panel.defaultLocation": "bottom",
+		"workbench.sideBar.location": "left",
+		"workbench.editor.enablePreview": false,
+		"workbench.startupEditor": "none",
+		"terminal.integrated.fontSize": 14,
+		"terminal.integrated.lineHeight": 1.2,
+		"task.allowAutomaticTasks": "on",
+		"extensions.autoCheckUpdates": true,
+		"extensions.autoUpdate": true,
+		"extensions.ignoreRecommendations": false,
+		"markdown.preview.breaks": true,
+		"markdown.preview.linkify": true,
+		"ipynb.pasteImagesAsAttachments.enabled": false,
+		"liveServer.settings.port": 5503
+	}
+}

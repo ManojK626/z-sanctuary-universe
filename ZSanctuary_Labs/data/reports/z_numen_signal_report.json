@@ -1,0 +1,63 @@
+{
+  "module_id": "z_numen_cognitive_geometry",
+  "signal": "GREEN",
+  "mode": "educational_pattern_literacy",
+  "generated_at": "2026-05-05T17:54:39.506Z",
+  "checks": {
+    "passed": [
+      "Mode is educational pattern literacy.",
+      "Core symbol keys are complete.",
+      "Signal bands are present.",
+      "Triplet mapping includes 333/666/999.",
+      "Formulas marked documentation-only / not for profiling.",
+      "Forbidden claims cover conspiracy/supernatural/prediction/diagnosis/therapy.",
+      "safe_output_rules lists are populated.",
+      "Engine module roll call is complete."
+    ],
+    "yellow": [],
+    "blue": [],
+    "red": []
+  },
+  "sample_results": [
+    {
+      "id": "sample_quiet",
+      "label": "Low repetition text",
+      "repetition_intensity_R": 0,
+      "band": "Quiet",
+      "tripletHits": {
+        "333": 0,
+        "666": 0,
+        "999": 0
+      },
+      "safe_interpretation": "Low triplet salience in this snippet. Zero Core grounding: breathe, widen view, remember this is a perception pattern, not proof of hidden control.",
+      "zero_core_statement": "This is a perception pattern, not proof of hidden control."
+    },
+    {
+      "id": "sample_triplet_333",
+      "label": "Structure repeat triplet",
+      "repetition_intensity_R": 0.788,
+      "band": "Amplified",
+      "tripletHits": {
+        "333": 3,
+        "666": 0,
+        "999": 0
+      },
+      "safe_interpretation": "Pattern literacy: salient repeats (333x3 (structure repeat)). Zero Core grounding: breathe, widen view, remember this is a perception pattern, not proof of hidden control.",
+      "zero_core_statement": "This is a perception pattern, not proof of hidden control."
+    },
+    {
+      "id": "sample_mixed_triplets",
+      "label": "Multiple triplets",
+      "repetition_intensity_R": 0.493,
+      "band": "Active",
+      "tripletHits": {
+        "333": 1,
+        "666": 1,
+        "999": 1
+      },
+      "safe_interpretation": "Pattern literacy: salient repeats (333x1 (structure repeat); 666x1 (reinforcement pressure); 999x1 (saturation wave)). Zero Core grounding: breathe, widen view, remember this is a perception pattern, not proof of hidden control.",
+      "zero_core_statement": "This is a perception pattern, not proof of hidden control."
+    }
+  ],
+  "related_module": "z_logical_brains_learning_pathway"
+}

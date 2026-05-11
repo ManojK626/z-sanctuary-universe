@@ -1,0 +1,53 @@
+{
+  "rule_id": "WB-001",
+  "rule_name": "Gentle Rest Nudge",
+  "trigger": {
+    "type": "event",
+    "source": "wellbeing-core",
+    "event_type": "FATIGUE_INDEX_UPDATED",
+    "payload_schema_ref": "schemas/z_context_snapshot.schema.json"
+  },
+  "context_requirements": {
+    "z_state": true,
+    "lpbs_state": true,
+    "ggaesp_360": true,
+    "wellbeing_state": true,
+    "session_meta": true
+  },
+  "conditions": [
+    { "path": "/wellbeing_state/fatigue_index", "op": "gte", "value": 0.65 },
+    { "path": "/wellbeing_state/focus_level", "op": "gte", "value": 0.55 }
+  ],
+  "risk_class": "low",
+  "consent": {
+    "level": "notify",
+    "timeout_policy": "wait",
+    "timeout_seconds": 300
+  },
+  "action_set": {
+    "allowed_actions": [
+      { "type": "ui_banner", "params": { "message": "Pause 2 minutes? Hydrate or breathe." } },
+      { "type": "start_breathing_timer", "params": { "duration_seconds": 120 } },
+      { "type": "write_audit_note", "params": { "note": "Gentle rest nudge offered." } }
+    ],
+    "max_repetitions": 2,
+    "cooldown_seconds": 3600,
+    "rollback_allowed": true
+  },
+  "governance": {
+    "ai_allowed": ["observe", "suggest", "explain"],
+    "ai_forbidden": ["execute", "authorize", "modify_rules", "bypass_consent"],
+    "human_override": "always_true"
+  },
+  "audit_seal": {
+    "ethical_intent": "Prevent fatigue spirals with a non-intrusive rest suggestion.",
+    "creator_signature": "z-sanctuary-core",
+    "creation_time": "2026-01-16T00:00:00Z",
+    "version": "1.0.0"
+  },
+  "lifecycle": {
+    "status": "active",
+    "activation_date": "2026-01-16T00:00:00Z",
+    "review_interval_days": 30
+  }
+}

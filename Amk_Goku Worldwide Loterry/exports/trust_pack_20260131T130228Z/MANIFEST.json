@@ -1,0 +1,35 @@
+{
+  "generated_at": "2026-01-31T13:02:28.751432Z",
+  "authority": "observational-only",
+  "contents": [
+    "SYSTEM_STATUS.json",
+    "TRUST_BUNDLE.json",
+    "observatory/rhythm_trust.json",
+    "observatory/jailcell_trust.json",
+    "observatory/learning_digest.json",
+    "observatory/monthly_change_log.json",
+    "registry/api_registry.json",
+    "audiology/Z_AUDIOLOGY_CHARTER.md",
+    "audiology/Z_AUDIOLOGY_OATH.md",
+    "audiology/Z_AUDIOLOGY_TESTS.md",
+    "audiology/Z_AUDIOLOGY_MULTILINGUAL_POLICY.md",
+    "audiology/Z_AUDIOLOGY_UI_POLICY.md",
+    "audiology/z_audiology_manifest.json",
+    "audiology/z_audiology_schema.json"
+  ],
+  "hashes": {
+    "SYSTEM_STATUS.json": "25d10df9bfd671203e4d69707f44a37cc5d98d82d725ffd59716f606f5b62bc4",
+    "observatory/rhythm_trust.json": "708644688a19ae35d1d82db0485fe233bd3ce85791239921e9ebe2c5aeb63e4c",
+    "observatory/jailcell_trust.json": "66fcaa8cb8d64466c4d563a68e4f9d46082eadf48c0d4bb2014bda1a19e97969",
+    "observatory/learning_digest.json": "c76d3c993150234a7fcb28c9b101674b84c8e39325006fc22dfb8f311ca91d18",
+    "observatory/monthly_change_log.json": "9cfe74d3201d6472df56e42a1fbcb1867682098abeb82ad16a3d1b72e947052d",
+    "registry/api_registry.json": "c795291f2da3f6c73e8a296e87d4d8e83cb67525d0ae1fd6211b19ba6049864f",
+    "audiology/Z_AUDIOLOGY_CHARTER.md": "0efc7deac0b667d647a29cf643482264df4c5efe25c0664ebf08febf7e418548",
+    "audiology/Z_AUDIOLOGY_OATH.md": "c95a1f7b7198a3cce1cf7c3b9728c617bedafa568f5ff93926e0e9cdebf71d40",
+    "audiology/Z_AUDIOLOGY_TESTS.md": "bbb5a4029138872f8541f3c6e0b8c3840db4cad95a4f7c20754719be237f4a24",
+    "audiology/Z_AUDIOLOGY_MULTILINGUAL_POLICY.md": "e7192dc767defc335a111acdcf720eae1d4bc567eab065c2eb7c53afb2c381d9",
+    "audiology/Z_AUDIOLOGY_UI_POLICY.md": "aa9d6039e6feb71f95283d6b4ba20151eeba95d3ac409ef5e6aa57d955c3ecf2",
+    "audiology/z_audiology_manifest.json": "441ef39d58264842be9f86d27fa23b52f26f1e7b49b9e0ed635c1b50f539250c",
+    "audiology/z_audiology_schema.json": "270d91bc6fbee62ea9061cb3e24b2e92a3b0dd6f2e4c1a539e1b41534547a18f"
+  }
+}

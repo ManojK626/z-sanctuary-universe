@@ -1,0 +1,24 @@
+{
+  "run_id": "20260130T224727Z",
+  "lottery_code": "powerball",
+  "history_hash": "sha256:19977d4336288bf15f9eb7b8a7956265c15b8b527b95dcebe861679179dc883d",
+  "draws_count": 1901,
+  "number_space": {
+    "main": {
+      "min": 1,
+      "max": 69,
+      "count": 5
+    },
+    "lucky": {
+      "min": 1,
+      "max": 26,
+      "count": 1
+    }
+  },
+  "entropy": {
+    "frequency_entropy": 6.094623,
+    "gap_entropy": 5.086645,
+    "pair_entropy": 11.088188
+  },
+  "notes": []
+}

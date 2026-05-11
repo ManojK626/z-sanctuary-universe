@@ -1,0 +1,14 @@
+{
+  "version": 1,
+  "gatedActions": [
+    { "id": "merge", "requiresHuman": ["amk_or_delegate"] },
+    { "id": "deploy", "requiresHuman": ["amk_or_delegate"] },
+    { "id": "publish", "requiresHuman": ["amk_or_delegate"] },
+    { "id": "payment", "requiresHuman": ["amk_or_delegate"] },
+    { "id": "legal_copy", "requiresHuman": ["amk_or_delegate"] },
+    { "id": "external_connector", "requiresHuman": ["amk_or_delegate"] },
+    { "id": "data_deletion", "requiresHuman": ["amk_or_delegate"] },
+    { "id": "xl2_code_coupling", "requiresHuman": ["amk_or_delegate"], "note": "Separate charter required" },
+    { "id": "extension_auto_install", "requiresHuman": ["amk_or_delegate"] }
+  ]
+}

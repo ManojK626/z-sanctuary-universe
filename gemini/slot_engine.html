@@ -1,0 +1,383 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Slot Engine | PRNG Simulator</title>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@500;600;700&family=JetBrains+Mono:wght@400;700&display=swap');
+
+      body,
+      html {
+        margin: 0;
+        padding: 0;
+        font-family: 'JetBrains Mono', monospace;
+        background-color: #030105;
+        color: #ffffff;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+      }
+
+      /* Terminal Container */
+      .terminal-app {
+        width: 420px;
+        height: 850px;
+        background: linear-gradient(180deg, #10051a 0%, #030105 100%);
+        border: 2px solid #b84ae8;
+        border-radius: 20px;
+        box-shadow: 0 0 40px rgba(184, 74, 232, 0.2);
+        position: relative;
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+      }
+
+      .header {
+        padding: 1.5rem;
+        border-bottom: 1px dashed #b84ae8;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background: rgba(184, 74, 232, 0.05);
+      }
+
+      .logo {
+        font-family: 'Rajdhani', sans-serif;
+        font-size: 1.5rem;
+        font-weight: 700;
+        color: #b84ae8;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+      }
+      .phoenix-node {
+        color: #00ffcc;
+        font-size: 0.8rem;
+        border: 1px solid #00ffcc;
+        padding: 3px 8px;
+        border-radius: 4px;
+      }
+
+      .content {
+        padding: 1.5rem;
+        flex-grow: 1;
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+        overflow-y: auto;
+      }
+
+      /* PRNG Decryptor Window */
+      .prng-window {
+        background: #05010a;
+        border: 1px solid #2a0a3a;
+        border-radius: 12px;
+        padding: 1.5rem;
+        text-align: center;
+        position: relative;
+        box-shadow: inset 0 0 20px rgba(184, 74, 232, 0.1);
+      }
+
+      .hash-display {
+        font-size: 1.2rem;
+        color: #00ffcc;
+        letter-spacing: 2px;
+        margin: 1rem 0;
+        text-shadow: 0 0 8px rgba(0, 255, 204, 0.5);
+        height: 30px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .spin-result {
+        font-family: 'Rajdhani', sans-serif;
+        font-size: 2rem;
+        font-weight: 700;
+        color: #fff;
+        margin-bottom: 0.5rem;
+      }
+      .win-amount {
+        color: #00e676;
+        font-size: 1.2rem;
+      }
+      .loss-amount {
+        color: #ff4d4d;
+        font-size: 1.2rem;
+      }
+
+      /* Statistics Board */
+      .stats-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 10px;
+      }
+
+      .stat-box {
+        background: #0a0212;
+        border: 1px solid #2a0a3a;
+        padding: 10px;
+        border-radius: 8px;
+        text-align: center;
+      }
+
+      .stat-label {
+        font-size: 0.7rem;
+        color: #888;
+        text-transform: uppercase;
+        margin-bottom: 5px;
+      }
+      .stat-val {
+        font-size: 1.1rem;
+        font-weight: 700;
+        color: #fff;
+      }
+      .highlight-rtp {
+        color: #b84ae8;
+        font-size: 1.3rem;
+      }
+
+      /* Controls */
+      .control-panel {
+        background: #0a0212;
+        border: 1px solid #2a0a3a;
+        border-radius: 12px;
+        padding: 1.5rem;
+      }
+
+      .volatility-selector {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 15px;
+      }
+      .vol-btn {
+        background: transparent;
+        border: 1px solid #333;
+        color: #888;
+        padding: 5px 10px;
+        border-radius: 4px;
+        font-family: 'JetBrains Mono', monospace;
+        font-size: 0.8rem;
+        cursor: pointer;
+        transition: all 0.2s;
+      }
+      .vol-btn.active {
+        border-color: #00ffcc;
+        color: #00ffcc;
+        background: rgba(0, 255, 204, 0.1);
+      }
+
+      .btn-action {
+        width: 100%;
+        padding: 1rem;
+        margin-bottom: 10px;
+        background: transparent;
+        border: 1px solid #b84ae8;
+        border-radius: 8px;
+        color: #b84ae8;
+        font-family: 'Rajdhani', sans-serif;
+        font-size: 1.2rem;
+        font-weight: 700;
+        text-transform: uppercase;
+        cursor: pointer;
+        transition: all 0.3s;
+      }
+      .btn-action:hover {
+        background: rgba(184, 74, 232, 0.1);
+      }
+      .btn-mass {
+        background: #b84ae8;
+        color: #fff;
+        border: none;
+      }
+      .btn-mass:hover {
+        background: #9b30c4;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="terminal-app">
+      <div class="header">
+        <div class="logo">Engine // PRNG</div>
+        <div class="phoenix-node">Phoenix Node Active</div>
+      </div>
+
+      <div class="content">
+        <div class="prng-window">
+          <div
+            style="
+              font-size: 0.75rem;
+              color: #b84ae8;
+              text-transform: uppercase;
+              letter-spacing: 1px;
+            "
+          >
+            Live Cryptographic Seed
+          </div>
+          <div class="hash-display" id="hash-view">0xA8F9B2...</div>
+
+          <div class="spin-result" id="result-text">AWAITING SPIN</div>
+          <div id="payout-text" style="height: 20px; font-size: 1.1rem">---</div>
+        </div>
+
+        <div class="stats-grid">
+          <div class="stat-box">
+            <div class="stat-label">Total Spins</div>
+            <div class="stat-val" id="val-spins">0</div>
+          </div>
+          <div class="stat-box">
+            <div class="stat-label">Total Bet (€1)</div>
+            <div class="stat-val" id="val-bet">€0.00</div>
+          </div>
+          <div class="stat-box">
+            <div class="stat-label">Total Won</div>
+            <div class="stat-val" id="val-won" style="color: #00e676">€0.00</div>
+          </div>
+          <div class="stat-box" style="border-color: #b84ae8; background: rgba(184, 74, 232, 0.05)">
+            <div class="stat-label" style="color: #b84ae8">Actual RTP</div>
+            <div class="stat-val highlight-rtp" id="val-rtp">0.00%</div>
+          </div>
+        </div>
+
+        <div style="text-align: center; font-size: 0.75rem; color: #888">
+          Target Math Engine RTP: 96.50%
+        </div>
+
+        <div class="control-panel">
+          <div
+            style="font-size: 0.8rem; color: #888; margin-bottom: 8px; text-transform: uppercase"
+          >
+            Algorithm Volatility
+          </div>
+          <div class="volatility-selector">
+            <button class="vol-btn" id="vol-low" onclick="setVol('low')">LOW (40% Hit)</button>
+            <button class="vol-btn active" id="vol-med" onclick="setVol('med')">
+              MED (20% Hit)
+            </button>
+            <button class="vol-btn" id="vol-high" onclick="setVol('high')">HIGH (5% Hit)</button>
+          </div>
+
+          <button class="btn-action" onclick="simulateSpin(1)" id="btn-single">
+            Execute 1 Spin
+          </button>
+          <button class="btn-action btn-mass" onclick="simulateSpin(1000)">
+            Simulate 1,000 Spins
+          </button>
+        </div>
+
+        <div style="font-size: 0.7rem; color: #555; text-align: center; margin-top: auto">
+          Gemini Protocol: PRNG Simulator · Mathematical Gravity Simulator
+        </div>
+      </div>
+    </div>
+
+    <script>
+      // Core Statistics
+      let totalSpins = 0;
+      let totalBet = 0;
+      let totalWon = 0;
+      const targetRTP = 0.965; // 96.5% Target
+
+      // Volatility Settings (Probability vs Payout Multiplier)
+      let hitChance = 0.2; // Medium default
+      let winMultiplier = targetRTP / hitChance;
+
+      function setVol(level) {
+        document.getElementById('vol-low').classList.remove('active');
+        document.getElementById('vol-med').classList.remove('active');
+        document.getElementById('vol-high').classList.remove('active');
+
+        if (level === 'low') {
+          hitChance = 0.4; // High frequency, low payout
+          document.getElementById('vol-low').classList.add('active');
+        } else if (level === 'med') {
+          hitChance = 0.2; // Medium frequency
+          document.getElementById('vol-med').classList.add('active');
+        } else {
+          hitChance = 0.05; // Rare hits, massive payout
+          document.getElementById('vol-high').classList.add('active');
+        }
+        winMultiplier = targetRTP / hitChance;
+      }
+
+      function generateHash() {
+        return (
+          '0x' +
+          Math.floor(Math.random() * 16777215)
+            .toString(16)
+            .toUpperCase()
+            .padStart(6, '0')
+        );
+      }
+
+      function simulateSpin(count) {
+        const btnSingle = document.getElementById('btn-single');
+        const hashView = document.getElementById('hash-view');
+        const resultText = document.getElementById('result-text');
+        const payoutText = document.getElementById('payout-text');
+
+        // Visual effect for a single spin to show the "computation"
+        if (count === 1) {
+          btnSingle.innerText = 'DECRYPTING...';
+          let ticks = 0;
+          const visualTimer = setInterval(() => {
+            hashView.innerText = generateHash();
+            ticks++;
+            if (ticks > 10) {
+              clearInterval(visualTimer);
+              btnSingle.innerText = 'Execute 1 Spin';
+              processMath(1, true);
+            }
+          }, 50);
+        } else {
+          // Mass simulation (instant to show mathematical gravity)
+          hashView.innerText = generateHash() + ' [MASS SIM]';
+          processMath(count, false);
+        }
+      }
+
+      function processMath(count, updateMainUI) {
+        let tempWon = 0;
+
+        for (let i = 0; i < count; i++) {
+          totalSpins++;
+          totalBet += 1.0; // 1 Euro bet per spin
+
+          const prng = Math.random(); // The actual "Slot Machine" core
+
+          if (prng <= hitChance) {
+            // Injecting slight variance into the win multiplier to simulate a paytable
+            const variance = Math.random() * 0.4 + 0.8; // +/- 20%
+            const winAmount = winMultiplier * variance;
+            tempWon += winAmount;
+            totalWon += winAmount;
+
+            if (updateMainUI) {
+              document.getElementById('result-text').innerText = 'HIT REGISTERED';
+              document.getElementById('result-text').style.color = '#00e676';
+              document.getElementById('payout-text').className = 'win-amount';
+              document.getElementById('payout-text').innerText = `+ €${winAmount.toFixed(2)}`;
+            }
+          } else {
+            if (updateMainUI) {
+              document.getElementById('result-text').innerText = 'NULL SEED';
+              document.getElementById('result-text').style.color = '#555';
+              document.getElementById('payout-text').className = 'loss-amount';
+              document.getElementById('payout-text').innerText = '- €1.00';
+            }
+          }
+        }
+
+        // Update Statistics Board
+        document.getElementById('val-spins').innerText = totalSpins.toLocaleString();
+        document.getElementById('val-bet').innerText = `€${totalBet.toFixed(2)}`;
+        document.getElementById('val-won').innerText = `€${totalWon.toFixed(2)}`;
+
+        const currentRTP = (totalWon / totalBet) * 100;
+        document.getElementById('val-rtp').innerText = `${currentRTP.toFixed(2)}%`;
+      }
+    </script>
+  </body>
+</html>

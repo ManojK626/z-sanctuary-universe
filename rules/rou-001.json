@@ -1,0 +1,55 @@
+{
+  "rule_id": "ROU-001",
+  "rule_name": "Pattern Insight Only",
+  "trigger": {
+    "type": "event",
+    "source": "roulette-module",
+    "event_type": "RISK_PATTERN_DETECTED",
+    "payload_schema_ref": "schemas/z_context_snapshot.schema.json"
+  },
+  "context_requirements": {
+    "z_state": true,
+    "lpbs_state": true,
+    "ggaesp_360": true,
+    "wellbeing_state": true,
+    "session_meta": true
+  },
+  "conditions": [
+    { "path": "/z_state/risk_pattern", "op": "exists", "value": true },
+    { "path": "/ggaesp_360/stability", "op": "gte", "value": 0.6 }
+  ],
+  "risk_class": "low",
+  "consent": {
+    "level": "notify",
+    "timeout_policy": "wait",
+    "timeout_seconds": 300
+  },
+  "action_set": {
+    "allowed_actions": [
+      {
+        "type": "ui_modal",
+        "params": { "message": "Pattern insight available. Read-only view.", "mode": "read_only" }
+      },
+      { "type": "write_audit_note", "params": { "note": "Pattern insight shown." } }
+    ],
+    "max_repetitions": 3,
+    "cooldown_seconds": 1800,
+    "rollback_allowed": true
+  },
+  "governance": {
+    "ai_allowed": ["observe", "suggest", "explain"],
+    "ai_forbidden": ["execute", "authorize", "modify_rules", "bypass_consent"],
+    "human_override": "always_true"
+  },
+  "audit_seal": {
+    "ethical_intent": "Inform without steering or pressure.",
+    "creator_signature": "z-sanctuary-core",
+    "creation_time": "2026-01-16T00:00:00Z",
+    "version": "1.0.0"
+  },
+  "lifecycle": {
+    "status": "active",
+    "activation_date": "2026-01-16T00:00:00Z",
+    "review_interval_days": 60
+  }
+}

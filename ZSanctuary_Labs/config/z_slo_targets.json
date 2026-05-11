@@ -1,0 +1,36 @@
+{
+  "generated_at": "2026-02-20T00:00:00Z",
+  "source": "z_system_maturity_benchmark",
+  "targets": [
+    {
+      "id": "web:readiness",
+      "description": "Dashboard readiness sweep must finish with healthy status",
+      "metrics": {
+        "pass_rate": 0.995,
+        "freshness_sec": 120,
+        "latency_p95_ms": 1200
+      },
+      "budget_hours_per_day": 0.25
+    },
+    {
+      "id": "workspace:auto-sweep",
+      "description": "Governance sweep must stay up-to-date",
+      "metrics": {
+        "pass_rate": 0.99,
+        "freshness_sec": 300,
+        "latency_p95_ms": 1800
+      },
+      "budget_hours_per_day": 0.5
+    },
+    {
+      "id": "extension_guard",
+      "description": "Extension posture validation must run unblocked",
+      "metrics": {
+        "pass_rate": 0.995,
+        "freshness_sec": 600,
+        "latency_p95_ms": 1000
+      },
+      "budget_hours_per_day": 0.1
+    }
+  ]
+}

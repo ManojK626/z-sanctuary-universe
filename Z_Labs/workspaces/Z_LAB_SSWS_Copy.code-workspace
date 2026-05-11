@@ -1,0 +1,14 @@
+{
+  "folders": [
+    {
+      "path": "C:\\Cursor Projects Organiser\\ZSanctuary_Universe\\Z_Labs\\copies\\z_ssws_copy"
+    }
+  ],
+  "settings": {
+    "files.autoSave": "afterDelay",
+    "editor.formatOnSave": true,
+    "terminal.integrated.defaultProfile.windows": "PowerShell",
+    "task.allowAutomaticTasks": "on",
+    "liveServer.settings.port": 5602
+  }
+}

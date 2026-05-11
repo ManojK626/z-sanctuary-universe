@@ -1,0 +1,23 @@
+{
+  "id": "z_gadget_mirrors",
+  "name": "Z-Gadget Mirrors",
+  "type": "app_module",
+  "status": "active",
+  "entrypoints": {
+    "web": "apps/z_gadget_mirrors/ui_web_portal/index.html",
+    "docs": "apps/z_gadget_mirrors/docs/MDE_OVERVIEW.md"
+  },
+  "capabilities": {
+    "auth": "local_first",
+    "storage": "local_first",
+    "analytics": "read_only_recommendations",
+    "partner_links": true
+  },
+  "governance": {
+    "deterministic_core": true,
+    "auditable_scoring": true,
+    "no_os_emulation": true,
+    "no_proprietary_ui_copy": true,
+    "approval_required_for_device_actions": true
+  }
+}

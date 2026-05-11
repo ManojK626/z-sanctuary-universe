@@ -1,0 +1,380 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Z-Sanctuary — Public Trust Portal</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <style>
+      body {
+        font-family:
+          system-ui,
+          -apple-system,
+          Segoe UI,
+          Roboto,
+          sans-serif;
+        background: #0f1218;
+        color: #e6e8ee;
+        padding: 24px;
+        max-width: 900px;
+        margin: auto;
+      }
+      h1 {
+        font-size: 22px;
+      }
+      h2 {
+        font-size: 16px;
+        margin-top: 24px;
+      }
+      .box {
+        background: rgba(255, 255, 255, 0.04);
+        border-radius: 10px;
+        padding: 12px 14px;
+        margin-top: 8px;
+      }
+      .zRow {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        gap: 16px;
+        flex-wrap: wrap;
+      }
+      .badge-row {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px;
+        margin-top: 10px;
+      }
+      .badge {
+        padding: 2px 10px;
+        border-radius: 999px;
+        font-size: 11px;
+        background: rgba(255, 255, 255, 0.08);
+      }
+      .pill {
+        display: inline-block;
+        padding: 2px 8px;
+        border-radius: 999px;
+        font-size: 11px;
+        background: rgba(255, 255, 255, 0.08);
+        margin-left: 6px;
+        border: 1px solid rgba(255, 255, 255, 0.08);
+      }
+      .pill:hover {
+        background: rgba(255, 255, 255, 0.14);
+      }
+      .pill:active {
+        background: rgba(255, 255, 255, 0.2);
+      }
+      .pill:focus {
+        outline: 2px solid rgba(147, 197, 253, 0.6);
+        outline-offset: 2px;
+      }
+      .muted {
+        opacity: 0.65;
+        font-size: 13px;
+      }
+      a {
+        color: #93c5fd;
+        text-decoration: none;
+      }
+      a:focus {
+        outline: 2px solid rgba(147, 197, 253, 0.6);
+        outline-offset: 2px;
+      }
+      select {
+        background: rgba(255, 255, 255, 0.06);
+        color: #e6e8ee;
+        border: 1px solid rgba(255, 255, 255, 0.12);
+        border-radius: 8px;
+        padding: 2px 6px;
+        font-size: 12px;
+        min-width: 210px;
+        appearance: none;
+        padding-right: 22px;
+        background-image:
+          linear-gradient(45deg, transparent 50%, rgba(230, 232, 238, 0.9) 50%),
+          linear-gradient(135deg, rgba(230, 232, 238, 0.9) 50%, transparent 50%);
+        background-position:
+          calc(100% - 14px) 9px,
+          calc(100% - 9px) 9px;
+        background-size:
+          5px 5px,
+          5px 5px;
+        background-repeat: no-repeat;
+      }
+      select:focus {
+        outline: 2px solid rgba(147, 197, 253, 0.6);
+        outline-offset: 2px;
+      }
+    </style>
+  </head>
+  <body data-public="true">
+    <div class="zRow">
+      <div>
+        <h1>Z-Sanctuary Public Trust Portal</h1>
+        <div class="muted">
+          Read-only transparency view. No predictions. No actions. Observational only.
+        </div>
+        <div class="muted" style="margin-top: 8px">
+          Timezone:
+          <select id="tzSelect">
+            <option value="AUTO" selected>Auto (local)</option>
+            <option value="UTC">UTC</option>
+            <option value="Europe/Dublin">Ireland (Europe/Dublin)</option>
+            <option value="America/New_York">US Eastern</option>
+            <option value="America/Chicago">US Central</option>
+            <option value="America/Los_Angeles">US Pacific</option>
+            <option value="Europe/London">UK (Europe/London)</option>
+            <option value="Europe/Paris">Europe/Paris</option>
+            <option value="Asia/Dubai">Dubai</option>
+            <option value="Asia/Kolkata">India</option>
+            <option value="Asia/Singapore">Singapore</option>
+            <option value="Asia/Tokyo">Japan</option>
+            <option value="Australia/Sydney">Australia/Sydney</option>
+          </select>
+          <button id="tzRefreshBtn" class="pill" style="margin-left: 6px; cursor: pointer">
+            Refresh
+          </button>
+        </div>
+      </div>
+      <div id="trustRhythmPill" class="badge">Rhythm: —</div>
+    </div>
+    <div id="trustBadges" class="badge-row"></div>
+
+    <div class="box muted">
+      Lottery Registry Notice: Listed lotteries represent registered formats known to the
+      observatory. Registration indicates structural awareness only. Historical draw data,
+      predictions, or analytics are produced only when verified datasets are ingested and validated.
+      Absence of data is tracked and reported as manual/missing.
+    </div>
+
+    <div class="box">
+      <div><a href="../../SYSTEM_STATUS.md">System Status (latest)</a></div>
+      <div class="muted">Auto-generated operational summary.</div>
+    </div>
+
+    <div class="box">
+      <div><a href="../../exports/trust_pack_latest.zip">Trust Pack (latest)</a></div>
+      <div class="muted" id="trustPackTimestamp">Trust pack: —</div>
+    </div>
+
+    <div class="box">
+      <div>
+        <a href="../../exports/legal_provenance_pack_latest.zip">Legal Provenance Pack (latest)</a>
+      </div>
+      <div class="muted" id="legalPackTimestamp">Legal pack: —</div>
+    </div>
+
+    <div class="box">
+      <div>
+        <a href="../../exports/safe_vault_public/safe_vault_latest.zip"
+          >Safe Vault (public redacted)</a
+        >
+      </div>
+      <div class="muted" id="safeVaultTimestamp">Safe Vault (public): —</div>
+    </div>
+
+    <div class="box">
+      <div><a href="../education/orientation.html">Orientation (Level 0)</a></div>
+      <div class="muted">What this system is, and what it is not.</div>
+    </div>
+
+    <div class="box">
+      <div><a href="../education/learning_cards.html">Learning Cards</a></div>
+      <div class="muted">
+        Read-only explanations for Rhythm, Feeling, Trust, JailCell, and KAIROCELL.
+      </div>
+    </div>
+
+    <div class="box">
+      <div><a href="../../trust/trust_walkthrough.html">Trust Walkthrough</a></div>
+      <div class="muted">A calm, read-only guide to how the Sanctuary earns trust.</div>
+    </div>
+
+    <div id="trust-root"></div>
+
+    <script type="module" src="./trust_portal.js"></script>
+    <script type="module">
+      async function loadRhythm() {
+        try {
+          const res = await fetch('../../data/reports/system_status.json', { cache: 'no-store' });
+          const status = await res.json();
+          const pill = document.getElementById('trustRhythmPill');
+          if (pill) {
+            pill.textContent = `Rhythm: ${status?.rhythm_state || '—'}`;
+          }
+        } catch {}
+      }
+      loadRhythm();
+
+      let trustGeneratedAt = null;
+      let legalGeneratedAt = null;
+      let trustZipBytes = null;
+      let legalZipBytes = null;
+      let safeVaultZipBytes = null;
+      let safeVaultGeneratedAt = null;
+
+      function formatTimestamp(value, timeZone = 'UTC') {
+        if (!value) return 'unknown';
+        const date = new Date(value);
+        if (Number.isNaN(date.getTime())) return value;
+        const opts = {
+          year: 'numeric',
+          month: 'short',
+          day: '2-digit',
+          hour: '2-digit',
+          minute: '2-digit',
+          timeZone,
+          timeZoneName: 'short',
+        };
+        return date.toLocaleString('en-US', opts);
+      }
+
+      function renderTrustPackTimestamp() {
+        const stamp = document.getElementById('trustPackTimestamp');
+        const legalStamp = document.getElementById('legalPackTimestamp');
+        const selected = document.getElementById('tzSelect')?.value || 'UTC';
+        const autoTz = Intl.DateTimeFormat().resolvedOptions().timeZone || 'UTC';
+        const tz = selected === 'AUTO' ? autoTz : selected;
+        if (!stamp) return;
+        if (!trustGeneratedAt) {
+          stamp.textContent = 'Trust pack: unavailable';
+        }
+        const label = selected === 'AUTO' ? `Auto (${autoTz})` : tz;
+        if (trustGeneratedAt) {
+          const size = trustZipBytes ? ` · ${formatBytes(trustZipBytes)} (compressed)` : '';
+          stamp.textContent = `Trust pack: ${formatTimestamp(trustGeneratedAt, tz)} · ${label}${size}`;
+        }
+        if (legalStamp) {
+          if (!legalGeneratedAt) {
+            legalStamp.textContent = 'Legal pack: unavailable';
+          } else {
+            const size = legalZipBytes ? ` · ${formatBytes(legalZipBytes)} (compressed)` : '';
+            legalStamp.textContent = `Legal pack: ${formatTimestamp(legalGeneratedAt, tz)} · ${label}${size}`;
+          }
+        }
+        const safeStamp = document.getElementById('safeVaultTimestamp');
+        if (safeStamp) {
+          if (!safeVaultGeneratedAt && !safeVaultZipBytes) {
+            safeStamp.textContent = `Safe Vault (public): unavailable · ${label}`;
+          } else {
+            const size = safeVaultZipBytes
+              ? ` · ${formatBytes(safeVaultZipBytes)} (compressed)`
+              : '';
+            const stamp = safeVaultGeneratedAt
+              ? `${formatTimestamp(safeVaultGeneratedAt, 'UTC')}`
+              : 'unknown';
+            safeStamp.textContent = `Safe Vault (public): ${stamp} · UTC${size}`;
+          }
+        }
+      }
+
+      async function loadTrustPackTimestamp() {
+        try {
+          const res = await fetch('../../exports/trust_pack_latest/MANIFEST.json', {
+            cache: 'no-store',
+          });
+          if (!res.ok) throw new Error('trust manifest missing');
+          const data = await res.json();
+          trustGeneratedAt = data.generated_at || null;
+          renderTrustPackTimestamp();
+        } catch {
+          const stamp = document.getElementById('trustPackTimestamp');
+          if (stamp) stamp.textContent = 'Trust pack: unavailable';
+        }
+      }
+      loadTrustPackTimestamp();
+      async function loadLegalPackTimestamp() {
+        try {
+          const res = await fetch('../../exports/legal_provenance_pack_latest/MANIFEST.json', {
+            cache: 'no-store',
+          });
+          if (!res.ok) throw new Error('legal manifest missing');
+          const data = await res.json();
+          legalGeneratedAt = data.generated_at || null;
+          renderTrustPackTimestamp();
+        } catch {
+          const stamp = document.getElementById('legalPackTimestamp');
+          if (stamp) stamp.textContent = 'Legal pack: unavailable';
+        }
+      }
+      loadLegalPackTimestamp();
+
+      function formatBytes(bytes) {
+        if (!bytes && bytes !== 0) return '';
+        const mb = bytes / (1024 * 1024);
+        return `${mb.toFixed(mb >= 10 ? 0 : 1)} MB`;
+      }
+
+      async function loadTrustZipSize() {
+        try {
+          const res = await fetch('../../exports/trust_pack_latest.zip', { method: 'HEAD' });
+          if (!res.ok) return;
+          const len = res.headers.get('content-length');
+          trustZipBytes = len ? Number(len) : null;
+          renderTrustPackTimestamp();
+        } catch {}
+      }
+      async function loadLegalZipSize() {
+        try {
+          const res = await fetch('../../exports/legal_provenance_pack_latest.zip', {
+            method: 'HEAD',
+          });
+          if (!res.ok) return;
+          const len = res.headers.get('content-length');
+          legalZipBytes = len ? Number(len) : null;
+          renderTrustPackTimestamp();
+        } catch {}
+      }
+      loadTrustZipSize();
+      loadLegalZipSize();
+      loadSafeVaultZipSize();
+
+      async function loadSafeVaultManifest() {
+        try {
+          const res = await fetch('../../data/safe_vault/MANIFEST.json', { cache: 'no-store' });
+          if (!res.ok) return;
+          const data = await res.json();
+          safeVaultGeneratedAt = data.generated_at || null;
+          renderTrustPackTimestamp();
+        } catch {}
+      }
+      loadSafeVaultManifest();
+
+      async function loadSafeVaultZipSize() {
+        try {
+          const res = await fetch('../../exports/safe_vault_public/safe_vault_latest.zip', {
+            method: 'HEAD',
+          });
+          if (!res.ok) return;
+          const len = res.headers.get('content-length');
+          safeVaultZipBytes = len ? Number(len) : null;
+          renderTrustPackTimestamp();
+        } catch {}
+      }
+
+      const tzSelect = document.getElementById('tzSelect');
+      const tzRefreshBtn = document.getElementById('tzRefreshBtn');
+      if (tzSelect) {
+        function updateAutoLabel() {
+          const autoTz = Intl.DateTimeFormat().resolvedOptions().timeZone || 'UTC';
+          const autoOption = tzSelect.querySelector('option[value="AUTO"]');
+          if (autoOption) {
+            autoOption.textContent = `Auto (Detected: ${autoTz})`;
+          }
+          renderTrustPackTimestamp();
+        }
+        updateAutoLabel();
+        tzSelect.addEventListener('change', updateAutoLabel);
+        setInterval(updateAutoLabel, 60_000);
+        if (tzRefreshBtn) tzRefreshBtn.addEventListener('click', updateAutoLabel);
+      }
+    </script>
+    <script
+      src="../z_bootstrap.js"
+      data-z-root="../../"
+      data-z-rhythm="true"
+      data-z-feeling="true"
+    ></script>
+  </body>
+</html>

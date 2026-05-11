@@ -1,0 +1,82 @@
+{
+  "run_id": "20260130T224727Z",
+  "generated_at": "2026-01-30T22:47:28.554780+00:00",
+  "lotteries": [
+    {
+      "code": "eurojackpot",
+      "phase": "Observe",
+      "micro_cell": "Focus Cell",
+      "orientation": "Calm Ring",
+      "confidence": 0.82,
+      "entropy": {
+        "frequency": 5.483856,
+        "gap": 1.5,
+        "pair": 6.643856
+      },
+      "history_hash": "sha256:e7907a127334122365fe77d8cb9e83c472879cd75214b7998aff66cedd69ab13",
+      "notes": []
+    },
+    {
+      "code": "euromillions",
+      "phase": "Align",
+      "micro_cell": "Focus Cell",
+      "orientation": "Calm Ring",
+      "confidence": 0.88,
+      "entropy": {
+        "frequency": 5.573557,
+        "gap": 1.760964,
+        "pair": 6.840224
+      },
+      "history_hash": "sha256:6d4d3b5dcadd6260c7107572b6d07e78516e579fa8329890a07add45d71b3c40",
+      "notes": []
+    },
+    {
+      "code": "global-sevens",
+      "phase": "Align",
+      "micro_cell": "Focus Cell",
+      "orientation": "Calm Ring",
+      "confidence": 0.88,
+      "entropy": {
+        "frequency": 5.563856,
+        "gap": 1.0,
+        "pair": 6.643856
+      },
+      "history_hash": "sha256:311f088f7a882e0fcc22793cf6a1f947330448ff364b83acbd88a87f46591e24",
+      "notes": []
+    },
+    {
+      "code": "mega-millions",
+      "phase": "Impact",
+      "micro_cell": "Expanse Cell",
+      "orientation": "Storm Ring",
+      "confidence": 0.82,
+      "entropy": {
+        "frequency": 6.023866,
+        "gap": 5.056915,
+        "pair": 11.13634
+      },
+      "history_hash": "sha256:5c00a510e38b3b78bc7415f7fd1d1f55c798dc6d6bae4e4fcd475b962ebed946",
+      "notes": []
+    },
+    {
+      "code": "powerball",
+      "phase": "Impact",
+      "micro_cell": "Expanse Cell",
+      "orientation": "Storm Ring",
+      "confidence": 0.77,
+      "entropy": {
+        "frequency": 6.094623,
+        "gap": 5.086645,
+        "pair": 11.088188
+      },
+      "history_hash": "sha256:19977d4336288bf15f9eb7b8a7956265c15b8b527b95dcebe861679179dc883d",
+      "notes": []
+    }
+  ],
+  "ring": {
+    "lotteries": 5,
+    "avg_frequency": 5.748,
+    "avg_gap": 2.881,
+    "avg_pair": 8.47
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "_fixture": "zuno_task_plan_v1",
+  "_non_executable": true,
+  "_description": "Illustrative ZunoTaskPlan — planned steps only; no execution.",
+  "planId": "plan-example-001",
+  "requestId": "req-example-001",
+  "steps": [
+    {
+      "stepId": "step-1",
+      "description": "Run Zuno coverage audit and capture JSON report path.",
+      "capability": {
+        "family": "evaluation_verify",
+        "labels": ["npm_script", "zuno_coverage"]
+      },
+      "requiresHumanApproval": false
+    },
+    {
+      "stepId": "step-2",
+      "description": "Summarize FOUND_PARTIAL modules for operator review.",
+      "capability": {
+        "family": "text_reasoning",
+        "labels": ["summary", "registry_grounded"]
+      },
+      "requiresHumanApproval": true
+    }
+  ],
+  "drpPreview": {
+    "overall": "pending_human",
+    "dimensions": {
+      "human_approval_sacred_moves": "review",
+      "deployment_hold": "ok"
+    },
+    "rationale": [
+      "Step 2 exposes registry interpretation — operator confirms before any path edits."
+    ]
+  }
+}

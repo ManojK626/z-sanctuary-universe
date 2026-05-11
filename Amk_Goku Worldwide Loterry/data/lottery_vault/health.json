@@ -1,0 +1,50 @@
+{
+  "generated_at": "2026-02-15T15:41:20Z",
+  "manual_total": 6,
+  "manual_present": 0,
+  "manual_missing": 6,
+  "details": [
+    {
+      "id": "uk-lotto",
+      "name": "UK Lotto",
+      "region": "UK",
+      "raw_present": false,
+      "raw_path": "data\\lottery_vault\\uk\\uk-lotto\\raw\\uk-lotto.csv"
+    },
+    {
+      "id": "la-primitiva",
+      "name": "La Primitiva",
+      "region": "ES",
+      "raw_present": false,
+      "raw_path": "data\\lottery_vault\\es\\la-primitiva\\raw\\la-primitiva.csv"
+    },
+    {
+      "id": "mauritius-loto-vert",
+      "name": "Mauritius Loto Vert",
+      "region": "MU",
+      "raw_present": false,
+      "raw_path": "data\\lottery_vault\\mu\\mauritius-loto-vert\\raw\\mauritius-loto-vert.csv"
+    },
+    {
+      "id": "eurojackpot",
+      "name": "Eurojackpot",
+      "region": "EU",
+      "raw_present": false,
+      "raw_path": "data\\lottery_vault\\eu\\eurojackpot\\raw\\eurojackpot.csv"
+    },
+    {
+      "id": "euromillions",
+      "name": "EuroMillions",
+      "region": "EU",
+      "raw_present": false,
+      "raw_path": "data\\lottery_vault\\eu\\euromillions\\raw\\euromillions.csv"
+    },
+    {
+      "id": "global-sevens",
+      "name": "Global Sevens",
+      "region": "Global",
+      "raw_present": false,
+      "raw_path": "data\\lottery_vault\\global\\global-sevens\\raw\\global-sevens.csv"
+    }
+  ]
+}

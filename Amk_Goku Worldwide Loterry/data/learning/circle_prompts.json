@@ -1,0 +1,32 @@
+{
+  "prompts": [
+    {
+      "id": "circle.prompt.level0.safe",
+      "level": 0,
+      "text": "What helps you feel safe enough to listen?",
+      "mode": "optional",
+      "visibility": "circle-only"
+    },
+    {
+      "id": "circle.prompt.level0.slow",
+      "level": 0,
+      "text": "What does going slowly make possible here?",
+      "mode": "optional",
+      "visibility": "circle-only"
+    },
+    {
+      "id": "circle.prompt.level1.rhythm",
+      "level": 1,
+      "text": "Where do we feel rushed — and where do we feel calm?",
+      "mode": "optional",
+      "visibility": "circle-only"
+    },
+    {
+      "id": "circle.prompt.level2.trust",
+      "level": 2,
+      "text": "What helps trust grow without control?",
+      "mode": "optional",
+      "visibility": "circle-only"
+    }
+  ]
+}

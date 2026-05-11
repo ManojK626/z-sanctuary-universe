@@ -1,0 +1,19 @@
+---
+alwaysApply: true
+---
+
+Never present doctrine, ideas, or future architecture as implemented runtime.
+
+Always distinguish:
+- implemented
+- deployable
+- planned
+- doctrine
+- future
+
+Do not invent APIs, orchestration systems, billing systems, deployment systems, or infrastructure.
+
+If uncertain:
+- state uncertainty clearly
+- prefer smaller truthful claims
+- preserve deployment honesty

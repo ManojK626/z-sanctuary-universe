@@ -1,0 +1,12 @@
+{
+  "inshorts": { "category": "news", "type": "free" },
+  "reddit": { "category": "news", "type": "free" },
+  "powerball": { "category": "lottery", "type": "official" },
+  "mega-millions": { "category": "lottery", "type": "official" },
+  "uk-lotto": { "category": "lottery", "type": "manual" },
+  "la-primitiva": { "category": "lottery", "type": "manual" },
+  "mauritius-loto-vert": { "category": "lottery", "type": "manual" },
+  "eurojackpot": { "category": "lottery", "type": "manual" },
+  "euromillions": { "category": "lottery", "type": "manual" },
+  "global-sevens": { "category": "lottery", "type": "manual" }
+}

@@ -1,0 +1,54 @@
+{
+  "rule_id": "ROU-020",
+  "rule_name": "Loss Spiral Gate",
+  "trigger": {
+    "type": "event",
+    "source": "roulette-module",
+    "event_type": "LOSS_MOMENTUM_UPDATED",
+    "payload_schema_ref": "schemas/z_context_snapshot.schema.json"
+  },
+  "context_requirements": {
+    "z_state": true,
+    "lpbs_state": true,
+    "ggaesp_360": true,
+    "wellbeing_state": true,
+    "session_meta": true
+  },
+  "conditions": [
+    { "path": "/z_state/loss_momentum", "op": "gte", "value": 0.7 },
+    { "path": "/ggaesp_360/stability", "op": "lte", "value": 0.4 },
+    { "path": "/wellbeing_state/fatigue_index", "op": "gte", "value": 0.7 }
+  ],
+  "risk_class": "high",
+  "consent": {
+    "level": "require_human",
+    "timeout_policy": "wait",
+    "timeout_seconds": 0
+  },
+  "action_set": {
+    "allowed_actions": [
+      { "type": "soft_lock_module", "params": { "module": "roulette" } },
+      { "type": "start_cooldown", "params": { "cooldown_seconds": 900 } },
+      { "type": "ui_modal", "params": { "message": "Cooldown required. Choose to pause or exit." } }
+    ],
+    "max_repetitions": 1,
+    "cooldown_seconds": 1800,
+    "rollback_allowed": false
+  },
+  "governance": {
+    "ai_allowed": ["observe", "suggest", "explain"],
+    "ai_forbidden": ["execute", "authorize", "modify_rules", "bypass_consent"],
+    "human_override": "always_true"
+  },
+  "audit_seal": {
+    "ethical_intent": "Prevent harm during accelerating loss with instability and fatigue.",
+    "creator_signature": "z-sanctuary-core",
+    "creation_time": "2026-01-16T00:00:00Z",
+    "version": "1.0.0"
+  },
+  "lifecycle": {
+    "status": "active",
+    "activation_date": "2026-01-16T00:00:00Z",
+    "review_interval_days": 30
+  }
+}

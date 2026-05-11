@@ -1,0 +1,46 @@
+{
+  "version": "1.0.0",
+  "mode": "audit-only",
+  "scan_roots": [
+    "core",
+    "scripts",
+    "docs",
+    "rules",
+    "schemas",
+    "config",
+    "data",
+    "products",
+    "interface",
+    "Amk_Goku Worldwide Loterry/ui/public_trust"
+  ],
+  "exclude_contains": [
+    ".git/",
+    "node_modules/",
+    "logs/",
+    "__pycache__/",
+    "safe_pack/z_sanctuary_vault/folder_manager/snapshots/",
+    "safe_pack/z_sanctuary_vault/storage_hygiene/quarantine/"
+  ],
+  "max_file_size_kb": 512,
+  "text_extensions": [
+    ".js",
+    ".mjs",
+    ".cjs",
+    ".py",
+    ".json",
+    ".jsonl",
+    ".md",
+    ".txt",
+    ".yml",
+    ".yaml",
+    ".ini",
+    ".env",
+    ".html",
+    ".css"
+  ],
+  "allow_path_patterns": [".env.example", "config/z_request_access_public.pem", "docs/"],
+  "thresholds": {
+    "critical_max": 0,
+    "high_max": 0
+  }
+}

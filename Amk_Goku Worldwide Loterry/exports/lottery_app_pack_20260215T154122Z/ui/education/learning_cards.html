@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Z-Sanctuary · Learning Cards</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <style>
+      body {
+        font-family:
+          system-ui,
+          -apple-system,
+          Segoe UI,
+          Roboto,
+          sans-serif;
+        background: #0f1218;
+        color: #e6e8ee;
+        padding: 24px;
+        max-width: 900px;
+        margin: auto;
+      }
+      h1 {
+        font-size: 22px;
+      }
+      .muted {
+        opacity: 0.7;
+        font-size: 13px;
+      }
+      .card {
+        margin-top: 10px;
+        padding: 12px;
+        border-radius: 12px;
+        background: rgba(255, 255, 255, 0.05);
+      }
+      a:focus {
+        outline: 2px solid rgba(147, 197, 253, 0.6);
+        outline-offset: 2px;
+      }
+    </style>
+  </head>
+  <body data-public="true">
+    <h1>Learning Cards</h1>
+    <div class="muted">Read-only · Optional · Non-predictive</div>
+    <div id="cards">Loading…</div>
+
+    <script src="../z_bootstrap.js" data-z-root="../../"></script>
+    <script type="module">
+      async function render() {
+        await window.ZLearningRegistryLoad?.();
+        const cards = Object.values(window.ZLearningRegistry || {});
+        const root = document.getElementById('cards');
+        root.innerHTML = cards
+          .map(
+            (card) => `
+        <div class="card">
+          <div><strong>${card.title}</strong></div>
+          <div class="muted">${card.summary}</div>
+          <div style="margin-top:6px;">${card.body}</div>
+          <div class="muted" style="margin-top:6px;">Reflection: ${card.reflection_prompt || '—'}</div>
+        </div>
+      `
+          )
+          .join('');
+      }
+      render();
+    </script>
+    <script src="/interface/z_accessibility.js"></script>
+  </body>
+</html>

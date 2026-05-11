@@ -1,0 +1,22 @@
+{
+  "tasks": [
+    {
+      "label": "🧭 Lens: Citizen",
+      "type": "shell",
+      "command": "node z_workspace/orchestrator.js citizen",
+      "problemMatcher": []
+    },
+    {
+      "label": "⚙️ Lens: Physics",
+      "type": "shell",
+      "command": "node z_workspace/orchestrator.js physics",
+      "problemMatcher": []
+    },
+    {
+      "label": "👁 Lens: Observer",
+      "type": "shell",
+      "command": "node z_workspace/orchestrator.js observer",
+      "problemMatcher": []
+    }
+  ]
+}

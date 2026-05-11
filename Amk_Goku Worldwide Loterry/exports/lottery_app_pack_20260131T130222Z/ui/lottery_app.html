@@ -1,0 +1,174 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Z-Sanctuary Lottery App</title>
+    <style>
+      body {
+        font-family:
+          system-ui,
+          -apple-system,
+          Segoe UI,
+          Roboto,
+          sans-serif;
+        margin: 0;
+        background: #0b0f18;
+        color: #e6e8ee;
+      }
+      header {
+        padding: 16px 20px;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+        background: rgba(12, 15, 22, 0.95);
+        position: sticky;
+        top: 0;
+        z-index: 10;
+      }
+      header h1 {
+        margin: 0;
+        font-size: 18px;
+      }
+      header .muted {
+        opacity: 0.7;
+        font-size: 12px;
+      }
+      .grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+        gap: 12px;
+        padding: 16px 20px;
+      }
+      .card {
+        background: rgba(18, 20, 26, 0.9);
+        border-radius: 12px;
+        padding: 12px 14px;
+        border: 1px solid rgba(255, 255, 255, 0.08);
+      }
+      .card h3 {
+        margin: 0 0 6px;
+        font-size: 14px;
+      }
+      .card .muted {
+        opacity: 0.7;
+        font-size: 12px;
+      }
+      a {
+        color: #93c5fd;
+        text-decoration: none;
+      }
+      ul {
+        margin: 8px 0 0;
+        padding-left: 18px;
+      }
+      .pill {
+        display: inline-block;
+        padding: 2px 8px;
+        border-radius: 999px;
+        font-size: 11px;
+        background: rgba(255, 255, 255, 0.08);
+        margin-left: 6px;
+      }
+      .pill:hover {
+        background: rgba(255, 255, 255, 0.14);
+      }
+      .pill:active {
+        background: rgba(255, 255, 255, 0.2);
+      }
+      a:focus,
+      .pill:focus {
+        outline: 2px solid rgba(147, 197, 253, 0.6);
+        outline-offset: 2px;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>🎯 Z-Sanctuary Lottery App <span class="pill">Trust Pack</span></h1>
+      <div class="muted">
+        Observer-only. Trust-first. Core v1.0 locked. ·
+        <a href="../exports/lottery_app_pack_latest.zip">Download Latest Pack</a>
+      </div>
+    </header>
+
+    <section class="grid">
+      <div class="card" id="statusCard">
+        <h3>System Status <span class="pill" id="rhythmPill">Rhythm: —</span></h3>
+        <div class="muted" id="statusSummary">Loading system status…</div>
+      </div>
+
+      <div class="card">
+        <h3>Lottery Vault</h3>
+        <div class="muted">Coverage checklist + manual gaps.</div>
+        <ul>
+          <li><a href="./lottery_vault/checklist.html">Open Vault Checklist</a></li>
+          <li><a href="./drift_watch.html">Drift Watch (legacy view)</a></li>
+          <li><a href="./drift_watch/index.html">Drift Watch (timeline)</a></li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <h3>Observatory</h3>
+        <div class="muted">World Pulse, Feeling, Rhythm, KAIROCELL.</div>
+        <ul>
+          <li><a href="./world_observer.html">World Observer</a></li>
+          <li><a href="./feeling_panel.html">Feeling Panel</a></li>
+          <li><a href="./kairocell_overlay.html">KAIROCELL Overlay</a></li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <h3>Learning & Trust</h3>
+        <div class="muted">Orientation, cards, trust portal.</div>
+        <ul>
+          <li><a href="./education/orientation.html">Orientation</a></li>
+          <li><a href="./education/learning_cards.html">Learning Cards</a></li>
+          <li><a href="./public_trust/index.html">Public Trust Portal</a></li>
+          <li><a href="../trust/education_mode_mirror.html">Education Mirror</a></li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <h3>Notebooks & Circles</h3>
+        <div class="muted">Gentle notes, circle learning.</div>
+        <ul>
+          <li><a href="./notebook/basic_notebook.html">Basic Notebook</a></li>
+          <li><a href="./circles/circle_learning_view.html">Circle Learning View</a></li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <h3>Deliverables</h3>
+        <div class="muted">Static, shareable bundles (observational only).</div>
+        <ul>
+          <li><a href="../exports/lottery_app_pack_latest.zip">Lottery App Pack (latest)</a></li>
+          <li><a href="../exports/safe_vault_public">Safe Vault (public redacted)</a></li>
+        </ul>
+      </div>
+    </section>
+
+    <script
+      src="./z_bootstrap.js"
+      data-z-root="../"
+      data-z-rhythm="true"
+      data-z-feeling="true"
+      data-z-apicon="true"
+      data-z-jailcell="true"
+    ></script>
+    <script>
+      async function loadStatus() {
+        try {
+          const res = await fetch('data/reports/system_status.json', { cache: 'no-store' });
+          if (!res.ok) throw new Error('status missing');
+          const status = await res.json();
+          document.getElementById('rhythmPill').textContent =
+            `Rhythm: ${status.rhythm_state || '—'}`;
+          const summary = status.summary || status.overview || 'System status loaded.';
+          document.getElementById('statusSummary').textContent = summary;
+        } catch {
+          document.getElementById('statusSummary').textContent = 'System status unavailable.';
+        }
+      }
+      loadStatus();
+    </script>
+  </body>
+</html>

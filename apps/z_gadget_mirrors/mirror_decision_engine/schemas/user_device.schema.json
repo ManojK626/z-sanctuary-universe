@@ -1,0 +1,41 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "z-sanc://schemas/user_device.schema.json",
+  "title": "UserDevice",
+  "type": "object",
+  "required": ["id", "user_id", "device_profile_id", "purchase_date", "usage"],
+  "properties": {
+    "id": { "type": "string", "pattern": "^[a-z0-9_\\-.]{6,64}$" },
+    "user_id": { "type": "string", "minLength": 3, "maxLength": 128 },
+    "device_profile_id": { "type": "string" },
+    "purchase_date": { "type": "string", "format": "date" },
+    "estimated_price_eur": { "type": "number", "minimum": 0 },
+    "usage": {
+      "type": "object",
+      "required": ["intensity", "primary_roles"],
+      "properties": {
+        "intensity": { "type": "string", "enum": ["light", "medium", "heavy"] },
+        "primary_roles": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "enum": [
+              "creator",
+              "enterprise",
+              "student",
+              "family",
+              "gaming",
+              "travel",
+              "health",
+              "other"
+            ]
+          }
+        },
+        "battery_health_percent": { "type": "integer", "minimum": 0, "maximum": 100 },
+        "storage_pressure": { "type": "string", "enum": ["low", "medium", "high"] }
+      },
+      "additionalProperties": false
+    }
+  },
+  "additionalProperties": false
+}

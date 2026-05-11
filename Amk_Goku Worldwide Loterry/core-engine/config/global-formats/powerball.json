@@ -1,0 +1,22 @@
+{
+  "name": "US Powerball",
+  "code": "powerball",
+  "region": "US",
+  "main": {
+    "min": 1,
+    "max": 69,
+    "count": 5
+  },
+  "lucky": {
+    "min": 1,
+    "max": 26,
+    "count": 1
+  },
+  "format": "5+1",
+  "draw_schedule": ["Wednesday", "Saturday"],
+  "notes": "One of the largest jackpots worldwide; features one red Powerball from 1-26.",
+  "history": "data/histories/powerball.csv",
+  "history_file": "data\\histories\\powerball.csv",
+  "history_hash": "sha256:19977d4336288bf15f9eb7b8a7956265c15b8b527b95dcebe861679179dc883d",
+  "schema_hash": "sha1:26c10bfac1a726899fd6c9d148fd8f1e8ec9a1f2"
+}

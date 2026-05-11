@@ -1,0 +1,1 @@
+"""Rebuild all reports from existing histories without re-ingesting.\"\"\"\n+\n+from __future__ import annotations\n+\n+import subprocess\n+import sys\n+\n+\n+def main() -> None:\n+    subprocess.run([sys.executable, \"core-engine/pipeline.py\", \"--skip-ingest\"], check=True)\n+\n+\n+if __name__ == \"__main__\":\n+    main()\n*** End Patch**

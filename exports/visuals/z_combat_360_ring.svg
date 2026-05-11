@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="600" viewBox="0 0 900 600">
+  <rect width="100%" height="100%" fill="#0b0f1a" />
+  <g transform="translate(450 300)">
+    <circle r="30" fill="none" stroke="#00d4ff" stroke-width="2" />
+    <circle r="80" fill="none" stroke="#00d4ff" stroke-width="2" opacity="0.8" />
+    <circle r="130" fill="none" stroke="#00d4ff" stroke-width="2" opacity="0.6" />
+    <circle r="180" fill="none" stroke="#00d4ff" stroke-width="2" opacity="0.4" />
+
+    <line x1="0" y1="-180" x2="0" y2="180" stroke="#1e90ff" stroke-width="1" opacity="0.4" />
+    <line x1="-180" y1="0" x2="180" y2="0" stroke="#1e90ff" stroke-width="1" opacity="0.4" />
+    <line x1="-127" y1="-127" x2="127" y2="127" stroke="#1e90ff" stroke-width="1" opacity="0.4" />
+    <line x1="-127" y1="127" x2="127" y2="-127" stroke="#1e90ff" stroke-width="1" opacity="0.4" />
+
+    <rect x="155" y="-15" width="25" height="25" fill="none" stroke="#ffcc00" stroke-width="2" />
+    <path d="M 160 -40 A 40 40 0 0 1 200 -0" fill="none" stroke="#ffcc00" stroke-width="2" />
+  </g>
+
+  <text x="30" y="40" fill="#cbd5e1" font-family="Arial" font-size="18">Z Combat 360 Ring + Voxel Grid (Concept)</text>
+  <text x="30" y="70" fill="#9fb3c8" font-family="Arial" font-size="14">Center = gravity core; rings expand by voxel size; cubes map reach angles</text>
+  <text x="30" y="100" fill="#9fb3c8" font-family="Arial" font-size="14">Yellow box = last-inch booster zone; arc = 270-degree micro-twist</text>
+</svg>

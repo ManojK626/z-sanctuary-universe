@@ -1,0 +1,3 @@
+# Z-Editor Lock — VS Code owns these
+.vscode/*.json
+*.code-workspace

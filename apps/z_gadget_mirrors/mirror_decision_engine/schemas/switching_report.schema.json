@@ -1,0 +1,62 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "z-sanc://schemas/switching_report.schema.json",
+  "title": "SwitchingReport",
+  "type": "object",
+  "required": [
+    "id",
+    "user_id",
+    "from_device_id",
+    "to_device_profile_id",
+    "scores",
+    "recommendation"
+  ],
+  "properties": {
+    "id": { "type": "string" },
+    "user_id": { "type": "string" },
+    "from_device_id": { "type": "string" },
+    "to_device_profile_id": { "type": "string" },
+    "inputs": { "type": "object" },
+    "scores": {
+      "type": "object",
+      "required": [
+        "friction_score",
+        "cost_delta_eur",
+        "learning_hours_est",
+        "sustainability_delta"
+      ],
+      "properties": {
+        "friction_score": { "type": "integer", "minimum": 0, "maximum": 100 },
+        "cost_delta_eur": { "type": "number" },
+        "learning_hours_est": { "type": "number", "minimum": 0 },
+        "migration_difficulty": { "type": "string", "enum": ["low", "medium", "high"] },
+        "sustainability_delta": { "type": "object" },
+        "pricing_source": { "type": "string" },
+        "target_price_eur": { "type": "number" }
+      },
+      "additionalProperties": true
+    },
+    "recommendation": {
+      "type": "object",
+      "required": ["action", "confidence"],
+      "properties": {
+        "action": {
+          "type": "string",
+          "enum": [
+            "switch_now",
+            "delay_and_repair",
+            "delay_and_save",
+            "stay_put",
+            "try_refurbished"
+          ]
+        },
+        "confidence": { "type": "integer", "minimum": 0, "maximum": 100 },
+        "reason_codes": { "type": "array", "items": { "type": "string" } },
+        "plain_summary": { "type": "string", "maxLength": 700 }
+      },
+      "additionalProperties": true
+    },
+    "created_at": { "type": "string", "format": "date-time" }
+  },
+  "additionalProperties": true
+}

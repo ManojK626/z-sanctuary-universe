@@ -1,0 +1,29 @@
+{
+  "format": "mega-millions",
+  "generated": "2026-01-30T22:47:28.101221+00:00",
+  "history": "data\\histories\\mega-millions.csv",
+  "lookback": 12,
+  "settings": {
+    "lookback": 12,
+    "lines": 3,
+    "mix_hot": true,
+    "hot_bias": 0.12,
+    "cold_bias": 1.0,
+    "main_depth": 12,
+    "lucky_depth": 8
+  },
+  "lines": [
+    {
+      "main": [3, 5, 7, 10, 14],
+      "lucky": [2]
+    },
+    {
+      "main": [3, 5, 7, 10, 14],
+      "lucky": [3]
+    },
+    {
+      "main": [3, 5, 7, 10, 14],
+      "lucky": [8]
+    }
+  ]
+}

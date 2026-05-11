@@ -1,0 +1,25 @@
+{
+  "name": "Roulette Calculator",
+  "slug": "roulette-calculator",
+  "type": "app-module",
+  "visibility": "public",
+  "description": "Roulette analytics and tracking module for Z-Sanctuary Universe. Provides multi-table spin tracking, hot/cold heatmaps, pattern statistics (Z-style categories), bankroll/win-loss logging, simulations, and UI dashboards for responsible entertainment and research.",
+  "keywords": [
+    "roulette",
+    "analytics",
+    "heatmap",
+    "pattern-tracking",
+    "multi-table",
+    "simulation",
+    "dashboard",
+    "responsible-play"
+  ],
+  "entrypoints": {
+    "ui": "apps/roulette-calculator/web",
+    "docs": "apps/roulette-calculator/README.md"
+  },
+  "dependencies": {
+    "core_dashboard": "core/index.html",
+    "safe_pack": "core/z_safe_pack.js"
+  }
+}

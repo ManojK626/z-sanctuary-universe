@@ -1,0 +1,30 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "z-sanc://schemas/sustainability.schema.json",
+  "title": "SustainabilityBaseline",
+  "type": "object",
+  "required": ["version", "weights", "thresholds"],
+  "properties": {
+    "version": { "type": "string" },
+    "weights": {
+      "type": "object",
+      "required": ["repairability", "lifespan", "resale", "recyclability"],
+      "properties": {
+        "repairability": { "type": "number", "minimum": 0, "maximum": 1 },
+        "lifespan": { "type": "number", "minimum": 0, "maximum": 1 },
+        "resale": { "type": "number", "minimum": 0, "maximum": 1 },
+        "recyclability": { "type": "number", "minimum": 0, "maximum": 1 }
+      },
+      "additionalProperties": false
+    },
+    "thresholds": {
+      "type": "object",
+      "properties": {
+        "repair_recommended_battery_below": { "type": "integer", "minimum": 0, "maximum": 100 },
+        "delay_switch_months_if_low_budget": { "type": "integer", "minimum": 0, "maximum": 24 }
+      },
+      "additionalProperties": false
+    }
+  },
+  "additionalProperties": false
+}

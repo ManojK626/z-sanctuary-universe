@@ -1,0 +1,4 @@
+# Z-Bridge soft launch (Task 008) — Cloudflare Pages direct upload.
+# Project name must match your Cloudflare dashboard (or override via CLI).
+name = "z-sanctuary-z-bridge-soft"
+compatibility_date = "2024-11-01"

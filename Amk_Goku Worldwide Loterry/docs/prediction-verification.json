@@ -1,0 +1,62 @@
+[
+  {
+    "format": "mega-millions",
+    "history": "mega-millions.csv",
+    "draws": 2312,
+    "trust_score": 0.2929677522349936,
+    "lines": 3,
+    "details": [
+      {
+        "main": [3, 5, 7, 10, 14],
+        "lucky": [2],
+        "trust": 0.2667464878671775,
+        "main_avg": 194.8,
+        "lucky_avg": 524
+      },
+      {
+        "main": [3, 5, 7, 10, 14],
+        "lucky": [3],
+        "trust": 0.1018757982120051,
+        "main_avg": 194.8,
+        "lucky_avg": 830
+      },
+      {
+        "main": [3, 5, 7, 10, 14],
+        "lucky": [8],
+        "trust": 0.5102809706257982,
+        "main_avg": 194.8,
+        "lucky_avg": 72
+      }
+    ]
+  },
+  {
+    "format": "powerball",
+    "history": "powerball.csv",
+    "draws": 1901,
+    "trust_score": 0.5415291186546247,
+    "lines": 3,
+    "details": [
+      {
+        "main": [1, 3, 7, 9, 10],
+        "lucky": [1],
+        "trust": 0.5388975397072563,
+        "main_avg": 143.4,
+        "lucky_avg": 70
+      },
+      {
+        "main": [1, 3, 7, 9, 10],
+        "lucky": [6],
+        "trust": 0.5431080660230458,
+        "main_avg": 143.4,
+        "lucky_avg": 62
+      },
+      {
+        "main": [1, 3, 7, 9, 10],
+        "lucky": [7],
+        "trust": 0.5425817502335721,
+        "main_avg": 143.4,
+        "lucky_avg": 63
+      }
+    ]
+  }
+]

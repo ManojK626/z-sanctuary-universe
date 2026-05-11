@@ -1,0 +1,6 @@
+{
+  "id": "CORE",
+  "role": "production",
+  "linked_to": [],
+  "allow_external_writes": false
+}

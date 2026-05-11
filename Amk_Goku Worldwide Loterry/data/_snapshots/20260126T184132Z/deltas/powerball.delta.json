@@ -1,0 +1,20 @@
+{
+  "run_id": "20260126T181502Z",
+  "lottery_code": "powerball",
+  "real_entropy": {
+    "frequency_entropy": 6.094524,
+    "gap_entropy": 5.090251,
+    "pair_entropy": 11.087359
+  },
+  "simulated_entropy": {
+    "frequency_entropy": 6.102858,
+    "gap_entropy": 5.153538,
+    "pair_entropy": 11.101189
+  },
+  "delta": {
+    "frequency_entropy": -0.008334,
+    "gap_entropy": -0.063287,
+    "pair_entropy": -0.01383
+  },
+  "method": "baseline_uniform"
+}

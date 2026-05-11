@@ -1,0 +1,7 @@
+{
+  \ profiles\: [
+    { \name\: \Calm\, \description\: \Observation + reading mode\, \settings\: { \editor.cursorBlinking\: \solid\ } },
+    { \name\: \Focus\, \description\: \Coding + terminals\, \settings\: { \editor.cursorBlinking\: \phase\ } },
+    { \name\: \Governance\, \description\: \Audit + chronicle\, \settings\: { \editor.renderWhitespace\: \all\ } }
+  ]
+}

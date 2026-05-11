@@ -1,0 +1,19 @@
+{
+  "version": "0.2",
+  "multi_workspace": {
+    "enabled": true,
+    "isolation_mode": "strict",
+    "cross_workspace_reads": true,
+    "cross_workspace_writes": false,
+    "promotion_requires_explicit_flag": true
+  },
+  "version_control": {
+    "workspace_version_file": "z_workspace_version.json",
+    "require_version_match_for_merge": true
+  },
+  "rules": [
+    "Never assume other workspace state unless explicitly provided",
+    "Never modify files outside workspace root directory",
+    "All promotions require manual confirmation"
+  ]
+}

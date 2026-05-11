@@ -1,0 +1,20 @@
+{
+  "default": true,
+  "MD013": false,
+  "MD060": { "style": "compact" },
+  "MD041": false,
+  "MD033": false,
+  "ignore": [
+    "**/node_modules/**",
+    "**/.pytest_cache/**",
+    "node_modules/**",
+    "packages/**/node_modules/**",
+    "Amk_Goku Worldwide Loterry/SYSTEM_STATUS.md",
+    "Amk_Goku Worldwide Loterry/data/**",
+    "Amk_Goku Worldwide Loterry/reports/**",
+    "releases/**/bots/**",
+    "data/reports/**",
+    "safe_pack/**",
+    "docs/ZALS_DELIVERABLE_*.md"
+  ]
+}

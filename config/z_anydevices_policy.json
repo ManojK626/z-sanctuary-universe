@@ -1,0 +1,14 @@
+{
+  "_z_guard_note": "Audit-only device capability analysis. Local-only, no cloud upload.",
+  "mode": "audit-only",
+  "privacy": {
+    "local_only": true,
+    "redact_host_identity": true,
+    "include_device_names": false
+  },
+  "thresholds": {
+    "min_ram_gb_for_local_ai": 16,
+    "min_cpu_cores_for_parallel": 8,
+    "min_free_storage_gb": 120
+  }
+}

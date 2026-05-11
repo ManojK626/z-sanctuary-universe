@@ -1,0 +1,11 @@
+{
+  "version": 1,
+  "hubFileChecks": [
+    { "path": "AGENTS.md", "label": "Any-AI rule" },
+    { "path": "data/z_pc_root_projects.json", "label": "PC root project roster" },
+    { "path": "docs/Z-HIERARCHY-CHIEF-AND-OBSERVER-VIEW.md", "label": "Hierarchy Chief" },
+    { "path": "docs/z-maos/Z_MAOS_CHARTER.md", "label": "Z-MAOS charter" },
+    { "path": "tools/z-maos/project_registry.json", "label": "MAOS project registry" },
+    { "path": "package.json", "label": "Hub package manifest" }
+  ]
+}

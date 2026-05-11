@@ -1,0 +1,343 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Z-Gadget Mirrors • Z-Mirror Decision Engine</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body class="hlms-page">
+    <header class="topbar">
+      <div>
+        <div class="title">Z-Gadget Mirrors</div>
+        <div class="subtitle">Z-Mirror Decision Engine (Local-First MVP)</div>
+      </div>
+      <div class="row">
+        <div class="chip" id="adminChip">Admin: OFF</div>
+        <div class="chip" id="adaptChip">Adaptive: OFF</div>
+        <div class="chip" id="userChip">Guest</div>
+      </div>
+    </header>
+    <div class="phase-rail" id="phaseStatusRail"></div>
+
+    <main class="grid hlms-panel-grid">
+      <section class="card">
+        <h2>1) Local Login (Demo Identity)</h2>
+        <div class="row">
+          <input id="loginName" placeholder="Display name (e.g., AMK-Goku)" />
+          <button id="loginBtn">Enter</button>
+          <button class="ghost" id="logoutBtn">Logout</button>
+          <button class="ghost" id="toggleAdminBtn">Toggle Admin</button>
+          <button class="ghost" id="adaptToggleBtn">Toggle Adaptive</button>
+        </div>
+      </section>
+
+      <section class="card">
+        <h2>2) Current Device State</h2>
+        <div class="row">
+          <label
+            >Usage intensity
+            <select id="intensity">
+              <option value="light">Light</option>
+              <option value="medium" selected>Medium</option>
+              <option value="heavy">Heavy</option>
+            </select>
+          </label>
+          <label
+            >Primary Role
+            <select id="primaryRole">
+              <option value="creator">Creator</option>
+              <option value="enterprise">Enterprise</option>
+              <option value="student">Student</option>
+              <option value="gaming">Gaming</option>
+              <option value="family">Family</option>
+              <option value="health">Health</option>
+              <option value="travel">Travel</option>
+            </select>
+          </label>
+          <label
+            >Battery health (%)
+            <input id="battery" type="number" min="0" max="100" value="85" />
+          </label>
+          <label
+            >Paid price (EUR)
+            <input id="paid" type="number" min="0" value="900" />
+          </label>
+        </div>
+      </section>
+
+      <section class="card">
+        <h2>3) Priority Weights</h2>
+        <div class="row">
+          <label>Cost <input id="w_cost" type="range" min="0" max="10" value="6" /></label>
+          <label>Privacy <input id="w_privacy" type="range" min="0" max="10" value="5" /></label>
+          <label
+            >Durability <input id="w_durability" type="range" min="0" max="10" value="5"
+          /></label>
+          <label
+            >Sustainability <input id="w_sustainability" type="range" min="0" max="10" value="7"
+          /></label>
+          <label>Freedom <input id="w_freedom" type="range" min="0" max="10" value="4" /></label>
+        </div>
+        <div id="weightsPreview" class="muted"></div>
+      </section>
+
+      <section class="card">
+        <h2>3.5) Adaptive Weights (Explainable, Opt-in)</h2>
+        <div class="row">
+          <button id="suggestBtn">Suggest Weights</button>
+          <button class="ghost" id="applySuggestionBtn">Apply Suggestion</button>
+        </div>
+        <pre id="adaptLog" class="pre"></pre>
+      </section>
+
+      <section class="card">
+        <h2>3.6) Weight History</h2>
+        <div id="weightHistoryPanel" class="history"></div>
+        <button class="ghost" id="clearWeightHistoryBtn">Clear History</button>
+      </section>
+
+      <section class="card">
+        <h2>3.7) Weight Evolution</h2>
+        <div class="row">
+          <label
+            >Window
+            <select id="weightWindow">
+              <option value="20">Last 20</option>
+              <option value="50" selected>Last 50</option>
+              <option value="100">Last 100</option>
+            </select>
+          </label>
+          <button class="ghost" id="refreshWeightVizBtn">Refresh</button>
+        </div>
+        <div id="weightVizPanel"></div>
+      </section>
+
+      <section class="card">
+        <h2>3.8) Weight Profiles</h2>
+        <div class="row">
+          <select id="profileSelect"></select>
+          <button id="loadProfileBtn">Load Profile</button>
+        </div>
+        <div class="row">
+          <input type="text" id="customProfileName" placeholder="Custom profile name" />
+          <button class="ghost" id="saveCustomProfileBtn">Save Current as Profile</button>
+        </div>
+        <div id="profileInfo" class="muted"></div>
+      </section>
+
+      <section class="card">
+        <h2>3.9) Behavior-Aware Profile Suggestion</h2>
+        <div class="row">
+          <button id="analyzeBehaviorBtn">Analyze Behavior</button>
+          <button class="ghost" id="applySuggestedProfileBtn">Apply Suggested Profile</button>
+        </div>
+        <pre id="behaviorLog" class="pre"></pre>
+      </section>
+
+      <section class="card">
+        <h2>4) Choose Profiles</h2>
+        <div class="row">
+          <label
+            >From (current)
+            <select id="fromProfile"></select
+          ></label>
+          <label
+            >To (target)
+            <select id="toProfile"></select
+          ></label>
+          <label>Budget (EUR) <input id="budget" type="number" min="0" value="800" /></label>
+          <label
+            >Scenario
+            <select id="forecastScenario"></select>
+          </label>
+        </div>
+        <div class="row">
+          <button id="runBtn">Generate Switching Report</button>
+          <button class="ghost" id="clearBtn">Clear History</button>
+          <button class="ghost" id="exportPdfBtn">Export PDF</button>
+        </div>
+      </section>
+
+      <section class="card">
+        <h2>5) Latest Result</h2>
+        <pre id="output" class="pre"></pre>
+      </section>
+
+      <section class="card">
+        <h2>6) Report History (Local)</h2>
+        <div id="history" class="history"></div>
+      </section>
+
+      <section class="card" id="adminPanel" style="display: none">
+        <h2>7) Admin • Device Profile Editor (Local Overrides)</h2>
+        <div class="row">
+          <label
+            >Edit profile
+            <select id="editProfile"></select
+          ></label>
+          <button class="ghost" id="newProfileBtn">New Profile</button>
+          <button class="ghost" id="saveProfileBtn">Save</button>
+          <button class="ghost" id="deleteProfileBtn">Delete</button>
+          <button class="ghost" id="exportProfilesBtn">Export JSON</button>
+          <input id="importProfilesFile" type="file" accept="application/json" />
+        </div>
+        <div class="row">
+          <label>id <input id="p_id" /></label>
+          <label>brand <input id="p_brand" /></label>
+          <label
+            >ecosystem
+            <select id="p_ecosystem">
+              <option>iOS</option>
+              <option>Android</option>
+              <option>Windows</option>
+              <option>macOS</option>
+              <option>Linux</option>
+              <option>ChromeOS</option>
+              <option>Other</option>
+            </select>
+          </label>
+          <label
+            >category
+            <select id="p_category">
+              <option>phone</option>
+              <option>tablet</option>
+              <option>laptop</option>
+              <option>desktop</option>
+              <option>tv</option>
+              <option>wearable</option>
+              <option>industrial_panel</option>
+              <option>other</option>
+            </select>
+          </label>
+          <label>model <input id="p_model" /></label>
+          <label>year <input id="p_year" type="number" min="2000" max="2100" /></label>
+        </div>
+        <div class="row">
+          <label>customization <input id="m_customization" type="number" min="0" max="10" /></label>
+          <label>lock_in <input id="m_lockin" type="number" min="0" max="10" /></label>
+          <label>repairability <input id="m_repair" type="number" min="0" max="10" /></label>
+          <label>resale_retention <input id="m_resale" type="number" min="0" max="100" /></label>
+          <label
+            >privacy_posture
+            <select id="m_privacy">
+              <option>closed</option>
+              <option>mixed</option>
+              <option>open</option>
+              <option>unknown</option>
+            </select>
+          </label>
+          <label>durability <input id="m_durability" type="number" min="0" max="10" /></label>
+          <label>support_years <input id="m_support" type="number" min="0" max="15" /></label>
+          <label>accessibility <input id="m_access" type="number" min="0" max="10" /></label>
+          <label
+            >enterprise_readiness <input id="m_enterprise" type="number" min="0" max="10"
+          /></label>
+        </div>
+      </section>
+
+      <section class="card">
+        <h2>8) Observatory Analytics</h2>
+        <div id="observatoryPanel" class="muted">Generate reports to view local analytics.</div>
+      </section>
+
+      <section class="card">
+        <h2>9) Decision Stability & Risk Heatmap</h2>
+        <div id="stabilityPanel" class="muted">Run a report to see stability analysis.</div>
+        <div id="heatmapContainer" style="margin-top: 16px"></div>
+      </section>
+
+      <section class="card">
+        <h2>10) Decision Narrative (Explainable)</h2>
+        <pre id="narrativePanel" class="pre"></pre>
+        <div style="margin-top: 12px; display: flex; flex-wrap: wrap; gap: 8px">
+          <button class="ghost" id="mitigateRefurbBtn">Switch to Refurb Path</button>
+          <button class="ghost" id="mitigateHoldingBtn">Increase Holding Years</button>
+          <button class="ghost" id="mitigateLockInBtn">Reduce Lock-In Risk</button>
+          <button class="ghost" id="mitigateDurabilityBtn">Raise Durability Priority</button>
+        </div>
+      </section>
+
+      <section class="card">
+        <h2>11) Decision Memory & Pattern Insight</h2>
+        <div class="row">
+          <button class="ghost" id="refreshInsightsBtn">Refresh Insights</button>
+          <button class="ghost" id="exportDecisionMemoryBtn">Export Memory (JSON)</button>
+          <button class="ghost" id="clearDecisionMemoryBtn">Clear Memory</button>
+        </div>
+        <div id="insightsSummary" class="muted"></div>
+        <pre id="insightsDetail" class="pre"></pre>
+      </section>
+
+      <section class="card">
+        <h2>12) Personal Decision Playbook</h2>
+        <div class="row">
+          <button id="generatePlaybookBtn">Generate Playbook</button>
+          <button class="ghost" id="exportPlaybookBtn">Export Playbook (JSON)</button>
+        </div>
+        <div class="row" style="margin-top: 10px">
+          <label
+            >Quick Apply Rule
+            <select id="playbookRuleSelect"></select>
+          </label>
+          <button id="applyPlaybookRuleBtn">Apply Rule Strategy</button>
+        </div>
+        <pre id="playbookPanel" class="pre"></pre>
+      </section>
+
+      <section class="card">
+        <h2>13) Decision Integrity Seal</h2>
+        <p class="muted">Creates a tamper-evident decision artifact (canonical JSON + SHA-256).</p>
+        <div class="row">
+          <button id="generateSealBtn">Generate Seal</button>
+          <button class="ghost" id="exportSealBtn">Export Sealed Decision (JSON)</button>
+        </div>
+        <pre id="sealPanel" class="pre"></pre>
+      </section>
+
+      <section class="card">
+        <h2>14) Seal Registry (Local Ledger)</h2>
+        <div class="row">
+          <button id="refreshLedgerBtn">Refresh Ledger</button>
+          <button class="ghost" id="exportLedgerBtn">Export Full Ledger</button>
+          <button class="ghost" id="clearLedgerBtn">Clear Ledger</button>
+        </div>
+        <input
+          id="ledgerSearchInput"
+          placeholder="Search by action, scenario, hash..."
+          style="margin-top: 8px; width: 100%; padding: 6px"
+        />
+        <pre id="ledgerPanel" class="pre"></pre>
+      </section>
+
+      <section class="card">
+        <h2>15) Seal Verification Mode</h2>
+        <div class="row">
+          <input type="file" id="verifySealInput" accept=".json" />
+          <button id="verifySealBtn">Verify Seal</button>
+        </div>
+        <pre id="verifySealPanel" class="pre"></pre>
+      </section>
+
+      <section class="card" id="zgmExecutiveCard">
+        <h2>16) ZGM Executive Compact Governance</h2>
+        <div class="zgm-guardrail-row" id="zgmGuardrailRow"></div>
+        <pre id="zgmExecutiveOutput" class="pre"></pre>
+        <div class="row" style="margin-top: 10px">
+          <button class="ghost" id="exportAuditBundleBtn">Export Audit Bundle</button>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <span class="muted"
+        >Governance: deterministic core • no OS emulation • no proprietary UI copying • local-first
+        privacy</span
+      >
+    </footer>
+
+    <script type="module" src="./app.js"></script>
+
+    <script src="/interface/z_accessibility.js"></script>
+  </body>
+</html>

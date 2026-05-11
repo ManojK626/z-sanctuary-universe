@@ -1,0 +1,10 @@
+{
+  "window.zoomLevel": 0,
+  "workbench.activityBar.location": "left",
+  "workbench.sideBar.location": "left",
+  "workbench.panel.defaultLocation": "right",
+  "workbench.editor.tabSizing": "fixed",
+  "editor.fontSize": 14,
+  "terminal.integrated.fontSize": 13,
+  "workbench.list.rowHeight": 22
+}

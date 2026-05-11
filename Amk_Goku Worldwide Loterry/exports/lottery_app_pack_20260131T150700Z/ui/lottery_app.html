@@ -1,0 +1,400 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Z-Sanctuary Lottery App</title>
+    <style>
+      body {
+        font-family:
+          system-ui,
+          -apple-system,
+          Segoe UI,
+          Roboto,
+          sans-serif;
+        margin: 0;
+        background: #0b0f18;
+        color: #e6e8ee;
+      }
+      header {
+        padding: 16px 20px;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+        background: rgba(12, 15, 22, 0.95);
+        position: sticky;
+        top: 0;
+        z-index: 10;
+      }
+      header h1 {
+        margin: 0;
+        font-size: 18px;
+      }
+      header .muted {
+        opacity: 0.7;
+        font-size: 12px;
+      }
+      .grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+        gap: 12px;
+        padding: 16px 20px;
+      }
+      .card {
+        background: rgba(18, 20, 26, 0.9);
+        border-radius: 12px;
+        padding: 12px 14px;
+        border: 1px solid rgba(255, 255, 255, 0.08);
+      }
+      .card h3 {
+        margin: 0 0 6px;
+        font-size: 14px;
+      }
+      .card .muted {
+        opacity: 0.7;
+        font-size: 12px;
+      }
+      a {
+        color: #93c5fd;
+        text-decoration: none;
+      }
+      ul {
+        margin: 8px 0 0;
+        padding-left: 18px;
+      }
+      .pill {
+        display: inline-block;
+        padding: 2px 8px;
+        border-radius: 999px;
+        font-size: 11px;
+        background: rgba(255, 255, 255, 0.08);
+        margin-left: 6px;
+      }
+      .pill:hover {
+        background: rgba(255, 255, 255, 0.14);
+      }
+      .pill:active {
+        background: rgba(255, 255, 255, 0.2);
+      }
+      a:focus,
+      .pill:focus {
+        outline: 2px solid rgba(147, 197, 253, 0.6);
+        outline-offset: 2px;
+      }
+      select {
+        background: rgba(255, 255, 255, 0.06);
+        color: #e6e8ee;
+        border: 1px solid rgba(255, 255, 255, 0.12);
+        border-radius: 8px;
+        padding: 2px 6px;
+        font-size: 12px;
+        min-width: 210px;
+        appearance: none;
+        padding-right: 22px;
+        background-image:
+          linear-gradient(45deg, transparent 50%, rgba(230, 232, 238, 0.9) 50%),
+          linear-gradient(135deg, rgba(230, 232, 238, 0.9) 50%, transparent 50%);
+        background-position:
+          calc(100% - 14px) 9px,
+          calc(100% - 9px) 9px;
+        background-size:
+          5px 5px,
+          5px 5px;
+        background-repeat: no-repeat;
+      }
+      select:focus {
+        outline: 2px solid rgba(147, 197, 253, 0.6);
+        outline-offset: 2px;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>🎯 Z-Sanctuary Lottery App <span class="pill">Trust Pack</span></h1>
+      <div class="muted">
+        Observer-only. Trust-first. Core v1.0 locked. ·
+        <a href="../exports/lottery_app_pack_latest.zip">Download Latest Pack</a>
+      </div>
+    </header>
+
+    <section class="grid">
+      <div class="card" id="statusCard">
+        <h3>System Status <span class="pill" id="rhythmPill">Rhythm: —</span></h3>
+        <div class="muted" id="statusSummary">Loading system status…</div>
+      </div>
+
+      <div class="card">
+        <h3>Lottery Vault</h3>
+        <div class="muted">Coverage checklist + manual gaps.</div>
+        <ul>
+          <li><a href="./lottery_vault/checklist.html">Open Vault Checklist</a></li>
+          <li><a href="./drift_watch.html">Drift Watch (legacy view)</a></li>
+          <li><a href="./drift_watch/index.html">Drift Watch (timeline)</a></li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <h3>Observatory</h3>
+        <div class="muted">World Pulse, Feeling, Rhythm, KAIROCELL.</div>
+        <ul>
+          <li><a href="./world_observer.html">World Observer</a></li>
+          <li><a href="./feeling_panel.html">Feeling Panel</a></li>
+          <li><a href="./kairocell_overlay.html">KAIROCELL Overlay</a></li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <h3>Learning & Trust</h3>
+        <div class="muted">Orientation, cards, trust portal.</div>
+        <ul>
+          <li><a href="./education/orientation.html">Orientation</a></li>
+          <li><a href="./education/learning_cards.html">Learning Cards</a></li>
+          <li><a href="./public_trust/index.html">Public Trust Portal</a></li>
+          <li><a href="../trust/education_mode_mirror.html">Education Mirror</a></li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <h3>Notebooks & Circles</h3>
+        <div class="muted">Gentle notes, circle learning.</div>
+        <ul>
+          <li><a href="./notebook/basic_notebook.html">Basic Notebook</a></li>
+          <li><a href="./circles/circle_learning_view.html">Circle Learning View</a></li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <h3>Deliverables</h3>
+        <div class="muted">Static, shareable bundles (observational only).</div>
+        <ul>
+          <li><a href="../exports/lottery_app_pack_latest.zip">Lottery App Pack (latest)</a></li>
+          <li><a href="../exports/trust_pack_latest.zip">Trust Pack (latest)</a></li>
+          <li>
+            <a href="../exports/legal_provenance_pack_latest.zip">Legal Provenance Pack (latest)</a>
+          </li>
+          <li>
+            <a href="../exports/safe_vault_public/safe_vault_latest.zip"
+              >Safe Vault (public redacted)</a
+            >
+          </li>
+        </ul>
+        <div class="muted" id="trustPackStamp" style="margin-top: 6px">Trust pack: —</div>
+        <div class="muted" id="trustPackZipStamp" style="margin-top: 6px">Trust pack ZIP: —</div>
+        <div class="muted" id="legalPackStamp" style="margin-top: 6px">Legal pack: —</div>
+        <div class="muted" id="safeVaultStamp" style="margin-top: 6px">Safe Vault (public): —</div>
+        <div class="muted" style="margin-top: 6px">
+          Timezone:
+          <select id="tzSelect">
+            <option value="AUTO" selected>Auto (local)</option>
+            <option value="UTC">UTC</option>
+            <option value="Europe/Dublin">Ireland (Europe/Dublin)</option>
+            <option value="America/New_York">US Eastern</option>
+            <option value="America/Chicago">US Central</option>
+            <option value="America/Los_Angeles">US Pacific</option>
+            <option value="Europe/London">UK (Europe/London)</option>
+            <option value="Europe/Paris">Europe/Paris</option>
+            <option value="Asia/Dubai">Dubai</option>
+            <option value="Asia/Kolkata">India</option>
+            <option value="Asia/Singapore">Singapore</option>
+            <option value="Asia/Tokyo">Japan</option>
+            <option value="Australia/Sydney">Australia/Sydney</option>
+          </select>
+          <button id="tzRefreshBtn" class="pill" style="margin-left: 6px; cursor: pointer">
+            Refresh
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <script
+      src="./z_bootstrap.js"
+      data-z-root="../"
+      data-z-rhythm="true"
+      data-z-feeling="true"
+      data-z-apicon="true"
+      data-z-jailcell="true"
+    ></script>
+    <script>
+      async function loadStatus() {
+        try {
+          const res = await fetch('data/reports/system_status.json', { cache: 'no-store' });
+          if (!res.ok) throw new Error('status missing');
+          const status = await res.json();
+          document.getElementById('rhythmPill').textContent =
+            `Rhythm: ${status.rhythm_state || '—'}`;
+          const summary = status.summary || status.overview || 'System status loaded.';
+          document.getElementById('statusSummary').textContent = summary;
+        } catch {
+          document.getElementById('statusSummary').textContent = 'System status unavailable.';
+        }
+      }
+      function formatTimestamp(value, timeZone = 'UTC') {
+        if (!value) return 'unknown';
+        const date = new Date(value);
+        if (Number.isNaN(date.getTime())) return value;
+        const opts = {
+          year: 'numeric',
+          month: 'short',
+          day: '2-digit',
+          hour: '2-digit',
+          minute: '2-digit',
+          timeZone,
+          timeZoneName: 'short',
+        };
+        return date.toLocaleString('en-US', opts);
+      }
+
+      let trustGeneratedAt = null;
+      let trustZipBytes = null;
+      let legalGeneratedAt = null;
+      let legalZipBytes = null;
+      let safeVaultBytes = null;
+      let safeVaultGeneratedAt = null;
+
+      function renderTrustPackStamp() {
+        const stamp = document.getElementById('trustPackStamp');
+        const zipStamp = document.getElementById('trustPackZipStamp');
+        const legalStamp = document.getElementById('legalPackStamp');
+        const selected = document.getElementById('tzSelect')?.value || 'UTC';
+        const autoTz = Intl.DateTimeFormat().resolvedOptions().timeZone || 'UTC';
+        const tz = selected === 'AUTO' ? autoTz : selected;
+        if (!stamp) return;
+        if (!trustGeneratedAt) {
+          stamp.textContent = 'Trust pack: unavailable';
+        }
+        const label = selected === 'AUTO' ? `Auto (${autoTz})` : tz;
+        if (trustGeneratedAt) {
+          stamp.textContent = `Trust pack: ${formatTimestamp(trustGeneratedAt, tz)} · ${label}`;
+          if (zipStamp) {
+            const size = trustZipBytes ? ` · ${formatBytes(trustZipBytes)} (compressed)` : '';
+            zipStamp.textContent = `Trust pack ZIP: ${formatTimestamp(trustGeneratedAt, tz)} · ${label}${size}`;
+          }
+        }
+        if (legalStamp) {
+          if (!legalGeneratedAt) {
+            legalStamp.textContent = 'Legal pack: unavailable';
+          } else {
+            const size = legalZipBytes ? ` · ${formatBytes(legalZipBytes)} (compressed)` : '';
+            legalStamp.textContent = `Legal pack: ${formatTimestamp(legalGeneratedAt, tz)} · ${label}${size}`;
+          }
+        }
+        const safeStamp = document.getElementById('safeVaultStamp');
+        if (safeStamp) {
+          if (!safeVaultGeneratedAt && !safeVaultBytes) {
+            safeStamp.textContent = `Safe Vault (public): unavailable · ${label}`;
+          } else {
+            const size = safeVaultBytes ? ` · ${formatBytes(safeVaultBytes)} (compressed)` : '';
+            const stamp = safeVaultGeneratedAt
+              ? `${formatTimestamp(safeVaultGeneratedAt, 'UTC')}`
+              : 'unknown';
+            safeStamp.textContent = `Safe Vault (public): ${stamp} · UTC${size}`;
+          }
+        }
+      }
+
+      async function loadTrustPackStamp() {
+        try {
+          const res = await fetch('../exports/trust_pack_latest/MANIFEST.json', {
+            cache: 'no-store',
+          });
+          if (!res.ok) throw new Error('trust manifest missing');
+          const data = await res.json();
+          trustGeneratedAt = data.generated_at || null;
+          renderTrustPackStamp();
+        } catch {
+          const stamp = document.getElementById('trustPackStamp');
+          if (stamp) stamp.textContent = 'Trust pack: unavailable';
+          const zipStamp = document.getElementById('trustPackZipStamp');
+          if (zipStamp) zipStamp.textContent = 'Trust pack ZIP: unavailable';
+        }
+      }
+      loadStatus();
+      loadTrustPackStamp();
+      loadTrustZipSize();
+
+      async function loadLegalPackStamp() {
+        try {
+          const res = await fetch('../exports/legal_provenance_pack_latest/MANIFEST.json', {
+            cache: 'no-store',
+          });
+          if (!res.ok) throw new Error('legal manifest missing');
+          const data = await res.json();
+          legalGeneratedAt = data.generated_at || null;
+          renderTrustPackStamp();
+        } catch {
+          const stamp = document.getElementById('legalPackStamp');
+          if (stamp) stamp.textContent = 'Legal pack: unavailable';
+        }
+      }
+      loadLegalPackStamp();
+      loadLegalZipSize();
+      loadSafeVaultSize();
+
+      function formatBytes(bytes) {
+        if (!bytes && bytes !== 0) return '';
+        const mb = bytes / (1024 * 1024);
+        return `${mb.toFixed(mb >= 10 ? 0 : 1)} MB`;
+      }
+
+      async function loadTrustZipSize() {
+        try {
+          const res = await fetch('../exports/trust_pack_latest.zip', { method: 'HEAD' });
+          if (!res.ok) return;
+          const len = res.headers.get('content-length');
+          trustZipBytes = len ? Number(len) : null;
+          renderTrustPackStamp();
+        } catch {}
+      }
+
+      async function loadLegalZipSize() {
+        try {
+          const res = await fetch('../exports/legal_provenance_pack_latest.zip', {
+            method: 'HEAD',
+          });
+          if (!res.ok) return;
+          const len = res.headers.get('content-length');
+          legalZipBytes = len ? Number(len) : null;
+          renderTrustPackStamp();
+        } catch {}
+      }
+
+      async function loadSafeVaultSize() {
+        try {
+          const res = await fetch('../exports/safe_vault_public/safe_vault_latest.zip', {
+            method: 'HEAD',
+          });
+          if (!res.ok) return;
+          const len = res.headers.get('content-length');
+          safeVaultBytes = len ? Number(len) : null;
+          renderTrustPackStamp();
+        } catch {}
+      }
+
+      async function loadSafeVaultManifest() {
+        try {
+          const res = await fetch('../data/safe_vault/MANIFEST.json', { cache: 'no-store' });
+          if (!res.ok) return;
+          const data = await res.json();
+          safeVaultGeneratedAt = data.generated_at || null;
+          renderTrustPackStamp();
+        } catch {}
+      }
+      loadSafeVaultManifest();
+
+      const tzSelect = document.getElementById('tzSelect');
+      const tzRefreshBtn = document.getElementById('tzRefreshBtn');
+      if (tzSelect) {
+        function updateAutoLabel() {
+          const autoTz = Intl.DateTimeFormat().resolvedOptions().timeZone || 'UTC';
+          const autoOption = tzSelect.querySelector('option[value="AUTO"]');
+          if (autoOption) {
+            autoOption.textContent = `Auto (Detected: ${autoTz})`;
+          }
+          renderTrustPackStamp();
+        }
+        updateAutoLabel();
+        tzSelect.addEventListener('change', renderTrustPackStamp);
+        setInterval(updateAutoLabel, 60_000);
+        if (tzRefreshBtn) tzRefreshBtn.addEventListener('click', updateAutoLabel);
+      }
+    </script>
+  </body>
+</html>

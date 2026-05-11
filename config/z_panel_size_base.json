@@ -1,0 +1,108 @@
+{
+  "version": "1",
+  "defaults": {
+    "length": "medium"
+  },
+  "columns": {
+    "short": "right",
+    "medium": "left",
+    "tall": "center"
+  },
+  "guidance": "Short panels (length=short) should ride the right column so the center lane can stay dominated by tall/medium dashboards. When adding new panels, declare length+column and keep the same values in the Z-Lab copy for consistent culture.",
+  "panels": {
+    "zDashboard": {
+      "length": "tall",
+      "column": "center"
+    },
+    "zInsightLabPanel": {
+      "length": "tall",
+      "column": "center"
+    },
+    "zGovernance": {
+      "length": "tall",
+      "column": "center"
+    },
+    "zAwarenessPanel": {
+      "length": "medium",
+      "column": "center"
+    },
+    "zChroniclePanel": {
+      "length": "medium",
+      "column": "center"
+    },
+    "zPanelDirectory": {
+      "length": "medium",
+      "column": "left"
+    },
+    "zPriorityPanel": {
+      "length": "short"
+    },
+    "zWisdomRingPanel": {
+      "length": "short"
+    },
+    "zModuleRegistryPanel": {
+      "length": "short"
+    },
+    "zTaskListPanel": {
+      "length": "short"
+    },
+    "zGovTimelinePanel": {
+      "length": "short"
+    },
+    "zAutopilotStatusPanel": {
+      "length": "short"
+    },
+    "zCodexPanel": {
+      "length": "short"
+    },
+    "zCreatorProtocolPanel": {
+      "length": "short"
+    },
+    "zCodexSuggestionsPanel": {
+      "length": "short"
+    },
+    "zAutopilotDebugPanel": {
+      "length": "short"
+    },
+    "zAutopilotReplayPanel": {
+      "length": "short"
+    },
+    "zAutopilotSimPanel": {
+      "length": "short"
+    },
+    "zGovernanceReportPanel": {
+      "length": "medium"
+    },
+    "zGovernanceReviewPanel": {
+      "length": "medium"
+    },
+    "zChainViewPanel": {
+      "length": "short"
+    },
+    "zScreenRecorderPanel": {
+      "length": "short"
+    },
+    "zIntelligencePanel": {
+      "length": "short"
+    },
+    "zSocialPanel": {
+      "length": "short"
+    },
+    "zFormulaRegistryPanel": {
+      "length": "short"
+    },
+    "zFolderManagerPanel": {
+      "length": "short"
+    },
+    "zVaultStatusPanel": {
+      "length": "short"
+    },
+    "zPublicMirrorPanel": {
+      "length": "short"
+    },
+    "zAutocompletePanel": {
+      "length": "short",
+      "column": "left"
+    }
+  }
+}

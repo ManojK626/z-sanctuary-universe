@@ -1,0 +1,18 @@
+{
+  "trust_packs": [
+    {
+      "circle_id": "amk-home",
+      "authority": "none",
+      "promises": [
+        "No likes, no ranking, no pressure loops.",
+        "Gentle Notebook content is not used for predictions or enforcement.",
+        "Circle events log structure (mode changes, membership) not private content."
+      ],
+      "privacy": {
+        "default_visibility": "INVITE_ONLY",
+        "export": "user_controlled",
+        "delete": "one_tap_remove"
+      }
+    }
+  ]
+}

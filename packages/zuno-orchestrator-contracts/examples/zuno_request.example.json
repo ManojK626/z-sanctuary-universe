@@ -1,0 +1,28 @@
+{
+  "_fixture": "zuno_request_v1",
+  "_non_executable": true,
+  "_description": "Illustrative ZunoRequest only — no orchestrator consumes this file.",
+  "id": "req-example-001",
+  "createdAtIso": "2026-05-03T12:00:00.000Z",
+  "intentSummary": "Refresh AI Builder module docs after registry edit and confirm coverage audit stays green.",
+  "projectScope": "ZSanctuary_Universe",
+  "capabilitiesSought": [
+    {
+      "family": "evaluation_verify",
+      "labels": ["registry", "zuno_coverage"]
+    },
+    {
+      "family": "text_reasoning",
+      "labels": ["documentation", "handoff"]
+    }
+  ],
+  "formulaRef": {
+    "id": "evidence_first_lane",
+    "docPath": "docs/Z_SANCTUARY_IMPLEMENTATION_LANES.md",
+    "version": "doctrine"
+  },
+  "metadata": {
+    "operator": "AMK-Goku",
+    "lane": "ai_builder_refresh"
+  }
+}

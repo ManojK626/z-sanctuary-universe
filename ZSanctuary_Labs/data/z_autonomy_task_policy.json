@@ -1,0 +1,19 @@
+{
+  "schema": "z.autonomy.task.policy.v1",
+  "tasks": [
+    {
+      "id": "z:logical-brains",
+      "level": "L1",
+      "mode": "read_only_evidence",
+      "execution": false,
+      "description": "Validates Logical Brains doctrine/safety registry and emits static reports."
+    },
+    {
+      "id": "z:numen",
+      "level": "L1",
+      "mode": "read_only_evidence",
+      "execution": false,
+      "description": "Validates Z-NUMEN symbol/signal registries and emits educational pattern-literacy reports only."
+    }
+  ]
+}

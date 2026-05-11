@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="project-id" content="ZUNO_AI_001">
+    <meta name="project-name" content="Z-SANCTUARY ZUNO AI Universe">
+    <title>Z-Ecosystem | User Health Portal</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@500;600;700&family=Inter:wght@300;400;600&display=swap');
+
+        body, html {
+            margin: 0; padding: 0;
+            font-family: 'Inter', sans-serif;
+            background-color: #030305; color: #ffffff;
+            height: 100vh; display: flex; flex-direction: column;
+            align-items: center; justify-content: center;
+        }
+
+        /* Mobile App Container */
+        .mobile-app {
+            width: 390px; height: 844px;
+            background: linear-gradient(180deg, #0a0f1a 0%, #030305 100%);
+            border: 8px solid #1f1f2e; border-radius: 40px;
+            box-shadow: 0 20px 50px rgba(0,0,0,0.5), 0 0 30px rgba(74, 84, 232, 0.2);
+            position: relative; overflow: hidden; display: flex; flex-direction: column;
+        }
+
+        .header {
+            padding: 2rem 1.5rem 1rem;
+            display: flex; justify-content: space-between; align-items: center;
+        }
+
+        .logo { font-family: 'Rajdhani', sans-serif; font-size: 1.5rem; font-weight: 700; color: #fff; }
+        .logo span { color: #7a82ff; }
+        .karma-badge { background: rgba(0, 230, 118, 0.1); color: #00e676; padding: 5px 10px; border-radius: 20px; font-size: 0.8rem; font-family: monospace; }
+
+        .content { padding: 1.5rem; flex-grow: 1; overflow-y: auto; display: flex; flex-direction: column; gap: 1.5rem; }
+
+        /* Device Status Visualizer */
+        .device-visual {
+            background: #0a0a0f; border: 1px solid #1f1f2e; border-radius: 20px;
+            padding: 2rem; display: flex; flex-direction: column; align-items: center;
+            position: relative; text-align: center;
+        }
+
+        .status-dot { width: 10px; height: 10px; background: #00e676; border-radius: 50%; box-shadow: 0 0 10px #00e676; position: absolute; top: 1.5rem; right: 1.5rem; }
+
+        .oven-circle {
+            width: 120px; height: 120px;
+            border-radius: 50%;
+            border: 4px solid #1f1f2e;
+            display: flex; flex-direction: column; justify-content: center; align-items: center;
+            margin: 1rem 0; transition: all 0.5s ease;
+        }
+
+        .temp-display { font-family: 'Rajdhani', sans-serif; font-size: 2.5rem; font-weight: 700; color: #fff; margin: 0; line-height: 1; }
+        .pod-type { font-size: 0.8rem; color: #7a82ff; text-transform: uppercase; letter-spacing: 1px; margin-top: 5px; }
+
+        /* Temperature Slider */
+        .control-panel { background: #0a0a0f; border: 1px solid #1f1f2e; border-radius: 20px; padding: 1.5rem; }
+
+        .slider-label { display: flex; justify-content: space-between; font-size: 0.9rem; color: #888; margin-bottom: 10px; }
+
+        input[type=range] {
+            -webkit-appearance: none; width: 100%; background: transparent;
+        }
+        input[type=range]::-webkit-slider-thumb {
+            -webkit-appearance: none; height: 20px; width: 20px;
+            border-radius: 50%; background: #7a82ff; cursor: pointer;
+            box-shadow: 0 0 10px #7a82ff; margin-top: -8px;
+        }
+        input[type=range]::-webkit-slider-runnable-track {
+            width: 100%; height: 4px; cursor: pointer;
+            background: linear-gradient(90deg, #4a54e8 0%, #ff4d4d 100%);
+            border-radius: 2px;
+        }
+
+        .btn-heat {
+            width: 100%; padding: 1rem; margin-top: 1.5rem;
+            background: linear-gradient(90deg, #4a54e8, #7a82ff); border: none; border-radius: 12px;
+            color: #fff; font-family: 'Rajdhani', sans-serif; font-size: 1.2rem; font-weight: 700;
+            text-transform: uppercase; cursor: pointer; transition: opacity 0.3s;
+        }
+        .btn-heat:active { opacity: 0.8; }
+
+        /* The 24-Hour Lockout (Bankroll) */
+        .bankroll-panel {
+            background: rgba(232, 74, 74, 0.05); border: 1px solid rgba(232, 74, 74, 0.2);
+            border-radius: 20px; padding: 1.5rem;
+        }
+
+        .progress-bar-bg { width: 100%; height: 8px; background: #1f1f2e; border-radius: 4px; overflow: hidden; margin: 10px 0; }
+        .progress-bar-fill { height: 100%; background: #e84a4a; width: 75%; transition: width 0.5s; }
+
+        /* BioResponse Feedback */
+        .bio-btn {
+            background: transparent; border: 1px dashed #555; color: #a0a0a0;
+            padding: 0.5rem 1rem; border-radius: 8px; cursor: pointer; font-size: 0.8rem;
+            transition: all 0.3s; width: 100%; text-align: center; margin-top: 10px;
+        }
+        .bio-btn:hover { border-color: #ffd700; color: #ffd700; }
+
+        /* AI Alert Banner */
+        .ai-alert {
+            display: none; background: rgba(255, 215, 0, 0.1); border-left: 4px solid #ffd700;
+            padding: 10px; font-size: 0.85rem; color: #ffd700; margin-top: 10px; border-radius: 0 8px 8px 0;
+            animation: slideIn 0.3s forwards;
+        }
+        @keyframes slideIn { from { transform: translateX(-10px); opacity: 0; } to { transform: translateX(0); opacity: 1; } }
+
+    </style>
+</head>
+<body>
+
+    <div class="mobile-app">
+
+        <div class="header">
+            <div class="logo"><span>Z</span>-Breathe</div>
+            <div class="karma-badge">Karma: 1,450</div>
+        </div>
+
+        <div class="content">
+
+            <div class="device-visual">
+                <div class="status-dot" id="bt-status"></div>
+                <div style="font-size: 0.85rem; color: #888; margin-bottom: 5px;">BLE Connected • 84% Battery</div>
+
+                <div class="oven-circle" id="oven">
+                    <div class="temp-display" id="temp-val">180°C</div>
+                    <div class="pod-type">Peppermint Pod</div>
+                </div>
+
+                <div style="font-size: 0.8rem; color: #a0a0a0;" id="oven-status">Standby: Pure Convection</div>
+            </div>
+
+            <div class="control-panel">
+                <div class="slider-label">
+                    <span>Target Heat</span>
+                    <span id="slider-label-val" style="color: #fff; font-weight: bold;">180°C</span>
+                </div>
+                <input type="range" id="temp-slider" min="150" max="220" value="180">
+                <div style="display: flex; justify-content: space-between; font-size: 0.7rem; color: #555; margin-top: 5px;">
+                    <span>Cool (Flavor)</span>
+                    <span>Max (220°C Limit)</span>
+                </div>
+
+                <button class="btn-heat" id="heat-btn" onclick="startHeating()">Initiate Breathwork</button>
+            </div>
+
+            <div class="control-panel" style="padding: 1rem;">
+                <div style="font-size: 0.9rem; font-weight: 600; color: #fff;">Z-BioResponse Protocol</div>
+                <div style="font-size: 0.8rem; color: #888; margin-top: 5px;">How does your biology feel?</div>
+                <button class="bio-btn" onclick="triggerBioAI()">⚠️ Report Throat Tickle</button>
+                <div class="ai-alert" id="ai-msg"></div>
+            </div>
+
+            <div class="bankroll-panel">
+                <div style="display: flex; justify-content: space-between; align-items: center;">
+                    <div style="font-size: 0.9rem; font-weight: 600; color: #fff;">Daily Session Limits</div>
+                    <div style="font-size: 0.8rem; font-family: monospace; color: #e84a4a;">3 / 4 Used</div>
+                </div>
+                <div class="progress-bar-bg">
+                    <div class="progress-bar-fill"></div>
+                </div>
+                <div style="font-size: 0.75rem; color: #a0a0a0; text-align: center; margin-top: 5px;">
+                    Hardware Lockout in 1 Session.
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <script>
+        const slider = document.getElementById("temp-slider");
+        const tempVal = document.getElementById("temp-val");
+        const sliderLabelVal = document.getElementById("slider-label-val");
+        const oven = document.getElementById("oven");
+        const ovenStatus = document.getElementById("oven-status");
+
+        // Update UI as user drags the slider
+        slider.oninput = function() {
+            tempVal.innerHTML = this.value + "°C";
+            sliderLabelVal.innerHTML = this.value + "°C";
+
+            // Visual warning if they push it to max
+            if (this.value >= 210) {
+                oven.style.borderColor = "#ff4d4d";
+                oven.style.boxShadow = "0 0 20px rgba(255, 77, 77, 0.2)";
+                ovenStatus.innerText = "Warning: High Heat (Combustion Risk Blocked)";
+            } else {
+                oven.style.borderColor = "#1f1f2e";
+                oven.style.boxShadow = "none";
+                ovenStatus.innerText = "Standby: Pure Convection";
+            }
+        }
+
+        // Simulate the heating process
+        function startHeating() {
+            const btn = document.getElementById("heat-btn");
+            btn.innerText = "Heating Oven...";
+            btn.style.background = "#ff4d4d";
+
+            oven.style.borderColor = "#7a82ff";
+            oven.style.boxShadow = "0 0 30px rgba(122, 130, 255, 0.6)";
+
+            let currentTemp = 20; // Room temp
+            const targetTemp = parseInt(slider.value);
+
+            const interval = setInterval(() => {
+                currentTemp += 15;
+                if (currentTemp >= targetTemp) {
+                    currentTemp = targetTemp;
+                    clearInterval(interval);
+                    btn.innerText = "Device Ready - Inhale";
+                    btn.style.background = "#00e676";
+                    oven.style.borderColor = "#00e676";
+                    oven.style.boxShadow = "0 0 30px rgba(0, 230, 118, 0.5)";
+                    ovenStatus.innerText = "Z-Halo Active: Follow Light Guides";
+                }
+                tempVal.innerHTML = currentTemp + "°C";
+            }, 150);
+        }
+
+        // Simulate the Z-Regulator AI intervening
+        function triggerBioAI() {
+            const currentTemp = parseInt(slider.value);
+            const newTemp = currentTemp - 8; // Drop by 8 degrees
+
+            slider.value = newTemp;
+            tempVal.innerHTML = newTemp + "°C";
+            sliderLabelVal.innerHTML = newTemp + "°C";
+
+            oven.style.borderColor = "#ffd700";
+
+            const msg = document.getElementById("ai-msg");
+            msg.style.display = "block";
+            msg.innerHTML = `<strong>Z-Regulator Intervention:</strong> Biology feedback received. We have automatically lowered your oven to ${newTemp}°C for a smoother botanical extraction.`;
+        }
+    </script>
+
+    <script>
+        window.PROJECT_ID = "ZUNO_AI_001";
+        window.PROJECT_MANIFEST = {
+            project_id: "ZUNO_AI_001",
+            project_name: "Z-SANCTUARY ZUNO AI Universe"
+        };
+    </script>
+
+    <script>
+        if (typeof ProtocolEnforcer_Instance !== 'undefined') {
+            ProtocolEnforcer_Instance.recordAuditTrail('DASHBOARD_INIT', {
+                dashboard: 'Z-Health Portal',
+                timestamp: new Date().toISOString()
+            });
+        }
+    </script>
+</body>
+</html>

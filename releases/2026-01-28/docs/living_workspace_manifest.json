@@ -1,0 +1,46 @@
+{
+  "manifestId": "living-workspace-automation",
+  "version": "2026-01",
+  "files": [
+    {
+      "path": "core/harisha_tooltips.js",
+      "tag": "Harisha Tooltip Helper",
+      "description": "Generates Harisha-aware tooltips for automation buttons."
+    },
+    {
+      "path": "core/harisha_shortcuts.js",
+      "tag": "Harisha Shortcut Guard",
+      "description": "Monitors keyboard combos, refreshes tooltips, logs shortcut use with Harisha context."
+    },
+    {
+      "path": "core/harisha_integration.js",
+      "tag": "Harisha Automation Overlay",
+      "description": "Keeps the automation overlay badge updated and refreshes Harisha tooltips."
+    },
+    {
+      "path": "core/harisha_zone_panel.js",
+      "tag": "Harisha Zone Panel",
+      "description": "Surface panel showing Harisha score, zone state, and reflection summary."
+    },
+    {
+      "path": "core/super_ghost_reflection_ui.js",
+      "tag": "Super Ghost Reflection UI",
+      "description": "Insight card showing weekly Super Ghost narrative, pattern summary, and export/run actions."
+    },
+    {
+      "path": "z_colour/z_colour_engine.js",
+      "tag": "Color-State Engine",
+      "description": "Chooses palette based on Harisha score + World Pulse mood."
+    },
+    {
+      "path": "core/world_pulse_panel.js",
+      "tag": "World Pulse Panel",
+      "description": "Renders world pulse signals and Safe Pack + Harisha chips."
+    },
+    {
+      "path": "docs/Living-Workspace-Brief.md",
+      "tag": "Living Workspace Brief",
+      "description": "Executive summary for the living workspace stack."
+    }
+  ]
+}

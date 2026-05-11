@@ -1,0 +1,31 @@
+{
+  "version": "0.1",
+  "generated_at": "2026-03-18T19:40:00Z",
+  "source": "z_system_maturity_benchmark",
+  "targets": [
+    {
+      "id": "web:readiness",
+      "description": "Dashboard readiness sweep must finish with healthy status",
+      "report": "data/reports/z_web_readiness_check.json",
+      "require_status": "green",
+      "max_age_minutes": 2,
+      "profile_name": "default"
+    },
+    {
+      "id": "workspace:auto-sweep",
+      "description": "Governance sweep must stay up-to-date",
+      "report": "data/reports/z_workspace_auto_sweep.json",
+      "require_status": "green",
+      "max_age_minutes": 5,
+      "profile_name": "default"
+    },
+    {
+      "id": "extension_guard",
+      "description": "Extension posture validation must run unblocked",
+      "report": "data/reports/z_extension_guard.json",
+      "require_status": "green",
+      "max_age_minutes": 10,
+      "profile_name": "default"
+    }
+  ]
+}

@@ -1,0 +1,34 @@
+{
+  "run_id": "20260130T224727Z",
+  "regions": {
+    "EU": {
+      "lotteries": 2,
+      "avg_entropy": {
+        "frequency_entropy": 5.528707,
+        "gap_entropy": 1.630482,
+        "pair_entropy": 6.74204
+      }
+    },
+    "GLOBAL": {
+      "lotteries": 1,
+      "avg_entropy": {
+        "frequency_entropy": 5.563856,
+        "gap_entropy": 1.0,
+        "pair_entropy": 6.643856
+      }
+    },
+    "US": {
+      "lotteries": 2,
+      "avg_entropy": {
+        "frequency_entropy": 6.059245,
+        "gap_entropy": 5.07178,
+        "pair_entropy": 11.112264
+      }
+    }
+  },
+  "divergence": {
+    "EU vs GLOBAL": 0.055338,
+    "EU vs US": 1.067273,
+    "GLOBAL vs US": 1.49403
+  }
+}

@@ -1,0 +1,58 @@
+{
+  "cards": [
+    {
+      "id": "learning.orientation.level0",
+      "level": 0,
+      "title": "Welcome to Z-Sanctuary",
+      "mode": "read-only",
+      "summary": "Orientation to the Sanctuary: observe, learn, and reflect without pressure.",
+      "body": "Z-Sanctuary is a living digital space designed to observe, learn, and reflect—not to control, predict, or command. Nothing here acts on your behalf. Nothing here asks you to hurry. Understanding comes before action. You can read, observe, and write at your own pace. The core is locked (v1.0) for stability; education and observation remain open.",
+      "reflection_prompt": "What does going slowly allow you to notice?"
+    },
+    {
+      "id": "learning.kairocell.basics",
+      "level": 2,
+      "title": "Micro-steps before action",
+      "mode": "read-only",
+      "summary": "KAIROCELL observes first, aligns second, and only recommends—never acts.",
+      "body": "KAIROCELL exists to slow the moment just enough to understand it. It observes first, aligns second, and only recommends—never acts. This keeps the system safe, explainable, and non-reactive under pressure.",
+      "reflection_prompt": "Where do you usually skip observation and jump straight to action?"
+    },
+    {
+      "id": "learning.rhythm.basics",
+      "level": 1,
+      "title": "Rhythm is not speed",
+      "mode": "read-only",
+      "summary": "Rhythm measures flow, not pressure. It shows when to pause as clearly as when to move.",
+      "body": "Rhythm reflects timing without urgency. It does not grade performance. It signals when the system should rest, adapt gently, or hold steady.",
+      "reflection_prompt": "What happens when you let timing decide instead of urgency?"
+    },
+    {
+      "id": "learning.feeling.basics",
+      "level": 1,
+      "title": "Feelings inform, they don’t command",
+      "mode": "read-only",
+      "summary": "Feelings are signals about alignment and gravity—not instructions.",
+      "body": "The Feeling Analyzer listens to alignment, pressure, and stability. It never commands action. It helps the system notice without obeying.",
+      "reflection_prompt": "Can you notice a feeling without needing to act on it?"
+    },
+    {
+      "id": "learning.trust.basics",
+      "level": 2,
+      "title": "Trust is acknowledgment, not submission",
+      "mode": "read-only",
+      "summary": "The Trust Bond makes rules visible and consent explicit. Nothing is hidden or forced.",
+      "body": "Trust here means clarity and consent. The Trust Bond explains boundaries so dignity is protected for everyone involved.",
+      "reflection_prompt": "How does clarity change the way you relate to systems?"
+    },
+    {
+      "id": "learning.jailcell.basics",
+      "level": 2,
+      "title": "Containment as learning",
+      "mode": "read-only",
+      "summary": "JAILCELL pauses harm, studies causes, and teaches safer paths forward.",
+      "body": "JAILCELL does not punish. It contains signals safely, observes patterns, and turns mistakes into lessons without blame.",
+      "reflection_prompt": "What would change if mistakes were treated as teachers?"
+    }
+  ]
+}

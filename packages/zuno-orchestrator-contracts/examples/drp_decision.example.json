@@ -1,0 +1,16 @@
+{
+  "_fixture": "drp_decision_v1",
+  "_non_executable": true,
+  "_description": "Illustrative ZDRPDecision snapshot — dimensions are examples only.",
+  "overall": "pass",
+  "dimensions": {
+    "safety_posture": "ok",
+    "privacy_consent": "ok",
+    "audit_trail": "ok",
+    "reversibility": "review"
+  },
+  "rationale": [
+    "No sacred-move activation requested.",
+    "Reversibility flagged for review because task touches registry-adjacent summaries."
+  ]
+}

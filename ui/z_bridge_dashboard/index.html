@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Z-Bridge Dashboard — Task 006 (local)</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="zb-header">
+      <h1>Z-Bridge Dashboard</h1>
+      <p class="zb-sub">Task 006 — local visibility · reads JSON under <code>data/z_bridge/</code> (no server required beyond a static host for fetch).</p>
+      <p class="zb-meta" id="zbLoadedAt">Loading…</p>
+    </header>
+
+    <section class="zb-grid" aria-label="Pool and intelligence">
+      <article class="zb-card">
+        <h2>Pool</h2>
+        <dl class="zb-dl">
+          <dt>Total credits</dt>
+          <dd id="zbPoolTotal">—</dd>
+          <dt>Available</dt>
+          <dd id="zbPoolAvailable">—</dd>
+          <dt>Distributed</dt>
+          <dd id="zbPoolDistributed">—</dd>
+          <dt>Contributions</dt>
+          <dd id="zbPoolContributions">—</dd>
+          <dt>Status</dt>
+          <dd id="zbPoolStatus">—</dd>
+          <dt>Last updated</dt>
+          <dd id="zbPoolUpdated">—</dd>
+        </dl>
+      </article>
+
+      <article class="zb-card">
+        <h2>Intelligence summary</h2>
+        <p class="zb-note">From <code>data/reports/z_bridge_intelligence_summary.json</code></p>
+        <dl class="zb-dl">
+          <dt>Users (total / flagged)</dt>
+          <dd id="zbIntelUsers">—</dd>
+          <dt>Allocations (ok / reduced / blocked)</dt>
+          <dd id="zbIntelAlloc">—</dd>
+          <dt>Priority score (avg · min · max)</dt>
+          <dd id="zbIntelPriority">—</dd>
+          <dt>Last engine event</dt>
+          <dd id="zbIntelLast">—</dd>
+        </dl>
+      </article>
+
+      <article class="zb-card">
+        <h2>Contribution impact (estimate)</h2>
+        <p id="zbImpactLine" class="zb-impact">—</p>
+      </article>
+
+      <article class="zb-card">
+        <h2>ZCI — Hub intelligence</h2>
+        <p class="zb-note">Advisory only · <code>data/reports/z_ci_intelligence.json</code></p>
+        <p id="zci-summary" class="zb-impact">—</p>
+        <p class="zb-note">Top 5 weakest projects (by score)</p>
+        <ul class="zb-feed" id="zci-weakest" aria-live="polite"></ul>
+      </article>
+
+      <article class="zb-card">
+        <h2>Z-Garage — Upgrade pressure</h2>
+        <p class="zb-note">Advisory only · <code>data/reports/z_garage_upgrade_plan.json</code> · run <code>npm run z:garage:full-scan</code></p>
+        <p id="garage-pressure" class="zb-impact">—</p>
+        <p class="zb-note">Top urgent fixes (by weight)</p>
+        <ul class="zb-feed" id="garage-top-fixes" aria-live="polite"></ul>
+        <p class="zb-note">System patterns (repeated task types)</p>
+        <ul class="zb-feed" id="garage-patterns" aria-live="polite"></ul>
+      </article>
+
+      <article class="zb-card" id="pam-card" aria-label="Z-PAM personal insights">
+        <h2>Z-PAM — personal insights</h2>
+        <p class="zb-note">Local, optional · <code>.zpam/patterns.json</code> · run <code>npm run pam:init</code> then <code>pam:patterns</code> / <code>pam:recommend</code> / <code>pam:mirrorsoul</code></p>
+        <p id="pam-status" class="zb-impact">—</p>
+        <p class="zb-note">Top modules</p>
+        <ul class="zb-feed" id="pam-top-modules" aria-live="polite"></ul>
+        <p class="zb-note">Recent activity (7d)</p>
+        <ul class="zb-feed" id="pam-recent" aria-live="polite"></ul>
+        <p class="zb-note">Recommendations</p>
+        <ul class="zb-feed" id="pam-recommendations" aria-live="polite"></ul>
+        <p class="zb-note">Reflection prompts (MirrorSoul bridge)</p>
+        <ul class="zb-feed" id="pam-mirror-prompts" aria-live="polite"></ul>
+      </article>
+    </section>
+
+    <section class="zb-section">
+      <h2>Registered users</h2>
+      <p class="zb-note"><span id="zbUserCount">0</span> users · click a row to inspect explainability from recent logs.</p>
+      <div class="zb-table-wrap">
+        <table class="zb-table" id="zbUserTable">
+          <thead>
+            <tr>
+              <th>Id</th>
+              <th>Credits</th>
+              <th>Daily allocated</th>
+              <th>Reputation</th>
+              <th>Flagged</th>
+            </tr>
+          </thead>
+          <tbody></tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="zb-section zb-two">
+      <div>
+        <h2>Allocation feed</h2>
+        <p class="zb-note">Latest from <code>allocation_history.json</code></p>
+        <ul class="zb-feed" id="zbAllocFeed" aria-live="polite"></ul>
+      </div>
+      <div>
+        <h2>Recent Z-Bridge logs</h2>
+        <p class="zb-note">Last engine and validation events</p>
+        <ul class="zb-feed" id="zbLogFeed" aria-live="polite"></ul>
+      </div>
+    </section>
+
+    <section class="zb-section zb-explain" id="zbExplainSection" hidden>
+      <h2>Explainability</h2>
+      <p class="zb-note">Derived from recent <code>logs.json</code> entries for the selected user.</p>
+      <pre id="zbExplainBody" class="zb-pre"></pre>
+      <button type="button" class="zb-btn" id="zbExplainClose">Close</button>
+    </section>
+
+    <footer class="zb-footer">
+      <p>Run from repo root: <code>npx serve .</code> then open <code>/ui/z_bridge_dashboard/</code>. File URLs may block fetch; use any static server.</p>
+    </footer>
+
+    <script src="app.js" defer></script>
+  </body>
+</html>

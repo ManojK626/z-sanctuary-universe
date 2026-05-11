@@ -1,0 +1,13 @@
+{
+  "version": "v1",
+  "weights": {
+    "repairability": 0.35,
+    "lifespan": 0.3,
+    "resale": 0.2,
+    "recyclability": 0.15
+  },
+  "thresholds": {
+    "repair_recommended_battery_below": 80,
+    "delay_switch_months_if_low_budget": 6
+  }
+}

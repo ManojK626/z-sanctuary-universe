@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Z-Observer | Dashboard Brain</title>
+    <style>
+        :root { 
+            color-scheme: dark;
+        }
+        body {
+            margin:0;
+            font-family:'Inter',sans-serif;
+            background:#020205;
+            color:#e0e0e0;
+            min-height:100vh;
+            display:flex;
+        }
+        .sidebar {
+            width:260px;
+            border-right:1px solid #1f1f2e;
+            background:linear-gradient(180deg,#05070f,#010204);
+            padding:2rem 1.5rem;
+        }
+        .sidebar h1 {
+            font-family:'Rajdhani',sans-serif;
+            letter-spacing:0.2rem;
+            font-size:1.3rem;
+            margin-bottom:1rem;
+            color:#ffd700;
+        }
+        .sidebar p { font-size:0.75rem; color:#7a82ff; margin:0 0 1rem 0; }
+        .sidebar button {
+            width:100%;
+            margin-bottom:0.75rem;
+            padding:0.8rem;
+            border:none;
+            border-radius:8px;
+            background:#151822;
+            color:#f5f5f5;
+            text-transform:uppercase;
+            font-size:0.8rem;
+            letter-spacing:0.1rem;
+            cursor:pointer;
+        }
+        .monitor {
+            flex-grow:1;
+            padding:2rem;
+            display:grid;
+            grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+            gap:1.3rem;
+            align-items:flex-start;
+            overflow:auto;
+        }
+        .panel {
+            background:#05050c;
+            border:1px solid #1f1f2e;
+            border-radius:16px;
+            padding:1.5rem;
+            display:flex;
+            flex-direction:column;
+            gap:0.5rem;
+            min-height:200px;
+        }
+        .panel h2 {
+            margin:0;
+            font-family:'Rajdhani',sans-serif;
+            font-size:1.1rem;
+            letter-spacing:0.08rem;
+            color:#7a82ff;
+        }
+        .panel ul {
+            margin:0;
+            padding:0;
+            list-style:none;
+            display:flex;
+            flex-direction:column;
+            gap:0.4rem;
+            font-size:0.85rem;
+        }
+        .panel li {
+            display:flex;
+            justify-content:space-between;
+            font-family:monospace;
+        }
+        .panel li span:first-child { color:#a0a0a0; }
+        .panel li span:last-child { color:#00e676; }
+        .status {
+            font-size:0.75rem;
+            padding:0.4rem 0.6rem;
+            border-radius:6px;
+            background:rgba(0,230,118,0.08);
+            color:#00e676;
+            width:max-content;
+        }
+    </style>
+</head>
+<body>
+    <div class="sidebar">
+        <h1>Z-OBSERVER</h1>
+        <p>Zenith Brain Command</p>
+        <button onclick="describeWorkspace('ZUNO')">Z-SANCTUARY Workspace</button>
+        <button onclick="describeWorkspace('AMK')">Amk-Goku Workspace</button>
+        <button onclick="describeWorkspace('OVERVIEW')">Protocol Integrity</button>
+        <button onclick="describeWorkspace('TRACK')">Project Formulae</button>
+    </div>
+    <div class="monitor">
+        <section class="panel" id="panel1">
+            <h2>Workspace Tracker</h2>
+            <ul id="workspaceList">
+                <li><span>ZUNO Dashboards</span><span>Loaded</span></li>
+                <li><span>Amk-Goku Dashboards</span><span>Synced</span></li>
+                <li><span>Protocols</span><span>Active</span></li>
+            </ul>
+            <div class="status">Isolation Guard: On</div>
+        </section>
+        <section class="panel" id="panel2">
+            <h2>Project Manifest</h2>
+            <ul id="manifestList">
+                <li><span>Project ID</span><span>ZUNO_AI_001</span></li>
+                <li><span>Owner</span><span>Amk-Goku</span></li>
+                <li><span>Status</span><span>Secured</span></li>
+            </ul>
+        </section>
+        <section class="panel" id="panel3">
+            <h2>Protocol Compliance</h2>
+            <ul id="protocolList">
+                <li><span>ai-identifier</span><span>Verified</span></li>
+                <li><span>protocol-enforcer</span><span>Loaded</span></li>
+                <li><span>Audit Trail</span><span>Recording</span></li>
+            </ul>
+        </section>
+        <section class="panel" id="panel4">
+            <h2>Dashboard Formulas</h2>
+            <ul id="formulaList">
+                <li><span>Z-Formulas</span><span>Ready</span></li>
+                <li><span>EV Math</span><span>Negative</span></li>
+                <li><span>RTP Target</span><span>96.5%</span></li>
+            </ul>
+        </section>
+    </div>
+    <script type="module">
+        import { loadZObserverFacts } from './z-ai-core.js';
+
+        const workspaceDescriptions = {
+            ZUNO: ['Z-Sanctuary dashboards are isolated (health, predictor, slot).', 'Only protocols from this folder may run.'],
+            AMK: ['Amk-Goku dashboards mirror the ZUNO stack.', 'Sync button replicates updates automatically.'],
+            OVERVIEW: ['Protocols, audit logs, and meta tags must match the manifest.', 'No files load from other universes.'],
+            TRACK: ['Z-Formulas loaded: EV, RTP, Z-Karma runes.', 'JS/MD/API links mapped via manifest JSON.']
+        };
+        function describeWorkspace(key) {
+            const panel = document.getElementById('panel1');
+            const lines = workspaceDescriptions[key] || [];
+            panel.innerHTML = `
+                <h2>Workspace Tracker</h2>
+                <ul id="workspaceList">
+                    ${lines.map(line => `<li><span>${line}</span><span>✓</span></li>`).join('')}
+                </ul>
+                <div class="status">${key} Flywheel</div>
+            `;
+        }
+
+        const { tower, formulas, workflows } = loadZObserverFacts();
+        document.getElementById('workspaceList').innerHTML = workflowList(workflows);
+        document.getElementById('manifestList').innerHTML = tower.map(entry => `<li><span>${entry.beast}</span><span>${entry.label}</span></li>`).join('');
+        document.getElementById('protocolList').innerHTML = Object.entries(formulas).map(([key, value]) => `<li><span>${key}</span><span>${value}</span></li>`).join('');
+
+        function workflowList(list) {
+            return list.map(line => `<li><span>${line}</span><span>✓</span></li>`).join('');
+        }
+    </script>
+</body>
+</html>

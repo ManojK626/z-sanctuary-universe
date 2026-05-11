@@ -1,0 +1,20 @@
+{
+  "name": "EuroMillions",
+  "code": "euromillions",
+  "region": "EU",
+  "main": {
+    "min": 1,
+    "max": 50,
+    "count": 5,
+    "pool": 50
+  },
+  "lucky": {
+    "min": 1,
+    "max": 12,
+    "count": 2
+  },
+  "format": "5+2",
+  "draw_schedule": ["Tuesday", "Friday"],
+  "notes": "Use this as the baseline format when ingesting history.",
+  "history": "data/histories/euromillions.csv"
+}

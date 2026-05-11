@@ -1,0 +1,47 @@
+{
+  "lab_name": "Z-Sanctuary Labs",
+  "mode": "contained",
+  "rules": {
+    "no_core_writes": true,
+    "no_autorun": true,
+    "approval_required_for_execution": true
+  },
+  "modules": [
+    {
+      "module_id": "z_logical_brains_learning_pathway",
+      "phase": "Z-LOGICAL-BRAINS-1B",
+      "mode": "non_clinical_learning_visualization",
+      "signal_source": "data/reports/z_logical_brains_report.json",
+      "hub_capsule": "data/z_logical_brains_hub_capsule.json",
+      "go_no_go": "NON_CLINICAL_PLANNING_ONLY"
+    },
+    {
+      "module_id": "z_numen_cognitive_geometry",
+      "phase": "Z-NUMEN-1",
+      "mode": "educational_pattern_literacy",
+      "signal_source": "data/reports/z_numen_signal_report.json",
+      "hub_capsule": null,
+      "go_no_go": "PERCEPTION_LITERACY_PLANNING_ONLY",
+      "related_module": "z_logical_brains_learning_pathway",
+      "companion_mapping": {
+        "phase": "Z-NUMEN-LB-1",
+        "map_path": "data/z_numen_logical_brains_companion_map.json",
+        "runtime_coupling": false
+      }
+    }
+  ],
+  "last_registry_sync_at": "2026-02-23T21:11:16.090Z",
+  "governance": {
+    "last_sync_at": "2026-02-23T21:11:16.090Z",
+    "sync_entries": [
+      ".vscode/tasks.json",
+      "AI_FOLDER_MANAGER.md",
+      "docs/Z_FORMULA_INTEGRATED.md",
+      "scripts/z_formula_validator.mjs",
+      "Z_LAB_TASK_STRUCTURE.md",
+      "config/z_slo_targets.json",
+      "config/z_workspace_identity.json"
+    ],
+    "last_log_checksum": "402d660672a668070345c2383a5f5286500e0d84d194182eb64ebde0e5a553b9"
+  }
+}

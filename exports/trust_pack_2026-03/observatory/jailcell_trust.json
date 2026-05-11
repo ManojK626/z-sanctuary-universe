@@ -1,0 +1,19 @@
+{
+  "generated_at": "2026-01-30T21:44:40.938339Z",
+  "period": "weekly",
+  "jailcell": {
+    "observed_total": 0,
+    "contained": 0,
+    "released_after_learning": 0,
+    "active": 0
+  },
+  "principles": [
+    "Containment is observational, not punitive",
+    "Learning precedes enforcement",
+    "No user identity is exposed"
+  ],
+  "authority": "observational-only",
+  "backed_by": {
+    "jailcell_summary": "Amk_Goku Worldwide Loterry\\data\\jailcell\\public_summary.json"
+  }
+}

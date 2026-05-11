@@ -1,0 +1,22 @@
+{
+  "name": "Mega Millions",
+  "code": "mega-millions",
+  "region": "US",
+  "main": {
+    "min": 1,
+    "max": 70,
+    "count": 5
+  },
+  "lucky": {
+    "min": 1,
+    "max": 25,
+    "count": 1
+  },
+  "format": "5+1",
+  "draw_schedule": ["Tuesday", "Friday"],
+  "notes": "US multi-state draw with a Mega Ball between 1 and 25.",
+  "history": "data/histories/mega-millions.csv",
+  "history_file": "data\\histories\\mega-millions.csv",
+  "history_hash": "sha256:5c00a510e38b3b78bc7415f7fd1d1f55c798dc6d6bae4e4fcd475b962ebed946",
+  "schema_hash": "sha1:26c10bfac1a726899fd6c9d148fd8f1e8ec9a1f2"
+}

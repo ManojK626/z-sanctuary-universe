@@ -1,0 +1,48 @@
+{
+  "generated_at": "2026-02-15T15:41:20.062Z",
+  "ai_tower": {
+    "status": "unknown",
+    "frozen": false,
+    "agent_count": 0
+  },
+  "agents": [],
+  "miniai": [
+    {
+      "name": "ScribeBot",
+      "online": false,
+      "mode": "observer"
+    },
+    {
+      "name": "ProtectorBot",
+      "online": false,
+      "mode": "observer"
+    },
+    {
+      "name": "DesignerBot",
+      "online": false,
+      "mode": "observer"
+    },
+    {
+      "name": "NavigatorBot",
+      "online": false,
+      "mode": "observer"
+    }
+  ],
+  "hygiene": {
+    "status": "unknown",
+    "generated_at": null,
+    "pending_count": null
+  },
+  "disturbance_watch": {
+    "status": "unknown",
+    "risk_class": "unknown",
+    "disturbance_score": null,
+    "failed_checks": 0
+  },
+  "super_ghost_feed": {
+    "status": "unknown",
+    "risk_class": "unknown",
+    "message": "No disturbance feed yet."
+  },
+  "notes": "Observational only. No execution authority."
+}

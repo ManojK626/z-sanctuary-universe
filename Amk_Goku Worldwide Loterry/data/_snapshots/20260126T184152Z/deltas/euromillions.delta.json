@@ -1,0 +1,20 @@
+{
+  "run_id": "20260126T181502Z",
+  "lottery_code": "euromillions",
+  "real_entropy": {
+    "frequency_entropy": 5.573557,
+    "gap_entropy": 1.760964,
+    "pair_entropy": 6.840224
+  },
+  "simulated_entropy": {
+    "frequency_entropy": 4.950489,
+    "gap_entropy": 2.722292,
+    "pair_entropy": 6.8006
+  },
+  "delta": {
+    "frequency_entropy": 0.623068,
+    "gap_entropy": -0.961328,
+    "pair_entropy": 0.039624
+  },
+  "method": "baseline_uniform"
+}

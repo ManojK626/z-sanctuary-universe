@@ -1,0 +1,52 @@
+{
+  "module": "z-audiology",
+  "version": "1.0.0",
+  "status": "active",
+  "mode": "opt-in",
+  "priority": "quiet-first",
+  "dependsOn": ["trust-pack", "quiet-mode", "z-trace-ledger", "context-resolver"],
+  "capabilities": {
+    "read": ["documents", "summaries", "system-status", "notebooks", "world-pulse"],
+    "write": ["audit-log"],
+    "speak": true,
+    "listen": false
+  },
+  "voiceLayers": ["system", "guardian", "stillness", "child-safe"],
+  "hardRules": {
+    "noBackgroundAudio": true,
+    "noImplicitConsent": true,
+    "silenceOnFailure": true
+  },
+  "triggers": {
+    "build.status": {
+      "source": "dev-tools",
+      "voiceLayer": "system",
+      "summaryOnly": true
+    },
+    "system.integrity": {
+      "source": "core-runtime",
+      "voiceLayer": "system"
+    },
+    "trust.confirmation": {
+      "source": "trust-pack",
+      "voiceLayer": "guardian"
+    },
+    "worldpulse.daily": {
+      "source": "world-pulse",
+      "voiceLayer": "system",
+      "timeBound": true
+    },
+    "quietmode.enter": {
+      "voiceLayer": "stillness"
+    },
+    "quietmode.exit": {
+      "voiceLayer": "stillness"
+    }
+  },
+  "voicePacks": {
+    "system": "placeholder-neutral",
+    "guardian": "placeholder-warm",
+    "stillness": "placeholder-soft",
+    "child-safe": "placeholder-simple"
+  }
+}

@@ -1,0 +1,20 @@
+# Dependency trees (all levels)
+node_modules/
+**/node_modules/
+
+# Build and generated folders (Group A: release-gate scope)
+**/dist/
+**/build/
+**/.next/
+out/
+archive/
+safe_pack/
+coverage/
+
+# Sibling / backup copy — not hub release surface (Group A)
+Z_Sanctuary_Universe 2/
+
+# GGAESP — emitted JS from TypeScript; source of truth is *.ts (Group B)
+core_engine/browser/
+core_engine/dist_heatmap/
+core_engine/node/ggaesp_memory.js

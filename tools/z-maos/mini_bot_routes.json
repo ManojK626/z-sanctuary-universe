@@ -1,0 +1,15 @@
+{
+  "version": 1,
+  "routes": [
+    { "keyword": "workspace", "bot": "Workspace Sentinel", "doc": "docs/z-maos/MINI_BOT_DISPATCH_RULES.md" },
+    { "keyword": "extension", "bot": "Extension Steward", "doc": "docs/z-maos/EXTENSION_AND_TOOL_READINESS.md" },
+    { "keyword": "health", "bot": "Health Cycle Bot", "doc": "docs/z-maos/OPENING_CYCLE_RUNBOOK.md" },
+    { "keyword": "phase", "bot": "Phase Guardian", "doc": "docs/z-maos/AUTONOMY_LEVELS.md" },
+    { "keyword": "route", "bot": "Project Router", "doc": "docs/z-maos/MULTI_PROJECT_REGISTRY_POLICY.md" },
+    { "keyword": "dispatch", "bot": "Mini-Bot Dispatcher", "doc": "docs/z-maos/MINI_BOT_DISPATCH_RULES.md" },
+    { "keyword": "consent", "bot": "Consent Gatekeeper", "doc": "docs/z-maos/AMK_CONSENT_GATES.md" },
+    { "keyword": "report", "bot": "Report Scribe", "doc": "docs/z-maos/FAILURE_ESCALATION_RULES.md" },
+    { "keyword": "friction", "bot": "Friction Remover", "doc": "docs/z-maos/FRICTION_REMOVAL_PROTOCOL.md" },
+    { "keyword": "risk", "bot": "Risk Shadow", "doc": "docs/z-maos/CROSS_PROJECT_LINKING_POLICY.md" }
+  ]
+}

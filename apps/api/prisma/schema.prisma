@@ -1,0 +1,68 @@
+// Z-Sanctuary Universe — Minimal Prisma Schema for Tiers & Module Access
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "sqlite"
+  url      = env("DATABASE_URL")
+}
+
+model User {
+  id           String   @id @default(cuid())
+  email        String   @unique
+  passwordHash String
+  tier         String   @default("basic") // User tier: basic, pro, advance
+  createdAt    DateTime @default(now())
+
+  profile        Profile?
+  rouletteTables RouletteTable[]
+  aiUsageLogs    AiUsageLog[]
+  auditEvents    AuditEvent[]
+  moduleAccess   ModuleAccess[]
+}
+
+model ModuleAccess {
+  id        String   @id @default(cuid())
+  userId    String
+  module    String   // e.g. "roulette", "mirrorsoul"
+  enabled   Boolean  @default(true)
+  createdAt DateTime @default(now())
+
+  user User @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@unique([userId, module])
+}
+
+model AiUsageLog {
+  id        String   @id @default(cuid())
+  userId    String
+  createdAt DateTime @default(now())
+  // Add more fields as needed
+
+  user User @relation(fields: [userId], references: [id], onDelete: Cascade)
+}
+
+model AuditEvent {
+  id        String   @id @default(cuid())
+  userId    String
+  event     String
+  metaJson  String?
+  createdAt DateTime @default(now())
+
+  user User @relation(fields: [userId], references: [id], onDelete: Cascade)
+}
+
+// Example placeholder models for completeness
+model Profile {
+  id     String @id @default(cuid())
+  userId String @unique
+  user   User   @relation(fields: [userId], references: [id], onDelete: Cascade)
+}
+
+model RouletteTable {
+  id     String @id @default(cuid())
+  userId String
+  user   User   @relation(fields: [userId], references: [id], onDelete: Cascade)
+}

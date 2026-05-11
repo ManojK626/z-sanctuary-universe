@@ -1,0 +1,23 @@
+{
+  "generated_at": "2026-02-15T15:41:20.113Z",
+  "status": "hold",
+  "auto_tasks_setting": "unset",
+  "auto_tasks": ["Z: Full Background Run"],
+  "checks": [
+    {
+      "id": "auto_tasks_setting",
+      "pass": false,
+      "note": "task.allowAutomaticTasks=unset"
+    },
+    {
+      "id": "auto_tasks_present",
+      "pass": false,
+      "note": "auto tasks: Z: Full Background Run"
+    },
+    {
+      "id": "background_run_covered",
+      "pass": false,
+      "note": "background run is either auto task or chained by SSWS auto boot"
+    }
+  ]
+}

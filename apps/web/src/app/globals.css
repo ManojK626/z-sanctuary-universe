@@ -1,0 +1,61 @@
+/* Responsive + “TV / large display” comfort: clamp type, cap line length, keep tap targets. */
+.sanctuary-body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, sans-serif;
+  background: #0a0e27;
+  color: #e8f4ff;
+  font-size: clamp(0.9rem, 0.2vw + 0.88rem, 1.1rem);
+}
+
+.sanctuary-tv-wrap {
+  min-height: 100dvh;
+  max-width: min(1920px, 100vw);
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+}
+
+.sanctuary-tv-header .sanctuary-nav {
+  font-size: 0.92rem;
+}
+
+.sanctuary-tv-wrap > * {
+  box-sizing: border-box;
+}
+
+.sanctuary-focus-column {
+  width: 100%;
+  max-width: 72rem;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: max(0.5rem, env(safe-area-inset-left, 0px));
+  padding-right: max(0.5rem, env(safe-area-inset-right, 0px));
+}
+
+.sanctuary-focus-column--tight {
+  max-width: 58rem;
+}
+
+@media (min-width: 90rem) and (min-height: 42rem) {
+  .sanctuary-tv-wrap--with-padding {
+    padding: clamp(0.5rem, 1.5vh, 1.25rem) clamp(0.5rem, 2.5vw, 2.5rem);
+  }
+
+  .sanctuary-tv-header .sanctuary-nav {
+    gap: 0.45rem 1rem;
+    font-size: clamp(0.85rem, 0.2vw + 0.8rem, 1rem);
+  }
+
+  .sanctuary-tv-header {
+    min-height: 2.75rem;
+    align-items: center;
+  }
+}
+
+/* Large / touch displays: do not force tiny text */
+@media (min-width: 100rem) {
+  .sanctuary-tv-wrap {
+    box-shadow: 0 0 0 1px rgba(0, 212, 255, 0.12);
+  }
+}

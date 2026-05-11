@@ -1,0 +1,20 @@
+{
+  "version": "1.0.0",
+  "generated_at": "2026-02-14T00:00:00Z",
+  "rules": {
+    "require_hygiene_green": true,
+    "require_protection_audit": true,
+    "max_pending_audit": 0,
+    "min_module_coverage_pct": 10,
+    "max_priority_open": 20,
+    "require_privacy_report_recent_hours": 24
+  },
+  "weights": {
+    "hygiene": 30,
+    "protection": 25,
+    "privacy_freshness": 15,
+    "module_coverage": 15,
+    "priority_backlog": 10,
+    "readiness_tracking": 5
+  }
+}

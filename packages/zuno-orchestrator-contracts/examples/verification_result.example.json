@@ -1,0 +1,11 @@
+{
+  "_fixture": "verification_result_v1",
+  "_non_executable": true,
+  "_description": "Single ZVerificationResult — run multiple checks as separate objects in real use.",
+  "ok": true,
+  "layer": "grounded",
+  "messages": [
+    "Citations include data/reports/z_zuno_coverage_audit.json",
+    "Module counts match last audit summary"
+  ]
+}

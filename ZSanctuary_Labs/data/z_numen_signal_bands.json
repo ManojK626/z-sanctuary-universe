@@ -1,0 +1,28 @@
+{
+  "schema": "z.numen.signal.bands.v1",
+  "bands": [
+    { "name": "Quiet", "min": 0.0, "max": 0.3 },
+    { "name": "Active", "min": 0.31, "max": 0.6 },
+    { "name": "Amplified", "min": 0.61, "max": 0.85 },
+    { "name": "Saturated", "min": 0.86, "max": 1.0 }
+  ],
+  "triplet_mapping": {
+    "333": "structure repeat",
+    "666": "reinforcement pressure",
+    "999": "saturation wave"
+  },
+  "safe_output_rules": {
+    "do_say": [
+      "This is a perception pattern, not proof of hidden control.",
+      "Repetition can draw attention; it is not destiny.",
+      "Signal score describes salience in this exercise, not danger.",
+      "Return to calm awareness and zero-core grounding."
+    ],
+    "do_not_say": [
+      "This proves someone is controlling you.",
+      "This number means you are in danger.",
+      "This confirms a secret society or supernatural force.",
+      "This diagnosis or therapy recommendation follows from the pattern."
+    ]
+  }
+}

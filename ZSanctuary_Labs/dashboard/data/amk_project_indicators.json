@@ -1,0 +1,37 @@
+{
+  "indicators": [
+    {
+      "id": "z_logical_brains_learning_pathway",
+      "signal": "GREEN",
+      "go_no_go": "NON_CLINICAL_PLANNING_ONLY",
+      "recommended_next_action": "Keep as learning visualization blueprint; do not open child-data/vault/provider lanes without AMK gate.",
+      "related_docs": [
+        "docs/Z_LOGICAL_BRAINS_LEARNING_PATHWAY_ENGINE.md",
+        "docs/Z_LOGICAL_BRAINS_SAFETY_AND_PRIVACY_POLICY.md",
+        "docs/PHASE_Z_LOGICAL_BRAINS_1_GREEN_RECEIPT.md",
+        "docs/Z_NUMEN_LOGICAL_BRAINS_COMPANION_MAP.md"
+      ],
+      "related_reports": [
+        "data/reports/z_logical_brains_report.json",
+        "data/reports/z_logical_brains_report.md"
+      ]
+    },
+    {
+      "id": "z_numen_cognitive_geometry",
+      "signal": "GREEN",
+      "go_no_go": "PERCEPTION_LITERACY_PLANNING_ONLY",
+      "recommended_next_action": "Keep as read-only pattern literacy; no deploy, profiling, or proof claims; pair conceptually with Logical Brains.",
+      "related_docs": [
+        "docs/Z_NUMEN_COGNITIVE_GEOMETRY_ENGINE.md",
+        "docs/Z_NUMEN_SAFETY_AND_PERCEPTION_POLICY.md",
+        "docs/PHASE_Z_NUMEN_1_GREEN_RECEIPT.md",
+        "docs/Z_NUMEN_LOGICAL_BRAINS_COMPANION_MAP.md",
+        "docs/PHASE_Z_NUMEN_LB_1_GREEN_RECEIPT.md"
+      ],
+      "related_reports": [
+        "data/reports/z_numen_signal_report.json",
+        "data/reports/z_numen_signal_report.md"
+      ]
+    }
+  ]
+}

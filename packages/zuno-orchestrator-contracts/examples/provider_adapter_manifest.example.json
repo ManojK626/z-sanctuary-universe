@@ -1,0 +1,23 @@
+{
+  "_fixture": "provider_adapter_manifest_v1",
+  "_non_executable": true,
+  "_description": "Wrapper manifest listing ZProviderAdapter-shaped rows — all disabled; no API keys.",
+  "schema": "Z_PROVIDER_ADAPTER_MANIFEST_EXAMPLE",
+  "generated_at": "2026-05-03T12:00:00.000Z",
+  "adapters": [
+    {
+      "id": "example-text-low-disabled",
+      "name": "Example text adapter (disabled)",
+      "capabilities": ["text_reasoning", "summarization"],
+      "riskClass": "low",
+      "enabled": false
+    },
+    {
+      "id": "example-code-medium-disabled",
+      "name": "Example code adapter (disabled)",
+      "capabilities": ["code", "patch_proposal"],
+      "riskClass": "medium",
+      "enabled": false
+    }
+  ]
+}

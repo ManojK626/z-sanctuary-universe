@@ -1,0 +1,186 @@
+{
+  "_meta": {
+    "version": "1.0.0",
+    "last_updated": "2026-01-29",
+    "philosophy": "APIs are signals, not truth. Z-Sanctuary governs access calmly.",
+    "default_policy": "read-only, advisory, no execution authority"
+  },
+  "lotteries": {
+    "powerball_csv": {
+      "category": "lotteries",
+      "region": "US",
+      "tier": 1,
+      "access": "public",
+      "format": "csv",
+      "status": "ok_with_normalization",
+      "maintainer": "Texas Lottery",
+      "expected_schema": "canonical_with_aliases",
+      "known_issues": ["header aliases require normalization", "bonus column naming inconsistent"],
+      "fallbacks": [],
+      "legal_notes": "Public historical draw data",
+      "notes": "Primary US lottery source; ingestion normalization required"
+    },
+    "mega_millions_csv": {
+      "category": "lotteries",
+      "region": "US",
+      "tier": 1,
+      "access": "public",
+      "format": "csv",
+      "status": "ok_with_normalization",
+      "maintainer": "Texas Lottery",
+      "expected_schema": "canonical_with_aliases",
+      "known_issues": ["date column naming mismatch", "0 usable rows if not normalized"],
+      "fallbacks": [],
+      "legal_notes": "Public historical draw data",
+      "notes": "Normalization fix pending; not an API failure"
+    },
+    "uk_lotto": {
+      "category": "lotteries",
+      "region": "UK",
+      "tier": 1,
+      "access": "public",
+      "format": "csv",
+      "status": "manual_required",
+      "maintainer": "National Lottery UK",
+      "expected_schema": "canonical",
+      "known_issues": ["official CSV endpoint returns 404"],
+      "fallbacks": [],
+      "legal_notes": "Manual historical CSV download permitted",
+      "notes": "Manual CSV drops expected; system treats this as normal"
+    },
+    "eurojackpot": {
+      "category": "lotteries",
+      "region": "EU",
+      "tier": 1,
+      "access": "public",
+      "format": "csv",
+      "status": "missing",
+      "maintainer": "Multiple EU operators",
+      "expected_schema": "canonical",
+      "known_issues": ["no unified official CSV endpoint"],
+      "fallbacks": [],
+      "legal_notes": "Public results vary by country",
+      "notes": "To be added via manual aggregation or partner data"
+    },
+    "euromillions": {
+      "category": "lotteries",
+      "region": "EU",
+      "tier": 1,
+      "access": "public",
+      "format": "csv",
+      "status": "missing",
+      "maintainer": "Camelot / FDJ / Loterías",
+      "expected_schema": "canonical",
+      "known_issues": ["fragmented sources"],
+      "fallbacks": [],
+      "legal_notes": "Public results available by country",
+      "notes": "Manual or partner aggregation required"
+    },
+    "la_primitiva": {
+      "category": "lotteries",
+      "region": "ES",
+      "tier": 1,
+      "access": "public",
+      "format": "csv",
+      "status": "manual_required",
+      "maintainer": "Loterías y Apuestas del Estado",
+      "expected_schema": "canonical",
+      "known_issues": ["no stable machine-readable endpoint"],
+      "fallbacks": [],
+      "legal_notes": "Manual historical data allowed",
+      "notes": "Manual ingestion expected; not considered broken"
+    },
+    "mauritius_loto_vert": {
+      "category": "lotteries",
+      "region": "MU",
+      "tier": 1,
+      "access": "public",
+      "format": "csv",
+      "status": "manual_required",
+      "maintainer": "Lottotech Mauritius",
+      "expected_schema": "canonical",
+      "known_issues": ["no public CSV endpoint"],
+      "fallbacks": [],
+      "legal_notes": "Manual historical data collection only",
+      "notes": "Handled as Tier-1 manual source"
+    }
+  },
+  "news_world_observer": {
+    "inshorts": {
+      "category": "news",
+      "region": "global",
+      "tier": 0,
+      "access": "free",
+      "format": "json",
+      "status": "degraded",
+      "known_issues": ["402 Payment Required"],
+      "fallbacks": ["reddit_news", "gov_rss"],
+      "legal_notes": "Free tier unstable",
+      "notes": "Used opportunistically; never relied upon"
+    },
+    "reddit_news": {
+      "category": "news",
+      "region": "global",
+      "tier": 0,
+      "access": "free",
+      "format": "json",
+      "status": "ok",
+      "known_issues": [],
+      "fallbacks": [],
+      "legal_notes": "Public aggregation",
+      "notes": "Current World Pulse fallback"
+    },
+    "gov_rss": {
+      "category": "news",
+      "region": "global",
+      "tier": 1,
+      "access": "public",
+      "format": "rss",
+      "status": "ok",
+      "known_issues": [],
+      "fallbacks": [],
+      "legal_notes": "Official government RSS feeds",
+      "notes": "Preferred for stability and neutrality"
+    }
+  },
+  "finance_economy": {
+    "world_bank": {
+      "category": "economy",
+      "region": "global",
+      "tier": 1,
+      "access": "public",
+      "format": "api",
+      "status": "available",
+      "known_issues": [],
+      "fallbacks": [],
+      "legal_notes": "Open development indicators",
+      "notes": "High-trust institutional data"
+    },
+    "imf_data": {
+      "category": "economy",
+      "region": "global",
+      "tier": 1,
+      "access": "public",
+      "format": "api",
+      "status": "available",
+      "known_issues": [],
+      "fallbacks": [],
+      "legal_notes": "Public economic datasets",
+      "notes": "Use for macro context only"
+    }
+  },
+  "weather_environment": {
+    "noaa": {
+      "category": "weather",
+      "region": "US/global",
+      "tier": 1,
+      "access": "public",
+      "format": "api",
+      "status": "available",
+      "known_issues": [],
+      "fallbacks": [],
+      "legal_notes": "Public meteorological data",
+      "notes": "Stable long-term source"
+    }
+  }
+}

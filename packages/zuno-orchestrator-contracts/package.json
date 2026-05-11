@@ -1,0 +1,22 @@
+{
+  "name": "@z-sanctuary/zuno-orchestrator-contracts",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Phase 1A: TypeScript contracts for Zuno orchestration doctrine — no providers, no network, no execution",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "examples:check": "node scripts/validate_examples.mjs",
+    "task-plan:lint": "node scripts/lint_task_plan.mjs",
+    "test": "tsc --noEmit && node scripts/validate_examples.mjs && node scripts/lint_task_plan.mjs"
+  },
+  "keywords": ["z-sanctuary", "zuno", "orchestration", "contracts"],
+  "license": "MIT",
+  "devDependencies": {
+    "typescript": "^5.0.0"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "generated_at": "2026-02-15T15:41:22.749957Z",
+  "week": 7,
+  "rhythm": {
+    "CALM": 0,
+    "ADAPTIVE": 0,
+    "REGENERATION": 1
+  },
+  "explanation": "Rhythm reflects internal care cycles. Observational only.",
+  "authority": "observational-only",
+  "backed_by": {
+    "system_status": "Amk_Goku Worldwide Loterry\\data\\reports\\system_status.json"
+  }
+}

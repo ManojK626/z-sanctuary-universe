@@ -1,0 +1,68 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "z-sanc://schemas/device_profile.schema.json",
+  "title": "DeviceProfile",
+  "type": "object",
+  "required": ["id", "brand", "ecosystem", "category", "released_year", "metrics"],
+  "properties": {
+    "id": { "type": "string", "pattern": "^[a-z0-9_\\-.]{3,64}$" },
+    "brand": { "type": "string", "minLength": 1 },
+    "ecosystem": {
+      "type": "string",
+      "enum": ["iOS", "Android", "Windows", "macOS", "Linux", "ChromeOS", "Other"]
+    },
+    "category": {
+      "type": "string",
+      "enum": [
+        "phone",
+        "tablet",
+        "laptop",
+        "desktop",
+        "tv",
+        "wearable",
+        "industrial_panel",
+        "other"
+      ]
+    },
+    "model_name": { "type": "string" },
+    "released_year": { "type": "integer", "minimum": 2000, "maximum": 2100 },
+    "notes_public": { "type": "string", "maxLength": 2000 },
+    "msrp_eur": { "type": "number", "minimum": 0 },
+    "metrics": {
+      "type": "object",
+      "required": [
+        "customization",
+        "lock_in",
+        "repairability",
+        "resale_retention",
+        "privacy_posture"
+      ],
+      "properties": {
+        "customization": { "type": "integer", "minimum": 0, "maximum": 10 },
+        "lock_in": { "type": "integer", "minimum": 0, "maximum": 10 },
+        "repairability": { "type": "integer", "minimum": 0, "maximum": 10 },
+        "resale_retention": { "type": "integer", "minimum": 0, "maximum": 100 },
+        "privacy_posture": { "type": "string", "enum": ["closed", "mixed", "open", "unknown"] },
+        "durability": { "type": "integer", "minimum": 0, "maximum": 10 },
+        "software_support_years": { "type": "integer", "minimum": 0, "maximum": 15 },
+        "accessibility": { "type": "integer", "minimum": 0, "maximum": 10 },
+        "enterprise_readiness": { "type": "integer", "minimum": 0, "maximum": 10 }
+      },
+      "additionalProperties": false
+    },
+    "role_strengths": {
+      "type": "object",
+      "properties": {
+        "creator": { "type": "integer", "minimum": 0, "maximum": 10 },
+        "enterprise": { "type": "integer", "minimum": 0, "maximum": 10 },
+        "student": { "type": "integer", "minimum": 0, "maximum": 10 },
+        "gaming": { "type": "integer", "minimum": 0, "maximum": 10 },
+        "family": { "type": "integer", "minimum": 0, "maximum": 10 },
+        "health": { "type": "integer", "minimum": 0, "maximum": 10 },
+        "travel": { "type": "integer", "minimum": 0, "maximum": 10 }
+      },
+      "additionalProperties": false
+    }
+  },
+  "additionalProperties": false
+}

@@ -1,0 +1,33 @@
+{
+  "baseUrl": "http://127.0.0.1:5502",
+  "serverPort": 5502,
+  "autoOpenOnTask": true,
+  "activeProfile": "core-only",
+  "profiles": {
+    "core-only": ["core/index.html", "core/z_html_links_hub.html"],
+    "dashboard-primary": ["dashboard/Html/index-skk-rkpk.html"],
+    "full-sanctuary": [
+      "dashboard/Html/index-skk-rkpk.html",
+      "dashboard/Html/z-addon-dashboard.html",
+      "core/index.html",
+      "dashboard/index.html",
+      "docs/public/z_ecosphere_transparency_report/index.html",
+      "apps/z_gadget_mirrors/ui_web_portal/index.html",
+      "Amk_Goku Worldwide Loterry/ui/lottery_app.html",
+      "core/z_html_links_hub.html"
+    ],
+    "light-mode": ["core/index.html"]
+  },
+  "includeRoots": [
+    "core",
+    "dashboard",
+    "docs/public/z_ecosphere_transparency_report",
+    "apps",
+    "Amk_Goku Worldwide Loterry/ui",
+    "Amk_Goku Worldwide Loterry/trust",
+    "docs/public/snapshot"
+  ],
+  "excludePathContains": ["safe_pack", "exports", "node_modules", "archive", "All APPs", ".git"],
+  "catalogOutput": "data/reports/z_html_links_catalog.json",
+  "hubOutput": "core/z_html_links_hub.html"
+}
