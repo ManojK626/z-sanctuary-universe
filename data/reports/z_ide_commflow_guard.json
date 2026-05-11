@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-05-11T12:26:42.752Z",
+  "generated_at": "2026-05-11T18:41:13.106Z",
   "status": "watch",
   "scan": {
     "files_scanned": 4000,
     "max_scan_files": 4000,
-    "mismatch_count": 1172
+    "mismatch_count": 1160
   },
   "settings_checks": [
     {
