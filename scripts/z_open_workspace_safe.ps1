@@ -133,7 +133,7 @@ function Append-DoorwaySessionReceipt {
   if (-not (Test-Path -LiteralPath $dir)) {
     New-Item -ItemType Directory -Path $dir -Force | Out-Null
   }
-  $json = ($Record | ConvertTo-Json -Compress -Depth 8)
+  $json = ([pscustomobject]$Record | ConvertTo-Json -Compress -Depth 8)
   $enc = New-Object System.Text.UTF8Encoding $false
   [System.IO.File]::AppendAllText($LogPath, $json + [Environment]::NewLine, $enc)
 }
@@ -173,6 +173,8 @@ $selected = foreach ($e in $entries) {
   }
   $e
 }
+# Single match is a PSCustomObject, not an array — force array for .Count / foreach.
+$selected = @($selected)
 
 $SessionLogPath = Join-Path $RepoRoot 'data/reports/z_doorway_session_log.jsonl'
 
@@ -189,20 +191,21 @@ if ($selected.Count -eq 0) {
 
 foreach ($e in $selected) {
   $reason = Get-SkipReason -Entry $e
-  $id = [string]$e.id
+  # Use $entryId — not $id — so we do not collide with the -Id parameter ($Id) under case-insensitive rules.
+  $entryId = [string]$e.id
   $path = [string]$e.path
   $nm = [string]$e.name
-  if ([string]::IsNullOrWhiteSpace($nm)) { $nm = $id }
+  if ([string]::IsNullOrWhiteSpace($nm)) { $nm = $entryId }
   $pathExists = Test-PathExists $path
   $stRaw = [string]$e.status
   $stLog = if ($stRaw) { $stRaw.Trim().ToUpperInvariant() } else { '' }
 
   if ($reason) {
-    Write-Host ("[SKIP] id=" + $id + ' reason=' + $reason)
+    Write-Host ("[SKIP] id=" + $entryId + ' reason=' + $reason)
     if ($Apply -and $SessionLog) {
       Append-DoorwaySessionReceipt -LogPath $SessionLogPath -Record @{
         timestamp      = (Get-Date).ToUniversalTime().ToString('o')
-        id             = $id
+        id             = [string]$entryId
         name           = $nm
         path_exists    = [bool]$pathExists
         status         = $stLog
@@ -216,7 +219,7 @@ foreach ($e in $selected) {
 
   $st = [string]$e.status
   if ($st -and $st.Trim().ToUpperInvariant() -eq 'YELLOW') {
-    Write-Warning ("[REVIEW] id=" + $id + ' status=YELLOW — open only after operator review.')
+    Write-Warning ("[REVIEW] id=" + $entryId + ' status=YELLOW — open only after operator review.')
   }
 
   $pref = [string]$e.preferred_entry
@@ -244,7 +247,7 @@ foreach ($e in $selected) {
     if ($Apply -and $SessionLog) {
       Append-DoorwaySessionReceipt -LogPath $SessionLogPath -Record @{
         timestamp      = (Get-Date).ToUniversalTime().ToString('o')
-        id             = $id
+        id             = [string]$entryId
         name           = $nm
         path_exists    = [bool]$pathExists
         status         = $stLog
@@ -256,7 +259,7 @@ foreach ($e in $selected) {
     if (-not $launchOk) {
       throw $launchEx
     }
-    Write-Host ("[OPENED] id=" + $id)
+    Write-Host ("[OPENED] id=" + $entryId)
   }
   else {
     Open-OneTarget -Target $targetNorm -Preferred $pref.Trim().ToLowerInvariant() -DoLaunch $false
