@@ -161,6 +161,8 @@
     "amk:doorway:open": "powershell -ExecutionPolicy Bypass -File scripts/amk_open_workspace_doors.ps1",
     "amk:doors:dry": "powershell -ExecutionPolicy Bypass -File scripts/amk_open_project_doors.ps1 -Group all_safe -DryRun",
     "amk:doors:open": "powershell -ExecutionPolicy Bypass -File scripts/amk_open_project_doors.ps1 -Group all_safe",
+    "z:control-links:dry": "node scripts/z_sync_control_links.mjs",
+    "z:control-links:apply": "node scripts/z_sync_control_links.mjs --apply",
     "amk:workspace:profiles": "node scripts/amk_cursor_workspace_profiles_check.mjs",
     "z:amk:strategy": "node scripts/z_amk_gtai_strategy_report.mjs",
     "z:monster:registry-verify": "node scripts/z_monster_project_registry_verify.mjs",

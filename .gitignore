@@ -208,3 +208,4 @@ vite.config.js.timestamp-*
 vite.config.ts.timestamp-*
 .vite/
 >>>>>>> d5ac8fea3583ac99fa20a15e8ade760788d6deb0
+data/reports/incidents/

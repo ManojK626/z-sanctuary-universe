@@ -1,0 +1,69 @@
+{
+  "schema": "z_ssws_zlab_control_spine_v1",
+  "phase": "Z-SSWS-ZLAB-1",
+  "title": "Z-SSWS × Z-Lab unified Cursor project control spine",
+  "updated_at": "2026-05-11T00:00:00Z",
+  "governance_note": "Registry is declarative posture only. No automated side effects are executed from this JSON.",
+  "z_ssws": {
+    "id": "z_ssws",
+    "display_name": "Z-SSWS (Super Saiyan Work-Station)",
+    "role_summary": "Main control spine for all Cursor IDE project folders under the hub and PC root policy.",
+    "responsibilities": [
+      "Primary cockpit: unified dashboards, operator surfaces, and controlled doorways into workspaces and sibling projects",
+      "Authoritative project registry alignment (canonical paths, manifests, EAII-facing roster pointers where applicable)",
+      "Readiness routing: status gates (GREEN/YELLOW/BLUE/RED/NAS_WAIT) before operator or scripted open actions",
+      "Doorway opening: governed local launcher only (Cursor/VS Code/Explorer) — never deploy or run package lifecycles from spine scripts",
+      "Mini-bot coordination: traffic/comms/status signals as read-only or explicitly human-triggered lanes; no silent autonomy loops"
+    ],
+    "out_of_scope_for_this_phase": [
+      "Auto-deploy, secret writes, background service mutation",
+      "NAS mutation; Synology posture remains declaration-only until mount verification"
+    ]
+  },
+  "z_lab": {
+    "id": "z_lab",
+    "display_name": "Z-Lab",
+    "role_summary": "Supervised background analysis and build-readiness layer — observation and recommendations, not autonomous execution.",
+    "responsibilities": [
+      "Background analysis: lint-like aggregates, structure/registry checks, and read-only similarity or cadence reports where scripted",
+      "Dry-run checks: verification commands and report emission without changing remote or production state",
+      "Report generation: markdown/JSON under data/reports with human-readable operator summaries",
+      "Suggested Cursor prompts: templates and slash-command hints stored as docs or data; no auto-submission to AI",
+      "Build-readiness scoring: advisory numeric or tier labels; does not flip production or merge branches"
+    ],
+    "out_of_scope_for_this_phase": [
+      "Extension auto-install",
+      "Auto-run dev servers or wrangler from Z-Lab scripts without explicit operator invocation",
+      "Writing to NAS volumes before Synology mount and policy sign-off"
+    ]
+  },
+  "status_semantics": {
+    "GREEN": "Safe to proceed with the described local/supervised action (open doorways, run verify, review dashboards).",
+    "YELLOW": "Proceed with conscious review; may open folders or run verifiers after operator acknowledges warning context.",
+    "BLUE": "Hold: AMK or governance decision required before expanding scope or binding external surfaces.",
+    "RED": "Blocked: do not perform the gated action; fix posture or governance first.",
+    "NAS_WAIT": "Wait for Synology/NAS mount and verification; treat NAS paths as declaration-only until present on disk."
+  },
+  "forbidden_actions": [
+    "deploy",
+    "bind_domain",
+    "write_secrets",
+    "auto_run_services",
+    "install_extensions_automatically",
+    "mutate_nas",
+    "force_push"
+  ],
+  "synology_nas_posture": {
+    "mode": "declaration_only_until_mounted",
+    "rules": [
+      "Registry and docs may reference future Z: or UNC paths as intent only",
+      "No hub script may create, delete, or sync content on NAS until mount presence and human verification are confirmed",
+      "NAS_WAIT status applies to any path that requires the Synology volume before IDE open or verify"
+    ]
+  },
+  "related_artifacts": [
+    "data/amk_project_doorway_registry.json",
+    "data/amk_workspace_doorway_registry.json",
+    "docs/AMK_PROJECT_DOORWAY_LAUNCHER.md"
+  ]
+}

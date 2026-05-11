@@ -1,0 +1,34 @@
+{
+  "schema": "z_satellite_control_link_manifest_v1",
+  "phase": "Z-CONTROL-LINK-1",
+  "updated_at": "2026-05-11T00:00:00Z",
+  "title": "Approved satellite targets for control-link bridge sync",
+  "hub_relative_template": "docs/Z_SANCTUARY_CONTROL_LINK.md",
+  "policy": [
+    "Only paths listed here may receive bridge writes.",
+    "The hub script never enumerates arbitrary PC folders; set enabled=true only for intentional satellites.",
+    "NAS targets stay disabled or NAS_WAIT until mount verification; the sync script does not create NAS trees."
+  ],
+  "satellites": [
+    {
+      "id": "z_labs_capsule",
+      "name": "Z_Labs (sibling capsule)",
+      "path": "C:/Cursor Projects Organiser/Z_Labs",
+      "enabled": true,
+      "status": "GREEN",
+      "bridge_path": "docs/Z_SANCTUARY_CONTROL_LINK.md",
+      "nas_required": false,
+      "notes": "Operator: disable if this machine does not host Z_Labs at this path."
+    },
+    {
+      "id": "nas_declaration_stub",
+      "name": "Future NAS satellite (declaration only)",
+      "path": "Z:/SanctuarySatellites/_control_link_stub",
+      "enabled": false,
+      "status": "NAS_WAIT",
+      "bridge_path": "docs/Z_SANCTUARY_CONTROL_LINK.md",
+      "nas_required": true,
+      "notes": "Keep disabled until Synology volume is mounted and path verified; then enable cautiously."
+    }
+  ]
+}
