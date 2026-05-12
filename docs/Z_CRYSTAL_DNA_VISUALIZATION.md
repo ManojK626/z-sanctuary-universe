@@ -5,7 +5,7 @@
 ## Surface
 
 | Asset | Role |
-| --- | --- |
+| ------ | ------------------------------------------------------------------------------------- |
 | Panel | `dashboard/panels/z-crystal-dna-map.html` |
 | Script | `dashboard/scripts/z-crystal-dna-map-readonly.js` (fetch + layout + interaction only) |
 | Styles | `dashboard/styles/z-crystal-dna-map.css` |
@@ -13,7 +13,7 @@
 ## Data sources (read-only GET)
 
 | File | Use in map |
-| --- | --- |
+| --------------------------------------------- | --------------------------------------------------------------------------------------------- |
 | `data/z_crystal_dna_asset_manifest.json` | Primary **DNA shards**, `dependencies` edges, `allowed_actions` / `forbidden_actions` overlay |
 | `data/z_satellite_control_link_manifest.json` | **Satellite** cluster nodes (`satellites[]`) |
 | `data/z_doorway_workspace_registry.json` | **Doorway** cluster nodes (`entries[]`) |

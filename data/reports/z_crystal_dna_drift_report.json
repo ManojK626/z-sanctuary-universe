@@ -1,0 +1,43 @@
+{
+  "schema": "z_crystal_dna_drift_report_v1",
+  "phase": "Z-CRYSTAL-DNA-3",
+  "generated_at": "2026-05-12T15:24:25.875Z",
+  "inputs": {
+    "crystal": "data/z_crystal_dna_asset_manifest.json",
+    "satellite": "data/z_satellite_control_link_manifest.json",
+    "doorway": "data/z_doorway_workspace_registry.json",
+    "indicators": "dashboard/data/amk_project_indicators.json"
+  },
+  "overall_signal": "BLUE",
+  "findings_count": 3,
+  "findings": [
+    {
+      "code": "stale_bridge",
+      "signal": "YELLOW",
+      "message": "Satellite \"z_labs_capsule\" bridge file is older than hub template (refresh drift).",
+      "refs": [
+        "sat:z_labs_capsule"
+      ]
+    },
+    {
+      "code": "satellite_not_wired_in_dna_mesh",
+      "signal": "YELLOW",
+      "message": "Enabled satellite \"z_labs_capsule\" is not referenced by DNA shard dependencies (topology gap).",
+      "refs": [
+        "sat:z_labs_capsule"
+      ]
+    },
+    {
+      "code": "hold_parallel_green_doorway",
+      "signal": "BLUE",
+      "message": "Doorway registry mixes HOLD and GREEN enabled rows — operator sequencing review.",
+      "refs": []
+    }
+  ],
+  "law": "Detect / compare / report only. No automatic restore, repair, deploy, git, NAS writes, or secrets.",
+  "exit_hint": 0,
+  "visualization_hook": {
+    "relative_url": "data/reports/z_crystal_dna_drift_report.json",
+    "note": "Optional: Living Crystal map may fetch this JSON to tint shard nodes by refs[]."
+  }
+}

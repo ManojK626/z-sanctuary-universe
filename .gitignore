@@ -62,6 +62,7 @@ vault/personal/
 **/desktop.ini
 lab-outputs/
 data/reports/*.json
+!data/reports/z_crystal_dna_drift_report.json
 
 # Logs
 logs

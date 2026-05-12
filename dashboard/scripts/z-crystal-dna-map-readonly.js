@@ -1,6 +1,7 @@
 /**
- * Z-CRYSTAL-DNA-2 — read-only Crystal DNA ecosystem map.
+ * Z-CRYSTAL-DNA-2 / DNA-3 — read-only Crystal DNA ecosystem map.
  * Fetches JSON only (GET). No writes, deploy, git, repair, NAS, or secrets.
+ * DNA-3: optional drift overlay from z_crystal_dna_drift_report.json (GET only).
  */
 (function () {
   'use strict';
@@ -10,7 +11,11 @@
     satellite: '../../data/z_satellite_control_link_manifest.json',
     doorway: '../../data/z_doorway_workspace_registry.json',
     indicators: '../data/amk_project_indicators.json',
+    drift: '../../data/reports/z_crystal_dna_drift_report.json',
   };
+
+  /** Worst-signal merge (aligned with drift script rollup). */
+  var DRIFT_RANK = { RED: 6, QUARANTINE: 5, HOLD: 4, BLUE: 4, NAS_WAIT: 3, YELLOW: 2, GREEN: 1 };
 
   var MAX_INDICATORS = 28;
   var COL_W = 210;
@@ -60,6 +65,53 @@
       if (!res.ok) throw new Error('HTTP ' + res.status + ' ' + url);
       return res.json();
     });
+  }
+
+  function worseDriftSignal(a, b) {
+    var ra = DRIFT_RANK[String(a || '').toUpperCase()] || 0;
+    var rb = DRIFT_RANK[String(b || '').toUpperCase()] || 0;
+    return ra >= rb ? String(a || 'YELLOW').toUpperCase() : String(b || 'YELLOW').toUpperCase();
+  }
+
+  /** Apply DNA-3 drift classes to shard nodes by report refs (read-only overlay). */
+  function applyDriftOverlay(report) {
+    var hint = $('zCdnaDriftHint');
+    if (!report || !Array.isArray(report.findings)) {
+      if (hint) hint.textContent = '';
+      return;
+    }
+    var worstByRef = {};
+    report.findings.forEach(function (f) {
+      var sig = String(f.signal || 'YELLOW').toUpperCase();
+      (f.refs || []).forEach(function (r) {
+        var key = String(r || '');
+        if (!key) return;
+        worstByRef[key] = worstByRef[key] ? worseDriftSignal(worstByRef[key], sig) : sig;
+      });
+    });
+    document.querySelectorAll('.shard-node').forEach(function (el) {
+      el.classList.remove(
+        'z-cdna-drift--green',
+        'z-cdna-drift--yellow',
+        'z-cdna-drift--blue',
+        'z-cdna-drift--hold',
+        'z-cdna-drift--red',
+        'z-cdna-drift--quarantine',
+        'z-cdna-drift--nas_wait'
+      );
+      var id = el.getAttribute('data-id');
+      if (!id || !worstByRef[id]) return;
+      el.classList.add('z-cdna-drift--' + String(worstByRef[id]).toLowerCase());
+    });
+    if (hint) {
+      var n = report.findings_count != null ? report.findings_count : report.findings.length;
+      hint.textContent =
+        'Drift overlay: ' +
+        n +
+        ' finding(s) · overall ' +
+        String(report.overall_signal || '—') +
+        ' (read-only)';
+    }
   }
 
   function buildNodes(crystal, sat, door, ind) {
@@ -263,7 +315,7 @@
     var w = $('zCdnaWorld');
     w.setAttribute(
       'transform',
-      'translate(' + state.tx + ',' + state.ty + ') scale(' + state.scale + ')',
+      'translate(' + state.tx + ',' + state.ty + ') scale(' + state.scale + ')'
     );
   }
 
@@ -444,7 +496,7 @@
         state.scale = Math.max(0.35, Math.min(2.5, state.scale * f));
         applyTransform();
       },
-      { passive: false },
+      { passive: false }
     );
 
     wrap.addEventListener('pointerdown', function (e) {
@@ -536,9 +588,20 @@
         applyFilter();
         fillGovernance(crystal, ind);
         wireHoverEdges();
+        return fetchJson(DATA.drift)
+          .then(function (drift) {
+            applyDriftOverlay(drift);
+          })
+          .catch(function () {
+            applyDriftOverlay(null);
+          });
       })
       .catch(function (err) {
-        $('zCdnaInspectorBody').textContent = JSON.stringify({ error: String(err && err.message ? err.message : err) }, null, 2);
+        $('zCdnaInspectorBody').textContent = JSON.stringify(
+          { error: String(err && err.message ? err.message : err) },
+          null,
+          2
+        );
       });
   }
 

@@ -32,7 +32,7 @@ body {
   margin: 0;
   background: radial-gradient(1200px 600px at 20% 0%, #132032 0%, var(--bg0) 55%, #05070c 100%);
   color: var(--text);
-  font-family: "Segoe UI", system-ui, sans-serif;
+  font-family: 'Segoe UI', system-ui, sans-serif;
   font-size: 14px;
   line-height: 1.45;
 }
@@ -90,7 +90,7 @@ body.z-cdna-map {
   letter-spacing: 0.06em;
 }
 
-.z-cdna-toolbar input[type="search"] {
+.z-cdna-toolbar input[type='search'] {
   min-width: 180px;
   flex: 1 1 200px;
   max-width: 420px;
@@ -239,6 +239,29 @@ body.z-cdna-map {
 }
 .status-disabled .shard-core {
   fill: var(--st-disabled);
+}
+
+/* Z-CRYSTAL-DNA-3 — drift overlay from drift report JSON (GET only; read-only tint) */
+.shard-node.z-cdna-drift--green .shard-glow {
+  filter: drop-shadow(0 0 10px rgba(76, 217, 100, 0.55));
+}
+.shard-node.z-cdna-drift--yellow .shard-glow {
+  filter: drop-shadow(0 0 12px rgba(230, 200, 74, 0.65));
+}
+.shard-node.z-cdna-drift--blue .shard-glow {
+  filter: drop-shadow(0 0 12px rgba(90, 200, 250, 0.55));
+}
+.shard-node.z-cdna-drift--hold .shard-glow {
+  filter: drop-shadow(0 0 12px rgba(212, 168, 75, 0.65));
+}
+.shard-node.z-cdna-drift--nas_wait .shard-glow {
+  filter: drop-shadow(0 0 12px rgba(154, 167, 255, 0.6));
+}
+.shard-node.z-cdna-drift--quarantine .shard-glow {
+  filter: drop-shadow(0 0 14px rgba(198, 120, 255, 0.65));
+}
+.shard-node.z-cdna-drift--red .shard-glow {
+  filter: drop-shadow(0 0 14px rgba(255, 80, 80, 0.75));
 }
 
 .z-cdna-inspector {

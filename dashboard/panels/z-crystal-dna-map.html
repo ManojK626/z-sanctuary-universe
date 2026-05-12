@@ -9,13 +9,21 @@
   <body class="z-cdna-map">
     <header class="z-cdna-header">
       <h1 class="z-cdna-title">Living Crystal Ecosystem Map</h1>
-      <span class="z-cdna-badge">Z-CRYSTAL-DNA-2 · read-only</span>
+      <span class="z-cdna-badge">Z-CRYSTAL-DNA-2 / 3 · read-only</span>
+      <span class="z-cdna-hint" id="zCdnaDriftHint" style="margin: 0; flex: 0 1 420px"></span>
       <span class="z-cdna-hint" style="margin: 0; flex: 1 1 200px"
-        >Detect / compare / report only — no repair, deploy, git, NAS, or secrets from this surface.</span>
+        >Detect / compare / report only — no repair, deploy, git, NAS, or secrets from this
+        surface.</span
+      >
     </header>
     <div class="z-cdna-toolbar">
       <label for="zCdnaSearch">Filter</label>
-      <input id="zCdnaSearch" type="search" placeholder="id, cluster, status, label…" autocomplete="off" />
+      <input
+        id="zCdnaSearch"
+        type="search"
+        placeholder="id, cluster, status, label…"
+        autocomplete="off"
+      />
       <button type="button" id="zCdnaZoomOut" title="Zoom out">−</button>
       <button type="button" id="zCdnaZoomReset" title="Reset view">Reset</button>
       <button type="button" id="zCdnaZoomIn" title="Zoom in">+</button>
@@ -23,7 +31,13 @@
     </div>
     <main class="z-cdna-main">
       <div class="z-cdna-svg-wrap" id="zCdnaWrap">
-        <svg class="z-cdna-svg" id="zCdnaSvg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2200 1400" preserveAspectRatio="xMidYMid meet">
+        <svg
+          class="z-cdna-svg"
+          id="zCdnaSvg"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 2200 1400"
+          preserveAspectRatio="xMidYMid meet"
+        >
           <defs>
             <filter id="zCdnaSoftGlow" x="-50%" y="-50%" width="200%" height="200%">
               <feGaussianBlur in="SourceGraphic" stdDeviation="2.5" result="b" />

@@ -5,7 +5,7 @@
 ## Deliverables
 
 | Item | Location |
-| --- | --- |
+| ------------ | ------------------------------------------------------------------------------------------------------- |
 | Operator doc | [`docs/Z_CRYSTAL_DNA_VISUALIZATION.md`](Z_CRYSTAL_DNA_VISUALIZATION.md) |
 | Panel | [`dashboard/panels/z-crystal-dna-map.html`](../dashboard/panels/z-crystal-dna-map.html) |
 | Script | [`dashboard/scripts/z-crystal-dna-map-readonly.js`](../dashboard/scripts/z-crystal-dna-map-readonly.js) |
@@ -15,7 +15,7 @@
 ## Posture checklist
 
 | Check | Confirm |
-| --- | --- |
+| ----------------------------------------------------------- | -------------------------------- |
 | Read-only fetches only | Yes — GET JSON, no mutation APIs |
 | Zoom / pan / hover / inspect / search | Yes |
 | DNA dependency threads + clusters + states | Yes |
