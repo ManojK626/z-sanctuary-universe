@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Z-Crystal DNA Map (read-only)</title>
+    <link rel="stylesheet" href="../styles/z-crystal-dna-map.css" />
+  </head>
+  <body class="z-cdna-map">
+    <header class="z-cdna-header">
+      <h1 class="z-cdna-title">Living Crystal Ecosystem Map</h1>
+      <span class="z-cdna-badge">Z-CRYSTAL-DNA-2 · read-only</span>
+      <span class="z-cdna-hint" style="margin: 0; flex: 1 1 200px"
+        >Detect / compare / report only — no repair, deploy, git, NAS, or secrets from this surface.</span>
+    </header>
+    <div class="z-cdna-toolbar">
+      <label for="zCdnaSearch">Filter</label>
+      <input id="zCdnaSearch" type="search" placeholder="id, cluster, status, label…" autocomplete="off" />
+      <button type="button" id="zCdnaZoomOut" title="Zoom out">−</button>
+      <button type="button" id="zCdnaZoomReset" title="Reset view">Reset</button>
+      <button type="button" id="zCdnaZoomIn" title="Zoom in">+</button>
+      <button type="button" id="zCdnaGovToggle" title="Governance overlay">Governance</button>
+    </div>
+    <main class="z-cdna-main">
+      <div class="z-cdna-svg-wrap" id="zCdnaWrap">
+        <svg class="z-cdna-svg" id="zCdnaSvg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2200 1400" preserveAspectRatio="xMidYMid meet">
+          <defs>
+            <filter id="zCdnaSoftGlow" x="-50%" y="-50%" width="200%" height="200%">
+              <feGaussianBlur in="SourceGraphic" stdDeviation="2.5" result="b" />
+              <feMerge>
+                <feMergeNode in="b" />
+                <feMergeNode in="SourceGraphic" />
+              </feMerge>
+            </filter>
+          </defs>
+          <g id="zCdnaWorld">
+            <g id="zCdnaEdges"></g>
+            <g id="zCdnaClusters"></g>
+            <g id="zCdnaNodes"></g>
+          </g>
+        </svg>
+      </div>
+      <aside class="z-cdna-inspector" id="zCdnaInspector" aria-live="polite">
+        <h2>Inspector</h2>
+        <p class="z-cdna-hint">Select a shard node. Metadata is read-only.</p>
+        <pre id="zCdnaInspectorBody">{}</pre>
+      </aside>
+    </main>
+    <aside class="z-cdna-gov" id="zCdnaGov" hidden>
+      <h3>DNA governance (manifest)</h3>
+      <div class="allow" id="zCdnaGovAllow"></div>
+      <div class="forbid" id="zCdnaGovForbid"></div>
+      <p class="z-cdna-hint">Indicator posture: advisory only — not execution authority.</p>
+    </aside>
+    <script src="../scripts/z-crystal-dna-map-readonly.js" defer></script>
+  </body>
+</html>

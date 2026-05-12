@@ -1,0 +1,356 @@
+/* Z-CRYSTAL-DNA-2 — read-only ecosystem map (no execution surface) */
+:root {
+  --bg0: #070b12;
+  --bg1: #0e1624;
+  --surface: rgba(18, 32, 48, 0.72);
+  --border: rgba(120, 200, 255, 0.18);
+  --text: #e6f4ff;
+  --muted: #8aa8c4;
+  --accent: #5ec8e8;
+  --edge: rgba(94, 200, 232, 0.35);
+  --gov-ok: rgba(72, 199, 142, 0.2);
+  --gov-bad: rgba(255, 99, 99, 0.15);
+  --st-green: #4cd964;
+  --st-yellow: #e6c84a;
+  --st-blue: #5ac8fa;
+  --st-red: #ff6b6b;
+  --st-hold: #d4a84b;
+  --st-nas: #9aa7ff;
+  --st-quarantine: #c678ff;
+  --st-disabled: #6b7a8f;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+  background: radial-gradient(1200px 600px at 20% 0%, #132032 0%, var(--bg0) 55%, #05070c 100%);
+  color: var(--text);
+  font-family: "Segoe UI", system-ui, sans-serif;
+  font-size: 14px;
+  line-height: 1.45;
+}
+
+body.z-cdna-map {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+}
+
+.z-cdna-header {
+  flex: 0 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.65rem 1rem;
+  padding: 0.65rem 0.85rem;
+  border-bottom: 1px solid var(--border);
+  background: linear-gradient(180deg, rgba(20, 40, 60, 0.5) 0%, transparent 100%);
+}
+
+.z-cdna-title {
+  margin: 0;
+  font-size: 1.05rem;
+  font-weight: 650;
+  letter-spacing: 0.02em;
+}
+
+.z-cdna-badge {
+  font-size: 0.68rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  padding: 0.2rem 0.45rem;
+  border-radius: 6px;
+  border: 1px solid rgba(94, 200, 232, 0.45);
+  color: var(--accent);
+  background: rgba(94, 200, 232, 0.1);
+}
+
+.z-cdna-toolbar {
+  flex: 0 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  align-items: center;
+  padding: 0.45rem 0.85rem 0.55rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.z-cdna-toolbar label {
+  font-size: 0.72rem;
+  color: var(--muted);
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+}
+
+.z-cdna-toolbar input[type="search"] {
+  min-width: 180px;
+  flex: 1 1 200px;
+  max-width: 420px;
+  padding: 0.35rem 0.5rem;
+  border-radius: 8px;
+  border: 1px solid var(--border);
+  background: rgba(0, 0, 0, 0.25);
+  color: var(--text);
+  font: inherit;
+}
+
+.z-cdna-toolbar button {
+  padding: 0.35rem 0.65rem;
+  border-radius: 8px;
+  border: 1px solid var(--border);
+  background: rgba(255, 255, 255, 0.06);
+  color: var(--text);
+  font: inherit;
+  cursor: pointer;
+}
+
+.z-cdna-toolbar button:hover {
+  background: rgba(94, 200, 232, 0.12);
+}
+
+.z-cdna-toolbar button:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+}
+
+.z-cdna-main {
+  flex: 1 1 auto;
+  display: grid;
+  grid-template-columns: 1fr minmax(220px, 300px);
+  grid-template-rows: 1fr;
+  min-height: 0;
+}
+
+@media (max-width: 900px) {
+  .z-cdna-main {
+    grid-template-columns: 1fr;
+    grid-template-rows: minmax(280px, 55vh) auto;
+  }
+}
+
+.z-cdna-svg-wrap {
+  position: relative;
+  min-height: 320px;
+  overflow: hidden;
+  cursor: grab;
+}
+
+.z-cdna-svg-wrap.is-panning {
+  cursor: grabbing;
+}
+
+.z-cdna-svg {
+  width: 100%;
+  height: 100%;
+  min-height: 320px;
+  display: block;
+}
+
+.z-cdna-cluster-label {
+  fill: var(--muted);
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  pointer-events: none;
+}
+
+.z-cdna-edge {
+  fill: none;
+  stroke: var(--edge);
+  stroke-width: 1.4;
+  stroke-linecap: round;
+  stroke-dasharray: 6 10;
+  animation: zCdnaFlow 4.5s linear infinite;
+  opacity: 0.85;
+}
+
+.z-cdna-edge.is-dim {
+  opacity: 0.12;
+}
+
+.z-cdna-edge.is-hot {
+  stroke: rgba(120, 230, 255, 0.85);
+  stroke-width: 2;
+}
+
+.shard-node {
+  cursor: pointer;
+  transition: filter 0.2s ease;
+}
+
+.shard-node.is-dim {
+  opacity: 0.2;
+}
+
+.shard-node:hover .shard-glow {
+  filter: drop-shadow(0 0 10px rgba(120, 230, 255, 0.45));
+}
+
+.shard-node.is-hot .shard-glow {
+  filter: drop-shadow(0 0 12px rgba(120, 230, 255, 0.55));
+}
+
+.shard-core {
+  stroke: rgba(255, 255, 255, 0.35);
+  stroke-width: 1.2;
+}
+
+.shard-glow {
+  animation: zCdnaPulse 3.2s ease-in-out infinite;
+}
+
+.shard-label {
+  fill: var(--text);
+  font-size: 10px;
+  font-weight: 600;
+  pointer-events: none;
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.85);
+}
+
+.status-green .shard-core {
+  fill: var(--st-green);
+}
+.status-yellow .shard-core {
+  fill: var(--st-yellow);
+}
+.status-blue .shard-core {
+  fill: var(--st-blue);
+}
+.status-red .shard-core {
+  fill: var(--st-red);
+}
+.status-hold .shard-core {
+  fill: var(--st-hold);
+}
+.status-nas_wait .shard-core {
+  fill: var(--st-nas);
+}
+.status-quarantine .shard-core {
+  fill: var(--st-quarantine);
+}
+.status-disabled .shard-core {
+  fill: var(--st-disabled);
+}
+
+.z-cdna-inspector {
+  border-left: 1px solid var(--border);
+  background: var(--surface);
+  padding: 0.65rem 0.75rem;
+  overflow: auto;
+  font-size: 0.82rem;
+}
+
+@media (max-width: 900px) {
+  .z-cdna-inspector {
+    border-left: none;
+    border-top: 1px solid var(--border);
+  }
+}
+
+.z-cdna-inspector h2 {
+  margin: 0 0 0.45rem;
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+
+.z-cdna-inspector pre {
+  margin: 0;
+  padding: 0.5rem 0.55rem;
+  border-radius: 8px;
+  background: rgba(0, 0, 0, 0.35);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  white-space: pre-wrap;
+  word-break: break-word;
+  color: #c8e6ff;
+  font-size: 0.76rem;
+  line-height: 1.4;
+}
+
+.z-cdna-gov {
+  position: fixed;
+  right: 12px;
+  bottom: 12px;
+  width: min(420px, calc(100vw - 24px));
+  max-height: min(46vh, 360px);
+  overflow: auto;
+  padding: 0.65rem 0.75rem;
+  border-radius: 12px;
+  border: 1px solid var(--border);
+  background: rgba(10, 18, 28, 0.92);
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.45);
+  font-size: 0.78rem;
+  z-index: 20;
+}
+
+.z-cdna-gov[hidden] {
+  display: none !important;
+}
+
+.z-cdna-gov h3 {
+  margin: 0 0 0.4rem;
+  font-size: 0.72rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+
+.z-cdna-gov ul {
+  margin: 0.25rem 0 0.5rem 1rem;
+  padding: 0;
+}
+
+.z-cdna-gov .allow {
+  border-left: 3px solid var(--st-green);
+  padding-left: 0.45rem;
+  margin-bottom: 0.45rem;
+  background: var(--gov-ok);
+  border-radius: 4px;
+}
+
+.z-cdna-gov .forbid {
+  border-left: 3px solid var(--st-red);
+  padding-left: 0.45rem;
+  background: var(--gov-bad);
+  border-radius: 4px;
+}
+
+.z-cdna-hint {
+  margin: 0.35rem 0 0;
+  font-size: 0.72rem;
+  color: var(--muted);
+}
+
+@keyframes zCdnaPulse {
+  0%,
+  100% {
+    opacity: 0.22;
+  }
+  50% {
+    opacity: 0.72;
+  }
+}
+
+@keyframes zCdnaFlow {
+  to {
+    stroke-dashoffset: -160;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .shard-glow,
+  .z-cdna-edge {
+    animation: none !important;
+  }
+}
