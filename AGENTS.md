@@ -24,6 +24,10 @@ Then use the authority order and layer definitions there. That document defines:
 - Which project owns a capability
 - How to keep upgrades aligned with Z-EAII, Z-HODP, Folder Manager, and Zuno
 
+## Deployment governance
+
+See **[docs/Z_SANCTUARY_DEPLOYMENT_AWARENESS_PROTOCOL.md](docs/Z_SANCTUARY_DEPLOYMENT_AWARENESS_PROTOCOL.md)**. Deployment readiness, AI orchestration posture, Cloudflare framing, and deploy authority are defined there (readiness scores are advisory; automated formulas do not self-certify production). Seal: **[docs/PHASE_Z_SANCTUARY_DEPLOYMENT_AWARENESS_PROTOCOL_1_GREEN_RECEIPT.md](docs/PHASE_Z_SANCTUARY_DEPLOYMENT_AWARENESS_PROTOCOL_1_GREEN_RECEIPT.md)**.
+
 **GitHub and email (ecosystem):** Use **[data/z_ecosystem_github_identity.json](data/z_ecosystem_github_identity.json)** and **[docs/Z-ECOSYSTEM-GITHUB-INTEGRATION.md](docs/Z-ECOSYSTEM-GITHUB-INTEGRATION.md)** for the canonical GitHub login, verified primary email, and setup—do not invent alternate accounts or emails for this hub.
 
 **GitHub + AI and communications flows:** Read **[docs/Z-GITHUB-AI-COMMS-PRECAUTIONS.md](docs/Z-GITHUB-AI-COMMS-PRECAUTIONS.md)** and **[data/z_github_ai_comms_requirements.json](data/z_github_ai_comms_requirements.json)**; hub authority outranks cloud AI output. After requirement changes, operators run **`npm run comms:github-ai`**. Paths: **[core/z_github_ai_comms_refs.js](core/z_github_ai_comms_refs.js)**.

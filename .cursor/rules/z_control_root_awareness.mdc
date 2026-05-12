@@ -1,5 +1,5 @@
 ---
-description: Z-CONTROL-LINK-1 — canonical hub control root, satellite bridge files only, manifest-bound sync; Z-CYCLE-OBSERVE-1 — observation tower and safe task queue (read-only, no queue execution); Z-CYCLE-DASHBOARD-1 — read-only dashboard UI (GET JSON only, not a control plane); Z-PC-ACTIVATION-AWARENESS-1 — manual PC activation receipt (check data/reports/z_pc_activation_receipt.md/json when starting work; suggest Turtle branch only; not execute permission); Z-DEPLOYMENT-READINESS-OVERSEER-1 — read-only deployment readiness rollup (data/reports/z_deployment_readiness_status.md/json; suggest only; not deploy); default dry-run; no arbitrary scans or sacred moves from these lanes.
+description: Z-CONTROL-LINK-1 — canonical hub control root, satellite bridge files only, manifest-bound sync; Z-SANCTUARY-DEPLOYMENT-AWARENESS-PROTOCOL — cross-ecosystem deploy governance in docs/Z_SANCTUARY_DEPLOYMENT_AWARENESS_PROTOCOL.md; Z-CYCLE-OBSERVE-1 — observation tower and safe task queue (read-only, no queue execution); Z-CYCLE-DASHBOARD-1 — read-only dashboard UI (GET JSON only, not a control plane); Z-PC-ACTIVATION-AWARENESS-1 — manual PC activation receipt (check data/reports/z_pc_activation_receipt.md/json when starting work; suggest Turtle branch only; not execute permission); Z-DEPLOYMENT-READINESS-OVERSEER-1 — read-only deployment readiness rollup (data/reports/z_deployment_readiness_status.md/json; suggest only; not deploy); default dry-run; no arbitrary scans or sacred moves from these lanes.
 globs:
 alwaysApply: true
 ---
@@ -7,6 +7,10 @@ alwaysApply: true
 # Z-Sanctuary: Control root awareness (Z-CONTROL-LINK-1)
 
 **Z-CONTROL-LINK-1 is sealed on `main`.** Treat **`Z_Sanctuary_Universe` (this hub repo)** as the **canonical governance and control root** for Z-Sanctuary satellite project links. Long doctrine, registries, and verification authority live here—not duplicated across siblings.
+
+## Z-SANCTUARY-DEPLOYMENT-AWARENESS-PROTOCOL (cross-ecosystem)
+
+**Canonical doctrine:** [`docs/Z_SANCTUARY_DEPLOYMENT_AWARENESS_PROTOCOL.md`](docs/Z_SANCTUARY_DEPLOYMENT_AWARENESS_PROTOCOL.md) — observe → verify → suggest → **human** deploy; deployment-stage vocabulary; authority boundaries; **automated readiness cap** (no self-certified production from formulas); Cloudflare as **edge guardian**, not autonomous command authority; Turtle Mode. Reports and scores are **advisory**—not execution permission. **Phase seal:** [`docs/PHASE_Z_SANCTUARY_DEPLOYMENT_AWARENESS_PROTOCOL_1_GREEN_RECEIPT.md`](docs/PHASE_Z_SANCTUARY_DEPLOYMENT_AWARENESS_PROTOCOL_1_GREEN_RECEIPT.md).
 
 ## Z-CYCLE-OBSERVE-1 (Z-CURSOR-AWARENESS-3)
 

@@ -1,6 +1,6 @@
 # Z-Sanctuary ecosystem growth status
 
-**Phase spines:** Z-AI-BUILDER-AWARENESS-2 (growth catalog), **Z-CURSOR-AWARENESS-3** (Cycle Observe sealed in Cursor / overseer rules), **Z-CYCLE-DASHBOARD-1** (read-only ecosystem nervous system UI — not a control plane), and **Z-DEPLOYMENT-READINESS-OVERSEER-1** (read-only deployment posture rollup — not deploy authority).
+**Phase spines:** Z-AI-BUILDER-AWARENESS-2 (growth catalog), **Z-CURSOR-AWARENESS-3** (Cycle Observe sealed in Cursor / overseer rules), **Z-CYCLE-DASHBOARD-1** (read-only ecosystem nervous system UI — not a control plane), **Z-DEPLOYMENT-READINESS-OVERSEER-1** (read-only deployment posture rollup — not deploy authority), and **Z-SANCTUARY-DEPLOYMENT-AWARENESS-PROTOCOL-1** (canonical deployment / AI governance protocol — [Z_SANCTUARY_DEPLOYMENT_AWARENESS_PROTOCOL.md](Z_SANCTUARY_DEPLOYMENT_AWARENESS_PROTOCOL.md)).
 
 **Machine roster:** `data/z_ecosystem_growth_stage_registry.json` (`z_ecosystem_growth_stage_registry_v1`).
 
@@ -20,6 +20,7 @@
 | **Z-CYCLE-OBSERVE-1** | **Observation tower + safe task queue** — [Z_CYCLE_OBSERVE_SYSTEM.md](Z_CYCLE_OBSERVE_SYSTEM.md), `npm run z:cycle:observe`; queue is **suggest-only** until AMK/human picks a branch. |
 | **Z-CYCLE-DASHBOARD-1** | **Read-only nervous system UI** — [Z_CYCLE_DASHBOARD_SYSTEM.md](Z_CYCLE_DASHBOARD_SYSTEM.md), `dashboard/panels/z-cycle-dashboard-readonly.html`; GET JSON only — **not** a control plane. |
 | **Z-DEPLOYMENT-READINESS-OVERSEER-1** | **Deployment readiness overseer (read-only)** — [Z_DEPLOYMENT_READINESS_OVERSEER.md](Z_DEPLOYMENT_READINESS_OVERSEER.md), `npm run z:deployment:readiness`; rollup JSON/MD from registries + receipts — **not** deploy or merge authority. |
+| **Z-SANCTUARY-DEPLOYMENT-AWARENESS-PROTOCOL-1** | **Canonical deployment / AI governance protocol** — [Z_SANCTUARY_DEPLOYMENT_AWARENESS_PROTOCOL.md](Z_SANCTUARY_DEPLOYMENT_AWARENESS_PROTOCOL.md); observe → verify → suggest → human deploy; hard forbids and stage vocabulary. |
 | **Cloudflare governance** | **Preview / runtime posture only**; **production HOLD** — [Z-CLOUDFLARE-AI-COMMS-PRECAUTIONS.md](Z-CLOUDFLARE-AI-COMMS-PRECAUTIONS.md), [AGENTS.md](../AGENTS.md). |
 | **Casa AI Builder** | **Suggest docs / prompts / checklists only** — no device, deploy, or secret authority; see AnyDevice capsule and simulation docs. |
 
@@ -56,15 +57,14 @@
 ## Verify hooks (awareness receipts)
 
 ```bash
-npm run z:deployment:readiness
-npm run z:pc:activation
-npm run z:cycle:observe
 npm run verify:md
-npm run z:anydevice:simulate
-npm run z:crystal:dna:drift
 npm run z:traffic
+npm run z:deployment:readiness
+npm run z:cycle:observe
 npm run z:car2
 ```
+
+If `verify:md` fails on MD060 table spacing, run `npm run md:table-compact` then rerun `npm run verify:md`.
 
 ## Related
 
@@ -78,3 +78,5 @@ npm run z:car2
 | [PHASE_Z_CYCLE_DASHBOARD_1_GREEN_RECEIPT.md](PHASE_Z_CYCLE_DASHBOARD_1_GREEN_RECEIPT.md) | Z-CYCLE-DASHBOARD-1 dashboard UI seal receipt. |
 | [Z_DEPLOYMENT_READINESS_OVERSEER.md](Z_DEPLOYMENT_READINESS_OVERSEER.md) | Z-DEPLOYMENT-READINESS-OVERSEER-1 read-only deployment posture rollup. |
 | [PHASE_Z_DEPLOYMENT_READINESS_OVERSEER_1_GREEN_RECEIPT.md](PHASE_Z_DEPLOYMENT_READINESS_OVERSEER_1_GREEN_RECEIPT.md) | Phase receipt for deployment readiness overseer. |
+| [Z_SANCTUARY_DEPLOYMENT_AWARENESS_PROTOCOL.md](Z_SANCTUARY_DEPLOYMENT_AWARENESS_PROTOCOL.md) | Canonical deployment / AI governance protocol (Z-SANCTUARY-DEPLOYMENT-AWARENESS-PROTOCOL-1). |
+| [PHASE_Z_SANCTUARY_DEPLOYMENT_AWARENESS_PROTOCOL_1_GREEN_RECEIPT.md](PHASE_Z_SANCTUARY_DEPLOYMENT_AWARENESS_PROTOCOL_1_GREEN_RECEIPT.md) | Phase receipt for deployment awareness protocol seal. |
