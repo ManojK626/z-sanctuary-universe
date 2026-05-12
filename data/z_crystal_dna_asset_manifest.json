@@ -1,0 +1,108 @@
+{
+  "schema": "z_crystal_dna_asset_manifest_v1",
+  "phase": "Z-CRYSTAL-DNA-1",
+  "updated_at": "2026-05-11T00:00:00Z",
+  "title": "Crystal DNA Mesh — hub shard identity (no auto-repair)",
+  "metaphor_note": "Crystal = whole integrity intent; shard = file/module/registry/report/bridge; DNA card = typed identity + dependencies.",
+  "allowed_actions": ["detect", "compare", "report", "propose restore"],
+  "forbidden_actions": [
+    "automatic_repair",
+    "secret_restore",
+    "deploy",
+    "force_push",
+    "NAS_mutation",
+    "off_manifest_writes"
+  ],
+  "recovery_states_doc": "GREEN | YELLOW | BLUE | RED | QUARANTINE | NAS_WAIT",
+  "nas_posture": "Future NAS is cold-mirror / compare-only after mount + verify; NAS_WAIT until then.",
+  "shards": [
+    {
+      "id": "dna_mesh_doctrine",
+      "type": "doc",
+      "path": "docs/Z_CRYSTAL_DNA_MESH.md",
+      "owner_layer": "hub_governance",
+      "dependencies": [],
+      "hash_optional": "",
+      "rebuild_rule": "human_authoring_only",
+      "risk": "low",
+      "status": "GREEN"
+    },
+    {
+      "id": "hub_pc_root_projects",
+      "type": "registry",
+      "path": "data/z_pc_root_projects.json",
+      "owner_layer": "hub_registry",
+      "dependencies": ["dna_mesh_doctrine"],
+      "hash_optional": "",
+      "rebuild_rule": "see Z-EAII / pc-root catalog docs; no auto-merge",
+      "risk": "high",
+      "status": "GREEN"
+    },
+    {
+      "id": "doorway_workspace_registry",
+      "type": "registry",
+      "path": "data/z_doorway_workspace_registry.json",
+      "owner_layer": "hub_ssws",
+      "dependencies": ["dna_mesh_doctrine"],
+      "hash_optional": "",
+      "rebuild_rule": "operator_edit_registry_then_z_doorway_status",
+      "risk": "medium",
+      "status": "GREEN"
+    },
+    {
+      "id": "control_link_manifest",
+      "type": "registry",
+      "path": "data/z_satellite_control_link_manifest.json",
+      "owner_layer": "hub_control_link",
+      "dependencies": ["dna_mesh_doctrine"],
+      "hash_optional": "",
+      "rebuild_rule": "z_sync_control_links.mjs dry-run then apply with review",
+      "risk": "medium",
+      "status": "GREEN"
+    },
+    {
+      "id": "satellite_control_bridge_template",
+      "type": "bridge",
+      "path": "docs/Z_SANCTUARY_CONTROL_LINK.md",
+      "owner_layer": "hub_control_link",
+      "dependencies": ["control_link_manifest"],
+      "hash_optional": "",
+      "rebuild_rule": "sync_from_hub_template_only",
+      "risk": "medium",
+      "status": "GREEN"
+    },
+    {
+      "id": "cloudflare_governance_pack",
+      "type": "governance_pack",
+      "path": "cloudflare-governance/",
+      "owner_layer": "cloudflare_governance",
+      "dependencies": ["dna_mesh_doctrine"],
+      "hash_optional": "",
+      "rebuild_rule": "human_charter_and_preview_only_no_deploy_from_mesh",
+      "risk": "high",
+      "status": "YELLOW"
+    },
+    {
+      "id": "z_lab_capsule_reference",
+      "type": "bridge",
+      "path": "docs/Z_LOGICAL_BRAINS_HUB_REFERENCE.md",
+      "owner_layer": "z_lab_capsule",
+      "dependencies": ["dna_mesh_doctrine"],
+      "hash_optional": "",
+      "rebuild_rule": "reference_only_no_runtime_bridge_without_charter",
+      "risk": "medium",
+      "status": "BLUE"
+    },
+    {
+      "id": "nas_cold_mirror_declaration",
+      "type": "registry",
+      "path": "Z:/SanctuaryDNA/cold_mirror_declaration_stub",
+      "owner_layer": "nas_future",
+      "dependencies": [],
+      "hash_optional": "",
+      "rebuild_rule": "NAS_WAIT_until_mounted_verified_then_compare_only",
+      "risk": "high",
+      "status": "NAS_WAIT"
+    }
+  ]
+}
