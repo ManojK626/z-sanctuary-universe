@@ -1,7 +1,7 @@
 {
   "schema": "z_ecosystem_growth_stage_registry_v1",
   "phase": "Z-AI-BUILDER-AWARENESS-2",
-  "updated_at": "2026-05-12T00:00:00Z",
+  "updated_at": "2026-05-12T12:00:00Z",
   "current_growth_stage": {
     "id": "governed_organism_foundation",
     "label": "Governed organism foundation",
@@ -81,6 +81,29 @@
       ]
     },
     {
+      "id": "z_cycle_observe_1",
+      "phase_label": "Z-CYCLE-OBSERVE-1",
+      "role": "Continuous observation tower and safe task queue — reads registries and reports; writes cycle observe status only; does not execute queued tasks. BLUE observer signal is informational governance rollup, not failure.",
+      "docs": [
+        "docs/Z_CYCLE_OBSERVE_SYSTEM.md",
+        "docs/PHASE_Z_CYCLE_OBSERVE_1_GREEN_RECEIPT.md",
+        "docs/PHASE_Z_CURSOR_AWARENESS_3_GREEN_RECEIPT.md"
+      ],
+      "scripts_note": "npm run z:cycle:observe",
+      "data": ["data/z_cycle_observe_task_policy.json", "data/reports/z_cycle_observe_status.json"]
+    },
+    {
+      "id": "z_cycle_dashboard_1",
+      "phase_label": "Z-CYCLE-DASHBOARD-1",
+      "role": "Read-only ecosystem nervous system dashboard UI — GET JSON reports only; no task execution, no control plane, no branch or deploy authority.",
+      "docs": [
+        "docs/Z_CYCLE_DASHBOARD_SYSTEM.md",
+        "docs/PHASE_Z_CYCLE_DASHBOARD_1_GREEN_RECEIPT.md"
+      ],
+      "paths": ["dashboard/panels/z-cycle-dashboard-readonly.html"],
+      "data": ["data/z_cycle_dashboard_manifest.json"]
+    },
+    {
       "id": "cloudflare_governance",
       "phase_label": "Cloudflare governance",
       "role": "Preview and runtime posture review in documentation only; production HOLD — hub remains authority.",
@@ -113,7 +136,9 @@
       "topology_and_drift_awareness",
       "device_trust_and_synthetic_simulation",
       "doorway_control_and_telemetry_receipts",
-      "cloudflare_preview_posture_and_github_truth"
+      "cloudflare_preview_posture_and_github_truth",
+      "cycle_observe_safe_task_queue",
+      "read_only_dashboard_ui"
     ],
     "risk_to_avoid": "Too much automation before observability stabilizes.",
     "recommended_next_lanes": [
@@ -126,6 +151,9 @@
     "docs/AI_BUILDER_CONTEXT.md",
     "docs/PHASE_Z_AI_BUILDER_AWARENESS_2_GREEN_RECEIPT.md",
     "docs/Z_CYCLE_OBSERVE_SYSTEM.md",
-    "docs/PHASE_Z_CYCLE_OBSERVE_1_GREEN_RECEIPT.md"
+    "docs/PHASE_Z_CYCLE_OBSERVE_1_GREEN_RECEIPT.md",
+    "docs/PHASE_Z_CURSOR_AWARENESS_3_GREEN_RECEIPT.md",
+    "docs/Z_CYCLE_DASHBOARD_SYSTEM.md",
+    "docs/PHASE_Z_CYCLE_DASHBOARD_1_GREEN_RECEIPT.md"
   ]
 }

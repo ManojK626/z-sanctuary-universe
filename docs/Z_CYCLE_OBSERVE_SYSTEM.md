@@ -12,12 +12,12 @@
 
 ## Artifacts
 
-| Artifact | Role |
+| Artifact                                   | Role                                                                                   |
 | ------------------------------------------ | -------------------------------------------------------------------------------------- |
-| `data/z_cycle_observe_task_policy.json` | Categories **L1**–**L5**, allowed/forbidden observer actions, output field names. |
-| `scripts/z_cycle_observe_status.mjs` | Builds the observe report from inputs (no side effects except those two report files). |
-| `data/reports/z_cycle_observe_status.json` | Machine-readable status, signals, coverage, and **task_queue** rows. |
-| `data/reports/z_cycle_observe_status.md` | Short human summary. |
+| `data/z_cycle_observe_task_policy.json`    | Categories **L1**–**L5**, allowed/forbidden observer actions, output field names.      |
+| `scripts/z_cycle_observe_status.mjs`       | Builds the observe report from inputs (no side effects except those two report files). |
+| `data/reports/z_cycle_observe_status.json` | Machine-readable status, signals, coverage, and **task_queue** rows.                   |
+| `data/reports/z_cycle_observe_status.md`   | Short human summary.                                                                   |
 
 ## Command
 
@@ -27,19 +27,19 @@ npm run z:cycle:observe
 
 ## Inputs (read-only)
 
-| Input | Use in observer |
+| Input                                             | Use in observer                                                                                 |
 | ------------------------------------------------- | ----------------------------------------------------------------------------------------------- |
-| `package.json` `scripts` | Discover **active verify / observe** npm script names (allowlisted filter). |
-| `data/z_ecosystem_growth_stage_registry.json` | **Current ecosystem stage**, **sealed systems**, communication posture, feedback, turtle lanes. |
-| `data/z_crystal_dna_asset_manifest.json` | **Crystal** shard count / coverage (registry paths only). |
-| `data/z_anydevice_ai_capsule_registry.json` | AnyDevice policy presence check. |
-| `data/z_anydevice_synthetic_devices.json` | Synthetic scenario **count** (fiction-only). |
-| `data/z_satellite_control_link_manifest.json` | Satellite roster **count**. |
-| `data/z_doorway_workspace_registry.json` | Doorway entry **count**. |
-| `data/reports/z_traffic_minibots_status.json` | **Traffic** signal. |
-| `data/reports/z_car2_similarity_report.json` | **CAR2** scan receipt. |
-| `data/reports/z_crystal_dna_drift_report.json` | **Drift** rollup signal. |
-| `data/reports/z_anydevice_simulation_report.json` | **AnyDevice** simulation summary. |
+| `package.json` `scripts`                          | Discover **active verify / observe** npm script names (allowlisted filter).                     |
+| `data/z_ecosystem_growth_stage_registry.json`     | **Current ecosystem stage**, **sealed systems**, communication posture, feedback, turtle lanes. |
+| `data/z_crystal_dna_asset_manifest.json`          | **Crystal** shard count / coverage (registry paths only).                                       |
+| `data/z_anydevice_ai_capsule_registry.json`       | AnyDevice policy presence check.                                                                |
+| `data/z_anydevice_synthetic_devices.json`         | Synthetic scenario **count** (fiction-only).                                                    |
+| `data/z_satellite_control_link_manifest.json`     | Satellite roster **count**.                                                                     |
+| `data/z_doorway_workspace_registry.json`          | Doorway entry **count**.                                                                        |
+| `data/reports/z_traffic_minibots_status.json`     | **Traffic** signal.                                                                             |
+| `data/reports/z_car2_similarity_report.json`      | **CAR2** scan receipt.                                                                          |
+| `data/reports/z_crystal_dna_drift_report.json`    | **Drift** rollup signal.                                                                        |
+| `data/reports/z_anydevice_simulation_report.json` | **AnyDevice** simulation summary.                                                               |
 
 Missing optional reports produce **warnings** in JSON and do not crash the observer.
 
@@ -58,18 +58,19 @@ Missing optional reports produce **warnings** in JSON and do not crash the obser
 
 ## Task categories (policy)
 
-| Id | Meaning |
+| Id                           | Meaning                                                              |
 | ---------------------------- | -------------------------------------------------------------------- |
-| L1_READ_ONLY_OBSERVE | Read and summarize only. |
-| L2_REPORT_REFRESH | Allowlisted npm report refresh (e.g. `verify:md`, `z:traffic`). |
-| L3_DOC_SYNC_PROPOSAL | Human doc/manifest alignment after drift or signals — no auto-apply. |
-| L4_HUMAN_APPROVED_APPLY | Apply paths (e.g. control-link apply) — **AMK/human** gate. |
-| L5_FORBIDDEN_WITHOUT_CHARTER | Must not automate without charter. |
+| L1_READ_ONLY_OBSERVE         | Read and summarize only.                                             |
+| L2_REPORT_REFRESH            | Allowlisted npm report refresh (e.g. `verify:md`, `z:traffic`).      |
+| L3_DOC_SYNC_PROPOSAL         | Human doc/manifest alignment after drift or signals — no auto-apply. |
+| L4_HUMAN_APPROVED_APPLY      | Apply paths (e.g. control-link apply) — **AMK/human** gate.          |
+| L5_FORBIDDEN_WITHOUT_CHARTER | Must not automate without charter.                                   |
 
 ## Related
 
-| Doc | Role |
-| ------------------------------------------------------------------------------------ | --------------------------------------- |
-| [Z_ECOSYSTEM_GROWTH_STATUS.md](Z_ECOSYSTEM_GROWTH_STATUS.md) | Sealed growth stages and comms posture. |
-| [AI_BUILDER_CONTEXT.md](AI_BUILDER_CONTEXT.md) | Primary AI Builder briefing. |
-| [PHASE_Z_CYCLE_OBSERVE_1_GREEN_RECEIPT.md](PHASE_Z_CYCLE_OBSERVE_1_GREEN_RECEIPT.md) | Phase receipt. |
+| Doc                                                                                  | Role                                                              |
+| ------------------------------------------------------------------------------------ | ----------------------------------------------------------------- |
+| [Z_ECOSYSTEM_GROWTH_STATUS.md](Z_ECOSYSTEM_GROWTH_STATUS.md)                         | Sealed growth stages and comms posture.                           |
+| [Z_CYCLE_DASHBOARD_SYSTEM.md](Z_CYCLE_DASHBOARD_SYSTEM.md)                           | Z-CYCLE-DASHBOARD-1 read-only nervous system dashboard (UI only). |
+| [AI_BUILDER_CONTEXT.md](AI_BUILDER_CONTEXT.md)                                       | Primary AI Builder briefing.                                      |
+| [PHASE_Z_CYCLE_OBSERVE_1_GREEN_RECEIPT.md](PHASE_Z_CYCLE_OBSERVE_1_GREEN_RECEIPT.md) | Phase receipt.                                                    |

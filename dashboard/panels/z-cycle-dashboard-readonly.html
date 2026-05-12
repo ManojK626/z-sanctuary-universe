@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Z-Cycle Dashboard (read-only)</title>
+    <link rel="stylesheet" href="../styles/z-cycle-dashboard-readonly.css" />
+  </head>
+  <body class="zcd-dash">
+    <header class="zcd-header">
+      <h1 class="zcd-title">Z-Cycle Dashboard — ecosystem nervous system</h1>
+      <div>
+        <span class="zcd-badge">Z-CYCLE-DASHBOARD-1</span>
+        <span class="zcd-badge">read-only</span>
+      </div>
+      <p class="zcd-hint" style="margin: 0.5rem 0 0">
+        Observation, aggregation, and coordination visibility only. This page does not execute
+        tasks, create branches, deploy, mutate registries, or modify docs. AMK/human remains sacred
+        authority. BLUE observer rollup = informational / governed awareness, not failure.
+      </p>
+    </header>
+    <div class="zcd-toolbar">
+      <button type="button" id="zcdRefresh" title="Reload JSON reports (GET only)">
+        Refresh data
+      </button>
+      <span class="zcd-hint"
+        >Run <span class="zcd-mono">npm run z:cycle:observe</span> from hub root to refresh the
+        primary bundle.</span
+      >
+    </div>
+    <main class="zcd-main">
+      <p id="zcdError" class="zcd-error" role="alert"></p>
+      <div class="zcd-grid">
+        <section class="zcd-card">
+          <h2>Governance law</h2>
+          <div class="zcd-law">
+            <p>
+              <strong>MUST NOT:</strong> execute tasks; apply fixes; launch scripts automatically;
+              create branches; deploy; mutate registries; rewrite docs; perform autonomous actions;
+              become a control plane.
+            </p>
+            <p>
+              <strong>MAY:</strong> visualize; aggregate; observe; assist prioritization in the UI
+              only.
+            </p>
+          </div>
+        </section>
+        <section class="zcd-card">
+          <h2>Observer rollup</h2>
+          <div id="zcdObserverSignal" class="zcd-signal sig-yellow">—</div>
+          <p class="zcd-hint" style="margin: 0.35rem 0 0">
+            From <span class="zcd-mono">z_cycle_observe_status.json</span>. BLUE = governed /
+            informational posture.
+          </p>
+          <p class="zcd-mono" style="margin: 0.5rem 0 0">
+            generated: <span id="zcdGenerated">—</span>
+          </p>
+        </section>
+        <section class="zcd-card">
+          <h2>Growth stage</h2>
+          <p id="zcdStageLabel" style="margin: 0; font-weight: 700">—</p>
+          <p id="zcdStageId" class="zcd-mono" style="margin: 0.25rem 0; color: var(--zcd-muted)">
+            —
+          </p>
+          <p id="zcdStageSummary" class="zcd-hint" style="margin: 0">—</p>
+        </section>
+        <section class="zcd-card">
+          <h2>Registry coverage (counts)</h2>
+          <ul class="zcd-hint" style="margin: 0; padding-left: 1rem">
+            <li>Crystal shards: <strong id="zcdCovCrystal">—</strong></li>
+            <li>Doorway entries: <strong id="zcdCovDoor">—</strong></li>
+            <li>Satellites: <strong id="zcdCovSat">—</strong></li>
+            <li>Synthetic devices: <strong id="zcdCovSynth">—</strong></li>
+          </ul>
+        </section>
+        <section class="zcd-card">
+          <h2>Inputs ok (observe bundle)</h2>
+          <ul class="zcd-hint" style="margin: 0; padding-left: 1rem">
+            <li>package.json: <strong id="zcdInPkg">—</strong></li>
+            <li>growth registry: <strong id="zcdInGrowth">—</strong></li>
+            <li>crystal manifest: <strong id="zcdInCrystal">—</strong></li>
+            <li>traffic report: <strong id="zcdInTraffic">—</strong></li>
+          </ul>
+        </section>
+        <section class="zcd-card">
+          <h2>Embedded report signals (observe)</h2>
+          <p class="zcd-mono" style="margin: 0.15rem 0">
+            traffic: <span id="zcdSigTraffic">—</span>
+          </p>
+          <p class="zcd-mono" style="margin: 0.15rem 0">drift: <span id="zcdSigDrift">—</span></p>
+          <p class="zcd-mono" style="margin: 0.15rem 0">anydevice: <span id="zcdSigAny">—</span></p>
+          <p class="zcd-mono" style="margin: 0.15rem 0">car2: <span id="zcdSigCar2">—</span></p>
+        </section>
+      </div>
+      <section class="zcd-card" style="margin-top: 0.75rem">
+        <h2>Sealed systems (from observe report)</h2>
+        <ul id="zcdSealedList" class="zcd-sealed"></ul>
+      </section>
+      <section class="zcd-card" style="margin-top: 0.75rem">
+        <h2>Safe task queue (display only — do not auto-run)</h2>
+        <div class="zcd-table-wrap">
+          <table class="zcd-table">
+            <thead>
+              <tr>
+                <th>task_id</th>
+                <th>category</th>
+                <th>signal</th>
+                <th>human</th>
+                <th>recommended_next_action</th>
+              </tr>
+            </thead>
+            <tbody id="zcdTaskBody"></tbody>
+          </table>
+        </div>
+      </section>
+      <section class="zcd-card" style="margin-top: 0.75rem">
+        <h2>Turtle Mode lanes (suggestions)</h2>
+        <ul id="zcdTurtleLanes" class="zcd-hint" style="margin: 0; padding-left: 1.1rem"></ul>
+      </section>
+      <section class="zcd-card" style="margin-top: 0.75rem">
+        <h2>Supplemental GET receipts</h2>
+        <div id="zcdSupplemental" class="zcd-hint"></div>
+      </section>
+    </main>
+    <footer class="zcd-footer">
+      Z-Sanctuary Universe · Z-CYCLE-DASHBOARD-1 · GET JSON only · no execution authority
+    </footer>
+    <script src="../scripts/z-cycle-dashboard-readonly.js" defer></script>
+  </body>
+</html>

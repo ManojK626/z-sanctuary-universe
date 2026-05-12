@@ -1,0 +1,25 @@
+{
+  "schema": "z_cycle_dashboard_manifest_v1",
+  "phase": "Z-CYCLE-DASHBOARD-1",
+  "updated_at": "2026-05-12T00:00:00Z",
+  "title": "Z-Cycle Dashboard — read-only ecosystem nervous system (UI only)",
+  "law_summary": "Visualization and aggregation only. No task execution, no deploy, no branch creation, no registry or doc writes, no autonomous actions, no control plane.",
+  "panel": {
+    "html": "dashboard/panels/z-cycle-dashboard-readonly.html",
+    "script": "dashboard/scripts/z-cycle-dashboard-readonly.js",
+    "stylesheet": "dashboard/styles/z-cycle-dashboard-readonly.css"
+  },
+  "primary_data_url": "../../data/reports/z_cycle_observe_status.json",
+  "supplemental_report_urls": [
+    "../../data/reports/z_traffic_minibots_status.json",
+    "../../data/reports/z_crystal_dna_drift_report.json",
+    "../../data/reports/z_anydevice_simulation_report.json",
+    "../../data/reports/z_car2_similarity_report.json"
+  ],
+  "operator_commands_read_only_refresh": [
+    "npm run z:cycle:observe",
+    "npm run verify:md",
+    "npm run z:traffic"
+  ],
+  "sacred_authority": "AMK-Goku / human remains authority for all execution and sacred moves."
+}

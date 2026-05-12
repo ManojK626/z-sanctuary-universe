@@ -1,5 +1,5 @@
 ---
-description: Z-CONTROL-LINK-1 — canonical hub control root, satellite bridge files only, manifest-bound sync; default dry-run; no arbitrary scans or sacred moves from this lane.
+description: Z-CONTROL-LINK-1 — canonical hub control root, satellite bridge files only, manifest-bound sync; Z-CYCLE-OBSERVE-1 — observation tower and safe task queue (read-only, no queue execution); Z-CYCLE-DASHBOARD-1 — read-only dashboard UI (GET JSON only, not a control plane); default dry-run; no arbitrary scans or sacred moves from these lanes.
 globs:
 alwaysApply: true
 ---
@@ -7,6 +7,16 @@ alwaysApply: true
 # Z-Sanctuary: Control root awareness (Z-CONTROL-LINK-1)
 
 **Z-CONTROL-LINK-1 is sealed on `main`.** Treat **`Z_Sanctuary_Universe` (this hub repo)** as the **canonical governance and control root** for Z-Sanctuary satellite project links. Long doctrine, registries, and verification authority live here—not duplicated across siblings.
+
+## Z-CYCLE-OBSERVE-1 (Z-CURSOR-AWARENESS-3)
+
+**Z-CYCLE-OBSERVE-1 is sealed** as the **continuous observation tower** and **safe task-queue layer** for the ecosystem (see [`docs/Z_CYCLE_OBSERVE_SYSTEM.md`](docs/Z_CYCLE_OBSERVE_SYSTEM.md), `npm run z:cycle:observe`).
+
+- The observer **writes only** `data/reports/z_cycle_observe_status.{json,md}` and **generates** a `task_queue` — it **does not execute** queued tasks.
+- **`overall_observer_signal` BLUE** means **informational / governed awareness** (e.g. drift or sequencing posture in the rollup), **not** “failure” and **not** permission to auto-repair or auto-deploy.
+- **Cursor** may read that report and **suggest** the next **`cursor/zsanctuary/…`** Turtle Mode branch; **AMK / human** chooses which queue line (if any) becomes work.
+- **Cursor must not:** auto-run queue items; deploy; merge; push; install packages; start services; mutate NAS; connect real devices; repair files automatically; or touch secrets.
+- **Workflow stays:** small branch → verify gates → human review → merge. This awareness update adds **no new autonomous authority**.
 
 ## Satellites
 
@@ -30,7 +40,11 @@ alwaysApply: true
 
 - **Z-DOORWAY-2** — governed local project opener: [`docs/AMK_PROJECT_DOORWAY_LAUNCHER.md`](docs/AMK_PROJECT_DOORWAY_LAUNCHER.md). Opens Cursor / VS Code / Explorer per registry only—**no** builds, installs, or deploys.
 
+- **Z-CYCLE-DASHBOARD-1** (read-only UI): [`docs/Z_CYCLE_DASHBOARD_SYSTEM.md`](docs/Z_CYCLE_DASHBOARD_SYSTEM.md) — [`dashboard/panels/z-cycle-dashboard-readonly.html`](dashboard/panels/z-cycle-dashboard-readonly.html) — GET JSON only; **not** a control plane.
+
 ## Deeper context
 
 - Hub policy: [`docs/Z_SANCTUARY_CANONICAL_CONTROL_ROOT.md`](docs/Z_SANCTUARY_CANONICAL_CONTROL_ROOT.md)
 - Builder briefing: [`docs/AI_BUILDER_CONTEXT.md`](docs/AI_BUILDER_CONTEXT.md)
+- Cycle observe: [`docs/Z_CYCLE_OBSERVE_SYSTEM.md`](docs/Z_CYCLE_OBSERVE_SYSTEM.md) — [`docs/PHASE_Z_CURSOR_AWARENESS_3_GREEN_RECEIPT.md`](docs/PHASE_Z_CURSOR_AWARENESS_3_GREEN_RECEIPT.md)
+- Cycle dashboard: [`docs/Z_CYCLE_DASHBOARD_SYSTEM.md`](docs/Z_CYCLE_DASHBOARD_SYSTEM.md) — [`docs/PHASE_Z_CYCLE_DASHBOARD_1_GREEN_RECEIPT.md`](docs/PHASE_Z_CYCLE_DASHBOARD_1_GREEN_RECEIPT.md)
