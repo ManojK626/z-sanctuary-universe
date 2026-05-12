@@ -5,7 +5,7 @@
 ## Traffic Chief
 
 | Field | Value |
-|----|----|
+| ---- | ---- |
 | **Overall signal** | **GREEN** |
 | Human decision required | no |
 | Blocked categories (hint) | — |
@@ -23,7 +23,7 @@ Pick one domain; document rollback; run this report again after edits.
 ## Minibots
 
 | MiniBot | Command | Status | Signal | Duration (ms) |
-|----|----|----|----|----:|
+| ---- | ---- | ---- | ---- | ----: |
 | Markdown Traffic Bot | `npm run verify:md` | pass | GREEN | 3584 |
 | CAR² Traffic Bot | `npm run z:car2` | pass | GREEN | 2962 |
 | Dashboard Traffic Bot | `npm run dashboard:registry-verify` | pass | GREEN | 370 |
