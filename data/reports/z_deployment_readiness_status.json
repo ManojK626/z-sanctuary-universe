@@ -1,7 +1,7 @@
 {
   "schema": "z_deployment_readiness_status_v1",
   "phase": "Z-DEPLOYMENT-READINESS-OVERSEER-1",
-  "generated_at": "2026-05-12T19:15:19.905Z",
+  "generated_at": "2026-05-12T19:18:32.212Z",
   "law": "Read-only evaluation from hub registries and committed report JSON only. No deploy, no external mutation, no arbitrary disk walks, no secrets, no auto-fix. Percentages and deployment_status are advisory posture — not certification. Production-ready band (96–100) still requires explicit human / legal / security gates.",
   "global_readiness": {
     "ecosystem_signal": "BLUE",
@@ -9,7 +9,7 @@
       "present": true,
       "overall_observer_signal": "BLUE",
       "task_queue_length": 11,
-      "generated_at": "2026-05-12T19:12:15.865Z",
+      "generated_at": "2026-05-12T19:15:20.267Z",
       "age_hours": 0.1
     },
     "pc_activation_receipt": {
@@ -20,7 +20,7 @@
       "present": true,
       "overall_signal": "BLUE",
       "generated_at": "2026-05-12T18:06:23.903Z",
-      "age_hours": 1.1
+      "age_hours": 1.2
     },
     "anydevice_simulation": {
       "present": true,
@@ -41,7 +41,7 @@
         "passed": 13,
         "failed": 0
       },
-      "generated_at": "2026-05-12T19:15:17.998Z"
+      "generated_at": "2026-05-12T19:18:30.402Z"
     },
     "doorway": {
       "report_present": true,

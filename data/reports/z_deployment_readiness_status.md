@@ -1,6 +1,6 @@
 # Z-DEPLOYMENT-READINESS-OVERSEER-1
 
-**Generated:** 2026-05-12T19:15:19.905Z
+**Generated:** 2026-05-12T19:18:32.212Z
 **Ecosystem signal (advisory):** BLUE
 **Mean readiness (PC projects):** 21%
 **Mean readiness (hub modules):** 11%
