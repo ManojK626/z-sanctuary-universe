@@ -1,7 +1,7 @@
 {
   "schema": "z_anydevice_simulation_report_v1",
   "phase": "Z-ANYDEVICE-2",
-  "generated_at": "2026-05-12T17:09:16.728Z",
+  "generated_at": "2026-05-12T17:14:24.917Z",
   "law": "Synthetic simulation only. No real device scanning, no antivirus claims, no network probing, no drivers, no secrets, no Cloudflare production changes, no NAS writes.",
   "inputs": {
     "synthetic": "data/z_anydevice_synthetic_devices.json",
