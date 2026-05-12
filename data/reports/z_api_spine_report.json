@@ -1,6 +1,6 @@
 {
   "schema": "z_api_spine_report_v1",
-  "generated_at": "2026-05-12T17:29:39.976Z",
+  "generated_at": "2026-05-12T17:51:39.055Z",
   "overall_signal": "GREEN",
   "registry_path": "data/z_api_spine_registry.json",
   "policy_path": "data/z_api_communication_flow_policy.json",

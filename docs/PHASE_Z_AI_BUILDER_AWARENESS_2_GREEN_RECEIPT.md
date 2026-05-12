@@ -6,12 +6,12 @@
 
 ## Deliverables
 
-| Artifact                                               | Status                                                                                  |
+| Artifact | Status |
 | ------------------------------------------------------ | --------------------------------------------------------------------------------------- |
-| `docs/AI_BUILDER_CONTEXT.md`                           | Updated — sealed systems, comms rules, ecosystem feedback, verify lanes, hub table rows |
-| `docs/Z_ECOSYSTEM_GROWTH_STATUS.md`                    | Added — growth catalog and feedback                                                     |
-| `docs/PHASE_Z_AI_BUILDER_AWARENESS_2_GREEN_RECEIPT.md` | Added                                                                                   |
-| `data/z_ecosystem_growth_stage_registry.json`          | Added — optional machine roster (`z_ecosystem_growth_stage_registry_v1`)                |
+| `docs/AI_BUILDER_CONTEXT.md` | Updated — sealed systems, comms rules, ecosystem feedback, verify lanes, hub table rows |
+| `docs/Z_ECOSYSTEM_GROWTH_STATUS.md` | Added — growth catalog and feedback |
+| `docs/PHASE_Z_AI_BUILDER_AWARENESS_2_GREEN_RECEIPT.md` | Added |
+| `data/z_ecosystem_growth_stage_registry.json` | Added — optional machine roster (`z_ecosystem_growth_stage_registry_v1`) |
 
 ## Sealed systems acknowledged (summary)
 
