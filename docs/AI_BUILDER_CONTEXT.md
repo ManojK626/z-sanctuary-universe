@@ -88,6 +88,8 @@ The ecosystem is in a **governed organism foundation** posture: **read-only awar
 | [Z_ANYDEVICE_AI_CAPSULE.md](Z_ANYDEVICE_AI_CAPSULE.md)                                                         | Z-ANYDEVICE-AI-CAPSULE-1 device trust / declared capability governance.                                                                            |
 | [Z_ANYDEVICE_SYNTHETIC_SIMULATION.md](Z_ANYDEVICE_SYNTHETIC_SIMULATION.md)                                     | Z-ANYDEVICE-2 synthetic device simulation (fiction-only + simulator).                                                                              |
 | [PHASE_Z_AI_BUILDER_AWARENESS_2_GREEN_RECEIPT.md](PHASE_Z_AI_BUILDER_AWARENESS_2_GREEN_RECEIPT.md)             | Z-AI-BUILDER-AWARENESS-2 sealed growth / overseer communication receipt.                                                                           |
+| [Z_CYCLE_OBSERVE_SYSTEM.md](Z_CYCLE_OBSERVE_SYSTEM.md)                                                         | Z-CYCLE-OBSERVE-1 read-only observer + safe task queue (reports only; no execution).                                                               |
+| [PHASE_Z_CYCLE_OBSERVE_1_GREEN_RECEIPT.md](PHASE_Z_CYCLE_OBSERVE_1_GREEN_RECEIPT.md)                           | Seal receipt for Z-CYCLE-OBSERVE-1 cycle observe phase.                                                                                            |
 | [Z_API_SPINE_POWER_CELL.md](Z_API_SPINE_POWER_CELL.md)                                                         | API spine posture within hub governance.                                                                                                           |
 | [Z_API_READINESS_AND_SMOKE_GATE.md](Z_API_READINESS_AND_SMOKE_GATE.md)                                         | Readiness/smoke charter and non-bypass flow.                                                                                                       |
 | [Z_TRAFFIC_MINIBOTS.md](Z_TRAFFIC_MINIBOTS.md)                                                                 | Traffic report source and signal semantics.                                                                                                        |
@@ -153,6 +155,7 @@ The ecosystem is in a **governed organism foundation** posture: **read-only awar
 
 - `npm run z:control-links:dry` — Z-CONTROL-LINK-1: plan bridge sync from hub template to manifest-approved satellites only (no satellite file writes; hub reports under `data/reports/` may refresh).
 - `npm run z:control-links:apply` — same script with `--apply`; writes **only** the bridge markdown path declared in the manifest (operator-gated).
+- `npm run z:cycle:observe` — Z-CYCLE-OBSERVE-1: full-system observation + safe task queue report (`data/reports/z_cycle_observe_status.{json,md}`); **does not execute** queued tasks.
 - `npm run z:anydevice:simulate` — Z-ANYDEVICE-2: synthetic device simulation report refresh (`data/reports/z_anydevice_simulation_report.{json,md}`).
 - `npm run z:crystal:dna:drift` — Z-CRYSTAL-DNA-3: topology drift / integrity awareness reports only.
 - `npm run verify:md` — markdown gate; required before sealing doc-only phases.

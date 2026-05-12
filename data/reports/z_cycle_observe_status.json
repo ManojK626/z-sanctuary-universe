@@ -1,0 +1,564 @@
+{
+  "schema": "z_cycle_observe_status_v1",
+  "phase": "Z-CYCLE-OBSERVE-1",
+  "generated_at": "2026-05-12T17:51:29.225Z",
+  "law": "Observation tower only. Suggests and classifies; does not execute the task queue.",
+  "inputs_ok": {
+    "package_json": true,
+    "growth_registry": true,
+    "crystal_manifest": true,
+    "anydevice_capsule": true,
+    "anydevice_synthetic": true,
+    "satellite_manifest": true,
+    "doorway_registry": true,
+    "report_traffic": true,
+    "report_car2": true,
+    "report_drift": true,
+    "report_anydevice": true
+  },
+  "current_ecosystem_stage": {
+    "id": "governed_organism_foundation",
+    "label": "Governed organism foundation",
+    "summary": "Read-only awareness, topology, doorway discipline, and preview-only edge posture expand ahead of autonomous execution."
+  },
+  "sealed_systems": [
+    {
+      "id": "z_ssws_ide_cockpit",
+      "phase_label": "Z-SSWS IDE",
+      "role": "Main operator cockpit for hub-aligned work; doctrine and tasks over silent automation.",
+      "docs": [
+        "docs/Z_SSWS_WORKSPACE_SPINE.md",
+        "docs/Z_SSWS_SUPER_SAIYAN_WORKSPACE_COCKPIT.md"
+      ]
+    },
+    {
+      "id": "z_control_link_1",
+      "phase_label": "Z-CONTROL-LINK-1",
+      "role": "Canonical hub plus thin satellite bridge sync; one control link file per approved satellite.",
+      "docs": [
+        "docs/Z_SANCTUARY_CANONICAL_CONTROL_ROOT.md",
+        "docs/AI_BUILDER_CONTEXT.md"
+      ],
+      "data": [
+        "data/z_satellite_control_link_manifest.json"
+      ],
+      "scripts_note": "npm run z:control-links:dry / z:control-links:apply (operator-gated)"
+    },
+    {
+      "id": "z_doorway_2",
+      "phase_label": "Z-DOORWAY-2",
+      "role": "Governed workspace opener — registry-backed paths and explicit human-run open helpers only.",
+      "docs": [
+        "docs/AMK_PROJECT_DOORWAY_LAUNCHER.md",
+        "docs/AMK_WORKSPACE_DOORWAY.md"
+      ],
+      "data": [
+        "data/z_doorway_workspace_registry.json"
+      ]
+    },
+    {
+      "id": "z_doorway_3",
+      "phase_label": "Z-DOORWAY-3",
+      "role": "Doorway telemetry and session receipts — read-only status reports and optional JSON Lines tail; no IDE auto-launch from awareness scripts alone.",
+      "docs": [
+        "docs/AMK_WORKSPACE_DOORWAY.md"
+      ],
+      "data": [
+        "data/reports/z_doorway_workspace_status.json",
+        "data/reports/z_doorway_session_log.jsonl"
+      ],
+      "scripts_note": "npm run z:doorway:status — see scripts/z_doorway_workspace_status.mjs"
+    },
+    {
+      "id": "z_crystal_dna_1",
+      "phase_label": "Z-CRYSTAL-DNA-1",
+      "role": "Asset identity mesh — manifest shards, dependencies, governance fields.",
+      "docs": [
+        "docs/Z_CRYSTAL_DNA_MESH.md"
+      ],
+      "data": [
+        "data/z_crystal_dna_asset_manifest.json"
+      ]
+    },
+    {
+      "id": "z_crystal_dna_2",
+      "phase_label": "Z-CRYSTAL-DNA-2",
+      "role": "Living Crystal ecosystem map — read-only visualization of shards and bridges.",
+      "docs": [
+        "docs/Z_CRYSTAL_DNA_VISUALIZATION.md"
+      ],
+      "paths": [
+        "dashboard/panels/z-crystal-dna-map.html"
+      ]
+    },
+    {
+      "id": "z_crystal_dna_3",
+      "phase_label": "Z-CRYSTAL-DNA-3",
+      "role": "Drift and integrity awareness — detect-only reports for topology and posture drift.",
+      "docs": [
+        "docs/Z_CRYSTAL_DNA_DRIFT_AWARENESS.md"
+      ],
+      "scripts_note": "npm run z:crystal:dna:drift",
+      "data": [
+        "data/reports/z_crystal_dna_drift_report.json"
+      ]
+    },
+    {
+      "id": "z_anydevice_ai_capsule_1",
+      "phase_label": "Z-ANYDEVICE-AI-CAPSULE-1",
+      "role": "Device trust and declared capability governance — metadata and law only.",
+      "docs": [
+        "docs/Z_ANYDEVICE_AI_CAPSULE.md"
+      ],
+      "data": [
+        "data/z_anydevice_ai_capsule_registry.json"
+      ]
+    },
+    {
+      "id": "z_anydevice_2",
+      "phase_label": "Z-ANYDEVICE-2",
+      "role": "Synthetic device simulation — fiction-only scenarios and read-only simulator reports.",
+      "docs": [
+        "docs/Z_ANYDEVICE_SYNTHETIC_SIMULATION.md"
+      ],
+      "scripts_note": "npm run z:anydevice:simulate",
+      "data": [
+        "data/z_anydevice_synthetic_devices.json",
+        "data/reports/z_anydevice_simulation_report.json"
+      ]
+    },
+    {
+      "id": "cloudflare_governance",
+      "phase_label": "Cloudflare governance",
+      "role": "Preview and runtime posture review in documentation only; production HOLD — hub remains authority.",
+      "docs": [
+        "docs/Z-CLOUDFLARE-AI-COMMS-PRECAUTIONS.md",
+        "AGENTS.md"
+      ]
+    },
+    {
+      "id": "casa_ai_builder",
+      "phase_label": "Casa AI Builder",
+      "role": "Suggest docs, prompts, and checklists only — no device authority, deploy authority, or secret handling.",
+      "docs": [
+        "docs/Z_ANYDEVICE_AI_CAPSULE.md",
+        "docs/Z_ANYDEVICE_SYNTHETIC_SIMULATION.md"
+      ]
+    }
+  ],
+  "active_verify_scripts": [
+    "enforcer:gate",
+    "verify:all",
+    "verify:boundary-ownership",
+    "verify:ci",
+    "verify:daily-gate",
+    "verify:full",
+    "verify:full:core",
+    "verify:full:technical",
+    "verify:hub:metadata",
+    "verify:md",
+    "verify:sanctuary-github-pr",
+    "verify:web",
+    "z:anydevice:simulate",
+    "z:car2",
+    "z:control-links:dry",
+    "z:crystal:dna:drift",
+    "z:cycle:observe",
+    "z:doorway:status",
+    "z:garage:full-scan",
+    "z:traffic"
+  ],
+  "active_verify_scripts_count": 20,
+  "npm_script_total": 342,
+  "latest_report_signals": {
+    "z_traffic_minibots_status": {
+      "overall_signal": null,
+      "ok": null
+    },
+    "z_car2_similarity_report": {
+      "ok": null,
+      "files_scanned": null
+    },
+    "z_crystal_dna_drift_report": {
+      "overall_signal": "BLUE",
+      "findings_count": 3
+    },
+    "z_anydevice_simulation_report": {
+      "simulations": 7,
+      "warnings": 0
+    }
+  },
+  "project_folder_coverage": {
+    "crystal_shards": 8,
+    "crystal_manifest_ok": true,
+    "doorway_entries": 5,
+    "satellites": 2,
+    "synthetic_devices": 7,
+    "note": "Counts from known registries only; no arbitrary folder scan."
+  },
+  "ai_ecosystem_communication_posture": {
+    "ai_tower_overseers_may": [
+      "observe",
+      "classify",
+      "summarize",
+      "suggest"
+    ],
+    "must_not": [
+      "autonomous_deploy",
+      "secret_writes",
+      "arbitrary_pc_scans",
+      "real_device_scanning",
+      "nas_mutation",
+      "automatic_repair",
+      "production_cloudflare_binding"
+    ],
+    "sacred_authority": "AMK-Goku / human operator remains sacred authority for merge, deploy, NAS, billing, and production edge bind decisions."
+  },
+  "ecosystem_feedback": {
+    "current_growth_stage": "governed_organism_foundation",
+    "behavior_pattern": "Read-only awareness expanding faster than execution.",
+    "strengths": [
+      "topology_and_drift_awareness",
+      "device_trust_and_synthetic_simulation",
+      "doorway_control_and_telemetry_receipts",
+      "cloudflare_preview_posture_and_github_truth"
+    ],
+    "risk_to_avoid": "Too much automation before observability stabilizes.",
+    "recommended_next_lanes": [
+      "AI_Builder_awareness_follow_through",
+      "Z_Lab_supervised_analysis_doctrine"
+    ]
+  },
+  "safe_autonomous_task_candidates": [
+    "observe_reread_cycle_report",
+    "refresh_verify_md",
+    "refresh_traffic_minibots",
+    "refresh_car2_similarity",
+    "refresh_crystal_dna_drift",
+    "refresh_anydevice_simulation"
+  ],
+  "blocked_hold_blue_red_tasks": [
+    {
+      "task_id": "refresh_crystal_dna_drift",
+      "category": "L2_REPORT_REFRESH",
+      "signal": "BLUE",
+      "requires_human": false
+    },
+    {
+      "task_id": "proposal_review_crystal_topology",
+      "category": "L3_DOC_SYNC_PROPOSAL",
+      "signal": "BLUE",
+      "requires_human": true
+    },
+    {
+      "task_id": "apply_control_links_after_review",
+      "category": "L4_HUMAN_APPROVED_APPLY",
+      "signal": "BLUE",
+      "requires_human": true
+    },
+    {
+      "task_id": "forbidden_autonomous_deploy",
+      "category": "L5_FORBIDDEN_WITHOUT_CHARTER",
+      "signal": "RED",
+      "requires_human": true
+    },
+    {
+      "task_id": "forbidden_nas_mutation_from_observer",
+      "category": "L5_FORBIDDEN_WITHOUT_CHARTER",
+      "signal": "RED",
+      "requires_human": true
+    }
+  ],
+  "next_recommended_turtle_mode_lanes": [
+    "AI_Builder_awareness_follow_through",
+    "Z_Lab_supervised_analysis_doctrine",
+    "cursor/zsanctuary/<one-domain> branches only",
+    "Keep read-only observe and report refresh before L4 apply paths"
+  ],
+  "task_queue": [
+    {
+      "task_id": "observe_reread_cycle_report",
+      "title": "Re-read latest cycle observe status after other receipts refresh",
+      "category": "L1_READ_ONLY_OBSERVE",
+      "source_system": "Z-CYCLE-OBSERVE-1",
+      "signal": "GREEN",
+      "recommended_next_action": "Open data/reports/z_cycle_observe_status.json in dashboard or editor; no execution.",
+      "requires_human": false,
+      "related_files": [
+        "data/reports/z_cycle_observe_status.json",
+        "docs/Z_CYCLE_OBSERVE_SYSTEM.md"
+      ],
+      "forbidden_auto_actions": [
+        "deploy",
+        "git_push",
+        "merge",
+        "install_packages",
+        "start_services",
+        "scan_arbitrary_pc_folders",
+        "touch_secrets",
+        "mutate_nas",
+        "connect_real_devices",
+        "repair_files_automatically",
+        "production_cloudflare_changes"
+      ]
+    },
+    {
+      "task_id": "refresh_verify_md",
+      "title": "Refresh markdown governance receipt",
+      "category": "L2_REPORT_REFRESH",
+      "source_system": "hub_npm",
+      "signal": "GREEN",
+      "recommended_next_action": "npm run verify:md",
+      "requires_human": false,
+      "related_files": [
+        "package.json"
+      ],
+      "forbidden_auto_actions": [
+        "deploy",
+        "git_push",
+        "merge",
+        "install_packages",
+        "start_services",
+        "scan_arbitrary_pc_folders",
+        "touch_secrets",
+        "mutate_nas",
+        "connect_real_devices",
+        "repair_files_automatically",
+        "production_cloudflare_changes"
+      ]
+    },
+    {
+      "task_id": "refresh_traffic_minibots",
+      "title": "Refresh traffic minibot status report",
+      "category": "L2_REPORT_REFRESH",
+      "source_system": "Z-TRAFFIC",
+      "signal": "UNKNOWN",
+      "recommended_next_action": "npm run z:traffic",
+      "requires_human": false,
+      "related_files": [
+        "data/reports/z_traffic_minibots_status.json"
+      ],
+      "forbidden_auto_actions": [
+        "deploy",
+        "git_push",
+        "merge",
+        "install_packages",
+        "start_services",
+        "scan_arbitrary_pc_folders",
+        "touch_secrets",
+        "mutate_nas",
+        "connect_real_devices",
+        "repair_files_automatically",
+        "production_cloudflare_changes"
+      ]
+    },
+    {
+      "task_id": "refresh_car2_similarity",
+      "title": "Refresh CAR2 similarity scan report",
+      "category": "L2_REPORT_REFRESH",
+      "source_system": "Z-CAR2",
+      "signal": "GREEN",
+      "recommended_next_action": "npm run z:car2",
+      "requires_human": false,
+      "related_files": [
+        "data/reports/z_car2_similarity_report.json"
+      ],
+      "forbidden_auto_actions": [
+        "deploy",
+        "git_push",
+        "merge",
+        "install_packages",
+        "start_services",
+        "scan_arbitrary_pc_folders",
+        "touch_secrets",
+        "mutate_nas",
+        "connect_real_devices",
+        "repair_files_automatically",
+        "production_cloudflare_changes"
+      ]
+    },
+    {
+      "task_id": "refresh_crystal_dna_drift",
+      "title": "Refresh Crystal DNA drift awareness report",
+      "category": "L2_REPORT_REFRESH",
+      "source_system": "Z-CRYSTAL-DNA-3",
+      "signal": "BLUE",
+      "recommended_next_action": "npm run z:crystal:dna:drift",
+      "requires_human": false,
+      "related_files": [
+        "data/reports/z_crystal_dna_drift_report.json",
+        "data/z_crystal_dna_asset_manifest.json"
+      ],
+      "forbidden_auto_actions": [
+        "deploy",
+        "git_push",
+        "merge",
+        "install_packages",
+        "start_services",
+        "scan_arbitrary_pc_folders",
+        "touch_secrets",
+        "mutate_nas",
+        "connect_real_devices",
+        "repair_files_automatically",
+        "production_cloudflare_changes"
+      ]
+    },
+    {
+      "task_id": "refresh_anydevice_simulation",
+      "title": "Refresh AnyDevice synthetic simulation report",
+      "category": "L2_REPORT_REFRESH",
+      "source_system": "Z-ANYDEVICE-2",
+      "signal": "GREEN",
+      "recommended_next_action": "npm run z:anydevice:simulate",
+      "requires_human": false,
+      "related_files": [
+        "data/reports/z_anydevice_simulation_report.json",
+        "data/z_anydevice_synthetic_devices.json"
+      ],
+      "forbidden_auto_actions": [
+        "deploy",
+        "git_push",
+        "merge",
+        "install_packages",
+        "start_services",
+        "scan_arbitrary_pc_folders",
+        "touch_secrets",
+        "mutate_nas",
+        "connect_real_devices",
+        "repair_files_automatically",
+        "production_cloudflare_changes"
+      ]
+    },
+    {
+      "task_id": "proposal_review_crystal_topology",
+      "title": "Human review of Crystal DNA drift findings (no auto-repair)",
+      "category": "L3_DOC_SYNC_PROPOSAL",
+      "source_system": "Z-CRYSTAL-DNA-3",
+      "signal": "BLUE",
+      "recommended_next_action": "Operator reads z_crystal_dna_drift_report.md and updates manifests or posture under separate PR.",
+      "requires_human": true,
+      "related_files": [
+        "data/reports/z_crystal_dna_drift_report.md",
+        "docs/Z_CRYSTAL_DNA_DRIFT_AWARENESS.md"
+      ],
+      "forbidden_auto_actions": [
+        "deploy",
+        "git_push",
+        "merge",
+        "install_packages",
+        "start_services",
+        "scan_arbitrary_pc_folders",
+        "touch_secrets",
+        "mutate_nas",
+        "connect_real_devices",
+        "repair_files_automatically",
+        "production_cloudflare_changes"
+      ]
+    },
+    {
+      "task_id": "proposal_triage_traffic_signal",
+      "title": "Triage traffic minibot non-GREEN signal",
+      "category": "L3_DOC_SYNC_PROPOSAL",
+      "source_system": "Z-TRAFFIC",
+      "signal": "UNDEFINED",
+      "recommended_next_action": "Review z_traffic_minibots_status.json and linked indicators; no auto-fix.",
+      "requires_human": true,
+      "related_files": [
+        "data/reports/z_traffic_minibots_status.json"
+      ],
+      "forbidden_auto_actions": [
+        "deploy",
+        "git_push",
+        "merge",
+        "install_packages",
+        "start_services",
+        "scan_arbitrary_pc_folders",
+        "touch_secrets",
+        "mutate_nas",
+        "connect_real_devices",
+        "repair_files_automatically",
+        "production_cloudflare_changes"
+      ]
+    },
+    {
+      "task_id": "apply_control_links_after_review",
+      "title": "Apply thin satellite control-link bridge sync (operator-gated)",
+      "category": "L4_HUMAN_APPROVED_APPLY",
+      "source_system": "Z-CONTROL-LINK-1",
+      "signal": "BLUE",
+      "recommended_next_action": "npm run z:control-links:dry then z:control-links:apply only after explicit human review.",
+      "requires_human": true,
+      "related_files": [
+        "data/z_satellite_control_link_manifest.json",
+        "scripts/z_sync_control_links.mjs"
+      ],
+      "forbidden_auto_actions": [
+        "deploy",
+        "git_push",
+        "merge",
+        "install_packages",
+        "start_services",
+        "scan_arbitrary_pc_folders",
+        "touch_secrets",
+        "mutate_nas",
+        "connect_real_devices",
+        "repair_files_automatically",
+        "production_cloudflare_changes"
+      ]
+    },
+    {
+      "task_id": "forbidden_autonomous_deploy",
+      "title": "Autonomous deploy / merge / production bind",
+      "category": "L5_FORBIDDEN_WITHOUT_CHARTER",
+      "source_system": "hub_governance",
+      "signal": "RED",
+      "recommended_next_action": "Do not automate. AMK/human charter and sacred gates required.",
+      "requires_human": true,
+      "related_files": [
+        "AGENTS.md",
+        "docs/AI_BUILDER_CONTEXT.md"
+      ],
+      "forbidden_auto_actions": [
+        "deploy",
+        "git_push",
+        "merge",
+        "install_packages",
+        "start_services",
+        "scan_arbitrary_pc_folders",
+        "touch_secrets",
+        "mutate_nas",
+        "connect_real_devices",
+        "repair_files_automatically",
+        "production_cloudflare_changes"
+      ]
+    },
+    {
+      "task_id": "forbidden_nas_mutation_from_observer",
+      "title": "NAS mutation or real device connect from observer lane",
+      "category": "L5_FORBIDDEN_WITHOUT_CHARTER",
+      "source_system": "Z-CYCLE-OBSERVE-1",
+      "signal": "RED",
+      "recommended_next_action": "Never. Use chartered NAS and doorway flows only.",
+      "requires_human": true,
+      "related_files": [
+        "data/z_cycle_observe_task_policy.json"
+      ],
+      "forbidden_auto_actions": [
+        "deploy",
+        "git_push",
+        "merge",
+        "install_packages",
+        "start_services",
+        "scan_arbitrary_pc_folders",
+        "touch_secrets",
+        "mutate_nas",
+        "connect_real_devices",
+        "repair_files_automatically",
+        "production_cloudflare_changes"
+      ]
+    }
+  ],
+  "warnings": [],
+  "policy_ref": "data/z_cycle_observe_task_policy.json",
+  "overall_observer_signal": "BLUE"
+}

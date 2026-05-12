@@ -160,6 +160,7 @@
     "z:doorway:status": "node scripts/z_doorway_workspace_status.mjs",
     "z:crystal:dna:drift": "node scripts/z_crystal_dna_drift_check.mjs",
     "z:anydevice:simulate": "node scripts/z_anydevice_simulate.mjs",
+    "z:cycle:observe": "node scripts/z_cycle_observe_status.mjs",
     "z:doorway:dry": "powershell -ExecutionPolicy Bypass -File scripts/z_open_workspace_safe.ps1",
     "amk:doorway:status": "node scripts/amk_workspace_doorway_status.mjs",
     "amk:doorway:open": "powershell -ExecutionPolicy Bypass -File scripts/amk_open_workspace_doors.ps1",

@@ -41,6 +41,7 @@
 ## Verify hooks (awareness receipts)
 
 ```bash
+npm run z:cycle:observe
 npm run verify:md
 npm run z:anydevice:simulate
 npm run z:crystal:dna:drift
@@ -50,7 +51,8 @@ npm run z:car2
 
 ## Related
 
-| Doc                                                                                                | Role                                                              |
-| -------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------- |
-| [AI_BUILDER_CONTEXT.md](AI_BUILDER_CONTEXT.md)                                                     | Primary Cursor / AI Builder briefing (includes this phase block). |
-| [PHASE_Z_AI_BUILDER_AWARENESS_2_GREEN_RECEIPT.md](PHASE_Z_AI_BUILDER_AWARENESS_2_GREEN_RECEIPT.md) | Seal receipt for this awareness pass.                             |
+| Doc                                                                                                | Role                                                               |
+| -------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------ |
+| [Z_CYCLE_OBSERVE_SYSTEM.md](Z_CYCLE_OBSERVE_SYSTEM.md)                                             | Z-CYCLE-OBSERVE-1 observation tower + safe task queue (read-only). |
+| [AI_BUILDER_CONTEXT.md](AI_BUILDER_CONTEXT.md)                                                     | Primary Cursor / AI Builder briefing (includes this phase block).  |
+| [PHASE_Z_AI_BUILDER_AWARENESS_2_GREEN_RECEIPT.md](PHASE_Z_AI_BUILDER_AWARENESS_2_GREEN_RECEIPT.md) | Seal receipt for this awareness pass.                              |

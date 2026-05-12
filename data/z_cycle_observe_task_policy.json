@@ -1,0 +1,62 @@
+{
+  "schema": "z_cycle_observe_task_policy_v1",
+  "phase": "Z-CYCLE-OBSERVE-1",
+  "updated_at": "2026-05-12T00:00:00Z",
+  "title": "Cycle observe — task categories and forbidden auto-actions (policy only)",
+  "law": "Observation tower and safe task organizer only. This JSON does not execute tasks.",
+  "task_categories": [
+    {
+      "id": "L1_READ_ONLY_OBSERVE",
+      "meaning": "Read registries/reports; summarize; no writes except cycle observe reports."
+    },
+    {
+      "id": "L2_REPORT_REFRESH",
+      "meaning": "Operator or CI runs allowlisted npm scripts that only refresh reports or lint."
+    },
+    {
+      "id": "L3_DOC_SYNC_PROPOSAL",
+      "meaning": "Human-authored doc or manifest alignment proposed from drift; no auto-apply."
+    },
+    {
+      "id": "L4_HUMAN_APPROVED_APPLY",
+      "meaning": "Apply paths that touch satellites, workspace, or governance — AMK/human gate required."
+    },
+    {
+      "id": "L5_FORBIDDEN_WITHOUT_CHARTER",
+      "meaning": "No automation without explicit charter and hub gates."
+    }
+  ],
+  "allowed_observer_actions": [
+    "read_registries",
+    "read_reports",
+    "summarize",
+    "classify",
+    "suggest_tasks",
+    "write_only_cycle_observe_reports"
+  ],
+  "forbidden_observer_actions": [
+    "deploy",
+    "git_push",
+    "merge",
+    "install_packages",
+    "start_services",
+    "scan_arbitrary_pc_folders",
+    "touch_secrets",
+    "mutate_nas",
+    "connect_real_devices",
+    "repair_files_automatically",
+    "production_cloudflare_changes"
+  ],
+  "output_task_fields": [
+    "task_id",
+    "title",
+    "category",
+    "source_system",
+    "signal",
+    "recommended_next_action",
+    "requires_human",
+    "forbidden_auto_actions",
+    "related_files"
+  ],
+  "turtle_mode_note": "Use branch prefix cursor/zsanctuary/; one domain per PR; this observer never executes the generated queue."
+}
