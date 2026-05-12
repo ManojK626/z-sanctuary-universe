@@ -11,19 +11,19 @@ This phase adds **read-only** topology drift detection for the Z-Crystal DNA mes
 
 ## Inputs (read-only)
 
-| File                                          | Role                                           |
+| File | Role |
 | --------------------------------------------- | ---------------------------------------------- |
-| `data/z_crystal_dna_asset_manifest.json`      | DNA shards, paths, dependencies, status        |
+| `data/z_crystal_dna_asset_manifest.json` | DNA shards, paths, dependencies, status |
 | `data/z_satellite_control_link_manifest.json` | Satellite bridges, NAS flags, hub template age |
-| `data/z_doorway_workspace_registry.json`      | Doorway entries, HOLD vs GREEN posture         |
-| `dashboard/data/amk_project_indicators.json`  | Indicator signals and linked report paths      |
+| `data/z_doorway_workspace_registry.json` | Doorway entries, HOLD vs GREEN posture |
+| `dashboard/data/amk_project_indicators.json` | Indicator signals and linked report paths |
 
 ## Outputs
 
-| File                                           | Role                                                                |
+| File | Role |
 | ---------------------------------------------- | ------------------------------------------------------------------- |
 | `data/reports/z_crystal_dna_drift_report.json` | Machine-readable findings (`schema: z_crystal_dna_drift_report_v1`) |
-| `data/reports/z_crystal_dna_drift_report.md`   | Human-readable summary                                              |
+| `data/reports/z_crystal_dna_drift_report.md` | Human-readable summary |
 
 Regenerate after manifest or indicator changes:
 

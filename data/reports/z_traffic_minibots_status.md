@@ -1,6 +1,6 @@
 # Z-Traffic Minibots — status report
 
-**Generated:** 2026-05-11T20:18:34.649Z
+**Generated:** 2026-05-12T15:40:44.877Z
 
 ## Traffic Chief
 
@@ -24,13 +24,13 @@ Pick one domain; document rollback; run this report again after edits.
 
 | MiniBot | Command | Status | Signal | Duration (ms) |
 |----|----|----|----|----:|
-| Markdown Traffic Bot | `npm run verify:md` | pass | GREEN | 4367 |
-| CAR² Traffic Bot | `npm run z:car2` | pass | GREEN | 3211 |
-| Dashboard Traffic Bot | `npm run dashboard:registry-verify` | pass | GREEN | 544 |
-| Cross-Project Bot | `npm run z:cross-project:sync` | pass | GREEN | 546 |
-| Z-AWARE-1 Ecosystem Awareness Bot | `npm run z:ecosystem:awareness` | pass | GREEN | 419 |
-| Z-API-SPINE-1 Power Cell Bot | `npm run z:api:spine` | pass | GREEN | 454 |
-| Z-SSWS-LINK-1 Launch Requirements Bot | `npm run z:ssws:requirements` | pass | GREEN | 477 |
+| Markdown Traffic Bot | `npm run verify:md` | pass | GREEN | 3599 |
+| CAR² Traffic Bot | `npm run z:car2` | pass | GREEN | 3006 |
+| Dashboard Traffic Bot | `npm run dashboard:registry-verify` | pass | GREEN | 433 |
+| Cross-Project Bot | `npm run z:cross-project:sync` | pass | GREEN | 535 |
+| Z-AWARE-1 Ecosystem Awareness Bot | `npm run z:ecosystem:awareness` | pass | GREEN | 399 |
+| Z-API-SPINE-1 Power Cell Bot | `npm run z:api:spine` | pass | GREEN | 410 |
+| Z-SSWS-LINK-1 Launch Requirements Bot | `npm run z:ssws:requirements` | pass | GREEN | 446 |
 | DRP Gate Bot | `(next-lane hint analysis — read-only)` | advisory | GREEN | 0 |
 | AI Builder Bot | `npm run z:ai-builder:refresh` | skipped | skipped | 0 |
 

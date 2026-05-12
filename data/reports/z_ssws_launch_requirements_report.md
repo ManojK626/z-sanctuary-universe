@@ -1,6 +1,6 @@
 # Z-SSWS-LINK-1 — Launch requirements report
 
-- Generated: 2026-05-11T20:18:44.632Z
+- Generated: 2026-05-12T15:40:53.671Z
 - Overall signal: **BLUE**
 - Registry: `data/z_ssws_workspace_spine_registry.json`
 - Policy: `data/z_ssws_launch_requirements_policy.json`
