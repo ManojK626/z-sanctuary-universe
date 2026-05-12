@@ -63,6 +63,7 @@ vault/personal/
 lab-outputs/
 data/reports/*.json
 !data/reports/z_crystal_dna_drift_report.json
+!data/reports/z_anydevice_simulation_report.json
 
 # Logs
 logs

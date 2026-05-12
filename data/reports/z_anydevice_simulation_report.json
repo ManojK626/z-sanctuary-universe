@@ -1,0 +1,250 @@
+{
+  "schema": "z_anydevice_simulation_report_v1",
+  "phase": "Z-ANYDEVICE-2",
+  "generated_at": "2026-05-12T15:57:16.885Z",
+  "law": "Synthetic simulation only. No real device scanning, no antivirus claims, no network probing, no drivers, no secrets, no Cloudflare production changes, no NAS writes.",
+  "inputs": {
+    "synthetic": "data/z_anydevice_synthetic_devices.json",
+    "capsule": "data/z_anydevice_ai_capsule_registry.json"
+  },
+  "rules_applied": {
+    "RED_QUARANTINE": "block — simulation_blocked true",
+    "NAS_WAIT": "hold until mounted and verified",
+    "BLUE": "AMK governance decision",
+    "GREEN": "allowed for declared ecosystem_role only (read-only doctrine)",
+    "YELLOW": "human review required before expansion"
+  },
+  "casa_ai_builder": {
+    "may": [
+      "read_simulation_report",
+      "suggest_safe_checklists",
+      "suggest_docs_prompts_only"
+    ],
+    "must_not": [
+      "device_authority"
+    ]
+  },
+  "cloudflare_ai": {
+    "may": [
+      "review_preview_runtime_posture_in_governance_docs_only"
+    ],
+    "must_not": [
+      "device_authority",
+      "secrets",
+      "production_deploy"
+    ]
+  },
+  "warnings": [],
+  "simulations": [
+    {
+      "device_id": "ssws_prime_node",
+      "inputs": {
+        "device_type": "laptop",
+        "os": "declared: desktop OS (synthetic)",
+        "cpu": "declared: mid-tier",
+        "gpu": "integrated",
+        "ram": "32GB",
+        "storage": "declared: SSD",
+        "network_capability": "local_only",
+        "scenario_note": "Primary SSWS-aligned cockpit; read-only dashboards and tasks only."
+      },
+      "ecosystem_role": "z_ssws_cockpit_node",
+      "trusted_status": "GREEN",
+      "risk_signal": "GREEN",
+      "recommended_action": "ALLOWED: GREEN — use only within declared ecosystem_role and read-only hub doctrine; do not exceed charter.",
+      "forbidden_actions": [
+        "connect_automatically",
+        "scan_private_files",
+        "run_antivirus_claims",
+        "install_drivers",
+        "open_ports",
+        "write_secrets",
+        "bind_cloudflare",
+        "deploy",
+        "mutate_NAS"
+      ],
+      "required_human_gate": "none_for_declared_read_only_role",
+      "simulation_blocked": false
+    },
+    {
+      "device_id": "z_lab_background_node",
+      "inputs": {
+        "device_type": "desktop",
+        "os": "declared: desktop OS (synthetic)",
+        "cpu": "declared: high-tier",
+        "gpu": "discrete",
+        "ram": "64GB",
+        "storage": "declared: NVMe",
+        "network_capability": "local_only",
+        "scenario_note": "Z-Lab supervised workload; review before export or cross-repo hints."
+      },
+      "ecosystem_role": "z_lab_supervised_analysis_node",
+      "trusted_status": "YELLOW",
+      "risk_signal": "YELLOW",
+      "recommended_action": "REVIEW_REQUIRED: YELLOW — human review before role expansion, exports, or new integration surfaces.",
+      "forbidden_actions": [
+        "connect_automatically",
+        "scan_private_files",
+        "run_antivirus_claims",
+        "install_drivers",
+        "open_ports",
+        "write_secrets",
+        "bind_cloudflare",
+        "deploy",
+        "mutate_NAS"
+      ],
+      "required_human_gate": "human_review_before_expansion",
+      "simulation_blocked": false
+    },
+    {
+      "device_id": "cloudflare_preview_edge",
+      "inputs": {
+        "device_type": "SBC",
+        "os": "declared: minimal edge OS (synthetic)",
+        "cpu": "declared: low-power",
+        "gpu": "",
+        "ram": "8GB",
+        "storage": "declared: eMMC",
+        "network_capability": "internet_optional",
+        "scenario_note": "Preview/runtime posture narrative only; no production Workers bind from simulation."
+      },
+      "ecosystem_role": "cloudflare_preview_controller",
+      "trusted_status": "BLUE",
+      "risk_signal": "BLUE",
+      "recommended_action": "AMK_DECISION: BLUE — governance sequencing; preview/docs posture only until AMK-Goku clears expansion.",
+      "forbidden_actions": [
+        "connect_automatically",
+        "scan_private_files",
+        "run_antivirus_claims",
+        "install_drivers",
+        "open_ports",
+        "write_secrets",
+        "bind_cloudflare",
+        "deploy",
+        "mutate_NAS"
+      ],
+      "required_human_gate": "amk_governance_decision",
+      "simulation_blocked": false
+    },
+    {
+      "device_id": "nas_cold_mirror_candidate",
+      "inputs": {
+        "device_type": "NAS",
+        "os": "declared: appliance OS (synthetic)",
+        "cpu": "",
+        "gpu": "",
+        "ram": "",
+        "storage": "declared: multi-bay (synthetic)",
+        "network_capability": "local_only",
+        "scenario_note": "Cold-mirror path not operator-verified; hold NAS-class actions until mount + verify gate."
+      },
+      "ecosystem_role": "nas_cold_mirror_candidate",
+      "trusted_status": "NAS_WAIT",
+      "risk_signal": "YELLOW",
+      "recommended_action": "HOLD: NAS_WAIT — mount and operator-verify before any NAS or cold-mirror class action; no NAS writes from simulation.",
+      "forbidden_actions": [
+        "connect_automatically",
+        "scan_private_files",
+        "run_antivirus_claims",
+        "install_drivers",
+        "open_ports",
+        "write_secrets",
+        "bind_cloudflare",
+        "deploy",
+        "mutate_NAS"
+      ],
+      "required_human_gate": "mount_and_operator_verify_nas",
+      "simulation_blocked": false
+    },
+    {
+      "device_id": "unknown_usb_device",
+      "inputs": {
+        "device_type": "unknown",
+        "os": "",
+        "cpu": "",
+        "gpu": "",
+        "ram": "",
+        "storage": "",
+        "network_capability": "offline",
+        "scenario_note": "Unclassified attach; block sensitive workflows; no auto-connect authority."
+      },
+      "ecosystem_role": "quarantine_unknown_device",
+      "trusted_status": "QUARANTINE",
+      "risk_signal": "RED",
+      "recommended_action": "BLOCK: RED or QUARANTINE — no sensitive hub workflows; no auto-connect; treat as untrusted until reclassified.",
+      "forbidden_actions": [
+        "connect_automatically",
+        "scan_private_files",
+        "run_antivirus_claims",
+        "install_drivers",
+        "open_ports",
+        "write_secrets",
+        "bind_cloudflare",
+        "deploy",
+        "mutate_NAS"
+      ],
+      "required_human_gate": "remediation_or_disposal_amk",
+      "simulation_blocked": true
+    },
+    {
+      "device_id": "dashboard_display_node",
+      "inputs": {
+        "device_type": "tablet",
+        "os": "declared: mobile OS (synthetic)",
+        "cpu": "",
+        "gpu": "",
+        "ram": "8GB",
+        "storage": "declared: flash",
+        "network_capability": "local_only",
+        "scenario_note": "HODP-style read-only display; GET static/JSON only unless separately chartered."
+      },
+      "ecosystem_role": "dashboard_display_node",
+      "trusted_status": "GREEN",
+      "risk_signal": "GREEN",
+      "recommended_action": "ALLOWED: GREEN — use only within declared ecosystem_role and read-only hub doctrine; do not exceed charter.",
+      "forbidden_actions": [
+        "connect_automatically",
+        "scan_private_files",
+        "run_antivirus_claims",
+        "install_drivers",
+        "open_ports",
+        "write_secrets",
+        "bind_cloudflare",
+        "deploy",
+        "mutate_NAS"
+      ],
+      "required_human_gate": "none_for_declared_read_only_role",
+      "simulation_blocked": false
+    },
+    {
+      "device_id": "local_ai_inference_node",
+      "inputs": {
+        "device_type": "laptop",
+        "os": "declared: desktop OS (synthetic)",
+        "cpu": "declared: AI-class",
+        "gpu": "discrete",
+        "ram": "64GB",
+        "storage": "declared: SSD",
+        "network_capability": "internet_optional",
+        "scenario_note": "Local inference context; Casa may suggest prompts/checklists only — no device authority."
+      },
+      "ecosystem_role": "local_ai_inference_node",
+      "trusted_status": "YELLOW",
+      "risk_signal": "YELLOW",
+      "recommended_action": "REVIEW_REQUIRED: YELLOW — human review before role expansion, exports, or new integration surfaces.",
+      "forbidden_actions": [
+        "connect_automatically",
+        "scan_private_files",
+        "run_antivirus_claims",
+        "install_drivers",
+        "open_ports",
+        "write_secrets",
+        "bind_cloudflare",
+        "deploy",
+        "mutate_NAS"
+      ],
+      "required_human_gate": "human_review_before_expansion",
+      "simulation_blocked": false
+    }
+  ]
+}
