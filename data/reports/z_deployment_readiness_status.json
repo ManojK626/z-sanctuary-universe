@@ -1,7 +1,7 @@
 {
   "schema": "z_deployment_readiness_status_v1",
   "phase": "Z-DEPLOYMENT-READINESS-OVERSEER-1",
-  "generated_at": "2026-05-12T19:18:32.212Z",
+  "generated_at": "2026-05-12T19:20:42.196Z",
   "law": "Read-only evaluation from hub registries and committed report JSON only. No deploy, no external mutation, no arbitrary disk walks, no secrets, no auto-fix. Percentages and deployment_status are advisory posture — not certification. Production-ready band (96–100) still requires explicit human / legal / security gates.",
   "global_readiness": {
     "ecosystem_signal": "BLUE",
@@ -9,8 +9,8 @@
       "present": true,
       "overall_observer_signal": "BLUE",
       "task_queue_length": 11,
-      "generated_at": "2026-05-12T19:15:20.267Z",
-      "age_hours": 0.1
+      "generated_at": "2026-05-12T19:18:32.545Z",
+      "age_hours": 0
     },
     "pc_activation_receipt": {
       "present": true,
@@ -41,7 +41,7 @@
         "passed": 13,
         "failed": 0
       },
-      "generated_at": "2026-05-12T19:18:30.402Z"
+      "generated_at": "2026-05-12T19:20:40.369Z"
     },
     "doorway": {
       "report_present": true,
@@ -64,8 +64,8 @@
     },
     "docs_readiness": {
       "phase_green_receipt_count": 72,
-      "newest_phase_receipt_iso": "2026-05-12T19:15:06.993Z",
-      "ai_builder_context_mtime": "2026-05-12T19:15:06.963Z"
+      "newest_phase_receipt_iso": "2026-05-12T19:20:29.457Z",
+      "ai_builder_context_mtime": "2026-05-12T19:20:29.454Z"
     },
     "ai_builder_awareness": {
       "doc_path": "docs/AI_BUILDER_CONTEXT.md",

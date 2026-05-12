@@ -1,6 +1,6 @@
 {
   "schema": "z_ssws_launch_requirements_report_v1",
-  "generated_at": "2026-05-12T19:18:31.843Z",
+  "generated_at": "2026-05-12T19:20:41.823Z",
   "overall_signal": "BLUE",
   "registry_path": "data/z_ssws_workspace_spine_registry.json",
   "policy_path": "data/z_ssws_launch_requirements_policy.json",
