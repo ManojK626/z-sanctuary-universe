@@ -1,0 +1,222 @@
+{
+  "schema": "z_anydevice_ai_capsule_registry_v1",
+  "phase": "Z-ANYDEVICE-AI-CAPSULE-1",
+  "updated_at": "2026-05-11T00:00:00Z",
+  "title": "Z Any Device Manager — AI capsule (trust classification, read-only posture)",
+  "scope_note": "Docs + metadata + read-only checks first. No real device connection, no network scanning, no antivirus replacement, no secrets, no deploy, no driver install, no NAS mutation.",
+  "law": [
+    "Detect / declare / classify / recommend / report only from declared metadata.",
+    "No automatic device connection, no LAN or host scanning, no file-system introspection beyond operator-declared fields.",
+    "No antivirus or security product claims; hub posture is governance and documentation, not endpoint protection.",
+    "No driver install, no port opening, no production Cloudflare bind, no deployment automation from this capsule.",
+    "No secrets in registry; operators redact serials and tokens before any future ingest path exists."
+  ],
+  "device_identity_fields": [
+    {
+      "name": "device_id",
+      "kind": "string",
+      "required": true,
+      "description": "Stable opaque identifier chosen by operator (not hardware serial in clear text unless policy allows)."
+    },
+    {
+      "name": "device_type",
+      "kind": "string",
+      "required": true,
+      "description": "Laptop, desktop, phone, tablet, SBC, NAS, router, unknown, etc."
+    },
+    {
+      "name": "os",
+      "kind": "string",
+      "required": false,
+      "description": "Operating system family and version label as declared by operator."
+    },
+    {
+      "name": "cpu",
+      "kind": "string",
+      "required": false,
+      "description": "CPU model or class as declared (optional coarse string)."
+    },
+    {
+      "name": "gpu",
+      "kind": "string",
+      "required": false,
+      "description": "GPU model or integrated/discrete flag as declared."
+    },
+    {
+      "name": "ram",
+      "kind": "string",
+      "required": false,
+      "description": "Approximate RAM tier (e.g. 8GB, 16GB) as declared."
+    },
+    {
+      "name": "storage",
+      "kind": "string",
+      "required": false,
+      "description": "Approximate local storage posture as declared (no volume enumeration)."
+    },
+    {
+      "name": "network_capability",
+      "kind": "string",
+      "required": false,
+      "description": "Declared capability label only: offline, local_only, internet_optional, tethered, etc. Not a live probe result."
+    },
+    {
+      "name": "trusted_status",
+      "kind": "enum",
+      "required": true,
+      "description": "Trust state from trust_states; operator-set or derived later only via approved read-only rules."
+    },
+    {
+      "name": "risk_signal",
+      "kind": "enum",
+      "required": false,
+      "description": "Optional advisory rollup aligned with trust_states or indicator-style posture (no auto-quarantine execution)."
+    },
+    {
+      "name": "ecosystem_role",
+      "kind": "enum",
+      "required": true,
+      "description": "Role from ecosystem_roles; drives safe use-case hints and doc routing, not runtime authority."
+    }
+  ],
+  "trust_states": [
+    {
+      "id": "GREEN",
+      "meaning": "Declared posture matches hub policy; safe for listed cockpit or dashboard read-only use."
+    },
+    {
+      "id": "YELLOW",
+      "meaning": "Elevated caution; human review before expanded role or new surfaces."
+    },
+    {
+      "id": "BLUE",
+      "meaning": "Sequencing or governance hold; documentation and checklist work only until cleared."
+    },
+    {
+      "id": "RED",
+      "meaning": "Do not treat as trusted for sensitive workflows; no automatic expansion of capability."
+    },
+    {
+      "id": "QUARANTINE",
+      "meaning": "Unknown or policy-conflicted device class; no assumed trust; no connect authority."
+    },
+    {
+      "id": "NAS_WAIT",
+      "meaning": "NAS-adjacent or cold-mirror path not verified; no NAS mutation from this device class in this phase."
+    }
+  ],
+  "allowed_actions": [
+    "read_declared_capability",
+    "classify_role",
+    "recommend_use",
+    "produce_report"
+  ],
+  "forbidden_actions": [
+    "connect_automatically",
+    "scan_private_files",
+    "run_antivirus_claims",
+    "install_drivers",
+    "open_ports",
+    "write_secrets",
+    "bind_cloudflare",
+    "deploy",
+    "mutate_NAS"
+  ],
+  "ecosystem_roles": [
+    {
+      "id": "z_ssws_cockpit_node",
+      "label": "Z-SSWS cockpit node",
+      "description": "Operator device used only to open SSWS-aligned dashboards, tasks, and read-only reports; no auto-bridge to production.",
+      "maps_to": ["Z-SSWS", "dashboard", "tasks"]
+    },
+    {
+      "id": "z_lab_supervised_analysis_node",
+      "label": "Z-Lab supervised analysis node",
+      "description": "Device used under Z-Lab discipline for supervised analysis, scripts, and docs; no silent cross-repo bridges.",
+      "maps_to": ["Z_Labs", "supervised_analysis", "docs"]
+    },
+    {
+      "id": "cloudflare_preview_controller",
+      "label": "Cloudflare preview controller",
+      "description": "Context for preview or edge posture review only; no device access, no secrets, no production deployment from capsule logic.",
+      "maps_to": ["Cloudflare_governance", "preview_only"]
+    },
+    {
+      "id": "nas_cold_mirror_candidate",
+      "label": "NAS cold mirror candidate",
+      "description": "Hardware posture eligible for future cold-mirror compare-only workflows; remains NAS_WAIT until mount and human verify gates.",
+      "maps_to": ["NAS", "cold_mirror", "NAS_WAIT"]
+    },
+    {
+      "id": "dashboard_display_node",
+      "label": "dashboard display node",
+      "description": "Screen/browser surface for HODP-style read-only visualization; GET JSON and static assets only unless separately chartered.",
+      "maps_to": ["Z-HODP", "read_only_UI"]
+    },
+    {
+      "id": "local_ai_inference_node",
+      "label": "local AI inference node",
+      "description": "Declared capability for local or IDE-bound inference; Casa or Cursor may suggest prompts; no device authority from registry alone.",
+      "maps_to": ["local_AI", "Casa_AI_Builder_suggestions"]
+    },
+    {
+      "id": "quarantine_unknown_device",
+      "label": "quarantine / unknown device",
+      "description": "Unclassified or revoked trust; registry may list for awareness only; no connect or expand actions.",
+      "maps_to": ["QUARANTINE", "unknown"]
+    }
+  ],
+  "casa_ai_builder_role": {
+    "may": [
+      "read this registry",
+      "suggest_safe_device_use_cases",
+      "generate_docs_prompts_checklists"
+    ],
+    "must_not": [
+      "exercise_direct_device_authority",
+      "mutate_trusted_status_without_human_gate",
+      "open_network_connections_to devices"
+    ],
+    "docs": ["docs/Z_ANYDEVICE_AI_CAPSULE.md"]
+  },
+  "cloudflare_ai_role": {
+    "may": ["review_preview_runtime_posture_in_governance_docs_only"],
+    "must_not": ["device_access", "secrets_handling", "production_deployment"],
+    "docs": ["docs/Z-CLOUDFLARE-AI-COMMS-PRECAUTIONS.md", "docs/Z_ANYDEVICE_AI_CAPSULE.md"]
+  },
+  "z_ssws_integration": {
+    "posture": "read_only_cockpit_alignment",
+    "description": "Any Device Manager is a trust-classification and capability declaration layer consumed by SSWS doctrine; SSWS does not gain new execution hooks from this JSON alone.",
+    "related_docs": ["docs/Z-SSWS-MINI-BOT-AI-TOWER-MARKDOWN-RELAY.md", "AGENTS.md"]
+  },
+  "synthetic_examples": [
+    {
+      "device_id": "example-hodp-readonly-001",
+      "device_type": "laptop",
+      "os": "declared: generic desktop OS",
+      "cpu": "declared: mid-tier",
+      "gpu": "declared: integrated",
+      "ram": "16GB",
+      "storage": "declared: SSD",
+      "network_capability": "local_only",
+      "trusted_status": "GREEN",
+      "risk_signal": "GREEN",
+      "ecosystem_role": "dashboard_display_node",
+      "note": "Synthetic row for schema illustration only."
+    },
+    {
+      "device_id": "example-unknown-tablet-002",
+      "device_type": "tablet",
+      "os": "declared: mobile OS",
+      "cpu": "",
+      "gpu": "",
+      "ram": "",
+      "storage": "",
+      "network_capability": "internet_optional",
+      "trusted_status": "QUARANTINE",
+      "risk_signal": "YELLOW",
+      "ecosystem_role": "quarantine_unknown_device",
+      "note": "Synthetic; operator must classify before role expansion."
+    }
+  ]
+}

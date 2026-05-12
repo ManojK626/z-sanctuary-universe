@@ -1,6 +1,6 @@
 # Z-API-SPINE-1 — API Power Cell report
 
-- Generated: 2026-05-12T15:40:53.230Z
+- Generated: 2026-05-12T17:09:31.849Z
 - Overall signal: **GREEN**
 - Registry: `data/z_api_spine_registry.json`
 - Policy: `data/z_api_communication_flow_policy.json`
