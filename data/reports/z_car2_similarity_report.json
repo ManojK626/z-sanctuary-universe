@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-12T18:06:36.700Z",
+  "generated_at": "2026-05-12T18:30:02.256Z",
   "mode": "z_car2_phase1_read_only",
   "principle": "SCAN → GROUP → COMPARE → SCORE → RECOMMEND (human approves before any restructure)",
   "scan": {
@@ -16,9 +16,9 @@
       ".ts",
       ".tsx"
     ],
-    "files_eligible": 3295,
-    "files_scanned": 3292,
-    "bytes_scanned": 12879944,
+    "files_eligible": 3301,
+    "files_scanned": 3298,
+    "bytes_scanned": 12906666,
     "files_skipped": 3,
     "skip_reasons": {
       "too_large": 3
@@ -26,8 +26,8 @@
     "excluded_note": "Skipped dirs: node_modules, .git, .next, dist, safe_pack, lottery exports, __pycache__, .pytest_cache. Skipped files: .vscode/*, package-lock.json, pnpm-lock.yaml, yarn.lock (IDE / lock noise)."
   },
   "summary": {
-    "files_scanned": 3292,
-    "bytes_scanned": 12879944,
+    "files_scanned": 3298,
+    "bytes_scanned": 12906666,
     "files_skipped": 3,
     "duplicate_line_groups": 120,
     "duplicate_window_groups": 100,
@@ -717,6 +717,68 @@
         }
       ],
       "recommendation": "Review manually; dedupe only after confirming meaning is identical."
+    },
+    {
+      "group_id": "line_1183661019",
+      "kind": "exact_line",
+      "occurrence_count": 10,
+      "file_count": 10,
+      "similarity_score": 100,
+      "category": "script",
+      "risk_level": "ORANGE",
+      "locations": [
+        {
+          "path": "All APPs/lottery_app_pack_latest/core/z_chronicle.js",
+          "line": 9,
+          "preview": "function load() {"
+        },
+        {
+          "path": "Amk_Goku Worldwide Loterry/core/z_chronicle.js",
+          "line": 9,
+          "preview": "function load() {"
+        },
+        {
+          "path": "Z_Sanctuary_Universe 2/Z-Sanctuary Browser/lib/settings.js",
+          "line": 35,
+          "preview": "function load() {"
+        },
+        {
+          "path": "Z_Sanctuary_Universe 2/Z-Sanctuary Browser/renderer/modules/story-ijapa-anansi.html",
+          "line": 153,
+          "preview": "function load() {"
+        },
+        {
+          "path": "core/autopilot/z_autopilot_replay.js",
+          "line": 8,
+          "preview": "function load() {"
+        },
+        {
+          "path": "core/monetization_layer.js",
+          "line": 7,
+          "preview": "function load() {"
+        },
+        {
+          "path": "core/z_chain_history.js",
+          "line": 8,
+          "preview": "function load() {"
+        },
+        {
+          "path": "core/z_chronicle.js",
+          "line": 6,
+          "preview": "function load() {"
+        },
+        {
+          "path": "core/z_pc_root_projects_panel.js",
+          "line": 78,
+          "preview": "function load() {"
+        },
+        {
+          "path": "dashboard/scripts/z-cycle-dashboard-readonly.js",
+          "line": 138,
+          "preview": "function load() {"
+        }
+      ],
+      "recommendation": "Consider a shared helper under scripts/lib/ after tests — not in Phase 1."
     },
     {
       "group_id": "line_3860078856",
@@ -7413,68 +7475,6 @@
         }
       ],
       "recommendation": "Consider a shared doc fragment or single canonical page with links — preserve legal/historical intent."
-    },
-    {
-      "group_id": "line_130553983",
-      "kind": "exact_line",
-      "occurrence_count": 10,
-      "file_count": 10,
-      "similarity_score": 100,
-      "category": "registry",
-      "risk_level": "ORANGE",
-      "locations": [
-        {
-          "path": "Amk_Goku Worldwide Loterry/data/_snapshots/20260126T184111Z/commentary/eurojackpot.20260123T214846Z.commentary.json",
-          "line": 5,
-          "preview": "\"trust_bundle\": \"trust_bundle_20260123T214846Z.json\","
-        },
-        {
-          "path": "Amk_Goku Worldwide Loterry/data/_snapshots/20260126T184111Z/commentary/euromillions.20260123T214846Z.commentary.json",
-          "line": 5,
-          "preview": "\"trust_bundle\": \"trust_bundle_20260123T214846Z.json\","
-        },
-        {
-          "path": "Amk_Goku Worldwide Loterry/data/_snapshots/20260126T184111Z/commentary/global-sevens.20260123T214846Z.commentary.json",
-          "line": 5,
-          "preview": "\"trust_bundle\": \"trust_bundle_20260123T214846Z.json\","
-        },
-        {
-          "path": "Amk_Goku Worldwide Loterry/data/_snapshots/20260126T184132Z/commentary/eurojackpot.20260123T214846Z.commentary.json",
-          "line": 5,
-          "preview": "\"trust_bundle\": \"trust_bundle_20260123T214846Z.json\","
-        },
-        {
-          "path": "Amk_Goku Worldwide Loterry/data/_snapshots/20260126T184132Z/commentary/euromillions.20260123T214846Z.commentary.json",
-          "line": 5,
-          "preview": "\"trust_bundle\": \"trust_bundle_20260123T214846Z.json\","
-        },
-        {
-          "path": "Amk_Goku Worldwide Loterry/data/_snapshots/20260126T184132Z/commentary/global-sevens.20260123T214846Z.commentary.json",
-          "line": 5,
-          "preview": "\"trust_bundle\": \"trust_bundle_20260123T214846Z.json\","
-        },
-        {
-          "path": "Amk_Goku Worldwide Loterry/data/_snapshots/20260126T184152Z/commentary/eurojackpot.20260123T214846Z.commentary.json",
-          "line": 5,
-          "preview": "\"trust_bundle\": \"trust_bundle_20260123T214846Z.json\","
-        },
-        {
-          "path": "Amk_Goku Worldwide Loterry/data/_snapshots/20260126T184152Z/commentary/euromillions.20260123T214846Z.commentary.json",
-          "line": 5,
-          "preview": "\"trust_bundle\": \"trust_bundle_20260123T214846Z.json\","
-        },
-        {
-          "path": "Amk_Goku Worldwide Loterry/data/_snapshots/20260126T184152Z/commentary/global-sevens.20260123T214846Z.commentary.json",
-          "line": 5,
-          "preview": "\"trust_bundle\": \"trust_bundle_20260123T214846Z.json\","
-        },
-        {
-          "path": "Amk_Goku Worldwide Loterry/data/_snapshots/20260129T165827Z/commentary/eurojackpot.20260123T214846Z.commentary.json",
-          "line": 5,
-          "preview": "\"trust_bundle\": \"trust_bundle_20260123T214846Z.json\","
-        }
-      ],
-      "recommendation": "Review manually; dedupe only after confirming meaning is identical."
     }
   ],
   "duplicate_window_groups": [

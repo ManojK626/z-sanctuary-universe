@@ -19,12 +19,12 @@ It **MAY**:
 
 ## Artifacts
 
-| Artifact                                           | Role                                                                                         |
+| Artifact | Role |
 | -------------------------------------------------- | -------------------------------------------------------------------------------------------- |
 | `dashboard/panels/z-cycle-dashboard-readonly.html` | Standalone read-only panel (open via local HTTP server or file protocol where fetches work). |
-| `dashboard/scripts/z-cycle-dashboard-readonly.js`  | **GET** JSON only: `z_cycle_observe_status.json` plus optional direct reads for receipts.    |
-| `dashboard/styles/z-cycle-dashboard-readonly.css`  | Presentation only.                                                                           |
-| `data/z_cycle_dashboard_manifest.json`             | Machine pointer to panel paths and law summary (`z_cycle_dashboard_manifest_v1`).            |
+| `dashboard/scripts/z-cycle-dashboard-readonly.js` | **GET** JSON only: `z_cycle_observe_status.json` plus optional direct reads for receipts. |
+| `dashboard/styles/z-cycle-dashboard-readonly.css` | Presentation only. |
+| `data/z_cycle_dashboard_manifest.json` | Machine pointer to panel paths and law summary (`z_cycle_dashboard_manifest_v1`). |
 
 ## Data flow
 
@@ -40,8 +40,8 @@ Use **`cursor/zsanctuary/…`** branches for real changes; one domain per PR. Th
 
 ## Related
 
-| Doc                                                                                      | Role                                                 |
+| Doc | Role |
 | ---------------------------------------------------------------------------------------- | ---------------------------------------------------- |
-| [Z_CYCLE_OBSERVE_SYSTEM.md](Z_CYCLE_OBSERVE_SYSTEM.md)                                   | Observation tower and safe task queue source.        |
-| [PHASE_Z_CYCLE_DASHBOARD_1_GREEN_RECEIPT.md](PHASE_Z_CYCLE_DASHBOARD_1_GREEN_RECEIPT.md) | Phase receipt.                                       |
-| [AI_BUILDER_CONTEXT.md](AI_BUILDER_CONTEXT.md)                                           | AI Builder briefing (includes sealed systems table). |
+| [Z_CYCLE_OBSERVE_SYSTEM.md](Z_CYCLE_OBSERVE_SYSTEM.md) | Observation tower and safe task queue source. |
+| [PHASE_Z_CYCLE_DASHBOARD_1_GREEN_RECEIPT.md](PHASE_Z_CYCLE_DASHBOARD_1_GREEN_RECEIPT.md) | Phase receipt. |
+| [AI_BUILDER_CONTEXT.md](AI_BUILDER_CONTEXT.md) | AI Builder briefing (includes sealed systems table). |

@@ -1,13 +1,13 @@
 # Z-CAR² similarity report (Phase 1 — read-only)
 
-Generated: 2026-05-12T18:06:36.700Z
+Generated: 2026-05-12T18:30:02.256Z
 
 ## Summary
 
 | Metric | Value |
 | --- | ---: |
-| Files scanned | 3292 |
-| Bytes scanned | 12879944 |
+| Files scanned | 3298 |
+| Bytes scanned | 12906666 |
 | Files skipped | 3 |
 | Duplicate line groups (capped) | 120 |
 | Duplicate window groups (capped) | 100 |
@@ -42,6 +42,7 @@ Generated: 2026-05-12T18:06:36.700Z
 | line_4053077371 | 10 | YELLOW | unknown | background: rgba(255, 255, 255, 0.06);… |
 | line_2410436178 | 10 | ORANGE | script | if (!el) return;… |
 | line_355683639 | 10 | YELLOW | unknown | const reasons = [];… |
+| line_1183661019 | 10 | ORANGE | script | function load() {… |
 | line_3860078856 | 10 | YELLOW | unknown | <html lang="en">… |
 | line_3542070688 | 10 | YELLOW | unknown | <meta charset="utf-8" />… |
 | line_262487116 | 10 | YELLOW | unknown | <meta name="viewport" content="width=device-width, initial-scale=1" />… |
@@ -55,7 +56,6 @@ Generated: 2026-05-12T18:06:36.700Z
 | line_3374912951 | 10 | YELLOW | unknown | font-size: 22px;… |
 | line_4053079545 | 10 | YELLOW | unknown | background: rgba(255, 255, 255, 0.04);… |
 | line_3562108854 | 10 | YELLOW | unknown | border-radius: 12px;… |
-| line_1081585051 | 10 | YELLOW | unknown | src="./z_bootstrap.js"… |
 
 ## Sample duplicate window groups
 

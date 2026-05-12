@@ -6,14 +6,14 @@
 
 ## Deliverables
 
-| Artifact                                           | Status |
+| Artifact | Status |
 | -------------------------------------------------- | ------ |
-| `docs/Z_CYCLE_DASHBOARD_SYSTEM.md`                 | Added  |
-| `docs/PHASE_Z_CYCLE_DASHBOARD_1_GREEN_RECEIPT.md`  | Added  |
-| `data/z_cycle_dashboard_manifest.json`             | Added  |
-| `dashboard/panels/z-cycle-dashboard-readonly.html` | Added  |
-| `dashboard/scripts/z-cycle-dashboard-readonly.js`  | Added  |
-| `dashboard/styles/z-cycle-dashboard-readonly.css`  | Added  |
+| `docs/Z_CYCLE_DASHBOARD_SYSTEM.md` | Added |
+| `docs/PHASE_Z_CYCLE_DASHBOARD_1_GREEN_RECEIPT.md` | Added |
+| `data/z_cycle_dashboard_manifest.json` | Added |
+| `dashboard/panels/z-cycle-dashboard-readonly.html` | Added |
+| `dashboard/scripts/z-cycle-dashboard-readonly.js` | Added |
+| `dashboard/styles/z-cycle-dashboard-readonly.css` | Added |
 
 ## Law confirmation
 
