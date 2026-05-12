@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-12T17:51:42.648Z",
+  "generated_at": "2026-05-12T17:58:13.481Z",
   "mode": "z_car2_phase1_read_only",
   "principle": "SCAN → GROUP → COMPARE → SCORE → RECOMMEND (human approves before any restructure)",
   "scan": {
@@ -18,7 +18,7 @@
     ],
     "files_eligible": 3294,
     "files_scanned": 3291,
-    "bytes_scanned": 12872255,
+    "bytes_scanned": 12879667,
     "files_skipped": 3,
     "skip_reasons": {
       "too_large": 3
@@ -27,7 +27,7 @@
   },
   "summary": {
     "files_scanned": 3291,
-    "bytes_scanned": 12872255,
+    "bytes_scanned": 12879667,
     "files_skipped": 3,
     "duplicate_line_groups": 120,
     "duplicate_window_groups": 100,
