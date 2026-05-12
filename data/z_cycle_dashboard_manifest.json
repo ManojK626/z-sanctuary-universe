@@ -14,10 +14,11 @@
     "../../data/reports/z_traffic_minibots_status.json",
     "../../data/reports/z_crystal_dna_drift_report.json",
     "../../data/reports/z_anydevice_simulation_report.json",
-    "../../data/reports/z_car2_similarity_report.json"
+    "../../data/reports/z_deployment_readiness_status.json"
   ],
   "operator_commands_read_only_refresh": [
     "npm run z:cycle:observe",
+    "npm run z:deployment:readiness",
     "npm run verify:md",
     "npm run z:traffic"
   ],

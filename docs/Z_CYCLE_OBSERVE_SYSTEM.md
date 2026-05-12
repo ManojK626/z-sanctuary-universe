@@ -25,6 +25,8 @@
 npm run z:cycle:observe
 ```
 
+**Companion read-only rollup:** `npm run z:deployment:readiness` — writes only `z_deployment_readiness_status.{json,md}` (separate overseer); see [Z_DEPLOYMENT_READINESS_OVERSEER.md](Z_DEPLOYMENT_READINESS_OVERSEER.md).
+
 ## Inputs (read-only)
 
 | Input | Use in observer |
@@ -69,8 +71,9 @@ Missing optional reports produce **warnings** in JSON and do not crash the obser
 ## Related
 
 | Doc | Role |
-| ------------------------------------------------------------------------------------ | ----------------------------------------------------------------- |
+| ------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------ |
 | [Z_ECOSYSTEM_GROWTH_STATUS.md](Z_ECOSYSTEM_GROWTH_STATUS.md) | Sealed growth stages and comms posture. |
 | [Z_CYCLE_DASHBOARD_SYSTEM.md](Z_CYCLE_DASHBOARD_SYSTEM.md) | Z-CYCLE-DASHBOARD-1 read-only nervous system dashboard (UI only). |
 | [AI_BUILDER_CONTEXT.md](AI_BUILDER_CONTEXT.md) | Primary AI Builder briefing. |
 | [PHASE_Z_CYCLE_OBSERVE_1_GREEN_RECEIPT.md](PHASE_Z_CYCLE_OBSERVE_1_GREEN_RECEIPT.md) | Phase receipt. |
+| [Z_DEPLOYMENT_READINESS_OVERSEER.md](Z_DEPLOYMENT_READINESS_OVERSEER.md) | Z-DEPLOYMENT-READINESS-OVERSEER-1 deployment posture rollup (read-only; separate reports). |

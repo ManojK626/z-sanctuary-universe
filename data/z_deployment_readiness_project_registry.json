@@ -1,0 +1,34 @@
+{
+  "schema": "z_deployment_readiness_project_registry_v1",
+  "phase": "Z-DEPLOYMENT-READINESS-OVERSEER-1",
+  "source_pc_projects": "data/z_pc_root_projects.json",
+  "default_owner_overseer": "Z-EAII roster / Z-Super Overseer (hub governance truth)",
+  "default_required_human_gate": "AMK-Goku for merge, deploy, NAS-class moves, billing, and production edge bind",
+  "overrides": {
+    "zsanctuary-universe": {
+      "owner_overseer": "Z-Super Overseer AI (Z-EAII + Z-HODP roof)",
+      "related_docs": [
+        "docs/Z-HIERARCHY-CHIEF-AND-OBSERVER-VIEW.md",
+        "docs/Z_SANCTUARY_CANONICAL_CONTROL_ROOT.md",
+        "docs/Z_DEPLOYMENT_READINESS_OVERSEER.md"
+      ]
+    },
+    "amk-goku-vaults": {
+      "owner_overseer": "Folder Manager AI / vault policy (read posture)",
+      "related_docs": ["docs/vault/Vault_Access_Map.md", "docs/Z_DEPLOYMENT_READINESS_OVERSEER.md"]
+    },
+    "pc-root-extras-and-tools": {
+      "owner_overseer": "PC-root hygiene (not an app overseer)",
+      "related_docs": ["docs/Z-PC-ROOT-EXTRAS-AND-TOOLS-SINK.md"]
+    },
+    "replit-roulette-z-amk-goku-mdcp": {
+      "owner_overseer": "External Replit lane (link-only until chartered hub bridge)",
+      "related_docs": ["docs/Z_DEPLOYMENT_READINESS_OVERSEER.md"]
+    }
+  },
+  "hub_module_doc_anchor": "docs/Z-MASTER-MODULES-REGISTER.md",
+  "notes": [
+    "Rows are merged at runtime with z_pc_root_projects.json — do not list unknown disk paths here.",
+    "NAS_WAIT or disabled satellites in the control-link manifest reduce ecosystem confidence; they do not authorize repair."
+  ]
+}

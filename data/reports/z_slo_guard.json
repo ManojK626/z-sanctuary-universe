@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-11T18:41:18.275Z",
+  "generated_at": "2026-05-12T19:00:08.899Z",
   "status": "hold",
   "policy_version": "0.1",
   "workspace": "CORE",
@@ -19,7 +19,7 @@
       "expected_status": "green",
       "actual_status": "green",
       "generated_at": "2026-03-18T19:44:16.055Z",
-      "age_minutes": 77697,
+      "age_minutes": 79156,
       "max_age_minutes": 2,
       "note": "stale",
       "profile_name": "CORE"
@@ -33,7 +33,7 @@
       "expected_status": "green",
       "actual_status": "green",
       "generated_at": "2026-03-18T19:44:17.140Z",
-      "age_minutes": 77697,
+      "age_minutes": 79156,
       "max_age_minutes": 5,
       "note": "stale",
       "profile_name": "CORE"
@@ -47,7 +47,7 @@
       "expected_status": "green",
       "actual_status": "hold",
       "generated_at": "2026-05-02T18:16:32.941Z",
-      "age_minutes": 12985,
+      "age_minutes": 14444,
       "max_age_minutes": 240,
       "note": "status_mismatch",
       "profile_name": "CORE"

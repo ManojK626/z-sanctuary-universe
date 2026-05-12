@@ -1,7 +1,7 @@
 {
   "schema": "z_cycle_observe_status_v1",
   "phase": "Z-CYCLE-OBSERVE-1",
-  "generated_at": "2026-05-12T18:30:04.805Z",
+  "generated_at": "2026-05-12T19:15:20.267Z",
   "law": "Observation tower only. Suggests and classifies; does not execute the task queue.",
   "inputs_ok": {
     "package_json": true,
@@ -158,6 +158,20 @@
       ]
     },
     {
+      "id": "z_pc_activation_awareness_1",
+      "phase_label": "Z-PC-ACTIVATION-AWARENESS-1",
+      "role": "Manual-only operator activation receipt after hub/PowerShell work — git + phase markers + on-disk report signals; writes only z_pc_activation_receipt.{json,md}; no watcher; receipt is not execute permission.",
+      "docs": [
+        "docs/Z_PC_ACTIVATION_AWARENESS.md",
+        "docs/PHASE_Z_PC_ACTIVATION_AWARENESS_1_GREEN_RECEIPT.md"
+      ],
+      "scripts_note": "npm run z:pc:activation",
+      "data": [
+        "data/z_pc_activation_awareness_policy.json",
+        "data/reports/z_pc_activation_receipt.json"
+      ]
+    },
+    {
       "id": "cloudflare_governance",
       "phase_label": "Cloudflare governance",
       "role": "Preview and runtime posture review in documentation only; production HOLD — hub remains authority.",
@@ -194,12 +208,13 @@
     "z:control-links:dry",
     "z:crystal:dna:drift",
     "z:cycle:observe",
+    "z:deployment:readiness",
     "z:doorway:status",
     "z:garage:full-scan",
     "z:traffic"
   ],
-  "active_verify_scripts_count": 20,
-  "npm_script_total": 342,
+  "active_verify_scripts_count": 21,
+  "npm_script_total": 343,
   "latest_report_signals": {
     "z_traffic_minibots_status": {
       "overall_signal": null,
@@ -253,7 +268,8 @@
       "doorway_control_and_telemetry_receipts",
       "cloudflare_preview_posture_and_github_truth",
       "cycle_observe_safe_task_queue",
-      "read_only_dashboard_ui"
+      "read_only_dashboard_ui",
+      "pc_activation_receipt_after_operator_sessions"
     ],
     "risk_to_avoid": "Too much automation before observability stabilizes.",
     "recommended_next_lanes": [

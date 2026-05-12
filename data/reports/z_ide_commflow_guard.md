@@ -1,9 +1,9 @@
 # Z IDE Comm-Flow Guard
 
-Generated: 2026-05-11T18:41:13.106Z
+Generated: 2026-05-12T18:59:35.678Z
 Status: **WATCH**
 Files scanned: 4000
-Mismatches: 1160
+Mismatches: 1096
 
 ## Settings Checks
 - [x] task_allow_automatic_tasks_on: task.allowAutomaticTasks=on

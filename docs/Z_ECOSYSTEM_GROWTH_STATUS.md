@@ -1,13 +1,13 @@
 # Z-Sanctuary ecosystem growth status
 
-**Phase spines:** Z-AI-BUILDER-AWARENESS-2 (growth catalog), **Z-CURSOR-AWARENESS-3** (Cycle Observe sealed in Cursor / overseer rules), and **Z-CYCLE-DASHBOARD-1** (read-only ecosystem nervous system UI — not a control plane).
+**Phase spines:** Z-AI-BUILDER-AWARENESS-2 (growth catalog), **Z-CURSOR-AWARENESS-3** (Cycle Observe sealed in Cursor / overseer rules), **Z-CYCLE-DASHBOARD-1** (read-only ecosystem nervous system UI — not a control plane), and **Z-DEPLOYMENT-READINESS-OVERSEER-1** (read-only deployment posture rollup — not deploy authority).
 
 **Machine roster:** `data/z_ecosystem_growth_stage_registry.json` (`z_ecosystem_growth_stage_registry_v1`).
 
 ## Sealed systems (latest)
 
 | Seal | Role in one line |
-| ---------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| ------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
 | **Z-SSWS IDE** | Main **operator cockpit** — hub-aligned doctrine, tasks, and workspace spine; not silent full-system auto-launch. |
 | **Z-CONTROL-LINK-1** | **Canonical hub + thin satellite bridge** — `docs/Z_SANCTUARY_CONTROL_LINK.md` per approved satellite; `npm run z:control-links:dry` default. |
 | **Z-DOORWAY-2** | **Governed workspace opener** — `data/z_doorway_workspace_registry.json`, explicit human-run helpers; see [AMK_PROJECT_DOORWAY_LAUNCHER.md](AMK_PROJECT_DOORWAY_LAUNCHER.md). |
@@ -19,6 +19,7 @@
 | **Z-ANYDEVICE-2** | **Synthetic device simulation** — [Z_ANYDEVICE_SYNTHETIC_SIMULATION.md](Z_ANYDEVICE_SYNTHETIC_SIMULATION.md), `npm run z:anydevice:simulate`. |
 | **Z-CYCLE-OBSERVE-1** | **Observation tower + safe task queue** — [Z_CYCLE_OBSERVE_SYSTEM.md](Z_CYCLE_OBSERVE_SYSTEM.md), `npm run z:cycle:observe`; queue is **suggest-only** until AMK/human picks a branch. |
 | **Z-CYCLE-DASHBOARD-1** | **Read-only nervous system UI** — [Z_CYCLE_DASHBOARD_SYSTEM.md](Z_CYCLE_DASHBOARD_SYSTEM.md), `dashboard/panels/z-cycle-dashboard-readonly.html`; GET JSON only — **not** a control plane. |
+| **Z-DEPLOYMENT-READINESS-OVERSEER-1** | **Deployment readiness overseer (read-only)** — [Z_DEPLOYMENT_READINESS_OVERSEER.md](Z_DEPLOYMENT_READINESS_OVERSEER.md), `npm run z:deployment:readiness`; rollup JSON/MD from registries + receipts — **not** deploy or merge authority. |
 | **Cloudflare governance** | **Preview / runtime posture only**; **production HOLD** — [Z-CLOUDFLARE-AI-COMMS-PRECAUTIONS.md](Z-CLOUDFLARE-AI-COMMS-PRECAUTIONS.md), [AGENTS.md](../AGENTS.md). |
 | **Casa AI Builder** | **Suggest docs / prompts / checklists only** — no device, deploy, or secret authority; see AnyDevice capsule and simulation docs. |
 
@@ -55,6 +56,8 @@
 ## Verify hooks (awareness receipts)
 
 ```bash
+npm run z:deployment:readiness
+npm run z:pc:activation
 npm run z:cycle:observe
 npm run verify:md
 npm run z:anydevice:simulate
@@ -66,10 +69,12 @@ npm run z:car2
 ## Related
 
 | Doc | Role |
-| -------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------- |
+| -------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------- |
 | [Z_CYCLE_OBSERVE_SYSTEM.md](Z_CYCLE_OBSERVE_SYSTEM.md) | Z-CYCLE-OBSERVE-1 observation tower + safe task queue (read-only). |
 | [Z_CYCLE_DASHBOARD_SYSTEM.md](Z_CYCLE_DASHBOARD_SYSTEM.md) | Z-CYCLE-DASHBOARD-1 read-only ecosystem nervous system dashboard (UI). |
 | [AI_BUILDER_CONTEXT.md](AI_BUILDER_CONTEXT.md) | Primary Cursor / AI Builder briefing (includes this phase block). |
 | [PHASE_Z_AI_BUILDER_AWARENESS_2_GREEN_RECEIPT.md](PHASE_Z_AI_BUILDER_AWARENESS_2_GREEN_RECEIPT.md) | Seal receipt for this awareness pass. |
 | [PHASE_Z_CURSOR_AWARENESS_3_GREEN_RECEIPT.md](PHASE_Z_CURSOR_AWARENESS_3_GREEN_RECEIPT.md) | Z-CURSOR-AWARENESS-3 — Cycle Observe in Cursor / overseer doctrine. |
 | [PHASE_Z_CYCLE_DASHBOARD_1_GREEN_RECEIPT.md](PHASE_Z_CYCLE_DASHBOARD_1_GREEN_RECEIPT.md) | Z-CYCLE-DASHBOARD-1 dashboard UI seal receipt. |
+| [Z_DEPLOYMENT_READINESS_OVERSEER.md](Z_DEPLOYMENT_READINESS_OVERSEER.md) | Z-DEPLOYMENT-READINESS-OVERSEER-1 read-only deployment posture rollup. |
+| [PHASE_Z_DEPLOYMENT_READINESS_OVERSEER_1_GREEN_RECEIPT.md](PHASE_Z_DEPLOYMENT_READINESS_OVERSEER_1_GREEN_RECEIPT.md) | Phase receipt for deployment readiness overseer. |

@@ -1,5 +1,5 @@
 ---
-description: Z-CONTROL-LINK-1 — canonical hub control root, satellite bridge files only, manifest-bound sync; Z-CYCLE-OBSERVE-1 — observation tower and safe task queue (read-only, no queue execution); Z-CYCLE-DASHBOARD-1 — read-only dashboard UI (GET JSON only, not a control plane); default dry-run; no arbitrary scans or sacred moves from these lanes.
+description: Z-CONTROL-LINK-1 — canonical hub control root, satellite bridge files only, manifest-bound sync; Z-CYCLE-OBSERVE-1 — observation tower and safe task queue (read-only, no queue execution); Z-CYCLE-DASHBOARD-1 — read-only dashboard UI (GET JSON only, not a control plane); Z-PC-ACTIVATION-AWARENESS-1 — manual PC activation receipt (check data/reports/z_pc_activation_receipt.md/json when starting work; suggest Turtle branch only; not execute permission); Z-DEPLOYMENT-READINESS-OVERSEER-1 — read-only deployment readiness rollup (data/reports/z_deployment_readiness_status.md/json; suggest only; not deploy); default dry-run; no arbitrary scans or sacred moves from these lanes.
 globs:
 alwaysApply: true
 ---
@@ -17,6 +17,22 @@ alwaysApply: true
 - **Cursor** may read that report and **suggest** the next **`cursor/zsanctuary/…`** Turtle Mode branch; **AMK / human** chooses which queue line (if any) becomes work.
 - **Cursor must not:** auto-run queue items; deploy; merge; push; install packages; start services; mutate NAS; connect real devices; repair files automatically; or touch secrets.
 - **Workflow stays:** small branch → verify gates → human review → merge. This awareness update adds **no new autonomous authority**.
+
+## Z-PC-ACTIVATION-AWARENESS-1 (operator PowerShell / hub session receipt)
+
+After AMK uses the **Z_Sanctuary_Universe** shell route (PowerShell or manual `npm` from hub root), **`npm run z:pc:activation`** may be run to refresh **`data/reports/z_pc_activation_receipt.{json,md}`** — a **local read-only** snapshot (git branch/HEAD/status, phase green-receipt mtimes, verify script sample, on-disk report signals, sealed systems, Turtle posture). The receipt script **does not** run verify pipelines unless a future human-approved phase says otherwise.
+
+- **When starting work**, Cursor should **check** `z_pc_activation_receipt.md` (or `.json`) to see what the operator **recently activated** on this clone.
+- Cursor **may** summarize that receipt and **suggest** a **`cursor/zsanctuary/…`** Turtle Mode branch — **visibility only**.
+- Cursor **must not** treat the receipt as **permission to execute** queued tasks, verify scripts, merge, deploy, or mutate NAS — **AMK / human** still chooses the next lane.
+
+Full doc: [`docs/Z_PC_ACTIVATION_AWARENESS.md`](docs/Z_PC_ACTIVATION_AWARENESS.md).
+
+## Z-DEPLOYMENT-READINESS-OVERSEER-1 (read-only deployment posture rollup)
+
+**Z-DEPLOYMENT-READINESS-OVERSEER-1** adds `npm run z:deployment:readiness` → `scripts/z_deployment_readiness_status.mjs`, which writes only **`data/reports/z_deployment_readiness_status.{json,md}`** from hub registries and existing report JSON. It **does not** deploy, bind edge, merge, execute the Cycle Observe queue, install packages, scan arbitrary disks, or touch secrets. Cursor may **read** the rollup to **suggest** Turtle branches — **AMK / human** still chooses every build, merge, deploy, and external action.
+
+Full doc: [`docs/Z_DEPLOYMENT_READINESS_OVERSEER.md`](docs/Z_DEPLOYMENT_READINESS_OVERSEER.md).
 
 ## Satellites
 
@@ -41,6 +57,10 @@ alwaysApply: true
 - **Z-DOORWAY-2** — governed local project opener: [`docs/AMK_PROJECT_DOORWAY_LAUNCHER.md`](docs/AMK_PROJECT_DOORWAY_LAUNCHER.md). Opens Cursor / VS Code / Explorer per registry only—**no** builds, installs, or deploys.
 
 - **Z-CYCLE-DASHBOARD-1** (read-only UI): [`docs/Z_CYCLE_DASHBOARD_SYSTEM.md`](docs/Z_CYCLE_DASHBOARD_SYSTEM.md) — [`dashboard/panels/z-cycle-dashboard-readonly.html`](dashboard/panels/z-cycle-dashboard-readonly.html) — GET JSON only; **not** a control plane.
+
+- **Z-PC-ACTIVATION-AWARENESS-1** (manual receipt): [`docs/Z_PC_ACTIVATION_AWARENESS.md`](docs/Z_PC_ACTIVATION_AWARENESS.md) — `npm run z:pc:activation` — writes only `data/reports/z_pc_activation_receipt.{json,md}`.
+
+- **Z-DEPLOYMENT-READINESS-OVERSEER-1** (read-only rollup): [`docs/Z_DEPLOYMENT_READINESS_OVERSEER.md`](docs/Z_DEPLOYMENT_READINESS_OVERSEER.md) — `npm run z:deployment:readiness` — writes only `data/reports/z_deployment_readiness_status.{json,md}`.
 
 ## Deeper context
 

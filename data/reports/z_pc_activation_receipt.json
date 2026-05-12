@@ -1,0 +1,337 @@
+{
+  "schema": "z_pc_activation_receipt_v1",
+  "phase": "Z-PC-ACTIVATION-AWARENESS-1",
+  "generated_at": "2026-05-12T19:11:45.898Z",
+  "law": "Manual activation receipt only. No watcher, no auto-verify, no deploy, no merge, no secrets, no NAS mutation.",
+  "policy_ref": "data/z_pc_activation_awareness_policy.json",
+  "git": {
+    "branch_ok": true,
+    "branch": "cursor/zsanctuary/deployment-readiness-overseer-1",
+    "head_ok": true,
+    "head": "6b52f582c0f0ce20055c6b30c41d02e62c7617d7",
+    "status_ok": true,
+    "porcelain_raw": "M .cursor/rules/z_control_root_awareness.mdc\n M .gitignore\n M dashboard/data/amk_project_indicators.json\n M dashboard/panels/z-cycle-dashboard-readonly.html\n M dashboard/scripts/amk-project-indicators-readonly.js\n M dashboard/scripts/z-cycle-dashboard-readonly.js\n M data/reports/z_api_spine_report.json\n M data/reports/z_api_spine_report.md\n M data/reports/z_car2_similarity_report.json\n M data/reports/z_car2_similarity_report.md\n M data/reports/z_cycle_observe_status.json\n M data/reports/z_cycle_observe_status.md\n M data/reports/z_dashboard_registry_verify.json\n M data/reports/z_dashboard_registry_verify.md\n M data/reports/z_ecosystem_awareness_report.json\n M data/reports/z_ecosystem_awareness_report.md\n M data/reports/z_folder_manager_status.json\n M data/reports/z_folder_manager_status.md\n M data/reports/z_ide_commflow_guard.json\n M data/reports/z_ide_commflow_guard.md\n M data/reports/z_lab_bootstrap.json\n M data/reports/z_lab_bootstrap.md\n M data/reports/z_lab_folder_manager_boost.json\n M data/reports/z_lab_folder_manager_boost.md\n M data/reports/z_lab_status.json\n M data/reports/z_lab_status.md\n M data/reports/z_lab_task_structure_guard.json\n M data/reports/z_lab_task_structure_guard.md\n M data/reports/z_multi_workspace_guard.json\n M data/reports/z_multi_workspace_guard.md\n M data/reports/z_slo_guard.json\n M data/reports/z_slo_guard.md\n M data/reports/z_ssws_launch_requirements_report.json\n M data/reports/z_ssws_launch_requirements_report.md\n M data/reports/z_traffic_minibots_status.json\n M data/reports/z_traffic_minibots_status.md\n M data/reports/z_vscode_timeguard.json\n M data/reports/z_vscode_timeguard.md\n M data/z_cycle_dashboard_manifest.json\n M data/z_ecosystem_growth_stage_registry.json\n M docs/AI_BUILDER_CONTEXT.md\n M docs/Z_CYCLE_DASHBOARD_SYSTEM.md\n M docs/Z_CYCLE_OBSERVE_SYSTEM.md\n M docs/Z_ECOSYSTEM_GROWTH_STATUS.md\n M package.json\n M scripts/z_cycle_observe_status.mjs\n?? data/reports/z_deployment_readiness_status.json\n?? data/reports/z_deployment_readiness_status.md\n?? data/reports/z_pc_activation_receipt.json\n?? data/reports/z_pc_activation_receipt.md\n?? data/z_deployment_readiness_project_registry.json\n?? data/z_deployment_readiness_scoring_policy.json\n?? data/z_pc_activation_awareness_policy.json\n?? docs/PHASE_Z_DEPLOYMENT_READINESS_OVERSEER_1_GREEN_RECEIPT.md\n?? docs/PHASE_Z_PC_ACTIVATION_AWARENESS_1_GREEN_RECEIPT.md\n?? docs/Z_DEPLOYMENT_READINESS_OVERSEER.md\n?? docs/Z_PC_ACTIVATION_AWARENESS.md\n?? scripts/z_deployment_readiness_status.mjs\n?? scripts/z_pc_activation_receipt.mjs",
+    "porcelain_summary": {
+      "line_count": 59,
+      "first_paths": [
+        "cursor/rules/z_control_root_awareness.mdc",
+        ".gitignore",
+        "dashboard/data/amk_project_indicators.json",
+        "dashboard/panels/z-cycle-dashboard-readonly.html",
+        "dashboard/scripts/amk-project-indicators-readonly.js",
+        "dashboard/scripts/z-cycle-dashboard-readonly.js",
+        "data/reports/z_api_spine_report.json",
+        "data/reports/z_api_spine_report.md",
+        "data/reports/z_car2_similarity_report.json",
+        "data/reports/z_car2_similarity_report.md",
+        "data/reports/z_cycle_observe_status.json",
+        "data/reports/z_cycle_observe_status.md"
+      ]
+    }
+  },
+  "phase_receipt_files": [
+    {
+      "file": "docs/PHASE_Z_DEPLOYMENT_READINESS_OVERSEER_1_GREEN_RECEIPT.md",
+      "mtime": "2026-05-12T19:09:23.538Z",
+      "bytes": 3675
+    },
+    {
+      "file": "docs/PHASE_Z_DOORWAY_2_GREEN_RECEIPT.md",
+      "mtime": "2026-05-12T18:58:22.912Z",
+      "bytes": 2695
+    },
+    {
+      "file": "docs/PHASE_CF_1_PREVIEW_DASHBOARD_GREEN_RECEIPT.md",
+      "mtime": "2026-05-12T18:58:22.912Z",
+      "bytes": 5538
+    },
+    {
+      "file": "docs/PHASE_Z_CADENCE_1_GREEN_RECEIPT.md",
+      "mtime": "2026-05-12T18:58:22.770Z",
+      "bytes": 1236
+    },
+    {
+      "file": "docs/PHASE_Z_SSWS_LINK_1_GREEN_RECEIPT.md",
+      "mtime": "2026-05-12T18:58:22.769Z",
+      "bytes": 2324
+    },
+    {
+      "file": "docs/PHASE_Z_MU_TRUTH_1_GREEN_RECEIPT.md",
+      "mtime": "2026-05-12T18:58:22.769Z",
+      "bytes": 1550
+    },
+    {
+      "file": "docs/PHASE_Z_AMK_GTAI_1_GREEN_RECEIPT.md",
+      "mtime": "2026-05-12T18:58:22.769Z",
+      "bytes": 1819
+    },
+    {
+      "file": "docs/PHASE_Z_PATTERN_SAFE_1_GREEN_RECEIPT.md",
+      "mtime": "2026-05-12T18:58:22.768Z",
+      "bytes": 1832
+    },
+    {
+      "file": "docs/PHASE_Z_MU_ADVISOR_1_GREEN_RECEIPT.md",
+      "mtime": "2026-05-12T18:58:22.768Z",
+      "bytes": 1494
+    },
+    {
+      "file": "docs/PHASE_Z_LEGAL_WORKSTATION_UX_2_GREEN_RECEIPT.md",
+      "mtime": "2026-05-12T18:58:22.768Z",
+      "bytes": 3094
+    },
+    {
+      "file": "docs/PHASE_Z_LEGAL_WORKSTATION_UX_2A_GREEN_RECEIPT.md",
+      "mtime": "2026-05-12T18:58:22.768Z",
+      "bytes": 1122
+    },
+    {
+      "file": "docs/PHASE_Z_LEGAL_BENCH_1_GREEN_RECEIPT.md",
+      "mtime": "2026-05-12T18:58:22.768Z",
+      "bytes": 2209
+    },
+    {
+      "file": "docs/PHASE_Z_CMD_CENTER_1_GREEN_RECEIPT.md",
+      "mtime": "2026-05-12T18:58:22.768Z",
+      "bytes": 11483
+    },
+    {
+      "file": "docs/PHASE_AMK_DASH_FLEX_1_GREEN_RECEIPT.md",
+      "mtime": "2026-05-12T18:58:22.768Z",
+      "bytes": 1699
+    },
+    {
+      "file": "docs/PHASE_Z_STILLNESS_LEARN_1_GREEN_RECEIPT.md",
+      "mtime": "2026-05-12T18:58:22.767Z",
+      "bytes": 1834
+    },
+    {
+      "file": "docs/PHASE_Z_SSWS_ZLAB_1_GREEN_RECEIPT.md",
+      "mtime": "2026-05-12T18:58:22.767Z",
+      "bytes": 1377
+    },
+    {
+      "file": "docs/PHASE_Z_SSWS_LAB_1_GREEN_RECEIPT.md",
+      "mtime": "2026-05-12T18:58:22.767Z",
+      "bytes": 2068
+    },
+    {
+      "file": "docs/PHASE_Z_SSWS_DOOR_1_GREEN_RECEIPT.md",
+      "mtime": "2026-05-12T18:58:22.767Z",
+      "bytes": 2068
+    },
+    {
+      "file": "docs/PHASE_Z_SEC_TRIPLECHECK_1_GREEN_RECEIPT.md",
+      "mtime": "2026-05-12T18:58:22.767Z",
+      "bytes": 1217
+    },
+    {
+      "file": "docs/PHASE_Z_ROOT_7B_3D_GREEN_RECEIPT.md",
+      "mtime": "2026-05-12T18:58:22.767Z",
+      "bytes": 3036
+    },
+    {
+      "file": "docs/PHASE_Z_LEGAL_WORKSTATION_STACK_1_GREEN_RECEIPT.md",
+      "mtime": "2026-05-12T18:58:22.767Z",
+      "bytes": 1386
+    },
+    {
+      "file": "docs/PHASE_Z_LEGAL_TOOLBELT_1_GREEN_RECEIPT.md",
+      "mtime": "2026-05-12T18:58:22.767Z",
+      "bytes": 1062
+    },
+    {
+      "file": "docs/PHASE_Z_LEGAL_PRODUCT_OPS_1_GREEN_RECEIPT.md",
+      "mtime": "2026-05-12T18:58:22.767Z",
+      "bytes": 1509
+    },
+    {
+      "file": "docs/PHASE_Z_DASH_LIVING_NEON_1A_GREEN_RECEIPT.md",
+      "mtime": "2026-05-12T18:58:22.767Z",
+      "bytes": 2038
+    },
+    {
+      "file": "docs/PHASE_AMK_AI_SYNC_1_GREEN_RECEIPT.md",
+      "mtime": "2026-05-12T18:58:22.767Z",
+      "bytes": 1404
+    },
+    {
+      "file": "docs/PHASE_Z_ULTRA_MAGE_1_GREEN_RECEIPT.md",
+      "mtime": "2026-05-12T18:58:22.766Z",
+      "bytes": 1545
+    },
+    {
+      "file": "docs/PHASE_Z_SWARM_14DRP_1_GREEN_RECEIPT.md",
+      "mtime": "2026-05-12T18:58:22.766Z",
+      "bytes": 1518
+    },
+    {
+      "file": "docs/PHASE_Z_REPLICA_FABRIC_1_GREEN_RECEIPT.md",
+      "mtime": "2026-05-12T18:58:22.766Z",
+      "bytes": 2450
+    },
+    {
+      "file": "docs/PHASE_Z_PC_IDE_ADMIN_1_GREEN_RECEIPT.md",
+      "mtime": "2026-05-12T18:58:22.766Z",
+      "bytes": 7164
+    },
+    {
+      "file": "docs/PHASE_Z_LEGAL_WORKSTATION_UX_1_GREEN_RECEIPT.md",
+      "mtime": "2026-05-12T18:58:22.766Z",
+      "bytes": 1411
+    },
+    {
+      "file": "docs/PHASE_Z_LEGAL_WORKSTATION_AI_SPINE_1_GREEN_RECEIPT.md",
+      "mtime": "2026-05-12T18:58:22.766Z",
+      "bytes": 1662
+    },
+    {
+      "file": "docs/PHASE_Z_IDE_FUSION_1_GREEN_RECEIPT.md",
+      "mtime": "2026-05-12T18:58:22.766Z",
+      "bytes": 1235
+    },
+    {
+      "file": "docs/PHASE_Z_DASH_LIVING_NEON_1_GREEN_RECEIPT.md",
+      "mtime": "2026-05-12T18:58:22.766Z",
+      "bytes": 1684
+    },
+    {
+      "file": "docs/PHASE_Z_DASH_LIVING_NEON_1B_GREEN_RECEIPT.md",
+      "mtime": "2026-05-12T18:58:22.766Z",
+      "bytes": 2334
+    },
+    {
+      "file": "docs/PHASE_Z_CONTROL_LINK_1_GREEN_RECEIPT.md",
+      "mtime": "2026-05-12T18:58:22.766Z",
+      "bytes": 2449
+    },
+    {
+      "file": "docs/PHASE_Z_ROOT_7_GREEN_RECEIPT.md",
+      "mtime": "2026-05-12T18:58:22.764Z",
+      "bytes": 2140
+    },
+    {
+      "file": "docs/PHASE_Z_LEGAL_OPS_1_GREEN_RECEIPT.md",
+      "mtime": "2026-05-12T18:58:22.764Z",
+      "bytes": 1448
+    },
+    {
+      "file": "docs/PHASE_Z_AI_FUSION_MAP_1_GREEN_RECEIPT.md",
+      "mtime": "2026-05-12T18:58:22.764Z",
+      "bytes": 1132
+    },
+    {
+      "file": "docs/PHASE_OMNAI_CORE_ENGINE_MATRIX_GREEN_RECEIPT.md",
+      "mtime": "2026-05-12T18:58:22.764Z",
+      "bytes": 2750
+    },
+    {
+      "file": "docs/PHASE_LAWGRID_1A_GREEN_RECEIPT.md",
+      "mtime": "2026-05-12T18:58:22.764Z",
+      "bytes": 1726
+    },
+    {
+      "file": "docs/PHASE_AMK_DASH_FLEX_2_GREEN_RECEIPT.md",
+      "mtime": "2026-05-12T18:58:22.764Z",
+      "bytes": 3014
+    },
+    {
+      "file": "docs/PHASE_Z_PC_ACTIVATION_AWARENESS_1_GREEN_RECEIPT.md",
+      "mtime": "2026-05-12T18:58:19.860Z",
+      "bytes": 2523
+    },
+    {
+      "file": "docs/PHASE_Z_CYCLE_DASHBOARD_1_GREEN_RECEIPT.md",
+      "mtime": "2026-05-12T18:29:51.524Z",
+      "bytes": 1596
+    },
+    {
+      "file": "docs/PHASE_Z_CURSOR_AWARENESS_3_GREEN_RECEIPT.md",
+      "mtime": "2026-05-12T18:27:48.040Z",
+      "bytes": 2281
+    },
+    {
+      "file": "docs/PHASE_Z_CYCLE_OBSERVE_1_GREEN_RECEIPT.md",
+      "mtime": "2026-05-12T17:58:03.230Z",
+      "bytes": 1801
+    },
+    {
+      "file": "docs/PHASE_Z_AI_BUILDER_AWARENESS_2_GREEN_RECEIPT.md",
+      "mtime": "2026-05-12T17:56:23.842Z",
+      "bytes": 2109
+    },
+    {
+      "file": "docs/PHASE_Z_ANYDEVICE_2_GREEN_RECEIPT.md",
+      "mtime": "2026-05-12T17:14:20.634Z",
+      "bytes": 2169
+    },
+    {
+      "file": "docs/PHASE_Z_ANYDEVICE_AI_CAPSULE_1_GREEN_RECEIPT.md",
+      "mtime": "2026-05-12T17:09:16.040Z",
+      "bytes": 1487
+    }
+  ],
+  "verify_scripts_sample": [
+    "verify:all",
+    "verify:boundary-ownership",
+    "verify:ci",
+    "verify:daily-gate",
+    "verify:full",
+    "verify:full:core",
+    "verify:full:technical",
+    "verify:hub:metadata",
+    "verify:md",
+    "verify:sanctuary-github-pr",
+    "verify:web",
+    "z:anydevice:simulate",
+    "z:car2",
+    "z:crystal:dna:drift",
+    "z:cycle:observe",
+    "z:deployment:readiness",
+    "z:garage:full-scan",
+    "z:traffic"
+  ],
+  "latest_report_signals": {
+    "z_traffic_minibots_status": {
+      "overall_signal": null,
+      "ok": null
+    },
+    "z_cycle_observe_status": {
+      "overall_observer_signal": "BLUE",
+      "task_queue_length": 11
+    },
+    "z_crystal_dna_drift_report": {
+      "overall_signal": "BLUE",
+      "findings_count": 3
+    },
+    "z_anydevice_simulation_report": {
+      "simulations": 7,
+      "warnings": 0
+    }
+  },
+  "sealed_systems_summary": {
+    "count": 14,
+    "labels": [
+      "Z-SSWS IDE",
+      "Z-CONTROL-LINK-1",
+      "Z-DOORWAY-2",
+      "Z-DOORWAY-3",
+      "Z-CRYSTAL-DNA-1",
+      "Z-CRYSTAL-DNA-2",
+      "Z-CRYSTAL-DNA-3",
+      "Z-ANYDEVICE-AI-CAPSULE-1",
+      "Z-ANYDEVICE-2",
+      "Z-CYCLE-OBSERVE-1",
+      "Z-CYCLE-DASHBOARD-1",
+      "Z-PC-ACTIVATION-AWARENESS-1",
+      "Cloudflare governance",
+      "Casa AI Builder"
+    ]
+  },
+  "turtle_mode_posture": "Branches use prefix cursor/zsanctuary/; one domain per PR; verify gates and human review before merge; receipt is not execution permission.",
+  "future_symbolic_metaphors_docs_only": {
+    "mango_tree": "Fruitful project knowledge and growth receipts — future docs/registry metaphor only; no mystical execution claims.",
+    "starzan_tree": "Star-map / cosmic relation memory — future docs/registry metaphor only; charter separately before any runtime use."
+  },
+  "warnings": []
+}

@@ -1,0 +1,2059 @@
+{
+  "schema": "z_deployment_readiness_status_v1",
+  "phase": "Z-DEPLOYMENT-READINESS-OVERSEER-1",
+  "generated_at": "2026-05-12T19:15:19.905Z",
+  "law": "Read-only evaluation from hub registries and committed report JSON only. No deploy, no external mutation, no arbitrary disk walks, no secrets, no auto-fix. Percentages and deployment_status are advisory posture — not certification. Production-ready band (96–100) still requires explicit human / legal / security gates.",
+  "global_readiness": {
+    "ecosystem_signal": "BLUE",
+    "cycle_observe": {
+      "present": true,
+      "overall_observer_signal": "BLUE",
+      "task_queue_length": 11,
+      "generated_at": "2026-05-12T19:12:15.865Z",
+      "age_hours": 0.1
+    },
+    "pc_activation_receipt": {
+      "present": true,
+      "generated_at": "2026-05-12T19:11:45.898Z"
+    },
+    "crystal_dna_drift": {
+      "present": true,
+      "overall_signal": "BLUE",
+      "generated_at": "2026-05-12T18:06:23.903Z",
+      "age_hours": 1.1
+    },
+    "anydevice_simulation": {
+      "present": true,
+      "warnings_count": 0,
+      "simulations_count": 7,
+      "generated_at": "2026-05-12T18:06:23.454Z"
+    },
+    "traffic_minibots": {
+      "present": true,
+      "overall_signal": "GREEN",
+      "age_hours": 0
+    },
+    "dashboard_registry_verify": {
+      "present": true,
+      "status": "green",
+      "totals": {
+        "checks": 13,
+        "passed": 13,
+        "failed": 0
+      },
+      "generated_at": "2026-05-12T19:15:17.998Z"
+    },
+    "doorway": {
+      "report_present": true,
+      "registry_path": "data/z_doorway_workspace_registry.json",
+      "registry_entry_count": 5,
+      "overall_signal": "HOLD"
+    },
+    "control_link": {
+      "sync_report_present": true,
+      "satellite_manifest": {
+        "total": 2,
+        "enabled": 1,
+        "nas_wait": 1
+      }
+    },
+    "cloudflare": {
+      "posture": "DOCUMENTED_CONTINGENCY_ONLY_NO_PRODUCTION_DEPLOY",
+      "identity_doc": "data/z_cloudflare_contingency_identity.json",
+      "present": true
+    },
+    "docs_readiness": {
+      "phase_green_receipt_count": 72,
+      "newest_phase_receipt_iso": "2026-05-12T19:15:06.993Z",
+      "ai_builder_context_mtime": "2026-05-12T19:15:06.963Z"
+    },
+    "ai_builder_awareness": {
+      "doc_path": "docs/AI_BUILDER_CONTEXT.md",
+      "growth_registry_sealed_count": 14
+    },
+    "hub_verification_scripts": {
+      "count": 20,
+      "sample": [
+        "verify:all",
+        "verify:boundary-ownership",
+        "verify:ci",
+        "verify:daily-gate",
+        "verify:full",
+        "verify:full:core",
+        "verify:full:technical",
+        "verify:hub:metadata",
+        "verify:md",
+        "verify:sanctuary-github-pr",
+        "verify:web",
+        "z:anydevice:simulate",
+        "z:car2",
+        "z:control-links:dry",
+        "z:crystal:dna:drift",
+        "z:cycle:observe",
+        "z:deployment:readiness",
+        "z:doorway:status",
+        "z:garage:full-scan",
+        "z:traffic"
+      ]
+    },
+    "report_staleness_warnings": [],
+    "adjustments_reference": {
+      "cycle_observe_blue_cap": 86,
+      "cycle_observe_non_green_penalty": 12,
+      "traffic_red_penalty": 22,
+      "traffic_yellow_penalty": 8,
+      "drift_non_green_penalty": 10,
+      "anydevice_warning_penalty": 6,
+      "dashboard_registry_not_green_penalty": 14,
+      "path_missing_cap": 36,
+      "external_role_cap": 44,
+      "nas_wait_satellite_penalty": 6
+    }
+  },
+  "rollups": {
+    "ecosystem_signal": "BLUE",
+    "mean_readiness_percent_pc_projects": 21,
+    "mean_readiness_percent_hub_modules": 11,
+    "hub_indicator_readiness_percent": 32,
+    "entity_counts": {
+      "pc_projects": 15,
+      "hub_modules": 44
+    },
+    "automated_readiness_cap": 95,
+    "automated_readiness_cap_note": "This overseer never emits 96–100 from formulas alone — that band is reserved for human-signed receipts outside this script."
+  },
+  "entities": [
+    {
+      "entity_kind": "pc_project",
+      "project_id": "zsanctuary-universe",
+      "project_name": "ZSanctuary_Universe",
+      "path": "ZSanctuary_Universe",
+      "path_resolved": "C:/Cursor Projects Organiser/ZSanctuary_Universe",
+      "owner_overseer": "Z-Super Overseer AI (Z-EAII + Z-HODP roof)",
+      "maturity_stage": "early build",
+      "readiness_percent": 32,
+      "confidence_percent": 84,
+      "deployment_status": "OBSERVE_ONLY_NOT_DEPLOYABLE",
+      "blockers": [
+        "Crystal DNA drift rollup BLUE — review drift report before widening execution."
+      ],
+      "next_safe_tasks": [
+        "npm run z:deployment:readiness",
+        "npm run z:pc:activation",
+        "npm run z:cycle:observe",
+        "npm run verify:md",
+        "npm run z:traffic",
+        "npm run z:car2"
+      ],
+      "estimated_build_phase": "Early build",
+      "required_human_gate": "AMK-Goku for merge, deploy, NAS-class moves, billing, and production edge bind",
+      "related_reports": [
+        "data/reports/z_deployment_readiness_status.json",
+        "data/reports/z_cycle_observe_status.json",
+        "data/reports/z_pc_activation_receipt.json",
+        "data/reports/z_traffic_minibots_status.json",
+        "data/reports/z_crystal_dna_drift_report.json",
+        "data/reports/z_anydevice_simulation_report.json",
+        "data/reports/z_dashboard_registry_verify.json",
+        "data/reports/z_doorway_workspace_status.json",
+        "data/reports/z_control_link_sync_report.json"
+      ],
+      "related_docs": [
+        "docs/Z-HIERARCHY-CHIEF-AND-OBSERVER-VIEW.md",
+        "docs/Z_SANCTUARY_CANONICAL_CONTROL_ROOT.md",
+        "docs/Z_DEPLOYMENT_READINESS_OVERSEER.md",
+        "docs/Z_DEPLOYMENT_READINESS_OVERSEER.md",
+        "docs/AI_BUILDER_CONTEXT.md"
+      ],
+      "registry_role": "hub",
+      "local_package_json_present": true
+    },
+    {
+      "entity_kind": "pc_project",
+      "project_id": "amk-goku-dashboards-2",
+      "project_name": "Amk-Goku Dashboards 2",
+      "path": "(empty — link-only or unregistered)",
+      "path_resolved": null,
+      "owner_overseer": "Z-EAII roster / Z-Super Overseer (hub governance truth)",
+      "maturity_stage": "seed / concept",
+      "readiness_percent": 12,
+      "confidence_percent": 52,
+      "deployment_status": "HOLD_UNREGISTERED_OR_EXTERNAL_PATH",
+      "blockers": [
+        "Registry path missing or not present on this machine — no local proof folder.",
+        "External / link-only lane — hub deployment readiness does not imply hosted app proof.",
+        "Crystal DNA drift rollup BLUE — review drift report before widening execution."
+      ],
+      "next_safe_tasks": [
+        "npm run z:deployment:readiness",
+        "npm run z:pc:activation",
+        "npm run z:cycle:observe",
+        "npm run verify:md",
+        "npm run z:traffic",
+        "npm run z:car2",
+        "Register or restore local path in data/z_pc_root_projects.json after operator verification."
+      ],
+      "estimated_build_phase": "Seed / doctrine",
+      "required_human_gate": "AMK-Goku for merge, deploy, NAS-class moves, billing, and production edge bind",
+      "related_reports": [
+        "data/reports/z_deployment_readiness_status.json",
+        "data/reports/z_cycle_observe_status.json",
+        "data/reports/z_pc_activation_receipt.json"
+      ],
+      "related_docs": [
+        "docs/Z_DEPLOYMENT_READINESS_OVERSEER.md",
+        "docs/AI_BUILDER_CONTEXT.md",
+        "docs/Z_ECOSYSTEM_GROWTH_STATUS.md"
+      ],
+      "registry_role": "external",
+      "local_package_json_present": false
+    },
+    {
+      "entity_kind": "pc_project",
+      "project_id": "amk-goku-vaults",
+      "project_name": "Amk-Goku Vaults",
+      "path": "Amk-Goku Vaults",
+      "path_resolved": "C:/Cursor Projects Organiser/Amk-Goku Vaults",
+      "owner_overseer": "Folder Manager AI / vault policy (read posture)",
+      "maturity_stage": "early build",
+      "readiness_percent": 22,
+      "confidence_percent": 72,
+      "deployment_status": "OBSERVE_ONLY_NOT_DEPLOYABLE",
+      "blockers": [
+        "Crystal DNA drift rollup BLUE — review drift report before widening execution."
+      ],
+      "next_safe_tasks": [
+        "npm run z:deployment:readiness",
+        "npm run z:pc:activation",
+        "npm run z:cycle:observe",
+        "npm run verify:md",
+        "npm run z:traffic",
+        "npm run z:car2"
+      ],
+      "estimated_build_phase": "Early build",
+      "required_human_gate": "AMK-Goku for merge, deploy, NAS-class moves, billing, and production edge bind",
+      "related_reports": [
+        "data/reports/z_deployment_readiness_status.json",
+        "data/reports/z_cycle_observe_status.json",
+        "data/reports/z_pc_activation_receipt.json"
+      ],
+      "related_docs": [
+        "docs/vault/Vault_Access_Map.md",
+        "docs/Z_DEPLOYMENT_READINESS_OVERSEER.md",
+        "docs/Z_DEPLOYMENT_READINESS_OVERSEER.md",
+        "docs/AI_BUILDER_CONTEXT.md"
+      ],
+      "registry_role": "member",
+      "local_package_json_present": false
+    },
+    {
+      "entity_kind": "pc_project",
+      "project_id": "at-princess-blackie-copilot",
+      "project_name": "AT Princess & Blackie Copilot",
+      "path": "AT Princess&Blackie Copilot",
+      "path_resolved": "C:/Cursor Projects Organiser/AT Princess&Blackie Copilot",
+      "owner_overseer": "Z-EAII roster / Z-Super Overseer (hub governance truth)",
+      "maturity_stage": "early build",
+      "readiness_percent": 22,
+      "confidence_percent": 84,
+      "deployment_status": "OBSERVE_ONLY_NOT_DEPLOYABLE",
+      "blockers": [
+        "Crystal DNA drift rollup BLUE — review drift report before widening execution."
+      ],
+      "next_safe_tasks": [
+        "npm run z:deployment:readiness",
+        "npm run z:pc:activation",
+        "npm run z:cycle:observe",
+        "npm run verify:md",
+        "npm run z:traffic",
+        "npm run z:car2"
+      ],
+      "estimated_build_phase": "Early build",
+      "required_human_gate": "AMK-Goku for merge, deploy, NAS-class moves, billing, and production edge bind",
+      "related_reports": [
+        "data/reports/z_deployment_readiness_status.json",
+        "data/reports/z_cycle_observe_status.json",
+        "data/reports/z_pc_activation_receipt.json"
+      ],
+      "related_docs": [
+        "docs/Z_DEPLOYMENT_READINESS_OVERSEER.md",
+        "docs/AI_BUILDER_CONTEXT.md",
+        "docs/Z_ECOSYSTEM_GROWTH_STATUS.md"
+      ],
+      "registry_role": "member",
+      "local_package_json_present": true
+    },
+    {
+      "entity_kind": "pc_project",
+      "project_id": "at-princess-blackie-copitol",
+      "project_name": "AT Princess & Blackie Copilot",
+      "path": "AT Princess&Blackie Copilot",
+      "path_resolved": "C:/Cursor Projects Organiser/AT Princess&Blackie Copilot",
+      "owner_overseer": "Z-EAII roster / Z-Super Overseer (hub governance truth)",
+      "maturity_stage": "early build",
+      "readiness_percent": 22,
+      "confidence_percent": 84,
+      "deployment_status": "OBSERVE_ONLY_NOT_DEPLOYABLE",
+      "blockers": [
+        "Crystal DNA drift rollup BLUE — review drift report before widening execution."
+      ],
+      "next_safe_tasks": [
+        "npm run z:deployment:readiness",
+        "npm run z:pc:activation",
+        "npm run z:cycle:observe",
+        "npm run verify:md",
+        "npm run z:traffic",
+        "npm run z:car2"
+      ],
+      "estimated_build_phase": "Early build",
+      "required_human_gate": "AMK-Goku for merge, deploy, NAS-class moves, billing, and production edge bind",
+      "related_reports": [
+        "data/reports/z_deployment_readiness_status.json",
+        "data/reports/z_cycle_observe_status.json",
+        "data/reports/z_pc_activation_receipt.json"
+      ],
+      "related_docs": [
+        "docs/Z_DEPLOYMENT_READINESS_OVERSEER.md",
+        "docs/AI_BUILDER_CONTEXT.md",
+        "docs/Z_ECOSYSTEM_GROWTH_STATUS.md"
+      ],
+      "registry_role": "member",
+      "local_package_json_present": true
+    },
+    {
+      "entity_kind": "pc_project",
+      "project_id": "pc-root-extras-and-tools",
+      "project_name": "Extras & Tools",
+      "path": "Extras & Tools",
+      "path_resolved": "C:/Cursor Projects Organiser/Extras & Tools",
+      "owner_overseer": "PC-root hygiene (not an app overseer)",
+      "maturity_stage": "early build",
+      "readiness_percent": 22,
+      "confidence_percent": 84,
+      "deployment_status": "OBSERVE_ONLY_NOT_DEPLOYABLE",
+      "blockers": [
+        "Crystal DNA drift rollup BLUE — review drift report before widening execution."
+      ],
+      "next_safe_tasks": [
+        "npm run z:deployment:readiness",
+        "npm run z:pc:activation",
+        "npm run z:cycle:observe",
+        "npm run verify:md",
+        "npm run z:traffic",
+        "npm run z:car2"
+      ],
+      "estimated_build_phase": "Early build",
+      "required_human_gate": "AMK-Goku for merge, deploy, NAS-class moves, billing, and production edge bind",
+      "related_reports": [
+        "data/reports/z_deployment_readiness_status.json",
+        "data/reports/z_cycle_observe_status.json",
+        "data/reports/z_pc_activation_receipt.json"
+      ],
+      "related_docs": [
+        "docs/Z-PC-ROOT-EXTRAS-AND-TOOLS-SINK.md",
+        "docs/Z_DEPLOYMENT_READINESS_OVERSEER.md",
+        "docs/AI_BUILDER_CONTEXT.md"
+      ],
+      "registry_role": "member",
+      "local_package_json_present": true
+    },
+    {
+      "entity_kind": "pc_project",
+      "project_id": "replit-roulette-z-amk-goku-mdcp",
+      "project_name": "Roulette Data Analyzer · Z-Amk-Goku MD/CP (Replit)",
+      "path": "(empty — link-only or unregistered)",
+      "path_resolved": null,
+      "owner_overseer": "External Replit lane (link-only until chartered hub bridge)",
+      "maturity_stage": "seed / concept",
+      "readiness_percent": 12,
+      "confidence_percent": 52,
+      "deployment_status": "HOLD_UNREGISTERED_OR_EXTERNAL_PATH",
+      "blockers": [
+        "Registry path missing or not present on this machine — no local proof folder.",
+        "External / link-only lane — hub deployment readiness does not imply hosted app proof.",
+        "Crystal DNA drift rollup BLUE — review drift report before widening execution."
+      ],
+      "next_safe_tasks": [
+        "npm run z:deployment:readiness",
+        "npm run z:pc:activation",
+        "npm run z:cycle:observe",
+        "npm run verify:md",
+        "npm run z:traffic",
+        "npm run z:car2",
+        "Register or restore local path in data/z_pc_root_projects.json after operator verification."
+      ],
+      "estimated_build_phase": "Seed / doctrine",
+      "required_human_gate": "AMK-Goku for merge, deploy, NAS-class moves, billing, and production edge bind",
+      "related_reports": [
+        "data/reports/z_deployment_readiness_status.json",
+        "data/reports/z_cycle_observe_status.json",
+        "data/reports/z_pc_activation_receipt.json"
+      ],
+      "related_docs": [
+        "docs/Z_DEPLOYMENT_READINESS_OVERSEER.md",
+        "docs/Z_DEPLOYMENT_READINESS_OVERSEER.md",
+        "docs/AI_BUILDER_CONTEXT.md"
+      ],
+      "registry_role": "external",
+      "local_package_json_present": false
+    },
+    {
+      "entity_kind": "pc_project",
+      "project_id": "sister-aisling-sol",
+      "project_name": "Sister Aisling Sol",
+      "path": "Z-Sister Aisling Sol",
+      "path_resolved": "C:/Cursor Projects Organiser/Z-Sister Aisling Sol",
+      "owner_overseer": "Z-EAII roster / Z-Super Overseer (hub governance truth)",
+      "maturity_stage": "early build",
+      "readiness_percent": 22,
+      "confidence_percent": 84,
+      "deployment_status": "OBSERVE_ONLY_NOT_DEPLOYABLE",
+      "blockers": [
+        "Crystal DNA drift rollup BLUE — review drift report before widening execution."
+      ],
+      "next_safe_tasks": [
+        "npm run z:deployment:readiness",
+        "npm run z:pc:activation",
+        "npm run z:cycle:observe",
+        "npm run verify:md",
+        "npm run z:traffic",
+        "npm run z:car2"
+      ],
+      "estimated_build_phase": "Early build",
+      "required_human_gate": "AMK-Goku for merge, deploy, NAS-class moves, billing, and production edge bind",
+      "related_reports": [
+        "data/reports/z_deployment_readiness_status.json",
+        "data/reports/z_cycle_observe_status.json",
+        "data/reports/z_pc_activation_receipt.json"
+      ],
+      "related_docs": [
+        "docs/Z_DEPLOYMENT_READINESS_OVERSEER.md",
+        "docs/AI_BUILDER_CONTEXT.md",
+        "docs/Z_ECOSYSTEM_GROWTH_STATUS.md"
+      ],
+      "registry_role": "member",
+      "local_package_json_present": true
+    },
+    {
+      "entity_kind": "pc_project",
+      "project_id": "z-sanctuary-universe-2-continuation",
+      "project_name": "Z_Sanctuary_Universe 2",
+      "path": "ZSanctuary_Universe/Z_Sanctuary_Universe 2",
+      "path_resolved": null,
+      "owner_overseer": "Z-EAII roster / Z-Super Overseer (hub governance truth)",
+      "maturity_stage": "seed / concept",
+      "readiness_percent": 20,
+      "confidence_percent": 52,
+      "deployment_status": "HOLD_UNREGISTERED_OR_EXTERNAL_PATH",
+      "blockers": [
+        "Registry path missing or not present on this machine — no local proof folder.",
+        "Crystal DNA drift rollup BLUE — review drift report before widening execution."
+      ],
+      "next_safe_tasks": [
+        "npm run z:deployment:readiness",
+        "npm run z:pc:activation",
+        "npm run z:cycle:observe",
+        "npm run verify:md",
+        "npm run z:traffic",
+        "npm run z:car2",
+        "Register or restore local path in data/z_pc_root_projects.json after operator verification."
+      ],
+      "estimated_build_phase": "Seed / doctrine",
+      "required_human_gate": "AMK-Goku for merge, deploy, NAS-class moves, billing, and production edge bind",
+      "related_reports": [
+        "data/reports/z_deployment_readiness_status.json",
+        "data/reports/z_cycle_observe_status.json",
+        "data/reports/z_pc_activation_receipt.json"
+      ],
+      "related_docs": [
+        "docs/Z_DEPLOYMENT_READINESS_OVERSEER.md",
+        "docs/AI_BUILDER_CONTEXT.md",
+        "docs/Z_ECOSYSTEM_GROWTH_STATUS.md"
+      ],
+      "registry_role": "member",
+      "local_package_json_present": false
+    },
+    {
+      "entity_kind": "pc_project",
+      "project_id": "z-omni-sanctuary",
+      "project_name": "Z-OMNI-Sanctuary",
+      "path": "Z-OMNI-Sanctuary",
+      "path_resolved": "C:/Cursor Projects Organiser/Z-OMNI-Sanctuary",
+      "owner_overseer": "Z-EAII roster / Z-Super Overseer (hub governance truth)",
+      "maturity_stage": "early build",
+      "readiness_percent": 22,
+      "confidence_percent": 84,
+      "deployment_status": "OBSERVE_ONLY_NOT_DEPLOYABLE",
+      "blockers": [
+        "Crystal DNA drift rollup BLUE — review drift report before widening execution."
+      ],
+      "next_safe_tasks": [
+        "npm run z:deployment:readiness",
+        "npm run z:pc:activation",
+        "npm run z:cycle:observe",
+        "npm run verify:md",
+        "npm run z:traffic",
+        "npm run z:car2"
+      ],
+      "estimated_build_phase": "Early build",
+      "required_human_gate": "AMK-Goku for merge, deploy, NAS-class moves, billing, and production edge bind",
+      "related_reports": [
+        "data/reports/z_deployment_readiness_status.json",
+        "data/reports/z_cycle_observe_status.json",
+        "data/reports/z_pc_activation_receipt.json"
+      ],
+      "related_docs": [
+        "docs/Z_DEPLOYMENT_READINESS_OVERSEER.md",
+        "docs/AI_BUILDER_CONTEXT.md",
+        "docs/Z_ECOSYSTEM_GROWTH_STATUS.md"
+      ],
+      "registry_role": "member",
+      "local_package_json_present": true
+    },
+    {
+      "entity_kind": "pc_project",
+      "project_id": "z-sanctuary-ai-skyscraper",
+      "project_name": "Z-SANCTUARY AI SKYSCRAPER",
+      "path": "Z-SANCTUARY AI SKYSCRAPER",
+      "path_resolved": "C:/Cursor Projects Organiser/Z-SANCTUARY AI SKYSCRAPER",
+      "owner_overseer": "Z-EAII roster / Z-Super Overseer (hub governance truth)",
+      "maturity_stage": "early build",
+      "readiness_percent": 22,
+      "confidence_percent": 72,
+      "deployment_status": "OBSERVE_ONLY_NOT_DEPLOYABLE",
+      "blockers": [
+        "Crystal DNA drift rollup BLUE — review drift report before widening execution."
+      ],
+      "next_safe_tasks": [
+        "npm run z:deployment:readiness",
+        "npm run z:pc:activation",
+        "npm run z:cycle:observe",
+        "npm run verify:md",
+        "npm run z:traffic",
+        "npm run z:car2"
+      ],
+      "estimated_build_phase": "Early build",
+      "required_human_gate": "AMK-Goku for merge, deploy, NAS-class moves, billing, and production edge bind",
+      "related_reports": [
+        "data/reports/z_deployment_readiness_status.json",
+        "data/reports/z_cycle_observe_status.json",
+        "data/reports/z_pc_activation_receipt.json"
+      ],
+      "related_docs": [
+        "docs/Z_DEPLOYMENT_READINESS_OVERSEER.md",
+        "docs/AI_BUILDER_CONTEXT.md",
+        "docs/Z_ECOSYSTEM_GROWTH_STATUS.md"
+      ],
+      "registry_role": "member",
+      "local_package_json_present": false
+    },
+    {
+      "entity_kind": "pc_project",
+      "project_id": "z-sanctuary-browser-z-saiyan-lumina",
+      "project_name": "Z-Sanctuary Browser (Z-Saiyan Lumina)",
+      "path": "Z-Sanctuary Browser",
+      "path_resolved": null,
+      "owner_overseer": "Z-EAII roster / Z-Super Overseer (hub governance truth)",
+      "maturity_stage": "seed / concept",
+      "readiness_percent": 20,
+      "confidence_percent": 52,
+      "deployment_status": "HOLD_UNREGISTERED_OR_EXTERNAL_PATH",
+      "blockers": [
+        "Registry path missing or not present on this machine — no local proof folder.",
+        "Crystal DNA drift rollup BLUE — review drift report before widening execution."
+      ],
+      "next_safe_tasks": [
+        "npm run z:deployment:readiness",
+        "npm run z:pc:activation",
+        "npm run z:cycle:observe",
+        "npm run verify:md",
+        "npm run z:traffic",
+        "npm run z:car2",
+        "Register or restore local path in data/z_pc_root_projects.json after operator verification."
+      ],
+      "estimated_build_phase": "Seed / doctrine",
+      "required_human_gate": "AMK-Goku for merge, deploy, NAS-class moves, billing, and production edge bind",
+      "related_reports": [
+        "data/reports/z_deployment_readiness_status.json",
+        "data/reports/z_cycle_observe_status.json",
+        "data/reports/z_pc_activation_receipt.json"
+      ],
+      "related_docs": [
+        "docs/Z_DEPLOYMENT_READINESS_OVERSEER.md",
+        "docs/AI_BUILDER_CONTEXT.md",
+        "docs/Z_ECOSYSTEM_GROWTH_STATUS.md"
+      ],
+      "registry_role": "member",
+      "local_package_json_present": false
+    },
+    {
+      "entity_kind": "pc_project",
+      "project_id": "z-sanctuary-claude-core",
+      "project_name": "Z-Sanctuary Claude (Core)",
+      "path": "Z-Sanctuary Claude",
+      "path_resolved": "C:/Cursor Projects Organiser/Z-Sanctuary Claude",
+      "owner_overseer": "Z-EAII roster / Z-Super Overseer (hub governance truth)",
+      "maturity_stage": "early build",
+      "readiness_percent": 22,
+      "confidence_percent": 84,
+      "deployment_status": "OBSERVE_ONLY_NOT_DEPLOYABLE",
+      "blockers": [
+        "Crystal DNA drift rollup BLUE — review drift report before widening execution."
+      ],
+      "next_safe_tasks": [
+        "npm run z:deployment:readiness",
+        "npm run z:pc:activation",
+        "npm run z:cycle:observe",
+        "npm run verify:md",
+        "npm run z:traffic",
+        "npm run z:car2"
+      ],
+      "estimated_build_phase": "Early build",
+      "required_human_gate": "AMK-Goku for merge, deploy, NAS-class moves, billing, and production edge bind",
+      "related_reports": [
+        "data/reports/z_deployment_readiness_status.json",
+        "data/reports/z_cycle_observe_status.json",
+        "data/reports/z_pc_activation_receipt.json"
+      ],
+      "related_docs": [
+        "docs/Z_DEPLOYMENT_READINESS_OVERSEER.md",
+        "docs/AI_BUILDER_CONTEXT.md",
+        "docs/Z_ECOSYSTEM_GROWTH_STATUS.md"
+      ],
+      "registry_role": "member",
+      "local_package_json_present": true
+    },
+    {
+      "entity_kind": "pc_project",
+      "project_id": "z-sanctuary-replit",
+      "project_name": "Z-Sanctuary Replit",
+      "path": "Z-Sanctuary_Replit",
+      "path_resolved": "C:/Cursor Projects Organiser/Z-Sanctuary_Replit",
+      "owner_overseer": "Z-EAII roster / Z-Super Overseer (hub governance truth)",
+      "maturity_stage": "early build",
+      "readiness_percent": 22,
+      "confidence_percent": 72,
+      "deployment_status": "OBSERVE_ONLY_NOT_DEPLOYABLE",
+      "blockers": [
+        "Crystal DNA drift rollup BLUE — review drift report before widening execution."
+      ],
+      "next_safe_tasks": [
+        "npm run z:deployment:readiness",
+        "npm run z:pc:activation",
+        "npm run z:cycle:observe",
+        "npm run verify:md",
+        "npm run z:traffic",
+        "npm run z:car2"
+      ],
+      "estimated_build_phase": "Early build",
+      "required_human_gate": "AMK-Goku for merge, deploy, NAS-class moves, billing, and production edge bind",
+      "related_reports": [
+        "data/reports/z_deployment_readiness_status.json",
+        "data/reports/z_cycle_observe_status.json",
+        "data/reports/z_pc_activation_receipt.json"
+      ],
+      "related_docs": [
+        "docs/Z_DEPLOYMENT_READINESS_OVERSEER.md",
+        "docs/AI_BUILDER_CONTEXT.md",
+        "docs/Z_ECOSYSTEM_GROWTH_STATUS.md"
+      ],
+      "registry_role": "member",
+      "local_package_json_present": false
+    },
+    {
+      "entity_kind": "pc_project",
+      "project_id": "z-sanctuary-aimanity",
+      "project_name": "z-sanctuary-aimanity",
+      "path": "z-sanctuary-aimanity",
+      "path_resolved": "C:/Cursor Projects Organiser/z-sanctuary-aimanity",
+      "owner_overseer": "Z-EAII roster / Z-Super Overseer (hub governance truth)",
+      "maturity_stage": "early build",
+      "readiness_percent": 22,
+      "confidence_percent": 84,
+      "deployment_status": "OBSERVE_ONLY_NOT_DEPLOYABLE",
+      "blockers": [
+        "Crystal DNA drift rollup BLUE — review drift report before widening execution."
+      ],
+      "next_safe_tasks": [
+        "npm run z:deployment:readiness",
+        "npm run z:pc:activation",
+        "npm run z:cycle:observe",
+        "npm run verify:md",
+        "npm run z:traffic",
+        "npm run z:car2"
+      ],
+      "estimated_build_phase": "Early build",
+      "required_human_gate": "AMK-Goku for merge, deploy, NAS-class moves, billing, and production edge bind",
+      "related_reports": [
+        "data/reports/z_deployment_readiness_status.json",
+        "data/reports/z_cycle_observe_status.json",
+        "data/reports/z_pc_activation_receipt.json"
+      ],
+      "related_docs": [
+        "docs/Z_DEPLOYMENT_READINESS_OVERSEER.md",
+        "docs/AI_BUILDER_CONTEXT.md",
+        "docs/Z_ECOSYSTEM_GROWTH_STATUS.md"
+      ],
+      "registry_role": "member",
+      "local_package_json_present": true
+    },
+    {
+      "entity_kind": "hub_module",
+      "project_id": "module:core-dashboard",
+      "project_name": "core-dashboard — Dashboard runtime and analytics.",
+      "path": "(hub manifest row — data/z_module_manifest.json)",
+      "path_resolved": null,
+      "owner_overseer": "Module owner: SKK",
+      "maturity_stage": "seed / concept",
+      "readiness_percent": 8,
+      "confidence_percent": 84,
+      "deployment_status": "HUB_MODULE_MANIFEST_ROW_ONLY",
+      "blockers": [
+        "Module status planned — no runtime deployment implied from manifest alone."
+      ],
+      "next_safe_tasks": [
+        "npm run z:registry:sync",
+        "npm run z:deployment:readiness",
+        "docs/Z-MASTER-MODULES-REGISTER.md alignment under separate human-gated PR"
+      ],
+      "estimated_build_phase": "Seed / doctrine",
+      "required_human_gate": "AMK-Goku for merge, deploy, NAS-class moves, billing, and production edge bind",
+      "related_reports": [
+        "data/reports/z_deployment_readiness_status.json",
+        "data/reports/z_zuno_coverage_audit.json"
+      ],
+      "related_docs": [
+        "docs/Z-MASTER-MODULES-REGISTER.md",
+        "docs/Z_DEPLOYMENT_READINESS_OVERSEER.md"
+      ],
+      "module_layer": "core",
+      "module_status": "planned"
+    },
+    {
+      "entity_kind": "hub_module",
+      "project_id": "module:core-status-console",
+      "project_name": "core-status-console — Status console and log router.",
+      "path": "(hub manifest row — data/z_module_manifest.json)",
+      "path_resolved": null,
+      "owner_overseer": "Module owner: SKK",
+      "maturity_stage": "seed / concept",
+      "readiness_percent": 8,
+      "confidence_percent": 84,
+      "deployment_status": "HUB_MODULE_MANIFEST_ROW_ONLY",
+      "blockers": [
+        "Module status planned — no runtime deployment implied from manifest alone."
+      ],
+      "next_safe_tasks": [
+        "npm run z:registry:sync",
+        "npm run z:deployment:readiness",
+        "docs/Z-MASTER-MODULES-REGISTER.md alignment under separate human-gated PR"
+      ],
+      "estimated_build_phase": "Seed / doctrine",
+      "required_human_gate": "AMK-Goku for merge, deploy, NAS-class moves, billing, and production edge bind",
+      "related_reports": [
+        "data/reports/z_deployment_readiness_status.json",
+        "data/reports/z_zuno_coverage_audit.json"
+      ],
+      "related_docs": [
+        "docs/Z-MASTER-MODULES-REGISTER.md",
+        "docs/Z_DEPLOYMENT_READINESS_OVERSEER.md"
+      ],
+      "module_layer": "core",
+      "module_status": "planned"
+    },
+    {
+      "entity_kind": "hub_module",
+      "project_id": "module:core-energy-response",
+      "project_name": "core-energy-response — Energy and harmony pulse engine.",
+      "path": "(hub manifest row — data/z_module_manifest.json)",
+      "path_resolved": null,
+      "owner_overseer": "Module owner: SKK",
+      "maturity_stage": "seed / concept",
+      "readiness_percent": 8,
+      "confidence_percent": 84,
+      "deployment_status": "HUB_MODULE_MANIFEST_ROW_ONLY",
+      "blockers": [
+        "Module status planned — no runtime deployment implied from manifest alone."
+      ],
+      "next_safe_tasks": [
+        "npm run z:registry:sync",
+        "npm run z:deployment:readiness",
+        "docs/Z-MASTER-MODULES-REGISTER.md alignment under separate human-gated PR"
+      ],
+      "estimated_build_phase": "Seed / doctrine",
+      "required_human_gate": "AMK-Goku for merge, deploy, NAS-class moves, billing, and production edge bind",
+      "related_reports": [
+        "data/reports/z_deployment_readiness_status.json",
+        "data/reports/z_zuno_coverage_audit.json"
+      ],
+      "related_docs": [
+        "docs/Z-MASTER-MODULES-REGISTER.md",
+        "docs/Z_DEPLOYMENT_READINESS_OVERSEER.md"
+      ],
+      "module_layer": "core",
+      "module_status": "planned"
+    },
+    {
+      "entity_kind": "hub_module",
+      "project_id": "module:core-emotion-filter",
+      "project_name": "core-emotion-filter — Emotional coherence and response mode.",
+      "path": "(hub manifest row — data/z_module_manifest.json)",
+      "path_resolved": null,
+      "owner_overseer": "Module owner: SKK",
+      "maturity_stage": "seed / concept",
+      "readiness_percent": 8,
+      "confidence_percent": 84,
+      "deployment_status": "HUB_MODULE_MANIFEST_ROW_ONLY",
+      "blockers": [
+        "Module status planned — no runtime deployment implied from manifest alone."
+      ],
+      "next_safe_tasks": [
+        "npm run z:registry:sync",
+        "npm run z:deployment:readiness",
+        "docs/Z-MASTER-MODULES-REGISTER.md alignment under separate human-gated PR"
+      ],
+      "estimated_build_phase": "Seed / doctrine",
+      "required_human_gate": "AMK-Goku for merge, deploy, NAS-class moves, billing, and production edge bind",
+      "related_reports": [
+        "data/reports/z_deployment_readiness_status.json",
+        "data/reports/z_zuno_coverage_audit.json"
+      ],
+      "related_docs": [
+        "docs/Z-MASTER-MODULES-REGISTER.md",
+        "docs/Z_DEPLOYMENT_READINESS_OVERSEER.md"
+      ],
+      "module_layer": "core",
+      "module_status": "planned"
+    },
+    {
+      "entity_kind": "hub_module",
+      "project_id": "module:core-chronicle",
+      "project_name": "core-chronicle — Chronicle capture and timeline memory.",
+      "path": "(hub manifest row — data/z_module_manifest.json)",
+      "path_resolved": null,
+      "owner_overseer": "Module owner: SKK",
+      "maturity_stage": "seed / concept",
+      "readiness_percent": 8,
+      "confidence_percent": 84,
+      "deployment_status": "HUB_MODULE_MANIFEST_ROW_ONLY",
+      "blockers": [
+        "Module status planned — no runtime deployment implied from manifest alone."
+      ],
+      "next_safe_tasks": [
+        "npm run z:registry:sync",
+        "npm run z:deployment:readiness",
+        "docs/Z-MASTER-MODULES-REGISTER.md alignment under separate human-gated PR"
+      ],
+      "estimated_build_phase": "Seed / doctrine",
+      "required_human_gate": "AMK-Goku for merge, deploy, NAS-class moves, billing, and production edge bind",
+      "related_reports": [
+        "data/reports/z_deployment_readiness_status.json",
+        "data/reports/z_zuno_coverage_audit.json"
+      ],
+      "related_docs": [
+        "docs/Z-MASTER-MODULES-REGISTER.md",
+        "docs/Z_DEPLOYMENT_READINESS_OVERSEER.md"
+      ],
+      "module_layer": "core",
+      "module_status": "planned"
+    },
+    {
+      "entity_kind": "hub_module",
+      "project_id": "module:core-chronicle-hud",
+      "project_name": "core-chronicle-hud — Chronicle HUD display layer.",
+      "path": "(hub manifest row — data/z_module_manifest.json)",
+      "path_resolved": null,
+      "owner_overseer": "Module owner: SKK",
+      "maturity_stage": "seed / concept",
+      "readiness_percent": 8,
+      "confidence_percent": 84,
+      "deployment_status": "HUB_MODULE_MANIFEST_ROW_ONLY",
+      "blockers": [
+        "Module status planned — no runtime deployment implied from manifest alone."
+      ],
+      "next_safe_tasks": [
+        "npm run z:registry:sync",
+        "npm run z:deployment:readiness",
+        "docs/Z-MASTER-MODULES-REGISTER.md alignment under separate human-gated PR"
+      ],
+      "estimated_build_phase": "Seed / doctrine",
+      "required_human_gate": "AMK-Goku for merge, deploy, NAS-class moves, billing, and production edge bind",
+      "related_reports": [
+        "data/reports/z_deployment_readiness_status.json",
+        "data/reports/z_zuno_coverage_audit.json"
+      ],
+      "related_docs": [
+        "docs/Z-MASTER-MODULES-REGISTER.md",
+        "docs/Z_DEPLOYMENT_READINESS_OVERSEER.md"
+      ],
+      "module_layer": "core",
+      "module_status": "planned"
+    },
+    {
+      "entity_kind": "hub_module",
+      "project_id": "module:autopilot-engine",
+      "project_name": "autopilot-engine — Super Saiyan Autopilot control plane.",
+      "path": "(hub manifest row — data/z_module_manifest.json)",
+      "path_resolved": null,
+      "owner_overseer": "Module owner: SKK",
+      "maturity_stage": "seed / concept",
+      "readiness_percent": 8,
+      "confidence_percent": 84,
+      "deployment_status": "HUB_MODULE_MANIFEST_ROW_ONLY",
+      "blockers": [
+        "Module status planned — no runtime deployment implied from manifest alone."
+      ],
+      "next_safe_tasks": [
+        "npm run z:registry:sync",
+        "npm run z:deployment:readiness",
+        "docs/Z-MASTER-MODULES-REGISTER.md alignment under separate human-gated PR"
+      ],
+      "estimated_build_phase": "Seed / doctrine",
+      "required_human_gate": "AMK-Goku for merge, deploy, NAS-class moves, billing, and production edge bind",
+      "related_reports": [
+        "data/reports/z_deployment_readiness_status.json",
+        "data/reports/z_zuno_coverage_audit.json"
+      ],
+      "related_docs": [
+        "docs/Z-MASTER-MODULES-REGISTER.md",
+        "docs/Z_DEPLOYMENT_READINESS_OVERSEER.md"
+      ],
+      "module_layer": "core",
+      "module_status": "planned"
+    },
+    {
+      "entity_kind": "hub_module",
+      "project_id": "module:sepc-governance",
+      "project_name": "sepc-governance — Security, Etiquette, Protocol & Compassion gate.",
+      "path": "(hub manifest row — data/z_module_manifest.json)",
+      "path_resolved": null,
+      "owner_overseer": "Module owner: SKK+RKPK",
+      "maturity_stage": "seed / concept",
+      "readiness_percent": 8,
+      "confidence_percent": 84,
+      "deployment_status": "HUB_MODULE_MANIFEST_ROW_ONLY",
+      "blockers": [
+        "Module status planned — no runtime deployment implied from manifest alone."
+      ],
+      "next_safe_tasks": [
+        "npm run z:registry:sync",
+        "npm run z:deployment:readiness",
+        "docs/Z-MASTER-MODULES-REGISTER.md alignment under separate human-gated PR"
+      ],
+      "estimated_build_phase": "Seed / doctrine",
+      "required_human_gate": "AMK-Goku for merge, deploy, NAS-class moves, billing, and production edge bind",
+      "related_reports": [
+        "data/reports/z_deployment_readiness_status.json",
+        "data/reports/z_zuno_coverage_audit.json"
+      ],
+      "related_docs": [
+        "docs/Z-MASTER-MODULES-REGISTER.md",
+        "docs/Z_DEPLOYMENT_READINESS_OVERSEER.md"
+      ],
+      "module_layer": "governance",
+      "module_status": "planned"
+    },
+    {
+      "entity_kind": "hub_module",
+      "project_id": "module:skk-companion",
+      "project_name": "skk-companion — Wisdom and lawful stability.",
+      "path": "(hub manifest row — data/z_module_manifest.json)",
+      "path_resolved": null,
+      "owner_overseer": "Module owner: SKK",
+      "maturity_stage": "seed / concept",
+      "readiness_percent": 8,
+      "confidence_percent": 84,
+      "deployment_status": "HUB_MODULE_MANIFEST_ROW_ONLY",
+      "blockers": [
+        "Module status planned — no runtime deployment implied from manifest alone."
+      ],
+      "next_safe_tasks": [
+        "npm run z:registry:sync",
+        "npm run z:deployment:readiness",
+        "docs/Z-MASTER-MODULES-REGISTER.md alignment under separate human-gated PR"
+      ],
+      "estimated_build_phase": "Seed / doctrine",
+      "required_human_gate": "AMK-Goku for merge, deploy, NAS-class moves, billing, and production edge bind",
+      "related_reports": [
+        "data/reports/z_deployment_readiness_status.json",
+        "data/reports/z_zuno_coverage_audit.json"
+      ],
+      "related_docs": [
+        "docs/Z-MASTER-MODULES-REGISTER.md",
+        "docs/Z_DEPLOYMENT_READINESS_OVERSEER.md"
+      ],
+      "module_layer": "ai-companion",
+      "module_status": "planned"
+    },
+    {
+      "entity_kind": "hub_module",
+      "project_id": "module:rkpk-companion",
+      "project_name": "rkpk-companion — Compassion and gentle resolution.",
+      "path": "(hub manifest row — data/z_module_manifest.json)",
+      "path_resolved": null,
+      "owner_overseer": "Module owner: RKPK",
+      "maturity_stage": "seed / concept",
+      "readiness_percent": 8,
+      "confidence_percent": 84,
+      "deployment_status": "HUB_MODULE_MANIFEST_ROW_ONLY",
+      "blockers": [
+        "Module status planned — no runtime deployment implied from manifest alone."
+      ],
+      "next_safe_tasks": [
+        "npm run z:registry:sync",
+        "npm run z:deployment:readiness",
+        "docs/Z-MASTER-MODULES-REGISTER.md alignment under separate human-gated PR"
+      ],
+      "estimated_build_phase": "Seed / doctrine",
+      "required_human_gate": "AMK-Goku for merge, deploy, NAS-class moves, billing, and production edge bind",
+      "related_reports": [
+        "data/reports/z_deployment_readiness_status.json",
+        "data/reports/z_zuno_coverage_audit.json"
+      ],
+      "related_docs": [
+        "docs/Z-MASTER-MODULES-REGISTER.md",
+        "docs/Z_DEPLOYMENT_READINESS_OVERSEER.md"
+      ],
+      "module_layer": "ai-companion",
+      "module_status": "planned"
+    },
+    {
+      "entity_kind": "hub_module",
+      "project_id": "module:ai-tower",
+      "project_name": "ai-tower — Multi-agent reasoning and oversight tower.",
+      "path": "(hub manifest row — data/z_module_manifest.json)",
+      "path_resolved": null,
+      "owner_overseer": "Module owner: SKK+RKPK",
+      "maturity_stage": "seed / concept",
+      "readiness_percent": 8,
+      "confidence_percent": 84,
+      "deployment_status": "HUB_MODULE_MANIFEST_ROW_ONLY",
+      "blockers": [
+        "Module status planned — no runtime deployment implied from manifest alone."
+      ],
+      "next_safe_tasks": [
+        "npm run z:registry:sync",
+        "npm run z:deployment:readiness",
+        "docs/Z-MASTER-MODULES-REGISTER.md alignment under separate human-gated PR"
+      ],
+      "estimated_build_phase": "Seed / doctrine",
+      "required_human_gate": "AMK-Goku for merge, deploy, NAS-class moves, billing, and production edge bind",
+      "related_reports": [
+        "data/reports/z_deployment_readiness_status.json",
+        "data/reports/z_zuno_coverage_audit.json"
+      ],
+      "related_docs": [
+        "docs/Z-MASTER-MODULES-REGISTER.md",
+        "docs/Z_DEPLOYMENT_READINESS_OVERSEER.md"
+      ],
+      "module_layer": "ai-tower",
+      "module_status": "planned"
+    },
+    {
+      "entity_kind": "hub_module",
+      "project_id": "module:ai-agent-scribe",
+      "project_name": "ai-agent-scribe — Logs, summaries, and reflections.",
+      "path": "(hub manifest row — data/z_module_manifest.json)",
+      "path_resolved": null,
+      "owner_overseer": "Module owner: SKK",
+      "maturity_stage": "seed / concept",
+      "readiness_percent": 8,
+      "confidence_percent": 84,
+      "deployment_status": "HUB_MODULE_MANIFEST_ROW_ONLY",
+      "blockers": [
+        "Module status planned — no runtime deployment implied from manifest alone."
+      ],
+      "next_safe_tasks": [
+        "npm run z:registry:sync",
+        "npm run z:deployment:readiness",
+        "docs/Z-MASTER-MODULES-REGISTER.md alignment under separate human-gated PR"
+      ],
+      "estimated_build_phase": "Seed / doctrine",
+      "required_human_gate": "AMK-Goku for merge, deploy, NAS-class moves, billing, and production edge bind",
+      "related_reports": [
+        "data/reports/z_deployment_readiness_status.json",
+        "data/reports/z_zuno_coverage_audit.json"
+      ],
+      "related_docs": [
+        "docs/Z-MASTER-MODULES-REGISTER.md",
+        "docs/Z_DEPLOYMENT_READINESS_OVERSEER.md"
+      ],
+      "module_layer": "ai-agent",
+      "module_status": "planned"
+    },
+    {
+      "entity_kind": "hub_module",
+      "project_id": "module:ai-agent-protector",
+      "project_name": "ai-agent-protector — Security and runtime monitoring.",
+      "path": "(hub manifest row — data/z_module_manifest.json)",
+      "path_resolved": null,
+      "owner_overseer": "Module owner: SKK",
+      "maturity_stage": "seed / concept",
+      "readiness_percent": 8,
+      "confidence_percent": 84,
+      "deployment_status": "HUB_MODULE_MANIFEST_ROW_ONLY",
+      "blockers": [
+        "Module status planned — no runtime deployment implied from manifest alone."
+      ],
+      "next_safe_tasks": [
+        "npm run z:registry:sync",
+        "npm run z:deployment:readiness",
+        "docs/Z-MASTER-MODULES-REGISTER.md alignment under separate human-gated PR"
+      ],
+      "estimated_build_phase": "Seed / doctrine",
+      "required_human_gate": "AMK-Goku for merge, deploy, NAS-class moves, billing, and production edge bind",
+      "related_reports": [
+        "data/reports/z_deployment_readiness_status.json",
+        "data/reports/z_zuno_coverage_audit.json"
+      ],
+      "related_docs": [
+        "docs/Z-MASTER-MODULES-REGISTER.md",
+        "docs/Z_DEPLOYMENT_READINESS_OVERSEER.md"
+      ],
+      "module_layer": "ai-agent",
+      "module_status": "planned"
+    },
+    {
+      "entity_kind": "hub_module",
+      "project_id": "module:ai-agent-designer",
+      "project_name": "ai-agent-designer — UI and style advisor.",
+      "path": "(hub manifest row — data/z_module_manifest.json)",
+      "path_resolved": null,
+      "owner_overseer": "Module owner: RKPK",
+      "maturity_stage": "seed / concept",
+      "readiness_percent": 8,
+      "confidence_percent": 84,
+      "deployment_status": "HUB_MODULE_MANIFEST_ROW_ONLY",
+      "blockers": [
+        "Module status planned — no runtime deployment implied from manifest alone."
+      ],
+      "next_safe_tasks": [
+        "npm run z:registry:sync",
+        "npm run z:deployment:readiness",
+        "docs/Z-MASTER-MODULES-REGISTER.md alignment under separate human-gated PR"
+      ],
+      "estimated_build_phase": "Seed / doctrine",
+      "required_human_gate": "AMK-Goku for merge, deploy, NAS-class moves, billing, and production edge bind",
+      "related_reports": [
+        "data/reports/z_deployment_readiness_status.json",
+        "data/reports/z_zuno_coverage_audit.json"
+      ],
+      "related_docs": [
+        "docs/Z-MASTER-MODULES-REGISTER.md",
+        "docs/Z_DEPLOYMENT_READINESS_OVERSEER.md"
+      ],
+      "module_layer": "ai-agent",
+      "module_status": "planned"
+    },
+    {
+      "entity_kind": "hub_module",
+      "project_id": "module:ai-agent-navigator",
+      "project_name": "ai-agent-navigator — Next-step and safety guidance.",
+      "path": "(hub manifest row — data/z_module_manifest.json)",
+      "path_resolved": null,
+      "owner_overseer": "Module owner: SKK",
+      "maturity_stage": "seed / concept",
+      "readiness_percent": 8,
+      "confidence_percent": 84,
+      "deployment_status": "HUB_MODULE_MANIFEST_ROW_ONLY",
+      "blockers": [
+        "Module status planned — no runtime deployment implied from manifest alone."
+      ],
+      "next_safe_tasks": [
+        "npm run z:registry:sync",
+        "npm run z:deployment:readiness",
+        "docs/Z-MASTER-MODULES-REGISTER.md alignment under separate human-gated PR"
+      ],
+      "estimated_build_phase": "Seed / doctrine",
+      "required_human_gate": "AMK-Goku for merge, deploy, NAS-class moves, billing, and production edge bind",
+      "related_reports": [
+        "data/reports/z_deployment_readiness_status.json",
+        "data/reports/z_zuno_coverage_audit.json"
+      ],
+      "related_docs": [
+        "docs/Z-MASTER-MODULES-REGISTER.md",
+        "docs/Z_DEPLOYMENT_READINESS_OVERSEER.md"
+      ],
+      "module_layer": "ai-agent",
+      "module_status": "planned"
+    },
+    {
+      "entity_kind": "hub_module",
+      "project_id": "module:roulette-calculator",
+      "project_name": "roulette-calculator — Legacy Roulette Calculator workspace imported and linked to Z-Modules Registry.",
+      "path": "(hub manifest row — data/z_module_manifest.json)",
+      "path_resolved": null,
+      "owner_overseer": "Module owner: Community",
+      "maturity_stage": "seed / concept",
+      "readiness_percent": 14,
+      "confidence_percent": 84,
+      "deployment_status": "HUB_MODULE_MANIFEST_ROW_ONLY",
+      "blockers": [],
+      "next_safe_tasks": [
+        "npm run z:registry:sync",
+        "npm run z:deployment:readiness",
+        "docs/Z-MASTER-MODULES-REGISTER.md alignment under separate human-gated PR"
+      ],
+      "estimated_build_phase": "Seed / doctrine",
+      "required_human_gate": "AMK-Goku for merge, deploy, NAS-class moves, billing, and production edge bind",
+      "related_reports": [
+        "data/reports/z_deployment_readiness_status.json",
+        "data/reports/z_zuno_coverage_audit.json"
+      ],
+      "related_docs": [
+        "docs/Z-MASTER-MODULES-REGISTER.md",
+        "docs/Z_DEPLOYMENT_READINESS_OVERSEER.md"
+      ],
+      "module_layer": "analytics",
+      "module_status": "imported"
+    },
+    {
+      "entity_kind": "hub_module",
+      "project_id": "module:social-arena",
+      "project_name": "social-arena — Social Arena profiles, chat, and streams.",
+      "path": "(hub manifest row — data/z_module_manifest.json)",
+      "path_resolved": null,
+      "owner_overseer": "Module owner: RKPK",
+      "maturity_stage": "seed / concept",
+      "readiness_percent": 8,
+      "confidence_percent": 84,
+      "deployment_status": "HUB_MODULE_MANIFEST_ROW_ONLY",
+      "blockers": [
+        "Module status planned — no runtime deployment implied from manifest alone."
+      ],
+      "next_safe_tasks": [
+        "npm run z:registry:sync",
+        "npm run z:deployment:readiness",
+        "docs/Z-MASTER-MODULES-REGISTER.md alignment under separate human-gated PR"
+      ],
+      "estimated_build_phase": "Seed / doctrine",
+      "required_human_gate": "AMK-Goku for merge, deploy, NAS-class moves, billing, and production edge bind",
+      "related_reports": [
+        "data/reports/z_deployment_readiness_status.json",
+        "data/reports/z_zuno_coverage_audit.json"
+      ],
+      "related_docs": [
+        "docs/Z-MASTER-MODULES-REGISTER.md",
+        "docs/Z_DEPLOYMENT_READINESS_OVERSEER.md"
+      ],
+      "module_layer": "social",
+      "module_status": "planned"
+    },
+    {
+      "entity_kind": "hub_module",
+      "project_id": "module:roulette",
+      "project_name": "roulette",
+      "path": "(hub manifest row — data/z_module_manifest.json)",
+      "path_resolved": null,
+      "owner_overseer": "Module owner: Omega",
+      "maturity_stage": "seed / concept",
+      "readiness_percent": 14,
+      "confidence_percent": 84,
+      "deployment_status": "HUB_MODULE_MANIFEST_ROW_ONLY",
+      "blockers": [],
+      "next_safe_tasks": [
+        "npm run z:registry:sync",
+        "npm run z:deployment:readiness",
+        "docs/Z-MASTER-MODULES-REGISTER.md alignment under separate human-gated PR"
+      ],
+      "estimated_build_phase": "Seed / doctrine",
+      "required_human_gate": "AMK-Goku for merge, deploy, NAS-class moves, billing, and production edge bind",
+      "related_reports": [
+        "data/reports/z_deployment_readiness_status.json",
+        "data/reports/z_zuno_coverage_audit.json"
+      ],
+      "related_docs": [
+        "docs/Z-MASTER-MODULES-REGISTER.md",
+        "docs/Z_DEPLOYMENT_READINESS_OVERSEER.md"
+      ],
+      "module_layer": "games",
+      "module_status": "ready"
+    },
+    {
+      "entity_kind": "hub_module",
+      "project_id": "module:z-soundscape-living-pulse",
+      "project_name": "z-soundscape-living-pulse — Acoustic Cognition Gene: passive+active posture from reports; Living Pulse panel; task Z: Soundscape Posture.",
+      "path": "(hub manifest row — data/z_module_manifest.json)",
+      "path_resolved": null,
+      "owner_overseer": "Module owner: SKK",
+      "maturity_stage": "seed / concept",
+      "readiness_percent": 14,
+      "confidence_percent": 84,
+      "deployment_status": "HUB_MODULE_MANIFEST_ROW_ONLY",
+      "blockers": [],
+      "next_safe_tasks": [
+        "npm run z:registry:sync",
+        "npm run z:deployment:readiness",
+        "docs/Z-MASTER-MODULES-REGISTER.md alignment under separate human-gated PR"
+      ],
+      "estimated_build_phase": "Seed / doctrine",
+      "required_human_gate": "AMK-Goku for merge, deploy, NAS-class moves, billing, and production edge bind",
+      "related_reports": [
+        "data/reports/z_deployment_readiness_status.json",
+        "data/reports/z_zuno_coverage_audit.json"
+      ],
+      "related_docs": [
+        "docs/Z-MASTER-MODULES-REGISTER.md",
+        "docs/Z_DEPLOYMENT_READINESS_OVERSEER.md"
+      ],
+      "module_layer": "core",
+      "module_status": "ready"
+    },
+    {
+      "entity_kind": "hub_module",
+      "project_id": "module:z-super-chat-orchestrator",
+      "project_name": "z-super-chat-orchestrator — Local-first voice+text orchestrator across registered projects with citations, policy gate, approval actions, and evidence spine.",
+      "path": "(hub manifest row — data/z_module_manifest.json)",
+      "path_resolved": null,
+      "owner_overseer": "Module owner: Z-EAII+SKK+RKPK",
+      "maturity_stage": "seed / concept",
+      "readiness_percent": 14,
+      "confidence_percent": 84,
+      "deployment_status": "HUB_MODULE_MANIFEST_ROW_ONLY",
+      "blockers": [],
+      "next_safe_tasks": [
+        "npm run z:registry:sync",
+        "npm run z:deployment:readiness",
+        "docs/Z-MASTER-MODULES-REGISTER.md alignment under separate human-gated PR"
+      ],
+      "estimated_build_phase": "Seed / doctrine",
+      "required_human_gate": "AMK-Goku for merge, deploy, NAS-class moves, billing, and production edge bind",
+      "related_reports": [
+        "data/reports/z_deployment_readiness_status.json",
+        "data/reports/z_zuno_coverage_audit.json"
+      ],
+      "related_docs": [
+        "docs/Z-MASTER-MODULES-REGISTER.md",
+        "docs/Z_DEPLOYMENT_READINESS_OVERSEER.md"
+      ],
+      "module_layer": "ai-tower",
+      "module_status": "blueprint-ready"
+    },
+    {
+      "entity_kind": "hub_module",
+      "project_id": "module:z-ai-qadp",
+      "project_name": "z-ai-qadp — Hub methodology: structured Q, citation-backed A, explicit pathways for follow-up vs bounded autonomy; registry-first and verifier-linked to limit cross-project mix-ups.",
+      "path": "(hub manifest row — data/z_module_manifest.json)",
+      "path_resolved": null,
+      "owner_overseer": "Module owner: Z-Super Overseer+Z-EAII",
+      "maturity_stage": "seed / concept",
+      "readiness_percent": 14,
+      "confidence_percent": 84,
+      "deployment_status": "HUB_MODULE_MANIFEST_ROW_ONLY",
+      "blockers": [],
+      "next_safe_tasks": [
+        "npm run z:registry:sync",
+        "npm run z:deployment:readiness",
+        "docs/Z-MASTER-MODULES-REGISTER.md alignment under separate human-gated PR"
+      ],
+      "estimated_build_phase": "Seed / doctrine",
+      "required_human_gate": "AMK-Goku for merge, deploy, NAS-class moves, billing, and production edge bind",
+      "related_reports": [
+        "data/reports/z_deployment_readiness_status.json",
+        "data/reports/z_zuno_coverage_audit.json"
+      ],
+      "related_docs": [
+        "docs/Z-MASTER-MODULES-REGISTER.md",
+        "docs/Z_DEPLOYMENT_READINESS_OVERSEER.md"
+      ],
+      "module_layer": "governance",
+      "module_status": "doc-ready"
+    },
+    {
+      "entity_kind": "hub_module",
+      "project_id": "module:z-cursor-folder-blueprint",
+      "project_name": "z-cursor-folder-blueprint — JSON blueprint + bootstrap/verify scripts and operator doc so Cursor AI and humans keep the same directory spine across Cursor versions and multi-root workspaces.",
+      "path": "(hub manifest row — data/z_module_manifest.json)",
+      "path_resolved": null,
+      "owner_overseer": "Module owner: Zuno+Z-EAII",
+      "maturity_stage": "seed / concept",
+      "readiness_percent": 14,
+      "confidence_percent": 84,
+      "deployment_status": "HUB_MODULE_MANIFEST_ROW_ONLY",
+      "blockers": [],
+      "next_safe_tasks": [
+        "npm run z:registry:sync",
+        "npm run z:deployment:readiness",
+        "docs/Z-MASTER-MODULES-REGISTER.md alignment under separate human-gated PR"
+      ],
+      "estimated_build_phase": "Seed / doctrine",
+      "required_human_gate": "AMK-Goku for merge, deploy, NAS-class moves, billing, and production edge bind",
+      "related_reports": [
+        "data/reports/z_deployment_readiness_status.json",
+        "data/reports/z_zuno_coverage_audit.json"
+      ],
+      "related_docs": [
+        "docs/Z-MASTER-MODULES-REGISTER.md",
+        "docs/Z_DEPLOYMENT_READINESS_OVERSEER.md"
+      ],
+      "module_layer": "ops",
+      "module_status": "ready"
+    },
+    {
+      "entity_kind": "hub_module",
+      "project_id": "module:z-sanctuary-core-wrapper",
+      "project_name": "z-sanctuary-core-wrapper — Workspace package: loadPcRootProjects from real z_pc_root_projects.json; runVerifyCI delegates to npm run verify:ci — no duplicate registry.",
+      "path": "(hub manifest row — data/z_module_manifest.json)",
+      "path_resolved": null,
+      "owner_overseer": "Module owner: Zuno+Z-EAII",
+      "maturity_stage": "seed / concept",
+      "readiness_percent": 14,
+      "confidence_percent": 84,
+      "deployment_status": "HUB_MODULE_MANIFEST_ROW_ONLY",
+      "blockers": [],
+      "next_safe_tasks": [
+        "npm run z:registry:sync",
+        "npm run z:deployment:readiness",
+        "docs/Z-MASTER-MODULES-REGISTER.md alignment under separate human-gated PR"
+      ],
+      "estimated_build_phase": "Seed / doctrine",
+      "required_human_gate": "AMK-Goku for merge, deploy, NAS-class moves, billing, and production edge bind",
+      "related_reports": [
+        "data/reports/z_deployment_readiness_status.json",
+        "data/reports/z_zuno_coverage_audit.json"
+      ],
+      "related_docs": [
+        "docs/Z-MASTER-MODULES-REGISTER.md",
+        "docs/Z_DEPLOYMENT_READINESS_OVERSEER.md"
+      ],
+      "module_layer": "packages",
+      "module_status": "ready"
+    },
+    {
+      "entity_kind": "hub_module",
+      "project_id": "module:z-papao-precautions-advisor",
+      "project_name": "z-papao-precautions-advisor — Read-only pre-alert brief from hub reports + registry paths. npm run papao:precaution-emit → data/reports/z_papao_precaution_brief.{json,md}. Dashboard: z-ai-ecosphere.",
+      "path": "(hub manifest row — data/z_module_manifest.json)",
+      "path_resolved": null,
+      "owner_overseer": "Module owner: Zuno+Z-EAII",
+      "maturity_stage": "seed / concept",
+      "readiness_percent": 14,
+      "confidence_percent": 84,
+      "deployment_status": "HUB_MODULE_MANIFEST_ROW_ONLY",
+      "blockers": [],
+      "next_safe_tasks": [
+        "npm run z:registry:sync",
+        "npm run z:deployment:readiness",
+        "docs/Z-MASTER-MODULES-REGISTER.md alignment under separate human-gated PR"
+      ],
+      "estimated_build_phase": "Seed / doctrine",
+      "required_human_gate": "AMK-Goku for merge, deploy, NAS-class moves, billing, and production edge bind",
+      "related_reports": [
+        "data/reports/z_deployment_readiness_status.json",
+        "data/reports/z_zuno_coverage_audit.json"
+      ],
+      "related_docs": [
+        "docs/Z-MASTER-MODULES-REGISTER.md",
+        "docs/Z_DEPLOYMENT_READINESS_OVERSEER.md"
+      ],
+      "module_layer": "governance",
+      "module_status": "ready"
+    },
+    {
+      "entity_kind": "hub_module",
+      "project_id": "module:z-krtaa-curriculum-emitter",
+      "project_name": "z-krtaa-curriculum-emitter — Read-only ingest of hub reports; emits advisory curriculum JSON + Markdown (npm run krtaa:curriculum-emit). Dashboard: dashboard/z-ai-ecosphere. Prompt packs v3: docs/z-krtaa-prompt-packs/. HODP links in Control Centre + Blueprint.",
+      "path": "(hub manifest row — data/z_module_manifest.json)",
+      "path_resolved": null,
+      "owner_overseer": "Module owner: Zuno+Z-EAII",
+      "maturity_stage": "seed / concept",
+      "readiness_percent": 14,
+      "confidence_percent": 84,
+      "deployment_status": "HUB_MODULE_MANIFEST_ROW_ONLY",
+      "blockers": [],
+      "next_safe_tasks": [
+        "npm run z:registry:sync",
+        "npm run z:deployment:readiness",
+        "docs/Z-MASTER-MODULES-REGISTER.md alignment under separate human-gated PR"
+      ],
+      "estimated_build_phase": "Seed / doctrine",
+      "required_human_gate": "AMK-Goku for merge, deploy, NAS-class moves, billing, and production edge bind",
+      "related_reports": [
+        "data/reports/z_deployment_readiness_status.json",
+        "data/reports/z_zuno_coverage_audit.json"
+      ],
+      "related_docs": [
+        "docs/Z-MASTER-MODULES-REGISTER.md",
+        "docs/Z_DEPLOYMENT_READINESS_OVERSEER.md"
+      ],
+      "module_layer": "ecosphere",
+      "module_status": "ready"
+    },
+    {
+      "entity_kind": "hub_module",
+      "project_id": "module:z-fhmff-lite",
+      "project_name": "z-fhmff-lite — Advisory: stale comms observers, AAFRTC, learning inactivity, signal cold, comms flow, planned backlog. Pairs with RTRO. scripts/z_fhmff_lite.mjs; npm run ai:fhmff:lite. No auto-fix.",
+      "path": "(hub manifest row — data/z_module_manifest.json)",
+      "path_resolved": null,
+      "owner_overseer": "Module owner: Zuno+Z-EAII",
+      "maturity_stage": "seed / concept",
+      "readiness_percent": 14,
+      "confidence_percent": 84,
+      "deployment_status": "HUB_MODULE_MANIFEST_ROW_ONLY",
+      "blockers": [],
+      "next_safe_tasks": [
+        "npm run z:registry:sync",
+        "npm run z:deployment:readiness",
+        "docs/Z-MASTER-MODULES-REGISTER.md alignment under separate human-gated PR"
+      ],
+      "estimated_build_phase": "Seed / doctrine",
+      "required_human_gate": "AMK-Goku for merge, deploy, NAS-class moves, billing, and production edge bind",
+      "related_reports": [
+        "data/reports/z_deployment_readiness_status.json",
+        "data/reports/z_zuno_coverage_audit.json"
+      ],
+      "related_docs": [
+        "docs/Z-MASTER-MODULES-REGISTER.md",
+        "docs/Z_DEPLOYMENT_READINESS_OVERSEER.md"
+      ],
+      "module_layer": "governance",
+      "module_status": "ready"
+    },
+    {
+      "entity_kind": "hub_module",
+      "project_id": "module:z-zecce-confirmations",
+      "project_name": "z-zecce-confirmations — Bounded verifier chain (registry, structure, formulas, AI consistency, vault spine) → one JSON/MD receipt. Advisory only: no enforcer or release control. npm run z:codex:zecce:verify.",
+      "path": "(hub manifest row — data/z_module_manifest.json)",
+      "path_resolved": null,
+      "owner_overseer": "Module owner: Zuno+Z-EAII",
+      "maturity_stage": "seed / concept",
+      "readiness_percent": 14,
+      "confidence_percent": 84,
+      "deployment_status": "HUB_MODULE_MANIFEST_ROW_ONLY",
+      "blockers": [],
+      "next_safe_tasks": [
+        "npm run z:registry:sync",
+        "npm run z:deployment:readiness",
+        "docs/Z-MASTER-MODULES-REGISTER.md alignment under separate human-gated PR"
+      ],
+      "estimated_build_phase": "Seed / doctrine",
+      "required_human_gate": "AMK-Goku for merge, deploy, NAS-class moves, billing, and production edge bind",
+      "related_reports": [
+        "data/reports/z_deployment_readiness_status.json",
+        "data/reports/z_zuno_coverage_audit.json"
+      ],
+      "related_docs": [
+        "docs/Z-MASTER-MODULES-REGISTER.md",
+        "docs/Z_DEPLOYMENT_READINESS_OVERSEER.md"
+      ],
+      "module_layer": "governance",
+      "module_status": "ready"
+    },
+    {
+      "entity_kind": "hub_module",
+      "project_id": "module:z-ecosphere-transparency-report",
+      "project_name": "z-ecosphere-transparency-report — HTML report from zuno JSON (Chart.js + Mermaid + ZECCE). PPTX: npm run report:ecosphere:pptx. PDF: browser print. See docs/public/z_ecosphere_transparency_report/README.md.",
+      "path": "(hub manifest row — data/z_module_manifest.json)",
+      "path_resolved": null,
+      "owner_overseer": "Module owner: Zuno+Z-EAII",
+      "maturity_stage": "seed / concept",
+      "readiness_percent": 14,
+      "confidence_percent": 84,
+      "deployment_status": "HUB_MODULE_MANIFEST_ROW_ONLY",
+      "blockers": [],
+      "next_safe_tasks": [
+        "npm run z:registry:sync",
+        "npm run z:deployment:readiness",
+        "docs/Z-MASTER-MODULES-REGISTER.md alignment under separate human-gated PR"
+      ],
+      "estimated_build_phase": "Seed / doctrine",
+      "required_human_gate": "AMK-Goku for merge, deploy, NAS-class moves, billing, and production edge bind",
+      "related_reports": [
+        "data/reports/z_deployment_readiness_status.json",
+        "data/reports/z_zuno_coverage_audit.json"
+      ],
+      "related_docs": [
+        "docs/Z-MASTER-MODULES-REGISTER.md",
+        "docs/Z_DEPLOYMENT_READINESS_OVERSEER.md"
+      ],
+      "module_layer": "ecosphere",
+      "module_status": "ready"
+    },
+    {
+      "entity_kind": "hub_module",
+      "project_id": "module:z-whale-bus-spine",
+      "project_name": "z-whale-bus-spine — data/z_whale_bus_spine.json: decks comms_sync + surface_reinforce. npm: z:whale-bus:comms+surfaces, z:whale-bus:surfaces. PS: Start-ZWhaleBusComms -CommsAndSurfaces. Ties to z_ai_ecosphere_config rings. docs/Z-WHALE-BUS-SPINE.md",
+      "path": "(hub manifest row — data/z_module_manifest.json)",
+      "path_resolved": null,
+      "owner_overseer": "Module owner: Zuno+Z-EAII",
+      "maturity_stage": "seed / concept",
+      "readiness_percent": 14,
+      "confidence_percent": 84,
+      "deployment_status": "HUB_MODULE_MANIFEST_ROW_ONLY",
+      "blockers": [],
+      "next_safe_tasks": [
+        "npm run z:registry:sync",
+        "npm run z:deployment:readiness",
+        "docs/Z-MASTER-MODULES-REGISTER.md alignment under separate human-gated PR"
+      ],
+      "estimated_build_phase": "Seed / doctrine",
+      "required_human_gate": "AMK-Goku for merge, deploy, NAS-class moves, billing, and production edge bind",
+      "related_reports": [
+        "data/reports/z_deployment_readiness_status.json",
+        "data/reports/z_zuno_coverage_audit.json"
+      ],
+      "related_docs": [
+        "docs/Z-MASTER-MODULES-REGISTER.md",
+        "docs/Z_DEPLOYMENT_READINESS_OVERSEER.md"
+      ],
+      "module_layer": "governance",
+      "module_status": "ready"
+    },
+    {
+      "entity_kind": "hub_module",
+      "project_id": "module:z-kbozsu",
+      "project_name": "z-kbozsu — Phase A+B codex: index + SHA-256 for core manifests + workspace lint snapshot (declared .code-workspace vs registry). Vault pointers only. npm run kbozsu:refresh · kbozsu:refresh:with-lint → data/reports/z_kbozsu_codex.json + .md",
+      "path": "(hub manifest row — data/z_module_manifest.json)",
+      "path_resolved": null,
+      "owner_overseer": "Module owner: Zuno+Z-EAII",
+      "maturity_stage": "seed / concept",
+      "readiness_percent": 14,
+      "confidence_percent": 84,
+      "deployment_status": "HUB_MODULE_MANIFEST_ROW_ONLY",
+      "blockers": [],
+      "next_safe_tasks": [
+        "npm run z:registry:sync",
+        "npm run z:deployment:readiness",
+        "docs/Z-MASTER-MODULES-REGISTER.md alignment under separate human-gated PR"
+      ],
+      "estimated_build_phase": "Seed / doctrine",
+      "required_human_gate": "AMK-Goku for merge, deploy, NAS-class moves, billing, and production edge bind",
+      "related_reports": [
+        "data/reports/z_deployment_readiness_status.json",
+        "data/reports/z_zuno_coverage_audit.json"
+      ],
+      "related_docs": [
+        "docs/Z-MASTER-MODULES-REGISTER.md",
+        "docs/Z_DEPLOYMENT_READINESS_OVERSEER.md"
+      ],
+      "module_layer": "ecosphere",
+      "module_status": "ready"
+    },
+    {
+      "entity_kind": "hub_module",
+      "project_id": "module:z-mini-bots-phase1",
+      "project_name": "z-mini-bots-phase1 — Observe-only: bot:guardian (PC paths vs registry), bot:sync (registry snapshot to bot_sync_snapshots/, not full tree), bot:health (Node/OS). bots/README.md",
+      "path": "(hub manifest row — data/z_module_manifest.json)",
+      "path_resolved": null,
+      "owner_overseer": "Module owner: Zuno+Z-EAII",
+      "maturity_stage": "seed / concept",
+      "readiness_percent": 14,
+      "confidence_percent": 84,
+      "deployment_status": "HUB_MODULE_MANIFEST_ROW_ONLY",
+      "blockers": [],
+      "next_safe_tasks": [
+        "npm run z:registry:sync",
+        "npm run z:deployment:readiness",
+        "docs/Z-MASTER-MODULES-REGISTER.md alignment under separate human-gated PR"
+      ],
+      "estimated_build_phase": "Seed / doctrine",
+      "required_human_gate": "AMK-Goku for merge, deploy, NAS-class moves, billing, and production edge bind",
+      "related_reports": [
+        "data/reports/z_deployment_readiness_status.json",
+        "data/reports/z_zuno_coverage_audit.json"
+      ],
+      "related_docs": [
+        "docs/Z-MASTER-MODULES-REGISTER.md",
+        "docs/Z_DEPLOYMENT_READINESS_OVERSEER.md"
+      ],
+      "module_layer": "governance",
+      "module_status": "ready"
+    },
+    {
+      "entity_kind": "hub_module",
+      "project_id": "module:z-qosmei-core-signal-fusion",
+      "project_name": "z-qosmei-core-signal-fusion — Advisory fusion vector from guardian/alerts/decisions/patterns/rootcause/predict/adaptive/execution. Emits z_qosmei_core_signal.{json,md} for dashboard rail, AI status, Whale Bus, and Zuno.",
+      "path": "(hub manifest row — data/z_module_manifest.json)",
+      "path_resolved": null,
+      "owner_overseer": "Module owner: Zuno+Z-EAII",
+      "maturity_stage": "seed / concept",
+      "readiness_percent": 14,
+      "confidence_percent": 84,
+      "deployment_status": "HUB_MODULE_MANIFEST_ROW_ONLY",
+      "blockers": [],
+      "next_safe_tasks": [
+        "npm run z:registry:sync",
+        "npm run z:deployment:readiness",
+        "docs/Z-MASTER-MODULES-REGISTER.md alignment under separate human-gated PR"
+      ],
+      "estimated_build_phase": "Seed / doctrine",
+      "required_human_gate": "AMK-Goku for merge, deploy, NAS-class moves, billing, and production edge bind",
+      "related_reports": [
+        "data/reports/z_deployment_readiness_status.json",
+        "data/reports/z_zuno_coverage_audit.json"
+      ],
+      "related_docs": [
+        "docs/Z-MASTER-MODULES-REGISTER.md",
+        "docs/Z_DEPLOYMENT_READINESS_OVERSEER.md"
+      ],
+      "module_layer": "governance",
+      "module_status": "ready"
+    },
+    {
+      "entity_kind": "hub_module",
+      "project_id": "module:z-structural-pattern-intelligence",
+      "project_name": "z-structural-pattern-intelligence — Cross-layer advisory (v2): predictive_signals, evolution_phase, decision_suggestions, pre_warnings file for Guardian. Emits z_structural_patterns.{json,md} + z_spi_guardian_pre_warnings.json.",
+      "path": "(hub manifest row — data/z_module_manifest.json)",
+      "path_resolved": null,
+      "owner_overseer": "Module owner: Zuno+Z-EAII",
+      "maturity_stage": "seed / concept",
+      "readiness_percent": 14,
+      "confidence_percent": 84,
+      "deployment_status": "HUB_MODULE_MANIFEST_ROW_ONLY",
+      "blockers": [],
+      "next_safe_tasks": [
+        "npm run z:registry:sync",
+        "npm run z:deployment:readiness",
+        "docs/Z-MASTER-MODULES-REGISTER.md alignment under separate human-gated PR"
+      ],
+      "estimated_build_phase": "Seed / doctrine",
+      "required_human_gate": "AMK-Goku for merge, deploy, NAS-class moves, billing, and production edge bind",
+      "related_reports": [
+        "data/reports/z_deployment_readiness_status.json",
+        "data/reports/z_zuno_coverage_audit.json"
+      ],
+      "related_docs": [
+        "docs/Z-MASTER-MODULES-REGISTER.md",
+        "docs/Z_DEPLOYMENT_READINESS_OVERSEER.md"
+      ],
+      "module_layer": "governance",
+      "module_status": "ready"
+    },
+    {
+      "entity_kind": "hub_module",
+      "project_id": "module:z-spi-decision-advisor",
+      "project_name": "z-spi-decision-advisor — Advisory merge of SPI decision_suggestions with pending governance rows → z_spi_decision_advice.{json,md}. Dashboard panel dashboard/panels/z_decision_panel.html.",
+      "path": "(hub manifest row — data/z_module_manifest.json)",
+      "path_resolved": null,
+      "owner_overseer": "Module owner: Zuno+Z-EAII",
+      "maturity_stage": "seed / concept",
+      "readiness_percent": 14,
+      "confidence_percent": 84,
+      "deployment_status": "HUB_MODULE_MANIFEST_ROW_ONLY",
+      "blockers": [],
+      "next_safe_tasks": [
+        "npm run z:registry:sync",
+        "npm run z:deployment:readiness",
+        "docs/Z-MASTER-MODULES-REGISTER.md alignment under separate human-gated PR"
+      ],
+      "estimated_build_phase": "Seed / doctrine",
+      "required_human_gate": "AMK-Goku for merge, deploy, NAS-class moves, billing, and production edge bind",
+      "related_reports": [
+        "data/reports/z_deployment_readiness_status.json",
+        "data/reports/z_zuno_coverage_audit.json"
+      ],
+      "related_docs": [
+        "docs/Z-MASTER-MODULES-REGISTER.md",
+        "docs/Z_DEPLOYMENT_READINESS_OVERSEER.md"
+      ],
+      "module_layer": "governance",
+      "module_status": "ready"
+    },
+    {
+      "entity_kind": "hub_module",
+      "project_id": "module:z-adaptive-learning-phase3",
+      "project_name": "z-adaptive-learning-phase3 — z_learning_evaluator (Guardian+resolve → z_learning_history.jsonl, z_learning_evaluation.json) + z_adaptive_weight_tuner → z_adaptive_learning_state.json. Injected into SPI score + QOSMEI. AL rail badge. Reversible: delete z_adaptive_learning_state.json",
+      "path": "(hub manifest row — data/z_module_manifest.json)",
+      "path_resolved": null,
+      "owner_overseer": "Module owner: Zuno+Z-EAII",
+      "maturity_stage": "seed / concept",
+      "readiness_percent": 14,
+      "confidence_percent": 84,
+      "deployment_status": "HUB_MODULE_MANIFEST_ROW_ONLY",
+      "blockers": [],
+      "next_safe_tasks": [
+        "npm run z:registry:sync",
+        "npm run z:deployment:readiness",
+        "docs/Z-MASTER-MODULES-REGISTER.md alignment under separate human-gated PR"
+      ],
+      "estimated_build_phase": "Seed / doctrine",
+      "required_human_gate": "AMK-Goku for merge, deploy, NAS-class moves, billing, and production edge bind",
+      "related_reports": [
+        "data/reports/z_deployment_readiness_status.json",
+        "data/reports/z_zuno_coverage_audit.json"
+      ],
+      "related_docs": [
+        "docs/Z-MASTER-MODULES-REGISTER.md",
+        "docs/Z_DEPLOYMENT_READINESS_OVERSEER.md"
+      ],
+      "module_layer": "governance",
+      "module_status": "ready"
+    },
+    {
+      "entity_kind": "hub_module",
+      "project_id": "module:z-cross-system-intelligence-phase4",
+      "project_name": "z-cross-system-intelligence-phase4 — Read-only synthesizer: SPI + adaptive state + QOSMEI → z_cross_system_learning.{json,md}. No execution, no tuner feed. QOSMEI reads prior run for small confidence/risk nudge. CS rail badge. npm run cross:system after qosmei:signal.",
+      "path": "(hub manifest row — data/z_module_manifest.json)",
+      "path_resolved": null,
+      "owner_overseer": "Module owner: Zuno+Z-EAII",
+      "maturity_stage": "seed / concept",
+      "readiness_percent": 14,
+      "confidence_percent": 84,
+      "deployment_status": "HUB_MODULE_MANIFEST_ROW_ONLY",
+      "blockers": [],
+      "next_safe_tasks": [
+        "npm run z:registry:sync",
+        "npm run z:deployment:readiness",
+        "docs/Z-MASTER-MODULES-REGISTER.md alignment under separate human-gated PR"
+      ],
+      "estimated_build_phase": "Seed / doctrine",
+      "required_human_gate": "AMK-Goku for merge, deploy, NAS-class moves, billing, and production edge bind",
+      "related_reports": [
+        "data/reports/z_deployment_readiness_status.json",
+        "data/reports/z_zuno_coverage_audit.json"
+      ],
+      "related_docs": [
+        "docs/Z-MASTER-MODULES-REGISTER.md",
+        "docs/Z_DEPLOYMENT_READINESS_OVERSEER.md"
+      ],
+      "module_layer": "governance",
+      "module_status": "ready"
+    },
+    {
+      "entity_kind": "hub_module",
+      "project_id": "module:z-predictive-intelligence-phase5",
+      "project_name": "z-predictive-intelligence-phase5 — Experience-weighted heuristics from SPI, learning, cross-system, patterns, decisions, QOSMEI → z_predictive_intelligence.{json,md}. Advisory-only; fusion_hint nudges QOSMEI when second qosmei:signal runs (Whale Bus). PR rail badge. npm run predictive:intel after cross:system.",
+      "path": "(hub manifest row — data/z_module_manifest.json)",
+      "path_resolved": null,
+      "owner_overseer": "Module owner: Zuno+Z-EAII",
+      "maturity_stage": "seed / concept",
+      "readiness_percent": 14,
+      "confidence_percent": 84,
+      "deployment_status": "HUB_MODULE_MANIFEST_ROW_ONLY",
+      "blockers": [],
+      "next_safe_tasks": [
+        "npm run z:registry:sync",
+        "npm run z:deployment:readiness",
+        "docs/Z-MASTER-MODULES-REGISTER.md alignment under separate human-gated PR"
+      ],
+      "estimated_build_phase": "Seed / doctrine",
+      "required_human_gate": "AMK-Goku for merge, deploy, NAS-class moves, billing, and production edge bind",
+      "related_reports": [
+        "data/reports/z_deployment_readiness_status.json",
+        "data/reports/z_zuno_coverage_audit.json"
+      ],
+      "related_docs": [
+        "docs/Z-MASTER-MODULES-REGISTER.md",
+        "docs/Z_DEPLOYMENT_READINESS_OVERSEER.md"
+      ],
+      "module_layer": "governance",
+      "module_status": "ready"
+    },
+    {
+      "entity_kind": "hub_module",
+      "project_id": "module:z-prediction-validation-phase55",
+      "project_name": "z-prediction-validation-phase55 — Heuristic check of predictive output vs decision/learning/pattern logs. Append-only data/logs/z_prediction_validation_history.jsonl. Feeds QOSMEI and next-run predictive confidence scaling. PV rail badge. npm run prediction:validate after predictive:intel.",
+      "path": "(hub manifest row — data/z_module_manifest.json)",
+      "path_resolved": null,
+      "owner_overseer": "Module owner: Zuno+Z-EAII",
+      "maturity_stage": "seed / concept",
+      "readiness_percent": 14,
+      "confidence_percent": 84,
+      "deployment_status": "HUB_MODULE_MANIFEST_ROW_ONLY",
+      "blockers": [],
+      "next_safe_tasks": [
+        "npm run z:registry:sync",
+        "npm run z:deployment:readiness",
+        "docs/Z-MASTER-MODULES-REGISTER.md alignment under separate human-gated PR"
+      ],
+      "estimated_build_phase": "Seed / doctrine",
+      "required_human_gate": "AMK-Goku for merge, deploy, NAS-class moves, billing, and production edge bind",
+      "related_reports": [
+        "data/reports/z_deployment_readiness_status.json",
+        "data/reports/z_zuno_coverage_audit.json"
+      ],
+      "related_docs": [
+        "docs/Z-MASTER-MODULES-REGISTER.md",
+        "docs/Z_DEPLOYMENT_READINESS_OVERSEER.md"
+      ],
+      "module_layer": "governance",
+      "module_status": "ready"
+    },
+    {
+      "entity_kind": "hub_module",
+      "project_id": "module:z-addon-dashboard-surface",
+      "project_name": "z-addon-dashboard-surface — Data-driven HTML staging for new flows and modules before fusion to main SKK and RKPK. State file lists items and fusion policy. Secondary to index-skk-rkpk; linked from Control Centre Build and automate.",
+      "path": "(hub manifest row — data/z_module_manifest.json)",
+      "path_resolved": null,
+      "owner_overseer": "Module owner: Z-HODP+Z-EAII",
+      "maturity_stage": "seed / concept",
+      "readiness_percent": 14,
+      "confidence_percent": 84,
+      "deployment_status": "HUB_MODULE_MANIFEST_ROW_ONLY",
+      "blockers": [],
+      "next_safe_tasks": [
+        "npm run z:registry:sync",
+        "npm run z:deployment:readiness",
+        "docs/Z-MASTER-MODULES-REGISTER.md alignment under separate human-gated PR"
+      ],
+      "estimated_build_phase": "Seed / doctrine",
+      "required_human_gate": "AMK-Goku for merge, deploy, NAS-class moves, billing, and production edge bind",
+      "related_reports": [
+        "data/reports/z_deployment_readiness_status.json",
+        "data/reports/z_zuno_coverage_audit.json"
+      ],
+      "related_docs": [
+        "docs/Z-MASTER-MODULES-REGISTER.md",
+        "docs/Z_DEPLOYMENT_READINESS_OVERSEER.md"
+      ],
+      "module_layer": "governance",
+      "module_status": "ready"
+    },
+    {
+      "entity_kind": "hub_module",
+      "project_id": "module:z-ggaesp-pipeline-360",
+      "project_name": "z-ggaesp-pipeline-360 — TypeScript advisory engine: v11–v19; v15 Guardian, v18 Ethics. Z-ECR: EnergyMode + ZECRBranch in runGGAESP; HIGH+GO downgraded to PREPARE; branch in memoryCapsule. Phase 2: memory JSONL + ggaesp_memory; npm run ggaesp:memory:append. Panel: ggaesp_panel (Z-Add On). Not release authority.",
+      "path": "(hub manifest row — data/z_module_manifest.json)",
+      "path_resolved": null,
+      "owner_overseer": "Module owner: Zuno+Z-EAII",
+      "maturity_stage": "seed / concept",
+      "readiness_percent": 14,
+      "confidence_percent": 84,
+      "deployment_status": "HUB_MODULE_MANIFEST_ROW_ONLY",
+      "blockers": [],
+      "next_safe_tasks": [
+        "npm run z:registry:sync",
+        "npm run z:deployment:readiness",
+        "docs/Z-MASTER-MODULES-REGISTER.md alignment under separate human-gated PR"
+      ],
+      "estimated_build_phase": "Seed / doctrine",
+      "required_human_gate": "AMK-Goku for merge, deploy, NAS-class moves, billing, and production edge bind",
+      "related_reports": [
+        "data/reports/z_deployment_readiness_status.json",
+        "data/reports/z_zuno_coverage_audit.json"
+      ],
+      "related_docs": [
+        "docs/Z-MASTER-MODULES-REGISTER.md",
+        "docs/Z_DEPLOYMENT_READINESS_OVERSEER.md"
+      ],
+      "module_layer": "governance",
+      "module_status": "ready"
+    },
+    {
+      "entity_kind": "hub_module",
+      "project_id": "module:z-heartpulse-engine",
+      "project_name": "z-heartpulse-engine — Emotional storytelling and self-reflection engine (LA-LT, HB1-HB7) with compassion/consent boundaries. PREPARE ONLY: docs, narrative templates, fictional mocks; no people scoring, no relationship prediction, no control logic.",
+      "path": "(hub manifest row — data/z_module_manifest.json)",
+      "path_resolved": null,
+      "owner_overseer": "Module owner: Zuno+Z-EAII",
+      "maturity_stage": "seed / concept",
+      "readiness_percent": 8,
+      "confidence_percent": 84,
+      "deployment_status": "HUB_MODULE_MANIFEST_ROW_ONLY",
+      "blockers": [
+        "Module status planned — no runtime deployment implied from manifest alone."
+      ],
+      "next_safe_tasks": [
+        "npm run z:registry:sync",
+        "npm run z:deployment:readiness",
+        "docs/Z-MASTER-MODULES-REGISTER.md alignment under separate human-gated PR"
+      ],
+      "estimated_build_phase": "Seed / doctrine",
+      "required_human_gate": "AMK-Goku for merge, deploy, NAS-class moves, billing, and production edge bind",
+      "related_reports": [
+        "data/reports/z_deployment_readiness_status.json",
+        "data/reports/z_zuno_coverage_audit.json"
+      ],
+      "related_docs": [
+        "docs/Z-MASTER-MODULES-REGISTER.md",
+        "docs/Z_DEPLOYMENT_READINESS_OVERSEER.md"
+      ],
+      "module_layer": "governance",
+      "module_status": "planned"
+    },
+    {
+      "entity_kind": "hub_module",
+      "project_id": "module:z-display-morph-engine",
+      "project_name": "z-display-morph-engine — Unified client-side visual modes for HODP and static guides: CSS token sets per body[data-display-mode], top-rail Morph selector, localStorage (zSanctuaryDisplayMorphMode), postMessage sync to Twin Roots iframe, standalone Cloudflare deployment guide page. Observational/no backend authority.",
+      "path": "(hub manifest row — data/z_module_manifest.json)",
+      "path_resolved": null,
+      "owner_overseer": "Module owner: SKK+RKPK",
+      "maturity_stage": "seed / concept",
+      "readiness_percent": 14,
+      "confidence_percent": 84,
+      "deployment_status": "HUB_MODULE_MANIFEST_ROW_ONLY",
+      "blockers": [],
+      "next_safe_tasks": [
+        "npm run z:registry:sync",
+        "npm run z:deployment:readiness",
+        "docs/Z-MASTER-MODULES-REGISTER.md alignment under separate human-gated PR"
+      ],
+      "estimated_build_phase": "Seed / doctrine",
+      "required_human_gate": "AMK-Goku for merge, deploy, NAS-class moves, billing, and production edge bind",
+      "related_reports": [
+        "data/reports/z_deployment_readiness_status.json",
+        "data/reports/z_zuno_coverage_audit.json"
+      ],
+      "related_docs": [
+        "docs/Z-MASTER-MODULES-REGISTER.md",
+        "docs/Z_DEPLOYMENT_READINESS_OVERSEER.md"
+      ],
+      "module_layer": "core",
+      "module_status": "ready"
+    },
+    {
+      "entity_kind": "hub_module",
+      "project_id": "module:z-pis-projects-identifier-sharing",
+      "project_name": "z-pis-projects-identifier-sharing — Z-Project Passport: data/z_project_passports/*.json; share_level enum; internal_notes rules. Validator: npm run z:project-passports:verify → data/reports/z_project_passport_validator.json. No secrets, no deploy. Future: Commander, Twin Roots, ledger refs.",
+      "path": "(hub manifest row — data/z_module_manifest.json)",
+      "path_resolved": null,
+      "owner_overseer": "Module owner: AMK-Goku+Z-EAII",
+      "maturity_stage": "seed / concept",
+      "readiness_percent": 8,
+      "confidence_percent": 84,
+      "deployment_status": "HUB_MODULE_MANIFEST_ROW_ONLY",
+      "blockers": [
+        "Module status planned — no runtime deployment implied from manifest alone."
+      ],
+      "next_safe_tasks": [
+        "npm run z:registry:sync",
+        "npm run z:deployment:readiness",
+        "docs/Z-MASTER-MODULES-REGISTER.md alignment under separate human-gated PR"
+      ],
+      "estimated_build_phase": "Seed / doctrine",
+      "required_human_gate": "AMK-Goku for merge, deploy, NAS-class moves, billing, and production edge bind",
+      "related_reports": [
+        "data/reports/z_deployment_readiness_status.json",
+        "data/reports/z_zuno_coverage_audit.json"
+      ],
+      "related_docs": [
+        "docs/Z-MASTER-MODULES-REGISTER.md",
+        "docs/Z_DEPLOYMENT_READINESS_OVERSEER.md"
+      ],
+      "module_layer": "governance",
+      "module_status": "planned"
+    },
+    {
+      "entity_kind": "hub_module",
+      "project_id": "module:z-anima-core",
+      "project_name": "z-anima-core — Cross-module compassion layer: verified partners, quiet hours, no fake AI animal emotions, optional Z-PI&S z_anima_profile. Lite mock UI: dashboard/panels/z_anima_core_lite.html + data/z_anima_lite_mock.json (read-only). Phased real Lite later. Ethics in doc; no deploy or payment in mock.",
+      "path": "(hub manifest row — data/z_module_manifest.json)",
+      "path_resolved": null,
+      "owner_overseer": "Module owner: AMK-Goku+Zuno",
+      "maturity_stage": "seed / concept",
+      "readiness_percent": 8,
+      "confidence_percent": 84,
+      "deployment_status": "HUB_MODULE_MANIFEST_ROW_ONLY",
+      "blockers": [
+        "Module status planned — no runtime deployment implied from manifest alone."
+      ],
+      "next_safe_tasks": [
+        "npm run z:registry:sync",
+        "npm run z:deployment:readiness",
+        "docs/Z-MASTER-MODULES-REGISTER.md alignment under separate human-gated PR"
+      ],
+      "estimated_build_phase": "Seed / doctrine",
+      "required_human_gate": "AMK-Goku for merge, deploy, NAS-class moves, billing, and production edge bind",
+      "related_reports": [
+        "data/reports/z_deployment_readiness_status.json",
+        "data/reports/z_zuno_coverage_audit.json"
+      ],
+      "related_docs": [
+        "docs/Z-MASTER-MODULES-REGISTER.md",
+        "docs/Z_DEPLOYMENT_READINESS_OVERSEER.md"
+      ],
+      "module_layer": "governance",
+      "module_status": "planned"
+    }
+  ]
+}

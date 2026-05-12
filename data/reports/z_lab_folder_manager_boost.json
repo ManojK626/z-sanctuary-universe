@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-11T18:41:16.046Z",
+  "generated_at": "2026-05-12T18:59:59.914Z",
   "status": "green",
   "step_summary": {
     "total": 4,
@@ -13,7 +13,7 @@
       "command": "C:\\Program Files\\nodejs\\node.exe scripts/z_lab_bootstrap.mjs",
       "stdout": "Z_Labs bootstrap complete: C:\\Cursor Projects Organiser\\Z_Sanctuary_Universe\\Z_Labs",
       "stderr": "",
-      "ran_at": "2026-05-11T18:41:15.340Z"
+      "ran_at": "2026-05-12T18:59:46.629Z"
     },
     {
       "id": "lab_status",
@@ -22,7 +22,7 @@
       "command": "C:\\Program Files\\nodejs\\node.exe scripts/z_lab_status.mjs",
       "stdout": "Z Lab status written: C:\\Cursor Projects Organiser\\Z_Sanctuary_Universe\\data\\reports\\z_lab_status.json",
       "stderr": "",
-      "ran_at": "2026-05-11T18:41:15.419Z"
+      "ran_at": "2026-05-12T18:59:48.931Z"
     },
     {
       "id": "folder_manager_status",
@@ -31,7 +31,7 @@
       "command": "C:\\Program Files\\nodejs\\node.exe scripts/z_folder_manager_guard.mjs status",
       "stdout": "Z Folder Manager status written.",
       "stderr": "",
-      "ran_at": "2026-05-11T18:41:15.502Z"
+      "ran_at": "2026-05-12T18:59:52.261Z"
     },
     {
       "id": "folder_manager_recreate_dry_run",
@@ -40,7 +40,7 @@
       "command": "C:\\Program Files\\nodejs\\node.exe scripts/z_folder_manager_guard.mjs recreate",
       "stdout": "Z Folder Manager recreate dry-run complete.",
       "stderr": "",
-      "ran_at": "2026-05-11T18:41:16.043Z"
+      "ran_at": "2026-05-12T18:59:59.911Z"
     }
   ],
   "capability_state": {

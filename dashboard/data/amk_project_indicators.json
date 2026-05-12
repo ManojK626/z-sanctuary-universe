@@ -21,10 +21,7 @@
       "Auto-promote shadow HTML to production without merge ritual"
     ],
     "human_approval_required": true,
-    "related_docs": [
-      "docs/Z-CLOUDFLARE-AI-COMMS-PRECAUTIONS.md",
-      "docs/COMMERCIAL-READINESS.md"
-    ]
+    "related_docs": ["docs/Z-CLOUDFLARE-AI-COMMS-PRECAUTIONS.md", "docs/COMMERCIAL-READINESS.md"]
   },
   "indicators": [
     {
@@ -45,12 +42,7 @@
       ],
       "related_reports": [],
       "blocked_until": [],
-      "forbidden_actions": [
-        "deploy",
-        "bridge_exec",
-        "billing_change",
-        "live_research"
-      ],
+      "forbidden_actions": ["deploy", "bridge_exec", "billing_change", "live_research"],
       "last_known_basis": "Phase receipts MAP-1–3; no runtime dispatch in HTML.",
       "dynamic_overlay": "none"
     },
@@ -70,14 +62,9 @@
         "docs/AMK_GOKU_NOTIFICATIONS_PANEL.md",
         "docs/AMK_GOKU_OPERATOR_CONFIRMATION_POLICY.md"
       ],
-      "related_reports": [
-        "data/amk_operator_notifications.json"
-      ],
+      "related_reports": ["data/amk_operator_notifications.json"],
       "blocked_until": [],
-      "forbidden_actions": [
-        "task_exec_from_ui",
-        "auto_merge"
-      ],
+      "forbidden_actions": ["task_exec_from_ui", "auto_merge"],
       "last_known_basis": "Notifications panel wired on unified + shadow dashboards.",
       "dynamic_overlay": "none"
     },
@@ -93,16 +80,10 @@
       "autonomy_level": "L1_REPORT",
       "recommended_next_action": "Run npm run z:traffic after hub ritual changes.",
       "human_confirmation_required": false,
-      "related_docs": [
-        "docs/Z_TRAFFIC_MINIBOTS.md"
-      ],
-      "related_reports": [
-        "data/reports/z_traffic_minibots_status.json"
-      ],
+      "related_docs": ["docs/Z_TRAFFIC_MINIBOTS.md"],
+      "related_reports": ["data/reports/z_traffic_minibots_status.json"],
       "blocked_until": [],
-      "forbidden_actions": [
-        "auto_widen_commercial_lane"
-      ],
+      "forbidden_actions": ["auto_widen_commercial_lane"],
       "last_known_basis": "Report JSON; signal may be overlaid live in UI.",
       "dynamic_overlay": "z_traffic"
     },
@@ -118,16 +99,10 @@
       "autonomy_level": "L2_POLICY",
       "recommended_next_action": "Read docs/Z_AUTONOMOUS_GUARDIAN_LOOP.md before widening autonomy.",
       "human_confirmation_required": true,
-      "related_docs": [
-        "docs/Z_AUTONOMOUS_GUARDIAN_LOOP.md"
-      ],
+      "related_docs": ["docs/Z_AUTONOMOUS_GUARDIAN_LOOP.md"],
       "related_reports": [],
-      "blocked_until": [
-        "charter_for_autonomous_dispatch"
-      ],
-      "forbidden_actions": [
-        "silent_autopilot_dispatch"
-      ],
+      "blocked_until": ["charter_for_autonomous_dispatch"],
+      "forbidden_actions": ["silent_autopilot_dispatch"],
       "last_known_basis": "data/z_autonomy_task_policy.json metadata posture.",
       "dynamic_overlay": "none"
     },
@@ -241,14 +216,10 @@
       "autonomy_level": "L1_REPORT",
       "recommended_next_action": "Treat as sealed doctrine; no attack tooling.",
       "human_confirmation_required": false,
-      "related_docs": [
-        "docs/security/Z_VH100_VEGETA_HARISHA_SECURITY_CORE.md"
-      ],
+      "related_docs": ["docs/security/Z_VH100_VEGETA_HARISHA_SECURITY_CORE.md"],
       "related_reports": [],
       "blocked_until": [],
-      "forbidden_actions": [
-        "offensive_tooling"
-      ],
+      "forbidden_actions": ["offensive_tooling"],
       "last_known_basis": "data/z_vh100_security_posture.json",
       "dynamic_overlay": "none"
     },
@@ -264,14 +235,10 @@
       "autonomy_level": "L1_REPORT",
       "recommended_next_action": "Keep backup receipts current after infra changes.",
       "human_confirmation_required": false,
-      "related_docs": [
-        "docs/security/Z_MCBURB_BACKUP_RECONVERGE_BOOSTER.md"
-      ],
+      "related_docs": ["docs/security/Z_MCBURB_BACKUP_RECONVERGE_BOOSTER.md"],
       "related_reports": [],
       "blocked_until": [],
-      "forbidden_actions": [
-        "surveillance_expansion"
-      ],
+      "forbidden_actions": ["surveillance_expansion"],
       "last_known_basis": "data/z_mcburb_backup_policy.json",
       "dynamic_overlay": "none"
     },
@@ -287,14 +254,10 @@
       "autonomy_level": "L1_REPORT",
       "recommended_next_action": "Observation-first; no silent incident automation.",
       "human_confirmation_required": false,
-      "related_docs": [
-        "docs/security/Z_FBAP_FIRE_BACKS_AWARENESS_PROTOCOL.md"
-      ],
+      "related_docs": ["docs/security/Z_FBAP_FIRE_BACKS_AWARENESS_PROTOCOL.md"],
       "related_reports": [],
       "blocked_until": [],
-      "forbidden_actions": [
-        "auto_incident_response"
-      ],
+      "forbidden_actions": ["auto_incident_response"],
       "last_known_basis": "data/z_fbap_event_taxonomy.json",
       "dynamic_overlay": "none"
     },
@@ -310,14 +273,10 @@
       "autonomy_level": "L1_REPORT",
       "recommended_next_action": "Run dashboard:registry-verify after dashboard edits.",
       "human_confirmation_required": false,
-      "related_docs": [
-        "docs/dashboard/Z_UNIVERSE_WORKSTATION_NAVIGATOR.md"
-      ],
+      "related_docs": ["docs/dashboard/Z_UNIVERSE_WORKSTATION_NAVIGATOR.md"],
       "related_reports": [],
       "blocked_until": [],
-      "forbidden_actions": [
-        "catalog_implies_entitlement"
-      ],
+      "forbidden_actions": ["catalog_implies_entitlement"],
       "last_known_basis": "dashboard/data/z_universe_service_catalog.json",
       "dynamic_overlay": "none"
     },
@@ -333,16 +292,10 @@
       "autonomy_level": "L1_REPORT",
       "recommended_next_action": "npm run z:cross-project:sync after catalog edits.",
       "human_confirmation_required": false,
-      "related_docs": [
-        "docs/cross-project/PHASE_ZSX_1_GREEN_RECEIPT.md"
-      ],
+      "related_docs": ["docs/cross-project/PHASE_ZSX_1_GREEN_RECEIPT.md"],
       "related_reports": [],
-      "blocked_until": [
-        "sibling_manifests_for_all_rows"
-      ],
-      "forbidden_actions": [
-        "silent_bridge_inheritance"
-      ],
+      "blocked_until": ["sibling_manifests_for_all_rows"],
+      "forbidden_actions": ["silent_bridge_inheritance"],
       "last_known_basis": "data/z_cross_project_capability_index.json",
       "dynamic_overlay": "none"
     },
@@ -358,16 +311,10 @@
       "autonomy_level": "L0_OBSERVE",
       "recommended_next_action": "Treat as future-gated creative registry; do not price as shipped product.",
       "human_confirmation_required": true,
-      "related_docs": [
-        "docs/Z_SANCTUARY_MONSTER_PROJECT_MASTER_MAP.md"
-      ],
+      "related_docs": ["docs/Z_SANCTUARY_MONSTER_PROJECT_MASTER_MAP.md"],
       "related_reports": [],
-      "blocked_until": [
-        "charter_for_magical_commercial_surface"
-      ],
-      "forbidden_actions": [
-        "public_price_claim"
-      ],
+      "blocked_until": ["charter_for_magical_commercial_surface"],
+      "forbidden_actions": ["public_price_claim"],
       "last_known_basis": "Monster map + magical registry metadata; PURPLE = not active commercial.",
       "dynamic_overlay": "none"
     },
@@ -396,10 +343,7 @@
         "human pricing review",
         "commercial readiness gate"
       ],
-      "forbidden_actions": [
-        "live_web_research",
-        "auto_price_write"
-      ],
+      "forbidden_actions": ["live_web_research", "auto_price_write"],
       "last_known_basis": "npm run z:susbv:overseer + z:susbv reports; overseer_signal may overlay.",
       "dynamic_overlay": "z_susbv_overseer"
     },
@@ -415,16 +359,10 @@
       "autonomy_level": "L1_REPORT",
       "recommended_next_action": "npm run z:car2 after large doc or dashboard churn.",
       "human_confirmation_required": false,
-      "related_docs": [
-        "docs/Z_AUTONOMOUS_GUARDIAN_LOOP.md"
-      ],
-      "related_reports": [
-        "data/reports/z_car2_similarity_report.json"
-      ],
+      "related_docs": ["docs/Z_AUTONOMOUS_GUARDIAN_LOOP.md"],
+      "related_reports": ["data/reports/z_car2_similarity_report.json"],
       "blocked_until": [],
-      "forbidden_actions": [
-        "auto_refactor_from_report"
-      ],
+      "forbidden_actions": ["auto_refactor_from_report"],
       "last_known_basis": "CAR² JSON optional overlay for histogram-derived caution.",
       "dynamic_overlay": "z_car2"
     },
@@ -440,16 +378,10 @@
       "autonomy_level": "L1_REPORT",
       "recommended_next_action": "npm run zuno:coverage when registry or modules move.",
       "human_confirmation_required": false,
-      "related_docs": [
-        "docs/AI_BUILDER_CONTEXT.md"
-      ],
-      "related_reports": [
-        "data/reports/z_zuno_coverage_audit.json"
-      ],
+      "related_docs": ["docs/AI_BUILDER_CONTEXT.md"],
+      "related_reports": ["data/reports/z_zuno_coverage_audit.json"],
       "blocked_until": [],
-      "forbidden_actions": [
-        "auto_registry_write"
-      ],
+      "forbidden_actions": ["auto_registry_write"],
       "last_known_basis": "Coverage audit JSON optional overlay.",
       "dynamic_overlay": "zuno"
     },
@@ -465,17 +397,10 @@
       "autonomy_level": "L1_REPORT",
       "recommended_next_action": "cd z-questra && npm test after UI edits.",
       "human_confirmation_required": false,
-      "related_docs": [
-        "z-questra/README.md",
-        "docs/z_zuno_technology_snapshot.md"
-      ],
+      "related_docs": ["z-questra/README.md", "docs/z_zuno_technology_snapshot.md"],
       "related_reports": [],
-      "blocked_until": [
-        "hub_bridge_charter"
-      ],
-      "forbidden_actions": [
-        "live_hub_bridge_without_charter"
-      ],
+      "blocked_until": ["hub_bridge_charter"],
+      "forbidden_actions": ["live_hub_bridge_without_charter"],
       "last_known_basis": "z-questra/data/z_project_benchmark_capsule.json",
       "dynamic_overlay": "none"
     },
@@ -491,16 +416,10 @@
       "autonomy_level": "L0_OBSERVE",
       "recommended_next_action": "Hierarchy chief doc before any bridge narrative.",
       "human_confirmation_required": true,
-      "related_docs": [
-        "docs/Z-HIERARCHY-CHIEF-AND-OBSERVER-VIEW.md"
-      ],
+      "related_docs": ["docs/Z-HIERARCHY-CHIEF-AND-OBSERVER-VIEW.md"],
       "related_reports": [],
-      "blocked_until": [
-        "charter_and_drp_for_bridge"
-      ],
-      "forbidden_actions": [
-        "silent_price_inheritance"
-      ],
+      "blocked_until": ["charter_and_drp_for_bridge"],
+      "forbidden_actions": ["silent_price_inheritance"],
       "last_known_basis": "Cross-project reference posture only.",
       "dynamic_overlay": "none"
     },
@@ -516,16 +435,10 @@
       "autonomy_level": "L0_OBSERVE",
       "recommended_next_action": "Add capsule + index row when project publishes metadata.",
       "human_confirmation_required": true,
-      "related_docs": [
-        "docs/Z-HIERARCHY-CHIEF-AND-OBSERVER-VIEW.md"
-      ],
+      "related_docs": ["docs/Z-HIERARCHY-CHIEF-AND-OBSERVER-VIEW.md"],
       "related_reports": [],
-      "blocked_until": [
-        "project_benchmark_capsule"
-      ],
-      "forbidden_actions": [
-        "treat_placeholder_as_live_service"
-      ],
+      "blocked_until": ["project_benchmark_capsule"],
+      "forbidden_actions": ["treat_placeholder_as_live_service"],
       "last_known_basis": "ZSX placeholder rows in capability index.",
       "dynamic_overlay": "none"
     },
@@ -541,16 +454,10 @@
       "autonomy_level": "L2_POLICY",
       "recommended_next_action": "Review data/z_service_entitlement_catalog.json with Folder Manager doctrine.",
       "human_confirmation_required": true,
-      "related_docs": [
-        "docs/cross-project/Z_SERVICE_ENTITLEMENT_AND_PRICING_POLICY.md"
-      ],
+      "related_docs": ["docs/cross-project/Z_SERVICE_ENTITLEMENT_AND_PRICING_POLICY.md"],
       "related_reports": [],
-      "blocked_until": [
-        "human_entitlement_review"
-      ],
-      "forbidden_actions": [
-        "catalog_as_checkout"
-      ],
+      "blocked_until": ["human_entitlement_review"],
+      "forbidden_actions": ["catalog_as_checkout"],
       "last_known_basis": "Entitlement JSON present; not enforcement runtime.",
       "dynamic_overlay": "none"
     },
@@ -571,9 +478,7 @@
         "docs/AMK_ZUNO_ADVISOR_CONSOLE.md",
         "docs/PHASE_AAL_1_GREEN_RECEIPT.md"
       ],
-      "related_reports": [
-        "data/reports/z_traffic_minibots_status.json"
-      ],
+      "related_reports": ["data/reports/z_traffic_minibots_status.json"],
       "blocked_until": [],
       "forbidden_actions": [
         "llm_api_call",
@@ -606,10 +511,7 @@
         "data/reports/z_omnai_build_plan_report.json",
         "data/reports/z_omnai_blueprint_report.json"
       ],
-      "blocked_until": [
-        "amk_human_for_public_commercial_launch",
-        "z_susbv_for_pricing_surfaces"
-      ],
+      "blocked_until": ["amk_human_for_public_commercial_launch", "z_susbv_for_pricing_surfaces"],
       "forbidden_actions": [
         "live_ai_provider_call",
         "deploy",
@@ -633,12 +535,7 @@
       "autonomy_level": "L1_REPORT",
       "recommended_next_action": "Run npm run omnai:core:simulate / omnai:core:all; overlay reads z_omnai_core_engine_indicator_overlay.json.",
       "human_confirmation_required": false,
-      "posture_chips": [
-        "CORE ENGINES",
-        "NO RUNTIME FLIGHT",
-        "REPORTS ONLY",
-        "INDICATOR ≠ EXECUTE"
-      ],
+      "posture_chips": ["CORE ENGINES", "NO RUNTIME FLIGHT", "REPORTS ONLY", "INDICATOR ≠ EXECUTE"],
       "advisory_law_lines": [
         "Matrix harness explores combinations — GREEN on chart ≠ production permission",
         "Strict rollup elevates ANT veto and pathway stress into YELLOW/RED posture",
@@ -756,12 +653,8 @@
         "docs/creative/PHASE_Z_OMNAI_LETTER_GATE_1_GREEN_RECEIPT.md",
         "docs/AMK_AUTONOMOUS_APPROVAL_LADDER.md"
       ],
-      "related_reports": [
-        "data/reports/z_omnai_media_letter_gate_report.json"
-      ],
-      "blocked_until": [
-        "amk_follows_recommendation_only_when_chosen"
-      ],
+      "related_reports": ["data/reports/z_omnai_media_letter_gate_report.json"],
+      "blocked_until": ["amk_follows_recommendation_only_when_chosen"],
       "forbidden_actions": [
         "auto_execute_recommended_letter",
         "live_provider_call",
@@ -1033,9 +926,7 @@
         "data/reports/z_logical_brains_hub_reference_report.json",
         "data/reports/z_logical_brains_hub_reference_report.md"
       ],
-      "blocked_until": [
-        "amk_human_gate_for_public_or_runtime_lanes"
-      ],
+      "blocked_until": ["amk_human_gate_for_public_or_runtime_lanes"],
       "forbidden_actions": [
         "runtime_bridge_enable",
         "deploy",
@@ -1068,9 +959,7 @@
         "data/reports/z_numen_hub_reference_report.json",
         "data/reports/z_numen_hub_reference_report.md"
       ],
-      "blocked_until": [
-        "amk_human_gate_for_public_or_runtime_lanes"
-      ],
+      "blocked_until": ["amk_human_gate_for_public_or_runtime_lanes"],
       "forbidden_actions": [
         "runtime_bridge_enable",
         "deploy",
@@ -1095,13 +984,7 @@
       "readiness_label": "Advisory router only — suggests where ideas may fit; cannot execute, deploy, merge, or grant permission.",
       "go_no_go": "ADVISORY_ROUTING_ONLY",
       "autonomy_level": "L1_REPORT",
-      "posture_chips": [
-        "ADVISORY",
-        "NO EXECUTION",
-        "NO DEPLOY",
-        "AMK GATE",
-        "REPORT LINKED"
-      ],
+      "posture_chips": ["ADVISORY", "NO EXECUTION", "NO DEPLOY", "AMK GATE", "REPORT LINKED"],
       "advisory_law_lines": [
         "Advisory router only",
         "Routing suggestion ≠ permission",
@@ -1192,13 +1075,7 @@
       "readiness_label": "Cockpit vs deep-work map + dry-run open plan — no auto-launch from validator",
       "go_no_go": "WORKSPACE_ORCHESTRATION_ONLY",
       "autonomy_level": "L1_REPORT",
-      "posture_chips": [
-        "COCKPIT",
-        "DEEP WORK",
-        "DRY RUN",
-        "NO AUTO-LAUNCH",
-        "AMK GATE"
-      ],
+      "posture_chips": ["COCKPIT", "DEEP WORK", "DRY RUN", "NO AUTO-LAUNCH", "AMK GATE"],
       "advisory_law_lines": [
         "Cockpit ≠ auto-launch",
         "Visibility ≠ execution",
@@ -1310,13 +1187,7 @@
       "readiness_label": "Doctrine + sample mission classifier only — no live replica workers or execution",
       "go_no_go": "REPLICATION_GOVERNANCE_ONLY",
       "autonomy_level": "L1_REPORT",
-      "posture_chips": [
-        "GOVERNED",
-        "NO LIVE CLONES",
-        "NO DEPLOY",
-        "AMK GATE",
-        "REPORT ONLY"
-      ],
+      "posture_chips": ["GOVERNED", "NO LIVE CLONES", "NO DEPLOY", "AMK GATE", "REPORT ONLY"],
       "advisory_law_lines": [
         "Replica fabric ≠ autonomous spawn",
         "Factory ≠ deployment",
@@ -1361,13 +1232,7 @@
       "readiness_label": "Universal formula vocabulary + samples only — no runtime engine or autonomous execution",
       "go_no_go": "FORMULA_GOVERNANCE_ONLY",
       "autonomy_level": "L1_REPORT",
-      "posture_chips": [
-        "FORMULA CODEX",
-        "NO LIVE MAGIC",
-        "NO DEPLOY",
-        "NO CLONES",
-        "AMK GATE"
-      ],
+      "posture_chips": ["FORMULA CODEX", "NO LIVE MAGIC", "NO DEPLOY", "NO CLONES", "AMK GATE"],
       "advisory_law_lines": [
         "Formula ≠ execution",
         "Ultra ≠ permission",
@@ -1659,13 +1524,7 @@
       "readiness_label": "Idle alignment doctrine + sample classifier — no autonomous stillness runners",
       "go_no_go": "STILLNESS_LEARNING_ONLY",
       "autonomy_level": "L1_REPORT",
-      "posture_chips": [
-        "STILLNESS",
-        "LEARNING ONLY",
-        "NO AUTONOMY",
-        "NO SELF-UPGRADE",
-        "AMK GATE"
-      ],
+      "posture_chips": ["STILLNESS", "LEARNING ONLY", "NO AUTONOMY", "NO SELF-UPGRADE", "AMK GATE"],
       "advisory_law_lines": [
         "Stillness Mode ≠ background automation",
         "Learning roadmap ≠ self-upgrade authority",
@@ -1868,13 +1727,7 @@
       "readiness_label": "Compact lawyer tool dock metadata and UI visibility slice only",
       "go_no_go": "LEGAL_TOOLBELT_METADATA_ONLY",
       "autonomy_level": "L1_REPORT",
-      "posture_chips": [
-        "TOOL DOCK",
-        "READ-ONLY",
-        "NO UPLOAD",
-        "NO LEGAL RUNTIME",
-        "NO DEPLOY"
-      ],
+      "posture_chips": ["TOOL DOCK", "READ-ONLY", "NO UPLOAD", "NO LEGAL RUNTIME", "NO DEPLOY"],
       "advisory_law_lines": [
         "Toolbelt != live case system",
         "Viewer != evidence intake",
@@ -1963,16 +1816,40 @@
       "autonomy_level": "L1_REPORT",
       "recommended_next_action": "npm run dashboard:registry-verify after HTML path edits.",
       "human_confirmation_required": false,
-      "related_docs": [
-        "dashboard/README.md"
-      ],
-      "related_reports": [
-        "data/reports/z_dashboard_registry_verify.json"
-      ],
+      "related_docs": ["dashboard/README.md"],
+      "related_reports": ["data/reports/z_dashboard_registry_verify.json"],
       "blocked_until": [],
       "forbidden_actions": [],
       "last_known_basis": "Overlay from z_dashboard_registry_verify.json when served.",
       "dynamic_overlay": "dashboard_registry"
+    },
+    {
+      "id": "z_deployment_readiness",
+      "name": "Z-Deployment-Readiness overseer",
+      "domain": "readiness",
+      "project_or_system": "ZSanctuary_Universe",
+      "signal": null,
+      "growth_percent": null,
+      "readiness_label": "UNKNOWN until deployment readiness JSON fetch",
+      "go_no_go": "NO_GO_FOR_DEPLOY",
+      "autonomy_level": "L1_REPORT",
+      "recommended_next_action": "npm run z:deployment:readiness after registry or receipt churn.",
+      "human_confirmation_required": false,
+      "related_docs": [
+        "docs/Z_DEPLOYMENT_READINESS_OVERSEER.md",
+        "docs/PHASE_Z_DEPLOYMENT_READINESS_OVERSEER_1_GREEN_RECEIPT.md"
+      ],
+      "related_reports": ["data/reports/z_deployment_readiness_status.json"],
+      "blocked_until": ["manual_release", "human_legal_security_gates_for_production"],
+      "forbidden_actions": [
+        "deploy",
+        "production_cloudflare",
+        "auto_merge",
+        "secret_write",
+        "real_device_connect"
+      ],
+      "last_known_basis": "Advisory rollup only; automated scores capped per scoring policy — never sole production proof.",
+      "dynamic_overlay": "z_deployment_readiness"
     }
   ]
 }

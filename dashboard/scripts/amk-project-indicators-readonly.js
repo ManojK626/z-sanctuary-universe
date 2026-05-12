@@ -100,7 +100,8 @@
       if (o === 'z_traffic' && overlays.traffic && overlays.traffic.traffic_chief) {
         row.signal = overlays.traffic.traffic_chief.overall_signal || row.signal;
         row.last_known_basis =
-          (row.last_known_basis || '') + ' · Live: z_traffic_minibots_status.json traffic_chief.overall_signal';
+          (row.last_known_basis || '') +
+          ' · Live: z_traffic_minibots_status.json traffic_chief.overall_signal';
       }
       if (o === 'z_susbv_overseer' && overlays.susbv) {
         row.signal = overlays.susbv.overseer_signal || row.signal;
@@ -123,14 +124,33 @@
         else if (st === 'hold') row.signal = 'YELLOW';
         else row.signal = 'RED';
         row.last_known_basis =
-          (row.last_known_basis || '') + ' · Live: z_dashboard_registry_verify.json status=' + esc(st);
+          (row.last_known_basis || '') +
+          ' · Live: z_dashboard_registry_verify.json status=' +
+          esc(st);
+      }
+      if (
+        o === 'z_deployment_readiness' &&
+        overlays.deploymentReadiness &&
+        overlays.deploymentReadiness.rollups
+      ) {
+        var drs = String(overlays.deploymentReadiness.rollups.ecosystem_signal || '').toUpperCase();
+        if (drs) {
+          row.signal = drs;
+          var hpr = overlays.deploymentReadiness.rollups.hub_indicator_readiness_percent;
+          if (typeof hpr === 'number' && !Number.isNaN(hpr)) row.growth_percent = hpr;
+        }
+        row.last_known_basis =
+          (row.last_known_basis || '') +
+          ' · Live: z_deployment_readiness_status.json rollups (advisory posture only; not deploy permission)';
       }
       if (o === 'z_ecosystem_awareness' && overlays.ecosystem) {
         var es = String(overlays.ecosystem.overall_signal || '').toUpperCase();
         if (es) {
           row.signal = es;
           row.last_known_basis =
-            (row.last_known_basis || '') + ' · Live: z_ecosystem_awareness_report.json overall_signal=' + esc(es);
+            (row.last_known_basis || '') +
+            ' · Live: z_ecosystem_awareness_report.json overall_signal=' +
+            esc(es);
         }
       }
       if (o === 'z_api_spine' && overlays.apiSpine) {
@@ -138,7 +158,9 @@
         if (as) {
           row.signal = as;
           row.last_known_basis =
-            (row.last_known_basis || '') + ' · Live: z_api_spine_report.json overall_signal=' + esc(as);
+            (row.last_known_basis || '') +
+            ' · Live: z_api_spine_report.json overall_signal=' +
+            esc(as);
         }
       }
       if (o === 'z_ssws' && overlays.ssws) {
@@ -146,7 +168,9 @@
         if (zs) {
           row.signal = zs;
           row.last_known_basis =
-            (row.last_known_basis || '') + ' · Live: z_ssws_launch_requirements_report.json overall_signal=' + esc(zs);
+            (row.last_known_basis || '') +
+            ' · Live: z_ssws_launch_requirements_report.json overall_signal=' +
+            esc(zs);
         }
       }
       if (o === 'amk_workspace_doorway' && overlays.doorway && overlays.doorway.overall_signal) {
@@ -154,10 +178,16 @@
         if (ds) {
           row.signal = ds;
           row.last_known_basis =
-            (row.last_known_basis || '') + ' · Live: amk_workspace_doorway_status.json overall_signal=' + esc(ds);
+            (row.last_known_basis || '') +
+            ' · Live: amk_workspace_doorway_status.json overall_signal=' +
+            esc(ds);
         }
       }
-      if (o === 'amk_cursor_workspace_profiles' && overlays.wsProfiles && overlays.wsProfiles.overall_signal) {
+      if (
+        o === 'amk_cursor_workspace_profiles' &&
+        overlays.wsProfiles &&
+        overlays.wsProfiles.overall_signal
+      ) {
         var ws = String(overlays.wsProfiles.overall_signal || '').toUpperCase();
         if (ws) {
           row.signal = ws;
@@ -177,12 +207,18 @@
             esc(gt);
         }
       }
-      if (o === 'z_logical_brains_cadence_cycle' && overlays.cadence && overlays.cadence.overall_signal) {
+      if (
+        o === 'z_logical_brains_cadence_cycle' &&
+        overlays.cadence &&
+        overlays.cadence.overall_signal
+      ) {
         var cs = String(overlays.cadence.overall_signal || '').toUpperCase();
         if (cs) {
           row.signal = cs;
           row.last_known_basis =
-            (row.last_known_basis || '') + ' · Live: z_cadence_cycle_report.json overall_signal=' + esc(cs);
+            (row.last_known_basis || '') +
+            ' · Live: z_cadence_cycle_report.json overall_signal=' +
+            esc(cs);
         }
       }
       if (o === 'z_mod_dist' && overlays.modDist && overlays.modDist.signal) {
@@ -273,7 +309,11 @@
             ' (fusion governance map)';
         }
       }
-      if (o === 'z_stillness_learning' && overlays.zStillnessLearning && overlays.zStillnessLearning.signal) {
+      if (
+        o === 'z_stillness_learning' &&
+        overlays.zStillnessLearning &&
+        overlays.zStillnessLearning.signal
+      ) {
         var zsl = String(overlays.zStillnessLearning.signal || '').toUpperCase();
         if (zsl && zsl !== 'UNKNOWN') {
           row.signal = zsl;
@@ -295,7 +335,11 @@
             ' (legal ops governance validator)';
         }
       }
-      if (o === 'z_legal_product_ops' && overlays.zLegalProductOps && overlays.zLegalProductOps.signal) {
+      if (
+        o === 'z_legal_product_ops' &&
+        overlays.zLegalProductOps &&
+        overlays.zLegalProductOps.signal
+      ) {
         var zlp = String(overlays.zLegalProductOps.signal || '').toUpperCase();
         if (zlp && zlp !== 'UNKNOWN') {
           row.signal = zlp;
@@ -306,7 +350,11 @@
             ' (legal product/IP workstation validator)';
         }
       }
-      if (o === 'z_legal_workstation_stack' && overlays.zLegalWorkstationStack && overlays.zLegalWorkstationStack.signal) {
+      if (
+        o === 'z_legal_workstation_stack' &&
+        overlays.zLegalWorkstationStack &&
+        overlays.zLegalWorkstationStack.signal
+      ) {
         var zlw = String(overlays.zLegalWorkstationStack.signal || '').toUpperCase();
         if (zlw && zlw !== 'UNKNOWN') {
           row.signal = zlw;
@@ -337,10 +385,16 @@
         if (sc && sc !== 'UNKNOWN') {
           row.signal = sc;
           row.last_known_basis =
-            (row.last_known_basis || '') + ' · Live: z_ssws_cockpit_report.json overall_signal=' + esc(sc);
+            (row.last_known_basis || '') +
+            ' · Live: z_ssws_cockpit_report.json overall_signal=' +
+            esc(sc);
         }
       }
-      if (o === 'omnai_core_overlay' && overlays.omnaiCoreOverlay && overlays.omnaiCoreOverlay.signal) {
+      if (
+        o === 'omnai_core_overlay' &&
+        overlays.omnaiCoreOverlay &&
+        overlays.omnaiCoreOverlay.signal
+      ) {
         var oco = String(overlays.omnaiCoreOverlay.signal || '').toUpperCase();
         if (oco && oco !== 'UNKNOWN') {
           row.signal = oco;
@@ -387,7 +441,11 @@
     var bits = ['<ul class="amk-ind-links">'];
     items.forEach(function (p) {
       bits.push(
-        '<li><a href="' + esc(docHref(p)) + '" target="_blank" rel="noopener noreferrer">' + esc(p) + '</a></li>',
+        '<li><a href="' +
+          esc(docHref(p)) +
+          '" target="_blank" rel="noopener noreferrer">' +
+          esc(p) +
+          '</a></li>'
       );
     });
     bits.push('</ul>');
@@ -412,20 +470,34 @@
       html.push('<article class="amk-ind-card" data-indicator-id="' + esc(row.id) + '">');
       html.push('<div class="amk-ind-card-head">');
       html.push('<span class="amk-ind-name">' + esc(row.name) + '</span>');
-      html.push('<span class="' + pillClass(sig === 'UNKNOWN' ? null : sig) + '">' + esc(sig) + '</span>');
+      html.push(
+        '<span class="' + pillClass(sig === 'UNKNOWN' ? null : sig) + '">' + esc(sig) + '</span>'
+      );
       html.push('<span class="amk-ind-pill amk-ind-pill--unknown">' + esc(pctLabel) + '</span>');
       html.push('</div>');
-      html.push('<div class="amk-ind-go"><strong>Go/No-Go:</strong> ' + esc(row.go_no_go) + '</div>');
+      html.push(
+        '<div class="amk-ind-go"><strong>Go/No-Go:</strong> ' + esc(row.go_no_go) + '</div>'
+      );
       if (pct != null && pct !== '') {
         var w = Math.max(0, Math.min(100, Number(pct)));
         html.push('<div class="amk-ind-bar-wrap" aria-hidden="true">');
-        html.push('<div class="' + barClass(sig === 'UNKNOWN' ? null : sig) + '" style="width:' + w + '%"></div>');
+        html.push(
+          '<div class="' +
+            barClass(sig === 'UNKNOWN' ? null : sig) +
+            '" style="width:' +
+            w +
+            '%"></div>'
+        );
         html.push('</div>');
       }
       html.push('<p class="amk-ind-label">' + esc(row.readiness_label) + '</p>');
       renderPostureChips(row, html);
       renderAdvisoryLawLines(row, html);
-      html.push('<div class="amk-ind-next"><strong>Next:</strong> ' + esc(row.recommended_next_action) + '</div>');
+      html.push(
+        '<div class="amk-ind-next"><strong>Next:</strong> ' +
+          esc(row.recommended_next_action) +
+          '</div>'
+      );
       html.push(
         '<div class="amk-ind-meta">' +
           esc(row.project_or_system) +
@@ -434,13 +506,21 @@
           ' · autonomy ' +
           esc(row.autonomy_level) +
           (row.human_confirmation_required ? ' · human gate' : '') +
-          '</div>',
+          '</div>'
       );
       if (Array.isArray(row.blocked_until) && row.blocked_until.length) {
-        html.push('<div class="amk-ind-meta"><strong>Blocked until:</strong> ' + esc(row.blocked_until.join('; ')) + '</div>');
+        html.push(
+          '<div class="amk-ind-meta"><strong>Blocked until:</strong> ' +
+            esc(row.blocked_until.join('; ')) +
+            '</div>'
+        );
       }
       if (Array.isArray(row.forbidden_actions) && row.forbidden_actions.length) {
-        html.push('<div class="amk-ind-meta"><strong>Forbidden:</strong> ' + esc(row.forbidden_actions.join(', ')) + '</div>');
+        html.push(
+          '<div class="amk-ind-meta"><strong>Forbidden:</strong> ' +
+            esc(row.forbidden_actions.join(', ')) +
+            '</div>'
+        );
       }
       html.push('<div class="amk-ind-meta">' + esc(row.last_known_basis || '') + '</div>');
       html.push(linkList('doc', row.related_docs));
@@ -450,10 +530,10 @@
     html.push('</div>');
     html.push('<div class="amk-ind-ack">');
     html.push(
-      '<strong>Local acknowledgement only.</strong> The button below does not execute npm, Cursor tasks, deploy, bridges, or billing. It stores a timestamp in this browser.',
+      '<strong>Local acknowledgement only.</strong> The button below does not execute npm, Cursor tasks, deploy, bridges, or billing. It stores a timestamp in this browser.'
     );
     html.push(
-      '<div><button type="button" data-amk-ind-ack="1">I reviewed this board (browser only)</button></div>',
+      '<div><button type="button" data-amk-ind-ack="1">I reviewed this board (browser only)</button></div>'
     );
     if (ackNote) html.push('<div class="amk-ind-meta">' + esc(ackNote) + '</div>');
     html.push('</div>');
@@ -463,7 +543,7 @@
         try {
           window.localStorage.setItem(
             LS_ACK,
-            JSON.stringify({ at: new Date().toISOString(), schema: 'amk_indicator_ack_v1' }),
+            JSON.stringify({ at: new Date().toISOString(), schema: 'amk_indicator_ack_v1' })
           );
         } catch (e) {
           void e;
@@ -548,6 +628,19 @@
       fetchJson(prefix + '/data/reports/z_dashboard_registry_verify.json').then(function (d) {
         o.dash = d;
       }),
+      fetch(prefix + '/data/reports/z_deployment_readiness_status.json', {
+        credentials: 'same-origin',
+      })
+        .then(function (r) {
+          if (!r.ok) return null;
+          return r.json();
+        })
+        .then(function (d) {
+          o.deploymentReadiness = d;
+        })
+        .catch(function () {
+          o.deploymentReadiness = null;
+        }),
       fetchJson(prefix + '/data/reports/z_ecosystem_awareness_report.json').then(function (d) {
         o.ecosystem = d;
       }),
@@ -557,7 +650,9 @@
       fetchJson(prefix + '/data/reports/z_ssws_launch_requirements_report.json').then(function (d) {
         o.ssws = d;
       }),
-      fetch(prefix + '/data/reports/amk_workspace_doorway_status.json', { credentials: 'same-origin' })
+      fetch(prefix + '/data/reports/amk_workspace_doorway_status.json', {
+        credentials: 'same-origin',
+      })
         .then(function (r) {
           if (!r.ok) return null;
           return r.json();
@@ -568,7 +663,9 @@
         .catch(function () {
           o.doorway = null;
         }),
-      fetch(prefix + '/data/reports/amk_cursor_workspace_profiles_report.json', { credentials: 'same-origin' })
+      fetch(prefix + '/data/reports/amk_cursor_workspace_profiles_report.json', {
+        credentials: 'same-origin',
+      })
         .then(function (r) {
           if (!r.ok) return null;
           return r.json();
@@ -579,7 +676,9 @@
         .catch(function () {
           o.wsProfiles = null;
         }),
-      fetch(prefix + '/data/reports/z_amk_gtai_strategy_report.json', { credentials: 'same-origin' })
+      fetch(prefix + '/data/reports/z_amk_gtai_strategy_report.json', {
+        credentials: 'same-origin',
+      })
         .then(function (r) {
           if (!r.ok) return null;
           return r.json();
@@ -623,7 +722,9 @@
         .catch(function () {
           o.replicaFabric = null;
         }),
-      fetch(prefix + '/data/reports/z_ultra_mage_formula_report.json', { credentials: 'same-origin' })
+      fetch(prefix + '/data/reports/z_ultra_mage_formula_report.json', {
+        credentials: 'same-origin',
+      })
         .then(function (r) {
           if (!r.ok) return null;
           return r.json();
@@ -689,7 +790,9 @@
         .catch(function () {
           o.zAiFusionMap = null;
         }),
-      fetch(prefix + '/data/reports/z_stillness_learning_report.json', { credentials: 'same-origin' })
+      fetch(prefix + '/data/reports/z_stillness_learning_report.json', {
+        credentials: 'same-origin',
+      })
         .then(function (r) {
           if (!r.ok) return null;
           return r.json();
@@ -711,7 +814,9 @@
         .catch(function () {
           o.zLegalOps = null;
         }),
-      fetch(prefix + '/data/reports/z_legal_product_ops_report.json', { credentials: 'same-origin' })
+      fetch(prefix + '/data/reports/z_legal_product_ops_report.json', {
+        credentials: 'same-origin',
+      })
         .then(function (r) {
           if (!r.ok) return null;
           return r.json();
@@ -722,7 +827,9 @@
         .catch(function () {
           o.zLegalProductOps = null;
         }),
-      fetch(prefix + '/data/reports/z_legal_workstation_stack_report.json', { credentials: 'same-origin' })
+      fetch(prefix + '/data/reports/z_legal_workstation_stack_report.json', {
+        credentials: 'same-origin',
+      })
         .then(function (r) {
           if (!r.ok) return null;
           return r.json();
@@ -733,7 +840,9 @@
         .catch(function () {
           o.zLegalWorkstationStack = null;
         }),
-      fetch(prefix + '/data/reports/z_xbus_connector_gate_report.json', { credentials: 'same-origin' })
+      fetch(prefix + '/data/reports/z_xbus_connector_gate_report.json', {
+        credentials: 'same-origin',
+      })
         .then(function (r) {
           if (!r.ok) return null;
           return r.json();
@@ -755,7 +864,9 @@
         .catch(function () {
           o.sswsCockpit = null;
         }),
-      fetch(prefix + '/data/reports/z_omnai_core_engine_indicator_overlay.json', { credentials: 'same-origin' })
+      fetch(prefix + '/data/reports/z_omnai_core_engine_indicator_overlay.json', {
+        credentials: 'same-origin',
+      })
         .then(function (r) {
           if (!r.ok) return null;
           return r.json();
@@ -801,8 +912,14 @@
   }
 
   function init() {
-    bootPair(document.getElementById('zAmkIndicatorsMount'), document.getElementById('zAmkCloudflareGoNoGoMount'));
-    bootPair(document.getElementById('amkProjectIndicatorsMount'), document.getElementById('amkCloudflareGoNoGoMount'));
+    bootPair(
+      document.getElementById('zAmkIndicatorsMount'),
+      document.getElementById('zAmkCloudflareGoNoGoMount')
+    );
+    bootPair(
+      document.getElementById('amkProjectIndicatorsMount'),
+      document.getElementById('amkCloudflareGoNoGoMount')
+    );
   }
 
   if (document.readyState === 'loading') {

@@ -65,6 +65,8 @@ data/reports/*.json
 !data/reports/z_crystal_dna_drift_report.json
 !data/reports/z_anydevice_simulation_report.json
 !data/reports/z_cycle_observe_status.json
+!data/reports/z_pc_activation_receipt.json
+!data/reports/z_deployment_readiness_status.json
 
 # Logs
 logs

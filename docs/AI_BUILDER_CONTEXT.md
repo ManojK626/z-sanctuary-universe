@@ -33,7 +33,7 @@
 The ecosystem is in a **governed organism foundation** posture: **read-only awareness** (topology, device trust, doorway receipts, drift, traffic) expands **before** widening autonomous execution. Canonical catalog: [Z_ECOSYSTEM_GROWTH_STATUS.md](Z_ECOSYSTEM_GROWTH_STATUS.md) and `data/z_ecosystem_growth_stage_registry.json`.
 
 | Seal | One-line role |
-| ---------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| ------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | **Z-SSWS IDE** | Main **operator cockpit** — doctrine, tasks, workspace spine; not silent full-system auto-launch. |
 | **Z-CONTROL-LINK-1** | Canonical hub + **thin satellite bridge** sync (`docs/Z_SANCTUARY_CONTROL_LINK.md`); `npm run z:control-links:dry` default. |
 | **Z-DOORWAY-2** | Governed **workspace opener** — registry + explicit human-run helpers only. |
@@ -45,6 +45,7 @@ The ecosystem is in a **governed organism foundation** posture: **read-only awar
 | **Z-ANYDEVICE-2** | **Synthetic device simulation** — [Z_ANYDEVICE_SYNTHETIC_SIMULATION.md](Z_ANYDEVICE_SYNTHETIC_SIMULATION.md), `npm run z:anydevice:simulate`. |
 | **Z-CYCLE-OBSERVE-1** | **Continuous observation tower + safe task queue** — [Z_CYCLE_OBSERVE_SYSTEM.md](Z_CYCLE_OBSERVE_SYSTEM.md), `npm run z:cycle:observe`; generates `task_queue` only — **does not execute** it. |
 | **Z-CYCLE-DASHBOARD-1** | **Read-only ecosystem nervous system UI** — [Z_CYCLE_DASHBOARD_SYSTEM.md](Z_CYCLE_DASHBOARD_SYSTEM.md), `dashboard/panels/z-cycle-dashboard-readonly.html`; GET JSON only — **not** a control plane. |
+| **Z-DEPLOYMENT-READINESS-OVERSEER-1** | **Deployment readiness rollup (read-only)** — [Z_DEPLOYMENT_READINESS_OVERSEER.md](Z_DEPLOYMENT_READINESS_OVERSEER.md), `npm run z:deployment:readiness`; writes `z_deployment_readiness_status.{json,md}` only — **not** deploy authority. |
 | **Cloudflare governance** | **Preview / runtime posture only**; **production HOLD** — [Z-CLOUDFLARE-AI-COMMS-PRECAUTIONS.md](Z-CLOUDFLARE-AI-COMMS-PRECAUTIONS.md). |
 | **Casa AI Builder** | **Suggest docs / prompts / checklists only** — no device, deploy, or secret authority. |
 
@@ -75,6 +76,8 @@ The ecosystem is in a **governed organism foundation** posture: **read-only awar
 **Cursor awareness verify bundle** (run in order when refreshing overseer receipts):
 
 ```bash
+npm run z:deployment:readiness
+npm run z:pc:activation
 npm run z:cycle:observe
 npm run verify:md
 npm run z:anydevice:simulate
@@ -82,6 +85,8 @@ npm run z:crystal:dna:drift
 npm run z:traffic
 npm run z:car2
 ```
+
+(`z:deployment:readiness` rewrites only `data/reports/z_deployment_readiness_status.{json,md}`. `z:pc:activation` is optional but recommended after hub/PowerShell work; it rewrites only `data/reports/z_pc_activation_receipt.{json,md}`.)
 
 **Z-CYCLE-DASHBOARD-1:** open `dashboard/panels/z-cycle-dashboard-readonly.html` over **http** (same-origin GET to `data/reports/`). The page **does not** run npm or execute the task queue.
 
@@ -94,7 +99,7 @@ npm run z:car2
 ## Active hub surfaces and receipts
 
 | Surface | Why it matters |
-| -------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------- |
+| -------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------- |
 | [AMK_GOKU_MAIN_CONTROL_DASHBOARD.md](AMK_GOKU_MAIN_CONTROL_DASHBOARD.md) | Main AMK command-center doctrine (MAP and FLEX phases). |
 | [AMK_GOKU_COMMAND_BOOK_LAYOUT.md](AMK_GOKU_COMMAND_BOOK_LAYOUT.md) | Drawer/focus/inspector/tools shell behavior and locked law. |
 | [PHASE_AMK_DASH_FLEX_2_GREEN_RECEIPT.md](PHASE_AMK_DASH_FLEX_2_GREEN_RECEIPT.md) | FLEX-2 scope and acceptance receipt. |
@@ -118,6 +123,8 @@ npm run z:car2
 | [PHASE_Z_CURSOR_AWARENESS_3_GREEN_RECEIPT.md](PHASE_Z_CURSOR_AWARENESS_3_GREEN_RECEIPT.md) | Z-CURSOR-AWARENESS-3 — Cycle Observe sealed; Cursor / rule alignment receipt. |
 | [Z_CYCLE_DASHBOARD_SYSTEM.md](Z_CYCLE_DASHBOARD_SYSTEM.md) | Z-CYCLE-DASHBOARD-1 read-only ecosystem nervous system dashboard (UI only). |
 | [PHASE_Z_CYCLE_DASHBOARD_1_GREEN_RECEIPT.md](PHASE_Z_CYCLE_DASHBOARD_1_GREEN_RECEIPT.md) | Seal receipt for Z-CYCLE-DASHBOARD-1. |
+| [Z_DEPLOYMENT_READINESS_OVERSEER.md](Z_DEPLOYMENT_READINESS_OVERSEER.md) | Z-DEPLOYMENT-READINESS-OVERSEER-1 read-only deployment posture rollup. |
+| [PHASE_Z_DEPLOYMENT_READINESS_OVERSEER_1_GREEN_RECEIPT.md](PHASE_Z_DEPLOYMENT_READINESS_OVERSEER_1_GREEN_RECEIPT.md) | Seal receipt for Z-DEPLOYMENT-READINESS-OVERSEER-1. |
 | [Z_API_SPINE_POWER_CELL.md](Z_API_SPINE_POWER_CELL.md) | API spine posture within hub governance. |
 | [Z_API_READINESS_AND_SMOKE_GATE.md](Z_API_READINESS_AND_SMOKE_GATE.md) | Readiness/smoke charter and non-bypass flow. |
 | [Z_TRAFFIC_MINIBOTS.md](Z_TRAFFIC_MINIBOTS.md) | Traffic report source and signal semantics. |

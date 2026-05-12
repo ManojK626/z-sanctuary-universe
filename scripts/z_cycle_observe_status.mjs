@@ -55,6 +55,7 @@ function isObserveRelatedScript(name, cmd) {
       'z:doorway:status',
       'z:control-links:dry',
       'z:cycle:observe',
+      'z:deployment:readiness',
     ].includes(n)
   )
     return true;
@@ -65,7 +66,7 @@ function isObserveRelatedScript(name, cmd) {
   )
     return true;
   if (
-    /z_crystal_dna_drift|z_anydevice_simulate|z_traffic_minibots|z_car2_scan|z_cycle_observe_status/i.test(
+    /z_crystal_dna_drift|z_anydevice_simulate|z_traffic_minibots|z_car2_scan|z_cycle_observe_status|z_deployment_readiness_status/i.test(
       c
     )
   )

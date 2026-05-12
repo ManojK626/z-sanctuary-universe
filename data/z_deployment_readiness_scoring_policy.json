@@ -1,0 +1,79 @@
+{
+  "schema": "z_deployment_readiness_scoring_policy_v1",
+  "phase": "Z-DEPLOYMENT-READINESS-OVERSEER-1",
+  "law": "Read-only evaluation from hub registries and committed report JSON only. No deploy, no external mutation, no arbitrary disk walks, no secrets, no auto-fix. Percentages and deployment_status are advisory posture — not certification. Production-ready band (96–100) still requires explicit human / legal / security gates.",
+  "automated_readiness_cap": 95,
+  "automated_readiness_cap_note": "This overseer never emits 96–100 from formulas alone — that band is reserved for human-signed receipts outside this script.",
+  "readiness_bands": [
+    { "min": 0, "max": 20, "label": "seed / concept", "estimated_build_phase": "Seed / doctrine" },
+    { "min": 21, "max": 40, "label": "early build", "estimated_build_phase": "Early build" },
+    {
+      "min": 41,
+      "max": 60,
+      "label": "governed prototype",
+      "estimated_build_phase": "Governed prototype"
+    },
+    {
+      "min": 61,
+      "max": 80,
+      "label": "pilot candidate",
+      "estimated_build_phase": "Pilot candidate"
+    },
+    {
+      "min": 81,
+      "max": 95,
+      "label": "release candidate",
+      "estimated_build_phase": "Release candidate (review only)"
+    },
+    {
+      "min": 96,
+      "max": 100,
+      "label": "production-ready (gated)",
+      "estimated_build_phase": "Production-ready only after human / legal / security approval — never implied by score alone"
+    }
+  ],
+  "role_readiness_seed": {
+    "hub": 48,
+    "member": 38,
+    "external": 28
+  },
+  "module_status_seed": {
+    "planned": 24,
+    "active": 52,
+    "beta": 58,
+    "stable": 68,
+    "deprecated": 18,
+    "default": 30
+  },
+  "ecosystem_readiness_adjustments": {
+    "cycle_observe_blue_cap": 86,
+    "cycle_observe_non_green_penalty": 12,
+    "traffic_red_penalty": 22,
+    "traffic_yellow_penalty": 8,
+    "drift_non_green_penalty": 10,
+    "anydevice_warning_penalty": 6,
+    "dashboard_registry_not_green_penalty": 14,
+    "path_missing_cap": 36,
+    "external_role_cap": 44,
+    "nas_wait_satellite_penalty": 6
+  },
+  "confidence": {
+    "base": 58,
+    "per_hub_verify_script_cap": 14,
+    "stale_report_hours_yellow": 96,
+    "stale_report_hours_red": 240,
+    "stale_yellow_penalty": 8,
+    "stale_red_penalty": 18,
+    "sibling_package_json_found_bonus": 12,
+    "min_confidence": 16,
+    "max_confidence": 96
+  },
+  "deployment_status_labels": {
+    "observe_only": "OBSERVE_ONLY_NOT_DEPLOYABLE",
+    "path_hold": "HOLD_UNREGISTERED_OR_EXTERNAL_PATH",
+    "signal_hold": "HOLD_ECOSYSTEM_SIGNALS",
+    "local_pilot": "LOCAL_PILOT_REVIEW_ONLY",
+    "module_manifest": "HUB_MODULE_MANIFEST_ROW_ONLY",
+    "production_never_from_score": "PRODUCTION_REQUIRES_HUMAN_LEGAL_SECURITY_GATES"
+  }
+}
