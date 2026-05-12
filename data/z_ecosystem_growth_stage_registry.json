@@ -1,0 +1,129 @@
+{
+  "schema": "z_ecosystem_growth_stage_registry_v1",
+  "phase": "Z-AI-BUILDER-AWARENESS-2",
+  "updated_at": "2026-05-12T00:00:00Z",
+  "current_growth_stage": {
+    "id": "governed_organism_foundation",
+    "label": "Governed organism foundation",
+    "summary": "Read-only awareness, topology, doorway discipline, and preview-only edge posture expand ahead of autonomous execution."
+  },
+  "sealed_systems": [
+    {
+      "id": "z_ssws_ide_cockpit",
+      "phase_label": "Z-SSWS IDE",
+      "role": "Main operator cockpit for hub-aligned work; doctrine and tasks over silent automation.",
+      "docs": ["docs/Z_SSWS_WORKSPACE_SPINE.md", "docs/Z_SSWS_SUPER_SAIYAN_WORKSPACE_COCKPIT.md"]
+    },
+    {
+      "id": "z_control_link_1",
+      "phase_label": "Z-CONTROL-LINK-1",
+      "role": "Canonical hub plus thin satellite bridge sync; one control link file per approved satellite.",
+      "docs": ["docs/Z_SANCTUARY_CANONICAL_CONTROL_ROOT.md", "docs/AI_BUILDER_CONTEXT.md"],
+      "data": ["data/z_satellite_control_link_manifest.json"],
+      "scripts_note": "npm run z:control-links:dry / z:control-links:apply (operator-gated)"
+    },
+    {
+      "id": "z_doorway_2",
+      "phase_label": "Z-DOORWAY-2",
+      "role": "Governed workspace opener — registry-backed paths and explicit human-run open helpers only.",
+      "docs": ["docs/AMK_PROJECT_DOORWAY_LAUNCHER.md", "docs/AMK_WORKSPACE_DOORWAY.md"],
+      "data": ["data/z_doorway_workspace_registry.json"]
+    },
+    {
+      "id": "z_doorway_3",
+      "phase_label": "Z-DOORWAY-3",
+      "role": "Doorway telemetry and session receipts — read-only status reports and optional JSON Lines tail; no IDE auto-launch from awareness scripts alone.",
+      "docs": ["docs/AMK_WORKSPACE_DOORWAY.md"],
+      "data": [
+        "data/reports/z_doorway_workspace_status.json",
+        "data/reports/z_doorway_session_log.jsonl"
+      ],
+      "scripts_note": "npm run z:doorway:status — see scripts/z_doorway_workspace_status.mjs"
+    },
+    {
+      "id": "z_crystal_dna_1",
+      "phase_label": "Z-CRYSTAL-DNA-1",
+      "role": "Asset identity mesh — manifest shards, dependencies, governance fields.",
+      "docs": ["docs/Z_CRYSTAL_DNA_MESH.md"],
+      "data": ["data/z_crystal_dna_asset_manifest.json"]
+    },
+    {
+      "id": "z_crystal_dna_2",
+      "phase_label": "Z-CRYSTAL-DNA-2",
+      "role": "Living Crystal ecosystem map — read-only visualization of shards and bridges.",
+      "docs": ["docs/Z_CRYSTAL_DNA_VISUALIZATION.md"],
+      "paths": ["dashboard/panels/z-crystal-dna-map.html"]
+    },
+    {
+      "id": "z_crystal_dna_3",
+      "phase_label": "Z-CRYSTAL-DNA-3",
+      "role": "Drift and integrity awareness — detect-only reports for topology and posture drift.",
+      "docs": ["docs/Z_CRYSTAL_DNA_DRIFT_AWARENESS.md"],
+      "scripts_note": "npm run z:crystal:dna:drift",
+      "data": ["data/reports/z_crystal_dna_drift_report.json"]
+    },
+    {
+      "id": "z_anydevice_ai_capsule_1",
+      "phase_label": "Z-ANYDEVICE-AI-CAPSULE-1",
+      "role": "Device trust and declared capability governance — metadata and law only.",
+      "docs": ["docs/Z_ANYDEVICE_AI_CAPSULE.md"],
+      "data": ["data/z_anydevice_ai_capsule_registry.json"]
+    },
+    {
+      "id": "z_anydevice_2",
+      "phase_label": "Z-ANYDEVICE-2",
+      "role": "Synthetic device simulation — fiction-only scenarios and read-only simulator reports.",
+      "docs": ["docs/Z_ANYDEVICE_SYNTHETIC_SIMULATION.md"],
+      "scripts_note": "npm run z:anydevice:simulate",
+      "data": [
+        "data/z_anydevice_synthetic_devices.json",
+        "data/reports/z_anydevice_simulation_report.json"
+      ]
+    },
+    {
+      "id": "cloudflare_governance",
+      "phase_label": "Cloudflare governance",
+      "role": "Preview and runtime posture review in documentation only; production HOLD — hub remains authority.",
+      "docs": ["docs/Z-CLOUDFLARE-AI-COMMS-PRECAUTIONS.md", "AGENTS.md"]
+    },
+    {
+      "id": "casa_ai_builder",
+      "phase_label": "Casa AI Builder",
+      "role": "Suggest docs, prompts, and checklists only — no device authority, deploy authority, or secret handling.",
+      "docs": ["docs/Z_ANYDEVICE_AI_CAPSULE.md", "docs/Z_ANYDEVICE_SYNTHETIC_SIMULATION.md"]
+    }
+  ],
+  "communication_rules": {
+    "ai_tower_overseers_may": ["observe", "classify", "summarize", "suggest"],
+    "must_not": [
+      "autonomous_deploy",
+      "secret_writes",
+      "arbitrary_pc_scans",
+      "real_device_scanning",
+      "nas_mutation",
+      "automatic_repair",
+      "production_cloudflare_binding"
+    ],
+    "sacred_authority": "AMK-Goku / human operator remains sacred authority for merge, deploy, NAS, billing, and production edge bind decisions."
+  },
+  "ecosystem_feedback": {
+    "current_growth_stage": "governed_organism_foundation",
+    "behavior_pattern": "Read-only awareness expanding faster than execution.",
+    "strengths": [
+      "topology_and_drift_awareness",
+      "device_trust_and_synthetic_simulation",
+      "doorway_control_and_telemetry_receipts",
+      "cloudflare_preview_posture_and_github_truth"
+    ],
+    "risk_to_avoid": "Too much automation before observability stabilizes.",
+    "recommended_next_lanes": [
+      "AI_Builder_awareness_follow_through",
+      "Z_Lab_supervised_analysis_doctrine"
+    ]
+  },
+  "human_docs": [
+    "docs/Z_ECOSYSTEM_GROWTH_STATUS.md",
+    "docs/AI_BUILDER_CONTEXT.md",
+    "docs/PHASE_Z_AI_BUILDER_AWARENESS_2_GREEN_RECEIPT.md"
+  ]
+}
