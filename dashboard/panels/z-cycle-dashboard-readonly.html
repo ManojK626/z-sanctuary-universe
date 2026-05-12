@@ -24,8 +24,9 @@
         Refresh data
       </button>
       <span class="zcd-hint"
-        >Run <span class="zcd-mono">npm run z:cycle:observe</span> from hub root to refresh the
-        primary bundle.</span
+        >Run <span class="zcd-mono">npm run z:pc:activation</span> after operator shell work, then
+        <span class="zcd-mono">npm run z:cycle:observe</span> from hub root to refresh the primary
+        bundle.</span
       >
     </div>
     <main class="zcd-main">
@@ -80,6 +81,21 @@
             <li>growth registry: <strong id="zcdInGrowth">—</strong></li>
             <li>crystal manifest: <strong id="zcdInCrystal">—</strong></li>
             <li>traffic report: <strong id="zcdInTraffic">—</strong></li>
+            <li>PC activation receipt: <strong id="zcdInPcAct">—</strong></li>
+          </ul>
+        </section>
+        <section class="zcd-card">
+          <h2>PC activation (observe embed)</h2>
+          <p id="zcdPcHint" class="zcd-hint" style="margin: 0 0 0.5rem">
+            From <span class="zcd-mono">latest_pc_activation</span> in the observe bundle.
+            Visibility only — not permission to run verify or queue items.
+          </p>
+          <ul class="zcd-hint" style="margin: 0; padding-left: 1rem">
+            <li>receipt time: <strong id="zcdPcGenerated">—</strong></li>
+            <li>git branch: <strong id="zcdPcBranch">—</strong></li>
+            <li>HEAD (short): <strong id="zcdPcHead">—</strong></li>
+            <li>porcelain lines: <strong id="zcdPcDirty">—</strong></li>
+            <li>receipt warnings: <strong id="zcdPcRecvWarn">—</strong></li>
           </ul>
         </section>
         <section class="zcd-card">

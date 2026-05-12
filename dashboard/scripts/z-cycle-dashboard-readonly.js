@@ -11,6 +11,7 @@
     drift: '../../data/reports/z_crystal_dna_drift_report.json',
     anydevice: '../../data/reports/z_anydevice_simulation_report.json',
     car2: '../../data/reports/z_car2_similarity_report.json',
+    pcActivation: '../../data/reports/z_pc_activation_receipt.json',
   };
 
   function $(id) {
@@ -118,6 +119,30 @@
     setText('zcdInGrowth', inputs.growth_registry ? 'ok' : 'miss');
     setText('zcdInCrystal', inputs.crystal_manifest ? 'ok' : 'miss');
     setText('zcdInTraffic', inputs.report_traffic ? 'ok' : 'miss');
+    setText('zcdInPcAct', inputs.report_pc_activation ? 'ok' : 'miss');
+
+    var pc = ob.latest_pc_activation || {};
+    var pcHint = $('zcdPcHint');
+    if (pcHint) {
+      if (pc.missing) {
+        pcHint.textContent =
+          'No PC activation receipt on disk yet. After hub/PowerShell work, run npm run z:pc:activation, then npm run z:cycle:observe.';
+      } else {
+        pcHint.textContent =
+          'From latest_pc_activation in the observe bundle. Visibility only — not permission to run verify or queue items.';
+      }
+    }
+    setText('zcdPcGenerated', pc.missing ? '—' : pc.generated_at || '—');
+    setText('zcdPcBranch', pc.missing ? '—' : pc.git_branch || '—');
+    setText('zcdPcHead', pc.missing ? '—' : pc.git_head_short || '—');
+    setText(
+      'zcdPcDirty',
+      pc.missing ? '—' : pc.porcelain_lines != null ? String(pc.porcelain_lines) : '—'
+    );
+    setText(
+      'zcdPcRecvWarn',
+      pc.missing ? '—' : pc.receipt_warnings != null ? String(pc.receipt_warnings) : '0'
+    );
   }
 
   function renderSupplemental(label, data, err) {
@@ -156,8 +181,11 @@
           fetchJson(DATA.car2).catch(function (e) {
             return { __err: e };
           }),
+          fetchJson(DATA.pcActivation).catch(function (e) {
+            return { __err: e };
+          }),
         ]).then(function (parts) {
-          var names = ['traffic', 'drift', 'anydevice', 'car2'];
+          var names = ['traffic', 'drift', 'anydevice', 'car2', 'pc_activation'];
           parts.forEach(function (part, i) {
             if (part && part.__err)
               renderSupplemental(

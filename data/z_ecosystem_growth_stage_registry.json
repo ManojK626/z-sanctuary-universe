@@ -1,7 +1,7 @@
 {
   "schema": "z_ecosystem_growth_stage_registry_v1",
   "phase": "Z-AI-BUILDER-AWARENESS-2",
-  "updated_at": "2026-05-12T12:00:00Z",
+  "updated_at": "2026-05-12T14:00:00Z",
   "current_growth_stage": {
     "id": "governed_organism_foundation",
     "label": "Governed organism foundation",
@@ -104,6 +104,20 @@
       "data": ["data/z_cycle_dashboard_manifest.json"]
     },
     {
+      "id": "z_pc_activation_awareness_1",
+      "phase_label": "Z-PC-ACTIVATION-AWARENESS-1",
+      "role": "Manual-only operator activation receipt after hub/PowerShell work — git + phase markers + on-disk report signals; writes only z_pc_activation_receipt.{json,md}; no watcher; receipt is not execute permission.",
+      "docs": [
+        "docs/Z_PC_ACTIVATION_AWARENESS.md",
+        "docs/PHASE_Z_PC_ACTIVATION_AWARENESS_1_GREEN_RECEIPT.md"
+      ],
+      "scripts_note": "npm run z:pc:activation",
+      "data": [
+        "data/z_pc_activation_awareness_policy.json",
+        "data/reports/z_pc_activation_receipt.json"
+      ]
+    },
+    {
       "id": "cloudflare_governance",
       "phase_label": "Cloudflare governance",
       "role": "Preview and runtime posture review in documentation only; production HOLD — hub remains authority.",
@@ -138,7 +152,8 @@
       "doorway_control_and_telemetry_receipts",
       "cloudflare_preview_posture_and_github_truth",
       "cycle_observe_safe_task_queue",
-      "read_only_dashboard_ui"
+      "read_only_dashboard_ui",
+      "pc_activation_receipt_after_operator_sessions"
     ],
     "risk_to_avoid": "Too much automation before observability stabilizes.",
     "recommended_next_lanes": [
@@ -154,6 +169,8 @@
     "docs/PHASE_Z_CYCLE_OBSERVE_1_GREEN_RECEIPT.md",
     "docs/PHASE_Z_CURSOR_AWARENESS_3_GREEN_RECEIPT.md",
     "docs/Z_CYCLE_DASHBOARD_SYSTEM.md",
-    "docs/PHASE_Z_CYCLE_DASHBOARD_1_GREEN_RECEIPT.md"
+    "docs/PHASE_Z_CYCLE_DASHBOARD_1_GREEN_RECEIPT.md",
+    "docs/Z_PC_ACTIVATION_AWARENESS.md",
+    "docs/PHASE_Z_PC_ACTIVATION_AWARENESS_1_GREEN_RECEIPT.md"
   ]
 }

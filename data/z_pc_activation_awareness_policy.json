@@ -1,0 +1,30 @@
+{
+  "schema": "z_pc_activation_awareness_policy_v1",
+  "phase": "Z-PC-ACTIVATION-AWARENESS-1",
+  "updated_at": "2026-05-12T00:00:00Z",
+  "title": "PC activation awareness — PowerShell route receipts (manual only)",
+  "law": [
+    "Manual operator run records a local read-only receipt only.",
+    "No autonomous execution, no auto-merge, no deploy, no secrets, no PC-wide scanning, no NAS mutation, no real device scanning.",
+    "No background daemon and no always-running watcher.",
+    "Script writes only data/reports/z_pc_activation_receipt.{json,md}.",
+    "Script does not run npm verify pipelines unless a future human-approved phase explicitly adds that."
+  ],
+  "turtle_mode_posture": "Branches use prefix cursor/zsanctuary/; one domain per PR; verify gates and human review before merge; receipt is not execution permission.",
+  "cursor_guidance": {
+    "should_check_on_session_start": [
+      "data/reports/z_pc_activation_receipt.md",
+      "data/reports/z_pc_activation_receipt.json"
+    ],
+    "may": ["read_receipt", "summarize_operator_context", "suggest_next_turtle_mode_branch"],
+    "must_not": [
+      "treat_receipt_as_permission_to_execute",
+      "auto_run_queued_or_verify_commands_from_receipt"
+    ],
+    "sacred_authority": "AMK/human chooses the next lane."
+  },
+  "future_symbolic_metaphors_docs_only": {
+    "mango_tree": "Fruitful project knowledge and growth receipts — future docs/registry metaphor only; no mystical execution claims.",
+    "starzan_tree": "Star-map / cosmic relation memory — future docs/registry metaphor only; charter separately before any runtime use."
+  }
+}
