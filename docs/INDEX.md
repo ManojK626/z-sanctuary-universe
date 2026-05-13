@@ -80,6 +80,7 @@ Compact entry points for **read-only** hub registries and AMK-facing evidence. F
 | Z-AMK-GTAI Strategy Council | [Z_AMK_GTAI_STRATEGY_COUNCIL.md](Z_AMK_GTAI_STRATEGY_COUNCIL.md) | `npm run z:amk:strategy` |
 | Z-ROOT-7 / Z-ROOT-7B guardian coordination | [Z_ROOT_7_GUARDIAN_COORDINATION_LAYER.md](Z_ROOT_7_GUARDIAN_COORDINATION_LAYER.md) | AMK main control panel (HTTP) |
 | AMK-DASH-FLEX-1/2 command book + toolbox | [AMK_GOKU_COMMAND_BOOK_LAYOUT.md](AMK_GOKU_COMMAND_BOOK_LAYOUT.md) | AMK main control (HTTP) |
+| Z-OMNI-CHARTER-1 visual workstation engine | [Z_OMNI_VISUAL_WORKSTATION_ENGINE_CHARTER.md](Z_OMNI_VISUAL_WORKSTATION_ENGINE_CHARTER.md) | — |
 | AMK-DASH-FLEX-2 green receipt | [PHASE_AMK_DASH_FLEX_2_GREEN_RECEIPT.md](PHASE_AMK_DASH_FLEX_2_GREEN_RECEIPT.md) | â€” |
 | AMK indicators | [AMK_PROJECT_INDICATORS_AND_GO_NO_GO.md](AMK_PROJECT_INDICATORS_AND_GO_NO_GO.md) | â€” |
 | Z-SWARM-14DRP-1 green receipt | [PHASE_Z_SWARM_14DRP_1_GREEN_RECEIPT.md](PHASE_Z_SWARM_14DRP_1_GREEN_RECEIPT.md) | â€” |
