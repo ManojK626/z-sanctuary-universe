@@ -7,7 +7,7 @@
 ## Sealed artifacts
 
 | Artifact | Responsibility |
-| ----------------------------------------------- | ------------------------------------------------------------ |
+| --- | --- |
 | `docs/Z_SSWS_SUPER_SAIYAN_WORKSPACE_COCKPIT.md` | Doctrine + cockpit vs deep-work model |
 | `data/z_ssws_cockpit_registry.json` | Machine-truth posture for disks, modes, storage declarations |
 | `scripts/z_ssws_cockpit_status.mjs` | Validator that mirrors IDE PATH + fusion reports |

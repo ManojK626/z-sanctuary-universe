@@ -3,7 +3,7 @@
 ## Registry Identity
 
 | Field | Value |
-| --------------------- | ---------------------- |
+| --- | --- |
 | **ID** | `z-whale-bus-spine` |
 | **Category** | trust_audit_governance |
 | **Registry status** | planned_stub |

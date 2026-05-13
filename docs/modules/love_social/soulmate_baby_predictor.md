@@ -3,7 +3,7 @@
 ## Registry Identity
 
 | Field | Value |
-| --------------------- | ------------------------- |
+| --- | --- |
 | **ID** | `soulmate_baby_predictor` |
 | **Category** | love_social |
 | **Registry status** | safety_hold |

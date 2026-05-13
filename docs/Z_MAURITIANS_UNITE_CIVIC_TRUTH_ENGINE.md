@@ -15,7 +15,7 @@ Raw public pain → verified claims → lawful awareness → careful policy prop
 ## What lives in the hub now
 
 | Artifact | Role |
-| --------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| --------------------------------------- | ---------------------------------------------------------------------- |
 | `data/z_mu_claim_ledger.json` | Neutral claim ledger rows (Phase 1 seed). |
 | `data/z_mu_source_policy.json` | Source ranks, required fields, peace filter phrases, disclaimers. |
 | `data/examples/z_mu_claim_samples.json` | Additional classifier rows (+ optional RED fixture). |

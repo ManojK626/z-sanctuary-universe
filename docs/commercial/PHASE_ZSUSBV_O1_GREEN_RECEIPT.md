@@ -49,4 +49,4 @@ Remove or revert the new data files, script, npm script line, docs, example caps
 
 ## Sign-off
 
-Operator: \***\*\*\*\*\***\_\_\_\_\***\*\*\*\*\*** Date: \***\*\_\_\*\***
+Operator: **********\_\_\_\_********** Date: ****\_\_****

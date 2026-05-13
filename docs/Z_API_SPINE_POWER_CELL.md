@@ -2,14 +2,14 @@
 
 ## Purpose
 
-**Z-API-SPINE-1** is the hub’s **read-only** catalog of APIs, frontends, workers, scripts, health paths, smoke and readiness command strings, ownership, risk class, autonomy posture, and deployment or Cloudflare labels across the Z-Sanctuary multiverse. It answers: _what exists, where it lives, who owns it, and what evidence is allowed to run automatically_ — without starting servers, opening gateways, or calling production.
+**Z-API-SPINE-1** is the hub’s **read-only** catalog of APIs, frontends, workers, scripts, health paths, smoke and readiness command strings, ownership, risk class, autonomy posture, and deployment or Cloudflare labels across the Z-Sanctuary multiverse. It answers: *what exists, where it lives, who owns it, and what evidence is allowed to run automatically* — without starting servers, opening gateways, or calling production.
 
 This extends the **Z-API-GATE-1** idea from a single-project posture into a **universal registry**: the hub remains the **canonical awareness center**; sibling projects may publish small **service capsules** (see [Z_API_SERVICE_CAPSULE_POLICY.md](Z_API_SERVICE_CAPSULE_POLICY.md)) that the spine validator can aggregate later.
 
 ## Architecture roles (Phase 1 = metadata only)
 
 | Concept | Phase 1 meaning |
-| ------------------------ | ----------------------------------------------------------------------------------------------------------- |
+| --- | --- |
 | **ZCPU core** | Central registry + readiness validator (`npm run z:api:spine`) |
 | **ZGPU core** | AMK dashboard indicators and future topology map (SPINE-2+) |
 | **Whale bus** | Event-bus ideas recorded in policy JSON only — no live bus |
@@ -21,7 +21,7 @@ This extends the **Z-API-GATE-1** idea from a single-project posture into a **un
 ## Artifacts
 
 | Path | Role |
-| -------------------------------------------------- | -------------------------------------------------------------------------- |
+| --- | --- |
 | `data/z_api_spine_registry.json` | Canonical registry: observer roles, spines, `services[]` |
 | `data/z_api_communication_flow_policy.json` | Signals, collision rules, alert policy, DRP/DOP boundary notes |
 | `data/z_api_service_registry.json` | Narrow API seed (e.g. AT Princess row) aligned to spine |

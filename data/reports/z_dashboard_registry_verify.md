@@ -5,7 +5,6 @@
 - Hub root: `C:\Cursor Projects Organiser\Z_Sanctuary_Universe`
 
 ## Checks
-
 - [x] mdgev_tile `mdgev-self` /dashboard/z-mdgev/index.html — ok
 - [x] mdgev_tile `hodp-skk-rkpk` /dashboard/Html/index-skk-rkpk.html — ok
 - [x] mdgev_tile `hodp-redirect` /dashboard/Html/index.html — ok

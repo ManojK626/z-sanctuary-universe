@@ -3,7 +3,7 @@
 ## Registry Identity
 
 | Field | Value |
-| --------------------- | ----------------------- |
+| --- | --- |
 | **ID** | `media_storytelling_os` |
 | **Category** | media_creative |
 | **Registry status** | doctrine_only |

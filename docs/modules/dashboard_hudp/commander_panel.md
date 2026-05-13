@@ -3,7 +3,7 @@
 ## Registry Identity
 
 | Field | Value |
-| --------------------- | ----------------- |
+| --- | --- |
 | **ID** | `commander_panel` |
 | **Category** | Dashboard / HUDP |
 | **Registry status** | implemented |

@@ -19,36 +19,31 @@
 ## Sample summary
 
 {
-"green": 2,
-"yellow": 1,
-"blue": 2,
-"red": 0
+  "green": 2,
+  "yellow": 1,
+  "blue": 2,
+  "red": 0
 }
 
 ## Sample rows
 
 ### legal_green_evidence_timeline_001
-
 - Signal: **GREEN**
 - Concept-only legal governance posture; no runtime legal lane.
 
 ### legal_green_risk_panel_002
-
 - Signal: **GREEN**
 - Concept-only legal governance posture; no runtime legal lane.
 
 ### legal_yellow_retention_gap_003
-
 - Signal: **YELLOW**
 - Missing retention/metadata detail; concept is incomplete.
 
 ### legal_blue_real_lawyer_onboarding_004
-
 - Signal: **BLUE**
 - Real lawyer identity/contract decision requires AMK + legal human review.
 
 ### legal_blue_named_advisor_consent_005
-
 - Signal: **BLUE**
 - Real lawyer identity/contract decision requires AMK + legal human review.
 
@@ -64,3 +59,4 @@
 - BLUE requires AMK/legal/human review.
 - RED blocks movement.
 - AMK-Goku owns sacred moves.
+

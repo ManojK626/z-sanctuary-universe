@@ -43,7 +43,7 @@ Phase **Z-OMNAI-BUILD-2A** adds the **master media concept seed** (`npm run z:om
 ## Relation to ZAG, Z-Traffic, AAL, AMK indicators, Z-SUSBV, and ZSX
 
 | System | Role for Z-OMNAI |
-| ------------------------------------------------------------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| ------ | ---------------- |
 | **ZAG** ([Z_AUTONOMOUS_GUARDIAN_LOOP.md](../Z_AUTONOMOUS_GUARDIAN_LOOP.md)) | Doctrine for what may run automatically (observe, report) versus what needs human or AMK gates. Z-OMNAI validators are L0–L1 style evidence; public lanes stay gated. |
 | **Z-Traffic** ([Z_TRAFFIC_MINIBOTS.md](../Z_TRAFFIC_MINIBOTS.md), `npm run z:traffic`) | Minibot-style **read-only** signals (GREEN, YELLOW, RED, BLUE) align with how creative packs should surface governance-sensitive work without executing it. |
 | **Z-AAL** ([AMK_AUTONOMOUS_APPROVAL_LADDER.md](../AMK_AUTONOMOUS_APPROVAL_LADDER.md)) | Ladder for **auto-lane candidates** versus **sacred** lanes. Creative production that touches launch, pricing, or legal surfaces belongs on higher rungs with AMK approval. |

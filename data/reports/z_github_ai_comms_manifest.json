@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-13T19:56:05.897Z",
+  "generated_at": "2026-05-03T14:38:56.371Z",
   "requirements_version": "2026-04-27T00:00:00.000Z",
   "requirements_file": "data/z_github_ai_comms_requirements.json",
   "github_login": "ManojK626",
@@ -40,61 +40,61 @@
       "kind": "authority",
       "path": "docs/Z-HIERARCHY-CHIEF-AND-OBSERVER-VIEW.md",
       "exists": true,
-      "absolute": "/home/runner/work/z-sanctuary-universe/z-sanctuary-universe/docs/Z-HIERARCHY-CHIEF-AND-OBSERVER-VIEW.md"
+      "absolute": "C:\\Cursor Projects Organiser\\ZSanctuary_Universe\\docs\\Z-HIERARCHY-CHIEF-AND-OBSERVER-VIEW.md"
     },
     {
       "kind": "authority",
       "path": "docs/Z-COMPLETIONS-TEST-AND-COMMUNICATIONS-FLOW.md",
       "exists": true,
-      "absolute": "/home/runner/work/z-sanctuary-universe/z-sanctuary-universe/docs/Z-COMPLETIONS-TEST-AND-COMMUNICATIONS-FLOW.md"
+      "absolute": "C:\\Cursor Projects Organiser\\ZSanctuary_Universe\\docs\\Z-COMPLETIONS-TEST-AND-COMMUNICATIONS-FLOW.md"
     },
     {
       "kind": "authority",
       "path": "rules/Z_SANCTUARY_SECURITY_POLICY.md",
       "exists": true,
-      "absolute": "/home/runner/work/z-sanctuary-universe/z-sanctuary-universe/rules/Z_SANCTUARY_SECURITY_POLICY.md"
+      "absolute": "C:\\Cursor Projects Organiser\\ZSanctuary_Universe\\rules\\Z_SANCTUARY_SECURITY_POLICY.md"
     },
     {
       "kind": "instructional_doc",
       "path": "docs/Z-GITHUB-AI-COMMS-PRECAUTIONS.md",
       "id": "github-ai-comms-master",
       "exists": true,
-      "absolute": "/home/runner/work/z-sanctuary-universe/z-sanctuary-universe/docs/Z-GITHUB-AI-COMMS-PRECAUTIONS.md"
+      "absolute": "C:\\Cursor Projects Organiser\\ZSanctuary_Universe\\docs\\Z-GITHUB-AI-COMMS-PRECAUTIONS.md"
     },
     {
       "kind": "instructional_doc",
       "path": "docs/Z-ECOSYSTEM-GITHUB-INTEGRATION.md",
       "id": "ecosystem-github",
       "exists": true,
-      "absolute": "/home/runner/work/z-sanctuary-universe/z-sanctuary-universe/docs/Z-ECOSYSTEM-GITHUB-INTEGRATION.md"
+      "absolute": "C:\\Cursor Projects Organiser\\ZSanctuary_Universe\\docs\\Z-ECOSYSTEM-GITHUB-INTEGRATION.md"
     },
     {
       "kind": "data_source",
       "path": "data/z_ecosystem_github_identity.json",
       "id": "ecosystem_identity",
       "exists": true,
-      "absolute": "/home/runner/work/z-sanctuary-universe/z-sanctuary-universe/data/z_ecosystem_github_identity.json"
+      "absolute": "C:\\Cursor Projects Organiser\\ZSanctuary_Universe\\data\\z_ecosystem_github_identity.json"
     },
     {
       "kind": "data_source",
       "path": "data/z_pc_root_projects.json",
       "id": "pc_root_projects",
       "exists": true,
-      "absolute": "/home/runner/work/z-sanctuary-universe/z-sanctuary-universe/data/z_pc_root_projects.json"
+      "absolute": "C:\\Cursor Projects Organiser\\ZSanctuary_Universe\\data\\z_pc_root_projects.json"
     },
     {
       "kind": "data_source",
       "path": "docs/Z-PC-ROOT-EXTRAS-AND-TOOLS-SINK.md",
       "id": "pc_root_extras_sink",
       "exists": true,
-      "absolute": "/home/runner/work/z-sanctuary-universe/z-sanctuary-universe/docs/Z-PC-ROOT-EXTRAS-AND-TOOLS-SINK.md"
+      "absolute": "C:\\Cursor Projects Organiser\\ZSanctuary_Universe\\docs\\Z-PC-ROOT-EXTRAS-AND-TOOLS-SINK.md"
     },
     {
       "kind": "data_source",
       "path": "data/z_module_manifest.json",
       "id": "module_manifest",
       "exists": true,
-      "absolute": "/home/runner/work/z-sanctuary-universe/z-sanctuary-universe/data/z_module_manifest.json"
+      "absolute": "C:\\Cursor Projects Organiser\\ZSanctuary_Universe\\data\\z_module_manifest.json"
     }
   ],
   "missing_paths": [],

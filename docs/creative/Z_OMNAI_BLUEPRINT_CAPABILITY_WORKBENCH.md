@@ -7,7 +7,7 @@ The **Blueprint Capability Workbench** turns Z-OMNAI-1 from registry and templat
 ## What exists on disk
 
 | Artefact | Role |
-| ----------------------------------------------- | ---------------------------------------------------------------------------------------- |
+| ---- | ---- |
 | `data/z_omnai_capability_workbench.json` | Supported modes, inputs, evidence, gates, and global laws |
 | `data/z_omnai_creative_pipeline_templates.json` | Source production steps merged into each plan |
 | `scripts/z_omnai_build_plan_generate.mjs` | Generator — writes reports only |
@@ -36,7 +36,7 @@ Phase **Z-OMNAI-BUILD-2A** adds `data/z_omnai_master_media_concept_seed.json` an
 ## Workbench modes
 
 | mode_id | Maps to pipeline | Typical use |
-| -------------------------- | ------------------------------------- | -------------------------------------- |
+| ---- | ---- | ---- |
 | `movie_trailer` | `z_omnai_movie_trailer_v1` | Trailers and long-form motion planning |
 | `marketing_campaign` | `z_omnai_marketing_campaign_v1` | Campaign briefs and claim ledgers |
 | `landing_page` | `z_omnai_product_landing_page_v1` | Single-product landing structure |
@@ -56,7 +56,7 @@ Phase **Z-OMNAI-BUILD-2A** adds `data/z_omnai_master_media_concept_seed.json` an
 ## Signals (build plan)
 
 | Signal | Meaning |
-| ---------- | ---------------------------------------------------------------------------------------------- |
+| ---- | ---- |
 | **GREEN** | Internal planning surfaces only; still human-owned for any external step |
 | **BLUE** | Template touches public launch, pricing, legal, partner, privacy, health, or compliance review |
 | **YELLOW** | Evidence lists or template linkage need tightening before relying on the bundle |

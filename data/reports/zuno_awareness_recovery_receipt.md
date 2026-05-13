@@ -3,7 +3,7 @@
 **Generated:** 2026-05-03T16:02:37.890Z
 
 | Field | Value |
-| ------------------------- | ------------------ |
+| ---- | ---- |
 | Mode | read_last_receipts |
 | A3 band (last) | RED |
 | Z-Traffic chief | RED |
@@ -36,4 +36,4 @@ A3 band is RED; Z-Traffic chief is RED. Do not open A4.
 
 ---
 
-_Read-only receipt — no auto-fix, no A4 execution._
+*Read-only receipt — no auto-fix, no A4 execution.*

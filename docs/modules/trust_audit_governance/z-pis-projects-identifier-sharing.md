@@ -3,7 +3,7 @@
 ## Registry Identity
 
 | Field | Value |
-| --------------------- | ----------------------------------- |
+| --- | --- |
 | **ID** | `z-pis-projects-identifier-sharing` |
 | **Category** | trust_audit_governance |
 | **Registry status** | planned_stub |
@@ -13,7 +13,7 @@
 
 ## Purpose
 
-Z-Project Passport: data/z_project_passports/\*.json; share_level enum; internal_notes rules. Validator: npm run z:project-passports:verify → data/reports/z_project_passport_validator.json. No secrets, no deploy. Future: Commander, Twin Roots, ledger refs.
+Z-Project Passport: data/z_project_passports/*.json; share_level enum; internal_notes rules. Validator: npm run z:project-passports:verify → data/reports/z_project_passport_validator.json. No secrets, no deploy. Future: Commander, Twin Roots, ledger refs.
 
 ## Current Evidence
 

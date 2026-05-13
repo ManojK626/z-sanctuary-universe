@@ -3,7 +3,7 @@
 ## Registry Identity
 
 | Field | Value |
-| --------------------- | ----------------------- |
+| --- | --- |
 | **ID** | `mirrorsoul_hub_slice` |
 | **Category** | Product / interpersonal |
 | **Registry status** | implemented |

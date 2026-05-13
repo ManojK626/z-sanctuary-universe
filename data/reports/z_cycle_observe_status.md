@@ -47,7 +47,7 @@ Observation tower only. Suggests and classifies; does not execute the task queue
 ## Task queue (do not auto-execute)
 
 | task_id | category | signal | requires_human |
-| ------------------------------------ | ---------------------------- | --------- | -------------- |
+| ------- | -------- | ------ | -------------- |
 | observe_reread_cycle_report | L1_READ_ONLY_OBSERVE | GREEN | no |
 | refresh_verify_md | L2_REPORT_REFRESH | GREEN | no |
 | refresh_traffic_minibots | L2_REPORT_REFRESH | UNKNOWN | no |

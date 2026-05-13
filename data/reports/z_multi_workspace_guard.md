@@ -6,7 +6,6 @@
 - Role: production
 
 ## Checks
-
 - [x] identity_file_present: workspace=CORE
 - [x] policy_file_present: policy_version=0.2
 - [x] identity_external_writes_disabled: allow_external_writes=false

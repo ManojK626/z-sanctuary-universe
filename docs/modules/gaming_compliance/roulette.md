@@ -3,7 +3,7 @@
 ## Registry Identity
 
 | Field | Value |
-| --------------------- | ------------------- |
+| --- | --- |
 | **ID** | `roulette` |
 | **Category** | gaming_compliance |
 | **Registry status** | safety_hold |

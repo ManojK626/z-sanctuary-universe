@@ -36,7 +36,7 @@ It is **not** a low-code “generate anything live” control plane. It is a **p
 ## 3. What already exists in Z-Sanctuary (grounded mapping)
 
 | Charter concept | Hub-aligned reality (today) |
-| ------------------------------------- | -------------------------------------------------------------------------------------------------- |
+| ----------------- | ----------------------------- |
 | Shadow AI guilds / swarm coordination | Z-Traffic, Z-OMNAI surfaces, MAOS / overseer **read-only** posture |
 | Rule contracts | 14 DRP, sanctuary security policy, completion / comms doctrine |
 | Z-Creator / AMK lane | AMK-Goku operator surfaces + **explicit approval** for sacred moves |
@@ -71,7 +71,7 @@ Default **static or hub-served HTTP** with `fetch` to **known JSON paths** only;
 A **panel manifest** (versioned JSON, hub-owned) should describe:
 
 | Field | Intent |
-| -------------- | ------------------------------------------------------------------------------------------------------------------------------------------------ |
+| ----- | ------ |
 | `id` | Stable machine id |
 | `title` | Operator-visible label |
 | `tier` | Governance tier (read-only, copy-only, gated-write-never-from-browser, etc.) |
@@ -183,7 +183,7 @@ Broader bundles (traffic, cycle observe, CAR²) are for when ecosystem receipts 
 ## 14. Revision
 
 | Version | Note |
-| ---------------- | --------------------------------------- |
+| ------- | ---- |
 | Z-OMNI-CHARTER-1 | Initial hub charter landing — docs only |
 
 Amend via PR with rationale; keep **one** canonical path: this file.

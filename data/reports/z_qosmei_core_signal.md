@@ -5,7 +5,6 @@ Posture: **CLEAR**
 Composite score: **100**
 
 ## Score Vector
-
 - Impact: 100
 - Urgency: 0
 - Confidence: 100 (high)
@@ -16,7 +15,6 @@ Composite score: **100**
 - Phase 4 cross-system (prior run): **aligned** · confidence **1**
 
 ## Signal Inputs
-
 - Guardian missing paths: 0
 - Rollup alerts: 0
 - Pending decisions: 0

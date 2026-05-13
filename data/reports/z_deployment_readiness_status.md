@@ -13,7 +13,7 @@ Read-only evaluation from hub registries and committed report JSON only. No depl
 ## PC projects (registry-driven)
 
 | project_id | readiness | confidence | deployment_status | maturity_stage |
-| ----------------------------------- | --------: | ---------: | ---------------------------------- | -------------- |
+| --- | ---: | ---: | --- | --- |
 | zsanctuary-universe | 32% | 84% | OBSERVE_ONLY_NOT_DEPLOYABLE | early build |
 | amk-goku-dashboards-2 | 12% | 52% | HOLD_UNREGISTERED_OR_EXTERNAL_PATH | seed / concept |
 | amk-goku-vaults | 22% | 72% | OBSERVE_ONLY_NOT_DEPLOYABLE | early build |
@@ -44,3 +44,4 @@ npm run verify:md
 npm run z:traffic
 npm run z:car2
 ```
+

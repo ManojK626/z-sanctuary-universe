@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-13T19:56:05.594Z",
+  "generated_at": "2026-04-26T02:12:34.811Z",
   "source_reports": {
     "zuno": "data/reports/zuno_system_state_report.json",
     "release_gate": "data/reports/z_release_gate_summary.json",
@@ -29,7 +29,7 @@
     "readiness_total": 4,
     "release_gate": "ready",
     "governance": {
-      "generated_at": "2026-05-13T19:56:05.593Z",
+      "generated_at": "2026-04-26T02:12:34.809Z",
       "readiness": "4/4",
       "p1_open": 0,
       "manual_release": true,
@@ -40,7 +40,7 @@
       "effective_release_gate": "ready"
     },
     "disturbance_watch": "clear",
-    "planned_modules": 19,
+    "planned_modules": 16,
     "promotion_allowed": false,
     "zci_warning": "ok",
     "upgrade_pressure": "ok",

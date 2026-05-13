@@ -5,13 +5,11 @@ Status: HOLD
 Files scanned: 1385
 
 ## Checks
-
 - [ ] unknown_files_limit: unknown=133, limit=50
 - [x] ungrouped_files_limit: ungrouped=0, limit=20
 - [x] roots_scanned: roots=10
 
 ## By Group
-
 - data: 350
 - config: 13
 - code: 408
@@ -21,7 +19,6 @@ Files scanned: 1385
 - unknown: 133
 
 ## Top Extensions
-
 - .md: 460
 - .json: 338
 - .mjs: 203
@@ -48,7 +45,6 @@ Files scanned: 1385
 - . navigate to the sanctuary: 1
 
 Unknown files: 133
-
 - scripts/powershell/z_fpsmc_report.ps1
 - scripts/powershell/z_fpsmc_scan.ps1
 - scripts/powershell/z_vdk_report.ps1

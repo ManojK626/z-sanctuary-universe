@@ -9,7 +9,7 @@ The hub example lives at `data/examples/z_api_service_capsule.example.json`. Cap
 ## Fields (example-aligned)
 
 | Area | Intent |
-| --------------------------------------------- | ------------------------------------------------------------------------------------ |
+| --- | --- |
 | `service_id` / `project_id` | Stable identifiers for aggregation |
 | `health` | Path or mode metadata; live probes are future-gated |
 | `routes` | Route families or entry paths for collision checks |

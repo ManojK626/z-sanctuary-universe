@@ -4,7 +4,7 @@ Generated: 2026-05-02T18:16:34.300Z
 Status: **green** · projects: 15 · bad: 0 · warn: 0
 
 | Name | Role | Severity | Notes |
-| -------------------------------------------------- | -------- | -------- | ------- |
+| ------ | ------ | ---------- | ------- |
 | ZSanctuary_Universe | hub | ok | — |
 | Amk-Goku Dashboards 2 | external | — | missing |
 | Amk-Goku Vaults | member | ok | — |

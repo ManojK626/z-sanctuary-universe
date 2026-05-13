@@ -7,9 +7,7 @@
 - Prototype modules: 0
 
 ## Draft Modules
-
 - z_lab_seed_module (manifest=false)
 
 ## Prototype Modules
-
 - none

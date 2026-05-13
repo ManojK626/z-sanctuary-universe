@@ -1,8 +1,8 @@
 # Z-PC-IDE-ADMIN-MODE-SAFETY
 
 **Version:** 1.0  
-**Phase:** Z*PC_IDE_ADMIN_1  
-**Locked Law:** \_Normal mode is default. Administrator mode ≠ project health.*  
+**Phase:** Z_PC_IDE_ADMIN_1  
+**Locked Law:** *Normal mode is default. Administrator mode ≠ project health.*  
 **Authority:** AMK-Goku (Sanctuary Sacred Moves)
 
 ---
@@ -13,9 +13,10 @@ VS Code on Windows can run in **elevated/administrator mode**. This is often acc
 
 ### The Key Problem
 
-`ext
+` ext
 Administrator mode ≠ better project access.
-Administrator mode can increase confusion and risk.`
+Administrator mode can increase confusion and risk.
+`
 
 When VS Code runs elevated:
 
@@ -30,7 +31,7 @@ When VS Code runs elevated:
 ## Symptom Reference
 
 | Symptom | Likely Cause | Solution |
-| ------------------------------------------------- | --------------------------------------------------------------- | ------------------------------------------------------------ |
+| --------- | -------------- | ---------- |
 | VS Code title says **Administrator** | App launched elevated or shortcut set to "Run as administrator" | Reopen normally from real hub path |
 | Explorer context menu changed or missing | Windows/VS Code shell integration issue | Unpin taskbar icon, relaunch normally |
 | Only part of repo visible in Explorer | Wrong folder/workspace opened | Open the real hub root |
@@ -65,8 +66,10 @@ dir package.json
 `
 
 Expected output:
-`C:\Cursor Projects Organiser\Z_Sanctuary_Universe
-package.json exists`
+`
+C:\Cursor Projects Organiser\Z_Sanctuary_Universe
+package.json exists
+`
 
 ### Removing "Run as administrator"
 
@@ -98,14 +101,15 @@ If your VS Code shortcut is locked to admin mode:
 
 ### The Locked Law
 
-`ext
+` ext
 Administrator mode ≠ project health.
 Elevated terminal ≠ permission.
 Explorer menu ≠ authority.
 CLI path proof beats right-click.
 .cursor/projects ≠ build root.
 GREEN ≠ deploy.
-AMK-Goku owns sacred moves.`
+AMK-Goku owns sacred moves.
+`
 
 ---
 
@@ -238,16 +242,16 @@ If you experience persistent admin mode issues:
 3. **Launch from terminal:** code "C:\Cursor Projects Organiser\Z_Sanctuary_Universe"
 4. **Verify title bar:** Should NOT say "Administrator"
 5. **Review reports:**
-   pm run z:pc:ide-admin
+pm run z:pc:ide-admin
 
 If issues persist, contact the Sanctuary ops team with:
 
 - Output of
-  pm run z:pc:ide-admin
+pm run z:pc:ide-admin
 - VS Code version: code --version
 - Output of whoami /groups (admin check)
 
 ---
 
 **Zuno Verdict 🦉✨:**  
-_Normal mode is the locked law default. Use admin only for rare OS tasks, outside Sanctuary workflow. The MiniBot will watch for elevation and warn you._
+*Normal mode is the locked law default. Use admin only for rare OS tasks, outside Sanctuary workflow. The MiniBot will watch for elevation and warn you.*
