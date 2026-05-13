@@ -35,5 +35,4 @@
 
 API spine ≠ API gateway. Registry ≠ live service mesh. Health check ≠ deploy readiness. Similar name ≠ shared entitlement. GREEN ≠ deploy. BLUE requires AMK. RED blocks movement. AMK-Goku owns sacred moves.
 
-
 YELLOW stays quiet for AMK notifications by default. API spine is not a gateway and not a service mesh.

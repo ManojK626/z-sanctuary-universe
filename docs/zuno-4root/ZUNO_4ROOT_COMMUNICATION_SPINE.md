@@ -9,7 +9,7 @@ Define how ecosystem **signals** move from users, modules, and AI assistants int
 ## 2. Four-root communication model
 
 | Root | Role |
-| --- | --- |
+| ------------ | ------------------------------------------------------------------------------------------- |
 | **AMK-Goku** | Human creator — vision, consent, lawful accountability |
 | **SKK** | Protective structure — discipline, gates, structural integrity |
 | **RKPK** | Care and continuity — compassion, pacing, sustainable rhythm |

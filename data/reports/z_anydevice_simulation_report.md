@@ -10,7 +10,7 @@ Synthetic simulation only. No real device scanning, no antivirus claims, no netw
 ## Simulations (7 devices)
 
 | device_id | ecosystem_role | trusted_status | risk_signal | blocked | required_human_gate |
-| --------- | -------------- | -------------- | ----------- | ------- | ------------------- |
+| ------------------------- | ------------------------------ | -------------- | ----------- | ------- | -------------------------------- |
 | ssws_prime_node | z_ssws_cockpit_node | GREEN | GREEN | no | none_for_declared_read_only_role |
 | z_lab_background_node | z_lab_supervised_analysis_node | YELLOW | YELLOW | no | human_review_before_expansion |
 | cloudflare_preview_edge | cloudflare_preview_controller | BLUE | BLUE | no | amk_governance_decision |

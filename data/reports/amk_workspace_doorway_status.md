@@ -16,7 +16,7 @@
 ## Projects
 
 | project_id | signal | path_exists | workspace_ok | notes |
-| ---------- | ------ | ----------- | ------------- | ----- |
+| ------------------------------ | ------ | ----------- | ------------ | -------------------------------------------------------------------------------------------- |
 | main_ssws_lab_workspace | YELLOW | yes | yes | YELLOW: duplicate path shared with another project_id (informational). |
 | z_lab_workspace_only | YELLOW | yes | yes | YELLOW: duplicate path shared with another project_id (informational). |
 | hub_zsanctuary | YELLOW | yes | yes | YELLOW: duplicate path shared with another project_id (informational). |

@@ -30,31 +30,36 @@
 ## Summary
 
 {
-  "green": 2,
-  "yellow": 1,
-  "blue": 2,
-  "red": 0
+"green": 2,
+"yellow": 1,
+"blue": 2,
+"red": 0
 }
 
 ## Sample rows
 
 ### lws_green_case_workspace_001
+
 - Signal: **GREEN**
 - Governance and requirements posture only; no runtime legal authority enabled.
 
 ### lws_green_media_chain_002
+
 - Signal: **GREEN**
 - Governance and requirements posture only; no runtime legal authority enabled.
 
 ### lws_yellow_retention_gap_003
+
 - Signal: **YELLOW**
 - Metadata or workflow requirement gap detected.
 
 ### lws_blue_human_approval_004
+
 - Signal: **BLUE**
 - Human legal/simulation governance decision gate required.
 
 ### lws_blue_simulation_switch_005
+
 - Signal: **BLUE**
 - Human legal/simulation governance decision gate required.
 
@@ -69,4 +74,3 @@
 - BLUE requires AMK/legal/human review.
 - RED blocks movement.
 - AMK-Goku owns sacred moves.
-

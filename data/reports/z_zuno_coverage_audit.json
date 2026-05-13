@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-05-05T18:25:51.727Z",
-  "root": "C:\\Cursor Projects Organiser\\Z_Sanctuary_Universe",
+  "generated_at": "2026-05-13T19:57:00.619Z",
+  "root": "/home/runner/work/z-sanctuary-universe/z-sanctuary-universe",
   "reference_presence": {
     "master": {
       "repo_relative_path": "data/z_master_module_registry.json",
@@ -70,7 +70,7 @@
       "doc_mention_notes": [],
       "registry_note": null,
       "zuno_doc_coarse_mention": {
-        "scanned": "C:\\Cursor Projects Organiser\\Z_Sanctuary_Universe\\docs\\Z-ZUNO-AI-FULL-REPORT.md",
+        "scanned": "/home/runner/work/z-sanctuary-universe/z-sanctuary-universe/docs/Z-ZUNO-AI-FULL-REPORT.md",
         "matched": false
       },
       "recommended_next_action": "Add missing paths or update master registry to match intentional layout."
@@ -95,7 +95,7 @@
       "doc_mention_notes": [],
       "registry_note": null,
       "zuno_doc_coarse_mention": {
-        "scanned": "C:\\Cursor Projects Organiser\\Z_Sanctuary_Universe\\docs\\Z-ZUNO-AI-FULL-REPORT.md",
+        "scanned": "/home/runner/work/z-sanctuary-universe/z-sanctuary-universe/docs/Z-ZUNO-AI-FULL-REPORT.md",
         "matched": false
       },
       "recommended_next_action": "Add missing paths or update master registry to match intentional layout."
@@ -120,7 +120,7 @@
       "doc_mention_notes": [],
       "registry_note": null,
       "zuno_doc_coarse_mention": {
-        "scanned": "C:\\Cursor Projects Organiser\\Z_Sanctuary_Universe\\docs\\Z-ZUNO-AI-FULL-REPORT.md",
+        "scanned": "/home/runner/work/z-sanctuary-universe/z-sanctuary-universe/docs/Z-ZUNO-AI-FULL-REPORT.md",
         "matched": false
       },
       "recommended_next_action": "Add missing paths or update master registry to match intentional layout."
@@ -145,7 +145,7 @@
       "doc_mention_notes": [],
       "registry_note": null,
       "zuno_doc_coarse_mention": {
-        "scanned": "C:\\Cursor Projects Organiser\\Z_Sanctuary_Universe\\docs\\Z-ZUNO-AI-FULL-REPORT.md",
+        "scanned": "/home/runner/work/z-sanctuary-universe/z-sanctuary-universe/docs/Z-ZUNO-AI-FULL-REPORT.md",
         "matched": false
       },
       "recommended_next_action": "Add missing paths or update master registry to match intentional layout."
@@ -170,7 +170,7 @@
       "doc_mention_notes": [],
       "registry_note": null,
       "zuno_doc_coarse_mention": {
-        "scanned": "C:\\Cursor Projects Organiser\\Z_Sanctuary_Universe\\docs\\Z-ZUNO-AI-FULL-REPORT.md",
+        "scanned": "/home/runner/work/z-sanctuary-universe/z-sanctuary-universe/docs/Z-ZUNO-AI-FULL-REPORT.md",
         "matched": false
       },
       "recommended_next_action": "Add missing paths or update master registry to match intentional layout."
@@ -195,7 +195,7 @@
       "doc_mention_notes": [],
       "registry_note": null,
       "zuno_doc_coarse_mention": {
-        "scanned": "C:\\Cursor Projects Organiser\\Z_Sanctuary_Universe\\docs\\Z-ZUNO-AI-FULL-REPORT.md",
+        "scanned": "/home/runner/work/z-sanctuary-universe/z-sanctuary-universe/docs/Z-ZUNO-AI-FULL-REPORT.md",
         "matched": false
       },
       "recommended_next_action": "Add missing paths or update master registry to match intentional layout."
@@ -220,7 +220,7 @@
       "doc_mention_notes": [],
       "registry_note": null,
       "zuno_doc_coarse_mention": {
-        "scanned": "C:\\Cursor Projects Organiser\\Z_Sanctuary_Universe\\docs\\Z-ZUNO-AI-FULL-REPORT.md",
+        "scanned": "/home/runner/work/z-sanctuary-universe/z-sanctuary-universe/docs/Z-ZUNO-AI-FULL-REPORT.md",
         "matched": false
       },
       "recommended_next_action": "None — keep synced on registry/manifest churn."
@@ -247,7 +247,7 @@
       "doc_mention_notes": [],
       "registry_note": null,
       "zuno_doc_coarse_mention": {
-        "scanned": "C:\\Cursor Projects Organiser\\Z_Sanctuary_Universe\\docs\\Z-ZUNO-AI-FULL-REPORT.md",
+        "scanned": "/home/runner/work/z-sanctuary-universe/z-sanctuary-universe/docs/Z-ZUNO-AI-FULL-REPORT.md",
         "matched": false
       },
       "recommended_next_action": "None — keep synced on registry/manifest churn."
@@ -272,7 +272,7 @@
       "doc_mention_notes": [],
       "registry_note": null,
       "zuno_doc_coarse_mention": {
-        "scanned": "C:\\Cursor Projects Organiser\\Z_Sanctuary_Universe\\docs\\Z-ZUNO-AI-FULL-REPORT.md",
+        "scanned": "/home/runner/work/z-sanctuary-universe/z-sanctuary-universe/docs/Z-ZUNO-AI-FULL-REPORT.md",
         "matched": false
       },
       "recommended_next_action": "Add missing paths or update master registry to match intentional layout."
@@ -297,7 +297,7 @@
       "doc_mention_notes": [],
       "registry_note": null,
       "zuno_doc_coarse_mention": {
-        "scanned": "C:\\Cursor Projects Organiser\\Z_Sanctuary_Universe\\docs\\Z-ZUNO-AI-FULL-REPORT.md",
+        "scanned": "/home/runner/work/z-sanctuary-universe/z-sanctuary-universe/docs/Z-ZUNO-AI-FULL-REPORT.md",
         "matched": false
       },
       "recommended_next_action": "Add missing paths or update master registry to match intentional layout."
@@ -322,7 +322,7 @@
       "doc_mention_notes": [],
       "registry_note": null,
       "zuno_doc_coarse_mention": {
-        "scanned": "C:\\Cursor Projects Organiser\\Z_Sanctuary_Universe\\docs\\Z-ZUNO-AI-FULL-REPORT.md",
+        "scanned": "/home/runner/work/z-sanctuary-universe/z-sanctuary-universe/docs/Z-ZUNO-AI-FULL-REPORT.md",
         "matched": false
       },
       "recommended_next_action": "Add missing paths or update master registry to match intentional layout."
@@ -347,7 +347,7 @@
       "doc_mention_notes": [],
       "registry_note": null,
       "zuno_doc_coarse_mention": {
-        "scanned": "C:\\Cursor Projects Organiser\\Z_Sanctuary_Universe\\docs\\Z-ZUNO-AI-FULL-REPORT.md",
+        "scanned": "/home/runner/work/z-sanctuary-universe/z-sanctuary-universe/docs/Z-ZUNO-AI-FULL-REPORT.md",
         "matched": false
       },
       "recommended_next_action": "Add missing paths or update master registry to match intentional layout."
@@ -372,7 +372,7 @@
       "doc_mention_notes": [],
       "registry_note": null,
       "zuno_doc_coarse_mention": {
-        "scanned": "C:\\Cursor Projects Organiser\\Z_Sanctuary_Universe\\docs\\Z-ZUNO-AI-FULL-REPORT.md",
+        "scanned": "/home/runner/work/z-sanctuary-universe/z-sanctuary-universe/docs/Z-ZUNO-AI-FULL-REPORT.md",
         "matched": false
       },
       "recommended_next_action": "Add missing paths or update master registry to match intentional layout."
@@ -397,7 +397,7 @@
       "doc_mention_notes": [],
       "registry_note": null,
       "zuno_doc_coarse_mention": {
-        "scanned": "C:\\Cursor Projects Organiser\\Z_Sanctuary_Universe\\docs\\Z-ZUNO-AI-FULL-REPORT.md",
+        "scanned": "/home/runner/work/z-sanctuary-universe/z-sanctuary-universe/docs/Z-ZUNO-AI-FULL-REPORT.md",
         "matched": false
       },
       "recommended_next_action": "Add missing paths or update master registry to match intentional layout."
@@ -422,7 +422,7 @@
       "doc_mention_notes": [],
       "registry_note": null,
       "zuno_doc_coarse_mention": {
-        "scanned": "C:\\Cursor Projects Organiser\\Z_Sanctuary_Universe\\docs\\Z-ZUNO-AI-FULL-REPORT.md",
+        "scanned": "/home/runner/work/z-sanctuary-universe/z-sanctuary-universe/docs/Z-ZUNO-AI-FULL-REPORT.md",
         "matched": false
       },
       "recommended_next_action": "None — keep synced on registry/manifest churn."
@@ -448,7 +448,7 @@
       "doc_mention_notes": [],
       "registry_note": null,
       "zuno_doc_coarse_mention": {
-        "scanned": "C:\\Cursor Projects Organiser\\Z_Sanctuary_Universe\\docs\\Z-ZUNO-AI-FULL-REPORT.md",
+        "scanned": "/home/runner/work/z-sanctuary-universe/z-sanctuary-universe/docs/Z-ZUNO-AI-FULL-REPORT.md",
         "matched": false
       },
       "recommended_next_action": "Governance: rename as active, deprecate registry row, or add data/core engine file."
@@ -473,7 +473,7 @@
       "doc_mention_notes": [],
       "registry_note": null,
       "zuno_doc_coarse_mention": {
-        "scanned": "C:\\Cursor Projects Organiser\\Z_Sanctuary_Universe\\docs\\Z-ZUNO-AI-FULL-REPORT.md",
+        "scanned": "/home/runner/work/z-sanctuary-universe/z-sanctuary-universe/docs/Z-ZUNO-AI-FULL-REPORT.md",
         "matched": false
       },
       "recommended_next_action": "Add missing paths or update master registry to match intentional layout."
@@ -514,7 +514,7 @@
       ],
       "registry_note": null,
       "zuno_doc_coarse_mention": {
-        "scanned": "C:\\Cursor Projects Organiser\\Z_Sanctuary_Universe\\docs\\Z-ZUNO-AI-FULL-REPORT.md",
+        "scanned": "/home/runner/work/z-sanctuary-universe/z-sanctuary-universe/docs/Z-ZUNO-AI-FULL-REPORT.md",
         "matched": false
       },
       "recommended_next_action": "Safety gate doc + disclaimers before user-facing rollout."
@@ -539,7 +539,7 @@
       "doc_mention_notes": [],
       "registry_note": null,
       "zuno_doc_coarse_mention": {
-        "scanned": "C:\\Cursor Projects Organiser\\Z_Sanctuary_Universe\\docs\\Z-ZUNO-AI-FULL-REPORT.md",
+        "scanned": "/home/runner/work/z-sanctuary-universe/z-sanctuary-universe/docs/Z-ZUNO-AI-FULL-REPORT.md",
         "matched": false
       },
       "recommended_next_action": "Add missing paths or update master registry to match intentional layout."
@@ -580,7 +580,7 @@
       ],
       "registry_note": null,
       "zuno_doc_coarse_mention": {
-        "scanned": "C:\\Cursor Projects Organiser\\Z_Sanctuary_Universe\\docs\\Z-ZUNO-AI-FULL-REPORT.md",
+        "scanned": "/home/runner/work/z-sanctuary-universe/z-sanctuary-universe/docs/Z-ZUNO-AI-FULL-REPORT.md",
         "matched": false
       },
       "recommended_next_action": "Safety gate doc + disclaimers before user-facing rollout."
@@ -605,7 +605,7 @@
       "doc_mention_notes": [],
       "registry_note": null,
       "zuno_doc_coarse_mention": {
-        "scanned": "C:\\Cursor Projects Organiser\\Z_Sanctuary_Universe\\docs\\Z-ZUNO-AI-FULL-REPORT.md",
+        "scanned": "/home/runner/work/z-sanctuary-universe/z-sanctuary-universe/docs/Z-ZUNO-AI-FULL-REPORT.md",
         "matched": false
       },
       "recommended_next_action": "None — keep synced on registry/manifest churn."
@@ -631,7 +631,7 @@
       "doc_mention_notes": [],
       "registry_note": null,
       "zuno_doc_coarse_mention": {
-        "scanned": "C:\\Cursor Projects Organiser\\Z_Sanctuary_Universe\\docs\\Z-ZUNO-AI-FULL-REPORT.md",
+        "scanned": "/home/runner/work/z-sanctuary-universe/z-sanctuary-universe/docs/Z-ZUNO-AI-FULL-REPORT.md",
         "matched": false
       },
       "recommended_next_action": "None — keep synced on registry/manifest churn."
@@ -656,7 +656,7 @@
       "doc_mention_notes": [],
       "registry_note": null,
       "zuno_doc_coarse_mention": {
-        "scanned": "C:\\Cursor Projects Organiser\\Z_Sanctuary_Universe\\docs\\Z-ZUNO-AI-FULL-REPORT.md",
+        "scanned": "/home/runner/work/z-sanctuary-universe/z-sanctuary-universe/docs/Z-ZUNO-AI-FULL-REPORT.md",
         "matched": false
       },
       "recommended_next_action": "Add missing paths or update master registry to match intentional layout."
@@ -699,7 +699,7 @@
       ],
       "registry_note": null,
       "zuno_doc_coarse_mention": {
-        "scanned": "C:\\Cursor Projects Organiser\\Z_Sanctuary_Universe\\docs\\Z-ZUNO-AI-FULL-REPORT.md",
+        "scanned": "/home/runner/work/z-sanctuary-universe/z-sanctuary-universe/docs/Z-ZUNO-AI-FULL-REPORT.md",
         "matched": false
       },
       "recommended_next_action": "Safety gate doc + disclaimers before user-facing rollout."
@@ -726,7 +726,7 @@
       "doc_mention_notes": [],
       "registry_note": null,
       "zuno_doc_coarse_mention": {
-        "scanned": "C:\\Cursor Projects Organiser\\Z_Sanctuary_Universe\\docs\\Z-ZUNO-AI-FULL-REPORT.md",
+        "scanned": "/home/runner/work/z-sanctuary-universe/z-sanctuary-universe/docs/Z-ZUNO-AI-FULL-REPORT.md",
         "matched": false
       },
       "recommended_next_action": "None — keep synced on registry/manifest churn."
@@ -767,7 +767,7 @@
       ],
       "registry_note": null,
       "zuno_doc_coarse_mention": {
-        "scanned": "C:\\Cursor Projects Organiser\\Z_Sanctuary_Universe\\docs\\Z-ZUNO-AI-FULL-REPORT.md",
+        "scanned": "/home/runner/work/z-sanctuary-universe/z-sanctuary-universe/docs/Z-ZUNO-AI-FULL-REPORT.md",
         "matched": false
       },
       "recommended_next_action": "Safety gate doc + disclaimers before user-facing rollout."
@@ -794,7 +794,7 @@
       "doc_mention_notes": [],
       "registry_note": null,
       "zuno_doc_coarse_mention": {
-        "scanned": "C:\\Cursor Projects Organiser\\Z_Sanctuary_Universe\\docs\\Z-ZUNO-AI-FULL-REPORT.md",
+        "scanned": "/home/runner/work/z-sanctuary-universe/z-sanctuary-universe/docs/Z-ZUNO-AI-FULL-REPORT.md",
         "matched": false
       },
       "recommended_next_action": "None — keep synced on registry/manifest churn."
@@ -834,7 +834,7 @@
       ],
       "registry_note": null,
       "zuno_doc_coarse_mention": {
-        "scanned": "C:\\Cursor Projects Organiser\\Z_Sanctuary_Universe\\docs\\Z-ZUNO-AI-FULL-REPORT.md",
+        "scanned": "/home/runner/work/z-sanctuary-universe/z-sanctuary-universe/docs/Z-ZUNO-AI-FULL-REPORT.md",
         "matched": false
       },
       "recommended_next_action": "Safety gate doc + disclaimers before user-facing rollout."
@@ -861,7 +861,7 @@
       "doc_mention_notes": [],
       "registry_note": null,
       "zuno_doc_coarse_mention": {
-        "scanned": "C:\\Cursor Projects Organiser\\Z_Sanctuary_Universe\\docs\\Z-ZUNO-AI-FULL-REPORT.md",
+        "scanned": "/home/runner/work/z-sanctuary-universe/z-sanctuary-universe/docs/Z-ZUNO-AI-FULL-REPORT.md",
         "matched": false
       },
       "recommended_next_action": "None — keep synced on registry/manifest churn."
@@ -886,7 +886,7 @@
       "doc_mention_notes": [],
       "registry_note": null,
       "zuno_doc_coarse_mention": {
-        "scanned": "C:\\Cursor Projects Organiser\\Z_Sanctuary_Universe\\docs\\Z-ZUNO-AI-FULL-REPORT.md",
+        "scanned": "/home/runner/work/z-sanctuary-universe/z-sanctuary-universe/docs/Z-ZUNO-AI-FULL-REPORT.md",
         "matched": false
       },
       "recommended_next_action": "None — keep synced on registry/manifest churn."
@@ -911,7 +911,7 @@
       "doc_mention_notes": [],
       "registry_note": null,
       "zuno_doc_coarse_mention": {
-        "scanned": "C:\\Cursor Projects Organiser\\Z_Sanctuary_Universe\\docs\\Z-ZUNO-AI-FULL-REPORT.md",
+        "scanned": "/home/runner/work/z-sanctuary-universe/z-sanctuary-universe/docs/Z-ZUNO-AI-FULL-REPORT.md",
         "matched": false
       },
       "recommended_next_action": "Add missing paths or update master registry to match intentional layout."
@@ -938,7 +938,7 @@
       "doc_mention_notes": [],
       "registry_note": null,
       "zuno_doc_coarse_mention": {
-        "scanned": "C:\\Cursor Projects Organiser\\Z_Sanctuary_Universe\\docs\\Z-ZUNO-AI-FULL-REPORT.md",
+        "scanned": "/home/runner/work/z-sanctuary-universe/z-sanctuary-universe/docs/Z-ZUNO-AI-FULL-REPORT.md",
         "matched": false
       },
       "recommended_next_action": "Safety gate doc + disclaimers before user-facing rollout."
@@ -965,7 +965,7 @@
       "doc_mention_notes": [],
       "registry_note": null,
       "zuno_doc_coarse_mention": {
-        "scanned": "C:\\Cursor Projects Organiser\\Z_Sanctuary_Universe\\docs\\Z-ZUNO-AI-FULL-REPORT.md",
+        "scanned": "/home/runner/work/z-sanctuary-universe/z-sanctuary-universe/docs/Z-ZUNO-AI-FULL-REPORT.md",
         "matched": false
       },
       "recommended_next_action": "Safety gate doc + disclaimers before user-facing rollout."
@@ -990,7 +990,7 @@
       "doc_mention_notes": [],
       "registry_note": null,
       "zuno_doc_coarse_mention": {
-        "scanned": "C:\\Cursor Projects Organiser\\Z_Sanctuary_Universe\\docs\\Z-ZUNO-AI-FULL-REPORT.md",
+        "scanned": "/home/runner/work/z-sanctuary-universe/z-sanctuary-universe/docs/Z-ZUNO-AI-FULL-REPORT.md",
         "matched": false
       },
       "recommended_next_action": "Add missing paths or update master registry to match intentional layout."
@@ -1015,7 +1015,7 @@
       "doc_mention_notes": [],
       "registry_note": null,
       "zuno_doc_coarse_mention": {
-        "scanned": "C:\\Cursor Projects Organiser\\Z_Sanctuary_Universe\\docs\\Z-ZUNO-AI-FULL-REPORT.md",
+        "scanned": "/home/runner/work/z-sanctuary-universe/z-sanctuary-universe/docs/Z-ZUNO-AI-FULL-REPORT.md",
         "matched": false
       },
       "recommended_next_action": "Add missing paths or update master registry to match intentional layout."
@@ -1040,7 +1040,7 @@
       "doc_mention_notes": [],
       "registry_note": null,
       "zuno_doc_coarse_mention": {
-        "scanned": "C:\\Cursor Projects Organiser\\Z_Sanctuary_Universe\\docs\\Z-ZUNO-AI-FULL-REPORT.md",
+        "scanned": "/home/runner/work/z-sanctuary-universe/z-sanctuary-universe/docs/Z-ZUNO-AI-FULL-REPORT.md",
         "matched": false
       },
       "recommended_next_action": "Add missing paths or update master registry to match intentional layout."
@@ -1068,7 +1068,7 @@
       "doc_mention_notes": [],
       "registry_note": null,
       "zuno_doc_coarse_mention": {
-        "scanned": "C:\\Cursor Projects Organiser\\Z_Sanctuary_Universe\\docs\\Z-ZUNO-AI-FULL-REPORT.md",
+        "scanned": "/home/runner/work/z-sanctuary-universe/z-sanctuary-universe/docs/Z-ZUNO-AI-FULL-REPORT.md",
         "matched": false
       },
       "recommended_next_action": "Safety gate doc + disclaimers before user-facing rollout."
@@ -1095,7 +1095,7 @@
       "doc_mention_notes": [],
       "registry_note": null,
       "zuno_doc_coarse_mention": {
-        "scanned": "C:\\Cursor Projects Organiser\\Z_Sanctuary_Universe\\docs\\Z-ZUNO-AI-FULL-REPORT.md",
+        "scanned": "/home/runner/work/z-sanctuary-universe/z-sanctuary-universe/docs/Z-ZUNO-AI-FULL-REPORT.md",
         "matched": false
       },
       "recommended_next_action": "None — keep synced on registry/manifest churn."
@@ -1120,7 +1120,7 @@
       "doc_mention_notes": [],
       "registry_note": null,
       "zuno_doc_coarse_mention": {
-        "scanned": "C:\\Cursor Projects Organiser\\Z_Sanctuary_Universe\\docs\\Z-ZUNO-AI-FULL-REPORT.md",
+        "scanned": "/home/runner/work/z-sanctuary-universe/z-sanctuary-universe/docs/Z-ZUNO-AI-FULL-REPORT.md",
         "matched": false
       },
       "recommended_next_action": "None — keep synced on registry/manifest churn."
@@ -1147,7 +1147,7 @@
       "doc_mention_notes": [],
       "registry_note": null,
       "zuno_doc_coarse_mention": {
-        "scanned": "C:\\Cursor Projects Organiser\\Z_Sanctuary_Universe\\docs\\Z-ZUNO-AI-FULL-REPORT.md",
+        "scanned": "/home/runner/work/z-sanctuary-universe/z-sanctuary-universe/docs/Z-ZUNO-AI-FULL-REPORT.md",
         "matched": false
       },
       "recommended_next_action": "None — keep synced on registry/manifest churn."
@@ -1172,7 +1172,7 @@
       "doc_mention_notes": [],
       "registry_note": null,
       "zuno_doc_coarse_mention": {
-        "scanned": "C:\\Cursor Projects Organiser\\Z_Sanctuary_Universe\\docs\\Z-ZUNO-AI-FULL-REPORT.md",
+        "scanned": "/home/runner/work/z-sanctuary-universe/z-sanctuary-universe/docs/Z-ZUNO-AI-FULL-REPORT.md",
         "matched": false
       },
       "recommended_next_action": "Add missing paths or update master registry to match intentional layout."
@@ -1199,7 +1199,7 @@
       "doc_mention_notes": [],
       "registry_note": null,
       "zuno_doc_coarse_mention": {
-        "scanned": "C:\\Cursor Projects Organiser\\Z_Sanctuary_Universe\\docs\\Z-ZUNO-AI-FULL-REPORT.md",
+        "scanned": "/home/runner/work/z-sanctuary-universe/z-sanctuary-universe/docs/Z-ZUNO-AI-FULL-REPORT.md",
         "matched": false
       },
       "recommended_next_action": "None — keep synced on registry/manifest churn."
@@ -1226,7 +1226,7 @@
       "doc_mention_notes": [],
       "registry_note": null,
       "zuno_doc_coarse_mention": {
-        "scanned": "C:\\Cursor Projects Organiser\\Z_Sanctuary_Universe\\docs\\Z-ZUNO-AI-FULL-REPORT.md",
+        "scanned": "/home/runner/work/z-sanctuary-universe/z-sanctuary-universe/docs/Z-ZUNO-AI-FULL-REPORT.md",
         "matched": false
       },
       "recommended_next_action": "None — keep synced on registry/manifest churn."
@@ -1253,7 +1253,7 @@
       "doc_mention_notes": [],
       "registry_note": null,
       "zuno_doc_coarse_mention": {
-        "scanned": "C:\\Cursor Projects Organiser\\Z_Sanctuary_Universe\\docs\\Z-ZUNO-AI-FULL-REPORT.md",
+        "scanned": "/home/runner/work/z-sanctuary-universe/z-sanctuary-universe/docs/Z-ZUNO-AI-FULL-REPORT.md",
         "matched": false
       },
       "recommended_next_action": "None — keep synced on registry/manifest churn."
@@ -1278,7 +1278,7 @@
       "doc_mention_notes": [],
       "registry_note": null,
       "zuno_doc_coarse_mention": {
-        "scanned": "C:\\Cursor Projects Organiser\\Z_Sanctuary_Universe\\docs\\Z-ZUNO-AI-FULL-REPORT.md",
+        "scanned": "/home/runner/work/z-sanctuary-universe/z-sanctuary-universe/docs/Z-ZUNO-AI-FULL-REPORT.md",
         "matched": false
       },
       "recommended_next_action": "Add missing paths or update master registry to match intentional layout."
@@ -1305,7 +1305,7 @@
       "doc_mention_notes": [],
       "registry_note": null,
       "zuno_doc_coarse_mention": {
-        "scanned": "C:\\Cursor Projects Organiser\\Z_Sanctuary_Universe\\docs\\Z-ZUNO-AI-FULL-REPORT.md",
+        "scanned": "/home/runner/work/z-sanctuary-universe/z-sanctuary-universe/docs/Z-ZUNO-AI-FULL-REPORT.md",
         "matched": false
       },
       "recommended_next_action": "None — keep synced on registry/manifest churn."
@@ -1332,7 +1332,7 @@
       "doc_mention_notes": [],
       "registry_note": null,
       "zuno_doc_coarse_mention": {
-        "scanned": "C:\\Cursor Projects Organiser\\Z_Sanctuary_Universe\\docs\\Z-ZUNO-AI-FULL-REPORT.md",
+        "scanned": "/home/runner/work/z-sanctuary-universe/z-sanctuary-universe/docs/Z-ZUNO-AI-FULL-REPORT.md",
         "matched": false
       },
       "recommended_next_action": "None — keep synced on registry/manifest churn."
@@ -1357,7 +1357,7 @@
       "doc_mention_notes": [],
       "registry_note": null,
       "zuno_doc_coarse_mention": {
-        "scanned": "C:\\Cursor Projects Organiser\\Z_Sanctuary_Universe\\docs\\Z-ZUNO-AI-FULL-REPORT.md",
+        "scanned": "/home/runner/work/z-sanctuary-universe/z-sanctuary-universe/docs/Z-ZUNO-AI-FULL-REPORT.md",
         "matched": false
       },
       "recommended_next_action": "Add missing paths or update master registry to match intentional layout."
@@ -1382,7 +1382,7 @@
       "doc_mention_notes": [],
       "registry_note": null,
       "zuno_doc_coarse_mention": {
-        "scanned": "C:\\Cursor Projects Organiser\\Z_Sanctuary_Universe\\docs\\Z-ZUNO-AI-FULL-REPORT.md",
+        "scanned": "/home/runner/work/z-sanctuary-universe/z-sanctuary-universe/docs/Z-ZUNO-AI-FULL-REPORT.md",
         "matched": false
       },
       "recommended_next_action": "Add missing paths or update master registry to match intentional layout."
@@ -1409,7 +1409,7 @@
       "doc_mention_notes": [],
       "registry_note": null,
       "zuno_doc_coarse_mention": {
-        "scanned": "C:\\Cursor Projects Organiser\\Z_Sanctuary_Universe\\docs\\Z-ZUNO-AI-FULL-REPORT.md",
+        "scanned": "/home/runner/work/z-sanctuary-universe/z-sanctuary-universe/docs/Z-ZUNO-AI-FULL-REPORT.md",
         "matched": false
       },
       "recommended_next_action": "None — keep synced on registry/manifest churn."
@@ -1436,7 +1436,7 @@
       "doc_mention_notes": [],
       "registry_note": null,
       "zuno_doc_coarse_mention": {
-        "scanned": "C:\\Cursor Projects Organiser\\Z_Sanctuary_Universe\\docs\\Z-ZUNO-AI-FULL-REPORT.md",
+        "scanned": "/home/runner/work/z-sanctuary-universe/z-sanctuary-universe/docs/Z-ZUNO-AI-FULL-REPORT.md",
         "matched": false
       },
       "recommended_next_action": "None — keep synced on registry/manifest churn."
@@ -1461,7 +1461,7 @@
       "doc_mention_notes": [],
       "registry_note": null,
       "zuno_doc_coarse_mention": {
-        "scanned": "C:\\Cursor Projects Organiser\\Z_Sanctuary_Universe\\docs\\Z-ZUNO-AI-FULL-REPORT.md",
+        "scanned": "/home/runner/work/z-sanctuary-universe/z-sanctuary-universe/docs/Z-ZUNO-AI-FULL-REPORT.md",
         "matched": false
       },
       "recommended_next_action": "Add missing paths or update master registry to match intentional layout."
@@ -1486,7 +1486,7 @@
       "doc_mention_notes": [],
       "registry_note": null,
       "zuno_doc_coarse_mention": {
-        "scanned": "C:\\Cursor Projects Organiser\\Z_Sanctuary_Universe\\docs\\Z-ZUNO-AI-FULL-REPORT.md",
+        "scanned": "/home/runner/work/z-sanctuary-universe/z-sanctuary-universe/docs/Z-ZUNO-AI-FULL-REPORT.md",
         "matched": false
       },
       "recommended_next_action": "Add missing paths or update master registry to match intentional layout."
@@ -1513,7 +1513,7 @@
       "doc_mention_notes": [],
       "registry_note": null,
       "zuno_doc_coarse_mention": {
-        "scanned": "C:\\Cursor Projects Organiser\\Z_Sanctuary_Universe\\docs\\Z-ZUNO-AI-FULL-REPORT.md",
+        "scanned": "/home/runner/work/z-sanctuary-universe/z-sanctuary-universe/docs/Z-ZUNO-AI-FULL-REPORT.md",
         "matched": false
       },
       "recommended_next_action": "None — keep synced on registry/manifest churn."
@@ -1538,7 +1538,7 @@
       "doc_mention_notes": [],
       "registry_note": null,
       "zuno_doc_coarse_mention": {
-        "scanned": "C:\\Cursor Projects Organiser\\Z_Sanctuary_Universe\\docs\\Z-ZUNO-AI-FULL-REPORT.md",
+        "scanned": "/home/runner/work/z-sanctuary-universe/z-sanctuary-universe/docs/Z-ZUNO-AI-FULL-REPORT.md",
         "matched": false
       },
       "recommended_next_action": "Add missing paths or update master registry to match intentional layout."
@@ -1563,7 +1563,7 @@
       "doc_mention_notes": [],
       "registry_note": null,
       "zuno_doc_coarse_mention": {
-        "scanned": "C:\\Cursor Projects Organiser\\Z_Sanctuary_Universe\\docs\\Z-ZUNO-AI-FULL-REPORT.md",
+        "scanned": "/home/runner/work/z-sanctuary-universe/z-sanctuary-universe/docs/Z-ZUNO-AI-FULL-REPORT.md",
         "matched": false
       },
       "recommended_next_action": "Add missing paths or update master registry to match intentional layout."
@@ -1590,7 +1590,7 @@
       "doc_mention_notes": [],
       "registry_note": null,
       "zuno_doc_coarse_mention": {
-        "scanned": "C:\\Cursor Projects Organiser\\Z_Sanctuary_Universe\\docs\\Z-ZUNO-AI-FULL-REPORT.md",
+        "scanned": "/home/runner/work/z-sanctuary-universe/z-sanctuary-universe/docs/Z-ZUNO-AI-FULL-REPORT.md",
         "matched": false
       },
       "recommended_next_action": "None — keep synced on registry/manifest churn."
@@ -1617,7 +1617,7 @@
       "doc_mention_notes": [],
       "registry_note": null,
       "zuno_doc_coarse_mention": {
-        "scanned": "C:\\Cursor Projects Organiser\\Z_Sanctuary_Universe\\docs\\Z-ZUNO-AI-FULL-REPORT.md",
+        "scanned": "/home/runner/work/z-sanctuary-universe/z-sanctuary-universe/docs/Z-ZUNO-AI-FULL-REPORT.md",
         "matched": false
       },
       "recommended_next_action": "None — keep synced on registry/manifest churn."
@@ -1644,7 +1644,7 @@
       "doc_mention_notes": [],
       "registry_note": null,
       "zuno_doc_coarse_mention": {
-        "scanned": "C:\\Cursor Projects Organiser\\Z_Sanctuary_Universe\\docs\\Z-ZUNO-AI-FULL-REPORT.md",
+        "scanned": "/home/runner/work/z-sanctuary-universe/z-sanctuary-universe/docs/Z-ZUNO-AI-FULL-REPORT.md",
         "matched": false
       },
       "recommended_next_action": "None — keep synced on registry/manifest churn."
@@ -1671,7 +1671,7 @@
       "doc_mention_notes": [],
       "registry_note": null,
       "zuno_doc_coarse_mention": {
-        "scanned": "C:\\Cursor Projects Organiser\\Z_Sanctuary_Universe\\docs\\Z-ZUNO-AI-FULL-REPORT.md",
+        "scanned": "/home/runner/work/z-sanctuary-universe/z-sanctuary-universe/docs/Z-ZUNO-AI-FULL-REPORT.md",
         "matched": false
       },
       "recommended_next_action": "None — keep synced on registry/manifest churn."
@@ -1698,7 +1698,7 @@
       "doc_mention_notes": [],
       "registry_note": null,
       "zuno_doc_coarse_mention": {
-        "scanned": "C:\\Cursor Projects Organiser\\Z_Sanctuary_Universe\\docs\\Z-ZUNO-AI-FULL-REPORT.md",
+        "scanned": "/home/runner/work/z-sanctuary-universe/z-sanctuary-universe/docs/Z-ZUNO-AI-FULL-REPORT.md",
         "matched": false
       },
       "recommended_next_action": "None — keep synced on registry/manifest churn."
@@ -1725,7 +1725,7 @@
       "doc_mention_notes": [],
       "registry_note": null,
       "zuno_doc_coarse_mention": {
-        "scanned": "C:\\Cursor Projects Organiser\\Z_Sanctuary_Universe\\docs\\Z-ZUNO-AI-FULL-REPORT.md",
+        "scanned": "/home/runner/work/z-sanctuary-universe/z-sanctuary-universe/docs/Z-ZUNO-AI-FULL-REPORT.md",
         "matched": false
       },
       "recommended_next_action": "None — keep synced on registry/manifest churn."
@@ -1752,7 +1752,7 @@
       "doc_mention_notes": [],
       "registry_note": null,
       "zuno_doc_coarse_mention": {
-        "scanned": "C:\\Cursor Projects Organiser\\Z_Sanctuary_Universe\\docs\\Z-ZUNO-AI-FULL-REPORT.md",
+        "scanned": "/home/runner/work/z-sanctuary-universe/z-sanctuary-universe/docs/Z-ZUNO-AI-FULL-REPORT.md",
         "matched": false
       },
       "recommended_next_action": "None — keep synced on registry/manifest churn."
@@ -1777,7 +1777,7 @@
       "doc_mention_notes": [],
       "registry_note": null,
       "zuno_doc_coarse_mention": {
-        "scanned": "C:\\Cursor Projects Organiser\\Z_Sanctuary_Universe\\docs\\Z-ZUNO-AI-FULL-REPORT.md",
+        "scanned": "/home/runner/work/z-sanctuary-universe/z-sanctuary-universe/docs/Z-ZUNO-AI-FULL-REPORT.md",
         "matched": false
       },
       "recommended_next_action": "Add missing paths or update master registry to match intentional layout."
@@ -1802,7 +1802,7 @@
       "doc_mention_notes": [],
       "registry_note": null,
       "zuno_doc_coarse_mention": {
-        "scanned": "C:\\Cursor Projects Organiser\\Z_Sanctuary_Universe\\docs\\Z-ZUNO-AI-FULL-REPORT.md",
+        "scanned": "/home/runner/work/z-sanctuary-universe/z-sanctuary-universe/docs/Z-ZUNO-AI-FULL-REPORT.md",
         "matched": false
       },
       "recommended_next_action": "Add missing paths or update master registry to match intentional layout."
@@ -1828,7 +1828,7 @@
       "doc_mention_notes": [],
       "registry_note": null,
       "zuno_doc_coarse_mention": {
-        "scanned": "C:\\Cursor Projects Organiser\\Z_Sanctuary_Universe\\docs\\Z-ZUNO-AI-FULL-REPORT.md",
+        "scanned": "/home/runner/work/z-sanctuary-universe/z-sanctuary-universe/docs/Z-ZUNO-AI-FULL-REPORT.md",
         "matched": false
       },
       "recommended_next_action": "Add missing paths or update master registry to match intentional layout."
@@ -1854,7 +1854,7 @@
       "doc_mention_notes": [],
       "registry_note": null,
       "zuno_doc_coarse_mention": {
-        "scanned": "C:\\Cursor Projects Organiser\\Z_Sanctuary_Universe\\docs\\Z-ZUNO-AI-FULL-REPORT.md",
+        "scanned": "/home/runner/work/z-sanctuary-universe/z-sanctuary-universe/docs/Z-ZUNO-AI-FULL-REPORT.md",
         "matched": true
       },
       "recommended_next_action": "None — keep synced on registry/manifest churn."
@@ -1892,7 +1892,7 @@
       ],
       "registry_note": null,
       "zuno_doc_coarse_mention": {
-        "scanned": "C:\\Cursor Projects Organiser\\Z_Sanctuary_Universe\\docs\\Z-ZUNO-AI-FULL-REPORT.md",
+        "scanned": "/home/runner/work/z-sanctuary-universe/z-sanctuary-universe/docs/Z-ZUNO-AI-FULL-REPORT.md",
         "matched": true
       },
       "recommended_next_action": "None — keep synced on registry/manifest churn."

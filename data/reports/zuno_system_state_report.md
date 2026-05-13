@@ -1,6 +1,6 @@
 # Zuno AI System State Report
 
-Generated: 2026-05-05T18:25:52.140Z
+Generated: 2026-05-13T19:57:00.737Z
 
 ## Executive Status
 - Internal operations: **hold**
@@ -13,8 +13,8 @@ Generated: 2026-05-05T18:25:52.140Z
 
 ## Z-Brother — Today (upgrades & full system pulse)
 _Clarity, compassion, one core — operator-sovereign (Z-Brother)._
-- **Hub system-status:** verify **PASS** · status **healthy** · last check **2026-05-01** · projects in view: **15**
-- **PC-root freshness:** **12/15** on disk ok · missing **1** · registry snapshot **2026-05-01T17:24:19.068Z**
+- **Hub system-status:** verify **PASS** · status **healthy** · last check **2026-05-13** · projects in view: **15**
+- **PC-root freshness:** **0/15** on disk ok · missing **13** · registry snapshot **2026-05-13T19:56:06.046Z**
 - **Z-Garage (upgrade pressure):** **low** · critical projects: **0**
 - **Guardian:** Before a major release, run npm run verify:full (long pipeline) from the hub.
 - **Guardian:** Keep using Z: CI quick verify (folders + structure + registry) in PR checks when GitHub Actions is enabled.
@@ -165,10 +165,10 @@ _Clarity, compassion, one core — operator-sovereign (Z-Brother)._
 
 ## External observers (comms / AAFRTC — visibility only)
 - AAFRTC context generated: **2026-04-27T17:36:04.905Z** (file present: true)
-- GitHub comms manifest: **2026-05-03T14:38:56.371Z** · ok=true
-- Cloudflare comms manifest: **2026-05-03T14:38:57.110Z** · ok=true · observer state: **synced**
+- GitHub comms manifest: **2026-05-13T19:56:05.897Z** · ok=true
+- Cloudflare comms manifest: **2026-05-13T19:56:06.013Z** · ok=true · observer state: **synced**
 - Observability only — run npm run comms:github-ai / comms:cloudflare-ai and node scripts/z_aafrtc_resolve.mjs to refresh timestamps.
-- **Freshness (hint):** **stale** (threshold 24h · max age 192.83h) — At least one observer timestamp exceeds threshold — refresh comms + AAFRTC context, then re-run Zuno report.
+- **Freshness (hint):** **stale** (threshold 24h · max age 386.35h) — At least one observer timestamp exceeds threshold — refresh comms + AAFRTC context, then re-run Zuno report.
 
 ## Z-FPSMC (storage awareness — read-only)
 - Present: **true** · safety: **READ_ONLY_PHASE1_NO_DELETE_NO_MOVE** · fixed drives: **1** · known roots: **13** · container volume rows: **0** · warnings: **0**
@@ -207,7 +207,7 @@ _Clarity, compassion, one core — operator-sovereign (Z-Brother)._
 
 ## 7-Day Trend
 - Window size: 7 day(s)
-- Module completion delta: 30.6 pt
+- Module completion delta: 0 pt
 - Open tasks delta: 0
 - Pending audit delta: 0
 - Readiness gate delta: 0

@@ -3,7 +3,7 @@
 ## Registry Identity
 
 | Field | Value |
-| --- | --- |
+| --------------------- | -------------------------- |
 | **ID** | `soundscape_pulse` |
 | **Category** | Core engine / experiential |
 | **Registry status** | implemented |

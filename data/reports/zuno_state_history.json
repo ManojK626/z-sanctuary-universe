@@ -927,5 +927,40 @@
       "extension_guard_status": "hold",
       "extension_guard_failed": 1
     }
+  },
+  {
+    "date": "2026-05-13",
+    "generated_at": "2026-05-13T19:57:00.737Z",
+    "status": "HOLD",
+    "metrics": {
+      "module_total": 44,
+      "module_done": 23,
+      "module_completion_pct": 52.3,
+      "task_total": 9,
+      "task_open": 1,
+      "task_p1_open": 0,
+      "task_completion_pct": 88.9,
+      "pending_total": 0,
+      "hygiene_green": false,
+      "readiness_ready": true,
+      "readiness_gates_total": 4,
+      "readiness_gates_pass": 4,
+      "ai_agents": 4,
+      "auto_tasks": 1,
+      "otel_shadow_status": "ready",
+      "otel_shadow_checks_total": 3,
+      "otel_shadow_checks_pass": 2,
+      "policy_shadow_status": "ready",
+      "policy_shadow_checks_total": 4,
+      "policy_shadow_checks_pass": 4,
+      "troublemaker_status": "green",
+      "troublemaker_risk_class": "low",
+      "troublemaker_disturbance_score": 0,
+      "troublemaker_failed_checks": 0,
+      "data_leak_status": "green",
+      "data_leak_findings": 0,
+      "extension_guard_status": "hold",
+      "extension_guard_failed": 1
+    }
   }
 ]

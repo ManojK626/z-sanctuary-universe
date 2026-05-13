@@ -37,5 +37,4 @@
 
 Awareness ≠ execution. Capsule ≠ entitlement. Indicator ≠ permission. GREEN ≠ deploy. BLUE requires AMK. RED blocks movement. YELLOW is quiet advisory unless escalated.
 
-
 YELLOW does not enqueue AMK notifications by default. Promote manually from candidates if policy changes.

@@ -44,4 +44,4 @@ Revert MAP-3 commits or restore prior `amk_control_dashboard_map.json`, HTML, CS
 
 ## Sign-off
 
-Operator: **********\_\_\_\_********** Date: ****\_\_****
+Operator: \***\*\*\*\*\***\_\_\_\_\***\*\*\*\*\*** Date: \***\*\_\_\*\***

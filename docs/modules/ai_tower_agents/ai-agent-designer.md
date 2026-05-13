@@ -3,7 +3,7 @@
 ## Registry Identity
 
 | Field | Value |
-| --- | --- |
+| --------------------- | ------------------- |
 | **ID** | `ai-agent-designer` |
 | **Category** | ai_tower_agents |
 | **Registry status** | planned_stub |

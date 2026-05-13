@@ -5,7 +5,7 @@
 ## SSWS governed layer (this phase)
 
 | Item | Location |
-| --- | --- |
+| ------------------ | ------------------------------------------------------------------------------------- |
 | Policy | [`docs/Z_DOORWAY_2_WORKSPACE_OPEN_POLICY.md`](Z_DOORWAY_2_WORKSPACE_OPEN_POLICY.md) |
 | Registry | [`data/z_doorway_workspace_registry.json`](../data/z_doorway_workspace_registry.json) |
 | Status (read-only) | [`scripts/z_doorway_workspace_status.mjs`](../scripts/z_doorway_workspace_status.mjs) |
@@ -15,7 +15,7 @@
 ## Companion doorway lanes (same phase family)
 
 | Lane | Location |
-| --- | --- |
+| ---------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | AMK project doorway (PC-root groups) | [`data/amk_project_doorway_registry.json`](../data/amk_project_doorway_registry.json), [`scripts/amk_open_project_doors.ps1`](../scripts/amk_open_project_doors.ps1), [`docs/AMK_PROJECT_DOORWAY_LAUNCHER.md`](AMK_PROJECT_DOORWAY_LAUNCHER.md) |
 | AMK workspace doorway profiles (Z-SSWS-DOOR-1) | [`data/amk_workspace_doorway_registry.json`](../data/amk_workspace_doorway_registry.json), [`scripts/amk_open_workspace_doors.ps1`](../scripts/amk_open_workspace_doors.ps1) |
 
@@ -35,7 +35,7 @@ Evidence (hub gates from repo root):
 ## Posture checklist
 
 | Check | Confirm |
-| --- | --- |
+| ------------------------------------------------------------------------------ | ------- |
 | Read-only metadata first (`z:doorway:status`) | Yes |
 | Dry-run default (`z:doorway:dry` / opener without `-Apply`) | Yes |
 | `-Apply` requires explicit `-Id` (max 12) | Yes |

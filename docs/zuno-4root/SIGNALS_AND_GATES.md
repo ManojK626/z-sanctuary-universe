@@ -3,7 +3,7 @@
 ## Signal categories (conceptual)
 
 | Label | Meaning |
-| --- | --- |
+| ----------------- | --------------------------------------------------------- |
 | `USER_INPUT` | Operator or creator intent captured in tools or dashboard |
 | `AI_SIGNAL` | Model or bot output suggesting an action |
 | `SYSTEM_HEALTH` | Verify scripts, audits, registry posture |

@@ -69,10 +69,10 @@
 ## Summary
 
 {
-  "green": 4,
-  "yellow": 1,
-  "blue": 3,
-  "red": 0
+"green": 4,
+"yellow": 1,
+"blue": 3,
+"red": 0
 }
 
 ## Locked law

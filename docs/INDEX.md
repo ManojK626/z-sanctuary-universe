@@ -121,7 +121,7 @@ This repository currently acts as:
 ## Current Deployment Posture
 
 | Layer | Status |
-| --- | --- |
+| ------------------------ | ------------------ |
 | Static Pages (CF-A) | Active preparation |
 | API systems | Not public |
 | Billing systems | Not active |

@@ -3,7 +3,7 @@
 ## Registry Identity
 
 | Field | Value |
-| --- | --- |
+| --------------------- | --------------------------------- |
 | **ID** | `z-prediction-validation-phase55` |
 | **Category** | trust_audit_governance |
 | **Registry status** | implemented |

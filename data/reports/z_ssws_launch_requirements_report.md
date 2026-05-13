@@ -39,5 +39,4 @@
 
 Launch requirement ≠ launch permission. Extension requirement ≠ auto-install. Start command ≠ execution. Shadow workspace ≠ deploy. GREEN ≠ auto-launch. BLUE requires AMK. RED blocks movement. AMK-Goku owns sacred moves.
 
-
 YELLOW extension or metadata gaps stay off AMK notifications by default. No auto-launch in SSWS-LINK-1.

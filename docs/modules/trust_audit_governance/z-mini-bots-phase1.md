@@ -3,7 +3,7 @@
 ## Registry Identity
 
 | Field | Value |
-| --- | --- |
+| --------------------- | ---------------------- |
 | **ID** | `z-mini-bots-phase1` |
 | **Category** | trust_audit_governance |
 | **Registry status** | implemented |

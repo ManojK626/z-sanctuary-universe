@@ -4,4 +4,3 @@
 - Scanned file: `core/index.html`
 - Checked titles: 1
 - Findings: 0
-

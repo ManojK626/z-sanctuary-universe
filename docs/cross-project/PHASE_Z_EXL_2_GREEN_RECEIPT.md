@@ -9,7 +9,7 @@ Not in scope (held strictly): compatibility matrices, inheritance engine, runtim
 ## Delivered
 
 | Item | Path |
-| --- | --- |
+| ----------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | Doctrine (sibling to Z-EXL-1) | `docs/design/Z_EXPERIENTIAL_PROFILE_REGISTRY.md` |
 | Registry JSON | `data/z_experiential_profile_registry.json` |
 | Green receipt (this file) | `docs/cross-project/PHASE_Z_EXL_2_GREEN_RECEIPT.md` |
@@ -18,7 +18,7 @@ Not in scope (held strictly): compatibility matrices, inheritance engine, runtim
 ## Lumina-side touch (citation only — no runtime change)
 
 | Lumina file | Change |
-| --- | --- |
+| --------------------------------------------------- | ------------------------------------------------------------------------------------------------------------- |
 | `Z-Sanctuary Browser/docs/Z-EXL-1.md` | Added a tiny pointer note: Lumina is registered in the hub under `experience_profile_id: lumina_sanctuary_v0` |
 | `Z-Sanctuary Browser/renderer/modules/modules.html` | Added the same pointer line to the existing Z-EXL-1 doctrine card |
 
@@ -64,7 +64,7 @@ npm run verify:all
 ## Manual checklist
 
 | Check | Pass |
-| --- | --- |
+| ----------------------------------------------------------------------------------------------------------------------------- | ---- |
 | Doctrine declares Z-EXL-2 as sibling to Z-EXL-1 (registry-only, metadata-only) | ☐ |
 | Registry parses as JSON | ☐ |
 | Every `entries[].project_id` matches the Z-EXL-1 `project_id` enum | ☐ |
@@ -79,7 +79,7 @@ npm run verify:all
 ## Operator sign-off
 
 | Role | Name | Date |
-| --- | --- | --- |
+| -------- | ---- | ---- |
 | Operator | | |
 
 ## Rollback

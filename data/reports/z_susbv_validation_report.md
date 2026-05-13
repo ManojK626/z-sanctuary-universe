@@ -3,7 +3,7 @@
 **Generated:** 2026-05-03T18:33:02.472Z
 
 | Field | Value |
-| ---- | ---- |
+| -------------- | ------------------------------------------ |
 | Overall signal | **BLUE** |
 | Registry | data/z_susbv_benchmark_registry.json |
 | Validation | data/z_susbv_service_price_validation.json |
@@ -24,4 +24,4 @@
 
 ---
 
-*Read-only — Phase ZSUSBV-1. No APIs, billing, or deploy.*
+_Read-only — Phase ZSUSBV-1. No APIs, billing, or deploy._

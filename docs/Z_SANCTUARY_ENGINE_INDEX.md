@@ -7,7 +7,7 @@
 **Source:** `data/z_core_engines_registry.json` (registry truth; runtime proof is separate).
 
 | ID | Name | Status | Risk | Role |
-| --- | --- | --- | --- | --- |
+| ------------------ | ---------------- | ------------------- | ------ | ------------------------------------------------------------------- |
 | `z_sanctuary_core` | Z-Sanctuary Core | active_or_partial | medium | Central governance, hub verify chain, and multi-root coordination. |
 | `ghost_core` | Ghost Core | doctrine_or_partial | medium | Reflection, archive, and memory trail (bounded; no vault exfil). |
 | `alien_core` | Alien Core | doctrine_or_partial | medium | Off-angle pattern discovery and unusual signal handling (advisory). |

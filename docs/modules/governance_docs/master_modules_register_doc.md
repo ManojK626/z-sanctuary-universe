@@ -3,7 +3,7 @@
 ## Registry Identity
 
 | Field | Value |
-| --- | --- |
+| --------------------- | ----------------------------- |
 | **ID** | `master_modules_register_doc` |
 | **Category** | Governance / docs |
 | **Registry status** | implemented |

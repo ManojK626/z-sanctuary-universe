@@ -1,13 +1,13 @@
 {
-  "generated_at": "2026-05-05T18:25:52.140Z",
+  "generated_at": "2026-05-13T19:57:00.737Z",
   "z_brother_today": {
-    "generated_for": "2026-05-05",
+    "generated_for": "2026-05-13",
     "alignment": "Clarity, compassion, one core — operator-sovereign (Z-Brother).",
     "system_status_hub": {
       "verify": "PASS",
       "status": "healthy",
-      "last_check": "2026-05-01",
-      "last_check_iso": "2026-05-01T17:24:19.114Z",
+      "last_check": "2026-05-13",
+      "last_check_iso": "2026-05-13T19:56:06.071Z",
       "projects": 15,
       "source": "verify:ci"
     },
@@ -17,9 +17,9 @@
     ],
     "project_freshness": {
       "present": true,
-      "generated_at": "2026-05-01T17:24:19.068Z",
-      "ok_count": 12,
-      "missing_count": 1,
+      "generated_at": "2026-05-13T19:56:06.046Z",
+      "ok_count": 0,
+      "missing_count": 13,
       "total": 15
     },
     "garage": {
@@ -384,9 +384,9 @@
   },
   "external_observers": {
     "aafrtc_context_generated_at": "2026-04-27T17:36:04.905Z",
-    "github_comms_manifest_generated_at": "2026-05-03T14:38:56.371Z",
+    "github_comms_manifest_generated_at": "2026-05-13T19:56:05.897Z",
     "github_comms_manifest_ok": true,
-    "cloudflare_comms_manifest_generated_at": "2026-05-03T14:38:57.110Z",
+    "cloudflare_comms_manifest_generated_at": "2026-05-13T19:56:06.013Z",
     "cloudflare_comms_manifest_ok": true,
     "cloudflare_observer_state": "synced",
     "manifest_files_present": {
@@ -399,7 +399,7 @@
   "external_observers_health": {
     "status": "stale",
     "stale_threshold_hours": 24,
-    "max_age_hours": 192.83,
+    "max_age_hours": 386.35,
     "note": "At least one observer timestamp exceeds threshold — refresh comms + AAFRTC context, then re-run Zuno report."
   },
   "fpsmc_storage": {
@@ -447,8 +447,8 @@
     "disturbance_watch": "clear"
   },
   "current": {
-    "date": "2026-05-05",
-    "generated_at": "2026-05-05T18:25:52.140Z",
+    "date": "2026-05-13",
+    "generated_at": "2026-05-13T19:57:00.737Z",
     "status": "HOLD",
     "metrics": {
       "module_total": 44,
@@ -483,7 +483,7 @@
   },
   "trend_7d": {
     "window_days": 7,
-    "module_completion_delta_pct": 30.6,
+    "module_completion_delta_pct": 0,
     "task_open_delta": 0,
     "pending_delta": 0,
     "hygiene_green_days": 0,

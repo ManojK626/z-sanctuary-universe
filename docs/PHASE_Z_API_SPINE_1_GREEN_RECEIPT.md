@@ -32,8 +32,8 @@ Phase 1 delivers **registry + policy + validator + reports + docs + indicator me
 ## Sign-off
 
 | Role | Action |
-| --- | --- |
+| ---------- | ---------------------------------------------------- |
 | Maintainer | Confirms checklist run and report stored |
 | AMK | Confirms BLUE/RED notification policy matches intent |
 
-Date and initials: ________________________
+Date and initials: ****\*\*****\_\_\_\_****\*\*****

@@ -5,7 +5,7 @@
 ## Scope
 
 | In scope | Out of scope |
-| --- | --- |
+| ------------------------------------------------------------- | -------------------------------------------------------- |
 | Optional JSON Lines session file on **`-Apply -SessionLog`** | npm install / start / build |
 | Summary embedded in `z:doorway:status` when a log file exists | Deploy, DNS, Wrangler |
 | Operator policy and examples | Git read/write |
@@ -24,7 +24,7 @@
 Each line is one JSON object with **only** these keys:
 
 | Field | Type | Meaning |
-| --- | --- | --- |
+| --------------- | --------------------- | ----------------------------------------------------------------------- |
 | `timestamp` | string (ISO-8601 UTC) | When the receipt was written. |
 | `id` | string | Registry entry `id`. |
 | `name` | string | Registry display `name` (no paths). |

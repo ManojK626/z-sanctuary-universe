@@ -9,7 +9,7 @@ This file is **policy metadata**. It does not configure a live API gateway, serv
 ## Signals
 
 | Signal | Meaning |
-| --- | --- |
+| ------ | ---------------------------------------------------------------------------------------------------- |
 | GREEN | Required registry rows validate; no unsafe collisions. |
 | YELLOW | Advisory: optional unknowns, reference placeholders, naming similarity, or non-blocking probe noise. |
 | BLUE | Human decision for deploy, bridge, provider, billing, or security posture. |

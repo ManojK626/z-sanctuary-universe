@@ -3,7 +3,7 @@
 ## Registry Identity
 
 | Field | Value |
-| --- | --- |
+| --------------------- | ----------------------- |
 | **ID** | `z-ggaesp-pipeline-360` |
 | **Category** | trust_audit_governance |
 | **Registry status** | implemented |

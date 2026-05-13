@@ -3,7 +3,7 @@
 **Generated:** 2026-05-04T12:01:39.598Z
 
 | Field | Value |
-| ---- | ---- |
+| -------------- | -------------------------------------- |
 | Overall signal | **GREEN** |
 | Bundle id | z_omnai_movie_trailer_review_bundle_v1 |
 | Status | internal_review_only |
@@ -65,4 +65,4 @@
 
 ---
 
-*Z-OMNAI-BUILD-2 — no generated media, no providers, no publishing.*
+_Z-OMNAI-BUILD-2 — no generated media, no providers, no publishing._

@@ -5,7 +5,7 @@ Generated: 2026-05-12T19:20:45.500Z
 ## Summary
 
 | Metric | Value |
-| --- | ---: |
+| -------------------------------- | --------------------------------------------: |
 | Files scanned | 3313 |
 | Bytes scanned | 13081925 |
 | Files skipped | 3 |
@@ -30,7 +30,7 @@ Generated: 2026-05-12T19:20:45.500Z
 ## Sample duplicate line groups
 
 | Group | Files | Risk | Category | Preview |
-| --- | ---: | --- | --- | --- |
+| --------------- | ----: | ------ | -------- | ------------------------------------------------------------------------- |
 | line_1972632326 | 10 | ORANGE | registry | "phase": "Observe",… |
 | line_4100795049 | 10 | ORANGE | registry | "confidence": 0.77,… |
 | line_448886420 | 10 | ORANGE | registry | "authority": "observational-only",… |
@@ -60,7 +60,7 @@ Generated: 2026-05-12T19:20:45.500Z
 ## Sample duplicate window groups
 
 | Group | Files | Risk | Category | Preview |
-| --- | ---: | --- | --- | --- |
+| -------------- | ----: | ------ | --------- | ------------------------------------------------------------------------- |
 | win_4235972410 | 10 | ORANGE | registry | "phase": "Impact", · "micro_cell": "Expanse Cell", · "orientation": "Sto… |
 | win_2613839844 | 10 | ORANGE | dashboard | <html lang="en"> · <head> · <meta charset="utf-8" /> · <meta name="viewp… |
 | win_2766738602 | 10 | YELLOW | unknown | <meta name="viewport" content="width=device-width, initial-scale=1" /> ·… |

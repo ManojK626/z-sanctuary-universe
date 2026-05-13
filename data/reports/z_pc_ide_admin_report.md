@@ -17,7 +17,7 @@ Process is running elevated/admin mode
 ## Status by Check
 
 | Check | Result | Impact |
-| ------- | -------- | -------- |
+| -------------------- | ----------- | --------------------------- |
 | Admin Mode Detection | ❌ Elevated | May increase confusion/risk |
 | CWD Archive Check | ✅ Real hub | Correct location |
 | Hub Root Existence | ✅ Exists | Can access real hub |

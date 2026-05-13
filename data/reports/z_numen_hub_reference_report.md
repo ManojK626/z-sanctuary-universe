@@ -32,4 +32,3 @@
 - GREEN is not deploy.
 - BLUE requires AMK.
 - RED blocks movement.
-

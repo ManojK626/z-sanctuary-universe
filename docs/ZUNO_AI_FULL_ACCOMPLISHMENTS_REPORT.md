@@ -85,7 +85,6 @@ Over the past development cycle, Z-Sanctuary has achieved **four major protectiv
 - Registry: `data/z_continuous_verification_protocol_registry.json` (500+ lines)
 - Monitor: `scripts/z_continuous_verification_monitor.mjs` (FIXED execSync issue)
 - **5 Monitored Gates:**
-
   - z:ide:fusion (2-min)
   - z:ide:14drp (2-min)
   - verify:md (10-min)
@@ -93,7 +92,6 @@ Over the past development cycle, Z-Sanctuary has achieved **four major protectiv
   - z:car2 (60-min)
 
 - **3 Verification Modes:**
-
   - quick_check: 2 gates
   - full_check: 5 gates
   - compliance_audit: 3 gates
@@ -236,7 +234,7 @@ All 4 rings now OPERATIONAL with GREEN signals
 ## SYSTEM METRICS SNAPSHOT
 
 | Metric | Value | Status |
-| --- | --- | --- |
+| ------------------ | --------------- | ----------------------------- |
 | Module Completion | 52.3% (23/44) | ✅ On track |
 | Priority Items | 88.9% (8/9) | ✅ Critical path clear |
 | P1 Blocker Tasks | 0 | ✅ PASS |

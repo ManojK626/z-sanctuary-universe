@@ -3,7 +3,7 @@
 ## Registry Identity
 
 | Field | Value |
-| --- | --- |
+| --------------------- | ---------------- |
 | **ID** | `skk-companion` |
 | **Category** | family_companion |
 | **Registry status** | planned_stub |

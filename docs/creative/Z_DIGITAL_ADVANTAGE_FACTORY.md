@@ -7,7 +7,7 @@ The **Digital Advantage Factory** is a naming frame for how Z-Sanctuary turns di
 ## Factory floors (safe reading of OMNAI)
 
 | Metaphor | Real Z-Sanctuary behaviour |
-| -------- | -------------------------- |
+| ------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
 | Omega-style formula | **Production routing score**: which step, lane, and evidence come next; documented in JSON and reviewed by humans for external work. |
 | Multiplying brains | **Specialist lanes**: separate checklists for film, marketing, code prototypes, and so on — not autonomous agent swarms. |
 | Quadruple spine | **Four tracks**: cognitive intent, evidence, build artefacts, and oversight (safety, AMK, policy). |

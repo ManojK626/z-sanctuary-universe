@@ -3,7 +3,7 @@
 ## Registry Identity
 
 | Field | Value |
-| --- | --- |
+| --------------------- | ---------------------- |
 | **ID** | `display_morph_engine` |
 | **Category** | Dashboard / runtime |
 | **Registry status** | implemented |

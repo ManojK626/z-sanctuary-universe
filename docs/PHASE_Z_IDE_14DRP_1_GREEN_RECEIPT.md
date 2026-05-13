@@ -93,7 +93,7 @@ npm run z:ide:14drp
 ## Signal Logic
 
 | Signal | Meaning | Action |
-| -------- | --------- | -------- |
+| --------- | -------------------------------- | ----------------- |
 | 🟢 GREEN | Compliant, safe to continue | Continue work |
 | 🟡 YELLOW | Advisory (missing optional data) | Quiet notice |
 | 🔵 BLUE | AMK decision required | Notify AMK-Goku |

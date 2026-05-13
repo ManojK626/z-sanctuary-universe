@@ -19,10 +19,10 @@
 ## Samples
 
 {
-  "green": 2,
-  "yellow": 1,
-  "blue": 1,
-  "red": 0
+"green": 2,
+"yellow": 1,
+"blue": 1,
+"red": 0
 }
 
 ### Rows
@@ -46,7 +46,6 @@
 
 - Signal **BLUE**
 - Policy upgrade / autonomy pattern requires AMK or ethics framing before any tooling exists.
-
 
 ## Locked law
 

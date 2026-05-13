@@ -83,5 +83,5 @@ Expected outcome:
 ## 6. Revision
 
 | Version | Note |
-| ------- | ---- |
+| -------------------- | --------------------------------------------- |
 | Z-POWERSHELL-BOOST-1 | Initial operator guidance landing — docs only |

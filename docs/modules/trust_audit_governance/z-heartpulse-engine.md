@@ -3,7 +3,7 @@
 ## Registry Identity
 
 | Field | Value |
-| --- | --- |
+| --------------------- | ---------------------- |
 | **ID** | `z-heartpulse-engine` |
 | **Category** | trust_audit_governance |
 | **Registry status** | partial |

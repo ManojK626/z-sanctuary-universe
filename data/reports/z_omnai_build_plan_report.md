@@ -3,7 +3,7 @@
 **Generated:** 2026-05-04T12:01:39.191Z
 
 | Field | Value |
-| ---- | ---- |
+| -------------------------- | -------- |
 | Overall build-plan signal | **BLUE** |
 | Blueprint validator signal | BLUE |
 | Focus mode | all |
@@ -20,7 +20,7 @@
 ## Per-mode summary
 
 | mode_id | signal | source_pipeline_id |
-| ---- | ---- | ---- |
+| ------------------------ | ------ | ----------------------------------- |
 | movie_trailer | GREEN | z_omnai_movie_trailer_v1 |
 | marketing_campaign | BLUE | z_omnai_marketing_campaign_v1 |
 | landing_page | BLUE | z_omnai_product_landing_page_v1 |
@@ -36,4 +36,4 @@
 
 ---
 
-*Z-OMNAI-BUILD-1 — review plans only. AMK opens public, legal, pricing, and provider lanes.*
+_Z-OMNAI-BUILD-1 — review plans only. AMK opens public, legal, pricing, and provider lanes._

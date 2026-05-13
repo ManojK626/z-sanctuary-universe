@@ -3,7 +3,7 @@
 ## Registry Identity
 
 | Field | Value |
-| --- | --- |
+| --------------------- | -------------------- |
 | **ID** | `core-chronicle-hud` |
 | **Category** | core_engines |
 | **Registry status** | planned_stub |

@@ -21,7 +21,7 @@ AMK-Goku owns sacred moves.
 ## What the checker does
 
 | Check | Meaning |
-| --- | --- |
+| ---------------------------------------------------- | -------------------------------------------------------------- |
 | `code` on PATH | Windows `where code` / POSIX `which code` |
 | `cursor` on PATH | Same for `cursor` |
 | `%LOCALAPPDATA%\Programs\Microsoft VS Code\Code.exe` | Common user install |
@@ -34,7 +34,7 @@ AMK-Goku owns sacred moves.
 ## Signals
 
 | Signal | Typical meaning |
-| --- | --- |
+| ---------- | --------------------------------------------------------------------------- |
 | **GREEN** | Both IDE families detected **and** hub exists **and** Labs exists |
 | **YELLOW** | One IDE missing **or** Labs missing — paths still workable |
 | **RED** | Hub missing **or** CWD under `.cursor/projects` **or** neither IDE detected |

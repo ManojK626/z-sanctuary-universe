@@ -3,7 +3,7 @@
 ## Registry Identity
 
 | Field | Value |
-| --- | --- |
+| --------------------- | ---------------------------- |
 | **ID** | `z-adaptive-learning-phase3` |
 | **Category** | trust_audit_governance |
 | **Registry status** | implemented |

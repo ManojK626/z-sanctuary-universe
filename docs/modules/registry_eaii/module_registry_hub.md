@@ -3,7 +3,7 @@
 ## Registry Identity
 
 | Field | Value |
-| --- | --- |
+| --------------------- | --------------------- |
 | **ID** | `module_registry_hub` |
 | **Category** | Registry / EAII |
 | **Registry status** | implemented |

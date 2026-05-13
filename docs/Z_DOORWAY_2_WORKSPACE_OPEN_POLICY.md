@@ -5,7 +5,7 @@
 ## Canonical artifacts
 
 | Role | Path |
-| --- | --- |
+| -------------------------- | ---------------------------------------------------------------------------------------------- |
 | Workspace/folder registry | `data/z_doorway_workspace_registry.json` |
 | Read-only status + reports | `scripts/z_doorway_workspace_status.mjs` → `data/reports/z_doorway_workspace_status.{json,md}` |
 | Safe opener (PowerShell) | `scripts/z_open_workspace_safe.ps1` |
@@ -14,7 +14,7 @@
 ## Registry fields (normative)
 
 | Field | Meaning |
-| --- | --- |
+| ----------------- | -------------------------------------------------------------------------------------------------------------------------------------------------- |
 | `id` | Stable key; required for `-Apply -Id`. |
 | `name` | Human label. |
 | `path` | Absolute path to a `.code-workspace` file or folder. |
