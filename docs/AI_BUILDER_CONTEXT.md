@@ -10,6 +10,7 @@
 4. `data/z_master_module_registry.json` — canonical **module ID list** for coverage and AI Builder pages.
 5. `data/z_core_engines_registry.json` — high-level **engine** labels (not full runtime proof).
 6. [Z_SANCTUARY_BUILD_RULES.md](Z_SANCTUARY_BUILD_RULES.md) — hard boundaries for builders.
+7. [Z_POWERSHELL_OPERATOR_BOOST.md](Z_POWERSHELL_OPERATOR_BOOST.md) — **Z-POWERSHELL-OPERATOR-BOOST-1:** Windows PowerShell operator menu (safe `cd`, verify/observation bundles, markdown hygiene); cockpit not autopilot (no auto-deploy/merge/secrets/Cloudflare mutation).
 
 ## Canonical control root and satellite bridges (Z-CONTROL-LINK-1)
 
