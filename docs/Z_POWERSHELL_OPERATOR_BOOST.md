@@ -8,7 +8,7 @@
 
 ## 1. Purpose
 
-The **Z-PowerShell Operator Boost** defines how **PowerShell** (or `pwsh`) can be used as a **local operator acceleration lane** for Z-Sanctuary **without** becoming an unsafe automation channel.
+The **Z-PowerShell Operator Boost** defines safe **PowerShell** (or `pwsh`) command patterns for local Windows operations in Z-Sanctuary **without** turning the shell into an unsafe automation channel.
 
 It is a **discipline doc**, not a promise of more authority. The boost is:
 
@@ -25,7 +25,7 @@ It is a **discipline doc**, not a promise of more authority. The boost is:
 PowerShell boost ≠ autonomous operator.
 Fast shell rhythm ≠ permission.
 Dry-run ≠ deploy.
-Named command ≠ sacred move approval.
+Named command ≠ human approval.
 Hub root ≠ .cursor archive.
 AMK-Goku / human gate stays above the shell.
 ```

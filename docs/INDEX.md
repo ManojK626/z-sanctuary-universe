@@ -81,7 +81,7 @@ Compact entry points for **read-only** hub registries and AMK-facing evidence. F
 | Z-ROOT-7 / Z-ROOT-7B guardian coordination | [Z_ROOT_7_GUARDIAN_COORDINATION_LAYER.md](Z_ROOT_7_GUARDIAN_COORDINATION_LAYER.md) | AMK main control panel (HTTP) |
 | AMK-DASH-FLEX-1/2 command book + toolbox | [AMK_GOKU_COMMAND_BOOK_LAYOUT.md](AMK_GOKU_COMMAND_BOOK_LAYOUT.md) | AMK main control (HTTP) |
 | Z-OMNI-CHARTER-1 visual workstation engine | [Z_OMNI_VISUAL_WORKSTATION_ENGINE_CHARTER.md](Z_OMNI_VISUAL_WORKSTATION_ENGINE_CHARTER.md) | — |
-| Z-PS-BOOST-1 PowerShell operator boost | [Z_POWERSHELL_OPERATOR_BOOST.md](Z_POWERSHELL_OPERATOR_BOOST.md) | `npm run verify:md` |
+| Z-PS-BOOST-1 PowerShell operator boost | [Z_POWERSHELL_OPERATOR_BOOST.md](Z_POWERSHELL_OPERATOR_BOOST.md) | — |
 | AMK-DASH-FLEX-2 green receipt | [PHASE_AMK_DASH_FLEX_2_GREEN_RECEIPT.md](PHASE_AMK_DASH_FLEX_2_GREEN_RECEIPT.md) | — |
 | AMK indicators | [AMK_PROJECT_INDICATORS_AND_GO_NO_GO.md](AMK_PROJECT_INDICATORS_AND_GO_NO_GO.md) | — |
 | Z-SWARM-14DRP-1 green receipt | [PHASE_Z_SWARM_14DRP_1_GREEN_RECEIPT.md](PHASE_Z_SWARM_14DRP_1_GREEN_RECEIPT.md) | — |
