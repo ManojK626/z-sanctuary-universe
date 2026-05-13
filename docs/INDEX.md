@@ -94,7 +94,7 @@ Compact entry points for **read-only** hub registries and AMK-facing evidence. F
 | Z-LOGICAL-BRAINS-HUB-2 green receipt | [PHASE_Z_LOGICAL_BRAINS_HUB_2_GREEN_RECEIPT.md](PHASE_Z_LOGICAL_BRAINS_HUB_2_GREEN_RECEIPT.md) | — |
 | Z-CADENCE-1 green receipt | [PHASE_Z_CADENCE_1_GREEN_RECEIPT.md](PHASE_Z_CADENCE_1_GREEN_RECEIPT.md) | — |
 | AI Builder briefing | [AI_BUILDER_CONTEXT.md](AI_BUILDER_CONTEXT.md) | — |
-| VS-FALLBACK-1 — VS Code Operating Mode Until Cursor Returns | [VS_FALLBACK_1_VSCODE_OPERATING_MODE.md](VS_FALLBACK_1_VSCODE_OPERATING_MODE.md) | â€” |
+| VS-FALLBACK-1 — VS Code Operating Mode Until Cursor Returns | [VS_FALLBACK_1_VSCODE_OPERATING_MODE.md](VS_FALLBACK_1_VSCODE_OPERATING_MODE.md) | — |
 | Zuno weekly observation (7-day window) | [ZUNO_WEEKLY_FULL_RUN_AND_OBSERVATION.md](ZUNO_WEEKLY_FULL_RUN_AND_OBSERVATION.md) | See doc (daily + twice-weekly) |
 
 ## Policy JSON (paired)

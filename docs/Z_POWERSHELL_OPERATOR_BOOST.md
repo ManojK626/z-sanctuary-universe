@@ -76,7 +76,7 @@ npm run amk:doorway:status
 
 ```powershell
 powershell -ExecutionPolicy Bypass -File scripts/amk_open_workspace_doors.ps1 -Profile morning -DryRun
-npm run amk:doorway:open -- -Profile franed -DryRun
+npm run amk:doorway:open -- -Profile morning -DryRun
 ```
 
 Dry-run is the boost because it reduces guesswork **without** silently opening unsafe lanes.
