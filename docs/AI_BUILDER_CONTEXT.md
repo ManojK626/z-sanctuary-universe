@@ -10,6 +10,7 @@
 4. `data/z_master_module_registry.json` — canonical **module ID list** for coverage and AI Builder pages.
 5. `data/z_core_engines_registry.json` — high-level **engine** labels (not full runtime proof).
 6. [Z_SANCTUARY_BUILD_RULES.md](Z_SANCTUARY_BUILD_RULES.md) — hard boundaries for builders.
+7. [Z_OMNI_VISUAL_WORKSTATION_ENGINE_CHARTER.md](Z_OMNI_VISUAL_WORKSTATION_ENGINE_CHARTER.md) — **Z-OMNI-CHARTER-1:** governed visual workstation engine (tokens, panel manifests, phased build); presentation and composition under Turtle Mode — not autonomous execution or hype-as-truth.
 
 ## Canonical control root and satellite bridges (Z-CONTROL-LINK-1)
 
