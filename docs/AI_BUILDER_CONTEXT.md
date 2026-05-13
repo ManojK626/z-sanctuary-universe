@@ -11,6 +11,7 @@
 5. `data/z_core_engines_registry.json` — high-level **engine** labels (not full runtime proof).
 6. [Z_SANCTUARY_BUILD_RULES.md](Z_SANCTUARY_BUILD_RULES.md) — hard boundaries for builders.
 7. [Z_OMNI_VISUAL_WORKSTATION_ENGINE_CHARTER.md](Z_OMNI_VISUAL_WORKSTATION_ENGINE_CHARTER.md) — **Z-OMNI-CHARTER-1:** governed visual workstation engine (tokens, panel manifests, phased build); presentation and composition under Turtle Mode — not autonomous execution or hype-as-truth.
+8. [Z_POWERSHELL_OPERATOR_BOOST.md](Z_POWERSHELL_OPERATOR_BOOST.md) — **Z-POWERSHELL-BOOST-1:** local-first PowerShell operator guidance for command hygiene and verification posture; not automation, deploy, merge, secret, or cloud authority.
 
 ## Canonical control root and satellite bridges (Z-CONTROL-LINK-1)
 
