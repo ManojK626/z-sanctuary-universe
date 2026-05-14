@@ -13,7 +13,7 @@
 Position the Mini PC as a **local sovereign operator node** that supports:
 
 - **Z-CPU / Z-OVNI hybrid observability** — read-only posture and receipts (CPU load, thermal headroom, and “OVNI-class” visibility metaphors stay **symbolic or dashboard-bound** until separately chartered).
-- **PowerShell operator workflows** — human-run bundles, dry-run defaults, verification rhythm (see [Z_POWERSHELL_OPERATOR_BOOST.md](Z_POWERSHELL_OPERATOR_BOOST.md) when present on the branch).
+- **PowerShell operator workflows** — human-run bundles, dry-run defaults, verification rhythm (see [Z_POWERSHELL_OPERATOR_BOOST.md](Z_POWERSHELL_OPERATOR_BOOST.md) when that doc is merged).
 - **Read-only minibot coordination** — traffic, CAR², cycle observe, deployment readiness rollups as **suggest-only** inputs.
 - **Project registry awareness** — EAII / PC root registries as **read** sources; no satellite bridge writes without manifest and review.
 - **Local backup and indexing roadmap** — **planning and receipts** first; execution stays human-gated and off sacred paths until chartered.
@@ -121,7 +121,7 @@ Optional local AI model or heavy indexing **only after** governance, privacy, an
 | **Z-Traffic** | [Z_TRAFFIC_MINIBOTS.md](Z_TRAFFIC_MINIBOTS.md) — minibots posture; node may refresh traffic reports when operator runs `npm run z:traffic`. |
 | **Deployment Readiness Overseer** | [Z_DEPLOYMENT_READINESS_OVERSEER.md](Z_DEPLOYMENT_READINESS_OVERSEER.md) — read-only rollup; node displays or files only. |
 | **PC Activation Awareness** | [Z_PC_ACTIVATION_AWARENESS.md](Z_PC_ACTIVATION_AWARENESS.md) — activation receipt; visibility, not permission to run verify pipelines automatically. |
-| **PowerShell Operator Boost** | [Z_POWERSHELL_OPERATOR_BOOST.md](Z_POWERSHELL_OPERATOR_BOOST.md) — command bundles for this node (link valid when that doc is present on the branch). |
+| **PowerShell Operator Boost** | [Z_POWERSHELL_OPERATOR_BOOST.md](Z_POWERSHELL_OPERATOR_BOOST.md) — command bundles for this node (link valid when that doc is merged). |
 | **Z-OMNI Visual Workstation Engine** | [Z_OMNI_VISUAL_WORKSTATION_ENGINE_CHARTER.md](Z_OMNI_VISUAL_WORKSTATION_ENGINE_CHARTER.md) — future panel/manifest UX; node can host **browser** sessions to dashboards; generation stays governed. |
 | **Cloudflare Edge Governance** | [Z-CLOUDFLARE-AI-COMMS-PRECAUTIONS.md](Z-CLOUDFLARE-AI-COMMS-PRECAUTIONS.md) — human-mediated edge changes only. |
 | **Z-CYCLE-OBSERVE-1** | [Z_CYCLE_OBSERVE_SYSTEM.md](Z_CYCLE_OBSERVE_SYSTEM.md) — observer writes queue lines; node **does not** auto-execute the queue. |
