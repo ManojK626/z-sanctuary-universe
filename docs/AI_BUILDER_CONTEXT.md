@@ -12,6 +12,10 @@
 6. [Z_SANCTUARY_BUILD_RULES.md](Z_SANCTUARY_BUILD_RULES.md) — hard boundaries for builders.
 7. [Z_OMNI_VISUAL_WORKSTATION_ENGINE_CHARTER.md](Z_OMNI_VISUAL_WORKSTATION_ENGINE_CHARTER.md) — **Z-OMNI-CHARTER-1:** governed visual workstation engine (tokens, panel manifests, phased build); presentation and composition under Turtle Mode — not autonomous execution or hype-as-truth.
 
+## Advisory engine doctrine (human-in-the-loop)
+
+- [Z_MCR_MERGE_CONFLICT_ASSISTANT.md](Z_MCR_MERGE_CONFLICT_ASSISTANT.md) — **Z-MCR-A:** merge conflict *assistant* (classify, suggest, copy-only git text); **not** an auto-merge executor or sacred-move bypass.
+
 ## Canonical control root and satellite bridges (Z-CONTROL-LINK-1)
 
 **Sealed on main.** **`Z_Sanctuary_Universe`** (this hub repository) is the **canonical governance and control root** for Z-Sanctuary. Satellite projects must not fork long doctrine; they carry **one thin bridge file** only: **`docs/Z_SANCTUARY_CONTROL_LINK.md`**, aligned from the hub template at the same path.
@@ -225,4 +229,4 @@ npm run z:car2
 
 ---
 
-_Check main [INDEX.md](INDEX.md) for full documentation registry._
+*Check main [INDEX.md](INDEX.md) for full documentation registry.*

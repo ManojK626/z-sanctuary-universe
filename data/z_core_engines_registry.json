@@ -21,11 +21,11 @@
       "role": "Reflection, archive, and memory trail (bounded; no vault exfil)."
     },
     {
-      "id": "alien_core",
-      "name": "Alien Core",
-      "status": "doctrine_or_partial",
-      "risk": "medium",
-      "role": "Off-angle pattern discovery and unusual signal handling (advisory)."
+      "id": "z_mcr_assistant",
+      "name": "Z-MCR-A Merge Conflict Assistant",
+      "status": "doctrine_only",
+      "risk": "low",
+      "role": "Advisory merge-conflict classification and copy-only playbooks; not an auto-merge executor."
     }
   ]
 }
