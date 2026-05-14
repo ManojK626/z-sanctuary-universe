@@ -11,6 +11,7 @@
 5. `data/z_core_engines_registry.json` — high-level **engine** labels (not full runtime proof).
 6. [Z_SANCTUARY_BUILD_RULES.md](Z_SANCTUARY_BUILD_RULES.md) — hard boundaries for builders.
 7. [Z_OMNI_VISUAL_WORKSTATION_ENGINE_CHARTER.md](Z_OMNI_VISUAL_WORKSTATION_ENGINE_CHARTER.md) — **Z-OMNI-CHARTER-1:** governed visual workstation engine (tokens, panel manifests, phased build); presentation and composition under Turtle Mode — not autonomous execution or hype-as-truth.
+8. [Z_SANCTUARY_TURTLE_MODE_EXPANSION_CHARTER.md](Z_SANCTUARY_TURTLE_MODE_EXPANSION_CHARTER.md) — **May 2026:** Turtle Mode expansion lanes (stability, docs, local operator, UI); slice discipline and what to avoid; not a build manifest for autonomous systems.
 
 ## Canonical control root and satellite bridges (Z-CONTROL-LINK-1)
 
