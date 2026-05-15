@@ -56,11 +56,11 @@ No registry, no vault, no release gates — documentation or mechanical lint onl
 
 Run from **ZSanctuary_Universe** unless your lane documents otherwise.
 
-| Intent                            | npm (truth)                         | VS Code task label (shortcut) |
-| --------------------------------- | ----------------------------------- | ----------------------------- |
-| Close lane — full technical proof | `npm run verify:full:technical`     | **Z: Verify Full Technical**  |
-| Markdown hygiene check            | `npm run lint:md`                   | **Z: Lint Markdown**          |
-| Ecosystem commflow check          | `npm run ecosystem:commflow:verify` | **Z: Commflow Verify**        |
+| Intent | npm (truth) | VS Code task label (shortcut) |
+| --- | --- | --- |
+| Close lane — full technical proof | `npm run verify:full:technical` | **Z: Verify Full Technical** |
+| Markdown hygiene check | `npm run lint:md` | **Z: Lint Markdown** |
+| Ecosystem commflow check | `npm run ecosystem:commflow:verify` | **Z: Commflow Verify** |
 
 Optional deeper docs pass (when lane touches Markdown heavily): `npm run lint:md:fix` — review diff before commit.
 
