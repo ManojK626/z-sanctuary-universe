@@ -26,14 +26,40 @@ Nothing in this table grants **autonomous authority** to a vendor or device fabr
 
 ---
 
-## Standing laws (seal with Z-ADTF)
+## Standing laws — builder spine (six)
+
+Seal these across Cursor, GitHub, Cloudflare, Z-DAIO, Z-ADTF, Samsung surfaces, Mini PC, and **NAS_WAIT**:
 
 ```text
 federation ≠ authority
 topology ≠ ownership
 observe → verify → suggest → human decides
 readiness ≠ deploy
+organization ≠ control
+layered tools ≠ the soul
 ```
+
+---
+
+## Recommended merge order (Turtle queue)
+
+**No new runtime in this lane.** Protect doctrine, merge clean, then live-test.
+
+```text
+MD060 hygiene (if not on main)
+→ Operational Technology Layers (this doc — builder spine)
+→ LinguaCore Phase 0 on main → rebase LinguaCore Phase 1
+→ Mauritius / real device validation (operator — not a git shortcut)
+→ Z-ADTF Phase 0+ only after walks are lived
+```
+
+**Park Z-ADTF** until DeX, hotspot, HDMI dummy continuity, and travel operator receipts are **real** — then encode federation observatory docs from reality, not imagination.
+
+---
+
+## Do not add runtime now
+
+Per Git/Copilot discipline and hub build rules: **do not** expand runtime, networking exposure, Cloudflare production bind, or federation control planes while merging doctrine PRs. Docs and mock UI phases come first; execution stays human-gated.
 
 ---
 
@@ -52,7 +78,14 @@ readiness ≠ deploy
 
 ### Cursor rules (permanent hooks — not the soul)
 
-Existing always-on rules include Turtle Mode, Hierarchy Chief, control root awareness, build master doctrine, GitHub/Cloudflare comms precautions. **Planned consolidation:** `.cursor/rules/z-sanctuary-core.mdc` as a thin **index** to this doc and 14 DRP — without duplicating long doctrine in the rule file.
+Existing always-on rules include Turtle Mode, Hierarchy Chief, control root awareness, build master doctrine, GitHub/Cloudflare comms precautions.
+
+### After this doc is on `main` (planned — not in this PR)
+
+Add **only** `.cursor/rules/z-sanctuary-core.mdc` — **short, index-like, non-duplicative**:
+
+- Pointers to [Z_SWARM_14DRP_UNIVERSAL_AGENT_LAW.md](Z_SWARM_14DRP_UNIVERSAL_AGENT_LAW.md), this doc, Turtle Mode, PR discipline
+- **No** giant duplicated doctrine blocks (prevents AI drift, contradictory guidance, stale forks)
 
 ### Forbidden for Cursor in this ecosystem
 

@@ -23,7 +23,15 @@ npm run verify:md
 ## Acceptance
 
 - Master doc cross-links existing GitHub and Cloudflare governance (no duplicate long policy forks).
+- Six builder laws and recommended Turtle merge order documented.
+- `z-sanctuary-core.mdc` deferred until after merge (short index spec only).
 - `verify:md` exits 0.
+
+## Operator queue after merge
+
+```text
+MD060 → this PR → LinguaCore Phase 0 / rebase Phase 1 → Mauritius device walks → Z-ADTF later
+```
 
 ## Rollback
 

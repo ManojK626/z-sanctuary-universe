@@ -23,11 +23,15 @@ Use layered tools — NOT as the soul of the ecosystem.
 | Z-DAIO | Governance / continuity / orchestration **posture** |
 | Z-ADTF | Federation continuity **observatory** — not control plane |
 
-## Sealed with ADTF
+## Builder spine (six laws)
 
 ```text
 federation ≠ authority
 topology ≠ ownership
+observe → verify → suggest → human decides
+readiness ≠ deploy
+organization ≠ control
+layered tools ≠ the soul
 ```
 
 ## When building
