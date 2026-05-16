@@ -20,7 +20,7 @@
 - [PHASE_Z_OPERATIONAL_TECHNOLOGY_LAYERS_0_GREEN_RECEIPT.md](PHASE_Z_OPERATIONAL_TECHNOLOGY_LAYERS_0_GREEN_RECEIPT.md) — Phase 0 receipt.
 - Cursor hook: [.cursor/rules/z-operational-technology-layers.mdc](../.cursor/rules/z-operational-technology-layers.mdc).
 
-Cross-links: [Z-GITHUB-SANCTUARY-GATE.md](Z-GITHUB-SANCTUARY-GATE.md), [Z-CLOUDFLARE-AI-COMMS-PRECAUTIONS.md](Z-CLOUDFLARE-AI-COMMS-PRECAUTIONS.md). Planned: thin `.cursor/rules/z-sanctuary-core.mdc` index (do not duplicate 14 DRP in rules).
+Cross-links: [Z-GITHUB-SANCTUARY-GATE.md](Z-GITHUB-SANCTUARY-GATE.md), [Z-CLOUDFLARE-AI-COMMS-PRECAUTIONS.md](Z-CLOUDFLARE-AI-COMMS-PRECAUTIONS.md), [Z_FOLLOW_UP_INSTRUCTION_OPERATIONAL_TECHNOLOGY_LAYERS_PR.md](Z_FOLLOW_UP_INSTRUCTION_OPERATIONAL_TECHNOLOGY_LAYERS_PR.md). Consolidated: thin `.cursor/rules/z-sanctuary-core.mdc` index (do not duplicate 14 DRP in rules).
 
 ## Canonical control root and satellite bridges (Z-CONTROL-LINK-1)
 
