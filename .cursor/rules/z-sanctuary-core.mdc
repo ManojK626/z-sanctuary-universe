@@ -1,0 +1,47 @@
+---
+description: Z-Sanctuary Core — thin index of the four always-on builder laws (Hierarchy Chief, Operational Technology Layers, Turtle Mode, 14 DRP) and PR discipline. Read this first when unsure which rule applies.
+globs:
+alwaysApply: true
+---
+
+# Z-Sanctuary Core (builder index)
+
+Pointer-only index. Do not duplicate doctrine here.
+
+---
+
+## 1. Hierarchy Chief — authority order
+
+**→ [docs/Z-HIERARCHY-CHIEF-AND-OBSERVER-VIEW.md](docs/Z-HIERARCHY-CHIEF-AND-OBSERVER-VIEW.md)**
+
+---
+
+## 2. Operational technology layers — tools as tools
+
+**→ [docs/Z_OPERATIONAL_TECHNOLOGY_LAYERS.md](docs/Z_OPERATIONAL_TECHNOLOGY_LAYERS.md)**
+
+---
+
+## 3. Turtle Mode — guarded builder, not autopilot
+
+**→ [.cursor/rules/z-turtle-mode-cursor-agents.mdc](.cursor/rules/z-turtle-mode-cursor-agents.mdc)**
+
+---
+
+## 4. 14 DRP — deep responsibility principles
+
+**→ [docs/Z_IDE_14DRP_AGENT_PROTOCOL.md](docs/Z_IDE_14DRP_AGENT_PROTOCOL.md)**  
+**→ [docs/Z_SWARM_14DRP_UNIVERSAL_AGENT_LAW.md](docs/Z_SWARM_14DRP_UNIVERSAL_AGENT_LAW.md)**
+
+---
+
+## 5. PR discipline — GitHub as sacred vault
+
+**→ [docs/Z-GITHUB-SANCTUARY-GATE.md](docs/Z-GITHUB-SANCTUARY-GATE.md)**
+
+---
+
+## Conflict resolution
+
+Hierarchy Chief authority order wins.
+This file does **not** override AAFRTC, execution enforcer, or `manual_release` gates.
