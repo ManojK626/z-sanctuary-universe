@@ -52,7 +52,7 @@ readiness ≠ deploy
 
 ### Cursor rules (permanent hooks — not the soul)
 
-Existing always-on rules include Turtle Mode, Hierarchy Chief, control root awareness, build master doctrine, GitHub/Cloudflare comms precautions. **Planned consolidation:** `.cursor/rules/z-sanctuary-core.mdc` as a thin **index** to this doc and 14 DRP — without duplicating long doctrine in the rule file.
+Existing always-on rules include Turtle Mode, Hierarchy Chief, control root awareness, build master doctrine, GitHub/Cloudflare comms precautions. **Consolidated:** `.cursor/rules/z-sanctuary-core.mdc` is the thin **index** to this doc, Hierarchy Chief, 14 DRP, Turtle Mode, and PR discipline — without duplicating long doctrine in the rule file.
 
 ### Forbidden for Cursor in this ecosystem
 

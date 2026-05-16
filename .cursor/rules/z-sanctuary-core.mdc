@@ -1,0 +1,72 @@
+---
+description: Z-Sanctuary Core — thin index of the four always-on builder laws (Hierarchy Chief, Operational Technology Layers, Turtle Mode, 14 DRP) and PR discipline. Read this first when unsure which rule applies.
+globs:
+alwaysApply: true
+---
+
+# Z-Sanctuary Core (builder index)
+
+This file is a **pointer only** — no doctrine is duplicated here. Follow the links.
+
+---
+
+## 1. Hierarchy Chief — authority order
+
+When unsure where a change belongs or which layer owns a decision:
+
+**→ [docs/Z-HIERARCHY-CHIEF-AND-OBSERVER-VIEW.md](docs/Z-HIERARCHY-CHIEF-AND-OBSERVER-VIEW.md)**
+
+Authority chain: Z-Super Overseer → Z-HODP → Z-EAII → Folder Manager → Zuno → Master Register.
+Check the chief first; defer to human gate when in doubt.
+
+---
+
+## 2. Operational technology layers — tools as tools
+
+External tools (Cursor, GitHub, Cloudflare, Z-DAIO, Z-ADTF, Samsung, Mini PC, NAS) are **layers**, not the soul of the ecosystem.
+
+**→ [docs/Z_OPERATIONAL_TECHNOLOGY_LAYERS.md](docs/Z_OPERATIONAL_TECHNOLOGY_LAYERS.md)**
+
+```text
+layered tools ≠ the soul
+federation ≠ authority
+topology ≠ ownership
+observe → verify → suggest → human decides
+readiness ≠ deploy
+```
+
+---
+
+## 3. Turtle Mode — guarded builder, not autopilot
+
+Branch prefix `cursor/zsanctuary/`, one domain per PR, no main edits, no auto-deploy, stop and propose when unsure.
+
+**→ [.cursor/rules/z-turtle-mode-cursor-agents.mdc](.cursor/rules/z-turtle-mode-cursor-agents.mdc)**
+
+---
+
+## 4. 14 DRP — deep responsibility principles
+
+14 immutable principles governing IDE agent intent, approval gates, sacred moves, and autonomy progression.
+
+**→ [docs/Z_IDE_14DRP_AGENT_PROTOCOL.md](docs/Z_IDE_14DRP_AGENT_PROTOCOL.md)**  
+**→ [docs/Z_SWARM_14DRP_UNIVERSAL_AGENT_LAW.md](docs/Z_SWARM_14DRP_UNIVERSAL_AGENT_LAW.md)**
+
+---
+
+## 5. PR discipline — GitHub as sacred vault
+
+```text
+Cursor builds → GitHub verifies → Human approves → Sanctuary records
+```
+
+**→ [docs/Z-GITHUB-SANCTUARY-GATE.md](docs/Z-GITHUB-SANCTUARY-GATE.md)**
+
+Protected `main`, branch-per-phase, PR review required — no auto-merge.
+
+---
+
+## Conflict resolution
+
+If two rules conflict, the authority order in **rule 1** (Hierarchy Chief) wins.
+This file does **not** override AAFRTC, execution enforcer, or `manual_release` gates.
