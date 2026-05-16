@@ -95,6 +95,7 @@ Compact entry points for **read-only** hub registries and AMK-facing evidence. F
 | AI Builder briefing | [AI_BUILDER_CONTEXT.md](AI_BUILDER_CONTEXT.md) | â€” |
 | VS-FALLBACK-1 — VS Code Operating Mode Until Cursor Returns | [VS_FALLBACK_1_VSCODE_OPERATING_MODE.md](VS_FALLBACK_1_VSCODE_OPERATING_MODE.md) | â€” |
 | Zuno weekly observation (7-day window) | [ZUNO_WEEKLY_FULL_RUN_AND_OBSERVATION.md](ZUNO_WEEKLY_FULL_RUN_AND_OBSERVATION.md) | See doc (daily + twice-weekly) |
+| AETHERNAV-0 spatial intelligence blueprint | [aethernav/AETHERNAV_MASTER_BLUEPRINT.md](aethernav/AETHERNAV_MASTER_BLUEPRINT.md) | — |
 
 ## Policy JSON (paired)
 

@@ -156,6 +156,7 @@ npm run z:car2
 | [foresight/Z_CIVILIZATION_FORESIGHT_SAFETY_LAW.md](foresight/Z_CIVILIZATION_FORESIGHT_SAFETY_LAW.md) | Z-FUTURE-1 civilizational foresight safety law — scenarios, not prophecy (**doctrine + registry only**). |
 | [foresight/PHASE_Z_FUTURE_1_GREEN_RECEIPT.md](foresight/PHASE_Z_FUTURE_1_GREEN_RECEIPT.md) | Z-FUTURE-1 phase receipt. |
 | [Z_ECOSYSTEM_COHERENCE_ZUNO_SEED.md](Z_ECOSYSTEM_COHERENCE_ZUNO_SEED.md) | Ecosystem coherence seed — Zuno reports + foresight alignment (**no runtime bridge**). |
+| [aethernav/AETHERNAV_MASTER_BLUEPRINT.md](aethernav/AETHERNAV_MASTER_BLUEPRINT.md) | AETHERNAV-0 spatial intelligence blueprint — Phase 0 doctrine only; no runtime, map, AR, location, or biometric data (**docs only**). |
 | [Z_LEGAL_EVIDENCE_CORE.md](Z_LEGAL_EVIDENCE_CORE.md) | Z-LEGAL-OPS-1 proof-first legal evidence layer — AI organizes evidence only (**no legal advice runtime**). |
 | [Z_LAWYER_WORKSTATION_CONTROL_CENTRE.md](Z_LAWYER_WORKSTATION_CONTROL_CENTRE.md) | Future legal review cockpit concept — no endorsement/auth/account authority in Phase 1. |
 | [Z_GUARDIAN_LEGAL_CIRCLE.md](Z_GUARDIAN_LEGAL_CIRCLE.md) | Real-world advisor layer only under written agreement and consent; not runtime authority. |
