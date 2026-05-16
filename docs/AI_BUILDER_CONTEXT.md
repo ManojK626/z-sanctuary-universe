@@ -18,9 +18,9 @@
 
 - [Z_OPERATIONAL_TECHNOLOGY_LAYERS.md](Z_OPERATIONAL_TECHNOLOGY_LAYERS.md) — Cursor, GitHub, Cloudflare, Z-DAIO, Z-ADTF, devices: roles, phased presets, forbidden patterns.
 - [PHASE_Z_OPERATIONAL_TECHNOLOGY_LAYERS_0_GREEN_RECEIPT.md](PHASE_Z_OPERATIONAL_TECHNOLOGY_LAYERS_0_GREEN_RECEIPT.md) — Phase 0 receipt.
-- Cursor hook: [.cursor/rules/z-operational-technology-layers.mdc](../.cursor/rules/z-operational-technology-layers.mdc).
+- Cursor hooks: [.cursor/rules/z-operational-technology-layers.mdc](../.cursor/rules/z-operational-technology-layers.mdc), [.cursor/rules/z-sanctuary-core.mdc](../.cursor/rules/z-sanctuary-core.mdc) (pointer-only builder index).
 
-Cross-links: [Z-GITHUB-SANCTUARY-GATE.md](Z-GITHUB-SANCTUARY-GATE.md), [Z-CLOUDFLARE-AI-COMMS-PRECAUTIONS.md](Z-CLOUDFLARE-AI-COMMS-PRECAUTIONS.md). **Merge queue:** MD060 → this spine → LinguaCore → Mauritius walks → Z-ADTF later. **No new runtime** while doctrine PRs land. Planned after merge: thin `.cursor/rules/z-sanctuary-core.mdc` (pointers only).
+Cross-links: [Z-GITHUB-SANCTUARY-GATE.md](Z-GITHUB-SANCTUARY-GATE.md), [Z-CLOUDFLARE-AI-COMMS-PRECAUTIONS.md](Z-CLOUDFLARE-AI-COMMS-PRECAUTIONS.md). **Merge queue:** MD060 → this spine → LinguaCore → Mauritius walks → Z-ADTF later. **No new runtime** while doctrine PRs land. Cloudflare future-phased only in this lane.
 
 ## Canonical control root and satellite bridges (Z-CONTROL-LINK-1)
 

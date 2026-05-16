@@ -80,12 +80,9 @@ Per Git/Copilot discipline and hub build rules: **do not** expand runtime, netwo
 
 Existing always-on rules include Turtle Mode, Hierarchy Chief, control root awareness, build master doctrine, GitHub/Cloudflare comms precautions.
 
-### After this doc is on `main` (planned — not in this PR)
+### Builder index rule (same PR lane)
 
-Add **only** `.cursor/rules/z-sanctuary-core.mdc` — **short, index-like, non-duplicative**:
-
-- Pointers to [Z_SWARM_14DRP_UNIVERSAL_AGENT_LAW.md](Z_SWARM_14DRP_UNIVERSAL_AGENT_LAW.md), this doc, Turtle Mode, PR discipline
-- **No** giant duplicated doctrine blocks (prevents AI drift, contradictory guidance, stale forks)
+[`.cursor/rules/z-sanctuary-core.mdc`](../.cursor/rules/z-sanctuary-core.mdc) — **short, pointer-only, non-duplicative** index to Hierarchy Chief, this doc, Turtle Mode, 14 DRP, GitHub gate, and `AGENTS.md`. **No** doctrine copy-paste blocks in the rule file.
 
 ### Forbidden for Cursor in this ecosystem
 
