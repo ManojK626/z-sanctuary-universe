@@ -1,0 +1,39 @@
+---
+description: Z-Sanctuary operational technology layers — Cursor, GitHub, Cloudflare, Z-DAIO/ADTF as bounded tools, not ecosystem soul
+alwaysApply: false
+---
+
+# Operational technology layers (hook)
+
+**Canonical doc:** [docs/Z_OPERATIONAL_TECHNOLOGY_LAYERS.md](docs/Z_OPERATIONAL_TECHNOLOGY_LAYERS.md)
+
+## One-line law
+
+```text
+Use layered tools — NOT as the soul of the ecosystem.
+```
+
+## Layer roles (summary)
+
+| Layer | Role |
+| ----- | ---- |
+| Cursor | Builder companion — Turtle branches, docs-first, PRs; no auto-deploy |
+| GitHub | Vault + review + history — human merge on `main` |
+| Cloudflare | Optional future edge — minimal now; see Cloudflare precautions doc |
+| Z-DAIO | Governance / continuity / orchestration **posture** |
+| Z-ADTF | Federation continuity **observatory** — not control plane |
+
+## Sealed with ADTF
+
+```text
+federation ≠ authority
+topology ≠ ownership
+```
+
+## When building
+
+- Prefer linking existing governance docs over inventing parallel policy.
+- Defer Cloudflare production, public NAS, and exposed RDP until chartered and human-gated.
+- Complete real-world Z-ADTF validation loop before federation mock UI expansion.
+
+Full stack doctrine, phased Cloudflare table, and Mauritius learning gate: **Z_OPERATIONAL_TECHNOLOGY_LAYERS.md**.
