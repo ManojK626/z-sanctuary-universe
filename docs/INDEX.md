@@ -92,6 +92,11 @@ Compact entry points for **read-only** hub registries and AMK-facing evidence. F
 | AMK-DASH-MOD-DIST-1 green receipt | [PHASE_AMK_DASH_MOD_DIST_1_GREEN_RECEIPT.md](PHASE_AMK_DASH_MOD_DIST_1_GREEN_RECEIPT.md) | â€” |
 | Z-LOGICAL-BRAINS-HUB-2 green receipt | [PHASE_Z_LOGICAL_BRAINS_HUB_2_GREEN_RECEIPT.md](PHASE_Z_LOGICAL_BRAINS_HUB_2_GREEN_RECEIPT.md) | â€” |
 | Z-CADENCE-1 green receipt | [PHASE_Z_CADENCE_1_GREEN_RECEIPT.md](PHASE_Z_CADENCE_1_GREEN_RECEIPT.md) | â€” |
+| AetherNav Phase 0 master blueprint | [aethernav/AETHERNAV_MASTER_BLUEPRINT.md](aethernav/AETHERNAV_MASTER_BLUEPRINT.md) | `npm run verify:md` |
+| AetherNav Z-Sanctuary integration map | [aethernav/AETHERNAV_Z_SANCTUARY_INTEGRATION_MAP.md](aethernav/AETHERNAV_Z_SANCTUARY_INTEGRATION_MAP.md) | — |
+| AetherNav privacy, safety, 14 DRP | [aethernav/AETHERNAV_PRIVACY_SAFETY_AND_14_DRP_POLICY.md](aethernav/AETHERNAV_PRIVACY_SAFETY_AND_14_DRP_POLICY.md) | — |
+| AetherNav phase ladder | [aethernav/AETHERNAV_PHASE_LADDER.md](aethernav/AETHERNAV_PHASE_LADDER.md) | — |
+| AetherNav Phase 0 green receipt | [aethernav/PHASE_AETHERNAV_0_GREEN_RECEIPT.md](aethernav/PHASE_AETHERNAV_0_GREEN_RECEIPT.md) | — |
 | AI Builder briefing | [AI_BUILDER_CONTEXT.md](AI_BUILDER_CONTEXT.md) | â€” |
 | VS-FALLBACK-1 — VS Code Operating Mode Until Cursor Returns | [VS_FALLBACK_1_VSCODE_OPERATING_MODE.md](VS_FALLBACK_1_VSCODE_OPERATING_MODE.md) | â€” |
 | Zuno weekly observation (7-day window) | [ZUNO_WEEKLY_FULL_RUN_AND_OBSERVATION.md](ZUNO_WEEKLY_FULL_RUN_AND_OBSERVATION.md) | See doc (daily + twice-weekly) |

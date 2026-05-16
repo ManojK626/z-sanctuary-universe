@@ -12,6 +12,18 @@
 6. [Z_SANCTUARY_BUILD_RULES.md](Z_SANCTUARY_BUILD_RULES.md) — hard boundaries for builders.
 7. [Z_OMNI_VISUAL_WORKSTATION_ENGINE_CHARTER.md](Z_OMNI_VISUAL_WORKSTATION_ENGINE_CHARTER.md) — **Z-OMNI-CHARTER-1:** governed visual workstation engine (tokens, panel manifests, phased build); presentation and composition under Turtle Mode — not autonomous execution or hype-as-truth.
 
+## AetherNav (Phase 0 — docs only)
+
+**Lane:** privacy-first spatial intelligence and map guidance — **separate from LinguaCore** (own `docs/aethernav/` pack, not nested in language modules).
+
+- [aethernav/AETHERNAV_MASTER_BLUEPRINT.md](aethernav/AETHERNAV_MASTER_BLUEPRINT.md) — vision, standing laws, hard exclusions
+- [aethernav/AETHERNAV_Z_SANCTUARY_INTEGRATION_MAP.md](aethernav/AETHERNAV_Z_SANCTUARY_INTEGRATION_MAP.md) — future ties to LinguaCore, tourism, accessibility, AT Princess & Blackie, dashboards
+- [aethernav/AETHERNAV_PRIVACY_SAFETY_AND_14_DRP_POLICY.md](aethernav/AETHERNAV_PRIVACY_SAFETY_AND_14_DRP_POLICY.md) — 14 DRP + consent/location rules
+- [aethernav/AETHERNAV_PHASE_LADDER.md](aethernav/AETHERNAV_PHASE_LADDER.md) — phases 0–5 (mock → local graph → vault → optional AR → enterprise)
+- [aethernav/PHASE_AETHERNAV_0_GREEN_RECEIPT.md](aethernav/PHASE_AETHERNAV_0_GREEN_RECEIPT.md) — Phase 0 receipt
+
+**Standing law:** navigation assistance is not emergency authority; mock readiness ≠ production approval; user consent required for location or personal data. **No** runtime, APIs, map processing, AR, location tracking, biometrics, or deployment in Phase 0.
+
 ## Canonical control root and satellite bridges (Z-CONTROL-LINK-1)
 
 **Sealed on main.** **`Z_Sanctuary_Universe`** (this hub repository) is the **canonical governance and control root** for Z-Sanctuary. Satellite projects must not fork long doctrine; they carry **one thin bridge file** only: **`docs/Z_SANCTUARY_CONTROL_LINK.md`**, aligned from the hub template at the same path.
