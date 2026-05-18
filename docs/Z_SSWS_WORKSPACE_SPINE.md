@@ -24,7 +24,7 @@ npm run z:ssws:requirements
 ## Ladder (future)
 
 | Phase | Capability |
-| -------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| ----------- | ------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | SSWS-LINK-1 | Registry + validator + AMK indicator (this phase) |
 | SSWS-DOOR-1 | AMK Workspace Doorway — local folder/workspace opener + `amk:doorway:status` (see [AMK_WORKSPACE_DOORWAY.md](AMK_WORKSPACE_DOORWAY.md)) |
 | SSWS-LAB-1 | Main Cursor cockpit + Z_Lab workspace control — `npm run amk:workspace:profiles` ([AMK_CURSOR_WORKSPACE_STRATEGY.md](AMK_CURSOR_WORKSPACE_STRATEGY.md)) |

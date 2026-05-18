@@ -3,7 +3,7 @@
 ## Registry Identity
 
 | Field | Value |
-| --------------------- | ---------------------------------- |
+| --- | --- |
 | **ID** | `z-predictive-intelligence-phase5` |
 | **Category** | trust_audit_governance |
 | **Registry status** | implemented |

@@ -7,7 +7,7 @@
 ## Responsibilities
 
 | Guardian | Emphasis |
-| -------- | -------------------------------------------------------------------- |
+| --- | --- |
 | SKK | Rules, verify chains, STOP_GATE posture, structural “no” when unsafe |
 | RKPK | Rhythm, rest, kindness under load, sustainable pace |
 

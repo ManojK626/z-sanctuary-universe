@@ -3,7 +3,7 @@
 ## Registry Identity
 
 | Field | Value |
-| --------------------- | ----------------------- |
+| --- | --- |
 | **ID** | `z-zecce-confirmations` |
 | **Category** | trust_audit_governance |
 | **Registry status** | doctrine_only |

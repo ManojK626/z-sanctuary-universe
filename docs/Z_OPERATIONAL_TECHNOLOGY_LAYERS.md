@@ -12,7 +12,7 @@ Use layered tools — NOT as the soul of the ecosystem.
 ```
 
 | Layer | Role in one line |
-| --------------------- | ------------------------------------------------------------------------- |
+| ----- | ---------------- |
 | **Cursor AI** | Builder / operator companion (docs, mocks, PR-sized work) |
 | **GitHub** | Vault + review gate + backup history |
 | **Cloudflare** | Future edge / runtime shield (optional, phased) |
@@ -130,7 +130,7 @@ Cursor builds → GitHub verifies → Human approves → Sanctuary records
 ### Phased preset (future base)
 
 | Phase | Use | Not yet |
-| -------------- | ------------------------------------------------------------------ | ------------------------------------------------------ |
+| ----- | --- | ------- |
 | **Now** | Doctrine + `npm run comms:cloudflare-ai` manifest sync | Complex edge orchestration, exposed tunnels everywhere |
 | **Later** | **Pages** — static Z-DAIO demos, governance docs, topology mockups | NAS or RDP on public internet |
 | **Later** | **Zero Trust** — access posture review (tunnel-first thinking) | “Always-open federation” |
@@ -165,7 +165,7 @@ When Z-ADTF Phase 0 is on `main`: [z-adtf/Z_ADTF_MASTER_FRAMEWORK.md](z-adtf/Z_A
 ## 6. Device and travel layer (operator-sovereign)
 
 | Device | Declared role |
-| -------------- | -------------------------------------- |
+| ------ | ------------- |
 | Phone | Emergency / operator |
 | Tablet | Main cockpit |
 | Mini PC | Continuity core |
@@ -187,7 +187,7 @@ Not “another remote desktop tool” or “another automation platform.”
 ## Related hub docs
 
 | Topic | Doc |
-| ----------------- | -------------------------------------------------------------------------------------------------------------------- |
+| ----- | --- |
 | GitHub gate | [Z-GITHUB-SANCTUARY-GATE.md](Z-GITHUB-SANCTUARY-GATE.md) |
 | GitHub + AI comms | [Z-GITHUB-AI-COMMS-PRECAUTIONS.md](Z-GITHUB-AI-COMMS-PRECAUTIONS.md) |
 | Cloudflare | [Z-CLOUDFLARE-AI-COMMS-PRECAUTIONS.md](Z-CLOUDFLARE-AI-COMMS-PRECAUTIONS.md) |

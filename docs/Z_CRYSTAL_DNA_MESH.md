@@ -5,7 +5,7 @@
 ## Metaphor (read-only spine)
 
 | Concept | Meaning |
-| ------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| --- | --- |
 | **Crystal** | The **whole** sanctuary posture: integrity intent, operator law, and the graph of critical shards. |
 | **DNA card** | One **typed identity record** for a shard: where it lives, who owns it, what it depends on, how it may be rebuilt **in principle**, and recovery colour. |
 | **Shard** | A **unit of continuity**: a file, module entry, registry JSON, generated report, or **project bridge** (for example control-link or doorway policy). Shards are **named**, not silently mutated. |
@@ -15,7 +15,7 @@ The mesh is a **dependency graph over shards** — useful for compare/detect/rep
 ## Shard types (examples)
 
 | `type` | Typical shard |
-| ----------------- | ------------------------------------------------------------------- |
+| --- | --- |
 | `registry` | Machine-readable truth in `data/*.json` |
 | `script` | Verifier or sync tool under `scripts/` |
 | `report` | Derived evidence under `data/reports/` |
@@ -28,7 +28,7 @@ The mesh is a **dependency graph over shards** — useful for compare/detect/rep
 Each shard in `data/z_crystal_dna_asset_manifest.json` uses:
 
 | Field | Role |
-| --------------- | --------------------------------------------------------------------------------------------------------- |
+| --- | --- |
 | `id` | Stable shard key. |
 | `type` | Shard class (see table above or manifest enum). |
 | `path` | Hub-relative or documented path string (identity; not a write target by this phase). |
@@ -42,7 +42,7 @@ Each shard in `data/z_crystal_dna_asset_manifest.json` uses:
 ## Recovery states (colours)
 
 | Status | Meaning |
-| ------------ | ------------------------------------------------------------------------ |
+| --- | --- |
 | `GREEN` | Expected healthy for current phase; compare OK. |
 | `YELLOW` | Drift or freshness concern; review before treating as authoritative. |
 | `BLUE` | Hold / AMK or overseer decision before structural change. |
@@ -75,7 +75,7 @@ When Synology or NAS volumes are **mounted and verified**, DNA may describe shar
 ## Relations to other phases (one spine, many lenses)
 
 | Neighbour | How DNA mesh relates |
-| ------------------------- | ------------------------------------------------------------------------------------------- |
+| --- | --- |
 | **Z-SSWS** | Workspace and cockpit truth are shards; SSWS boot remains separate and human-gated. |
 | **Z-Lab** | Labs capsule appears as `owner_layer` reference shards; no silent cross-repo repair. |
 | **Z-DOORWAY** | Doorway registries and telemetry are shards; opening a workspace is not rebuilding DNA. |

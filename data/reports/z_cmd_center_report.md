@@ -15,7 +15,7 @@ All checks pass - command center ready
 ## Root Status
 
 | Root | Path | Exists | Notes |
-| -------- | ----------------------------------------------------------------- | ------ | ---------------------- |
+| ------ | ------ | -------- | ------- |
 | Main Hub | C:\Cursor Projects Organiser\Z_Sanctuary_Universe | ✅ | Primary project root |
 | Labs | C:\Cursor Projects Organiser\Z_Sanctuary_Universe\ZSanctuary_Labs | ✅ | Experimental workspace |
 | Archive | C:\Users\manoj\.cursor\projects | N/A | Avoid as build root |
@@ -23,7 +23,7 @@ All checks pass - command center ready
 ## IDE Commands
 
 | Command | Available | Purpose |
-| ------- | --------- | -------------- |
+| --------- | ----------- | --------- |
 | code | ✅ | VS Code CLI |
 | cursor | ✅ | Cursor IDE CLI |
 

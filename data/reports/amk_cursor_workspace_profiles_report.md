@@ -12,7 +12,7 @@
 ## Deep work / doorway cross-checks
 
 | id | kind | signal | notes |
-| ------------------ | --------------- | ------ | ------------------------------ |
+| -- | ---- | ------ | ----- |
 | z_lab | workspace_file | GREEN | — |
 | franed_deep_work | doorway_project | GREEN | — |
 | lumina_deep_work | doorway_project | YELLOW | Optional doorway path missing. |

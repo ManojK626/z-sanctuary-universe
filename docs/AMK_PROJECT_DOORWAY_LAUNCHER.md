@@ -7,7 +7,7 @@
 ## Registry (`data/amk_project_doorway_registry.json`)
 
 | Field | Meaning |
-| -------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| --- | --- |
 | `id` | Stable key for the row. |
 | `name` | Human label. |
 | `path` | Primary folder target (declaration-only NAS paths skip open until mount exists). |
@@ -22,7 +22,7 @@
 ### Status meanings
 
 | Status | Launcher behavior |
-| ---------- | ------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| --- | --- |
 | `GREEN` | Safe to open per `allowed_action`. |
 | `YELLOW` | Eligible in `review` when tagged; shows a **review warning** before open. **Not** included in `all_safe` or `deployment_ready` until status is `GREEN`. |
 | `BLUE` | Hold / AMK decision; **no** IDE open unless posture explicitly allows explorer-only (rare). |
@@ -32,7 +32,7 @@
 ## PowerShell launcher (`scripts/amk_open_project_doors.ps1`)
 
 | Flag | Behavior |
-| ------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| --- | --- |
 | `-Group deployment_ready` | Rows tagged `deployment_ready` with **GREEN** status, `deployment_posture` ≠ `blocked`, not `NAS_WAIT`, and **`nas_required` paths must exist** before they appear here (respects Synology HOLD). |
 | `-Group review` | Rows tagged `review` for awareness (GREEN/YELLOW may open; BLUE holds; RED blocked; NAS skips if missing). |
 | `-Group all_safe` | **GREEN** rows tagged `all_safe`. Default group when omitted. |

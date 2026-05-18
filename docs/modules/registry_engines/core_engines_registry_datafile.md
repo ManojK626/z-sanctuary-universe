@@ -3,7 +3,7 @@
 ## Registry Identity
 
 | Field | Value |
-| --------------------- | -------------------------------- |
+| --- | --- |
 | **ID** | `core_engines_registry_datafile` |
 | **Category** | Registry / engines |
 | **Registry status** | implemented |

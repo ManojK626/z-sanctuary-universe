@@ -3,7 +3,7 @@
 ## Registry Identity
 
 | Field | Value |
-| --------------------- | ----------------------------- |
+| --- | --- |
 | **ID** | `public_trust_portal_lottery` |
 | **Category** | Trust / products |
 | **Registry status** | implemented |

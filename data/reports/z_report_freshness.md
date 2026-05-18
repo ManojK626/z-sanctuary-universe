@@ -4,7 +4,6 @@ Generated: 2026-05-02T18:16:34.229Z
 Status: HOLD
 
 ## Critical (24h SLA)
-
 - [ ] z_hygiene_status.json: 160.34h old
 - [x] z_autorun_audit.json: 0h old
 - [x] z_pending_audit.json: 0h old
@@ -15,7 +14,6 @@ Status: HOLD
 - [x] z_extension_guard.json: 0h old
 
 ## Weekly Stale JSON Reports (> 7d)
-
 - z_procurement_status.json: 1916.67h old
 - z_final_status.json: 1871.78h old
 - z_legal_readiness_delta.json: 1847.68h old

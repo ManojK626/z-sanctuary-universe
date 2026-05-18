@@ -3,7 +3,7 @@
 ## Registry Identity
 
 | Field | Value |
-| --------------------- | ---------------- |
+| --- | --- |
 | **ID** | `mdgev_grid` |
 | **Category** | Dashboard / HUDP |
 | **Registry status** | implemented |

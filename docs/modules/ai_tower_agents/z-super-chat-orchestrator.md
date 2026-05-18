@@ -3,7 +3,7 @@
 ## Registry Identity
 
 | Field | Value |
-| --------------------- | --------------------------- |
+| --- | --- |
 | **ID** | `z-super-chat-orchestrator` |
 | **Category** | ai_tower_agents |
 | **Registry status** | implemented |

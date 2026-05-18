@@ -208,7 +208,7 @@ No shadow work. No off-record changes.
 ## Signal Logic
 
 | Signal | Meaning | Action | Example |
-| ---------- | ----------------------------------------------- | ------------------------- | ----------------------------------------------------------------- |
+| -------- | --------- | -------- | --------- |
 | **GREEN** | Session compliant, no conflicts | Continue work | Reading reports, writing safe handoff |
 | **YELLOW** | Advisory (missing optional data) | Quiet notice to operator | Handoff not yet complete for low-risk edit |
 | **BLUE** | AMK decision required | Notify AMK-Goku dashboard | Sacred move detected |
@@ -251,7 +251,7 @@ No shadow work. No off-record changes.
 Each workspace is isolated:
 
 | Workspace | Assigned Project | Max Autonomy | Allowed | Forbidden |
-| ----------------- | ----------------- | ------------ | ----------------------------- | --------------------------------- |
+| ----------- | ------------------ | -------------- | --------- | ----------- |
 | Main Super Saiyan | z_sanctuary_core | L1 | Read dashboards, verify gates | Edit core files, deploy |
 | Franed Shadow | Franed AI | L2 | Edit docs/UI | Deploy, secrets, other projects |
 | Lumina Shadow | Lumina | L2 | Edit docs/code isolated | Deploy, cross-workspace edits |
@@ -387,7 +387,7 @@ This script validates:
 ## Future Roadmap
 
 | Phase | What it adds | Risk |
-| ----------- | ---------------------------------------- | ------ |
+| ------- | ------------- | ------ |
 | **14DRP-1** | Registry + validation + approval ladder | Low ✅ |
 | **14DRP-2** | Handoff generator + dashboard signals | Low |
 | **14DRP-3** | Agent role profiles + workspace profiles | Low |

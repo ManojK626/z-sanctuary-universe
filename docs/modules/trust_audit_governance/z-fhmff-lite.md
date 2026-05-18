@@ -3,7 +3,7 @@
 ## Registry Identity
 
 | Field | Value |
-| --------------------- | ---------------------- |
+| --- | --- |
 | **ID** | `z-fhmff-lite` |
 | **Category** | trust_audit_governance |
 | **Registry status** | doctrine_only |

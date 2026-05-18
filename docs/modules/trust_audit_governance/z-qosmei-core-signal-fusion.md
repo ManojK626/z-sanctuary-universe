@@ -3,7 +3,7 @@
 ## Registry Identity
 
 | Field | Value |
-| --------------------- | ----------------------------- |
+| --- | --- |
 | **ID** | `z-qosmei-core-signal-fusion` |
 | **Category** | trust_audit_governance |
 | **Registry status** | implemented |

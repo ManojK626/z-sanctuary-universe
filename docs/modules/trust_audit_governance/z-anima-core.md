@@ -3,7 +3,7 @@
 ## Registry Identity
 
 | Field | Value |
-| --------------------- | ---------------------- |
+| --- | --- |
 | **ID** | `z-anima-core` |
 | **Category** | trust_audit_governance |
 | **Registry status** | planned_stub |

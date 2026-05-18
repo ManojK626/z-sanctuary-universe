@@ -87,6 +87,7 @@ Each layer sealed with green receipts. All gates passing. System aware of its ow
 **Key Components:**
 
 - **14 DRP Laws** (immutable):
+
   1. Repo root (canonical source of truth)
   2. Read latest state (no stale decisions)
   3. Declare intent (handoff journal)
@@ -133,6 +134,7 @@ Each layer sealed with green receipts. All gates passing. System aware of its ow
 **Key Components:**
 
 - **5 Monitored Gates:**
+
   - z:ide:fusion (2-min interval) — Shared coordination spine
   - z:ide:14drp (2-min interval) — Agent protocol compliance
   - verify:md (10-min interval) — Documentation consistency
@@ -140,6 +142,7 @@ Each layer sealed with green receipts. All gates passing. System aware of its ow
   - z:car2 (60-min interval) — Archive integrity
 
 - **3 Verification Modes:**
+
   - **quick_check** (2-min): 2 gates (fusion + 14drp)
   - **full_check** (10-min): all 5 gates
   - **compliance_audit** (60-min): 3 gates (docs, routing, archive)
@@ -147,11 +150,13 @@ Each layer sealed with green receipts. All gates passing. System aware of its ow
 - **Signal Aggregation:** Combines all signals into single overall_signal
 - **Active Session Tracking:** Who's working where right now
 - **Real-Time Reporting:**
+
   - JSON (machine-readable status)
   - Markdown (human-readable dashboard)
   - Timeline (append-only JSONL audit trail)
 
 - **Alert System:**
+
   - RED: Stop & report (critical failure)
   - BLUE: Notify AMK-Goku (policy violation)
   - YELLOW: Monitor closely (degradation)
@@ -270,7 +275,7 @@ All phases maintain:
 ## Critical Success Metrics
 
 | Metric | Target | Current | Status |
-| ----------------------- | ------- | ---------- | ------ |
+| --- | --- | --- | --- |
 | All gates passing | 5/5 | 5/5 | ✅ |
 | Overall signal | GREEN | GREEN | ✅ |
 | Monitor uptime | 24/7 | Running | ✅ |

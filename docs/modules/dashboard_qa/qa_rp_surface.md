@@ -3,7 +3,7 @@
 ## Registry Identity
 
 | Field | Value |
-| --------------------- | --------------- |
+| --- | --- |
 | **ID** | `qa_rp_surface` |
 | **Category** | Dashboard / QA |
 | **Registry status** | implemented |

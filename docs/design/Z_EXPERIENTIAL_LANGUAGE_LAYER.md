@@ -2,7 +2,7 @@
 
 **Status:** Doctrine and architecture text only — no runtime coupling, no shared adapter library, no auto profile sync, no provider calls, no cross-project memory, no billing/entitlement enforcement, no deployment authority.
 
-**Scope:** Defines a **shared experiential vocabulary** across Z-\* projects so they can feel coherent to the user without merging runtimes, identities, or entitlements.
+**Scope:** Defines a **shared experiential vocabulary** across Z-* projects so they can feel coherent to the user without merging runtimes, identities, or entitlements.
 
 **Citation key (forever):** `Z_EXL_1`
 
@@ -19,7 +19,7 @@ If Z-EXL conflicts with Z-VIL or Z-UIL on accessibility or DRP non-harm, **acces
 ## 1. Purpose
 
 | Goal | Outcome |
-| --------------------- | ------------------------------------------------------------------------------------------------------------------------------- |
+| --- | --- |
 | One experiential feel | Operators and users recognise "Z-Sanctuary family" rhythm, sensory comfort, and emotional posture across distinct projects |
 | No runtime coupling | Each project enforces the layer in its own runtime against a shared vocabulary — no shared adapter library, no shared event bus |
 | Entitlement boundary | **Shared experiential language NEVER implies shared authority, shared identity, or shared paid access** |
@@ -42,7 +42,7 @@ If Z-EXL conflicts with Z-VIL or Z-UIL on accessibility or DRP non-harm, **acces
 - A behaviour-modification engine — projects are free to ignore layers they don't apply.
 
 > **Hard rule (entitlement boundary):**
-> _Shared experiential language never implies shared authority, shared identity, or shared paid access._
+> *Shared experiential language never implies shared authority, shared identity, or shared paid access.*
 > Any code that reads a Z-EXL profile MUST NOT, in the same operation, traverse project trust boundaries (no cross-origin reads, no cross-project IPC, no shared session tokens).
 
 ---
@@ -50,7 +50,7 @@ If Z-EXL conflicts with Z-VIL or Z-UIL on accessibility or DRP non-harm, **acces
 ## 3. The eight layers (v0)
 
 | # | Layer | Schema field | Allowed values (v0) | Notes |
-| --- | -------------------- | ---------------------- | --------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------ |
+| --- | --- | --- | --- | --- |
 | 1 | Sensory mode | `sensory_mode` | `low_light` · `photophobia_friendly` · `soft` · `balanced` · `cinematic` | Brightness, saturation, glare posture |
 | 2 | Rhythm language | `rhythm_language` | `calm` · `reflective` · `active` · `playful` · `operational` | Pacing / tempo language for content + interaction |
 | 3 | Motion intensity | `motion_intensity` | `still` · `low` · `moderate` · `high` | Bounded by `prefers-reduced-motion`; `high` must remain smooth, never strobing |
@@ -81,7 +81,7 @@ In line with the Z-Sanctuary sensory + safety doctrine:
 `accessibility_invariants[]` is a free-form list of declarative tokens. The hub recommends the following baseline; projects MAY add their own, prefixed with `x_<project>_`:
 
 | Token | Meaning |
-| ------------------------------ | -------------------------------------------------------------- |
+| --- | --- |
 | `respect_reduced_motion` | Honours OS / app `prefers-reduced-motion` |
 | `respect_reduced_transparency` | Honours `prefers-reduced-transparency` |
 | `no_full_field_flashing` | No animation exceeds WCAG 2.3.1 flash thresholds |
@@ -98,7 +98,7 @@ A profile claiming Z-EXL-1 conformance at "draft readiness" SHOULD assert the fi
 ## 5. Adaptation authority semantics
 
 | Tier | Who can apply | Auditing |
-| -------------------- | -------------------------------------------------------------- | ------------------------------------------------------------- |
+| --- | --- | --- |
 | `advisory_only` | The host page may **suggest** a change, never enforce | Optional |
 | `user_confirmed` | The user clicks / confirms before any change is applied | Recommended |
 | `operator_confirmed` | An operator (admin) flips it; counts as a Guardian-gated event | **Required** — audit entry in the project's own audit channel |
@@ -112,7 +112,7 @@ A project's `adaptation_authority` value is the **maximum** tier it permits; low
 `memory_posture` is bounded by the project's own privacy and entitlement boundary. The hub does not redefine privacy law per project — it simply requires that:
 
 | memory_posture | Constraint |
-| ---------------------------- | --------------------------------------------------------------------------------------------------------------- |
+| --- | --- |
 | `none` | Nothing persisted, ever |
 | `none_or_local_only` | Default v0 floor; nothing leaves the device |
 | `session_only` | In-tab / in-session only; cleared on close |
@@ -129,7 +129,7 @@ A project's `adaptation_authority` value is the **maximum** tier it permits; low
 Identity here is the **project label** used inside its profile. It is NOT a user identifier and never participates in authentication.
 
 | Project | EXL `project_id` | Status (v0) |
-| ------------------------------------- | ---------------- | --------------------------------------------------------------------- |
+| --- | --- | --- |
 | Z-Saiyan Lumina (Z-Sanctuary Browser) | `lumina` | reference implementation present (Lumina repo) |
 | Z-QUESTRA | `questra` | reserved — profile to be drafted by Questra maintainers |
 | Z-Legal / Lawyer UX | `lawyer_ux` | reserved |
@@ -160,7 +160,7 @@ A project becomes Z-EXL-1 conformant when:
 ### 8.2 What EXL conformance does NOT grant
 
 | Domain | Separation mechanism (unchanged by Z-EXL-1) |
-| ---------------------- | ----------------------------------------------------------------------------------- |
+| --- | --- |
 | Pricing / SKU | Explicit price pages, SKU tables, entitlement registries |
 | Premium AI usage | Capability flags + human-readable "not included elsewhere" clauses |
 | Private vault | Never reachable from unrelated project skins without SSO + policy |
@@ -214,7 +214,7 @@ A reference example lives at `data/examples/z_exl_profile.example.json`.
 ## 11. Verification and change control
 
 | Check | Intent |
-| ---------------------------------------------------------------- | ----------------------------------------------------------- |
+| --- | --- |
 | `data/z_experiential_language_schema.json` parses as JSON Schema | Ground truth for all conformance |
 | `data/examples/z_exl_profile.example.json` validates | Reference profile must always pass |
 | `npm run verify:md` (when added) | Markdown hygiene when this file changes |
@@ -245,7 +245,7 @@ The Lumina adapter is **Lumina-only**. Other projects build their own equivalent
 
 Explicitly out of scope for v0 (do not infer from this doctrine):
 
-- ❌ Live Lumina adapter wiring beyond data-\* hooks
+- ❌ Live Lumina adapter wiring beyond data-* hooks
 - ❌ Provider calls (no LLM calls, no remote AI)
 - ❌ Cross-project memory (memory_posture stays per-project)
 - ❌ Auto profile sync between projects

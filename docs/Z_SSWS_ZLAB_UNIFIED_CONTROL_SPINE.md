@@ -13,7 +13,7 @@
 Z-SSWS is the **primary cockpit** for operator alignment:
 
 | Area | Definition |
-| --------------------- | ------------------------------------------------------------------------------------------------------------------------------ |
+| --- | --- |
 | Main cockpit | Dashboards, AMK main control surfaces, and controlled navigation into projects (visibility and doorways, not silent execution) |
 | Project registry | Alignment with canonical manifests and PC-root / EAII-facing registry truth where the hub owns the pointer |
 | Readiness routing | Status-driven behavior: see status table below; doorways and tasks respect YELLOW warnings and BLUE holds |
@@ -29,7 +29,7 @@ Z-SSWS **coordinates**; it does **not** override Hierarchy Chief governance or h
 Z-Lab sits **behind** the spine as **observation and readiness**:
 
 | Area | Definition |
-| ------------------------ | --------------------------------------------------------------------------------------------------------- |
+| --- | --- |
 | Background analysis | Aggregate checks, structure/registry validation, and report-style scans (as implemented in hub scripts) |
 | Dry-run checks | Verifiers and lint-style passes that emit results without changing production or remote secrets |
 | Report generation | JSON/Markdown artifacts under `data/reports/` (or equivalent) for operator review |
@@ -43,7 +43,7 @@ Z-Lab **informs**; it does **not** silently mutate deployment or vault posture.
 ## Status values (shared vocabulary)
 
 | Status | Meaning |
-| -------- | ----------------------------------------------------------------------------- |
+| --- | --- |
 | GREEN | Safe to proceed with the described local or supervised action |
 | YELLOW | Proceed only with explicit review; warnings are intentional |
 | BLUE | Hold: AMK / governance decision before expanding scope |
@@ -57,7 +57,7 @@ Z-Lab **informs**; it does **not** silently mutate deployment or vault posture.
 The following are **out of band** for spine automation and **must not** be triggered by Z-SSWS or Z-Lab machinery without explicit human charter and gates:
 
 | Forbidden | Rationale |
-| ------------------ | ----------------------------------------------------- |
+| --- | --- |
 | Deploy | Sacred move; separate release and overseer discipline |
 | Bind domain | External surface coupling |
 | Write secrets | Vault and policy violation risk |

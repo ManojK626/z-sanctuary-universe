@@ -9,7 +9,7 @@ Not in scope: live runtime adapter wiring, provider calls, cross-project memory,
 ## Delivered
 
 | Item | Path |
-| ------------------------- | --------------------------------------------------- |
+| --- | --- |
 | Canonical doctrine | `docs/design/Z_EXPERIENTIAL_LANGUAGE_LAYER.md` |
 | Canonical JSON schema | `data/z_experiential_language_schema.json` |
 | Reference example profile | `data/examples/z_exl_profile.example.json` |
@@ -20,7 +20,7 @@ Not in scope: live runtime adapter wiring, provider calls, cross-project memory,
 Z-Saiyan Lumina (Z-Sanctuary Browser) ships a **Lumina-only** reference implementation that cites this hub doctrine:
 
 | Lumina artefact | Path inside Z-Sanctuary Browser |
-| ------------------------- | -------------------------------------------------------- |
+| --- | --- |
 | Doctrine pointer | `docs/Z-EXL-1.md` (cites this hub doctrine as canonical) |
 | Schema mirror (read-only) | `docs/z-exl-1.schema.json` (clearly marked as a mirror) |
 | Lumina profile JSON | `docs/lumina-sanctuary-v0.profile.json` |
@@ -48,7 +48,7 @@ npm run verify:all
 ## Manual checklist
 
 | Check | Pass |
-| ------------------------------------------------------------------------------- | ---- |
+| --- | --- |
 | Doctrine cites Z-UIL and Z-VIL siblings | ☐ |
 | Schema enums mirror the doctrine layer values exactly | ☐ |
 | Example profile validates against the schema (manual or CI) | ☐ |
@@ -60,7 +60,7 @@ npm run verify:all
 ## Operator sign-off
 
 | Role | Name | Date |
-| -------- | ---- | ---- |
+| --- | --- | --- |
 | Operator | | |
 
 ## Rollback

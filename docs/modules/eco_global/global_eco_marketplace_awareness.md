@@ -3,7 +3,7 @@
 ## Registry Identity
 
 | Field | Value |
-| --------------------- | ---------------------------------- |
+| --- | --- |
 | **ID** | `global_eco_marketplace_awareness` |
 | **Category** | eco_global |
 | **Registry status** | doctrine_only |

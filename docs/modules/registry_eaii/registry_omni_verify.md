@@ -3,7 +3,7 @@
 ## Registry Identity
 
 | Field | Value |
-| --------------------- | ---------------------- |
+| --- | --- |
 | **ID** | `registry_omni_verify` |
 | **Category** | Registry / EAII |
 | **Registry status** | implemented |

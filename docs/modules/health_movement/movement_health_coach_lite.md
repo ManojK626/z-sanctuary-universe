@@ -3,7 +3,7 @@
 ## Registry Identity
 
 | Field | Value |
-| --------------------- | ---------------------------- |
+| --- | --- |
 | **ID** | `movement_health_coach_lite` |
 | **Category** | health_movement |
 | **Registry status** | safety_hold |

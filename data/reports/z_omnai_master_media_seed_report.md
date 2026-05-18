@@ -3,7 +3,7 @@
 **Generated:** 2026-05-04T12:20:06.888Z
 
 | Field | Value |
-| -------------- | -------------------------------------- |
+| ---- | ---- |
 | Overall signal | **GREEN** |
 | Seed id | z_omnai_master_media_concept_seed_v1 |
 | Source bundle | z_omnai_movie_trailer_review_bundle_v1 |
@@ -36,4 +36,4 @@
 
 ---
 
-_Z-OMNAI-BUILD-2A — seed only; no generated media or public lane._
+*Z-OMNAI-BUILD-2A — seed only; no generated media or public lane.*

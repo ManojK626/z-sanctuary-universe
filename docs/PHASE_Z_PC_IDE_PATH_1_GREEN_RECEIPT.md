@@ -33,4 +33,4 @@ npm run z:car2
 
 ## Rollback
 
-Remove `z:pc:ide-path` script and rollback files touched in this phase (script, docs, doorway registry snippet, indicators row, INDEX/AI*BUILDER_CONTEXT/DOORWAY references), delete generated reports under `data/reports/z_pc_ide_path*\*`, then rerun `npm run verify:md`and`npm run dashboard:registry-verify`.
+Remove `z:pc:ide-path` script and rollback files touched in this phase (script, docs, doorway registry snippet, indicators row, INDEX/AI_BUILDER_CONTEXT/DOORWAY references), delete generated reports under `data/reports/z_pc_ide_path_*`, then rerun `npm run verify:md` and `npm run dashboard:registry-verify`.

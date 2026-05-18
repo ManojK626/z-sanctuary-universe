@@ -3,7 +3,7 @@
 ## Registry Identity
 
 | Field | Value |
-| --------------------- | ------------------- |
+| --- | --- |
 | **ID** | `zen_scheduler_hub` |
 | **Category** | planning_wellness |
 | **Registry status** | planned_stub |

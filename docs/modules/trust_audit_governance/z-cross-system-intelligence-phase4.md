@@ -3,7 +3,7 @@
 ## Registry Identity
 
 | Field | Value |
-| --------------------- | ------------------------------------ |
+| --- | --- |
 | **ID** | `z-cross-system-intelligence-phase4` |
 | **Category** | trust_audit_governance |
 | **Registry status** | implemented |

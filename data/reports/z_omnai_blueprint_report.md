@@ -3,7 +3,7 @@
 **Generated:** 2026-05-04T12:01:38.785Z
 
 | Field | Value |
-| ---------------------- | ------------------------------------------------ |
+| ---- | ---- |
 | Overall Z-OMNAI signal | **BLUE** |
 | Registry | data/z_omnai_blueprint_translation_registry.json |
 | Templates | data/z_omnai_creative_pipeline_templates.json |
@@ -11,7 +11,7 @@
 ## Per-template signals
 
 | pipeline_id | signal |
-| ----------------------------------- | ------ |
+| ---- | ---- |
 | z_omnai_movie_trailer_v1 | GREEN |
 | z_omnai_marketing_campaign_v1 | BLUE |
 | z_omnai_product_landing_page_v1 | BLUE |
@@ -35,4 +35,4 @@
 
 ---
 
-_Z-OMNAI-1 — docs + JSON + validator only._
+*Z-OMNAI-1 — docs + JSON + validator only.*

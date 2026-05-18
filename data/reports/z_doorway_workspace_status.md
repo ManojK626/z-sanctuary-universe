@@ -22,7 +22,7 @@
 ## Entries
 
 | id | enabled | status | type | path_exists | open_eligible | signal | first issue |
-| ------------------------- | ------- | -------- | --------- | ----------- | ------------- | -------- | ------------------------------------------------- |
+| --- | --- | --- | --- | --- | --- | --- | --- |
 | ssws_hub_workspace | true | GREEN | workspace | true | true | GREEN | — |
 | ssws_hub_folder | true | GREEN | folder | true | true | GREEN | — |
 | example_hold_lane | true | HOLD | folder | true | false | HOLD | HOLD — AMK / operator decision before open. |

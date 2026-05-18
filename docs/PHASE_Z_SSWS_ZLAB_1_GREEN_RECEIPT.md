@@ -5,7 +5,7 @@
 ## Deliverables
 
 | Item | Path |
-| ------------------- | ----------------------------------------------------------------------------------- |
+| --- | --- |
 | Spine doc | [`docs/Z_SSWS_ZLAB_UNIFIED_CONTROL_SPINE.md`](Z_SSWS_ZLAB_UNIFIED_CONTROL_SPINE.md) |
 | Machine registry | [`data/z_ssws_zlab_control_spine.json`](../data/z_ssws_zlab_control_spine.json) |
 | Receipt (this file) | [`docs/PHASE_Z_SSWS_ZLAB_1_GREEN_RECEIPT.md`](PHASE_Z_SSWS_ZLAB_1_GREEN_RECEIPT.md) |
@@ -27,7 +27,7 @@
 ## Posture checklist
 
 | Check | Confirm |
-| ------------------------------------------------------------------------------------------------------------------- | ---------------------------------------- |
+| --- | --- |
 | No deploy / domain bind / secrets / auto-services / extension install / NAS mutate / force push in spine definition | Yes (explicitly forbidden in doc + JSON) |
 | Z-SSWS = control spine; Z-Lab = supervised analysis layer | Yes |
 | NAS = declaration-only until mount | Yes |

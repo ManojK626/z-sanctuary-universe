@@ -3,7 +3,7 @@
 **Generated:** 2026-05-03T18:51:22.498Z
 
 | Field | Value |
-| --------------- | ---------- |
+| ---- | ---- |
 | Overseer signal | **YELLOW** |
 | Phase | ZSUSBV-O1 |
 
@@ -23,4 +23,4 @@
 
 ---
 
-_Read-only — Phase ZSUSBV-O1._
+*Read-only — Phase ZSUSBV-O1.*

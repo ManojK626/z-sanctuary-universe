@@ -5,7 +5,6 @@ Status: HOLD
 Mode: audit
 
 ## Checks
-
 - [x] setting_task_allowAutomaticTasks: expected="on" actual="on"
 - [x] setting_extensions_autoCheckUpdates: expected=true actual=true
 - [x] setting_extensions_autoUpdate: expected=true actual=true
@@ -15,7 +14,6 @@ Mode: audit
 - [x] code_cli_available: VS Code CLI not found; installation audit skipped (settings/recommendations still enforced).
 
 ## Actions
-
 - none
 
 Note: Extension/tool posture drift detected. Run apply mode or manual correction.

@@ -3,7 +3,7 @@
 ## Registry Identity
 
 | Field | Value |
-| --------------------- | ------------------- |
+| --- | --- |
 | **ID** | `gps_safety_module` |
 | **Category** | safety_emergency |
 | **Registry status** | safety_hold |

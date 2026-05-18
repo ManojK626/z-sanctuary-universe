@@ -7,7 +7,7 @@
 ## What this phase creates
 
 | Artefact | Role |
-| ------------------------------------------------------- | ------------------------------------------------------------------------- |
+| ---- | ---- |
 | `data/z_omnai_movie_trailer_bundle.json` | Section prompts, placeholders, checklists, forbidden actions, human gates |
 | `scripts/z_omnai_movie_trailer_bundle_generate.mjs` | Read-only report generator |
 | `data/reports/z_omnai_movie_trailer_bundle_report.json` | Structured bundle summary + checklists |

@@ -230,10 +230,10 @@ CLI path proof is stronger than Explorer context menus.
 
 ## Phase Sign-Off
 
-**Phase:** Z*PC_IDE_ADMIN_1
+**Phase:** Z_PC_IDE_ADMIN_1
 **Status:** ✅ GREEN COMPLETE
 **Authority:** AMK-Goku (Sanctuary Sacred Moves)
-**Zuno Verdict 🦉✨:** \_Admin mode detection and normal-mode guardrails are in place. The MiniBot can now warn when elevation is detected and recommend safe defaults.*
+**Zuno Verdict 🦉✨:** _Admin mode detection and normal-mode guardrails are in place. The MiniBot can now warn when elevation is detected and recommend safe defaults._
 
 ---
 

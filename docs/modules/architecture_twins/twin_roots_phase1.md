@@ -3,7 +3,7 @@
 ## Registry Identity
 
 | Field | Value |
-| --------------------- | -------------------- |
+| --- | --- |
 | **ID** | `twin_roots_phase1` |
 | **Category** | Architecture / twins |
 | **Registry status** | implemented |

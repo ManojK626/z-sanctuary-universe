@@ -2,7 +2,7 @@
 
 **Status:** Sibling doctrine to **Z-EXL-1**. Metadata-only — no runtime, no schema for individual profiles (Z-EXL-1 owns that), no compatibility matrix, no inheritance engine, no runtime negotiation, no profile auto-resolution, no deployment authority, no provider calls, no cross-project file reads, no approval-workflow infrastructure, no entitlement enforcement, no profile syncing.
 
-**Scope (v0):** **REGISTRY ONLY.** A single JSON document that lists which Z-\* projects have adopted Z-EXL-1 and at what status. Nothing more.
+**Scope (v0):** **REGISTRY ONLY.** A single JSON document that lists which Z-* projects have adopted Z-EXL-1 and at what status. Nothing more.
 
 **Citation key (forever):** `Z_EXL_2`
 
@@ -10,7 +10,7 @@
 
 - **Z-EXL-1** = experiential language law + per-project profile schema (`z_experiential_language_schema_v1`). Frozen.
 - **Z-EXL-2** = profile registry + adoption map (this doctrine). New schema: `z_experiential_profile_registry_v1`.
-- A future _language-schema_ breaking change would go to **Z-EXL-3**, not collide with this slug.
+- A future *language-schema* breaking change would go to **Z-EXL-3**, not collide with this slug.
 
 If Z-EXL-2 conflicts with Z-EXL-1 on accessibility or DRP non-harm, **accessibility + DRP non-harm** win. Unresolved product conflicts go to **`Z-HIERARCHY-CHIEF-AND-OBSERVER-VIEW.md`** and human oversight.
 
@@ -19,8 +19,8 @@ If Z-EXL-2 conflicts with Z-EXL-1 on accessibility or DRP non-harm, **accessibil
 ## 1. Purpose
 
 | Goal | Outcome |
-| ------------------------------ | -------------------------------------------------------------------------------------------------------- |
-| Adoption visibility | One canonical place to see which Z-\* projects have a Z-EXL-1 profile and at what status |
+| --- | --- |
+| Adoption visibility | One canonical place to see which Z-* projects have a Z-EXL-1 profile and at what status |
 | No runtime coupling | The registry is a JSON document, not a service. No project reads from it at runtime |
 | Reserved-set discipline | Reserve slots for projects that intend to adopt, without claiming they implement anything yet |
 | Honest layer claims | Each entry declares which Z-EXL-1 layers the project actually implements — narrower than "all 8" is fine |
@@ -46,7 +46,7 @@ If Z-EXL-2 conflicts with Z-EXL-1 on accessibility or DRP non-harm, **accessibil
 - A way to share profiles, identity, or entitlements across projects.
 
 > **Hard rule (entitlement boundary, restated):**
-> _Listing a project in this registry never implies shared authority, shared identity, shared paid access, or any cross-project trust._
+> *Listing a project in this registry never implies shared authority, shared identity, shared paid access, or any cross-project trust.*
 
 ---
 
@@ -60,14 +60,12 @@ The canonical registry lives at `data/z_experiential_profile_registry.json`. Doc
   "doctrine": "Z-EXL-2",
   "registry_version": "<semver>",
   "updated_at": "<ISO-8601 date>",
-  "entries": [
-    /* row objects, see §4 */
-  ]
+  "entries": [ /* row objects, see §4 */ ]
 }
 ```
 
 | Envelope field | Meaning |
-| ------------------ | ------------------------------------------------------------------------------------- |
+| --- | --- |
 | `schema` | Always `z_experiential_profile_registry_v1` for this doctrine version |
 | `doctrine` | Always `Z-EXL-2` |
 | `registry_version` | Semver string for the registry document itself; bumps additively when entries change |
@@ -81,7 +79,7 @@ The canonical registry lives at `data/z_experiential_profile_registry.json`. Doc
 Each row in `entries[]` carries **exactly seven fields**. No others permitted in v0:
 
 | Field | Type | Meaning |
-| ------------------------ | --------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| --- | --- | --- |
 | `project_id` | string (Z-EXL-1 enum) | Project identifier — must be one of the values in the Z-EXL-1 schema's `project_id` enum |
 | `experience_profile_id` | string | The `experience_profile_id` declared in the project's own profile JSON; empty string `""` for `reserved` / `retired` rows |
 | `layers_implemented` | array of strings | Subset of the Z-EXL-1 layer field names the project actually implements (e.g. `["sensory_mode","rhythm_language"]`). Empty array `[]` for `reserved` / `retired` |
@@ -104,7 +102,7 @@ A project that publishes a profile but only claims a subset is conformant — Z-
 ## 5. Status semantics
 
 | Status | Meaning | Required fields populated |
-| ---------- | ------------------------------------------------------------------------------------------------------------------ | ---------------------------------------------------------------------------------------------------------------------- |
+| --- | --- | --- |
 | `active` | Project ships a Z-EXL-1 profile JSON validated by the hub schema, and a runtime adapter / verifier in its own repo | All seven fields populated |
 | `reserved` | Project is named in the family roster but has not yet shipped a profile | Only `project_id` and `status`; the rest may be empty strings / arrays |
 | `retired` | Project once shipped a profile but has been retired or merged into another project | All seven fields may be populated for historical traceability; the project is no longer expected to honour the profile |
@@ -118,7 +116,7 @@ Status transitions are hand-edits by the hub maintainer. There is no approval wo
 The following `project_id` values are reserved by the Z-EXL-1 schema's enum and therefore appear in v0 of this registry. v0 ships **`lumina` as `active`** and the others as **`reserved`**:
 
 | project_id | v0 status |
-| ---------------- | --------- |
+| --- | --- |
 | `lumina` | active |
 | `questra` | reserved |
 | `lawyer_ux` | reserved |
@@ -139,7 +137,7 @@ Adding a new `project_id` to this registry requires first adding it to the Z-EXL
 In line with your instruction, v0 of Z-EXL-2 does NOT carry any of the following:
 
 | ❌ Not in v0 | Note |
-| ---------------------------------- | ------------------------------------------------------------------------------- |
+| --- | --- |
 | Compatibility matrices | No `co_render_safe_with` / `co_render_unsafe_with` fields |
 | Inheritance engine / inherits_from | No parent-child profile relationships |
 | Override rules | No `overrides` object |
@@ -167,7 +165,7 @@ In line with your instruction, v0 of Z-EXL-2 does NOT carry any of the following
 ## 9. Acceptance
 
 | Check | Expected |
-| ----------------------------------------------------------------------------------------------------- | --------------------------------------------------------- |
+| --- | --- |
 | `data/z_experiential_profile_registry.json` parses as JSON | Yes |
 | `entries[].project_id` is a member of the Z-EXL-1 schema `project_id` enum | Yes for every row |
 | `entries[].status` is `active` / `reserved` / `retired` | Yes for every row |
