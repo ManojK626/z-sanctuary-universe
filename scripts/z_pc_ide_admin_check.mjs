@@ -228,13 +228,13 @@ async function main() {
   
   console.log(`${color}[${signal}]${colors.RESET} Z-PC-IDE-ADMIN-1 Safety Check`);
   console.log(`├─ ${reason}`);
-  console.log(`├─ Reports written:`);
+  console.log('├─ Reports written:');
   console.log(`│  ├─ ${JSON_REPORT}`);
   console.log(`│  └─ ${MD_REPORT}`);
   
   if (isElevated) {
-    console.log(`├─ ⚠️  Running in elevated/admin mode`);
-    console.log(`│  └─ Recommended: Reopen VS Code normally:`);
+    console.log('├─ ⚠️  Running in elevated/admin mode');
+    console.log('│  └─ Recommended: Reopen VS Code normally:');
     console.log(`│     ${recommendedCommand}`);
   }
   

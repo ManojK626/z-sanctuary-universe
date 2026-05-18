@@ -221,12 +221,12 @@
       resizeCanvas();
       global.addEventListener('resize', resizeCanvas);
 
-      function start(ev) {
+      const start = (ev) => {
         if (root.getAttribute('data-sketch') !== '1') return;
         drawing = true;
         lastPt = pos(ev);
-      }
-      function move(ev) {
+      };
+      const move = (ev) => {
         if (!drawing || root.getAttribute('data-sketch') !== '1' || !lastPt) return;
         var p = pos(ev);
         ctx.strokeStyle = colorInput ? colorInput.value : '#fff';
@@ -236,11 +236,11 @@
         ctx.lineTo(p.x, p.y);
         ctx.stroke();
         lastPt = p;
-      }
-      function end() {
+      };
+      const end = () => {
         drawing = false;
         lastPt = null;
-      }
+      };
 
       canvas.addEventListener('mousedown', start);
       canvas.addEventListener('mousemove', move);
