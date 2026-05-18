@@ -47,8 +47,27 @@ When two PRs target the same scope (e.g. OTL #2 Copilot vs #3 Cursor):
 - [ ] No secrets in diff
 - [ ] No auto-deploy or Cloudflare mutation implied
 - [ ] `verify:md` or scoped lint run where applicable (informational if legacy MD060 remains)
+- [ ] **Indicator posture reviewed** (dashboard or docs) — posture is advisory, not approval
+- [ ] Optional: `npm run amk:ai-sync` — read Z-Team routing packet; do not treat as merge authority
 - [ ] Human approval recorded
 - [ ] Post-merge: `git checkout main && git pull origin main`
+
+## AMK Indicators + Z-Team AI at queue time (Phase 0.1)
+
+Before merging a hub lane, PGMO recommends the operator **look** at readiness — not delegate the merge:
+
+| Check | Command / surface | Not a substitute for |
+| --- | --- | --- |
+| Indicator cards | Hub dashboard AMK indicators (HTTP from repo root) | PR approval or CI green |
+| AI team sync | `npm run amk:ai-sync` → `data/reports/amk_ai_team_sync_report.json` | Auto-routing execution |
+| PGMO receipt | Manual note in chat or future report lane | GitHub Merge button |
+
+```text
+indicator ≠ permission
+AI team advice ≠ approval
+```
+
+PGMO may suggest: “YELLOW on traffic — have Z-Team hygiene role review before merge.” AMK still clicks Merge.
 
 ## Post-merge rebase (LinguaCore Phase 1 example)
 

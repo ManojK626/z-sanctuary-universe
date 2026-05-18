@@ -2,6 +2,28 @@
 
 The improvement radar produces **recommendations only**. Each item is a suggestion for the operator or a Turtle branch — not permission to execute.
 
+## PGMO ↔ AMK Indicators ↔ Z-Team AI (Phase 0.1)
+
+```text
+project state → indicator posture → Z-Team advisory routing → AMK human decision
+```
+
+| Step | Source | PGMO role |
+| --- | --- | --- |
+| Project state | Boundary map, phase label, merge queue | Describe lane and risk |
+| Indicator posture | AMK indicator rows / overlays (when dashboard served) | Compare posture to lane; **no permission** |
+| Z-Team advisory | AMK-AI-SYNC routing packets (`amk:ai-sync` report) | Suggest reviewer role (e.g. overseer, hygiene, deploy-hold) |
+| AMK decision | Human operator | Sacred moves, merge, deploy, charter |
+
+Reinforcement laws:
+
+```text
+indicator ≠ permission
+AI team advice ≠ approval
+management insight ≠ execution
+dashboard visibility ≠ authority
+```
+
 ## Signal levels
 
 | Signal | Meaning | Operator action |
@@ -22,6 +44,8 @@ The improvement radar produces **recommendations only**. Each item is a suggesti
 | Deploy hold | Cloudflare without dry-run | Complete Phase D checklist first |
 | Overlap | Two PRs same scope | Close duplicate OTL PR |
 | Hygiene | MD060 / verify:md | Table compact in scoped branch only |
+| Indicator drift | AMK pill / overlay vs lane claim | Open indicators panel; do not auto-edit JSON |
+| Z-Team routing | AMK-AI-SYNC report | Operator runs `npm run amk:ai-sync`; read packet only |
 
 ## Improvement record format (manual Phase 0)
 
@@ -34,9 +58,11 @@ category:
 suggestion:
 needs_human_approval: true | false
 sacred_move: true | false
+indicator_posture: GREEN | YELLOW | BLUE | RED | unknown
+suggested_z_team_role: overseer | hygiene | deploy-hold | routing | none
 ```
 
-Phase 0 has **no** automated report file. Future phases may add read-only JSON under `data/reports/` only with charter approval.
+Phase 0 / 0.1 have **no** automated PGMO report file. Future phases may add read-only JSON under `data/reports/` only with charter approval.
 
 ## What improves next (illustrative — May 2026)
 
@@ -60,3 +86,5 @@ Avoid: self-aware, autonomous decision, fully automatic deployment, AI controls 
 
 - [Z_PGMO_OPERATOR_QUEUE_POLICY.md](./Z_PGMO_OPERATOR_QUEUE_POLICY.md)
 - [Z_PGMO_MASTER_DOCTRINE.md](./Z_PGMO_MASTER_DOCTRINE.md)
+- [../AMK_PROJECT_INDICATORS_AND_GO_NO_GO.md](../AMK_PROJECT_INDICATORS_AND_GO_NO_GO.md)
+- [../AMK_AI_TEAM_INDICATOR_SYNC_ROUTER.md](../AMK_AI_TEAM_INDICATOR_SYNC_ROUTER.md)
