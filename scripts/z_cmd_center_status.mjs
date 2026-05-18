@@ -331,7 +331,7 @@ async function main() {
     console.log(`├─ ${reason}`);
     console.log(`├─ Main Hub: ${mainHubExists ? '✓' : '✗'}`);
     console.log(`├─ IDE: code=${codeAvailable ? '✓' : '✗'} cursor=${cursorAvailable ? '✓' : '✗'}`);
-    console.log(`├─ Reports written:`);
+    console.log('├─ Reports written:');
     console.log(`│  ├─ ${JSON_REPORT}`);
     console.log(`│  └─ ${MD_REPORT}`);
     console.log(`└─ Exit code: ${exitCode}`);

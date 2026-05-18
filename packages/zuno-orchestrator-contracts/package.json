@@ -8,6 +8,7 @@
   "scripts": {
     "build": "tsc",
     "examples:check": "node scripts/validate_examples.mjs",
+    "lint": "npm run examples:check && npm run task-plan:lint",
     "task-plan:lint": "node scripts/lint_task_plan.mjs",
     "test": "tsc --noEmit && node scripts/validate_examples.mjs && node scripts/lint_task_plan.mjs"
   },
