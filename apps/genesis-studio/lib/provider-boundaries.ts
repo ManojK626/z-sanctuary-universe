@@ -3,7 +3,15 @@
  * No provider SDKs installed in stub phases. Adapters require human charter.
  */
 
-export type ProviderId = 'replicate' | 'openai' | 'runway' | 'elevenlabs' | 'local';
+export type ProviderId =
+  | 'replicate'
+  | 'openai'
+  | 'openai_audio'
+  | 'runway'
+  | 'elevenlabs'
+  | 'local'
+  | 'local_tts'
+  | 'z_music_engine';
 
 export interface ProviderBoundary {
   id: ProviderId;
@@ -36,6 +44,15 @@ export const PROVIDER_BOUNDARIES: Record<ProviderId, ProviderBoundary> = {
     drpSafeDefault: 'review-required',
     notes: 'Script + vision adapters — OMNAI provider wrapper after DRP gate.',
   },
+  openai_audio: {
+    id: 'openai_audio',
+    envVar: 'OPENAI_API_KEY',
+    humanApprovalRequired: true,
+    costWarning: 'Audio/TTS tokens bill per request — consent-first narration only.',
+    receiptRequired: true,
+    drpSafeDefault: 'review-required',
+    notes: 'Future narration lane — write audio bytes to assets; set scenes.audio_asset_id only.',
+  },
   runway: {
     id: 'runway',
     envVar: 'RUNWAY_API_KEY',
@@ -43,7 +60,7 @@ export const PROVIDER_BOUNDARIES: Record<ProviderId, ProviderBoundary> = {
     costWarning: 'Video generation is high-cost; mock-first until receipt chain exists.',
     receiptRequired: true,
     drpSafeDefault: 'review-required',
-    notes: 'Future motion/storyboard-to-clip lane — not enabled in Phase 1 shell.',
+    notes: 'Future motion/storyboard-to-clip lane — not enabled in stub shell.',
   },
   elevenlabs: {
     id: 'elevenlabs',
@@ -52,7 +69,8 @@ export const PROVIDER_BOUNDARIES: Record<ProviderId, ProviderBoundary> = {
     costWarning: 'Voice synthesis billed per character — consent-first copy only.',
     receiptRequired: true,
     drpSafeDefault: 'review-required',
-    notes: 'Audio page future adapter — separate from storyboard stub.',
+    notes:
+      'Phase 2B+ voice adapter — no SDK in stub phase. Real audio via assets table, not scene URLs.',
   },
   local: {
     id: 'local',
@@ -63,10 +81,36 @@ export const PROVIDER_BOUNDARIES: Record<ProviderId, ProviderBoundary> = {
     drpSafeDefault: 'stub-only',
     notes: 'Offline or NAS_WAIT pipelines — no silent network egress.',
   },
+  local_tts: {
+    id: 'local_tts',
+    envVar: null,
+    humanApprovalRequired: true,
+    costWarning: 'On-device synthesis uses operator CPU/GPU — receipt still required.',
+    receiptRequired: true,
+    drpSafeDefault: 'stub-only',
+    notes: 'Future local TTS — no cloud upload without explicit charter.',
+  },
+  z_music_engine: {
+    id: 'z_music_engine',
+    envVar: null,
+    humanApprovalRequired: true,
+    costWarning: 'Sanctuary music lane may use licensed beds — legal review before publish.',
+    receiptRequired: true,
+    drpSafeDefault: 'review-required',
+    notes: 'Future Z-Music Engine soundtrack cues — metadata in scenes.audio_plan jsonb.',
+  },
 };
 
 /** Storyboard image lane — Replicate is the planned adapter, not active */
 export const STORYBOARD_PLANNED_PROVIDER: ProviderId = 'replicate';
+
+/** Audio plan lane — voice + soundtrack adapters gated */
+export const AUDIO_PLANNED_PROVIDERS: ProviderId[] = [
+  'elevenlabs',
+  'openai_audio',
+  'local_tts',
+  'z_music_engine',
+];
 
 export function canInvokeProvider(
   providerId: ProviderId,

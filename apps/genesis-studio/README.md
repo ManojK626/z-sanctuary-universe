@@ -46,7 +46,7 @@ Row Level Security: users may only access rows where `auth.uid() = user_id`.
 `lib/genesis-core-registry.ts` defines the hidden pipeline layer:
 
 ```text
-script → scenes → storyboard → audio → edit → publish → receipt
+script → scenes → storyboard → audio_plan → edit → publish → receipt
 ```
 
 Later bridges: OMNAI, Z-Music, Visual Engine, eBook Engine, Podcast Engine, Zuno Orchestrator.
@@ -62,10 +62,23 @@ Shared constants and Zod schemas: `lib/creative-profile.ts`
 
 Supabase: `projects.life_stage`, `projects.tone`, `projects.creative_profile` (see `supabase/migrations/001_creative_profile_columns.sql`).
 
+## Phase 2B — Narrative Audio Intelligence Shell
+
+**Status:** stub-only — no TTS, music generation, uploads, billing, or provider SDKs.
+
+- Shared `lib/audio-profile.ts` — narration styles, soundtrack moods, audio cue types, Zod schemas
+- `POST /api/generate-audio-plan` — mock cue plans + governance (no ElevenLabs / OpenAI audio / Suno / Udio)
+- Audio page: style selectors, plan cards, upload/play remain placeholders
+- Supabase: `scenes.narration_style`, `soundtrack_mood`, `audio_plan`, `audio_asset_id` (see `supabase/migrations/003_audio_plan_scene_columns.sql`)
+- Future real audio → **`assets` table only**, not URLs on `scenes`
+- Provider gates: `lib/provider-boundaries.ts` (`elevenlabs`, `openai_audio`, `local_tts`, `z_music_engine`)
+
 ## API (stub)
 
 `POST /api/generate-script` with `{ "prompt": "...", "lifeStage": "prime", "tone": "cinematic" }` returns mock JSON with `creativeProfile`, `scenes[]`, and `governance`.
 Comment in route marks where OpenAI / OMNAI adapter would run **after DRP + human approval**.
+
+`POST /api/generate-audio-plan` with `{ "sceneId", "sceneText", "narrationStyle", "soundtrackMood" }` returns mock `cues[]` and stub governance.
 
 ## Safety / governance
 
