@@ -18,6 +18,7 @@
 
 - [Z_OPERATIONAL_TECHNOLOGY_LAYERS.md](Z_OPERATIONAL_TECHNOLOGY_LAYERS.md) — Cursor, GitHub, Cloudflare, Z-DAIO, Z-ADTF, devices: roles, phased presets, forbidden patterns.
 - [PHASE_Z_OPERATIONAL_TECHNOLOGY_LAYERS_0_GREEN_RECEIPT.md](PHASE_Z_OPERATIONAL_TECHNOLOGY_LAYERS_0_GREEN_RECEIPT.md) — Phase 0 receipt.
+- [z-ssws-gtc/Z_SSWS_GTC_MASTER_DOCTRINE.md](z-ssws-gtc/Z_SSWS_GTC_MASTER_DOCTRINE.md) — **Z-SSWS-GTC-0:** Cursor + GitHub + Cloudflare command spine (docs only; **no** merge/deploy authority). Park PR until CI cleanup + PGMO settled.
 - Cursor hooks: [.cursor/rules/z-operational-technology-layers.mdc](../.cursor/rules/z-operational-technology-layers.mdc), [.cursor/rules/z-sanctuary-core.mdc](../.cursor/rules/z-sanctuary-core.mdc) (pointer-only builder index).
 
 Cross-links: [Z-GITHUB-SANCTUARY-GATE.md](Z-GITHUB-SANCTUARY-GATE.md), [Z-CLOUDFLARE-AI-COMMS-PRECAUTIONS.md](Z-CLOUDFLARE-AI-COMMS-PRECAUTIONS.md). **Merge queue:** MD060 → this spine → LinguaCore → Mauritius walks → Z-ADTF later. **No new runtime** while doctrine PRs land. Cloudflare future-phased only in this lane.
@@ -122,6 +123,7 @@ npm run z:car2
 | [AMK_WORKSPACE_DOORWAY.md](AMK_WORKSPACE_DOORWAY.md) | Workspace doorway discipline and status flow. |
 | [AMK_CURSOR_WORKSPACE_STRATEGY.md](AMK_CURSOR_WORKSPACE_STRATEGY.md) | Cursor workspace profile strategy and safe operator flow. |
 | [Z_SSWS_WORKSPACE_SPINE.md](Z_SSWS_WORKSPACE_SPINE.md) | SSWS workspace launch requirements and guard rails. |
+| [z-ssws-gtc/Z_SSWS_GTC_MASTER_DOCTRINE.md](z-ssws-gtc/Z_SSWS_GTC_MASTER_DOCTRINE.md) | Z-SSWS-GTC tri-layer command spine — Cursor builder, GitHub vault/PR gate, Cloudflare future edge (**read-only doctrine**). |
 | [Z_ECOSYSTEM_GROWTH_STATUS.md](Z_ECOSYSTEM_GROWTH_STATUS.md) | Sealed growth stages + AI Builder / overseer communication posture (Z-AI-BUILDER-AWARENESS-2). |
 | [Z_CRYSTAL_DNA_MESH.md](Z_CRYSTAL_DNA_MESH.md) | Z-CRYSTAL-DNA-1 asset identity mesh (shards, dependencies, governance). |
 | [Z_CRYSTAL_DNA_VISUALIZATION.md](Z_CRYSTAL_DNA_VISUALIZATION.md) | Z-CRYSTAL-DNA-2 living Crystal ecosystem map (read-only). |

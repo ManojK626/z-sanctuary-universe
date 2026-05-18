@@ -94,6 +94,8 @@ Compact entry points for **read-only** hub registries and AMK-facing evidence. F
 | Z-CADENCE-1 green receipt | [PHASE_Z_CADENCE_1_GREEN_RECEIPT.md](PHASE_Z_CADENCE_1_GREEN_RECEIPT.md) | â€” |
 | Z Operational Technology Layers (Phase 0) | [Z_OPERATIONAL_TECHNOLOGY_LAYERS.md](Z_OPERATIONAL_TECHNOLOGY_LAYERS.md) | `npm run verify:md` |
 | Z Operational Technology Layers green receipt | [PHASE_Z_OPERATIONAL_TECHNOLOGY_LAYERS_0_GREEN_RECEIPT.md](PHASE_Z_OPERATIONAL_TECHNOLOGY_LAYERS_0_GREEN_RECEIPT.md) | — |
+| Z-SSWS-GTC command spine (Phase 0) | [z-ssws-gtc/Z_SSWS_GTC_MASTER_DOCTRINE.md](z-ssws-gtc/Z_SSWS_GTC_MASTER_DOCTRINE.md) | — (park PR until CI + PGMO settled) |
+| Z-SSWS-GTC green receipt | [z-ssws-gtc/PHASE_Z_SSWS_GTC_0_GREEN_RECEIPT.md](z-ssws-gtc/PHASE_Z_SSWS_GTC_0_GREEN_RECEIPT.md) | `npx markdownlint -c .markdownlint.json "docs/z-ssws-gtc/*.md"` |
 | AI Builder briefing | [AI_BUILDER_CONTEXT.md](AI_BUILDER_CONTEXT.md) | â€” |
 | VS-FALLBACK-1 — VS Code Operating Mode Until Cursor Returns | [VS_FALLBACK_1_VSCODE_OPERATING_MODE.md](VS_FALLBACK_1_VSCODE_OPERATING_MODE.md) | â€” |
 | Zuno weekly observation (7-day window) | [ZUNO_WEEKLY_FULL_RUN_AND_OBSERVATION.md](ZUNO_WEEKLY_FULL_RUN_AND_OBSERVATION.md) | See doc (daily + twice-weekly) |
