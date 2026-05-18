@@ -51,9 +51,20 @@ script → scenes → storyboard → audio → edit → publish → receipt
 
 Later bridges: OMNAI, Z-Music, Visual Engine, eBook Engine, Podcast Engine, Zuno Orchestrator.
 
+## OMNAI Creative Profile
+
+Shared constants and Zod schemas: `lib/creative-profile.ts`
+
+- **Life-stage** and **tone** dropdowns on Script page
+- Future-ready optional fields: `emotionalIntensity`, `pacingStyle`, `audienceMode` (schema only; UI Phase 2+)
+- **Creative DNA** card + editable scene cards with local reorder
+- Every script response includes `governance: { providerStatus: "stub-only", humanReviewRequired: true, drpSafe: true }`
+
+Supabase: `projects.life_stage`, `projects.tone`, `projects.creative_profile` (see `supabase/migrations/001_creative_profile_columns.sql`).
+
 ## API (stub)
 
-`POST /api/generate-script` with `{ "prompt": "..." }` returns mock JSON.
+`POST /api/generate-script` with `{ "prompt": "...", "lifeStage": "prime", "tone": "cinematic" }` returns mock JSON with `creativeProfile`, `scenes[]`, and `governance`.
 Comment in route marks where OpenAI / OMNAI adapter would run **after DRP + human approval**.
 
 ## Safety / governance

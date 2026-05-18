@@ -8,6 +8,9 @@ create table if not exists public.projects (
   title text not null,
   description text,
   status text not null default 'draft',
+  life_stage text,
+  tone text,
+  creative_profile jsonb default '{}',
   created_at timestamptz not null default now()
 );
 
