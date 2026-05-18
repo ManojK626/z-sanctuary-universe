@@ -17,7 +17,9 @@
     bodyEl.scrollTo({ top: Math.max(0, offset - 10), behavior: 'smooth' });
     try {
       el.focus({ preventScroll: true });
-    } catch (_) {}
+    } catch (_) {
+      // Ignore focus errors for unsupported elements or browser contexts.
+    }
     return true;
   }
 
