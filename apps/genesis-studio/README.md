@@ -4,6 +4,8 @@ Cinematic, governed creative workspace for scripts, storyboards, editing, audio,
 
 Future lanes: movies, songs, eBooks, posters, podcasts, images, drawings, and multi-format media.
 
+**Roadmap:** [GENESIS_STUDIO_OMNAI_ROADMAP.md](GENESIS_STUDIO_OMNAI_ROADMAP.md) — phased Turtle build order (Phase 3A next: project persistence).
+
 ## Stack
 
 - Next.js 14 App Router

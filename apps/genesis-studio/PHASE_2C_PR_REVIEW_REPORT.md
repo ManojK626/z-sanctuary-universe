@@ -115,14 +115,14 @@ No other `fetch(` to external hosts found in `apps/genesis-studio`.
 
 ## Risks found
 
-| Severity | Risk                                                               | Mitigation                                                        |
-| -------- | ------------------------------------------------------------------ | ----------------------------------------------------------------- |
-| Low      | README storyboard section                                          | **Resolved** in Phase 2C docs commit                                |
-| Low      | Unused `@radix-ui/react-tabs` dependency                           | Remove dep + `tabs.tsx` later, or document as UI scaffold         |
-| Low      | No live browser/E2E verification in this pass                      | Operator smoke-test `npm run dev` on port 3010 before merge       |
-| Low      | `assets.url` could hold external URLs in future phases             | Enforce charter: local/NAS paths or signed internal refs only     |
-| Info     | Script governance nested under `governance`; storyboard/audio flat | Acceptable; document in API consumer notes                        |
-| Info     | Supabase not wired in UI yet (local state only)                    | Expected for stub phases                                          |
+| Severity | Risk                                                               | Mitigation                                                    |
+| -------- | ------------------------------------------------------------------ | ------------------------------------------------------------- |
+| Low      | README storyboard section                                          | **Resolved** in Phase 2C docs commit                          |
+| Low      | Unused `@radix-ui/react-tabs` dependency                           | Remove dep + `tabs.tsx` later, or document as UI scaffold     |
+| Low      | No live browser/E2E verification in this pass                      | Operator smoke-test `npm run dev` on port 3010 before merge   |
+| Low      | `assets.url` could hold external URLs in future phases             | Enforce charter: local/NAS paths or signed internal refs only |
+| Info     | Script governance nested under `governance`; storyboard/audio flat | Acceptable; document in API consumer notes                    |
+| Info     | Supabase not wired in UI yet (local state only)                    | Expected for stub phases                                      |
 
 **No blocking security or governance failures identified.**
 
