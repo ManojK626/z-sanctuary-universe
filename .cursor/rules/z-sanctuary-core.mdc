@@ -1,0 +1,36 @@
+---
+description: Z-Sanctuary builder spine index — pointers only; read canonical docs for full doctrine
+alwaysApply: true
+---
+
+# Z-Sanctuary core (index — not a doctrine fork)
+
+**Do not** paste long policy here. Open the linked docs when unsure.
+
+## When unsure (read first)
+
+1. [docs/Z-HIERARCHY-CHIEF-AND-OBSERVER-VIEW.md](docs/Z-HIERARCHY-CHIEF-AND-OBSERVER-VIEW.md) — placement and operational roof
+2. [docs/Z_OPERATIONAL_TECHNOLOGY_LAYERS.md](docs/Z_OPERATIONAL_TECHNOLOGY_LAYERS.md) — layered tools ≠ soul; merge queue
+3. [.cursor/rules/z-turtle-mode-cursor-agents.mdc](.cursor/rules/z-turtle-mode-cursor-agents.mdc) — branches `cursor/zsanctuary/*`, PRs, no auto-deploy
+4. [docs/Z_SWARM_14DRP_UNIVERSAL_AGENT_LAW.md](docs/Z_SWARM_14DRP_UNIVERSAL_AGENT_LAW.md) — 14 DRP
+5. [docs/Z-GITHUB-SANCTUARY-GATE.md](docs/Z-GITHUB-SANCTUARY-GATE.md) — GitHub vault + human merge on `main`
+6. [AGENTS.md](AGENTS.md) — hub verify intents and sacred boundaries
+
+## Builder spine (six laws)
+
+```text
+federation ≠ authority
+topology ≠ ownership
+observe → verify → suggest → human decides
+readiness ≠ deploy
+organization ≠ control
+layered tools ≠ the soul
+```
+
+## Hard boundaries (summary)
+
+- No hidden runtime, silent networking, or auto-merge/deploy from this index
+- No Cloudflare production bind, public NAS, or exposed RDP without charter + human gate
+- Docs/mock-first unless a phase receipt explicitly charters more
+
+Full stack layers: [.cursor/rules/z-operational-technology-layers.mdc](.cursor/rules/z-operational-technology-layers.mdc).
