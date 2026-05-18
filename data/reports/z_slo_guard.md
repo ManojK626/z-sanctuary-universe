@@ -10,6 +10,7 @@
 - Failed: 3
 
 ## Checks
+
 - [ ] web:readiness | status=green/green | age=79156m (max 2m) | stale
 - [ ] workspace:auto-sweep | status=green/green | age=79156m (max 5m) | stale
 - [ ] extension_guard | status=hold/green | age=14444m (max 240m) | status_mismatch

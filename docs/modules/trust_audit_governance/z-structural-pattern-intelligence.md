@@ -3,7 +3,7 @@
 ## Registry Identity
 
 | Field | Value |
-| --- | --- |
+| --------------------- | ----------------------------------- |
 | **ID** | `z-structural-pattern-intelligence` |
 | **Category** | trust_audit_governance |
 | **Registry status** | implemented |

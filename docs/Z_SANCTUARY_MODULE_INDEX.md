@@ -15,7 +15,7 @@
 ### ai_tower_agents
 
 | ID | Registry status | Doc |
-| --- | --- | --- |
+| --------------------------- | --------------- | ------------------------------------------------------------ |
 | `ai-agent-designer` | planned_stub | [open](modules/ai_tower_agents/ai-agent-designer.md) |
 | `ai-agent-navigator` | planned_stub | [open](modules/ai_tower_agents/ai-agent-navigator.md) |
 | `ai-agent-protector` | planned_stub | [open](modules/ai_tower_agents/ai-agent-protector.md) |
@@ -26,19 +26,19 @@
 ### architecture_twins
 
 | ID | Registry status | Doc |
-| --- | --- | --- |
+| ------------------- | --------------- | ------------------------------------------------------- |
 | `twin_roots_phase1` | implemented | [open](modules/architecture_twins/twin_roots_phase1.md) |
 
 ### core_engine_experiential
 
 | ID | Registry status | Doc |
-| --- | --- | --- |
+| ------------------ | --------------- | ------------------------------------------------------------ |
 | `soundscape_pulse` | implemented | [open](modules/core_engine_experiential/soundscape_pulse.md) |
 
 ### core_engines
 
 | ID | Registry status | Doc |
-| --- | --- | --- |
+| -------------------------- | --------------- | -------------------------------------------------------- |
 | `autopilot-engine` | planned_stub | [open](modules/core_engines/autopilot-engine.md) |
 | `core-chronicle` | planned_stub | [open](modules/core_engines/core-chronicle.md) |
 | `core-chronicle-hud` | planned_stub | [open](modules/core_engines/core-chronicle-hud.md) |
@@ -51,32 +51,32 @@
 ### dashboard_hudp
 
 | ID | Registry status | Doc |
-| --- | --- | --- |
+| ----------------- | --------------- | ------------------------------------------------- |
 | `commander_panel` | implemented | [open](modules/dashboard_hudp/commander_panel.md) |
 | `mdgev_grid` | implemented | [open](modules/dashboard_hudp/mdgev_grid.md) |
 
 ### dashboard_qa
 
 | ID | Registry status | Doc |
-| --- | --- | --- |
+| --------------- | --------------- | --------------------------------------------- |
 | `qa_rp_surface` | implemented | [open](modules/dashboard_qa/qa_rp_surface.md) |
 
 ### dashboard_runtime
 
 | ID | Registry status | Doc |
-| --- | --- | --- |
+| ---------------------- | --------------- | --------------------------------------------------------- |
 | `display_morph_engine` | implemented | [open](modules/dashboard_runtime/display_morph_engine.md) |
 
 ### docs_outreach
 
 | ID | Registry status | Doc |
-| --- | --- | --- |
+| -------------------------------- | --------------- | --------------------------------------------------------------- |
 | `outreach_pitch_compliance_pack` | partial | [open](modules/docs_outreach/outreach_pitch_compliance_pack.md) |
 
 ### eco_global
 
 | ID | Registry status | Doc |
-| --- | --- | --- |
+| ---------------------------------- | --------------- | -------------------------------------------------------------- |
 | `global_eco_marketplace_awareness` | doctrine_only | [open](modules/eco_global/global_eco_marketplace_awareness.md) |
 | `z-ecosphere-transparency-report` | planned_stub | [open](modules/eco_global/z-ecosphere-transparency-report.md) |
 | `z-kbozsu` | planned_stub | [open](modules/eco_global/z-kbozsu.md) |
@@ -85,13 +85,13 @@
 ### economy_monetization
 
 | ID | Registry status | Doc |
-| --- | --- | --- |
+| ---------------------------- | ----------------- | ------------------------------------------------------------------ |
 | `ethical_monetization_layer` | decision_required | [open](modules/economy_monetization/ethical_monetization_layer.md) |
 
 ### family_companion
 
 | ID | Registry status | Doc |
-| --- | --- | --- |
+| ------------------------ | --------------- | ---------------------------------------------------------- |
 | `family_companion_grove` | planned_stub | [open](modules/family_companion/family_companion_grove.md) |
 | `rkpk-companion` | planned_stub | [open](modules/family_companion/rkpk-companion.md) |
 | `skk-companion` | planned_stub | [open](modules/family_companion/skk-companion.md) |
@@ -99,7 +99,7 @@
 ### gaming_compliance
 
 | ID | Registry status | Doc |
-| --- | --- | --- |
+| --------------------------- | --------------- | -------------------------------------------------------------- |
 | `gambling_prediction_voice` | safety_hold | [open](modules/gaming_compliance/gambling_prediction_voice.md) |
 | `roulette` | safety_hold | [open](modules/gaming_compliance/roulette.md) |
 | `roulette-calculator` | safety_hold | [open](modules/gaming_compliance/roulette-calculator.md) |
@@ -107,82 +107,82 @@
 ### governance_docs
 
 | ID | Registry status | Doc |
-| --- | --- | --- |
+| ----------------------------- | --------------- | -------------------------------------------------------------- |
 | `master_modules_register_doc` | implemented | [open](modules/governance_docs/master_modules_register_doc.md) |
 
 ### health_movement
 
 | ID | Registry status | Doc |
-| --- | --- | --- |
+| ---------------------------- | --------------- | ------------------------------------------------------------- |
 | `movement_health_coach_lite` | safety_hold | [open](modules/health_movement/movement_health_coach_lite.md) |
 
 ### love_social
 
 | ID | Registry status | Doc |
-| --- | --- | --- |
+| ------------------------- | --------------- | ------------------------------------------------------ |
 | `social-arena` | planned_stub | [open](modules/love_social/social-arena.md) |
 | `soulmate_baby_predictor` | safety_hold | [open](modules/love_social/soulmate_baby_predictor.md) |
 
 ### media_creative
 
 | ID | Registry status | Doc |
-| --- | --- | --- |
+| ----------------------- | --------------- | ------------------------------------------------------- |
 | `media_storytelling_os` | doctrine_only | [open](modules/media_creative/media_storytelling_os.md) |
 
 ### observer_reporting
 
 | ID | Registry status | Doc |
-| --- | --- | --- |
+| --------------------- | --------------- | --------------------------------------------------------- |
 | `zuno_coverage_audit` | implemented | [open](modules/observer_reporting/zuno_coverage_audit.md) |
 | `zuno_observer` | implemented | [open](modules/observer_reporting/zuno_observer.md) |
 
 ### planning_wellness
 
 | ID | Registry status | Doc |
-| --- | --- | --- |
+| ------------------- | --------------- | ------------------------------------------------------ |
 | `zen_scheduler_hub` | planned_stub | [open](modules/planning_wellness/zen_scheduler_hub.md) |
 
 ### product_interpersonal
 
 | ID | Registry status | Doc |
-| --- | --- | --- |
+| ---------------------- | --------------- | ------------------------------------------------------------- |
 | `mirrorsoul_hub_slice` | implemented | [open](modules/product_interpersonal/mirrorsoul_hub_slice.md) |
 
 ### products_gadgets
 
 | ID | Registry status | Doc |
-| --- | --- | --- |
+| -------------------------- | --------------- | ------------------------------------------------------------ |
 | `z_gadget_mirrors_product` | doctrine_only | [open](modules/products_gadgets/z_gadget_mirrors_product.md) |
 
 ### products_sovereign
 
 | ID | Registry status | Doc |
-| --- | --- | --- |
+| ----------------------------- | --------------- | ----------------------------------------------------------------- |
 | `sovereign_products_registry` | implemented | [open](modules/products_sovereign/sovereign_products_registry.md) |
 
 ### registry_eaii
 
 | ID | Registry status | Doc |
-| --- | --- | --- |
+| ---------------------- | --------------- | ----------------------------------------------------- |
 | `module_registry_hub` | implemented | [open](modules/registry_eaii/module_registry_hub.md) |
 | `registry_omni_verify` | implemented | [open](modules/registry_eaii/registry_omni_verify.md) |
 
 ### registry_engines
 
 | ID | Registry status | Doc |
-| --- | --- | --- |
+| -------------------------------- | --------------- | ------------------------------------------------------------------ |
 | `core_engines_registry_datafile` | implemented | [open](modules/registry_engines/core_engines_registry_datafile.md) |
 
 ### safety_emergency
 
 | ID | Registry status | Doc |
-| --- | --- | --- |
+| ------------------- | --------------- | ----------------------------------------------------- |
 | `gps_safety_module` | safety_hold | [open](modules/safety_emergency/gps_safety_module.md) |
 
 ### trust_audit_governance
 
 | ID | Registry status | Doc |
-| --- | --- | --- |
+| ------------------------------------ | --------------- | ---------------------------------------------------------------------------- |
 | `sepc-governance` | planned_stub | [open](modules/trust_audit_governance/sepc-governance.md) |
 | `z-adaptive-learning-phase3` | implemented | [open](modules/trust_audit_governance/z-adaptive-learning-phase3.md) |
 | `z-addon-dashboard-surface` | implemented | [open](modules/trust_audit_governance/z-addon-dashboard-surface.md) |
@@ -207,13 +207,13 @@
 ### trust_products
 
 | ID | Registry status | Doc |
-| --- | --- | --- |
+| ----------------------------- | --------------- | ------------------------------------------------------------- |
 | `public_trust_portal_lottery` | implemented | [open](modules/trust_products/public_trust_portal_lottery.md) |
 
 ## By registry status
 
 | Status | Count |
-| --- | ---: |
+| ----------------- | ----: |
 | implemented | 29 |
 | partial | 2 |
 | planned_stub | 24 |

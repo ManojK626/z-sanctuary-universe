@@ -5,7 +5,7 @@
 ## Deliverables
 
 | Item | Location |
-| --- | --- |
+| ------------------- | --------------------------------------------------------------------------------------------------------------------------- |
 | Policy | [`docs/Z_DOORWAY_3_TELEMETRY_POLICY.md`](Z_DOORWAY_3_TELEMETRY_POLICY.md) |
 | Example log (shape) | [`data/reports/z_doorway_session_log.example.jsonl`](../data/reports/z_doorway_session_log.example.jsonl) |
 | Opener updates | [`scripts/z_open_workspace_safe.ps1`](../scripts/z_open_workspace_safe.ps1) (`-SessionLog` with `-Apply` only) |
@@ -34,7 +34,7 @@ Evidence (hub gates from repo root):
 ## Posture checklist
 
 | Check | Confirm |
-| --- | --- |
+| ------------------------------------------------------------------------ | ------- |
 | Dry-run remains default | Yes |
 | `-Apply` still requires explicit `-Id` | Yes |
 | Session lines omit paths, secrets, env, tokens, output, project contents | Yes |

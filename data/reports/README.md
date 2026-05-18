@@ -35,6 +35,7 @@ The vault is indexed via:
 Single-source references used across reports, docs, and schedules to reduce drift:
 
 <!-- Z:CANONICAL_START -->
+
 - `z_final_status.json` (overall status)
 - `z_zuno_daily_report.md` (daily human summary)
 - `z_weekly_reflection.md` (weekly reflection)

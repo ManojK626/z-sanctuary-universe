@@ -3,7 +3,7 @@
 ## Review metadata
 
 | Field | Value |
-| --- | --- |
+| ----------------------------------- | --------------------------------------------------------------------------------------------------------------- |
 | **Review window** | 2026-05 |
 | **Review date (evidence snapshot)** | 2026-05-05 |
 | **Record type** | Docs-only evidence review (see [Z_HUB_2_1_MONTHLY_REVIEW_TEMPLATE.md](../Z_HUB_2_1_MONTHLY_REVIEW_TEMPLATE.md)) |
@@ -22,7 +22,7 @@ Framing: Logical Brains = **learning pathway**; Z-NUMEN = **pattern literacy**; 
 Run from `ZSanctuary_Universe` after refreshing reports:
 
 | Command | Role | Result (this review) |
-| --- | --- | --- |
+| ---------------------------------- | ---------------------------- | ---------------------------------------------------------------------------- |
 | `npm run z:cadence:logical-brains` | Allowlisted monitoring cycle | **GREEN** (exit 0); follow-up **CONTINUE_CADENCE** |
 | `npm run z:logical-brains:hub` | Logical Brains hub reference | **GREEN** |
 | `npm run z:numen:hub` | Z-NUMEN hub reference | **GREEN** |
@@ -36,7 +36,7 @@ Run from `ZSanctuary_Universe` after refreshing reports:
 ## Current signals (evidence files)
 
 | Evidence file | Key signal / note |
-| --- | --- |
+| --------------------------------------------------------- | ------------------------------------------------------------------------ |
 | `data/reports/z_cadence_cycle_report.json` | **GREEN**; `next_follow_up`: **CONTINUE_CADENCE** (not a release prompt) |
 | `data/reports/z_logical_brains_hub_reference_report.json` | **GREEN** |
 | `data/reports/z_numen_hub_reference_report.json` | **GREEN** |

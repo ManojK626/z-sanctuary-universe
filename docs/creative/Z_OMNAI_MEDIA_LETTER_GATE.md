@@ -5,7 +5,7 @@
 The **media letter gate** turns options **A–E** into **tracked, read-only readiness lanes** so AMK can see which letter is suggested next, which is **BLUE** (human commercial lane), which is **YELLOW** (missing input), and which is **GOLD** (safe hold) — without the hub **executing** recommendations or overriding AMK.
 
 | Letter | Lane |
-| ---- | ---- |
+| ------ | -------------------------------------------------------- |
 | **A** | Master media concept seed (`BUILD-2A`) |
 | **B** | Marketing campaign bundle (public or commercial claims) |
 | **C** | Tool or dashboard prototype bundle (internal-first) |
@@ -31,7 +31,7 @@ If **`data/z_omnai_master_media_concept_seed.json`** still contains the substrin
 ## Colour logic (summary)
 
 | Signal | Meaning |
-| ---- | ---- |
+| ---------- | -------------------------------------------- |
 | **GREEN** | Safe internal next step |
 | **YELLOW** | Missing inputs or minor gap |
 | **BLUE** | Human decision for public or commercial lane |

@@ -5,9 +5,11 @@
 - Checks pass: **6/7**
 
 ## Guidance
+
 - Formula posture, spine integrity, and base architecture are aligned.
 
 ## Checks
+
 - [x] formula_posture_present: posture=watch
 - [x] drp_filter_strength: drp_filter=80
 - [ ] z_ui_readiness_strength: z_ui_readiness=76

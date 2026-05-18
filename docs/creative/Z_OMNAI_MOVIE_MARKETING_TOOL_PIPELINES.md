@@ -47,7 +47,7 @@ Narrative, traction, roadmap storyboard, economics **as references to authoritat
 ## Pipeline doc map
 
 | Topic | Primary doc |
-| ----- | ----------- |
+| ---------------- | -------------------------------------------------------------------------------- |
 | System overview | [Z_OMNAI_CREATIVE_PRODUCTION_SYSTEM.md](./Z_OMNAI_CREATIVE_PRODUCTION_SYSTEM.md) |
 | Factory metaphor | [Z_DIGITAL_ADVANTAGE_FACTORY.md](./Z_DIGITAL_ADVANTAGE_FACTORY.md) |
 | Phase receipt | [PHASE_Z_OMNAI_1_GREEN_RECEIPT.md](./PHASE_Z_OMNAI_1_GREEN_RECEIPT.md) |

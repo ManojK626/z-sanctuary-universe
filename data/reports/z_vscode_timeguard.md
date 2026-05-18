@@ -6,4 +6,5 @@ Scanned files: 26
 Findings: 0
 
 ## Findings
+
 - none

@@ -3,7 +3,7 @@
 ## Registry Identity
 
 | Field | Value |
-| --- | --- |
+| --------------------- | ---------------------------- |
 | **ID** | `ethical_monetization_layer` |
 | **Category** | economy_monetization |
 | **Registry status** | decision_required |

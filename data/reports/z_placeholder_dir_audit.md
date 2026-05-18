@@ -5,6 +5,7 @@ Status: GREEN
 Pass: 3/3
 
 ## Entries
+
 - [x] products/Z-OCTAVE/hardware/shell-geometry · exists=true · is_dir=true · item_count=0
 - [x] products/Z-OCTAVE/hardware/textile-layers · exists=true · is_dir=true · item_count=0
 - [x] products/Z-OCTAVE/hardware/variants · exists=true · is_dir=true · item_count=0

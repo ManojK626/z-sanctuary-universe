@@ -12,7 +12,7 @@
 ## Artefacts
 
 | Path | Role |
-| ---- | ---- |
+| --------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | `data/z_omnai_master_media_concept_seed.json` | Editable seed: message, audience, tone, world, characters, trailer beats, song hooks, podcast angle, hooks, poster direction, PDF angle, rights notes, AMK questions |
 | `scripts/z_omnai_master_media_seed_generate.mjs` | Generator — reads seed, bundle, workbench, templates |
 | `data/reports/z_omnai_master_media_seed_report.{json,md}` | Combined prep summary for AMK |

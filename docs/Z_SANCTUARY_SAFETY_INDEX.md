@@ -7,7 +7,7 @@
 **Evidence:** files under `docs/safety/`.
 
 | Document | Path |
-| --- | --- |
+| ----------------------------------- | --------------------------------------------------------------------------------------------- |
 | BABY PREDICTOR CONSENT BOUNDARY.md | [docs/safety/BABY_PREDICTOR_CONSENT_BOUNDARY.md](safety/BABY_PREDICTOR_CONSENT_BOUNDARY.md) |
 | GAMBLING PREDICTION BOUNDARY.md | [docs/safety/GAMBLING_PREDICTION_BOUNDARY.md](safety/GAMBLING_PREDICTION_BOUNDARY.md) |
 | LOCATION CAMERA MIC BOUNDARY.md | [docs/safety/LOCATION_CAMERA_MIC_BOUNDARY.md](safety/LOCATION_CAMERA_MIC_BOUNDARY.md) |

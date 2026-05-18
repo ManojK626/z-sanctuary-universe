@@ -6,7 +6,7 @@ Overall status: **AMBER**
 Readiness: 4/4 | P1 open: 0 | Trust: 90 | GO/NO-GO: GO | Enforcer: ALLOW_PROGRESS
 
 | System | Color | Stage | Handoff Ready | Follow-up Owner | Next Required Action |
-| --- | --- | --- | --- | --- | --- |
+| -------------------------- | ----- | -------- | ------------- | ----------------------- | --------------------------------------------------------------------------------------------------- |
 | Z-Execution Enforcer | green | complete | yes | Z-Super Overseer | Keep enforcer checks current |
 | Release Gate | green | complete | yes | Z-EAII | Remediate freshness and trust blockers, then rerun release gate |
 | GO/NO-GO Checklist | green | complete | yes | Z-Hierarchy Chief | Resolve failed gates until verdict is GO |
@@ -22,6 +22,7 @@ Readiness: 4/4 | P1 open: 0 | Trust: 90 | GO/NO-GO: GO | Enforcer: ALLOW_PROGRES
 | Lab + Folder Manager Boost | green | complete | yes | Z-Labs / Folder Manager | Resolve dormant signals and keep lab/folder heartbeat active |
 
 ## Leaf Feedback
+
 - z_execution_enforcer: No blocking signals detected. (data/reports/z_execution_enforcer.json)
 - release_gate: no extra details (data/reports/z_release_gate_summary.json)
 - go_no_go: no extra details (data/reports/z_go_no_go_release_checklist.json)
@@ -35,4 +36,3 @@ Readiness: 4/4 | P1 open: 0 | Trust: 90 | GO/NO-GO: GO | Enforcer: ALLOW_PROGRES
 - qosmei_core_signal: posture=clear; composite=100; lane=optimize (data/reports/z_qosmei_core_signal.json)
 - ide_commflow_guard: mismatches=1387 (data/reports/z_ide_commflow_guard.json)
 - lab_folder_boost: dormant=0 (data/reports/z_lab_folder_manager_boost.json)
-

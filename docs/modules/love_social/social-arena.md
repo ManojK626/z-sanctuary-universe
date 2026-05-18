@@ -3,7 +3,7 @@
 ## Registry Identity
 
 | Field | Value |
-| --- | --- |
+| --------------------- | -------------- |
 | **ID** | `social-arena` |
 | **Category** | love_social |
 | **Registry status** | planned_stub |

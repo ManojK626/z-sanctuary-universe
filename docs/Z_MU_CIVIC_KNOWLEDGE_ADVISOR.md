@@ -16,7 +16,7 @@ I cannot accuse, harass, incite, impersonate government, give legal advice as a 
 ## Truth labels (every answer must carry one)
 
 | Label | Meaning |
-| ------- | --------- |
+| ------------------- | -------------------------------------------------------------------------------------------- |
 | **verified** | Anchored to official or otherwise reviewed primary material in the hub ledger/citation path. |
 | **needs_citation** | Not ready for public factual claim; requires human-curated sources. |
 | **procedural** | How to approach an institution safely; still not legal advice. |
@@ -27,7 +27,7 @@ I cannot accuse, harass, incite, impersonate government, give legal advice as a 
 ## Modes (template-backed only in this phase)
 
 | Mode | Intent |
-| ------ | -------- |
+| --------------------------- | ------------------------------------------------------- |
 | **learn_governance** | Neutral institutional literacy. |
 | **understand_my_situation** | Clarifying questions; safe next steps. |
 | **claim_checker** | Draft claim ledger posture; default **needs citation**. |
@@ -44,7 +44,7 @@ Future implementations should log **decisions and source pointers**, not private
 ## Artifacts
 
 | Path | Role |
-| ------ | ------ |
+| -------------------------------------------------- | ----------------------------------------- |
 | `data/z_mu_advisor_policy.json` | Framework flags and allowed labels/modes. |
 | `data/z_mu_advisor_answer_templates.json` | Template library (no runtime LLM). |
 | `data/examples/z_mu_advisor_sample_questions.json` | Classifier fixtures. |
@@ -65,11 +65,11 @@ npm run z:mu:advisor
 
 ## Roadmap (not in this phase)
 
-- **Phase 2:** Local static Q&A selecting approved templates (still no internet).  
+- **Phase 2:** Local static Q&A selecting approved templates (still no internet).
 - **Phase 3:** Governed model/RAG only after AMK charter, privacy policy, and review queues.
 
 ## Related
 
-- Truth engine: [Z_MAURITIANS_UNITE_CIVIC_TRUTH_ENGINE.md](Z_MAURITIANS_UNITE_CIVIC_TRUTH_ENGINE.md)  
-- Safety: [Z_MAURITIANS_UNITE_SAFETY_AND_PEACE_POLICY.md](Z_MAURITIANS_UNITE_SAFETY_AND_PEACE_POLICY.md), [Z_MU_ADVISOR_SAFETY_AND_AUDIT_POLICY.md](Z_MU_ADVISOR_SAFETY_AND_AUDIT_POLICY.md)  
+- Truth engine: [Z_MAURITIANS_UNITE_CIVIC_TRUTH_ENGINE.md](Z_MAURITIANS_UNITE_CIVIC_TRUTH_ENGINE.md)
+- Safety: [Z_MAURITIANS_UNITE_SAFETY_AND_PEACE_POLICY.md](Z_MAURITIANS_UNITE_SAFETY_AND_PEACE_POLICY.md), [Z_MU_ADVISOR_SAFETY_AND_AUDIT_POLICY.md](Z_MU_ADVISOR_SAFETY_AND_AUDIT_POLICY.md)
 - Receipt: [PHASE_Z_MU_ADVISOR_1_GREEN_RECEIPT.md](PHASE_Z_MU_ADVISOR_1_GREEN_RECEIPT.md)
