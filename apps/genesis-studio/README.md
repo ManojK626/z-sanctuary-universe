@@ -62,6 +62,16 @@ Shared constants and Zod schemas: `lib/creative-profile.ts`
 
 Supabase: `projects.life_stage`, `projects.tone`, `projects.creative_profile` (see `supabase/migrations/001_creative_profile_columns.sql`).
 
+## Storyboard Provider Shell
+
+**Status:** stub-only — no Replicate, SDXL, Flux, or real image generation.
+
+- Shared `lib/storyboard-profile.ts` — style presets, Zod schemas, `buildStoryboardPrompt()`
+- `POST /api/generate-storyboard` — mock frames with `promptPreview`, `imageUrl: ""`, and governance (no external URLs)
+- Storyboard page: style preset selector, mock frame cards, local state only
+- Supabase: `scenes.storyboard_style`, `storyboard_prompt`, `storyboard_asset_id` (see `supabase/migrations/002_storyboard_scene_columns.sql`)
+- Future images → **`assets` table only**, not URLs on `scenes`
+
 ## Phase 2B — Narrative Audio Intelligence Shell
 
 **Status:** stub-only — no TTS, music generation, uploads, billing, or provider SDKs.
@@ -77,6 +87,8 @@ Supabase: `projects.life_stage`, `projects.tone`, `projects.creative_profile` (s
 
 `POST /api/generate-script` with `{ "prompt": "...", "lifeStage": "prime", "tone": "cinematic" }` returns mock JSON with `creativeProfile`, `scenes[]`, and `governance`.
 Comment in route marks where OpenAI / OMNAI adapter would run **after DRP + human approval**.
+
+`POST /api/generate-storyboard` with `{ "sceneId", "sceneText", "stylePreset" }` returns mock `promptPreview`, empty `imageUrl`, and stub governance (`providerStatus`, `humanReviewRequired`, `drpSafe`).
 
 `POST /api/generate-audio-plan` with `{ "sceneId", "sceneText", "narrationStyle", "soundtrackMood" }` returns mock `cues[]` and stub governance.
 
