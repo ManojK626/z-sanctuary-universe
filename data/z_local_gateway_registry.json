@@ -1,0 +1,123 @@
+{
+  "schema": "z.local.gateway.registry.v1",
+  "registry_name": "Z-LOCAL-GATEWAY-DIRECTORY",
+  "phase": "E2",
+  "mode": "read_only_directory",
+  "golden_law": "Gateway observes and guides. It does not auto-launch the universe.",
+  "runtime_safety_flags": {
+    "auto_start_services": false,
+    "kill_processes": false,
+    "background_daemons": false,
+    "cloudflare_mutation": false,
+    "deploy": false,
+    "secrets_write": false,
+    "database_migration": false,
+    "replit_restoration": false
+  },
+  "minibot_roles": [
+    "Path Bot",
+    "Port Bot",
+    "HTML Bot",
+    "API Bot",
+    "Env Bot",
+    "Door Bot",
+    "Boundary Bot",
+    "Smoke Bot"
+  ],
+  "projects": [
+    {
+      "id": "roulette_data_analyzer",
+      "name": "Roulette Data Analyzer",
+      "status": "active",
+      "root": "C:/Cursor Projects Organiser/Z-Sanctuary_Replit/Roulette-Data-Analyzer",
+      "type": "dashboard_plus_api",
+      "hub_registry_alias": "replit-roulette-z-amk-goku-mdcp",
+      "frontend": {
+        "command": "VITE_API_URL=http://127.0.0.1:18080 corepack pnpm run dev:dashboard",
+        "command_alt_port_5500": "corepack pnpm run dev:dashboard:5500",
+        "command_default": "corepack pnpm run dev:dashboard",
+        "cwd": "C:/Cursor Projects Organiser/Z-Sanctuary_Replit/Roulette-Data-Analyzer",
+        "port_default": 5190,
+        "port_alt_vite": 5500,
+        "port_env": "PORT",
+        "url_default": "http://127.0.0.1:5190/",
+        "url_alt_vite": "http://127.0.0.1:5500/",
+        "url_note": "Use exact Local: URL printed by Vite in terminal when PORT unset."
+      },
+      "api": {
+        "command": "set PORT=18080&& corepack pnpm run dev:api",
+        "command_powershell": "$env:PORT=18080; corepack pnpm run dev:api",
+        "command_default": "corepack pnpm run dev:api",
+        "cwd": "C:/Cursor Projects Organiser/Z-Sanctuary_Replit/Roulette-Data-Analyzer",
+        "port_operator": 18080,
+        "port_repo_default": 8080,
+        "port_env": "PORT",
+        "health_path": "/api/healthz",
+        "health_url_operator": "http://127.0.0.1:18080/api/healthz",
+        "health_url_repo_default": "http://127.0.0.1:8080/api/healthz"
+      },
+      "env": {
+        "vite_api_url_operator": "http://127.0.0.1:18080",
+        "vite_api_url_note": "Set VITE_API_URL when API runs on non-default port before dev:dashboard."
+      },
+      "html_entrypoints": [
+        {
+          "path": "artifacts/roulette-dashboard/index.html",
+          "launch": "vite_only",
+          "note": "Do not open with VS Code Live Server — use pnpm dev:dashboard."
+        }
+      ],
+      "docs": ["docs/PORT_AND_LAUNCH_RULES.md", "replit.md"],
+      "do_not_use": [
+        {
+          "pattern": "vscode_live_server",
+          "reason": "Live Server serves static files; does not run Vite bundler — endless loading.",
+          "example": "http://127.0.0.1:5500/.../artifacts/roulette-dashboard/index.html"
+        },
+        {
+          "pattern": "wrong_port_5173",
+          "reason": "Port 5173 is often another product (e.g. XL2) — not Roulette default.",
+          "example": "http://127.0.0.1:5173/"
+        }
+      ],
+      "boundary_notes": [
+        "Not Genesis Studio (port 3010).",
+        "Not Z-Sanctuary hub dashboard static files.",
+        "API health may return 503 degraded without DB — still proves route is Roulette API."
+      ]
+    },
+    {
+      "id": "genesis_studio",
+      "name": "Genesis Studio — OMNAI Creative Engine",
+      "status": "planned",
+      "root": "C:/Cursor Projects Organiser/Z_Sanctuary_Universe/apps/genesis-studio",
+      "type": "nextjs_app",
+      "frontend": {
+        "command": "npm run dev",
+        "cwd": "C:/Cursor Projects Organiser/Z_Sanctuary_Universe/apps/genesis-studio",
+        "port_default": 3010,
+        "url_default": "http://localhost:3010/"
+      },
+      "docs": [
+        "apps/genesis-studio/README.md",
+        "apps/genesis-studio/GENESIS_STUDIO_OMNAI_ROADMAP.md"
+      ],
+      "boundary_notes": [
+        "Stub providers only until chartered.",
+        "Do not confuse with Roulette Vite dashboard."
+      ]
+    },
+    {
+      "id": "z_sanctuary_hub",
+      "name": "Z-Sanctuary Universe (governance hub)",
+      "status": "internal",
+      "root": "C:/Cursor Projects Organiser/Z_Sanctuary_Universe",
+      "type": "governance_hub",
+      "docs": ["docs/AI_BUILDER_CONTEXT.md", "docs/PHASE_E2_Z_LOCAL_GATEWAY_DIRECTORY.md"],
+      "boundary_notes": [
+        "Registry host — not a substitute for satellite app dev servers.",
+        "Use doorway scripts for workspace open; use gateway registry for port/path truth."
+      ]
+    }
+  ]
+}

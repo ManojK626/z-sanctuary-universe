@@ -149,6 +149,7 @@ npm run z:car2
 | [AMK_AI_TEAM_INDICATOR_SYNC_ROUTER.md](AMK_AI_TEAM_INDICATOR_SYNC_ROUTER.md) | AMK-AI-SYNC-1 indicator drift observer + routing packets — Phase 1 never auto-edits indicators from the validator. |
 | [Z_AI_FUSION_CAPABILITY_MAP.md](Z_AI_FUSION_CAPABILITY_MAP.md) | Z-AI-FUSION-MAP-1 overlap governance map — fusion suggestions only (**no runtime merge auto-execution**). |
 | [Z_STILLNESS_MODE_AI_LEARNING_PATHWAY.md](Z_STILLNESS_MODE_AI_LEARNING_PATHWAY.md) | Z-STILLNESS-LEARN-1 idle alignment pathway — learn and report only (**no background automation**). |
+| [PHASE_E2_Z_LOCAL_GATEWAY_DIRECTORY.md](PHASE_E2_Z_LOCAL_GATEWAY_DIRECTORY.md) | E2 local gateway directory — `data/z_local_gateway_registry.json`; read-only path/port/URL map (**no auto-launch**). |
 | [Z_SANCTUARY_ECOSYSTEM_BIOLOGY_MAP.md](Z_SANCTUARY_ECOSYSTEM_BIOLOGY_MAP.md) | Ecosystem biology metaphor — roots, trees, law stack, borders (**not** runtime control). |
 | [design/Z_UNIVERSAL_INTERACTION_LANGUAGE.md](design/Z_UNIVERSAL_INTERACTION_LANGUAGE.md) | Z-UIL-1 universal interaction language — shared identity vs entitlement separation; complements Z-VIL (**docs only**). |
 | [LAWGRID_1A_GOVERNANCE_OBSERVATORY.md](LAWGRID_1A_GOVERNANCE_OBSERVATORY.md) | LAWGRID-1A read-only governance observatory — spine, constellation map, catalog/benchmark/ZSX/ZMV/SSWS/AMK ingest (**no runtime authority**). |
