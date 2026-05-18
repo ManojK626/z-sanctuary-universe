@@ -52,7 +52,7 @@ Compact entry points for **read-only** hub registries and AMK-facing evidence. F
 | Z-STILLNESS-LEARN-1 AI learning pathway | [Z_STILLNESS_MODE_AI_LEARNING_PATHWAY.md](Z_STILLNESS_MODE_AI_LEARNING_PATHWAY.md) | `npm run z:stillness:learn` |
 | Z-STILLNESS-LEARN-1 ecosystem biology map | [Z_SANCTUARY_ECOSYSTEM_BIOLOGY_MAP.md](Z_SANCTUARY_ECOSYSTEM_BIOLOGY_MAP.md) | — |
 | Z-STILLNESS-LEARN-1 green receipt | [PHASE_Z_STILLNESS_LEARN_1_GREEN_RECEIPT.md](PHASE_Z_STILLNESS_LEARN_1_GREEN_RECEIPT.md) | — |
-| E2 Z-LOCAL-GATEWAY-DIRECTORY | [PHASE_E2_Z_LOCAL_GATEWAY_DIRECTORY.md](PHASE_E2_Z_LOCAL_GATEWAY_DIRECTORY.md) | `npm run z:local:gateway:check` |
+| E2 Z-LOCAL-GATEWAY-DIRECTORY | [PHASE_E2_Z_LOCAL_GATEWAY_DIRECTORY.md](PHASE_E2_Z_LOCAL_GATEWAY_DIRECTORY.md) | `npm run z:local:gateway:check`, `npm run z:local:gateway:status`; panel `dashboard/panels/z-local-gateway-readonly.html` |
 | Z-LEGAL-OPS-1 legal evidence core | [Z_LEGAL_EVIDENCE_CORE.md](Z_LEGAL_EVIDENCE_CORE.md) | `npm run z:legal:ops` |
 | Z-LEGAL-OPS-1 lawyer workstation control centre | [Z_LAWYER_WORKSTATION_CONTROL_CENTRE.md](Z_LAWYER_WORKSTATION_CONTROL_CENTRE.md) | — |
 | Z-LEGAL-OPS-1 guardian legal circle | [Z_GUARDIAN_LEGAL_CIRCLE.md](Z_GUARDIAN_LEGAL_CIRCLE.md) | — |

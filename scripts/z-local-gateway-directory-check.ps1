@@ -180,9 +180,16 @@ foreach ($p in $projects) {
     }
 
     if ($Probe) {
-      foreach ($label in @("health_url_operator", "health_url_repo_default")) {
+      $probeLabels = @("health_url_operator", "health_url_repo_default")
+      $operatorPortUp = $false
+      if ($apiPortOp) { $operatorPortUp = Test-TcpPortInUse -Port ([int]$apiPortOp) }
+      foreach ($label in $probeLabels) {
         $url = Get-Prop $api $label
         if (-not $url) { continue }
+        if ($label -eq "health_url_repo_default" -and $operatorPortUp) {
+          Write-Bot -Bot "API Bot" -Message "SKIP $label (operator port in use - expected)"
+          continue
+        }
         $result = Test-HealthUrl -Url $url
         if ($result.Ok) {
           Write-Bot -Bot "API Bot" -Message "PROBE OK $label - $url (HTTP $($result.Status))"
@@ -191,8 +198,9 @@ foreach ($p in $projects) {
           if ($result.Status) { $httpNote = "(HTTP $($result.Status))" }
           Write-Bot -Bot "API Bot" -Message "PROBE FAIL $label - $url $httpNote"
           if ($result.Error) { Write-Bot -Bot "API Bot" -Message "  $($result.Error)" }
-          if ($overall -eq $verdictSafe) { $overall = $verdictNeedsHuman }
-          [void]$issues.Add("$($p.id): probe failed $label")
+          $isCritical = ($label -eq "health_url_operator") -or (-not $operatorPortUp)
+          if ($isCritical -and $overall -eq $verdictSafe) { $overall = $verdictNeedsHuman }
+          if ($isCritical) { [void]$issues.Add("$($p.id): probe failed $label") }
         }
       }
     } else {

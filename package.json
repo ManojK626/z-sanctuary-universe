@@ -158,6 +158,7 @@
     "z:ssws:requirements": "node scripts/z_ssws_launch_requirements_check.mjs",
     "z:ssws:cockpit": "node scripts/z_ssws_cockpit_status.mjs",
     "z:local:gateway:check": "powershell -ExecutionPolicy Bypass -File scripts/z-local-gateway-directory-check.ps1",
+    "z:local:gateway:status": "node scripts/z_local_gateway_status.mjs",
     "z:doorway:status": "node scripts/z_doorway_workspace_status.mjs",
     "z:crystal:dna:drift": "node scripts/z_crystal_dna_drift_check.mjs",
     "z:anydevice:simulate": "node scripts/z_anydevice_simulate.mjs",

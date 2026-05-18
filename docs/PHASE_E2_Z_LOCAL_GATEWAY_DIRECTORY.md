@@ -23,6 +23,8 @@ project → folder path → app type → command → port → URL → safe statu
 ```text
 Gateway observes and guides.
 It does not auto-launch the universe.
+Roulette display = http://127.0.0.1:5190/
+Do not use 5500 for Roulette SPA.
 ```
 
 | Layer                                         | Role                                                      |
@@ -30,7 +32,9 @@ It does not auto-launch the universe.
 | `data/z_local_gateway_registry.json`          | Truth map (projects, ports, commands, forbidden patterns) |
 | `scripts/z-local-gateway-directory-check.ps1` | Read-only checks + printed open commands                  |
 | Minibot labels                                | Path, Port, HTML, API, Env, Door, Boundary, Smoke         |
-| Reports                                       | Status only — stdout / optional future JSON report        |
+| `scripts/z_local_gateway_status.mjs`          | Writes `data/reports/z_local_gateway_status.{json,md}`    |
+| `dashboard/panels/z-local-gateway-readonly.html` | Read-only doorway view (HTTP from hub; no auto-start)  |
+| Reports                                       | Status JSON + stdout from check script                    |
 | Human (AMK)                                   | Decides what to start and open                            |
 
 ## Minibot roles
@@ -72,7 +76,10 @@ Or:
 
 ```bash
 npm run z:local:gateway:check
+npm run z:local:gateway:status
 ```
+
+**Display panel (read-only):** `dashboard/panels/z-local-gateway-readonly.html` over HTTP from hub root (refresh status report first).
 
 Flags:
 
@@ -124,10 +131,9 @@ corepack pnpm run build
 | **NEEDS HUMAN DECISION** | Path missing, ports down, or health probe failed — operator chooses next step |
 | **BLOCKED**              | Registry parse failure or policy violation                                    |
 
-## Next lanes (not E2)
+## Next lanes (not E2.1)
 
 - Controlled `-Start` flag per project (separate charter)
-- JSON report under `data/reports/`
 - Additional registry entries from `z_pc_root_projects.json` sync (human-reviewed)
 
 ## Related

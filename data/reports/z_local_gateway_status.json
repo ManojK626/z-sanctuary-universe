@@ -1,0 +1,65 @@
+{
+  "schema": "z.local.gateway.status.v1",
+  "generated_at": "2026-05-18T15:26:29.144Z",
+  "golden_law": "Gateway observes and guides. It does not auto-launch the universe.",
+  "overall_verdict": "SAFE",
+  "display_ready_count": 1,
+  "projects": [
+    {
+      "id": "roulette_data_analyzer",
+      "name": "Roulette Data Analyzer",
+      "status": "active",
+      "root": "C:/Cursor Projects Organiser/Z-Sanctuary_Replit/Roulette-Data-Analyzer",
+      "path_exists": true,
+      "frontend": {
+        "port_default": 5190,
+        "url_default": "http://127.0.0.1:5190/",
+        "listening": true
+      },
+      "api": {
+        "port_operator": 18080,
+        "port_repo_default": 8080,
+        "operator_listening": true,
+        "repo_default_listening": true,
+        "health_url": "http://127.0.0.1:18080/api/healthz",
+        "health": {
+          "ok": true,
+          "status": 200
+        }
+      },
+      "open_url": "http://127.0.0.1:5190/",
+      "start_command": "VITE_API_URL=http://127.0.0.1:18080 corepack pnpm run dev:dashboard"
+    },
+    {
+      "id": "genesis_studio",
+      "name": "Genesis Studio — OMNAI Creative Engine",
+      "status": "planned",
+      "root": "C:/Cursor Projects Organiser/Z_Sanctuary_Universe/apps/genesis-studio",
+      "path_exists": true,
+      "frontend": {
+        "port_default": 3010,
+        "url_default": "http://localhost:3010/",
+        "listening": false
+      },
+      "api": null,
+      "open_url": "http://localhost:3010/",
+      "start_command": "npm run dev"
+    },
+    {
+      "id": "z_sanctuary_hub",
+      "name": "Z-Sanctuary Universe (governance hub)",
+      "status": "internal",
+      "root": "C:/Cursor Projects Organiser/Z_Sanctuary_Universe",
+      "path_exists": true,
+      "frontend": null,
+      "api": null,
+      "open_url": null,
+      "start_command": null
+    }
+  ],
+  "operator_notes": [
+    "Gateway observes only — does not auto-start services.",
+    "For Roulette: API on 18080 + VITE_API_URL + dev:dashboard for display on 5190.",
+    "Do not use VS Code Live Server on index.html."
+  ]
+}

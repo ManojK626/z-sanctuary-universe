@@ -1,0 +1,226 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Z-Local Gateway (read-only)</title>
+    <style>
+      :root {
+        --bg: #0b1020;
+        --card: #141b2f;
+        --text: #e8ecf4;
+        --muted: #9aa8c7;
+        --accent: #6ee7b7;
+        --warn: #fbbf24;
+        --bad: #f87171;
+      }
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        margin: 0;
+        font-family: system-ui, sans-serif;
+        background: var(--bg);
+        color: var(--text);
+        padding: 1rem 1.25rem 2rem;
+      }
+      h1 {
+        font-size: 1.25rem;
+        margin: 0 0 0.25rem;
+      }
+      .hint {
+        color: var(--muted);
+        font-size: 0.85rem;
+        max-width: 52rem;
+      }
+      .toolbar {
+        margin: 1rem 0;
+        display: flex;
+        gap: 0.5rem;
+        flex-wrap: wrap;
+        align-items: center;
+      }
+      button {
+        background: #243055;
+        color: var(--text);
+        border: 1px solid #3d4f7a;
+        border-radius: 6px;
+        padding: 0.4rem 0.75rem;
+        cursor: pointer;
+      }
+      button:hover {
+        border-color: var(--accent);
+      }
+      .verdict {
+        font-weight: 700;
+        padding: 0.35rem 0.6rem;
+        border-radius: 6px;
+        background: #243055;
+      }
+      .verdict.safe {
+        color: var(--accent);
+      }
+      .verdict.nhd {
+        color: var(--warn);
+      }
+      .grid {
+        display: grid;
+        gap: 1rem;
+        grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+      }
+      .card {
+        background: var(--card);
+        border: 1px solid #2a3558;
+        border-radius: 10px;
+        padding: 1rem;
+      }
+      .card h2 {
+        margin: 0 0 0.5rem;
+        font-size: 1rem;
+      }
+      .mono {
+        font-family: ui-monospace, monospace;
+        font-size: 0.8rem;
+        word-break: break-all;
+      }
+      .pill {
+        display: inline-block;
+        font-size: 0.7rem;
+        padding: 0.15rem 0.45rem;
+        border-radius: 4px;
+        margin-right: 0.35rem;
+        background: #243055;
+        color: var(--muted);
+      }
+      .pill.on {
+        color: var(--accent);
+      }
+      .pill.off {
+        color: var(--bad);
+      }
+      .err {
+        color: var(--bad);
+        margin: 0.5rem 0;
+      }
+      a {
+        color: #93c5fd;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Z-Local Gateway Directory</h1>
+      <p class="hint">
+        Phase E2 — read-only. Shows registry + last status report. Does not start services, kill
+        processes, or deploy. Open project URLs only after you run the start commands in a terminal.
+      </p>
+    </header>
+    <div class="toolbar">
+      <button type="button" id="btnRefresh">Refresh data</button>
+      <span id="verdict" class="verdict">—</span>
+      <span class="hint"
+        >Run <span class="mono">npm run z:local:gateway:status</span> from hub root to refresh
+        ports/health.</span
+      >
+    </div>
+    <p id="loadError" class="err" role="alert" hidden></p>
+    <div id="projects" class="grid"></div>
+    <script>
+      const REGISTRY_URL = '../../data/z_local_gateway_registry.json';
+      const STATUS_URL = '../../data/reports/z_local_gateway_status.json';
+
+      const elProjects = document.getElementById('projects');
+      const elVerdict = document.getElementById('verdict');
+      const elError = document.getElementById('loadError');
+
+      async function loadJson(url) {
+        const res = await fetch(url, { cache: 'no-store' });
+        if (!res.ok) throw new Error(url + ' HTTP ' + res.status);
+        return res.json();
+      }
+
+      function pill(label, on) {
+        return '<span class="pill ' + (on ? 'on' : 'off') + '">' + label + '</span>';
+      }
+
+      function render(registry, status) {
+        elError.hidden = true;
+        const byId = {};
+        for (const p of status?.projects ?? []) byId[p.id] = p;
+
+        const verdict = status?.overall_verdict ?? '—';
+        elVerdict.textContent = 'Verdict: ' + verdict;
+        elVerdict.className = 'verdict ' + (verdict === 'SAFE' ? 'safe' : 'nhd');
+
+        elProjects.innerHTML = '';
+        for (const reg of registry.projects ?? []) {
+          const live = byId[reg.id];
+          const card = document.createElement('article');
+          card.className = 'card';
+          const feListen = live?.frontend?.listening;
+          const apiListen = live?.api?.operator_listening ?? live?.api?.repo_default_listening;
+          const healthOk = live?.api?.health?.ok;
+          let html = '<h2>' + escapeHtml(reg.name) + '</h2>';
+          html += '<p><span class="pill">' + escapeHtml(reg.status) + '</span></p>';
+          if (live?.frontend) {
+            html +=
+              '<p>' +
+              pill('FE :' + live.frontend.port_default, feListen) +
+              (feListen && reg.frontend?.url_default
+                ? ' <a href="' +
+                  escapeHtml(reg.frontend.url_default) +
+                  '" target="_blank" rel="noopener">Open</a>'
+                : '') +
+              '</p>';
+          }
+          if (live?.api) {
+            html +=
+              '<p>' +
+              pill('API op :' + (live.api.port_operator ?? '—'), live.api.operator_listening) +
+              pill(
+                'API def :' + (live.api.port_repo_default ?? '—'),
+                live.api.repo_default_listening
+              ) +
+              (healthOk
+                ? pill('health OK', true)
+                : live.api.health
+                  ? pill('health fail', false)
+                  : '') +
+              '</p>';
+          }
+          const start = live?.start_command ?? reg.frontend?.command ?? reg.api?.command_powershell;
+          if (start) html += '<p class="mono">' + escapeHtml(start) + '</p>';
+          if (reg.do_not_use?.length) {
+            html += '<p class="hint">Avoid: ' + escapeHtml(reg.do_not_use[0].pattern) + '</p>';
+          }
+          card.innerHTML = html;
+          elProjects.appendChild(card);
+        }
+      }
+
+      function escapeHtml(s) {
+        return String(s)
+          .replace(/&/g, '&amp;')
+          .replace(/</g, '&lt;')
+          .replace(/>/g, '&gt;')
+          .replace(/"/g, '&quot;');
+      }
+
+      async function refresh() {
+        try {
+          const [registry, status] = await Promise.all([
+            loadJson(REGISTRY_URL),
+            loadJson(STATUS_URL).catch(() => null),
+          ]);
+          render(registry, status);
+        } catch (e) {
+          elError.textContent = String(e.message || e);
+          elError.hidden = false;
+        }
+      }
+
+      document.getElementById('btnRefresh').addEventListener('click', refresh);
+      refresh();
+    </script>
+  </body>
+</html>
