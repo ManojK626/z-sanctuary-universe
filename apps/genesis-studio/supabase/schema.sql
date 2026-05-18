@@ -22,6 +22,9 @@ create table if not exists public.scenes (
   title text not null,
   script_text text,
   order_index int not null default 0,
+  storyboard_style text,
+  storyboard_prompt text,
+  storyboard_asset_id uuid,
   created_at timestamptz not null default now()
 );
 
