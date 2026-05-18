@@ -1,0 +1,155 @@
+{
+  "schema": "z.ctt.learning.capability.registry.v1",
+  "registry_name": "Z-CTT Learning & Content Quality Engine",
+  "phase": "ZCTT-1",
+  "mode": "doctrine_and_metadata_only",
+  "lane_id": "Z-CTT",
+  "purpose": "Cross-ecosystem learning and content-quality layer — not Genesis creative engine core",
+  "golden_law": {
+    "safe_wording": "supports learning, creativity, reflection, and focus",
+    "forbidden_framing": [
+      "guarantees cognitive improvement",
+      "diagnoses attention or memory issues",
+      "treats stress or anxiety",
+      "therapy or medical claims"
+    ]
+  },
+  "runtime_safety_flags": {
+    "lms_integration": false,
+    "external_course_apis": false,
+    "user_profiling": false,
+    "behavioral_tracking": false,
+    "recommender_algorithms": false,
+    "neurofeedback_tools": false,
+    "evaluator_reputation_system": false,
+    "minor_competition_loops": false,
+    "live_provider_calls": false,
+    "background_sync": false
+  },
+  "pipeline_doctrine": [
+    "brain_boosting_tools",
+    "personalized_learning_paths",
+    "curated_content",
+    "evaluation_rubrics",
+    "safe_recommendations_doctrine_only",
+    "progress_dashboards_future_charter"
+  ],
+  "tool_categories": [
+    {
+      "id": "cognitive_games",
+      "label": "Cognitive games",
+      "status": "doctrine_only",
+      "description": "Optional puzzles and logic play — no live game runtime in ZCTT-1"
+    },
+    {
+      "id": "mindfulness_focus",
+      "label": "Mindfulness / focus",
+      "status": "doctrine_only",
+      "description": "Non-medical reflection and pause prompts — no therapy claims"
+    },
+    {
+      "id": "creative_expression",
+      "label": "Creative expression",
+      "status": "doctrine_only",
+      "description": "Writing and creative practice — optional Genesis template link later"
+    },
+    {
+      "id": "logic_puzzles",
+      "label": "Logic / puzzles",
+      "status": "doctrine_only",
+      "description": "Structured practice sets — no adaptive scoring engine"
+    },
+    {
+      "id": "study_planners",
+      "label": "Study planners",
+      "status": "doctrine_only",
+      "description": "Human-chosen goals — no scheduling daemon"
+    },
+    {
+      "id": "content_notebooks",
+      "label": "Content notebooks",
+      "status": "doctrine_only",
+      "description": "Curated notes — Z-QUESTRA alignment future charter"
+    }
+  ],
+  "ecosystem_connections": [
+    {
+      "area": "genesis_studio",
+      "relationship": "optional_learning_templates",
+      "runtime_in_zctt_1": false,
+      "notes": "Scripts, eBooks, courses — templates only after separate phase"
+    },
+    {
+      "area": "z_questra",
+      "relationship": "brain_games_learning_paths_notebook",
+      "runtime_in_zctt_1": false,
+      "notes": "Future satellite charter"
+    },
+    {
+      "area": "z_sanctuary_core",
+      "relationship": "content_quality_governance_checks",
+      "runtime_in_zctt_1": false,
+      "notes": "Rubric-backed evaluation — read-only doctrine first"
+    },
+    {
+      "area": "ai_builder_pack",
+      "relationship": "evaluator_rubrics_generated_docs",
+      "runtime_in_zctt_1": false,
+      "notes": "Builder module/doc quality checklists"
+    },
+    {
+      "area": "future_trusthub",
+      "relationship": "curated_knowledge_library",
+      "runtime_in_zctt_1": false,
+      "notes": "Only after governance, copyright, and privacy charter"
+    }
+  ],
+  "rubric_dimensions": [
+    "clarity",
+    "safety",
+    "drp_governance",
+    "copyright_licensing",
+    "bias_fairness",
+    "child_minor_safety",
+    "provider_posture",
+    "export_publish_human_gate"
+  ],
+  "allowed_artifact_types": [
+    "content_evaluation_checklist",
+    "curation_proposal",
+    "bias_review_note",
+    "license_posture_summary",
+    "governance_fit_note",
+    "learning_path_outline",
+    "path_reflection_prompt"
+  ],
+  "forbidden_artifact_types": [
+    "auto_publish",
+    "auto_recommend",
+    "user_profile_update",
+    "evaluator_reputation_delta",
+    "cognitive_improvement_certificate",
+    "medical_or_therapy_advice"
+  ],
+  "held_for_later_charter": [
+    "neurofeedback_tools",
+    "external_course_apis",
+    "user_tracking",
+    "recommender_algorithms",
+    "rewards_competition_minors",
+    "evaluator_reputation_systems",
+    "live_progress_dashboards",
+    "trusthub_public_library"
+  ],
+  "doctrine_docs": [
+    "docs/learning/Z_CTT_BRAIN_BOOSTING_TOOLS.md",
+    "docs/learning/Z_CTT_PERSONALIZED_LEARNING_PATHS.md",
+    "docs/learning/Z_CTT_CONTENT_EVALUATION_FRAMEWORK.md",
+    "docs/learning/PHASE_ZCTT_1_GREEN_RECEIPT.md"
+  ],
+  "authority_refs": [
+    "docs/Z-HIERARCHY-CHIEF-AND-OBSERVER-VIEW.md",
+    "docs/Z_STILLNESS_MODE_AI_LEARNING_PATHWAY.md",
+    "docs/Z_AI_AGENT_COLLABORATION_LAW.md"
+  ]
+}

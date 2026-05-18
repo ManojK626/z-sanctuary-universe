@@ -52,6 +52,10 @@ Compact entry points for **read-only** hub registries and AMK-facing evidence. F
 | Z-STILLNESS-LEARN-1 AI learning pathway | [Z_STILLNESS_MODE_AI_LEARNING_PATHWAY.md](Z_STILLNESS_MODE_AI_LEARNING_PATHWAY.md) | `npm run z:stillness:learn` |
 | Z-STILLNESS-LEARN-1 ecosystem biology map | [Z_SANCTUARY_ECOSYSTEM_BIOLOGY_MAP.md](Z_SANCTUARY_ECOSYSTEM_BIOLOGY_MAP.md) | — |
 | Z-STILLNESS-LEARN-1 green receipt | [PHASE_Z_STILLNESS_LEARN_1_GREEN_RECEIPT.md](PHASE_Z_STILLNESS_LEARN_1_GREEN_RECEIPT.md) | — |
+| ZCTT-1 brain-boosting tools (doctrine) | [learning/Z_CTT_BRAIN_BOOSTING_TOOLS.md](learning/Z_CTT_BRAIN_BOOSTING_TOOLS.md) | — |
+| ZCTT-1 personalized learning paths | [learning/Z_CTT_PERSONALIZED_LEARNING_PATHS.md](learning/Z_CTT_PERSONALIZED_LEARNING_PATHS.md) | — |
+| ZCTT-1 content evaluation framework | [learning/Z_CTT_CONTENT_EVALUATION_FRAMEWORK.md](learning/Z_CTT_CONTENT_EVALUATION_FRAMEWORK.md) | — |
+| ZCTT-1 green receipt | [learning/PHASE_ZCTT_1_GREEN_RECEIPT.md](learning/PHASE_ZCTT_1_GREEN_RECEIPT.md) | — |
 | Z-LEGAL-OPS-1 legal evidence core | [Z_LEGAL_EVIDENCE_CORE.md](Z_LEGAL_EVIDENCE_CORE.md) | `npm run z:legal:ops` |
 | Z-LEGAL-OPS-1 lawyer workstation control centre | [Z_LAWYER_WORKSTATION_CONTROL_CENTRE.md](Z_LAWYER_WORKSTATION_CONTROL_CENTRE.md) | — |
 | Z-LEGAL-OPS-1 guardian legal circle | [Z_GUARDIAN_LEGAL_CIRCLE.md](Z_GUARDIAN_LEGAL_CIRCLE.md) | — |

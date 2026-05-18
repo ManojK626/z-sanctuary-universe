@@ -149,6 +149,10 @@ npm run z:car2
 | [AMK_AI_TEAM_INDICATOR_SYNC_ROUTER.md](AMK_AI_TEAM_INDICATOR_SYNC_ROUTER.md) | AMK-AI-SYNC-1 indicator drift observer + routing packets — Phase 1 never auto-edits indicators from the validator. |
 | [Z_AI_FUSION_CAPABILITY_MAP.md](Z_AI_FUSION_CAPABILITY_MAP.md) | Z-AI-FUSION-MAP-1 overlap governance map — fusion suggestions only (**no runtime merge auto-execution**). |
 | [Z_STILLNESS_MODE_AI_LEARNING_PATHWAY.md](Z_STILLNESS_MODE_AI_LEARNING_PATHWAY.md) | Z-STILLNESS-LEARN-1 idle alignment pathway — learn and report only (**no background automation**). |
+| [learning/Z_CTT_BRAIN_BOOSTING_TOOLS.md](learning/Z_CTT_BRAIN_BOOSTING_TOOLS.md) | ZCTT-1 Z-CTT brain-boosting catalog — cross-ecosystem learning layer (**doctrine only**; not Genesis runtime). |
+| [learning/Z_CTT_PERSONALIZED_LEARNING_PATHS.md](learning/Z_CTT_PERSONALIZED_LEARNING_PATHS.md) | ZCTT-1 human-guided paths — no profiling, LMS, or external APIs in Phase 1. |
+| [learning/Z_CTT_CONTENT_EVALUATION_FRAMEWORK.md](learning/Z_CTT_CONTENT_EVALUATION_FRAMEWORK.md) | ZCTT-1 content rubrics, bias safeguards, copyright caution (**no live scoring**). |
+| [learning/PHASE_ZCTT_1_GREEN_RECEIPT.md](learning/PHASE_ZCTT_1_GREEN_RECEIPT.md) | ZCTT-1 seal receipt — registry at `data/z_ctt_learning_capability_registry.json`. |
 | [Z_SANCTUARY_ECOSYSTEM_BIOLOGY_MAP.md](Z_SANCTUARY_ECOSYSTEM_BIOLOGY_MAP.md) | Ecosystem biology metaphor — roots, trees, law stack, borders (**not** runtime control). |
 | [design/Z_UNIVERSAL_INTERACTION_LANGUAGE.md](design/Z_UNIVERSAL_INTERACTION_LANGUAGE.md) | Z-UIL-1 universal interaction language — shared identity vs entitlement separation; complements Z-VIL (**docs only**). |
 | [LAWGRID_1A_GOVERNANCE_OBSERVATORY.md](LAWGRID_1A_GOVERNANCE_OBSERVATORY.md) | LAWGRID-1A read-only governance observatory — spine, constellation map, catalog/benchmark/ZSX/ZMV/SSWS/AMK ingest (**no runtime authority**). |
