@@ -3,7 +3,7 @@
 ## Registry Identity
 
 | Field | Value |
-| --- | --- |
+| --------------------- | -------------------------- |
 | **ID** | `z_gadget_mirrors_product` |
 | **Category** | products_gadgets |
 | **Registry status** | doctrine_only |

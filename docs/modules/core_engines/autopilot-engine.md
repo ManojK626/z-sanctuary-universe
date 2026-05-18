@@ -3,7 +3,7 @@
 ## Registry Identity
 
 | Field | Value |
-| --- | --- |
+| --------------------- | ------------------ |
 | **ID** | `autopilot-engine` |
 | **Category** | core_engines |
 | **Registry status** | planned_stub |

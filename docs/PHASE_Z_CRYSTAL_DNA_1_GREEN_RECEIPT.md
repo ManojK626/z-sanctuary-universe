@@ -5,7 +5,7 @@
 ## Deliverables
 
 | Item | Location |
-| --- | --- |
+| -------------------------- | --------------------------------------------------------------------------------------- |
 | Doctrine | [`docs/Z_CRYSTAL_DNA_MESH.md`](Z_CRYSTAL_DNA_MESH.md) |
 | Asset manifest (DNA cards) | [`data/z_crystal_dna_asset_manifest.json`](../data/z_crystal_dna_asset_manifest.json) |
 | This receipt | [`docs/PHASE_Z_CRYSTAL_DNA_1_GREEN_RECEIPT.md`](PHASE_Z_CRYSTAL_DNA_1_GREEN_RECEIPT.md) |
@@ -13,7 +13,7 @@
 ## Posture checklist
 
 | Check | Confirm |
-| --- | --- |
+| --------------------------------------------------------- | ---------------------------------------------- |
 | No runtime automatic repair | Yes — docs + manifest only |
 | No autonomous writes from this phase | Yes |
 | No secrets, deploy, NAS writes | Yes — forbidden list in manifest + doctrine |

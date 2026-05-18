@@ -3,6 +3,7 @@
 Generated: 2026-05-02T21:19:27.838Z
 
 ## Constraints
+
 - No fake implementation paths.
 - No payment, GPS, camera, mic, gambling automation, soulmate/baby predictor, emergency, or health product activation.
 - Deployment HOLD: registry and documentation first; UI/backend only when explicitly approved.
@@ -11,7 +12,7 @@ Generated: 2026-05-02T21:19:27.838Z
 ## Audit snapshot (inputs)
 
 | Status | Count |
-| --- | ---: |
+| --------------------- | ----: |
 | FOUND_FULL | 29 |
 | FOUND_PARTIAL | 30 |
 | MISSING | 0 |
@@ -22,7 +23,7 @@ Generated: 2026-05-02T21:19:27.838Z
 ## Lane 1 — FOUND_PARTIAL queue
 
 | Module | Category | Why partial (summary) | Minimum safe toward FOUND_FULL |
-| --- | --- | --- | --- |
+| --------------------------------- | ---------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | ai-agent-designer | ai_tower_agents | Master registry has zero expected_paths (Z_module_registry ZEntry absent on disk, non-path ZEntry, or vision doctrine row). Audit rule: zero paths ⇒ FOUND_PARTIAL. | When code/docs exist: add real paths to Z_module_registry ZEntry (or master expected_paths) only after verifying files on disk; run npm run zuno:master-expand then npm run zuno:coverage. |
 | ai-agent-navigator | ai_tower_agents | Master registry has zero expected_paths (Z_module_registry ZEntry absent on disk, non-path ZEntry, or vision doctrine row). Audit rule: zero paths ⇒ FOUND_PARTIAL. | When code/docs exist: add real paths to Z_module_registry ZEntry (or master expected_paths) only after verifying files on disk; run npm run zuno:master-expand then npm run zuno:coverage. |
 | ai-agent-protector | ai_tower_agents | Master registry has zero expected_paths (Z_module_registry ZEntry absent on disk, non-path ZEntry, or vision doctrine row). Audit rule: zero paths ⇒ FOUND_PARTIAL. | When code/docs exist: add real paths to Z_module_registry ZEntry (or master expected_paths) only after verifying files on disk; run npm run zuno:master-expand then npm run zuno:coverage. |
@@ -57,7 +58,7 @@ Generated: 2026-05-02T21:19:27.838Z
 ## Lane 2 — NEEDS_SAFETY_REVIEW → boundary docs
 
 | Module | Boundary docs | Closure notes |
-| --- | --- | --- |
+| --------------------------- | -------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | gambling_prediction_voice | `docs/safety/GAMBLING_PREDICTION_BOUNDARY.md` | Doctrine / safety_hold: boundary text verifies; no implementation paths yet — creator sign-off before any UX or automation. |
 | gps_safety_module | `docs/safety/LOCATION_CAMERA_MIC_BOUNDARY.md` | Doctrine / safety_hold: boundary text verifies; no implementation paths yet — creator sign-off before any UX or automation. |
 | mirrorsoul_hub_slice | `docs/safety/MIRRORSOUL_PRIVACY_BOUNDARY.md` | Boundary doc tokens satisfied; still requires explicit human safety sign-off before production-facing changes. |
@@ -81,14 +82,14 @@ Copy the block below into `docs/Z-ZUNO-AI-FULL-REPORT.md` under Coverage audit s
 ```md
 **Latest coverage counters** (from `data/reports/z_zuno_coverage_audit.json` at plan generation):
 
-| Status | Count |
-| --- | ---: |
-| FOUND_FULL | 29 |
-| FOUND_PARTIAL | 30 |
-| MISSING | 0 |
-| DUPLICATE_OR_CONFLICT | 0 |
-| NEEDS_SAFETY_REVIEW | 8 |
-| NEEDS_DECISION | 1 |
+| Status                | Count |
+| --------------------- | ----: |
+| FOUND_FULL            |    29 |
+| FOUND_PARTIAL         |    30 |
+| MISSING               |     0 |
+| DUPLICATE_OR_CONFLICT |     0 |
+| NEEDS_SAFETY_REVIEW   |     8 |
+| NEEDS_DECISION        |     1 |
 
 **Phase 3 plan:** `data/reports/z_zuno_phase3_completion_plan.md`
 ```

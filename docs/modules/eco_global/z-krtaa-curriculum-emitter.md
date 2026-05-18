@@ -3,7 +3,7 @@
 ## Registry Identity
 
 | Field | Value |
-| --- | --- |
+| --------------------- | ---------------------------- |
 | **ID** | `z-krtaa-curriculum-emitter` |
 | **Category** | eco_global |
 | **Registry status** | doctrine_only |

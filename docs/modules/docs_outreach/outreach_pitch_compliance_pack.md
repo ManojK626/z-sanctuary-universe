@@ -3,7 +3,7 @@
 ## Registry Identity
 
 | Field | Value |
-| --- | --- |
+| --------------------- | -------------------------------- |
 | **ID** | `outreach_pitch_compliance_pack` |
 | **Category** | docs_outreach |
 | **Registry status** | partial |

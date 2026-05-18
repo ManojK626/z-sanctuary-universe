@@ -44,7 +44,7 @@ Every 2 minutes (default):
 ### **The Gates Being Monitored**
 
 | Gate | Purpose | Check Interval | Critical |
-| --- | --- | --- | --- |
+| ---------------- | --------------------- | -------------- | -------- |
 | **verify:md** | Markdown verification | 5 min | Yes |
 | **z:traffic** | System health signal | 5 min | Yes |
 | **z:car2** | Code analysis | 60 min | No |
@@ -310,9 +310,7 @@ The continuous verification monitor produces files your dashboard can consume:
 
 ```javascript
 // Load latest status
-const status = JSON.parse(fs.readFileSync(
-  'data/reports/z_continuous_verification_status.json'
-));
+const status = JSON.parse(fs.readFileSync('data/reports/z_continuous_verification_status.json'));
 
 // show:
 // - status.overall_signal
@@ -348,7 +346,7 @@ const status = JSON.parse(fs.readFileSync(
 ## Future Enhancement Ladder
 
 | Phase | What it adds | Status |
-| --- | --- | --- |
+| -------- | ---------------------------------------- | --------- |
 | **CV-1** | Real-time monitoring + timeline + alerts | ✅ Active |
 | **CV-2** | Predictive alerts (learning patterns) | 🎯 Next |
 | **CV-3** | Multi-workspace awareness | 🎯 Later |

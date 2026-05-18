@@ -3,7 +3,7 @@
 ## Registry Identity
 
 | Field | Value |
-| --- | --- |
+| --------------------- | --------------------------------- |
 | **ID** | `z-ecosphere-transparency-report` |
 | **Category** | eco_global |
 | **Registry status** | planned_stub |

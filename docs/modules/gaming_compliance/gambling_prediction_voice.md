@@ -3,7 +3,7 @@
 ## Registry Identity
 
 | Field | Value |
-| --- | --- |
+| --------------------- | --------------------------- |
 | **ID** | `gambling_prediction_voice` |
 | **Category** | gaming_compliance |
 | **Registry status** | safety_hold |

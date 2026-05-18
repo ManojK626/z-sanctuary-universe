@@ -6,16 +6,19 @@ Files scanned: 4000
 Mismatches: 1096
 
 ## Settings Checks
+
 - [x] task_allow_automatic_tasks_on: task.allowAutomaticTasks=on
 - [x] terminal_default_profile_powershell: terminal.integrated.defaultProfile.windows=PowerShell
 - [x] files_autosave_after_delay: files.autoSave=afterDelay
 
 ## Operator Directions
+
 - If project context is unclear, run `npm run workspace:emit-pc-root` then open `Z-EAII-PC-All-Projects.code-workspace`.
 - For core verification, run `npm run verify:ci`; for full health, run `npm run stabilize:apply-and-verify`.
 - If file routing mismatches appear, move files to suggested top-level folders before release checks.
 
 ## Routing Mismatches (sample)
+
 - z_music_engine/audio_consent_policy.md -> expected one of: docs, data, .cursor, .vscode, core, packages, apps, dashboard, scripts
 - z_music_engine/audio_source_contract.md -> expected one of: docs, data, .cursor, .vscode, core, packages, apps, dashboard, scripts
 - z_music_engine/explainability_contract.md -> expected one of: docs, data, .cursor, .vscode, core, packages, apps, dashboard, scripts
@@ -136,4 +139,3 @@ Mismatches: 1096
 - docs/.vscode/tasks.json -> expected one of: data, .vscode, .cursor, config, rules, apps, packages, scripts
 - deploy/z_bridge_soft/package.json -> expected one of: data, .vscode, .cursor, config, rules, apps, packages, scripts
 - dashboard/data/amk_autonomous_approval_ladder.json -> expected one of: data, .vscode, .cursor, config, rules, apps, packages, scripts
-

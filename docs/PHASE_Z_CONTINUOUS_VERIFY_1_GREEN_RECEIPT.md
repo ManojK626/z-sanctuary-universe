@@ -11,7 +11,7 @@
 Z-Continuous-Verify-1 (CV-1) is the real-time awareness layer for Z-Sanctuary. It continuously monitors all critical system gates and aggregates their signals into a unified "living status" that reflects the current state of the entire ecosystem.
 
 **Core Mandate:**
-*"Keep all participants aware of the latest system state in real-time, so no one works with stale information and no surprises emerge."*
+_"Keep all participants aware of the latest system state in real-time, so no one works with stale information and no surprises emerge."_
 
 ---
 
@@ -124,7 +124,7 @@ Monitors gates: verify:md, z:car2, z:traffic
 ## Critical Files
 
 | File | Purpose | Status |
-| --- | --- | --- |
+| ------------------------------------------------------- | ------------------------------------------------------ | --------- |
 | `data/z_continuous_verification_protocol_registry.json` | CV governance registry (5 gates, 3 modes, alert rules) | ✅ Active |
 | `scripts/z_continuous_verification_monitor.mjs` | Real-time aggregation engine | ✅ Active |
 | `data/reports/z_continuous_verification_status.json` | Current status (machine-readable) | ✅ Live |

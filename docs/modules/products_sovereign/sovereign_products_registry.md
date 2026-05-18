@@ -3,7 +3,7 @@
 ## Registry Identity
 
 | Field | Value |
-| --- | --- |
+| --------------------- | ----------------------------- |
 | **ID** | `sovereign_products_registry` |
 | **Category** | Products / sovereign |
 | **Registry status** | implemented |

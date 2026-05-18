@@ -5,7 +5,7 @@ Generated (UTC hint): machinery local time · commit not inferred.
 ## Summary
 
 | Status | Count |
-| --- | ---: |
+| --------------------- | ----: |
 | FOUND_FULL | 29 |
 | FOUND_PARTIAL | 30 |
 | MISSING | 0 |
@@ -16,7 +16,7 @@ Generated (UTC hint): machinery local time · commit not inferred.
 ## Reference files presence
 
 | File | Exists |
-| --- | :---: |
+| ----------------------------------------- | :----: |
 | `data/z_master_module_registry.json` | yes |
 | `docs/Z-ZUNO-AI-FULL-REPORT.md` | yes |
 | `docs/Z-SANCTUARY-MASTER-MODULE-INDEX.md` | no |
@@ -27,7 +27,7 @@ Generated (UTC hint): machinery local time · commit not inferred.
 ## FOUND FULL
 
 | id | registry | evidence (found) | missing paths | notes |
-| --- | --- | --- | --- | --- |
+| ---------------------------------- | ----------- | ------------------------------------------------------------------------------------------------------------------------------ | ------------- | ------------------------------------------------ |
 | commander_panel | implemented | `dashboard/scripts/z-commander-panel.js` | — | — |
 | core_engines_registry_datafile | implemented | `data/z_core_engines_registry.json` | — | — |
 | display_morph_engine | implemented | `dashboard/scripts/z-display-morph-engine.js` | — | — |
@@ -61,7 +61,7 @@ Generated (UTC hint): machinery local time · commit not inferred.
 ## FOUND PARTIAL
 
 | id | registry | evidence (found) | missing paths | notes |
-| --- | --- | --- | --- | --- |
+| --------------------------------- | ------------- | ---------------- | ------------- | ----- |
 | ai-agent-designer | planned_stub | — | — | — |
 | ai-agent-navigator | planned_stub | — | — | — |
 | ai-agent-protector | planned_stub | — | — | — |
@@ -96,7 +96,7 @@ Generated (UTC hint): machinery local time · commit not inferred.
 ## NEEDS SAFETY REVIEW
 
 | id | registry | evidence (found) | missing paths | notes |
-| --- | --- | --- | --- | --- |
+| --------------------------- | ----------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ------------- | -------------------------------------------------------------------------- |
 | gambling_prediction_voice | safety_hold | — | — | docs/safety/GAMBLING_PREDICTION_BOUNDARY.md: ok (gambling, prediction) |
 | gps_safety_module | safety_hold | — | — | docs/safety/LOCATION_CAMERA_MIC_BOUNDARY.md: ok (location, consent) |
 | mirrorsoul_hub_slice | implemented | `packages/z-sanctuary-mirrorsoul-slice/index.mjs`<br>`packages/z-sanctuary-mirrorsoul-slice/package.json`<br>`apps/web/src/app/mirrorsoul/page.js`<br>`apps/api/src/modules/mirrorSoul/controller.mjs` | — | docs/safety/MIRRORSOUL_PRIVACY_BOUNDARY.md: ok (MirrorSoul, privacy) |
@@ -109,7 +109,7 @@ Generated (UTC hint): machinery local time · commit not inferred.
 ## NEEDS DECISION
 
 | id | registry | evidence (found) | missing paths | notes |
-| --- | --- | --- | --- | --- |
+| -------------------------- | ----------------- | ---------------- | ------------- | ----- |
 | ethical_monetization_layer | decision_required | — | — | — |
 
 ## Suggested manual follow-ups

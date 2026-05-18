@@ -3,7 +3,7 @@
 ## Registry Identity
 
 | Field | Value |
-| --- | --- |
+| --------------------- | ------------------------ |
 | **ID** | `family_companion_grove` |
 | **Category** | family_companion |
 | **Registry status** | planned_stub |

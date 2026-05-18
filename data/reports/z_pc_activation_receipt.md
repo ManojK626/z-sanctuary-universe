@@ -9,8 +9,8 @@ Manual activation receipt only. No watcher, no auto-verify, no deploy, no merge,
 
 ## Git (local hub)
 
-- **branch:** `cursor/zsanctuary/deployment-readiness-overseer-1` 
-- **HEAD:** `6b52f582c0f0` 
+- **branch:** `cursor/zsanctuary/deployment-readiness-overseer-1`
+- **HEAD:** `6b52f582c0f0`
 - **working tree:** 59 porcelain line(s)
 
 ## Phase receipts (latest first, sample)

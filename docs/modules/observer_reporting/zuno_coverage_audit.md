@@ -3,7 +3,7 @@
 ## Registry Identity
 
 | Field | Value |
-| --- | --- |
+| --------------------- | --------------------- |
 | **ID** | `zuno_coverage_audit` |
 | **Category** | Observer / reporting |
 | **Registry status** | implemented |

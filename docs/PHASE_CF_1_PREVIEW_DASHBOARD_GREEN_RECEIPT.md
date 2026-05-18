@@ -21,7 +21,7 @@ These scripts are the sealed **GREEN** receipts for markdown hygiene, traffic mi
 ## Current state (operator snapshot)
 
 | Item | Status |
-| --- | --- |
+| ---------------------------------- | ---------------------------------------------------------- |
 | GitHub `main` | Synced with hub expectations |
 | Local git (before preview checks) | Clean |
 | Wrangler | Authenticated (operator-managed) |
@@ -42,7 +42,7 @@ These scripts are the sealed **GREEN** receipts for markdown hygiene, traffic mi
 Source file: `dashboard/_headers` (repo path: `dashboard/_headers`).
 
 | Header | Role |
-| --- | --- |
+| -------------------------------------------------- | --------------------------------------------------------- |
 | `X-Frame-Options: DENY` | Reduce clickjacking on preview |
 | `X-Content-Type-Options: nosniff` | Reduce MIME confusion |
 | `Referrer-Policy: strict-origin-when-cross-origin` | Tighter referrer leakage |
@@ -54,7 +54,7 @@ Source file: `dashboard/_headers` (repo path: `dashboard/_headers`).
 These gates **passed** for the sealed posture described by the operator (GitHub `main` synced; local clean before preview checks; Wrangler authenticated; preview live):
 
 | Gate | Command |
-| --- | --- |
+| -------- | ------------------- |
 | Markdown | `npm run verify:md` |
 | Traffic | `npm run z:traffic` |
 | CAR² | `npm run z:car2` |

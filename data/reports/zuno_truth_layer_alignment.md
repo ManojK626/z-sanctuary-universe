@@ -3,7 +3,7 @@
 **Generated:** 2026-05-03T15:52:29.865Z
 
 | Field | Value |
-| ---- | ---- |
+| -------- | ---------------------------------------------- |
 | Status | YELLOW |
 | Snapshot | data/zuno_state_snapshot.json |
 | Registry | data/z_sanctuary_monster_project_registry.json |
@@ -11,7 +11,7 @@
 ## Registry vs snapshot echo
 
 | Check | Value |
-| ---- | ---- |
+| -------------------- | ----- |
 | echo_in_sync | true |
 | live_required_count | 26 |
 | snapshot_ref_present | true |
@@ -24,7 +24,7 @@
 ### Missing narrative signal
 
 | id | label |
-| ---- | ---- |
+| -------------------------- | ---------------------------- |
 | aftercare | Aftercare |
 | alien_core | Alien Core |
 | bee_vision | Bee Vision |
@@ -51,4 +51,4 @@
 
 ---
 
-*Read-only report — no auto-fix or phase advancement.*
+_Read-only report — no auto-fix or phase advancement._

@@ -5,7 +5,7 @@
 ## Real roots (canonical)
 
 | Location | Path |
-| --- | --- |
+| -------- | ------------------------------------------------------------------- |
 | **Hub** | `C:\Cursor Projects Organiser\Z_Sanctuary_Universe` |
 | **Labs** | `C:\Cursor Projects Organiser\Z_Sanctuary_Universe\ZSanctuary_Labs` |
 

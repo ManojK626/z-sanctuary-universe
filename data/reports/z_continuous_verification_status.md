@@ -7,7 +7,7 @@
 ## Gate Status Summary
 
 | Gate | Status | Signal | Time (ms) | Last Check |
-| ------ | -------- | -------- | ----------- | ----------- |
+| ----------------------- | ------ | ------ | --------- | ---------- |
 | IDE Fusion Coordination | PASS | GREEN | 94 | 18:28:10 |
 | 14DRP Agent Protocol | PASS | GREEN | 88 | 18:28:10 |
 
@@ -39,4 +39,4 @@
 
 ---
 
-*Latest awareness of Z-Sanctuary state. No stale information. Everything visible.*
+_Latest awareness of Z-Sanctuary state. No stale information. Everything visible._

@@ -160,7 +160,7 @@
 ## 🎯 KEY METRICS AT A GLANCE
 
 | Metric | Value | Report Location |
-| --- | --- | --- |
+| ----------------------- | ----- | -------------------------------------- |
 | Protective Rings Sealed | 4/4 | All reports |
 | Gates Passing | 5/5 | COMPLETE_STATUS_REPORT.md |
 | Structural Health | 93% | ZUNO_AI_FULL_ACCOMPLISHMENTS_REPORT.md |
