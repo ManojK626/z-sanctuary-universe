@@ -55,4 +55,4 @@ Remove Phase 3A files and revert `app/page.tsx`, `app/script/page.tsx`, `compone
 
 ## Next lane
 
-Phase **3B** — Creative Timeline Intelligence (per [GENESIS_STUDIO_OMNAI_ROADMAP.md](GENESIS_STUDIO_OMNAI_ROADMAP.md)).
+Phase **3A.1** — Smoke + merge readiness: [PHASE_3A_1_SMOKE_MERGE_READINESS.md](PHASE_3A_1_SMOKE_MERGE_READINESS.md). Phase **3B** only after merge + AMK sign-off.

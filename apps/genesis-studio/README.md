@@ -96,6 +96,7 @@ Supabase: `projects.life_stage`, `projects.tone`, `projects.creative_profile` (s
 - Script: **Save to Project** persists title, description, status, creative profile, scenes
 - **No** media uploads, background sync, billing, deployment, or provider SDKs
 - RLS: `auth.uid() = user_id` (see `supabase/schema.sql`)
+- Merge smoke: [PHASE_3A_1_SMOKE_MERGE_READINESS.md](PHASE_3A_1_SMOKE_MERGE_READINESS.md)
 
 ## API (stub)
 
