@@ -1,10 +1,12 @@
 'use client';
 
-import { useCallback, useState } from 'react';
+import { Suspense, useCallback, useEffect, useState } from 'react';
+import { useSearchParams } from 'next/navigation';
 import { StudioShell } from '@/components/studio-shell';
 import { PageMotion } from '@/components/page-motion';
 import { CreativeReceipt } from '@/components/creative-receipt';
 import { CreativeDnaCard } from '@/components/creative-dna-card';
+import { PersistenceReceiptCard } from '@/components/persistence-receipt-card';
 import { ScriptSceneCard } from '@/components/script-scene-card';
 import { Button } from '@/components/ui/button';
 import { Textarea } from '@/components/ui/textarea';
@@ -14,24 +16,82 @@ import {
   DEFAULT_TONE,
   LIFE_STAGES,
   TONES,
+  normalizeCreativeProfile,
   type GenerateScriptResponse,
   type LifeStageId,
   type ScriptScene,
   type ToneId,
 } from '@/lib/creative-profile';
+import {
+  buildPersistenceReceipt,
+  getActiveProjectId,
+  getStorageLabel,
+  loadProject,
+  setActiveProjectId,
+  type PersistenceReceipt,
+  type ProjectStatus,
+} from '@/lib/projects';
+import { loadScenes, saveProjectScenes } from '@/lib/scenes';
 
 function reorderScenes(scenes: ScriptScene[]): ScriptScene[] {
   return scenes.map((s, i) => ({ ...s, orderIndex: i }));
 }
 
-export default function ScriptPage() {
+function ScriptPageInner() {
+  const searchParams = useSearchParams();
+  const [projectId, setProjectId] = useState<string | null>(null);
+  const [projectTitle, setProjectTitle] = useState('Untitled Genesis Project');
+  const [projectDescription, setProjectDescription] = useState('');
+  const [projectStatus, setProjectStatus] = useState<ProjectStatus>('draft');
   const [prompt, setPrompt] = useState('');
   const [lifeStage, setLifeStage] = useState<LifeStageId>(DEFAULT_LIFE_STAGE);
   const [tone, setTone] = useState<ToneId>(DEFAULT_TONE);
   const [loading, setLoading] = useState(false);
+  const [saving, setSaving] = useState(false);
   const [result, setResult] = useState<GenerateScriptResponse | null>(null);
   const [scenes, setScenes] = useState<ScriptScene[]>([]);
   const [error, setError] = useState<string | null>(null);
+  const [persistenceReceipt, setPersistenceReceipt] = useState<PersistenceReceipt>(
+    buildPersistenceReceipt({ storageMode: 'mock' })
+  );
+
+  const hydrateProject = useCallback(async (id: string) => {
+    const { project, storageMode } = await loadProject(id);
+    if (!project) return;
+    setProjectId(project.id);
+    setProjectTitle(project.title);
+    setProjectDescription(project.description);
+    setProjectStatus(project.status);
+    if (project.lifeStage) setLifeStage(project.lifeStage as LifeStageId);
+    if (project.tone) setTone(project.tone as ToneId);
+    const { scenes: stored } = await loadScenes(id);
+    if (stored.length > 0) setScenes(stored);
+    setPersistenceReceipt(
+      buildPersistenceReceipt({
+        storageMode,
+        storageLabel: getStorageLabel(storageMode),
+        projectId: project.id,
+        saveStatus: 'idle',
+      })
+    );
+  }, []);
+
+  useEffect(() => {
+    const fromUrl = searchParams.get('projectId');
+    const id = fromUrl ?? getActiveProjectId();
+    if (!id) {
+      setPersistenceReceipt(
+        buildPersistenceReceipt({
+          storageMode: 'mock',
+          message: 'Select or create a project from Dashboard to persist scenes.',
+        })
+      );
+      return;
+    }
+    setActiveProjectId(id);
+    setProjectId(id);
+    void hydrateProject(id);
+  }, [searchParams, hydrateProject]);
 
   const updateScene = useCallback((index: number, updated: ScriptScene) => {
     setScenes((prev) => prev.map((s, i) => (i === index ? updated : s)));
@@ -59,6 +119,7 @@ export default function ScriptPage() {
       if (!res.ok) throw new Error('Stub API failed');
       const data = (await res.json()) as GenerateScriptResponse;
       setResult(data);
+      setProjectTitle(data.title);
       setScenes([...data.scenes].sort((a, b) => a.orderIndex - b.orderIndex));
     } catch {
       setError('Could not generate mock script.');
@@ -67,17 +128,108 @@ export default function ScriptPage() {
     }
   }
 
+  async function handleSave() {
+    if (!projectId) {
+      setError('No active project. Create one from Dashboard first.');
+      return;
+    }
+    if (scenes.length === 0) {
+      setError('Generate or load scenes before saving.');
+      return;
+    }
+    setSaving(true);
+    setError(null);
+    try {
+      const creativeProfile = normalizeCreativeProfile(
+        result?.creativeProfile ?? { lifeStage, tone }
+      );
+      const { storageMode, savedAt } = await saveProjectScenes({
+        projectId,
+        title: projectTitle,
+        description: projectDescription,
+        status: projectStatus,
+        lifeStage,
+        tone,
+        creativeProfile,
+        scenes,
+      });
+      setPersistenceReceipt(
+        buildPersistenceReceipt({
+          storageMode,
+          storageLabel: getStorageLabel(storageMode),
+          projectId,
+          lastSavedAt: savedAt,
+          saveStatus: 'saved',
+          message: 'Scenes and creative profile saved (explicit action).',
+        })
+      );
+    } catch {
+      setError('Could not save project.');
+      setPersistenceReceipt((prev) => ({ ...prev, saveStatus: 'error' }));
+    } finally {
+      setSaving(false);
+    }
+  }
+
   const profile = result?.creativeProfile ?? { lifeStage, tone };
-  const lastAction = result ? 'Generated mock script' : 'Idle';
+  const lastAction = saving
+    ? 'Saving project…'
+    : result
+      ? 'Generated mock script'
+      : projectId
+        ? 'Editing project'
+        : 'Idle';
 
   return (
-    <StudioShell module="Script" lastAction={lastAction}>
+    <StudioShell module="Script" lastAction={lastAction} showReceipt={false}>
       <PageMotion>
-        <div className="mb-4 lg:hidden">
+        <div className="mb-4 flex flex-col gap-4 lg:hidden">
           <CreativeReceipt module="Script" lastAction={lastAction} />
+          <PersistenceReceiptCard receipt={persistenceReceipt} />
         </div>
         <div className="grid gap-6 lg:grid-cols-[1fr_280px]">
           <div className="space-y-6">
+            <Card>
+              <CardHeader>
+                <CardTitle>Project (Phase 3A)</CardTitle>
+              </CardHeader>
+              <CardContent className="space-y-3">
+                <label className="block space-y-1 text-sm">
+                  <span className="text-muted-foreground">Title</span>
+                  <input
+                    className="w-full rounded-md border border-border bg-muted/30 px-3 py-2 text-sm"
+                    value={projectTitle}
+                    onChange={(e) => setProjectTitle(e.target.value)}
+                  />
+                </label>
+                <label className="block space-y-1 text-sm">
+                  <span className="text-muted-foreground">Description</span>
+                  <Textarea
+                    value={projectDescription}
+                    onChange={(e) => setProjectDescription(e.target.value)}
+                    rows={2}
+                  />
+                </label>
+                <label className="block space-y-1 text-sm">
+                  <span className="text-muted-foreground">Status</span>
+                  <select
+                    className="w-full rounded-md border border-border bg-muted/30 px-3 py-2 text-sm"
+                    value={projectStatus}
+                    onChange={(e) => setProjectStatus(e.target.value as ProjectStatus)}
+                  >
+                    <option value="draft">Draft</option>
+                    <option value="review">Review</option>
+                    <option value="published">Published</option>
+                  </select>
+                </label>
+                {projectId && (
+                  <p className="text-xs text-muted-foreground">
+                    Project id: <span className="text-foreground">{projectId}</span>
+                  </p>
+                )}
+              </CardContent>
+            </Card>
+
             <Card>
               <CardHeader>
                 <CardTitle>Script writer (stub)</CardTitle>
@@ -118,9 +270,21 @@ export default function ScriptPage() {
                   value={prompt}
                   onChange={(e) => setPrompt(e.target.value)}
                 />
-                <Button onClick={handleGenerate} disabled={loading || !prompt.trim()}>
-                  {loading ? 'Generating…' : 'Generate Script'}
-                </Button>
+                <div className="flex flex-wrap gap-2">
+                  <Button
+                    onClick={() => void handleGenerate()}
+                    disabled={loading || !prompt.trim()}
+                  >
+                    {loading ? 'Generating…' : 'Generate Script'}
+                  </Button>
+                  <Button
+                    variant="outline"
+                    onClick={() => void handleSave()}
+                    disabled={saving || !projectId || scenes.length === 0}
+                  >
+                    {saving ? 'Saving…' : 'Save to Project'}
+                  </Button>
+                </div>
                 {error && <p className="text-sm text-red-400">{error}</p>}
               </CardContent>
             </Card>
@@ -148,11 +312,21 @@ export default function ScriptPage() {
             )}
           </div>
 
-          <aside className="space-y-4">
+          <aside className="hidden space-y-4 lg:block">
             <CreativeDnaCard profile={profile} governance={result?.governance} />
+            <PersistenceReceiptCard receipt={persistenceReceipt} />
+            <CreativeReceipt module="Script" lastAction={lastAction} />
           </aside>
         </div>
       </PageMotion>
     </StudioShell>
+  );
+}
+
+export default function ScriptPage() {
+  return (
+    <Suspense fallback={<div className="p-6 text-sm text-muted-foreground">Loading script…</div>}>
+      <ScriptPageInner />
+    </Suspense>
   );
 }

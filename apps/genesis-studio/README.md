@@ -85,6 +85,18 @@ Supabase: `projects.life_stage`, `projects.tone`, `projects.creative_profile` (s
 - Future real audio → **`assets` table only**, not URLs on `scenes`
 - Provider gates: `lib/provider-boundaries.ts` (`elevenlabs`, `openai_audio`, `local_tts`, `z_music_engine`)
 
+## Phase 3A — Project Persistence Shell
+
+**Status:** Supabase-backed when env + auth session exist; otherwise **mock fallback** (localStorage).
+
+- `lib/projects.ts` — create, list, load, update projects
+- `lib/scenes.ts` — save/load scenes for a project (explicit save only)
+- `components/persistence-receipt-card.tsx` — storage mode, last saved, provider status `none`
+- Dashboard: project list, mock-mode label, **New Project** creates draft
+- Script: **Save to Project** persists title, description, status, creative profile, scenes
+- **No** media uploads, background sync, billing, deployment, or provider SDKs
+- RLS: `auth.uid() = user_id` (see `supabase/schema.sql`)
+
 ## API (stub)
 
 `POST /api/generate-script` with `{ "prompt": "...", "lifeStage": "prime", "tone": "cinematic" }` returns mock JSON with `creativeProfile`, `scenes[]`, and `governance`.
