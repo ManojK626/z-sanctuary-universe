@@ -52,6 +52,11 @@ Compact entry points for **read-only** hub registries and AMK-facing evidence. F
 | Z-STILLNESS-LEARN-1 AI learning pathway | [Z_STILLNESS_MODE_AI_LEARNING_PATHWAY.md](Z_STILLNESS_MODE_AI_LEARNING_PATHWAY.md) | `npm run z:stillness:learn` |
 | Z-STILLNESS-LEARN-1 ecosystem biology map | [Z_SANCTUARY_ECOSYSTEM_BIOLOGY_MAP.md](Z_SANCTUARY_ECOSYSTEM_BIOLOGY_MAP.md) | — |
 | Z-STILLNESS-LEARN-1 green receipt | [PHASE_Z_STILLNESS_LEARN_1_GREEN_RECEIPT.md](PHASE_Z_STILLNESS_LEARN_1_GREEN_RECEIPT.md) | — |
+| Z-PGMO-0 projects genius management | [z-pgmo/Z_PGMO_MASTER_DOCTRINE.md](z-pgmo/Z_PGMO_MASTER_DOCTRINE.md) | — (doctrine only; merge after OTL on `main`) |
+| Z-PGMO-0 boundary map | [z-pgmo/Z_PGMO_PROJECT_BOUNDARY_MAP.md](z-pgmo/Z_PGMO_PROJECT_BOUNDARY_MAP.md) | — |
+| Z-PGMO-0 improvement radar | [z-pgmo/Z_PGMO_IMPROVEMENT_RADAR.md](z-pgmo/Z_PGMO_IMPROVEMENT_RADAR.md) | — |
+| Z-PGMO-0 operator queue | [z-pgmo/Z_PGMO_OPERATOR_QUEUE_POLICY.md](z-pgmo/Z_PGMO_OPERATOR_QUEUE_POLICY.md) | — |
+| Z-PGMO-0 green receipt | [z-pgmo/PHASE_Z_PGMO_0_GREEN_RECEIPT.md](z-pgmo/PHASE_Z_PGMO_0_GREEN_RECEIPT.md) | `npm run verify:md` |
 | Z-LEGAL-OPS-1 legal evidence core | [Z_LEGAL_EVIDENCE_CORE.md](Z_LEGAL_EVIDENCE_CORE.md) | `npm run z:legal:ops` |
 | Z-LEGAL-OPS-1 lawyer workstation control centre | [Z_LAWYER_WORKSTATION_CONTROL_CENTRE.md](Z_LAWYER_WORKSTATION_CONTROL_CENTRE.md) | — |
 | Z-LEGAL-OPS-1 guardian legal circle | [Z_GUARDIAN_LEGAL_CIRCLE.md](Z_GUARDIAN_LEGAL_CIRCLE.md) | — |
