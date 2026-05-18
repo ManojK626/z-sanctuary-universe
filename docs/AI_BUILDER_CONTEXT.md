@@ -160,6 +160,7 @@ npm run z:car2
 | [Z_AI_FUSION_CAPABILITY_MAP.md](Z_AI_FUSION_CAPABILITY_MAP.md) | Z-AI-FUSION-MAP-1 overlap governance map — fusion suggestions only (**no runtime merge auto-execution**). |
 | [Z_STILLNESS_MODE_AI_LEARNING_PATHWAY.md](Z_STILLNESS_MODE_AI_LEARNING_PATHWAY.md) | Z-STILLNESS-LEARN-1 idle alignment pathway — learn and report only (**no background automation**). |
 | [Z_SANCTUARY_ECOSYSTEM_BIOLOGY_MAP.md](Z_SANCTUARY_ECOSYSTEM_BIOLOGY_MAP.md) | Ecosystem biology metaphor — roots, trees, law stack, borders (**not** runtime control). |
+| [z-pgmo/Z_PGMO_MASTER_DOCTRINE.md](z-pgmo/Z_PGMO_MASTER_DOCTRINE.md) | Z-PGMO-0 cross-project management intelligence — observe, map, suggest, receipt only (**no merge/deploy/execution**). Merge after OTL on `main` unless AMK reorders. |
 | [design/Z_UNIVERSAL_INTERACTION_LANGUAGE.md](design/Z_UNIVERSAL_INTERACTION_LANGUAGE.md) | Z-UIL-1 universal interaction language — shared identity vs entitlement separation; complements Z-VIL (**docs only**). |
 | [LAWGRID_1A_GOVERNANCE_OBSERVATORY.md](LAWGRID_1A_GOVERNANCE_OBSERVATORY.md) | LAWGRID-1A read-only governance observatory — spine, constellation map, catalog/benchmark/ZSX/ZMV/SSWS/AMK ingest (**no runtime authority**). |
 | [PHASE_LAWGRID_1A_GREEN_RECEIPT.md](PHASE_LAWGRID_1A_GREEN_RECEIPT.md) | LAWGRID-1A sealed scope receipt. |
