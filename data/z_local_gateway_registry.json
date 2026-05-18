@@ -67,7 +67,11 @@
           "note": "Do not open with VS Code Live Server — use pnpm dev:dashboard."
         }
       ],
-      "docs": ["docs/PORT_AND_LAUNCH_RULES.md", "replit.md"],
+      "docs": [
+        "docs/PORT_AND_LAUNCH_RULES.md",
+        "docs/Z_TURTLE_MODE_DEPLOYMENT_GOVERNANCE.md",
+        "replit.md"
+      ],
       "do_not_use": [
         {
           "pattern": "vscode_live_server",

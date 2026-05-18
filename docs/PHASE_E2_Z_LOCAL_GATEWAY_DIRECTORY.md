@@ -141,3 +141,4 @@ corepack pnpm run build
 - [Z_SANCTUARY_CANONICAL_CONTROL_ROOT.md](Z_SANCTUARY_CANONICAL_CONTROL_ROOT.md)
 - [AMK_PROJECT_DOORWAY_LAUNCHER.md](AMK_PROJECT_DOORWAY_LAUNCHER.md)
 - Roulette: `Z-Sanctuary_Replit/Roulette-Data-Analyzer/docs/PORT_AND_LAUNCH_RULES.md`
+- Roulette Turtle Mode: `Z-Sanctuary_Replit/Roulette-Data-Analyzer/docs/Z_TURTLE_MODE_DEPLOYMENT_GOVERNANCE.md`
