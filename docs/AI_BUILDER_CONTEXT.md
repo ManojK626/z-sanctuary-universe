@@ -22,6 +22,12 @@
 
 Cross-links: [Z-GITHUB-SANCTUARY-GATE.md](Z-GITHUB-SANCTUARY-GATE.md), [Z-CLOUDFLARE-AI-COMMS-PRECAUTIONS.md](Z-CLOUDFLARE-AI-COMMS-PRECAUTIONS.md). **Merge queue:** MD060 → this spine → LinguaCore → Mauritius walks → Z-ADTF later. **No new runtime** while doctrine PRs land. Cloudflare future-phased only in this lane.
 
+## Module deduplication and backup lanes (docs only)
+
+Before building a new module, run **Z-MDE** advisory classification: [Z_MODULE_DEDUPLICATION_EVOLUTION_ENGINE.md](Z_MODULE_DEDUPLICATION_EVOLUTION_ENGINE.md) + `data/z_module_deduplication_policy.json` (labels: `NEW`, `OVERLAP`, `MERGE_CANDIDATE`, `ARCHIVE_CANDIDATE`, `RESEARCH_ONLY`, `BLOCKED_UNSAFE`). **Observe → Verify → Suggest → Human decides** — no auto-merge or registry rewrite.
+
+Protected backup lanes (GitHub / Cloudflare / PC / NAS / emergency cloud): [Z_SAFE_BACKUP_AND_SOURCE_ARCHIVE_POLICY.md](Z_SAFE_BACKUP_AND_SOURCE_ARCHIVE_POLICY.md) + `data/z_backup_lane_policy.json`. Never commit `.env`, secrets, DB dumps, or personal files to GitHub.
+
 ## Canonical control root and satellite bridges (Z-CONTROL-LINK-1)
 
 **Sealed on main.** **`Z_Sanctuary_Universe`** (this hub repository) is the **canonical governance and control root** for Z-Sanctuary. Satellite projects must not fork long doctrine; they carry **one thin bridge file** only: **`docs/Z_SANCTUARY_CONTROL_LINK.md`**, aligned from the hub template at the same path.

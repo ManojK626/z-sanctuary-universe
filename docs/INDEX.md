@@ -40,6 +40,8 @@ Compact entry points for **read-only** hub registries and AMK-facing evidence. F
 | Z-PATTERN-SAFE-1 universal pattern simulation governance | [Z_PATTERN_SAFE_UNIVERSAL_PATTERN_SIMULATION.md](Z_PATTERN_SAFE_UNIVERSAL_PATTERN_SIMULATION.md) | `npm run z:pattern:safe` |
 | AMK-AI-SYNC-1 indicator sync + AI team router | [AMK_AI_TEAM_INDICATOR_SYNC_ROUTER.md](AMK_AI_TEAM_INDICATOR_SYNC_ROUTER.md) | `npm run amk:ai-sync` |
 | Z-AI-FUSION-MAP-1 capability overlap governance | [Z_AI_FUSION_CAPABILITY_MAP.md](Z_AI_FUSION_CAPABILITY_MAP.md) | `npm run z:ai:fusion-map` |
+| Z-MDE module deduplication (advisory) | [Z_MODULE_DEDUPLICATION_EVOLUTION_ENGINE.md](Z_MODULE_DEDUPLICATION_EVOLUTION_ENGINE.md) | `data/z_module_deduplication_policy.json` |
+| Z-SAFE-BACKUP source archive lanes | [Z_SAFE_BACKUP_AND_SOURCE_ARCHIVE_POLICY.md](Z_SAFE_BACKUP_AND_SOURCE_ARCHIVE_POLICY.md) | `data/z_backup_lane_policy.json` |
 | Z-XBUS connector security policy | [Z_XBUS_CONNECTOR_SECURITY_POLICY.md](Z_XBUS_CONNECTOR_SECURITY_POLICY.md) | â€” |
 | Z-XBUS-GATE-1 green receipt | [PHASE_Z_XBUS_GATE_1_GREEN_RECEIPT.md](PHASE_Z_XBUS_GATE_1_GREEN_RECEIPT.md) | â€” |
 | Z-REPLICA-FABRIC-1 green receipt | [PHASE_Z_REPLICA_FABRIC_1_GREEN_RECEIPT.md](PHASE_Z_REPLICA_FABRIC_1_GREEN_RECEIPT.md) | — |

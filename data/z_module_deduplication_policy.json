@@ -1,0 +1,44 @@
+{
+  "schema": "z.module.deduplication.policy.v1",
+  "engine_id": "Z-MDE",
+  "mode": "advisory_only",
+  "golden_law": "Observe → Verify → Suggest → Human decides",
+  "classification_labels": [
+    "NEW",
+    "OVERLAP",
+    "MERGE_CANDIDATE",
+    "ARCHIVE_CANDIDATE",
+    "RESEARCH_ONLY",
+    "BLOCKED_UNSAFE"
+  ],
+  "scan_surfaces": [
+    "data/z_module_manifest.json",
+    "docs/Z-MASTER-MODULES-REGISTER.md",
+    "data/z_core_engines_registry.json",
+    "data/z_mdg_dashboard_registry.json",
+    "data/z_local_gateway_registry.json",
+    "docs/INDEX.md",
+    "docs/AI_BUILDER_CONTEXT.md",
+    "data/z_pc_root_projects.json",
+    "docs/Z_AI_FUSION_CAPABILITY_MAP.md",
+    "data/z_sanctuary_monster_project_registry.json"
+  ],
+  "optional_reports": [
+    "data/reports/z_car2_similarity_report.json"
+  ],
+  "optional_commands": {
+    "car2_similarity": "npm run z:car2",
+    "dashboard_registry_verify": "npm run dashboard:registry-verify",
+    "local_gateway_check": "npm run z:local:gateway:check"
+  },
+  "forbidden_actions": [
+    "delete_modules",
+    "auto_build",
+    "auto_deploy",
+    "silent_registry_rewrite",
+    "code_merge_without_pr",
+    "rename_projects_without_charter"
+  ],
+  "default_merge_posture": "docs_and_registry_first",
+  "human_authority": "AMK-Goku"
+}
