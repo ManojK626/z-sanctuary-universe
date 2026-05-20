@@ -1,0 +1,91 @@
+{
+  "schema": "z.backup.lane.policy.v1",
+  "policy_id": "Z-SAFE-BACKUP",
+  "mode": "doctrine_and_operator_discipline",
+  "golden_law": "backup ≠ deploy; secrets never in GitHub commits",
+  "lanes": {
+    "github": {
+      "role": "versioned_source_and_docs",
+      "allowed": [
+        "source_code",
+        "docs",
+        "registries",
+        "scripts",
+        "receipts",
+        "config_templates"
+      ],
+      "forbidden": [
+        "env_files",
+        "secrets",
+        "tokens",
+        "payment_keys",
+        "database_dumps",
+        "personal_files",
+        "large_binary_archives",
+        "full_pc_backups",
+        "nas_images"
+      ]
+    },
+    "cloudflare": {
+      "role": "deployed_edge_runtime",
+      "allowed": [
+        "pages_static",
+        "containers_api",
+        "workers_when_chartered",
+        "runtime_secrets_via_dashboard_only"
+      ],
+      "forbidden": [
+        "raw_pc_backup",
+        "unencrypted_private_archives",
+        "secrets_in_hub_repo"
+      ]
+    },
+    "local_pc": {
+      "role": "working_tree",
+      "allowed": [
+        "active_repos",
+        "local_reports_gitignored",
+        "manual_operator_snapshots_outside_repo"
+      ],
+      "forbidden": [
+        "auto_upload_to_cloud",
+        "arbitrary_drive_scan",
+        "auto_sync_to_github"
+      ]
+    },
+    "nas_synology": {
+      "role": "private_cold_backup",
+      "status_default": "NAS_WAIT",
+      "allowed": [
+        "full_private_backups",
+        "project_archives",
+        "database_backups_encrypted",
+        "encrypted_snapshots",
+        "restore_drills"
+      ],
+      "forbidden": [
+        "public_exposure",
+        "hub_auto_authority_without_mount_verify"
+      ]
+    },
+    "emergency_cloud": {
+      "role": "encrypted_offsite_archive",
+      "allowed": [
+        "encrypted_archives_only",
+        "audited_upload_manifest"
+      ],
+      "forbidden": [
+        "raw_secrets",
+        "public_buckets",
+        "unaudited_uploads",
+        "plaintext_vault_exports"
+      ]
+    }
+  },
+  "human_authority": "AMK-Goku",
+  "related_docs": [
+    "docs/Z_SAFE_BACKUP_AND_SOURCE_ARCHIVE_POLICY.md",
+    "docs/Z_MODULE_DEDUPLICATION_EVOLUTION_ENGINE.md",
+    "rules/Z_SANCTUARY_SECURITY_POLICY.md"
+  ]
+}

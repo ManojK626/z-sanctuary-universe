@@ -1,0 +1,313 @@
+{
+  "schema": "z.eco.map.topology.registry.v1",
+  "phase": "Z-ECO-MAP-0",
+  "mode": "advisory_only",
+  "updated_at": "2026-05-20",
+  "golden_law": "observe → classify → suggest → human decides",
+  "relationship_labels": [
+    "SHARED_SERVICE_LAYER",
+    "FUSION_CANDIDATE",
+    "VISUAL_COMPANION",
+    "KNOWLEDGE_PEER",
+    "DEPLOYMENT_ISOLATED",
+    "PAYMENT_ISOLATED",
+    "GATEWAY_VISIBLE",
+    "RESEARCH_ONLY",
+    "BLOCKED_UNSAFE"
+  ],
+  "resilience_stack": [
+    { "layer": "local_pc", "label": "Local PC working tree" },
+    { "layer": "z_lab", "label": "Z_Labs supervised capsule" },
+    { "layer": "hub", "label": "Z-Sanctuary Hub governance root" },
+    { "layer": "github", "label": "GitHub mirror (source + docs + receipts)" },
+    { "layer": "cloudflare_edge", "label": "Cloudflare edge (HOLD default)" },
+    { "layer": "nas_sovereign", "label": "NAS sovereign archive (NAS_WAIT default)" }
+  ],
+  "projects": [
+    {
+      "project": "zsanctuary-universe",
+      "display_name": "Z-Sanctuary Universe (hub)",
+      "classification": "hub_governance",
+      "ownership_lane": "AMK",
+      "deployment_zone": "hub",
+      "pc_root_id": "zsanctuary-universe",
+      "fusion_candidates": ["z-traffic-tower", "z-eco-map", "z-mde", "z-fusion"],
+      "shared_layers": ["registry", "dashboard", "gateway_catalog", "doctrine"],
+      "must_remain_isolated": ["payments", "member_runtime_auto_sync"],
+      "backup_priority": "critical",
+      "notes": "Canonical control root; Z-CONTROL-LINK-1 sealed."
+    },
+    {
+      "project": "roulette-data-analyzer",
+      "display_name": "Roulette Data Analyzer",
+      "classification": "analytics_platform",
+      "ownership_lane": "AMK",
+      "deployment_zone": "cloudflare_pages_plus_container",
+      "pc_root_id": "z-sanctuary-replit",
+      "fusion_candidates": ["z-traffic-tower", "z-daio-posture"],
+      "shared_layers": ["gateway", "identity_docs"],
+      "must_remain_isolated": ["payments", "legal", "hub_governance_json"],
+      "backup_priority": "high",
+      "local_gateway_hint": "http://127.0.0.1:5190/",
+      "notes": "Satellite under Z-Sanctuary_Replit; Vite local URL only for SPA."
+    },
+    {
+      "project": "z-questra",
+      "display_name": "Z-QUESTRA",
+      "classification": "quest_narrative",
+      "ownership_lane": "AMK",
+      "deployment_zone": "hub_docs_plus_hold",
+      "pc_root_id": null,
+      "fusion_candidates": ["z-omnai-creative", "magical-canvas"],
+      "shared_layers": ["monster_registry", "narrative_docs"],
+      "must_remain_isolated": ["payments", "deploy_auto"],
+      "backup_priority": "medium",
+      "notes": "Monster registry id z_questra; SSWS launch HOLD per requirements report."
+    },
+    {
+      "project": "z-daio-posture",
+      "display_name": "Z-DAIO (device AI lane)",
+      "classification": "device_ai_lane",
+      "ownership_lane": "AMK",
+      "deployment_zone": "hub_doctrine",
+      "fusion_candidates": ["z-anydevice-capsule", "roulette-data-analyzer"],
+      "shared_layers": ["device_trust_docs"],
+      "must_remain_isolated": ["payments", "live_device_scan_auto"],
+      "backup_priority": "medium",
+      "notes": "Doctrine/device-trust posture in OTL; no silent device bridge."
+    },
+    {
+      "project": "eirmind-aisling",
+      "display_name": "ÉirMind / Sister Aisling Sol",
+      "classification": "knowledge_companion",
+      "ownership_lane": "eirmind_aisling_sol",
+      "deployment_zone": "member_pc",
+      "pc_root_id": "sister-aisling-sol",
+      "fusion_candidates": ["z-omnai-creative"],
+      "shared_layers": ["knowledge_peer_docs"],
+      "must_remain_isolated": ["payments", "hub_registry_write"],
+      "backup_priority": "medium",
+      "notes": "Payment lane eirmind_aisling_sol in ownership registry."
+    },
+    {
+      "project": "at-princess-blackie",
+      "display_name": "AT Princess & Blackie (Franed)",
+      "classification": "companion_creative",
+      "ownership_lane": "AMK",
+      "deployment_zone": "member_pc",
+      "pc_root_id": "at-princess-blackie-copilot",
+      "fusion_candidates": ["z-omnai-creative"],
+      "shared_layers": ["creative_doctrine"],
+      "must_remain_isolated": ["payments", "legal"],
+      "backup_priority": "medium",
+      "notes": "Companion creative member repo."
+    },
+    {
+      "project": "z-labs-capsule",
+      "display_name": "Z_Labs",
+      "classification": "lab_capsule",
+      "ownership_lane": "AMK",
+      "deployment_zone": "z_lab",
+      "pc_root_id": null,
+      "fusion_candidates": ["zsanctuary-universe"],
+      "shared_layers": ["control_link_bridge"],
+      "must_remain_isolated": ["hub_authority", "payments", "deploy"],
+      "backup_priority": "medium",
+      "notes": "Sibling capsule; satellite manifest z_labs_capsule."
+    },
+    {
+      "project": "z-omnai-creative",
+      "display_name": "Z-OMNAI creative production",
+      "classification": "creative_production",
+      "ownership_lane": "AMK",
+      "deployment_zone": "hub_scripts_hold",
+      "fusion_candidates": ["z-questra", "eirmind-aisling"],
+      "shared_layers": ["creative_reports", "traffic_signals"],
+      "must_remain_isolated": ["payments", "public_publish_auto", "generated_media_auto"],
+      "backup_priority": "medium",
+      "notes": "Script service HOLD; advisory bundles only in Phase posture."
+    },
+    {
+      "project": "z-omni-sanctuary",
+      "display_name": "Z-OMNI-Sanctuary",
+      "classification": "skyscraper_surface",
+      "ownership_lane": "AMK",
+      "deployment_zone": "member_pc",
+      "pc_root_id": "z-omni-sanctuary",
+      "fusion_candidates": ["zsanctuary-universe"],
+      "shared_layers": ["visual_tokens"],
+      "must_remain_isolated": ["payments", "runtime_merge"],
+      "backup_priority": "medium",
+      "notes": "Visual workstation charter alignment; VISUAL_COMPANION edges to hub."
+    },
+    {
+      "project": "z-skyscraper-tower",
+      "display_name": "Z-SANCTUARY AI SKYSCRAPER",
+      "classification": "skyscraper_surface",
+      "ownership_lane": "AMK",
+      "deployment_zone": "member_pc",
+      "pc_root_id": "z-sanctuary-ai-skyscraper",
+      "fusion_candidates": ["zsanctuary-universe", "z-traffic-tower"],
+      "shared_layers": ["dashboard_surfaces"],
+      "must_remain_isolated": ["payments", "deploy_auto"],
+      "backup_priority": "medium",
+      "notes": "Large surface; observe via traffic and registry verify."
+    },
+    {
+      "project": "amk-goku-vaults",
+      "display_name": "Amk-Goku Vaults",
+      "classification": "vault_member",
+      "ownership_lane": "AMK",
+      "deployment_zone": "member_pc",
+      "pc_root_id": "amk-goku-vaults",
+      "fusion_candidates": [],
+      "shared_layers": [],
+      "must_remain_isolated": ["github_commit", "cloudflare", "public_exposure", "payments"],
+      "backup_priority": "critical",
+      "notes": "NAS-first for private vault material; never commit vault exports."
+    },
+    {
+      "project": "z-traffic-tower",
+      "display_name": "Z-Traffic minibots tower",
+      "classification": "governance_engine",
+      "ownership_lane": "AMK",
+      "deployment_zone": "hub",
+      "fusion_candidates": ["z-car2", "z-eco-map"],
+      "shared_layers": ["read_only_signals"],
+      "must_remain_isolated": ["auto_execute", "deploy"],
+      "backup_priority": "high",
+      "notes": "npm run z:traffic; signals only."
+    },
+    {
+      "project": "z-mde",
+      "display_name": "Z-MDE deduplication",
+      "classification": "governance_engine",
+      "ownership_lane": "AMK",
+      "deployment_zone": "hub_doctrine",
+      "fusion_candidates": ["z-fusion", "z-eco-map"],
+      "shared_layers": ["registry_scan"],
+      "must_remain_isolated": ["auto_delete", "registry_rewrite"],
+      "backup_priority": "high",
+      "notes": "Runs before Z-FUSION in pipeline."
+    },
+    {
+      "project": "z-fusion",
+      "display_name": "Z-FUSION co-design",
+      "classification": "governance_engine",
+      "ownership_lane": "AMK",
+      "deployment_zone": "hub_doctrine",
+      "fusion_candidates": ["z-ai-fusion-map"],
+      "shared_layers": ["co_design_proposals"],
+      "must_remain_isolated": ["repo_merge_auto", "payment_mix"],
+      "backup_priority": "high",
+      "notes": "After MDE; HUMAN_REVIEW_REQUIRED default."
+    },
+    {
+      "project": "z-eco-map",
+      "display_name": "Z-ECO-MAP topology",
+      "classification": "governance_engine",
+      "ownership_lane": "AMK",
+      "deployment_zone": "hub_doctrine",
+      "fusion_candidates": [],
+      "shared_layers": ["topology_registry"],
+      "must_remain_isolated": ["orchestration", "deploy_brain"],
+      "backup_priority": "high",
+      "notes": "This registry; map only."
+    },
+    {
+      "project": "nas-sovereign-archive",
+      "display_name": "Synology NAS sovereign archive",
+      "classification": "research_only",
+      "ownership_lane": "AMK",
+      "deployment_zone": "nas_sovereign",
+      "pc_root_id": null,
+      "fusion_candidates": [],
+      "shared_layers": ["encrypted_backup"],
+      "must_remain_isolated": ["github", "cloudflare_public", "auto_sync"],
+      "backup_priority": "critical",
+      "status": "NAS_WAIT",
+      "notes": "Cold mirror; enable only after mount verify."
+    }
+  ],
+  "relationships": [
+    {
+      "from": "zsanctuary-universe",
+      "to": "roulette-data-analyzer",
+      "label": "GATEWAY_VISIBLE",
+      "notes": "Local gateway + Replit satellite; no hub runtime bridge by default."
+    },
+    {
+      "from": "zsanctuary-universe",
+      "to": "z-labs-capsule",
+      "label": "SHARED_SERVICE_LAYER",
+      "notes": "Control-link bridge only."
+    },
+    {
+      "from": "zsanctuary-universe",
+      "to": "z-questra",
+      "label": "KNOWLEDGE_PEER",
+      "notes": "Monster registry alignment."
+    },
+    {
+      "from": "roulette-data-analyzer",
+      "to": "z-traffic-tower",
+      "label": "FUSION_CANDIDATE",
+      "notes": "Traffic signals for governance-sensitive analytics."
+    },
+    {
+      "from": "z-questra",
+      "to": "z-omnai-creative",
+      "label": "VISUAL_COMPANION",
+      "notes": "Narrative + creative production; no shared runtime."
+    },
+    {
+      "from": "eirmind-aisling",
+      "to": "z-omnai-creative",
+      "label": "KNOWLEDGE_PEER",
+      "notes": "Advisory creative knowledge only."
+    },
+    {
+      "from": "at-princess-blackie",
+      "to": "z-omnai-creative",
+      "label": "FUSION_CANDIDATE",
+      "notes": "Co-design under Z-FUSION if AMK approves."
+    },
+    {
+      "from": "zsanctuary-universe",
+      "to": "amk-goku-vaults",
+      "label": "PAYMENT_ISOLATED",
+      "notes": "Vault never fuses with payment lanes."
+    },
+    {
+      "from": "roulette-data-analyzer",
+      "to": "zsanctuary-universe",
+      "label": "DEPLOYMENT_ISOLATED",
+      "notes": "Separate deploy targets; hub governs links only."
+    },
+    {
+      "from": "z-mde",
+      "to": "z-fusion",
+      "label": "SHARED_SERVICE_LAYER",
+      "notes": "MDE overlap → FUSION co-design pipeline."
+    },
+    {
+      "from": "z-eco-map",
+      "to": "z-mde",
+      "label": "GATEWAY_VISIBLE",
+      "notes": "Topology informs scan order; no execution."
+    },
+    {
+      "from": "nas-sovereign-archive",
+      "to": "zsanctuary-universe",
+      "label": "BLOCKED_UNSAFE",
+      "notes": "No auto authority inversion from NAS to hub JSON."
+    }
+  ],
+  "human_authority": "AMK-Goku",
+  "related_docs": [
+    "docs/Z_ECO_MAP_TOPOLOGY_ENGINE.md",
+    "docs/Z_MODULE_DEDUPLICATION_EVOLUTION_ENGINE.md",
+    "docs/Z_FUSION_CO_DESIGN_ENGINE.md",
+    "docs/Z_SAFE_BACKUP_AND_SOURCE_ARCHIVE_POLICY.md"
+  ]
+}
