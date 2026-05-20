@@ -12,6 +12,16 @@
 6. [Z_SANCTUARY_BUILD_RULES.md](Z_SANCTUARY_BUILD_RULES.md) — hard boundaries for builders.
 7. [Z_OMNI_VISUAL_WORKSTATION_ENGINE_CHARTER.md](Z_OMNI_VISUAL_WORKSTATION_ENGINE_CHARTER.md) — **Z-OMNI-CHARTER-1:** governed visual workstation engine (tokens, panel manifests, phased build); presentation and composition under Turtle Mode — not autonomous execution or hype-as-truth.
 
+## Governance civilization stack (Phase 0 — consolidation)
+
+**Posture:** **stability > expansion** — layered civilization model, heart human, **14 DRP overrides all formulas**.
+
+- [Z_GOVERNANCE_CIVILIZATION_STACK.md](Z_GOVERNANCE_CIVILIZATION_STACK.md) — single map: constitution → heart → mind engines → hands → AMK
+- [Z_CONSOLIDATION_VISIBILITY_ROADMAP.md](Z_CONSOLIDATION_VISIBILITY_ROADMAP.md) — pre-Mauritius: merge CI, read-only dashboard lenses, Cloudflare readiness, backup chain
+- [Z_QUALIFIED_OPERATOR_ACCESS_LADDER.md](Z_QUALIFIED_OPERATOR_ACCESS_LADDER.md) — public → contributors → trusted → core guardians → AMK
+
+Machine registries: `data/z_governance_civilization_stack.json`, `data/z_qualified_operator_access_policy.json`. Phase 0 engines (Z-ATE, Z-ECO-MAP, Z-MDE, Z-FUSION, Z-WORK-PULSE, Z-SAFE-BACKUP, Z-FORMULA-CORE) are indexed in the civilization stack doc — **advisory only**, no runtime mesh.
+
 ## Operational technology layers (Phase 0 — docs only)
 
 **Law:** layered tools are **not** the soul of the ecosystem — PC/NAS + hub governance remain authoritative.

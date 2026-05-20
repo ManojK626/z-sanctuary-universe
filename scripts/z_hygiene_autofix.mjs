@@ -43,12 +43,15 @@ function writeReports(payload) {
 
 const npmCmd = process.platform === 'win32' ? 'npm.cmd' : 'npm';
 const npxCmd = process.platform === 'win32' ? 'npx.cmd' : 'npx';
+// Must match package.json "lint:md" / "lint:md:fix" ignores (skip node_modules, etc.)
+const MDLINT_IGNORE =
+  '--ignore "**/node_modules/**" --ignore "**/.pytest_cache/**" --ignore "safe_pack/**" --ignore "apps/**/node_modules/**" --ignore "Amk_Goku Worldwide Loterry/exports/**" --ignore "docs/ZALS_DELIVERABLE_*.md"';
 
 const steps = [
   runStep('markdown_table_compact_pre', 'node scripts/z_markdown_table_compact.mjs'),
   runStep(
     'markdownlint_fix',
-    `${npxCmd} markdownlint -c .markdownlint.json --fix --ignore "safe_pack/**" --ignore "apps/**/node_modules/**" --ignore "Amk_Goku Worldwide Loterry/exports/**" --ignore "docs/ZALS_DELIVERABLE_*.md" "**/*.md"`
+    `${npxCmd} markdownlint -c .markdownlint.json --fix ${MDLINT_IGNORE} "**/*.md"`
   ),
   runStep(
     'prettier_markdown',
@@ -57,7 +60,7 @@ const steps = [
   runStep('markdown_table_compact_post', 'node scripts/z_markdown_table_compact.mjs'),
   runStep(
     'markdownlint_fix_post_prettier',
-    `${npxCmd} markdownlint -c .markdownlint.json --fix --ignore "safe_pack/**" --ignore "apps/**/node_modules/**" --ignore "Amk_Goku Worldwide Loterry/exports/**" --ignore "docs/ZALS_DELIVERABLE_*.md" "**/*.md"`
+    `${npxCmd} markdownlint -c .markdownlint.json --fix ${MDLINT_IGNORE} "**/*.md"`
   ),
   runStep('markdownlint_validate', `${npmCmd} run lint:md`),
 ];

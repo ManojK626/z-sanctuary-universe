@@ -1,0 +1,40 @@
+{
+  "schema_version": "1.0.0",
+  "lane_id": "Z-QOAL-0",
+  "phase": 0,
+  "levels": [
+    {
+      "id": "public",
+      "label": "Public",
+      "may_access": ["outcomes", "safeguards", "z_formulas_short", "public_policy"],
+      "must_not": ["formula_core_full", "internal_registries_write", "deploy_keys", "nas_paths"]
+    },
+    {
+      "id": "contributors",
+      "label": "Contributors",
+      "may_access": ["public", "eco_map_summaries", "limited_topology"],
+      "must_not": ["formula_core", "payment_lanes", "nas_paths"]
+    },
+    {
+      "id": "trusted_operators",
+      "label": "Trusted operators",
+      "may_access": ["governance_docs", "z_ate", "z_mde", "z_fusion", "z_work_pulse", "traffic_reports"],
+      "must_not": ["sacred_policy_change_without_pr_amk"]
+    },
+    {
+      "id": "core_guardians",
+      "label": "Core guardians",
+      "may_access": ["z_formula_core", "full_stack_map", "qualified_formula_doc"],
+      "must_not": ["auto_merge", "deploy", "payment_mutation"]
+    },
+    {
+      "id": "amk_sacred",
+      "label": "AMK-Goku",
+      "may_access": ["all_lanes", "sacred_moves"],
+      "must_not": ["delegate_sacred_authority_without_charter"]
+    }
+  ],
+  "default_ai_posture": "public",
+  "hub_cursor_posture": "trusted_operators_with_charter",
+  "doc": "docs/Z_QUALIFIED_OPERATOR_ACCESS_LADDER.md"
+}
