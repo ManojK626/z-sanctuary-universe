@@ -652,7 +652,9 @@
   function flexLsSet(key, val) {
     try {
       window.localStorage.setItem(key, val);
-    } catch (_) {}
+    } catch (_) {
+      // Ignore storage failures in restricted browser contexts.
+    }
   }
 
   function chipFromDashboard(d) {
@@ -810,7 +812,6 @@
   function renderRibbonSignals(traffic, dashboard) {
     var el = document.getElementById('amkRibbonSignals');
     if (!el) return;
-    var trafficSig = traffic ? String(traffic.overall_signal || traffic.signal || 'UNKNOWN').toUpperCase() : 'UNKNOWN';
     var dashChip = chipFromDashboard(dashboard);
     el.innerHTML =
       '<span class="amk-dash-ribbon-chip"><strong>Traffic</strong> ' +
@@ -828,9 +829,7 @@
     var el = main.querySelector('[data-amk-category="' + String(catId).replace(/"/g, '') + '"]');
     if (!el) return;
     if (el.tagName === 'DETAILS') {
-      try {
-        el.open = true;
-      } catch (_) {}
+      el.open = true;
     }
     el.scrollIntoView({ behavior: 'smooth', block: 'start' });
   }
@@ -905,9 +904,7 @@
       } else {
         var ind = document.getElementById('amk-indicators-section');
         if (ind) {
-          try {
-            ind.open = true;
-          } catch (_) {}
+          ind.open = true;
           ind.scrollIntoView({ behavior: 'smooth', block: 'start' });
         }
         return;
@@ -916,9 +913,7 @@
     if (!el) return;
     var host = el.closest('details') || el.closest('section') || el.closest('[data-amk-section]') || el;
     if (host && host.tagName === 'DETAILS') {
-      try {
-        host.open = true;
-      } catch (_) {}
+      host.open = true;
     }
     host.scrollIntoView({ behavior: 'smooth', block: 'center' });
   }
@@ -927,9 +922,7 @@
     var main = document.getElementById('amk-main');
     if (!main) return;
     main.querySelectorAll('details.amk-map-section').forEach(function (d) {
-      try {
-        d.open = open;
-      } catch (_) {}
+      d.open = open;
     });
   }
 
@@ -1106,7 +1099,7 @@
 
     var search = document.getElementById('amkDashSearch');
     if (search) {
-      function runBookSearch() {
+      var runBookSearch = function () {
         var q = String(search.value || '')
           .trim()
           .toLowerCase();
@@ -1121,7 +1114,7 @@
             btn.classList.toggle('amk-dash-drawer-btn--search-hide', !hit);
           });
         }
-      }
+      };
       search.addEventListener('input', runBookSearch);
       runBookSearch();
     }
@@ -1196,14 +1189,18 @@
     try {
       var v = window.localStorage.getItem(VIEW_LS);
       if (v && getViewDef(map, v).id === v) return v;
-    } catch (_) {}
+    } catch (_) {
+      // Ignore storage read failures in restricted browser contexts.
+    }
     return 'amk_operator';
   }
 
   function saveViewId(id) {
     try {
       window.localStorage.setItem(VIEW_LS, id);
-    } catch (_) {}
+    } catch (_) {
+      // Ignore storage write failures in restricted browser contexts.
+    }
   }
 
   function applyView(map, viewId) {

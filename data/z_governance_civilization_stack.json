@@ -1,0 +1,37 @@
+{
+  "schema_version": "1.0.0",
+  "lane_id": "Z-GOV-STACK-0",
+  "phase": 0,
+  "posture": "stability_over_expansion",
+  "supreme_rule": "14_drp_overrides_all_formulas",
+  "authority": "amk_goku_sacred",
+  "layers": [
+    { "id": "14_drp", "role": "constitution", "doc": "docs/Z_SWARM_14DRP_UNIVERSAL_AGENT_LAW.md" },
+    { "id": "z_formula_core", "role": "heart_reasoning", "doc": "docs/Z_FORMULA_CORE_REASONING_SPINE.md", "policy": "data/z_formula_core_policy.json" },
+    { "id": "z_ate", "role": "trust_autonomy", "doc": "docs/Z_AUTONOMY_TRUST_ENGINE.md", "policy": "data/z_autonomy_trust_policy.json" },
+    { "id": "z_eco_map", "role": "topology", "doc": "docs/Z_ECO_MAP_TOPOLOGY_ENGINE.md", "policy": "data/z_eco_map_topology_registry.json" },
+    { "id": "z_mde", "role": "deduplication", "doc": "docs/Z_MODULE_DEDUPLICATION_EVOLUTION_ENGINE.md", "policy": "data/z_module_deduplication_policy.json" },
+    { "id": "z_fusion", "role": "co_design", "doc": "docs/Z_FUSION_CO_DESIGN_ENGINE.md", "policy": "data/z_fusion_co_design_policy.json" },
+    { "id": "z_work_pulse", "role": "work_witness", "doc": "docs/Z_BACKGROUND_WORK_WITNESS.md", "policy": "data/z_background_work_policy.json" },
+    { "id": "z_mcr_a", "role": "merge_conflict_intel", "doc": null, "note": "referenced in stack; doc when chartered" },
+    { "id": "z_safe_backup", "role": "resilience", "doc": "docs/Z_SAFE_BACKUP_AND_SOURCE_ARCHIVE_POLICY.md", "policy": "data/z_backup_lane_policy.json" },
+    { "id": "z_traffic", "role": "operational_posture", "doc": null },
+    { "id": "ai_tower", "role": "aggregation", "doc": "docs/Z-SSWS-MINI-BOT-AI-TOWER-MARKDOWN-RELAY.md" },
+    { "id": "execution_hands", "role": "bounded_tools", "tools": ["cursor", "copilot", "cloudflare", "gateway"] },
+    { "id": "amk_goku", "role": "final_authority", "doc": null }
+  ],
+  "reasoning_pipeline": [
+    "14_drp_check",
+    "z_formula_core_alignment",
+    "z_eco_map_placement",
+    "z_mde_overlap_scan",
+    "z_fusion_co_design_if_overlap",
+    "z_ate_trust_score",
+    "z_work_pulse_if_active",
+    "human_decision_amk_on_l4_l5"
+  ],
+  "resilience_chain": ["local_pc", "z_lab_optional", "hub", "github_mirror", "cloudflare_hold", "nas_sovereign"],
+  "consolidation_doc": "docs/Z_CONSOLIDATION_VISIBILITY_ROADMAP.md",
+  "qualified_operator_doc": "docs/Z_QUALIFIED_OPERATOR_ACCESS_LADDER.md",
+  "civilization_stack_doc": "docs/Z_GOVERNANCE_CIVILIZATION_STACK.md"
+}

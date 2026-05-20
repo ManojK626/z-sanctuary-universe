@@ -1,0 +1,107 @@
+{
+  "schema": "z.autonomy.trust.policy.v1",
+  "lane_id": "Z-ATE-0",
+  "engine_id": "Z-ATE",
+  "alias": "Z-TRUST-LAYER",
+  "mode": "doctrine_and_orchestration_intelligence_only",
+  "phase": 0,
+  "golden_law": "automation ≠ authority; graduated trust with bounded autonomy",
+  "core_shift": "manual approval everywhere → evidence-gated auto-flow for low risk only",
+  "trust_layers": [
+    { "layer": 0, "id": "observation", "may": "read_only_observe", "must_not": "mutate" },
+    { "layer": 1, "id": "suggestion", "may": "propose", "must_not": "execute" },
+    { "layer": 2, "id": "auto_approved_low_risk", "may": "bounded_auto_flow_when_all_gates_pass", "must_not": "expand_scope_without_rescore" },
+    { "layer": 3, "id": "supervised_workflow", "may": "prepare", "must_not": "apply_without_amk" },
+    { "layer": 4, "id": "hard_amk_gate", "may": "surface_checklist", "must_not": "proceed_without_human" },
+    { "layer": 5, "id": "blocked", "may": "report_blocked", "must_not": "bypass" }
+  ],
+  "output_labels": [
+    "AUTO_APPROVED",
+    "SUPERVISED_REQUIRED",
+    "AMK_REQUIRED",
+    "BLOCKED"
+  ],
+  "default_when_uncertain": "SUPERVISED_REQUIRED",
+  "layer_2_required_conditions": [
+    "drp_pass",
+    "no_secrets_in_diff",
+    "no_payment_mutation",
+    "no_deploy_or_cloudflare_production_bind",
+    "no_silent_governance_rewrite",
+    "no_ownership_conflict",
+    "no_payment_or_user_data_fusion",
+    "ci_not_red_for_scope",
+    "rollback_documented"
+  ],
+  "layer_2_examples": [
+    "markdown_formatting_when_invoked",
+    "json_schema_validate_only",
+    "readonly_report_generation_l1",
+    "topology_trust_refresh_reports_only"
+  ],
+  "layer_4_amk_mandatory": [
+    "payments",
+    "ownership_transfer",
+    "production_deploy",
+    "billing_changes",
+    "cloudflare_live_mutation",
+    "security_rules_and_secrets",
+    "nas_activation",
+    "legal_evidence",
+    "user_data_movement",
+    "ai_autonomy_escalation"
+  ],
+  "layer_5_blocked": [
+    "auto_payment_mixing",
+    "secret_exfiltration",
+    "destructive_merge_or_force_push_main",
+    "silent_infra_nas_cloudflare_mutation",
+    "ai_claiming_registry_authority",
+    "task_queue_auto_execute",
+    "trust_score_implies_merge_or_deploy"
+  ],
+  "input_signals": {
+    "drp": "npm run z:swarm:14drp",
+    "traffic": "npm run z:traffic",
+    "eco_map": "data/z_eco_map_topology_registry.json",
+    "mde": "docs/Z_MODULE_DEDUPLICATION_EVOLUTION_ENGINE.md",
+    "fusion": "docs/Z_FUSION_CO_DESIGN_ENGINE.md",
+    "work_pulse": "docs/Z_BACKGROUND_WORK_WITNESS.md",
+    "payment": "data/z_payment_project_ownership_registry.json",
+    "backup": "docs/Z_SAFE_BACKUP_AND_SOURCE_ARCHIVE_POLICY.md",
+    "autonomy_levels": "data/z_autonomy_task_policy.json"
+  },
+  "peer_engines": [
+    "Z-Traffic",
+    "Z-ECO-MAP",
+    "Z-MDE",
+    "Z-FUSION",
+    "Z-WORK-PULSE",
+    "Z-MCR-A",
+    "Z-SAFE-BACKUP",
+    "Z-Cycle-Observe"
+  ],
+  "maps_to_autonomy_levels": {
+    "L0": "observation",
+    "L1": "suggestion_and_report",
+    "L2": "auto_approved_low_risk_when_gated",
+    "L3": "supervised_workflow",
+    "L4": "hard_amk_gate",
+    "L5": "blocked"
+  },
+  "forbidden_actions": [
+    "auto_merge_pr",
+    "auto_push",
+    "auto_deploy_production",
+    "auto_escalate_ate_authority",
+    "waive_l4_l5",
+    "treat_auto_approved_as_sacred_permission"
+  ],
+  "human_authority": "AMK-Goku",
+  "verdict_labels": ["SAFE", "NEEDS_HUMAN_DECISION", "BLOCKED"],
+  "related_docs": [
+    "docs/Z_AUTONOMY_TRUST_ENGINE.md",
+    "docs/AMK_AUTONOMOUS_APPROVAL_LADDER.md",
+    "docs/AMK_PROJECT_INDICATORS_AND_GO_NO_GO.md"
+  ]
+}

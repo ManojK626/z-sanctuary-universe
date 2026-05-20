@@ -217,7 +217,7 @@ function main() {
     `- Overall signal: **${overall}**`,
     `- Registry overall: **${registryOverall}**`,
     `- Fixtures match expected: **${!fixtureMismatch}**`,
-    `- Phase: **Z-XBUS-GATE-1** (read-only governance)`,
+    '- Phase: **Z-XBUS-GATE-1** (read-only governance)',
     '',
     '## Registry entries',
     '',

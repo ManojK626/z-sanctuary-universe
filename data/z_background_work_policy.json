@@ -1,0 +1,107 @@
+{
+  "schema": "z.background.work.policy.v1",
+  "lane_id": "Z-WORK-PULSE-0",
+  "engine_id": "Z-WORK-PULSE",
+  "alias": "Background Work Witness",
+  "mode": "doctrine_and_policy_only",
+  "phase": 0,
+  "golden_law": "observe → witness → suggest → human decides",
+  "laws": [
+    "progress_not_permission",
+    "work_pct_not_certification",
+    "witness_not_executor",
+    "queue_not_auto_run"
+  ],
+  "z_work_definition": "Bounded operator- or CI-started job that may emit a witness receipt in Phase 1+",
+  "pulse_definition": "Timestamped witness update with optional step_index and work_progress_pct",
+  "phase_0_writes": [],
+  "phase_1_target_artifact": "data/reports/z_background_work_status.json",
+  "optional_md_artifact": "data/reports/z_background_work_status.md",
+  "dual_percentage_model": {
+    "growth_percent": {
+      "owner": "AMK-INDICATOR-1",
+      "meaning": "project_readiness_maturity"
+    },
+    "work_progress_pct": {
+      "owner": "Z-WORK-PULSE witness producers",
+      "meaning": "current_run_only"
+    }
+  },
+  "autonomy_levels": ["L0", "L1", "L2", "L3", "L4", "L5"],
+  "signals": ["GREEN", "YELLOW", "BLUE", "RED"],
+  "job_row_required_fields": [
+    "job_id",
+    "title",
+    "source",
+    "autonomy_level",
+    "signal",
+    "started_at",
+    "updated_at",
+    "forbidden_auto_actions"
+  ],
+  "job_row_optional_fields": [
+    "work_progress_pct",
+    "step",
+    "step_index",
+    "step_total",
+    "project_id",
+    "human_gate",
+    "related_docs",
+    "npm_script"
+  ],
+  "forbidden_auto_actions": [
+    "auto_start",
+    "auto_merge",
+    "auto_push",
+    "deploy",
+    "cloudflare_bind",
+    "github_settings_change",
+    "payment_lane_change",
+    "legal_automation",
+    "secrets_write",
+    "nas_mutation",
+    "task_queue_execute",
+    "pr_create_without_human"
+  ],
+  "forbidden_producers": [
+    "silent_cron",
+    "hub_auto_scheduler",
+    "z_cycle_observe_self_trigger",
+    "cloudflare_worker",
+    "payment_webhook"
+  ],
+  "phase_1_producer_candidates": [
+    "scripts/background_run.py",
+    "allowlisted_npm_wrappers",
+    "vscode_tasks_human_run",
+    "cursor_background_agent_receipt_only"
+  ],
+  "consumers": {
+    "amk_indicators": "future row z_work_pulse",
+    "z_autorun_monitor": "core/z_autorun_monitor.js",
+    "z_cycle_indicator_panel": "core/z_cycle_indicator_panel.js",
+    "z_cycle_observe": "metadata only blocked_by_work",
+    "ai_builder": "read-only summarize"
+  },
+  "growth_mode": {
+    "module": "core/z_growth_mode.js",
+    "calm_poll_multiplier": 2.5,
+    "law": "slow_poll_not_hide_red"
+  },
+  "existing_log_witness_phase_0": [
+    "logs/background_run.log",
+    "logs/background_run.last",
+    "logs/background_run.meta"
+  ],
+  "related_docs": [
+    "docs/Z_BACKGROUND_WORK_WITNESS.md",
+    "docs/Z_CYCLE_OBSERVE_SYSTEM.md",
+    "docs/AMK_PROJECT_INDICATORS_AND_GO_NO_GO.md"
+  ],
+  "related_policy": [
+    "data/z_autonomy_task_policy.json",
+    "data/z_cycle_observe_task_policy.json"
+  ],
+  "human_authority": "AMK-Goku",
+  "verdict_labels": ["SAFE", "NEEDS_HUMAN_DECISION", "BLOCKED"]
+}
