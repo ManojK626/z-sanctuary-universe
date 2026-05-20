@@ -21,6 +21,7 @@ Compact entry points for **read-only** hub registries and AMK-facing evidence. F
 | Z ecosystem coherence Zuno seed | [Z_ECOSYSTEM_COHERENCE_ZUNO_SEED.md](Z_ECOSYSTEM_COHERENCE_ZUNO_SEED.md) | — |
 | API readiness and smoke (charter) | [Z_API_READINESS_AND_SMOKE_GATE.md](Z_API_READINESS_AND_SMOKE_GATE.md) | `npm run z:api:readiness` |
 | Z-Traffic tower | [Z_TRAFFIC_MINIBOTS.md](Z_TRAFFIC_MINIBOTS.md) | `npm run z:traffic` |
+| Z-WORK-PULSE-0 background work witness (Phase 0) | [Z_BACKGROUND_WORK_WITNESS.md](Z_BACKGROUND_WORK_WITNESS.md) | `data/z_background_work_policy.json` |
 | Z-SWARM-14DRP-1 universal agent law | [Z_SWARM_14DRP_UNIVERSAL_AGENT_LAW.md](Z_SWARM_14DRP_UNIVERSAL_AGENT_LAW.md) | `npm run z:swarm:14drp` |
 | Z-Formula swarm co-design engine | [Z_FORMULA_SWARM_CO_DESIGN_ENGINE.md](Z_FORMULA_SWARM_CO_DESIGN_ENGINE.md) | `npm run z:swarm:14drp` |
 | Z-IDE-FUSION-1 shared workflow control | [Z_IDE_FUSION_WORKFLOW_CONTROL.md](Z_IDE_FUSION_WORKFLOW_CONTROL.md) | `npm run z:ide:fusion` |
