@@ -13,6 +13,7 @@
     { "id": "z_mde", "role": "deduplication", "doc": "docs/Z_MODULE_DEDUPLICATION_EVOLUTION_ENGINE.md", "policy": "data/z_module_deduplication_policy.json" },
     { "id": "z_fusion", "role": "co_design", "doc": "docs/Z_FUSION_CO_DESIGN_ENGINE.md", "policy": "data/z_fusion_co_design_policy.json" },
     { "id": "z_work_pulse", "role": "work_witness", "doc": "docs/Z_BACKGROUND_WORK_WITNESS.md", "policy": "data/z_background_work_policy.json" },
+    { "id": "z_spiral", "role": "civilization_reflection", "doc": "docs/Z_SPIRAL_CIVILIZATION_REFLECTION_ENGINE.md", "policy": "data/z_spiral_reflection_policy.json" },
     { "id": "z_mcr_a", "role": "merge_conflict_intel", "doc": null, "note": "referenced in stack; doc when chartered" },
     { "id": "z_safe_backup", "role": "resilience", "doc": "docs/Z_SAFE_BACKUP_AND_SOURCE_ARCHIVE_POLICY.md", "policy": "data/z_backup_lane_policy.json" },
     { "id": "z_traffic", "role": "operational_posture", "doc": null },
@@ -28,6 +29,8 @@
     "z_fusion_co_design_if_overlap",
     "z_ate_trust_score",
     "z_work_pulse_if_active",
+    "z_spiral_reflection_if_chartered",
+    "z_mde_z_fusion_z_ate_on_spiral_proposals",
     "human_decision_amk_on_l4_l5"
   ],
   "resilience_chain": ["local_pc", "z_lab_optional", "hub", "github_mirror", "cloudflare_hold", "nas_sovereign"],

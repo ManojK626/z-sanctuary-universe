@@ -32,6 +32,7 @@ Without this, formula and autonomy layers drift into power obsession, authority 
 | **Dedup** | **Z-MDE** | Does this already exist? |
 | **Co-design** | **Z-FUSION** | Should parts combine? |
 | **Witness** | **Z-WORK-PULSE** | Work in flight; progress visibility |
+| **Reflection** | **Z-SPIRAL** | External evolution awareness (receipts only) |
 | **Merge intel** | **Z-MCR-A** | Merge conflict intelligence (advisory) |
 | **Resilience** | **Z-SAFE-BACKUP** | Backup lane discipline |
 | **Posture** | **Z-Traffic** | Operational signals |
@@ -40,7 +41,7 @@ Without this, formula and autonomy layers drift into power obsession, authority 
 | **Authority** | **AMK-Goku** | Sacred moves, merge, deploy, payment |
 
 ```text
-Heart (14 DRP + Formula) → Mind (ATE + ECO + MDE + FUSION + Pulse) → Hands (tools) → AMK
+Heart (14 DRP + Formula) → Mind (ATE + ECO + MDE + FUSION + Pulse) → Spiral (outer reflection) → Hands (tools) → AMK
 ```
 
 ---
@@ -55,7 +56,9 @@ Heart (14 DRP + Formula) → Mind (ATE + ECO + MDE + FUSION + Pulse) → Hands (
 5. Z-FUSION co-design (if overlap)
 6. Z-ATE trust score
 7. Z-WORK-PULSE (if work running)
-8. Human decision — AMK on L4/L5
+8. Z-SPIRAL reflection (if external signal chartered — receipts only)
+9. Z-MDE → Z-FUSION → Z-ATE on any spiral-derived proposal
+10. Human decision — AMK on L4/L5
 ```
 
 ---
@@ -101,6 +104,7 @@ The real power is **orchestration, structure, ethical routing, bounded autonomy,
 | Z-MDE | [Z_MODULE_DEDUPLICATION_EVOLUTION_ENGINE.md](./Z_MODULE_DEDUPLICATION_EVOLUTION_ENGINE.md) | `z_module_deduplication_policy.json` |
 | Z-FUSION | [Z_FUSION_CO_DESIGN_ENGINE.md](./Z_FUSION_CO_DESIGN_ENGINE.md) | `z_fusion_co_design_policy.json` |
 | Z-WORK-PULSE | [Z_BACKGROUND_WORK_WITNESS.md](./Z_BACKGROUND_WORK_WITNESS.md) | `z_background_work_policy.json` |
+| Z-SPIRAL | [Z_SPIRAL_CIVILIZATION_REFLECTION_ENGINE.md](./Z_SPIRAL_CIVILIZATION_REFLECTION_ENGINE.md) | `z_spiral_reflection_policy.json` |
 | Z-SAFE-BACKUP | [Z_SAFE_BACKUP_AND_SOURCE_ARCHIVE_POLICY.md](./Z_SAFE_BACKUP_AND_SOURCE_ARCHIVE_POLICY.md) | `z_backup_lane_policy.json` |
 
 ---

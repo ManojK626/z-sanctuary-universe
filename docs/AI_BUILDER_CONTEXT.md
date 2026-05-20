@@ -20,7 +20,11 @@
 - [Z_CONSOLIDATION_VISIBILITY_ROADMAP.md](Z_CONSOLIDATION_VISIBILITY_ROADMAP.md) — pre-Mauritius: merge CI, read-only dashboard lenses, Cloudflare readiness, backup chain
 - [Z_QUALIFIED_OPERATOR_ACCESS_LADDER.md](Z_QUALIFIED_OPERATOR_ACCESS_LADDER.md) — public → contributors → trusted → core guardians → AMK
 
-Machine registries: `data/z_governance_civilization_stack.json`, `data/z_qualified_operator_access_policy.json`. Phase 0 engines (Z-ATE, Z-ECO-MAP, Z-MDE, Z-FUSION, Z-WORK-PULSE, Z-SAFE-BACKUP, Z-FORMULA-CORE) are indexed in the civilization stack doc — **advisory only**, no runtime mesh.
+Machine registries: `data/z_governance_civilization_stack.json`, `data/z_qualified_operator_access_policy.json`. Phase 0 engines (Z-ATE, Z-ECO-MAP, Z-MDE, Z-FUSION, Z-WORK-PULSE, Z-SPIRAL, Z-SAFE-BACKUP, Z-FORMULA-CORE) are indexed in the civilization stack doc — **advisory only**, no runtime mesh.
+
+## Z-SPIRAL civilization reflection (Phase 0 — docs only)
+
+[Z_SPIRAL_CIVILIZATION_REFLECTION_ENGINE.md](Z_SPIRAL_CIVILIZATION_REFLECTION_ENGINE.md) + `data/z_spiral_reflection_policy.json` — **outer ring** reflection: external awareness → filter → compare → classify → suggest → human decides. Outputs: reflection receipts, insight maps, fusion suggestions, risk warnings, opportunity signals — **never** direct ecosystem upgrade. Routes through Z-MDE → Z-FUSION → Z-ATE → AMK. Anti-pattern memory (ethical failures) is highest-priority category. No crawlers or auto-ingest in Phase 0.
 
 ## Operational technology layers (Phase 0 — docs only)
 
@@ -42,7 +46,7 @@ Cross-links: [Z-GITHUB-SANCTUARY-GATE.md](Z-GITHUB-SANCTUARY-GATE.md), [Z-CLOUDF
 
 ## Z-FORMULA-CORE reasoning spine (Phase 0 — internal only)
 
-[Z_FORMULA_CORE_REASONING_SPINE.md](Z_FORMULA_CORE_REASONING_SPINE.md) + `data/z_formula_core_policy.json` — **protected internal** Z Formula doctrine (14 DRP supreme; LPBS / GGAESP / 360 / cubes as symbolic frames). Guides reasoning for Z-ATE, Z-MDE, Z-FUSION, Z-ECO-MAP, Z-WORK-PULSE — **does not** replace AMK or public-expose formula internals. Public: [Z-FORMULAS-SHORT-EXPLANATIONS.md](Z-FORMULAS-SHORT-EXPLANATIONS.md) only.
+[Z_FORMULA_CORE_REASONING_SPINE.md](Z_FORMULA_CORE_REASONING_SPINE.md) + `data/z_formula_core_policy.json` — **protected internal** Z Formula doctrine (14 DRP supreme; LPBS / GGAESP / 360 / cubes as symbolic frames). Guides reasoning for Z-ATE, Z-MDE, Z-FUSION, Z-ECO-MAP, Z-WORK-PULSE, Z-SPIRAL — **does not** replace AMK or public-expose formula internals. Public: [Z-FORMULAS-SHORT-EXPLANATIONS.md](Z-FORMULAS-SHORT-EXPLANATIONS.md) only.
 
 ## Canonical control root and satellite bridges (Z-CONTROL-LINK-1)
 

@@ -1,0 +1,80 @@
+{
+  "schema": "z.spiral.reflection.policy.v1",
+  "lane_id": "Z-SPIRAL-0",
+  "engine_id": "Z-SPIRAL",
+  "alias": "civilization_reflection_engine",
+  "mode": "doctrine_and_reflection_intelligence_only",
+  "phase": 0,
+  "golden_law": "observe filter compare classify adapt suggest human decides; spiral never directly upgrades ecosystem",
+  "definition": "external_awareness_plus_internal_governance_plus_evolution_intelligence",
+  "formula_posture": "formula_never_reaches_zero_self_correcting_not_self_ruling",
+  "supreme_rule": "14_drp_overrides_all_formulas",
+  "output_types": [
+    "reflection_receipt",
+    "insight_map",
+    "fusion_suggestion",
+    "risk_warning",
+    "opportunity_signal"
+  ],
+  "awareness_categories": [
+    {
+      "id": "ai_ecosystem_trends",
+      "examples": ["governance_models", "orchestration", "memory_systems", "agent_routing", "multimodal_patterns"]
+    },
+    {
+      "id": "security_intelligence",
+      "examples": ["attack_patterns", "ai_misuse", "social_engineering", "infra_resilience"]
+    },
+    {
+      "id": "human_civilization_patterns",
+      "examples": ["education", "accessibility", "collaboration", "humane_ux"]
+    },
+    {
+      "id": "technology_evolution",
+      "examples": ["deployment_shifts", "edge_systems", "local_first", "cloud_resilience"]
+    },
+    {
+      "id": "ethical_failures",
+      "priority": "high",
+      "role": "anti_pattern_memory",
+      "examples": ["failed_ai_launches", "trust_collapses", "exploitative_automation"]
+    }
+  ],
+  "processing_pipeline": [
+    "source_charter_check",
+    "14_drp_filter",
+    "classify_category",
+    "z_eco_map_compare",
+    "z_mde_overlap_scan",
+    "z_fusion_compatibility_hint",
+    "z_ate_trust_label",
+    "emit_reflection_receipt_only",
+    "amk_review_l3_plus"
+  ],
+  "civilization_loop_downstream": ["z_mde", "z_fusion", "z_ate", "amk_sacred"],
+  "forbidden_phase_0": [
+    "open_web_crawl",
+    "rss_auto_ingest",
+    "unbounded_api_pull",
+    "auto_registry_write",
+    "auto_merge",
+    "auto_deploy",
+    "payment_mutation",
+    "hype_trend_copying",
+    "silent_ecosystem_upgrade"
+  ],
+  "default_ate_posture_for_spiral_outputs": "SUPERVISED_REQUIRED",
+  "ethical_failures_default": "AMK_REQUIRED",
+  "knowledge_tree_metaphor": {
+    "enabled": true,
+    "growth_by": ["verified_contribution", "governance_score", "usefulness", "stability", "safety"],
+    "not_by": ["ego", "hype", "raw_module_count"]
+  },
+  "phase_roadmap": {
+    "0": "doctrine_and_policy_only",
+    "1": "manual_reflection_receipts_under_data_reports",
+    "2": "readonly_dashboard_lens",
+    "3": "governed_external_source_registry"
+  },
+  "doc": "docs/Z_SPIRAL_CIVILIZATION_REFLECTION_ENGINE.md"
+}
