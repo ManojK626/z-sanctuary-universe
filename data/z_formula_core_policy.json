@@ -1,0 +1,84 @@
+{
+  "schema": "z.formula.core.policy.v1",
+  "lane_id": "Z-FORMULA-CORE-0",
+  "engine_id": "Z-FORMULA-CORE",
+  "mode": "internal_governance_doctrine_only",
+  "phase": 0,
+  "visibility": "private_internal_not_public_marketing",
+  "golden_law": "Formula guides reasoning; 14 DRP overrides all formulas; AMK sacred authority",
+  "super_saiyan_structure": {
+    "heart": ["14_DRP", "Z-FORMULA-CORE"],
+    "mind": ["Z-ATE", "Z-ECO-MAP", "Z-MDE", "Z-FUSION", "Z-WORK-PULSE"],
+    "hands": ["Cursor", "Copilot", "Cloudflare_bounded", "local_gateway"],
+    "authority": "AMK-Goku"
+  },
+  "supreme_moral_law": "14_DRP",
+  "symbolic_frames": [
+    "omega_compassion_anchor",
+    "lpbs_progression_metaphor",
+    "ggaesp_six_chambers",
+    "ring_360_filter",
+    "multidimensional_cubes_metaphor",
+    "z_omni_architecture"
+  ],
+  "public_docs_allowed": [
+    "docs/Z-FORMULAS-SHORT-EXPLANATIONS.md",
+    "docs/Z-FORMULAS-PUBLIC-POLICY.md"
+  ],
+  "internal_docs_qualified_operators": [
+    "docs/Z_FORMULA_CORE_REASONING_SPINE.md",
+    "docs/Z-ULTRA-INSTINCTS-AND-FORMULAS.md"
+  ],
+  "allowed_uses": [
+    "internal_reasoning",
+    "ecosystem_design",
+    "module_evaluation",
+    "ethical_scoring_vocabulary",
+    "fusion_reasoning_support",
+    "approval_tier_support_with_Z-ATE",
+    "topology_decision_support",
+    "human_centered_outcome_framing"
+  ],
+  "forbidden_uses": [
+    "supernatural_guaranteed_prediction",
+    "public_secret_formula_disclosure",
+    "guaranteed_roi_or_financial_certainty",
+    "medical_legal_certainty",
+    "autonomous_deploy_merge_payment",
+    "bypass_amk_approval",
+    "override_14_drp",
+    "public_marketing_full_notation"
+  ],
+  "peer_engines": {
+    "Z-ATE": "trust_approval_tier",
+    "Z-MDE": "duplication_check",
+    "Z-FUSION": "co_design_combination",
+    "Z-ECO-MAP": "topology_map",
+    "Z-WORK-PULSE": "work_heartbeat",
+    "Z-OMNI": "visual_workstation_not_soul"
+  },
+  "reasoning_order": [
+    "14_DRP",
+    "Z-FORMULA-CORE",
+    "Z-ATE",
+    "Z-MDE",
+    "Z-FUSION",
+    "Z-ECO-MAP",
+    "Z-WORK-PULSE",
+    "human_decision"
+  ],
+  "forbidden_actions": [
+    "runtime_formula_engine_phase_0",
+    "public_exposure_protected_internals",
+    "cloudflare_marketing_publish",
+    "payment_business_claims_from_formula",
+    "autonomous_authority_from_formula_score"
+  ],
+  "human_authority": "AMK-Goku",
+  "verdict_labels": ["SAFE", "NEEDS_HUMAN_DECISION", "BLOCKED"],
+  "related_docs": [
+    "docs/Z_FORMULA_CORE_REASONING_SPINE.md",
+    "docs/Z_AUTONOMY_TRUST_ENGINE.md",
+    "docs/Z_SWARM_14DRP_UNIVERSAL_AGENT_LAW.md"
+  ]
+}
