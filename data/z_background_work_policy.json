@@ -1,0 +1,72 @@
+{
+  "schema": "z_background_work_policy_v1",
+  "phase": "Z-WORK-PULSE-0",
+  "updated_at": "2026-05-20T00:00:00Z",
+  "title": "Background Work Witness policy scaffold",
+  "law": "Phase 0 is doctrine and policy only. A named background lane is not a runtime lane.",
+  "z_work_definition": "Z-WORK is a declared, policy-bounded unit of background-oriented work that remains visible and non-executing until a later charter explicitly opens a real runtime lane.",
+  "phase0_posture": {
+    "runtime_status": "not_present",
+    "allowed_artifacts": [
+      "docs",
+      "policy_json",
+      "future_field_definitions",
+      "review_checklists"
+    ],
+    "forbidden_runtime_forms": [
+      "daemon",
+      "cron",
+      "worker_process",
+      "scheduler",
+      "background_loop",
+      "auto_start_service",
+      "deployment_lane"
+    ]
+  },
+  "allowed_phase0_actions": [
+    "define_terms",
+    "declare_boundaries",
+    "list_future_witness_fields",
+    "describe_human_gates",
+    "link_to_hub_authority_docs"
+  ],
+  "forbidden_phase0_actions": [
+    "implement_runtime",
+    "start_background_processes",
+    "add_daemons",
+    "add_auto_start",
+    "deploy",
+    "mutate_cloudflare",
+    "mutate_github",
+    "payment_automation",
+    "legal_automation",
+    "merge_automation",
+    "pr_automation",
+    "touch_secrets",
+    "account_or_identity_automation"
+  ],
+  "future_witness_fields": [
+    "work_id",
+    "title",
+    "purpose",
+    "phase",
+    "visibility",
+    "inputs",
+    "allowed_outputs",
+    "forbidden_actions",
+    "human_gate",
+    "runtime_status"
+  ],
+  "human_gate_rule": "Any move from witness doctrine into executable background behavior requires an explicit later charter and human approval under hub governance.",
+  "authority_refs": [
+    "docs/Z-HIERARCHY-CHIEF-AND-OBSERVER-VIEW.md",
+    "docs/Z_OPERATIONAL_TECHNOLOGY_LAYERS.md",
+    "docs/Z_AUTONOMY_LEVELS_POLICY.md",
+    "docs/Z-NEW-MODULE-DISCIPLINE.md"
+  ],
+  "notes": [
+    "Phase 0 intentionally creates no reports, scripts, services, or runtime receipts.",
+    "The word pulse is conceptual in this phase and must not be interpreted as a timer or always-on loop.",
+    "Visibility and policy come before any execution discussion."
+  ]
+}
