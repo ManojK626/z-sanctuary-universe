@@ -56,13 +56,11 @@ function countSubstring(str, sub) {
   }
   let count = 0;
   let i = 0;
-  while (true) {
-    const idx = str.indexOf(sub, i);
-    if (idx === -1) {
-      break;
-    }
+  let idx = str.indexOf(sub, i);
+  while (idx !== -1) {
     count += 1;
     i = idx + sub.length;
+    idx = str.indexOf(sub, i);
   }
   return count;
 }

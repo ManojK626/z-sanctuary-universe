@@ -184,17 +184,17 @@ function main() {
   fs.writeFileSync(OUT_JSON, JSON.stringify(report, null, 2), 'utf8');
 
   const lines = [
-    `# Z-AnyDevice synthetic simulation report`,
-    ``,
+    '# Z-AnyDevice synthetic simulation report',
+    '',
     `- **Generated:** ${generated_at}`,
     `- **Schema:** \`${SCHEMA}\``,
-    ``,
-    `## Law`,
-    ``,
+    '',
+    '## Law',
+    '',
     report.law,
-    ``,
+    '',
     `## Simulations (${simulations.length} devices)`,
-    ``,
+    '',
     '| device_id | ecosystem_role | trusted_status | risk_signal | blocked | required_human_gate |',
     '| --------- | -------------- | -------------- | ----------- | ------- | ------------------- |',
   ];
@@ -217,7 +217,7 @@ function main() {
     }
   }
 
-  lines.push('', '---', '', `Full JSON: \`data/reports/z_anydevice_simulation_report.json\``, '');
+  lines.push('', '---', '', 'Full JSON: `data/reports/z_anydevice_simulation_report.json`', '');
 
   fs.writeFileSync(OUT_MD, lines.join('\n'), 'utf8');
 

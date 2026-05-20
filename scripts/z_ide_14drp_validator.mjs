@@ -119,7 +119,9 @@ async function main() {
 
         if (sacredMove && !session.sacred_move_approved) {
           signal = 'BLUE';
-          issues.push(`DRP-6/14 advisory: Session ${session.session_id} mentions sacred move without approval (${sm.display_name})`);
+          issues.push(
+            `DRP-6/14 advisory: Session ${session.session_id} mentions sacred move without approval (${sacredMove.display_name})`,
+          );
         }
       }
 
