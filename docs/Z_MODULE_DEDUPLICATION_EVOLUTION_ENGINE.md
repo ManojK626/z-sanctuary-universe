@@ -100,12 +100,14 @@ Z-MDE must **not**:
 1. Record working title + one-line purpose.
 2. Run registry scan paths in table above.
 3. Assign one classification label (or `OVERLAP` + notes).
-4. If `MERGE_CANDIDATE`, default to **docs-only** merge PR first.
-5. Log human decision in green receipt or phase doc.
-6. Only then open `cursor/zsanctuary/…` implementation branch.
+4. If `MERGE_CANDIDATE` or multi-entity overlap, run **Z-FUSION** second ([Z_FUSION_CO_DESIGN_ENGINE.md](./Z_FUSION_CO_DESIGN_ENGINE.md)) — MDE asks “does it exist?”; FUSION asks “should parts combine?”
+5. If `MERGE_CANDIDATE`, default to **docs-only** merge PR first.
+6. Log human decision in green receipt or phase doc.
+7. Only then open `cursor/zsanctuary/…` implementation branch.
 
 ## Related
 
+- [Z_FUSION_CO_DESIGN_ENGINE.md](./Z_FUSION_CO_DESIGN_ENGINE.md) — runs after MDE for co-design (not dedup)
 - [Z_SAFE_BACKUP_AND_SOURCE_ARCHIVE_POLICY.md](./Z_SAFE_BACKUP_AND_SOURCE_ARCHIVE_POLICY.md)
 - [Z_AI_FUSION_DEDUP_AND_ROLE_POLICY.md](./Z_AI_FUSION_DEDUP_AND_ROLE_POLICY.md)
 - [Z-NEW-MODULE-DISCIPLINE.md](./Z-NEW-MODULE-DISCIPLINE.md)

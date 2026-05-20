@@ -28,6 +28,8 @@ Before building a new module, run **Z-MDE** advisory classification: [Z_MODULE_D
 
 Protected backup lanes (GitHub / Cloudflare / PC / NAS / emergency cloud): [Z_SAFE_BACKUP_AND_SOURCE_ARCHIVE_POLICY.md](Z_SAFE_BACKUP_AND_SOURCE_ARCHIVE_POLICY.md) + `data/z_backup_lane_policy.json`. Never commit `.env`, secrets, DB dumps, or personal files to GitHub.
 
+**Z-FUSION co-design (after MDE):** [Z_FUSION_CO_DESIGN_ENGINE.md](Z_FUSION_CO_DESIGN_ENGINE.md) + `data/z_fusion_co_design_policy.json` — asks whether existing parts should combine (shared service, visual-only, data bridge, keep separate). Default `HUMAN_REVIEW_REQUIRED`; no auto-merge repos, payment lanes, or deploy.
+
 ## Canonical control root and satellite bridges (Z-CONTROL-LINK-1)
 
 **Sealed on main.** **`Z_Sanctuary_Universe`** (this hub repository) is the **canonical governance and control root** for Z-Sanctuary. Satellite projects must not fork long doctrine; they carry **one thin bridge file** only: **`docs/Z_SANCTUARY_CONTROL_LINK.md`**, aligned from the hub template at the same path.

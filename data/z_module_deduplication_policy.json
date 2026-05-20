@@ -40,5 +40,10 @@
     "rename_projects_without_charter"
   ],
   "default_merge_posture": "docs_and_registry_first",
-  "human_authority": "AMK-Goku"
+  "human_authority": "AMK-Goku",
+  "next_engine_after_overlap": {
+    "engine_id": "Z-FUSION",
+    "policy": "data/z_fusion_co_design_policy.json",
+    "doc": "docs/Z_FUSION_CO_DESIGN_ENGINE.md"
+  }
 }

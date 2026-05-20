@@ -1,0 +1,71 @@
+{
+  "schema": "z.fusion.co.design.policy.v1",
+  "engine_id": "Z-FUSION",
+  "mode": "advisory_only",
+  "golden_law": "Observe → Verify → Suggest → Human decides",
+  "core_distinction": {
+    "z_mde_question": "Does this already exist?",
+    "z_fusion_question": "Can these existing things combine into something better?"
+  },
+  "run_order": ["Z-MDE", "Z-FUSION", "human_gate"],
+  "classification_labels": [
+    "FUSION_CANDIDATE",
+    "KEEP_SEPARATE",
+    "SHARED_SERVICE_LAYER",
+    "VISUAL_ONLY_FUSION",
+    "DATA_BRIDGE_CANDIDATE",
+    "BUSINESS_LANE_SPLIT",
+    "RESEARCH_ONLY",
+    "BLOCKED_UNSAFE"
+  ],
+  "default_human_approval_status": "HUMAN_REVIEW_REQUIRED",
+  "proposal_required_fields": [
+    "source_projects",
+    "intended_benefit",
+    "overlapping_capability",
+    "shared_vs_separate",
+    "owner_payment_impact",
+    "data_privacy_impact",
+    "deployment_impact",
+    "rollback_plan",
+    "human_approval_status"
+  ],
+  "allowed_outputs": [
+    "fusion_proposal",
+    "overlap_diagram",
+    "shared_service_recommendation",
+    "combined_ui_workstation_concept",
+    "capability_map",
+    "keep_separate_warning",
+    "payment_ownership_warning",
+    "data_boundary_warning",
+    "project_identity_warning",
+    "branch_strategy_suggestion"
+  ],
+  "forbidden_actions": [
+    "merge_code_automatically",
+    "merge_repositories_automatically",
+    "collapse_project_identities",
+    "mix_payment_ownership",
+    "mix_user_data",
+    "decide_legal_business_ownership",
+    "change_deployment_targets",
+    "write_secrets",
+    "auto_create_cloudflare_resources",
+    "auto_merge_branches",
+    "delete_projects",
+    "rewrite_registries_silently"
+  ],
+  "input_refs": {
+    "z_mde": "docs/Z_MODULE_DEDUPLICATION_EVOLUTION_ENGINE.md",
+    "z_ai_fusion_map": "npm run z:ai:fusion-map",
+    "z_traffic": "npm run z:traffic",
+    "z_omni": "docs/Z_OMNI_VISUAL_WORKSTATION_ENGINE_CHARTER.md",
+    "payment_governance": "docs/Z_PAYMENT_OWNERSHIP_AND_BUSINESS_AI_GOVERNANCE.md",
+    "z_mcr_a": "npm run z:monster:registry-verify",
+    "z_lgr": "docs/Z_LEGAL_EVIDENCE_CORE.md",
+    "z_mod_dist": "npm run z:mod:dist"
+  },
+  "verdict_labels": ["SAFE", "NEEDS_HUMAN_DECISION", "BLOCKED"],
+  "human_authority": "AMK-Goku"
+}
