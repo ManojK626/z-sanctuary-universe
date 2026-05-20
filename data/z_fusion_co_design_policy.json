@@ -57,6 +57,7 @@
     "rewrite_registries_silently"
   ],
   "input_refs": {
+    "z_eco_map": "data/z_eco_map_topology_registry.json",
     "z_mde": "docs/Z_MODULE_DEDUPLICATION_EVOLUTION_ENGINE.md",
     "z_ai_fusion_map": "npm run z:ai:fusion-map",
     "z_traffic": "npm run z:traffic",
