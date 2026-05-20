@@ -36,7 +36,9 @@
     all[id] = { status: status, decided_at_iso: new Date().toISOString() };
     try {
       window.localStorage.setItem(LS_KEY, JSON.stringify({ decisions: all, schema: 'amk_local_decision_stub_v1' }));
-    } catch (_) {}
+    } catch (_) {
+      // Intentionally ignore localStorage write failures.
+    }
   }
 
   function pillClass(sig) {

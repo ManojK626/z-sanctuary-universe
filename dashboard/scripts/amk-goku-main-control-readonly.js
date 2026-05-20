@@ -652,7 +652,9 @@
   function flexLsSet(key, val) {
     try {
       window.localStorage.setItem(key, val);
-    } catch (_) {}
+    } catch (_) {
+      // Intentionally ignore localStorage write failures.
+    }
   }
 
   function chipFromDashboard(d) {
@@ -830,7 +832,9 @@
     if (el.tagName === 'DETAILS') {
       try {
         el.open = true;
-      } catch (_) {}
+      } catch (_) {
+        // Intentionally ignore details toggle failures.
+      }
     }
     el.scrollIntoView({ behavior: 'smooth', block: 'start' });
   }
@@ -907,7 +911,9 @@
         if (ind) {
           try {
             ind.open = true;
-          } catch (_) {}
+          } catch (_) {
+            // Intentionally ignore details toggle failures.
+          }
           ind.scrollIntoView({ behavior: 'smooth', block: 'start' });
         }
         return;
@@ -918,7 +924,9 @@
     if (host && host.tagName === 'DETAILS') {
       try {
         host.open = true;
-      } catch (_) {}
+      } catch (_) {
+        // Intentionally ignore details toggle failures.
+      }
     }
     host.scrollIntoView({ behavior: 'smooth', block: 'center' });
   }
@@ -929,7 +937,9 @@
     main.querySelectorAll('details.amk-map-section').forEach(function (d) {
       try {
         d.open = open;
-      } catch (_) {}
+      } catch (_) {
+        // Intentionally ignore details toggle failures.
+      }
     });
   }
 
@@ -1106,7 +1116,7 @@
 
     var search = document.getElementById('amkDashSearch');
     if (search) {
-      function runBookSearch() {
+      var runBookSearch = function () {
         var q = String(search.value || '')
           .trim()
           .toLowerCase();
@@ -1121,7 +1131,7 @@
             btn.classList.toggle('amk-dash-drawer-btn--search-hide', !hit);
           });
         }
-      }
+      };
       search.addEventListener('input', runBookSearch);
       runBookSearch();
     }
@@ -1196,14 +1206,18 @@
     try {
       var v = window.localStorage.getItem(VIEW_LS);
       if (v && getViewDef(map, v).id === v) return v;
-    } catch (_) {}
+    } catch (_) {
+      // Intentionally ignore localStorage read failures.
+    }
     return 'amk_operator';
   }
 
   function saveViewId(id) {
     try {
       window.localStorage.setItem(VIEW_LS, id);
-    } catch (_) {}
+    } catch (_) {
+      // Intentionally ignore localStorage write failures.
+    }
   }
 
   function applyView(map, viewId) {

@@ -109,7 +109,9 @@
   function saveOrbitPref(on) {
     try {
       window.sessionStorage.setItem(ORBIT_LS, on ? '1' : '0');
-    } catch (_) {}
+    } catch (_) {
+      // Intentionally ignore sessionStorage write failures.
+    }
   }
 
   function renderCardStripHTML(reg, kid) {
@@ -476,7 +478,7 @@
         esc(hubHref('docs/PHASE_Z_ROOT_7B_3D_GREEN_RECEIPT.md')) +
         '">Z-ROOT-7B receipt</a></p>';
 
-      function applyOrbit(on) {
+      var applyOrbit = function (on) {
         var spin = mount.querySelector('.z-root7-orbit-spin');
         if (!spin || reduceMotion) return;
         if (on) {
@@ -484,7 +486,7 @@
         } else {
           spin.classList.remove('z-root7-orbit-spin--animate');
         }
-      }
+      };
 
       var btn = document.getElementById(orbitToggleId);
       if (btn && !reduceMotion) {
@@ -508,7 +510,7 @@
 
       mount.__zRoot7UnmountParallax = undoParallax || null;
 
-      function hotLineForGid(gid) {
+      var hotLineForGid = function (gid) {
         var group = mount.querySelector('.z-root7-lines-g');
         if (!group) return;
         group.classList.add('z-root7-lines-g--dim');
@@ -518,16 +520,16 @@
             if (line) line.classList.add('z-root7-line--hot');
           }
         });
-      }
+      };
 
-      function clearHotLines() {
+      var clearHotLines = function () {
         var group = mount.querySelector('.z-root7-lines-g');
         if (!group) return;
         group.classList.remove('z-root7-lines-g--dim');
         group.querySelectorAll('.z-root7-line--hot').forEach(function (ln) {
           ln.classList.remove('z-root7-line--hot');
         });
-      }
+      };
 
       mount.querySelectorAll('.z-root7-node-3d').forEach(function (node) {
         var gid = node.getAttribute('data-gid');
