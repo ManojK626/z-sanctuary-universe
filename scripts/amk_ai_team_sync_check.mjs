@@ -271,7 +271,7 @@ function mdReport(rep) {
     `- Overall signal: **${rep.signal}**`,
     `- Registry mode: ${rep.registry_mode}`,
     `- Generated: ${rep.generated_at}`,
-    `- Phase 1: **no automatic indicator JSON edits** (read-only proposals).`,
+    '- Phase 1: **no automatic indicator JSON edits** (read-only proposals).',
     '',
     '## Indicator / package / reports',
     '',

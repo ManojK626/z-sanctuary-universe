@@ -155,16 +155,16 @@ function writeMarkdown(payload) {
     '',
     `**Generated:** ${payload.generated_at}`,
     '',
-    `| Field | Value |`,
-    `| ---- | ---- |`,
+    '| Field | Value |',
+    '| ---- | ---- |',
     `| Status | ${payload.status} |`,
     `| Baseline | ${payload.baseline_path || '—'} |`,
     `| Current | ${payload.current_path} |`,
     '',
     '## Summary',
     '',
-    `| Type | Count |`,
-    `| ---- | ----: |`,
+    '| Type | Count |',
+    '| ---- | ----: |',
   ];
   for (const [k, v] of Object.entries(payload.summary)) {
     lines.push(`| ${k} | ${v} |`);

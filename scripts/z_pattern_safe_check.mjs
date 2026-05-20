@@ -36,10 +36,10 @@ function classifySample(sample, allowed, gated) {
 
   for (const phrase of RED_LANGUAGE) {
     if (phrase === 'bet on ') {
-      if (/\bbet\s+on\s+\w/.test(text)) return { signal: 'RED', reasons: [`instructional wager language matched`] };
+      if (/\bbet\s+on\s+\w/.test(text)) return { signal: 'RED', reasons: ['instructional wager language matched'] };
       continue;
     }
-    if (text.includes(phrase)) return { signal: 'RED', reasons: [`forbidden escalation language: "${phrase}"`] };
+    if (text.includes(phrase)) return { signal: 'RED', reasons: [`forbidden escalation language: '${phrase}'`] };
   }
   if (/guaranteed\s+(win|outcome)/i.test(sample.description ?? ''))
     return { signal: 'RED', reasons: ['guaranteed outcome language'] };
