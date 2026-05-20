@@ -26,6 +26,10 @@ Cross-links: [Z-GITHUB-SANCTUARY-GATE.md](Z-GITHUB-SANCTUARY-GATE.md), [Z-CLOUDF
 
 [Z_BACKGROUND_WORK_WITNESS.md](Z_BACKGROUND_WORK_WITNESS.md) + `data/z_background_work_policy.json` — read-only **work-in-flight** pulse design (`work_progress_pct` vs AMK `growth_percent`). **Witness ≠ executor**; Z-Cycle queue is not auto-run when jobs are active. Phase 1+ may write `data/reports/z_background_work_status.json` only after approval. Respects **Calm/Normal** growth mode polling (`core/z_growth_mode.js`).
 
+## Z-ATE trust layer (Phase 0 — docs only)
+
+[Z_AUTONOMY_TRUST_ENGINE.md](Z_AUTONOMY_TRUST_ENGINE.md) + `data/z_autonomy_trust_policy.json` — graduated trust (layers 0–5 → `AUTO_APPROVED` / `SUPERVISED_REQUIRED` / `AMK_REQUIRED` / `BLOCKED`). **Automation ≠ authority**; complements `data/z_autonomy_task_policy.json`. Bounded L2 auto-flow only when all gates pass; L4/L5 never bypass AMK.
+
 ## Canonical control root and satellite bridges (Z-CONTROL-LINK-1)
 
 **Sealed on main.** **`Z_Sanctuary_Universe`** (this hub repository) is the **canonical governance and control root** for Z-Sanctuary. Satellite projects must not fork long doctrine; they carry **one thin bridge file** only: **`docs/Z_SANCTUARY_CONTROL_LINK.md`**, aligned from the hub template at the same path.
