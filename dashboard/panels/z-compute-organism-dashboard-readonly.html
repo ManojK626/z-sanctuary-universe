@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Z-Compute Organism (read-only)</title>
+    <link rel="stylesheet" href="../styles/z-compute-organism-dashboard-readonly.css" />
+  </head>
+  <body class="zco-dash">
+    <header class="zco-header">
+      <h1 class="zco-title">Z-Compute Organism — infrastructure awareness</h1>
+      <div>
+        <span class="zco-badge">ZCO-3</span>
+        <span class="zco-badge">ZCO-7</span>
+        <span class="zco-badge">read-only</span>
+        <span class="zco-badge">not a control plane</span>
+      </div>
+      <p class="zco-hint" style="margin: 0.5rem 0 0">
+        Visibility only: declare → validate → draft → display. GET
+        <span class="zco-mono">z_compute_organism_status.json</span>,
+        <span class="zco-mono">z_compute_intake_validation.json</span>,
+        <span class="zco-mono">z_compute_upgrade_plan_draft.json</span>. No hardware control, shell,
+        scan, network, or deploy from this page. AMK / human owns sacred moves.
+      </p>
+    </header>
+    <div class="zco-toolbar">
+      <button type="button" id="zcoRefresh" title="Reload status JSON (GET only)">
+        Refresh data
+      </button>
+      <span class="zco-hint"
+        >Refresh reports: <span class="zco-mono">npm run z:compute:organism</span>,
+        <span class="zco-mono">z:compute:intake</span>,
+        <span class="zco-mono">z:compute:upgrade-draft</span> — then reload. Open via
+        <span class="zco-mono">http://</span> localhost for same-origin GET.</span
+      >
+    </div>
+    <main class="zco-main">
+      <p id="zcoError" class="zco-error" role="alert"></p>
+      <div class="zco-grid">
+        <section class="zco-card">
+          <h2>Global signal</h2>
+          <div id="zcoGlobalSignal" class="zco-signal sig-yellow">—</div>
+          <p class="zco-hint" style="margin: 0.35rem 0 0">
+            Hub traffic: <strong id="zcoHubTraffic">—</strong>
+          </p>
+          <p class="zco-mono" style="margin: 0.5rem 0 0">
+            generated: <span id="zcoGenerated">—</span>
+          </p>
+        </section>
+        <section class="zco-card">
+          <h2>ZCO posture</h2>
+          <p class="zco-status-line">Mode: <strong id="zcoMode">—</strong></p>
+          <p class="zco-status-line">Runtime orchestration: <strong id="zcoRuntime">—</strong></p>
+          <p class="zco-status-line">Hardware control: <strong id="zcoHardware">—</strong></p>
+          <p class="zco-status-line">Deploy authority: <strong id="zcoDeploy">—</strong></p>
+          <p class="zco-status-line">Network scan: <strong id="zcoNetwork">—</strong></p>
+        </section>
+        <section class="zco-card">
+          <h2>Doctrine readiness</h2>
+          <p class="zco-status-line">Arelium Shield: <strong id="zcoArelium">—</strong></p>
+          <p class="zco-status-line">OMNISWARM doctrine: <strong id="zcoOmniswarm">—</strong></p>
+          <p class="zco-status-line">Builder instructions: <strong id="zcoBuilder">—</strong></p>
+          <p class="zco-status-line">Z-Formulas infra: <strong id="zcoFormulas">—</strong></p>
+          <p class="zco-status-line">Examples validated: <strong id="zcoExamples">—</strong></p>
+        </section>
+        <section class="zco-card">
+          <h2>Example nodes (declared)</h2>
+          <p class="zco-status-line">Count: <strong id="zcoNodeCount">—</strong></p>
+          <p class="zco-mono" style="margin: 0.25rem 0 0; word-break: break-word">
+            <span id="zcoNodeIds">—</span>
+          </p>
+          <p class="zco-hint" style="margin: 0.5rem 0 0">
+            Forbidden runtime audit: <strong id="zcoForbiddenRuntime">—</strong>
+          </p>
+        </section>
+      </div>
+      <section class="zco-card zco-chain" style="margin-top: 0.75rem">
+        <h2>Declare → validate → draft (ZCO-5 / ZCO-6)</h2>
+        <p id="zcoChainError" class="zco-error zco-section-error" role="status"></p>
+        <div class="zco-grid zco-grid-2">
+          <div class="zco-subcard">
+            <h3>Intake validation (ZCO-5)</h3>
+            <p class="zco-status-line">
+              Signal:
+              <span id="zcoIntakeSignal" class="zco-signal zco-signal-sm sig-yellow">—</span>
+            </p>
+            <p class="zco-status-line">
+              Inventory: <span id="zcoIntakePath" class="zco-mono">—</span>
+            </p>
+            <p class="zco-status-line">Findings: <strong id="zcoIntakeCounts">—</strong></p>
+            <p class="zco-mono zco-meta">generated: <span id="zcoIntakeGenerated">—</span></p>
+            <ul id="zcoIntakeFindings" class="zco-findings"></ul>
+            <p id="zcoIntakeNext" class="zco-hint zco-next-inline">—</p>
+          </div>
+          <div class="zco-subcard">
+            <h3>Upgrade plan draft (ZCO-6)</h3>
+            <p class="zco-status-line">
+              Signal: <span id="zcoDraftSignal" class="zco-signal zco-signal-sm sig-yellow">—</span>
+            </p>
+            <p class="zco-status-line">
+              Blocked: <strong id="zcoDraftBlocked">—</strong> · Phases:
+              <strong id="zcoDraftPhaseCount">—</strong>
+            </p>
+            <p class="zco-status-line">Intake ref: <strong id="zcoDraftIntakeRef">—</strong></p>
+            <p class="zco-mono zco-meta">generated: <span id="zcoDraftGenerated">—</span></p>
+            <ul id="zcoDraftLimitations" class="zco-findings"></ul>
+            <ul id="zcoDraftPhases" class="zco-phase-list"></ul>
+            <p id="zcoDraftNext" class="zco-hint zco-next-inline">—</p>
+          </div>
+        </div>
+      </section>
+      <section class="zco-card" style="margin-top: 0.75rem">
+        <h2>Smallest safe next action (ZCO-2)</h2>
+        <p id="zcoNextAction" class="zco-hint" style="margin: 0">—</p>
+      </section>
+      <section class="zco-card" style="margin-top: 0.75rem">
+        <h2>Governance law</h2>
+        <div class="zco-law">
+          <p>
+            <strong>MUST NOT:</strong> control hardware; run shell or npm from this page; scan
+            networks or devices; orchestrate clusters; deploy; mutate registries; become a control
+            plane.
+          </p>
+          <p>
+            <strong>MAY:</strong> display read-only status; link to doctrine markdown; refresh GET.
+          </p>
+        </div>
+      </section>
+      <section class="zco-card" style="margin-top: 0.75rem">
+        <h2>ZCO docs and receipts</h2>
+        <ul id="zcoDocList" class="zco-docs"></ul>
+      </section>
+    </main>
+    <script src="../scripts/z-compute-organism-dashboard-readonly.js" defer></script>
+  </body>
+</html>

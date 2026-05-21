@@ -1,0 +1,60 @@
+{
+  "schema": "zco_multi_node_cluster_example_v1",
+  "phase": "ZCO-4",
+  "updated_at": "2026-05-21T00:00:00Z",
+  "cluster_id": "cluster-sanctuary-home-lab-example",
+  "title": "ZCO-4 multi-node cluster plan — example (declared federation only)",
+  "scope_note": "EXAMPLE ONLY. References node_id values from zco_hardware_inventory.example.json. Not live orchestration.",
+  "law": [
+    "Each node retains its own OS boundary — federation ≠ fused motherboard.",
+    "unified_motherboard_claim_allowed must be false.",
+    "nas_wait_nodes must not receive workload routing until operator clears NAS_WAIT."
+  ],
+  "federation": {
+    "mode": "distributed_compute_organism",
+    "unified_motherboard_claim_allowed": false,
+    "default_signal_when_evidence_missing": "BLUE"
+  },
+  "node_refs": [
+    {
+      "node_id": "z-node-001",
+      "organism_role": "control_hub",
+      "priority": 1,
+      "workload_hints": ["AI inference", "hub dev", "orchestration docs only"],
+      "trust_status": "trusted"
+    },
+    {
+      "node_id": "z-node-nas-01",
+      "organism_role": "storage_nas",
+      "priority": 2,
+      "workload_hints": ["backup", "cold storage"],
+      "trust_status": "unknown",
+      "nas_wait": true
+    },
+    {
+      "node_id": "z-node-recycle-02",
+      "organism_role": "compute_worker",
+      "priority": 3,
+      "workload_hints": ["batch_jobs when revived"],
+      "trust_status": "degraded",
+      "activation_gate": "AMK_BLUE_before_power_on"
+    }
+  ],
+  "nas_wait_nodes": ["z-node-nas-01"],
+  "routing_policy_declared": {
+    "default_inference_node": "z-node-001",
+    "forbid_routing_to": ["z-node-nas-01", "z-node-recycle-02"],
+    "note": "Advisory labels only — no scheduler in ZCO-4"
+  },
+  "arelium_shield_notes": [
+    "SecurityBot: trust/evidence alignment across node_refs",
+    "ClusterBot: topology vocabulary only",
+    "PowerBot: no unsafe chaining between nodes"
+  ],
+  "omniswarm_coverage": ["ClusterBot", "NASBot", "SecurityBot", "PowerBot", "IntakeBot"],
+  "related_docs": [
+    "docs/compute-organism/ZCO_4_HARDWARE_SCHEMA.md",
+    "docs/compute-organism/Z_ARELIUM_SHIELD_INFRASTRUCTURE_ROLE.md"
+  ],
+  "inventory_example_ref": "data/examples/zco_hardware_inventory.example.json"
+}

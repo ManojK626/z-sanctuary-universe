@@ -1,0 +1,26 @@
+{
+  "schema": "z_compute_organism_dashboard_manifest_v1",
+  "phase": "ZCO-7",
+  "updated_at": "2026-05-21T00:00:00Z",
+  "title": "Z-Compute Organism Dashboard — read-only infrastructure awareness (UI only)",
+  "law_summary": "GET JSON only. No hardware control, shell execution, network scan, orchestration, or deploy from this panel.",
+  "panel": {
+    "html": "dashboard/panels/z-compute-organism-dashboard-readonly.html",
+    "script": "dashboard/scripts/z-compute-organism-dashboard-readonly.js",
+    "stylesheet": "dashboard/styles/z-compute-organism-dashboard-readonly.css"
+  },
+  "primary_data_url": "../../data/reports/z_compute_organism_status.json",
+  "embedded_reports_zco_7": {
+    "intake_validation": "../../data/reports/z_compute_intake_validation.json",
+    "upgrade_plan_draft": "../../data/reports/z_compute_upgrade_plan_draft.json"
+  },
+  "operator_commands_read_only_refresh": [
+    "npm run z:compute:organism",
+    "npm run z:compute:intake",
+    "npm run z:compute:upgrade-draft",
+    "npm run verify:md",
+    "npm run z:traffic"
+  ],
+  "chain": "declare → validate → draft → display",
+  "sacred_authority": "AMK-Goku / human remains authority for power, wiring, purchases, deploy, and orchestration."
+}

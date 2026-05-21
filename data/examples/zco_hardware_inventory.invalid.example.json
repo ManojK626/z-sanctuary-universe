@@ -1,0 +1,32 @@
+{
+  "schema": "zco_hardware_inventory_invalid_example_v1",
+  "phase": "ZCO-4",
+  "updated_at": "2026-05-21T00:00:00Z",
+  "title": "INVALID example — ZCO-5 validator must signal RED (do not use as real inventory)",
+  "scope_note": "Committed only to test validator. Contains forbidden fields and unsafe claims.",
+  "federation": {
+    "mode": "unified_motherboard_fusion",
+    "unified_motherboard_claim_allowed": true
+  },
+  "inventory": [
+    {
+      "node_id": "z-node-bad-01",
+      "label": "Bad node (example)",
+      "role": "ai_workstation",
+      "status": "active",
+      "trust_status": "trusted",
+      "notes": "This node uses live telemetry and auto-discovery — forbidden in ZCO intake.",
+      "telemetry_stream": { "enabled": true },
+      "shell_exec": "npm run dangerous — forbidden",
+      "auto_discovery": true,
+      "gpu_overclock": { "auto": true },
+      "fan_control": { "pwm": 100 }
+    },
+    {
+      "node_id": "z-node-bad-01",
+      "label": "Duplicate ID (example)",
+      "role": "unknown_role_xyz",
+      "status": "active"
+    }
+  ]
+}

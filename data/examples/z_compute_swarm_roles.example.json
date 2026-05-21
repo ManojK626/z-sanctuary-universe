@@ -1,0 +1,164 @@
+{
+  "schema": "z_compute_swarm_roles_example_v1",
+  "phase": "ZCO-1",
+  "registry_name": "Z-OMNISWARM Cluster MiniBot Roles (example)",
+  "mode": "read_only_governance_doctrine",
+  "updated_at": "2026-05-21T00:00:00Z",
+  "parent_lane": "Z-COMPUTE-ORGANISM-1",
+  "scope_note": "EXAMPLE role definitions for federated compute organism MiniBots. No processes are spawned from this file in ZCO-1.",
+  "universal_law_ref": "data/z_swarm_14drp_agent_law_registry.json",
+  "builder_spine_doc": "docs/compute-organism/Z_SSWS_AI_TOWER_BUILDER_INSTRUCTIONS.md",
+  "layers": {
+    "observe": "Read declared node metadata and approved reports",
+    "classify": "Assign GREEN/YELLOW/BLUE/RED posture",
+    "advise": "Emit smallest safe next action and rollback note",
+    "receipt": "Record suggested Z-Δ style events (human-confirmed in future phases)"
+  },
+  "roles": [
+    {
+      "role_id": "zco_thermal_bot",
+      "minibot_id": "ThermalBot",
+      "layer": "observe",
+      "summary": "Heat monitoring advisory from declared thermal tiers and future consented probes.",
+      "watches": ["thermal_tier", "chassis_airflow_notes"],
+      "allowed_actions": ["classify_signal", "suggest_ventilation_check", "write_readonly_report"],
+      "forbidden_actions": ["fan_pwm_control", "shutdown_node", "auto_throttle"],
+      "default_signal_when_evidence_missing": "BLUE"
+    },
+    {
+      "role_id": "zco_power_bot",
+      "minibot_id": "PowerBot",
+      "layer": "observe",
+      "summary": "PSU and load advisory; flags unsafe power chaining narratives.",
+      "watches": ["psu_tier", "power_notes", "duty_cycle_declared"],
+      "allowed_actions": ["classify_signal", "suggest_psu_audit", "write_readonly_report"],
+      "forbidden_actions": ["power_switch_control", "pdu_commands", "unsafe_chain_enable"],
+      "default_signal_when_evidence_missing": "BLUE"
+    },
+    {
+      "role_id": "zco_memory_bot",
+      "minibot_id": "MemoryBot",
+      "layer": "advise",
+      "summary": "RAM balance and workload fit vs node role.",
+      "watches": ["ram_tier", "workload_hints", "organism_role"],
+      "allowed_actions": ["suggest_workload_shift_advisory", "classify_signal"],
+      "forbidden_actions": ["memory_migrate_execution", "oom_kill_remote"],
+      "default_signal_when_evidence_missing": "YELLOW"
+    },
+    {
+      "role_id": "zco_storage_bot",
+      "minibot_id": "StorageBot",
+      "layer": "observe",
+      "summary": "NAS and drive health advisory; respects NAS_WAIT.",
+      "watches": ["storage_role", "nas_wait", "storage_tier"],
+      "allowed_actions": ["classify_signal", "suggest_nas_verify", "write_readonly_report"],
+      "forbidden_actions": ["nas_path_mutation", "disk_format", "remote_volume_scan"],
+      "default_signal_when_evidence_missing": "BLUE"
+    },
+    {
+      "role_id": "zco_upgrade_bot",
+      "minibot_id": "UpgradeBot",
+      "layer": "advise",
+      "summary": "Upgrade planning and compatibility hints — AMK for purchases and installs.",
+      "watches": ["cpu", "gpu", "ram_tier", "lifecycle_state"],
+      "allowed_actions": ["suggest_upgrade_path_doc", "classify_signal"],
+      "forbidden_actions": ["auto_purchase", "auto_install_drivers", "bios_flash"],
+      "default_signal_when_evidence_missing": "BLUE"
+    },
+    {
+      "role_id": "zco_security_bot",
+      "minibot_id": "SecurityBot",
+      "layer": "classify",
+      "summary": "Arelium shield checks — trust vs evidence alignment.",
+      "watches": ["trust_status", "shield_posture", "receipts_note"],
+      "allowed_actions": ["classify_signal", "suggest_quarantine_review"],
+      "forbidden_actions": ["auto_quarantine", "firewall_rule_write", "credential_access"],
+      "default_signal_when_evidence_missing": "RED"
+    },
+    {
+      "role_id": "zco_cluster_bot",
+      "minibot_id": "ClusterBot",
+      "layer": "advise",
+      "summary": "Federation topology and node role orchestration vocabulary only.",
+      "watches": ["organism_role", "federation.mode", "node_count_declared"],
+      "allowed_actions": ["suggest_topology_doc_update", "classify_signal"],
+      "forbidden_actions": ["k8s_apply", "scheduler_execute", "unified_motherboard_narrative"],
+      "default_signal_when_evidence_missing": "BLUE"
+    },
+    {
+      "role_id": "zco_link_bot",
+      "minibot_id": "LinkBot",
+      "layer": "observe",
+      "summary": "Declared network topology — not live network discovery.",
+      "watches": ["network_capability", "network_bridge_gated"],
+      "allowed_actions": ["classify_signal", "suggest_link_receipt_refresh"],
+      "forbidden_actions": ["port_scan", "arp_sweep", "router_config_write"],
+      "default_signal_when_evidence_missing": "YELLOW"
+    },
+    {
+      "role_id": "zco_cost_bot",
+      "minibot_id": "CostBot",
+      "layer": "advise",
+      "summary": "Power and cost efficiency hints — no billing mutation.",
+      "watches": ["duty_cycle_declared", "psu_tier", "watt_tier_declared"],
+      "allowed_actions": ["suggest_efficiency_doc", "classify_signal"],
+      "forbidden_actions": ["billing_change", "tariff_api_call", "payment_provider"],
+      "default_signal_when_evidence_missing": "YELLOW"
+    },
+    {
+      "role_id": "zco_recycle_bot",
+      "minibot_id": "RecycleBot",
+      "layer": "advise",
+      "summary": "Dormant hardware reuse and recycle candidate advisory.",
+      "watches": ["lifecycle_state", "recycle_candidate"],
+      "allowed_actions": ["suggest_recycle_checklist", "classify_signal"],
+      "forbidden_actions": ["auto_power_on_dormant", "e_waste_ship_automation"],
+      "default_signal_when_evidence_missing": "BLUE"
+    },
+    {
+      "role_id": "zco_explain_bot",
+      "minibot_id": "ExplainBot",
+      "layer": "receipt",
+      "summary": "Teaches operators — routes to ZCO docs and 14 DRP law.",
+      "watches": ["operator_questions"],
+      "allowed_actions": ["link_docs", "glossary_emit"],
+      "forbidden_actions": ["hidden_execution", "authority_escalation"],
+      "default_signal_when_evidence_missing": "GREEN",
+      "related_docs": [
+        "docs/compute-organism/Z_COMPUTE_ORGANISM_ARCHITECTURE.md",
+        "docs/compute-organism/Z_SSWS_AI_TOWER_BUILDER_INSTRUCTIONS.md",
+        "docs/Z_SWARM_14DRP_UNIVERSAL_AGENT_LAW.md"
+      ]
+    },
+    {
+      "role_id": "zco_guardian_bot",
+      "minibot_id": "GuardianBot",
+      "layer": "classify",
+      "summary": "14 DRP governance guard for compute organism claims.",
+      "watches": ["forbidden_narratives", "sacred_lane_hints"],
+      "allowed_actions": ["classify_signal", "emit_rollback_note", "flag_red"],
+      "forbidden_actions": ["override_amk", "waive_drp"],
+      "forbidden_narratives": [
+        "unified_motherboard_fusion",
+        "infinite_scale_claim",
+        "fake_quantum_speedup",
+        "ai_self_governance_without_human",
+        "unsafe_power_chaining"
+      ],
+      "default_signal_when_evidence_missing": "RED"
+    }
+  ],
+  "swarm_chief": {
+    "id": "OMNISWARM_Chief",
+    "status": "conceptual_zco_1",
+    "combines_roles": ["zco_security_bot", "zco_cluster_bot", "zco_thermal_bot", "zco_power_bot"],
+    "outputs": ["overall_signal", "smallest_safe_next_action", "rollback_note"],
+    "forbidden": ["execute_queue", "deploy", "merge"]
+  },
+  "related_docs": [
+    "docs/compute-organism/Z_OMNISWARM_CLUSTER_MINIBOTS.md",
+    "docs/compute-organism/Z_ARELIUM_SHIELD_INFRASTRUCTURE_ROLE.md",
+    "docs/compute-organism/Z_FORMULA_INFRASTRUCTURE_ENGINE.md",
+    "docs/Z_TRAFFIC_MINIBOTS.md"
+  ]
+}

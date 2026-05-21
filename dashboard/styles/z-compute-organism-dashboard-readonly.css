@@ -1,0 +1,268 @@
+/* ZCO-3 — read-only compute organism panel; no control plane */
+:root {
+  --zco-bg0: #08060f;
+  --zco-bg1: #12101c;
+  --zco-surface: rgba(22, 18, 36, 0.92);
+  --zco-border: rgba(160, 120, 220, 0.28);
+  --zco-text: #f0e8ff;
+  --zco-muted: #9a8fb8;
+  --zco-accent: #b794f6;
+  --zco-shield: #6ec4ff;
+  --zco-green: #4cd964;
+  --zco-yellow: #e6c84a;
+  --zco-blue: #5ac8fa;
+  --zco-red: #ff6b6b;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  min-height: 100%;
+  background: radial-gradient(900px 520px at 20% 0%, #1a1430 0%, var(--zco-bg0) 55%, #040308 100%);
+  color: var(--zco-text);
+  font-family: 'Segoe UI', system-ui, sans-serif;
+  font-size: 14px;
+  line-height: 1.45;
+}
+
+body.zco-dash {
+  display: flex;
+  flex-direction: column;
+}
+
+.zco-header {
+  flex: 0 0 auto;
+  padding: 0.75rem 1rem;
+  border-bottom: 1px solid var(--zco-border);
+  background: linear-gradient(180deg, rgba(40, 28, 70, 0.5) 0%, transparent 100%);
+}
+
+.zco-title {
+  margin: 0 0 0.35rem;
+  font-size: 1.15rem;
+  font-weight: 650;
+  letter-spacing: 0.02em;
+}
+
+.zco-badge {
+  display: inline-block;
+  font-size: 0.68rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  padding: 0.2rem 0.5rem;
+  border-radius: 6px;
+  border: 1px solid rgba(183, 148, 246, 0.5);
+  color: var(--zco-accent);
+  background: rgba(183, 148, 246, 0.12);
+  margin-right: 0.5rem;
+}
+
+.zco-toolbar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  align-items: center;
+  padding: 0.5rem 1rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.zco-toolbar button {
+  padding: 0.35rem 0.65rem;
+  border-radius: 8px;
+  border: 1px solid var(--zco-border);
+  background: rgba(255, 255, 255, 0.06);
+  color: var(--zco-text);
+  cursor: pointer;
+  font-size: 0.85rem;
+}
+
+.zco-toolbar button:hover {
+  background: rgba(183, 148, 246, 0.15);
+}
+
+.zco-hint {
+  color: var(--zco-muted);
+  font-size: 0.82rem;
+}
+
+.zco-mono {
+  font-family: ui-monospace, 'Cascadia Code', Consolas, monospace;
+  font-size: 0.8rem;
+}
+
+.zco-main {
+  flex: 1 1 auto;
+  padding: 0.75rem 1rem 1.25rem;
+}
+
+.zco-error {
+  color: var(--zco-red);
+  margin: 0 0 0.75rem;
+  display: none;
+}
+
+.zco-error.visible {
+  display: block;
+}
+
+.zco-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 0.65rem;
+}
+
+.zco-card {
+  background: var(--zco-surface);
+  border: 1px solid var(--zco-border);
+  border-radius: 10px;
+  padding: 0.65rem 0.75rem;
+}
+
+.zco-card h2 {
+  margin: 0 0 0.45rem;
+  font-size: 0.82rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--zco-accent);
+}
+
+.zco-status-line {
+  margin: 0.2rem 0;
+  font-size: 0.95rem;
+}
+
+.zco-status-line strong {
+  font-weight: 650;
+}
+
+.zco-signal {
+  display: inline-block;
+  font-size: 1.35rem;
+  font-weight: 800;
+  letter-spacing: 0.04em;
+  padding: 0.25rem 0.5rem;
+  border-radius: 8px;
+}
+
+.sig-green {
+  color: #0a1a0a;
+  background: var(--zco-green);
+}
+
+.sig-yellow {
+  color: #1a1400;
+  background: var(--zco-yellow);
+}
+
+.sig-blue {
+  color: #001a28;
+  background: var(--zco-blue);
+}
+
+.sig-red {
+  color: #fff;
+  background: var(--zco-red);
+}
+
+.zco-law {
+  font-size: 0.82rem;
+  color: var(--zco-muted);
+}
+
+.zco-law p {
+  margin: 0.35rem 0;
+}
+
+.zco-docs {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.zco-docs li {
+  margin: 0.35rem 0;
+}
+
+.zco-docs a {
+  color: var(--zco-shield);
+  text-decoration: none;
+}
+
+.zco-docs a:hover {
+  text-decoration: underline;
+}
+
+.zco-posture-closed {
+  color: var(--zco-shield);
+}
+
+.zco-posture-disabled {
+  color: var(--zco-muted);
+}
+
+/* ZCO-7 — intake + draft embed */
+.zco-chain h3 {
+  margin: 0 0 0.4rem;
+  font-size: 0.78rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--zco-shield);
+}
+
+.zco-grid-2 {
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+}
+
+.zco-subcard {
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  border-radius: 8px;
+  padding: 0.5rem 0.55rem;
+  background: rgba(0, 0, 0, 0.15);
+}
+
+.zco-signal-sm {
+  font-size: 0.95rem;
+  padding: 0.15rem 0.4rem;
+  vertical-align: middle;
+}
+
+.zco-meta {
+  margin: 0.35rem 0 0.25rem;
+  color: var(--zco-muted);
+}
+
+.zco-findings,
+.zco-phase-list {
+  list-style: none;
+  margin: 0.4rem 0 0;
+  padding: 0;
+  font-size: 0.8rem;
+  color: var(--zco-muted);
+}
+
+.zco-findings li,
+.zco-phase-list li {
+  margin: 0.25rem 0;
+  word-break: break-word;
+}
+
+.zco-findings-empty {
+  font-style: italic;
+}
+
+.zco-next-inline {
+  margin: 0.45rem 0 0;
+}
+
+.zco-section-error {
+  margin: 0 0 0.5rem;
+}

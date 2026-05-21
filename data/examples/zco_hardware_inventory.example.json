@@ -1,0 +1,136 @@
+{
+  "schema": "zco_hardware_inventory_example_v1",
+  "phase": "ZCO-4",
+  "updated_at": "2026-05-21T00:00:00Z",
+  "site_id": "site-home-lab-example",
+  "title": "ZCO-4 hardware inventory — example (operator-declared only)",
+  "scope_note": "EXAMPLE ONLY. Copy to a local gitignored manifest for real inventory. No scan, no live telemetry, no secrets.",
+  "law": [
+    "All fields are operator-declared — not probed or auto-discovered.",
+    "No MAC addresses, serial numbers, IPs, or credentials in committed examples.",
+    "power_chain_safe_declared false or unsafe narrative → BLUE for AMK before power-on.",
+    "NAS nodes use nas_wait until mount verified by human.",
+    "unified_motherboard_claim_allowed must remain false at cluster level."
+  ],
+  "inventory": [
+    {
+      "node_id": "z-node-001",
+      "label": "Primary AI workstation (example)",
+      "role": "ai_workstation",
+      "location_type": "home_lab",
+      "status": "active",
+      "sanctuary_lane": "hub",
+      "trust_status": "trusted",
+      "motherboard": {
+        "vendor": "ASUS (declared)",
+        "model": "X670E (declared)",
+        "form_factor": "ATX",
+        "socket": "AM5 (declared)"
+      },
+      "cpu": {
+        "vendor": "AMD (declared)",
+        "model": "Ryzen 9 7950X (declared)",
+        "cores_declared": 16,
+        "tdp_w_declared": 170
+      },
+      "ram": {
+        "capacity_gb": 64,
+        "modules": 2,
+        "ddr_generation": "DDR5"
+      },
+      "gpu": [
+        {
+          "model": "RTX 4090 (declared)",
+          "vram_gb_declared": 24,
+          "power_w_declared": 450
+        }
+      ],
+      "storage": [
+        { "type": "NVMe", "capacity_tb": 2, "role": "boot_and_projects" },
+        { "type": "SATA", "capacity_tb": 4, "role": "archive" }
+      ],
+      "network": {
+        "nic_speed_declared": "10GbE (declared)",
+        "switch_model": "10GbE switch (declared)",
+        "router_model": "Home router (declared)"
+      },
+      "cooling": {
+        "cpu_cooler": "AIO 360mm (declared)",
+        "case_airflow": "positive_pressure_declared",
+        "fan_count_declared": 6,
+        "thermal_notes": "Operator-maintained; no live sensor claims"
+      },
+      "power": {
+        "psu_w_declared": 1200,
+        "ups_va_declared": 1500,
+        "ups_runtime_note": "Declared minutes for planning only",
+        "power_chain_safe_declared": true
+      },
+      "display": {
+        "monitors_count": 2,
+        "primary_resolution": "4K (declared)"
+      },
+      "workloads": ["AI workloads", "Z-Sanctuary hub development", "media generation"],
+      "declared_goals": ["Sanctuary orchestration", "creative production", "local-first AI"],
+      "upgrade_goals": ["Optional second NVMe tier", "quieter case fans"],
+      "constraints": {
+        "budget_tier": "medium",
+        "power_limit_note": "Single dedicated circuit",
+        "space_note": "Full tower under desk",
+        "noise_note": "Prefer quiet at night"
+      },
+      "risk_notes": [],
+      "receipts_note": "Operator maintains hardware change log outside repo."
+    },
+    {
+      "node_id": "z-node-nas-01",
+      "label": "NAS storage (example — wait)",
+      "role": "storage_nas",
+      "location_type": "home_lab",
+      "status": "dormant",
+      "sanctuary_lane": "nas",
+      "trust_status": "unknown",
+      "motherboard": { "vendor": "NAS vendor (declared)", "model": "4-bay (declared)" },
+      "storage": [
+        {
+          "type": "NAS_POOL",
+          "capacity_tb": 24,
+          "role": "sanctuary_backup",
+          "mount_note": "NAS_WAIT — not verified"
+        }
+      ],
+      "network": { "nic_speed_declared": "1GbE (declared)" },
+      "power": { "psu_w_declared": 250, "power_chain_safe_declared": true },
+      "nas_wait": true,
+      "workloads": ["backup", "media archive"],
+      "declared_goals": ["Sanctuary backup spine"],
+      "risk_notes": ["Do not mutate NAS paths from hub until mount verified"]
+    },
+    {
+      "node_id": "z-node-recycle-02",
+      "label": "Dormant AM4 board (recycle candidate)",
+      "role": "recycle_dormant",
+      "location_type": "home_lab",
+      "status": "recycle_candidate",
+      "sanctuary_lane": "recycle",
+      "trust_status": "degraded",
+      "motherboard": { "vendor": "Legacy (declared)", "model": "B450 (declared)" },
+      "cpu": { "model": "Ryzen 5 3600 (declared)", "cores_declared": 6 },
+      "ram": { "capacity_gb": 16, "ddr_generation": "DDR4" },
+      "power": { "psu_w_declared": 650, "power_chain_safe_declared": true },
+      "workloads": ["batch_jobs if revived"],
+      "upgrade_goals": ["Revive as worker after AMK BLUE review"],
+      "risk_notes": ["No unsafe PSU chaining with z-node-001"]
+    }
+  ],
+  "related_docs": [
+    "docs/compute-organism/ZCO_4_HARDWARE_INTAKE_POLICY.md",
+    "docs/compute-organism/ZCO_4_HARDWARE_SCHEMA.md",
+    "docs/compute-organism/ZCO_4_UPGRADE_PLANNING_GUIDE.md"
+  ],
+  "related_examples": [
+    "data/examples/zco_multi_node_cluster.example.json",
+    "data/examples/zco_upgrade_path.example.json",
+    "data/examples/z_compute_node_registry.example.json"
+  ]
+}

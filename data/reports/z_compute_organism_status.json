@@ -1,0 +1,121 @@
+{
+  "schema": "z_compute_organism_status_v1",
+  "phase": "ZCO-2",
+  "generated_at": "2026-05-21T21:23:34.567Z",
+  "law": "Read-only infrastructure awareness. Observe → verify → suggest → human decides. Does not execute hardware or orchestration.",
+  "mode": "Turtle / Observe-only",
+  "posture": {
+    "runtime_orchestration": "CLOSED",
+    "hardware_control": "DISABLED",
+    "deploy_authority": "DISABLED",
+    "network_scan": "DISABLED"
+  },
+  "doctrine_docs": {
+    "architecture": {
+      "path": "docs/compute-organism/Z_COMPUTE_ORGANISM_ARCHITECTURE.md",
+      "present": true
+    },
+    "builder": {
+      "path": "docs/compute-organism/Z_SSWS_AI_TOWER_BUILDER_INSTRUCTIONS.md",
+      "present": true
+    },
+    "arelium": {
+      "path": "docs/compute-organism/Z_ARELIUM_SHIELD_INFRASTRUCTURE_ROLE.md",
+      "present": true
+    },
+    "omniswarm": {
+      "path": "docs/compute-organism/Z_OMNISWARM_CLUSTER_MINIBOTS.md",
+      "present": true
+    },
+    "formulas": {
+      "path": "docs/compute-organism/Z_FORMULA_INFRASTRUCTURE_ENGINE.md",
+      "present": true
+    },
+    "receipt_zco1": {
+      "path": "docs/compute-organism/PHASE_ZCO_1_GREEN_RECEIPT.md",
+      "present": true
+    }
+  },
+  "doctrine_all_present": true,
+  "examples": {
+    "node_registry": {
+      "path": "data/examples/z_compute_node_registry.example.json",
+      "read_ok": true,
+      "validation": {
+        "ok": true,
+        "issues": [],
+        "node_count": 4
+      }
+    },
+    "swarm_roles": {
+      "path": "data/examples/z_compute_swarm_roles.example.json",
+      "read_ok": true,
+      "validation": {
+        "ok": true,
+        "issues": [],
+        "role_count": 12
+      }
+    },
+    "examples_validated": "PASS"
+  },
+  "swarm_summary": {
+    "registry_name": "Z-OMNISWARM Cluster MiniBot Roles (example)",
+    "role_count": 12,
+    "minibot_ids": [
+      "ClusterBot",
+      "CostBot",
+      "ExplainBot",
+      "GuardianBot",
+      "LinkBot",
+      "MemoryBot",
+      "PowerBot",
+      "RecycleBot",
+      "SecurityBot",
+      "StorageBot",
+      "ThermalBot",
+      "UpgradeBot"
+    ],
+    "swarm_chief_status": "conceptual_zco_1"
+  },
+  "node_summary": {
+    "title": "Z-Sanctuary Compute Organism — example node registry (operator-declared only)",
+    "node_count": 4,
+    "node_ids": [
+      "node-hub-pc-01",
+      "node-worker-02",
+      "node-nas-01",
+      "node-recycle-legacy-03"
+    ],
+    "federation_mode": "distributed_compute_organism",
+    "nas_wait_nodes": [
+      "node-nas-01"
+    ]
+  },
+  "forbidden_runtime": {
+    "absent": true,
+    "hits": [],
+    "compute_scripts": [
+      "z_compute_intake_validate.mjs",
+      "z_compute_organism_status.mjs",
+      "z_compute_upgrade_plan_draft.mjs"
+    ]
+  },
+  "global_hub_signal": {
+    "traffic_overall": "GREEN",
+    "traffic_report": "data/reports/z_traffic_minibots_status.json"
+  },
+  "readiness": {
+    "arelium_shield_doctrine": "PRESENT",
+    "swarm_doctrine": "PRESENT",
+    "builder_instructions": "PRESENT",
+    "formula_infrastructure_doctrine": "PRESENT"
+  },
+  "overall_signal": "GREEN",
+  "smallest_safe_next_action": "Doctrine and examples verified; optional ZCO-3 panel charter — AMK chooses.",
+  "warnings": [],
+  "related_docs": [
+    "docs/compute-organism/Z_COMPUTE_ORGANISM_ARCHITECTURE.md",
+    "docs/compute-organism/Z_SSWS_AI_TOWER_BUILDER_INSTRUCTIONS.md",
+    "docs/compute-organism/PHASE_ZCO_2_GREEN_RECEIPT.md"
+  ]
+}

@@ -67,6 +67,9 @@ data/reports/*.json
 !data/reports/z_cycle_observe_status.json
 !data/reports/z_pc_activation_receipt.json
 !data/reports/z_deployment_readiness_status.json
+!data/reports/z_compute_organism_status.json
+!data/reports/z_compute_intake_validation.json
+!data/reports/z_compute_upgrade_plan_draft.json
 
 # Logs
 logs

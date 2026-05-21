@@ -1,0 +1,221 @@
+{
+  "schema": "z_compute_upgrade_plan_draft_v1",
+  "phase": "ZCO-6",
+  "generated_at": "2026-05-21T21:23:35.297Z",
+  "law": "Advisory upgrade-plan draft only. No purchase links, prices, scan, shell, network, or install authority.",
+  "mode": "Turtle / Advice-only",
+  "posture": {
+    "runtime_orchestration": "CLOSED",
+    "hardware_control": "DISABLED",
+    "telemetry_collection": "DISABLED",
+    "purchase_links": "DISABLED",
+    "price_quotes": "DISABLED",
+    "install_authority": "AMK_HUMAN_ONLY"
+  },
+  "intake_validation": {
+    "path": "data/reports/z_compute_intake_validation.json",
+    "read_ok": true,
+    "overall_signal": "YELLOW",
+    "inventory_path": "data/examples/zco_hardware_inventory.example.json",
+    "findings_count": 1
+  },
+  "inventory_path": "data/examples/zco_hardware_inventory.example.json",
+  "inventory_read_ok": true,
+  "blocked": false,
+  "blocked_reason": null,
+  "advisory_disclaimer": "This draft is educational governance output only. AMK-Goku approves acquire, wiring, power-on, and install. GREEN ≠ permission to buy or deploy.",
+  "limitations": [
+    "Intake validation YELLOW — suggestions may be incomplete until operator clarifies sparse fields.",
+    "YELLOW upgrade_plan_sparse: inventory[2]: upgrade_goals without constraints/receipts_note"
+  ],
+  "node_advisories": [
+    {
+      "node_id": "z-node-001",
+      "label": "Primary AI workstation (example)",
+      "role": "ai_workstation",
+      "status": "active",
+      "trust_status": "trusted",
+      "limitations": [],
+      "phases": [
+        {
+          "phase": "assess",
+          "order": 1,
+          "node_id": "z-node-001",
+          "item": "Review declared PSU (1200 W) vs GPU+CPU load on z-node-001; confirm cooling notes before any acquire phase",
+          "estimated_cost_tier": "minimal",
+          "amk_gate": false,
+          "signal": "GREEN",
+          "minibot": "PowerBot",
+          "advisory_only": true
+        },
+        {
+          "phase": "acquire",
+          "order": 2,
+          "node_id": "z-node-001",
+          "item": "Declared goal (advisory): Optional second NVMe tier — AMK gate before acquire/install",
+          "estimated_cost_tier": "medium",
+          "amk_gate": true,
+          "signal": "BLUE",
+          "minibot": "UpgradeBot",
+          "advisory_only": true
+        },
+        {
+          "phase": "acquire",
+          "order": 3,
+          "node_id": "z-node-001",
+          "item": "Declared goal (advisory): quieter case fans — AMK gate before acquire/install",
+          "estimated_cost_tier": "medium",
+          "amk_gate": true,
+          "signal": "BLUE",
+          "minibot": "UpgradeBot",
+          "advisory_only": true
+        },
+        {
+          "phase": "install",
+          "order": 4,
+          "node_id": "z-node-001",
+          "item": "Physical install for z-node-001 changes — human only; no hub auto-install",
+          "estimated_cost_tier": "minimal",
+          "amk_gate": true,
+          "signal": "BLUE",
+          "minibot": "ThermalBot",
+          "advisory_only": true
+        },
+        {
+          "phase": "validate",
+          "order": 5,
+          "node_id": "z-node-001",
+          "item": "Update local inventory JSON for z-node-001; re-run npm run z:compute:intake and z:compute:upgrade-draft",
+          "estimated_cost_tier": "minimal",
+          "amk_gate": false,
+          "signal": "GREEN",
+          "minibot": "ExplainBot",
+          "advisory_only": true
+        }
+      ]
+    },
+    {
+      "node_id": "z-node-nas-01",
+      "label": "NAS storage (example — wait)",
+      "role": "storage_nas",
+      "status": "dormant",
+      "trust_status": "unknown",
+      "limitations": [],
+      "phases": [
+        {
+          "phase": "assess",
+          "order": 1,
+          "node_id": "z-node-nas-01",
+          "item": "Review declared PSU (250 W) vs GPU+CPU load on z-node-nas-01; confirm cooling notes before any acquire phase",
+          "estimated_cost_tier": "minimal",
+          "amk_gate": false,
+          "signal": "GREEN",
+          "minibot": "PowerBot",
+          "advisory_only": true
+        },
+        {
+          "phase": "prepare",
+          "order": 2,
+          "node_id": "z-node-nas-01",
+          "item": "Verify NAS mount and backup path for z-node-nas-01 before routing workloads (NAS_WAIT — human only)",
+          "estimated_cost_tier": "minimal",
+          "amk_gate": true,
+          "signal": "BLUE",
+          "minibot": "StorageBot",
+          "advisory_only": true
+        },
+        {
+          "phase": "validate",
+          "order": 3,
+          "node_id": "z-node-nas-01",
+          "item": "Update local inventory JSON for z-node-nas-01; re-run npm run z:compute:intake and z:compute:upgrade-draft",
+          "estimated_cost_tier": "minimal",
+          "amk_gate": false,
+          "signal": "GREEN",
+          "minibot": "ExplainBot",
+          "advisory_only": true
+        }
+      ]
+    },
+    {
+      "node_id": "z-node-recycle-02",
+      "label": "Dormant AM4 board (recycle candidate)",
+      "role": "recycle_dormant",
+      "status": "recycle_candidate",
+      "trust_status": "degraded",
+      "limitations": [
+        "Recycle/dormant node — revival requires separate AMK BLUE path before power-on",
+        "z-node-recycle-02: sparse upgrade_goals — add constraints or receipts_note for fuller draft"
+      ],
+      "phases": [
+        {
+          "phase": "assess",
+          "order": 1,
+          "node_id": "z-node-recycle-02",
+          "item": "Review declared PSU (650 W) vs GPU+CPU load on z-node-recycle-02; confirm cooling notes before any acquire phase",
+          "estimated_cost_tier": "minimal",
+          "amk_gate": false,
+          "signal": "GREEN",
+          "minibot": "PowerBot",
+          "advisory_only": true
+        },
+        {
+          "phase": "acquire",
+          "order": 2,
+          "node_id": "z-node-recycle-02",
+          "item": "Declared goal (advisory): Revive as worker after AMK BLUE review — AMK gate before acquire/install",
+          "estimated_cost_tier": "undeclared",
+          "amk_gate": true,
+          "signal": "BLUE",
+          "minibot": "UpgradeBot",
+          "advisory_only": true
+        },
+        {
+          "phase": "install",
+          "order": 3,
+          "node_id": "z-node-recycle-02",
+          "item": "Physical install for z-node-recycle-02 changes — human only; no hub auto-install",
+          "estimated_cost_tier": "minimal",
+          "amk_gate": true,
+          "signal": "BLUE",
+          "minibot": "ThermalBot",
+          "advisory_only": true
+        },
+        {
+          "phase": "validate",
+          "order": 4,
+          "node_id": "z-node-recycle-02",
+          "item": "Update local inventory JSON for z-node-recycle-02; re-run npm run z:compute:intake and z:compute:upgrade-draft",
+          "estimated_cost_tier": "minimal",
+          "amk_gate": false,
+          "signal": "GREEN",
+          "minibot": "ExplainBot",
+          "advisory_only": true
+        }
+      ]
+    }
+  ],
+  "recycle_opportunities": [
+    {
+      "node_id": "z-node-recycle-02",
+      "summary": "Advisory: document reuse intent for z-node-recycle-02; PSU/thermal audit before revival",
+      "signal": "BLUE",
+      "amk_gate": true,
+      "minibot": "RecycleBot",
+      "advisory_only": true
+    }
+  ],
+  "phase_count": 12,
+  "overall_signal": "YELLOW",
+  "smallest_safe_next_action": "Clarify YELLOW intake findings; treat acquire phases as AMK-gated hypotheses only.",
+  "warnings": [],
+  "related_docs": [
+    "docs/compute-organism/ZCO_6_AI_ASSISTED_UPGRADE_PLAN_DRAFT.md",
+    "docs/compute-organism/ZCO_4_UPGRADE_PLANNING_GUIDE.md",
+    "docs/compute-organism/ZCO_5_LOCAL_INTAKE_VALIDATOR.md"
+  ],
+  "related_commands": [
+    "npm run z:compute:intake",
+    "npm run z:compute:upgrade-draft"
+  ]
+}

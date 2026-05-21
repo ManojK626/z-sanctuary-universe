@@ -1,0 +1,17 @@
+{
+  "schema": "zco_hardware_inventory_minimal_example_v1",
+  "phase": "ZCO-4",
+  "updated_at": "2026-05-21T00:00:00Z",
+  "title": "Minimal valid inventory (ZCO-5 validator GREEN path)",
+  "inventory": [
+    {
+      "node_id": "z-node-min-01",
+      "label": "Minimal workstation (example)",
+      "role": "ai_workstation",
+      "status": "active",
+      "trust_status": "trusted",
+      "cpu": { "model": "Example CPU (declared)" },
+      "ram": { "capacity_gb": 16 }
+    }
+  ]
+}

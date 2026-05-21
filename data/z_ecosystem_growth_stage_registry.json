@@ -104,6 +104,103 @@
       "data": ["data/z_cycle_dashboard_manifest.json"]
     },
     {
+      "id": "z_compute_organism_1",
+      "phase_label": "ZCO-1",
+      "role": "Compute organism doctrine pack — SSWS + AI Tower builder spine; observe-only; no hardware control or orchestration runtime.",
+      "docs": [
+        "docs/compute-organism/Z_SSWS_AI_TOWER_BUILDER_INSTRUCTIONS.md",
+        "docs/compute-organism/Z_COMPUTE_ORGANISM_ARCHITECTURE.md",
+        "docs/compute-organism/PHASE_ZCO_1_GREEN_RECEIPT.md"
+      ],
+      "data": [
+        "data/examples/z_compute_node_registry.example.json",
+        "data/examples/z_compute_swarm_roles.example.json"
+      ]
+    },
+    {
+      "id": "z_compute_organism_status_2",
+      "phase_label": "ZCO-2",
+      "role": "Read-only compute organism status observer — writes z_compute_organism_status reports only.",
+      "docs": ["docs/compute-organism/PHASE_ZCO_2_GREEN_RECEIPT.md"],
+      "scripts_note": "npm run z:compute:organism",
+      "data": ["data/reports/z_compute_organism_status.json"]
+    },
+    {
+      "id": "z_compute_organism_dashboard_3",
+      "phase_label": "ZCO-3",
+      "role": "Read-only compute organism dashboard — GET z_compute_organism_status.json only.",
+      "docs": [
+        "docs/compute-organism/Z_COMPUTE_ORGANISM_DASHBOARD_SYSTEM.md",
+        "docs/compute-organism/PHASE_ZCO_3_GREEN_RECEIPT.md"
+      ],
+      "data": [
+        "data/z_compute_organism_dashboard_manifest.json",
+        "data/reports/z_compute_organism_status.json"
+      ],
+      "panel": "dashboard/panels/z-compute-organism-dashboard-readonly.html"
+    },
+    {
+      "id": "z_compute_organism_intake_4",
+      "phase_label": "ZCO-4",
+      "role": "Manual hardware intake schema — operator-declared inventory only; no scan.",
+      "docs": [
+        "docs/compute-organism/ZCO_4_HARDWARE_INTAKE_POLICY.md",
+        "docs/compute-organism/ZCO_4_HARDWARE_SCHEMA.md",
+        "docs/compute-organism/PHASE_ZCO_4_GREEN_RECEIPT.md"
+      ],
+      "data": [
+        "data/examples/zco_hardware_inventory.example.json",
+        "data/examples/zco_multi_node_cluster.example.json",
+        "data/examples/zco_upgrade_path.example.json"
+      ]
+    },
+    {
+      "id": "z_compute_organism_intake_5",
+      "phase_label": "ZCO-5",
+      "role": "Local intake validator — read declared inventory JSON only; exit 1 on RED.",
+      "docs": [
+        "docs/compute-organism/ZCO_5_LOCAL_INTAKE_VALIDATOR.md",
+        "docs/compute-organism/ZCO_5_VALIDATION_RULES.md",
+        "docs/compute-organism/PHASE_ZCO_5_GREEN_RECEIPT.md"
+      ],
+      "data": ["data/reports/z_compute_intake_validation.json"],
+      "scripts_note": "npm run z:compute:intake — ZCO_INVENTORY_PATH for operator manifest"
+    },
+    {
+      "id": "z_compute_organism_upgrade_draft_6",
+      "phase_label": "ZCO-6",
+      "role": "AI-assisted upgrade plan draft — advisory only; no prices, links, scan, or install.",
+      "docs": [
+        "docs/compute-organism/ZCO_6_AI_ASSISTED_UPGRADE_PLAN_DRAFT.md",
+        "docs/compute-organism/PHASE_ZCO_6_GREEN_RECEIPT.md"
+      ],
+      "data": ["data/reports/z_compute_upgrade_plan_draft.json"],
+      "scripts_note": "npm run z:compute:upgrade-draft — after npm run z:compute:intake"
+    },
+    {
+      "id": "z_compute_organism_dashboard_embed_7",
+      "phase_label": "ZCO-7",
+      "role": "Dashboard GET embed for intake + upgrade draft in read-only compute panel.",
+      "docs": [
+        "docs/compute-organism/ZCO_7_DASHBOARD_INTAKE_DRAFT_EMBED.md",
+        "docs/compute-organism/PHASE_ZCO_7_GREEN_RECEIPT.md"
+      ],
+      "data": [
+        "data/reports/z_compute_intake_validation.json",
+        "data/reports/z_compute_upgrade_plan_draft.json"
+      ],
+      "panel": "dashboard/panels/z-compute-organism-dashboard-readonly.html"
+    },
+    {
+      "id": "z_compute_organism_probe_charter_8",
+      "phase_label": "ZCO-8",
+      "role": "Probe charter doctrine only — defines future consented probe boundaries; no probe runtime.",
+      "docs": [
+        "docs/compute-organism/ZCO_8_PROBE_CHARTER_DOCTRINE.md",
+        "docs/compute-organism/PHASE_ZCO_8_GREEN_RECEIPT.md"
+      ]
+    },
+    {
       "id": "z_pc_activation_awareness_1",
       "phase_label": "Z-PC-ACTIVATION-AWARENESS-1",
       "role": "Manual-only operator activation receipt after hub/PowerShell work — git + phase markers + on-disk report signals; writes only z_pc_activation_receipt.{json,md}; no watcher; receipt is not execute permission.",

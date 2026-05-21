@@ -39,6 +39,20 @@ Cross-links: [Z-GITHUB-SANCTUARY-GATE.md](Z-GITHUB-SANCTUARY-GATE.md), [Z-CLOUDF
 
 **Z-DOORWAY-3** (telemetry / session receipts): `scripts/z_doorway_workspace_status.mjs` (`npm run z:doorway:status`) — read-only status JSON/Markdown from `data/z_doorway_workspace_registry.json` and optional tail of `data/reports/z_doorway_session_log.jsonl`. Does not auto-launch IDEs or mutate NAS.
 
+## Z-Compute Organism (ZCO-1–8, observe-only)
+
+**Builder spine:** [compute-organism/Z_SSWS_AI_TOWER_BUILDER_INSTRUCTIONS.md](compute-organism/Z_SSWS_AI_TOWER_BUILDER_INSTRUCTIONS.md)
+
+| Phase | Command / surface |
+| ----- | ----------------- |
+| ZCO-2 observer | `npm run z:compute:organism` |
+| ZCO-5 validator | `npm run z:compute:intake` |
+| ZCO-6 upgrade draft | `npm run z:compute:upgrade-draft` |
+| ZCO-7 cockpit | `dashboard/panels/z-compute-organism-dashboard-readonly.html` (GET only) |
+| ZCO-8 probe charter | [ZCO_8_PROBE_CHARTER_DOCTRINE.md](compute-organism/ZCO_8_PROBE_CHARTER_DOCTRINE.md) — **no probe runtime** |
+
+No hardware scan, shell, network control, or deploy from this lane. **AMK-Goku** owns sacred moves.
+
 ## Sealed growth stages (Z-AI-BUILDER-AWARENESS-2)
 
 The ecosystem is in a **governed organism foundation** posture: **read-only awareness** (topology, device trust, doorway receipts, drift, traffic) expands **before** widening autonomous execution. Canonical catalog: [Z_ECOSYSTEM_GROWTH_STATUS.md](Z_ECOSYSTEM_GROWTH_STATUS.md) and `data/z_ecosystem_growth_stage_registry.json`.

@@ -1,0 +1,126 @@
+{
+  "schema": "z_compute_node_registry_example_v1",
+  "phase": "ZCO-1",
+  "updated_at": "2026-05-21T00:00:00Z",
+  "title": "Z-Sanctuary Compute Organism — example node registry (operator-declared only)",
+  "scope_note": "EXAMPLE ONLY. Copy to a local operator manifest when a future phase charters ingest. No auto-discovery, no LAN scan, no secrets, no live probes in ZCO-1.",
+  "law": [
+    "Nodes are declared by operator — not inferred by hub scan.",
+    "No serial numbers, MAC addresses, or credentials in committed examples.",
+    "trust_status and shield_posture drive advisory signals only — no auto-quarantine.",
+    "NAS and backup nodes stay NAS_WAIT until mount verified and manifest updated by human.",
+    "Federation ≠ single motherboard — each node retains its own OS boundary."
+  ],
+  "trust_states": ["trusted", "provisional", "degraded", "quarantine_advisory", "unknown"],
+  "organism_roles": [
+    "control_hub",
+    "compute_worker",
+    "inference_edge",
+    "storage_nas",
+    "recycle_dormant",
+    "backup_ghost",
+    "backup_alien",
+    "network_bridge_gated"
+  ],
+  "lifecycle_states": ["active", "dormant", "recycle_candidate", "retired"],
+  "shield_postures": ["nominal", "watch", "degraded_advisory", "isolate_advisory"],
+  "nodes": [
+    {
+      "node_id": "node-hub-pc-01",
+      "label": "Hub workstation (example)",
+      "organism_role": "control_hub",
+      "lifecycle_state": "active",
+      "trust_status": "trusted",
+      "shield_posture": "nominal",
+      "declared_hardware": {
+        "device_type": "desktop",
+        "os": "Windows 11 (declared)",
+        "cpu": "Example tier — 8+ cores",
+        "gpu": "discrete (declared)",
+        "ram_tier": "32GB",
+        "psu_tier": "adequate_declared",
+        "thermal_tier": "normal_declared"
+      },
+      "network_capability": "local_and_internet_optional",
+      "storage_role": "local_primary",
+      "ecosystem_links": {
+        "hub_repo": "Z_Sanctuary_Universe",
+        "satellite_bridge": "docs/Z_SANCTUARY_CONTROL_LINK.md"
+      },
+      "receipts_note": "Operator maintains upgrade/change log outside repo or in future z_delta_receipts lane."
+    },
+    {
+      "node_id": "node-worker-02",
+      "label": "Secondary compute worker (example)",
+      "organism_role": "compute_worker",
+      "lifecycle_state": "active",
+      "trust_status": "provisional",
+      "shield_posture": "watch",
+      "declared_hardware": {
+        "device_type": "desktop",
+        "os": "Linux (declared)",
+        "cpu": "Example tier — 6 cores",
+        "gpu": "integrated (declared)",
+        "ram_tier": "16GB",
+        "psu_tier": "adequate_declared",
+        "thermal_tier": "warm_declared"
+      },
+      "network_capability": "local_only",
+      "storage_role": "local_secondary",
+      "workload_hints": ["batch_jobs", "dev_builds"],
+      "minibot_coverage": ["ThermalBot", "PowerBot", "MemoryBot", "ClusterBot"]
+    },
+    {
+      "node_id": "node-nas-01",
+      "label": "NAS storage node (example — wait state)",
+      "organism_role": "storage_nas",
+      "lifecycle_state": "dormant",
+      "trust_status": "unknown",
+      "shield_posture": "watch",
+      "declared_hardware": {
+        "device_type": "nas",
+        "os": "NAS OS (declared)",
+        "storage_tier": "multi_bay_declared"
+      },
+      "network_capability": "local_only",
+      "nas_wait": true,
+      "nas_wait_reason": "Mount not verified by operator — do not mutate NAS paths from hub.",
+      "minibot_coverage": ["StorageBot", "LinkBot", "SecurityBot"]
+    },
+    {
+      "node_id": "node-recycle-legacy-03",
+      "label": "Dormant motherboard / recycle candidate (example)",
+      "organism_role": "recycle_dormant",
+      "lifecycle_state": "recycle_candidate",
+      "trust_status": "degraded",
+      "shield_posture": "degraded_advisory",
+      "declared_hardware": {
+        "device_type": "dormant_board",
+        "cpu": "legacy (declared)",
+        "ram_tier": "8GB",
+        "notes": "Reuse only after AMK BLUE review — no unsafe power chaining."
+      },
+      "network_capability": "offline",
+      "minibot_coverage": ["RecycleBot", "UpgradeBot", "ExplainBot"]
+    }
+  ],
+  "federation": {
+    "mode": "distributed_compute_organism",
+    "unified_motherboard_claim_allowed": false,
+    "max_declared_nodes_operator_set": null,
+    "default_signal_when_evidence_missing": "BLUE"
+  },
+  "related_docs": [
+    "docs/compute-organism/Z_COMPUTE_ORGANISM_ARCHITECTURE.md",
+    "docs/compute-organism/Z_SSWS_AI_TOWER_BUILDER_INSTRUCTIONS.md",
+    "docs/compute-organism/Z_ARELIUM_SHIELD_INFRASTRUCTURE_ROLE.md",
+    "docs/compute-organism/Z_OMNISWARM_CLUSTER_MINIBOTS.md",
+    "docs/compute-organism/Z_FORMULA_INFRASTRUCTURE_ENGINE.md",
+    "docs/compute-organism/PHASE_ZCO_1_GREEN_RECEIPT.md"
+  ],
+  "related_registries": [
+    "data/examples/z_compute_swarm_roles.example.json",
+    "data/z_swarm_14drp_agent_law_registry.json",
+    "data/z_anydevice_ai_capsule_registry.json"
+  ]
+}

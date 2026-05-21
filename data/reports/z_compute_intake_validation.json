@@ -1,0 +1,44 @@
+{
+  "schema": "z_compute_intake_validation_v1",
+  "phase": "ZCO-5",
+  "generated_at": "2026-05-21T21:23:34.949Z",
+  "law": "Read-only intake validation. Operator-declared JSON only. No scan, shell, network, or device control.",
+  "mode": "Turtle / Observe-only",
+  "posture": {
+    "runtime_orchestration": "CLOSED",
+    "hardware_control": "DISABLED",
+    "telemetry_collection": "DISABLED",
+    "network_probe": "DISABLED"
+  },
+  "inventory_path": "data/examples/zco_hardware_inventory.example.json",
+  "inventory_path_resolved": "C:\\Cursor Projects Organiser\\Z_Sanctuary_Universe\\data\\examples\\zco_hardware_inventory.example.json",
+  "env_var": "ZCO_INVENTORY_PATH",
+  "default_fallback": "data/examples/zco_hardware_inventory.example.json",
+  "read_ok": true,
+  "inventory_count": 3,
+  "node_ids": [
+    "z-node-001",
+    "z-node-nas-01",
+    "z-node-recycle-02"
+  ],
+  "findings": [
+    {
+      "severity": "YELLOW",
+      "code": "upgrade_plan_sparse",
+      "message": "inventory[2]: upgrade_goals without constraints/receipts_note"
+    }
+  ],
+  "counts": {
+    "red": 0,
+    "yellow": 1,
+    "green": 0
+  },
+  "overall_signal": "YELLOW",
+  "smallest_safe_next_action": "Clarify YELLOW findings; AMK for power or NAS_WAIT conflicts.",
+  "warnings": [],
+  "related_docs": [
+    "docs/compute-organism/ZCO_5_LOCAL_INTAKE_VALIDATOR.md",
+    "docs/compute-organism/ZCO_5_VALIDATION_RULES.md",
+    "docs/compute-organism/ZCO_4_HARDWARE_SCHEMA.md"
+  ]
+}

@@ -48,6 +48,15 @@ RED blocks movement.
 AMK-Goku owns sacred moves.
 ```
 
+## Z-Compute Organism (ZCO — observe-only)
+
+| Phase | Entry |
+| ----- | ----- |
+| Builder spine | [compute-organism/Z_SSWS_AI_TOWER_BUILDER_INSTRUCTIONS.md](compute-organism/Z_SSWS_AI_TOWER_BUILDER_INSTRUCTIONS.md) |
+| Commands | `npm run z:compute:organism`, `z:compute:intake`, `z:compute:upgrade-draft` |
+| Cockpit | [ZCO_7_DASHBOARD_INTAKE_DRAFT_EMBED.md](compute-organism/ZCO_7_DASHBOARD_INTAKE_DRAFT_EMBED.md) |
+| Probe charter (no runtime) | [ZCO_8_PROBE_CHARTER_DOCTRINE.md](compute-organism/ZCO_8_PROBE_CHARTER_DOCTRINE.md) |
+
 ## Related
 
 - [Z_SSWS_LAUNCH_REQUIREMENTS_POLICY.md](Z_SSWS_LAUNCH_REQUIREMENTS_POLICY.md)

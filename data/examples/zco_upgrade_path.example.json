@@ -1,0 +1,87 @@
+{
+  "schema": "zco_upgrade_path_example_v1",
+  "phase": "ZCO-4",
+  "updated_at": "2026-05-21T00:00:00Z",
+  "path_id": "upgrade-path-z-node-001-example",
+  "title": "Staged upgrade path — example (planning only)",
+  "target_node_id": "z-node-001",
+  "scope_note": "EXAMPLE ONLY. Phases require AMK gate for acquire/install. No auto-purchase or install.",
+  "law": [
+    "Each phase with amk_gate true requires human approval before action.",
+    "Budget tiers are declarative — not payment execution.",
+    "No benchmark or driver install from this JSON."
+  ],
+  "current_posture_declared": {
+    "psu_w": 1200,
+    "gpu_power_w": 450,
+    "thermal_headroom": "adequate_declared",
+    "overall_signal": "GREEN"
+  },
+  "phases": [
+    {
+      "phase": "assess",
+      "order": 1,
+      "item": "Review declared PSU vs GPU+CPU tiers; confirm airflow notes",
+      "estimated_cost_tier": "minimal",
+      "amk_gate": false,
+      "signal": "GREEN",
+      "minibot": "PowerBot"
+    },
+    {
+      "phase": "prepare",
+      "order": 2,
+      "item": "Verify NAS mount for z-node-nas-01 before routing backup workloads",
+      "estimated_cost_tier": "minimal",
+      "amk_gate": true,
+      "signal": "BLUE",
+      "minibot": "NASBot"
+    },
+    {
+      "phase": "acquire",
+      "order": 3,
+      "item": "Second NVMe 2TB for project scratch (declared goal)",
+      "estimated_cost_tier": "medium",
+      "amk_gate": true,
+      "signal": "BLUE",
+      "minibot": "UpgradeBot"
+    },
+    {
+      "phase": "acquire",
+      "order": 4,
+      "item": "Quieter case fans (noise constraint)",
+      "estimated_cost_tier": "minimal",
+      "amk_gate": true,
+      "signal": "BLUE",
+      "minibot": "BudgetBot"
+    },
+    {
+      "phase": "install",
+      "order": 5,
+      "item": "Physical install NVMe and fans — human only",
+      "estimated_cost_tier": "minimal",
+      "amk_gate": true,
+      "signal": "BLUE",
+      "minibot": "CoolingBot"
+    },
+    {
+      "phase": "validate",
+      "order": 6,
+      "item": "Update local inventory JSON; run npm run z:compute:organism from hub",
+      "estimated_cost_tier": "minimal",
+      "amk_gate": false,
+      "signal": "GREEN",
+      "minibot": "IntakeBot"
+    }
+  ],
+  "recycle_opportunity": {
+    "node_id": "z-node-recycle-02",
+    "summary": "Revive as batch worker after separate AMK BLUE path",
+    "signal": "BLUE"
+  },
+  "rollback_note": "Revert to prior inventory snapshot; remove NVMe if unstable; no hub auto-repair.",
+  "related_docs": [
+    "docs/compute-organism/ZCO_4_UPGRADE_PLANNING_GUIDE.md",
+    "docs/compute-organism/Z_FORMULA_INFRASTRUCTURE_ENGINE.md"
+  ],
+  "inventory_example_ref": "data/examples/zco_hardware_inventory.example.json"
+}
