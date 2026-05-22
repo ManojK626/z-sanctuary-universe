@@ -4,6 +4,7 @@ Compact entry points for **read-only** hub registries and AMK-facing evidence. F
 
 | Slice | Doc | Command |
 | ------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------- | ----------------------------------- |
+| Z-AWAY-1 Deep Turtle away mode (docs only) | [Z_SANCTUARY_DEEP_TURTLE_AWAY_MODE.md](Z_SANCTUARY_DEEP_TURTLE_AWAY_MODE.md) | — |
 | Z-SSWS-LINK-1 workspace launch requirements | [Z_SSWS_WORKSPACE_SPINE.md](Z_SSWS_WORKSPACE_SPINE.md) | `npm run z:ssws:requirements` |
 | Z-SSWS-DOOR-1 AMK Workspace Doorway | [AMK_WORKSPACE_DOORWAY.md](AMK_WORKSPACE_DOORWAY.md) | `npm run amk:doorway:status` |
 | AMK-IDE-RHYTHM-1 IDE path + fusion operator rhythm | [AMK_IDE_PATH_AND_FUSION_OPERATOR_RHYTHM.md](AMK_IDE_PATH_AND_FUSION_OPERATOR_RHYTHM.md) | see doc |

@@ -48,6 +48,17 @@ RED blocks movement.
 AMK-Goku owns sacred moves.
 ```
 
+## Z-AWAY-1 Deep Turtle away mode
+
+| Item | Entry |
+| ---- | ----- |
+| Doctrine | [Z_SANCTUARY_DEEP_TURTLE_AWAY_MODE.md](Z_SANCTUARY_DEEP_TURTLE_AWAY_MODE.md) |
+| Receipt | [PHASE_Z_AWAY_1_GREEN_RECEIPT.md](PHASE_Z_AWAY_1_GREEN_RECEIPT.md) |
+
+```text
+Away = manual snapshots + read-only dashboards — not more automation.
+```
+
 ## Related
 
 - [Z_SSWS_LAUNCH_REQUIREMENTS_POLICY.md](Z_SSWS_LAUNCH_REQUIREMENTS_POLICY.md)

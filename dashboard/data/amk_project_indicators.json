@@ -1850,6 +1850,38 @@
       ],
       "last_known_basis": "Advisory rollup only; automated scores capped per scoring policy — never sole production proof.",
       "dynamic_overlay": "z_deployment_readiness"
+    },
+    {
+      "id": "z_away_turtle_mode",
+      "name": "Z-AWAY-1 Deep Turtle away mode",
+      "domain": "operator_ritual",
+      "project_or_system": "ZSanctuary_Universe",
+      "signal": "BLUE",
+      "growth_percent": null,
+      "readiness_label": "Docs-only — AMK absent 1–2 weeks; observe lightly, no automation",
+      "go_no_go": "HOLD_ALL_AUTONOMY",
+      "autonomy_level": "L0_DOCTRINE",
+      "recommended_next_action": "Run pre-departure ritual once; rest; return ritual — read Cycle Observe queue as suggestions only.",
+      "human_confirmation_required": true,
+      "related_docs": [
+        "docs/Z_SANCTUARY_DEEP_TURTLE_AWAY_MODE.md",
+        "docs/PHASE_Z_AWAY_1_GREEN_RECEIPT.md"
+      ],
+      "related_reports": [
+        "data/reports/z_traffic_minibots_status.json",
+        "data/reports/z_cycle_observe_status.json"
+      ],
+      "blocked_until": ["auto_queue_execution", "probe_runtime", "deploy", "background_agents"],
+      "forbidden_actions": [
+        "task_queue_exec",
+        "deploy",
+        "probe_runtime",
+        "scheduled_watchers",
+        "auto_merge",
+        "cloudflare_production_bind"
+      ],
+      "last_known_basis": "Z-AWAY-1 sealed doctrine; indicator is advisory metadata only — not a running service.",
+      "dynamic_overlay": "none"
     }
   ]
 }

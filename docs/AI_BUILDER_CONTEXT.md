@@ -101,6 +101,10 @@ npm run z:car2
 
 **Z-CYCLE-DASHBOARD-1:** open `dashboard/panels/z-cycle-dashboard-readonly.html` over **http** (same-origin GET to `data/reports/`). The page **does not** run npm or execute the task queue.
 
+### Z-AWAY-1 Deep Turtle away mode (operator absent)
+
+When AMK-Goku is away 1–2 weeks: **[Z_SANCTUARY_DEEP_TURTLE_AWAY_MODE.md](Z_SANCTUARY_DEEP_TURTLE_AWAY_MODE.md)** — **docs only**. Core law: *Observe lightly · Report clearly · Do nothing dangerous.* Manual pre-departure/return rituals; **no** new watchers, schedulers, background agents, probe runtime, deploy, or **task queue execution**. Cycle Observe queue remains suggestions only.
+
 ## IDE Safeguards
 
 - **[VS_FALLBACK_1_VSCODE_OPERATING_MODE.md](VS_FALLBACK_1_VSCODE_OPERATING_MODE.md)** — Safe fallback doctrine when Cursor unavailable. Archive vs real repo distinction enforced. Read first before any IDE changes.
@@ -235,4 +239,4 @@ npm run z:car2
 
 ---
 
-_Check main [INDEX.md](INDEX.md) for full documentation registry._
+*Check main [INDEX.md](INDEX.md) for full documentation registry.*
