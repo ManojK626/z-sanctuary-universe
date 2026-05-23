@@ -17,7 +17,9 @@
     bodyEl.scrollTo({ top: Math.max(0, offset - 10), behavior: 'smooth' });
     try {
       el.focus({ preventScroll: true });
-    } catch (_) {}
+    } catch (_) {
+      /* focus not supported on this element — scroll still applied */
+    }
     return true;
   }
 
