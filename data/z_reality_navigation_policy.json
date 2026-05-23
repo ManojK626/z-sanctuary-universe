@@ -1,0 +1,57 @@
+{
+  "schema": "z.reality.navigation.policy.v1",
+  "policy_name": "Z-Reality Navigation boundary policy",
+  "phase": "Z-RNS-ARCH-1",
+  "mode": "architecture_doctrine_only",
+  "legal_boundary": {
+    "process_maps_not_legal_advice": true,
+    "ai_summaries_not_legal_clearance": true,
+    "simulation_not_court_outcome": true,
+    "readiness_not_deploy": true,
+    "lawyers_decide_legal_advice": true,
+    "humans_decide_sharing": true
+  },
+  "ai_boundary": {
+    "advisory_default": true,
+    "human_verify_outputs": true,
+    "no_impersonation_of_professionals": true,
+    "no_fake_capability_claims": true,
+    "offline_first_preferred": true
+  },
+  "simulation_boundary": {
+    "synthetic_data_only": true,
+    "explicit_simulation_banner_required": true,
+    "no_real_client_intake": true,
+    "aligns_with_z_legal_workstation_simulation_mode": true
+  },
+  "privacy_boundary": {
+    "local_first_default": true,
+    "consent_before_share": true,
+    "private_only_default": true,
+    "no_public_trauma_seeds": true
+  },
+  "forbidden_claims": [
+    "ai replaces your lawyer",
+    "guaranteed court outcome",
+    "automatic legal advice",
+    "certified medical device",
+    "licensed therapy",
+    "official government endorsement"
+  ],
+  "forbidden_runtime_actions": [
+    "legal_advice_claim",
+    "court_filing",
+    "email_sending",
+    "payment_activation",
+    "evidence_upload_service",
+    "gdpr_sar_auto_send",
+    "deployment_without_charter",
+    "named_lawyer_ui_without_consent"
+  ],
+  "build_discipline": {
+    "turtle_mode_branch_prefix": "cursor/zsanctuary/z-rns-",
+    "one_domain_per_pr": true,
+    "green_receipt_before_runtime": true,
+    "verify_command": "npm run z:rns:arch"
+  }
+}

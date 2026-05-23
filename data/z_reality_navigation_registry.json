@@ -1,0 +1,177 @@
+{
+  "schema": "z.reality.navigation.registry.v1",
+  "registry_name": "Z-Reality Navigation System",
+  "mode": "architecture_doctrine_only",
+  "phase": "Z-RNS-ARCH-1",
+  "tagline": "Human clarity amplification — not AI law replacement",
+  "layers": [
+    {
+      "id": "z_justice_games",
+      "label": "Z-Justice Games",
+      "role": "Human learning and simulation (synthetic only)",
+      "doc": "docs/Z_JUSTICE_GAMES.md",
+      "status": "planned"
+    },
+    {
+      "id": "z_legal_evidence_core",
+      "label": "Z-Legal Evidence Core",
+      "role": "Real evidence and timeline tools (local-first)",
+      "doc": "docs/Z_LEGAL_EVIDENCE_CORE.md",
+      "status": "concept_sealed",
+      "related_phase": "Z-LEGAL-OPS-1"
+    },
+    {
+      "id": "z_life_navigation_ecosystem",
+      "label": "Z-Life Navigation Ecosystem",
+      "role": "Wider human support and accessibility",
+      "doc": "docs/Z_LIFE_NAVIGATION_ECOSYSTEM.md",
+      "status": "sketch"
+    }
+  ],
+  "phases": [
+    {
+      "id": "Z-RNS-ARCH-1",
+      "title": "Foundation doctrine and architecture",
+      "status": "in_progress",
+      "runtime": false
+    },
+    {
+      "id": "Z-RNS-FOUNDATION-1",
+      "title": "Timeline Builder + Evidence Vault prototype",
+      "status": "planned",
+      "runtime": "local_ui_charter"
+    },
+    {
+      "id": "Z-RNS-JUSTICE-GAMES-1",
+      "title": "Justice simulation engine",
+      "status": "blocked",
+      "runtime": "synthetic_only"
+    },
+    {
+      "id": "Z-RNS-WORLD-KNOWLEDGE-1",
+      "title": "Country and process awareness packs",
+      "status": "sketch",
+      "runtime": false
+    },
+    {
+      "id": "Z-RNS-GUARDIAN-AI-1",
+      "title": "Advisory AI summary layer",
+      "status": "blocked",
+      "runtime": "advisory_charter_required"
+    },
+    {
+      "id": "Z-RNS-VISUAL-1",
+      "title": "3D world and canvas visualisation",
+      "status": "future_sketch",
+      "runtime": false
+    },
+    {
+      "id": "Z-RNS-SECURITY-1",
+      "title": "Security and privacy vault policy",
+      "status": "parallel_policy",
+      "runtime": false
+    },
+    {
+      "id": "Z-RNS-PROFESSIONAL-1",
+      "title": "Professional human ecosystem",
+      "status": "human_gate",
+      "runtime": false
+    },
+    {
+      "id": "Z-RNS-ACCESS-1",
+      "title": "World service accessibility modes",
+      "status": "sketch",
+      "runtime": false
+    }
+  ],
+  "foundation_modules": [
+    {
+      "id": "timeline_builder",
+      "label": "Timeline Builder",
+      "purpose": "Event chronology",
+      "phase": "Z-RNS-FOUNDATION-1",
+      "status": "planned"
+    },
+    {
+      "id": "evidence_vault",
+      "label": "Evidence Vault",
+      "purpose": "Photos, videos, documents metadata",
+      "phase": "Z-RNS-FOUNDATION-1",
+      "status": "planned"
+    },
+    {
+      "id": "receipt_invoice_analyzer",
+      "label": "Receipt and Invoice Analyzer",
+      "purpose": "Damage and invoice checklist logic",
+      "phase": "Z-RNS-FOUNDATION-1",
+      "status": "planned"
+    },
+    {
+      "id": "health_timeline",
+      "label": "Health Timeline",
+      "purpose": "Private medical event tracking",
+      "phase": "Z-RNS-FOUNDATION-1",
+      "status": "sketch"
+    },
+    {
+      "id": "gdpr_cctv_tracker",
+      "label": "GDPR and CCTV Tracker",
+      "purpose": "Request lifecycle awareness",
+      "phase": "Z-RNS-FOUNDATION-1",
+      "status": "sketch"
+    },
+    {
+      "id": "court_export_pack",
+      "label": "Court Export Pack",
+      "purpose": "PDF bundle concept for human review",
+      "phase": "Z-RNS-FOUNDATION-1",
+      "status": "planned"
+    },
+    {
+      "id": "voice_notes",
+      "label": "Voice Notes",
+      "purpose": "Stress memory capture",
+      "phase": "Z-RNS-FOUNDATION-1",
+      "status": "blocked_consent_charter"
+    },
+    {
+      "id": "ai_summary_engine",
+      "label": "AI Summary Engine",
+      "purpose": "Advisory timeline summaries",
+      "phase": "Z-RNS-GUARDIAN-AI-1",
+      "status": "blocked"
+    }
+  ],
+  "design_tokens": {
+    "blue": "process",
+    "purple": "intelligence_advisory",
+    "green": "calm_safe_private_default",
+    "amber": "warning_review",
+    "red": "critical_risk_human_stop"
+  },
+  "target_stack": {
+    "ui": ["html5", "css", "javascript", "typescript"],
+    "build": ["vite"],
+    "storage": ["local_first", "indexeddb"],
+    "desktop_future": ["electron", "tauri"],
+    "visual_future": ["threejs", "canvas", "webgpu"]
+  },
+  "related_hub_docs": [
+    "docs/Z_REALITY_NAVIGATION_SYSTEM.md",
+    "docs/Z_REALITY_NAVIGATION_SYSTEM_ARCHITECTURE.md",
+    "docs/Z_LEGAL_EVIDENCE_CORE.md",
+    "docs/Z_LEGAL_WORKSTATION_SIMULATION_MODE.md",
+    "docs/Z_LEGAL_OPS_SAFETY_AND_BOUNDARY_POLICY.md",
+    "docs/Z_OMNI_VISUAL_WORKSTATION_ENGINE_CHARTER.md"
+  ],
+  "forbidden_runtime_in_arch_phase": [
+    "legal_advice_claim",
+    "court_filing",
+    "evidence_upload_service",
+    "cloud_sync_default",
+    "live_ai_api",
+    "professional_endorsement_without_consent",
+    "public_launch",
+    "payment_activation"
+  ]
+}

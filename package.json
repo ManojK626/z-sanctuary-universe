@@ -149,6 +149,7 @@
     "z:ai:fusion-map": "node scripts/z_ai_fusion_map_check.mjs",
     "z:stillness:learn": "node scripts/z_stillness_learning_check.mjs",
     "z:legal:ops": "node scripts/z_legal_ops_check.mjs",
+    "z:rns:arch": "node scripts/z_reality_navigation_check.mjs",
     "z:legal:product-ops": "node scripts/z_legal_product_ops_check.mjs",
     "z:legal:workstation-stack": "node scripts/z_legal_workstation_stack_check.mjs",
     "z:cadence:logical-brains": "node scripts/z_cadence_cycle_runner.mjs --cycle logical_brains_hub",
