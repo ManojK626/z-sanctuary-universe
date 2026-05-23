@@ -1,8 +1,9 @@
 safe_pack/**
-node_modules/**
-packages/**/node_modules/**
+**/node_modules/**
+**/.pytest_cache/**
 archive/**
 Amk_Goku Worldwide Loterry/SYSTEM_STATUS.md
 Amk_Goku Worldwide Loterry/data/**
 Amk_Goku Worldwide Loterry/reports/**
+Amk_Goku Worldwide Loterry/exports/**
 data/reports/**
