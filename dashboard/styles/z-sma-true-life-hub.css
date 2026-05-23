@@ -1,4 +1,4 @@
-/* Z-SMA-1 — dignity-first sanctuary hub (Turtle seed, read-only) */
+/* Z-SMA-1 / Z-SMA-1A — dignity-first sanctuary hub (Turtle seed, read-only) */
 :root {
   --zsma-bg: #1a1410;
   --zsma-surface: #2a221c;
@@ -70,6 +70,97 @@ body {
   font-style: italic;
   color: var(--zsma-rose);
   font-size: 0.95rem;
+}
+
+.zsma-badge-private {
+  color: var(--zsma-private);
+  border-color: rgba(107, 144, 128, 0.55);
+  background: rgba(107, 144, 128, 0.12);
+}
+
+.zsma-private-strip {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.55rem;
+  padding: 0.65rem 1.25rem;
+  background: rgba(107, 144, 128, 0.14);
+  border-bottom: 1px solid rgba(107, 144, 128, 0.35);
+}
+
+.zsma-private-strip-icon {
+  font-size: 1rem;
+  line-height: 1.4;
+}
+
+.zsma-private-strip-text {
+  margin: 0;
+  font-size: 0.88rem;
+  color: #d8ece4;
+}
+
+.zsma-card-badges {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem;
+  margin-bottom: 0.45rem;
+}
+
+.zsma-consent-badge,
+.zsma-privacy-badge {
+  display: inline-block;
+  font-size: 0.65rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  padding: 0.18rem 0.45rem;
+  border-radius: 999px;
+  border: 1px solid transparent;
+}
+
+.zsma-consent-not_recorded,
+.zsma-consent-pending,
+.zsma-consent-pending_review {
+  color: #f0d090;
+  background: rgba(240, 208, 144, 0.12);
+  border-color: rgba(240, 208, 144, 0.45);
+}
+
+.zsma-consent-granted,
+.zsma-consent-recorded {
+  color: #a8d4b8;
+  background: rgba(168, 212, 184, 0.12);
+  border-color: rgba(168, 212, 184, 0.45);
+}
+
+.zsma-consent-declined,
+.zsma-consent-revoked {
+  color: #e8a0a0;
+  background: rgba(232, 160, 160, 0.12);
+  border-color: rgba(232, 160, 160, 0.45);
+}
+
+.zsma-privacy-badge {
+  color: var(--zsma-private);
+  background: rgba(107, 144, 128, 0.18);
+  border-color: rgba(107, 144, 128, 0.5);
+}
+
+.zsma-privacy-desc {
+  display: block;
+  margin-top: 0.2rem;
+  font-size: 0.82rem;
+  color: var(--zsma-muted);
+}
+
+.zsma-export-preview {
+  margin: 0.5rem 0 0;
+  padding: 0.65rem;
+  border-radius: 8px;
+  background: rgba(0, 0, 0, 0.25);
+  border: 1px dashed rgba(212, 165, 116, 0.35);
+  font-size: 0.75rem;
+  overflow-x: auto;
+  white-space: pre-wrap;
 }
 
 .zsma-toolbar {

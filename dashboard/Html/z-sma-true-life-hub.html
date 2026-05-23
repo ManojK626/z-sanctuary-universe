@@ -4,16 +4,16 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="z-dashboard-role" content="z-sma-true-life-hub-readonly" />
-    <meta name="z-phase" content="Z-SMA-1" />
+    <meta name="z-phase" content="Z-SMA-1A" />
     <title>Z-SMA — True Human Experience Sanctuary (Turtle seed)</title>
     <link rel="stylesheet" href="../styles/z-sma-true-life-hub.css" />
   </head>
   <body class="zsma-page" data-lang="english">
     <header class="zsma-header">
       <div class="zsma-badges">
-        <span class="zsma-badge">Z-SMA-1</span>
+        <span class="zsma-badge">Z-SMA-1A</span>
         <span class="zsma-badge">Turtle seed</span>
-        <span class="zsma-badge">private only</span>
+        <span class="zsma-badge zsma-badge-private">private_only</span>
       </div>
       <h1 id="zsmaTitle" class="zsma-title">Z-SMA — True Human Experience Sanctuary</h1>
       <p id="zsmaSubtitle" class="zsma-subtitle">Loading…</p>
@@ -36,6 +36,11 @@
     </nav>
 
     <p id="zsmaError" class="zsma-error" role="alert" hidden></p>
+
+    <div class="zsma-private-strip" role="status" aria-live="polite">
+      <span class="zsma-private-strip-icon" aria-hidden="true">🔒</span>
+      <p id="zsmaPrivateStripText" class="zsma-private-strip-text"></p>
+    </div>
 
     <main class="zsma-main">
       <section class="zsma-card zsma-purpose" aria-labelledby="zsmaPurposeH">
@@ -67,9 +72,7 @@
       <section class="zsma-card" aria-labelledby="zsmaDraftH">
         <h2 id="zsmaDraftH">Story draft viewer</h2>
         <p id="zsmaDraftNote" class="zsma-hint"></p>
-        <pre id="zsmaDraftViewer" class="zsma-draft-viewer" aria-live="polite">
-No stories in seed — placeholders only.</pre
-        >
+        <pre id="zsmaDraftViewer" class="zsma-draft-viewer" aria-live="polite">No stories in seed — placeholders only.</pre>
       </section>
 
       <section class="zsma-card zsma-drp" aria-labelledby="zsmaDrpH">
@@ -87,6 +90,7 @@ No stories in seed — placeholders only.</pre
         <h2 id="zsmaExportH">Export receipt panel</h2>
         <p id="zsmaExportNote" class="zsma-hint"></p>
         <p class="zsma-mono" id="zsmaExportPath">data/z_sma_story_seed.json</p>
+        <pre id="zsmaExportPreview" class="zsma-export-preview" aria-live="polite"></pre>
       </section>
     </main>
 
@@ -95,7 +99,9 @@ No stories in seed — placeholders only.</pre
       <p>
         <a href="../../docs/Z_SMA_TRUE_HUMAN_EXPERIENCE_SANCTUARY.md">Doctrine</a>
         ·
-        <a href="../../docs/PHASE_Z_SMA_1_GREEN_RECEIPT.md">Green receipt</a>
+        <a href="../../docs/PHASE_Z_SMA_1_GREEN_RECEIPT.md">Z-SMA-1 receipt</a>
+        ·
+        <a href="../../docs/PHASE_Z_SMA_1A_GREEN_RECEIPT.md">Z-SMA-1A receipt</a>
       </p>
     </footer>
 

@@ -1,5 +1,5 @@
 /**
- * Z-SMA-1 — True Human Experience Sanctuary (read-only Turtle seed).
+ * Z-SMA-1 / Z-SMA-1A — True Human Experience Sanctuary (read-only Turtle seed).
  * GET local seed JSON only. No save, upload, API, voice, or external network.
  */
 (function () {
@@ -33,6 +33,21 @@
       privacy_default: 'Default privacy',
       consent: 'Consent',
       lane: 'Lane',
+      private_strip:
+        'Tou lane default private_only. Pa save istwar depi sa page. Consent imen dabord.',
+      export_preview_title: 'Preview receipt (read-only)',
+      consent_not_recorded: 'Consent pa ankor anrezistre',
+      consent_pending: 'Consent an atant review',
+      consent_granted: 'Consent anrezistre',
+      consent_declined: 'Consent refize',
+      consent_revoked: 'Consent revoke',
+      privacy_private_only: 'Private selman — default, pli sir',
+      privacy_family_only: 'Family selman — human gate obligatoire',
+      privacy_review_candidate: 'Review candidate — admin selman',
+      privacy_public_candidate: 'Public candidate — pa approve',
+      privacy_approved_public: 'Approved public — sign-off imen eksplisit',
+      display_lang: 'Langaz display',
+      draft_empty: 'Pa ena istwar dan seed — placeholder selman.',
     },
     english: {
       title: 'Z-SMA — True Human Experience Sanctuary',
@@ -59,6 +74,21 @@
       privacy_default: 'Default privacy',
       consent: 'Consent',
       lane: 'Lane',
+      private_strip:
+        'All lanes default to private_only. No stories are saved from this page. Human consent comes first.',
+      export_preview_title: 'Receipt preview (read-only)',
+      consent_not_recorded: 'Consent not yet recorded',
+      consent_pending: 'Consent pending review',
+      consent_granted: 'Consent recorded',
+      consent_declined: 'Consent declined',
+      consent_revoked: 'Consent revoked',
+      privacy_private_only: 'Private only — default, safest',
+      privacy_family_only: 'Family only — human gate required',
+      privacy_review_candidate: 'Review candidate — admin only',
+      privacy_public_candidate: 'Public candidate — not approved',
+      privacy_approved_public: 'Approved public — explicit human sign-off',
+      display_lang: 'Display language',
+      draft_empty: 'No stories in seed — placeholders only.',
     },
     french: {
       title: 'Z-SMA — Sanctuaire de l’expérience humaine vécue',
@@ -85,7 +115,28 @@
       privacy_default: 'Confidentialité par défaut',
       consent: 'Consentement',
       lane: 'Lane',
+      private_strip:
+        'Toutes les lanes sont private_only par défaut. Aucune histoire n’est enregistrée ici. Le consentement humain d’abord.',
+      export_preview_title: 'Aperçu du reçu (lecture seule)',
+      consent_not_recorded: 'Consentement pas encore enregistré',
+      consent_pending: 'Consentement en attente de revue',
+      consent_granted: 'Consentement enregistré',
+      consent_declined: 'Consentement refusé',
+      consent_revoked: 'Consentement révoqué',
+      privacy_private_only: 'Privé seulement — défaut, le plus sûr',
+      privacy_family_only: 'Famille seulement — gate humain requis',
+      privacy_review_candidate: 'Candidat revue — admin seulement',
+      privacy_public_candidate: 'Candidat public — non approuvé',
+      privacy_approved_public: 'Public approuvé — sign-off humain explicite',
+      display_lang: 'Langue d’affichage',
+      draft_empty: 'Aucune histoire dans la graine — placeholders seulement.',
     },
+  };
+
+  var LANG_OPTION_LABELS = {
+    moris_kreol: 'Moris Kreol — lang maternel',
+    english: 'English — display language',
+    french: 'Français — langue d’affichage',
   };
 
   var STORY_MODE_LABELS = {
@@ -125,6 +176,24 @@
     family_roots: { en: 'Family roots', fr: 'Racines familiales', kreol: 'Rasin fami' },
   };
 
+  var CONSENT_LABEL_KEYS = {
+    not_recorded: 'consent_not_recorded',
+    pending: 'consent_pending',
+    pending_review: 'consent_pending',
+    granted: 'consent_granted',
+    recorded: 'consent_granted',
+    declined: 'consent_declined',
+    revoked: 'consent_revoked',
+  };
+
+  var PRIVACY_LABEL_KEYS = {
+    private_only: 'privacy_private_only',
+    family_only: 'privacy_family_only',
+    review_candidate: 'privacy_review_candidate',
+    public_candidate: 'privacy_public_candidate',
+    approved_public: 'privacy_approved_public',
+  };
+
   var state = { seed: null, lang: 'english' };
 
   function $(id) {
@@ -142,6 +211,62 @@
     if (state.lang === 'french') return m.fr;
     if (state.lang === 'moris_kreol') return m.kreol;
     return m.en;
+  }
+
+  function consentBadge(status) {
+    var key = status || 'not_recorded';
+    var labelKey = CONSENT_LABEL_KEYS[key] || 'consent_not_recorded';
+    var safeClass = key.replace(/[^a-z0-9_]/gi, '_');
+    return (
+      '<span class="zsma-consent-badge zsma-consent-' +
+      safeClass +
+      '">' +
+      t(labelKey) +
+      '</span>'
+    );
+  }
+
+  function privacyBadgeShort(level) {
+    var key = level || 'private_only';
+    return '<span class="zsma-privacy-badge zsma-privacy-' + key + '">' + key + '</span>';
+  }
+
+  function privacyRow(level) {
+    var key = level || 'private_only';
+    var labelKey = PRIVACY_LABEL_KEYS[key] || 'privacy_private_only';
+    return (
+      privacyBadgeShort(key) + '<span class="zsma-privacy-desc">' + t(labelKey) + '</span>'
+    );
+  }
+
+  function buildExportReceiptPreview(seed) {
+    var entries = seed.story_entries || [];
+    return {
+      receipt_type: 'z_sma_export_preview_readonly',
+      phase: 'Z-SMA-1A',
+      preview_only: true,
+      auto_export: false,
+      storage: false,
+      ai_calls: false,
+      generated_at_display: new Date().toISOString(),
+      seed_schema: seed.schema,
+      seed_phase: seed.phase,
+      default_privacy_level: seed.default_privacy_level || 'private_only',
+      public_status: seed.public_status,
+      sisters_count: (seed.sisters || []).length,
+      story_entries_count: entries.length,
+      export_path: 'data/z_sma_story_seed.json',
+      forbidden_runtime: seed.forbidden_runtime || [],
+      note: 'Preview only — no download, no storage, no AI, no real stories',
+    };
+  }
+
+  function updateLangSelectLabels() {
+    var sel = $('zsmaLangSelect');
+    if (!sel) return;
+    Array.prototype.forEach.call(sel.options, function (opt) {
+      if (LANG_OPTION_LABELS[opt.value]) opt.textContent = LANG_OPTION_LABELS[opt.value];
+    });
   }
 
   function fetchSeed() {
@@ -172,8 +297,11 @@
     $('zsmaExportNote').textContent = t('export_note');
     $('zsmaFooterLaw').textContent = t('footer');
     $('zsmaHint').textContent = t('hint');
-    $('zsmaLangLabel').textContent = t('lang_label');
+    $('zsmaLangLabel').textContent = t('lang_label') + ' · ' + t('display_lang');
     $('zsmaRefresh').textContent = t('refresh');
+    var strip = $('zsmaPrivateStripText');
+    if (strip) strip.textContent = t('private_strip');
+    updateLangSelectLabels();
   }
 
   function renderSeed(seed) {
@@ -186,20 +314,16 @@
       var card = document.createElement('article');
       card.className = 'zsma-sister-card';
       card.innerHTML =
+        '<div class="zsma-card-badges">' +
+        consentBadge(s.consent_status) +
+        privacyBadgeShort(s.privacy_level) +
+        '</div>' +
         '<h3>' +
         (s.display_name_placeholder || s.sister_id) +
         '</h3>' +
         '<p class="zsma-mono">' +
         s.sister_id +
         '</p>' +
-        '<p><strong>' +
-        t('consent') +
-        ':</strong> ' +
-        (s.consent_status || 'not_recorded') +
-        '</p>' +
-        '<p><strong>privacy:</strong> <span class="zsma-privacy">' +
-        (s.privacy_level || 'private_only') +
-        '</span></p>' +
         '<p class="zsma-hint">' +
         (s.emotional_boundaries_note || '') +
         '</p>';
@@ -208,17 +332,13 @@
 
     var group = seed.group_lane || {};
     $('zsmaGroupLane').innerHTML =
+      '<div class="zsma-card-badges">' +
+      consentBadge(group.consent_status) +
+      privacyBadgeShort(group.privacy_level) +
+      '</div>' +
       '<h3>' +
       (group.label || 'Group lane') +
-      '</h3>' +
-      '<p><strong>privacy:</strong> <span class="zsma-privacy">' +
-      (group.privacy_level || 'private_only') +
-      '</span></p>' +
-      '<p><strong>' +
-      t('consent') +
-      ':</strong> ' +
-      (group.consent_status || 'not_recorded') +
-      '</p>';
+      '</h3>';
 
     var modes = $('zsmaStoryModes');
     modes.textContent = '';
@@ -233,24 +353,21 @@
     var dt1 = document.createElement('dt');
     dt1.textContent = t('privacy_default');
     var dd1 = document.createElement('dd');
-    dd1.innerHTML =
-      '<span class="zsma-privacy">' + (seed.default_privacy_level || 'private_only') + '</span>';
+    dd1.innerHTML = privacyRow(seed.default_privacy_level || 'private_only');
     dl.appendChild(dt1);
     dl.appendChild(dd1);
     (seed.privacy_levels || []).forEach(function (p) {
       var dt = document.createElement('dt');
       dt.textContent = p;
       var dd = document.createElement('dd');
-      dd.textContent = p === 'private_only' ? 'Default — safest' : 'Requires human gate';
+      dd.innerHTML = privacyRow(p);
       dl.appendChild(dt);
       dl.appendChild(dd);
     });
 
     var entries = seed.story_entries || [];
     $('zsmaDraftViewer').textContent =
-      entries.length === 0
-        ? 'No stories in seed — placeholders only.'
-        : JSON.stringify(entries, null, 2);
+      entries.length === 0 ? t('draft_empty') : JSON.stringify(entries, null, 2);
 
     var drp = $('zsmaDrpList');
     drp.textContent = '';
@@ -273,6 +390,11 @@
       '<p><strong>Forbidden runtime:</strong> ' +
       (seed.forbidden_runtime || []).join(', ') +
       '</p>';
+
+    var preview = $('zsmaExportPreview');
+    if (preview) {
+      preview.textContent = JSON.stringify(buildExportReceiptPreview(seed), null, 2);
+    }
   }
 
   function showError(msg) {
