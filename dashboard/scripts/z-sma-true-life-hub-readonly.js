@@ -196,6 +196,26 @@
 
   var state = { seed: null, lang: 'english' };
 
+  function esc(value) {
+    return String(value == null ? '' : value)
+      .replace(/&/g, '&amp;')
+      .replace(/</g, '&lt;')
+      .replace(/>/g, '&gt;')
+      .replace(/"/g, '&quot;')
+      .replace(/'/g, '&#39;');
+  }
+
+  function safeToken(value, fallback) {
+    var token = String(value == null ? '' : value).replace(/[^a-z0-9_]/gi, '_');
+    return token || fallback;
+  }
+
+  function syncLangFromSelect() {
+    var sel = $('zsmaLangSelect');
+    if (!sel) return;
+    if (I18N[sel.value]) state.lang = sel.value;
+  }
+
   function $(id) {
     return document.getElementById(id);
   }
@@ -216,26 +236,29 @@
   function consentBadge(status) {
     var key = status || 'not_recorded';
     var labelKey = CONSENT_LABEL_KEYS[key] || 'consent_not_recorded';
-    var safeClass = key.replace(/[^a-z0-9_]/gi, '_');
+    var safeClass = safeToken(key, 'not_recorded');
     return (
       '<span class="zsma-consent-badge zsma-consent-' +
       safeClass +
       '">' +
-      t(labelKey) +
+      esc(t(labelKey)) +
       '</span>'
     );
   }
 
   function privacyBadgeShort(level) {
     var key = level || 'private_only';
-    return '<span class="zsma-privacy-badge zsma-privacy-' + key + '">' + key + '</span>';
+    var safeClass = safeToken(key, 'private_only');
+    return (
+      '<span class="zsma-privacy-badge zsma-privacy-' + safeClass + '">' + esc(key) + '</span>'
+    );
   }
 
   function privacyRow(level) {
     var key = level || 'private_only';
     var labelKey = PRIVACY_LABEL_KEYS[key] || 'privacy_private_only';
     return (
-      privacyBadgeShort(key) + '<span class="zsma-privacy-desc">' + t(labelKey) + '</span>'
+      privacyBadgeShort(key) + '<span class="zsma-privacy-desc">' + esc(t(labelKey)) + '</span>'
     );
   }
 
@@ -313,32 +336,40 @@
     (seed.sisters || []).forEach(function (s) {
       var card = document.createElement('article');
       card.className = 'zsma-sister-card';
-      card.innerHTML =
-        '<div class="zsma-card-badges">' +
-        consentBadge(s.consent_status) +
-        privacyBadgeShort(s.privacy_level) +
-        '</div>' +
-        '<h3>' +
-        (s.display_name_placeholder || s.sister_id) +
-        '</h3>' +
-        '<p class="zsma-mono">' +
-        s.sister_id +
-        '</p>' +
-        '<p class="zsma-hint">' +
-        (s.emotional_boundaries_note || '') +
-        '</p>';
+
+      var badges = document.createElement('div');
+      badges.className = 'zsma-card-badges';
+      badges.innerHTML = consentBadge(s.consent_status) + privacyBadgeShort(s.privacy_level);
+
+      var title = document.createElement('h3');
+      title.textContent = s.display_name_placeholder || s.sister_id || '';
+
+      var idLine = document.createElement('p');
+      idLine.className = 'zsma-mono';
+      idLine.textContent = s.sister_id || '';
+
+      var note = document.createElement('p');
+      note.className = 'zsma-hint';
+      note.textContent = s.emotional_boundaries_note || '';
+
+      card.appendChild(badges);
+      card.appendChild(title);
+      card.appendChild(idLine);
+      card.appendChild(note);
       cards.appendChild(card);
     });
 
     var group = seed.group_lane || {};
-    $('zsmaGroupLane').innerHTML =
-      '<div class="zsma-card-badges">' +
-      consentBadge(group.consent_status) +
-      privacyBadgeShort(group.privacy_level) +
-      '</div>' +
-      '<h3>' +
-      (group.label || 'Group lane') +
-      '</h3>';
+    var groupLane = $('zsmaGroupLane');
+    groupLane.textContent = '';
+    var groupBadges = document.createElement('div');
+    groupBadges.className = 'zsma-card-badges';
+    groupBadges.innerHTML =
+      consentBadge(group.consent_status) + privacyBadgeShort(group.privacy_level);
+    var groupTitle = document.createElement('h3');
+    groupTitle.textContent = group.label || 'Group lane';
+    groupLane.appendChild(groupBadges);
+    groupLane.appendChild(groupTitle);
 
     var modes = $('zsmaStoryModes');
     modes.textContent = '';
@@ -353,14 +384,14 @@
     var dt1 = document.createElement('dt');
     dt1.textContent = t('privacy_default');
     var dd1 = document.createElement('dd');
-    dd1.innerHTML = privacyRow(seed.default_privacy_level || 'private_only');
+    dd1.innerHTML = privacyRow(safeToken(seed.default_privacy_level, 'private_only'));
     dl.appendChild(dt1);
     dl.appendChild(dd1);
     (seed.privacy_levels || []).forEach(function (p) {
       var dt = document.createElement('dt');
       dt.textContent = p;
       var dd = document.createElement('dd');
-      dd.innerHTML = privacyRow(p);
+      dd.innerHTML = privacyRow(safeToken(p, 'private_only'));
       dl.appendChild(dt);
       dl.appendChild(dd);
     });
@@ -377,19 +408,22 @@
       drp.appendChild(li);
     });
 
-    $('zsmaAdminSummary').innerHTML =
-      '<p><strong>Public status:</strong> ' +
-      (seed.public_status || 'private') +
-      '</p>' +
-      '<p><strong>Sisters:</strong> ' +
-      (seed.sisters || []).length +
-      '</p>' +
-      '<p><strong>Story entries:</strong> ' +
-      entries.length +
-      ' (seed empty by design)</p>' +
-      '<p><strong>Forbidden runtime:</strong> ' +
-      (seed.forbidden_runtime || []).join(', ') +
-      '</p>';
+    var admin = $('zsmaAdminSummary');
+    admin.textContent = '';
+    var adminLines = [
+      ['Public status:', seed.public_status || 'private'],
+      ['Sisters:', String((seed.sisters || []).length)],
+      ['Story entries:', entries.length + ' (seed empty by design)'],
+      ['Forbidden runtime:', (seed.forbidden_runtime || []).join(', ')],
+    ];
+    adminLines.forEach(function (row) {
+      var p = document.createElement('p');
+      var strong = document.createElement('strong');
+      strong.textContent = row[0];
+      p.appendChild(strong);
+      p.appendChild(document.createTextNode(' ' + row[1]));
+      admin.appendChild(p);
+    });
 
     var preview = $('zsmaExportPreview');
     if (preview) {
@@ -427,8 +461,9 @@
   function init() {
     var sel = $('zsmaLangSelect');
     if (sel) {
+      syncLangFromSelect();
       sel.addEventListener('change', function () {
-        state.lang = sel.value;
+        syncLangFromSelect();
         applyStaticLabels();
         if (state.seed) renderSeed(state.seed);
       });
