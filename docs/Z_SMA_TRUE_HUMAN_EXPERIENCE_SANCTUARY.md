@@ -11,9 +11,9 @@ Z-SMA is **not** a chatbot, trauma show, therapy replacement, or exploitation pl
 
 It is a **dignity-first human experience hub** where real people may share, in their own words and language, what life taught them through suffering, survival, family pain, society, silence, and resilience.
 
-| Language             | Role                             |
+| Language | Role |
 | -------------------- | -------------------------------- |
-| **Mauritius Creole** | Primary voice language           |
+| **Mauritius Creole** | Primary voice language |
 | **English / French** | Display and future assist labels |
 
 ## Golden law
@@ -78,24 +78,24 @@ Before any story is saved, displayed, translated, summarized, or shared:
 
 ## Z-SMA-1 prototype scope
 
-| Artifact  | Path                                                |
+| Artifact | Path |
 | --------- | --------------------------------------------------- |
-| Hub page  | `dashboard/Html/z-sma-true-life-hub.html`           |
-| Script    | `dashboard/scripts/z-sma-true-life-hub-readonly.js` |
-| Styles    | `dashboard/styles/z-sma-true-life-hub.css`          |
-| Seed data | `data/z_sma_story_seed.json`                        |
+| Hub page | `dashboard/Html/z-sma-true-life-hub.html` |
+| Script | `dashboard/scripts/z-sma-true-life-hub-readonly.js` |
+| Styles | `dashboard/styles/z-sma-true-life-hub.css` |
+| Seed data | `data/z_sma_story_seed.json` |
 
 Open over **http://** (same-origin GET to seed JSON). **Refresh data** = GET only.
 
 ### Explicitly not in Z-SMA-1
 
-| Forbidden                           |
+| Forbidden |
 | ----------------------------------- |
-| Backend, database                   |
+| Backend, database |
 | Live translation or external AI API |
-| Voice recording, upload             |
-| Public sharing, payment, deploy     |
-| Real personal trauma text in repo   |
+| Voice recording, upload |
+| Public sharing, payment, deploy |
+| Real personal trauma text in repo |
 
 ## Data model seed (reference)
 
