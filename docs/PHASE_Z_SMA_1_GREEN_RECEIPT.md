@@ -7,24 +7,24 @@
 
 ## Deliverables
 
-| Artifact                                            | Status |
+| Artifact | Status |
 | --------------------------------------------------- | ------ |
-| `docs/Z_SMA_TRUE_HUMAN_EXPERIENCE_SANCTUARY.md`     | Added  |
-| `docs/PHASE_Z_SMA_1_GREEN_RECEIPT.md`               | Added  |
-| `dashboard/Html/z-sma-true-life-hub.html`           | Added  |
-| `dashboard/scripts/z-sma-true-life-hub-readonly.js` | Added  |
-| `dashboard/styles/z-sma-true-life-hub.css`          | Added  |
-| `data/z_sma_story_seed.json`                        | Added  |
+| `docs/Z_SMA_TRUE_HUMAN_EXPERIENCE_SANCTUARY.md` | Added |
+| `docs/PHASE_Z_SMA_1_GREEN_RECEIPT.md` | Added |
+| `dashboard/Html/z-sma-true-life-hub.html` | Added |
+| `dashboard/scripts/z-sma-true-life-hub-readonly.js` | Added |
+| `dashboard/styles/z-sma-true-life-hub.css` | Added |
+| `data/z_sma_story_seed.json` | Added |
 
 ## Explicitly not in Z-SMA-1
 
-| Item                        | Posture       |
+| Item | Posture |
 | --------------------------- | ------------- |
-| Backend / database          | **Forbidden** |
-| AI / translation API        | **Forbidden** |
+| Backend / database | **Forbidden** |
+| AI / translation API | **Forbidden** |
 | Voice, upload, public share | **Forbidden** |
-| Real trauma text in repo    | **Forbidden** |
-| Payment / deploy            | **Forbidden** |
+| Real trauma text in repo | **Forbidden** |
+| Payment / deploy | **Forbidden** |
 
 ## Acceptance
 
