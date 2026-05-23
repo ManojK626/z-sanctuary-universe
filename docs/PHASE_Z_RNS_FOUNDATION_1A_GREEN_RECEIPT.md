@@ -7,23 +7,23 @@
 
 ## Scope
 
-| In scope | Out of scope |
-| -------- | ------------ |
-| 2D Canvas cause → effect map | Three.js / 3D |
-| Read-only visualisation from IndexedDB | Data mutation from canvas |
-| Node click → evidence metadata highlight | AI API |
-| Zoom in / out / reset controls | Cloud sync |
-| Orphan / unlinked root event list | Voice capture |
-| Empty state when no cause links | Court filing |
+| In scope                                 | Out of scope              |
+| ---------------------------------------- | ------------------------- |
+| 2D Canvas cause → effect map             | Three.js / 3D             |
+| Read-only visualisation from IndexedDB   | Data mutation from canvas |
+| Node click → evidence metadata highlight | AI API                    |
+| Zoom in / out / reset controls           | Cloud sync                |
+| Orphan / unlinked root event list        | Voice capture             |
+| Empty state when no cause links          | Court filing              |
 
 ## Deliverables
 
-| Artifact | Change |
-| -------- | ------ |
-| `dashboard/Html/z-rns-foundation-hub.html` | Canvas map tab + panel |
-| `dashboard/scripts/z-rns-foundation-hub.js` | `renderCauseCanvasMap()` read-only renderer |
-| `dashboard/styles/z-rns-foundation-hub.css` | Canvas layout + evidence highlight |
-| `docs/PHASE_Z_RNS_FOUNDATION_1A_GREEN_RECEIPT.md` | This receipt |
+| Artifact                                          | Change                                      |
+| ------------------------------------------------- | ------------------------------------------- |
+| `dashboard/Html/z-rns-foundation-hub.html`        | Canvas map tab + panel                      |
+| `dashboard/scripts/z-rns-foundation-hub.js`       | `renderCauseCanvasMap()` read-only renderer |
+| `dashboard/styles/z-rns-foundation-hub.css`       | Canvas layout + evidence highlight          |
+| `docs/PHASE_Z_RNS_FOUNDATION_1A_GREEN_RECEIPT.md` | This receipt                                |
 
 ## Acceptance
 
@@ -44,7 +44,26 @@ npm run z:rns:foundation
 
 Open: `dashboard/Html/z-rns-foundation-hub.html` → **Canvas map** tab.
 
-## Locked law
+## Merge stack (operator)
+
+1. [ ] `cursor/zsanctuary/z-rns-arch-1` → `main`
+2. [ ] Rebase `cursor/zsanctuary/z-rns-foundation-1` on `origin/main`; `npm run z:rns:foundation`; merge → `main`
+3. [ ] Rebase `cursor/zsanctuary/z-rns-foundation-1a` on `origin/main`; retarget PR to `main`; manual pass below; merge → `main`
+
+## Manual browser green pass (operator — before final merge)
+
+Open `dashboard/Html/z-rns-foundation-hub.html` via hub static server.
+
+- [ ] Add timeline event A
+- [ ] Add timeline event B
+- [ ] Link B cause → A (Cause → Effect tab)
+- [ ] Upload evidence linked to B (Evidence vault)
+- [ ] Open **Canvas map** — chain A → B visible
+- [ ] Click node B — evidence highlight + metadata panel
+- [ ] Reload page — events, links, evidence, and map still persist
+
+When all checked: mark **Z-RNS-FOUNDATION-1A GREEN** for human sign-off.
+
 
 ```text
 Read-only visualisation — preparation and clarity, not blame games.
