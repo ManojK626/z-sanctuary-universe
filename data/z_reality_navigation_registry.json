@@ -32,14 +32,14 @@
     {
       "id": "Z-RNS-ARCH-1",
       "title": "Foundation doctrine and architecture",
-      "status": "in_progress",
+      "status": "sealed",
       "runtime": false
     },
     {
       "id": "Z-RNS-FOUNDATION-1",
       "title": "Timeline Builder + Evidence Vault prototype",
-      "status": "planned",
-      "runtime": "local_ui_charter"
+      "status": "in_progress",
+      "runtime": "local_indexeddb"
     },
     {
       "id": "Z-RNS-JUSTICE-GAMES-1",

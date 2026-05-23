@@ -1,0 +1,179 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="z-dashboard-role" content="z-rns-foundation-hub" />
+    <meta name="z-phase" content="Z-RNS-FOUNDATION-1" />
+    <title>Z-RNS — Timeline &amp; Evidence Vault (local-first)</title>
+    <link rel="stylesheet" href="../styles/z-rns-foundation-hub.css" />
+  </head>
+  <body class="zrns-page">
+    <header class="zrns-header">
+      <div class="zrns-badges">
+        <span class="zrns-badge">Z-RNS-FOUNDATION-1</span>
+        <span class="zrns-badge zrns-badge-local">local-first</span>
+        <span class="zrns-badge zrns-badge-not-advice">not legal advice</span>
+      </div>
+      <h1 class="zrns-title">Reality Navigation — Timeline &amp; Evidence Vault</h1>
+      <p class="zrns-subtitle">Structured chronology and evidence discipline on this device only.</p>
+    </header>
+
+    <div class="zrns-awareness-strip" role="status">
+      <p id="zrnsAwarenessText"></p>
+    </div>
+
+    <nav class="zrns-tabs" aria-label="Foundation sections">
+      <button type="button" class="zrns-tab zrns-tab-active" data-tab="timeline">Timeline</button>
+      <button type="button" class="zrns-tab" data-tab="vault">Evidence vault</button>
+      <button type="button" class="zrns-tab" data-tab="cause">Cause → Effect</button>
+      <button type="button" class="zrns-tab" data-tab="rights">Rights tracker</button>
+      <button type="button" class="zrns-tab" data-tab="export">Export</button>
+      <button type="button" class="zrns-tab" data-tab="mock">AI mock</button>
+    </nav>
+
+    <p id="zrnsError" class="zrns-error" role="alert" hidden></p>
+    <p id="zrnsStatus" class="zrns-status" aria-live="polite"></p>
+
+    <main class="zrns-main">
+      <section id="zrnsPanelTimeline" class="zrns-panel zrns-panel-active" aria-labelledby="zrnsTimelineH">
+        <h2 id="zrnsTimelineH">Timeline builder</h2>
+        <p class="zrns-hint">Add events in chronological order. Link causes in the Cause → Effect tab.</p>
+        <form id="zrnsTimelineForm" class="zrns-form">
+          <label>Title <input type="text" id="zrnsEventTitle" required maxlength="200" /></label>
+          <label>Date <input type="date" id="zrnsEventDate" required /></label>
+          <label
+            >Category
+            <select id="zrnsEventCategory">
+              <option value="incident">Incident</option>
+              <option value="meeting">Meeting</option>
+              <option value="call">Call</option>
+              <option value="filing">Filing / correspondence</option>
+              <option value="medical">Medical</option>
+              <option value="deadline">Deadline</option>
+              <option value="other">Other</option>
+            </select>
+          </label>
+          <label>Tags <input type="text" id="zrnsEventTags" placeholder="comma-separated" /></label>
+          <label>Notes <textarea id="zrnsEventNotes" rows="3" maxlength="4000"></textarea></label>
+          <button type="submit">Add timeline event</button>
+        </form>
+        <ol id="zrnsTimelineList" class="zrns-timeline-list"></ol>
+      </section>
+
+      <section id="zrnsPanelVault" class="zrns-panel" aria-labelledby="zrnsVaultH" hidden>
+        <h2 id="zrnsVaultH">Evidence vault</h2>
+        <p class="zrns-hint">Files stay in this browser profile (IndexedDB). No cloud upload.</p>
+        <form id="zrnsEvidenceForm" class="zrns-form">
+          <label>File <input type="file" id="zrnsEvidenceFile" required /></label>
+          <label>Captured date <input type="date" id="zrnsEvidenceDate" /></label>
+          <label
+            >Category
+            <select id="zrnsEvidenceCategory">
+              <option value="document">Document</option>
+              <option value="photo">Photo</option>
+              <option value="video">Video</option>
+              <option value="audio">Audio</option>
+              <option value="receipt">Receipt / invoice</option>
+              <option value="correspondence">Correspondence</option>
+              <option value="medical">Medical</option>
+              <option value="cctv">CCTV / footage ref</option>
+              <option value="other">Other</option>
+            </select>
+          </label>
+          <label>Tags <input type="text" id="zrnsEvidenceTags" placeholder="comma-separated" /></label>
+          <label
+            >Link to timeline event
+            <select id="zrnsEvidenceLinkEvent">
+              <option value="">— none —</option>
+            </select>
+          </label>
+          <button type="submit">Add to vault</button>
+        </form>
+        <div class="zrns-voice-blocked">
+          <button type="button" disabled title="Charter required">Voice notes (blocked)</button>
+          <span class="zrns-hint">Emotional recall capture requires a future consent charter.</span>
+        </div>
+        <div id="zrnsEvidenceGrid" class="zrns-evidence-grid"></div>
+      </section>
+
+      <section id="zrnsPanelCause" class="zrns-panel" aria-labelledby="zrnsCauseH" hidden>
+        <h2 id="zrnsCauseH">Cause → Effect → Consequence</h2>
+        <p class="zrns-hint">
+          Link events to show root cause chains — preparation and clarity, not blame games.
+        </p>
+        <form id="zrnsCauseForm" class="zrns-form zrns-form-inline">
+          <label
+            >Effect event
+            <select id="zrnsCauseEffect" required></select>
+          </label>
+          <label
+            >Caused by (root / prior event)
+            <select id="zrnsCauseRoot" required></select>
+          </label>
+          <button type="submit">Link cause → effect</button>
+        </form>
+        <ul id="zrnsCauseList" class="zrns-cause-list"></ul>
+        <p class="zrns-future-note">Future: Root Cause Forest visualisation (Canvas → Three.js charter).</p>
+      </section>
+
+      <section id="zrnsPanelRights" class="zrns-panel" aria-labelledby="zrnsRightsH" hidden>
+        <h2 id="zrnsRightsH">Rights tracker (awareness only)</h2>
+        <p class="zrns-hint">GDPR / CCTV / FOI deadline reminders — not automated requests.</p>
+        <form id="zrnsRightsForm" class="zrns-form">
+          <label
+            >Type
+            <select id="zrnsRightsType">
+              <option value="gdpr">GDPR / data access</option>
+              <option value="cctv">CCTV / footage</option>
+              <option value="foi">FOI / transparency</option>
+              <option value="court">Court deadline</option>
+              <option value="other">Other</option>
+            </select>
+          </label>
+          <label>Title <input type="text" id="zrnsRightsTitle" required maxlength="200" /></label>
+          <label>Deadline <input type="date" id="zrnsRightsDeadline" /></label>
+          <label
+            >Status
+            <select id="zrnsRightsStatus">
+              <option value="draft">Draft</option>
+              <option value="sent">Sent</option>
+              <option value="awaiting">Awaiting response</option>
+              <option value="closed">Closed</option>
+            </select>
+          </label>
+          <label>Notes <textarea id="zrnsRightsNotes" rows="2" maxlength="2000"></textarea></label>
+          <button type="submit">Add tracker item</button>
+        </form>
+        <ul id="zrnsRightsList" class="zrns-rights-list"></ul>
+      </section>
+
+      <section id="zrnsPanelExport" class="zrns-panel" aria-labelledby="zrnsExportH" hidden>
+        <h2 id="zrnsExportH">Export pack (manifest receipt)</h2>
+        <p class="zrns-hint">Metadata-only JSON manifest for human review. No blob export in this phase.</p>
+        <button type="button" id="zrnsRefreshExport">Refresh manifest preview</button>
+        <button type="button" id="zrnsDownloadManifest">Download manifest JSON</button>
+        <pre id="zrnsExportPreview" class="zrns-export-preview" aria-live="polite"></pre>
+      </section>
+
+      <section id="zrnsPanelMock" class="zrns-panel" aria-labelledby="zrnsMockH" hidden>
+        <h2 id="zrnsMockH">AI summary (local mock)</h2>
+        <p class="zrns-hint">Template summary from local counts only — no API, no legal advice.</p>
+        <button type="button" id="zrnsGenerateMock">Generate local mock summary</button>
+        <pre id="zrnsMockOutput" class="zrns-mock-output" aria-live="polite"></pre>
+      </section>
+    </main>
+
+    <footer class="zrns-footer">
+      <p>
+        <a href="../../docs/Z_RNS_FOUNDATION_HUB.md">Foundation doctrine</a>
+        ·
+        <a href="../../docs/Z_REALITY_NAVIGATION_SYSTEM.md">RNS master</a>
+        ·
+        <a href="../../docs/PHASE_Z_RNS_FOUNDATION_1_GREEN_RECEIPT.md">Green receipt</a>
+      </p>
+    </footer>
+
+    <script src="../scripts/z-rns-foundation-hub.js"></script>
+  </body>
+</html>

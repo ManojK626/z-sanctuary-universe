@@ -1,0 +1,73 @@
+{
+  "schema": "z.rns.foundation.schema.v1",
+  "phase": "Z-RNS-FOUNDATION-1",
+  "indexeddb": {
+    "name": "z_rns_foundation_v1",
+    "version": 1,
+    "stores": {
+      "timeline_events": {
+        "keyPath": "id",
+        "indexes": ["occurred_at", "category"],
+        "fields": {
+          "id": "uuid string",
+          "title": "string — required",
+          "notes": "string — operator text",
+          "occurred_at": "ISO date string",
+          "category": "incident | meeting | call | filing | medical | deadline | other",
+          "tags": "string[]",
+          "cause_event_id": "uuid | null — cause→effect link",
+          "created_at": "ISO datetime",
+          "updated_at": "ISO datetime"
+        }
+      },
+      "evidence_items": {
+        "keyPath": "id",
+        "indexes": ["category", "captured_at", "added_at"],
+        "fields": {
+          "id": "uuid string",
+          "filename": "string",
+          "mime_type": "string",
+          "size_bytes": "number",
+          "category": "document | photo | video | audio | receipt | correspondence | medical | cctv | other",
+          "tags": "string[]",
+          "captured_at": "ISO date string",
+          "added_at": "ISO datetime",
+          "timeline_event_ids": "uuid[]",
+          "blob": "Blob — stored inline in IndexedDB"
+        }
+      },
+      "rights_requests": {
+        "keyPath": "id",
+        "indexes": ["request_type", "deadline_at", "status"],
+        "fields": {
+          "id": "uuid string",
+          "request_type": "gdpr | cctv | foi | court | other",
+          "title": "string",
+          "deadline_at": "ISO date string | null",
+          "status": "draft | sent | awaiting | closed",
+          "notes": "string",
+          "created_at": "ISO datetime"
+        }
+      }
+    }
+  },
+  "export_manifest": {
+    "receipt_type": "z_rns_export_manifest_v1",
+    "includes_blobs": false,
+    "note": "Metadata-only manifest for human review — not legal advice"
+  },
+  "blocked_in_phase": [
+    "cloud_sync",
+    "ai_api",
+    "voice_capture_runtime",
+    "court_filing",
+    "email_send",
+    "pdf_binary_bundle",
+    "deployment"
+  ],
+  "future_features": {
+    "cause_effect_consequence_map": "sketch — event cause_event_id links",
+    "evidence_constellation_3d": "Z-RNS-VISUAL-1",
+    "root_cause_forest": "Z-RNS-VISUAL-1"
+  }
+}
