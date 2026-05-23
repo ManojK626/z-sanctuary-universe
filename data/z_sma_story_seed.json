@@ -1,0 +1,109 @@
+{
+  "schema": "z_sma_story_seed_v1",
+  "phase": "Z-SMA-1",
+  "updated_at": "2026-05-22T00:00:00Z",
+  "title": "Z-SMA — True Human Experience Sanctuary (seed data)",
+  "scope_note": "TURTLE MODE SEED ONLY. Placeholder lanes — no real personal trauma text. Private / family-reviewed posture. Default privacy: private_only.",
+  "golden_law": "The human heartbeat is more important than the AI.",
+  "primary_language": "moris_kreol",
+  "supported_languages": ["moris_kreol", "english", "french"],
+  "public_status": "private_family_reviewed_only",
+  "story_modes": [
+    "individual_story",
+    "sisters_together",
+    "life_lessons",
+    "behind_the_smile",
+    "what_society_never_saw",
+    "how_we_coped",
+    "what_life_taught_us",
+    "message_to_young_people",
+    "healing_through_memory",
+    "family_roots"
+  ],
+  "privacy_levels": [
+    "private_only",
+    "family_only",
+    "review_candidate",
+    "public_candidate",
+    "approved_public"
+  ],
+  "default_privacy_level": "private_only",
+  "sisters": [
+    {
+      "sister_id": "sma_sister_01",
+      "display_name_placeholder": "Sister lane 1 (name by consent)",
+      "consent_status": "not_recorded",
+      "privacy_level": "private_only",
+      "topics_allowed": [],
+      "topics_forbidden": [],
+      "emotional_boundaries_note": "Operator sets per person — not in repo seed.",
+      "story_lane_status": "placeholder"
+    },
+    {
+      "sister_id": "sma_sister_02",
+      "display_name_placeholder": "Sister lane 2 (name by consent)",
+      "consent_status": "not_recorded",
+      "privacy_level": "private_only",
+      "topics_allowed": [],
+      "topics_forbidden": [],
+      "emotional_boundaries_note": "Operator sets per person — not in repo seed.",
+      "story_lane_status": "placeholder"
+    },
+    {
+      "sister_id": "sma_sister_03",
+      "display_name_placeholder": "Sister lane 3 (name by consent)",
+      "consent_status": "not_recorded",
+      "privacy_level": "private_only",
+      "topics_allowed": [],
+      "topics_forbidden": [],
+      "emotional_boundaries_note": "Operator sets per person — not in repo seed.",
+      "story_lane_status": "placeholder"
+    },
+    {
+      "sister_id": "sma_sister_04",
+      "display_name_placeholder": "Sister lane 4 (name by consent)",
+      "consent_status": "not_recorded",
+      "privacy_level": "private_only",
+      "topics_allowed": [],
+      "topics_forbidden": [],
+      "emotional_boundaries_note": "Operator sets per person — not in repo seed.",
+      "story_lane_status": "placeholder"
+    }
+  ],
+  "group_lane": {
+    "lane_id": "sma_group_mother_branch",
+    "label": "Sisters together — group story lane",
+    "consent_status": "not_recorded",
+    "privacy_level": "private_only",
+    "story_lane_status": "placeholder"
+  },
+  "story_entries": [],
+  "drp_guardian_rules": [
+    "Consent must be clear",
+    "Person must be able to say no",
+    "Person must be able to remove content later",
+    "No shame language",
+    "No blame language",
+    "No forced trauma detail",
+    "No public release without human approval",
+    "No AI pretending to be the person",
+    "No diagnosis",
+    "No legal or medical claims",
+    "No monetization until separate governance",
+    "No exposing family secrets without consent",
+    "No child-sensitive content without extra gate",
+    "No sharing beyond approved audience"
+  ],
+  "forbidden_runtime": [
+    "backend",
+    "database",
+    "live_translation_api",
+    "external_ai_api",
+    "voice_recording",
+    "upload",
+    "public_sharing",
+    "payment",
+    "deploy"
+  ],
+  "related_docs": ["docs/Z_SMA_TRUE_HUMAN_EXPERIENCE_SANCTUARY.md"]
+}

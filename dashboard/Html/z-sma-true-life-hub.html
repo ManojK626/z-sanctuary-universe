@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="z-dashboard-role" content="z-sma-true-life-hub-readonly" />
+    <meta name="z-phase" content="Z-SMA-1" />
+    <title>Z-SMA — True Human Experience Sanctuary (Turtle seed)</title>
+    <link rel="stylesheet" href="../styles/z-sma-true-life-hub.css" />
+  </head>
+  <body class="zsma-page" data-lang="english">
+    <header class="zsma-header">
+      <div class="zsma-badges">
+        <span class="zsma-badge">Z-SMA-1</span>
+        <span class="zsma-badge">Turtle seed</span>
+        <span class="zsma-badge">private only</span>
+      </div>
+      <h1 id="zsmaTitle" class="zsma-title">Z-SMA — True Human Experience Sanctuary</h1>
+      <p id="zsmaSubtitle" class="zsma-subtitle">Loading…</p>
+      <p class="zsma-golden" id="zsmaGoldenLaw">
+        The human heartbeat is more important than the AI.
+      </p>
+    </header>
+
+    <nav class="zsma-toolbar" aria-label="Language and refresh">
+      <label for="zsmaLangSelect" id="zsmaLangLabel">Language</label>
+      <select id="zsmaLangSelect" aria-labelledby="zsmaLangLabel">
+        <option value="moris_kreol">Moris Kreol</option>
+        <option value="english" selected>English</option>
+        <option value="french">Français</option>
+      </select>
+      <button type="button" id="zsmaRefresh" title="Reload seed JSON (GET only)">
+        Refresh data
+      </button>
+      <span class="zsma-hint" id="zsmaHint">GET only · no save · no upload · no API</span>
+    </nav>
+
+    <p id="zsmaError" class="zsma-error" role="alert" hidden></p>
+
+    <main class="zsma-main">
+      <section class="zsma-card zsma-purpose" aria-labelledby="zsmaPurposeH">
+        <h2 id="zsmaPurposeH">Purpose</h2>
+        <p id="zsmaPurposeText"></p>
+      </section>
+
+      <section class="zsma-card" aria-labelledby="zsmaSistersH">
+        <h2 id="zsmaSistersH">Four sister story lanes</h2>
+        <div id="zsmaSisterCards" class="zsma-grid"></div>
+      </section>
+
+      <section class="zsma-card" aria-labelledby="zsmaGroupH">
+        <h2 id="zsmaGroupH">Group story lane</h2>
+        <div id="zsmaGroupLane" class="zsma-group-lane"></div>
+      </section>
+
+      <section class="zsma-card" aria-labelledby="zsmaModesH">
+        <h2 id="zsmaModesH">Story modes</h2>
+        <ul id="zsmaStoryModes" class="zsma-list"></ul>
+      </section>
+
+      <section class="zsma-card" aria-labelledby="zsmaConsentH">
+        <h2 id="zsmaConsentH">Consent &amp; privacy</h2>
+        <p id="zsmaConsentIntro"></p>
+        <dl id="zsmaPrivacyDl" class="zsma-dl"></dl>
+      </section>
+
+      <section class="zsma-card" aria-labelledby="zsmaDraftH">
+        <h2 id="zsmaDraftH">Story draft viewer</h2>
+        <p id="zsmaDraftNote" class="zsma-hint"></p>
+        <pre id="zsmaDraftViewer" class="zsma-draft-viewer" aria-live="polite">
+No stories in seed — placeholders only.</pre
+        >
+      </section>
+
+      <section class="zsma-card zsma-drp" aria-labelledby="zsmaDrpH">
+        <h2 id="zsmaDrpH">14 DRP safety checklist</h2>
+        <ol id="zsmaDrpList" class="zsma-drp-list"></ol>
+      </section>
+
+      <section class="zsma-card" aria-labelledby="zsmaAdminH">
+        <h2 id="zsmaAdminH">Admin review dashboard (read-only seed)</h2>
+        <p id="zsmaAdminNote" class="zsma-hint"></p>
+        <div id="zsmaAdminSummary" class="zsma-admin-summary"></div>
+      </section>
+
+      <section class="zsma-card" aria-labelledby="zsmaExportH">
+        <h2 id="zsmaExportH">Export receipt panel</h2>
+        <p id="zsmaExportNote" class="zsma-hint"></p>
+        <p class="zsma-mono" id="zsmaExportPath">data/z_sma_story_seed.json</p>
+      </section>
+    </main>
+
+    <footer class="zsma-footer">
+      <p id="zsmaFooterLaw"></p>
+      <p>
+        <a href="../../docs/Z_SMA_TRUE_HUMAN_EXPERIENCE_SANCTUARY.md">Doctrine</a>
+        ·
+        <a href="../../docs/PHASE_Z_SMA_1_GREEN_RECEIPT.md">Green receipt</a>
+      </p>
+    </footer>
+
+    <script defer src="../scripts/z-sma-true-life-hub-readonly.js"></script>
+  </body>
+</html>

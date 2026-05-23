@@ -1,0 +1,226 @@
+/* Z-SMA-1 — dignity-first sanctuary hub (Turtle seed, read-only) */
+:root {
+  --zsma-bg: #1a1410;
+  --zsma-surface: #2a221c;
+  --zsma-border: rgba(212, 165, 116, 0.35);
+  --zsma-text: #f5ebe0;
+  --zsma-muted: #b8a090;
+  --zsma-accent: #e8a87c;
+  --zsma-rose: #c38d9e;
+  --zsma-gold: #d4a574;
+  --zsma-private: #6b9080;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  min-height: 100%;
+  background: radial-gradient(900px 500px at 10% 0%, #3d2a24 0%, var(--zsma-bg) 55%, #0f0c0a 100%);
+  color: var(--zsma-text);
+  font-family: 'Segoe UI', Georgia, serif;
+  font-size: 15px;
+  line-height: 1.55;
+}
+
+.zsma-header {
+  padding: 1rem 1.25rem;
+  border-bottom: 1px solid var(--zsma-border);
+  background: linear-gradient(180deg, rgba(60, 40, 35, 0.5), transparent);
+}
+
+.zsma-badges {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  margin-bottom: 0.5rem;
+}
+
+.zsma-badge {
+  font-size: 0.68rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  padding: 0.2rem 0.5rem;
+  border-radius: 6px;
+  border: 1px solid var(--zsma-border);
+  color: var(--zsma-gold);
+}
+
+.zsma-title {
+  margin: 0 0 0.35rem;
+  font-size: 1.35rem;
+  font-weight: 650;
+  color: var(--zsma-accent);
+}
+
+.zsma-subtitle {
+  margin: 0;
+  color: var(--zsma-muted);
+  font-size: 0.92rem;
+}
+
+.zsma-golden {
+  margin: 0.65rem 0 0;
+  font-style: italic;
+  color: var(--zsma-rose);
+  font-size: 0.95rem;
+}
+
+.zsma-toolbar {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.65rem;
+  padding: 0.6rem 1.25rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.zsma-toolbar select,
+.zsma-toolbar button {
+  padding: 0.35rem 0.6rem;
+  border-radius: 8px;
+  border: 1px solid var(--zsma-border);
+  background: rgba(255, 255, 255, 0.06);
+  color: var(--zsma-text);
+  font-size: 0.88rem;
+}
+
+.zsma-toolbar button {
+  cursor: pointer;
+}
+
+.zsma-toolbar button:hover {
+  background: rgba(232, 168, 124, 0.15);
+}
+
+.zsma-hint {
+  color: var(--zsma-muted);
+  font-size: 0.82rem;
+}
+
+.zsma-error {
+  margin: 0.75rem 1.25rem;
+  padding: 0.5rem 0.65rem;
+  border-radius: 8px;
+  background: rgba(180, 60, 60, 0.2);
+  color: #ffb4b4;
+}
+
+.zsma-main {
+  padding: 0.85rem 1.25rem 1.5rem;
+  max-width: 960px;
+}
+
+.zsma-card {
+  background: var(--zsma-surface);
+  border: 1px solid var(--zsma-border);
+  border-radius: 12px;
+  padding: 0.85rem 1rem;
+  margin-bottom: 0.75rem;
+}
+
+.zsma-card h2 {
+  margin: 0 0 0.5rem;
+  font-size: 0.95rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--zsma-gold);
+}
+
+.zsma-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 0.65rem;
+}
+
+.zsma-sister-card {
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 10px;
+  padding: 0.65rem;
+  background: rgba(0, 0, 0, 0.15);
+}
+
+.zsma-sister-card h3 {
+  margin: 0 0 0.35rem;
+  font-size: 0.95rem;
+  color: var(--zsma-accent);
+}
+
+.zsma-group-lane h3 {
+  margin: 0 0 0.35rem;
+  color: var(--zsma-accent);
+}
+
+.zsma-list {
+  margin: 0;
+  padding-left: 1.2rem;
+  color: var(--zsma-muted);
+}
+
+.zsma-dl {
+  margin: 0.5rem 0 0;
+}
+
+.zsma-dl dt {
+  font-weight: 650;
+  margin-top: 0.35rem;
+}
+
+.zsma-dl dd {
+  margin: 0.15rem 0 0 0;
+  color: var(--zsma-muted);
+}
+
+.zsma-privacy {
+  color: var(--zsma-private);
+  font-weight: 650;
+}
+
+.zsma-draft-viewer {
+  margin: 0.5rem 0 0;
+  padding: 0.65rem;
+  border-radius: 8px;
+  background: rgba(0, 0, 0, 0.25);
+  font-size: 0.78rem;
+  overflow-x: auto;
+  white-space: pre-wrap;
+}
+
+.zsma-drp-list {
+  margin: 0.35rem 0 0;
+  padding-left: 1.25rem;
+}
+
+.zsma-drp-list li {
+  margin: 0.35rem 0;
+}
+
+.zsma-admin-summary p {
+  margin: 0.3rem 0;
+}
+
+.zsma-mono {
+  font-family: ui-monospace, Consolas, monospace;
+  font-size: 0.8rem;
+}
+
+.zsma-footer {
+  padding: 1rem 1.25rem 1.5rem;
+  border-top: 1px solid var(--zsma-border);
+  font-size: 0.85rem;
+  color: var(--zsma-muted);
+}
+
+.zsma-footer a {
+  color: var(--zsma-accent);
+}
+
+.zsma-purpose p {
+  margin: 0;
+}
