@@ -37,12 +37,13 @@ No cloud dependency is required for daily hub posture.
 
 ### Phase 1 — Foundation Core (“The Skeleton”)
 
-**ID:** Z-RNS-FOUNDATION-1 (planned)
+**ID:** Z-RNS-FOUNDATION-1 (delivered) · **Z-RNS-FOUNDATION-1A** (Canvas map — delivered)
 
 | Module                     | Purpose                          | Runtime (Phase 1)                       |
 | -------------------------- | -------------------------------- | --------------------------------------- |
-| Timeline Builder           | Event chronology                 | Read-only mock → local CRUD charter     |
-| Evidence Vault             | Photos / videos / docs metadata  | Local vault charter — no upload service |
+| Timeline Builder           | Event chronology                 | IndexedDB local CRUD                    |
+| Evidence Vault             | Photos / videos / docs metadata  | IndexedDB blobs — device local          |
+| Cause → Effect Canvas map  | Root-cause chain visualisation   | **1A** — read-only 2D Canvas            |
 | Receipt & Invoice Analyzer | Damage / invoice checklist logic | Metadata + real                         |
 | Health Timeline            | Medical event tracking (private) | Sketch                                  |
 | GDPR / CCTV Tracker        | Request lifecycle awareness      | Process map only                        |
@@ -193,10 +194,11 @@ flowchart TB
 ## Cursor immediate build order
 
 1. **Z-RNS-ARCH-1** — README, doctrine, architecture, registry (**current**)
-2. **Z-RNS-FOUNDATION-1** — Timeline + Evidence Vault local UI prototype (Vite + IndexedDB charter)
-3. **Z-RNS-GUARDIAN-AI-1** — summary engine sketch with offline-first boundary doc
-4. **Z-RNS-JUSTICE-GAMES-1** — simulation courtroom (synthetic data only)
-5. **Z-RNS-VISUAL-1** — 3D Justice Hub (read-only visual map)
+2. **Z-RNS-FOUNDATION-1** — Timeline + Evidence Vault local UI prototype (IndexedDB) — **delivered**
+3. **Z-RNS-FOUNDATION-1A** — Cause → Effect Canvas map (read-only 2D) — **delivered**
+4. **Z-RNS-GUARDIAN-AI-1** — summary engine sketch with offline-first boundary doc
+5. **Z-RNS-JUSTICE-GAMES-1** — simulation courtroom (synthetic data only)
+6. **Z-RNS-VISUAL-1** — 3D Justice Hub (Root Cause Forest — Three.js charter)
 
 ---
 

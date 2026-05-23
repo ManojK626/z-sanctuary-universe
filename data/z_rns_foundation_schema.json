@@ -66,8 +66,8 @@
     "deployment"
   ],
   "future_features": {
-    "cause_effect_consequence_map": "sketch — event cause_event_id links",
+    "cause_effect_consequence_map": "Z-RNS-FOUNDATION-1A — 2D Canvas read-only map",
     "evidence_constellation_3d": "Z-RNS-VISUAL-1",
-    "root_cause_forest": "Z-RNS-VISUAL-1"
+    "root_cause_forest": "Z-RNS-VISUAL-1 — Three.js charter"
   }
 }

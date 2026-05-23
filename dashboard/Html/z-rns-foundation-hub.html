@@ -4,19 +4,21 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="z-dashboard-role" content="z-rns-foundation-hub" />
-    <meta name="z-phase" content="Z-RNS-FOUNDATION-1" />
+    <meta name="z-phase" content="Z-RNS-FOUNDATION-1A" />
     <title>Z-RNS — Timeline &amp; Evidence Vault (local-first)</title>
     <link rel="stylesheet" href="../styles/z-rns-foundation-hub.css" />
   </head>
   <body class="zrns-page">
     <header class="zrns-header">
       <div class="zrns-badges">
-        <span class="zrns-badge">Z-RNS-FOUNDATION-1</span>
+        <span class="zrns-badge">Z-RNS-FOUNDATION-1A</span>
         <span class="zrns-badge zrns-badge-local">local-first</span>
         <span class="zrns-badge zrns-badge-not-advice">not legal advice</span>
       </div>
       <h1 class="zrns-title">Reality Navigation — Timeline &amp; Evidence Vault</h1>
-      <p class="zrns-subtitle">Structured chronology and evidence discipline on this device only.</p>
+      <p class="zrns-subtitle">
+        Structured chronology and evidence discipline on this device only.
+      </p>
     </header>
 
     <div class="zrns-awareness-strip" role="status">
@@ -27,6 +29,7 @@
       <button type="button" class="zrns-tab zrns-tab-active" data-tab="timeline">Timeline</button>
       <button type="button" class="zrns-tab" data-tab="vault">Evidence vault</button>
       <button type="button" class="zrns-tab" data-tab="cause">Cause → Effect</button>
+      <button type="button" class="zrns-tab" data-tab="canvas">Canvas map</button>
       <button type="button" class="zrns-tab" data-tab="rights">Rights tracker</button>
       <button type="button" class="zrns-tab" data-tab="export">Export</button>
       <button type="button" class="zrns-tab" data-tab="mock">AI mock</button>
@@ -36,9 +39,15 @@
     <p id="zrnsStatus" class="zrns-status" aria-live="polite"></p>
 
     <main class="zrns-main">
-      <section id="zrnsPanelTimeline" class="zrns-panel zrns-panel-active" aria-labelledby="zrnsTimelineH">
+      <section
+        id="zrnsPanelTimeline"
+        class="zrns-panel zrns-panel-active"
+        aria-labelledby="zrnsTimelineH"
+      >
         <h2 id="zrnsTimelineH">Timeline builder</h2>
-        <p class="zrns-hint">Add events in chronological order. Link causes in the Cause → Effect tab.</p>
+        <p class="zrns-hint">
+          Add events in chronological order. Link causes in the Cause → Effect tab.
+        </p>
         <form id="zrnsTimelineForm" class="zrns-form">
           <label>Title <input type="text" id="zrnsEventTitle" required maxlength="200" /></label>
           <label>Date <input type="date" id="zrnsEventDate" required /></label>
@@ -81,7 +90,9 @@
               <option value="other">Other</option>
             </select>
           </label>
-          <label>Tags <input type="text" id="zrnsEvidenceTags" placeholder="comma-separated" /></label>
+          <label
+            >Tags <input type="text" id="zrnsEvidenceTags" placeholder="comma-separated"
+          /></label>
           <label
             >Link to timeline event
             <select id="zrnsEvidenceLinkEvent">
@@ -114,7 +125,38 @@
           <button type="submit">Link cause → effect</button>
         </form>
         <ul id="zrnsCauseList" class="zrns-cause-list"></ul>
-        <p class="zrns-future-note">Future: Root Cause Forest visualisation (Canvas → Three.js charter).</p>
+        <p class="zrns-future-note">
+          Visual map: open the <strong>Canvas map</strong> tab (read-only 2D Canvas). Three.js charter
+          remains future.
+        </p>
+      </section>
+
+      <section id="zrnsPanelCanvas" class="zrns-panel" aria-labelledby="zrnsCanvasH" hidden>
+        <h2 id="zrnsCanvasH">Cause → Effect canvas map</h2>
+        <p class="zrns-hint">
+          Read-only local Canvas visualisation — not legal advice. Click a node to highlight linked
+          evidence metadata.
+        </p>
+        <div class="zrns-canvas-controls">
+          <button type="button" id="zrnsCanvasZoomIn">Zoom in</button>
+          <button type="button" id="zrnsCanvasZoomOut">Zoom out</button>
+          <button type="button" id="zrnsCanvasReset">Reset view</button>
+        </div>
+        <div class="zrns-canvas-wrap">
+          <canvas
+            id="zrnsCauseCanvas"
+            class="zrns-cause-canvas"
+            width="800"
+            height="420"
+            role="img"
+            aria-label="Cause to effect event map"
+          ></canvas>
+          <p id="zrnsCanvasEmpty" class="zrns-canvas-empty" hidden></p>
+        </div>
+        <div id="zrnsCanvasOrphans" class="zrns-canvas-orphans"></div>
+        <div id="zrnsCanvasEvidenceHighlight" class="zrns-canvas-evidence-hl zrns-hint">
+          Click a node to see linked evidence metadata.
+        </div>
       </section>
 
       <section id="zrnsPanelRights" class="zrns-panel" aria-labelledby="zrnsRightsH" hidden>
@@ -150,7 +192,9 @@
 
       <section id="zrnsPanelExport" class="zrns-panel" aria-labelledby="zrnsExportH" hidden>
         <h2 id="zrnsExportH">Export pack (manifest receipt)</h2>
-        <p class="zrns-hint">Metadata-only JSON manifest for human review. No blob export in this phase.</p>
+        <p class="zrns-hint">
+          Metadata-only JSON manifest for human review. No blob export in this phase.
+        </p>
         <button type="button" id="zrnsRefreshExport">Refresh manifest preview</button>
         <button type="button" id="zrnsDownloadManifest">Download manifest JSON</button>
         <pre id="zrnsExportPreview" class="zrns-export-preview" aria-live="polite"></pre>
@@ -170,7 +214,9 @@
         ·
         <a href="../../docs/Z_REALITY_NAVIGATION_SYSTEM.md">RNS master</a>
         ·
-        <a href="../../docs/PHASE_Z_RNS_FOUNDATION_1_GREEN_RECEIPT.md">Green receipt</a>
+        <a href="../../docs/PHASE_Z_RNS_FOUNDATION_1_GREEN_RECEIPT.md">Foundation receipt</a>
+        ·
+        <a href="../../docs/PHASE_Z_RNS_FOUNDATION_1A_GREEN_RECEIPT.md">Canvas receipt (1A)</a>
       </p>
     </footer>
 

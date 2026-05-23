@@ -387,3 +387,87 @@ body.zrns-page {
 .zrns-footer a {
   color: var(--zrns-blue);
 }
+
+/* Z-RNS-FOUNDATION-1A — Cause → Effect canvas map (read-only) */
+.zrns-canvas-controls {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  margin-bottom: 0.65rem;
+}
+
+.zrns-canvas-wrap {
+  position: relative;
+  border: 1px solid var(--zrns-border);
+  border-radius: 10px;
+  background: rgba(0, 0, 0, 0.35);
+  overflow: auto;
+  max-width: 100%;
+}
+
+.zrns-cause-canvas {
+  display: block;
+  cursor: pointer;
+  min-height: 320px;
+}
+
+.zrns-canvas-empty {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  padding: 1rem;
+  text-align: center;
+  font-size: 0.88rem;
+  color: var(--zrns-muted);
+  pointer-events: none;
+  background: rgba(15, 20, 25, 0.72);
+}
+
+.zrns-canvas-orphans {
+  margin-top: 0.85rem;
+  padding: 0.65rem;
+  border-radius: 8px;
+  border: 1px dashed rgba(155, 142, 196, 0.45);
+  background: rgba(155, 142, 196, 0.08);
+}
+
+.zrns-canvas-orphans h3 {
+  margin: 0 0 0.45rem;
+  font-size: 0.85rem;
+  color: var(--zrns-purple);
+}
+
+.zrns-canvas-orphans ul {
+  margin: 0;
+  padding-left: 1.1rem;
+  font-size: 0.82rem;
+  color: var(--zrns-muted);
+}
+
+.zrns-canvas-evidence-hl {
+  margin-top: 0.85rem;
+  padding: 0.75rem;
+  border-radius: 8px;
+  border: 1px solid var(--zrns-border);
+  background: var(--zrns-surface);
+}
+
+.zrns-canvas-evidence-hl h3 {
+  margin: 0 0 0.45rem;
+  font-size: 0.9rem;
+  color: var(--zrns-green);
+}
+
+.zrns-canvas-evidence-hl ul {
+  margin: 0 0 0.5rem;
+  padding-left: 1.1rem;
+  font-size: 0.82rem;
+}
+
+.zrns-evidence-card.zrns-evidence-highlight {
+  border-color: var(--zrns-green);
+  box-shadow: 0 0 0 2px rgba(107, 144, 128, 0.45);
+}

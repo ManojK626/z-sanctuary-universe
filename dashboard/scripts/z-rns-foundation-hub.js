@@ -1,5 +1,5 @@
 /**
- * Z-RNS-FOUNDATION-1 — Timeline & Evidence Vault (local-first IndexedDB).
+ * Z-RNS-FOUNDATION-1 / Z-RNS-FOUNDATION-1A — Timeline & Evidence Vault (local-first IndexedDB).
  * No cloud sync, no AI API, no legal advice. Device-local only.
  */
 (function () {
@@ -11,7 +11,19 @@
     'Awareness · organisation · preparation · education · emotional regulation · documentation. ' +
     'Not vigilante energy. Not anti-law rhetoric. Not “beat the system.”';
 
-  var state = { db: null, events: [], evidence: [], rights: [], objectUrls: [] };
+  var state = {
+    db: null,
+    events: [],
+    evidence: [],
+    rights: [],
+    objectUrls: [],
+    canvasSelectedEventId: null,
+  };
+
+  var canvasState = { scale: 1, offsetX: 40, offsetY: 40, nodes: [] };
+  var NODE_R = 28;
+  var COL_W = 170;
+  var ROW_H = 76;
 
   function $(id) {
     return document.getElementById(id);
@@ -150,11 +162,9 @@
   }
 
   function fillEventSelects() {
-    var selects = [
-      $('zrnsEvidenceLinkEvent'),
-      $('zrnsCauseEffect'),
-      $('zrnsCauseRoot'),
-    ].filter(Boolean);
+    var selects = [$('zrnsEvidenceLinkEvent'), $('zrnsCauseEffect'), $('zrnsCauseRoot')].filter(
+      Boolean
+    );
 
     selects.forEach(function (sel) {
       var current = sel.value;
@@ -265,6 +275,13 @@
     state.evidence.forEach(function (item) {
       var card = document.createElement('article');
       card.className = 'zrns-evidence-card';
+      var linkedIds = item.timeline_event_ids || [];
+      if (
+        state.canvasSelectedEventId &&
+        linkedIds.indexOf(state.canvasSelectedEventId) >= 0
+      ) {
+        card.className += ' zrns-evidence-highlight';
+      }
 
       var preview = document.createElement('div');
       preview.className = 'zrns-evidence-preview';
@@ -453,6 +470,353 @@
     if (pre) pre.textContent = JSON.stringify(buildManifest(), null, 2);
   }
 
+  function buildChildrenMap(events) {
+    var map = {};
+    events.forEach(function (e) {
+      if (e.cause_event_id) {
+        if (!map[e.cause_event_id]) map[e.cause_event_id] = [];
+        map[e.cause_event_id].push(e);
+      }
+    });
+    return map;
+  }
+
+  function computeCanvasLayout(events) {
+    var childrenMap = buildChildrenMap(events);
+    var hasLinks = events.some(function (e) {
+      return e.cause_event_id;
+    });
+    var depth = {};
+    var idSet = {};
+    events.forEach(function (e) {
+      idSet[e.id] = true;
+    });
+
+    function assignDepth(id, d, seen) {
+      if (seen[id]) return;
+      seen[id] = true;
+      if (depth[id] == null || d > depth[id]) depth[id] = d;
+      (childrenMap[id] || []).forEach(function (child) {
+        assignDepth(child.id, d + 1, seen);
+      });
+    }
+
+    events
+      .filter(function (e) {
+        return !e.cause_event_id;
+      })
+      .forEach(function (r) {
+        assignDepth(r.id, 0, {});
+      });
+
+    events.forEach(function (e) {
+      if (e.cause_event_id && idSet[e.cause_event_id] && depth[e.id] == null) {
+        assignDepth(e.id, (depth[e.cause_event_id] || 0) + 1, {});
+      }
+      if (depth[e.id] == null) depth[e.id] = 0;
+    });
+
+    var orphans = events.filter(function (e) {
+      return !e.cause_event_id && !(childrenMap[e.id] && childrenMap[e.id].length);
+    });
+
+    var columns = {};
+    events.forEach(function (e) {
+      var d = depth[e.id] != null ? depth[e.id] : 0;
+      if (!columns[d]) columns[d] = [];
+      columns[d].push(e);
+    });
+
+    var nodes = [];
+    Object.keys(columns)
+      .sort(function (a, b) {
+        return Number(a) - Number(b);
+      })
+      .forEach(function (dKey) {
+        var col = columns[dKey];
+        col.sort(function (a, b) {
+          return String(a.occurred_at).localeCompare(String(b.occurred_at));
+        });
+        col.forEach(function (ev, rowIdx) {
+          var isOrphan = orphans.some(function (o) {
+            return o.id === ev.id;
+          });
+          nodes.push({
+            id: ev.id,
+            x: 70 + Number(dKey) * COL_W,
+            y: 56 + rowIdx * ROW_H,
+            r: NODE_R,
+            event: ev,
+            isOrphan: isOrphan,
+            isRoot: !ev.cause_event_id,
+          });
+        });
+      });
+
+    return { nodes: nodes, orphans: orphans, hasLinks: hasLinks, childrenMap: childrenMap };
+  }
+
+  function drawCanvasArrow(ctx, x1, y1, x2, y2, r1, r2) {
+    var dx = x2 - x1;
+    var dy = y2 - y1;
+    var dist = Math.sqrt(dx * dx + dy * dy) || 1;
+    var ux = dx / dist;
+    var uy = dy / dist;
+    var sx = x1 + ux * r1;
+    var sy = y1 + uy * r1;
+    var ex = x2 - ux * r2;
+    var ey = y2 - uy * r2;
+    ctx.beginPath();
+    ctx.moveTo(sx, sy);
+    ctx.lineTo(ex, ey);
+    ctx.stroke();
+    var head = 8;
+    var angle = Math.atan2(ey - sy, ex - sx);
+    ctx.beginPath();
+    ctx.moveTo(ex, ey);
+    ctx.lineTo(ex - head * Math.cos(angle - 0.4), ey - head * Math.sin(angle - 0.4));
+    ctx.lineTo(ex - head * Math.cos(angle + 0.4), ey - head * Math.sin(angle + 0.4));
+    ctx.closePath();
+    ctx.fillStyle = ctx.strokeStyle;
+    ctx.fill();
+  }
+
+  function renderOrphanPanel(layout) {
+    var el = $('zrnsCanvasOrphans');
+    if (!el) return;
+    el.textContent = '';
+    if (!layout || !layout.orphans || layout.orphans.length === 0) return;
+    var h = document.createElement('h3');
+    h.textContent = 'Unlinked root events (no cause link, no downstream effects)';
+    el.appendChild(h);
+    var ul = document.createElement('ul');
+    layout.orphans.forEach(function (o) {
+      var li = document.createElement('li');
+      li.textContent = (o.occurred_at || '') + ' — ' + (o.title || o.id);
+      ul.appendChild(li);
+    });
+    el.appendChild(ul);
+  }
+
+  function renderCanvasEvidencePanel(eventId) {
+    var panel = $('zrnsCanvasEvidenceHighlight');
+    if (!panel) return;
+    panel.textContent = '';
+    panel.className = 'zrns-canvas-evidence-hl';
+    if (!eventId) {
+      panel.className += ' zrns-hint';
+      panel.textContent = 'Click a node to see linked evidence metadata.';
+      return;
+    }
+    var linked = state.evidence.filter(function (item) {
+      return (item.timeline_event_ids || []).indexOf(eventId) >= 0;
+    });
+    var ev = state.events.find(function (e) {
+      return e.id === eventId;
+    });
+    var h = document.createElement('h3');
+    h.textContent = 'Linked evidence — ' + (ev ? ev.title : eventId);
+    panel.appendChild(h);
+    if (linked.length === 0) {
+      var p = document.createElement('p');
+      p.className = 'zrns-hint';
+      p.textContent = 'No evidence items linked to this event.';
+      panel.appendChild(p);
+    } else {
+      var ul = document.createElement('ul');
+      linked.forEach(function (item) {
+        var li = document.createElement('li');
+        li.textContent =
+          (item.filename || 'file') +
+          ' · ' +
+          (item.category || '') +
+          ' · ' +
+          (item.captured_at || '');
+        ul.appendChild(li);
+      });
+      panel.appendChild(ul);
+    }
+    var btn = document.createElement('button');
+    btn.type = 'button';
+    btn.textContent = 'Open Evidence vault tab';
+    btn.addEventListener('click', function () {
+      switchTab('vault');
+    });
+    panel.appendChild(btn);
+  }
+
+  function highlightEvidenceForEvent(eventId) {
+    state.canvasSelectedEventId = eventId;
+    renderEvidence();
+    renderCanvasEvidencePanel(eventId);
+    renderCauseCanvasMap();
+  }
+
+  function canvasHitTest(clientX, clientY) {
+    var canvas = $('zrnsCauseCanvas');
+    if (!canvas) return null;
+    var rect = canvas.getBoundingClientRect();
+    var x = clientX - rect.left;
+    var y = clientY - rect.top;
+    for (var i = canvasState.nodes.length - 1; i >= 0; i--) {
+      var n = canvasState.nodes[i];
+      var dx = x - n.x;
+      var dy = y - n.y;
+      if (dx * dx + dy * dy <= n.r * n.r) return n;
+    }
+    return null;
+  }
+
+  function renderCauseCanvasMap() {
+    var canvas = $('zrnsCauseCanvas');
+    if (!canvas) return;
+    var wrap = canvas.parentElement;
+    var layout = computeCanvasLayout(state.events);
+    var colCount = 1;
+    layout.nodes.forEach(function (n) {
+      var col = Math.round((n.x - 70) / COL_W);
+      if (col + 1 > colCount) colCount = col + 1;
+    });
+    var rowMax = 1;
+    layout.nodes.forEach(function (n) {
+      var row = Math.round((n.y - 56) / ROW_H) + 1;
+      if (row > rowMax) rowMax = row;
+    });
+    var w = Math.max(wrap.clientWidth || 800, colCount * COL_W + 120);
+    var h = Math.max(320, rowMax * ROW_H + 100);
+    var dpr = window.devicePixelRatio || 1;
+    canvas.width = Math.floor(w * dpr);
+    canvas.height = Math.floor(h * dpr);
+    canvas.style.width = w + 'px';
+    canvas.style.height = h + 'px';
+
+    canvasState.nodes = layout.nodes.map(function (n) {
+      return {
+        id: n.id,
+        x: n.x * canvasState.scale + canvasState.offsetX,
+        y: n.y * canvasState.scale + canvasState.offsetY,
+        r: NODE_R * canvasState.scale,
+        event: n.event,
+        isOrphan: n.isOrphan,
+        isRoot: n.isRoot,
+      };
+    });
+
+    var emptyEl = $('zrnsCanvasEmpty');
+    if (emptyEl) {
+      if (!layout.hasLinks) {
+        emptyEl.hidden = false;
+        emptyEl.textContent =
+          state.events.length === 0
+            ? 'No timeline events yet — add events and cause links in the Cause → Effect tab.'
+            : 'No cause → effect links yet — link events to see root-cause chains on this map.';
+      } else {
+        emptyEl.hidden = true;
+      }
+    }
+
+    var ctx = canvas.getContext('2d');
+    ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+    ctx.clearRect(0, 0, w, h);
+
+    if (state.events.length === 0) {
+      renderOrphanPanel(layout);
+      return;
+    }
+
+    ctx.strokeStyle = 'rgba(107, 163, 214, 0.65)';
+    ctx.lineWidth = 2;
+    state.events.forEach(function (e) {
+      if (!e.cause_event_id) return;
+      var from = canvasState.nodes.find(function (n) {
+        return n.id === e.cause_event_id;
+      });
+      var to = canvasState.nodes.find(function (n) {
+        return n.id === e.id;
+      });
+      if (!from || !to) return;
+      drawCanvasArrow(ctx, from.x, from.y, to.x, to.y, from.r, to.r);
+    });
+
+    canvasState.nodes.forEach(function (node) {
+      var selected = state.canvasSelectedEventId === node.id;
+      ctx.beginPath();
+      ctx.arc(node.x, node.y, node.r, 0, Math.PI * 2);
+      if (selected) {
+        ctx.fillStyle = 'rgba(107, 144, 128, 0.85)';
+        ctx.strokeStyle = '#a8d4b8';
+      } else if (node.isOrphan && layout.hasLinks) {
+        ctx.fillStyle = 'rgba(155, 142, 196, 0.35)';
+        ctx.strokeStyle = '#9b8ec4';
+      } else if (node.isRoot) {
+        ctx.fillStyle = 'rgba(107, 163, 214, 0.35)';
+        ctx.strokeStyle = '#6ba3d6';
+      } else {
+        ctx.fillStyle = 'rgba(26, 35, 50, 0.95)';
+        ctx.strokeStyle = '#6ba3d6';
+      }
+      ctx.lineWidth = selected ? 3 : 2;
+      ctx.fill();
+      ctx.stroke();
+
+      ctx.fillStyle = '#e8eef4';
+      ctx.font = '11px system-ui, sans-serif';
+      ctx.textAlign = 'center';
+      var title = node.event.title || '';
+      if (title.length > 20) title = title.slice(0, 18) + '…';
+      ctx.fillText(title, node.x, node.y + 4);
+      ctx.font = '9px system-ui, sans-serif';
+      ctx.fillStyle = '#94a3b8';
+      ctx.fillText(node.event.occurred_at || '', node.x, node.y + node.r + 12);
+    });
+
+    renderOrphanPanel(layout);
+  }
+
+  function bindCanvas() {
+    var canvas = $('zrnsCauseCanvas');
+    if (!canvas) return;
+
+    canvas.addEventListener('click', function (ev) {
+      var hit = canvasHitTest(ev.clientX, ev.clientY);
+      if (hit) highlightEvidenceForEvent(hit.id);
+      else {
+        state.canvasSelectedEventId = null;
+        renderCanvasEvidencePanel(null);
+        renderEvidence();
+        renderCauseCanvasMap();
+      }
+    });
+
+    var zoomIn = $('zrnsCanvasZoomIn');
+    if (zoomIn) {
+      zoomIn.addEventListener('click', function () {
+        canvasState.scale = Math.min(2.5, canvasState.scale + 0.15);
+        renderCauseCanvasMap();
+      });
+    }
+    var zoomOut = $('zrnsCanvasZoomOut');
+    if (zoomOut) {
+      zoomOut.addEventListener('click', function () {
+        canvasState.scale = Math.max(0.5, canvasState.scale - 0.15);
+        renderCauseCanvasMap();
+      });
+    }
+    var reset = $('zrnsCanvasReset');
+    if (reset) {
+      reset.addEventListener('click', function () {
+        canvasState.scale = 1;
+        canvasState.offsetX = 40;
+        canvasState.offsetY = 40;
+        renderCauseCanvasMap();
+      });
+    }
+
+    window.addEventListener('resize', function () {
+      if ($('zrnsPanelCanvas') && !$('zrnsPanelCanvas').hidden) renderCauseCanvasMap();
+    });
+  }
+
   function generateMockSummary() {
     var causeLinks = state.events.filter(function (e) {
       return e.cause_event_id;
@@ -466,7 +830,8 @@
       'Rights tracker items: ' + state.rights.length,
       'Cause→effect links: ' + causeLinks,
       '',
-      'Earliest event: ' + (state.events[0] ? state.events[0].occurred_at + ' — ' + state.events[0].title : 'none'),
+      'Earliest event: ' +
+        (state.events[0] ? state.events[0].occurred_at + ' — ' + state.events[0].title : 'none'),
       'Latest event: ' +
         (state.events.length
           ? state.events[state.events.length - 1].occurred_at +
@@ -489,8 +854,15 @@
         renderCauseLinks();
         renderRights();
         renderExportPreview();
+        renderCauseCanvasMap();
         showError('');
-        setStatus('Local data loaded (' + state.events.length + ' events, ' + state.evidence.length + ' evidence).');
+        setStatus(
+          'Local data loaded (' +
+            state.events.length +
+            ' events, ' +
+            state.evidence.length +
+            ' evidence).'
+        );
       })
       .catch(function (err) {
         showError(err.message || String(err));
@@ -505,6 +877,7 @@
       timeline: $('zrnsPanelTimeline'),
       vault: $('zrnsPanelVault'),
       cause: $('zrnsPanelCause'),
+      canvas: $('zrnsPanelCanvas'),
       rights: $('zrnsPanelRights'),
       export: $('zrnsPanelExport'),
       mock: $('zrnsPanelMock'),
@@ -516,6 +889,11 @@
       panel.hidden = !active;
       panel.classList.toggle('zrns-panel-active', active);
     });
+    if (tabId === 'canvas') {
+      window.requestAnimationFrame(function () {
+        renderCauseCanvasMap();
+      });
+    }
   }
 
   function bindForms() {
@@ -670,6 +1048,7 @@
 
     bindTabs();
     bindForms();
+    bindCanvas();
 
     openDb()
       .then(function (db) {

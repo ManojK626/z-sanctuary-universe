@@ -38,8 +38,14 @@
     {
       "id": "Z-RNS-FOUNDATION-1",
       "title": "Timeline Builder + Evidence Vault prototype",
-      "status": "in_progress",
+      "status": "sealed",
       "runtime": "local_indexeddb"
+    },
+    {
+      "id": "Z-RNS-FOUNDATION-1A",
+      "title": "Cause → Effect Canvas map (read-only 2D)",
+      "status": "in_progress",
+      "runtime": "canvas_readonly"
     },
     {
       "id": "Z-RNS-JUSTICE-GAMES-1",
