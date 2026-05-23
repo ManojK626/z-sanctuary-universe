@@ -292,7 +292,9 @@
                   LS_REVIEW,
                   JSON.stringify({ at: new Date().toISOString(), schema: 'amk_zuno_advisor_ack_v1' }),
                 );
-              } catch (_) {}
+              } catch (_) {
+                /* localStorage unavailable — ack note stays in-memory only */
+              }
               if (ackNote) ackNote.textContent = loadReviewNote();
             });
           }
