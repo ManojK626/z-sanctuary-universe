@@ -30,7 +30,7 @@ Aligns with **Turtle Mode**, **14 DRP**, and [Z_MAGICAL_CANVAS_PLAYKIT_POLICY.md
 ## Real power (future-safe direction)
 
 | Is | Is not |
-| -- | ------ |
+| ------------------------------------------------ | ---------------------------- |
 | Motion philosophy | Combat manual |
 | Anatomy flow (symbolic) | Weapon build guide |
 | Aura & energy identity | Harmful how-to |
@@ -42,7 +42,7 @@ Aligns with **Turtle Mode**, **14 DRP**, and [Z_MAGICAL_CANVAS_PLAYKIT_POLICY.md
 ## Five-phase roadmap (master)
 
 | Phase | ID | Goal | Status |
-| ----- | -- | ---- | ------ |
+| ----- | ----------------------- | ------------------------------------------------------------------ | -------------------------------- |
 | 1 | Z-AMK-GUARDIAN-MOTION-1 | Concept foundation — identity, lore, motion logic, visual language | **Now** |
 | 2 | Z-AMK-GUARDIAN-MOTION-2 | Motion visualization sandbox (trails, poses, mock 3D) | Blocked until Phase 1 green |
 | 3 | Z-AMK-GUARDIAN-MOTION-3 | Guardian character universe (lore, factions, evolution forms) | Sketch |
@@ -56,7 +56,7 @@ Full phase detail lives in registry: `data/z_amk_guardian_motion_registry.json`.
 ## Phase 1 deliverables (this phase)
 
 | Deliverable | Path |
-| ----------- | ---- |
+| ------------------------------- | ----------------------------------------------------- |
 | Core doctrine | This doc |
 | Concept folder spine | `concepts/z-amk-guardian-motion/` |
 | Three guardian forms (metadata) | `data/z_amk_guardian_motion_concept_seed.json` |
@@ -80,7 +80,7 @@ concepts/z-amk-guardian-motion/
 ## Three guardian forms (Phase 1)
 
 | Form | Role | Visual tone |
-| ---- | ---- | ----------- |
+| ------------------- | ------------------------------------- | ---------------------------- |
 | **Base Guardian** | Grounded protector — learning posture | Calm green / blue |
 | **Hyper Guardian** | Accelerated flow — training energy | Amber / violet motion trails |
 | **Cosmic Guardian** | Legendary symbolic apex — lore only | Deep space gold / aurora |
@@ -123,4 +123,4 @@ Open: `dashboard/Html/z-amk-guardian-motion-concept.html`
 
 ---
 
-*Disciplined imagination. Turtle first. Engineering later — only if chartered.*
+_Disciplined imagination. Turtle first. Engineering later — only if chartered._

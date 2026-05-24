@@ -13,7 +13,12 @@ const required = [
   'dashboard/styles/z-amk-guardian-motion-concept.css',
 ];
 
-const FORBIDDEN = ['how to build a weapon', 'how to fight', 'attack instruction', 'lethal force guide'];
+const FORBIDDEN = [
+  'how to build a weapon',
+  'how to fight',
+  'attack instruction',
+  'lethal force guide',
+];
 
 async function main() {
   const missing = [];
@@ -54,8 +59,15 @@ async function main() {
   if ((seed.forms || []).length < 3) red.push('seed must define three guardian forms');
   else passed.push('three guardian forms in seed');
 
-  var formIds = (seed.forms || []).map((f) => f.id).sort().join(',');
-  if (!formIds.includes('base_guardian') || !formIds.includes('hyper_guardian') || !formIds.includes('cosmic_guardian')) {
+  var formIds = (seed.forms || [])
+    .map((f) => f.id)
+    .sort()
+    .join(',');
+  if (
+    !formIds.includes('base_guardian') ||
+    !formIds.includes('hyper_guardian') ||
+    !formIds.includes('cosmic_guardian')
+  ) {
     red.push('seed must include base_guardian, hyper_guardian, cosmic_guardian');
   } else passed.push('base / hyper / cosmic forms present');
 
@@ -72,7 +84,10 @@ async function main() {
   }
   if (!forbiddenHit) passed.push('no forbidden combat phrases in sample scan');
 
-  const html = await readFile(resolve(root, 'dashboard/Html/z-amk-guardian-motion-concept.html'), 'utf8');
+  const html = await readFile(
+    resolve(root, 'dashboard/Html/z-amk-guardian-motion-concept.html'),
+    'utf8'
+  );
   if (!html.includes('zgmPosterFrame')) red.push('poster mock frame missing in dashboard');
   else passed.push('cinematic poster mock present');
 

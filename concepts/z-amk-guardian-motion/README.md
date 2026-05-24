@@ -5,7 +5,7 @@
 Organize concept art, diagrams, and mockups into subfolders. Do not add combat engineering or harmful instruction material.
 
 | Folder | Purpose |
-| ------ | ------- |
+| -------------------------------- | ----------------------------------------------- |
 | [armor/](armor/) | Segment plates, silhouette studies |
 | [motion/](motion/) | Joint flow, rotation paths, philosophy diagrams |
 | [aura/](aura/) | Energy identity, color language |

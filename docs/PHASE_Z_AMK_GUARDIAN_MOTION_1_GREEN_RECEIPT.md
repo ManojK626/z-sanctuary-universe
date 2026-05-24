@@ -7,7 +7,7 @@
 ## Scope
 
 | In scope | Out of scope |
-| -------- | ------------ |
+| -------------------------------- | ------------------------- |
 | Core doctrine + 5-phase roadmap | Combat engineering |
 | Concept folder spine | Harmful instructions |
 | Three guardian forms (metadata) | Three.js / WebGPU runtime |
@@ -17,7 +17,7 @@
 ## Deliverables
 
 | Artifact | Path |
-| -------- | ---- |
+| ---------------- | ------------------------------------------------------------- |
 | Doctrine | `docs/Z_AMK_GUARDIAN_MOTION_SYSTEM.md` |
 | Registry | `data/z_amk_guardian_motion_registry.json` |
 | Concept seed | `data/z_amk_guardian_motion_concept_seed.json` |
