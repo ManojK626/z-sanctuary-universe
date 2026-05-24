@@ -7,22 +7,22 @@
 
 ## Scope
 
-| In scope                                 | Out of scope   |
+| In scope | Out of scope |
 | ---------------------------------------- | -------------- |
-| Visible consent status badges            | Real stories   |
-| Private-only warning strip               | Storage / save |
-| Export receipt preview (read-only)       | AI calls       |
-| Clearer Creole / English / French labels | Backend        |
-| Human-readable privacy descriptions      | Public sharing |
+| Visible consent status badges | Real stories |
+| Private-only warning strip | Storage / save |
+| Export receipt preview (read-only) | AI calls |
+| Clearer Creole / English / French labels | Backend |
+| Human-readable privacy descriptions | Public sharing |
 
 ## Deliverables
 
-| Artifact                                            | Change                                        |
+| Artifact | Change |
 | --------------------------------------------------- | --------------------------------------------- |
-| `dashboard/Html/z-sma-true-life-hub.html`           | Private strip, export preview, Z-SMA-1A badge |
-| `dashboard/scripts/z-sma-true-life-hub-readonly.js` | Consent badges, receipt preview, i18n polish  |
-| `dashboard/styles/z-sma-true-life-hub.css`          | Strip, badges, export preview styles          |
-| `docs/PHASE_Z_SMA_1A_GREEN_RECEIPT.md`              | This receipt                                  |
+| `dashboard/Html/z-sma-true-life-hub.html` | Private strip, export preview, Z-SMA-1A badge |
+| `dashboard/scripts/z-sma-true-life-hub-readonly.js` | Consent badges, receipt preview, i18n polish |
+| `dashboard/styles/z-sma-true-life-hub.css` | Strip, badges, export preview styles |
+| `docs/PHASE_Z_SMA_1A_GREEN_RECEIPT.md` | This receipt |
 
 ## Acceptance
 
