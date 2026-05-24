@@ -1,0 +1,67 @@
+{
+  "schema": "z.amk.guardian.motion.registry.v1",
+  "system_name": "Z-AMK Guardian Motion System",
+  "mode": "creative_concept_foundation_only",
+  "phase": "Z-AMK-GUARDIAN-MOTION-1",
+  "locked_law": {
+    "fictional_cinematic_artistic_only": true,
+    "no_real_combat_engineering": true,
+    "no_harmful_instructions": true,
+    "symbolic_protection_not_weapons": true
+  },
+  "phases": [
+    {
+      "id": "Z-AMK-GUARDIAN-MOTION-1",
+      "title": "Concept foundation",
+      "status": "in_progress",
+      "runtime": false
+    },
+    {
+      "id": "Z-AMK-GUARDIAN-MOTION-2",
+      "title": "Motion visualization sandbox",
+      "status": "blocked",
+      "runtime": "local_mock_charter_required"
+    },
+    {
+      "id": "Z-AMK-GUARDIAN-MOTION-3",
+      "title": "Guardian character universe",
+      "status": "sketch",
+      "runtime": false
+    },
+    {
+      "id": "Z-AMK-GUARDIAN-MOTION-4",
+      "title": "Educational artistic layer",
+      "status": "sketch",
+      "runtime": false
+    },
+    {
+      "id": "Z-AMK-GUARDIAN-MOTION-5",
+      "title": "Z-Sanctuary Creative Forge",
+      "status": "future_sketch",
+      "runtime": false
+    }
+  ],
+  "concept_folders": [
+    "concepts/z-amk-guardian-motion/armor",
+    "concepts/z-amk-guardian-motion/motion",
+    "concepts/z-amk-guardian-motion/aura",
+    "concepts/z-amk-guardian-motion/guardian-hand",
+    "concepts/z-amk-guardian-motion/neck-ring",
+    "concepts/z-amk-guardian-motion/cinematics"
+  ],
+  "guardian_forms": ["base_guardian", "hyper_guardian", "cosmic_guardian"],
+  "forbidden_in_phase_1": [
+    "combat_engineering",
+    "weapon_instructions",
+    "harmful_how_to",
+    "cloud_sync",
+    "ai_generation_api",
+    "live_z_sanctuary_bridge",
+    "deployment"
+  ],
+  "related_docs": [
+    "docs/Z_AMK_GUARDIAN_MOTION_SYSTEM.md",
+    "docs/cross-project/Z_MAGICAL_CANVAS_PLAYKIT_POLICY.md",
+    "docs/Z_OMNI_VISUAL_WORKSTATION_ENGINE_CHARTER.md"
+  ]
+}
