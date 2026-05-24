@@ -171,6 +171,7 @@
     "z:control-links:apply": "node scripts/z_sync_control_links.mjs --apply",
     "amk:workspace:profiles": "node scripts/amk_cursor_workspace_profiles_check.mjs",
     "z:amk:strategy": "node scripts/z_amk_gtai_strategy_report.mjs",
+    "z:amk:guardian-motion": "node scripts/z_amk_guardian_motion_check.mjs",
     "z:monster:registry-verify": "node scripts/z_monster_project_registry_verify.mjs",
     "z:susbv": "node scripts/z_susbv_validate.mjs",
     "z:omnai": "node scripts/z_omnai_blueprint_validate.mjs",

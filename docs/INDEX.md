@@ -3,7 +3,7 @@
 Compact entry points for **read-only** hub registries and AMK-facing evidence. For the full universe index see [../INDEX.md](../INDEX.md).
 
 | Slice | Doc | Command |
-| ------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------- | ----------------------------------- |
+| ------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------- | ----------------------------------- |
 | Z-SSWS-LINK-1 workspace launch requirements | [Z_SSWS_WORKSPACE_SPINE.md](Z_SSWS_WORKSPACE_SPINE.md) | `npm run z:ssws:requirements` |
 | Z-SSWS-DOOR-1 AMK Workspace Doorway | [AMK_WORKSPACE_DOORWAY.md](AMK_WORKSPACE_DOORWAY.md) | `npm run amk:doorway:status` |
 | AMK-IDE-RHYTHM-1 IDE path + fusion operator rhythm | [AMK_IDE_PATH_AND_FUSION_OPERATOR_RHYTHM.md](AMK_IDE_PATH_AND_FUSION_OPERATOR_RHYTHM.md) | see doc |
@@ -52,6 +52,8 @@ Compact entry points for **read-only** hub registries and AMK-facing evidence. F
 | Z-STILLNESS-LEARN-1 AI learning pathway | [Z_STILLNESS_MODE_AI_LEARNING_PATHWAY.md](Z_STILLNESS_MODE_AI_LEARNING_PATHWAY.md) | `npm run z:stillness:learn` |
 | Z-STILLNESS-LEARN-1 ecosystem biology map | [Z_SANCTUARY_ECOSYSTEM_BIOLOGY_MAP.md](Z_SANCTUARY_ECOSYSTEM_BIOLOGY_MAP.md) | — |
 | Z-STILLNESS-LEARN-1 green receipt | [PHASE_Z_STILLNESS_LEARN_1_GREEN_RECEIPT.md](PHASE_Z_STILLNESS_LEARN_1_GREEN_RECEIPT.md) | — |
+| Z-AMK-GUARDIAN-MOTION-1 concept foundation | [Z_AMK_GUARDIAN_MOTION_SYSTEM.md](Z_AMK_GUARDIAN_MOTION_SYSTEM.md) | `npm run z:amk:guardian-motion` |
+| Z-AMK-GUARDIAN-MOTION-1 green receipt | [PHASE_Z_AMK_GUARDIAN_MOTION_1_GREEN_RECEIPT.md](PHASE_Z_AMK_GUARDIAN_MOTION_1_GREEN_RECEIPT.md) | — |
 | Z-LEGAL-OPS-1 legal evidence core | [Z_LEGAL_EVIDENCE_CORE.md](Z_LEGAL_EVIDENCE_CORE.md) | `npm run z:legal:ops` |
 | Z-LEGAL-OPS-1 lawyer workstation control centre | [Z_LAWYER_WORKSTATION_CONTROL_CENTRE.md](Z_LAWYER_WORKSTATION_CONTROL_CENTRE.md) | — |
 | Z-LEGAL-OPS-1 guardian legal circle | [Z_GUARDIAN_LEGAL_CIRCLE.md](Z_GUARDIAN_LEGAL_CIRCLE.md) | — |
@@ -122,7 +124,7 @@ This repository currently acts as:
 ## Current Deployment Posture
 
 | Layer | Status |
-| --- | --- |
+| ------------------------ | ------------------ |
 | Static Pages (CF-A) | Active preparation |
 | API systems | Not public |
 | Billing systems | Not active |

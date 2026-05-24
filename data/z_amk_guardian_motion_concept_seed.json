@@ -1,0 +1,42 @@
+{
+  "schema": "z.amk.guardian.motion.concept.seed.v1",
+  "phase": "Z-AMK-GUARDIAN-MOTION-1",
+  "movement_philosophy": "Flow with intention — protect through presence, not aggression. Motion teaches awareness.",
+  "forms": [
+    {
+      "id": "base_guardian",
+      "label": "Base Guardian",
+      "tagline": "Grounded protector — learning posture",
+      "aura": "calm green / process blue",
+      "motion_notes": "Stable stance, open hands, slow rotational drills (symbolic)",
+      "concept_folder_hints": ["motion", "guardian-hand", "armor"]
+    },
+    {
+      "id": "hyper_guardian",
+      "label": "Hyper Guardian",
+      "tagline": "Accelerated flow — training energy",
+      "aura": "amber trails / violet sync",
+      "motion_notes": "Path trails, segment articulation studies, reaction rhythm (fictional)",
+      "concept_folder_hints": ["motion", "aura", "neck-ring"]
+    },
+    {
+      "id": "cosmic_guardian",
+      "label": "Cosmic Guardian",
+      "tagline": "Legendary symbolic apex — lore only",
+      "aura": "deep space gold / aurora ring",
+      "motion_notes": "Cinematic poses, energy synchronization visuals — no combat claims",
+      "concept_folder_hints": ["cinematics", "aura", "armor"]
+    }
+  ],
+  "anatomy_flow_topics": [
+    "segment joints (symbolic diagram)",
+    "finger articulation concept",
+    "neck-ring energy channel (fictional)",
+    "guardian-hand gesture vocabulary"
+  ],
+  "poster": {
+    "title": "Z-AMK Guardian Motion — Legendary Cinematic Poster (mock)",
+    "subtitle": "Disciplined imagination · Phase 1 concept only",
+    "disclaimer": "Fictional art direction — not engineering instruction"
+  }
+}
