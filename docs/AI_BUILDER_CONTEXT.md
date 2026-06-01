@@ -22,6 +22,17 @@
 
 Cross-links: [Z-GITHUB-SANCTUARY-GATE.md](Z-GITHUB-SANCTUARY-GATE.md), [Z-CLOUDFLARE-AI-COMMS-PRECAUTIONS.md](Z-CLOUDFLARE-AI-COMMS-PRECAUTIONS.md). **Merge queue:** MD060 → this spine → LinguaCore → Mauritius walks → Z-ADTF later. **No new runtime** while doctrine PRs land. Cloudflare future-phased only in this lane.
 
+## Compassion Wellness & Lifeform Care (Phase 0 — docs only)
+
+**Z-COMPASSION-WELLNESS-0** — privacy-first wellness, elder support, and companion-animal care **doctrine** under Turtle Mode. No backend, payments, uploads, live AI, or emergency dispatch in this phase.
+
+- Pack index: [compassion-wellness/README.md](compassion-wellness/README.md)
+- Charter: [compassion-wellness/COMPASSION_WELLNESS_CHARTER.md](compassion-wellness/COMPASSION_WELLNESS_CHARTER.md)
+- Roadmap: [compassion-wellness/TURTLE_MODE_ROADMAP.md](compassion-wellness/TURTLE_MODE_ROADMAP.md)
+- Receipt: [compassion-wellness/PHASE_0_GREEN_RECEIPT.md](compassion-wellness/PHASE_0_GREEN_RECEIPT.md)
+
+Aligns with 14 DRP / AI Tower **suggest-only** posture and [Z_SWARM_14DRP_UNIVERSAL_AGENT_LAW.md](Z_SWARM_14DRP_UNIVERSAL_AGENT_LAW.md). Next slice: Phase 1 static consent + intake forms (local prototype) — human gate after Phase 0 review.
+
 ## Canonical control root and satellite bridges (Z-CONTROL-LINK-1)
 
 **Sealed on main.** **`Z_Sanctuary_Universe`** (this hub repository) is the **canonical governance and control root** for Z-Sanctuary. Satellite projects must not fork long doctrine; they carry **one thin bridge file** only: **`docs/Z_SANCTUARY_CONTROL_LINK.md`**, aligned from the hub template at the same path.

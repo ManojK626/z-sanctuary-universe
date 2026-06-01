@@ -96,6 +96,8 @@ Compact entry points for **read-only** hub registries and AMK-facing evidence. F
 | Z-CADENCE-1 green receipt | [PHASE_Z_CADENCE_1_GREEN_RECEIPT.md](PHASE_Z_CADENCE_1_GREEN_RECEIPT.md) | â€” |
 | Z Operational Technology Layers (Phase 0) | [Z_OPERATIONAL_TECHNOLOGY_LAYERS.md](Z_OPERATIONAL_TECHNOLOGY_LAYERS.md) | `npm run verify:md` |
 | Z Operational Technology Layers green receipt | [PHASE_Z_OPERATIONAL_TECHNOLOGY_LAYERS_0_GREEN_RECEIPT.md](PHASE_Z_OPERATIONAL_TECHNOLOGY_LAYERS_0_GREEN_RECEIPT.md) | — |
+| Compassion Wellness & Lifeform Care (Phase 0) | [compassion-wellness/README.md](compassion-wellness/README.md) | `npm run verify:md` |
+| Compassion Wellness Phase 0 green receipt | [compassion-wellness/PHASE_0_GREEN_RECEIPT.md](compassion-wellness/PHASE_0_GREEN_RECEIPT.md) | — |
 | AI Builder briefing | [AI_BUILDER_CONTEXT.md](AI_BUILDER_CONTEXT.md) | â€” |
 | VS-FALLBACK-1 — VS Code Operating Mode Until Cursor Returns | [VS_FALLBACK_1_VSCODE_OPERATING_MODE.md](VS_FALLBACK_1_VSCODE_OPERATING_MODE.md) | â€” |
 | Zuno weekly observation (7-day window) | [ZUNO_WEEKLY_FULL_RUN_AND_OBSERVATION.md](ZUNO_WEEKLY_FULL_RUN_AND_OBSERVATION.md) | See doc (daily + twice-weekly) |
