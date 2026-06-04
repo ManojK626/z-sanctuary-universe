@@ -1,0 +1,101 @@
+{
+  "schemaVersion": "z_paradigm_capability_seed_v1",
+  "project_id": "z_paradigm",
+  "phase": "Z-PARADIGM-1",
+  "status": "doctrine_only",
+  "deployment_class": "NOT_DEPLOYABLE",
+  "runtime_present": false,
+  "data_collection_present": false,
+  "ai_provider_present": false,
+  "generated_note": "Bio-ethical ecosystem doctrine seed. No runtime, RAG, IoT firmware, database, deployment, billing, or live user data in this phase.",
+  "safety_law": [
+    "Doctrine ≠ implementation.",
+    "Wisdom guide ≠ authority.",
+    "Map ≠ surveillance.",
+    "IoT concept ≠ deployed device.",
+    "RAG plan ≠ live AI memory.",
+    "GREEN ≠ launch.",
+    "AI assistant ≠ consciousness."
+  ],
+  "modules": [
+    {
+      "module_id": "z_mind",
+      "name": "Z-Mind",
+      "purpose": "Future privacy-respecting knowledge assistant (organize, summarize, suggest — human decides).",
+      "status": "doctrine_only",
+      "forbidden_until_charter": [
+        "vector_db",
+        "rag_pipeline",
+        "external_ai_provider",
+        "always_on_cross_user_memory",
+        "lie_detection",
+        "consciousness_or_awakening_claims"
+      ]
+    },
+    {
+      "module_id": "z_mimics",
+      "name": "Z-Mimics",
+      "purpose": "Future low-power physical/IoT concept — optional sensing with explicit consent.",
+      "status": "doctrine_only",
+      "forbidden_until_charter": [
+        "production_firmware_flash",
+        "covert_surveillance",
+        "always_on_microphone_default",
+        "undeclared_cloud_sensor_exfiltration"
+      ]
+    },
+    {
+      "module_id": "z_atlas",
+      "name": "Z-Atlas",
+      "purpose": "Future ecological/community map — stewardship visibility, not people tracking.",
+      "status": "doctrine_only",
+      "forbidden_until_charter": [
+        "individual_real_time_tracking",
+        "facial_recognition_map_layer",
+        "predictive_policing_territory_scoring"
+      ]
+    }
+  ],
+  "allowed_now": [
+    "Markdown doctrine under docs/z-paradigm/",
+    "Capability seed JSON maintenance",
+    "Hub INDEX and AI_BUILDER_CONTEXT pointers",
+    "Cursor prompts vault reference entry",
+    "Cite Z-UIL, Z-EXL, Z-FUTURE safety law, Z-OPS/ecosystem coherence docs without live bridge claims",
+    "Operator-authored scenario and UX review notes in docs"
+  ],
+  "forbidden_without_charter": [
+    "runtime_services",
+    "database_or_user_accounts",
+    "rag_or_vector_db",
+    "pinecone_or_similar_managed_memory",
+    "iot_firmware_deploy",
+    "ai_provider_api_calls",
+    "deployment_or_cdn_bind",
+    "billing_or_subscriptions",
+    "secrets_in_repo",
+    "live_user_data_collection",
+    "telemetry_or_hidden_analytics",
+    "autonomous_agent_execution",
+    "claims_of_ai_consciousness_or_spiritual_authority"
+  ],
+  "related_docs": [
+    "docs/z-paradigm/Z_PARADIGM_PROJECT_CHARTER.md",
+    "docs/z-paradigm/Z_PARADIGM_14_DRP_TRANSLATION.md",
+    "docs/z-paradigm/Z_PARADIGM_NO_HARM_UX_POLICY.md",
+    "docs/z-paradigm/Z_PARADIGM_MODULE_MAP.md",
+    "docs/z-paradigm/PHASE_Z_PARADIGM_1_GREEN_RECEIPT.md",
+    "docs/design/Z_UNIVERSAL_INTERACTION_LANGUAGE.md",
+    "docs/design/Z_EXPERIENTIAL_LANGUAGE_LAYER.md",
+    "docs/foresight/Z_CIVILIZATION_FORESIGHT_SAFETY_LAW.md",
+    "docs/Z_ECOSYSTEM_COHERENCE_ZUNO_SEED.md",
+    "docs/Z_ECOSYSTEM_AWARENESS_SPINE.md",
+    "docs/Z_SWARM_14DRP_UNIVERSAL_AGENT_LAW.md"
+  ],
+  "integration_posture": {
+    "may_cite": ["Z-UIL", "Z-EXL", "Z-FUTURE", "Z-OPS-ecosystem-coherence"],
+    "live_bridge_claim_allowed": false
+  },
+  "human_review_required": true,
+  "next_phase_hint": "Z-PARADIGM-2 — one module static/local prototype only; still no RAG, IoT deploy, provider, or DB"
+}

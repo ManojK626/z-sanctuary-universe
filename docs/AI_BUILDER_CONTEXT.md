@@ -22,6 +22,16 @@
 
 Cross-links: [Z-GITHUB-SANCTUARY-GATE.md](Z-GITHUB-SANCTUARY-GATE.md), [Z-CLOUDFLARE-AI-COMMS-PRECAUTIONS.md](Z-CLOUDFLARE-AI-COMMS-PRECAUTIONS.md). **Merge queue:** MD060 → this spine → LinguaCore → Mauritius walks → Z-ADTF later. **No new runtime** while doctrine PRs land. Cloudflare future-phased only in this lane.
 
+## Z-Paradigm — Bio-Ethical Ecosystem Doctrine (Z-PARADIGM-1, docs only)
+
+**Z-PARADIGM-1** — nature-aligned, community-first, anti-dark-pattern doctrine seed. Use **AI assistant**, **knowledge guide**, or **ecological wisdom layer** wording only — not consciousness, awakening engine, or spiritual authority claims.
+
+- Charter: [z-paradigm/Z_PARADIGM_PROJECT_CHARTER.md](z-paradigm/Z_PARADIGM_PROJECT_CHARTER.md)
+- Capability seed: `data/z_paradigm_capability_seed.json` (`deployment_class`: NOT_DEPLOYABLE)
+- Receipt: [z-paradigm/PHASE_Z_PARADIGM_1_GREEN_RECEIPT.md](z-paradigm/PHASE_Z_PARADIGM_1_GREEN_RECEIPT.md)
+
+May **cite** Z-UIL, Z-EXL, Z-FUTURE safety law, and Z-OPS/ecosystem coherence — **no live bridge**. No runtime, RAG, IoT firmware, DB, provider, or deploy in this phase. Next: Z-PARADIGM-2 picks one module (Z-Mind, Z-Atlas, or Z-Mimics) for static prototype only.
+
 ## Canonical control root and satellite bridges (Z-CONTROL-LINK-1)
 
 **Sealed on main.** **`Z_Sanctuary_Universe`** (this hub repository) is the **canonical governance and control root** for Z-Sanctuary. Satellite projects must not fork long doctrine; they carry **one thin bridge file** only: **`docs/Z_SANCTUARY_CONTROL_LINK.md`**, aligned from the hub template at the same path.

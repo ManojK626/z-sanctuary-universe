@@ -34,10 +34,43 @@ Canonical paths:
 Acceptance: JSON parses; npm run verify:md passes; no forbidden runtime scope.
 ```
 
+## Z-PARADIGM-1 — Bio-Ethical Ecosystem Doctrine (reference prompt)
+
+Use when extending **Z-Paradigm** docs or capability seed **only** (no runtime unless a new phase charter says so).
+
+```text
+Implement or extend Phase Z-PARADIGM-1 — Bio-Ethical Ecosystem Doctrine.
+
+Scope: docs + metadata only. No runtime. No database. No RAG/vector DB. No IoT firmware.
+No AI provider integration. No deployment. No billing. No secrets. No live user data.
+
+Goal: Governed doctrine seed for Project Z-Paradigm — nature-aligned, community-first,
+anti-dark-pattern, human-and-ecology-centered branch of Z-Sanctuary.
+
+Wording: AI assistant, orchestrator, knowledge guide, ecological wisdom layer.
+Avoid: AI consciousness, awakening engine, guaranteed transformation, spiritual authority,
+fake runtime claims, premature Pinecone/IoT/stack assumptions.
+
+Safety law (verbatim when needed):
+Doctrine ≠ implementation. Wisdom guide ≠ authority. Map ≠ surveillance.
+IoT concept ≠ deployed device. RAG plan ≠ live AI memory. GREEN ≠ launch.
+
+Canonical paths:
+- docs/z-paradigm/Z_PARADIGM_PROJECT_CHARTER.md
+- docs/z-paradigm/Z_PARADIGM_14_DRP_TRANSLATION.md
+- docs/z-paradigm/Z_PARADIGM_NO_HARM_UX_POLICY.md
+- docs/z-paradigm/Z_PARADIGM_MODULE_MAP.md
+- docs/z-paradigm/PHASE_Z_PARADIGM_1_GREEN_RECEIPT.md
+- data/z_paradigm_capability_seed.json
+
+Acceptance: JSON parses; npm run verify:md passes; no runtime/app files changed.
+```
+
 ## Related hub docs
 
 - [docs/Z_ECOSYSTEM_COHERENCE_ZUNO_SEED.md](../docs/Z_ECOSYSTEM_COHERENCE_ZUNO_SEED.md)
 - [docs/AI_BUILDER_CONTEXT.md](../docs/AI_BUILDER_CONTEXT.md)
+- [docs/z-paradigm/Z_PARADIGM_PROJECT_CHARTER.md](../docs/z-paradigm/Z_PARADIGM_PROJECT_CHARTER.md)
 
 ## OMNAI core engine simulation (reference prompt)
 
