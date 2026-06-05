@@ -1,0 +1,72 @@
+# Z-Sanctuary Universe — Cursor rules (index layer)
+
+Canonical directive: `docs/Z_SANCTUARY_MASTER_DIRECTIVE.md`
+
+This file is a thin behavioral index. Do not fork long doctrine here.
+
+## Mode and scope
+
+- Operate in Turtle Mode.
+- Branches use `cursor/zsanctuary/*`.
+- PR workflow only; do not edit `main` directly.
+- Docs-and-rules-first unless an explicit phase receipt charters runtime work.
+
+## Builder spine laws
+
+```text
+federation ≠ authority
+topology ≠ ownership
+observe → verify → suggest → human decides
+readiness ≠ deploy
+organization ≠ control
+layered tools ≠ the soul
+```
+
+## 14 DRP coding law posture (summary)
+
+1. Non-harm first.
+2. Truth and evidence labels (doctrine/prototype/runtime).
+3. Explicit consent for sensitive actions.
+4. Privacy and data minimization.
+5. Dignity and no dark patterns.
+6. Inclusion and accessibility-first defaults.
+7. Vulnerable-user gates (elder/child/high-risk lanes).
+8. Ecological restraint and low-power bias where relevant.
+9. Lifeform dignity (human + animal non-exploitation).
+10. Fair trust processes with appeal routes.
+11. Community benefit over extraction.
+12. Transparent governance and receipts.
+13. Smallest safe automation; no silent autonomy.
+14. AMK/human authority for sacred moves.
+
+## Ethical UX rules (summary)
+
+- No dark patterns, infinite scroll traps, or autoplay by default.
+- No anxiety notification loops.
+- No guilt-based donations and no pay-for-safety tiers.
+- No fake scarcity, fake social proof, or covert biometrics.
+- When user data exists, provide clear export/delete rights.
+
+## Cursor behavioral rules
+
+- Before edits: state exact files.
+- After edits: report checks run and rollback path.
+- Keep one domain per task/PR.
+- Do not add secrets, provider keys, or hidden telemetry.
+- Do not auto-merge, auto-deploy, or auto-launch services.
+- Do not claim runtime capability without file evidence.
+
+## Safety law
+
+```text
+Doctrine ≠ implementation.
+Guide ≠ authority.
+Prototype ≠ deployment.
+Map ≠ surveillance.
+GREEN ≠ launch.
+```
+
+## Phase 1 prompt status
+
+`docs/z-paradigm/Z_SANCTUARY_FOUNDATION_PHASE_1_PROMPT.md` is a stored kickoff prompt only.
+It is NOT EXECUTED in this phase and does not grant permission to run installs, runtime scaffolding, or deploy commands.

@@ -22,6 +22,16 @@
 
 Cross-links: [Z-GITHUB-SANCTUARY-GATE.md](Z-GITHUB-SANCTUARY-GATE.md), [Z-CLOUDFLARE-AI-COMMS-PRECAUTIONS.md](Z-CLOUDFLARE-AI-COMMS-PRECAUTIONS.md). **Merge queue:** MD060 → this spine → LinguaCore → Mauritius walks → Z-ADTF later. **No new runtime** while doctrine PRs land. Cloudflare future-phased only in this lane.
 
+## Z-Sanctuary foundation rulebook layer (docs only)
+
+Master governance and behavior baseline for Cursor/AI builders:
+
+- Directive: [Z_SANCTUARY_MASTER_DIRECTIVE.md](Z_SANCTUARY_MASTER_DIRECTIVE.md)
+- Receipt: [PHASE_Z_SANCTUARY_FOUNDATION_RULEBOOK_GREEN_RECEIPT.md](PHASE_Z_SANCTUARY_FOUNDATION_RULEBOOK_GREEN_RECEIPT.md)
+- Prepared prompt (NOT EXECUTED): [z-paradigm/Z_SANCTUARY_FOUNDATION_PHASE_1_PROMPT.md](z-paradigm/Z_SANCTUARY_FOUNDATION_PHASE_1_PROMPT.md)
+
+Strict law in this phase: governance + prompt preparation only. No install/runtime/database/secrets/deploy/provider/map-SDK/auto-launch actions.
+
 ## Canonical control root and satellite bridges (Z-CONTROL-LINK-1)
 
 **Sealed on main.** **`Z_Sanctuary_Universe`** (this hub repository) is the **canonical governance and control root** for Z-Sanctuary. Satellite projects must not fork long doctrine; they carry **one thin bridge file** only: **`docs/Z_SANCTUARY_CONTROL_LINK.md`**, aligned from the hub template at the same path.
