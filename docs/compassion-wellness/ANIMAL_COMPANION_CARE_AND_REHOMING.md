@@ -14,13 +14,13 @@ Support **temporary fostering**, **rescue coordination**, **comfort care**, and 
 
 ## Care layers
 
-| Layer                   | Description                                                                 |
+| Layer | Description |
 | ----------------------- | --------------------------------------------------------------------------- |
-| **Comfort care**        | Calm presence, grooming support, gentle handling — not veterinary treatment |
-| **Temporary fostering** | Time-bounded care with documented responsibilities                          |
-| **Rescue support**      | Connects to verified rescue pathways (human-governed)                       |
-| **Ethical rehoming**    | Transparent history, meet-and-greet, trial period optional                  |
-| **Post-rehome updates** | Optional wellness check photos/notes — consent-based                        |
+| **Comfort care** | Calm presence, grooming support, gentle handling — not veterinary treatment |
+| **Temporary fostering** | Time-bounded care with documented responsibilities |
+| **Rescue support** | Connects to verified rescue pathways (human-governed) |
+| **Ethical rehoming** | Transparent history, meet-and-greet, trial period optional |
+| **Post-rehome updates** | Optional wellness check photos/notes — consent-based |
 
 ---
 
@@ -46,14 +46,14 @@ Aligns with [FOLLOW_UP_AND_CONTINUITY_OF_CARE.md](FOLLOW_UP_AND_CONTINUITY_OF_CA
 
 ## Abuse prevention and anti-exploitation
 
-| Rule                             | Detail                                                                |
+| Rule | Detail |
 | -------------------------------- | --------------------------------------------------------------------- |
-| **Anti-resale**                  | No commercial sale marketplace framing                                |
-| **Anti-fighting**                | Zero tolerance; report → human escalation                             |
-| **Anti-breeding exploitation**   | No puppy-mill or backyard breeding promotion                          |
-| **Safe transfer**                | Handover checklist, ID when charter requires, two-adult rule optional |
-| **No abandonment encouragement** | Copy steers toward rescue and responsible transition                  |
-| **Background checks**            | Human-governed where charter allows — not AI criminality prediction   |
+| **Anti-resale** | No commercial sale marketplace framing |
+| **Anti-fighting** | Zero tolerance; report → human escalation |
+| **Anti-breeding exploitation** | No puppy-mill or backyard breeding promotion |
+| **Safe transfer** | Handover checklist, ID when charter requires, two-adult rule optional |
+| **No abandonment encouragement** | Copy steers toward rescue and responsible transition |
+| **Background checks** | Human-governed where charter allows — not AI criminality prediction |
 
 ---
 
@@ -69,11 +69,11 @@ Aligns with [FOLLOW_UP_AND_CONTINUITY_OF_CARE.md](FOLLOW_UP_AND_CONTINUITY_OF_CA
 
 ## Language guide
 
-| Use                              | Avoid                            |
+| Use | Avoid |
 | -------------------------------- | -------------------------------- |
 | Compassionate transition pathway | Dump, get rid of, disposable pet |
-| Foster guardian                  | Owner flip without process       |
-| Emotional continuity plan        | «Rehome instantly» pressure      |
+| Foster guardian | Owner flip without process |
+| Emotional continuity plan | «Rehome instantly» pressure |
 
 ---
 

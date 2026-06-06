@@ -14,15 +14,15 @@ Define what AI **may** assist with in future phases — and what it **must never
 
 ## AI may assist with
 
-| Area                            | Examples                                                                  |
+| Area | Examples |
 | ------------------------------- | ------------------------------------------------------------------------- |
-| **Intake organization**         | Sort form fields, missing-info prompts                                    |
-| **Note summarization**          | Session summaries user approves before save                               |
-| **Pattern hints**               | «You logged shoulder tension after desk days» — tentative, not diagnostic |
-| **Gentle wellness suggestions** | Stretch reminders, hydration nudges — user can dismiss                    |
-| **Safety concern flags**        | «Report mentions unventilated space» → queue for **human** review         |
-| **Accessibility**               | Captioning support, sign-language resource links, large-text layouts      |
-| **User reflection**             | Journaling prompts; never authoritative judgments                         |
+| **Intake organization** | Sort form fields, missing-info prompts |
+| **Note summarization** | Session summaries user approves before save |
+| **Pattern hints** | «You logged shoulder tension after desk days» — tentative, not diagnostic |
+| **Gentle wellness suggestions** | Stretch reminders, hydration nudges — user can dismiss |
+| **Safety concern flags** | «Report mentions unventilated space» → queue for **human** review |
+| **Accessibility** | Captioning support, sign-language resource links, large-text layouts |
+| **User reflection** | Journaling prompts; never authoritative judgments |
 
 All outputs labeled **assistive**, revisable, and stoppable.
 
@@ -30,16 +30,16 @@ All outputs labeled **assistive**, revisable, and stoppable.
 
 ## AI must not
 
-| Forbidden                                                | Reason                                 |
+| Forbidden | Reason |
 | -------------------------------------------------------- | -------------------------------------- |
-| **Diagnose** human or animal conditions                  | Not licensed clinical AI               |
-| **Replace doctors or veterinarians**                     | Legal and safety boundary              |
-| **Claim certainty from voice/image**                     | Probabilistic models ≠ truth           |
-| **Lie detection**                                        | Unreliable and harmful in care context |
-| **Predict criminality**                                  | Discriminatory and out of scope        |
-| **Secretly analyze emotions**                            | Covert profiling violates charter      |
-| **Final complaint decisions**                            | Trust engine requires human triage     |
-| **Trigger emergency contact without user-enabled rules** | No autonomous dispatch                 |
+| **Diagnose** human or animal conditions | Not licensed clinical AI |
+| **Replace doctors or veterinarians** | Legal and safety boundary |
+| **Claim certainty from voice/image** | Probabilistic models ≠ truth |
+| **Lie detection** | Unreliable and harmful in care context |
+| **Predict criminality** | Discriminatory and out of scope |
+| **Secretly analyze emotions** | Covert profiling violates charter |
+| **Final complaint decisions** | Trust engine requires human triage |
+| **Trigger emergency contact without user-enabled rules** | No autonomous dispatch |
 
 ---
 

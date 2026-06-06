@@ -26,12 +26,12 @@ Used **only when necessary** for:
 
 **Data minimization is mandatory** — collect the least data that satisfies the trust level.
 
-| Verification element | When optional      | When may be required                                  |
+| Verification element | When optional | When may be required |
 | -------------------- | ------------------ | ----------------------------------------------------- |
-| Phone/email OTP      | Always recommended | High-trust home visit                                 |
-| Government ID        | Default **off**    | Repeat home visits, animal handover, operator charter |
-| Address proof        | Default **off**    | Recurring home service in pilot phase                 |
-| Reference contact    | Optional           | Elder recurring care                                  |
+| Phone/email OTP | Always recommended | High-trust home visit |
+| Government ID | Default **off** | Repeat home visits, animal handover, operator charter |
+| Address proof | Default **off** | Recurring home service in pilot phase |
+| Reference contact | Optional | Elder recurring care |
 
 ID verification **may** be used only when necessary — never as default for all users.
 
@@ -65,14 +65,14 @@ ID verification **may** be used only when necessary — never as default for all
 
 ## Practitioner arrival and check-in
 
-| Step                      | Action                                                                       |
+| Step | Action |
 | ------------------------- | ---------------------------------------------------------------------------- |
-| **Pre-arrival**           | User receives expected arrival window (not exact tracking by default)        |
-| **Arrival**               | Practitioner checks in via agreed channel (SMS/app in future phase)          |
-| **Identity confirm**      | User confirms practitioner matches booked profile (human visual / code word) |
-| **Pre-session agreement** | Allowed services reconfirmed; pressure and stop signals reviewed             |
-| **During**                | Stop / pause / reduce pressure signals honored immediately                   |
-| **Safe exit**             | Session end confirmed; user not pressured for gratitude or upsell            |
+| **Pre-arrival** | User receives expected arrival window (not exact tracking by default) |
+| **Arrival** | Practitioner checks in via agreed channel (SMS/app in future phase) |
+| **Identity confirm** | User confirms practitioner matches booked profile (human visual / code word) |
+| **Pre-session agreement** | Allowed services reconfirmed; pressure and stop signals reviewed |
+| **During** | Stop / pause / reduce pressure signals honored immediately |
+| **Safe exit** | Session end confirmed; user not pressured for gratitude or upsell |
 
 ---
 
@@ -89,12 +89,12 @@ Must include:
 
 ## Allowed / not allowed services (summary)
 
-| Allowed (comfort/support)                                                               | Not allowed                        |
+| Allowed (comfort/support) | Not allowed |
 | --------------------------------------------------------------------------------------- | ---------------------------------- |
-| Relaxation massage, stretching guidance                                                 | Diagnosis, prescription, injection |
-| Elder conversation and safety check                                                     | Clinical nursing without license   |
-| Pet brushing, calm presence, comfort routines                                           | Veterinary surgery or treatment    |
-| Atmosphere setup per [ATMOSPHERE_AND_SENSORY_LAYER.md](ATMOSPHERE_AND_SENSORY_LAYER.md) | Hidden camera or microphone        |
+| Relaxation massage, stretching guidance | Diagnosis, prescription, injection |
+| Elder conversation and safety check | Clinical nursing without license |
+| Pet brushing, calm presence, comfort routines | Veterinary surgery or treatment |
+| Atmosphere setup per [ATMOSPHERE_AND_SENSORY_LAYER.md](ATMOSPHERE_AND_SENSORY_LAYER.md) | Hidden camera or microphone |
 
 ---
 

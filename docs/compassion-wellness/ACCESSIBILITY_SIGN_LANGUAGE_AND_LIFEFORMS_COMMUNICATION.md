@@ -22,14 +22,14 @@ Ensure **nonverbal**, **Deaf**, **hard of hearing**, **elder**, **disabled**, an
 
 Universal comfort signals (customizable per user):
 
-| Signal              | Meaning                        |
+| Signal | Meaning |
 | ------------------- | ------------------------------ |
-| **Open palm stop**  | Stop immediately               |
-| **Pause**           | Hold position, check in        |
-| **Reduce pressure** | Lighter touch now              |
-| **Water**           | Request drink break            |
-| **Discomfort**      | Change position or end session |
-| **Thumbs up**       | Continue as is                 |
+| **Open palm stop** | Stop immediately |
+| **Pause** | Hold position, check in |
+| **Reduce pressure** | Lighter touch now |
+| **Water** | Request drink break |
+| **Discomfort** | Change position or end session |
+| **Thumbs up** | Continue as is |
 
 Practitioners trained to honor signals over verbal politeness.
 
@@ -45,12 +45,12 @@ Practitioners trained to honor signals over verbal politeness.
 
 ## User groups
 
-| Group               | Accommodations                                                |
+| Group | Accommodations |
 | ------------------- | ------------------------------------------------------------- |
-| **Nonverbal users** | Gesture deck, AAC integration hook (future)                   |
-| **Elder users**     | Large text, high contrast, slower pacing defaults             |
-| **Disabled users**  | Adjustable session position, equipment access notes           |
-| **Children**        | Guardian consent; age-appropriate boundaries (future charter) |
+| **Nonverbal users** | Gesture deck, AAC integration hook (future) |
+| **Elder users** | Large text, high contrast, slower pacing defaults |
+| **Disabled users** | Adjustable session position, equipment access notes |
+| **Children** | Guardian consent; age-appropriate boundaries (future charter) |
 
 ---
 

@@ -12,12 +12,12 @@ Ensure wellness, elder, and animal care paths do not end abruptly at session clo
 
 ## Care journey types
 
-| Journey                    | Follow-up focus                                                              |
+| Journey | Follow-up focus |
 | -------------------------- | ---------------------------------------------------------------------------- |
-| **Human wellness**         | Muscle soreness norms, hydration, rest, stretch homework                     |
-| **Elder care**             | Loneliness check, medication **reminder user already uses** (no prescribing) |
-| **Animal foster/adoption** | Adjustment, eating, bonding, environment safety                              |
-| **Session aftercare**      | Immediate debrief and stop-signal review                                     |
+| **Human wellness** | Muscle soreness norms, hydration, rest, stretch homework |
+| **Elder care** | Loneliness check, medication **reminder user already uses** (no prescribing) |
+| **Animal foster/adoption** | Adjustment, eating, bonding, environment safety |
+| **Session aftercare** | Immediate debrief and stop-signal review |
 
 ---
 
@@ -35,23 +35,23 @@ Critical answers route to [TRUST_AND_FEEDBACK_ENGINE.md](TRUST_AND_FEEDBACK_ENGI
 
 ## Practical aftercare
 
-| Reminder type      | Example                                        |
+| Reminder type | Example |
 | ------------------ | ---------------------------------------------- |
-| **Hydration**      | Water after massage                            |
-| **Rest**           | Avoid heavy workout same day                   |
-| **Stretch**        | Gentle neck rolls if agreed in session         |
+| **Hydration** | Water after massage |
+| **Rest** | Avoid heavy workout same day |
+| **Stretch** | Gentle neck rolls if agreed in session |
 | **Pet adjustment** | Quiet room, familiar blanket, litter placement |
 
 ---
 
 ## Suggested intervals
 
-| Interval             | Typical use                               |
+| Interval | Typical use |
 | -------------------- | ----------------------------------------- |
-| **Same day**         | «How do you feel now?» — brief            |
-| **Day 1**            | Soreness check, animal eating             |
-| **Week 1**           | Habit continuation, foster settling       |
-| **Month 1**          | Rehome stability, elder loneliness trend  |
+| **Same day** | «How do you feel now?» — brief |
+| **Day 1** | Soreness check, animal eating |
+| **Week 1** | Habit continuation, foster settling |
+| **Month 1** | Rehome stability, elder loneliness trend |
 | **Custom recurring** | User-defined cadence with snooze and stop |
 
 Future Phase 3 scheduler: **consent-based reminders only** — no spam.

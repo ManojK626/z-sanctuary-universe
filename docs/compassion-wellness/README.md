@@ -26,13 +26,13 @@ Core grounding quote:
 
 ## What this ecosystem is not
 
-| Not in scope (Phase 0)                                   | Never implied by doctrine                            |
+| Not in scope (Phase 0) | Never implied by doctrine |
 | -------------------------------------------------------- | ---------------------------------------------------- |
-| Backend, database, or live APIs                          | Medical or veterinary diagnosis or treatment         |
-| Payments, billing, or tipping enforcement                | Miracle cures or guaranteed healing                  |
+| Backend, database, or live APIs | Medical or veterinary diagnosis or treatment |
+| Payments, billing, or tipping enforcement | Miracle cures or guaranteed healing |
 | Media upload or identity verification **implementation** | Hidden surveillance or autonomous emergency dispatch |
-| Home-visit booking logic or animal marketplace           | Sexual services or exploitation of vulnerable people |
-| Live AI analysis, camera/microphone capture              | Coercive gratitude or wealth-based safety tiers      |
+| Home-visit booking logic or animal marketplace | Sexual services or exploitation of vulnerable people |
+| Live AI analysis, camera/microphone capture | Coercive gratitude or wealth-based safety tiers |
 
 This phase is **documentation only**. No code runtime, upload pipeline, payment rail, or emergency feature is shipped.
 
@@ -42,34 +42,34 @@ This phase is **documentation only**. No code runtime, upload pipeline, payment 
 
 Z-Sanctuary’s operational roof treats **care, consent, and non-harm** as first-class governance — not as a bolt-on product feature.
 
-| Z-Sanctuary layer                      | Connection                                                                      |
+| Z-Sanctuary layer | Connection |
 | -------------------------------------- | ------------------------------------------------------------------------------- |
-| **Hierarchy Chief / Z-Super Overseer** | Placement of wellness modules under governed oversight                          |
-| **AI Tower / mini-bots**               | Future **assistive** routing only — organize, summarize, suggest; humans decide |
-| **Zuno**                               | Reflection and state posture — not autonomous care authority                    |
-| **14 DRP / Z-SWARM law**               | Compassion anchor; no automated moral oracle                                    |
-| **Trust & audit modules**              | Aligns with existing trust/governance stubs (e.g. SEPC, heartpulse boundaries)  |
-| **Turtle Mode**                        | Docs before implementation; human gates before sensitive moves                  |
+| **Hierarchy Chief / Z-Super Overseer** | Placement of wellness modules under governed oversight |
+| **AI Tower / mini-bots** | Future **assistive** routing only — organize, summarize, suggest; humans decide |
+| **Zuno** | Reflection and state posture — not autonomous care authority |
+| **14 DRP / Z-SWARM law** | Compassion anchor; no automated moral oracle |
+| **Trust & audit modules** | Aligns with existing trust/governance stubs (e.g. SEPC, heartpulse boundaries) |
+| **Turtle Mode** | Docs before implementation; human gates before sensitive moves |
 
 ---
 
 ## Document pack
 
-| Document                                                                                                                 | Purpose                                      |
+| Document | Purpose |
 | ------------------------------------------------------------------------------------------------------------------------ | -------------------------------------------- |
-| [COMPASSION_WELLNESS_CHARTER.md](COMPASSION_WELLNESS_CHARTER.md)                                                         | Ethical foundation, allowed/forbidden        |
-| [TRUST_AND_FEEDBACK_ENGINE.md](TRUST_AND_FEEDBACK_ENGINE.md)                                                             | Multi-dimensional trust and complaint triage |
-| [HOME_VISIT_AND_REGISTRATION_PROTOCOL.md](HOME_VISIT_AND_REGISTRATION_PROTOCOL.md)                                       | Registration, home visits, safety            |
-| [PRIVACY_AND_USER_DATA_OWNERSHIP.md](PRIVACY_AND_USER_DATA_OWNERSHIP.md)                                                 | User-owned data and privacy levels           |
-| [AI_OBSERVATION_AND_ANALYSIS_LIMITS.md](AI_OBSERVATION_AND_ANALYSIS_LIMITS.md)                                           | AI assists; humans decide                    |
-| [ATMOSPHERE_AND_SENSORY_LAYER.md](ATMOSPHERE_AND_SENSORY_LAYER.md)                                                       | Mood presets and sensory comfort             |
-| [TOOLS_EQUIPMENT_AND_PLANT_SUPPORT_POLICY.md](TOOLS_EQUIPMENT_AND_PLANT_SUPPORT_POLICY.md)                               | Tools, plants, safety notes                  |
-| [ANIMAL_COMPANION_CARE_AND_REHOMING.md](ANIMAL_COMPANION_CARE_AND_REHOMING.md)                                           | Fostering, rehoming, anti-exploitation       |
-| [GRATITUDE_AND_COMMUNITY_SUPPORT_SYSTEM.md](GRATITUDE_AND_COMMUNITY_SUPPORT_SYSTEM.md)                                   | Optional gratitude — never coercion          |
-| [FOLLOW_UP_AND_CONTINUITY_OF_CARE.md](FOLLOW_UP_AND_CONTINUITY_OF_CARE.md)                                               | Care timelines and check-ins                 |
-| [ACCESSIBILITY_SIGN_LANGUAGE_AND_LIFEFORMS_COMMUNICATION.md](ACCESSIBILITY_SIGN_LANGUAGE_AND_LIFEFORMS_COMMUNICATION.md) | Inclusion and communication signals          |
-| [TURTLE_MODE_ROADMAP.md](TURTLE_MODE_ROADMAP.md)                                                                         | Phased build plan (0–10)                     |
-| [PHASE_0_GREEN_RECEIPT.md](PHASE_0_GREEN_RECEIPT.md)                                                                     | Phase 0 completion receipt                   |
+| [COMPASSION_WELLNESS_CHARTER.md](COMPASSION_WELLNESS_CHARTER.md) | Ethical foundation, allowed/forbidden |
+| [TRUST_AND_FEEDBACK_ENGINE.md](TRUST_AND_FEEDBACK_ENGINE.md) | Multi-dimensional trust and complaint triage |
+| [HOME_VISIT_AND_REGISTRATION_PROTOCOL.md](HOME_VISIT_AND_REGISTRATION_PROTOCOL.md) | Registration, home visits, safety |
+| [PRIVACY_AND_USER_DATA_OWNERSHIP.md](PRIVACY_AND_USER_DATA_OWNERSHIP.md) | User-owned data and privacy levels |
+| [AI_OBSERVATION_AND_ANALYSIS_LIMITS.md](AI_OBSERVATION_AND_ANALYSIS_LIMITS.md) | AI assists; humans decide |
+| [ATMOSPHERE_AND_SENSORY_LAYER.md](ATMOSPHERE_AND_SENSORY_LAYER.md) | Mood presets and sensory comfort |
+| [TOOLS_EQUIPMENT_AND_PLANT_SUPPORT_POLICY.md](TOOLS_EQUIPMENT_AND_PLANT_SUPPORT_POLICY.md) | Tools, plants, safety notes |
+| [ANIMAL_COMPANION_CARE_AND_REHOMING.md](ANIMAL_COMPANION_CARE_AND_REHOMING.md) | Fostering, rehoming, anti-exploitation |
+| [GRATITUDE_AND_COMMUNITY_SUPPORT_SYSTEM.md](GRATITUDE_AND_COMMUNITY_SUPPORT_SYSTEM.md) | Optional gratitude — never coercion |
+| [FOLLOW_UP_AND_CONTINUITY_OF_CARE.md](FOLLOW_UP_AND_CONTINUITY_OF_CARE.md) | Care timelines and check-ins |
+| [ACCESSIBILITY_SIGN_LANGUAGE_AND_LIFEFORMS_COMMUNICATION.md](ACCESSIBILITY_SIGN_LANGUAGE_AND_LIFEFORMS_COMMUNICATION.md) | Inclusion and communication signals |
+| [TURTLE_MODE_ROADMAP.md](TURTLE_MODE_ROADMAP.md) | Phased build plan (0–10) |
+| [PHASE_0_GREEN_RECEIPT.md](PHASE_0_GREEN_RECEIPT.md) | Phase 0 completion receipt |
 
 ---
 

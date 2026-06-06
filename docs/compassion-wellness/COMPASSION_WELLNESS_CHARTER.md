@@ -25,31 +25,31 @@ Help **life care for life** — humans, elders, disabled users, families, practi
 
 ## Sacred boundaries
 
-| Boundary                              | Rule                                                                                    |
+| Boundary | Rule |
 | ------------------------------------- | --------------------------------------------------------------------------------------- |
-| **No sexual services**                | Wellness and comfort care only; no erotic or sexual service framing.                    |
+| **No sexual services** | Wellness and comfort care only; no erotic or sexual service framing. |
 | **No medical/veterinary replacement** | Comfort, relaxation, and support — not diagnosis, prescription, or emergency treatment. |
-| **No miracle claims**                 | No guaranteed healing, miracle cures, or certainty language.                            |
-| **No coercive gratitude**             | Gratitude and gifts are optional; never tied to safety or access.                       |
-| **No hidden surveillance**            | No secret recording, tracking, or emotion scoring.                                      |
-| **No exploitation**                   | Vulnerable people and animals must not be used for profit, resale, or control.          |
+| **No miracle claims** | No guaranteed healing, miracle cures, or certainty language. |
+| **No coercive gratitude** | Gratitude and gifts are optional; never tied to safety or access. |
+| **No hidden surveillance** | No secret recording, tracking, or emotion scoring. |
+| **No exploitation** | Vulnerable people and animals must not be used for profit, resale, or control. |
 
 ---
 
 ## Allowed / Forbidden
 
-| Allowed                                                                    | Forbidden                                                         |
+| Allowed | Forbidden |
 | -------------------------------------------------------------------------- | ----------------------------------------------------------------- |
-| Comfort massage, stretching, relaxation, body-awareness education          | Sexual services or suggestive service marketing                   |
-| Elder check-in support and continuity planning (non-clinical)              | Replacing doctors, nurses, or licensed clinicians                 |
-| Pet comfort care, fostering support, ethical rehoming pathways             | Veterinary diagnosis, treatment claims, or unsafe handover        |
-| Multi-dimensional feedback and human-reviewed complaints                   | Public shaming, automated guilt scoring, hidden blacklists        |
-| Optional gratitude, gifts, volunteer time, transparent ledger **concepts** | Mandatory tipping, guilt fundraising, wealth-based safety tiers   |
-| Sensory atmosphere (music, lighting, aromas) for comfort                   | Health cure claims from atmosphere or plants                      |
-| AI-assisted **organization** of intake and notes (future phases)           | AI-only judgment, lie detection, criminality prediction           |
-| Minimal registration; stronger verification only when necessary            | Excessive data hoarding, selling personal data, secret biometrics |
-| Practitioner and caregiver trust profiles (governed, appealable)           | AI-only punishment or permanent secret bans                       |
-| «AI advises. Humans decide.»                                               | Autonomous emergency dispatch without user-enabled rules          |
+| Comfort massage, stretching, relaxation, body-awareness education | Sexual services or suggestive service marketing |
+| Elder check-in support and continuity planning (non-clinical) | Replacing doctors, nurses, or licensed clinicians |
+| Pet comfort care, fostering support, ethical rehoming pathways | Veterinary diagnosis, treatment claims, or unsafe handover |
+| Multi-dimensional feedback and human-reviewed complaints | Public shaming, automated guilt scoring, hidden blacklists |
+| Optional gratitude, gifts, volunteer time, transparent ledger **concepts** | Mandatory tipping, guilt fundraising, wealth-based safety tiers |
+| Sensory atmosphere (music, lighting, aromas) for comfort | Health cure claims from atmosphere or plants |
+| AI-assisted **organization** of intake and notes (future phases) | AI-only judgment, lie detection, criminality prediction |
+| Minimal registration; stronger verification only when necessary | Excessive data hoarding, selling personal data, secret biometrics |
+| Practitioner and caregiver trust profiles (governed, appealable) | AI-only punishment or permanent secret bans |
+| «AI advises. Humans decide.» | Autonomous emergency dispatch without user-enabled rules |
 
 ---
 

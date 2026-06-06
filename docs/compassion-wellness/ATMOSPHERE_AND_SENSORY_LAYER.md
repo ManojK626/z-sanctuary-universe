@@ -8,19 +8,19 @@
 
 ## Elements
 
-| Element                 | Notes                                                                            |
+| Element | Notes |
 | ----------------------- | -------------------------------------------------------------------------------- |
-| **Music**               | User-selected genres; volume caps; royalty-safe sources in future implementation |
-| **Nature soundscapes**  | Rain, forest, ocean — loop-friendly                                              |
-| **Candles**             | Real flame only with safety checklist; never unattended                          |
-| **Flameless candles**   | Preferred for elder and pet spaces                                               |
-| **Incense / aroma**     | Optional; **allergy/asthma warnings** required                                   |
-| **Lighting**            | Warm dim, adjustable; avoid strobe                                               |
-| **Room temperature**    | User preference note; no medical claims                                          |
-| **Homemade oils**       | Label ingredients; patch-test guidance                                           |
-| **Herbal warmth packs** | External use; temperature limits                                                 |
-| **Calm room profiles**  | Saved preset bundles                                                             |
-| **Pet-safe atmosphere** | No toxic diffusers; species-specific cautions                                    |
+| **Music** | User-selected genres; volume caps; royalty-safe sources in future implementation |
+| **Nature soundscapes** | Rain, forest, ocean — loop-friendly |
+| **Candles** | Real flame only with safety checklist; never unattended |
+| **Flameless candles** | Preferred for elder and pet spaces |
+| **Incense / aroma** | Optional; **allergy/asthma warnings** required |
+| **Lighting** | Warm dim, adjustable; avoid strobe |
+| **Room temperature** | User preference note; no medical claims |
+| **Homemade oils** | Label ingredients; patch-test guidance |
+| **Herbal warmth packs** | External use; temperature limits |
+| **Calm room profiles** | Saved preset bundles |
+| **Pet-safe atmosphere** | No toxic diffusers; species-specific cautions |
 
 ---
 
@@ -38,15 +38,15 @@ Before applying a preset, surface:
 
 ## Mood presets
 
-| Preset              | Character                                          |
+| Preset | Character |
 | ------------------- | -------------------------------------------------- |
-| **Rain Calm**       | Soft rain, low light, cool-neutral tone            |
-| **Sunset Warmth**   | Amber light, slow acoustic                         |
-| **Forest Balance**  | Birds + light breeze, green-toned light            |
+| **Rain Calm** | Soft rain, low light, cool-neutral tone |
+| **Sunset Warmth** | Amber light, slow acoustic |
+| **Forest Balance** | Birds + light breeze, green-toned light |
 | **Island Serenity** | Ocean waves, warm humidity feel (visual copy only) |
-| **Elder Ease**      | High contrast option, no strobe, flameless default |
-| **Pet Comfort**     | Low scent, gentle tempo, no ultrasonic devices     |
-| **Deep Relaxation** | Minimal stimulation, long exhale pacing copy       |
+| **Elder Ease** | High contrast option, no strobe, flameless default |
+| **Pet Comfort** | Low scent, gentle tempo, no ultrasonic devices |
+| **Deep Relaxation** | Minimal stimulation, long exhale pacing copy |
 
 Presets are **starting points** — user overrides always win.
 

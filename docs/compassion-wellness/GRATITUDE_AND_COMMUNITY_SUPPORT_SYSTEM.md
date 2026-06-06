@@ -14,14 +14,14 @@ Allow **optional** expressions of thanks and community aid — without guilt pre
 
 ## Optional gratitude channels
 
-| Channel              | Notes                                                                          |
+| Channel | Notes |
 | -------------------- | ------------------------------------------------------------------------------ |
-| **Money**            | Future phased rails — transparent fees disclosure; never default-on            |
-| **Gifts**            | Physical items declared; no surprise shipping to practitioners without consent |
-| **Food**             | Meal shares, community kitchens — allergy disclosure                           |
-| **Pet food**         | Rescue and foster support                                                      |
-| **Useful materials** | Linens, tools, transport help                                                  |
-| **Volunteer time**   | Logged hours toward community support fund                                     |
+| **Money** | Future phased rails — transparent fees disclosure; never default-on |
+| **Gifts** | Physical items declared; no surprise shipping to practitioners without consent |
+| **Food** | Meal shares, community kitchens — allergy disclosure |
+| **Pet food** | Rescue and foster support |
+| **Useful materials** | Linens, tools, transport help |
+| **Volunteer time** | Logged hours toward community support fund |
 
 All channels: **user-initiated**, **skippable**, **no nag screens**.
 
@@ -38,12 +38,12 @@ All channels: **user-initiated**, **skippable**, **no nag screens**.
 
 ## Transparency ledger (concept)
 
-| Field                    | Visibility                                         |
+| Field | Visibility |
 | ------------------------ | -------------------------------------------------- |
-| Donation category totals | Public aggregate                                   |
-| Individual donor         | Opt-in anonymous                                   |
-| Recipient category       | Public program level only                          |
-| Practitioner tip         | Private between parties unless donor opts to share |
+| Donation category totals | Public aggregate |
+| Individual donor | Opt-in anonymous |
+| Recipient category | Public program level only |
+| Practitioner tip | Private between parties unless donor opts to share |
 
 ---
 

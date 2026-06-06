@@ -15,15 +15,15 @@ Build **fair, transparent, human-governed** trust between users, practitioners, 
 
 Feedback captures **dimensions**, not a single score:
 
-| Dimension             | Examples                                             |
+| Dimension | Examples |
 | --------------------- | ---------------------------------------------------- |
-| **Respect**           | Dignity, boundaries honored, tone                    |
-| **Communication**     | Clarity, listening, language accessibility           |
-| **Comfort**           | Felt safe, pace appropriate                          |
-| **Hygiene**           | Clean space, tools, linens                           |
+| **Respect** | Dignity, boundaries honored, tone |
+| **Communication** | Clarity, listening, language accessibility |
+| **Comfort** | Felt safe, pace appropriate |
+| **Hygiene** | Clean space, tools, linens |
 | **Pressure accuracy** | Too light / too firm / just right (wellness context) |
-| **Safety**            | Hazards reported, stop signals honored               |
-| **Punctuality**       | Arrival, session length, follow-up timeliness        |
+| **Safety** | Hazards reported, stop signals honored |
+| **Punctuality** | Arrival, session length, follow-up timeliness |
 
 Optional free-text with **consent** for sharing scope (private to platform / shared with practitioner / anonymized aggregate only).
 
@@ -31,11 +31,11 @@ Optional free-text with **consent** for sharing scope (private to platform / sha
 
 ## Complaint categories
 
-| Level        | Examples                                                                  | Default handling                                                               |
+| Level | Examples | Default handling |
 | ------------ | ------------------------------------------------------------------------- | ------------------------------------------------------------------------------ |
-| **Minor**    | Late arrival, preference mismatch, small communication issue              | Log → practitioner notified → human review if pattern repeats                  |
-| **Moderate** | Repeated boundary issues, hygiene concern, misleading service description | Human triage within defined SLA; pause new bookings pending review             |
-| **Critical** | Assault allegation, abuse of vulnerable user/animal, theft, coercion      | Immediate human escalation; preserve evidence per policy; **no** automated ban |
+| **Minor** | Late arrival, preference mismatch, small communication issue | Log → practitioner notified → human review if pattern repeats |
+| **Moderate** | Repeated boundary issues, hygiene concern, misleading service description | Human triage within defined SLA; pause new bookings pending review |
+| **Critical** | Assault allegation, abuse of vulnerable user/animal, theft, coercion | Immediate human escalation; preserve evidence per policy; **no** automated ban |
 
 ---
 
@@ -56,12 +56,12 @@ Report submitted
 
 ## Trust profiles
 
-| Profile                   | Contents (conceptual)                                                                                                                             |
+| Profile | Contents (conceptual) |
 | ------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **Practitioner**          | Verified training declarations (self-attested until chartered verify), dimension averages, complaint history (governed visibility), appeal status |
-| **User**                  | Reliability (no-show, respectful conduct), **not** a “guilt score”                                                                                |
-| **Animal caregiver**      | Foster/rehome reliability, handover documentation quality, follow-up completion                                                                   |
-| **Follow-up reliability** | Did agreed check-ins occur (human wellness, elder, animal)                                                                                        |
+| **Practitioner** | Verified training declarations (self-attested until chartered verify), dimension averages, complaint history (governed visibility), appeal status |
+| **User** | Reliability (no-show, respectful conduct), **not** a “guilt score” |
+| **Animal caregiver** | Foster/rehome reliability, handover documentation quality, follow-up completion |
+| **Follow-up reliability** | Did agreed check-ins occur (human wellness, elder, animal) |
 
 All profiles: **appealable**, **auditable**, **no hidden blacklist**.
 

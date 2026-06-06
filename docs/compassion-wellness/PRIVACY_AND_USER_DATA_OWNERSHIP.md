@@ -12,27 +12,27 @@
 
 ## User rights
 
-| Right                    | Description                                                                                            |
+| Right | Description |
 | ------------------------ | ------------------------------------------------------------------------------------------------------ |
-| **Ownership**            | Wellness notes, preferences, complaints, and animal profiles belong to the user or designated guardian |
-| **Control sharing**      | Per-field or per-document sharing with practitioner, caregiver, or family                              |
-| **Control deletion**     | Export and delete requests honored within defined retention law (legal hold excepted by human process) |
-| **Choose privacy level** | See levels below — default to least exposure                                                           |
-| **Optional cloud sync**  | Off by default; local-first recommended                                                                |
-| **No sale**              | Personal data is never sold or rented                                                                  |
-| **No hidden analytics**  | No secret telemetry or behavioral profiling                                                            |
-| **No secret recordings** | Audio/video only with explicit, session-scoped consent                                                 |
-| **No forced biometrics** | Face, voiceprint, or gait ID never required for basic wellness                                         |
+| **Ownership** | Wellness notes, preferences, complaints, and animal profiles belong to the user or designated guardian |
+| **Control sharing** | Per-field or per-document sharing with practitioner, caregiver, or family |
+| **Control deletion** | Export and delete requests honored within defined retention law (legal hold excepted by human process) |
+| **Choose privacy level** | See levels below — default to least exposure |
+| **Optional cloud sync** | Off by default; local-first recommended |
+| **No sale** | Personal data is never sold or rented |
+| **No hidden analytics** | No secret telemetry or behavioral profiling |
+| **No secret recordings** | Audio/video only with explicit, session-scoped consent |
+| **No forced biometrics** | Face, voiceprint, or gait ID never required for basic wellness |
 
 ---
 
 ## Privacy levels
 
-| Level                      | Data collected                                                     | Sharing                              | AI / cloud                                                     |
+| Level | Data collected | Sharing | AI / cloud |
 | -------------------------- | ------------------------------------------------------------------ | ------------------------------------ | -------------------------------------------------------------- |
-| **Minimal Mode**           | Name alias, session date, allowed service type                     | None beyond practitioner of record   | Local notes only; no cloud                                     |
-| **Wellness Mode**          | Preferences, atmosphere presets, follow-up reminders               | Practitioner + user only             | Optional encrypted sync                                        |
-| **Advanced Insight Mode**  | Patterns across sessions (hydration reminders, stretch logs)       | User-approved aggregates             | AI summarize with human-visible outputs                        |
+| **Minimal Mode** | Name alias, session date, allowed service type | None beyond practitioner of record | Local notes only; no cloud |
+| **Wellness Mode** | Preferences, atmosphere presets, follow-up reminders | Practitioner + user only | Optional encrypted sync |
+| **Advanced Insight Mode** | Patterns across sessions (hydration reminders, stretch logs) | User-approved aggregates | AI summarize with human-visible outputs |
 | **Emergency Support Mode** | Emergency contacts, location hint, medical **notes user provides** | Contacts per user-enabled rules only | **No** auto-dispatch; user rules trigger human-reviewed alerts |
 
 Escalation to a higher level requires **explicit opt-in** and plain-language explanation.

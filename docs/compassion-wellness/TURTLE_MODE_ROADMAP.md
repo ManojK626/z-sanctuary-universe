@@ -6,19 +6,19 @@
 
 ## Phase overview
 
-| Phase  | Name                              | Deliverables                                            | Forbidden                     |
-| ------ | --------------------------------- | ------------------------------------------------------- | ----------------------------- |
-| **0**  | Doctrine only                     | This doc pack, green receipt, INDEX links               | Any runtime                   |
-| **1**  | Forms & local prototype           | Static consent + intake HTML/MD forms, local-only notes | Live booking, API             |
-| **2**  | Trust & feedback prototype        | Review forms, complaint categories, follow-up templates | Auto punishment, public shame |
-| **3**  | Wellness scheduler                | Consent-based reminders, care timelines                 | Spam, auto emergency          |
-| **4**  | Animal companion profiles         | Animal care forms, rehoming draft workflows             | Marketplace, sale payments    |
-| **5**  | Atmosphere presets                | Sensory preference UI mock                              | Medical claims                |
-| **6**  | AI assistance                     | Summarization + safety flags only                       | Diagnosis, lie detection      |
-| **7**  | Home visit pilot                  | Human-reviewed, limited geography, strict verify        | Autonomous dispatch           |
-| **8**  | Community support                 | Gratitude, donations, material aid ledger               | Coercive tipping              |
-| **9**  | Advanced accessibility            | Sign language resources, gesture UI, multilingual       | Certified interp replacement  |
-| **10** | Advanced environment intelligence | Context-aware atmosphere suggestions                    | Surveillance, always-on AV    |
+| Phase | Name | Deliverables | Forbidden |
+| --- | --- | --- | --- |
+| **0** | Doctrine only | This doc pack, green receipt, INDEX links | Any runtime |
+| **1** | Forms & local prototype | Static consent + intake HTML/MD forms, local-only notes | Live booking, API |
+| **2** | Trust & feedback prototype | Review forms, complaint categories, follow-up templates | Auto punishment, public shame |
+| **3** | Wellness scheduler | Consent-based reminders, care timelines | Spam, auto emergency |
+| **4** | Animal companion profiles | Animal care forms, rehoming draft workflows | Marketplace, sale payments |
+| **5** | Atmosphere presets | Sensory preference UI mock | Medical claims |
+| **6** | AI assistance | Summarization + safety flags only | Diagnosis, lie detection |
+| **7** | Home visit pilot | Human-reviewed, limited geography, strict verify | Autonomous dispatch |
+| **8** | Community support | Gratitude, donations, material aid ledger | Coercive tipping |
+| **9** | Advanced accessibility | Sign language resources, gesture UI, multilingual | Certified interp replacement |
+| **10** | Advanced environment intelligence | Context-aware atmosphere suggestions | Surveillance, always-on AV |
 
 ---
 
