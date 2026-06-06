@@ -1,0 +1,105 @@
+{
+  "schema": "z_civd_capability_seed_v1",
+  "phase": "Z-CIVD-0",
+  "status": "doctrine_only",
+  "runtime_status": "closed",
+  "deployment_status": "closed",
+  "human_gate_required": true,
+  "capabilities": [
+    {
+      "id": "creation_intake",
+      "name": "Creation Intake",
+      "status": "conceptual",
+      "description": "Clarifies the human idea, purpose, constraints, and desired outcome."
+    },
+    {
+      "id": "life_impact_review",
+      "name": "Life Impact Review",
+      "status": "conceptual",
+      "description": "Reviews effects on people, animals, ecosystems, and future generations."
+    },
+    {
+      "id": "local_resource_intelligence",
+      "name": "Local Resource Intelligence",
+      "status": "conceptual",
+      "description": "Surfaces local materials, skills, climate, and repair culture without provider APIs."
+    },
+    {
+      "id": "biosphere_protection",
+      "name": "Biosphere Protection Layer",
+      "status": "conceptual",
+      "description": "Z-Life Check, habitat, water, soil, waste, and regenerative alternatives."
+    },
+    {
+      "id": "diamond_cube_analysis",
+      "name": "360 Diamond Cube Analysis",
+      "status": "conceptual",
+      "description": "Multidimensional compare across safety, cost, materials, ecology, and stewardship."
+    },
+    {
+      "id": "versioned_design_options",
+      "name": "Versioned Design Options",
+      "status": "conceptual",
+      "description": "Version 1/2/3 pathways with human-selected trade-offs."
+    },
+    {
+      "id": "regeneration_plan",
+      "name": "Regeneration / Give-Back Plan",
+      "status": "conceptual",
+      "description": "Consume less than restore — planting, water reuse, habitat buffer, skill share."
+    },
+    {
+      "id": "living_harmony_score",
+      "name": "Living Harmony Score",
+      "status": "conceptual_advisory_only",
+      "description": "Advisory discussion signal only — not certification or build approval."
+    },
+    {
+      "id": "minibot_registry",
+      "name": "Conceptual Mini-Bot Registry",
+      "status": "conceptual",
+      "description": "Named review lenses (IntakeBot, SiteBot, MaterialBot, etc.) — no autonomous execution."
+    }
+  ],
+  "minibots": [
+    "Z-IntakeBot",
+    "Z-SiteBot",
+    "Z-MaterialBot",
+    "Z-BioSphereBot",
+    "Z-StructureBot",
+    "Z-CostBot",
+    "Z-CraftBot",
+    "Z-LegalBot",
+    "Z-VersionBot",
+    "Z-RegenerationBot"
+  ],
+  "biosphere_laws": [
+    "Avoid animal-derived materials where alternatives exist.",
+    "Prefer regenerative, reclaimed, recycled, low-impact, locally repairable resources.",
+    "Do not treat nature as unlimited inventory.",
+    "Every creation should include a give-back or regeneration plan."
+  ],
+  "forbidden_without_future_charter": [
+    "runtime_app",
+    "database",
+    "provider_api",
+    "gis_sdk",
+    "payment_system",
+    "material_purchase",
+    "professional_certification_claim",
+    "autonomous_build_agent",
+    "cloudflare_deployment",
+    "user_accounts",
+    "file_uploads",
+    "live_engineering_sign_off"
+  ],
+  "related_docs": [
+    "docs/z-civd/Z_CIVD_CHARTER.md",
+    "docs/z-civd/Z_CIVD_LIVING_CREATION_DOCTRINE.md",
+    "docs/z-civd/Z_CIVD_360_DIAMOND_CUBE_MODEL.md",
+    "docs/z-civd/Z_CIVD_BIOSPHERE_PROTECTION_LAYER.md",
+    "docs/z-civd/Z_CIVD_MINIBOT_REGISTRY.md",
+    "docs/z-civd/Z_CIVD_PHASE_ROADMAP.md",
+    "docs/z-civd/PHASE_Z_CIVD_0_GREEN_RECEIPT.md"
+  ]
+}
