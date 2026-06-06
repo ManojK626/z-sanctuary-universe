@@ -38,6 +38,7 @@ Full release posture still uses **`npm run verify:full:technical`** or **`npm ru
 
 | Doc | Role |
 | --------------------------------------------------------------------------------------- | ------------------------------------------------------------------- |
+| [Z_GITHUB_FRESH_BRANCH_MERGE_LANE.md](Z_GITHUB_FRESH_BRANCH_MERGE_LANE.md) | Fresh-branch merge law — clean doctrine lanes first; no stale PR rebase jungle |
 | [VOICE_COMMAND_PROTOCOL.md](VOICE_COMMAND_PROTOCOL.md) | Voice mode: submit keywords (`zgo`) vs full doctrine |
 | [AI_BUILDER_CONTEXT.md](../AI_BUILDER_CONTEXT.md) | Registry-grounded builder briefing |
 | [Z_SANCTUARY_BUILD_RULES.md](../Z_SANCTUARY_BUILD_RULES.md) | Evidence-first, no hallucinated features |

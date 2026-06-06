@@ -7,6 +7,7 @@
 - Read [Z_MASTER_REQUIREMENTS_QUEUE.md](Z_MASTER_REQUIREMENTS_QUEUE.md) and obey **READY / BLOCKED** posture.
 - Prefer hub truth: `data/z_master_module_registry.json`, MAOS manifests, [AI_BUILDER_CONTEXT.md](../AI_BUILDER_CONTEXT.md).
 - State **exact files** you will touch before editing; keep one domain per change set when possible (per Turtle Mode).
+- For stale GitHub PRs: **fresh branch from `origin/main`** — do not rebase old conflict jungle by default ([Z_GITHUB_FRESH_BRANCH_MERGE_LANE.md](Z_GITHUB_FRESH_BRANCH_MERGE_LANE.md)).
 - Run only **verification commands listed in the prompt** or standard hub read-only scripts.
 
 ## Never (unless explicit human charter says otherwise)
