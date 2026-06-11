@@ -235,4 +235,18 @@ npm run z:car2
 
 ---
 
+## Z-Nexus Engine / Global Resource Awareness (Phase 0 — docs only)
+
+Turtle Mode foundation for global resource and human-energy awareness — doctrine only, no runtime.
+
+- Charter: [z-nexus-engine/Z_NEXUS_ENGINE_GLOBAL_RESOURCE_AWARENESS.md](z-nexus-engine/Z_NEXUS_ENGINE_GLOBAL_RESOURCE_AWARENESS.md)
+- Data ethics: [z-nexus-engine/Z_NEXUS_ENGINE_DATA_ETHICS_AND_BOUNDARIES.md](z-nexus-engine/Z_NEXUS_ENGINE_DATA_ETHICS_AND_BOUNDARIES.md)
+- Mock dashboard spec: [z-nexus-engine/Z_NEXUS_ENGINE_MOCK_DASHBOARD_SPEC.md](z-nexus-engine/Z_NEXUS_ENGINE_MOCK_DASHBOARD_SPEC.md)
+- Future holds registry: [z-nexus-engine/Z_NEXUS_ENGINE_FUTURE_HOLDS_REGISTRY.md](z-nexus-engine/Z_NEXUS_ENGINE_FUTURE_HOLDS_REGISTRY.md)
+- Receipt: [z-nexus-engine/PHASE_Z_NEXUS_ENGINE_0_GREEN_RECEIPT.md](z-nexus-engine/PHASE_Z_NEXUS_ENGINE_0_GREEN_RECEIPT.md)
+
+Safety posture: no runtime, no Streamlit, no external APIs, no scientific authority claims, no deploy. Phase 1 static mock is HOLD pending AMK gate.
+
+---
+
 _Check main [INDEX.md](INDEX.md) for full documentation registry._
