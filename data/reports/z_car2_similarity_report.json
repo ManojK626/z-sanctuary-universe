@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-05-12T19:20:45.500Z",
+  "generated_at": "2026-06-11T17:50:53.903Z",
   "mode": "z_car2_phase1_read_only",
   "principle": "SCAN → GROUP → COMPARE → SCORE → RECOMMEND (human approves before any restructure)",
   "scan": {
-    "root": "C:\\Cursor Projects Organiser\\Z_Sanctuary_Universe",
+    "root": "/home/runner/work/z-sanctuary-universe/z-sanctuary-universe/ManojK626/z-sanctuary-universe",
     "extensions": [
       ".cjs",
       ".css",
@@ -16,150 +16,26 @@
       ".ts",
       ".tsx"
     ],
-    "files_eligible": 3316,
-    "files_scanned": 3313,
-    "bytes_scanned": 13081925,
-    "files_skipped": 3,
+    "files_eligible": 3255,
+    "files_scanned": 3253,
+    "bytes_scanned": 12644733,
+    "files_skipped": 2,
     "skip_reasons": {
-      "too_large": 3
+      "too_large": 2
     },
     "excluded_note": "Skipped dirs: node_modules, .git, .next, dist, safe_pack, lottery exports, __pycache__, .pytest_cache. Skipped files: .vscode/*, package-lock.json, pnpm-lock.yaml, yarn.lock (IDE / lock noise)."
   },
   "summary": {
-    "files_scanned": 3313,
-    "bytes_scanned": 13081925,
-    "files_skipped": 3,
+    "files_scanned": 3253,
+    "bytes_scanned": 12644733,
+    "files_skipped": 2,
     "duplicate_line_groups": 120,
     "duplicate_window_groups": 100,
-    "risk_histogram_line": "GREEN:0, YELLOW:52, ORANGE:67, RED:0, BLACK:1",
+    "risk_histogram_line": "GREEN:0, YELLOW:53, ORANGE:66, RED:0, BLACK:1",
     "risk_histogram_window": "GREEN:0, YELLOW:2, ORANGE:98, RED:0, BLACK:0",
     "safe_auto_fix_candidates": 0
   },
   "duplicate_line_groups": [
-    {
-      "group_id": "line_1972632326",
-      "kind": "exact_line",
-      "occurrence_count": 10,
-      "file_count": 10,
-      "similarity_score": 100,
-      "category": "registry",
-      "risk_level": "ORANGE",
-      "locations": [
-        {
-          "path": ".pytest_basetemp_root/test_build_summary0/kairo/summary.json",
-          "line": 7,
-          "preview": "\"phase\": \"Observe\","
-        },
-        {
-          "path": ".pytest_basetemp_root/test_build_summary0/kairo/summary_RUNTEST.json",
-          "line": 7,
-          "preview": "\"phase\": \"Observe\","
-        },
-        {
-          "path": "Amk_Goku Worldwide Loterry/data/_snapshots/20260126T184111Z/kairocell/summary.json",
-          "line": 7,
-          "preview": "\"phase\": \"Observe\","
-        },
-        {
-          "path": "Amk_Goku Worldwide Loterry/data/_snapshots/20260126T184111Z/kairocell/summary_20260126T181502Z.json",
-          "line": 7,
-          "preview": "\"phase\": \"Observe\","
-        },
-        {
-          "path": "Amk_Goku Worldwide Loterry/data/_snapshots/20260126T184111Z/kairocell/summary_manual-run.json",
-          "line": 7,
-          "preview": "\"phase\": \"Observe\","
-        },
-        {
-          "path": "Amk_Goku Worldwide Loterry/data/_snapshots/20260126T184132Z/kairocell/summary.json",
-          "line": 7,
-          "preview": "\"phase\": \"Observe\","
-        },
-        {
-          "path": "Amk_Goku Worldwide Loterry/data/_snapshots/20260126T184132Z/kairocell/summary_20260126T181502Z.json",
-          "line": 7,
-          "preview": "\"phase\": \"Observe\","
-        },
-        {
-          "path": "Amk_Goku Worldwide Loterry/data/_snapshots/20260126T184132Z/kairocell/summary_manual-run.json",
-          "line": 7,
-          "preview": "\"phase\": \"Observe\","
-        },
-        {
-          "path": "Amk_Goku Worldwide Loterry/data/_snapshots/20260126T184152Z/kairocell/summary.json",
-          "line": 7,
-          "preview": "\"phase\": \"Observe\","
-        },
-        {
-          "path": "Amk_Goku Worldwide Loterry/data/_snapshots/20260126T184152Z/kairocell/summary_20260126T181502Z.json",
-          "line": 7,
-          "preview": "\"phase\": \"Observe\","
-        }
-      ],
-      "recommendation": "Review manually; dedupe only after confirming meaning is identical."
-    },
-    {
-      "group_id": "line_4100795049",
-      "kind": "exact_line",
-      "occurrence_count": 10,
-      "file_count": 10,
-      "similarity_score": 100,
-      "category": "registry",
-      "risk_level": "ORANGE",
-      "locations": [
-        {
-          "path": ".pytest_basetemp_root/test_build_summary0/kairo/summary.json",
-          "line": 26,
-          "preview": "\"confidence\": 0.77,"
-        },
-        {
-          "path": ".pytest_basetemp_root/test_build_summary0/kairo/summary_RUNTEST.json",
-          "line": 26,
-          "preview": "\"confidence\": 0.77,"
-        },
-        {
-          "path": "Amk_Goku Worldwide Loterry/data/_snapshots/20260126T184111Z/kairocell/summary.json",
-          "line": 66,
-          "preview": "\"confidence\": 0.77,"
-        },
-        {
-          "path": "Amk_Goku Worldwide Loterry/data/_snapshots/20260126T184111Z/kairocell/summary_20260126T181502Z.json",
-          "line": 66,
-          "preview": "\"confidence\": 0.77,"
-        },
-        {
-          "path": "Amk_Goku Worldwide Loterry/data/_snapshots/20260126T184111Z/kairocell/summary_manual-run.json",
-          "line": 66,
-          "preview": "\"confidence\": 0.77,"
-        },
-        {
-          "path": "Amk_Goku Worldwide Loterry/data/_snapshots/20260126T184132Z/kairocell/summary.json",
-          "line": 66,
-          "preview": "\"confidence\": 0.77,"
-        },
-        {
-          "path": "Amk_Goku Worldwide Loterry/data/_snapshots/20260126T184132Z/kairocell/summary_20260126T181502Z.json",
-          "line": 66,
-          "preview": "\"confidence\": 0.77,"
-        },
-        {
-          "path": "Amk_Goku Worldwide Loterry/data/_snapshots/20260126T184132Z/kairocell/summary_manual-run.json",
-          "line": 66,
-          "preview": "\"confidence\": 0.77,"
-        },
-        {
-          "path": "Amk_Goku Worldwide Loterry/data/_snapshots/20260126T184152Z/kairocell/summary.json",
-          "line": 66,
-          "preview": "\"confidence\": 0.77,"
-        },
-        {
-          "path": "Amk_Goku Worldwide Loterry/data/_snapshots/20260126T184152Z/kairocell/summary_20260126T181502Z.json",
-          "line": 66,
-          "preview": "\"confidence\": 0.77,"
-        }
-      ],
-      "recommendation": "Review manually; dedupe only after confirming meaning is identical."
-    },
     {
       "group_id": "line_448886420",
       "kind": "exact_line",
@@ -650,7 +526,7 @@
         },
         {
           "path": "dashboard/scripts/amk-goku-main-control-readonly.js",
-          "line": 812,
+          "line": 814,
           "preview": "if (!el) return;"
         }
       ],
@@ -717,68 +593,6 @@
         }
       ],
       "recommendation": "Review manually; dedupe only after confirming meaning is identical."
-    },
-    {
-      "group_id": "line_1183661019",
-      "kind": "exact_line",
-      "occurrence_count": 10,
-      "file_count": 10,
-      "similarity_score": 100,
-      "category": "script",
-      "risk_level": "ORANGE",
-      "locations": [
-        {
-          "path": "All APPs/lottery_app_pack_latest/core/z_chronicle.js",
-          "line": 9,
-          "preview": "function load() {"
-        },
-        {
-          "path": "Amk_Goku Worldwide Loterry/core/z_chronicle.js",
-          "line": 9,
-          "preview": "function load() {"
-        },
-        {
-          "path": "Z_Sanctuary_Universe 2/Z-Sanctuary Browser/lib/settings.js",
-          "line": 35,
-          "preview": "function load() {"
-        },
-        {
-          "path": "Z_Sanctuary_Universe 2/Z-Sanctuary Browser/renderer/modules/story-ijapa-anansi.html",
-          "line": 153,
-          "preview": "function load() {"
-        },
-        {
-          "path": "core/autopilot/z_autopilot_replay.js",
-          "line": 8,
-          "preview": "function load() {"
-        },
-        {
-          "path": "core/monetization_layer.js",
-          "line": 7,
-          "preview": "function load() {"
-        },
-        {
-          "path": "core/z_chain_history.js",
-          "line": 8,
-          "preview": "function load() {"
-        },
-        {
-          "path": "core/z_chronicle.js",
-          "line": 6,
-          "preview": "function load() {"
-        },
-        {
-          "path": "core/z_pc_root_projects_panel.js",
-          "line": 78,
-          "preview": "function load() {"
-        },
-        {
-          "path": "dashboard/scripts/z-cycle-dashboard-readonly.js",
-          "line": 163,
-          "preview": "function load() {"
-        }
-      ],
-      "recommendation": "Consider a shared helper under scripts/lib/ after tests — not in Phase 1."
     },
     {
       "group_id": "line_3860078856",
@@ -1115,38 +929,38 @@
           "preview": "<meta charset=\"UTF-8\" />"
         },
         {
-          "path": "Z_Sanctuary_Universe 2/Z-Sanctuary Browser/renderer/index.html",
+          "path": "apps/web/public/z-sanctuary-z-qosmei-quantum-swarm.html",
           "line": 4,
           "preview": "<meta charset=\"UTF-8\" />"
         },
         {
-          "path": "Z_Sanctuary_Universe 2/Z-Sanctuary Browser/renderer/modules/calc.html",
+          "path": "apps/z_gadget_mirrors/ui_web_portal/index.html",
           "line": 4,
           "preview": "<meta charset=\"UTF-8\" />"
         },
         {
-          "path": "Z_Sanctuary_Universe 2/Z-Sanctuary Browser/renderer/modules/foxduck.html",
+          "path": "core/release_snapshot/index.html",
+          "line": 5,
+          "preview": "<meta charset=\"UTF-8\" />"
+        },
+        {
+          "path": "core/release_snapshot_ver/index.html",
+          "line": 5,
+          "preview": "<meta charset=\"UTF-8\" />"
+        },
+        {
+          "path": "core/z_html_links_hub.html",
           "line": 4,
           "preview": "<meta charset=\"UTF-8\" />"
         },
         {
-          "path": "Z_Sanctuary_Universe 2/Z-Sanctuary Browser/renderer/modules/home.html",
+          "path": "dashboard/Html/amk-goku-main-control.html",
           "line": 4,
           "preview": "<meta charset=\"UTF-8\" />"
         },
         {
-          "path": "Z_Sanctuary_Universe 2/Z-Sanctuary Browser/renderer/modules/principles.html",
-          "line": 4,
-          "preview": "<meta charset=\"UTF-8\" />"
-        },
-        {
-          "path": "Z_Sanctuary_Universe 2/Z-Sanctuary Browser/renderer/modules/story-compere-lapin.html",
-          "line": 4,
-          "preview": "<meta charset=\"UTF-8\" />"
-        },
-        {
-          "path": "Z_Sanctuary_Universe 2/Z-Sanctuary Browser/renderer/modules/story-ijapa-anansi.html",
-          "line": 4,
+          "path": "dashboard/Html/index-skk-rkpk.html",
+          "line": 5,
           "preview": "<meta charset=\"UTF-8\" />"
         }
       ],
@@ -1177,38 +991,38 @@
           "preview": "<meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\" />"
         },
         {
-          "path": "Z_Sanctuary_Universe 2/Z-Sanctuary Browser/renderer/index.html",
+          "path": "apps/web/public/z-sanctuary-z-qosmei-quantum-swarm.html",
+          "line": 5,
+          "preview": "<meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\" />"
+        },
+        {
+          "path": "apps/z_gadget_mirrors/ui_web_portal/index.html",
+          "line": 5,
+          "preview": "<meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\" />"
+        },
+        {
+          "path": "core/release_snapshot/index.html",
           "line": 6,
           "preview": "<meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\" />"
         },
         {
-          "path": "Z_Sanctuary_Universe 2/Z-Sanctuary Browser/renderer/modules/calc.html",
+          "path": "core/release_snapshot_ver/index.html",
+          "line": 6,
+          "preview": "<meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\" />"
+        },
+        {
+          "path": "core/z_html_links_hub.html",
           "line": 5,
           "preview": "<meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\" />"
         },
         {
-          "path": "Z_Sanctuary_Universe 2/Z-Sanctuary Browser/renderer/modules/foxduck.html",
+          "path": "dashboard/Html/amk-goku-main-control.html",
           "line": 5,
           "preview": "<meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\" />"
         },
         {
-          "path": "Z_Sanctuary_Universe 2/Z-Sanctuary Browser/renderer/modules/home.html",
-          "line": 5,
-          "preview": "<meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\" />"
-        },
-        {
-          "path": "Z_Sanctuary_Universe 2/Z-Sanctuary Browser/renderer/modules/principles.html",
-          "line": 5,
-          "preview": "<meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\" />"
-        },
-        {
-          "path": "Z_Sanctuary_Universe 2/Z-Sanctuary Browser/renderer/modules/story-compere-lapin.html",
-          "line": 5,
-          "preview": "<meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\" />"
-        },
-        {
-          "path": "Z_Sanctuary_Universe 2/Z-Sanctuary Browser/renderer/modules/story-ijapa-anansi.html",
-          "line": 5,
+          "path": "dashboard/Html/index-skk-rkpk.html",
+          "line": 6,
           "preview": "<meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\" />"
         }
       ],
@@ -2021,68 +1835,6 @@
       "recommendation": "Review manually; dedupe only after confirming meaning is identical."
     },
     {
-      "group_id": "line_1848385138",
-      "kind": "exact_line",
-      "occurrence_count": 10,
-      "file_count": 10,
-      "similarity_score": 100,
-      "category": "unknown",
-      "risk_level": "YELLOW",
-      "locations": [
-        {
-          "path": "All APPs/lottery_app_pack_latest/ui/education/orientation.html",
-          "line": 20,
-          "preview": "line-height: 1.5;"
-        },
-        {
-          "path": "Amk_Goku Worldwide Loterry/ui/education/index.html",
-          "line": 20,
-          "preview": "line-height: 1.5;"
-        },
-        {
-          "path": "Amk_Goku Worldwide Loterry/ui/education/orientation.html",
-          "line": 20,
-          "preview": "line-height: 1.5;"
-        },
-        {
-          "path": "Z_Sanctuary_Universe 2/Z-Sanctuary Browser/renderer/modules/zcare.html",
-          "line": 17,
-          "preview": "line-height: 1.5;"
-        },
-        {
-          "path": "apps/z_gadget_mirrors/ui_web_portal/styles.css",
-          "line": 22,
-          "preview": "line-height: 1.5;"
-        },
-        {
-          "path": "dashboard/Html/radio_garden.html",
-          "line": 106,
-          "preview": "line-height: 1.5;"
-        },
-        {
-          "path": "dashboard/skk-dashboard.css",
-          "line": 159,
-          "preview": "line-height: 1.5;"
-        },
-        {
-          "path": "dashboard/styles/z-lawgrid.css",
-          "line": 16,
-          "preview": "line-height: 1.5;"
-        },
-        {
-          "path": "dashboard/z-ai-ecosphere/ecosphere.css",
-          "line": 6,
-          "preview": "line-height: 1.5;"
-        },
-        {
-          "path": "dashboard/z-qa-rp/qa-rp.css",
-          "line": 6,
-          "preview": "line-height: 1.5;"
-        }
-      ],
-      "recommendation": "Review manually; dedupe only after confirming meaning is identical."
-    },
-    {
       "group_id": "line_2822898954",
       "kind": "exact_line",
       "occurrence_count": 10,
@@ -2283,11 +2035,6 @@
           "preview": "const results = [];"
         },
         {
-          "path": "Z_Sanctuary_Universe 2/Z-Sanctuary Browser/main.js",
-          "line": 1373,
-          "preview": "const results = [];"
-        },
-        {
           "path": "apps/z_gadget_mirrors/mirror_decision_engine/engine_esm/mde_stability.mjs",
           "line": 36,
           "preview": "const results = [];"
@@ -2325,6 +2072,11 @@
         {
           "path": "scripts/z_sync_control_links.mjs",
           "line": 123,
+          "preview": "const results = [];"
+        },
+        {
+          "path": "scripts/z_vegeta_merkle_root.mjs",
+          "line": 16,
           "preview": "const results = [];"
         }
       ],
@@ -7475,12 +7227,10 @@
         }
       ],
       "recommendation": "Consider a shared doc fragment or single canonical page with links — preserve legal/historical intent."
-    }
-  ],
-  "duplicate_window_groups": [
+    },
     {
-      "group_id": "win_4235972410",
-      "kind": "four_line_window",
+      "group_id": "line_130553983",
+      "kind": "exact_line",
       "occurrence_count": 10,
       "file_count": 10,
       "similarity_score": 100,
@@ -7488,68 +7238,246 @@
       "risk_level": "ORANGE",
       "locations": [
         {
-          "path": ".pytest_basetemp_root/test_build_summary0/kairo/summary.json",
-          "start_line": 23,
-          "end_line": 26,
-          "preview": "\"phase\": \"Impact\", · \"micro_cell\": \"Expanse Cell\", · \"orientation\": \"Storm Ring\", · \"confidence\": 0.77,"
+          "path": "Amk_Goku Worldwide Loterry/data/_snapshots/20260126T184111Z/commentary/eurojackpot.20260123T214846Z.commentary.json",
+          "line": 5,
+          "preview": "\"trust_bundle\": \"trust_bundle_20260123T214846Z.json\","
         },
         {
-          "path": ".pytest_basetemp_root/test_build_summary0/kairo/summary_RUNTEST.json",
-          "start_line": 23,
-          "end_line": 26,
-          "preview": "\"phase\": \"Impact\", · \"micro_cell\": \"Expanse Cell\", · \"orientation\": \"Storm Ring\", · \"confidence\": 0.77,"
+          "path": "Amk_Goku Worldwide Loterry/data/_snapshots/20260126T184111Z/commentary/euromillions.20260123T214846Z.commentary.json",
+          "line": 5,
+          "preview": "\"trust_bundle\": \"trust_bundle_20260123T214846Z.json\","
         },
         {
-          "path": "Amk_Goku Worldwide Loterry/data/_snapshots/20260126T184111Z/kairocell/summary.json",
-          "start_line": 63,
-          "end_line": 66,
-          "preview": "\"phase\": \"Impact\", · \"micro_cell\": \"Expanse Cell\", · \"orientation\": \"Storm Ring\", · \"confidence\": 0.77,"
+          "path": "Amk_Goku Worldwide Loterry/data/_snapshots/20260126T184111Z/commentary/global-sevens.20260123T214846Z.commentary.json",
+          "line": 5,
+          "preview": "\"trust_bundle\": \"trust_bundle_20260123T214846Z.json\","
         },
         {
-          "path": "Amk_Goku Worldwide Loterry/data/_snapshots/20260126T184111Z/kairocell/summary_20260126T181502Z.json",
-          "start_line": 63,
-          "end_line": 66,
-          "preview": "\"phase\": \"Impact\", · \"micro_cell\": \"Expanse Cell\", · \"orientation\": \"Storm Ring\", · \"confidence\": 0.77,"
+          "path": "Amk_Goku Worldwide Loterry/data/_snapshots/20260126T184132Z/commentary/eurojackpot.20260123T214846Z.commentary.json",
+          "line": 5,
+          "preview": "\"trust_bundle\": \"trust_bundle_20260123T214846Z.json\","
         },
         {
-          "path": "Amk_Goku Worldwide Loterry/data/_snapshots/20260126T184111Z/kairocell/summary_manual-run.json",
-          "start_line": 63,
-          "end_line": 66,
-          "preview": "\"phase\": \"Impact\", · \"micro_cell\": \"Expanse Cell\", · \"orientation\": \"Storm Ring\", · \"confidence\": 0.77,"
+          "path": "Amk_Goku Worldwide Loterry/data/_snapshots/20260126T184132Z/commentary/euromillions.20260123T214846Z.commentary.json",
+          "line": 5,
+          "preview": "\"trust_bundle\": \"trust_bundle_20260123T214846Z.json\","
         },
         {
-          "path": "Amk_Goku Worldwide Loterry/data/_snapshots/20260126T184132Z/kairocell/summary.json",
-          "start_line": 63,
-          "end_line": 66,
-          "preview": "\"phase\": \"Impact\", · \"micro_cell\": \"Expanse Cell\", · \"orientation\": \"Storm Ring\", · \"confidence\": 0.77,"
+          "path": "Amk_Goku Worldwide Loterry/data/_snapshots/20260126T184132Z/commentary/global-sevens.20260123T214846Z.commentary.json",
+          "line": 5,
+          "preview": "\"trust_bundle\": \"trust_bundle_20260123T214846Z.json\","
         },
         {
-          "path": "Amk_Goku Worldwide Loterry/data/_snapshots/20260126T184132Z/kairocell/summary_20260126T181502Z.json",
-          "start_line": 63,
-          "end_line": 66,
-          "preview": "\"phase\": \"Impact\", · \"micro_cell\": \"Expanse Cell\", · \"orientation\": \"Storm Ring\", · \"confidence\": 0.77,"
+          "path": "Amk_Goku Worldwide Loterry/data/_snapshots/20260126T184152Z/commentary/eurojackpot.20260123T214846Z.commentary.json",
+          "line": 5,
+          "preview": "\"trust_bundle\": \"trust_bundle_20260123T214846Z.json\","
         },
         {
-          "path": "Amk_Goku Worldwide Loterry/data/_snapshots/20260126T184132Z/kairocell/summary_manual-run.json",
-          "start_line": 63,
-          "end_line": 66,
-          "preview": "\"phase\": \"Impact\", · \"micro_cell\": \"Expanse Cell\", · \"orientation\": \"Storm Ring\", · \"confidence\": 0.77,"
+          "path": "Amk_Goku Worldwide Loterry/data/_snapshots/20260126T184152Z/commentary/euromillions.20260123T214846Z.commentary.json",
+          "line": 5,
+          "preview": "\"trust_bundle\": \"trust_bundle_20260123T214846Z.json\","
         },
         {
-          "path": "Amk_Goku Worldwide Loterry/data/_snapshots/20260126T184152Z/kairocell/summary.json",
-          "start_line": 63,
-          "end_line": 66,
-          "preview": "\"phase\": \"Impact\", · \"micro_cell\": \"Expanse Cell\", · \"orientation\": \"Storm Ring\", · \"confidence\": 0.77,"
+          "path": "Amk_Goku Worldwide Loterry/data/_snapshots/20260126T184152Z/commentary/global-sevens.20260123T214846Z.commentary.json",
+          "line": 5,
+          "preview": "\"trust_bundle\": \"trust_bundle_20260123T214846Z.json\","
         },
         {
-          "path": "Amk_Goku Worldwide Loterry/data/_snapshots/20260126T184152Z/kairocell/summary_20260126T181502Z.json",
-          "start_line": 63,
-          "end_line": 66,
-          "preview": "\"phase\": \"Impact\", · \"micro_cell\": \"Expanse Cell\", · \"orientation\": \"Storm Ring\", · \"confidence\": 0.77,"
+          "path": "Amk_Goku Worldwide Loterry/data/_snapshots/20260129T165827Z/commentary/eurojackpot.20260123T214846Z.commentary.json",
+          "line": 5,
+          "preview": "\"trust_bundle\": \"trust_bundle_20260123T214846Z.json\","
         }
       ],
       "recommendation": "Review manually; dedupe only after confirming meaning is identical."
     },
+    {
+      "group_id": "line_2615734846",
+      "kind": "exact_line",
+      "occurrence_count": 10,
+      "file_count": 10,
+      "similarity_score": 100,
+      "category": "docs",
+      "risk_level": "YELLOW",
+      "locations": [
+        {
+          "path": "Amk_Goku Worldwide Loterry/data/_snapshots/20260126T184111Z/commentary/eurojackpot.20260123T214846Z.commentary.md",
+          "line": 5,
+          "preview": "**Run ID:** 20260123T214846Z"
+        },
+        {
+          "path": "Amk_Goku Worldwide Loterry/data/_snapshots/20260126T184111Z/commentary/euromillions.20260123T214846Z.commentary.md",
+          "line": 5,
+          "preview": "**Run ID:** 20260123T214846Z"
+        },
+        {
+          "path": "Amk_Goku Worldwide Loterry/data/_snapshots/20260126T184111Z/commentary/global-sevens.20260123T214846Z.commentary.md",
+          "line": 5,
+          "preview": "**Run ID:** 20260123T214846Z"
+        },
+        {
+          "path": "Amk_Goku Worldwide Loterry/data/_snapshots/20260126T184132Z/commentary/eurojackpot.20260123T214846Z.commentary.md",
+          "line": 5,
+          "preview": "**Run ID:** 20260123T214846Z"
+        },
+        {
+          "path": "Amk_Goku Worldwide Loterry/data/_snapshots/20260126T184132Z/commentary/euromillions.20260123T214846Z.commentary.md",
+          "line": 5,
+          "preview": "**Run ID:** 20260123T214846Z"
+        },
+        {
+          "path": "Amk_Goku Worldwide Loterry/data/_snapshots/20260126T184132Z/commentary/global-sevens.20260123T214846Z.commentary.md",
+          "line": 5,
+          "preview": "**Run ID:** 20260123T214846Z"
+        },
+        {
+          "path": "Amk_Goku Worldwide Loterry/data/_snapshots/20260126T184152Z/commentary/eurojackpot.20260123T214846Z.commentary.md",
+          "line": 5,
+          "preview": "**Run ID:** 20260123T214846Z"
+        },
+        {
+          "path": "Amk_Goku Worldwide Loterry/data/_snapshots/20260126T184152Z/commentary/euromillions.20260123T214846Z.commentary.md",
+          "line": 5,
+          "preview": "**Run ID:** 20260123T214846Z"
+        },
+        {
+          "path": "Amk_Goku Worldwide Loterry/data/_snapshots/20260126T184152Z/commentary/global-sevens.20260123T214846Z.commentary.md",
+          "line": 5,
+          "preview": "**Run ID:** 20260123T214846Z"
+        },
+        {
+          "path": "Amk_Goku Worldwide Loterry/data/_snapshots/20260129T165827Z/commentary/eurojackpot.20260123T214846Z.commentary.md",
+          "line": 5,
+          "preview": "**Run ID:** 20260123T214846Z"
+        }
+      ],
+      "recommendation": "Consider a shared doc fragment or single canonical page with links — preserve legal/historical intent."
+    },
+    {
+      "group_id": "line_3118387132",
+      "kind": "exact_line",
+      "occurrence_count": 10,
+      "file_count": 10,
+      "similarity_score": 100,
+      "category": "registry",
+      "risk_level": "ORANGE",
+      "locations": [
+        {
+          "path": "Amk_Goku Worldwide Loterry/data/_snapshots/20260126T184111Z/commentary/eurojackpot.20260124T190405Z.commentary.json",
+          "line": 5,
+          "preview": "\"trust_bundle\": \"trust_bundle_20260124T190405Z.json\","
+        },
+        {
+          "path": "Amk_Goku Worldwide Loterry/data/_snapshots/20260126T184111Z/commentary/euromillions.20260124T190405Z.commentary.json",
+          "line": 5,
+          "preview": "\"trust_bundle\": \"trust_bundle_20260124T190405Z.json\","
+        },
+        {
+          "path": "Amk_Goku Worldwide Loterry/data/_snapshots/20260126T184111Z/commentary/global-sevens.20260124T190405Z.commentary.json",
+          "line": 5,
+          "preview": "\"trust_bundle\": \"trust_bundle_20260124T190405Z.json\","
+        },
+        {
+          "path": "Amk_Goku Worldwide Loterry/data/_snapshots/20260126T184132Z/commentary/eurojackpot.20260124T190405Z.commentary.json",
+          "line": 5,
+          "preview": "\"trust_bundle\": \"trust_bundle_20260124T190405Z.json\","
+        },
+        {
+          "path": "Amk_Goku Worldwide Loterry/data/_snapshots/20260126T184132Z/commentary/euromillions.20260124T190405Z.commentary.json",
+          "line": 5,
+          "preview": "\"trust_bundle\": \"trust_bundle_20260124T190405Z.json\","
+        },
+        {
+          "path": "Amk_Goku Worldwide Loterry/data/_snapshots/20260126T184132Z/commentary/global-sevens.20260124T190405Z.commentary.json",
+          "line": 5,
+          "preview": "\"trust_bundle\": \"trust_bundle_20260124T190405Z.json\","
+        },
+        {
+          "path": "Amk_Goku Worldwide Loterry/data/_snapshots/20260126T184152Z/commentary/eurojackpot.20260124T190405Z.commentary.json",
+          "line": 5,
+          "preview": "\"trust_bundle\": \"trust_bundle_20260124T190405Z.json\","
+        },
+        {
+          "path": "Amk_Goku Worldwide Loterry/data/_snapshots/20260126T184152Z/commentary/euromillions.20260124T190405Z.commentary.json",
+          "line": 5,
+          "preview": "\"trust_bundle\": \"trust_bundle_20260124T190405Z.json\","
+        },
+        {
+          "path": "Amk_Goku Worldwide Loterry/data/_snapshots/20260126T184152Z/commentary/global-sevens.20260124T190405Z.commentary.json",
+          "line": 5,
+          "preview": "\"trust_bundle\": \"trust_bundle_20260124T190405Z.json\","
+        },
+        {
+          "path": "Amk_Goku Worldwide Loterry/data/_snapshots/20260129T165827Z/commentary/eurojackpot.20260124T190405Z.commentary.json",
+          "line": 5,
+          "preview": "\"trust_bundle\": \"trust_bundle_20260124T190405Z.json\","
+        }
+      ],
+      "recommendation": "Review manually; dedupe only after confirming meaning is identical."
+    },
+    {
+      "group_id": "line_3093424302",
+      "kind": "exact_line",
+      "occurrence_count": 10,
+      "file_count": 10,
+      "similarity_score": 100,
+      "category": "docs",
+      "risk_level": "YELLOW",
+      "locations": [
+        {
+          "path": "Amk_Goku Worldwide Loterry/data/_snapshots/20260126T184111Z/commentary/eurojackpot.20260124T190405Z.commentary.md",
+          "line": 3,
+          "preview": "# Commentary — eurojackpot"
+        },
+        {
+          "path": "Amk_Goku Worldwide Loterry/data/_snapshots/20260126T184132Z/commentary/eurojackpot.20260124T190405Z.commentary.md",
+          "line": 3,
+          "preview": "# Commentary — eurojackpot"
+        },
+        {
+          "path": "Amk_Goku Worldwide Loterry/data/_snapshots/20260126T184152Z/commentary/eurojackpot.20260124T190405Z.commentary.md",
+          "line": 3,
+          "preview": "# Commentary — eurojackpot"
+        },
+        {
+          "path": "Amk_Goku Worldwide Loterry/data/_snapshots/20260129T165827Z/commentary/eurojackpot.20260124T190405Z.commentary.md",
+          "line": 3,
+          "preview": "# Commentary — eurojackpot"
+        },
+        {
+          "path": "Amk_Goku Worldwide Loterry/data/_snapshots/20260129T165827Z/commentary/eurojackpot.20260129T121337Z.commentary.md",
+          "line": 3,
+          "preview": "# Commentary — eurojackpot"
+        },
+        {
+          "path": "Amk_Goku Worldwide Loterry/data/_snapshots/20260129T165827Z/commentary/eurojackpot.20260129T165225Z.commentary.md",
+          "line": 3,
+          "preview": "# Commentary — eurojackpot"
+        },
+        {
+          "path": "Amk_Goku Worldwide Loterry/data/reports/commentary/eurojackpot.20260124T190405Z.commentary.md",
+          "line": 3,
+          "preview": "# Commentary — eurojackpot"
+        },
+        {
+          "path": "Amk_Goku Worldwide Loterry/data/reports/commentary/eurojackpot.20260129T121337Z.commentary.md",
+          "line": 3,
+          "preview": "# Commentary — eurojackpot"
+        },
+        {
+          "path": "Amk_Goku Worldwide Loterry/data/reports/commentary/eurojackpot.20260129T165225Z.commentary.md",
+          "line": 3,
+          "preview": "# Commentary — eurojackpot"
+        },
+        {
+          "path": "Amk_Goku Worldwide Loterry/data/reports/commentary/eurojackpot.20260129T170002Z.commentary.md",
+          "line": 3,
+          "preview": "# Commentary — eurojackpot"
+        }
+      ],
+      "recommendation": "Consider a shared doc fragment or single canonical page with links — preserve legal/historical intent."
+    }
+  ],
+  "duplicate_window_groups": [
     {
       "group_id": "win_2613839844",
       "kind": "four_line_window",
@@ -7614,7 +7542,7 @@
           "preview": "<html lang=\"en\"> · <head> · <meta charset=\"utf-8\" /> · <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\" />"
         },
         {
-          "path": "Z_Sanctuary_Universe 2/lab-outputs/z-suc-2-reader/index.html",
+          "path": "core/index.html",
           "start_line": 2,
           "end_line": 5,
           "preview": "<html lang=\"en\"> · <head> · <meta charset=\"utf-8\" /> · <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\" />"
@@ -10570,6 +10498,78 @@
           "start_line": 62,
           "end_line": 65,
           "preview": "\"code\": \"powerball\", · \"phase\": \"Impact\", · \"micro_cell\": \"Expanse Cell\", · \"orientation\": \"Storm Ring\","
+        }
+      ],
+      "recommendation": "Review manually; dedupe only after confirming meaning is identical."
+    },
+    {
+      "group_id": "win_4235972410",
+      "kind": "four_line_window",
+      "occurrence_count": 10,
+      "file_count": 10,
+      "similarity_score": 100,
+      "category": "registry",
+      "risk_level": "ORANGE",
+      "locations": [
+        {
+          "path": "Amk_Goku Worldwide Loterry/data/_snapshots/20260126T184111Z/kairocell/summary.json",
+          "start_line": 63,
+          "end_line": 66,
+          "preview": "\"phase\": \"Impact\", · \"micro_cell\": \"Expanse Cell\", · \"orientation\": \"Storm Ring\", · \"confidence\": 0.77,"
+        },
+        {
+          "path": "Amk_Goku Worldwide Loterry/data/_snapshots/20260126T184111Z/kairocell/summary_20260126T181502Z.json",
+          "start_line": 63,
+          "end_line": 66,
+          "preview": "\"phase\": \"Impact\", · \"micro_cell\": \"Expanse Cell\", · \"orientation\": \"Storm Ring\", · \"confidence\": 0.77,"
+        },
+        {
+          "path": "Amk_Goku Worldwide Loterry/data/_snapshots/20260126T184111Z/kairocell/summary_manual-run.json",
+          "start_line": 63,
+          "end_line": 66,
+          "preview": "\"phase\": \"Impact\", · \"micro_cell\": \"Expanse Cell\", · \"orientation\": \"Storm Ring\", · \"confidence\": 0.77,"
+        },
+        {
+          "path": "Amk_Goku Worldwide Loterry/data/_snapshots/20260126T184132Z/kairocell/summary.json",
+          "start_line": 63,
+          "end_line": 66,
+          "preview": "\"phase\": \"Impact\", · \"micro_cell\": \"Expanse Cell\", · \"orientation\": \"Storm Ring\", · \"confidence\": 0.77,"
+        },
+        {
+          "path": "Amk_Goku Worldwide Loterry/data/_snapshots/20260126T184132Z/kairocell/summary_20260126T181502Z.json",
+          "start_line": 63,
+          "end_line": 66,
+          "preview": "\"phase\": \"Impact\", · \"micro_cell\": \"Expanse Cell\", · \"orientation\": \"Storm Ring\", · \"confidence\": 0.77,"
+        },
+        {
+          "path": "Amk_Goku Worldwide Loterry/data/_snapshots/20260126T184132Z/kairocell/summary_manual-run.json",
+          "start_line": 63,
+          "end_line": 66,
+          "preview": "\"phase\": \"Impact\", · \"micro_cell\": \"Expanse Cell\", · \"orientation\": \"Storm Ring\", · \"confidence\": 0.77,"
+        },
+        {
+          "path": "Amk_Goku Worldwide Loterry/data/_snapshots/20260126T184152Z/kairocell/summary.json",
+          "start_line": 63,
+          "end_line": 66,
+          "preview": "\"phase\": \"Impact\", · \"micro_cell\": \"Expanse Cell\", · \"orientation\": \"Storm Ring\", · \"confidence\": 0.77,"
+        },
+        {
+          "path": "Amk_Goku Worldwide Loterry/data/_snapshots/20260126T184152Z/kairocell/summary_20260126T181502Z.json",
+          "start_line": 63,
+          "end_line": 66,
+          "preview": "\"phase\": \"Impact\", · \"micro_cell\": \"Expanse Cell\", · \"orientation\": \"Storm Ring\", · \"confidence\": 0.77,"
+        },
+        {
+          "path": "Amk_Goku Worldwide Loterry/data/_snapshots/20260126T184152Z/kairocell/summary_manual-run.json",
+          "start_line": 63,
+          "end_line": 66,
+          "preview": "\"phase\": \"Impact\", · \"micro_cell\": \"Expanse Cell\", · \"orientation\": \"Storm Ring\", · \"confidence\": 0.77,"
+        },
+        {
+          "path": "Amk_Goku Worldwide Loterry/data/_snapshots/20260129T165827Z/kairocell/summary.json",
+          "start_line": 63,
+          "end_line": 66,
+          "preview": "\"phase\": \"Impact\", · \"micro_cell\": \"Expanse Cell\", · \"orientation\": \"Storm Ring\", · \"confidence\": 0.77,"
         }
       ],
       "recommendation": "Review manually; dedupe only after confirming meaning is identical."
