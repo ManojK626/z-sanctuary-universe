@@ -254,6 +254,20 @@ npm run z:car2
 | [zilwa-living-experiences/ZILWA_LEGAL_READINESS_CHECKLIST.md](zilwa-living-experiences/ZILWA_LEGAL_READINESS_CHECKLIST.md) | Legal readiness checklist by activity class |
 | [zilwa-living-experiences/ZILWA_STEWARD_APPROVAL_FRAMEWORK.md](zilwa-living-experiences/ZILWA_STEWARD_APPROVAL_FRAMEWORK.md) | Six-stage human-gated steward approval framework |
 
+### ZILWA Phase 1A static awareness mockups
+
+> Static HTML only. Shared CSS only. Demonstration only — not a live system.
+
+| Asset | Purpose |
+| --- | --- |
+| [`../dashboard/Html/zilwa-guest-journey.html`](../dashboard/Html/zilwa-guest-journey.html) | Synthetic guest journey awareness storyboard |
+| [`../dashboard/Html/zilwa-ambassador-cockpit.html`](../dashboard/Html/zilwa-ambassador-cockpit.html) | Read-only ambassador posture and review gate mockup |
+| [`../dashboard/Html/zilwa-host-family-panel.html`](../dashboard/Html/zilwa-host-family-panel.html) | Host-family sustainability and boundary awareness surface |
+| [`../dashboard/Html/zilwa-elder-story-archive.html`](../dashboard/Html/zilwa-elder-story-archive.html) | Consent-first elder story awareness mockup with synthetic data |
+| [`../dashboard/Html/zilwa-reef-awareness.html`](../dashboard/Html/zilwa-reef-awareness.html) | Reef respect awareness page with no telemetry or runtime |
+| [`../dashboard/Html/zilwa-community-journeys.html`](../dashboard/Html/zilwa-community-journeys.html) | Community-journey awareness page with resident safeguards |
+| [`../dashboard/styles/zilwa-phase-1a.css`](../dashboard/styles/zilwa-phase-1a.css) | Shared CSS for all restored ZILWA Phase 1A mockups |
+
 ---
 
 _Check main [INDEX.md](INDEX.md) for full documentation registry._
