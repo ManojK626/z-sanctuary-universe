@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-12T11:03:53.214Z",
+  "generated_at": "2026-06-12T11:06:47.635Z",
   "mode": "z_car2_phase1_read_only",
   "principle": "SCAN → GROUP → COMPARE → SCORE → RECOMMEND (human approves before any restructure)",
   "scan": {
@@ -16,9 +16,9 @@
       ".ts",
       ".tsx"
     ],
-    "files_eligible": 3251,
-    "files_scanned": 3249,
-    "bytes_scanned": 12627780,
+    "files_eligible": 3252,
+    "files_scanned": 3250,
+    "bytes_scanned": 12634981,
     "files_skipped": 2,
     "skip_reasons": {
       "too_large": 2
@@ -26,8 +26,8 @@
     "excluded_note": "Skipped dirs: node_modules, .git, .next, dist, safe_pack, lottery exports, __pycache__, .pytest_cache. Skipped files: .vscode/*, package-lock.json, pnpm-lock.yaml, yarn.lock (IDE / lock noise)."
   },
   "summary": {
-    "files_scanned": 3249,
-    "bytes_scanned": 12627780,
+    "files_scanned": 3250,
+    "bytes_scanned": 12634981,
     "files_skipped": 2,
     "duplicate_line_groups": 120,
     "duplicate_window_groups": 100,

@@ -1,6 +1,6 @@
 # Z-Zuno Phase 3 — completion plan
 
-Generated: 2026-05-02T21:19:27.838Z
+Generated: 2026-06-12T11:06:42.023Z
 
 ## Constraints
 - No fake implementation paths.

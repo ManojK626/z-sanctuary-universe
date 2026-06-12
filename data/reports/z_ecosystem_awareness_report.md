@@ -1,6 +1,6 @@
 # Z Ecosystem Awareness Report (Z-AWARE-1)
 
-- Generated: 2026-06-12T11:03:53.669Z
+- Generated: 2026-06-12T11:06:48.089Z
 - Overall signal: **YELLOW**
 - Registry: `data/z_ecosystem_awareness_registry.json`
 - Policy: `data/z_ecosystem_alert_policy.json`

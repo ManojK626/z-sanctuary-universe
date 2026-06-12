@@ -1,6 +1,6 @@
 # Zuno awareness score (A3)
 
-**Generated:** 2026-06-12T11:03:47.706Z
+**Generated:** 2026-06-12T11:06:42.294Z
 
 | Field | Value |
 | ---- | ---- |

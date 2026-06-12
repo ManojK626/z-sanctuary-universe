@@ -1,13 +1,13 @@
 # Z-CAR² similarity report (Phase 1 — read-only)
 
-Generated: 2026-06-12T11:03:53.214Z
+Generated: 2026-06-12T11:06:47.635Z
 
 ## Summary
 
 | Metric | Value |
 | --- | ---: |
-| Files scanned | 3249 |
-| Bytes scanned | 12627780 |
+| Files scanned | 3250 |
+| Bytes scanned | 12634981 |
 | Files skipped | 2 |
 | Duplicate line groups (capped) | 120 |
 | Duplicate window groups (capped) | 100 |
