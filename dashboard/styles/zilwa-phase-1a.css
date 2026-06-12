@@ -1,0 +1,286 @@
+/* ZILWA Phase 1A — static awareness mockups (museum exhibit) */
+:root {
+  --zilwa-ocean: #0b2e34;
+  --zilwa-deep: #061a1f;
+  --zilwa-sand: #f5e6c8;
+  --zilwa-coral: #d4845f;
+  --zilwa-reef: #2a9d8f;
+  --zilwa-palm: #1d6b5c;
+  --zilwa-ink: #e8f4f0;
+  --zilwa-muted: #9cb8b0;
+  --zilwa-warn: #c9a227;
+  --zilwa-border: rgba(42, 157, 143, 0.35);
+  --zilwa-card: rgba(11, 46, 52, 0.85);
+  font-family: 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body.zilwa-page {
+  margin: 0;
+  min-height: 100vh;
+  background:
+    radial-gradient(ellipse at 20% 0%, rgba(42, 157, 143, 0.15), transparent 50%),
+    radial-gradient(ellipse at 80% 100%, rgba(212, 132, 95, 0.1), transparent 45%),
+    linear-gradient(165deg, var(--zilwa-deep), var(--zilwa-ocean));
+  color: var(--zilwa-ink);
+  line-height: 1.5;
+}
+
+.zilwa-safety-banner {
+  background: linear-gradient(90deg, #3d2e0a, #5c4a12);
+  border-bottom: 2px solid var(--zilwa-warn);
+  padding: 10px 16px;
+  font-size: 11px;
+  text-align: center;
+  letter-spacing: 0.04em;
+  color: #fff8e0;
+}
+
+.zilwa-safety-banner strong {
+  display: block;
+  font-size: 12px;
+  margin-bottom: 4px;
+  color: #ffe566;
+}
+
+.zilwa-safety-banner span {
+  display: inline-block;
+  margin: 0 6px;
+  opacity: 0.95;
+}
+
+.zilwa-header {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 24px 20px 12px;
+}
+
+.zilwa-demo-badge {
+  display: inline-block;
+  background: rgba(201, 162, 39, 0.25);
+  border: 1px solid var(--zilwa-warn);
+  color: #ffe566;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  padding: 6px 12px;
+  border-radius: 4px;
+  margin-bottom: 12px;
+}
+
+.zilwa-title {
+  margin: 0 0 8px;
+  font-size: clamp(1.5rem, 4vw, 2rem);
+  font-weight: 600;
+  color: var(--zilwa-sand);
+}
+
+.zilwa-subtitle {
+  margin: 0;
+  color: var(--zilwa-muted);
+  font-size: 14px;
+  max-width: 52ch;
+}
+
+.zilwa-nav {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 20px 16px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.zilwa-nav a {
+  font-size: 12px;
+  color: var(--zilwa-reef);
+  text-decoration: none;
+  padding: 4px 10px;
+  border: 1px solid var(--zilwa-border);
+  border-radius: 999px;
+}
+
+.zilwa-nav a:hover {
+  background: rgba(42, 157, 143, 0.15);
+}
+.zilwa-nav a[aria-current='page'] {
+  background: rgba(42, 157, 143, 0.3);
+  color: var(--zilwa-sand);
+}
+
+.zilwa-main {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 20px 48px;
+  display: grid;
+  gap: 20px;
+}
+
+.zilwa-card {
+  background: var(--zilwa-card);
+  border: 1px solid var(--zilwa-border);
+  border-radius: 12px;
+  padding: 20px 22px;
+}
+
+.zilwa-card h2 {
+  margin: 0 0 12px;
+  font-size: 1rem;
+  color: var(--zilwa-reef);
+}
+
+.zilwa-card p {
+  margin: 0 0 10px;
+  font-size: 14px;
+  color: var(--zilwa-muted);
+}
+.zilwa-card p:last-child {
+  margin-bottom: 0;
+}
+
+.zilwa-grid {
+  display: grid;
+  gap: 14px;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+}
+
+.zilwa-timeline {
+  display: grid;
+  gap: 0;
+}
+
+.zilwa-step {
+  display: grid;
+  grid-template-columns: 48px 1fr;
+  gap: 16px;
+  padding: 18px 0;
+  border-bottom: 1px solid var(--zilwa-border);
+}
+
+.zilwa-step:last-child {
+  border-bottom: none;
+}
+
+.zilwa-step-num {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: rgba(42, 157, 143, 0.25);
+  border: 2px solid var(--zilwa-reef);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 14px;
+  color: var(--zilwa-sand);
+}
+
+.zilwa-step h3 {
+  margin: 0 0 6px;
+  font-size: 15px;
+  color: var(--zilwa-sand);
+}
+
+.zilwa-meta {
+  font-size: 12px;
+  color: var(--zilwa-coral);
+  font-style: italic;
+}
+
+.zilwa-stat {
+  text-align: center;
+  padding: 16px;
+  background: rgba(6, 26, 31, 0.6);
+  border-radius: 8px;
+  border: 1px solid var(--zilwa-border);
+}
+
+.zilwa-stat-value {
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: var(--zilwa-sand);
+  display: block;
+}
+
+.zilwa-stat-label {
+  font-size: 12px;
+  color: var(--zilwa-muted);
+  margin-top: 4px;
+}
+
+.zilwa-illus {
+  font-size: 10px;
+  color: var(--zilwa-warn);
+  margin-top: 8px;
+  font-weight: 600;
+  letter-spacing: 0.03em;
+}
+
+.zilwa-checklist {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: 10px;
+}
+
+.zilwa-checklist li {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  font-size: 14px;
+  color: var(--zilwa-muted);
+}
+
+.zilwa-checklist li::before {
+  content: '◻';
+  color: var(--zilwa-reef);
+  flex-shrink: 0;
+}
+
+.zilwa-indicator {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 14px;
+}
+
+.zilwa-bar {
+  flex: 1;
+  height: 8px;
+  background: rgba(6, 26, 31, 0.8);
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.zilwa-bar-fill {
+  height: 100%;
+  background: linear-gradient(90deg, var(--zilwa-palm), var(--zilwa-reef));
+  border-radius: 4px;
+}
+
+.zilwa-footer {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 20px;
+  font-size: 12px;
+  color: var(--zilwa-muted);
+  border-top: 1px solid var(--zilwa-border);
+}
+
+.zilwa-footer a {
+  color: var(--zilwa-reef);
+}
+
+.zilwa-locked {
+  background: rgba(201, 162, 39, 0.12);
+  border: 1px dashed var(--zilwa-warn);
+  padding: 10px 12px;
+  border-radius: 6px;
+  font-size: 12px;
+  color: #ffe566;
+  margin-top: 10px;
+}

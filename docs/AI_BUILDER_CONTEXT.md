@@ -22,6 +22,46 @@
 
 Cross-links: [Z-GITHUB-SANCTUARY-GATE.md](Z-GITHUB-SANCTUARY-GATE.md), [Z-CLOUDFLARE-AI-COMMS-PRECAUTIONS.md](Z-CLOUDFLARE-AI-COMMS-PRECAUTIONS.md). **Merge queue:** MD060 → this spine → LinguaCore → Mauritius walks → Z-ADTF later. **No new runtime** while doctrine PRs land. Cloudflare future-phased only in this lane.
 
+## Z-NEXUS-ENGINE-0 — Global Resource & Human Energy Awareness (Phase 0 — docs only)
+
+Educational awareness lane for global resource balance, human labor energy, soil/water stress, circular economy pressure, and ecological recovery — **non-authoritative**, mock-first. No Streamlit, APIs, or verified measurement claims in Phase 0.
+
+- Foundation: [z-nexus-engine/Z_NEXUS_ENGINE_0_FOUNDATION.md](z-nexus-engine/Z_NEXUS_ENGINE_0_FOUNDATION.md)
+- Data ethics: [z-nexus-engine/Z_NEXUS_ENGINE_DATA_ETHICS.md](z-nexus-engine/Z_NEXUS_ENGINE_DATA_ETHICS.md)
+- Mock spec: [z-nexus-engine/Z_NEXUS_ENGINE_MOCK_DASHBOARD_SPEC.md](z-nexus-engine/Z_NEXUS_ENGINE_MOCK_DASHBOARD_SPEC.md)
+- Streamlit HOLD: [z-nexus-engine/Z_NEXUS_ENGINE_FUTURE_STREAMLIT_HOLD.md](z-nexus-engine/Z_NEXUS_ENGINE_FUTURE_STREAMLIT_HOLD.md)
+- Receipt: [z-nexus-engine/PHASE_Z_NEXUS_ENGINE_0_GREEN_RECEIPT.md](z-nexus-engine/PHASE_Z_NEXUS_ENGINE_0_GREEN_RECEIPT.md)
+
+Locked law: mock telemetry ≠ verified measurement; research-inspired baseline ≠ scientific certification; labor-energy model ≠ official ILO analysis; satellite/currency/policy concepts ≠ live verification, financial advice, or political instruction; GREEN ≠ deploy; AMK owns sacred moves.
+
+## ZILWA LIVING EXPERIENCES — Community-Connected Mauritian Hospitality (Phase 0 — docs only)
+
+Community-connected Mauritian hospitality ecosystem — host families, cultural ambassadors, elders, and guests — **dignity-first**, mock-first. No React Native, Express, payments, health data, live AI, or deploy in Phase 0.
+
+- Blueprint: [zilwa-living-experiences/ZILWA_MASTER_BLUEPRINT.md](zilwa-living-experiences/ZILWA_MASTER_BLUEPRINT.md)
+- Scope: [zilwa-living-experiences/ZILWA_PHASE_0_SCOPE.md](zilwa-living-experiences/ZILWA_PHASE_0_SCOPE.md)
+- AI panel spec: [zilwa-living-experiences/ZILWA_AI_PANEL_SPEC.md](zilwa-living-experiences/ZILWA_AI_PANEL_SPEC.md)
+- Financial mock: [zilwa-living-experiences/ZILWA_FINANCIAL_LEDGER_MOCK_SPEC.md](zilwa-living-experiences/ZILWA_FINANCIAL_LEDGER_MOCK_SPEC.md)
+- Health & child safety: [zilwa-living-experiences/ZILWA_HEALTH_PRIVACY_AND_CHILD_SAFETY.md](zilwa-living-experiences/ZILWA_HEALTH_PRIVACY_AND_CHILD_SAFETY.md)
+- Cultural ambassadors: [zilwa-living-experiences/ZILWA_CULTURAL_AMBASSADOR_FRAMEWORK.md](zilwa-living-experiences/ZILWA_CULTURAL_AMBASSADOR_FRAMEWORK.md)
+- Elder oral history: [zilwa-living-experiences/ZILWA_ELDER_ORAL_HISTORY_POLICY.md](zilwa-living-experiences/ZILWA_ELDER_ORAL_HISTORY_POLICY.md)
+- Receipt: [zilwa-living-experiences/ZILWA_GREEN_RECEIPT.md](zilwa-living-experiences/ZILWA_GREEN_RECEIPT.md)
+
+Locked law: financial figures = illustrative projections only; health passport = future concept only (no medical authority); oral histories = elder/family ownership; host families protected from exploitation; AI panel = spec only; **Human Gate Required Before Phase 1**; AMK owns sacred moves.
+
+### ZILWA Phase 1A — static awareness mockups (HTML only)
+
+Museum-exhibit HTML prototypes under `dashboard/Html/zilwa-*.html` — no runtime, payments, health data, AI, or APIs.
+
+- Doctrine: [zilwa-living-experiences/ZILWA_PHASE_1A_STATIC_MOCKUPS.md](zilwa-living-experiences/ZILWA_PHASE_1A_STATIC_MOCKUPS.md)
+- Entry: [../dashboard/Html/zilwa-guest-journey.html](../dashboard/Html/zilwa-guest-journey.html)
+
+**Human Gate Required Before Any Phase 1B Work.**
+
+- Steward review (plain language): [zilwa-living-experiences/ZILWA_STEWARD_REVIEW_PACK.md](zilwa-living-experiences/ZILWA_STEWARD_REVIEW_PACK.md)
+- Phase 1B gate matrix: [zilwa-living-experiences/ZILWA_PHASE_1B_READINESS_MATRIX.md](zilwa-living-experiences/ZILWA_PHASE_1B_READINESS_MATRIX.md)
+- PR prep / audit summary: [zilwa-living-experiences/ZILWA_PHASE_1A_REVIEW_AND_PR_PREP.md](zilwa-living-experiences/ZILWA_PHASE_1A_REVIEW_AND_PR_PREP.md)
+
 ## Canonical control root and satellite bridges (Z-CONTROL-LINK-1)
 
 **Sealed on main.** **`Z_Sanctuary_Universe`** (this hub repository) is the **canonical governance and control root** for Z-Sanctuary. Satellite projects must not fork long doctrine; they carry **one thin bridge file** only: **`docs/Z_SANCTUARY_CONTROL_LINK.md`**, aligned from the hub template at the same path.
