@@ -1,22 +1,22 @@
 # Z-Traffic Minibots — status report
 
-**Generated:** 2026-06-12T07:53:26.627Z
+**Generated:** 2026-06-12T08:12:09.478Z
 
 ## Traffic Chief
 
 | Field | Value |
 |----|----|
-| **Overall signal** | **RED** |
+| **Overall signal** | **GREEN** |
 | Human decision required | no |
 | Blocked categories (hint) | — |
 
 ### Recommended action
 
-Stop: fix failing required checks before opening a new lane.
+Required checks passed. You may open the next Turtle lane after human scope choice.
 
 ### Next lane advice
 
-Run failing scripts individually; restore green markdown, CAR², dashboard registry, and cross-project sync.
+Pick one domain; document rollback; run this report again after edits.
 
 *Minibots do not replace UI/manual acceptance. Reload Cursor if Problems panel looks stale.*
 
@@ -24,13 +24,13 @@ Run failing scripts individually; restore green markdown, CAR², dashboard regis
 
 | MiniBot | Command | Status | Signal | Duration (ms) |
 |----|----|----|----|----:|
-| Markdown Traffic Bot | `npm run verify:md` | fail | RED | 308 |
-| CAR² Traffic Bot | `npm run z:car2` | pass | GREEN | 2010 |
-| Dashboard Traffic Bot | `npm run dashboard:registry-verify` | pass | GREEN | 144 |
-| Cross-Project Bot | `npm run z:cross-project:sync` | pass | GREEN | 139 |
-| Z-AWARE-1 Ecosystem Awareness Bot | `npm run z:ecosystem:awareness` | pass | GREEN | 143 |
-| Z-API-SPINE-1 Power Cell Bot | `npm run z:api:spine` | pass | GREEN | 171 |
-| Z-SSWS-LINK-1 Launch Requirements Bot | `npm run z:ssws:requirements` | pass | GREEN | 141 |
+| Markdown Traffic Bot | `npm run verify:md` | pass | GREEN | 3523 |
+| CAR² Traffic Bot | `npm run z:car2` | pass | GREEN | 1822 |
+| Dashboard Traffic Bot | `npm run dashboard:registry-verify` | pass | GREEN | 140 |
+| Cross-Project Bot | `npm run z:cross-project:sync` | pass | GREEN | 142 |
+| Z-AWARE-1 Ecosystem Awareness Bot | `npm run z:ecosystem:awareness` | pass | GREEN | 145 |
+| Z-API-SPINE-1 Power Cell Bot | `npm run z:api:spine` | pass | GREEN | 170 |
+| Z-SSWS-LINK-1 Launch Requirements Bot | `npm run z:ssws:requirements` | pass | GREEN | 144 |
 | DRP Gate Bot | `(next-lane hint analysis — read-only)` | advisory | GREEN | 0 |
 | AI Builder Bot | `npm run z:ai-builder:refresh` | skipped | skipped | 0 |
 
@@ -38,15 +38,7 @@ Run failing scripts individually; restore green markdown, CAR², dashboard regis
 
 ### Markdown Traffic Bot
 
-Exit code 127. See stderr_tail in JSON.
-
-<details><summary>Output tail</summary>
-
-```text
-sh: 1: markdownlint: not found
-
-```
-</details>
+Check passed.
 
 ### CAR² Traffic Bot
 

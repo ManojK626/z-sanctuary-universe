@@ -154,6 +154,27 @@ This repository currently acts as:
 
 ---
 
+## ZILWA Living Experiences — Governance Charters
+
+> Status: AMBER. Human gate required before any operational activity. Docs-only sprint.
+
+| Document | Purpose |
+| --- | --- |
+| [zilwa-living-experiences/ZILWA_GOVERNANCE_REVIEW_SPRINT.md](zilwa-living-experiences/ZILWA_GOVERNANCE_REVIEW_SPRINT.md) | Full nine-lens governance review: hospitality, community, safety, legal, investor, red team |
+| [zilwa-living-experiences/ZILWA_RED_TEAM_REVIEW.md](zilwa-living-experiences/ZILWA_RED_TEAM_REVIEW.md) | Red team threat scenarios, contradictions, and critical questions |
+| [zilwa-living-experiences/ZILWA_COMMUNITY_IMPACT_ASSESSMENT.md](zilwa-living-experiences/ZILWA_COMMUNITY_IMPACT_ASSESSMENT.md) | Community benefit and risk assessment for Flic en Flac |
+| [zilwa-living-experiences/ZILWA_LONG_TERM_RISK_REGISTER.md](zilwa-living-experiences/ZILWA_LONG_TERM_RISK_REGISTER.md) | Operational risk register with hold gate conditions |
+| [zilwa-living-experiences/ZILWA_CHILD_PROTECTION_CHARTER.md](zilwa-living-experiences/ZILWA_CHILD_PROTECTION_CHARTER.md) | Child-first safeguarding, consent, supervision, and prohibited-activity charter |
+| [zilwa-living-experiences/ZILWA_ELDER_RIGHTS_CHARTER.md](zilwa-living-experiences/ZILWA_ELDER_RIGHTS_CHARTER.md) | Dignity, consent, ownership, and non-commercialisation charter for elders |
+| [zilwa-living-experiences/ZILWA_HOST_SUSTAINABILITY_CHARTER.md](zilwa-living-experiences/ZILWA_HOST_SUSTAINABILITY_CHARTER.md) | Host wellbeing, participation limits, fair value, and right-to-decline charter |
+| [zilwa-living-experiences/ZILWA_ACCESSIBILITY_CHARTER.md](zilwa-living-experiences/ZILWA_ACCESSIBILITY_CHARTER.md) | Dignity-centred inclusion for mobility, hearing, vision, neurodiversity, and seniors |
+| [zilwa-living-experiences/ZILWA_COMMUNITY_BENEFIT_CHARTER.md](zilwa-living-experiences/ZILWA_COMMUNITY_BENEFIT_CHARTER.md) | Community-first, transparency, anti-exploitation, and grievance pathway charter |
+| [zilwa-living-experiences/ZILWA_CARRYING_CAPACITY_FRAMEWORK.md](zilwa-living-experiences/ZILWA_CARRYING_CAPACITY_FRAMEWORK.md) | Conceptual capacity framework across community, host, beach, environment, and culture |
+| [zilwa-living-experiences/ZILWA_LEGAL_READINESS_CHECKLIST.md](zilwa-living-experiences/ZILWA_LEGAL_READINESS_CHECKLIST.md) | Legal readiness checklist by activity class (not legal advice) |
+| [zilwa-living-experiences/ZILWA_STEWARD_APPROVAL_FRAMEWORK.md](zilwa-living-experiences/ZILWA_STEWARD_APPROVAL_FRAMEWORK.md) | Six-stage human-gated steward approval framework |
+
+---
+
 ## Status
 
 This repository is under active structured development.

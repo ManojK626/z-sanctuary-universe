@@ -235,4 +235,25 @@ npm run z:car2
 
 ---
 
+## ZILWA Living Experiences — Governance Charters (AMBER)
+
+> Docs-only governance sprint. No runtime. Human gate required before any activity.
+
+| Charter | Purpose |
+| --- | --- |
+| [zilwa-living-experiences/ZILWA_GOVERNANCE_REVIEW_SPRINT.md](zilwa-living-experiences/ZILWA_GOVERNANCE_REVIEW_SPRINT.md) | Full nine-lens governance review |
+| [zilwa-living-experiences/ZILWA_RED_TEAM_REVIEW.md](zilwa-living-experiences/ZILWA_RED_TEAM_REVIEW.md) | Red team threat and contradiction analysis |
+| [zilwa-living-experiences/ZILWA_COMMUNITY_IMPACT_ASSESSMENT.md](zilwa-living-experiences/ZILWA_COMMUNITY_IMPACT_ASSESSMENT.md) | Community benefit and risk assessment |
+| [zilwa-living-experiences/ZILWA_LONG_TERM_RISK_REGISTER.md](zilwa-living-experiences/ZILWA_LONG_TERM_RISK_REGISTER.md) | Long-term risk register with hold gate conditions |
+| [zilwa-living-experiences/ZILWA_CHILD_PROTECTION_CHARTER.md](zilwa-living-experiences/ZILWA_CHILD_PROTECTION_CHARTER.md) | Child-first safeguarding and non-negotiable prohibitions |
+| [zilwa-living-experiences/ZILWA_ELDER_RIGHTS_CHARTER.md](zilwa-living-experiences/ZILWA_ELDER_RIGHTS_CHARTER.md) | Elder dignity, consent, and ownership rights |
+| [zilwa-living-experiences/ZILWA_HOST_SUSTAINABILITY_CHARTER.md](zilwa-living-experiences/ZILWA_HOST_SUSTAINABILITY_CHARTER.md) | Host wellbeing, limits, fair value, and right to decline |
+| [zilwa-living-experiences/ZILWA_ACCESSIBILITY_CHARTER.md](zilwa-living-experiences/ZILWA_ACCESSIBILITY_CHARTER.md) | Dignity-centred inclusive design for all traveller profiles |
+| [zilwa-living-experiences/ZILWA_COMMUNITY_BENEFIT_CHARTER.md](zilwa-living-experiences/ZILWA_COMMUNITY_BENEFIT_CHARTER.md) | Community-first, anti-exploitation, and grievance principles |
+| [zilwa-living-experiences/ZILWA_CARRYING_CAPACITY_FRAMEWORK.md](zilwa-living-experiences/ZILWA_CARRYING_CAPACITY_FRAMEWORK.md) | Conceptual capacity framework across five dimensions |
+| [zilwa-living-experiences/ZILWA_LEGAL_READINESS_CHECKLIST.md](zilwa-living-experiences/ZILWA_LEGAL_READINESS_CHECKLIST.md) | Legal readiness checklist by activity class |
+| [zilwa-living-experiences/ZILWA_STEWARD_APPROVAL_FRAMEWORK.md](zilwa-living-experiences/ZILWA_STEWARD_APPROVAL_FRAMEWORK.md) | Six-stage human-gated steward approval framework |
+
+---
+
 _Check main [INDEX.md](INDEX.md) for full documentation registry._
