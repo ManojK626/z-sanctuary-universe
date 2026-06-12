@@ -6,6 +6,13 @@
 
 **Z-Sanctuary Universe**is a self-aware emotional harmony system—a browser-based interface that simulates responsiveness, energy states, and experience recording through autonomous metrics. This is a**philosophical/artistic project, not production software**. All data is in-memory; refresh loses state.
 
+## Copilot Cloud Session Hints
+
+- Batch related repository reads and validations into as few turns as practical.
+- Treat `data/reports/**` as generated output; avoid scanning or editing report files unless the task explicitly targets them or a verifier regenerates them.
+- Prefer source-of-truth docs, scripts, and workflows over generated report mirrors when tracing failures.
+- Once the requested fix is verified, stop iterating instead of continuing broad exploratory searches.
+
 ## Architecture
 
 The system uses a **modular IIFE (Immediately Invoked Function Expression) pattern** with six core modules running in isolation:
