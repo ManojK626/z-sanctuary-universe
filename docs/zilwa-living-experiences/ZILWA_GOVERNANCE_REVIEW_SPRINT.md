@@ -201,6 +201,6 @@ Concept appears potentially inclusive in intent, but no evidence of accessible-b
 
 ## Overall Verdict
 
-**AMBER (Hold-Conditional)**
+Verdict: AMBER (Hold-Conditional)
 
 Proceed only as governance hardening. Do not launch operational tourism features until doctrine artifacts, safeguards, and legal/community controls are formalized and independently reviewed.
