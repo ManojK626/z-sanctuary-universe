@@ -1,17 +1,17 @@
 # Z-CAR² similarity report (Phase 1 — read-only)
 
-Generated: 2026-06-12T11:29:29.746Z
+Generated: 2026-05-12T19:20:45.500Z
 
 ## Summary
 
 | Metric | Value |
 | --- | ---: |
-| Files scanned | 3248 |
-| Bytes scanned | 12627724 |
-| Files skipped | 2 |
+| Files scanned | 3313 |
+| Bytes scanned | 13081925 |
+| Files skipped | 3 |
 | Duplicate line groups (capped) | 120 |
 | Duplicate window groups (capped) | 100 |
-| Risk mix (line groups) | GREEN:0, YELLOW:53, ORANGE:66, RED:0, BLACK:1 |
+| Risk mix (line groups) | GREEN:0, YELLOW:52, ORANGE:67, RED:0, BLACK:1 |
 | Risk mix (window groups) | GREEN:0, YELLOW:2, ORANGE:98, RED:0, BLACK:0 |
 | Safe auto-fix candidates | 0 |
 
@@ -31,6 +31,8 @@ Generated: 2026-06-12T11:29:29.746Z
 
 | Group | Files | Risk | Category | Preview |
 | --- | ---: | --- | --- | --- |
+| line_1972632326 | 10 | ORANGE | registry | "phase": "Observe",… |
+| line_4100795049 | 10 | ORANGE | registry | "confidence": 0.77,… |
 | line_448886420 | 10 | ORANGE | registry | "authority": "observational-only",… |
 | line_3561897584 | 10 | YELLOW | unknown | border-radius: 14px;… |
 | line_3375927765 | 10 | YELLOW | unknown | font-size: 13px;… |
@@ -40,6 +42,7 @@ Generated: 2026-06-12T11:29:29.746Z
 | line_4053077371 | 10 | YELLOW | unknown | background: rgba(255, 255, 255, 0.06);… |
 | line_2410436178 | 10 | ORANGE | script | if (!el) return;… |
 | line_355683639 | 10 | YELLOW | unknown | const reasons = [];… |
+| line_1183661019 | 10 | ORANGE | script | function load() {… |
 | line_3860078856 | 10 | YELLOW | unknown | <html lang="en">… |
 | line_3542070688 | 10 | YELLOW | unknown | <meta charset="utf-8" />… |
 | line_262487116 | 10 | YELLOW | unknown | <meta name="viewport" content="width=device-width, initial-scale=1" />… |
@@ -53,14 +56,12 @@ Generated: 2026-06-12T11:29:29.746Z
 | line_3374912951 | 10 | YELLOW | unknown | font-size: 22px;… |
 | line_4053079545 | 10 | YELLOW | unknown | background: rgba(255, 255, 255, 0.04);… |
 | line_3562108854 | 10 | YELLOW | unknown | border-radius: 12px;… |
-| line_1081585051 | 10 | YELLOW | unknown | src="./z_bootstrap.js"… |
-| line_1745511803 | 10 | YELLOW | unknown | data-z-root="../"… |
-| line_3599042646 | 10 | YELLOW | unknown | data-z-rhythm="true"… |
 
 ## Sample duplicate window groups
 
 | Group | Files | Risk | Category | Preview |
 | --- | ---: | --- | --- | --- |
+| win_4235972410 | 10 | ORANGE | registry | "phase": "Impact", · "micro_cell": "Expanse Cell", · "orientation": "Sto… |
 | win_2613839844 | 10 | ORANGE | dashboard | <html lang="en"> · <head> · <meta charset="utf-8" /> · <meta name="viewp… |
 | win_2766738602 | 10 | YELLOW | unknown | <meta name="viewport" content="width=device-width, initial-scale=1" /> ·… |
 | win_3191415458 | 10 | YELLOW | unknown | data-z-rhythm="true" · data-z-feeling="true" · ></script> · <script src=… |
@@ -80,6 +81,5 @@ Generated: 2026-06-12T11:29:29.746Z
 | win_2572422181 | 10 | ORANGE | registry | "format": "6+1", · "draw_schedule": ["Wednesday", "Saturday"], · "notes"… |
 | win_2052677975 | 10 | ORANGE | registry | "summary": "This commentary describes what was measured: entropy-based s… |
 | win_4141325982 | 10 | ORANGE | registry | "what_the_data_shows": [ · "Historical draws were analyzed with frequenc… |
-| win_2736237309 | 10 | ORANGE | registry | "what_the_data_does_not_show": [ · "This does not predict specific futur… |
 
 Full JSON: `data/reports/z_car2_similarity_report.json`.
