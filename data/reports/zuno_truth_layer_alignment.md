@@ -1,6 +1,6 @@
 # Zuno truth-layer alignment
 
-**Generated:** 2026-05-03T15:52:29.865Z
+**Generated:** 2026-06-12T11:03:47.806Z
 
 | Field | Value |
 | ---- | ---- |

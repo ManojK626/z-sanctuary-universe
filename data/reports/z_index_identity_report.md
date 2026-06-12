@@ -1,12 +1,12 @@
 # Z-Index Identity Report
 
-_Generated 2026-04-30T19:45:32.505Z_ · **READ-ONLY scan**
+_Generated 2026-06-12T11:03:47.353Z_ · **READ-ONLY scan**
 
 **Status:** `green`
 
 | Metric | Count |
-| -------------------------- | ----- |
-| Files in report | 59 |
+| --- | --- |
+| Files in report | 58 |
 | Main-dashboard candidates | 5 |
 | Failures (main dashboards) | 0 |
 

@@ -1,6 +1,6 @@
 {
   "schema": "zuno_truth_layer_alignment_v1",
-  "generated_at": "2026-05-03T15:52:29.865Z",
+  "generated_at": "2026-06-12T11:03:47.806Z",
   "status": "YELLOW",
   "snapshot_path": "data/zuno_state_snapshot.json",
   "registry_path": "data/z_sanctuary_monster_project_registry.json",

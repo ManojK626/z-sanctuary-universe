@@ -1,12 +1,12 @@
 # Zuno awareness score (A3)
 
-**Generated:** 2026-05-03T15:52:29.702Z
+**Generated:** 2026-06-12T11:03:47.706Z
 
 | Field | Value |
 | ---- | ---- |
-| **Band** | **RED** |
-| Score | 10 |
-| Dominant drivers | z_traffic_RED; a2a_temporal_deltas_present; a2b_truth_layer_YELLOW |
+| **Band** | **YELLOW** |
+| Score | 70 |
+| Dominant drivers | a2a_temporal_deltas_present; a2b_truth_layer_YELLOW |
 
 ## Band meanings
 
@@ -25,13 +25,12 @@
 | Snapshot ingest | {"snapshot_present":true,"truth_alignment_ref_ok":true,"snapshot_id":"ZUNO_SNAPSHOT_2026_05_03"} |
 | A2a temporal | {"script_exit_code":0,"status":"ok","baseline_path":"data/zuno_state_snapshot.baseline.json","summary":{"added":1,"removed":0,"changed":1,"non_claim_changed":0,"posture_changed":0},"note":null} |
 | A2b truth layer | {"script_exit_code":0,"status":"YELLOW","echo_in_sync":true,"narrative_missing_count":23} |
-| Z-Traffic chief | {"script_exit_code":1,"overall_signal":"RED","human_decision_required":false} |
+| Z-Traffic chief | {"script_exit_code":0,"overall_signal":"GREEN","human_decision_required":false} |
 | Non-claims | {"band":"GREEN"} |
 | Posture language | {"band":"GREEN"} |
 
 ## Rationale
 
-- z_traffic_RED
 - a2a_temporal_deltas_present
 - a2b_truth_layer_YELLOW
 

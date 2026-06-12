@@ -15,12 +15,16 @@ const OUT_JSON = path.join(ROOT, 'data', 'reports', 'z_monster_project_registry_
 
 const REP = new Set(['metadata', 'docs', 'ui', 'simulation', 'registry', 'code', 'mixed']);
 
+function toRepoPath(p) {
+  return path.relative(ROOT, p).replace(/\\/g, '/');
+}
+
 function main() {
   const generatedAt = new Date().toISOString();
   const errors = [];
 
   if (!fs.existsSync(REG)) {
-    console.error('[z_monster_project_registry_verify] missing', path.relative(ROOT, REG));
+    console.error('[z_monster_project_registry_verify] missing', toRepoPath(REG));
     process.exit(1);
   }
 
@@ -94,7 +98,7 @@ function main() {
   const pass = errors.length === 0;
   const payload = {
     generated_at: generatedAt,
-    registry_path: path.relative(ROOT, REG),
+    registry_path: toRepoPath(REG),
     pass,
     entry_count: Array.isArray(entries) ? entries.length : 0,
     required_count: Array.isArray(required) ? required.length : 0,

@@ -11,6 +11,10 @@ const REPORTS = path.join(ROOT, 'data', 'reports');
 const MDG = path.join(ROOT, 'data', 'z_mdg_dashboard_registry.json');
 const QARP = path.join(ROOT, 'data', 'z_qa_rp_registry.json');
 
+function toRepoPath(p) {
+  return path.relative(ROOT, p).split(path.sep).join('/');
+}
+
 function readJson(p) {
   return JSON.parse(fs.readFileSync(p, 'utf8'));
 }
@@ -37,7 +41,7 @@ function main() {
         id: t.id || '—',
         title: t.title || '—',
         href,
-        fsPath: fsPath || null,
+        fsPath: fsPath ? toRepoPath(fsPath) : null,
         pass: Boolean(ok),
         note: ok ? 'ok' : fsPath ? 'missing_file' : 'href_not_hub_absolute',
       });
@@ -46,7 +50,7 @@ function main() {
     checks.push({
       kind: 'mdgev_registry',
       pass: false,
-      note: `missing ${path.relative(ROOT, MDG)}`,
+      note: `missing ${toRepoPath(MDG)}`,
     });
   }
 
@@ -59,7 +63,7 @@ function main() {
       kind: 'qa_rp_registry',
       id: q.id || 'z-qa-rp',
       dashboard_ui: ui || null,
-      fsPath: fsPath || null,
+      fsPath: fsPath ? toRepoPath(fsPath) : null,
       pass: Boolean(ok),
       note: ok ? 'ok' : fsPath ? 'missing_file' : 'dashboard_ui_invalid',
     });
@@ -67,7 +71,7 @@ function main() {
     checks.push({
       kind: 'qa_rp_registry',
       pass: false,
-      note: `missing ${path.relative(ROOT, QARP)}`,
+      note: `missing ${toRepoPath(QARP)}`,
     });
   }
 
@@ -76,7 +80,7 @@ function main() {
 
   const payload = {
     generated_at: generatedAt,
-    hub_root: ROOT,
+    hub_root: '.',
     status,
     totals: { checks: checks.length, passed: checks.filter((c) => c.pass).length, failed: failed.length },
     checks,
@@ -96,7 +100,7 @@ function main() {
     '',
     `- Generated: ${generatedAt}`,
     `- Status: **${status.toUpperCase()}**`,
-    `- Hub root: \`${ROOT}\``,
+    `- Hub root: \`.\``,
     '',
     '## Checks',
     ...checks.map((c) => {

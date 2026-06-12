@@ -1,14 +1,13 @@
 {
   "schema": "zuno_awareness_score_v1",
-  "generated_at": "2026-05-03T15:52:29.702Z",
-  "band": "RED",
-  "score": 10,
+  "generated_at": "2026-06-12T11:03:47.706Z",
+  "band": "YELLOW",
+  "score": 70,
   "dominant_drivers": [
-    "z_traffic_RED",
     "a2a_temporal_deltas_present",
     "a2b_truth_layer_YELLOW"
   ],
-  "rationale": "- z_traffic_RED\n- a2a_temporal_deltas_present\n- a2b_truth_layer_YELLOW",
+  "rationale": "- a2a_temporal_deltas_present\n- a2b_truth_layer_YELLOW",
   "signals": {
     "monster_registry_verify": {
       "script_exit_code": 0,
@@ -40,8 +39,8 @@
       "narrative_missing_count": 23
     },
     "z_traffic_chief": {
-      "script_exit_code": 1,
-      "overall_signal": "RED",
+      "script_exit_code": 0,
+      "overall_signal": "GREEN",
       "human_decision_required": false
     },
     "non_claims": {

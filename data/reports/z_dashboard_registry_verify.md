@@ -1,8 +1,8 @@
 # Z Dashboard registry verify
 
-- Generated: 2026-05-12T19:20:40.369Z
+- Generated: 2026-06-12T11:03:53.383Z
 - Status: **GREEN**
-- Hub root: `C:\Cursor Projects Organiser\Z_Sanctuary_Universe`
+- Hub root: `/home/runner/work/z-sanctuary-universe/z-sanctuary-universe/ManojK626/z-sanctuary-universe`
 
 ## Checks
 - [x] mdgev_tile `mdgev-self` /dashboard/z-mdgev/index.html — ok
