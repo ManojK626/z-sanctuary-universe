@@ -175,7 +175,7 @@ This repository currently acts as:
 
 ### ZILWA Phase 1A static awareness mockups
 
-> Static HTML only. Shared CSS only. Demonstration only — not a live system.
+> Static HTML only. Shared CSS only. No JavaScript. Demonstration only — not a live system.
 
 | Prototype asset | Purpose |
 | --- | --- |
