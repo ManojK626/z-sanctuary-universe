@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-06-12T11:03:47.353Z",
-  "hub_root": "/home/runner/work/z-sanctuary-universe/z-sanctuary-universe/ManojK626/z-sanctuary-universe",
+  "generated_at": "2026-04-30T19:45:32.505Z",
+  "hub_root": "C:\\Cursor Projects Organiser\\ZSanctuary_Universe",
   "mode": "read_only_scan",
   "summary": {
-    "files_scanned": 58,
+    "files_scanned": 59,
     "main_dashboard_candidates": 5,
     "failures_total": 0,
     "failures_main_dashboard": 0,
@@ -426,7 +426,13 @@
       "note": "index.html outside main-dashboard heuristics — informational"
     },
     {
-      "path": "z-questra/index.html",
+      "path": "Z_Sanctuary_Universe 2/lab-outputs/z-suc-2-reader/index.html",
+      "classification": "skipped_not_main_candidate",
+      "pass": true,
+      "note": "index.html outside main-dashboard heuristics — informational"
+    },
+    {
+      "path": "Z_Sanctuary_Universe 2/Z-Sanctuary Browser/renderer/index.html",
       "classification": "skipped_not_main_candidate",
       "pass": true,
       "note": "index.html outside main-dashboard heuristics — informational"
