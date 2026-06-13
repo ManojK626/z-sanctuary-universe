@@ -33,7 +33,10 @@ Compact entry points for **read-only** hub registries and AMK-facing evidence. F
 | ZILWA-0 elder oral history policy | [zilwa-living-experiences/ZILWA_ELDER_ORAL_HISTORY_POLICY.md](zilwa-living-experiences/ZILWA_ELDER_ORAL_HISTORY_POLICY.md) | — |
 | ZILWA-0 green receipt | [zilwa-living-experiences/ZILWA_GREEN_RECEIPT.md](zilwa-living-experiences/ZILWA_GREEN_RECEIPT.md) | — |
 | ZILWA-1A static awareness mockups | [zilwa-living-experiences/ZILWA_PHASE_1A_STATIC_MOCKUPS.md](zilwa-living-experiences/ZILWA_PHASE_1A_STATIC_MOCKUPS.md) | `npm run verify:md` |
+| ZILWA-1A full exhibit hub (HTML) | [../dashboard/Html/zilwa-exhibit-hub.html](../dashboard/Html/zilwa-exhibit-hub.html) | static file |
 | ZILWA-1A guest journey (HTML) | [../dashboard/Html/zilwa-guest-journey.html](../dashboard/Html/zilwa-guest-journey.html) | static file |
+| ZILWA module catalog (20 modules) | [zilwa-living-experiences/ZILWA_MODULE_CATALOG.md](zilwa-living-experiences/ZILWA_MODULE_CATALOG.md) | — |
+| ZILWA Phase 1A completion receipt | [zilwa-living-experiences/ZILWA_PHASE_1A_COMPLETION_RECEIPT.md](zilwa-living-experiences/ZILWA_PHASE_1A_COMPLETION_RECEIPT.md) | — |
 | ZILWA steward review pack | [zilwa-living-experiences/ZILWA_STEWARD_REVIEW_PACK.md](zilwa-living-experiences/ZILWA_STEWARD_REVIEW_PACK.md) | — |
 | ZILWA Phase 1B readiness matrix | [zilwa-living-experiences/ZILWA_PHASE_1B_READINESS_MATRIX.md](zilwa-living-experiences/ZILWA_PHASE_1B_READINESS_MATRIX.md) | — |
 | API readiness and smoke (charter) | [Z_API_READINESS_AND_SMOKE_GATE.md](Z_API_READINESS_AND_SMOKE_GATE.md) | `npm run z:api:readiness` |

@@ -284,3 +284,103 @@ body.zilwa-page {
   color: #ffe566;
   margin-top: 10px;
 }
+
+.zilwa-concept-only {
+  display: block;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  color: #ffb4a2;
+  margin-top: 8px;
+  text-transform: uppercase;
+}
+
+.zilwa-hub-back {
+  display: inline-block;
+  margin-bottom: 12px;
+  font-size: 12px;
+  color: var(--zilwa-sand);
+  text-decoration: none;
+  border-bottom: 1px solid var(--zilwa-border);
+}
+
+.zilwa-hub-back:hover {
+  color: var(--zilwa-reef);
+}
+
+.zilwa-module-grid {
+  display: grid;
+  gap: 12px;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+}
+
+.zilwa-module-card {
+  background: rgba(6, 26, 31, 0.55);
+  border: 1px solid var(--zilwa-border);
+  border-radius: 10px;
+  padding: 14px 16px;
+}
+
+.zilwa-module-card h3 {
+  margin: 0 0 8px;
+  font-size: 14px;
+  color: var(--zilwa-sand);
+}
+
+.zilwa-module-card p {
+  margin: 0 0 8px;
+  font-size: 13px;
+  color: var(--zilwa-muted);
+}
+
+.zilwa-module-card a {
+  font-size: 12px;
+  color: var(--zilwa-reef);
+}
+
+.zilwa-feed-mock {
+  display: grid;
+  gap: 12px;
+}
+
+.zilwa-feed-item {
+  padding: 12px 14px;
+  background: rgba(6, 26, 31, 0.6);
+  border-radius: 8px;
+  border-left: 3px solid var(--zilwa-coral);
+}
+
+.zilwa-feed-item time {
+  font-size: 11px;
+  color: var(--zilwa-muted);
+}
+
+.zilwa-disabled-panel {
+  opacity: 0.75;
+  border: 1px dashed var(--zilwa-warn);
+  border-radius: 10px;
+  padding: 16px;
+  position: relative;
+}
+
+.zilwa-disabled-panel::before {
+  content: 'DISABLED — CONCEPT ONLY';
+  display: block;
+  font-size: 10px;
+  font-weight: 700;
+  color: var(--zilwa-warn);
+  margin-bottom: 10px;
+  letter-spacing: 0.06em;
+}
+
+.zilwa-timeline-compact {
+  display: grid;
+  gap: 8px;
+}
+
+.zilwa-timeline-compact li {
+  font-size: 13px;
+  color: var(--zilwa-muted);
+  padding-left: 14px;
+  border-left: 2px solid var(--zilwa-reef);
+}

@@ -54,9 +54,12 @@ Locked law: financial figures = illustrative projections only; health passport =
 Museum-exhibit HTML prototypes under `dashboard/Html/zilwa-*.html` — no runtime, payments, health data, AI, or APIs.
 
 - Doctrine: [zilwa-living-experiences/ZILWA_PHASE_1A_STATIC_MOCKUPS.md](zilwa-living-experiences/ZILWA_PHASE_1A_STATIC_MOCKUPS.md)
+- Hub (20 modules): [../dashboard/Html/zilwa-exhibit-hub.html](../dashboard/Html/zilwa-exhibit-hub.html)
+- Catalog: [zilwa-living-experiences/ZILWA_MODULE_CATALOG.md](zilwa-living-experiences/ZILWA_MODULE_CATALOG.md)
+- Completion receipt: [zilwa-living-experiences/ZILWA_PHASE_1A_COMPLETION_RECEIPT.md](zilwa-living-experiences/ZILWA_PHASE_1A_COMPLETION_RECEIPT.md)
 - Entry: [../dashboard/Html/zilwa-guest-journey.html](../dashboard/Html/zilwa-guest-journey.html)
 
-**Human Gate Required Before Any Phase 1B Work.**
+**PR #14 AMBER+ HOLD** — merge blocked pending AMK / steward approval. **Human Gate Required Before Any Phase 1B Work.**
 
 - Steward review (plain language): [zilwa-living-experiences/ZILWA_STEWARD_REVIEW_PACK.md](zilwa-living-experiences/ZILWA_STEWARD_REVIEW_PACK.md)
 - Phase 1B gate matrix: [zilwa-living-experiences/ZILWA_PHASE_1B_READINESS_MATRIX.md](zilwa-living-experiences/ZILWA_PHASE_1B_READINESS_MATRIX.md)
