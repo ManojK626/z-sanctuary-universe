@@ -384,3 +384,36 @@ body.zilwa-page {
   padding-left: 14px;
   border-left: 2px solid var(--zilwa-reef);
 }
+
+/* ZILWA 2A — global network expansion */
+.zilwa-phase-2a-badge {
+  background: linear-gradient(135deg, #1a4d5c 0%, #2d6a4f 100%);
+  border-color: var(--zilwa-reef);
+}
+
+.zilwa-region-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+  gap: 12px;
+  margin-top: 12px;
+}
+
+.zilwa-region-card {
+  background: var(--zilwa-surface);
+  border: 1px solid var(--zilwa-border);
+  border-radius: 10px;
+  padding: 14px;
+}
+
+.zilwa-region-card h3 {
+  font-size: 14px;
+  margin: 0 0 6px;
+  color: var(--zilwa-sand);
+}
+
+.zilwa-region-card p {
+  font-size: 12px;
+  margin: 0;
+  color: var(--zilwa-muted);
+  line-height: 1.45;
+}
