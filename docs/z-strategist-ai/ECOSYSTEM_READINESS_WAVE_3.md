@@ -103,4 +103,6 @@ Wave 3 completes the strategist question set for AMK human gate:
 - Wave 2 — dependencies + first pilot hypothesis  
 - Wave 3 — **pilot readiness: can we learn?**
 
-Public pilot selection remains **AMK-Goku Final Gate — Hold**.
+Public pilot selection remains **AMK-Goku Final Gate — Hold** for deploy; Lane A learning scope documented in [Z_PEE_PILOT_LEARNING_SCOPE.md](Z_PEE_PILOT_LEARNING_SCOPE.md).
+
+Strategic posture: [AMK_STRATEGIC_POSTURE.md](AMK_STRATEGIC_POSTURE.md).
