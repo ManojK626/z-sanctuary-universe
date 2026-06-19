@@ -1,6 +1,7 @@
 # ÉirMind Reality Check — Discovery Audit
 
-**Posture:** Read-only · 2026-06-11
+**Posture:** Read-only audit · aligned 2026-06-11  
+**Classification:** [EIRMIND_ALIGNMENT_DECISION.md](EIRMIND_ALIGNMENT_DECISION.md) — **Hold pending AMK** (rehome under Aisling-Sol recommended)
 
 ## Summary
 
@@ -60,5 +61,5 @@
 ## Recommended human actions (not executed)
 
 1. Confirm whether Ireland Projects lives on another machine or NAS.  
-2. Point `eirmind` registry row to **Z-Sister Aisling Sol** or restore Ireland path.  
+2. AMK signs **EMK-REHOME** (Aisling Sol) or **EMK-RESTORE** (Ireland Projects) per [EIRMIND_ALIGNMENT_DECISION.md](EIRMIND_ALIGNMENT_DECISION.md).  
 3. Keep magical bridge **reference-only** until charter.

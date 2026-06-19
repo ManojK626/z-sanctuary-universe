@@ -14,7 +14,7 @@ PC Root (C:\Cursor Projects Organiser)
 │   │   ├─ AMK dashboards + indicators
 │   │   └─ Monster + module registries
 │   ├─ Z_Sanctuary_Universe 2 (continuation lane)
-│   └─ ZSanctuary_Universe (empty stub — naming only)
+│   └─ ZSanctuary_Universe (retired stub — folder retained, do not use)
 │
 ├─ EDUCATION / WORKSTATION
 │   ├─ Z-QUESTRA + Z-SME (z-questra/)

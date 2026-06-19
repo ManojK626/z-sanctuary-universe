@@ -1,18 +1,32 @@
 {
   "pc_root": "C:/Cursor Projects Organiser",
-  "hub": "ZSanctuary_Universe",
-  "updated_at": "2026-05-04T13:51:10Z",
+  "hub": "Z_Sanctuary_Universe",
+  "updated_at": "2026-06-11T00:00:00Z",
   "source": "z-eaii-registry.json + z-eaii-build-pc-workspace.mjs",
+  "alignment_note": "Hub disk folder aligned 2026-06-11 (ROOT_ALIGNMENT_PASS). Retired stub: ZSanctuary_Universe — see docs/root-discovery-audit/ROOT_ALIGNMENT_DELTA_REPORT.md",
   "projects": [
     {
       "id": "zsanctuary-universe",
-      "name": "ZSanctuary_Universe",
-      "path": "ZSanctuary_Universe",
+      "name": "Z_Sanctuary_Universe",
+      "path": "Z_Sanctuary_Universe",
       "role": "hub",
       "ssws": true,
       "formula_aware": true,
       "eaii_launch_task": "Z: SSWS Auto Boot",
-      "dashboard_url": "http://127.0.0.1:5502"
+      "dashboard_url": "http://127.0.0.1:5502",
+      "notes": "Canonical governance and control root on disk (~381 MB). Open this folder in Cursor for hub verify and SSWS."
+    },
+    {
+      "id": "zsanctuary-universe-stub-retired",
+      "name": "ZSanctuary_Universe (retired stub)",
+      "path": "ZSanctuary_Universe",
+      "role": "retired_stub",
+      "ssws": false,
+      "formula_aware": false,
+      "eaii_launch_task": "",
+      "dashboard_url": "",
+      "migration_status": "retired_placeholder",
+      "notes": "Empty placeholder folder (empty docs/ only). Do not use as hub. Active hub is Z_Sanctuary_Universe. Folder retained on disk — not deleted per ROOT_ALIGNMENT_PASS."
     },
     {
       "id": "amk-goku-dashboards-2",
@@ -55,7 +69,8 @@
       "ssws": false,
       "formula_aware": true,
       "eaii_launch_task": "",
-      "dashboard_url": ""
+      "dashboard_url": "",
+      "notes": "Duplicate registry id — consolidate when human-gated. Same path as at-princess-blackie-copilot."
     },
     {
       "id": "pc-root-extras-and-tools",
@@ -66,7 +81,7 @@
       "formula_aware": false,
       "eaii_launch_task": "",
       "dashboard_url": "",
-      "notes": "Canonical PC-root sink for installers, portable tools, large downloads, zips, and other non-repo artefacts. Keeps product repos (hub + members) clean. Not an app codebase — do not run SSWS here. Z-Folder Manager hub policy (allowed_roots) applies only inside ZSanctuary_Universe; use this folder for PC-root hygiene. See docs/Z-PC-ROOT-EXTRAS-AND-TOOLS-SINK.md."
+      "notes": "Canonical PC-root sink for installers, portable tools, large downloads, zips, and other non-repo artefacts. Keeps product repos (hub + members) clean. Not an app codebase — do not run SSWS here. Z-Folder Manager hub policy (allowed_roots) applies only inside Z_Sanctuary_Universe; use this folder for PC-root hygiene. See docs/Z-PC-ROOT-EXTRAS-AND-TOOLS-SINK.md."
     },
     {
       "id": "replit-roulette-z-amk-goku-mdcp",
@@ -89,18 +104,19 @@
       "ssws": false,
       "formula_aware": true,
       "eaii_launch_task": "",
-      "dashboard_url": ""
+      "dashboard_url": "",
+      "notes": "ÉirMind lineage on disk — see docs/root-discovery-audit/EIRMIND_ALIGNMENT_DECISION.md"
     },
     {
       "id": "z-sanctuary-universe-2-continuation",
       "name": "Z_Sanctuary_Universe 2",
-      "path": "ZSanctuary_Universe/Z_Sanctuary_Universe 2",
+      "path": "Z_Sanctuary_Universe/Z_Sanctuary_Universe 2",
       "role": "member",
       "ssws": false,
       "formula_aware": true,
       "eaii_launch_task": "",
       "dashboard_url": "",
-      "notes": "Continuation / parallel build lane on disk. Operational hub remains ZSanctuary_Universe (registry, Overseer, SSWS). Point Z-Formulas and governance to hub; no second SSWS auto-boot unless explicitly promoted."
+      "notes": "Continuation / parallel build lane on disk. Operational hub remains Z_Sanctuary_Universe (registry, Overseer, SSWS). Point Z-Formulas and governance to hub; no second SSWS auto-boot unless explicitly promoted."
     },
     {
       "id": "z-omni-sanctuary",
@@ -162,6 +178,19 @@
       "formula_aware": true,
       "eaii_launch_task": "",
       "dashboard_url": ""
+    },
+    {
+      "id": "eirmind-ireland-projects-missing",
+      "name": "ÉirMind (Ireland Projects)",
+      "path": "",
+      "role": "external",
+      "hosting": "missing",
+      "ssws": false,
+      "formula_aware": true,
+      "eaii_launch_task": "",
+      "dashboard_url": "",
+      "migration_status": "path_missing",
+      "notes": "Former path C:/Cursor Projects Organiser/Ireland Projects absent on disk 2026-06-11. Hold pending AMK — see EIRMIND_ALIGNMENT_DECISION.md. On-disk lineage: Z-Sister Aisling Sol."
     }
   ]
 }

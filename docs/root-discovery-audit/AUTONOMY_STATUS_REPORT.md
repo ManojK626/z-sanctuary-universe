@@ -53,3 +53,9 @@ This audit **did not** start services. Documented operator entry points:
 ## Sacred moves (always human)
 
 Deploy · merge · billing · bridge · provider keys · NAS · registration
+
+---
+
+## ROOT_ALIGNMENT_PASS note (2026-06-11)
+
+**Autonomy status unchanged** by registry alignment. No autonomous services were enabled. Zuno remains L1 observe/report — not a daemon. See [ROOT_ALIGNMENT_DELTA_REPORT.md](ROOT_ALIGNMENT_DELTA_REPORT.md).

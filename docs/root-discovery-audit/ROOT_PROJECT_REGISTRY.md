@@ -1,9 +1,9 @@
 # Root Project Registry — Discovery Audit
 
-**Posture:** Read-only archaeological inventory · 2026-06-11  
+**Posture:** Discovery inventory · aligned 2026-06-11 (ROOT_ALIGNMENT_PASS)  
 **PC root:** `C:\Cursor Projects Organiser`  
 **Canonical hub (on disk):** `Z_Sanctuary_Universe` (~381 MB)  
-**Registry JSON hub name:** `ZSanctuary_Universe` (stale path — see duplicates doc)
+**Registry `hub` field:** **`Z_Sanctuary_Universe`** (aligned)
 
 ## Legend
 
@@ -23,7 +23,7 @@
 | Name | Path | Category | Status | Last activity | Notes |
 | ---- | ---- | -------- | ------ | ------------- | ----- |
 | Z-Sanctuary Universe Hub | `Z_Sanctuary_Universe` | Core / governance | Active | 2026-06-06 | Canonical control root; SSWS; dashboards; verify |
-| ZSanctuary_Universe (stub) | `ZSanctuary_Universe` | Core | Stub | 2026-05-05 | Empty `docs/` only; registry name collision |
+| ZSanctuary_Universe (retired stub) | `ZSanctuary_Universe` | Core | Retired stub | 2026-05-05 | Empty `docs/` only; **retained on disk** — do not use as hub |
 | Z_Sanctuary_Universe 2 | `Z_Sanctuary_Universe/Z_Sanctuary_Universe 2` | Core / continuation | Active | 2026-05-10 | Parallel hub lane; not second SSWS |
 | Z_Labs | `Z_Labs` | Labs / satellite | Active | 2026-05-11 | Satellite manifest enabled |
 | Z-OMNI-Sanctuary | `Z-OMNI-Sanctuary` | App / runtime JSON | Active | 2026-06-19 | `z_project_runtime.json`; z-html-do |
@@ -73,8 +73,9 @@
 
 ---
 
-## Registry drift warnings
+## Registry alignment (2026-06-11)
 
-1. `data/z_pc_root_projects.json` lists hub path `ZSanctuary_Universe` — **actual hub is `Z_Sanctuary_Universe`**.  
-2. ÉirMind path `Ireland Projects` — **missing on disk**.  
-3. Several PC folders exist **outside** `z_pc_root_projects.json` (G, Gem, WorkSphere, External PaaS, Pets).
+1. `data/z_pc_root_projects.json` hub path → **`Z_Sanctuary_Universe`** (aligned).  
+2. Retired stub `ZSanctuary_Universe` → documented as `retired_stub` — folder **not deleted**.  
+3. ÉirMind `Ireland Projects` → **still missing**; see [EIRMIND_ALIGNMENT_DECISION.md](EIRMIND_ALIGNMENT_DECISION.md).  
+4. Several PC folders still **outside** registry (G, Gem, WorkSphere, External PaaS, Pets) — future pass.

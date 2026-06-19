@@ -62,3 +62,9 @@
 | 5 | Roulette edu-framed tool | B–C | Compliance narrative required |
 
 **Not deployment candidates (12 mo):** ÉirMind restore uncertain; wellness; marketplace; live Nexus APIs.
+
+---
+
+## ROOT_ALIGNMENT_PASS note (2026-06-11)
+
+**Deployable candidate ranking unchanged** after hub path fix. ÉirMind remains non-candidate until AMK signs [EIRMIND_ALIGNMENT_DECISION.md](EIRMIND_ALIGNMENT_DECISION.md). See [ROOT_ALIGNMENT_DELTA_REPORT.md](ROOT_ALIGNMENT_DELTA_REPORT.md).

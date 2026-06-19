@@ -1,11 +1,17 @@
 # Root Discovery Audit — Index
 
-**Branch:** `cursor/zsanctuary/root-discovery-audit`  
-**Posture:** Read-only archaeological dig · 2026-06-11
+**Audit branch:** `cursor/zsanctuary/root-discovery-audit`  
+**Alignment branch:** `cursor/zsanctuary/root-alignment-pass`  
+**Posture:** Read-only dig + safe registry alignment · 2026-06-11
 
 ## Master report
 
 [Z_SANCTUARY_ROOT_DISCOVERY_REPORT.md](Z_SANCTUARY_ROOT_DISCOVERY_REPORT.md)
+
+## Alignment pass (2026-06-11)
+
+- [ROOT_ALIGNMENT_DELTA_REPORT.md](ROOT_ALIGNMENT_DELTA_REPORT.md) — before/after, uncertainties, AMK gates  
+- [EIRMIND_ALIGNMENT_DECISION.md](EIRMIND_ALIGNMENT_DECISION.md) — ÉirMind hold + rehome recommendation  
 
 ## Supporting reports
 
@@ -20,4 +26,5 @@
 
 - PC root: `C:\Cursor Projects Organiser` (folder list + registry cross-check)
 - Hub: `Z_Sanctuary_Universe` (manifests, not full deep file walk)
-- No service starts · no installs · no deploy
+- Alignment: `data/z_pc_root_projects.json`, `data/z_ecosystem_awareness_registry.json`, docs only
+- No service starts · no installs · no deploy · no folder deletion

@@ -1,10 +1,11 @@
 # Z-Sanctuary Root Discovery — Master Report
 
-**Mission:** Read-only archaeological audit of accessible local Z-Sanctuary roots  
+**Mission:** Read-only archaeological audit + **ROOT_ALIGNMENT_PASS** (2026-06-11)  
 **Date:** 2026-06-11  
-**Auditor:** Cursor (discovery only)  
+**Auditor:** Cursor (discovery + alignment — docs/registry only)  
 **PC root scanned:** `C:\Cursor Projects Organiser`  
-**Canonical hub:** `Z_Sanctuary_Universe`
+**Canonical hub:** `Z_Sanctuary_Universe`  
+**Registry `hub` field:** **`Z_Sanctuary_Universe`** (aligned)
 
 ## Executive summary
 
@@ -12,7 +13,7 @@ The ecosystem is **far larger than GitHub or the EAII registry alone suggest**. 
 
 **Nothing in this audit started services.** Runnability is inferred from manifests and package.json — not live process checks.
 
-**Strategic clarity already achieved elsewhere holds:** governance (strategist) · knowledge (ZILWA) · learning (Z-PEE) · revenue discovery (Z-QUESTRA) are the right parallel lanes. This dig adds: **fix registry drift**, **restore or re-home ÉirMind**, **do not assume missing folders**, and **treat lottery/roulette as high-governance assets** separate from first income.
+**Strategic clarity already achieved elsewhere holds:** governance (strategist) · knowledge (ZILWA) · learning (Z-PEE) · revenue discovery (Z-QUESTRA) are the right parallel lanes. **ROOT_ALIGNMENT_PASS (2026-06-11)** fixed registry hub path drift, documented retired stub, and classified ÉirMind as **hold pending AMK** with rehome recommendation — **do not assume missing folders**, and **treat lottery/roulette as high-governance assets** separate from first income.
 
 ---
 
@@ -26,6 +27,8 @@ The ecosystem is **far larger than GitHub or the EAII registry alone suggest**. 
 | ÉirMind check | [EIRMIND_REALITY_CHECK.md](EIRMIND_REALITY_CHECK.md) |
 | Autonomy | [AUTONOMY_STATUS_REPORT.md](AUTONOMY_STATUS_REPORT.md) |
 | Deployable assets | [DEPLOYABLE_ASSETS_REPORT.md](DEPLOYABLE_ASSETS_REPORT.md) |
+| **Alignment delta** | [ROOT_ALIGNMENT_DELTA_REPORT.md](ROOT_ALIGNMENT_DELTA_REPORT.md) |
+| **ÉirMind decision** | [EIRMIND_ALIGNMENT_DECISION.md](EIRMIND_ALIGNMENT_DECISION.md) |
 
 ---
 
@@ -41,7 +44,7 @@ The ecosystem is **far larger than GitHub or the EAII registry alone suggest**. 
 | 4 | **ZILWA doctrine + HTML** | Tourism knowledge + exhibits |
 | 5 | **AMK main control dashboard** | Operator cockpit + indicators |
 | 6 | **Zuno report/snapshot spine** | Ecosystem truth compression |
-| 7 | **z_pc_root_projects + EAII registry** | Federation map (needs path fix) |
+| 7 | **z_pc_root_projects + EAII registry** | Federation map (**hub path aligned 2026-06-11**) |
 | 8 | **Monster project registry** | Catalog of 26+ cores |
 | 9 | **Z-Traffic / verify scripts** | Health signals |
 | 10 | **Commercial readiness audit** | Income ranking evidence |
@@ -114,31 +117,31 @@ See [DEPLOYABLE_ASSETS_REPORT.md](DEPLOYABLE_ASSETS_REPORT.md).
 
 | Stakeholder | Know this |
 | ----------- | --------- |
-| **AMK-Goku** | Registry hub path is **wrong** in JSON; ÉirMind folder **missing**; income lead is **Questra** not ÉirMind; PR #20 + discovery branches are **docs not deploy** |
+| **AMK-Goku** | Registry hub path **aligned**; ÉirMind folder **still missing** — see [EIRMIND_ALIGNMENT_DECISION.md](EIRMIND_ALIGNMENT_DECISION.md); income lead is **Questra** not ÉirMind; PR #20 + discovery branches are **docs not deploy** |
 | **Anne** | Runnable facilitation assets = **Questra + ZILWA HTML**; wellness = **AT Princess** boundary; ops bottleneck if all outreach on one person |
 | **JB** | Story/knowledge value in **ZILWA 2B** parallel to Questra sales; documentation debt in vaults/skyscraper |
-| **Zuno (observer)** | Reports may reference **stale paths** (`ZSanctuary_Universe`, Ireland Projects); refresh snapshot after registry fix; **traffic RED ≠ strategist HOLD** |
+| **Zuno (observer)** | Trust `z_pc_root_projects.json` hub path after alignment; **Ireland Projects still absent**; refresh snapshot when operator runs `npm run zuno:snapshot`; **traffic RED ≠ strategist HOLD** |
 
 ---
 
 ## Recommended next actions (human-gated)
 
-| Priority | Action | Domain |
-| -------- | ------ | ------ |
-| **P0** | Fix `z_pc_root_projects.json` hub path → `Z_Sanctuary_Universe` | Registry |
-| **P1** | Resolve ÉirMind: restore Ireland Projects or link to Aisling Sol | AI lineage |
-| **P2** | Archive or delete empty `ZSanctuary_Universe` stub | Hygiene |
-| **P3** | Continue Questra **GO-3** discovery calls (no code) | Income |
-| **P4** | ZILWA Mauritius listening (Lane B) | Knowledge |
-| **P5** | Register missing PC folders (G, Gem, WorkSphere) or mark archived | Registry |
-| **Defer** | Merge strategist PR, Stripe, VAT, company | Sacred moves |
+| Priority | Action | Domain | Status |
+| -------- | ------ | ------ | ------ |
+| **P0** | Fix `z_pc_root_projects.json` hub path → `Z_Sanctuary_Universe` | Registry | **Done** (alignment pass) |
+| **P1** | Resolve ÉirMind: restore Ireland Projects or link to Aisling Sol | AI lineage | **Hold** — [EIRMIND_ALIGNMENT_DECISION.md](EIRMIND_ALIGNMENT_DECISION.md) |
+| **P2** | Mark empty `ZSanctuary_Universe` stub retired (do not delete) | Hygiene | **Done** (registry + docs) |
+| **P3** | Continue Questra **GO-3** discovery calls (no code) | Income | Open |
+| **P4** | ZILWA Mauritius listening (Lane B) | Knowledge | Open |
+| **P5** | Register missing PC folders (G, Gem, WorkSphere) or mark archived | Registry | Open |
+| **Defer** | Merge strategist PR, Stripe, VAT, company | Sacred moves | Hold |
 
 ---
 
 ## Boundaries confirmed
 
-- No code modified (except this audit doc pack as deliverable)  
-- No deployment, packages installed, or unknown scripts executed  
+- Alignment pass: **registry + docs only** — no runtime, deploy, or folder deletion  
+- No deployment, packages installed, or unknown scripts executed in alignment pass  
 - No business registration or VAT actions  
 - GitHub does **not** contain full ecosystem (siblings + hub lottery tree)
 
@@ -146,6 +149,6 @@ See [DEPLOYABLE_ASSETS_REPORT.md](DEPLOYABLE_ASSETS_REPORT.md).
 
 ## Verdict
 
-GREEN FOR PR REVIEW — MERGE HOLD (discovery artifact; operator decisions required)
+GREEN FOR PR REVIEW — MERGE HOLD until AMK reads [ROOT_ALIGNMENT_DELTA_REPORT.md](ROOT_ALIGNMENT_DELTA_REPORT.md)
 
-**Branch:** `cursor/zsanctuary/root-discovery-audit`
+**Branches:** `cursor/zsanctuary/root-discovery-audit` (audit) · `cursor/zsanctuary/root-alignment-pass` (alignment)
