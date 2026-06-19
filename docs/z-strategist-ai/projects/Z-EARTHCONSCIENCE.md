@@ -10,15 +10,23 @@ AMK-Goku
 
 ## Current Stage
 
-**Stage 0 — Idea** (named in strategist scope; overlaps environmental / ethics lanes in register)
+**Stage 1 — Doctrine** (ethics_stack metadata; environmental themes in ZILWA + Z-Nexus)
 
 ## Current Status (overall)
 
-UNKNOWN
+AMBER
 
 ## Description
 
-Environmental conscience / planetary ethics vision — related to ZILWA reef/ocean/legacy modules and Z-Nexus resource awareness. No standalone deployable product in Wave 1 hub scan.
+Environmental conscience and **planetary ethics** lane. **Registry alias:** Monster Project id `z_pee_planetary_ethics` (Z-PEE Planetary Ethics). Related static exhibits: ZILWA reef/ocean/legacy tree; Z-Nexus resource/recovery education. No standalone deployable product.
+
+## Evidence (Wave 1B)
+
+- `data/z_sanctuary_monster_project_registry.json` — `z_pee_planetary_ethics`
+- `docs/Z_SANCTUARY_MONSTER_PROJECT_MASTER_MAP.md` — Z-PEE row
+- `docs/zilwa-living-experiences/` — environmental modules
+- `docs/z-nexus-engine/` — resource / recovery framing
+- Note: use **Z-PEE** as machine id; Z-EarthConscience as human strategist label
 
 ## Public Exposure
 
@@ -42,30 +50,34 @@ Not yet
 
 ## Ecosystem Dependencies (EDR)
 
-Conceptual overlap with ZILWA environmental exhibits and Z-Nexus Engine. AMBER for coordination; not blocking Stage 0.
+| Upstream | Signal |
+| ---------------------------- | ------ |
+| ZILWA environmental exhibits | AMBER |
+| Z-Nexus Engine | AMBER |
+| Z-Sanctuary Core | AMBER |
 
 EDR overall: AMBER
 
 ## AMK-Goku Indicators
 
-| Indicator | Signal |
-| --------- | ------ |
-| Vision Readiness | AMBER |
-| Documentation Readiness | UNKNOWN |
-| Technical Readiness | UNKNOWN |
-| Security Readiness | UNKNOWN |
-| Privacy Readiness | UNKNOWN |
-| Banking Readiness | GREEN (N/A) |
-| Legal Review Readiness | UNKNOWN |
-| Tax/VAT Review Readiness | GREEN |
-| Deployment Risk | HOLD |
-| Revenue Activation Risk | GREEN |
-| Ecosystem Dependency (EDR) | AMBER |
-| Human Gate Status | Hold |
+| Indicator | Signal | Wave 1B change |
+| -------------------------- | ----------- | -------------------- |
+| Vision Readiness | GREEN | ↑ from AMBER |
+| Documentation Readiness | AMBER | ↑ from UNKNOWN |
+| Technical Readiness | UNKNOWN | — metadata/docs only |
+| Security Readiness | AMBER | ↑ from UNKNOWN |
+| Privacy Readiness | GREEN | ↑ from UNKNOWN |
+| Banking Readiness | GREEN (N/A) | — |
+| Legal Review Readiness | GREEN | — |
+| Tax/VAT Review Readiness | GREEN | — |
+| Deployment Risk | HOLD | — |
+| Revenue Activation Risk | GREEN | — |
+| Ecosystem Dependency (EDR) | AMBER | — |
+| Human Gate Status | Hold | — |
 
 ## Privacy / Safety Note
 
-No environmental impact claims without evidence (aligned with ZILWA legacy tree doctrine).
+No environmental impact, carbon, or offset claims without verified evidence (aligned with ZILWA legacy tree and Z-Nexus mock law).
 
 ## Deployment-Ready?
 
@@ -77,4 +89,4 @@ Hold
 
 ## Last Updated
 
-2026-06-11 · Z-Strategist Wave 1 (initial — needs doctrine pass)
+2026-06-11 · Z-Strategist Wave 1B refinement

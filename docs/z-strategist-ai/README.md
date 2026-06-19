@@ -20,7 +20,7 @@ This is a **governance signal system**, not a legal-advice engine.
 ## Doctrine pack
 
 | Doc | Role |
-| ------------------------------------------------------------------ | -------------------------------- |
+| ------------------------------------------------------------------ | ----------------------------------- |
 | [Z_STRATEGIST_AI_DOCTRINE.md](Z_STRATEGIST_AI_DOCTRINE.md) | Core law and scope |
 | [READINESS_STAGES.md](READINESS_STAGES.md) | Stages 0–5 |
 | [AMK_GOKU_INDICATORS.md](AMK_GOKU_INDICATORS.md) | Indicator categories and signals |
@@ -29,6 +29,11 @@ This is a **governance signal system**, not a legal-advice engine.
 | [HUMAN_GATE_RULES.md](HUMAN_GATE_RULES.md) | AMK sacred moves |
 | [READINESS_LAYER_TYPES.md](READINESS_LAYER_TYPES.md) | Doctrine vs technical vs deployment |
 | [ECOSYSTEM_READINESS_WAVE_1.md](ECOSYSTEM_READINESS_WAVE_1.md) | First 9-project map |
+| [ECOSYSTEM_READINESS_WAVE_1B.md](ECOSYSTEM_READINESS_WAVE_1B.md) | Wave 1B UNKNOWN card refinement |
+| [ECOSYSTEM_READINESS_WAVE_2.md](ECOSYSTEM_READINESS_WAVE_2.md) | Wave 2 dependency resolution |
+| [ECOSYSTEM_DEPENDENCY_MAP.md](ECOSYSTEM_DEPENDENCY_MAP.md) | Upstream/downstream map |
+| [FIRST_PUBLIC_PILOT_ASSESSMENT.md](FIRST_PUBLIC_PILOT_ASSESSMENT.md) | Stage 3 pilot hypothesis |
+| [WAVE_1B_EVIDENCE_INDEX.md](WAVE_1B_EVIDENCE_INDEX.md) | Hub evidence citations |
 | [GREEN_RECEIPT.md](GREEN_RECEIPT.md) | Phase 0 receipt |
 
 ## Hard boundaries

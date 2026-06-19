@@ -48,9 +48,9 @@ Not yet
 Depends conceptually on: Z-Tourism lane, community layers, elder/oral-history doctrine, environmental modules, hub governance. Several dependencies UNKNOWN or Hold.
 
 | Upstream | EDR signal |
-| -------- | ---------- |
+| ---------------------------- | ------------------- |
 | Z-Sanctuary Core | AMBER |
-| Z-Tourism | UNKNOWN |
+| Z-Tourism | AMBER |
 | AI Assistant Layer (future) | HOLD |
 | Environmental / marine lanes | AMBER (static only) |
 
@@ -59,7 +59,7 @@ EDR overall: AMBER
 ## AMK-Goku Indicators
 
 | Indicator | Signal |
-| --------- | ------ |
+| -------------------------- | --------------------------------- |
 | Vision Readiness | GREEN |
 | Documentation Readiness | GREEN |
 | Technical Readiness | GREEN (static; no JS in exhibits) |
