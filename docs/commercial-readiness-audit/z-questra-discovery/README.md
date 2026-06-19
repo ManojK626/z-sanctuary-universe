@@ -31,6 +31,7 @@
 | [REVENUE_MODELS_COMPARISON.md](REVENUE_MODELS_COMPARISON.md) | Five models compared — no integrations        |
 | [HOUSEHOLD_ROLES.md](HOUSEHOLD_ROLES.md)                     | AMK / Anne / JB — value vs bottlenecks        |
 | [FIRST_TEN_USERS.md](FIRST_TEN_USERS.md)                     | First 10 testers hypothesis                   |
+| [HOUSEHOLD_SESSION_AGENDA_90MIN.md](HOUSEHOLD_SESSION_AGENDA_90MIN.md) | 90-min session plan — names offline only |
 
 ## Portfolio position (AMK framing)
 
