@@ -47,6 +47,12 @@ Compact entry points for **read-only** hub registries and AMK-facing evidence. F
 | ZILWA 2B steward reality review | [zilwa-living-experiences/ZILWA_STEWARD_REALITY_REVIEW_2B.md](zilwa-living-experiences/ZILWA_STEWARD_REALITY_REVIEW_2B.md) | `npm run verify:md` |
 | ZILWA strategic roadmap (1A–5A) | [zilwa-living-experiences/ZILWA_STRATEGIC_ROADMAP.md](zilwa-living-experiences/ZILWA_STRATEGIC_ROADMAP.md) | — |
 | ZILWA 2B listening receipt | [zilwa-living-experiences/ZILWA_PHASE_2B_LISTENING_RECEIPT.md](zilwa-living-experiences/ZILWA_PHASE_2B_LISTENING_RECEIPT.md) | — |
+| Z-STRATEGIST-AI readiness layer | [z-strategist-ai/README.md](z-strategist-ai/README.md) | `npm run verify:md` |
+| Z-Strategist AI doctrine | [z-strategist-ai/Z_STRATEGIST_AI_DOCTRINE.md](z-strategist-ai/Z_STRATEGIST_AI_DOCTRINE.md) | — |
+| Z-Strategist readiness stages | [z-strategist-ai/READINESS_STAGES.md](z-strategist-ai/READINESS_STAGES.md) | — |
+| AMK-Goku indicators | [z-strategist-ai/AMK_GOKU_INDICATORS.md](z-strategist-ai/AMK_GOKU_INDICATORS.md) | — |
+| Z-Strategist green receipt | [z-strategist-ai/GREEN_RECEIPT.md](z-strategist-ai/GREEN_RECEIPT.md) | — |
+| Z-Strategist Wave 1 readiness map | [z-strategist-ai/ECOSYSTEM_READINESS_WAVE_1.md](z-strategist-ai/ECOSYSTEM_READINESS_WAVE_1.md) | — |
 | API readiness and smoke (charter) | [Z_API_READINESS_AND_SMOKE_GATE.md](Z_API_READINESS_AND_SMOKE_GATE.md) | `npm run z:api:readiness` |
 | Z-Traffic tower | [Z_TRAFFIC_MINIBOTS.md](Z_TRAFFIC_MINIBOTS.md) | `npm run z:traffic` |
 | Z-SWARM-14DRP-1 universal agent law | [Z_SWARM_14DRP_UNIVERSAL_AGENT_LAW.md](Z_SWARM_14DRP_UNIVERSAL_AGENT_LAW.md) | `npm run z:swarm:14drp` |

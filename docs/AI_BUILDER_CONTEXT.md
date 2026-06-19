@@ -91,6 +91,23 @@ Upgrade from Mauritius/hotel-centered blueprint to **global human-centered touri
 
 **Sequence:** Listen → Learn → Synthesize → Measure (3A) → Propose (4A). Raw interviews stay offline.
 
+## Z-STRATEGIST-AI — AMK-Goku Deployment Readiness Engine (Phase 0 — docs only)
+
+Readiness, risk, and governance **signal system** for root projects — not legal or tax advice.
+
+- Index: [z-strategist-ai/README.md](z-strategist-ai/README.md)
+- Doctrine: [z-strategist-ai/Z_STRATEGIST_AI_DOCTRINE.md](z-strategist-ai/Z_STRATEGIST_AI_DOCTRINE.md)
+- Stages 0–5: [z-strategist-ai/READINESS_STAGES.md](z-strategist-ai/READINESS_STAGES.md)
+- AMK-Goku indicators: [z-strategist-ai/AMK_GOKU_INDICATORS.md](z-strategist-ai/AMK_GOKU_INDICATORS.md)
+- Project card template: [z-strategist-ai/PROJECT_READINESS_TEMPLATE.md](z-strategist-ai/PROJECT_READINESS_TEMPLATE.md)
+- Legal/tax/banking boundaries: [z-strategist-ai/LEGAL_TAX_BANKING_BOUNDARIES.md](z-strategist-ai/LEGAL_TAX_BANKING_BOUNDARIES.md)
+- Human gate: [z-strategist-ai/HUMAN_GATE_RULES.md](z-strategist-ai/HUMAN_GATE_RULES.md)
+- Wave 1 map: [z-strategist-ai/ECOSYSTEM_READINESS_WAVE_1.md](z-strategist-ai/ECOSYSTEM_READINESS_WAVE_1.md)
+- Layer types: [z-strategist-ai/READINESS_LAYER_TYPES.md](z-strategist-ai/READINESS_LAYER_TYPES.md)
+- Receipt: [z-strategist-ai/GREEN_RECEIPT.md](z-strategist-ai/GREEN_RECEIPT.md)
+
+**AMBER+ HOLD** — use _registration review recommended_, _tax/VAT review recommended_, _banking review recommended_; never claim final legal authority. AMK owns sacred moves.
+
 ## Canonical control root and satellite bridges (Z-CONTROL-LINK-1)
 
 **Sealed on main.** **`Z_Sanctuary_Universe`** (this hub repository) is the **canonical governance and control root** for Z-Sanctuary. Satellite projects must not fork long doctrine; they carry **one thin bridge file** only: **`docs/Z_SANCTUARY_CONTROL_LINK.md`**, aligned from the hub template at the same path.
