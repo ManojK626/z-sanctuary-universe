@@ -3,7 +3,8 @@
 **Owner:** AMK-Goku  
 **Posture:** Strategic doctrine · **not** merge or launch approval  
 **Date:** 2026-06-11  
-**PR:** #20 · Draft · Merge Hold
+**PR:** #20 · Draft · Merge Hold  
+**Roof posture:** [Z_SANCTUARY_OPERATIONAL_POSTURE_2026.md](../Z_SANCTUARY_OPERATIONAL_POSTURE_2026.md) (Cursor · GitHub · Cloudflare)
 
 ## Compass shift
 
