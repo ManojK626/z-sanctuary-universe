@@ -33,6 +33,7 @@ This audit is **separate** from:
 | [COMMERCIAL_READINESS_AUDIT.md](COMMERCIAL_READINESS_AUDIT.md) | Ranked candidates + composite scores |
 | [CANDIDATE_EVIDENCE_INDEX.md](CANDIDATE_EVIDENCE_INDEX.md) | Hub file citations per candidate |
 | [ANNE_JB_INCOME_QUESTION.md](ANNE_JB_INCOME_QUESTION.md) | Structured framing for household income lanes |
+| [z-questra-discovery/README.md](z-questra-discovery/README.md) | Z-QUESTRA/Z-SME commercial deep-dive |
 
 ## Hard boundaries
 
