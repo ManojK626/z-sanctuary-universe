@@ -94,3 +94,7 @@ See [FIRST_PUBLIC_PILOT_ASSESSMENT.md](FIRST_PUBLIC_PILOT_ASSESSMENT.md).
 ## Verdict
 
 **GREEN FOR PR REVIEW — MERGE HOLD** (dependency resolution docs; not launch approval)
+
+## Wave 3
+
+Pilot readiness — can we learn?: [ECOSYSTEM_READINESS_WAVE_3.md](ECOSYSTEM_READINESS_WAVE_3.md)

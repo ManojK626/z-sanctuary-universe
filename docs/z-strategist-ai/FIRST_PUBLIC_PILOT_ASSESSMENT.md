@@ -91,3 +91,5 @@ Stage 4 registration review recommended — NOT YET for any Wave 1 project
 **Hypothesis for AMK review:** First deployable **public awareness** pilot = **Z-EarthConscience (Z-PEE)** or **Z-Nexus static mock** — **not** ZILWA commercial tourism and **not** Compassion Wellness.
 
 **Human Gate:** Hold on all projects until AMK selects and documents the pilot scope.
+
+Wave 3 pilot sheets: [PILOT_CANDIDATE_SHEETS.md](PILOT_CANDIDATE_SHEETS.md) · [ECOSYSTEM_READINESS_WAVE_3.md](ECOSYSTEM_READINESS_WAVE_3.md).

@@ -55,6 +55,8 @@ Compact entry points for **read-only** hub registries and AMK-facing evidence. F
 | Z-Strategist Wave 1 readiness map | [z-strategist-ai/ECOSYSTEM_READINESS_WAVE_1.md](z-strategist-ai/ECOSYSTEM_READINESS_WAVE_1.md) | — |
 | Z-Strategist Wave 1B refinement | [z-strategist-ai/ECOSYSTEM_READINESS_WAVE_1B.md](z-strategist-ai/ECOSYSTEM_READINESS_WAVE_1B.md) | — |
 | Z-Strategist Wave 2 dependency resolution | [z-strategist-ai/ECOSYSTEM_READINESS_WAVE_2.md](z-strategist-ai/ECOSYSTEM_READINESS_WAVE_2.md) | — |
+| Z-Strategist Wave 3 pilot readiness | [z-strategist-ai/ECOSYSTEM_READINESS_WAVE_3.md](z-strategist-ai/ECOSYSTEM_READINESS_WAVE_3.md) | — |
+| Z-Strategist pilot framework | [z-strategist-ai/PILOT_READINESS_FRAMEWORK.md](z-strategist-ai/PILOT_READINESS_FRAMEWORK.md) | — |
 | Z-CIVD charter (life-first doctrine) | [z-civd/Z_CIVD_CHARTER.md](z-civd/Z_CIVD_CHARTER.md) | — |
 | API readiness and smoke (charter) | [Z_API_READINESS_AND_SMOKE_GATE.md](Z_API_READINESS_AND_SMOKE_GATE.md) | `npm run z:api:readiness` |
 | Z-Traffic tower | [Z_TRAFFIC_MINIBOTS.md](Z_TRAFFIC_MINIBOTS.md) | `npm run z:traffic` |

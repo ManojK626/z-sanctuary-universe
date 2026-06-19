@@ -31,6 +31,9 @@ This is a **governance signal system**, not a legal-advice engine.
 | [ECOSYSTEM_READINESS_WAVE_1.md](ECOSYSTEM_READINESS_WAVE_1.md) | First 9-project map |
 | [ECOSYSTEM_READINESS_WAVE_1B.md](ECOSYSTEM_READINESS_WAVE_1B.md) | Wave 1B UNKNOWN card refinement |
 | [ECOSYSTEM_READINESS_WAVE_2.md](ECOSYSTEM_READINESS_WAVE_2.md) | Wave 2 dependency resolution |
+| [ECOSYSTEM_READINESS_WAVE_3.md](ECOSYSTEM_READINESS_WAVE_3.md) | Wave 3 pilot readiness (can we learn?) |
+| [PILOT_READINESS_FRAMEWORK.md](PILOT_READINESS_FRAMEWORK.md) | Five pilot questions + LEARN signals |
+| [PILOT_CANDIDATE_SHEETS.md](PILOT_CANDIDATE_SHEETS.md) | Per-candidate pilot answers |
 | [ECOSYSTEM_DEPENDENCY_MAP.md](ECOSYSTEM_DEPENDENCY_MAP.md) | Upstream/downstream map |
 | [FIRST_PUBLIC_PILOT_ASSESSMENT.md](FIRST_PUBLIC_PILOT_ASSESSMENT.md) | Stage 3 pilot hypothesis |
 | [WAVE_1B_EVIDENCE_INDEX.md](WAVE_1B_EVIDENCE_INDEX.md) | Hub evidence citations |
