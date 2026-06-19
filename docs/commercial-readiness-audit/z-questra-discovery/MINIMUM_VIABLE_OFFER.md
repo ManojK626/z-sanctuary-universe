@@ -1,6 +1,6 @@
 # Minimum Viable Offer — Z-QUESTRA + Z-SME
 
-**Posture:** Offer design · not feature list · not payment integration  
+**Posture:** Offer design · not feature list · not payment integration
 **Date:** 2026-06-11
 
 ## Primary offer hypothesis (recommended for validation)
@@ -28,13 +28,13 @@ They either overpay for heavy LMS platforms, use consumer apps with wrong incent
 
 A **downloadable or hosted static** Z-QUESTRA workstation package (build artifact + facilitator guide) enabling:
 
-| Module | Session use |
-| ------ | ----------- |
-| Comfort + accessibility bar | Demo inclusive UI settings live |
-| Z-Zebras readiness inspector | Teach service/readiness without fear language |
-| Uncertainty kaleidoscope + receipt poster | Pattern / futures literacy exercises |
-| PlayGarden canvas | Light creative closing activity |
-| Z-SME (optional) | Explainable mood playlist discussion — consent-first |
+| Module                                    | Session use                                          |
+| ----------------------------------------- | ---------------------------------------------------- |
+| Comfort + accessibility bar               | Demo inclusive UI settings live                      |
+| Z-Zebras readiness inspector              | Teach service/readiness without fear language        |
+| Uncertainty kaleidoscope + receipt poster | Pattern / futures literacy exercises                 |
+| PlayGarden canvas                         | Light creative closing activity                      |
+| Z-SME (optional)                          | Explainable mood playlist discussion — consent-first |
 
 **Delivery hypothesis:** 90-minute facilitated workshop **using** Questra, plus optional monthly updates — not raw software dump alone.
 
@@ -42,11 +42,11 @@ A **downloadable or hosted static** Z-QUESTRA workstation package (build artifac
 
 ## 3. Value (hypothesis)
 
-| Stakeholder | Value |
-| ----------- | ----- |
-| **Facilitator** | Credible, kind tooling; less prep time; differentiated workshops |
-| **Participant** | Safer sensory environment; understandable tools |
-| **Organization** | Accessibility-aligned programming without enterprise LMS cost |
+| Stakeholder                 | Value                                                                   |
+| --------------------------- | ----------------------------------------------------------------------- |
+| **Facilitator**             | Credible, kind tooling; less prep time; differentiated workshops        |
+| **Participant**             | Safer sensory environment; understandable tools                         |
+| **Organization**            | Accessibility-aligned programming without enterprise LMS cost           |
 | **Household (AMK/Anne/JB)** | Income from kits, licenses, and facilitated sessions — **if validated** |
 
 **Differentiator vs generic SaaS:** Turtle Mode ethics + local-first + explainability — **not** feature count.
@@ -57,13 +57,13 @@ A **downloadable or hosted static** Z-QUESTRA workstation package (build artifac
 
 All figures are **hypotheses** for conversation tests only.
 
-| Offer shape | Price hypothesis (EUR) | Notes |
-| ----------- | ---------------------- | ----- |
-| **Individual facilitator license** | €12–19 / month | Or €99 / year |
-| **Organization (≤25 facilitators)** | €49–99 / month | NGO discount tier hypothesis |
-| **One-time workshop kit** | €149–299 | Slide guide + build + 2h onboarding call |
-| **Custom facilitation day** | €400–800 / day | Anne/JB delivery — service revenue |
-| **Free tier** | €0 | PlayGarden + one module — lead gen hypothesis |
+| Offer shape                         | Price hypothesis (EUR) | Notes                                         |
+| ----------------------------------- | ---------------------- | --------------------------------------------- |
+| **Individual facilitator license**  | €12–19 / month         | Or €99 / year                                 |
+| **Organization (≤25 facilitators)** | €49–99 / month         | NGO discount tier hypothesis                  |
+| **One-time workshop kit**           | €149–299               | Slide guide + build + 2h onboarding call      |
+| **Custom facilitation day**         | €400–800 / day         | Anne/JB delivery — service revenue            |
+| **Free tier**                       | €0                     | PlayGarden + one module — lead gen hypothesis |
 
 **Registration review recommended:** Not triggered at hypothesis stage. Triggers when **any** live payment or formal invoicing begins (Stage 4).
 
@@ -71,12 +71,12 @@ All figures are **hypotheses** for conversation tests only.
 
 ## 5. What is explicitly NOT the MVP offer
 
-| Excluded | Why |
-| -------- | --- |
-| Cloud sync / accounts | Forbidden without charter |
-| AI generation APIs | Forbidden without charter |
-| Tourism booking bundle | Wrong lane |
-| Clinical wellness program | Compassion lane |
+| Excluded                           | Why                               |
+| ---------------------------------- | --------------------------------- |
+| Cloud sync / accounts              | Forbidden without charter         |
+| AI generation APIs                 | Forbidden without charter         |
+| Tourism booking bundle             | Wrong lane                        |
+| Clinical wellness program          | Compassion lane                   |
 | Gambling/pattern betting education | Separate asset; higher governance |
 
 ---
@@ -96,9 +96,9 @@ No Stripe. No VAT. No company.
 
 ## 7. Success criteria for offer validation
 
-| Signal | Meaning |
-| ------ | ------- |
-| 3/5 interviewees name a **budget line** (training, accessibility, curriculum) | Offer maps to real spending |
-| 2/5 agree to **pilot test** as first ten users | See [FIRST_TEN_USERS.md](FIRST_TEN_USERS.md) |
-| 0 requests for gambling, therapy, or booking features | Positioning holds |
-| Household agrees **90-day focus** on one offer shape | Avoids feature explosion |
+| Signal                                                                        | Meaning                                      |
+| ----------------------------------------------------------------------------- | -------------------------------------------- |
+| 3/5 interviewees name a **budget line** (training, accessibility, curriculum) | Offer maps to real spending                  |
+| 2/5 agree to **pilot test** as first ten users                                | See [FIRST_TEN_USERS.md](FIRST_TEN_USERS.md) |
+| 0 requests for gambling, therapy, or booking features                         | Positioning holds                            |
+| Household agrees **90-day focus** on one offer shape                          | Avoids feature explosion                     |
