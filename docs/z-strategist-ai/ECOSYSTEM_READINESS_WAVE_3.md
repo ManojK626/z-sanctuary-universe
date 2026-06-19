@@ -94,7 +94,7 @@ Highest-value asset now: **knowledge** (interviews, stories, observations) — n
 
 ## Verdict
 
-**GREEN FOR PR REVIEW — MERGE HOLD**
+GREEN FOR PR REVIEW — MERGE HOLD
 
 Wave 3 completes the strategist question set for AMK human gate:
 
