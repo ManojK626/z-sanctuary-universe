@@ -192,7 +192,7 @@ Every autonomy claim requires verification. Zuno is observe/report layer (L1), n
 | -------- | ---- | ---- |
 | **1** | Questra GO-3 Discovery | Discovery conversations · pilot learning · validation |
 | **2** | ZILWA Listening | Community stories · worker experiences · elder wisdom |
-| **3** | Root Registry Stability | Maintain alignment · prevent drift |
+| **3** | Root Registry Stability | Maintain alignment · prevent drift — [root-stability-audit/README.md](root-stability-audit/README.md) |
 | **4** | ÉirMind Decision | Hold · Restore · Rehome · Archive |
 | **5** | Cloudflare Reality Audit | Read-only map — no changes |
 
@@ -222,7 +222,7 @@ Review Only · Merge Hold · Human First
 | Topic | Path |
 | ----- | ---- |
 | Strategic compass (lanes A + B) | [z-strategist-ai/AMK_STRATEGIC_POSTURE.md](z-strategist-ai/AMK_STRATEGIC_POSTURE.md) |
-| Root alignment delta | [root-discovery-audit/ROOT_ALIGNMENT_DELTA_REPORT.md](root-discovery-audit/ROOT_ALIGNMENT_DELTA_REPORT.md) |
+| Root stability pass | [root-stability-audit/ROOT_SYSTEM_STABILITY_REPORT.md](root-stability-audit/ROOT_SYSTEM_STABILITY_REPORT.md) |
 | Root discovery index | [root-discovery-audit/README.md](root-discovery-audit/README.md) |
 | Commercial readiness | [commercial-readiness-audit/README.md](commercial-readiness-audit/README.md) |
 | Cloudflare precautions | [Z-CLOUDFLARE-AI-COMMS-PRECAUTIONS.md](Z-CLOUDFLARE-AI-COMMS-PRECAUTIONS.md) |

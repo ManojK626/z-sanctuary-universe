@@ -1,9 +1,9 @@
 {
   "pc_root": "C:/Cursor Projects Organiser",
   "hub": "Z_Sanctuary_Universe",
-  "updated_at": "2026-06-11T00:00:00Z",
+  "updated_at": "2026-07-01T00:00:00Z",
   "source": "z-eaii-registry.json + z-eaii-build-pc-workspace.mjs",
-  "alignment_note": "Hub disk folder aligned 2026-06-11 (ROOT_ALIGNMENT_PASS). Retired stub: ZSanctuary_Universe — see docs/root-discovery-audit/ROOT_ALIGNMENT_DELTA_REPORT.md",
+  "alignment_note": "Hub disk folder aligned 2026-06-11 (ROOT_ALIGNMENT_PASS). Stability pass 2026-07-01 — see docs/root-stability-audit/REGISTRY_STABILITY_DELTA.md",
   "projects": [
     {
       "id": "zsanctuary-universe",
@@ -116,7 +116,18 @@
       "formula_aware": true,
       "eaii_launch_task": "",
       "dashboard_url": "",
-      "notes": "Continuation / parallel build lane on disk. Operational hub remains Z_Sanctuary_Universe (registry, Overseer, SSWS). Point Z-Formulas and governance to hub; no second SSWS auto-boot unless explicitly promoted."
+      "notes": "Nested under hub (~110 files). **PC-root sibling also exists** — see z-sanctuary-universe-2-pc-root. Hub SSWS stays on Z_Sanctuary_Universe only."
+    },
+    {
+      "id": "z-sanctuary-universe-2-pc-root",
+      "name": "Z_Sanctuary_Universe 2 (PC root)",
+      "path": "Z_Sanctuary_Universe 2",
+      "role": "member",
+      "ssws": false,
+      "formula_aware": true,
+      "eaii_launch_task": "",
+      "dashboard_url": "",
+      "notes": "Larger continuation tree at PC root (~3176 files). Distinct from nested hub copy. AMK: clarify canonical continuation path before SSWS promotion."
     },
     {
       "id": "z-omni-sanctuary",
@@ -141,12 +152,15 @@
     {
       "id": "z-sanctuary-browser-z-saiyan-lumina",
       "name": "Z-Sanctuary Browser (Z-Saiyan Lumina)",
-      "path": "Z-Sanctuary Browser",
-      "role": "member",
+      "path": "",
+      "role": "external",
+      "hosting": "missing",
       "ssws": false,
       "formula_aware": true,
       "eaii_launch_task": "",
-      "dashboard_url": ""
+      "dashboard_url": "",
+      "migration_status": "path_missing",
+      "notes": "Folder `Z-Sanctuary Browser` absent on disk 2026-07-01. Restore from backup or archive registry row after AMK review."
     },
     {
       "id": "z-sanctuary-claude-core",
@@ -172,7 +186,7 @@
     {
       "id": "z-sanctuary-aimanity",
       "name": "z-sanctuary-aimanity",
-      "path": "z-sanctuary-aimanity",
+      "path": "z-Sanctuary-Aimanity",
       "role": "member",
       "ssws": false,
       "formula_aware": true,
@@ -191,6 +205,73 @@
       "dashboard_url": "",
       "migration_status": "path_missing",
       "notes": "Former path C:/Cursor Projects Organiser/Ireland Projects absent on disk 2026-06-11. Hold pending AMK — see EIRMIND_ALIGNMENT_DECISION.md. On-disk lineage: Z-Sister Aisling Sol."
+    },
+    {
+      "id": "z-labs",
+      "name": "Z_Labs",
+      "path": "Z_Labs",
+      "role": "member",
+      "ssws": false,
+      "formula_aware": true,
+      "eaii_launch_task": "",
+      "dashboard_url": "",
+      "notes": "Approved satellite — control-link manifest GREEN. Markdown relay golden copy lives here."
+    },
+    {
+      "id": "z-sanctuary-g",
+      "name": "Z-Sanctuary G",
+      "path": "Z-Sanctuary G",
+      "role": "member",
+      "ssws": false,
+      "formula_aware": true,
+      "eaii_launch_task": "",
+      "dashboard_url": "",
+      "notes": "Registered ROOT_SYSTEM_STABILITY_PASS 2026-07-01. package.json present; no root README."
+    },
+    {
+      "id": "z-sanctuary-gem",
+      "name": "Z-Sanctuary Gem",
+      "path": "Z-Sanctuary Gem",
+      "role": "member",
+      "ssws": false,
+      "formula_aware": true,
+      "eaii_launch_task": "",
+      "dashboard_url": "",
+      "notes": "Registered ROOT_SYSTEM_STABILITY_PASS 2026-07-01. package.json + z_project_runtime.json."
+    },
+    {
+      "id": "z-worksphere-marketplace-hub",
+      "name": "Z-WorkSphere Marketplace Hub",
+      "path": "Z-WorkSphere_Marketplace_Hub",
+      "role": "member",
+      "ssws": false,
+      "formula_aware": true,
+      "eaii_launch_task": "",
+      "dashboard_url": "",
+      "notes": "Flutter marketplace prototype. Registered stability pass 2026-07-01. Commerce HOLD per operational posture."
+    },
+    {
+      "id": "z-sanctuary-external-paas",
+      "name": "Z-sanctuary External PaaS",
+      "path": "Z-sanctuary External PaaS",
+      "role": "member",
+      "ssws": false,
+      "formula_aware": false,
+      "eaii_launch_task": "",
+      "dashboard_url": "",
+      "notes": "Hosting experiments. Registered stability pass 2026-07-01. No deploy without charter."
+    },
+    {
+      "id": "z-pets-care-compassion",
+      "name": "Z-Sancurary Pets Care Compassion",
+      "path": "Z-Sancurary _Pets Care Compassion",
+      "role": "member",
+      "ssws": false,
+      "formula_aware": false,
+      "eaii_launch_task": "",
+      "dashboard_url": "",
+      "migration_status": "stub",
+      "notes": "Stub — single txt file as of 2026-07-01. Registered for visibility only."
     }
   ]
 }
