@@ -77,6 +77,7 @@ See [ZILWA_VILE_RELATIONSHIP.md](ZILWA_VILE_RELATIONSHIP.md).
 | --- | ---- |
 | [SYSTEM_BOUNDARIES.md](SYSTEM_BOUNDARIES.md) | What VILE will **not** do |
 | [platform-contracts/README.md](platform-contracts/README.md) | JSON Schema shared language (13 contracts) |
+| [PHASE_2A_FOUNDATION_INTEGRATION_REPORT.md](PHASE_2A_FOUNDATION_INTEGRATION_REPORT.md) | Pkgs 1–3 build/test + dependency graph (pre–Pkg 4) |
 
 ## Law
 

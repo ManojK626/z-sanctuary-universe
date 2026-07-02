@@ -63,9 +63,19 @@ Phase 4+  → Community marketplace, global expansion
 | `zuno-observability` | **Package 1 complete** — `packages/zuno-observability` |
 | `zuno-security`      | **Package 2 complete** — `packages/zuno-security`      |
 | `zuno-shadow`        | **Package 3 complete** — `packages/zuno-shadow`        |
-| `zuno-drp`           | Planned                                                |
+| `zuno-drp`           | Planned — **after foundation integration GREEN**       |
 
 Each package: unit tests, README, rollback doc — one package per PR where possible.
+
+### Phase 2A foundation integration (complete on branch)
+
+| Deliverable | Status |
+| ----------- | ------ |
+| [PHASE_2A_FOUNDATION_INTEGRATION_REPORT.md](PHASE_2A_FOUNDATION_INTEGRATION_REPORT.md) | Done |
+| [PHASE_2A_FOUNDATION_INTEGRATION_GREEN_RECEIPT.md](PHASE_2A_FOUNDATION_INTEGRATION_GREEN_RECEIPT.md) | Done |
+| Build + test all Pkgs 1–3 (30/30) | Verified |
+| Circular dependency check | None |
+| Charter `zuno-drp` (Pkg 4) | **Blocked until Pkgs 1–3 merge to main** |
 
 ---
 
