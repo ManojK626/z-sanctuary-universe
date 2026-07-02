@@ -1,6 +1,6 @@
 # VILE Implementation Phases
 
-**Current:** Phase 1.5 — Platform Contracts  
+**Current:** Phase 1.5 — Platform Contracts
 **Law:** [SYSTEM_BOUNDARIES.md](SYSTEM_BOUNDARIES.md)
 
 ```text
@@ -18,11 +18,11 @@ Phase 4+  → Community marketplace, global expansion
 
 ## Phase 1 — Foundation (complete on branch)
 
-| Deliverable | Status |
-| ----------- | ------ |
-| Canonical doc pack (`docs/vile/`) | Done |
-| Package catalog + architecture | Done |
-| SYSTEM_BOUNDARIES | Phase 1.5 PR |
+| Deliverable                       | Status       |
+| --------------------------------- | ------------ |
+| Canonical doc pack (`docs/vile/`) | Done         |
+| Package catalog + architecture    | Done         |
+| SYSTEM_BOUNDARIES                 | Phase 1.5 PR |
 
 **Not delivered:** runtime, apps, agents.
 
@@ -32,24 +32,24 @@ Phase 4+  → Community marketplace, global expansion
 
 **Goal:** Shared interface language before any `packages/zuno-*` implementation.
 
-| Contract | Location |
-| -------- | -------- |
-| Common events | `platform-contracts/schemas/v1/common-event.schema.json` |
-| Agent messages | `agent-message.schema.json` |
-| Destination / region / experience / culture | `destination`, `region`, `experience`, `culture` |
-| Traveller profile | `traveller-profile.schema.json` |
-| Vendor | `vendor.schema.json` |
-| Risk assessment | `risk-assessment.schema.json` |
-| Emergency response | `emergency-response.schema.json` |
-| Payment interfaces | `payment-interface.schema.json` (**HOLD runtime**) |
-| Localization | `localization.schema.json` |
-| Observability | `observability-event.schema.json` |
+| Contract                                    | Location                                                 |
+| ------------------------------------------- | -------------------------------------------------------- |
+| Common events                               | `platform-contracts/schemas/v1/common-event.schema.json` |
+| Agent messages                              | `agent-message.schema.json`                              |
+| Destination / region / experience / culture | `destination`, `region`, `experience`, `culture`         |
+| Traveller profile                           | `traveller-profile.schema.json`                          |
+| Vendor                                      | `vendor.schema.json`                                     |
+| Risk assessment                             | `risk-assessment.schema.json`                            |
+| Emergency response                          | `emergency-response.schema.json`                         |
+| Payment interfaces                          | `payment-interface.schema.json` (**HOLD runtime**)       |
+| Localization                                | `localization.schema.json`                               |
+| Observability                               | `observability-event.schema.json`                        |
 
-| Deliverable | Status |
-| ----------- | ------ |
-| JSON Schema v1 catalog | This PR |
-| Example fixtures (`_non_executable`) | This PR |
-| `validate_examples.mjs` | This PR |
+| Deliverable                          | Status             |
+| ------------------------------------ | ------------------ |
+| JSON Schema v1 catalog               | This PR            |
+| Example fixtures (`_non_executable`) | This PR            |
+| `validate_examples.mjs`              | This PR            |
 | TypeScript package `packages/zuno-*` | **Deferred to 2A** |
 
 ---
@@ -58,12 +58,12 @@ Phase 4+  → Community marketplace, global expansion
 
 **No UI. No runtime daemons. No public API.**
 
-| Package | Status |
-| ------- | ------ |
+| Package              | Status                                                 |
+| -------------------- | ------------------------------------------------------ |
 | `zuno-observability` | **Package 1 complete** — `packages/zuno-observability` |
-| `zuno-security` | **Package 2 complete** — `packages/zuno-security` |
-| `zuno-shadow` | Package 3 — not started in Pkg 2 PR |
-| `zuno-drp` | Planned |
+| `zuno-security`      | **Package 2 complete** — `packages/zuno-security`      |
+| `zuno-shadow`        | **Package 3 complete** — `packages/zuno-shadow`        |
+| `zuno-drp`           | Planned                                                |
 
 Each package: unit tests, README, rollback doc — one package per PR where possible.
 
@@ -80,12 +80,12 @@ GET /v1/experiences
 GET /v1/cultures
 ```
 
-| Forbidden in 2B | Reason |
-| --------------- | ------ |
-| POST bookings | Boundary — no autonomous approvals |
-| Payments | Sacred move |
-| Vendor write APIs | Phase 2D |
-| Agent orchestration | Phase 3 |
+| Forbidden in 2B     | Reason                             |
+| ------------------- | ---------------------------------- |
+| POST bookings       | Boundary — no autonomous approvals |
+| Payments            | Sacred move                        |
+| Vendor write APIs   | Phase 2D                           |
+| Agent orchestration | Phase 3                            |
 
 DRP middleware on every route. Illustrative data must declare `verificationStatus`.
 
@@ -93,22 +93,22 @@ DRP middleware on every route. Illustrative data must declare `verificationStatu
 
 ## Phase 2C — Traveller application
 
-| Property | Value |
-| -------- | ----- |
-| Mode | Read-only |
-| Offline | Required — emergency + maps + tickets schema |
-| Payments | No |
-| Agents | No live swarm |
+| Property | Value                                        |
+| -------- | -------------------------------------------- |
+| Mode     | Read-only                                    |
+| Offline  | Required — emergency + maps + tickets schema |
+| Payments | No                                           |
+| Agents   | No live swarm                                |
 
 ---
 
 ## Phase 2D — Vendor onboarding
 
-| Property | Value |
-| -------- | ----- |
-| Vendor schema | `vendor.schema.json` |
-| Human approval | Required for `onboardingStatus: approved` |
-| Payments / payout | **No** — `payoutEnabled: false` |
+| Property          | Value                                     |
+| ----------------- | ----------------------------------------- |
+| Vendor schema     | `vendor.schema.json`                      |
+| Human approval    | Required for `onboardingStatus: approved` |
+| Payments / payout | **No** — `payoutEnabled: false`           |
 
 ---
 
@@ -116,10 +116,10 @@ DRP middleware on every route. Illustrative data must declare `verificationStatu
 
 **Only after 2A–2D stable.**
 
-- Universal Orchestrator runtime  
-- Swarm per [AGENT_SWARM_SPEC.md](AGENT_SWARM_SPEC.md)  
-- Shadow pipeline mandatory  
-- No agent-to-agent shortcuts  
+- Universal Orchestrator runtime
+- Swarm per [AGENT_SWARM_SPEC.md](AGENT_SWARM_SPEC.md)
+- Shadow pipeline mandatory
+- No agent-to-agent shortcuts
 
 ---
 
@@ -139,11 +139,11 @@ Additional countries, government integrations, enterprise APIs.
 
 Every phase ends with:
 
-1. Green test report  
-2. DRP validation report  
-3. Security report  
-4. Documentation update  
-5. Rollback instructions  
+1. Green test report
+2. DRP validation report
+3. Security report
+4. Documentation update
+5. Rollback instructions
 
 ---
 

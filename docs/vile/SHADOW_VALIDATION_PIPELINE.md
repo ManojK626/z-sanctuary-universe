@@ -15,22 +15,22 @@
 
 ## Failure handling
 
-| Stage | On fail |
-| ----- | ------- |
-| Schema | Reject — return structured error to orchestrator |
-| Safety | Block — log immutable audit event |
-| Risk | Degrade — human-readable caution + optional human gate |
-| Compliance | Block or escalate per DRPGuardian |
-| Shadow | Block — never stream partial unsafe content |
+| Stage      | On fail                                                |
+| ---------- | ------------------------------------------------------ |
+| Schema     | Reject — return structured error to orchestrator       |
+| Safety     | Block — log immutable audit event                      |
+| Risk       | Degrade — human-readable caution + optional human gate |
+| Compliance | Block or escalate per DRPGuardian                      |
+| Shadow     | Block — never stream partial unsafe content            |
 
 ## Implementation home
 
-`packages/zuno-shadow` (planned) — shared by API, agents, and dashboard Ask-AI surfaces.
+`packages/zuno-shadow` — **EXISTS** (Phase 2A Pkg 3) — shared by API, agents, and dashboard Ask-AI surfaces when integrated.
 
 ## Hub alignment
 
-- Cloudflare / edge Ask-AI: [Z-CLOUDFLARE-AI-COMMS-PRECAUTIONS.md](../Z-CLOUDFLARE-AI-COMMS-PRECAUTIONS.md)  
-- Visual automation boundary: no synthetic human approval  
+- Cloudflare / edge Ask-AI: [Z-CLOUDFLARE-AI-COMMS-PRECAUTIONS.md](../Z-CLOUDFLARE-AI-COMMS-PRECAUTIONS.md)
+- Visual automation boundary: no synthetic human approval
 
 ## Testing requirement
 
