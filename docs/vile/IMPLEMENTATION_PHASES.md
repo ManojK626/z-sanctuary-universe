@@ -58,12 +58,12 @@ Phase 4+  → Community marketplace, global expansion
 
 **No UI. No runtime daemons. No public API.**
 
-| Package | Uses contracts |
-| ------- | -------------- |
-| `zuno-security` | observability audit + RBAC types |
-| `zuno-shadow` | agent-message + shadow status |
-| `zuno-drp` | common-event + DRP decision linkage |
-| `zuno-observability` | observability-event schema |
+| Package | Status |
+| ------- | ------ |
+| `zuno-observability` | **Package 1 complete** — `packages/zuno-observability` |
+| `zuno-security` | Next — not started in Pkg 1 PR |
+| `zuno-shadow` | Planned |
+| `zuno-drp` | Planned |
 
 Each package: unit tests, README, rollback doc — one package per PR where possible.
 

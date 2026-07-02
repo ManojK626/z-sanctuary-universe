@@ -1,0 +1,51 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://z-sanctuary.local/vile/schemas/v1/observability-event.json",
+  "title": "VILEObservabilityEvent",
+  "description": "Structured log, metric, trace, or audit event. No PII in message fields.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["id", "kind", "timestampIso", "service", "severity"],
+  "properties": {
+    "id": { "type": "string", "format": "uuid" },
+    "kind": {
+      "type": "string",
+      "enum": ["log", "metric", "trace_span", "audit", "health"]
+    },
+    "timestampIso": { "type": "string", "format": "date-time" },
+    "service": { "type": "string" },
+    "severity": {
+      "type": "string",
+      "enum": ["debug", "info", "warn", "error", "critical"]
+    },
+    "correlationId": { "type": "string" },
+    "traceId": { "type": "string" },
+    "spanId": { "type": "string" },
+    "message": { "type": "string" },
+    "attributes": {
+      "type": "object",
+      "additionalProperties": {
+        "type": ["string", "number", "boolean"]
+      }
+    },
+    "audit": {
+      "type": "object",
+      "description": "Required when kind is audit",
+      "properties": {
+        "actorId": { "type": "string" },
+        "action": { "type": "string" },
+        "resourceType": { "type": "string" },
+        "resourceId": { "type": "string" },
+        "immutable": { "type": "boolean", "const": true }
+      }
+    },
+    "metric": {
+      "type": "object",
+      "properties": {
+        "name": { "type": "string" },
+        "value": { "type": "number" },
+        "unit": { "type": "string" }
+      }
+    }
+  }
+}

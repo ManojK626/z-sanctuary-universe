@@ -1,0 +1,44 @@
+{
+  "name": "@z-sanctuary/zuno-observability",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Phase 2A: VILE shared observability contract — types, schema validator, event builder. No logging vendors.",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "require": "./dist/index.js",
+      "default": "./dist/index.js"
+    }
+  },
+  "files": [
+    "dist",
+    "schemas",
+    "README.md",
+    "CHANGELOG.md",
+    "ROLLBACK.md"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "test": "npm run build && node --test tests/**/*.test.mjs",
+    "lint": "tsc --noEmit"
+  },
+  "keywords": [
+    "z-sanctuary",
+    "vile",
+    "zuno",
+    "observability"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "ajv": "^8.17.1",
+    "ajv-formats": "^2.1.1"
+  },
+  "devDependencies": {
+    "typescript": "^5.0.0"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
