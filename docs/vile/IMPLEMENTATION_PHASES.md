@@ -61,8 +61,8 @@ Phase 4+  → Community marketplace, global expansion
 | Package | Status |
 | ------- | ------ |
 | `zuno-observability` | **Package 1 complete** — `packages/zuno-observability` |
-| `zuno-security` | Next — not started in Pkg 1 PR |
-| `zuno-shadow` | Planned |
+| `zuno-security` | **Package 2 complete** — `packages/zuno-security` |
+| `zuno-shadow` | Package 3 — not started in Pkg 2 PR |
 | `zuno-drp` | Planned |
 
 Each package: unit tests, README, rollback doc — one package per PR where possible.

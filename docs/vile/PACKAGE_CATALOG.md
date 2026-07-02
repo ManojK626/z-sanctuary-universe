@@ -19,9 +19,9 @@
 | ------- | ------ | -------------- |
 | `zuno-core` | PLANNED (partial: `z-sanctuary-core`) | Shared types, hub loaders, formula refs |
 | `zuno-orchestrator` | PLANNED (contracts: **EXISTS**) | Task routing, agent dispatch |
-| `zuno-security` | PLANNED — **Phase 2A** | Zero trust helpers, RBAC, audit |
-| `zuno-drp` | PLANNED — **Phase 2A** | 14 DRP middleware + decision records |
-| `zuno-shadow` | PLANNED — **Phase 2A** | Shadow validation pipeline |
+| `zuno-security` | **EXISTS** — Phase 2A Pkg 2 | Zero trust contracts — `@z-sanctuary/zuno-security` |
+| `zuno-drp` | PLANNED — **Phase 2A** Pkg 4 | 14 DRP middleware + decision records |
+| `zuno-shadow` | PLANNED — **Phase 2A** Pkg 3 | Shadow validation pipeline |
 | `zuno-observability` | **EXISTS** — Phase 2A Pkg 1 | Logging, metrics, tracing interfaces — `@z-sanctuary/zuno-observability` |
 | `zuno-verification` | PLANNED — Phase 2A+ | Schema + policy verification |
 | `zuno-identity` | PLANNED — Phase 2B+ | Identity abstraction — no duplicate auth per app |

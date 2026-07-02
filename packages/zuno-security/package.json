@@ -1,0 +1,40 @@
+{
+  "name": "@z-sanctuary/zuno-security",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Phase 2A Pkg 2: VILE shared security contracts and Zero Trust policy primitives. Not auth or encryption.",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "require": "./dist/index.js",
+      "default": "./dist/index.js"
+    }
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "CHANGELOG.md",
+    "ROLLBACK.md"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "test": "npm run build && node --test tests/**/*.test.mjs",
+    "lint": "tsc --noEmit"
+  },
+  "keywords": [
+    "z-sanctuary",
+    "vile",
+    "zuno",
+    "security",
+    "zero-trust"
+  ],
+  "license": "MIT",
+  "devDependencies": {
+    "typescript": "^5.0.0"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
