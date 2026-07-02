@@ -41,6 +41,8 @@ Request
 - Mapping table: endpoint class → DRP checks  
 - **No** production middleware deployed  
 
+**Package 4 charter (Phase 2A):** [PHASE_2A_PACKAGE_4_ZUNO_DRP_CHARTER.md](PHASE_2A_PACKAGE_4_ZUNO_DRP_CHARTER.md) — implementation-free until Packages 1–3 merge under Merge Hold.
+
 ## Reports (phase completion)
 
 DRP validation report must list:

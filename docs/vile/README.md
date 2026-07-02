@@ -49,6 +49,7 @@ See [ZILWA_VILE_RELATIONSHIP.md](ZILWA_VILE_RELATIONSHIP.md).
 | [AGENT_SWARM_SPEC.md](AGENT_SWARM_SPEC.md) | Agent roles + orchestrator law |
 | [SHADOW_VALIDATION_PIPELINE.md](SHADOW_VALIDATION_PIPELINE.md) | Never bypass Shadow |
 | [DRP_MIDDLEWARE_ARCHITECTURE.md](DRP_MIDDLEWARE_ARCHITECTURE.md) | 14 DRP on every endpoint |
+| [PHASE_2A_PACKAGE_4_ZUNO_DRP_CHARTER.md](PHASE_2A_PACKAGE_4_ZUNO_DRP_CHARTER.md) | Pkg 4 `@z-sanctuary/zuno-drp` — charter only (no code until merge gate) |
 | [ETHICAL_AI_CHARTER.md](ETHICAL_AI_CHARTER.md) | Dignity, safety, no fabrication |
 | [SECURITY_ZERO_TRUST.md](SECURITY_ZERO_TRUST.md) | Zero trust design |
 

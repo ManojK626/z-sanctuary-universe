@@ -20,7 +20,7 @@
 | `zuno-core`          | PLANNED (partial: `z-sanctuary-core`) | Shared types, hub loaders, formula refs                                  |
 | `zuno-orchestrator`  | PLANNED (contracts: **EXISTS**)       | Task routing, agent dispatch                                             |
 | `zuno-security`      | **EXISTS** — Phase 2A Pkg 2           | Zero trust contracts — `@z-sanctuary/zuno-security`                      |
-| `zuno-drp`           | PLANNED — **Phase 2A** Pkg 4          | 14 DRP middleware + decision records                                     |
+| `zuno-drp`           | **CHARTERED** — Phase 2A Pkg 4 · [charter](PHASE_2A_PACKAGE_4_ZUNO_DRP_CHARTER.md) · implementation blocked until Pkgs 1–3 merge | 14 DRP middleware + decision records |
 | `zuno-shadow`        | **EXISTS** — Phase 2A Pkg 3           | Shadow validation pipeline — `@z-sanctuary/zuno-shadow`                  |
 | `zuno-observability` | **EXISTS** — Phase 2A Pkg 1           | Logging, metrics, tracing interfaces — `@z-sanctuary/zuno-observability` |
 | `zuno-verification`  | PLANNED — Phase 2A+                   | Schema + policy verification                                             |
