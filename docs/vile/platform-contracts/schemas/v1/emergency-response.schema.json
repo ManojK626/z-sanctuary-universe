@@ -1,0 +1,43 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://z-sanctuary.local/vile/schemas/v1/emergency-response.json",
+  "title": "VILEEmergencyBundle",
+  "description": "Offline-capable emergency bundle. Medical content is static approved packs only.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["id", "regionId", "schemaVersion", "contacts", "disclaimer"],
+  "properties": {
+    "id": { "type": "string", "pattern": "^emergency-" },
+    "regionId": { "type": "string" },
+    "schemaVersion": { "type": "string", "const": "v1" },
+    "contacts": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "required": ["label", "phoneE164", "category"],
+        "properties": {
+          "label": { "type": "string" },
+          "phoneE164": { "type": "string" },
+          "category": {
+            "type": "string",
+            "enum": ["police", "ambulance", "fire", "coast_guard", "embassy", "poison", "other"]
+          }
+        }
+      }
+    },
+    "medicalGuidancePackId": {
+      "type": "string",
+      "description": "Static pack reference — not AI-generated treatment"
+    },
+    "phrasePackIds": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "lastSyncedAtIso": { "type": "string", "format": "date-time" },
+    "disclaimer": {
+      "type": "string",
+      "description": "This is not a substitute for professional medical care"
+    }
+  }
+}

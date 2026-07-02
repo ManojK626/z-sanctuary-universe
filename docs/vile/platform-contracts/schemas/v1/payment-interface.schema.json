@@ -1,0 +1,54 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://z-sanctuary.local/vile/schemas/v1/payment-interface.json",
+  "title": "VILEPaymentInterfaces",
+  "description": "Payment adapter contracts only. Runtime HOLD until revenue phase.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schemaVersion", "intent", "result", "adapterManifest"],
+  "properties": {
+    "schemaVersion": { "type": "string", "const": "v1" },
+    "intent": {
+      "type": "object",
+      "required": ["id", "amountMinor", "currency", "regionCode"],
+      "properties": {
+        "id": { "type": "string" },
+        "amountMinor": { "type": "integer", "minimum": 0 },
+        "currency": { "type": "string", "minLength": 3, "maxLength": 3 },
+        "regionCode": { "type": "string", "enum": ["MU", "RE", "MG"] },
+        "metadata": { "type": "object", "additionalProperties": { "type": "string" } }
+      }
+    },
+    "result": {
+      "type": "object",
+      "required": ["status"],
+      "properties": {
+        "status": {
+          "type": "string",
+          "enum": ["pending", "requires_action", "succeeded", "failed", "cancelled", "mock_only"]
+        },
+        "providerRef": { "type": "string" },
+        "failureCode": { "type": "string" }
+      }
+    },
+    "adapterManifest": {
+      "type": "object",
+      "required": ["adapterId", "capabilities"],
+      "properties": {
+        "adapterId": { "type": "string" },
+        "capabilities": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "enum": ["card", "mobile_money", "escrow", "split_settlement", "refund"]
+          }
+        },
+        "runtimeEnabled": {
+          "type": "boolean",
+          "const": false,
+          "description": "Phase 1.5: contracts only"
+        }
+      }
+    }
+  }
+}

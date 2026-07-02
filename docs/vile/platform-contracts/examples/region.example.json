@@ -1,0 +1,10 @@
+{
+  "_fixture": "vile_region_v1",
+  "_non_executable": true,
+  "id": "region-mu-001",
+  "code": "MU",
+  "displayName": "Mauritius",
+  "countryCodes": ["MU"],
+  "defaultLocales": ["en-MU", "fr-MU"],
+  "verificationStatus": "illustrative"
+}

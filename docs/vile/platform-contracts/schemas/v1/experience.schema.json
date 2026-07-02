@@ -1,0 +1,32 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://z-sanctuary.local/vile/schemas/v1/experience.json",
+  "title": "VILEExperience",
+  "description": "Curated living experience (cultural, nature, wellness). Read-only in Phase 2B.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["id", "destinationId", "title", "verificationStatus"],
+  "properties": {
+    "id": { "type": "string", "pattern": "^exp-" },
+    "destinationId": { "type": "string" },
+    "title": { "type": "string" },
+    "description": { "type": "string" },
+    "durationMinutes": { "type": "integer", "minimum": 0 },
+    "tags": { "type": "array", "items": { "type": "string" } },
+    "accessibilityNotes": { "type": "string" },
+    "sustainabilityNotes": { "type": "string" },
+    "verificationStatus": {
+      "type": "string",
+      "enum": ["verified", "steward_reviewed", "illustrative", "placeholder"]
+    },
+    "zilwaModuleRef": {
+      "type": "string",
+      "description": "Optional link to ZILWA exhibit module id"
+    },
+    "bookingAllowed": {
+      "type": "boolean",
+      "const": false,
+      "description": "Phase 2B: always false"
+    }
+  }
+}

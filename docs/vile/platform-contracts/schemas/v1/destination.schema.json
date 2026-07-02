@@ -1,0 +1,37 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://z-sanctuary.local/vile/schemas/v1/destination.json",
+  "title": "VILEDestination",
+  "description": "Destination or point of interest. Must not be fabricated — verificationStatus required.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["id", "regionId", "name", "coordinates", "verificationStatus"],
+  "properties": {
+    "id": { "type": "string", "pattern": "^dest-" },
+    "regionId": { "type": "string" },
+    "name": { "type": "string" },
+    "summary": { "type": "string" },
+    "coordinates": {
+      "type": "object",
+      "required": ["latitude", "longitude"],
+      "properties": {
+        "latitude": { "type": "number", "minimum": -90, "maximum": 90 },
+        "longitude": { "type": "number", "minimum": -180, "maximum": 180 }
+      }
+    },
+    "categories": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "verificationStatus": {
+      "type": "string",
+      "enum": ["verified", "steward_reviewed", "illustrative", "placeholder"]
+    },
+    "sourceRefs": {
+      "type": "array",
+      "items": { "type": "string" },
+      "description": "Catalog IDs or steward consent refs"
+    },
+    "offlinePackEligible": { "type": "boolean", "default": false }
+  }
+}

@@ -1,0 +1,45 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://z-sanctuary.local/vile/schemas/v1/traveller-profile.json",
+  "title": "VILETravellerProfile",
+  "description": "Consent-bounded traveller profile. Minimal PII by design.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["id", "schemaVersion", "consent"],
+  "properties": {
+    "id": { "type": "string", "pattern": "^traveller-" },
+    "schemaVersion": { "type": "string", "const": "v1" },
+    "displayName": { "type": "string" },
+    "preferredLocales": { "type": "array", "items": { "type": "string" } },
+    "accessibilityNeeds": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "consent": {
+      "type": "object",
+      "required": ["dataProcessing", "marketing", "research"],
+      "properties": {
+        "dataProcessing": { "type": "boolean" },
+        "marketing": { "type": "boolean" },
+        "research": { "type": "boolean" },
+        "consentedAtIso": { "type": "string", "format": "date-time" }
+      }
+    },
+    "emergencyContacts": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["name", "phoneE164"],
+        "properties": {
+          "name": { "type": "string" },
+          "phoneE164": { "type": "string" },
+          "relationship": { "type": "string" }
+        }
+      }
+    },
+    "medicalInfoPackId": {
+      "type": "string",
+      "description": "Reference to approved static pack only — not free-text diagnosis"
+    }
+  }
+}

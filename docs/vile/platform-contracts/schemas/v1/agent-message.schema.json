@@ -1,0 +1,62 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://z-sanctuary.local/vile/schemas/v1/agent-message.json",
+  "title": "VILEAgentMessage",
+  "description": "Message between Universal Orchestrator and a swarm agent. No direct agent-to-agent channel.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["messageId", "direction", "agentRole", "orchestratorRequestId", "createdAtIso", "content"],
+  "properties": {
+    "messageId": { "type": "string", "format": "uuid" },
+    "direction": { "type": "string", "enum": ["to_agent", "from_agent"] },
+    "agentRole": {
+      "type": "string",
+      "enum": [
+        "PlannerAgent",
+        "LogisticsAgent",
+        "KnowledgeAgent",
+        "CultureAgent",
+        "KidsSafetyAgent",
+        "MedicalAgent",
+        "RiskAgent",
+        "FinanceAgent",
+        "AccessibilityAgent",
+        "SustainabilityAgent",
+        "LegalComplianceAgent",
+        "ShadowValidator",
+        "DRPGuardian",
+        "LearningAgent"
+      ]
+    },
+    "orchestratorRequestId": { "type": "string", "description": "Links to ZunoRequest.id" },
+    "createdAtIso": { "type": "string", "format": "date-time" },
+    "content": {
+      "type": "object",
+      "required": ["intent", "body"],
+      "properties": {
+        "intent": { "type": "string" },
+        "body": { "type": "object" },
+        "citations": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": ["sourceId", "label"],
+            "properties": {
+              "sourceId": { "type": "string" },
+              "label": { "type": "string" },
+              "url": { "type": "string", "format": "uri" }
+            }
+          }
+        }
+      }
+    },
+    "shadowStatus": {
+      "type": "string",
+      "enum": ["pending", "passed", "blocked", "degraded"]
+    },
+    "abstain": {
+      "type": "boolean",
+      "description": "True when agent refuses to fabricate"
+    }
+  }
+}

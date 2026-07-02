@@ -1,0 +1,16 @@
+{
+  "_fixture": "vile_common_event_v1",
+  "_non_executable": true,
+  "eventId": "550e8400-e29b-41d4-a716-446655440000",
+  "eventType": "vile.destination.updated",
+  "occurredAtIso": "2026-07-01T12:00:00.000Z",
+  "schemaVersion": "v1",
+  "source": {
+    "service": "vile-contracts-fixture",
+    "projectScope": "Z_Sanctuary_Universe",
+    "correlationId": "corr-fixture-001"
+  },
+  "payload": {
+    "destinationId": "dest-mauritius-port-louis-001"
+  }
+}

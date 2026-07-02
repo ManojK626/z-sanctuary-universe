@@ -3,6 +3,8 @@
 **Location:** `packages/` (monorepo)  
 **Posture:** Planned catalog · implement per phase charter only
 
+**Phase 1.5 schemas (source of truth until 2A):** [platform-contracts/schemas/v1/](platform-contracts/schemas/v1/)
+
 ## Status legend
 
 | Status | Meaning |
@@ -17,14 +19,14 @@
 | ------- | ------ | -------------- |
 | `zuno-core` | PLANNED (partial: `z-sanctuary-core`) | Shared types, hub loaders, formula refs |
 | `zuno-orchestrator` | PLANNED (contracts: **EXISTS**) | Task routing, agent dispatch |
-| `zuno-security` | PLANNED | Zero trust helpers, RBAC, audit |
-| `zuno-drp` | PLANNED | 14 DRP middleware + decision records |
-| `zuno-shadow` | PLANNED | Shadow validation pipeline |
-| `zuno-verification` | PLANNED | Schema + policy verification |
-| `zuno-identity` | PLANNED | Identity abstraction — no duplicate auth per app |
-| `zuno-observability` | PLANNED | Logging, metrics, tracing interfaces |
-| `zuno-knowledge` | PLANNED | RAG / steward knowledge boundaries |
-| `zuno-ai` | PLANNED | Provider adapters — no vendor lock-in prompts |
+| `zuno-security` | PLANNED — **Phase 2A** | Zero trust helpers, RBAC, audit |
+| `zuno-drp` | PLANNED — **Phase 2A** | 14 DRP middleware + decision records |
+| `zuno-shadow` | PLANNED — **Phase 2A** | Shadow validation pipeline |
+| `zuno-observability` | PLANNED — **Phase 2A** | Logging, metrics, tracing interfaces |
+| `zuno-verification` | PLANNED — Phase 2A+ | Schema + policy verification |
+| `zuno-identity` | PLANNED — Phase 2B+ | Identity abstraction — no duplicate auth per app |
+| `zuno-knowledge` | PLANNED — Phase 2B+ | RAG / steward knowledge boundaries |
+| `zuno-ai` | PLANNED — Phase 3 | Provider adapters — no vendor lock-in prompts |
 | `zuno-payments` | **HOLD** | Provider interfaces only — see payment doc |
 | `zuno-health` | **HOLD** | Medical guidance boundaries — human + compliance |
 | `zuno-travel` | PLANNED | Destinations, itineraries, offline bundles |

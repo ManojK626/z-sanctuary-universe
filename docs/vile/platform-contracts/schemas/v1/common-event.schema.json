@@ -1,0 +1,39 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://z-sanctuary.local/vile/schemas/v1/common-event.json",
+  "title": "VILECommonEvent",
+  "description": "Envelope for all VILE domain events. Every service emits this shape.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["eventId", "eventType", "occurredAtIso", "schemaVersion", "source", "payload"],
+  "properties": {
+    "eventId": { "type": "string", "format": "uuid", "description": "Unique event identifier" },
+    "eventType": {
+      "type": "string",
+      "pattern": "^vile\\.[a-z]+\\.[a-z0-9_]+$",
+      "description": "Namespaced type e.g. vile.destination.updated"
+    },
+    "occurredAtIso": { "type": "string", "format": "date-time" },
+    "schemaVersion": { "type": "string", "const": "v1" },
+    "source": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["service", "projectScope"],
+      "properties": {
+        "service": { "type": "string" },
+        "projectScope": { "type": "string" },
+        "correlationId": { "type": "string" },
+        "traceId": { "type": "string" }
+      }
+    },
+    "payload": {
+      "type": "object",
+      "description": "Domain payload — must conform to a registered payload schema"
+    },
+    "drpDecisionId": { "type": "string", "description": "Optional link to ZDRPDecision record" },
+    "metadata": {
+      "type": "object",
+      "additionalProperties": { "type": "string" }
+    }
+  }
+}

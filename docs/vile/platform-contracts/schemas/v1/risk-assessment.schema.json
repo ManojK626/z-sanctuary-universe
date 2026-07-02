@@ -1,0 +1,44 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://z-sanctuary.local/vile/schemas/v1/risk-assessment.json",
+  "title": "VILERiskAssessment",
+  "description": "Evidence-backed risk assessment. Must not fabricate safety scores.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["id", "subjectType", "subjectId", "overallLevel", "evidenceStatus", "assessedAtIso"],
+  "properties": {
+    "id": { "type": "string", "pattern": "^risk-" },
+    "subjectType": {
+      "type": "string",
+      "enum": ["destination", "experience", "region", "itinerary"]
+    },
+    "subjectId": { "type": "string" },
+    "overallLevel": {
+      "type": "string",
+      "enum": ["low", "moderate", "elevated", "high", "unknown"]
+    },
+    "evidenceStatus": {
+      "type": "string",
+      "enum": ["verified", "partial", "stale", "insufficient"]
+    },
+    "factors": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["code", "level", "summary"],
+        "properties": {
+          "code": { "type": "string" },
+          "level": { "type": "string", "enum": ["low", "moderate", "elevated", "high", "unknown"] },
+          "summary": { "type": "string" },
+          "sourceRef": { "type": "string" }
+        }
+      }
+    },
+    "disclaimer": {
+      "type": "string",
+      "description": "Mandatory traveller-facing disclaimer"
+    },
+    "assessedAtIso": { "type": "string", "format": "date-time" },
+    "agentRole": { "type": "string", "const": "RiskAgent" }
+  }
+}

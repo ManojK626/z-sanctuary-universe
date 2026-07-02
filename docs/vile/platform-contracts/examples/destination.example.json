@@ -1,0 +1,13 @@
+{
+  "_fixture": "vile_destination_v1",
+  "_non_executable": true,
+  "id": "dest-mauritius-port-louis-001",
+  "regionId": "region-mu-001",
+  "name": "Port Louis Waterfront (illustrative)",
+  "summary": "Example fixture for schema validation only — not a verified POI.",
+  "coordinates": { "latitude": -20.1609, "longitude": 57.5012 },
+  "categories": ["urban", "cultural"],
+  "verificationStatus": "illustrative",
+  "sourceRefs": ["zilwa-exhibit-fixture"],
+  "offlinePackEligible": false
+}

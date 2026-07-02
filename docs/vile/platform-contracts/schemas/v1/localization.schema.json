@@ -1,0 +1,31 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://z-sanctuary.local/vile/schemas/v1/localization.json",
+  "title": "VILELocalizationPack",
+  "description": "Locale and phrase pack for offline and online surfaces.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["id", "locale", "regionId", "phrases"],
+  "properties": {
+    "id": { "type": "string", "pattern": "^l10n-" },
+    "locale": { "type": "string", "description": "BCP 47 e.g. en-MU, fr-RE, mg-MG" },
+    "regionId": { "type": "string" },
+    "displayName": { "type": "string" },
+    "phrases": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "required": ["key", "text"],
+        "properties": {
+          "key": { "type": "string", "pattern": "^[a-z][a-z0-9._-]+$" },
+          "text": { "type": "string" },
+          "context": { "type": "string" },
+          "audioAssetRef": { "type": "string" }
+        }
+      }
+    },
+    "rtl": { "type": "boolean", "default": false },
+    "lastUpdatedAtIso": { "type": "string", "format": "date-time" }
+  }
+}

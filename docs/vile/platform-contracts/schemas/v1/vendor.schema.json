@@ -1,0 +1,46 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://z-sanctuary.local/vile/schemas/v1/vendor.json",
+  "title": "VILEVendor",
+  "description": "Vendor onboarding record. No live marketplace vendor until Phase 2D receipt.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["id", "legalName", "regionId", "onboardingStatus", "verificationStatus"],
+  "properties": {
+    "id": { "type": "string", "pattern": "^vendor-" },
+    "legalName": { "type": "string" },
+    "tradeName": { "type": "string" },
+    "regionId": { "type": "string" },
+    "vendorTypes": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "enum": ["guide", "artisan", "host", "transport", "wellness", "conservation", "other"]
+      }
+    },
+    "onboardingStatus": {
+      "type": "string",
+      "enum": ["draft", "submitted", "human_review", "approved", "suspended", "rejected"]
+    },
+    "verificationStatus": {
+      "type": "string",
+      "enum": ["unverified", "documents_received", "verified", "illustrative"]
+    },
+    "humanApproverId": {
+      "type": "string",
+      "description": "Required when onboardingStatus is approved"
+    },
+    "payoutEnabled": {
+      "type": "boolean",
+      "const": false,
+      "description": "Phase 2D: always false — no payments"
+    },
+    "contact": {
+      "type": "object",
+      "properties": {
+        "email": { "type": "string", "format": "email" },
+        "phoneE164": { "type": "string" }
+      }
+    }
+  }
+}

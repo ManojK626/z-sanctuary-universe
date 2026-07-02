@@ -1,0 +1,27 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://z-sanctuary.local/vile/schemas/v1/region.json",
+  "title": "VILERegion",
+  "description": "Indian Ocean region (Mauritius, Réunion, Madagascar, future).",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["id", "code", "displayName", "countryCodes", "verificationStatus"],
+  "properties": {
+    "id": { "type": "string", "pattern": "^region-" },
+    "code": { "type": "string", "enum": ["MU", "RE", "MG"] },
+    "displayName": { "type": "string" },
+    "countryCodes": {
+      "type": "array",
+      "items": { "type": "string", "minLength": 2, "maxLength": 2 }
+    },
+    "defaultLocales": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "verificationStatus": {
+      "type": "string",
+      "enum": ["verified", "illustrative", "placeholder"]
+    },
+    "lastVerifiedAtIso": { "type": "string", "format": "date-time" }
+  }
+}

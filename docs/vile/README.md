@@ -4,7 +4,7 @@
 **Parent:** Z-Sanctuary Universe  
 **Version:** 1.0 — Canonical System Blueprint (architecture-first)  
 **Posture:** Documentation foundation · **not** deploy or revenue approval  
-**Phase:** Learning · Discovery · Alignment ([Operational Posture 2026](../Z_SANCTUARY_OPERATIONAL_POSTURE_2026.md))
+**Phase:** Phase 1.5 — Platform Contracts ([platform-contracts/](platform-contracts/))
 
 ## Purpose
 
@@ -68,15 +68,24 @@ See [ZILWA_VILE_RELATIONSHIP.md](ZILWA_VILE_RELATIONSHIP.md).
 
 | Doc | Role |
 | --- | ---- |
-| [IMPLEMENTATION_PHASES.md](IMPLEMENTATION_PHASES.md) | Phase 1–4 sequencing |
+| [IMPLEMENTATION_PHASES.md](IMPLEMENTATION_PHASES.md) | Phase 1.5 → 2A–2D → 3 sequencing |
 | [ROADMAP_INDIAN_OCEAN.md](ROADMAP_INDIAN_OCEAN.md) | Mauritius → Réunion → Madagascar |
+
+### Boundaries & contracts (Phase 1.5)
+
+| Doc | Role |
+| --- | ---- |
+| [SYSTEM_BOUNDARIES.md](SYSTEM_BOUNDARIES.md) | What VILE will **not** do |
+| [platform-contracts/README.md](platform-contracts/README.md) | JSON Schema shared language (13 contracts) |
 
 ## Law
 
 ```text
 Documented ≠ Implemented ≠ Running
-Architecture first · Turtle Mode · Merge Hold · AMK gate on sacred moves
+Architecture first · Contracts before packages · Merge Hold · AMK gate on sacred moves
 ```
+
+See [SYSTEM_BOUNDARIES.md](SYSTEM_BOUNDARIES.md).
 
 ## Verdict
 
