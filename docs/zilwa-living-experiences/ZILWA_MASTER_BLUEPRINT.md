@@ -14,6 +14,8 @@ ZILWA LIVING EXPERIENCES is a **community-connected Mauritian hospitality ecosys
 
 Phase 0 defines **how** this ecosystem should be governed inside Z-Sanctuary before any app, server, payment lane, or health feature exists.
 
+**Enterprise engineering charter:** [VILE (Vanilla Islands Living Experiences)](../vile/README.md) — architecture-first blueprint for Indian Ocean expansion. ZILWA = community doctrine; VILE = platform engineering.
+
 ---
 
 ## Core pillars
