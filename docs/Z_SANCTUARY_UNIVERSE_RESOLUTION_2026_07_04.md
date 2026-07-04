@@ -138,6 +138,8 @@ Permanent doctrine:
 | 2 | Implement `zuno-drp` | Charter only |
 | 3 | Verify foundation on `main` | Pending |
 
+**Mission Control:** `npm run z:universe:status` → [dashboard/Z_UNIVERSE_MISSION_CONTROL_ARCHITECTURE.md](dashboard/Z_UNIVERSE_MISSION_CONTROL_ARCHITECTURE.md) (observer/orchestrator — feeds dashboard; does not execute sacred moves)
+
 Z-Connect Phase 1.6, Sprint 0, and runtime remain **blocked**.
 
 Program detail: [z-connect/Z_CONNECT_PROGRAM_STATUS.md](z-connect/Z_CONNECT_PROGRAM_STATUS.md)
