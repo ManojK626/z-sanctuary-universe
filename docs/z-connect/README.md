@@ -41,6 +41,10 @@ Z-Connect is a **product charter** under hub governance. It is **not** a bypass 
 | [Z_CONNECT_AI_DISCOVERY_JOURNEY.md](Z_CONNECT_AI_DISCOVERY_JOURNEY.md) | Signature conversational onboarding concept |
 | [Z_CONNECT_STACK_PLACEMENT.md](Z_CONNECT_STACK_PLACEMENT.md) | Where Z-Connect sits in Zuno / DRP / Shadow stack |
 | [Z_CONNECT_PHASE_1_5_ROADMAP.md](Z_CONNECT_PHASE_1_5_ROADMAP.md) | Next deliverables: contracts, API, schema, journeys, Sprint 0 |
+| [Z_CONNECT_AI_CONSTITUTION_V1.md](Z_CONNECT_AI_CONSTITUTION_V1.md) | **Locked** — AI moral law (10 principles) |
+| [Z_CONNECT_STREAM_B_PREP_CHARTER.md](Z_CONNECT_STREAM_B_PREP_CHARTER.md) | Parallel prep lane (60% effort) — no runtime |
+| [Z_CONNECT_COMMERCIAL_MILESTONE.md](Z_CONNECT_COMMERCIAL_MILESTONE.md) | First 100 paying members framing |
+| [Z_CONNECT_PROGRAM_STATUS.md](Z_CONNECT_PROGRAM_STATUS.md) | Dual-stream status + AMK classification |
 
 ## Phase posture
 

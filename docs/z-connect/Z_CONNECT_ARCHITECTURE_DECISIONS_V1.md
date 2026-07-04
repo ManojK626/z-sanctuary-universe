@@ -25,8 +25,18 @@ These decisions are **binding** on all Z-Connect design, contracts, and future i
 | 9 | **Connection Tree branch model** | Major capabilities = separate branches — not one monolithic app ([module branches](Z_CONNECT_MODULE_BRANCHES.md)) |
 | 10 | **Connection Confidence over percentages** | Explain insights + confidence per dimension — no “92% compatible” ([detail](Z_CONNECT_CONNECTION_CONFIDENCE.md)) |
 | 11 | **Progressive Discovery** | Understanding deepens over time with consent — not one-shot questionnaire truth ([detail](Z_CONNECT_PROGRESSIVE_DISCOVERY.md)) |
+| 12 | **AI Constitution v1** | Moral law for every AI interaction ([Z_CONNECT_AI_CONSTITUTION_V1.md](Z_CONNECT_AI_CONSTITUTION_V1.md)) |
 
 ---
+
+## Program model (2026-07-04)
+
+| Stream | Effort | Focus |
+| ------ | ------ | ----- |
+| **A — Foundation** | ~40% | VILE merge · `zuno-drp` · hub backbone |
+| **B — Z-Connect prep** | ~60% | Contracts, specs, commercial, legal drafts — no runtime |
+
+See [Z_CONNECT_PROGRAM_STATUS.md](Z_CONNECT_PROGRAM_STATUS.md) · [Z_CONNECT_STREAM_B_PREP_CHARTER.md](Z_CONNECT_STREAM_B_PREP_CHARTER.md)
 
 ## Immutable governance rule
 
