@@ -81,6 +81,24 @@ Closing posture: **Freeze. Protect. Review. Build deliberately.**
 
 ---
 
+## Three permanent rules (AMK — Universe Resolution 2026-07-04)
+
+Canonical resolution: [Z_SANCTUARY_UNIVERSE_RESOLUTION_2026_07_04.md](Z_SANCTUARY_UNIVERSE_RESOLUTION_2026_07_04.md)
+
+### Rule 1 — Freeze means freeze
+
+Once architecture is **FROZEN**, changes occur only through a documented **ADR** approved through governance. No silent edits to locked layers.
+
+### Rule 2 — Shared foundations first
+
+Infrastructure, governance, and reusable packages mature **before** application runtime depends on them. Current critical path: VILE Track A (Pkgs 1–3 merge · `zuno-drp` · verify `main`).
+
+### Rule 3 — Commercial work continues
+
+Parallel non-runtime work (strategy, UX, branding, legal drafts, marketing, community) may continue while engineering waits behind Merge Hold — without bypassing technical governance.
+
+---
+
 ## Z-Sanctuary reuse principle
 
 > The governance framework is reusable, but each application owns its own domain logic and experience states.
@@ -167,3 +185,4 @@ Pattern for ESC: [z-connect/experience-state-contracts/ESC_REUSABLE_PATTERN.md](
 | ---- | ------ |
 | Lifecycle doctrine v1 | **Approved** — AMK-Goku, 2026-07-04 |
 | Z-Connect Phase 1.5 | **COMPLETE · FROZEN · READY FOR ARCHITECTURE REVIEW** |
+| Universe Resolution 2026-07-04 | **Accepted** — canonical hub posture |

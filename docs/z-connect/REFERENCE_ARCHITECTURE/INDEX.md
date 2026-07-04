@@ -74,6 +74,7 @@ See [09_FUTURE_EXTENSIONS.md](09_FUTURE_EXTENSIONS.md)
 | Role | Doc | Scope |
 | ---- | --- | ----- |
 | Hub lifecycle doctrine | [Z_SANCTUARY_PROJECT_ARCHITECTURE_LIFECYCLE.md](../../Z_SANCTUARY_PROJECT_ARCHITECTURE_LIFECYCLE.md) | ecosystem-wide |
+| Universe resolution 2026-07-04 | [Z_SANCTUARY_UNIVERSE_RESOLUTION_2026_07_04.md](../../Z_SANCTUARY_UNIVERSE_RESOLUTION_2026_07_04.md) | canonical posture |
 | Master charter | [Z_CONNECT_MASTER_BUILD_CHARTER.md](../Z_CONNECT_MASTER_BUILD_CHARTER.md) | Z-Connect |
 | Locked decisions v1 | [Z_CONNECT_ARCHITECTURE_DECISIONS_V1.md](../Z_CONNECT_ARCHITECTURE_DECISIONS_V1.md) | Z-Connect |
 | Program status | [Z_CONNECT_PROGRAM_STATUS.md](../Z_CONNECT_PROGRAM_STATUS.md) | Z-Connect |
