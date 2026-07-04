@@ -1,10 +1,10 @@
 # Z-Sanctuary Universe — Mission Control Architecture
 
-**System ID:** Z-UNIVERSE-MC-1  
-**Version:** 1.0  
-**Status:** Architecture + first status report · **observer/orchestrator** · no runtime controller  
-**Date:** 2026-07-04  
-**Owner:** AMK-Goku  
+**System ID:** Z-UNIVERSE-MC-1
+**Version:** 1.0
+**Status:** Architecture + first status report · **observer/orchestrator** · no runtime controller
+**Date:** 2026-07-04
+**Owner:** AMK-Goku
 **Posture:** Read-only dashboard evolution · Merge Hold · Runtime NOT AUTHORIZED
 
 ---
@@ -76,18 +76,18 @@ Discovery (MC-0.5): [Z_UNIVERSE_DISCOVERY_ARCHITECTURE.md](Z_UNIVERSE_DISCOVERY_
 
 Each department publishes the same standard report structure. Registry: `data/z_universe_department_registry.json`
 
-| Field | Purpose |
-| ----- | ------- |
-| Current phase | Where the project is in its lifecycle |
-| Architecture | FROZEN / HOLD / active |
-| Merge Hold | Active or released |
-| Runtime | NOT AUTHORIZED until gate opens |
-| Readiness | Evidence-based posture |
-| Open risks | Honest blockers |
-| Next action | Recommended operator step |
-| Required human gate | AMK / DRP / sacred move |
-| Latest validation | Report paths + signals |
-| Dependencies | Other departments |
+| Field               | Purpose                               |
+| ------------------- | ------------------------------------- |
+| Current phase       | Where the project is in its lifecycle |
+| Architecture        | FROZEN / HOLD / active                |
+| Merge Hold          | Active or released                    |
+| Runtime             | NOT AUTHORIZED until gate opens       |
+| Readiness           | Evidence-based posture                |
+| Open risks          | Honest blockers                       |
+| Next action         | Recommended operator step             |
+| Required human gate | AMK / DRP / sacred move               |
+| Latest validation   | Report paths + signals                |
+| Dependencies        | Other departments                     |
 
 Spec: [Z_ZUNO_UNIVERSE_REPORT_SPEC.md](Z_ZUNO_UNIVERSE_REPORT_SPEC.md)
 
@@ -97,16 +97,16 @@ Spec: [Z_ZUNO_UNIVERSE_REPORT_SPEC.md](Z_ZUNO_UNIVERSE_REPORT_SPEC.md)
 
 **No single combined percentage.** Use independent signals:
 
-| Dimension | Typical source |
-| --------- | -------------- |
-| Architecture | Phase freeze, lifecycle completeness |
-| Governance | Merge Hold, Universe Resolution |
-| Documentation | Handbook, receipts |
-| Development | Branch merge posture, open work |
-| Testing | Package/integration test evidence |
-| Deployment | Sacred gate — usually RED/HOLD |
-| Commercial | Prep checklist, milestone framing |
-| Security | VILE packages, policy docs |
+| Dimension     | Typical source                       |
+| ------------- | ------------------------------------ |
+| Architecture  | Phase freeze, lifecycle completeness |
+| Governance    | Merge Hold, Universe Resolution      |
+| Documentation | Handbook, receipts                   |
+| Development   | Branch merge posture, open work      |
+| Testing       | Package/integration test evidence    |
+| Deployment    | Sacred gate — usually RED/HOLD       |
+| Commercial    | Prep checklist, milestone framing    |
+| Security      | VILE packages, policy docs           |
 
 ---
 
@@ -114,15 +114,15 @@ Spec: [Z_ZUNO_UNIVERSE_REPORT_SPEC.md](Z_ZUNO_UNIVERSE_REPORT_SPEC.md)
 
 Multiple AI perspectives feed **one dashboard view** — not a single opinion:
 
-| AI role | Responsibility |
-| ------- | -------------- |
-| Zuno Architect | Architecture review |
-| Governance AI | DRP and policy checks |
-| QA AI | Verification and testing |
+| AI role          | Responsibility             |
+| ---------------- | -------------------------- |
+| Zuno Architect   | Architecture review        |
+| Governance AI    | DRP and policy checks      |
+| QA AI            | Verification and testing   |
 | Documentation AI | Documentation completeness |
-| Strategy AI | Prioritization and roadmap |
-| Commercial AI | Launch readiness |
-| Security AI | Security posture |
+| Strategy AI      | Prioritization and roadmap |
+| Commercial AI    | Launch readiness           |
+| Security AI      | Security posture           |
 
 Phase 0: roles documented; consolidated report in universe status JSON. Future: structured AI review attachments per department (read-only).
 
@@ -132,42 +132,43 @@ Phase 0: roles documented; consolidated report in universe status JSON. Future: 
 
 Buttons **initiate approved workflows** — they do **not** override governance.
 
-| Action | Available when |
-| ------ | -------------- |
-| Review PR | Always (opens review — does not merge) |
-| Generate report | Always (read-only scripts) |
-| Run validation | Always (verify intents) |
-| Build | Only when project gate allows |
-| Merge | After governance approval |
-| Deploy | After governance approval (sacred) |
-| Publish | After governance approval (sacred) |
+| Action          | Available when                         |
+| --------------- | -------------------------------------- |
+| Review PR       | Always (opens review — does not merge) |
+| Generate report | Always (read-only scripts)             |
+| Run validation  | Always (verify intents)                |
+| Build           | Only when project gate allows          |
+| Merge           | After governance approval              |
+| Deploy          | After governance approval (sacred)     |
+| Publish         | After governance approval (sacred)     |
 
 ---
 
 ## Alignment with hub doctrine
 
-- [Z_SANCTUARY_UNIVERSE_RESOLUTION_2026_07_04.md](../Z_SANCTUARY_UNIVERSE_RESOLUTION_2026_07_04.md) — Track A priority  
-- [Z_SANCTUARY_PROJECT_ARCHITECTURE_LIFECYCLE.md](../Z_SANCTUARY_PROJECT_ARCHITECTURE_LIFECYCLE.md) — freeze means freeze  
-- [Z_ECOSYSTEM_AWARENESS_SPINE.md](../Z_ECOSYSTEM_AWARENESS_SPINE.md) — Z-AWARE-1 complements this layer  
-- Z-Connect **architecture frozen** — no new Z-Connect layers from Mission Control work  
+- [Z_SANCTUARY_UNIVERSE_RESOLUTION_2026_07_04.md](../Z_SANCTUARY_UNIVERSE_RESOLUTION_2026_07_04.md) — Track A priority
+- [Z_SANCTUARY_PROJECT_ARCHITECTURE_LIFECYCLE.md](../Z_SANCTUARY_PROJECT_ARCHITECTURE_LIFECYCLE.md) — freeze means freeze
+- [Z_ECOSYSTEM_AWARENESS_SPINE.md](../Z_ECOSYSTEM_AWARENESS_SPINE.md) — Z-AWARE-1 complements this layer
+- Z-Connect **architecture frozen** — no new Z-Connect layers from Mission Control work
 
 ---
 
 ## Phase roadmap
 
-| Phase | Deliverable | Status |
-| ----- | ----------- | ------ |
-| MC-0 | Architecture + universe status report script | **Done** |
-| MC-0.5 | Universe discovery + global project registry | **Done** |
-| MC-1 | Dashboard panel consuming reports | Future — after AMK review |
-| MC-2 | Per-department AI review attachments | Future |
-| MC-3 | Gated action initiators (workflow links only) | Future — sacred gate each |
+| Phase   | Deliverable                                    | Status                                                                        |
+| ------- | ---------------------------------------------- | ----------------------------------------------------------------------------- |
+| MC-0    | Architecture + universe status report script   | **Done**                                                                      |
+| MC-0.5  | Universe discovery + global project registry   | **Done**                                                                      |
+| MC-0.5b | Immutable Universe IDs + timeline + confidence | **Done**                                                                      |
+| MC-1    | Read-only dashboard overlay                    | **Done** — [Z_UNIVERSE_MC_1_ARCHITECTURE.md](Z_UNIVERSE_MC_1_ARCHITECTURE.md) |
+| MC-2    | Per-department AI review attachments           | Future                                                                        |
+| MC-3    | Gated action initiators (workflow links only)  | Future — sacred gate each                                                     |
 
 ---
 
 ## Reports
 
-- [PHASE_Z_UNIVERSE_MISSION_CONTROL_0_ARCHITECTURE_REPORT.md](PHASE_Z_UNIVERSE_MISSION_CONTROL_0_ARCHITECTURE_REPORT.md)  
+- [PHASE_Z_UNIVERSE_MISSION_CONTROL_0_ARCHITECTURE_REPORT.md](PHASE_Z_UNIVERSE_MISSION_CONTROL_0_ARCHITECTURE_REPORT.md)
 - [PHASE_Z_UNIVERSE_MISSION_CONTROL_0_GREEN_RECEIPT.md](PHASE_Z_UNIVERSE_MISSION_CONTROL_0_GREEN_RECEIPT.md)
 
 ---

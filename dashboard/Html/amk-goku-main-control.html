@@ -9,6 +9,7 @@
     <title>AMK-Goku Main Control Dashboard · Z-Sanctuary</title>
     <link rel="stylesheet" href="../styles/amk-goku-main-control.css" />
     <link rel="stylesheet" href="../styles/amk-project-indicators.css" />
+    <link rel="stylesheet" href="../styles/amk-universe-mission-control.css" />
     <link rel="stylesheet" href="../styles/amk-zuno-advisor.css" />
     <link rel="stylesheet" href="../styles/z-root-guardian-coordination.css" />
   </head>
@@ -88,6 +89,7 @@
           <a href="./index-skk-rkpk.html">Unified hub dashboard</a>
           <a href="./index-skk-rkpk.html#zAmkNotificationsPanel">AMK notifications panel</a>
           <a href="#amk-indicators-section">Readiness indicators</a>
+          <a href="#amk-universe-mc-section">Universe Mission Control</a>
           <a href="#amk-legal-workstation-section">Lawyer workstation</a>
           <a href="#amk-legal-toolbelt-section">Legal toolbelt dock</a>
           <a href="./z-legal-lawyer-workstation.html">Z-Lawyer Workstation UX-2</a>
@@ -133,6 +135,17 @@
           </p>
           <div id="amkProjectIndicatorsMount"></div>
           <div id="amkCloudflareGoNoGoMount"></div>
+        </div>
+      </details>
+
+      <details class="amk-map-section" open data-amk-section="universe_mc" data-amk-category="indicators" id="amk-universe-mc-section">
+        <summary>Universe Mission Control (MC-1 — read-only)</summary>
+        <div class="amk-map-section-body amk-indicators-panel-inner">
+          <p class="amk-map3-disclaimer" style="margin-top: 0">
+            Read-only situational awareness: registry, departments, dependencies, health matrix, and Track A critical path.
+            No execution buttons — links open docs and reports only. Serve the hub over HTTP so JSON loads.
+          </p>
+          <div id="amkUniverseMcMount"></div>
         </div>
       </details>
 
@@ -338,7 +351,8 @@
 
           <footer class="amk-map-foot" data-amk-category="docs_receipts">
             AMK-MAP-1 + AMK-MAP-2 + AMK-MAP-3 + Z-ROOT-7 + AMK-INDICATOR-1 + AAL-1 — read-only compass, living canvas, seven-guardian
-            coordination (symbolic), domain lenses, catalog, observatory, launch ceremony, unified readiness indicators, and Zuno Advisor
+            coordination (symbolic), domain lenses, catalog, observatory, launch ceremony, unified readiness indicators, Universe Mission Control (MC-1),
+            and Zuno Advisor
             ladder. No execution, deploy, bridge,
             provider, billing, auth, analytics, or user-feedback collection. No cron — rhythm rows are reminders only.
             Z-SSWS and shadow copies: observe and mirror only.
@@ -376,6 +390,7 @@
     </div>
     <script defer src="../scripts/amk-goku-main-control-readonly.js"></script>
     <script defer src="../scripts/amk-project-indicators-readonly.js"></script>
+    <script defer src="../scripts/amk-universe-mission-control-readonly.js"></script>
     <script defer src="../scripts/amk-zuno-advisor-readonly.js"></script>
     <script defer src="../scripts/z-root-guardian-coordination-readonly.js"></script>
     <script defer src="../scripts/z-omnai-core-readonly.js"></script>

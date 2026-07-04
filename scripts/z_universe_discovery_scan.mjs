@@ -16,24 +16,21 @@ const PC_JSON = path.join(ROOT, 'data', 'z_pc_root_projects.json');
 const DEPT_REG = path.join(ROOT, 'data', 'z_universe_department_registry.json');
 const ECOSYSTEM_REG = path.join(ROOT, 'data', 'z_ecosystem_awareness_registry.json');
 const INDICATORS = path.join(ROOT, 'dashboard', 'data', 'amk_project_indicators.json');
+const ID_MAP = path.join(ROOT, 'data', 'z_universe_id_map.json');
 const OUT_REG = path.join(ROOT, 'data', 'z_universe_project_registry.json');
 const OUT_JSON = path.join(ROOT, 'data', 'reports', 'z_universe_discovery_report.json');
 const OUT_MD = path.join(ROOT, 'data', 'reports', 'z_universe_discovery_report.md');
-const SCHEMA_REG = 'z_universe_project_registry_v1';
-const SCHEMA_REPORT = 'z_universe_discovery_report_v1';
+const SCHEMA_REG = 'z_universe_project_registry_v1_1';
+const SCHEMA_REPORT = 'z_universe_discovery_report_v1_1';
+
+/** Hub charter departments receive immutable IDs before disk projects (MC-0.5b). */
+const CHARTER_DEPT_IDS = new Set(['zilwa', 'z_connect', 'vile', 'z_nexus_engine']);
 
 const SKIP_TOP_LEVEL = new Set(['node_modules', '.cursor', '.git']);
 
-const CORE_IDS = new Set([
-  'zsanctuary-universe',
-  'z-sanctuary-universe-2-pc-root',
-  'z-labs',
-]);
+const CORE_IDS = new Set(['zsanctuary-universe', 'z-sanctuary-universe-2-pc-root', 'z-labs']);
 
-const ARCHIVE_IDS = new Set([
-  'zsanctuary-universe-stub-retired',
-  'z-pets-care-compassion',
-]);
+const ARCHIVE_IDS = new Set(['zsanctuary-universe-stub-retired', 'z-pets-care-compassion']);
 
 const RESEARCH_IDS = new Set([
   'z-sanctuary-external-paas',
@@ -41,11 +38,7 @@ const RESEARCH_IDS = new Set([
   'replit-roulette-z-amk-goku-mdcp',
 ]);
 
-const CORE_DISK_NAMES = new Set([
-  'Z_Sanctuary_Universe',
-  'Z_Sanctuary_Universe 2',
-  'Z_Labs',
-]);
+const CORE_DISK_NAMES = new Set(['Z_Sanctuary_Universe', 'Z_Sanctuary_Universe 2', 'Z_Labs']);
 
 function readJson(p) {
   try {
@@ -91,7 +84,7 @@ function gitProbe(abs) {
         encoding: 'utf8',
         timeout: 6000,
         stdio: ['ignore', 'pipe', 'ignore'],
-      }).trim(),
+      }).trim()
     );
     return { is_git: true, branch, head, dirty, status: 'ok' };
   } catch {
@@ -124,14 +117,18 @@ function docProbe(abs) {
   if (!abs || !fs.existsSync(abs)) {
     return { readme: false, docs_dir: false, docs_count: 0, coverage: 'missing' };
   }
-  const readme = ['README.md', 'readme.md', 'Readme.md'].some((f) => fs.existsSync(path.join(abs, f)));
+  const readme = ['README.md', 'readme.md', 'Readme.md'].some((f) =>
+    fs.existsSync(path.join(abs, f))
+  );
   const docsPath = path.join(abs, 'docs');
   let docs_count = 0;
   let docs_dir = false;
   if (fs.existsSync(docsPath) && fs.statSync(docsPath).isDirectory()) {
     docs_dir = true;
     try {
-      docs_count = fs.readdirSync(docsPath, { withFileTypes: true }).filter((d) => d.isFile() && d.name.endsWith('.md')).length;
+      docs_count = fs
+        .readdirSync(docsPath, { withFileTypes: true })
+        .filter((d) => d.isFile() && d.name.endsWith('.md')).length;
     } catch {
       docs_count = 0;
     }
@@ -144,7 +141,11 @@ function docProbe(abs) {
 }
 
 function classifyLane(meta) {
-  if (ARCHIVE_IDS.has(meta.id) || meta.role === 'retired_stub' || meta.migration_status === 'stub') {
+  if (
+    ARCHIVE_IDS.has(meta.id) ||
+    meta.role === 'retired_stub' ||
+    meta.migration_status === 'stub'
+  ) {
     return 'archive';
   }
   if (CORE_IDS.has(meta.id) || CORE_DISK_NAMES.has(meta.disk_name)) {
@@ -178,7 +179,12 @@ function statusSignals(meta) {
   const lane = meta.classification_lane;
   const docs = meta.documentation_status;
   return {
-    architecture: meta.registry_id === 'zsanctuary-universe' || (lane === 'core' && meta.path_ok) ? 'GREEN' : lane === 'archive' ? 'BLUE' : 'YELLOW',
+    architecture:
+      meta.registry_id === 'zsanctuary-universe' || (lane === 'core' && meta.path_ok)
+        ? 'GREEN'
+        : lane === 'archive'
+          ? 'BLUE'
+          : 'YELLOW',
     governance: meta.merge_hold !== false ? 'GREEN' : 'UNKNOWN',
     documentation: docs === 'strong' ? 'GREEN' : docs === 'partial' ? 'YELLOW' : 'RED',
     development: meta.repository_status?.is_git ? 'YELLOW' : 'UNKNOWN',
@@ -206,6 +212,198 @@ function pathKey(p) {
   return norm(p).replace(/\/+$/, '');
 }
 
+function loadIdMap() {
+  const raw = readJson(ID_MAP);
+  if (raw?.assignments && typeof raw.next_sequence === 'number') return raw;
+  return {
+    schema: 'z_universe_id_map_v1',
+    law_note: 'Immutable Universe IDs — never reassign, never reuse.',
+    next_sequence: 8,
+    assignments: {},
+  };
+}
+
+function saveIdMap(idMap) {
+  fs.mkdirSync(path.dirname(ID_MAP), { recursive: true });
+  fs.writeFileSync(ID_MAP, `${JSON.stringify(idMap, null, 2)}\n`, 'utf8');
+}
+
+function stableKey(meta) {
+  if (meta.registry_id) return meta.registry_id;
+  if (meta.suggested_registry_id) return meta.suggested_registry_id;
+  return `disk:${pathKey(meta.local_root_path)}`;
+}
+
+function assignUniverseId(key, displayName, idMap, nowIso) {
+  const existing = idMap.assignments[key];
+  if (existing?.universe_id) {
+    if (displayName && !existing.display_name) existing.display_name = displayName;
+    return existing.universe_id;
+  }
+  const seq = idMap.next_sequence;
+  const universe_id = `ZSU-${String(seq).padStart(4, '0')}`;
+  idMap.next_sequence = seq + 1;
+  idMap.assignments[key] = {
+    universe_id,
+    stable_key: key,
+    display_name: displayName || key,
+    first_discovered: nowIso.slice(0, 10),
+    assigned_at: nowIso,
+  };
+  return universe_id;
+}
+
+function lastActivityProbe(abs, git) {
+  if (!abs || !fs.existsSync(abs)) {
+    return { iso: null, source: 'none', confidence: 'unknown' };
+  }
+  let best = null;
+  let source = 'filesystem';
+  for (const f of ['package.json', 'README.md', 'AGENTS.md']) {
+    const fp = path.join(abs, f);
+    if (fs.existsSync(fp)) {
+      const m = fs.statSync(fp).mtime.toISOString();
+      if (!best || m > best) {
+        best = m;
+        source = f;
+      }
+    }
+  }
+  if (git?.is_git) {
+    try {
+      const log = execSync('git log -1 --format=%cI', {
+        cwd: abs,
+        encoding: 'utf8',
+        timeout: 6000,
+        stdio: ['ignore', 'pipe', 'ignore'],
+      }).trim();
+      if (log && (!best || log > best)) {
+        best = log;
+        source = 'git_last_commit';
+      }
+    } catch {
+      /* ignore */
+    }
+  }
+  return {
+    iso: best,
+    source,
+    confidence: best ? 'confirmed' : 'unknown',
+  };
+}
+
+function conf(level, source) {
+  return { level, source };
+}
+
+function buildConfidence(meta, activity) {
+  const nameSource = meta.in_pc_root_registry
+    ? 'z_pc_root_projects.json'
+    : meta.disk_only
+      ? 'disk_scan'
+      : 'unknown';
+  const pathLevel = meta.path_missing
+    ? 'unknown'
+    : meta.in_pc_root_registry
+      ? 'confirmed'
+      : 'inferred';
+  const stackLevel =
+    meta.technology_stack?.length && !meta.technology_stack.includes('unknown')
+      ? 'inferred'
+      : 'unknown';
+  const docLevel =
+    meta.documentation_status === 'strong'
+      ? 'confirmed'
+      : meta.documentation_status === 'partial'
+        ? 'inferred'
+        : 'unknown';
+  const gitLevel = meta.repository_status?.is_git
+    ? meta.repository_status.branch
+      ? 'confirmed'
+      : 'inferred'
+    : meta.path_missing
+      ? 'unknown'
+      : 'inferred';
+
+  return {
+    universe_id: conf('confirmed', 'z_universe_id_map.json'),
+    project_name: conf(meta.in_pc_root_registry ? 'confirmed' : 'inferred', nameSource),
+    local_root_path: conf(pathLevel, meta.in_pc_root_registry ? 'registry_path' : 'disk_listing'),
+    classification_lane: conf(
+      meta.classification_lane === 'unknown' ? 'unknown' : 'inferred',
+      'discovery_heuristics'
+    ),
+    documentation_status: conf(docLevel, 'doc_probe'),
+    technology_stack: conf(stackLevel, 'stack_probe'),
+    repository_status: conf(gitLevel, 'git_probe'),
+    last_activity: conf(activity.confidence, activity.source),
+    mission_control_status: conf('inferred', 'department_and_indicator_registry'),
+  };
+}
+
+function buildTimeline(meta, idMap, key, nowIso, activity) {
+  const assignment = idMap.assignments[key];
+  return {
+    first_discovered: assignment?.first_discovered || nowIso.slice(0, 10),
+    last_reviewed: nowIso.slice(0, 10),
+    last_activity: activity.iso ? activity.iso.slice(0, 10) : null,
+    lifecycle_stage: meta.current_phase || meta.classification_lane || 'unknown',
+  };
+}
+
+function enrichProject(meta, idMap, nowIso) {
+  const key = stableKey(meta);
+  meta.stable_key = key;
+  meta.universe_id = assignUniverseId(key, meta.project_name, idMap, nowIso);
+  const activity = lastActivityProbe(meta.absolute_path, meta.repository_status);
+  meta.timeline = buildTimeline(meta, idMap, key, nowIso, activity);
+  meta.confidence = buildConfidence(meta, activity);
+  meta.last_review = meta.timeline.last_reviewed;
+  meta.last_activity = meta.timeline.last_activity;
+  return meta;
+}
+
+function buildCharterProjects(deptReg, idMap, nowIso) {
+  const rows = [];
+  for (const d of deptReg?.departments || []) {
+    if (!CHARTER_DEPT_IDS.has(d.id)) continue;
+    const key = `charter:${d.id}`;
+    const universe_id = assignUniverseId(key, d.display_name, idMap, nowIso);
+    rows.push({
+      universe_id,
+      stable_key: key,
+      kind: 'charter_in_hub',
+      project_name: d.display_name,
+      registry_id: key,
+      department_id: d.id,
+      system_id: d.system_id,
+      local_root_path: '',
+      classification_lane: 'core',
+      mission_control_status: 'integrated',
+      current_phase: d.default_phase,
+      merge_hold: d.merge_hold !== false,
+      turtle_mode: true,
+      runtime_coupling: false,
+      recommended_next_action: d.recommended_next,
+      status_doc: d.status_doc,
+      handbook_doc: d.handbook_doc,
+      timeline: {
+        first_discovered: idMap.assignments[key]?.first_discovered || nowIso.slice(0, 10),
+        last_reviewed: nowIso.slice(0, 10),
+        last_activity: null,
+        lifecycle_stage: d.default_phase,
+      },
+      confidence: {
+        universe_id: conf('confirmed', 'z_universe_id_map.json'),
+        project_name: conf('confirmed', 'z_universe_department_registry.json'),
+        lifecycle_stage: conf('confirmed', 'department_default_phase'),
+        last_activity: conf('unknown', 'charter_in_hub_no_disk_root'),
+      },
+    });
+  }
+  return rows.sort((a, b) => a.universe_id.localeCompare(b.universe_id));
+}
+
 function findDuplicateCandidates(projects) {
   const byPath = new Map();
   const dups = [];
@@ -222,7 +420,9 @@ function findDuplicateCandidates(projects) {
       byPath.set(key, p);
     }
   }
-  const hubNested = projects.filter((p) => p.local_root_path?.includes('Z_Sanctuary_Universe/Z_Sanctuary_Universe 2'));
+  const hubNested = projects.filter((p) =>
+    p.local_root_path?.includes('Z_Sanctuary_Universe/Z_Sanctuary_Universe 2')
+  );
   if (hubNested.length) {
     dups.push({
       path: 'Z_Sanctuary_Universe/Z_Sanctuary_Universe 2 vs Z_Sanctuary_Universe 2',
@@ -237,13 +437,35 @@ function buildDependencyHints(projects) {
   const hub = projects.find((p) => p.registry_id === 'zsanctuary-universe');
   const hints = [];
   if (hub) {
-    hints.push({ from: 'zsanctuary-universe', to: 'all_members', type: 'governance_hub', note: 'Canonical control root' });
+    hints.push({
+      from: 'zsanctuary-universe',
+      to: 'all_members',
+      type: 'governance_hub',
+      note: 'Canonical control root',
+    });
   }
   const labs = projects.find((p) => p.registry_id === 'z-labs');
-  if (labs) hints.push({ from: 'z-labs', to: 'zsanctuary-universe', type: 'markdown_relay', note: 'Satellite control link' });
+  if (labs)
+    hints.push({
+      from: 'z-labs',
+      to: 'zsanctuary-universe',
+      type: 'markdown_relay',
+      note: 'Satellite control link',
+    });
   const vileNote = projects.find((p) => p.registry_id === 'zsanctuary-universe');
-  if (vileNote) hints.push({ from: 'vile_packages', to: 'zsanctuary-universe/packages', type: 'shared_packages', note: 'Hub monorepo packages' });
-  const zConnect = { from: 'z-connect_charter', to: 'zsanctuary-universe/docs/z-connect', type: 'hub_docs', note: 'No runtime coupling' };
+  if (vileNote)
+    hints.push({
+      from: 'vile_packages',
+      to: 'zsanctuary-universe/packages',
+      type: 'shared_packages',
+      note: 'Hub monorepo packages',
+    });
+  const zConnect = {
+    from: 'z-connect_charter',
+    to: 'zsanctuary-universe/docs/z-connect',
+    type: 'hub_docs',
+    note: 'No runtime coupling',
+  };
   hints.push(zConnect);
   return hints;
 }
@@ -286,10 +508,16 @@ function probeRegistryRow(row, pcRoot, deptIds, indicatorIds) {
     disk_name,
     documentation_status: doc.coverage,
     doc_probe: doc,
-    testing_status: stack.includes('node/javascript') ? 'package.json present — verify unknown' : 'unknown',
+    testing_status: stack.includes('node/javascript')
+      ? 'package.json present — verify unknown'
+      : 'unknown',
     commercial_status: row.notes?.includes('Commerce HOLD') ? 'HOLD' : 'unknown',
     security_status: row.role === 'hub' ? 'hub_governance' : 'unknown',
-    integration_status: deptIds.has(row.id) ? 'department_linked' : row.formula_aware ? 'eaii_registered' : 'registry_only',
+    integration_status: deptIds.has(row.id)
+      ? 'department_linked'
+      : row.formula_aware
+        ? 'eaii_registered'
+        : 'registry_only',
     related_departments: [],
     dependencies: row.role === 'hub' ? [] : ['zsanctuary-universe'],
     known_risks: path_missing ? ['path_missing_on_disk'] : [],
@@ -306,11 +534,13 @@ function probeRegistryRow(row, pcRoot, deptIds, indicatorIds) {
   meta.classification_lane = classifyLane(meta);
   meta.mission_control_status = missionControlStatus(meta, deptIds, meta.in_amk_indicators);
   meta.status_dimensions = statusSignals(meta);
-  meta.current_phase = meta.classification_lane === 'core' && row.role === 'hub' ? 'Foundation' : 'Turtle / observe';
+  meta.current_phase =
+    meta.classification_lane === 'core' && row.role === 'hub' ? 'Foundation' : 'Turtle / observe';
   meta.recommended_next_action = recommendedAction(meta);
   meta.last_review = new Date().toISOString().slice(0, 10);
   meta.owner = 'AMK-Goku';
-  meta.priority = meta.classification_lane === 'core' ? 'high' : meta.path_missing ? 'review' : 'normal';
+  meta.priority =
+    meta.classification_lane === 'core' ? 'high' : meta.path_missing ? 'review' : 'normal';
   meta.notes = row.notes || '';
 
   return meta;
@@ -326,7 +556,9 @@ function probeDiskOnly(name, pcRoot, registeredPaths) {
   const git = gitProbe(abs);
   const stack = detectStack(abs);
   const doc = docProbe(abs);
-  const slug = norm(name).replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');
+  const slug = norm(name)
+    .replace(/[^a-z0-9]+/g, '-')
+    .replace(/^-|-$/g, '');
 
   const meta = {
     registry_id: '',
@@ -362,7 +594,9 @@ function probeDiskOnly(name, pcRoot, registeredPaths) {
     suggested_registry_id: `discovered-${slug}`,
   };
 
-  meta.classification_lane = CORE_DISK_NAMES.has(name) ? 'core' : classifyLane({ ...meta, id: slug, path_missing: false });
+  meta.classification_lane = CORE_DISK_NAMES.has(name)
+    ? 'core'
+    : classifyLane({ ...meta, id: slug, path_missing: false });
   meta.mission_control_status = 'disk_unregistered';
   meta.status_dimensions = statusSignals(meta);
   meta.current_phase = 'Discovered — needs registration';
@@ -418,7 +652,9 @@ function main() {
     process.exit(1);
   }
 
-  const pcRoot = path.resolve(String(pcData.pc_root || path.join(ROOT, '..')).replace(/\//g, path.sep));
+  const pcRoot = path.resolve(
+    String(pcData.pc_root || path.join(ROOT, '..')).replace(/\//g, path.sep)
+  );
   const deptReg = readJson(DEPT_REG);
   const ecoReg = readJson(ECOSYSTEM_REG);
   const indicators = readJson(INDICATORS);
@@ -448,6 +684,15 @@ function main() {
     const extra = probeDiskOnly(name, pcRoot, registeredPaths);
     if (extra) projects.push(extra);
   }
+
+  const nowIso = new Date().toISOString();
+  const idMap = loadIdMap();
+  for (let i = 0; i < projects.length; i += 1) {
+    projects[i] = enrichProject(projects[i], idMap, nowIso);
+  }
+  saveIdMap(idMap);
+
+  const charter_projects = buildCharterProjects(deptReg, idMap, nowIso);
 
   const summary = summarize(projects);
   const duplicate_candidates = findDuplicateCandidates(projects);
@@ -479,8 +724,10 @@ function main() {
     duplicate_candidates,
     dependency_map,
     missing_from_mission_control,
-    projects,
-  };
+    id_map_path: 'data/z_universe_id_map.json',
+    charter_projects,
+    'rojects,'
+  };''
 
   const report = {
     schema: SCHEMA_REPORT,
@@ -494,15 +741,33 @@ function main() {
       integration: summary.integration,
     },
     already_integrated: projects.filter((p) => p.mission_control_status === 'integrated'),
-    registered_awaiting: projects.filter((p) => p.mission_control_status === 'registered_awaiting_integration'),
+    registered_awaiting: projects.filter(
+      (p) => p.mission_control_status === 'registered_awaiting_integration'
+    ),
     future_candidates: projects.filter((p) => p.classification_lane === 'growing'),
     archived_references: projects.filter((p) => p.classification_lane === 'archive'),
     documentation_gaps: projects.filter((p) => p.documentation_status === 'missing'),
     risks: [
-      { id: 'merge_hold', severity: 'BLUE', message: 'Merge Hold active — sacred moves require AMK gate' },
-      { id: 'duplicate_trees', severity: 'YELLOW', message: 'Z_Sanctuary_Universe 2 exists nested and at PC root' },
-      { id: 'path_missing', severity: 'YELLOW', message: `${projects.filter((p) => p.path_missing).length} registry paths missing on disk` },
-      { id: 'disk_unregistered', severity: 'YELLOW', message: `${projects.filter((p) => p.disk_only).length} disk folders not in registry` },
+      {
+        id: 'merge_hold',
+        severity: 'BLUE',
+        message: 'Merge Hold active — sacred moves require AMK gate',
+      },
+      {
+        id: 'duplicate_trees',
+        severity: 'YELLOW',
+        message: 'Z_Sanctuary_Universe 2 exists nested and at PC root',
+      },
+      {
+        id: 'path_missing',
+        severity: 'YELLOW',
+        message: `${projects.filter((p) => p.path_missing).length} registry paths missing on disk`,
+      },
+      {
+        id: 'disk_unregistered',
+        severity: 'YELLOW',
+        message: `${projects.filter((p) => p.disk_only).length} disk folders not in registry`,
+      },
     ],
     recommendations: [
       'Review disk_unregistered folders — register in z_pc_root_projects.json after AMK gate',
@@ -514,7 +779,7 @@ function main() {
     proposed_next_steps: [
       'AMK review z_universe_discovery_report.md',
       'Register Backups folder purpose or exclude explicitly',
-      'MC-1: dashboard overlay from registry JSON',
+      'MC-1: read-only dashboard overlay from registry JSON (active)',
     ],
     registry_path: 'data/z_universe_project_registry.json',
   };
@@ -559,7 +824,9 @@ function main() {
     '',
     '## Duplicate candidates',
     '',
-    ...duplicate_candidates.map((d) => `- **${d.reason}**: ${d.path} (${(d.project_ids || []).join(', ')})`),
+    ...duplicate_candidates.map(
+      (d) => `- **${d.reason}**: ${d.path} (${(d.project_ids || []).join(', ')})`
+    ),
     '',
     '## Missing from Mission Control (on disk)',
     '',
@@ -567,12 +834,16 @@ function main() {
     '',
     '## All projects',
     '',
-    '| Project | Lane | On disk | MC status | Docs | Next action |',
-    '| ------- | ---- | ------- | --------- | ---- | ----------- |',
+    '| Project | Universe ID | Lane | On disk | MC status | Docs | Next action |',
+    '| ------- | ----------- | ---- | ------- | --------- | ---- | ----------- |',
     ...projects.map(
       (p) =>
-        `| ${p.project_name} | ${p.classification_lane} | ${p.on_disk ? 'yes' : 'no'} | ${p.mission_control_status} | ${p.documentation_status} | ${p.recommended_next_action.slice(0, 60)}… |`,
+        `| ${p.project_name} | ${p.universe_id || '—'} | ${p.classification_lane} | ${p.on_disk ? 'yes' : 'no'} | ${p.mission_control_status} | ${p.documentation_status} | ${String(p.recommended_next_action).slice(0, 60)}… |`
     ),
+    '',
+    '## Hub charter projects (immutable IDs)',
+    '',
+    ...charter_projects.map((c) => `- **${c.universe_id}** ${c.project_name} — ${c.current_phase}`),
     '',
     '## Validation',
     '',
@@ -595,7 +866,7 @@ function main() {
       disk_unregistered: projects.filter((p) => p.disk_only).length,
       out_registry: OUT_REG,
       out_report: OUT_MD,
-    }),
+    })
   );
 }
 

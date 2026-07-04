@@ -1,6 +1,6 @@
 {
-  "schema": "z_universe_project_registry_v1",
-  "generated_at": "2026-07-04T12:38:03.725Z",
+  "schema": "z_universe_project_registry_v1_1",
+  "generated_at": "2026-07-04T12:45:30.928Z",
   "pc_root": "C:/Cursor Projects Organiser",
   "hub": "Z_Sanctuary_Universe",
   "law_note": "Read-only discovery registry. Observer/orchestrator — no runtime coupling. Changes to PC projects require human gate.",
@@ -203,6 +203,181 @@
       "recommended_next_action": "Register in z_pc_root_projects.json after AMK review"
     }
   ],
+  "id_map_path": "data/z_universe_id_map.json",
+  "charter_projects": [
+    {
+      "universe_id": "ZSU-0003",
+      "stable_key": "charter:zilwa",
+      "kind": "charter_in_hub",
+      "project_name": "ZILWA",
+      "registry_id": "charter:zilwa",
+      "department_id": "zilwa",
+      "system_id": "ZILWA-0",
+      "local_root_path": "",
+      "classification_lane": "core",
+      "mission_control_status": "integrated",
+      "current_phase": "Phase 0",
+      "merge_hold": true,
+      "turtle_mode": true,
+      "runtime_coupling": false,
+      "recommended_next_action": "Continue Phase 0 docs; follow hub lifecycle when chartered",
+      "status_doc": "docs/zilwa-living-experiences/ZILWA_PHASE_0_SCOPE.md",
+      "handbook_doc": "docs/zilwa-living-experiences/ZILWA_MASTER_BLUEPRINT.md",
+      "timeline": {
+        "first_discovered": "2026-07-04",
+        "last_reviewed": "2026-07-04",
+        "last_activity": null,
+        "lifecycle_stage": "Phase 0"
+      },
+      "confidence": {
+        "universe_id": {
+          "level": "confirmed",
+          "source": "z_universe_id_map.json"
+        },
+        "project_name": {
+          "level": "confirmed",
+          "source": "z_universe_department_registry.json"
+        },
+        "lifecycle_stage": {
+          "level": "confirmed",
+          "source": "department_default_phase"
+        },
+        "last_activity": {
+          "level": "unknown",
+          "source": "charter_in_hub_no_disk_root"
+        }
+      }
+    },
+    {
+      "universe_id": "ZSU-0004",
+      "stable_key": "charter:z_connect",
+      "kind": "charter_in_hub",
+      "project_name": "Z-Connect",
+      "registry_id": "charter:z_connect",
+      "department_id": "z_connect",
+      "system_id": "Z-CONNECT-1",
+      "local_root_path": "",
+      "classification_lane": "core",
+      "mission_control_status": "integrated",
+      "current_phase": "1.5 FROZEN",
+      "merge_hold": true,
+      "turtle_mode": true,
+      "runtime_coupling": false,
+      "recommended_next_action": "Track A — await VILE foundation; Phase 1.6 blocked",
+      "status_doc": "docs/z-connect/Z_CONNECT_PROGRAM_STATUS.md",
+      "handbook_doc": "docs/z-connect/REFERENCE_ARCHITECTURE/INDEX.md",
+      "timeline": {
+        "first_discovered": "2026-07-04",
+        "last_reviewed": "2026-07-04",
+        "last_activity": null,
+        "lifecycle_stage": "1.5 FROZEN"
+      },
+      "confidence": {
+        "universe_id": {
+          "level": "confirmed",
+          "source": "z_universe_id_map.json"
+        },
+        "project_name": {
+          "level": "confirmed",
+          "source": "z_universe_department_registry.json"
+        },
+        "lifecycle_stage": {
+          "level": "confirmed",
+          "source": "department_default_phase"
+        },
+        "last_activity": {
+          "level": "unknown",
+          "source": "charter_in_hub_no_disk_root"
+        }
+      }
+    },
+    {
+      "universe_id": "ZSU-0005",
+      "stable_key": "charter:vile",
+      "kind": "charter_in_hub",
+      "project_name": "VILE Foundation",
+      "registry_id": "charter:vile",
+      "department_id": "vile",
+      "system_id": "VILE-2A",
+      "local_root_path": "",
+      "classification_lane": "core",
+      "mission_control_status": "integrated",
+      "current_phase": "2A — merge pending",
+      "merge_hold": true,
+      "turtle_mode": true,
+      "runtime_coupling": false,
+      "recommended_next_action": "Track A: review/merge Pkgs 1–3 · implement zuno-drp · verify main",
+      "status_doc": "docs/vile/PHASE_2A_FOUNDATION_INTEGRATION_REPORT.md",
+      "handbook_doc": "docs/vile/PACKAGE_CATALOG.md",
+      "timeline": {
+        "first_discovered": "2026-07-04",
+        "last_reviewed": "2026-07-04",
+        "last_activity": null,
+        "lifecycle_stage": "2A — merge pending"
+      },
+      "confidence": {
+        "universe_id": {
+          "level": "confirmed",
+          "source": "z_universe_id_map.json"
+        },
+        "project_name": {
+          "level": "confirmed",
+          "source": "z_universe_department_registry.json"
+        },
+        "lifecycle_stage": {
+          "level": "confirmed",
+          "source": "department_default_phase"
+        },
+        "last_activity": {
+          "level": "unknown",
+          "source": "charter_in_hub_no_disk_root"
+        }
+      }
+    },
+    {
+      "universe_id": "ZSU-0006",
+      "stable_key": "charter:z_nexus_engine",
+      "kind": "charter_in_hub",
+      "project_name": "Z-Nexus Engine",
+      "registry_id": "charter:z_nexus_engine",
+      "department_id": "z_nexus_engine",
+      "system_id": "Z-NEXUS-ENGINE-0",
+      "local_root_path": "",
+      "classification_lane": "core",
+      "mission_control_status": "integrated",
+      "current_phase": "Phase 0",
+      "merge_hold": true,
+      "turtle_mode": true,
+      "runtime_coupling": false,
+      "recommended_next_action": "Mock dashboard spec only; Streamlit HOLD",
+      "status_doc": "docs/z-nexus-engine/PHASE_Z_NEXUS_ENGINE_0_GREEN_RECEIPT.md",
+      "handbook_doc": "docs/z-nexus-engine/Z_NEXUS_ENGINE_MOCK_DASHBOARD_SPEC.md",
+      "timeline": {
+        "first_discovered": "2026-07-04",
+        "last_reviewed": "2026-07-04",
+        "last_activity": null,
+        "lifecycle_stage": "Phase 0"
+      },
+      "confidence": {
+        "universe_id": {
+          "level": "confirmed",
+          "source": "z_universe_id_map.json"
+        },
+        "project_name": {
+          "level": "confirmed",
+          "source": "z_universe_department_registry.json"
+        },
+        "lifecycle_stage": {
+          "level": "confirmed",
+          "source": "department_default_phase"
+        },
+        "last_activity": {
+          "level": "unknown",
+          "source": "charter_in_hub_no_disk_root"
+        }
+      }
+    }
+  ],
   "projects": [
     {
       "registry_id": "zsanctuary-universe",
@@ -217,8 +392,8 @@
       ],
       "repository_status": {
         "is_git": true,
-        "branch": "cursor/zsanctuary/z-universe-discovery-mc-0-5",
-        "head": "883a44c",
+        "branch": "cursor/zsanctuary/z-universe-mc-1-readonly-overlay",
+        "head": "c052c53",
         "dirty": true,
         "status": "ok"
       },
@@ -269,7 +444,54 @@
       "last_review": "2026-07-04",
       "owner": "AMK-Goku",
       "priority": "high",
-      "notes": "Canonical governance and control root on disk (~381 MB). Open this folder in Cursor for hub verify and SSWS."
+      "notes": "Canonical governance and control root on disk (~381 MB). Open this folder in Cursor for hub verify and SSWS.",
+      "stable_key": "zsanctuary-universe",
+      "universe_id": "ZSU-0001",
+      "timeline": {
+        "first_discovered": "2026-07-04",
+        "last_reviewed": "2026-07-04",
+        "last_activity": "2026-07-04",
+        "lifecycle_stage": "Foundation"
+      },
+      "confidence": {
+        "universe_id": {
+          "level": "confirmed",
+          "source": "z_universe_id_map.json"
+        },
+        "project_name": {
+          "level": "confirmed",
+          "source": "z_pc_root_projects.json"
+        },
+        "local_root_path": {
+          "level": "confirmed",
+          "source": "registry_path"
+        },
+        "classification_lane": {
+          "level": "inferred",
+          "source": "discovery_heuristics"
+        },
+        "documentation_status": {
+          "level": "confirmed",
+          "source": "doc_probe"
+        },
+        "technology_stack": {
+          "level": "inferred",
+          "source": "stack_probe"
+        },
+        "repository_status": {
+          "level": "confirmed",
+          "source": "git_probe"
+        },
+        "last_activity": {
+          "level": "confirmed",
+          "source": "git_last_commit"
+        },
+        "mission_control_status": {
+          "level": "inferred",
+          "source": "department_and_indicator_registry"
+        }
+      },
+      "last_activity": "2026-07-04"
     },
     {
       "registry_id": "zsanctuary-universe-stub-retired",
@@ -334,7 +556,54 @@
       "last_review": "2026-07-04",
       "owner": "AMK-Goku",
       "priority": "normal",
-      "notes": "Empty placeholder folder (empty docs/ only). Do not use as hub. Active hub is Z_Sanctuary_Universe. Folder retained on disk — not deleted per ROOT_ALIGNMENT_PASS."
+      "notes": "Empty placeholder folder (empty docs/ only). Do not use as hub. Active hub is Z_Sanctuary_Universe. Folder retained on disk — not deleted per ROOT_ALIGNMENT_PASS.",
+      "stable_key": "zsanctuary-universe-stub-retired",
+      "universe_id": "ZSU-0029",
+      "timeline": {
+        "first_discovered": "2026-07-04",
+        "last_reviewed": "2026-07-04",
+        "last_activity": null,
+        "lifecycle_stage": "Turtle / observe"
+      },
+      "confidence": {
+        "universe_id": {
+          "level": "confirmed",
+          "source": "z_universe_id_map.json"
+        },
+        "project_name": {
+          "level": "confirmed",
+          "source": "z_pc_root_projects.json"
+        },
+        "local_root_path": {
+          "level": "confirmed",
+          "source": "registry_path"
+        },
+        "classification_lane": {
+          "level": "inferred",
+          "source": "discovery_heuristics"
+        },
+        "documentation_status": {
+          "level": "inferred",
+          "source": "doc_probe"
+        },
+        "technology_stack": {
+          "level": "unknown",
+          "source": "stack_probe"
+        },
+        "repository_status": {
+          "level": "inferred",
+          "source": "git_probe"
+        },
+        "last_activity": {
+          "level": "unknown",
+          "source": "filesystem"
+        },
+        "mission_control_status": {
+          "level": "inferred",
+          "source": "department_and_indicator_registry"
+        }
+      },
+      "last_activity": null
     },
     {
       "registry_id": "amk-goku-dashboards-2",
@@ -399,7 +668,54 @@
       "last_review": "2026-07-04",
       "owner": "AMK-Goku",
       "priority": "normal",
-      "notes": "No matching local folder under pc_root as of 2026-04-26; keep as link-only entry until local path is restored."
+      "notes": "No matching local folder under pc_root as of 2026-04-26; keep as link-only entry until local path is restored.",
+      "stable_key": "amk-goku-dashboards-2",
+      "universe_id": "ZSU-0008",
+      "timeline": {
+        "first_discovered": "2026-07-04",
+        "last_reviewed": "2026-07-04",
+        "last_activity": null,
+        "lifecycle_stage": "Turtle / observe"
+      },
+      "confidence": {
+        "universe_id": {
+          "level": "confirmed",
+          "source": "z_universe_id_map.json"
+        },
+        "project_name": {
+          "level": "confirmed",
+          "source": "z_pc_root_projects.json"
+        },
+        "local_root_path": {
+          "level": "confirmed",
+          "source": "registry_path"
+        },
+        "classification_lane": {
+          "level": "inferred",
+          "source": "discovery_heuristics"
+        },
+        "documentation_status": {
+          "level": "unknown",
+          "source": "doc_probe"
+        },
+        "technology_stack": {
+          "level": "unknown",
+          "source": "stack_probe"
+        },
+        "repository_status": {
+          "level": "inferred",
+          "source": "git_probe"
+        },
+        "last_activity": {
+          "level": "unknown",
+          "source": "none"
+        },
+        "mission_control_status": {
+          "level": "inferred",
+          "source": "department_and_indicator_registry"
+        }
+      },
+      "last_activity": null
     },
     {
       "registry_id": "amk-goku-vaults",
@@ -464,7 +780,54 @@
       "last_review": "2026-07-04",
       "owner": "AMK-Goku",
       "priority": "normal",
-      "notes": ""
+      "notes": "",
+      "stable_key": "amk-goku-vaults",
+      "universe_id": "ZSU-0009",
+      "timeline": {
+        "first_discovered": "2026-07-04",
+        "last_reviewed": "2026-07-04",
+        "last_activity": null,
+        "lifecycle_stage": "Turtle / observe"
+      },
+      "confidence": {
+        "universe_id": {
+          "level": "confirmed",
+          "source": "z_universe_id_map.json"
+        },
+        "project_name": {
+          "level": "confirmed",
+          "source": "z_pc_root_projects.json"
+        },
+        "local_root_path": {
+          "level": "confirmed",
+          "source": "registry_path"
+        },
+        "classification_lane": {
+          "level": "unknown",
+          "source": "discovery_heuristics"
+        },
+        "documentation_status": {
+          "level": "inferred",
+          "source": "doc_probe"
+        },
+        "technology_stack": {
+          "level": "unknown",
+          "source": "stack_probe"
+        },
+        "repository_status": {
+          "level": "inferred",
+          "source": "git_probe"
+        },
+        "last_activity": {
+          "level": "unknown",
+          "source": "filesystem"
+        },
+        "mission_control_status": {
+          "level": "inferred",
+          "source": "department_and_indicator_registry"
+        }
+      },
+      "last_activity": null
     },
     {
       "registry_id": "at-princess-blackie-copilot",
@@ -532,7 +895,54 @@
       "last_review": "2026-07-04",
       "owner": "AMK-Goku",
       "priority": "normal",
-      "notes": ""
+      "notes": "",
+      "stable_key": "at-princess-blackie-copilot",
+      "universe_id": "ZSU-0010",
+      "timeline": {
+        "first_discovered": "2026-07-04",
+        "last_reviewed": "2026-07-04",
+        "last_activity": "2026-06-24",
+        "lifecycle_stage": "Turtle / observe"
+      },
+      "confidence": {
+        "universe_id": {
+          "level": "confirmed",
+          "source": "z_universe_id_map.json"
+        },
+        "project_name": {
+          "level": "confirmed",
+          "source": "z_pc_root_projects.json"
+        },
+        "local_root_path": {
+          "level": "confirmed",
+          "source": "registry_path"
+        },
+        "classification_lane": {
+          "level": "inferred",
+          "source": "discovery_heuristics"
+        },
+        "documentation_status": {
+          "level": "confirmed",
+          "source": "doc_probe"
+        },
+        "technology_stack": {
+          "level": "inferred",
+          "source": "stack_probe"
+        },
+        "repository_status": {
+          "level": "inferred",
+          "source": "git_probe"
+        },
+        "last_activity": {
+          "level": "confirmed",
+          "source": "README.md"
+        },
+        "mission_control_status": {
+          "level": "inferred",
+          "source": "department_and_indicator_registry"
+        }
+      },
+      "last_activity": "2026-06-24"
     },
     {
       "registry_id": "at-princess-blackie-copitol",
@@ -600,7 +1010,54 @@
       "last_review": "2026-07-04",
       "owner": "AMK-Goku",
       "priority": "normal",
-      "notes": "Duplicate registry id — consolidate when human-gated. Same path as at-princess-blackie-copilot."
+      "notes": "Duplicate registry id — consolidate when human-gated. Same path as at-princess-blackie-copilot.",
+      "stable_key": "at-princess-blackie-copitol",
+      "universe_id": "ZSU-0011",
+      "timeline": {
+        "first_discovered": "2026-07-04",
+        "last_reviewed": "2026-07-04",
+        "last_activity": "2026-06-24",
+        "lifecycle_stage": "Turtle / observe"
+      },
+      "confidence": {
+        "universe_id": {
+          "level": "confirmed",
+          "source": "z_universe_id_map.json"
+        },
+        "project_name": {
+          "level": "confirmed",
+          "source": "z_pc_root_projects.json"
+        },
+        "local_root_path": {
+          "level": "confirmed",
+          "source": "registry_path"
+        },
+        "classification_lane": {
+          "level": "inferred",
+          "source": "discovery_heuristics"
+        },
+        "documentation_status": {
+          "level": "confirmed",
+          "source": "doc_probe"
+        },
+        "technology_stack": {
+          "level": "inferred",
+          "source": "stack_probe"
+        },
+        "repository_status": {
+          "level": "inferred",
+          "source": "git_probe"
+        },
+        "last_activity": {
+          "level": "confirmed",
+          "source": "README.md"
+        },
+        "mission_control_status": {
+          "level": "inferred",
+          "source": "department_and_indicator_registry"
+        }
+      },
+      "last_activity": "2026-06-24"
     },
     {
       "registry_id": "pc-root-extras-and-tools",
@@ -667,7 +1124,54 @@
       "last_review": "2026-07-04",
       "owner": "AMK-Goku",
       "priority": "normal",
-      "notes": "Canonical PC-root sink for installers, portable tools, large downloads, zips, and other non-repo artefacts. Keeps product repos (hub + members) clean. Not an app codebase — do not run SSWS here. Z-Folder Manager hub policy (allowed_roots) applies only inside Z_Sanctuary_Universe; use this folder for PC-root hygiene. See docs/Z-PC-ROOT-EXTRAS-AND-TOOLS-SINK.md."
+      "notes": "Canonical PC-root sink for installers, portable tools, large downloads, zips, and other non-repo artefacts. Keeps product repos (hub + members) clean. Not an app codebase — do not run SSWS here. Z-Folder Manager hub policy (allowed_roots) applies only inside Z_Sanctuary_Universe; use this folder for PC-root hygiene. See docs/Z-PC-ROOT-EXTRAS-AND-TOOLS-SINK.md.",
+      "stable_key": "pc-root-extras-and-tools",
+      "universe_id": "ZSU-0014",
+      "timeline": {
+        "first_discovered": "2026-07-04",
+        "last_reviewed": "2026-07-04",
+        "last_activity": "2026-04-15",
+        "lifecycle_stage": "Turtle / observe"
+      },
+      "confidence": {
+        "universe_id": {
+          "level": "confirmed",
+          "source": "z_universe_id_map.json"
+        },
+        "project_name": {
+          "level": "confirmed",
+          "source": "z_pc_root_projects.json"
+        },
+        "local_root_path": {
+          "level": "confirmed",
+          "source": "registry_path"
+        },
+        "classification_lane": {
+          "level": "inferred",
+          "source": "discovery_heuristics"
+        },
+        "documentation_status": {
+          "level": "inferred",
+          "source": "doc_probe"
+        },
+        "technology_stack": {
+          "level": "inferred",
+          "source": "stack_probe"
+        },
+        "repository_status": {
+          "level": "inferred",
+          "source": "git_probe"
+        },
+        "last_activity": {
+          "level": "confirmed",
+          "source": "package.json"
+        },
+        "mission_control_status": {
+          "level": "inferred",
+          "source": "department_and_indicator_registry"
+        }
+      },
+      "last_activity": "2026-04-15"
     },
     {
       "registry_id": "replit-roulette-z-amk-goku-mdcp",
@@ -732,7 +1236,54 @@
       "last_review": "2026-07-04",
       "owner": "AMK-Goku",
       "priority": "normal",
-      "notes": "Hosted on Replit; no pc_root folder. Link-only until migrated to hub-controlled deploy (e.g. Cloudflare). Replace dashboard_url with live .replit.dev preview if you prefer that entry point."
+      "notes": "Hosted on Replit; no pc_root folder. Link-only until migrated to hub-controlled deploy (e.g. Cloudflare). Replace dashboard_url with live .replit.dev preview if you prefer that entry point.",
+      "stable_key": "replit-roulette-z-amk-goku-mdcp",
+      "universe_id": "ZSU-0015",
+      "timeline": {
+        "first_discovered": "2026-07-04",
+        "last_reviewed": "2026-07-04",
+        "last_activity": null,
+        "lifecycle_stage": "Turtle / observe"
+      },
+      "confidence": {
+        "universe_id": {
+          "level": "confirmed",
+          "source": "z_universe_id_map.json"
+        },
+        "project_name": {
+          "level": "confirmed",
+          "source": "z_pc_root_projects.json"
+        },
+        "local_root_path": {
+          "level": "confirmed",
+          "source": "registry_path"
+        },
+        "classification_lane": {
+          "level": "inferred",
+          "source": "discovery_heuristics"
+        },
+        "documentation_status": {
+          "level": "unknown",
+          "source": "doc_probe"
+        },
+        "technology_stack": {
+          "level": "unknown",
+          "source": "stack_probe"
+        },
+        "repository_status": {
+          "level": "inferred",
+          "source": "git_probe"
+        },
+        "last_activity": {
+          "level": "unknown",
+          "source": "none"
+        },
+        "mission_control_status": {
+          "level": "inferred",
+          "source": "department_and_indicator_registry"
+        }
+      },
+      "last_activity": null
     },
     {
       "registry_id": "sister-aisling-sol",
@@ -799,7 +1350,54 @@
       "last_review": "2026-07-04",
       "owner": "AMK-Goku",
       "priority": "normal",
-      "notes": "ÉirMind lineage on disk — see docs/root-discovery-audit/EIRMIND_ALIGNMENT_DECISION.md"
+      "notes": "ÉirMind lineage on disk — see docs/root-discovery-audit/EIRMIND_ALIGNMENT_DECISION.md",
+      "stable_key": "sister-aisling-sol",
+      "universe_id": "ZSU-0016",
+      "timeline": {
+        "first_discovered": "2026-07-04",
+        "last_reviewed": "2026-07-04",
+        "last_activity": "2026-06-24",
+        "lifecycle_stage": "Turtle / observe"
+      },
+      "confidence": {
+        "universe_id": {
+          "level": "confirmed",
+          "source": "z_universe_id_map.json"
+        },
+        "project_name": {
+          "level": "confirmed",
+          "source": "z_pc_root_projects.json"
+        },
+        "local_root_path": {
+          "level": "confirmed",
+          "source": "registry_path"
+        },
+        "classification_lane": {
+          "level": "inferred",
+          "source": "discovery_heuristics"
+        },
+        "documentation_status": {
+          "level": "inferred",
+          "source": "doc_probe"
+        },
+        "technology_stack": {
+          "level": "inferred",
+          "source": "stack_probe"
+        },
+        "repository_status": {
+          "level": "inferred",
+          "source": "git_probe"
+        },
+        "last_activity": {
+          "level": "confirmed",
+          "source": "package.json"
+        },
+        "mission_control_status": {
+          "level": "inferred",
+          "source": "department_and_indicator_registry"
+        }
+      },
+      "last_activity": "2026-06-24"
     },
     {
       "registry_id": "z-sanctuary-universe-2-continuation",
@@ -812,8 +1410,8 @@
       ],
       "repository_status": {
         "is_git": true,
-        "branch": "cursor/zsanctuary/z-universe-discovery-mc-0-5",
-        "head": "883a44c",
+        "branch": "cursor/zsanctuary/z-universe-mc-1-readonly-overlay",
+        "head": "c052c53",
         "dirty": true,
         "status": "ok"
       },
@@ -866,7 +1464,54 @@
       "last_review": "2026-07-04",
       "owner": "AMK-Goku",
       "priority": "high",
-      "notes": "Nested under hub (~110 files). **PC-root sibling also exists** — see z-sanctuary-universe-2-pc-root. Hub SSWS stays on Z_Sanctuary_Universe only."
+      "notes": "Nested under hub (~110 files). **PC-root sibling also exists** — see z-sanctuary-universe-2-pc-root. Hub SSWS stays on Z_Sanctuary_Universe only.",
+      "stable_key": "z-sanctuary-universe-2-continuation",
+      "universe_id": "ZSU-0027",
+      "timeline": {
+        "first_discovered": "2026-07-04",
+        "last_reviewed": "2026-07-04",
+        "last_activity": "2026-07-04",
+        "lifecycle_stage": "Turtle / observe"
+      },
+      "confidence": {
+        "universe_id": {
+          "level": "confirmed",
+          "source": "z_universe_id_map.json"
+        },
+        "project_name": {
+          "level": "confirmed",
+          "source": "z_pc_root_projects.json"
+        },
+        "local_root_path": {
+          "level": "confirmed",
+          "source": "registry_path"
+        },
+        "classification_lane": {
+          "level": "inferred",
+          "source": "discovery_heuristics"
+        },
+        "documentation_status": {
+          "level": "inferred",
+          "source": "doc_probe"
+        },
+        "technology_stack": {
+          "level": "inferred",
+          "source": "stack_probe"
+        },
+        "repository_status": {
+          "level": "confirmed",
+          "source": "git_probe"
+        },
+        "last_activity": {
+          "level": "confirmed",
+          "source": "git_last_commit"
+        },
+        "mission_control_status": {
+          "level": "inferred",
+          "source": "department_and_indicator_registry"
+        }
+      },
+      "last_activity": "2026-07-04"
     },
     {
       "registry_id": "z-sanctuary-universe-2-pc-root",
@@ -933,7 +1578,54 @@
       "last_review": "2026-07-04",
       "owner": "AMK-Goku",
       "priority": "high",
-      "notes": "Larger continuation tree at PC root (~3176 files). Distinct from nested hub copy. AMK: clarify canonical continuation path before SSWS promotion."
+      "notes": "Larger continuation tree at PC root (~3176 files). Distinct from nested hub copy. AMK: clarify canonical continuation path before SSWS promotion.",
+      "stable_key": "z-sanctuary-universe-2-pc-root",
+      "universe_id": "ZSU-0007",
+      "timeline": {
+        "first_discovered": "2026-07-04",
+        "last_reviewed": "2026-07-04",
+        "last_activity": "2026-06-24",
+        "lifecycle_stage": "Turtle / observe"
+      },
+      "confidence": {
+        "universe_id": {
+          "level": "confirmed",
+          "source": "z_universe_id_map.json"
+        },
+        "project_name": {
+          "level": "confirmed",
+          "source": "z_pc_root_projects.json"
+        },
+        "local_root_path": {
+          "level": "confirmed",
+          "source": "registry_path"
+        },
+        "classification_lane": {
+          "level": "inferred",
+          "source": "discovery_heuristics"
+        },
+        "documentation_status": {
+          "level": "inferred",
+          "source": "doc_probe"
+        },
+        "technology_stack": {
+          "level": "inferred",
+          "source": "stack_probe"
+        },
+        "repository_status": {
+          "level": "inferred",
+          "source": "git_probe"
+        },
+        "last_activity": {
+          "level": "confirmed",
+          "source": "package.json"
+        },
+        "mission_control_status": {
+          "level": "inferred",
+          "source": "department_and_indicator_registry"
+        }
+      },
+      "last_activity": "2026-06-24"
     },
     {
       "registry_id": "z-omni-sanctuary",
@@ -1002,7 +1694,54 @@
       "last_review": "2026-07-04",
       "owner": "AMK-Goku",
       "priority": "normal",
-      "notes": ""
+      "notes": "",
+      "stable_key": "z-omni-sanctuary",
+      "universe_id": "ZSU-0017",
+      "timeline": {
+        "first_discovered": "2026-07-04",
+        "last_reviewed": "2026-07-04",
+        "last_activity": "2026-06-24",
+        "lifecycle_stage": "Turtle / observe"
+      },
+      "confidence": {
+        "universe_id": {
+          "level": "confirmed",
+          "source": "z_universe_id_map.json"
+        },
+        "project_name": {
+          "level": "confirmed",
+          "source": "z_pc_root_projects.json"
+        },
+        "local_root_path": {
+          "level": "confirmed",
+          "source": "registry_path"
+        },
+        "classification_lane": {
+          "level": "inferred",
+          "source": "discovery_heuristics"
+        },
+        "documentation_status": {
+          "level": "inferred",
+          "source": "doc_probe"
+        },
+        "technology_stack": {
+          "level": "inferred",
+          "source": "stack_probe"
+        },
+        "repository_status": {
+          "level": "inferred",
+          "source": "git_probe"
+        },
+        "last_activity": {
+          "level": "confirmed",
+          "source": "package.json"
+        },
+        "mission_control_status": {
+          "level": "inferred",
+          "source": "department_and_indicator_registry"
+        }
+      },
+      "last_activity": "2026-06-24"
     },
     {
       "registry_id": "z-sanctuary-ai-skyscraper",
@@ -1067,7 +1806,54 @@
       "last_review": "2026-07-04",
       "owner": "AMK-Goku",
       "priority": "normal",
-      "notes": ""
+      "notes": "",
+      "stable_key": "z-sanctuary-ai-skyscraper",
+      "universe_id": "ZSU-0019",
+      "timeline": {
+        "first_discovered": "2026-07-04",
+        "last_reviewed": "2026-07-04",
+        "last_activity": null,
+        "lifecycle_stage": "Turtle / observe"
+      },
+      "confidence": {
+        "universe_id": {
+          "level": "confirmed",
+          "source": "z_universe_id_map.json"
+        },
+        "project_name": {
+          "level": "confirmed",
+          "source": "z_pc_root_projects.json"
+        },
+        "local_root_path": {
+          "level": "confirmed",
+          "source": "registry_path"
+        },
+        "classification_lane": {
+          "level": "unknown",
+          "source": "discovery_heuristics"
+        },
+        "documentation_status": {
+          "level": "unknown",
+          "source": "doc_probe"
+        },
+        "technology_stack": {
+          "level": "unknown",
+          "source": "stack_probe"
+        },
+        "repository_status": {
+          "level": "inferred",
+          "source": "git_probe"
+        },
+        "last_activity": {
+          "level": "unknown",
+          "source": "filesystem"
+        },
+        "mission_control_status": {
+          "level": "inferred",
+          "source": "department_and_indicator_registry"
+        }
+      },
+      "last_activity": null
     },
     {
       "registry_id": "z-sanctuary-browser-z-saiyan-lumina",
@@ -1132,7 +1918,54 @@
       "last_review": "2026-07-04",
       "owner": "AMK-Goku",
       "priority": "normal",
-      "notes": "Folder `Z-Sanctuary Browser` absent on disk 2026-07-01. Restore from backup or archive registry row after AMK review."
+      "notes": "Folder `Z-Sanctuary Browser` absent on disk 2026-07-01. Restore from backup or archive registry row after AMK review.",
+      "stable_key": "z-sanctuary-browser-z-saiyan-lumina",
+      "universe_id": "ZSU-0021",
+      "timeline": {
+        "first_discovered": "2026-07-04",
+        "last_reviewed": "2026-07-04",
+        "last_activity": null,
+        "lifecycle_stage": "Turtle / observe"
+      },
+      "confidence": {
+        "universe_id": {
+          "level": "confirmed",
+          "source": "z_universe_id_map.json"
+        },
+        "project_name": {
+          "level": "confirmed",
+          "source": "z_pc_root_projects.json"
+        },
+        "local_root_path": {
+          "level": "confirmed",
+          "source": "registry_path"
+        },
+        "classification_lane": {
+          "level": "inferred",
+          "source": "discovery_heuristics"
+        },
+        "documentation_status": {
+          "level": "unknown",
+          "source": "doc_probe"
+        },
+        "technology_stack": {
+          "level": "unknown",
+          "source": "stack_probe"
+        },
+        "repository_status": {
+          "level": "inferred",
+          "source": "git_probe"
+        },
+        "last_activity": {
+          "level": "unknown",
+          "source": "none"
+        },
+        "mission_control_status": {
+          "level": "inferred",
+          "source": "department_and_indicator_registry"
+        }
+      },
+      "last_activity": null
     },
     {
       "registry_id": "z-sanctuary-claude-core",
@@ -1199,7 +2032,54 @@
       "last_review": "2026-07-04",
       "owner": "AMK-Goku",
       "priority": "normal",
-      "notes": ""
+      "notes": "",
+      "stable_key": "z-sanctuary-claude-core",
+      "universe_id": "ZSU-0022",
+      "timeline": {
+        "first_discovered": "2026-07-04",
+        "last_reviewed": "2026-07-04",
+        "last_activity": "2026-06-24",
+        "lifecycle_stage": "Turtle / observe"
+      },
+      "confidence": {
+        "universe_id": {
+          "level": "confirmed",
+          "source": "z_universe_id_map.json"
+        },
+        "project_name": {
+          "level": "confirmed",
+          "source": "z_pc_root_projects.json"
+        },
+        "local_root_path": {
+          "level": "confirmed",
+          "source": "registry_path"
+        },
+        "classification_lane": {
+          "level": "inferred",
+          "source": "discovery_heuristics"
+        },
+        "documentation_status": {
+          "level": "inferred",
+          "source": "doc_probe"
+        },
+        "technology_stack": {
+          "level": "inferred",
+          "source": "stack_probe"
+        },
+        "repository_status": {
+          "level": "inferred",
+          "source": "git_probe"
+        },
+        "last_activity": {
+          "level": "confirmed",
+          "source": "package.json"
+        },
+        "mission_control_status": {
+          "level": "inferred",
+          "source": "department_and_indicator_registry"
+        }
+      },
+      "last_activity": "2026-06-24"
     },
     {
       "registry_id": "z-sanctuary-replit",
@@ -1264,7 +2144,54 @@
       "last_review": "2026-07-04",
       "owner": "AMK-Goku",
       "priority": "normal",
-      "notes": "Roulette-Data-Analyzer: from artifacts/roulette-dashboard run `pnpm dev` — use Vite printed Local URL only; not Live Server or raw index.html path."
+      "notes": "Roulette-Data-Analyzer: from artifacts/roulette-dashboard run `pnpm dev` — use Vite printed Local URL only; not Live Server or raw index.html path.",
+      "stable_key": "z-sanctuary-replit",
+      "universe_id": "ZSU-0026",
+      "timeline": {
+        "first_discovered": "2026-07-04",
+        "last_reviewed": "2026-07-04",
+        "last_activity": null,
+        "lifecycle_stage": "Turtle / observe"
+      },
+      "confidence": {
+        "universe_id": {
+          "level": "confirmed",
+          "source": "z_universe_id_map.json"
+        },
+        "project_name": {
+          "level": "confirmed",
+          "source": "z_pc_root_projects.json"
+        },
+        "local_root_path": {
+          "level": "confirmed",
+          "source": "registry_path"
+        },
+        "classification_lane": {
+          "level": "unknown",
+          "source": "discovery_heuristics"
+        },
+        "documentation_status": {
+          "level": "inferred",
+          "source": "doc_probe"
+        },
+        "technology_stack": {
+          "level": "unknown",
+          "source": "stack_probe"
+        },
+        "repository_status": {
+          "level": "inferred",
+          "source": "git_probe"
+        },
+        "last_activity": {
+          "level": "unknown",
+          "source": "filesystem"
+        },
+        "mission_control_status": {
+          "level": "inferred",
+          "source": "department_and_indicator_registry"
+        }
+      },
+      "last_activity": null
     },
     {
       "registry_id": "z-sanctuary-aimanity",
@@ -1331,7 +2258,54 @@
       "last_review": "2026-07-04",
       "owner": "AMK-Goku",
       "priority": "normal",
-      "notes": ""
+      "notes": "",
+      "stable_key": "z-sanctuary-aimanity",
+      "universe_id": "ZSU-0020",
+      "timeline": {
+        "first_discovered": "2026-07-04",
+        "last_reviewed": "2026-07-04",
+        "last_activity": "2026-05-01",
+        "lifecycle_stage": "Turtle / observe"
+      },
+      "confidence": {
+        "universe_id": {
+          "level": "confirmed",
+          "source": "z_universe_id_map.json"
+        },
+        "project_name": {
+          "level": "confirmed",
+          "source": "z_pc_root_projects.json"
+        },
+        "local_root_path": {
+          "level": "confirmed",
+          "source": "registry_path"
+        },
+        "classification_lane": {
+          "level": "inferred",
+          "source": "discovery_heuristics"
+        },
+        "documentation_status": {
+          "level": "confirmed",
+          "source": "doc_probe"
+        },
+        "technology_stack": {
+          "level": "inferred",
+          "source": "stack_probe"
+        },
+        "repository_status": {
+          "level": "inferred",
+          "source": "git_probe"
+        },
+        "last_activity": {
+          "level": "confirmed",
+          "source": "package.json"
+        },
+        "mission_control_status": {
+          "level": "inferred",
+          "source": "department_and_indicator_registry"
+        }
+      },
+      "last_activity": "2026-05-01"
     },
     {
       "registry_id": "eirmind-ireland-projects-missing",
@@ -1396,7 +2370,54 @@
       "last_review": "2026-07-04",
       "owner": "AMK-Goku",
       "priority": "normal",
-      "notes": "Former path C:/Cursor Projects Organiser/Ireland Projects absent on disk 2026-06-11. Hold pending AMK — see EIRMIND_ALIGNMENT_DECISION.md. On-disk lineage: Z-Sister Aisling Sol."
+      "notes": "Former path C:/Cursor Projects Organiser/Ireland Projects absent on disk 2026-06-11. Hold pending AMK — see EIRMIND_ALIGNMENT_DECISION.md. On-disk lineage: Z-Sister Aisling Sol.",
+      "stable_key": "eirmind-ireland-projects-missing",
+      "universe_id": "ZSU-0013",
+      "timeline": {
+        "first_discovered": "2026-07-04",
+        "last_reviewed": "2026-07-04",
+        "last_activity": null,
+        "lifecycle_stage": "Turtle / observe"
+      },
+      "confidence": {
+        "universe_id": {
+          "level": "confirmed",
+          "source": "z_universe_id_map.json"
+        },
+        "project_name": {
+          "level": "confirmed",
+          "source": "z_pc_root_projects.json"
+        },
+        "local_root_path": {
+          "level": "confirmed",
+          "source": "registry_path"
+        },
+        "classification_lane": {
+          "level": "inferred",
+          "source": "discovery_heuristics"
+        },
+        "documentation_status": {
+          "level": "unknown",
+          "source": "doc_probe"
+        },
+        "technology_stack": {
+          "level": "unknown",
+          "source": "stack_probe"
+        },
+        "repository_status": {
+          "level": "inferred",
+          "source": "git_probe"
+        },
+        "last_activity": {
+          "level": "unknown",
+          "source": "none"
+        },
+        "mission_control_status": {
+          "level": "inferred",
+          "source": "department_and_indicator_registry"
+        }
+      },
+      "last_activity": null
     },
     {
       "registry_id": "z-labs",
@@ -1463,7 +2484,54 @@
       "last_review": "2026-07-04",
       "owner": "AMK-Goku",
       "priority": "high",
-      "notes": "Approved satellite — control-link manifest GREEN. Markdown relay golden copy lives here."
+      "notes": "Approved satellite — control-link manifest GREEN. Markdown relay golden copy lives here.",
+      "stable_key": "z-labs",
+      "universe_id": "ZSU-0002",
+      "timeline": {
+        "first_discovered": "2026-07-04",
+        "last_reviewed": "2026-07-04",
+        "last_activity": "2026-06-24",
+        "lifecycle_stage": "Turtle / observe"
+      },
+      "confidence": {
+        "universe_id": {
+          "level": "confirmed",
+          "source": "z_universe_id_map.json"
+        },
+        "project_name": {
+          "level": "confirmed",
+          "source": "z_pc_root_projects.json"
+        },
+        "local_root_path": {
+          "level": "confirmed",
+          "source": "registry_path"
+        },
+        "classification_lane": {
+          "level": "inferred",
+          "source": "discovery_heuristics"
+        },
+        "documentation_status": {
+          "level": "confirmed",
+          "source": "doc_probe"
+        },
+        "technology_stack": {
+          "level": "inferred",
+          "source": "stack_probe"
+        },
+        "repository_status": {
+          "level": "inferred",
+          "source": "git_probe"
+        },
+        "last_activity": {
+          "level": "confirmed",
+          "source": "package.json"
+        },
+        "mission_control_status": {
+          "level": "inferred",
+          "source": "department_and_indicator_registry"
+        }
+      },
+      "last_activity": "2026-06-24"
     },
     {
       "registry_id": "z-sanctuary-g",
@@ -1530,7 +2598,54 @@
       "last_review": "2026-07-04",
       "owner": "AMK-Goku",
       "priority": "normal",
-      "notes": "Registered ROOT_SYSTEM_STABILITY_PASS 2026-07-01. package.json present; no root README."
+      "notes": "Registered ROOT_SYSTEM_STABILITY_PASS 2026-07-01. package.json present; no root README.",
+      "stable_key": "z-sanctuary-g",
+      "universe_id": "ZSU-0024",
+      "timeline": {
+        "first_discovered": "2026-07-04",
+        "last_reviewed": "2026-07-04",
+        "last_activity": "2026-06-24",
+        "lifecycle_stage": "Turtle / observe"
+      },
+      "confidence": {
+        "universe_id": {
+          "level": "confirmed",
+          "source": "z_universe_id_map.json"
+        },
+        "project_name": {
+          "level": "confirmed",
+          "source": "z_pc_root_projects.json"
+        },
+        "local_root_path": {
+          "level": "confirmed",
+          "source": "registry_path"
+        },
+        "classification_lane": {
+          "level": "inferred",
+          "source": "discovery_heuristics"
+        },
+        "documentation_status": {
+          "level": "inferred",
+          "source": "doc_probe"
+        },
+        "technology_stack": {
+          "level": "inferred",
+          "source": "stack_probe"
+        },
+        "repository_status": {
+          "level": "inferred",
+          "source": "git_probe"
+        },
+        "last_activity": {
+          "level": "confirmed",
+          "source": "package.json"
+        },
+        "mission_control_status": {
+          "level": "inferred",
+          "source": "department_and_indicator_registry"
+        }
+      },
+      "last_activity": "2026-06-24"
     },
     {
       "registry_id": "z-sanctuary-gem",
@@ -1597,7 +2712,54 @@
       "last_review": "2026-07-04",
       "owner": "AMK-Goku",
       "priority": "normal",
-      "notes": "Registered ROOT_SYSTEM_STABILITY_PASS 2026-07-01. package.json + z_project_runtime.json."
+      "notes": "Registered ROOT_SYSTEM_STABILITY_PASS 2026-07-01. package.json + z_project_runtime.json.",
+      "stable_key": "z-sanctuary-gem",
+      "universe_id": "ZSU-0025",
+      "timeline": {
+        "first_discovered": "2026-07-04",
+        "last_reviewed": "2026-07-04",
+        "last_activity": "2026-06-24",
+        "lifecycle_stage": "Turtle / observe"
+      },
+      "confidence": {
+        "universe_id": {
+          "level": "confirmed",
+          "source": "z_universe_id_map.json"
+        },
+        "project_name": {
+          "level": "confirmed",
+          "source": "z_pc_root_projects.json"
+        },
+        "local_root_path": {
+          "level": "confirmed",
+          "source": "registry_path"
+        },
+        "classification_lane": {
+          "level": "inferred",
+          "source": "discovery_heuristics"
+        },
+        "documentation_status": {
+          "level": "inferred",
+          "source": "doc_probe"
+        },
+        "technology_stack": {
+          "level": "inferred",
+          "source": "stack_probe"
+        },
+        "repository_status": {
+          "level": "inferred",
+          "source": "git_probe"
+        },
+        "last_activity": {
+          "level": "confirmed",
+          "source": "package.json"
+        },
+        "mission_control_status": {
+          "level": "inferred",
+          "source": "department_and_indicator_registry"
+        }
+      },
+      "last_activity": "2026-06-24"
     },
     {
       "registry_id": "z-worksphere-marketplace-hub",
@@ -1664,7 +2826,54 @@
       "last_review": "2026-07-04",
       "owner": "AMK-Goku",
       "priority": "normal",
-      "notes": "Flutter marketplace prototype. Registered stability pass 2026-07-01. Commerce HOLD per operational posture."
+      "notes": "Flutter marketplace prototype. Registered stability pass 2026-07-01. Commerce HOLD per operational posture.",
+      "stable_key": "z-worksphere-marketplace-hub",
+      "universe_id": "ZSU-0028",
+      "timeline": {
+        "first_discovered": "2026-07-04",
+        "last_reviewed": "2026-07-04",
+        "last_activity": null,
+        "lifecycle_stage": "Turtle / observe"
+      },
+      "confidence": {
+        "universe_id": {
+          "level": "confirmed",
+          "source": "z_universe_id_map.json"
+        },
+        "project_name": {
+          "level": "confirmed",
+          "source": "z_pc_root_projects.json"
+        },
+        "local_root_path": {
+          "level": "confirmed",
+          "source": "registry_path"
+        },
+        "classification_lane": {
+          "level": "inferred",
+          "source": "discovery_heuristics"
+        },
+        "documentation_status": {
+          "level": "unknown",
+          "source": "doc_probe"
+        },
+        "technology_stack": {
+          "level": "inferred",
+          "source": "stack_probe"
+        },
+        "repository_status": {
+          "level": "inferred",
+          "source": "git_probe"
+        },
+        "last_activity": {
+          "level": "unknown",
+          "source": "filesystem"
+        },
+        "mission_control_status": {
+          "level": "inferred",
+          "source": "department_and_indicator_registry"
+        }
+      },
+      "last_activity": null
     },
     {
       "registry_id": "z-sanctuary-external-paas",
@@ -1729,7 +2938,54 @@
       "last_review": "2026-07-04",
       "owner": "AMK-Goku",
       "priority": "normal",
-      "notes": "Hosting experiments. Registered stability pass 2026-07-01. No deploy without charter."
+      "notes": "Hosting experiments. Registered stability pass 2026-07-01. No deploy without charter.",
+      "stable_key": "z-sanctuary-external-paas",
+      "universe_id": "ZSU-0023",
+      "timeline": {
+        "first_discovered": "2026-07-04",
+        "last_reviewed": "2026-07-04",
+        "last_activity": null,
+        "lifecycle_stage": "Turtle / observe"
+      },
+      "confidence": {
+        "universe_id": {
+          "level": "confirmed",
+          "source": "z_universe_id_map.json"
+        },
+        "project_name": {
+          "level": "confirmed",
+          "source": "z_pc_root_projects.json"
+        },
+        "local_root_path": {
+          "level": "confirmed",
+          "source": "registry_path"
+        },
+        "classification_lane": {
+          "level": "unknown",
+          "source": "discovery_heuristics"
+        },
+        "documentation_status": {
+          "level": "unknown",
+          "source": "doc_probe"
+        },
+        "technology_stack": {
+          "level": "unknown",
+          "source": "stack_probe"
+        },
+        "repository_status": {
+          "level": "inferred",
+          "source": "git_probe"
+        },
+        "last_activity": {
+          "level": "unknown",
+          "source": "filesystem"
+        },
+        "mission_control_status": {
+          "level": "inferred",
+          "source": "department_and_indicator_registry"
+        }
+      },
+      "last_activity": null
     },
     {
       "registry_id": "z-pets-care-compassion",
@@ -1794,7 +3050,54 @@
       "last_review": "2026-07-04",
       "owner": "AMK-Goku",
       "priority": "normal",
-      "notes": "Stub — single txt file as of 2026-07-01. Registered for visibility only."
+      "notes": "Stub — single txt file as of 2026-07-01. Registered for visibility only.",
+      "stable_key": "z-pets-care-compassion",
+      "universe_id": "ZSU-0018",
+      "timeline": {
+        "first_discovered": "2026-07-04",
+        "last_reviewed": "2026-07-04",
+        "last_activity": null,
+        "lifecycle_stage": "Turtle / observe"
+      },
+      "confidence": {
+        "universe_id": {
+          "level": "confirmed",
+          "source": "z_universe_id_map.json"
+        },
+        "project_name": {
+          "level": "confirmed",
+          "source": "z_pc_root_projects.json"
+        },
+        "local_root_path": {
+          "level": "confirmed",
+          "source": "registry_path"
+        },
+        "classification_lane": {
+          "level": "inferred",
+          "source": "discovery_heuristics"
+        },
+        "documentation_status": {
+          "level": "unknown",
+          "source": "doc_probe"
+        },
+        "technology_stack": {
+          "level": "unknown",
+          "source": "stack_probe"
+        },
+        "repository_status": {
+          "level": "inferred",
+          "source": "git_probe"
+        },
+        "last_activity": {
+          "level": "unknown",
+          "source": "filesystem"
+        },
+        "mission_control_status": {
+          "level": "inferred",
+          "source": "department_and_indicator_registry"
+        }
+      },
+      "last_activity": null
     },
     {
       "registry_id": "",
@@ -1859,7 +3162,54 @@
       "last_review": "2026-07-04",
       "owner": "AMK-Goku",
       "priority": "review",
-      "notes": "MC-0.5 disk discovery"
+      "notes": "MC-0.5 disk discovery",
+      "stable_key": "discovered-backups",
+      "universe_id": "ZSU-0012",
+      "timeline": {
+        "first_discovered": "2026-07-04",
+        "last_reviewed": "2026-07-04",
+        "last_activity": null,
+        "lifecycle_stage": "Discovered — needs registration"
+      },
+      "confidence": {
+        "universe_id": {
+          "level": "confirmed",
+          "source": "z_universe_id_map.json"
+        },
+        "project_name": {
+          "level": "inferred",
+          "source": "disk_scan"
+        },
+        "local_root_path": {
+          "level": "inferred",
+          "source": "disk_listing"
+        },
+        "classification_lane": {
+          "level": "unknown",
+          "source": "discovery_heuristics"
+        },
+        "documentation_status": {
+          "level": "unknown",
+          "source": "doc_probe"
+        },
+        "technology_stack": {
+          "level": "unknown",
+          "source": "stack_probe"
+        },
+        "repository_status": {
+          "level": "inferred",
+          "source": "git_probe"
+        },
+        "last_activity": {
+          "level": "unknown",
+          "source": "filesystem"
+        },
+        "mission_control_status": {
+          "level": "inferred",
+          "source": "department_and_indicator_registry"
+        }
+      },
+      "last_activity": null
     }
   ]
 }

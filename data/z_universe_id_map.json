@@ -1,0 +1,214 @@
+{
+  "schema": "z_universe_id_map_v1",
+  "law_note": "Immutable Universe IDs — never reassign, never reuse. stable_key persists even if folder renames.",
+  "next_sequence": 30,
+  "assignments": {
+    "zsanctuary-universe": {
+      "universe_id": "ZSU-0001",
+      "stable_key": "zsanctuary-universe",
+      "display_name": "Z_Sanctuary_Universe",
+      "first_discovered": "2026-07-04",
+      "assigned_at": "2026-07-04T12:00:00.000Z"
+    },
+    "z-labs": {
+      "universe_id": "ZSU-0002",
+      "stable_key": "z-labs",
+      "display_name": "Z_Labs",
+      "first_discovered": "2026-07-04",
+      "assigned_at": "2026-07-04T12:00:00.000Z"
+    },
+    "charter:zilwa": {
+      "universe_id": "ZSU-0003",
+      "stable_key": "charter:zilwa",
+      "display_name": "ZILWA",
+      "first_discovered": "2026-07-04",
+      "assigned_at": "2026-07-04T12:00:00.000Z",
+      "kind": "charter_in_hub"
+    },
+    "charter:z_connect": {
+      "universe_id": "ZSU-0004",
+      "stable_key": "charter:z_connect",
+      "display_name": "Z-Connect",
+      "first_discovered": "2026-07-04",
+      "assigned_at": "2026-07-04T12:00:00.000Z",
+      "kind": "charter_in_hub"
+    },
+    "charter:vile": {
+      "universe_id": "ZSU-0005",
+      "stable_key": "charter:vile",
+      "display_name": "VILE Foundation",
+      "first_discovered": "2026-07-04",
+      "assigned_at": "2026-07-04T12:00:00.000Z",
+      "kind": "charter_in_hub"
+    },
+    "charter:z_nexus_engine": {
+      "universe_id": "ZSU-0006",
+      "stable_key": "charter:z_nexus_engine",
+      "display_name": "Z-Nexus Engine",
+      "first_discovered": "2026-07-04",
+      "assigned_at": "2026-07-04T12:00:00.000Z",
+      "kind": "charter_in_hub"
+    },
+    "z-sanctuary-universe-2-pc-root": {
+      "universe_id": "ZSU-0007",
+      "stable_key": "z-sanctuary-universe-2-pc-root",
+      "display_name": "Z_Sanctuary_Universe 2 (PC root)",
+      "first_discovered": "2026-07-04",
+      "assigned_at": "2026-07-04T12:00:00.000Z"
+    },
+    "zsanctuary-universe-stub-retired": {
+      "universe_id": "ZSU-0029",
+      "stable_key": "zsanctuary-universe-stub-retired",
+      "display_name": "ZSanctuary_Universe (retired stub)",
+      "first_discovered": "2026-07-04",
+      "assigned_at": "2026-07-04T12:45:14.069Z"
+    },
+    "amk-goku-dashboards-2": {
+      "universe_id": "ZSU-0008",
+      "stable_key": "amk-goku-dashboards-2",
+      "display_name": "Amk-Goku Dashboards 2",
+      "first_discovered": "2026-07-04",
+      "assigned_at": "2026-07-04T12:45:14.069Z"
+    },
+    "amk-goku-vaults": {
+      "universe_id": "ZSU-0009",
+      "stable_key": "amk-goku-vaults",
+      "display_name": "Amk-Goku Vaults",
+      "first_discovered": "2026-07-04",
+      "assigned_at": "2026-07-04T12:45:14.069Z"
+    },
+    "at-princess-blackie-copilot": {
+      "universe_id": "ZSU-0010",
+      "stable_key": "at-princess-blackie-copilot",
+      "display_name": "AT Princess & Blackie Copilot",
+      "first_discovered": "2026-07-04",
+      "assigned_at": "2026-07-04T12:45:14.069Z"
+    },
+    "at-princess-blackie-copitol": {
+      "universe_id": "ZSU-0011",
+      "stable_key": "at-princess-blackie-copitol",
+      "display_name": "AT Princess & Blackie Copilot",
+      "first_discovered": "2026-07-04",
+      "assigned_at": "2026-07-04T12:45:14.069Z"
+    },
+    "pc-root-extras-and-tools": {
+      "universe_id": "ZSU-0014",
+      "stable_key": "pc-root-extras-and-tools",
+      "display_name": "Extras & Tools",
+      "first_discovered": "2026-07-04",
+      "assigned_at": "2026-07-04T12:45:14.069Z"
+    },
+    "replit-roulette-z-amk-goku-mdcp": {
+      "universe_id": "ZSU-0015",
+      "stable_key": "replit-roulette-z-amk-goku-mdcp",
+      "display_name": "Roulette Data Analyzer · Z-Amk-Goku MD/CP (Replit)",
+      "first_discovered": "2026-07-04",
+      "assigned_at": "2026-07-04T12:45:14.069Z"
+    },
+    "sister-aisling-sol": {
+      "universe_id": "ZSU-0016",
+      "stable_key": "sister-aisling-sol",
+      "display_name": "Sister Aisling Sol",
+      "first_discovered": "2026-07-04",
+      "assigned_at": "2026-07-04T12:45:14.069Z"
+    },
+    "z-sanctuary-universe-2-continuation": {
+      "universe_id": "ZSU-0027",
+      "stable_key": "z-sanctuary-universe-2-continuation",
+      "display_name": "Z_Sanctuary_Universe 2",
+      "first_discovered": "2026-07-04",
+      "assigned_at": "2026-07-04T12:45:14.069Z"
+    },
+    "z-omni-sanctuary": {
+      "universe_id": "ZSU-0017",
+      "stable_key": "z-omni-sanctuary",
+      "display_name": "Z-OMNI-Sanctuary",
+      "first_discovered": "2026-07-04",
+      "assigned_at": "2026-07-04T12:45:14.069Z"
+    },
+    "z-sanctuary-ai-skyscraper": {
+      "universe_id": "ZSU-0019",
+      "stable_key": "z-sanctuary-ai-skyscraper",
+      "display_name": "Z-SANCTUARY AI SKYSCRAPER",
+      "first_discovered": "2026-07-04",
+      "assigned_at": "2026-07-04T12:45:14.069Z"
+    },
+    "z-sanctuary-browser-z-saiyan-lumina": {
+      "universe_id": "ZSU-0021",
+      "stable_key": "z-sanctuary-browser-z-saiyan-lumina",
+      "display_name": "Z-Sanctuary Browser (Z-Saiyan Lumina)",
+      "first_discovered": "2026-07-04",
+      "assigned_at": "2026-07-04T12:45:14.069Z"
+    },
+    "z-sanctuary-claude-core": {
+      "universe_id": "ZSU-0022",
+      "stable_key": "z-sanctuary-claude-core",
+      "display_name": "Z-Sanctuary Claude (Core)",
+      "first_discovered": "2026-07-04",
+      "assigned_at": "2026-07-04T12:45:14.069Z"
+    },
+    "z-sanctuary-replit": {
+      "universe_id": "ZSU-0026",
+      "stable_key": "z-sanctuary-replit",
+      "display_name": "Z-Sanctuary Replit",
+      "first_discovered": "2026-07-04",
+      "assigned_at": "2026-07-04T12:45:14.069Z"
+    },
+    "z-sanctuary-aimanity": {
+      "universe_id": "ZSU-0020",
+      "stable_key": "z-sanctuary-aimanity",
+      "display_name": "z-sanctuary-aimanity",
+      "first_discovered": "2026-07-04",
+      "assigned_at": "2026-07-04T12:45:14.069Z"
+    },
+    "eirmind-ireland-projects-missing": {
+      "universe_id": "ZSU-0013",
+      "stable_key": "eirmind-ireland-projects-missing",
+      "display_name": "ÉirMind (Ireland Projects)",
+      "first_discovered": "2026-07-04",
+      "assigned_at": "2026-07-04T12:45:14.069Z"
+    },
+    "z-sanctuary-g": {
+      "universe_id": "ZSU-0024",
+      "stable_key": "z-sanctuary-g",
+      "display_name": "Z-Sanctuary G",
+      "first_discovered": "2026-07-04",
+      "assigned_at": "2026-07-04T12:45:14.069Z"
+    },
+    "z-sanctuary-gem": {
+      "universe_id": "ZSU-0025",
+      "stable_key": "z-sanctuary-gem",
+      "display_name": "Z-Sanctuary Gem",
+      "first_discovered": "2026-07-04",
+      "assigned_at": "2026-07-04T12:45:14.069Z"
+    },
+    "z-worksphere-marketplace-hub": {
+      "universe_id": "ZSU-0028",
+      "stable_key": "z-worksphere-marketplace-hub",
+      "display_name": "Z-WorkSphere Marketplace Hub",
+      "first_discovered": "2026-07-04",
+      "assigned_at": "2026-07-04T12:45:14.069Z"
+    },
+    "z-sanctuary-external-paas": {
+      "universe_id": "ZSU-0023",
+      "stable_key": "z-sanctuary-external-paas",
+      "display_name": "Z-sanctuary External PaaS",
+      "first_discovered": "2026-07-04",
+      "assigned_at": "2026-07-04T12:45:14.069Z"
+    },
+    "z-pets-care-compassion": {
+      "universe_id": "ZSU-0018",
+      "stable_key": "z-pets-care-compassion",
+      "display_name": "Z-Sancurary Pets Care Compassion",
+      "first_discovered": "2026-07-04",
+      "assigned_at": "2026-07-04T12:45:14.069Z"
+    },
+    "discovered-backups": {
+      "universe_id": "ZSU-0012",
+      "stable_key": "discovered-backups",
+      "display_name": "Backups",
+      "first_discovered": "2026-07-04",
+      "assigned_at": "2026-07-04T12:45:14.069Z"
+    }
+  }
+}

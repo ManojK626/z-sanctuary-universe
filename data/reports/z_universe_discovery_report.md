@@ -1,6 +1,6 @@
 # Z-Sanctuary Universe Discovery Report (MC-0.5)
 
-Generated: 2026-07-04T12:38:03.725Z
+Generated: 2026-07-04T12:45:30.928Z
 
 **Posture:** Read-only discovery · no project modifications · Merge Hold active
 
@@ -69,33 +69,40 @@ Generated: 2026-07-04T12:38:03.725Z
 
 ## All projects
 
-| Project | Lane | On disk | MC status | Docs | Next action |
-| ------- | ---- | ------- | --------- | ---- | ----------- |
-| Z_Sanctuary_Universe | core | yes | integrated | strong | Track A: VILE merge · protect Merge Hold… |
-| ZSanctuary_Universe (retired stub) | archive | yes | registered_awaiting_integration | partial | Visible in registry — awaiting Mission Control department ma… |
-| Amk-Goku Dashboards 2 | research | no | link_only_external | missing | Turtle Mode — observe; no runtime coupling without charter… |
-| Amk-Goku Vaults | unknown | yes | registered_awaiting_integration | partial | Add README/docs; classify lane after review… |
-| AT Princess & Blackie Copilot | growing | yes | registered_awaiting_integration | strong | Visible in registry — awaiting Mission Control department ma… |
-| AT Princess & Blackie Copilot | growing | yes | registered_awaiting_integration | strong | Visible in registry — awaiting Mission Control department ma… |
-| Extras & Tools | growing | yes | registered_awaiting_integration | partial | Visible in registry — awaiting Mission Control department ma… |
-| Roulette Data Analyzer · Z-Amk-Goku MD/CP (Replit) | research | no | link_only_external | missing | Turtle Mode — observe; no runtime coupling without charter… |
-| Sister Aisling Sol | growing | yes | registered_awaiting_integration | partial | Visible in registry — awaiting Mission Control department ma… |
-| Z_Sanctuary_Universe 2 | core | yes | registered_awaiting_integration | partial | Visible in registry — awaiting Mission Control department ma… |
-| Z_Sanctuary_Universe 2 (PC root) | core | yes | registered_awaiting_integration | partial | Visible in registry — awaiting Mission Control department ma… |
-| Z-OMNI-Sanctuary | growing | yes | registered_awaiting_integration | partial | Visible in registry — awaiting Mission Control department ma… |
-| Z-SANCTUARY AI SKYSCRAPER | unknown | yes | registered_awaiting_integration | missing | Add README/docs; classify lane after review… |
-| Z-Sanctuary Browser (Z-Saiyan Lumina) | research | no | link_only_external | missing | Turtle Mode — observe; no runtime coupling without charter… |
-| Z-Sanctuary Claude (Core) | growing | yes | registered_awaiting_integration | partial | Visible in registry — awaiting Mission Control department ma… |
-| Z-Sanctuary Replit | unknown | yes | registered_awaiting_integration | partial | Add README/docs; classify lane after review… |
-| z-sanctuary-aimanity | growing | yes | registered_awaiting_integration | strong | Visible in registry — awaiting Mission Control department ma… |
-| ÉirMind (Ireland Projects) | research | no | link_only_external | missing | Turtle Mode — observe; no runtime coupling without charter… |
-| Z_Labs | core | yes | registered_awaiting_integration | strong | Visible in registry — awaiting Mission Control department ma… |
-| Z-Sanctuary G | growing | yes | registered_awaiting_integration | partial | Visible in registry — awaiting Mission Control department ma… |
-| Z-Sanctuary Gem | growing | yes | registered_awaiting_integration | partial | Visible in registry — awaiting Mission Control department ma… |
-| Z-WorkSphere Marketplace Hub | growing | yes | registered_awaiting_integration | missing | Visible in registry — awaiting Mission Control department ma… |
-| Z-sanctuary External PaaS | unknown | yes | registered_awaiting_integration | missing | Add README/docs; classify lane after review… |
-| Z-Sancurary Pets Care Compassion | archive | yes | registered_awaiting_integration | missing | Visible in registry — awaiting Mission Control department ma… |
-| Backups | unknown | yes | disk_unregistered | missing | Register in z_pc_root_projects.json after AMK review… |
+| Project | Universe ID | Lane | On disk | MC status | Docs | Next action |
+| ------- | ----------- | ---- | ------- | --------- | ---- | ----------- |
+| Z_Sanctuary_Universe | ZSU-0001 | core | yes | integrated | strong | Track A: VILE merge · protect Merge Hold… |
+| ZSanctuary_Universe (retired stub) | ZSU-0029 | archive | yes | registered_awaiting_integration | partial | Visible in registry — awaiting Mission Control department ma… |
+| Amk-Goku Dashboards 2 | ZSU-0008 | research | no | link_only_external | missing | Turtle Mode — observe; no runtime coupling without charter… |
+| Amk-Goku Vaults | ZSU-0009 | unknown | yes | registered_awaiting_integration | partial | Add README/docs; classify lane after review… |
+| AT Princess & Blackie Copilot | ZSU-0010 | growing | yes | registered_awaiting_integration | strong | Visible in registry — awaiting Mission Control department ma… |
+| AT Princess & Blackie Copilot | ZSU-0011 | growing | yes | registered_awaiting_integration | strong | Visible in registry — awaiting Mission Control department ma… |
+| Extras & Tools | ZSU-0014 | growing | yes | registered_awaiting_integration | partial | Visible in registry — awaiting Mission Control department ma… |
+| Roulette Data Analyzer · Z-Amk-Goku MD/CP (Replit) | ZSU-0015 | research | no | link_only_external | missing | Turtle Mode — observe; no runtime coupling without charter… |
+| Sister Aisling Sol | ZSU-0016 | growing | yes | registered_awaiting_integration | partial | Visible in registry — awaiting Mission Control department ma… |
+| Z_Sanctuary_Universe 2 | ZSU-0027 | core | yes | registered_awaiting_integration | partial | Visible in registry — awaiting Mission Control department ma… |
+| Z_Sanctuary_Universe 2 (PC root) | ZSU-0007 | core | yes | registered_awaiting_integration | partial | Visible in registry — awaiting Mission Control department ma… |
+| Z-OMNI-Sanctuary | ZSU-0017 | growing | yes | registered_awaiting_integration | partial | Visible in registry — awaiting Mission Control department ma… |
+| Z-SANCTUARY AI SKYSCRAPER | ZSU-0019 | unknown | yes | registered_awaiting_integration | missing | Add README/docs; classify lane after review… |
+| Z-Sanctuary Browser (Z-Saiyan Lumina) | ZSU-0021 | research | no | link_only_external | missing | Turtle Mode — observe; no runtime coupling without charter… |
+| Z-Sanctuary Claude (Core) | ZSU-0022 | growing | yes | registered_awaiting_integration | partial | Visible in registry — awaiting Mission Control department ma… |
+| Z-Sanctuary Replit | ZSU-0026 | unknown | yes | registered_awaiting_integration | partial | Add README/docs; classify lane after review… |
+| z-sanctuary-aimanity | ZSU-0020 | growing | yes | registered_awaiting_integration | strong | Visible in registry — awaiting Mission Control department ma… |
+| ÉirMind (Ireland Projects) | ZSU-0013 | research | no | link_only_external | missing | Turtle Mode — observe; no runtime coupling without charter… |
+| Z_Labs | ZSU-0002 | core | yes | registered_awaiting_integration | strong | Visible in registry — awaiting Mission Control department ma… |
+| Z-Sanctuary G | ZSU-0024 | growing | yes | registered_awaiting_integration | partial | Visible in registry — awaiting Mission Control department ma… |
+| Z-Sanctuary Gem | ZSU-0025 | growing | yes | registered_awaiting_integration | partial | Visible in registry — awaiting Mission Control department ma… |
+| Z-WorkSphere Marketplace Hub | ZSU-0028 | growing | yes | registered_awaiting_integration | missing | Visible in registry — awaiting Mission Control department ma… |
+| Z-sanctuary External PaaS | ZSU-0023 | unknown | yes | registered_awaiting_integration | missing | Add README/docs; classify lane after review… |
+| Z-Sancurary Pets Care Compassion | ZSU-0018 | archive | yes | registered_awaiting_integration | missing | Visible in registry — awaiting Mission Control department ma… |
+| Backups | ZSU-0012 | unknown | yes | disk_unregistered | missing | Register in z_pc_root_projects.json after AMK review… |
+
+## Hub charter projects (immutable IDs)
+
+- **ZSU-0003** ZILWA — Phase 0
+- **ZSU-0004** Z-Connect — 1.5 FROZEN
+- **ZSU-0005** VILE Foundation — 2A — merge pending
+- **ZSU-0006** Z-Nexus Engine — Phase 0
 
 ## Validation
 
