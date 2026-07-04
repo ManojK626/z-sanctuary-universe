@@ -50,6 +50,20 @@ This rule appears in:
 
 ---
 
+## Permanent doctrines (Phase 1.5 complete — 2026-07-04)
+
+### State transition doctrine
+
+> A state transition changes the status of an experience — not the autonomy of the user. Users remain in control, and governance exists to protect rights, consent, and safety, not to make personal decisions on their behalf.
+
+### Z-Sanctuary reuse principle
+
+> The governance framework is reusable, but each application owns its own domain logic and experience states.
+
+Handbook: [REFERENCE_ARCHITECTURE/06_GOVERNANCE_REFERENCE.md](REFERENCE_ARCHITECTURE/06_GOVERNANCE_REFERENCE.md)
+
+---
+
 ## Connection Tree alignment
 
 Z-Connect inherits [Z-Connection Tree Philosophy](../Z-CONNECTION-TREE-PHILOSOPHY.md):
@@ -63,12 +77,14 @@ See [Z_CONNECT_MODULE_BRANCHES.md](Z_CONNECT_MODULE_BRANCHES.md).
 
 ## What remains open (not locked)
 
-- Exact API route catalogue (Phase 1.5 / 2B)  
-- Database technology choice (schema design only in Phase 1.5)  
+- Exact API route catalogue (Phase 1.6 — blocked)  
+- Database technology choice (Phase 1.6 — blocked)  
 - Premium subscription mechanics (sacred move — separate charter)  
-- Sprint 0 code start date — **blocked until** VILE Phase 2A Pkgs 1–3 on `main` + architecture review gate  
+- Sprint 0 code start date — **blocked until** VILE Phase 2A Pkgs 1–3 on `main` + governance gate  
 
-Next deliverables: [Z_CONNECT_PHASE_1_5_ROADMAP.md](Z_CONNECT_PHASE_1_5_ROADMAP.md)
+**Phase 1.5 architecture is frozen.** Reference handbook: [REFERENCE_ARCHITECTURE/INDEX.md](REFERENCE_ARCHITECTURE/INDEX.md)
+
+Next deliverables (blocked): [Z_CONNECT_PHASE_1_5_ROADMAP.md](Z_CONNECT_PHASE_1_5_ROADMAP.md)
 
 ---
 

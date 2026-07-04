@@ -82,6 +82,8 @@
 | Domain contracts | **Complete** — B1 |
 | Interaction contracts | **Complete** — B1.5 |
 | Experience state contracts | **Complete** — B1.6 |
+| Reference Architecture handbook | **Complete · FROZEN** |
+| Phase 1.5 architecture | **Complete** |
 | Commercial prep assets checklist | **Ready** |
 | API specs | Not started (Phase 1.6 — blocked) |
 | Legal drafts | Not started |

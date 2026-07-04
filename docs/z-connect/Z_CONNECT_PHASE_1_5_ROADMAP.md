@@ -53,6 +53,16 @@ Reports: [PHASE_1_5_B1_6_ARCHITECTURE_REPORT.md](experience-state-contracts/PHAS
 
 ---
 
+## Phase 1.5 capstone — Reference Architecture — **COMPLETE · FROZEN**
+
+**Status:** Done · 2026-07-04 · [REFERENCE_ARCHITECTURE/INDEX.md](REFERENCE_ARCHITECTURE/INDEX.md)
+
+Curated handbook tying all contract layers — **no new architecture**. Phase 1.5 architecture is **frozen**.
+
+Receipt: [PHASE_1_5_COMPLETE_GREEN_RECEIPT.md](REFERENCE_ARCHITECTURE/PHASE_1_5_COMPLETE_GREEN_RECEIPT.md)
+
+---
+
 ## Deliverable 2 — API specifications
 
 **Goal:** OpenAPI or equivalent **spec-only** docs for core services — no server implementation in Phase 1.5.
@@ -122,8 +132,8 @@ Sprint 0 scope (planned — subject to AMK trim):
 
 ```text
 Phase 1     ✅ Charter + locked decisions
-Phase 1.5   ✅ Domain (B1) → ✅ Interaction (B1.5) → ✅ Experience State (B1.6)
-Phase 1.6   → OpenAPI + logical schema + reference architecture (blocked — await B1.6 review)
+Phase 1.5   ✅ Domain → Interaction → ESC → Reference Architecture (FROZEN)
+Phase 1.6   → OpenAPI + logical schema (blocked — governance gate)
 Phase 1.5+  → Journey maps + commercial assets (parallel)
 Sprint 0    → First code (blocked until VILE 2A on main + AMK release)
 Phase 2B+   → Read-only API / mock UI
