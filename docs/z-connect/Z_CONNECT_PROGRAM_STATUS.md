@@ -2,7 +2,40 @@
 
 **Report date:** 2026-07-04  
 **Owner:** AMK-Goku  
-**Verdict source:** AMK program classification post–full status report
+**Verdict source:** AMK formal architecture resolution — Phase 1.5 complete
+
+---
+
+## Formal architecture resolution (AMK — 2026-07-04)
+
+> Z-Connect Phase 1.5: **COMPLETE · FROZEN · READY FOR ARCHITECTURE REVIEW**
+
+| Architecture layer | Status |
+| ------------------ | ------ |
+| Vision | Locked |
+| AI Constitution | Locked |
+| Scientific Integrity | Locked |
+| Architecture Decisions | Locked |
+| Domain Contracts | Locked |
+| Interaction Contracts | Locked |
+| Experience State Contracts | Locked |
+| Reference Architecture Handbook | Locked |
+
+**No further architectural layers** before implementation. Engineering priority shifts to **Track A** (VILE foundation).
+
+Handbook: [REFERENCE_ARCHITECTURE/INDEX.md](REFERENCE_ARCHITECTURE/INDEX.md) · Hub lifecycle: [Z_SANCTUARY_PROJECT_ARCHITECTURE_LIFECYCLE.md](../Z_SANCTUARY_PROJECT_ARCHITECTURE_LIFECYCLE.md)
+
+---
+
+## Current priority (post-freeze)
+
+| Track | Status | Focus |
+| ----- | ------ | ----- |
+| **A — Foundation** | **Highest priority** | Review/merge VILE Pkgs 1–3 · implement `zuno-drp` · verify `main` |
+| **B — Z-Connect prep** | Architecture **paused** | Commercial/legal drafts only — no new architecture layers |
+| **Z-Connect Phase 1.6** | **Blocked** | OpenAPI + logical DB — after Track A gate intentionally opens |
+
+Closing posture: **Freeze. Protect. Review. Build deliberately.**
 
 ---
 
@@ -29,8 +62,8 @@
               ┌───────────────────────┴───────────────────────┐
               │                                               │
               ▼                                               ▼
-   🛡️ STREAM A (~40%)                              🚀 STREAM B (~60%)
-   Foundation backbone                              Z-Connect commercial prep
+   🛡️ STREAM A (~40%) — **PRIORITY**              🚀 STREAM B (~60%) — architecture PAUSED
+   Foundation backbone                              Z-Connect prep (commercial only)
               │                                               │
    · Merge Hold (keep)                              · Domain contracts ✅
    · Review Pkgs 1–3                                · Interaction contracts ✅

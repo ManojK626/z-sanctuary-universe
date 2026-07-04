@@ -71,12 +71,14 @@ See [09_FUTURE_EXTENSIONS.md](09_FUTURE_EXTENSIONS.md)
 
 ## Source authority (do not fork)
 
-| Doc | Path |
-| --- | ---- |
-| Master charter | [Z_CONNECT_MASTER_BUILD_CHARTER.md](../Z_CONNECT_MASTER_BUILD_CHARTER.md) |
-| Locked decisions v1 | [Z_CONNECT_ARCHITECTURE_DECISIONS_V1.md](../Z_CONNECT_ARCHITECTURE_DECISIONS_V1.md) |
-| Program status | [Z_CONNECT_PROGRAM_STATUS.md](../Z_CONNECT_PROGRAM_STATUS.md) |
-| Phase 1.5 completion | [PHASE_1_5_COMPLETE_GREEN_RECEIPT.md](PHASE_1_5_COMPLETE_GREEN_RECEIPT.md) |
+| Role | Doc | Scope |
+| ---- | --- | ----- |
+| Hub lifecycle doctrine | [Z_SANCTUARY_PROJECT_ARCHITECTURE_LIFECYCLE.md](../../Z_SANCTUARY_PROJECT_ARCHITECTURE_LIFECYCLE.md) | ecosystem-wide |
+| Master charter | [Z_CONNECT_MASTER_BUILD_CHARTER.md](../Z_CONNECT_MASTER_BUILD_CHARTER.md) | Z-Connect |
+| Locked decisions v1 | [Z_CONNECT_ARCHITECTURE_DECISIONS_V1.md](../Z_CONNECT_ARCHITECTURE_DECISIONS_V1.md) | Z-Connect |
+| Program status | [Z_CONNECT_PROGRAM_STATUS.md](../Z_CONNECT_PROGRAM_STATUS.md) | Z-Connect |
+| Phase 1.5 completion | [PHASE_1_5_COMPLETE_GREEN_RECEIPT.md](PHASE_1_5_COMPLETE_GREEN_RECEIPT.md) | Z-Connect |
+| Future baseline ADR (HOLD) | [FUTURE_ADR_Z_CONNECT_V1_BASELINE.md](FUTURE_ADR_Z_CONNECT_V1_BASELINE.md) | when prototype exists |
 
 ## For AI contributors
 
@@ -87,4 +89,4 @@ See [09_FUTURE_EXTENSIONS.md](09_FUTURE_EXTENSIONS.md)
 
 ## Verdict
 
-Phase 1.5 architecture foundation — COMPLETE · FROZEN · Merge Hold
+Phase 1.5 architecture foundation — COMPLETE · FROZEN · READY FOR ARCHITECTURE REVIEW
