@@ -14,6 +14,7 @@ If a feature is not explicitly chartered and receipt-backed, it is OUT OF SCOPE.
 
 | Boundary | Rule |
 | -------- | ---- |
+| No insight as objective truth | All AI compatibility insights are probabilistic and preference-based — exploratory only |
 | No astrology-as-science matching | Zodiac/astrology never drive compatibility algorithms as validated predictors |
 | No numerology-as-science | Same as astrology — entertainment lane only |
 | No brain-capability ranking | No IQ-style, “cognitive tier”, or neuromythology scores presented as objective truth |

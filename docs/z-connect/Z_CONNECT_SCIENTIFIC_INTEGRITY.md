@@ -14,7 +14,15 @@ Self-reported preferences and evidence-informed frameworks = OK (with clear labe
 Astrology / numerology as scientific predictors = NOT OK
 Brain capability tiers as objective measures = NOT OK
 Guaranteed compatibility = NOT OK
+Single percentage compatibility score = NOT OK
+AI insight presented as objective truth = NOT OK
 ```
+
+## Immutable rule
+
+> **No AI-generated compatibility insight shall be presented as objective truth.** All insights are probabilistic, preference-based, and intended to help users explore connections — not to make decisions for them.
+
+See [Z_CONNECT_CONNECTION_CONFIDENCE.md](Z_CONNECT_CONNECTION_CONFIDENCE.md).
 
 ---
 

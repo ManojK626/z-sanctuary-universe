@@ -4,7 +4,14 @@
 **Version:** 1.0  
 **Status:** Architecture-first · docs only  
 **Owner:** AMK-Goku  
-**Posture:** Merge Hold until human review
+**Posture:** Merge Hold until human review  
+**Locked decisions:** [Z_CONNECT_ARCHITECTURE_DECISIONS_V1.md](Z_CONNECT_ARCHITECTURE_DECISIONS_V1.md)
+
+---
+
+## Immutable governance rule
+
+> **No AI-generated compatibility insight shall be presented as objective truth.** All insights are probabilistic, preference-based, and intended to help users explore connections — not to make decisions for them.
 
 ---
 
@@ -66,6 +73,28 @@ Z-Connect **may**:
 - Show **multi-dimensional insights** with uncertainty language (“may”, “could”, “you might enjoy exploring”)  
 
 Full detail: [Z_CONNECT_SCIENTIFIC_INTEGRITY.md](Z_CONNECT_SCIENTIFIC_INTEGRITY.md)
+
+---
+
+## Connection Confidence (signature — no percentage scores)
+
+Instead of *“92% compatible”*, surface **explainable confidence per dimension** (high / medium / limited / still learning) tied to user-provided data.
+
+Insights are **conversation starters**, not facts. See [Z_CONNECT_CONNECTION_CONFIDENCE.md](Z_CONNECT_CONNECTION_CONFIDENCE.md).
+
+---
+
+## Progressive Discovery
+
+Understanding deepens over time with consent — Day 1 profile → Week 1 preferences → Month 1 approved refinements → ongoing user corrections.
+
+See [Z_CONNECT_PROGRESSIVE_DISCOVERY.md](Z_CONNECT_PROGRESSIVE_DISCOVERY.md).
+
+---
+
+## Module branches (Connection Tree)
+
+Major capabilities are separate **branches**, not one monolithic app. See [Z_CONNECT_MODULE_BRANCHES.md](Z_CONNECT_MODULE_BRANCHES.md).
 
 ---
 
