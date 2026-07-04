@@ -66,6 +66,8 @@ Output: `data/reports/z_universe_status_report.{json,md}`
 
 Engine doc: [Z_UNIVERSE_STATUS_ENGINE.md](Z_UNIVERSE_STATUS_ENGINE.md)
 
+Discovery (MC-0.5): [Z_UNIVERSE_DISCOVERY_ARCHITECTURE.md](Z_UNIVERSE_DISCOVERY_ARCHITECTURE.md) · `npm run z:universe:discovery`
+
 **Does not:** deploy, merge, build, publish, mutate sibling repos, or bypass gates.
 
 ---
@@ -155,8 +157,9 @@ Buttons **initiate approved workflows** — they do **not** override governance.
 
 | Phase | Deliverable | Status |
 | ----- | ----------- | ------ |
-| MC-0 | Architecture + universe status report script | **This phase** |
-| MC-1 | Dashboard panel consuming `z_universe_status_report.json` | Future — after AMK review |
+| MC-0 | Architecture + universe status report script | **Done** |
+| MC-0.5 | Universe discovery + global project registry | **Done** |
+| MC-1 | Dashboard panel consuming reports | Future — after AMK review |
 | MC-2 | Per-department AI review attachments | Future |
 | MC-3 | Gated action initiators (workflow links only) | Future — sacred gate each |
 

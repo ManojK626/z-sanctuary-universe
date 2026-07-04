@@ -94,6 +94,10 @@ The JSON block `cloudflare_go_no_go` stays on **HOLD** until a separate human-ap
 
 **Z-UNIVERSE-STATUS-1** — `npm run z:universe:status` writes `data/reports/z_universe_status_report.{json,md}`: department cards, eight universe health dimensions (no single score), Track A priorities, blockers, and gated action matrix. **Observer/orchestrator posture** — feeds the AMK-Goku Indicator Dashboard; does **not** execute merge, deploy, or build. Pipeline: Dashboard → Universe Status Engine → Readiness → DRP → Human Approval → Approved Action. See [dashboard/Z_UNIVERSE_MISSION_CONTROL_ARCHITECTURE.md](./dashboard/Z_UNIVERSE_MISSION_CONTROL_ARCHITECTURE.md).
 
+## Z-UNIVERSE-DISCOVERY-1 (MC-0.5 global registry)
+
+**Z-UNIVERSE-DISCOVERY-1** — `npm run z:universe:discovery` (refresh: `npm run z:universe:registry:refresh`) scans configured `pc_root` read-only and writes `data/z_universe_project_registry.json` + `data/reports/z_universe_discovery_report.{json,md}`. Every project classified (core/growing/research/archive/unknown), Mission Control visibility, duplicate detection — **no project modifications**. See [dashboard/Z_UNIVERSE_DISCOVERY_ARCHITECTURE.md](./dashboard/Z_UNIVERSE_DISCOVERY_ARCHITECTURE.md) · [Z_UNIVERSE_PROJECT_REGISTRY.md](./dashboard/Z_UNIVERSE_PROJECT_REGISTRY.md).
+
 ## Z-API-SPINE-1 (API power cell)
 
 **Z-API-SPINE-1** validates `data/z_api_spine_registry.json` and `data/z_api_communication_flow_policy.json`, then writes `data/reports/z_api_spine_report.json`. The indicator row `z_api_spine_power_cell` overlays **overall_signal** when that report is reachable over HTTP. Same notification law as Z-AWARE-1: default **RED/BLUE** candidates only. This slice is **not** an API gateway and not a service mesh. See [Z_API_SPINE_POWER_CELL.md](./Z_API_SPINE_POWER_CELL.md) and [Z_API_COMMUNICATION_FLOW_POLICY.md](./Z_API_COMMUNICATION_FLOW_POLICY.md).

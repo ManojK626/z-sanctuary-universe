@@ -1,6 +1,6 @@
 # Z-Sanctuary Universe Status Report
 
-Generated: 2026-07-04T12:05:11.994Z
+Generated: 2026-07-04T12:38:04.216Z
 
 **Posture:** Observer / orchestrator — **not** autonomous controller.
 
@@ -35,8 +35,8 @@ Approved Action
 
 ## Hub git snapshot
 
-- Branch: `cursor/zsanctuary/z-universe-mission-control-0`
-- HEAD: `a8186d6`
+- Branch: `cursor/zsanctuary/z-universe-discovery-mc-0-5`
+- HEAD: `883a44c`
 - Dirty working tree: true
 
 ## Track A priorities
@@ -63,7 +63,7 @@ Approved Action
 | Field | Value |
 | ----- | ----- |
 | Phase | 1.5 FROZEN |
-| Branch | cursor/zsanctuary/z-universe-mission-control-0 |
+| Branch | cursor/zsanctuary/z-universe-discovery-mc-0-5 |
 | Architecture | FROZEN |
 | Governance | LOCKED · Merge Hold active |
 | Implementation | NOT AUTHORIZED |
@@ -111,7 +111,7 @@ Approved Action
 | Field | Value |
 | ----- | ----- |
 | Phase | Foundation organism |
-| Branch | cursor/zsanctuary/z-universe-mission-control-0 |
+| Branch | cursor/zsanctuary/z-universe-discovery-mc-0-5 |
 | Architecture | HOLD / docs |
 | Governance | LOCKED · Merge Hold active |
 | Implementation | NOT AUTHORIZED |
@@ -123,7 +123,7 @@ Approved Action
 | Field | Value |
 | ----- | ----- |
 | Phase | 2A — merge pending |
-| Branch | cursor/zsanctuary/z-universe-mission-control-0 |
+| Branch | cursor/zsanctuary/z-universe-discovery-mc-0-5 |
 | Architecture | HOLD / docs |
 | Governance | LOCKED · Merge Hold active |
 | Implementation | NOT AUTHORIZED |

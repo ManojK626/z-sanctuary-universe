@@ -22,6 +22,8 @@ const CROSS = path.join(ROOT, 'data', 'reports', 'z_cross_project_observer.json'
 const DEPLOY = path.join(ROOT, 'data', 'reports', 'z_deployment_readiness_status.json');
 const CYCLE = path.join(ROOT, 'data', 'reports', 'z_cycle_observe_status.json');
 const RESOLUTION = path.join(ROOT, 'docs', 'Z_SANCTUARY_UNIVERSE_RESOLUTION_2026_07_04.md');
+const UNIVERSE_REG = path.join(ROOT, 'data', 'z_universe_project_registry.json');
+const DISCOVERY = path.join(ROOT, 'data', 'reports', 'z_universe_discovery_report.json');
 
 function readJsonSafe(p) {
   try {
@@ -169,6 +171,8 @@ function main() {
   const cross = readJsonSafe(CROSS);
   const deploy = readJsonSafe(DEPLOY);
   const cycle = readJsonSafe(CYCLE);
+  const universeReg = readJsonSafe(UNIVERSE_REG);
+  const discovery = readJsonSafe(DISCOVERY);
 
   const departmentReports = deptReg.departments.map((d) => buildDepartmentReport(d, hubGit));
 
@@ -225,7 +229,18 @@ function main() {
     priorities: buildPriorities(),
     blockers,
     governance_gates: ['Merge Hold', 'DRP', 'Shadow', 'AMK sacred moves', '14 DRP'],
+    project_registry_summary: universeReg?.summary || discovery?.executive_summary || null,
+    universe_health_expansion: universeReg?.summary
+      ? {
+          total_registered_projects: universeReg.summary.total_registered_projects,
+          classification: universeReg.summary.classification,
+          integration: universeReg.summary.integration,
+          documentation_coverage: universeReg.summary.documentation_coverage,
+          governance_coverage: universeReg.summary.governance_coverage,
+        }
+      : null,
     recommended_operator_sequence: [
+      'Run npm run z:universe:discovery',
       'Run npm run z:universe:status',
       'Review data/reports/z_universe_status_report.md',
       'Execute Track A priorities when intentionally approved',
