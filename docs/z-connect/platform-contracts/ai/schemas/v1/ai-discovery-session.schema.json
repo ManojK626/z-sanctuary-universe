@@ -1,0 +1,48 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://z-sanctuary.local/z-connect/schemas/v1/ai-discovery-session.json",
+  "title": "ZConnectAiDiscoverySession",
+  "description": "Consent-paced AI Discovery Journey session.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schemaVersion",
+    "sessionId",
+    "userId",
+    "status",
+    "startedAtIso",
+    "consentRecordId"
+  ],
+  "properties": {
+    "schemaVersion": {
+      "$ref": "../../common/schemas/v1/_definitions.schema.json#/$defs/SchemaVersion"
+    },
+    "sessionId": {
+      "$ref": "../../common/schemas/v1/_definitions.schema.json#/$defs/Identifier"
+    },
+    "userId": {
+      "$ref": "../../common/schemas/v1/_definitions.schema.json#/$defs/UserId"
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "active",
+        "paused",
+        "completed",
+        "cancelled"
+      ]
+    },
+    "startedAtIso": {
+      "$ref": "../../common/schemas/v1/_definitions.schema.json#/$defs/TimestampIso"
+    },
+    "completedAtIso": {
+      "$ref": "../../common/schemas/v1/_definitions.schema.json#/$defs/TimestampIso"
+    },
+    "consentRecordId": {
+      "$ref": "../../common/schemas/v1/_definitions.schema.json#/$defs/Identifier"
+    },
+    "correlationId": {
+      "$ref": "../../common/schemas/v1/_definitions.schema.json#/$defs/CorrelationId"
+    }
+  }
+}

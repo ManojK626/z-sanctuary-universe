@@ -17,22 +17,17 @@
 
 ---
 
-## Deliverable 1 — Domain contracts
+## Deliverable 1 — Domain contracts — **COMPLETE (B1)**
 
-**Goal:** JSON Schema v1 shared language (mirror VILE `platform-contracts` pattern).
+**Status:** Done · 2026-07-04 · [platform-contracts/README.md](platform-contracts/README.md)
 
-| Contract | Purpose |
-| -------- | ------- |
-| `user-profile.schema.json` | Versioned, user-approved profile fields |
-| `consent-record.schema.json` | Purpose, scope, timestamp, withdrawal |
-| `compatibility-insight.schema.json` | Connection Confidence shape — **no percent score** |
-| `discovery-session.schema.json` | AI Discovery Journey metadata |
-| `profile-update-proposal.schema.json` | Progressive Discovery diff awaiting approval |
-| `messaging-envelope.schema.json` | Future messaging — consent + moderation hooks |
-| `subscription-intent.schema.json` | **HOLD** — payment sacred move |
+61 JSON Schema files across 11 domains. Validation:
 
-**Location (planned):** `docs/z-connect/platform-contracts/schemas/v1/`  
-**Includes:** example fixtures (`_non_executable`), `validate_examples.mjs`
+```bash
+node docs/z-connect/platform-contracts/scripts/validate_contracts.mjs
+```
+
+Reports: [PHASE_1_5_B1_ARCHITECTURE_REPORT.md](platform-contracts/PHASE_1_5_B1_ARCHITECTURE_REPORT.md) · [PHASE_1_5_B1_GREEN_RECEIPT.md](platform-contracts/PHASE_1_5_B1_GREEN_RECEIPT.md)
 
 ---
 

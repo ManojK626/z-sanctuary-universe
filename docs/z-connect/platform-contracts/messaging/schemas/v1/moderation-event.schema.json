@@ -1,0 +1,41 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://z-sanctuary.local/z-connect/schemas/v1/messaging-moderation-event.json",
+  "title": "ZConnectMessagingModerationEvent",
+  "description": "Moderation action on messaging content.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schemaVersion",
+    "eventId",
+    "messageId",
+    "action",
+    "occurredAtIso"
+  ],
+  "properties": {
+    "schemaVersion": {
+      "$ref": "../../common/schemas/v1/_definitions.schema.json#/$defs/SchemaVersion"
+    },
+    "eventId": {
+      "$ref": "../../common/schemas/v1/_definitions.schema.json#/$defs/Identifier"
+    },
+    "messageId": {
+      "$ref": "../../common/schemas/v1/_definitions.schema.json#/$defs/Identifier"
+    },
+    "action": {
+      "type": "string",
+      "enum": [
+        "flagged",
+        "hidden",
+        "removed",
+        "escalated"
+      ]
+    },
+    "occurredAtIso": {
+      "$ref": "../../common/schemas/v1/_definitions.schema.json#/$defs/TimestampIso"
+    },
+    "correlationId": {
+      "$ref": "../../common/schemas/v1/_definitions.schema.json#/$defs/CorrelationId"
+    }
+  }
+}

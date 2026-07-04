@@ -1,0 +1,45 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://z-sanctuary.local/z-connect/schemas/v1/consent-record.json",
+  "title": "ZConnectConsentRecord",
+  "description": "Append-only consent grant record.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schemaVersion",
+    "consentId",
+    "userId",
+    "scope",
+    "version",
+    "grantedAtIso",
+    "purpose"
+  ],
+  "properties": {
+    "schemaVersion": {
+      "$ref": "../../common/schemas/v1/_definitions.schema.json#/$defs/SchemaVersion"
+    },
+    "consentId": {
+      "$ref": "../../common/schemas/v1/_definitions.schema.json#/$defs/Identifier"
+    },
+    "userId": {
+      "$ref": "../../common/schemas/v1/_definitions.schema.json#/$defs/UserId"
+    },
+    "scope": {
+      "$ref": "https://z-sanctuary.local/z-connect/schemas/v1/consent-scope.json"
+    },
+    "version": {
+      "type": "string",
+      "const": "v1"
+    },
+    "grantedAtIso": {
+      "$ref": "../../common/schemas/v1/_definitions.schema.json#/$defs/TimestampIso"
+    },
+    "withdrawnAtIso": {
+      "$ref": "../../common/schemas/v1/_definitions.schema.json#/$defs/TimestampIso"
+    },
+    "purpose": {
+      "type": "string",
+      "maxLength": 500
+    }
+  }
+}

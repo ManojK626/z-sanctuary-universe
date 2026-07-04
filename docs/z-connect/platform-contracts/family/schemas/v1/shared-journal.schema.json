@@ -1,0 +1,30 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://z-sanctuary.local/z-connect/schemas/v1/shared-journal.json",
+  "title": "ZConnectSharedJournal",
+  "description": "Consent-gated shared journal.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schemaVersion",
+    "journalId",
+    "sharedExperienceConsentId"
+  ],
+  "properties": {
+    "schemaVersion": {
+      "$ref": "../../common/schemas/v1/_definitions.schema.json#/$defs/SchemaVersion"
+    },
+    "journalId": {
+      "$ref": "../../common/schemas/v1/_definitions.schema.json#/$defs/Identifier"
+    },
+    "sharedExperienceConsentId": {
+      "$ref": "../../common/schemas/v1/_definitions.schema.json#/$defs/Identifier"
+    },
+    "entryIds": {
+      "type": "array",
+      "items": {
+        "$ref": "../../common/schemas/v1/_definitions.schema.json#/$defs/Identifier"
+      }
+    }
+  }
+}

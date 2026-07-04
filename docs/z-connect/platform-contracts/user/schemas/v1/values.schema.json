@@ -1,0 +1,44 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://z-sanctuary.local/z-connect/schemas/v1/user-values.json",
+  "title": "ZConnectUserValues",
+  "description": "Self-stated values and life goals.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schemaVersion",
+    "userId"
+  ],
+  "properties": {
+    "schemaVersion": {
+      "$ref": "../../common/schemas/v1/_definitions.schema.json#/$defs/SchemaVersion"
+    },
+    "userId": {
+      "$ref": "../../common/schemas/v1/_definitions.schema.json#/$defs/UserId"
+    },
+    "familyPriorities": {
+      "type": "string",
+      "maxLength": 500
+    },
+    "personalGoals": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "maxLength": 200
+      }
+    },
+    "communityInvolvement": {
+      "type": "string",
+      "maxLength": 500
+    },
+    "environmentalValues": {
+      "type": "string",
+      "maxLength": 500
+    },
+    "spiritualInterest": {
+      "type": "string",
+      "maxLength": 500,
+      "description": "Optional — user-owned wording"
+    }
+  }
+}

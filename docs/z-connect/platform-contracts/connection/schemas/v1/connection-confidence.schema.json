@@ -1,0 +1,44 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://z-sanctuary.local/z-connect/schemas/v1/connection-confidence.json",
+  "title": "ZConnectConnectionConfidence",
+  "description": "Bundle of dimension-level confidence observations between two users.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schemaVersion",
+    "bundleId",
+    "viewerUserId",
+    "subjectUserId",
+    "insights",
+    "overallDisclaimer",
+    "generatedAtIso"
+  ],
+  "properties": {
+    "schemaVersion": {
+      "$ref": "../../common/schemas/v1/_definitions.schema.json#/$defs/SchemaVersion"
+    },
+    "bundleId": {
+      "$ref": "../../common/schemas/v1/_definitions.schema.json#/$defs/Identifier"
+    },
+    "viewerUserId": {
+      "$ref": "../../common/schemas/v1/_definitions.schema.json#/$defs/UserId"
+    },
+    "subjectUserId": {
+      "$ref": "../../common/schemas/v1/_definitions.schema.json#/$defs/UserId"
+    },
+    "insights": {
+      "type": "array",
+      "items": {
+        "$ref": "https://z-sanctuary.local/z-connect/schemas/v1/compatibility-insight.json"
+      },
+      "minItems": 1
+    },
+    "overallDisclaimer": {
+      "$ref": "../../common/schemas/v1/_definitions.schema.json#/$defs/InsightDisclaimer"
+    },
+    "generatedAtIso": {
+      "$ref": "../../common/schemas/v1/_definitions.schema.json#/$defs/TimestampIso"
+    }
+  }
+}

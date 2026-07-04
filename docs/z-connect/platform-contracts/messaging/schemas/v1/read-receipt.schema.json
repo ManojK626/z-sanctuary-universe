@@ -1,0 +1,32 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://z-sanctuary.local/z-connect/schemas/v1/messaging-read-receipt.json",
+  "title": "ZConnectReadReceipt",
+  "description": "Read receipt — opt-in visibility in privacy settings.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schemaVersion",
+    "receiptId",
+    "messageId",
+    "userId",
+    "readAtIso"
+  ],
+  "properties": {
+    "schemaVersion": {
+      "$ref": "../../common/schemas/v1/_definitions.schema.json#/$defs/SchemaVersion"
+    },
+    "receiptId": {
+      "$ref": "../../common/schemas/v1/_definitions.schema.json#/$defs/Identifier"
+    },
+    "messageId": {
+      "$ref": "../../common/schemas/v1/_definitions.schema.json#/$defs/Identifier"
+    },
+    "userId": {
+      "$ref": "../../common/schemas/v1/_definitions.schema.json#/$defs/UserId"
+    },
+    "readAtIso": {
+      "$ref": "../../common/schemas/v1/_definitions.schema.json#/$defs/TimestampIso"
+    }
+  }
+}

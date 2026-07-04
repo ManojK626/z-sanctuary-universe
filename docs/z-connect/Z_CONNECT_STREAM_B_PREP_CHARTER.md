@@ -39,7 +39,7 @@ Each item is a **document or spec** until Sprint 0 is chartered. Status: **Not s
 
 | # | Deliverable | Planned location | Depends on runtime? |
 | - | ----------- | ---------------- | ------------------- |
-| B1 | Domain contracts (JSON Schema v1) | `docs/z-connect/platform-contracts/` | No |
+| B1 | Domain contracts (JSON Schema v1) | [platform-contracts/](platform-contracts/) | No — **Complete** |
 | B2 | API specifications (OpenAPI / spec-only) | `docs/z-connect/api/v1/` | No |
 | B3 | Database logical model (privacy + consent) | `docs/z-connect/data/Z_CONNECT_LOGICAL_SCHEMA_v1.md` | No |
 | B4 | User journey maps | `docs/z-connect/journeys/` | No |

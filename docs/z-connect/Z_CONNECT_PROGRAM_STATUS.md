@@ -76,7 +76,7 @@
 | Module branches | Spec complete |
 | Commercial milestone (100 paying) | Framed |
 | Stream B prep charter | Complete |
-| Domain contracts | Not started |
+| Domain contracts | **Complete** — B1 |
 | API specs | Not started |
 | Legal drafts | Not started |
 
