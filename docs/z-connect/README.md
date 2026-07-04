@@ -46,13 +46,16 @@ Z-Connect is a **product charter** under hub governance. It is **not** a bypass 
 | [Z_CONNECT_COMMERCIAL_MILESTONE.md](Z_CONNECT_COMMERCIAL_MILESTONE.md) | First 100 paying members framing |
 | [Z_CONNECT_PROGRAM_STATUS.md](Z_CONNECT_PROGRAM_STATUS.md) | Dual-stream status + AMK classification |
 | [platform-contracts/](platform-contracts/) | **Phase 1.5 B1** — 61 domain schemas (architecture only) |
+| [interaction-contracts/](interaction-contracts/) | **Phase 1.5 B1.5** — 11 behavioural flows (architecture only) |
+| [Z_CONNECT_COMMERCIAL_PREP_ASSETS.md](Z_CONNECT_COMMERCIAL_PREP_ASSETS.md) | Parallel commercial asset checklist (no runtime) |
 
 ## Phase posture
 
 | Phase | Deliverable | Status |
 | ----- | ----------- | ------ |
 | 1 | Charter + boundaries + integrity + locked decisions v1 | **Complete** |
-| 1.5 | Platform contracts (profile, consent, insight shapes) | **B1 complete** — [platform-contracts/](platform-contracts/) |
+| 1.5 B1 | Domain contracts (profile, consent, insight shapes) | **Complete** — [platform-contracts/](platform-contracts/) |
+| 1.5 B1.5 | Interaction contracts (journeys, gates, diagrams) | **Complete** — [interaction-contracts/](interaction-contracts/) |
 | 2A | Shared packages only (reuse hub `zuno-*`) | Blocked until VILE Pkgs 1–4 mature |
 | 2B+ | Read-only / mock UI, then gated runtime | AMK charter each step |
 | Sprint 0 | First code package | **Blocked** — see roadmap gates |

@@ -32,11 +32,13 @@
    🛡️ STREAM A (~40%)                              🚀 STREAM B (~60%)
    Foundation backbone                              Z-Connect commercial prep
               │                                               │
-   · Merge Hold (keep)                              · Domain contracts
-   · Review Pkgs 1–3                                · API specs
-   · Merge to main                                   · Logical DB model
-   · Implement zuno-drp                              · User journeys + wireframes
-   · Integration verify                              · AI Constitution ✅
+   · Merge Hold (keep)                              · Domain contracts ✅
+   · Review Pkgs 1–3                                · Interaction contracts ✅
+   · Merge to main                                   · API specs (Phase 1.6)
+   · Implement zuno-drp                              · Logical DB model
+   · Integration verify                              · User journeys + wireframes
+                                                     · AI Constitution ✅
+                                                     · Commercial prep assets checklist ✅
                                                      · Branding + landing copy
                                                      · Pricing + legal drafts
                                                      · Marketing + investor outline
@@ -77,7 +79,9 @@
 | Commercial milestone (100 paying) | Framed |
 | Stream B prep charter | Complete |
 | Domain contracts | **Complete** — B1 |
-| API specs | Not started |
+| Interaction contracts | **Complete** — B1.5 |
+| Commercial prep assets checklist | **Ready** |
+| API specs | Not started (Phase 1.6 — blocked) |
 | Legal drafts | Not started |
 
 Full checklist: [Z_CONNECT_STREAM_B_PREP_CHARTER.md](Z_CONNECT_STREAM_B_PREP_CHARTER.md)

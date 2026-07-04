@@ -40,6 +40,7 @@ Each item is a **document or spec** until Sprint 0 is chartered. Status: **Not s
 | # | Deliverable | Planned location | Depends on runtime? |
 | - | ----------- | ---------------- | ------------------- |
 | B1 | Domain contracts (JSON Schema v1) | [platform-contracts/](platform-contracts/) | No — **Complete** |
+| B1.5 | Interaction contracts (behavioural flows) | [interaction-contracts/](interaction-contracts/) | No — **Complete** |
 | B2 | API specifications (OpenAPI / spec-only) | `docs/z-connect/api/v1/` | No |
 | B3 | Database logical model (privacy + consent) | `docs/z-connect/data/Z_CONNECT_LOGICAL_SCHEMA_v1.md` | No |
 | B4 | User journey maps | `docs/z-connect/journeys/` | No |
@@ -63,6 +64,7 @@ Detail: [Z_CONNECT_PHASE_1_5_ROADMAP.md](Z_CONNECT_PHASE_1_5_ROADMAP.md)
 | B10 | Landing page copy (draft) | `docs/z-connect/marketing/LANDING_PAGE_COPY.md` | No |
 | B11 | Marketing roadmap | `docs/z-connect/marketing/Z_CONNECT_MARKETING_ROADMAP.md` | No |
 | B12 | Investor pitch outline | `docs/z-connect/commercial/INVESTOR_PITCH_OUTLINE.md` | No |
+| B12b | Commercial prep assets checklist | [Z_CONNECT_COMMERCIAL_PREP_ASSETS.md](Z_CONNECT_COMMERCIAL_PREP_ASSETS.md) | **Checklist ready** |
 
 ### Commercial & legal (HOLD until human/legal review)
 
@@ -83,11 +85,13 @@ Detail: [Z_CONNECT_PHASE_1_5_ROADMAP.md](Z_CONNECT_PHASE_1_5_ROADMAP.md)
 Week 1–2 (Stream B priority)
   → B8 AI Constitution ✅
   → B14 Commercial milestone framing
-  → B1 Domain contracts (profile, consent, insight)
-  → B4 User journeys (onboarding + Connection Confidence)
+  → B1 Domain contracts ✅
+  → B1.5 Interaction contracts ✅
+  → B12b Commercial prep assets checklist ✅
 
 Week 2–4
-  → B2 API specs · B3 logical schema
+  → B2 API specs · B3 logical schema (Phase 1.6 — blocked until B1.5 review)
+  → B4 User journeys (onboarding + Connection Confidence)
   → B6 Wireframes · B10 Landing copy
   → B13 Pricing hypothesis · B7 Product roadmap
 
@@ -105,10 +109,11 @@ Week 4+
 | ------------ | ------ |
 | Architecture decisions v1 locked | B ✅ |
 | AI Constitution v1 locked | B ✅ |
-| Domain contracts v1 draft | B |
+| Domain contracts v1 | B ✅ |
+| Interaction contracts v1 | B ✅ |
 | VILE Pkgs 1–3 on `main` | A |
 | Merge Hold released for Sprint 0 | AMK |
-| B1–B4 minimum complete | B (recommended) |
+| B1 + B1.5 + B2–B4 minimum | B (recommended before Sprint 0) |
 
 ---
 

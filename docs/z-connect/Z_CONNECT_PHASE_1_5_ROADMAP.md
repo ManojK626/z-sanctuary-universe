@@ -31,6 +31,18 @@ Reports: [PHASE_1_5_B1_ARCHITECTURE_REPORT.md](platform-contracts/PHASE_1_5_B1_A
 
 ---
 
+## Deliverable 1.5 — Interaction contracts — **COMPLETE (B1.5)**
+
+**Status:** Done · 2026-07-04 · [interaction-contracts/README.md](interaction-contracts/README.md)
+
+11 behavioural flow specifications with sequence and state diagrams. No executable code.
+
+Reports: [PHASE_1_5_B1_5_ARCHITECTURE_REPORT.md](interaction-contracts/PHASE_1_5_B1_5_ARCHITECTURE_REPORT.md) · [PHASE_1_5_B1_5_GREEN_RECEIPT.md](interaction-contracts/PHASE_1_5_B1_5_GREEN_RECEIPT.md)
+
+Parallel commercial track: [Z_CONNECT_COMMERCIAL_PREP_ASSETS.md](Z_CONNECT_COMMERCIAL_PREP_ASSETS.md)
+
+---
+
 ## Deliverable 2 — API specifications
 
 **Goal:** OpenAPI or equivalent **spec-only** docs for core services — no server implementation in Phase 1.5.
@@ -99,10 +111,12 @@ Sprint 0 scope (planned — subject to AMK trim):
 ## Sequencing
 
 ```text
-Phase 1   ✅ Charter + locked decisions (this pack)
-Phase 1.5 → Contracts → API specs → logical schema → journey maps
-Sprint 0  → First code (blocked until VILE 2A on main + AMK release)
-Phase 2B+ → Read-only API / mock UI
+Phase 1     ✅ Charter + locked decisions
+Phase 1.5   ✅ Domain contracts (B1) → ✅ Interaction contracts (B1.5)
+Phase 1.6   → OpenAPI + logical schema (blocked — await B1.5 review)
+Phase 1.5+  → Journey maps + commercial assets (parallel)
+Sprint 0    → First code (blocked until VILE 2A on main + AMK release)
+Phase 2B+   → Read-only API / mock UI
 ```
 
 ---
