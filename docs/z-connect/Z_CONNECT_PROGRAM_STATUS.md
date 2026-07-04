@@ -34,9 +34,10 @@
               │                                               │
    · Merge Hold (keep)                              · Domain contracts ✅
    · Review Pkgs 1–3                                · Interaction contracts ✅
-   · Merge to main                                   · API specs (Phase 1.6)
-   · Implement zuno-drp                              · Logical DB model
-   · Integration verify                              · User journeys + wireframes
+   · Merge to main                                   · Experience state contracts ✅
+   · Implement zuno-drp                              · API specs (Phase 1.6)
+   · Integration verify                              · Logical DB model
+                                                     · User journeys + wireframes
                                                      · AI Constitution ✅
                                                      · Commercial prep assets checklist ✅
                                                      · Branding + landing copy
@@ -80,6 +81,7 @@
 | Stream B prep charter | Complete |
 | Domain contracts | **Complete** — B1 |
 | Interaction contracts | **Complete** — B1.5 |
+| Experience state contracts | **Complete** — B1.6 |
 | Commercial prep assets checklist | **Ready** |
 | API specs | Not started (Phase 1.6 — blocked) |
 | Legal drafts | Not started |

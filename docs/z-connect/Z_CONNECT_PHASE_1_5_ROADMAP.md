@@ -43,6 +43,16 @@ Parallel commercial track: [Z_CONNECT_COMMERCIAL_PREP_ASSETS.md](Z_CONNECT_COMME
 
 ---
 
+## Deliverable 1.6 — Experience state contracts — **COMPLETE (B1.6)**
+
+**Status:** Done · 2026-07-04 · [experience-state-contracts/README.md](experience-state-contracts/README.md)
+
+7 authoritative state machines with governance-gated transitions, plus a reusable Z-Sanctuary pattern spec. No executable code.
+
+Reports: [PHASE_1_5_B1_6_ARCHITECTURE_REPORT.md](experience-state-contracts/PHASE_1_5_B1_6_ARCHITECTURE_REPORT.md) · [PHASE_1_5_B1_6_GREEN_RECEIPT.md](experience-state-contracts/PHASE_1_5_B1_6_GREEN_RECEIPT.md)
+
+---
+
 ## Deliverable 2 — API specifications
 
 **Goal:** OpenAPI or equivalent **spec-only** docs for core services — no server implementation in Phase 1.5.
@@ -112,8 +122,8 @@ Sprint 0 scope (planned — subject to AMK trim):
 
 ```text
 Phase 1     ✅ Charter + locked decisions
-Phase 1.5   ✅ Domain contracts (B1) → ✅ Interaction contracts (B1.5)
-Phase 1.6   → OpenAPI + logical schema (blocked — await B1.5 review)
+Phase 1.5   ✅ Domain (B1) → ✅ Interaction (B1.5) → ✅ Experience State (B1.6)
+Phase 1.6   → OpenAPI + logical schema + reference architecture (blocked — await B1.6 review)
 Phase 1.5+  → Journey maps + commercial assets (parallel)
 Sprint 0    → First code (blocked until VILE 2A on main + AMK release)
 Phase 2B+   → Read-only API / mock UI

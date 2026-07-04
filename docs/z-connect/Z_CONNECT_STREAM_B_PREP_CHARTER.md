@@ -41,6 +41,7 @@ Each item is a **document or spec** until Sprint 0 is chartered. Status: **Not s
 | - | ----------- | ---------------- | ------------------- |
 | B1 | Domain contracts (JSON Schema v1) | [platform-contracts/](platform-contracts/) | No — **Complete** |
 | B1.5 | Interaction contracts (behavioural flows) | [interaction-contracts/](interaction-contracts/) | No — **Complete** |
+| B1.6 | Experience state contracts (state machines) | [experience-state-contracts/](experience-state-contracts/) | No — **Complete** |
 | B2 | API specifications (OpenAPI / spec-only) | `docs/z-connect/api/v1/` | No |
 | B3 | Database logical model (privacy + consent) | `docs/z-connect/data/Z_CONNECT_LOGICAL_SCHEMA_v1.md` | No |
 | B4 | User journey maps | `docs/z-connect/journeys/` | No |
@@ -87,6 +88,7 @@ Week 1–2 (Stream B priority)
   → B14 Commercial milestone framing
   → B1 Domain contracts ✅
   → B1.5 Interaction contracts ✅
+  → B1.6 Experience state contracts ✅
   → B12b Commercial prep assets checklist ✅
 
 Week 2–4
@@ -111,6 +113,7 @@ Week 4+
 | AI Constitution v1 locked | B ✅ |
 | Domain contracts v1 | B ✅ |
 | Interaction contracts v1 | B ✅ |
+| Experience state contracts v1 | B ✅ |
 | VILE Pkgs 1–3 on `main` | A |
 | Merge Hold released for Sprint 0 | AMK |
 | B1 + B1.5 + B2–B4 minimum | B (recommended before Sprint 0) |
