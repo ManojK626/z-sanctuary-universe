@@ -21,6 +21,8 @@ Alongside:
 
 > **Every project should be able to sleep without being forgotten, and wake without losing its purpose.**
 
+> **Knowledge grows. Wisdom guides. Governance protects. Humanity decides.**
+
 ---
 
 ## How to add an entry
@@ -41,6 +43,51 @@ When a milestone is **approved in principle** or **sealed green**, append a new 
 **Do not** list file diffs here — point to green receipts, PRs, and reports instead.
 
 > **AI advises. Governance protects. Humans decide.**
+
+> **Every project should be able to sleep without being forgotten, and wake without losing its purpose.**
+
+> **Knowledge grows. Wisdom guides. Governance protects. Humanity decides.**
+
+---
+
+## 2026-07-08 — Civilization maturity review & Knowledge Observatory (future charter)
+
+**Project:** Z-Sanctuary Universe · Foundation Doctrines · future Knowledge Observatory  
+**Authority:** AMK-Goku executive architecture review
+
+### Why it matters
+
+Conceptual design reached **healthy pause**: coherence over new layers. Runtime is **intentionally waiting** — strength, not gap. New doctrine seals culture alongside architecture.
+
+### Architecture impact
+
+- [Knowledge Observatory charter](knowledge-observatory/Z_SANCTUARY_KNOWLEDGE_OBSERVATORY_CHARTER.md) — **future only** (institutional historian)
+- MC watches present · Observatory would remember journey — **much later**
+- No implementation authorized
+
+### Governance impact
+
+- Human oversight excellent by design
+- Next chapters measured by **products proving principles**, not document count
+
+### Foundation impact
+
+- New permanent law: *Knowledge grows. Wisdom guides. Governance protects. Humanity decides.*
+
+### Human decision
+
+**AMK:** No major architecture for a while. Roadmap: Track A → Soulmates flagship → MC through use → Consolidation post-holiday → Observatory only if experience demands it.
+
+### Next milestone
+
+🏗️ Complete Track A VILE foundation human review.
+
+### Executive maturity snapshot
+
+| Area | Status |
+| ---- | ------ |
+| Vision · Governance · AI Ethics · Organization · Institutional Memory · MC · Human Oversight | 🟢 Excellent |
+| Runtime Implementation | 🟡 **Intentionally waiting** |
 
 ---
 

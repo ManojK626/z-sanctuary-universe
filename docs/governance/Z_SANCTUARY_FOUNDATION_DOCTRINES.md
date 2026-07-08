@@ -19,6 +19,8 @@
 
 > **Every project should be able to sleep without being forgotten, and wake without losing its purpose.**
 
+> **Knowledge grows. Wisdom guides. Governance protects. Humanity decides.**
+
 We do **not** copy entire projects into every other project. We promote ideas that have proven themselves into **shared doctrine** that every project **inherits by reference**.
 
 ```text
@@ -189,6 +191,8 @@ A **governed digital civilization** where:
 - 🌍 Every project keeps its own identity
 
 Easier to maintain over decades than duplicating ideas across dozens of repos.
+
+**Future (charter only):** [Knowledge Observatory](../knowledge-observatory/INDEX.md) — institutional historian when ecosystem maturity proves the need. **Not now.**
 
 ---
 
