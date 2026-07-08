@@ -73,6 +73,7 @@ Read-only panel on AMK-Goku Main Control Dashboard + machine report:
 - No runtime wiring into apps until foundation on `main`
 - No deploy, Cloudflare bind, or payment systems
 - Mission Control observes — human approves every merge
+- **Seal milestones** in [UNIVERSE_CHANGELOG.md](../UNIVERSE_CHANGELOG.md) when AMK approves in principle
 
 ---
 
