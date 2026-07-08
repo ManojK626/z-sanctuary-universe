@@ -726,8 +726,8 @@ function main() {
     missing_from_mission_control,
     id_map_path: 'data/z_universe_id_map.json',
     charter_projects,
-    'rojects,'
-  };''
+    projects,
+  };
 
   const report = {
     schema: SCHEMA_REPORT,
@@ -797,8 +797,8 @@ function main() {
     '',
     '## Executive summary',
     '',
-    `| Metric | Count |`,
-    `| ------ | ----- |`,
+    '| Metric | Count |',
+    '| ------ | ----- |',
     `| Total projects discovered | ${projects.length} |`,
     `| On disk | ${projects.filter((p) => p.on_disk).length} |`,
     `| Path missing (registry) | ${projects.filter((p) => p.path_missing).length} |`,

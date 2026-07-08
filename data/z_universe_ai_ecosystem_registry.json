@@ -1,0 +1,78 @@
+{
+  "schema": "z_universe_ai_ecosystem_registry_v1",
+  "generated_at": "2026-07-08T08:01:14.369Z",
+  "law_note": "Documentation-only AI roles — no runtime AI connections from this registry",
+  "systems": [
+    {
+      "id": "zuno",
+      "name": "Zuno",
+      "emoji": "❤️",
+      "primary_role": "Architecture, ethics, governance, state reflection",
+      "confidence": "confirmed"
+    },
+    {
+      "id": "cursor",
+      "name": "Cursor",
+      "emoji": "💻",
+      "primary_role": "Implementation and code generation (Turtle Mode)",
+      "confidence": "confirmed"
+    },
+    {
+      "id": "github",
+      "name": "GitHub",
+      "emoji": "🐙",
+      "primary_role": "Source control, review, vault gate",
+      "confidence": "confirmed"
+    },
+    {
+      "id": "cloudflare",
+      "name": "Cloudflare",
+      "emoji": "☁️",
+      "primary_role": "Infrastructure and deployment (contingency — NO_GO default)",
+      "confidence": "confirmed"
+    },
+    {
+      "id": "claude",
+      "name": "Claude",
+      "emoji": "🧠",
+      "primary_role": "Long-form reasoning specialist",
+      "confidence": "inferred"
+    },
+    {
+      "id": "gemini",
+      "name": "Gemini",
+      "emoji": "💎",
+      "primary_role": "Research and multimodal support",
+      "confidence": "inferred"
+    },
+    {
+      "id": "replit",
+      "name": "Replit",
+      "emoji": "🌀",
+      "primary_role": "Hosted experiments / link-only projects",
+      "confidence": "confirmed"
+    },
+    {
+      "id": "openai",
+      "name": "OpenAI / Copilot",
+      "emoji": "🤖",
+      "primary_role": "Copilot-style assistants where chartered",
+      "confidence": "inferred"
+    },
+    {
+      "id": "amk-goku",
+      "name": "AMK-Goku",
+      "emoji": "🛡️",
+      "primary_role": "Human steward — sacred gate authority",
+      "confidence": "confirmed"
+    }
+  ],
+  "foundation_doc_refs": {
+    "compassion_charter": "docs/governance/Z_SANCTUARY_COMPASSION_CHARTER.md",
+    "turtle_mode": ".cursor/rules/z-turtle-mode-cursor-agents.mdc",
+    "drp": "docs/Z_SWARM_14DRP_UNIVERSAL_AGENT_LAW.md",
+    "ai_constitution": "docs/z-connect/Z_CONNECT_AI_CONSTITUTION_V1.md",
+    "consent": "docs/z-connect/platform-contracts/consent/",
+    "foundation_doctrines": "docs/governance/Z_SANCTUARY_FOUNDATION_DOCTRINES.md"
+  }
+}

@@ -1,6 +1,6 @@
 {
-  "schema": "z_universe_project_registry_v1_1",
-  "generated_at": "2026-07-04T12:45:30.928Z",
+  "schema": "z_universe_project_registry_v1_2_mc_0_6",
+  "generated_at": "2026-07-08T08:01:14.369Z",
   "pc_root": "C:/Cursor Projects Organiser",
   "hub": "Z_Sanctuary_Universe",
   "law_note": "Read-only discovery registry. Observer/orchestrator — no runtime coupling. Changes to PC projects require human gate.",
@@ -225,7 +225,7 @@
       "handbook_doc": "docs/zilwa-living-experiences/ZILWA_MASTER_BLUEPRINT.md",
       "timeline": {
         "first_discovered": "2026-07-04",
-        "last_reviewed": "2026-07-04",
+        "last_reviewed": "2026-07-08",
         "last_activity": null,
         "lifecycle_stage": "Phase 0"
       },
@@ -246,6 +246,116 @@
           "level": "unknown",
           "source": "charter_in_hub_no_disk_root"
         }
+      },
+      "census": {
+        "purpose": "Continue Phase 0 docs; follow hub lifecycle when chartered",
+        "purpose_confidence": {
+          "level": "confirmed",
+          "source": "department_registry"
+        },
+        "turtle_indicator": {
+          "code": "architecture",
+          "emoji": "🔵",
+          "label": "Architecture (charter)"
+        },
+        "ai_ecosystem": {
+          "lead_ai": {
+            "role": "Zuno",
+            "id": "zuno",
+            "confidence": "confirmed"
+          },
+          "builder_ai": {
+            "role": "Cursor",
+            "id": "cursor",
+            "confidence": "confirmed"
+          },
+          "repository_ai": {
+            "role": "None / link-only",
+            "id": "none",
+            "confidence": "unknown"
+          },
+          "infrastructure_ai": {
+            "role": "None (local)",
+            "id": "local",
+            "confidence": "inferred"
+          },
+          "specialist_ais": [],
+          "human_steward": {
+            "role": "AMK-Goku",
+            "id": "amk-goku",
+            "confidence": "confirmed"
+          }
+        },
+        "foundation_adoption": {
+          "compassion_charter": {
+            "status": "adopted",
+            "reference_only": true
+          },
+          "turtle_mode": {
+            "status": "adopted",
+            "reference_only": true
+          },
+          "drp": {
+            "status": "adopted",
+            "reference_only": true
+          },
+          "ai_constitution": {
+            "status": "adopted",
+            "reference_only": true
+          },
+          "consent": {
+            "status": "adopted",
+            "reference_only": true
+          },
+          "foundation_doctrines": {
+            "status": "adopted",
+            "reference_only": true
+          },
+          "confidence": {
+            "level": "confirmed",
+            "source": "hub_or_charter"
+          }
+        },
+        "readiness_matrix": {
+          "architecture": {
+            "signal": "GREEN",
+            "note": "core"
+          },
+          "governance": {
+            "signal": "GREEN",
+            "note": "Merge Hold default"
+          },
+          "documentation": {
+            "signal": "GREEN",
+            "note": "strong"
+          },
+          "ai_readiness": {
+            "signal": "YELLOW",
+            "note": "Track A / charters"
+          },
+          "technical_readiness": {
+            "signal": "BLUE",
+            "note": "unknown"
+          },
+          "commercial_readiness": {
+            "signal": "YELLOW",
+            "note": "early"
+          },
+          "security": {
+            "signal": "YELLOW",
+            "note": "observe"
+          },
+          "deployment": {
+            "signal": "RED",
+            "note": "Runtime NOT AUTHORIZED"
+          },
+          "mission_control_integration": {
+            "signal": "GREEN",
+            "note": "integrated"
+          }
+        },
+        "integration_pathway": "Hub charter — integrated in MC departments",
+        "architecture_posture": "docs_charter_frozen"
       }
     },
     {
@@ -268,7 +378,7 @@
       "handbook_doc": "docs/z-connect/REFERENCE_ARCHITECTURE/INDEX.md",
       "timeline": {
         "first_discovered": "2026-07-04",
-        "last_reviewed": "2026-07-04",
+        "last_reviewed": "2026-07-08",
         "last_activity": null,
         "lifecycle_stage": "1.5 FROZEN"
       },
@@ -289,6 +399,116 @@
           "level": "unknown",
           "source": "charter_in_hub_no_disk_root"
         }
+      },
+      "census": {
+        "purpose": "Track A — await VILE foundation; Phase 1.6 blocked",
+        "purpose_confidence": {
+          "level": "confirmed",
+          "source": "department_registry"
+        },
+        "turtle_indicator": {
+          "code": "architecture",
+          "emoji": "🔵",
+          "label": "Architecture (charter)"
+        },
+        "ai_ecosystem": {
+          "lead_ai": {
+            "role": "Zuno",
+            "id": "zuno",
+            "confidence": "confirmed"
+          },
+          "builder_ai": {
+            "role": "Cursor",
+            "id": "cursor",
+            "confidence": "confirmed"
+          },
+          "repository_ai": {
+            "role": "None / link-only",
+            "id": "none",
+            "confidence": "unknown"
+          },
+          "infrastructure_ai": {
+            "role": "None (local)",
+            "id": "local",
+            "confidence": "inferred"
+          },
+          "specialist_ais": [],
+          "human_steward": {
+            "role": "AMK-Goku",
+            "id": "amk-goku",
+            "confidence": "confirmed"
+          }
+        },
+        "foundation_adoption": {
+          "compassion_charter": {
+            "status": "adopted",
+            "reference_only": true
+          },
+          "turtle_mode": {
+            "status": "adopted",
+            "reference_only": true
+          },
+          "drp": {
+            "status": "adopted",
+            "reference_only": true
+          },
+          "ai_constitution": {
+            "status": "adopted",
+            "reference_only": true
+          },
+          "consent": {
+            "status": "adopted",
+            "reference_only": true
+          },
+          "foundation_doctrines": {
+            "status": "adopted",
+            "reference_only": true
+          },
+          "confidence": {
+            "level": "confirmed",
+            "source": "hub_or_charter"
+          }
+        },
+        "readiness_matrix": {
+          "architecture": {
+            "signal": "GREEN",
+            "note": "core"
+          },
+          "governance": {
+            "signal": "GREEN",
+            "note": "Merge Hold default"
+          },
+          "documentation": {
+            "signal": "GREEN",
+            "note": "strong"
+          },
+          "ai_readiness": {
+            "signal": "YELLOW",
+            "note": "Track A / charters"
+          },
+          "technical_readiness": {
+            "signal": "BLUE",
+            "note": "unknown"
+          },
+          "commercial_readiness": {
+            "signal": "YELLOW",
+            "note": "early"
+          },
+          "security": {
+            "signal": "YELLOW",
+            "note": "observe"
+          },
+          "deployment": {
+            "signal": "RED",
+            "note": "Runtime NOT AUTHORIZED"
+          },
+          "mission_control_integration": {
+            "signal": "GREEN",
+            "note": "integrated"
+          }
+        },
+        "integration_pathway": "Hub charter — integrated in MC departments",
+        "architecture_posture": "docs_charter_frozen"
       }
     },
     {
@@ -311,7 +531,7 @@
       "handbook_doc": "docs/vile/PACKAGE_CATALOG.md",
       "timeline": {
         "first_discovered": "2026-07-04",
-        "last_reviewed": "2026-07-04",
+        "last_reviewed": "2026-07-08",
         "last_activity": null,
         "lifecycle_stage": "2A — merge pending"
       },
@@ -332,6 +552,116 @@
           "level": "unknown",
           "source": "charter_in_hub_no_disk_root"
         }
+      },
+      "census": {
+        "purpose": "Track A: review/merge Pkgs 1–3 · implement zuno-drp · verify main",
+        "purpose_confidence": {
+          "level": "confirmed",
+          "source": "department_registry"
+        },
+        "turtle_indicator": {
+          "code": "architecture",
+          "emoji": "🔵",
+          "label": "Architecture (charter)"
+        },
+        "ai_ecosystem": {
+          "lead_ai": {
+            "role": "Zuno",
+            "id": "zuno",
+            "confidence": "confirmed"
+          },
+          "builder_ai": {
+            "role": "Cursor",
+            "id": "cursor",
+            "confidence": "confirmed"
+          },
+          "repository_ai": {
+            "role": "None / link-only",
+            "id": "none",
+            "confidence": "unknown"
+          },
+          "infrastructure_ai": {
+            "role": "None (local)",
+            "id": "local",
+            "confidence": "inferred"
+          },
+          "specialist_ais": [],
+          "human_steward": {
+            "role": "AMK-Goku",
+            "id": "amk-goku",
+            "confidence": "confirmed"
+          }
+        },
+        "foundation_adoption": {
+          "compassion_charter": {
+            "status": "adopted",
+            "reference_only": true
+          },
+          "turtle_mode": {
+            "status": "adopted",
+            "reference_only": true
+          },
+          "drp": {
+            "status": "adopted",
+            "reference_only": true
+          },
+          "ai_constitution": {
+            "status": "adopted",
+            "reference_only": true
+          },
+          "consent": {
+            "status": "adopted",
+            "reference_only": true
+          },
+          "foundation_doctrines": {
+            "status": "adopted",
+            "reference_only": true
+          },
+          "confidence": {
+            "level": "confirmed",
+            "source": "hub_or_charter"
+          }
+        },
+        "readiness_matrix": {
+          "architecture": {
+            "signal": "GREEN",
+            "note": "core"
+          },
+          "governance": {
+            "signal": "GREEN",
+            "note": "Merge Hold default"
+          },
+          "documentation": {
+            "signal": "GREEN",
+            "note": "strong"
+          },
+          "ai_readiness": {
+            "signal": "YELLOW",
+            "note": "Track A / charters"
+          },
+          "technical_readiness": {
+            "signal": "BLUE",
+            "note": "unknown"
+          },
+          "commercial_readiness": {
+            "signal": "YELLOW",
+            "note": "early"
+          },
+          "security": {
+            "signal": "YELLOW",
+            "note": "observe"
+          },
+          "deployment": {
+            "signal": "RED",
+            "note": "Runtime NOT AUTHORIZED"
+          },
+          "mission_control_integration": {
+            "signal": "GREEN",
+            "note": "integrated"
+          }
+        },
+        "integration_pathway": "Hub charter — integrated in MC departments",
+        "architecture_posture": "docs_charter_frozen"
       }
     },
     {
@@ -354,7 +684,7 @@
       "handbook_doc": "docs/z-nexus-engine/Z_NEXUS_ENGINE_MOCK_DASHBOARD_SPEC.md",
       "timeline": {
         "first_discovered": "2026-07-04",
-        "last_reviewed": "2026-07-04",
+        "last_reviewed": "2026-07-08",
         "last_activity": null,
         "lifecycle_stage": "Phase 0"
       },
@@ -375,6 +705,116 @@
           "level": "unknown",
           "source": "charter_in_hub_no_disk_root"
         }
+      },
+      "census": {
+        "purpose": "Mock dashboard spec only; Streamlit HOLD",
+        "purpose_confidence": {
+          "level": "confirmed",
+          "source": "department_registry"
+        },
+        "turtle_indicator": {
+          "code": "architecture",
+          "emoji": "🔵",
+          "label": "Architecture (charter)"
+        },
+        "ai_ecosystem": {
+          "lead_ai": {
+            "role": "Zuno",
+            "id": "zuno",
+            "confidence": "confirmed"
+          },
+          "builder_ai": {
+            "role": "Cursor",
+            "id": "cursor",
+            "confidence": "confirmed"
+          },
+          "repository_ai": {
+            "role": "None / link-only",
+            "id": "none",
+            "confidence": "unknown"
+          },
+          "infrastructure_ai": {
+            "role": "None (local)",
+            "id": "local",
+            "confidence": "inferred"
+          },
+          "specialist_ais": [],
+          "human_steward": {
+            "role": "AMK-Goku",
+            "id": "amk-goku",
+            "confidence": "confirmed"
+          }
+        },
+        "foundation_adoption": {
+          "compassion_charter": {
+            "status": "adopted",
+            "reference_only": true
+          },
+          "turtle_mode": {
+            "status": "adopted",
+            "reference_only": true
+          },
+          "drp": {
+            "status": "adopted",
+            "reference_only": true
+          },
+          "ai_constitution": {
+            "status": "adopted",
+            "reference_only": true
+          },
+          "consent": {
+            "status": "adopted",
+            "reference_only": true
+          },
+          "foundation_doctrines": {
+            "status": "adopted",
+            "reference_only": true
+          },
+          "confidence": {
+            "level": "confirmed",
+            "source": "hub_or_charter"
+          }
+        },
+        "readiness_matrix": {
+          "architecture": {
+            "signal": "GREEN",
+            "note": "core"
+          },
+          "governance": {
+            "signal": "GREEN",
+            "note": "Merge Hold default"
+          },
+          "documentation": {
+            "signal": "GREEN",
+            "note": "strong"
+          },
+          "ai_readiness": {
+            "signal": "YELLOW",
+            "note": "Track A / charters"
+          },
+          "technical_readiness": {
+            "signal": "BLUE",
+            "note": "unknown"
+          },
+          "commercial_readiness": {
+            "signal": "YELLOW",
+            "note": "early"
+          },
+          "security": {
+            "signal": "YELLOW",
+            "note": "observe"
+          },
+          "deployment": {
+            "signal": "RED",
+            "note": "Runtime NOT AUTHORIZED"
+          },
+          "mission_control_integration": {
+            "signal": "GREEN",
+            "note": "integrated"
+          }
+        },
+        "integration_pathway": "Hub charter — integrated in MC departments",
+        "architecture_posture": "docs_charter_frozen"
       }
     }
   ],
@@ -392,8 +832,8 @@
       ],
       "repository_status": {
         "is_git": true,
-        "branch": "cursor/zsanctuary/z-universe-mc-1-readonly-overlay",
-        "head": "c052c53",
+        "branch": "cursor/zsanctuary/z-universe-census-mc-0-6",
+        "head": "d540ee7",
         "dirty": true,
         "status": "ok"
       },
@@ -441,7 +881,7 @@
       },
       "current_phase": "Foundation",
       "recommended_next_action": "Track A: VILE merge · protect Merge Hold",
-      "last_review": "2026-07-04",
+      "last_review": "2026-07-08",
       "owner": "AMK-Goku",
       "priority": "high",
       "notes": "Canonical governance and control root on disk (~381 MB). Open this folder in Cursor for hub verify and SSWS.",
@@ -449,9 +889,12 @@
       "universe_id": "ZSU-0001",
       "timeline": {
         "first_discovered": "2026-07-04",
-        "last_reviewed": "2026-07-04",
-        "last_activity": "2026-07-04",
-        "lifecycle_stage": "Foundation"
+        "last_reviewed": "2026-07-08",
+        "last_activity": "2026-07-08",
+        "lifecycle_stage": "Foundation",
+        "next_milestone": "VILE Pkgs 1–3 on main",
+        "current_blocker": "Track A VILE merge pending",
+        "next_recommended_action": "Track A: VILE merge · protect Merge Hold"
       },
       "confidence": {
         "universe_id": {
@@ -484,14 +927,124 @@
         },
         "last_activity": {
           "level": "confirmed",
-          "source": "git_last_commit"
+          "source": "package.json"
         },
         "mission_control_status": {
           "level": "inferred",
           "source": "department_and_indicator_registry"
         }
       },
-      "last_activity": "2026-07-04"
+      "last_activity": "2026-07-08",
+      "census": {
+        "purpose": "Canonical governance and control root — Mission Control host",
+        "purpose_confidence": {
+          "level": "confirmed",
+          "source": "registry_id_map"
+        },
+        "turtle_indicator": {
+          "code": "active_development",
+          "emoji": "🟢",
+          "label": "Active Development (hub)"
+        },
+        "ai_ecosystem": {
+          "lead_ai": {
+            "role": "Zuno",
+            "id": "zuno",
+            "confidence": "confirmed"
+          },
+          "builder_ai": {
+            "role": "Cursor",
+            "id": "cursor",
+            "confidence": "confirmed"
+          },
+          "repository_ai": {
+            "role": "GitHub",
+            "id": "github",
+            "confidence": "confirmed"
+          },
+          "infrastructure_ai": {
+            "role": "None (local)",
+            "id": "local",
+            "confidence": "inferred"
+          },
+          "specialist_ais": [],
+          "human_steward": {
+            "role": "AMK-Goku",
+            "id": "amk-goku",
+            "confidence": "confirmed"
+          }
+        },
+        "foundation_adoption": {
+          "compassion_charter": {
+            "status": "adopted",
+            "reference_only": true
+          },
+          "turtle_mode": {
+            "status": "adopted",
+            "reference_only": true
+          },
+          "drp": {
+            "status": "adopted",
+            "reference_only": true
+          },
+          "ai_constitution": {
+            "status": "partial",
+            "reference_only": true
+          },
+          "consent": {
+            "status": "partial",
+            "reference_only": true
+          },
+          "foundation_doctrines": {
+            "status": "adopted",
+            "reference_only": true
+          },
+          "confidence": {
+            "level": "confirmed",
+            "source": "hub_or_charter"
+          }
+        },
+        "readiness_matrix": {
+          "architecture": {
+            "signal": "GREEN",
+            "note": "core"
+          },
+          "governance": {
+            "signal": "GREEN",
+            "note": "Merge Hold default"
+          },
+          "documentation": {
+            "signal": "GREEN",
+            "note": "strong"
+          },
+          "ai_readiness": {
+            "signal": "YELLOW",
+            "note": "Track A / charters"
+          },
+          "technical_readiness": {
+            "signal": "YELLOW",
+            "note": "node/javascript, monorepo, dashboard"
+          },
+          "commercial_readiness": {
+            "signal": "YELLOW",
+            "note": "unknown"
+          },
+          "security": {
+            "signal": "GREEN",
+            "note": "hub_governance"
+          },
+          "deployment": {
+            "signal": "RED",
+            "note": "Runtime NOT AUTHORIZED"
+          },
+          "mission_control_integration": {
+            "signal": "GREEN",
+            "note": "integrated"
+          }
+        },
+        "integration_pathway": "Canonical hub — MC integrated · Track A priority",
+        "architecture_posture": "prototype_or_codebase"
+      }
     },
     {
       "registry_id": "zsanctuary-universe-stub-retired",
@@ -553,7 +1106,7 @@
       },
       "current_phase": "Turtle / observe",
       "recommended_next_action": "Visible in registry — awaiting Mission Control department mapping",
-      "last_review": "2026-07-04",
+      "last_review": "2026-07-08",
       "owner": "AMK-Goku",
       "priority": "normal",
       "notes": "Empty placeholder folder (empty docs/ only). Do not use as hub. Active hub is Z_Sanctuary_Universe. Folder retained on disk — not deleted per ROOT_ALIGNMENT_PASS.",
@@ -561,9 +1114,12 @@
       "universe_id": "ZSU-0029",
       "timeline": {
         "first_discovered": "2026-07-04",
-        "last_reviewed": "2026-07-04",
+        "last_reviewed": "2026-07-08",
         "last_activity": null,
-        "lifecycle_stage": "Turtle / observe"
+        "lifecycle_stage": "Turtle / observe",
+        "next_milestone": "Mission Control visibility",
+        "current_blocker": "merge_hold_active",
+        "next_recommended_action": "Visible in registry — awaiting Mission Control department mapping"
       },
       "confidence": {
         "universe_id": {
@@ -603,7 +1159,117 @@
           "source": "department_and_indicator_registry"
         }
       },
-      "last_activity": null
+      "last_activity": null,
+      "census": {
+        "purpose": "Empty placeholder folder (empty docs/ only). Do not use as hub. Active hub is Z_Sanctuary_Universe. Folder retained on disk — not deleted per ROOT_ALIGNMENT_PASS.",
+        "purpose_confidence": {
+          "level": "confirmed",
+          "source": "z_pc_root_projects.json"
+        },
+        "turtle_indicator": {
+          "code": "archive",
+          "emoji": "🟤",
+          "label": "Archive"
+        },
+        "ai_ecosystem": {
+          "lead_ai": {
+            "role": "Zuno",
+            "id": "zuno",
+            "confidence": "inferred"
+          },
+          "builder_ai": {
+            "role": "Cursor",
+            "id": "cursor",
+            "confidence": "confirmed"
+          },
+          "repository_ai": {
+            "role": "None / link-only",
+            "id": "local",
+            "confidence": "confirmed"
+          },
+          "infrastructure_ai": {
+            "role": "None (local)",
+            "id": "local",
+            "confidence": "inferred"
+          },
+          "specialist_ais": [],
+          "human_steward": {
+            "role": "AMK-Goku",
+            "id": "amk-goku",
+            "confidence": "confirmed"
+          }
+        },
+        "foundation_adoption": {
+          "compassion_charter": {
+            "status": "unknown",
+            "reference_only": true
+          },
+          "turtle_mode": {
+            "status": "partial",
+            "reference_only": true
+          },
+          "drp": {
+            "status": "unknown",
+            "reference_only": true
+          },
+          "ai_constitution": {
+            "status": "unknown",
+            "reference_only": true
+          },
+          "consent": {
+            "status": "unknown",
+            "reference_only": true
+          },
+          "foundation_doctrines": {
+            "status": "unknown",
+            "reference_only": true
+          },
+          "confidence": {
+            "level": "unknown",
+            "source": "insufficient_metadata"
+          }
+        },
+        "readiness_matrix": {
+          "architecture": {
+            "signal": "BLUE",
+            "note": "archive"
+          },
+          "governance": {
+            "signal": "GREEN",
+            "note": "Merge Hold default"
+          },
+          "documentation": {
+            "signal": "YELLOW",
+            "note": "partial"
+          },
+          "ai_readiness": {
+            "signal": "BLUE",
+            "note": "Track A / charters"
+          },
+          "technical_readiness": {
+            "signal": "BLUE",
+            "note": "unknown"
+          },
+          "commercial_readiness": {
+            "signal": "BLUE",
+            "note": "unknown"
+          },
+          "security": {
+            "signal": "YELLOW",
+            "note": "unknown"
+          },
+          "deployment": {
+            "signal": "RED",
+            "note": "Runtime NOT AUTHORIZED"
+          },
+          "mission_control_integration": {
+            "signal": "YELLOW",
+            "note": "registered_awaiting_integration"
+          }
+        },
+        "integration_pathway": "Awaiting MC department mapping · visible in census",
+        "architecture_posture": "planning_or_docs"
+      }
     },
     {
       "registry_id": "amk-goku-dashboards-2",
@@ -665,7 +1331,7 @@
       },
       "current_phase": "Turtle / observe",
       "recommended_next_action": "Turtle Mode — observe; no runtime coupling without charter",
-      "last_review": "2026-07-04",
+      "last_review": "2026-07-08",
       "owner": "AMK-Goku",
       "priority": "normal",
       "notes": "No matching local folder under pc_root as of 2026-04-26; keep as link-only entry until local path is restored.",
@@ -673,9 +1339,12 @@
       "universe_id": "ZSU-0008",
       "timeline": {
         "first_discovered": "2026-07-04",
-        "last_reviewed": "2026-07-04",
+        "last_reviewed": "2026-07-08",
         "last_activity": null,
-        "lifecycle_stage": "Turtle / observe"
+        "lifecycle_stage": "Turtle / observe",
+        "next_milestone": "Add README / docs",
+        "current_blocker": "documentation_gap",
+        "next_recommended_action": "Turtle Mode — observe; no runtime coupling without charter"
       },
       "confidence": {
         "universe_id": {
@@ -715,7 +1384,117 @@
           "source": "department_and_indicator_registry"
         }
       },
-      "last_activity": null
+      "last_activity": null,
+      "census": {
+        "purpose": "No matching local folder under pc_root as of 2026-04-26; keep as link-only entry until local path is restored.",
+        "purpose_confidence": {
+          "level": "confirmed",
+          "source": "z_pc_root_projects.json"
+        },
+        "turtle_indicator": {
+          "code": "research",
+          "emoji": "🟣",
+          "label": "Research"
+        },
+        "ai_ecosystem": {
+          "lead_ai": {
+            "role": "Zuno",
+            "id": "zuno",
+            "confidence": "inferred"
+          },
+          "builder_ai": {
+            "role": "Cursor",
+            "id": "cursor",
+            "confidence": "confirmed"
+          },
+          "repository_ai": {
+            "role": "None / link-only",
+            "id": "link-only",
+            "confidence": "confirmed"
+          },
+          "infrastructure_ai": {
+            "role": "None (local)",
+            "id": "local",
+            "confidence": "inferred"
+          },
+          "specialist_ais": [],
+          "human_steward": {
+            "role": "AMK-Goku",
+            "id": "amk-goku",
+            "confidence": "confirmed"
+          }
+        },
+        "foundation_adoption": {
+          "compassion_charter": {
+            "status": "unknown",
+            "reference_only": true
+          },
+          "turtle_mode": {
+            "status": "partial",
+            "reference_only": true
+          },
+          "drp": {
+            "status": "unknown",
+            "reference_only": true
+          },
+          "ai_constitution": {
+            "status": "unknown",
+            "reference_only": true
+          },
+          "consent": {
+            "status": "unknown",
+            "reference_only": true
+          },
+          "foundation_doctrines": {
+            "status": "unknown",
+            "reference_only": true
+          },
+          "confidence": {
+            "level": "unknown",
+            "source": "insufficient_metadata"
+          }
+        },
+        "readiness_matrix": {
+          "architecture": {
+            "signal": "BLUE",
+            "note": "research"
+          },
+          "governance": {
+            "signal": "GREEN",
+            "note": "Merge Hold default"
+          },
+          "documentation": {
+            "signal": "RED",
+            "note": "missing"
+          },
+          "ai_readiness": {
+            "signal": "BLUE",
+            "note": "Track A / charters"
+          },
+          "technical_readiness": {
+            "signal": "BLUE",
+            "note": "unknown"
+          },
+          "commercial_readiness": {
+            "signal": "BLUE",
+            "note": "unknown"
+          },
+          "security": {
+            "signal": "YELLOW",
+            "note": "unknown"
+          },
+          "deployment": {
+            "signal": "RED",
+            "note": "Runtime NOT AUTHORIZED"
+          },
+          "mission_control_integration": {
+            "signal": "BLUE",
+            "note": "link_only_external"
+          }
+        },
+        "integration_pathway": "Observe in Turtle Mode · charter before runtime coupling",
+        "architecture_posture": "planning_or_docs"
+      }
     },
     {
       "registry_id": "amk-goku-vaults",
@@ -777,7 +1556,7 @@
       },
       "current_phase": "Turtle / observe",
       "recommended_next_action": "Add README/docs; classify lane after review",
-      "last_review": "2026-07-04",
+      "last_review": "2026-07-08",
       "owner": "AMK-Goku",
       "priority": "normal",
       "notes": "",
@@ -785,9 +1564,12 @@
       "universe_id": "ZSU-0009",
       "timeline": {
         "first_discovered": "2026-07-04",
-        "last_reviewed": "2026-07-04",
+        "last_reviewed": "2026-07-08",
         "last_activity": null,
-        "lifecycle_stage": "Turtle / observe"
+        "lifecycle_stage": "Turtle / observe",
+        "next_milestone": "Mission Control visibility",
+        "current_blocker": "merge_hold_active",
+        "next_recommended_action": "Add README/docs; classify lane after review"
       },
       "confidence": {
         "universe_id": {
@@ -827,7 +1609,117 @@
           "source": "department_and_indicator_registry"
         }
       },
-      "last_activity": null
+      "last_activity": null,
+      "census": {
+        "purpose": "Vault and sensitive asset storage",
+        "purpose_confidence": {
+          "level": "inferred",
+          "source": "name_heuristic"
+        },
+        "turtle_indicator": {
+          "code": "documentation",
+          "emoji": "🟡",
+          "label": "Documentation"
+        },
+        "ai_ecosystem": {
+          "lead_ai": {
+            "role": "Zuno",
+            "id": "zuno",
+            "confidence": "inferred"
+          },
+          "builder_ai": {
+            "role": "Cursor",
+            "id": "cursor",
+            "confidence": "confirmed"
+          },
+          "repository_ai": {
+            "role": "None / link-only",
+            "id": "local",
+            "confidence": "confirmed"
+          },
+          "infrastructure_ai": {
+            "role": "None (local)",
+            "id": "local",
+            "confidence": "inferred"
+          },
+          "specialist_ais": [],
+          "human_steward": {
+            "role": "AMK-Goku",
+            "id": "amk-goku",
+            "confidence": "confirmed"
+          }
+        },
+        "foundation_adoption": {
+          "compassion_charter": {
+            "status": "unknown",
+            "reference_only": true
+          },
+          "turtle_mode": {
+            "status": "partial",
+            "reference_only": true
+          },
+          "drp": {
+            "status": "unknown",
+            "reference_only": true
+          },
+          "ai_constitution": {
+            "status": "unknown",
+            "reference_only": true
+          },
+          "consent": {
+            "status": "unknown",
+            "reference_only": true
+          },
+          "foundation_doctrines": {
+            "status": "unknown",
+            "reference_only": true
+          },
+          "confidence": {
+            "level": "unknown",
+            "source": "insufficient_metadata"
+          }
+        },
+        "readiness_matrix": {
+          "architecture": {
+            "signal": "BLUE",
+            "note": "unknown"
+          },
+          "governance": {
+            "signal": "GREEN",
+            "note": "Merge Hold default"
+          },
+          "documentation": {
+            "signal": "YELLOW",
+            "note": "partial"
+          },
+          "ai_readiness": {
+            "signal": "BLUE",
+            "note": "Track A / charters"
+          },
+          "technical_readiness": {
+            "signal": "BLUE",
+            "note": "unknown"
+          },
+          "commercial_readiness": {
+            "signal": "BLUE",
+            "note": "unknown"
+          },
+          "security": {
+            "signal": "YELLOW",
+            "note": "unknown"
+          },
+          "deployment": {
+            "signal": "RED",
+            "note": "Runtime NOT AUTHORIZED"
+          },
+          "mission_control_integration": {
+            "signal": "YELLOW",
+            "note": "registered_awaiting_integration"
+          }
+        },
+        "integration_pathway": "Awaiting MC department mapping · visible in census",
+        "architecture_posture": "planning_or_docs"
+      }
     },
     {
       "registry_id": "at-princess-blackie-copilot",
@@ -892,7 +1784,7 @@
       },
       "current_phase": "Turtle / observe",
       "recommended_next_action": "Visible in registry — awaiting Mission Control department mapping",
-      "last_review": "2026-07-04",
+      "last_review": "2026-07-08",
       "owner": "AMK-Goku",
       "priority": "normal",
       "notes": "",
@@ -900,9 +1792,12 @@
       "universe_id": "ZSU-0010",
       "timeline": {
         "first_discovered": "2026-07-04",
-        "last_reviewed": "2026-07-04",
+        "last_reviewed": "2026-07-08",
         "last_activity": "2026-06-24",
-        "lifecycle_stage": "Turtle / observe"
+        "lifecycle_stage": "Turtle / observe",
+        "next_milestone": "Mission Control visibility",
+        "current_blocker": "merge_hold_active",
+        "next_recommended_action": "Visible in registry — awaiting Mission Control department mapping"
       },
       "confidence": {
         "universe_id": {
@@ -942,7 +1837,123 @@
           "source": "department_and_indicator_registry"
         }
       },
-      "last_activity": "2026-06-24"
+      "last_activity": "2026-06-24",
+      "census": {
+        "purpose": "Purpose not documented — classify after review",
+        "purpose_confidence": {
+          "level": "unknown",
+          "source": "none"
+        },
+        "turtle_indicator": {
+          "code": "turtle_mode",
+          "emoji": "🐢",
+          "label": "Turtle Mode"
+        },
+        "ai_ecosystem": {
+          "lead_ai": {
+            "role": "Zuno",
+            "id": "zuno",
+            "confidence": "inferred"
+          },
+          "builder_ai": {
+            "role": "Cursor",
+            "id": "cursor",
+            "confidence": "confirmed"
+          },
+          "repository_ai": {
+            "role": "None / link-only",
+            "id": "local",
+            "confidence": "confirmed"
+          },
+          "infrastructure_ai": {
+            "role": "None (local)",
+            "id": "local",
+            "confidence": "inferred"
+          },
+          "specialist_ais": [
+            {
+              "role": "OpenAI / Copilot",
+              "id": "openai",
+              "confidence": "inferred"
+            }
+          ],
+          "human_steward": {
+            "role": "AMK-Goku",
+            "id": "amk-goku",
+            "confidence": "confirmed"
+          }
+        },
+        "foundation_adoption": {
+          "compassion_charter": {
+            "status": "unknown",
+            "reference_only": true
+          },
+          "turtle_mode": {
+            "status": "partial",
+            "reference_only": true
+          },
+          "drp": {
+            "status": "unknown",
+            "reference_only": true
+          },
+          "ai_constitution": {
+            "status": "unknown",
+            "reference_only": true
+          },
+          "consent": {
+            "status": "unknown",
+            "reference_only": true
+          },
+          "foundation_doctrines": {
+            "status": "unknown",
+            "reference_only": true
+          },
+          "confidence": {
+            "level": "unknown",
+            "source": "insufficient_metadata"
+          }
+        },
+        "readiness_matrix": {
+          "architecture": {
+            "signal": "YELLOW",
+            "note": "growing"
+          },
+          "governance": {
+            "signal": "GREEN",
+            "note": "Merge Hold default"
+          },
+          "documentation": {
+            "signal": "GREEN",
+            "note": "strong"
+          },
+          "ai_readiness": {
+            "signal": "BLUE",
+            "note": "Track A / charters"
+          },
+          "technical_readiness": {
+            "signal": "BLUE",
+            "note": "node/javascript, dashboard"
+          },
+          "commercial_readiness": {
+            "signal": "BLUE",
+            "note": "unknown"
+          },
+          "security": {
+            "signal": "YELLOW",
+            "note": "unknown"
+          },
+          "deployment": {
+            "signal": "RED",
+            "note": "Runtime NOT AUTHORIZED"
+          },
+          "mission_control_integration": {
+            "signal": "YELLOW",
+            "note": "registered_awaiting_integration"
+          }
+        },
+        "integration_pathway": "Awaiting MC department mapping · visible in census",
+        "architecture_posture": "prototype_or_codebase"
+      }
     },
     {
       "registry_id": "at-princess-blackie-copitol",
@@ -1007,7 +2018,7 @@
       },
       "current_phase": "Turtle / observe",
       "recommended_next_action": "Visible in registry — awaiting Mission Control department mapping",
-      "last_review": "2026-07-04",
+      "last_review": "2026-07-08",
       "owner": "AMK-Goku",
       "priority": "normal",
       "notes": "Duplicate registry id — consolidate when human-gated. Same path as at-princess-blackie-copilot.",
@@ -1015,9 +2026,12 @@
       "universe_id": "ZSU-0011",
       "timeline": {
         "first_discovered": "2026-07-04",
-        "last_reviewed": "2026-07-04",
+        "last_reviewed": "2026-07-08",
         "last_activity": "2026-06-24",
-        "lifecycle_stage": "Turtle / observe"
+        "lifecycle_stage": "Turtle / observe",
+        "next_milestone": "Mission Control visibility",
+        "current_blocker": "merge_hold_active",
+        "next_recommended_action": "Visible in registry — awaiting Mission Control department mapping"
       },
       "confidence": {
         "universe_id": {
@@ -1057,7 +2071,123 @@
           "source": "department_and_indicator_registry"
         }
       },
-      "last_activity": "2026-06-24"
+      "last_activity": "2026-06-24",
+      "census": {
+        "purpose": "Duplicate registry id — consolidate when human-gated. Same path as at-princess-blackie-copilot.",
+        "purpose_confidence": {
+          "level": "confirmed",
+          "source": "z_pc_root_projects.json"
+        },
+        "turtle_indicator": {
+          "code": "turtle_mode",
+          "emoji": "🐢",
+          "label": "Turtle Mode"
+        },
+        "ai_ecosystem": {
+          "lead_ai": {
+            "role": "Zuno",
+            "id": "zuno",
+            "confidence": "inferred"
+          },
+          "builder_ai": {
+            "role": "Cursor",
+            "id": "cursor",
+            "confidence": "confirmed"
+          },
+          "repository_ai": {
+            "role": "None / link-only",
+            "id": "local",
+            "confidence": "confirmed"
+          },
+          "infrastructure_ai": {
+            "role": "None (local)",
+            "id": "local",
+            "confidence": "inferred"
+          },
+          "specialist_ais": [
+            {
+              "role": "OpenAI / Copilot",
+              "id": "openai",
+              "confidence": "inferred"
+            }
+          ],
+          "human_steward": {
+            "role": "AMK-Goku",
+            "id": "amk-goku",
+            "confidence": "confirmed"
+          }
+        },
+        "foundation_adoption": {
+          "compassion_charter": {
+            "status": "unknown",
+            "reference_only": true
+          },
+          "turtle_mode": {
+            "status": "partial",
+            "reference_only": true
+          },
+          "drp": {
+            "status": "unknown",
+            "reference_only": true
+          },
+          "ai_constitution": {
+            "status": "unknown",
+            "reference_only": true
+          },
+          "consent": {
+            "status": "unknown",
+            "reference_only": true
+          },
+          "foundation_doctrines": {
+            "status": "unknown",
+            "reference_only": true
+          },
+          "confidence": {
+            "level": "unknown",
+            "source": "insufficient_metadata"
+          }
+        },
+        "readiness_matrix": {
+          "architecture": {
+            "signal": "YELLOW",
+            "note": "growing"
+          },
+          "governance": {
+            "signal": "GREEN",
+            "note": "Merge Hold default"
+          },
+          "documentation": {
+            "signal": "GREEN",
+            "note": "strong"
+          },
+          "ai_readiness": {
+            "signal": "BLUE",
+            "note": "Track A / charters"
+          },
+          "technical_readiness": {
+            "signal": "BLUE",
+            "note": "node/javascript, dashboard"
+          },
+          "commercial_readiness": {
+            "signal": "BLUE",
+            "note": "unknown"
+          },
+          "security": {
+            "signal": "YELLOW",
+            "note": "unknown"
+          },
+          "deployment": {
+            "signal": "RED",
+            "note": "Runtime NOT AUTHORIZED"
+          },
+          "mission_control_integration": {
+            "signal": "YELLOW",
+            "note": "registered_awaiting_integration"
+          }
+        },
+        "integration_pathway": "Awaiting MC department mapping · visible in census",
+        "architecture_posture": "prototype_or_codebase"
+      }
     },
     {
       "registry_id": "pc-root-extras-and-tools",
@@ -1121,7 +2251,7 @@
       },
       "current_phase": "Turtle / observe",
       "recommended_next_action": "Visible in registry — awaiting Mission Control department mapping",
-      "last_review": "2026-07-04",
+      "last_review": "2026-07-08",
       "owner": "AMK-Goku",
       "priority": "normal",
       "notes": "Canonical PC-root sink for installers, portable tools, large downloads, zips, and other non-repo artefacts. Keeps product repos (hub + members) clean. Not an app codebase — do not run SSWS here. Z-Folder Manager hub policy (allowed_roots) applies only inside Z_Sanctuary_Universe; use this folder for PC-root hygiene. See docs/Z-PC-ROOT-EXTRAS-AND-TOOLS-SINK.md.",
@@ -1129,9 +2259,12 @@
       "universe_id": "ZSU-0014",
       "timeline": {
         "first_discovered": "2026-07-04",
-        "last_reviewed": "2026-07-04",
+        "last_reviewed": "2026-07-08",
         "last_activity": "2026-04-15",
-        "lifecycle_stage": "Turtle / observe"
+        "lifecycle_stage": "Turtle / observe",
+        "next_milestone": "Mission Control visibility",
+        "current_blocker": "merge_hold_active",
+        "next_recommended_action": "Visible in registry — awaiting Mission Control department mapping"
       },
       "confidence": {
         "universe_id": {
@@ -1171,7 +2304,117 @@
           "source": "department_and_indicator_registry"
         }
       },
-      "last_activity": "2026-04-15"
+      "last_activity": "2026-04-15",
+      "census": {
+        "purpose": "Canonical PC-root sink for installers, portable tools, large downloads, zips, and other non-repo artefacts. Keeps product repos (hub + members) clean. Not an app codebase — do not run SSWS here. Z-Folder Manager hub policy (allowed_roots) applies only inside Z_Sanctuary_Universe; use this folder for PC-root hygiene. See docs/Z-PC-ROOT-EXTRAS-AND-TOOLS-SINK.md.",
+        "purpose_confidence": {
+          "level": "confirmed",
+          "source": "z_pc_root_projects.json"
+        },
+        "turtle_indicator": {
+          "code": "documentation",
+          "emoji": "🟡",
+          "label": "Documentation"
+        },
+        "ai_ecosystem": {
+          "lead_ai": {
+            "role": "Zuno",
+            "id": "zuno",
+            "confidence": "inferred"
+          },
+          "builder_ai": {
+            "role": "Cursor",
+            "id": "cursor",
+            "confidence": "confirmed"
+          },
+          "repository_ai": {
+            "role": "None / link-only",
+            "id": "local",
+            "confidence": "confirmed"
+          },
+          "infrastructure_ai": {
+            "role": "None (local)",
+            "id": "local",
+            "confidence": "inferred"
+          },
+          "specialist_ais": [],
+          "human_steward": {
+            "role": "AMK-Goku",
+            "id": "amk-goku",
+            "confidence": "confirmed"
+          }
+        },
+        "foundation_adoption": {
+          "compassion_charter": {
+            "status": "unknown",
+            "reference_only": true
+          },
+          "turtle_mode": {
+            "status": "partial",
+            "reference_only": true
+          },
+          "drp": {
+            "status": "unknown",
+            "reference_only": true
+          },
+          "ai_constitution": {
+            "status": "unknown",
+            "reference_only": true
+          },
+          "consent": {
+            "status": "unknown",
+            "reference_only": true
+          },
+          "foundation_doctrines": {
+            "status": "unknown",
+            "reference_only": true
+          },
+          "confidence": {
+            "level": "unknown",
+            "source": "insufficient_metadata"
+          }
+        },
+        "readiness_matrix": {
+          "architecture": {
+            "signal": "YELLOW",
+            "note": "growing"
+          },
+          "governance": {
+            "signal": "GREEN",
+            "note": "Merge Hold default"
+          },
+          "documentation": {
+            "signal": "YELLOW",
+            "note": "partial"
+          },
+          "ai_readiness": {
+            "signal": "BLUE",
+            "note": "Track A / charters"
+          },
+          "technical_readiness": {
+            "signal": "BLUE",
+            "note": "node/javascript"
+          },
+          "commercial_readiness": {
+            "signal": "BLUE",
+            "note": "unknown"
+          },
+          "security": {
+            "signal": "YELLOW",
+            "note": "unknown"
+          },
+          "deployment": {
+            "signal": "RED",
+            "note": "Runtime NOT AUTHORIZED"
+          },
+          "mission_control_integration": {
+            "signal": "YELLOW",
+            "note": "registered_awaiting_integration"
+          }
+        },
+        "integration_pathway": "Awaiting MC department mapping · visible in census",
+        "architecture_posture": "prototype_or_codebase"
+      }
     },
     {
       "registry_id": "replit-roulette-z-amk-goku-mdcp",
@@ -1233,7 +2476,7 @@
       },
       "current_phase": "Turtle / observe",
       "recommended_next_action": "Turtle Mode — observe; no runtime coupling without charter",
-      "last_review": "2026-07-04",
+      "last_review": "2026-07-08",
       "owner": "AMK-Goku",
       "priority": "normal",
       "notes": "Hosted on Replit; no pc_root folder. Link-only until migrated to hub-controlled deploy (e.g. Cloudflare). Replace dashboard_url with live .replit.dev preview if you prefer that entry point.",
@@ -1241,9 +2484,12 @@
       "universe_id": "ZSU-0015",
       "timeline": {
         "first_discovered": "2026-07-04",
-        "last_reviewed": "2026-07-04",
+        "last_reviewed": "2026-07-08",
         "last_activity": null,
-        "lifecycle_stage": "Turtle / observe"
+        "lifecycle_stage": "Turtle / observe",
+        "next_milestone": "Add README / docs",
+        "current_blocker": "documentation_gap",
+        "next_recommended_action": "Turtle Mode — observe; no runtime coupling without charter"
       },
       "confidence": {
         "universe_id": {
@@ -1283,7 +2529,123 @@
           "source": "department_and_indicator_registry"
         }
       },
-      "last_activity": null
+      "last_activity": null,
+      "census": {
+        "purpose": "Roulette data analyzer on Replit",
+        "purpose_confidence": {
+          "level": "confirmed",
+          "source": "registry_id_map"
+        },
+        "turtle_indicator": {
+          "code": "research",
+          "emoji": "🟣",
+          "label": "Research"
+        },
+        "ai_ecosystem": {
+          "lead_ai": {
+            "role": "Zuno",
+            "id": "zuno",
+            "confidence": "inferred"
+          },
+          "builder_ai": {
+            "role": "Cursor",
+            "id": "cursor",
+            "confidence": "confirmed"
+          },
+          "repository_ai": {
+            "role": "Replit",
+            "id": "replit",
+            "confidence": "confirmed"
+          },
+          "infrastructure_ai": {
+            "role": "Replit",
+            "id": "replit",
+            "confidence": "confirmed"
+          },
+          "specialist_ais": [
+            {
+              "role": "Replit hosting",
+              "id": "replit",
+              "confidence": "confirmed"
+            }
+          ],
+          "human_steward": {
+            "role": "AMK-Goku",
+            "id": "amk-goku",
+            "confidence": "confirmed"
+          }
+        },
+        "foundation_adoption": {
+          "compassion_charter": {
+            "status": "unknown",
+            "reference_only": true
+          },
+          "turtle_mode": {
+            "status": "partial",
+            "reference_only": true
+          },
+          "drp": {
+            "status": "unknown",
+            "reference_only": true
+          },
+          "ai_constitution": {
+            "status": "unknown",
+            "reference_only": true
+          },
+          "consent": {
+            "status": "unknown",
+            "reference_only": true
+          },
+          "foundation_doctrines": {
+            "status": "unknown",
+            "reference_only": true
+          },
+          "confidence": {
+            "level": "unknown",
+            "source": "insufficient_metadata"
+          }
+        },
+        "readiness_matrix": {
+          "architecture": {
+            "signal": "BLUE",
+            "note": "research"
+          },
+          "governance": {
+            "signal": "GREEN",
+            "note": "Merge Hold default"
+          },
+          "documentation": {
+            "signal": "RED",
+            "note": "missing"
+          },
+          "ai_readiness": {
+            "signal": "BLUE",
+            "note": "Track A / charters"
+          },
+          "technical_readiness": {
+            "signal": "BLUE",
+            "note": "unknown"
+          },
+          "commercial_readiness": {
+            "signal": "BLUE",
+            "note": "unknown"
+          },
+          "security": {
+            "signal": "YELLOW",
+            "note": "unknown"
+          },
+          "deployment": {
+            "signal": "RED",
+            "note": "Runtime NOT AUTHORIZED"
+          },
+          "mission_control_integration": {
+            "signal": "BLUE",
+            "note": "link_only_external"
+          }
+        },
+        "integration_pathway": "Observe in Turtle Mode · charter before runtime coupling",
+        "architecture_posture": "planning_or_docs"
+      }
     },
     {
       "registry_id": "sister-aisling-sol",
@@ -1347,7 +2709,7 @@
       },
       "current_phase": "Turtle / observe",
       "recommended_next_action": "Visible in registry — awaiting Mission Control department mapping",
-      "last_review": "2026-07-04",
+      "last_review": "2026-07-08",
       "owner": "AMK-Goku",
       "priority": "normal",
       "notes": "ÉirMind lineage on disk — see docs/root-discovery-audit/EIRMIND_ALIGNMENT_DECISION.md",
@@ -1355,9 +2717,12 @@
       "universe_id": "ZSU-0016",
       "timeline": {
         "first_discovered": "2026-07-04",
-        "last_reviewed": "2026-07-04",
+        "last_reviewed": "2026-07-08",
         "last_activity": "2026-06-24",
-        "lifecycle_stage": "Turtle / observe"
+        "lifecycle_stage": "Turtle / observe",
+        "next_milestone": "Mission Control visibility",
+        "current_blocker": "merge_hold_active",
+        "next_recommended_action": "Visible in registry — awaiting Mission Control department mapping"
       },
       "confidence": {
         "universe_id": {
@@ -1397,7 +2762,117 @@
           "source": "department_and_indicator_registry"
         }
       },
-      "last_activity": "2026-06-24"
+      "last_activity": "2026-06-24",
+      "census": {
+        "purpose": "Sister Aisling Sol project",
+        "purpose_confidence": {
+          "level": "confirmed",
+          "source": "registry_id_map"
+        },
+        "turtle_indicator": {
+          "code": "documentation",
+          "emoji": "🟡",
+          "label": "Documentation"
+        },
+        "ai_ecosystem": {
+          "lead_ai": {
+            "role": "Zuno",
+            "id": "zuno",
+            "confidence": "inferred"
+          },
+          "builder_ai": {
+            "role": "Cursor",
+            "id": "cursor",
+            "confidence": "confirmed"
+          },
+          "repository_ai": {
+            "role": "None / link-only",
+            "id": "local",
+            "confidence": "confirmed"
+          },
+          "infrastructure_ai": {
+            "role": "None (local)",
+            "id": "local",
+            "confidence": "inferred"
+          },
+          "specialist_ais": [],
+          "human_steward": {
+            "role": "AMK-Goku",
+            "id": "amk-goku",
+            "confidence": "confirmed"
+          }
+        },
+        "foundation_adoption": {
+          "compassion_charter": {
+            "status": "unknown",
+            "reference_only": true
+          },
+          "turtle_mode": {
+            "status": "partial",
+            "reference_only": true
+          },
+          "drp": {
+            "status": "unknown",
+            "reference_only": true
+          },
+          "ai_constitution": {
+            "status": "unknown",
+            "reference_only": true
+          },
+          "consent": {
+            "status": "unknown",
+            "reference_only": true
+          },
+          "foundation_doctrines": {
+            "status": "unknown",
+            "reference_only": true
+          },
+          "confidence": {
+            "level": "unknown",
+            "source": "insufficient_metadata"
+          }
+        },
+        "readiness_matrix": {
+          "architecture": {
+            "signal": "YELLOW",
+            "note": "growing"
+          },
+          "governance": {
+            "signal": "GREEN",
+            "note": "Merge Hold default"
+          },
+          "documentation": {
+            "signal": "YELLOW",
+            "note": "partial"
+          },
+          "ai_readiness": {
+            "signal": "BLUE",
+            "note": "Track A / charters"
+          },
+          "technical_readiness": {
+            "signal": "BLUE",
+            "note": "node/javascript"
+          },
+          "commercial_readiness": {
+            "signal": "BLUE",
+            "note": "unknown"
+          },
+          "security": {
+            "signal": "YELLOW",
+            "note": "unknown"
+          },
+          "deployment": {
+            "signal": "RED",
+            "note": "Runtime NOT AUTHORIZED"
+          },
+          "mission_control_integration": {
+            "signal": "YELLOW",
+            "note": "registered_awaiting_integration"
+          }
+        },
+        "integration_pathway": "Awaiting MC department mapping · visible in census",
+        "architecture_posture": "prototype_or_codebase"
+      }
     },
     {
       "registry_id": "z-sanctuary-universe-2-continuation",
@@ -1410,8 +2885,8 @@
       ],
       "repository_status": {
         "is_git": true,
-        "branch": "cursor/zsanctuary/z-universe-mc-1-readonly-overlay",
-        "head": "c052c53",
+        "branch": "cursor/zsanctuary/z-universe-census-mc-0-6",
+        "head": "d540ee7",
         "dirty": true,
         "status": "ok"
       },
@@ -1461,7 +2936,7 @@
       },
       "current_phase": "Turtle / observe",
       "recommended_next_action": "Visible in registry — awaiting Mission Control department mapping",
-      "last_review": "2026-07-04",
+      "last_review": "2026-07-08",
       "owner": "AMK-Goku",
       "priority": "high",
       "notes": "Nested under hub (~110 files). **PC-root sibling also exists** — see z-sanctuary-universe-2-pc-root. Hub SSWS stays on Z_Sanctuary_Universe only.",
@@ -1469,9 +2944,12 @@
       "universe_id": "ZSU-0027",
       "timeline": {
         "first_discovered": "2026-07-04",
-        "last_reviewed": "2026-07-04",
+        "last_reviewed": "2026-07-08",
         "last_activity": "2026-07-04",
-        "lifecycle_stage": "Turtle / observe"
+        "lifecycle_stage": "Turtle / observe",
+        "next_milestone": "Mission Control visibility",
+        "current_blocker": "merge_hold_active",
+        "next_recommended_action": "Visible in registry — awaiting Mission Control department mapping"
       },
       "confidence": {
         "universe_id": {
@@ -1511,7 +2989,117 @@
           "source": "department_and_indicator_registry"
         }
       },
-      "last_activity": "2026-07-04"
+      "last_activity": "2026-07-04",
+      "census": {
+        "purpose": "Nested continuation tree under hub — migration copy candidate",
+        "purpose_confidence": {
+          "level": "confirmed",
+          "source": "registry_id_map"
+        },
+        "turtle_indicator": {
+          "code": "architecture",
+          "emoji": "🔵",
+          "label": "Architecture"
+        },
+        "ai_ecosystem": {
+          "lead_ai": {
+            "role": "Zuno",
+            "id": "zuno",
+            "confidence": "inferred"
+          },
+          "builder_ai": {
+            "role": "Cursor",
+            "id": "cursor",
+            "confidence": "confirmed"
+          },
+          "repository_ai": {
+            "role": "GitHub",
+            "id": "github",
+            "confidence": "confirmed"
+          },
+          "infrastructure_ai": {
+            "role": "None (local)",
+            "id": "local",
+            "confidence": "inferred"
+          },
+          "specialist_ais": [],
+          "human_steward": {
+            "role": "AMK-Goku",
+            "id": "amk-goku",
+            "confidence": "confirmed"
+          }
+        },
+        "foundation_adoption": {
+          "compassion_charter": {
+            "status": "unknown",
+            "reference_only": true
+          },
+          "turtle_mode": {
+            "status": "partial",
+            "reference_only": true
+          },
+          "drp": {
+            "status": "unknown",
+            "reference_only": true
+          },
+          "ai_constitution": {
+            "status": "unknown",
+            "reference_only": true
+          },
+          "consent": {
+            "status": "unknown",
+            "reference_only": true
+          },
+          "foundation_doctrines": {
+            "status": "unknown",
+            "reference_only": true
+          },
+          "confidence": {
+            "level": "unknown",
+            "source": "insufficient_metadata"
+          }
+        },
+        "readiness_matrix": {
+          "architecture": {
+            "signal": "GREEN",
+            "note": "core"
+          },
+          "governance": {
+            "signal": "GREEN",
+            "note": "Merge Hold default"
+          },
+          "documentation": {
+            "signal": "YELLOW",
+            "note": "partial"
+          },
+          "ai_readiness": {
+            "signal": "BLUE",
+            "note": "Track A / charters"
+          },
+          "technical_readiness": {
+            "signal": "YELLOW",
+            "note": "node/javascript"
+          },
+          "commercial_readiness": {
+            "signal": "YELLOW",
+            "note": "unknown"
+          },
+          "security": {
+            "signal": "YELLOW",
+            "note": "unknown"
+          },
+          "deployment": {
+            "signal": "RED",
+            "note": "Runtime NOT AUTHORIZED"
+          },
+          "mission_control_integration": {
+            "signal": "YELLOW",
+            "note": "registered_awaiting_integration"
+          }
+        },
+        "integration_pathway": "Successor/duplicate review — human gate before SSWS promotion",
+        "architecture_posture": "prototype_or_codebase"
+      }
     },
     {
       "registry_id": "z-sanctuary-universe-2-pc-root",
@@ -1575,7 +3163,7 @@
       },
       "current_phase": "Turtle / observe",
       "recommended_next_action": "Visible in registry — awaiting Mission Control department mapping",
-      "last_review": "2026-07-04",
+      "last_review": "2026-07-08",
       "owner": "AMK-Goku",
       "priority": "high",
       "notes": "Larger continuation tree at PC root (~3176 files). Distinct from nested hub copy. AMK: clarify canonical continuation path before SSWS promotion.",
@@ -1583,9 +3171,12 @@
       "universe_id": "ZSU-0007",
       "timeline": {
         "first_discovered": "2026-07-04",
-        "last_reviewed": "2026-07-04",
+        "last_reviewed": "2026-07-08",
         "last_activity": "2026-06-24",
-        "lifecycle_stage": "Turtle / observe"
+        "lifecycle_stage": "Turtle / observe",
+        "next_milestone": "Mission Control visibility",
+        "current_blocker": "merge_hold_active",
+        "next_recommended_action": "Visible in registry — awaiting Mission Control department mapping"
       },
       "confidence": {
         "universe_id": {
@@ -1625,7 +3216,117 @@
           "source": "department_and_indicator_registry"
         }
       },
-      "last_activity": "2026-06-24"
+      "last_activity": "2026-06-24",
+      "census": {
+        "purpose": "Continuation / parallel hub tree — clarify canonical path (successor candidate)",
+        "purpose_confidence": {
+          "level": "confirmed",
+          "source": "registry_id_map"
+        },
+        "turtle_indicator": {
+          "code": "architecture",
+          "emoji": "🔵",
+          "label": "Architecture"
+        },
+        "ai_ecosystem": {
+          "lead_ai": {
+            "role": "Zuno",
+            "id": "zuno",
+            "confidence": "inferred"
+          },
+          "builder_ai": {
+            "role": "Cursor",
+            "id": "cursor",
+            "confidence": "confirmed"
+          },
+          "repository_ai": {
+            "role": "None / link-only",
+            "id": "local",
+            "confidence": "confirmed"
+          },
+          "infrastructure_ai": {
+            "role": "None (local)",
+            "id": "local",
+            "confidence": "inferred"
+          },
+          "specialist_ais": [],
+          "human_steward": {
+            "role": "AMK-Goku",
+            "id": "amk-goku",
+            "confidence": "confirmed"
+          }
+        },
+        "foundation_adoption": {
+          "compassion_charter": {
+            "status": "unknown",
+            "reference_only": true
+          },
+          "turtle_mode": {
+            "status": "partial",
+            "reference_only": true
+          },
+          "drp": {
+            "status": "unknown",
+            "reference_only": true
+          },
+          "ai_constitution": {
+            "status": "unknown",
+            "reference_only": true
+          },
+          "consent": {
+            "status": "unknown",
+            "reference_only": true
+          },
+          "foundation_doctrines": {
+            "status": "unknown",
+            "reference_only": true
+          },
+          "confidence": {
+            "level": "unknown",
+            "source": "insufficient_metadata"
+          }
+        },
+        "readiness_matrix": {
+          "architecture": {
+            "signal": "GREEN",
+            "note": "core"
+          },
+          "governance": {
+            "signal": "GREEN",
+            "note": "Merge Hold default"
+          },
+          "documentation": {
+            "signal": "YELLOW",
+            "note": "partial"
+          },
+          "ai_readiness": {
+            "signal": "BLUE",
+            "note": "Track A / charters"
+          },
+          "technical_readiness": {
+            "signal": "BLUE",
+            "note": "node/javascript"
+          },
+          "commercial_readiness": {
+            "signal": "YELLOW",
+            "note": "unknown"
+          },
+          "security": {
+            "signal": "YELLOW",
+            "note": "unknown"
+          },
+          "deployment": {
+            "signal": "RED",
+            "note": "Runtime NOT AUTHORIZED"
+          },
+          "mission_control_integration": {
+            "signal": "YELLOW",
+            "note": "registered_awaiting_integration"
+          }
+        },
+        "integration_pathway": "Successor/duplicate review — human gate before SSWS promotion",
+        "architecture_posture": "prototype_or_codebase"
+      }
     },
     {
       "registry_id": "z-omni-sanctuary",
@@ -1691,7 +3392,7 @@
       },
       "current_phase": "Turtle / observe",
       "recommended_next_action": "Visible in registry — awaiting Mission Control department mapping",
-      "last_review": "2026-07-04",
+      "last_review": "2026-07-08",
       "owner": "AMK-Goku",
       "priority": "normal",
       "notes": "",
@@ -1699,9 +3400,12 @@
       "universe_id": "ZSU-0017",
       "timeline": {
         "first_discovered": "2026-07-04",
-        "last_reviewed": "2026-07-04",
+        "last_reviewed": "2026-07-08",
         "last_activity": "2026-06-24",
-        "lifecycle_stage": "Turtle / observe"
+        "lifecycle_stage": "Turtle / observe",
+        "next_milestone": "Mission Control visibility",
+        "current_blocker": "merge_hold_active",
+        "next_recommended_action": "Visible in registry — awaiting Mission Control department mapping"
       },
       "confidence": {
         "universe_id": {
@@ -1741,7 +3445,117 @@
           "source": "department_and_indicator_registry"
         }
       },
-      "last_activity": "2026-06-24"
+      "last_activity": "2026-06-24",
+      "census": {
+        "purpose": "OMNI sanctuary integration layer",
+        "purpose_confidence": {
+          "level": "confirmed",
+          "source": "registry_id_map"
+        },
+        "turtle_indicator": {
+          "code": "documentation",
+          "emoji": "🟡",
+          "label": "Documentation"
+        },
+        "ai_ecosystem": {
+          "lead_ai": {
+            "role": "Zuno",
+            "id": "zuno",
+            "confidence": "inferred"
+          },
+          "builder_ai": {
+            "role": "Cursor",
+            "id": "cursor",
+            "confidence": "confirmed"
+          },
+          "repository_ai": {
+            "role": "None / link-only",
+            "id": "local",
+            "confidence": "confirmed"
+          },
+          "infrastructure_ai": {
+            "role": "None (local)",
+            "id": "local",
+            "confidence": "inferred"
+          },
+          "specialist_ais": [],
+          "human_steward": {
+            "role": "AMK-Goku",
+            "id": "amk-goku",
+            "confidence": "confirmed"
+          }
+        },
+        "foundation_adoption": {
+          "compassion_charter": {
+            "status": "unknown",
+            "reference_only": true
+          },
+          "turtle_mode": {
+            "status": "partial",
+            "reference_only": true
+          },
+          "drp": {
+            "status": "unknown",
+            "reference_only": true
+          },
+          "ai_constitution": {
+            "status": "unknown",
+            "reference_only": true
+          },
+          "consent": {
+            "status": "unknown",
+            "reference_only": true
+          },
+          "foundation_doctrines": {
+            "status": "unknown",
+            "reference_only": true
+          },
+          "confidence": {
+            "level": "unknown",
+            "source": "insufficient_metadata"
+          }
+        },
+        "readiness_matrix": {
+          "architecture": {
+            "signal": "YELLOW",
+            "note": "growing"
+          },
+          "governance": {
+            "signal": "GREEN",
+            "note": "Merge Hold default"
+          },
+          "documentation": {
+            "signal": "YELLOW",
+            "note": "partial"
+          },
+          "ai_readiness": {
+            "signal": "BLUE",
+            "note": "Track A / charters"
+          },
+          "technical_readiness": {
+            "signal": "BLUE",
+            "note": "node/javascript, python, dashboard"
+          },
+          "commercial_readiness": {
+            "signal": "BLUE",
+            "note": "unknown"
+          },
+          "security": {
+            "signal": "YELLOW",
+            "note": "unknown"
+          },
+          "deployment": {
+            "signal": "RED",
+            "note": "Runtime NOT AUTHORIZED"
+          },
+          "mission_control_integration": {
+            "signal": "YELLOW",
+            "note": "registered_awaiting_integration"
+          }
+        },
+        "integration_pathway": "Awaiting MC department mapping · visible in census",
+        "architecture_posture": "prototype_or_codebase"
+      }
     },
     {
       "registry_id": "z-sanctuary-ai-skyscraper",
@@ -1803,7 +3617,7 @@
       },
       "current_phase": "Turtle / observe",
       "recommended_next_action": "Add README/docs; classify lane after review",
-      "last_review": "2026-07-04",
+      "last_review": "2026-07-08",
       "owner": "AMK-Goku",
       "priority": "normal",
       "notes": "",
@@ -1811,9 +3625,12 @@
       "universe_id": "ZSU-0019",
       "timeline": {
         "first_discovered": "2026-07-04",
-        "last_reviewed": "2026-07-04",
+        "last_reviewed": "2026-07-08",
         "last_activity": null,
-        "lifecycle_stage": "Turtle / observe"
+        "lifecycle_stage": "Turtle / observe",
+        "next_milestone": "Add README / docs",
+        "current_blocker": "documentation_gap",
+        "next_recommended_action": "Add README/docs; classify lane after review"
       },
       "confidence": {
         "universe_id": {
@@ -1853,7 +3670,117 @@
           "source": "department_and_indicator_registry"
         }
       },
-      "last_activity": null
+      "last_activity": null,
+      "census": {
+        "purpose": "AI Skyscraper colony / dashboard colony",
+        "purpose_confidence": {
+          "level": "confirmed",
+          "source": "registry_id_map"
+        },
+        "turtle_indicator": {
+          "code": "documentation",
+          "emoji": "🟡",
+          "label": "Documentation"
+        },
+        "ai_ecosystem": {
+          "lead_ai": {
+            "role": "Zuno",
+            "id": "zuno",
+            "confidence": "inferred"
+          },
+          "builder_ai": {
+            "role": "Cursor",
+            "id": "cursor",
+            "confidence": "confirmed"
+          },
+          "repository_ai": {
+            "role": "None / link-only",
+            "id": "local",
+            "confidence": "confirmed"
+          },
+          "infrastructure_ai": {
+            "role": "None (local)",
+            "id": "local",
+            "confidence": "inferred"
+          },
+          "specialist_ais": [],
+          "human_steward": {
+            "role": "AMK-Goku",
+            "id": "amk-goku",
+            "confidence": "confirmed"
+          }
+        },
+        "foundation_adoption": {
+          "compassion_charter": {
+            "status": "unknown",
+            "reference_only": true
+          },
+          "turtle_mode": {
+            "status": "partial",
+            "reference_only": true
+          },
+          "drp": {
+            "status": "unknown",
+            "reference_only": true
+          },
+          "ai_constitution": {
+            "status": "unknown",
+            "reference_only": true
+          },
+          "consent": {
+            "status": "unknown",
+            "reference_only": true
+          },
+          "foundation_doctrines": {
+            "status": "unknown",
+            "reference_only": true
+          },
+          "confidence": {
+            "level": "unknown",
+            "source": "insufficient_metadata"
+          }
+        },
+        "readiness_matrix": {
+          "architecture": {
+            "signal": "BLUE",
+            "note": "unknown"
+          },
+          "governance": {
+            "signal": "GREEN",
+            "note": "Merge Hold default"
+          },
+          "documentation": {
+            "signal": "RED",
+            "note": "missing"
+          },
+          "ai_readiness": {
+            "signal": "BLUE",
+            "note": "Track A / charters"
+          },
+          "technical_readiness": {
+            "signal": "BLUE",
+            "note": "unknown"
+          },
+          "commercial_readiness": {
+            "signal": "BLUE",
+            "note": "unknown"
+          },
+          "security": {
+            "signal": "YELLOW",
+            "note": "unknown"
+          },
+          "deployment": {
+            "signal": "RED",
+            "note": "Runtime NOT AUTHORIZED"
+          },
+          "mission_control_integration": {
+            "signal": "YELLOW",
+            "note": "registered_awaiting_integration"
+          }
+        },
+        "integration_pathway": "Awaiting MC department mapping · visible in census",
+        "architecture_posture": "planning_or_docs"
+      }
     },
     {
       "registry_id": "z-sanctuary-browser-z-saiyan-lumina",
@@ -1915,7 +3842,7 @@
       },
       "current_phase": "Turtle / observe",
       "recommended_next_action": "Turtle Mode — observe; no runtime coupling without charter",
-      "last_review": "2026-07-04",
+      "last_review": "2026-07-08",
       "owner": "AMK-Goku",
       "priority": "normal",
       "notes": "Folder `Z-Sanctuary Browser` absent on disk 2026-07-01. Restore from backup or archive registry row after AMK review.",
@@ -1923,9 +3850,12 @@
       "universe_id": "ZSU-0021",
       "timeline": {
         "first_discovered": "2026-07-04",
-        "last_reviewed": "2026-07-04",
+        "last_reviewed": "2026-07-08",
         "last_activity": null,
-        "lifecycle_stage": "Turtle / observe"
+        "lifecycle_stage": "Turtle / observe",
+        "next_milestone": "Add README / docs",
+        "current_blocker": "documentation_gap",
+        "next_recommended_action": "Turtle Mode — observe; no runtime coupling without charter"
       },
       "confidence": {
         "universe_id": {
@@ -1965,7 +3895,117 @@
           "source": "department_and_indicator_registry"
         }
       },
-      "last_activity": null
+      "last_activity": null,
+      "census": {
+        "purpose": "Browser / Lumina experience",
+        "purpose_confidence": {
+          "level": "confirmed",
+          "source": "registry_id_map"
+        },
+        "turtle_indicator": {
+          "code": "research",
+          "emoji": "🟣",
+          "label": "Research"
+        },
+        "ai_ecosystem": {
+          "lead_ai": {
+            "role": "Zuno",
+            "id": "zuno",
+            "confidence": "inferred"
+          },
+          "builder_ai": {
+            "role": "Cursor",
+            "id": "cursor",
+            "confidence": "confirmed"
+          },
+          "repository_ai": {
+            "role": "None / link-only",
+            "id": "missing",
+            "confidence": "confirmed"
+          },
+          "infrastructure_ai": {
+            "role": "None (local)",
+            "id": "local",
+            "confidence": "inferred"
+          },
+          "specialist_ais": [],
+          "human_steward": {
+            "role": "AMK-Goku",
+            "id": "amk-goku",
+            "confidence": "confirmed"
+          }
+        },
+        "foundation_adoption": {
+          "compassion_charter": {
+            "status": "unknown",
+            "reference_only": true
+          },
+          "turtle_mode": {
+            "status": "partial",
+            "reference_only": true
+          },
+          "drp": {
+            "status": "unknown",
+            "reference_only": true
+          },
+          "ai_constitution": {
+            "status": "unknown",
+            "reference_only": true
+          },
+          "consent": {
+            "status": "unknown",
+            "reference_only": true
+          },
+          "foundation_doctrines": {
+            "status": "unknown",
+            "reference_only": true
+          },
+          "confidence": {
+            "level": "unknown",
+            "source": "insufficient_metadata"
+          }
+        },
+        "readiness_matrix": {
+          "architecture": {
+            "signal": "BLUE",
+            "note": "research"
+          },
+          "governance": {
+            "signal": "GREEN",
+            "note": "Merge Hold default"
+          },
+          "documentation": {
+            "signal": "RED",
+            "note": "missing"
+          },
+          "ai_readiness": {
+            "signal": "BLUE",
+            "note": "Track A / charters"
+          },
+          "technical_readiness": {
+            "signal": "BLUE",
+            "note": "unknown"
+          },
+          "commercial_readiness": {
+            "signal": "BLUE",
+            "note": "unknown"
+          },
+          "security": {
+            "signal": "YELLOW",
+            "note": "unknown"
+          },
+          "deployment": {
+            "signal": "RED",
+            "note": "Runtime NOT AUTHORIZED"
+          },
+          "mission_control_integration": {
+            "signal": "BLUE",
+            "note": "link_only_external"
+          }
+        },
+        "integration_pathway": "Observe in Turtle Mode · charter before runtime coupling",
+        "architecture_posture": "planning_or_docs"
+      }
     },
     {
       "registry_id": "z-sanctuary-claude-core",
@@ -2029,7 +4069,7 @@
       },
       "current_phase": "Turtle / observe",
       "recommended_next_action": "Visible in registry — awaiting Mission Control department mapping",
-      "last_review": "2026-07-04",
+      "last_review": "2026-07-08",
       "owner": "AMK-Goku",
       "priority": "normal",
       "notes": "",
@@ -2037,9 +4077,12 @@
       "universe_id": "ZSU-0022",
       "timeline": {
         "first_discovered": "2026-07-04",
-        "last_reviewed": "2026-07-04",
+        "last_reviewed": "2026-07-08",
         "last_activity": "2026-06-24",
-        "lifecycle_stage": "Turtle / observe"
+        "lifecycle_stage": "Turtle / observe",
+        "next_milestone": "Mission Control visibility",
+        "current_blocker": "merge_hold_active",
+        "next_recommended_action": "Visible in registry — awaiting Mission Control department mapping"
       },
       "confidence": {
         "universe_id": {
@@ -2079,7 +4122,123 @@
           "source": "department_and_indicator_registry"
         }
       },
-      "last_activity": "2026-06-24"
+      "last_activity": "2026-06-24",
+      "census": {
+        "purpose": "Claude-oriented core experiments",
+        "purpose_confidence": {
+          "level": "confirmed",
+          "source": "registry_id_map"
+        },
+        "turtle_indicator": {
+          "code": "documentation",
+          "emoji": "🟡",
+          "label": "Documentation"
+        },
+        "ai_ecosystem": {
+          "lead_ai": {
+            "role": "Zuno",
+            "id": "zuno",
+            "confidence": "inferred"
+          },
+          "builder_ai": {
+            "role": "Cursor",
+            "id": "cursor",
+            "confidence": "confirmed"
+          },
+          "repository_ai": {
+            "role": "None / link-only",
+            "id": "local",
+            "confidence": "confirmed"
+          },
+          "infrastructure_ai": {
+            "role": "None (local)",
+            "id": "local",
+            "confidence": "inferred"
+          },
+          "specialist_ais": [
+            {
+              "role": "Claude",
+              "id": "claude",
+              "confidence": "confirmed"
+            }
+          ],
+          "human_steward": {
+            "role": "AMK-Goku",
+            "id": "amk-goku",
+            "confidence": "confirmed"
+          }
+        },
+        "foundation_adoption": {
+          "compassion_charter": {
+            "status": "unknown",
+            "reference_only": true
+          },
+          "turtle_mode": {
+            "status": "partial",
+            "reference_only": true
+          },
+          "drp": {
+            "status": "unknown",
+            "reference_only": true
+          },
+          "ai_constitution": {
+            "status": "unknown",
+            "reference_only": true
+          },
+          "consent": {
+            "status": "unknown",
+            "reference_only": true
+          },
+          "foundation_doctrines": {
+            "status": "unknown",
+            "reference_only": true
+          },
+          "confidence": {
+            "level": "unknown",
+            "source": "insufficient_metadata"
+          }
+        },
+        "readiness_matrix": {
+          "architecture": {
+            "signal": "YELLOW",
+            "note": "growing"
+          },
+          "governance": {
+            "signal": "GREEN",
+            "note": "Merge Hold default"
+          },
+          "documentation": {
+            "signal": "YELLOW",
+            "note": "partial"
+          },
+          "ai_readiness": {
+            "signal": "BLUE",
+            "note": "Track A / charters"
+          },
+          "technical_readiness": {
+            "signal": "BLUE",
+            "note": "node/javascript"
+          },
+          "commercial_readiness": {
+            "signal": "BLUE",
+            "note": "unknown"
+          },
+          "security": {
+            "signal": "YELLOW",
+            "note": "unknown"
+          },
+          "deployment": {
+            "signal": "RED",
+            "note": "Runtime NOT AUTHORIZED"
+          },
+          "mission_control_integration": {
+            "signal": "YELLOW",
+            "note": "registered_awaiting_integration"
+          }
+        },
+        "integration_pathway": "Awaiting MC department mapping · visible in census",
+        "architecture_posture": "prototype_or_codebase"
+      }
     },
     {
       "registry_id": "z-sanctuary-replit",
@@ -2141,7 +4300,7 @@
       },
       "current_phase": "Turtle / observe",
       "recommended_next_action": "Add README/docs; classify lane after review",
-      "last_review": "2026-07-04",
+      "last_review": "2026-07-08",
       "owner": "AMK-Goku",
       "priority": "normal",
       "notes": "Roulette-Data-Analyzer: from artifacts/roulette-dashboard run `pnpm dev` — use Vite printed Local URL only; not Live Server or raw index.html path.",
@@ -2149,9 +4308,12 @@
       "universe_id": "ZSU-0026",
       "timeline": {
         "first_discovered": "2026-07-04",
-        "last_reviewed": "2026-07-04",
+        "last_reviewed": "2026-07-08",
         "last_activity": null,
-        "lifecycle_stage": "Turtle / observe"
+        "lifecycle_stage": "Turtle / observe",
+        "next_milestone": "Mission Control visibility",
+        "current_blocker": "merge_hold_active",
+        "next_recommended_action": "Add README/docs; classify lane after review"
       },
       "confidence": {
         "universe_id": {
@@ -2191,7 +4353,123 @@
           "source": "department_and_indicator_registry"
         }
       },
-      "last_activity": null
+      "last_activity": null,
+      "census": {
+        "purpose": "Replit-hosted sanctuary experiments",
+        "purpose_confidence": {
+          "level": "confirmed",
+          "source": "registry_id_map"
+        },
+        "turtle_indicator": {
+          "code": "documentation",
+          "emoji": "🟡",
+          "label": "Documentation"
+        },
+        "ai_ecosystem": {
+          "lead_ai": {
+            "role": "Zuno",
+            "id": "zuno",
+            "confidence": "inferred"
+          },
+          "builder_ai": {
+            "role": "Cursor",
+            "id": "cursor",
+            "confidence": "confirmed"
+          },
+          "repository_ai": {
+            "role": "None / link-only",
+            "id": "local",
+            "confidence": "confirmed"
+          },
+          "infrastructure_ai": {
+            "role": "Replit",
+            "id": "replit",
+            "confidence": "confirmed"
+          },
+          "specialist_ais": [
+            {
+              "role": "Replit hosting",
+              "id": "replit",
+              "confidence": "confirmed"
+            }
+          ],
+          "human_steward": {
+            "role": "AMK-Goku",
+            "id": "amk-goku",
+            "confidence": "confirmed"
+          }
+        },
+        "foundation_adoption": {
+          "compassion_charter": {
+            "status": "unknown",
+            "reference_only": true
+          },
+          "turtle_mode": {
+            "status": "partial",
+            "reference_only": true
+          },
+          "drp": {
+            "status": "unknown",
+            "reference_only": true
+          },
+          "ai_constitution": {
+            "status": "unknown",
+            "reference_only": true
+          },
+          "consent": {
+            "status": "unknown",
+            "reference_only": true
+          },
+          "foundation_doctrines": {
+            "status": "unknown",
+            "reference_only": true
+          },
+          "confidence": {
+            "level": "unknown",
+            "source": "insufficient_metadata"
+          }
+        },
+        "readiness_matrix": {
+          "architecture": {
+            "signal": "BLUE",
+            "note": "unknown"
+          },
+          "governance": {
+            "signal": "GREEN",
+            "note": "Merge Hold default"
+          },
+          "documentation": {
+            "signal": "YELLOW",
+            "note": "partial"
+          },
+          "ai_readiness": {
+            "signal": "BLUE",
+            "note": "Track A / charters"
+          },
+          "technical_readiness": {
+            "signal": "BLUE",
+            "note": "unknown"
+          },
+          "commercial_readiness": {
+            "signal": "BLUE",
+            "note": "unknown"
+          },
+          "security": {
+            "signal": "YELLOW",
+            "note": "unknown"
+          },
+          "deployment": {
+            "signal": "RED",
+            "note": "Runtime NOT AUTHORIZED"
+          },
+          "mission_control_integration": {
+            "signal": "YELLOW",
+            "note": "registered_awaiting_integration"
+          }
+        },
+        "integration_pathway": "Awaiting MC department mapping · visible in census",
+        "architecture_posture": "planning_or_docs"
+      }
     },
     {
       "registry_id": "z-sanctuary-aimanity",
@@ -2255,7 +4533,7 @@
       },
       "current_phase": "Turtle / observe",
       "recommended_next_action": "Visible in registry — awaiting Mission Control department mapping",
-      "last_review": "2026-07-04",
+      "last_review": "2026-07-08",
       "owner": "AMK-Goku",
       "priority": "normal",
       "notes": "",
@@ -2263,9 +4541,12 @@
       "universe_id": "ZSU-0020",
       "timeline": {
         "first_discovered": "2026-07-04",
-        "last_reviewed": "2026-07-04",
+        "last_reviewed": "2026-07-08",
         "last_activity": "2026-05-01",
-        "lifecycle_stage": "Turtle / observe"
+        "lifecycle_stage": "Turtle / observe",
+        "next_milestone": "Mission Control visibility",
+        "current_blocker": "merge_hold_active",
+        "next_recommended_action": "Visible in registry — awaiting Mission Control department mapping"
       },
       "confidence": {
         "universe_id": {
@@ -2305,7 +4586,117 @@
           "source": "department_and_indicator_registry"
         }
       },
-      "last_activity": "2026-05-01"
+      "last_activity": "2026-05-01",
+      "census": {
+        "purpose": "Aimanity relationship / compassion-adjacent lane",
+        "purpose_confidence": {
+          "level": "confirmed",
+          "source": "registry_id_map"
+        },
+        "turtle_indicator": {
+          "code": "turtle_mode",
+          "emoji": "🐢",
+          "label": "Turtle Mode"
+        },
+        "ai_ecosystem": {
+          "lead_ai": {
+            "role": "Zuno",
+            "id": "zuno",
+            "confidence": "inferred"
+          },
+          "builder_ai": {
+            "role": "Cursor",
+            "id": "cursor",
+            "confidence": "confirmed"
+          },
+          "repository_ai": {
+            "role": "None / link-only",
+            "id": "local",
+            "confidence": "confirmed"
+          },
+          "infrastructure_ai": {
+            "role": "None (local)",
+            "id": "local",
+            "confidence": "inferred"
+          },
+          "specialist_ais": [],
+          "human_steward": {
+            "role": "AMK-Goku",
+            "id": "amk-goku",
+            "confidence": "confirmed"
+          }
+        },
+        "foundation_adoption": {
+          "compassion_charter": {
+            "status": "unknown",
+            "reference_only": true
+          },
+          "turtle_mode": {
+            "status": "partial",
+            "reference_only": true
+          },
+          "drp": {
+            "status": "unknown",
+            "reference_only": true
+          },
+          "ai_constitution": {
+            "status": "unknown",
+            "reference_only": true
+          },
+          "consent": {
+            "status": "unknown",
+            "reference_only": true
+          },
+          "foundation_doctrines": {
+            "status": "unknown",
+            "reference_only": true
+          },
+          "confidence": {
+            "level": "unknown",
+            "source": "insufficient_metadata"
+          }
+        },
+        "readiness_matrix": {
+          "architecture": {
+            "signal": "YELLOW",
+            "note": "growing"
+          },
+          "governance": {
+            "signal": "GREEN",
+            "note": "Merge Hold default"
+          },
+          "documentation": {
+            "signal": "GREEN",
+            "note": "strong"
+          },
+          "ai_readiness": {
+            "signal": "BLUE",
+            "note": "Track A / charters"
+          },
+          "technical_readiness": {
+            "signal": "BLUE",
+            "note": "node/javascript"
+          },
+          "commercial_readiness": {
+            "signal": "BLUE",
+            "note": "unknown"
+          },
+          "security": {
+            "signal": "YELLOW",
+            "note": "unknown"
+          },
+          "deployment": {
+            "signal": "RED",
+            "note": "Runtime NOT AUTHORIZED"
+          },
+          "mission_control_integration": {
+            "signal": "YELLOW",
+            "note": "registered_awaiting_integration"
+          }
+        },
+        "integration_pathway": "Awaiting MC department mapping · visible in census",
+        "architecture_posture": "prototype_or_codebase"
+      }
     },
     {
       "registry_id": "eirmind-ireland-projects-missing",
@@ -2367,7 +4758,7 @@
       },
       "current_phase": "Turtle / observe",
       "recommended_next_action": "Turtle Mode — observe; no runtime coupling without charter",
-      "last_review": "2026-07-04",
+      "last_review": "2026-07-08",
       "owner": "AMK-Goku",
       "priority": "normal",
       "notes": "Former path C:/Cursor Projects Organiser/Ireland Projects absent on disk 2026-06-11. Hold pending AMK — see EIRMIND_ALIGNMENT_DECISION.md. On-disk lineage: Z-Sister Aisling Sol.",
@@ -2375,9 +4766,12 @@
       "universe_id": "ZSU-0013",
       "timeline": {
         "first_discovered": "2026-07-04",
-        "last_reviewed": "2026-07-04",
+        "last_reviewed": "2026-07-08",
         "last_activity": null,
-        "lifecycle_stage": "Turtle / observe"
+        "lifecycle_stage": "Turtle / observe",
+        "next_milestone": "Add README / docs",
+        "current_blocker": "documentation_gap",
+        "next_recommended_action": "Turtle Mode — observe; no runtime coupling without charter"
       },
       "confidence": {
         "universe_id": {
@@ -2417,7 +4811,117 @@
           "source": "department_and_indicator_registry"
         }
       },
-      "last_activity": null
+      "last_activity": null,
+      "census": {
+        "purpose": "ÉirMind Ireland projects — path missing",
+        "purpose_confidence": {
+          "level": "confirmed",
+          "source": "registry_id_map"
+        },
+        "turtle_indicator": {
+          "code": "research",
+          "emoji": "🟣",
+          "label": "Research"
+        },
+        "ai_ecosystem": {
+          "lead_ai": {
+            "role": "Zuno",
+            "id": "zuno",
+            "confidence": "inferred"
+          },
+          "builder_ai": {
+            "role": "Cursor",
+            "id": "cursor",
+            "confidence": "confirmed"
+          },
+          "repository_ai": {
+            "role": "None / link-only",
+            "id": "missing",
+            "confidence": "confirmed"
+          },
+          "infrastructure_ai": {
+            "role": "None (local)",
+            "id": "local",
+            "confidence": "inferred"
+          },
+          "specialist_ais": [],
+          "human_steward": {
+            "role": "AMK-Goku",
+            "id": "amk-goku",
+            "confidence": "confirmed"
+          }
+        },
+        "foundation_adoption": {
+          "compassion_charter": {
+            "status": "unknown",
+            "reference_only": true
+          },
+          "turtle_mode": {
+            "status": "partial",
+            "reference_only": true
+          },
+          "drp": {
+            "status": "unknown",
+            "reference_only": true
+          },
+          "ai_constitution": {
+            "status": "unknown",
+            "reference_only": true
+          },
+          "consent": {
+            "status": "unknown",
+            "reference_only": true
+          },
+          "foundation_doctrines": {
+            "status": "unknown",
+            "reference_only": true
+          },
+          "confidence": {
+            "level": "unknown",
+            "source": "insufficient_metadata"
+          }
+        },
+        "readiness_matrix": {
+          "architecture": {
+            "signal": "BLUE",
+            "note": "research"
+          },
+          "governance": {
+            "signal": "GREEN",
+            "note": "Merge Hold default"
+          },
+          "documentation": {
+            "signal": "RED",
+            "note": "missing"
+          },
+          "ai_readiness": {
+            "signal": "BLUE",
+            "note": "Track A / charters"
+          },
+          "technical_readiness": {
+            "signal": "BLUE",
+            "note": "unknown"
+          },
+          "commercial_readiness": {
+            "signal": "BLUE",
+            "note": "unknown"
+          },
+          "security": {
+            "signal": "YELLOW",
+            "note": "unknown"
+          },
+          "deployment": {
+            "signal": "RED",
+            "note": "Runtime NOT AUTHORIZED"
+          },
+          "mission_control_integration": {
+            "signal": "BLUE",
+            "note": "link_only_external"
+          }
+        },
+        "integration_pathway": "Observe in Turtle Mode · charter before runtime coupling",
+        "architecture_posture": "planning_or_docs"
+      }
     },
     {
       "registry_id": "z-labs",
@@ -2481,7 +4985,7 @@
       },
       "current_phase": "Turtle / observe",
       "recommended_next_action": "Visible in registry — awaiting Mission Control department mapping",
-      "last_review": "2026-07-04",
+      "last_review": "2026-07-08",
       "owner": "AMK-Goku",
       "priority": "high",
       "notes": "Approved satellite — control-link manifest GREEN. Markdown relay golden copy lives here.",
@@ -2489,9 +4993,12 @@
       "universe_id": "ZSU-0002",
       "timeline": {
         "first_discovered": "2026-07-04",
-        "last_reviewed": "2026-07-04",
+        "last_reviewed": "2026-07-08",
         "last_activity": "2026-06-24",
-        "lifecycle_stage": "Turtle / observe"
+        "lifecycle_stage": "Turtle / observe",
+        "next_milestone": "Mission Control visibility",
+        "current_blocker": "merge_hold_active",
+        "next_recommended_action": "Visible in registry — awaiting Mission Control department mapping"
       },
       "confidence": {
         "universe_id": {
@@ -2531,7 +5038,117 @@
           "source": "department_and_indicator_registry"
         }
       },
-      "last_activity": "2026-06-24"
+      "last_activity": "2026-06-24",
+      "census": {
+        "purpose": "Approved satellite — markdown relay and Z_Labs experiments",
+        "purpose_confidence": {
+          "level": "confirmed",
+          "source": "registry_id_map"
+        },
+        "turtle_indicator": {
+          "code": "architecture",
+          "emoji": "🔵",
+          "label": "Architecture"
+        },
+        "ai_ecosystem": {
+          "lead_ai": {
+            "role": "Zuno",
+            "id": "zuno",
+            "confidence": "inferred"
+          },
+          "builder_ai": {
+            "role": "Cursor",
+            "id": "cursor",
+            "confidence": "confirmed"
+          },
+          "repository_ai": {
+            "role": "None / link-only",
+            "id": "local",
+            "confidence": "confirmed"
+          },
+          "infrastructure_ai": {
+            "role": "None (local)",
+            "id": "local",
+            "confidence": "inferred"
+          },
+          "specialist_ais": [],
+          "human_steward": {
+            "role": "AMK-Goku",
+            "id": "amk-goku",
+            "confidence": "confirmed"
+          }
+        },
+        "foundation_adoption": {
+          "compassion_charter": {
+            "status": "partial",
+            "reference_only": true
+          },
+          "turtle_mode": {
+            "status": "adopted",
+            "reference_only": true
+          },
+          "drp": {
+            "status": "partial",
+            "reference_only": true
+          },
+          "ai_constitution": {
+            "status": "planned",
+            "reference_only": true
+          },
+          "consent": {
+            "status": "planned",
+            "reference_only": true
+          },
+          "foundation_doctrines": {
+            "status": "partial",
+            "reference_only": true
+          },
+          "confidence": {
+            "level": "inferred",
+            "source": "satellite_control_link"
+          }
+        },
+        "readiness_matrix": {
+          "architecture": {
+            "signal": "GREEN",
+            "note": "core"
+          },
+          "governance": {
+            "signal": "GREEN",
+            "note": "Merge Hold default"
+          },
+          "documentation": {
+            "signal": "GREEN",
+            "note": "strong"
+          },
+          "ai_readiness": {
+            "signal": "BLUE",
+            "note": "Track A / charters"
+          },
+          "technical_readiness": {
+            "signal": "BLUE",
+            "note": "node/javascript"
+          },
+          "commercial_readiness": {
+            "signal": "YELLOW",
+            "note": "unknown"
+          },
+          "security": {
+            "signal": "YELLOW",
+            "note": "unknown"
+          },
+          "deployment": {
+            "signal": "RED",
+            "note": "Runtime NOT AUTHORIZED"
+          },
+          "mission_control_integration": {
+            "signal": "YELLOW",
+            "note": "registered_awaiting_integration"
+          }
+        },
+        "integration_pathway": "Awaiting MC department mapping · visible in census",
+        "architecture_posture": "prototype_or_codebase"
+      }
     },
     {
       "registry_id": "z-sanctuary-g",
@@ -2595,7 +5212,7 @@
       },
       "current_phase": "Turtle / observe",
       "recommended_next_action": "Visible in registry — awaiting Mission Control department mapping",
-      "last_review": "2026-07-04",
+      "last_review": "2026-07-08",
       "owner": "AMK-Goku",
       "priority": "normal",
       "notes": "Registered ROOT_SYSTEM_STABILITY_PASS 2026-07-01. package.json present; no root README.",
@@ -2603,9 +5220,12 @@
       "universe_id": "ZSU-0024",
       "timeline": {
         "first_discovered": "2026-07-04",
-        "last_reviewed": "2026-07-04",
+        "last_reviewed": "2026-07-08",
         "last_activity": "2026-06-24",
-        "lifecycle_stage": "Turtle / observe"
+        "lifecycle_stage": "Turtle / observe",
+        "next_milestone": "Mission Control visibility",
+        "current_blocker": "merge_hold_active",
+        "next_recommended_action": "Visible in registry — awaiting Mission Control department mapping"
       },
       "confidence": {
         "universe_id": {
@@ -2645,7 +5265,117 @@
           "source": "department_and_indicator_registry"
         }
       },
-      "last_activity": "2026-06-24"
+      "last_activity": "2026-06-24",
+      "census": {
+        "purpose": "Z-Sanctuary G variant",
+        "purpose_confidence": {
+          "level": "confirmed",
+          "source": "registry_id_map"
+        },
+        "turtle_indicator": {
+          "code": "documentation",
+          "emoji": "🟡",
+          "label": "Documentation"
+        },
+        "ai_ecosystem": {
+          "lead_ai": {
+            "role": "Zuno",
+            "id": "zuno",
+            "confidence": "inferred"
+          },
+          "builder_ai": {
+            "role": "Cursor",
+            "id": "cursor",
+            "confidence": "confirmed"
+          },
+          "repository_ai": {
+            "role": "None / link-only",
+            "id": "local",
+            "confidence": "confirmed"
+          },
+          "infrastructure_ai": {
+            "role": "None (local)",
+            "id": "local",
+            "confidence": "inferred"
+          },
+          "specialist_ais": [],
+          "human_steward": {
+            "role": "AMK-Goku",
+            "id": "amk-goku",
+            "confidence": "confirmed"
+          }
+        },
+        "foundation_adoption": {
+          "compassion_charter": {
+            "status": "unknown",
+            "reference_only": true
+          },
+          "turtle_mode": {
+            "status": "partial",
+            "reference_only": true
+          },
+          "drp": {
+            "status": "unknown",
+            "reference_only": true
+          },
+          "ai_constitution": {
+            "status": "unknown",
+            "reference_only": true
+          },
+          "consent": {
+            "status": "unknown",
+            "reference_only": true
+          },
+          "foundation_doctrines": {
+            "status": "unknown",
+            "reference_only": true
+          },
+          "confidence": {
+            "level": "unknown",
+            "source": "insufficient_metadata"
+          }
+        },
+        "readiness_matrix": {
+          "architecture": {
+            "signal": "YELLOW",
+            "note": "growing"
+          },
+          "governance": {
+            "signal": "GREEN",
+            "note": "Merge Hold default"
+          },
+          "documentation": {
+            "signal": "YELLOW",
+            "note": "partial"
+          },
+          "ai_readiness": {
+            "signal": "BLUE",
+            "note": "Track A / charters"
+          },
+          "technical_readiness": {
+            "signal": "BLUE",
+            "note": "node/javascript"
+          },
+          "commercial_readiness": {
+            "signal": "BLUE",
+            "note": "unknown"
+          },
+          "security": {
+            "signal": "YELLOW",
+            "note": "unknown"
+          },
+          "deployment": {
+            "signal": "RED",
+            "note": "Runtime NOT AUTHORIZED"
+          },
+          "mission_control_integration": {
+            "signal": "YELLOW",
+            "note": "registered_awaiting_integration"
+          }
+        },
+        "integration_pathway": "Awaiting MC department mapping · visible in census",
+        "architecture_posture": "prototype_or_codebase"
+      }
     },
     {
       "registry_id": "z-sanctuary-gem",
@@ -2709,7 +5439,7 @@
       },
       "current_phase": "Turtle / observe",
       "recommended_next_action": "Visible in registry — awaiting Mission Control department mapping",
-      "last_review": "2026-07-04",
+      "last_review": "2026-07-08",
       "owner": "AMK-Goku",
       "priority": "normal",
       "notes": "Registered ROOT_SYSTEM_STABILITY_PASS 2026-07-01. package.json + z_project_runtime.json.",
@@ -2717,9 +5447,12 @@
       "universe_id": "ZSU-0025",
       "timeline": {
         "first_discovered": "2026-07-04",
-        "last_reviewed": "2026-07-04",
+        "last_reviewed": "2026-07-08",
         "last_activity": "2026-06-24",
-        "lifecycle_stage": "Turtle / observe"
+        "lifecycle_stage": "Turtle / observe",
+        "next_milestone": "Mission Control visibility",
+        "current_blocker": "merge_hold_active",
+        "next_recommended_action": "Visible in registry — awaiting Mission Control department mapping"
       },
       "confidence": {
         "universe_id": {
@@ -2759,7 +5492,123 @@
           "source": "department_and_indicator_registry"
         }
       },
-      "last_activity": "2026-06-24"
+      "last_activity": "2026-06-24",
+      "census": {
+        "purpose": "Gemini-oriented experiments",
+        "purpose_confidence": {
+          "level": "confirmed",
+          "source": "registry_id_map"
+        },
+        "turtle_indicator": {
+          "code": "documentation",
+          "emoji": "🟡",
+          "label": "Documentation"
+        },
+        "ai_ecosystem": {
+          "lead_ai": {
+            "role": "Zuno",
+            "id": "zuno",
+            "confidence": "inferred"
+          },
+          "builder_ai": {
+            "role": "Cursor",
+            "id": "cursor",
+            "confidence": "confirmed"
+          },
+          "repository_ai": {
+            "role": "None / link-only",
+            "id": "local",
+            "confidence": "confirmed"
+          },
+          "infrastructure_ai": {
+            "role": "None (local)",
+            "id": "local",
+            "confidence": "inferred"
+          },
+          "specialist_ais": [
+            {
+              "role": "Gemini",
+              "id": "gemini",
+              "confidence": "confirmed"
+            }
+          ],
+          "human_steward": {
+            "role": "AMK-Goku",
+            "id": "amk-goku",
+            "confidence": "confirmed"
+          }
+        },
+        "foundation_adoption": {
+          "compassion_charter": {
+            "status": "unknown",
+            "reference_only": true
+          },
+          "turtle_mode": {
+            "status": "partial",
+            "reference_only": true
+          },
+          "drp": {
+            "status": "unknown",
+            "reference_only": true
+          },
+          "ai_constitution": {
+            "status": "unknown",
+            "reference_only": true
+          },
+          "consent": {
+            "status": "unknown",
+            "reference_only": true
+          },
+          "foundation_doctrines": {
+            "status": "unknown",
+            "reference_only": true
+          },
+          "confidence": {
+            "level": "unknown",
+            "source": "insufficient_metadata"
+          }
+        },
+        "readiness_matrix": {
+          "architecture": {
+            "signal": "YELLOW",
+            "note": "growing"
+          },
+          "governance": {
+            "signal": "GREEN",
+            "note": "Merge Hold default"
+          },
+          "documentation": {
+            "signal": "YELLOW",
+            "note": "partial"
+          },
+          "ai_readiness": {
+            "signal": "BLUE",
+            "note": "Track A / charters"
+          },
+          "technical_readiness": {
+            "signal": "BLUE",
+            "note": "node/javascript"
+          },
+          "commercial_readiness": {
+            "signal": "BLUE",
+            "note": "unknown"
+          },
+          "security": {
+            "signal": "YELLOW",
+            "note": "unknown"
+          },
+          "deployment": {
+            "signal": "RED",
+            "note": "Runtime NOT AUTHORIZED"
+          },
+          "mission_control_integration": {
+            "signal": "YELLOW",
+            "note": "registered_awaiting_integration"
+          }
+        },
+        "integration_pathway": "Awaiting MC department mapping · visible in census",
+        "architecture_posture": "prototype_or_codebase"
+      }
     },
     {
       "registry_id": "z-worksphere-marketplace-hub",
@@ -2823,7 +5672,7 @@
       },
       "current_phase": "Turtle / observe",
       "recommended_next_action": "Visible in registry — awaiting Mission Control department mapping",
-      "last_review": "2026-07-04",
+      "last_review": "2026-07-08",
       "owner": "AMK-Goku",
       "priority": "normal",
       "notes": "Flutter marketplace prototype. Registered stability pass 2026-07-01. Commerce HOLD per operational posture.",
@@ -2831,9 +5680,12 @@
       "universe_id": "ZSU-0028",
       "timeline": {
         "first_discovered": "2026-07-04",
-        "last_reviewed": "2026-07-04",
+        "last_reviewed": "2026-07-08",
         "last_activity": null,
-        "lifecycle_stage": "Turtle / observe"
+        "lifecycle_stage": "Turtle / observe",
+        "next_milestone": "Add README / docs",
+        "current_blocker": "documentation_gap",
+        "next_recommended_action": "Visible in registry — awaiting Mission Control department mapping"
       },
       "confidence": {
         "universe_id": {
@@ -2873,7 +5725,117 @@
           "source": "department_and_indicator_registry"
         }
       },
-      "last_activity": null
+      "last_activity": null,
+      "census": {
+        "purpose": "Marketplace hub prototype — Commerce HOLD",
+        "purpose_confidence": {
+          "level": "confirmed",
+          "source": "registry_id_map"
+        },
+        "turtle_indicator": {
+          "code": "documentation",
+          "emoji": "🟡",
+          "label": "Documentation"
+        },
+        "ai_ecosystem": {
+          "lead_ai": {
+            "role": "Zuno",
+            "id": "zuno",
+            "confidence": "inferred"
+          },
+          "builder_ai": {
+            "role": "Cursor",
+            "id": "cursor",
+            "confidence": "confirmed"
+          },
+          "repository_ai": {
+            "role": "None / link-only",
+            "id": "local",
+            "confidence": "confirmed"
+          },
+          "infrastructure_ai": {
+            "role": "None (local)",
+            "id": "local",
+            "confidence": "inferred"
+          },
+          "specialist_ais": [],
+          "human_steward": {
+            "role": "AMK-Goku",
+            "id": "amk-goku",
+            "confidence": "confirmed"
+          }
+        },
+        "foundation_adoption": {
+          "compassion_charter": {
+            "status": "unknown",
+            "reference_only": true
+          },
+          "turtle_mode": {
+            "status": "partial",
+            "reference_only": true
+          },
+          "drp": {
+            "status": "unknown",
+            "reference_only": true
+          },
+          "ai_constitution": {
+            "status": "unknown",
+            "reference_only": true
+          },
+          "consent": {
+            "status": "unknown",
+            "reference_only": true
+          },
+          "foundation_doctrines": {
+            "status": "unknown",
+            "reference_only": true
+          },
+          "confidence": {
+            "level": "unknown",
+            "source": "insufficient_metadata"
+          }
+        },
+        "readiness_matrix": {
+          "architecture": {
+            "signal": "YELLOW",
+            "note": "growing"
+          },
+          "governance": {
+            "signal": "GREEN",
+            "note": "Merge Hold default"
+          },
+          "documentation": {
+            "signal": "RED",
+            "note": "missing"
+          },
+          "ai_readiness": {
+            "signal": "BLUE",
+            "note": "Track A / charters"
+          },
+          "technical_readiness": {
+            "signal": "BLUE",
+            "note": "flutter/dart"
+          },
+          "commercial_readiness": {
+            "signal": "BLUE",
+            "note": "HOLD"
+          },
+          "security": {
+            "signal": "YELLOW",
+            "note": "unknown"
+          },
+          "deployment": {
+            "signal": "RED",
+            "note": "Runtime NOT AUTHORIZED"
+          },
+          "mission_control_integration": {
+            "signal": "YELLOW",
+            "note": "registered_awaiting_integration"
+          }
+        },
+        "integration_pathway": "Awaiting MC department mapping · visible in census",
+        "architecture_posture": "prototype_or_codebase"
+      }
     },
     {
       "registry_id": "z-sanctuary-external-paas",
@@ -2935,7 +5897,7 @@
       },
       "current_phase": "Turtle / observe",
       "recommended_next_action": "Add README/docs; classify lane after review",
-      "last_review": "2026-07-04",
+      "last_review": "2026-07-08",
       "owner": "AMK-Goku",
       "priority": "normal",
       "notes": "Hosting experiments. Registered stability pass 2026-07-01. No deploy without charter.",
@@ -2943,9 +5905,12 @@
       "universe_id": "ZSU-0023",
       "timeline": {
         "first_discovered": "2026-07-04",
-        "last_reviewed": "2026-07-04",
+        "last_reviewed": "2026-07-08",
         "last_activity": null,
-        "lifecycle_stage": "Turtle / observe"
+        "lifecycle_stage": "Turtle / observe",
+        "next_milestone": "Add README / docs",
+        "current_blocker": "documentation_gap",
+        "next_recommended_action": "Add README/docs; classify lane after review"
       },
       "confidence": {
         "universe_id": {
@@ -2985,7 +5950,117 @@
           "source": "department_and_indicator_registry"
         }
       },
-      "last_activity": null
+      "last_activity": null,
+      "census": {
+        "purpose": "External PaaS research",
+        "purpose_confidence": {
+          "level": "confirmed",
+          "source": "registry_id_map"
+        },
+        "turtle_indicator": {
+          "code": "documentation",
+          "emoji": "🟡",
+          "label": "Documentation"
+        },
+        "ai_ecosystem": {
+          "lead_ai": {
+            "role": "Zuno",
+            "id": "zuno",
+            "confidence": "inferred"
+          },
+          "builder_ai": {
+            "role": "Cursor",
+            "id": "cursor",
+            "confidence": "confirmed"
+          },
+          "repository_ai": {
+            "role": "None / link-only",
+            "id": "local",
+            "confidence": "confirmed"
+          },
+          "infrastructure_ai": {
+            "role": "None (local)",
+            "id": "local",
+            "confidence": "inferred"
+          },
+          "specialist_ais": [],
+          "human_steward": {
+            "role": "AMK-Goku",
+            "id": "amk-goku",
+            "confidence": "confirmed"
+          }
+        },
+        "foundation_adoption": {
+          "compassion_charter": {
+            "status": "unknown",
+            "reference_only": true
+          },
+          "turtle_mode": {
+            "status": "partial",
+            "reference_only": true
+          },
+          "drp": {
+            "status": "unknown",
+            "reference_only": true
+          },
+          "ai_constitution": {
+            "status": "unknown",
+            "reference_only": true
+          },
+          "consent": {
+            "status": "unknown",
+            "reference_only": true
+          },
+          "foundation_doctrines": {
+            "status": "unknown",
+            "reference_only": true
+          },
+          "confidence": {
+            "level": "unknown",
+            "source": "insufficient_metadata"
+          }
+        },
+        "readiness_matrix": {
+          "architecture": {
+            "signal": "BLUE",
+            "note": "unknown"
+          },
+          "governance": {
+            "signal": "GREEN",
+            "note": "Merge Hold default"
+          },
+          "documentation": {
+            "signal": "RED",
+            "note": "missing"
+          },
+          "ai_readiness": {
+            "signal": "BLUE",
+            "note": "Track A / charters"
+          },
+          "technical_readiness": {
+            "signal": "BLUE",
+            "note": "unknown"
+          },
+          "commercial_readiness": {
+            "signal": "BLUE",
+            "note": "unknown"
+          },
+          "security": {
+            "signal": "YELLOW",
+            "note": "unknown"
+          },
+          "deployment": {
+            "signal": "RED",
+            "note": "Runtime NOT AUTHORIZED"
+          },
+          "mission_control_integration": {
+            "signal": "YELLOW",
+            "note": "registered_awaiting_integration"
+          }
+        },
+        "integration_pathway": "Awaiting MC department mapping · visible in census",
+        "architecture_posture": "planning_or_docs"
+      }
     },
     {
       "registry_id": "z-pets-care-compassion",
@@ -3047,7 +6122,7 @@
       },
       "current_phase": "Turtle / observe",
       "recommended_next_action": "Visible in registry — awaiting Mission Control department mapping",
-      "last_review": "2026-07-04",
+      "last_review": "2026-07-08",
       "owner": "AMK-Goku",
       "priority": "normal",
       "notes": "Stub — single txt file as of 2026-07-01. Registered for visibility only.",
@@ -3055,9 +6130,12 @@
       "universe_id": "ZSU-0018",
       "timeline": {
         "first_discovered": "2026-07-04",
-        "last_reviewed": "2026-07-04",
+        "last_reviewed": "2026-07-08",
         "last_activity": null,
-        "lifecycle_stage": "Turtle / observe"
+        "lifecycle_stage": "Turtle / observe",
+        "next_milestone": "Add README / docs",
+        "current_blocker": "documentation_gap",
+        "next_recommended_action": "Visible in registry — awaiting Mission Control department mapping"
       },
       "confidence": {
         "universe_id": {
@@ -3097,7 +6175,117 @@
           "source": "department_and_indicator_registry"
         }
       },
-      "last_activity": null
+      "last_activity": null,
+      "census": {
+        "purpose": "Animal wellness / pets care compassion platform (stub)",
+        "purpose_confidence": {
+          "level": "confirmed",
+          "source": "registry_id_map"
+        },
+        "turtle_indicator": {
+          "code": "archive",
+          "emoji": "🟤",
+          "label": "Archive"
+        },
+        "ai_ecosystem": {
+          "lead_ai": {
+            "role": "Zuno",
+            "id": "zuno",
+            "confidence": "inferred"
+          },
+          "builder_ai": {
+            "role": "Cursor",
+            "id": "cursor",
+            "confidence": "confirmed"
+          },
+          "repository_ai": {
+            "role": "None / link-only",
+            "id": "local",
+            "confidence": "confirmed"
+          },
+          "infrastructure_ai": {
+            "role": "None (local)",
+            "id": "local",
+            "confidence": "inferred"
+          },
+          "specialist_ais": [],
+          "human_steward": {
+            "role": "AMK-Goku",
+            "id": "amk-goku",
+            "confidence": "confirmed"
+          }
+        },
+        "foundation_adoption": {
+          "compassion_charter": {
+            "status": "unknown",
+            "reference_only": true
+          },
+          "turtle_mode": {
+            "status": "partial",
+            "reference_only": true
+          },
+          "drp": {
+            "status": "unknown",
+            "reference_only": true
+          },
+          "ai_constitution": {
+            "status": "unknown",
+            "reference_only": true
+          },
+          "consent": {
+            "status": "unknown",
+            "reference_only": true
+          },
+          "foundation_doctrines": {
+            "status": "unknown",
+            "reference_only": true
+          },
+          "confidence": {
+            "level": "unknown",
+            "source": "insufficient_metadata"
+          }
+        },
+        "readiness_matrix": {
+          "architecture": {
+            "signal": "BLUE",
+            "note": "archive"
+          },
+          "governance": {
+            "signal": "GREEN",
+            "note": "Merge Hold default"
+          },
+          "documentation": {
+            "signal": "RED",
+            "note": "missing"
+          },
+          "ai_readiness": {
+            "signal": "BLUE",
+            "note": "Track A / charters"
+          },
+          "technical_readiness": {
+            "signal": "BLUE",
+            "note": "unknown"
+          },
+          "commercial_readiness": {
+            "signal": "BLUE",
+            "note": "unknown"
+          },
+          "security": {
+            "signal": "YELLOW",
+            "note": "unknown"
+          },
+          "deployment": {
+            "signal": "RED",
+            "note": "Runtime NOT AUTHORIZED"
+          },
+          "mission_control_integration": {
+            "signal": "YELLOW",
+            "note": "registered_awaiting_integration"
+          }
+        },
+        "integration_pathway": "Awaiting MC department mapping · visible in census",
+        "architecture_posture": "planning_or_docs"
+      }
     },
     {
       "registry_id": "",
@@ -3159,7 +6347,7 @@
       },
       "current_phase": "Discovered — needs registration",
       "recommended_next_action": "Register in z_pc_root_projects.json after AMK review",
-      "last_review": "2026-07-04",
+      "last_review": "2026-07-08",
       "owner": "AMK-Goku",
       "priority": "review",
       "notes": "MC-0.5 disk discovery",
@@ -3167,9 +6355,12 @@
       "universe_id": "ZSU-0012",
       "timeline": {
         "first_discovered": "2026-07-04",
-        "last_reviewed": "2026-07-04",
+        "last_reviewed": "2026-07-08",
         "last_activity": null,
-        "lifecycle_stage": "Discovered — needs registration"
+        "lifecycle_stage": "Discovered — needs registration",
+        "next_milestone": "AMK registration review",
+        "current_blocker": "not_in_pc_root_registry",
+        "next_recommended_action": "Register in z_pc_root_projects.json after AMK review"
       },
       "confidence": {
         "universe_id": {
@@ -3209,7 +6400,324 @@
           "source": "department_and_indicator_registry"
         }
       },
-      "last_activity": null
+      "last_activity": null,
+      "census": {
+        "purpose": "Discovered on disk — purpose needs AMK classification",
+        "purpose_confidence": {
+          "level": "inferred",
+          "source": "disk_discovery"
+        },
+        "turtle_indicator": {
+          "code": "documentation",
+          "emoji": "🟡",
+          "label": "Documentation"
+        },
+        "ai_ecosystem": {
+          "lead_ai": {
+            "role": "Zuno",
+            "id": "zuno",
+            "confidence": "inferred"
+          },
+          "builder_ai": {
+            "role": "Cursor",
+            "id": "cursor",
+            "confidence": "confirmed"
+          },
+          "repository_ai": {
+            "role": "None / link-only",
+            "id": "local",
+            "confidence": "confirmed"
+          },
+          "infrastructure_ai": {
+            "role": "None (local)",
+            "id": "local",
+            "confidence": "inferred"
+          },
+          "specialist_ais": [],
+          "human_steward": {
+            "role": "AMK-Goku",
+            "id": "amk-goku",
+            "confidence": "confirmed"
+          }
+        },
+        "foundation_adoption": {
+          "compassion_charter": {
+            "status": "unknown",
+            "reference_only": true
+          },
+          "turtle_mode": {
+            "status": "partial",
+            "reference_only": true
+          },
+          "drp": {
+            "status": "unknown",
+            "reference_only": true
+          },
+          "ai_constitution": {
+            "status": "unknown",
+            "reference_only": true
+          },
+          "consent": {
+            "status": "unknown",
+            "reference_only": true
+          },
+          "foundation_doctrines": {
+            "status": "unknown",
+            "reference_only": true
+          },
+          "confidence": {
+            "level": "unknown",
+            "source": "insufficient_metadata"
+          }
+        },
+        "readiness_matrix": {
+          "architecture": {
+            "signal": "BLUE",
+            "note": "unknown"
+          },
+          "governance": {
+            "signal": "GREEN",
+            "note": "Merge Hold default"
+          },
+          "documentation": {
+            "signal": "RED",
+            "note": "missing"
+          },
+          "ai_readiness": {
+            "signal": "BLUE",
+            "note": "Track A / charters"
+          },
+          "technical_readiness": {
+            "signal": "BLUE",
+            "note": "unknown"
+          },
+          "commercial_readiness": {
+            "signal": "BLUE",
+            "note": "unknown"
+          },
+          "security": {
+            "signal": "YELLOW",
+            "note": "unknown"
+          },
+          "deployment": {
+            "signal": "RED",
+            "note": "Runtime NOT AUTHORIZED"
+          },
+          "mission_control_integration": {
+            "signal": "YELLOW",
+            "note": "disk_unregistered"
+          }
+        },
+        "integration_pathway": "Register in z_pc_root_projects.json → discovery → department mapping",
+        "architecture_posture": "planning_or_docs"
+      }
     }
-  ]
+  ],
+  "successor_review": [
+    {
+      "type": "canonical_hub",
+      "project_ids": [
+        "zsanctuary-universe"
+      ],
+      "verdict": "Z_Sanctuary_Universe is the canonical governance and control root on disk",
+      "action": "none — already canonical",
+      "confidence": "confirmed"
+    },
+    {
+      "type": "successor_duplicate",
+      "project_ids": [
+        "z-sanctuary-universe-2-pc-root",
+        "z-sanctuary-universe-2-continuation"
+      ],
+      "verdict": "Two Z_Sanctuary_Universe 2 trees — PC root sibling vs nested under hub",
+      "action": "Human review — clarify canonical path before merge or SSWS promotion",
+      "confidence": "confirmed"
+    },
+    {
+      "type": "archived_successor",
+      "project_ids": [
+        "zsanctuary-universe-stub-retired"
+      ],
+      "verdict": "ZSanctuary_Universe (no underscore) is retired stub — not hub",
+      "action": "Do not use — archive reference",
+      "confidence": "confirmed"
+    },
+    {
+      "type": "same_local_path_multiple_registry_ids",
+      "project_ids": [
+        "at-princess-blackie-copilot",
+        "at-princess-blackie-copitol"
+      ],
+      "path": "AT Princess&Blackie Copilot",
+      "verdict": "same_local_path_multiple_registry_ids",
+      "action": "Report only — human gate for consolidation",
+      "confidence": "confirmed"
+    },
+    {
+      "type": "duplicate_continuation_tree",
+      "project_ids": [
+        "z-sanctuary-universe-2-continuation",
+        "z-sanctuary-universe-2-pc-root"
+      ],
+      "path": "Z_Sanctuary_Universe/Z_Sanctuary_Universe 2 vs Z_Sanctuary_Universe 2",
+      "verdict": "duplicate_continuation_tree",
+      "action": "Report only — human gate for consolidation",
+      "confidence": "confirmed"
+    }
+  ],
+  "ai_ecosystem_registry_path": "data/z_universe_ai_ecosystem_registry.json",
+  "relationship_map_v2": {
+    "schema": "z_universe_relationship_map_v1",
+    "root": "Z-Sanctuary Universe",
+    "posture": "informational_only — no runtime coupling",
+    "tree": [
+      {
+        "id": "governance",
+        "label": "Governance",
+        "children": [
+          "hub",
+          "merge_hold",
+          "drp",
+          "sepc"
+        ]
+      },
+      {
+        "id": "foundation_doctrines",
+        "label": "Foundation Doctrines",
+        "children": [
+          "compassion_charter",
+          "turtle_mode",
+          "ai_constitution"
+        ]
+      },
+      {
+        "id": "shared_packages",
+        "label": "Shared Packages",
+        "children": [
+          "vile_zuno_observability",
+          "vile_zuno_security",
+          "vile_zuno_shadow",
+          "zuno_drp_charter"
+        ]
+      },
+      {
+        "id": "mission_control",
+        "label": "Mission Control",
+        "children": [
+          "discovery",
+          "census",
+          "status_engine",
+          "dashboard_mc1"
+        ]
+      },
+      {
+        "id": "soulmates_universe",
+        "label": "Soulmates Universe (Z-Connect)",
+        "children": [
+          "phase_b2",
+          "charter_zsu_0004"
+        ]
+      },
+      {
+        "id": "zilwa",
+        "label": "ZILWA",
+        "children": [
+          "charter_zsu_0003",
+          "phase_0_docs"
+        ]
+      },
+      {
+        "id": "compassion",
+        "label": "Compassion (wellness lane)",
+        "children": [
+          "principles_shared",
+          "product_separate"
+        ]
+      },
+      {
+        "id": "pets_care",
+        "label": "Pets Care",
+        "children": [
+          "z_pets_care_compassion"
+        ]
+      },
+      {
+        "id": "worksphere",
+        "label": "WorkSphere Marketplace",
+        "children": [
+          "commerce_hold"
+        ]
+      },
+      {
+        "id": "z_labs",
+        "label": "Z_Labs",
+        "children": [
+          "satellite_relay"
+        ]
+      },
+      {
+        "id": "ai_systems",
+        "label": "AI Systems",
+        "children": [
+          "ai_tower",
+          "zuno",
+          "cursor",
+          "colony_skyscraper"
+        ]
+      },
+      {
+        "id": "cloud_infrastructure",
+        "label": "Cloud Infrastructure",
+        "children": [
+          "cloudflare_contingency",
+          "external_paas_research"
+        ]
+      },
+      {
+        "id": "future_projects",
+        "label": "Future Projects",
+        "children": [
+          "registered_awaiting",
+          "disk_unregistered"
+        ]
+      }
+    ],
+    "project_edges": [
+      {
+        "from": "zsanctuary-universe",
+        "to": "all_members",
+        "type": "governance_hub",
+        "note": "Canonical control root"
+      },
+      {
+        "from": "z-labs",
+        "to": "zsanctuary-universe",
+        "type": "markdown_relay",
+        "note": "Satellite control link"
+      },
+      {
+        "from": "vile_packages",
+        "to": "zsanctuary-universe/packages",
+        "type": "shared_packages",
+        "note": "Hub monorepo packages"
+      },
+      {
+        "from": "z-connect_charter",
+        "to": "zsanctuary-universe/docs/z-connect",
+        "type": "hub_docs",
+        "note": "No runtime coupling"
+      }
+    ],
+    "census_project_count": 25,
+    "generated_at": "2026-07-08T08:01:14.369Z"
+  },
+  "foundation_doc_refs": {
+    "compassion_charter": "docs/governance/Z_SANCTUARY_COMPASSION_CHARTER.md",
+    "turtle_mode": ".cursor/rules/z-turtle-mode-cursor-agents.mdc",
+    "drp": "docs/Z_SWARM_14DRP_UNIVERSAL_AGENT_LAW.md",
+    "ai_constitution": "docs/z-connect/Z_CONNECT_AI_CONSTITUTION_V1.md",
+    "consent": "docs/z-connect/platform-contracts/consent/",
+    "foundation_doctrines": "docs/governance/Z_SANCTUARY_FOUNDATION_DOCTRINES.md"
+  },
+  "census_schema": "z_universe_census_report_v1"
 }

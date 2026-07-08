@@ -164,6 +164,7 @@
     "z:deployment:readiness": "node scripts/z_deployment_readiness_status.mjs",
     "z:universe:status": "node scripts/z_universe_status_report.mjs",
     "z:universe:discovery": "node scripts/z_universe_discovery_scan.mjs",
+    "z:universe:census": "node scripts/z_universe_census_scan.mjs",
     "z:universe:registry:refresh": "node scripts/z_universe_registry_refresh.mjs",
     "z:doorway:dry": "powershell -ExecutionPolicy Bypass -File scripts/z_open_workspace_safe.ps1",
     "amk:doorway:status": "node scripts/amk_workspace_doorway_status.mjs",
