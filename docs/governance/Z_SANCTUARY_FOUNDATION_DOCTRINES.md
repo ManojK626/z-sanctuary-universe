@@ -15,6 +15,8 @@
 
 > **Mission Control observes. Governance protects. Humans decide.**
 
+> **AI advises. Governance protects. Humans decide.**
+
 > **Every project should be able to sleep without being forgotten, and wake without losing its purpose.**
 
 We do **not** copy entire projects into every other project. We promote ideas that have proven themselves into **shared doctrine** that every project **inherits by reference**.
@@ -44,7 +46,9 @@ Never merge products into each other.
       HUMAN STEWARDSHIP
 ```
 
-**Executive surface:** AMK-Goku Indicator Dashboard — an **Executive Operating System** for understanding the Universe. It does **not** control everything; it helps the steward **understand** everything. (Observational, not operational.)
+**Executive surface:** AMK-Goku Indicator Dashboard — an **Executive Operating System** for understanding the Universe. It does **not** control everything; it helps the steward **understand** everything.
+
+**Steward interface:** [AMK-Goku Steward AI](../amk-goku-steward-ai/AMK_GOKU_STEWARD_AI_CHARTER.md) — **Chief Human Steward Interface** (not supreme AI). Coordinates Chief AI Council into executive view; **human authority final**.
 
 ```text
 🌍 Z-Sanctuary Universe
@@ -81,7 +85,7 @@ Every project keeps its **own identity** while speaking the same **language**.
 | 🔐 **Consent First**                 | Every sensitive flow        | Compassion Charter §6; Z-Connect [consent contracts](../z-connect/platform-contracts/consent/)                                                                                               | **SEALED** (architecture)                |
 | 🛡️ **Governance / SEPC**             | Every sacred action         | [SEPC.md](SEPC.md) · [Z_SANCTUARY_UNIVERSE_RESOLUTION_2026_07_04.md](../Z_SANCTUARY_UNIVERSE_RESOLUTION_2026_07_04.md)                                                                       | **SEALED**                               |
 | 🔒 **Security / Shadow / DRP stack** | Every runtime path          | [docs/vile/](../vile/) · `zuno-security` · `zuno-shadow` · `zuno-drp` (charter)                                                                                                              | **Track A**                              |
-| 📊 **Executive Dashboards**          | Steward visibility          | [Z-HODP](../Z-HIERARCHY-CHIEF-AND-OBSERVER-VIEW.md) · [AMK Main Control](../AMK_GOKU_MAIN_CONTROL_DASHBOARD.md) · [Mission Control](../dashboard/Z_UNIVERSE_MISSION_CONTROL_ARCHITECTURE.md) | **MC-1** read-only                       |
+| 📊 **Executive Dashboards**          | Steward visibility          | [Z-HODP](../Z-HIERARCHY-CHIEF-AND-OBSERVER-VIEW.md) · [AMK Main Control](../AMK_GOKU_MAIN_CONTROL_DASHBOARD.md) · [Mission Control](../dashboard/Z_UNIVERSE_MISSION_CONTROL_ARCHITECTURE.md) · [Steward AI charter](../amk-goku-steward-ai/INDEX.md) | **MC-1** read-only · Steward **charter only** |
 | 📈 **Z-Formulas**                    | Reasoning layer             | [Z-ULTRA-INSTINCTS-AND-FORMULAS.md](../Z-ULTRA-INSTINCTS-AND-FORMULAS.md)                                                                                                                    | **Reference**                            |
 | 🧠 **AI Tower**                      | Colony / overseer awareness | [modules/ai_tower_agents/](../modules/ai_tower_agents/) · [AI_BUILDER_CONTEXT.md](../AI_BUILDER_CONTEXT.md)                                                                                  | **Partial** — consolidate in Phase 1–3   |
 | 🛡️ **Z-Arelium Shield**              | Every project               | _TBD_ — principle named; hub charter pending                                                                                                                                                 | **CONSOLIDATION PENDING**                |

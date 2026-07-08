@@ -11,6 +11,8 @@
 
 > **Mission Control observes. Governance protects. Humans decide.**
 
+> **AI advises. Governance protects. Humans decide.**
+
 Alongside:
 
 > **Principles travel. Implementations stay modular.**
@@ -37,6 +39,44 @@ When a milestone is **approved in principle** or **sealed green**, append a new 
 | **Next milestone** | Single clear next step |
 
 **Do not** list file diffs here — point to green receipts, PRs, and reports instead.
+
+> **AI advises. Governance protects. Humans decide.**
+
+---
+
+## 2026-07-08 — AMK-Goku Steward AI Charter (Chief Human Steward Interface)
+
+**Project:** AMK-GOKU-STEWARD-AI-1 · `docs/amk-goku-steward-ai/`  
+**Branch:** `cursor/zsanctuary/amk-goku-steward-ai-charter`
+
+### Why it matters
+
+Steward AI defined as **executive companion**, not supreme controller — coordinates Chief AI Council into one view while **human authority stays final**.
+
+### Architecture impact
+
+- Five charter docs + AI civilization hierarchy v1
+- Decision pipeline: observe → synthesize → recommend → human decides
+- Dashboard panel spec (future) — executive summary layer
+
+### Governance impact
+
+- No runtime · no bypass of DRP / Merge Hold / Turtle Mode
+- Steward does not bypass council
+
+### Foundation impact
+
+- References census, AI registry, readiness reports, changelog
+
+### Human decision
+
+**AMK:** Chief Human Steward Interface — Track A still P0; no implementation until gated.
+
+### Next milestone
+
+Track A review → prove stack → Steward panel S-1 when authorized.
+
+**Receipt:** [PHASE_AMK_GOKU_STEWARD_AI_CHARTER_GREEN_RECEIPT.md](amk-goku-steward-ai/PHASE_AMK_GOKU_STEWARD_AI_CHARTER_GREEN_RECEIPT.md)
 
 ---
 

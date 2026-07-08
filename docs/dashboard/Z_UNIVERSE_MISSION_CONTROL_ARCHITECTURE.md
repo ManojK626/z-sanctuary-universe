@@ -163,6 +163,7 @@ Buttons **initiate approved workflows** — they do **not** override governance.
 | MC-1    | Read-only dashboard overlay                    | **Done** — [Z_UNIVERSE_MC_1_ARCHITECTURE.md](Z_UNIVERSE_MC_1_ARCHITECTURE.md)                   |
 | MC-0.6  | Universe Census + AI ecosystem registry        | **Done** — [Z_UNIVERSE_CENSUS_MC_0_6_ARCHITECTURE.md](Z_UNIVERSE_CENSUS_MC_0_6_ARCHITECTURE.md) |
 | MC-0.7  | Universe Intelligence Layer (reasons, advisor) | **Charter only** — [Z_UNIVERSE_MC_0_7_INTELLIGENCE_LAYER_CHARTER.md](Z_UNIVERSE_MC_0_7_INTELLIGENCE_LAYER_CHARTER.md) |
+| Steward | AMK-Goku Steward AI (Chief Human Steward Interface) | **Charter only** — [../amk-goku-steward-ai/INDEX.md](../amk-goku-steward-ai/INDEX.md) |
 | MC-2    | Per-department AI review attachments           | Future                                                                                          |
 | MC-3    | Gated action initiators (workflow links only)  | Future — sacred gate each                                                                       |
 
