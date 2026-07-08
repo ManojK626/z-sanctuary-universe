@@ -1,0 +1,78 @@
+{
+  "schema": "z_vile_foundation_readiness_policy_v1",
+  "system_id": "Z-VILE-FOUNDATION-READINESS-1",
+  "track": "A",
+  "priority": "P0",
+  "posture": "read_only_no_runtime_no_deploy",
+  "packages": [
+    {
+      "id": "pkg-1",
+      "npm_name": "@z-sanctuary/zuno-observability",
+      "folder": "packages/zuno-observability",
+      "branch": "cursor/zsanctuary/vile-zuno-observability-2a",
+      "expected_tests": 8,
+      "green_receipt": "packages/zuno-observability/GREEN_RECEIPT.md",
+      "evidence_refs": [
+        { "label": "Green Receipt", "path": "packages/zuno-observability/GREEN_RECEIPT.md" },
+        { "label": "Integration Report", "path": "docs/vile/PHASE_2A_FOUNDATION_INTEGRATION_REPORT.md" },
+        { "label": "Package README", "path": "packages/zuno-observability/README.md" }
+      ]
+    },
+    {
+      "id": "pkg-2",
+      "npm_name": "@z-sanctuary/zuno-security",
+      "folder": "packages/zuno-security",
+      "branch": "cursor/zsanctuary/vile-zuno-security-2a",
+      "expected_tests": 12,
+      "green_receipt": "packages/zuno-security/GREEN_RECEIPT.md",
+      "evidence_refs": [
+        { "label": "Green Receipt", "path": "packages/zuno-security/GREEN_RECEIPT.md" },
+        { "label": "Architecture Report", "path": "docs/vile/ARCHITECTURE_OVERVIEW.md" },
+        { "label": "Package README", "path": "packages/zuno-security/README.md" }
+      ]
+    },
+    {
+      "id": "pkg-3",
+      "npm_name": "@z-sanctuary/zuno-shadow",
+      "folder": "packages/zuno-shadow",
+      "branch": "cursor/zsanctuary/vile-zuno-shadow-2a",
+      "expected_tests": 10,
+      "green_receipt": "packages/zuno-shadow/GREEN_RECEIPT.md",
+      "evidence_refs": [
+        { "label": "Green Receipt", "path": "packages/zuno-shadow/GREEN_RECEIPT.md" },
+        { "label": "Shadow Pipeline", "path": "docs/vile/SHADOW_VALIDATION_PIPELINE.md" },
+        { "label": "Integration Report", "path": "docs/vile/PHASE_2A_FOUNDATION_INTEGRATION_REPORT.md" }
+      ]
+    }
+  ],
+  "package_4": {
+    "id": "pkg-4",
+    "npm_name": "@z-sanctuary/zuno-drp",
+    "folder": "packages/zuno-drp",
+    "charter": "docs/vile/PHASE_2A_PACKAGE_4_ZUNO_DRP_CHARTER.md",
+    "blocked_until": "packages_1_3_on_main"
+  },
+  "integration_docs": [
+    "docs/vile/PHASE_2A_FOUNDATION_INTEGRATION_REPORT.md",
+    "docs/vile/PHASE_2A_FOUNDATION_INTEGRATION_GREEN_RECEIPT.md"
+  ],
+  "governance_refs": {
+    "merge_hold": "data/z_release_control.json",
+    "turtle_mode": ".cursor/rules/z-turtle-mode-cursor-agents.mdc",
+    "drp_law": "docs/Z_SWARM_14DRP_UNIVERSAL_AGENT_LAW.md",
+    "testing_gate": "docs/vile/TESTING_AND_VERIFICATION_GATE.md"
+  },
+  "verify_commands": [
+    "npm run test --workspace=@z-sanctuary/zuno-observability",
+    "npm run test --workspace=@z-sanctuary/zuno-security",
+    "npm run test --workspace=@z-sanctuary/zuno-shadow",
+    "npm run verify:full:technical"
+  ],
+  "status_labels": {
+    "green": "Ready / verified on branch",
+    "yellow": "In progress or merge pending",
+    "red": "Blocked or missing",
+    "blue": "Chartered only",
+    "hold": "Merge Hold active"
+  }
+}

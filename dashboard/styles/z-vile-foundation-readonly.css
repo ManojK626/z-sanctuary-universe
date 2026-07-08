@@ -1,0 +1,159 @@
+/* Z-VILE-FOUNDATION-READINESS-1 — read-only Track A panel (AMK dashboard) */
+
+.z-vile-root {
+  font-size: 0.88rem;
+  line-height: 1.45;
+}
+
+.z-vile-header {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.5rem 0.75rem;
+  margin-bottom: 0.5rem;
+}
+
+.z-vile-header h3 {
+  margin: 0;
+  font-size: 1rem;
+}
+
+.z-vile-law {
+  margin: 0 0 0.75rem;
+  opacity: 0.88;
+  font-size: 0.78rem;
+}
+
+.z-vile-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 0.75rem;
+  margin-bottom: 0.75rem;
+}
+
+.z-vile-panel {
+  border: 1px solid rgba(148, 163, 184, 0.25);
+  border-radius: 8px;
+  padding: 0.65rem 0.75rem;
+  background: rgba(15, 23, 42, 0.35);
+}
+
+.z-vile-panel h4 {
+  margin: 0 0 0.45rem;
+  font-size: 0.85rem;
+}
+
+.z-vile-pill {
+  display: inline-block;
+  font-size: 0.72rem;
+  padding: 0.12rem 0.45rem;
+  border-radius: 999px;
+  border: 1px solid rgba(148, 163, 184, 0.35);
+  font-weight: 600;
+}
+
+.z-vile-table-wrap {
+  overflow-x: auto;
+}
+
+.z-vile-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.76rem;
+}
+
+.z-vile-table th,
+.z-vile-table td {
+  padding: 0.25rem 0.4rem;
+  text-align: left;
+  border-bottom: 1px solid rgba(148, 163, 184, 0.15);
+}
+
+.z-vile-kv {
+  width: 100%;
+  font-size: 0.78rem;
+}
+
+.z-vile-k {
+  padding: 2px 8px 2px 0;
+  opacity: 0.9;
+  vertical-align: top;
+  white-space: nowrap;
+}
+
+.z-vile-v {
+  vertical-align: top;
+}
+
+.z-vile-reasons {
+  margin: 0.45rem 0 0;
+  padding-left: 1.1rem;
+  font-size: 0.74rem;
+  opacity: 0.92;
+}
+
+.z-vile-next p {
+  margin: 0.25rem 0;
+}
+
+.z-vile-muted {
+  font-size: 0.76rem;
+  opacity: 0.85;
+}
+
+.z-vile-links {
+  font-size: 0.76rem;
+  margin: 0.5rem 0 0;
+}
+
+.z-vile-links a {
+  color: inherit;
+}
+
+.z-vile-pipeline {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.15rem;
+  margin: 0.5rem 0;
+  font-size: 0.76rem;
+}
+
+.z-vile-pipe-step {
+  border: 1px solid rgba(148, 163, 184, 0.25);
+  border-radius: 6px;
+  padding: 0.35rem 0.65rem;
+  min-width: 10rem;
+  text-align: center;
+  background: rgba(15, 23, 42, 0.4);
+}
+
+.z-vile-pipe-step--here {
+  border-color: rgba(251, 191, 36, 0.55);
+  box-shadow: 0 0 0 1px rgba(251, 191, 36, 0.2);
+}
+
+.z-vile-pipe-here {
+  display: block;
+  font-size: 0.68rem;
+  color: rgba(251, 191, 36, 0.95);
+  margin-top: 0.15rem;
+}
+
+.z-vile-pipe-st {
+  display: block;
+  font-size: 0.65rem;
+  opacity: 0.75;
+  margin-top: 0.1rem;
+}
+
+.z-vile-pipe-arrow {
+  opacity: 0.55;
+  line-height: 1;
+}
+
+.z-vile-pipeline-why {
+  font-size: 0.74rem;
+  margin: 0.5rem 0 0;
+  opacity: 0.92;
+}

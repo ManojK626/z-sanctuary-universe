@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="../styles/amk-goku-main-control.css" />
     <link rel="stylesheet" href="../styles/amk-project-indicators.css" />
     <link rel="stylesheet" href="../styles/amk-universe-mission-control.css" />
+    <link rel="stylesheet" href="../styles/z-vile-foundation-readonly.css" />
     <link rel="stylesheet" href="../styles/amk-zuno-advisor.css" />
     <link rel="stylesheet" href="../styles/z-root-guardian-coordination.css" />
   </head>
@@ -90,6 +91,7 @@
           <a href="./index-skk-rkpk.html#zAmkNotificationsPanel">AMK notifications panel</a>
           <a href="#amk-indicators-section">Readiness indicators</a>
           <a href="#amk-universe-mc-section">Universe Mission Control</a>
+          <a href="#amk-vile-foundation-section">Track A — VILE Foundation</a>
           <a href="#amk-legal-workstation-section">Lawyer workstation</a>
           <a href="#amk-legal-toolbelt-section">Legal toolbelt dock</a>
           <a href="./z-legal-lawyer-workstation.html">Z-Lawyer Workstation UX-2</a>
@@ -146,6 +148,17 @@
             No execution buttons — links open docs and reports only. Serve the hub over HTTP so JSON loads.
           </p>
           <div id="amkUniverseMcMount"></div>
+        </div>
+      </details>
+
+      <details class="amk-map-section" open data-amk-section="vile_foundation" data-amk-category="indicators" id="amk-vile-foundation-section">
+        <summary>Track A — VILE Foundation Readiness (read-only)</summary>
+        <div class="amk-map-section-body amk-indicators-panel-inner">
+          <p class="amk-map3-disclaimer" style="margin-top: 0">
+            Engineering foundation posture: Packages 1–3, zuno-drp charter, verification, governance, Merge Hold, and next human action.
+            Run <code>npm run z:vile:foundation:readiness</code> to refresh. No merge, deploy, or test execution from this panel.
+          </p>
+          <div id="zVileFoundationMount" data-z-reports-base="../../data/reports"></div>
         </div>
       </details>
 
@@ -391,6 +404,7 @@
     <script defer src="../scripts/amk-goku-main-control-readonly.js"></script>
     <script defer src="../scripts/amk-project-indicators-readonly.js"></script>
     <script defer src="../scripts/amk-universe-mission-control-readonly.js"></script>
+    <script defer src="../scripts/z-vile-foundation-readonly.js"></script>
     <script defer src="../scripts/amk-zuno-advisor-readonly.js"></script>
     <script defer src="../scripts/z-root-guardian-coordination-readonly.js"></script>
     <script defer src="../scripts/z-omnai-core-readonly.js"></script>
