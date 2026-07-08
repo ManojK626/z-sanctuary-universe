@@ -174,7 +174,9 @@ The **application** stays inside its **own module**.
 
 Full charter: [Z_SANCTUARY_FOUNDATION_CONSOLIDATION.md](Z_SANCTUARY_FOUNDATION_CONSOLIDATION.md)
 
-**Current priority unchanged:** Track A (VILE) · Soulmates B2/B2.1 · MC-1 PR review.
+**Annual rhythm:** [Z_SANCTUARY_ANNUAL_UNIVERSE_REVIEW.md](Z_SANCTUARY_ANNUAL_UNIVERSE_REVIEW.md) — five questions once per year; keep foundation living without instability.
+
+**Current priority unchanged:** Track A (VILE) · Soulmates B2/B2.1 · MC mature through use.
 
 ---
 

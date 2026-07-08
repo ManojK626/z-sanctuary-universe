@@ -77,6 +77,8 @@ No duplication of MC or Steward — **deeper historical graph** when warranted.
 
 If authorized later: mock-first index linking doctrines → projects → milestones → ADRs.
 
+**Annual companion:** [Annual Universe Review](../governance/Z_SANCTUARY_ANNUAL_UNIVERSE_REVIEW.md) — five questions keep doctrine living before Observatory exists.
+
 ---
 
 ## Related
