@@ -17,6 +17,8 @@ Alongside:
 
 > **Freeze. Protect. Review. Build deliberately.**
 
+> **Every project should be able to sleep without being forgotten, and wake without losing its purpose.**
+
 ---
 
 ## How to add an entry
@@ -35,6 +37,56 @@ When a milestone is **approved in principle** or **sealed green**, append a new 
 | **Next milestone** | Single clear next step |
 
 **Do not** list file diffs here — point to green receipts, PRs, and reports instead.
+
+---
+
+## 2026-07-08 — Executive Review & Civilization Changelog (institutional memory)
+
+**Project:** Z-Sanctuary Universe · Foundation Doctrines · Executive OS posture  
+**Authority:** AMK-Goku executive review
+
+### Why it matters
+
+The ecosystem reached **coherent architecture maturity**: not "behind" on any domain — **exactly where the deliberate roadmap placed each lane**. Institutional memory now has a civilization changelog; the AMK-Goku Indicator Dashboard is recognized as an **Executive Operating System** (understanding, not controlling).
+
+### Architecture impact
+
+- Class shift documented: **Projects** → **Foundation → Governance → MC → Shared AI → Independent Projects → Human Stewardship**
+- [UNIVERSE_CHANGELOG.md](UNIVERSE_CHANGELOG.md) established as heartbeat (not Git changelog)
+- No new architecture layers authorized post-review — **prove the stack through use**
+
+### Governance impact
+
+- Merge Hold · Turtle Mode · human gates unchanged
+- New permanent doctrine sealed (sleep / wake without losing purpose)
+- Public runtime remains **intentionally deferred** — not weak
+
+### Foundation impact
+
+- Engineering Foundation: **Human Review Phase** (Track A VILE)
+- Foundation Consolidation: after holiday, one doctrine at a time
+
+### Human decision
+
+**AMK:** Track A first · Soulmates second · MC matures through real use not feature accumulation · no rushing · no skipping gates · no new architecture for a while
+
+### Next milestone
+
+Complete Track A human review → merge deliberately → Soulmates B2.1 → toward Sprint 0.
+
+### Executive status snapshot
+
+| Domain | Status |
+| ------ | ------ |
+| 🌍 Vision | Canonical |
+| 🏛️ Governance | Canonical |
+| 📖 Foundation Doctrines | Canonical |
+| 🤖 AI Collaboration | Canonical |
+| 🌐 Mission Control | Mature (architecture) |
+| 📚 Institutional Memory | Established |
+| 🏗️ Engineering Foundation | Human review phase |
+| ❤️ Product Portfolio | Well structured |
+| 🚀 Public Runtime | Intentionally deferred |
 
 ---
 
@@ -282,17 +334,19 @@ Every step: **gated · explainable · reversible.**
 
 | Area | Status | Confidence |
 | ---- | ------ | ---------- |
-| 🌍 Vision | Excellent | High |
-| 🏛️ Governance | Excellent | High |
-| 📚 Architecture | Excellent | High |
-| 🤖 AI Collaboration | Excellent | High |
-| 🗂️ Documentation | Excellent | High |
-| 🧭 Mission Control | Very Strong | High |
-| 🏗️ Shared Foundation | Approaching Ready | Medium–High |
-| ❤️ Product Readiness | Well Planned | High |
-| 🚀 Runtime Readiness | **Intentionally Waiting** | High |
+| 🌍 Vision | Canonical | High |
+| 🏛️ Governance | Canonical | High |
+| 📖 Foundation Doctrines | Canonical | High |
+| 🤖 AI Collaboration | Canonical | High |
+| 🌐 Mission Control | Mature (architecture) | High |
+| 📚 Institutional Memory | Established | High |
+| 🏗️ Engineering Foundation | Human review phase | Medium–High |
+| ❤️ Product Portfolio | Well structured | High |
+| 🚀 Public Runtime | **Intentionally deferred** | High |
 
-Runtime is not "weak" — it is **waiting by governance**, as designed.
+Nothing is "behind" — each domain is where the **deliberate roadmap** placed it. Runtime is not weak; it waits by governance.
+
+**After Track A:** prove the architecture through use — no new layers until the stack earns the next chapter.
 
 ---
 

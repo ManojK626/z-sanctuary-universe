@@ -15,6 +15,8 @@
 
 > **Mission Control observes. Governance protects. Humans decide.**
 
+> **Every project should be able to sleep without being forgotten, and wake without losing its purpose.**
+
 We do **not** copy entire projects into every other project. We promote ideas that have proven themselves into **shared doctrine** that every project **inherits by reference**.
 
 ```text
@@ -25,6 +27,24 @@ Never merge products into each other.
 ---
 
 ## Operating system view
+
+```text
+🌍 Z-Sanctuary Universe — class of architecture (2026)
+
+         FOUNDATION
+              ↓
+         GOVERNANCE
+              ↓
+      MISSION CONTROL
+              ↓
+         SHARED AI
+              ↓
+   INDEPENDENT PROJECTS
+              ↓
+      HUMAN STEWARDSHIP
+```
+
+**Executive surface:** AMK-Goku Indicator Dashboard — an **Executive Operating System** for understanding the Universe. It does **not** control everything; it helps the steward **understand** everything. (Observational, not operational.)
 
 ```text
 🌍 Z-Sanctuary Universe
