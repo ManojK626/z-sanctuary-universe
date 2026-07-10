@@ -50,6 +50,43 @@ When a milestone is **approved in principle** or **sealed green**, append a new 
 
 ---
 
+## 2026-07-10 — Intelligence Consolidation Phase 1 (ecosystem audit)
+
+**Project:** Z-INTELLIGENCE-CONSOLIDATION-1 · `docs/ecosystem/`  
+**Branch:** `cursor/zsanctuary/intelligence-consolidation-phase-1`
+
+### Why it matters
+
+The ecosystem reached the size where **discovery beats new layers**. Phase 1 catalogs AI families, engines, spines, duplicates, and knowledge trees — observation only — so forgotten intelligence is protected and future consolidation has a map.
+
+### Architecture impact
+
+- [Ecosystem index](ecosystem/INDEX.md) — seven deliverables + canonical registry (four statuses)
+- AI & MiniBot atlas · core engine registry · spine map · duplicate report · sanctuary atlas
+- ZCO not found as named system; Arelium / OMNISWARM flagged experimental for Phase 2
+
+### Governance impact
+
+- READ ONLY · no runtime · no deletion · no merges · Turtle Mode preserved
+- MERGE_CANDIDATE rows require human gate before any consolidation action
+
+### Foundation impact
+
+- [Z_SANCTUARY_CANONICAL_REGISTRY.md](ecosystem/Z_SANCTUARY_CANONICAL_REGISTRY.md) — memory core (🟢 Canonical · 🟡 Active · 🔵 Experimental · ⚫ Archived)
+- Feeds Foundation Consolidation charter (post-holiday)
+
+### Human decision
+
+**AMK:** Consolidation mission, not build mission — intelligence discovery first; Track A remains P0.
+
+### Next milestone
+
+Track A VILE foundation human review → Foundation Consolidation Phase 2 when gated.
+
+**Receipt:** [PHASE_INTELLIGENCE_CONSOLIDATION_1_GREEN_RECEIPT.md](ecosystem/PHASE_INTELLIGENCE_CONSOLIDATION_1_GREEN_RECEIPT.md)
+
+---
+
 ## 2026-07-08 — Civilization maturity review & Knowledge Observatory (future charter)
 
 **Project:** Z-Sanctuary Universe · Foundation Doctrines · future Knowledge Observatory  
