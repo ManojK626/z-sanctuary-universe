@@ -50,6 +50,45 @@ When a milestone is **approved in principle** or **sealed green**, append a new 
 
 ---
 
+## 2026-07-10 — Intelligence Consolidation Phase 2 (relationship audit)
+
+**Project:** Z-INTELLIGENCE-CONSOLIDATION-2 · `docs/ecosystem/`  
+**Branch:** `cursor/zsanctuary/intelligence-consolidation-phase-2`
+
+### Why it matters
+
+Phase 1 cataloged what exists; Phase 2 maps **how intelligence collaborates** — AI cooperation, engine federation, spine responsibilities, forgotten systems, and the physical product universe. The ecosystem enters a **stewardship digestion** period: understand before building more.
+
+### Architecture impact
+
+- [AI Cooperation Matrix](ecosystem/Z_AI_COOPERATION_MATRIX.md) — Reads · Advises · Reports to · Overlaps
+- [Engine Federation Map](ecosystem/Z_ENGINE_FEDERATION_MAP.md) — ZCO not found; awareness lens family documented
+- [Spine Responsibility Matrix](ecosystem/Z_SPINE_RESPONSIBILITY_MATRIX.md) — governs / must-never / consumers
+- [Forgotten Intelligence Report](ecosystem/Z_FORGOTTEN_INTELLIGENCE_REPORT.md) — dormant · orphan · hidden dashboards
+- [Physical Universe Registry](ecosystem/Z_PHYSICAL_UNIVERSE_REGISTRY.md) — Soulmates · ZILWA · marketplace · roulette · hardware
+
+### Governance impact
+
+- READ ONLY · no new AI · no merges · Turtle Mode preserved
+- Registry drift flagged (master vs manifest) — human reconcile in Foundation Consolidation
+
+### Foundation impact
+
+- Extends Phase 1 canonical registry and atlas — memory core unchanged (four statuses)
+- Recommends **pause new infrastructure** — let maps digest
+
+### Human decision
+
+**AMK:** Stewardship era — discovery over new layers; Track A remains P0.
+
+### Next milestone
+
+Track A VILE review → optional PR merge Phase 1–2 docs → digestion pause → Foundation Consolidation when gated.
+
+**Receipt:** [PHASE_INTELLIGENCE_CONSOLIDATION_2_GREEN_RECEIPT.md](ecosystem/PHASE_INTELLIGENCE_CONSOLIDATION_2_GREEN_RECEIPT.md)
+
+---
+
 ## 2026-07-10 — Intelligence Consolidation Phase 1 (ecosystem audit)
 
 **Project:** Z-INTELLIGENCE-CONSOLIDATION-1 · `docs/ecosystem/`  
