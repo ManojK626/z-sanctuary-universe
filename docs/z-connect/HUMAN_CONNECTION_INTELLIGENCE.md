@@ -33,6 +33,8 @@ Trust & Safety
         ↓
 Human Connection Intelligence (this document)
         ↓
+Living Connection Dimensions
+        ↓
 Personality Archetypes
         ↓
 Attachment Intelligence
@@ -242,7 +244,9 @@ Runtime wiring waits on **Track A** and Sprint 0 gates.
 | **Track A** | VILE foundation — unchanged P0 |
 | **B2.1** | Legal drafts, wireframes, waitlist — HCI-informed copy only |
 | **Sprint 0** | Optional profile dimensions as **user-owned fields**, not classifiers |
-| **Future** | Conflict styles, love languages — only if compassion review approves |
+| **B2.2** | [Living Connection Dimensions](LIVING_CONNECTION_DIMENSIONS.md) — **done** (doctrine) |
+| **B2.3** | Wireframes + language review |
+| **Future** | Conflict styles detail in product — covered B2.2 Conflict & Repair |
 
 ---
 

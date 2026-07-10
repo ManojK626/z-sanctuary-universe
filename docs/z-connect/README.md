@@ -52,6 +52,7 @@ Z-Connect is a **product charter** under hub governance. It is **not** a bypass 
 | [Z_CONNECT_COMMERCIAL_PREP_ASSETS.md](Z_CONNECT_COMMERCIAL_PREP_ASSETS.md)                         | Parallel commercial asset checklist (no runtime)                             |
 | [phase-b2/INDEX.md](phase-b2/INDEX.md)                                                             | **B2** — Soulmates Universe product definition handbook                      |
 | [HUMAN_CONNECTION_INTELLIGENCE.md](HUMAN_CONNECTION_INTELLIGENCE.md)                               | **B2 doctrine** — HCI layers (no scores, no stereotypes)                     |
+| [LIVING_CONNECTION_DIMENSIONS.md](LIVING_CONNECTION_DIMENSIONS.md)                               | **B2.2 doctrine** — life rhythms, repair, growth, wonder                      |
 | [../governance/Z_SANCTUARY_COMPASSION_CHARTER.md](../governance/Z_SANCTUARY_COMPASSION_CHARTER.md) | **Shared** compassion doctrine (all products)                                |
 
 ## Phase posture

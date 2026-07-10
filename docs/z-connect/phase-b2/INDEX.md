@@ -51,6 +51,7 @@ When Track A opens the engineering gate, every product decision in this handbook
 | 13  | **Executive Summary**                 | Final    | [EXECUTIVE_SUMMARY.md](EXECUTIVE_SUMMARY.md)                                                                         |
 | 14  | **Compassion Principles**             | Doctrine | [COMPASSION_PRINCIPLES.md](COMPASSION_PRINCIPLES.md) · [Charter](../../governance/Z_SANCTUARY_COMPASSION_CHARTER.md) |
 | 15  | **Human Connection Intelligence**   | Doctrine | [../HUMAN_CONNECTION_INTELLIGENCE.md](../HUMAN_CONNECTION_INTELLIGENCE.md) |
+| 16  | **Living Connection Dimensions**    | B2.2     | [../LIVING_CONNECTION_DIMENSIONS.md](../LIVING_CONNECTION_DIMENSIONS.md) · [PHASE_B2_2_GREEN_RECEIPT.md](PHASE_B2_2_GREEN_RECEIPT.md) |
 
 ---
 
