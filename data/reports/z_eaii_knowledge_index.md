@@ -1,8 +1,8 @@
 # Z-EAII Knowledge Index (Alpha A2)
 
-Generated: 2026-08-06T07:08:59.810Z
+Generated: 2026-08-06T07:17:40.797Z
 
-Documents: **64** · Chunks: **679** · Missing allowlist: **0**
+Documents: **72** · Chunks: **703** · Missing allowlist: **0**
 
 ## Law
 - Never invent facts.
@@ -54,8 +54,16 @@ Documents: **64** · Chunks: **679** · Missing allowlist: **0**
 - `docs/PHASE_Z_ZES_0_5_REGISTRY_CITIZENSHIP_GREEN_RECEIPT.md` — Z-ZES Phase 0.5 — Registry Citizenship · Stewardship Green Receipt
 - `docs/Z_ZES_ROADMAP_LEDGER.md` — Z-ZES Roadmap Ledger — Registry before Runtime
 - `docs/Z_SANCTUARY_STATE_OF_THE_OS_2026.md` — Z-Sanctuary Universe — State of the Operating System 2026
-- `docs/PHASE_Z_STATE_OF_THE_OS_2026_CHARTER.md` — Phase — Operational Readiness Assessment · Charter Receipt
+- `docs/Z_SANCTUARY_STATE_OF_THE_OS_2026_SCORECARD.md` — State of the OS 2026 — Scorecard Rollup
+- `docs/PHASE_Z_STATE_OF_THE_OS_L1_FOUNDATION_SEAL.md` — State of the OS 2026 — Layer 1 Foundation · Seal
 - `docs/Z_SANCTUARY_STATE_OF_THE_OS_2026_LAYER_1_FOUNDATION.md` — State of the OS 2026 — Layer 1 Foundation Audit
+- `docs/Z_SANCTUARY_STATE_OF_THE_OS_2026_LAYER_2_ARCHITECTURE.md` — State of the OS 2026 — Layer 2 Architecture
+- `docs/Z_SANCTUARY_STATE_OF_THE_OS_2026_LAYER_3_KNOWLEDGE.md` — State of the OS 2026 — Layer 3 Knowledge
+- `docs/Z_SANCTUARY_STATE_OF_THE_OS_2026_LAYER_4_OPERATIONS.md` — State of the OS 2026 — Layer 4 Operations
+- `docs/Z_SANCTUARY_STATE_OF_THE_OS_2026_LAYER_5_RUNTIME.md` — State of the OS 2026 — Layer 5 Runtime
+- `docs/Z_SANCTUARY_STATE_OF_THE_OS_2026_LAYER_6_EXTERNAL.md` — State of the OS 2026 — Layer 6 External
+- `docs/Z_SANCTUARY_STATE_OF_THE_OS_2026_LAYER_7_COMMERCIAL.md` — State of the OS 2026 — Layer 7 Commercial
+- `docs/Z_SANCTUARY_STATE_OF_THE_OS_2026_LAYER_8_HUMAN.md` — State of the OS 2026 — Layer 8 Human
 - `docs/Z_SANCTUARY_SYNCHRONIZE_2026_08_06.md` — Synchronize Mission — 2026-08-06
 - `docs/Z_SANCTUARY_STEWARD_DECISION_LOG.md` — Z-Sanctuary Steward Decision Log
 - `docs/Z_SUPER_TURTLE_SUPERVISORY_LAYER.md` — Z-Super Turtle Supervisory Layer

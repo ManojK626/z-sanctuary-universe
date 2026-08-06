@@ -1,11 +1,11 @@
 # State of the OS 2026 — Layer 1 Foundation Audit
 
-**Mission:** [Z_SANCTUARY_STATE_OF_THE_OS_2026.md](Z_SANCTUARY_STATE_OF_THE_OS_2026.md)
-**Supervisory:** [Z_SUPER_TURTLE_SUPERVISORY_LAYER.md](Z_SUPER_TURTLE_SUPERVISORY_LAYER.md)
-**Status:** 🐢 **ACTIVE** · Evidence gathering
-**Opened:** 2026-08-04
-**Mode:** Super Turtle
-**Execution:** Human-gated · Expansion paused unless justified
+**Status:** ✅ **SEALED** (2026-08-06) · see [PHASE_Z_STATE_OF_THE_OS_L1_FOUNDATION_SEAL.md](PHASE_Z_STATE_OF_THE_OS_L1_FOUNDATION_SEAL.md)  
+**Mission:** [Z_SANCTUARY_STATE_OF_THE_OS_2026.md](Z_SANCTUARY_STATE_OF_THE_OS_2026.md)  
+**Supervisory:** [Z_SUPER_TURTLE_SUPERVISORY_LAYER.md](Z_SUPER_TURTLE_SUPERVISORY_LAYER.md)  
+**Opened:** 2026-08-04 · **Sealed:** 2026-08-06  
+**Mode:** Super Turtle  
+**Next layers:** [Scorecard](Z_SANCTUARY_STATE_OF_THE_OS_2026_SCORECARD.md)
 
 ---
 
@@ -13,10 +13,10 @@
 
 ```text
 State of the Operating System 2026
-Mission ............ ACTIVE
+Mission ............ ACTIVE (Layers 2–8 assessed)
 Mode ............... Super Turtle
-Layer 1 ............ Foundation (OPEN)
-Evidence ........... Gathering
+Layer 1 ............ Foundation SEALED
+Evidence ........... Sufficient
 Execution .......... Human-gated
 Governance ......... Locked
 Expansion .......... Paused unless justified

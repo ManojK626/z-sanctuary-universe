@@ -6,6 +6,18 @@
 
 ---
 
+## 2026-08-06 (b) — State of the OS layers 1–8 first pass
+
+**Decision:** Complete first-pass Operational Readiness Assessment across Foundation → Human. No implementation from the scorecard alone.
+
+**Reason:** Continue Synchronize discipline — understand the OS layer by layer before expanding it.
+
+**Outcome:** Layer 1 sealed · Layers 2–8 assessed · [Scorecard](Z_SANCTUARY_STATE_OF_THE_OS_2026_SCORECARD.md) awaits AMK accept/adjust and one ⭐ priority pick.
+
+**Not authorized:** Builds · deploys · Z-ZES gates · Cloudflare expansion · payment rails.
+
+---
+
 ## 2026-08-06
 
 **Decision:** No new systems. Continue assessment. Synchronize only.
