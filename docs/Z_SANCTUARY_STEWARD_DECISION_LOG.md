@@ -6,6 +6,18 @@
 
 ---
 
+## 2026-08-06 (d) — Operating Organism milestone
+
+**Decision:** Record the shift from “collection of projects / feature instinct” to **operating organism** with shared Observe→Decide law. Next week = refinement and settle only.
+
+**Reason:** Milestone worth marking; Mauritius thinking time; Super Turtle over late-night sprint.
+
+**Receipt:** [Z_SANCTUARY_OPERATING_ORGANISM_MILESTONE_2026_08_06.md](Z_SANCTUARY_OPERATING_ORGANISM_MILESTONE_2026_08_06.md)
+
+**Not authorized:** Major features · CF expand · automation push.
+
+---
+
 ## 2026-08-06 (c) — OS Health Report accepted · Atlas priority
 
 **Decision:** Accept State of the OS first-pass as an **Operating System Health Report**. Priority order: (1) Indicator Source Atlas (2) Freshness Cadence (3) Keep Settle Days.
