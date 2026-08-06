@@ -6,6 +6,16 @@
 
 ---
 
+## 2026-08-06 (i) — Book B: Identity Manifest first
+
+**Decision:** Do not open Revocation or Human–Agent Distinction yet. Next immutable mapping is **Identity Manifest** (six categories). Book B order frozen: Manifest → Citizenship Rules → Distinction (locked) → Revocation (locked).
+
+**Reason:** Revocation and distinction depend on identity; identity precedes citizenship.
+
+**Docs:** [Z_IDENTITY_MANIFEST.md](Z_IDENTITY_MANIFEST.md) · locked stubs for Distinction and Revocation.
+
+---
+
 ## 2026-08-06 (h) — Trust Chain Evidence property + Books A–G foresight
 
 **Decision:** Seal Evidence as a cross-cutting property of every Trust Chain stage (not a new phase). Record Books A–G as foresight family only. Affirm three principles: no governance without identity · no execution without governance · no trust without evidence.

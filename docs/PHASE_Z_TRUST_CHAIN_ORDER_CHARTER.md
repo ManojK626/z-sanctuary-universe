@@ -1,14 +1,17 @@
 # Phase — Trust Chain Blueprint Order · Charter Receipt
 
-**Status:** ✅ ORDER SEALED · Evidence property sealed  
+**Status:** ✅ ORDER SEALED · Evidence property sealed · Book B steps frozen  
 **Date:** 2026-08-06  
 
 ```text
-Trust Chain .............. overarching lifecycle + Evidence (cross-cutting)
-🥇 Citizenship Protocol .. Phase 0 OPEN (design only)
-🥈 Steward Gate Logic .... outline only (blocked on Citizenship)
-🥉 Audit Receipt Structure outline only (blocked on Gate Logic)
-Books E–G ................ foresight only (not open)
+Trust Chain .............. lifecycle + Evidence
+Identity Manifest ........ Book B1 Phase 0 OPEN (categories)
+Citizenship Rules ........ Book B2 Phase 0 OPEN (maps to Manifest)
+Human–Agent Distinction .. Book B3 LOCKED
+Revocation Framework ..... Book B4 LOCKED
+Steward Gate Logic ....... outline (after Citizenship)
+Audit Receipt Structure .. outline (after Gate Logic)
+Books E–G ................ foresight only
 Runtime / crypto ......... NOT AUTHORIZED
 ```
 
@@ -20,8 +23,14 @@ No execution without governance.
 No trust without evidence.
 ```
 
-**Canon:** Trust Chain → Citizenship → Gates → Receipts.
+**Book B logic:**
+
+```text
+Identity precedes citizenship.
+Citizenship precedes governance.
+Governance precedes revocation.
+```
 
 ---
 
-*Receipt · dependency graph · order matters*
+*Receipt · dependency graph · Manifest first*

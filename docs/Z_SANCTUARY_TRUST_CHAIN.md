@@ -15,12 +15,16 @@ This is a **dependency graph**. Future contributors should see **why** one docum
 ```text
 Trust Chain                    (overarching lifecycle + Evidence property)
     ↓
-Registry Citizenship           🥇  Constitution of AI Membership
+Identity Manifest              🥇 Book B step 1 — birth certificate
+    ↓
+Registry Citizenship Rules     🥇 Book B step 2 — admission evaluation
     ↓
 Steward Gates                  🥈  Supreme Court of the ecosystem
     ↓
 Audit Receipts                 🥉  Official records
 ```
+
+Book B locked deferred: Human–Agent Distinction · Revocation Framework (see [Identity Manifest](Z_IDENTITY_MANIFEST.md)).
 
 ### Three principles
 
@@ -90,16 +94,22 @@ Evidence is a **property of the entire chain**, not a separate book or sprint.
 | Layer | Phase | Status |
 | --- | --- | --- |
 | Trust Chain | Architecture | ✅ Defined (+ Evidence property) |
-| Registry Citizenship | Phase 0 | ✅ Open (design only) |
+| Identity Manifest | Book B · Phase 0 | ✅ Open (categories sealed) |
+| Registry Citizenship Rules | Book B · Phase 0 | ✅ Open (design only · maps to Manifest) |
+| Human–Agent Distinction | Book B step 3 | 🔒 Locked |
+| Revocation Framework | Book B step 4 | 🔒 Locked |
 | Steward Gate | Future | 🔒 Outline only |
 | Audit Receipt | Future | 🔒 Outline only |
 
 | Priority | Blueprint | Status | Depends on |
 | --- | --- | --- | --- |
 | 0 | Trust Chain (this doc) | ✅ Chartered | Constitution |
-| 🥇 1 | [Registry Citizenship Protocol](Z_REGISTRY_CITIZENSHIP_PROTOCOL.md) | ✅ Phase 0 opened | Trust Chain order |
-| 🥈 2 | [Steward Gate Logic](Z_STEWARD_GATE_LOGIC.md) | 📋 Outline only | Citizenship Protocol |
-| 🥉 3 | [Audit Receipt Structure](Z_AUDIT_RECEIPT_STRUCTURE.md) | 📋 Outline only | Citizenship + Gate Logic |
+| B1 | [Identity Manifest](Z_IDENTITY_MANIFEST.md) | ✅ Phase 0 categories | Trust Chain |
+| B2 | [Registry Citizenship Protocol](Z_REGISTRY_CITIZENSHIP_PROTOCOL.md) | ✅ Phase 0 opened | Identity Manifest |
+| B3 | [Human–Agent Distinction](Z_HUMAN_AGENT_DISTINCTION_SCHEMA.md) | 🔒 Locked | Manifest |
+| B4 | [Revocation Framework](Z_REVOCATION_FRAMEWORK.md) | 🔒 Locked | Citizenship Rules |
+| 🥈 | [Steward Gate Logic](Z_STEWARD_GATE_LOGIC.md) | 📋 Outline only | Citizenship Protocol |
+| 🥉 | [Audit Receipt Structure](Z_AUDIT_RECEIPT_STRUCTURE.md) | 📋 Outline only | Citizenship + Gate Logic |
 
 That separation prevents downstream designs from inventing assumptions before the identity model is complete.
 
@@ -114,7 +124,7 @@ Once foundations are complete, a natural architectural family may emerge. **None
 | Book | Theme | Status |
 | --- | --- | --- |
 | A | Trust Chain | ✅ Chartered (this spine) |
-| B | Registry Citizenship | ✅ Phase 0 design |
+| B | Registry Citizenship family | ✅ Manifest + Rules Phase 0 · Distinction/Revocation 🔒 |
 | C | Steward Gates | 🔒 Outline |
 | D | Audit Receipts | 🔒 Outline |
 | E | Policy Engine | 🔮 Foresight |

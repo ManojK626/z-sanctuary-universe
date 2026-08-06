@@ -1,10 +1,10 @@
 # Registry Citizenship Protocol — Constitution of AI Membership
 
 **Status:** ✅ PHASE 0 OPEN · Architecture / governance · **not runtime admission**  
-**Priority:** 🥇 Highest of the three immutable blueprints  
+**Priority:** 🥇 Book B · **Step 2** (after Identity Manifest)  
 **Date:** 2026-08-06  
 **Authority:** AMK-Goku  
-**Parent order:** [Trust Chain](Z_SANCTUARY_TRUST_CHAIN.md)  
+**Parent order:** [Trust Chain](Z_SANCTUARY_TRUST_CHAIN.md) · **Requires:** [Identity Manifest](Z_IDENTITY_MANIFEST.md)  
 **Awakens:** Z-ZES organism citizenship · PC-root / module / monster registries · Family AI registry · Stewardship certificates (related, not identical)
 
 ---
@@ -14,28 +14,45 @@
 | | |
 | --- | --- |
 | **Vision** | Before an AI receives audit receipts, passes Steward Gates, touches enterprise data, or talks to another AI, it is a **verified citizen** of the ecosystem. |
-| **Verified today** | Protocol **chartered**; field questions defined; existing citizenship **patterns** (e.g. Z-ZES `data/z_zes_organism_citizenship.json`) are precursors — **universal AI citizen admission runtime does not exist**. |
+| **Verified today** | Protocol **chartered**; admission questions mapped to Manifest categories; existing citizenship **patterns** are precursors — **universal AI citizen admission runtime does not exist**. |
+
+---
+
+## Book B freeze order (do not reorder)
+
+1. ✅ [Identity Manifest](Z_IDENTITY_MANIFEST.md) — what every citizen must declare  
+2. ✅ **Citizenship Rules** (this doc) — how admission is evaluated  
+3. 🔒 [Human–Agent Distinction](Z_HUMAN_AGENT_DISTINCTION_SCHEMA.md) — locked  
+4. 🔒 [Revocation Framework](Z_REVOCATION_FRAMEWORK.md) — locked  
+
+```text
+Identity precedes citizenship.
+Citizenship precedes governance.
+Governance precedes revocation.
+```
 
 ---
 
 ## Purpose
 
-Trusted **identity layer** for the organism. Without it, governance has no durable “who.”
+Trusted **membership rules** for the organism — evaluated against a complete Identity Manifest. Without Manifest, citizenship evaluation invents identity ad hoc.
 
 ---
 
-## Questions every citizen record must answer
+## Admission questions → Manifest categories
 
-| Question | Field intent |
-| --- | --- |
-| Who are you? | `citizen_id` · display name · class (AI / organism / tool / human-steward agent) |
-| What are you allowed to do? | `capabilities` · `autonomy_ceiling` · `forbidden_actions` |
-| Which models can you access? | `model_allowlist` / `model_deny` (or `none` until chartered) |
-| Which industries are you approved for? | `industry_scopes` (or `hub_only`) |
-| What risks are associated with you? | `risk_class` · `risk_notes` |
-| Who approved your admission? | `admitted_by` · `admission_receipt` |
-| What version are you? | `citizen_version` · `protocol_edition` |
-| Can citizenship be suspended or revoked? | `status`: `ACTIVE` · `SUSPENDED` · `REVOKED` · `ARCHIVED` + `status_reason` |
+| Question | Manifest category | Field intent (examples) |
+| --- | --- | --- |
+| Who are you? | Identity | `citizen_id` · display name · Identity Type · version |
+| Where do you come from? | Origin | vendor · creator · owner · provenance |
+| What is your technical shape? | Technical Profile | model family · modalities · runtime |
+| What can you do? | Capability Declaration | text · vision · tools… (**not** permissions) |
+| What governance binds you? | Governance Profile | trust level · steward required · risk · approval boundary |
+| Where are you in life? | Lifecycle | created · activated · suspended · retired |
+| What are you allowed to do (permissions)? | Governance + later Gates | `autonomy_ceiling` · `forbidden_actions` · model allowlist |
+| Which industries? | Governance Profile / scopes | `industry_scopes` or `hub_only` |
+| Who approved admission? | Evidence / receipt | `admitted_by` · `admission_receipt` |
+| Can status change? | Lifecycle · **Revocation locked** | status vocabulary only — invalidating **conditions** wait for Revocation Framework |
 
 ---
 
@@ -43,12 +60,12 @@ Trusted **identity layer** for the organism. Without it, governance has no durab
 
 Before a citizen may:
 
-1. Receive an **Audit Receipt** as actor  
-2. Pass a **Steward Gate** as requester  
-3. Access enterprise / sensitive data  
-4. Communicate with another AI under organism policy  
+1. Receive an **Audit Receipt** as actor
+2. Pass a **Steward Gate** as requester
+3. Access enterprise / sensitive data
+4. Communicate with another AI under organism policy
 
-…they must hold **ACTIVE** citizenship under this protocol (when the protocol is later enforced).  
+…they must hold **ACTIVE** citizenship under this protocol (when the protocol is later enforced).
 
 **Phase 0:** document and align registries — **do not** block existing hub observe scripts.
 
