@@ -39,7 +39,7 @@ Credibility with engineers, partners, investors, and regulators depends on **nev
 
 ---
 
-## Positioning statement (commercial strategy)
+## Market gap map
 
 | Global AI Gap | Typical industry solution | Z-Sanctuary position |
 | --- | --- | --- |
@@ -175,4 +175,4 @@ Domain modules change; **foundation is not rebuilt** each time. Closing Doctrine
 
 ---
 
-*Strategy · organism · governance layer · not another LLM*
+*Strategy · vision ≠ verified · governance layer · not another LLM*
