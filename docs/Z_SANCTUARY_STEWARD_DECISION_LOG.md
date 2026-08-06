@@ -6,6 +6,16 @@
 
 ---
 
+## 2026-08-06 (g) — Trust Chain blueprint order
+
+**Decision:** Lock immutable blueprint order — (1) Registry Citizenship Protocol (2) Steward Gate Logic (3) Audit Receipt Structure — under overarching **Trust Chain**. Open Citizenship Phase 0 only; Gates and Receipts remain outlines until prior layer is ready.
+
+**Reason:** Order matters more than content rush; identity before courts before records.
+
+**Receipts:** [Z_SANCTUARY_TRUST_CHAIN.md](Z_SANCTUARY_TRUST_CHAIN.md) · [PHASE_Z_TRUST_CHAIN_ORDER_CHARTER.md](PHASE_Z_TRUST_CHAIN_ORDER_CHARTER.md)
+
+---
+
 ## 2026-08-06 (f) — Vision ≠ verified capability
 
 **Decision:** Market/positioning copy must always distinguish **vision** (governance & coordination layer) from **verified today** (documented architecture + gated runtime).

@@ -4,7 +4,7 @@
 **Date:** 2026-08-06
 **Authority:** AMK-Goku
 **Law:** Not another LLM · Governance before Capability · Registry before Runtime · Super Turtle
-**Parents:** [OS Health Report](Z_SANCTUARY_STATE_OF_THE_OS_2026_SCORECARD.md) · [Layer 7 Commercial](Z_SANCTUARY_STATE_OF_THE_OS_2026_LAYER_7_COMMERCIAL.md) · [Operating Organism Milestone](Z_SANCTUARY_OPERATING_ORGANISM_MILESTONE_2026_08_06.md) · [Genesis Charter](Genesis/MASTER_GENESIS_CORE_SPEC.md) · [Z-ZES Roadmap](Z_ZES_ROADMAP_LEDGER.md)
+**Parents:** [OS Health Report](Z_SANCTUARY_STATE_OF_THE_OS_2026_SCORECARD.md) · [Layer 7 Commercial](Z_SANCTUARY_STATE_OF_THE_OS_2026_LAYER_7_COMMERCIAL.md) · [Operating Organism Milestone](Z_SANCTUARY_OPERATING_ORGANISM_MILESTONE_2026_08_06.md) · [Genesis Charter](Genesis/MASTER_GENESIS_CORE_SPEC.md) · [Z-ZES Roadmap](Z_ZES_ROADMAP_LEDGER.md) · [Trust Chain](Z_SANCTUARY_TRUST_CHAIN.md)
 
 ---
 
@@ -159,10 +159,10 @@ Domain modules change; **foundation is not rebuilt** each time. Closing Doctrine
 ## Explicitly not authorized by this charter
 
 - Launching a commercial “AI platform” product
-- Claiming production multi-industry readiness  
-- Collapsing **vision** into **verified capability** in partner/investor/regulator copy  
-- Opening Z-ZES Gates 1–7  
-- Cloudflare / payment / investor sacred moves  
+- Claiming production multi-industry readiness
+- Collapsing **vision** into **verified capability** in partner/investor/regulator copy
+- Opening Z-ZES Gates 1–7
+- Cloudflare / payment / investor sacred moves
 - Competing on model benchmarks as primary story
 
 ---
