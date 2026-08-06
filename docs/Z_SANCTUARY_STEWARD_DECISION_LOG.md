@@ -6,6 +6,14 @@
 
 ---
 
+## 2026-08-06 (h) — Trust Chain Evidence property + Books A–G foresight
+
+**Decision:** Seal Evidence as a cross-cutting property of every Trust Chain stage (not a new phase). Record Books A–G as foresight family only. Affirm three principles: no governance without identity · no execution without governance · no trust without evidence.
+
+**Updates:** [Z_SANCTUARY_TRUST_CHAIN.md](Z_SANCTUARY_TRUST_CHAIN.md) · [PHASE_Z_TRUST_CHAIN_ORDER_CHARTER.md](PHASE_Z_TRUST_CHAIN_ORDER_CHARTER.md)
+
+---
+
 ## 2026-08-06 (g) — Trust Chain blueprint order
 
 **Decision:** Lock immutable blueprint order — (1) Registry Citizenship Protocol (2) Steward Gate Logic (3) Audit Receipt Structure — under overarching **Trust Chain**. Open Citizenship Phase 0 only; Gates and Receipts remain outlines until prior layer is ready.

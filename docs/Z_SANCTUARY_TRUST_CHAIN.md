@@ -1,6 +1,6 @@
 # Z-Sanctuary Trust Chain & Immutable Blueprint Order
 
-**Status:** ✅ CHARTERED · Order of blueprints locked  
+**Status:** ✅ CHARTERED · Order of blueprints locked · Evidence property sealed  
 **Date:** 2026-08-06  
 **Authority:** AMK-Goku  
 **Law:** Order matters more than content rush · Vision ≠ verified · Closing Doctrine  
@@ -8,33 +8,40 @@
 
 ---
 
-## Why order matters
+## Dependency graph (not a pile of docs)
 
-Three valuable blueprints. **One is the foundation for the others.**
-
-```text
-Registry Citizenship Protocol   🥇  (Constitution of AI Membership)
-          ↓
-Steward Gate Logic              🥈  (Supreme Court of the ecosystem)
-          ↓
-Audit Receipt Structure         🥉  (Official records / evidence)
-```
-
-Nation metaphor:
+This is a **dependency graph**. Future contributors should see **why** one document exists before another.
 
 ```text
-Citizenship → Laws/Courts → Official Records
+Trust Chain                    (overarching lifecycle + Evidence property)
+    ↓
+Registry Citizenship           🥇  Constitution of AI Membership
+    ↓
+Steward Gates                  🥈  Supreme Court of the ecosystem
+    ↓
+Audit Receipts                 🥉  Official records
 ```
 
+### Three principles
+
+```text
+No governance without identity.
+No execution without governance.
+No trust without evidence.
+```
+
+Nation metaphor: Citizenship → Laws/Courts → Official Records.  
 Without trusted **identity**, gates and receipts have nothing durable to bind to.
 
 ---
 
 ## The Trust Chain (overarching blueprint)
 
-Fourth immutable concept — **above** the three — describing the full lifecycle of trust:
+Describes the full lifecycle of trust. Does **not** replace Citizenship / Gates / Receipts — it **connects** them.
 
 ```text
+                    Evidence  (cross-cutting — every stage)
+         ─────────────────────────────────────────
 Identity
       ↓
 Citizenship
@@ -52,32 +59,67 @@ Archive
 Reputation
 ```
 
-Does **not** replace Citizenship / Gates / Receipts.  
-It **connects** them into one coherent whole for the governance-and-coordination layer vision.
+### Evidence property (not a new phase)
+
+Applies to **every** stage of the chain:
+
+| Rule | Meaning |
+| --- | --- |
+| Every transition should produce evidence | Stage changes leave a trace |
+| Every decision should be traceable | Who / what / why / when |
+| Every approval should have provenance | Steward identity · policy version |
+| Every reputation score should derive from receipts | Not opinion · not vibe |
+
+Evidence is a **property of the entire chain**, not a separate book or sprint.
 
 | Stage | Meaning (vision) | Verified today |
 | --- | --- | --- |
 | Identity | Who claims to act | Names in registries / docs |
-| Citizenship | Verified membership | Organism/project citizenship patterns (e.g. Z-ZES); **universal AI citizen protocol = this charter series** |
-| Capability | What they may do | Autonomy policy · forbidden actions · Go/No-Go labels |
-| Governance | Steward Gate evaluation | Quality Gate · human sacred moves · Super Turtle |
+| Citizenship | Verified membership | Organism/project patterns (e.g. Z-ZES); universal AI citizen protocol = Phase 0 series |
+| Capability | What they may do | Autonomy policy · forbidden actions · Go/No-Go |
+| Governance | Steward Gate evaluation | Quality Gate · sacred moves · Super Turtle |
 | Execution | Act | **Intentionally gated** — mostly human-triggered |
-| Receipt | Evidence of decision/action | Phase green receipts · stewardship certificates · decision log |
+| Receipt | Evidence of decision/action | Phase receipts · certificates · decision log |
 | Archive | Durable history | `docs/` · `data/reports/` · certificate registry |
-| Reputation | Standing over time | Foresight — not a score product yet |
+| Reputation | Standing over time | Foresight — score product not opened |
 
 ---
 
-## Blueprint status
+## Blueprint status (Phase 0 guarantees)
+
+| Layer | Phase | Status |
+| --- | --- | --- |
+| Trust Chain | Architecture | ✅ Defined (+ Evidence property) |
+| Registry Citizenship | Phase 0 | ✅ Open (design only) |
+| Steward Gate | Future | 🔒 Outline only |
+| Audit Receipt | Future | 🔒 Outline only |
 
 | Priority | Blueprint | Status | Depends on |
 | --- | --- | --- | --- |
-| 0 | Trust Chain (this doc) | ✅ Order chartered | Constitution |
+| 0 | Trust Chain (this doc) | ✅ Chartered | Constitution |
 | 🥇 1 | [Registry Citizenship Protocol](Z_REGISTRY_CITIZENSHIP_PROTOCOL.md) | ✅ Phase 0 opened | Trust Chain order |
-| 🥈 2 | [Steward Gate Logic](Z_STEWARD_GATE_LOGIC.md) | 📋 Outline only — after Citizenship fields stable | Citizenship Protocol |
-| 🥉 3 | [Audit Receipt Structure](Z_AUDIT_RECEIPT_STRUCTURE.md) | 📋 Outline only — after Gate flow stable | Citizenship + Gate Logic |
+| 🥈 2 | [Steward Gate Logic](Z_STEWARD_GATE_LOGIC.md) | 📋 Outline only | Citizenship Protocol |
+| 🥉 3 | [Audit Receipt Structure](Z_AUDIT_RECEIPT_STRUCTURE.md) | 📋 Outline only | Citizenship + Gate Logic |
 
-**Runtime / crypto signatures / immutable ledger:** NOT AUTHORIZED by these charters.
+That separation prevents downstream designs from inventing assumptions before the identity model is complete.
+
+**Runtime / crypto signatures / immutable ledger / Policy Engine / Federated coordination:** NOT AUTHORIZED by these charters.
+
+---
+
+## Looking further ahead (Books A–G — foresight only)
+
+Once foundations are complete, a natural architectural family may emerge. **None of these books are open** beyond what is chartered above. None require a specific LLM — they define the organism so models can evolve underneath while governance stays stable.
+
+| Book | Theme | Status |
+| --- | --- | --- |
+| A | Trust Chain | ✅ Chartered (this spine) |
+| B | Registry Citizenship | ✅ Phase 0 design |
+| C | Steward Gates | 🔒 Outline |
+| D | Audit Receipts | 🔒 Outline |
+| E | Policy Engine | 🔮 Foresight |
+| F | Capability Registry | 🔮 Foresight (partial precursors exist) |
+| G | Federated AI Coordination | 🔮 Foresight (Z-ZES related · Gates closed) |
 
 ---
 
@@ -85,8 +127,9 @@ It **connects** them into one coherent whole for the governance-and-coordination
 
 Do **not** invent Audit Receipt schemas that assume citizen IDs that do not exist yet.  
 Do **not** invent Steward Gate engines that skip identity verification.  
-Do **not** claim Trust Chain is production-complete.
+Do **not** claim Trust Chain is production-complete.  
+Do **not** open Books E–G without AMK Quality Gate.
 
 ---
 
-*Trust Chain · order locked · Super Turtle*
+*Trust Chain · dependency graph · Evidence everywhere · Super Turtle*
