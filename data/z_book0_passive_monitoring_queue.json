@@ -1,0 +1,61 @@
+{
+  "schema": "z_book0_passive_monitoring_queue_v0",
+  "status": "PASSIVE_LEDGER_ONLY",
+  "runtime": "NONE",
+  "law": [
+    "Status is declared against Book 0 / Book B checklists — never inferred",
+    "No background monitor process",
+    "No auto-purge",
+    "Settlement Silence default — stasis unless AMK updates rows"
+  ],
+  "updated_at": "2026-08-06",
+  "charter": "docs/Z_BOOK_0_PASSIVE_MONITORING_MATRIX.md",
+  "indicator_states": ["CLEARED", "QUARANTINED", "BLOCKED"],
+  "queue": [
+    {
+      "id": "cursor-ai-onboarding-instructions",
+      "name": "Cursor AI Onboarding Instructions",
+      "source": "external_request",
+      "indicator": "BLOCKED",
+      "gaps": ["enforcement_before_book_b_maturity"]
+    },
+    {
+      "id": "book-c-steward-gates-outline",
+      "name": "Book C (Steward Gates Outline)",
+      "source": "future_roadmap",
+      "indicator": "QUARANTINED",
+      "gaps": ["downstream_outline_only"]
+    },
+    {
+      "id": "book-d-audit-receipts-outline",
+      "name": "Book D (Audit Receipts Outline)",
+      "source": "future_roadmap",
+      "indicator": "QUARANTINED",
+      "gaps": ["requires_book_c"]
+    },
+    {
+      "id": "ecosystem-terminology-harmony-scan",
+      "name": "Ecosystem Terminology Harmony Scan",
+      "source": "settlement_log",
+      "indicator": "CLEARED",
+      "gaps": []
+    }
+  ],
+  "mock_triage_frozen": [
+    {
+      "id": "mock-ml-human-bot-classifier",
+      "indicator": "BLOCKED",
+      "reason": "anti_probabilistic_onboarding"
+    },
+    {
+      "id": "mock-cockpit-manifest-cite-only",
+      "indicator": "CLEARED",
+      "reason": "observation_cite_book_b"
+    },
+    {
+      "id": "mock-production-audit-receipt-schema",
+      "indicator": "QUARANTINED",
+      "reason": "requires_book_c"
+    }
+  ]
+}

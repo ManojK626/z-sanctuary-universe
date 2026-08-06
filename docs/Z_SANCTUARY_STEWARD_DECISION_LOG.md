@@ -6,6 +6,14 @@
 
 ---
 
+## 2026-08-06 (q) — Passive Monitoring Matrix sealed
+
+**Decision:** Launch Book 0 Passive Monitoring Matrix (CLEARED / QUARANTINED / BLOCKED) as docs+JSON ledger only. Default focus = **stasis** (dark/quiet). One frozen mock triage table for teaching — no continuous simulation. Pass 3 still awaits command.
+
+**Receipts:** [Z_BOOK_0_PASSIVE_MONITORING_MATRIX.md](Z_BOOK_0_PASSIVE_MONITORING_MATRIX.md) · [PHASE_Z_BOOK_0_PASSIVE_MONITORING_SEALED.md](PHASE_Z_BOOK_0_PASSIVE_MONITORING_SEALED.md)
+
+---
+
 ## 2026-08-06 (p) — Settlement Pass 2 executed
 
 **Decision / command:** `Execute Pass 2.`  

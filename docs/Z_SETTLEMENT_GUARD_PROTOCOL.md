@@ -76,7 +76,8 @@ Pass 3 ............. Await AMK command
 Book C / D ......... 🔒
 ```
 
-**Book 0:** [Z_BOOK_0_CONSTITUTIONAL_DEFENSE_FILTERS.md](Z_BOOK_0_CONSTITUTIONAL_DEFENSE_FILTERS.md)
+**Book 0:** [Z_BOOK_0_CONSTITUTIONAL_DEFENSE_FILTERS.md](Z_BOOK_0_CONSTITUTIONAL_DEFENSE_FILTERS.md)  
+**Passive queue:** [Z_BOOK_0_PASSIVE_MONITORING_MATRIX.md](Z_BOOK_0_PASSIVE_MONITORING_MATRIX.md) · `data/z_book0_passive_monitoring_queue.json` (stasis default)
 
 ---
 
