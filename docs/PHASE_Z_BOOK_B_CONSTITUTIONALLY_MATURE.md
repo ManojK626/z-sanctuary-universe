@@ -29,6 +29,15 @@ Book D (Audit Receipts) ...... 🔒 CLOSED (after Book C)
 
 Future Books **cite** Book B. They do not casually edit it.
 
+### Active steward posture (2026-08-06)
+
+```text
+Book B mode ........ CITE-ONLY (steward command)
+Book C ............. 🔒 CLOSED (no open)
+Book D ............. 🔒 CLOSED
+Bedrock edits ...... ❌ unless AMK authorizes minimal errata
+```
+
 ---
 
 ## Invariants (unchanged)
@@ -47,10 +56,10 @@ Governance precedes revocation.
 
 ## Book C opening (not automatic)
 
-Per Settlement doctrine, Book C **may** open only by **explicit stewardship command** after this declaration (e.g. `Open Book C` / Quality Gate).
+Per Settlement doctrine, Book C **may** open only by **explicit stewardship command**.
 
-Until then: Gate Logic remains outline-only.
+**Steward choice (2026-08-06):** stay in **cite-only** on Book B — Book C remains outline-only / 🔒.
 
 ---
 
-*Mature · referenced · not casually edited · Book C waits*
+*Mature · referenced · cite-only · Book C waits*

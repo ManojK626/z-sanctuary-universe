@@ -6,6 +6,16 @@
 
 ---
 
+## 2026-08-06 (u) — Book B cite-only mode
+
+**Command:** `stay in cite-only mode on Book B.`
+
+**Decision:** Do **not** open Book C. Book B remains **CONSTITUTIONALLY MATURE** and operates in **cite-only** posture: ask what Book B already requires; do not redesign identity; do not amend Manifest / Citizenship bedrock casually.
+
+**Standing:** Book C/D 🔒 · Settlement COMPLETE · foresight may cite Book B only
+
+---
+
 ## 2026-08-06 (t) — Execute Pass 3 · Book B mature
 
 **Command:** `Execute Pass 3`

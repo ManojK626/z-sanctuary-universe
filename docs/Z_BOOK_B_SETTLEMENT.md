@@ -15,6 +15,8 @@ Book C  🔒 Steward Gates — CLOSED (may open on separate command)
 Book D  🔒 Audit Receipts — CLOSED
 ```
 
+**Active posture:** Book B is **cite-only** (steward command 2026-08-06). Do not open Book C until a later explicit command.
+
 ---
 
 ## What Settlement accomplished
