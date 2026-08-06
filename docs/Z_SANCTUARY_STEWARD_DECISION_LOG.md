@@ -6,6 +6,16 @@
 
 ---
 
+## 2026-08-06 (f) — Vision ≠ verified capability
+
+**Decision:** Market/positioning copy must always distinguish **vision** (governance & coordination layer) from **verified today** (documented architecture + gated runtime).
+
+**Reason:** Credibility with engineers, partners, investors, regulators.
+
+**Updates:** [Z_SANCTUARY_AI_OPERATING_ORGANISM_MARKET_POSITION.md](Z_SANCTUARY_AI_OPERATING_ORGANISM_MARKET_POSITION.md)
+
+---
+
 ## 2026-08-06 (e) — Market position: Governance & Coordination Layer
 
 **Decision:** Record commercial/strategic positioning — Z-Sanctuary is an **AI Operating Organism** / **Governance and Coordination Layer for Enterprise AI Ecosystems**, not another LLM. Industry gap map + Relationship OS foresight only.

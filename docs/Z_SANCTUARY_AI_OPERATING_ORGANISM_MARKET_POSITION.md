@@ -1,9 +1,9 @@
 # Z-Sanctuary — Global AI Gaps & Commercial Positioning
 
-**Status:** ✅ CHARTERED · Strategy / foresight · **not a product launch**  
-**Date:** 2026-08-06  
-**Authority:** AMK-Goku  
-**Law:** Not another LLM · Governance before Capability · Registry before Runtime · Super Turtle  
+**Status:** ✅ CHARTERED · Strategy / foresight · **not a product launch**
+**Date:** 2026-08-06
+**Authority:** AMK-Goku
+**Law:** Not another LLM · Governance before Capability · Registry before Runtime · Super Turtle
 **Parents:** [OS Health Report](Z_SANCTUARY_STATE_OF_THE_OS_2026_SCORECARD.md) · [Layer 7 Commercial](Z_SANCTUARY_STATE_OF_THE_OS_2026_LAYER_7_COMMERCIAL.md) · [Operating Organism Milestone](Z_SANCTUARY_OPERATING_ORGANISM_MILESTONE_2026_08_06.md) · [Genesis Charter](Genesis/MASTER_GENESIS_CORE_SPEC.md) · [Z-ZES Roadmap](Z_ZES_ROADMAP_LEDGER.md)
 
 ---
@@ -18,7 +18,28 @@ Z-Sanctuary is evolving into an **AI Operating Organism** — many engines under
 
 ---
 
-## Market gap map
+## Vision vs verified capability (non-bypass)
+
+Credibility with engineers, partners, investors, and regulators depends on **never collapsing these two lines**:
+
+| | Statement |
+| --- | --- |
+| **Vision** | A governance and coordination layer for enterprise AI ecosystems. |
+| **Verified today** | A documented architecture, governance framework, and phased design — with **runtime gates remaining intentionally closed**. |
+
+| Vision may say | Verified today must say |
+| --- | --- |
+| Multi-AI organism under Mission Control | Citizenship, registries, Mission Control surfaces, and charters exist; **live multi-AI orchestration is not claimed** |
+| Enterprise / multi-industry ready | Domain **adaptability is designed**; sector production readiness is **not** certified |
+| Institutional memory across projects | Registries, receipts, decision logs, Atlas — **not** a commercial memory product |
+| Edge / Cloudflare operational | Concepts and HOLD posture — **edge deploy not authorized** |
+| Z-ZES coordinates organisms | Phase 0 + 0.5 sealed — **Gates 1–7 closed** |
+
+**Rule:** Market language may inspire. **Receipts and gates** define what is true. Closing Doctrine still holds — no charter authorizes implementation.
+
+---
+
+## Positioning statement (commercial strategy)
 
 | Global AI Gap | Typical industry solution | Z-Sanctuary position |
 | --- | --- | --- |
@@ -53,7 +74,7 @@ Few platforms are designed around this philosophy. Z-ZES Gates remain **closed**
 
 ### 3 · AI Memory Governance
 
-Chatbots remember conversations.  
+Chatbots remember conversations.
 Z-Sanctuary remembers **projects**: why · who approved · history · dependencies · rollback · ownership.
 
 Closer to **institutional memory** than chat memory.
@@ -74,11 +95,15 @@ Uncontrolled change is reduced by design.
 
 **Do not market as:** “Another AI platform.”
 
-**Position as:**
+**Position (vision):**
 
 > **The Governance and Coordination Layer for Enterprise AI Ecosystems.**
 
-Harder to copy: value is architecture, governance, interoperability, and institutional workflow — not a single underlying LLM.
+**Always pair with (verified today):**
+
+> Documented architecture, governance framework, and phased design — runtime gates intentionally closed until stewardship opens them.
+
+Harder to copy when mature: value is architecture, governance, interoperability, and institutional workflow — not a single underlying LLM. **Do not imply that maturity is already production-complete.**
 
 ---
 
@@ -133,19 +158,20 @@ Domain modules change; **foundation is not rebuilt** each time. Closing Doctrine
 
 ## Explicitly not authorized by this charter
 
-- Launching a commercial “AI platform” product  
+- Launching a commercial “AI platform” product
 - Claiming production multi-industry readiness  
+- Collapsing **vision** into **verified capability** in partner/investor/regulator copy  
 - Opening Z-ZES Gates 1–7  
 - Cloudflare / payment / investor sacred moves  
-- Competing on model benchmarks as primary story  
+- Competing on model benchmarks as primary story
 
 ---
 
 ## Next (refinement)
 
-1. Keep OS Health · Atlas · Cadence · Settle week  
-2. When commercial one-pager is wanted: lead with **Governance and Coordination Layer** positioning  
-3. Domain pilots only after Quality Gate + AMK  
+1. Keep OS Health · Atlas · Cadence · Settle week
+2. When commercial one-pager is wanted: lead with **Governance and Coordination Layer** positioning
+3. Domain pilots only after Quality Gate + AMK
 
 ---
 
