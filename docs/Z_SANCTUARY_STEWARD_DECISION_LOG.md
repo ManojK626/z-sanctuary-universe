@@ -6,6 +6,16 @@
 
 ---
 
+## 2026-08-06 (m) — Architectural maturity milestone
+
+**Decision:** Record Constitutional Cycle and treat Book B as a **constitutional dependency** (not an active project). Settlement = immune system for all future Books. Book C/D remain closed until three clean passes.
+
+**Observation:** Constitutional layer trending toward a **governance language for AI ecosystems** (vision ≠ verified product claim).
+
+**Receipt:** [Z_ARCHITECTURAL_MATURITY_MILESTONE.md](Z_ARCHITECTURAL_MATURITY_MILESTONE.md)
+
+---
+
 ## 2026-08-06 (l) — Settlement = constitutional stabilization
 
 **Decision:** Affirm Settlement as constitutional stabilization (not waiting). Only four observation kinds: Consistency · Vocabulary · Dependencies · Silence. End Settlement only after **three** clean no-contradiction passes — then Book B may be declared mature and Book C may open.

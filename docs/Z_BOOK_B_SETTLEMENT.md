@@ -26,11 +26,14 @@ Quietly transforms Book B from:
 
 into:
 
-> A **trusted constitutional reference**
+> A **trusted constitutional reference** / **constitutional dependency**
 
-Future books should **cite** Book B — not reinterpret it.
+Future books should **cite** Book B — not reinterpret it.  
+Do not ask “How should identity work?” — ask “What does Book B already require?”
 
 Pass 1 reporting **no contradictions** is a stronger milestone than adding another document: the architecture survived its first consistency check without amendments.
+
+Settlement is the **immune system** of the architecture — part of the [Constitutional Cycle](Z_ARCHITECTURAL_MATURITY_MILESTONE.md).
 
 ---
 
@@ -39,6 +42,9 @@ Pass 1 reporting **no contradictions** is a stronger milestone than adding anoth
 ```text
 Observe → Design → Freeze → Settle → Reference → Build
 ```
+
+Full organism lifecycle: Vision → Architecture → Constitution → Settlement → Verification → Reference → Future Expansion.  
+**No shortcuts.**
 
 Settle is a stewardship practice — **not** a new architectural book.
 
