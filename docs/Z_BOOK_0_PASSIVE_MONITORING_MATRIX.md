@@ -42,6 +42,9 @@ Status is **calculated** against frozen dependencies (checklist), not guessed.
 | Ecosystem Terminology Harmony Scan | Settlement Log | Pure observation · Linguistic Symmetry | 🟢 CLEARED |
 | ZIX Universal Vault Core v1 | Doctrine draft | Permanence pipeline needs Gates · Trinity not runtime | 🟡 QUARANTINED |
 | Universal Vault Auto-Population v2 | Doctrine draft | Bypasses human stewardship · before Settlement maturity | 🔴 BLOCKED |
+| ZIX v2 Master Blueprint | Doctrine draft | Must not outrank Constitution · Vault v2 foresight only | 🟡 QUARANTINED |
+| Shadow-AI auto-spawn Protocol | Doctrine draft | Agent factory before Book B + Gates | 🔴 BLOCKED |
+| Seven Enchantments catalog | Doctrine draft | Cite-only symbolic list | 🟢 CLEARED |
 
 ---
 

@@ -6,6 +6,14 @@
 
 ---
 
+## 2026-08-06 (s) — ZIX v2 Master Blueprint chartered
+
+**Decision:** Absorb v2 Master Blueprint as foresight dossier. Does **not** replace constitutional stack. Shadow-AI auto-spawn and Trinity Vault auto-add = 🔴 BLOCKED. Enchantments / People’s / Trailer = 🟢 cite-only. Vault v2 modules = 🟡 QUARANTINED.
+
+**Receipt:** [PHASE_Z_ZIX_V2_MASTER_BLUEPRINT_CHARTER.md](PHASE_Z_ZIX_V2_MASTER_BLUEPRINT_CHARTER.md) · [ZIX_SANCTUARY_V2_MASTER_BLUEPRINT.md](ZIX_SANCTUARY_V2_MASTER_BLUEPRINT.md)
+
+---
+
 ## 2026-08-06 (r) — Universal Vault Core v1 chartered
 
 **Decision:** Absorb ZIX-Sanctuary Universal Vault Core v1 as foresight charter under `docs/vault/`. Trinity = doctrine roles. Auto-Population Engine v2 = 🔴 BLOCKED. Vault doctrine = 🟡 QUARANTINED until Gates/Settlement allow permanence design. No runtime.

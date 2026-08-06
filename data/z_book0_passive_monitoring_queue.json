@@ -53,6 +53,27 @@
       "source": "external_doctrine_draft",
       "indicator": "BLOCKED",
       "gaps": ["bypasses_human_stewardship", "enforcement_before_settlement_maturity", "ancestry_not_auto"]
+    },
+    {
+      "id": "zix-v2-master-blueprint",
+      "name": "ZIX-Sanctuary v2 Master Blueprint",
+      "source": "external_doctrine_draft",
+      "indicator": "QUARANTINED",
+      "gaps": ["must_not_outrank_constitution", "vault_v2_modules_foresight_only"]
+    },
+    {
+      "id": "shadow-ai-protocol-auto-spawn",
+      "name": "Shadow-AI Protocol (auto-generate user AIs)",
+      "source": "external_doctrine_draft",
+      "indicator": "BLOCKED",
+      "gaps": ["agent_spawn_before_book_b_gates", "identity_never_auto_admitted"]
+    },
+    {
+      "id": "seven-enchantments-catalog",
+      "name": "Seven Planetary Enchantments (catalog)",
+      "source": "external_doctrine_draft",
+      "indicator": "CLEARED",
+      "gaps": []
     }
   ],
   "mock_triage_frozen": [
