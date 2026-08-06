@@ -3,7 +3,7 @@
 **Status:** ✅ RECORDED  
 **Date:** 2026-08-06  
 **Authority:** AMK-Goku  
-**Mode:** Super Turtle · Settlement still OPEN  
+**Mode:** Super Turtle · Settlement **COMPLETE** (Pass 1–3 CLEAN)  
 **Class:** Maturity milestone (bigger than a document milestone)
 
 ---
@@ -105,7 +105,7 @@ They are imported from Book B.
 ```
 
 That single statement preserves organism integrity.  
-**Book C remains 🔒 until three clean Settlement passes + steward open.**
+**Book C remains 🔒 until separate steward open** (three clean Settlement passes are now complete).
 
 ---
 
@@ -129,11 +129,13 @@ If that holds through future Books, the constitutional layer may become one of t
 
 ```text
 Book A  ✅
-Book B  ✅ constitutional dependency (Settlement OPEN · Pass 1 clean)
-Book C  🔒
+Book B  ✅ CONSTITUTIONALLY MATURE (Settlement COMPLETE · Pass 1–3 CLEAN)
+Book C  🔒 (may open on separate AMK command)
 Book D  🔒
 ```
 
+**Maturity receipt:** [PHASE_Z_BOOK_B_CONSTITUTIONALLY_MATURE.md](PHASE_Z_BOOK_B_CONSTITUTIONALLY_MATURE.md)
+
 ---
 
-*Architectural maturity · Constitutional Cycle · Settlement is the immune system*
+*Architectural maturity · Constitutional Cycle · Settlement complete · Book C waits*

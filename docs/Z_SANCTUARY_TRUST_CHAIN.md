@@ -94,8 +94,8 @@ Evidence is a **property of the entire chain**, not a separate book or sprint.
 | Layer | Phase | Status |
 | --- | --- | --- |
 | Trust Chain | Architecture | ✅ Defined (+ Evidence property) |
-| Identity Manifest | Book B · Phase 0 | ✅ Open (categories sealed) |
-| Registry Citizenship Rules | Book B · Phase 0 | ✅ Open (design only · maps to Manifest) |
+| Identity Manifest | Book B · mature | ✅ Categories sealed (design · no runtime engine) |
+| Registry Citizenship Rules | Book B · mature | ✅ Design maps to Manifest (no admission engine) |
 | Human–Agent Distinction | Book B step 3 | 🔒 Locked |
 | Revocation Framework | Book B step 4 | 🔒 Locked |
 | Steward Gate | Future | 🔒 Outline only |
@@ -125,7 +125,7 @@ Once foundations are complete, a natural architectural family may emerge. **None
 | --- | --- | --- |
 | A | Trust Chain | ✅ Chartered (this spine) |
 | 0 | Constitutional Defense Filters | ✅ Frozen (market fault lines · Settlement Guard) |
-| B | Registry Citizenship family | ✅ Phase 0 stable · **Settlement open** · C/D 🔒 |
+| B | Registry Citizenship family | ✅ **CONSTITUTIONALLY MATURE** (Settlement complete) · C/D 🔒 |
 | C | Steward Gates | 🔒 Outline |
 | D | Audit Receipts | 🔒 Outline |
 | E | Policy Engine | 🔮 Foresight |

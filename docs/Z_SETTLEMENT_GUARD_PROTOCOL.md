@@ -3,8 +3,8 @@
 **Status:** ✅ SEALED  
 **Date:** 2026-08-06  
 **Authority:** AMK-Goku  
-**Parents:** [Book B Settlement](Z_BOOK_B_SETTLEMENT.md) · [Architectural Maturity](Z_ARCHITECTURAL_MATURITY_MILESTONE.md)  
-**Mode:** Super Turtle  
+**Parents:** [Book B Settlement](Z_BOOK_B_SETTLEMENT.md) · [Architectural Maturity](Z_ARCHITECTURAL_MATURITY_MILESTONE.md) · [Maturity](PHASE_Z_BOOK_B_CONSTITUTIONALLY_MATURE.md)  
+**Mode:** Super Turtle · Settlement **COMPLETE**  
 
 ---
 
@@ -14,27 +14,29 @@
 
 | Guard | Rule |
 | --- | --- |
-| **Constitutional vault** | Book A/B text is **closed to amendment** during Settlement unless a Pass finds a contradiction and AMK authorizes a **minimal errata** |
-| **Book C / D** | Remain 🔒 — no design, no “preview” chapters, no circular imports |
-| **Settlement activity** | Only the four observation kinds · only via **steward-gated Settlement Passes** |
-| **Agent default** | Do **not** invent Pass 2/3 or amend Constitution unsolicited — wait for explicit stewardship command |
+| **Constitutional vault** | Book A/B/0 bedrock stays **closed to casual amendment** — mature books are cited, not casually rewritten |
+| **Book C / D** | Remain 🔒 until explicit AMK open — no design, no “preview” chapters, no circular imports |
+| **Settlement** | Pass 1–3 CLEAN · COMPLETE — further passes only if AMK reopens immune review |
+| **Agent default** | Do **not** open Book C/D or amend Constitution unsolicited — wait for explicit stewardship command |
 
 ```text
 Total systemic silence on NEW architecture  ✅
-Total silence on Settlement forever         ❌ (immune system must still run — on command)
+Settlement immune cycle (Pass 1–3)          ✅ COMPLETE
+Book C auto-open                            ❌
 ```
 
 ---
 
-## Steward-gated Passes
+## Steward-gated Passes (historical + reopen)
 
-A Settlement Pass runs **only** when AMK issues an explicit command, for example:
+Settlement Passes ran **only** on explicit AMK command. Triple CLEAN achieved 2026-08-06.
 
-> “Run Settlement Pass 2”  
-> “Review Settlement Pass results”  
-> “Close Settlement / open Book C” (only after Pass 1–3 clean)
+Further immune review or Book C open requires a new command, for example:
 
-Between commands: **constitutional vault closed** — observe the organism in daily life; do not rewrite Books.
+> “Reopen Settlement / Run Settlement Pass N”  
+> “Open Book C”  
+
+Between commands: **constitutional vault closed** — cite Book B; do not rewrite Books.
 
 ---
 
