@@ -6,6 +6,16 @@
 
 ---
 
+## 2026-08-06 (k) — Settle before Book C (Option 3)
+
+**Decision:** Do **not** open Book C (Steward Gates) or Book D (Audit Receipts). Enter **Book B Settlement** — stewardship practice: check for contradictions, not additions. First consistency pass recorded.
+
+**Reason:** Freeze → Settle → Reference → Build. Stability becomes progress; Book C must not invent identity.
+
+**Docs:** [Z_BOOK_B_SETTLEMENT.md](Z_BOOK_B_SETTLEMENT.md) · [PHASE_Z_BOOK_B_SETTLEMENT_PASS_1.md](PHASE_Z_BOOK_B_SETTLEMENT_PASS_1.md)
+
+---
+
 ## 2026-08-06 (j) — Book B Phase 0 constitutionally stable
 
 **Decision:** Seal Book B Phase 0 as constitutionally stable. Reserve invariants: identity declared once · verified many times · never inferred. Do not open Distinction or Revocation. Future docs reference Manifest as single source of truth.

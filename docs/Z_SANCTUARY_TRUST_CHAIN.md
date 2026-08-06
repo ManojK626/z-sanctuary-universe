@@ -124,7 +124,7 @@ Once foundations are complete, a natural architectural family may emerge. **None
 | Book | Theme | Status |
 | --- | --- | --- |
 | A | Trust Chain | ✅ Chartered (this spine) |
-| B | Registry Citizenship family | ✅ **Phase 0 constitutionally stable** · Distinction/Revocation 🔒 |
+| B | Registry Citizenship family | ✅ Phase 0 stable · **Settlement open** · C/D 🔒 |
 | C | Steward Gates | 🔒 Outline |
 | D | Audit Receipts | 🔒 Outline |
 | E | Policy Engine | 🔮 Foresight |
