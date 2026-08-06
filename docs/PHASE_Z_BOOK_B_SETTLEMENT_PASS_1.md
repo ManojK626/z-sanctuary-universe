@@ -57,11 +57,13 @@
 
 ## Settlement posture
 
-Book B may be **referenced** as constitutional bedrock.  
-Settlement remains **open** as practice (live with the docs; notice contradictions) until AMK closes settlement and opens Book C.
+Book B may be **referenced** as constitutional bedrock-in-formation.  
+Settlement remains **OPEN** until **three** clean passes (evidence, not calendar) — then AMK may declare Book B constitutionally mature and open Book C.
 
+**Pass 1:** ✅ No contradictions · no amendments (this receipt).  
+**Pass 2–3:** pending.  
 **Book C / D:** still 🔒.
 
 ---
 
-*First settle pass · stability is progress*
+*First settle pass · constitutional stabilization · stability is progress*

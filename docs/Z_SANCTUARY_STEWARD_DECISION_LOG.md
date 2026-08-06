@@ -6,6 +6,14 @@
 
 ---
 
+## 2026-08-06 (l) — Settlement = constitutional stabilization
+
+**Decision:** Affirm Settlement as constitutional stabilization (not waiting). Only four observation kinds: Consistency · Vocabulary · Dependencies · Silence. End Settlement only after **three** clean no-contradiction passes — then Book B may be declared mature and Book C may open.
+
+**Updates:** [Z_BOOK_B_SETTLEMENT.md](Z_BOOK_B_SETTLEMENT.md)
+
+---
+
 ## 2026-08-06 (k) — Settle before Book C (Option 3)
 
 **Decision:** Do **not** open Book C (Steward Gates) or Book D (Audit Receipts). Enter **Book B Settlement** — stewardship practice: check for contradictions, not additions. First consistency pass recorded.
