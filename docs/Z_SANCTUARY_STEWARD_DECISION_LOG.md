@@ -6,6 +6,18 @@
 
 ---
 
+## 2026-08-06 (e) — Market position: Governance & Coordination Layer
+
+**Decision:** Record commercial/strategic positioning — Z-Sanctuary is an **AI Operating Organism** / **Governance and Coordination Layer for Enterprise AI Ecosystems**, not another LLM. Industry gap map + Relationship OS foresight only.
+
+**Reason:** Differentiate on multi-AI cooperation under governance; avoid “smarter model” race.
+
+**Receipt:** [Z_SANCTUARY_AI_OPERATING_ORGANISM_MARKET_POSITION.md](Z_SANCTUARY_AI_OPERATING_ORGANISM_MARKET_POSITION.md)
+
+**Not authorized:** Product launch · Z-ZES runtime · CF expand · payment rails.
+
+---
+
 ## 2026-08-06 (d) — Operating Organism milestone
 
 **Decision:** Record the shift from “collection of projects / feature instinct” to **operating organism** with shared Observe→Decide law. Next week = refinement and settle only.

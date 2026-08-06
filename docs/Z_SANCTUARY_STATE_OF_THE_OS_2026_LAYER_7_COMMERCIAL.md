@@ -1,8 +1,8 @@
 # State of the OS 2026 — Layer 7 Commercial
 
-**Mission:** [Z_SANCTUARY_STATE_OF_THE_OS_2026.md](Z_SANCTUARY_STATE_OF_THE_OS_2026.md)  
-**Status:** ✅ **ASSESSED** (2026-08-06)  
-**Mode:** Super Turtle  
+**Mission:** [Z_SANCTUARY_STATE_OF_THE_OS_2026.md](Z_SANCTUARY_STATE_OF_THE_OS_2026.md)
+**Status:** ✅ **ASSESSED** (2026-08-06)
+**Mode:** Super Turtle
 **Context:** Mauritius period — architecture should begin serving real-world goals **without** bypassing gates
 
 ---
@@ -52,8 +52,9 @@ Commercial **thinking exists**; production commerce **does not**. Correct Super 
 
 | ID | Suggestion |
 | --- | --- |
-| L7-R1 | One steward page: “Commercial threads in priority order” (link existing audits) |
-| L7-R2 | No payment providers without explicit charter |
+| L7-R1 | One steward page: “Commercial threads in priority order” (link existing audits) | High |
+| L7-R1b | **Market position charter** — Governance & Coordination Layer (not another LLM) — [Z_SANCTUARY_AI_OPERATING_ORGANISM_MARKET_POSITION.md](Z_SANCTUARY_AI_OPERATING_ORGANISM_MARKET_POSITION.md) | ✅ Recorded |
+| L7-R2 | No payment providers without explicit charter | Standing |
 | L7-R3 | Tie any pilot to Quality Gate + Closing Doctrine |
 
 ---
