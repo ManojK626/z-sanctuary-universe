@@ -108,7 +108,14 @@
       "label": "ZES / ZECC",
       "family": "ecosystem_core",
       "representation": "mixed",
-      "notes": "Ecosystem state and ethics coordination layers; align with Zuno and registry."
+      "notes": "Ecosystem state and ethics coordination layers; align with Zuno and registry. Awaken via Z-ZES Master System citizenship (z-zes-master-system) — do not replace."
+    },
+    {
+      "id": "z_zes_master_system",
+      "label": "Z-ZES Master System",
+      "family": "ecosystem_core",
+      "representation": "docs",
+      "notes": "Zone of Equal Souls shared organism. Phase 0+0.5 charter/citizenship only. data/z_zes_organism_citizenship.json. Stewardship Mesh cross-cuts lanes. No production runtime."
     },
     {
       "id": "ghost_core",

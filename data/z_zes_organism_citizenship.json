@@ -1,0 +1,94 @@
+{
+  "schema": "z_zes_organism_citizenship_v1",
+  "phase": "0.5",
+  "status": "REGISTERED",
+  "state": "architecture_only",
+  "citizenship_sealed_at": "2026-08-04T00:00:00Z",
+  "stewardship_receipt": {
+    "path": "docs/PHASE_Z_ZES_0_5_REGISTRY_CITIZENSHIP_GREEN_RECEIPT.md",
+    "quality_gate": "READY_FOR_STEWARD_DECISION",
+    "steward_decision": "APPROVED_GOVERNANCE_MILESTONE",
+    "identity": "VERIFIED",
+    "governance": "VERIFIED",
+    "dependencies": "VERIFIED",
+    "stewardship": "VERIFIED",
+    "runtime": "NOT_AUTHORIZED",
+    "deployment": "NOT_AUTHORIZED",
+    "production_claims": "NONE"
+  },
+  "constitution_edition": "1.3",
+  "law": [
+    "Not a competing app root",
+    "Not production runtime",
+    "Awaken existing ZES/ANIMA/Overseer threads",
+    "Stewardship Mesh is cross-cutting governance",
+    "Human approval before mocks/build"
+  ],
+  "organism": {
+    "id": "z-zes-master-system",
+    "display_name": "Z-ZES Master System (Zone of Equal Souls)",
+    "class": "shared_intelligence_organism",
+    "placement": "shared_foundation_inside_universe",
+    "not": ["sibling_product_root", "overseer_replacement", "omni_brand_replacement"]
+  },
+  "stewardship": {
+    "human_steward": "AMK-Goku",
+    "synthesis": "Zuno",
+    "registry_intelligence": "Z-EAII",
+    "operational_surface_rhyme": "Z-SSWS Mission Control (consumer of signals later)",
+    "constitution_path": "docs/governance/Z_SANCTUARY_UNIVERSE_CONSTITUTION_V1.md"
+  },
+  "documents": {
+    "link_charter": "docs/Z_ZES_SANCTUARY_LINK_CHARTER.md",
+    "phase_0_brief": "docs/Z_ZES_PHASE_0_STEWARDSHIP_BUILDER_BRIEF.md",
+    "phase_0_5_citizenship": "docs/Z_ZES_PHASE_0_5_REGISTRY_CITIZENSHIP.md",
+    "master_register": "docs/Z-MASTER-MODULES-REGISTER.md"
+  },
+  "lanes": ["conscious", "analytical", "guardian", "archive"],
+  "cross_cutting": ["stewardship_mesh"],
+  "depends_on": [
+    { "id": "constitution_v1_3", "path": "docs/governance/Z_SANCTUARY_UNIVERSE_CONSTITUTION_V1.md", "why": "Governing law" },
+    { "id": "registry_atlas", "path": "docs/Z_SANCTUARY_REGISTRY_ATLAS.md", "why": "Source-of-truth map" },
+    { "id": "quality_gate", "path": "docs/Z_SANCTUARY_QUALITY_GATE_TAKEOFF_CHECKLIST.md", "why": "Significant-action ritual" },
+    { "id": "ops_center_layers", "path": "docs/Z_SANCTUARY_OPERATIONS_CENTER_LAYERS.md", "why": "Spine placement" },
+    { "id": "book_ii_identity", "path": "docs/Z_SANCTUARY_BOOK_II_IDENTITY_SEAL.md", "why": "No-bypass stewardship cycle" },
+    { "id": "z_pc_root_hub", "path": "data/z_pc_root_projects.json", "why": "Lives under hub project z-sanctuary-universe" },
+    { "id": "zes_zecc_monster", "path": "data/z_sanctuary_monster_project_registry.json", "why": "Prior ZES thread to awaken" },
+    { "id": "z_anima_core", "path": "docs/Z-ANIMA-CORE-HUMAN-ANIMAL-CONNECTION.md", "why": "Compassion / animal-human connection" }
+  ],
+  "dependents_planned": [
+    { "id": "soulmates", "relation": "may_consume_conscious_guardian", "status": "planned" },
+    { "id": "z-kids", "relation": "may_consume_guardian_conscious", "status": "planned" },
+    { "id": "marketplace", "relation": "may_consume_guardian_archive_trust", "status": "planned" },
+    { "id": "creator-hub", "relation": "may_consume_conscious", "status": "planned" },
+    { "id": "oisela", "relation": "may_consume_analytical_archive", "status": "nhv_identity" },
+    { "id": "ssws-morning-cockpit", "relation": "may_display_organism_health_signals", "status": "foresight" },
+    { "id": "mission-control", "relation": "may_consume_guardian_audit", "status": "planned" },
+    { "id": "z-labs", "relation": "may_experiment_under_mesh", "status": "planned" }
+  ],
+  "related_existing_ids": {
+    "monster": ["zes_zecc", "ghost_core"],
+    "module_manifest": ["z-zes-master-system", "z-anima-core"],
+    "hub_project_id": "z-sanctuary-universe"
+  },
+  "next_gate": "1_mock_interfaces_visual_only_after_amk_quality_gate",
+  "roadmap_ledger": "docs/Z_ZES_ROADMAP_LEDGER.md",
+  "architectural_rule": "Registry before Runtime. Governance before Capability. Stewardship before Scale.",
+  "gates_open": [],
+  "gates_closed": [
+    "1_mock_interfaces",
+    "2_interaction_prototypes",
+    "3_technical_architecture",
+    "4_controlled_development",
+    "5_human_review",
+    "6_limited_runtime",
+    "7_production_readiness"
+  ],
+  "explicitly_not_started": [
+    "production_runtime",
+    "biometrics",
+    "public_deploy",
+    "hyperscale_acceptance",
+    "autonomous_nature_reset"
+  ]
+}

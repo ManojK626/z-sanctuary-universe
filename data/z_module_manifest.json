@@ -375,6 +375,15 @@
       "ZStatus": "planned",
       "ZDescription": "Cross-module compassion layer: verified partners, quiet hours, no fake AI animal emotions, optional Z-PI&S z_anima_profile. Lite mock UI: dashboard/panels/z_anima_core_lite.html + data/z_anima_lite_mock.json (read-only). Phased real Lite later. Ethics in doc; no deploy or payment in mock.",
       "ZEntry": "docs/Z-ANIMA-CORE-HUMAN-ANIMAL-CONNECTION.md"
+    },
+    {
+      "ZId": "z-zes-master-system",
+      "ZName": "Z-ZES Master System (Zone of Equal Souls)",
+      "ZLayer": "governance",
+      "ZOwner": "AMK-Goku+Zuno+Z-EAII",
+      "ZStatus": "planned",
+      "ZDescription": "Shared intelligence organism candidate: Parallel Stewardship Lanes (Conscious/Analytical/Guardian/Archive) + Stewardship Mesh. Phase 0+0.5 charter/citizenship only. Not a competing app. No biometrics/production until AMK gate. Citizenship: data/z_zes_organism_citizenship.json.",
+      "ZEntry": "docs/Z_ZES_PHASE_0_5_REGISTRY_CITIZENSHIP.md"
     }
   ]
 }
