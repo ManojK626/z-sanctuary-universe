@@ -1,8 +1,20 @@
 # Z-Sanctuary Steward Decision Log
 
-**Purpose:** One meaningful steward decision per day (or session) — history for operating the OS.  
-**Law:** Documentation only · does not execute · does not authorize deploy  
+**Purpose:** One meaningful steward decision per day (or session) — history for operating the OS.
+**Law:** Documentation only · does not execute · does not authorize deploy
 **Related:** [Quality Gate](Z_SANCTUARY_QUALITY_GATE_TAKEOFF_CHECKLIST.md) · [Super Turtle](Z_SUPER_TURTLE_SUPERVISORY_LAYER.md)
+
+---
+
+## 2026-08-06 (c) — OS Health Report accepted · Atlas priority
+
+**Decision:** Accept State of the OS first-pass as an **Operating System Health Report**. Priority order: (1) Indicator Source Atlas (2) Freshness Cadence (3) Keep Settle Days.
+
+**Reason:** Trust and maintainability before automation or commercial expansion. Shift confirmed from “Can we build it?” to “Can we operate it responsibly?”
+
+**Actions:** Acceptance receipt · Atlas v1 · Freshness Cadence charter · Five Principles foresight note.
+
+**Not authorized:** Auto-refresh agents · payment rails · Cloudflare expand · Z-ZES gates.
 
 ---
 

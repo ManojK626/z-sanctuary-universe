@@ -1,13 +1,16 @@
 # Z-Sanctuary Universe — State of the Operating System 2026
 
-**Mission name:** State of the Operating System 2026  
-**Phase class:** **Operational Readiness Assessment**  
-**Status:** 🐢 **MISSION ACTIVE** · Layers 1–8 **first-pass assessed** · Scorecard ready for AMK Decision  
+**Mission name:** State of the Operating System 2026
+**Phase class:** **Operational Readiness Assessment**
+**Status:** 🐢 **MISSION ACTIVE** · First-pass **ACCEPTED** as OS Health Report · Priority 1 Atlas v1  
 **Charter sealed:** 2026-08-04  
 **Assessment pass:** 2026-08-06  
+**Acceptance:** [PHASE_Z_STATE_OF_THE_OS_FIRST_PASS_ACCEPTANCE.md](PHASE_Z_STATE_OF_THE_OS_FIRST_PASS_ACCEPTANCE.md)  
+**Scorecard:** [Z_SANCTUARY_STATE_OF_THE_OS_2026_SCORECARD.md](Z_SANCTUARY_STATE_OF_THE_OS_2026_SCORECARD.md)  
+**Indicator Atlas:** [Z_SANCTUARY_INDICATOR_SOURCE_ATLAS.md](Z_SANCTUARY_INDICATOR_SOURCE_ATLAS.md)  
+**Freshness Cadence:** [Z_SANCTUARY_FRESHNESS_CADENCE.md](Z_SANCTUARY_FRESHNESS_CADENCE.md)  
 **Authority:** AMK-Goku  
 **Supervisory:** [Z_SUPER_TURTLE_SUPERVISORY_LAYER.md](Z_SUPER_TURTLE_SUPERVISORY_LAYER.md)  
-**Scorecard:** [Z_SANCTUARY_STATE_OF_THE_OS_2026_SCORECARD.md](Z_SANCTUARY_STATE_OF_THE_OS_2026_SCORECARD.md)  
 **Context:** Mauritius — shift from *building the OS* toward *operating it*  
 **Law:** No new major systems · verify · connect · simplify · strengthen · document · Registry before Runtime  
 **Constitution:** v1.3
@@ -91,12 +94,14 @@ Sacred boundaries unchanged.
 
 ---
 
-## Next (AMK Decision)
+## Next (after acceptance)
 
-1. Accept scorecard as baseline for “operating the OS”  
-2. Pick **one** ⭐ priority (freshness · indicator sources · nav simplify · GitHub live · commercial one-pager)  
-3. Continue settle — no multi-priority build sprint  
+1. ✅ Scorecard accepted as OS Health Report  
+2. 🥇 Indicator Source Atlas v1 delivered  
+3. 🥈 Freshness Cadence chartered (rhythm, not automation)  
+4. 🥉 Keep Settle Days  
+5. Later: ops nav · GitHub live · commercial one-pager  
 
 ---
 
-*State of the OS 2026 · first-pass complete · Super Turtle*
+*State of the OS 2026 · first-pass accepted · Super Turtle*

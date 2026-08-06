@@ -2,6 +2,8 @@
 
 **Purpose:** One **read-only** registry and dashboard surface so AMK-Goku can see **internal readiness** (traffic-style signals, growth percent bands, next actions, and advisory Go/No-Go labels) for major Z-Sanctuary systems **without** hunting folders. This layer **summarizes** posture; it does **not** open lanes, deploy, bill, or run tools.
 
+**Source atlas (OS Health):** [Z_SANCTUARY_INDICATOR_SOURCE_ATLAS.md](Z_SANCTUARY_INDICATOR_SOURCE_ATLAS.md) — what / where / who / cadence / verify. Regenerate with `npm run z:indicators:atlas`.
+
 ## Where it lives
 
 | Artifact | Role |

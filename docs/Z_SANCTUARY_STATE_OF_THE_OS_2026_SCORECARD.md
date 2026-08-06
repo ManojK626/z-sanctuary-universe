@@ -1,8 +1,10 @@
-# State of the OS 2026 — Scorecard Rollup
+# State of the OS 2026 — Scorecard Rollup (OS Health Report)
 
 **Date:** 2026-08-06  
 **Mode:** Super Turtle  
+**Document class:** Operating System **Health Report**  
 **Mission:** Operational Readiness Assessment  
+**Acceptance:** ✅ [FIRST_PASS_ACCEPTANCE](PHASE_Z_STATE_OF_THE_OS_FIRST_PASS_ACCEPTANCE.md) — AMK-Goku  
 **Law:** No new systems from this scorecard alone  
 
 ---
@@ -10,14 +12,14 @@
 ## Layer progress
 
 ```text
-Layer 1 Foundation ...... ✅ SEALED
-Layer 2 Architecture .... ✅ ASSESSED
-Layer 3 Knowledge ....... ✅ ASSESSED
-Layer 4 Operations ...... ✅ ASSESSED
-Layer 5 Runtime ......... ✅ ASSESSED
-Layer 6 External ........ ✅ ASSESSED
-Layer 7 Commercial ...... ✅ ASSESSED
-Layer 8 Human ........... ✅ ASSESSED
+Layer 1 Foundation ...... ✅ SEALED · ACCEPTED
+Layer 2 Architecture .... ✅ ASSESSED · ACCEPTED
+Layer 3 Knowledge ....... ✅ ASSESSED · ACCEPTED
+Layer 4 Operations ...... ✅ ASSESSED · ACCEPTED
+Layer 5 Runtime ......... ✅ ASSESSED · ACCEPTED
+Layer 6 External ........ ✅ ASSESSED · ACCEPTED
+Layer 7 Commercial ...... ✅ ASSESSED · ACCEPTED
+Layer 8 Human ........... ✅ ASSESSED · ACCEPTED
 ```
 
 ---
@@ -37,32 +39,48 @@ Layer 8 Human ........... ✅ ASSESSED
 
 ---
 
+## Capability maturity (accepted)
+
+| Observe | Understand | Advise | Automate | Execute |
+| --- | --- | --- | --- | --- |
+| ★★★★★ | ★★★★☆ | ★★★★☆ | ★☆☆☆☆ | ☆☆☆☆☆ |
+
+Week-away: assist when opened · unattended refresh mostly no · execute/deploy no.
+
+---
+
+## Steward health bars (accepted)
+
+| Domain | Level |
+| --- | --- |
+| Governance | 100% |
+| Architecture | 95% |
+| Knowledge | 94% |
+| Operations | 88% |
+| Runtime | 65% |
+| External Readiness | 75% |
+| Commercial Readiness | 45% |
+| Human Stewardship | 100% |
+
+**Overall:** 🟢 Healthy, coherent, maturing — not production/commercially complete.
+
+---
+
+## Priority order (accepted)
+
+1. 🥇 [Indicator Source Atlas](Z_SANCTUARY_INDICATOR_SOURCE_ATLAS.md) — **v1 delivered**  
+2. 🥈 [Freshness Cadence](Z_SANCTUARY_FRESHNESS_CADENCE.md) — chartered  
+3. 🥉 Keep Settle Days — standing  
+
+---
+
 ## Week-away autonomy (honesty)
 
 | Continues without AMK? | Answer |
 | --- | --- |
 | Observe / verify / report on its own | **Mostly no** — scripts exist; cadence is human |
-| Assist via docs / dashboards when opened | **Yes** — Cockpit · Indicators · Atlas · Constitution |
-| Execute queues / deploy / expand | **No** — correctly forbidden |
-
-Maturity is **governed readiness to operate**, not unattended autopilot.
-
----
-
-## ⭐ Highest-impact priorities (next stage)
-
-1. **Freshness cadence** — refresh Cycle Observe + key reports when authorized (L5)  
-2. **Indicator Source Atlas** — every colour → evidence (L3 / L1-R7)  
-3. **Simplify ops nav** — link-don’t-clone · five-minute human strip (L4)  
-4. **GitHub live verify** when `gh` available (L6 / L1-R2)  
-5. **Commercial priority one-pager** linking existing audits — no payment rails (L7)  
-6. **Keep settle days** — Human layer is the constraint that keeps the OS healthy (L8)  
-
----
-
-## Explicitly not opened
-
-Z-ZES Gates 1–7 · Accessibility production · Cloudflare expansion · Steward Intelligence build · new major systems  
+| Assist via docs / dashboards when opened | **Yes** |
+| Execute queues / deploy / expand | **No** |
 
 ---
 
@@ -81,8 +99,8 @@ Z-ZES Gates 1–7 · Accessibility production · Cloudflare expansion · Steward
 
 ---
 
-**AMK Decision pending:** Accept rollup · adjust signals · or pick one ⭐ priority for the next Synchronize session.
+**AMK Decision:** First-pass **ACCEPTED**. Next work follows priority order above.
 
 ---
 
-*Scorecard · assessment complete · implementation not authorized*
+*OS Health Report · first-pass accepted · Atlas v1 open*

@@ -1,8 +1,8 @@
 # Z-EAII Knowledge Index (Alpha A2)
 
-Generated: 2026-08-06T07:17:40.797Z
+Generated: 2026-08-06T07:23:02.751Z
 
-Documents: **72** · Chunks: **703** · Missing allowlist: **0**
+Documents: **76** · Chunks: **733** · Missing allowlist: **0**
 
 ## Law
 - Never invent facts.
@@ -54,7 +54,11 @@ Documents: **72** · Chunks: **703** · Missing allowlist: **0**
 - `docs/PHASE_Z_ZES_0_5_REGISTRY_CITIZENSHIP_GREEN_RECEIPT.md` — Z-ZES Phase 0.5 — Registry Citizenship · Stewardship Green Receipt
 - `docs/Z_ZES_ROADMAP_LEDGER.md` — Z-ZES Roadmap Ledger — Registry before Runtime
 - `docs/Z_SANCTUARY_STATE_OF_THE_OS_2026.md` — Z-Sanctuary Universe — State of the Operating System 2026
-- `docs/Z_SANCTUARY_STATE_OF_THE_OS_2026_SCORECARD.md` — State of the OS 2026 — Scorecard Rollup
+- `docs/Z_SANCTUARY_STATE_OF_THE_OS_2026_SCORECARD.md` — State of the OS 2026 — Scorecard Rollup (OS Health Report)
+- `docs/PHASE_Z_STATE_OF_THE_OS_FIRST_PASS_ACCEPTANCE.md` — State of the OS 2026 — First-Pass Acceptance (OS Health Report)
+- `docs/Z_SANCTUARY_INDICATOR_SOURCE_ATLAS.md` — Indicator Source Atlas
+- `docs/Z_SANCTUARY_FRESHNESS_CADENCE.md` — Z-Sanctuary Freshness Cadence
+- `docs/Z_SANCTUARY_OPERATING_PHILOSOPHY_FIVE_PRINCIPLES.md` — Operating Philosophy — Five Principles (Book II foresight note)
 - `docs/PHASE_Z_STATE_OF_THE_OS_L1_FOUNDATION_SEAL.md` — State of the OS 2026 — Layer 1 Foundation · Seal
 - `docs/Z_SANCTUARY_STATE_OF_THE_OS_2026_LAYER_1_FOUNDATION.md` — State of the OS 2026 — Layer 1 Foundation Audit
 - `docs/Z_SANCTUARY_STATE_OF_THE_OS_2026_LAYER_2_ARCHITECTURE.md` — State of the OS 2026 — Layer 2 Architecture
