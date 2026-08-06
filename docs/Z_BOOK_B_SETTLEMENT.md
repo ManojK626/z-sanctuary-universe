@@ -115,8 +115,10 @@ Identity → Citizenship → Steward Gates → Audit Receipts
 | Pass | Receipt | Result |
 | --- | --- | --- |
 | 1 | [PHASE_Z_BOOK_B_SETTLEMENT_PASS_1.md](PHASE_Z_BOOK_B_SETTLEMENT_PASS_1.md) | ✅ No contradictions · no amendments |
-| 2 | *pending* | — |
-| 3 | *pending* | — |
+| 2 | *await AMK command* | — |
+| 3 | *await AMK command* | — |
+
+**Guard:** [Z_SETTLEMENT_GUARD_PROTOCOL.md](Z_SETTLEMENT_GUARD_PROTOCOL.md) · Log template: [Z_SETTLEMENT_STRUCTURAL_VERIFICATION_LOG.md](Z_SETTLEMENT_STRUCTURAL_VERIFICATION_LOG.md)
 
 ---
 

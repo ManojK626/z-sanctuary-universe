@@ -6,6 +6,14 @@
 
 ---
 
+## 2026-08-06 (n) — Settlement Guard Protocol
+
+**Decision:** Guard Settlement with **constitutional vault closed** to amendment and Book C/D closed. Settlement Passes run **only on explicit AMK command**, using the Structural Verification Log template (includes Book C circular-dependency lock test). Not total silence forever; not unsolicited Passes.
+
+**Docs:** [Z_SETTLEMENT_GUARD_PROTOCOL.md](Z_SETTLEMENT_GUARD_PROTOCOL.md) · [Z_SETTLEMENT_STRUCTURAL_VERIFICATION_LOG.md](Z_SETTLEMENT_STRUCTURAL_VERIFICATION_LOG.md)
+
+---
+
 ## 2026-08-06 (m) — Architectural maturity milestone
 
 **Decision:** Record Constitutional Cycle and treat Book B as a **constitutional dependency** (not an active project). Settlement = immune system for all future Books. Book C/D remain closed until three clean passes.
