@@ -6,6 +6,14 @@
 
 ---
 
+## 2026-08-06 (j) — Book B Phase 0 constitutionally stable
+
+**Decision:** Seal Book B Phase 0 as constitutionally stable. Reserve invariants: identity declared once · verified many times · never inferred. Do not open Distinction or Revocation. Future docs reference Manifest as single source of truth.
+
+**Receipt:** [PHASE_Z_BOOK_B_PHASE_0_STABLE.md](PHASE_Z_BOOK_B_PHASE_0_STABLE.md)
+
+---
+
 ## 2026-08-06 (i) — Book B: Identity Manifest first
 
 **Decision:** Do not open Revocation or Human–Agent Distinction yet. Next immutable mapping is **Identity Manifest** (six categories). Book B order frozen: Manifest → Citizenship Rules → Distinction (locked) → Revocation (locked).

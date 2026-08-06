@@ -1,10 +1,11 @@
 # Registry Citizenship Protocol — Constitution of AI Membership
 
-**Status:** ✅ PHASE 0 OPEN · Architecture / governance · **not runtime admission**  
+**Status:** ✅ PHASE 0 OPEN · **Book B constitutionally stable (Phase 0)** · not runtime admission  
 **Priority:** 🥇 Book B · **Step 2** (after Identity Manifest)  
 **Date:** 2026-08-06  
 **Authority:** AMK-Goku  
 **Parent order:** [Trust Chain](Z_SANCTUARY_TRUST_CHAIN.md) · **Requires:** [Identity Manifest](Z_IDENTITY_MANIFEST.md)  
+**Invariants:** Declared once · Verified many times · Never inferred — see Manifest  
 **Awakens:** Z-ZES organism citizenship · PC-root / module / monster registries · Family AI registry · Stewardship certificates (related, not identical)
 
 ---

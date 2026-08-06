@@ -108,6 +108,56 @@ Every manifest create / update / status change should be **traceable** (who · w
 
 ---
 
+## Constitutional invariants (reserved — not a new Phase 0 layer)
+
+Reserve these for Book B doctrine. They do **not** open Distinction, Revocation, or runtime:
+
+```text
+Identity is declared once.
+Identity is verified many times.
+Identity is never inferred.
+```
+
+| Statement | Meaning |
+| --- | --- |
+| Declared once | The **Identity Manifest** is authoritative — single source of truth |
+| Verified many times | Steward Gates and Receipts continually validate identity |
+| Never inferred | The Registry **never guesses** who or what an actor is |
+
+Together with:
+
+```text
+Identity precedes citizenship.
+Citizenship precedes governance.
+Governance precedes revocation.
+```
+
+…Book B is a **coherent constitutional doctrine**, not isolated rules.
+
+---
+
+## Single source of truth (fan-out)
+
+The Manifest is no longer “just metadata.” Downstream components **reference** it — they do not redefine identity.
+
+```text
+Identity Manifest
+        │
+        ├── Citizenship Rules
+        │
+        ├── Steward Gates
+        │
+        ├── Audit Receipts
+        │
+        ├── Human Signatures   (future)
+        │
+        ├── AI Signatures      (future)
+        │
+        └── Revocation         (locked)
+```
+
+---
+
 ## Book B freeze order (locked)
 
 1. ✅ **Identity Manifest** (what every citizen must declare) — this doc  
@@ -119,9 +169,12 @@ Every manifest create / update / status change should be **traceable** (who · w
 
 ## Next
 
-Refine Citizenship Rules against these six categories (admission questions map to Identity / Origin / Technical / Capability / Governance / Lifecycle).  
-Do **not** open Distinction or Revocation docs as active design until Manifest + Rules are stable enough for AMK Phase 0.5.
+Book B is **constitutionally stable in Phase 0** (categories + rules + locks + invariants reserved).  
+Every future governance document should **reference the Manifest** instead of redefining identity.
+
+Optional later: Phase 0.5 schema seal of Manifest fields — only under AMK Quality Gate.  
+Do **not** open Distinction or Revocation until then.
 
 ---
 
-*Identity Manifest · Book B step 1 · categories sealed*
+*Identity Manifest · Book B step 1 · categories sealed · single source of truth*
