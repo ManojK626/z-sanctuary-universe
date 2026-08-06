@@ -68,11 +68,14 @@ If contradiction → report only; AMK decides errata.
 
 ```text
 Vault .............. CLOSED (amendment)
+Book 0 ............. FROZEN defense filters (market fault lines pinned)
 Settlement ......... OPEN (practice)
 Pass 1 ............. ✅ Clean
-Pass 2–3 ........... Await AMK command
+Pass 2–3 ........... Await AMK command (e.g. "Pass 2")
 Book C / D ......... 🔒
 ```
+
+**Book 0:** [Z_BOOK_0_CONSTITUTIONAL_DEFENSE_FILTERS.md](Z_BOOK_0_CONSTITUTIONAL_DEFENSE_FILTERS.md)
 
 ---
 

@@ -41,7 +41,7 @@
 
 ---
 
-## 3 · Dependencies (critical — Book C/D lock)
+## 3 · Dependencies (critical — Book C/D lock + Book 0)
 
 | Check | Pass criterion | Result |
 | --- | --- | --- |
@@ -50,10 +50,15 @@
 | No circular dependency: Receipt → Gate → Receipt as open design | Receipts after Gates | |
 | No Identity semantics invented in Gate/Receipt outlines | “Import from Book B” only | |
 | No bypass of Trust Chain or Identity Manifest | Citations point upstream | |
+| Book 0 defense filters not violated by proposed expansion claims | [Book 0 checklist](Z_BOOK_0_CONSTITUTIONAL_DEFENSE_FILTERS.md) — network bias · anti-guess · ancestry | |
 
 **Book C lock test (required narrative):**
 
 > Confirm that no current constitutional document contains circular dependencies **back to** locked Book C (Steward Gates Architecture). Gate outlines may describe a **future** flow; they must not be treated as active identity or admission sources.
+
+**Book 0 lock test (required narrative):**
+
+> Confirm expansions do not reintroduce competitor fault modes: sole cloud-proxy trust, probabilistic human/AI guessing, or provenance-free tool/document mutation (vision mandates; verified = doctrine + precursors only).
 
 ---
 

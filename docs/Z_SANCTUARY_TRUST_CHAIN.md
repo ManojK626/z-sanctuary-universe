@@ -124,6 +124,7 @@ Once foundations are complete, a natural architectural family may emerge. **None
 | Book | Theme | Status |
 | --- | --- | --- |
 | A | Trust Chain | ✅ Chartered (this spine) |
+| 0 | Constitutional Defense Filters | ✅ Frozen (market fault lines · Settlement Guard) |
 | B | Registry Citizenship family | ✅ Phase 0 stable · **Settlement open** · C/D 🔒 |
 | C | Steward Gates | 🔒 Outline |
 | D | Audit Receipts | 🔒 Outline |

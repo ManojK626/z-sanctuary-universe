@@ -6,6 +6,14 @@
 
 ---
 
+## 2026-08-06 (o) — Book 0 evolutionary defense frozen
+
+**Decision:** Pin competitor fault lines as Book 0 Constitutional Defense Filters (sovereign/local trust intent · anti-probabilistic identity · ancestry/Evidence). Zero runtime. Vault stays closed. Settlement maintained. Pass 2 waits on command.
+
+**Receipts:** [Z_BOOK_0_CONSTITUTIONAL_DEFENSE_FILTERS.md](Z_BOOK_0_CONSTITUTIONAL_DEFENSE_FILTERS.md) · [PHASE_Z_BOOK_0_EVOLUTIONARY_DEFENSE_FROZEN.md](PHASE_Z_BOOK_0_EVOLUTIONARY_DEFENSE_FROZEN.md)
+
+---
+
 ## 2026-08-06 (n) — Settlement Guard Protocol
 
 **Decision:** Guard Settlement with **constitutional vault closed** to amendment and Book C/D closed. Settlement Passes run **only on explicit AMK command**, using the Structural Verification Log template (includes Book C circular-dependency lock test). Not total silence forever; not unsolicited Passes.
