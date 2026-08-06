@@ -6,6 +6,14 @@
 
 ---
 
+## 2026-08-06 (r) — Universal Vault Core v1 chartered
+
+**Decision:** Absorb ZIX-Sanctuary Universal Vault Core v1 as foresight charter under `docs/vault/`. Trinity = doctrine roles. Auto-Population Engine v2 = 🔴 BLOCKED. Vault doctrine = 🟡 QUARANTINED until Gates/Settlement allow permanence design. No runtime.
+
+**Receipt:** [PHASE_Z_UNIVERSAL_VAULT_CORE_V1_CHARTER.md](PHASE_Z_UNIVERSAL_VAULT_CORE_V1_CHARTER.md) · [vault/ZIX_SANCTUARY_UNIVERSAL_VAULT_CORE_V1.md](vault/ZIX_SANCTUARY_UNIVERSAL_VAULT_CORE_V1.md)
+
+---
+
 ## 2026-08-06 (q) — Passive Monitoring Matrix sealed
 
 **Decision:** Launch Book 0 Passive Monitoring Matrix (CLEARED / QUARANTINED / BLOCKED) as docs+JSON ledger only. Default focus = **stasis** (dark/quiet). One frozen mock triage table for teaching — no continuous simulation. Pass 3 still awaits command.

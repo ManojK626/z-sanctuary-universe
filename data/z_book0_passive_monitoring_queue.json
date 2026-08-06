@@ -39,6 +39,20 @@
       "source": "settlement_log",
       "indicator": "CLEARED",
       "gaps": []
+    },
+    {
+      "id": "zix-universal-vault-core-v1",
+      "name": "ZIX-Sanctuary Universal Vault Core v1",
+      "source": "external_doctrine_draft",
+      "indicator": "QUARANTINED",
+      "gaps": ["permanence_pipeline_needs_book_c", "trinity_verification_not_runtime"]
+    },
+    {
+      "id": "universal-vault-auto-population-v2",
+      "name": "Universal Vault Auto-Population Engine v2",
+      "source": "external_doctrine_draft",
+      "indicator": "BLOCKED",
+      "gaps": ["bypasses_human_stewardship", "enforcement_before_settlement_maturity", "ancestry_not_auto"]
     }
   ],
   "mock_triage_frozen": [

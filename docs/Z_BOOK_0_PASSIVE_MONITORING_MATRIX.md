@@ -40,6 +40,8 @@ Status is **calculated** against frozen dependencies (checklist), not guessed.
 | Book C (Steward Gates Outline) | Future Roadmap | Outline only · downstream · safely isolated | 🟡 QUARANTINED |
 | Book D (Audit Receipts Outline) | Future Roadmap | Outline only · missing upstream Book C | 🟡 QUARANTINED |
 | Ecosystem Terminology Harmony Scan | Settlement Log | Pure observation · Linguistic Symmetry | 🟢 CLEARED |
+| ZIX Universal Vault Core v1 | Doctrine draft | Permanence pipeline needs Gates · Trinity not runtime | 🟡 QUARANTINED |
+| Universal Vault Auto-Population v2 | Doctrine draft | Bypasses human stewardship · before Settlement maturity | 🔴 BLOCKED |
 
 ---
 
