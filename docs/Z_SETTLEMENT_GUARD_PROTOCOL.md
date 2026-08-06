@@ -71,7 +71,8 @@ Vault .............. CLOSED (amendment)
 Book 0 ............. FROZEN defense filters (market fault lines pinned)
 Settlement ......... OPEN (practice)
 Pass 1 ............. ✅ Clean
-Pass 2–3 ........... Await AMK command (e.g. "Pass 2")
+Pass 2 ............. ✅ Clean (Execute Pass 2)
+Pass 3 ............. Await AMK command
 Book C / D ......... 🔒
 ```
 

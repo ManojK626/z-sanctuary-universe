@@ -6,6 +6,16 @@
 
 ---
 
+## 2026-08-06 (p) — Settlement Pass 2 executed
+
+**Decision / command:** `Execute Pass 2.`  
+
+**Result:** CLEAN — Circuit-Dependency Lock · Linguistic Symmetry · Inference Quarantine · Book 0 filters. **No amendments** (Silence). Book C/D remain locked. Pass 3 still required before maturity.
+
+**Receipt:** [PHASE_Z_BOOK_B_SETTLEMENT_PASS_2.md](PHASE_Z_BOOK_B_SETTLEMENT_PASS_2.md)
+
+---
+
 ## 2026-08-06 (o) — Book 0 evolutionary defense frozen
 
 **Decision:** Pin competitor fault lines as Book 0 Constitutional Defense Filters (sovereign/local trust intent · anti-probabilistic identity · ancestry/Evidence). Zero runtime. Vault stays closed. Settlement maintained. Pass 2 waits on command.
