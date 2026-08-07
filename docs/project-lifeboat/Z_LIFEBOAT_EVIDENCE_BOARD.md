@@ -1,12 +1,13 @@
 # Project Lifeboat — Evidence Board (Phase 0)
 
-**Status:** RESEARCH · evidence-driven · not a purchase order  
+**Status:** Phase 0 Research **COMPLETE** · Evidence Framework Proven · ops still gated  
 **Updated:** 2026-08-07  
-**Parents:** [Maturity](Z_LIFEBOAT_PHASE_0_MATURITY.md) · [evidence/](evidence/README.md) · [Framework Review 0](Z_FRAMEWORK_REVIEW_0_PRE_C2.md)
+**Parents:** [Maturity](Z_LIFEBOAT_PHASE_0_MATURITY.md) · [FR1 Post-Trio](Z_FRAMEWORK_REVIEW_1_POST_TRIO.md) · [Phase 0 Complete](../PHASE_Z_PROJECT_LIFEBOAT_PHASE_0_COMPLETE.md)
 
-**First stewardship test:** R2 did not win by Cloudflare preference.  
-**Pre-C2 checkpoint:** Framework Review 0 ✅ PASS.  
-**C2 stress-test:** Companion seat earned; **not** sole primary archive.
+**First stewardship test:** R2 did not win by preference.  
+**FR0 Pre-C2:** ✅ PASS.  
+**C2 stress-test:** Companion seat · not primary.  
+**FR1 Post-Trio:** ✅ PASS → **Phase 0 Complete**.
 
 ---
 
@@ -16,13 +17,11 @@
 | --- | --- | --- | --- |
 | 1 | Backblaze B2 | Benchmark / primary archive candidate | Best overall **independent** primary on current evidence |
 | 2 | Cloudflare R2 | Strong secondary / exit layer | Egress + longevity signal; not sole primary |
-| 3 | Synology C2 | **NAS companion** (not primary rival) | Highest Appliance Stewardship; weak Steward Exit — optional convenience beside B2-class off-site |
-
-Wording law: **Based on current evidence** — not forever · not failed.
+| 3 | Synology C2 | **NAS companion** (not primary rival) | Appliance Stewardship 9 · Exit 4 — optional; never sole off-site |
 
 ---
 
-## Trilogy philosophies (framework stress-test)
+## Trilogy (framework proven)
 
 | Ecosystem | Philosophy |
 | --- | --- |
@@ -30,33 +29,29 @@ Wording law: **Based on current evidence** — not forever · not failed.
 | R2 | Modern cloud object platform |
 | C2 | Integrated hardware + cloud |
 
-Fair evaluation of all three → framework robustness signal.
-
 ---
 
-## Phase 0 end condition
+## Architecture (current evidence)
 
 ```text
-B2 ✓  →  R2 ✓  →  C2 ✓ (draft)
-        ↓
-Framework Review (post-trio)   ← Phase 0 completes here
-        ↓
-Phase 0 Complete
+NAS local steward (future) + B2-class independent off-site
+R2 = strong secondary / exit
+C2 = optional convenience — never sole off-site
+GitHub = constitution & history
+PC = builder — not fate master
 ```
-
-Phase 0 does **not** end when C2 is filled.  
-It ends with **confidence in the framework**.
 
 ---
 
-## Next
+## Next (after Phase 0)
 
-1. Optional: post-trio Framework Review (formal) when steward ready  
-2. Key Ceremony offline fill · local restore dry-run  
-3. Wave 1B still **unnamed** until evidence earns destination  
+1. Key Ceremony offline · local restore dry-run  
+2. Wave 1B only when AMK names destination earned by evidence  
+3. Hyperscaler / Phase 0b research only under new steward gate  
+4. Assessment / Benchmark remain foresight — no marketing  
 
 **Quote:** *Technology preserves data. Stewardship preserves civilizations.*
 
 ---
 
-_Board · framework over brand · humans better stewards of technology_
+_Board · Phase 0 Complete · framework over brand_

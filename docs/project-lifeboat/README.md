@@ -1,77 +1,75 @@
 # Project Lifeboat — Stewardship Package Index
 
-**Initiative:** Z-Sanctuary Preservation & Continuity (2026 → 2050+)
-**Class:** Era IV Stewardship Initiative (**not** a Book)
-**Phase:** 0 — Research & Evidence
-**Status:** RESEARCH — governed initiative · **no operational dependency**
-**Seal:** [PHASE_Z_PROJECT_LIFEBOAT_CHARTERED_2026_08_07.md](../PHASE_Z_PROJECT_LIFEBOAT_CHARTERED_2026_08_07.md)
-**Maturity:** [Z_LIFEBOAT_PHASE_0_MATURITY.md](Z_LIFEBOAT_PHASE_0_MATURITY.md)
+**Initiative:** Z-Sanctuary Preservation & Continuity (2026 → 2050+)  
+**Class:** Era IV Stewardship Initiative (**not** a Book)  
+**Phase:** 0 — **COMPLETE** (Evidence Framework Proven)  
+**Status:** Methodology sealed · Stage 1 ops continue · no spend · Wave 1B unnamed  
+**Seals:** [Chartered](../PHASE_Z_PROJECT_LIFEBOAT_CHARTERED_2026_08_07.md) · [Phase 0 Complete](../PHASE_Z_PROJECT_LIFEBOAT_PHASE_0_COMPLETE.md)  
+**FR1:** [Z_FRAMEWORK_REVIEW_1_POST_TRIO.md](Z_FRAMEWORK_REVIEW_1_POST_TRIO.md)  
+**Board:** [Z_LIFEBOAT_EVIDENCE_BOARD.md](Z_LIFEBOAT_EVIDENCE_BOARD.md)
 
 ---
 
-## Mission (one line)
+## Mission
 
 Ensure the Z-Sanctuary Universe can survive hardware failure, cloud-provider change, financial hardship, and decades of time.
 
-**Hall:** *A civilization is not remembered for what it created, but for what it chose to preserve.*
+**Hall:** *A civilization is not remembered for what it created, but for what it chose to preserve.*  
+**Quote:** *Technology preserves data. Stewardship preserves civilizations.*  
+**Deeper mission:** How can humans become better stewards of technology?
 
 ---
 
-## Package contents
+## Board (current evidence)
 
-| # | Deliverable | Doc |
-| --- | --- | --- |
-| 1 | Charter — mission, scope, principles | [Z_PROJECT_LIFEBOAT_CHARTER.md](Z_PROJECT_LIFEBOAT_CHARTER.md) |
-| — | Success Criteria (North Star) | [Z_PROJECT_LIFEBOAT_SUCCESS_CRITERIA.md](Z_PROJECT_LIFEBOAT_SUCCESS_CRITERIA.md) |
-| — | Phase 0 Maturity | [Z_LIFEBOAT_PHASE_0_MATURITY.md](Z_LIFEBOAT_PHASE_0_MATURITY.md) |
-| 2 | Global Provider Comparison Matrix (+ Steward Exit) | [Z_LIFEBOAT_PROVIDER_COMPARISON_MATRIX.md](Z_LIFEBOAT_PROVIDER_COMPARISON_MATRIX.md) |
-| 3 | 20-Year Cost Projection | [Z_LIFEBOAT_20_YEAR_COST_PROJECTION.md](Z_LIFEBOAT_20_YEAR_COST_PROJECTION.md) |
-| 4 | Preservation Architecture | [Z_SANCTUARY_PRESERVATION_ARCHITECTURE.md](Z_SANCTUARY_PRESERVATION_ARCHITECTURE.md) |
-| 5 | Wave 1B Decision Guide | [Z_WAVE_1B_DECISION_GUIDE.md](Z_WAVE_1B_DECISION_GUIDE.md) |
-| 6 | Disaster Recovery Playbook | [Z_DISASTER_RECOVERY_PLAYBOOK.md](Z_DISASTER_RECOVERY_PLAYBOOK.md) |
-| — | Guiding Principle (Lifeboat law) | [Z_PROJECT_LIFEBOAT_GUIDING_PRINCIPLE.md](Z_PROJECT_LIFEBOAT_GUIDING_PRINCIPLE.md) |
-| — | Three Layers (principles · framework · providers) | [Z_PROJECT_LIFEBOAT_THREE_LAYERS.md](Z_PROJECT_LIFEBOAT_THREE_LAYERS.md) |
-| — | Sister Initiatives & Legacy | [Z_ERA_IV_SISTER_INITIATIVES_AND_LEGACY.md](Z_ERA_IV_SISTER_INITIATIVES_AND_LEGACY.md) |
-| — | Stewardship Assessment (foresight) | [Z_STEWARDSHIP_ASSESSMENT_FORESIGHT.md](Z_STEWARDSHIP_ASSESSMENT_FORESIGHT.md) |
-| — | Evidence Board (live standing) | [Z_LIFEBOAT_EVIDENCE_BOARD.md](Z_LIFEBOAT_EVIDENCE_BOARD.md) |
-| — | Framework Review 0 (Pre-C2) | [Z_FRAMEWORK_REVIEW_0_PRE_C2.md](Z_FRAMEWORK_REVIEW_0_PRE_C2.md) |
-| — | Synology C2 Research Charter | [Z_SYNOLOGY_C2_RESEARCH_CHARTER.md](Z_SYNOLOGY_C2_RESEARCH_CHARTER.md) |
-| — | Evidence workspace (B2 · R2 · C2 stub) | [evidence/README.md](evidence/README.md) |
-| — | Key Ceremony one-pager | [Z_LIFEBOAT_KEY_CEREMONY_ONE_PAGER.md](Z_LIFEBOAT_KEY_CEREMONY_ONE_PAGER.md) |
-| — | Stewardship Ceremony (foresight · not today) | [Z_STEWARDSHIP_CEREMONY_FORESIGHT.md](Z_STEWARDSHIP_CEREMONY_FORESIGHT.md) |
-| — | Local restore dry-run outline | [Z_LIFEBOAT_LOCAL_RESTORE_DRY_RUN_OUTLINE.md](Z_LIFEBOAT_LOCAL_RESTORE_DRY_RUN_OUTLINE.md) |
-| — | Organizational stewardship vision (foresight) | [Z_PROJECT_LIFEBOAT_ORGANIZATIONAL_STEWARDSHIP_VISION.md](Z_PROJECT_LIFEBOAT_ORGANIZATIONAL_STEWARDSHIP_VISION.md) |
-| — | Stewardship Engineering (discipline foresight) | [Z_STEWARDSHIP_ENGINEERING_DISCIPLINE_FORESIGHT.md](Z_STEWARDSHIP_ENGINEERING_DISCIPLINE_FORESIGHT.md) |
-
-Machine-readable scores (provisional): `data/z_lifeboat_provider_scores_v0.json`
-
-**Benchmark:** Backblaze B2 — R2 challenger sheet: **does not beat B2 as sole primary** (secondary/egress role open).
-
-**Product foresight:** Stage 1 Internal Steward only · **no marketing** · Z-Sanctuary (philosophy) ≠ Lifeboat service (if ever).
-
----
-
-## Relationship to existing ops
-
-| Surface | Role |
+| Role | Ecosystem |
 | --- | --- |
-| [Era IV Identity Seal](../PHASE_Z_ERA_IV_STEWARDSHIP_IDENTITY_SEAL_2026_08_07.md) | Architectural era: Stewardship |
-| [Steward Era Closing Compass](../PHASE_Z_STEWARD_ERA_CLOSING_COMPASS_2026_08_07.md) | Wave 1B as next ops proof (after evidence) |
-| [Backup Wave 1 Runbook](../Z_BACKUP_WAVE1_RUNBOOK.md) | Human-gated copy / verify / certificate |
-| Books A / B | Constitution & identity — **cite-only**; Lifeboat does not amend them |
+| Independent primary candidate | Backblaze B2 |
+| Secondary / exit | Cloudflare R2 |
+| NAS companion (optional · never sole) | Synology C2 |
 
-Books A and B answer: *What should the organism be?*
-Project Lifeboat answers: *How do we keep it alive in 2050—and beyond?*
+**Architecture:** Future NAS local steward + B2-class independent off-site · R2 secondary · C2 convenience only.
 
 ---
 
-## Hard boundaries (Phase 0)
+## Core package
 
-- No euro spent under this charter alone
-- No account creation, bucket bind, or upload by Cursor
-- No Wave 1B destination until evidence earns it
-- No Book C/D open · no auto-merge · no auto-deploy · no NAS mutation
+| Doc | Role |
+| --- | --- |
+| [Charter](Z_PROJECT_LIFEBOAT_CHARTER.md) | Mission · scope · principles |
+| [Guiding Principle](Z_PROJECT_LIFEBOAT_GUIDING_PRINCIPLE.md) | Decision + framework laws |
+| [Three Layers](Z_PROJECT_LIFEBOAT_THREE_LAYERS.md) | Principles · Framework · Providers |
+| [Success Criteria](Z_PROJECT_LIFEBOAT_SUCCESS_CRITERIA.md) | North Star |
+| [Evidence Board](Z_LIFEBOAT_EVIDENCE_BOARD.md) | Live standing |
+| [FR0](Z_FRAMEWORK_REVIEW_0_PRE_C2.md) / [FR1](Z_FRAMEWORK_REVIEW_1_POST_TRIO.md) | Checkpoints |
+| [Matrix](Z_LIFEBOAT_PROVIDER_COMPARISON_MATRIX.md) | Scoring |
+| [Cost projection](Z_LIFEBOAT_20_YEAR_COST_PROJECTION.md) | 20-year TCO |
+| [Architecture](Z_SANCTUARY_PRESERVATION_ARCHITECTURE.md) | Long-term design |
+| [Wave 1B Guide](Z_WAVE_1B_DECISION_GUIDE.md) | Destination checklist |
+| [DR Playbook](Z_DISASTER_RECOVERY_PLAYBOOK.md) | Recovery under stress |
+| [evidence/](evidence/README.md) | B2 · R2 · C2 trilogy |
+| [Key Ceremony](Z_LIFEBOAT_KEY_CEREMONY_ONE_PAGER.md) | Custody before cloud |
+| [Sister Initiatives](Z_ERA_IV_SISTER_INITIATIVES_AND_LEGACY.md) | Universe · Lifeboat · Methodology |
+
+Scores JSON: `data/z_lifeboat_provider_scores_v0.json`
 
 ---
 
-_Index · Project Lifeboat · Era IV · care before binding_
+## Hard boundaries (still)
+
+- No euro / accounts / uploads from Phase 0 alone  
+- Wave 1B unnamed until evidence earns it  
+- No marketing · Assessment/Benchmark foresight only  
+- Book C/D locked  
+
+---
+
+## Next
+
+1. Key Ceremony offline · local restore dry-run  
+2. Wave 1B when AMK names an earned destination  
+3. Expand ecosystems only under a new steward gate  
+
+---
+
+_Index · Phase 0 Complete · framework is the asset_

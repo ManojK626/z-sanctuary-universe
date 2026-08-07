@@ -3,7 +3,7 @@
   "initiative": "project_lifeboat",
   "phase": 0,
   "score_date": "2026-08-07",
-  "status": "provisional_research_benchmark_b2",
+  "status": "phase0_complete_framework_proven",
   "law_note": "Not a purchase order. B2 is benchmark not winner. Wave 1B unnamed until evidence earns it. Re-verify pricing before spend.",
   "categories": [
     "lifetime_cost",
@@ -290,6 +290,11 @@
     "doc": "docs/project-lifeboat/Z_FRAMEWORK_REVIEW_0_PRE_C2.md"
   },
   "trilogy_draft_complete": true,
-  "phase0_complete": false,
-  "phase0_complete_gate": "post_trio_framework_review"
+  "phase0_complete": true,
+  "phase0_complete_gate": "satisfied_fr1_post_trio",
+  "framework_review_1": {
+    "status": "PASS",
+    "date": "2026-08-07",
+    "doc": "docs/project-lifeboat/Z_FRAMEWORK_REVIEW_1_POST_TRIO.md"
+  }
 }

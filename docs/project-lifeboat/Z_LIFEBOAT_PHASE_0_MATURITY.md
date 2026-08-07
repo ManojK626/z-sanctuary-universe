@@ -1,8 +1,9 @@
 # Project Lifeboat — Phase 0 Maturity
 
-**Status:** RESEARCH (governed initiative · no operational dependency)
-**Date:** 2026-08-07
-**Branch tip:** includes R2 evidence + key ceremony (`65e7b1f`+)
+**Status:** ✅ PHASE 0 COMPLETE (Evidence Framework Proven) · Stage 1 ops still open  
+**Date:** 2026-08-07  
+**Seal:** [PHASE_Z_PROJECT_LIFEBOAT_PHASE_0_COMPLETE.md](../PHASE_Z_PROJECT_LIFEBOAT_PHASE_0_COMPLETE.md)  
+**FR1:** [Z_FRAMEWORK_REVIEW_1_POST_TRIO.md](Z_FRAMEWORK_REVIEW_1_POST_TRIO.md)
 
 ---
 
@@ -11,50 +12,44 @@
 ```text
 Phase 0
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-✓ Charter
-✓ Success Criteria (North Star)
-✓ Provider Matrix (+ Steward Exit Score)
-✓ Cost Projection
-✓ Preservation Architecture
-✓ Wave 1B Guide
-✓ Disaster Recovery Playbook
-✓ Decision Log
-✓ Master Register
-✓ Era IV Cross-links
-◐ Evidence sheets — B2 · R2 · C2 drafts (trilogy)
-✓ Framework Review 0 Pre-C2 ✅ PASS
-◐ Post-trio Framework Review (Phase 0 Complete gate)
-✓ Evidence Board updated (C2 = companion)
-✓ Key Ceremony one-pager (template · secrets offline)
-◐ Stewardship Ceremony (foresight only — not today)
-✓ Local restore dry-run outline (optional)
-Status ................ RESEARCH (trilogy draft · Phase 0 not yet Complete)
+✓ Charter · Success Criteria · Guiding Principles · Three Layers
+✓ Matrix · Cost · Architecture · Wave 1B guide · DR playbook
+✓ B2 · R2 · C2 evidence trilogy (draft)
+✓ Framework Review 0 Pre-C2 PASS
+✓ Framework Review 1 Post-Trio PASS
+✓ Evidence Framework Proven
+✓ Stewardship Framework Stable v0
+✓ Phase 0 Complete seal
+Status ................ PHASE 0 COMPLETE (methodology)
 Operational dependency  NONE
 Spend / accounts ...... NONE
 Wave 1B named ......... NO
+Preservation-complete . NO
 ```
-
-**Board:** [Z_LIFEBOAT_EVIDENCE_BOARD.md](Z_LIFEBOAT_EVIDENCE_BOARD.md)  
-**FR0:** [Z_FRAMEWORK_REVIEW_0_PRE_C2.md](Z_FRAMEWORK_REVIEW_0_PRE_C2.md)
 
 ---
 
-## Mission shift (recorded)
+## Mission
 
-From “which cloud?” toward: *How can humans become better stewards of technology?*
+> How can humans become better stewards of technology?
 
 **Quote:** *Technology preserves data. Stewardship preserves civilizations.*
 
 ---
 
-## Next research steps
+## Board (current evidence)
 
-1. Optional **post-trio Framework Review** → Phase 0 Complete when steward affirms framework confidence  
-2. AMK fills [Key Ceremony](Z_LIFEBOAT_KEY_CEREMONY_ONE_PAGER.md) offline  
-3. Optional local restore dry-run  
-4. **Do not** expand to AWS/Azure/… until post-trio review  
-5. Wave 1B unnamed until evidence earns destination  
+B2 = independent primary candidate · R2 = secondary/exit · C2 = NAS companion (never sole off-site)
 
 ---
 
-_Maturity · trilogy draft · framework over brand_
+## Next (Stage 1 ops / Phase 1 foresight)
+
+1. Key Ceremony offline fill  
+2. Local restore dry-run  
+3. Wave 1B when destination earned  
+4. Expand ecosystems only under steward gate  
+
+---
+
+_Maturity · Phase 0 Complete · framework is the asset_
