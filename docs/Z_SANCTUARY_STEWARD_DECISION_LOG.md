@@ -6,6 +6,28 @@
 
 ---
 
+## 2026-08-07 (h) — Lifeboat foresight · stewardship platform · no marketing
+
+**Input:** Brother — Lifeboat may become an Organizational Continuity & Stewardship Platform (not “backup software”); five pillars; board-level stewardship scores; industries beyond software; **hard separation** from Z-Sanctuary organism; **no marketing yet** — use internally → evidence → refine → then consider offering; commit evidence deepening.
+
+**Decision:** Record as **foresight only**. Do not market, sell, or build SaaS from this reflection. Hub Phase 0 RESEARCH continues. Commit docs-only evidence deepening + vision note. No PR. Wave 1B still unnamed. Book C/D locked.
+
+**Receipt:** [Z_PROJECT_LIFEBOAT_ORGANIZATIONAL_STEWARDSHIP_VISION.md](project-lifeboat/Z_PROJECT_LIFEBOAT_ORGANIZATIONAL_STEWARDSHIP_VISION.md)
+
+---
+
+## 2026-08-07 (g) — Lifeboat RESEARCH maturity · B2 benchmark · Steward Hall line
+
+**Input:** Brother Steward Assessment — Lifeboat is a governed initiative (Phase 0 RESEARCH, no operational dependency); B2 first as benchmark (*Can you beat B2?*); evidence headings Longevity/Economics/Security/Recovery/Exit/Synology; add **Steward Exit Score**; do not name Wave 1B; Hall line on preservation.
+
+**Decision:** Accept. Open B2 evidence sheet as Phase 0 benchmark. Add Steward Exit Score (10th matrix category). Record Hall line under Success Criteria. Status remains RESEARCH — no spend, accounts, uploads, or destination.
+
+**Hall:** *A civilization is not remembered for what it created, but for what it chose to preserve.*
+
+**Receipt:** [Z_LIFEBOAT_PHASE_0_MATURITY.md](project-lifeboat/Z_LIFEBOAT_PHASE_0_MATURITY.md) · [evidence/Z_LIFEBOAT_EVIDENCE_BACKBLAZE_B2.md](project-lifeboat/evidence/Z_LIFEBOAT_EVIDENCE_BACKBLAZE_B2.md)
+
+---
+
 ## 2026-08-07 (f) — Lifeboat Steward Board · Phase 0 commit posture
 
 **Input:** Brother Steward Board — commit Phase 0 docs only; no PR yet; add Success Criteria North Star; research order B2→R2→Synology C2→…; do **not** name Wave 1B today (evidence must earn destination); patience aligned with Era IV.

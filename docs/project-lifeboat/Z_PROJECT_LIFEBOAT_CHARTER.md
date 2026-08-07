@@ -1,13 +1,13 @@
 # Project Lifeboat Charter
 
-**Full name:** Z-Sanctuary Preservation & Continuity Initiative  
-**Horizon:** 2026 → 2050+  
-**Class:** Era IV Stewardship Initiative  
-**Authority:** AMK-Goku (human steward)  
-**Status:** ✅ CHARTERED — Phase 0 Research & Evidence  
-**Date:** 2026-08-07  
+**Full name:** Z-Sanctuary Preservation & Continuity Initiative
+**Horizon:** 2026 → 2050+
+**Class:** Era IV Stewardship Initiative
+**Authority:** AMK-Goku (human steward)
+**Status:** ✅ CHARTERED — Phase 0 Research & Evidence
+**Date:** 2026-08-07
 
-**Does not:** open a fifth Book · amend Constitutional Reference Editions · authorize spend · invent Wave 1B path · deploy · bind Cloudflare production · mutate NAS  
+**Does not:** open a fifth Book · amend Constitutional Reference Editions · authorize spend · invent Wave 1B path · deploy · bind Cloudflare production · mutate NAS
 
 ---
 
@@ -35,20 +35,20 @@ Era IV already sealed the architectural identity of Stewardship. Lifeboat is the
 
 ### In scope
 
-- Off-site independent archives (encrypted)  
-- Provider research, cost sustainability, migration readiness  
-- Restore testing and disaster-recovery drills  
-- Future Synology NAS as **local steward** (when hardware arrives)  
-- GitHub as constitution & source-history vault (already primary for code)  
-- Stewardship Certificates and receipt culture  
+- Off-site independent archives (encrypted)
+- Provider research, cost sustainability, migration readiness
+- Restore testing and disaster-recovery drills
+- Future Synology NAS as **local steward** (when hardware arrives)
+- GitHub as constitution & source-history vault (already primary for code)
+- Stewardship Certificates and receipt culture
 
 ### Out of scope (until separately gated)
 
-- Payment rails, commercial product hosting  
-- Public NAS exposure / RDP without charter  
-- Silent full-tree dumps of personal vaults  
-- Auto-execution of Cycle Observe queue items  
-- Binding production Cloudflare Workers/R2 for app runtime “because we can”  
+- Payment rails, commercial product hosting
+- Public NAS exposure / RDP without charter
+- Silent full-tree dumps of personal vaults
+- Auto-execution of Cycle Observe queue items
+- Binding production Cloudflare Workers/R2 for app runtime “because we can”
 
 R2 (or similar) may later serve as a **preservation destination** under Lifeboat — that is not a production deploy of the hub.
 
@@ -56,12 +56,12 @@ R2 (or similar) may later serve as a **preservation destination** under Lifeboat
 
 ## 4. Stewardship principles (decision law)
 
-1. **Evidence over assumptions** — scores require dated sources or are marked provisional.  
-2. **Restore over backup** — a copy without a restore drill is incomplete.  
-3. **Encryption before upload** — client-side encryption (Restic / Kopia / rclone crypt) before off-site.  
-4. **Multiple independent copies** — avoid single-provider or single-drive fate.  
-5. **Open standards over vendor lock-in** — prefer S3-compatible / portable formats.  
-6. **Sustainability over short-term convenience** — 20–50 year cost must remain thinkable on a limited budget.  
+1. **Evidence over assumptions** — scores require dated sources or are marked provisional.
+2. **Restore over backup** — a copy without a restore drill is incomplete.
+3. **Encryption before upload** — client-side encryption (Restic / Kopia / rclone crypt) before off-site.
+4. **Multiple independent copies** — avoid single-provider or single-drive fate.
+5. **Open standards over vendor lock-in** — prefer S3-compatible / portable formats.
+6. **Sustainability over short-term convenience** — 20–50 year cost must remain thinkable on a limited budget.
 
 ---
 
@@ -80,8 +80,10 @@ Every candidate provider is scored **0–10** on:
 | Automation | Restic, Kopia, rclone, Hyper Backup, etc. |
 | Governance Fit | Receipts, versioning, stewardship principles |
 | Scalability | Few GB → many TB over decades |
+| **Steward Exit** | Leave without losing the organism (open standards · S3 · portable encryption · easy export) |
 
 Full matrix: [Z_LIFEBOAT_PROVIDER_COMPARISON_MATRIX.md](Z_LIFEBOAT_PROVIDER_COMPARISON_MATRIX.md)
+B2 benchmark evidence: [evidence/Z_LIFEBOAT_EVIDENCE_BACKBLAZE_B2.md](evidence/Z_LIFEBOAT_EVIDENCE_BACKBLAZE_B2.md)
 
 ---
 
@@ -131,10 +133,10 @@ Local Development PC (builder node — not master)
 
 Design intent:
 
-- **PC** is no longer the master of fate  
-- **NAS** becomes local steward (when present)  
-- **Cloud** is independent preservation  
-- **GitHub** preserves living history  
+- **PC** is no longer the master of fate
+- **NAS** becomes local steward (when present)
+- **Cloud** is independent preservation
+- **GitHub** preserves living history
 
 Detail: [Z_SANCTUARY_PRESERVATION_ARCHITECTURE.md](Z_SANCTUARY_PRESERVATION_ARCHITECTURE.md)
 
@@ -154,10 +156,10 @@ Detail: [Z_SANCTUARY_PRESERVATION_ARCHITECTURE.md](Z_SANCTUARY_PRESERVATION_ARCH
 
 ## 10. Sacred gates
 
-- No auto-merge · no auto-deploy  
-- No unsolicited external connections  
-- Merge, deploy, payment, legal/pricing public copy, bulk user-data actions → **AMK-Goku** consent  
-- Wave 1B destination path → **AMK-named** only  
+- No auto-merge · no auto-deploy
+- No unsolicited external connections
+- Merge, deploy, payment, legal/pricing public copy, bulk user-data actions → **AMK-Goku** consent
+- Wave 1B destination path → **AMK-named** only
 
 ---
 

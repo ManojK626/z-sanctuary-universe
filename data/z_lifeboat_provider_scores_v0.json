@@ -1,10 +1,10 @@
 {
-  "schema": "z_lifeboat_provider_scores_v0",
+  "schema": "z_lifeboat_provider_scores_v0_1",
   "initiative": "project_lifeboat",
   "phase": 0,
   "score_date": "2026-08-07",
-  "status": "provisional_research",
-  "law_note": "Not a purchase order. AMK names Wave 1B destination. Re-verify pricing before spend.",
+  "status": "provisional_research_benchmark_b2",
+  "law_note": "Not a purchase order. B2 is benchmark not winner. Wave 1B unnamed until evidence earns it. Re-verify pricing before spend.",
   "categories": [
     "lifetime_cost",
     "security",
@@ -14,7 +14,8 @@
     "synology_ready",
     "automation",
     "governance_fit",
-    "scalability"
+    "scalability",
+    "steward_exit"
   ],
   "providers": [
     {
@@ -30,9 +31,10 @@
         "synology_ready": 4,
         "automation": 7,
         "governance_fit": 10,
-        "scalability": 7
+        "scalability": 7,
+        "steward_exit": 6
       },
-      "composite": 7.4
+      "composite": 7.3
     },
     {
       "id": "cloudflare_r2",
@@ -47,9 +49,10 @@
         "synology_ready": 6,
         "automation": 9,
         "governance_fit": 8,
-        "scalability": 9
+        "scalability": 9,
+        "steward_exit": 9
       },
-      "composite": 7.9,
+      "composite": 8,
       "pricing_snapshot_usd_per_gb_month": 0.015,
       "egress_note": "Free egress; API ops extra"
     },
@@ -66,7 +69,8 @@
         "synology_ready": 8,
         "automation": 9,
         "governance_fit": 8,
-        "scalability": 9
+        "scalability": 9,
+        "steward_exit": 9
       },
       "composite": 8.6,
       "pricing_snapshot_usd_per_gb_month": 0.006,
@@ -84,7 +88,8 @@
         "synology_ready": 7,
         "automation": 8,
         "governance_fit": 7,
-        "scalability": 8
+        "scalability": 8,
+        "steward_exit": 8
       },
       "composite": 7.6
     },
@@ -100,9 +105,10 @@
         "synology_ready": 10,
         "automation": 9,
         "governance_fit": 7,
-        "scalability": 7
+        "scalability": 7,
+        "steward_exit": 5
       },
-      "composite": 7.4
+      "composite": 7.2
     },
     {
       "id": "hetzner_object_storage",
@@ -116,7 +122,8 @@
         "synology_ready": 6,
         "automation": 8,
         "governance_fit": 7,
-        "scalability": 8
+        "scalability": 8,
+        "steward_exit": 8
       },
       "composite": 7.6
     },
@@ -132,9 +139,10 @@
         "synology_ready": 6,
         "automation": 8,
         "governance_fit": 6,
-        "scalability": 7
+        "scalability": 7,
+        "steward_exit": 8
       },
-      "composite": 7.0
+      "composite": 7.1
     },
     {
       "id": "storj",
@@ -148,9 +156,10 @@
         "synology_ready": 5,
         "automation": 7,
         "governance_fit": 6,
-        "scalability": 7
+        "scalability": 7,
+        "steward_exit": 6
       },
-      "composite": 6.7
+      "composite": 6.6
     },
     {
       "id": "aws_s3",
@@ -164,9 +173,10 @@
         "synology_ready": 7,
         "automation": 9,
         "governance_fit": 7,
-        "scalability": 10
+        "scalability": 10,
+        "steward_exit": 7
       },
-      "composite": 7.9,
+      "composite": 7.8,
       "note": "High longevity; poor primary TCO for limited-budget stewardship"
     },
     {
@@ -181,9 +191,10 @@
         "synology_ready": 6,
         "automation": 8,
         "governance_fit": 7,
-        "scalability": 10
+        "scalability": 10,
+        "steward_exit": 7
       },
-      "composite": 7.7
+      "composite": 7.6
     },
     {
       "id": "azure_blob",
@@ -197,9 +208,10 @@
         "synology_ready": 6,
         "automation": 8,
         "governance_fit": 7,
-        "scalability": 10
+        "scalability": 10,
+        "steward_exit": 7
       },
-      "composite": 7.7
+      "composite": 7.6
     },
     {
       "id": "ovhcloud_object_storage",
@@ -213,7 +225,8 @@
         "synology_ready": 5,
         "automation": 7,
         "governance_fit": 6,
-        "scalability": 8
+        "scalability": 8,
+        "steward_exit": 7
       },
       "composite": 6.7
     }
@@ -240,11 +253,31 @@
     "docs/project-lifeboat/README.md",
     "docs/project-lifeboat/Z_PROJECT_LIFEBOAT_CHARTER.md",
     "docs/project-lifeboat/Z_PROJECT_LIFEBOAT_SUCCESS_CRITERIA.md",
+    "docs/project-lifeboat/Z_LIFEBOAT_PHASE_0_MATURITY.md",
     "docs/project-lifeboat/Z_LIFEBOAT_PROVIDER_COMPARISON_MATRIX.md",
     "docs/project-lifeboat/Z_LIFEBOAT_20_YEAR_COST_PROJECTION.md",
     "docs/project-lifeboat/Z_SANCTUARY_PRESERVATION_ARCHITECTURE.md",
     "docs/project-lifeboat/Z_WAVE_1B_DECISION_GUIDE.md",
     "docs/project-lifeboat/Z_DISASTER_RECOVERY_PLAYBOOK.md",
-    "docs/PHASE_Z_PROJECT_LIFEBOAT_CHARTERED_2026_08_07.md"
-  ]
+    "docs/project-lifeboat/evidence/README.md",
+    "docs/project-lifeboat/evidence/Z_LIFEBOAT_EVIDENCE_BACKBLAZE_B2.md",
+    "docs/PHASE_Z_PROJECT_LIFEBOAT_CHARTERED_2026_08_07.md",
+    "docs/project-lifeboat/Z_PROJECT_LIFEBOAT_ORGANIZATIONAL_STEWARDSHIP_VISION.md",
+    "docs/project-lifeboat/evidence/Z_LIFEBOAT_EVIDENCE_TEMPLATE.md"
+  ],
+  "steward_exit_definition": {
+    "question": "How easy is it to leave this provider without losing the organism?",
+    "ten_means": [
+      "open_standards",
+      "s3_compatibility",
+      "standard_or_client_encryption",
+      "easy_export",
+      "minimal_vendor_lock_in"
+    ]
+  },
+  "benchmark": {
+    "provider_id": "backblaze_b2",
+    "rule": "Can you beat B2?",
+    "evidence_doc": "docs/project-lifeboat/evidence/Z_LIFEBOAT_EVIDENCE_BACKBLAZE_B2.md"
+  }
 }
