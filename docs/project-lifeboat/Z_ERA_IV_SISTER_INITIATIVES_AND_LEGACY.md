@@ -69,11 +69,13 @@ Project Lifeboat follows the same path as the constitutional organism. That is a
 
 ---
 
-## Earned quote
+## Earned quotes
 
 > Technology preserves data. Stewardship preserves civilizations.
 
-Technology is not diminished — it is placed in service of something larger.
+> Extraordinary technology eventually becomes ordinary. Extraordinary stewardship remains extraordinary.
+
+Technology is not diminished — it is placed in service of something larger. Stewardship is the layer that does not age into commodity.
 
 ---
 
@@ -85,16 +87,18 @@ That, to Era IV, is the deeper mission. Technology evolves fast; stewardship kee
 
 ---
 
-## Standing recommendation (unchanged)
+## Standing recommendation
 
 ```text
-🟢 Complete the B2 → R2 → C2 evidence trilogy
-🟢 Pause for Framework Review
-🟢 Validate that the framework—not the providers—is the strongest asset
-🟢 Only then expand to additional ecosystems
+🟢 Phase 0 Complete (Evidence Framework Proven)
+🟢 Stage 1 ops: Key Ceremony · restore drills · Wave 1B when earned
+🟢 Expand ecosystems only under steward gate
+🚫 No marketing · no convenience decisions dressed as stewardship
 ```
 
-**Update:** Trilogy drafts complete · Framework Review 0 (pre-C2) PASS · post-trio Framework Review still the Phase 0 Complete gate.
+**Update:** FR0 PASS · FR1 PASS · Phase 0 Complete. Technologies remain replaceable; stewardship remains extraordinary.
+
+---
 
 ## Future (not now) — Stewardship Benchmark
 
@@ -129,6 +133,8 @@ Detail foresight: [Z_STEWARDSHIP_ASSESSMENT_FORESIGHT.md](Z_STEWARDSHIP_ASSESSME
 📚 Let methodology outlive products.
 ```
 
+Technology will become ordinary. Stewardship need not.
+
 ---
 
-_Pause · look back · then fill C2 · then review the framework_
+_Pause · look back · Phase 0 Complete · stewardship remains extraordinary_
