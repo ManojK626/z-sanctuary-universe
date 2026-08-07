@@ -6,6 +6,16 @@
 
 ---
 
+## 2026-08-07 (c) — Era IV Stewardship Identity sealed
+
+**Input:** Brother closing (four eras · strengthen>complexity rule · quiet metrics · Book C need-only trigger · coherence under growth).
+
+**Decision:** Seal architectural identity as **Era IV — Stewardship**. Permanent rule adopted (not a new Book). Book C opens only on constitutional need Book A/B cannot satisfy. Quiet maturity metrics replace feature-count progress.
+
+**Receipt:** [PHASE_Z_ERA_IV_STEWARDSHIP_IDENTITY_SEAL_2026_08_07.md](PHASE_Z_ERA_IV_STEWARDSHIP_IDENTITY_SEAL_2026_08_07.md)
+
+---
+
 ## 2026-08-07 (b) — Steward meta-observations accepted
 
 **Input:** Brother meta-observations (threshold · drift risk · Preservation gap · anti-document-bloat · Version 10 · Constitutional Index foresight).
