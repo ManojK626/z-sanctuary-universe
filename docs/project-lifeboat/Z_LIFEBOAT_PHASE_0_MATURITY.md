@@ -1,8 +1,8 @@
 # Project Lifeboat — Phase 0 Maturity
 
-**Status:** RESEARCH (governed initiative · no operational dependency)  
-**Date:** 2026-08-07  
-**Branch tip:** includes R2 evidence + key ceremony (`65e7b1f`+)  
+**Status:** RESEARCH (governed initiative · no operational dependency)
+**Date:** 2026-08-07
+**Branch tip:** includes R2 evidence + key ceremony (`65e7b1f`+)
 
 ---
 
@@ -48,7 +48,7 @@ Project Lifeboat has crossed from an **idea** into a **governed initiative**.
 
 Backblaze B2 sets the bar. Every other provider answers: **Can you beat B2?**
 
-**R2 (2026-08-07):** Does **not** beat B2 as sole primary.  
+**R2 (2026-08-07):** Does **not** beat B2 as sole primary.
 **C2:** Next — plus **Appliance Stewardship Score**.
 
 ---
@@ -59,6 +59,8 @@ Backblaze B2 sets the bar. Every other provider answers: **Can you beat B2?**
 
 **Path line:** *We chose this path because it best protects the future—not because it was fashionable, familiar, or convenient.*
 
+**Guiding principle:** [Z_PROJECT_LIFEBOAT_GUIDING_PRINCIPLE.md](Z_PROJECT_LIFEBOAT_GUIDING_PRINCIPLE.md) — evidence-led · recovery-tested · migration-aware · steward-reviewed.
+
 **Commercial maturity:** Stage 1 Internal Steward only — **no marketing**.
 
 ---
@@ -67,7 +69,7 @@ Backblaze B2 sets the bar. Every other provider answers: **Can you beat B2?**
 
 1. AMK fills [Key Ceremony](Z_LIFEBOAT_KEY_CEREMONY_ONE_PAGER.md) **offline**  
 2. Optional: [local restore dry-run](Z_LIFEBOAT_LOCAL_RESTORE_DRY_RUN_OUTLINE.md)  
-3. Fill [Synology C2 evidence](evidence/Z_LIFEBOAT_EVIDENCE_SYNOLOGY_C2.md) + Appliance Stewardship  
+3. Fill C2 under [Research Charter](Z_SYNOLOGY_C2_RESEARCH_CHARTER.md)  
 4. Continue evaluation order without naming Wave 1B  
 
 ---

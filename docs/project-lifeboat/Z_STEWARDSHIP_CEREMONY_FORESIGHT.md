@@ -1,10 +1,10 @@
 # Stewardship Ceremony — Foresight (Era IV)
 
-**Status:** 🔮 FORESIGHT — **not for today**  
-**Date:** 2026-08-07  
+**Status:** 🔮 FORESIGHT — **not for today**
+**Date:** 2026-08-07
 **Today’s doc:** [Z_LIFEBOAT_KEY_CEREMONY_ONE_PAGER.md](Z_LIFEBOAT_KEY_CEREMONY_ONE_PAGER.md) (encryption custody only)
 
-**Does not:** replace the Key Ceremony one-pager · authorize multi-person ceremonies · store secrets in git  
+**Does not:** replace the Key Ceremony one-pager · authorize multi-person ceremonies · store secrets in git
 
 ---
 

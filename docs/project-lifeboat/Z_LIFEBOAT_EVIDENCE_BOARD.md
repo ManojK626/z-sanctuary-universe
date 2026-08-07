@@ -1,7 +1,7 @@
 # Project Lifeboat — Evidence Board (Phase 0)
 
-**Status:** RESEARCH · evidence-driven · not a purchase order  
-**Updated:** 2026-08-07  
+**Status:** RESEARCH · evidence-driven · not a purchase order
+**Updated:** 2026-08-07
 **Parents:** [Maturity](Z_LIFEBOAT_PHASE_0_MATURITY.md) · [evidence/](evidence/README.md)
 
 **First stewardship test passed:** R2 did **not** automatically win because Cloudflare is familiar. Evidence ranked preference down. That is the discipline.
@@ -18,8 +18,8 @@
 
 Wording law:
 
-- Not “R2 failed.”  
-- Not “B2 wins forever.”  
+- Not “R2 failed.”
+- Not “B2 wins forever.”
 - Yes: **Based on current evidence** — room for future data.
 
 ---
@@ -36,11 +36,23 @@ Cost · governance · recovery · exit · longevity · operational sustainabilit
 
 ---
 
-## Framework endurance (prediction · not a vendor lock)
+## Framework endurance
 
-By end of Phase 0 the valuable deliverable is not a forever recommendation — it is a **Stewardship Preservation Framework** that can evaluate **any** future provider (2032, 2040, …) without rewriting Lifeboat.
+By end of Phase 0 the valuable deliverable is not a forever recommendation — it is a **Stewardship Preservation Framework** that can evaluate any preservation **ecosystem** (2032, 2040, …) without rewriting Lifeboat.
 
-The framework must outlive the vendors.
+```text
+Provider / ecosystem research
+        ↓
+Evidence Framework Proven
+        ↓
+Stewardship Framework Stable
+```
+
+**Guiding principle:** [Z_PROJECT_LIFEBOAT_GUIDING_PRINCIPLE.md](Z_PROJECT_LIFEBOAT_GUIDING_PRINCIPLE.md)
+
+> Every preservation decision shall be evidence-led, recovery-tested, migration-aware, and steward-reviewed.
+
+**Defining question:** *Can you protect the future better than what we already trust?*
 
 ---
 
@@ -51,7 +63,8 @@ Wave 1B ............. unnamed
 Spend / accounts .... none
 Marketing ........... none
 Stage ............... 1 Internal Steward
-Next evidence ....... Synology C2 (+ Appliance Stewardship Score)
+C2 research ......... chartered — [Z_SYNOLOGY_C2_RESEARCH_CHARTER.md](Z_SYNOLOGY_C2_RESEARCH_CHARTER.md)
+Next ................ fill C2 evidence under charter questions
 ```
 
 ---

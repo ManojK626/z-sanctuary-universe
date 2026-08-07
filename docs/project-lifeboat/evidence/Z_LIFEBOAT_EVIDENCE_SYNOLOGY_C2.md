@@ -2,70 +2,128 @@
 
 **Provider:** Synology C2 (Storage / Backup family — refine SKU in research)  
 **Tier:** A  
-**Role:** Next Phase 0 research — **NAS stewardship companion**  
-**Sheet status:** OPEN / DRAFT stub  
-**Score date:** 2026-08-07 (stub opened)  
-**Sources last checked:** — (fill during research)  
+**Role:** NAS stewardship companion research  
+**Sheet status:** OPEN under [Research Charter](../Z_SYNOLOGY_C2_RESEARCH_CHARTER.md)  
+**Score date:** 2026-08-07 (charter sealed · scores pending evidence fill)  
+**Sources last checked:** —  
 **Benchmark:** [Z_LIFEBOAT_EVIDENCE_BACKBLAZE_B2.md](Z_LIFEBOAT_EVIDENCE_BACKBLAZE_B2.md)  
-**Board:** [Z_LIFEBOAT_EVIDENCE_BOARD.md](../Z_LIFEBOAT_EVIDENCE_BOARD.md)
+**Board:** [Z_LIFEBOAT_EVIDENCE_BOARD.md](../Z_LIFEBOAT_EVIDENCE_BOARD.md)  
+**Principle:** [Z_PROJECT_LIFEBOAT_GUIDING_PRINCIPLE.md](../Z_PROJECT_LIFEBOAT_GUIDING_PRINCIPLE.md)
 
 **Does not:** create C2 accounts · spend · bind NAS · name Wave 1B  
 
+**Ecosystem under review:** Synology NAS · Hyper Backup · hardware lifecycle · monitoring · C2 cloud — not “C2 logo” alone.
+
 ---
 
-## Extra criterion (C2-critical)
+## Research posture
 
-### Appliance Stewardship Score
+> Can the evidence justify C2’s place in a 20–50 year stewardship architecture?
 
-> How well does this provider work as a long-term companion to a Synology NAS?
+Not: *It’s Synology, therefore it must fit.*
 
-Not merely “does it connect?” — evaluate:
+---
 
-| Dimension | Evidence (to fill) | Notes |
+## 1. Stewardship Compatibility
+
+| Question | Evidence | Confidence |
 | --- | --- | --- |
-| Onboarding | | |
-| Maintenance | | |
-| Restore workflows | | |
-| Automation | | |
-| Health monitoring | | |
-| Migration (leave Synology ecosystem) | | **Ties to Steward Exit** |
+| Designed for decades of operation? | _pending_ | |
+| Can future stewards understand it? | | |
+| Does it reduce operational complexity? | | |
+| Does it encourage regular restore testing? | | |
 
-**Appliance Stewardship Score (0–10):** _pending research_
+**Stewardship Compatibility provisional score (0–10):** _pending_
 
 ---
 
-## Standard headings (to fill)
+## 2. Appliance Stewardship Score (NAS Companion)
 
-1. Longevity —  
-2. Economics —  
-3. Security —  
-4. Recovery —  
-5. Steward Exit — *(expect tension: high appliance fit vs lower exit)*  
-6. Synology integration —  
+| Dimension | Evidence |
+| --- | --- |
+| Hyper Backup seamlessness | _pending_ |
+| Recovery maturity | |
+| Storage management transparency | |
+| Hardware replacement ease | |
+| Recover without specialist knowledge? | |
 
-Use full template: [Z_LIFEBOAT_EVIDENCE_TEMPLATE.md](Z_LIFEBOAT_EVIDENCE_TEMPLATE.md)
+**Appliance Stewardship Score (0–10):** _pending_
 
 ---
 
-## Beat-B2 posture (preliminary · not scored)
+## 3. Steward Exit Score
 
-C2 is unlikely to “beat B2 as sole primary object archive” on independence — its job on the board is to complete the **local steward + appliance** story.
+> If Synology disappeared in 15 years — migrate? restore? preserve the organism?
 
-Ask instead:
+| Question | Evidence |
+| --- | --- |
+| Migrate without proprietary dead-end? | _pending_ |
+| Restore with open tools / portable archives? | |
+| Independent copy (e.g. B2/R2) assumed in architecture? | |
 
-> Does C2 beat alternatives **as NAS companion**, and how should it sit beside B2/R2?
+**Steward Exit Score (0–10):** _pending_ *(matrix provisional was 5 — re-score after evidence)*
+
+---
+
+## 4. Cost Through Time
+
+| Horizon | Evidence |
+| --- | --- |
+| Year 1 | _pending_ |
+| Year 5 | |
+| Year 10 | |
+| Year 20 | |
+| Year 30 | |
+| Migration / hardware replacement / maintenance | |
+
+**Economics / Lifetime Cost provisional score (0–10):** _pending_
+
+---
+
+## 5. Recovery Confidence (under stress)
+
+| Stress | Recoverable? | Notes |
+| --- | --- | --- |
+| Hardware failure | _pending_ | |
+| Accidental deletion | | |
+| Ransomware | | |
+| Loss of one administrator | | |
+
+**Restore Confidence provisional score (0–10):** _pending_
+
+---
+
+## Also fill (standard)
+
+Longevity · Security · Automation · Governance Fit · Scalability — per [template](Z_LIFEBOAT_EVIDENCE_TEMPLATE.md).
+
+---
+
+## Beat-B2 verdict (fill when evidence complete)
+
+| Dimension | Better / Equal / Worse than B2 | Why |
+| --- | --- | --- |
+| Longevity | | |
+| Economics | | |
+| Security | | |
+| Recovery | | |
+| Steward Exit | | |
+| Synology / Appliance | | |
+
+**Overall (primary object archive):** Yes / No / Partial — based on current evidence.  
+**Overall (NAS companion seat):** Yes / No / Partial — based on current evidence.
 
 ---
 
 ## Standing
 
 ```text
-Sheet ............. stub opened for research
-Accounts .......... none
-Wave 1B ........... unnamed
-Next .............. fill evidence under headings + Appliance Stewardship
+Charter .............. sealed
+Scores ............... pending public + steward evidence fill
+Accounts ............. none
+Wave 1B .............. unnamed
 ```
 
 ---
 
-_Stub · NAS story next · evidence before preference_
+_Evidence sheet · ecosystems not logos · principle over brand_

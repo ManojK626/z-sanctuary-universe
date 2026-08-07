@@ -1,8 +1,8 @@
 # Project Lifeboat — Key Ceremony One-Pager
 
-**Status:** STAGE 1 PROCESS DOC — fill offline · **never commit secrets**  
-**Date:** 2026-08-07  
-**Authority:** AMK-Goku (human steward)  
+**Status:** STAGE 1 PROCESS DOC — fill offline · **never commit secrets**
+**Date:** 2026-08-07
+**Authority:** AMK-Goku (human steward)
 **Parents:** [Success Criteria](Z_PROJECT_LIFEBOAT_SUCCESS_CRITERIA.md) · [DR Playbook](Z_DISASTER_RECOVERY_PLAYBOOK.md) · [Architecture](Z_SANCTUARY_PRESERVATION_ARCHITECTURE.md)
 
 **Later (not today):** A fuller [Stewardship Ceremony](Z_STEWARDSHIP_CEREMONY_FORESIGHT.md) may wrap identity · recovery contacts · receipts around this key step.
@@ -15,7 +15,7 @@
 
 Cloud choice is secondary. **Key custody is the silent single point of failure.**
 
-If ciphertext survives and keys are lost → the organism is gone.  
+If ciphertext survives and keys are lost → the organism is gone.
 If keys live only in one person’s undocumented memory → future stewards fail criterion 6.
 
 ---
@@ -35,40 +35,40 @@ If keys live only in one person’s undocumented memory → future stewards fail
 
 ### 1. Generate
 
-- [ ] Create Class A secret with a password manager or diceware (long, unique)  
-- [ ] Do **not** reuse personal email passwords  
-- [ ] Do **not** paste into Cursor chat or commit  
+- [ ] Create Class A secret with a password manager or diceware (long, unique)
+- [ ] Do **not** reuse personal email passwords
+- [ ] Do **not** paste into Cursor chat or commit
 
 ### 2. Dual custody (minimum)
 
-- [ ] **Primary** sealed location: ________________________ (e.g. password manager vault name — not the secret)  
-- [ ] **Secondary** sealed location: ________________________ (e.g. paper envelope / safe / trusted offline)  
-- [ ] Secondary is physically independent of the PC disk  
+- [ ] **Primary** sealed location: ________________________ (e.g. password manager vault name — not the secret)
+- [ ] **Secondary** sealed location: ________________________ (e.g. paper envelope / safe / trusted offline)
+- [ ] Secondary is physically independent of the PC disk
 
 ### 3. Successor path
 
-- [ ] Designated future steward (name/role): ________________________  
-- [ ] How they learn the *location* of secondary (not the secret in email): ________________________  
-- [ ] Review date for this ceremony: ________________________ (suggest annual with restore drill)  
+- [ ] Designated future steward (name/role): ________________________
+- [ ] How they learn the *location* of secondary (not the secret in email): ________________________
+- [ ] Review date for this ceremony: ________________________ (suggest annual with restore drill)
 
 ### 4. Rotation
 
-- [ ] If cloud API keys ever exist: rotate after suspected compromise or annually  
-- [ ] Changing Class A (repo password) requires a **planned** re-encrypt / new repo — never casual  
+- [ ] If cloud API keys ever exist: rotate after suspected compromise or annually
+- [ ] Changing Class A (repo password) requires a **planned** re-encrypt / new repo — never casual
 
 ### 5. Prove without exposing
 
-- [ ] After first encrypted archive exists: unlock on a clean temp path once (restore drill)  
-- [ ] Record **pass/fail + date** in Stewardship Certificate / decision log — **not** the secret  
+- [ ] After first encrypted archive exists: unlock on a clean temp path once (restore drill)
+- [ ] Record **pass/fail + date** in Stewardship Certificate / decision log — **not** the secret
 
 ---
 
 ## Explicit non-locations (never store Class A/B here)
 
-- Hub git repo · PR descriptions · `data/reports/` · dashboard panels  
-- Unencrypted USB left in the PC  
-- Phone photos of passwords  
-- Shared family chat threads  
+- Hub git repo · PR descriptions · `data/reports/` · dashboard panels
+- Unencrypted USB left in the PC
+- Phone photos of passwords
+- Shared family chat threads
 
 ---
 

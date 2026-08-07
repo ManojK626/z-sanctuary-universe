@@ -34,7 +34,7 @@ Lifetime Cost · Security · Longevity · Vendor Independence · Restore Confide
 
 > How well does this provider work as a long-term companion to a Synology NAS?
 
-Onboarding · maintenance · restore · automation · health monitoring · migration — not merely “does it connect?”  
+Onboarding · maintenance · restore · automation · health monitoring · migration — not merely “does it connect?”
 Recorded on C2 evidence sheets; not averaged into the ten-category composite unless later promoted.
 
 **Composite** = arithmetic mean of the **ten** core categories (rounded to 1 decimal).

@@ -6,6 +6,16 @@
 
 ---
 
+## 2026-08-07 (l) — Lifeboat Guiding Principle · C2 Research Charter · ecosystems
+
+**Input:** Brother — Lifeboat is building a reference methodology (guard bias); C2 same discipline as B2/R2; five question clusters (Stewardship Compatibility · Appliance Score · Exit · Cost-through-time · Recovery under stress); evaluate stewardship **ecosystems** not logos; Phase 0 ladder to Evidence Framework Proven → Stewardship Framework Stable; permanent principle: evidence-led, recovery-tested, migration-aware, steward-reviewed; defining question: protect the future better than what we already trust.
+
+**Decision:** Seal Lifeboat Guiding Principle (not Book A/B). Charter C2 research under that law. Expand C2 evidence sheet to charter questions. No preference bias · no spend · Wave 1B unnamed.
+
+**Receipt:** [Z_PROJECT_LIFEBOAT_GUIDING_PRINCIPLE.md](project-lifeboat/Z_PROJECT_LIFEBOAT_GUIDING_PRINCIPLE.md) · [Z_SYNOLOGY_C2_RESEARCH_CHARTER.md](project-lifeboat/Z_SYNOLOGY_C2_RESEARCH_CHARTER.md)
+
+---
+
 ## 2026-08-07 (k) — Evidence Board · first stewardship test · C2 Appliance Score
 
 **Input:** Brother — Lifeboat passed first stewardship test (R2 did not win by preference); Evidence Board B2 primary / R2 secondary / C2 next; keep “does not beat B2 as sole primary” wording; Key Ceremony → Stewardship Ceremony foresight later; affirm Recovery > Backup; add **Appliance Stewardship Score** for C2; framework must outlive vendors.

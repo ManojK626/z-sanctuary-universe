@@ -1,11 +1,11 @@
 # Project Lifeboat — evidence index
 
-**Phase:** 0 RESEARCH  
-**Board:** [Z_LIFEBOAT_EVIDENCE_BOARD.md](../Z_LIFEBOAT_EVIDENCE_BOARD.md)  
-**Benchmark:** [Backblaze B2](Z_LIFEBOAT_EVIDENCE_BACKBLAZE_B2.md)  
+**Phase:** 0 RESEARCH
+**Board:** [Z_LIFEBOAT_EVIDENCE_BOARD.md](../Z_LIFEBOAT_EVIDENCE_BOARD.md)
+**Benchmark:** [Backblaze B2](Z_LIFEBOAT_EVIDENCE_BACKBLAZE_B2.md)
 **Template:** [Z_LIFEBOAT_EVIDENCE_TEMPLATE.md](Z_LIFEBOAT_EVIDENCE_TEMPLATE.md)
 
-Every non-B2 sheet must answer: **Can you beat B2?**  
+Every non-B2 sheet must answer: **Can you beat B2?**
 NAS-class sheets also score: **Appliance Stewardship**.
 
 | Order | Provider | Sheet | Status |

@@ -56,12 +56,20 @@ R2 (or similar) may later serve as a **preservation destination** under Lifeboat
 
 ## 4. Stewardship principles (decision law)
 
-1. **Evidence over assumptions** — scores require dated sources or are marked provisional.
-2. **Restore over backup** — a copy without a restore drill is incomplete.
-3. **Encryption before upload** — client-side encryption (Restic / Kopia / rclone crypt) before off-site.
-4. **Multiple independent copies** — avoid single-provider or single-drive fate.
-5. **Open standards over vendor lock-in** — prefer S3-compatible / portable formats.
-6. **Sustainability over short-term convenience** — 20–50 year cost must remain thinkable on a limited budget.
+1. **Evidence over assumptions** — scores require dated sources or are marked provisional.  
+2. **Restore over backup** — a copy without a restore drill is incomplete.  
+3. **Encryption before upload** — client-side encryption (Restic / Kopia / rclone crypt) before off-site.  
+4. **Multiple independent copies** — avoid single-provider or single-drive fate.  
+5. **Open standards over vendor lock-in** — prefer S3-compatible / portable formats.  
+6. **Sustainability over short-term convenience** — 20–50 year cost must remain thinkable on a limited budget.  
+
+**Permanent Lifeboat sentence** (initiative law · not Book A/B):
+
+> Every preservation decision shall be evidence-led, recovery-tested, migration-aware, and steward-reviewed.
+
+See [Z_PROJECT_LIFEBOAT_GUIDING_PRINCIPLE.md](Z_PROJECT_LIFEBOAT_GUIDING_PRINCIPLE.md).
+
+**Defining question:** *Can you protect the future better than what we already trust?*
 
 ---
 

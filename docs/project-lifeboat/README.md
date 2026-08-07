@@ -29,7 +29,9 @@ Ensure the Z-Sanctuary Universe can survive hardware failure, cloud-provider cha
 | 4 | Preservation Architecture | [Z_SANCTUARY_PRESERVATION_ARCHITECTURE.md](Z_SANCTUARY_PRESERVATION_ARCHITECTURE.md) |
 | 5 | Wave 1B Decision Guide | [Z_WAVE_1B_DECISION_GUIDE.md](Z_WAVE_1B_DECISION_GUIDE.md) |
 | 6 | Disaster Recovery Playbook | [Z_DISASTER_RECOVERY_PLAYBOOK.md](Z_DISASTER_RECOVERY_PLAYBOOK.md) |
+| — | Guiding Principle (Lifeboat law) | [Z_PROJECT_LIFEBOAT_GUIDING_PRINCIPLE.md](Z_PROJECT_LIFEBOAT_GUIDING_PRINCIPLE.md) |
 | — | Evidence Board (live standing) | [Z_LIFEBOAT_EVIDENCE_BOARD.md](Z_LIFEBOAT_EVIDENCE_BOARD.md) |
+| — | Synology C2 Research Charter | [Z_SYNOLOGY_C2_RESEARCH_CHARTER.md](Z_SYNOLOGY_C2_RESEARCH_CHARTER.md) |
 | — | Evidence workspace (B2 · R2 · C2 stub) | [evidence/README.md](evidence/README.md) |
 | — | Key Ceremony one-pager | [Z_LIFEBOAT_KEY_CEREMONY_ONE_PAGER.md](Z_LIFEBOAT_KEY_CEREMONY_ONE_PAGER.md) |
 | — | Stewardship Ceremony (foresight · not today) | [Z_STEWARDSHIP_CEREMONY_FORESIGHT.md](Z_STEWARDSHIP_CEREMONY_FORESIGHT.md) |
