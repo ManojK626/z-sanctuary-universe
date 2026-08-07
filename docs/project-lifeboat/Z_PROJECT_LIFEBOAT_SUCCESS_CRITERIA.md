@@ -46,7 +46,11 @@ Re-read this North Star before Phase advances, provider locks, or Wave 1B naming
 
 > A civilization is not remembered for what it created, but for what it chose to preserve.
 
-This is why Project Lifeboat exists under Era IV — **care**, not competition. Not a Constitution amendment; a Hall posture beside the constitutional works it protects.
+## Enduring line (post–Phase 0)
+
+> Extraordinary technology eventually becomes ordinary. Extraordinary stewardship remains extraordinary.
+
+This is why Project Lifeboat’s durable gift is a **way of deciding**—not a forever vendor.
 
 ---
 

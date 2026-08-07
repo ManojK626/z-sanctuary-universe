@@ -16,6 +16,7 @@ Ensure the Z-Sanctuary Universe can survive hardware failure, cloud-provider cha
 
 **Hall:** *A civilization is not remembered for what it created, but for what it chose to preserve.*  
 **Quote:** *Technology preserves data. Stewardship preserves civilizations.*  
+**Enduring line:** *Extraordinary technology eventually becomes ordinary. Extraordinary stewardship remains extraordinary.*  
 **Deeper mission:** How can humans become better stewards of technology?
 
 ---

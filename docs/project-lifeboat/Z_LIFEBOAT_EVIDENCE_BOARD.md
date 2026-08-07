@@ -50,8 +50,9 @@ PC = builder — not fate master
 3. Hyperscaler / Phase 0b research only under new steward gate  
 4. Assessment / Benchmark remain foresight — no marketing  
 
-**Quote:** *Technology preserves data. Stewardship preserves civilizations.*
+**Quote:** *Technology preserves data. Stewardship preserves civilizations.*  
+**Enduring line:** *Extraordinary technology eventually becomes ordinary. Extraordinary stewardship remains extraordinary.*
 
 ---
 
-_Board · Phase 0 Complete · framework over brand_
+_Board · Phase 0 Complete · framework over brand · stewardship remains extraordinary_

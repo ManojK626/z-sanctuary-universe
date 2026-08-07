@@ -63,9 +63,14 @@ Technologies come and go. Layers 1–2 remain.
 
 ---
 
-## Earned quote
+## Earned quotes
 
 > Technology preserves data. Stewardship preserves civilizations.
+
+> Extraordinary technology eventually becomes ordinary. Extraordinary stewardship remains extraordinary.
+
+The first places technology in service of something larger.  
+The second names why Lifeboat’s durable product is **methodology**, not a fashionable stack.
 
 See [Sister Initiatives & Legacy](Z_ERA_IV_SISTER_INITIATIVES_AND_LEGACY.md).
 
@@ -80,7 +85,7 @@ See [Sister Initiatives & Legacy](Z_ERA_IV_SISTER_INITIATIVES_AND_LEGACY.md).
 📚 Let methodology outlive products.
 ```
 
----
+Technology will become ordinary. Stewardship need not.
 
 ## After Phase 0 core trio (B2 · R2 · C2)
 
