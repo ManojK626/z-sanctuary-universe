@@ -56,7 +56,9 @@ Only then expand (AWS · Azure · GCS · Hetzner · Storj · …)
 
 **Defining question:** *Can you protect the future better than what we already trust?*
 
-**Order:** Protect the principles · let the framework evolve carefully · allow technologies to come and go.
+**Order:** Protect the principles · let the framework evolve carefully · allow technologies to come and go · let methodology outlive products.
+
+**Quote:** *Technology preserves data. Stewardship preserves civilizations.* — [Sister Initiatives](Z_ERA_IV_SISTER_INITIATIVES_AND_LEGACY.md)
 
 ---
 

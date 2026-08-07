@@ -63,7 +63,11 @@ Backblaze B2 sets the bar. Every other provider answers: **Can you beat B2?**
 
 **Three layers:** [Z_PROJECT_LIFEBOAT_THREE_LAYERS.md](Z_PROJECT_LIFEBOAT_THREE_LAYERS.md) — Protect principles · evolve framework carefully · tech comes and goes.
 
-**Commercial maturity:** Stage 1 Internal Steward only — Assessment foresight only · **no marketing**.
+**Sister initiatives:** [Z_ERA_IV_SISTER_INITIATIVES_AND_LEGACY.md](Z_ERA_IV_SISTER_INITIATIVES_AND_LEGACY.md) — Z-Sanctuary · Lifeboat · Stewardship Methodology (knowledge).
+
+**Quote:** *Technology preserves data. Stewardship preserves civilizations.*
+
+**Commercial maturity:** Stage 1 Internal Steward only — Assessment/Benchmark foresight only · **no marketing**.
 
 ---
 
@@ -77,4 +81,4 @@ Backblaze B2 sets the bar. Every other provider answers: **Can you beat B2?**
 
 ---
 
-_Maturity · RESEARCH · Stage 1 · principles > framework > providers_
+_Maturity · RESEARCH · Stage 1 · look back · then continue the trilogy_

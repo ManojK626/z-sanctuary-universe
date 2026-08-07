@@ -31,15 +31,31 @@ Recommendations stay **vendor-neutral**, guided by Lifeboat principles — usefu
 
 ---
 
+## Future form — Stewardship Benchmark (research · not marketing)
+
+After Phase 0 + framework review, a neutral **Stewardship Benchmark** may accompany Assessment foresight:
+
+```text
+Stewardship Benchmark v1
+Principles · Recovery · Migration · Governance
+Evidence · Continuity · Vendor Independence
+```
+
+Never “Buy Provider X.” Only “Here is your current stewardship maturity.”
+
+See also [Sister Initiatives & Legacy](Z_ERA_IV_SISTER_INITIATIVES_AND_LEGACY.md).
+
+---
+
 ## Gate
 
 ```text
 Stage 1 ............. Internal Steward (now)
 Stage 2 ............. Evidence-Proven Framework
-Stage 3 ............. Only then consider Assessment as service
+Stage 3 ............. Only then consider Assessment / Benchmark as shared knowledge
 ```
 
-No Assessment product until the hub framework proves itself.
+No Assessment or Benchmark product until the hub framework proves itself.
 
 ---
 

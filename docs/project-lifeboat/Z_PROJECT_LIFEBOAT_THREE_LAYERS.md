@@ -63,12 +63,21 @@ Technologies come and go. Layers 1–2 remain.
 
 ---
 
+## Earned quote
+
+> Technology preserves data. Stewardship preserves civilizations.
+
+See [Sister Initiatives & Legacy](Z_ERA_IV_SISTER_INITIATIVES_AND_LEGACY.md).
+
+---
+
 ## Standing order (Era IV)
 
 ```text
 🛡️ Protect the principles.
 🌍 Let the framework evolve carefully.
 ⚙️ Allow technologies to come and go.
+📚 Let methodology outlive products.
 ```
 
 ---
@@ -91,4 +100,4 @@ If three very different ecosystems fit the same model, that is evidence the **fr
 
 ---
 
-_Identity · principles > framework > providers_
+_Identity · principles > framework > providers · methodology > products_

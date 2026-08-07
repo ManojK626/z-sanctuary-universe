@@ -31,6 +31,7 @@ Ensure the Z-Sanctuary Universe can survive hardware failure, cloud-provider cha
 | 6 | Disaster Recovery Playbook | [Z_DISASTER_RECOVERY_PLAYBOOK.md](Z_DISASTER_RECOVERY_PLAYBOOK.md) |
 | — | Guiding Principle (Lifeboat law) | [Z_PROJECT_LIFEBOAT_GUIDING_PRINCIPLE.md](Z_PROJECT_LIFEBOAT_GUIDING_PRINCIPLE.md) |
 | — | Three Layers (principles · framework · providers) | [Z_PROJECT_LIFEBOAT_THREE_LAYERS.md](Z_PROJECT_LIFEBOAT_THREE_LAYERS.md) |
+| — | Sister Initiatives & Legacy | [Z_ERA_IV_SISTER_INITIATIVES_AND_LEGACY.md](Z_ERA_IV_SISTER_INITIATIVES_AND_LEGACY.md) |
 | — | Stewardship Assessment (foresight) | [Z_STEWARDSHIP_ASSESSMENT_FORESIGHT.md](Z_STEWARDSHIP_ASSESSMENT_FORESIGHT.md) |
 | — | Evidence Board (live standing) | [Z_LIFEBOAT_EVIDENCE_BOARD.md](Z_LIFEBOAT_EVIDENCE_BOARD.md) |
 | — | Synology C2 Research Charter | [Z_SYNOLOGY_C2_RESEARCH_CHARTER.md](Z_SYNOLOGY_C2_RESEARCH_CHARTER.md) |
