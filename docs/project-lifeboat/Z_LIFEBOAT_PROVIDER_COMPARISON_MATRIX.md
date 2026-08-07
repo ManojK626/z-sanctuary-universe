@@ -156,7 +156,9 @@ GitHub = parallel constitution layer (not bulk object archive).
 | Destination | **Unnamed** |
 | Spend / accounts | Not authorized |
 
-Next: Cloudflare R2 evidence sheet — *Can you beat B2?*
+Next: Synology C2 evidence sheet — *Can you beat B2?* · [Key Ceremony](Z_LIFEBOAT_KEY_CEREMONY_ONE_PAGER.md) (offline fill)
+
+**R2 vs B2 (research):** R2 does **not** dethrone B2 as sole primary; see [evidence/Z_LIFEBOAT_EVIDENCE_CLOUDFLARE_R2.md](evidence/Z_LIFEBOAT_EVIDENCE_CLOUDFLARE_R2.md).
 
 ---
 

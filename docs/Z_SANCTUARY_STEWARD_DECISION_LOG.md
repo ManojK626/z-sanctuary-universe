@@ -6,6 +6,16 @@
 
 ---
 
+## 2026-08-07 (j) — R2 evidence + Key Ceremony + local dry-run outline
+
+**Input:** Brother — do both R2 evidence sheet (vs B2) and key ceremony one-pager for the meantime; genuine Stage 1 tech/process.
+
+**Decision:** Open Cloudflare R2 evidence — **does not beat B2 as sole primary** (wins egress + longevity signal; loses $/TB, Synology, classic Object Lock). Add Key Ceremony one-pager (no secrets in git) + optional local restore dry-run outline. No accounts · no spend · Wave 1B unnamed. Next evidence: Synology C2.
+
+**Receipt:** [evidence/Z_LIFEBOAT_EVIDENCE_CLOUDFLARE_R2.md](project-lifeboat/evidence/Z_LIFEBOAT_EVIDENCE_CLOUDFLARE_R2.md) · [Z_LIFEBOAT_KEY_CEREMONY_ONE_PAGER.md](project-lifeboat/Z_LIFEBOAT_KEY_CEREMONY_ONE_PAGER.md)
+
+---
+
 ## 2026-08-07 (i) — Stewardship Engineering · dual path · Stage 1 only
 
 **Input:** Brother — missing market is Stewardship Engineering (not another AI model); overarching 20-year coherence/recoverability/trust question; five pillars tool-agnostic; three stages Internal→Evidence-Proven→Commercial; dual path Z-Sanctuary (philosophy) + Lifeboat (apply stewardship); board-level stewardship score foresight; keep research/internal/no marketing.
