@@ -1,11 +1,11 @@
 # Phase — Era IV Stewardship Identity Seal
 
-**Status:** ✅ SEALED (architectural identity · not AI identity)  
-**Date:** 2026-08-07  
-**Authority:** AMK-Goku (Brother closing — after Freeze + meta-observations)  
-**Parents:** [Freeze](PHASE_Z_CONSTITUTIONAL_FREEZE_AND_STEWARD_RECOMMENDATIONS_2026_08_07.md) · [Meta-observations](PHASE_Z_STEWARD_META_OBSERVATIONS_POST_FREEZE_2026_08_07.md) · [Settlement](Z_BOOK_B_SETTLEMENT.md)  
+**Status:** ✅ SEALED (architectural identity · not AI identity)
+**Date:** 2026-08-07
+**Authority:** AMK-Goku (Brother closing — after Freeze + meta-observations)
+**Parents:** [Freeze](PHASE_Z_CONSTITUTIONAL_FREEZE_AND_STEWARD_RECOMMENDATIONS_2026_08_07.md) · [Meta-observations](PHASE_Z_STEWARD_META_OBSERVATIONS_POST_FREEZE_2026_08_07.md) · [Settlement](Z_BOOK_B_SETTLEMENT.md)
 
-**Does not:** open Book C/D · amend Reference Editions · authorize Wave 1B/deploy · add a fifth Book  
+**Does not:** open Book C/D · amend Reference Editions · authorize Wave 1B/deploy · add a fifth Book
 
 ---
 
@@ -34,12 +34,12 @@ Filters unnecessary growth. Complements existing constitutional principles **wit
 
 ## Quiet maturity metrics (Era IV)
 
-| Earlier progress looked like | Era IV progress looks like |
-| --- | --- |
-| More documents | Fewer contradictions |
-| More engines | Fewer duplicated concepts |
-| More features | Stronger references · clearer ownership |
-| Expansion velocity | Better preservation · higher confidence |
+| Earlier progress looked like | Era IV progress looks like              |
+| ---------------------------- | --------------------------------------- |
+| More documents               | Fewer contradictions                    |
+| More engines                 | Fewer duplicated concepts               |
+| More features                | Stronger references · clearer ownership |
+| Expansion velocity           | Better preservation · higher confidence |
 
 Quieter metrics signal a maturing system.
 
@@ -57,7 +57,7 @@ Until that need is declared by AMK: Book C remains 🔒.
 
 ## Strength under responsibility
 
-Earlier strength ≈ gaining more power.  
+Earlier strength ≈ gaining more power.
 Era IV strength ≈ remaining true under greater responsibility.
 
 The organism no longer needs to prove it can grow. It needs to prove it can **remain coherent as it grows**. If it does, the Constitution becomes the reason the project can endure.
@@ -72,10 +72,13 @@ Rule ....................... strengthen > complexity
 Metrics .................... quiet maturity (above)
 Book C ..................... constitutional-need only
 Preservation gap ........... Wave 1B still active ops duty
+Preservation program ....... Project Lifeboat (Phase 0 chartered)
 Reference Editions ......... hold
 Constitutional Index ....... foresight only (not now)
 ```
 
+**Program:** [Project Lifeboat](project-lifeboat/README.md) — long-horizon continuity under this seal (not a Book). Seal: [PHASE_Z_PROJECT_LIFEBOAT_CHARTERED_2026_08_07.md](PHASE_Z_PROJECT_LIFEBOAT_CHARTERED_2026_08_07.md).
+
 ---
 
-*Sealed · coherent growth over capability theatre · Book C waits for need, not momentum*
+_Sealed · coherent growth over capability theatre · Book C waits for need, not momentum_

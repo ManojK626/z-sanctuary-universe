@@ -1,0 +1,250 @@
+{
+  "schema": "z_lifeboat_provider_scores_v0",
+  "initiative": "project_lifeboat",
+  "phase": 0,
+  "score_date": "2026-08-07",
+  "status": "provisional_research",
+  "law_note": "Not a purchase order. AMK names Wave 1B destination. Re-verify pricing before spend.",
+  "categories": [
+    "lifetime_cost",
+    "security",
+    "longevity",
+    "vendor_independence",
+    "restore_confidence",
+    "synology_ready",
+    "automation",
+    "governance_fit",
+    "scalability"
+  ],
+  "providers": [
+    {
+      "id": "github",
+      "tier": "S",
+      "role": "constitution_and_source_history",
+      "scores": {
+        "lifetime_cost": 8,
+        "security": 8,
+        "longevity": 9,
+        "vendor_independence": 6,
+        "restore_confidence": 8,
+        "synology_ready": 4,
+        "automation": 7,
+        "governance_fit": 10,
+        "scalability": 7
+      },
+      "composite": 7.4
+    },
+    {
+      "id": "cloudflare_r2",
+      "tier": "S",
+      "role": "independent_object_archive",
+      "scores": {
+        "lifetime_cost": 7,
+        "security": 8,
+        "longevity": 8,
+        "vendor_independence": 8,
+        "restore_confidence": 8,
+        "synology_ready": 6,
+        "automation": 9,
+        "governance_fit": 8,
+        "scalability": 9
+      },
+      "composite": 7.9,
+      "pricing_snapshot_usd_per_gb_month": 0.015,
+      "egress_note": "Free egress; API ops extra"
+    },
+    {
+      "id": "backblaze_b2",
+      "tier": "S",
+      "role": "independent_object_archive",
+      "scores": {
+        "lifetime_cost": 9,
+        "security": 8,
+        "longevity": 8,
+        "vendor_independence": 9,
+        "restore_confidence": 9,
+        "synology_ready": 8,
+        "automation": 9,
+        "governance_fit": 8,
+        "scalability": 9
+      },
+      "composite": 8.6,
+      "pricing_snapshot_usd_per_gb_month": 0.006,
+      "egress_note": "Free up to ~3x storage or via Bandwidth Alliance"
+    },
+    {
+      "id": "wasabi",
+      "tier": "A",
+      "scores": {
+        "lifetime_cost": 8,
+        "security": 7,
+        "longevity": 7,
+        "vendor_independence": 8,
+        "restore_confidence": 8,
+        "synology_ready": 7,
+        "automation": 8,
+        "governance_fit": 7,
+        "scalability": 8
+      },
+      "composite": 7.6
+    },
+    {
+      "id": "synology_c2",
+      "tier": "A",
+      "scores": {
+        "lifetime_cost": 6,
+        "security": 8,
+        "longevity": 7,
+        "vendor_independence": 5,
+        "restore_confidence": 8,
+        "synology_ready": 10,
+        "automation": 9,
+        "governance_fit": 7,
+        "scalability": 7
+      },
+      "composite": 7.4
+    },
+    {
+      "id": "hetzner_object_storage",
+      "tier": "A",
+      "scores": {
+        "lifetime_cost": 8,
+        "security": 7,
+        "longevity": 8,
+        "vendor_independence": 8,
+        "restore_confidence": 8,
+        "synology_ready": 6,
+        "automation": 8,
+        "governance_fit": 7,
+        "scalability": 8
+      },
+      "composite": 7.6
+    },
+    {
+      "id": "idrive_e2",
+      "tier": "A",
+      "scores": {
+        "lifetime_cost": 8,
+        "security": 7,
+        "longevity": 6,
+        "vendor_independence": 8,
+        "restore_confidence": 7,
+        "synology_ready": 6,
+        "automation": 8,
+        "governance_fit": 6,
+        "scalability": 7
+      },
+      "composite": 7.0
+    },
+    {
+      "id": "storj",
+      "tier": "A",
+      "scores": {
+        "lifetime_cost": 8,
+        "security": 8,
+        "longevity": 6,
+        "vendor_independence": 7,
+        "restore_confidence": 6,
+        "synology_ready": 5,
+        "automation": 7,
+        "governance_fit": 6,
+        "scalability": 7
+      },
+      "composite": 6.7
+    },
+    {
+      "id": "aws_s3",
+      "tier": "B",
+      "scores": {
+        "lifetime_cost": 3,
+        "security": 9,
+        "longevity": 10,
+        "vendor_independence": 7,
+        "restore_confidence": 9,
+        "synology_ready": 7,
+        "automation": 9,
+        "governance_fit": 7,
+        "scalability": 10
+      },
+      "composite": 7.9,
+      "note": "High longevity; poor primary TCO for limited-budget stewardship"
+    },
+    {
+      "id": "google_cloud_storage",
+      "tier": "B",
+      "scores": {
+        "lifetime_cost": 3,
+        "security": 9,
+        "longevity": 10,
+        "vendor_independence": 7,
+        "restore_confidence": 9,
+        "synology_ready": 6,
+        "automation": 8,
+        "governance_fit": 7,
+        "scalability": 10
+      },
+      "composite": 7.7
+    },
+    {
+      "id": "azure_blob",
+      "tier": "B",
+      "scores": {
+        "lifetime_cost": 3,
+        "security": 9,
+        "longevity": 10,
+        "vendor_independence": 7,
+        "restore_confidence": 9,
+        "synology_ready": 6,
+        "automation": 8,
+        "governance_fit": 7,
+        "scalability": 10
+      },
+      "composite": 7.7
+    },
+    {
+      "id": "ovhcloud_object_storage",
+      "tier": "B",
+      "scores": {
+        "lifetime_cost": 6,
+        "security": 7,
+        "longevity": 7,
+        "vendor_independence": 7,
+        "restore_confidence": 7,
+        "synology_ready": 5,
+        "automation": 7,
+        "governance_fit": 6,
+        "scalability": 8
+      },
+      "composite": 6.7
+    }
+  ],
+  "phase0_shortlist": {
+    "constitution_layer": "github",
+    "evaluation_order": [
+      "backblaze_b2",
+      "cloudflare_r2",
+      "synology_c2",
+      "hetzner_object_storage",
+      "idrive_e2",
+      "storj",
+      "wasabi",
+      "aws_s3",
+      "google_cloud_storage",
+      "azure_blob",
+      "ovhcloud_object_storage"
+    ],
+    "wave_1b_destination": "unnamed_until_evidence_earns_it",
+    "amk_gate": "Do not name D1/D2/D3 until Phase 0 evidence supports the choice; Cursor must not invent path"
+  },
+  "docs": [
+    "docs/project-lifeboat/README.md",
+    "docs/project-lifeboat/Z_PROJECT_LIFEBOAT_CHARTER.md",
+    "docs/project-lifeboat/Z_PROJECT_LIFEBOAT_SUCCESS_CRITERIA.md",
+    "docs/project-lifeboat/Z_LIFEBOAT_PROVIDER_COMPARISON_MATRIX.md",
+    "docs/project-lifeboat/Z_LIFEBOAT_20_YEAR_COST_PROJECTION.md",
+    "docs/project-lifeboat/Z_SANCTUARY_PRESERVATION_ARCHITECTURE.md",
+    "docs/project-lifeboat/Z_WAVE_1B_DECISION_GUIDE.md",
+    "docs/project-lifeboat/Z_DISASTER_RECOVERY_PLAYBOOK.md",
+    "docs/PHASE_Z_PROJECT_LIFEBOAT_CHARTERED_2026_08_07.md"
+  ]
+}

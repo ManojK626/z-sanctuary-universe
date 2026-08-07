@@ -41,6 +41,8 @@ Architecture teaches how to build.
 Preservation ensures it can still be built again.
 ```
 
+**Program:** [Project Lifeboat](project-lifeboat/README.md) holds Phase 0 research (matrix · cost · architecture · decision guide · DR playbook). It **prepares** Wave 1B; it does **not** replace naming the destination.
+
 **Gate:** AMK must still **name** the independent destination (D1/D2/D3). This receipt does not invent a path.
 
 Until then: hold on copy · do not claim Preservation-complete.

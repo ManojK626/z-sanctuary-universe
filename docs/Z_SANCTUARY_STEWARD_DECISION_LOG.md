@@ -6,6 +6,26 @@
 
 ---
 
+## 2026-08-07 (f) — Lifeboat Steward Board · Phase 0 commit posture
+
+**Input:** Brother Steward Board — commit Phase 0 docs only; no PR yet; add Success Criteria North Star; research order B2→R2→Synology C2→…; do **not** name Wave 1B today (evidence must earn destination); patience aligned with Era IV.
+
+**Decision:** Accept. Commit documents-only on branch. Hold PR until research matures (prefer Phase 0→1→2→3 on one stewardship line over tiny research PRs). Wave 1B unnamed. Book C/D locked. No spend · no accounts · no uploads.
+
+**Receipt:** [Z_PROJECT_LIFEBOAT_SUCCESS_CRITERIA.md](project-lifeboat/Z_PROJECT_LIFEBOAT_SUCCESS_CRITERIA.md) · [PHASE_Z_PROJECT_LIFEBOAT_CHARTERED_2026_08_07.md](PHASE_Z_PROJECT_LIFEBOAT_CHARTERED_2026_08_07.md)
+
+---
+
+## 2026-08-07 (e) — Project Lifeboat chartered
+
+**Input:** Brother — make official *Project Lifeboat* (Z-Sanctuary Preservation & Continuity Initiative, 2026→2050+): Phase 0 research package, provider scoring, architecture (PC demoted · NAS steward · cloud independent · GitHub history), Wave 1B decision guide, DR playbook. Explicitly **not** a Book.
+
+**Decision:** Charter Lifeboat as Era IV stewardship initiative. Phase 0 = evidence only (€0 spend). Research evaluation order starts with Backblaze B2 → Cloudflare R2 → Synology C2 (not a destination lock). Wave 1B destination **not named** until evidence earns it. Book C/D remain 🔒.
+
+**Receipt:** [PHASE_Z_PROJECT_LIFEBOAT_CHARTERED_2026_08_07.md](PHASE_Z_PROJECT_LIFEBOAT_CHARTERED_2026_08_07.md) · [project-lifeboat/README.md](project-lifeboat/README.md)
+
+---
+
 ## 2026-08-07 (d) — Steward Era closing compass
 
 **Input:** Brother Steward Hall close (endure vs build · trustworthiness-after-change compass · Wave 1B as next ops choice · Hold/Complete/Earn mantra).
