@@ -1,10 +1,12 @@
 # Z-Sanctuary Trust Chain & Immutable Blueprint Order
 
-**Status:** ✅ CHARTERED · Order of blueprints locked · Evidence property sealed  
-**Date:** 2026-08-06  
+**Status:** ✅ CHARTERED · **Constitutional Reference Edition** · Order locked · Evidence sealed  
+**Date:** 2026-08-06 (freeze affirmed 2026-08-07)  
 **Authority:** AMK-Goku  
-**Law:** Order matters more than content rush · Vision ≠ verified · Closing Doctrine  
-**Parents:** [Market position](Z_SANCTUARY_AI_OPERATING_ORGANISM_MARKET_POSITION.md) · [Constitution](governance/Z_SANCTUARY_UNIVERSE_CONSTITUTION_V1.md) · [Genesis](Genesis/MASTER_GENESIS_CORE_SPEC.md)
+**Law:** Order matters more than content rush · Vision ≠ verified · Closing Doctrine · Cite-only for Book B  
+**Parents:** [Market position](Z_SANCTUARY_AI_OPERATING_ORGANISM_MARKET_POSITION.md) · [Constitution](governance/Z_SANCTUARY_UNIVERSE_CONSTITUTION_V1.md) · [Genesis](Genesis/MASTER_GENESIS_CORE_SPEC.md) · [Freeze receipt](PHASE_Z_CONSTITUTIONAL_FREEZE_AND_STEWARD_RECOMMENDATIONS_2026_08_07.md)
+
+**Reference Edition rule:** Future books may **cite** this Trust Chain; they must not **reinterpret** Evidence or blueprint order without constitutional review + AMK gate.
 
 ---
 

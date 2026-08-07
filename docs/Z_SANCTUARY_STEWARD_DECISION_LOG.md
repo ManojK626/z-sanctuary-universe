@@ -6,6 +6,16 @@
 
 ---
 
+## 2026-08-07 (a) — Five steward recommendations accepted
+
+**Input:** Brother recommendations (Constitutional Freeze · Preservation · Evidence refresh · Citation culture · Public trust). Explicitly: **no** Book C · **no** Constitution rewrite.
+
+**Decision:** Accept all five as stewardship doctrine. Book A/B treated as **Constitutional Reference Editions**. Cite-only continues. Wave 1B remains highest ops priority when destination is named. Refresh evidence before trusting dashboards.
+
+**Receipt:** [PHASE_Z_CONSTITUTIONAL_FREEZE_AND_STEWARD_RECOMMENDATIONS_2026_08_07.md](PHASE_Z_CONSTITUTIONAL_FREEZE_AND_STEWARD_RECOMMENDATIONS_2026_08_07.md)
+
+---
+
 ## 2026-08-06 (u) — Book B cite-only mode
 
 **Command:** `stay in cite-only mode on Book B.`
@@ -52,7 +62,7 @@
 
 ## 2026-08-06 (p) — Settlement Pass 2 executed
 
-**Decision / command:** `Execute Pass 2.`  
+**Decision / command:** `Execute Pass 2.`
 
 **Result:** CLEAN — Circuit-Dependency Lock · Linguistic Symmetry · Inference Quarantine · Book 0 filters. **No amendments** (Silence). Book C/D remain locked. Pass 3 still required before maturity.
 
@@ -212,4 +222,4 @@
 
 ---
 
-*Decision log · human stewardship authorizes change*
+_Decision log · human stewardship authorizes change_
