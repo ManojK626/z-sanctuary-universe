@@ -60,6 +60,19 @@ Hub dashboard (`dashboard/Html/index-skk-rkpk.html`): **no** `zChronicleFeed` / 
 
 Interpreting Chronicle to adapt agent tone and actions = Pack #2 autopilot class. Decline until Steward Gates exist and AMK opens an explicit charter after Preservation.
 
+### 2026-08-07 — second presentation declined
+
+Proposal (`core/z_awareness.js` · mood inference from Chronicle · dashboard interval · mini-AI tone adapt · optional speechSynthesis · visual/sound extension offer) remains **🔴 BLOCKED**.
+
+| Element | Why blocked |
+| --- | --- |
+| Infer mood/energy/trend from Chronicle | Never-inferred · Book 0 anti-guess |
+| `setInterval` dashboard / speech | Autopilot side effects |
+| Mini-AI agents adapt behaviour from inferred mood | Live autonomy without Steward Gates |
+| Extend with color/sound “mood” | Complexity before Preservation · strengthen>complexity fail |
+
+**Do not create** `core/z_awareness.js`. **Do not** wire hub dashboard. **Do not** prepare visual/sound mood extension.
+
 ---
 
 ## Allowed future micro-shapes (only if AMK re-charters)
