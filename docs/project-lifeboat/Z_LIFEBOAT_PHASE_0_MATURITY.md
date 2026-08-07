@@ -21,8 +21,10 @@ Phase 0
 ✓ Decision Log
 ✓ Master Register
 ✓ Era IV Cross-links
-◐ Evidence sheets (B2 benchmark · R2 challenger · C2 pending)
+◐ Evidence sheets (B2 · R2 · C2 stub) — see Evidence Board
+✓ Evidence Board (primary / secondary / next)
 ✓ Key Ceremony one-pager (template · secrets offline)
+◐ Stewardship Ceremony (foresight only — not today)
 ✓ Local restore dry-run outline (optional)
 Status ................ RESEARCH
 Operational dependency  NONE
@@ -30,13 +32,15 @@ Spend / accounts ...... NONE
 Wave 1B named ......... NO
 ```
 
+**Board:** [Z_LIFEBOAT_EVIDENCE_BOARD.md](Z_LIFEBOAT_EVIDENCE_BOARD.md)
+
 ---
 
 ## Steward assessment (accepted)
 
 Project Lifeboat has crossed from an **idea** into a **governed initiative**.
 
-There is still **no operational dependency** — intentional Era IV stewardship.
+**First stewardship test:** R2 did not win by Cloudflare preference — evidence ranked it secondary. Framework is choosing evidence over familiarity.
 
 ---
 
@@ -44,7 +48,8 @@ There is still **no operational dependency** — intentional Era IV stewardship.
 
 Backblaze B2 sets the bar. Every other provider answers: **Can you beat B2?**
 
-**R2 (2026-08-07):** Does **not** beat B2 as sole primary. Wins egress + longevity signal. See [evidence/Z_LIFEBOAT_EVIDENCE_CLOUDFLARE_R2.md](evidence/Z_LIFEBOAT_EVIDENCE_CLOUDFLARE_R2.md).
+**R2 (2026-08-07):** Does **not** beat B2 as sole primary.  
+**C2:** Next — plus **Appliance Stewardship Score**.
 
 ---
 
@@ -52,7 +57,9 @@ Backblaze B2 sets the bar. Every other provider answers: **Can you beat B2?**
 
 > A civilization is not remembered for what it created, but for what it chose to preserve.
 
-**Commercial maturity:** Stage 1 Internal Steward only — [Stewardship Engineering foresight](Z_STEWARDSHIP_ENGINEERING_DISCIPLINE_FORESIGHT.md) · **no marketing**.
+**Path line:** *We chose this path because it best protects the future—not because it was fashionable, familiar, or convenient.*
+
+**Commercial maturity:** Stage 1 Internal Steward only — **no marketing**.
 
 ---
 
@@ -60,9 +67,9 @@ Backblaze B2 sets the bar. Every other provider answers: **Can you beat B2?**
 
 1. AMK fills [Key Ceremony](Z_LIFEBOAT_KEY_CEREMONY_ONE_PAGER.md) **offline**  
 2. Optional: [local restore dry-run](Z_LIFEBOAT_LOCAL_RESTORE_DRY_RUN_OUTLINE.md)  
-3. Open Synology C2 evidence sheet  
+3. Fill [Synology C2 evidence](evidence/Z_LIFEBOAT_EVIDENCE_SYNOLOGY_C2.md) + Appliance Stewardship  
 4. Continue evaluation order without naming Wave 1B  
 
 ---
 
-_Maturity · RESEARCH · Stage 1 · care before binding_
+_Maturity · RESEARCH · Stage 1 · evidence over preference_

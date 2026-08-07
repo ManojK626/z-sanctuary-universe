@@ -29,8 +29,10 @@ Ensure the Z-Sanctuary Universe can survive hardware failure, cloud-provider cha
 | 4 | Preservation Architecture | [Z_SANCTUARY_PRESERVATION_ARCHITECTURE.md](Z_SANCTUARY_PRESERVATION_ARCHITECTURE.md) |
 | 5 | Wave 1B Decision Guide | [Z_WAVE_1B_DECISION_GUIDE.md](Z_WAVE_1B_DECISION_GUIDE.md) |
 | 6 | Disaster Recovery Playbook | [Z_DISASTER_RECOVERY_PLAYBOOK.md](Z_DISASTER_RECOVERY_PLAYBOOK.md) |
-| — | Evidence workspace (B2 + R2) | [evidence/README.md](evidence/README.md) |
+| — | Evidence Board (live standing) | [Z_LIFEBOAT_EVIDENCE_BOARD.md](Z_LIFEBOAT_EVIDENCE_BOARD.md) |
+| — | Evidence workspace (B2 · R2 · C2 stub) | [evidence/README.md](evidence/README.md) |
 | — | Key Ceremony one-pager | [Z_LIFEBOAT_KEY_CEREMONY_ONE_PAGER.md](Z_LIFEBOAT_KEY_CEREMONY_ONE_PAGER.md) |
+| — | Stewardship Ceremony (foresight · not today) | [Z_STEWARDSHIP_CEREMONY_FORESIGHT.md](Z_STEWARDSHIP_CEREMONY_FORESIGHT.md) |
 | — | Local restore dry-run outline | [Z_LIFEBOAT_LOCAL_RESTORE_DRY_RUN_OUTLINE.md](Z_LIFEBOAT_LOCAL_RESTORE_DRY_RUN_OUTLINE.md) |
 | — | Organizational stewardship vision (foresight) | [Z_PROJECT_LIFEBOAT_ORGANIZATIONAL_STEWARDSHIP_VISION.md](Z_PROJECT_LIFEBOAT_ORGANIZATIONAL_STEWARDSHIP_VISION.md) |
 | — | Stewardship Engineering (discipline foresight) | [Z_STEWARDSHIP_ENGINEERING_DISCIPLINE_FORESIGHT.md](Z_STEWARDSHIP_ENGINEERING_DISCIPLINE_FORESIGHT.md) |

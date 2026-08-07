@@ -30,7 +30,16 @@ Lifetime Cost · Security · Longevity · Vendor Independence · Restore Confide
 
 **10/10** means: open standards · S3 compatibility · standard/client encryption · easy export · minimal vendor lock-in.
 
-**Composite** = arithmetic mean of the **ten** categories (rounded to 1 decimal).
+**Appliance Stewardship Score** (NAS-class / Synology C2):
+
+> How well does this provider work as a long-term companion to a Synology NAS?
+
+Onboarding · maintenance · restore · automation · health monitoring · migration — not merely “does it connect?”  
+Recorded on C2 evidence sheets; not averaged into the ten-category composite unless later promoted.
+
+**Composite** = arithmetic mean of the **ten** core categories (rounded to 1 decimal).
+
+**Evidence Board:** [Z_LIFEBOAT_EVIDENCE_BOARD.md](Z_LIFEBOAT_EVIDENCE_BOARD.md) — B2 primary candidate · R2 secondary · C2 next.
 
 ---
 

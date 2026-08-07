@@ -6,6 +6,16 @@
 
 ---
 
+## 2026-08-07 (k) — Evidence Board · first stewardship test · C2 Appliance Score
+
+**Input:** Brother — Lifeboat passed first stewardship test (R2 did not win by preference); Evidence Board B2 primary / R2 secondary / C2 next; keep “does not beat B2 as sole primary” wording; Key Ceremony → Stewardship Ceremony foresight later; affirm Recovery > Backup; add **Appliance Stewardship Score** for C2; framework must outlive vendors.
+
+**Decision:** Seal Evidence Board standing. Open C2 evidence stub with Appliance Stewardship. Record Stewardship Ceremony foresight (not today). No spend · no Wave 1B naming · Stage 1 continues.
+
+**Receipt:** [Z_LIFEBOAT_EVIDENCE_BOARD.md](project-lifeboat/Z_LIFEBOAT_EVIDENCE_BOARD.md) · [evidence/Z_LIFEBOAT_EVIDENCE_SYNOLOGY_C2.md](project-lifeboat/evidence/Z_LIFEBOAT_EVIDENCE_SYNOLOGY_C2.md)
+
+---
+
 ## 2026-08-07 (j) — R2 evidence + Key Ceremony + local dry-run outline
 
 **Input:** Brother — do both R2 evidence sheet (vs B2) and key ceremony one-pager for the meantime; genuine Stage 1 tech/process.

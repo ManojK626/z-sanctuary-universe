@@ -103,6 +103,25 @@
 
 ---
 
+## 7. Appliance Stewardship Score (NAS-class providers)
+
+*Required for Synology C2 and similar appliance-tied clouds. Optional N/A for pure object stores (B2/R2).*
+
+**Question:** How well does this provider work as a **long-term companion to a Synology NAS** — not merely “does it connect?”
+
+| Dimension | Evidence |
+| --- | --- |
+| Onboarding | |
+| Maintenance | |
+| Restore workflows | |
+| Automation | |
+| Health monitoring | |
+| Migration (leave ecosystem) | |
+
+**Appliance Stewardship Score (0–10):**
+
+---
+
 ## Beat-B2 verdict (fill after B2 benchmark sheet)
 
 | Dimension | Better / Equal / Worse than B2 | Why |
@@ -113,8 +132,11 @@
 | Recovery | | |
 | Steward Exit | | |
 | Synology | | |
+| Appliance Stewardship (if applicable) | | |
 
 **Overall:** Does this provider beat B2 for Lifeboat? **Yes / No / Partial** — reason:
+
+**Wording law:** Prefer “based on current evidence” — not “failed forever” or “wins forever.”
 
 ---
 

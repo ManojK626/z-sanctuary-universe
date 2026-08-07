@@ -5,6 +5,8 @@
 **Authority:** AMK-Goku (human steward)  
 **Parents:** [Success Criteria](Z_PROJECT_LIFEBOAT_SUCCESS_CRITERIA.md) · [DR Playbook](Z_DISASTER_RECOVERY_PLAYBOOK.md) · [Architecture](Z_SANCTUARY_PRESERVATION_ARCHITECTURE.md)
 
+**Later (not today):** A fuller [Stewardship Ceremony](Z_STEWARDSHIP_CEREMONY_FORESIGHT.md) may wrap identity · recovery contacts · receipts around this key step.
+
 **Law:** Encryption keys / repository passwords / cloud API secrets **must not** appear in git, chat logs, dashboards, or this file’s filled copy if that copy is synced to the hub. Keep the **completed** ceremony sheet offline (paper sealed envelope, password manager vault, or air-gapped note — AMK chooses).
 
 ---
