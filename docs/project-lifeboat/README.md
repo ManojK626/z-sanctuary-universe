@@ -31,12 +31,13 @@ Ensure the Z-Sanctuary Universe can survive hardware failure, cloud-provider cha
 | 6 | Disaster Recovery Playbook | [Z_DISASTER_RECOVERY_PLAYBOOK.md](Z_DISASTER_RECOVERY_PLAYBOOK.md) |
 | — | Evidence workspace (B2 benchmark first) | [evidence/README.md](evidence/README.md) |
 | — | Organizational stewardship vision (foresight) | [Z_PROJECT_LIFEBOAT_ORGANIZATIONAL_STEWARDSHIP_VISION.md](Z_PROJECT_LIFEBOAT_ORGANIZATIONAL_STEWARDSHIP_VISION.md) |
+| — | Stewardship Engineering (discipline foresight) | [Z_STEWARDSHIP_ENGINEERING_DISCIPLINE_FORESIGHT.md](Z_STEWARDSHIP_ENGINEERING_DISCIPLINE_FORESIGHT.md) |
 
 Machine-readable scores (provisional): `data/z_lifeboat_provider_scores_v0.json`
 
 **Benchmark:** Backblaze B2 — every other provider answers *Can you beat B2?*
 
-**Product foresight:** Internal proof first · **no marketing yet** · Z-Sanctuary stays separate from any future Lifeboat service.
+**Product foresight:** Stage 1 Internal Steward only · **no marketing** · Z-Sanctuary (philosophy) ≠ Lifeboat service (if ever).
 
 ---
 

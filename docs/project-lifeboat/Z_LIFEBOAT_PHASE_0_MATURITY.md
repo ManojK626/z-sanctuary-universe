@@ -56,17 +56,17 @@ Objective comparison starts from that question. See [evidence/Z_LIFEBOAT_EVIDENC
 
 Recorded beside Success Criteria / Hall posture — not a Constitution amendment.
 
-**Product foresight:** Any future “offer as a service” path stays **gated** — [Organizational Stewardship Vision](Z_PROJECT_LIFEBOAT_ORGANIZATIONAL_STEWARDSHIP_VISION.md) · internal proof first · **no marketing yet**.
+**Commercial maturity:** Stage 1 Internal Steward only — [Stewardship Engineering foresight](Z_STEWARDSHIP_ENGINEERING_DISCIPLINE_FORESIGHT.md) · Stage 2/3 gated · **no marketing**.
 
 ---
 
 ## Next research steps
 
-1. Complete B2 evidence gaps (same-day pricing/compliance verify before spend)  
-2. Open R2 evidence sheet against the B2 benchmark  
-3. Open Synology C2 (NAS-relevant)  
-4. Continue evaluation order without naming Wave 1B  
+1. Complete B2 evidence gaps (same-day pricing/compliance verify before spend)
+2. Open R2 evidence sheet against the B2 benchmark
+3. Open Synology C2 (NAS-relevant)
+4. Continue evaluation order without naming Wave 1B
 
 ---
 
-_Maturity · RESEARCH · care before binding_
+_Maturity · RESEARCH · Stage 1 · care before binding_
