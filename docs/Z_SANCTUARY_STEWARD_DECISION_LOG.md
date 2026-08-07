@@ -6,6 +6,16 @@
 
 ---
 
+## 2026-08-07 (d) — Steward Era closing compass
+
+**Input:** Brother Steward Hall close (endure vs build · trustworthiness-after-change compass · Wave 1B as next ops choice · Hold/Complete/Earn mantra).
+
+**Decision:** Seal compass principle (not a Book). Prefer Wave 1B over new design when destination is named. Mantra: Hold Constitution · Complete Preservation · Let future Books earn their place. Destination still **AMK-named** — not invented here.
+
+**Receipt:** [PHASE_Z_STEWARD_ERA_CLOSING_COMPASS_2026_08_07.md](PHASE_Z_STEWARD_ERA_CLOSING_COMPASS_2026_08_07.md)
+
+---
+
 ## 2026-08-07 (c) — Era IV Stewardship Identity sealed
 
 **Input:** Brother closing (four eras · strengthen>complexity rule · quiet metrics · Book C need-only trigger · coherence under growth).
