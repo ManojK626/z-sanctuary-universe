@@ -6,6 +6,16 @@
 
 ---
 
+## 2026-08-07 (b) — Steward meta-observations accepted
+
+**Input:** Brother meta-observations (threshold · drift risk · Preservation gap · anti-document-bloat · Version 10 · Constitutional Index foresight).
+
+**Decision:** Accept as stewardship doctrine. Primary risk = **architectural drift**. Primary ops gap = **Wave 1B Preservation**. Constitutional Index = foresight only (**not now**). Book C/D remain 🔒. Reference Editions unchanged.
+
+**Receipt:** [PHASE_Z_STEWARD_META_OBSERVATIONS_POST_FREEZE_2026_08_07.md](PHASE_Z_STEWARD_META_OBSERVATIONS_POST_FREEZE_2026_08_07.md)
+
+---
+
 ## 2026-08-07 (a) — Five steward recommendations accepted
 
 **Input:** Brother recommendations (Constitutional Freeze · Preservation · Evidence refresh · Citation culture · Public trust). Explicitly: **no** Book C · **no** Constitution rewrite.
