@@ -68,6 +68,16 @@
 
 ---
 
+## 2026-08-07 (g) — Chronicle + Branch Bridge upgrade quarantined
+
+**Input:** Z-Chronicle + Dashboard Integration (Z-Branch Bridge · AutoBranch/AutoMerge · mood · live feed) + offer Z-AI Awareness Layer.
+
+**Decision:** **Reject** as next build. **No auto-merge.** Do not wire hub dashboard. Do not expand save-hook “nerve.” Existing `core/z_*` stubs = foresight only — not production Automerge. Awareness Layer **not** prepared.
+
+**Receipt:** [PHASE_Z_CHRONICLE_BRANCH_BRIDGE_UPGRADE_CHARTER_2026_08_07.md](PHASE_Z_CHRONICLE_BRANCH_BRIDGE_UPGRADE_CHARTER_2026_08_07.md)
+
+---
+
 ## 2026-08-07 (f) — Enhancement Pack #2 quarantined
 
 **Input:** Adaptive AI Learning & Planning Suite (Memory · Pattern · Planner · Reflector · Commander) + offer Pack #3.
