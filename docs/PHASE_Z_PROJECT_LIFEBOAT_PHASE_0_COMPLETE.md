@@ -1,12 +1,23 @@
 # Phase — Project Lifeboat Phase 0 Complete
 
-**Status:** ✅ PHASE 0 COMPLETE (Evidence Framework Proven · Stewardship Framework Stable v0)  
+**Status:** ✅ PHASE 0 COMPLETE · **REFERENCE EDITION**  
 **Date:** 2026-08-07  
 **Authority:** AMK-Goku (Steward Board path)  
 **Gate receipt:** [Z_FRAMEWORK_REVIEW_1_POST_TRIO.md](project-lifeboat/Z_FRAMEWORK_REVIEW_1_POST_TRIO.md)  
-**Parents:** [Charter](project-lifeboat/Z_PROJECT_LIFEBOAT_CHARTER.md) · [Guiding Principle](project-lifeboat/Z_PROJECT_LIFEBOAT_GUIDING_PRINCIPLE.md) · [FR0](project-lifeboat/Z_FRAMEWORK_REVIEW_0_PRE_C2.md)
+**Reference Edition:** [project-lifeboat/Z_PROJECT_LIFEBOAT_PHASE_0_REFERENCE_EDITION.md](project-lifeboat/Z_PROJECT_LIFEBOAT_PHASE_0_REFERENCE_EDITION.md)  
+**Parents:** [Charter](project-lifeboat/Z_PROJECT_LIFEBOAT_CHARTER.md) · [Guiding Principle](project-lifeboat/Z_PROJECT_LIFEBOAT_GUIDING_PRINCIPLE.md)
 
-**Does not:** name Wave 1B · authorize spend · create accounts · upload · market · open Book C/D · flip Preservation-complete  
+**Does not:** name Wave 1B · authorize spend · create accounts · upload · market · open Book C/D · flip Preservation-complete · reopen Phase 0 for polishing  
+
+---
+
+## Final archive line
+
+> Phase 0 succeeded not because it chose the right technology, but because it ensured future stewards could continue choosing wisely after today's technology had changed.
+
+**Legacy:** *We did not seek certainty. We built a disciplined way to respond when certainty changes.*  
+**Doctrine:** *Extraordinary technology eventually becomes ordinary. Extraordinary stewardship remains extraordinary.*  
+**Axiom:** *Stewardship is the discipline of making tomorrow's decisions understandable to those who were not here today.*
 
 ---
 
@@ -15,22 +26,18 @@
 | Deliverable | Status |
 | --- | --- |
 | Charter · Success Criteria · Guiding Principles · Three Layers | ✅ |
-| Provider matrix · cost projection · architecture · Wave 1B guide · DR playbook | ✅ |
-| B2 · R2 · C2 evidence trilogy (draft) | ✅ |
-| Framework Review 0 (Pre-C2) | ✅ PASS |
-| Framework Review 1 (Post-Trio) | ✅ PASS |
+| Matrix · cost · architecture · Wave 1B guide · DR playbook | ✅ |
+| B2 · R2 · C2 evidence trilogy | ✅ |
+| FR0 · FR1 | ✅ PASS |
 | Evidence Framework Proven | ✅ |
-| Stewardship Framework Stable (v0) | ✅ |
+| Stewardship Framework Stable v0 | ✅ |
+| Reference Edition | ✅ |
 
 ---
 
-## Board standing (current evidence)
+## Board (current evidence)
 
-| Role | Ecosystem |
-| --- | --- |
-| Independent primary candidate | Backblaze B2 |
-| Secondary / exit | Cloudflare R2 |
-| NAS companion (optional) | Synology C2 — never sole off-site |
+B2 = independent primary candidate · R2 = secondary/exit · C2 = NAS companion (never sole)
 
 ---
 
@@ -39,9 +46,8 @@
 ```text
 Wave 1B named ..................... NO
 Accounts / spend / upload ......... NO
-Preservation-complete claim ....... NO
-Commercial Assessment / Benchmark . foresight only
-Stage .............................. still 1 Internal Steward
+Preservation-complete ............. NO
+Phase 0 polish reopen ............. NO — Reference Edition
 ```
 
 ---
@@ -50,11 +56,13 @@ Stage .............................. still 1 Internal Steward
 
 ```text
 🛡️ Protect the principles.
-🌍 Let the framework evolve carefully.
-⚙️ Allow technologies to come and go.
-📚 Let methodology outlive products.
+📜 Trust the evidence.
+⚙️ Let the future judge the technology.
+📚 Let Phase 0 rest.
 ```
+
+When life aligns: Key Ceremony · local restore · Wave 1B earned by evidence — not urgency.
 
 ---
 
-_Phase 0 Complete · confidence in the framework · not in a fashion_
+_Reference Edition · quiet strength of Era IV_
