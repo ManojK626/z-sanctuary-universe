@@ -13,11 +13,29 @@
 
 > Every preservation decision shall be evidence-led, recovery-tested, migration-aware, and steward-reviewed.
 
-### Framework law (fourth principle)
+### Framework law
 
 > Every preservation framework shall outlive the technologies it evaluates.
 
-Together: Layer 1 **Principles** — immutable. Names of vendors are Layer 3 — replaceable. See [Three Layers](Z_PROJECT_LIFEBOAT_THREE_LAYERS.md).
+### Steward's Axiom (guiding · not Book law)
+
+> Stewardship is the discipline of making tomorrow's decisions understandable to those who were not here today.
+
+### Era IV doctrine (Lifeboat Hall)
+
+> Extraordinary technology eventually becomes ordinary. Extraordinary stewardship remains extraordinary.
+
+Together: Layer 1 **Principles**. See [Three Layers](Z_PROJECT_LIFEBOAT_THREE_LAYERS.md) · [Phase 0 Reference Edition](Z_PROJECT_LIFEBOAT_PHASE_0_REFERENCE_EDITION.md).
+
+---
+
+## The Lifeboat Cycle
+
+```text
+Observe → Research → Evaluate → Decide → Validate → Preserve → Review → Repeat
+```
+
+Vendorless — so it survives technological change.
 
 ---
 
@@ -72,11 +90,13 @@ It is a **repeatable framework** that can evaluate any preservation ecosystem �
 
 ```text
 Books A / B ............. unchanged (cite-only)
-Lifeboat principles ..... both sentences sealed
+Lifeboat Phase 0 ........ REFERENCE EDITION (cite · rest)
+Lifeboat principles ..... sealed (decision · framework · axiom · doctrine)
 Wave 1B ................. still unnamed
 Marketing / Assessment .. foresight only — not launched
 ```
 
 ---
 
-_Hall: We chose this path because it best protects the future—not because it was fashionable, familiar, or convenient._
+_Hall: We chose this path because it best protects the future—not because it was fashionable, familiar, or convenient._  
+_Reference Edition · do not polish · let it rest_

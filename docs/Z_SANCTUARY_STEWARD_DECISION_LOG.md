@@ -6,6 +6,16 @@
 
 ---
 
+## 2026-08-07 (r) — Phase 0 Reference Edition · rest
+
+**Input:** Brother closing — ff06e44/08209b5 define philosophy; Stewardship Decision Framework legacy (*respond when certainty changes*); Lifeboat Cycle (vendorless); Steward's Axiom (tomorrow's decisions understandable); Era IV three ideas; final archive line; **let Phase 0 rest** like Books A/B — no polishing; Key Ceremony / restore / Wave 1B later by evidence not urgency.
+
+**Decision:** Seal Phase 0 as **Reference Edition**. Cite-only. No reopen for polish. Axiom + Cycle + archive line recorded. Stage 1 ops wait for life/resources alignment.
+
+**Receipt:** [Z_PROJECT_LIFEBOAT_PHASE_0_REFERENCE_EDITION.md](project-lifeboat/Z_PROJECT_LIFEBOAT_PHASE_0_REFERENCE_EDITION.md)
+
+---
+
 ## 2026-08-07 (q) — Enduring line sealed
 
 **Input:** Brother — after months of work: *Extraordinary technology eventually becomes ordinary. Extraordinary stewardship remains extraordinary.*
