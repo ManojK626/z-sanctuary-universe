@@ -97,18 +97,22 @@
       "id": "synology_c2",
       "tier": "A",
       "scores": {
-        "lifetime_cost": 6,
-        "security": 8,
+        "lifetime_cost": 5,
+        "security": 7,
         "longevity": 7,
-        "vendor_independence": 5,
-        "restore_confidence": 8,
+        "vendor_independence": 4,
+        "restore_confidence": 7,
         "synology_ready": 10,
         "automation": 9,
-        "governance_fit": 7,
+        "governance_fit": 6,
         "scalability": 7,
-        "steward_exit": 5
+        "steward_exit": 4
       },
-      "composite": 7.2
+      "composite": 6.6,
+      "appliance_stewardship": 9,
+      "board_role": "nas_companion_not_primary",
+      "beat_b2_primary": false,
+      "beat_b2_companion": "partial_yes"
     },
     {
       "id": "hetzner_object_storage",
@@ -279,5 +283,13 @@
     "provider_id": "backblaze_b2",
     "rule": "Can you beat B2?",
     "evidence_doc": "docs/project-lifeboat/evidence/Z_LIFEBOAT_EVIDENCE_BACKBLAZE_B2.md"
-  }
+  },
+  "framework_review_0": {
+    "status": "PASS",
+    "date": "2026-08-07",
+    "doc": "docs/project-lifeboat/Z_FRAMEWORK_REVIEW_0_PRE_C2.md"
+  },
+  "trilogy_draft_complete": true,
+  "phase0_complete": false,
+  "phase0_complete_gate": "post_trio_framework_review"
 }

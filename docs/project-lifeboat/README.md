@@ -34,6 +34,7 @@ Ensure the Z-Sanctuary Universe can survive hardware failure, cloud-provider cha
 | — | Sister Initiatives & Legacy | [Z_ERA_IV_SISTER_INITIATIVES_AND_LEGACY.md](Z_ERA_IV_SISTER_INITIATIVES_AND_LEGACY.md) |
 | — | Stewardship Assessment (foresight) | [Z_STEWARDSHIP_ASSESSMENT_FORESIGHT.md](Z_STEWARDSHIP_ASSESSMENT_FORESIGHT.md) |
 | — | Evidence Board (live standing) | [Z_LIFEBOAT_EVIDENCE_BOARD.md](Z_LIFEBOAT_EVIDENCE_BOARD.md) |
+| — | Framework Review 0 (Pre-C2) | [Z_FRAMEWORK_REVIEW_0_PRE_C2.md](Z_FRAMEWORK_REVIEW_0_PRE_C2.md) |
 | — | Synology C2 Research Charter | [Z_SYNOLOGY_C2_RESEARCH_CHARTER.md](Z_SYNOLOGY_C2_RESEARCH_CHARTER.md) |
 | — | Evidence workspace (B2 · R2 · C2 stub) | [evidence/README.md](evidence/README.md) |
 | — | Key Ceremony one-pager | [Z_LIFEBOAT_KEY_CEREMONY_ONE_PAGER.md](Z_LIFEBOAT_KEY_CEREMONY_ONE_PAGER.md) |

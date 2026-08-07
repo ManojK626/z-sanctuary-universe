@@ -6,6 +6,16 @@
 
 ---
 
+## 2026-08-07 (o) — Framework Review 0 PASS · C2 evidence draft · trilogy stress-test
+
+**Input:** Brother — pause was right; Pre-C2 Framework Review 0 (five questions); C2 as framework stress-test (three philosophies); Phase 0 ends at framework confidence not C2 alone; humans-as-better-stewards observation; fill C2 under charter when ready.
+
+**Decision:** Seal Framework Review 0 ✅ PASS. Fill C2 evidence draft — companion seat Yes (Partial); primary archive No; Steward Exit 4; Appliance Stewardship 9. Core trilogy drafts complete. Next steward gate: optional post-trio Framework Review for Phase 0 Complete. Wave 1B unnamed. No spend.
+
+**Receipt:** [Z_FRAMEWORK_REVIEW_0_PRE_C2.md](project-lifeboat/Z_FRAMEWORK_REVIEW_0_PRE_C2.md) · [evidence/Z_LIFEBOAT_EVIDENCE_SYNOLOGY_C2.md](project-lifeboat/evidence/Z_LIFEBOAT_EVIDENCE_SYNOLOGY_C2.md)
+
+---
+
 ## 2026-08-07 (n) — Sister initiatives · pause · Stewardship Methodology emerging
 
 **Input:** Brother — pause and look back; abstraction from “which cloud” to generational preservation decisions; three sisters (Z-Sanctuary · Lifeboat · Stewardship Methodology as knowledge); way-of-thinking legacy; Vision→…→Legacy coherence pattern; quote *Technology preserves data. Stewardship preserves civilizations.*; Stewardship Benchmark foresight (research not marketing); keep B2→R2→C2 → Framework Review → then expand.

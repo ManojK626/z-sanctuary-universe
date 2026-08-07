@@ -77,6 +77,14 @@ Technology is not diminished — it is placed in service of something larger.
 
 ---
 
+Now we're asking:
+
+> How can humans become better stewards of technology?
+
+That, to Era IV, is the deeper mission. Technology evolves fast; stewardship keeps evolution meaningful across generations.
+
+---
+
 ## Standing recommendation (unchanged)
 
 ```text
@@ -86,7 +94,7 @@ Technology is not diminished — it is placed in service of something larger.
 🟢 Only then expand to additional ecosystems
 ```
 
----
+**Update:** Trilogy drafts complete · Framework Review 0 (pre-C2) PASS · post-trio Framework Review still the Phase 0 Complete gate.
 
 ## Future (not now) — Stewardship Benchmark
 

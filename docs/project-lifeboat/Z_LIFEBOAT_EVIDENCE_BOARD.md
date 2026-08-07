@@ -1,10 +1,12 @@
 # Project Lifeboat — Evidence Board (Phase 0)
 
-**Status:** RESEARCH · evidence-driven · not a purchase order
-**Updated:** 2026-08-07
-**Parents:** [Maturity](Z_LIFEBOAT_PHASE_0_MATURITY.md) · [evidence/](evidence/README.md)
+**Status:** RESEARCH · evidence-driven · not a purchase order  
+**Updated:** 2026-08-07  
+**Parents:** [Maturity](Z_LIFEBOAT_PHASE_0_MATURITY.md) · [evidence/](evidence/README.md) · [Framework Review 0](Z_FRAMEWORK_REVIEW_0_PRE_C2.md)
 
-**First stewardship test passed:** R2 did **not** automatically win because Cloudflare is familiar. Evidence ranked preference down. That is the discipline.
+**First stewardship test:** R2 did not win by Cloudflare preference.  
+**Pre-C2 checkpoint:** Framework Review 0 ✅ PASS.  
+**C2 stress-test:** Companion seat earned; **not** sole primary archive.
 
 ---
 
@@ -12,67 +14,49 @@
 
 | Rank | Provider | Position | Steward view |
 | --- | --- | --- | --- |
-| 1 | Backblaze B2 | Benchmark | Best **overall primary archive candidate** on current evidence |
-| 2 | Cloudflare R2 | Strong secondary | Excellent **exit / egress / ecosystem** layer — not enough evidence to replace B2 as sole primary |
-| 3 | Synology C2 | Next research | Completes the future **NAS stewardship** story |
+| 1 | Backblaze B2 | Benchmark / primary archive candidate | Best overall **independent** primary on current evidence |
+| 2 | Cloudflare R2 | Strong secondary / exit layer | Egress + longevity signal; not sole primary |
+| 3 | Synology C2 | **NAS companion** (not primary rival) | Highest Appliance Stewardship; weak Steward Exit — optional convenience beside B2-class off-site |
 
-Wording law:
-
-- Not “R2 failed.”
-- Not “B2 wins forever.”
-- Yes: **Based on current evidence** — room for future data.
+Wording law: **Based on current evidence** — not forever · not failed.
 
 ---
 
-## What we are really asking
+## Trilogy philosophies (framework stress-test)
 
-Not only: *Which cloud is cheapest?* or *Which backup is fastest?*
+| Ecosystem | Philosophy |
+| --- | --- |
+| B2 | Specialist cloud backup / object store |
+| R2 | Modern cloud object platform |
+| C2 | Integrated hardware + cloud |
 
-But:
-
-> Which preservation ecosystem best supports **stewardship over decades**?
-
-Cost · governance · recovery · exit · longevity · operational sustainability — closer to how a museum or national archive thinks.
+Fair evaluation of all three → framework robustness signal.
 
 ---
 
-## Framework endurance
+## Phase 0 end condition
 
 ```text
-Core trio (B2 · R2 · C2)
+B2 ✓  →  R2 ✓  →  C2 ✓ (draft)
         ↓
-Framework review — Has the model become stable?
+Framework Review (post-trio)   ← Phase 0 completes here
         ↓
-Evidence Framework Proven → Stewardship Framework Stable
-        ↓
-Only then expand (AWS · Azure · GCS · Hetzner · Storj · …)
+Phase 0 Complete
 ```
 
-**Guiding principles:** [Z_PROJECT_LIFEBOAT_GUIDING_PRINCIPLE.md](Z_PROJECT_LIFEBOAT_GUIDING_PRINCIPLE.md)  
-**Three layers:** [Z_PROJECT_LIFEBOAT_THREE_LAYERS.md](Z_PROJECT_LIFEBOAT_THREE_LAYERS.md)
-
-> Every preservation decision shall be evidence-led, recovery-tested, migration-aware, and steward-reviewed.  
-> Every preservation framework shall outlive the technologies it evaluates.
-
-**Defining question:** *Can you protect the future better than what we already trust?*
-
-**Order:** Protect the principles · let the framework evolve carefully · allow technologies to come and go · let methodology outlive products.
-
-**Quote:** *Technology preserves data. Stewardship preserves civilizations.* — [Sister Initiatives](Z_ERA_IV_SISTER_INITIATIVES_AND_LEGACY.md)
+Phase 0 does **not** end when C2 is filled.  
+It ends with **confidence in the framework**.
 
 ---
 
-## Standing
+## Next
 
-```text
-Wave 1B ............. unnamed
-Spend / accounts .... none
-Marketing ........... none
-Stage ............... 1 Internal Steward
-C2 research ......... chartered
-After C2 fill ....... framework review before more providers
-```
+1. Optional: post-trio Framework Review (formal) when steward ready  
+2. Key Ceremony offline fill · local restore dry-run  
+3. Wave 1B still **unnamed** until evidence earns destination  
+
+**Quote:** *Technology preserves data. Stewardship preserves civilizations.*
 
 ---
 
-_Hall: We chose this path because it best protects the future—not because it was fashionable, familiar, or convenient._
+_Board · framework over brand · humans better stewards of technology_
