@@ -68,6 +68,16 @@
 
 ---
 
+## 2026-08-07 (e) — Enhancement Pack #1 quarantined
+
+**Input:** Brain-stem pack (Watcher · Healer · Teacher · Artist · Archivist) + ask A vs B next.
+
+**Decision:** **Do not** wire into hub `index.html` / `/core`. Quarantine as foresight. Healer + browser `fs` Archivist = 🔴 BLOCKED. Neither path A (AI learning) nor B (Chronicle AV) — prefer Wave 1B / Hold under Era IV.
+
+**Receipt:** [PHASE_Z_ENHANCEMENT_PACK_1_BRAIN_STEM_CHARTER_2026_08_07.md](PHASE_Z_ENHANCEMENT_PACK_1_BRAIN_STEM_CHARTER_2026_08_07.md)
+
+---
+
 ## 2026-08-07 (d) — Steward Era closing compass
 
 **Input:** Brother Steward Hall close (endure vs build · trustworthiness-after-change compass · Wave 1B as next ops choice · Hold/Complete/Earn mantra).
