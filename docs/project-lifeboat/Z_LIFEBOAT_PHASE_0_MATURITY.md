@@ -59,9 +59,11 @@ Backblaze B2 sets the bar. Every other provider answers: **Can you beat B2?**
 
 **Path line:** *We chose this path because it best protects the future—not because it was fashionable, familiar, or convenient.*
 
-**Guiding principle:** [Z_PROJECT_LIFEBOAT_GUIDING_PRINCIPLE.md](Z_PROJECT_LIFEBOAT_GUIDING_PRINCIPLE.md) — evidence-led · recovery-tested · migration-aware · steward-reviewed.
+**Guiding principles:** [Z_PROJECT_LIFEBOAT_GUIDING_PRINCIPLE.md](Z_PROJECT_LIFEBOAT_GUIDING_PRINCIPLE.md) — decision law + *framework shall outlive technologies*.
 
-**Commercial maturity:** Stage 1 Internal Steward only — **no marketing**.
+**Three layers:** [Z_PROJECT_LIFEBOAT_THREE_LAYERS.md](Z_PROJECT_LIFEBOAT_THREE_LAYERS.md) — Protect principles · evolve framework carefully · tech comes and goes.
+
+**Commercial maturity:** Stage 1 Internal Steward only — Assessment foresight only · **no marketing**.
 
 ---
 
@@ -70,8 +72,9 @@ Backblaze B2 sets the bar. Every other provider answers: **Can you beat B2?**
 1. AMK fills [Key Ceremony](Z_LIFEBOAT_KEY_CEREMONY_ONE_PAGER.md) **offline**  
 2. Optional: [local restore dry-run](Z_LIFEBOAT_LOCAL_RESTORE_DRY_RUN_OUTLINE.md)  
 3. Fill C2 under [Research Charter](Z_SYNOLOGY_C2_RESEARCH_CHARTER.md)  
-4. Continue evaluation order without naming Wave 1B  
+4. **Framework review** after core trio — before expanding to more providers  
+5. Wave 1B remains unnamed until evidence earns it  
 
 ---
 
-_Maturity · RESEARCH · Stage 1 · evidence over preference_
+_Maturity · RESEARCH · Stage 1 · principles > framework > providers_

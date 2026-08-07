@@ -6,6 +6,16 @@
 
 ---
 
+## 2026-08-07 (m) — Three Layers · fourth principle · framework review gate
+
+**Input:** Brother — `c0534aa` as identity moment; Layer 1 Principles / Layer 2 Framework / Layer 3 Providers; fourth principle: framework shall outlive technologies; after B2·R2·C2 pause for framework review before expanding providers; Stewardship Assessment foresight (vendor-neutral · not software-first); standing order Protect principles · evolve framework carefully · tech comes and goes.
+
+**Decision:** Seal Three Layers + fourth principle. Gate expansion behind framework review after core trio. Assessment remains foresight only. No marketing · Wave 1B unnamed · Stage 1 continues.
+
+**Receipt:** [Z_PROJECT_LIFEBOAT_THREE_LAYERS.md](project-lifeboat/Z_PROJECT_LIFEBOAT_THREE_LAYERS.md) · [Z_STEWARDSHIP_ASSESSMENT_FORESIGHT.md](project-lifeboat/Z_STEWARDSHIP_ASSESSMENT_FORESIGHT.md)
+
+---
+
 ## 2026-08-07 (l) — Lifeboat Guiding Principle · C2 Research Charter · ecosystems
 
 **Input:** Brother — Lifeboat is building a reference methodology (guard bias); C2 same discipline as B2/R2; five question clusters (Stewardship Compatibility · Appliance Score · Exit · Cost-through-time · Recovery under stress); evaluate stewardship **ecosystems** not logos; Phase 0 ladder to Evidence Framework Proven → Stewardship Framework Stable; permanent principle: evidence-led, recovery-tested, migration-aware, steward-reviewed; defining question: protect the future better than what we already trust.

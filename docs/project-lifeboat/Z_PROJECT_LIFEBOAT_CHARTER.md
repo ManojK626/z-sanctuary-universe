@@ -63,13 +63,16 @@ R2 (or similar) may later serve as a **preservation destination** under Lifeboat
 5. **Open standards over vendor lock-in** — prefer S3-compatible / portable formats.  
 6. **Sustainability over short-term convenience** — 20–50 year cost must remain thinkable on a limited budget.  
 
-**Permanent Lifeboat sentence** (initiative law · not Book A/B):
+**Permanent Lifeboat sentences** (initiative law · not Book A/B):
 
-> Every preservation decision shall be evidence-led, recovery-tested, migration-aware, and steward-reviewed.
+1. *Every preservation decision shall be evidence-led, recovery-tested, migration-aware, and steward-reviewed.*  
+2. *Every preservation framework shall outlive the technologies it evaluates.*
 
-See [Z_PROJECT_LIFEBOAT_GUIDING_PRINCIPLE.md](Z_PROJECT_LIFEBOAT_GUIDING_PRINCIPLE.md).
+See [Z_PROJECT_LIFEBOAT_GUIDING_PRINCIPLE.md](Z_PROJECT_LIFEBOAT_GUIDING_PRINCIPLE.md) · [Three Layers](Z_PROJECT_LIFEBOAT_THREE_LAYERS.md).
 
 **Defining question:** *Can you protect the future better than what we already trust?*
+
+**Standing order:** Protect the principles · let the framework evolve carefully · allow technologies to come and go.
 
 ---
 

@@ -38,21 +38,25 @@ Cost · governance · recovery · exit · longevity · operational sustainabilit
 
 ## Framework endurance
 
-By end of Phase 0 the valuable deliverable is not a forever recommendation — it is a **Stewardship Preservation Framework** that can evaluate any preservation **ecosystem** (2032, 2040, …) without rewriting Lifeboat.
-
 ```text
-Provider / ecosystem research
+Core trio (B2 · R2 · C2)
         ↓
-Evidence Framework Proven
+Framework review — Has the model become stable?
         ↓
-Stewardship Framework Stable
+Evidence Framework Proven → Stewardship Framework Stable
+        ↓
+Only then expand (AWS · Azure · GCS · Hetzner · Storj · …)
 ```
 
-**Guiding principle:** [Z_PROJECT_LIFEBOAT_GUIDING_PRINCIPLE.md](Z_PROJECT_LIFEBOAT_GUIDING_PRINCIPLE.md)
+**Guiding principles:** [Z_PROJECT_LIFEBOAT_GUIDING_PRINCIPLE.md](Z_PROJECT_LIFEBOAT_GUIDING_PRINCIPLE.md)  
+**Three layers:** [Z_PROJECT_LIFEBOAT_THREE_LAYERS.md](Z_PROJECT_LIFEBOAT_THREE_LAYERS.md)
 
-> Every preservation decision shall be evidence-led, recovery-tested, migration-aware, and steward-reviewed.
+> Every preservation decision shall be evidence-led, recovery-tested, migration-aware, and steward-reviewed.  
+> Every preservation framework shall outlive the technologies it evaluates.
 
 **Defining question:** *Can you protect the future better than what we already trust?*
+
+**Order:** Protect the principles · let the framework evolve carefully · allow technologies to come and go.
 
 ---
 
@@ -63,8 +67,8 @@ Wave 1B ............. unnamed
 Spend / accounts .... none
 Marketing ........... none
 Stage ............... 1 Internal Steward
-C2 research ......... chartered — [Z_SYNOLOGY_C2_RESEARCH_CHARTER.md](Z_SYNOLOGY_C2_RESEARCH_CHARTER.md)
-Next ................ fill C2 evidence under charter questions
+C2 research ......... chartered
+After C2 fill ....... framework review before more providers
 ```
 
 ---

@@ -3,15 +3,21 @@
 **Status:** ✅ SEALED as Lifeboat law (initiative principle · **not** Book A/B · **not** Constitution amendment)  
 **Date:** 2026-08-07  
 **Authority:** AMK-Goku (Steward Board)  
-**Parents:** [Charter](Z_PROJECT_LIFEBOAT_CHARTER.md) · [Success Criteria](Z_PROJECT_LIFEBOAT_SUCCESS_CRITERIA.md) · [Evidence Board](Z_LIFEBOAT_EVIDENCE_BOARD.md)
+**Parents:** [Charter](Z_PROJECT_LIFEBOAT_CHARTER.md) · [Success Criteria](Z_PROJECT_LIFEBOAT_SUCCESS_CRITERIA.md) · [Evidence Board](Z_LIFEBOAT_EVIDENCE_BOARD.md) · [Three Layers](Z_PROJECT_LIFEBOAT_THREE_LAYERS.md)
 
 ---
 
-## The permanent sentence
+## Permanent sentences
+
+### Decision law
 
 > Every preservation decision shall be evidence-led, recovery-tested, migration-aware, and steward-reviewed.
 
-This sentence names **no vendor**. Backblaze, Cloudflare, Synology, AWS, GitHub — and names not yet invented — must earn place under it. Names change. The principle does not.
+### Framework law (fourth principle)
+
+> Every preservation framework shall outlive the technologies it evaluates.
+
+Together: Layer 1 **Principles** — immutable. Names of vendors are Layer 3 — replaceable. See [Three Layers](Z_PROJECT_LIFEBOAT_THREE_LAYERS.md).
 
 ---
 
@@ -34,23 +40,22 @@ Project Lifeboat evaluates **stewardship ecosystems**, not storage SKUs alone.
 | A bucket product | Tooling · restore workflows · APIs · maturity · migration |
 | A cloud brand | Operational experience · monitoring · hardware lifecycle (when appliance-tied) |
 
-Example: “Backblaze” means B2 **plus** the restore/tooling ecosystem.  
-Example: “Synology” means C2 **plus** NAS · Hyper Backup · hardware lifecycle · monitoring.
-
 ---
 
-## Phase 0 milestone ladder (durable deliverable)
+## Phase 0 milestone ladder
 
 ```text
-Provider / ecosystem research
+Core trio research (B2 · R2 · C2)
         ↓
-Evidence Framework Proven
+Framework review (Has the model become stable?)
         ↓
-Stewardship Framework Stable
+Evidence Framework Proven → Stewardship Framework Stable
+        ↓
+Only then expand to more ecosystems
 ```
 
-The real Phase 0 prize is **not** “Use B2 forever.”  
-It is: a **repeatable framework** that can evaluate any preservation ecosystem — today or twenty years from now.
+The real prize is **not** “Use B2 forever.”  
+It is a **repeatable framework** that can evaluate any preservation ecosystem — today or twenty years from now.
 
 ---
 
@@ -58,9 +63,8 @@ It is: a **repeatable framework** that can evaluate any preservation ecosystem �
 
 | Forbidden | Required |
 | --- | --- |
-| “It’s Synology, therefore it must fit” | Can evidence justify its place in a 20–50 year architecture? |
-| “We like Cloudflare, therefore R2 wins” | Does current evidence beat the benchmark? |
-| Fashion / familiarity / convenience | Evidence-led · recovery-tested · migration-aware · steward-reviewed |
+| Brand preference as proof | Evidence under the permanent sentences |
+| Fashion / familiarity / convenience | Protect principles · evolve framework carefully · let tech come and go |
 
 ---
 
@@ -68,9 +72,9 @@ It is: a **repeatable framework** that can evaluate any preservation ecosystem �
 
 ```text
 Books A / B ............. unchanged (cite-only)
-Lifeboat principle ...... sealed above
+Lifeboat principles ..... both sentences sealed
 Wave 1B ................. still unnamed
-Marketing ............... none
+Marketing / Assessment .. foresight only — not launched
 ```
 
 ---
