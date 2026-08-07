@@ -68,6 +68,16 @@
 
 ---
 
+## 2026-08-07 (f) — Enhancement Pack #2 quarantined
+
+**Input:** Adaptive AI Learning & Planning Suite (Memory · Pattern · Planner · Reflector · Commander) + offer Pack #3.
+
+**Decision:** Pack #2 **not wired**. Commander + mood→goal planner + pattern-as-truth = 🔴 BLOCKED (never-inferred · no live autonomy). Pack #3 **not started**. Correct prior lane: A/B were **deferred**, not accepted.
+
+**Receipt:** [PHASE_Z_ENHANCEMENT_PACK_2_ADAPTIVE_AI_CHARTER_2026_08_07.md](PHASE_Z_ENHANCEMENT_PACK_2_ADAPTIVE_AI_CHARTER_2026_08_07.md)
+
+---
+
 ## 2026-08-07 (e) — Enhancement Pack #1 quarantined
 
 **Input:** Brain-stem pack (Watcher · Healer · Teacher · Artist · Archivist) + ask A vs B next.
