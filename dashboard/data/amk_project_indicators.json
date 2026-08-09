@@ -1850,6 +1850,57 @@
       ],
       "last_known_basis": "Advisory rollup only; automated scores capped per scoring policy — never sole production proof.",
       "dynamic_overlay": "z_deployment_readiness"
+    },
+    {
+      "id": "ssr_observer_mode",
+      "name": "Super Saiyan Roulette — Observer Mode",
+      "domain": "project_posture",
+      "project_or_system": "Super-Saiyan-Roulette-Pro-App",
+      "signal": "GOLD",
+      "growth_percent": 78,
+      "readiness_label": "Dormant · Evidence-aware · R4 closed · No change justified (HOLD)",
+      "go_no_go": "HOLD_OBSERVER_DORMANT",
+      "autonomy_level": "L1_REPORT",
+      "posture_chips": [
+        "SLEEPING",
+        "HEALTHY DORMANT",
+        "DEV HOLD",
+        "R4 CLOSED",
+        "NO RUNTIME MONITOR",
+        "INDICATOR ≠ EXECUTE"
+      ],
+      "advisory_law_lines": [
+        "Operational health HEALTHY ≠ development authority to build",
+        "Observer SLEEPING · default NO CHANGE JUSTIFIED → HOLD",
+        "R4-MATH-SPEC-0 is candidate only — NOT OPEN",
+        "Wake only by Steward phrase or approved evidence trigger",
+        "GOLD sealed dormant ≠ GREEN for execution / deploy"
+      ],
+      "recommended_next_action": "Leave SSR sleeping. Wake only with: \"Zuno, wake up Super Saiyan Roulette.\" Then run Observer resume preflight — never open R4 because time passed.",
+      "human_confirmation_required": true,
+      "related_docs": [
+        "docs/amk-goku-steward-ai/SSR_IMPLEMENTATION_UNAVAILABLE_STEWARD_SEAL.md",
+        "docs/amk-goku-steward-ai/SSR_RECONSTRUCTION_0_CHARTER.md",
+        "docs/amk-goku-steward-ai/SSR_RECONSTRUCTION_R1_ARCHITECTURE_AND_DATA_CONTRACTS.md",
+        "docs/amk-goku-steward-ai/SSR_RECONSTRUCTION_R2_FLUTTER_FOUNDATION_HOLD.md"
+      ],
+      "related_reports": [],
+      "blocked_until": [
+        "steward_wake_or_meaningful_evidence_trigger",
+        "ssr_resume_preflight_pass"
+      ],
+      "forbidden_actions": [
+        "open_r4_without_steward",
+        "infer_historical_z_math",
+        "ai_runtime_for_ssr",
+        "firebase_for_ssr",
+        "deploy_ssr",
+        "push_ssr_without_steward",
+        "runtime_observer_monitor",
+        "treat_healthy_as_ready_to_build"
+      ],
+      "last_known_basis": "SSR R3 checkpoint 83f282bd341b86be00156f2a21f33b606b614892; Observer seal 2d4d52d5cb5631978436e76da2e6c1c38d813a76; canonical path C:\\Cursor Projects Organiser\\Super-Saiyan-Roulette-Pro-App; Pro App docs SSR_OBSERVER_MODE.md + RECONSTRUCTION_STATUS.md; next candidate R4-MATH-SPEC-0 NOT OPEN; runtime monitor NONE; deployment NONE; push NONE; evidence freshness CURRENT; steward attention NONE.",
+      "dynamic_overlay": "none"
     }
   ]
 }
