@@ -1,13 +1,13 @@
 # Z-Project Identity Relationship Contract
 
-**Status:** PID-0.5 · DESIGN CONTRACT · Steward review (uncommitted until seal gate)
+**Status:** PID-0.5 · SEALED (`c685b76`) · PID-2A · SEALED (cross-plane namespace doctrine)
 **Date:** 2026-08-20
 **Authority:** AMK-Goku · Super Turtle · Consolidation Era
 **Predecessor:** Z-SANCTUARY-PROJECT-IDENTITY-DUPLICATE-GUARD-1 (design)
 **Health baseline:** [Z_SANCTUARY_INDICATOR_SUPER_TURTLE_HEALTH_REVIEW_1.md](Z_SANCTUARY_INDICATOR_SUPER_TURTLE_HEALTH_REVIEW_1.md) · `a09028c`
-**Related (not replaced):** [PROJECT_IDENTITY_RECONCILIATION.md](PROJECT_IDENTITY_RECONCILIATION.md) · [Z_IDENTITY_MANIFEST.md](Z_IDENTITY_MANIFEST.md) · [Z_SANCTUARY_STEWARD_DIAGNOSTIC_CORE_0.md](Z_SANCTUARY_STEWARD_DIAGNOSTIC_CORE_0.md)
+**Related (not replaced):** [PROJECT_IDENTITY_RECONCILIATION.md](PROJECT_IDENTITY_RECONCILIATION.md) · [Z_IDENTITY_MANIFEST.md](Z_IDENTITY_MANIFEST.md) · [Z_SANCTUARY_STEWARD_DIAGNOSTIC_CORE_0.md](Z_SANCTUARY_STEWARD_DIAGNOSTIC_CORE_0.md) · [Z_PROJECT_IDENTITY_TRUSTED_INPUT_MAP.md](Z_PROJECT_IDENTITY_TRUSTED_INPUT_MAP.md)
 
-**Implementation:** NONE · **Runtime:** NONE · **Z-SDC Phase 1:** CLOSED
+**Implementation:** NONE · **Runtime:** NONE · **PID-2 classifier:** CLOSED BY EXISTING CAPABILITY · **Z-SDC Phase 1:** CLOSED
 
 ---
 
@@ -28,16 +28,16 @@ It does **not** implement the Duplicate Guard, create registries, or select cano
 
 ## 2. Scope
 
-| In scope | Out of scope |
-| --- | --- |
-| Identity laws | PID-1+ implementation |
-| Relationship vocabulary (V1) | Folder move/delete/merge |
-| Canonical-path states | Membership grants |
-| Evidence precedence | Runtime / deploy authority |
-| Authority matrix | Z-SDC Phase 1 |
-| HOLD / Steward boundaries | New master registry |
-| Privacy / rebuildability | External AI |
-| PID-1 allowed outputs | Auto-canonical / auto-cleanup |
+| In scope                     | Out of scope                  |
+| ---------------------------- | ----------------------------- |
+| Identity laws                | PID-1+ implementation         |
+| Relationship vocabulary (V1) | Folder move/delete/merge      |
+| Canonical-path states        | Membership grants             |
+| Evidence precedence          | Runtime / deploy authority    |
+| Authority matrix             | Z-SDC Phase 1                 |
+| HOLD / Steward boundaries    | New master registry           |
+| Privacy / rebuildability     | External AI                   |
+| PID-1 allowed outputs        | Auto-canonical / auto-cleanup |
 
 ---
 
@@ -78,6 +78,9 @@ CORRELATION ≠ CAUSATION
 DEPENDENCY ≠ AUTHORIZATION
 FEDERATION ≠ CONTROL
 PROXIMITY ≠ MEMBERSHIP
+IDENTIFIERS ARE NAMESPACE-SCOPED
+SAME STRING ≠ SAME IDENTITY
+DIFFERENT STRING ≠ DIFFERENT IDENTITY
 ```
 
 **Stable identity principle:** A project identity is a logical ecosystem identity that may be observed at one or more physical roots over time. A path is a location associated with identity evidence — not sufficient proof of identity by itself.
@@ -90,38 +93,73 @@ Conceptual node kinds (no storage): `PROJECT_IDENTITY` · `FILESYSTEM_ROOT` · `
 
 **NO NEW MASTER PROJECT REGISTRY.**
 
-| Plane | Role |
-| --- | --- |
-| PC-root registry | Folder citizenship evidence (`id` / `path` / `role` / `hosting`) |
-| Universe registry / census | Mission Control / census citizenship |
-| Family AI registry | Companion / human identity (not folder collision) |
-| Steward receipts / governance | Highest sealed ownership decisions |
-| AMK indicators | Posture signals (KNOWN ≠ MEMBER) |
-| Git metadata | Repository / worktree evidence |
-| Doorway awareness | Path / multi-id collision evidence |
-| Lifeboat classification | Relationship-classification **seed** (not continuous Overseer) |
-| Cycle Observe / Awareness | Future safe **consumers** of identity reports |
-| Z-Super Overseer / EAII | Future synthesis surface — not auto-repair |
-| Z-SDC Phase 0 | Supplementary similarity design only · Phase 1 CLOSED |
+| Plane                         | Role                                                                                                            |
+| ----------------------------- | --------------------------------------------------------------------------------------------------------------- |
+| PC-root registry              | Folder citizenship evidence (`id` / `path` / `role` / `hosting`)                                                |
+| Universe registry / census    | Mission Control / census citizenship                                                                            |
+| Family AI registry            | Companion / human identity (not folder collision)                                                               |
+| Steward receipts / governance | Highest sealed ownership decisions                                                                              |
+| AMK indicators                | Posture signals (KNOWN ≠ MEMBER)                                                                                |
+| Git metadata                  | Repository / worktree evidence                                                                                  |
+| Doorway awareness             | Logical lane / open-path evidence (**source semantics** — multi-id on one path ≠ automatic ownership collision) |
+| Lifeboat classification       | Relationship-classification **seed** (not continuous Overseer)                                                  |
+| Cycle Observe / Awareness     | Future safe **consumers** of identity reports                                                                   |
+| Z-Super Overseer / EAII       | Future synthesis surface — not auto-repair                                                                      |
+| Z-SDC Phase 0                 | Supplementary similarity design only · Phase 1 CLOSED                                                           |
 
 PID-1 will **normalize** evidence from these sources. It will not replace them.
+
+### Cross-plane identity namespaces
+
+A **namespace** is the declared identity domain in which an identifier is issued, interpreted, and required to be unique. The planes above are **not** one shared namespace.
+
+```text
+ID EQUALITY IS MEANINGFUL ONLY WITHIN
+THE SAME DECLARED IDENTITY NAMESPACE
+UNLESS AN EXPLICIT AUTHORITATIVE LINK EXISTS.
+```
+
+**Namespace-scoped equality:** Interpret identifiers as `(namespace, identifier)` — e.g. `("pc_root", "example")` is distinct from `("family_ai", "example")` unless an explicit link joins them.
+
+**Explicit cross-plane link** means committed registry field, sealed governance mapping, declared relationship field, approved identity map, or other explicit authoritative relation. **Not** explicit linkage: string equality, folder-name similarity, package similarity, path proximity, timestamps, or AI inference.
+
+**Same-namespace collision (`ID_COLLISION` — reserved doctrine):** Within one authoritative namespace, the same ID with incompatible independent identity claims may constitute `ID_COLLISION` (e.g. duplicate PC-root `id` or duplicate Universe `stable_key`). Cross-namespace identical strings are **not** `ID_COLLISION`. No live same-namespace collision was required for PID-2; **no implementation** of this detector is authorized by this amendment.
+
+**Cross-plane equality:** Across namespaces, a matching literal string is at most **possible linkage evidence** — never automatic `EXACT_IDENTITY`, membership, or canonical authority. `PC_ROOT_ID == UNIVERSE_STABLE_KEY` (and every other cross-plane equality) is meaningful **only** where an explicit contract/map says they are linked. Different strings across planes do **not** automatically mean different organisms (hub lesson: PC-root `z-sanctuary-universe` · Universe `zsanctuary-universe` · Doorway `zsanctuary_hub` — illustrative, not a sealed mapping table).
+
+**Plane distinctions (non-exhaustive):**
+
+| Rule                                              | Meaning                                                                                                                                                                      |
+| ------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `FAMILY_AI_ID ≠ PC_ROOT_ID`                       | Companion/AI identity ≠ folder citizenship unless explicitly linked                                                                                                          |
+| `INDICATOR IDENTITY ≠ PROJECT IDENTITY`           | Indicator records describe posture; they are not the project's canonical id                                                                                                  |
+| `DOORWAY_ID ≠ UNIVERSE_STABLE_KEY` / ≠ PC-root id | Doorway IDs may be logical lanes, not competing ownership claims                                                                                                             |
+| `PACKAGE NAME ≠ SANCTUARY PROJECT ID`             | Own observational plane · Gem/D2 → `POSSIBLE_RELATIONSHIP` only                                                                                                              |
+| Git repo/worktree identity ≠ Sanctuary project id | Git may prove `WORKTREE_OF` without assigning PC-root / Universe / Doorway ids                                                                                               |
+| Filesystem path is **not** an ID namespace        | Multiple legitimate lanes/systems may reference one root; interpret multi-id path claims **within source namespace semantics** (Doorway hub + `commercial_lane_hold` lesson) |
+
+**Collision ≠ relationship:** `ID_COLLISION` concerns incompatible identifier use inside one namespace. Relationship vocabulary (§6) concerns how identities/roots relate. Do not collapse them.
+
+**Unresolved cross-plane resemblance:** If records look related but no explicit link exists → `POSSIBLE_RELATIONSHIP` or `HOLD_UNCLASSIFIED` — never silently join.
+
+**Authority boundary:** This namespace doctrine governs **interpretation of identity evidence only**. It grants no membership, canonical status, runtime, deployment, ownership, folder-management, or Overseer execution authority. It creates no namespace registry, cross-plane registry, or master identity registry.
 
 ---
 
 ## 6. Relationship vocabulary (V1 minimum)
 
-| Term | Definition |
-| --- | --- |
-| `CANONICAL` | Currently accepted authoritative home/root for a specific project identity per **sealed** evidence — not newest/largest/nearest/most-complete/same-package |
-| `MEMBER` | Explicitly recognized citizen of the relevant Sanctuary scope; does **not** grant runtime, deploy, auto-open, or external ownership |
-| `EXTERNAL` | Known project/organism intentionally outside owning Sanctuary scope · **EXTERNAL ≠ MISSING** |
-| `WORKTREE_OF` | Git metadata proves a filesystem root is a working tree of an existing repository identity |
-| `BACKUP_OF` | Explicit evidence establishes preservation/recovery relationship — not inferred from date/suffix/nesting alone |
-| `MIRROR_OF` | Explicit evidence of intentional mirror — not canonical, member, or runtime by itself |
-| `CONTINUATION_OF` | Explicitly authorized continuation lineage — **generated continuation metadata without sealed governance must NOT establish this** (Universe 2 lesson) |
-| `ARCHIVE_OF` | Intentional historical/frozen/legacy retention — not disposable; not deletion license |
-| `FORK_OF` | Intentional divergence remaining independently identifiable — not accidental duplicate; package similarity insufficient |
-| `HOLD_UNCLASSIFIED` | Relationship may exist but evidence is insufficient or contradictory for safe classification |
+| Term                | Definition                                                                                                                                                 |
+| ------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `CANONICAL`         | Currently accepted authoritative home/root for a specific project identity per **sealed** evidence — not newest/largest/nearest/most-complete/same-package |
+| `MEMBER`            | Explicitly recognized citizen of the relevant Sanctuary scope; does **not** grant runtime, deploy, auto-open, or external ownership                        |
+| `EXTERNAL`          | Known project/organism intentionally outside owning Sanctuary scope · **EXTERNAL ≠ MISSING**                                                               |
+| `WORKTREE_OF`       | Git metadata proves a filesystem root is a working tree of an existing repository identity                                                                 |
+| `BACKUP_OF`         | Explicit evidence establishes preservation/recovery relationship — not inferred from date/suffix/nesting alone                                             |
+| `MIRROR_OF`         | Explicit evidence of intentional mirror — not canonical, member, or runtime by itself                                                                      |
+| `CONTINUATION_OF`   | Explicitly authorized continuation lineage — **generated continuation metadata without sealed governance must NOT establish this** (Universe 2 lesson)     |
+| `ARCHIVE_OF`        | Intentional historical/frozen/legacy retention — not disposable; not deletion license                                                                      |
+| `FORK_OF`           | Intentional divergence remaining independently identifiable — not accidental duplicate; package similarity insufficient                                    |
+| `HOLD_UNCLASSIFIED` | Relationship may exist but evidence is insufficient or contradictory for safe classification                                                               |
 
 Deferred from V1 unless later evidence proves need: `GENERATED_COPY_OF` · `NESTED_COPY_OF`.
 
@@ -143,13 +181,13 @@ No automatic winner.
 
 Separate from relationship type:
 
-| State | Meaning |
-| --- | --- |
-| `PRESENT` | Declared canonical path exists; no known relevant contradiction |
-| `MISSING` | Declared canonical path absent — **do not** auto-promote another copy (Lumina lesson) |
-| `MULTI_CLAIM` | More than one root claims canonical authority → HOLD |
-| `UNKNOWN` | No reliable canonical evidence |
-| `HOLD` | Canonical resolution intentionally deferred |
+| State         | Meaning                                                                               |
+| ------------- | ------------------------------------------------------------------------------------- |
+| `PRESENT`     | Declared canonical path exists; no known relevant contradiction                       |
+| `MISSING`     | Declared canonical path absent — **do not** auto-promote another copy (Lumina lesson) |
+| `MULTI_CLAIM` | More than one root claims canonical authority → HOLD                                  |
+| `UNKNOWN`     | No reliable canonical evidence                                                        |
+| `HOLD`        | Canonical resolution intentionally deferred                                           |
 
 ---
 
@@ -165,7 +203,7 @@ Default hierarchy (higher outranks lower; contradictions are **reported**, not s
 6. Filesystem topology / normalized structure
 7. Folder names / timestamps / similarity (**weakest**)
 
-**Similarity may open a question. Similarity may not close the question.**  
+**Similarity may open a question. Similarity may not close the question.**
 Similarity → `POSSIBLE_RELATIONSHIP` only — never auto `BACKUP_OF` / `CONTINUATION_OF` / `CANONICAL` / same-project.
 
 **Package name = evidence only** (Gem/D2 lesson). Conflict → HOLD.
@@ -174,13 +212,13 @@ Similarity → `POSSIBLE_RELATIONSHIP` only — never auto `BACKUP_OF` / `CONTIN
 
 ## 9. Evidence / confidence states
 
-| State | Meaning |
-| --- | --- |
-| `EXACT_IDENTITY` | Deterministic same-identity evidence (e.g. Git worktree proof) |
-| `STRONG_RELATIONSHIP_EVIDENCE` | Strong support; may still lack governance authority |
-| `POSSIBLE_RELATIONSHIP` | Similarity / indirect evidence warrants observation |
-| `AMBIGUOUS` | Significant conflict |
-| `INSUFFICIENT_EVIDENCE` | Cannot safely classify |
+| State                          | Meaning                                                        |
+| ------------------------------ | -------------------------------------------------------------- |
+| `EXACT_IDENTITY`               | Deterministic same-identity evidence (e.g. Git worktree proof) |
+| `STRONG_RELATIONSHIP_EVIDENCE` | Strong support; may still lack governance authority            |
+| `POSSIBLE_RELATIONSHIP`        | Similarity / indirect evidence warrants observation            |
+| `AMBIGUOUS`                    | Significant conflict                                           |
+| `INSUFFICIENT_EVIDENCE`        | Cannot safely classify                                         |
 
 No universal score.
 
@@ -188,18 +226,18 @@ No universal score.
 
 ## 10. Authority matrix
 
-| Relationship | Membership | Canonical authority | Runtime | Deploy | Auto-classifiable? | Steward needed? |
-| --- | --- | --- | --- | --- | --- | --- |
-| `CANONICAL` | Reflects existing sealed claim only | Reflects existing sealed claim only | NO | NO | NO (must already be established) | If contested |
-| `MEMBER` | YES if registry/governance says so | NO by itself | NO | NO | Only if registry already states | If granting |
-| `EXTERNAL` | NO | NO | NO | NO | When known external evidence | If promoting |
-| `WORKTREE_OF` | NO | NO | NO | NO | **YES** if Git-proven | Usually no |
-| `BACKUP_OF` | NO | NO | NO | NO | Only with explicit strong evidence | If ambiguous |
-| `MIRROR_OF` | NO | NO | NO | NO | Only with explicit strong evidence | If ambiguous |
-| `CONTINUATION_OF` | NO | NO | NO | NO | Only with sealed authorization | If unsealed/ambiguous |
-| `ARCHIVE_OF` | NO | NO | NO | NO | Only with explicit evidence | If ambiguous |
-| `FORK_OF` | NO | NO | NO | NO | Rare / strong evidence | Often yes |
-| `HOLD_UNCLASSIFIED` | NO new grant | NO | NO | NO | YES when unsure | YES when ownership matters |
+| Relationship        | Membership                          | Canonical authority                 | Runtime | Deploy | Auto-classifiable?                 | Steward needed?            |
+| ------------------- | ----------------------------------- | ----------------------------------- | ------- | ------ | ---------------------------------- | -------------------------- |
+| `CANONICAL`         | Reflects existing sealed claim only | Reflects existing sealed claim only | NO      | NO     | NO (must already be established)   | If contested               |
+| `MEMBER`            | YES if registry/governance says so  | NO by itself                        | NO      | NO     | Only if registry already states    | If granting                |
+| `EXTERNAL`          | NO                                  | NO                                  | NO      | NO     | When known external evidence       | If promoting               |
+| `WORKTREE_OF`       | NO                                  | NO                                  | NO      | NO     | **YES** if Git-proven              | Usually no                 |
+| `BACKUP_OF`         | NO                                  | NO                                  | NO      | NO     | Only with explicit strong evidence | If ambiguous               |
+| `MIRROR_OF`         | NO                                  | NO                                  | NO      | NO     | Only with explicit strong evidence | If ambiguous               |
+| `CONTINUATION_OF`   | NO                                  | NO                                  | NO      | NO     | Only with sealed authorization     | If unsealed/ambiguous      |
+| `ARCHIVE_OF`        | NO                                  | NO                                  | NO      | NO     | Only with explicit evidence        | If ambiguous               |
+| `FORK_OF`           | NO                                  | NO                                  | NO      | NO     | Rare / strong evidence             | Often yes                  |
+| `HOLD_UNCLASSIFIED` | NO new grant                        | NO                                  | NO      | NO     | YES when unsure                    | YES when ownership matters |
 
 **The classifier does not create canonical, membership, runtime, or deployment authority.**
 
@@ -227,14 +265,14 @@ No universal score.
 
 `HOLD_UNCLASSIFIED` implies:
 
-| Action | Allowed? |
-| --- | --- |
-| New membership grant | NO |
-| Runtime | NONE |
-| Deployment | NONE |
-| Canonical promotion | NO |
-| Cleanup / merge / move / rename | NO |
-| Steward review when ownership/canonical intent matters | YES |
+| Action                                                 | Allowed? |
+| ------------------------------------------------------ | -------- |
+| New membership grant                                   | NO       |
+| Runtime                                                | NONE     |
+| Deployment                                             | NONE     |
+| Canonical promotion                                    | NO       |
+| Cleanup / merge / move / rename                        | NO       |
+| Steward review when ownership/canonical intent matters | YES      |
 
 ```text
 DETECT ≠ DELETE
@@ -298,17 +336,17 @@ No automatic deletion.
 
 ## 17. Existing-organ reuse
 
-| Organ | Responsibility |
-| --- | --- |
-| PC-root / Universe | Citizenship evidence |
-| Git metadata | Repository / worktree evidence |
-| Lifeboat | Classification seed |
-| Doorway | Path / multi-id collision evidence |
-| Cycle Observe | Future safe report consumer |
-| Awareness | Future posture consumer |
-| Overseer / EAII | Future synthesis (observe + report) |
-| AMK Indicators | Optional later derived signal |
-| Z-SDC | Future supplementary similarity · Phase 1 CLOSED |
+| Organ              | Responsibility                                                      |
+| ------------------ | ------------------------------------------------------------------- |
+| PC-root / Universe | Citizenship evidence                                                |
+| Git metadata       | Repository / worktree evidence                                      |
+| Lifeboat           | Classification seed                                                 |
+| Doorway            | Lane / open-path evidence (source semantics before collision logic) |
+| Cycle Observe      | Future safe report consumer                                         |
+| Awareness          | Future posture consumer                                             |
+| Overseer / EAII    | Future synthesis (observe + report)                                 |
+| AMK Indicators     | Optional later derived signal                                       |
+| Z-SDC              | Future supplementary similarity · Phase 1 CLOSED                    |
 
 No organ replacement. No second Overseer. No second Folder Manager.
 
@@ -316,15 +354,15 @@ No organ replacement. No second Overseer. No second Folder Manager.
 
 ## 18. Case-study lessons (governance not reopened)
 
-| Case | Standing | Contract lesson |
-| --- | --- | --- |
-| Universe 2 | HOLD · dirty continuation not canon | Generated labels without authority ≠ `CONTINUATION_OF` |
-| Lumina | KEEP_ROOT_HOLD · canonical NONE | `CANONICAL_PATH_MISSING` ≠ promote observational copy |
-| Hub worktrees (3) | EXCLUDE AS MEMBERS | Git-proven → safe `WORKTREE_OF` |
-| Gem / D2 | D2-HOLD · NO BIND | Package similarity is weak |
-| SSR | KNOWN · HOLD_OBSERVER_DORMANT | KNOWN ≠ MEMBER |
-| Z-Family Health | KNOWN · HOLD / OBSERVE_ONLY | KNOWN ≠ MEMBER |
-| ASTRALIS / Z-Oisela | EXTERNAL · NOT MISSING | Outside Organiser ≠ absent |
+| Case                | Standing                            | Contract lesson                                        |
+| ------------------- | ----------------------------------- | ------------------------------------------------------ |
+| Universe 2          | HOLD · dirty continuation not canon | Generated labels without authority ≠ `CONTINUATION_OF` |
+| Lumina              | KEEP_ROOT_HOLD · canonical NONE     | `CANONICAL_PATH_MISSING` ≠ promote observational copy  |
+| Hub worktrees (3)   | EXCLUDE AS MEMBERS                  | Git-proven → safe `WORKTREE_OF`                        |
+| Gem / D2            | D2-HOLD · NO BIND                   | Package similarity is weak                             |
+| SSR                 | KNOWN · HOLD_OBSERVER_DORMANT       | KNOWN ≠ MEMBER                                         |
+| Z-Family Health     | KNOWN · HOLD / OBSERVE_ONLY         | KNOWN ≠ MEMBER                                         |
+| ASTRALIS / Z-Oisela | EXTERNAL · NOT MISSING              | Outside Organiser ≠ absent                             |
 
 ---
 
@@ -342,14 +380,14 @@ PID-1 **may not**:
 - edit registries · change membership · move/delete/rename folders
 - promote canonical paths · start runtime · deploy · open Z-SDC Phase 1
 
-**Initial PID-1 machine output vocabulary (conservative):**  
+**Initial PID-1 machine output vocabulary (conservative):**
 `WORKTREE_OF` · `CANONICAL_PATH_MISSING` · `REGISTRY_DISK_DRIFT` · `HOLD_UNCLASSIFIED` · `POSSIBLE_RELATIONSHIP`
 
 ---
 
 ## 20. Deferred capabilities
 
-PID-1 implementation · PID-2 classifier expansion · PID-3 similarity · PID-4 Overseer connection · PID-5 indicator · PID-6 pre-create gate · Z-SDC fingerprint runtime · new registry · cleanup · deployment
+PID-1 implementation (delivered / sealed separately) · PID-2 classifier expansion (**CLOSED BY EXISTING CAPABILITY**) · PID-3 similarity · PID-4 Overseer connection · PID-5 indicator · PID-6 pre-create gate · Z-SDC fingerprint runtime · new registry · cleanup · deployment · `ID_COLLISION` detector (reserved doctrine only)
 
 ---
 
@@ -369,16 +407,16 @@ Compatible with Consolidation Era and Super Turtle Mode.
 
 ## 22. Architecture verdicts (sealed here)
 
-| Verdict | Answer |
-| --- | --- |
-| New master registry | NO |
-| Second Overseer | NO |
-| Second Folder Manager | NO |
-| Auto-cleanup | NO |
-| Auto-canonical selection | NO |
-| External AI | NO |
-| Z-SDC Phase 1 | CLOSED |
-| New universal score | NO |
+| Verdict                  | Answer |
+| ------------------------ | ------ |
+| New master registry      | NO     |
+| Second Overseer          | NO     |
+| Second Folder Manager    | NO     |
+| Auto-cleanup             | NO     |
+| Auto-canonical selection | NO     |
+| External AI              | NO     |
+| Z-SDC Phase 1            | CLOSED |
+| New universal score      | NO     |
 
 ---
 
