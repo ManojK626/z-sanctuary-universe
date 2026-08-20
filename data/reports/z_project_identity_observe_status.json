@@ -1,0 +1,395 @@
+{
+  "schema": "z_project_identity_observe_status_v1",
+  "phase": "Z-SANCTUARY-PID-1-IDENTITY-OBSERVATION-REPORT-1",
+  "stages": {
+    "1A": "TRUSTED_INPUT_MAP",
+    "1B": "READ_ONLY_IDENTITY_REPORT"
+  },
+  "generated_at": "2026-08-20T08:21:22.036Z",
+  "marking": [
+    "DERIVED",
+    "READ-ONLY",
+    "REBUILDABLE",
+    "LOCAL_ONLY",
+    "NOT A REGISTRY",
+    "NOT MEMBERSHIP AUTHORITY",
+    "NOT CANONICAL AUTHORITY"
+  ],
+  "authority": {
+    "contract": "docs/Z_PROJECT_IDENTITY_RELATIONSHIP_CONTRACT.md",
+    "trusted_input_map": "docs/Z_PROJECT_IDENTITY_TRUSTED_INPUT_MAP.md",
+    "not_connected_to": [
+      "Overseer",
+      "Cycle Observe",
+      "indicators",
+      "Doorway",
+      "Mission Control",
+      "Lifeboat apply"
+    ]
+  },
+  "allowed_auto_classifications": [
+    "WORKTREE_OF",
+    "CANONICAL_PATH_MISSING",
+    "REGISTRY_DISK_DRIFT",
+    "HOLD_UNCLASSIFIED",
+    "POSSIBLE_RELATIONSHIP"
+  ],
+  "forbidden_auto_classifications": [
+    "BACKUP_OF",
+    "MIRROR_OF",
+    "CONTINUATION_OF",
+    "FORK_OF",
+    "CANONICAL"
+  ],
+  "input_trust_citations": [
+    {
+      "source": "docs/Z_PROJECT_IDENTITY_RELATIONSHIP_CONTRACT.md",
+      "class": "TRUSTED_CANON",
+      "present": true
+    },
+    {
+      "source": "docs/Z_PROJECT_IDENTITY_TRUSTED_INPUT_MAP.md",
+      "class": "TRUSTED_CANON",
+      "present": true
+    },
+    {
+      "source": "data/z_pc_root_projects.json",
+      "class": "TRUSTED_STRUCTURAL",
+      "note": "Row id/path/empty-path only; contested roles are DIRTY_UNSEALED for relationship",
+      "present": true
+    },
+    {
+      "source": "git worktree list --porcelain",
+      "class": "TRUSTED_STRUCTURAL",
+      "present": true
+    }
+  ],
+  "git_worktrees": {
+    "trust": "TRUSTED_STRUCTURAL",
+    "primary": "C:\\Cursor Projects Organiser\\Z_Sanctuary_Universe",
+    "linked_count": 3,
+    "linked": [
+      {
+        "path": "C:/Cursor Projects Organiser/Z_Sanctuary_Universe_wt_ggaesp_evolve_e1",
+        "branch": "refs/heads/cursor/zsanctuary/ggaesp-evolve-e3-fusion-mock",
+        "head": "36c396b5017f50f93cb2421a197c5c813b856d9d",
+        "classification": "WORKTREE_OF"
+      },
+      {
+        "path": "C:/Cursor Projects Organiser/Z_Sanctuary_Universe_wt_integrity_reverify",
+        "branch": "refs/heads/cursor/zsanctuary/integrity-audit-reverify-2026",
+        "head": "36c396b5017f50f93cb2421a197c5c813b856d9d",
+        "classification": "WORKTREE_OF"
+      },
+      {
+        "path": "C:/Cursor Projects Organiser/Z_Sanctuary_Universe_wt_sidework0",
+        "branch": "refs/heads/cursor/zsanctuary/amk-cursor-steward-protocol-1",
+        "head": "6590f407147fce412eac40d11d99169c6f9e29ab",
+        "classification": "WORKTREE_OF"
+      }
+    ]
+  },
+  "registry_summary": {
+    "trust": "TRUSTED_STRUCTURAL",
+    "project_count": 22,
+    "empty_path_ids": [
+      "amk-goku-dashboards-2",
+      "eirmind-ireland-projects-missing",
+      "replit-roulette-z-amk-goku-mdcp",
+      "z-sanctuary-browser-z-saiyan-lumina"
+    ],
+    "missing_declared_path_ids": [],
+    "dirty_u2_hold_ids": [
+      "z-sanctuary-universe-2",
+      "z-sanctuary-universe-2-continuation"
+    ]
+  },
+  "findings": [
+    {
+      "case_id": "hub_worktree",
+      "subject": "C:/Cursor Projects Organiser/Z_Sanctuary_Universe_wt_ggaesp_evolve_e1",
+      "related_to": "z-sanctuary-universe",
+      "classification": "WORKTREE_OF",
+      "source_trust": "TRUSTED_STRUCTURAL",
+      "evidence": [
+        "git worktree · branch=refs/heads/cursor/zsanctuary/ggaesp-evolve-e3-fusion-mock · HEAD=36c396b5017f50f93cb2421a197c5c813b856d9d"
+      ],
+      "note": "Worktree ≠ organism · not a PC-root member"
+    },
+    {
+      "case_id": "hub_worktree",
+      "subject": "C:/Cursor Projects Organiser/Z_Sanctuary_Universe_wt_integrity_reverify",
+      "related_to": "z-sanctuary-universe",
+      "classification": "WORKTREE_OF",
+      "source_trust": "TRUSTED_STRUCTURAL",
+      "evidence": [
+        "git worktree · branch=refs/heads/cursor/zsanctuary/integrity-audit-reverify-2026 · HEAD=36c396b5017f50f93cb2421a197c5c813b856d9d"
+      ],
+      "note": "Worktree ≠ organism · not a PC-root member"
+    },
+    {
+      "case_id": "hub_worktree",
+      "subject": "C:/Cursor Projects Organiser/Z_Sanctuary_Universe_wt_sidework0",
+      "related_to": "z-sanctuary-universe",
+      "classification": "WORKTREE_OF",
+      "source_trust": "TRUSTED_STRUCTURAL",
+      "evidence": [
+        "git worktree · branch=refs/heads/cursor/zsanctuary/amk-cursor-steward-protocol-1 · HEAD=6590f407147fce412eac40d11d99169c6f9e29ab"
+      ],
+      "note": "Worktree ≠ organism · not a PC-root member"
+    },
+    {
+      "case_id": "empty_registry_path",
+      "subject": "amk-goku-dashboards-2",
+      "classification": "CANONICAL_PATH_MISSING",
+      "source_trust": "TRUSTED_STRUCTURAL",
+      "evidence": [
+        "pc_root.path empty",
+        "hosting=link-only",
+        "migration_status=path_unregistered"
+      ],
+      "note": "No auto-promote of another disk copy"
+    },
+    {
+      "case_id": "empty_registry_path",
+      "subject": "eirmind-ireland-projects-missing",
+      "classification": "CANONICAL_PATH_MISSING",
+      "source_trust": "TRUSTED_STRUCTURAL",
+      "evidence": [
+        "pc_root.path empty",
+        "hosting=missing",
+        "migration_status=path_missing"
+      ],
+      "note": "No auto-promote of another disk copy"
+    },
+    {
+      "case_id": "empty_registry_path",
+      "subject": "replit-roulette-z-amk-goku-mdcp",
+      "classification": "CANONICAL_PATH_MISSING",
+      "source_trust": "TRUSTED_STRUCTURAL",
+      "evidence": [
+        "pc_root.path empty",
+        "hosting=replit",
+        "migration_status=registered_linked"
+      ],
+      "note": "No auto-promote of another disk copy"
+    },
+    {
+      "case_id": "universe_2_ambiguity",
+      "subject": "z-sanctuary-universe-2",
+      "related_to": "z-sanctuary-universe",
+      "classification": "HOLD_UNCLASSIFIED",
+      "source_trust": "DIRTY_UNSEALED",
+      "evidence": [
+        "registry.role=continuation_active (not sealed CONTINUATION_OF / BACKUP_OF)",
+        "path=Z_Sanctuary_Universe 2"
+      ],
+      "note": "Dirty/unsealed U2 labels ignored as governance authority · HOLD"
+    },
+    {
+      "case_id": "universe_2_ambiguity",
+      "subject": "z-sanctuary-universe-2-continuation",
+      "related_to": "z-sanctuary-universe",
+      "classification": "HOLD_UNCLASSIFIED",
+      "source_trust": "DIRTY_UNSEALED",
+      "evidence": [
+        "registry.role=hub_backup_slice (not sealed CONTINUATION_OF / BACKUP_OF)",
+        "path=Z_Sanctuary_Universe/Z_Sanctuary_Universe 2"
+      ],
+      "note": "Dirty/unsealed U2 labels ignored as governance authority · HOLD"
+    },
+    {
+      "case_id": "empty_registry_path",
+      "subject": "z-sanctuary-browser-z-saiyan-lumina",
+      "classification": "CANONICAL_PATH_MISSING",
+      "source_trust": "TRUSTED_STRUCTURAL",
+      "evidence": [
+        "pc_root.path empty",
+        "hosting=missing",
+        "migration_status=path_missing"
+      ],
+      "note": "No auto-promote of another disk copy"
+    },
+    {
+      "case_id": "gem_d2_package_similarity",
+      "subject": "z-sanctuary-gem",
+      "related_to": "amk-goku-dashboards-2",
+      "classification": "POSSIBLE_RELATIONSHIP",
+      "source_trust": "OBSERVATIONAL_ONLY",
+      "evidence": [
+        "package.json name=amk-goku-dashboards-2",
+        "≠ identity bind to registry id amk-goku-dashboards-2"
+      ],
+      "note": "PACKAGE NAME ≠ CANONICAL AUTHORITY · no SAME_PROJECT / alias"
+    },
+    {
+      "case_id": "known_awareness_not_member",
+      "subject": "super-saiyan-roulette-pro-app",
+      "classification": "HOLD_UNCLASSIFIED",
+      "source_trust": "TRUSTED_STRUCTURAL",
+      "evidence": [
+        "disk_exists=true",
+        "path=C:\\Cursor Projects Organiser\\Super-Saiyan-Roulette-Pro-App",
+        "pc_root_member_row=false",
+        "KNOWN ≠ MEMBER"
+      ],
+      "note": "SSR: known awareness state · no membership grant",
+      "awareness_state": "KNOWN_ON_DISK"
+    },
+    {
+      "case_id": "known_awareness_not_member",
+      "subject": "z-family-health",
+      "classification": "HOLD_UNCLASSIFIED",
+      "source_trust": "TRUSTED_STRUCTURAL",
+      "evidence": [
+        "disk_exists=true",
+        "path=C:\\Cursor Projects Organiser\\Z-Family Health",
+        "pc_root_member_row=false",
+        "KNOWN ≠ MEMBER"
+      ],
+      "note": "Z-Family Health: known awareness state · no membership grant",
+      "awareness_state": "KNOWN_ON_DISK"
+    },
+    {
+      "case_id": "external_not_missing",
+      "subject": "astralis",
+      "classification": "EXTERNAL",
+      "source_trust": "TRUSTED_CANON",
+      "evidence": [
+        "PID-0.5 case table · EXTERNAL ≠ MISSING",
+        "No Organiser incorporation · no registry membership inferred"
+      ],
+      "note": "ASTRALIS: external organism · not a missing Sanctuary citizen"
+    },
+    {
+      "case_id": "external_not_missing",
+      "subject": "z-oisela",
+      "classification": "EXTERNAL",
+      "source_trust": "TRUSTED_CANON",
+      "evidence": [
+        "PID-0.5 case table · EXTERNAL ≠ MISSING",
+        "No Organiser incorporation · no registry membership inferred"
+      ],
+      "note": "Z-Oisela: external organism · not a missing Sanctuary citizen"
+    }
+  ],
+  "case_tests": [
+    {
+      "id": "case_hub_worktrees",
+      "expected": "WORKTREE_OF · not members",
+      "observed_count": 3,
+      "pass": true,
+      "detail": [
+        "C:/Cursor Projects Organiser/Z_Sanctuary_Universe_wt_ggaesp_evolve_e1",
+        "C:/Cursor Projects Organiser/Z_Sanctuary_Universe_wt_integrity_reverify",
+        "C:/Cursor Projects Organiser/Z_Sanctuary_Universe_wt_sidework0"
+      ]
+    },
+    {
+      "id": "case_lumina_missing_path",
+      "expected": "CANONICAL_PATH_MISSING · no promote",
+      "pass": true,
+      "detail": [
+        {
+          "case_id": "empty_registry_path",
+          "subject": "z-sanctuary-browser-z-saiyan-lumina",
+          "classification": "CANONICAL_PATH_MISSING",
+          "source_trust": "TRUSTED_STRUCTURAL",
+          "evidence": [
+            "pc_root.path empty",
+            "hosting=missing",
+            "migration_status=path_missing"
+          ],
+          "note": "No auto-promote of another disk copy"
+        }
+      ]
+    },
+    {
+      "id": "case_universe_2_hold",
+      "expected": "HOLD_UNCLASSIFIED · not CONTINUATION_OF",
+      "pass": true,
+      "detail": [
+        "z-sanctuary-universe-2",
+        "z-sanctuary-universe-2-continuation"
+      ]
+    },
+    {
+      "id": "case_gem_d2_similarity",
+      "expected": "POSSIBLE_RELATIONSHIP · no bind",
+      "pass": true,
+      "detail": {
+        "ok": true,
+        "name": "amk-goku-dashboards-2",
+        "path": "C:\\Cursor Projects Organiser\\Z-Sanctuary Gem\\package.json",
+        "trust": "OBSERVATIONAL_ONLY"
+      }
+    },
+    {
+      "id": "case_ssr_family_awareness",
+      "expected": "KNOWN awareness · not MEMBER",
+      "pass": true,
+      "detail": [
+        {
+          "case_id": "known_awareness_not_member",
+          "subject": "super-saiyan-roulette-pro-app",
+          "classification": "HOLD_UNCLASSIFIED",
+          "source_trust": "TRUSTED_STRUCTURAL",
+          "evidence": [
+            "disk_exists=true",
+            "path=C:\\Cursor Projects Organiser\\Super-Saiyan-Roulette-Pro-App",
+            "pc_root_member_row=false",
+            "KNOWN ≠ MEMBER"
+          ],
+          "note": "SSR: known awareness state · no membership grant",
+          "awareness_state": "KNOWN_ON_DISK"
+        },
+        {
+          "case_id": "known_awareness_not_member",
+          "subject": "z-family-health",
+          "classification": "HOLD_UNCLASSIFIED",
+          "source_trust": "TRUSTED_STRUCTURAL",
+          "evidence": [
+            "disk_exists=true",
+            "path=C:\\Cursor Projects Organiser\\Z-Family Health",
+            "pc_root_member_row=false",
+            "KNOWN ≠ MEMBER"
+          ],
+          "note": "Z-Family Health: known awareness state · no membership grant",
+          "awareness_state": "KNOWN_ON_DISK"
+        }
+      ]
+    },
+    {
+      "id": "case_astralis_oisela_external",
+      "expected": "EXTERNAL · NOT MISSING",
+      "pass": true,
+      "detail": [
+        {
+          "case_id": "external_not_missing",
+          "subject": "astralis",
+          "classification": "EXTERNAL",
+          "source_trust": "TRUSTED_CANON",
+          "evidence": [
+            "PID-0.5 case table · EXTERNAL ≠ MISSING",
+            "No Organiser incorporation · no registry membership inferred"
+          ],
+          "note": "ASTRALIS: external organism · not a missing Sanctuary citizen"
+        },
+        {
+          "case_id": "external_not_missing",
+          "subject": "z-oisela",
+          "classification": "EXTERNAL",
+          "source_trust": "TRUSTED_CANON",
+          "evidence": [
+            "PID-0.5 case table · EXTERNAL ≠ MISSING",
+            "No Organiser incorporation · no registry membership inferred"
+          ],
+          "note": "Z-Oisela: external organism · not a missing Sanctuary citizen"
+        }
+      ]
+    }
+  ],
+  "case_tests_pass": true,
+  "overall_observer_signal": "BLUE",
+  "script": "scripts\\z_project_identity_observe_status.mjs"
+}

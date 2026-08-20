@@ -165,6 +165,7 @@
     "z:crystal:dna:drift": "node scripts/z_crystal_dna_drift_check.mjs",
     "z:anydevice:simulate": "node scripts/z_anydevice_simulate.mjs",
     "z:cycle:observe": "node scripts/z_cycle_observe_status.mjs",
+    "z:project-identity:observe": "node scripts/z_project_identity_observe_status.mjs",
     "z:deployment:readiness": "node scripts/z_deployment_readiness_status.mjs",
     "z:eaii:knowledge": "node scripts/z_eaii_knowledge_index.mjs",
     "z:indicators:atlas": "node scripts/z_generate_indicator_source_atlas.mjs",
