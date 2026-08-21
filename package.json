@@ -366,7 +366,15 @@
     "autonomous:safe-recover": "node scripts/z_autonomous_watchdog.mjs --self-heal",
     "z:garage:full-scan": "node scripts/z_garage_scanner.mjs && node scripts/z_ci_core.mjs && node scripts/z_garage_planner.mjs && npm run ai:dsr:analyze && npm run ai:ecosphere:refresh && npm run ai:ecosphere:delta && npm run ai:signal:health && npm run ai:system:health && npm run ai:communication:health && npm run vault:spine:verify && npm run ai:formula:sync && npm run ai:consistency:check && npm run ai:system:coherence && npm run ai:adaptive:coherence && npm run ai:traffic:intelligence && npm run ai:self:tuning && npm run ai:experience:memory && npm run ai:experience:intelligence && npm run ai:fusion:council && npm run ai:fhmff:lite && npm run ai:ecosphere:ledger && node scripts/z_zuno_state_report.mjs && npm run dashboard:registry-verify",
     "z:pc:ide-admin": "node scripts/z_pc_ide_admin_check.mjs",
-    "z:cmd:center": "node scripts/z_cmd_center_status.mjs"
+    "z:cmd:center": "node scripts/z_cmd_center_status.mjs",
+    "ts:check:ggaesp": "tsc --noEmit -p core_engine/tsconfig.json && tsc --noEmit -p core_engine/tsconfig.node.json && tsc --noEmit -p core_engine/tsconfig.heatmap_dev_sample.json",
+    "ts:build:ggaesp": "tsc -p core_engine/tsconfig.json && tsc -p core_engine/tsconfig.node.json && tsc -p core_engine/tsconfig.heatmap_dev_sample.json",
+    "ts:run:ggaesp": "node core_engine/browser/ggaesp_test.js",
+    "ts:run:ggaesp:heatmap": "node core_engine/dist_heatmap/ggaesp_heatmap_dev_sample.js",
+    "ts:run:ggaesp:heatmap:go": "node core_engine/dist_heatmap/ggaesp_heatmap_go_dev_sample.js",
+    "ts:run:ggaesp:heatmap:browser": "node core_engine/browser/ggaesp_heatmap_dev_sample.js",
+    "ts:run:ggaesp:heatmap:go:browser": "node core_engine/browser/ggaesp_heatmap_go_dev_sample.js",
+    "ggaesp:memory:append": "node scripts/z_ggaesp_memory_append.mjs"
   },
   "devDependencies": {
     "@commitlint/cli": "^19.3.0",
