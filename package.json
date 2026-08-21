@@ -378,7 +378,8 @@
     "test:e2e": "playwright test",
     "test:e2e:smoke": "playwright test e2e/smoke.spec.js",
     "test:e2e:reality": "playwright test e2e/reality-map.spec.js --workers=1",
-    "test:e2e:reality-run": "node scripts/z_e2e_reality_runner.mjs"
+    "test:e2e:reality-run": "node scripts/z_e2e_reality_runner.mjs",
+    "z:formula:semantic-goldens": "node scripts/z_formula_semantic_goldens.mjs"
   },
   "devDependencies": {
     "@commitlint/cli": "^19.3.0",

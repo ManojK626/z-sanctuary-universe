@@ -1,0 +1,84 @@
+{
+  "schema": "z_formula_semantic_goldens_v1",
+  "gate": "Z-SANCTUARY-FORMULA-SEMANTIC-GOLDENS-1",
+  "lineage": "omnai_omega_rsi_simulation",
+  "lineage_law": "OMNAI omega_formula.js is a separate technology from Ultra Ω. Never merge. Simulation / planning only.",
+  "entrypoint": "core/omnai/omega_formula.js",
+  "provenance": "Directly from exported TIER_POWER table and documented tierFromRsiCycles / rsiStep contracts in omega_formula.js.",
+  "vectors": [
+    {
+      "id": "omnai_tier_0",
+      "fn": "tierFromRsiCycles",
+      "args": [0],
+      "expect": {
+        "tier_key": "TIER_1",
+        "tier_index": 0,
+        "rsi_cycles": 0,
+        "multiplier": 1
+      }
+    },
+    {
+      "id": "omnai_tier_1",
+      "fn": "tierFromRsiCycles",
+      "args": [1],
+      "expect": {
+        "tier_key": "TIER_2",
+        "tier_index": 1,
+        "rsi_cycles": 1,
+        "multiplier": 10
+      }
+    },
+    {
+      "id": "omnai_tier_2",
+      "fn": "tierFromRsiCycles",
+      "args": [2],
+      "expect": {
+        "tier_key": "TIER_3",
+        "tier_index": 2,
+        "rsi_cycles": 2,
+        "multiplier": 100
+      }
+    },
+    {
+      "id": "omnai_tier_3",
+      "fn": "tierFromRsiCycles",
+      "args": [3],
+      "expect": {
+        "tier_key": "TIER_4",
+        "tier_index": 3,
+        "rsi_cycles": 3,
+        "multiplier": 1000
+      }
+    },
+    {
+      "id": "omnai_tier_4",
+      "fn": "tierFromRsiCycles",
+      "args": [4],
+      "expect": {
+        "tier_key": "TIER_5",
+        "tier_index": 4,
+        "rsi_cycles": 4,
+        "multiplier": 10000
+      }
+    },
+    {
+      "id": "omnai_tier_5_inf",
+      "fn": "tierFromRsiCycles",
+      "args": [5],
+      "expect": {
+        "tier_key": "TIER_INF",
+        "tier_index": null,
+        "rsi_cycles": 5,
+        "multiplier": "Infinity"
+      }
+    },
+    {
+      "id": "omnai_rsi_step_100_1_05",
+      "fn": "rsiStep",
+      "args": [100, 1.05, 1000000000],
+      "expect": {
+        "value": 125.89254117941675
+      }
+    }
+  ]
+}

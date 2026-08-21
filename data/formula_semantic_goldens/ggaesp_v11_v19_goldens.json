@@ -1,0 +1,108 @@
+{
+  "schema": "z_formula_semantic_goldens_v1",
+  "gate": "Z-SANCTUARY-FORMULA-SEMANTIC-GOLDENS-1",
+  "lineage": "ggaesp_v11_v19_advisory",
+  "lineage_law": "Shared vocabulary does not imply shared implementation. Not Ultra chambers. Not Ultra Ω.",
+  "entrypoint": "core_engine/browser/ggaesp_pipeline.js#runGGAESP",
+  "provenance": "Proven in Reality Validation + Z-SANCTUARY-GGAESP-NPM-WIRING-1; sealed as permanent regression evidence.",
+  "semantic_fields": [
+    "decision",
+    "polarity",
+    "metaScore",
+    "confidence",
+    "energyMode"
+  ],
+  "non_semantic_ignored": ["timestamp", "ISO datetime strings", "opaque ids"],
+  "vectors": [
+    {
+      "id": "ggaesp_good_go",
+      "moduleId": "golden_good",
+      "data": {
+        "profit": 80,
+        "risk": 20,
+        "noise": 10,
+        "collectiveAgreement": 80,
+        "herdRisk": 10,
+        "falseCorrelation": 5
+      },
+      "humanState": {
+        "calm": 80,
+        "focus": 80,
+        "fatigue": 10,
+        "anxiety": 10,
+        "confidence": 80
+      },
+      "expect": {
+        "decision": "GO",
+        "polarity": "neutral",
+        "metaScore": 74,
+        "confidence": 89,
+        "energyMode": "LOW"
+      }
+    },
+    {
+      "id": "ggaesp_risk100_block",
+      "moduleId": "golden_risk100",
+      "data": {
+        "profit": 50,
+        "risk": 100,
+        "noise": 50,
+        "collectiveAgreement": 50,
+        "herdRisk": 50,
+        "falseCorrelation": 50
+      },
+      "humanState": {
+        "calm": 50,
+        "focus": 50,
+        "fatigue": 50,
+        "anxiety": 50,
+        "confidence": 50
+      },
+      "expect": {
+        "decision": "BLOCK",
+        "polarity": "negative",
+        "metaScore": 25,
+        "confidence": 35,
+        "energyMode": "LOW"
+      }
+    },
+    {
+      "id": "ggaesp_empty_prepare",
+      "moduleId": "golden_empty",
+      "data": {},
+      "humanState": {},
+      "expect": {
+        "decision": "PREPARE",
+        "polarity": "neutral",
+        "metaScore": 43,
+        "confidence": 64,
+        "energyMode": "LOW"
+      }
+    },
+    {
+      "id": "ggaesp_heavy_prepare",
+      "moduleId": "golden_heavy",
+      "data": {
+        "heavy": true,
+        "profit": 75,
+        "risk": 30,
+        "noise": 20,
+        "collectiveAgreement": 60,
+        "herdRisk": 15,
+        "falseCorrelation": 10
+      },
+      "humanState": {
+        "fatigue": 20,
+        "anxiety": 15,
+        "confidence": 60
+      },
+      "expect": {
+        "decision": "PREPARE",
+        "polarity": "neutral",
+        "metaScore": 67,
+        "confidence": 77,
+        "energyMode": "HIGH"
+      }
+    }
+  ]
+}
