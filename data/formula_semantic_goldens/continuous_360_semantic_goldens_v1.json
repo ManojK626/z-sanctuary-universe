@@ -1,0 +1,691 @@
+{
+  "schema": "z_continuous_360_semantic_goldens_v1",
+  "golden_pack_id": "continuous-360-semantic-goldens-v1",
+  "family": "continuous-360-multidimensional-field",
+  "version": "1.0.0",
+  "gate": "Z-SANCTUARY-CONTINUOUS-360-SEMANTIC-GOLDENS-ACCEPT-ENCODE-1.3",
+  "maturity_target": "F4",
+  "maturity_claim": "F4_CANONICAL_EXPECTED_VECTORS",
+  "implementation_required_to_exist": false,
+  "field_runtime_exists": false,
+  "goldens_define_expectation_for_future_implementation": true,
+  "executable": false,
+  "path_convention_note": "Placed under data/formula_semantic_goldens/ to match established hub golden convention (same directory as GGAESP/OMNAI packs). Charter path data/goldens/ was not used.",
+  "steward_control_policy": {
+    "binary_predicates": true,
+    "multi_valued_state_outcomes": true,
+    "custom_multi_valued_truth_table": false,
+    "hold_block_stop": {
+      "hold": "Preserve current state; pause progression pending evidence/dependency/human/Steward resolution. NOT rejection.",
+      "block": "Current candidate transition/action explicitly prohibited. Does NOT necessarily terminate entire containing process.",
+      "stop": "Terminate current bounded process/path. Reason must remain explicit. Does NOT necessarily imply candidate was unsafe.",
+      "distinct": true,
+      "merged": false,
+      "ggaesp_semantics_changed": false
+    },
+    "xor_required": "NOT_ESTABLISHED",
+    "xor_status": "DEFERRED",
+    "shadow_control_primitive": "DEFERRED_PENDING_SHADOW_SPEC",
+    "control_branch_equals_shadow": false
+  },
+  "source_spec": [
+    "docs/Z_CONTINUOUS_360_MULTIDIMENSIONAL_FIELD_SPEC_1.md",
+    "docs/Z_CONTINUOUS_360_STEWARD_P0_DECISIONS_1_1.md",
+    "docs/Z_CONTINUOUS_360_SEMANTIC_GOLDENS_DESIGN_1_2.md",
+    "docs/Z_LOGIC_AND_CONTROL_GRAMMAR_SPEC_0.md"
+  ],
+  "accepted_vector_ids": [
+    "C360-A1",
+    "C360-A2",
+    "C360-A4",
+    "C360-B3",
+    "C360-B4",
+    "C360-C1",
+    "C360-D1",
+    "C360-D2",
+    "C360-E1",
+    "C360-E2",
+    "C360-F1",
+    "C360-F2",
+    "C360-G1",
+    "C360-G2",
+    "C360-H1",
+    "C360-I2",
+    "C360-J1",
+    "C360-J3",
+    "C360-K1",
+    "C360-K3",
+    "C360-L1",
+    "C360-M3",
+    "C360-Q1",
+    "C360-P1"
+  ],
+  "vector_count": 24,
+  "vectors": [
+    {
+      "id": "C360-A1",
+      "priority": "P0",
+      "invariant": "UNKNOWN ≠ ZERO",
+      "input": {
+        "value_status": "unknown"
+      },
+      "expected_representation": {
+        "value_class": "UNKNOWN"
+      },
+      "prohibited_outcomes": [
+        "0",
+        "numeric_zero_coercion"
+      ],
+      "provenance_expectation": "unchanged_or_UNKNOWN",
+      "uncertainty_expectation": "NOT_ASSESSED_or_compatible_unknown_kind",
+      "authority_expectation": "NONE_automatic",
+      "control_logic_mapping": "IF value_status == UNKNOWN THEN MUST NOT coerce to ZERO",
+      "rationale": "Null/unknown law from Continuous 360 F3 / P0",
+      "spec_references": [
+        "docs/Z_CONTINUOUS_360_MULTIDIMENSIONAL_FIELD_SPEC_1.md",
+        "docs/Z_CONTINUOUS_360_SEMANTIC_GOLDENS_DESIGN_1_2.md#C360-A1"
+      ]
+    },
+    {
+      "id": "C360-A2",
+      "priority": "P0",
+      "invariant": "MISSING ≠ ZERO",
+      "input": {
+        "required_observation": "absent"
+      },
+      "expected_representation": {
+        "value_class": [
+          "MISSING",
+          "NOT_OBSERVED"
+        ]
+      },
+      "prohibited_outcomes": [
+        "0",
+        "default_zero"
+      ],
+      "provenance_expectation": "absence_explicit",
+      "uncertainty_expectation": "MISSING_EVIDENCE_compatible",
+      "authority_expectation": "NONE_automatic",
+      "control_logic_mapping": "IF required_observation absent THEN represent MISSING/NOT_OBSERVED AND MUST NOT coerce to ZERO",
+      "rationale": "Absence is not measurement",
+      "spec_references": [
+        "docs/Z_CONTINUOUS_360_SEMANTIC_GOLDENS_DESIGN_1_2.md#C360-A2"
+      ]
+    },
+    {
+      "id": "C360-A4",
+      "priority": "P0",
+      "invariant": "NULL ≠ ZERO ≠ UNKNOWN ≠ MISSING ≠ NOT_APPLICABLE",
+      "input": {
+        "classes": [
+          "NULL",
+          "ZERO",
+          "UNKNOWN",
+          "MISSING",
+          "NOT_APPLICABLE"
+        ]
+      },
+      "expected_representation": {
+        "distinct_class_count": 5
+      },
+      "prohibited_outcomes": [
+        "single_sentinel_collapse"
+      ],
+      "provenance_expectation": "per_class_retained",
+      "uncertainty_expectation": "per_class_compatible",
+      "authority_expectation": "NONE_automatic",
+      "control_logic_mapping": "MATCH value_class → distinct pathway; MUST NOT collapse classes",
+      "rationale": "Five-way null distinctions",
+      "spec_references": [
+        "docs/Z_CONTINUOUS_360_SEMANTIC_GOLDENS_DESIGN_1_2.md#C360-A4"
+      ]
+    },
+    {
+      "id": "C360-B3",
+      "priority": "P0",
+      "invariant": "FORMULA_DERIVED ≠ OBSERVED_FACT",
+      "input": {
+        "output_kind": "formula_result"
+      },
+      "expected_representation": {
+        "provenance": "FORMULA_DERIVED",
+        "state_class_not": "OBSERVED_FACT"
+      },
+      "prohibited_outcomes": [
+        "OBSERVED_FACT",
+        "SENSOR_OBSERVED",
+        "SYSTEM_OBSERVED"
+      ],
+      "provenance_expectation": "FORMULA_DERIVED",
+      "uncertainty_expectation": "as_declared",
+      "authority_expectation": "NONE_automatic",
+      "control_logic_mapping": "IF provenance == FORMULA_DERIVED THEN MUST NOT classify as OBSERVED_FACT",
+      "rationale": "Formula output is derived, not observed",
+      "spec_references": [
+        "docs/Z_CONTINUOUS_360_SEMANTIC_GOLDENS_DESIGN_1_2.md#C360-B3"
+      ]
+    },
+    {
+      "id": "C360-B4",
+      "priority": "P0",
+      "invariant": "AI_PROPOSED ≠ OBSERVED_FACT",
+      "input": {
+        "output_kind": "ai_candidate"
+      },
+      "expected_representation": {
+        "provenance": "AI_PROPOSED"
+      },
+      "prohibited_outcomes": [
+        "OBSERVED_FACT",
+        "HUMAN_CONFIRMED",
+        "SENSOR_OBSERVED",
+        "SYSTEM_OBSERVED"
+      ],
+      "provenance_expectation": "AI_PROPOSED",
+      "uncertainty_expectation": "explicit",
+      "authority_expectation": "NONE_automatic",
+      "control_logic_mapping": "IF provenance == AI_PROPOSED THEN MUST NOT classify as OBSERVED",
+      "rationale": "AI proposal is not observed fact",
+      "spec_references": [
+        "docs/Z_CONTINUOUS_360_SEMANTIC_GOLDENS_DESIGN_1_2.md#C360-B4",
+        "docs/Z_LOGIC_AND_CONTROL_GRAMMAR_SPEC_0.md"
+      ]
+    },
+    {
+      "id": "C360-C1",
+      "priority": "P0",
+      "invariant": "State classes must not silently collapse",
+      "input": {
+        "state_classes": [
+          "RAW_STATE",
+          "NORMALIZED_STATE",
+          "DERIVED_STATE",
+          "FORMULA_STATE",
+          "SHADOW_STATE",
+          "PREDICTED_STATE",
+          "AI_PROPOSAL",
+          "HUMAN_CONFIRMED_STATE"
+        ]
+      },
+      "expected_representation": {
+        "each_class_distinct": true
+      },
+      "prohibited_outcomes": [
+        "silent_merge",
+        "AI_PROPOSAL_as_HUMAN_CONFIRMED_without_gate"
+      ],
+      "provenance_expectation": "per_state_class",
+      "uncertainty_expectation": "per_state_class",
+      "authority_expectation": "HUMAN_GATED_for_acceptance",
+      "control_logic_mapping": "MATCH state_class → pathway; REQUIRE Steward/human for HUMAN_CONFIRMED elevation",
+      "rationale": "Observation ≠ derivation ≠ prediction ≠ Shadow ≠ AI proposal",
+      "spec_references": [
+        "docs/Z_CONTINUOUS_360_SEMANTIC_GOLDENS_DESIGN_1_2.md#C360-C1"
+      ]
+    },
+    {
+      "id": "C360-D1",
+      "priority": "P0",
+      "invariant": "OBSERVED ≠ SHADOW; both retained",
+      "input": {
+        "observed_state": "present",
+        "shadow_state": "added_later"
+      },
+      "expected_representation": {
+        "observed_retained": true,
+        "shadow_retained": true,
+        "classes_distinct": true
+      },
+      "prohibited_outcomes": [
+        "overwrite_observed_with_shadow",
+        "drop_either"
+      ],
+      "provenance_expectation": "observed_and_shadow_separate",
+      "uncertainty_expectation": "per_branch",
+      "authority_expectation": "NONE_automatic",
+      "control_logic_mapping": "IF Shadow added THEN preserve Observed AND preserve Shadow",
+      "rationale": "Shadow is alternate, not replacement",
+      "spec_references": [
+        "docs/Z_CONTINUOUS_360_SEMANTIC_GOLDENS_DESIGN_1_2.md#C360-D1"
+      ]
+    },
+    {
+      "id": "C360-D2",
+      "priority": "P0",
+      "invariant": "Shadow disagreement does not overwrite observed",
+      "input": {
+        "observed": "A",
+        "shadow": "not_A"
+      },
+      "expected_representation": {
+        "observed": "A",
+        "shadow": "not_A"
+      },
+      "prohibited_outcomes": [
+        "observed_mutated_to_shadow"
+      ],
+      "provenance_expectation": "both_retained",
+      "uncertainty_expectation": "CONFLICTING_EVIDENCE_compatible",
+      "authority_expectation": "NONE_automatic",
+      "control_logic_mapping": "IF Shadow disagrees with Observed THEN MUST NOT overwrite Observed",
+      "rationale": "Control branch ≠ Shadow; observed remains",
+      "spec_references": [
+        "docs/Z_CONTINUOUS_360_SEMANTIC_GOLDENS_DESIGN_1_2.md#C360-D2"
+      ]
+    },
+    {
+      "id": "C360-E1",
+      "priority": "P0",
+      "invariant": "PREDICTED ≠ OBSERVED",
+      "input": {
+        "future_prediction": true
+      },
+      "expected_representation": {
+        "state_class": "PREDICTED_STATE"
+      },
+      "prohibited_outcomes": [
+        "OBSERVED_PRESENT"
+      ],
+      "provenance_expectation": "prediction_provenance",
+      "uncertainty_expectation": "explicit",
+      "authority_expectation": "NONE_automatic",
+      "control_logic_mapping": "IF state is prediction THEN classify PREDICTED_STATE NOT OBSERVED_PRESENT",
+      "rationale": "Future is not observed present",
+      "spec_references": [
+        "docs/Z_CONTINUOUS_360_SEMANTIC_GOLDENS_DESIGN_1_2.md#C360-E1"
+      ]
+    },
+    {
+      "id": "C360-E2",
+      "priority": "P0",
+      "invariant": "Later observation does not mutate historical prediction",
+      "input": {
+        "prior_prediction": "P",
+        "later_observation": "O"
+      },
+      "expected_representation": {
+        "new_observation": "O",
+        "historical_prediction_preserved": "P"
+      },
+      "prohibited_outcomes": [
+        "prediction_rewritten_as_observation"
+      ],
+      "provenance_expectation": "both_retained",
+      "uncertainty_expectation": "per_record",
+      "authority_expectation": "NONE_automatic",
+      "control_logic_mapping": "WHEN observation arrives after prediction THEN CREATE observation AND RETAIN prediction",
+      "rationale": "History retention for forecasts",
+      "spec_references": [
+        "docs/Z_CONTINUOUS_360_SEMANTIC_GOLDENS_DESIGN_1_2.md#C360-E2"
+      ]
+    },
+    {
+      "id": "C360-F1",
+      "priority": "P0",
+      "invariant": "Conflicting observations both retained",
+      "input": {
+        "source_a": "X",
+        "source_b": "not_X",
+        "both_validly_represented": true
+      },
+      "expected_representation": {
+        "a_retained": true,
+        "b_retained": true,
+        "conflict_mark": "CONFLICTING"
+      },
+      "prohibited_outcomes": [
+        "drop_a",
+        "drop_b",
+        "silent_average",
+        "majority_as_truth"
+      ],
+      "provenance_expectation": "per_source",
+      "uncertainty_expectation": "CONFLICTING_EVIDENCE",
+      "authority_expectation": "NONE_automatic",
+      "control_logic_mapping": "IF A conflicts with B THEN preserve A AND preserve B AND mark CONFLICTING",
+      "rationale": "Conflict preservation law",
+      "spec_references": [
+        "docs/Z_CONTINUOUS_360_SEMANTIC_GOLDENS_DESIGN_1_2.md#C360-F1",
+        "docs/Z_LOGIC_AND_CONTROL_GRAMMAR_SPEC_0.md"
+      ]
+    },
+    {
+      "id": "C360-F2",
+      "priority": "P0",
+      "invariant": "Stronger provenance does not delete weaker",
+      "input": {
+        "stronger": "A",
+        "weaker": "B",
+        "conflict": true
+      },
+      "expected_representation": {
+        "weaker_retained": true
+      },
+      "prohibited_outcomes": [
+        "auto_truth_winner",
+        "delete_weaker"
+      ],
+      "provenance_expectation": "both_retained",
+      "uncertainty_expectation": "CONFLICTING_EVIDENCE",
+      "authority_expectation": "NONE_automatic_without_domain_contract",
+      "control_logic_mapping": "IF conflict AND stronger_provenance THEN MUST NOT delete weaker unless domain contract authorizes",
+      "rationale": "No automatic conflict resolution",
+      "spec_references": [
+        "docs/Z_CONTINUOUS_360_SEMANTIC_GOLDENS_DESIGN_1_2.md#C360-F2"
+      ]
+    },
+    {
+      "id": "C360-G1",
+      "priority": "P0",
+      "invariant": "STATE_TRANSITION ≠ STATE_OVERWRITE",
+      "input": {
+        "s1": "present",
+        "s2": "arrives"
+      },
+      "expected_representation": {
+        "s1_retained": true,
+        "s2_added": true,
+        "transition_representable": true
+      },
+      "prohibited_outcomes": [
+        "s1_lost"
+      ],
+      "provenance_expectation": "versioned",
+      "uncertainty_expectation": "per_version",
+      "authority_expectation": "NONE_automatic",
+      "control_logic_mapping": "WHEN S2 accepted THEN CREATE S2 AND RETAIN S1",
+      "rationale": "Versioning law",
+      "spec_references": [
+        "docs/Z_CONTINUOUS_360_SEMANTIC_GOLDENS_DESIGN_1_2.md#C360-G1",
+        "docs/Z_LOGIC_AND_CONTROL_GRAMMAR_SPEC_0.md"
+      ]
+    },
+    {
+      "id": "C360-G2",
+      "priority": "P0",
+      "invariant": "Human correction retains history",
+      "input": {
+        "prior_state": "S_old",
+        "correction": "S_new_accepted"
+      },
+      "expected_representation": {
+        "old_retained": true,
+        "correction_is_new_version": true
+      },
+      "prohibited_outcomes": [
+        "delete_old_on_correction"
+      ],
+      "provenance_expectation": "HUMAN_DECLARED_or_HUMAN_CONFIRMED_on_correction",
+      "uncertainty_expectation": "per_version",
+      "authority_expectation": "HUMAN_GATED",
+      "control_logic_mapping": "WHEN human correction accepted THEN new version AND retain prior",
+      "rationale": "Correction ≠ deletion",
+      "spec_references": [
+        "docs/Z_CONTINUOUS_360_SEMANTIC_GOLDENS_DESIGN_1_2.md#C360-G2"
+      ]
+    },
+    {
+      "id": "C360-H1",
+      "priority": "P0",
+      "invariant": "Sequence order preserved",
+      "input": {
+        "sequence": [
+          "S1",
+          "S2",
+          "S3"
+        ]
+      },
+      "expected_representation": {
+        "order_preserved": true
+      },
+      "prohibited_outcomes": [
+        "unordered_collapse"
+      ],
+      "provenance_expectation": "per_step",
+      "uncertainty_expectation": "per_step",
+      "authority_expectation": "NONE_automatic",
+      "control_logic_mapping": "FOR EACH sequence_step RETAIN order index",
+      "rationale": "SEQUENTIAL core of GENERAL profile",
+      "spec_references": [
+        "docs/Z_CONTINUOUS_360_SEMANTIC_GOLDENS_DESIGN_1_2.md#C360-H1"
+      ]
+    },
+    {
+      "id": "C360-I2",
+      "priority": "P0",
+      "invariant": "CORRELATION ≠ CAUSATION",
+      "input": {
+        "relationship_kind": "CORRELATION"
+      },
+      "expected_representation": {
+        "labeled": "CORRELATION"
+      },
+      "prohibited_outcomes": [
+        "CAUSATION_without_causal_contract"
+      ],
+      "provenance_expectation": "relationship_provenance",
+      "uncertainty_expectation": "as_declared",
+      "authority_expectation": "NONE_automatic",
+      "control_logic_mapping": "IF relationship is correlation THEN MUST NOT assert CAUSATION without causal contract",
+      "rationale": "Relationship honesty",
+      "spec_references": [
+        "docs/Z_CONTINUOUS_360_SEMANTIC_GOLDENS_DESIGN_1_2.md#C360-I2"
+      ]
+    },
+    {
+      "id": "C360-J1",
+      "priority": "P0",
+      "invariant": "NOT_ASSESSED ≠ CERTAIN",
+      "input": {
+        "assessment_status": "NOT_ASSESSED"
+      },
+      "expected_representation": {
+        "assessment_status": "NOT_ASSESSED"
+      },
+      "prohibited_outcomes": [
+        "CERTAIN",
+        "implicit_certainty"
+      ],
+      "provenance_expectation": "as_declared",
+      "uncertainty_expectation": {
+        "assessment_status": "NOT_ASSESSED"
+      },
+      "authority_expectation": "NONE_automatic",
+      "control_logic_mapping": "IF assessment_status == NOT_ASSESSED THEN represent uncertainty explicitly",
+      "rationale": "Structured non-numeric uncertainty P0-4",
+      "spec_references": [
+        "docs/Z_CONTINUOUS_360_STEWARD_P0_DECISIONS_1_1.md",
+        "docs/Z_CONTINUOUS_360_SEMANTIC_GOLDENS_DESIGN_1_2.md#C360-J1"
+      ]
+    },
+    {
+      "id": "C360-J3",
+      "priority": "P0",
+      "invariant": "CONFLICTING_EVIDENCE uncertainty kind",
+      "input": {
+        "conflict": true
+      },
+      "expected_representation": {
+        "uncertainty_kind": "CONFLICTING_EVIDENCE"
+      },
+      "prohibited_outcomes": [
+        "collapse_to_single_value"
+      ],
+      "provenance_expectation": "per_source",
+      "uncertainty_expectation": {
+        "uncertainty_kind": "CONFLICTING_EVIDENCE"
+      },
+      "authority_expectation": "NONE_automatic",
+      "control_logic_mapping": "IF conflict THEN uncertainty_kind may be CONFLICTING_EVIDENCE AND preserve both",
+      "rationale": "Uncertainty kind for conflict",
+      "spec_references": [
+        "docs/Z_CONTINUOUS_360_SEMANTIC_GOLDENS_DESIGN_1_2.md#C360-J3"
+      ]
+    },
+    {
+      "id": "C360-K1",
+      "priority": "P0",
+      "invariant": "GENERAL does not require Combat geometry",
+      "input": {
+        "profile": "GENERAL",
+        "spatial_coordinates": "absent"
+      },
+      "expected_representation": {
+        "valid_general_observation": true
+      },
+      "prohibited_outcomes": [
+        "require_xyz",
+        "invalid_without_spatial"
+      ],
+      "provenance_expectation": "as_declared",
+      "uncertainty_expectation": "as_declared",
+      "authority_expectation": "NONE_automatic",
+      "control_logic_mapping": "IF profile == GENERAL THEN spatial dimensions NOT REQUIRED",
+      "rationale": "GENERAL minimum profile P0-3",
+      "spec_references": [
+        "docs/Z_CONTINUOUS_360_STEWARD_P0_DECISIONS_1_1.md",
+        "docs/Z_CONTINUOUS_360_SEMANTIC_GOLDENS_DESIGN_1_2.md#C360-K1"
+      ]
+    },
+    {
+      "id": "C360-K3",
+      "priority": "P0",
+      "invariant": "Combat 4–5 cm does not become global",
+      "input": {
+        "voxel_size_cm_recommended": "4-5",
+        "profile": "COMBAT"
+      },
+      "expected_representation": {
+        "specificity": "COMBAT_SPECIFIC"
+      },
+      "prohibited_outcomes": [
+        "GLOBAL_GENERAL_RESOLUTION",
+        "universal_fixed_resolution"
+      ],
+      "provenance_expectation": "combat_codex",
+      "uncertainty_expectation": "domain",
+      "authority_expectation": "NONE_on_GENERAL",
+      "control_logic_mapping": "IF Combat voxel evidence THEN mark COMBAT_SPECIFIC AND MUST NOT set GLOBAL_GENERAL_RESOLUTION",
+      "rationale": "GLOBAL_FIXED_RESOLUTION = NOT AUTHORIZED",
+      "spec_references": [
+        "docs/Z_CONTINUOUS_360_SEMANTIC_GOLDENS_DESIGN_1_2.md#C360-K3"
+      ]
+    },
+    {
+      "id": "C360-L1",
+      "priority": "P0",
+      "invariant": "GENERAL requires no universal field cell",
+      "input": {
+        "profile": "GENERAL",
+        "field_cell": "absent"
+      },
+      "expected_representation": {
+        "atomic_evidence": "FieldObservation",
+        "universal_cell_required": false
+      },
+      "prohibited_outcomes": [
+        "require_voxel",
+        "require_cube",
+        "require_Z-Unit",
+        "require_lattice_cell"
+      ],
+      "provenance_expectation": "as_declared",
+      "uncertainty_expectation": "as_declared",
+      "authority_expectation": "NONE_automatic",
+      "control_logic_mapping": "IF profile == GENERAL THEN FieldObservation sufficient AND MUST NOT require universal cell",
+      "rationale": "GENERAL_FIXED_FIELD_CELL = NO",
+      "spec_references": [
+        "docs/Z_CONTINUOUS_360_STEWARD_P0_DECISIONS_1_1.md",
+        "docs/Z_CONTINUOUS_360_SEMANTIC_GOLDENS_DESIGN_1_2.md#C360-L1"
+      ]
+    },
+    {
+      "id": "C360-M3",
+      "priority": "P0",
+      "invariant": "HYBRID ≠ EVERY REPRESENTATION REQUIRED EVERY TIME",
+      "input": {
+        "representation_arms_used": [
+          "domain_spatial_optional"
+        ]
+      },
+      "expected_representation": {
+        "hybrid_allows_partial_arms": true
+      },
+      "prohibited_outcomes": [
+        "force_stream_and_graph_and_spatial_always"
+      ],
+      "provenance_expectation": "as_declared",
+      "uncertainty_expectation": "as_declared",
+      "authority_expectation": "NONE_automatic",
+      "control_logic_mapping": "IF hybrid THEN optional arms per need; MUST NOT require all forms simultaneously",
+      "rationale": "P0-5 HYBRID starting representation",
+      "spec_references": [
+        "docs/Z_CONTINUOUS_360_STEWARD_P0_DECISIONS_1_1.md",
+        "docs/Z_CONTINUOUS_360_SEMANTIC_GOLDENS_DESIGN_1_2.md#C360-M3"
+      ]
+    },
+    {
+      "id": "C360-Q1",
+      "priority": "P0",
+      "invariant": "Authority laws bundle",
+      "input": {
+        "scenarios": [
+          "more_dimensions",
+          "more_observers",
+          "swarm_consensus",
+          "ai_proposal",
+          "representation_only"
+        ]
+      },
+      "expected_representation": {
+        "laws": [
+          "REPRESENTATION ≠ AUTHORITY",
+          "MORE DIMENSIONS ≠ MORE TRUTH",
+          "MORE OBSERVERS ≠ MORE AUTHORITY",
+          "SWARM CONSENSUS ≠ STEWARD DECISION",
+          "AI PROPOSAL ≠ CANONICAL ACCEPTANCE",
+          "TRUE ≠ AUTHORIZED",
+          "READY ≠ DEPLOY",
+          "GO ≠ DEPLOY"
+        ]
+      },
+      "prohibited_outcomes": [
+        "auto_authorize_from_representation",
+        "auto_authorize_from_swarm",
+        "auto_deploy_from_GO"
+      ],
+      "provenance_expectation": "as_declared",
+      "uncertainty_expectation": "as_declared",
+      "authority_expectation": "STEWARD_or_HUMAN_GATED_for_acceptance",
+      "control_logic_mapping": "IF only representation/consensus/capability THEN MUST NOT elevate authority",
+      "rationale": "Constitutional authority wall",
+      "spec_references": [
+        "docs/Z_CONTINUOUS_360_SEMANTIC_GOLDENS_DESIGN_1_2.md#C360-Q1",
+        "docs/Z_LOGIC_AND_CONTROL_GRAMMAR_SPEC_0.md"
+      ]
+    },
+    {
+      "id": "C360-P1",
+      "priority": "P0",
+      "invariant": "Field remains usable without Z-AAI",
+      "input": {
+        "z_aai_available": false
+      },
+      "expected_representation": {
+        "field_usable": true,
+        "observations_inspectable": true
+      },
+      "prohibited_outcomes": [
+        "field_invalid_without_aai"
+      ],
+      "provenance_expectation": "human_system_evidence_retained",
+      "uncertainty_expectation": "as_declared",
+      "authority_expectation": "NONE_from_absence",
+      "control_logic_mapping": "IF Z-AAI unavailable THEN FALLBACK to deterministic observation inspection",
+      "rationale": "Graceful degradation",
+      "spec_references": [
+        "docs/Z_CONTINUOUS_360_SEMANTIC_GOLDENS_DESIGN_1_2.md#C360-P1"
+      ]
+    }
+  ]
+}
