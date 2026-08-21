@@ -1901,6 +1901,53 @@
       ],
       "last_known_basis": "SSR R3 checkpoint 83f282bd341b86be00156f2a21f33b606b614892; Observer seal 2d4d52d5cb5631978436e76da2e6c1c38d813a76; canonical path C:\\Cursor Projects Organiser\\Super-Saiyan-Roulette-Pro-App; Pro App docs SSR_OBSERVER_MODE.md + RECONSTRUCTION_STATUS.md; next candidate R4-MATH-SPEC-0 NOT OPEN; runtime monitor NONE; deployment NONE; push NONE; evidence freshness CURRENT; steward attention NONE.",
       "dynamic_overlay": "none"
+    },
+    {
+      "id": "z_family_health_observer_mode",
+      "name": "Z-Family Health — Observer Mode",
+      "domain": "project_posture",
+      "project_or_system": "Z-Family Health",
+      "signal": "BLUE",
+      "growth_percent": 38,
+      "readiness_label": "Known on disk · HOLD / OBSERVE_ONLY · Not a member · Next OFF · Runtime not tested (not RED)",
+      "go_no_go": "BLUE_HUMAN_DECISION_REQUIRED",
+      "autonomy_level": "L1_REPORT",
+      "posture_chips": [
+        "HOLD",
+        "OBSERVE_ONLY",
+        "KNOWN NOT MEMBER",
+        "NO AUTO-OPEN",
+        "NEXT OFF",
+        "INDICATOR ≠ PERMISSION"
+      ],
+      "advisory_law_lines": [
+        "Indicator ≠ permission. Known ≠ member. Member ≠ runtime. Runtime ≠ deployment.",
+        "HOLD / OBSERVE_ONLY — awareness only; membership NOT GRANTED",
+        "Auto-open NO · Next.js OFF / NOT STARTED · runtime NONE / NOT AUTHORIZED",
+        "Runtime NOT TESTED is not RED — do not fabricate PASS or FAIL",
+        "Secrets: VALUES NOT INSPECTED · env name DATABASE_URL known only · never paste values",
+        "BLUE human-governance hold ≠ GREEN for execution / membership / deploy"
+      ],
+      "recommended_next_action": "Leave Z-Family Health on HOLD / OBSERVE_ONLY. Do not auto-open the folder, start Next.js, grant Sanctuary membership, inspect secret values, or deploy. Steward review only.",
+      "human_confirmation_required": true,
+      "related_docs": [],
+      "related_reports": [],
+      "blocked_until": [
+        "steward_membership_charter",
+        "steward_runtime_or_next_authorization"
+      ],
+      "forbidden_actions": [
+        "grant_membership_via_indicator",
+        "auto_open_family_health",
+        "start_next_js",
+        "inspect_secret_values",
+        "deploy_family_health",
+        "treat_known_as_member",
+        "treat_readme_live_as_green",
+        "write_pc_root_or_census_from_indicator"
+      ],
+      "last_known_basis": "P2-N-C advisory design NC-C isolated R1; disk PRESENT at C:\\Cursor Projects Organiser\\Z-Family Health; package z-family-health 0.1.0 private; Next.js 15 + Prisma/SQLite on disk; git ABSENT; Next NOT STARTED; runtime NONE / NOT TESTED (not RED); deploy NONE; env dependency exists (name DATABASE_URL only — values not inspected); membership NOT GRANTED; auto-open NO. Basis is advisory design plus disk evidence — not dirty Universe 2, not continuation, not census regen.",
+      "dynamic_overlay": "none"
     }
   ]
 }

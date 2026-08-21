@@ -36,7 +36,9 @@ const md = [];
 md.push('# Indicator Source Atlas');
 md.push('');
 md.push('**Status:** ✅ v1 · Operating System Health · Super Turtle');
-md.push('**Date:** 2026-08-06');
+md.push(
+  '**Date:** 2026-08-21 · **Gate:** `Z-SANCTUARY-INDICATOR-SOURCE-ATLAS-RECONCILIATION-1`'
+);
 md.push('**Authority:** AMK-Goku');
 md.push('**Accepted with:** State of the OS first-pass (OS Health Report)');
 md.push('**Source registry:** `dashboard/data/amk_project_indicators.json`');
@@ -45,7 +47,13 @@ md.push(
   '**Law:** Indicator ≠ permission · Percentage ≠ certification · Go/No-Go ≠ deployment'
 );
 md.push(
+  '**Law (vocabulary):** Shared vocabulary does not imply shared implementation.'
+);
+md.push(
   '**Parent:** [Scorecard](Z_SANCTUARY_STATE_OF_THE_OS_2026_SCORECARD.md) · [Indicators doctrine](AMK_PROJECT_INDICATORS_AND_GO_NO_GO.md) · [Registry Atlas](Z_SANCTUARY_REGISTRY_ATLAS.md)'
+);
+md.push(
+  '**Reconciliation:** Live catalogue count must match this atlas row count (57 ↔ 57 after RECONCILIATION-1). Sealing identity ≠ promoting health. BLUE remains BLUE.'
 );
 md.push('');
 md.push('---');

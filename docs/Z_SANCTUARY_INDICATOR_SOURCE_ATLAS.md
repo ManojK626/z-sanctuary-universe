@@ -1,13 +1,15 @@
 # Indicator Source Atlas
 
 **Status:** ✅ v1 · Operating System Health · Super Turtle
-**Date:** 2026-08-06
+**Date:** 2026-08-21 · **Gate:** `Z-SANCTUARY-INDICATOR-SOURCE-ATLAS-RECONCILIATION-1`
 **Authority:** AMK-Goku
 **Accepted with:** State of the OS first-pass (OS Health Report)
 **Source registry:** `dashboard/data/amk_project_indicators.json`
 **Overlay script:** `dashboard/scripts/amk-project-indicators-readonly.js`
 **Law:** Indicator ≠ permission · Percentage ≠ certification · Go/No-Go ≠ deployment
+**Law (vocabulary):** Shared vocabulary does not imply shared implementation.
 **Parent:** [Scorecard](Z_SANCTUARY_STATE_OF_THE_OS_2026_SCORECARD.md) · [Indicators doctrine](AMK_PROJECT_INDICATORS_AND_GO_NO_GO.md) · [Registry Atlas](Z_SANCTUARY_REGISTRY_ATLAS.md)
+**Reconciliation:** Live catalogue count must match this atlas row count (57 ↔ 57 after RECONCILIATION-1). Sealing identity ≠ promoting health. BLUE remains BLUE.
 
 ---
 
@@ -41,7 +43,7 @@ Trust document only — **not** a new runtime or auto-refresh service.
 
 ---
 
-## Indicator catalogue (55 rows)
+## Indicator catalogue (57 rows)
 
 | ID | Name | Signal (static) | Overlay | Related reports | Related docs (first) | Owner | Cadence | Human verify |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -100,6 +102,8 @@ Trust document only — **not** a new runtime or auto-refresh service.
 | `z_legal_workstation_ux` | Z-Lawyer Workstation UX-2 (compact protector) | GREEN | `z_legal_workstation_ux` | — | `docs/PHASE_Z_LEGAL_WORKSTATION_UX_2_GREEN_RECEIPT.md` | AMK-Goku | When overlay report is refreshed (manual steward cadence) | Yes |
 | `dashboard_registry` | Dashboard registry verify | — | `dashboard_registry` | `data/reports/z_dashboard_registry_verify.json` | `dashboard/README.md` | AMK-Goku (hub steward) | When overlay report is refreshed (manual steward cadence) | Advisory |
 | `z_deployment_readiness` | Z-Deployment-Readiness overseer | — | `z_deployment_readiness` | `data/reports/z_deployment_readiness_status.json` | `docs/Z_DEPLOYMENT_READINESS_OVERSEER.md` | AMK-Goku (hub steward) | When overlay report is refreshed (manual steward cadence) | Advisory |
+| `ssr_observer_mode` | Super Saiyan Roulette — Observer Mode | GOLD | `none` | — | `docs/amk-goku-steward-ai/SSR_IMPLEMENTATION_UNAVAILABLE_STEWARD_SEAL.md` | AMK-Goku (hub steward) | Static JSON / phase receipt — refresh when docs change | Yes |
+| `z_family_health_observer_mode` | Z-Family Health — Observer Mode | BLUE | `none` | — | — | AMK-Goku (hub steward) | Static JSON / phase receipt — refresh when docs change | Yes |
 
 ---
 
