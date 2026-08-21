@@ -1,6 +1,6 @@
 {
   "schema": "z_formula_aai_identity_registry_v0_5",
-  "phase": "Z-SANCTUARY-FORMULA-AAI-IDENTITY-REGISTRY-0.5",
+  "phase": "Z-SANCTUARY-FORMULA-AAI-STEWARD-IDENTITY-DECISIONS-0.6",
   "mode": "identity_governance_only",
   "baseline_head": "8e3f32b",
   "sealed_at": "2026-08-21",
@@ -20,21 +20,42 @@
       "family": "ultra-instincts",
       "lineage": "hub-compassion",
       "generation": "doctrine-core",
-      "formula_type": ["SYMBOLIC", "GOVERNANCE"],
+      "formula_type": [
+        "SYMBOLIC",
+        "GOVERNANCE"
+      ],
       "maturity": "F1",
       "lifecycle_status": "CURRENT",
       "runtime_status": "NONE",
       "authority_ceiling": "DOCUMENT_ONLY",
-      "canonical_source": ["docs/Z-ULTRA-INSTINCTS-AND-FORMULAS.md"],
+      "canonical_source": [
+        "docs/Z-ULTRA-INSTINCTS-AND-FORMULAS.md"
+      ],
       "historical_sources": [],
       "implementation_paths": [],
       "test_paths": [],
       "golden_paths": [],
       "parent_ids": [],
-      "child_ids": ["omega-ultra-drp", "lpbs-infinite-compassion", "ggaesp-ultra-chambers", "ring-ultra-360-filter", "cubes-ultra-six-x10", "z-ui-ultra-decision"],
-      "related_ids": ["z-mega"],
-      "separate_from": ["z1-z18-family", "zn-pattern-family", "zx-pattern-family"],
-      "historical_aliases": ["Core Z-Formulas", "Living Engine of the Sanctuary"],
+      "child_ids": [
+        "omega-ultra-drp",
+        "lpbs-infinite-compassion",
+        "ggaesp-ultra-chambers",
+        "ring-ultra-360-filter",
+        "cubes-ultra-six-x10",
+        "z-ui-ultra-decision"
+      ],
+      "related_ids": [
+        "z-mega"
+      ],
+      "separate_from": [
+        "z1-z18-family",
+        "zn-pattern-family",
+        "zx-pattern-family"
+      ],
+      "historical_aliases": [
+        "Core Z-Formulas",
+        "Living Engine of the Sanctuary"
+      ],
       "provenance_class": "CURRENT_DOC",
       "scientific_claim_class": "ARCHITECTURAL_METAPHOR",
       "notes": "Umbrella for hub Ultra Instincts formula set. Child links are doctrinal containment, not runtime graph."
@@ -46,21 +67,32 @@
       "family": "historical-z",
       "lineage": "historical-hold",
       "generation": "unresolved",
-      "formula_type": ["UNKNOWN"],
+      "formula_type": [
+        "UNKNOWN"
+      ],
       "maturity": "F0",
       "lifecycle_status": "HISTORICAL_HOLD",
       "runtime_status": "NONE",
       "authority_ceiling": "NONE",
-      "canonical_source": ["docs/Z_FORMULA_AAI_GRAND_CONSOLIDATION_0.md"],
+      "canonical_source": [
+        "docs/Z_FORMULA_AAI_GRAND_CONSOLIDATION_0.md"
+      ],
       "historical_sources": [],
       "implementation_paths": [],
       "test_paths": [],
       "golden_paths": [],
       "parent_ids": [],
       "child_ids": [],
-      "related_ids": ["zn-pattern-family", "zx-pattern-family"],
-      "separate_from": ["z-foundational"],
-      "historical_aliases": ["Z1...Z18"],
+      "related_ids": [
+        "zn-pattern-family",
+        "zx-pattern-family"
+      ],
+      "separate_from": [
+        "z-foundational"
+      ],
+      "historical_aliases": [
+        "Z1...Z18"
+      ],
       "provenance_class": "UNRESOLVED",
       "scientific_claim_class": "NOT_APPLICABLE",
       "notes": "Not recovered as hub executable lineage in Grand Consolidation. Do not invent mathematics."
@@ -72,21 +104,34 @@
       "family": "historical-z",
       "lineage": "historical-hold",
       "generation": "historical",
-      "formula_type": ["UNKNOWN"],
+      "formula_type": [
+        "UNKNOWN"
+      ],
       "maturity": "F0",
       "lifecycle_status": "HISTORICAL_HOLD",
       "runtime_status": "NONE",
       "authority_ceiling": "NONE",
-      "canonical_source": ["docs/Z_FORMULA_IMPLEMENTATION_READINESS_1.md", "docs/Z_FORMULA_AAI_GRAND_CONSOLIDATION_0.md"],
+      "canonical_source": [
+        "docs/Z_FORMULA_IMPLEMENTATION_READINESS_1.md",
+        "docs/Z_FORMULA_AAI_GRAND_CONSOLIDATION_0.md"
+      ],
       "historical_sources": [],
       "implementation_paths": [],
       "test_paths": [],
       "golden_paths": [],
       "parent_ids": [],
       "child_ids": [],
-      "related_ids": ["z1-z18-family", "zx-pattern-family"],
-      "separate_from": ["z-foundational", "z-power"],
-      "historical_aliases": ["ZN"],
+      "related_ids": [
+        "z1-z18-family",
+        "zx-pattern-family"
+      ],
+      "separate_from": [
+        "z-foundational",
+        "z-power"
+      ],
+      "historical_aliases": [
+        "ZN"
+      ],
       "provenance_class": "SEALED_HISTORICAL",
       "scientific_claim_class": "NOT_APPLICABLE",
       "notes": "HISTORICAL_HOLD with ZX; deeper recovery deferred."
@@ -98,21 +143,35 @@
       "family": "historical-z",
       "lineage": "historical-hold",
       "generation": "historical",
-      "formula_type": ["UNKNOWN"],
+      "formula_type": [
+        "UNKNOWN"
+      ],
       "maturity": "F0",
       "lifecycle_status": "HISTORICAL_HOLD",
       "runtime_status": "NONE",
       "authority_ceiling": "NONE",
-      "canonical_source": ["docs/Z_FORMULA_IMPLEMENTATION_READINESS_1.md", "docs/Z_FORMULA_AAI_GRAND_CONSOLIDATION_0.md"],
+      "canonical_source": [
+        "docs/Z_FORMULA_IMPLEMENTATION_READINESS_1.md",
+        "docs/Z_FORMULA_AAI_GRAND_CONSOLIDATION_0.md"
+      ],
       "historical_sources": [],
       "implementation_paths": [],
       "test_paths": [],
       "golden_paths": [],
       "parent_ids": [],
       "child_ids": [],
-      "related_ids": ["z1-z18-family", "zn-pattern-family"],
-      "separate_from": ["z-foundational", "z-power"],
-      "historical_aliases": ["ZX", "Z^X"],
+      "related_ids": [
+        "z1-z18-family",
+        "zn-pattern-family"
+      ],
+      "separate_from": [
+        "z-foundational",
+        "z-power"
+      ],
+      "historical_aliases": [
+        "ZX",
+        "Z^X"
+      ],
       "provenance_class": "SEALED_HISTORICAL",
       "scientific_claim_class": "NOT_APPLICABLE",
       "notes": "HISTORICAL_HOLD; not hub Ultra formula implementation."
@@ -124,21 +183,37 @@
       "family": "qosmei-shadow-families",
       "lineage": "qosmei-vision",
       "generation": "manifest",
-      "formula_type": ["SYMBOLIC", "ORCHESTRATION", "METAPHOR"],
+      "formula_type": [
+        "SYMBOLIC",
+        "ORCHESTRATION",
+        "METAPHOR"
+      ],
       "maturity": "F1",
       "lifecycle_status": "CONCEPTUAL",
       "runtime_status": "NONE",
       "authority_ceiling": "DOCUMENT_ONLY",
-      "canonical_source": ["data/z_qosmei_manifest.json"],
+      "canonical_source": [
+        "data/z_qosmei_manifest.json"
+      ],
       "historical_sources": [],
       "implementation_paths": [],
       "test_paths": [],
       "golden_paths": [],
       "parent_ids": [],
       "child_ids": [],
-      "related_ids": ["qosmei-core-signal-fusion"],
-      "separate_from": ["ggaesp-pipeline-v11-v19", "ring-combat-360"],
-      "historical_aliases": ["zPowerAZ", "Z-Power", "(a>z)", "(A>Z)"],
+      "related_ids": [
+        "qosmei-core-signal-fusion"
+      ],
+      "separate_from": [
+        "ggaesp-pipeline-v11-v19",
+        "ring-combat-360"
+      ],
+      "historical_aliases": [
+        "zPowerAZ",
+        "Z-Power",
+        "(a>z)",
+        "(A>Z)"
+      ],
       "provenance_class": "CURRENT_REGISTRY",
       "scientific_claim_class": "ARCHITECTURAL_METAPHOR",
       "notes": "QOSMEI formulaFamilies.zPowerAZ with shadow:true. No typed contract."
@@ -150,7 +225,10 @@
       "family": "lpbs",
       "lineage": "hub-compassion",
       "generation": "ultra-instincts",
-      "formula_type": ["RECURRENCE", "SYMBOLIC"],
+      "formula_type": [
+        "RECURRENCE",
+        "SYMBOLIC"
+      ],
       "maturity": "F2",
       "lifecycle_status": "SPEC_PARTIAL",
       "runtime_status": "NONE",
@@ -164,15 +242,25 @@
       "implementation_paths": [],
       "test_paths": [],
       "golden_paths": [],
-      "parent_ids": ["z-foundational"],
+      "parent_ids": [
+        "z-foundational"
+      ],
       "child_ids": [],
-      "related_ids": ["z-mega", "z-mega-context-lpbs"],
+      "related_ids": [
+        "z-mega",
+        "z-mega-context-lpbs"
+      ],
       "separate_from": [
         "lpbs-lottery-config",
         "lpbs-ssr-long-progression",
         "lpbs-roulette-loss-progression"
       ],
-      "historical_aliases": ["LPBS∞", "LPBS Infinite Progression", "LPBS FLEX∞", "HUB-LPBS-∞"],
+      "historical_aliases": [
+        "LPBS∞",
+        "LPBS Infinite Progression",
+        "LPBS FLEX∞",
+        "HUB-LPBS-∞"
+      ],
       "provenance_class": "SEALED_CURRENT_CANON",
       "scientific_claim_class": "MATHEMATICAL",
       "notes": "Recurrence LPBS(n+1)=LPBS(n)×(1+Z-Mega). FORMULA_SPEC_PARTIAL; Steward measurements required. Not READY_FOR_IMPLEMENTATION."
@@ -184,14 +272,21 @@
       "family": "lpbs",
       "lineage": "lottery-product",
       "generation": "lottery",
-      "formula_type": ["SCORING", "NUMERIC"],
+      "formula_type": [
+        "SCORING",
+        "NUMERIC"
+      ],
       "maturity": "F5",
       "lifecycle_status": "EXECUTABLE",
       "runtime_status": "BOUNDED_EXECUTION",
       "authority_ceiling": "BOUNDED_EXECUTION",
-      "canonical_source": ["docs/Z_LPBS_CANON_RECONCILIATION_1.md"],
+      "canonical_source": [
+        "docs/Z_LPBS_CANON_RECONCILIATION_1.md"
+      ],
       "historical_sources": [],
-      "implementation_paths": ["Amk_Goku Worldwide Loterry/core-engine/prediction/engine.py"],
+      "implementation_paths": [
+        "Amk_Goku Worldwide Loterry/core-engine/prediction/engine.py"
+      ],
       "test_paths": [],
       "golden_paths": [],
       "parent_ids": [],
@@ -202,7 +297,10 @@
         "lpbs-ssr-long-progression",
         "lpbs-roulette-loss-progression"
       ],
-      "historical_aliases": ["LOT-LPBS", "LPBSConfig"],
+      "historical_aliases": [
+        "LOT-LPBS",
+        "LPBSConfig"
+      ],
       "provenance_class": "CURRENT_EXECUTABLE",
       "scientific_claim_class": "ENGINEERING",
       "notes": "Hot/cold lottery scoring. Must never supply math to HUB-LPBS-∞."
@@ -214,13 +312,19 @@
       "family": "lpbs",
       "lineage": "ssr-historical",
       "generation": "historical",
-      "formula_type": ["UNKNOWN"],
+      "formula_type": [
+        "UNKNOWN"
+      ],
       "maturity": "F0",
       "lifecycle_status": "HISTORICAL_HOLD",
       "runtime_status": "NONE",
       "authority_ceiling": "NONE",
-      "canonical_source": ["docs/Z_LPBS_CANON_RECONCILIATION_1.md"],
-      "historical_sources": ["docs/amk-goku-steward-ai/SSR_RECONSTRUCTION_R1_ARCHITECTURE_AND_DATA_CONTRACTS.md"],
+      "canonical_source": [
+        "docs/Z_LPBS_CANON_RECONCILIATION_1.md"
+      ],
+      "historical_sources": [
+        "docs/amk-goku-steward-ai/SSR_RECONSTRUCTION_R1_ARCHITECTURE_AND_DATA_CONTRACTS.md"
+      ],
       "implementation_paths": [],
       "test_paths": [],
       "golden_paths": [],
@@ -232,7 +336,10 @@
         "lpbs-lottery-config",
         "lpbs-roulette-loss-progression"
       ],
-      "historical_aliases": ["SSR-LPBS", "Long Progression Betting Strategy"],
+      "historical_aliases": [
+        "SSR-LPBS",
+        "Long Progression Betting Strategy"
+      ],
       "provenance_class": "SEALED_HISTORICAL",
       "scientific_claim_class": "NOT_APPLICABLE",
       "notes": "Historical formula unresolved; do not wake SSR in this gate."
@@ -244,12 +351,17 @@
       "family": "lpbs",
       "lineage": "roulette-glossary",
       "generation": "roulette",
-      "formula_type": ["GOVERNANCE", "STATE"],
+      "formula_type": [
+        "GOVERNANCE",
+        "STATE"
+      ],
       "maturity": "F1",
       "lifecycle_status": "GOVERNANCE_ONLY",
       "runtime_status": "NONE",
       "authority_ceiling": "DOCUMENT_ONLY",
-      "canonical_source": ["docs/Z_LPBS_CANON_RECONCILIATION_1.md"],
+      "canonical_source": [
+        "docs/Z_LPBS_CANON_RECONCILIATION_1.md"
+      ],
       "historical_sources": [],
       "implementation_paths": [],
       "test_paths": [],
@@ -262,7 +374,11 @@
         "lpbs-lottery-config",
         "lpbs-ssr-long-progression"
       ],
-      "historical_aliases": ["ROU-LPBS", "lpbs_state", "Loss-Progression Bet Slope"],
+      "historical_aliases": [
+        "ROU-LPBS",
+        "lpbs_state",
+        "Loss-Progression Bet Slope"
+      ],
       "provenance_class": "CURRENT_DOC",
       "scientific_claim_class": "NOT_APPLICABLE",
       "notes": "Glossary-policy technology; not hub compassion LPBS∞."
@@ -274,12 +390,18 @@
       "family": "z-mega",
       "lineage": "hub-compassion",
       "generation": "ultra-instincts",
-      "formula_type": ["SYMBOLIC", "UNKNOWN"],
+      "formula_type": [
+        "SYMBOLIC",
+        "UNKNOWN"
+      ],
       "maturity": "F1",
       "lifecycle_status": "NEEDS_FORMULA_SPEC",
       "runtime_status": "NONE",
       "authority_ceiling": "NONE",
-      "canonical_source": ["docs/Z-ULTRA-INSTINCTS-AND-FORMULAS.md", "docs/Z_LPBS_INFINITY_FORMULA_SPEC_1.md"],
+      "canonical_source": [
+        "docs/Z-ULTRA-INSTINCTS-AND-FORMULAS.md",
+        "docs/Z_LPBS_INFINITY_FORMULA_SPEC_1.md"
+      ],
       "historical_sources": [],
       "implementation_paths": [],
       "test_paths": [],
@@ -295,10 +417,15 @@
         "z-ui-ultra-decision"
       ],
       "separate_from": [],
-      "historical_aliases": ["Z Mega", "ZMega", "Z_MEGA", "Z-Mega(n)"],
-      "provenance_class": "CONFLICTING",
+      "historical_aliases": [
+        "Z Mega",
+        "ZMega",
+        "Z_MEGA",
+        "Z-Mega(n)"
+      ],
+      "provenance_class": "UNRESOLVED",
       "scientific_claim_class": "NOT_APPLICABLE",
-      "notes": "Narrative personal boost. SHARED vs SEPARATE numeric parameter across Ω/LPBS/Z-UI is STEWARD_DECISION_REQUIRED. No units/ranges invented. Provisional context IDs below must not be merged."
+      "notes": "STEWARD 0.6: Z_MEGA_SHARED_PARAMETER_DECISION=DEFERRED_PENDING_FORMULA_SPEC. Keep umbrella + provisional contexts. Do NOT declare SAME_PARAMETER or SEPARATE_PARAMETER. No range/unit/type/scale/numeric definition invented."
     },
     {
       "canonical_id": "z-mega-context-omega",
@@ -307,24 +434,36 @@
       "family": "z-mega",
       "lineage": "omega-ultra",
       "generation": "provisional-context",
-      "formula_type": ["SYMBOLIC"],
+      "formula_type": [
+        "SYMBOLIC"
+      ],
       "maturity": "F1",
       "lifecycle_status": "CONCEPTUAL",
       "runtime_status": "NONE",
       "authority_ceiling": "NONE",
-      "canonical_source": ["docs/Z-ULTRA-INSTINCTS-AND-FORMULAS.md"],
+      "canonical_source": [
+        "docs/Z-ULTRA-INSTINCTS-AND-FORMULAS.md"
+      ],
       "historical_sources": [],
       "implementation_paths": [],
       "test_paths": [],
       "golden_paths": [],
       "parent_ids": [],
       "child_ids": [],
-      "related_ids": ["z-mega", "omega-ultra-drp"],
-      "separate_from": ["z-mega-context-lpbs", "z-mega-context-zui"],
-      "historical_aliases": ["Z-Mega(n)"],
+      "related_ids": [
+        "z-mega",
+        "omega-ultra-drp"
+      ],
+      "separate_from": [
+        "z-mega-context-lpbs",
+        "z-mega-context-zui"
+      ],
+      "historical_aliases": [
+        "Z-Mega(n)"
+      ],
       "provenance_class": "UNRESOLVED",
       "scientific_claim_class": "NOT_APPLICABLE",
-      "notes": "PROVISIONAL lineage context until Steward seals SHARED or SEPARATE Z-Mega parameter."
+      "notes": "PROVISIONAL lineage context until Steward seals SHARED or SEPARATE Z-Mega parameter. Steward 0.6: merge deferred pending formula-spec evidence."
     },
     {
       "canonical_id": "z-mega-context-lpbs",
@@ -333,24 +472,36 @@
       "family": "z-mega",
       "lineage": "lpbs-hub",
       "generation": "provisional-context",
-      "formula_type": ["SYMBOLIC"],
+      "formula_type": [
+        "SYMBOLIC"
+      ],
       "maturity": "F1",
       "lifecycle_status": "CONCEPTUAL",
       "runtime_status": "NONE",
       "authority_ceiling": "NONE",
-      "canonical_source": ["docs/Z_LPBS_INFINITY_FORMULA_SPEC_1.md"],
+      "canonical_source": [
+        "docs/Z_LPBS_INFINITY_FORMULA_SPEC_1.md"
+      ],
       "historical_sources": [],
       "implementation_paths": [],
       "test_paths": [],
       "golden_paths": [],
       "parent_ids": [],
       "child_ids": [],
-      "related_ids": ["z-mega", "lpbs-infinite-compassion"],
-      "separate_from": ["z-mega-context-omega", "z-mega-context-zui"],
-      "historical_aliases": ["Z-Mega"],
+      "related_ids": [
+        "z-mega",
+        "lpbs-infinite-compassion"
+      ],
+      "separate_from": [
+        "z-mega-context-omega",
+        "z-mega-context-zui"
+      ],
+      "historical_aliases": [
+        "Z-Mega"
+      ],
       "provenance_class": "UNRESOLVED",
       "scientific_claim_class": "NOT_APPLICABLE",
-      "notes": "Appears as bare Z-Mega in (1+Z-Mega). Not proven identical to Ω or Z-UI factor."
+      "notes": "Appears as bare Z-Mega in (1+Z-Mega). Not proven identical to Ω or Z-UI factor. Steward 0.6: merge deferred pending formula-spec evidence."
     },
     {
       "canonical_id": "z-mega-context-zui",
@@ -359,24 +510,37 @@
       "family": "z-mega",
       "lineage": "z-ui",
       "generation": "provisional-context",
-      "formula_type": ["SYMBOLIC"],
+      "formula_type": [
+        "SYMBOLIC"
+      ],
       "maturity": "F1",
       "lifecycle_status": "CONCEPTUAL",
       "runtime_status": "NONE",
       "authority_ceiling": "NONE",
-      "canonical_source": ["docs/Z-ULTRA-INSTINCTS-AND-FORMULAS.md", "docs/Z_CUBES_ZUI_CANON_RECONCILIATION_1.md"],
+      "canonical_source": [
+        "docs/Z-ULTRA-INSTINCTS-AND-FORMULAS.md",
+        "docs/Z_CUBES_ZUI_CANON_RECONCILIATION_1.md"
+      ],
       "historical_sources": [],
       "implementation_paths": [],
       "test_paths": [],
       "golden_paths": [],
       "parent_ids": [],
       "child_ids": [],
-      "related_ids": ["z-mega", "z-ui-ultra-decision"],
-      "separate_from": ["z-mega-context-omega", "z-mega-context-lpbs"],
-      "historical_aliases": ["Z-Mega(n)"],
+      "related_ids": [
+        "z-mega",
+        "z-ui-ultra-decision"
+      ],
+      "separate_from": [
+        "z-mega-context-omega",
+        "z-mega-context-lpbs"
+      ],
+      "historical_aliases": [
+        "Z-Mega(n)"
+      ],
       "provenance_class": "UNRESOLVED",
       "scientific_claim_class": "NOT_APPLICABLE",
-      "notes": "Factor in Heart×Pre-Predict×DRP-Filter×Z-Mega. Shared parameter unresolved."
+      "notes": "Factor in Heart×Pre-Predict×DRP-Filter×Z-Mega. Shared parameter unresolved. Steward 0.6: merge deferred pending formula-spec evidence."
     },
     {
       "canonical_id": "ggaesp-pipeline-v11-v19",
@@ -385,7 +549,11 @@
       "family": "ggaesp",
       "lineage": "ggaesp-exec",
       "generation": "v11-v19",
-      "formula_type": ["SCORING", "CONDITIONAL", "FILTER"],
+      "formula_type": [
+        "SCORING",
+        "CONDITIONAL",
+        "FILTER"
+      ],
       "maturity": "F6",
       "lifecycle_status": "EXECUTABLE",
       "runtime_status": "BOUNDED_EXECUTION",
@@ -400,13 +568,28 @@
         "core_engine/ggaesp_pipeline.ts",
         "core_engine/browser/ggaesp_pipeline.js"
       ],
-      "test_paths": ["scripts/z_formula_semantic_goldens.mjs"],
-      "golden_paths": ["data/formula_semantic_goldens/ggaesp_v11_v19_goldens.json"],
+      "test_paths": [
+        "scripts/z_formula_semantic_goldens.mjs"
+      ],
+      "golden_paths": [
+        "data/formula_semantic_goldens/ggaesp_v11_v19_goldens.json"
+      ],
       "parent_ids": [],
       "child_ids": [],
-      "related_ids": ["ggaesp-ultra-chambers", "ring-ultra-360-filter"],
-      "separate_from": ["ggaesp-ultra-chambers", "ring-ultra-360-filter", "ring-combat-360"],
-      "historical_aliases": ["GGAESP-360-EXEC", "runGGAESP", "GGAESP 360"],
+      "related_ids": [
+        "ggaesp-ultra-chambers",
+        "ring-ultra-360-filter"
+      ],
+      "separate_from": [
+        "ggaesp-ultra-chambers",
+        "ring-ultra-360-filter",
+        "ring-combat-360"
+      ],
+      "historical_aliases": [
+        "GGAESP-360-EXEC",
+        "runGGAESP",
+        "GGAESP 360"
+      ],
       "provenance_class": "CURRENT_EXECUTABLE",
       "scientific_claim_class": "ENGINEERING",
       "notes": "SEMANTIC_GOLDEN_PROTECTED. Advisory GO|PREPARE|HOLD|BLOCK. Not release authority. RELATED_VOCABULARY only to Ultra Ring."
@@ -418,21 +601,39 @@
       "family": "ggaesp",
       "lineage": "ultra-doctrine",
       "generation": "ultra-instincts",
-      "formula_type": ["SYMBOLIC", "METAPHOR"],
+      "formula_type": [
+        "SYMBOLIC",
+        "METAPHOR"
+      ],
       "maturity": "F1",
       "lifecycle_status": "CONCEPTUAL",
       "runtime_status": "NONE",
       "authority_ceiling": "DOCUMENT_ONLY",
-      "canonical_source": ["docs/Z-ULTRA-INSTINCTS-AND-FORMULAS.md", "docs/Z_FORMULA_IMPLEMENTATION_READINESS_1.md"],
+      "canonical_source": [
+        "docs/Z-ULTRA-INSTINCTS-AND-FORMULAS.md",
+        "docs/Z_FORMULA_IMPLEMENTATION_READINESS_1.md"
+      ],
       "historical_sources": [],
       "implementation_paths": [],
       "test_paths": [],
       "golden_paths": [],
-      "parent_ids": ["z-foundational"],
+      "parent_ids": [
+        "z-foundational"
+      ],
       "child_ids": [],
-      "related_ids": ["ggaesp-historical-generalyser-family", "ggaesp-pipeline-v11-v19", "ring-ultra-360-filter"],
-      "separate_from": ["ggaesp-pipeline-v11-v19", "cubes-ultra-six-x10"],
-      "historical_aliases": ["Ultra GGAESP chambers", "6 living chambers"],
+      "related_ids": [
+        "ggaesp-historical-generalyser-family",
+        "ggaesp-pipeline-v11-v19",
+        "ring-ultra-360-filter"
+      ],
+      "separate_from": [
+        "ggaesp-pipeline-v11-v19",
+        "cubes-ultra-six-x10"
+      ],
+      "historical_aliases": [
+        "Ultra GGAESP chambers",
+        "6 living chambers"
+      ],
       "provenance_class": "SEALED_CURRENT_CANON",
       "scientific_claim_class": "ARCHITECTURAL_METAPHOR",
       "notes": "KEEP_CONCEPTUAL. Do not code a second chamber engine duplicating GGAESP pipeline."
@@ -444,20 +645,28 @@
       "family": "ggaesp",
       "lineage": "ultra-doctrine",
       "generation": "naming",
-      "formula_type": ["SYMBOLIC"],
+      "formula_type": [
+        "SYMBOLIC"
+      ],
       "maturity": "F1",
       "lifecycle_status": "CONCEPTUAL",
       "runtime_status": "NONE",
       "authority_ceiling": "DOCUMENT_ONLY",
-      "canonical_source": ["docs/Z-ULTRA-INSTINCTS-AND-FORMULAS.md"],
+      "canonical_source": [
+        "docs/Z-ULTRA-INSTINCTS-AND-FORMULAS.md"
+      ],
       "historical_sources": [],
       "implementation_paths": [],
       "test_paths": [],
       "golden_paths": [],
       "parent_ids": [],
       "child_ids": [],
-      "related_ids": ["ggaesp-ultra-chambers"],
-      "separate_from": ["ggaesp-pipeline-v11-v19"],
+      "related_ids": [
+        "ggaesp-ultra-chambers"
+      ],
+      "separate_from": [
+        "ggaesp-pipeline-v11-v19"
+      ],
       "historical_aliases": [
         "Generalyser",
         "Growthtyser",
@@ -477,7 +686,11 @@
       "family": "360",
       "lineage": "ultra-doctrine",
       "generation": "ultra-instincts",
-      "formula_type": ["FILTER", "SYMBOLIC", "GOVERNANCE"],
+      "formula_type": [
+        "FILTER",
+        "SYMBOLIC",
+        "GOVERNANCE"
+      ],
       "maturity": "F1",
       "lifecycle_status": "NEEDS_FORMULA_SPEC",
       "runtime_status": "NONE",
@@ -490,11 +703,24 @@
       "implementation_paths": [],
       "test_paths": [],
       "golden_paths": [],
-      "parent_ids": ["z-foundational"],
+      "parent_ids": [
+        "z-foundational"
+      ],
       "child_ids": [],
-      "related_ids": ["ggaesp-pipeline-v11-v19", "cubes-ultra-six-x10"],
-      "separate_from": ["ring-combat-360", "ggaesp-pipeline-v11-v19", "combat-voxel-field"],
-      "historical_aliases": ["Ultra 360", "360° Ring", "GGAESP 360 Ring (doctrine)"],
+      "related_ids": [
+        "ggaesp-pipeline-v11-v19",
+        "cubes-ultra-six-x10"
+      ],
+      "separate_from": [
+        "ring-combat-360",
+        "ggaesp-pipeline-v11-v19",
+        "combat-voxel-field"
+      ],
+      "historical_aliases": [
+        "Ultra 360",
+        "360° Ring",
+        "GGAESP 360 Ring (doctrine)"
+      ],
       "provenance_class": "SEALED_CURRENT_CANON",
       "scientific_claim_class": "NOT_APPLICABLE",
       "notes": "NON_GEOMETRIC accuracy→polarity→compassion filter. Not Combat geometry. Not GGAESP executable contract."
@@ -506,7 +732,11 @@
       "family": "360",
       "lineage": "combat",
       "generation": "combat-codex",
-      "formula_type": ["STATE", "PATTERN", "SIMULATION"],
+      "formula_type": [
+        "STATE",
+        "PATTERN",
+        "SIMULATION"
+      ],
       "maturity": "F3",
       "lifecycle_status": "CURRENT",
       "runtime_status": "SIMULATION_ONLY",
@@ -521,9 +751,19 @@
       "golden_paths": [],
       "parent_ids": [],
       "child_ids": [],
-      "related_ids": ["combat-voxel-field", "kairocell-hub"],
-      "separate_from": ["ring-ultra-360-filter", "ggaesp-pipeline-v11-v19", "continuous-360-multidimensional-field"],
-      "historical_aliases": ["Combat 360", "z-combat-360"],
+      "related_ids": [
+        "combat-voxel-field",
+        "kairocell-hub"
+      ],
+      "separate_from": [
+        "ring-ultra-360-filter",
+        "ggaesp-pipeline-v11-v19",
+        "continuous-360-multidimensional-field"
+      ],
+      "historical_aliases": [
+        "Combat 360",
+        "z-combat-360"
+      ],
       "provenance_class": "CURRENT_DOC",
       "scientific_claim_class": "REAL_PHYSICS_REFERENCE",
       "notes": "SEPARATE_TECHNOLOGY from Ultra 360. Registry active id z-combat-360. Physics Truth Engine must not be replaced by AI."
@@ -535,7 +775,10 @@
       "family": "cubes",
       "lineage": "ultra-doctrine",
       "generation": "ultra-instincts",
-      "formula_type": ["SYMBOLIC", "METAPHOR"],
+      "formula_type": [
+        "SYMBOLIC",
+        "METAPHOR"
+      ],
       "maturity": "F1",
       "lifecycle_status": "NEEDS_FORMULA_SPEC",
       "runtime_status": "NONE",
@@ -548,16 +791,24 @@
       "implementation_paths": [],
       "test_paths": [],
       "golden_paths": [],
-      "parent_ids": ["z-foundational"],
+      "parent_ids": [
+        "z-foundational"
+      ],
       "child_ids": [],
-      "related_ids": ["ring-ultra-360-filter"],
+      "related_ids": [
+        "ring-ultra-360-filter"
+      ],
       "separate_from": [
         "combat-voxel-field",
         "kairocell-hub",
         "continuous-360-multidimensional-field",
         "ggaesp-ultra-chambers"
       ],
-      "historical_aliases": ["Multi-Dimensional Cubes", "Cubes ×10", "ULTRA-CUBES"],
+      "historical_aliases": [
+        "Multi-Dimensional Cubes",
+        "Cubes ×10",
+        "ULTRA-CUBES"
+      ],
       "provenance_class": "SEALED_CURRENT_CANON",
       "scientific_claim_class": "ARCHITECTURAL_METAPHOR",
       "notes": "Six unnamed organs; ×10 activation multiplier. Geometry not established. Not ten cubes."
@@ -569,7 +820,10 @@
       "family": "combat-spatial",
       "lineage": "combat",
       "generation": "combat-codex",
-      "formula_type": ["STATE", "SIMULATION"],
+      "formula_type": [
+        "STATE",
+        "SIMULATION"
+      ],
       "maturity": "F3",
       "lifecycle_status": "CURRENT",
       "runtime_status": "SIMULATION_ONLY",
@@ -584,13 +838,20 @@
       "golden_paths": [],
       "parent_ids": [],
       "child_ids": [],
-      "related_ids": ["ring-combat-360", "kairocell-hub"],
+      "related_ids": [
+        "ring-combat-360",
+        "kairocell-hub"
+      ],
       "separate_from": [
         "cubes-ultra-six-x10",
         "continuous-360-multidimensional-field",
         "ring-ultra-360-filter"
       ],
-      "historical_aliases": ["Combat voxels", "spherical lattice", "4-5 cm voxel"],
+      "historical_aliases": [
+        "Combat voxels",
+        "spherical lattice",
+        "4-5 cm voxel"
+      ],
       "provenance_class": "CURRENT_DOC",
       "scientific_claim_class": "REAL_PHYSICS_REFERENCE",
       "notes": "4–5 cm recommended voxel size is COMBAT_SPECIFIC. Schema allows 2–10 cm. Not Ultra cubes. Not Z-Unit."
@@ -602,46 +863,80 @@
       "family": "combat-spatial",
       "lineage": "combat-adjacent",
       "generation": "kairocell",
-      "formula_type": ["STATE", "SIMULATION"],
+      "formula_type": [
+        "STATE",
+        "SIMULATION"
+      ],
       "maturity": "F5",
       "lifecycle_status": "SIMULATION_ONLY",
       "runtime_status": "BOUNDED_EXECUTION",
       "authority_ceiling": "SIMULATE",
-      "canonical_source": ["docs/Z_CUBES_ZUI_CANON_RECONCILIATION_1.md"],
+      "canonical_source": [
+        "docs/Z_CUBES_ZUI_CANON_RECONCILIATION_1.md"
+      ],
       "historical_sources": [],
-      "implementation_paths": ["core/z_kairocell_engine.js"],
+      "implementation_paths": [
+        "core/z_kairocell_engine.js"
+      ],
       "test_paths": [],
       "golden_paths": [],
       "parent_ids": [],
       "child_ids": [],
-      "related_ids": ["ring-combat-360", "combat-voxel-field"],
-      "separate_from": ["cubes-ultra-six-x10", "continuous-360-multidimensional-field"],
-      "historical_aliases": ["KairoCell"],
+      "related_ids": [
+        "ring-combat-360",
+        "combat-voxel-field"
+      ],
+      "separate_from": [
+        "cubes-ultra-six-x10",
+        "continuous-360-multidimensional-field"
+      ],
+      "historical_aliases": [
+        "KairoCell"
+      ],
       "provenance_class": "CURRENT_EXECUTABLE",
       "scientific_claim_class": "ENGINEERING",
       "notes": "Browser contract / partial wiring. Combat-adjacent SEPARATE_TECHNOLOGY from Ultra cubes."
     },
     {
       "canonical_id": "continuous-360-multidimensional-field",
-      "display_name": "Continuous 360 Multidimensional Field (proposed)",
+      "display_name": "Continuous 360 Multidimensional Field (accepted proposed new family)",
       "category": "SPATIAL_MODEL",
       "family": "proposed-spatial",
       "lineage": "proposed-architecture",
       "generation": "grand-consolidation-0",
-      "formula_type": ["UNKNOWN"],
+      "formula_type": [
+        "UNKNOWN"
+      ],
       "maturity": "F0",
       "lifecycle_status": "PROPOSED_NEW_FAMILY",
       "runtime_status": "NONE",
       "authority_ceiling": "NONE",
-      "canonical_source": ["docs/Z_FORMULA_AAI_GRAND_CONSOLIDATION_0.md"],
-      "historical_sources": ["docs/canon/Z_SANCTUARY_CANON_V1.md"],
+      "canonical_source": [
+        "docs/Z_FORMULA_AAI_GRAND_CONSOLIDATION_0.md",
+        "docs/Z_FORMULA_AAI_STEWARD_IDENTITY_DECISIONS_0_6.md"
+      ],
+      "historical_sources": [
+        "docs/canon/Z_SANCTUARY_CANON_V1.md"
+      ],
       "implementation_paths": [],
       "test_paths": [],
       "golden_paths": [],
       "parent_ids": [],
       "child_ids": [],
-      "related_ids": ["combat-voxel-field", "cubes-ultra-six-x10"],
-      "separate_from": ["combat-voxel-field", "cubes-ultra-six-x10", "ring-combat-360", "ring-ultra-360-filter"],
+      "related_ids": [
+        "combat-voxel-field",
+        "cubes-ultra-six-x10",
+        "kairocell-hub",
+        "ring-ultra-360-filter",
+        "ring-combat-360"
+      ],
+      "separate_from": [
+        "combat-voxel-field",
+        "cubes-ultra-six-x10",
+        "kairocell-hub",
+        "ring-combat-360",
+        "ring-ultra-360-filter"
+      ],
       "historical_aliases": [
         "Continuous 360",
         "Z-Spatial Lattice",
@@ -650,7 +945,7 @@
       ],
       "provenance_class": "PROPOSED_ARCHITECTURE",
       "scientific_claim_class": "NOT_APPLICABLE",
-      "notes": "NOT HISTORICALLY RECOVERED AS CANONICAL PACKAGE. Z-Unit / Z-Spatial Lattice terms absent as typed hub IDs. Canon lattice bullet is metaphor only. PROPOSED_RELATIONSHIP to combat/ultra only."
+      "notes": "STEWARD 0.6: CONTINUOUS_360_NEW_FAMILY_ACCEPTED=YES; CONTINUOUS_360_HISTORICAL_CANON=NO; CONTINUOUS_360_IMPLEMENTATION_AUTHORIZED=NO. New 2026 evolution family, not rewritten historical canon. Combat specialization relationship is PROPOSED_RELATIONSHIP only — not canonical. Z-Unit still not historical canon."
     },
     {
       "canonical_id": "z-ui-ultra-decision",
@@ -659,7 +954,10 @@
       "family": "z-ui",
       "lineage": "ultra-doctrine",
       "generation": "ultra-instincts",
-      "formula_type": ["CONDITIONAL", "SYMBOLIC"],
+      "formula_type": [
+        "CONDITIONAL",
+        "SYMBOLIC"
+      ],
       "maturity": "F2",
       "lifecycle_status": "NEEDS_FORMULA_SPEC",
       "runtime_status": "NONE",
@@ -672,11 +970,22 @@
       "implementation_paths": [],
       "test_paths": [],
       "golden_paths": [],
-      "parent_ids": ["z-foundational"],
+      "parent_ids": [
+        "z-foundational"
+      ],
       "child_ids": [],
-      "related_ids": ["z-mega", "z-mega-context-zui"],
-      "separate_from": ["z-uil-universal-interaction-language"],
-      "historical_aliases": ["Z-UI", "Z-Ultra Instincts Core Formula", "Ultra Z-UI"],
+      "related_ids": [
+        "z-mega",
+        "z-mega-context-zui"
+      ],
+      "separate_from": [
+        "z-uil-universal-interaction-language"
+      ],
+      "historical_aliases": [
+        "Z-UI",
+        "Z-Ultra Instincts Core Formula",
+        "Ultra Z-UI"
+      ],
       "provenance_class": "SEALED_CURRENT_CANON",
       "scientific_claim_class": "MATHEMATICAL",
       "notes": "Heart(n)×Pre-Predict(n)×DRP-Filter(n)×Z-Mega(n). NOT frontend UI. Threshold undefined."
@@ -688,12 +997,17 @@
       "family": "interaction-language",
       "lineage": "design",
       "generation": "design-docs",
-      "formula_type": ["GOVERNANCE", "ORCHESTRATION"],
+      "formula_type": [
+        "GOVERNANCE",
+        "ORCHESTRATION"
+      ],
       "maturity": "F1",
       "lifecycle_status": "CURRENT",
       "runtime_status": "NONE",
       "authority_ceiling": "DOCUMENT_ONLY",
-      "canonical_source": ["docs/design/Z_UNIVERSAL_INTERACTION_LANGUAGE.md"],
+      "canonical_source": [
+        "docs/design/Z_UNIVERSAL_INTERACTION_LANGUAGE.md"
+      ],
       "historical_sources": [],
       "implementation_paths": [],
       "test_paths": [],
@@ -701,8 +1015,13 @@
       "parent_ids": [],
       "child_ids": [],
       "related_ids": [],
-      "separate_from": ["z-ui-ultra-decision"],
-      "historical_aliases": ["Z-UIL", "Universal Interaction Language"],
+      "separate_from": [
+        "z-ui-ultra-decision"
+      ],
+      "historical_aliases": [
+        "Z-UIL",
+        "Universal Interaction Language"
+      ],
       "provenance_class": "CURRENT_DOC",
       "scientific_claim_class": "NOT_APPLICABLE",
       "notes": "Separate from Z-UI decision formula and frontend chrome."
@@ -714,21 +1033,39 @@
       "family": "omega",
       "lineage": "ultra-doctrine",
       "generation": "ultra-instincts",
-      "formula_type": ["SYMBOLIC", "AGGREGATION"],
+      "formula_type": [
+        "SYMBOLIC",
+        "AGGREGATION"
+      ],
       "maturity": "F2",
       "lifecycle_status": "NEEDS_FORMULA_SPEC",
       "runtime_status": "NONE",
       "authority_ceiling": "DOCUMENT_ONLY",
-      "canonical_source": ["docs/Z-ULTRA-INSTINCTS-AND-FORMULAS.md", "docs/Z_FORMULA_IMPLEMENTATION_READINESS_1.md"],
+      "canonical_source": [
+        "docs/Z-ULTRA-INSTINCTS-AND-FORMULAS.md",
+        "docs/Z_FORMULA_IMPLEMENTATION_READINESS_1.md"
+      ],
       "historical_sources": [],
       "implementation_paths": [],
       "test_paths": [],
       "golden_paths": [],
-      "parent_ids": ["z-foundational"],
+      "parent_ids": [
+        "z-foundational"
+      ],
       "child_ids": [],
-      "related_ids": ["z-mega", "z-mega-context-omega"],
-      "separate_from": ["omega-omnai-rsi-tiers", "ultra-mage-governance"],
-      "historical_aliases": ["Ultra Ω", "Ω(DRP-♾️)", "Z-Mega Infinite Compassion Formula"],
+      "related_ids": [
+        "z-mega",
+        "z-mega-context-omega"
+      ],
+      "separate_from": [
+        "omega-omnai-rsi-tiers",
+        "ultra-mage-governance"
+      ],
+      "historical_aliases": [
+        "Ultra Ω",
+        "Ω(DRP-♾️)",
+        "Z-Mega Infinite Compassion Formula"
+      ],
       "provenance_class": "CURRENT_DOC",
       "scientific_claim_class": "MATHEMATICAL",
       "notes": "Closed-form doctrine present; factors symbolic without measurement. Not OMNAI RSI omega."
@@ -740,21 +1077,38 @@
       "family": "omega",
       "lineage": "omnai",
       "generation": "omnai",
-      "formula_type": ["SIMULATION", "NUMERIC"],
+      "formula_type": [
+        "SIMULATION",
+        "NUMERIC"
+      ],
       "maturity": "F6",
       "lifecycle_status": "SIMULATION_ONLY",
       "runtime_status": "BOUNDED_EXECUTION",
       "authority_ceiling": "SIMULATE",
-      "canonical_source": ["docs/Z_FORMULA_SEMANTIC_GOLDENS.md"],
+      "canonical_source": [
+        "docs/Z_FORMULA_SEMANTIC_GOLDENS.md"
+      ],
       "historical_sources": [],
-      "implementation_paths": ["core/omnai/omega_formula.js"],
-      "test_paths": ["scripts/z_formula_semantic_goldens.mjs"],
-      "golden_paths": ["data/formula_semantic_goldens/omnai_omega_rsi_goldens.json"],
+      "implementation_paths": [
+        "core/omnai/omega_formula.js"
+      ],
+      "test_paths": [
+        "scripts/z_formula_semantic_goldens.mjs"
+      ],
+      "golden_paths": [
+        "data/formula_semantic_goldens/omnai_omega_rsi_goldens.json"
+      ],
       "parent_ids": [],
       "child_ids": [],
       "related_ids": [],
-      "separate_from": ["omega-ultra-drp", "ultra-mage-governance"],
-      "historical_aliases": ["OMNAI omega", "omega_formula.js"],
+      "separate_from": [
+        "omega-ultra-drp",
+        "ultra-mage-governance"
+      ],
+      "historical_aliases": [
+        "OMNAI omega",
+        "omega_formula.js"
+      ],
       "provenance_class": "CURRENT_EXECUTABLE",
       "scientific_claim_class": "SIMULATION",
       "notes": "Semantic goldens protected. Explicitly NOT Ultra Ω."
@@ -766,7 +1120,9 @@
       "family": "governance-formulas",
       "lineage": "ultra-mage",
       "generation": "ultra-mage-1",
-      "formula_type": ["GOVERNANCE"],
+      "formula_type": [
+        "GOVERNANCE"
+      ],
       "maturity": "F3",
       "lifecycle_status": "GOVERNANCE_ONLY",
       "runtime_status": "NONE",
@@ -776,14 +1132,25 @@
         "data/z_ultra_mage_formula_registry.json"
       ],
       "historical_sources": [],
-      "implementation_paths": ["scripts/z_ultra_mage_formula_check.mjs"],
+      "implementation_paths": [
+        "scripts/z_ultra_mage_formula_check.mjs"
+      ],
       "test_paths": [],
       "golden_paths": [],
       "parent_ids": [],
       "child_ids": [],
-      "related_ids": ["formula-swarm", "replica-fabric-governed"],
-      "separate_from": ["omega-ultra-drp", "omega-omnai-rsi-tiers"],
-      "historical_aliases": ["Ultra-MAGE", "Z-Ultra MAGE"],
+      "related_ids": [
+        "formula-swarm",
+        "replica-fabric-governed"
+      ],
+      "separate_from": [
+        "omega-ultra-drp",
+        "omega-omnai-rsi-tiers"
+      ],
+      "historical_aliases": [
+        "Ultra-MAGE",
+        "Z-Ultra MAGE"
+      ],
       "provenance_class": "CURRENT_REGISTRY",
       "scientific_claim_class": "NOT_APPLICABLE",
       "notes": "Formula ≠ execution. Validator/report only. GREEN ≠ deploy."
@@ -795,21 +1162,34 @@
       "family": "governance-formulas",
       "lineage": "formula-swarm",
       "generation": "co-design",
-      "formula_type": ["GOVERNANCE", "ORCHESTRATION"],
+      "formula_type": [
+        "GOVERNANCE",
+        "ORCHESTRATION"
+      ],
       "maturity": "F2",
       "lifecycle_status": "GOVERNANCE_ONLY",
       "runtime_status": "NONE",
       "authority_ceiling": "SUGGEST",
-      "canonical_source": ["docs/Z_FORMULA_SWARM_CO_DESIGN_ENGINE.md"],
+      "canonical_source": [
+        "docs/Z_FORMULA_SWARM_CO_DESIGN_ENGINE.md"
+      ],
       "historical_sources": [],
       "implementation_paths": [],
       "test_paths": [],
       "golden_paths": [],
       "parent_ids": [],
       "child_ids": [],
-      "related_ids": ["swarm-14drp", "ultra-mage-governance", "z-mini-bots"],
-      "separate_from": ["z-aai"],
-      "historical_aliases": ["Formula Swarm"],
+      "related_ids": [
+        "swarm-14drp",
+        "ultra-mage-governance",
+        "z-mini-bots"
+      ],
+      "separate_from": [
+        "z-aai"
+      ],
+      "historical_aliases": [
+        "Formula Swarm"
+      ],
       "provenance_class": "CURRENT_DOC",
       "scientific_claim_class": "NOT_APPLICABLE",
       "notes": "Swarm not activated. Earn-complexity law. Modes A–D are proposed TEVV framing."
@@ -821,7 +1201,9 @@
       "family": "governance-formulas",
       "lineage": "14drp",
       "generation": "agent-law",
-      "formula_type": ["GOVERNANCE"],
+      "formula_type": [
+        "GOVERNANCE"
+      ],
       "maturity": "F3",
       "lifecycle_status": "GOVERNANCE_ONLY",
       "runtime_status": "NONE",
@@ -836,9 +1218,14 @@
       "golden_paths": [],
       "parent_ids": [],
       "child_ids": [],
-      "related_ids": ["formula-swarm"],
+      "related_ids": [
+        "formula-swarm"
+      ],
       "separate_from": [],
-      "historical_aliases": ["14DRP", "Swarm 14DRP"],
+      "historical_aliases": [
+        "14DRP",
+        "Swarm 14DRP"
+      ],
       "provenance_class": "CURRENT_REGISTRY",
       "scientific_claim_class": "NOT_APPLICABLE",
       "notes": "Swarm law ≠ autonomous execution."
@@ -850,12 +1237,16 @@
       "family": "shadow",
       "lineage": "multi-meaning",
       "generation": "umbrella",
-      "formula_type": ["UNKNOWN"],
+      "formula_type": [
+        "UNKNOWN"
+      ],
       "maturity": "F1",
       "lifecycle_status": "CURRENT",
       "runtime_status": "NONE",
       "authority_ceiling": "DOCUMENT_ONLY",
-      "canonical_source": ["docs/Z_FORMULA_AAI_GRAND_CONSOLIDATION_0.md"],
+      "canonical_source": [
+        "docs/Z_FORMULA_AAI_GRAND_CONSOLIDATION_0.md"
+      ],
       "historical_sources": [],
       "implementation_paths": [],
       "test_paths": [],
@@ -867,9 +1258,14 @@
         "z-adversarial-shadow",
         "z-impact-shadow"
       ],
-      "related_ids": ["qosmei-core-signal-fusion"],
+      "related_ids": [
+        "qosmei-core-signal-fusion"
+      ],
       "separate_from": [],
-      "historical_aliases": ["Shadows", "Formula Shadow"],
+      "historical_aliases": [
+        "Shadows",
+        "Formula Shadow"
+      ],
       "provenance_class": "CURRENT_DOC",
       "scientific_claim_class": "NOT_APPLICABLE",
       "notes": "Umbrella only. No single universal Shadow engine. Do not merge meanings."
@@ -881,12 +1277,16 @@
       "family": "shadow",
       "lineage": "observability-policy",
       "generation": "shadow-foundation",
-      "formula_type": ["GOVERNANCE"],
+      "formula_type": [
+        "GOVERNANCE"
+      ],
       "maturity": "F5",
       "lifecycle_status": "EXECUTABLE",
       "runtime_status": "BOUNDED_EXECUTION",
       "authority_ceiling": "ADVISORY",
-      "canonical_source": ["docs/Z_SHADOW_FOUNDATION.md"],
+      "canonical_source": [
+        "docs/Z_SHADOW_FOUNDATION.md"
+      ],
       "historical_sources": [],
       "implementation_paths": [
         "observability/otel/collector.shadow.yaml",
@@ -894,11 +1294,20 @@
       ],
       "test_paths": [],
       "golden_paths": [],
-      "parent_ids": ["shadow-family"],
+      "parent_ids": [
+        "shadow-family"
+      ],
       "child_ids": [],
       "related_ids": [],
-      "separate_from": ["formula-shadow-contract", "z-adversarial-shadow", "z-impact-shadow"],
-      "historical_aliases": ["OTel Shadow", "OPA Shadow Gate"],
+      "separate_from": [
+        "formula-shadow-contract",
+        "z-adversarial-shadow",
+        "z-impact-shadow"
+      ],
+      "historical_aliases": [
+        "OTel Shadow",
+        "OPA Shadow Gate"
+      ],
       "provenance_class": "CURRENT_EXECUTABLE",
       "scientific_claim_class": "ENGINEERING",
       "notes": "Advisory only; no hard enforcement."
@@ -910,21 +1319,31 @@
       "family": "shadow",
       "lineage": "proposed-architecture",
       "generation": "grand-consolidation-0",
-      "formula_type": ["UNKNOWN"],
+      "formula_type": [
+        "UNKNOWN"
+      ],
       "maturity": "F0",
       "lifecycle_status": "PROPOSED_ARCHITECTURE",
       "runtime_status": "NONE",
       "authority_ceiling": "NONE",
-      "canonical_source": ["docs/Z_FORMULA_AAI_GRAND_CONSOLIDATION_0.md"],
+      "canonical_source": [
+        "docs/Z_FORMULA_AAI_GRAND_CONSOLIDATION_0.md"
+      ],
       "historical_sources": [],
       "implementation_paths": [],
       "test_paths": [],
       "golden_paths": [],
-      "parent_ids": ["shadow-family"],
+      "parent_ids": [
+        "shadow-family"
+      ],
       "child_ids": [],
       "related_ids": [],
-      "separate_from": ["shadow-foundation-otel-opa"],
-      "historical_aliases": ["Formula Shadow"],
+      "separate_from": [
+        "shadow-foundation-otel-opa"
+      ],
+      "historical_aliases": [
+        "Formula Shadow"
+      ],
       "provenance_class": "PROPOSED_ARCHITECTURE",
       "scientific_claim_class": "NOT_APPLICABLE",
       "notes": "SHADOW_OPERATOR_NOT_FORMALLY_DEFINED. No Shadow mathematics in this gate."
@@ -936,21 +1355,33 @@
       "family": "shadow",
       "lineage": "proposed-architecture",
       "generation": "grand-consolidation-0",
-      "formula_type": ["GOVERNANCE"],
+      "formula_type": [
+        "GOVERNANCE"
+      ],
       "maturity": "F0",
       "lifecycle_status": "PROPOSED_ARCHITECTURE",
       "runtime_status": "NONE",
       "authority_ceiling": "NONE",
-      "canonical_source": ["docs/Z_FORMULA_AAI_GRAND_CONSOLIDATION_0.md"],
+      "canonical_source": [
+        "docs/Z_FORMULA_AAI_GRAND_CONSOLIDATION_0.md"
+      ],
       "historical_sources": [],
       "implementation_paths": [],
       "test_paths": [],
       "golden_paths": [],
-      "parent_ids": ["shadow-family"],
+      "parent_ids": [
+        "shadow-family"
+      ],
       "child_ids": [],
-      "related_ids": ["z-aai"],
-      "separate_from": ["shadow-foundation-otel-opa"],
-      "historical_aliases": ["Adversarial Shadow"],
+      "related_ids": [
+        "z-aai"
+      ],
+      "separate_from": [
+        "shadow-foundation-otel-opa"
+      ],
+      "historical_aliases": [
+        "Adversarial Shadow"
+      ],
       "provenance_class": "PROPOSED_ARCHITECTURE",
       "scientific_claim_class": "NOT_APPLICABLE",
       "notes": "Checklist architecture only. PROPOSED_RELATIONSHIP to Z-AAI."
@@ -962,21 +1393,33 @@
       "family": "shadow",
       "lineage": "proposed-architecture",
       "generation": "grand-consolidation-0",
-      "formula_type": ["GOVERNANCE"],
+      "formula_type": [
+        "GOVERNANCE"
+      ],
       "maturity": "F0",
       "lifecycle_status": "PROPOSED_ARCHITECTURE",
       "runtime_status": "NONE",
       "authority_ceiling": "NONE",
-      "canonical_source": ["docs/Z_FORMULA_AAI_GRAND_CONSOLIDATION_0.md"],
+      "canonical_source": [
+        "docs/Z_FORMULA_AAI_GRAND_CONSOLIDATION_0.md"
+      ],
       "historical_sources": [],
       "implementation_paths": [],
       "test_paths": [],
       "golden_paths": [],
-      "parent_ids": ["shadow-family"],
+      "parent_ids": [
+        "shadow-family"
+      ],
       "child_ids": [],
-      "related_ids": ["z-aai"],
-      "separate_from": ["shadow-foundation-otel-opa"],
-      "historical_aliases": ["Impact Shadow"],
+      "related_ids": [
+        "z-aai"
+      ],
+      "separate_from": [
+        "shadow-foundation-otel-opa"
+      ],
+      "historical_aliases": [
+        "Impact Shadow"
+      ],
       "provenance_class": "PROPOSED_ARCHITECTURE",
       "scientific_claim_class": "NOT_APPLICABLE",
       "notes": "Questions only; no invented ethical score."
@@ -988,21 +1431,37 @@
       "family": "minibots",
       "lineage": "observers",
       "generation": "doctrine-plus-traffic",
-      "formula_type": ["GOVERNANCE"],
+      "formula_type": [
+        "GOVERNANCE"
+      ],
       "maturity": "F2",
       "lifecycle_status": "CURRENT",
       "runtime_status": "NONE",
       "authority_ceiling": "OBSERVE",
-      "canonical_source": ["docs/Z-ULTRA-INSTINCTS-AND-FORMULAS.md", "docs/Z_TRAFFIC_MINIBOTS.md"],
+      "canonical_source": [
+        "docs/Z-ULTRA-INSTINCTS-AND-FORMULAS.md",
+        "docs/Z_TRAFFIC_MINIBOTS.md"
+      ],
       "historical_sources": [],
-      "implementation_paths": ["scripts/z_traffic_minibots_status.mjs"],
+      "implementation_paths": [
+        "scripts/z_traffic_minibots_status.mjs"
+      ],
       "test_paths": [],
       "golden_paths": [],
       "parent_ids": [],
       "child_ids": [],
-      "related_ids": ["formula-swarm", "swarm-14drp"],
-      "separate_from": ["z-aai"],
-      "historical_aliases": ["Mini Bots", "MiniBots", "Traffic MiniBots"],
+      "related_ids": [
+        "formula-swarm",
+        "swarm-14drp"
+      ],
+      "separate_from": [
+        "z-aai"
+      ],
+      "historical_aliases": [
+        "Mini Bots",
+        "MiniBots",
+        "Traffic MiniBots"
+      ],
       "provenance_class": "CURRENT_DOC",
       "scientific_claim_class": "ENGINEERING",
       "notes": "Traffic tower is read-only observe/report. Expanded specialist role names from Grand Consolidation remain PROPOSED_ARCHITECTURE (not separate active bots)."
@@ -1014,7 +1473,11 @@
       "family": "qosmei",
       "lineage": "qosmei",
       "generation": "phase-1",
-      "formula_type": ["AGGREGATION", "ORCHESTRATION", "METAPHOR"],
+      "formula_type": [
+        "AGGREGATION",
+        "ORCHESTRATION",
+        "METAPHOR"
+      ],
       "maturity": "F5",
       "lifecycle_status": "EXECUTABLE",
       "runtime_status": "BOUNDED_EXECUTION",
@@ -1024,7 +1487,9 @@
         "docs/modules/trust_audit_governance/z-qosmei-core-signal-fusion.md"
       ],
       "historical_sources": [],
-      "implementation_paths": ["scripts/z_qosmei_signal_fusion.mjs"],
+      "implementation_paths": [
+        "scripts/z_qosmei_signal_fusion.mjs"
+      ],
       "test_paths": [],
       "golden_paths": [],
       "parent_ids": [],
@@ -1033,11 +1498,17 @@
         "z-power",
         "whale-bus-spine",
         "quadruple-spine-doctrine",
-        "qosmei-spine-vocabulary",
+        "qosmei-four-assurance-lanes",
         "octo-ant-neuro-flex"
       ],
-      "separate_from": ["z-quantum-research", "z-post-quantum-security"],
-      "historical_aliases": ["Z-QOSMEI", "Quantum Omni-Swarm Mega-Entanglement Infinity Core"],
+      "separate_from": [
+        "z-quantum-research",
+        "z-post-quantum-security"
+      ],
+      "historical_aliases": [
+        "Z-QOSMEI",
+        "Quantum Omni-Swarm Mega-Entanglement Infinity Core"
+      ],
       "provenance_class": "CURRENT_EXECUTABLE",
       "scientific_claim_class": "ARCHITECTURAL_METAPHOR",
       "notes": "Advisory fusion only. Quantum language is metaphor map — NOT quantum hardware, NOT PQC."
@@ -1049,7 +1520,9 @@
       "family": "whale-bus",
       "lineage": "orchestration",
       "generation": "partial-ops",
-      "formula_type": ["ORCHESTRATION"],
+      "formula_type": [
+        "ORCHESTRATION"
+      ],
       "maturity": "F2",
       "lifecycle_status": "CURRENT",
       "runtime_status": "BOUNDED_EXECUTION",
@@ -1059,13 +1532,19 @@
         "data/z_qosmei_manifest.json"
       ],
       "historical_sources": [],
-      "implementation_paths": ["scripts/z_whale_bus_comms_run.mjs"],
+      "implementation_paths": [
+        "scripts/z_whale_bus_comms_run.mjs"
+      ],
       "test_paths": [],
       "golden_paths": [],
       "parent_ids": [],
       "child_ids": [],
-      "related_ids": ["qosmei-core-signal-fusion"],
-      "separate_from": ["z-aai"],
+      "related_ids": [
+        "qosmei-core-signal-fusion"
+      ],
+      "separate_from": [
+        "z-aai"
+      ],
       "historical_aliases": [
         "SuperShell Whale Bus",
         "superShellWhaleBus",
@@ -1083,7 +1562,10 @@
       "family": "spines",
       "lineage": "omni-doctrine",
       "generation": "doctrine",
-      "formula_type": ["ORCHESTRATION", "GOVERNANCE"],
+      "formula_type": [
+        "ORCHESTRATION",
+        "GOVERNANCE"
+      ],
       "maturity": "F2",
       "lifecycle_status": "CONCEPTUAL",
       "runtime_status": "NONE",
@@ -1091,46 +1573,74 @@
       "canonical_source": [
         "docs/Z-ULTRA-INSTINCTS-AND-FORMULAS.md",
         "docs/ecosystem/Z_SPINE_MAP.md",
-        "docs/ecosystem/Z_SPINE_RESPONSIBILITY_MATRIX.md"
+        "docs/ecosystem/Z_SPINE_RESPONSIBILITY_MATRIX.md",
+        "docs/Z_FORMULA_AAI_STEWARD_IDENTITY_DECISIONS_0_6.md"
       ],
       "historical_sources": [],
-      "implementation_paths": ["core/omnai/quad_spines.js"],
+      "implementation_paths": [
+        "core/omnai/quad_spines.js"
+      ],
       "test_paths": [],
       "golden_paths": [],
       "parent_ids": [],
       "child_ids": [],
-      "related_ids": ["qosmei-spine-vocabulary", "octo-ant-neuro-flex"],
-      "separate_from": ["qosmei-spine-vocabulary"],
-      "historical_aliases": ["Z-Quadruple Compassion Spine", "Quadruple Spines"],
+      "related_ids": [
+        "qosmei-four-assurance-lanes",
+        "octo-ant-neuro-flex"
+      ],
+      "separate_from": [
+        "qosmei-four-assurance-lanes"
+      ],
+      "historical_aliases": [
+        "Z-Quadruple Compassion Spine",
+        "Quadruple Spines"
+      ],
       "provenance_class": "CURRENT_DOC",
       "scientific_claim_class": "ARCHITECTURAL_METAPHOR",
-      "notes": "COORDINATION ≠ AUTONOMOUS AUTHORITY. Naming conflict with QOSMEI spine list preserved — see qosmei-spine-vocabulary."
+      "notes": "STEWARD 0.6: Canonical Quadruple Spine preserved as Cognitive · Data · Build · Oversight. COORDINATION ≠ AUTONOMOUS AUTHORITY. Relationship to QOSMEI Four Assurance Lanes = RELATED_ARCHITECTURE (not SAME_ENGINE)."
     },
     {
-      "canonical_id": "qosmei-spine-vocabulary",
-      "display_name": "QOSMEI quadruple integrity spines vocabulary",
+      "canonical_id": "qosmei-four-assurance-lanes",
+      "display_name": "QOSMEI Four Assurance Lanes",
       "category": "ORCHESTRATION",
       "family": "spines",
       "lineage": "qosmei",
       "generation": "manifest",
-      "formula_type": ["METAPHOR", "ORCHESTRATION"],
-      "maturity": "F1",
-      "lifecycle_status": "CONCEPTUAL",
+      "formula_type": [
+        "METAPHOR",
+        "ORCHESTRATION"
+      ],
+      "maturity": "F0",
+      "lifecycle_status": "PROPOSED_ARCHITECTURE",
       "runtime_status": "NONE",
-      "authority_ceiling": "DOCUMENT_ONLY",
-      "canonical_source": ["data/z_qosmei_manifest.json"],
+      "authority_ceiling": "NONE",
+      "canonical_source": [
+        "data/z_qosmei_manifest.json",
+        "docs/Z_FORMULA_AAI_STEWARD_IDENTITY_DECISIONS_0_6.md"
+      ],
       "historical_sources": [],
       "implementation_paths": [],
       "test_paths": [],
       "golden_paths": [],
       "parent_ids": [],
       "child_ids": [],
-      "related_ids": ["quadruple-spine-doctrine", "qosmei-core-signal-fusion"],
-      "separate_from": ["quadruple-spine-doctrine"],
-      "historical_aliases": ["quadrupleSpines", "safety/registry/comms/observability spines"],
-      "provenance_class": "CONFLICTING",
+      "related_ids": [
+        "quadruple-spine-doctrine",
+        "qosmei-core-signal-fusion"
+      ],
+      "separate_from": [
+        "quadruple-spine-doctrine"
+      ],
+      "historical_aliases": [
+        "qosmei-spine-vocabulary",
+        "quadrupleSpines",
+        "QOSMEI quadruple integrity spines vocabulary",
+        "safety/registry/comms/observability spines",
+        "Four parallel integrity spines"
+      ],
+      "provenance_class": "PROPOSED_ARCHITECTURE",
       "scientific_claim_class": "ARCHITECTURAL_METAPHOR",
-      "notes": "STEWARD_NAMING_DECISION_REQUIRED vs Cognitive/Data/Build/Oversight. Do not auto-alias."
+      "notes": "PROPOSED_STEWARD_NAMING. Search found no distinct historical canonical name for the QOSMEI safety/registry/comms/observability grouping beyond conflicting manifest key quadrupleSpines. Adopted proposed label QOSMEI Four Assurance Lanes. NOT another Quadruple Spine. RELATED_ARCHITECTURE to quadruple-spine-doctrine. Do not rewrite historical docs."
     },
     {
       "canonical_id": "octo-ant-neuro-flex",
@@ -1139,7 +1649,10 @@
       "family": "octo",
       "lineage": "omni-doctrine",
       "generation": "convention",
-      "formula_type": ["ORCHESTRATION", "METAPHOR"],
+      "formula_type": [
+        "ORCHESTRATION",
+        "METAPHOR"
+      ],
       "maturity": "F2",
       "lifecycle_status": "CONCEPTUAL",
       "runtime_status": "NONE",
@@ -1149,12 +1662,17 @@
         "data/z_qosmei_manifest.json"
       ],
       "historical_sources": [],
-      "implementation_paths": ["core/omnai/octo_ant.js"],
+      "implementation_paths": [
+        "core/omnai/octo_ant.js"
+      ],
       "test_paths": [],
       "golden_paths": [],
       "parent_ids": [],
       "child_ids": [],
-      "related_ids": ["quadruple-spine-doctrine", "qosmei-core-signal-fusion"],
+      "related_ids": [
+        "quadruple-spine-doctrine",
+        "qosmei-core-signal-fusion"
+      ],
       "separate_from": [],
       "historical_aliases": [
         "OctoNero",
@@ -1174,7 +1692,9 @@
       "family": "replica",
       "lineage": "replica-fabric",
       "generation": "replica-fabric-1",
-      "formula_type": ["GOVERNANCE"],
+      "formula_type": [
+        "GOVERNANCE"
+      ],
       "maturity": "F3",
       "lifecycle_status": "GOVERNANCE_ONLY",
       "runtime_status": "NONE",
@@ -1184,14 +1704,23 @@
         "data/z_replica_fabric_registry.json"
       ],
       "historical_sources": [],
-      "implementation_paths": ["scripts/z_replica_fabric_check.mjs"],
+      "implementation_paths": [
+        "scripts/z_replica_fabric_check.mjs"
+      ],
       "test_paths": [],
       "golden_paths": [],
       "parent_ids": [],
       "child_ids": [],
-      "related_ids": ["ultra-mage-governance"],
+      "related_ids": [
+        "ultra-mage-governance"
+      ],
       "separate_from": [],
-      "historical_aliases": ["Replica Fabric", "self replicate", "self engineer", "self enhance"],
+      "historical_aliases": [
+        "Replica Fabric",
+        "self replicate",
+        "self engineer",
+        "self enhance"
+      ],
       "provenance_class": "CURRENT_REGISTRY",
       "scientific_claim_class": "NOT_APPLICABLE",
       "notes": "UNBOUNDED_SELF_REPLICATION = NOT AUTHORIZED. Validator only; no live clones."
@@ -1203,12 +1732,18 @@
       "family": "aai",
       "lineage": "proposed-architecture",
       "generation": "grand-consolidation-0",
-      "formula_type": ["ORCHESTRATION", "SYMBOLIC"],
+      "formula_type": [
+        "ORCHESTRATION",
+        "SYMBOLIC"
+      ],
       "maturity": "F0",
       "lifecycle_status": "PROPOSED_ARCHITECTURE",
       "runtime_status": "NONE",
       "authority_ceiling": "NONE",
-      "canonical_source": ["docs/Z_FORMULA_AAI_GRAND_CONSOLIDATION_0.md"],
+      "canonical_source": [
+        "docs/Z_FORMULA_AAI_GRAND_CONSOLIDATION_0.md",
+        "docs/Z_FORMULA_AAI_STEWARD_IDENTITY_DECISIONS_0_6.md"
+      ],
       "historical_sources": [],
       "implementation_paths": [],
       "test_paths": [],
@@ -1222,11 +1757,20 @@
         "z-impact-shadow",
         "z-learning-provenance-spine"
       ],
-      "separate_from": ["omega-ultra-drp", "formula-swarm", "qosmei-core-signal-fusion"],
-      "historical_aliases": ["Z Advanced Adaptive Intelligence", "Z-AAI-μ", "Z-AAI-M", "Z-AAI-Ω"],
+      "separate_from": [
+        "omega-ultra-drp",
+        "formula-swarm",
+        "qosmei-core-signal-fusion"
+      ],
+      "historical_aliases": [
+        "Z Advanced Adaptive Intelligence",
+        "Z-AAI-μ",
+        "Z-AAI-M",
+        "Z-AAI-Ω"
+      ],
       "provenance_class": "PROPOSED_ARCHITECTURE",
       "scientific_claim_class": "NOT_APPLICABLE",
-      "notes": "NOT HISTORICALLY RECOVERED. NOT IMPLEMENTED. Not AGI. Not autonomous authority. Suggest/explain only if Steward accepts."
+      "notes": "STEWARD 0.6: Z_AAI_IDENTITY_ACCEPTED=YES; Z_AAI_IMPLEMENTATION_AUTHORIZED=NO. Remains PROPOSED_ARCHITECTURE. May later observe/compare/synthesize/explain/challenge/simulate/propose. Does not execute/rewrite canon/deploy/self-authorize/self-replicate/control production. Z-AAI ≠ AGI ≠ consciousness ≠ autonomous authority."
     },
     {
       "canonical_id": "micro-meso-macro-formal-model",
@@ -1235,21 +1779,32 @@
       "family": "proposed-aggregation",
       "lineage": "proposed-architecture",
       "generation": "grand-consolidation-0",
-      "formula_type": ["AGGREGATION", "UNKNOWN"],
+      "formula_type": [
+        "AGGREGATION",
+        "UNKNOWN"
+      ],
       "maturity": "F0",
       "lifecycle_status": "PROPOSED_ARCHITECTURE",
       "runtime_status": "NONE",
       "authority_ceiling": "NONE",
-      "canonical_source": ["docs/Z_FORMULA_AAI_GRAND_CONSOLIDATION_0.md"],
+      "canonical_source": [
+        "docs/Z_FORMULA_AAI_GRAND_CONSOLIDATION_0.md"
+      ],
       "historical_sources": [],
       "implementation_paths": [],
       "test_paths": [],
       "golden_paths": [],
       "parent_ids": [],
       "child_ids": [],
-      "related_ids": ["cubes-ultra-six-x10", "qosmei-core-signal-fusion"],
+      "related_ids": [
+        "cubes-ultra-six-x10",
+        "qosmei-core-signal-fusion"
+      ],
       "separate_from": [],
-      "historical_aliases": ["Micro Z-Formula", "microZ"],
+      "historical_aliases": [
+        "Micro Z-Formula",
+        "microZ"
+      ],
       "provenance_class": "PROPOSED_ARCHITECTURE",
       "scientific_claim_class": "NOT_APPLICABLE",
       "notes": "Micro doctrinal only today; Meso/Macro tiers MISSING. No aggregation mathematics invented."
@@ -1261,19 +1816,26 @@
       "family": "proposed-governance",
       "lineage": "proposed-architecture",
       "generation": "grand-consolidation-0",
-      "formula_type": ["GOVERNANCE"],
+      "formula_type": [
+        "GOVERNANCE"
+      ],
       "maturity": "F0",
       "lifecycle_status": "PROPOSED_ARCHITECTURE",
       "runtime_status": "NONE",
       "authority_ceiling": "NONE",
-      "canonical_source": ["docs/Z_FORMULA_AAI_GRAND_CONSOLIDATION_0.md"],
+      "canonical_source": [
+        "docs/Z_FORMULA_AAI_GRAND_CONSOLIDATION_0.md"
+      ],
       "historical_sources": [],
       "implementation_paths": [],
       "test_paths": [],
       "golden_paths": [],
       "parent_ids": [],
       "child_ids": [],
-      "related_ids": ["z-aai", "z-tevv-spine"],
+      "related_ids": [
+        "z-aai",
+        "z-tevv-spine"
+      ],
       "separate_from": [],
       "historical_aliases": [],
       "provenance_class": "PROPOSED_ARCHITECTURE",
@@ -1287,21 +1849,30 @@
       "family": "proposed-governance",
       "lineage": "proposed-architecture",
       "generation": "grand-consolidation-0",
-      "formula_type": ["GOVERNANCE"],
+      "formula_type": [
+        "GOVERNANCE"
+      ],
       "maturity": "F0",
       "lifecycle_status": "PROPOSED_ARCHITECTURE",
       "runtime_status": "NONE",
       "authority_ceiling": "NONE",
-      "canonical_source": ["docs/Z_FORMULA_AAI_GRAND_CONSOLIDATION_0.md"],
+      "canonical_source": [
+        "docs/Z_FORMULA_AAI_GRAND_CONSOLIDATION_0.md"
+      ],
       "historical_sources": [],
       "implementation_paths": [],
       "test_paths": [],
       "golden_paths": [],
       "parent_ids": [],
       "child_ids": [],
-      "related_ids": ["ggaesp-pipeline-v11-v19", "omega-omnai-rsi-tiers"],
+      "related_ids": [
+        "ggaesp-pipeline-v11-v19",
+        "omega-omnai-rsi-tiers"
+      ],
       "separate_from": [],
-      "historical_aliases": ["TEST EVALUATE VERIFY VALIDATE"],
+      "historical_aliases": [
+        "TEST EVALUATE VERIFY VALIDATE"
+      ],
       "provenance_class": "PROPOSED_ARCHITECTURE",
       "scientific_claim_class": "NOT_APPLICABLE",
       "notes": "Framework proposed; existing goldens are anchors only, not full TEVV."
@@ -1313,19 +1884,26 @@
       "family": "proposed-governance",
       "lineage": "proposed-architecture",
       "generation": "grand-consolidation-0",
-      "formula_type": ["GOVERNANCE"],
+      "formula_type": [
+        "GOVERNANCE"
+      ],
       "maturity": "F0",
       "lifecycle_status": "PROPOSED_ARCHITECTURE",
       "runtime_status": "NONE",
       "authority_ceiling": "NONE",
-      "canonical_source": ["docs/Z_FORMULA_AAI_GRAND_CONSOLIDATION_0.md"],
+      "canonical_source": [
+        "docs/Z_FORMULA_AAI_GRAND_CONSOLIDATION_0.md"
+      ],
       "historical_sources": [],
       "implementation_paths": [],
       "test_paths": [],
       "golden_paths": [],
       "parent_ids": [],
       "child_ids": [],
-      "related_ids": ["lpbs-infinite-compassion", "ggaesp-pipeline-v11-v19"],
+      "related_ids": [
+        "lpbs-infinite-compassion",
+        "ggaesp-pipeline-v11-v19"
+      ],
       "separate_from": [],
       "historical_aliases": [],
       "provenance_class": "PROPOSED_ARCHITECTURE",
@@ -1339,12 +1917,16 @@
       "family": "quantum-separation",
       "lineage": "future-research",
       "generation": "grand-consolidation-0",
-      "formula_type": ["UNKNOWN"],
+      "formula_type": [
+        "UNKNOWN"
+      ],
       "maturity": "F0",
       "lifecycle_status": "FUTURE_RESEARCH",
       "runtime_status": "NONE",
       "authority_ceiling": "NONE",
-      "canonical_source": ["docs/Z_FORMULA_AAI_GRAND_CONSOLIDATION_0.md"],
+      "canonical_source": [
+        "docs/Z_FORMULA_AAI_GRAND_CONSOLIDATION_0.md"
+      ],
       "historical_sources": [],
       "implementation_paths": [],
       "test_paths": [],
@@ -1352,7 +1934,10 @@
       "parent_ids": [],
       "child_ids": [],
       "related_ids": [],
-      "separate_from": ["qosmei-core-signal-fusion", "z-post-quantum-security"],
+      "separate_from": [
+        "qosmei-core-signal-fusion",
+        "z-post-quantum-security"
+      ],
       "historical_aliases": [],
       "provenance_class": "PROPOSED_ARCHITECTURE",
       "scientific_claim_class": "REAL_QUANTUM_RESEARCH",
@@ -1365,12 +1950,16 @@
       "family": "quantum-separation",
       "lineage": "future-research",
       "generation": "grand-consolidation-0",
-      "formula_type": ["GOVERNANCE"],
+      "formula_type": [
+        "GOVERNANCE"
+      ],
       "maturity": "F0",
       "lifecycle_status": "FUTURE_RESEARCH",
       "runtime_status": "NONE",
       "authority_ceiling": "NONE",
-      "canonical_source": ["docs/Z_FORMULA_AAI_GRAND_CONSOLIDATION_0.md"],
+      "canonical_source": [
+        "docs/Z_FORMULA_AAI_GRAND_CONSOLIDATION_0.md"
+      ],
       "historical_sources": [],
       "implementation_paths": [],
       "test_paths": [],
@@ -1378,8 +1967,13 @@
       "parent_ids": [],
       "child_ids": [],
       "related_ids": [],
-      "separate_from": ["qosmei-core-signal-fusion", "z-quantum-research"],
-      "historical_aliases": ["PQC"],
+      "separate_from": [
+        "qosmei-core-signal-fusion",
+        "z-quantum-research"
+      ],
+      "historical_aliases": [
+        "PQC"
+      ],
       "provenance_class": "PROPOSED_ARCHITECTURE",
       "scientific_claim_class": "POST_QUANTUM_SECURITY",
       "notes": "NOT QOSMEI. NOT quantum computation. No crypto migration in this gate."
@@ -1390,37 +1984,63 @@
     "source_a": "docs/Z-ULTRA-INSTINCTS-AND-FORMULAS.md / docs/ecosystem/Z_SPINE_*.md",
     "source_b": "data/z_qosmei_manifest.json spine.quadrupleSpines",
     "meaning_a": "Cognitive · Data · Build · Oversight (doctrine coordination)",
-    "meaning_b": "safety · registry · comms · observability (integrity vocabulary)",
-    "same_technology": "UNRESOLVED",
-    "verdict": "STEWARD_NAMING_DECISION_REQUIRED",
-    "registry_ids": ["quadruple-spine-doctrine", "qosmei-spine-vocabulary"]
+    "meaning_b": "safety · registry · comms · observability",
+    "same_technology": false,
+    "relationship": "RELATED_ARCHITECTURE",
+    "verdict": "RESOLVED_BY_STEWARD_0_6",
+    "canonical_quadruple_spine_id": "quadruple-spine-doctrine",
+    "qosmei_four_lane_id": "qosmei-four-assurance-lanes",
+    "qosmei_naming": "PROPOSED_STEWARD_NAMING",
+    "historical_name_search": "NO_DISTINCT_CANONICAL_NAME_FOUND",
+    "registry_ids": [
+      "quadruple-spine-doctrine",
+      "qosmei-four-assurance-lanes"
+    ]
   },
   "z_mega_collision": {
     "result": "UNRESOLVED_SHARED_PARAMETER",
+    "steward_decision": "DEFERRED_PENDING_FORMULA_SPEC",
     "umbrella_id": "z-mega",
     "provisional_context_ids": [
       "z-mega-context-omega",
       "z-mega-context-lpbs",
       "z-mega-context-zui"
     ],
-    "steward_decision_required": "SHARED | SEPARATE | remain UNRESOLVED",
+    "declared_same_parameter": false,
+    "declared_separate_parameter": false,
     "invented_ranges": false
   },
   "counts": {
     "total": 48,
-    "lifecycle_CURRENT": 7,
-    "lifecycle_EXECUTABLE": 4,
-    "lifecycle_CONCEPTUAL": 9,
-    "lifecycle_HISTORICAL_HOLD": 4,
-    "lifecycle_PROPOSED_ARCHITECTURE": 8,
-    "lifecycle_PROPOSED_NEW_FAMILY": 1,
-    "lifecycle_FUTURE_RESEARCH": 2,
-    "lifecycle_other": {
+    "lifecycle": {
+      "CURRENT": 7,
+      "HISTORICAL_HOLD": 4,
+      "CONCEPTUAL": 8,
+      "SPEC_PARTIAL": 1,
+      "EXECUTABLE": 4,
       "GOVERNANCE_ONLY": 5,
       "NEEDS_FORMULA_SPEC": 5,
       "SIMULATION_ONLY": 2,
-      "SPEC_PARTIAL": 1
+      "PROPOSED_NEW_FAMILY": 1,
+      "PROPOSED_ARCHITECTURE": 9,
+      "FUTURE_RESEARCH": 2
     },
-    "note": "Maturity and lifecycle do not imply deployment authority."
+    "note": "Maturity and lifecycle do not imply deployment authority. Steward 0.6 identity acceptances do not authorize implementation."
+  },
+  "steward_decisions_0_6": {
+    "sealed_at": "2026-08-21",
+    "receipt": "docs/Z_FORMULA_AAI_STEWARD_IDENTITY_DECISIONS_0_6.md",
+    "decisions": {
+      "z_aai_identity_accepted": true,
+      "z_aai_implementation_authorized": false,
+      "continuous_360_new_family_accepted": true,
+      "continuous_360_historical_canon": false,
+      "continuous_360_implementation_authorized": false,
+      "z_mega_shared_parameter_decision": "DEFERRED_PENDING_FORMULA_SPEC",
+      "z_mega_merged": false,
+      "quadruple_spine_identity_preserved": true,
+      "qosmei_four_lane_naming": "qosmei-four-assurance-lanes",
+      "qosmei_four_lane_naming_class": "PROPOSED_STEWARD_NAMING"
+    }
   }
 }
