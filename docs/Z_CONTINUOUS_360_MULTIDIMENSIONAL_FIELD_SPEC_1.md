@@ -1,17 +1,19 @@
 # Z-SANCTUARY-CONTINUOUS-360-MULTIDIMENSIONAL-FIELD-SPEC-1
 
-**Status:** Architectural / typed-contract specification · **F2–F3 target** · **no implementation**  
+**Status:** Architectural / typed-contract specification · **F3** (after Steward P0 1.1) · **no implementation**  
 **Date:** 2026-08-21  
-**Baseline HEAD:** `6fa5510`  
+**Baseline HEAD:** `6fa5510` · **P0 refinement after:** `47a8b24`  
 **Branch:** `cursor/zsanctuary/z-sdc-phase-0-architecture`  
 **Family ID:** `continuous-360-multidimensional-field`  
-**Schema artifact:** NOT CREATED (docs-first)
+**Schema artifact:** NOT CREATED (docs-first)  
+**Steward P0 receipt:** `docs/Z_CONTINUOUS_360_STEWARD_P0_DECISIONS_1_1.md`
 
 Provenance labels used throughout:
 
 | Label | Meaning |
 | --- | --- |
 | `STEWARD_DEFINED_ARCHITECTURAL_INTENT` | Explicit Steward intent (gates 0.6 / this charter) |
+| `STEWARD_DEFINED` | Explicit Steward P0 design decisions (gate 1.1) |
 | `SEALED_CURRENT_TRUTH` | Sealed identity / lineage seals |
 | `DERIVED_ARCHITECTURE` | Logical consequence of accepted definitions |
 | `PROPOSED_SPECIFICATION` | Spec proposal awaiting Steward confirmation |
@@ -100,7 +102,18 @@ SWARM_MAJORITY ≠ GROUND_TRUTH
 
 Literal geometry is **optional by domain profile**. Combat may define angular coverage; GENERAL must not require it.
 
-Status: **PARTIAL** — formal completeness metric undefined (`360_COMPLETENESS_METRIC = UNDEFINED`).
+### Steward P0-1 addendum (`STEWARD_DEFINED`)
+
+```text
+GENERAL_360_MEANING = MULTI_PERSPECTIVE_SURROUND_COMPLETENESS
+LITERAL_360_DEGREES_REQUIRED = NO
+DOMAIN_SPECIFIC_GEOMETRY_ALLOWED = YES
+360_COMPLETENESS_METRIC = UNDEFINED
+```
+
+GENERAL 360 = complete-enough multi-perspective contextual observation.  
+COMBAT 360 (profile) may additionally use literal angular/spatial geometry.  
+Do not modify Combat 360 or Ultra 360 by this decision.
 
 ## Meaning of Continuous
 
@@ -322,28 +335,47 @@ Every value should answer: observed? calculated? inferred? simulated? human? Min
 
 ## Uncertainty Model
 
-Need for uncertainty: **DEFINED** as requirement.  
-Exact representation: **UNRESOLVED**.
+Need for uncertainty: **DEFINED** as requirement.
 
-Candidates evaluated (none selected):
+### Steward P0-4 addendum (`STEWARD_DEFINED`)
 
-numeric confidence · categorical confidence · evidence count · provenance-based confidence · domain-specific · unknown
+Structured **non-numeric** uncertainty by default. No universal 0–1 score. No universal LOW/MEDIUM/HIGH thresholds.
+
+Conceptual contract `FieldUncertainty`:
+
+| Field | Role |
+| --- | --- |
+| assessment_status | `NOT_ASSESSED` \| `QUALITATIVE` \| `QUANTIFIED` |
+| uncertainty_kind | categorical condition (not a score) |
+| basis | why this assessment |
+| evidence_refs | supporting refs |
+| domain_value | OPTIONAL future/domain |
+| domain_unit | OPTIONAL |
+
+Initial `uncertainty_kind` values: `MISSING_EVIDENCE` · `CONFLICTING_EVIDENCE` · `MODEL_ESTIMATE` · `MEASUREMENT_LIMITATION` · `UNKNOWN_SOURCE` · `OTHER`
 
 ```text
-0–1 CONFIDENCE SCALE = NOT INVENTED
+UNIVERSAL_NUMERIC_CONFIDENCE = NO
+DOMAIN_NUMERIC_UNCERTAINTY_ALLOWED = YES
+UNKNOWN ≠ ZERO
+MISSING ≠ ZERO
+CONFLICTING ≠ UNKNOWN
+NOT_ASSESSED ≠ CERTAIN
 ```
 
 ## Field Unit Decision
 
 Historical **Z-Unit** is **not** resurrected as canon (`SEALED_CURRENT_TRUTH`).
 
-| Verdict | |
-| --- | --- |
-| Result | **`FIELD_UNIT_STEWARD_DECISION_REQUIRED`** |
-| Why | Discrete cells help Combat/spatial profiles and Micro grouping, but GENERAL may start as graph + observations without a fixed cell |
-| Naming candidates (proposal only) | FieldCell · StateCell · ObservationCell · Z-Field Cell · none |
+### Steward P0-2 addendum (`STEWARD_DEFINED`)
 
-Do not alias any choice to historical Z-Unit.
+```text
+GENERAL_FIXED_FIELD_CELL = NO
+HISTORICAL_Z_UNIT_CREATED = NO
+FIELD_OBSERVATION_AS_ATOMIC_EVIDENCE = YES
+```
+
+No universal voxel, cube, Z-Unit, or fixed spatial cell. Atomic evidence remains `FieldObservation`. Domain profiles may define specialized units (Combat voxel/cell · graph node/edge · temporal event/state · spatial coordinate/sample). Representation follows the domain.
 
 ## Resolution Model
 
@@ -357,27 +389,57 @@ Generic field may carry domain-specific: resolution · sampling interval · spat
 
 ## Representation (discrete vs continuous)
 
-`PROPOSED_SPECIFICATION`: **HYBRID MODEL allowed**
+### Steward P0-5 addendum (`STEWARD_DEFINED`)
 
-| Mode | Status |
-| --- | --- |
-| DISCRETE CELLS | OPTIONAL by profile |
-| CONTINUOUS VALUES | OPTIONAL by dimension |
-| EVENT STREAMS | ALLOWED |
-| GRAPH RELATIONSHIPS | **REQUIRED** capability for GENERAL |
-| HYBRID | **PREFERRED** starting architecture |
+```text
+GENERAL_FIELD_REPRESENTATION = HYBRID
+UNIVERSAL_SPATIAL_LATTICE = NO
+UNIVERSAL_GRAPH_ONLY = NO
+UNIVERSAL_EVENT_STREAM_ONLY = NO
+```
 
-Do not over-engineer a single lattice for all domains.
+Hybrid starting architecture:
+
+```text
+VERSIONED STATE / EVENT STREAM
+        +
+RELATIONSHIP GRAPH
+        +
+OPTIONAL DOMAIN-SPECIFIC FIELD REPRESENTATION
+```
+
+Domain forms (coordinates / lattices / voxels / other) only where appropriate. Do not force Sanctuary into graph-only, cube-only, or event-log-only.
 
 ---
 
 ## General Profile
 
-Smallest generic `FieldProfile` = **GENERAL** (`PROPOSED_SPECIFICATION`):
+### Steward P0-3 addendum (`STEWARD_DEFINED`)
 
-Focus: entity · time · state · relationship · sequence · provenance · uncertainty (representation TBD).
+Minimum GENERAL profile:
 
-Avoid: Combat cm voxels · Ultra ×10 organ geometry · invented 360 completeness scores.
+```text
+ENTITY
++ TIME
++ SEQUENCE
++ STATE
++ RELATIONSHIPS
++ PROVENANCE
++ UNCERTAINTY
+```
+
+| Flag | Value |
+| --- | --- |
+| SPATIAL_DIMENSION_REQUIRED | NO |
+| FREQUENCY_DIMENSION_REQUIRED | NO |
+| SHADOW_DIMENSION_REQUIRED | NO |
+| COMBAT_DIMENSION_REQUIRED | NO |
+
+Core dimension classes: TEMPORAL · SEQUENTIAL · STATE · RELATIONAL.  
+Mandatory evidence metadata: PROVENANCE · UNCERTAINTY.  
+Identity anchor: ENTITY.  
+Spatial / frequency / Shadow / Combat / physical coordinates are extensions — not GENERAL requirements.  
+Provenance and uncertainty are **not** physical dimensions.
 
 ## Combat Profile
 
@@ -618,20 +680,21 @@ Existing engines are not rewritten to fit the field. Conceptual adapters only: G
 | Property | Status | Definition | Provenance |
 | --- | --- | --- | --- |
 | Family identity | DEFINED | `continuous-360-multidimensional-field` | SEALED_CURRENT_TRUTH |
-| 360 meaning | PARTIAL | Surround / multi-perspective completeness; literal angle domain-optional | PROPOSED_SPECIFICATION |
+| 360 meaning | DEFINED | MULTI_PERSPECTIVE_SURROUND_COMPLETENESS; literal degrees not required generally | STEWARD_DEFINED |
 | continuous meaning | DEFINED | Conceptual continuity + sequential/temporal versioning; math continuity not claimed | PROPOSED_SPECIFICATION |
-| multidimensional meaning | PARTIAL | Class taxonomy accepted; instance set open | PROPOSED_SPECIFICATION |
-| entity | DEFINED | Conceptual FieldEntity contract | PROPOSED_SPECIFICATION |
-| observation | DEFINED | Conceptual FieldObservation contract | PROPOSED_SPECIFICATION |
-| dimension | DEFINED | Conceptual FieldDimension contract | PROPOSED_SPECIFICATION |
-| relationship | PARTIAL | Kinds listed; no causal assertion | PROPOSED_SPECIFICATION |
+| multidimensional meaning | PARTIAL | Class taxonomy; GENERAL mandatory set sealed | STEWARD_DEFINED + open extensions |
+| entity | DEFINED | Conceptual FieldEntity; GENERAL identity anchor | STEWARD_DEFINED |
+| observation | DEFINED | Atomic evidence = FieldObservation | STEWARD_DEFINED |
+| dimension | DEFINED | Conceptual FieldDimension; GENERAL core classes sealed | STEWARD_DEFINED |
+| relationship | PARTIAL | Kinds listed; no causal assertion; RELATIONAL required in GENERAL | STEWARD_DEFINED |
 | time | DEFINED | Past/present/predicted/shadow-future separation | PROPOSED_SPECIFICATION |
 | sequence | PARTIAL | S(n)→S(n+1) recording; no transition math | PROPOSED_SPECIFICATION |
-| state | DEFINED | State class separation | PROPOSED_SPECIFICATION |
+| state | DEFINED | State class separation preserved | PROPOSED_SPECIFICATION |
 | provenance | DEFINED | Provenance class set | PROPOSED_SPECIFICATION |
-| uncertainty | PARTIAL | Need defined; scale unresolved | UNRESOLVED |
-| field unit | DEFERRED | Steward decision required | UNRESOLVED |
+| uncertainty | DEFINED | FieldUncertainty structured non-numeric default | STEWARD_DEFINED |
+| field unit | DEFINED | No universal fixed cell | STEWARD_DEFINED |
 | resolution | DEFINED (policy) | No global fixed resolution | DERIVED_ARCHITECTURE |
+| representation | DEFINED | HYBRID = event/state stream + graph + optional domain | STEWARD_DEFINED |
 | Shadow representation | PARTIAL | Storage capability; no operator | PROPOSED_SPECIFICATION |
 | Micro | PARTIAL | Architectural grain | PROPOSED_SPECIFICATION |
 | Meso | DEFERRED | Cluster concept only | PROPOSED_ARCHITECTURE |
@@ -641,7 +704,7 @@ Existing engines are not rewritten to fit the field. Conceptual adapters only: G
 | Z-AAI relationship | DEFERRED | Consumer of scoped evidence | PROPOSED_ARCHITECTURE |
 | Combat specialization | PARTIAL | Profile architecture; cm Combat-specific | SEALED + PROPOSED |
 
-**Maturity target for this phase:** **F2 / approaching F3** on typed conceptual contracts — **not** F4–F6.
+**Maturity after Steward P0 1.1:** **F3 SPECIFICATION** on GENERAL typed contracts — **not** F4–F6. Implementation not authorized.
 
 ## Missing Mathematics
 
@@ -649,76 +712,76 @@ Existing engines are not rewritten to fit the field. Conceptual adapters only: G
 - Micro→Meso→Macro aggregation
 - Shadow operator
 - Z-Mega / LPBS / Ultra formulas (out of scope)
-- 360 completeness metric
-- Uncertainty numeric scale
+- 360 completeness metric (remains UNDEFINED)
+- Universal numeric uncertainty (forbidden; domain numeric allowed later)
 - Global resolution values
 
-## Missing Canon
+## Missing Canon / P1
 
-- Steward seal on GENERAL 360 wording if further precision desired
-- Field-unit name / necessity
-- Mandatory GENERAL dimension set
-- Uncertainty representation choice
-- Graph-vs-hybrid preference confirmation
-- Dimension registry as governed non-runtime artifact (future)
+- Dimension registry as governed non-runtime artifact
+- Shadow taxonomy / operator
+- Micro→Meso→Macro formal model
+- Combat specialization charter
+- Adapter charters (GGAESP / KairoCell / LPBS / …)
+- Structural semantic golden pack (design next — not created here)
 
 ## Steward Decisions Required (P0)
 
-| # | Decision | Why P0 |
+| # | Decision | Status |
 | --- | --- | --- |
-| 1 | Confirm GENERAL **360** = surround/multi-perspective completeness (not literal degrees) | Locks family meaning |
-| 2 | Field unit: required / not required / name choice | Affects Micro & Combat adapter shape |
-| 3 | GENERAL minimum mandatory dimension set | Blocks goldens |
-| 4 | Uncertainty representation class (categorical vs deferred numeric) | Blocks typed observation contract |
-| 5 | Confirm HYBRID (graph + optional cells) as starting representation | Blocks schema design |
+| 1 | GENERAL 360 meaning | **CLOSED** — MULTI_PERSPECTIVE_SURROUND_COMPLETENESS |
+| 2 | Universal field unit | **CLOSED** — NO fixed cell; FieldObservation atomic |
+| 3 | GENERAL minimum profile | **CLOSED** — ENTITY+TIME+SEQUENCE+STATE+RELATIONSHIPS+PROVENANCE+UNCERTAINTY |
+| 4 | Uncertainty representation | **CLOSED** — FieldUncertainty structured non-numeric |
+| 5 | Starting representation | **CLOSED** — HYBRID |
 
-P1: Combat specialization charter · Shadow taxonomy · Micro→Meso→Macro formal model · adapter charters.
+P1 remains open (see Missing Canon / P1).
 
 ## Golden Readiness
 
 ```text
-CONTINUOUS_360_GOLDEN_NOT_READY
+CONTINUOUS_360_GOLDEN_PARTIAL
+FIELD_SPEC_READY_FOR_GOLDEN_DESIGN
 ```
 
-Blocked by P0 decisions (unit, mandatory dimensions, uncertainty, confirmed 360 wording). Future form:
+P0 blockers cleared. Structural semantic goldens may now be **designed** (representation invariants), not numerical answers. Golden pack **not created** in this gate.
 
-```text
-Known structured state → expected normalized field representation
-```
+Allowed future golden themes (examples only):
 
-— values not invented here.
+- observed remains OBSERVED; AI proposal remains AI_PROPOSED
+- Shadow ≠ observed; missing ≠ zero; conflict preserved
+- history retained after update; Combat spatial stays domain-specific
+- more observers ≠ more authority
 
 ## Implementation Readiness
 
 ```text
-FIELD_SPEC_PARTIAL
-STEWARD_DECISIONS_REQUIRED
+FIELD_SPEC_READY_FOR_GOLDEN_DESIGN
+IMPLEMENTATION = NOT_AUTHORIZED
 ```
 
-Not `FIELD_SPEC_READY_FOR_GOLDEN_DESIGN` until P0 answers land.  
-**Implementation not authorized.**
+**Implementation not authorized.** Ready for a golden-design charter only.
 
 ## Recommended Next Gate
 
 ```text
-ONE: Steward P0 answers for Continuous 360
-     (360 wording confirm · field-unit · mandatory dimensions · uncertainty · hybrid confirm)
+ONE: Continuous 360 Semantic Goldens Design
+     (representation invariants · no runtime · no invented numbers)
 
-THEN (after P0): either
-  - Continuous 360 golden-design charter (still no runtime), OR
-  - Formula Shadow taxonomy / specification
+Alternate: Formula Shadow taxonomy / specification
 ```
 
-**Cursor recommendation without opening:** close **P0 Steward decisions** for this field first; then Shadow taxonomy (Option B from prior ranking) or golden-design — still **no** Z-AAI / Swarm / MiniBot activation.
+Still **no** Z-AAI / Swarm / MiniBot activation.
 
 ---
 
 ## Terminal Classification
 
 ```text
-CONTINUOUS_360_MULTIDIMENSIONAL_FIELD_SPEC_1 = SEALED_DOCS
-MATURITY ≈ F2 / PARTIAL F3
-GOLDEN = NOT_READY
+CONTINUOUS_360_MULTIDIMENSIONAL_FIELD_SPEC_1 = REFINED_BY_STEWARD_P0_1_1
+MATURITY = F3
+GOLDEN_DESIGN = READY
+GOLDEN_PACK = NOT_CREATED
 IMPLEMENTATION = NOT_STARTED
 PRODUCTION_AUTHORITY = NONE
 ```
