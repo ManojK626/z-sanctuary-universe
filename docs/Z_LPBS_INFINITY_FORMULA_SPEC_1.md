@@ -6,7 +6,7 @@
 **Mode:** Formula specification only — HUB-LPBS-∞  
 **Provenance law:** Every claim is `CANON_DERIVED` | `STEWARD_DEFINED` | `DERIVED_CONSTRAINT` | `UNRESOLVED`
 
-### Terminal classification
+## Terminal classification
 
 ```text
 LPBS_INFINITY_SPEC_PARTIAL
@@ -145,7 +145,7 @@ LPBS_MULTIPLICATION_OPERATOR_UNRESOLVED
 | --- | --- |
 | NUMERIC_MULTIPLICATION | **UNRESOLVED** — not sealed |
 | CONTROLLED_SCALING / AMPLIFICATION | Compatible with prose “powers up / multiplies” — still **not** a numeric contract |
-| SYMBOLIC_COMBINATION | Safe reading of doctrine until Steward seals arithmetic | `CANON_DERIVED` as **prose intent only** |
+| SYMBOLIC_COMBINATION | Safe reading of doctrine until Steward seals arithmetic (`CANON_DERIVED` as **prose intent only**) |
 
 **STEWARD_DEFINED (measurements):** **NONE** in this gate.
 
