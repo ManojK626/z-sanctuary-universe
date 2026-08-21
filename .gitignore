@@ -208,3 +208,11 @@ data/reports/incidents/
 
 # Z-DOORWAY-3 — local session telemetry (operator opt-in via -SessionLog); do not commit
 data/reports/z_doorway_session_log.jsonl
+
+# Playwright E2E — temporary outputs only (infrastructure under e2e/ is checked in)
+/test-results/
+/playwright-report/
+/blob-report/
+/playwright/.cache/
+/e2e/.auth/
+/e2e/tmp/
