@@ -14,7 +14,7 @@ After traffic (and related reports) are fresh, **`npm run z:amk:strategy`** roll
 
 ## Z-SWARM-14DRP governance companion
 
-Run **`npm run z:swarm:14drp`** to validate universal swarm law + role registries (docs/data/report lane only). This classifier flags forbidden authority claims (RED), future-gated AMK lanes (BLUE), and optional reference gaps (YELLOW). It never executes runtime work. See [Z_SWARM_14DRP_UNIVERSAL_AGENT_LAW.md](Z_SWARM_14DRP_UNIVERSAL_AGENT_LAW.md) and [Z_FORMULA_SWARM_CO_DESIGN_ENGINE.md](Z_FORMULA_SWARM_CO_DESIGN_ENGINE.md).
+Run **`npm run z:swarm:14drp`** to validate universal swarm law + role registries (docs/data/report lane only). **Also required inside `npm run z:traffic`** as the **Z-SWARM-14DRP-1 Law Bot** (8th required minibot). This classifier flags forbidden authority claims (RED), future-gated AMK lanes (BLUE), and optional reference gaps (YELLOW). It never executes runtime work. See [Z_SWARM_14DRP_UNIVERSAL_AGENT_LAW.md](Z_SWARM_14DRP_UNIVERSAL_AGENT_LAW.md) and [Z_FORMULA_SWARM_CO_DESIGN_ENGINE.md](Z_FORMULA_SWARM_CO_DESIGN_ENGINE.md).
 
 ## Z-SEC-TRIPLECHECK communication companion
 
@@ -66,6 +66,7 @@ When the hub is served over HTTP, **AMK-INDICATOR-1** (`dashboard/scripts/amk-pr
 | Z-AWARE-1 Ecosystem Awareness Bot | `npm run z:ecosystem:awareness` | Registry + capsules; exit 1 only if overall **RED** |
 | Z-API-SPINE-1 Power Cell Bot | `npm run z:api:spine` | API/route registry validation; exit 1 only if overall **RED** |
 | Z-SSWS-LINK-1 Launch Requirements Bot | `npm run z:ssws:requirements` | Workspace launch manifest validation; exit 1 only if overall **RED** |
+| Z-SWARM-14DRP-1 Law Bot | `npm run z:swarm:14drp` | Universal agent law + role registries; exit 1 only if overall **RED** |
 | AI Builder Bot | `npm run z:ai-builder:refresh` | Only with `--deep` |
 | Project Test Bot | `z-questra` tests | Only with `--with-questra` |
 | DRP Gate Bot | `--next-lane` hint analysis | Governance / safety posture (read-only pattern match) |
