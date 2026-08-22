@@ -1,10 +1,11 @@
 # Z-SANCTUARY-MICRO-MESO-MACRO-AGGREGATION-SPEC-1
 
-**Status:** Aggregation architecture · **F2 / partial F3** · **no aggregation engine**  
-**Date:** 2026-08-22  
-**Baseline HEAD:** `cf86146`  
-**Branch:** `cursor/zsanctuary/z-sdc-phase-0-architecture`  
-**Mode:** RECOVER · DEFINE GRAINS · DEFINE AGGREGATION CONTRACTS · NO IMPLEMENTATION
+**Status:** Aggregation architecture · **F3 SPECIFICATION** · **no aggregation engine**
+**Date:** 2026-08-22
+**Baseline HEAD:** `cf86146` (refined at Steward P0 `36fd38e`+)
+**Branch:** `cursor/zsanctuary/z-sdc-phase-0-architecture`
+**Mode:** RECOVER · DEFINE GRAINS · DEFINE AGGREGATION CONTRACTS · STEWARD P0 REFINED · NO IMPLEMENTATION
+**Steward P0 receipt:** `docs/Z_MICRO_MESO_MACRO_STEWARD_P0_DECISIONS_1_1.md`
 
 ## Baseline
 
@@ -13,8 +14,9 @@
 | Expected HEAD | `cf86146` |
 | Actual start HEAD | `cf86146` |
 | Prior seals | C360 F3+F4 · Shadow taxonomy F2/partial F3 · Z Logic Spec 0 |
+| Steward P0 | Recorded in companion receipt 1.1 |
 | Staged | NONE |
-| Dirt | Preserved (~183 porcelain lines) |
+| Dirt | Preserved (~183 porcelain lines at Spec-1 seal; see P0 note if restore incident) |
 | C360 F4 goldens | **NOT MODIFIED** |
 | Shadow taxonomy | **NOT MODIFIED** |
 | Z Logic spec | **NOT MODIFIED** |
@@ -51,13 +53,22 @@ AGGREGATION ≠ AUTHORIZATION
 BROADER VIEW ≠ HIGHER AUTHORITY
 ```
 
-Preferred Macro terminology (`PROPOSED_SPECIFICATION`):
+Canonical Macro terminology (`STEWARD_DEFINED`):
 
-> **MacroRepresentation** — a higher-level, traceable representation of a broader system/context.  
-> Not ground truth. Not automatic authority.
+```text
+CANONICAL_MACRO_TERM = MacroRepresentation
+```
 
-Alternate candidate (Steward may prefer): `MacroState` (lane-tagged, parallel to FieldState vocabulary).  
-**Do not invent `MACRO_TRUTH`.**
+> **MacroRepresentation** — a higher-level, traceable representation of a broader system/context
+> (may include state, relationships, summaries, classifications, formula-derived material, or analytical comparisons).
+
+```text
+MacroRepresentation ≠ MACRO_TRUTH
+MacroRepresentation ≠ OBSERVED_STATE automatically
+MacroRepresentation ≠ ObservedState
+```
+
+**Do not invent `MACRO_TRUTH`.** `MacroState` remains a non-canonical alternate label only.
 
 ---
 
@@ -116,21 +127,32 @@ Membership retains references to contributing Micro elements. Do not erase Micro
 
 ### Grouping contract
 
-Every Meso grouping declares **why** members belong together:
+Every Meso grouping and every non-trivial aggregation declares **why** members belong together (`STEWARD_DEFINED`):
+
+```text
+AGGREGATION_GROUPING_BASIS_REQUIRED = YES
+```
+
+Valid basis classes (one declared basis may suffice):
 
 ```text
 RELATIONSHIP · ENTITY · TIME_WINDOW · SEQUENCE · DOMAIN · FORMULA_CONTEXT · EXPLICIT_HUMAN_GROUPING · OTHER_DEFINED_RULE
 ```
 
-No implicit proximity/similarity grouping unless a future domain contract defines it.
+No hidden clustering. No silent similarity grouping. No implicit proximity unless a future domain contract defines it.
 
 ## Meso Optionality
 
 ```text
-MESO_OPTIONAL_WHEN_MEANINGFUL
+MESO = OPTIONAL_WHEN_MEANINGFUL
 ```
 
-**Not** `MESO_REQUIRED_FOR_EVERY_AGGREGATION`. Simplicity test: do not force artificial Meso where it adds no inspectable value. (`PROPOSED_SPECIFICATION` pending Steward seal.)
+`STEWARD_DEFINED`. **Not** `MESO_REQUIRED_FOR_EVERY_AGGREGATION`. Do not create artificial Meso layers merely to satisfy hierarchy. Both paths remain valid:
+
+```text
+Micro → Meso → Macro
+Micro → Macro
+```
 
 ## Macro Definition
 
@@ -141,18 +163,20 @@ Macro may summarize · classify · organize · expose patterns. Macro must not s
 ## Macro Lineage
 
 ```text
-MACRO_WITHOUT_TRACEABLE_LINEAGE = INVALID / INCOMPLETE
+MACRO_LINEAGE_REQUIRED = YES
+MACRO_WITHOUT_TRACEABLE_LINEAGE = INVALID_OR_INCOMPLETE
+MACRO MUST REMAIN TRACEABLE TO MICRO
 ```
 
-**P0 candidate — sealed as architectural intent:** every MacroRepresentation must identify contributing Meso groups and/or Micro elements (and transformations).
+`STEWARD_DEFINED`. Lineage may reference Micro directly, Meso groups, or both. Even on Micro→Meso→Macro paths, Macro must ultimately remain traceable to Micro-level evidence.
 
 ## Direct Micro → Macro
 
 ```text
-DIRECT MICRO → MACRO = ALLOWED
+DIRECT_MICRO_TO_MACRO = ALLOWED
 ```
 
-when a simple case needs no intermediate grouping (`DOMAIN_DEFINED` profiles may restrict). Artificial Meso is not required. (`PROPOSED_SPECIFICATION`.)
+`STEWARD_DEFINED`, subject to: explicit aggregation purpose · traceable Micro refs · preserved provenance · uncertainty · conflict · state class · defined operation contract. This does **not** mean all domains should skip Meso.
 
 ---
 
@@ -170,6 +194,8 @@ Conceptual `AggregationOperation` metadata (architecture only):
 | input_classes | State/origin classes |
 | output_grain | MICRO / MESO / MACRO |
 | transformation_class | See below |
+| grouping_basis | Required (`STEWARD_DEFINED`) |
+| loss_class | Required (`STEWARD_DEFINED`) |
 | provenance_policy | How provenance propagates |
 | uncertainty_policy | Traceable; no invented average |
 | conflict_policy | Preserve / surface |
@@ -249,11 +275,12 @@ AI Micro/Meso/Macro candidates retain `AI_PROPOSED` (or equivalent explicit AI o
 ## Mixed Analytical Views
 
 ```text
-MIXED_ANALYTICAL_VIEW = ALLOWED (PROPOSED_SPECIFICATION)
+MIXED_ANALYTICAL_VIEW_ALLOWED = YES
+MIXED_ANALYTICAL_VIEW ≠ OBSERVED_MACRO
+MIXED_ANALYTICAL_VIEW ≠ GROUND_TRUTH
 ```
 
-when comparison intentionally combines observed · formula-derived · Shadow · AI-proposed.  
-**Must not** be labeled `OBSERVED_MACRO`. Must declare contributing classes and lanes.
+`STEWARD_DEFINED`. A deliberately analytical view may reference observed/base · formula-derived · Shadow · AI-proposed **only if** mixed nature is explicit and every contributing lane remains distinguishable. Cannot redefine Base or Shadow source lanes.
 
 Conceptual `MacroComparison` (if used): base_macro_ref · shadow_macro_ref(s) · differences · assumptions · provenance · uncertainty — **no score, no winner**.
 
@@ -280,12 +307,20 @@ Do not average uncertainties. Macro uncertainty remains **traceable** to contrib
 
 ```text
 UNRESOLVED MICRO CONFLICT MUST REMAIN REPRESENTABLE AT HIGHER GRAIN
+MATERIAL_CONFLICT_MUST_SURFACE_AT_MACRO = YES
+CONFLICT_PRESENT ≠ CONFLICT_RESOLVED
 ```
 
-No majority vote. No average. No silent single-side choice.
+`STEWARD_DEFINED`. No majority vote. No average. No silent single-side choice.
 
-Meso may signal `CONFLICT_PRESENT` without claiming resolution.  
-Macro must not claim clean consensus when material lower-level conflict is unresolved (**P0**).
+A MacroRepresentation materially affected by unresolved lower-level conflict must surface:
+
+```text
+conflict_status = CONFLICT_PRESENT
+conflict_refs = [...]
+```
+
+(conceptual only — no schema). No majority vote · no averaging · no AI selection · no provenance-based automatic winner.
 
 ## Unknown / Missing Handling
 
@@ -307,7 +342,7 @@ No “100% complete system view” claims.
 
 ## Time / Sequence Aggregation
 
-Architecture may group by event time · sequence · window · history · current state.  
+Architecture may group by event time · sequence · window · history · current state.
 **No window sizes invented.**
 
 Example pattern: Micro events → bounded temporal Meso → historical Macro view.
@@ -316,9 +351,10 @@ Example pattern: Micro events → bounded temporal Meso → historical Macro vie
 
 ```text
 EVENT_TIME ≠ INGEST_TIME ≠ SEQUENCE_INDEX
+EVENT_INGEST_BINDING = DEFERRED_P1
 ```
 
-Explicit distinction is a **P0/P1 requirement** for aggregation (C360 remaining gap). Semantics beyond field support are not invented here.
+`STEWARD_DEFINED` deferral. Distinction preserved; ordering precedence **not** invented in Steward P0.
 
 ## Relationship Aggregation
 
@@ -451,7 +487,7 @@ LARGE MACRO IMPACT ≠ CERTAIN RESULT
 
 ## Aggregation Receipt
 
-Future conceptual receipt (not implemented): aggregation_id · grain_from · grain_to · input_refs · grouping_basis · operation_class · output_ref · provenance · uncertainty · conflicts · shadow_lane · operation_version · authority_ceiling.
+Future conceptual receipt (not implemented): aggregation_id · grain_from · grain_to · input_refs · grouping_basis · operation_class · output_ref · provenance · uncertainty · conflicts · shadow_lane · operation_version · authority_ceiling · loss_class.
 
 ## Boundedness
 
@@ -468,25 +504,32 @@ Future measures (no targets): Micro/Meso/Macro counts · relationships · tracea
 ## Information Loss
 
 ```text
-AGGREGATION_LOSS_MUST_NOT_BE_HIDDEN
+AGGREGATION_LOSS_MUST_NOT_BE_HIDDEN = YES
 ```
 
-Disclose what was omitted · summarized · preserved. No numerical loss metric yet.
+`STEWARD_DEFINED`. Disclose what was omitted · summarized · preserved. No `information_loss_score` · percentage · compression_ratio unless a future domain specification supports one.
 
 ## Lossless vs Lossy
 
+```text
+AGGREGATION_LOSS_CLASS_REQUIRED = YES
+```
+
+`STEWARD_DEFINED`. Every future aggregation operation declares one of:
+
 | Class | Meaning |
 | --- | --- |
-| LOSSLESS_REFERENCE_AGGREGATION | Grouping/linking with full membership refs |
-| LOSSY_SUMMARY | Compressed view that **must retain source refs** |
-
-First-class classification = **PROPOSED** (Steward may seal).
+| LOSSLESS_REFERENCE_AGGREGATION | Higher-level structure preserves refs so contributors remain fully available through lineage (≠ mathematical reversibility) |
+| LOSSY_SUMMARY | Detail intentionally omitted/compressed; underlying source refs remain traceable where governance permits |
+| DOMAIN_DEFINED | Domain supplies loss character |
+| UNASSESSED | Loss character not yet classified |
 
 ## Traceability vs Reversibility
 
 ```text
 TRACEABILITY REQUIRED
 REVERSIBILITY NOT UNIVERSALLY REQUIRED
+TRACEABILITY ≠ REVERSIBILITY
 ```
 
 ## Privacy / Retention
@@ -502,12 +545,12 @@ Traceability ≠ infinite retention. No periods invented.
 ## Side-effect / Determinism
 
 ```text
-AGGREGATION MUST NOT MUTATE INPUT EVIDENCE
+AGGREGATION_MUST_NOT_MUTATE_SOURCE_EVIDENCE = YES
 ```
 
-Produces a new higher-grain representation.
+`STEWARD_DEFINED` (constitutional purity). Aggregation creates a **new** Meso/MacroRepresentation; it does not rewrite contributing Micro evidence in place. Source remains independently inspectable subject to privacy/retention governance.
 
-Per-operation determinism class (declare when known): DETERMINISTIC · DOMAIN_DEPENDENT · AI_ASSISTED · HUMAN_DECIDED · UNKNOWN.  
+Per-operation determinism class (declare when known): DETERMINISTIC · DOMAIN_DEPENDENT · AI_ASSISTED · HUMAN_DECIDED · UNKNOWN.
 AI-assisted aggregation retains AI_ASSISTED / AI_PROPOSED provenance.
 
 ---
@@ -529,8 +572,11 @@ AI-assisted aggregation retains AI_ASSISTED / AI_PROPOSED provenance.
 | CONFLICT MUST NOT BE SILENTLY ERASED | **YES** |
 | UNKNOWN / MISSING MUST NOT BECOME ZERO | **YES** |
 | STATE UPDATE ≠ SILENT OVERWRITE | **YES** |
-| AGGREGATION SHOULD NOT MUTATE SOURCE EVIDENCE | **YES** |
+| AGGREGATION MUST NOT MUTATE SOURCE EVIDENCE | **YES** (`STEWARD_DEFINED`) |
 | LOSSY SUMMARY MUST RETAIN SOURCE TRACEABILITY | **YES** |
+| AGGREGATION_LOSS_CLASS_REQUIRED | **YES** (`STEWARD_DEFINED`) |
+| GROUPING BASIS REQUIRED | **YES** (`STEWARD_DEFINED`) |
+| MATERIAL CONFLICT MUST SURFACE AT MACRO | **YES** (`STEWARD_DEFINED`) |
 | TRACEABILITY ≠ REVERSIBILITY | **YES** |
 | QOSMEI FUSION ≠ GENERIC AGGREGATION | **YES** |
 | SWARM MAJORITY ≠ MACRO TRUTH | **YES** |
@@ -542,24 +588,26 @@ AI-assisted aggregation retains AI_ASSISTED / AI_PROPOSED provenance.
 | --- | --- | --- | --- |
 | Micro | Contextual smallest traceable grain | DEFINED | C360 + this spec |
 | Meso | Bounded grouping from Micro refs | DEFINED | this spec |
-| Macro | Traceable higher-level MacroRepresentation | DEFINED (term PROPOSED) | this spec |
+| Macro | Traceable MacroRepresentation | DEFINED (`STEWARD_DEFINED` term) | this + P0 1.1 |
 | Micro identity | micro_ref · source · class · provenance · time · uncertainty | DEFINED | this spec |
-| Meso membership | Inspectable Micro refs + grouping basis | DEFINED | this spec |
-| Macro lineage | Trace to Meso and/or Micro | DEFINED | this spec |
-| Direct Micro→Macro | Allowed for simple cases | PARTIAL (Steward seal) | this spec |
+| Meso membership | Inspectable Micro refs + grouping basis | DEFINED | this + P0 |
+| Macro lineage | Trace to Meso and/or Micro | DEFINED (`STEWARD_DEFINED`) | this + P0 |
+| Direct Micro→Macro | ALLOWED with contract preconditions | DEFINED (`STEWARD_DEFINED`) | P0 1.1 |
 | Shadow lane | Parallel aggregate then COMPARE | DEFINED | Shadow + this |
 | Formula-derived lane | Retain formula provenance | DEFINED | this spec |
 | AI-proposed lane | Retain AI provenance | DEFINED | this spec |
-| Mixed analytical view | Allowed; not OBSERVED_MACRO | PARTIAL | this spec |
+| Mixed analytical view | ALLOWED; ≠ OBSERVED_MACRO | DEFINED (`STEWARD_DEFINED`) | P0 1.1 |
 | Provenance propagation | Lineage refs; no trust score | DEFINED | this spec |
 | Uncertainty propagation | Traceable; operator UNDEFINED | PARTIAL | this spec |
-| Conflict propagation | Representable; no silent erase | DEFINED | C360 F4 + this |
+| Conflict propagation | CONFLICT_PRESENT + conflict_refs at Macro | DEFINED (`STEWARD_DEFINED`) | P0 1.1 |
 | Versioning | No silent overwrite | DEFINED | this spec |
 | Time aggregation | Windows/sequence conceptual | PARTIAL | this spec |
+| Event/ingest binding | Distinction preserved; precedence deferred | DEFERRED_P1 | P0 1.1 |
 | Relationship aggregation | Preserve endpoints/type/provenance | DEFINED | C360 + this |
-| Loss disclosure | Must not hide loss | DEFINED | this spec |
+| Loss disclosure | Loss class required; must not hide | DEFINED (`STEWARD_DEFINED`) | P0 1.1 |
 | Authority | None at any grain | DEFINED | this spec |
 | Boundedness | Required; no numeric limits | DEFINED | this spec |
+| Non-mutation | Aggregation creates new representation | DEFINED (`STEWARD_DEFINED`) | P0 1.1 |
 
 ## Missing Mathematics
 
@@ -572,41 +620,31 @@ AI-assisted aggregation retains AI_ASSISTED / AI_PROPOSED provenance.
 
 ## Missing Canon
 
-- Steward seal of Macro term (`MacroRepresentation` vs `MacroState`)
-- Steward seal of Meso optionality + direct Micro→Macro
-- Mixed analytical view naming finalization
-- Lossless/lossy as first-class
-- Event/ingest/sequence formal field binding
-- Macro conflict surface representation details
-- Semantic goldens for aggregation
+- Event/ingest/sequence formal field binding (`DEFERRED_P1`)
+- Uncertainty aggregation operator (still UNDEFINED)
+- Semantic goldens for aggregation (next design gate)
+- Runtime schemas / engines (hard closed)
 
 ## Steward Decisions Required
 
-| Decision | Options |
-| --- | --- |
-| Canonical Macro term | MacroRepresentation (recommended) / MacroState / other |
-| Meso optionality | OPTIONAL_WHEN_MEANINGFUL (recommended) / always required |
-| Direct Micro→Macro | ALLOWED (recommended) / DISALLOWED / domain-only |
-| Mixed analytical views | ALLOWED with label (recommended) / restricted |
-| Aggregation purity | MUST NOT MUTATE inputs (recommended sealed) |
-| Minimum grouping-basis metadata | Confirm RELATIONSHIP…OTHER list |
-| Lossless/lossy first-class | YES (recommended) / later |
-| Macro conflict surface form | Domain-defined later / early golden design |
+**P0 closed** — see `docs/Z_MICRO_MESO_MACRO_STEWARD_P0_DECISIONS_1_1.md`. Remaining questions are P1+ (event/ingest binding, uncertainty math, golden encoding).
 
 ## Maturity
 
 ```text
-MICRO→MESO→MACRO AGGREGATION ≈ F2 / PARTIAL F3
+MICRO→MESO→MACRO AGGREGATION = F3 SPECIFICATION
 NO engine · NO math · NO goldens encoded
 ```
+
+P0 architectural ambiguity closed by Steward. Remaining gaps are P1 binding and F4 golden design — not blocking F3 classification.
 
 ## Golden Readiness
 
 ```text
-MICRO_MESO_MACRO_GOLDEN_PARTIAL
+MICRO_MESO_MACRO_GOLDEN_READY
 ```
 
-Enough structure to **design** P0 expected vectors (lane separation, lineage, conflict, AI/Shadow non-collapse). Not ready to encode until Steward seals Macro term + Meso optionality (thin P0).
+P0 decisions now sealed; P0 expected vectors may be **designed** (not encoded in this gate).
 
 ## ONE Recommended Next Gate
 
@@ -614,10 +652,7 @@ Enough structure to **design** P0 expected vectors (lane separation, lineage, co
 Z-MICRO-MESO-MACRO-SEMANTIC-GOLDENS-DESIGN-1
 ```
 
-**Why:** Aggregation structure is now specified; next design P0 expected vectors for lane separation, lineage, conflict preservation, and non-truth Macro — parallel to C360 goldens path — **without** implementing an engine.
-
-Alternate if Steward wants term/optionality sealed first: thin Steward P0 answers (same session or short doc).  
-**Not opened here.** Shadow P0 and Z Logic goldens remain valid later lanes; aggregation goldens best unlock Micro/Meso/Macro semantic regression before runtime.
+**Why:** Steward P0 closed Macro term, Meso optionality, lanes, purity, loss class, and conflict surface — goldens can now test accepted decisions rather than open questions.
 
 ## Future Mathematical Questions (unanswered)
 
@@ -627,6 +662,7 @@ Which operations preserve invariants? What is lost? Which summaries are stable? 
 
 ```text
 MICRO_MESO_MACRO_AGGREGATION_SPEC_1 = SEALED_DOCS
+STEWARD_P0_1_1 = RECORDED
 AGGREGATION_ENGINE = NONE
 MICRO_MESO_MACRO_MATH = NOT YET ESTABLISHED
 C360_F4 = PRESERVED
