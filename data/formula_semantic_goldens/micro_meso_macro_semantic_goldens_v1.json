@@ -1,0 +1,1019 @@
+{
+  "schema": "z_micro_meso_macro_semantic_goldens_v1",
+  "golden_pack_id": "micro-meso-macro-semantic-v1",
+  "family": "micro-meso-macro-aggregation",
+  "version": "1.0.0",
+  "gate": "Z-SANCTUARY-MICRO-MESO-MACRO-SEMANTIC-GOLDENS-ACCEPT-ENCODE-1",
+  "maturity_target": "F4",
+  "maturity_claim": "F4_CANONICAL_EXPECTED_VECTORS",
+  "implementation_required_to_exist": false,
+  "aggregation_runtime_exists": false,
+  "goldens_define_expectation_for_future_implementation": true,
+  "executable": false,
+  "path_convention_note": "Placed under data/formula_semantic_goldens/ to match Continuous 360 / GGAESP hub convention. Charter path data/goldens/ was not used.",
+  "steward_policy": {
+    "canonical_macro_term": "MacroRepresentation",
+    "meso_optional_when_meaningful": true,
+    "direct_micro_to_macro": "ALLOWED",
+    "mixed_analytical_view_allowed": true,
+    "mixed_analytical_view_equals_observed_macro": false,
+    "aggregation_must_not_mutate_source_evidence": true,
+    "event_ingest_canonical_golden": "DEFERRED",
+    "uncertainty_aggregation_operator": "UNDEFINED",
+    "macro_truth_concept": false,
+    "aggregation_mathematics_invented": false
+  },
+  "source_spec": [
+    "docs/Z_MICRO_MESO_MACRO_AGGREGATION_SPEC_1.md",
+    "docs/Z_MICRO_MESO_MACRO_STEWARD_P0_DECISIONS_1_1.md",
+    "docs/Z_MICRO_MESO_MACRO_SEMANTIC_GOLDENS_DESIGN_1.md",
+    "docs/Z_SHADOW_TAXONOMY_AND_CONTRACT_SPEC_1.md",
+    "docs/Z_LOGIC_AND_CONTROL_GRAMMAR_SPEC_0.md",
+    "docs/Z_CONTINUOUS_360_MULTIDIMENSIONAL_FIELD_SPEC_1.md"
+  ],
+  "design_recommended_note": "Design prose targeted ~28; enumerated recommended ID list yields 39 unique READY P0 vectors. Encode follows enumerated list for identity stability. E1 covers E2/E3 family via scenarios.",
+  "accepted_vector_ids": [
+    "MMM-A1",
+    "MMM-A2",
+    "MMM-A3",
+    "MMM-A4",
+    "MMM-B1",
+    "MMM-B2",
+    "MMM-B3",
+    "MMM-C1",
+    "MMM-C2",
+    "MMM-D1",
+    "MMM-D2",
+    "MMM-D3",
+    "MMM-E1",
+    "MMM-F1",
+    "MMM-F2",
+    "MMM-F3",
+    "MMM-G1",
+    "MMM-G2",
+    "MMM-H1",
+    "MMM-I1",
+    "MMM-I2",
+    "MMM-J1",
+    "MMM-J3",
+    "MMM-J4",
+    "MMM-K2",
+    "MMM-K3",
+    "MMM-L1",
+    "MMM-M1",
+    "MMM-M3",
+    "MMM-N2",
+    "MMM-N3",
+    "MMM-O1",
+    "MMM-O3",
+    "MMM-P1",
+    "MMM-Q2",
+    "MMM-R2",
+    "MMM-T1",
+    "MMM-V2",
+    "MMM-W1"
+  ],
+  "vector_count": 39,
+  "deferred": {
+    "blocked": [
+      "MMM-S1"
+    ],
+    "partial": [
+      "MMM-X1"
+    ],
+    "p1_ready_not_in_pack": [
+      "MMM-U1"
+    ],
+    "ready_p0_deferred_redundant_or_expand": [
+      "MMM-E2",
+      "MMM-E3",
+      "MMM-G3",
+      "MMM-H2",
+      "MMM-H3",
+      "MMM-I3",
+      "MMM-J2",
+      "MMM-K1",
+      "MMM-M2",
+      "MMM-N1",
+      "MMM-O2",
+      "MMM-O4",
+      "MMM-P2",
+      "MMM-Q1",
+      "MMM-Q3",
+      "MMM-R1",
+      "MMM-R3",
+      "MMM-V1"
+    ]
+  },
+  "vectors": [
+    {
+      "priority": "P0",
+      "readiness": "READY",
+      "expected_authority": "NONE_automatic",
+      "spec_references": [
+        "docs/Z_MICRO_MESO_MACRO_SEMANTIC_GOLDENS_DESIGN_1.md#MMM-A1",
+        "docs/Z_MICRO_MESO_MACRO_AGGREGATION_SPEC_1.md",
+        "docs/Z_MICRO_MESO_MACRO_STEWARD_P0_DECISIONS_1_1.md"
+      ],
+      "id": "MMM-A1",
+      "invariant": "MICRO remains independently traceable",
+      "purpose": "Micro identity survives higher grain",
+      "input_grain": "MICRO",
+      "input_state_class": "ANY_VALID",
+      "aggregation_context": "participates_in_MacroRepresentation",
+      "expected_representation": {
+        "micro_ref_inspectable": true
+      },
+      "expected_lineage": "micro_ref_retained",
+      "expected_provenance": "unchanged",
+      "prohibited_outcomes": [
+        "source_identity_silently_removed"
+      ],
+      "control_logic_mapping": "FOR EACH Micro contributor retain identity/ref",
+      "rationale": "Constitutional Micro identity"
+    },
+    {
+      "priority": "P0",
+      "readiness": "READY",
+      "expected_authority": "NONE_automatic",
+      "spec_references": [
+        "docs/Z_MICRO_MESO_MACRO_SEMANTIC_GOLDENS_DESIGN_1.md#MMM-A2",
+        "docs/Z_MICRO_MESO_MACRO_AGGREGATION_SPEC_1.md",
+        "docs/Z_MICRO_MESO_MACRO_STEWARD_P0_DECISIONS_1_1.md"
+      ],
+      "id": "MMM-A2",
+      "invariant": "FORMULA_DERIVED ≠ OBSERVED",
+      "purpose": "Formula-derived Micro class survives",
+      "input_grain": "MICRO",
+      "input_state_class": "FORMULA_DERIVED",
+      "expected_representation": {
+        "state_class": "FORMULA_DERIVED"
+      },
+      "expected_lineage": "retains_FORMULA_DERIVED",
+      "expected_provenance": "FORMULA_DERIVED",
+      "prohibited_outcomes": [
+        "OBSERVED",
+        "silent_reclassification_to_observed"
+      ],
+      "control_logic_mapping": "IF state_class==FORMULA_DERIVED THEN MUST NOT classify OBSERVED",
+      "rationale": "Formula lane wall"
+    },
+    {
+      "priority": "P0",
+      "readiness": "READY",
+      "expected_authority": "NONE_automatic",
+      "spec_references": [
+        "docs/Z_MICRO_MESO_MACRO_SEMANTIC_GOLDENS_DESIGN_1.md#MMM-A3",
+        "docs/Z_MICRO_MESO_MACRO_AGGREGATION_SPEC_1.md",
+        "docs/Z_MICRO_MESO_MACRO_STEWARD_P0_DECISIONS_1_1.md"
+      ],
+      "id": "MMM-A3",
+      "invariant": "AI_PROPOSED ≠ OBSERVED",
+      "purpose": "AI-proposed Micro retains AI origin",
+      "input_grain": "MICRO",
+      "input_state_class": "AI_PROPOSED",
+      "expected_representation": {
+        "state_class": "AI_PROPOSED"
+      },
+      "expected_provenance": "AI_PROPOSED",
+      "prohibited_outcomes": [
+        "OBSERVED",
+        "HUMAN_CONFIRMED"
+      ],
+      "control_logic_mapping": "IF provenance==AI_PROPOSED THEN prohibit OBSERVED",
+      "rationale": "AI provenance wall"
+    },
+    {
+      "priority": "P0",
+      "readiness": "READY",
+      "expected_authority": "NONE_automatic",
+      "spec_references": [
+        "docs/Z_MICRO_MESO_MACRO_SEMANTIC_GOLDENS_DESIGN_1.md#MMM-A4",
+        "docs/Z_MICRO_MESO_MACRO_AGGREGATION_SPEC_1.md",
+        "docs/Z_MICRO_MESO_MACRO_STEWARD_P0_DECISIONS_1_1.md"
+      ],
+      "id": "MMM-A4",
+      "invariant": "SHADOW Micro ≠ BASE/OBSERVED",
+      "purpose": "Shadow Micro stays Shadow",
+      "input_grain": "MICRO",
+      "input_state_class": "SHADOW",
+      "expected_representation": {
+        "lane": "SHADOW",
+        "state_class": "SHADOW"
+      },
+      "expected_provenance": "SHADOW_retained",
+      "prohibited_outcomes": [
+        "BASE",
+        "OBSERVED",
+        "silent_reclassification"
+      ],
+      "control_logic_mapping": "IF state_class==SHADOW THEN route Shadow lane",
+      "rationale": "Shadow separation"
+    },
+    {
+      "priority": "P0",
+      "readiness": "READY",
+      "expected_authority": "NONE_automatic",
+      "spec_references": [
+        "docs/Z_MICRO_MESO_MACRO_SEMANTIC_GOLDENS_DESIGN_1.md#MMM-B1",
+        "docs/Z_MICRO_MESO_MACRO_AGGREGATION_SPEC_1.md",
+        "docs/Z_MICRO_MESO_MACRO_STEWARD_P0_DECISIONS_1_1.md"
+      ],
+      "id": "MMM-B1",
+      "invariant": "MESO_MEMBERSHIP_MUST_BE_INSPECTABLE",
+      "purpose": "Meso retains Micro member refs",
+      "input_grain": "MESO",
+      "input_state_class": "GROUPED_MICROS",
+      "aggregation_context": "Micro_A_B_C_to_Meso_M",
+      "expected_representation": {
+        "membership_refs": [
+          "A",
+          "B",
+          "C"
+        ]
+      },
+      "expected_lineage": "inspectable_membership",
+      "prohibited_outcomes": [
+        "membership_erased"
+      ],
+      "rationale": "Meso membership contract"
+    },
+    {
+      "priority": "P0",
+      "readiness": "READY",
+      "expected_authority": "NONE_automatic",
+      "spec_references": [
+        "docs/Z_MICRO_MESO_MACRO_SEMANTIC_GOLDENS_DESIGN_1.md#MMM-B2",
+        "docs/Z_MICRO_MESO_MACRO_AGGREGATION_SPEC_1.md",
+        "docs/Z_MICRO_MESO_MACRO_STEWARD_P0_DECISIONS_1_1.md"
+      ],
+      "id": "MMM-B2",
+      "invariant": "AGGREGATION_GROUPING_BASIS_REQUIRED",
+      "purpose": "Meso without grouping basis invalid",
+      "input_grain": "MESO",
+      "preconditions": {
+        "grouping_basis": "ABSENT"
+      },
+      "expected_representation": {
+        "validity": "INVALID_OR_INCOMPLETE"
+      },
+      "prohibited_outcomes": [
+        "hidden_similarity_grouping",
+        "implicit_proximity_grouping"
+      ],
+      "rationale": "Explicit grouping basis"
+    },
+    {
+      "priority": "P0",
+      "readiness": "READY",
+      "expected_authority": "NONE_automatic",
+      "spec_references": [
+        "docs/Z_MICRO_MESO_MACRO_SEMANTIC_GOLDENS_DESIGN_1.md#MMM-B3",
+        "docs/Z_MICRO_MESO_MACRO_AGGREGATION_SPEC_1.md",
+        "docs/Z_MICRO_MESO_MACRO_STEWARD_P0_DECISIONS_1_1.md"
+      ],
+      "id": "MMM-B3",
+      "invariant": "GROUPING ≠ TRUTH / CAUSATION",
+      "purpose": "Relationship grouping is membership only",
+      "input_grain": "MESO",
+      "aggregation_context": {
+        "grouping_basis": "RELATIONSHIP"
+      },
+      "expected_representation": {
+        "membership_relationship_only": true
+      },
+      "prohibited_outcomes": [
+        "truth_claim_from_grouping_alone",
+        "causation_claim_from_grouping_alone"
+      ],
+      "rationale": "Grouping is not proof"
+    },
+    {
+      "priority": "P0",
+      "readiness": "READY",
+      "expected_authority": "NONE_automatic",
+      "spec_references": [
+        "docs/Z_MICRO_MESO_MACRO_SEMANTIC_GOLDENS_DESIGN_1.md#MMM-C1",
+        "docs/Z_MICRO_MESO_MACRO_AGGREGATION_SPEC_1.md",
+        "docs/Z_MICRO_MESO_MACRO_STEWARD_P0_DECISIONS_1_1.md"
+      ],
+      "id": "MMM-C1",
+      "invariant": "DIRECT_MICRO_TO_MACRO = ALLOWED",
+      "purpose": "Micro→Macro without Meso when contract permits",
+      "input_grain": "MICRO",
+      "aggregation_context": "direct_Micro_to_Macro",
+      "preconditions": [
+        "explicit_purpose",
+        "traceable_refs",
+        "provenance",
+        "conflicts",
+        "loss_class"
+      ],
+      "expected_representation": {
+        "path": "MICRO_TO_MACRO",
+        "meso_required": false
+      },
+      "expected_lineage": "micro_refs_retained",
+      "expected_loss_class": "DECLARED",
+      "prohibited_outcomes": [
+        "fail_solely_because_no_Meso"
+      ],
+      "rationale": "Steward P0 Meso optionality"
+    },
+    {
+      "priority": "P0",
+      "readiness": "READY",
+      "expected_authority": "NONE_automatic",
+      "spec_references": [
+        "docs/Z_MICRO_MESO_MACRO_SEMANTIC_GOLDENS_DESIGN_1.md#MMM-C2",
+        "docs/Z_MICRO_MESO_MACRO_AGGREGATION_SPEC_1.md",
+        "docs/Z_MICRO_MESO_MACRO_STEWARD_P0_DECISIONS_1_1.md"
+      ],
+      "id": "MMM-C2",
+      "invariant": "MESO OPTIONAL_WHEN_MEANINGFUL",
+      "purpose": "Micro→Meso→Macro allowed when grouping useful",
+      "input_grain": "MICRO",
+      "aggregation_context": "intentional_group_then_Macro",
+      "expected_representation": {
+        "path": "MICRO_MESO_MACRO"
+      },
+      "prohibited_outcomes": [
+        "claim_Meso_mandatory_universally"
+      ],
+      "rationale": "Meso useful not mandatory"
+    },
+    {
+      "priority": "P0",
+      "readiness": "READY",
+      "expected_authority": "NONE_automatic",
+      "spec_references": [
+        "docs/Z_MICRO_MESO_MACRO_SEMANTIC_GOLDENS_DESIGN_1.md#MMM-D1",
+        "docs/Z_MICRO_MESO_MACRO_AGGREGATION_SPEC_1.md",
+        "docs/Z_MICRO_MESO_MACRO_STEWARD_P0_DECISIONS_1_1.md"
+      ],
+      "id": "MMM-D1",
+      "invariant": "MACRO TRACEABLE TO MICRO (direct)",
+      "purpose": "Macro exposes Micro refs",
+      "input_grain": "MACRO",
+      "expected_representation": {
+        "type": "MacroRepresentation",
+        "micro_refs_present": true
+      },
+      "expected_lineage": "direct_micro_refs",
+      "prohibited_outcomes": [
+        "lineage_absent"
+      ],
+      "rationale": "Macro lineage law"
+    },
+    {
+      "priority": "P0",
+      "readiness": "READY",
+      "expected_authority": "NONE_automatic",
+      "spec_references": [
+        "docs/Z_MICRO_MESO_MACRO_SEMANTIC_GOLDENS_DESIGN_1.md#MMM-D2",
+        "docs/Z_MICRO_MESO_MACRO_AGGREGATION_SPEC_1.md",
+        "docs/Z_MICRO_MESO_MACRO_STEWARD_P0_DECISIONS_1_1.md"
+      ],
+      "id": "MMM-D2",
+      "invariant": "MACRO TRACEABLE THROUGH MESO",
+      "purpose": "Macro→Meso→Micro inspectable",
+      "input_grain": "MACRO",
+      "aggregation_context": "MICRO_MESO_MACRO",
+      "expected_lineage": "macro_to_meso_to_micro",
+      "prohibited_outcomes": [
+        "broken_chain"
+      ],
+      "rationale": "Indirect lineage"
+    },
+    {
+      "priority": "P0",
+      "readiness": "READY",
+      "expected_authority": "NONE_automatic",
+      "spec_references": [
+        "docs/Z_MICRO_MESO_MACRO_SEMANTIC_GOLDENS_DESIGN_1.md#MMM-D3",
+        "docs/Z_MICRO_MESO_MACRO_AGGREGATION_SPEC_1.md",
+        "docs/Z_MICRO_MESO_MACRO_STEWARD_P0_DECISIONS_1_1.md"
+      ],
+      "id": "MMM-D3",
+      "invariant": "MACRO_WITHOUT_TRACEABLE_LINEAGE INVALID",
+      "purpose": "No lineage ⇒ invalid/incomplete",
+      "input_grain": "MACRO",
+      "preconditions": {
+        "lineage": "ABSENT"
+      },
+      "expected_representation": {
+        "validity": "INVALID_OR_INCOMPLETE"
+      },
+      "prohibited_outcomes": [
+        "VALID_CANONICAL_REPRESENTATION_without_lineage"
+      ],
+      "control_logic_mapping": "IF Macro lineage missing THEN INVALID/HOLD",
+      "rationale": "Lineage required"
+    },
+    {
+      "priority": "P0",
+      "readiness": "READY",
+      "expected_authority": "NONE_automatic",
+      "spec_references": [
+        "docs/Z_MICRO_MESO_MACRO_SEMANTIC_GOLDENS_DESIGN_1.md#MMM-E1",
+        "docs/Z_MICRO_MESO_MACRO_AGGREGATION_SPEC_1.md",
+        "docs/Z_MICRO_MESO_MACRO_STEWARD_P0_DECISIONS_1_1.md"
+      ],
+      "id": "MMM-E1",
+      "invariant": "AGGREGATION_MUST_NOT_MUTATE_SOURCE_EVIDENCE",
+      "purpose": "Aggregation creates new representation; sources unchanged",
+      "input_grain": "MICRO",
+      "aggregation_context": "create_Macro_from_S1",
+      "scenarios": [
+        "create",
+        "later_v2",
+        "aggregation_failure"
+      ],
+      "expected_representation": {
+        "new_macro": true,
+        "source_S1_unchanged": true
+      },
+      "prohibited_outcomes": [
+        "in_place_rewrite_of_source",
+        "silent_source_mutation"
+      ],
+      "control_logic_mapping": "AGGREGATION produces NEW representation NOT rewrite source",
+      "rationale": "Constitutional purity; covers E2/E3 family"
+    },
+    {
+      "priority": "P0",
+      "readiness": "READY",
+      "expected_authority": "NONE_automatic",
+      "spec_references": [
+        "docs/Z_MICRO_MESO_MACRO_SEMANTIC_GOLDENS_DESIGN_1.md#MMM-F1",
+        "docs/Z_MICRO_MESO_MACRO_AGGREGATION_SPEC_1.md",
+        "docs/Z_MICRO_MESO_MACRO_STEWARD_P0_DECISIONS_1_1.md"
+      ],
+      "id": "MMM-F1",
+      "invariant": "BASE LANE ≠ SHADOW LANE",
+      "purpose": "Base and Shadow aggregate separately",
+      "input_grain": "MICRO",
+      "input_state_class": [
+        "BASE",
+        "SHADOW"
+      ],
+      "expected_representation": {
+        "lanes_distinct": true
+      },
+      "prohibited_outcomes": [
+        "unlabeled_merge"
+      ],
+      "rationale": "Parallel lanes"
+    },
+    {
+      "priority": "P0",
+      "readiness": "READY",
+      "expected_authority": "NONE_automatic",
+      "spec_references": [
+        "docs/Z_MICRO_MESO_MACRO_SEMANTIC_GOLDENS_DESIGN_1.md#MMM-F2",
+        "docs/Z_MICRO_MESO_MACRO_AGGREGATION_SPEC_1.md",
+        "docs/Z_MICRO_MESO_MACRO_STEWARD_P0_DECISIONS_1_1.md"
+      ],
+      "id": "MMM-F2",
+      "invariant": "SHADOW must not silently enter OBSERVED_MACRO",
+      "purpose": "Shadow retains classification",
+      "input_grain": "MICRO",
+      "input_state_class": "SHADOW",
+      "expected_representation": {
+        "shadow_class_retained": true
+      },
+      "prohibited_outcomes": [
+        "OBSERVED_MACRO_contamination"
+      ],
+      "rationale": "Non-contamination"
+    },
+    {
+      "priority": "P0",
+      "readiness": "READY",
+      "expected_authority": "NONE_automatic",
+      "spec_references": [
+        "docs/Z_MICRO_MESO_MACRO_SEMANTIC_GOLDENS_DESIGN_1.md#MMM-F3",
+        "docs/Z_MICRO_MESO_MACRO_AGGREGATION_SPEC_1.md",
+        "docs/Z_MICRO_MESO_MACRO_STEWARD_P0_DECISIONS_1_1.md"
+      ],
+      "id": "MMM-F3",
+      "invariant": "COMPARE Base↔Shadow ≠ observed fact",
+      "purpose": "Comparison allowed; not observed",
+      "aggregation_context": "base_shadow_compare",
+      "expected_representation": {
+        "class": [
+          "COMPARISON",
+          "MIXED_ANALYTICAL_VIEW"
+        ]
+      },
+      "prohibited_outcomes": [
+        "relabel_as_observed_fact"
+      ],
+      "rationale": "Compare is analysis"
+    },
+    {
+      "priority": "P0",
+      "readiness": "READY",
+      "expected_authority": "NONE_automatic",
+      "spec_references": [
+        "docs/Z_MICRO_MESO_MACRO_SEMANTIC_GOLDENS_DESIGN_1.md#MMM-G1",
+        "docs/Z_MICRO_MESO_MACRO_AGGREGATION_SPEC_1.md",
+        "docs/Z_MICRO_MESO_MACRO_STEWARD_P0_DECISIONS_1_1.md"
+      ],
+      "id": "MMM-G1",
+      "invariant": "MIXED_ANALYTICAL_VIEW_ALLOWED",
+      "purpose": "Mixed lanes allowed if identifiable",
+      "input_state_class": [
+        "OBSERVED",
+        "FORMULA_DERIVED",
+        "SHADOW",
+        "AI_PROPOSED"
+      ],
+      "expected_representation": {
+        "class": "MIXED_ANALYTICAL_VIEW",
+        "lanes_identifiable": true
+      },
+      "prohibited_outcomes": [
+        "collapsed_unlabeled_mix"
+      ],
+      "rationale": "Steward P0 mixed views"
+    },
+    {
+      "priority": "P0",
+      "readiness": "READY",
+      "expected_authority": "NONE_automatic",
+      "spec_references": [
+        "docs/Z_MICRO_MESO_MACRO_SEMANTIC_GOLDENS_DESIGN_1.md#MMM-G2",
+        "docs/Z_MICRO_MESO_MACRO_AGGREGATION_SPEC_1.md",
+        "docs/Z_MICRO_MESO_MACRO_STEWARD_P0_DECISIONS_1_1.md"
+      ],
+      "id": "MMM-G2",
+      "invariant": "MIXED_ANALYTICAL_VIEW ≠ OBSERVED_MACRO",
+      "purpose": "Mixed view cannot be labeled observed Macro",
+      "expected_representation": {
+        "class": "MIXED_ANALYTICAL_VIEW"
+      },
+      "prohibited_outcomes": [
+        "OBSERVED_MACRO"
+      ],
+      "rationale": "Hard wall"
+    },
+    {
+      "priority": "P0",
+      "readiness": "READY",
+      "expected_authority": "NONE_automatic",
+      "spec_references": [
+        "docs/Z_MICRO_MESO_MACRO_SEMANTIC_GOLDENS_DESIGN_1.md#MMM-H1",
+        "docs/Z_MICRO_MESO_MACRO_AGGREGATION_SPEC_1.md",
+        "docs/Z_MICRO_MESO_MACRO_STEWARD_P0_DECISIONS_1_1.md"
+      ],
+      "id": "MMM-H1",
+      "invariant": "PROVENANCE classes not collapsed to trusted score",
+      "purpose": "Human + formula provenance remain separate",
+      "input_state_class": [
+        "HUMAN_DECLARED",
+        "FORMULA_DERIVED"
+      ],
+      "expected_provenance": "both_classes_represented_separately",
+      "prohibited_outcomes": [
+        "trusted_score",
+        "aggregate_confidence_score",
+        "macro_trust_score"
+      ],
+      "rationale": "No provenance collapse"
+    },
+    {
+      "priority": "P0",
+      "readiness": "READY",
+      "expected_authority": "NONE_automatic",
+      "spec_references": [
+        "docs/Z_MICRO_MESO_MACRO_SEMANTIC_GOLDENS_DESIGN_1.md#MMM-I1",
+        "docs/Z_MICRO_MESO_MACRO_AGGREGATION_SPEC_1.md",
+        "docs/Z_MICRO_MESO_MACRO_STEWARD_P0_DECISIONS_1_1.md"
+      ],
+      "id": "MMM-I1",
+      "invariant": "UNKNOWN ≠ ZERO",
+      "purpose": "UNKNOWN survives aggregation",
+      "input_state_class": "UNKNOWN",
+      "expected_representation": {
+        "value_class": "UNKNOWN"
+      },
+      "prohibited_outcomes": [
+        "0",
+        "numeric_zero_coercion"
+      ],
+      "rationale": "Aligns C360 unknown law at aggregation grain"
+    },
+    {
+      "priority": "P0",
+      "readiness": "READY",
+      "expected_authority": "NONE_automatic",
+      "spec_references": [
+        "docs/Z_MICRO_MESO_MACRO_SEMANTIC_GOLDENS_DESIGN_1.md#MMM-I2",
+        "docs/Z_MICRO_MESO_MACRO_AGGREGATION_SPEC_1.md",
+        "docs/Z_MICRO_MESO_MACRO_STEWARD_P0_DECISIONS_1_1.md"
+      ],
+      "id": "MMM-I2",
+      "invariant": "MISSING ≠ ZERO",
+      "purpose": "MISSING survives aggregation",
+      "input_state_class": "MISSING",
+      "expected_representation": {
+        "value_class": "MISSING"
+      },
+      "prohibited_outcomes": [
+        "0",
+        "default_zero"
+      ],
+      "rationale": "Absence is not measurement"
+    },
+    {
+      "priority": "P0",
+      "readiness": "READY",
+      "expected_authority": "NONE_automatic",
+      "spec_references": [
+        "docs/Z_MICRO_MESO_MACRO_SEMANTIC_GOLDENS_DESIGN_1.md#MMM-J1",
+        "docs/Z_MICRO_MESO_MACRO_AGGREGATION_SPEC_1.md",
+        "docs/Z_MICRO_MESO_MACRO_STEWARD_P0_DECISIONS_1_1.md"
+      ],
+      "id": "MMM-J1",
+      "invariant": "CONFLICTING inputs preserved",
+      "purpose": "Conflicting Micro A/B both remain",
+      "expected_conflict_posture": "BOTH_REPRESENTED",
+      "prohibited_outcomes": [
+        "silent_winner",
+        "majority_vote",
+        "average",
+        "AI_selection"
+      ],
+      "rationale": "Conflict preservation"
+    },
+    {
+      "priority": "P0",
+      "readiness": "READY",
+      "expected_authority": "NONE_automatic",
+      "spec_references": [
+        "docs/Z_MICRO_MESO_MACRO_SEMANTIC_GOLDENS_DESIGN_1.md#MMM-J3",
+        "docs/Z_MICRO_MESO_MACRO_AGGREGATION_SPEC_1.md",
+        "docs/Z_MICRO_MESO_MACRO_STEWARD_P0_DECISIONS_1_1.md"
+      ],
+      "id": "MMM-J3",
+      "invariant": "MATERIAL_CONFLICT_MUST_SURFACE_AT_MACRO",
+      "purpose": "Material Macro conflict surfaces status+refs",
+      "input_grain": "MACRO",
+      "expected_conflict_posture": {
+        "conflict_status": "CONFLICT_PRESENT",
+        "conflict_refs": "traceable"
+      },
+      "prohibited_outcomes": [
+        "clean_consensus_claim_with_unresolved_material_conflict"
+      ],
+      "rationale": "Steward P0 conflict surface"
+    },
+    {
+      "priority": "P0",
+      "readiness": "READY",
+      "expected_authority": "NONE_automatic",
+      "spec_references": [
+        "docs/Z_MICRO_MESO_MACRO_SEMANTIC_GOLDENS_DESIGN_1.md#MMM-J4",
+        "docs/Z_MICRO_MESO_MACRO_AGGREGATION_SPEC_1.md",
+        "docs/Z_MICRO_MESO_MACRO_STEWARD_P0_DECISIONS_1_1.md"
+      ],
+      "id": "MMM-J4",
+      "invariant": "CONFLICT_PRESENT ≠ CONFLICT_RESOLVED",
+      "purpose": "Presence is not resolution",
+      "expected_conflict_posture": "CONFLICT_PRESENT",
+      "prohibited_outcomes": [
+        "CONFLICT_RESOLVED_by_majority",
+        "CONFLICT_RESOLVED_by_average",
+        "CONFLICT_RESOLVED_by_AI",
+        "CONFLICT_RESOLVED_by_stronger_provenance_alone"
+      ],
+      "rationale": "No automatic resolution"
+    },
+    {
+      "priority": "P0",
+      "readiness": "READY",
+      "expected_authority": "NONE_automatic",
+      "spec_references": [
+        "docs/Z_MICRO_MESO_MACRO_SEMANTIC_GOLDENS_DESIGN_1.md#MMM-K2",
+        "docs/Z_MICRO_MESO_MACRO_AGGREGATION_SPEC_1.md",
+        "docs/Z_MICRO_MESO_MACRO_STEWARD_P0_DECISIONS_1_1.md"
+      ],
+      "id": "MMM-K2",
+      "invariant": "LOSSY_SUMMARY must declare loss",
+      "purpose": "Lossy summary class explicit",
+      "expected_loss_class": "LOSSY_SUMMARY",
+      "expected_lineage": "source_refs_retained_where_governance_permits",
+      "prohibited_outcomes": [
+        "hidden_lossy_compression"
+      ],
+      "rationale": "Loss disclosure"
+    },
+    {
+      "priority": "P0",
+      "readiness": "READY",
+      "expected_authority": "NONE_automatic",
+      "spec_references": [
+        "docs/Z_MICRO_MESO_MACRO_SEMANTIC_GOLDENS_DESIGN_1.md#MMM-K3",
+        "docs/Z_MICRO_MESO_MACRO_AGGREGATION_SPEC_1.md",
+        "docs/Z_MICRO_MESO_MACRO_STEWARD_P0_DECISIONS_1_1.md"
+      ],
+      "id": "MMM-K3",
+      "invariant": "AGGREGATION_LOSS_MUST_NOT_BE_HIDDEN",
+      "purpose": "Hidden loss ⇒ invalid/incomplete",
+      "preconditions": {
+        "lossy": true,
+        "loss_disclosed": false
+      },
+      "expected_representation": {
+        "validity": "INVALID_OR_INCOMPLETE"
+      },
+      "prohibited_outcomes": [
+        "hidden_loss_accepted_as_valid"
+      ],
+      "control_logic_mapping": "IF loss_class==LOSSY_SUMMARY THEN require loss disclosure",
+      "rationale": "Hidden loss wall"
+    },
+    {
+      "priority": "P0",
+      "readiness": "READY",
+      "expected_authority": "NONE_automatic",
+      "spec_references": [
+        "docs/Z_MICRO_MESO_MACRO_SEMANTIC_GOLDENS_DESIGN_1.md#MMM-L1",
+        "docs/Z_MICRO_MESO_MACRO_AGGREGATION_SPEC_1.md",
+        "docs/Z_MICRO_MESO_MACRO_STEWARD_P0_DECISIONS_1_1.md"
+      ],
+      "id": "MMM-L1",
+      "invariant": "TRACEABILITY ≠ REVERSIBILITY",
+      "purpose": "Traceable Macro need not be mathematically reversible",
+      "expected_lineage": "TRACEABLE_YES",
+      "expected_representation": {
+        "reversible": "NOT_REQUIRED_OR_NOT_ESTABLISHED"
+      },
+      "prohibited_outcomes": [
+        "require_universal_reversibility"
+      ],
+      "rationale": "Traceability law"
+    },
+    {
+      "priority": "P0",
+      "readiness": "READY",
+      "expected_authority": "NONE_automatic",
+      "spec_references": [
+        "docs/Z_MICRO_MESO_MACRO_SEMANTIC_GOLDENS_DESIGN_1.md#MMM-M1",
+        "docs/Z_MICRO_MESO_MACRO_AGGREGATION_SPEC_1.md",
+        "docs/Z_MICRO_MESO_MACRO_STEWARD_P0_DECISIONS_1_1.md"
+      ],
+      "id": "MMM-M1",
+      "invariant": "AGGREGATION UPDATE ≠ SILENT OVERWRITE",
+      "purpose": "Macro v1 historical after source change → v2",
+      "expected_representation": {
+        "v1_historical": true,
+        "v2_from_updated_evidence": true
+      },
+      "prohibited_outcomes": [
+        "silent_rewrite_of_v1"
+      ],
+      "rationale": "Version history"
+    },
+    {
+      "priority": "P0",
+      "readiness": "READY",
+      "expected_authority": "NONE_automatic",
+      "spec_references": [
+        "docs/Z_MICRO_MESO_MACRO_SEMANTIC_GOLDENS_DESIGN_1.md#MMM-M3",
+        "docs/Z_MICRO_MESO_MACRO_AGGREGATION_SPEC_1.md",
+        "docs/Z_MICRO_MESO_MACRO_STEWARD_P0_DECISIONS_1_1.md"
+      ],
+      "id": "MMM-M3",
+      "invariant": "Formula version attributable",
+      "purpose": "Old derived Macro keeps old formula identity",
+      "input_state_class": "FORMULA_DERIVED",
+      "expected_provenance": "formula_family_and_version_retained",
+      "prohibited_outcomes": [
+        "lose_formula_version_identity"
+      ],
+      "rationale": "Formula version traceability"
+    },
+    {
+      "priority": "P0",
+      "readiness": "READY",
+      "expected_authority": "NONE_automatic",
+      "spec_references": [
+        "docs/Z_MICRO_MESO_MACRO_SEMANTIC_GOLDENS_DESIGN_1.md#MMM-N2",
+        "docs/Z_MICRO_MESO_MACRO_AGGREGATION_SPEC_1.md",
+        "docs/Z_MICRO_MESO_MACRO_STEWARD_P0_DECISIONS_1_1.md"
+      ],
+      "id": "MMM-N2",
+      "invariant": "CORRELATION ≠ CAUSATION",
+      "purpose": "Correlation remains correlation at higher grain",
+      "expected_representation": {
+        "relationship_kind": "CORRELATION"
+      },
+      "prohibited_outcomes": [
+        "CAUSATION"
+      ],
+      "rationale": "Relationship wall"
+    },
+    {
+      "priority": "P0",
+      "readiness": "READY",
+      "expected_authority": "NONE_automatic",
+      "spec_references": [
+        "docs/Z_MICRO_MESO_MACRO_SEMANTIC_GOLDENS_DESIGN_1.md#MMM-N3",
+        "docs/Z_MICRO_MESO_MACRO_AGGREGATION_SPEC_1.md",
+        "docs/Z_MICRO_MESO_MACRO_STEWARD_P0_DECISIONS_1_1.md"
+      ],
+      "id": "MMM-N3",
+      "invariant": "GRAPH_TOPOLOGY ≠ TRUTH",
+      "purpose": "Connectivity does not increase truth",
+      "expected_representation": {
+        "truth_not_increased_by_connectivity": true
+      },
+      "prohibited_outcomes": [
+        "truth_from_topology_alone"
+      ],
+      "rationale": "Graph ≠ truth"
+    },
+    {
+      "priority": "P0",
+      "readiness": "READY",
+      "expected_authority": "NONE_automatic",
+      "spec_references": [
+        "docs/Z_MICRO_MESO_MACRO_SEMANTIC_GOLDENS_DESIGN_1.md#MMM-O1",
+        "docs/Z_MICRO_MESO_MACRO_AGGREGATION_SPEC_1.md",
+        "docs/Z_MICRO_MESO_MACRO_STEWARD_P0_DECISIONS_1_1.md"
+      ],
+      "id": "MMM-O1",
+      "invariant": "BROADER VIEW ≠ HIGHER AUTHORITY",
+      "purpose": "More evidence in Macro ≠ authority elevation",
+      "prohibited_outcomes": [
+        "authority_elevation_from_broader_view"
+      ],
+      "rationale": "Authority wall"
+    },
+    {
+      "priority": "P0",
+      "readiness": "READY",
+      "expected_authority": "NONE_automatic",
+      "spec_references": [
+        "docs/Z_MICRO_MESO_MACRO_SEMANTIC_GOLDENS_DESIGN_1.md#MMM-O3",
+        "docs/Z_MICRO_MESO_MACRO_AGGREGATION_SPEC_1.md",
+        "docs/Z_MICRO_MESO_MACRO_STEWARD_P0_DECISIONS_1_1.md"
+      ],
+      "id": "MMM-O3",
+      "invariant": "GGAESP GO ≠ DEPLOY",
+      "purpose": "GO retained as GGAESP decision not deploy",
+      "aggregation_context": "Macro_contains_GGAESP_GO",
+      "expected_representation": {
+        "ggaesp_decision": "GO",
+        "deploy_authority": false
+      },
+      "expected_provenance": "GGAESP_attributable",
+      "prohibited_outcomes": [
+        "DEPLOY",
+        "MACRO_TRUTH_from_GO"
+      ],
+      "rationale": "GGAESP boundary; semantics unchanged"
+    },
+    {
+      "priority": "P0",
+      "readiness": "READY",
+      "expected_authority": "NONE_automatic",
+      "spec_references": [
+        "docs/Z_MICRO_MESO_MACRO_SEMANTIC_GOLDENS_DESIGN_1.md#MMM-P1",
+        "docs/Z_MICRO_MESO_MACRO_AGGREGATION_SPEC_1.md",
+        "docs/Z_MICRO_MESO_MACRO_STEWARD_P0_DECISIONS_1_1.md"
+      ],
+      "id": "MMM-P1",
+      "invariant": "QOSMEI FUSION ≠ GENERIC AGGREGATION",
+      "purpose": "Aggregation Macro not automatically QOSMEI fusion",
+      "expected_representation": {
+        "class": "MacroRepresentation",
+        "qosmei_fusion": false
+      },
+      "prohibited_outcomes": [
+        "auto_label_as_QOSMEI_fusion"
+      ],
+      "rationale": "QOSMEI distinction"
+    },
+    {
+      "priority": "P0",
+      "readiness": "READY",
+      "expected_authority": "NONE_automatic",
+      "spec_references": [
+        "docs/Z_MICRO_MESO_MACRO_SEMANTIC_GOLDENS_DESIGN_1.md#MMM-Q2",
+        "docs/Z_MICRO_MESO_MACRO_AGGREGATION_SPEC_1.md",
+        "docs/Z_MICRO_MESO_MACRO_STEWARD_P0_DECISIONS_1_1.md"
+      ],
+      "id": "MMM-Q2",
+      "invariant": "SWARM/MiniBot majority ≠ MACRO TRUTH",
+      "purpose": "Multiple similar reports preserved; no majority truth",
+      "expected_representation": {
+        "multiple_reports_preserved": true
+      },
+      "prohibited_outcomes": [
+        "majority_ground_truth",
+        "majority_macro_truth"
+      ],
+      "rationale": "Swarm/MiniBot boundary"
+    },
+    {
+      "priority": "P0",
+      "readiness": "READY",
+      "expected_authority": "NONE_automatic",
+      "spec_references": [
+        "docs/Z_MICRO_MESO_MACRO_SEMANTIC_GOLDENS_DESIGN_1.md#MMM-R2",
+        "docs/Z_MICRO_MESO_MACRO_AGGREGATION_SPEC_1.md",
+        "docs/Z_MICRO_MESO_MACRO_STEWARD_P0_DECISIONS_1_1.md"
+      ],
+      "id": "MMM-R2",
+      "invariant": "Z-AAI explanation ≠ observed fact",
+      "purpose": "Z-AAI Macro explanation stays AI_EXPLANATION",
+      "expected_representation": {
+        "class": "AI_EXPLANATION"
+      },
+      "prohibited_outcomes": [
+        "OBSERVED",
+        "observed_fact"
+      ],
+      "rationale": "Z-AAI boundary"
+    },
+    {
+      "priority": "P0",
+      "readiness": "READY",
+      "expected_authority": "NONE_automatic",
+      "spec_references": [
+        "docs/Z_MICRO_MESO_MACRO_SEMANTIC_GOLDENS_DESIGN_1.md#MMM-T1",
+        "docs/Z_MICRO_MESO_MACRO_AGGREGATION_SPEC_1.md",
+        "docs/Z_MICRO_MESO_MACRO_STEWARD_P0_DECISIONS_1_1.md"
+      ],
+      "id": "MMM-T1",
+      "invariant": "UNCERTAINTY_AGGREGATION_OPERATOR = UNDEFINED",
+      "purpose": "Retain uncertainty traceability; forbid invented aggregate",
+      "expected_uncertainty_posture": "TRACEABLE_TO_CONTRIBUTORS",
+      "prohibited_outcomes": [
+        "average_uncertainty",
+        "sum_confidence",
+        "min_max_vote",
+        "invented_macro_confidence",
+        "numeric_uncertainty_operator"
+      ],
+      "rationale": "Uncertainty gap safe encoding"
+    },
+    {
+      "priority": "P0",
+      "readiness": "READY",
+      "expected_authority": "NONE_automatic",
+      "spec_references": [
+        "docs/Z_MICRO_MESO_MACRO_SEMANTIC_GOLDENS_DESIGN_1.md#MMM-V2",
+        "docs/Z_MICRO_MESO_MACRO_AGGREGATION_SPEC_1.md",
+        "docs/Z_MICRO_MESO_MACRO_STEWARD_P0_DECISIONS_1_1.md"
+      ],
+      "id": "MMM-V2",
+      "invariant": "Z_INFINITY ≠ UNBOUNDED_AGGREGATION",
+      "purpose": "Unbounded aggregation not authorized",
+      "aggregation_context": "unbounded_unlimited_state",
+      "expected_representation": {
+        "authorized": false
+      },
+      "prohibited_outcomes": [
+        "unbounded_aggregation_authorized",
+        "invented_numeric_limits_as_authorization"
+      ],
+      "rationale": "Boundedness"
+    },
+    {
+      "priority": "P0",
+      "readiness": "READY",
+      "expected_authority": "NONE_automatic",
+      "spec_references": [
+        "docs/Z_MICRO_MESO_MACRO_SEMANTIC_GOLDENS_DESIGN_1.md#MMM-W1",
+        "docs/Z_MICRO_MESO_MACRO_AGGREGATION_SPEC_1.md",
+        "docs/Z_MICRO_MESO_MACRO_STEWARD_P0_DECISIONS_1_1.md"
+      ],
+      "id": "MMM-W1",
+      "invariant": "Macro explainability/lineage answerability",
+      "purpose": "Macro retains metadata to answer contributor/loss/conflict/authority questions",
+      "expected_lineage": "sufficient_for_explainability_contract",
+      "expected_representation": {
+        "answerability": [
+          "what",
+          "which_micro",
+          "which_meso",
+          "why_grouped",
+          "operation",
+          "loss",
+          "conflicts",
+          "uncertainty",
+          "observed_vs_derived_vs_shadow_vs_ai",
+          "authority"
+        ]
+      },
+      "prohibited_outcomes": [
+        "opaque_macro_without_lineage_metadata"
+      ],
+      "rationale": "Explainability contract; no explanation engine"
+    }
+  ]
+}
