@@ -1,10 +1,11 @@
 # Z-SANCTUARY-SHADOW-TAXONOMY-CONTRACT-SPEC-1
 
-**Status:** Shadow taxonomy + architectural contract · **F2 / partial F3** · **no Shadow engine**  
+**Status:** Shadow taxonomy + architectural contract · **F3 SPECIFICATION** · **no Shadow engine**  
 **Date:** 2026-08-22  
-**Baseline HEAD:** `08875f2`  
+**Baseline HEAD:** `08875f2` (refined at Steward P0 `20fea2f`+)  
 **Branch:** `cursor/zsanctuary/z-sdc-phase-0-architecture`  
-**Mode:** RECOVER · CLASSIFY · SPECIFY · CONTRACT ONLY
+**Mode:** RECOVER · CLASSIFY · SPECIFY · STEWARD P0 REFINED · NO IMPLEMENTATION  
+**Steward P0 receipt:** `docs/Z_SHADOW_STEWARD_P0_DECISIONS_1_1.md`
 
 ## Baseline
 
@@ -13,9 +14,12 @@
 | Expected HEAD | `08875f2` |
 | Actual start HEAD | `08875f2` |
 | Prior seals | C360 F3+F4 · Z Logic Spec 0 · Identity Registry 0.5/0.6 |
+| Steward P0 | Recorded in companion receipt 1.1 |
+| Later preserved | Micro/Meso/Macro F4 (`20fea2f`) untouched by this refinement |
 | Staged | NONE |
 | Dirt | Preserved |
 | C360 F4 goldens | **NOT MODIFIED** |
+| MMM F4 goldens | **NOT MODIFIED** |
 | Z Logic spec | **NOT MODIFIED** |
 | Identity registry | **NOT MODIFIED** |
 
@@ -74,11 +78,16 @@ REASONING_SHADOW
 ≠ METAPHOR_SHADOW
 ```
 
-### Reasoning Shadow (proposed refined definition)
+### Reasoning Shadow (`STEWARD_DEFINED`)
 
-`PROPOSED_SPECIFICATION` (refined from charter candidate):
+> A **Reasoning Shadow** is a separately identified, provenance-preserving **alternative relative to an explicit base reference**, maintained for comparison, challenge, counterfactual exploration, risk analysis, AI-alternative reasoning, or another explicitly declared reasoning purpose — and **never treated as observed fact merely because it exists**.
 
-> A **Reasoning Shadow** is a separately identified, provenance-preserving **alternative relative to an explicit base reference**, maintained for comparison, challenge, counterfactual exploration, risk analysis, formula-alternative reasoning, or another explicitly declared reasoning purpose — and **never treated as observed fact merely because it exists**.
+```text
+CANONICAL_REASONING_SHADOW_CLASSES_V1 =
+COUNTERFACTUAL
+ALTERNATIVE_STATE
+AI_PROPOSED
+```
 
 ### Minimum distinguishing properties
 
@@ -157,14 +166,14 @@ REPLICA ≠ SHADOW
 
 | Class | Status | Notes |
 | --- | --- | --- |
-| Counterfactual Shadow | **SUPPORTED_NEW_SPEC** | Base + explicit changed assumption(s); ≠ causal proof |
-| Alternative-State Shadow | **SUPPORTED_NEW_SPEC** | Plausible alternate relative to shared base |
-| Risk Shadow | **PROPOSED** | Adverse-oriented alternative; not proof harm will occur |
-| Formula Shadow | **PROPOSED** | Operator **UNDEFINED** |
-| Simulation Shadow | **PROPOSED** | Simulation result registered for comparison |
-| AI-Proposed Shadow | **SUPPORTED_NEW_SPEC** | Must retain AI provenance |
-| Historical Shadow | **DEFERRED / REJECTED as automatic class** | History ≠ Shadow by default |
-| Combat Shadow | **DOMAIN_SPECIFIC_FUTURE_SPECIALIZATION** | Needs physics contracts |
+| Counterfactual Shadow | **CANONICAL_V1** (`STEWARD_DEFINED`) | Base + explicit changed assumption(s); ≠ causal proof |
+| Alternative-State Shadow | **CANONICAL_V1** (`STEWARD_DEFINED`) | Distinct alternative relative to same explicit base |
+| AI-Proposed Shadow | **CANONICAL_V1** (`STEWARD_DEFINED`) | Must retain AI provenance; ≠ observation/canon/authorization |
+| Risk Shadow | **DEFERRED / PROPOSED** | Prefer COUNTERFACTUAL or ALTERNATIVE_STATE + purpose=RISK_ANALYSIS |
+| Formula Shadow | **DEFERRED** | Operator **UNDEFINED** |
+| Simulation Shadow | **DEFERRED / PROPOSED** | Simulation = method; Shadow only if explicitly registered |
+| Historical Shadow | **DEFERRED** | History ≠ Shadow by default |
+| Combat Shadow | **DEFERRED** | Domain-specific future specialization |
 
 ## Operational / Governance Shadow Taxonomy
 
@@ -176,29 +185,46 @@ REPLICA ≠ SHADOW
 | VILE / zuno-shadow validation | **RECOVERED_CANON** | Separate |
 | QOSMEI shadow:true flag | **RECOVERED_CANON** (manifest) | Separate |
 | EDII Shadow Instances | **RECOVERED_CANON** (design) | Separate |
-| Adversarial Shadow | **PROPOSED_ARCHITECTURE** | Prefer purpose/module — Steward decide |
-| Impact Shadow | **PROPOSED_ARCHITECTURE** | Prefer impact layer using Shadow-like compare — Steward decide |
+| Adversarial Shadow | **PROPOSED_ARCHITECTURE** | Purpose/specialization — not v1 base class (`STEWARD_DEFINED`) |
+| Impact Shadow | **PROPOSED_ARCHITECTURE** | Impact-assessment module/purpose — not v1 base class (`STEWARD_DEFINED`) |
 
 ---
 
 ## Base Reference Contract
 
-| Property | Verdict |
-| --- | --- |
-| Every Reasoning Shadow requires base reference? | **YES** (`REQUIRED`) |
-| `SHADOW_WITHOUT_BASE_REFERENCE` | **INVALID** for Reasoning Shadows |
-| Base preserved? | **YES** |
+```text
+BASE_REFERENCE_REQUIRED = YES
+SHADOW_WITHOUT_BASE_REFERENCE = INVALID / INCOMPLETE
+```
 
-Base may be: base state · base formula application · base candidate · base event — explicit ref required.
+`STEWARD_DEFINED`. Base may refer to eligible state · event · formula result · candidate · relationship · MacroRepresentation · other explicitly defined base object. Orphan Shadows not allowed. Base preserved; creating Shadow does not mutate base.
 
 ## Assumptions Contract
 
-| Property | Verdict |
-| --- | --- |
-| Assumptions inspectable? | **REQUIRED** for Counterfactual; **REQUIRED** recommended P0 for all Reasoning Shadows |
-| Hidden assumptions | **INVALID / INCOMPLETE** |
+```text
+SHADOW_ASSUMPTIONS_REQUIRED = YES
+HIDDEN_ASSUMPTIONS → INCOMPLETE SHADOW
+```
+
+`STEWARD_DEFINED` for every Reasoning Shadow. Field may explicitly state `NO_ADDITIONAL_ASSUMPTIONS` where appropriate. Do not invent assumptions automatically.
+
+## Purpose Contract
+
+```text
+SHADOW_PURPOSE_REQUIRED = YES
+```
+
+`STEWARD_DEFINED`. Purpose ≠ class. Compact vocabulary:
+
+```text
+COMPARE · CHALLENGE · COUNTERFACTUAL · RISK_ANALYSIS · ADVERSARIAL_CHALLENGE · IMPACT_ANALYSIS · AI_ALTERNATIVE · DOMAIN_SPECIFIC
+```
 
 ## Provenance Contract
+
+```text
+PROVENANCE_REQUIRED = YES
+```
 
 Origin classes: HUMAN_PROPOSED · FORMULA_DERIVED · SIMULATION_DERIVED · AI_PROPOSED · RULE_DERIVED · IMPORTED · UNKNOWN  
 
@@ -206,23 +232,30 @@ Origin ≠ truth. AI Shadows retain AI provenance.
 
 ## Uncertainty Contract
 
-No universal Shadow probability. Use C360 uncertainty: NOT_ASSESSED · QUALITATIVE · QUANTIFIED (+ domain value only when justified).
+No universal Shadow probability. Use C360 uncertainty: NOT_ASSESSED · QUALITATIVE · QUANTIFIED (+ domain value only when justified). No `shadow_probability` / `shadow_confidence_score`.
 
 ## Lifecycle Contract
 
-Candidate lifecycle states (`PROPOSED_SPECIFICATION`): CANDIDATE · ACTIVE_FOR_COMPARISON · REJECTED · RETAINED · SUPERSEDED · ACCEPTED_AS_PROPOSAL · EXPIRED  
-
-Useful ≠ observed. Promotion path:
+Architecture-level states (`STEWARD_DEFINED`):
 
 ```text
-SHADOW → evidence/test → proposal → governance → human → accepted future state
+CANDIDATE · ACTIVE_FOR_COMPARISON · RETAINED · REJECTED · SUPERSEDED
 ```
 
-Historical Shadow identity remains preserved.
+Do **not** use OBSERVED as a lifecycle transition. If a Shadow later matches reality, create a **new observation**; historical Shadow remains a Shadow.
+
+Promotion path:
+
+```text
+SHADOW → evidence/test → proposal → governance → human/Steward decision
+```
+
+Never automatic SHADOW → OBSERVED or SHADOW → CANON.
 
 ## Authority Contract
 
 ```text
+SHADOW_AUTHORITY_ELEVATION = NONE
 SHADOW ≠ AUTHORITY
 SHADOW ≠ PERMISSION
 SIMULATE ALLOWED ≠ EXECUTE ALLOWED
@@ -233,9 +266,19 @@ Ceiling: inform · challenge · compare · warn · propose — **never** authori
 
 ## Shadow Difference Contract
 
-P0 explainability candidate — every Reasoning Shadow should answer:
+```text
+SHADOW_DIFFERENCE_EXPLANATION_REQUIRED = YES
+```
 
-WHAT base? WHAT changed? WHY created? WHO/WHAT created? WHICH assumptions differ? Shared vs unique evidence? Uncertainty? Authority? Outcome?
+`STEWARD_DEFINED`. Every canonical Reasoning Shadow must be able to state: WHAT differs from base? WHY? WHICH assumptions changed? WHICH evidence shared? WHICH evidence differs? No automated diff engine.
+
+## Retention Contract
+
+```text
+SHADOW_AUDIT_RETENTION_DEFAULT = PRESERVE_WHERE_GOVERNANCE_PERMITS
+```
+
+`STEWARD_DEFINED`. Not infinite retention. Rejected Shadow ≠ automatic deletion; may be removed where policy requires. Auditability subject to privacy/retention governance.
 
 ---
 
@@ -262,30 +305,41 @@ Sequence architecture: branch from S(n) to S_shadow(n+1) while observed S(n+1) p
 
 ## Micro / Meso / Macro Relationship
 
+Preserve sealed MMM F4 aggregation behavior (`STEWARD_DEFINED` alignment; MMM goldens **not modified**):
+
+```text
+BASE MICRO → BASE MESO → BASE MACRO
+SHADOW MICRO → SHADOW MESO → SHADOW MACRO
+COMPARE between lanes
+```
+
 | Layer | Posture |
 | --- | --- |
 | Micro | Shadow may attach to one observation/state/relationship/formula result |
 | Meso | Shadow alternatives for local clusters — parallel to base, not mixed into “truth” |
-| Macro | Macro Shadow must be **traceable** to lower-level evidence/assumptions |
-
-**Critical aggregation law for next gate:**
+| Macro | Macro Shadow must remain **traceable** to lower-level Shadow refs · relevant base refs · assumptions · provenance |
 
 ```text
+DO NOT merge lanes.
 DO NOT aggregate OBSERVED + SHADOW + AI_PROPOSED into a single Macro truth.
-Aggregate OBSERVED (and other base classes) separately from SHADOW lanes; then COMPARE.
+No aggregation runtime in this gate.
 ```
 
 ## Formula Shadow
 
-Operator: **`FORMULA_SHADOW_OPERATOR = UNDEFINED`**
+```text
+FORMULA_SHADOW = DEFERRED
+FORMULA_SHADOW_OPERATOR = UNDEFINED
+```
 
 ```text
 FORMULA_SHADOW ≠ MATHEMATICAL_INVERSE
 FORMULA_SHADOW ≠ BOOLEAN_NOT
 FORMULA_SHADOW ≠ ELSE
+FORMULA_SHADOW ≠ parameter flip / competing formula (unless future formula evidence defines it)
 ```
 
-Meaning of Formula Shadow (parameter/input/interpretation/output/competing formula) remains **UNRESOLVED** pending recovery/Steward.
+Meaning of Formula Shadow remains **UNRESOLVED** — deferred, not rejected.
 
 ## GGAESP Relationship
 
@@ -294,33 +348,39 @@ Meaning of Formula Shadow (parameter/input/interpretation/output/competing formu
 ## Z Logic Relationship
 
 ```text
-SHADOW_CONTROL_PRIMITIVE = DEFERRED_PENDING_SHADOW_SPEC
+SHADOW_CONTROL_PRIMITIVE_REQUIRED = YES
+CREATE_SHADOW = ARCHITECTURAL_PRIMITIVE_ONLY
+RUNTIME = NONE
+SYNTAX = UNDEFINED
+CREATE_SHADOW ≠ ELSE
+CONTROL_BRANCH ≠ SHADOW
 ```
 
-Updated after this taxonomy: primitive remains **DEFERRED** until Steward accepts classes + optional CREATE_SHADOW conceptual op. Recommendation:
-
-```text
-SHADOW_CONTROL_PRIMITIVE_DEFERRED
-```
-
-Explicit CREATE_SHADOW may become justified later; do not amend Z Logic spec in this gate.
+`STEWARD_DEFINED`. Conceptual preconditions: base reference · purpose · assumptions · provenance · creation bounded · base not mutated · authority ceiling preserved. **Z Logic spec not amended in this gate.**
 
 ## MiniBot / Swarm / QOSMEI / Z-AAI
 
 | Actor | Posture |
 | --- | --- |
 | MiniBot | May suggest Shadow candidate → AI provenance; not OBSERVED_FACT; not activated |
-| Swarm | Multiple candidates; majority ≠ truth; not activated |
-| QOSMEI | May fuse observed + formula + Shadow + MiniBot → advisory; fusion ≠ authorization |
+| Swarm | Multiple candidates; SHADOW_CONSENSUS ≠ STEWARD_DECISION; SWARM_SHADOW_MAJORITY ≠ TRUTH; not activated |
+| QOSMEI | May fuse observed + formula + Shadow + MiniBot → advisory; fusion ≠ authorization; Shadow interpretation ≠ observed fact |
 | Z-AAI | Generate/compare/explain Shadows; AI Shadow ≠ observation/canon/authorization |
 
 ## Adversarial Shadow
 
-Remains `PROPOSED_ARCHITECTURE`. Prefer: **purpose** (`CHALLENGE`/`RISK`) and/or **separate security module** — Steward decide. Not activated.
+Remains `PROPOSED_ARCHITECTURE` (`STEWARD_DEFINED` placement). Prefer purpose/specialization:
+
+```text
+class = COUNTERFACTUAL or ALTERNATIVE_STATE
+purpose = ADVERSARIAL_CHALLENGE
+```
+
+Not a v1 canonical base class. Not activated.
 
 ## Impact Shadow
 
-Remains `PROPOSED_ARCHITECTURE`. Prefer: **separate impact-assessment layer** that may *use* Shadow comparisons — not forced into core reasoning taxonomy by naming alone.
+Remains `PROPOSED_ARCHITECTURE` (`STEWARD_DEFINED` placement). Prefer impact-assessment module/purpose using Shadow comparison — not collapsed into Shadow engine / not v1 base class.
 
 ## Combat Shadow
 
@@ -333,19 +393,22 @@ Replica Fabric lifecycle preserved. Shadow cannot authorize replication/deploy. 
 ## Boundedness
 
 ```text
-SHADOW_GENERATION_MUST_BE_BOUNDED
+SHADOW_GENERATION_MUST_BE_BOUNDED = YES
 Z_INFINITY ≠ UNBOUNDED_SHADOW_BRANCHING
+Z_INFINITY ≠ UNBOUNDED_SHADOW_RECURSION
 SHADOW_SPACE_COMPLETENESS = UNDEFINED GENERALLY
 SHADOW_COUNT ≠ CONFIDENCE
 MORE_SHADOWS ≠ MORE_TRUTH
 SHADOW_EQUIVALENCE_OPERATOR = UNDEFINED
+SHADOW_OF_SHADOW = DEFERRED
+UNBOUNDED_SHADOW_DEPTH = NOT_AUTHORIZED
 ```
 
-Shadows-of-Shadows: **DEFERRED** — conservative recommendation **DISALLOW by default** until Steward/domain defines depth.
+`STEWARD_DEFINED`: no unrestricted recursive Shadow generation in v1. Future domain may reopen.
 
 ## Explainability Contract
 
-See Difference Contract (P0 candidate). Future Shadow receipt: shadow_id · base_ref · class · purpose · assumptions · origin · provenance · uncertainty · created_at · status · comparison_result · authority_ceiling — **not implemented**.
+See Difference Contract (`STEWARD_DEFINED`). Future Shadow receipt: shadow_id · base_ref · class · purpose · assumptions · origin · provenance · uncertainty · created_at · status · comparison_result · authority_ceiling — **not implemented**.
 
 ## Graceful Degradation
 
@@ -365,34 +428,32 @@ Minimum necessary data · purpose limitation · retention bounds. Hostile Shadow
 
 | Identity / class | Meaning | Provenance | Canon status | Runtime | Separate from |
 | --- | --- | --- | --- | --- | --- |
-| Reasoning Shadow (core) | Alternate vs base for compare/challenge | Required | SUPPORTED_NEW_SPEC | No | Operational Shadows |
-| Counterfactual | Changed assumptions | Required | SUPPORTED_NEW_SPEC | No | Causal proof |
-| Alternative-State | Plausible alternate | Required | SUPPORTED_NEW_SPEC | No | Prediction auto |
-| AI-Proposed Shadow | AI-origin alternate | AI_PROPOSED | SUPPORTED_NEW_SPEC | No | OBSERVED |
-| Risk Shadow | Adverse-oriented alternate | Required | PROPOSED | No | Harm certainty |
-| Formula Shadow | Formula alternative | TBD | PROPOSED | No | Inverse/NOT/ELSE |
-| Simulation Shadow | Registered sim result | SIMULATION_DERIVED | PROPOSED | No | Raw sim alone |
+| Reasoning Shadow (core) | Alternate vs base for compare/challenge | Required | **CANONICAL_V1** (`STEWARD_DEFINED`) | No | Operational Shadows |
+| Counterfactual | Changed assumptions | Required | **CANONICAL_V1** | No | Causal proof |
+| Alternative-State | Plausible alternate | Required | **CANONICAL_V1** | No | Prediction auto |
+| AI-Proposed Shadow | AI-origin alternate | AI_PROPOSED | **CANONICAL_V1** | No | OBSERVED |
+| Risk Shadow | Adverse-oriented alternate | Required | DEFERRED | No | Harm certainty |
+| Formula Shadow | Formula alternative | TBD | DEFERRED | No | Inverse/NOT/ELSE |
+| Simulation Shadow | Registered sim result | SIMULATION_DERIVED | DEFERRED | No | Raw sim alone |
 | OTel/OPA Shadow | Advisory observe/policy | System | RECOVERED_CANON | Advisory | Reasoning Shadow |
 | SSWS/HODP/Preview | Workspace/mirror/preview | System | RECOVERED_CANON | Partial | Reasoning Shadow |
 | VILE/zuno-shadow | Validation framework | System | RECOVERED_CANON | Framework | Reasoning Shadow |
-| Adversarial / Impact | Proposed modules | Proposed | PROPOSED | No | Core taxonomy pending Steward |
+| Adversarial / Impact | Purpose/module (not v1 class) | Proposed | PROPOSED_ARCHITECTURE | No | Core v1 taxonomy |
 
 ## Reasoning Shadow Contract Matrix
 
 | Contract property | Required? | Definition | Status |
 | --- | --- | --- | --- |
 | shadow_id | REQUIRED | Stable identity | DEFINED |
-| base_reference | REQUIRED | Explicit base | DEFINED |
-| class | REQUIRED | Taxonomy class | PARTIAL (classes pending Steward seal) |
-| purpose | REQUIRED | Controlled purpose | DEFINED (vocab PROPOSED) |
-| assumptions | REQUIRED (esp. counterfactual) | Inspectable deltas | DEFINED |
-| provenance | REQUIRED | Origin class | DEFINED |
+| base_reference | REQUIRED | Explicit base | DEFINED (`STEWARD_DEFINED`) |
+| class | REQUIRED | COUNTERFACTUAL · ALTERNATIVE_STATE · AI_PROPOSED | DEFINED (`STEWARD_DEFINED`) |
+| purpose | REQUIRED | Controlled purpose | DEFINED (`STEWARD_DEFINED`) |
+| assumptions | REQUIRED | Inspectable; may be NO_ADDITIONAL_ASSUMPTIONS | DEFINED (`STEWARD_DEFINED`) |
+| provenance | REQUIRED | Origin class | DEFINED (`STEWARD_DEFINED`) |
 | uncertainty | REQUIRED concept | C360 structures | DEFINED |
-| lifecycle | OPTIONAL→future | Status enum | DEFERRED details |
-| authority | REQUIRED | Ceiling NONE elevate | DEFINED |
-| difference explanation | REQUIRED P0 candidate | Explainability answers | PARTIAL |
-
-Purpose vocab (controlled, not over-expanded): COMPARE · CHALLENGE · COUNTERFACTUAL · RISK · SIMULATION_REVIEW · FORMULA_ALTERNATIVE · AI_ALTERNATIVE · DOMAIN_SPECIFIC
+| lifecycle | Architecture | CANDIDATE…SUPERSEDED | DEFINED (`STEWARD_DEFINED`) |
+| authority | REQUIRED | Ceiling NONE elevate | DEFINED (`STEWARD_DEFINED`) |
+| difference explanation | REQUIRED | Explainability answers | DEFINED (`STEWARD_DEFINED`) |
 
 ---
 
@@ -405,31 +466,37 @@ Purpose vocab (controlled, not over-expanded): COMPARE · CHALLENGE · COUNTERFA
 | SHADOW DOES NOT MUTATE BASE | **YES** |
 | SHADOW RETAINS BASE REFERENCE | **YES** |
 | SHADOW RETAINS PROVENANCE | **YES** |
-| SHADOW RETAINS ASSUMPTIONS | **YES** (P0 for reasoning) |
+| SHADOW RETAINS ASSUMPTIONS | **YES** (`STEWARD_DEFINED`) |
+| SHADOW PURPOSE REQUIRED | **YES** (`STEWARD_DEFINED`) |
+| SHADOW DIFFERENCE EXPLANATION REQUIRED | **YES** (`STEWARD_DEFINED`) |
 | SHADOW ≠ CONTROL_BRANCH | **YES** |
 | SHADOW ≠ BOOLEAN_NOT | **YES** |
 | SHADOW ≠ MATHEMATICAL_INVERSE | **YES** |
-| SHADOW ≠ REPLICA | **YES** (architectural seal) |
+| SHADOW ≠ REPLICA | **YES** |
 | AI SHADOW RETAINS AI PROVENANCE | **YES** |
+| COUNTERFACTUAL ≠ CAUSAL PROOF | **YES** (`STEWARD_DEFINED`) |
 | MORE SHADOWS ≠ MORE TRUTH | **YES** |
 | SHADOW CONSENSUS ≠ STEWARD DECISION | **YES** |
-| SHADOW GENERATION MUST BE BOUNDED | **YES** (architecture) |
+| SHADOW GENERATION MUST BE BOUNDED | **YES** |
 | SHADOW SPACE COMPLETENESS NOT GENERALLY CLAIMED | **YES** |
+| UNBOUNDED SHADOW RECURSION NOT AUTHORIZED | **YES** (`STEWARD_DEFINED`) |
+| CREATE_SHADOW ARCHITECTURAL PRIMITIVE REQUIRED | **YES** (`STEWARD_DEFINED`) |
+| CREATE_SHADOW IMPLEMENTED | **NO** |
 
 ## Maturity
 
 ```text
-SHADOW TAXONOMY / CONTRACT ≈ F2 / PARTIAL F3
+SHADOW TAXONOMY / CONTRACT = F3 SPECIFICATION
 NO engine · NO operator · NO score · NO goldens encoded
 ```
 
 ## Golden Readiness
 
 ```text
-SHADOW_GOLDEN_PARTIAL
+SHADOW_GOLDEN_READY
 ```
 
-Enough for later design of Shadow semantic goldens; **not** ready to encode until Steward seals class list + assumptions/depth decisions.
+P0 contract closed enough to design semantic goldens (not encode in this gate).
 
 ## Missing Mathematics
 
@@ -437,45 +504,40 @@ Enough for later design of Shadow semantic goldens; **not** ready to encode unti
 - Shadow distance / equivalence
 - Shadow probability / score
 - Branching transition math
-- Micro→Meso→Macro Shadow aggregation math
+- Nested Shadow semantics (deferred)
 
-## Missing Canon
+## Missing Canon / P1+
 
-- Steward seal of which PROPOSED classes become canonical
-- Shadows-of-Shadows depth policy
-- Retention default vs privacy
-- Whether CREATE_SHADOW becomes Z Logic primitive
-- Adversarial/Impact placement
 - Formula Shadow meaning
+- Whether Risk becomes a distinct class later
+- Simulation specialization details
+- Shadow equivalence/deduplication
+- Domain-specific retention periods
+- Combat specialization
+- CREATE_SHADOW syntax (Z Logic later)
 
 ## Steward Decisions Required
 
-| Decision | Choices |
-| --- | --- |
-| Canonical reasoning classes | Confirm Counterfactual + Alternative + AI-Proposed; accept/reject Risk/Formula/Simulation |
-| Assumptions mandatory for all Reasoning Shadows? | YES (recommended) / Counterfactual-only |
-| Shadows-of-Shadows | DISALLOW default (recommended) / DOMAIN_DEFINED / ALLOW |
-| Rejected Shadow audit retention default | YES with privacy supersede (recommended) / domain |
-| First-class Z Logic Shadow primitive | Remain DEFERRED (recommended) / charter later |
-| Adversarial / Impact | Purpose vs separate modules |
+**P0 closed** — see `docs/Z_SHADOW_STEWARD_P0_DECISIONS_1_1.md`.
 
 ## ONE Recommended Next Gate
 
 ```text
-Z-MICRO-MESO-MACRO-AGGREGATION-SPEC-1
+Z-SANCTUARY-SHADOW-SEMANTIC-GOLDENS-DESIGN-1
 ```
 
-**Why:** Shadow contract now supplies the non-mixing law required before aggregation. Next specify how Micro→Meso→Macro aggregates **base** evidence separately from **Shadow** lanes, then COMPARE — without inventing aggregation mathematics or opening runtime.
+**Why:** Canonical classes + required fields sealed; next design expected vectors for Reasoning Shadow v1 — parallel to C360/MMM goldens path — without Shadow engine.
 
-Alternate: Steward P0 answers for Shadow classes (if Steward wants taxonomy sealed before aggregation).  
 **Not opened here.**
 
 ## Terminal
 
 ```text
-SHADOW_TAXONOMY_AND_CONTRACT_SPEC_1 = SEALED_DOCS
+SHADOW_TAXONOMY_AND_CONTRACT_SPEC_1 = F3_STEWARD_REFINED
 SHADOW_ENGINE = NONE
 FORMULA_SHADOW_OPERATOR = UNDEFINED
+CREATE_SHADOW = ARCHITECTURAL_ONLY
 C360_F4 = PRESERVED
+MMM_F4 = PRESERVED
 PRODUCTION_AUTHORITY = NONE
 ```
