@@ -1,0 +1,1297 @@
+{
+  "schema": "z_shadow_semantic_goldens_v1",
+  "golden_pack_id": "shadow-semantic-goldens-v1",
+  "family": "reasoning-shadow-v1",
+  "version": "1.0.0",
+  "gate": "Z-SANCTUARY-SHADOW-SEMANTIC-GOLDENS-ACCEPT-ENCODE-1",
+  "maturity_target": "F4",
+  "maturity_claim": "F4_CANONICAL_EXPECTED_VECTORS",
+  "implementation_required_to_exist": false,
+  "shadow_runtime_exists": false,
+  "create_shadow_runtime_exists": false,
+  "goldens_define_expectation_for_future_implementation": true,
+  "executable": false,
+  "path_convention_note": "Placed under data/formula_semantic_goldens/ to match Continuous 360 / Micro-Meso-Macro hub convention.",
+  "steward_policy": {
+    "canonical_shadow_classes_v1": [
+      "COUNTERFACTUAL",
+      "ALTERNATIVE_STATE",
+      "AI_PROPOSED"
+    ],
+    "deferred_classes": [
+      "RISK",
+      "FORMULA",
+      "SIMULATION",
+      "HISTORICAL",
+      "COMBAT",
+      "ADVERSARIAL",
+      "IMPACT"
+    ],
+    "base_reference_required": true,
+    "assumptions_required": true,
+    "purpose_required": true,
+    "provenance_required": true,
+    "difference_explanation_required": true,
+    "shadow_of_shadow": "DEFERRED",
+    "unbounded_shadow_depth": "NOT_AUTHORIZED",
+    "formula_shadow": "DEFERRED",
+    "formula_shadow_operator": "UNDEFINED",
+    "create_shadow": "ARCHITECTURAL_PRIMITIVE_ONLY",
+    "shadow_authority_elevation": "NONE",
+    "shadow_generation_must_be_bounded": true,
+    "shadow_space_completeness": "UNDEFINED_GENERALLY",
+    "shadow_scoring_invented": false,
+    "shadow_probability_invented": false,
+    "shadow_mathematics_invented": false
+  },
+  "canonical_shadow_classes": [
+    "COUNTERFACTUAL",
+    "ALTERNATIVE_STATE",
+    "AI_PROPOSED"
+  ],
+  "source_spec": [
+    "docs/Z_SHADOW_SEMANTIC_GOLDENS_DESIGN_1.md",
+    "docs/Z_SHADOW_TAXONOMY_AND_CONTRACT_SPEC_1.md",
+    "docs/Z_SHADOW_STEWARD_P0_DECISIONS_1_1.md"
+  ],
+  "design_recommended_note": "Design prose targeted ~32; enumerated recommended ID list yields 40 unique READY P0 vectors with SH-I2 covering I2–I4 as one multi-scenario encode. Encode follows that enumerated list and adds SH-A3, SH-L2, SH-P2, SH-P3 for accept-encode charter §12 coverage completeness (distinct identity, CREATE_SHADOW≠ELSE, adversarial/impact purpose walls).",
+  "accepted_vector_ids": [
+    "SH-A1",
+    "SH-A2",
+    "SH-A3",
+    "SH-B1",
+    "SH-B2",
+    "SH-C1",
+    "SH-C2",
+    "SH-C3",
+    "SH-D1",
+    "SH-D2",
+    "SH-D3",
+    "SH-E2",
+    "SH-E3",
+    "SH-F1",
+    "SH-F2",
+    "SH-G1",
+    "SH-G2",
+    "SH-H1",
+    "SH-H3",
+    "SH-I2",
+    "SH-J1",
+    "SH-K1",
+    "SH-L1",
+    "SH-L2",
+    "SH-M1",
+    "SH-N1",
+    "SH-N2",
+    "SH-P1",
+    "SH-P2",
+    "SH-P3",
+    "SH-Q4",
+    "SH-R1",
+    "SH-S2",
+    "SH-S3",
+    "SH-U2",
+    "SH-V2",
+    "SH-W3",
+    "SH-X1",
+    "SH-Y1",
+    "SH-Y4",
+    "SH-Y5",
+    "SH-AC1",
+    "SH-AD1",
+    "SH-AD6"
+  ],
+  "vector_count": 44,
+  "deferred": {
+    "partial_excluded": [
+      "SH-O1"
+    ],
+    "blocked_excluded": [
+      "SH-T1"
+    ],
+    "ready_p0_deferred_redundant_or_expand": [
+      "SH-B3",
+      "SH-E1",
+      "SH-E4",
+      "SH-G3",
+      "SH-H2",
+      "SH-I1",
+      "SH-I3",
+      "SH-I4",
+      "SH-J2",
+      "SH-K2",
+      "SH-M2",
+      "SH-N3",
+      "SH-Q1",
+      "SH-Q2",
+      "SH-Q3",
+      "SH-R2",
+      "SH-S1",
+      "SH-U1",
+      "SH-V1",
+      "SH-W1",
+      "SH-W2",
+      "SH-X2",
+      "SH-X3",
+      "SH-Y2",
+      "SH-Y3",
+      "SH-Z1",
+      "SH-Z2",
+      "SH-Z3",
+      "SH-AA1",
+      "SH-AA2",
+      "SH-AB1",
+      "SH-AB2",
+      "SH-AB3",
+      "SH-AD2",
+      "SH-AD3",
+      "SH-AD4",
+      "SH-AD5"
+    ],
+    "note": "SH-I3 and SH-I4 covered by SH-I2 scenarios; listed in expand for ID accounting only."
+  },
+  "exclusions": {
+    "SH-O1": {
+      "priority": "P1",
+      "readiness": "PARTIAL",
+      "decision": "DEFER_PARTIAL",
+      "reason": "FORMULA_SHADOW_OPERATOR = UNDEFINED"
+    },
+    "SH-T1": {
+      "priority": "P1",
+      "readiness": "BLOCKED",
+      "decision": "DEFER_BLOCKED",
+      "reason": "SHADOW_OF_SHADOW = DEFERRED; nested semantics not canonical"
+    }
+  },
+  "vectors": [
+    {
+      "priority": "P0",
+      "readiness": "READY",
+      "expected_authority": "NONE_elevation",
+      "expected_retention_posture": "PRESERVE_WHERE_GOVERNANCE_PERMITS_when_applicable",
+      "spec_references": [
+        "docs/Z_SHADOW_SEMANTIC_GOLDENS_DESIGN_1.md#SH-A1",
+        "docs/Z_SHADOW_TAXONOMY_AND_CONTRACT_SPEC_1.md",
+        "docs/Z_SHADOW_STEWARD_P0_DECISIONS_1_1.md"
+      ],
+      "id": "SH-A1",
+      "invariant": "SHADOW ≠ OBSERVED",
+      "purpose": "Shadow remains Shadow class",
+      "shadow_class": "ANY_CANONICAL_V1",
+      "base_input": {
+        "state_class": "OBSERVED"
+      },
+      "shadow_input": {
+        "alternative": "valid_reasoning_shadow"
+      },
+      "expected_shadow_representation": {
+        "state_class": "SHADOW",
+        "field_role": "ShadowState"
+      },
+      "expected_base_state": {
+        "unchanged_class": "OBSERVED"
+      },
+      "prohibited_outcomes": [
+        "OBSERVED",
+        "reclassify_shadow_as_observation"
+      ],
+      "rationale": "Core identity wall"
+    },
+    {
+      "priority": "P0",
+      "readiness": "READY",
+      "expected_authority": "NONE_elevation",
+      "expected_retention_posture": "PRESERVE_WHERE_GOVERNANCE_PERMITS_when_applicable",
+      "spec_references": [
+        "docs/Z_SHADOW_SEMANTIC_GOLDENS_DESIGN_1.md#SH-A2",
+        "docs/Z_SHADOW_TAXONOMY_AND_CONTRACT_SPEC_1.md",
+        "docs/Z_SHADOW_STEWARD_P0_DECISIONS_1_1.md"
+      ],
+      "id": "SH-A2",
+      "invariant": "CREATING SHADOW DOES NOT MUTATE BASE",
+      "purpose": "Base preservation",
+      "base_input": {
+        "id": "S1"
+      },
+      "shadow_input": {
+        "derived_from": "S1"
+      },
+      "expected_base_state": {
+        "id": "S1",
+        "mutated": false
+      },
+      "expected_shadow_representation": {
+        "new_identity": true
+      },
+      "prohibited_outcomes": [
+        "base_overwrite",
+        "silent_base_mutation"
+      ],
+      "rationale": "Non-mutation constitutional"
+    },
+    {
+      "priority": "P0",
+      "readiness": "READY",
+      "expected_authority": "NONE_elevation",
+      "expected_retention_posture": "PRESERVE_WHERE_GOVERNANCE_PERMITS_when_applicable",
+      "spec_references": [
+        "docs/Z_SHADOW_SEMANTIC_GOLDENS_DESIGN_1.md#SH-A3",
+        "docs/Z_SHADOW_TAXONOMY_AND_CONTRACT_SPEC_1.md",
+        "docs/Z_SHADOW_STEWARD_P0_DECISIONS_1_1.md"
+      ],
+      "id": "SH-A3",
+      "invariant": "SHADOW HAS DISTINCT IDENTITY",
+      "purpose": "Shadow identity distinguishable from base",
+      "expected_shadow_representation": {
+        "identity_distinct_from_base": true
+      },
+      "prohibited_outcomes": [
+        "base_overwritten",
+        "base_relabeled_as_shadow"
+      ],
+      "rationale": "Charter coverage: distinct identity"
+    },
+    {
+      "priority": "P0",
+      "readiness": "READY",
+      "expected_authority": "NONE_elevation",
+      "expected_retention_posture": "PRESERVE_WHERE_GOVERNANCE_PERMITS_when_applicable",
+      "spec_references": [
+        "docs/Z_SHADOW_SEMANTIC_GOLDENS_DESIGN_1.md#SH-B1",
+        "docs/Z_SHADOW_TAXONOMY_AND_CONTRACT_SPEC_1.md",
+        "docs/Z_SHADOW_STEWARD_P0_DECISIONS_1_1.md"
+      ],
+      "id": "SH-B1",
+      "invariant": "BASE_REFERENCE_REQUIRED",
+      "purpose": "Explicit base present",
+      "base_input": {
+        "base_reference": "explicit"
+      },
+      "shadow_input": {
+        "valid_contract_fields": true
+      },
+      "expected_shadow_representation": {
+        "validity": "READY"
+      },
+      "expected_base_state": {
+        "reference_present": true
+      },
+      "prohibited_outcomes": [
+        "orphan_accepted"
+      ],
+      "rationale": "Base reference positive"
+    },
+    {
+      "priority": "P0",
+      "readiness": "READY",
+      "expected_authority": "NONE_elevation",
+      "expected_retention_posture": "PRESERVE_WHERE_GOVERNANCE_PERMITS_when_applicable",
+      "spec_references": [
+        "docs/Z_SHADOW_SEMANTIC_GOLDENS_DESIGN_1.md#SH-B2",
+        "docs/Z_SHADOW_TAXONOMY_AND_CONTRACT_SPEC_1.md",
+        "docs/Z_SHADOW_STEWARD_P0_DECISIONS_1_1.md"
+      ],
+      "id": "SH-B2",
+      "invariant": "Missing base → INVALID/INCOMPLETE",
+      "purpose": "No orphan Reasoning Shadow",
+      "base_input": {
+        "base_reference": "absent"
+      },
+      "expected_shadow_representation": {
+        "validity": [
+          "INVALID",
+          "INCOMPLETE"
+        ]
+      },
+      "prohibited_outcomes": [
+        "orphan_shadow_accepted_as_canonical"
+      ],
+      "rationale": "Base reference negative"
+    },
+    {
+      "priority": "P0",
+      "readiness": "READY",
+      "expected_authority": "NONE_elevation",
+      "expected_retention_posture": "PRESERVE_WHERE_GOVERNANCE_PERMITS_when_applicable",
+      "spec_references": [
+        "docs/Z_SHADOW_SEMANTIC_GOLDENS_DESIGN_1.md#SH-C1",
+        "docs/Z_SHADOW_TAXONOMY_AND_CONTRACT_SPEC_1.md",
+        "docs/Z_SHADOW_STEWARD_P0_DECISIONS_1_1.md"
+      ],
+      "id": "SH-C1",
+      "invariant": "ASSUMPTIONS_REQUIRED",
+      "purpose": "Assumptions explicitly declared",
+      "expected_assumptions": {
+        "declared": true,
+        "inspectable": true
+      },
+      "prohibited_outcomes": [
+        "hidden_assumption_set"
+      ],
+      "rationale": "Assumptions positive"
+    },
+    {
+      "priority": "P0",
+      "readiness": "READY",
+      "expected_authority": "NONE_elevation",
+      "expected_retention_posture": "PRESERVE_WHERE_GOVERNANCE_PERMITS_when_applicable",
+      "spec_references": [
+        "docs/Z_SHADOW_SEMANTIC_GOLDENS_DESIGN_1.md#SH-C2",
+        "docs/Z_SHADOW_TAXONOMY_AND_CONTRACT_SPEC_1.md",
+        "docs/Z_SHADOW_STEWARD_P0_DECISIONS_1_1.md"
+      ],
+      "id": "SH-C2",
+      "invariant": "NO_ADDITIONAL_ASSUMPTIONS may be explicit",
+      "purpose": "Explicit empty-additional posture",
+      "expected_assumptions": {
+        "value": "NO_ADDITIONAL_ASSUMPTIONS"
+      },
+      "expected_shadow_representation": {
+        "validity": "READY_where_spec_permits"
+      },
+      "prohibited_outcomes": [
+        "absent_assumptions_field_treated_as_ok"
+      ],
+      "rationale": "Explicit no-additional better than hidden"
+    },
+    {
+      "priority": "P0",
+      "readiness": "READY",
+      "expected_authority": "NONE_elevation",
+      "expected_retention_posture": "PRESERVE_WHERE_GOVERNANCE_PERMITS_when_applicable",
+      "spec_references": [
+        "docs/Z_SHADOW_SEMANTIC_GOLDENS_DESIGN_1.md#SH-C3",
+        "docs/Z_SHADOW_TAXONOMY_AND_CONTRACT_SPEC_1.md",
+        "docs/Z_SHADOW_STEWARD_P0_DECISIONS_1_1.md"
+      ],
+      "id": "SH-C3",
+      "invariant": "HIDDEN_ASSUMPTIONS → INCOMPLETE",
+      "purpose": "Undeclared changed assumption",
+      "preconditions": [
+        "shadow_behavior_depends_on_undeclared_changed_assumption"
+      ],
+      "expected_shadow_representation": {
+        "validity": "INCOMPLETE"
+      },
+      "prohibited_outcomes": [
+        "canonical_acceptance",
+        "auto_invent_assumptions"
+      ],
+      "rationale": "Hidden assumptions wall"
+    },
+    {
+      "priority": "P0",
+      "readiness": "READY",
+      "expected_authority": "NONE_elevation",
+      "expected_retention_posture": "PRESERVE_WHERE_GOVERNANCE_PERMITS_when_applicable",
+      "spec_references": [
+        "docs/Z_SHADOW_SEMANTIC_GOLDENS_DESIGN_1.md#SH-D1",
+        "docs/Z_SHADOW_TAXONOMY_AND_CONTRACT_SPEC_1.md",
+        "docs/Z_SHADOW_STEWARD_P0_DECISIONS_1_1.md"
+      ],
+      "id": "SH-D1",
+      "invariant": "PURPOSE_REQUIRED",
+      "purpose": "Purpose present",
+      "expected_purpose": {
+        "present": true
+      },
+      "prohibited_outcomes": [
+        "purpose_absent_accepted"
+      ],
+      "rationale": "Purpose positive"
+    },
+    {
+      "priority": "P0",
+      "readiness": "READY",
+      "expected_authority": "NONE_elevation",
+      "expected_retention_posture": "PRESERVE_WHERE_GOVERNANCE_PERMITS_when_applicable",
+      "spec_references": [
+        "docs/Z_SHADOW_SEMANTIC_GOLDENS_DESIGN_1.md#SH-D2",
+        "docs/Z_SHADOW_TAXONOMY_AND_CONTRACT_SPEC_1.md",
+        "docs/Z_SHADOW_STEWARD_P0_DECISIONS_1_1.md"
+      ],
+      "id": "SH-D2",
+      "invariant": "Missing purpose → INVALID/INCOMPLETE",
+      "purpose": "Purpose absent",
+      "expected_purpose": {
+        "present": false
+      },
+      "expected_shadow_representation": {
+        "validity": [
+          "INVALID",
+          "INCOMPLETE"
+        ]
+      },
+      "prohibited_outcomes": [
+        "purpose_optional_for_canonical"
+      ],
+      "rationale": "Purpose negative"
+    },
+    {
+      "priority": "P0",
+      "readiness": "READY",
+      "expected_authority": "NONE_elevation",
+      "expected_retention_posture": "PRESERVE_WHERE_GOVERNANCE_PERMITS_when_applicable",
+      "spec_references": [
+        "docs/Z_SHADOW_SEMANTIC_GOLDENS_DESIGN_1.md#SH-D3",
+        "docs/Z_SHADOW_TAXONOMY_AND_CONTRACT_SPEC_1.md",
+        "docs/Z_SHADOW_STEWARD_P0_DECISIONS_1_1.md"
+      ],
+      "id": "SH-D3",
+      "invariant": "Purpose ≠ class",
+      "purpose": "RISK_ANALYSIS does not create RISK class",
+      "shadow_class": "ALTERNATIVE_STATE",
+      "expected_purpose": {
+        "value": "RISK_ANALYSIS"
+      },
+      "expected_shadow_representation": {
+        "class": "ALTERNATIVE_STATE"
+      },
+      "prohibited_outcomes": [
+        "automatic_RISK_base_class"
+      ],
+      "rationale": "Purpose does not redefine class"
+    },
+    {
+      "priority": "P0",
+      "readiness": "READY",
+      "expected_authority": "NONE_elevation",
+      "expected_retention_posture": "PRESERVE_WHERE_GOVERNANCE_PERMITS_when_applicable",
+      "spec_references": [
+        "docs/Z_SHADOW_SEMANTIC_GOLDENS_DESIGN_1.md#SH-E2",
+        "docs/Z_SHADOW_TAXONOMY_AND_CONTRACT_SPEC_1.md",
+        "docs/Z_SHADOW_STEWARD_P0_DECISIONS_1_1.md"
+      ],
+      "id": "SH-E2",
+      "invariant": "AI provenance preserved",
+      "purpose": "AI-proposed Shadow retains AI provenance",
+      "shadow_class": "AI_PROPOSED",
+      "expected_provenance": {
+        "origin": "AI_PROPOSED"
+      },
+      "prohibited_outcomes": [
+        "trust_uplift",
+        "provenance_erased"
+      ],
+      "rationale": "AI provenance wall"
+    },
+    {
+      "priority": "P0",
+      "readiness": "READY",
+      "expected_authority": "NONE_elevation",
+      "expected_retention_posture": "PRESERVE_WHERE_GOVERNANCE_PERMITS_when_applicable",
+      "spec_references": [
+        "docs/Z_SHADOW_SEMANTIC_GOLDENS_DESIGN_1.md#SH-E3",
+        "docs/Z_SHADOW_TAXONOMY_AND_CONTRACT_SPEC_1.md",
+        "docs/Z_SHADOW_STEWARD_P0_DECISIONS_1_1.md"
+      ],
+      "id": "SH-E3",
+      "invariant": "SIMULATION_OUTPUT ≠ SHADOW AUTOMATICALLY",
+      "purpose": "Simulation result alone is not Shadow",
+      "base_input": {
+        "simulation_result": "R"
+      },
+      "shadow_input": {
+        "explicit_shadow_registration": false
+      },
+      "expected_shadow_representation": {
+        "is_shadow": false
+      },
+      "expected_provenance": {
+        "may_be": "SIMULATION_DERIVED"
+      },
+      "prohibited_outcomes": [
+        "automatic_shadow_promotion"
+      ],
+      "rationale": "Simulation boundary"
+    },
+    {
+      "priority": "P0",
+      "readiness": "READY",
+      "expected_authority": "NONE_elevation",
+      "expected_retention_posture": "PRESERVE_WHERE_GOVERNANCE_PERMITS_when_applicable",
+      "spec_references": [
+        "docs/Z_SHADOW_SEMANTIC_GOLDENS_DESIGN_1.md#SH-F1",
+        "docs/Z_SHADOW_TAXONOMY_AND_CONTRACT_SPEC_1.md",
+        "docs/Z_SHADOW_STEWARD_P0_DECISIONS_1_1.md"
+      ],
+      "id": "SH-F1",
+      "invariant": "DIFFERENCE_EXPLANATION_REQUIRED",
+      "purpose": "Difference answers available",
+      "expected_difference_explanation": {
+        "what_differs": "required_where_applicable",
+        "why": "required_where_applicable",
+        "assumptions_changed": "required_where_applicable",
+        "evidence_shared": "required_where_applicable",
+        "evidence_differs": "required_where_applicable"
+      },
+      "prohibited_outcomes": [
+        "silent_undifferenced_canonical"
+      ],
+      "rationale": "Difference contract positive"
+    },
+    {
+      "priority": "P0",
+      "readiness": "READY",
+      "expected_authority": "NONE_elevation",
+      "expected_retention_posture": "PRESERVE_WHERE_GOVERNANCE_PERMITS_when_applicable",
+      "spec_references": [
+        "docs/Z_SHADOW_SEMANTIC_GOLDENS_DESIGN_1.md#SH-F2",
+        "docs/Z_SHADOW_TAXONOMY_AND_CONTRACT_SPEC_1.md",
+        "docs/Z_SHADOW_STEWARD_P0_DECISIONS_1_1.md"
+      ],
+      "id": "SH-F2",
+      "invariant": "Missing difference → INCOMPLETE",
+      "purpose": "No auto-invent differences",
+      "expected_difference_explanation": {
+        "present": false
+      },
+      "expected_shadow_representation": {
+        "validity": "INCOMPLETE"
+      },
+      "prohibited_outcomes": [
+        "auto_invent_differences"
+      ],
+      "rationale": "Difference contract negative"
+    },
+    {
+      "priority": "P0",
+      "readiness": "READY",
+      "expected_authority": "NONE_elevation",
+      "expected_retention_posture": "PRESERVE_WHERE_GOVERNANCE_PERMITS_when_applicable",
+      "spec_references": [
+        "docs/Z_SHADOW_SEMANTIC_GOLDENS_DESIGN_1.md#SH-G1",
+        "docs/Z_SHADOW_TAXONOMY_AND_CONTRACT_SPEC_1.md",
+        "docs/Z_SHADOW_STEWARD_P0_DECISIONS_1_1.md"
+      ],
+      "id": "SH-G1",
+      "invariant": "Counterfactual changed assumption explicit",
+      "purpose": "What if X had not occurred",
+      "shadow_class": "COUNTERFACTUAL",
+      "base_input": {
+        "fact": "X_occurred"
+      },
+      "shadow_input": {
+        "hypothesis": "X_had_not_occurred"
+      },
+      "expected_assumptions": {
+        "changed": [
+          "X"
+        ],
+        "explicit": true
+      },
+      "expected_shadow_representation": {
+        "class": "COUNTERFACTUAL"
+      },
+      "prohibited_outcomes": [
+        "implicit_changed_assumption"
+      ],
+      "rationale": "Counterfactual positive"
+    },
+    {
+      "priority": "P0",
+      "readiness": "READY",
+      "expected_authority": "NONE_elevation",
+      "expected_retention_posture": "PRESERVE_WHERE_GOVERNANCE_PERMITS_when_applicable",
+      "spec_references": [
+        "docs/Z_SHADOW_SEMANTIC_GOLDENS_DESIGN_1.md#SH-G2",
+        "docs/Z_SHADOW_TAXONOMY_AND_CONTRACT_SPEC_1.md",
+        "docs/Z_SHADOW_STEWARD_P0_DECISIONS_1_1.md"
+      ],
+      "id": "SH-G2",
+      "invariant": "COUNTERFACTUAL ≠ CAUSAL PROOF",
+      "purpose": "No causality from assumption flip alone",
+      "shadow_class": "COUNTERFACTUAL",
+      "expected_shadow_representation": {
+        "role": "alternative_reasoning"
+      },
+      "prohibited_outcomes": [
+        "claim_X_caused_Y_solely_from_shadow_delta"
+      ],
+      "rationale": "Causal proof wall"
+    },
+    {
+      "priority": "P0",
+      "readiness": "READY",
+      "expected_authority": "NONE_elevation",
+      "expected_retention_posture": "PRESERVE_WHERE_GOVERNANCE_PERMITS_when_applicable",
+      "spec_references": [
+        "docs/Z_SHADOW_SEMANTIC_GOLDENS_DESIGN_1.md#SH-H1",
+        "docs/Z_SHADOW_TAXONOMY_AND_CONTRACT_SPEC_1.md",
+        "docs/Z_SHADOW_STEWARD_P0_DECISIONS_1_1.md"
+      ],
+      "id": "SH-H1",
+      "invariant": "ALTERNATIVE_STATE is canonical v1",
+      "purpose": "Legitimate alternative vs base",
+      "shadow_class": "ALTERNATIVE_STATE",
+      "expected_shadow_representation": {
+        "class": "ALTERNATIVE_STATE"
+      },
+      "expected_base_state": {
+        "reference_retained": true
+      },
+      "prohibited_outcomes": [
+        "probability_required"
+      ],
+      "rationale": "Alternative-State class"
+    },
+    {
+      "priority": "P0",
+      "readiness": "READY",
+      "expected_authority": "NONE_elevation",
+      "expected_retention_posture": "PRESERVE_WHERE_GOVERNANCE_PERMITS_when_applicable",
+      "spec_references": [
+        "docs/Z_SHADOW_SEMANTIC_GOLDENS_DESIGN_1.md#SH-H3",
+        "docs/Z_SHADOW_TAXONOMY_AND_CONTRACT_SPEC_1.md",
+        "docs/Z_SHADOW_STEWARD_P0_DECISIONS_1_1.md"
+      ],
+      "id": "SH-H3",
+      "invariant": "Alternative does not imply probability",
+      "purpose": "No invented probability",
+      "shadow_class": "ALTERNATIVE_STATE",
+      "prohibited_outcomes": [
+        "shadow_probability",
+        "plausibility_as_probability"
+      ],
+      "rationale": "No probability invented"
+    },
+    {
+      "priority": "P0",
+      "readiness": "READY",
+      "expected_authority": "NONE_elevation",
+      "expected_retention_posture": "PRESERVE_WHERE_GOVERNANCE_PERMITS_when_applicable",
+      "spec_references": [
+        "docs/Z_SHADOW_SEMANTIC_GOLDENS_DESIGN_1.md#SH-I2",
+        "docs/Z_SHADOW_TAXONOMY_AND_CONTRACT_SPEC_1.md",
+        "docs/Z_SHADOW_STEWARD_P0_DECISIONS_1_1.md"
+      ],
+      "id": "SH-I2",
+      "invariant": "AI SHADOW ≠ OBSERVATION ≠ CANON ≠ AUTHORITY",
+      "purpose": "AI Shadow walls (covers I2–I4)",
+      "shadow_class": "AI_PROPOSED",
+      "expected_provenance": {
+        "origin": "AI_PROPOSED"
+      },
+      "scenarios": [
+        {
+          "id": "I2",
+          "prohibited": [
+            "OBSERVED"
+          ]
+        },
+        {
+          "id": "I3",
+          "prohibited": [
+            "automatic_canon"
+          ]
+        },
+        {
+          "id": "I4",
+          "prohibited": [
+            "authorize",
+            "deploy",
+            "override_Steward"
+          ]
+        }
+      ],
+      "prohibited_outcomes": [
+        "OBSERVED",
+        "automatic_canon",
+        "authorize",
+        "deploy",
+        "override_Steward"
+      ],
+      "rationale": "Design: I2 multi-scenario covers I2–I4"
+    },
+    {
+      "priority": "P0",
+      "readiness": "READY",
+      "expected_authority": "NONE_elevation",
+      "expected_retention_posture": "PRESERVE_WHERE_GOVERNANCE_PERMITS_when_applicable",
+      "spec_references": [
+        "docs/Z_SHADOW_SEMANTIC_GOLDENS_DESIGN_1.md#SH-J1",
+        "docs/Z_SHADOW_TAXONOMY_AND_CONTRACT_SPEC_1.md",
+        "docs/Z_SHADOW_STEWARD_P0_DECISIONS_1_1.md"
+      ],
+      "id": "SH-J1",
+      "invariant": "PREDICTION ≠ SHADOW AUTOMATICALLY",
+      "purpose": "Prediction without Shadow registration",
+      "base_input": {
+        "prediction_present": true,
+        "shadow_registration": false
+      },
+      "expected_shadow_representation": {
+        "is_shadow": false,
+        "class": "PREDICTION"
+      },
+      "prohibited_outcomes": [
+        "auto_classify_prediction_as_shadow"
+      ],
+      "rationale": "Prediction boundary"
+    },
+    {
+      "priority": "P0",
+      "readiness": "READY",
+      "expected_authority": "NONE_elevation",
+      "expected_retention_posture": "PRESERVE_WHERE_GOVERNANCE_PERMITS_when_applicable",
+      "spec_references": [
+        "docs/Z_SHADOW_SEMANTIC_GOLDENS_DESIGN_1.md#SH-K1",
+        "docs/Z_SHADOW_TAXONOMY_AND_CONTRACT_SPEC_1.md",
+        "docs/Z_SHADOW_STEWARD_P0_DECISIONS_1_1.md"
+      ],
+      "id": "SH-K1",
+      "invariant": "SIMULATION_OUTPUT ≠ SHADOW AUTOMATICALLY",
+      "purpose": "Simulation result alone",
+      "expected_shadow_representation": {
+        "is_shadow": false
+      },
+      "expected_provenance": {
+        "may_be": "SIMULATION_DERIVED"
+      },
+      "prohibited_outcomes": [
+        "automatic_shadow"
+      ],
+      "rationale": "Simulation boundary"
+    },
+    {
+      "priority": "P0",
+      "readiness": "READY",
+      "expected_authority": "NONE_elevation",
+      "expected_retention_posture": "PRESERVE_WHERE_GOVERNANCE_PERMITS_when_applicable",
+      "spec_references": [
+        "docs/Z_SHADOW_SEMANTIC_GOLDENS_DESIGN_1.md#SH-L1",
+        "docs/Z_SHADOW_TAXONOMY_AND_CONTRACT_SPEC_1.md",
+        "docs/Z_SHADOW_STEWARD_P0_DECISIONS_1_1.md"
+      ],
+      "id": "SH-L1",
+      "invariant": "CONTROL_BRANCH ≠ SHADOW",
+      "purpose": "IF/ELSE remains control flow",
+      "base_input": {
+        "control": "IF A THEN B ELSE C"
+      },
+      "expected_shadow_representation": {
+        "is_shadow": false,
+        "branches": "control_only"
+      },
+      "prohibited_outcomes": [
+        "automatic_shadow_from_else"
+      ],
+      "rationale": "Control branch wall"
+    },
+    {
+      "priority": "P0",
+      "readiness": "READY",
+      "expected_authority": "NONE_elevation",
+      "expected_retention_posture": "PRESERVE_WHERE_GOVERNANCE_PERMITS_when_applicable",
+      "spec_references": [
+        "docs/Z_SHADOW_SEMANTIC_GOLDENS_DESIGN_1.md#SH-L2",
+        "docs/Z_SHADOW_TAXONOMY_AND_CONTRACT_SPEC_1.md",
+        "docs/Z_SHADOW_STEWARD_P0_DECISIONS_1_1.md"
+      ],
+      "id": "SH-L2",
+      "invariant": "CREATE_SHADOW ≠ ELSE",
+      "purpose": "Only explicit Shadow op may create Shadow",
+      "preconditions": [
+        "conceptual_CREATE_SHADOW_after_branch"
+      ],
+      "expected_shadow_representation": {
+        "requires_explicit_shadow_operation": true
+      },
+      "expected_lifecycle": "architecture_only",
+      "prohibited_outcomes": [
+        "ELSE_equals_CREATE_SHADOW",
+        "runtime_syntax"
+      ],
+      "rationale": "Charter coverage: CREATE_SHADOW ≠ ELSE; runtime NONE"
+    },
+    {
+      "priority": "P0",
+      "readiness": "READY",
+      "expected_authority": "NONE_elevation",
+      "expected_retention_posture": "PRESERVE_WHERE_GOVERNANCE_PERMITS_when_applicable",
+      "spec_references": [
+        "docs/Z_SHADOW_SEMANTIC_GOLDENS_DESIGN_1.md#SH-M1",
+        "docs/Z_SHADOW_TAXONOMY_AND_CONTRACT_SPEC_1.md",
+        "docs/Z_SHADOW_STEWARD_P0_DECISIONS_1_1.md"
+      ],
+      "id": "SH-M1",
+      "invariant": "REPLICA ≠ SHADOW",
+      "purpose": "Replica classification",
+      "expected_shadow_representation": {
+        "is_reasoning_shadow": false,
+        "class": "REPLICA"
+      },
+      "prohibited_outcomes": [
+        "replica_as_reasoning_shadow"
+      ],
+      "rationale": "Replica boundary"
+    },
+    {
+      "priority": "P0",
+      "readiness": "READY",
+      "expected_authority": "NONE_elevation",
+      "expected_retention_posture": "PRESERVE_WHERE_GOVERNANCE_PERMITS_when_applicable",
+      "spec_references": [
+        "docs/Z_SHADOW_SEMANTIC_GOLDENS_DESIGN_1.md#SH-N1",
+        "docs/Z_SHADOW_TAXONOMY_AND_CONTRACT_SPEC_1.md",
+        "docs/Z_SHADOW_STEWARD_P0_DECISIONS_1_1.md"
+      ],
+      "id": "SH-N1",
+      "invariant": "BOOLEAN_NOT ≠ SHADOW",
+      "purpose": "Boolean negation only",
+      "expected_shadow_representation": {
+        "is_shadow": false,
+        "operation": "boolean_not"
+      },
+      "prohibited_outcomes": [
+        "boolean_not_as_shadow"
+      ],
+      "rationale": "Boolean boundary"
+    },
+    {
+      "priority": "P0",
+      "readiness": "READY",
+      "expected_authority": "NONE_elevation",
+      "expected_retention_posture": "PRESERVE_WHERE_GOVERNANCE_PERMITS_when_applicable",
+      "spec_references": [
+        "docs/Z_SHADOW_SEMANTIC_GOLDENS_DESIGN_1.md#SH-N2",
+        "docs/Z_SHADOW_TAXONOMY_AND_CONTRACT_SPEC_1.md",
+        "docs/Z_SHADOW_STEWARD_P0_DECISIONS_1_1.md"
+      ],
+      "id": "SH-N2",
+      "invariant": "MATHEMATICAL_INVERSE ≠ SHADOW",
+      "purpose": "Inverse is math only",
+      "expected_shadow_representation": {
+        "is_shadow": false,
+        "operation": "mathematical_inverse"
+      },
+      "prohibited_outcomes": [
+        "inverse_as_formula_shadow",
+        "Shadow(F)_invented"
+      ],
+      "rationale": "Mathematical inverse boundary"
+    },
+    {
+      "priority": "P0",
+      "readiness": "READY",
+      "expected_authority": "NONE_elevation",
+      "expected_retention_posture": "PRESERVE_WHERE_GOVERNANCE_PERMITS_when_applicable",
+      "spec_references": [
+        "docs/Z_SHADOW_SEMANTIC_GOLDENS_DESIGN_1.md#SH-P1",
+        "docs/Z_SHADOW_TAXONOMY_AND_CONTRACT_SPEC_1.md",
+        "docs/Z_SHADOW_STEWARD_P0_DECISIONS_1_1.md"
+      ],
+      "id": "SH-P1",
+      "invariant": "RISK purpose ≠ RISK base class",
+      "purpose": "Risk as purpose on ALTERNATIVE_STATE",
+      "shadow_class": "ALTERNATIVE_STATE",
+      "expected_purpose": {
+        "value": "RISK_ANALYSIS"
+      },
+      "expected_shadow_representation": {
+        "class": "ALTERNATIVE_STATE"
+      },
+      "prohibited_outcomes": [
+        "automatic_RISK_base_class",
+        "risk_scoring"
+      ],
+      "rationale": "Risk placement"
+    },
+    {
+      "priority": "P0",
+      "readiness": "READY",
+      "expected_authority": "NONE_elevation",
+      "expected_retention_posture": "PRESERVE_WHERE_GOVERNANCE_PERMITS_when_applicable",
+      "spec_references": [
+        "docs/Z_SHADOW_SEMANTIC_GOLDENS_DESIGN_1.md#SH-P2",
+        "docs/Z_SHADOW_TAXONOMY_AND_CONTRACT_SPEC_1.md",
+        "docs/Z_SHADOW_STEWARD_P0_DECISIONS_1_1.md"
+      ],
+      "id": "SH-P2",
+      "invariant": "ADVERSARIAL purpose ≠ ADVERSARIAL base class",
+      "purpose": "Adversarial as purpose/specialization",
+      "shadow_class": [
+        "COUNTERFACTUAL",
+        "ALTERNATIVE_STATE"
+      ],
+      "expected_purpose": {
+        "value": "ADVERSARIAL_CHALLENGE"
+      },
+      "expected_shadow_representation": {
+        "v1_base_class_created": false
+      },
+      "prohibited_outcomes": [
+        "adversarial_v1_base_class"
+      ],
+      "rationale": "Charter coverage: adversarial placement"
+    },
+    {
+      "priority": "P0",
+      "readiness": "READY",
+      "expected_authority": "NONE_elevation",
+      "expected_retention_posture": "PRESERVE_WHERE_GOVERNANCE_PERMITS_when_applicable",
+      "spec_references": [
+        "docs/Z_SHADOW_SEMANTIC_GOLDENS_DESIGN_1.md#SH-P3",
+        "docs/Z_SHADOW_TAXONOMY_AND_CONTRACT_SPEC_1.md",
+        "docs/Z_SHADOW_STEWARD_P0_DECISIONS_1_1.md"
+      ],
+      "id": "SH-P3",
+      "invariant": "IMPACT purpose ≠ IMPACT base class",
+      "purpose": "Impact as module/purpose",
+      "expected_purpose": {
+        "value": "IMPACT_ANALYSIS"
+      },
+      "expected_shadow_representation": {
+        "v1_base_class_created": false,
+        "impact_collapsed_into_engine": false
+      },
+      "prohibited_outcomes": [
+        "impact_v1_base_class",
+        "impact_engine_collapse"
+      ],
+      "rationale": "Charter coverage: impact placement"
+    },
+    {
+      "priority": "P0",
+      "readiness": "READY",
+      "expected_authority": "NONE_elevation",
+      "expected_retention_posture": "PRESERVE_WHERE_GOVERNANCE_PERMITS_when_applicable",
+      "spec_references": [
+        "docs/Z_SHADOW_SEMANTIC_GOLDENS_DESIGN_1.md#SH-Q4",
+        "docs/Z_SHADOW_TAXONOMY_AND_CONTRACT_SPEC_1.md",
+        "docs/Z_SHADOW_STEWARD_P0_DECISIONS_1_1.md"
+      ],
+      "id": "SH-Q4",
+      "invariant": "Shadow match to reality ≠ OBSERVED transition",
+      "purpose": "New observation; historical Shadow remains Shadow",
+      "expected_lifecycle": "remains_SHADOW",
+      "expected_shadow_representation": {
+        "class_retained": "SHADOW"
+      },
+      "prohibited_outcomes": [
+        "lifecycle_to_OBSERVED",
+        "retroactive_observation"
+      ],
+      "rationale": "Lifecycle preserves Shadow identity"
+    },
+    {
+      "priority": "P0",
+      "readiness": "READY",
+      "expected_authority": "NONE_elevation",
+      "expected_retention_posture": "PRESERVE_WHERE_GOVERNANCE_PERMITS",
+      "spec_references": [
+        "docs/Z_SHADOW_SEMANTIC_GOLDENS_DESIGN_1.md#SH-R1",
+        "docs/Z_SHADOW_TAXONOMY_AND_CONTRACT_SPEC_1.md",
+        "docs/Z_SHADOW_STEWARD_P0_DECISIONS_1_1.md"
+      ],
+      "id": "SH-R1",
+      "invariant": "Rejected Shadow auditable where governance permits",
+      "purpose": "Retention default",
+      "expected_lifecycle": "REJECTED",
+      "expected_shadow_representation": {
+        "is_observation": false
+      },
+      "prohibited_outcomes": [
+        "automatic_delete",
+        "infinite_retention_claim"
+      ],
+      "rationale": "Retention audit posture"
+    },
+    {
+      "priority": "P0",
+      "readiness": "READY",
+      "expected_authority": "NONE_elevation",
+      "expected_retention_posture": "PRESERVE_WHERE_GOVERNANCE_PERMITS_when_applicable",
+      "spec_references": [
+        "docs/Z_SHADOW_SEMANTIC_GOLDENS_DESIGN_1.md#SH-S2",
+        "docs/Z_SHADOW_TAXONOMY_AND_CONTRACT_SPEC_1.md",
+        "docs/Z_SHADOW_STEWARD_P0_DECISIONS_1_1.md"
+      ],
+      "id": "SH-S2",
+      "invariant": "MORE SHADOWS ≠ MORE TRUTH",
+      "purpose": "Count does not increase truth",
+      "prohibited_outcomes": [
+        "automatic_truth_increase",
+        "majority_truth"
+      ],
+      "rationale": "Multiple Shadows wall"
+    },
+    {
+      "priority": "P0",
+      "readiness": "READY",
+      "expected_authority": "NONE_elevation",
+      "expected_retention_posture": "PRESERVE_WHERE_GOVERNANCE_PERMITS_when_applicable",
+      "spec_references": [
+        "docs/Z_SHADOW_SEMANTIC_GOLDENS_DESIGN_1.md#SH-S3",
+        "docs/Z_SHADOW_TAXONOMY_AND_CONTRACT_SPEC_1.md",
+        "docs/Z_SHADOW_STEWARD_P0_DECISIONS_1_1.md"
+      ],
+      "id": "SH-S3",
+      "invariant": "SHADOW CONSENSUS ≠ STEWARD DECISION",
+      "purpose": "Agreement representable without Steward authority",
+      "prohibited_outcomes": [
+        "steward_decision_implied"
+      ],
+      "rationale": "Consensus wall"
+    },
+    {
+      "priority": "P0",
+      "readiness": "READY",
+      "expected_authority": "NONE_elevation",
+      "expected_retention_posture": "PRESERVE_WHERE_GOVERNANCE_PERMITS_when_applicable",
+      "spec_references": [
+        "docs/Z_SHADOW_SEMANTIC_GOLDENS_DESIGN_1.md#SH-U2",
+        "docs/Z_SHADOW_TAXONOMY_AND_CONTRACT_SPEC_1.md",
+        "docs/Z_SHADOW_STEWARD_P0_DECISIONS_1_1.md"
+      ],
+      "id": "SH-U2",
+      "invariant": "Z_INFINITY ≠ UNBOUNDED_SHADOW_GENERATION",
+      "purpose": "Forever generation not authorized",
+      "preconditions": [
+        "request_generate_every_possible_shadow_forever"
+      ],
+      "expected_shadow_representation": {
+        "authorized": false
+      },
+      "prohibited_outcomes": [
+        "unbounded_generation"
+      ],
+      "rationale": "Boundedness"
+    },
+    {
+      "priority": "P0",
+      "readiness": "READY",
+      "expected_authority": "NONE_elevation",
+      "expected_retention_posture": "PRESERVE_WHERE_GOVERNANCE_PERMITS_when_applicable",
+      "spec_references": [
+        "docs/Z_SHADOW_SEMANTIC_GOLDENS_DESIGN_1.md#SH-V2",
+        "docs/Z_SHADOW_TAXONOMY_AND_CONTRACT_SPEC_1.md",
+        "docs/Z_SHADOW_STEWARD_P0_DECISIONS_1_1.md"
+      ],
+      "id": "SH-V2",
+      "invariant": "SHADOW_SPACE_COMPLETENESS not generally claimable",
+      "purpose": "All possible Shadows considered without formal space",
+      "prohibited_outcomes": [
+        "all_possible_shadows_considered_claim_without_bounded_formal_space"
+      ],
+      "rationale": "Completeness wall"
+    },
+    {
+      "priority": "P0",
+      "readiness": "READY",
+      "expected_authority": "NONE_elevation",
+      "expected_retention_posture": "PRESERVE_WHERE_GOVERNANCE_PERMITS_when_applicable",
+      "spec_references": [
+        "docs/Z_SHADOW_SEMANTIC_GOLDENS_DESIGN_1.md#SH-W3",
+        "docs/Z_SHADOW_TAXONOMY_AND_CONTRACT_SPEC_1.md",
+        "docs/Z_SHADOW_STEWARD_P0_DECISIONS_1_1.md"
+      ],
+      "id": "SH-W3",
+      "invariant": "SHADOW ≠ AUTHORITY",
+      "purpose": "AI consensus does not grant Steward authority",
+      "prohibited_outcomes": [
+        "authorize",
+        "deploy",
+        "override_Steward",
+        "steward_decision_from_consensus"
+      ],
+      "rationale": "Authority wall"
+    },
+    {
+      "priority": "P0",
+      "readiness": "READY",
+      "expected_authority": "NONE_elevation",
+      "expected_retention_posture": "PRESERVE_WHERE_GOVERNANCE_PERMITS_when_applicable",
+      "spec_references": [
+        "docs/Z_SHADOW_SEMANTIC_GOLDENS_DESIGN_1.md#SH-X1",
+        "docs/Z_SHADOW_TAXONOMY_AND_CONTRACT_SPEC_1.md",
+        "docs/Z_SHADOW_STEWARD_P0_DECISIONS_1_1.md"
+      ],
+      "id": "SH-X1",
+      "invariant": "ShadowState ≠ ObservedState",
+      "purpose": "C360 field distinction",
+      "expected_shadow_representation": {
+        "field_role": "ShadowState"
+      },
+      "expected_base_state": {
+        "field_role": "ObservedState"
+      },
+      "prohibited_outcomes": [
+        "collapse_shadow_into_observed",
+        "c360_f4_mutation"
+      ],
+      "rationale": "Continuous 360 boundary; pack untouched"
+    },
+    {
+      "priority": "P0",
+      "readiness": "READY",
+      "expected_authority": "NONE_elevation",
+      "expected_retention_posture": "PRESERVE_WHERE_GOVERNANCE_PERMITS_when_applicable",
+      "spec_references": [
+        "docs/Z_SHADOW_SEMANTIC_GOLDENS_DESIGN_1.md#SH-Y1",
+        "docs/Z_SHADOW_TAXONOMY_AND_CONTRACT_SPEC_1.md",
+        "docs/Z_SHADOW_STEWARD_P0_DECISIONS_1_1.md"
+      ],
+      "id": "SH-Y1",
+      "invariant": "Base Micro and Shadow Micro remain separate",
+      "purpose": "Parallel Micro lanes",
+      "expected_shadow_representation": {
+        "lane": "SHADOW_MICRO"
+      },
+      "expected_base_state": {
+        "lane": "BASE_MICRO"
+      },
+      "prohibited_outcomes": [
+        "lane_merge"
+      ],
+      "rationale": "MMM Micro lane wall"
+    },
+    {
+      "priority": "P0",
+      "readiness": "READY",
+      "expected_authority": "NONE_elevation",
+      "expected_retention_posture": "PRESERVE_WHERE_GOVERNANCE_PERMITS_when_applicable",
+      "spec_references": [
+        "docs/Z_SHADOW_SEMANTIC_GOLDENS_DESIGN_1.md#SH-Y4",
+        "docs/Z_SHADOW_TAXONOMY_AND_CONTRACT_SPEC_1.md",
+        "docs/Z_SHADOW_STEWARD_P0_DECISIONS_1_1.md"
+      ],
+      "id": "SH-Y4",
+      "invariant": "Base Macro ↔ Shadow Macro compare allowed; unlabeled merge prohibited",
+      "purpose": "Comparison without merge",
+      "expected_shadow_representation": {
+        "compare_allowed": true
+      },
+      "prohibited_outcomes": [
+        "unlabeled_merge_into_observed_macro"
+      ],
+      "rationale": "MMM compare wall"
+    },
+    {
+      "priority": "P0",
+      "readiness": "READY",
+      "expected_authority": "NONE_elevation",
+      "expected_retention_posture": "PRESERVE_WHERE_GOVERNANCE_PERMITS_when_applicable",
+      "spec_references": [
+        "docs/Z_SHADOW_SEMANTIC_GOLDENS_DESIGN_1.md#SH-Y5",
+        "docs/Z_SHADOW_TAXONOMY_AND_CONTRACT_SPEC_1.md",
+        "docs/Z_SHADOW_STEWARD_P0_DECISIONS_1_1.md"
+      ],
+      "id": "SH-Y5",
+      "invariant": "MACRO SHADOW remains traceable",
+      "purpose": "Macro Shadow lineage",
+      "expected_shadow_representation": {
+        "traceable_to": [
+          "lower_grain_shadow_refs",
+          "base_refs",
+          "assumptions",
+          "provenance"
+        ]
+      },
+      "prohibited_outcomes": [
+        "orphan_macro_shadow",
+        "aggregation_runtime"
+      ],
+      "rationale": "Macro Shadow traceability"
+    },
+    {
+      "priority": "P0",
+      "readiness": "READY",
+      "expected_authority": "NONE_elevation",
+      "expected_retention_posture": "PRESERVE_WHERE_GOVERNANCE_PERMITS_when_applicable",
+      "spec_references": [
+        "docs/Z_SHADOW_SEMANTIC_GOLDENS_DESIGN_1.md#SH-AC1",
+        "docs/Z_SHADOW_TAXONOMY_AND_CONTRACT_SPEC_1.md",
+        "docs/Z_SHADOW_STEWARD_P0_DECISIONS_1_1.md"
+      ],
+      "id": "SH-AC1",
+      "invariant": "Constitutional explainability answers",
+      "purpose": "Required explainability questions answerable",
+      "expected_difference_explanation": {
+        "explainability_bundle": "required"
+      },
+      "expected_shadow_representation": {
+        "can_answer": [
+          "base",
+          "class",
+          "why_created",
+          "assumptions",
+          "what_changed",
+          "evidence_shared",
+          "evidence_differs",
+          "producer",
+          "uncertainty",
+          "lifecycle",
+          "authority"
+        ]
+      },
+      "prohibited_outcomes": [
+        "explanation_engine_required_now"
+      ],
+      "rationale": "Explainability architecture"
+    },
+    {
+      "priority": "P0",
+      "readiness": "READY",
+      "expected_authority": "NONE_elevation",
+      "expected_retention_posture": "PRESERVE_WHERE_GOVERNANCE_PERMITS_when_applicable",
+      "spec_references": [
+        "docs/Z_SHADOW_SEMANTIC_GOLDENS_DESIGN_1.md#SH-AD1",
+        "docs/Z_SHADOW_TAXONOMY_AND_CONTRACT_SPEC_1.md",
+        "docs/Z_SHADOW_STEWARD_P0_DECISIONS_1_1.md"
+      ],
+      "id": "SH-AD1",
+      "invariant": "CREATE_SHADOW architectural eligibility",
+      "purpose": "Conceptual request with all preconditions",
+      "preconditions": [
+        "base_reference",
+        "purpose",
+        "assumptions",
+        "provenance",
+        "bounded_scope",
+        "non_mutation_of_base",
+        "authority_ceiling_preserved"
+      ],
+      "expected_shadow_representation": {
+        "architectural_eligibility": true,
+        "runtime": "NONE"
+      },
+      "prohibited_outcomes": [
+        "parser",
+        "dsl",
+        "api",
+        "function",
+        "syntax_chosen"
+      ],
+      "rationale": "CREATE_SHADOW preconditions positive"
+    },
+    {
+      "priority": "P0",
+      "readiness": "READY",
+      "expected_authority": "NONE_elevation",
+      "expected_retention_posture": "PRESERVE_WHERE_GOVERNANCE_PERMITS_when_applicable",
+      "spec_references": [
+        "docs/Z_SHADOW_SEMANTIC_GOLDENS_DESIGN_1.md#SH-AD6",
+        "docs/Z_SHADOW_TAXONOMY_AND_CONTRACT_SPEC_1.md",
+        "docs/Z_SHADOW_STEWARD_P0_DECISIONS_1_1.md"
+      ],
+      "id": "SH-AD6",
+      "invariant": "CREATE_SHADOW must not mutate base",
+      "purpose": "Candidate that would mutate base",
+      "preconditions": [
+        "candidate_would_mutate_base"
+      ],
+      "expected_shadow_representation": {
+        "authorized": false
+      },
+      "expected_base_state": {
+        "mutated": false
+      },
+      "prohibited_outcomes": [
+        "base_mutation_via_create_shadow"
+      ],
+      "rationale": "CREATE_SHADOW non-mutation"
+    }
+  ]
+}
