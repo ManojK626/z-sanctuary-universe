@@ -1,0 +1,1057 @@
+{
+  "schema": "z_logic_semantic_goldens_v1",
+  "golden_pack_id": "z-logic-semantic-v1",
+  "family": "z-logic-control-grammar",
+  "version": "1.0.0",
+  "gate": "Z-SANCTUARY-Z-LOGIC-SEMANTIC-GOLDENS-ACCEPT-ENCODE-1",
+  "maturity_target": "F4",
+  "maturity_claim": "F4_CANONICAL_EXPECTED_VECTORS",
+  "implementation_required_to_exist": false,
+  "z_logic_runtime_exists": false,
+  "parser_exists": false,
+  "dsl_exists": false,
+  "create_shadow_runtime_exists": false,
+  "goldens_define_expectation_for_future_implementation": true,
+  "executable": false,
+  "path_convention_note": "Placed under data/formula_semantic_goldens/ to match Continuous 360 / Micro-Meso-Macro / Shadow hub convention.",
+  "steward_policy": {
+    "binary_predicates": true,
+    "multi_valued_state_outcomes": true,
+    "custom_multi_valued_truth_table": false,
+    "or_inclusive": true,
+    "xor": "DEFERRED",
+    "hold_block_stop_distinct": true,
+    "control_branch_equals_shadow": false,
+    "create_shadow": "ARCHITECTURAL_PRIMITIVE_ONLY",
+    "create_shadow_equals_else": false,
+    "human_gate_equals_steward_gate": false,
+    "gate_pass_equals_deploy": false,
+    "loops_must_be_bounded": true,
+    "event_time_binding": "DEFERRED_P1",
+    "retry": "DEFERRED_P1",
+    "timeout": "DEFERRED_P1",
+    "short_circuit_runtime_semantics": "DEFERRED",
+    "operator_precedence": "DEFERRED_TO_FUTURE_GRAMMAR",
+    "side_effect_model": "DEFERRED_TO_RUNTIME_CHARTER",
+    "nested_shadow_control_mapping": "DEFERRED",
+    "control_scoring_invented": false,
+    "custom_truth_table_invented": false
+  },
+  "source_spec": [
+    "docs/Z_LOGIC_SEMANTIC_GOLDENS_DESIGN_1.md",
+    "docs/Z_LOGIC_AND_CONTROL_GRAMMAR_SPEC_0.md",
+    "docs/Z_LOGIC_STEWARD_P0_DECISIONS_1_1.md"
+  ],
+  "design_recommended_note": "Design enumerated curated pack is 41 unique READY P0 vectors. Encode follows that list exactly. PARTIAL/BLOCKED gaps excluded.",
+  "accepted_vector_ids": [
+    "ZL-A1",
+    "ZL-A3",
+    "ZL-A4",
+    "ZL-A5",
+    "ZL-B1",
+    "ZL-B2",
+    "ZL-C1",
+    "ZL-C3",
+    "ZL-D1",
+    "ZL-E3",
+    "ZL-F3",
+    "ZL-G3",
+    "ZL-G4",
+    "ZL-I3",
+    "ZL-I4",
+    "ZL-J2",
+    "ZL-K2",
+    "ZL-K3",
+    "ZL-O1",
+    "ZL-P1",
+    "ZL-P3",
+    "ZL-Q3",
+    "ZL-S3",
+    "ZL-T2",
+    "ZL-W4",
+    "ZL-X1",
+    "ZL-Y1",
+    "ZL-Z1",
+    "ZL-AA1",
+    "ZL-AA7",
+    "ZL-AC1",
+    "ZL-AD2",
+    "ZL-AD4",
+    "ZL-AE1",
+    "ZL-AF1",
+    "ZL-AH2",
+    "ZL-AK2",
+    "ZL-AL1",
+    "ZL-AL2",
+    "ZL-AM1",
+    "ZL-AO1"
+  ],
+  "vector_count": 41,
+  "deferred": {
+    "partial_excluded": [
+      "ZL-E4",
+      "ZL-H1",
+      "ZL-R1",
+      "ZL-U1",
+      "ZL-V1",
+      "ZL-AP1",
+      "ZL-AQ1",
+      "ZL-AR1"
+    ],
+    "blocked_excluded": [
+      "ZL-AB1"
+    ],
+    "ready_p0_deferred_redundant_or_expand": [
+      "ZL-A2",
+      "ZL-C2",
+      "ZL-D2",
+      "ZL-E1",
+      "ZL-E2",
+      "ZL-F1",
+      "ZL-F2",
+      "ZL-G1",
+      "ZL-G2",
+      "ZL-G5",
+      "ZL-I1",
+      "ZL-I2",
+      "ZL-J1",
+      "ZL-J3",
+      "ZL-K1",
+      "ZL-L1",
+      "ZL-L2",
+      "ZL-L3",
+      "ZL-L4",
+      "ZL-L5",
+      "ZL-M1",
+      "ZL-M2",
+      "ZL-M3",
+      "ZL-M4",
+      "ZL-N1",
+      "ZL-N2",
+      "ZL-N3",
+      "ZL-N4",
+      "ZL-P2",
+      "ZL-P4",
+      "ZL-Q1",
+      "ZL-Q2",
+      "ZL-Q4",
+      "ZL-S1",
+      "ZL-S2",
+      "ZL-S4",
+      "ZL-T1",
+      "ZL-W1",
+      "ZL-W2",
+      "ZL-W3",
+      "ZL-X2",
+      "ZL-Y2",
+      "ZL-AA2",
+      "ZL-AA3",
+      "ZL-AA4",
+      "ZL-AA5",
+      "ZL-AA6",
+      "ZL-AC2",
+      "ZL-AC3",
+      "ZL-AD1",
+      "ZL-AD3",
+      "ZL-AE2",
+      "ZL-AF2",
+      "ZL-AG1",
+      "ZL-AG2",
+      "ZL-AH1",
+      "ZL-AI1",
+      "ZL-AJ1",
+      "ZL-AJ2",
+      "ZL-AJ3",
+      "ZL-AK1",
+      "ZL-AL3",
+      "ZL-AL4",
+      "ZL-AN1"
+    ]
+  },
+  "exclusions": {
+    "ZL-E4": {
+      "decision": "DEFER_PARTIAL",
+      "reason": "AND evaluation order / short-circuit deferred"
+    },
+    "ZL-H1": {
+      "decision": "DEFER_PARTIAL",
+      "reason": "XOR = DEFERRED"
+    },
+    "ZL-R1": {
+      "decision": "DEFER_PARTIAL",
+      "reason": "EVENT_TIME_BINDING = DEFERRED_P1"
+    },
+    "ZL-U1": {
+      "decision": "DEFER_PARTIAL",
+      "reason": "RETRY = DEFERRED_P1"
+    },
+    "ZL-V1": {
+      "decision": "DEFER_PARTIAL",
+      "reason": "TIMEOUT = DEFERRED_P1"
+    },
+    "ZL-AP1": {
+      "decision": "DEFER_PARTIAL",
+      "reason": "SHORT_CIRCUIT_RUNTIME_SEMANTICS = DEFERRED"
+    },
+    "ZL-AQ1": {
+      "decision": "DEFER_PARTIAL",
+      "reason": "OPERATOR_PRECEDENCE deferred"
+    },
+    "ZL-AR1": {
+      "decision": "DEFER_PARTIAL",
+      "reason": "SIDE_EFFECT MODEL deferred to runtime charter"
+    },
+    "ZL-AB1": {
+      "decision": "DEFER_BLOCKED",
+      "reason": "NESTED_SHADOW_CONTROL_MAPPING = DEFERRED"
+    }
+  },
+  "vectors": [
+    {
+      "priority": "P0",
+      "readiness": "READY",
+      "expected_authority": "NONE_elevation",
+      "spec_references": [
+        "docs/Z_LOGIC_SEMANTIC_GOLDENS_DESIGN_1.md#ZL-A1",
+        "docs/Z_LOGIC_AND_CONTROL_GRAMMAR_SPEC_0.md",
+        "docs/Z_LOGIC_STEWARD_P0_DECISIONS_1_1.md"
+      ],
+      "id": "ZL-A1",
+      "purpose": "TRUE predicate under well-defined evidence",
+      "control_construct": "PREDICATE",
+      "input_state": {
+        "evidence": "satisfies_declared_condition"
+      },
+      "predicate_result": "TRUE",
+      "expected_control_outcome": "predicate_TRUE",
+      "prohibited_outcomes": [
+        "TRUE_equals_AUTHORIZATION",
+        "TRUE_equals_DEPLOY",
+        "TRUE_equals_PRODUCTION_AUTHORITY"
+      ],
+      "rationale": "Binary TRUE does not grant authority"
+    },
+    {
+      "priority": "P0",
+      "readiness": "READY",
+      "expected_authority": "NONE_elevation",
+      "spec_references": [
+        "docs/Z_LOGIC_SEMANTIC_GOLDENS_DESIGN_1.md#ZL-A3",
+        "docs/Z_LOGIC_AND_CONTROL_GRAMMAR_SPEC_0.md",
+        "docs/Z_LOGIC_STEWARD_P0_DECISIONS_1_1.md"
+      ],
+      "id": "ZL-A3",
+      "purpose": "UNKNOWN input must not coerce to Boolean",
+      "control_construct": "PREDICATE",
+      "input_state": {
+        "evidence": "UNKNOWN"
+      },
+      "expected_failure_posture": "insufficient_evidence_explicit",
+      "prohibited_outcomes": [
+        "UNKNOWN_to_FALSE",
+        "UNKNOWN_to_TRUE"
+      ],
+      "rationale": "Insufficient evidence non-coercion"
+    },
+    {
+      "priority": "P0",
+      "readiness": "READY",
+      "expected_authority": "NONE_elevation",
+      "spec_references": [
+        "docs/Z_LOGIC_SEMANTIC_GOLDENS_DESIGN_1.md#ZL-A4",
+        "docs/Z_LOGIC_AND_CONTROL_GRAMMAR_SPEC_0.md",
+        "docs/Z_LOGIC_STEWARD_P0_DECISIONS_1_1.md"
+      ],
+      "id": "ZL-A4",
+      "purpose": "MISSING input must not coerce to FALSE/ZERO",
+      "control_construct": "PREDICATE",
+      "input_state": {
+        "evidence": "MISSING"
+      },
+      "expected_failure_posture": "insufficient_evidence_explicit",
+      "prohibited_outcomes": [
+        "MISSING_to_FALSE",
+        "MISSING_to_ZERO"
+      ],
+      "rationale": "Missing evidence non-coercion"
+    },
+    {
+      "priority": "P0",
+      "readiness": "READY",
+      "expected_authority": "NONE_elevation",
+      "spec_references": [
+        "docs/Z_LOGIC_SEMANTIC_GOLDENS_DESIGN_1.md#ZL-A5",
+        "docs/Z_LOGIC_AND_CONTROL_GRAMMAR_SPEC_0.md",
+        "docs/Z_LOGIC_STEWARD_P0_DECISIONS_1_1.md"
+      ],
+      "id": "ZL-A5",
+      "purpose": "CONFLICTING input remains explicit",
+      "control_construct": "PREDICATE",
+      "input_state": {
+        "evidence": "CONFLICTING"
+      },
+      "expected_state_posture": "conflict_preserved",
+      "prohibited_outcomes": [
+        "automatic_Boolean_coercion"
+      ],
+      "rationale": "Conflict non-coercion"
+    },
+    {
+      "priority": "P0",
+      "readiness": "READY",
+      "expected_authority": "NONE_elevation",
+      "spec_references": [
+        "docs/Z_LOGIC_SEMANTIC_GOLDENS_DESIGN_1.md#ZL-B1",
+        "docs/Z_LOGIC_AND_CONTROL_GRAMMAR_SPEC_0.md",
+        "docs/Z_LOGIC_STEWARD_P0_DECISIONS_1_1.md"
+      ],
+      "id": "ZL-B1",
+      "purpose": "Boolean result distinct from control outcome",
+      "control_construct": "PREDICATE_THEN_OUTCOME",
+      "predicate_result": "TRUE",
+      "expected_control_outcome": "domain_may_map_to_HOLD_BLOCK_STOP_or_DOMAIN_STATE_only_per_explicit_contract",
+      "prohibited_outcomes": [
+        "BOOLEAN_RESULT_equals_CONTROL_STATE"
+      ],
+      "rationale": "BOOLEAN RESULT ≠ CONTROL STATE"
+    },
+    {
+      "priority": "P0",
+      "readiness": "READY",
+      "expected_authority": "NONE_elevation",
+      "spec_references": [
+        "docs/Z_LOGIC_SEMANTIC_GOLDENS_DESIGN_1.md#ZL-B2",
+        "docs/Z_LOGIC_AND_CONTROL_GRAMMAR_SPEC_0.md",
+        "docs/Z_LOGIC_STEWARD_P0_DECISIONS_1_1.md"
+      ],
+      "id": "ZL-B2",
+      "purpose": "No custom multi-valued truth table",
+      "control_construct": "PREDICATE",
+      "prohibited_outcomes": [
+        "MAYBE_TRUE",
+        "PARTIAL_TRUE",
+        "UNKNOWN_TRUE",
+        "custom_truth_table"
+      ],
+      "rationale": "CUSTOM_MULTI_VALUED_TRUTH_TABLE = NO"
+    },
+    {
+      "priority": "P0",
+      "readiness": "READY",
+      "expected_authority": "NONE_elevation",
+      "spec_references": [
+        "docs/Z_LOGIC_SEMANTIC_GOLDENS_DESIGN_1.md#ZL-C1",
+        "docs/Z_LOGIC_AND_CONTROL_GRAMMAR_SPEC_0.md",
+        "docs/Z_LOGIC_STEWARD_P0_DECISIONS_1_1.md"
+      ],
+      "id": "ZL-C1",
+      "purpose": "IF TRUE makes THEN candidate eligible",
+      "control_construct": "IF",
+      "predicate_result": "TRUE",
+      "expected_control_outcome": "THEN_path_eligible",
+      "prohibited_outcomes": [
+        "automatic_authorization"
+      ],
+      "rationale": "IF TRUE ≠ AUTHORIZATION"
+    },
+    {
+      "priority": "P0",
+      "readiness": "READY",
+      "expected_authority": "NONE_elevation",
+      "spec_references": [
+        "docs/Z_LOGIC_SEMANTIC_GOLDENS_DESIGN_1.md#ZL-C3",
+        "docs/Z_LOGIC_AND_CONTROL_GRAMMAR_SPEC_0.md",
+        "docs/Z_LOGIC_STEWARD_P0_DECISIONS_1_1.md"
+      ],
+      "id": "ZL-C3",
+      "purpose": "TRUE with closed governance gate",
+      "control_construct": "IF",
+      "predicate_result": "TRUE",
+      "preconditions": [
+        "governance_gate_closed"
+      ],
+      "expected_control_outcome": "candidate_cannot_bypass_governance",
+      "prohibited_outcomes": [
+        "IF_TRUE_equals_GATE_PASS_bypass"
+      ],
+      "rationale": "IF TRUE ≠ GATE PASS unless scoped gate contract"
+    },
+    {
+      "priority": "P0",
+      "readiness": "READY",
+      "expected_authority": "NONE_elevation",
+      "spec_references": [
+        "docs/Z_LOGIC_SEMANTIC_GOLDENS_DESIGN_1.md#ZL-D1",
+        "docs/Z_LOGIC_AND_CONTROL_GRAMMAR_SPEC_0.md",
+        "docs/Z_LOGIC_STEWARD_P0_DECISIONS_1_1.md"
+      ],
+      "id": "ZL-D1",
+      "purpose": "ELSE is control path only",
+      "control_construct": "ELSE",
+      "expected_control_outcome": "control_path",
+      "expected_shadow_posture": "NOT_SHADOW",
+      "prohibited_outcomes": [
+        "SHADOW",
+        "COUNTERFACTUAL",
+        "BOOLEAN_NOT",
+        "MATHEMATICAL_INVERSE"
+      ],
+      "rationale": "ELSE ≠ SHADOW"
+    },
+    {
+      "priority": "P0",
+      "readiness": "READY",
+      "expected_authority": "NONE_elevation",
+      "spec_references": [
+        "docs/Z_LOGIC_SEMANTIC_GOLDENS_DESIGN_1.md#ZL-E3",
+        "docs/Z_LOGIC_AND_CONTROL_GRAMMAR_SPEC_0.md",
+        "docs/Z_LOGIC_STEWARD_P0_DECISIONS_1_1.md"
+      ],
+      "id": "ZL-E3",
+      "purpose": "AND ≠ multiplication",
+      "control_construct": "AND",
+      "prohibited_outcomes": [
+        "AND_as_multiplication",
+        "AND_to_times"
+      ],
+      "rationale": "Operator separation"
+    },
+    {
+      "priority": "P0",
+      "readiness": "READY",
+      "expected_authority": "NONE_elevation",
+      "spec_references": [
+        "docs/Z_LOGIC_SEMANTIC_GOLDENS_DESIGN_1.md#ZL-F3",
+        "docs/Z_LOGIC_AND_CONTROL_GRAMMAR_SPEC_0.md",
+        "docs/Z_LOGIC_STEWARD_P0_DECISIONS_1_1.md"
+      ],
+      "id": "ZL-F3",
+      "purpose": "OR remains inclusive, not XOR",
+      "control_construct": "OR",
+      "predicate_result": "TRUE_OR_TRUE_equals_TRUE",
+      "prohibited_outcomes": [
+        "OR_redefined_as_XOR"
+      ],
+      "rationale": "OR = INCLUSIVE_OR"
+    },
+    {
+      "priority": "P0",
+      "readiness": "READY",
+      "expected_authority": "NONE_elevation",
+      "spec_references": [
+        "docs/Z_LOGIC_SEMANTIC_GOLDENS_DESIGN_1.md#ZL-G3",
+        "docs/Z_LOGIC_AND_CONTROL_GRAMMAR_SPEC_0.md",
+        "docs/Z_LOGIC_STEWARD_P0_DECISIONS_1_1.md"
+      ],
+      "id": "ZL-G3",
+      "purpose": "NOT ≠ Shadow",
+      "control_construct": "NOT",
+      "expected_shadow_posture": "NOT_SHADOW",
+      "prohibited_outcomes": [
+        "NOT_creates_Shadow"
+      ],
+      "rationale": "NOT ≠ SHADOW"
+    },
+    {
+      "priority": "P0",
+      "readiness": "READY",
+      "expected_authority": "NONE_elevation",
+      "spec_references": [
+        "docs/Z_LOGIC_SEMANTIC_GOLDENS_DESIGN_1.md#ZL-G4",
+        "docs/Z_LOGIC_AND_CONTROL_GRAMMAR_SPEC_0.md",
+        "docs/Z_LOGIC_STEWARD_P0_DECISIONS_1_1.md"
+      ],
+      "id": "ZL-G4",
+      "purpose": "NOT ≠ mathematical inverse",
+      "control_construct": "NOT",
+      "prohibited_outcomes": [
+        "NOT_as_mathematical_inverse"
+      ],
+      "rationale": "NOT ≠ MATHEMATICAL_INVERSE"
+    },
+    {
+      "priority": "P0",
+      "readiness": "READY",
+      "expected_authority": "NONE_elevation",
+      "spec_references": [
+        "docs/Z_LOGIC_SEMANTIC_GOLDENS_DESIGN_1.md#ZL-I3",
+        "docs/Z_LOGIC_AND_CONTROL_GRAMMAR_SPEC_0.md",
+        "docs/Z_LOGIC_STEWARD_P0_DECISIONS_1_1.md"
+      ],
+      "id": "ZL-I3",
+      "purpose": "Unhandled MATCH ≠ success",
+      "control_construct": "MATCH",
+      "preconditions": [
+        "no_case_match",
+        "no_fallback"
+      ],
+      "expected_control_outcome": "not_success",
+      "expected_failure_posture": "unhandled_explicit",
+      "prohibited_outcomes": [
+        "unhandled_MATCH_as_success"
+      ],
+      "rationale": "UNHANDLED_MATCH ≠ SUCCESS"
+    },
+    {
+      "priority": "P0",
+      "readiness": "READY",
+      "expected_authority": "NONE_elevation",
+      "spec_references": [
+        "docs/Z_LOGIC_SEMANTIC_GOLDENS_DESIGN_1.md#ZL-I4",
+        "docs/Z_LOGIC_AND_CONTROL_GRAMMAR_SPEC_0.md",
+        "docs/Z_LOGIC_STEWARD_P0_DECISIONS_1_1.md"
+      ],
+      "id": "ZL-I4",
+      "purpose": "MATCH result ≠ deploy",
+      "control_construct": "MATCH",
+      "prohibited_outcomes": [
+        "MATCH_authorizes_deploy"
+      ],
+      "rationale": "MATCH ≠ AUTHORITY"
+    },
+    {
+      "priority": "P0",
+      "readiness": "READY",
+      "expected_authority": "NONE_elevation",
+      "spec_references": [
+        "docs/Z_LOGIC_SEMANTIC_GOLDENS_DESIGN_1.md#ZL-J2",
+        "docs/Z_LOGIC_AND_CONTROL_GRAMMAR_SPEC_0.md",
+        "docs/Z_LOGIC_STEWARD_P0_DECISIONS_1_1.md"
+      ],
+      "id": "ZL-J2",
+      "purpose": "REQUIRE failure is visible",
+      "control_construct": "REQUIRE",
+      "preconditions": [
+        "required_precondition_absent"
+      ],
+      "expected_failure_posture": "explicit_non_eligibility",
+      "prohibited_outcomes": [
+        "silent_continue"
+      ],
+      "rationale": "REQUIRE_FAILURE ≠ SILENT_CONTINUE"
+    },
+    {
+      "priority": "P0",
+      "readiness": "READY",
+      "expected_authority": "NONE_elevation",
+      "spec_references": [
+        "docs/Z_LOGIC_SEMANTIC_GOLDENS_DESIGN_1.md#ZL-K2",
+        "docs/Z_LOGIC_AND_CONTROL_GRAMMAR_SPEC_0.md",
+        "docs/Z_LOGIC_STEWARD_P0_DECISIONS_1_1.md"
+      ],
+      "id": "ZL-K2",
+      "purpose": "GUARD failure is visible",
+      "control_construct": "GUARD",
+      "preconditions": [
+        "guard_condition_fails"
+      ],
+      "expected_failure_posture": "visible_failure",
+      "prohibited_outcomes": [
+        "silent_continue"
+      ],
+      "rationale": "GUARD_FAILURE ≠ SILENT_CONTINUE"
+    },
+    {
+      "priority": "P0",
+      "readiness": "READY",
+      "expected_authority": "NONE_elevation",
+      "spec_references": [
+        "docs/Z_LOGIC_SEMANTIC_GOLDENS_DESIGN_1.md#ZL-K3",
+        "docs/Z_LOGIC_AND_CONTROL_GRAMMAR_SPEC_0.md",
+        "docs/Z_LOGIC_STEWARD_P0_DECISIONS_1_1.md"
+      ],
+      "id": "ZL-K3",
+      "purpose": "GUARD ≠ REQUIRE",
+      "control_construct": "GUARD_REQUIRE_DISTINCTION",
+      "expected_control_outcome": {
+        "REQUIRE": "eligibility_precondition",
+        "GUARD": "protective_boundary"
+      },
+      "prohibited_outcomes": [
+        "REQUIRE_equals_GUARD"
+      ],
+      "rationale": "REQUIRE ≠ GUARD"
+    },
+    {
+      "priority": "P0",
+      "readiness": "READY",
+      "expected_authority": "NONE_elevation",
+      "spec_references": [
+        "docs/Z_LOGIC_SEMANTIC_GOLDENS_DESIGN_1.md#ZL-O1",
+        "docs/Z_LOGIC_AND_CONTROL_GRAMMAR_SPEC_0.md",
+        "docs/Z_LOGIC_STEWARD_P0_DECISIONS_1_1.md"
+      ],
+      "id": "ZL-O1",
+      "purpose": "HOLD / BLOCK / STOP comparative distinction",
+      "control_construct": "HOLD_BLOCK_STOP",
+      "expected_control_outcome": {
+        "HOLD": "pause_preserve_state",
+        "BLOCK": "prohibit_candidate_path",
+        "STOP": "terminate_bounded_path"
+      },
+      "expected_history_posture": "preserved",
+      "prohibited_outcomes": [
+        "interchangeable_meanings",
+        "HOLD_equals_BLOCK",
+        "HOLD_equals_STOP",
+        "BLOCK_equals_STOP"
+      ],
+      "rationale": "HOLD ≠ BLOCK ≠ STOP"
+    },
+    {
+      "priority": "P0",
+      "readiness": "READY",
+      "expected_authority": "NONE_elevation",
+      "spec_references": [
+        "docs/Z_LOGIC_SEMANTIC_GOLDENS_DESIGN_1.md#ZL-P1",
+        "docs/Z_LOGIC_AND_CONTROL_GRAMMAR_SPEC_0.md",
+        "docs/Z_LOGIC_STEWARD_P0_DECISIONS_1_1.md"
+      ],
+      "id": "ZL-P1",
+      "purpose": "Valid state transition with traceability",
+      "control_construct": "STATE_TRANSITION",
+      "input_state": {
+        "state": "S(n)"
+      },
+      "expected_state_posture": "S(n+1)_with_trace_to_S(n)_transition_reason_rule",
+      "expected_history_posture": "prior_retained",
+      "prohibited_outcomes": [
+        "silent_overwrite"
+      ],
+      "rationale": "STATE_TRANSITION ≠ SILENT_OVERWRITE"
+    },
+    {
+      "priority": "P0",
+      "readiness": "READY",
+      "expected_authority": "NONE_elevation",
+      "spec_references": [
+        "docs/Z_LOGIC_SEMANTIC_GOLDENS_DESIGN_1.md#ZL-P3",
+        "docs/Z_LOGIC_AND_CONTROL_GRAMMAR_SPEC_0.md",
+        "docs/Z_LOGIC_STEWARD_P0_DECISIONS_1_1.md"
+      ],
+      "id": "ZL-P3",
+      "purpose": "State change ≠ authority change",
+      "control_construct": "STATE_TRANSITION",
+      "prohibited_outcomes": [
+        "state_change_elevates_authority"
+      ],
+      "rationale": "STATE_CHANGE ≠ AUTHORITY_CHANGE"
+    },
+    {
+      "priority": "P0",
+      "readiness": "READY",
+      "expected_authority": "NONE_elevation",
+      "spec_references": [
+        "docs/Z_LOGIC_SEMANTIC_GOLDENS_DESIGN_1.md#ZL-Q3",
+        "docs/Z_LOGIC_AND_CONTROL_GRAMMAR_SPEC_0.md",
+        "docs/Z_LOGIC_STEWARD_P0_DECISIONS_1_1.md"
+      ],
+      "id": "ZL-Q3",
+      "purpose": "Event cannot bypass governance",
+      "control_construct": "EVENT",
+      "expected_control_outcome": "evaluation_may_occur_governance_required",
+      "prohibited_outcomes": [
+        "event_bypass_governance",
+        "EVENT_as_COMMAND",
+        "EVENT_as_AUTHORIZATION"
+      ],
+      "rationale": "EVENT ≠ COMMAND ≠ AUTHORIZATION"
+    },
+    {
+      "priority": "P0",
+      "readiness": "READY",
+      "expected_authority": "NONE_elevation",
+      "spec_references": [
+        "docs/Z_LOGIC_SEMANTIC_GOLDENS_DESIGN_1.md#ZL-S3",
+        "docs/Z_LOGIC_AND_CONTROL_GRAMMAR_SPEC_0.md",
+        "docs/Z_LOGIC_STEWARD_P0_DECISIONS_1_1.md"
+      ],
+      "id": "ZL-S3",
+      "purpose": "Unbounded loop not authorized",
+      "control_construct": "LOOP",
+      "preconditions": [
+        "unbounded_or_infinite_loop_request"
+      ],
+      "expected_control_outcome": "not_authorized",
+      "prohibited_outcomes": [
+        "unbounded_loop"
+      ],
+      "rationale": "Z_INFINITY ≠ UNBOUNDED_LOOP"
+    },
+    {
+      "priority": "P0",
+      "readiness": "READY",
+      "expected_authority": "NONE_elevation",
+      "spec_references": [
+        "docs/Z_LOGIC_SEMANTIC_GOLDENS_DESIGN_1.md#ZL-T2",
+        "docs/Z_LOGIC_AND_CONTROL_GRAMMAR_SPEC_0.md",
+        "docs/Z_LOGIC_STEWARD_P0_DECISIONS_1_1.md"
+      ],
+      "id": "ZL-T2",
+      "purpose": "WHILE without bound not authorized",
+      "control_construct": "WHILE",
+      "preconditions": [
+        "no_termination_contract"
+      ],
+      "expected_control_outcome": "not_authorized",
+      "prohibited_outcomes": [
+        "WHILE_without_bound"
+      ],
+      "rationale": "WHILE WITHOUT BOUND = NOT AUTHORIZED"
+    },
+    {
+      "priority": "P0",
+      "readiness": "READY",
+      "expected_authority": "NONE_elevation",
+      "spec_references": [
+        "docs/Z_LOGIC_SEMANTIC_GOLDENS_DESIGN_1.md#ZL-W4",
+        "docs/Z_LOGIC_AND_CONTROL_GRAMMAR_SPEC_0.md",
+        "docs/Z_LOGIC_STEWARD_P0_DECISIONS_1_1.md"
+      ],
+      "id": "ZL-W4",
+      "purpose": "Error ≠ silent success; failure provenance retained",
+      "control_construct": "TRY_CATCH",
+      "expected_failure_posture": "observable_with_provenance",
+      "prohibited_outcomes": [
+        "silent_success",
+        "silent_error_swallow"
+      ],
+      "rationale": "ERROR ≠ SILENT_SUCCESS"
+    },
+    {
+      "priority": "P0",
+      "readiness": "READY",
+      "expected_authority": "NONE_elevation",
+      "spec_references": [
+        "docs/Z_LOGIC_SEMANTIC_GOLDENS_DESIGN_1.md#ZL-X1",
+        "docs/Z_LOGIC_AND_CONTROL_GRAMMAR_SPEC_0.md",
+        "docs/Z_LOGIC_STEWARD_P0_DECISIONS_1_1.md"
+      ],
+      "id": "ZL-X1",
+      "purpose": "Unresolved Human Gate blocks progression",
+      "control_construct": "HUMAN_GATE",
+      "preconditions": [
+        "human_gate_required_unresolved"
+      ],
+      "expected_control_outcome": "cannot_progress_past_gate",
+      "prohibited_outcomes": [
+        "bypass_human_gate"
+      ],
+      "rationale": "Human Gate unresolved"
+    },
+    {
+      "priority": "P0",
+      "readiness": "READY",
+      "expected_authority": "NONE_elevation",
+      "spec_references": [
+        "docs/Z_LOGIC_SEMANTIC_GOLDENS_DESIGN_1.md#ZL-Y1",
+        "docs/Z_LOGIC_AND_CONTROL_GRAMMAR_SPEC_0.md",
+        "docs/Z_LOGIC_STEWARD_P0_DECISIONS_1_1.md"
+      ],
+      "id": "ZL-Y1",
+      "purpose": "Human Gate ≠ Steward Gate",
+      "control_construct": "STEWARD_GATE",
+      "preconditions": [
+        "steward_gate_required",
+        "only_generic_human_approval"
+      ],
+      "expected_control_outcome": "steward_not_satisfied_unless_domain_maps",
+      "prohibited_outcomes": [
+        "HUMAN_GATE_equals_STEWARD_GATE"
+      ],
+      "rationale": "HUMAN_GATE ≠ STEWARD_GATE"
+    },
+    {
+      "priority": "P0",
+      "readiness": "READY",
+      "expected_authority": "NONE_elevation",
+      "spec_references": [
+        "docs/Z_LOGIC_SEMANTIC_GOLDENS_DESIGN_1.md#ZL-Z1",
+        "docs/Z_LOGIC_AND_CONTROL_GRAMMAR_SPEC_0.md",
+        "docs/Z_LOGIC_STEWARD_P0_DECISIONS_1_1.md"
+      ],
+      "id": "ZL-Z1",
+      "purpose": "Gate PASS is scoped only",
+      "control_construct": "GATE_PASS",
+      "expected_control_outcome": "scoped_gate_condition_satisfied",
+      "prohibited_outcomes": [
+        "DEPLOY",
+        "PRODUCTION_AUTHORITY",
+        "GLOBAL_AUTHORIZATION"
+      ],
+      "rationale": "GATE_PASS ≠ DEPLOY"
+    },
+    {
+      "priority": "P0",
+      "readiness": "READY",
+      "expected_authority": "NONE_elevation",
+      "spec_references": [
+        "docs/Z_LOGIC_SEMANTIC_GOLDENS_DESIGN_1.md#ZL-AA1",
+        "docs/Z_LOGIC_AND_CONTROL_GRAMMAR_SPEC_0.md",
+        "docs/Z_LOGIC_STEWARD_P0_DECISIONS_1_1.md"
+      ],
+      "id": "ZL-AA1",
+      "purpose": "CREATE_SHADOW architectural eligibility",
+      "control_construct": "CREATE_SHADOW",
+      "preconditions": [
+        "base_reference",
+        "assumptions",
+        "purpose",
+        "provenance",
+        "bounded_scope",
+        "non_mutation",
+        "authority_ceiling"
+      ],
+      "expected_control_outcome": "architecturally_eligible",
+      "expected_shadow_posture": "architectural_only",
+      "prohibited_outcomes": [
+        "parser",
+        "dsl",
+        "runtime",
+        "syntax_chosen"
+      ],
+      "rationale": "CREATE_SHADOW architectural primitive only"
+    },
+    {
+      "priority": "P0",
+      "readiness": "READY",
+      "expected_authority": "NONE_elevation",
+      "spec_references": [
+        "docs/Z_LOGIC_SEMANTIC_GOLDENS_DESIGN_1.md#ZL-AA7",
+        "docs/Z_LOGIC_AND_CONTROL_GRAMMAR_SPEC_0.md",
+        "docs/Z_LOGIC_STEWARD_P0_DECISIONS_1_1.md"
+      ],
+      "id": "ZL-AA7",
+      "purpose": "ELSE ≠ CREATE_SHADOW",
+      "control_construct": "ELSE",
+      "expected_control_outcome": "control_branch",
+      "expected_shadow_posture": "NOT_SHADOW",
+      "prohibited_outcomes": [
+        "ELSE_as_CREATE_SHADOW",
+        "CREATE_SHADOW_equals_CONTROL_BRANCH"
+      ],
+      "rationale": "CREATE_SHADOW ≠ ELSE"
+    },
+    {
+      "priority": "P0",
+      "readiness": "READY",
+      "expected_authority": "NONE_elevation",
+      "spec_references": [
+        "docs/Z_LOGIC_SEMANTIC_GOLDENS_DESIGN_1.md#ZL-AC1",
+        "docs/Z_LOGIC_AND_CONTROL_GRAMMAR_SPEC_0.md",
+        "docs/Z_LOGIC_STEWARD_P0_DECISIONS_1_1.md"
+      ],
+      "id": "ZL-AC1",
+      "purpose": "Control branch ≠ Shadow",
+      "control_construct": "CONTROL_BRANCH",
+      "expected_shadow_posture": "NOT_SHADOW",
+      "prohibited_outcomes": [
+        "control_branch_as_Shadow"
+      ],
+      "rationale": "CONTROL_BRANCH ≠ SHADOW"
+    },
+    {
+      "priority": "P0",
+      "readiness": "READY",
+      "expected_authority": "NONE_elevation",
+      "spec_references": [
+        "docs/Z_LOGIC_SEMANTIC_GOLDENS_DESIGN_1.md#ZL-AD2",
+        "docs/Z_LOGIC_AND_CONTROL_GRAMMAR_SPEC_0.md",
+        "docs/Z_LOGIC_STEWARD_P0_DECISIONS_1_1.md"
+      ],
+      "id": "ZL-AD2",
+      "purpose": "ShadowState identity retained in evaluation",
+      "control_construct": "C360_IDENTITY",
+      "input_state": {
+        "field_role": "ShadowState"
+      },
+      "expected_state_posture": "ShadowState_retained",
+      "prohibited_outcomes": [
+        "collapse_to_Observed"
+      ],
+      "rationale": "C360 Shadow identity wall"
+    },
+    {
+      "priority": "P0",
+      "readiness": "READY",
+      "expected_authority": "NONE_elevation",
+      "spec_references": [
+        "docs/Z_LOGIC_SEMANTIC_GOLDENS_DESIGN_1.md#ZL-AD4",
+        "docs/Z_LOGIC_AND_CONTROL_GRAMMAR_SPEC_0.md",
+        "docs/Z_LOGIC_STEWARD_P0_DECISIONS_1_1.md"
+      ],
+      "id": "ZL-AD4",
+      "purpose": "Conflicting state not Boolean-coerced",
+      "control_construct": "C360_IDENTITY",
+      "input_state": {
+        "field_role": "CONFLICTING"
+      },
+      "expected_state_posture": "conflict_preserved",
+      "prohibited_outcomes": [
+        "Boolean_coercion"
+      ],
+      "rationale": "Conflicting remains Conflicting"
+    },
+    {
+      "priority": "P0",
+      "readiness": "READY",
+      "expected_authority": "NONE_elevation",
+      "spec_references": [
+        "docs/Z_LOGIC_SEMANTIC_GOLDENS_DESIGN_1.md#ZL-AE1",
+        "docs/Z_LOGIC_AND_CONTROL_GRAMMAR_SPEC_0.md",
+        "docs/Z_LOGIC_STEWARD_P0_DECISIONS_1_1.md"
+      ],
+      "id": "ZL-AE1",
+      "purpose": "Broader view ≠ higher authority",
+      "control_construct": "MMM",
+      "input_state": {
+        "grain": "MacroRepresentation"
+      },
+      "prohibited_outcomes": [
+        "authority_from_breadth_alone"
+      ],
+      "rationale": "BROADER VIEW ≠ HIGHER AUTHORITY"
+    },
+    {
+      "priority": "P0",
+      "readiness": "READY",
+      "expected_authority": "NONE_elevation",
+      "spec_references": [
+        "docs/Z_LOGIC_SEMANTIC_GOLDENS_DESIGN_1.md#ZL-AF1",
+        "docs/Z_LOGIC_AND_CONTROL_GRAMMAR_SPEC_0.md",
+        "docs/Z_LOGIC_STEWARD_P0_DECISIONS_1_1.md"
+      ],
+      "id": "ZL-AF1",
+      "purpose": "GGAESP GO ≠ deploy",
+      "control_construct": "GGAESP_ROUTE",
+      "input_state": {
+        "ggaesp_decision": "GO"
+      },
+      "expected_control_outcome": "may_route_GO",
+      "prohibited_outcomes": [
+        "GO_to_DEPLOY",
+        "GO_to_PRODUCTION_AUTHORITY"
+      ],
+      "rationale": "GGAESP semantics unchanged; GO ≠ DEPLOY"
+    },
+    {
+      "priority": "P0",
+      "readiness": "READY",
+      "expected_authority": "NONE_elevation",
+      "spec_references": [
+        "docs/Z_LOGIC_SEMANTIC_GOLDENS_DESIGN_1.md#ZL-AH2",
+        "docs/Z_LOGIC_AND_CONTROL_GRAMMAR_SPEC_0.md",
+        "docs/Z_LOGIC_STEWARD_P0_DECISIONS_1_1.md"
+      ],
+      "id": "ZL-AH2",
+      "purpose": "Swarm consensus ≠ Steward decision",
+      "control_construct": "SWARM",
+      "prohibited_outcomes": [
+        "swarm_consensus_satisfies_Steward_Gate",
+        "majority_truth"
+      ],
+      "rationale": "SWARM CONSENSUS ≠ STEWARD DECISION"
+    },
+    {
+      "priority": "P0",
+      "readiness": "READY",
+      "expected_authority": "NONE_elevation",
+      "spec_references": [
+        "docs/Z_LOGIC_SEMANTIC_GOLDENS_DESIGN_1.md#ZL-AK2",
+        "docs/Z_LOGIC_AND_CONTROL_GRAMMAR_SPEC_0.md",
+        "docs/Z_LOGIC_STEWARD_P0_DECISIONS_1_1.md"
+      ],
+      "id": "ZL-AK2",
+      "purpose": "Control flow ≠ Replica authorization",
+      "control_construct": "REPLICA_FABRIC",
+      "expected_control_outcome": "governed_lifecycle_required",
+      "prohibited_outcomes": [
+        "bypass_observe_propose_sandbox_verify_governance_human_creation_receipt"
+      ],
+      "rationale": "CONTROL_FLOW ≠ REPLICA_AUTHORIZATION"
+    },
+    {
+      "priority": "P0",
+      "readiness": "READY",
+      "expected_authority": "NONE_elevation",
+      "spec_references": [
+        "docs/Z_LOGIC_SEMANTIC_GOLDENS_DESIGN_1.md#ZL-AL1",
+        "docs/Z_LOGIC_AND_CONTROL_GRAMMAR_SPEC_0.md",
+        "docs/Z_LOGIC_STEWARD_P0_DECISIONS_1_1.md"
+      ],
+      "id": "ZL-AL1",
+      "purpose": "Predicate evaluation ≠ evidence mutation",
+      "control_construct": "PREDICATE",
+      "expected_state_posture": "evidence_unchanged",
+      "prohibited_outcomes": [
+        "predicate_mutates_source_evidence"
+      ],
+      "rationale": "PREDICATE_EVALUATION ≠ EVIDENCE_MUTATION"
+    },
+    {
+      "priority": "P0",
+      "readiness": "READY",
+      "expected_authority": "NONE_elevation",
+      "spec_references": [
+        "docs/Z_LOGIC_SEMANTIC_GOLDENS_DESIGN_1.md#ZL-AL2",
+        "docs/Z_LOGIC_AND_CONTROL_GRAMMAR_SPEC_0.md",
+        "docs/Z_LOGIC_STEWARD_P0_DECISIONS_1_1.md"
+      ],
+      "id": "ZL-AL2",
+      "purpose": "Branch selection ≠ source rewrite",
+      "control_construct": "BRANCH",
+      "expected_state_posture": "source_evidence_unchanged",
+      "prohibited_outcomes": [
+        "branch_selection_rewrites_source"
+      ],
+      "rationale": "BRANCH_SELECTION ≠ SOURCE_REWRITE"
+    },
+    {
+      "priority": "P0",
+      "readiness": "READY",
+      "expected_authority": "NONE_elevation",
+      "spec_references": [
+        "docs/Z_LOGIC_SEMANTIC_GOLDENS_DESIGN_1.md#ZL-AM1",
+        "docs/Z_LOGIC_AND_CONTROL_GRAMMAR_SPEC_0.md",
+        "docs/Z_LOGIC_STEWARD_P0_DECISIONS_1_1.md"
+      ],
+      "id": "ZL-AM1",
+      "purpose": "Compact authority ceiling walls",
+      "control_construct": "AUTHORITY_CEILING",
+      "prohibited_outcomes": [
+        "TRUE_as_AUTHORITY",
+        "FALSE_as_AUTHORITY",
+        "MATCH_as_AUTHORITY",
+        "GUARD_PASS_as_AUTHORITY",
+        "REQUIRE_PASS_as_AUTHORITY",
+        "HOLD_as_AUTHORITY",
+        "BLOCK_as_AUTHORITY",
+        "STOP_as_AUTHORITY",
+        "EVENT_as_AUTHORITY",
+        "STATE_TRANSITION_as_AUTHORITY"
+      ],
+      "rationale": "CONTROL RESULT ≠ AUTHORITY"
+    },
+    {
+      "priority": "P0",
+      "readiness": "READY",
+      "expected_authority": "NONE_elevation",
+      "spec_references": [
+        "docs/Z_LOGIC_SEMANTIC_GOLDENS_DESIGN_1.md#ZL-AO1",
+        "docs/Z_LOGIC_AND_CONTROL_GRAMMAR_SPEC_0.md",
+        "docs/Z_LOGIC_STEWARD_P0_DECISIONS_1_1.md"
+      ],
+      "id": "ZL-AO1",
+      "purpose": "Operator separation walls",
+      "control_construct": "OPERATOR_SEPARATION",
+      "prohibited_outcomes": [
+        "AND_as_multiply",
+        "OR_as_add",
+        "NOT_as_inverse",
+        "ELSE_as_SHADOW",
+        "MATCH_as_formula_operator"
+      ],
+      "rationale": "No operator overloading"
+    }
+  ]
+}
