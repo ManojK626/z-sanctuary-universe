@@ -1,20 +1,23 @@
 # Z-SANCTUARY-Z-LOGIC-AND-CONTROL-GRAMMAR-SPEC-0
 
-**Status:** Architectural control grammar · **F2 / partial F3** · **no runtime / no DSL / no parser**  
-**Date:** 2026-08-21  
-**Baseline HEAD:** `0daf6c2`  
+**Status:** Architectural control grammar · **F3 SPECIFICATION** · **no runtime / no DSL / no parser**  
+**Date:** 2026-08-22  
+**Baseline HEAD:** `0daf6c2` (refined at Steward P0 `eca21d3`+)  
 **Branch:** `cursor/zsanctuary/z-sdc-phase-0-architecture`  
-**Mode:** RECOVER · CLASSIFY · SPECIFY · NO IMPLEMENTATION
+**Mode:** RECOVER · CLASSIFY · SPECIFY · STEWARD P0 REFINED · NO IMPLEMENTATION  
+**Steward P0 receipt:** `docs/Z_LOGIC_STEWARD_P0_DECISIONS_1_1.md`
 
 ## Baseline
 
 | Field | Value |
 | --- | --- |
-| Expected HEAD | Do not assume — verified `0daf6c2` |
-| Prior | Continuous 360 Semantic Goldens Design 1.2 |
+| Expected HEAD | `0daf6c2` (original) · Steward refine from `eca21d3` |
+| Prior | Continuous 360 · Micro/Meso/Macro · Shadow F4 sealed |
+| Steward P0 | Recorded in companion receipt 1.1 |
 | Staged | NONE |
-| Dirt | Preserved (~182 porcelain lines) |
-| Artifacts | This document only |
+| Dirt | Preserved |
+| C360 / MMM / Shadow F4 packs | **NOT MODIFIED** |
+| Artifacts | Spec refinement + Steward receipt only |
 
 ## Purpose
 
@@ -67,7 +70,7 @@ FORMULA SEMANTICS  →  CONTROL LOGIC  →  PROGRAMMING SYNTAX
 
 ### HOLD / BLOCK / STOP recovery verdict
 
-**Distinct systems, not one unified enum yet:**
+**Historical recovery** (distinct systems, not one unified enum):
 
 | Term | Recovered sense | Do not alias |
 | --- | --- | --- |
@@ -75,7 +78,7 @@ FORMULA SEMANTICS  →  CONTROL LOGIC  →  PROGRAMMING SYNTAX
 | BLOCK | GGAESP deny candidate; enforcer BLOCK; StopGate state BLOCK | same word, multiple lanes |
 | STOP / STOP_GATE | Hard policy/consent pause | ≠ GGAESP HOLD |
 
-Unifying them requires Steward charter — **not** done silently here.
+**Steward P0** seals **generic Z Logic meanings** below without collapsing GGAESP / enforcer / STOP_GATE into one executable enum. GGAESP semantics **unchanged**.
 
 ---
 
@@ -88,16 +91,29 @@ Unifying them requires Steward charter — **not** done silently here.
 **Does not grant authority.**
 
 ```text
-IF condition
-THEN pathway
+IF predicate
+THEN candidate path
+IF_TRUE ≠ AUTHORIZATION
 ```
+
+`STEWARD_DEFINED`. A TRUE predicate merely satisfies its declared condition. It does **not** authorize · deploy · mutate evidence · activate runtime · elevate authority.
 
 Example: `IF provenance_valid THEN continue analysis`.
 
 ### ELSE
 
 **Purpose:** Explicit alternative pathway.  
-**Rule:** ELSE must not silently mean failure. May resolve to HOLD / REVIEW / UNKNOWN / ALTERNATIVE_PATH / NOT_APPLICABLE per governing contract.
+**Rule:** ELSE must not silently mean failure.
+
+```text
+ELSE ≠ SILENT_FAILURE
+ELSE ≠ SHADOW
+ELSE ≠ BOOLEAN_NOT
+ELSE ≠ MATHEMATICAL_INVERSE
+CREATE_SHADOW ≠ ELSE
+```
+
+`STEWARD_DEFINED`. An ELSE path may later explicitly create a Shadow **only** through the separate `CREATE_SHADOW` architectural primitive — ELSE is not itself a Shadow.
 
 ### ELSE IF / multi-branch
 
@@ -107,27 +123,87 @@ Prefer explicit multi-state classification over forced binary where states are e
 
 ## Boolean Operators
 
+### Predicates (`STEWARD_DEFINED`)
+
+```text
+BOOLEAN_PREDICATES = YES
+BINARY_PREDICATES = YES
+MULTI_VALUED_STATE_OUTCOMES = YES
+CUSTOM_MULTI_VALUED_TRUTH_TABLE = NO
+```
+
+A predicate asks a bounded yes/no question under a declared rule → TRUE / FALSE.  
+Do **not** invent TRUE/FALSE/MAYBE/UNKNOWN_TRUTH/PARTIAL_TRUE as a custom logical truth table.
+
+```text
+UNKNOWN ≠ FALSE · MISSING ≠ FALSE · CONFLICTING ≠ FALSE
+UNKNOWN ≠ TRUE · MISSING ≠ TRUE · CONFLICTING ≠ TRUE
+INSUFFICIENT_EVIDENCE MUST_NOT_BE_SILENTLY_COERCED_TO_BOOLEAN
+```
+
+Handle via precondition · GUARD · REQUIRE · domain outcome · HOLD · explicit failure — **not** a third Boolean truth value.
+
 ### AND
 
-All required conditions satisfy their contract.  
-**AND ≠ multiplication (×).** Keep separate from formula operators.
+All required Boolean predicates satisfy conjunction.
+
+```text
+AND ≠ MULTIPLICATION
+AND_EVALUATION_ORDER = DEFERRED_TO_RUNTIME_GRAMMAR
+SHORT_CIRCUIT_RUNTIME_SEMANTICS = DEFERRED
+```
+
+`STEWARD_DEFINED` meaning; evaluation order/short-circuit deferred.
 
 ### OR
 
-One or more accepted alternatives satisfy.  
-Default: **INCLUSIVE_OR**.  
-**EXCLUSIVE_OR:** DEFERRED until Steward requests.
+```text
+OR = INCLUSIVE_OR
+```
+
+`STEWARD_DEFINED`. Permits either or both. Do not silently redefine as XOR.
+
+### XOR
+
+```text
+XOR = DEFERRED
+XOR_NOT_REQUIRED_FOR_V1 = YES
+```
 
 ### NOT
 
-Boolean exclusion.  
-**NOT ≠ mathematical inverse ≠ Shadow operator.**
+Boolean exclusion only.
+
+```text
+NOT = BOOLEAN_NEGATION_ONLY
+NOT ≠ SHADOW
+NOT ≠ MATHEMATICAL_INVERSE
+NOT ≠ COUNTERFACTUAL
+NOT ≠ ELSE
+```
+
+`STEWARD_DEFINED`. No Formula Shadow semantics from NOT.
 
 ---
 
 ## Multi-Branch Logic (MATCH)
 
 Preferred over deep nested IF for enumerated states:
+
+```text
+MATCH state
+  CASE A
+  CASE B
+  CASE C
+```
+
+```text
+UNHANDLED_MATCH ≠ SUCCESS
+```
+
+`STEWARD_DEFINED`. Unmatched case must **not** silently become success. Domain must cover declared cases **or** provide explicit fallback / default / HOLD / failure policy. No executable syntax.
+
+Example:
 
 ```text
 MATCH state
@@ -140,31 +216,57 @@ MATCH state
 
 ---
 
-## Guards
-
-High-priority early exits:
+## Guards and Requirements
 
 ```text
-GUARD / REQUIRE precondition
-otherwise HOLD | STOP | REVIEW
+REQUIRE ≠ GUARD
+REQUIRE_FAILURE ≠ SILENT_CONTINUE
+GUARD_FAILURE ≠ SILENT_CONTINUE
 ```
 
-Pattern: CHECK → FAIL EARLY → PRESERVE REASON → DO NOT CONTINUE UNSAFELY.  
+`STEWARD_DEFINED`:
+
+| Construct | Role |
+| --- | --- |
+| REQUIRE | Eligibility / prerequisite contract for candidate path |
+| GUARD | Protective boundary check before transition/action |
+
+Failure must be **visible**. Failure does **not** universally mean BLOCK — calling/domain contract chooses HOLD · BLOCK · STOP · invalid · incomplete · other explicit bounded failure. Neither creates authority.
+
+```text
+REQUIRE precondition
+GUARD condition
+```
+
+Pattern: CHECK → FAIL VISIBLY → PRESERVE REASON → DO NOT CONTINUE UNSAFELY.  
 Maps to Turtle / STOP_GATE / release doctrine.
 
 ---
 
-## Stop / Hold / Block
+## HOLD / BLOCK / STOP (`STEWARD_DEFINED`)
 
-Architectural definitions for **future unified grammar** (labels `PROPOSED_SPECIFICATION` where not already executable):
+Canonical **generic** Z Logic meanings (do not erase recovered lane distinctions above):
 
-| Construct | Meaning |
-| --- | --- |
-| STOP | Terminate current pathway (hard) |
-| HOLD | Preserve state; wait for resolution/human |
-| BLOCK | Explicitly deny candidate transition/action |
+| Construct | Core meaning | Preserves history | Automatically authorizes? |
+| --- | --- | --- | --- |
+| HOLD | Preserve current relevant state; pause forward progression pending evidence / decision / dependency / review / release condition | YES | NO |
+| BLOCK | Explicitly prohibit the current candidate, transition, or action under current evaluated conditions | YES | NO |
+| STOP | Terminate the current **bounded** process/path according to its declared control boundary | YES | NO |
 
-**Do not silently alias** across GGAESP / enforcer / STOP_GATE without Steward bridge.
+```text
+HOLD ≠ BLOCK ≠ STOP
+HOLD ≠ SUCCESS
+HOLD ≠ AUTHORIZATION
+BLOCK ≠ terminate every surrounding process (necessarily)
+STOP ≠ delete state
+STOP ≠ erase evidence
+STOP ≠ terminate the entire Sanctuary
+STOP ≠ revoke unrelated capabilities
+```
+
+STOP scope must be explicit. History not erased by HOLD/BLOCK/STOP.
+
+**Do not silently alias** across GGAESP / enforcer / STOP_GATE without Steward bridge. GGAESP outcomes remain GGAESP-defined.
 
 ---
 
@@ -172,7 +274,12 @@ Architectural definitions for **future unified grammar** (labels `PROPOSED_SPECI
 
 GGAESP executable semantics **preserved unchanged**.
 
-Grammar may **reference** externally supplied GGAESP decisions:
+```text
+GGAESP_GO ≠ DEPLOY
+GGAESP_GO ≠ PRODUCTION_AUTHORITY
+```
+
+`STEWARD_DEFINED`. Grammar may **reference** externally supplied GGAESP decisions; it does **not** redefine them:
 
 ```text
 MATCH GGAESP decision
@@ -181,8 +288,7 @@ MATCH GGAESP decision
   BLOCK   → deny current candidate path
 ```
 
-(Also GGAESP HOLD — advisory wait.)  
-**GO ≠ DEPLOY.** Do not redefine GGAESP.
+(Also GGAESP HOLD — advisory wait.)
 
 ---
 
@@ -190,14 +296,19 @@ MATCH GGAESP decision
 
 | Construct | Role | Bound |
 | --- | --- | --- |
-| FOR EACH | Iterate observations/entities/Shadows/reports | required |
-| WHILE | Repeat while condition | termination + resource + authority + failure |
+| FOR EACH | Iterate observations/entities/Shadows/reports | required (bounded collection) |
+| WHILE | Repeat while condition | termination contract required |
 | REPEAT UNTIL | Goal-seeking bounded loop | same |
 | SEQUENCE / EVENT STREAM ITERATION | Field S(n) walks | versioned |
 
 ```text
+LOOPS MUST BE BOUNDED
+Z_INFINITY ≠ UNBOUNDED_LOOP
 Z_INFINITY ≠ UNBOUNDED_RUNTIME_LOOP
+WHILE WITHOUT BOUND / TERMINATION CONTRACT = NOT AUTHORIZED
 ```
+
+`STEWARD_DEFINED`. Bound may eventually be: finite collection · termination predicate · resource/iteration/domain policy · Steward-defined bound. No numeric values invented. No automatic parallelism.
 
 ### BREAK
 
@@ -208,23 +319,34 @@ Terminate current bounded iteration for inspectable reason (gate fail / goal / s
 Skip to next eligible iteration.  
 **CONTINUE ≠ AUTHORIZATION_TO_PROCEED.**
 
+### RETRY / TIMEOUT
+
+```text
+RETRY = DEFERRED_P1
+TIMEOUT = DEFERRED_P1
+```
+
+No numeric duration · no global default · no universal failure/block/stop mapping invented.
+
 ---
 
 ## Event Logic
 
 ```text
-WHEN event occurs
-  evaluate rule(s)
+EVENT → CONDITION → CANDIDATE → GOVERNANCE
+EVENT ≠ COMMAND
+EVENT ≠ AUTHORIZATION
+EVENT ≠ AUTOMATIC_ACTION
 ```
 
-Pattern:
+`STEWARD_DEFINED`. Receiving an event may initiate evaluation; it cannot bypass governance.
 
 ```text
-EVENT → CONDITION → ACTION CANDIDATE → GOVERNANCE
+EVENT_TIME ≠ INGEST_TIME ≠ SEQUENCE_INDEX
+EVENT_TIME_BINDING = DEFERRED_P1
 ```
 
-Not: EVENT → UNCONTROLLED ACTION.  
-Events do not grant authority by occurring.
+No precedence invented here.
 
 ---
 
@@ -232,17 +354,19 @@ Events do not grant authority by occurring.
 
 ```text
 STATE A → (guard) → STATE B
+S(n) → transition → S(n+1)
 ```
 
-Transition should eventually carry: source · target · guard · reason · provenance · authority · timestamp · human_gate · failure_path.
+Transition should eventually carry: source · target · guard · reason · provenance · authority · timestamp · human_gate · failure_path · version/order.
 
 ### Transition law
 
 ```text
-STATE_TRANSITION ≠ STATE_OVERWRITE
+STATE_TRANSITION ≠ SILENT_OVERWRITE
+STATE_CHANGE ≠ AUTHORITY_CHANGE
 ```
 
-Continuous 360: S(n) → transition → S(n+1) while retaining S(n).
+`STEWARD_DEFINED`. Historical state remains traceable where governance permits. Authority changes require their own governed mechanism. Continuous 360: retain S(n).
 
 ---
 
@@ -255,7 +379,12 @@ Continuous 360: S(n) → transition → S(n+1) while retaining S(n).
 | FINALLY | Cleanup / receipt — must not convert failure into success |
 | THROW / ERROR | Explicit signaling |
 
-Differentiate: ERROR · INVALID_INPUT · UNKNOWN · CONFLICT · BLOCKED · UNAUTHORIZED · NOT_APPLICABLE.
+```text
+ERROR ≠ SILENT_SUCCESS
+CATCH ≠ SWALLOW_ERROR_SILENTLY
+```
+
+`STEWARD_DEFINED`. Differentiate: ERROR · INVALID_INPUT · UNKNOWN · CONFLICT · BLOCKED · UNAUTHORIZED · NOT_APPLICABLE. Failure should conceptually preserve failure class · operation · input refs · rule/gate · reason · stage/state · provenance.
 
 ### ASSERT
 
@@ -263,7 +392,7 @@ Spec/test invariants (e.g. `ASSERT AI_PROPOSED != OBSERVED`). Not a substitute f
 
 ### REQUIRE
 
-Mandatory precondition; unmet → defined HOLD/failure path.
+See Guards and Requirements (`STEWARD_DEFINED`).
 
 ---
 
@@ -330,10 +459,35 @@ CREATE new version AND retain previous version
 
 ```text
 CONTROL_BRANCH ≠ SHADOW
+CREATE_SHADOW ≠ ELSE
+CREATE_SHADOW ≠ CONTROL_BRANCH
+CREATE_SHADOW = ARCHITECTURAL_PRIMITIVE_ONLY
+SYNTAX = UNDEFINED
+PARSER = NONE
+RUNTIME = NONE
+Z_LOGIC_MUST_EVENTUALLY_SUPPORT_EXPLICIT_SHADOW_CREATION = YES
 ```
 
-Ordinary ELSE is not a Shadow. Shadow needs future taxonomy.  
-`IF selected THEN retain unselected as Shadow candidates` = **PROPOSED_ARCHITECTURE** only.
+`STEWARD_DEFINED` (aligned with Shadow F4). Ordinary IF/ELSE does not create Reasoning Shadows.
+
+Conceptual future preconditions (no syntax):
+
+```text
+REQUIRE base_reference
+REQUIRE assumptions
+REQUIRE purpose
+REQUIRE provenance
+REQUIRE bounded scope
+GUARD base_non_mutation
+GUARD authority_ceiling
+```
+
+```text
+SHADOW_OF_SHADOW = DEFERRED
+NESTED_SHADOW_CONTROL_MAPPING = DEFERRED
+```
+
+If base is already Shadow and nested semantics are not authorized → do not create nested Shadow. Do not predetermine HOLD vs BLOCK for that future mapping.
 
 ---
 
@@ -341,11 +495,16 @@ Ordinary ELSE is not a Shadow. Shadow needs future taxonomy.
 
 | Primitive (conceptual) | Role |
 | --- | --- |
-| REQUIRE_HUMAN | Non-autonomous transition |
-| REQUIRE_STEWARD | Steward-specific approval (≠ any human) |
+| HUMAN_GATE / REQUIRE_HUMAN | Non-autonomous transition requiring human decision |
+| STEWARD_GATE / REQUIRE_STEWARD | Steward-role decision (≠ any human) |
 
-Examples: canon changes · authority elevation · deploy · replication · high-risk domains.  
-No auth implementation.
+```text
+HUMAN_GATE ≠ STEWARD_GATE
+GATE_PASS ≠ DEPLOY
+GATE_PASS ≠ PRODUCTION_AUTHORITY
+```
+
+`STEWARD_DEFINED`. Examples: canon changes · authority elevation · deploy · replication · high-risk domains. No auth implementation · no identity protocol.
 
 ## Authority Ceiling
 
@@ -353,9 +512,20 @@ Operations declare ceiling: OBSERVE · REPORT · SUGGEST · SIMULATE · HUMAN_GA
 
 ```text
 CONTROL_FLOW CANNOT SELF-ELEVATE AUTHORITY
+TRUE ≠ AUTHORITY
+FALSE ≠ AUTHORITY
+MATCH ≠ AUTHORITY
+GUARD PASS ≠ AUTHORITY
+REQUIRE PASS ≠ AUTHORITY
+HOLD ≠ AUTHORITY
+BLOCK ≠ AUTHORITY
+STOP ≠ AUTHORITY
+STATE TRANSITION ≠ AUTHORITY
+EVENT ≠ AUTHORITY
+CONTROL RESULT ≠ AUTHORITY
 ```
 
-Invariants:
+`STEWARD_DEFINED`. Control semantics route candidates; they do not create authority.
 
 ```text
 TRUE ≠ AUTHORIZED
@@ -366,28 +536,26 @@ CAPABLE ≠ AUTHORIZED
 FEASIBLE ≠ AUTHORIZED
 ```
 
-ALLOW / DENY are governance — separate from formula truth.
+ALLOW / DENY are governance — separate from formula truth. No `logic_score` / `branch_confidence` / `gate_confidence` / `control_strength` / `authority_score`.
 
 ---
 
 ## MiniBot Logic
 
 ```text
-READ scoped state
-IF relevant THEN produce observation/proposal (AI_PROPOSED)
-ELSE return NO_RELEVANT_SIGNAL
+MINIBOT_OUTPUT ≠ TRUTH
+MINIBOT_OUTPUT ≠ AUTHORITY
 ```
 
-Proposal → canon only via human/governance. MiniBots not activated.
+`STEWARD_DEFINED`. Future MiniBot output may enter evaluation as explicitly typed/provenanced input. Proposal → canon only via human/governance. MiniBots not activated.
 
 ## Swarm Logic
 
-Collect MiniBot reports; preserve disagreement; record agreement if supported.
-
 ```text
+SWARM_MAJORITY ≠ TRUTH
+SWARM_CONSENSUS ≠ STEWARD_DECISION
 agreement ≠ truth
 agreement ≠ authority
-SWARM_MAJORITY ≠ GROUND_TRUTH
 ```
 
 No majority-decision rule invented. Swarm not activated.
@@ -397,12 +565,19 @@ No majority-decision rule invented. Swarm not activated.
 Collect · compare · fuse · report — advisory.
 
 ```text
+QOSMEI_FUSION ≠ AUTHORIZATION
 FUSION_RESULT ≠ AUTHORIZATION
 ```
 
 ## Z-AAI Logic
 
-Explain · expose conflict · propose → governance → human decision.  
+Explain · expose conflict · propose conditions/branches/Shadows → governance → human/Steward.
+
+```text
+Z_AAI_PROPOSAL ≠ CANON
+Z_AAI_PROPOSAL ≠ AUTHORIZATION
+```
+
 Not self-modification. Z-AAI not implemented.
 
 ## Replica Fabric Logic
@@ -412,12 +587,12 @@ Preserve:
 ```text
 OBSERVE → PROPOSE → SANDBOX → VERIFY → GOVERNANCE
 → HUMAN AUTHORIZATION → BOUNDED CREATION → RECEIPT
-```
-
-```text
+CONTROL_FLOW ≠ REPLICA_AUTHORIZATION
 Z_INFINITY ≠ UNBOUNDED_REPLICATION
 UNBOUNDED_SELF_REPLICATION = NOT AUTHORIZED
 ```
+
+Z Logic cannot introduce a bypass. No activation.
 
 ## Combat Logic
 
@@ -433,6 +608,8 @@ Do not change Combat formulas/physics.
 
 Grammar operates on ENTITY · TIME · SEQUENCE · STATE · RELATIONSHIPS · PROVENANCE · UNCERTAINTY.
 
+Must not collapse: Observed · Predicted · Shadow · AI-Proposed · Conflicting · Unknown · Missing.
+
 Example:
 
 ```text
@@ -440,7 +617,7 @@ IF state == AI_PROPOSAL AND provenance == AI_PROPOSED
 THEN prevent OBSERVED classification
 ```
 
-C360 semantics unchanged by this gate.
+C360 F4 goldens **unchanged** by this gate.
 
 ```text
 FIELD_GOLDENS_CAN_SEED_LOGIC_GOLDENS
@@ -465,21 +642,24 @@ NOT ≠ inverse
 ELSE ≠ Shadow
 BOOLEAN_TRUTH ≠ Z_POLARITY
 BOOLEAN_NOT ≠ SHADOW
+CONTROL MATCH ≠ FORMULA MATCHING OPERATOR
+```
+
+```text
+OPERATOR_PRECEDENCE = DEFERRED_TO_FUTURE_GRAMMAR
 ```
 
 ---
 
-## Multi-Valued Logic Question
-
-Sanctuary already distinguishes TRUE / FALSE / UNKNOWN / MISSING / CONFLICTING / NOT_APPLICABLE (and HOLD/BLOCK return classes).
-
-**Verdict:**
+## Multi-Valued Logic (`STEWARD_DEFINED`)
 
 ```text
-STEWARD_DECISION_REQUIRED
+BINARY_PREDICATES = YES
+MULTI_VALUED_STATE_OUTCOMES = YES
+CUSTOM_MULTI_VALUED_TRUTH_TABLE = NO
 ```
 
-**Recommendation (not sealed):** keep **binary Boolean** for pure guards where inputs are well-defined; use **multi-valued outcome classes** for returns and field states. Do not invent truth tables in this gate.
+Predicates are binary TRUE/FALSE. Resulting control/state outcomes may be domain-specific (HOLD · BLOCK · STOP · …). No universal Sanctuary outcome enum in this gate. No third Boolean truth value.
 
 Also:
 
@@ -490,10 +670,15 @@ FALSE ≠ IMPOSSIBLE
 
 ## Evaluation / Side-Effect Rules
 
-- Prefer **PURE CONDITIONS** (no side effects inside IF predicates).
-- Prefer **EXPLICIT_GROUPING** `(A AND (B OR C))`.
-- Short-circuit: DEFERRED for runtime; avoid effectful B in `A AND B`.
-- Preferred pattern: `result = check_state()` then `IF result THEN request transition`.
+```text
+PREDICATE_EVALUATION ≠ EVIDENCE_MUTATION
+BRANCH_SELECTION ≠ SOURCE_REWRITE
+CONTROL_EVALUATION_MUST_NOT_SILENTLY_MUTATE_SOURCE_EVIDENCE
+CONTROL_SIDE_EFFECT_MODEL = DEFERRED_TO_RUNTIME_CHARTER
+SHORT_CIRCUIT_RUNTIME_SEMANTICS = DEFERRED
+```
+
+`STEWARD_DEFINED` non-mutation. Prefer **PURE CONDITIONS** (no side effects inside IF predicates). Prefer **EXPLICIT_GROUPING** `(A AND (B OR C))`. Preferred pattern: `result = check_state()` then `IF result THEN request transition`. A later explicitly authorized transition may create new state/version — separate from silently mutating input evidence.
 
 ### Determinism class (future declaration)
 
@@ -507,8 +692,8 @@ AI-assisted ≠ deterministic.
 | OPTIONAL | Absence ≠ zero / trusted / certain |
 | DEFAULT | Only where spec defines; prohibited defaults listed below |
 | FALLBACK | Controlled degrade; must not weaken safety |
-| RETRY | Needs max attempts / classes / delay / idempotency / authority / stop — **no numbers invented** |
-| TIMEOUT | Explicit TIMEOUT / HOLD / UNKNOWN — not silent success/fail |
+| RETRY | DEFERRED_P1 — needs max attempts / classes / delay / idempotency / authority / stop — **no numbers invented** |
+| TIMEOUT | DEFERRED_P1 — Explicit TIMEOUT / HOLD / UNKNOWN — not silent success/fail |
 | QUEUE | Order ≠ authority priority unless defined |
 | PRIORITY | ≠ confidence · ≠ authorized |
 
@@ -519,6 +704,7 @@ unknown evidence → zero
 unknown provenance → trusted
 missing authority → allowed
 missing uncertainty → certain
+insufficient evidence → FALSE (or TRUE)
 ```
 
 ---
@@ -548,10 +734,11 @@ Continuous 360 goldens (UNKNOWN≠ZERO · AI≠OBSERVED · CONFLICT PRESERVED ·
 
 | Primitive | Status | Unique problem? |
 | --- | --- | --- |
-| SHADOW (as control) | PROPOSED_Z_PRIMITIVE — needs taxonomy; ≠ ELSE | Yes |
-| STEWARD_GATE | PROPOSED_Z_PRIMITIVE | Yes vs generic human |
+| CREATE_SHADOW | ARCHITECTURAL_PRIMITIVE_ONLY (`STEWARD_DEFINED`) — ≠ ELSE | Yes |
+| STEWARD_GATE | DEFINED conceptually (`STEWARD_DEFINED`) | Yes vs generic human |
+| HUMAN_GATE | DEFINED conceptually (`STEWARD_DEFINED`) | Yes |
 | PROVENANCE_GUARD | PROPOSED_Z_PRIMITIVE | Yes |
-| AUTHORITY_CEILING | PROPOSED_Z_PRIMITIVE | Yes |
+| AUTHORITY_CEILING | DEFINED conceptually | Yes |
 | STATE_VERSION | PROPOSED_Z_PRIMITIVE | Yes (C360) |
 | CONFLICT_PRESERVE | PROPOSED_Z_PRIMITIVE | Yes |
 
@@ -559,50 +746,80 @@ Prefer standard terminology (IF/THEN/MATCH/…) unless a unique Z problem needs 
 
 ### Proposed vocabulary (readable)
 
-WHEN · IF · THEN · ELSE · MATCH · AND · OR · NOT · REQUIRE · GUARD · ALLOW · DENY · HOLD · STOP · RETURN · FOR EACH · FALLBACK
+WHEN · IF · THEN · ELSE · MATCH · AND · OR · NOT · REQUIRE · GUARD · ALLOW · DENY · HOLD · BLOCK · STOP · RETURN · FOR EACH · FALLBACK · CREATE_SHADOW · HUMAN_GATE · STEWARD_GATE
 
 ---
 
 ## Statement Matrix
 
-| Statement / Construct | Standard meaning | Z role | Authority effect | Ready? |
-| --- | --- | --- | --- | --- |
-| IF | Conditional | Eligibility gate | None by itself | DEFINED |
-| ELSE | Alternative | Explicit alt path | None | DEFINED |
-| ELSE IF | Multi-branch | Classification | None | DEFINED |
-| AND | Conjunction | All conditions | None | DEFINED |
-| OR | Inclusive disjunction | Alternatives | None | DEFINED |
-| NOT | Negation | Exclusion | None | DEFINED |
-| MATCH | Dispatch | Multi-state | None | DEFINED |
-| GUARD | Early exit | Fail-safe | May force HOLD/STOP | DEFINED |
-| REQUIRE | Precondition | Mandatory gate | May force HOLD | DEFINED |
-| ALLOW | Permit | Governance | Yes | DEFINED |
-| DENY | Forbid | Governance | Yes | DEFINED |
-| HOLD | Wait/preserve | Pause pathway | Preserves; no elevate | PARTIAL |
-| STOP | Terminate | Hard stop | Deny continue | PARTIAL |
-| BLOCK | Deny transition | Explicit denial | Deny | PARTIAL |
-| FOR EACH | Iterate | Bounded scan | None | DEFINED |
-| WHILE | Loop | Bounded repeat | None | DEFINED |
-| BREAK | Exit loop | Inspectable stop | None | DEFINED |
-| CONTINUE | Next iter | Skip | ≠ authorize | DEFINED |
-| RETURN | Output class | Typed result | None | DEFINED |
-| WHEN/EVENT | On event | Trigger evaluate | None | DEFINED |
-| TRY | Attempt | Bounded try | None | DEFINED |
-| CATCH | Handle fail | Preserve failure | None | DEFINED |
-| FINALLY | Cleanup | Receipt/cleanup | Must not fake success | DEFINED |
-| ASSERT | Invariant check | Spec/test | None | DEFINED |
-| FALLBACK | Degrade path | Safety degrade | Must not weaken safety | DEFINED |
-| RETRY | Re-attempt | Bounded retry | Deferred policy | DEFERRED |
-| TIMEOUT | Bound wait | Explicit timeout state | Deferred policy | DEFERRED |
-| XOR | Exclusive or | — | — | DEFERRED |
-| QUEUE | Ordered work | Work ordering | ≠ priority authority | DEFINED |
-| PRIORITY | Urgency | Scheduling | ≠ truth/auth | DEFINED |
+| Construct | Semantic status | Runtime | Key invariant |
+| --- | --- | --- | --- |
+| IF | DEFINED | NONE | IF_TRUE ≠ AUTHORIZATION |
+| ELSE | DEFINED | NONE | ELSE ≠ Shadow |
+| ELSE IF | DEFINED | NONE | None by itself |
+| AND | DEFINED | NONE | AND ≠ multiplication |
+| OR | DEFINED | NONE | Inclusive OR |
+| NOT | DEFINED | NONE | NOT ≠ inverse/Shadow |
+| XOR | DEFERRED | NONE | XOR_NOT_REQUIRED_FOR_V1 |
+| MATCH | DEFINED | NONE | UNHANDLED_MATCH ≠ SUCCESS |
+| REQUIRE | DEFINED | NONE | Failure ≠ silent continue |
+| GUARD | DEFINED | NONE | Failure ≠ silent continue; REQUIRE ≠ GUARD |
+| HOLD | DEFINED | NONE | Pause / preserve; ≠ BLOCK/STOP |
+| BLOCK | DEFINED | NONE | Prohibit candidate/path; ≠ HOLD/STOP |
+| STOP | DEFINED | NONE | Terminate bounded path; ≠ HOLD/BLOCK |
+| EVENT | DEFINED | NONE | EVENT ≠ command/authorization |
+| FOR EACH | DEFINED (architecture) | NONE | Bounded collection |
+| WHILE | PARTIAL | NONE | Termination contract required |
+| BREAK / CONTINUE | DEFINED | NONE | CONTINUE ≠ authorize |
+| TRY / CATCH / FINALLY | DEFINED | NONE | No silent swallow |
+| STATE TRANSITION | DEFINED | NONE | ≠ silent overwrite; ≠ authority change |
+| RETRY | DEFERRED_P1 | NONE | Domain policy needed |
+| TIMEOUT | DEFERRED_P1 | NONE | No global default |
+| HUMAN_GATE | DEFINED conceptually | NONE | Scoped; ≠ Steward unless mapped |
+| STEWARD_GATE | DEFINED conceptually | NONE | Distinct governance gate |
+| CREATE_SHADOW | ARCHITECTURAL PRIMITIVE | NONE | Explicit; ≠ ELSE; runtime NONE |
+| ALLOW / DENY | DEFINED (governance) | NONE | Separate from formula truth |
+| ASSERT | DEFINED | NONE | Spec/test invariant |
+| FALLBACK | DEFINED | NONE | Must not weaken safety |
+| QUEUE / PRIORITY | DEFINED | NONE | ≠ authority/truth |
 
 ---
 
 ## Control Invariants
 
 ```text
+BINARY_PREDICATES = YES
+MULTI_VALUED_STATE_OUTCOMES = YES
+CUSTOM_MULTI_VALUED_TRUTH_TABLE = NO
+INSUFFICIENT_EVIDENCE MUST_NOT_BE_SILENTLY_COERCED_TO_BOOLEAN
+
+IF_TRUE ≠ AUTHORIZATION
+ELSE ≠ SHADOW
+AND ≠ MULTIPLICATION
+OR = INCLUSIVE_OR
+NOT ≠ SHADOW
+NOT ≠ MATHEMATICAL_INVERSE
+UNHANDLED_MATCH ≠ SUCCESS
+REQUIRE_FAILURE ≠ SILENT_CONTINUE
+GUARD_FAILURE ≠ SILENT_CONTINUE
+REQUIRE ≠ GUARD
+HOLD ≠ BLOCK ≠ STOP
+STATE_TRANSITION ≠ SILENT_OVERWRITE
+STATE_CHANGE ≠ AUTHORITY_CHANGE
+EVENT ≠ COMMAND
+EVENT ≠ AUTHORIZATION
+LOOPS MUST BE BOUNDED
+Z_INFINITY ≠ UNBOUNDED_LOOP
+ERROR ≠ SILENT_SUCCESS
+CONTROL_BRANCH ≠ SHADOW
+CREATE_SHADOW ≠ ELSE
+CREATE_SHADOW = ARCHITECTURAL_ONLY
+HUMAN_GATE ≠ STEWARD_GATE
+GATE_PASS ≠ DEPLOY
+PREDICATE_EVALUATION ≠ EVIDENCE_MUTATION
+BRANCH_SELECTION ≠ SOURCE_REWRITE
+CONTROL RESULT ≠ AUTHORITY
+
 TRUE ≠ AUTHORIZED
 VALID ≠ AUTHORIZED
 READY ≠ DEPLOY
@@ -614,9 +831,7 @@ BOOLEAN_TRUTH ≠ Z_POLARITY
 BOOLEAN_NOT ≠ SHADOW
 AND ≠ MULTIPLICATION
 OR ≠ ADDITION
-CONTROL_BRANCH ≠ SHADOW
 
-Z_INFINITY ≠ INFINITE_RUNTIME_LOOP
 Z_INFINITY ≠ UNBOUNDED_REPLICATION
 
 AI_PROPOSAL ≠ FACT
@@ -624,7 +839,6 @@ SWARM_MAJORITY ≠ GROUND_TRUTH
 FIELD_REPRESENTATION ≠ AUTHORITY
 FUSION_RESULT ≠ AUTHORIZATION
 
-STATE_TRANSITION ≠ STATE_OVERWRITE
 CONTROL_FLOW CANNOT SELF-ELEVATE AUTHORITY
 ```
 
@@ -632,42 +846,66 @@ CONTROL_FLOW CANNOT SELF-ELEVATE AUTHORITY
 
 ## Micro / Meso / Macro Logic
 
-Grammar must apply at MICRO / MESO / MACRO without inventing aggregation mathematics.
+Grammar may later route Micro · Meso · MacroRepresentation without inventing aggregation mathematics.
+
+```text
+BROADER VIEW ≠ HIGHER AUTHORITY
+```
+
+MMM F4 goldens **unchanged**.
 
 ## Maturity
 
 ```text
-F2 / PARTIAL F3 ARCHITECTURAL SPEC
-NO parser · NO compiler · NO DSL · NO interpreter · NO rule engine
+Z LOGIC / CONTROL GRAMMAR = F3 SPECIFICATION
+NO runtime · NO DSL · NO parser · NO goldens encoded
 ```
 
-## Missing Decisions
+## Golden Readiness
 
-| Decision | Why |
+```text
+Z_LOGIC_GOLDEN_READY
+```
+
+P0 control semantics sufficiently stable for Z Logic Semantic Goldens Design next. Do not encode in this gate.
+
+## Missing / P1+ Decisions
+
+| Topic | Status |
 | --- | --- |
-| Unify HOLD/BLOCK/STOP across GGAESP / enforcer / STOP_GATE? | Naming collision |
-| Multi-valued decision logic seal | STEWARD_DECISION_REQUIRED |
-| XOR needed? | Deferred |
-| Retry/timeout numeric policies | Domain-specific later |
-| Shadow-as-control primitive syntax | Needs Shadow taxonomy |
-| Encode first logic goldens from C360 pack | After Steward accepts encode gate |
+| XOR | DEFERRED · not required for v1 |
+| RETRY / TIMEOUT | DEFERRED_P1 |
+| Operator precedence / associativity | DEFERRED_TO_FUTURE_GRAMMAR |
+| Short-circuit runtime | DEFERRED |
+| Side-effect model | DEFERRED_TO_RUNTIME_CHARTER |
+| Event-time binding | DEFERRED_P1 |
+| Nested Shadow control mapping | DEFERRED |
+| CREATE_SHADOW syntax / runtime | Architectural only |
+| Parallel / async / cancellation | Unresolved |
+| Loop resource numeric limits | Not invented |
+| Error taxonomy detail | Architecture only |
+| Executable HOLD/BLOCK/STOP bridge across GGAESP / enforcer / STOP_GATE | Recovered lanes remain separate |
 
 ## ONE Recommended Next Gate
 
 ```text
-Accept + encode Continuous 360 semantic goldens (24 P0 pack)
+Z-SANCTUARY-Z-LOGIC-SEMANTIC-GOLDENS-DESIGN-1
 ```
 
-**Why:** Control grammar is now specified enough to *consume* field invariants as future logic goldens (`FIELD_GOLDENS_CAN_SEED_LOGIC_GOLDENS`). Encoding C360 goldens first gives deterministic DNA before any parser/DSL.  
+**Why:** Core P0 Steward decisions sealed; next design expected-behavior vectors for IF/ELSE/AND/OR/NOT/MATCH/REQUIRE/GUARD/HOLD/BLOCK/STOP/CREATE_SHADOW walls — parallel to C360/MMM/Shadow path — without parser or runtime.
 
-Alternate: Steward decision on multi-valued logic + HOLD/BLOCK/STOP unification.  
 **Not opened here.**
 
 ## Terminal
 
 ```text
-Z_LOGIC_AND_CONTROL_GRAMMAR_SPEC_0 = SEALED_DOCS
+Z_LOGIC_AND_CONTROL_GRAMMAR_SPEC_0 = F3_STEWARD_REFINED
+PARSER = NONE
+DSL = NONE
 RUNTIME = NONE
-CUSTOM_LANGUAGE = NO
+CREATE_SHADOW = ARCHITECTURAL_ONLY
+C360_F4 = PRESERVED
+MMM_F4 = PRESERVED
+SHADOW_F4 = PRESERVED
 PRODUCTION_AUTHORITY = NONE
 ```
