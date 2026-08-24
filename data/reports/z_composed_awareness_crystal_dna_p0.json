@@ -1,0 +1,1055 @@
+{
+  "adapter_version": "p0-crystal-dna-shard-1",
+  "conflicts": [],
+  "dependencies": [
+    {
+      "direction": "DEPENDS_ON",
+      "from_shard": "cloudflare_governance_pack",
+      "note": "DEPENDENCY ≠ OWNERSHIP",
+      "origin": "DERIVED_REAL",
+      "resolution": "RESOLVED",
+      "source": "data/z_crystal_dna_asset_manifest.json#shards[].dependencies",
+      "to_shard": "dna_mesh_doctrine"
+    },
+    {
+      "direction": "DEPENDS_ON",
+      "from_shard": "control_link_manifest",
+      "note": "DEPENDENCY ≠ OWNERSHIP",
+      "origin": "DERIVED_REAL",
+      "resolution": "RESOLVED",
+      "source": "data/z_crystal_dna_asset_manifest.json#shards[].dependencies",
+      "to_shard": "dna_mesh_doctrine"
+    },
+    {
+      "direction": "DEPENDS_ON",
+      "from_shard": "doorway_workspace_registry",
+      "note": "DEPENDENCY ≠ OWNERSHIP",
+      "origin": "DERIVED_REAL",
+      "resolution": "RESOLVED",
+      "source": "data/z_crystal_dna_asset_manifest.json#shards[].dependencies",
+      "to_shard": "dna_mesh_doctrine"
+    },
+    {
+      "direction": "DEPENDS_ON",
+      "from_shard": "hub_pc_root_projects",
+      "note": "DEPENDENCY ≠ OWNERSHIP",
+      "origin": "DERIVED_REAL",
+      "resolution": "RESOLVED",
+      "source": "data/z_crystal_dna_asset_manifest.json#shards[].dependencies",
+      "to_shard": "dna_mesh_doctrine"
+    },
+    {
+      "direction": "DEPENDS_ON",
+      "from_shard": "satellite_control_bridge_template",
+      "note": "DEPENDENCY ≠ OWNERSHIP",
+      "origin": "DERIVED_REAL",
+      "resolution": "RESOLVED",
+      "source": "data/z_crystal_dna_asset_manifest.json#shards[].dependencies",
+      "to_shard": "control_link_manifest"
+    },
+    {
+      "direction": "DEPENDS_ON",
+      "from_shard": "z_lab_capsule_reference",
+      "note": "DEPENDENCY ≠ OWNERSHIP",
+      "origin": "DERIVED_REAL",
+      "resolution": "RESOLVED",
+      "source": "data/z_crystal_dna_asset_manifest.json#shards[].dependencies",
+      "to_shard": "dna_mesh_doctrine"
+    }
+  ],
+  "drift": {
+    "findings": [
+      {
+        "code": "hold_parallel_green_doorway",
+        "message": "Doorway registry mixes HOLD and GREEN enabled rows — operator sequencing review.",
+        "note": "DRIFT ≠ CORRUPTION automatically; DRIFT ≠ REPAIR",
+        "origin": "DERIVED_REAL",
+        "provenance": {
+          "finding_code": "hold_parallel_green_doorway",
+          "path": "data/reports/z_crystal_dna_drift_report.json"
+        },
+        "refs": [],
+        "signal": {
+          "namespace": "CRYSTAL_DNA_DRIFT",
+          "note": "CRYSTAL_DNA_DRIFT HOLD ≠ Z Logic HOLD; not project deployment HOLD",
+          "origin": "REAL_SOURCE",
+          "value": "BLUE"
+        },
+        "source_index": 2
+      },
+      {
+        "code": "satellite_not_wired_in_dna_mesh",
+        "message": "Enabled satellite \"z_labs_capsule\" is not referenced by DNA shard dependencies (topology gap).",
+        "note": "DRIFT ≠ CORRUPTION automatically; DRIFT ≠ REPAIR",
+        "origin": "DERIVED_REAL",
+        "provenance": {
+          "finding_code": "satellite_not_wired_in_dna_mesh",
+          "path": "data/reports/z_crystal_dna_drift_report.json"
+        },
+        "refs": [
+          "sat:z_labs_capsule"
+        ],
+        "signal": {
+          "namespace": "CRYSTAL_DNA_DRIFT",
+          "note": "CRYSTAL_DNA_DRIFT HOLD ≠ Z Logic HOLD; not project deployment HOLD",
+          "origin": "REAL_SOURCE",
+          "value": "YELLOW"
+        },
+        "source_index": 1
+      },
+      {
+        "code": "stale_bridge",
+        "message": "Satellite \"z_labs_capsule\" bridge file is older than hub template (refresh drift).",
+        "note": "DRIFT ≠ CORRUPTION automatically; DRIFT ≠ REPAIR",
+        "origin": "DERIVED_REAL",
+        "provenance": {
+          "finding_code": "stale_bridge",
+          "path": "data/reports/z_crystal_dna_drift_report.json"
+        },
+        "refs": [
+          "sat:z_labs_capsule"
+        ],
+        "signal": {
+          "namespace": "CRYSTAL_DNA_DRIFT",
+          "note": "CRYSTAL_DNA_DRIFT HOLD ≠ Z Logic HOLD; not project deployment HOLD",
+          "origin": "REAL_SOURCE",
+          "value": "YELLOW"
+        },
+        "source_index": 0
+      }
+    ],
+    "law": "Detect / compare / report only. No automatic restore, repair, deploy, git, NAS writes, or secrets.",
+    "origin": "DERIVED_REAL",
+    "overall_signal": {
+      "namespace": "CRYSTAL_DNA_DRIFT",
+      "origin": "REAL_SOURCE",
+      "value": "BLUE"
+    },
+    "provenance": {
+      "path": "data/reports/z_crystal_dna_drift_report.json"
+    }
+  },
+  "implementation_version": "z-composed-awareness-crystal-dna-p0-1.0.0",
+  "ordering_rule": "shards by source_id; dependencies by from then to; coverage by project_id; drift findings by code+refs+message (UTF-16 lexical)",
+  "origin": "DERIVED_REAL",
+  "posture": "DERIVED_READ_MODEL",
+  "project_coverage": [
+    {
+      "crystal_dna_presence": "MISSING",
+      "join_rule": "NONE",
+      "matching_source_records": [],
+      "note": "MISSING CRYSTAL DNA = NO VERIFIED DNA EVIDENCE ATTACHED (≠ HEALTHY ≠ UNHEALTHY ≠ GREEN)",
+      "origin": "DERIVED_REAL",
+      "project_id": "amk-goku-dashboards-2",
+      "provenance": {
+        "path": "data/z_pc_root_projects.json",
+        "source_id": "amk-goku-dashboards-2"
+      }
+    },
+    {
+      "crystal_dna_presence": "MISSING",
+      "join_rule": "NONE",
+      "matching_source_records": [],
+      "note": "MISSING CRYSTAL DNA = NO VERIFIED DNA EVIDENCE ATTACHED (≠ HEALTHY ≠ UNHEALTHY ≠ GREEN)",
+      "origin": "DERIVED_REAL",
+      "project_id": "amk-goku-vaults",
+      "provenance": {
+        "path": "data/z_pc_root_projects.json",
+        "source_id": "amk-goku-vaults"
+      }
+    },
+    {
+      "crystal_dna_presence": "MISSING",
+      "join_rule": "NONE",
+      "matching_source_records": [],
+      "note": "MISSING CRYSTAL DNA = NO VERIFIED DNA EVIDENCE ATTACHED (≠ HEALTHY ≠ UNHEALTHY ≠ GREEN)",
+      "origin": "DERIVED_REAL",
+      "project_id": "at-princess-blackie-copilot",
+      "provenance": {
+        "path": "data/z_pc_root_projects.json",
+        "source_id": "at-princess-blackie-copilot"
+      }
+    },
+    {
+      "crystal_dna_presence": "MISSING",
+      "join_rule": "NONE",
+      "matching_source_records": [],
+      "note": "MISSING CRYSTAL DNA = NO VERIFIED DNA EVIDENCE ATTACHED (≠ HEALTHY ≠ UNHEALTHY ≠ GREEN)",
+      "origin": "DERIVED_REAL",
+      "project_id": "eirmind-ireland-projects-missing",
+      "provenance": {
+        "path": "data/z_pc_root_projects.json",
+        "source_id": "eirmind-ireland-projects-missing"
+      }
+    },
+    {
+      "crystal_dna_presence": "MISSING",
+      "join_rule": "NONE",
+      "matching_source_records": [],
+      "note": "MISSING CRYSTAL DNA = NO VERIFIED DNA EVIDENCE ATTACHED (≠ HEALTHY ≠ UNHEALTHY ≠ GREEN)",
+      "origin": "DERIVED_REAL",
+      "project_id": "extras-tools",
+      "provenance": {
+        "path": "data/z_pc_root_projects.json",
+        "source_id": "extras-tools"
+      }
+    },
+    {
+      "crystal_dna_presence": "MISSING",
+      "join_rule": "NONE",
+      "matching_source_records": [],
+      "note": "MISSING CRYSTAL DNA = NO VERIFIED DNA EVIDENCE ATTACHED (≠ HEALTHY ≠ UNHEALTHY ≠ GREEN)",
+      "origin": "DERIVED_REAL",
+      "project_id": "replit-roulette-z-amk-goku-mdcp",
+      "provenance": {
+        "path": "data/z_pc_root_projects.json",
+        "source_id": "replit-roulette-z-amk-goku-mdcp"
+      }
+    },
+    {
+      "crystal_dna_presence": "MISSING",
+      "join_rule": "NONE",
+      "matching_source_records": [],
+      "note": "MISSING CRYSTAL DNA = NO VERIFIED DNA EVIDENCE ATTACHED (≠ HEALTHY ≠ UNHEALTHY ≠ GREEN)",
+      "origin": "DERIVED_REAL",
+      "project_id": "sister-aisling-sol",
+      "provenance": {
+        "path": "data/z_pc_root_projects.json",
+        "source_id": "sister-aisling-sol"
+      }
+    },
+    {
+      "crystal_dna_presence": "MISSING",
+      "join_rule": "NONE",
+      "matching_source_records": [],
+      "note": "MISSING CRYSTAL DNA = NO VERIFIED DNA EVIDENCE ATTACHED (≠ HEALTHY ≠ UNHEALTHY ≠ GREEN)",
+      "origin": "DERIVED_REAL",
+      "project_id": "z-labs",
+      "provenance": {
+        "path": "data/z_pc_root_projects.json",
+        "source_id": "z-labs"
+      }
+    },
+    {
+      "crystal_dna_presence": "MISSING",
+      "join_rule": "NONE",
+      "matching_source_records": [],
+      "note": "MISSING CRYSTAL DNA = NO VERIFIED DNA EVIDENCE ATTACHED (≠ HEALTHY ≠ UNHEALTHY ≠ GREEN)",
+      "origin": "DERIVED_REAL",
+      "project_id": "z-omni-sanctuary",
+      "provenance": {
+        "path": "data/z_pc_root_projects.json",
+        "source_id": "z-omni-sanctuary"
+      }
+    },
+    {
+      "crystal_dna_presence": "MISSING",
+      "join_rule": "NONE",
+      "matching_source_records": [],
+      "note": "MISSING CRYSTAL DNA = NO VERIFIED DNA EVIDENCE ATTACHED (≠ HEALTHY ≠ UNHEALTHY ≠ GREEN)",
+      "origin": "DERIVED_REAL",
+      "project_id": "z-sanctuary-ai-skyscraper",
+      "provenance": {
+        "path": "data/z_pc_root_projects.json",
+        "source_id": "z-sanctuary-ai-skyscraper"
+      }
+    },
+    {
+      "crystal_dna_presence": "MISSING",
+      "join_rule": "NONE",
+      "matching_source_records": [],
+      "note": "MISSING CRYSTAL DNA = NO VERIFIED DNA EVIDENCE ATTACHED (≠ HEALTHY ≠ UNHEALTHY ≠ GREEN)",
+      "origin": "DERIVED_REAL",
+      "project_id": "z-sanctuary-aimanity",
+      "provenance": {
+        "path": "data/z_pc_root_projects.json",
+        "source_id": "z-sanctuary-aimanity"
+      }
+    },
+    {
+      "crystal_dna_presence": "MISSING",
+      "join_rule": "NONE",
+      "matching_source_records": [],
+      "note": "MISSING CRYSTAL DNA = NO VERIFIED DNA EVIDENCE ATTACHED (≠ HEALTHY ≠ UNHEALTHY ≠ GREEN)",
+      "origin": "DERIVED_REAL",
+      "project_id": "z-sanctuary-browser-z-saiyan-lumina",
+      "provenance": {
+        "path": "data/z_pc_root_projects.json",
+        "source_id": "z-sanctuary-browser-z-saiyan-lumina"
+      }
+    },
+    {
+      "crystal_dna_presence": "MISSING",
+      "join_rule": "NONE",
+      "matching_source_records": [],
+      "note": "MISSING CRYSTAL DNA = NO VERIFIED DNA EVIDENCE ATTACHED (≠ HEALTHY ≠ UNHEALTHY ≠ GREEN)",
+      "origin": "DERIVED_REAL",
+      "project_id": "z-sanctuary-claude-core",
+      "provenance": {
+        "path": "data/z_pc_root_projects.json",
+        "source_id": "z-sanctuary-claude-core"
+      }
+    },
+    {
+      "crystal_dna_presence": "MISSING",
+      "join_rule": "NONE",
+      "matching_source_records": [],
+      "note": "MISSING CRYSTAL DNA = NO VERIFIED DNA EVIDENCE ATTACHED (≠ HEALTHY ≠ UNHEALTHY ≠ GREEN)",
+      "origin": "DERIVED_REAL",
+      "project_id": "z-sanctuary-external-paas",
+      "provenance": {
+        "path": "data/z_pc_root_projects.json",
+        "source_id": "z-sanctuary-external-paas"
+      }
+    },
+    {
+      "crystal_dna_presence": "MISSING",
+      "join_rule": "NONE",
+      "matching_source_records": [],
+      "note": "MISSING CRYSTAL DNA = NO VERIFIED DNA EVIDENCE ATTACHED (≠ HEALTHY ≠ UNHEALTHY ≠ GREEN)",
+      "origin": "DERIVED_REAL",
+      "project_id": "z-sanctuary-g",
+      "provenance": {
+        "path": "data/z_pc_root_projects.json",
+        "source_id": "z-sanctuary-g"
+      }
+    },
+    {
+      "crystal_dna_presence": "MISSING",
+      "join_rule": "NONE",
+      "matching_source_records": [],
+      "note": "MISSING CRYSTAL DNA = NO VERIFIED DNA EVIDENCE ATTACHED (≠ HEALTHY ≠ UNHEALTHY ≠ GREEN)",
+      "origin": "DERIVED_REAL",
+      "project_id": "z-sanctuary-gem",
+      "provenance": {
+        "path": "data/z_pc_root_projects.json",
+        "source_id": "z-sanctuary-gem"
+      }
+    },
+    {
+      "crystal_dna_presence": "MISSING",
+      "join_rule": "NONE",
+      "matching_source_records": [],
+      "note": "MISSING CRYSTAL DNA = NO VERIFIED DNA EVIDENCE ATTACHED (≠ HEALTHY ≠ UNHEALTHY ≠ GREEN)",
+      "origin": "DERIVED_REAL",
+      "project_id": "z-sanctuary-replit",
+      "provenance": {
+        "path": "data/z_pc_root_projects.json",
+        "source_id": "z-sanctuary-replit"
+      }
+    },
+    {
+      "crystal_dna_presence": "MISSING",
+      "join_rule": "NONE",
+      "matching_source_records": [],
+      "note": "MISSING CRYSTAL DNA = NO VERIFIED DNA EVIDENCE ATTACHED (≠ HEALTHY ≠ UNHEALTHY ≠ GREEN)",
+      "origin": "DERIVED_REAL",
+      "project_id": "z-sanctuary-universe",
+      "provenance": {
+        "path": "data/z_pc_root_projects.json",
+        "source_id": "z-sanctuary-universe"
+      }
+    },
+    {
+      "crystal_dna_presence": "MISSING",
+      "join_rule": "NONE",
+      "matching_source_records": [],
+      "note": "MISSING CRYSTAL DNA = NO VERIFIED DNA EVIDENCE ATTACHED (≠ HEALTHY ≠ UNHEALTHY ≠ GREEN)",
+      "origin": "DERIVED_REAL",
+      "project_id": "z-sanctuary-universe-2",
+      "provenance": {
+        "path": "data/z_pc_root_projects.json",
+        "source_id": "z-sanctuary-universe-2"
+      }
+    },
+    {
+      "crystal_dna_presence": "MISSING",
+      "join_rule": "NONE",
+      "matching_source_records": [],
+      "note": "MISSING CRYSTAL DNA = NO VERIFIED DNA EVIDENCE ATTACHED (≠ HEALTHY ≠ UNHEALTHY ≠ GREEN)",
+      "origin": "DERIVED_REAL",
+      "project_id": "z-sanctuary-universe-2-continuation",
+      "provenance": {
+        "path": "data/z_pc_root_projects.json",
+        "source_id": "z-sanctuary-universe-2-continuation"
+      }
+    },
+    {
+      "crystal_dna_presence": "MISSING",
+      "join_rule": "NONE",
+      "matching_source_records": [],
+      "note": "MISSING CRYSTAL DNA = NO VERIFIED DNA EVIDENCE ATTACHED (≠ HEALTHY ≠ UNHEALTHY ≠ GREEN)",
+      "origin": "DERIVED_REAL",
+      "project_id": "z-sancurary-pets-care-compassion",
+      "provenance": {
+        "path": "data/z_pc_root_projects.json",
+        "source_id": "z-sancurary-pets-care-compassion"
+      }
+    },
+    {
+      "crystal_dna_presence": "MISSING",
+      "join_rule": "NONE",
+      "matching_source_records": [],
+      "note": "MISSING CRYSTAL DNA = NO VERIFIED DNA EVIDENCE ATTACHED (≠ HEALTHY ≠ UNHEALTHY ≠ GREEN)",
+      "origin": "DERIVED_REAL",
+      "project_id": "z-worksphere-marketplace-hub",
+      "provenance": {
+        "path": "data/z_pc_root_projects.json",
+        "source_id": "z-worksphere-marketplace-hub"
+      }
+    }
+  ],
+  "projection_id": "z_composed_awareness_crystal_dna_p0",
+  "schema_version": 1,
+  "shards": [
+    {
+      "join_as_project": "NON_PROJECT_ASSET",
+      "namespaced_id": "crystal_dna_manifest::cloudflare_governance_pack",
+      "origin": "DERIVED_REAL",
+      "provenance": {
+        "path": "data/z_crystal_dna_asset_manifest.json",
+        "source_id": "cloudflare_governance_pack"
+      },
+      "rebuild_rule": {
+        "note": "rebuild_rule ≠ PRE-AUTHORIZED GARE REPAIR RECIPE; not executed",
+        "origin": "REAL_SOURCE",
+        "posture": "DECLARATIVE_RECOVERY_HINT",
+        "value": "human_charter_and_preview_only_no_deploy_from_mesh"
+      },
+      "source_declared": {
+        "dependencies": {
+          "label": "SOURCE_DECLARED",
+          "origin": "REAL_SOURCE",
+          "value": [
+            "dna_mesh_doctrine"
+          ]
+        },
+        "hash_optional": {
+          "label": "SOURCE_DECLARED",
+          "origin": "REAL_SOURCE",
+          "value": ""
+        },
+        "id": {
+          "label": "SOURCE_DECLARED",
+          "origin": "REAL_SOURCE",
+          "value": "cloudflare_governance_pack"
+        },
+        "owner_layer": {
+          "label": "SOURCE_DECLARED",
+          "origin": "REAL_SOURCE",
+          "value": "cloudflare_governance"
+        },
+        "path": {
+          "label": "SOURCE_DECLARED",
+          "origin": "REAL_SOURCE",
+          "value": "cloudflare-governance/"
+        },
+        "rebuild_rule": {
+          "label": "SOURCE_DECLARED",
+          "origin": "REAL_SOURCE",
+          "value": "human_charter_and_preview_only_no_deploy_from_mesh"
+        },
+        "risk": {
+          "label": "SOURCE_DECLARED",
+          "origin": "REAL_SOURCE",
+          "value": "high"
+        },
+        "status": {
+          "label": "SOURCE_DECLARED",
+          "origin": "REAL_SOURCE",
+          "value": "YELLOW"
+        },
+        "type": {
+          "label": "SOURCE_DECLARED",
+          "origin": "REAL_SOURCE",
+          "value": "governance_pack"
+        }
+      },
+      "source_id": "cloudflare_governance_pack",
+      "source_namespace": "crystal_dna_manifest",
+      "status": {
+        "namespace": "CRYSTAL_DNA_CARD",
+        "note": "CRYSTAL_DNA_CARD GREEN ≠ CURRENT / project health / deploy / GARE eligibility",
+        "origin": "REAL_SOURCE",
+        "value": "YELLOW"
+      }
+    },
+    {
+      "join_as_project": "NON_PROJECT_ASSET",
+      "namespaced_id": "crystal_dna_manifest::control_link_manifest",
+      "origin": "DERIVED_REAL",
+      "provenance": {
+        "path": "data/z_crystal_dna_asset_manifest.json",
+        "source_id": "control_link_manifest"
+      },
+      "rebuild_rule": {
+        "note": "rebuild_rule ≠ PRE-AUTHORIZED GARE REPAIR RECIPE; not executed",
+        "origin": "REAL_SOURCE",
+        "posture": "DECLARATIVE_RECOVERY_HINT",
+        "value": "z_sync_control_links.mjs dry-run then apply with review"
+      },
+      "source_declared": {
+        "dependencies": {
+          "label": "SOURCE_DECLARED",
+          "origin": "REAL_SOURCE",
+          "value": [
+            "dna_mesh_doctrine"
+          ]
+        },
+        "hash_optional": {
+          "label": "SOURCE_DECLARED",
+          "origin": "REAL_SOURCE",
+          "value": ""
+        },
+        "id": {
+          "label": "SOURCE_DECLARED",
+          "origin": "REAL_SOURCE",
+          "value": "control_link_manifest"
+        },
+        "owner_layer": {
+          "label": "SOURCE_DECLARED",
+          "origin": "REAL_SOURCE",
+          "value": "hub_control_link"
+        },
+        "path": {
+          "label": "SOURCE_DECLARED",
+          "origin": "REAL_SOURCE",
+          "value": "data/z_satellite_control_link_manifest.json"
+        },
+        "rebuild_rule": {
+          "label": "SOURCE_DECLARED",
+          "origin": "REAL_SOURCE",
+          "value": "z_sync_control_links.mjs dry-run then apply with review"
+        },
+        "risk": {
+          "label": "SOURCE_DECLARED",
+          "origin": "REAL_SOURCE",
+          "value": "medium"
+        },
+        "status": {
+          "label": "SOURCE_DECLARED",
+          "origin": "REAL_SOURCE",
+          "value": "GREEN"
+        },
+        "type": {
+          "label": "SOURCE_DECLARED",
+          "origin": "REAL_SOURCE",
+          "value": "registry"
+        }
+      },
+      "source_id": "control_link_manifest",
+      "source_namespace": "crystal_dna_manifest",
+      "status": {
+        "namespace": "CRYSTAL_DNA_CARD",
+        "note": "CRYSTAL_DNA_CARD GREEN ≠ CURRENT / project health / deploy / GARE eligibility",
+        "origin": "REAL_SOURCE",
+        "value": "GREEN"
+      }
+    },
+    {
+      "join_as_project": "NON_PROJECT_ASSET",
+      "namespaced_id": "crystal_dna_manifest::dna_mesh_doctrine",
+      "origin": "DERIVED_REAL",
+      "provenance": {
+        "path": "data/z_crystal_dna_asset_manifest.json",
+        "source_id": "dna_mesh_doctrine"
+      },
+      "rebuild_rule": {
+        "note": "rebuild_rule ≠ PRE-AUTHORIZED GARE REPAIR RECIPE; not executed",
+        "origin": "REAL_SOURCE",
+        "posture": "DECLARATIVE_RECOVERY_HINT",
+        "value": "human_authoring_only"
+      },
+      "source_declared": {
+        "dependencies": {
+          "label": "SOURCE_DECLARED",
+          "origin": "REAL_SOURCE",
+          "value": []
+        },
+        "hash_optional": {
+          "label": "SOURCE_DECLARED",
+          "origin": "REAL_SOURCE",
+          "value": ""
+        },
+        "id": {
+          "label": "SOURCE_DECLARED",
+          "origin": "REAL_SOURCE",
+          "value": "dna_mesh_doctrine"
+        },
+        "owner_layer": {
+          "label": "SOURCE_DECLARED",
+          "origin": "REAL_SOURCE",
+          "value": "hub_governance"
+        },
+        "path": {
+          "label": "SOURCE_DECLARED",
+          "origin": "REAL_SOURCE",
+          "value": "docs/Z_CRYSTAL_DNA_MESH.md"
+        },
+        "rebuild_rule": {
+          "label": "SOURCE_DECLARED",
+          "origin": "REAL_SOURCE",
+          "value": "human_authoring_only"
+        },
+        "risk": {
+          "label": "SOURCE_DECLARED",
+          "origin": "REAL_SOURCE",
+          "value": "low"
+        },
+        "status": {
+          "label": "SOURCE_DECLARED",
+          "origin": "REAL_SOURCE",
+          "value": "GREEN"
+        },
+        "type": {
+          "label": "SOURCE_DECLARED",
+          "origin": "REAL_SOURCE",
+          "value": "doc"
+        }
+      },
+      "source_id": "dna_mesh_doctrine",
+      "source_namespace": "crystal_dna_manifest",
+      "status": {
+        "namespace": "CRYSTAL_DNA_CARD",
+        "note": "CRYSTAL_DNA_CARD GREEN ≠ CURRENT / project health / deploy / GARE eligibility",
+        "origin": "REAL_SOURCE",
+        "value": "GREEN"
+      }
+    },
+    {
+      "join_as_project": "NON_PROJECT_ASSET",
+      "namespaced_id": "crystal_dna_manifest::doorway_workspace_registry",
+      "origin": "DERIVED_REAL",
+      "provenance": {
+        "path": "data/z_crystal_dna_asset_manifest.json",
+        "source_id": "doorway_workspace_registry"
+      },
+      "rebuild_rule": {
+        "note": "rebuild_rule ≠ PRE-AUTHORIZED GARE REPAIR RECIPE; not executed",
+        "origin": "REAL_SOURCE",
+        "posture": "DECLARATIVE_RECOVERY_HINT",
+        "value": "operator_edit_registry_then_z_doorway_status"
+      },
+      "source_declared": {
+        "dependencies": {
+          "label": "SOURCE_DECLARED",
+          "origin": "REAL_SOURCE",
+          "value": [
+            "dna_mesh_doctrine"
+          ]
+        },
+        "hash_optional": {
+          "label": "SOURCE_DECLARED",
+          "origin": "REAL_SOURCE",
+          "value": ""
+        },
+        "id": {
+          "label": "SOURCE_DECLARED",
+          "origin": "REAL_SOURCE",
+          "value": "doorway_workspace_registry"
+        },
+        "owner_layer": {
+          "label": "SOURCE_DECLARED",
+          "origin": "REAL_SOURCE",
+          "value": "hub_ssws"
+        },
+        "path": {
+          "label": "SOURCE_DECLARED",
+          "origin": "REAL_SOURCE",
+          "value": "data/z_doorway_workspace_registry.json"
+        },
+        "rebuild_rule": {
+          "label": "SOURCE_DECLARED",
+          "origin": "REAL_SOURCE",
+          "value": "operator_edit_registry_then_z_doorway_status"
+        },
+        "risk": {
+          "label": "SOURCE_DECLARED",
+          "origin": "REAL_SOURCE",
+          "value": "medium"
+        },
+        "status": {
+          "label": "SOURCE_DECLARED",
+          "origin": "REAL_SOURCE",
+          "value": "GREEN"
+        },
+        "type": {
+          "label": "SOURCE_DECLARED",
+          "origin": "REAL_SOURCE",
+          "value": "registry"
+        }
+      },
+      "source_id": "doorway_workspace_registry",
+      "source_namespace": "crystal_dna_manifest",
+      "status": {
+        "namespace": "CRYSTAL_DNA_CARD",
+        "note": "CRYSTAL_DNA_CARD GREEN ≠ CURRENT / project health / deploy / GARE eligibility",
+        "origin": "REAL_SOURCE",
+        "value": "GREEN"
+      }
+    },
+    {
+      "join_as_project": "NON_PROJECT_ASSET",
+      "namespaced_id": "crystal_dna_manifest::hub_pc_root_projects",
+      "origin": "DERIVED_REAL",
+      "provenance": {
+        "path": "data/z_crystal_dna_asset_manifest.json",
+        "source_id": "hub_pc_root_projects"
+      },
+      "rebuild_rule": {
+        "note": "rebuild_rule ≠ PRE-AUTHORIZED GARE REPAIR RECIPE; not executed",
+        "origin": "REAL_SOURCE",
+        "posture": "DECLARATIVE_RECOVERY_HINT",
+        "value": "see Z-EAII / pc-root catalog docs; no auto-merge"
+      },
+      "source_declared": {
+        "dependencies": {
+          "label": "SOURCE_DECLARED",
+          "origin": "REAL_SOURCE",
+          "value": [
+            "dna_mesh_doctrine"
+          ]
+        },
+        "hash_optional": {
+          "label": "SOURCE_DECLARED",
+          "origin": "REAL_SOURCE",
+          "value": ""
+        },
+        "id": {
+          "label": "SOURCE_DECLARED",
+          "origin": "REAL_SOURCE",
+          "value": "hub_pc_root_projects"
+        },
+        "owner_layer": {
+          "label": "SOURCE_DECLARED",
+          "origin": "REAL_SOURCE",
+          "value": "hub_registry"
+        },
+        "path": {
+          "label": "SOURCE_DECLARED",
+          "origin": "REAL_SOURCE",
+          "value": "data/z_pc_root_projects.json"
+        },
+        "rebuild_rule": {
+          "label": "SOURCE_DECLARED",
+          "origin": "REAL_SOURCE",
+          "value": "see Z-EAII / pc-root catalog docs; no auto-merge"
+        },
+        "risk": {
+          "label": "SOURCE_DECLARED",
+          "origin": "REAL_SOURCE",
+          "value": "high"
+        },
+        "status": {
+          "label": "SOURCE_DECLARED",
+          "origin": "REAL_SOURCE",
+          "value": "GREEN"
+        },
+        "type": {
+          "label": "SOURCE_DECLARED",
+          "origin": "REAL_SOURCE",
+          "value": "registry"
+        }
+      },
+      "source_id": "hub_pc_root_projects",
+      "source_namespace": "crystal_dna_manifest",
+      "status": {
+        "namespace": "CRYSTAL_DNA_CARD",
+        "note": "CRYSTAL_DNA_CARD GREEN ≠ CURRENT / project health / deploy / GARE eligibility",
+        "origin": "REAL_SOURCE",
+        "value": "GREEN"
+      }
+    },
+    {
+      "join_as_project": "NON_PROJECT_ASSET",
+      "namespaced_id": "crystal_dna_manifest::nas_cold_mirror_declaration",
+      "origin": "DERIVED_REAL",
+      "provenance": {
+        "path": "data/z_crystal_dna_asset_manifest.json",
+        "source_id": "nas_cold_mirror_declaration"
+      },
+      "rebuild_rule": {
+        "note": "rebuild_rule ≠ PRE-AUTHORIZED GARE REPAIR RECIPE; not executed",
+        "origin": "REAL_SOURCE",
+        "posture": "DECLARATIVE_RECOVERY_HINT",
+        "value": "NAS_WAIT_until_mounted_verified_then_compare_only"
+      },
+      "source_declared": {
+        "dependencies": {
+          "label": "SOURCE_DECLARED",
+          "origin": "REAL_SOURCE",
+          "value": []
+        },
+        "hash_optional": {
+          "label": "SOURCE_DECLARED",
+          "origin": "REAL_SOURCE",
+          "value": ""
+        },
+        "id": {
+          "label": "SOURCE_DECLARED",
+          "origin": "REAL_SOURCE",
+          "value": "nas_cold_mirror_declaration"
+        },
+        "owner_layer": {
+          "label": "SOURCE_DECLARED",
+          "origin": "REAL_SOURCE",
+          "value": "nas_future"
+        },
+        "path": {
+          "label": "SOURCE_DECLARED",
+          "origin": "REAL_SOURCE",
+          "value": "Z:/SanctuaryDNA/cold_mirror_declaration_stub"
+        },
+        "rebuild_rule": {
+          "label": "SOURCE_DECLARED",
+          "origin": "REAL_SOURCE",
+          "value": "NAS_WAIT_until_mounted_verified_then_compare_only"
+        },
+        "risk": {
+          "label": "SOURCE_DECLARED",
+          "origin": "REAL_SOURCE",
+          "value": "high"
+        },
+        "status": {
+          "label": "SOURCE_DECLARED",
+          "origin": "REAL_SOURCE",
+          "value": "NAS_WAIT"
+        },
+        "type": {
+          "label": "SOURCE_DECLARED",
+          "origin": "REAL_SOURCE",
+          "value": "registry"
+        }
+      },
+      "source_id": "nas_cold_mirror_declaration",
+      "source_namespace": "crystal_dna_manifest",
+      "status": {
+        "namespace": "CRYSTAL_DNA_CARD",
+        "note": "CRYSTAL_DNA_CARD GREEN ≠ CURRENT / project health / deploy / GARE eligibility",
+        "origin": "REAL_SOURCE",
+        "value": "NAS_WAIT"
+      }
+    },
+    {
+      "join_as_project": "NON_PROJECT_ASSET",
+      "namespaced_id": "crystal_dna_manifest::satellite_control_bridge_template",
+      "origin": "DERIVED_REAL",
+      "provenance": {
+        "path": "data/z_crystal_dna_asset_manifest.json",
+        "source_id": "satellite_control_bridge_template"
+      },
+      "rebuild_rule": {
+        "note": "rebuild_rule ≠ PRE-AUTHORIZED GARE REPAIR RECIPE; not executed",
+        "origin": "REAL_SOURCE",
+        "posture": "DECLARATIVE_RECOVERY_HINT",
+        "value": "sync_from_hub_template_only"
+      },
+      "source_declared": {
+        "dependencies": {
+          "label": "SOURCE_DECLARED",
+          "origin": "REAL_SOURCE",
+          "value": [
+            "control_link_manifest"
+          ]
+        },
+        "hash_optional": {
+          "label": "SOURCE_DECLARED",
+          "origin": "REAL_SOURCE",
+          "value": ""
+        },
+        "id": {
+          "label": "SOURCE_DECLARED",
+          "origin": "REAL_SOURCE",
+          "value": "satellite_control_bridge_template"
+        },
+        "owner_layer": {
+          "label": "SOURCE_DECLARED",
+          "origin": "REAL_SOURCE",
+          "value": "hub_control_link"
+        },
+        "path": {
+          "label": "SOURCE_DECLARED",
+          "origin": "REAL_SOURCE",
+          "value": "docs/Z_SANCTUARY_CONTROL_LINK.md"
+        },
+        "rebuild_rule": {
+          "label": "SOURCE_DECLARED",
+          "origin": "REAL_SOURCE",
+          "value": "sync_from_hub_template_only"
+        },
+        "risk": {
+          "label": "SOURCE_DECLARED",
+          "origin": "REAL_SOURCE",
+          "value": "medium"
+        },
+        "status": {
+          "label": "SOURCE_DECLARED",
+          "origin": "REAL_SOURCE",
+          "value": "GREEN"
+        },
+        "type": {
+          "label": "SOURCE_DECLARED",
+          "origin": "REAL_SOURCE",
+          "value": "bridge"
+        }
+      },
+      "source_id": "satellite_control_bridge_template",
+      "source_namespace": "crystal_dna_manifest",
+      "status": {
+        "namespace": "CRYSTAL_DNA_CARD",
+        "note": "CRYSTAL_DNA_CARD GREEN ≠ CURRENT / project health / deploy / GARE eligibility",
+        "origin": "REAL_SOURCE",
+        "value": "GREEN"
+      }
+    },
+    {
+      "join_as_project": "NON_PROJECT_ASSET",
+      "namespaced_id": "crystal_dna_manifest::z_lab_capsule_reference",
+      "origin": "DERIVED_REAL",
+      "provenance": {
+        "path": "data/z_crystal_dna_asset_manifest.json",
+        "source_id": "z_lab_capsule_reference"
+      },
+      "rebuild_rule": {
+        "note": "rebuild_rule ≠ PRE-AUTHORIZED GARE REPAIR RECIPE; not executed",
+        "origin": "REAL_SOURCE",
+        "posture": "DECLARATIVE_RECOVERY_HINT",
+        "value": "reference_only_no_runtime_bridge_without_charter"
+      },
+      "source_declared": {
+        "dependencies": {
+          "label": "SOURCE_DECLARED",
+          "origin": "REAL_SOURCE",
+          "value": [
+            "dna_mesh_doctrine"
+          ]
+        },
+        "hash_optional": {
+          "label": "SOURCE_DECLARED",
+          "origin": "REAL_SOURCE",
+          "value": ""
+        },
+        "id": {
+          "label": "SOURCE_DECLARED",
+          "origin": "REAL_SOURCE",
+          "value": "z_lab_capsule_reference"
+        },
+        "owner_layer": {
+          "label": "SOURCE_DECLARED",
+          "origin": "REAL_SOURCE",
+          "value": "z_lab_capsule"
+        },
+        "path": {
+          "label": "SOURCE_DECLARED",
+          "origin": "REAL_SOURCE",
+          "value": "docs/Z_LOGICAL_BRAINS_HUB_REFERENCE.md"
+        },
+        "rebuild_rule": {
+          "label": "SOURCE_DECLARED",
+          "origin": "REAL_SOURCE",
+          "value": "reference_only_no_runtime_bridge_without_charter"
+        },
+        "risk": {
+          "label": "SOURCE_DECLARED",
+          "origin": "REAL_SOURCE",
+          "value": "medium"
+        },
+        "status": {
+          "label": "SOURCE_DECLARED",
+          "origin": "REAL_SOURCE",
+          "value": "BLUE"
+        },
+        "type": {
+          "label": "SOURCE_DECLARED",
+          "origin": "REAL_SOURCE",
+          "value": "bridge"
+        }
+      },
+      "source_id": "z_lab_capsule_reference",
+      "source_namespace": "crystal_dna_manifest",
+      "status": {
+        "namespace": "CRYSTAL_DNA_CARD",
+        "note": "CRYSTAL_DNA_CARD GREEN ≠ CURRENT / project health / deploy / GARE eligibility",
+        "origin": "REAL_SOURCE",
+        "value": "BLUE"
+      }
+    }
+  ],
+  "sources": [
+    {
+      "path": "data/z_crystal_dna_asset_manifest.json",
+      "role": "dna_manifest",
+      "sha256": "11d8814fc2111c9858673a18b33f24b8aa9352a75f4ffaed40c38b5201b5e1b8"
+    },
+    {
+      "path": "data/reports/z_crystal_dna_drift_report.json",
+      "role": "drift_report",
+      "sha256": "77cb24e003f215b8606629cc2b1a31ee51620833b979b11eebe3697c75521136"
+    },
+    {
+      "path": "data/z_pc_root_projects.json",
+      "role": "pc_root_coverage_only",
+      "sha256": "b80156c335ca6056dd4e3592d7431b127f0ee898c45b3bde39ab7501b24251c8"
+    }
+  ],
+  "summary": {
+    "dependency_edge_count": 6,
+    "drift_finding_count": 3,
+    "origin": "DERIVED",
+    "project_alias_join_count": 0,
+    "project_ambiguous_count": 0,
+    "project_exact_join_count": 0,
+    "project_missing_count": 22,
+    "resolved_dependency_count": 6,
+    "shard_count": 8,
+    "status_counts": {
+      "BLUE": 1,
+      "GREEN": 5,
+      "NAS_WAIT": 1,
+      "YELLOW": 1
+    },
+    "unresolved_dependency_count": 0
+  },
+  "unmatched_as_projects": [
+    {
+      "classification": "NON_PROJECT_ASSET",
+      "origin": "DERIVED",
+      "source_id": "cloudflare_governance_pack"
+    },
+    {
+      "classification": "NON_PROJECT_ASSET",
+      "origin": "DERIVED",
+      "source_id": "control_link_manifest"
+    },
+    {
+      "classification": "NON_PROJECT_ASSET",
+      "origin": "DERIVED",
+      "source_id": "dna_mesh_doctrine"
+    },
+    {
+      "classification": "NON_PROJECT_ASSET",
+      "origin": "DERIVED",
+      "source_id": "doorway_workspace_registry"
+    },
+    {
+      "classification": "NON_PROJECT_ASSET",
+      "origin": "DERIVED",
+      "source_id": "hub_pc_root_projects"
+    },
+    {
+      "classification": "NON_PROJECT_ASSET",
+      "origin": "DERIVED",
+      "source_id": "nas_cold_mirror_declaration"
+    },
+    {
+      "classification": "NON_PROJECT_ASSET",
+      "origin": "DERIVED",
+      "source_id": "satellite_control_bridge_template"
+    },
+    {
+      "classification": "NON_PROJECT_ASSET",
+      "origin": "DERIVED",
+      "source_id": "z_lab_capsule_reference"
+    }
+  ]
+}
