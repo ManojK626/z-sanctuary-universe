@@ -381,7 +381,9 @@
     "test:e2e:reality-run": "node scripts/z_e2e_reality_runner.mjs",
     "z:formula:semantic-goldens": "node scripts/z_formula_semantic_goldens.mjs",
     "z:foundation:verify": "node scripts/z_deterministic_foundation_verify.mjs",
-    "z:foundation:tevv": "node scripts/z_deterministic_foundation_tevv_audit.mjs"
+    "z:foundation:tevv": "node scripts/z_deterministic_foundation_tevv_audit.mjs",
+    "z:awareness:read-model:p0": "node scripts/z_composed_awareness_read_model_p0.mjs",
+    "z:awareness:read-model:p0:verify": "node scripts/z_composed_awareness_read_model_p0_verify.mjs"
   },
   "devDependencies": {
     "@commitlint/cli": "^19.3.0",
