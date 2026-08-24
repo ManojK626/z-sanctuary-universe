@@ -1,0 +1,772 @@
+{
+  "adapter_version": "p0-ai-ecosphere-typed-1",
+  "advisory_ledger": {
+    "entries": [
+      {
+        "band": "yellow",
+        "band_namespace": "AI_ECOSPHERE_LEDGER",
+        "color": "#ffca28",
+        "ledger_kind": "OVERALL",
+        "note": "LEDGER ENTRY ≠ LIVE AI; GREEN ≠ ACTIVE; sync_score ≠ truth/authority",
+        "origin": "DERIVED_REAL",
+        "potential_label": "developing",
+        "provenance": {
+          "generated_at": "2026-05-03T14:38:59.183Z",
+          "origin": "DERIVED_REAL",
+          "path": "data/reports/z_ai_ecosphere_ledger.json",
+          "source_namespace": "AI_ECOSPHERE_LEDGER",
+          "source_record": "overall"
+        },
+        "source_id": "overall",
+        "sync_score": 67,
+        "verified_active": false
+      },
+      {
+        "band": "green",
+        "band_namespace": "AI_ECOSPHERE_LEDGER",
+        "color": "#66bb6a",
+        "detail": {
+          "notes": [
+            "Tower status: clear · agents: 4",
+            "4 agent(s) still planned — promote with governance"
+          ],
+          "sync_score": 81
+        },
+        "ledger_kind": "RING",
+        "note": "LEDGER ENTRY ≠ LIVE AI; band ≠ runtime",
+        "origin": "DERIVED_REAL",
+        "potential_label": "high potential",
+        "provenance": {
+          "generated_at": "2026-05-03T14:38:59.183Z",
+          "origin": "DERIVED_REAL",
+          "path": "data/reports/z_ai_ecosphere_ledger.json",
+          "source_namespace": "AI_ECOSPHERE_LEDGER",
+          "source_record": "rings[id=ai_tower]"
+        },
+        "ring_title": "AI Tower",
+        "source_id": "ai_tower",
+        "sync_score": 81,
+        "verified_active": false
+      },
+      {
+        "band": "red",
+        "band_namespace": "AI_ECOSPHERE_LEDGER",
+        "color": "#ef5350",
+        "detail": {
+          "notes": [
+            "Mini-bots online: 0/4",
+            "Super ghost feed: green",
+            "5 formula famil(ies) marked shadow in QOSMEI"
+          ],
+          "sync_score": 30
+        },
+        "ledger_kind": "RING",
+        "note": "LEDGER ENTRY ≠ LIVE AI; band ≠ runtime",
+        "origin": "DERIVED_REAL",
+        "potential_label": "needs attention",
+        "provenance": {
+          "generated_at": "2026-05-03T14:38:59.183Z",
+          "origin": "DERIVED_REAL",
+          "path": "data/reports/z_ai_ecosphere_ledger.json",
+          "source_namespace": "AI_ECOSPHERE_LEDGER",
+          "source_record": "rings[id=shadow_minibots]"
+        },
+        "ring_title": "Shadow · mini-bots",
+        "source_id": "shadow_minibots",
+        "sync_score": 30,
+        "verified_active": false
+      },
+      {
+        "band": "yellow",
+        "band_namespace": "AI_ECOSPHERE_LEDGER",
+        "color": "#ffca28",
+        "detail": {
+          "notes": [
+            "Formula posture: watch",
+            "QOSMEI families: zMega, lpbsFlexInfinite, ggaesp360, zPowerAZ, microZ"
+          ],
+          "sync_score": 66
+        },
+        "ledger_kind": "RING",
+        "note": "LEDGER ENTRY ≠ LIVE AI; band ≠ runtime",
+        "origin": "DERIVED_REAL",
+        "potential_label": "developing",
+        "provenance": {
+          "generated_at": "2026-05-03T14:38:59.183Z",
+          "origin": "DERIVED_REAL",
+          "path": "data/reports/z_ai_ecosphere_ledger.json",
+          "source_namespace": "AI_ECOSPHERE_LEDGER",
+          "source_record": "rings[id=z_mega_formulas]"
+        },
+        "ring_title": "Z-Mega & formulas",
+        "source_id": "z_mega_formulas",
+        "sync_score": 66,
+        "verified_active": false
+      },
+      {
+        "band": "green",
+        "band_namespace": "AI_ECOSPHERE_LEDGER",
+        "color": "#66bb6a",
+        "detail": {
+          "notes": [
+            "Workspace: Z-SSWS",
+            "Formula registry entries: 1"
+          ],
+          "sync_score": 92
+        },
+        "ledger_kind": "RING",
+        "note": "LEDGER ENTRY ≠ LIVE AI; band ≠ runtime",
+        "origin": "DERIVED_REAL",
+        "potential_label": "high potential",
+        "provenance": {
+          "generated_at": "2026-05-03T14:38:59.183Z",
+          "origin": "DERIVED_REAL",
+          "path": "data/reports/z_ai_ecosphere_ledger.json",
+          "source_namespace": "AI_ECOSPHERE_LEDGER",
+          "source_record": "rings[id=z_ssws]"
+        },
+        "ring_title": "Z-SSWS",
+        "source_id": "z_ssws",
+        "sync_score": 92,
+        "verified_active": false
+      }
+    ],
+    "generated_at": "2026-05-03T14:38:59.183Z",
+    "governance_note": "Advisory ledger only — Hierarchy Chief, DRP, and Enforcer are not overridden. Scores derive from hub JSON reports."
+  },
+  "configuration": {
+    "actor_classes": [
+      "tower_agent",
+      "shadow_pipeline",
+      "mini_bot",
+      "cursor_subagent",
+      "super_chat",
+      "ssws_task"
+    ],
+    "config_schema_version": 1,
+    "note": "CONFIG FILE ≠ PROCESS RUNNING",
+    "origin": "DERIVED_REAL",
+    "purpose": "Unify observability for Z-SSWS, Z-Mega / QOSMEI formula families, AI Tower agents, shadow pipelines, and mini-bot assistants. Advisory scores — not autonomous execution authority."
+  },
+  "conflicts": [
+    {
+      "claims": [
+        {
+          "record": "overall.sync_score",
+          "source": "data/reports/z_ai_ecosphere_ledger.json",
+          "value": 67
+        },
+        {
+          "record": "consistency_alerts.inputs.ecosphere_overall_sync",
+          "source": "data/reports/z_ai_ecosphere_ledger.json",
+          "value": 74
+        }
+      ],
+      "entity_ref": "AI_ECOSPHERE_LEDGER::overall",
+      "note": "SAME-FIELD CONFLICT — no auto-winner",
+      "origin": "DERIVED_REAL",
+      "posture": "UNRESOLVED",
+      "semantic_field": "ledger.overall.sync_score",
+      "source_refs": [
+        "data/reports/z_ai_ecosphere_ledger.json"
+      ]
+    },
+    {
+      "claims": [
+        {
+          "record": "rings[id=z_mega_formulas].sync_score",
+          "source": "data/reports/z_ai_ecosphere_ledger.json",
+          "value": 66
+        },
+        {
+          "record": "delta.rings[z_mega_formulas].current",
+          "source": "data/reports/z_ai_ecosphere_ledger.json",
+          "value": 94
+        }
+      ],
+      "entity_ref": "ECOSPHERE_RING::z_mega_formulas",
+      "note": "SAME-FIELD CONFLICT — no auto-winner",
+      "origin": "DERIVED_REAL",
+      "posture": "UNRESOLVED",
+      "semantic_field": "ledger.ring.sync_score",
+      "source_refs": [
+        "data/reports/z_ai_ecosphere_ledger.json"
+      ]
+    }
+  ],
+  "ecosphere_rings": [
+    {
+      "family": "ECOSPHERE_RING",
+      "label": "AI Tower (agents + pulses) — refresh with z:whale-bus:surfaces (z_ai_status.json)",
+      "namespaced_id": "ECOSPHERE_RING::ai_tower",
+      "origin": "DERIVED_REAL",
+      "provenance": {
+        "origin": "REAL_SOURCE",
+        "path": "data/z_ai_ecosphere_config.json",
+        "source_namespace": "AI_ECOSPHERE_CONFIG",
+        "source_record": "rings[id=ai_tower]"
+      },
+      "registration": {
+        "note": "DECLARED_IN_CONFIG ≠ ACTIVE",
+        "source_namespace": "AI_ECOSPHERE_CONFIG",
+        "source_value": "DECLARED_IN_CONFIG"
+      },
+      "source_id": "ai_tower"
+    },
+    {
+      "family": "ECOSPHERE_RING",
+      "label": "Shadow AI · Z-SSWSs · super-ghost — ssws:shadow-verify in Whale Bus surface deck",
+      "namespaced_id": "ECOSPHERE_RING::shadow_minibots",
+      "origin": "DERIVED_REAL",
+      "provenance": {
+        "origin": "REAL_SOURCE",
+        "path": "data/z_ai_ecosphere_config.json",
+        "source_namespace": "AI_ECOSPHERE_CONFIG",
+        "source_record": "rings[id=shadow_minibots]"
+      },
+      "registration": {
+        "note": "DECLARED_IN_CONFIG ≠ ACTIVE",
+        "source_namespace": "AI_ECOSPHERE_CONFIG",
+        "source_value": "DECLARED_IN_CONFIG"
+      },
+      "source_id": "shadow_minibots"
+    },
+    {
+      "family": "ECOSPHERE_RING",
+      "label": "Z-Mega & formula posture (guardian + QOSMEI)",
+      "namespaced_id": "ECOSPHERE_RING::z_mega_formulas",
+      "origin": "DERIVED_REAL",
+      "provenance": {
+        "origin": "REAL_SOURCE",
+        "path": "data/z_ai_ecosphere_config.json",
+        "source_namespace": "AI_ECOSPHERE_CONFIG",
+        "source_record": "rings[id=z_mega_formulas]"
+      },
+      "registration": {
+        "note": "DECLARED_IN_CONFIG ≠ ACTIVE",
+        "source_namespace": "AI_ECOSPHERE_CONFIG",
+        "source_value": "DECLARED_IN_CONFIG"
+      },
+      "source_id": "z_mega_formulas"
+    },
+    {
+      "family": "ECOSPHERE_RING",
+      "label": "Z-SSWS (workspace · server · dashboard) — comms+registry handoff",
+      "namespaced_id": "ECOSPHERE_RING::z_ssws",
+      "origin": "DERIVED_REAL",
+      "provenance": {
+        "origin": "REAL_SOURCE",
+        "path": "data/z_ai_ecosphere_config.json",
+        "source_namespace": "AI_ECOSPHERE_CONFIG",
+        "source_record": "rings[id=z_ssws]"
+      },
+      "registration": {
+        "note": "DECLARED_IN_CONFIG ≠ ACTIVE",
+        "source_namespace": "AI_ECOSPHERE_CONFIG",
+        "source_value": "DECLARED_IN_CONFIG"
+      },
+      "source_id": "z_ssws"
+    }
+  ],
+  "minibots": [
+    {
+      "family": "MINIBOT",
+      "live_llm": false,
+      "mode": "observer",
+      "model_provider": "NOT_PRESENT",
+      "namespaced_id": "MINIBOT::DesignerBot",
+      "online_note": "source_online=false preserved — not universal DORMANT/DEAD/DISABLED",
+      "origin": "DERIVED_REAL",
+      "provenance": {
+        "generated_at": "2026-05-03T14:39:05.969Z",
+        "origin": "REAL_SOURCE",
+        "path": "data/reports/z_ai_status.json",
+        "source_namespace": "AI_STATUS",
+        "source_record": "miniai[name=DesignerBot]"
+      },
+      "source_id": "DesignerBot",
+      "source_online": false,
+      "verified_active": false
+    },
+    {
+      "family": "MINIBOT",
+      "live_llm": false,
+      "mode": "observer",
+      "model_provider": "NOT_PRESENT",
+      "namespaced_id": "MINIBOT::NavigatorBot",
+      "online_note": "source_online=false preserved — not universal DORMANT/DEAD/DISABLED",
+      "origin": "DERIVED_REAL",
+      "provenance": {
+        "generated_at": "2026-05-03T14:39:05.969Z",
+        "origin": "REAL_SOURCE",
+        "path": "data/reports/z_ai_status.json",
+        "source_namespace": "AI_STATUS",
+        "source_record": "miniai[name=NavigatorBot]"
+      },
+      "source_id": "NavigatorBot",
+      "source_online": false,
+      "verified_active": false
+    },
+    {
+      "family": "MINIBOT",
+      "live_llm": false,
+      "mode": "observer",
+      "model_provider": "NOT_PRESENT",
+      "namespaced_id": "MINIBOT::ProtectorBot",
+      "online_note": "source_online=false preserved — not universal DORMANT/DEAD/DISABLED",
+      "origin": "DERIVED_REAL",
+      "provenance": {
+        "generated_at": "2026-05-03T14:39:05.969Z",
+        "origin": "REAL_SOURCE",
+        "path": "data/reports/z_ai_status.json",
+        "source_namespace": "AI_STATUS",
+        "source_record": "miniai[name=ProtectorBot]"
+      },
+      "source_id": "ProtectorBot",
+      "source_online": false,
+      "verified_active": false
+    },
+    {
+      "family": "MINIBOT",
+      "live_llm": false,
+      "mode": "observer",
+      "model_provider": "NOT_PRESENT",
+      "namespaced_id": "MINIBOT::ScribeBot",
+      "online_note": "source_online=false preserved — not universal DORMANT/DEAD/DISABLED",
+      "origin": "DERIVED_REAL",
+      "provenance": {
+        "generated_at": "2026-05-03T14:39:05.969Z",
+        "origin": "REAL_SOURCE",
+        "path": "data/reports/z_ai_status.json",
+        "source_namespace": "AI_STATUS",
+        "source_record": "miniai[name=ScribeBot]"
+      },
+      "source_id": "ScribeBot",
+      "source_online": false,
+      "verified_active": false
+    }
+  ],
+  "model_provider_evidence": "NOT_PRESENT",
+  "ordering_rule": "rings/agents/minibots/ledger RING entries by source_id; conflicts by entity_ref; unmatched by source_key",
+  "origin": "DERIVED_REAL",
+  "posture": "DERIVED_READ_MODEL",
+  "project_associations": [],
+  "projection_id": "z_composed_awareness_ai_ecosphere_p0",
+  "projection_version": "z-composed-awareness-ai-ecosphere-p0-1.0.0",
+  "runtime_evidence": [
+    {
+      "family": "TOWER_AGENT",
+      "lastPulse": null,
+      "namespaced_id": "TOWER_AGENT::ai-agent-designer",
+      "origin": "DERIVED_REAL",
+      "provenance": {
+        "generated_at": "2026-05-03T14:39:05.969Z",
+        "origin": "REAL_SOURCE",
+        "path": "data/reports/z_ai_status.json",
+        "source_namespace": "AI_STATUS",
+        "source_record": "agents[id=ai-agent-designer]"
+      },
+      "source_status": "planned",
+      "verified_active": false
+    },
+    {
+      "family": "TOWER_AGENT",
+      "lastPulse": null,
+      "namespaced_id": "TOWER_AGENT::ai-agent-navigator",
+      "origin": "DERIVED_REAL",
+      "provenance": {
+        "generated_at": "2026-05-03T14:39:05.969Z",
+        "origin": "REAL_SOURCE",
+        "path": "data/reports/z_ai_status.json",
+        "source_namespace": "AI_STATUS",
+        "source_record": "agents[id=ai-agent-navigator]"
+      },
+      "source_status": "planned",
+      "verified_active": false
+    },
+    {
+      "family": "TOWER_AGENT",
+      "lastPulse": null,
+      "namespaced_id": "TOWER_AGENT::ai-agent-protector",
+      "origin": "DERIVED_REAL",
+      "provenance": {
+        "generated_at": "2026-05-03T14:39:05.969Z",
+        "origin": "REAL_SOURCE",
+        "path": "data/reports/z_ai_status.json",
+        "source_namespace": "AI_STATUS",
+        "source_record": "agents[id=ai-agent-protector]"
+      },
+      "source_status": "planned",
+      "verified_active": false
+    },
+    {
+      "family": "TOWER_AGENT",
+      "lastPulse": null,
+      "namespaced_id": "TOWER_AGENT::ai-agent-scribe",
+      "origin": "DERIVED_REAL",
+      "provenance": {
+        "generated_at": "2026-05-03T14:39:05.969Z",
+        "origin": "REAL_SOURCE",
+        "path": "data/reports/z_ai_status.json",
+        "source_namespace": "AI_STATUS",
+        "source_record": "agents[id=ai-agent-scribe]"
+      },
+      "source_status": "planned",
+      "verified_active": false
+    },
+    {
+      "family": "MINIBOT",
+      "mode": "observer",
+      "namespaced_id": "MINIBOT::DesignerBot",
+      "origin": "DERIVED_REAL",
+      "provenance": {
+        "generated_at": "2026-05-03T14:39:05.969Z",
+        "origin": "REAL_SOURCE",
+        "path": "data/reports/z_ai_status.json",
+        "source_namespace": "AI_STATUS",
+        "source_record": "miniai[name=DesignerBot]"
+      },
+      "source_online": false,
+      "verified_active": false
+    },
+    {
+      "family": "MINIBOT",
+      "mode": "observer",
+      "namespaced_id": "MINIBOT::NavigatorBot",
+      "origin": "DERIVED_REAL",
+      "provenance": {
+        "generated_at": "2026-05-03T14:39:05.969Z",
+        "origin": "REAL_SOURCE",
+        "path": "data/reports/z_ai_status.json",
+        "source_namespace": "AI_STATUS",
+        "source_record": "miniai[name=NavigatorBot]"
+      },
+      "source_online": false,
+      "verified_active": false
+    },
+    {
+      "family": "MINIBOT",
+      "mode": "observer",
+      "namespaced_id": "MINIBOT::ProtectorBot",
+      "origin": "DERIVED_REAL",
+      "provenance": {
+        "generated_at": "2026-05-03T14:39:05.969Z",
+        "origin": "REAL_SOURCE",
+        "path": "data/reports/z_ai_status.json",
+        "source_namespace": "AI_STATUS",
+        "source_record": "miniai[name=ProtectorBot]"
+      },
+      "source_online": false,
+      "verified_active": false
+    },
+    {
+      "family": "MINIBOT",
+      "mode": "observer",
+      "namespaced_id": "MINIBOT::ScribeBot",
+      "origin": "DERIVED_REAL",
+      "provenance": {
+        "generated_at": "2026-05-03T14:39:05.969Z",
+        "origin": "REAL_SOURCE",
+        "path": "data/reports/z_ai_status.json",
+        "source_namespace": "AI_STATUS",
+        "source_record": "miniai[name=ScribeBot]"
+      },
+      "source_online": false,
+      "verified_active": false
+    }
+  ],
+  "schema_version": 1,
+  "sources": [
+    {
+      "canonical_json_sha256": "0e2e6c50e933fc9baf441343ddabd18fe21234c584172fe339b0934520988620",
+      "origin": "REAL_SOURCE",
+      "path": "data/z_ai_ecosphere_config.json",
+      "role": "DECLARED_CONFIGURATION_REGISTRATION",
+      "sha256": "7bcf53d5b0b9a1bb2d5ab2ed6f3f7e31033fcfe3e84e03f6eb27dc04dd468c51"
+    },
+    {
+      "canonical_json_sha256": "1ba51ce7998fe7deb7b1940c6239cbf1fe2961ccccefcaf439753d5ee2f01866",
+      "origin": "DERIVED_REAL",
+      "path": "data/reports/z_ai_ecosphere_ledger.json",
+      "role": "DERIVED_ADVISORY_LEDGER",
+      "sha256": "7796381b31cd6c062e14e1303f42e5599fc60a977d45b22b8b7813e76d28333f"
+    },
+    {
+      "canonical_json_sha256": "ab1ac3ce1f572f0e0c8fe98ac4f2369df49d20ce8fcd3a9d64940dc7eea1885a",
+      "origin": "REAL_SOURCE",
+      "path": "data/reports/z_ai_status.json",
+      "role": "DECLARED_TOWER_MINIBOT_STATUS",
+      "sha256": "47345ba358101b0729c8e360a8ef4fbe0b1e8c426c9de94566f211d25aada1e4"
+    }
+  ],
+  "summary": {
+    "conflict_count": 2,
+    "dormant_classification": "UNKNOWN",
+    "ecosphere_ring_count": 4,
+    "ledger_entry_count": 5,
+    "minibot_count": 4,
+    "note": "No collapsed universal AI total. dormant numeric count omitted (not source-deterministic).",
+    "origin": "DERIVED",
+    "tower_agent_count": 4,
+    "unmatched_record_count": 5,
+    "unverified_runtime_evidence_count": 8,
+    "verified_active_runtime_count": 0,
+    "verified_project_association_count": 0
+  },
+  "tower_agents": [
+    {
+      "family": "TOWER_AGENT",
+      "lastPulse": null,
+      "lastPulse_note": "NO RECORDED PULSE — not proven offline/dead/broken",
+      "live_llm": false,
+      "model_provider": "NOT_PRESENT",
+      "namespaced_id": "TOWER_AGENT::ai-agent-designer",
+      "origin": "DERIVED_REAL",
+      "owner": "RKPK",
+      "planned": true,
+      "provenance": {
+        "generated_at": "2026-05-03T14:39:05.969Z",
+        "origin": "REAL_SOURCE",
+        "path": "data/reports/z_ai_status.json",
+        "source_namespace": "AI_STATUS",
+        "source_record": "agents[id=ai-agent-designer]"
+      },
+      "source_id": "ai-agent-designer",
+      "source_status": "planned",
+      "verified_active": false
+    },
+    {
+      "family": "TOWER_AGENT",
+      "lastPulse": null,
+      "lastPulse_note": "NO RECORDED PULSE — not proven offline/dead/broken",
+      "live_llm": false,
+      "model_provider": "NOT_PRESENT",
+      "namespaced_id": "TOWER_AGENT::ai-agent-navigator",
+      "origin": "DERIVED_REAL",
+      "owner": "SKK",
+      "planned": true,
+      "provenance": {
+        "generated_at": "2026-05-03T14:39:05.969Z",
+        "origin": "REAL_SOURCE",
+        "path": "data/reports/z_ai_status.json",
+        "source_namespace": "AI_STATUS",
+        "source_record": "agents[id=ai-agent-navigator]"
+      },
+      "source_id": "ai-agent-navigator",
+      "source_status": "planned",
+      "verified_active": false
+    },
+    {
+      "family": "TOWER_AGENT",
+      "lastPulse": null,
+      "lastPulse_note": "NO RECORDED PULSE — not proven offline/dead/broken",
+      "live_llm": false,
+      "model_provider": "NOT_PRESENT",
+      "namespaced_id": "TOWER_AGENT::ai-agent-protector",
+      "origin": "DERIVED_REAL",
+      "owner": "SKK",
+      "planned": true,
+      "provenance": {
+        "generated_at": "2026-05-03T14:39:05.969Z",
+        "origin": "REAL_SOURCE",
+        "path": "data/reports/z_ai_status.json",
+        "source_namespace": "AI_STATUS",
+        "source_record": "agents[id=ai-agent-protector]"
+      },
+      "source_id": "ai-agent-protector",
+      "source_status": "planned",
+      "verified_active": false
+    },
+    {
+      "family": "TOWER_AGENT",
+      "lastPulse": null,
+      "lastPulse_note": "NO RECORDED PULSE — not proven offline/dead/broken",
+      "live_llm": false,
+      "model_provider": "NOT_PRESENT",
+      "namespaced_id": "TOWER_AGENT::ai-agent-scribe",
+      "origin": "DERIVED_REAL",
+      "owner": "SKK",
+      "planned": true,
+      "provenance": {
+        "generated_at": "2026-05-03T14:39:05.969Z",
+        "origin": "REAL_SOURCE",
+        "path": "data/reports/z_ai_status.json",
+        "source_namespace": "AI_STATUS",
+        "source_record": "agents[id=ai-agent-scribe]"
+      },
+      "source_id": "ai-agent-scribe",
+      "source_status": "planned",
+      "verified_active": false
+    }
+  ],
+  "tower_meta": {
+    "agent_count": 4,
+    "frozen": false,
+    "generated_at": "2026-05-03T14:39:05.969Z",
+    "intent_surface": "planned_agents_manifest_only",
+    "notes": "Observational only. No execution authority. AI Tower ai-agent modules in manifest are planned-only until explicitly promoted.",
+    "origin": "DERIVED_REAL",
+    "planned_rollout_only": true,
+    "provenance": {
+      "generated_at": "2026-05-03T14:39:05.969Z",
+      "origin": "REAL_SOURCE",
+      "path": "data/reports/z_ai_status.json",
+      "source_namespace": "AI_STATUS",
+      "source_record": "ai_tower"
+    },
+    "status": "clear",
+    "tower_phase": "blueprint"
+  },
+  "unmatched_records": [
+    {
+      "note": "Retained; qosmei_core in status ≠ QOSMEI manifest consume; ≠ swarm live",
+      "origin": "DERIVED_REAL",
+      "provenance": {
+        "generated_at": "2026-05-03T14:39:05.969Z",
+        "origin": "REAL_SOURCE",
+        "path": "data/reports/z_ai_status.json",
+        "source_namespace": "AI_STATUS",
+        "source_record": "disturbance_watch"
+      },
+      "reason": "NOT_TYPED_AI_IDENTITY",
+      "source_key": "disturbance_watch",
+      "source_value": {
+        "disturbance_score": 0,
+        "failed_checks": 0,
+        "risk_class": "low",
+        "status": "green"
+      }
+    },
+    {
+      "note": "Retained; qosmei_core in status ≠ QOSMEI manifest consume; ≠ swarm live",
+      "origin": "DERIVED_REAL",
+      "provenance": {
+        "generated_at": "2026-05-03T14:39:05.969Z",
+        "origin": "REAL_SOURCE",
+        "path": "data/reports/z_ai_status.json",
+        "source_namespace": "AI_STATUS",
+        "source_record": "hygiene"
+      },
+      "reason": "NOT_TYPED_AI_IDENTITY",
+      "source_key": "hygiene",
+      "source_value": {
+        "generated_at": "2026-04-26T01:56:10.035Z",
+        "pending_count": null,
+        "status": "hold"
+      }
+    },
+    {
+      "note": "Retained; qosmei_core in status ≠ QOSMEI manifest consume; ≠ swarm live",
+      "origin": "DERIVED_REAL",
+      "provenance": {
+        "generated_at": "2026-05-03T14:39:05.969Z",
+        "origin": "REAL_SOURCE",
+        "path": "data/reports/z_ai_status.json",
+        "source_namespace": "AI_STATUS",
+        "source_record": "qosmei_core"
+      },
+      "reason": "NOT_TYPED_AI_IDENTITY",
+      "source_key": "qosmei_core",
+      "source_value": {
+        "advisory_only": true,
+        "composite_score": 100,
+        "confidence_band": "high",
+        "generated_at": "2026-05-03T14:39:05.818Z",
+        "lane_priority": "optimize",
+        "status": "clear"
+      }
+    },
+    {
+      "note": "Retained; qosmei_core in status ≠ QOSMEI manifest consume; ≠ swarm live",
+      "origin": "DERIVED_REAL",
+      "provenance": {
+        "generated_at": "2026-05-03T14:39:05.969Z",
+        "origin": "REAL_SOURCE",
+        "path": "data/reports/z_ai_status.json",
+        "source_namespace": "AI_STATUS",
+        "source_record": "super_ghost_feed"
+      },
+      "reason": "NOT_TYPED_AI_IDENTITY",
+      "source_key": "super_ghost_feed",
+      "source_value": {
+        "message": "Trouble Maker scan is clear. No disturbance chain detected.",
+        "risk_class": "low",
+        "status": "green"
+      }
+    },
+    {
+      "note": "Retained; actor_id is not a Project World association",
+      "origin": "DERIVED_REAL",
+      "provenance": {
+        "generated_at": "2026-05-03T14:38:59.183Z",
+        "origin": "DERIVED_REAL",
+        "path": "data/reports/z_ai_ecosphere_ledger.json",
+        "source_namespace": "AI_ECOSPHERE_LEDGER",
+        "source_record": "task_accomplishments"
+      },
+      "reason": "LEDGER_TASK_SAMPLES_NOT_TYPED_IDENTITY",
+      "source_key": "task_accomplishments",
+      "source_value": {
+        "avg_rating_pct": 85,
+        "by_actor_class": {
+          "mini_bot": 1,
+          "ssws_task": 1
+        },
+        "by_namespace": {
+          "business": {
+            "avg_rating_pct": 82,
+            "by_actor_class": {
+              "ssws_task": 1
+            },
+            "count": 1
+          },
+          "creator": {
+            "avg_rating_pct": 88,
+            "by_actor_class": {
+              "mini_bot": 1
+            },
+            "count": 1
+          }
+        },
+        "combined": {
+          "avg_rating_pct": 85,
+          "by_actor_class": {
+            "mini_bot": 1,
+            "ssws_task": 1
+          },
+          "total_entries": 2
+        },
+        "log_files": {
+          "business": "data/logs/z_ai_task_accomplishments_business.jsonl",
+          "creator": "data/logs/z_ai_task_accomplishments.jsonl",
+          "csv_export": "data/reports/z_ai_task_accomplishments.csv"
+        },
+        "recent_sample": [
+          {
+            "actor_class": "ssws_task",
+            "actor_id": "hub-verify",
+            "drp_ok": true,
+            "namespace": "business",
+            "potential_note": "Automate in CI when GitHub Actions enabled",
+            "rating_pct": 82,
+            "schema": "z_ai_task_accomplishment_v1",
+            "task": "Example: customer-facing dashboard smoke test passed",
+            "ts": "2026-04-19T14:30:00.000Z"
+          },
+          {
+            "actor_class": "mini_bot",
+            "actor_id": "DesignerBot",
+            "drp_ok": true,
+            "namespace": "creator",
+            "potential_note": "Extend rollup to GitHub Actions bots when enabled",
+            "rating_pct": 88,
+            "schema": "z_ai_task_accomplishment_v1",
+            "task": "Example: dashboard registry verify wired to daily gate",
+            "ts": "2026-04-19T12:00:00.000Z"
+          }
+        ],
+        "total_entries": 2
+      }
+    }
+  ]
+}
