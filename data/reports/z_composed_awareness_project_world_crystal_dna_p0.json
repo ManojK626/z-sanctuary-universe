@@ -1,0 +1,3194 @@
+{
+  "composition_id": "z_composed_awareness_project_world_crystal_dna_p0",
+  "composition_version": "z-composed-awareness-pw-dna-p0-1.0.0",
+  "conflicts": [],
+  "cross_lens_links": [],
+  "crystal_dna_lens": {
+    "dependencies": [
+      {
+        "direction": "DEPENDS_ON",
+        "from_shard": "cloudflare_governance_pack",
+        "note": "DEPENDENCY ≠ OWNERSHIP",
+        "origin": "DERIVED_REAL",
+        "resolution": "RESOLVED",
+        "source": "data/z_crystal_dna_asset_manifest.json#shards[].dependencies",
+        "to_shard": "dna_mesh_doctrine"
+      },
+      {
+        "direction": "DEPENDS_ON",
+        "from_shard": "control_link_manifest",
+        "note": "DEPENDENCY ≠ OWNERSHIP",
+        "origin": "DERIVED_REAL",
+        "resolution": "RESOLVED",
+        "source": "data/z_crystal_dna_asset_manifest.json#shards[].dependencies",
+        "to_shard": "dna_mesh_doctrine"
+      },
+      {
+        "direction": "DEPENDS_ON",
+        "from_shard": "doorway_workspace_registry",
+        "note": "DEPENDENCY ≠ OWNERSHIP",
+        "origin": "DERIVED_REAL",
+        "resolution": "RESOLVED",
+        "source": "data/z_crystal_dna_asset_manifest.json#shards[].dependencies",
+        "to_shard": "dna_mesh_doctrine"
+      },
+      {
+        "direction": "DEPENDS_ON",
+        "from_shard": "hub_pc_root_projects",
+        "note": "DEPENDENCY ≠ OWNERSHIP",
+        "origin": "DERIVED_REAL",
+        "resolution": "RESOLVED",
+        "source": "data/z_crystal_dna_asset_manifest.json#shards[].dependencies",
+        "to_shard": "dna_mesh_doctrine"
+      },
+      {
+        "direction": "DEPENDS_ON",
+        "from_shard": "satellite_control_bridge_template",
+        "note": "DEPENDENCY ≠ OWNERSHIP",
+        "origin": "DERIVED_REAL",
+        "resolution": "RESOLVED",
+        "source": "data/z_crystal_dna_asset_manifest.json#shards[].dependencies",
+        "to_shard": "control_link_manifest"
+      },
+      {
+        "direction": "DEPENDS_ON",
+        "from_shard": "z_lab_capsule_reference",
+        "note": "DEPENDENCY ≠ OWNERSHIP",
+        "origin": "DERIVED_REAL",
+        "resolution": "RESOLVED",
+        "source": "data/z_crystal_dna_asset_manifest.json#shards[].dependencies",
+        "to_shard": "dna_mesh_doctrine"
+      }
+    ],
+    "drift": {
+      "findings": [
+        {
+          "code": "hold_parallel_green_doorway",
+          "message": "Doorway registry mixes HOLD and GREEN enabled rows — operator sequencing review.",
+          "note": "DRIFT ≠ CORRUPTION automatically; DRIFT ≠ REPAIR",
+          "origin": "DERIVED_REAL",
+          "provenance": {
+            "finding_code": "hold_parallel_green_doorway",
+            "path": "data/reports/z_crystal_dna_drift_report.json"
+          },
+          "refs": [],
+          "signal": {
+            "namespace": "CRYSTAL_DNA_DRIFT",
+            "note": "CRYSTAL_DNA_DRIFT HOLD ≠ Z Logic HOLD; not project deployment HOLD",
+            "origin": "REAL_SOURCE",
+            "value": "BLUE"
+          },
+          "source_index": 2
+        },
+        {
+          "code": "satellite_not_wired_in_dna_mesh",
+          "message": "Enabled satellite \"z_labs_capsule\" is not referenced by DNA shard dependencies (topology gap).",
+          "note": "DRIFT ≠ CORRUPTION automatically; DRIFT ≠ REPAIR",
+          "origin": "DERIVED_REAL",
+          "provenance": {
+            "finding_code": "satellite_not_wired_in_dna_mesh",
+            "path": "data/reports/z_crystal_dna_drift_report.json"
+          },
+          "refs": [
+            "sat:z_labs_capsule"
+          ],
+          "signal": {
+            "namespace": "CRYSTAL_DNA_DRIFT",
+            "note": "CRYSTAL_DNA_DRIFT HOLD ≠ Z Logic HOLD; not project deployment HOLD",
+            "origin": "REAL_SOURCE",
+            "value": "YELLOW"
+          },
+          "source_index": 1
+        },
+        {
+          "code": "stale_bridge",
+          "message": "Satellite \"z_labs_capsule\" bridge file is older than hub template (refresh drift).",
+          "note": "DRIFT ≠ CORRUPTION automatically; DRIFT ≠ REPAIR",
+          "origin": "DERIVED_REAL",
+          "provenance": {
+            "finding_code": "stale_bridge",
+            "path": "data/reports/z_crystal_dna_drift_report.json"
+          },
+          "refs": [
+            "sat:z_labs_capsule"
+          ],
+          "signal": {
+            "namespace": "CRYSTAL_DNA_DRIFT",
+            "note": "CRYSTAL_DNA_DRIFT HOLD ≠ Z Logic HOLD; not project deployment HOLD",
+            "origin": "REAL_SOURCE",
+            "value": "YELLOW"
+          },
+          "source_index": 0
+        }
+      ],
+      "law": "Detect / compare / report only. No automatic restore, repair, deploy, git, NAS writes, or secrets.",
+      "origin": "DERIVED_REAL",
+      "overall_signal": {
+        "namespace": "CRYSTAL_DNA_DRIFT",
+        "origin": "REAL_SOURCE",
+        "value": "BLUE"
+      },
+      "provenance": {
+        "path": "data/reports/z_crystal_dna_drift_report.json"
+      }
+    },
+    "implementation_version": "z-composed-awareness-crystal-dna-p0-1.0.0",
+    "projection_id": "z_composed_awareness_crystal_dna_p0",
+    "shards": [
+      {
+        "join_as_project": "NON_PROJECT_ASSET",
+        "namespaced_id": "crystal_dna_manifest::cloudflare_governance_pack",
+        "origin": "DERIVED_REAL",
+        "provenance": {
+          "path": "data/z_crystal_dna_asset_manifest.json",
+          "source_id": "cloudflare_governance_pack"
+        },
+        "rebuild_rule": {
+          "note": "rebuild_rule ≠ PRE-AUTHORIZED GARE REPAIR RECIPE; not executed",
+          "origin": "REAL_SOURCE",
+          "posture": "DECLARATIVE_RECOVERY_HINT",
+          "value": "human_charter_and_preview_only_no_deploy_from_mesh"
+        },
+        "source_declared": {
+          "dependencies": {
+            "label": "SOURCE_DECLARED",
+            "origin": "REAL_SOURCE",
+            "value": [
+              "dna_mesh_doctrine"
+            ]
+          },
+          "hash_optional": {
+            "label": "SOURCE_DECLARED",
+            "origin": "REAL_SOURCE",
+            "value": ""
+          },
+          "id": {
+            "label": "SOURCE_DECLARED",
+            "origin": "REAL_SOURCE",
+            "value": "cloudflare_governance_pack"
+          },
+          "owner_layer": {
+            "label": "SOURCE_DECLARED",
+            "origin": "REAL_SOURCE",
+            "value": "cloudflare_governance"
+          },
+          "path": {
+            "label": "SOURCE_DECLARED",
+            "origin": "REAL_SOURCE",
+            "value": "cloudflare-governance/"
+          },
+          "rebuild_rule": {
+            "label": "SOURCE_DECLARED",
+            "origin": "REAL_SOURCE",
+            "value": "human_charter_and_preview_only_no_deploy_from_mesh"
+          },
+          "risk": {
+            "label": "SOURCE_DECLARED",
+            "origin": "REAL_SOURCE",
+            "value": "high"
+          },
+          "status": {
+            "label": "SOURCE_DECLARED",
+            "origin": "REAL_SOURCE",
+            "value": "YELLOW"
+          },
+          "type": {
+            "label": "SOURCE_DECLARED",
+            "origin": "REAL_SOURCE",
+            "value": "governance_pack"
+          }
+        },
+        "source_id": "cloudflare_governance_pack",
+        "source_namespace": "crystal_dna_manifest",
+        "status": {
+          "namespace": "CRYSTAL_DNA_CARD",
+          "note": "CRYSTAL_DNA_CARD GREEN ≠ CURRENT / project health / deploy / GARE eligibility",
+          "origin": "REAL_SOURCE",
+          "value": "YELLOW"
+        }
+      },
+      {
+        "join_as_project": "NON_PROJECT_ASSET",
+        "namespaced_id": "crystal_dna_manifest::control_link_manifest",
+        "origin": "DERIVED_REAL",
+        "provenance": {
+          "path": "data/z_crystal_dna_asset_manifest.json",
+          "source_id": "control_link_manifest"
+        },
+        "rebuild_rule": {
+          "note": "rebuild_rule ≠ PRE-AUTHORIZED GARE REPAIR RECIPE; not executed",
+          "origin": "REAL_SOURCE",
+          "posture": "DECLARATIVE_RECOVERY_HINT",
+          "value": "z_sync_control_links.mjs dry-run then apply with review"
+        },
+        "source_declared": {
+          "dependencies": {
+            "label": "SOURCE_DECLARED",
+            "origin": "REAL_SOURCE",
+            "value": [
+              "dna_mesh_doctrine"
+            ]
+          },
+          "hash_optional": {
+            "label": "SOURCE_DECLARED",
+            "origin": "REAL_SOURCE",
+            "value": ""
+          },
+          "id": {
+            "label": "SOURCE_DECLARED",
+            "origin": "REAL_SOURCE",
+            "value": "control_link_manifest"
+          },
+          "owner_layer": {
+            "label": "SOURCE_DECLARED",
+            "origin": "REAL_SOURCE",
+            "value": "hub_control_link"
+          },
+          "path": {
+            "label": "SOURCE_DECLARED",
+            "origin": "REAL_SOURCE",
+            "value": "data/z_satellite_control_link_manifest.json"
+          },
+          "rebuild_rule": {
+            "label": "SOURCE_DECLARED",
+            "origin": "REAL_SOURCE",
+            "value": "z_sync_control_links.mjs dry-run then apply with review"
+          },
+          "risk": {
+            "label": "SOURCE_DECLARED",
+            "origin": "REAL_SOURCE",
+            "value": "medium"
+          },
+          "status": {
+            "label": "SOURCE_DECLARED",
+            "origin": "REAL_SOURCE",
+            "value": "GREEN"
+          },
+          "type": {
+            "label": "SOURCE_DECLARED",
+            "origin": "REAL_SOURCE",
+            "value": "registry"
+          }
+        },
+        "source_id": "control_link_manifest",
+        "source_namespace": "crystal_dna_manifest",
+        "status": {
+          "namespace": "CRYSTAL_DNA_CARD",
+          "note": "CRYSTAL_DNA_CARD GREEN ≠ CURRENT / project health / deploy / GARE eligibility",
+          "origin": "REAL_SOURCE",
+          "value": "GREEN"
+        }
+      },
+      {
+        "join_as_project": "NON_PROJECT_ASSET",
+        "namespaced_id": "crystal_dna_manifest::dna_mesh_doctrine",
+        "origin": "DERIVED_REAL",
+        "provenance": {
+          "path": "data/z_crystal_dna_asset_manifest.json",
+          "source_id": "dna_mesh_doctrine"
+        },
+        "rebuild_rule": {
+          "note": "rebuild_rule ≠ PRE-AUTHORIZED GARE REPAIR RECIPE; not executed",
+          "origin": "REAL_SOURCE",
+          "posture": "DECLARATIVE_RECOVERY_HINT",
+          "value": "human_authoring_only"
+        },
+        "source_declared": {
+          "dependencies": {
+            "label": "SOURCE_DECLARED",
+            "origin": "REAL_SOURCE",
+            "value": []
+          },
+          "hash_optional": {
+            "label": "SOURCE_DECLARED",
+            "origin": "REAL_SOURCE",
+            "value": ""
+          },
+          "id": {
+            "label": "SOURCE_DECLARED",
+            "origin": "REAL_SOURCE",
+            "value": "dna_mesh_doctrine"
+          },
+          "owner_layer": {
+            "label": "SOURCE_DECLARED",
+            "origin": "REAL_SOURCE",
+            "value": "hub_governance"
+          },
+          "path": {
+            "label": "SOURCE_DECLARED",
+            "origin": "REAL_SOURCE",
+            "value": "docs/Z_CRYSTAL_DNA_MESH.md"
+          },
+          "rebuild_rule": {
+            "label": "SOURCE_DECLARED",
+            "origin": "REAL_SOURCE",
+            "value": "human_authoring_only"
+          },
+          "risk": {
+            "label": "SOURCE_DECLARED",
+            "origin": "REAL_SOURCE",
+            "value": "low"
+          },
+          "status": {
+            "label": "SOURCE_DECLARED",
+            "origin": "REAL_SOURCE",
+            "value": "GREEN"
+          },
+          "type": {
+            "label": "SOURCE_DECLARED",
+            "origin": "REAL_SOURCE",
+            "value": "doc"
+          }
+        },
+        "source_id": "dna_mesh_doctrine",
+        "source_namespace": "crystal_dna_manifest",
+        "status": {
+          "namespace": "CRYSTAL_DNA_CARD",
+          "note": "CRYSTAL_DNA_CARD GREEN ≠ CURRENT / project health / deploy / GARE eligibility",
+          "origin": "REAL_SOURCE",
+          "value": "GREEN"
+        }
+      },
+      {
+        "join_as_project": "NON_PROJECT_ASSET",
+        "namespaced_id": "crystal_dna_manifest::doorway_workspace_registry",
+        "origin": "DERIVED_REAL",
+        "provenance": {
+          "path": "data/z_crystal_dna_asset_manifest.json",
+          "source_id": "doorway_workspace_registry"
+        },
+        "rebuild_rule": {
+          "note": "rebuild_rule ≠ PRE-AUTHORIZED GARE REPAIR RECIPE; not executed",
+          "origin": "REAL_SOURCE",
+          "posture": "DECLARATIVE_RECOVERY_HINT",
+          "value": "operator_edit_registry_then_z_doorway_status"
+        },
+        "source_declared": {
+          "dependencies": {
+            "label": "SOURCE_DECLARED",
+            "origin": "REAL_SOURCE",
+            "value": [
+              "dna_mesh_doctrine"
+            ]
+          },
+          "hash_optional": {
+            "label": "SOURCE_DECLARED",
+            "origin": "REAL_SOURCE",
+            "value": ""
+          },
+          "id": {
+            "label": "SOURCE_DECLARED",
+            "origin": "REAL_SOURCE",
+            "value": "doorway_workspace_registry"
+          },
+          "owner_layer": {
+            "label": "SOURCE_DECLARED",
+            "origin": "REAL_SOURCE",
+            "value": "hub_ssws"
+          },
+          "path": {
+            "label": "SOURCE_DECLARED",
+            "origin": "REAL_SOURCE",
+            "value": "data/z_doorway_workspace_registry.json"
+          },
+          "rebuild_rule": {
+            "label": "SOURCE_DECLARED",
+            "origin": "REAL_SOURCE",
+            "value": "operator_edit_registry_then_z_doorway_status"
+          },
+          "risk": {
+            "label": "SOURCE_DECLARED",
+            "origin": "REAL_SOURCE",
+            "value": "medium"
+          },
+          "status": {
+            "label": "SOURCE_DECLARED",
+            "origin": "REAL_SOURCE",
+            "value": "GREEN"
+          },
+          "type": {
+            "label": "SOURCE_DECLARED",
+            "origin": "REAL_SOURCE",
+            "value": "registry"
+          }
+        },
+        "source_id": "doorway_workspace_registry",
+        "source_namespace": "crystal_dna_manifest",
+        "status": {
+          "namespace": "CRYSTAL_DNA_CARD",
+          "note": "CRYSTAL_DNA_CARD GREEN ≠ CURRENT / project health / deploy / GARE eligibility",
+          "origin": "REAL_SOURCE",
+          "value": "GREEN"
+        }
+      },
+      {
+        "join_as_project": "NON_PROJECT_ASSET",
+        "namespaced_id": "crystal_dna_manifest::hub_pc_root_projects",
+        "origin": "DERIVED_REAL",
+        "provenance": {
+          "path": "data/z_crystal_dna_asset_manifest.json",
+          "source_id": "hub_pc_root_projects"
+        },
+        "rebuild_rule": {
+          "note": "rebuild_rule ≠ PRE-AUTHORIZED GARE REPAIR RECIPE; not executed",
+          "origin": "REAL_SOURCE",
+          "posture": "DECLARATIVE_RECOVERY_HINT",
+          "value": "see Z-EAII / pc-root catalog docs; no auto-merge"
+        },
+        "source_declared": {
+          "dependencies": {
+            "label": "SOURCE_DECLARED",
+            "origin": "REAL_SOURCE",
+            "value": [
+              "dna_mesh_doctrine"
+            ]
+          },
+          "hash_optional": {
+            "label": "SOURCE_DECLARED",
+            "origin": "REAL_SOURCE",
+            "value": ""
+          },
+          "id": {
+            "label": "SOURCE_DECLARED",
+            "origin": "REAL_SOURCE",
+            "value": "hub_pc_root_projects"
+          },
+          "owner_layer": {
+            "label": "SOURCE_DECLARED",
+            "origin": "REAL_SOURCE",
+            "value": "hub_registry"
+          },
+          "path": {
+            "label": "SOURCE_DECLARED",
+            "origin": "REAL_SOURCE",
+            "value": "data/z_pc_root_projects.json"
+          },
+          "rebuild_rule": {
+            "label": "SOURCE_DECLARED",
+            "origin": "REAL_SOURCE",
+            "value": "see Z-EAII / pc-root catalog docs; no auto-merge"
+          },
+          "risk": {
+            "label": "SOURCE_DECLARED",
+            "origin": "REAL_SOURCE",
+            "value": "high"
+          },
+          "status": {
+            "label": "SOURCE_DECLARED",
+            "origin": "REAL_SOURCE",
+            "value": "GREEN"
+          },
+          "type": {
+            "label": "SOURCE_DECLARED",
+            "origin": "REAL_SOURCE",
+            "value": "registry"
+          }
+        },
+        "source_id": "hub_pc_root_projects",
+        "source_namespace": "crystal_dna_manifest",
+        "status": {
+          "namespace": "CRYSTAL_DNA_CARD",
+          "note": "CRYSTAL_DNA_CARD GREEN ≠ CURRENT / project health / deploy / GARE eligibility",
+          "origin": "REAL_SOURCE",
+          "value": "GREEN"
+        }
+      },
+      {
+        "join_as_project": "NON_PROJECT_ASSET",
+        "namespaced_id": "crystal_dna_manifest::nas_cold_mirror_declaration",
+        "origin": "DERIVED_REAL",
+        "provenance": {
+          "path": "data/z_crystal_dna_asset_manifest.json",
+          "source_id": "nas_cold_mirror_declaration"
+        },
+        "rebuild_rule": {
+          "note": "rebuild_rule ≠ PRE-AUTHORIZED GARE REPAIR RECIPE; not executed",
+          "origin": "REAL_SOURCE",
+          "posture": "DECLARATIVE_RECOVERY_HINT",
+          "value": "NAS_WAIT_until_mounted_verified_then_compare_only"
+        },
+        "source_declared": {
+          "dependencies": {
+            "label": "SOURCE_DECLARED",
+            "origin": "REAL_SOURCE",
+            "value": []
+          },
+          "hash_optional": {
+            "label": "SOURCE_DECLARED",
+            "origin": "REAL_SOURCE",
+            "value": ""
+          },
+          "id": {
+            "label": "SOURCE_DECLARED",
+            "origin": "REAL_SOURCE",
+            "value": "nas_cold_mirror_declaration"
+          },
+          "owner_layer": {
+            "label": "SOURCE_DECLARED",
+            "origin": "REAL_SOURCE",
+            "value": "nas_future"
+          },
+          "path": {
+            "label": "SOURCE_DECLARED",
+            "origin": "REAL_SOURCE",
+            "value": "Z:/SanctuaryDNA/cold_mirror_declaration_stub"
+          },
+          "rebuild_rule": {
+            "label": "SOURCE_DECLARED",
+            "origin": "REAL_SOURCE",
+            "value": "NAS_WAIT_until_mounted_verified_then_compare_only"
+          },
+          "risk": {
+            "label": "SOURCE_DECLARED",
+            "origin": "REAL_SOURCE",
+            "value": "high"
+          },
+          "status": {
+            "label": "SOURCE_DECLARED",
+            "origin": "REAL_SOURCE",
+            "value": "NAS_WAIT"
+          },
+          "type": {
+            "label": "SOURCE_DECLARED",
+            "origin": "REAL_SOURCE",
+            "value": "registry"
+          }
+        },
+        "source_id": "nas_cold_mirror_declaration",
+        "source_namespace": "crystal_dna_manifest",
+        "status": {
+          "namespace": "CRYSTAL_DNA_CARD",
+          "note": "CRYSTAL_DNA_CARD GREEN ≠ CURRENT / project health / deploy / GARE eligibility",
+          "origin": "REAL_SOURCE",
+          "value": "NAS_WAIT"
+        }
+      },
+      {
+        "join_as_project": "NON_PROJECT_ASSET",
+        "namespaced_id": "crystal_dna_manifest::satellite_control_bridge_template",
+        "origin": "DERIVED_REAL",
+        "provenance": {
+          "path": "data/z_crystal_dna_asset_manifest.json",
+          "source_id": "satellite_control_bridge_template"
+        },
+        "rebuild_rule": {
+          "note": "rebuild_rule ≠ PRE-AUTHORIZED GARE REPAIR RECIPE; not executed",
+          "origin": "REAL_SOURCE",
+          "posture": "DECLARATIVE_RECOVERY_HINT",
+          "value": "sync_from_hub_template_only"
+        },
+        "source_declared": {
+          "dependencies": {
+            "label": "SOURCE_DECLARED",
+            "origin": "REAL_SOURCE",
+            "value": [
+              "control_link_manifest"
+            ]
+          },
+          "hash_optional": {
+            "label": "SOURCE_DECLARED",
+            "origin": "REAL_SOURCE",
+            "value": ""
+          },
+          "id": {
+            "label": "SOURCE_DECLARED",
+            "origin": "REAL_SOURCE",
+            "value": "satellite_control_bridge_template"
+          },
+          "owner_layer": {
+            "label": "SOURCE_DECLARED",
+            "origin": "REAL_SOURCE",
+            "value": "hub_control_link"
+          },
+          "path": {
+            "label": "SOURCE_DECLARED",
+            "origin": "REAL_SOURCE",
+            "value": "docs/Z_SANCTUARY_CONTROL_LINK.md"
+          },
+          "rebuild_rule": {
+            "label": "SOURCE_DECLARED",
+            "origin": "REAL_SOURCE",
+            "value": "sync_from_hub_template_only"
+          },
+          "risk": {
+            "label": "SOURCE_DECLARED",
+            "origin": "REAL_SOURCE",
+            "value": "medium"
+          },
+          "status": {
+            "label": "SOURCE_DECLARED",
+            "origin": "REAL_SOURCE",
+            "value": "GREEN"
+          },
+          "type": {
+            "label": "SOURCE_DECLARED",
+            "origin": "REAL_SOURCE",
+            "value": "bridge"
+          }
+        },
+        "source_id": "satellite_control_bridge_template",
+        "source_namespace": "crystal_dna_manifest",
+        "status": {
+          "namespace": "CRYSTAL_DNA_CARD",
+          "note": "CRYSTAL_DNA_CARD GREEN ≠ CURRENT / project health / deploy / GARE eligibility",
+          "origin": "REAL_SOURCE",
+          "value": "GREEN"
+        }
+      },
+      {
+        "join_as_project": "NON_PROJECT_ASSET",
+        "namespaced_id": "crystal_dna_manifest::z_lab_capsule_reference",
+        "origin": "DERIVED_REAL",
+        "provenance": {
+          "path": "data/z_crystal_dna_asset_manifest.json",
+          "source_id": "z_lab_capsule_reference"
+        },
+        "rebuild_rule": {
+          "note": "rebuild_rule ≠ PRE-AUTHORIZED GARE REPAIR RECIPE; not executed",
+          "origin": "REAL_SOURCE",
+          "posture": "DECLARATIVE_RECOVERY_HINT",
+          "value": "reference_only_no_runtime_bridge_without_charter"
+        },
+        "source_declared": {
+          "dependencies": {
+            "label": "SOURCE_DECLARED",
+            "origin": "REAL_SOURCE",
+            "value": [
+              "dna_mesh_doctrine"
+            ]
+          },
+          "hash_optional": {
+            "label": "SOURCE_DECLARED",
+            "origin": "REAL_SOURCE",
+            "value": ""
+          },
+          "id": {
+            "label": "SOURCE_DECLARED",
+            "origin": "REAL_SOURCE",
+            "value": "z_lab_capsule_reference"
+          },
+          "owner_layer": {
+            "label": "SOURCE_DECLARED",
+            "origin": "REAL_SOURCE",
+            "value": "z_lab_capsule"
+          },
+          "path": {
+            "label": "SOURCE_DECLARED",
+            "origin": "REAL_SOURCE",
+            "value": "docs/Z_LOGICAL_BRAINS_HUB_REFERENCE.md"
+          },
+          "rebuild_rule": {
+            "label": "SOURCE_DECLARED",
+            "origin": "REAL_SOURCE",
+            "value": "reference_only_no_runtime_bridge_without_charter"
+          },
+          "risk": {
+            "label": "SOURCE_DECLARED",
+            "origin": "REAL_SOURCE",
+            "value": "medium"
+          },
+          "status": {
+            "label": "SOURCE_DECLARED",
+            "origin": "REAL_SOURCE",
+            "value": "BLUE"
+          },
+          "type": {
+            "label": "SOURCE_DECLARED",
+            "origin": "REAL_SOURCE",
+            "value": "bridge"
+          }
+        },
+        "source_id": "z_lab_capsule_reference",
+        "source_namespace": "crystal_dna_manifest",
+        "status": {
+          "namespace": "CRYSTAL_DNA_CARD",
+          "note": "CRYSTAL_DNA_CARD GREEN ≠ CURRENT / project health / deploy / GARE eligibility",
+          "origin": "REAL_SOURCE",
+          "value": "BLUE"
+        }
+      }
+    ],
+    "unmatched_as_projects": [
+      {
+        "classification": "NON_PROJECT_ASSET",
+        "origin": "DERIVED",
+        "source_id": "cloudflare_governance_pack"
+      },
+      {
+        "classification": "NON_PROJECT_ASSET",
+        "origin": "DERIVED",
+        "source_id": "control_link_manifest"
+      },
+      {
+        "classification": "NON_PROJECT_ASSET",
+        "origin": "DERIVED",
+        "source_id": "dna_mesh_doctrine"
+      },
+      {
+        "classification": "NON_PROJECT_ASSET",
+        "origin": "DERIVED",
+        "source_id": "doorway_workspace_registry"
+      },
+      {
+        "classification": "NON_PROJECT_ASSET",
+        "origin": "DERIVED",
+        "source_id": "hub_pc_root_projects"
+      },
+      {
+        "classification": "NON_PROJECT_ASSET",
+        "origin": "DERIVED",
+        "source_id": "nas_cold_mirror_declaration"
+      },
+      {
+        "classification": "NON_PROJECT_ASSET",
+        "origin": "DERIVED",
+        "source_id": "satellite_control_bridge_template"
+      },
+      {
+        "classification": "NON_PROJECT_ASSET",
+        "origin": "DERIVED",
+        "source_id": "z_lab_capsule_reference"
+      }
+    ]
+  },
+  "governance": {
+    "gare": {
+      "asset_level_eligibility": "UNDECLARED",
+      "executor": "NOT_IMPLEMENTED",
+      "note": "GARE policy ≠ asset eligibility; rebuild_rule remains DECLARATIVE_RECOVERY_HINT",
+      "policy": "POLICY_DEFINED"
+    }
+  },
+  "inputs": {
+    "crystal_dna": {
+      "canonical_json_sha256": "ddf58ea70deb060034123022539dab7dc1ae86d012cd23e5344732892d3a9585",
+      "implementation_version": "z-composed-awareness-crystal-dna-p0-1.0.0",
+      "note": "TRACKED CHILD REPORT = DERIVED EVIDENCE, not system of record",
+      "projection_id": "z_composed_awareness_crystal_dna_p0",
+      "schema_version": 1,
+      "source_custody": "CLEAN",
+      "strategy": "PURE_BUILDER",
+      "tracked_report": "data/reports/z_composed_awareness_crystal_dna_p0.json",
+      "tracked_report_sha256": "1f02a450d67b7fd13c48e60f56eadeed477270ce3fa173d734e78a75fa471851"
+    },
+    "project_world": {
+      "canonical_json_sha256": "79f6f5b5bac03d741f1be6daee0719ede0a475303eb813ed5a935c623a2b7b7b",
+      "implementation_version": "z-composed-awareness-read-model-p0-1.0.0",
+      "note": "TRACKED CHILD REPORT = DERIVED EVIDENCE, not system of record",
+      "projection_id": "z_composed_awareness_project_world_p0",
+      "schema_version": 1,
+      "strategy": "PURE_BUILDER",
+      "tracked_report": "data/reports/z_composed_awareness_project_world_p0.json",
+      "tracked_report_sha256": "32d3be54cdebbfe8e405bea8ca0b4fafe37fd43b7f88b28e0e32e47d91efe60a"
+    }
+  },
+  "origin": "DERIVED",
+  "posture": "DERIVED_COMPOSITION",
+  "project_dna_coverage": [
+    {
+      "dna_presence": "MISSING",
+      "evidence_refs": [
+        {
+          "project_id": "amk-goku-dashboards-2",
+          "role": "project_world_project"
+        },
+        {
+          "path": "data/z_pc_root_projects.json",
+          "project_id": "amk-goku-dashboards-2",
+          "role": "crystal_dna_coverage"
+        }
+      ],
+      "note": "COVERAGE ALIGNMENT ≠ DNA SHARD LINK. MISSING = NO VERIFIED PROJECT↔DNA RELATION (≠ HEALTHY ≠ UNHEALTHY)",
+      "origin": "DERIVED",
+      "project_id": "amk-goku-dashboards-2",
+      "verified_link_count": 0,
+      "verified_links": []
+    },
+    {
+      "dna_presence": "MISSING",
+      "evidence_refs": [
+        {
+          "project_id": "amk-goku-vaults",
+          "role": "project_world_project"
+        },
+        {
+          "path": "data/z_pc_root_projects.json",
+          "project_id": "amk-goku-vaults",
+          "role": "crystal_dna_coverage"
+        }
+      ],
+      "note": "COVERAGE ALIGNMENT ≠ DNA SHARD LINK. MISSING = NO VERIFIED PROJECT↔DNA RELATION (≠ HEALTHY ≠ UNHEALTHY)",
+      "origin": "DERIVED",
+      "project_id": "amk-goku-vaults",
+      "verified_link_count": 0,
+      "verified_links": []
+    },
+    {
+      "dna_presence": "MISSING",
+      "evidence_refs": [
+        {
+          "project_id": "at-princess-blackie-copilot",
+          "role": "project_world_project"
+        },
+        {
+          "path": "data/z_pc_root_projects.json",
+          "project_id": "at-princess-blackie-copilot",
+          "role": "crystal_dna_coverage"
+        }
+      ],
+      "note": "COVERAGE ALIGNMENT ≠ DNA SHARD LINK. MISSING = NO VERIFIED PROJECT↔DNA RELATION (≠ HEALTHY ≠ UNHEALTHY)",
+      "origin": "DERIVED",
+      "project_id": "at-princess-blackie-copilot",
+      "verified_link_count": 0,
+      "verified_links": []
+    },
+    {
+      "dna_presence": "MISSING",
+      "evidence_refs": [
+        {
+          "project_id": "eirmind-ireland-projects-missing",
+          "role": "project_world_project"
+        },
+        {
+          "path": "data/z_pc_root_projects.json",
+          "project_id": "eirmind-ireland-projects-missing",
+          "role": "crystal_dna_coverage"
+        }
+      ],
+      "note": "COVERAGE ALIGNMENT ≠ DNA SHARD LINK. MISSING = NO VERIFIED PROJECT↔DNA RELATION (≠ HEALTHY ≠ UNHEALTHY)",
+      "origin": "DERIVED",
+      "project_id": "eirmind-ireland-projects-missing",
+      "verified_link_count": 0,
+      "verified_links": []
+    },
+    {
+      "dna_presence": "MISSING",
+      "evidence_refs": [
+        {
+          "project_id": "extras-tools",
+          "role": "project_world_project"
+        },
+        {
+          "path": "data/z_pc_root_projects.json",
+          "project_id": "extras-tools",
+          "role": "crystal_dna_coverage"
+        }
+      ],
+      "note": "COVERAGE ALIGNMENT ≠ DNA SHARD LINK. MISSING = NO VERIFIED PROJECT↔DNA RELATION (≠ HEALTHY ≠ UNHEALTHY)",
+      "origin": "DERIVED",
+      "project_id": "extras-tools",
+      "verified_link_count": 0,
+      "verified_links": []
+    },
+    {
+      "dna_presence": "MISSING",
+      "evidence_refs": [
+        {
+          "project_id": "replit-roulette-z-amk-goku-mdcp",
+          "role": "project_world_project"
+        },
+        {
+          "path": "data/z_pc_root_projects.json",
+          "project_id": "replit-roulette-z-amk-goku-mdcp",
+          "role": "crystal_dna_coverage"
+        }
+      ],
+      "note": "COVERAGE ALIGNMENT ≠ DNA SHARD LINK. MISSING = NO VERIFIED PROJECT↔DNA RELATION (≠ HEALTHY ≠ UNHEALTHY)",
+      "origin": "DERIVED",
+      "project_id": "replit-roulette-z-amk-goku-mdcp",
+      "verified_link_count": 0,
+      "verified_links": []
+    },
+    {
+      "dna_presence": "MISSING",
+      "evidence_refs": [
+        {
+          "project_id": "sister-aisling-sol",
+          "role": "project_world_project"
+        },
+        {
+          "path": "data/z_pc_root_projects.json",
+          "project_id": "sister-aisling-sol",
+          "role": "crystal_dna_coverage"
+        }
+      ],
+      "note": "COVERAGE ALIGNMENT ≠ DNA SHARD LINK. MISSING = NO VERIFIED PROJECT↔DNA RELATION (≠ HEALTHY ≠ UNHEALTHY)",
+      "origin": "DERIVED",
+      "project_id": "sister-aisling-sol",
+      "verified_link_count": 0,
+      "verified_links": []
+    },
+    {
+      "dna_presence": "MISSING",
+      "evidence_refs": [
+        {
+          "project_id": "z-labs",
+          "role": "project_world_project"
+        },
+        {
+          "path": "data/z_pc_root_projects.json",
+          "project_id": "z-labs",
+          "role": "crystal_dna_coverage"
+        }
+      ],
+      "note": "COVERAGE ALIGNMENT ≠ DNA SHARD LINK. MISSING = NO VERIFIED PROJECT↔DNA RELATION (≠ HEALTHY ≠ UNHEALTHY)",
+      "origin": "DERIVED",
+      "project_id": "z-labs",
+      "verified_link_count": 0,
+      "verified_links": []
+    },
+    {
+      "dna_presence": "MISSING",
+      "evidence_refs": [
+        {
+          "project_id": "z-omni-sanctuary",
+          "role": "project_world_project"
+        },
+        {
+          "path": "data/z_pc_root_projects.json",
+          "project_id": "z-omni-sanctuary",
+          "role": "crystal_dna_coverage"
+        }
+      ],
+      "note": "COVERAGE ALIGNMENT ≠ DNA SHARD LINK. MISSING = NO VERIFIED PROJECT↔DNA RELATION (≠ HEALTHY ≠ UNHEALTHY)",
+      "origin": "DERIVED",
+      "project_id": "z-omni-sanctuary",
+      "verified_link_count": 0,
+      "verified_links": []
+    },
+    {
+      "dna_presence": "MISSING",
+      "evidence_refs": [
+        {
+          "project_id": "z-sanctuary-ai-skyscraper",
+          "role": "project_world_project"
+        },
+        {
+          "path": "data/z_pc_root_projects.json",
+          "project_id": "z-sanctuary-ai-skyscraper",
+          "role": "crystal_dna_coverage"
+        }
+      ],
+      "note": "COVERAGE ALIGNMENT ≠ DNA SHARD LINK. MISSING = NO VERIFIED PROJECT↔DNA RELATION (≠ HEALTHY ≠ UNHEALTHY)",
+      "origin": "DERIVED",
+      "project_id": "z-sanctuary-ai-skyscraper",
+      "verified_link_count": 0,
+      "verified_links": []
+    },
+    {
+      "dna_presence": "MISSING",
+      "evidence_refs": [
+        {
+          "project_id": "z-sanctuary-aimanity",
+          "role": "project_world_project"
+        },
+        {
+          "path": "data/z_pc_root_projects.json",
+          "project_id": "z-sanctuary-aimanity",
+          "role": "crystal_dna_coverage"
+        }
+      ],
+      "note": "COVERAGE ALIGNMENT ≠ DNA SHARD LINK. MISSING = NO VERIFIED PROJECT↔DNA RELATION (≠ HEALTHY ≠ UNHEALTHY)",
+      "origin": "DERIVED",
+      "project_id": "z-sanctuary-aimanity",
+      "verified_link_count": 0,
+      "verified_links": []
+    },
+    {
+      "dna_presence": "MISSING",
+      "evidence_refs": [
+        {
+          "project_id": "z-sanctuary-browser-z-saiyan-lumina",
+          "role": "project_world_project"
+        },
+        {
+          "path": "data/z_pc_root_projects.json",
+          "project_id": "z-sanctuary-browser-z-saiyan-lumina",
+          "role": "crystal_dna_coverage"
+        }
+      ],
+      "note": "COVERAGE ALIGNMENT ≠ DNA SHARD LINK. MISSING = NO VERIFIED PROJECT↔DNA RELATION (≠ HEALTHY ≠ UNHEALTHY)",
+      "origin": "DERIVED",
+      "project_id": "z-sanctuary-browser-z-saiyan-lumina",
+      "verified_link_count": 0,
+      "verified_links": []
+    },
+    {
+      "dna_presence": "MISSING",
+      "evidence_refs": [
+        {
+          "project_id": "z-sanctuary-claude-core",
+          "role": "project_world_project"
+        },
+        {
+          "path": "data/z_pc_root_projects.json",
+          "project_id": "z-sanctuary-claude-core",
+          "role": "crystal_dna_coverage"
+        }
+      ],
+      "note": "COVERAGE ALIGNMENT ≠ DNA SHARD LINK. MISSING = NO VERIFIED PROJECT↔DNA RELATION (≠ HEALTHY ≠ UNHEALTHY)",
+      "origin": "DERIVED",
+      "project_id": "z-sanctuary-claude-core",
+      "verified_link_count": 0,
+      "verified_links": []
+    },
+    {
+      "dna_presence": "MISSING",
+      "evidence_refs": [
+        {
+          "project_id": "z-sanctuary-external-paas",
+          "role": "project_world_project"
+        },
+        {
+          "path": "data/z_pc_root_projects.json",
+          "project_id": "z-sanctuary-external-paas",
+          "role": "crystal_dna_coverage"
+        }
+      ],
+      "note": "COVERAGE ALIGNMENT ≠ DNA SHARD LINK. MISSING = NO VERIFIED PROJECT↔DNA RELATION (≠ HEALTHY ≠ UNHEALTHY)",
+      "origin": "DERIVED",
+      "project_id": "z-sanctuary-external-paas",
+      "verified_link_count": 0,
+      "verified_links": []
+    },
+    {
+      "dna_presence": "MISSING",
+      "evidence_refs": [
+        {
+          "project_id": "z-sanctuary-g",
+          "role": "project_world_project"
+        },
+        {
+          "path": "data/z_pc_root_projects.json",
+          "project_id": "z-sanctuary-g",
+          "role": "crystal_dna_coverage"
+        }
+      ],
+      "note": "COVERAGE ALIGNMENT ≠ DNA SHARD LINK. MISSING = NO VERIFIED PROJECT↔DNA RELATION (≠ HEALTHY ≠ UNHEALTHY)",
+      "origin": "DERIVED",
+      "project_id": "z-sanctuary-g",
+      "verified_link_count": 0,
+      "verified_links": []
+    },
+    {
+      "dna_presence": "MISSING",
+      "evidence_refs": [
+        {
+          "project_id": "z-sanctuary-gem",
+          "role": "project_world_project"
+        },
+        {
+          "path": "data/z_pc_root_projects.json",
+          "project_id": "z-sanctuary-gem",
+          "role": "crystal_dna_coverage"
+        }
+      ],
+      "note": "COVERAGE ALIGNMENT ≠ DNA SHARD LINK. MISSING = NO VERIFIED PROJECT↔DNA RELATION (≠ HEALTHY ≠ UNHEALTHY)",
+      "origin": "DERIVED",
+      "project_id": "z-sanctuary-gem",
+      "verified_link_count": 0,
+      "verified_links": []
+    },
+    {
+      "dna_presence": "MISSING",
+      "evidence_refs": [
+        {
+          "project_id": "z-sanctuary-replit",
+          "role": "project_world_project"
+        },
+        {
+          "path": "data/z_pc_root_projects.json",
+          "project_id": "z-sanctuary-replit",
+          "role": "crystal_dna_coverage"
+        }
+      ],
+      "note": "COVERAGE ALIGNMENT ≠ DNA SHARD LINK. MISSING = NO VERIFIED PROJECT↔DNA RELATION (≠ HEALTHY ≠ UNHEALTHY)",
+      "origin": "DERIVED",
+      "project_id": "z-sanctuary-replit",
+      "verified_link_count": 0,
+      "verified_links": []
+    },
+    {
+      "dna_presence": "MISSING",
+      "evidence_refs": [
+        {
+          "project_id": "z-sanctuary-universe",
+          "role": "project_world_project"
+        },
+        {
+          "path": "data/z_pc_root_projects.json",
+          "project_id": "z-sanctuary-universe",
+          "role": "crystal_dna_coverage"
+        }
+      ],
+      "note": "COVERAGE ALIGNMENT ≠ DNA SHARD LINK. MISSING = NO VERIFIED PROJECT↔DNA RELATION (≠ HEALTHY ≠ UNHEALTHY)",
+      "origin": "DERIVED",
+      "project_id": "z-sanctuary-universe",
+      "verified_link_count": 0,
+      "verified_links": []
+    },
+    {
+      "dna_presence": "MISSING",
+      "evidence_refs": [
+        {
+          "project_id": "z-sanctuary-universe-2",
+          "role": "project_world_project"
+        },
+        {
+          "path": "data/z_pc_root_projects.json",
+          "project_id": "z-sanctuary-universe-2",
+          "role": "crystal_dna_coverage"
+        }
+      ],
+      "note": "COVERAGE ALIGNMENT ≠ DNA SHARD LINK. MISSING = NO VERIFIED PROJECT↔DNA RELATION (≠ HEALTHY ≠ UNHEALTHY)",
+      "origin": "DERIVED",
+      "project_id": "z-sanctuary-universe-2",
+      "verified_link_count": 0,
+      "verified_links": []
+    },
+    {
+      "dna_presence": "MISSING",
+      "evidence_refs": [
+        {
+          "project_id": "z-sanctuary-universe-2-continuation",
+          "role": "project_world_project"
+        },
+        {
+          "path": "data/z_pc_root_projects.json",
+          "project_id": "z-sanctuary-universe-2-continuation",
+          "role": "crystal_dna_coverage"
+        }
+      ],
+      "note": "COVERAGE ALIGNMENT ≠ DNA SHARD LINK. MISSING = NO VERIFIED PROJECT↔DNA RELATION (≠ HEALTHY ≠ UNHEALTHY)",
+      "origin": "DERIVED",
+      "project_id": "z-sanctuary-universe-2-continuation",
+      "verified_link_count": 0,
+      "verified_links": []
+    },
+    {
+      "dna_presence": "MISSING",
+      "evidence_refs": [
+        {
+          "project_id": "z-sancurary-pets-care-compassion",
+          "role": "project_world_project"
+        },
+        {
+          "path": "data/z_pc_root_projects.json",
+          "project_id": "z-sancurary-pets-care-compassion",
+          "role": "crystal_dna_coverage"
+        }
+      ],
+      "note": "COVERAGE ALIGNMENT ≠ DNA SHARD LINK. MISSING = NO VERIFIED PROJECT↔DNA RELATION (≠ HEALTHY ≠ UNHEALTHY)",
+      "origin": "DERIVED",
+      "project_id": "z-sancurary-pets-care-compassion",
+      "verified_link_count": 0,
+      "verified_links": []
+    },
+    {
+      "dna_presence": "MISSING",
+      "evidence_refs": [
+        {
+          "project_id": "z-worksphere-marketplace-hub",
+          "role": "project_world_project"
+        },
+        {
+          "path": "data/z_pc_root_projects.json",
+          "project_id": "z-worksphere-marketplace-hub",
+          "role": "crystal_dna_coverage"
+        }
+      ],
+      "note": "COVERAGE ALIGNMENT ≠ DNA SHARD LINK. MISSING = NO VERIFIED PROJECT↔DNA RELATION (≠ HEALTHY ≠ UNHEALTHY)",
+      "origin": "DERIVED",
+      "project_id": "z-worksphere-marketplace-hub",
+      "verified_link_count": 0,
+      "verified_links": []
+    }
+  ],
+  "project_world": {
+    "conflicts": [
+      {
+        "field": "identity.source_ids",
+        "note": "Explicit hub-folder link; identifiers are not rewritten into each other.",
+        "resolution": "UNRESOLVED",
+        "source_a": {
+          "namespace": "pc_root",
+          "source_id": "z-sanctuary-universe",
+          "value": "z-sanctuary-universe"
+        },
+        "source_b": {
+          "namespace": "ecosystem_awareness",
+          "source_id": "ZSanctuary_Universe",
+          "value": "ZSanctuary_Universe"
+        }
+      }
+    ],
+    "implementation_version": "z-composed-awareness-read-model-p0-1.0.0",
+    "projection_id": "z_composed_awareness_project_world_p0",
+    "projects": [
+      {
+        "awareness": {
+          "capsule": {
+            "posture": "MISSING",
+            "present": "MISSING"
+          },
+          "ecosystem_row": {
+            "posture": "MISSING",
+            "present": "MISSING"
+          }
+        },
+        "conflicts": [],
+        "deployment": {
+          "posture": "MISSING"
+        },
+        "display_name": "Amk-Goku Dashboards 2",
+        "ecosystem": {
+          "posture": "MISSING"
+        },
+        "freshness": {
+          "note": "P0 preserves source timestamps only; CURRENT/AGING/STALE thresholds not canonized",
+          "origin": "REAL_SOURCE",
+          "pc_root_updated_at": {
+            "label": "SOURCE_DECLARED",
+            "origin": "REAL_SOURCE",
+            "value": "2026-07-10T10:31:43Z"
+          }
+        },
+        "identity": {
+          "aliases": [],
+          "canonical_id": "amk-goku-dashboards-2",
+          "join_rule": "NONE",
+          "reconciliation_relation": {
+            "identity_relation": "UNRESOLVED",
+            "note": "UNRESOLVED ≠ SAME_PROJECT. Steward HOLD.",
+            "origin": "REAL_SOURCE",
+            "source_path": "docs/PROJECT_IDENTITY_RECONCILIATION.md",
+            "vs": [
+              "hub Main Control",
+              "replit-roulette-z-amk-goku-mdcp"
+            ]
+          },
+          "source_ids": [
+            "pc_root::amk-goku-dashboards-2"
+          ]
+        },
+        "maturity": {
+          "posture": "MISSING"
+        },
+        "missing": [
+          {
+            "field": "awareness.ecosystem_row",
+            "posture": "MISSING"
+          },
+          {
+            "field": "awareness.capsule",
+            "posture": "MISSING"
+          }
+        ],
+        "origin": "DERIVED_REAL",
+        "project_id": "amk-goku-dashboards-2",
+        "provenance": {
+          "sources": [
+            {
+              "namespace": "pc_root",
+              "path": "data/z_pc_root_projects.json",
+              "source_id": "amk-goku-dashboards-2"
+            }
+          ]
+        },
+        "runtime": {
+          "posture": "MISSING"
+        },
+        "sovereignty": {
+          "composed_posture": "EXTERNAL_LINKED",
+          "hosting": "link-only",
+          "mapping_rule": "spec overlay: pc_root.role external → EXTERNAL_LINKED (CONNECTED ≠ MERGED)",
+          "origin_record": "DERIVED_REAL",
+          "source_posture": "external",
+          "source_reference": "data/z_pc_root_projects.json#projects[].role",
+          "source_value_origin": "REAL_SOURCE"
+        }
+      },
+      {
+        "awareness": {
+          "capsule": {
+            "posture": "MISSING",
+            "present": "MISSING"
+          },
+          "ecosystem_row": {
+            "posture": "MISSING",
+            "present": "MISSING"
+          }
+        },
+        "conflicts": [],
+        "deployment": {
+          "posture": "MISSING"
+        },
+        "display_name": "Amk-Goku Vaults",
+        "ecosystem": {
+          "posture": "MISSING"
+        },
+        "freshness": {
+          "note": "P0 preserves source timestamps only; CURRENT/AGING/STALE thresholds not canonized",
+          "origin": "REAL_SOURCE",
+          "pc_root_updated_at": {
+            "label": "SOURCE_DECLARED",
+            "origin": "REAL_SOURCE",
+            "value": "2026-07-10T10:31:43Z"
+          }
+        },
+        "identity": {
+          "aliases": [],
+          "canonical_id": "amk-goku-vaults",
+          "join_rule": "NONE",
+          "reconciliation_relation": {
+            "origin": "DERIVED_REAL",
+            "posture": "NOT_APPLICABLE"
+          },
+          "source_ids": [
+            "pc_root::amk-goku-vaults"
+          ]
+        },
+        "maturity": {
+          "posture": "MISSING"
+        },
+        "missing": [
+          {
+            "field": "awareness.ecosystem_row",
+            "posture": "MISSING"
+          },
+          {
+            "field": "awareness.capsule",
+            "posture": "MISSING"
+          }
+        ],
+        "origin": "DERIVED_REAL",
+        "project_id": "amk-goku-vaults",
+        "provenance": {
+          "sources": [
+            {
+              "namespace": "pc_root",
+              "path": "data/z_pc_root_projects.json",
+              "source_id": "amk-goku-vaults"
+            }
+          ]
+        },
+        "runtime": {
+          "posture": "MISSING"
+        },
+        "sovereignty": {
+          "composed_posture": "MEMBER",
+          "mapping_rule": "spec overlay: pc_root.role member → MEMBER",
+          "origin_record": "DERIVED_REAL",
+          "source_posture": "member",
+          "source_reference": "data/z_pc_root_projects.json#projects[].role",
+          "source_value_origin": "REAL_SOURCE"
+        }
+      },
+      {
+        "awareness": {
+          "capsule": {
+            "posture": "MISSING",
+            "present": "MISSING"
+          },
+          "ecosystem_row": {
+            "posture": "MISSING",
+            "present": "MISSING"
+          }
+        },
+        "conflicts": [],
+        "deployment": {
+          "posture": "MISSING"
+        },
+        "display_name": "AT Princess & Blackie Copilot",
+        "ecosystem": {
+          "posture": "MISSING"
+        },
+        "freshness": {
+          "note": "P0 preserves source timestamps only; CURRENT/AGING/STALE thresholds not canonized",
+          "origin": "REAL_SOURCE",
+          "pc_root_updated_at": {
+            "label": "SOURCE_DECLARED",
+            "origin": "REAL_SOURCE",
+            "value": "2026-07-10T10:31:43Z"
+          }
+        },
+        "identity": {
+          "aliases": [],
+          "canonical_id": "at-princess-blackie-copilot",
+          "join_rule": "NONE",
+          "reconciliation_relation": {
+            "origin": "DERIVED_REAL",
+            "posture": "NOT_APPLICABLE"
+          },
+          "source_ids": [
+            "pc_root::at-princess-blackie-copilot"
+          ]
+        },
+        "maturity": {
+          "posture": "MISSING"
+        },
+        "missing": [
+          {
+            "field": "awareness.ecosystem_row",
+            "posture": "MISSING"
+          },
+          {
+            "field": "awareness.capsule",
+            "posture": "MISSING"
+          }
+        ],
+        "origin": "DERIVED_REAL",
+        "project_id": "at-princess-blackie-copilot",
+        "provenance": {
+          "sources": [
+            {
+              "namespace": "pc_root",
+              "path": "data/z_pc_root_projects.json",
+              "source_id": "at-princess-blackie-copilot"
+            }
+          ]
+        },
+        "runtime": {
+          "posture": "MISSING"
+        },
+        "sovereignty": {
+          "composed_posture": "MEMBER",
+          "mapping_rule": "spec overlay: pc_root.role member → MEMBER",
+          "origin_record": "DERIVED_REAL",
+          "source_posture": "member",
+          "source_reference": "data/z_pc_root_projects.json#projects[].role",
+          "source_value_origin": "REAL_SOURCE"
+        }
+      },
+      {
+        "awareness": {
+          "capsule": {
+            "posture": "MISSING",
+            "present": "MISSING"
+          },
+          "ecosystem_row": {
+            "posture": "MISSING",
+            "present": "MISSING"
+          }
+        },
+        "conflicts": [],
+        "deployment": {
+          "posture": "MISSING"
+        },
+        "display_name": "ÉirMind (Ireland Projects)",
+        "ecosystem": {
+          "posture": "MISSING"
+        },
+        "freshness": {
+          "note": "P0 preserves source timestamps only; CURRENT/AGING/STALE thresholds not canonized",
+          "origin": "REAL_SOURCE",
+          "pc_root_updated_at": {
+            "label": "SOURCE_DECLARED",
+            "origin": "REAL_SOURCE",
+            "value": "2026-07-10T10:31:43Z"
+          }
+        },
+        "identity": {
+          "aliases": [],
+          "canonical_id": "eirmind-ireland-projects-missing",
+          "join_rule": "NONE",
+          "reconciliation_relation": {
+            "identity_relation": "UNRESOLVED",
+            "note": "Lineage candidate pending Steward; not auto-merged.",
+            "origin": "REAL_SOURCE",
+            "source_path": "docs/PROJECT_IDENTITY_RECONCILIATION.md",
+            "vs": [
+              "sister-aisling-sol"
+            ]
+          },
+          "source_ids": [
+            "pc_root::eirmind-ireland-projects-missing"
+          ]
+        },
+        "maturity": {
+          "posture": "MISSING"
+        },
+        "missing": [
+          {
+            "field": "awareness.ecosystem_row",
+            "posture": "MISSING"
+          },
+          {
+            "field": "awareness.capsule",
+            "posture": "MISSING"
+          }
+        ],
+        "origin": "DERIVED_REAL",
+        "project_id": "eirmind-ireland-projects-missing",
+        "provenance": {
+          "sources": [
+            {
+              "namespace": "pc_root",
+              "path": "data/z_pc_root_projects.json",
+              "source_id": "eirmind-ireland-projects-missing"
+            }
+          ]
+        },
+        "runtime": {
+          "posture": "MISSING"
+        },
+        "sovereignty": {
+          "composed_posture": "EXTERNAL_LINKED",
+          "hosting": "missing",
+          "mapping_rule": "spec overlay: pc_root.role external → EXTERNAL_LINKED (CONNECTED ≠ MERGED)",
+          "origin_record": "DERIVED_REAL",
+          "source_posture": "external",
+          "source_reference": "data/z_pc_root_projects.json#projects[].role",
+          "source_value_origin": "REAL_SOURCE"
+        }
+      },
+      {
+        "awareness": {
+          "capsule": {
+            "posture": "MISSING",
+            "present": "MISSING"
+          },
+          "ecosystem_row": {
+            "posture": "MISSING",
+            "present": "MISSING"
+          }
+        },
+        "conflicts": [],
+        "deployment": {
+          "posture": "MISSING"
+        },
+        "display_name": "Extras & Tools",
+        "ecosystem": {
+          "posture": "MISSING"
+        },
+        "freshness": {
+          "note": "P0 preserves source timestamps only; CURRENT/AGING/STALE thresholds not canonized",
+          "origin": "REAL_SOURCE",
+          "pc_root_updated_at": {
+            "label": "SOURCE_DECLARED",
+            "origin": "REAL_SOURCE",
+            "value": "2026-07-10T10:31:43Z"
+          }
+        },
+        "identity": {
+          "aliases": [],
+          "canonical_id": "extras-tools",
+          "join_rule": "NONE",
+          "reconciliation_relation": {
+            "origin": "DERIVED_REAL",
+            "posture": "NOT_APPLICABLE"
+          },
+          "source_ids": [
+            "pc_root::extras-tools"
+          ]
+        },
+        "maturity": {
+          "posture": "MISSING"
+        },
+        "missing": [
+          {
+            "field": "awareness.ecosystem_row",
+            "posture": "MISSING"
+          },
+          {
+            "field": "awareness.capsule",
+            "posture": "MISSING"
+          }
+        ],
+        "origin": "DERIVED_REAL",
+        "project_id": "extras-tools",
+        "provenance": {
+          "sources": [
+            {
+              "namespace": "pc_root",
+              "path": "data/z_pc_root_projects.json",
+              "source_id": "extras-tools"
+            }
+          ]
+        },
+        "runtime": {
+          "posture": "MISSING"
+        },
+        "sovereignty": {
+          "composed_posture": "MEMBER",
+          "mapping_rule": "spec overlay: pc_root.role member → MEMBER",
+          "origin_record": "DERIVED_REAL",
+          "source_posture": "member",
+          "source_reference": "data/z_pc_root_projects.json#projects[].role",
+          "source_value_origin": "REAL_SOURCE"
+        }
+      },
+      {
+        "awareness": {
+          "capsule": {
+            "posture": "MISSING",
+            "present": "MISSING"
+          },
+          "ecosystem_row": {
+            "posture": "MISSING",
+            "present": "MISSING"
+          }
+        },
+        "conflicts": [],
+        "deployment": {
+          "posture": "MISSING"
+        },
+        "display_name": "Roulette Data Analyzer · Z-Amk-Goku MD/CP (Replit)",
+        "ecosystem": {
+          "posture": "MISSING"
+        },
+        "freshness": {
+          "note": "P0 preserves source timestamps only; CURRENT/AGING/STALE thresholds not canonized",
+          "origin": "REAL_SOURCE",
+          "pc_root_updated_at": {
+            "label": "SOURCE_DECLARED",
+            "origin": "REAL_SOURCE",
+            "value": "2026-07-10T10:31:43Z"
+          }
+        },
+        "identity": {
+          "aliases": [],
+          "canonical_id": "replit-roulette-z-amk-goku-mdcp",
+          "join_rule": "NONE",
+          "reconciliation_relation": {
+            "identity_relation": "SEPARATE_PROJECT",
+            "note": "External Replit hosting; related as local-mirror candidate only. CONNECTED ≠ MERGED.",
+            "origin": "REAL_SOURCE",
+            "source_path": "docs/PROJECT_IDENTITY_RECONCILIATION.md",
+            "vs": [
+              "z-sanctuary-replit"
+            ]
+          },
+          "source_ids": [
+            "pc_root::replit-roulette-z-amk-goku-mdcp"
+          ]
+        },
+        "maturity": {
+          "posture": "MISSING"
+        },
+        "missing": [
+          {
+            "field": "awareness.ecosystem_row",
+            "posture": "MISSING"
+          },
+          {
+            "field": "awareness.capsule",
+            "posture": "MISSING"
+          }
+        ],
+        "origin": "DERIVED_REAL",
+        "project_id": "replit-roulette-z-amk-goku-mdcp",
+        "provenance": {
+          "sources": [
+            {
+              "namespace": "pc_root",
+              "path": "data/z_pc_root_projects.json",
+              "source_id": "replit-roulette-z-amk-goku-mdcp"
+            }
+          ]
+        },
+        "runtime": {
+          "posture": "MISSING"
+        },
+        "sovereignty": {
+          "composed_posture": "SEPARATE",
+          "hosting": "replit",
+          "mapping_rule": "sealed identity: replit-roulette-z-amk-goku-mdcp SEPARATE_PROJECT / sovereign product — not hub internal",
+          "origin_record": "DERIVED_REAL",
+          "source_posture": "external",
+          "source_reference": "data/z_pc_root_projects.json#projects[].role",
+          "source_value_origin": "REAL_SOURCE"
+        }
+      },
+      {
+        "awareness": {
+          "capsule": {
+            "posture": "MISSING",
+            "present": "MISSING"
+          },
+          "ecosystem_row": {
+            "posture": "MISSING",
+            "present": "MISSING"
+          }
+        },
+        "conflicts": [],
+        "deployment": {
+          "posture": "MISSING"
+        },
+        "display_name": "Sister Aisling Sol",
+        "ecosystem": {
+          "posture": "MISSING"
+        },
+        "freshness": {
+          "note": "P0 preserves source timestamps only; CURRENT/AGING/STALE thresholds not canonized",
+          "origin": "REAL_SOURCE",
+          "pc_root_updated_at": {
+            "label": "SOURCE_DECLARED",
+            "origin": "REAL_SOURCE",
+            "value": "2026-07-10T10:31:43Z"
+          }
+        },
+        "identity": {
+          "aliases": [],
+          "canonical_id": "sister-aisling-sol",
+          "join_rule": "NONE",
+          "reconciliation_relation": {
+            "identity_relation": "SUBSYSTEM",
+            "note": "SUBSYSTEM ≠ SEPARATE_PROJECT merge. Do not auto-merge registry rows with eirmind-ireland-projects-missing.",
+            "origin": "REAL_SOURCE",
+            "source_path": "docs/PROJECT_IDENTITY_RECONCILIATION.md",
+            "vs": [
+              "eirmind nested monorepo / indicator"
+            ]
+          },
+          "source_ids": [
+            "pc_root::sister-aisling-sol"
+          ]
+        },
+        "maturity": {
+          "posture": "MISSING"
+        },
+        "missing": [
+          {
+            "field": "awareness.ecosystem_row",
+            "posture": "MISSING"
+          },
+          {
+            "field": "awareness.capsule",
+            "posture": "MISSING"
+          }
+        ],
+        "origin": "DERIVED_REAL",
+        "project_id": "sister-aisling-sol",
+        "provenance": {
+          "sources": [
+            {
+              "namespace": "pc_root",
+              "path": "data/z_pc_root_projects.json",
+              "source_id": "sister-aisling-sol"
+            }
+          ]
+        },
+        "runtime": {
+          "posture": "MISSING"
+        },
+        "sovereignty": {
+          "composed_posture": "MEMBER",
+          "mapping_rule": "spec overlay: pc_root.role member → MEMBER",
+          "origin_record": "DERIVED_REAL",
+          "source_posture": "member",
+          "source_reference": "data/z_pc_root_projects.json#projects[].role",
+          "source_value_origin": "REAL_SOURCE"
+        }
+      },
+      {
+        "awareness": {
+          "capsule": {
+            "posture": "MISSING",
+            "present": "MISSING"
+          },
+          "ecosystem_row": {
+            "posture": "MISSING",
+            "present": "MISSING"
+          }
+        },
+        "conflicts": [],
+        "deployment": {
+          "posture": "MISSING"
+        },
+        "display_name": "Z_Labs",
+        "ecosystem": {
+          "posture": "MISSING"
+        },
+        "freshness": {
+          "note": "P0 preserves source timestamps only; CURRENT/AGING/STALE thresholds not canonized",
+          "origin": "REAL_SOURCE",
+          "pc_root_updated_at": {
+            "label": "SOURCE_DECLARED",
+            "origin": "REAL_SOURCE",
+            "value": "2026-07-10T10:31:43Z"
+          }
+        },
+        "identity": {
+          "aliases": [],
+          "canonical_id": "z-labs",
+          "join_rule": "NONE",
+          "reconciliation_relation": {
+            "origin": "DERIVED_REAL",
+            "posture": "NOT_APPLICABLE"
+          },
+          "source_ids": [
+            "pc_root::z-labs"
+          ]
+        },
+        "maturity": {
+          "posture": "MISSING"
+        },
+        "missing": [
+          {
+            "field": "awareness.ecosystem_row",
+            "posture": "MISSING"
+          },
+          {
+            "field": "awareness.capsule",
+            "posture": "MISSING"
+          }
+        ],
+        "origin": "DERIVED_REAL",
+        "project_id": "z-labs",
+        "provenance": {
+          "sources": [
+            {
+              "namespace": "pc_root",
+              "path": "data/z_pc_root_projects.json",
+              "source_id": "z-labs"
+            }
+          ]
+        },
+        "runtime": {
+          "posture": "MISSING"
+        },
+        "sovereignty": {
+          "composed_posture": "MEMBER",
+          "mapping_rule": "spec overlay: pc_root.role member → MEMBER",
+          "origin_record": "DERIVED_REAL",
+          "source_posture": "member",
+          "source_reference": "data/z_pc_root_projects.json#projects[].role",
+          "source_value_origin": "REAL_SOURCE"
+        }
+      },
+      {
+        "awareness": {
+          "capsule": {
+            "posture": "MISSING",
+            "present": "MISSING"
+          },
+          "ecosystem_row": {
+            "posture": "MISSING",
+            "present": "MISSING"
+          }
+        },
+        "conflicts": [],
+        "deployment": {
+          "posture": "MISSING"
+        },
+        "display_name": "Z-OMNI-Sanctuary",
+        "ecosystem": {
+          "posture": "MISSING"
+        },
+        "freshness": {
+          "note": "P0 preserves source timestamps only; CURRENT/AGING/STALE thresholds not canonized",
+          "origin": "REAL_SOURCE",
+          "pc_root_updated_at": {
+            "label": "SOURCE_DECLARED",
+            "origin": "REAL_SOURCE",
+            "value": "2026-07-10T10:31:43Z"
+          }
+        },
+        "identity": {
+          "aliases": [],
+          "canonical_id": "z-omni-sanctuary",
+          "join_rule": "NONE",
+          "reconciliation_relation": {
+            "origin": "DERIVED_REAL",
+            "posture": "NOT_APPLICABLE"
+          },
+          "source_ids": [
+            "pc_root::z-omni-sanctuary"
+          ]
+        },
+        "maturity": {
+          "posture": "MISSING"
+        },
+        "missing": [
+          {
+            "field": "awareness.ecosystem_row",
+            "posture": "MISSING"
+          },
+          {
+            "field": "awareness.capsule",
+            "posture": "MISSING"
+          }
+        ],
+        "origin": "DERIVED_REAL",
+        "project_id": "z-omni-sanctuary",
+        "provenance": {
+          "sources": [
+            {
+              "namespace": "pc_root",
+              "path": "data/z_pc_root_projects.json",
+              "source_id": "z-omni-sanctuary"
+            }
+          ]
+        },
+        "runtime": {
+          "posture": "MISSING"
+        },
+        "sovereignty": {
+          "composed_posture": "MEMBER",
+          "mapping_rule": "spec overlay: pc_root.role member → MEMBER",
+          "origin_record": "DERIVED_REAL",
+          "source_posture": "member",
+          "source_reference": "data/z_pc_root_projects.json#projects[].role",
+          "source_value_origin": "REAL_SOURCE"
+        }
+      },
+      {
+        "awareness": {
+          "capsule": {
+            "posture": "MISSING",
+            "present": "MISSING"
+          },
+          "ecosystem_row": {
+            "posture": "MISSING",
+            "present": "MISSING"
+          }
+        },
+        "conflicts": [],
+        "deployment": {
+          "posture": "MISSING"
+        },
+        "display_name": "Z-SANCTUARY AI SKYSCRAPER",
+        "ecosystem": {
+          "posture": "MISSING"
+        },
+        "freshness": {
+          "note": "P0 preserves source timestamps only; CURRENT/AGING/STALE thresholds not canonized",
+          "origin": "REAL_SOURCE",
+          "pc_root_updated_at": {
+            "label": "SOURCE_DECLARED",
+            "origin": "REAL_SOURCE",
+            "value": "2026-07-10T10:31:43Z"
+          }
+        },
+        "identity": {
+          "aliases": [],
+          "canonical_id": "z-sanctuary-ai-skyscraper",
+          "join_rule": "NONE",
+          "reconciliation_relation": {
+            "origin": "DERIVED_REAL",
+            "posture": "NOT_APPLICABLE"
+          },
+          "source_ids": [
+            "pc_root::z-sanctuary-ai-skyscraper"
+          ]
+        },
+        "maturity": {
+          "posture": "MISSING"
+        },
+        "missing": [
+          {
+            "field": "awareness.ecosystem_row",
+            "posture": "MISSING"
+          },
+          {
+            "field": "awareness.capsule",
+            "posture": "MISSING"
+          }
+        ],
+        "origin": "DERIVED_REAL",
+        "project_id": "z-sanctuary-ai-skyscraper",
+        "provenance": {
+          "sources": [
+            {
+              "namespace": "pc_root",
+              "path": "data/z_pc_root_projects.json",
+              "source_id": "z-sanctuary-ai-skyscraper"
+            }
+          ]
+        },
+        "runtime": {
+          "posture": "MISSING"
+        },
+        "sovereignty": {
+          "composed_posture": "MEMBER",
+          "mapping_rule": "spec overlay: pc_root.role member → MEMBER",
+          "origin_record": "DERIVED_REAL",
+          "source_posture": "member",
+          "source_reference": "data/z_pc_root_projects.json#projects[].role",
+          "source_value_origin": "REAL_SOURCE"
+        }
+      },
+      {
+        "awareness": {
+          "capsule": {
+            "posture": "MISSING",
+            "present": "MISSING"
+          },
+          "ecosystem_row": {
+            "posture": "MISSING",
+            "present": "MISSING"
+          }
+        },
+        "conflicts": [],
+        "deployment": {
+          "posture": "MISSING"
+        },
+        "display_name": "z-Sanctuary-Aimanity",
+        "ecosystem": {
+          "posture": "MISSING"
+        },
+        "freshness": {
+          "note": "P0 preserves source timestamps only; CURRENT/AGING/STALE thresholds not canonized",
+          "origin": "REAL_SOURCE",
+          "pc_root_updated_at": {
+            "label": "SOURCE_DECLARED",
+            "origin": "REAL_SOURCE",
+            "value": "2026-07-10T10:31:43Z"
+          }
+        },
+        "identity": {
+          "aliases": [],
+          "canonical_id": "z-sanctuary-aimanity",
+          "join_rule": "NONE",
+          "reconciliation_relation": {
+            "origin": "DERIVED_REAL",
+            "posture": "NOT_APPLICABLE"
+          },
+          "source_ids": [
+            "pc_root::z-sanctuary-aimanity"
+          ]
+        },
+        "maturity": {
+          "posture": "MISSING"
+        },
+        "missing": [
+          {
+            "field": "awareness.ecosystem_row",
+            "posture": "MISSING"
+          },
+          {
+            "field": "awareness.capsule",
+            "posture": "MISSING"
+          }
+        ],
+        "origin": "DERIVED_REAL",
+        "project_id": "z-sanctuary-aimanity",
+        "provenance": {
+          "sources": [
+            {
+              "namespace": "pc_root",
+              "path": "data/z_pc_root_projects.json",
+              "source_id": "z-sanctuary-aimanity"
+            }
+          ]
+        },
+        "runtime": {
+          "posture": "MISSING"
+        },
+        "sovereignty": {
+          "composed_posture": "MEMBER",
+          "mapping_rule": "spec overlay: pc_root.role member → MEMBER",
+          "origin_record": "DERIVED_REAL",
+          "source_posture": "member",
+          "source_reference": "data/z_pc_root_projects.json#projects[].role",
+          "source_value_origin": "REAL_SOURCE"
+        }
+      },
+      {
+        "awareness": {
+          "capsule": {
+            "posture": "MISSING",
+            "present": "MISSING"
+          },
+          "ecosystem_row": {
+            "posture": "MISSING",
+            "present": "MISSING"
+          }
+        },
+        "conflicts": [],
+        "deployment": {
+          "posture": "MISSING"
+        },
+        "display_name": "Z-Sanctuary Browser (Z-Saiyan Lumina)",
+        "ecosystem": {
+          "posture": "MISSING"
+        },
+        "freshness": {
+          "note": "P0 preserves source timestamps only; CURRENT/AGING/STALE thresholds not canonized",
+          "origin": "REAL_SOURCE",
+          "pc_root_updated_at": {
+            "label": "SOURCE_DECLARED",
+            "origin": "REAL_SOURCE",
+            "value": "2026-07-10T10:31:43Z"
+          }
+        },
+        "identity": {
+          "aliases": [],
+          "canonical_id": "z-sanctuary-browser-z-saiyan-lumina",
+          "join_rule": "NONE",
+          "reconciliation_relation": {
+            "origin": "DERIVED_REAL",
+            "posture": "NOT_APPLICABLE"
+          },
+          "source_ids": [
+            "pc_root::z-sanctuary-browser-z-saiyan-lumina"
+          ]
+        },
+        "maturity": {
+          "posture": "MISSING"
+        },
+        "missing": [
+          {
+            "field": "awareness.ecosystem_row",
+            "posture": "MISSING"
+          },
+          {
+            "field": "awareness.capsule",
+            "posture": "MISSING"
+          }
+        ],
+        "origin": "DERIVED_REAL",
+        "project_id": "z-sanctuary-browser-z-saiyan-lumina",
+        "provenance": {
+          "sources": [
+            {
+              "namespace": "pc_root",
+              "path": "data/z_pc_root_projects.json",
+              "source_id": "z-sanctuary-browser-z-saiyan-lumina"
+            }
+          ]
+        },
+        "runtime": {
+          "posture": "MISSING"
+        },
+        "sovereignty": {
+          "composed_posture": "EXTERNAL_LINKED",
+          "hosting": "missing",
+          "mapping_rule": "spec overlay: pc_root.role external → EXTERNAL_LINKED (CONNECTED ≠ MERGED)",
+          "origin_record": "DERIVED_REAL",
+          "source_posture": "external",
+          "source_reference": "data/z_pc_root_projects.json#projects[].role",
+          "source_value_origin": "REAL_SOURCE"
+        }
+      },
+      {
+        "awareness": {
+          "capsule": {
+            "posture": "MISSING",
+            "present": "MISSING"
+          },
+          "ecosystem_row": {
+            "posture": "MISSING",
+            "present": "MISSING"
+          }
+        },
+        "conflicts": [],
+        "deployment": {
+          "posture": "MISSING"
+        },
+        "display_name": "Z-Sanctuary Claude (Core)",
+        "ecosystem": {
+          "posture": "MISSING"
+        },
+        "freshness": {
+          "note": "P0 preserves source timestamps only; CURRENT/AGING/STALE thresholds not canonized",
+          "origin": "REAL_SOURCE",
+          "pc_root_updated_at": {
+            "label": "SOURCE_DECLARED",
+            "origin": "REAL_SOURCE",
+            "value": "2026-07-10T10:31:43Z"
+          }
+        },
+        "identity": {
+          "aliases": [],
+          "canonical_id": "z-sanctuary-claude-core",
+          "join_rule": "NONE",
+          "reconciliation_relation": {
+            "origin": "DERIVED_REAL",
+            "posture": "NOT_APPLICABLE"
+          },
+          "source_ids": [
+            "pc_root::z-sanctuary-claude-core"
+          ]
+        },
+        "maturity": {
+          "posture": "MISSING"
+        },
+        "missing": [
+          {
+            "field": "awareness.ecosystem_row",
+            "posture": "MISSING"
+          },
+          {
+            "field": "awareness.capsule",
+            "posture": "MISSING"
+          }
+        ],
+        "origin": "DERIVED_REAL",
+        "project_id": "z-sanctuary-claude-core",
+        "provenance": {
+          "sources": [
+            {
+              "namespace": "pc_root",
+              "path": "data/z_pc_root_projects.json",
+              "source_id": "z-sanctuary-claude-core"
+            }
+          ]
+        },
+        "runtime": {
+          "posture": "MISSING"
+        },
+        "sovereignty": {
+          "composed_posture": "MEMBER",
+          "mapping_rule": "spec overlay: pc_root.role member → MEMBER",
+          "origin_record": "DERIVED_REAL",
+          "source_posture": "member",
+          "source_reference": "data/z_pc_root_projects.json#projects[].role",
+          "source_value_origin": "REAL_SOURCE"
+        }
+      },
+      {
+        "awareness": {
+          "capsule": {
+            "posture": "MISSING",
+            "present": "MISSING"
+          },
+          "ecosystem_row": {
+            "posture": "MISSING",
+            "present": "MISSING"
+          }
+        },
+        "conflicts": [],
+        "deployment": {
+          "posture": "MISSING"
+        },
+        "display_name": "Z-sanctuary External PaaS",
+        "ecosystem": {
+          "posture": "MISSING"
+        },
+        "freshness": {
+          "note": "P0 preserves source timestamps only; CURRENT/AGING/STALE thresholds not canonized",
+          "origin": "REAL_SOURCE",
+          "pc_root_updated_at": {
+            "label": "SOURCE_DECLARED",
+            "origin": "REAL_SOURCE",
+            "value": "2026-07-10T10:31:43Z"
+          }
+        },
+        "identity": {
+          "aliases": [],
+          "canonical_id": "z-sanctuary-external-paas",
+          "join_rule": "NONE",
+          "reconciliation_relation": {
+            "origin": "DERIVED_REAL",
+            "posture": "NOT_APPLICABLE"
+          },
+          "source_ids": [
+            "pc_root::z-sanctuary-external-paas"
+          ]
+        },
+        "maturity": {
+          "posture": "MISSING"
+        },
+        "missing": [
+          {
+            "field": "awareness.ecosystem_row",
+            "posture": "MISSING"
+          },
+          {
+            "field": "awareness.capsule",
+            "posture": "MISSING"
+          }
+        ],
+        "origin": "DERIVED_REAL",
+        "project_id": "z-sanctuary-external-paas",
+        "provenance": {
+          "sources": [
+            {
+              "namespace": "pc_root",
+              "path": "data/z_pc_root_projects.json",
+              "source_id": "z-sanctuary-external-paas"
+            }
+          ]
+        },
+        "runtime": {
+          "posture": "MISSING"
+        },
+        "sovereignty": {
+          "composed_posture": "MEMBER",
+          "mapping_rule": "spec overlay: pc_root.role member → MEMBER",
+          "origin_record": "DERIVED_REAL",
+          "source_posture": "member",
+          "source_reference": "data/z_pc_root_projects.json#projects[].role",
+          "source_value_origin": "REAL_SOURCE"
+        }
+      },
+      {
+        "awareness": {
+          "capsule": {
+            "posture": "MISSING",
+            "present": "MISSING"
+          },
+          "ecosystem_row": {
+            "posture": "MISSING",
+            "present": "MISSING"
+          }
+        },
+        "conflicts": [],
+        "deployment": {
+          "posture": "MISSING"
+        },
+        "display_name": "Z-Sanctuary G",
+        "ecosystem": {
+          "posture": "MISSING"
+        },
+        "freshness": {
+          "note": "P0 preserves source timestamps only; CURRENT/AGING/STALE thresholds not canonized",
+          "origin": "REAL_SOURCE",
+          "pc_root_updated_at": {
+            "label": "SOURCE_DECLARED",
+            "origin": "REAL_SOURCE",
+            "value": "2026-07-10T10:31:43Z"
+          }
+        },
+        "identity": {
+          "aliases": [],
+          "canonical_id": "z-sanctuary-g",
+          "join_rule": "NONE",
+          "reconciliation_relation": {
+            "origin": "DERIVED_REAL",
+            "posture": "NOT_APPLICABLE"
+          },
+          "source_ids": [
+            "pc_root::z-sanctuary-g"
+          ]
+        },
+        "maturity": {
+          "posture": "MISSING"
+        },
+        "missing": [
+          {
+            "field": "awareness.ecosystem_row",
+            "posture": "MISSING"
+          },
+          {
+            "field": "awareness.capsule",
+            "posture": "MISSING"
+          }
+        ],
+        "origin": "DERIVED_REAL",
+        "project_id": "z-sanctuary-g",
+        "provenance": {
+          "sources": [
+            {
+              "namespace": "pc_root",
+              "path": "data/z_pc_root_projects.json",
+              "source_id": "z-sanctuary-g"
+            }
+          ]
+        },
+        "runtime": {
+          "posture": "MISSING"
+        },
+        "sovereignty": {
+          "composed_posture": "MEMBER",
+          "mapping_rule": "spec overlay: pc_root.role member → MEMBER",
+          "origin_record": "DERIVED_REAL",
+          "source_posture": "member",
+          "source_reference": "data/z_pc_root_projects.json#projects[].role",
+          "source_value_origin": "REAL_SOURCE"
+        }
+      },
+      {
+        "awareness": {
+          "capsule": {
+            "posture": "MISSING",
+            "present": "MISSING"
+          },
+          "ecosystem_row": {
+            "posture": "MISSING",
+            "present": "MISSING"
+          }
+        },
+        "conflicts": [],
+        "deployment": {
+          "posture": "MISSING"
+        },
+        "display_name": "Z-Sanctuary Gem",
+        "ecosystem": {
+          "posture": "MISSING"
+        },
+        "freshness": {
+          "note": "P0 preserves source timestamps only; CURRENT/AGING/STALE thresholds not canonized",
+          "origin": "REAL_SOURCE",
+          "pc_root_updated_at": {
+            "label": "SOURCE_DECLARED",
+            "origin": "REAL_SOURCE",
+            "value": "2026-07-10T10:31:43Z"
+          }
+        },
+        "identity": {
+          "aliases": [],
+          "canonical_id": "z-sanctuary-gem",
+          "join_rule": "NONE",
+          "reconciliation_relation": {
+            "origin": "DERIVED_REAL",
+            "posture": "NOT_APPLICABLE"
+          },
+          "source_ids": [
+            "pc_root::z-sanctuary-gem"
+          ]
+        },
+        "maturity": {
+          "posture": "MISSING"
+        },
+        "missing": [
+          {
+            "field": "awareness.ecosystem_row",
+            "posture": "MISSING"
+          },
+          {
+            "field": "awareness.capsule",
+            "posture": "MISSING"
+          }
+        ],
+        "origin": "DERIVED_REAL",
+        "project_id": "z-sanctuary-gem",
+        "provenance": {
+          "sources": [
+            {
+              "namespace": "pc_root",
+              "path": "data/z_pc_root_projects.json",
+              "source_id": "z-sanctuary-gem"
+            }
+          ]
+        },
+        "runtime": {
+          "posture": "MISSING"
+        },
+        "sovereignty": {
+          "composed_posture": "MEMBER",
+          "mapping_rule": "spec overlay: pc_root.role member → MEMBER",
+          "origin_record": "DERIVED_REAL",
+          "source_posture": "member",
+          "source_reference": "data/z_pc_root_projects.json#projects[].role",
+          "source_value_origin": "REAL_SOURCE"
+        }
+      },
+      {
+        "awareness": {
+          "capsule": {
+            "posture": "MISSING",
+            "present": "MISSING"
+          },
+          "ecosystem_row": {
+            "posture": "MISSING",
+            "present": "MISSING"
+          }
+        },
+        "conflicts": [],
+        "deployment": {
+          "posture": "MISSING"
+        },
+        "display_name": "Z-Sanctuary Replit",
+        "ecosystem": {
+          "posture": "MISSING"
+        },
+        "freshness": {
+          "note": "P0 preserves source timestamps only; CURRENT/AGING/STALE thresholds not canonized",
+          "origin": "REAL_SOURCE",
+          "pc_root_updated_at": {
+            "label": "SOURCE_DECLARED",
+            "origin": "REAL_SOURCE",
+            "value": "2026-07-10T10:31:43Z"
+          }
+        },
+        "identity": {
+          "aliases": [],
+          "canonical_id": "z-sanctuary-replit",
+          "join_rule": "NONE",
+          "reconciliation_relation": {
+            "identity_relation": "SEPARATE_PROJECT",
+            "note": "Local folder citizen; not the Replit hosting identity.",
+            "origin": "REAL_SOURCE",
+            "source_path": "docs/PROJECT_IDENTITY_RECONCILIATION.md",
+            "vs": [
+              "replit-roulette-z-amk-goku-mdcp"
+            ]
+          },
+          "source_ids": [
+            "pc_root::z-sanctuary-replit"
+          ]
+        },
+        "maturity": {
+          "posture": "MISSING"
+        },
+        "missing": [
+          {
+            "field": "awareness.ecosystem_row",
+            "posture": "MISSING"
+          },
+          {
+            "field": "awareness.capsule",
+            "posture": "MISSING"
+          }
+        ],
+        "origin": "DERIVED_REAL",
+        "project_id": "z-sanctuary-replit",
+        "provenance": {
+          "sources": [
+            {
+              "namespace": "pc_root",
+              "path": "data/z_pc_root_projects.json",
+              "source_id": "z-sanctuary-replit"
+            }
+          ]
+        },
+        "runtime": {
+          "posture": "MISSING"
+        },
+        "sovereignty": {
+          "composed_posture": "MEMBER",
+          "mapping_rule": "spec overlay: pc_root.role member → MEMBER",
+          "origin_record": "DERIVED_REAL",
+          "source_posture": "member",
+          "source_reference": "data/z_pc_root_projects.json#projects[].role",
+          "source_value_origin": "REAL_SOURCE"
+        }
+      },
+      {
+        "awareness": {
+          "capsule": {
+            "origin": "REAL_SOURCE",
+            "posture": "PRESENT",
+            "present": "PRESENT",
+            "sha256": "f7ee7fd99f565023f74c1c4e1887b91c8c5b1a646922b6c13cab34c9f2d7d96d",
+            "source_declared": {
+              "allowed_auto_checks": {
+                "label": "SOURCE_DECLARED",
+                "origin": "REAL_SOURCE",
+                "value": [
+                  "verify:md",
+                  "z:traffic",
+                  "z:car2",
+                  "dashboard:registry-verify",
+                  "z:ecosystem:awareness"
+                ]
+              },
+              "api_health": {
+                "label": "SOURCE_DECLARED",
+                "origin": "REAL_SOURCE",
+                "value": "not_required_for_hub_read_only"
+              },
+              "autonomy_level": {
+                "label": "SOURCE_DECLARED",
+                "origin": "REAL_SOURCE",
+                "value": "L1"
+              },
+              "build_gate": {
+                "label": "SOURCE_DECLARED",
+                "origin": "REAL_SOURCE",
+                "value": "npm run verify:full:technical optional; not run by Z-AWARE-1 validator"
+              },
+              "current_signal": {
+                "label": "SOURCE_DECLARED",
+                "origin": "REAL_SOURCE",
+                "value": "GREEN"
+              },
+              "docs_gate": {
+                "label": "SOURCE_DECLARED",
+                "origin": "REAL_SOURCE",
+                "value": "npm run verify:md"
+              },
+              "growth_percent": {
+                "label": "SOURCE_DECLARED",
+                "origin": "REAL_SOURCE",
+                "value": 72
+              },
+              "human_gated_actions": {
+                "label": "SOURCE_DECLARED",
+                "origin": "REAL_SOURCE",
+                "value": [
+                  "deploy",
+                  "cloudflare_bind",
+                  "billing",
+                  "bridge",
+                  "provider_keys",
+                  "auto_merge"
+                ]
+              },
+              "notes": {
+                "label": "SOURCE_DECLARED",
+                "origin": "REAL_SOURCE",
+                "value": "Canonical hub capsule. Sacred doctrine remains in hub docs/data only."
+              },
+              "primary_domain": {
+                "label": "SOURCE_DECLARED",
+                "origin": "REAL_SOURCE",
+                "value": "hodp_governance"
+              },
+              "project_id": {
+                "label": "SOURCE_DECLARED",
+                "origin": "REAL_SOURCE",
+                "value": "ZSanctuary_Universe"
+              },
+              "project_name": {
+                "label": "SOURCE_DECLARED",
+                "origin": "REAL_SOURCE",
+                "value": "Z-Sanctuary Universe Hub"
+              },
+              "related_docs": {
+                "label": "SOURCE_DECLARED",
+                "origin": "REAL_SOURCE",
+                "value": [
+                  "docs/Z_ECOSYSTEM_AWARENESS_SPINE.md",
+                  "AGENTS.md"
+                ]
+              },
+              "related_reports": {
+                "label": "SOURCE_DECLARED",
+                "origin": "REAL_SOURCE",
+                "value": [
+                  "data/reports/z_ecosystem_awareness_report.json",
+                  "data/reports/z_traffic_minibots_status.json"
+                ]
+              },
+              "required_checks": {
+                "label": "SOURCE_DECLARED",
+                "origin": "REAL_SOURCE",
+                "value": [
+                  "npm run verify:md",
+                  "npm run z:traffic",
+                  "npm run z:ecosystem:awareness"
+                ]
+              },
+              "schema": {
+                "label": "SOURCE_DECLARED",
+                "origin": "REAL_SOURCE",
+                "value": "z_project_awareness_capsule_v1"
+              },
+              "smoke_gate": {
+                "label": "SOURCE_DECLARED",
+                "origin": "REAL_SOURCE",
+                "value": "npm run z:traffic"
+              }
+            },
+            "source_path": "data/z_sanctuary_universe_awareness_capsule.json"
+          },
+          "ecosystem_row": {
+            "posture": "PRESENT",
+            "present": "PRESENT",
+            "source_declared": {
+              "autonomy_level": "L1",
+              "capsule_path": "data/z_sanctuary_universe_awareness_capsule.json",
+              "cloudflare_status": "HOLD",
+              "deployment_status": "HOLD",
+              "display_name": "Z-Sanctuary Universe (hub)",
+              "known_hold_reason": "",
+              "label": "SOURCE_DECLARED",
+              "origin": "REAL_SOURCE",
+              "owner_or_steward": "AMK-Goku",
+              "project_id": "ZSanctuary_Universe",
+              "project_type": "hub"
+            }
+          }
+        },
+        "conflicts": [
+          {
+            "field": "identity.source_ids",
+            "note": "Explicit hub-folder link; identifiers are not rewritten into each other.",
+            "resolution": "UNRESOLVED",
+            "source_a": {
+              "namespace": "pc_root",
+              "source_id": "z-sanctuary-universe",
+              "value": "z-sanctuary-universe"
+            },
+            "source_b": {
+              "namespace": "ecosystem_awareness",
+              "source_id": "ZSanctuary_Universe",
+              "value": "ZSanctuary_Universe"
+            }
+          }
+        ],
+        "deployment": {
+          "label": "SOURCE_DECLARED",
+          "note": "SAME WORD ≠ SAME SEMANTICS — not Z Logic HOLD/BLOCK/STOP",
+          "origin": "REAL_SOURCE",
+          "source_domain": "PROJECT_DEPLOYMENT",
+          "value": "HOLD"
+        },
+        "display_name": "Z_Sanctuary_Universe",
+        "ecosystem": {
+          "identity": "ZSanctuary_Universe",
+          "membership": "hub",
+          "origin": "REAL_SOURCE",
+          "source": "data/z_ecosystem_awareness_registry.json"
+        },
+        "freshness": {
+          "note": "P0 preserves source timestamps only; CURRENT/AGING/STALE thresholds not canonized",
+          "origin": "REAL_SOURCE",
+          "pc_root_updated_at": {
+            "label": "SOURCE_DECLARED",
+            "origin": "REAL_SOURCE",
+            "value": "2026-07-10T10:31:43Z"
+          }
+        },
+        "identity": {
+          "aliases": [
+            "ZSanctuary_Universe"
+          ],
+          "canonical_id": "z-sanctuary-universe",
+          "join_rule": "EXPLICIT_HUB_FOLDER_REGISTRY_RELATION",
+          "reconciliation_relation": {
+            "origin": "DERIVED_REAL",
+            "posture": "NOT_APPLICABLE"
+          },
+          "source_ids": [
+            "pc_root::z-sanctuary-universe",
+            "ecosystem_awareness::ZSanctuary_Universe"
+          ]
+        },
+        "maturity": {
+          "growth_percent": {
+            "label": "SOURCE_DECLARED",
+            "origin": "REAL_SOURCE",
+            "value": 72
+          },
+          "note": "SOURCE_DECLARED capsule field — not a global Sanctuary maturity percentage"
+        },
+        "missing": [],
+        "origin": "DERIVED_REAL",
+        "project_id": "z-sanctuary-universe",
+        "provenance": {
+          "sources": [
+            {
+              "namespace": "pc_root",
+              "path": "data/z_pc_root_projects.json",
+              "source_id": "z-sanctuary-universe"
+            },
+            {
+              "join_rule": "EXPLICIT_HUB_FOLDER_REGISTRY_RELATION",
+              "namespace": "ecosystem_awareness",
+              "path": "data/z_ecosystem_awareness_registry.json",
+              "source_id": "ZSanctuary_Universe"
+            },
+            {
+              "namespace": "awareness_capsule",
+              "path": "data/z_sanctuary_universe_awareness_capsule.json",
+              "sha256": "f7ee7fd99f565023f74c1c4e1887b91c8c5b1a646922b6c13cab34c9f2d7d96d"
+            }
+          ]
+        },
+        "runtime": {
+          "current_signal": {
+            "label": "SOURCE_DECLARED",
+            "origin": "REAL_SOURCE",
+            "value": "GREEN"
+          },
+          "note": "SOURCE_DECLARED capsule health/signal — not a universal project status"
+        },
+        "sovereignty": {
+          "composed_posture": "INTERNAL",
+          "mapping_rule": "spec overlay: pc_root.role hub → INTERNAL",
+          "origin_record": "DERIVED_REAL",
+          "source_posture": "hub",
+          "source_reference": "data/z_pc_root_projects.json#projects[].role",
+          "source_value_origin": "REAL_SOURCE"
+        }
+      },
+      {
+        "awareness": {
+          "capsule": {
+            "posture": "MISSING",
+            "present": "MISSING"
+          },
+          "ecosystem_row": {
+            "posture": "MISSING",
+            "present": "MISSING"
+          }
+        },
+        "conflicts": [],
+        "deployment": {
+          "posture": "MISSING"
+        },
+        "display_name": "Z_Sanctuary_Universe 2",
+        "ecosystem": {
+          "posture": "MISSING"
+        },
+        "freshness": {
+          "note": "P0 preserves source timestamps only; CURRENT/AGING/STALE thresholds not canonized",
+          "origin": "REAL_SOURCE",
+          "pc_root_updated_at": {
+            "label": "SOURCE_DECLARED",
+            "origin": "REAL_SOURCE",
+            "value": "2026-07-10T10:31:43Z"
+          }
+        },
+        "identity": {
+          "aliases": [],
+          "canonical_id": "z-sanctuary-universe-2",
+          "join_rule": "NONE",
+          "reconciliation_relation": {
+            "origin": "DERIVED_REAL",
+            "posture": "NOT_APPLICABLE"
+          },
+          "source_ids": [
+            "pc_root::z-sanctuary-universe-2"
+          ]
+        },
+        "maturity": {
+          "posture": "MISSING"
+        },
+        "missing": [
+          {
+            "field": "awareness.ecosystem_row",
+            "posture": "MISSING"
+          },
+          {
+            "field": "awareness.capsule",
+            "posture": "MISSING"
+          }
+        ],
+        "origin": "DERIVED_REAL",
+        "project_id": "z-sanctuary-universe-2",
+        "provenance": {
+          "sources": [
+            {
+              "namespace": "pc_root",
+              "path": "data/z_pc_root_projects.json",
+              "source_id": "z-sanctuary-universe-2"
+            }
+          ]
+        },
+        "runtime": {
+          "posture": "MISSING"
+        },
+        "sovereignty": {
+          "composed_posture": "UNKNOWN",
+          "mapping_rule": "no explicit overlay for this pc_root.role",
+          "origin_record": "DERIVED_REAL",
+          "source_posture": "continuation_active",
+          "source_reference": "data/z_pc_root_projects.json#projects[].role",
+          "source_value_origin": "REAL_SOURCE"
+        }
+      },
+      {
+        "awareness": {
+          "capsule": {
+            "posture": "MISSING",
+            "present": "MISSING"
+          },
+          "ecosystem_row": {
+            "posture": "MISSING",
+            "present": "MISSING"
+          }
+        },
+        "conflicts": [],
+        "deployment": {
+          "posture": "MISSING"
+        },
+        "display_name": "Z_Sanctuary_Universe 2",
+        "ecosystem": {
+          "posture": "MISSING"
+        },
+        "freshness": {
+          "note": "P0 preserves source timestamps only; CURRENT/AGING/STALE thresholds not canonized",
+          "origin": "REAL_SOURCE",
+          "pc_root_updated_at": {
+            "label": "SOURCE_DECLARED",
+            "origin": "REAL_SOURCE",
+            "value": "2026-07-10T10:31:43Z"
+          }
+        },
+        "identity": {
+          "aliases": [],
+          "canonical_id": "z-sanctuary-universe-2-continuation",
+          "join_rule": "NONE",
+          "reconciliation_relation": {
+            "origin": "DERIVED_REAL",
+            "posture": "NOT_APPLICABLE"
+          },
+          "source_ids": [
+            "pc_root::z-sanctuary-universe-2-continuation"
+          ]
+        },
+        "maturity": {
+          "posture": "MISSING"
+        },
+        "missing": [
+          {
+            "field": "awareness.ecosystem_row",
+            "posture": "MISSING"
+          },
+          {
+            "field": "awareness.capsule",
+            "posture": "MISSING"
+          }
+        ],
+        "origin": "DERIVED_REAL",
+        "project_id": "z-sanctuary-universe-2-continuation",
+        "provenance": {
+          "sources": [
+            {
+              "namespace": "pc_root",
+              "path": "data/z_pc_root_projects.json",
+              "source_id": "z-sanctuary-universe-2-continuation"
+            }
+          ]
+        },
+        "runtime": {
+          "posture": "MISSING"
+        },
+        "sovereignty": {
+          "composed_posture": "UNKNOWN",
+          "mapping_rule": "no explicit overlay for this pc_root.role",
+          "origin_record": "DERIVED_REAL",
+          "source_posture": "hub_backup_slice",
+          "source_reference": "data/z_pc_root_projects.json#projects[].role",
+          "source_value_origin": "REAL_SOURCE"
+        }
+      },
+      {
+        "awareness": {
+          "capsule": {
+            "posture": "MISSING",
+            "present": "MISSING"
+          },
+          "ecosystem_row": {
+            "posture": "MISSING",
+            "present": "MISSING"
+          }
+        },
+        "conflicts": [],
+        "deployment": {
+          "posture": "MISSING"
+        },
+        "display_name": "Z-Sancurary Pets Care Compassion",
+        "ecosystem": {
+          "posture": "MISSING"
+        },
+        "freshness": {
+          "note": "P0 preserves source timestamps only; CURRENT/AGING/STALE thresholds not canonized",
+          "origin": "REAL_SOURCE",
+          "pc_root_updated_at": {
+            "label": "SOURCE_DECLARED",
+            "origin": "REAL_SOURCE",
+            "value": "2026-07-10T10:31:43Z"
+          }
+        },
+        "identity": {
+          "aliases": [],
+          "canonical_id": "z-sancurary-pets-care-compassion",
+          "join_rule": "NONE",
+          "reconciliation_relation": {
+            "origin": "DERIVED_REAL",
+            "posture": "NOT_APPLICABLE"
+          },
+          "source_ids": [
+            "pc_root::z-sancurary-pets-care-compassion"
+          ]
+        },
+        "maturity": {
+          "posture": "MISSING"
+        },
+        "missing": [
+          {
+            "field": "awareness.ecosystem_row",
+            "posture": "MISSING"
+          },
+          {
+            "field": "awareness.capsule",
+            "posture": "MISSING"
+          }
+        ],
+        "origin": "DERIVED_REAL",
+        "project_id": "z-sancurary-pets-care-compassion",
+        "provenance": {
+          "sources": [
+            {
+              "namespace": "pc_root",
+              "path": "data/z_pc_root_projects.json",
+              "source_id": "z-sancurary-pets-care-compassion"
+            }
+          ]
+        },
+        "runtime": {
+          "posture": "MISSING"
+        },
+        "sovereignty": {
+          "composed_posture": "MEMBER",
+          "mapping_rule": "spec overlay: pc_root.role member → MEMBER",
+          "origin_record": "DERIVED_REAL",
+          "source_posture": "member",
+          "source_reference": "data/z_pc_root_projects.json#projects[].role",
+          "source_value_origin": "REAL_SOURCE"
+        }
+      },
+      {
+        "awareness": {
+          "capsule": {
+            "posture": "MISSING",
+            "present": "MISSING"
+          },
+          "ecosystem_row": {
+            "posture": "MISSING",
+            "present": "MISSING"
+          }
+        },
+        "conflicts": [],
+        "deployment": {
+          "posture": "MISSING"
+        },
+        "display_name": "Z-WorkSphere Marketplace Hub",
+        "ecosystem": {
+          "posture": "MISSING"
+        },
+        "freshness": {
+          "note": "P0 preserves source timestamps only; CURRENT/AGING/STALE thresholds not canonized",
+          "origin": "REAL_SOURCE",
+          "pc_root_updated_at": {
+            "label": "SOURCE_DECLARED",
+            "origin": "REAL_SOURCE",
+            "value": "2026-07-10T10:31:43Z"
+          }
+        },
+        "identity": {
+          "aliases": [],
+          "canonical_id": "z-worksphere-marketplace-hub",
+          "join_rule": "NONE",
+          "reconciliation_relation": {
+            "origin": "DERIVED_REAL",
+            "posture": "NOT_APPLICABLE"
+          },
+          "source_ids": [
+            "pc_root::z-worksphere-marketplace-hub"
+          ]
+        },
+        "maturity": {
+          "posture": "MISSING"
+        },
+        "missing": [
+          {
+            "field": "awareness.ecosystem_row",
+            "posture": "MISSING"
+          },
+          {
+            "field": "awareness.capsule",
+            "posture": "MISSING"
+          }
+        ],
+        "origin": "DERIVED_REAL",
+        "project_id": "z-worksphere-marketplace-hub",
+        "provenance": {
+          "sources": [
+            {
+              "namespace": "pc_root",
+              "path": "data/z_pc_root_projects.json",
+              "source_id": "z-worksphere-marketplace-hub"
+            }
+          ]
+        },
+        "runtime": {
+          "posture": "MISSING"
+        },
+        "sovereignty": {
+          "composed_posture": "MEMBER",
+          "mapping_rule": "spec overlay: pc_root.role member → MEMBER",
+          "origin_record": "DERIVED_REAL",
+          "source_posture": "member",
+          "source_reference": "data/z_pc_root_projects.json#projects[].role",
+          "source_value_origin": "REAL_SOURCE"
+        }
+      }
+    ],
+    "summary": {
+      "ambiguous_joins": 0,
+      "awareness_row_missing_count": 21,
+      "awareness_row_present_count": 1,
+      "capsule_missing_count": 21,
+      "capsule_present_count": 1,
+      "conflict_count": 1,
+      "explicit_joins": 1,
+      "origin": "DERIVED",
+      "project_count": 22,
+      "sovereignty_counts": {
+        "EXTERNAL_LINKED": 3,
+        "INTERNAL": 1,
+        "MEMBER": 15,
+        "SEPARATE": 1,
+        "UNKNOWN": 2
+      },
+      "unmatched_source_record_count": 9
+    },
+    "unmatched_source_records": [
+      {
+        "capsule_path": "z-questra/data/z_project_awareness_capsule.json",
+        "display_name": "Z-QUESTRA",
+        "reason": "NO_EXPLICIT_IDENTITY_MATCH",
+        "source": "ecosystem_awareness",
+        "source_id": "z-questra"
+      },
+      {
+        "capsule_path": "",
+        "display_name": "AT Princess & Blackie / Franed AI",
+        "reason": "NO_EXPLICIT_IDENTITY_MATCH",
+        "source": "ecosystem_awareness",
+        "source_id": "at_princess_blackie"
+      },
+      {
+        "capsule_path": "",
+        "display_name": "Z-Saiyan Lumina Browser",
+        "reason": "NO_EXPLICIT_IDENTITY_MATCH",
+        "source": "ecosystem_awareness",
+        "source_id": "z_saiyan_lumina_browser"
+      },
+      {
+        "capsule_path": "",
+        "display_name": "Z-OMNAI creative production",
+        "reason": "NO_EXPLICIT_IDENTITY_MATCH",
+        "source": "ecosystem_awareness",
+        "source_id": "z_omnai_creative"
+      },
+      {
+        "capsule_path": "",
+        "display_name": "Z-SUSBV Benchmark Overseer",
+        "reason": "NO_EXPLICIT_IDENTITY_MATCH",
+        "source": "ecosystem_awareness",
+        "source_id": "zsusbv_benchmark_overseer"
+      },
+      {
+        "capsule_path": "",
+        "display_name": "ÉirMind / Aisling-Sol legacy branch",
+        "reason": "NO_EXPLICIT_IDENTITY_MATCH",
+        "source": "ecosystem_awareness",
+        "source_id": "eirmind"
+      },
+      {
+        "capsule_path": "",
+        "display_name": "ZQuestCraft (placeholder)",
+        "reason": "NO_EXPLICIT_IDENTITY_MATCH",
+        "source": "ecosystem_awareness",
+        "source_id": "zquestcraft"
+      },
+      {
+        "capsule_path": "",
+        "display_name": "XL2 reference-only lane",
+        "reason": "NO_EXPLICIT_IDENTITY_MATCH",
+        "source": "ecosystem_awareness",
+        "source_id": "xl2_reference"
+      },
+      {
+        "capsule_path": "",
+        "display_name": "AI Tower — Sage / Warrior / Shadow (advisory roles)",
+        "reason": "NO_EXPLICIT_IDENTITY_MATCH",
+        "source": "ecosystem_awareness",
+        "source_id": "ai_tower_observers"
+      }
+    ]
+  },
+  "schema_version": 1,
+  "summary": {
+    "coverage_row_count": 22,
+    "cross_lens_conflict_count": 0,
+    "dna_assets_without_project_join_count": 8,
+    "dna_dependency_count": 6,
+    "dna_drift_finding_count": 3,
+    "dna_shard_count": 8,
+    "origin": "DERIVED",
+    "project_count": 22,
+    "projects_missing_dna_count": 22,
+    "projects_with_dna_count": 0,
+    "verified_project_dna_link_count": 0
+  }
+}
