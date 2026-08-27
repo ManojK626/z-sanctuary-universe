@@ -2,7 +2,7 @@
   "schema": "z_ecosystem_awareness_registry_v1",
   "canonical_hub_name": "ZSanctuary_Universe",
   "canonical_hub_folder": "Z_Sanctuary_Universe",
-  "hub_folder_alignment_note": "Display/registry id ZSanctuary_Universe; active PC folder Z_Sanctuary_Universe. Retired stub ZSanctuary_Universe retained on disk. See docs/root-discovery-audit/ROOT_ALIGNMENT_DELTA_REPORT.md",
+  "hub_folder_alignment_note": "Display/registry id ZSanctuary_Universe; active PC folder Z_Sanctuary_Universe. Retired stub identity retained as archive reference; former folder absent on disk. See docs/root-discovery-audit/ROOT_ALIGNMENT_DELTA_REPORT.md",
   "awareness_mode": "read_only",
   "law_note": "Hub remains canonical for law. Projects declare small capsules only. No heavy cross-repo builds from this validator unless explicitly chartered later.",
   "projects": [
