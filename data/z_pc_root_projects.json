@@ -1,13 +1,13 @@
 {
   "pc_root": "C:/Cursor Projects Organiser",
-  "hub": "ZSanctuary_Universe",
-  "updated_at": "2026-05-04T13:51:10Z",
+  "hub": "Z_Sanctuary_Universe",
+  "updated_at": "2026-07-10T10:31:43Z",
   "source": "z-eaii-registry.json + z-eaii-build-pc-workspace.mjs",
   "projects": [
     {
-      "id": "zsanctuary-universe",
-      "name": "ZSanctuary_Universe",
-      "path": "ZSanctuary_Universe",
+      "id": "z-sanctuary-universe",
+      "name": "Z_Sanctuary_Universe",
+      "path": "Z_Sanctuary_Universe",
       "role": "hub",
       "ssws": true,
       "formula_aware": true,
@@ -48,17 +48,20 @@
       "dashboard_url": ""
     },
     {
-      "id": "at-princess-blackie-copitol",
-      "name": "AT Princess & Blackie Copilot",
-      "path": "AT Princess&Blackie Copilot",
-      "role": "member",
+      "id": "eirmind-ireland-projects-missing",
+      "name": "ÉirMind (Ireland Projects)",
+      "path": "",
+      "role": "external",
+      "hosting": "missing",
       "ssws": false,
       "formula_aware": true,
       "eaii_launch_task": "",
-      "dashboard_url": ""
+      "dashboard_url": "",
+      "migration_status": "path_missing",
+      "notes": "Former path C:/Cursor Projects Organiser/Ireland Projects absent on disk 2026-06-11. Hold pending AMK — see EIRMIND_ALIGNMENT_DECISION.md. On-disk lineage: Z-Sister Aisling Sol."
     },
     {
-      "id": "pc-root-extras-and-tools",
+      "id": "extras-tools",
       "name": "Extras & Tools",
       "path": "Extras & Tools",
       "role": "member",
@@ -66,7 +69,7 @@
       "formula_aware": false,
       "eaii_launch_task": "",
       "dashboard_url": "",
-      "notes": "Canonical PC-root sink for installers, portable tools, large downloads, zips, and other non-repo artefacts. Keeps product repos (hub + members) clean. Not an app codebase — do not run SSWS here. Z-Folder Manager hub policy (allowed_roots) applies only inside ZSanctuary_Universe; use this folder for PC-root hygiene. See docs/Z-PC-ROOT-EXTRAS-AND-TOOLS-SINK.md."
+      "notes": "EAII sync engine + installers sink — not an SSWS product repo"
     },
     {
       "id": "replit-roulette-z-amk-goku-mdcp",
@@ -92,15 +95,42 @@
       "dashboard_url": ""
     },
     {
-      "id": "z-sanctuary-universe-2-continuation",
-      "name": "Z_Sanctuary_Universe 2",
-      "path": "ZSanctuary_Universe/Z_Sanctuary_Universe 2",
+      "id": "z-labs",
+      "name": "Z_Labs",
+      "path": "Z_Labs",
       "role": "member",
       "ssws": false,
       "formula_aware": true,
       "eaii_launch_task": "",
+      "dashboard_url": ""
+    },
+    {
+      "id": "z-sanctuary-universe-2",
+      "name": "Z_Sanctuary_Universe 2",
+      "path": "Z_Sanctuary_Universe 2",
+      "role": "continuation_active",
+      "ssws": false,
+      "formula_aware": true,
+      "eaii_launch_task": "",
       "dashboard_url": "",
-      "notes": "Continuation / parallel build lane on disk. Operational hub remains ZSanctuary_Universe (registry, Overseer, SSWS). Point Z-Formulas and governance to hub; no second SSWS auto-boot unless explicitly promoted."
+      "lab_lane": "universe_2_active",
+      "processed_by": [
+        "Z_Labs",
+        "Z_Sanctuary_Universe"
+      ],
+      "notes": "Primary continuation lab: upgrades, new-project intake, OMNAI/Browser, Z-SUC exports. SSWS stays on hub."
+    },
+    {
+      "id": "z-sanctuary-universe-2-continuation",
+      "name": "Z_Sanctuary_Universe 2",
+      "path": "Z_Sanctuary_Universe/Z_Sanctuary_Universe 2",
+      "role": "hub_backup_slice",
+      "ssws": false,
+      "formula_aware": true,
+      "eaii_launch_task": "",
+      "dashboard_url": "",
+      "notes": "Nested backup slice under hub repo: governance BACKUP md, manifest bridge via z_suc2_sync_manifest_to_hub. Active work is PC-root sibling.",
+      "lab_lane": "universe_2_backup"
     },
     {
       "id": "z-omni-sanctuary",
@@ -125,7 +155,20 @@
     {
       "id": "z-sanctuary-browser-z-saiyan-lumina",
       "name": "Z-Sanctuary Browser (Z-Saiyan Lumina)",
-      "path": "Z-Sanctuary Browser",
+      "path": "",
+      "role": "external",
+      "hosting": "missing",
+      "ssws": false,
+      "formula_aware": true,
+      "eaii_launch_task": "",
+      "dashboard_url": "",
+      "migration_status": "path_missing",
+      "notes": "Folder `Z-Sanctuary Browser` absent on disk 2026-07-01. Restore from backup or archive registry row after AMK review."
+    },
+    {
+      "id": "z-sanctuary-claude-core",
+      "name": "Z-Sanctuary Claude (Core)",
+      "path": "Z-Sanctuary Claude",
       "role": "member",
       "ssws": false,
       "formula_aware": true,
@@ -133,9 +176,29 @@
       "dashboard_url": ""
     },
     {
-      "id": "z-sanctuary-claude-core",
-      "name": "Z-Sanctuary Claude (Core)",
-      "path": "Z-Sanctuary Claude",
+      "id": "z-sanctuary-external-paas",
+      "name": "Z-sanctuary External PaaS",
+      "path": "Z-sanctuary External PaaS",
+      "role": "member",
+      "ssws": false,
+      "formula_aware": false,
+      "eaii_launch_task": "",
+      "dashboard_url": ""
+    },
+    {
+      "id": "z-sanctuary-g",
+      "name": "Z-Sanctuary G",
+      "path": "Z-Sanctuary G",
+      "role": "member",
+      "ssws": false,
+      "formula_aware": true,
+      "eaii_launch_task": "",
+      "dashboard_url": ""
+    },
+    {
+      "id": "z-sanctuary-gem",
+      "name": "Z-Sanctuary Gem",
+      "path": "Z-Sanctuary Gem",
       "role": "member",
       "ssws": false,
       "formula_aware": true,
@@ -151,17 +214,53 @@
       "formula_aware": true,
       "eaii_launch_task": "",
       "dashboard_url": "http://127.0.0.1:5190",
-      "notes": "Roulette-Data-Analyzer: from artifacts/roulette-dashboard run `pnpm dev` — use Vite printed Local URL only; not Live Server or raw index.html path."
+      "notes": "Roulette-Data-Analyzer: from artifacts/roulette-dashboard run pnpm dev — use Vite Local URL only."
     },
     {
       "id": "z-sanctuary-aimanity",
-      "name": "z-sanctuary-aimanity",
-      "path": "z-sanctuary-aimanity",
+      "name": "z-Sanctuary-Aimanity",
+      "path": "z-Sanctuary-Aimanity",
+      "role": "member",
+      "ssws": false,
+      "formula_aware": true,
+      "eaii_launch_task": "",
+      "dashboard_url": ""
+    },
+    {
+      "id": "z-sancurary-pets-care-compassion",
+      "name": "Z-Sancurary Pets Care Compassion",
+      "path": "Z-Sancurary _Pets Care Compassion",
+      "role": "member",
+      "ssws": false,
+      "formula_aware": false,
+      "eaii_launch_task": "",
+      "dashboard_url": "",
+      "notes": "Stub visibility only"
+    },
+    {
+      "id": "z-worksphere-marketplace-hub",
+      "name": "Z-WorkSphere Marketplace Hub",
+      "path": "Z-WorkSphere_Marketplace_Hub",
       "role": "member",
       "ssws": false,
       "formula_aware": true,
       "eaii_launch_task": "",
       "dashboard_url": ""
     }
-  ]
+  ],
+  "retired_projects": [
+    {
+      "id": "zsanctuary-universe-stub-retired",
+      "name": "ZSanctuary_Universe (retired stub)",
+      "former_path": "ZSanctuary_Universe",
+      "successor_path": "Z_Sanctuary_Universe",
+      "retired_at": "2026-07-10",
+      "notes": "Hub rename complete. Former folder absent on disk. Kept as archive reference only — not in active projects[]."
+    }
+  ],
+  "universe_2_resolution": {
+    "applied_at": "2026-07-10T10:31:43.559Z",
+    "doc": "docs/Z_UNIVERSE_2_CONTINUATION_LANE.md",
+    "verdict": "intentional_split_not_merge"
+  }
 }
