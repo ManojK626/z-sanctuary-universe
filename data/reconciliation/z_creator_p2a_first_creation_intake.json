@@ -1,0 +1,116 @@
+{
+  "schema": "z_creator_p2a_intake_v1",
+  "_non_executable": true,
+  "_description": "P2A Creation Intake Binding instance. Embeds existing ZunoRequest and ZunoTaskPlan shapes. Not an orchestrator runtime.",
+  "charter": {
+    "id": "Z-CREATOR-P2A-FIRST-CREATION-CHARTER",
+    "path": "docs/reconciliation/Z_CREATOR_P2A_FIRST_CREATION_CHARTER.md"
+  },
+  "domain": "DOCUMENTATION_SPECIFICATION",
+  "requested_artefact": "docs/creator/Z_CREATOR_SOFTWARE_CREATION_CYCLE_V1.md",
+  "scope": {
+    "allowed_paths": [
+      "docs/creator/Z_CREATOR_SOFTWARE_CREATION_CYCLE_V1.md",
+      "docs/reconciliation/Z_CREATOR_P2A_FIRST_CREATION_CHARTER.md",
+      "docs/reconciliation/PHASE_Z_CREATOR_P2A_CREATION_INTAKE_BINDING_RECEIPT.md",
+      "data/reconciliation/z_creator_p2a_first_creation_intake.json",
+      "scripts/z_creator_intake_bind.mjs",
+      "scripts/z_creator_intake_bind.test.mjs"
+    ],
+    "forbidden_paths": [
+      "docs/INDEX.md",
+      "package.json"
+    ]
+  },
+  "verification": {
+    "command": "npm run aafrtc:ci"
+  },
+  "authority": {
+    "runtime": "NONE",
+    "deployment": "NONE",
+    "human_approval_required": true
+  },
+  "status": "BOUND",
+  "request": {
+    "_fixture": "zuno_request_v1",
+    "_non_executable": true,
+    "_description": "P2A live intake request — existing ZunoRequest fields only.",
+    "id": "req-z-creator-p2a-001",
+    "createdAtIso": "2026-08-28T16:10:00.000Z",
+    "intentSummary": "Bind one human-chartered documentation/spec creation cycle using existing Zuno contracts and emit one operational cycle page.",
+    "projectScope": "ZSanctuary_Universe",
+    "capabilitiesSought": [
+      {
+        "family": "text_reasoning",
+        "labels": ["documentation", "handoff"]
+      },
+      {
+        "family": "governance",
+        "labels": ["creation_intake", "turtle"]
+      },
+      {
+        "family": "evaluation_verify",
+        "labels": ["aafrtc_ci"]
+      }
+    ],
+    "formulaRef": {
+      "id": "creation_intake_binding",
+      "docPath": "docs/reconciliation/Z_CREATOR_P2_FIRST_CAPABILITY_SELECTION.md",
+      "version": "p2a"
+    },
+    "metadata": {
+      "operator": "AMK-Goku",
+      "lane": "z_creator_p2a",
+      "charter_id": "Z-CREATOR-P2A-FIRST-CREATION-CHARTER",
+      "domain": "DOCUMENTATION_SPECIFICATION",
+      "requested_artefact": "docs/creator/Z_CREATOR_SOFTWARE_CREATION_CYCLE_V1.md",
+      "verification_command": "npm run aafrtc:ci"
+    }
+  },
+  "task_plan": {
+    "_fixture": "zuno_task_plan_v1",
+    "_non_executable": true,
+    "_description": "P2A planned steps only — no execution by this adapter.",
+    "planId": "plan-z-creator-p2a-001",
+    "requestId": "req-z-creator-p2a-001",
+    "steps": [
+      {
+        "stepId": "step-1",
+        "description": "Validate the P2A intake envelope against existing ZunoRequest and ZunoTaskPlan field shapes and this charter's scope.",
+        "capability": {
+          "family": "governance",
+          "labels": ["creation_intake"]
+        },
+        "requiresHumanApproval": true
+      },
+      {
+        "stepId": "step-2",
+        "description": "Write one bounded documentation artefact describing the native software-creation cycle. Docs domain only.",
+        "capability": {
+          "family": "text_reasoning",
+          "labels": ["documentation"]
+        },
+        "requiresHumanApproval": true
+      },
+      {
+        "stepId": "step-3",
+        "description": "Run npm run aafrtc:ci from hub root and record the result on the phase receipt. Do not run full-core.",
+        "capability": {
+          "family": "evaluation_verify",
+          "labels": ["aafrtc_ci"]
+        },
+        "requiresHumanApproval": true
+      }
+    ],
+    "drpPreview": {
+      "overall": "pending_human",
+      "dimensions": {
+        "human_approval_sacred_moves": "review",
+        "deployment_hold": "ok"
+      },
+      "rationale": [
+        "Documentation/spec slice only. Merge remains a human GitHub gate."
+      ]
+    }
+  }
+}
