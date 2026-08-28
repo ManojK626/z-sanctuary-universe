@@ -14,65 +14,65 @@ This remains a **human-chartered local build slice**. Merge is **PENDING**.
 
 ## Branch / HEAD
 
-| Field       | Value                                                   |
+| Field | Value |
 | ----------- | ------------------------------------------------------- |
-| Branch      | `cursor/zsanctuary/global-open-workflow-reconciliation` |
-| HEAD before | `501d4143810e1615e1880b569364263e9da94d41`              |
-| HEAD after  | `501d4143810e1615e1880b569364263e9da94d41` (no commit)  |
+| Branch | `cursor/zsanctuary/global-open-workflow-reconciliation` |
+| HEAD before | `501d4143810e1615e1880b569364263e9da94d41` |
+| HEAD after | `501d4143810e1615e1880b569364263e9da94d41` (no commit) |
 
 ## Working tree
 
-| When   | Observation                                                                                                            |
+| When | Observation |
 | ------ | ---------------------------------------------------------------------------------------------------------------------- |
-| Before | Porcelain ≈ **412**                                                                                                    |
-| After  | Unrelated dirt **preserved** (INDEX + package.json still `M`). P2A files untracked. CI refreshed expected report JSON. |
+| Before | Porcelain ≈ **412** |
+| After | Unrelated dirt **preserved** (INDEX + package.json still `M`). P2A files untracked. CI refreshed expected report JSON. |
 
 ## Bound cycle
 
-| Field               | Value                                                          |
+| Field | Value |
 | ------------------- | -------------------------------------------------------------- |
-| Charter ID          | `Z-CREATOR-P2A-FIRST-CREATION-CHARTER`                         |
-| Request ID          | `req-z-creator-p2a-001`                                        |
-| Task-plan ID        | `plan-z-creator-p2a-001`                                       |
-| Domain              | `DOCUMENTATION_SPECIFICATION`                                  |
-| Requested artefact  | `docs/creator/Z_CREATOR_SOFTWARE_CREATION_CYCLE_V1.md`         |
-| Intake binding path | `scripts/z_creator_intake_bind.mjs`                            |
-| Intake instance     | `data/reconciliation/z_creator_p2a_first_creation_intake.json` |
+| Charter ID | `Z-CREATOR-P2A-FIRST-CREATION-CHARTER` |
+| Request ID | `req-z-creator-p2a-001` |
+| Task-plan ID | `plan-z-creator-p2a-001` |
+| Domain | `DOCUMENTATION_SPECIFICATION` |
+| Requested artefact | `docs/creator/Z_CREATOR_SOFTWARE_CREATION_CYCLE_V1.md` |
+| Intake binding path | `scripts/z_creator_intake_bind.mjs` |
+| Intake instance | `data/reconciliation/z_creator_p2a_first_creation_intake.json` |
 
 ## Reuse
 
-| Item                   | Result                                                                                                                                       |
+| Item | Result |
 | ---------------------- | -------------------------------------------------------------------------------------------------------------------------------------------- |
-| Reused contract types  | `ZunoRequest`, `ZunoTaskPlan` / `ZunoTaskPlanStep`, `ZCapability`, `ZDRPDecision`, `ZFormulaRef` (field shapes; no TS compile in this slice) |
-| New types added        | **0**                                                                                                                                        |
-| New packages added     | **0**                                                                                                                                        |
-| Existing fixture shape | `_non_executable`, `_fixture`, `_description`                                                                                                |
-| `examples:check`       | **not run** (writes hub `data/reports`; too broad)                                                                                           |
+| Reused contract types | `ZunoRequest`, `ZunoTaskPlan` / `ZunoTaskPlanStep`, `ZCapability`, `ZDRPDecision`, `ZFormulaRef` (field shapes; no TS compile in this slice) |
+| New types added | **0** |
+| New packages added | **0** |
+| Existing fixture shape | `_non_executable`, `_fixture`, `_description` |
+| `examples:check` | **not run** (writes hub `data/reports`; too broad) |
 
 ## Tests
 
-| Check                                                | Result                |
+| Check | Result |
 | ---------------------------------------------------- | --------------------- |
-| `node --test scripts/z_creator_intake_bind.test.mjs` | **PASS** (5/5)        |
-| valid documentation/spec intake                      | accepted              |
-| missing charter                                      | rejected              |
-| deploy/runtime authority                             | rejected              |
-| forbidden path                                       | rejected              |
-| unsupported domain                                   | rejected              |
-| Live bind CLI on first intake                        | **ACCEPTED** (exit 0) |
+| `node --test scripts/z_creator_intake_bind.test.mjs` | **PASS** (5/5) |
+| valid documentation/spec intake | accepted |
+| missing charter | rejected |
+| deploy/runtime authority | rejected |
+| forbidden path | rejected |
+| unsupported domain | rejected |
+| Live bind CLI on first intake | **ACCEPTED** (exit 0) |
 
 ## `aafrtc:ci`
 
-| Field                      | Value                      |
+| Field | Value |
 | -------------------------- | -------------------------- |
-| Command                    | `npm run aafrtc:ci`        |
-| Result                     | **PASS** (exit 0)          |
-| Enforcer                   | `ALLOW_PROGRESS`           |
-| Structure                  | PASS 52/0                  |
-| Omni                       | 100% SYNCED                |
-| system-status              | `verify=PASS`              |
-| Guardian                   | 2 suggestions (not a fail) |
-| full-core / full / resolve | **not run**                |
+| Command | `npm run aafrtc:ci` |
+| Result | **PASS** (exit 0) |
+| Enforcer | `ALLOW_PROGRESS` |
+| Structure | PASS 52/0 |
+| Omni | 100% SYNCED |
+| system-status | `verify=PASS` |
+| Guardian | 2 suggestions (not a fail) |
+| full-core / full / resolve | **not run** |
 
 ## Source files changed (P2A)
 
@@ -91,17 +91,17 @@ Unrelated dirt (INDEX, ICIS/Golden `package.json` lines, prior recon) **not** ab
 
 ## Authority / connections
 
-| Item                 | Result                                 |
+| Item | Result |
 | -------------------- | -------------------------------------- |
-| Runtime authority    | **NONE**                               |
-| Deployment authority | **NONE**                               |
-| Provider connections | **NONE**                               |
-| Atoms connections    | **NONE**                               |
+| Runtime authority | **NONE** |
+| Deployment authority | **NONE** |
+| Provider connections | **NONE** |
+| Atoms connections | **NONE** |
 | Cloudflare mutations | **NONE** (local manifest refresh only) |
-| R2 mutations         | **NONE**                               |
-| Merges               | **NONE**                               |
-| Pushes               | **NONE**                               |
-| Human decision       | **PENDING**                            |
+| R2 mutations | **NONE** |
+| Merges | **NONE** |
+| Pushes | **NONE** |
+| Human decision | **PENDING** |
 
 ## Rollback
 
