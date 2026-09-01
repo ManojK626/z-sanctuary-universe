@@ -112,6 +112,38 @@ Git representation: source working-tree bytes are LF. On `git add`, local Git wa
 
 ---
 
+## Two-layer provenance (Markdown compliance amendment)
+
+### Historical source identity
+
+Recovered dirty-tree Constitution:
+
+SHA-256:
+
+`22D8F074C49213864A5C2C291F9D97FEF143E58992FEA904EDE7429BD98EEAC7`
+
+Git blob (custody commit): `b8119d969fc2beb353c899106f2a36a98cce3e25`
+
+Status:
+
+**byte-preserved in original custody commit `6c514e8ba56ccaf7ab155e9a35053518a905601c`**
+
+That SHA remains the permanent historical recovered-artifact identity. This amendment does not overwrite or reinterpret it.
+
+### Canonical repository representation
+
+Post-normalization SHA-256:
+
+`F0DA45CA35A81A88E93BB1C87C8BCAC97AA0CBB28E481D0ED9A12EE8200F1603`
+
+Git blob (working tree at amendment): `3b09157664b55f0d336ebe2dcb670df5d3afb228`
+
+The follow-up Markdown compliance amendment changes presentation/heading syntax only to satisfy canonical repository hygiene. The original recovered artifact remains permanently identifiable by its original SHA and custody commit. No constitutional doctrine or authority changed.
+
+Allowed change classes used: `HEADING_DISAMBIGUATION`, `HEADING_SYNTAX_ONLY`, `EMPHASIS_MARKER_ONLY` (footer underscore emphasis removed by converting the line to a heading), `RECEIPT_FORMAT_ONLY`.
+
+---
+
 ## Validation results (narrow)
 
 | Check | Result |
@@ -142,4 +174,4 @@ Next human gate: **promotion-to-main** after Steward review of this local seal (
 
 ---
 
-_Custody recovery, not constitution reauthoring. Provenance is this isolated Turtle lane — not “added because Z-PoT needed it.”_
+### Custody recovery, not constitution reauthoring. Provenance is this isolated Turtle lane — not “added because Z-PoT needed it.”

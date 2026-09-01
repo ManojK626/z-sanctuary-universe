@@ -48,7 +48,7 @@ Not legal text. Guiding philosophy for every human steward and every AI contribu
 
 > No major refactor, deployment, archive, merge, or deletion may occur unless at least one verified backup exists and the affected project is present in the Master Registry.
 
-### Clarifications
+### Article II clarifications
 
 | Term | Meaning |
 | -------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -68,7 +68,7 @@ Not legal text. Guiding philosophy for every human steward and every AI contribu
 
 > The Constitution safeguards the structure, stewardship, and safety of the Z-Sanctuary Universe ecosystem. It is not intended to prevent innovation. New projects, AI systems, technologies, workflows, and ideas are encouraged, provided they first pass Observation, Registration, Governance, and Stewardship before becoming part of the canonical ecosystem.
 
-### Clarifications
+### Article III clarifications
 
 | Gate | Meaning |
 | ------------ | ------------------------------------------------------------------------------------------- |
@@ -263,7 +263,7 @@ Amendments require: AMK consent · dated edition bump · update to State of the 
 | Freshness Principle | **PERMANENT** (v1.2) |
 | Stewardship Principle | **PERMANENT** (v1.3) |
 
-**AMK acceptance**
+### AMK acceptance
 
 - [x] Wording accepted — Constitution v1.0 **FROZEN** (Option 3 · 2026-07-24 · includes Evolution Principle)
 - [x] Amendment accepted — Constitution **v1.1** Intelligence Principle + Ops Center spine recognition (2026-08-01)
@@ -278,7 +278,7 @@ Amendments require: AMK consent · dated edition bump · update to State of the 
 
 > Every recommendation must be traceable to evidence.
 
-### Clarifications
+### Article XII clarifications
 
 | Term | Meaning |
 | --- | --- |
@@ -298,7 +298,7 @@ Amendments require: AMK consent · dated edition bump · update to State of the 
 
 > Every operational signal must be traceable in time.
 
-### Clarifications
+### Article XIII clarifications
 
 | Term | Meaning |
 | --- | --- |
@@ -318,7 +318,7 @@ Amendments require: AMK consent · dated edition bump · update to State of the 
 
 > Every significant action should be preceded by deliberate human review.
 
-### Clarifications
+### Article XIV clarifications
 
 | Term | Meaning |
 | --- | --- |
@@ -350,4 +350,4 @@ Amendments require: AMK consent · dated edition bump · update to State of the 
 
 ---
 
-_Z-Sanctuary Universe Constitution v1.3 — FROZEN architecture · Intelligence + Freshness + Stewardship Principles PERMANENT · Stewardship Era_
+### Z-Sanctuary Universe Constitution v1.3 — FROZEN architecture · Intelligence + Freshness + Stewardship Principles PERMANENT · Stewardship Era
