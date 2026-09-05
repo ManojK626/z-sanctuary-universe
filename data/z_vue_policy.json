@@ -1,0 +1,269 @@
+{
+  "schema": "z_vue_policy_v1",
+  "phase": "Z-VUE-0",
+  "updated_at": "2026-09-05T00:00:00Z",
+  "law": [
+    "SCHEMA != AUTHORITY",
+    "REGISTRY != RUNTIME",
+    "GRAPH != SOURCE OF TRUTH",
+    "MAP != AUTHORITY",
+    "VISUAL CONNECTION != TECHNICAL DEPENDENCY",
+    "RELATIONSHIP LABEL != RUNTIME CONTROL",
+    "EXPLORER COLOR != EVIDENCE_STATE",
+    "CONTRIBUTOR FILTER != LOGIN",
+    "PUBLIC-SAFE != PUBLISHED",
+    "READINESS != DEPLOY",
+    "Z-VUE GRAPH != SOURCE EVENT STORE",
+    "VISIBILITY != AUTHORIZATION",
+    "LAYER != SECURITY BOUNDARY",
+    "Z-VUE DISPLAY POLICY != APPLICATION AUTHORIZATION",
+    "SCOPE_ID != LOGIN",
+    "SCOPE_ID != AUTHENTICATION",
+    "SCOPE_ID != RBAC",
+    "GRAPH RELATIONSHIP != LEGAL RELATIONSHIP",
+    "MARKDOWN = SOURCE OF TRUTH",
+    "JSON = STRUCTURED STATE",
+    "INTERACTIVE MAP = VISUAL UNDERSTANDING ONLY"
+  ],
+  "authorization_boundary": {
+    "recognized_approval": [
+      "explicit Steward instruction naming the lane",
+      "approved Super Turtle packet"
+    ],
+    "not_recognized_as_approval": [
+      "unrecognized strings",
+      "passwords",
+      "2FA codes",
+      "API keys",
+      "recovery codes",
+      "chat fragments",
+      "Cursor canvas mockups"
+    ],
+    "no_phase_transition_without_recognized_instruction": true
+  },
+  "truth_stack": {
+    "markdown": "SOURCE_OF_TRUTH",
+    "database_or_json": "STRUCTURED_STATE",
+    "interactive_map": "VISUAL_UNDERSTANDING",
+    "dashboards": "OPERATIONAL_METRICS",
+    "cursor": "IMPLEMENTATION_ASSISTANT"
+  },
+  "declared_capabilities": {
+    "current_execution_authority": "NONE",
+    "status": "DECLARED_CAPABILITY_NOT_CURRENT_EXECUTION_AUTHORITY",
+    "future": [
+      "DESCRIBE_GRAPH",
+      "FILTER_NODES",
+      "SELECT_VIEW",
+      "OPEN_DOC_POINTER",
+      "SHOW_CONTRIBUTOR_SUBSET"
+    ]
+  },
+  "forbidden_actions": [
+    "WRITE_PROJECT_FILES",
+    "INSTALL_GRAPH_LIBRARY",
+    "CREATE_RUNTIME",
+    "ADD_PACKAGE_COMMAND",
+    "LOGIN",
+    "AUTHENTICATE_CONTRIBUTOR",
+    "MUTATE_GITHUB",
+    "MUTATE_CLOUDFLARE",
+    "QUERY_LIVE_REVENUE",
+    "QUERY_LIVE_ISSUES",
+    "DEPLOY",
+    "MERGE",
+    "PUSH",
+    "REPLACE_GW5",
+    "REPLACE_NAV1",
+    "REPLACE_ZMV1B",
+    "ISSUE_EQUITY",
+    "ACTIVATE_REVENUE_SHARE",
+    "EXPOSE_SECRETS",
+    "EXPOSE_ABSOLUTE_PRIVATE_PC_PATHS",
+    "BECOME_EVENT_STORE",
+    "AUTO_REMEDIATE"
+  ],
+  "views": [
+    {
+      "id": "architecture",
+      "meaning": "systems, modules, infrastructure, declared relationships"
+    },
+    {
+      "id": "business",
+      "meaning": "Golden Websites, property economics, scorecard pointers"
+    },
+    {
+      "id": "partnership",
+      "meaning": "contributor classes, 15% envelope, property deals, not issued equity"
+    },
+    {
+      "id": "security",
+      "meaning": "display-policy flags, sensitive-system labels, least-privilege reminders, compliance risk flags. Not application authorization."
+    },
+    {
+      "id": "roadmap",
+      "meaning": "planned / in-progress / completed as declared metadata only"
+    }
+  ],
+  "layers": [
+    {
+      "id": "all",
+      "meaning": "nodes allowed for the selected view"
+    },
+    {
+      "id": "contributor",
+      "meaning": "nodes flagged contributor_relevant for a stated scope_id; not identity login"
+    },
+    {
+      "id": "dependencies",
+      "meaning": "declared relationship edges; not proven runtime coupling"
+    },
+    {
+      "id": "revenue",
+      "meaning": "nodes with revenue_visible; amounts stay UNKNOWN unless sourced"
+    },
+    {
+      "id": "compliance",
+      "meaning": "nodes with compliance_risk"
+    }
+  ],
+  "display_policy": {
+    "semantics": "Z-VUE DISPLAY POLICY != APPLICATION AUTHORIZATION",
+    "audience_classes": [
+      "public_safe",
+      "contributor_scoped",
+      "operator",
+      "steward",
+      "forbidden_to_map"
+    ],
+    "rules": [
+      "audience and layer fields control visual disclosure only",
+      "hiding a node does not make it inaccessible in any authorized security system",
+      "public_safe nodes may later feed GW-5-class doorways only through a sanitizer, never by pointing the public map at the private graph",
+      "contributor_scoped requires a later identity contract; Z-VUE-0 stores the field only",
+      "operator and steward nodes stay off public Golden Website maps",
+      "forbidden_to_map must not appear in any generated graph instance",
+      "PARTNERSHIP != ADMIN ACCESS",
+      "REVENUE SHARE != DATABASE ACCESS",
+      "EQUITY != PRODUCTION CREDENTIALS"
+    ]
+  },
+  "graph_integrity": {
+    "node_id": "stable string; unique within one graph instance",
+    "edge_identity": "edge_id unique when present; otherwise composite from+to+relationship_kind should be unique within one instance",
+    "dangling_endpoints": "FORBIDDEN",
+    "self_edges": "FORBIDDEN",
+    "direction": "from is source, to is target; edges are directed",
+    "json_schema_enforcement": "NOT_SCHEMA_ENFORCEABLE for uniqueness, dangling refs, or self-edges",
+    "future_semantic_validator": "CLOSED_THIS_PHASE_NO_SCRIPT"
+  },
+  "statuses": {
+    "evidence_state": {
+      "vocabulary": ["VERIFIED", "SEALED", "QUALIFIED", "CONCEPT", "HOLD", "CLOSED", "UNKNOWN"],
+      "source": "GW-0A / GW-5 evidence_state",
+      "rule": "Do not invent traffic-light meanings for evidence_state. QUALIFIED remains QUALIFIED. SEALED != deployed."
+    },
+    "roadmap_state": {
+      "vocabulary": ["PLANNED", "IN_PROGRESS", "COMPLETE_DECLARED_SCOPE", "HOLD", "UNKNOWN"],
+      "rule": "COMPLETE_DECLARED_SCOPE != MAXIMUM_THEORETICAL_COMPLETION"
+    },
+    "explorer_token": {
+      "vocabulary": ["CORE", "AI", "GOLDEN", "MODULE", "INFRA", "PARTNER", "PLANNED", "RISK", "UNKNOWN"],
+      "rule": "VIEW LAYER ONLY. explorer_token != evidence_state. explorer_token != health system of record. explorer_token is not a command, authorization, phase transition, execution instruction, deployment trigger, or mutation instruction."
+    }
+  },
+  "golden_website_relationships": {
+    "public_map": "GW-5 six-node foundation remains the public doorway",
+    "private_or_contributor_graph": "Z-VUE contract may describe a wider graph later",
+    "rule": "Do not load private overlay, Twin records, or operator catalogs into universe-map.html",
+    "property_economics": "Site/module contribution uses PROPERTY_ECONOMICS or MODULE_ECONOMICS, not parent equity"
+  },
+  "partnership_links": {
+    "framework": "data/z_golden_websites_partnership_framework.json",
+    "partner_classes": [
+      "CLASS_1_CONTRIBUTORS",
+      "CLASS_2_GROWTH_PARTNERS",
+      "CLASS_3_STRATEGIC_PARTNERS",
+      "CLASS_4_CORE_EXECUTIVE_LONG_TERM_ORGANISM_STEWARD",
+      "NONE",
+      "UNKNOWN"
+    ],
+    "economic_lanes": [
+      "COMMISSION",
+      "PROPERTY_ECONOMICS",
+      "MODULE_ECONOMICS",
+      "COMMERCIAL_AGREEMENT",
+      "PARENT_EQUITY_REVIEW",
+      "NONE",
+      "UNKNOWN"
+    ],
+    "strategic_dilution_envelope_pct": 15,
+    "issued_pct": 0,
+    "promised_pct": 0,
+    "lifetime_partnership": "RETIRED_FOR_NEW_RECRUITMENT",
+    "rule": "Partnership metadata on a node is not an issued agreement. GRAPH RELATIONSHIP != LEGAL RELATIONSHIP. Drawn edges do not create equity, vesting, revenue entitlement, employment, contract, payment, or ownership."
+  },
+  "contributor_filters": {
+    "phase_0_status": "SCHEMA_ONLY",
+    "login": false,
+    "scope_id_legal": true,
+    "unknown_legal": true,
+    "auto_grant_access": false,
+    "highlight_only": true,
+    "scope_id_is_not": [
+      "login",
+      "authentication",
+      "RBAC",
+      "authorization",
+      "repository_permission"
+    ]
+  },
+  "claims_requiring_provenance_when_asserted": [
+    "evidence_state other than UNKNOWN",
+    "partnership economic_lane other than NONE or UNKNOWN",
+    "revenue_visible true"
+  ],
+  "audit_boundaries": {
+    "z_vue_is_event_store": false,
+    "graph_instance_is_canonical_history": false,
+    "required_provenance_when_instance_exists": [
+      "source_system",
+      "source_artifact",
+      "evidence_posture"
+    ],
+    "unknown_legal": true,
+    "do_not_persist": [
+      "raw_chat",
+      "tokens",
+      "credentials",
+      "api_secrets",
+      "private_keys",
+      "cloudflare_account_ids",
+      "absolute_private_pc_paths",
+      "raw_provider_payloads",
+      "personal_family_details",
+      "medical_details",
+      "financial_details",
+      "legal_details"
+    ]
+  },
+  "privacy": {
+    "allowed_forms": ["stable_id", "bounded_summary", "redacted_value", "UNKNOWN"]
+  },
+  "unknown_property_policy": {
+    "graph_schema": "additionalProperties false on the document and on nested objects",
+    "reason": "v1 closed so executable, legal, or auth fields cannot appear silently",
+    "namespaced_extension": "NOT_IN_V1",
+    "v2": "CLOSED"
+  },
+  "integrations_closed_this_phase": {
+    "react_flow": true,
+    "package_command": true,
+    "graph_writer": true,
+    "dashboard": true,
+    "morning_cockpit": true,
+    "zuno_runtime_wire": true,
+    "contributor_login": true,
+    "scheduler": true
+  }
+}

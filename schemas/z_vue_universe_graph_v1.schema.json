@@ -1,0 +1,280 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "z_vue_universe_graph_v1.schema.json",
+  "title": "Z-VUE universe graph v1",
+  "description": "DATA CONTRACT only. Does not authorize generating a graph instance, React Flow runtime, login, or replacing GW-5 / NAV-1 / ZMV-1B. GRAPH != SOURCE OF TRUTH. MAP != AUTHORITY.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "authority",
+    "views",
+    "nodes",
+    "edges"
+  ],
+  "properties": {
+    "schema_version": {
+      "type": "string",
+      "const": "z_vue_universe_graph_v1"
+    },
+    "generated_at": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "scope": {
+      "type": "string"
+    },
+    "authority": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "runtime",
+        "mutation_authority",
+        "requires_steward_authorization",
+        "display_policy_is_not_authorization"
+      ],
+      "properties": {
+        "runtime": { "type": "string", "const": "NONE" },
+        "mutation_authority": { "type": "string", "const": "NONE" },
+        "requires_steward_authorization": { "type": "boolean", "const": true },
+        "human_authority": { "type": "string", "const": "AMK-GOKU" },
+        "graph_is_source_of_truth": { "type": "boolean", "const": false },
+        "display_policy_is_not_authorization": { "type": "boolean", "const": true }
+      }
+    },
+    "views": {
+      "type": "array",
+      "minItems": 1,
+      "uniqueItems": true,
+      "items": {
+        "type": "string",
+        "enum": ["architecture", "business", "partnership", "security", "roadmap"]
+      }
+    },
+    "active_view": {
+      "type": "string",
+      "enum": ["architecture", "business", "partnership", "security", "roadmap"]
+    },
+    "active_layer": {
+      "type": "string",
+      "enum": ["all", "contributor", "dependencies", "revenue", "compliance"]
+    },
+    "contributor_filter": {
+      "$ref": "#/$defs/contributor_filter"
+    },
+    "nodes": {
+      "type": "array",
+      "description": "JSON Schema does not enforce unique node_id. Policy requires uniqueness within one instance.",
+      "items": { "$ref": "#/$defs/node" }
+    },
+    "edges": {
+      "type": "array",
+      "description": "Directed from source to target. JSON Schema does not enforce unique edge_id, dangling endpoint rejection, or self-edge rejection.",
+      "items": { "$ref": "#/$defs/edge" }
+    },
+    "unknowns": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "provenance": {
+      "type": "array",
+      "items": { "$ref": "#/$defs/provenance" }
+    },
+    "audit": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "event_store": { "type": "string", "const": "NONE" },
+        "limitations": { "type": "string" }
+      }
+    }
+  },
+  "$defs": {
+    "evidence_state": {
+      "type": "string",
+      "enum": ["VERIFIED", "SEALED", "QUALIFIED", "CONCEPT", "HOLD", "CLOSED", "UNKNOWN"]
+    },
+    "evidence_posture": {
+      "type": "string",
+      "enum": ["VERIFIED", "SUPPORTED", "PARTIAL", "UNKNOWN", "CONFLICTING"]
+    },
+    "roadmap_state": {
+      "type": "string",
+      "enum": ["PLANNED", "IN_PROGRESS", "COMPLETE_DECLARED_SCOPE", "HOLD", "UNKNOWN"]
+    },
+    "explorer_token": {
+      "type": "string",
+      "description": "View-only filtering primitive. Not a command, authorization, phase transition, execution instruction, deployment trigger, or mutation instruction.",
+      "enum": ["CORE", "AI", "GOLDEN", "MODULE", "INFRA", "PARTNER", "PLANNED", "RISK", "UNKNOWN"]
+    },
+    "node_kind": {
+      "type": "string",
+      "enum": ["core", "ai", "golden", "module", "infra", "partner", "governance", "planned", "unknown"]
+    },
+    "audience": {
+      "type": "string",
+      "description": "Visual disclosure class only. Z-VUE display policy is not application authorization, login, or RBAC.",
+      "enum": ["public_safe", "contributor_scoped", "operator", "steward", "forbidden_to_map"]
+    },
+    "partner_class": {
+      "type": "string",
+      "enum": [
+        "CLASS_1_CONTRIBUTORS",
+        "CLASS_2_GROWTH_PARTNERS",
+        "CLASS_3_STRATEGIC_PARTNERS",
+        "CLASS_4_CORE_EXECUTIVE_LONG_TERM_ORGANISM_STEWARD",
+        "NONE",
+        "UNKNOWN"
+      ]
+    },
+    "economic_lane": {
+      "type": "string",
+      "enum": [
+        "COMMISSION",
+        "PROPERTY_ECONOMICS",
+        "MODULE_ECONOMICS",
+        "COMMERCIAL_AGREEMENT",
+        "PARENT_EQUITY_REVIEW",
+        "NONE",
+        "UNKNOWN"
+      ]
+    },
+    "relationship_kind": {
+      "type": "string",
+      "enum": [
+        "governed_with",
+        "observed_with",
+        "coordinated_with",
+        "inquiry_supported_by",
+        "explored_through",
+        "owns",
+        "depends_on",
+        "partners_with",
+        "revenue_of",
+        "maps_to_public",
+        "UNKNOWN"
+      ]
+    },
+    "dependency_class": {
+      "type": "string",
+      "enum": ["ARCHITECTURAL", "TECHNICAL", "ECONOMIC", "GOVERNANCE", "PUBLIC_SAFE", "UNKNOWN"]
+    },
+    "provenance": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "source_system": { "type": "string" },
+        "source_artifact": { "type": "string" },
+        "source_schema": { "type": "string" },
+        "source_generated_at": { "type": "string" },
+        "source_commit": { "type": "string" },
+        "source_project_id": { "type": "string" },
+        "evidence_posture": { "$ref": "#/$defs/evidence_posture" }
+      }
+    },
+    "contributor_filter": {
+      "type": "object",
+      "additionalProperties": false,
+      "description": "scope_id is visual/context filtering only. It is not login, authentication, RBAC, authorization, or repository permission.",
+      "properties": {
+        "login": { "type": "boolean", "const": false },
+        "scope_id": { "type": "string" },
+        "highlight_only": { "type": "boolean", "const": true },
+        "unknown": { "type": "boolean" }
+      }
+    },
+    "golden_website_link": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["relationship"],
+      "properties": {
+        "canonical_id": { "type": "string" },
+        "public_map_id": { "type": "string" },
+        "relationship": {
+          "type": "string",
+          "enum": ["same_as_public", "sanitized_from_private", "property_only", "not_on_public_map", "UNKNOWN"]
+        }
+      }
+    },
+    "partnership_link": {
+      "type": "object",
+      "additionalProperties": false,
+      "description": "GRAPH RELATIONSHIP != LEGAL RELATIONSHIP. Metadata does not issue equity, vesting, revenue entitlement, employment, contract, payment, or ownership.",
+      "properties": {
+        "partner_class": { "$ref": "#/$defs/partner_class" },
+        "economic_lane": { "$ref": "#/$defs/economic_lane" },
+        "agreement_issued": { "type": "boolean", "const": false },
+        "legal_relationship_inferred": { "type": "boolean", "const": false },
+        "framework_ref": { "type": "string" }
+      }
+    },
+    "node": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["node_id", "label", "kind", "audience"],
+      "properties": {
+        "node_id": { "type": "string", "minLength": 1 },
+        "label": { "type": "string", "minLength": 1 },
+        "kind": { "$ref": "#/$defs/node_kind" },
+        "owner": { "type": "string" },
+        "audience": { "$ref": "#/$defs/audience" },
+        "views": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "enum": ["architecture", "business", "partnership", "security", "roadmap"]
+          }
+        },
+        "evidence_state": { "$ref": "#/$defs/evidence_state" },
+        "roadmap_state": { "$ref": "#/$defs/roadmap_state" },
+        "explorer_token": { "$ref": "#/$defs/explorer_token" },
+        "contributor_relevant": { "type": "boolean" },
+        "revenue_visible": { "type": "boolean" },
+        "compliance_risk": { "type": "boolean" },
+        "golden_website": { "$ref": "#/$defs/golden_website_link" },
+        "partnership": { "$ref": "#/$defs/partnership_link" },
+        "doc_refs": {
+          "type": "array",
+          "items": { "type": "string" }
+        },
+        "evidence_refs": {
+          "type": "array",
+          "items": { "$ref": "#/$defs/provenance" }
+        },
+        "not_claimed": {
+          "type": "array",
+          "items": { "type": "string" }
+        },
+        "unknowns": {
+          "type": "array",
+          "items": { "type": "string" }
+        }
+      }
+    },
+    "edge": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["from", "to", "relationship_kind"],
+      "properties": {
+        "edge_id": { "type": "string" },
+        "from": { "type": "string", "minLength": 1 },
+        "to": { "type": "string", "minLength": 1 },
+        "relationship_kind": { "$ref": "#/$defs/relationship_kind" },
+        "dependency_class": { "$ref": "#/$defs/dependency_class" },
+        "technical_dependency_proven": { "type": "boolean" },
+        "views": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "enum": ["architecture", "business", "partnership", "security", "roadmap"]
+          }
+        },
+        "evidence_refs": {
+          "type": "array",
+          "items": { "$ref": "#/$defs/provenance" }
+        },
+        "note": { "type": "string" }
+      }
+    }
+  }
+}

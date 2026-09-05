@@ -1,0 +1,105 @@
+{
+  "schema": "z_vue_registry_v1",
+  "graph_contract_version": "z_vue_universe_graph_v1",
+  "compatibility": "Future Z-VUE versions must not silently reinterpret v1 documents. v2 is not opened by this phase.",
+  "phase": "Z-VUE-0",
+  "updated_at": "2026-09-05T00:00:00Z",
+  "law": "SCHEMA != AUTHORITY. REGISTRY != RUNTIME. GRAPH != SOURCE OF TRUTH. MAP != AUTHORITY. Markdown remains source of truth. This file registers machine identity only.",
+  "identity": {
+    "canonical_name": "Z-Sanctuary Visual Universe Explorer",
+    "short_name": "Z-VUE",
+    "machine_prefix": "z_vue",
+    "phase": "Z-VUE-0",
+    "status": "REGISTERED_ARCHITECTURE_ONLY",
+    "collision_guard": "Z-VUE != GW-5 Golden Universe Map != NAV-1 != ZMV-1B Living Ecosphere Map"
+  },
+  "authority": {
+    "runtime": "NONE",
+    "mutation_authority": "NONE",
+    "merge_authority": "NONE",
+    "push_authority": "NONE",
+    "deployment_authority": "NONE",
+    "login_authority": "NONE",
+    "contributor_identity_authority": "NONE",
+    "graph_instance_authority": "NONE",
+    "external_provider_access": "NONE",
+    "scheduler": "NONE",
+    "human_authority": "AMK-GOKU"
+  },
+  "artifacts": {
+    "policy": "data/z_vue_policy.json",
+    "graph_schema": "schemas/z_vue_universe_graph_v1.schema.json",
+    "future_graph_instance_paths": [
+      "data/z_vue_universe_graph.json",
+      "data/reports/z_vue_universe_graph.md"
+    ],
+    "future_graph_instance_created_in_this_phase": false,
+    "future_runtime_paths_not_created": [
+      "scripts/z_vue_*.mjs",
+      "dashboard React Flow app",
+      "package.json z:vue command"
+    ]
+  },
+  "reuse": {
+    "model": "SOURCE SPECIALIST PRODUCES → Z-VUE GRAPH CONTRACT DESCRIBES → HUMAN DECIDES",
+    "graph_is_source_of_truth": false,
+    "replaces_gw5": false,
+    "replaces_nav1": false,
+    "replaces_zmv1b": false,
+    "evidence_owners": [
+      {
+        "id": "gw-5-golden-universe-map",
+        "artifact": "data/golden-website/public/gw_map_foundation.json",
+        "role": "public-safe six-node doorway map; keep public audience separate"
+      },
+      {
+        "id": "nav-1",
+        "artifact": "dashboard/data/z_universe_service_catalog.json",
+        "role": "operator read-only navigator catalog and side-panel pattern"
+      },
+      {
+        "id": "zmv-1b-ecosphere",
+        "artifact": "docs/dashboard/Z_SANCTUARY_LIVING_ECOSPHERE_MAP.md",
+        "role": "operator ecosphere visualization; different audience than contributors"
+      },
+      {
+        "id": "partnership-economics-0",
+        "artifact": "data/z_golden_websites_partnership_framework.json",
+        "role": "partnership classes, 15% envelope, property vs parent equity"
+      },
+      {
+        "id": "golden-scorecard",
+        "artifact": "docs/Z_GOLDEN_WEBSITES_ECONOMIC_SCORECARD.md",
+        "role": "funnel and margin measurement; no live analytics"
+      },
+      {
+        "id": "hierarchy-chief",
+        "artifact": "docs/Z-HIERARCHY-CHIEF-AND-OBSERVER-VIEW.md",
+        "role": "authority order; map cannot outrank the chief"
+      },
+      {
+        "id": "module-and-pc-root-registries",
+        "artifact": "data/z_module_manifest.json",
+        "role": "identity lists when a later generator is chartered"
+      }
+    ]
+  },
+  "closed_gates": [
+    "Z-VUE-1",
+    "Z-VUE-RUNTIME",
+    "REACT_FLOW_INSTALL",
+    "CONTRIBUTOR_LOGIN",
+    "LIVE_REVENUE",
+    "GITHUB_API",
+    "CLOUDFLARE_API",
+    "Z-CCO-1",
+    "Z-EFR",
+    "Z-MDMS",
+    "Z-COMMERCIAL-AND-PLATFORM-CRITIC",
+    "PLATFORM-CHANGE-RADAR-REPOSITORY-IMPLEMENTATION",
+    "HAM-1E",
+    "AUTO-CODEX",
+    "OMEGA-4-IMPLEMENTATION"
+  ],
+  "standing_note": "REGISTERED_ARCHITECTURE_ONLY != MERGED_CANONICAL_MAIN. Local or remote branch != organism-wide citizenship until reviewed, merged, and verified on origin/main."
+}
