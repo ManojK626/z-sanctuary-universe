@@ -155,15 +155,13 @@
     {
       "id": "z-sanctuary-browser-z-saiyan-lumina",
       "name": "Z-Sanctuary Browser (Z-Saiyan Lumina)",
-      "path": "",
-      "role": "external",
-      "hosting": "missing",
+      "path": "Z-Sanctuary Browser",
+      "role": "member",
       "ssws": false,
       "formula_aware": true,
       "eaii_launch_task": "",
       "dashboard_url": "",
-      "migration_status": "path_missing",
-      "notes": "Folder `Z-Sanctuary Browser` absent on disk 2026-07-01. Restore from backup or archive registry row after AMK review."
+      "notes": "Declared root restored at Z-Sanctuary Browser (Tree A recovery ancestor; current tree is authorized F1–F3 patched recovery). Local internal runtime verified. Security review PASS WITH HOLDS (F4–F11). External network not verified. Deployment none. Canonical authority pending Steward."
     },
     {
       "id": "z-sanctuary-claude-core",
