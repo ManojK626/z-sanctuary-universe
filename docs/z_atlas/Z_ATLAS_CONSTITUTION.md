@@ -59,14 +59,14 @@ Z-Atlas is **not** a replacement for any of the following. It may **reference** 
 | --- | --- | --- |
 | Identity / path registries | `z-eaii-registry.json` (Organiser) · `data/z_pc_root_projects.json` · `data/z_ecosystem_github_identity.json` · module manifest/registry | Consume identity rows |
 | Hierarchy / governance | `AGENTS.md` · Hierarchy Chief · 14 DRP · Merge Hold · Turtle Mode | Consume gate/authority state |
-| Quadruple Spine | Cognitive · Data · Build · Oversight (`docs/ecosystem/Z_SPINE_RESPONSIBILITY_MATRIX.md`) | Navigational representation only |
-| Prior atlas / maps | `docs/ecosystem/Z_SANCTUARY_ATLAS.md` (Phase 1 knowledge graph) | Predecessor map; not superseded as command |
+| Quadruple Spine | Cognitive · Data · Build · Oversight (`docs/ecosystem/Z_SPINE_RESPONSIBILITY_MATRIX.md`; historical/source-worktree evidence reference; not included in this Atlas custody PR; not available as a canonical-main link at this gate) | Navigational representation only |
+| Prior atlas / maps | `docs/ecosystem/Z_SANCTUARY_ATLAS.md` (Phase 1 knowledge graph; historical/source-worktree evidence reference; not included in this Atlas custody PR; not available as a canonical-main link at this gate) | Predecessor map; not superseded as command |
 | Zuno | snapshots, reflection, observe/report contracts | Observed communicator / health source |
 | Zulu | persona / experimental metadata | Conceptual role only |
 | AI Tower | planned / experimental / HOLD | Coordination surface — **not** Atlas |
 | MiniBots / Traffic / observers | Traffic minibots, Cycle Observe, indicator surfaces | Health/alert overlays |
 | Mentors / Steward council | charter / docs | Supervisory roles when evidenced |
-| Deployment readiness | `docs/Z_MULTI_PROJECT_DEPLOYMENT_READINESS_MATRIX.md` | Deployment overlay source |
+| Deployment readiness | `docs/Z_MULTI_PROJECT_DEPLOYMENT_READINESS_MATRIX.md` (historical/source-worktree evidence reference; not included in this Atlas custody PR; not available as a canonical-main link at this gate) | Deployment overlay source |
 | Provenance / receipts | reconciliation reports, verify receipts | Fact sources |
 | PID / Z-CLDO / Z-PACE | **UNVERIFIED** as named artifacts on this worktree | If later proven, consume — do not fork |
 

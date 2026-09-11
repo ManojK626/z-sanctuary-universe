@@ -80,7 +80,7 @@ Counts in this slice: **55** nodes, **54** edges, **40** facts, **1** preflight 
 | `sys.pid` | Named constitution class; no artifact on this worktree |
 | `sys.z-cldo` | Named constitution class; no artifact on this worktree |
 | `sys.z-pace` | Named constitution class; no artifact on this worktree |
-| `domain.zwheelcracker-com` | Declared, not purchased; DNS liveness unmeasured |
+| `domain.zwheelcracker-com` | Declared. Domain ownership/current DNS state was not re-verified by this Atlas slice. ownership state: NOT RE-VERIFIED IN THIS SLICE; DNS liveness: UNVERIFIED; deployment state: NOT INFERRED |
 | `overlay.live-ports` | Ports 8080 / 5190 / 5502 / 8888 not measured this gate |
 | `overlay.pc-wide-completeness` | No Organiser / `C:\` crawl |
 
@@ -146,4 +146,4 @@ Exit 0 only if all required PASS verdicts hold.
 - [Z_ATLAS_SEED_INVENTORY.md](Z_ATLAS_SEED_INVENTORY.md)
 - [Z_ATLAS_PHASE_0_GENESIS_REPORT.md](Z_ATLAS_PHASE_0_GENESIS_REPORT.md)
 - [Z_ATLAS_AI_PREFLIGHT_CONTEXT.md](Z_ATLAS_AI_PREFLIGHT_CONTEXT.md)
-- [../reconciliation/Z_WHEEL_HUB_POINTER_RECONCILIATION.md](../reconciliation/Z_WHEEL_HUB_POINTER_RECONCILIATION.md) — observe only
+- `docs/reconciliation/Z_WHEEL_HUB_POINTER_RECONCILIATION.md` — observe only; historical/source-worktree evidence reference; not included in this Atlas custody PR; not available as a canonical-main link at this gate

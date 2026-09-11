@@ -305,7 +305,7 @@ MARKDOWN_VERIFY: NOT_AVAILABLE
 
 Atlas-relative markdown links were recounted from **current** `docs/z_atlas/*.md` evidence. Phase 0 genesis reported 47 resolving links among then-new docs. That number was **not assumed**.
 
-Method: extract `](...)` targets from all 13 Atlas markdown files (as they existed before this report); skip `http(s):` / `mailto:` / hash-only; resolve remaining relative targets on disk from `docs/z_atlas/`.
+Method: extract markdown relative-link targets from all 13 Atlas markdown files (as they existed before this report); skip `http(s):` / `mailto:` / hash-only; resolve remaining relative targets on disk from `docs/z_atlas/`.
 
 ```text
 ATLAS_MD_FILES_SCANNED: 13
@@ -354,7 +354,7 @@ Inspected `data/z_atlas/z_atlas_registry_v0_5.json` `uncertaintyIndex`, node fie
 | PID | UNVERIFIED | `sys.pid` `identityStatus=UNVERIFIED` `authorityStatus=UNRESOLVED` `canonicality=not_canonical_unverified_named_system`; listed in `uncertaintyIndex.unverifiedNodeIds`; `fact.pid.unverified` value `UNVERIFIED — no matching artifact on this worktree; do not invent` `confidenceClass=DOCUMENTED_UNVERIFIED` |
 | Z-CLDO | UNVERIFIED | `sys.z-cldo` `identityStatus=UNVERIFIED` `authorityStatus=UNRESOLVED`; `unverifiedNodeIds`; `fact.z-cldo.unverified` |
 | Z-PACE | UNVERIFIED | `sys.z-pace` `identityStatus=UNVERIFIED` `authorityStatus=UNRESOLVED`; `unverifiedNodeIds`; `fact.z-pace.unverified` |
-| zwheelcracker.com DNS | UNVERIFIED | `domain.zwheelcracker-com` `identityStatus=UNVERIFIED` `authorityStatus=UNRESOLVED` `canonicality=declared_domain_not_proven_live`; notes: “DNS liveness UNVERIFIED”; `fact.dns.unverified` value `DNS liveness UNVERIFIED; declared, not purchased`; edge `edge.zwheel.uses-domain.declared` notes “Domain not purchased. DNS UNVERIFIED.” |
+| zwheelcracker.com DNS | UNVERIFIED | `domain.zwheelcracker-com` `identityStatus=UNVERIFIED` `authorityStatus=UNRESOLVED` `canonicality=declared_domain_not_proven_live`. Live Atlas wording (PR #39 review reconciliation): Domain ownership/current DNS state was not re-verified by this Atlas slice; ownership state NOT RE-VERIFIED IN THIS SLICE; DNS liveness UNVERIFIED; deployment state NOT INFERRED. Stale “not purchased” assertion removed; ownership/live/deployed not inferred. |
 | live ports | UNVERIFIED | `overlay.live-ports` `identityStatus=UNVERIFIED` `authorityStatus=UNRESOLVED` `canonicality=not_measured_this_gate`; `fact.live-ports.unverified` value `UNVERIFIED this gate (ports 8080 / 5190 / 5502 / 8888)` |
 | PC-wide completeness | NOT CLAIMED | `overlay.pc-wide-completeness` `identityStatus=UNVERIFIED` `canonicality=incompleteness_by_design`; `claims.pcWideCompletenessClaimed=false` `claims.completenessClaimed=false`; `fact.pc-wide-completeness.unverified`; validator `PC_WIDE_COMPLETENESS_CLAIMED: NO` |
 | Z-Family Health | UNRESOLVED | `project.z-family-health` `authorityStatus=UNRESOLVED` `identityStatus=path_exists_not_sealed_roster` `canonicality=not_canonical_unregistered`; `unresolvedNodeIds`; `fact.z-family-health.unresolved` |

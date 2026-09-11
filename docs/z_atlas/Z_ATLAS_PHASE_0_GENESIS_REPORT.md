@@ -23,6 +23,8 @@ No crawler. No dashboard runtime. No autonomy. No deployment. No git push. Point
 
 `C:\Cursor Projects Organiser\Z_Sanctuary_Universe_wt_sidework0\docs\reconciliation\Z_WHEEL_HUB_POINTER_RECONCILIATION.md`
 
+That path is historical/source-worktree evidence (repo-relative `docs/reconciliation/Z_WHEEL_HUB_POINTER_RECONCILIATION.md`). It is not included in this Atlas custody PR and is not available as a canonical-main link at this gate. Absence from this PR does not invalidate that historical evidence.
+
 Report’s own required validation language includes:
 
 - `HUB_POINTER_PRECHANGE_INVENTORY: COMPLETE`
@@ -67,14 +69,14 @@ Atlas consumes; it does not replace Hierarchy Chief, Zuno, module/PC-root regist
 
 **UNVERIFIED on this worktree (named, not invented):** PID, Z-CLDO, Z-PACE as titled artifacts — no matching docs found. If later proven, consume them; do not fork.
 
-Predecessor map `docs/ecosystem/Z_SANCTUARY_ATLAS.md` remains a Phase 1 knowledge graph. This constitution does not delete or command it.
+Predecessor map `docs/ecosystem/Z_SANCTUARY_ATLAS.md` remains a Phase 1 knowledge graph. Historical/source-worktree evidence reference; not included in this Atlas custody PR; not available as a canonical-main link at this gate. This constitution does not delete or command it.
 
 ---
 
 ## 4. Quadruple Spine relationship
 
 Existing doctrine: Cognitive · Data · Build · Oversight  
-(`docs/ecosystem/Z_SPINE_RESPONSIBILITY_MATRIX.md`).
+(`docs/ecosystem/Z_SPINE_RESPONSIBILITY_MATRIX.md`; historical/source-worktree evidence reference; not included in this Atlas custody PR; not available as a canonical-main link at this gate).
 
 Z-Atlas is a navigational representation of that spine. No fifth spine. No rename.
 

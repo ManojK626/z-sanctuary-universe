@@ -47,16 +47,22 @@ Z-Atlas maps the organism. It does not command the organism.
 
 ## Precondition evidence (do not alter)
 
-[../reconciliation/Z_WHEEL_HUB_POINTER_RECONCILIATION.md](../reconciliation/Z_WHEEL_HUB_POINTER_RECONCILIATION.md)
+Historical/source-worktree evidence reference — observed only; not edited by Atlas; not included in this Atlas custody PR; not available as a canonical-main link at this gate:
+
+`docs/reconciliation/Z_WHEEL_HUB_POINTER_RECONCILIATION.md`
 
 ## Predecessor maps (consume, do not replace)
 
-- [../ecosystem/Z_SANCTUARY_ATLAS.md](../ecosystem/Z_SANCTUARY_ATLAS.md)
-- [../ecosystem/Z_SPINE_RESPONSIBILITY_MATRIX.md](../ecosystem/Z_SPINE_RESPONSIBILITY_MATRIX.md)
-- [../Z_WHEEL_CRACKER_EXTERNAL_SOVEREIGN_POINTER.md](../Z_WHEEL_CRACKER_EXTERNAL_SOVEREIGN_POINTER.md)
-- [../Z_MULTI_PROJECT_DEPLOYMENT_READINESS_MATRIX.md](../Z_MULTI_PROJECT_DEPLOYMENT_READINESS_MATRIX.md)
+Historical/source-worktree evidence references — not included in this Atlas custody PR; not available as canonical-main links at this gate:
+
+- `docs/ecosystem/Z_SANCTUARY_ATLAS.md`
+- `docs/ecosystem/Z_SPINE_RESPONSIBILITY_MATRIX.md`
+- `docs/Z_WHEEL_CRACKER_EXTERNAL_SOVEREIGN_POINTER.md`
+- `docs/Z_MULTI_PROJECT_DEPLOYMENT_READINESS_MATRIX.md`
 
 ## Next gate
+
+Phase 0: GREEN · SEALED. Phase 0.5: GREEN · SEALED. Phase 1: CLOSED / NOT AUTHORIZED.
 
 Phase 0.5 (this slice) does **not** open the next phase.
 

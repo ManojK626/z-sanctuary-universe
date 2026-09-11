@@ -51,14 +51,14 @@ Even then: **UNKNOWN stays UNKNOWN**. Do not publish inferred GREEN.
 
 ## Domain ownership (document only — no DNS edits)
 
-From the multi-project readiness matrix and ZWheel pointer doc. **Not purchased / not proven live** in those audits:
+From historical/source-worktree evidence (`docs/Z_MULTI_PROJECT_DEPLOYMENT_READINESS_MATRIX.md`, `docs/Z_WHEEL_CRACKER_EXTERNAL_SOVEREIGN_POINTER.md`; not included in this Atlas custody PR; not available as canonical-main links at this gate). Domain ownership/current DNS state was not re-verified by this Atlas slice:
 
 | Domain | Declared role | Public-safe statement |
 | --- | --- | --- |
-| `zsanctuaryuniverse.com` | Z-Sanctuary umbrella | Declared umbrella; live DNS **UNVERIFIED** |
-| `zsanctuaryuniverse.org` | Public-interest / governance | Declared; live DNS **UNVERIFIED** |
-| `zgameintel.com` | Gaming SaaS umbrella | Declared; not purchased per prior audits |
-| `zwheelcracker.com` | ZWheel flagship | Declared; not purchased per prior audits |
+| `zsanctuaryuniverse.com` | Z-Sanctuary umbrella | Declared umbrella. ownership state: NOT RE-VERIFIED IN THIS SLICE; DNS liveness: UNVERIFIED; deployment state: NOT INFERRED |
+| `zsanctuaryuniverse.org` | Public-interest / governance | Declared. ownership state: NOT RE-VERIFIED IN THIS SLICE; DNS liveness: UNVERIFIED; deployment state: NOT INFERRED |
+| `zgameintel.com` | Gaming SaaS umbrella | Declared. ownership state: NOT RE-VERIFIED IN THIS SLICE; DNS liveness: UNVERIFIED; deployment state: NOT INFERRED |
+| `zwheelcracker.com` | ZWheel flagship | Declared. ownership state: NOT RE-VERIFIED IN THIS SLICE; DNS liveness: UNVERIFIED; deployment state: NOT INFERRED |
 
 Atlas records **declared ownership intent**. Atlas does not change Cloudflare or DNS.
 
@@ -85,7 +85,7 @@ Example that must remain expressible internally:
 | --- | --- |
 | Health | Local file identity GREEN (ZW-v37; not recertified by hub) |
 | Deployment | HOLD / hub authority NONE / physical proof INSUFFICIENT or UNVERIFIED |
-| Commercial | Family documented; payment ABSENT; domain not purchased |
+| Commercial | Family documented; payment ABSENT; domain ownership NOT RE-VERIFIED IN THIS SLICE; DNS liveness UNVERIFIED; deployment state NOT INFERRED |
 
 ---
 

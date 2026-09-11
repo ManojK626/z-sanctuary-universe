@@ -229,7 +229,7 @@ ATLAS_SOURCE_TARGET_PARITY: PASS
 
 ## 9. Broken-link honesty (excluded targets not imported)
 
-Phase 0 / 0.5 docs may link to excluded pointer files. Those targets were **not** copied. This is recorded as honesty, not as a reason to import dirt.
+Phase 0 / 0.5 docs may cite excluded pointer files. Those targets were **not** copied. This is recorded as honesty, not as a reason to import dirt.
 
 | Linked target | Present in custody worktree | Note |
 | --- | --- | --- |
@@ -239,10 +239,10 @@ Phase 0 / 0.5 docs may link to excluded pointer files. Those targets were **not*
 | `docs/ecosystem/Z_SANCTUARY_ATLAS.md` | NO | predecessor map; not in authorized fileset; also absent on origin/main |
 | `docs/ecosystem/Z_SPINE_RESPONSIBILITY_MATRIX.md` | NO | predecessor map; not in authorized fileset; also absent on origin/main |
 
-Markdown relative links from `docs/z_atlas/README.md` to the first three remain **broken in this isolated tree by design**.
+PR #39 review reconciliation converted those Markdown relative links into non-link provenance text (historical/source-worktree evidence reference; not included in this Atlas custody PR; not available as a canonical-main link at this gate). Exact filenames/paths are preserved. The files were **not** imported.
 
 ```text
-BROKEN_LINK_TO_EXCLUDED: RECORDED
+BROKEN_LINK_TO_EXCLUDED: CONVERTED_TO_PROVENANCE_TEXT
 EXCLUDED_TARGETS_IMPORTED_TO_FIX_LINKS: NO
 ```
 

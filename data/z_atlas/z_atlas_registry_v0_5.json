@@ -487,7 +487,7 @@
       "evidenceFreshness": "CURRENT",
       "categories": ["GAMING_INTELLIGENCE"],
       "path": "C:\\Z-Wheel Cracker",
-      "notes": "Product ZWheel Cracker; ZW-v37; hub source NONE. health GREEN is the existing overlay example preserved by Phase 0 (local GREEN, deployment HOLD, physical proof INSUFFICIENT/UNVERIFIED). Atlas did not invent GREEN from UNKNOWN.",
+      "notes": "Product ZWheel Cracker; ZW-v37; hub source NONE. health GREEN is the existing overlay example preserved by Phase 0 (local GREEN, deployment HOLD, physical proof INSUFFICIENT/UNVERIFIED). Atlas did not invent GREEN from UNKNOWN. Evidence paths docs/reconciliation/Z_WHEEL_HUB_POINTER_RECONCILIATION.md and docs/Z_WHEEL_CRACKER_EXTERNAL_SOVEREIGN_POINTER.md are historical/source-worktree evidence references; not included in this Atlas custody PR; not available as canonical-main links at this gate.",
       "evidenceRefs": [
         "docs/z_atlas/Z_ATLAS_SEED_INVENTORY.md",
         "docs/reconciliation/Z_WHEEL_HUB_POINTER_RECONCILIATION.md",
@@ -509,7 +509,7 @@
       "evidenceFreshness": "CURRENT",
       "categories": ["GAMING_INTELLIGENCE", "COMMERCIAL_SYSTEMS"],
       "path": "C:\\Z-Wheel Cracker",
-      "notes": "DISTINCT PRODUCT. Commercial family ZGame Intelligence (REGISTERED contract, NOT_AUTHORIZED). Hub relationship REFERENCES only. Deployment HOLD / hub authority NONE. Physical-device proof remains UNVERIFIED/HOLD. ZGI Commercial Core not activated.",
+      "notes": "DISTINCT PRODUCT. Commercial family ZGame Intelligence (REGISTERED contract, NOT_AUTHORIZED). Hub relationship REFERENCES only. Deployment HOLD / hub authority NONE. Physical-device proof remains UNVERIFIED/HOLD. ZGI Commercial Core not activated. Evidence paths docs/reconciliation/Z_WHEEL_HUB_POINTER_RECONCILIATION.md and docs/Z_WHEEL_CRACKER_EXTERNAL_SOVEREIGN_POINTER.md are historical/source-worktree evidence references; not included in this Atlas custody PR; not available as canonical-main links at this gate.",
       "evidenceRefs": [
         "docs/z_atlas/Z_ATLAS_SEED_INVENTORY.md",
         "docs/reconciliation/Z_WHEEL_HUB_POINTER_RECONCILIATION.md",
@@ -531,7 +531,7 @@
       "evidenceFreshness": "CURRENT",
       "categories": ["COMMERCIAL_SYSTEMS"],
       "path": "C:\\ZGame Intelligence",
-      "notes": "Commercial umbrella; not ZWheel source. Version drift ZW-v35 start-here vs on-disk ZW-v37 is a deferred conflict owned by this tree. Commercial Core not activated.",
+      "notes": "Commercial umbrella; not ZWheel source. Version drift ZW-v35 start-here vs on-disk ZW-v37 is a deferred conflict owned by this tree. Commercial Core not activated. Evidence path docs/Z_MULTI_PROJECT_DEPLOYMENT_READINESS_MATRIX.md is a historical/source-worktree evidence reference; not included in this Atlas custody PR; not available as a canonical-main link at this gate.",
       "evidenceRefs": [
         "docs/z_atlas/Z_ATLAS_SEED_INVENTORY.md",
         "docs/Z_MULTI_PROJECT_DEPLOYMENT_READINESS_MATRIX.md"
@@ -914,7 +914,7 @@
       "gateState": "HOLD",
       "healthState": "UNKNOWN",
       "evidenceFreshness": "UNKNOWN",
-      "notes": "Declared domain from Phase 0 overlay example (not purchased). DNS liveness UNVERIFIED. Do not treat as live or owned.",
+      "notes": "Declared domain from Phase 0 overlay example. Domain ownership/current DNS state was not re-verified by this Atlas slice. ownership state: NOT RE-VERIFIED IN THIS SLICE. DNS liveness: UNVERIFIED. deployment state: NOT INFERRED. Do not infer ownership, DNS liveness, or deployment.",
       "evidenceRefs": [
         "docs/z_atlas/Z_ATLAS_ONTOLOGY.md",
         "docs/z_atlas/Z_ATLAS_SEED_INVENTORY.md"
@@ -955,7 +955,7 @@
       "nodeType": "REPORT",
       "label": "ZWheel Hub Pointer Reconciliation",
       "path": "docs/reconciliation/Z_WHEEL_HUB_POINTER_RECONCILIATION.md",
-      "notes": "Phase 0 precondition evidence. Observe only; this slice does not edit it. HUB_POINTER_VALIDATION: PASS.",
+      "notes": "Phase 0 precondition evidence. Observe only; this slice does not edit it. HUB_POINTER_VALIDATION: PASS. Historical/source-worktree evidence reference; not included in this Atlas custody PR; not available as a canonical-main link at this gate.",
       "evidenceRefs": ["docs/reconciliation/Z_WHEEL_HUB_POINTER_RECONCILIATION.md"]
     },
     {
@@ -1362,7 +1362,7 @@
       "edgeType": "USES_DOMAIN",
       "fromId": "product.zwheel-cracker",
       "toId": "domain.zwheelcracker-com",
-      "notes": "Declared association only. Domain not purchased. DNS UNVERIFIED.",
+      "notes": "Declared association only. Domain ownership/current DNS state was not re-verified by this Atlas slice. ownership state: NOT RE-VERIFIED IN THIS SLICE. DNS liveness: UNVERIFIED. deployment state: NOT INFERRED.",
       "evidenceRefs": ["docs/z_atlas/Z_ATLAS_ONTOLOGY.md"]
     },
     {
@@ -1751,7 +1751,7 @@
       "factId": "fact.dns.unverified",
       "subjectId": "domain.zwheelcracker-com",
       "predicate": "USES_DOMAIN",
-      "value": "DNS liveness UNVERIFIED; declared, not purchased",
+      "value": "DNS liveness UNVERIFIED; ownership state NOT RE-VERIFIED IN THIS SLICE; deployment state NOT INFERRED",
       "source": "docs/z_atlas/Z_ATLAS_SEED_INVENTORY.md",
       "evidenceRef": "docs/z_atlas/Z_ATLAS_ONTOLOGY.md",
       "observedAt": "2026-09-10",

@@ -9,9 +9,9 @@
 
 | Phase | Name | This gate |
 | --- | --- | --- |
-| **0** | Constitution + ontology + schema | **OPEN / completing here** |
-| **0.5** | Validated machine-readable topology registry | Recommended next — **not opened** |
-| **1** | Read-only registered-root observer | Closed |
+| **0** | Constitution + ontology + schema | **GREEN · SEALED** |
+| **0.5** | Validated machine-readable topology registry | **GREEN · SEALED** |
+| **1** | Read-only registered-root observer | **CLOSED / NOT AUTHORIZED** |
 | **1.5** | Repository / worktree / branch awareness | Closed |
 | **2** | AI preflight context (runtime wiring) | Spec only in Phase 0 |
 | **2.5** | Communication topology integration | Spec only in Phase 0 |
@@ -23,17 +23,21 @@
 
 ---
 
-## Phase 0 exit (this gate)
+## Phase 0 (GREEN · SEALED)
 
-Complete when constitution, ontology, root-registry law, preflight spec, communication map, sanitization boundary, graphical vision, seed inventory, schemas, and genesis report exist — and hard constraints hold.
+Constitution, ontology, root-registry law, preflight spec, communication map, sanitization boundary, graphical vision, seed inventory, schemas, and genesis report exist — and hard constraints hold.
 
-## Phase 0.5 (exactly one recommended next)
+## Phase 0.5 (GREEN · SEALED)
 
 `Z-ATLAS-0.5-MACHINE-READABLE-TOPOLOGY-REGISTRY`
 
-Expected work (when Steward opens it): a validated JSON/YAML topology instance that **projects** existing registries into Atlas nodes/edges **without** a crawler, **without** auto-registration, and **without** product-source edits.
+A validated JSON/YAML topology instance that **projects** existing registries into Atlas nodes/edges **without** a crawler, **without** auto-registration, and **without** product-source edits.
 
-Not opened automatically.
+Sealed. Does not open Phase 1.
+
+## Phase 1
+
+CLOSED / NOT AUTHORIZED. This roadmap does not open Phase 1 and does not authorize a Phase 1 implementation plan.
 
 ---
 

@@ -66,10 +66,10 @@ Overlays must stack. Turning health GREEN must not hide a deployment HOLD.
 
 ## Predecessor maps
 
-Do not discard existing documentary maps. Consume them as evidence:
+Do not discard existing documentary maps. Consume them as evidence. The following are historical/source-worktree evidence references; not included in this Atlas custody PR; not available as canonical-main links at this gate:
 
 - `docs/ecosystem/Z_SANCTUARY_ATLAS.md` (Phase 1 selected trees)
-- `docs/ecosystem/Z_SPINE_MAP.md` / `Z_SPINE_RESPONSIBILITY_MATRIX.md`
+- `docs/ecosystem/Z_SPINE_MAP.md` / `docs/ecosystem/Z_SPINE_RESPONSIBILITY_MATRIX.md`
 - `docs/Z_MULTI_PROJECT_DEPLOYMENT_READINESS_MATRIX.md`
 - `docs/Z_WHEEL_CRACKER_EXTERNAL_SOVEREIGN_POINTER.md`
 

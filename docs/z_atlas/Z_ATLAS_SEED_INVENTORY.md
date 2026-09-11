@@ -15,6 +15,8 @@ Sources:
 - `docs/Z_MULTI_PROJECT_DEPLOYMENT_READINESS_MATRIX.md`
 - `Test-Path` of documented candidate paths on 2026-09-10 (this gate)
 
+The four `docs/...` paths above are historical/source-worktree evidence references. They are not included in this Atlas custody PR and are not available as canonical-main links at this gate. Exact filenames/paths are preserved for traceability. Absence from this PR does not invalidate that historical evidence.
+
 ---
 
 ## 1. Proven roots
@@ -102,7 +104,7 @@ Commercial: ZWheel → ZGame Intelligence (REGISTERED contract, `NOT_AUTHORIZED`
 | Retired stub `ZSanctuary_Universe` pc_root row | Registry row exists; Organiser path `ZSanctuary_Universe` Test-Path **false** this session |
 | Completeness of all PC folders | **UNVERIFIED** — this gate did not crawl Organiser or `C:\` |
 | Live process health (ports 8080 / 5190 / 5502 / 8888) | **UNVERIFIED** this gate |
-| DNS liveness of declared domains | **UNVERIFIED** (declared, not purchased per prior audits) |
+| DNS liveness of declared domains | **UNVERIFIED**. Domain ownership/current DNS state was not re-verified by this Atlas slice. ownership state: NOT RE-VERIFIED IN THIS SLICE · DNS liveness: UNVERIFIED · deployment state: NOT INFERRED |
 | Named systems PID / Z-CLDO / Z-PACE | **UNVERIFIED** on this worktree |
 
 ---

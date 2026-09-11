@@ -58,7 +58,7 @@ Atlas Phase 0.5 may **project** these into topology nodes. It must not replace t
 
 ## 4. Schema limitations (inherited, not redesigned)
 
-From `docs/reconciliation/Z_WHEEL_HUB_POINTER_RECONCILIATION.md`:
+From historical/source-worktree evidence `docs/reconciliation/Z_WHEEL_HUB_POINTER_RECONCILIATION.md` (not included in this Atlas custody PR; not available as a canonical-main link at this gate):
 
 1. `z_pc_root_projects.json` `path` is **Organiser-relative**. An absolute external root (e.g. `C:\Z-Wheel Cracker`) must **not** be stored as `path` (that would fake Organiser membership). Canonical external roots live in notes + pointer docs until a later schema charter.
 2. There is no first-class `EXTERNAL_SOVEREIGN_PRODUCT` role enum today. Hub uses `role: external` + `hosting: link-only` + `migration_status: reference_only`.

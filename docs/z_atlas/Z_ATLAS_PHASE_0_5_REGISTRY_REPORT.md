@@ -23,7 +23,7 @@ Read (not rewritten except tiny index/cross-links):
 - [Z_ATLAS_ONTOLOGY.md](Z_ATLAS_ONTOLOGY.md)
 - [Z_ATLAS_ROOT_REGISTRY_SPEC.md](Z_ATLAS_ROOT_REGISTRY_SPEC.md)
 - [README.md](README.md)
-- [../reconciliation/Z_WHEEL_HUB_POINTER_RECONCILIATION.md](../reconciliation/Z_WHEEL_HUB_POINTER_RECONCILIATION.md) — **observed only; not edited**
+- `docs/reconciliation/Z_WHEEL_HUB_POINTER_RECONCILIATION.md` — **observed only; not edited**; historical/source-worktree evidence reference; not included in this Atlas custody PR; not available as a canonical-main link at this gate
 - Four Phase 0 schemas under `schemas/z_atlas_*_v1.schema.json`
 
 ```text

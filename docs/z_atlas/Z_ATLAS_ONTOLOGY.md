@@ -136,7 +136,7 @@ Family · domain · payment · entitlement · provider eligibility · referral.
 Example (proven by pointer + identity recovery, not activated here):
 
 - ZWheel commercial family: **ZGame Intelligence**
-- declared domain: `zwheelcracker.com` (not purchased)
+- declared domain: `zwheelcracker.com` — Domain ownership/current DNS state was not re-verified by this Atlas slice (ownership state: NOT RE-VERIFIED IN THIS SLICE; DNS liveness: UNVERIFIED; deployment state: NOT INFERRED)
 - payment: **ABSENT** / `NOT_AUTHORIZED`
 - deployment: **HOLD** / hub authority **NONE**
 
