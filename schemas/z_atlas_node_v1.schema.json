@@ -1,0 +1,112 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "z_atlas_node_v1.schema.json",
+  "title": "Z-Atlas Node v1",
+  "description": "Semantic topology node. Schema only — no runtime graph store.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["nodeId", "nodeType", "label"],
+  "properties": {
+    "nodeId": { "type": "string", "minLength": 1, "maxLength": 256 },
+    "nodeType": {
+      "type": "string",
+      "enum": [
+        "ECOSYSTEM",
+        "CATEGORY",
+        "PROJECT",
+        "PRODUCT",
+        "SERVICE",
+        "ROOT",
+        "REPOSITORY",
+        "WORKTREE",
+        "BRANCH",
+        "COMMIT",
+        "AI",
+        "AGENT",
+        "MINIBOT",
+        "MENTOR",
+        "ENGINE",
+        "FORMULA",
+        "MODULE",
+        "REGISTRY",
+        "DOMAIN",
+        "DEPLOYMENT",
+        "ENVIRONMENT",
+        "GATE",
+        "EVIDENCE",
+        "REPORT",
+        "RECEIPT",
+        "HEALTH_SIGNAL",
+        "ALERT",
+        "DEPENDENCY",
+        "COMMUNICATION_ROUTE",
+        "COMMERCIAL_SYSTEM",
+        "DATA_BOUNDARY",
+        "SECURITY_BOUNDARY"
+      ]
+    },
+    "label": { "type": "string", "minLength": 1, "maxLength": 256 },
+    "rootClassification": {
+      "type": "string",
+      "enum": [
+        "REGISTERED_ACTIVE",
+        "EXTERNAL_SOVEREIGN",
+        "LEGACY_READ_ONLY",
+        "ARCHIVAL_BACKUP",
+        "UNRESOLVED"
+      ]
+    },
+    "identityStatus": { "type": "string" },
+    "authorityStatus": {
+      "type": "string",
+      "enum": [
+        "CANONICAL",
+        "EXTERNAL_SOVEREIGN",
+        "REFERENCE_ONLY",
+        "HISTORICAL",
+        "ARCHIVAL",
+        "SUPERSEDED",
+        "UNRESOLVED",
+        "MISSING"
+      ]
+    },
+    "canonicality": { "type": "string" },
+    "ownership": { "type": "string" },
+    "environment": { "type": "string" },
+    "gateState": { "type": "string" },
+    "healthState": {
+      "type": "string",
+      "enum": ["GREEN", "YELLOW", "BLUE", "RED", "HOLD", "QUARANTINE", "UNKNOWN"]
+    },
+    "evidenceFreshness": {
+      "type": "string",
+      "enum": ["CURRENT", "AGING", "STALE", "UNKNOWN"]
+    },
+    "categories": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "enum": [
+          "AI_AND_ORCHESTRATION",
+          "GAMING_INTELLIGENCE",
+          "LEARNING_AND_KNOWLEDGE",
+          "HUMAN_RELATIONSHIP_TECHNOLOGY",
+          "BUSINESS_AND_SERVICES",
+          "CORE_ENGINES_AND_FORMULAS",
+          "GOVERNANCE_AND_STEWARDSHIP",
+          "SECURITY_AND_TRUST",
+          "INFRASTRUCTURE_AND_DEPLOYMENT",
+          "HEALTH_AND_OBSERVABILITY",
+          "COMMERCIAL_SYSTEMS",
+          "RESEARCH_AND_EXPERIMENTATION"
+        ]
+      }
+    },
+    "path": { "type": "string" },
+    "notes": { "type": "string" },
+    "evidenceRefs": {
+      "type": "array",
+      "items": { "type": "string" }
+    }
+  }
+}

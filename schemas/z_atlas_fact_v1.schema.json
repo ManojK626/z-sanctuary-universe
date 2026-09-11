@@ -1,0 +1,54 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "z_atlas_fact_v1.schema.json",
+  "title": "Z-Atlas Fact v1",
+  "description": "Provenance-bearing topology fact. Stale facts are retained, not auto-deleted.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["factId", "subjectId", "predicate"],
+  "properties": {
+    "factId": { "type": "string", "minLength": 1, "maxLength": 256 },
+    "subjectId": { "type": "string", "minLength": 1 },
+    "predicate": { "type": "string", "minLength": 1 },
+    "objectId": { "type": "string" },
+    "value": {},
+    "source": { "type": "string" },
+    "evidenceRef": { "type": "string" },
+    "observedAt": { "type": "string" },
+    "freshness": {
+      "type": "string",
+      "enum": ["CURRENT", "AGING", "STALE", "UNKNOWN"]
+    },
+    "confidenceClass": { "type": "string" },
+    "authority": {
+      "type": "string",
+      "enum": [
+        "CANONICAL",
+        "EXTERNAL_SOVEREIGN",
+        "REFERENCE_ONLY",
+        "HISTORICAL",
+        "ARCHIVAL",
+        "SUPERSEDED",
+        "UNRESOLVED",
+        "MISSING"
+      ]
+    },
+    "status": { "type": "string" },
+    "conflictType": {
+      "type": "string",
+      "enum": [
+        "IDENTITY_CONFLICT",
+        "PATH_CONFLICT",
+        "VERSION_DRIFT",
+        "DOMAIN_DRIFT",
+        "BRANCH_DRIFT",
+        "OWNERSHIP_CONFLICT",
+        "STATUS_CONFLICT",
+        "MISSING_REFERENCE"
+      ]
+    },
+    "severity": { "type": "string" },
+    "owner": { "type": "string" },
+    "recommendedNextGate": { "type": "string" }
+  }
+}

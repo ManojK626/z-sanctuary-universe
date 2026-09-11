@@ -1,0 +1,85 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "z_atlas_preflight_context_v1.schema.json",
+  "title": "Z-Atlas Preflight Context v1",
+  "description": "AI navigational preflight. Spec only — not wired into Cursor or product runtimes.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["currentRoot"],
+  "properties": {
+    "currentRoot": { "type": "string", "minLength": 1 },
+    "currentProject": { "type": "string" },
+    "currentProduct": { "type": "string" },
+    "canonicalAuthority": { "type": "string" },
+    "identity": { "type": "string" },
+    "classification": { "type": "string" },
+    "authority": {
+      "type": "string",
+      "enum": [
+        "CANONICAL",
+        "EXTERNAL_SOVEREIGN",
+        "REFERENCE_ONLY",
+        "HISTORICAL",
+        "ARCHIVAL",
+        "SUPERSEDED",
+        "UNRESOLVED",
+        "MISSING"
+      ]
+    },
+    "repository": { "type": "string" },
+    "branch": { "type": "string" },
+    "worktree": { "type": "string" },
+    "environment": { "type": "string" },
+    "build": { "type": "string" },
+    "openGate": { "type": "string" },
+    "allowedActions": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "forbiddenActions": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "relatedDistinctProducts": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "dependencies": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "health": {
+      "type": "string",
+      "enum": ["GREEN", "YELLOW", "BLUE", "RED", "HOLD", "QUARANTINE", "UNKNOWN"]
+    },
+    "evidenceFreshness": {
+      "type": "string",
+      "enum": ["CURRENT", "AGING", "STALE", "UNKNOWN"]
+    },
+    "deploymentState": { "type": "string" },
+    "pathAuthorityMismatch": { "type": "boolean" },
+    "contextEnvelope": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "ecosystemId": { "type": "string" },
+        "projectId": { "type": "string" },
+        "productId": { "type": "string" },
+        "rootId": { "type": "string" },
+        "repositoryId": { "type": "string" },
+        "branchId": { "type": "string" },
+        "gateId": { "type": "string" },
+        "taskId": { "type": "string" },
+        "sender": { "type": "string" },
+        "receiver": { "type": "string" },
+        "authority": { "type": "string" },
+        "evidenceRefs": {
+          "type": "array",
+          "items": { "type": "string" }
+        },
+        "timestamp": { "type": "string" },
+        "mutationScope": { "type": "string" }
+      }
+    }
+  }
+}

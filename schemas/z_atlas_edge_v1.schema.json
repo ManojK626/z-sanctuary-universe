@@ -1,0 +1,50 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "z_atlas_edge_v1.schema.json",
+  "title": "Z-Atlas Edge v1",
+  "description": "Semantic topology edge. Prefer a precise type over CONNECTED_TO.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["edgeId", "edgeType", "fromId", "toId"],
+  "properties": {
+    "edgeId": { "type": "string", "minLength": 1, "maxLength": 256 },
+    "edgeType": {
+      "type": "string",
+      "enum": [
+        "CONTAINS",
+        "REFERENCES",
+        "OWNS_SOURCE",
+        "EXTERNAL_TO",
+        "CANONICAL_FOR",
+        "LEGACY_OF",
+        "SUPERSEDED_BY",
+        "DEPENDS_ON",
+        "COMMUNICATES_WITH",
+        "OBSERVED_BY",
+        "SUPERVISED_BY",
+        "ORCHESTRATED_BY",
+        "GOVERNED_BY",
+        "PROTECTED_BY",
+        "DEPLOYED_TO",
+        "HOSTED_AT",
+        "USES_DOMAIN",
+        "HAS_WORKTREE",
+        "HAS_BRANCH",
+        "HAS_GATE",
+        "HAS_EVIDENCE",
+        "HAS_HEALTH_SIGNAL",
+        "COMMERCIAL_MEMBER_OF",
+        "BELONGS_TO_CATEGORY",
+        "BLOCKED_BY",
+        "AUTHORIZED_BY"
+      ]
+    },
+    "fromId": { "type": "string", "minLength": 1 },
+    "toId": { "type": "string", "minLength": 1 },
+    "evidenceRefs": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "notes": { "type": "string" }
+  }
+}
