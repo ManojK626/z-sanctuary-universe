@@ -1,0 +1,122 @@
+{
+  "schema": "z_cco_registry_v1",
+  "phase": "Z-CCO-0.5",
+  "updated_at": "2026-09-05T00:00:00Z",
+  "law": "SCHEMA != AUTHORITY. REGISTRY != RUNTIME. POLICY != EXECUTION. This file registers machine identity only.",
+  "identity": {
+    "canonical_name": "Z-Continuity & Completion Overseer",
+    "short_name": "Z-CCO",
+    "machine_prefix": "z_cco",
+    "phase": "Z-CCO-0.5",
+    "charter": "docs/Z_CONTINUITY_COMPLETION_OVERSEER.md",
+    "status": "REGISTERED_ARCHITECTURE_ONLY",
+    "collision_guard": "Z-CCO != Z-CCC"
+  },
+  "authority": {
+    "runtime": "NONE",
+    "mutation_authority": "NONE",
+    "merge_authority": "NONE",
+    "push_authority": "NONE",
+    "deployment_authority": "NONE",
+    "canonical_selection_authority": "NONE",
+    "auto_repair": "NONE",
+    "external_provider_access": "NONE",
+    "scheduler": "NONE",
+    "human_authority": "AMK-GOKU"
+  },
+  "artifacts": {
+    "policy": "data/z_cco_policy.json",
+    "status_schema": "schemas/z_cco_continuity_status_v1.schema.json",
+    "future_status_paths": [
+      "data/reports/z_cco_continuity_status.json",
+      "data/reports/z_cco_continuity_status.md"
+    ],
+    "future_status_paths_created_in_this_phase": false
+  },
+  "reuse": {
+    "model": "SPECIALIST PRODUCES → Z-CCO COORDINATES → HUMAN DECIDES",
+    "evidence_ownership": "SOURCE SPECIALIST RETAINS EVIDENCE OWNERSHIP",
+    "z_cco_is_source_of_truth_for_specialist_domains": false,
+    "evidence_owners": [
+      {
+        "id": "z-maos",
+        "label": "Z-MAOS",
+        "role": "operator coordination charter and consent gates"
+      },
+      {
+        "id": "cycle-observe",
+        "label": "Cycle Observe",
+        "role": "observation tower and safe task queue"
+      },
+      {
+        "id": "deployment-readiness-overseer",
+        "label": "Deployment Readiness Overseer",
+        "role": "local deployment-posture rollup"
+      },
+      {
+        "id": "pid-z-cldo",
+        "label": "PID / Z-CLDO",
+        "role": "identity and logical-asset evidence when present"
+      },
+      {
+        "id": "ham",
+        "label": "HAM",
+        "role": "health / presenter receipts when present"
+      },
+      {
+        "id": "freshness",
+        "label": "Freshness",
+        "role": "project / report freshness JSON"
+      },
+      {
+        "id": "verification",
+        "label": "Verification evidence",
+        "role": "existing verify receipts and allowlisted local commands"
+      },
+      {
+        "id": "recovery-lifeboat",
+        "label": "Recovery / Lifeboat",
+        "role": "preservation and custody receipts"
+      },
+      {
+        "id": "registries",
+        "label": "Project / module / PC-root registries",
+        "role": "human-confirmed identity lists"
+      },
+      {
+        "id": "amk-goku-dashboard",
+        "label": "AMK-Goku Dashboard",
+        "role": "future read-only indicator only; CLOSED in this phase"
+      },
+      {
+        "id": "morning-cockpit-z-ssws",
+        "label": "Morning Cockpit / Z-SSWS",
+        "role": "future compact pulse only; CLOSED in this phase"
+      },
+      {
+        "id": "zuno",
+        "label": "Zuno",
+        "role": "presentation / reporting architecture; no execution"
+      }
+    ]
+  },
+  "closed_gates": [
+    "Z-CCO-1",
+    "Z-EFR",
+    "Z-MDMS",
+    "Z-COMMERCIAL-AND-PLATFORM-CRITIC",
+    "PLATFORM-CHANGE-RADAR-REPOSITORY-IMPLEMENTATION",
+    "HAM-1E",
+    "HAM-ZUNO",
+    "HAM-AMK",
+    "AUTO-CODEX",
+    "OVERSEER-EXPANSION",
+    "OMEGA-4-IMPLEMENTATION"
+  ],
+  "omega_4": {
+    "standing": "HISTORICAL",
+    "also": "PARTIALLY_SUPERSEDED",
+    "action": "HOLD",
+    "register_r1_r7_as_current_modules": false
+  }
+}
