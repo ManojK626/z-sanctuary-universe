@@ -22,16 +22,71 @@
 
 Cross-links: [Z-GITHUB-SANCTUARY-GATE.md](Z-GITHUB-SANCTUARY-GATE.md), [Z-CLOUDFLARE-AI-COMMS-PRECAUTIONS.md](Z-CLOUDFLARE-AI-COMMS-PRECAUTIONS.md). **Merge queue:** MD060 → this spine → LinguaCore → Mauritius walks → Z-ADTF later. **No new runtime** while doctrine PRs land. Cloudflare future-phased only in this lane.
 
+## Z-NEXUS-ENGINE-0 — Global Resource & Human Energy Awareness (Phase 0 — docs only)
+
+Educational awareness lane for global resource balance, human labor energy, soil/water stress, circular economy pressure, and ecological recovery — **non-authoritative**, mock-first. No Streamlit, APIs, or verified measurement claims in Phase 0.
+
+- Foundation: [z-nexus-engine/Z_NEXUS_ENGINE_0_FOUNDATION.md](z-nexus-engine/Z_NEXUS_ENGINE_0_FOUNDATION.md)
+- Data ethics: [z-nexus-engine/Z_NEXUS_ENGINE_DATA_ETHICS.md](z-nexus-engine/Z_NEXUS_ENGINE_DATA_ETHICS.md)
+- Mock spec: [z-nexus-engine/Z_NEXUS_ENGINE_MOCK_DASHBOARD_SPEC.md](z-nexus-engine/Z_NEXUS_ENGINE_MOCK_DASHBOARD_SPEC.md)
+- Streamlit HOLD: [z-nexus-engine/Z_NEXUS_ENGINE_FUTURE_STREAMLIT_HOLD.md](z-nexus-engine/Z_NEXUS_ENGINE_FUTURE_STREAMLIT_HOLD.md)
+- Receipt: [z-nexus-engine/PHASE_Z_NEXUS_ENGINE_0_GREEN_RECEIPT.md](z-nexus-engine/PHASE_Z_NEXUS_ENGINE_0_GREEN_RECEIPT.md)
+
+Locked law: mock telemetry ≠ verified measurement; research-inspired baseline ≠ scientific certification; labor-energy model ≠ official ILO analysis; satellite/currency/policy concepts ≠ live verification, financial advice, or political instruction; GREEN ≠ deploy; AMK owns sacred moves.
+
+## ZILWA LIVING EXPERIENCES — Community-Connected Mauritian Hospitality (Phase 0 — docs only)
+
+Community-connected Mauritian hospitality ecosystem — host families, cultural ambassadors, elders, and guests — **dignity-first**, mock-first. No React Native, Express, payments, health data, live AI, or deploy in Phase 0.
+
+- Blueprint: [zilwa-living-experiences/ZILWA_MASTER_BLUEPRINT.md](zilwa-living-experiences/ZILWA_MASTER_BLUEPRINT.md)
+- Scope: [zilwa-living-experiences/ZILWA_PHASE_0_SCOPE.md](zilwa-living-experiences/ZILWA_PHASE_0_SCOPE.md)
+- AI panel spec: [zilwa-living-experiences/ZILWA_AI_PANEL_SPEC.md](zilwa-living-experiences/ZILWA_AI_PANEL_SPEC.md)
+- Financial mock: [zilwa-living-experiences/ZILWA_FINANCIAL_LEDGER_MOCK_SPEC.md](zilwa-living-experiences/ZILWA_FINANCIAL_LEDGER_MOCK_SPEC.md)
+- Health & child safety: [zilwa-living-experiences/ZILWA_HEALTH_PRIVACY_AND_CHILD_SAFETY.md](zilwa-living-experiences/ZILWA_HEALTH_PRIVACY_AND_CHILD_SAFETY.md)
+- Cultural ambassadors: [zilwa-living-experiences/ZILWA_CULTURAL_AMBASSADOR_FRAMEWORK.md](zilwa-living-experiences/ZILWA_CULTURAL_AMBASSADOR_FRAMEWORK.md)
+- Elder oral history: [zilwa-living-experiences/ZILWA_ELDER_ORAL_HISTORY_POLICY.md](zilwa-living-experiences/ZILWA_ELDER_ORAL_HISTORY_POLICY.md)
+- Receipt: [zilwa-living-experiences/ZILWA_GREEN_RECEIPT.md](zilwa-living-experiences/ZILWA_GREEN_RECEIPT.md)
+
+Locked law: financial figures = illustrative projections only; health passport = future concept only (no medical authority); oral histories = elder/family ownership; host families protected from exploitation; AI panel = spec only; **Human Gate Required Before Phase 1**; AMK owns sacred moves.
+
+### ZILWA Phase 1A — static awareness mockups (HTML only)
+
+Museum-exhibit HTML prototypes under `dashboard/Html/zilwa-*.html` — no runtime, payments, health data, AI, or APIs.
+
+- Doctrine: [zilwa-living-experiences/ZILWA_PHASE_1A_STATIC_MOCKUPS.md](zilwa-living-experiences/ZILWA_PHASE_1A_STATIC_MOCKUPS.md)
+- Hub (20 modules): [../dashboard/Html/zilwa-exhibit-hub.html](../dashboard/Html/zilwa-exhibit-hub.html)
+- Catalog: [zilwa-living-experiences/ZILWA_MODULE_CATALOG.md](zilwa-living-experiences/ZILWA_MODULE_CATALOG.md)
+- Completion receipt: [zilwa-living-experiences/ZILWA_PHASE_1A_COMPLETION_RECEIPT.md](zilwa-living-experiences/ZILWA_PHASE_1A_COMPLETION_RECEIPT.md)
+- Entry: [../dashboard/Html/zilwa-guest-journey.html](../dashboard/Html/zilwa-guest-journey.html)
+
+**PR #14 AMBER+ HOLD** — merge blocked pending AMK / steward approval. **Human Gate Required Before Any Phase 1B Work.**
+
+- Steward review (plain language): [zilwa-living-experiences/ZILWA_STEWARD_REVIEW_PACK.md](zilwa-living-experiences/ZILWA_STEWARD_REVIEW_PACK.md)
+- Phase 1B gate matrix: [zilwa-living-experiences/ZILWA_PHASE_1B_READINESS_MATRIX.md](zilwa-living-experiences/ZILWA_PHASE_1B_READINESS_MATRIX.md)
+- PR prep / audit summary: [zilwa-living-experiences/ZILWA_PHASE_1A_REVIEW_AND_PR_PREP.md](zilwa-living-experiences/ZILWA_PHASE_1A_REVIEW_AND_PR_PREP.md)
+
+### ZILWA Phase 2A — global network expansion (HTML + docs only)
+
+Upgrade from Mauritius/hotel-centered blueprint to **global human-centered tourism** — static exhibits only.
+
+- Global hub: [../dashboard/Html/zilwa-global-network-hub.html](../dashboard/Html/zilwa-global-network-hub.html)
+- Roadmap: [zilwa-living-experiences/ZILWA_GLOBAL_ROADMAP_2A.md](zilwa-living-experiences/ZILWA_GLOBAL_ROADMAP_2A.md)
+- Replication: [zilwa-living-experiences/ZILWA_GLOBAL_REPLICATION_FRAMEWORK.md](zilwa-living-experiences/ZILWA_GLOBAL_REPLICATION_FRAMEWORK.md)
+- Receipt: [zilwa-living-experiences/ZILWA_PHASE_2A_GLOBAL_EXPANSION_RECEIPT.md](zilwa-living-experiences/ZILWA_PHASE_2A_GLOBAL_EXPANSION_RECEIPT.md)
+- Index: [zilwa-living-experiences/INDEX.md](zilwa-living-experiences/INDEX.md)
+
+**AMBER+ HOLD** — 12 new modules, no JavaScript, no runtime, no merge without AMK + steward approval. Mauritius = possible origin pilot, not dependency.
+
 ## Canonical control root and satellite bridges (Z-CONTROL-LINK-1)
 
 **Sealed on main.** **`Z_Sanctuary_Universe`** (this hub repository) is the **canonical governance and control root** for Z-Sanctuary. Satellite projects must not fork long doctrine; they carry **one thin bridge file** only: **`docs/Z_SANCTUARY_CONTROL_LINK.md`**, aligned from the hub template at the same path.
 
-| Concern | Hub source |
+| Concern                         | Hub source                                                                                                                              |
 | ------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------- |
-| Approved satellite destinations | `data/z_satellite_control_link_manifest.json` |
-| Bridge sync (default dry-run) | `scripts/z_sync_control_links.mjs` — `npm run z:control-links:dry`; `npm run z:control-links:apply` only after explicit operator review |
-| One-root policy | [Z_SANCTUARY_CANONICAL_CONTROL_ROOT.md](Z_SANCTUARY_CANONICAL_CONTROL_ROOT.md) |
-| Cursor-wide reminder | `.cursor/rules/z_control_root_awareness.mdc` |
+| Approved satellite destinations | `data/z_satellite_control_link_manifest.json`                                                                                           |
+| Bridge sync (default dry-run)   | `scripts/z_sync_control_links.mjs` — `npm run z:control-links:dry`; `npm run z:control-links:apply` only after explicit operator review |
+| One-root policy                 | [Z_SANCTUARY_CANONICAL_CONTROL_ROOT.md](Z_SANCTUARY_CANONICAL_CONTROL_ROOT.md)                                                          |
+| Cursor-wide reminder            | `.cursor/rules/z_control_root_awareness.mdc`                                                                                            |
 
 **Do not:** scan arbitrary PC folders; write outside manifest-approved targets; deploy; bind domains; write or rotate secrets; install IDE extensions; run background services; or mutate NAS paths from this lane. Satellites that depend on NAS stay **`NAS_WAIT`** until the mount is verified and the manifest is updated with operator care.
 
@@ -43,22 +98,22 @@ Cross-links: [Z-GITHUB-SANCTUARY-GATE.md](Z-GITHUB-SANCTUARY-GATE.md), [Z-CLOUDF
 
 The ecosystem is in a **governed organism foundation** posture: **read-only awareness** (topology, device trust, doorway receipts, drift, traffic) expands **before** widening autonomous execution. Canonical catalog: [Z_ECOSYSTEM_GROWTH_STATUS.md](Z_ECOSYSTEM_GROWTH_STATUS.md) and `data/z_ecosystem_growth_stage_registry.json`.
 
-| Seal | One-line role |
+| Seal                                  | One-line role                                                                                                                                                                                                                               |
 | ------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **Z-SSWS IDE** | Main **operator cockpit** — doctrine, tasks, workspace spine; not silent full-system auto-launch. |
-| **Z-CONTROL-LINK-1** | Canonical hub + **thin satellite bridge** sync (`docs/Z_SANCTUARY_CONTROL_LINK.md`); `npm run z:control-links:dry` default. |
-| **Z-DOORWAY-2** | Governed **workspace opener** — registry + explicit human-run helpers only. |
-| **Z-DOORWAY-3** | **Telemetry / session receipts** — read-only reports; optional session log tail. |
-| **Z-CRYSTAL-DNA-1** | **Asset identity mesh** — [Z_CRYSTAL_DNA_MESH.md](Z_CRYSTAL_DNA_MESH.md), `data/z_crystal_dna_asset_manifest.json`. |
-| **Z-CRYSTAL-DNA-2** | **Living Crystal map** — [Z_CRYSTAL_DNA_VISUALIZATION.md](Z_CRYSTAL_DNA_VISUALIZATION.md). |
-| **Z-CRYSTAL-DNA-3** | **Drift / integrity awareness** — [Z_CRYSTAL_DNA_DRIFT_AWARENESS.md](Z_CRYSTAL_DNA_DRIFT_AWARENESS.md), `npm run z:crystal:dna:drift`. |
-| **Z-ANYDEVICE-AI-CAPSULE-1** | **Device trust / capability** — [Z_ANYDEVICE_AI_CAPSULE.md](Z_ANYDEVICE_AI_CAPSULE.md). |
-| **Z-ANYDEVICE-2** | **Synthetic device simulation** — [Z_ANYDEVICE_SYNTHETIC_SIMULATION.md](Z_ANYDEVICE_SYNTHETIC_SIMULATION.md), `npm run z:anydevice:simulate`. |
-| **Z-CYCLE-OBSERVE-1** | **Continuous observation tower + safe task queue** — [Z_CYCLE_OBSERVE_SYSTEM.md](Z_CYCLE_OBSERVE_SYSTEM.md), `npm run z:cycle:observe`; generates `task_queue` only — **does not execute** it. |
-| **Z-CYCLE-DASHBOARD-1** | **Read-only ecosystem nervous system UI** — [Z_CYCLE_DASHBOARD_SYSTEM.md](Z_CYCLE_DASHBOARD_SYSTEM.md), `dashboard/panels/z-cycle-dashboard-readonly.html`; GET JSON only — **not** a control plane. |
+| **Z-SSWS IDE**                        | Main **operator cockpit** — doctrine, tasks, workspace spine; not silent full-system auto-launch.                                                                                                                                           |
+| **Z-CONTROL-LINK-1**                  | Canonical hub + **thin satellite bridge** sync (`docs/Z_SANCTUARY_CONTROL_LINK.md`); `npm run z:control-links:dry` default.                                                                                                                 |
+| **Z-DOORWAY-2**                       | Governed **workspace opener** — registry + explicit human-run helpers only.                                                                                                                                                                 |
+| **Z-DOORWAY-3**                       | **Telemetry / session receipts** — read-only reports; optional session log tail.                                                                                                                                                            |
+| **Z-CRYSTAL-DNA-1**                   | **Asset identity mesh** — [Z_CRYSTAL_DNA_MESH.md](Z_CRYSTAL_DNA_MESH.md), `data/z_crystal_dna_asset_manifest.json`.                                                                                                                         |
+| **Z-CRYSTAL-DNA-2**                   | **Living Crystal map** — [Z_CRYSTAL_DNA_VISUALIZATION.md](Z_CRYSTAL_DNA_VISUALIZATION.md).                                                                                                                                                  |
+| **Z-CRYSTAL-DNA-3**                   | **Drift / integrity awareness** — [Z_CRYSTAL_DNA_DRIFT_AWARENESS.md](Z_CRYSTAL_DNA_DRIFT_AWARENESS.md), `npm run z:crystal:dna:drift`.                                                                                                      |
+| **Z-ANYDEVICE-AI-CAPSULE-1**          | **Device trust / capability** — [Z_ANYDEVICE_AI_CAPSULE.md](Z_ANYDEVICE_AI_CAPSULE.md).                                                                                                                                                     |
+| **Z-ANYDEVICE-2**                     | **Synthetic device simulation** — [Z_ANYDEVICE_SYNTHETIC_SIMULATION.md](Z_ANYDEVICE_SYNTHETIC_SIMULATION.md), `npm run z:anydevice:simulate`.                                                                                               |
+| **Z-CYCLE-OBSERVE-1**                 | **Continuous observation tower + safe task queue** — [Z_CYCLE_OBSERVE_SYSTEM.md](Z_CYCLE_OBSERVE_SYSTEM.md), `npm run z:cycle:observe`; generates `task_queue` only — **does not execute** it.                                              |
+| **Z-CYCLE-DASHBOARD-1**               | **Read-only ecosystem nervous system UI** — [Z_CYCLE_DASHBOARD_SYSTEM.md](Z_CYCLE_DASHBOARD_SYSTEM.md), `dashboard/panels/z-cycle-dashboard-readonly.html`; GET JSON only — **not** a control plane.                                        |
 | **Z-DEPLOYMENT-READINESS-OVERSEER-1** | **Deployment readiness rollup (read-only)** — [Z_DEPLOYMENT_READINESS_OVERSEER.md](Z_DEPLOYMENT_READINESS_OVERSEER.md), `npm run z:deployment:readiness`; writes `z_deployment_readiness_status.{json,md}` only — **not** deploy authority. |
-| **Cloudflare governance** | **Preview / runtime posture only**; **production HOLD** — [Z-CLOUDFLARE-AI-COMMS-PRECAUTIONS.md](Z-CLOUDFLARE-AI-COMMS-PRECAUTIONS.md). |
-| **Casa AI Builder** | **Suggest docs / prompts / checklists only** — no device, deploy, or secret authority. |
+| **Cloudflare governance**             | **Preview / runtime posture only**; **production HOLD** — [Z-CLOUDFLARE-AI-COMMS-PRECAUTIONS.md](Z-CLOUDFLARE-AI-COMMS-PRECAUTIONS.md).                                                                                                     |
+| **Casa AI Builder**                   | **Suggest docs / prompts / checklists only** — no device, deploy, or secret authority.                                                                                                                                                      |
 
 ### AI Tower / overseers / Cursor AI Builder — communication rules
 
@@ -109,93 +164,93 @@ npm run z:car2
 
 ## Active hub surfaces and receipts
 
-| Surface | Why it matters |
+| Surface                                                                                                              | Why it matters                                                                                                                                     |
 | -------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------- |
-| [AMK_GOKU_MAIN_CONTROL_DASHBOARD.md](AMK_GOKU_MAIN_CONTROL_DASHBOARD.md) | Main AMK command-center doctrine (MAP and FLEX phases). |
-| [AMK_GOKU_COMMAND_BOOK_LAYOUT.md](AMK_GOKU_COMMAND_BOOK_LAYOUT.md) | Drawer/focus/inspector/tools shell behavior and locked law. |
-| [PHASE_AMK_DASH_FLEX_2_GREEN_RECEIPT.md](PHASE_AMK_DASH_FLEX_2_GREEN_RECEIPT.md) | FLEX-2 scope and acceptance receipt. |
-| [AMK_PROJECT_INDICATORS_AND_GO_NO_GO.md](AMK_PROJECT_INDICATORS_AND_GO_NO_GO.md) | Indicator posture, overlays, and advisory Go/No-Go framing. |
-| [AMK_GOKU_OPERATOR_CONFIRMATION_POLICY.md](AMK_GOKU_OPERATOR_CONFIRMATION_POLICY.md) | Sacred-move ownership and confirmation boundaries. |
-| [AMK_ZUNO_ADVISOR_CONSOLE.md](AMK_ZUNO_ADVISOR_CONSOLE.md) | Local deterministic advisor law (guidance, not execution). |
-| [AMK_AUTONOMOUS_APPROVAL_LADDER.md](AMK_AUTONOMOUS_APPROVAL_LADDER.md) | AAL posture and lane separation. |
-| [AMK_GOKU_NOTIFICATIONS_PANEL.md](AMK_GOKU_NOTIFICATIONS_PANEL.md) | Notification board behavior and non-execution constraints. |
-| [AMK_WORKSPACE_DOORWAY.md](AMK_WORKSPACE_DOORWAY.md) | Workspace doorway discipline and status flow. |
-| [AMK_CURSOR_WORKSPACE_STRATEGY.md](AMK_CURSOR_WORKSPACE_STRATEGY.md) | Cursor workspace profile strategy and safe operator flow. |
-| [Z_SSWS_WORKSPACE_SPINE.md](Z_SSWS_WORKSPACE_SPINE.md) | SSWS workspace launch requirements and guard rails. |
-| [Z_ECOSYSTEM_GROWTH_STATUS.md](Z_ECOSYSTEM_GROWTH_STATUS.md) | Sealed growth stages + AI Builder / overseer communication posture (Z-AI-BUILDER-AWARENESS-2). |
-| [Z_CRYSTAL_DNA_MESH.md](Z_CRYSTAL_DNA_MESH.md) | Z-CRYSTAL-DNA-1 asset identity mesh (shards, dependencies, governance). |
-| [Z_CRYSTAL_DNA_VISUALIZATION.md](Z_CRYSTAL_DNA_VISUALIZATION.md) | Z-CRYSTAL-DNA-2 living Crystal ecosystem map (read-only). |
-| [Z_CRYSTAL_DNA_DRIFT_AWARENESS.md](Z_CRYSTAL_DNA_DRIFT_AWARENESS.md) | Z-CRYSTAL-DNA-3 drift and integrity awareness (detect-only reports). |
-| [Z_ANYDEVICE_AI_CAPSULE.md](Z_ANYDEVICE_AI_CAPSULE.md) | Z-ANYDEVICE-AI-CAPSULE-1 device trust / declared capability governance. |
-| [Z_ANYDEVICE_SYNTHETIC_SIMULATION.md](Z_ANYDEVICE_SYNTHETIC_SIMULATION.md) | Z-ANYDEVICE-2 synthetic device simulation (fiction-only + simulator). |
-| [PHASE_Z_AI_BUILDER_AWARENESS_2_GREEN_RECEIPT.md](PHASE_Z_AI_BUILDER_AWARENESS_2_GREEN_RECEIPT.md) | Z-AI-BUILDER-AWARENESS-2 sealed growth / overseer communication receipt. |
-| [Z_CYCLE_OBSERVE_SYSTEM.md](Z_CYCLE_OBSERVE_SYSTEM.md) | Z-CYCLE-OBSERVE-1 read-only observer + safe task queue (reports only; no execution). |
-| [PHASE_Z_CYCLE_OBSERVE_1_GREEN_RECEIPT.md](PHASE_Z_CYCLE_OBSERVE_1_GREEN_RECEIPT.md) | Seal receipt for Z-CYCLE-OBSERVE-1 cycle observe phase. |
-| [PHASE_Z_CURSOR_AWARENESS_3_GREEN_RECEIPT.md](PHASE_Z_CURSOR_AWARENESS_3_GREEN_RECEIPT.md) | Z-CURSOR-AWARENESS-3 — Cycle Observe sealed; Cursor / rule alignment receipt. |
-| [Z_CYCLE_DASHBOARD_SYSTEM.md](Z_CYCLE_DASHBOARD_SYSTEM.md) | Z-CYCLE-DASHBOARD-1 read-only ecosystem nervous system dashboard (UI only). |
-| [PHASE_Z_CYCLE_DASHBOARD_1_GREEN_RECEIPT.md](PHASE_Z_CYCLE_DASHBOARD_1_GREEN_RECEIPT.md) | Seal receipt for Z-CYCLE-DASHBOARD-1. |
-| [Z_DEPLOYMENT_READINESS_OVERSEER.md](Z_DEPLOYMENT_READINESS_OVERSEER.md) | Z-DEPLOYMENT-READINESS-OVERSEER-1 read-only deployment posture rollup. |
-| [PHASE_Z_DEPLOYMENT_READINESS_OVERSEER_1_GREEN_RECEIPT.md](PHASE_Z_DEPLOYMENT_READINESS_OVERSEER_1_GREEN_RECEIPT.md) | Seal receipt for Z-DEPLOYMENT-READINESS-OVERSEER-1. |
-| [Z_API_SPINE_POWER_CELL.md](Z_API_SPINE_POWER_CELL.md) | API spine posture within hub governance. |
-| [Z_API_READINESS_AND_SMOKE_GATE.md](Z_API_READINESS_AND_SMOKE_GATE.md) | Readiness/smoke charter and non-bypass flow. |
-| [Z_TRAFFIC_MINIBOTS.md](Z_TRAFFIC_MINIBOTS.md) | Traffic report source and signal semantics. |
-| [Z_SWARM_14DRP_UNIVERSAL_AGENT_LAW.md](Z_SWARM_14DRP_UNIVERSAL_AGENT_LAW.md) | Universal 14 DRP law for mini-bots, swarm helpers, and future agents. |
-| [Z_FORMULA_SWARM_CO_DESIGN_ENGINE.md](Z_FORMULA_SWARM_CO_DESIGN_ENGINE.md) | Z-Formula routing/classification layer (symbolic + report-only). |
-| [PHASE_Z_SWARM_14DRP_1_GREEN_RECEIPT.md](PHASE_Z_SWARM_14DRP_1_GREEN_RECEIPT.md) | Seal receipt for Z-SWARM-14DRP-1 governance phase. |
-| [Z_IDE_FUSION_WORKFLOW_CONTROL.md](Z_IDE_FUSION_WORKFLOW_CONTROL.md) | Shared evidence and handoff control for Cursor + VS Code lanes. |
-| [PHASE_Z_IDE_FUSION_1_GREEN_RECEIPT.md](PHASE_Z_IDE_FUSION_1_GREEN_RECEIPT.md) | Seal receipt for Z-IDE-FUSION-1 coordination phase. |
-| [Z_SEC_TRIPLECHECK_COMMUNICATION_FLOW_AUDIT.md](Z_SEC_TRIPLECHECK_COMMUNICATION_FLOW_AUDIT.md) | Triple-check audit for communication flow, drift, and path safety. |
-| [Z_LOGICAL_BRAINS_HUB_REFERENCE.md](Z_LOGICAL_BRAINS_HUB_REFERENCE.md) | Hub reference-only registration for Labs Logical Brains capsule. |
-| [Z_NUMEN_HUB_REFERENCE.md](Z_NUMEN_HUB_REFERENCE.md) | Hub reference-only registration for Labs Z-NUMEN pattern literacy module. |
-| [Z_MOD_DIST_MODULE_DISTRIBUTOR.md](Z_MOD_DIST_MODULE_DISTRIBUTOR.md) | Z-MOD-DIST-1 read-only module routing advisor (forecast/suggest only). |
-| [Z_XBUS_EXTERNAL_CONNECTOR_GATE.md](Z_XBUS_EXTERNAL_CONNECTOR_GATE.md) | Z-XBUS-GATE-1 external connector registry + validator (metadata only; no live bus). |
-| [Z_REPLICA_FABRIC_GOVERNED_SELF_REPLICATION.md](Z_REPLICA_FABRIC_GOVERNED_SELF_REPLICATION.md) | Z-REPLICA-FABRIC-1 governed OMNAI monocore replica doctrine — registry + reports only (no live replication). |
-| [OMNAI_CORE_ENGINE_SIMULATION.md](OMNAI_CORE_ENGINE_SIMULATION.md) | OMNAI core §02–09 **deterministic simulation**: slim matrix summary, optional full matrix, indicator overlay — **reports only** (GREEN ≠ execute). |
-| [PHASE_OMNAI_CORE_ENGINE_MATRIX_GREEN_RECEIPT.md](PHASE_OMNAI_CORE_ENGINE_MATRIX_GREEN_RECEIPT.md) | Seal + rollback for OMNAI core matrix / overlay alignment pass. |
-| [Z_ULTRA_MAGE_FORMULA_CODEX.md](Z_ULTRA_MAGE_FORMULA_CODEX.md) | Z-ULTRA-MAGE-1 universal formula governance codex (OMNAI + hubs as governed vocabulary; no formula engine runtime). |
-| [Z_MAURITIANS_UNITE_CIVIC_TRUTH_ENGINE.md](Z_MAURITIANS_UNITE_CIVIC_TRUTH_ENGINE.md) | Z-MU-TRUTH-1 peaceful civic claim ledger + verification posture (no protest/deploy/provider tooling). |
-| [Z_MU_CIVIC_KNOWLEDGE_ADVISOR.md](Z_MU_CIVIC_KNOWLEDGE_ADVISOR.md) | Z-MU-ADVISOR-1 civic knowledge advisor framework (templates + policy; no live AI or public chat). |
-| [Z_PATTERN_SAFE_UNIVERSAL_PATTERN_SIMULATION.md](Z_PATTERN_SAFE_UNIVERSAL_PATTERN_SIMULATION.md) | Z-PATTERN-SAFE-1 pattern literacy and simulation governance (registry + validator; no live prediction engine). |
-| [AMK_AI_TEAM_INDICATOR_SYNC_ROUTER.md](AMK_AI_TEAM_INDICATOR_SYNC_ROUTER.md) | AMK-AI-SYNC-1 indicator drift observer + routing packets — Phase 1 never auto-edits indicators from the validator. |
-| [Z_AI_FUSION_CAPABILITY_MAP.md](Z_AI_FUSION_CAPABILITY_MAP.md) | Z-AI-FUSION-MAP-1 overlap governance map — fusion suggestions only (**no runtime merge auto-execution**). |
-| [Z_STILLNESS_MODE_AI_LEARNING_PATHWAY.md](Z_STILLNESS_MODE_AI_LEARNING_PATHWAY.md) | Z-STILLNESS-LEARN-1 idle alignment pathway — learn and report only (**no background automation**). |
-| [Z_SANCTUARY_ECOSYSTEM_BIOLOGY_MAP.md](Z_SANCTUARY_ECOSYSTEM_BIOLOGY_MAP.md) | Ecosystem biology metaphor — roots, trees, law stack, borders (**not** runtime control). |
-| [design/Z_UNIVERSAL_INTERACTION_LANGUAGE.md](design/Z_UNIVERSAL_INTERACTION_LANGUAGE.md) | Z-UIL-1 universal interaction language — shared identity vs entitlement separation; complements Z-VIL (**docs only**). |
-| [LAWGRID_1A_GOVERNANCE_OBSERVATORY.md](LAWGRID_1A_GOVERNANCE_OBSERVATORY.md) | LAWGRID-1A read-only governance observatory — spine, constellation map, catalog/benchmark/ZSX/ZMV/SSWS/AMK ingest (**no runtime authority**). |
-| [PHASE_LAWGRID_1A_GREEN_RECEIPT.md](PHASE_LAWGRID_1A_GREEN_RECEIPT.md) | LAWGRID-1A sealed scope receipt. |
-| [foresight/Z_CIVILIZATION_FORESIGHT_SAFETY_LAW.md](foresight/Z_CIVILIZATION_FORESIGHT_SAFETY_LAW.md) | Z-FUTURE-1 civilizational foresight safety law — scenarios, not prophecy (**doctrine + registry only**). |
-| [foresight/PHASE_Z_FUTURE_1_GREEN_RECEIPT.md](foresight/PHASE_Z_FUTURE_1_GREEN_RECEIPT.md) | Z-FUTURE-1 phase receipt. |
-| [Z_ECOSYSTEM_COHERENCE_ZUNO_SEED.md](Z_ECOSYSTEM_COHERENCE_ZUNO_SEED.md) | Ecosystem coherence seed — Zuno reports + foresight alignment (**no runtime bridge**). |
-| [Z_LEGAL_EVIDENCE_CORE.md](Z_LEGAL_EVIDENCE_CORE.md) | Z-LEGAL-OPS-1 proof-first legal evidence layer — AI organizes evidence only (**no legal advice runtime**). |
-| [Z_LAWYER_WORKSTATION_CONTROL_CENTRE.md](Z_LAWYER_WORKSTATION_CONTROL_CENTRE.md) | Future legal review cockpit concept — no endorsement/auth/account authority in Phase 1. |
-| [Z_GUARDIAN_LEGAL_CIRCLE.md](Z_GUARDIAN_LEGAL_CIRCLE.md) | Real-world advisor layer only under written agreement and consent; not runtime authority. |
-| [Z_LEGAL_PRODUCT_IP_COMPLIANCE_WORKSTATION.md](Z_LEGAL_PRODUCT_IP_COMPLIANCE_WORKSTATION.md) | Z-LEGAL-PRODUCT-OPS-1 product/IP legal workstation map — concept evidence only (**no launch/manufacturing lane**). |
-| [Z_LEGAL_PRODUCT_SAFETY_AND_IP_POLICY.md](Z_LEGAL_PRODUCT_SAFETY_AND_IP_POLICY.md) | Product safety/IP/claims/supplier boundary policy for legal-product governance. |
-| [Z_LEGAL_CANVAS_WORLD_MAP_WORKSTATION.md](Z_LEGAL_CANVAS_WORLD_MAP_WORKSTATION.md) | Visual legal-product canvas posture — governance map only (**no tracking/surveillance/runtime control**). |
-| [Z_LEGAL_WORKSTATION_STACK_REQUIREMENTS.md](Z_LEGAL_WORKSTATION_STACK_REQUIREMENTS.md) | Z-LEGAL-WORKSTATION-STACK-1 full lawyer workstation requirements stack (case/evidence/media/comms/simulation) as governance-only architecture. |
-| [Z_LEGAL_WORKSTATION_SIMULATION_MODE.md](Z_LEGAL_WORKSTATION_SIMULATION_MODE.md) | Safe simulation-mode doctrine for lawyer workflow training with synthetic-only data. |
-| [Z_LEGAL_WORKSTATION_TOOLBELT.md](Z_LEGAL_WORKSTATION_TOOLBELT.md) | Z-LEGAL-TOOLBELT-1 compact legal tool dock map (viewer/timeline/risk/contract/IP/consent/AI panel) as UI metadata only. |
-| [PHASE_Z_LEGAL_WORKSTATION_UX_1_GREEN_RECEIPT.md](PHASE_Z_LEGAL_WORKSTATION_UX_1_GREEN_RECEIPT.md) | Z-LEGAL-WORKSTATION-UX-1 interactive synthetic-data prototype (tool dock + 3-column workstation) with strict no-runtime legal boundaries. |
-| [PHASE_Z_DASH_LIVING_NEON_1_GREEN_RECEIPT.md](PHASE_Z_DASH_LIVING_NEON_1_GREEN_RECEIPT.md) | Z-DASH-LIVING-NEON-1 living neon visual system for legal workstation + AMK main dashboard (UI-only, no runtime authority). |
-| [PHASE_Z_DASH_LIVING_NEON_1A_GREEN_RECEIPT.md](PHASE_Z_DASH_LIVING_NEON_1A_GREEN_RECEIPT.md) | Z-DASH-LIVING-NEON-1A stricter neon mockup-matching reconstruction for lawyer workstation (UI-only, mock/no-op actions). |
-| [PHASE_Z_DASH_LIVING_NEON_1B_GREEN_RECEIPT.md](PHASE_Z_DASH_LIVING_NEON_1B_GREEN_RECEIPT.md) | Z-DASH-LIVING-NEON-1B high-fidelity shell pass for wider, richer, and more legible neon lawyer workstation cockpit (UI-only). |
-| [PHASE_Z_LEGAL_WORKSTATION_AI_SPINE_1_GREEN_RECEIPT.md](PHASE_Z_LEGAL_WORKSTATION_AI_SPINE_1_GREEN_RECEIPT.md) | Z-LEGAL-WORKSTATION-AI-SPINE-1 photophobia comfort pass + synthetic legal AI duo and dual-knowledge-spine cockpit (no live AI/legal advice). |
-| [PHASE_Z_LEGAL_WORKSTATION_UX_2_GREEN_RECEIPT.md](PHASE_Z_LEGAL_WORKSTATION_UX_2_GREEN_RECEIPT.md) | Z-LEGAL-WORKSTATION-UX-2 compact cockpit: protector modes, receipts drawer, historical simulation drill (HTML/CSS/JS only, synthetic data). |
-| [PHASE_Z_LEGAL_WORKSTATION_UX_2A_GREEN_RECEIPT.md](PHASE_Z_LEGAL_WORKSTATION_UX_2A_GREEN_RECEIPT.md) | Z-LEGAL-WORKSTATION-UX-2A label alignment: hub, iframe, service map, indicator copy match UX-2 naming (no layout/runtime change). |
-| [Z_LEGAL_GLOBAL_BENCHMARK_READINESS_PANEL.md](Z_LEGAL_GLOBAL_BENCHMARK_READINESS_PANEL.md) | Z-LEGAL-BENCH-1 internal readiness panel for UX-2 (JSON-backed; not certification, valuation, legal advice, or launch authority). |
-| [PHASE_Z_LEGAL_BENCH_1_GREEN_RECEIPT.md](PHASE_Z_LEGAL_BENCH_1_GREEN_RECEIPT.md) | Z-LEGAL-BENCH-1 sealed scope receipt for benchmark panel wiring. |
-| [Z_XBUS_CONNECTOR_SECURITY_POLICY.md](Z_XBUS_CONNECTOR_SECURITY_POLICY.md) | Phase 1 connector security boundaries (no live execution from gate). |
-| [Z_SSWS_SUPER_SAIYAN_WORKSPACE_COCKPIT.md](Z_SSWS_SUPER_SAIYAN_WORKSPACE_COCKPIT.md) | Z-SSWS-COCKPIT-1 cockpit vs deep-work registry + dry-run plan (no auto-launch). |
-| [PHASE_Z_SSWS_COCKPIT_1_GREEN_RECEIPT.md](PHASE_Z_SSWS_COCKPIT_1_GREEN_RECEIPT.md) | Seal receipt for cockpit orchestration phase. |
-| [Z_LOGICAL_BRAINS_MONITORING_CADENCE.md](Z_LOGICAL_BRAINS_MONITORING_CADENCE.md) | HUB-2 monitoring rhythm checklist for ongoing non-clinical posture checks. |
-| [Z_CADENCE_REAL_CYCLE_RUNNER.md](Z_CADENCE_REAL_CYCLE_RUNNER.md) | Z-CADENCE-1 allowlisted cadence runner and follow-up logic (report-only). |
-| [Z_MR_BUG_MINI_FIXER_POLICY.md](Z_MR_BUG_MINI_FIXER_POLICY.md) | Auto-fix boundary policy: docs hygiene only, no runtime/security rewires. |
-| [PHASE_Z_SEC_TRIPLECHECK_1_GREEN_RECEIPT.md](PHASE_Z_SEC_TRIPLECHECK_1_GREEN_RECEIPT.md) | Seal receipt for Z-SEC-TRIPLECHECK-1 audit phase. |
-| [PHASE_Z_CURSOR_AWARENESS_1_GREEN_RECEIPT.md](PHASE_Z_CURSOR_AWARENESS_1_GREEN_RECEIPT.md) | Cursor awareness for Z-CONTROL-LINK-1 seal and canonical hub control root. |
-| [Z_AMK_GTAI_STRATEGY_COUNCIL.md](Z_AMK_GTAI_STRATEGY_COUNCIL.md) | Strategy council rollup posture and advisory law. |
-| [Z_ROOT_7_GUARDIAN_COORDINATION_LAYER.md](Z_ROOT_7_GUARDIAN_COORDINATION_LAYER.md) | Root guardian symbolic layer and limits. |
-| [ZUNO_WEEKLY_FULL_RUN_AND_OBSERVATION.md](ZUNO_WEEKLY_FULL_RUN_AND_OBSERVATION.md) | Weekly observation cadence and evidence routine. |
-| [INDEX.md](INDEX.md) | Compact docs registry entry point for daily operations. |
+| [AMK_GOKU_MAIN_CONTROL_DASHBOARD.md](AMK_GOKU_MAIN_CONTROL_DASHBOARD.md)                                             | Main AMK command-center doctrine (MAP and FLEX phases).                                                                                            |
+| [AMK_GOKU_COMMAND_BOOK_LAYOUT.md](AMK_GOKU_COMMAND_BOOK_LAYOUT.md)                                                   | Drawer/focus/inspector/tools shell behavior and locked law.                                                                                        |
+| [PHASE_AMK_DASH_FLEX_2_GREEN_RECEIPT.md](PHASE_AMK_DASH_FLEX_2_GREEN_RECEIPT.md)                                     | FLEX-2 scope and acceptance receipt.                                                                                                               |
+| [AMK_PROJECT_INDICATORS_AND_GO_NO_GO.md](AMK_PROJECT_INDICATORS_AND_GO_NO_GO.md)                                     | Indicator posture, overlays, and advisory Go/No-Go framing.                                                                                        |
+| [AMK_GOKU_OPERATOR_CONFIRMATION_POLICY.md](AMK_GOKU_OPERATOR_CONFIRMATION_POLICY.md)                                 | Sacred-move ownership and confirmation boundaries.                                                                                                 |
+| [AMK_ZUNO_ADVISOR_CONSOLE.md](AMK_ZUNO_ADVISOR_CONSOLE.md)                                                           | Local deterministic advisor law (guidance, not execution).                                                                                         |
+| [AMK_AUTONOMOUS_APPROVAL_LADDER.md](AMK_AUTONOMOUS_APPROVAL_LADDER.md)                                               | AAL posture and lane separation.                                                                                                                   |
+| [AMK_GOKU_NOTIFICATIONS_PANEL.md](AMK_GOKU_NOTIFICATIONS_PANEL.md)                                                   | Notification board behavior and non-execution constraints.                                                                                         |
+| [AMK_WORKSPACE_DOORWAY.md](AMK_WORKSPACE_DOORWAY.md)                                                                 | Workspace doorway discipline and status flow.                                                                                                      |
+| [AMK_CURSOR_WORKSPACE_STRATEGY.md](AMK_CURSOR_WORKSPACE_STRATEGY.md)                                                 | Cursor workspace profile strategy and safe operator flow.                                                                                          |
+| [Z_SSWS_WORKSPACE_SPINE.md](Z_SSWS_WORKSPACE_SPINE.md)                                                               | SSWS workspace launch requirements and guard rails.                                                                                                |
+| [Z_ECOSYSTEM_GROWTH_STATUS.md](Z_ECOSYSTEM_GROWTH_STATUS.md)                                                         | Sealed growth stages + AI Builder / overseer communication posture (Z-AI-BUILDER-AWARENESS-2).                                                     |
+| [Z_CRYSTAL_DNA_MESH.md](Z_CRYSTAL_DNA_MESH.md)                                                                       | Z-CRYSTAL-DNA-1 asset identity mesh (shards, dependencies, governance).                                                                            |
+| [Z_CRYSTAL_DNA_VISUALIZATION.md](Z_CRYSTAL_DNA_VISUALIZATION.md)                                                     | Z-CRYSTAL-DNA-2 living Crystal ecosystem map (read-only).                                                                                          |
+| [Z_CRYSTAL_DNA_DRIFT_AWARENESS.md](Z_CRYSTAL_DNA_DRIFT_AWARENESS.md)                                                 | Z-CRYSTAL-DNA-3 drift and integrity awareness (detect-only reports).                                                                               |
+| [Z_ANYDEVICE_AI_CAPSULE.md](Z_ANYDEVICE_AI_CAPSULE.md)                                                               | Z-ANYDEVICE-AI-CAPSULE-1 device trust / declared capability governance.                                                                            |
+| [Z_ANYDEVICE_SYNTHETIC_SIMULATION.md](Z_ANYDEVICE_SYNTHETIC_SIMULATION.md)                                           | Z-ANYDEVICE-2 synthetic device simulation (fiction-only + simulator).                                                                              |
+| [PHASE_Z_AI_BUILDER_AWARENESS_2_GREEN_RECEIPT.md](PHASE_Z_AI_BUILDER_AWARENESS_2_GREEN_RECEIPT.md)                   | Z-AI-BUILDER-AWARENESS-2 sealed growth / overseer communication receipt.                                                                           |
+| [Z_CYCLE_OBSERVE_SYSTEM.md](Z_CYCLE_OBSERVE_SYSTEM.md)                                                               | Z-CYCLE-OBSERVE-1 read-only observer + safe task queue (reports only; no execution).                                                               |
+| [PHASE_Z_CYCLE_OBSERVE_1_GREEN_RECEIPT.md](PHASE_Z_CYCLE_OBSERVE_1_GREEN_RECEIPT.md)                                 | Seal receipt for Z-CYCLE-OBSERVE-1 cycle observe phase.                                                                                            |
+| [PHASE_Z_CURSOR_AWARENESS_3_GREEN_RECEIPT.md](PHASE_Z_CURSOR_AWARENESS_3_GREEN_RECEIPT.md)                           | Z-CURSOR-AWARENESS-3 — Cycle Observe sealed; Cursor / rule alignment receipt.                                                                      |
+| [Z_CYCLE_DASHBOARD_SYSTEM.md](Z_CYCLE_DASHBOARD_SYSTEM.md)                                                           | Z-CYCLE-DASHBOARD-1 read-only ecosystem nervous system dashboard (UI only).                                                                        |
+| [PHASE_Z_CYCLE_DASHBOARD_1_GREEN_RECEIPT.md](PHASE_Z_CYCLE_DASHBOARD_1_GREEN_RECEIPT.md)                             | Seal receipt for Z-CYCLE-DASHBOARD-1.                                                                                                              |
+| [Z_DEPLOYMENT_READINESS_OVERSEER.md](Z_DEPLOYMENT_READINESS_OVERSEER.md)                                             | Z-DEPLOYMENT-READINESS-OVERSEER-1 read-only deployment posture rollup.                                                                             |
+| [PHASE_Z_DEPLOYMENT_READINESS_OVERSEER_1_GREEN_RECEIPT.md](PHASE_Z_DEPLOYMENT_READINESS_OVERSEER_1_GREEN_RECEIPT.md) | Seal receipt for Z-DEPLOYMENT-READINESS-OVERSEER-1.                                                                                                |
+| [Z_API_SPINE_POWER_CELL.md](Z_API_SPINE_POWER_CELL.md)                                                               | API spine posture within hub governance.                                                                                                           |
+| [Z_API_READINESS_AND_SMOKE_GATE.md](Z_API_READINESS_AND_SMOKE_GATE.md)                                               | Readiness/smoke charter and non-bypass flow.                                                                                                       |
+| [Z_TRAFFIC_MINIBOTS.md](Z_TRAFFIC_MINIBOTS.md)                                                                       | Traffic report source and signal semantics.                                                                                                        |
+| [Z_SWARM_14DRP_UNIVERSAL_AGENT_LAW.md](Z_SWARM_14DRP_UNIVERSAL_AGENT_LAW.md)                                         | Universal 14 DRP law for mini-bots, swarm helpers, and future agents.                                                                              |
+| [Z_FORMULA_SWARM_CO_DESIGN_ENGINE.md](Z_FORMULA_SWARM_CO_DESIGN_ENGINE.md)                                           | Z-Formula routing/classification layer (symbolic + report-only).                                                                                   |
+| [PHASE_Z_SWARM_14DRP_1_GREEN_RECEIPT.md](PHASE_Z_SWARM_14DRP_1_GREEN_RECEIPT.md)                                     | Seal receipt for Z-SWARM-14DRP-1 governance phase.                                                                                                 |
+| [Z_IDE_FUSION_WORKFLOW_CONTROL.md](Z_IDE_FUSION_WORKFLOW_CONTROL.md)                                                 | Shared evidence and handoff control for Cursor + VS Code lanes.                                                                                    |
+| [PHASE_Z_IDE_FUSION_1_GREEN_RECEIPT.md](PHASE_Z_IDE_FUSION_1_GREEN_RECEIPT.md)                                       | Seal receipt for Z-IDE-FUSION-1 coordination phase.                                                                                                |
+| [Z_SEC_TRIPLECHECK_COMMUNICATION_FLOW_AUDIT.md](Z_SEC_TRIPLECHECK_COMMUNICATION_FLOW_AUDIT.md)                       | Triple-check audit for communication flow, drift, and path safety.                                                                                 |
+| [Z_LOGICAL_BRAINS_HUB_REFERENCE.md](Z_LOGICAL_BRAINS_HUB_REFERENCE.md)                                               | Hub reference-only registration for Labs Logical Brains capsule.                                                                                   |
+| [Z_NUMEN_HUB_REFERENCE.md](Z_NUMEN_HUB_REFERENCE.md)                                                                 | Hub reference-only registration for Labs Z-NUMEN pattern literacy module.                                                                          |
+| [Z_MOD_DIST_MODULE_DISTRIBUTOR.md](Z_MOD_DIST_MODULE_DISTRIBUTOR.md)                                                 | Z-MOD-DIST-1 read-only module routing advisor (forecast/suggest only).                                                                             |
+| [Z_XBUS_EXTERNAL_CONNECTOR_GATE.md](Z_XBUS_EXTERNAL_CONNECTOR_GATE.md)                                               | Z-XBUS-GATE-1 external connector registry + validator (metadata only; no live bus).                                                                |
+| [Z_REPLICA_FABRIC_GOVERNED_SELF_REPLICATION.md](Z_REPLICA_FABRIC_GOVERNED_SELF_REPLICATION.md)                       | Z-REPLICA-FABRIC-1 governed OMNAI monocore replica doctrine — registry + reports only (no live replication).                                       |
+| [OMNAI_CORE_ENGINE_SIMULATION.md](OMNAI_CORE_ENGINE_SIMULATION.md)                                                   | OMNAI core §02–09 **deterministic simulation**: slim matrix summary, optional full matrix, indicator overlay — **reports only** (GREEN ≠ execute). |
+| [PHASE_OMNAI_CORE_ENGINE_MATRIX_GREEN_RECEIPT.md](PHASE_OMNAI_CORE_ENGINE_MATRIX_GREEN_RECEIPT.md)                   | Seal + rollback for OMNAI core matrix / overlay alignment pass.                                                                                    |
+| [Z_ULTRA_MAGE_FORMULA_CODEX.md](Z_ULTRA_MAGE_FORMULA_CODEX.md)                                                       | Z-ULTRA-MAGE-1 universal formula governance codex (OMNAI + hubs as governed vocabulary; no formula engine runtime).                                |
+| [Z_MAURITIANS_UNITE_CIVIC_TRUTH_ENGINE.md](Z_MAURITIANS_UNITE_CIVIC_TRUTH_ENGINE.md)                                 | Z-MU-TRUTH-1 peaceful civic claim ledger + verification posture (no protest/deploy/provider tooling).                                              |
+| [Z_MU_CIVIC_KNOWLEDGE_ADVISOR.md](Z_MU_CIVIC_KNOWLEDGE_ADVISOR.md)                                                   | Z-MU-ADVISOR-1 civic knowledge advisor framework (templates + policy; no live AI or public chat).                                                  |
+| [Z_PATTERN_SAFE_UNIVERSAL_PATTERN_SIMULATION.md](Z_PATTERN_SAFE_UNIVERSAL_PATTERN_SIMULATION.md)                     | Z-PATTERN-SAFE-1 pattern literacy and simulation governance (registry + validator; no live prediction engine).                                     |
+| [AMK_AI_TEAM_INDICATOR_SYNC_ROUTER.md](AMK_AI_TEAM_INDICATOR_SYNC_ROUTER.md)                                         | AMK-AI-SYNC-1 indicator drift observer + routing packets — Phase 1 never auto-edits indicators from the validator.                                 |
+| [Z_AI_FUSION_CAPABILITY_MAP.md](Z_AI_FUSION_CAPABILITY_MAP.md)                                                       | Z-AI-FUSION-MAP-1 overlap governance map — fusion suggestions only (**no runtime merge auto-execution**).                                          |
+| [Z_STILLNESS_MODE_AI_LEARNING_PATHWAY.md](Z_STILLNESS_MODE_AI_LEARNING_PATHWAY.md)                                   | Z-STILLNESS-LEARN-1 idle alignment pathway — learn and report only (**no background automation**).                                                 |
+| [Z_SANCTUARY_ECOSYSTEM_BIOLOGY_MAP.md](Z_SANCTUARY_ECOSYSTEM_BIOLOGY_MAP.md)                                         | Ecosystem biology metaphor — roots, trees, law stack, borders (**not** runtime control).                                                           |
+| [design/Z_UNIVERSAL_INTERACTION_LANGUAGE.md](design/Z_UNIVERSAL_INTERACTION_LANGUAGE.md)                             | Z-UIL-1 universal interaction language — shared identity vs entitlement separation; complements Z-VIL (**docs only**).                             |
+| [LAWGRID_1A_GOVERNANCE_OBSERVATORY.md](LAWGRID_1A_GOVERNANCE_OBSERVATORY.md)                                         | LAWGRID-1A read-only governance observatory — spine, constellation map, catalog/benchmark/ZSX/ZMV/SSWS/AMK ingest (**no runtime authority**).      |
+| [PHASE_LAWGRID_1A_GREEN_RECEIPT.md](PHASE_LAWGRID_1A_GREEN_RECEIPT.md)                                               | LAWGRID-1A sealed scope receipt.                                                                                                                   |
+| [foresight/Z_CIVILIZATION_FORESIGHT_SAFETY_LAW.md](foresight/Z_CIVILIZATION_FORESIGHT_SAFETY_LAW.md)                 | Z-FUTURE-1 civilizational foresight safety law — scenarios, not prophecy (**doctrine + registry only**).                                           |
+| [foresight/PHASE_Z_FUTURE_1_GREEN_RECEIPT.md](foresight/PHASE_Z_FUTURE_1_GREEN_RECEIPT.md)                           | Z-FUTURE-1 phase receipt.                                                                                                                          |
+| [Z_ECOSYSTEM_COHERENCE_ZUNO_SEED.md](Z_ECOSYSTEM_COHERENCE_ZUNO_SEED.md)                                             | Ecosystem coherence seed — Zuno reports + foresight alignment (**no runtime bridge**).                                                             |
+| [Z_LEGAL_EVIDENCE_CORE.md](Z_LEGAL_EVIDENCE_CORE.md)                                                                 | Z-LEGAL-OPS-1 proof-first legal evidence layer — AI organizes evidence only (**no legal advice runtime**).                                         |
+| [Z_LAWYER_WORKSTATION_CONTROL_CENTRE.md](Z_LAWYER_WORKSTATION_CONTROL_CENTRE.md)                                     | Future legal review cockpit concept — no endorsement/auth/account authority in Phase 1.                                                            |
+| [Z_GUARDIAN_LEGAL_CIRCLE.md](Z_GUARDIAN_LEGAL_CIRCLE.md)                                                             | Real-world advisor layer only under written agreement and consent; not runtime authority.                                                          |
+| [Z_LEGAL_PRODUCT_IP_COMPLIANCE_WORKSTATION.md](Z_LEGAL_PRODUCT_IP_COMPLIANCE_WORKSTATION.md)                         | Z-LEGAL-PRODUCT-OPS-1 product/IP legal workstation map — concept evidence only (**no launch/manufacturing lane**).                                 |
+| [Z_LEGAL_PRODUCT_SAFETY_AND_IP_POLICY.md](Z_LEGAL_PRODUCT_SAFETY_AND_IP_POLICY.md)                                   | Product safety/IP/claims/supplier boundary policy for legal-product governance.                                                                    |
+| [Z_LEGAL_CANVAS_WORLD_MAP_WORKSTATION.md](Z_LEGAL_CANVAS_WORLD_MAP_WORKSTATION.md)                                   | Visual legal-product canvas posture — governance map only (**no tracking/surveillance/runtime control**).                                          |
+| [Z_LEGAL_WORKSTATION_STACK_REQUIREMENTS.md](Z_LEGAL_WORKSTATION_STACK_REQUIREMENTS.md)                               | Z-LEGAL-WORKSTATION-STACK-1 full lawyer workstation requirements stack (case/evidence/media/comms/simulation) as governance-only architecture.     |
+| [Z_LEGAL_WORKSTATION_SIMULATION_MODE.md](Z_LEGAL_WORKSTATION_SIMULATION_MODE.md)                                     | Safe simulation-mode doctrine for lawyer workflow training with synthetic-only data.                                                               |
+| [Z_LEGAL_WORKSTATION_TOOLBELT.md](Z_LEGAL_WORKSTATION_TOOLBELT.md)                                                   | Z-LEGAL-TOOLBELT-1 compact legal tool dock map (viewer/timeline/risk/contract/IP/consent/AI panel) as UI metadata only.                            |
+| [PHASE_Z_LEGAL_WORKSTATION_UX_1_GREEN_RECEIPT.md](PHASE_Z_LEGAL_WORKSTATION_UX_1_GREEN_RECEIPT.md)                   | Z-LEGAL-WORKSTATION-UX-1 interactive synthetic-data prototype (tool dock + 3-column workstation) with strict no-runtime legal boundaries.          |
+| [PHASE_Z_DASH_LIVING_NEON_1_GREEN_RECEIPT.md](PHASE_Z_DASH_LIVING_NEON_1_GREEN_RECEIPT.md)                           | Z-DASH-LIVING-NEON-1 living neon visual system for legal workstation + AMK main dashboard (UI-only, no runtime authority).                         |
+| [PHASE_Z_DASH_LIVING_NEON_1A_GREEN_RECEIPT.md](PHASE_Z_DASH_LIVING_NEON_1A_GREEN_RECEIPT.md)                         | Z-DASH-LIVING-NEON-1A stricter neon mockup-matching reconstruction for lawyer workstation (UI-only, mock/no-op actions).                           |
+| [PHASE_Z_DASH_LIVING_NEON_1B_GREEN_RECEIPT.md](PHASE_Z_DASH_LIVING_NEON_1B_GREEN_RECEIPT.md)                         | Z-DASH-LIVING-NEON-1B high-fidelity shell pass for wider, richer, and more legible neon lawyer workstation cockpit (UI-only).                      |
+| [PHASE_Z_LEGAL_WORKSTATION_AI_SPINE_1_GREEN_RECEIPT.md](PHASE_Z_LEGAL_WORKSTATION_AI_SPINE_1_GREEN_RECEIPT.md)       | Z-LEGAL-WORKSTATION-AI-SPINE-1 photophobia comfort pass + synthetic legal AI duo and dual-knowledge-spine cockpit (no live AI/legal advice).       |
+| [PHASE_Z_LEGAL_WORKSTATION_UX_2_GREEN_RECEIPT.md](PHASE_Z_LEGAL_WORKSTATION_UX_2_GREEN_RECEIPT.md)                   | Z-LEGAL-WORKSTATION-UX-2 compact cockpit: protector modes, receipts drawer, historical simulation drill (HTML/CSS/JS only, synthetic data).        |
+| [PHASE_Z_LEGAL_WORKSTATION_UX_2A_GREEN_RECEIPT.md](PHASE_Z_LEGAL_WORKSTATION_UX_2A_GREEN_RECEIPT.md)                 | Z-LEGAL-WORKSTATION-UX-2A label alignment: hub, iframe, service map, indicator copy match UX-2 naming (no layout/runtime change).                  |
+| [Z_LEGAL_GLOBAL_BENCHMARK_READINESS_PANEL.md](Z_LEGAL_GLOBAL_BENCHMARK_READINESS_PANEL.md)                           | Z-LEGAL-BENCH-1 internal readiness panel for UX-2 (JSON-backed; not certification, valuation, legal advice, or launch authority).                  |
+| [PHASE_Z_LEGAL_BENCH_1_GREEN_RECEIPT.md](PHASE_Z_LEGAL_BENCH_1_GREEN_RECEIPT.md)                                     | Z-LEGAL-BENCH-1 sealed scope receipt for benchmark panel wiring.                                                                                   |
+| [Z_XBUS_CONNECTOR_SECURITY_POLICY.md](Z_XBUS_CONNECTOR_SECURITY_POLICY.md)                                           | Phase 1 connector security boundaries (no live execution from gate).                                                                               |
+| [Z_SSWS_SUPER_SAIYAN_WORKSPACE_COCKPIT.md](Z_SSWS_SUPER_SAIYAN_WORKSPACE_COCKPIT.md)                                 | Z-SSWS-COCKPIT-1 cockpit vs deep-work registry + dry-run plan (no auto-launch).                                                                    |
+| [PHASE_Z_SSWS_COCKPIT_1_GREEN_RECEIPT.md](PHASE_Z_SSWS_COCKPIT_1_GREEN_RECEIPT.md)                                   | Seal receipt for cockpit orchestration phase.                                                                                                      |
+| [Z_LOGICAL_BRAINS_MONITORING_CADENCE.md](Z_LOGICAL_BRAINS_MONITORING_CADENCE.md)                                     | HUB-2 monitoring rhythm checklist for ongoing non-clinical posture checks.                                                                         |
+| [Z_CADENCE_REAL_CYCLE_RUNNER.md](Z_CADENCE_REAL_CYCLE_RUNNER.md)                                                     | Z-CADENCE-1 allowlisted cadence runner and follow-up logic (report-only).                                                                          |
+| [Z_MR_BUG_MINI_FIXER_POLICY.md](Z_MR_BUG_MINI_FIXER_POLICY.md)                                                       | Auto-fix boundary policy: docs hygiene only, no runtime/security rewires.                                                                          |
+| [PHASE_Z_SEC_TRIPLECHECK_1_GREEN_RECEIPT.md](PHASE_Z_SEC_TRIPLECHECK_1_GREEN_RECEIPT.md)                             | Seal receipt for Z-SEC-TRIPLECHECK-1 audit phase.                                                                                                  |
+| [PHASE_Z_CURSOR_AWARENESS_1_GREEN_RECEIPT.md](PHASE_Z_CURSOR_AWARENESS_1_GREEN_RECEIPT.md)                           | Cursor awareness for Z-CONTROL-LINK-1 seal and canonical hub control root.                                                                         |
+| [Z_AMK_GTAI_STRATEGY_COUNCIL.md](Z_AMK_GTAI_STRATEGY_COUNCIL.md)                                                     | Strategy council rollup posture and advisory law.                                                                                                  |
+| [Z_ROOT_7_GUARDIAN_COORDINATION_LAYER.md](Z_ROOT_7_GUARDIAN_COORDINATION_LAYER.md)                                   | Root guardian symbolic layer and limits.                                                                                                           |
+| [ZUNO_WEEKLY_FULL_RUN_AND_OBSERVATION.md](ZUNO_WEEKLY_FULL_RUN_AND_OBSERVATION.md)                                   | Weekly observation cadence and evidence routine.                                                                                                   |
+| [INDEX.md](INDEX.md)                                                                                                 | Compact docs registry entry point for daily operations.                                                                                            |
 
 ## Verify lanes (technical receipts)
 
