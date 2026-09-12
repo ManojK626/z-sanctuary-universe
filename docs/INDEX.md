@@ -3,7 +3,7 @@
 Compact entry points for **read-only** hub registries and AMK-facing evidence. For the full universe index see [../INDEX.md](../INDEX.md).
 
 | Slice | Doc | Command |
-| ------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------- | ----------------------------------- |
+| ------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------ | ----------------------------------- |
 | Z-SSWS-LINK-1 workspace launch requirements | [Z_SSWS_WORKSPACE_SPINE.md](Z_SSWS_WORKSPACE_SPINE.md) | `npm run z:ssws:requirements` |
 | Z-SSWS-DOOR-1 AMK Workspace Doorway | [AMK_WORKSPACE_DOORWAY.md](AMK_WORKSPACE_DOORWAY.md) | `npm run amk:doorway:status` |
 | AMK-IDE-RHYTHM-1 IDE path + fusion operator rhythm | [AMK_IDE_PATH_AND_FUSION_OPERATOR_RHYTHM.md](AMK_IDE_PATH_AND_FUSION_OPERATOR_RHYTHM.md) | see doc |
@@ -19,6 +19,47 @@ Compact entry points for **read-only** hub registries and AMK-facing evidence. F
 | Z-FUTURE-1 civilizational foresight (Z-PPPFA / MSOAI / FUMCR) | [foresight/Z_CIVILIZATION_FORESIGHT_SAFETY_LAW.md](foresight/Z_CIVILIZATION_FORESIGHT_SAFETY_LAW.md) | — |
 | Z-FUTURE-1 green receipt | [foresight/PHASE_Z_FUTURE_1_GREEN_RECEIPT.md](foresight/PHASE_Z_FUTURE_1_GREEN_RECEIPT.md) | — |
 | Z ecosystem coherence Zuno seed | [Z_ECOSYSTEM_COHERENCE_ZUNO_SEED.md](Z_ECOSYSTEM_COHERENCE_ZUNO_SEED.md) | — |
+| Z-NEXUS-ENGINE-0 global resource & human energy awareness | [z-nexus-engine/Z_NEXUS_ENGINE_0_FOUNDATION.md](z-nexus-engine/Z_NEXUS_ENGINE_0_FOUNDATION.md) | `npm run verify:md` |
+| Z-NEXUS-ENGINE-0 data ethics | [z-nexus-engine/Z_NEXUS_ENGINE_DATA_ETHICS.md](z-nexus-engine/Z_NEXUS_ENGINE_DATA_ETHICS.md) | — |
+| Z-NEXUS-ENGINE-0 mock dashboard spec | [z-nexus-engine/Z_NEXUS_ENGINE_MOCK_DASHBOARD_SPEC.md](z-nexus-engine/Z_NEXUS_ENGINE_MOCK_DASHBOARD_SPEC.md) | — |
+| Z-NEXUS-ENGINE-0 Streamlit HOLD | [z-nexus-engine/Z_NEXUS_ENGINE_FUTURE_STREAMLIT_HOLD.md](z-nexus-engine/Z_NEXUS_ENGINE_FUTURE_STREAMLIT_HOLD.md) | — |
+| Z-NEXUS-ENGINE-0 green receipt | [z-nexus-engine/PHASE_Z_NEXUS_ENGINE_0_GREEN_RECEIPT.md](z-nexus-engine/PHASE_Z_NEXUS_ENGINE_0_GREEN_RECEIPT.md) | — |
+| ZILWA-0 Mauritian hospitality ecosystem | [zilwa-living-experiences/ZILWA_MASTER_BLUEPRINT.md](zilwa-living-experiences/ZILWA_MASTER_BLUEPRINT.md) | `npm run verify:md` |
+| ZILWA-0 Phase 0 scope | [zilwa-living-experiences/ZILWA_PHASE_0_SCOPE.md](zilwa-living-experiences/ZILWA_PHASE_0_SCOPE.md) | — |
+| ZILWA-0 AI panel spec | [zilwa-living-experiences/ZILWA_AI_PANEL_SPEC.md](zilwa-living-experiences/ZILWA_AI_PANEL_SPEC.md) | — |
+| ZILWA-0 financial ledger mock | [zilwa-living-experiences/ZILWA_FINANCIAL_LEDGER_MOCK_SPEC.md](zilwa-living-experiences/ZILWA_FINANCIAL_LEDGER_MOCK_SPEC.md) | — |
+| ZILWA-0 health privacy & child safety | [zilwa-living-experiences/ZILWA_HEALTH_PRIVACY_AND_CHILD_SAFETY.md](zilwa-living-experiences/ZILWA_HEALTH_PRIVACY_AND_CHILD_SAFETY.md) | — |
+| ZILWA-0 cultural ambassador framework | [zilwa-living-experiences/ZILWA_CULTURAL_AMBASSADOR_FRAMEWORK.md](zilwa-living-experiences/ZILWA_CULTURAL_AMBASSADOR_FRAMEWORK.md) | — |
+| ZILWA-0 elder oral history policy | [zilwa-living-experiences/ZILWA_ELDER_ORAL_HISTORY_POLICY.md](zilwa-living-experiences/ZILWA_ELDER_ORAL_HISTORY_POLICY.md) | — |
+| ZILWA-0 green receipt | [zilwa-living-experiences/ZILWA_GREEN_RECEIPT.md](zilwa-living-experiences/ZILWA_GREEN_RECEIPT.md) | — |
+| ZILWA-1A static awareness mockups | [zilwa-living-experiences/ZILWA_PHASE_1A_STATIC_MOCKUPS.md](zilwa-living-experiences/ZILWA_PHASE_1A_STATIC_MOCKUPS.md) | `npm run verify:md` |
+| ZILWA-1A full exhibit hub (HTML) | [../dashboard/Html/zilwa-exhibit-hub.html](../dashboard/Html/zilwa-exhibit-hub.html) | static file |
+| ZILWA-1A guest journey (HTML) | [../dashboard/Html/zilwa-guest-journey.html](../dashboard/Html/zilwa-guest-journey.html) | static file |
+| ZILWA module catalog (20 modules) | [zilwa-living-experiences/ZILWA_MODULE_CATALOG.md](zilwa-living-experiences/ZILWA_MODULE_CATALOG.md) | — |
+| ZILWA Phase 1A completion receipt | [zilwa-living-experiences/ZILWA_PHASE_1A_COMPLETION_RECEIPT.md](zilwa-living-experiences/ZILWA_PHASE_1A_COMPLETION_RECEIPT.md) | — |
+| ZILWA steward review pack | [zilwa-living-experiences/ZILWA_STEWARD_REVIEW_PACK.md](zilwa-living-experiences/ZILWA_STEWARD_REVIEW_PACK.md) | — |
+| ZILWA Phase 1B readiness matrix | [zilwa-living-experiences/ZILWA_PHASE_1B_READINESS_MATRIX.md](zilwa-living-experiences/ZILWA_PHASE_1B_READINESS_MATRIX.md) | — |
+| ZILWA 2A global network hub (HTML) | [../dashboard/Html/zilwa-global-network-hub.html](../dashboard/Html/zilwa-global-network-hub.html) | static file |
+| ZILWA 2A global roadmap | [zilwa-living-experiences/ZILWA_GLOBAL_ROADMAP_2A.md](zilwa-living-experiences/ZILWA_GLOBAL_ROADMAP_2A.md) | `npm run verify:md` |
+| ZILWA 2A global replication framework | [zilwa-living-experiences/ZILWA_GLOBAL_REPLICATION_FRAMEWORK.md](zilwa-living-experiences/ZILWA_GLOBAL_REPLICATION_FRAMEWORK.md) | — |
+| ZILWA 2A Phase 2A expansion receipt | [zilwa-living-experiences/ZILWA_PHASE_2A_GLOBAL_EXPANSION_RECEIPT.md](zilwa-living-experiences/ZILWA_PHASE_2A_GLOBAL_EXPANSION_RECEIPT.md) | — |
+| ZILWA living experiences index | [zilwa-living-experiences/INDEX.md](zilwa-living-experiences/INDEX.md) | — |
+| ZILWA 2B steward reality review | [zilwa-living-experiences/ZILWA_STEWARD_REALITY_REVIEW_2B.md](zilwa-living-experiences/ZILWA_STEWARD_REALITY_REVIEW_2B.md) | `npm run verify:md` |
+| ZILWA strategic roadmap (1A–5A) | [zilwa-living-experiences/ZILWA_STRATEGIC_ROADMAP.md](zilwa-living-experiences/ZILWA_STRATEGIC_ROADMAP.md) | — |
+| ZILWA 2B listening receipt | [zilwa-living-experiences/ZILWA_PHASE_2B_LISTENING_RECEIPT.md](zilwa-living-experiences/ZILWA_PHASE_2B_LISTENING_RECEIPT.md) | — |
+| Z-STRATEGIST-AI readiness layer | [z-strategist-ai/README.md](z-strategist-ai/README.md) | `npm run verify:md` |
+| Z-Strategist AI doctrine | [z-strategist-ai/Z_STRATEGIST_AI_DOCTRINE.md](z-strategist-ai/Z_STRATEGIST_AI_DOCTRINE.md) | — |
+| Z-Strategist readiness stages | [z-strategist-ai/READINESS_STAGES.md](z-strategist-ai/READINESS_STAGES.md) | — |
+| AMK-Goku indicators | [z-strategist-ai/AMK_GOKU_INDICATORS.md](z-strategist-ai/AMK_GOKU_INDICATORS.md) | — |
+| Z-Strategist green receipt | [z-strategist-ai/GREEN_RECEIPT.md](z-strategist-ai/GREEN_RECEIPT.md) | — |
+| Z-Strategist Wave 1 readiness map | [z-strategist-ai/ECOSYSTEM_READINESS_WAVE_1.md](z-strategist-ai/ECOSYSTEM_READINESS_WAVE_1.md) | — |
+| Z-Strategist Wave 1B refinement | [z-strategist-ai/ECOSYSTEM_READINESS_WAVE_1B.md](z-strategist-ai/ECOSYSTEM_READINESS_WAVE_1B.md) | — |
+| Z-Strategist Wave 2 dependency resolution | [z-strategist-ai/ECOSYSTEM_READINESS_WAVE_2.md](z-strategist-ai/ECOSYSTEM_READINESS_WAVE_2.md) | — |
+| Z-Strategist Wave 3 pilot readiness | [z-strategist-ai/ECOSYSTEM_READINESS_WAVE_3.md](z-strategist-ai/ECOSYSTEM_READINESS_WAVE_3.md) | — |
+| Z-Strategist pilot framework | [z-strategist-ai/PILOT_READINESS_FRAMEWORK.md](z-strategist-ai/PILOT_READINESS_FRAMEWORK.md) | — |
+| AMK strategic posture (Lane A + B) | [z-strategist-ai/AMK_STRATEGIC_POSTURE.md](z-strategist-ai/AMK_STRATEGIC_POSTURE.md) | — |
+| Z-PEE Lane A learning scope | [z-strategist-ai/Z_PEE_PILOT_LEARNING_SCOPE.md](z-strategist-ai/Z_PEE_PILOT_LEARNING_SCOPE.md) | — |
+| Z-CIVD charter (life-first doctrine) | [z-civd/Z_CIVD_CHARTER.md](z-civd/Z_CIVD_CHARTER.md) | — |
 | API readiness and smoke (charter) | [Z_API_READINESS_AND_SMOKE_GATE.md](Z_API_READINESS_AND_SMOKE_GATE.md) | `npm run z:api:readiness` |
 | Z-Traffic tower | [Z_TRAFFIC_MINIBOTS.md](Z_TRAFFIC_MINIBOTS.md) | `npm run z:traffic` |
 | Z-SWARM-14DRP-1 universal agent law | [Z_SWARM_14DRP_UNIVERSAL_AGENT_LAW.md](Z_SWARM_14DRP_UNIVERSAL_AGENT_LAW.md) | `npm run z:swarm:14drp` |
