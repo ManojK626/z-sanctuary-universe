@@ -2,6 +2,8 @@
 
 Compact entry points for **read-only** hub registries and AMK-facing evidence. For the full universe index see [../INDEX.md](../INDEX.md).
 
+**Z-SEIF-0** (architecture only · no runtime · no Cloudflare mutation): [z_seif/Z_SEIF_CONSTITUTION.md](z_seif/Z_SEIF_CONSTITUTION.md) · index [z_seif/README.md](z_seif/README.md) · receipt [z_seif/Z_SEIF_PHASE_0_RECEIPT.md](z_seif/Z_SEIF_PHASE_0_RECEIPT.md)
+
 | Slice | Doc | Command |
 | ------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------- | ----------------------------------- |
 | Z-SSWS-LINK-1 workspace launch requirements | [Z_SSWS_WORKSPACE_SPINE.md](Z_SSWS_WORKSPACE_SPINE.md) | `npm run z:ssws:requirements` |
