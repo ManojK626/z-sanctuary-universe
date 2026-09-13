@@ -2,7 +2,7 @@
 
 **Gate:** `Z-SEIF-0`  
 **Audit base:** `origin/main` @ `f57220d0f79877274dbbf3a34a2aa06eb5a049b7`  
-**Method:** tracked-file survey on this worktree plus named sibling worktrees for HAM / PID-1B only  
+**Method:** tracked-file survey on this audit base, plus unmerged HAM / PID-1B evidence that is not present on the base  
 **Posture:** CONCEPTUAL — NOT RUNTIME
 
 Governing rule:
@@ -27,11 +27,11 @@ Classification used here:
 | Z-Atlas | `EXISTING` | [docs/z_atlas/](../z_atlas/Z_ATLAS_CONSTITUTION.md) · Phase 0 / 0.5 sealed on this base | CONSUME topology and preflight. Do not fork a second map |
 | PID / identity contract | `EXISTING` | `docs/Z_PROJECT_IDENTITY_RELATIONSHIP_CONTRACT.md` | CONSUME vocabulary |
 | Project identity registry | `EXISTING` | `data/z_universe_project_registry.json`, `data/z_pc_root_projects.json`, `data/z_module_manifest.json` | CONSUME. Second registry = constitutional drift |
-| Logical asset lineage / Z-CLDO | `PARTIAL` | PID-1B worktree `Z_PID_1B_LOGICAL_ASSET_LINEAGE.md` (not this base) | CONSUME later. Do not invent a second CLDO engine |
+| Logical asset lineage / Z-CLDO | `PARTIAL` | Unmerged PID-1B evidence (`Z_PID_1B_LOGICAL_ASSET_LINEAGE.md` not on this base) | CONSUME later. Do not invent a second CLDO engine |
 | Provenance / receipts | `EXISTING` | `config/provenance_manifest.json`, `scripts/z_provenance_check.mjs`, `docs/PHASE_*_RECEIPT.md` | COMPOSE with GitHub SHA + future CF version IDs |
 | Workspace root guards | `EXISTING` | `scripts/z_workspace_root_guard.mjs`, multi-workspace governance | CONSUME for future Cursor preflight |
 | Predecessor maps | `EXISTING` | `docs/Z_SANCTUARY_REGISTRY_ATLAS.md`, ecosystem atlas (historical) | Consume. Do not supersede as command |
-| Z-VUE graph contract | `PARTIAL` | Z-VUE-0 worktree schema/registry | Display ≠ authorization. Collision guard vs Atlas |
+| Z-VUE graph contract | `PARTIAL` | Unmerged Z-VUE evidence (schema/registry not on this base) | Display ≠ authorization. Collision guard vs Atlas |
 
 `DUPLICATE_RISK:` HIGH if Z-SEIF builds another identity registry or topology brain.
 
@@ -48,7 +48,7 @@ Classification used here:
 | Deployment readiness | `EXISTING` | `npm run z:deployment:readiness` (observe; snapshots may age) | CONSUME. Readiness ≠ deploy |
 | Watchdogs | `EXISTING` | `scripts/z_indicator_watchdog.mjs` | CONSUME |
 | Root-cause bots | `EXISTING` | `bots/rootcause/` | CONSUME evidence, not authority |
-| HAM / PRE_ALERT / INCIDENT / RECOVERY | `PARTIAL` | Health-alert-mesh worktrees; **not on this base** | Future compose with Queues/Workflows. Do not invent Alert-Engine-99 |
+| HAM / PRE_ALERT / INCIDENT / RECOVERY | `PARTIAL` | HAM evidence not present on this base | Future compose with Queues/Workflows. Do not invent Alert-Engine-99 |
 | GREEN / YELLOW / BLUE / RED | `EXISTING` | Constitution + indicators | Keep separate from HAM S-scale |
 | HOLD / QUARANTINE | `EXISTING` | PID / Crystal / Z-OTF ledger language | Cite, do not remap |
 
@@ -64,7 +64,7 @@ Classification used here:
 | MiniBots / Traffic | `EXISTING` | `docs/Z_TRAFFIC_MINIBOTS.md` | CONSUME specialist lanes |
 | QOSMEI / Whale Bus | `EXISTING` | QOSMEI fusion + Whale Bus spine | CONSUME advisory fusion |
 | Mentors / Steward council | `EXISTING` | charter / docs | Supervisory when evidenced |
-| Z-LIC | `PARTIAL` | Living Intelligence Commons (worktree / adjacent docs) | Learning ≠ authority |
+| Z-LIC | `PARTIAL` | Living Intelligence Commons (future / unmerged capability evidence) | Learning ≠ authority |
 | Z-PoT | `PARTIAL` / `EXISTING` on related docs | Patterns of Truth states | Reuse epistemic states verbatim |
 | ZGame Intelligence | `MISSING` / `UNKNOWN` | No canonical Z-GI doctrine on this base | Do not invent. Route via MiniBots / QOSMEI if later proven |
 | Z-Learn Ops | `MISSING` as a named system | Adjacent `z_learning_*` / Stillness | Route through Z-LIC later |
@@ -76,7 +76,7 @@ Classification used here:
 | Constitution | `EXISTING` | [Z_SANCTUARY_UNIVERSE_CONSTITUTION_V1.md](../governance/Z_SANCTUARY_UNIVERSE_CONSTITUTION_V1.md) | INHERIT |
 | Steward gates / Merge Hold / Turtle | `EXISTING` | quality-gate, foundation doctrines, Turtle rules | OBEY |
 | Z-OTF | `EXISTING` | [docs/z_otf/](../z_otf/Z_OTF_PHASE_0_IDENTITY_AND_BOUNDARY.md) | Primary overlap. SEIF is edge attach, not a second trust fabric |
-| Z-CCO | `PARTIAL` | Continuity Completion Overseer docs / 0.5 worktree | Do not build a second completion overseer |
+| Z-CCO | `PARTIAL` | Continuity Completion Overseer (future / unmerged capability evidence) | Do not build a second completion overseer |
 | 14 DRP / agent law | `EXISTING` | swarm / IDE 14DRP registries | INHERIT |
 | Ecosystem awareness spine | `EXISTING` | `docs/Z_ECOSYSTEM_AWARENESS_SPINE.md` | CONSUME |
 
@@ -87,7 +87,7 @@ Classification used here:
 | GitHub custody | `EXISTING` | `docs/Z-GITHUB-SANCTUARY-GATE.md` | GitHub = SOURCE + CUSTODY + ENGINEERING EVIDENCE |
 | Cloudflare precautions / R2 discovery | `PARTIAL` | `docs/Z-CLOUDFLARE-AI-COMMS-PRECAUTIONS.md`, recovery R2 docs | Precaution ≠ provision |
 | Lifeboat / dual custody | `EXISTING` / `PARTIAL` | project-lifeboat + R2 dual-custody model | Custody ≠ truth authority |
-| ZWheel Cracker | `EXISTING` external sovereign | Hub may reference; source is `C:\Z-Wheel Cracker` | KNOW ABOUT. Do not own, deploy, or open PD14 |
+| ZWheel Cracker | `EXISTING` external sovereign | Independent local sovereign source; path intentionally omitted | KNOW ABOUT. NEVER OWN. Do not deploy or open PD14 |
 | SSR | `PARTIAL` HOLD | Reconstruction lane | Separate sovereign |
 | RDA | `EXISTING` related product | Distinct repo | Distinct product |
 | Super Saiyan Roulette Pro App | `EXISTING` related product | Distinct from ZWheel | Distinct product |

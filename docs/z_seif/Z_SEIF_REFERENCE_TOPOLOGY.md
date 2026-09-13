@@ -43,7 +43,7 @@ Z-Atlas should eventually answer before mutation. Do not implement runtime prefl
 | CANONICAL ROOT? | PC-root registry + Atlas |
 | REPOSITORY? | GitHub identity map |
 | BRANCH? | git |
-| WORKTREE? | git worktree |
+| ISOLATED CHECKOUT? | git isolated checkout (concept) |
 | CURRENT SHA? | git |
 | RUNTIME TARGET? | product deploy doctrine |
 | STAGING TARGET? | product deploy doctrine |
@@ -60,7 +60,7 @@ Z-Atlas should eventually answer before mutation. Do not implement runtime prefl
 
 | Product | Relationship | SEIF must not |
 | --- | --- | --- |
-| ZWheel Cracker | External sovereign. Current accepted case: local canonical → private GitHub custody → Access-protected staging → v37 GREEN → PD14 pending | Modify `C:\Z-Wheel Cracker`, deploy, or open PD14 from this worktree |
+| ZWheel Cracker | EXISTING external sovereign. Independent local sovereign source; path intentionally omitted. Accepted case: local canonical → private GitHub custody → Access-protected staging → v37 GREEN → PD14 pending | Modify the sovereign source, deploy, or open PD14 from this Z-SEIF slice |
 | Super Saiyan Roulette Pro App | Distinct sovereign | Collapse into ZWheel |
 | Roulette Data Analyzer | Distinct sovereign | Collapse into ZWheel or SSR |
 | Z-Learn Ops | Named future / adjacent learning — not a proven hub engine on this base | Invent a product tree |
@@ -86,4 +86,4 @@ ZWheel lane remains:
 
 `ZW-v37 · PRIVATE STAGING GREEN · PD14 READY`
 
-This worktree does not touch that lane.
+This Z-SEIF slice does not touch that lane.

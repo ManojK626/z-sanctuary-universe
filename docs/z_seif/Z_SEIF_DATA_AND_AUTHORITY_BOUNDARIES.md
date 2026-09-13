@@ -74,10 +74,10 @@ Preserve the [Z-Atlas projection boundary](../z_atlas/Z_ATLAS_INTERNAL_PUBLIC_PR
 
 | Surface | May contain |
 | --- | --- |
-| Internal Z-SEIF / Z-Atlas | Operational topology, worktrees, HOLD mechanics, security posture references |
+| Internal Z-SEIF / Z-Atlas | Operational topology, isolated checkout identity, HOLD mechanics, security posture references |
 | Public Atlas | Sanitized category → product → public-safe status only |
 
-Public surfaces must not expose local paths, secret architecture, internal branch/worktree state, security controls, private formulas, internal incident mechanics, or Creator-tier material.
+Public surfaces must not expose local paths, secret architecture, internal isolated-checkout state, security controls, private formulas, internal incident mechanics, or Creator-tier material.
 
 ## Security doctrine
 

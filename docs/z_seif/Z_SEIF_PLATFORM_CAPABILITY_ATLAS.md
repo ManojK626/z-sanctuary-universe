@@ -64,7 +64,7 @@ Classify Cursor as **ENGINEERING EXECUTION**. Not canonical project identity aut
 | MCP | Tool access | Future read-only observers only | None now | Secretful MCP | **no MCP in Phase 0** |
 | Agents / cloud agents | Parallel research | Architecture / verify lanes | Observe | Writing to dirty trees | 1+ |
 | Commands | Repeatable gates | Named Steward gates | Gate text | Command as deploy | existing |
-| Worktrees | Isolated slices | This Phase 0 pattern | Execution hygiene | Dirty Creator tree | existing |
+| Isolated checkouts | Isolated engineering slices | Cursor isolated-checkout capability | Execution hygiene | Dirty Creator tree | existing |
 | Testing / review | Evidence | Playwright, AAFRTC, md lint | Evidence | Test pass ≠ deploy | existing |
 | Evidence reports | Receipts | Phase receipts | Evidence | Secrets in reports | existing |
 

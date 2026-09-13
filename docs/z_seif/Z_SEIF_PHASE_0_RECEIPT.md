@@ -2,8 +2,7 @@
 
 **Gate:** `Z-SEIF-0 — Sovereign Edge Intelligence Fabric Constitution & Capability Atlas`  
 **Date:** 2026-09-13  
-**Worktree:** `C:\Cursor Projects Organiser\Z_Sanctuary_Universe_wt_z_seif_0`  
-**Branch:** `cursor/zsanctuary/z-seif-0-sovereign-edge-fabric`  
+**Custody:** see GitHub PR #40 metadata  
 **Base:** `origin/main` @ `f57220d0f79877274dbbf3a34a2aa06eb5a049b7`  
 **Mutation class:** `DOCS_ONLY`
 
@@ -41,14 +40,14 @@ Plus a compact index link in `docs/INDEX.md`.
 ## Required verdicts
 
 ```text
-WORKTREE: cursor/zsanctuary/z-seif-0-sovereign-edge-fabric
-  @ C:\Cursor Projects Organiser\Z_Sanctuary_Universe_wt_z_seif_0
+CUSTODY: see GitHub PR #40 metadata
 BASE_SHA: f57220d0f79877274dbbf3a34a2aa06eb5a049b7
 CLOUD_RESOURCES_CREATED: NO
 GITHUB_INFRASTRUCTURE_CREATED: NO
 CURSOR_RUNTIME_HOOKS_CREATED: NO
 DEPLOYMENT: NONE
 PRODUCTION_AUTHORITY: NONE
+PHASE_0_STATUS: GREEN
 PHASE_0_5: CLOSED
 ```
 

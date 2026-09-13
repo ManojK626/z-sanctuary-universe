@@ -30,7 +30,7 @@ Do not instantiate these as Cloudflare Agents in Phase 0.
 
 ## Binding rules
 
-- A liaison for ZWheel may **know** `C:\Z-Wheel Cracker` and `staging.zwheelcracker.com` without importing source into Sanctuary.
+- A liaison for ZWheel may **know** the external sovereign product and its Access-protected staging hostname without importing source into Sanctuary.
 - A liaison must treat SSR, RDA, and Super Saiyan Roulette Pro App as **distinct** products.
 - If HAM lifecycle lands, incident interpretation reuses HAM — it does not create `Z-New-Alert-Engine-99`.
 - If a candidate has no existing surface, it stays `FUTURE_CANDIDATE`.

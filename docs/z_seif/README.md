@@ -3,8 +3,7 @@
 **Full title:** Z-Sovereign Edge Intelligence Fabric  
 **Short name:** `Z-SEIF`  
 **Gate:** `Z-SEIF-0 — Sovereign Edge Intelligence Fabric Constitution & Capability Atlas`  
-**Worktree:** `C:\Cursor Projects Organiser\Z_Sanctuary_Universe_wt_z_seif_0`  
-**Branch:** `cursor/zsanctuary/z-seif-0-sovereign-edge-fabric`  
+**Custody:** see GitHub PR #40 metadata  
 **Posture:** ARCHITECTURE ONLY · CONCEPTUAL — NOT RUNTIME
 
 Z-SEIF coordinates Cursor, GitHub, and Cloudflare with existing Z-Sanctuary intelligence. It does not command products, replace Z-Atlas, or replace Z-OTF.
