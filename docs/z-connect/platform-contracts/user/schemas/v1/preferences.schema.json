@@ -1,0 +1,50 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://z-sanctuary.local/z-connect/schemas/v1/user-preferences.json",
+  "title": "ZConnectUserPreferences",
+  "description": "Communication and relationship preference selections.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schemaVersion",
+    "userId",
+    "updatedAtIso"
+  ],
+  "properties": {
+    "schemaVersion": {
+      "$ref": "../../common/schemas/v1/_definitions.schema.json#/$defs/SchemaVersion"
+    },
+    "userId": {
+      "$ref": "../../common/schemas/v1/_definitions.schema.json#/$defs/UserId"
+    },
+    "communicationFrequency": {
+      "type": "string",
+      "enum": [
+        "daily",
+        "few_times_week",
+        "weekly",
+        "as_needed"
+      ]
+    },
+    "affectionStyle": {
+      "type": "string",
+      "maxLength": 200
+    },
+    "conflictStyle": {
+      "type": "string",
+      "maxLength": 200
+    },
+    "socialEnergy": {
+      "type": "string",
+      "enum": [
+        "introvert",
+        "ambivert",
+        "extrovert",
+        "context_dependent"
+      ]
+    },
+    "updatedAtIso": {
+      "$ref": "../../common/schemas/v1/_definitions.schema.json#/$defs/TimestampIso"
+    }
+  }
+}

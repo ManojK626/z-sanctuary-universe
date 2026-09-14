@@ -1,0 +1,65 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://z-sanctuary.local/z-connect/schemas/v1/compatibility-insight.json",
+  "title": "ZConnectCompatibilityInsight",
+  "description": "Multi-dimensional observation — never a percentage or destiny verdict.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schemaVersion",
+    "insightId",
+    "viewerUserId",
+    "subjectUserId",
+    "dimensionId",
+    "narrative",
+    "confidence",
+    "sourceFieldRefs",
+    "disclaimer",
+    "generatedAtIso"
+  ],
+  "properties": {
+    "schemaVersion": {
+      "$ref": "../../common/schemas/v1/_definitions.schema.json#/$defs/SchemaVersion"
+    },
+    "insightId": {
+      "$ref": "../../common/schemas/v1/_definitions.schema.json#/$defs/Identifier"
+    },
+    "viewerUserId": {
+      "$ref": "../../common/schemas/v1/_definitions.schema.json#/$defs/UserId"
+    },
+    "subjectUserId": {
+      "$ref": "../../common/schemas/v1/_definitions.schema.json#/$defs/UserId"
+    },
+    "dimensionId": {
+      "type": "string",
+      "pattern": "^[a-z][a-z0-9_]{1,63}$"
+    },
+    "narrative": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 2000
+    },
+    "confidence": {
+      "$ref": "../../common/schemas/v1/_definitions.schema.json#/$defs/ConfidenceLevel"
+    },
+    "sourceFieldRefs": {
+      "type": "array",
+      "items": {
+        "$ref": "../../common/schemas/v1/_definitions.schema.json#/$defs/SourceFieldRef"
+      }
+    },
+    "disclaimer": {
+      "$ref": "../../common/schemas/v1/_definitions.schema.json#/$defs/InsightDisclaimer"
+    },
+    "conversationStarter": {
+      "type": "string",
+      "maxLength": 500
+    },
+    "generatedAtIso": {
+      "$ref": "../../common/schemas/v1/_definitions.schema.json#/$defs/TimestampIso"
+    },
+    "correlationId": {
+      "$ref": "../../common/schemas/v1/_definitions.schema.json#/$defs/CorrelationId"
+    }
+  }
+}

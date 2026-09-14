@@ -1,0 +1,32 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://z-sanctuary.local/z-connect/schemas/v1/messaging-attachment.json",
+  "title": "ZConnectMessageAttachment",
+  "description": "Media attachment metadata.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schemaVersion",
+    "attachmentId",
+    "messageId",
+    "image"
+  ],
+  "properties": {
+    "schemaVersion": {
+      "$ref": "../../common/schemas/v1/_definitions.schema.json#/$defs/SchemaVersion"
+    },
+    "attachmentId": {
+      "$ref": "../../common/schemas/v1/_definitions.schema.json#/$defs/Identifier"
+    },
+    "messageId": {
+      "$ref": "../../common/schemas/v1/_definitions.schema.json#/$defs/Identifier"
+    },
+    "image": {
+      "$ref": "../../common/schemas/v1/_definitions.schema.json#/$defs/ImageReference"
+    },
+    "contentLengthBytes": {
+      "type": "integer",
+      "minimum": 0
+    }
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://z-sanctuary.local/z-connect/schemas/v1/subscription-plan.json",
+  "title": "ZConnectPlan",
+  "description": "Plan descriptor — prices not live until sacred gate.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schemaVersion",
+    "planId",
+    "code",
+    "displayName",
+    "tier"
+  ],
+  "properties": {
+    "schemaVersion": {
+      "$ref": "../../common/schemas/v1/_definitions.schema.json#/$defs/SchemaVersion"
+    },
+    "planId": {
+      "$ref": "../../common/schemas/v1/_definitions.schema.json#/$defs/Identifier"
+    },
+    "code": {
+      "type": "string",
+      "pattern": "^[a-z][a-z0-9_]{1,31}$"
+    },
+    "displayName": {
+      "type": "string",
+      "maxLength": 120
+    },
+    "tier": {
+      "type": "string",
+      "enum": [
+        "explorer",
+        "member",
+        "supporter"
+      ]
+    }
+  }
+}

@@ -1,0 +1,46 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://z-sanctuary.local/z-connect/schemas/v1/connection-confidence-evolution.json",
+  "title": "ZConnectConnectionConfidenceEvolution",
+  "description": "How confidence labels changed as Progressive Discovery added data.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schemaVersion",
+    "evolutionId",
+    "bundleId",
+    "dimensionId",
+    "previousConfidence",
+    "currentConfidence",
+    "reason",
+    "recordedAtIso"
+  ],
+  "properties": {
+    "schemaVersion": {
+      "$ref": "../../common/schemas/v1/_definitions.schema.json#/$defs/SchemaVersion"
+    },
+    "evolutionId": {
+      "$ref": "../../common/schemas/v1/_definitions.schema.json#/$defs/Identifier"
+    },
+    "bundleId": {
+      "$ref": "../../common/schemas/v1/_definitions.schema.json#/$defs/Identifier"
+    },
+    "dimensionId": {
+      "type": "string",
+      "pattern": "^[a-z][a-z0-9_]{1,63}$"
+    },
+    "previousConfidence": {
+      "$ref": "../../common/schemas/v1/_definitions.schema.json#/$defs/ConfidenceLevel"
+    },
+    "currentConfidence": {
+      "$ref": "../../common/schemas/v1/_definitions.schema.json#/$defs/ConfidenceLevel"
+    },
+    "reason": {
+      "type": "string",
+      "maxLength": 500
+    },
+    "recordedAtIso": {
+      "$ref": "../../common/schemas/v1/_definitions.schema.json#/$defs/TimestampIso"
+    }
+  }
+}
