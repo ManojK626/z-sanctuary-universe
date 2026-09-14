@@ -63,7 +63,7 @@
       "display_name": "Z-Saiyan Lumina Browser lane",
       "project_ids": ["lumina_browser"],
       "open_dashboard_default": false,
-      "notes": "Optional path until local folder exists; status stays YELLOW if missing."
+      "notes": "Folder present. Doorway alias of hub id z-sanctuary-browser-z-saiyan-lumina. Launch remains human-governed; not production or canonical."
     },
     {
       "id": "creative",
@@ -225,7 +225,7 @@
       "related_docs": ["docs/AMK_WORKSPACE_DOORWAY.md"],
       "related_reports": [],
       "human_gate_required": false,
-      "notes": "Declared EAII path; create or rename local folder to match when ready."
+      "notes": "Folder present. Maps to hub identity z-sanctuary-browser-z-saiyan-lumina. Local launch remains human-governed. External-network verification closed. Production and canonical authority not implied."
     },
     {
       "project_id": "z_omni_sanctuary",
