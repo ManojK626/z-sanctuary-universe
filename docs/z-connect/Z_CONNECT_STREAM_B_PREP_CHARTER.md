@@ -25,7 +25,7 @@ Stream B **must not** bypass Stream A gates for code, deploy, payments, or produ
 2. Finish VILE package review  
 3. Merge Packages 1–3 to `main`  
 4. Verify `main` green  
-5. Implement `@z-sanctuary/zuno-drp` from [charter](../vile/PHASE_2A_PACKAGE_4_ZUNO_DRP_CHARTER.md)  
+5. Implement `@z-sanctuary/zuno-drp` from charter (`../vile/PHASE_2A_PACKAGE_4_ZUNO_DRP_CHARTER.md`; STATUS: REFERENCED_BUT_MISSING)  
 
 Stream A = long-term backbone for every future project.
 
@@ -136,4 +136,4 @@ Week 4+
 
 - [README.md](README.md)  
 - [Z_CONNECT_PROGRAM_STATUS.md](Z_CONNECT_PROGRAM_STATUS.md)  
-- [PHASE_2A_FOUNDATION_INTEGRATION_REPORT.md](../vile/PHASE_2A_FOUNDATION_INTEGRATION_REPORT.md)
+- PHASE_2A_FOUNDATION_INTEGRATION_REPORT.md (`../vile/PHASE_2A_FOUNDATION_INTEGRATION_REPORT.md`; STATUS: REFERENCED_BUT_MISSING)

@@ -36,4 +36,4 @@ https://z-sanctuary.local/z-connect/schemas/v1/{contract-id}.json
 
 ## Relationship to hub
 
-Aligns with [VILE VERSIONING pattern](../../vile/platform-contracts/README.md) — contracts precede packages.
+Aligns with VILE VERSIONING pattern (`../../vile/platform-contracts/README.md`; STATUS: REFERENCED_BUT_MISSING) — contracts precede packages.

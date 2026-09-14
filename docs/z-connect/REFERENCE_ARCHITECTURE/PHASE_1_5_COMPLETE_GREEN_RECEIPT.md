@@ -99,4 +99,4 @@ Phase 1.5 — COMPLETE · FROZEN · READY FOR ARCHITECTURE REVIEW · Merge Hold
 
 Z-Connect is now a reference architecture for trustworthy, human-centered digital experiences within the Z-Sanctuary Universe.
 
-Hub lifecycle doctrine: [Z_SANCTUARY_PROJECT_ARCHITECTURE_LIFECYCLE.md](../../Z_SANCTUARY_PROJECT_ARCHITECTURE_LIFECYCLE.md)
+Hub lifecycle doctrine: Z_SANCTUARY_PROJECT_ARCHITECTURE_LIFECYCLE.md (`../../Z_SANCTUARY_PROJECT_ARCHITECTURE_LIFECYCLE.md`; STATUS: REFERENCED_BUT_MISSING)

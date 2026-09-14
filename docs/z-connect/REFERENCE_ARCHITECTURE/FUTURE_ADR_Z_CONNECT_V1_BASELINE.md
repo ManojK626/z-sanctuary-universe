@@ -39,7 +39,7 @@ That ADR will identify the **frozen architecture version** from which implementa
 - [../experience-state-contracts/](../experience-state-contracts/)  
 - [../Z_CONNECT_ARCHITECTURE_DECISIONS_V1.md](../Z_CONNECT_ARCHITECTURE_DECISIONS_V1.md)
 
-Hub lifecycle: [../../Z_SANCTUARY_PROJECT_ARCHITECTURE_LIFECYCLE.md](../../Z_SANCTUARY_PROJECT_ARCHITECTURE_LIFECYCLE.md)
+Hub lifecycle: ../../Z_SANCTUARY_PROJECT_ARCHITECTURE_LIFECYCLE.md (`../../Z_SANCTUARY_PROJECT_ARCHITECTURE_LIFECYCLE.md`; STATUS: REFERENCED_BUT_MISSING)
 
 ---
 

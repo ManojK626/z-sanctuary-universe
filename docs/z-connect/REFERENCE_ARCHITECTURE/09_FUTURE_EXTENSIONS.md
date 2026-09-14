@@ -77,6 +77,6 @@ Module branches defined; implementation per-branch when chartered:
 
 | System | Doc |
 | ------ | --- |
-| VILE Phase 2A | [PHASE_2A_FOUNDATION_INTEGRATION_GREEN_RECEIPT.md](../../vile/PHASE_2A_FOUNDATION_INTEGRATION_GREEN_RECEIPT.md) |
-| Z-Nexus Engine | [z-nexus-engine/](../../z-nexus-engine/) (separate product line) |
-| ZILWA | [zilwa-living-experiences/](../../zilwa-living-experiences/) |
+| VILE Phase 2A | PHASE_2A_FOUNDATION_INTEGRATION_GREEN_RECEIPT.md (`../../vile/PHASE_2A_FOUNDATION_INTEGRATION_GREEN_RECEIPT.md`; STATUS: REFERENCED_BUT_MISSING) |
+| Z-Nexus Engine | z-nexus-engine/ (`../../z-nexus-engine/`; STATUS: REFERENCED_BUT_MISSING) (separate product line) |
+| ZILWA | zilwa-living-experiences/ (`../../zilwa-living-experiences/`; STATUS: REFERENCED_BUT_MISSING) |

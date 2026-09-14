@@ -17,7 +17,7 @@ Locked decision #7: [Z_CONNECT_ARCHITECTURE_DECISIONS_V1.md](../Z_CONNECT_ARCHIT
 | `@z-sanctuary/zuno-drp` | Charter only | Sacred move governance |
 | `@z-sanctuary/zuno-observability` | Complete · 8/8 tests | Audit events, correlationId |
 
-Integration report: [PHASE_2A_FOUNDATION_INTEGRATION_REPORT.md](../../vile/PHASE_2A_FOUNDATION_INTEGRATION_REPORT.md)
+Integration report: PHASE_2A_FOUNDATION_INTEGRATION_REPORT.md (`../../vile/PHASE_2A_FOUNDATION_INTEGRATION_REPORT.md`; STATUS: REFERENCED_BUT_MISSING)
 
 ## Privacy-by-design (contract level)
 
@@ -36,7 +36,7 @@ Domain sources: user, consent, messaging schemas · flows: Privacy Export, Accou
 
 When implementation begins, every request path follows hub Zero Trust descriptors from `zuno-security` — classify before handler, DRP before sacred handler.
 
-Pattern reference: [vile platform-contracts](../../vile/platform-contracts/)
+Pattern reference: vile platform-contracts (`../../vile/platform-contracts/`; STATUS: REFERENCED_BUT_MISSING)
 
 ## Security-sensitive flows
 

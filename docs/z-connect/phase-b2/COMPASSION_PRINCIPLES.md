@@ -15,7 +15,7 @@
             └── Trust & Safety
                     └── Compassion Principles (this document)
                             └── Shared Sanctuary Doctrines
-                                    └── [Z_SANCTUARY_COMPASSION_CHARTER.md](../../governance/Z_SANCTUARY_COMPASSION_CHARTER.md)
+                                    └── Z_SANCTUARY_COMPASSION_CHARTER.md (`../../governance/Z_SANCTUARY_COMPASSION_CHARTER.md`; STATUS: REFERENCED_BUT_MISSING)
 ```
 
 Full HCI doctrine: [HUMAN_CONNECTION_INTELLIGENCE.md](../HUMAN_CONNECTION_INTELLIGENCE.md)
@@ -38,7 +38,7 @@ Relationship technology touches vulnerability — loneliness, hope, rejection, i
 | Consent before sensitive actions | Every branch, Journey segment, shared view           |
 | Build trust before automation    | Waitlist → beta → paid only after gates              |
 
-Full charter: [Z_SANCTUARY_COMPASSION_CHARTER.md](../../governance/Z_SANCTUARY_COMPASSION_CHARTER.md)
+Full charter: Z_SANCTUARY_COMPASSION_CHARTER.md (`../../governance/Z_SANCTUARY_COMPASSION_CHARTER.md`; STATUS: REFERENCED_BUT_MISSING)
 
 ---
 
@@ -142,16 +142,16 @@ Soulmates contributes to ecosystem Compassion Readiness by monitoring:
 Before a feature moves from roadmap → Sprint 0 → beta:
 
 1. Complete checklist above (document in PR or green receipt)
-2. Cross-check [FEATURE_ROADMAP.md](FEATURE_ROADMAP.md) classification
-3. Cross-check [TRUST_AND_SAFETY_REVIEW.md](TRUST_AND_SAFETY_REVIEW.md)
-4. Cross-check [AI_EXPERIENCE_REVIEW.md](AI_EXPERIENCE_REVIEW.md)
+2. Cross-check FEATURE_ROADMAP.md (`FEATURE_ROADMAP.md`; STATUS: REFERENCED_BUT_MISSING) classification
+3. Cross-check TRUST_AND_SAFETY_REVIEW.md (`TRUST_AND_SAFETY_REVIEW.md`; STATUS: REFERENCED_BUT_MISSING)
+4. Cross-check AI_EXPERIENCE_REVIEW.md (`AI_EXPERIENCE_REVIEW.md`; STATUS: REFERENCED_BUT_MISSING)
 5. AMK human gate for sacred moves
 
 ---
 
 ## Marketing & commercial alignment
 
-All copy in [COMMERCIAL_PREPARATION_GUIDE.md](COMMERCIAL_PREPARATION_GUIDE.md) must pass checklist §4 and §5 before publish.
+All copy in COMMERCIAL_PREPARATION_GUIDE.md (`COMMERCIAL_PREPARATION_GUIDE.md`; STATUS: REFERENCED_BUT_MISSING) must pass checklist §4 and §5 before publish.
 
 Waitlist and landing are **trust-building** surfaces — not conversion funnels that sacrifice dignity.
 
@@ -170,16 +170,16 @@ Waitlist and landing are **trust-building** surfaces — not conversion funnels 
 
 ## Related handbook sections
 
-- [PRODUCT_VISION.md](PRODUCT_VISION.md) — values alignment
-- [TRUST_AND_SAFETY_REVIEW.md](TRUST_AND_SAFETY_REVIEW.md) — architecture
-- [AI_EXPERIENCE_REVIEW.md](AI_EXPERIENCE_REVIEW.md) — AI boundaries
-- [MISSION_CONTROL_INTEGRATION_GUIDE.md](MISSION_CONTROL_INTEGRATION_GUIDE.md) — observe Compassion Readiness
-- [Z_SANCTUARY_FOUNDATION_DOCTRINES.md](../../governance/Z_SANCTUARY_FOUNDATION_DOCTRINES.md) — ecosystem **Uses** model
+- PRODUCT_VISION.md (`PRODUCT_VISION.md`; STATUS: REFERENCED_BUT_MISSING) — values alignment
+- TRUST_AND_SAFETY_REVIEW.md (`TRUST_AND_SAFETY_REVIEW.md`; STATUS: REFERENCED_BUT_MISSING) — architecture
+- AI_EXPERIENCE_REVIEW.md (`AI_EXPERIENCE_REVIEW.md`; STATUS: REFERENCED_BUT_MISSING) — AI boundaries
+- MISSION_CONTROL_INTEGRATION_GUIDE.md (`MISSION_CONTROL_INTEGRATION_GUIDE.md`; STATUS: REFERENCED_BUT_MISSING) — observe Compassion Readiness
+- Z_SANCTUARY_FOUNDATION_DOCTRINES.md (`../../governance/Z_SANCTUARY_FOUNDATION_DOCTRINES.md`; STATUS: REFERENCED_BUT_MISSING) — ecosystem **Uses** model
 
 ### Uses (foundation — by reference)
 
 ```text
-✓ Compassion Charter
+Compassion Charter — STATUS: REFERENCED_BUT_MISSING
 ✓ 14 DRP · AI Constitution · Consent First · Turtle Mode
 ✓ Executive Dashboards (read-only) · Z-Formulas (vocabulary)
 ✓ VILE zuno-* (when Track A clears)

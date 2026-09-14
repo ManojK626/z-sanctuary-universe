@@ -72,6 +72,6 @@ Different growth paths can **complement** each other. Divergence is not failure.
 
 ## Related
 
-- [JOURNEY_HANDBOOK.md](JOURNEY_HANDBOOK.md)
+- JOURNEY_HANDBOOK.md (`JOURNEY_HANDBOOK.md`; STATUS: REFERENCED_BUT_MISSING)
 - [LIFE_RHYTHMS_GUIDE.md](LIFE_RHYTHMS_GUIDE.md)
 - [HUMAN_CONNECTION_INTELLIGENCE.md](../HUMAN_CONNECTION_INTELLIGENCE.md)

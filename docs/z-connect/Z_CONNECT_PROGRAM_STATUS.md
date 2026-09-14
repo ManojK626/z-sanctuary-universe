@@ -23,7 +23,7 @@
 
 **No further architectural layers** before implementation. Engineering priority shifts to **Track A** (VILE foundation).
 
-Handbook: [REFERENCE_ARCHITECTURE/INDEX.md](REFERENCE_ARCHITECTURE/INDEX.md) · Hub lifecycle: [Z_SANCTUARY_PROJECT_ARCHITECTURE_LIFECYCLE.md](../Z_SANCTUARY_PROJECT_ARCHITECTURE_LIFECYCLE.md) · **Universe resolution:** [Z_SANCTUARY_UNIVERSE_RESOLUTION_2026_07_04.md](../Z_SANCTUARY_UNIVERSE_RESOLUTION_2026_07_04.md)
+Handbook: [REFERENCE_ARCHITECTURE/INDEX.md](REFERENCE_ARCHITECTURE/INDEX.md) · Hub lifecycle: Z_SANCTUARY_PROJECT_ARCHITECTURE_LIFECYCLE.md (`../Z_SANCTUARY_PROJECT_ARCHITECTURE_LIFECYCLE.md`; STATUS: REFERENCED_BUT_MISSING) · **Universe resolution:** Z_SANCTUARY_UNIVERSE_RESOLUTION_2026_07_04.md (`../Z_SANCTUARY_UNIVERSE_RESOLUTION_2026_07_04.md`; STATUS: REFERENCED_BUT_MISSING)
 
 ---
 
@@ -120,7 +120,7 @@ Closing posture: **Freeze. Protect. Review. Build deliberately.**
 | Commercial prep assets checklist                     | **Ready**                                                                                                         |
 | **Phase B2 — Soulmates Universe product definition** | **Complete** — [phase-b2/INDEX.md](phase-b2/INDEX.md)                                                             |
 | **Phase B2.2 — Living Connection Dimensions**        | **Complete (doctrine)** — [LIVING_CONNECTION_DIMENSIONS.md](LIVING_CONNECTION_DIMENSIONS.md)                    |
-| **Z-Sanctuary Compassion Charter**                   | **Complete** — [../governance/Z_SANCTUARY_COMPASSION_CHARTER.md](../governance/Z_SANCTUARY_COMPASSION_CHARTER.md) |
+| **Z-Sanctuary Compassion Charter**                   | **Complete** — ../governance/Z_SANCTUARY_COMPASSION_CHARTER.md (`../governance/Z_SANCTUARY_COMPASSION_CHARTER.md`; STATUS: REFERENCED_BUT_MISSING) |
 | API specs                                            | Not started (Phase 1.6 — blocked)                                                                                 |
 | Legal drafts                                         | Not started (B2.1 lane)                                                                                           |
 
@@ -146,5 +146,5 @@ Transform the Z-Connect blueprint into a product people **enjoy using** and **ch
 ## Related reports
 
 - Hub full status report (conversation 2026-07-04)
-- [PHASE_2A_FOUNDATION_INTEGRATION_GREEN_RECEIPT.md](../vile/PHASE_2A_FOUNDATION_INTEGRATION_GREEN_RECEIPT.md)
+- PHASE_2A_FOUNDATION_INTEGRATION_GREEN_RECEIPT.md (`../vile/PHASE_2A_FOUNDATION_INTEGRATION_GREEN_RECEIPT.md`; STATUS: REFERENCED_BUT_MISSING)
 - [Z_CONNECT_PHASE_1_5_ROADMAP.md](Z_CONNECT_PHASE_1_5_ROADMAP.md)

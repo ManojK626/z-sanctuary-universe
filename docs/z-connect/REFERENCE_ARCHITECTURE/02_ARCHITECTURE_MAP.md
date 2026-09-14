@@ -76,7 +76,7 @@ Z-Connect **reuses** hub packages — does not fork:
 | `zuno-drp` | Sacred move governance |
 | `zuno-observability` | Audit events, correlationId |
 
-[Z_CONNECT_STACK_PLACEMENT.md](../Z_CONNECT_STACK_PLACEMENT.md) · [VILE Phase 2A](../../vile/PHASE_2A_FOUNDATION_INTEGRATION_REPORT.md)
+[Z_CONNECT_STACK_PLACEMENT.md](../Z_CONNECT_STACK_PLACEMENT.md) · VILE Phase 2A (`../../vile/PHASE_2A_FOUNDATION_INTEGRATION_REPORT.md`; STATUS: REFERENCED_BUT_MISSING)
 
 ## Contract dependency flow
 

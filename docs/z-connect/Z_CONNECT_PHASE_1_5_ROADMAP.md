@@ -144,5 +144,5 @@ Phase 2B+   → Read-only API / mock UI
 ## Related
 
 - [Z_CONNECT_ARCHITECTURE_DECISIONS_V1.md](Z_CONNECT_ARCHITECTURE_DECISIONS_V1.md)  
-- [vile/platform-contracts/](../vile/platform-contracts/) — pattern reference  
-- [PHASE_2A_FOUNDATION_INTEGRATION_REPORT.md](../vile/PHASE_2A_FOUNDATION_INTEGRATION_REPORT.md)
+- vile/platform-contracts/ (`../vile/platform-contracts/`; STATUS: REFERENCED_BUT_MISSING) — pattern reference  
+- PHASE_2A_FOUNDATION_INTEGRATION_REPORT.md (`../vile/PHASE_2A_FOUNDATION_INTEGRATION_REPORT.md`; STATUS: REFERENCED_BUT_MISSING)

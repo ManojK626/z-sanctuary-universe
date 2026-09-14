@@ -53,7 +53,8 @@ Z-Connect is a **product charter** under hub governance. It is **not** a bypass 
 | [phase-b2/INDEX.md](phase-b2/INDEX.md)                                                             | **B2** — Soulmates Universe product definition handbook                      |
 | [HUMAN_CONNECTION_INTELLIGENCE.md](HUMAN_CONNECTION_INTELLIGENCE.md)                               | **B2 doctrine** — HCI layers (no scores, no stereotypes)                     |
 | [LIVING_CONNECTION_DIMENSIONS.md](LIVING_CONNECTION_DIMENSIONS.md)                               | **B2.2 doctrine** — life rhythms, repair, growth, wonder                      |
-| [../governance/Z_SANCTUARY_COMPASSION_CHARTER.md](../governance/Z_SANCTUARY_COMPASSION_CHARTER.md) | **Shared** compassion doctrine (all products)                                |
+| [Z_CONNECT_CANONICAL_RECOVERY_STATUS.md](Z_CONNECT_CANONICAL_RECOVERY_STATUS.md)                 | ZCR-0 path restore + missing-reference honesty                               |
+| ../governance/Z_SANCTUARY_COMPASSION_CHARTER.md (`../governance/Z_SANCTUARY_COMPASSION_CHARTER.md`; STATUS: REFERENCED_BUT_MISSING) | **Shared** compassion doctrine (all products)                                |
 
 ## Phase posture
 

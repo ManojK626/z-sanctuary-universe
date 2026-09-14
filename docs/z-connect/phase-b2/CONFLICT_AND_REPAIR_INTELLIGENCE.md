@@ -37,7 +37,7 @@ Users may explore (privately or in Journey, with consent):
 | **Time is valid** | Pause before reply is not "toxic" |
 | **Apology without score** | Repair intent matters; no "forgiveness meter" |
 | **Consent to continue** | Either party may step back from dialogue |
-| **Human escalation** | Report, block, appeal — [TRUST_AND_SAFETY_REVIEW.md](TRUST_AND_SAFETY_REVIEW.md) |
+| **Human escalation** | Report, block, appeal — TRUST_AND_SAFETY_REVIEW.md (`TRUST_AND_SAFETY_REVIEW.md`; STATUS: REFERENCED_BUT_MISSING) |
 
 ---
 
@@ -69,5 +69,5 @@ Disagreement ≠ toxicity. Product language must not conflate them.
 
 ## Related
 
-- [TRUST_AND_SAFETY_REVIEW.md](TRUST_AND_SAFETY_REVIEW.md)
+- TRUST_AND_SAFETY_REVIEW.md (`TRUST_AND_SAFETY_REVIEW.md`; STATUS: REFERENCED_BUT_MISSING)
 - [GROWTH_JOURNEYS.md](GROWTH_JOURNEYS.md)

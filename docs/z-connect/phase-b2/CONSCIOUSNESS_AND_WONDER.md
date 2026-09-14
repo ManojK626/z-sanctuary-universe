@@ -65,4 +65,4 @@ Wonder overlaps with HCI **Sage**, **Visionary**, **Explorer** profiles — user
 ## Related
 
 - [CONSCIOUS_CONNECTION profiles in HCI](../HUMAN_CONNECTION_INTELLIGENCE.md)
-- [PRODUCT_VISION.md](PRODUCT_VISION.md)
+- PRODUCT_VISION.md (`PRODUCT_VISION.md`; STATUS: REFERENCED_BUT_MISSING)

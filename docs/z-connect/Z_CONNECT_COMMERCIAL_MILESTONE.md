@@ -55,7 +55,7 @@ Draft only — refine with team before any public promise:
 | Core | Member | Full Discovery Journey, messaging (when live), events browse | TBD / month |
 | Plus | Supporter | Couples tools, priority support, early features | TBD / month |
 
-**No prices locked.** [PRICING_STRATEGY.md](commercial/PRICING_STRATEGY.md) to be drafted under Stream B.
+**No prices locked.** PRICING_STRATEGY.md (`commercial/PRICING_STRATEGY.md`; STATUS: REFERENCED_BUT_MISSING) to be drafted under Stream B.
 
 ---
 
@@ -111,7 +111,7 @@ Avoid vanity metrics: total swipes, time-on-app manipulation, leaderboard engage
 
 ## Next Stream B actions
 
-1. Draft [PRICING_STRATEGY.md](commercial/PRICING_STRATEGY.md) (hypothesis)  
+1. Draft PRICING_STRATEGY.md (`commercial/PRICING_STRATEGY.md`; STATUS: REFERENCED_BUT_MISSING) (hypothesis)  
 2. Draft landing page copy with constitution-aligned tone  
 3. Define waitlist schema in domain contracts  
 4. User journey: **free explorer → paid member**  
@@ -122,4 +122,4 @@ Avoid vanity metrics: total swipes, time-on-app manipulation, leaderboard engage
 
 - [Z_CONNECT_STREAM_B_PREP_CHARTER.md](Z_CONNECT_STREAM_B_PREP_CHARTER.md)  
 - [Z_CONNECT_AI_CONSTITUTION_V1.md](Z_CONNECT_AI_CONSTITUTION_V1.md)  
-- Hub: [commercial-readiness-audit/](../commercial-readiness-audit/) (ecosystem context)
+- Hub: commercial-readiness-audit/ (`../commercial-readiness-audit/`; STATUS: REFERENCED_BUT_MISSING) (ecosystem context)

@@ -48,8 +48,8 @@ Human Decisions
 
 **Canonical refs (do not duplicate text):**
 
-- [Z_SANCTUARY_COMPASSION_CHARTER.md](../governance/Z_SANCTUARY_COMPASSION_CHARTER.md)
-- [phase-b2/TRUST_AND_SAFETY_REVIEW.md](phase-b2/TRUST_AND_SAFETY_REVIEW.md)
+- Z_SANCTUARY_COMPASSION_CHARTER.md (`../governance/Z_SANCTUARY_COMPASSION_CHARTER.md`; STATUS: REFERENCED_BUT_MISSING)
+- phase-b2/TRUST_AND_SAFETY_REVIEW.md (`phase-b2/TRUST_AND_SAFETY_REVIEW.md`; STATUS: REFERENCED_BUT_MISSING)
 - [phase-b2/COMPASSION_PRINCIPLES.md](phase-b2/COMPASSION_PRINCIPLES.md)
 - [Z_CONNECT_AI_CONSTITUTION_V1.md](Z_CONNECT_AI_CONSTITUTION_V1.md)
 
@@ -62,11 +62,11 @@ Personality and connection intelligence **exist indirectly** — not yet unified
 | Dimension | Present? | Status |
 | --------- | -------- | ------ |
 | Compassion principles | ✅ | Strong — [COMPASSION_PRINCIPLES.md](phase-b2/COMPASSION_PRINCIPLES.md) |
-| Trust & safety | ✅ | Mature — [TRUST_AND_SAFETY_REVIEW.md](phase-b2/TRUST_AND_SAFETY_REVIEW.md) |
+| Trust & safety | `REFERENCED_BUT_MISSING` | Named `phase-b2/TRUST_AND_SAFETY_REVIEW.md` never in git |
 | Consent layers | ✅ | Mature — `platform-contracts/consent/` |
-| Emotional wellness | ✅ | Present — compassion + journey design |
+| Emotional wellness | ✅ | Present — compassion principles (journey handbook missing) |
 | AI explanation systems | ✅ | Present — AI Constitution, guide-not-matchmaker |
-| Relationship intentions | ✅ | Present — B2 personas & journeys |
+| Relationship intentions | `REFERENCED_BUT_MISSING` | Named `USER_PERSONA_GUIDE.md` never in git; B2.2 `GROWTH_JOURNEYS.md` present |
 | Personality intelligence | 🟡 | **Fragmented** — needs HCI unification |
 | Communication styles | 🟡 | Partial |
 | Attachment patterns | 🔴 | Missing — **HCI Layer 2** |
@@ -173,13 +173,13 @@ Optional descriptors — many can coexist in one person:
 
 **Unknown is valid.** Pretending certainty destroys trust.
 
-Aligns with [Connection Confidence](phase-b2/PRODUCT_VISION.md) — no fake precision.
+Aligns with Connection Confidence (`phase-b2/PRODUCT_VISION.md`; STATUS: REFERENCED_BUT_MISSING) — no fake precision.
 
 ---
 
 ### Layer 5 — Compassion intelligence
 
-Inspired by [Compassion Charter](../governance/Z_SANCTUARY_COMPASSION_CHARTER.md) — **behavioral dignity**, not scores:
+Inspired by Compassion Charter (`../governance/Z_SANCTUARY_COMPASSION_CHARTER.md`; STATUS: REFERENCED_BUT_MISSING) — **behavioral dignity**, not scores:
 
 | Reflective question |
 | ------------------- |
@@ -267,8 +267,8 @@ Before any HCI surface ships:
 ## Related
 
 - [phase-b2/INDEX.md](phase-b2/INDEX.md)
-- [phase-b2/USER_PERSONA_GUIDE.md](phase-b2/USER_PERSONA_GUIDE.md)
-- [phase-b2/JOURNEY_HANDBOOK.md](phase-b2/JOURNEY_HANDBOOK.md)
+- phase-b2/USER_PERSONA_GUIDE.md (`phase-b2/USER_PERSONA_GUIDE.md`; STATUS: REFERENCED_BUT_MISSING)
+- phase-b2/JOURNEY_HANDBOOK.md (`phase-b2/JOURNEY_HANDBOOK.md`; STATUS: REFERENCED_BUT_MISSING)
 - [Z_CONNECT_PROGRAM_STATUS.md](Z_CONNECT_PROGRAM_STATUS.md)
 
 *Understand deeply. Respect individuality. Never reduce a person to a label.* ❤️🐢🌍

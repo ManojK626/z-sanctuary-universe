@@ -59,7 +59,7 @@ User intent
 
 Every user-facing AI artifact passes Shadow before display or persistence. Reject = halt flow; no partial unsafe output.
 
-Package: [zuno-shadow](../../vile/PHASE_2A_FOUNDATION_INTEGRATION_REPORT.md) · Flow law: [INTERACTION_CONTRACT_LAW.md](../interaction-contracts/INTERACTION_CONTRACT_LAW.md)
+Package: zuno-shadow (`../../vile/PHASE_2A_FOUNDATION_INTEGRATION_REPORT.md`; STATUS: REFERENCED_BUT_MISSING) · Flow law: [INTERACTION_CONTRACT_LAW.md](../interaction-contracts/INTERACTION_CONTRACT_LAW.md)
 
 ## Scientific integrity
 
