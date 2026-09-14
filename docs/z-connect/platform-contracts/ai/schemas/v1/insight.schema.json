@@ -1,0 +1,46 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://z-sanctuary.local/z-connect/schemas/v1/ai-insight.json",
+  "title": "ZConnectAiInsight",
+  "description": "General AI insight — observational not verdict.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schemaVersion",
+    "insightId",
+    "userId",
+    "narrative",
+    "confidence",
+    "explanation",
+    "limitations",
+    "disclaimer"
+  ],
+  "properties": {
+    "schemaVersion": {
+      "$ref": "../../common/schemas/v1/_definitions.schema.json#/$defs/SchemaVersion"
+    },
+    "insightId": {
+      "$ref": "../../common/schemas/v1/_definitions.schema.json#/$defs/Identifier"
+    },
+    "userId": {
+      "$ref": "../../common/schemas/v1/_definitions.schema.json#/$defs/UserId"
+    },
+    "narrative": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 2000
+    },
+    "confidence": {
+      "$ref": "../../common/schemas/v1/_definitions.schema.json#/$defs/ConfidenceLevel"
+    },
+    "explanation": {
+      "$ref": "../../common/schemas/v1/_definitions.schema.json#/$defs/AiExplanation"
+    },
+    "limitations": {
+      "$ref": "../../common/schemas/v1/_definitions.schema.json#/$defs/AiLimitations"
+    },
+    "disclaimer": {
+      "$ref": "../../common/schemas/v1/_definitions.schema.json#/$defs/InsightDisclaimer"
+    }
+  }
+}

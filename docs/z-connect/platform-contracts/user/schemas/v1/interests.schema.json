@@ -1,0 +1,55 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://z-sanctuary.local/z-connect/schemas/v1/user-interests.json",
+  "title": "ZConnectUserInterests",
+  "description": "User-stated interests by category.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schemaVersion",
+    "userId",
+    "categories"
+  ],
+  "properties": {
+    "schemaVersion": {
+      "$ref": "../../common/schemas/v1/_definitions.schema.json#/$defs/SchemaVersion"
+    },
+    "userId": {
+      "$ref": "../../common/schemas/v1/_definitions.schema.json#/$defs/UserId"
+    },
+    "categories": {
+      "type": "object",
+      "additionalProperties": {
+        "type": "array",
+        "items": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 80
+        }
+      },
+      "description": "e.g. music, sports, reading"
+    },
+    "entertainmentInterests": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "label": {
+          "$ref": "../../common/schemas/v1/_definitions.schema.json#/$defs/EntertainmentLabel"
+        },
+        "zodiacSign": {
+          "type": "string",
+          "maxLength": 32
+        },
+        "astrologyInterest": {
+          "type": "boolean"
+        },
+        "numerologyInterest": {
+          "type": "boolean"
+        }
+      },
+      "required": [
+        "label"
+      ]
+    }
+  }
+}

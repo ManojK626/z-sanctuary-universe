@@ -1,0 +1,63 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://z-sanctuary.local/z-connect/schemas/v1/shared-experience-consent.json",
+  "title": "ZConnectSharedExperienceConsent",
+  "description": "All-party consent for shared features.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schemaVersion",
+    "experienceId",
+    "experienceType",
+    "participantUserIds",
+    "consents"
+  ],
+  "properties": {
+    "schemaVersion": {
+      "$ref": "../../common/schemas/v1/_definitions.schema.json#/$defs/SchemaVersion"
+    },
+    "experienceId": {
+      "$ref": "../../common/schemas/v1/_definitions.schema.json#/$defs/Identifier"
+    },
+    "experienceType": {
+      "type": "string",
+      "enum": [
+        "dream_baby_studio",
+        "shared_journal",
+        "couples_timeline",
+        "event_together"
+      ]
+    },
+    "participantUserIds": {
+      "type": "array",
+      "items": {
+        "$ref": "../../common/schemas/v1/_definitions.schema.json#/$defs/UserId"
+      },
+      "minItems": 2
+    },
+    "consents": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "userId",
+          "consentId",
+          "grantedAtIso"
+        ],
+        "properties": {
+          "userId": {
+            "$ref": "../../common/schemas/v1/_definitions.schema.json#/$defs/UserId"
+          },
+          "consentId": {
+            "$ref": "../../common/schemas/v1/_definitions.schema.json#/$defs/Identifier"
+          },
+          "grantedAtIso": {
+            "$ref": "../../common/schemas/v1/_definitions.schema.json#/$defs/TimestampIso"
+          }
+        }
+      },
+      "minItems": 2
+    }
+  }
+}
