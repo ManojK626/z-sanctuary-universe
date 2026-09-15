@@ -1,0 +1,272 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "z_cco_continuity_status_v1.schema.json",
+  "title": "Z-CCO continuity status v1",
+  "description": "DATA CONTRACT only. Does not authorize generating a report. Z-CCO STATUS != SOURCE EVENT STORE.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "authority",
+    "evidence_window",
+    "top_candidates",
+    "proposed_next_phase"
+  ],
+  "properties": {
+    "schema_version": {
+      "type": "string",
+      "const": "z_cco_continuity_status_v1"
+    },
+    "generated_at": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "scope": {
+      "type": "string"
+    },
+    "authority": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "runtime",
+        "mutation_authority",
+        "requires_steward_authorization"
+      ],
+      "properties": {
+        "runtime": { "type": "string", "const": "NONE" },
+        "mutation_authority": { "type": "string", "const": "NONE" },
+        "requires_steward_authorization": { "type": "boolean", "const": true },
+        "human_authority": { "type": "string", "const": "AMK-GOKU" }
+      }
+    },
+    "evidence_window": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["coverage", "limitations"],
+      "properties": {
+        "base_sha": { "type": "string" },
+        "observed_sources": {
+          "type": "array",
+          "items": { "$ref": "#/$defs/provenance" }
+        },
+        "excluded_sources": {
+          "type": "array",
+          "items": { "type": "string" }
+        },
+        "coverage": {
+          "type": "string",
+          "enum": ["COVERAGE_COMPLETE", "COVERAGE_PARTIAL", "UNKNOWN"]
+        },
+        "freshness_posture": {
+          "type": "string",
+          "enum": ["VERIFIED", "SUPPORTED", "PARTIAL", "UNKNOWN", "CONFLICTING"]
+        },
+        "limitations": { "type": "string" }
+      }
+    },
+    "projects": {
+      "type": "array",
+      "items": { "$ref": "#/$defs/assessed_surface" }
+    },
+    "portfolio_exceptions": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["id", "reason"],
+        "properties": {
+          "id": { "type": "string" },
+          "reason": { "type": "string" },
+          "evidence_refs": {
+            "type": "array",
+            "items": { "$ref": "#/$defs/provenance" }
+          },
+          "unknowns": {
+            "type": "array",
+            "items": { "type": "string" }
+          }
+        }
+      }
+    },
+    "deployment_workload_clues": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["class"],
+        "properties": {
+          "project_id": { "type": "string" },
+          "class": {
+            "type": "string",
+            "enum": [
+              "NO_LOCAL_EVIDENCE",
+              "LOCAL_PREPARATION_GAP",
+              "LOCAL_REVIEW_DUE",
+              "EXTERNAL_STATE_UNKNOWN",
+              "HUMAN_GATE_REQUIRED",
+              "LOCALLY_EVIDENCED_NO_ACTION"
+            ]
+          },
+          "evidence_refs": {
+            "type": "array",
+            "items": { "$ref": "#/$defs/provenance" }
+          },
+          "note": { "type": "string" }
+        }
+      }
+    },
+    "top_candidates": {
+      "type": "array",
+      "maxItems": 3,
+      "items": { "$ref": "#/$defs/candidate" }
+    },
+    "proposed_next_phase": {
+      "oneOf": [
+        { "type": "null" },
+        { "$ref": "#/$defs/proposed_next_phase" }
+      ]
+    },
+    "human_gate": {
+      "type": "string"
+    },
+    "unknowns": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "provenance": {
+      "type": "array",
+      "items": { "$ref": "#/$defs/provenance" }
+    }
+  },
+  "$defs": {
+    "evidence_posture": {
+      "type": "string",
+      "enum": ["VERIFIED", "SUPPORTED", "PARTIAL", "UNKNOWN", "CONFLICTING"]
+    },
+    "lifecycle": {
+      "type": "string",
+      "enum": [
+        "UNKNOWN",
+        "DISCOVERED",
+        "ACTIVE",
+        "READY_FOR_STEWARD_REVIEW",
+        "SEALED_PHASE",
+        "HOLD_HUMAN",
+        "HOLD_EVIDENCE",
+        "BLOCKED_DEPENDENCY",
+        "COMPLETE_DECLARED_SCOPE",
+        "ARCHIVED_PRESERVED"
+      ]
+    },
+    "dimension_value": {
+      "type": "string",
+      "enum": [
+        "NOT_ASSESSED",
+        "MISSING",
+        "PARTIAL",
+        "READY_FOR_REVIEW",
+        "VERIFIED",
+        "HELD",
+        "NOT_APPLICABLE"
+      ]
+    },
+    "provenance": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "source_system": { "type": "string" },
+        "source_artifact": { "type": "string" },
+        "source_schema": { "type": "string" },
+        "source_generated_at": { "type": "string" },
+        "source_commit": { "type": "string" },
+        "source_project_id": { "type": "string" },
+        "evidence_posture": { "$ref": "#/$defs/evidence_posture" }
+      }
+    },
+    "completion_dimensions": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "identity": { "$ref": "#/$defs/dimension_value" },
+        "purpose_and_scope": { "$ref": "#/$defs/dimension_value" },
+        "doctrine_and_safety": { "$ref": "#/$defs/dimension_value" },
+        "build": { "$ref": "#/$defs/dimension_value" },
+        "verification": { "$ref": "#/$defs/dimension_value" },
+        "integration": { "$ref": "#/$defs/dimension_value" },
+        "preservation": { "$ref": "#/$defs/dimension_value" },
+        "operational_use": { "$ref": "#/$defs/dimension_value" },
+        "steward_acceptance": { "$ref": "#/$defs/dimension_value" }
+      }
+    },
+    "assessed_surface": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["project_id", "lifecycle"],
+      "properties": {
+        "project_id": { "type": "string" },
+        "logical_asset_id": { "type": "string" },
+        "lifecycle": { "$ref": "#/$defs/lifecycle" },
+        "completion_dimensions": { "$ref": "#/$defs/completion_dimensions" },
+        "evidence_refs": {
+          "type": "array",
+          "items": { "$ref": "#/$defs/provenance" }
+        },
+        "unknowns": {
+          "type": "array",
+          "items": { "type": "string" }
+        },
+        "holds": {
+          "type": "array",
+          "items": { "type": "string" }
+        }
+      }
+    },
+    "candidate": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["candidate_id", "title", "reason", "rank"],
+      "properties": {
+        "candidate_id": { "type": "string" },
+        "title": { "type": "string" },
+        "reason": { "type": "string" },
+        "evidence_refs": {
+          "type": "array",
+          "items": { "$ref": "#/$defs/provenance" }
+        },
+        "blocker": { "type": "string" },
+        "human_gate": { "type": "string" },
+        "rank": { "type": "integer", "minimum": 1, "maximum": 3 }
+      }
+    },
+    "proposed_next_phase": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "scope",
+        "why_now",
+        "evidence_refs",
+        "exclusions",
+        "verification_checklist",
+        "requires_steward_authorization"
+      ],
+      "properties": {
+        "scope": { "type": "string" },
+        "why_now": { "type": "string" },
+        "evidence_refs": {
+          "type": "array",
+          "minItems": 1,
+          "items": { "$ref": "#/$defs/provenance" }
+        },
+        "exclusions": {
+          "type": "array",
+          "items": { "type": "string" }
+        },
+        "verification_checklist": {
+          "type": "array",
+          "items": { "type": "string" }
+        },
+        "requires_steward_authorization": { "type": "boolean", "const": true }
+      }
+    }
+  }
+}
