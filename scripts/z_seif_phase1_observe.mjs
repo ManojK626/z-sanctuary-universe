@@ -502,9 +502,16 @@ function invokedDirectly() {
   return argv1 && path.normalize(self.toLowerCase()) === path.normalize(argv1.toLowerCase());
 }
 
-if (invokedDirectly()) {
+async function main() {
   const flags = parseObserveArgs(process.argv.slice(2));
   const result = await observe({ githubPublic: flags.githubPublic });
   process.stdout.write(`${result.report}\n`);
   process.exit(result.ok ? 0 : 1);
+}
+
+if (invokedDirectly()) {
+  main().catch((error) => {
+    console.error(error instanceof Error ? error.message : String(error));
+    process.exit(1);
+  });
 }
