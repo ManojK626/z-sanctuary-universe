@@ -1,0 +1,138 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "z_shared_roots_registry.schema.json",
+  "title": "Z-SRM observation hypothesis registry",
+  "description": "Declared shared-root hypotheses. Not canonical sharing authority. Observer evaluates evidence; does not extract or canonicalise.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema", "phase", "law", "observations", "role_map"],
+  "properties": {
+    "schema": { "type": "string", "enum": ["z_shared_roots_registry_v1"] },
+    "phase": { "type": "string", "enum": ["Z-SRM-OBSERVE-1"] },
+    "law": { "type": "string", "minLength": 8 },
+    "observations": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "capability_id",
+          "display_name",
+          "classification",
+          "origin",
+          "observed_consumers",
+          "evidence",
+          "lineage",
+          "dependencies",
+          "divergence",
+          "confidence_basis",
+          "status",
+          "human_review"
+        ],
+        "properties": {
+          "capability_id": { "type": "string", "minLength": 1, "maxLength": 128 },
+          "display_name": { "type": "string", "minLength": 1, "maxLength": 256 },
+          "classification": {
+            "type": "string",
+            "enum": [
+              "SHARED_DOCTRINE",
+              "SHARED_CONTRACT",
+              "SHARED_CAPABILITY_CANDIDATE",
+              "SHARED_SERVICE_CANDIDATE",
+              "KEEP_LOCAL",
+              "DIVERGED",
+              "HUMAN_REVIEW_REQUIRED",
+              "UNKNOWN"
+            ]
+          },
+          "origin": { "type": "string", "minLength": 1 },
+          "observed_consumers": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": ["id", "evidence"],
+              "properties": {
+                "id": { "type": "string" },
+                "evidence": { "type": "string" }
+              }
+            }
+          },
+          "evidence": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": ["path", "note"],
+              "properties": {
+                "path": { "type": "string" },
+                "note": { "type": "string" }
+              }
+            }
+          },
+          "lineage": { "type": "string" },
+          "dependencies": {
+            "type": "array",
+            "items": { "type": "string" }
+          },
+          "divergence": { "type": "string" },
+          "confidence_basis": {
+            "type": "string",
+            "enum": [
+              "HIGH_EVIDENCE_ALIGNMENT",
+              "PARTIAL_EVIDENCE",
+              "INSUFFICIENT_EVIDENCE",
+              "CONFLICTING_EVIDENCE",
+              "UNKNOWN"
+            ]
+          },
+          "status": {
+            "type": "string",
+            "enum": [
+              "OBSERVED",
+              "SOURCE_NOT_AVAILABLE",
+              "IDENTITY_RECONCILIATION_REQUIRED",
+              "HUMAN_REVIEW_REQUIRED",
+              "UNKNOWN"
+            ]
+          },
+          "human_review": { "type": "boolean" }
+        }
+      }
+    },
+    "role_map": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["role", "existing_class", "maps_to", "evidence"],
+        "properties": {
+          "role": {
+            "type": "string",
+            "enum": [
+              "ROOTKEEPER",
+              "LINEAGE",
+              "DEPENDENCY",
+              "DIVERGENCE",
+              "CUSTODIAN",
+              "BOUNDARY",
+              "RECONCILIATION",
+              "IMPACT"
+            ]
+          },
+          "existing_class": {
+            "type": "string",
+            "enum": [
+              "EXISTING_CAPABILITY",
+              "PARTIAL_EXISTING_CAPABILITY",
+              "NO_EXISTING_CAPABILITY",
+              "HUMAN_ONLY"
+            ]
+          },
+          "maps_to": { "type": "string" },
+          "evidence": { "type": "string" }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,290 @@
+{
+  "schema": "z_shared_roots_registry_v1",
+  "phase": "Z-SRM-OBSERVE-1",
+  "law": "Similarity is observation. Sharing requires evidence. Canonicalisation requires authority. Z-SRM consumes Atlas/SEIF/Crystal/ZSX; it is not a second Atlas.",
+  "observations": [
+    {
+      "capability_id": "srm.legal-evidence-doctrine",
+      "display_name": "Legal / evidence doctrine",
+      "classification": "KEEP_LOCAL",
+      "origin": "hypothesis: legal/evidence stack as multi-project shared root",
+      "observed_consumers": [
+        { "id": "root.z-sanctuary-universe", "evidence": "hub legal ops registry and workstation live in this repo" }
+      ],
+      "evidence": [
+        { "path": "docs/Z_LEGAL_EVIDENCE_CORE.md", "note": "hub proof-first legal evidence concept" },
+        { "path": "data/z_legal_ops_registry.json", "note": "legal ops concept registry" },
+        { "path": "data/z_legal_workstation_stack_registry.json", "note": "workstation stack registry" }
+      ],
+      "lineage": "Z-LEGAL-OPS-1 and later workstation slices on hub main",
+      "dependencies": ["docs/Z_LEGAL_EVIDENCE_CORE.md"],
+      "divergence": "Isolated-base evidence is hub-local. No sibling-project legal stack is proven from hub files alone. Similar names elsewhere would be DUPLICATE_NAME, not SHARED_DOCTRINE.",
+      "confidence_basis": "HIGH_EVIDENCE_ALIGNMENT",
+      "status": "OBSERVED",
+      "human_review": false
+    },
+    {
+      "capability_id": "srm.signal-vocabulary",
+      "display_name": "Hub observer signal vocabulary",
+      "classification": "SHARED_DOCTRINE",
+      "origin": "hypothesis: RED/BLUE/YELLOW/GREEN (and kin) as shared observer language",
+      "observed_consumers": [
+        { "id": "scripts/z_crystal_dna_drift_check.mjs", "evidence": "Crystal DNA drift signals" },
+        { "id": "scripts/z_cycle_observe_status.mjs", "evidence": "Cycle Observe rollup" },
+        { "id": "scripts/z_traffic_minibots_status.mjs", "evidence": "Traffic tower" }
+      ],
+      "evidence": [
+        { "path": "docs/Z_CYCLE_OBSERVE_SYSTEM.md", "note": "observer signal doctrine" },
+        { "path": "scripts/z_crystal_dna_drift_check.mjs", "note": "SIGNAL_ORDER includes BLUE/HOLD" },
+        { "path": "docs/Z_TRAFFIC_MINIBOTS.md", "note": "traffic GREEN/hold language" }
+      ],
+      "lineage": "hub observer family; not a runtime service",
+      "dependencies": [],
+      "divergence": "Vocabulary is SHARED_DOCTRINE inside the hub. Sibling-repo adoption is not measured (PC-wide scan forbidden). SHARED_DOCTRINE ≠ shared implementation.",
+      "confidence_basis": "PARTIAL_EVIDENCE",
+      "status": "OBSERVED",
+      "human_review": true
+    },
+    {
+      "capability_id": "srm.topology-awareness",
+      "display_name": "Organism topology awareness (Atlas)",
+      "classification": "KEEP_LOCAL",
+      "origin": "hypothesis: topology awareness as a shared capability to extract",
+      "observed_consumers": [
+        { "id": "gate.atlas-0-5", "evidence": "Atlas Phase 0.5 registry is the topology map" }
+      ],
+      "evidence": [
+        { "path": "docs/z_atlas/Z_ATLAS_CONSTITUTION.md", "note": "Atlas maps what exists" },
+        { "path": "data/z_atlas/z_atlas_registry_v0_5.json", "note": "machine-readable topology; not machine-authoritative" }
+      ],
+      "lineage": "Z-ATLAS-0 / 0.5 on origin/main",
+      "dependencies": ["data/z_atlas/z_atlas_registry_v0_5.json"],
+      "divergence": "Atlas already occupies topology. Extracting a second topology brain would be duplication. SRM consumes Atlas; it does not redefine nodes or edges.",
+      "confidence_basis": "HIGH_EVIDENCE_ALIGNMENT",
+      "status": "OBSERVED",
+      "human_review": false
+    },
+    {
+      "capability_id": "srm.seif-capability-inventory",
+      "display_name": "SEIF anti-duplication / capability awareness",
+      "classification": "KEEP_LOCAL",
+      "origin": "hypothesis: capability inventory as an SRM field",
+      "observed_consumers": [
+        { "id": "docs/z_seif/Z_SEIF_CONSTITUTION.md", "evidence": "SEIF constitution on base" }
+      ],
+      "evidence": [
+        { "path": "docs/z_seif/Z_SEIF_CONSTITUTION.md", "note": "projects remain sovereign; Atlas knows where they are" },
+        { "path": "docs/z_seif/Z_SEIF_PLATFORM_CAPABILITY_ATLAS.md", "note": "platform capability atlas" },
+        { "path": "docs/z_seif/Z_SEIF_EXISTING_CAPABILITY_RECONCILIATION.md", "note": "before BUILD, prove GAP" }
+      ],
+      "lineage": "Z-SEIF-0 architecture only",
+      "dependencies": ["docs/z_seif/Z_SEIF_CONSTITUTION.md"],
+      "divergence": "SEIF already answers capability-awareness. SRM must not create a parallel ontology. Note: SEIF cites PID contract and z_universe_project_registry.json as EXISTING; those paths are absent on this isolated base (CONFLICTING_EVIDENCE vs SEIF text — reported, not repaired).",
+      "confidence_basis": "PARTIAL_EVIDENCE",
+      "status": "OBSERVED",
+      "human_review": true
+    },
+    {
+      "capability_id": "srm.drift-observation",
+      "display_name": "Structural / path drift observation",
+      "classification": "KEEP_LOCAL",
+      "origin": "hypothesis: drift observation as shared multi-project root",
+      "observed_consumers": [
+        { "id": "scripts/z_crystal_dna_drift_check.mjs", "evidence": "Crystal DNA drift observer" }
+      ],
+      "evidence": [
+        { "path": "data/z_crystal_dna_asset_manifest.json", "note": "Crystal DNA asset manifest" },
+        { "path": "scripts/z_crystal_dna_drift_check.mjs", "note": "writes only drift reports" }
+      ],
+      "lineage": "Z-CRYSTAL-DNA drift observer",
+      "dependencies": ["data/z_crystal_dna_asset_manifest.json"],
+      "divergence": "Hub-scoped observer. Not evidence that sibling projects share Crystal DNA runtime.",
+      "confidence_basis": "HIGH_EVIDENCE_ALIGNMENT",
+      "status": "OBSERVED",
+      "human_review": false
+    },
+    {
+      "capability_id": "srm.duplicate-path-observation",
+      "display_name": "Duplicate / path / similarity observation",
+      "classification": "SHARED_CAPABILITY_CANDIDATE",
+      "origin": "hypothesis: duplicate-path observation as a shared organ",
+      "observed_consumers": [
+        { "id": "scripts/z_car2_scan.mjs", "evidence": "CAR2 similarity scan" },
+        { "id": "docs/root-discovery-audit/DUPLICATES_AND_OVERLAPS.md", "evidence": "root discovery duplicate audit" }
+      ],
+      "evidence": [
+        { "path": "docs/root-discovery-audit/DUPLICATES_AND_OVERLAPS.md", "note": "DUPLICATE_NAME / path collisions; not byte-identity" },
+        { "path": "scripts/z_car2_scan.mjs", "note": "similarity scan — SEMANTIC_SIMILARITY / SIMILAR_STRUCTURE, not extraction" }
+      ],
+      "lineage": "root-discovery-audit + CAR2",
+      "dependencies": [],
+      "divergence": "Duplicate audit ≠ shared implementation. DUPLICATE_NAME and SIMILAR_STRUCTURE remain distinct from SHARED_CAPABILITY_CANDIDATE until human review.",
+      "confidence_basis": "PARTIAL_EVIDENCE",
+      "status": "OBSERVED",
+      "human_review": true
+    },
+    {
+      "capability_id": "srm.minibot-observer-responsibilities",
+      "display_name": "MiniBot / observer responsibilities",
+      "classification": "KEEP_LOCAL",
+      "origin": "hypothesis: eight new MiniBot engines for SRM roles",
+      "observed_consumers": [
+        { "id": "scripts/z_traffic_minibots_status.mjs", "evidence": "traffic tower minibots" }
+      ],
+      "evidence": [
+        { "path": "docs/Z_TRAFFIC_MINIBOTS.md", "note": "read-only traffic tower; does not auto-fix" },
+        { "path": "scripts/z_traffic_minibots_status.mjs", "note": "existing minibot runner" }
+      ],
+      "lineage": "ZTR-1 traffic minibots",
+      "dependencies": ["docs/Z_TRAFFIC_MINIBOTS.md"],
+      "divergence": "Logical SRM roles map onto existing observers. Creating eight new engines would duplicate Traffic / Cycle Observe / Crystal DNA / Fusion Map.",
+      "confidence_basis": "HIGH_EVIDENCE_ALIGNMENT",
+      "status": "OBSERVED",
+      "human_review": false
+    },
+    {
+      "capability_id": "srm.graph-display-capability",
+      "display_name": "Graph / related-evidence display",
+      "classification": "SHARED_CAPABILITY_CANDIDATE",
+      "origin": "hypothesis: evidence-graph display as a future shared organ (not CaseGraph this slice)",
+      "observed_consumers": [
+        { "id": "docs/LAWGRID_1A_GOVERNANCE_OBSERVATORY.md", "evidence": "governance observatory" },
+        { "id": "docs/dashboard/Z_UNIVERSE_WORKSTATION_NAVIGATOR.md", "evidence": "NAV-1 read-only cockpit" }
+      ],
+      "evidence": [
+        { "path": "docs/LAWGRID_1A_GOVERNANCE_OBSERVATORY.md", "note": "read-only governance observatory" },
+        { "path": "docs/dashboard/Z_UNIVERSE_WORKSTATION_NAVIGATOR.md", "note": "NAV-1 visibility only; no execution" }
+      ],
+      "lineage": "existing read-only surfaces; CaseGraph CLOSED this phase",
+      "dependencies": [],
+      "divergence": "Multiple display surfaces exist. That is SIMILAR_STRUCTURE / DUPLICATE_NAME risk, not proof of a shared evidence-graph organ. CaseGraph is not authorized here and is not declared the solution.",
+      "confidence_basis": "INSUFFICIENT_EVIDENCE",
+      "status": "HUMAN_REVIEW_REQUIRED",
+      "human_review": true
+    },
+    {
+      "capability_id": "srm.project-identity-consumption",
+      "display_name": "Project identity consumption",
+      "classification": "HUMAN_REVIEW_REQUIRED",
+      "origin": "hypothesis: one identity contract consumed by all project organisms",
+      "observed_consumers": [
+        { "id": "eirmind-ireland-projects-missing", "evidence": "pc_root row with empty path" },
+        { "id": "sister-aisling-sol", "evidence": "pc_root member path Z-Sister Aisling Sol" },
+        { "id": "pointer.missing.eirmind-ireland-projects", "evidence": "Atlas missing pointer" },
+        { "id": "root.z-sister-aisling-sol", "evidence": "Atlas root node" }
+      ],
+      "evidence": [
+        { "path": "data/z_pc_root_projects.json", "note": "canonical pc_root identity registry on this base" },
+        { "path": "data/z_module_manifest.json", "note": "module manifest" },
+        { "path": "data/z_atlas/z_atlas_registry_v0_5.json", "note": "Atlas identityStatus is navigational, not canonical identity" },
+        { "path": "docs/root-discovery-audit/EIRMIND_ALIGNMENT_DECISION.md", "note": "Hold pending AMK; do not silently rehome" }
+      ],
+      "lineage": "pc_root + Atlas; PID contract file cited by SEIF is not on this base",
+      "dependencies": ["data/z_pc_root_projects.json"],
+      "divergence": "ÉirMind vs Sister Aisling Sol: two registry identities, one missing path, Hold pending AMK. IDENTITY_RECONCILIATION_REQUIRED. Do not merge. data/z_universe_project_registry.json is absent (OTF already recorded this).",
+      "confidence_basis": "CONFLICTING_EVIDENCE",
+      "status": "IDENTITY_RECONCILIATION_REQUIRED",
+      "human_review": true
+    },
+    {
+      "capability_id": "srm.zsx-cross-project-catalog",
+      "display_name": "ZSX cross-project capability catalog",
+      "classification": "SHARED_CONTRACT",
+      "origin": "existing ZSX-1 index — consume, do not fork",
+      "observed_consumers": [
+        { "id": "data/z_cross_project_capability_index.json", "evidence": "hub catalog; source projects own truth" }
+      ],
+      "evidence": [
+        { "path": "data/z_cross_project_capability_index.json", "note": "reference-only; shared_component_package is future-gated" },
+        { "path": "docs/cross-project/Z_CROSS_PROJECT_CAPABILITY_SYNC.md", "note": "ZSX sync doctrine" },
+        { "path": "scripts/z_cross_project_capability_sync.mjs", "note": "validator; does not extract packages" }
+      ],
+      "lineage": "ZSX-1",
+      "dependencies": ["data/z_cross_project_capability_index.json"],
+      "divergence": "Catalog acknowledgement ≠ entitlement ≠ shared implementation. SRM observes sharing candidates; ZSX remains the catalog contract. Do not create a second capability index.",
+      "confidence_basis": "HIGH_EVIDENCE_ALIGNMENT",
+      "status": "OBSERVED",
+      "human_review": false
+    },
+    {
+      "capability_id": "srm.pid-cldo-engine",
+      "display_name": "PID / CLDO logical-asset lineage engine",
+      "classification": "UNKNOWN",
+      "origin": "unmerged PID/CLDO worktree evidence is not canonical on this base",
+      "observed_consumers": [],
+      "evidence": [
+        { "path": "docs/z_seif/Z_SEIF_EXISTING_CAPABILITY_RECONCILIATION.md", "note": "SEIF marks CLDO PARTIAL / not on base; PID contract path cited as EXISTING but file is absent here" }
+      ],
+      "lineage": "not landed on isolated origin/main",
+      "dependencies": [],
+      "divergence": "PID_CLDO_CANONICAL_STATUS: NOT_ON_BASE. Do not copy or infer landing. SEIF text vs missing PID contract file is CONFLICTING_EVIDENCE — reported only.",
+      "confidence_basis": "INSUFFICIENT_EVIDENCE",
+      "status": "SOURCE_NOT_AVAILABLE",
+      "human_review": true
+    },
+    {
+      "capability_id": "srm.rns-foundation",
+      "display_name": "Z-RNS Foundation / Cause→Effect canvas",
+      "classification": "UNKNOWN",
+      "origin": "unsealed RNS residue must not be pretended sealed",
+      "observed_consumers": [],
+      "evidence": [],
+      "lineage": "not a sealed main-chain capability on this base",
+      "dependencies": [],
+      "divergence": "RNS FOUNDATION-1 / 1A / Cause→Effect Canvas are CLOSED / UNRECONCILED. Absence of foundation files → SOURCE_NOT_AVAILABLE. Do not invent GREEN.",
+      "confidence_basis": "UNKNOWN",
+      "status": "SOURCE_NOT_AVAILABLE",
+      "human_review": true
+    }
+  ],
+  "role_map": [
+    {
+      "role": "ROOTKEEPER",
+      "existing_class": "EXISTING_CAPABILITY",
+      "maps_to": "Z-Atlas registry + data/z_pc_root_projects.json",
+      "evidence": "docs/z_atlas/Z_ATLAS_CONSTITUTION.md; data/z_atlas/z_atlas_registry_v0_5.json; data/z_pc_root_projects.json"
+    },
+    {
+      "role": "LINEAGE",
+      "existing_class": "PARTIAL_EXISTING_CAPABILITY",
+      "maps_to": "Atlas nodes/facts + root-discovery-audit; CLDO engine not on base",
+      "evidence": "docs/z_atlas/Z_ATLAS_SEED_INVENTORY.md; docs/root-discovery-audit/ROOT_PROJECT_REGISTRY.md; PID_CLDO_CANONICAL_STATUS NOT_ON_BASE"
+    },
+    {
+      "role": "DEPENDENCY",
+      "existing_class": "PARTIAL_EXISTING_CAPABILITY",
+      "maps_to": "Atlas edges + module manifest + ZSX capability index",
+      "evidence": "data/z_atlas/z_atlas_registry_v0_5.json; data/z_module_manifest.json; data/z_cross_project_capability_index.json"
+    },
+    {
+      "role": "DIVERGENCE",
+      "existing_class": "EXISTING_CAPABILITY",
+      "maps_to": "Crystal DNA drift + CAR2 + duplicates audit",
+      "evidence": "scripts/z_crystal_dna_drift_check.mjs; scripts/z_car2_scan.mjs; docs/root-discovery-audit/DUPLICATES_AND_OVERLAPS.md"
+    },
+    {
+      "role": "CUSTODIAN",
+      "existing_class": "PARTIAL_EXISTING_CAPABILITY",
+      "maps_to": "GitHub Sanctuary Gate + canonical control root; human merge/custody",
+      "evidence": "docs/Z-GITHUB-SANCTUARY-GATE.md; docs/Z_SANCTUARY_CANONICAL_CONTROL_ROOT.md"
+    },
+    {
+      "role": "BOUNDARY",
+      "existing_class": "EXISTING_CAPABILITY",
+      "maps_to": "SEIF data/authority boundaries + legal safety + visual automation boundary",
+      "evidence": "docs/z_seif/Z_SEIF_DATA_AND_AUTHORITY_BOUNDARIES.md; docs/Z_LEGAL_OPS_SAFETY_AND_BOUNDARY_POLICY.md; data/z_visual_automation_boundary.json"
+    },
+    {
+      "role": "RECONCILIATION",
+      "existing_class": "EXISTING_CAPABILITY",
+      "maps_to": "Z-AI-FUSION-MAP (hub AI lanes) + SEIF existing-capability reconciliation + Z-OTF overlap matrix",
+      "evidence": "docs/Z_AI_FUSION_CAPABILITY_MAP.md; docs/z_seif/Z_SEIF_EXISTING_CAPABILITY_RECONCILIATION.md; docs/z_otf/Z_OTF_REUSE_AND_OVERLAP_MATRIX.md"
+    },
+    {
+      "role": "IMPACT",
+      "existing_class": "PARTIAL_EXISTING_CAPABILITY",
+      "maps_to": "Cycle Observe task queue (suggest only) + deployment readiness overseer; execution remains HUMAN_ONLY",
+      "evidence": "docs/Z_CYCLE_OBSERVE_SYSTEM.md; docs/Z_DEPLOYMENT_READINESS_OVERSEER.md"
+    }
+  ]
+}

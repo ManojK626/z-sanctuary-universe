@@ -4,6 +4,8 @@ Compact entry points for **read-only** hub registries and AMK-facing evidence. F
 
 **Z-SEIF-0** (architecture only · no runtime · no Cloudflare mutation): [z_seif/Z_SEIF_CONSTITUTION.md](z_seif/Z_SEIF_CONSTITUTION.md) · index [z_seif/README.md](z_seif/README.md) · receipt [z_seif/Z_SEIF_PHASE_0_RECEIPT.md](z_seif/Z_SEIF_PHASE_0_RECEIPT.md)
 
+**Z-SRM-OBSERVE-1** (read-only shared-root observer · no extraction · no canonicalisation): [Z_SHARED_ROOTS_MESH.md](Z_SHARED_ROOTS_MESH.md) · receipt [PHASE_Z_SRM_OBSERVE_1_GREEN_RECEIPT.md](PHASE_Z_SRM_OBSERVE_1_GREEN_RECEIPT.md) · `npm run z:srm:observe`
+
 | Slice | Doc | Command |
 | ------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------- | ----------------------------------- |
 | Z-SSWS-LINK-1 workspace launch requirements | [Z_SSWS_WORKSPACE_SPINE.md](Z_SSWS_WORKSPACE_SPINE.md) | `npm run z:ssws:requirements` |
@@ -18,6 +20,8 @@ Compact entry points for **read-only** hub registries and AMK-facing evidence. F
 | Z-UIL-1 universal interaction language (ecosystem identity) | [design/Z_UNIVERSAL_INTERACTION_LANGUAGE.md](design/Z_UNIVERSAL_INTERACTION_LANGUAGE.md) | — |
 | LAWGRID-1A governance observatory (read-only) | [LAWGRID_1A_GOVERNANCE_OBSERVATORY.md](LAWGRID_1A_GOVERNANCE_OBSERVATORY.md) | — |
 | LAWGRID-1A green receipt | [PHASE_LAWGRID_1A_GREEN_RECEIPT.md](PHASE_LAWGRID_1A_GREEN_RECEIPT.md) | — |
+| Z-SRM-OBSERVE-1 shared roots observer | [Z_SHARED_ROOTS_MESH.md](Z_SHARED_ROOTS_MESH.md) | `npm run z:srm:observe` |
+| Z-SRM-OBSERVE-1 green receipt | [PHASE_Z_SRM_OBSERVE_1_GREEN_RECEIPT.md](PHASE_Z_SRM_OBSERVE_1_GREEN_RECEIPT.md) | — |
 | Z-FUTURE-1 civilizational foresight (Z-PPPFA / MSOAI / FUMCR) | [foresight/Z_CIVILIZATION_FORESIGHT_SAFETY_LAW.md](foresight/Z_CIVILIZATION_FORESIGHT_SAFETY_LAW.md) | — |
 | Z-FUTURE-1 green receipt | [foresight/PHASE_Z_FUTURE_1_GREEN_RECEIPT.md](foresight/PHASE_Z_FUTURE_1_GREEN_RECEIPT.md) | — |
 | Z ecosystem coherence Zuno seed | [Z_ECOSYSTEM_COHERENCE_ZUNO_SEED.md](Z_ECOSYSTEM_COHERENCE_ZUNO_SEED.md) | — |
