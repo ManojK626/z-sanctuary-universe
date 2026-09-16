@@ -11,7 +11,8 @@
 ## Alignment pass (2026-06-11)
 
 - [ROOT_ALIGNMENT_DELTA_REPORT.md](ROOT_ALIGNMENT_DELTA_REPORT.md) — before/after, uncertainties, AMK gates  
-- [EIRMIND_ALIGNMENT_DECISION.md](EIRMIND_ALIGNMENT_DECISION.md) — ÉirMind hold + rehome recommendation  
+- [EIRMIND_ALIGNMENT_DECISION.md](EIRMIND_ALIGNMENT_DECISION.md) — ÉirMind June-11 hold + **2026-09-16 steward identity polarity**
+- [Z_EIRMIND_IDENTITY_RECONCILIATION_1_RECEIPT.md](Z_EIRMIND_IDENTITY_RECONCILIATION_1_RECEIPT.md) — metadata-only seal (no deploy)  
 
 ## Supporting reports
 

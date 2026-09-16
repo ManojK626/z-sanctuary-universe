@@ -15,7 +15,7 @@
 
 | Concept A | Concept B | Overlap | Consolidation note |
 | --------- | --------- | ------- | ------------------ |
-| **ÉirMind** | **Z-Sister Aisling Sol** | Magical AI / lineage | ÉirMind missing; Aisling Sol on disk — clarify canonical |
+| **ÉirMind** | **Z-Sister Aisling Sol** | Magical AI / lineage | 2026-06-11: ÉirMind path missing; Aisling Sol on disk. **2026-09-16:** not two projects — ÉirMind=organism; folder=`Z-Sister Aisling Sol`; persona=Sister Aisling-Sol |
 | **Z-Sanctuary Gem / G** | **Z-OMNI-Sanctuary** | Multiple “sanctuary” apps | Map purpose per folder; avoid merge without charter |
 | **ZILWA tourism** | **Z-Tourism strategist card** | Tourism doctrine | Z-Tourism has no standalone pack |
 | **Z-PEE / Z-EarthConscience** | **ZILWA env exhibits** | Environmental ethics | Pilot vs cultural tourism — keep lanes separate |
@@ -29,14 +29,14 @@
 
 | Registry name | Expected path | Disk 2026-06-11 |
 | ------------- | ------------- | --------------- |
-| Ireland Projects (ÉirMind) | `Ireland Projects` | **Missing** |
+| Ireland Projects (ÉirMind) | `Ireland Projects` | **Missing path** (legacy pointer; organism not absent) |
 | Amk-Goku Dashboards 2 | `Amk-Goku Dashboards 2` | **Missing** from root scan |
 | AT PB Copilot | `AT PB Copilot` | **Missing** (use Princess&Blackie folder) |
 | Hub | `ZSanctuary_Universe` | **Retired stub** — active hub `Z_Sanctuary_Universe` |
 
 ## Possible consolidations (human-gated — not executed)
 
-1. Merge ÉirMind reference into **Z-Sister Aisling Sol** manifest or restore Ireland folder.  
+1. Do **not** merge, rename, or restore Ireland folder in this gate. 2026-09-16 polarity: one physical root, persona preserved, pointer remains path-missing.  
 2. Single **Aimanity** canonical path under Skyscraper vs standalone folder.  
 3. Update `z_pc_root_projects.json` hub path to `Z_Sanctuary_Universe`.  
 4. Retired stub documented in registry — **folder not deleted** (ROOT_ALIGNMENT_PASS).
