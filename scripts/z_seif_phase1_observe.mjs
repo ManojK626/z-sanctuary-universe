@@ -2,13 +2,14 @@
 /**
  * Z-SEIF-1-READ-ONLY-OBSERVER-THIN-SLICE-1
  * Local-first Z-Sanctuary self-observation. No registry, schema, persistence,
- * Cloudflare API, GitHub API, or product-tree reads.
+ * Cloudflare API, or product-tree reads. GitHub GET is opt-in via --github-public.
  */
 import fs from 'node:fs';
 import path from 'node:path';
 import { createHash } from 'node:crypto';
 import { spawnSync } from 'node:child_process';
 import { fileURLToPath } from 'node:url';
+import { parseObserveArgs, readGithubPublicEvidence } from './z_seif_github_public_evidence.mjs';
 
 export const EVIDENCE_CLASS = Object.freeze({
   CANONICAL_AUTHORITY: 'CANONICAL_AUTHORITY',
@@ -314,6 +315,22 @@ export function formatReport(result) {
     '',
     `EXPECTED_REPOSITORY: ${result.expectedRepository}`,
     `REPOSITORY_MATCH: ${result.repositoryMatch}`,
+    `LOCAL_REMOTE_PROVIDER_CONSISTENCY: ${result.localRemoteProviderConsistency}`,
+    '',
+    `GITHUB_API_READ: ${result.githubApiRead}`,
+    `GITHUB_AUTH_MODE: ${result.githubAuthMode}`,
+    `GITHUB_PROBE_TARGET: ${result.githubProbeTarget}`,
+    `OBSERVED_GITHUB_REPOSITORY: ${result.observedGithubRepository}`,
+    `OBSERVED_GITHUB_VISIBILITY: ${result.observedGithubVisibility}`,
+    `OBSERVED_GITHUB_ARCHIVED: ${result.observedGithubArchived}`,
+    `OBSERVED_DEFAULT_BRANCH: ${result.observedDefaultBranch}`,
+    `OBSERVED_REMOTE_BRANCH_SHA: ${result.observedRemoteBranchSha}`,
+    `OBSERVED_LOCAL_HEAD_REMOTE_EXISTENCE: ${result.observedLocalHeadRemoteExistence}`,
+    `OBSERVED_REMOTE_COMMIT_SHA: ${result.observedRemoteCommitSha}`,
+    `OBSERVED_WORKFLOW_RUNS: ${result.observedWorkflowRuns}`,
+    `OBSERVED_WORKFLOW_STATE: ${result.observedWorkflowState}`,
+    `GITHUB_RATE_LIMIT_REMAINING: ${result.githubRateLimitRemaining}`,
+    `GITHUB_OBSERVED_AT: ${result.githubObservedAt}`,
     '',
     `ATLAS_GATE_STATE: ${result.atlasGateState}`,
     `ATLAS_HEALTH_STATE: ${result.atlasHealthState}`,
@@ -335,9 +352,10 @@ export function formatReport(result) {
   ].join('\n');
 }
 
-export function observe(options = {}) {
+export async function observe(options = {}) {
   const hubRoot = path.resolve(options.hubRoot || discoverHubRoot(process.cwd()));
   const observedAt = options.observedAt || new Date().toISOString();
+  const githubPublic = Boolean(options.githubPublic);
   const signals = [];
   const conflicts = [];
   const unknownItems = [];
@@ -382,12 +400,47 @@ export function observe(options = {}) {
   const productionAuthority = readProductionAuthority(hubRoot);
   if (productionAuthority === 'UNKNOWN') unknownItems.push('PRODUCTION_AUTHORITY');
 
+  let github = {
+    githubApiRead: 'NOT_ATTEMPTED',
+    githubAuthMode: 'PUBLIC_UNAUTHENTICATED_GET',
+    githubProbeTarget: 'ManojK626/z-sanctuary-universe',
+    observedGithubRepository: 'UNKNOWN',
+    observedGithubVisibility: 'UNKNOWN',
+    observedGithubArchived: 'UNKNOWN',
+    observedDefaultBranch: 'UNKNOWN',
+    observedRemoteBranchSha: 'UNKNOWN',
+    observedLocalHeadRemoteExistence: 'UNKNOWN',
+    observedRemoteCommitSha: 'UNKNOWN',
+    observedWorkflowRuns: 'UNKNOWN',
+    observedWorkflowState: 'UNKNOWN',
+    githubObservedAt: 'NOT_ATTEMPTED',
+    githubRateLimitRemaining: 'UNKNOWN',
+    githubReason: 'NOT_ATTEMPTED',
+    githubAuthorityClass: 'OBSERVED_PROVIDER_EVIDENCE',
+    localRemoteProviderConsistency: 'UNKNOWN',
+    parseFailed: false,
+    requests: [],
+    signal: null,
+  };
+  if (githubPublic) {
+    github = await readGithubPublicEvidence({
+      originRemote,
+      localHead: gitEv.head,
+      fetchImpl: options.fetchImpl || globalThis.fetch,
+      observedAt,
+    });
+    if (github.signal) signals.push(github.signal);
+    if (github.githubApiRead === 'UNAVAILABLE' || github.githubReason === 'NOT_FOUND_OR_NOT_VISIBLE') {
+      unknownItems.push('GITHUB_PROVIDER_STATE');
+    }
+  }
+
   const uniqueSignals = [...new Set(signals)];
   const uniqueUnknown = [...new Set(unknownItems)];
   const uniqueConflicts = [...new Set(conflicts)];
 
   const result = {
-    ok: !identity.parseFailed && !identity.missingAtlas,
+    ok: !identity.parseFailed && !identity.missingAtlas && !github.parseFailed,
     projectIdentity: identity.identity,
     identitySource: identity.identitySource,
     localRepository: path.basename(hubRoot),
@@ -413,7 +466,25 @@ export function observe(options = {}) {
     observedAt,
     universeRegistryUsed: false,
     cloudflareLiveRead: 'NOT_ATTEMPTED',
-    githubLiveApi: 'NOT_REQUIRED',
+    githubLiveApi: github.githubApiRead,
+    githubApiRead: github.githubApiRead,
+    githubAuthMode: github.githubAuthMode,
+    githubProbeTarget: github.githubProbeTarget,
+    observedGithubRepository: github.observedGithubRepository,
+    observedGithubVisibility: github.observedGithubVisibility,
+    observedGithubArchived: github.observedGithubArchived,
+    observedDefaultBranch: github.observedDefaultBranch,
+    observedRemoteBranchSha: github.observedRemoteBranchSha,
+    observedLocalHeadRemoteExistence: github.observedLocalHeadRemoteExistence,
+    observedRemoteCommitSha: github.observedRemoteCommitSha,
+    observedWorkflowRuns: github.observedWorkflowRuns,
+    observedWorkflowState: github.observedWorkflowState,
+    githubObservedAt: github.githubObservedAt,
+    githubRateLimitRemaining: github.githubRateLimitRemaining,
+    githubReason: github.githubReason || 'NONE',
+    githubAuthorityClass: github.githubAuthorityClass,
+    localRemoteProviderConsistency: github.localRemoteProviderConsistency,
+    githubRequests: github.requests || [],
   };
 
   const report = formatReport(result);
@@ -432,7 +503,8 @@ function invokedDirectly() {
 }
 
 if (invokedDirectly()) {
-  const result = observe();
+  const flags = parseObserveArgs(process.argv.slice(2));
+  const result = await observe({ githubPublic: flags.githubPublic });
   process.stdout.write(`${result.report}\n`);
   process.exit(result.ok ? 0 : 1);
 }

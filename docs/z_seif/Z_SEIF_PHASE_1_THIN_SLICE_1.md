@@ -45,13 +45,14 @@ Recommended later docs-only gate (not opened here): `Z-SEIF-0-DOCS-EVIDENCE-RECO
 ## What this slice must not do
 
 - Create `data/z_seif/` or any Z-SEIF schema/registry
-- Query Cloudflare or GitHub APIs
+- Query Cloudflare APIs (still closed)
+- Query GitHub APIs unless `--github-public` (Thin Slice 2; public allowlisted hub only)
 - Read ZWheel or other sovereign product trees
 - Assign overall GREEN merely because local reads succeeded
 - Mutate Atlas, PID, Z-CLDO, Z-OTF, Guardian, HAM, or production
 
-## Next gate (decision only)
+## Next
 
-`Z-SEIF-1-GITHUB-EVIDENCE-READER-DECISION-1`
+Thin Slice 2 (implemented on this branch): [Z_SEIF_PHASE_1_THIN_SLICE_2.md](Z_SEIF_PHASE_1_THIN_SLICE_2.md)
 
-Decide whether a later slice may add GET-only GitHub API evidence for the public Z-Sanctuary repository. Cloudflare stays separate until credential posture is proven.
+Cloudflare remains closed until credential posture is proven.
