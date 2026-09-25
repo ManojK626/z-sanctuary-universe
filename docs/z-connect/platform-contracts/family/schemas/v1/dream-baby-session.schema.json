@@ -1,0 +1,36 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://z-sanctuary.local/z-connect/schemas/v1/dream-baby-session.json",
+  "title": "ZConnectDreamBabySession",
+  "description": "Creative AI session — entertainment only.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schemaVersion",
+    "sessionId",
+    "dreamBabyConsentId",
+    "entertainmentDisclaimer",
+    "createdAtIso"
+  ],
+  "properties": {
+    "schemaVersion": {
+      "$ref": "../../common/schemas/v1/_definitions.schema.json#/$defs/SchemaVersion"
+    },
+    "sessionId": {
+      "$ref": "../../common/schemas/v1/_definitions.schema.json#/$defs/Identifier"
+    },
+    "dreamBabyConsentId": {
+      "$ref": "../../common/schemas/v1/_definitions.schema.json#/$defs/Identifier"
+    },
+    "entertainmentDisclaimer": {
+      "type": "string",
+      "const": "This is an imaginative AI-generated creation for entertainment and inspiration. It is not a prediction of a real child's appearance."
+    },
+    "outputImage": {
+      "$ref": "../../common/schemas/v1/_definitions.schema.json#/$defs/ImageReference"
+    },
+    "createdAtIso": {
+      "$ref": "../../common/schemas/v1/_definitions.schema.json#/$defs/TimestampIso"
+    }
+  }
+}

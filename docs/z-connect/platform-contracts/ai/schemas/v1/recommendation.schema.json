@@ -1,0 +1,46 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://z-sanctuary.local/z-connect/schemas/v1/ai-recommendation.json",
+  "title": "ZConnectAiRecommendation",
+  "description": "Suggested next step — user must act explicitly.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schemaVersion",
+    "recommendationId",
+    "userId",
+    "actionHint",
+    "confidence",
+    "explanation",
+    "limitations",
+    "disclaimer"
+  ],
+  "properties": {
+    "schemaVersion": {
+      "$ref": "../../common/schemas/v1/_definitions.schema.json#/$defs/SchemaVersion"
+    },
+    "recommendationId": {
+      "$ref": "../../common/schemas/v1/_definitions.schema.json#/$defs/Identifier"
+    },
+    "userId": {
+      "$ref": "../../common/schemas/v1/_definitions.schema.json#/$defs/UserId"
+    },
+    "actionHint": {
+      "type": "string",
+      "maxLength": 500,
+      "description": "e.g. explore a conversation starter — not auto-execute"
+    },
+    "confidence": {
+      "$ref": "../../common/schemas/v1/_definitions.schema.json#/$defs/ConfidenceLevel"
+    },
+    "explanation": {
+      "$ref": "../../common/schemas/v1/_definitions.schema.json#/$defs/AiExplanation"
+    },
+    "limitations": {
+      "$ref": "../../common/schemas/v1/_definitions.schema.json#/$defs/AiLimitations"
+    },
+    "disclaimer": {
+      "$ref": "../../common/schemas/v1/_definitions.schema.json#/$defs/InsightDisclaimer"
+    }
+  }
+}

@@ -1,0 +1,110 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://z-sanctuary.local/z-connect/schemas/v1/definitions.json",
+  "title": "ZConnectCommonDefinitions",
+  "description": "Shared primitives for all Z-Connect v1 domain contracts.",
+  "$defs": {
+    "SchemaVersion": {
+      "type": "string",
+      "const": "v1",
+      "description": "Contract major version — see VERSIONING.md"
+    },
+    "Identifier": {
+      "type": "string",
+      "format": "uuid",
+      "description": "UUID identifier"
+    },
+    "UserId": {
+      "allOf": [{ "$ref": "#/$defs/Identifier" }],
+      "description": "User account identifier"
+    },
+    "TimestampIso": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "Locale": {
+      "type": "string",
+      "minLength": 2,
+      "maxLength": 12,
+      "description": "BCP 47 language tag e.g. en, en-GB, fr-MU"
+    },
+    "Metadata": {
+      "type": "object",
+      "additionalProperties": { "type": "string" },
+      "description": "String metadata map — no secrets or PII by convention"
+    },
+    "Pagination": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["limit", "offset"],
+      "properties": {
+        "limit": { "type": "integer", "minimum": 1, "maximum": 100 },
+        "offset": { "type": "integer", "minimum": 0 },
+        "cursor": { "type": "string" }
+      }
+    },
+    "ImageReference": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["imageId", "contentType"],
+      "properties": {
+        "imageId": { "$ref": "#/$defs/Identifier" },
+        "contentType": { "type": "string" },
+        "altText": { "type": "string" },
+        "storageKeyHint": {
+          "type": "string",
+          "description": "Implementation resolves — not a public URL in fixtures"
+        }
+      }
+    },
+    "ConfidenceLevel": {
+      "type": "string",
+      "enum": ["high", "medium", "limited", "learning"],
+      "description": "Connection Confidence vocabulary — explanatory, not a rank score"
+    },
+    "InsightDisclaimer": {
+      "type": "string",
+      "const": "This insight is probabilistic and preference-based. It is not objective truth or a guarantee of compatibility."
+    },
+    "SourceFieldRef": {
+      "type": "string",
+      "minLength": 1,
+      "description": "User-approved profile or journey field path e.g. profile.interests.music"
+    },
+    "EntertainmentLabel": {
+      "type": "string",
+      "const": "entertainment_not_scientific",
+      "description": "Required when optional astrology/numerology interest fields are used"
+    },
+    "AiExplanation": {
+      "type": "string",
+      "minLength": 1,
+      "description": "Plain-language explanation of why the AI surfaced this content"
+    },
+    "AiLimitations": {
+      "type": "array",
+      "items": { "type": "string", "minLength": 1 },
+      "minItems": 1,
+      "description": "What is unknown or not asserted"
+    },
+    "CorrelationId": {
+      "type": "string",
+      "minLength": 1
+    },
+    "RelationshipBranch": {
+      "type": "string",
+      "enum": [
+        "universal_soulmate",
+        "friendship",
+        "couples",
+        "family",
+        "community",
+        "events"
+      ]
+    },
+    "ConnectionStateEnum": {
+      "type": "string",
+      "enum": ["none", "requested", "pending", "connected", "paused", "blocked", "withdrawn"]
+    }
+  }
+}

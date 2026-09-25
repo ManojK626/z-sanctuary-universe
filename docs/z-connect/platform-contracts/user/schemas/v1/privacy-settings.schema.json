@@ -1,0 +1,43 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://z-sanctuary.local/z-connect/schemas/v1/user-privacy-settings.json",
+  "title": "ZConnectPrivacySettings",
+  "description": "Privacy-first visibility controls.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schemaVersion",
+    "userId",
+    "profileVisibility",
+    "updatedAtIso"
+  ],
+  "properties": {
+    "schemaVersion": {
+      "$ref": "../../common/schemas/v1/_definitions.schema.json#/$defs/SchemaVersion"
+    },
+    "userId": {
+      "$ref": "../../common/schemas/v1/_definitions.schema.json#/$defs/UserId"
+    },
+    "profileVisibility": {
+      "type": "string",
+      "enum": [
+        "private",
+        "connections_only",
+        "community",
+        "public_preview"
+      ]
+    },
+    "showOnlineStatus": {
+      "type": "boolean"
+    },
+    "allowDiscoveryJourney": {
+      "type": "boolean"
+    },
+    "allowInsightGeneration": {
+      "type": "boolean"
+    },
+    "updatedAtIso": {
+      "$ref": "../../common/schemas/v1/_definitions.schema.json#/$defs/TimestampIso"
+    }
+  }
+}

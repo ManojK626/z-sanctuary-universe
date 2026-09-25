@@ -1,0 +1,41 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://z-sanctuary.local/z-connect/schemas/v1/dream-baby-consent.json",
+  "title": "ZConnectDreamBabyConsent",
+  "description": "Explicit all-party consent for Dream Baby Studio.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schemaVersion",
+    "sessionId",
+    "participantUserIds",
+    "entertainmentDisclaimer",
+    "sharedExperienceConsentId",
+    "grantedAtIso"
+  ],
+  "properties": {
+    "schemaVersion": {
+      "$ref": "../../common/schemas/v1/_definitions.schema.json#/$defs/SchemaVersion"
+    },
+    "sessionId": {
+      "$ref": "../../common/schemas/v1/_definitions.schema.json#/$defs/Identifier"
+    },
+    "participantUserIds": {
+      "type": "array",
+      "items": {
+        "$ref": "../../common/schemas/v1/_definitions.schema.json#/$defs/UserId"
+      },
+      "minItems": 2
+    },
+    "entertainmentDisclaimer": {
+      "type": "string",
+      "const": "This is an imaginative AI-generated creation for entertainment and inspiration. It is not a prediction of a real child's appearance."
+    },
+    "sharedExperienceConsentId": {
+      "$ref": "../../common/schemas/v1/_definitions.schema.json#/$defs/Identifier"
+    },
+    "grantedAtIso": {
+      "$ref": "../../common/schemas/v1/_definitions.schema.json#/$defs/TimestampIso"
+    }
+  }
+}

@@ -1,0 +1,59 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://z-sanctuary.local/z-connect/schemas/v1/user-profile.json",
+  "title": "ZConnectUserProfile",
+  "description": "Versioned user profile — user-approved fields only.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schemaVersion",
+    "profileId",
+    "userId",
+    "displayName",
+    "profileVersion",
+    "approvedAtIso",
+    "updatedAtIso"
+  ],
+  "properties": {
+    "schemaVersion": {
+      "$ref": "../../common/schemas/v1/_definitions.schema.json#/$defs/SchemaVersion"
+    },
+    "profileId": {
+      "$ref": "../../common/schemas/v1/_definitions.schema.json#/$defs/Identifier"
+    },
+    "userId": {
+      "$ref": "../../common/schemas/v1/_definitions.schema.json#/$defs/UserId"
+    },
+    "displayName": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 120
+    },
+    "bio": {
+      "type": "string",
+      "maxLength": 2000
+    },
+    "locale": {
+      "$ref": "../../common/schemas/v1/_definitions.schema.json#/$defs/Locale"
+    },
+    "branchInterests": {
+      "type": "array",
+      "items": {
+        "$ref": "../../common/schemas/v1/_definitions.schema.json#/$defs/RelationshipBranch"
+      }
+    },
+    "profileVersion": {
+      "type": "integer",
+      "minimum": 1
+    },
+    "approvedAtIso": {
+      "$ref": "../../common/schemas/v1/_definitions.schema.json#/$defs/TimestampIso"
+    },
+    "updatedAtIso": {
+      "$ref": "../../common/schemas/v1/_definitions.schema.json#/$defs/TimestampIso"
+    },
+    "metadata": {
+      "$ref": "../../common/schemas/v1/_definitions.schema.json#/$defs/Metadata"
+    }
+  }
+}
