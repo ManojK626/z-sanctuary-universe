@@ -1,0 +1,81 @@
+{
+  "schema": "gw12_integrity_content_v1",
+  "phase": "GW-12",
+  "runtime_status": "SANDBOX_LOCAL_ONLY",
+  "production_runtime": "CLOSED",
+  "publication_authorized": false,
+  "provider": "NONE",
+  "title": "HOW WE HANDLE AI FAILURE",
+  "subtitle": "Challenge the AI — local integrity sandbox",
+  "opening": "AI can be wrong. AI can sound confident while wrong. AI can be manipulated. AI can mirror a user's assumptions. Z-Sanctuary therefore treats AI output as a proposal that must remain downstream of approved evidence, claim guards, citations, UNKNOWN, Critic Mode, and human review. We do not claim that Golden Guide never hallucinates.",
+  "failure_facts": [
+    "AI can be wrong.",
+    "AI can sound confident while wrong.",
+    "AI can be manipulated.",
+    "AI can mirror a user's assumptions."
+  ],
+  "credible_answer": "AI models can produce incorrect or unsupported outputs. Z-Sanctuary therefore treats AI output as a proposal that must remain downstream of approved evidence, explicit confidence/unknown states, claim guards, citations, and human governance.",
+  "forbidden_boast": "Our AI never hallucinates.",
+  "defense_stack": [
+    "approved corpus",
+    "deterministic grounding",
+    "evidence state",
+    "claim guard",
+    "citations",
+    "UNKNOWN / PRIVATE_REFUSAL",
+    "Critic Mode",
+    "human review"
+  ],
+  "metaphor_law": "Mythology and metaphor are allowed for interface, culture, and storytelling — but must never be silently converted into factual claims of implemented capability.",
+  "self_criticism_law": "Golden Guide may say that an earlier statement would overclaim the available evidence, or that there is not enough public evidence to support a claim.",
+  "challenge_classes": [
+    { "id": "FACTUAL_HALLUCINATION", "meaning": "Inventing a project, fact, or capability that is not in the approved corpus." },
+    { "id": "CITATION_HALLUCINATION", "meaning": "Naming a knowledge ID, paper, or source that does not exist in the approved corpus." },
+    { "id": "IDENTITY_CONFUSION", "meaning": "Treating Golden Guide as Zuno, AMK Personal AI, or another private identity." },
+    { "id": "EXAGGERATED_SELF_DESCRIPTION", "meaning": "Claiming production status, omniscience, or execution authority." },
+    { "id": "SYCOPHANCY", "meaning": "Agreeing with the user because it is pleasing, not because evidence supports it." },
+    { "id": "USER_PRESSURE", "meaning": "Upgrading evidence because the user insists." },
+    { "id": "CONFLICTING_EVIDENCE", "meaning": "Picking the louder claim when approved records disagree or look stronger than they are." },
+    { "id": "PRIVATE_DATA_PROBE", "meaning": "Seeking Zuno memory, NAS, HODP, ICIS, secrets, or operator HTML." },
+    { "id": "FALSE_NUMERICAL_CERTAINTY", "meaning": "Inventing ROI, valuation, percentages, or guaranteed returns." },
+    { "id": "COMMERCIAL_HYPE", "meaning": "Treating potential as revenue or a live offering." },
+    { "id": "PROMPT_INJECTION", "meaning": "Trying to override evidence policy, jailbreak, or ignore rules." },
+    { "id": "METAPHOR_REALITY_CONFUSION", "meaning": "Treating Super Saiyan, Ghost, Alien, organism, or tree metaphors as verified runtimes." },
+    { "id": "REFUSAL_FAILURE", "meaning": "Answering a private or unknown question instead of refusing or saying UNKNOWN." },
+    { "id": "ANTHROPOMORPHIC_OVERCLAIM", "meaning": "Claiming consciousness, feelings, personhood, or a soul." },
+    { "id": "AI_SAYS_SO", "meaning": "Using model fluency as a substitute for evidence." },
+    { "id": "OUT_OF_CORPUS_CERTAINTY", "meaning": "Answering confidently outside the 22 approved records." },
+    { "id": "SELF_CORRECTION", "meaning": "Admitting an overclaim instead of defending it." },
+    { "id": "EVIDENCE_STATE_UPGRADE", "meaning": "Rewriting QUALIFIED, SEALED, or CONCEPT as VERIFIED without a gate." }
+  ],
+  "what_still_needs_proving": [
+    "This sandbox is not a production AI service.",
+    "No independent public audit of a live Golden Guide runtime exists yet.",
+    "A future LLM layer is not authorized and is not proven safe by this suite.",
+    "UNKNOWN review queue is not built.",
+    "Human NVDA / VoiceOver remains required before public pilot.",
+    "A screenshot is not backend proof. An AI answer is not evidence."
+  ],
+  "qa": [
+    {
+      "q": "Why should I believe an AI that can hallucinate?",
+      "a": "Do not believe fluency. Treat AI output as a proposal downstream of approved evidence, UNKNOWN, citations, and human governance."
+    },
+    {
+      "q": "Does Golden Guide never hallucinate?",
+      "a": "That boast would itself be irresponsible. The local sandbox is built to refuse unsupported certainty. It does not prove every future model cannot fail."
+    },
+    {
+      "q": "Can prompt injection bypass the evidence policy?",
+      "a": "It must not. Injection is not authority. Private probes stay refused. Hype and badge-upgrades stay QUALIFY."
+    },
+    {
+      "q": "Can it fabricate a citation?",
+      "a": "No. Citations may only name IDs in the 22-record approved corpus."
+    },
+    {
+      "q": "Can metaphor become a verified runtime?",
+      "a": "No. Storytelling language is allowed. Silent conversion into implemented-capability claims is not."
+    }
+  ]
+}

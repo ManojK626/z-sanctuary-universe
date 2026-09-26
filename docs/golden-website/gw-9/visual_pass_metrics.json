@@ -1,0 +1,146 @@
+{
+  "generated_at": "2026-08-27T07:42:23.520Z",
+  "phase": "GW-9",
+  "findings": [
+    {
+      "ok": true,
+      "id": "sandbox-title",
+      "detail": ""
+    },
+    {
+      "ok": true,
+      "id": "cta",
+      "detail": ""
+    },
+    {
+      "ok": true,
+      "id": "local-preview",
+      "detail": ""
+    },
+    {
+      "ok": true,
+      "id": "local-evidence",
+      "detail": ""
+    },
+    {
+      "ok": true,
+      "id": "no-private",
+      "detail": ""
+    },
+    {
+      "ok": true,
+      "id": "no-exec",
+      "detail": ""
+    },
+    {
+      "ok": true,
+      "id": "no-provider",
+      "detail": ""
+    },
+    {
+      "ok": true,
+      "id": "not-zuno",
+      "detail": ""
+    },
+    {
+      "ok": true,
+      "id": "submit-44px",
+      "detail": ""
+    },
+    {
+      "ok": true,
+      "id": "textarea-44px",
+      "detail": ""
+    },
+    {
+      "ok": true,
+      "id": "skip-focus",
+      "detail": ""
+    },
+    {
+      "ok": true,
+      "id": "identity-not-zuno",
+      "detail": "No. Golden Guide AI is the public evidence navigator for the Golden Website. It is not Zuno, does not expose private Zun"
+    },
+    {
+      "ok": true,
+      "id": "live-region",
+      "detail": "Golden Guide answered with ANSWER. No. Golden Guide AI is the public evidence na"
+    },
+    {
+      "ok": true,
+      "id": "why-summary",
+      "detail": ""
+    },
+    {
+      "ok": true,
+      "id": "why-opens",
+      "detail": ""
+    },
+    {
+      "ok": true,
+      "id": "valuation-qualify",
+      "detail": "Current public-safe commercial posture is POTENTIAL_NOT_VALIDATED. Potential is not revenue. Limitation: Do not state current revenue, custo"
+    },
+    {
+      "ok": true,
+      "id": "no-invented-figure",
+      "detail": ""
+    },
+    {
+      "ok": true,
+      "id": "private-refusal",
+      "detail": "That information is not part of the approved public knowledge available to Golden Guide."
+    },
+    {
+      "ok": true,
+      "id": "no-private-detail",
+      "detail": ""
+    },
+    {
+      "ok": true,
+      "id": "overflow-sandbox-desktop",
+      "detail": ""
+    },
+    {
+      "ok": true,
+      "id": "overflow-sandbox-tablet",
+      "detail": ""
+    },
+    {
+      "ok": true,
+      "id": "overflow-sandbox-mobile",
+      "detail": ""
+    },
+    {
+      "ok": true,
+      "id": "external-calls",
+      "detail": ""
+    }
+  ],
+  "overflow": [
+    {
+      "file": "guide-sandbox.html",
+      "name": "desktop",
+      "width": 1440,
+      "height": 900,
+      "overflowX": false
+    },
+    {
+      "file": "guide-sandbox.html",
+      "name": "tablet",
+      "width": 768,
+      "height": 1024,
+      "overflowX": false
+    },
+    {
+      "file": "guide-sandbox.html",
+      "name": "mobile",
+      "width": 390,
+      "height": 844,
+      "overflowX": false
+    }
+  ],
+  "external_http_https": [],
+  "pass": true
+}
