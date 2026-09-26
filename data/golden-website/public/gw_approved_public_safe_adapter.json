@@ -1,0 +1,394 @@
+{
+  "schema": "gw_approved_public_safe_adapter_v1",
+  "phase": "GW-4A",
+  "sourced_from": "approved public-safe capsules (not Twin records, not private registries)",
+  "publication_authorized": false,
+  "twin_live_records": 0,
+  "local_shell_only": true,
+  "site": {
+    "name": "The Golden Website",
+    "subtitle": "Gateway to the Z-Sanctuary Universe",
+    "ecosystem": "Z-Sanctuary Universe",
+    "opening_line": "A governed multi-project AI development ecosystem."
+  },
+  "portfolio_disclaimer": "This preview contains only capabilities that have passed the current Golden Website public-safety review. Additional parts of the Universe remain behind evidence gates.",
+  "evidence_vocabulary": [
+    {
+      "id": "VERIFIED",
+      "meaning": "Public-facing independent verification of a Golden Website claim."
+    },
+    {
+      "id": "SEALED",
+      "meaning": "A named sanctuary slice receipt exists. Sealed is not deployed."
+    },
+    {
+      "id": "QUALIFIED",
+      "meaning": "Present and supported internally. Not proven, not production-ready, not commercially validated."
+    },
+    {
+      "id": "CONCEPT",
+      "meaning": "Vision or planned work. Must stay visibly concept."
+    },
+    {
+      "id": "HOLD",
+      "meaning": "Held. Not offered as a public capability."
+    },
+    {
+      "id": "CLOSED",
+      "meaning": "Closed. Not an active public capability."
+    }
+  ],
+  "evidence_vocabulary_note": "Evidence classification describes current support for a capability. It is not a quality badge, commercial rating, or deployment status.",
+  "locked_surfaces": [
+    {
+      "id": "golden-universe-map",
+      "name": "Full Golden Universe Map"
+    },
+    {
+      "id": "golden-guide-ai",
+      "name": "Golden Guide AI — production runtime"
+    },
+    {
+      "id": "portfolio-atlas",
+      "name": "Portfolio Atlas"
+    },
+    {
+      "id": "evidence-atlas",
+      "name": "Evidence Atlas"
+    },
+    {
+      "id": "human-planet-impact",
+      "name": "Human & Planet Impact"
+    },
+    {
+      "id": "business-industry",
+      "name": "Business & Industry"
+    },
+    {
+      "id": "partners-investors",
+      "name": "Partners & Investors — live offering / data room"
+    }
+  ],
+  "locked_label": "Coming through evidence gates",
+  "portfolio_groups": [
+    {
+      "id": "govern-verify",
+      "name": "Govern & Verify",
+      "record_ids": [
+        "fourteen_drp_protocols",
+        "cycle_observe"
+      ]
+    },
+    {
+      "id": "build-orchestrate",
+      "name": "Build & Orchestrate",
+      "record_ids": [
+        "z_eaii"
+      ]
+    },
+    {
+      "id": "understand-guide",
+      "name": "Understand & Guide",
+      "record_ids": [
+        "grounded_questions_qadp"
+      ]
+    },
+    {
+      "id": "foundation",
+      "name": "Foundation",
+      "record_ids": [
+        "z_sanctuary_core",
+        "univ_workstation_navigator"
+      ]
+    }
+  ],
+  "relationships": {
+    "note": "Lightweight local indicators. Not Golden Universe Map. No graph runtime.",
+    "from": "z_sanctuary_core",
+    "from_name": "Z-Sanctuary Core",
+    "edges": [
+      {
+        "role": "governance",
+        "to": "fourteen_drp_protocols"
+      },
+      {
+        "role": "oversight/orchestration",
+        "to": "z_eaii"
+      },
+      {
+        "role": "grounded inquiry",
+        "to": "grounded_questions_qadp"
+      },
+      {
+        "role": "observation",
+        "to": "cycle_observe"
+      },
+      {
+        "role": "navigation",
+        "to": "univ_workstation_navigator"
+      }
+    ]
+  },
+  "records": [
+    {
+      "canonical_id": "z_sanctuary_core",
+      "public_name": "Z-Sanctuary Core",
+      "page": "core.html",
+      "ia_group": "Foundation",
+      "approved_public_description": "Z-Sanctuary is a governed multi-project AI development ecosystem with implemented and verified components, while many broader capabilities remain under controlled development.",
+      "evidence_state": "QUALIFIED",
+      "public_evidence_gate": "PASS",
+      "prototype_class": null,
+      "public_production": false,
+      "classification": "APPROVED_PUBLIC_SAFE",
+      "publication": "NOT_YET_AUTHORIZED",
+      "implementation_state": "active_or_partial",
+      "what_exists": [
+        "Named core-engine role exists on the sanctuary engine roster.",
+        "MirrorSoul hub-slice automated tests: 3 passed, 0 failed (2026-08-27).",
+        "Zuno transformation-slice automated tests: 2 passed, 0 failed (2026-08-27).",
+        "Hub verification subset recently green: dashboard registry, alias audit, data-leak (zero findings), API-spine overall GREEN (GREEN ≠ deploy)."
+      ],
+      "not_claimed": [
+        "Not a public production engine or live Golden Website.",
+        "Not commercially validated.",
+        "Not every sanctuary idea is implemented.",
+        "MirrorSoul/Zuno tests are not public product launches or medical claims."
+      ],
+      "evidence_refs": [
+        {
+          "title": "Hub identity and core-engine roster",
+          "supports": "Named hub organism and core-engine role.",
+          "does_not_support": "Finished universal engine."
+        },
+        {
+          "title": "MirrorSoul hub-slice tests (3/3)",
+          "supports": "An implemented hub slice with passing assertions.",
+          "does_not_support": "Production interpersonal AI."
+        },
+        {
+          "title": "Zuno transformation-slice tests (2/2)",
+          "supports": "An implemented hub slice with passing assertions.",
+          "does_not_support": "Diagnostic or public chatbot identity (Zuno stays internal)."
+        },
+        {
+          "title": "Constitution, Turtle Mode, GitHub human-merge gate",
+          "supports": "Human-gated, evidence-first laws exist and were applied in GW-2.",
+          "does_not_support": "Perfect historical compliance."
+        },
+        {
+          "title": "Dashboard registry, alias audit, data-leak audit, API-spine GREEN",
+          "supports": "Named checkers reported healthy on the GW-2 / GW-2A window.",
+          "does_not_support": "Deploy authority or full-pipeline certification."
+        }
+      ],
+      "development_posture": "Partial hub core role with implemented, tested slices. Not a complete public runtime.",
+      "core_relationship": "Named heart of this local preview.",
+      "next_evidence_gate": "Remain QUALIFIED. Publication and Twin insert remain unauthorized.",
+      "journey": "What is Z-Sanctuary?",
+      "governance_summary": "Human-gated and evidence-first: observe, verify, suggest, then a human decides. Readiness is not deploy. Turtle Mode treats builders as guarded workers, not autopilot."
+    },
+    {
+      "canonical_id": "univ_workstation_navigator",
+      "public_name": "Universal Workstation Navigator",
+      "page": "navigator.html",
+      "ia_group": "Foundation",
+      "approved_public_description": "A read-only way to look at sanctuary services and documents without running automation, calling outside APIs, or treating the view as a live control plane.",
+      "evidence_state": "SEALED",
+      "public_evidence_gate": "PASS",
+      "prototype_class": "WORKING",
+      "public_production": false,
+      "classification": "APPROVED_PUBLIC_SAFE",
+      "publication": "NOT_YET_AUTHORIZED",
+      "implementation_state": "READ_ONLY_UI",
+      "what_exists": [
+        "A read-only navigator cockpit was built to show service names and document links without execute buttons.",
+        "A sanctuary green receipt records that posture: links only, no workflow run controls, no cloud memory, no API product added for that slice."
+      ],
+      "not_claimed": [
+        "WORKING local interface is not backend production, billing, or a public edge.",
+        "SEALED is not deployed on the public internet.",
+        "The navigator is not Golden Universe Map yet; that public map identity is reserved and unbuilt.",
+        "No live cross-project bridge is claimed."
+      ],
+      "evidence_refs": [
+        {
+          "title": "Universal Workstation Navigator green receipt (NAV-1)",
+          "supports": "Read-only cockpit intent was recorded: no run buttons, no cloud memory, no API added in that slice.",
+          "does_not_support": "Public website launch, live orchestration, or production backend."
+        }
+      ],
+      "development_posture": "A working local read-only cockpit exists. It is not the public Golden Website and not a live public map.",
+      "core_relationship": "Navigation used with Z-Sanctuary Core.",
+      "next_evidence_gate": "SEALED is not deployed. Publication and Twin insert remain unauthorized.",
+      "journey": "How do I explore it?",
+      "not_golden_universe_map": true,
+      "no_execution_authority": true
+    },
+    {
+      "canonical_id": "fourteen_drp_protocols",
+      "public_name": "14 DRP Protocols",
+      "page": "drp.html",
+      "ia_group": "Govern & Verify",
+      "approved_public_description": "A governance and responsibility framework for sanctuary helpers: ask where you are, what you may change, and when a human must decide. Humans remain authoritative. Hidden runtime and automatic deploy or merge are forbidden.",
+      "evidence_state": "QUALIFIED",
+      "public_evidence_gate": "PASS",
+      "prototype_class": null,
+      "public_production": false,
+      "classification": "APPROVED_PUBLIC_SAFE",
+      "publication": "NOT_YET_AUTHORIZED",
+      "implementation_state": "DOCTRINE_AND_GATES",
+      "what_exists": [
+        "A dedicated universal agent-law document exists.",
+        "That law forbids hidden execution, silent deploy, secret access, and billing mutation from the law layer.",
+        "AMK remains the sacred final authority in that law."
+      ],
+      "not_claimed": [
+        "Not evidence that every AI automatically behaves perfectly.",
+        "Not production autonomy.",
+        "Not a legal or safety certification.",
+        "Not a billed public product."
+      ],
+      "evidence_refs": [
+        {
+          "title": "Universal agent-law document",
+          "supports": "A named non-harm and responsibility framework exists.",
+          "does_not_support": "Perfect historical compliance by every helper."
+        },
+        {
+          "title": "Forbidden-move list in that law",
+          "supports": "Hidden runtime and automatic deploy or merge are disallowed in doctrine.",
+          "does_not_support": "A live public enforcement API."
+        }
+      ],
+      "development_posture": "Named doctrine with internal gates. Not a product SKU and not proof of perfect compliance.",
+      "core_relationship": "Governance and responsibility framework used with Z-Sanctuary Core.",
+      "next_evidence_gate": "Keep QUALIFIED visible. Publication and Twin insert remain unauthorized."
+    },
+    {
+      "canonical_id": "z_eaii",
+      "public_name": "Z-EAII",
+      "page": "eaii.html",
+      "ia_group": "Build & Orchestrate",
+      "approved_public_description": "Oversight and orchestration for named projects: registry and opening intelligence for operators. It sits inside the sanctuary hierarchy, not above governance, and is not an unrestricted autonomous super-intelligence.",
+      "evidence_state": "QUALIFIED",
+      "public_evidence_gate": "PASS",
+      "prototype_class": null,
+      "public_production": false,
+      "classification": "APPROVED_PUBLIC_SAFE",
+      "publication": "NOT_YET_AUTHORIZED",
+      "implementation_state": "HUB_AND_ORGANISER",
+      "what_exists": [
+        "A named EAII role exists in the Hierarchy Chief and Master Register.",
+        "An Organiser-plus-hub operational pattern exists for operators.",
+        "A related local Knowledge Ask prototype exists; that prototype is not this record’s public runtime."
+      ],
+      "not_claimed": [
+        "Not an omnipotent autonomous super-intelligence.",
+        "Not above governance.",
+        "Not Golden Guide AI and not Zuno.",
+        "Not a live public orchestration API.",
+        "Working local tools are not a production service."
+      ],
+      "evidence_refs": [
+        {
+          "title": "Hierarchy Chief / Master Register",
+          "supports": "A named EAII role exists inside the authority model.",
+          "does_not_support": "Public command of the sanctuary or autonomy above governance."
+        },
+        {
+          "title": "Operator registry-and-opening pattern",
+          "supports": "Implemented locally for operators.",
+          "does_not_support": "Public ping endpoints or disk maps."
+        }
+      ],
+      "development_posture": "Named operator role with local registry-and-opening tools. Not a public command plane.",
+      "core_relationship": "Oversight and orchestration role used with Z-Sanctuary Core.",
+      "next_evidence_gate": "Keep QUALIFIED visible. No live endpoints. Publication and Twin insert remain unauthorized."
+    },
+    {
+      "canonical_id": "grounded_questions_qadp",
+      "public_name": "Grounded Questions (QADP)",
+      "page": "qadp.html",
+      "ia_group": "Understand & Guide",
+      "approved_public_description": "A grounded question and directed-pathway pattern: anchor the question, prefer citations, admit missing evidence, and use human gates where risk is high. QADP is not Golden Guide AI.",
+      "evidence_state": "QUALIFIED",
+      "public_evidence_gate": "PASS",
+      "prototype_class": null,
+      "public_production": false,
+      "classification": "APPROVED_PUBLIC_SAFE",
+      "publication": "NOT_YET_AUTHORIZED",
+      "implementation_state": "DOCTRINE_PLUS_HUB_UI",
+      "what_exists": [
+        "A QADP doctrine document exists.",
+        "Local operator prototypes in the same family exist (Knowledge Ask and Z-Q&A&RP). They are not Golden Guide AI.",
+        "Cloudflare Ask AI remains a contingency, not daily public Q&A."
+      ],
+      "not_claimed": [
+        "QADP is not Golden Guide AI.",
+        "Golden Guide AI is not live.",
+        "Zuno is not the public chatbot.",
+        "Four internal surfaces are not four public products.",
+        "Citations do not make answers independently VERIFIED.",
+        "Working local UI is not a public production Q&A service."
+      ],
+      "evidence_refs": [
+        {
+          "title": "QADP doctrine",
+          "supports": "A grounded Q&A and directed-pathway pattern is written down.",
+          "does_not_support": "Golden Guide AI runtime or elimination of model mistakes."
+        },
+        {
+          "title": "Local Knowledge Ask / Z-Q&A&RP prototypes",
+          "supports": "Operator UIs exist in the same family.",
+          "does_not_support": "A public Q&A service."
+        }
+      ],
+      "development_posture": "Doctrine plus local operator prototypes. Not a public Q&A runtime.",
+      "core_relationship": "Grounded inquiry pattern used with Z-Sanctuary Core.",
+      "next_evidence_gate": "Keep QUALIFIED visible. Do not iframe operator HTML. Golden Guide AI runtime stays blocked. Publication and Twin insert remain unauthorized."
+    },
+    {
+      "canonical_id": "cycle_observe",
+      "public_name": "Cycle Observe",
+      "page": "observe.html",
+      "ia_group": "Govern & Verify",
+      "approved_public_description": "An observation and review capability: look at sanctuary posture, classify it, and suggest next work without executing that work. It describes, verifies, and reports. It does not autonomously intervene.",
+      "evidence_state": "QUALIFIED",
+      "public_evidence_gate": "PASS",
+      "prototype_class": null,
+      "public_production": false,
+      "classification": "APPROVED_PUBLIC_SAFE",
+      "publication": "NOT_YET_AUTHORIZED",
+      "implementation_state": "LOCAL_HTML",
+      "what_exists": [
+        "Written observer law: suggest only; do not execute the queue.",
+        "A local read-only dashboard prototype exists for operators.",
+        "Observer output is a status report, not a control plane."
+      ],
+      "not_claimed": [
+        "Not autonomous intervention.",
+        "Not automatic repair, merge, or deploy.",
+        "Not a live public telemetry feed.",
+        "Informational signals are not system failure.",
+        "Working local UI is not a production operations centre.",
+        "Does not expose private task-queue contents."
+      ],
+      "evidence_refs": [
+        {
+          "title": "Cycle Observe system law",
+          "supports": "The observer must not execute queued tasks.",
+          "does_not_support": "Public SaaS monitoring or autonomous repair."
+        },
+        {
+          "title": "Local read-only dashboard prototype",
+          "supports": "Operators can view a status UI locally.",
+          "does_not_support": "A public production dashboard."
+        }
+      ],
+      "development_posture": "Written observer law plus a local read-only dashboard prototype. Not a public monitoring service.",
+      "core_relationship": "Observation and review used with Z-Sanctuary Core.",
+      "next_evidence_gate": "Keep QUALIFIED visible. No queue contents, no local IPs, no iframe. Publication and Twin insert remain unauthorized."
+    }
+  ]
+}

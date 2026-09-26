@@ -1,0 +1,245 @@
+/* Generated GW-7 exhibits. Do not add gated prototypes. */
+window.GW_EXHIBITS = {
+  "schema": "gw7_exhibits_v1",
+  "phase": "GW-7",
+  "publication_authorized": false,
+  "twin_live_records": 0,
+  "private_browser_exposure": 0,
+  "unapproved_exhibits_exposed": 0,
+  "visual_exhibit_count": 6,
+  "current_capture_count": 5,
+  "historical_capture_count": 1,
+  "prototype_exhibit_count": 1,
+  "record_pages": {
+    "z_sanctuary_core": {
+      "name": "Z-Sanctuary Core",
+      "href": "core.html"
+    },
+    "univ_workstation_navigator": {
+      "name": "Universal Workstation Navigator",
+      "href": "navigator.html"
+    },
+    "fourteen_drp_protocols": {
+      "name": "14 DRP Protocols",
+      "href": "drp.html"
+    },
+    "cycle_observe": {
+      "name": "Cycle Observe",
+      "href": "observe.html"
+    },
+    "z_eaii": {
+      "name": "Z-EAII",
+      "href": "eaii.html"
+    },
+    "grounded_questions_qadp": {
+      "name": "Grounded Questions (QADP)",
+      "href": "qadp.html"
+    }
+  },
+  "laws": [
+    "visual ≠ evidence by itself",
+    "prototype ≠ production",
+    "screenshot ≠ backend proof",
+    "historical ≠ current",
+    "local ≠ deployed"
+  ],
+  "visuals": [
+    {
+      "id": "VIS-GW-011",
+      "title": "Home six-record portfolio",
+      "truth_label": "REAL UI CAPTURE",
+      "time_posture": "current",
+      "related_records": [
+        "z_sanctuary_core"
+      ],
+      "evidence_state": "QUALIFIED",
+      "scope": "Current local six-record shell",
+      "demonstrates": "The local Golden Website home showing six approved public-safe capabilities together.",
+      "does_not_prove": "Public publication, deployment, live infrastructure, or that QUALIFIED is VERIFIED.",
+      "explanation": "A current development capture of the local home portfolio. Visual ≠ evidence by itself.",
+      "alt": "Local Golden Website home showing six approved capability cards on a deep-space background.",
+      "src": "../gw-4a/screenshots/01-home-portfolio.png",
+      "related_links": [
+        {
+          "href": "portfolio.html",
+          "label": "Portfolio"
+        },
+        {
+          "href": "core.html",
+          "label": "Z-Sanctuary Core"
+        }
+      ]
+    },
+    {
+      "id": "VIS-GW-012",
+      "title": "Portfolio Preview desktop",
+      "truth_label": "REAL UI CAPTURE",
+      "time_posture": "current",
+      "related_records": [
+        "z_sanctuary_core"
+      ],
+      "evidence_state": "QUALIFIED",
+      "scope": "Current local six-record shell",
+      "demonstrates": "Portfolio grouping and five Core relationship labels in the local preview.",
+      "does_not_prove": "Full Universe coverage, runtime dependencies, or a public catalog.",
+      "explanation": "A current development capture of Portfolio Preview. Relationship labels are not runtime control.",
+      "alt": "Local Portfolio Preview page with grouped capability cards and Core relationship list.",
+      "src": "../gw-4a/screenshots/02-portfolio-desktop.png",
+      "related_links": [
+        {
+          "href": "portfolio.html",
+          "label": "Portfolio"
+        },
+        {
+          "href": "universe-map.html",
+          "label": "Universe Map foundation"
+        }
+      ]
+    },
+    {
+      "id": "VIS-GW-013",
+      "title": "14 DRP Protocols page",
+      "truth_label": "REAL UI CAPTURE",
+      "time_posture": "current",
+      "related_records": [
+        "fourteen_drp_protocols"
+      ],
+      "evidence_state": "QUALIFIED",
+      "scope": "Approved public-safe governance page",
+      "demonstrates": "A local page for the 14 DRP governance and responsibility framework.",
+      "does_not_prove": "Perfect AI compliance, legal certification, or production autonomy.",
+      "explanation": "A current development capture. Humans remain authoritative. QUALIFIED is not VERIFIED.",
+      "alt": "Local 14 DRP Protocols page describing governance limits and human authority.",
+      "src": "../gw-4a/screenshots/03-drp-desktop.png",
+      "related_links": [
+        {
+          "href": "drp.html",
+          "label": "14 DRP Protocols"
+        },
+        {
+          "href": "core.html",
+          "label": "Z-Sanctuary Core"
+        }
+      ]
+    },
+    {
+      "id": "VIS-GW-016",
+      "title": "Cycle Observe page",
+      "truth_label": "REAL UI CAPTURE",
+      "time_posture": "current",
+      "related_records": [
+        "cycle_observe"
+      ],
+      "evidence_state": "QUALIFIED",
+      "scope": "Approved public-safe observation page",
+      "demonstrates": "A local page describing observation and review without autonomous intervention.",
+      "does_not_prove": "Live telemetry, auto-repair, or a public operations centre.",
+      "explanation": "A current development capture of the public-safe Cycle Observe page, not the operator dashboard.",
+      "alt": "Local Cycle Observe page stating observation and review without autonomous intervention.",
+      "src": "../gw-4a/screenshots/06-observe-desktop.png",
+      "related_links": [
+        {
+          "href": "observe.html",
+          "label": "Cycle Observe"
+        },
+        {
+          "href": "museum.html",
+          "label": "Prototype Museum"
+        }
+      ]
+    },
+    {
+      "id": "VIS-GW-018",
+      "title": "Universe Map — Core selected",
+      "truth_label": "REAL UI CAPTURE",
+      "time_posture": "current",
+      "related_records": [
+        "z_sanctuary_core"
+      ],
+      "evidence_state": "QUALIFIED",
+      "scope": "Six-node Foundation Preview",
+      "demonstrates": "A local evidence-aware relationship-map interface.",
+      "does_not_prove": "Full Universe coverage, live infrastructure, autonomous runtime, or deployment.",
+      "explanation": "A current development capture of the GW-5 six-node map. Map ≠ authority.",
+      "alt": "Local six-node Golden Universe Map foundation with Z-Sanctuary Core selected.",
+      "src": "../gw-5/screenshots/01-map-desktop-core.png",
+      "related_links": [
+        {
+          "href": "universe-map.html",
+          "label": "Universe Map foundation"
+        },
+        {
+          "href": "core.html",
+          "label": "Z-Sanctuary Core"
+        }
+      ]
+    },
+    {
+      "id": "VIS-GW-002",
+      "title": "Evidence Mode board (GW-3A)",
+      "truth_label": "HISTORICAL REAL UI CAPTURE",
+      "time_posture": "historical",
+      "related_records": [
+        "z_sanctuary_core"
+      ],
+      "evidence_state": "QUALIFIED",
+      "scope": "Earlier two-record Golden Foundation Shell",
+      "demonstrates": "How Evidence Mode presented approved records on the earlier two-record shell.",
+      "does_not_prove": "The current six-record portfolio, publication, or that QUALIFIED is VERIFIED.",
+      "explanation": "This capture shows the earlier two-record Golden Foundation Shell. It is retained as development history and does not represent the current six-record portfolio.",
+      "alt": "Historical Evidence Mode board from the earlier two-record Golden Foundation Shell, not the current six-record portfolio.",
+      "src": "../gw-3a/screenshots/02-home-evidence-board.png",
+      "related_links": [
+        {
+          "href": "index.html",
+          "label": "Current home"
+        },
+        {
+          "href": "portfolio.html",
+          "label": "Current portfolio"
+        }
+      ]
+    }
+  ],
+  "prototypes": [
+    {
+      "id": "PROTO-GW-SHELL",
+      "title": "Golden Website local shell",
+      "truth_label": "LOCAL WORKING PROTOTYPE",
+      "type": "LOCAL WORKING PROTOTYPE",
+      "public_service": "NO",
+      "production": "NO",
+      "deployed": "NO",
+      "publication": "NOT AUTHORIZED",
+      "data": "APPROVED PUBLIC-SAFE DERIVATIVE ONLY",
+      "twin_live_records": 0,
+      "explanation": "This exhibit demonstrates the current local Golden Website development shell. It does not represent a deployed public service.",
+      "related_records": [
+        "z_sanctuary_core",
+        "univ_workstation_navigator",
+        "fourteen_drp_protocols",
+        "cycle_observe",
+        "z_eaii",
+        "grounded_questions_qadp"
+      ],
+      "interact_links": [
+        {
+          "href": "index.html",
+          "label": "Golden Home"
+        },
+        {
+          "href": "portfolio.html",
+          "label": "Portfolio"
+        },
+        {
+          "href": "gallery.html",
+          "label": "Golden Visual Gallery"
+        },
+        {
+          "href": "universe-map.html",
+          "label": "Universe Map foundation"
+        }
+      ]
+    }
+  ]
+};

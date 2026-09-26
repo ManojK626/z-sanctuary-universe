@@ -1,0 +1,145 @@
+{
+  "generated_at": "2026-08-27T07:04:18.881Z",
+  "phase": "GW-5",
+  "findings": [
+    {
+      "ok": true,
+      "id": "foundation-line",
+      "detail": ""
+    },
+    {
+      "ok": true,
+      "id": "incomplete-line",
+      "detail": ""
+    },
+    {
+      "ok": true,
+      "id": "six-nodes",
+      "detail": "6"
+    },
+    {
+      "ok": true,
+      "id": "five-relationships",
+      "detail": "5"
+    },
+    {
+      "ok": true,
+      "id": "relationship-labels",
+      "detail": ""
+    },
+    {
+      "ok": true,
+      "id": "no-verified-nodes",
+      "detail": ""
+    },
+    {
+      "ok": true,
+      "id": "click-opens-panel",
+      "detail": ""
+    },
+    {
+      "ok": true,
+      "id": "core-details",
+      "detail": ""
+    },
+    {
+      "ok": true,
+      "id": "no-private-path",
+      "detail": ""
+    },
+    {
+      "ok": true,
+      "id": "escape-closes",
+      "detail": ""
+    },
+    {
+      "ok": true,
+      "id": "keyboard-enter-drp",
+      "detail": ""
+    },
+    {
+      "ok": true,
+      "id": "keyboard-space-observe",
+      "detail": ""
+    },
+    {
+      "ok": true,
+      "id": "evidence-mode",
+      "detail": ""
+    },
+    {
+      "ok": true,
+      "id": "evidence-keeps-six",
+      "detail": ""
+    },
+    {
+      "ok": true,
+      "id": "evidence-board-qualified",
+      "detail": ""
+    },
+    {
+      "ok": true,
+      "id": "skip-focus",
+      "detail": ""
+    },
+    {
+      "ok": true,
+      "id": "overflow-desktop",
+      "detail": ""
+    },
+    {
+      "ok": true,
+      "id": "nodes-desktop",
+      "detail": "6"
+    },
+    {
+      "ok": true,
+      "id": "overflow-tablet",
+      "detail": ""
+    },
+    {
+      "ok": true,
+      "id": "nodes-tablet",
+      "detail": "6"
+    },
+    {
+      "ok": true,
+      "id": "overflow-mobile",
+      "detail": ""
+    },
+    {
+      "ok": true,
+      "id": "nodes-mobile",
+      "detail": "6"
+    },
+    {
+      "ok": true,
+      "id": "mobile-nav-details",
+      "detail": ""
+    }
+  ],
+  "overflow": [
+    {
+      "name": "desktop",
+      "width": 1440,
+      "height": 900,
+      "overflowX": false,
+      "nodeCount": 6
+    },
+    {
+      "name": "tablet",
+      "width": 768,
+      "height": 1024,
+      "overflowX": false,
+      "nodeCount": 6
+    },
+    {
+      "name": "mobile",
+      "width": 390,
+      "height": 844,
+      "overflowX": false,
+      "nodeCount": 6
+    }
+  ],
+  "pass": true
+}

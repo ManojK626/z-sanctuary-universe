@@ -1,0 +1,388 @@
+{
+  "schema": "z_golden_websites_partnership_framework_v1",
+  "framework_id": "Z-GOLDEN-WEBSITES-PARTNERSHIP-ECONOMICS-0",
+  "status": "GREEN_FRAMEWORK_ONLY",
+  "legal_status": "PROPOSED_FRAMEWORK_ONLY",
+  "created_at": "2026-08-28T09:45:00.000Z",
+  "runtime_authorization": false,
+  "deployment_authorization": false,
+  "publication_authorization": false,
+  "equity_issuance_authorization": false,
+  "recruitment_authorization": false,
+  "icis_scope": "UNCHANGED",
+  "human_authority": "AMK-Goku Steward + legal process. Score, title, and time served never auto-grant equity, revenue share, access, or IP.",
+  "ownership_architecture": {
+    "holding_layer": "Z-SANCTUARY_HOLDING_CORE_IP",
+    "legal_holding_company_created": false,
+    "founder_core_control": "RESERVED_FOUNDER_STEWARD",
+    "protected_parent_core": [
+      "Z-Sanctuary identity",
+      "trademarks",
+      "domains_where_appropriate",
+      "shared_core_software_ip",
+      "AI_architecture",
+      "security_systems",
+      "governance_systems",
+      "central_data_infrastructure",
+      "shared_registries",
+      "shared_user_infrastructure",
+      "reusable_engines",
+      "platform_level_intellectual_property"
+    ],
+    "layers": [
+      {
+        "id": "Z_CORE",
+        "owns": ["shared engines", "identity", "security", "governance", "data"],
+        "partner_default_equity": "NONE"
+      },
+      {
+        "id": "GOLDEN_WEBSITES",
+        "owns": ["Site A", "Site B", "Site C"],
+        "partner_default_lane": "PROPERTY_ECONOMICS"
+      },
+      {
+        "id": "Z_MODULES",
+        "owns": ["Module A", "Module B", "Module C"],
+        "partner_default_lane": "MODULE_ECONOMICS"
+      }
+    ],
+    "principle": "Contribution to one website or module may earn participation in that property. Parent ownership is reserved for exceptional long-term organism responsibility."
+  },
+  "strategic_dilution_envelope": {
+    "strategic_dilution_envelope_pct": 15,
+    "envelope_semantics": ["PROPOSED", "RESERVED", "NOT_ISSUED", "NOT_PROMISED"],
+    "issued_pct": 0,
+    "promised_pct": 0,
+    "unused_reserve_remains_unissued": true,
+    "legal_status": "PROPOSED_FRAMEWORK_ONLY",
+    "not": [
+      "issued equity",
+      "promised equity",
+      "current cap table",
+      "valuation",
+      "legal commitment",
+      "guaranteed pool"
+    ],
+    "planning_split_illustrative_only": {
+      "long_term_team_equity_reserve_pct": 10,
+      "strategic_adviser_reserve_pct": 2,
+      "exceptional_future_talent_reserve_pct": 3,
+      "semantics": "ILLUSTRATIVE_PLANNING_SPLIT_NOT_ISSUED"
+    },
+    "historical_15pct_reframed_from": "15% future potential profit + lifetime partnerships",
+    "historical_15pct_repo_evidence": "NOT_FOUND_AS_COMMITTED_DOCTRINE"
+  },
+  "partner_classes": [
+    {
+      "id": "CLASS_1_CONTRIBUTORS",
+      "examples": ["developers", "designers", "writers", "testers", "community helpers", "temporary specialists"],
+      "default_economics": ["credit", "portfolio recognition", "future paid bounty where available", "milestone compensation", "site_or_module_specific_incentive"],
+      "default_parent_equity": "NONE",
+      "maps_from_gw11_informational": ["TECHNICAL_CONTRIBUTOR", "SPECIALIST_REVIEWER"]
+    },
+    {
+      "id": "CLASS_2_GROWTH_PARTNERS",
+      "examples": ["marketers", "affiliates", "creators", "local market partners", "sales channels", "distribution partners"],
+      "default_economics": ["attributable commission", "defined revenue participation", "defined contribution-margin participation", "performance milestone"],
+      "default_parent_equity": "NONE",
+      "maps_from_gw11_informational": ["PILOT_CUSTOMER"]
+    },
+    {
+      "id": "CLASS_3_STRATEGIC_PARTNERS",
+      "examples": ["enterprise relationships", "major distribution", "specialist security", "regulatory expertise", "strategic technology", "institutional access"],
+      "default_economics": ["commercial agreement", "licensing", "distribution economics", "limited strategic participation"],
+      "possible_warrants_or_equity": "ONLY_AFTER_EXPLICIT_LEGAL_AND_GOVERNANCE_REVIEW",
+      "default_parent_equity": "NONE_AUTOMATIC",
+      "maps_from_gw11_informational": ["STRATEGIC_COMPANY", "RESEARCH_PARTNER", "GOVERNMENT_INSTITUTION", "UNIVERSITY"]
+    },
+    {
+      "id": "CLASS_4_CORE_EXECUTIVE_LONG_TERM_ORGANISM_STEWARD",
+      "examples": ["CTO-level responsibility", "long-term platform architect", "core executive", "genuine co-founder-level responsibility"],
+      "default_economics": ["possible parent-company equity review"],
+      "default_parent_equity": "REVIEW_ONLY_NOT_AUTOMATIC",
+      "rule": "score ≠ automatic equity; title ≠ automatic equity; time served ≠ automatic equity"
+    }
+  ],
+  "website_economics": {
+    "one_website_contribution_equals_whole_universe_ownership": false,
+    "property_lane": "WEBSITE_OR_MODULE_ATTRIBUTABLE_ECONOMICS",
+    "parent_equity_lane": "EXCEPTIONAL_ORGANISM_RESPONSIBILITY_REVIEW_ONLY",
+    "revenue_sharing_status": "FRAMEWORK_DEFINED_NOT_ACTIVATED",
+    "canonical_partner_rate_pct": null,
+    "economic_base": {
+      "name": "QUALIFIED_CONTRIBUTION_MARGIN",
+      "semantics": "PROPOSED_MODELLING_CONCEPT_NOT_PROMISED",
+      "formula": [
+        "QUALIFIED_ATTRIBUTABLE_REVENUE",
+        "minus refunds",
+        "minus chargebacks",
+        "minus applicable taxes/VAT",
+        "minus payment processing",
+        "minus directly attributable advertising",
+        "minus directly attributable AI/API usage",
+        "minus explicitly defined direct property costs"
+      ],
+      "avoid": "undefined 5% of profit"
+    },
+    "excluded_unless_separately_agreed": [
+      "Z-Core",
+      "MirrorSoul",
+      "Roulette-related products",
+      "other Golden Websites",
+      "future AI systems",
+      "future modules",
+      "future inventions"
+    ]
+  },
+  "golden_scorecard": {
+    "status": "DEFINED_NO_LIVE_ANALYTICS",
+    "funnel": [
+      "Visitors",
+      "Registrations",
+      "Activated users",
+      "Returning active users",
+      "Paid users",
+      "Revenue",
+      "Direct costs",
+      "Contribution margin",
+      "Retention / repeat revenue",
+      "Customer lifetime value"
+    ],
+    "ai_economics": [
+      "AI cost per active user",
+      "AI cost per paying user",
+      "AI cost as % of revenue",
+      "gross margin after AI",
+      "model/API cost trend",
+      "inference usage per paid user"
+    ],
+    "rule": "High traffic or high revenue is not automatically GOLDEN if sustainable economics are poor.",
+    "existing_evidence_states_canonical": ["VERIFIED", "SEALED", "QUALIFIED", "CONCEPT", "HOLD", "CLOSED"],
+    "existing_economic_roles_canonical": [
+      "DIRECT_PRODUCT",
+      "PLATFORM_REVENUE",
+      "MARKETPLACE",
+      "ENTERPRISE_B2B",
+      "RESEARCH_IP",
+      "ENABLER",
+      "PUBLIC_BENEFIT",
+      "EXPERIMENTAL"
+    ],
+    "proposed_maturity_ladder_not_activated": {
+      "semantics": "PROPOSED_DECISION_SUPPORT_NOT_OPERATIONAL_LIFECYCLE",
+      "levels": ["EXPERIMENTAL", "EMERGING", "GOLDEN_CANDIDATE", "GOLDEN", "STRATEGIC_GOLDEN"],
+      "conflict": "Do not replace GW-0A evidence_state. EXPERIMENTAL already exists as an economic_role, not a Golden-status badge."
+    }
+  },
+  "contribution_scoring": {
+    "label": "PROPOSED_DECISION_SUPPORT",
+    "not_automatic_compensation": true,
+    "auto_grants_equity": false,
+    "auto_grants_revenue_share": false,
+    "auto_grants_access": false,
+    "auto_grants_executive_status": false,
+    "auto_grants_ip_ownership": false,
+    "human_review_mandatory": true,
+    "total_points": 100,
+    "dimensions": [
+      { "id": "economic_value_impact", "points": 25 },
+      { "id": "technical_creative_depth", "points": 20 },
+      { "id": "strategic_uniqueness", "points": 15 },
+      { "id": "reliability_duration", "points": 15 },
+      { "id": "governance_stewardship_quality", "points": 10 },
+      { "id": "distribution_market_leverage", "points": 10 },
+      { "id": "knowledge_transfer_documentation", "points": 5 }
+    ]
+  },
+  "contribution_record_schema": {
+    "records": [],
+    "fields": [
+      "partner_id",
+      "partner_class",
+      "property_or_scope",
+      "contribution_description",
+      "start_date",
+      "review_date",
+      "measurable_outcomes",
+      "attributable_revenue",
+      "attributable_margin",
+      "technical_contribution",
+      "strategic_contribution",
+      "contribution_score",
+      "economic_arrangement_type",
+      "equity_eligible_review",
+      "equity_issued",
+      "vesting_status",
+      "IP_status",
+      "confidentiality_status",
+      "access_level",
+      "human_approval"
+    ]
+  },
+  "vesting": {
+    "model": "4-year vesting / 1-year cliff",
+    "classification": "DISCUSSION_STARTING_POINT",
+    "not": "Z-SANCTUARY LEGAL RULE",
+    "securities_issued_by_this_work": false
+  },
+  "lifetime_partnership": {
+    "historical_wording": "lifetime partnership",
+    "status": "RETIRED_FOR_NEW_RECRUITMENT",
+    "replaced_conceptually_by": [
+      "defined term",
+      "vesting",
+      "milestones",
+      "performance conditions",
+      "renewal",
+      "termination",
+      "good-leaver / bad-leaver concepts",
+      "legal agreement"
+    ]
+  },
+  "ip_governance": {
+    "classes": [
+      "BACKGROUND_IP",
+      "FOREGROUND_IP",
+      "Z_CORE_IP",
+      "PROPERTY_IP",
+      "THIRD_PARTY_IP",
+      "AI_GENERATED_ASSETS"
+    ],
+    "z_core_ip_transferred_by_website_contribution": false,
+    "solicitor_review_required": true,
+    "legal_assignment_contracts_in_this_phase": false
+  },
+  "access_governance": {
+    "partnership_equals_admin_access": false,
+    "revenue_share_equals_database_access": false,
+    "equity_equals_production_credentials": false,
+    "adviser_equals_source_of_truth_authority": false,
+    "least_privilege": true,
+    "production_credentials_separately_governed": true
+  },
+  "partner_lifecycle": [
+    "DISCOVER",
+    "APPLY_INTRODUCTION",
+    "CONTRIBUTION_SCOPE",
+    "IP_CONFIDENTIALITY_READINESS",
+    "LIMITED_ACCESS",
+    "MILESTONE",
+    "MEASURED_OUTCOME",
+    "ECONOMIC_REVIEW",
+    "RENEW_EXPAND_CLOSE",
+    "CORE_EQUITY_ELIGIBILITY_REVIEW_EXCEPTIONAL_ONLY"
+  ],
+  "public_language_rules": {
+    "doorway_role": "PUBLIC TRANSPARENT DOORWAY",
+    "public_partnership_page_deployed": false,
+    "permitted_concepts": [
+      "contribution opportunities",
+      "project-specific partnerships",
+      "performance-based participation",
+      "commercial collaborations",
+      "affiliate opportunities",
+      "strategic partnerships",
+      "long-term leadership opportunities"
+    ],
+    "prohibited_promises": [
+      "Earn ownership of Z-Sanctuary",
+      "15% available to everyone",
+      "Lifetime profits",
+      "Guaranteed income",
+      "Become a co-owner by contributing"
+    ]
+  },
+  "equity_vs_revenue_share_matrix": [
+    { "scope": "one campaign", "lane": "commission" },
+    { "scope": "one Golden Website", "lane": "property economics" },
+    { "scope": "one module", "lane": "module economics" },
+    { "scope": "multi-property strategic relationship", "lane": "commercial agreement / strategic review" },
+    { "scope": "long-term responsibility for Z-Sanctuary core", "lane": "possible parent-equity review" }
+  ],
+  "value_engine": [
+    "TRUST",
+    "TRAFFIC",
+    "ACTIVATION",
+    "RETENTION",
+    "MONETIZATION",
+    "SUSTAINABLE_MARGIN",
+    "REINVESTMENT",
+    "PARTNER_REWARD",
+    "GREATER_DISTRIBUTION",
+    "TRUST"
+  ],
+  "partnership_priorities": [
+    "distribution",
+    "credibility",
+    "specialist engineering",
+    "cybersecurity",
+    "regulatory expertise",
+    "localized market knowledge",
+    "enterprise relationships",
+    "institutional relationships",
+    "audiences/community",
+    "capital where strategically appropriate"
+  ],
+  "do_not_issue_parent_equity_merely_to_accelerate_ai_substitutable_coding": true,
+  "legal_boundaries": {
+    "this_framework_is_not": [
+      "legal advice",
+      "tax advice",
+      "securities advice",
+      "a shareholder agreement",
+      "a partnership contract",
+      "an employment contract",
+      "an investment solicitation"
+    ],
+    "equity_issuance_options_warrants_revenue_share_employment_tax_securities": "LEGAL_REVIEW_REQUIRED",
+    "gambling_adjacent_golden_websites_or_modules": "SPECIALIST_REGULATORY_REVIEW_REQUIRED",
+    "disclaimer_establishes_legality": false
+  },
+  "financial_scenarios": {
+    "label": "ILLUSTRATIVE ONLY",
+    "not": ["VALUATION", "FORECAST", "INVESTMENT RETURN"],
+    "parent_equity_table": [
+      { "value_usd": 100000, "pct_1": 1000, "pct_5": 5000, "pct_15": 15000 },
+      { "value_usd": 1000000, "pct_1": 10000, "pct_5": 50000, "pct_15": 150000 },
+      { "value_usd": 10000000, "pct_1": 100000, "pct_5": 500000, "pct_15": 1500000 },
+      { "value_usd": 100000000, "pct_1": 1000000, "pct_5": 5000000, "pct_15": 15000000 }
+    ],
+    "property_revenue_share_example": {
+      "label": "ILLUSTRATIVE MODEL ONLY",
+      "qualified_contribution_margin_usd": 200000,
+      "example_rate_pct": 5,
+      "partner_economics_usd": 10000,
+      "canonical_partner_rate_established": false
+    }
+  },
+  "golden_economic_doctrine": [
+    {
+      "id": 1,
+      "text": "Contribution to a property may earn participation in that property's economics; ownership of the Z-Sanctuary parent is reserved for exceptional, long-term responsibility for the organism as a whole."
+    },
+    {
+      "id": 2,
+      "text": "Reserved equity is not issued equity, and economic opportunity is not a promise of ownership."
+    },
+    {
+      "id": 3,
+      "text": "Partnership economics do not grant technical authority, production credentials, scientific authority, or governance control."
+    },
+    {
+      "id": 4,
+      "text": "Revenue sharing must identify the economic base, attribution method, duration, review conditions and termination conditions before activation."
+    },
+    {
+      "id": 5,
+      "text": "Existing Z-Core intellectual property is not transferred merely because a partner contributes to a website, module or campaign."
+    }
+  ],
+  "reconciliation_pointers": {
+    "canonical_public_doorway": "Golden Website GW-0A..GW-13 local shell; publication unauthorized",
+    "gw11_partner_gateway": "docs/golden-website/GW_11_INVESTOR_PARTNER_GATEWAY_POLICY.md",
+    "portfolio_overlay": "data/golden-website/gw_portfolio_registry.json",
+    "omniechoheartcore_com": "UNRESOLVED_NO_REPO_EVIDENCE_NOT_CANONICAL",
+    "genius_magnet": "UNRESOLVED_NO_REPO_EVIDENCE",
+    "golden_magnets_website": "UNRESOLVED_NO_REPO_EVIDENCE"
+  }
+}

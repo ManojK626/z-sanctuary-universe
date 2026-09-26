@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en" data-disable-auto-compass>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Golden Visual Gallery — The Golden Website</title>
+  <meta name="description" content="Local Golden Visual Gallery. Six approved development captures. Not published.">
+  <link rel="stylesheet" href="css/golden-website.css">
+</head>
+<body data-gw-page="gallery">
+  <a class="skip" href="#main">Skip to content</a>
+  <div class="wrap">
+    <header class="site">
+      <a class="brand" href="index.html">
+        <small>Z-Sanctuary Universe</small>
+        <strong>The Golden Website</strong>
+      </a>
+      <nav class="primary" aria-label="Primary">
+        <a href="index.html">Home</a>
+        <a href="portfolio.html">Portfolio</a>
+        <a href="universe-map.html">Map</a>
+        <a href="gallery.html" aria-current="page">Gallery</a>
+        <a href="museum.html">Museum</a>
+        <a href="guide-sandbox.html">Guide</a>
+        <a href="gateway.html">Gateway</a>
+        <a href="ai-integrity.html">Integrity</a>
+        <a href="core.html">Z-Sanctuary Core</a>
+        <a href="navigator.html">Navigator</a>
+        <button type="button" id="gw-evidence-toggle" aria-pressed="false" aria-expanded="false" aria-controls="gw-evidence-board">Show Me What's Real</button>
+      </nav>
+    </header>
+    <main id="main" tabindex="-1">
+      <section class="hero">
+        <p class="notice">Local gallery · six approved captures · not published · not deployed</p>
+        <h1>Golden Visual Gallery</h1>
+        <p>See the Z-Sanctuary Universe through evidence-labelled development captures.</p>
+        <p class="lede">The Gallery shows what visitors can see. A visual is not evidence by itself. A screenshot is not backend proof. Historical is not current. Local is not deployed.</p>
+        <p class="notice">QUALIFIED is not VERIFIED. Public-safe is not published. Beautiful is not proven.</p>
+      </section>
+      <p id="gw-evidence-status" class="visually-hidden" aria-live="polite"></p>
+      <section class="glass evidence-board" id="gw-evidence-board" aria-hidden="true"></section>
+      <section class="glass">
+        <h2>Approved exhibits</h2>
+        <p class="notice">Exactly six Steward-approved captures. Click or tap a capture, or use Enter or Space, to open a large view. Escape closes it.</p>
+        <div class="gallery-grid" id="gw-gallery"></div>
+      </section>
+      <section class="glass">
+        <h2>Continue</h2>
+        <p class="ctas">
+          <a class="cta secondary" href="portfolio.html">Portfolio</a>
+          <a class="cta secondary" href="universe-map.html">Universe Map foundation</a>
+          <a class="cta secondary" href="museum.html">Prototype Museum</a>
+        </p>
+      </section>
+      <section class="glass">
+        <h2>Future surfaces</h2>
+        <p class="notice">Locked until they pass evidence gates. These are not broken links. No private data is loaded here.</p>
+        <ul class="locked" id="gw-locked"></ul>
+      </section>
+    </main>
+    <footer class="site">
+      Visual ≠ evidence by itself. Historical ≠ current. Local ≠ deployed. Public-safe ≠ published.
+    </footer>
+  </div>
+  <div id="gw-gallery-dialog" class="gallery-dialog" hidden aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="gw-gallery-dialog-title">
+    <div class="gallery-dialog-inner glass">
+      <button type="button" class="cta secondary map-panel-close" id="gw-gallery-close">Close large view</button>
+      <div id="gw-gallery-dialog-body"></div>
+    </div>
+  </div>
+  <script src="data/gw-approved-public-safe.js"></script>
+  <script src="data/gw-exhibits.js"></script>
+  <script src="js/golden-website.js"></script>
+  <script src="js/golden-exhibits.js"></script>
+</body>
+</html>

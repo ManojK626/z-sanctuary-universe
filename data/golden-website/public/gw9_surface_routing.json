@@ -1,0 +1,32 @@
+{
+  "schema": "gw9_surface_routing_v1",
+  "phase": "GW-9",
+  "derived_from": "gw8_surface_routing.json",
+  "note": "GW-8 local routes plus Golden Guide sandbox page. Intent changes presentation, not factual truth. No private routes.",
+  "sandbox_page": "guide-sandbox.html",
+  "subjects": [
+    { "subject_id": "z_sanctuary_core", "routes": ["core.html", "index.html", "portfolio.html"] },
+    { "subject_id": "fourteen_drp_protocols", "routes": ["drp.html", "portfolio.html"] },
+    { "subject_id": "z_eaii", "routes": ["eaii.html", "portfolio.html"] },
+    { "subject_id": "grounded_questions_qadp", "routes": ["qadp.html", "portfolio.html"] },
+    { "subject_id": "cycle_observe", "routes": ["observe.html", "portfolio.html"] },
+    { "subject_id": "univ_workstation_navigator", "routes": ["navigator.html", "universe-map.html"] },
+    { "subject_id": "golden_universe_map", "routes": ["universe-map.html", "gallery.html"] },
+    { "subject_id": "golden_gallery", "routes": ["gallery.html"] },
+    { "subject_id": "golden_museum", "routes": ["museum.html", "index.html"] },
+    { "subject_id": "evidence_mode", "routes": ["index.html", "gallery.html"] },
+    { "subject_id": "golden_guide_ai", "routes": ["guide-sandbox.html", "ai-integrity.html", "index.html"] },
+    { "subject_id": "commercial_status", "routes": ["gateway.html", "index.html"] },
+    { "subject_id": "golden_website", "routes": ["index.html"] },
+    { "subject_id": "evidence_vocabulary", "routes": ["index.html"] },
+    { "subject_id": "turtle_mode", "routes": ["core.html"] }
+  ],
+  "intents": {
+    "visual_question": ["gallery.html"],
+    "prototype_question": ["museum.html"],
+    "relationship_question": ["universe-map.html", "portfolio.html"],
+    "evidence_question": ["index.html", "core.html"],
+    "gateway_question": ["gateway.html"],
+    "integrity_question": ["ai-integrity.html", "guide-sandbox.html"]
+  }
+}
