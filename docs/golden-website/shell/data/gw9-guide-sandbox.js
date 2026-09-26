@@ -7,7 +7,7 @@ window.GW9_SANDBOX = {
   "publication_authorized": false,
   "provider": "NONE",
   "embeddings": false,
-  "corpus_records": 22,
+  "corpus_records": 24,
   "corpus": {
     "schema": "gw8_approved_knowledge_corpus_v1",
     "phase": "GW-8",
@@ -462,6 +462,49 @@ window.GW9_SANDBOX = {
         ],
         "related_surfaces": [
           "index.html"
+        ],
+        "public_safe": true
+      },
+      {
+        "knowledge_id": "K-PUBLIC-EXPLORE",
+        "subject_id": "golden_website",
+        "public_name": "Public Golden Website records",
+        "knowledge_type": "FACT",
+        "statement": "You may explore only these six currently PUBLIC_SAFE records: Z-Sanctuary Core, Workstation Navigator, 14 DRP, Z-EAII, QADP, and Cycle Observe. Other Z-Sanctuary projects are not currently part of the public Golden Website view.",
+        "evidence_state": "QUALIFIED",
+        "supported_by": [
+          "Approved public-safe portfolio of six records"
+        ],
+        "limitations": [
+          "This list is the public Golden Website view only. It is not a complete inventory of Z-Sanctuary."
+        ],
+        "related_surfaces": [
+          "portfolio.html",
+          "core.html",
+          "navigator.html",
+          "drp.html",
+          "eaii.html",
+          "qadp.html",
+          "observe.html"
+        ],
+        "public_safe": true
+      },
+      {
+        "knowledge_id": "K-VIEW-ONLY",
+        "subject_id": "golden_website",
+        "public_name": "View-only Golden Website",
+        "knowledge_type": "GOVERNANCE",
+        "statement": "No. The Golden Website is a VIEW-ONLY exploration surface. Visitors may view, scroll, click or tap, open records, navigate, inspect approved visual material, and ask the public guide. Visitors may not edit projects, modify registries, approve gates, merge, deploy, change canonical state, access admin functions, or access secrets or private overlays.",
+        "evidence_state": "QUALIFIED",
+        "supported_by": [
+          "Local Golden Website shell is an exploration view"
+        ],
+        "limitations": [
+          "Viewing and asking the public guide do not grant edit, merge, deploy, or admin authority."
+        ],
+        "related_surfaces": [
+          "index.html",
+          "guide-sandbox.html"
         ],
         "public_safe": true
       }
@@ -1019,6 +1062,22 @@ window.GW9_SANDBOX = {
           "K-GUIDE-IDENTITY"
         ],
         "intent": "CRITIC_REVIEW"
+      },
+      {
+        "match": "what projects can i explore",
+        "behavior": "ANSWER",
+        "knowledge_ids": [
+          "K-PUBLIC-EXPLORE"
+        ],
+        "intent": "PUBLIC_EXPLORATION"
+      },
+      {
+        "match": "can i change anything here",
+        "behavior": "ANSWER",
+        "knowledge_ids": [
+          "K-VIEW-ONLY"
+        ],
+        "intent": "PUBLIC_EXPLORATION"
       }
     ]
   }
