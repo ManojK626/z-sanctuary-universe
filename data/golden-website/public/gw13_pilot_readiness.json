@@ -241,21 +241,21 @@
       "script": "npm run dashboard:registry-verify",
       "status": 0,
       "ok": true,
-      "out": "Z dashboard registry verify: C:\\Cursor Projects Organiser\\Z_Sanctuary_Universe\\data\\reports\\z_dashboard_registry_verify.json (green)",
+      "out": "Z dashboard registry verify: [excluded-local-path] (green)",
       "err": ""
     },
     {
       "script": "npm run alias:audit",
       "status": 0,
       "ok": true,
-      "out": "Canonical alias audit written: C:\\Cursor Projects Organiser\\Z_Sanctuary_Universe\\data\\reports\\z_canonical_alias_audit.json",
+      "out": "Canonical alias audit written: [excluded-local-path]",
       "err": ""
     },
     {
       "script": "npm run security:data-leak-audit",
       "status": 0,
       "ok": true,
-      "out": "Z data leak audit written: C:\\Cursor Projects Organiser\\Z_Sanctuary_Universe\\data\\reports\\z_data_leak_audit.json",
+      "out": "Z data leak audit written: [excluded-local-path]",
       "err": ""
     },
     {
@@ -585,17 +585,17 @@
     {
       "ok": true,
       "id": "hub:npm run dashboard:registry-verify",
-      "detail": "Z dashboard registry verify: C:\\Cursor Projects Organiser\\Z_Sanctuary_Universe\\data\\reports\\z_dashboard_registry_verify.json (green)"
+      "detail": "Z dashboard registry verify: [excluded-local-path] (green)"
     },
     {
       "ok": true,
       "id": "hub:npm run alias:audit",
-      "detail": "Canonical alias audit written: C:\\Cursor Projects Organiser\\Z_Sanctuary_Universe\\data\\reports\\z_canonical_alias_audit.json"
+      "detail": "Canonical alias audit written: [excluded-local-path]"
     },
     {
       "ok": true,
       "id": "hub:npm run security:data-leak-audit",
-      "detail": "Z data leak audit written: C:\\Cursor Projects Organiser\\Z_Sanctuary_Universe\\data\\reports\\z_data_leak_audit.json"
+      "detail": "Z data leak audit written: [excluded-local-path]"
     },
     {
       "ok": true,
