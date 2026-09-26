@@ -1,0 +1,85 @@
+{
+  "schema": "gw_public_safe_capsule_v1",
+  "phase": "GW-2A",
+  "canonical_id": "z_sanctuary_core",
+  "temporary_id": null,
+  "id_status": "CANONICAL",
+  "proposed_public_slug": "z-sanctuary-core",
+  "public_name": "Z-Sanctuary Core",
+  "simple_purpose": "The named heart of a governed multi-project AI development ecosystem: coordinates verification and stays under human authority. Implemented slices exist; many broader capabilities remain under controlled development. Not a finished universal public engine.",
+  "evidence_state": "QUALIFIED",
+  "implementation_state": "active_or_partial",
+  "implementation_state_public_wording": "Partial hub core role with implemented, tested slices. Not a complete public runtime.",
+  "demonstrably_working": [
+    "Named core-engine role exists on the sanctuary engine roster.",
+    "MirrorSoul hub-slice automated tests: 3 passed, 0 failed (2026-08-27).",
+    "Zuno transformation-slice automated tests: 2 passed, 0 failed (2026-08-27).",
+    "Hub verification subset recently green: dashboard registry, alias audit, data-leak (zero findings), API-spine overall GREEN (GREEN ≠ deploy)."
+  ],
+  "non_public_or_unproven": [
+    "Not a public production engine or live Golden Website.",
+    "Not commercially validated.",
+    "Not every sanctuary idea is implemented.",
+    "MirrorSoul/Zuno tests are not public product launches or medical claims.",
+    "The z-sanctuary-core smoke test is thin and is not primary evidence."
+  ],
+  "public_safe_evidence_references": [
+    {
+      "title": "Hub identity and core-engine roster",
+      "kind": "canonical_identity",
+      "supports": "Named hub organism and core-engine role.",
+      "does_not_support": "Finished universal engine."
+    },
+    {
+      "title": "MirrorSoul hub-slice tests (3/3)",
+      "kind": "implemented_slice_test",
+      "supports": "An implemented hub slice with passing assertions.",
+      "does_not_support": "Production interpersonal AI."
+    },
+    {
+      "title": "Zuno transformation-slice tests (2/2)",
+      "kind": "implemented_slice_test",
+      "supports": "An implemented hub slice with passing assertions.",
+      "does_not_support": "Diagnostic or public chatbot identity (Zuno stays internal)."
+    },
+    {
+      "title": "Constitution, Turtle Mode, GitHub human-merge gate",
+      "kind": "governance",
+      "supports": "Human-gated, evidence-first laws exist and were applied in GW-2.",
+      "does_not_support": "Perfect historical compliance."
+    },
+    {
+      "title": "Dashboard registry, alias audit, data-leak audit, API-spine GREEN",
+      "kind": "verification",
+      "supports": "Named checkers reported healthy on the GW-2 / GW-2A window.",
+      "does_not_support": "Deploy authority or full-pipeline certification."
+    }
+  ],
+  "safe_screenshot_or_prototype_references": [],
+  "commercial_status": "POTENTIAL_NOT_VALIDATED",
+  "economic_roles": ["ENABLER", "RESEARCH_IP"],
+  "ethical_public_benefit_role": "Helps keep sanctuary work coordinated, tested, and human-gated. Not a certified public-benefit product.",
+  "limitations": [
+    "evidence_state remains QUALIFIED — not VERIFIED, not proven, not production-ready.",
+    "PASS on the evidence gate is not Steward publication.",
+    "This capsule is not a Public Knowledge Twin record.",
+    "No public-safe screenshots attached."
+  ],
+  "next_milestone": "Steward evidence review. If human approval is granted, Core may be classified APPROVED_PUBLIC_SAFE. Website pages remain unauthorized.",
+  "intended_public_journey_slot": "anchor_what_is_z_sanctuary",
+  "evidence_pack": "docs/golden-website/evidence/GW_2A_Z_SANCTUARY_CORE_PUBLIC_EVIDENCE_PACK.md",
+  "steward_classification": "APPROVED_PUBLIC_SAFE",
+  "recommended_for_approved_public_safe": true,
+  "eligible_for_approved_public_safe": true,
+  "published_to_knowledge_twin": false,
+  "publication": "NOT_YET_AUTHORIZED",
+  "publication_decision": "CLASSIFICATION_APPROVED_PUBLICATION_NOT_YET_AUTHORIZED",
+  "proof_gates": {
+    "identity_clear": "PASS",
+    "claim_wording_safe": "PASS",
+    "evidence_attached": "PASS",
+    "security_sanitization_green": "PASS",
+    "human_approval_explicit": "GRANTED"
+  },
+  "next_milestone": "Local Golden Foundation Shell (GW-3) may display this record. Twin insert and public deploy remain unauthorized."
+}

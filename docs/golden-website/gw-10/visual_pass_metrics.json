@@ -1,0 +1,101 @@
+{
+  "generated_at": "2026-08-27T07:50:50.383Z",
+  "phase": "GW-10",
+  "findings": [
+    {
+      "ok": true,
+      "id": "starts-normal",
+      "detail": ""
+    },
+    {
+      "ok": true,
+      "id": "critic-44px",
+      "detail": ""
+    },
+    {
+      "ok": true,
+      "id": "keyboard-critic-on",
+      "detail": ""
+    },
+    {
+      "ok": true,
+      "id": "critic-banner",
+      "detail": ""
+    },
+    {
+      "ok": true,
+      "id": "local-critic-label",
+      "detail": ""
+    },
+    {
+      "ok": true,
+      "id": "screenshot-not-backend",
+      "detail": "Challenge Z-Sanctuary — local critic sandbox. This uses the same approved public-safe facts as Normal Guide. Intent changes framing, not truth. No. A screenshot"
+    },
+    {
+      "ok": true,
+      "id": "structured-critique",
+      "detail": ""
+    },
+    {
+      "ok": true,
+      "id": "no-financial-advice",
+      "detail": ""
+    },
+    {
+      "ok": true,
+      "id": "diligence-gaps",
+      "detail": "Challenge Z-Sanctuary — local critic sandbox. This uses the same approved public-safe facts as Normal Guide. Intent changes framing, not truth. Public diligence"
+    },
+    {
+      "ok": true,
+      "id": "private-refusal",
+      "detail": ""
+    },
+    {
+      "ok": true,
+      "id": "overflow-critic-desktop",
+      "detail": ""
+    },
+    {
+      "ok": true,
+      "id": "overflow-critic-tablet",
+      "detail": ""
+    },
+    {
+      "ok": true,
+      "id": "overflow-critic-mobile",
+      "detail": ""
+    },
+    {
+      "ok": true,
+      "id": "external-calls",
+      "detail": ""
+    }
+  ],
+  "overflow": [
+    {
+      "file": "guide-sandbox.html",
+      "name": "desktop",
+      "width": 1440,
+      "height": 900,
+      "overflowX": false
+    },
+    {
+      "file": "guide-sandbox.html",
+      "name": "tablet",
+      "width": 768,
+      "height": 1024,
+      "overflowX": false
+    },
+    {
+      "file": "guide-sandbox.html",
+      "name": "mobile",
+      "width": 390,
+      "height": 844,
+      "overflowX": false
+    }
+  ],
+  "external_http_https": [],
+  "pass": true
+}

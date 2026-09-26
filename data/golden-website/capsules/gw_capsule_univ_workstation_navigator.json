@@ -1,0 +1,65 @@
+{
+  "schema": "gw_public_safe_capsule_v1",
+  "phase": "GW-2",
+  "canonical_id": "univ_workstation_navigator",
+  "temporary_id": null,
+  "id_status": "CANONICAL",
+  "proposed_public_slug": "universal-workstation-navigator",
+  "public_name": "Universal Workstation Navigator",
+  "future_public_surface": "Golden Universe Map (not this record; not built in GW-2)",
+  "simple_purpose": "A read-only way to look at sanctuary services and documents without running automation, calling outside APIs, or treating the view as a live control plane.",
+  "evidence_state": "SEALED",
+  "implementation_state": "READ_ONLY_UI",
+  "implementation_state_public_wording": "A working local read-only cockpit exists. It is not the public Golden Website and not a live public map.",
+  "prototype_class": "WORKING",
+  "demonstrably_working": [
+    "A read-only navigator cockpit was built to show service names and document links without execute buttons.",
+    "A sanctuary green receipt records that posture: links only, no workflow run controls, no cloud memory, no API product added for that slice."
+  ],
+  "non_public_or_unproven": [
+    "WORKING local interface is not backend production, billing, or a public edge.",
+    "SEALED is not deployed on the public internet.",
+    "The navigator is not Golden Universe Map yet; that public map identity is reserved and unbuilt.",
+    "No live cross-project bridge is claimed."
+  ],
+  "public_safe_evidence_references": [
+    {
+      "title": "Universal Workstation Navigator green receipt (NAV-1)",
+      "kind": "sealed_slice_described_without_paths",
+      "supports": "Read-only cockpit intent was recorded: no run buttons, no cloud memory, no API added in that slice.",
+      "does_not_support": "Public website launch, live orchestration, or production backend."
+    }
+  ],
+  "safe_screenshot_or_prototype_references": [
+    {
+      "kind": "local_readonly_cockpit",
+      "public_safe_description": "An operator-facing read-only navigator exists inside the sanctuary dashboard family. No public screenshot file is attached in GW-2.",
+      "public_screenshot_available": false
+    }
+  ],
+  "commercial_status": "POTENTIAL_NOT_VALIDATED",
+  "economic_roles": ["ENABLER"],
+  "ethical_public_benefit_role": "Lets operators see what exists without granting the page power to act. Not a public exploration product until published.",
+  "limitations": [
+    "Must not be described as the Golden Website.",
+    "Must not be described as Golden Guide AI.",
+    "Must not iframe or deep-link internal dashboard files in a public capsule.",
+    "No public-safe PNG mockup is attached (GW-0A found no marketing screenshot library for this surface)."
+  ],
+  "next_milestone": "Steward publication decision. If approved after all five gates, this may become the explore companion to Z-Sanctuary Core.",
+  "intended_public_journey_slot": "explore_how_visitors_look_around",
+  "proof_gates": {
+    "identity_clear": "PASS",
+    "claim_wording_safe": "PASS",
+    "evidence_attached": "PASS",
+    "security_sanitization_green": "PASS",
+    "human_approval_explicit": "GRANTED"
+  },
+  "steward_classification": "APPROVED_PUBLIC_SAFE",
+  "publication": "NOT_YET_AUTHORIZED",
+  "eligible_for_approved_public_safe": true,
+  "published_to_knowledge_twin": false,
+  "website_page_authorized": false,
+  "publication_decision": "CLASSIFICATION_APPROVED_PUBLICATION_NOT_YET_AUTHORIZED",
+  "next_milestone": "Await Core Steward decision and a later phase for any local Golden Foundation Shell. No live page in GW-2A."
+}

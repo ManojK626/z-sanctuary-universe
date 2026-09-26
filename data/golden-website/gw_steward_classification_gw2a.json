@@ -1,0 +1,27 @@
+{
+  "schema": "gw_steward_classification_v1",
+  "phase": "GW-3",
+  "note": "Both records APPROVED_PUBLIC_SAFE. Publication still NOT_YET_AUTHORIZED. Twin records[] stay empty. Local shell is not public deploy.",
+  "records": [
+    {
+      "canonical_id": "z_sanctuary_core",
+      "classification": "APPROVED_PUBLIC_SAFE",
+      "publication": "NOT_YET_AUTHORIZED",
+      "human_approval_explicit": "GRANTED",
+      "granted_at": "2026-08-27",
+      "inserted_into_knowledge_twin_records": false,
+      "website_page_authorized": false,
+      "local_foundation_shell": "GW-3"
+    },
+    {
+      "canonical_id": "univ_workstation_navigator",
+      "classification": "APPROVED_PUBLIC_SAFE",
+      "publication": "NOT_YET_AUTHORIZED",
+      "human_approval_explicit": "GRANTED",
+      "granted_at": "2026-08-27",
+      "inserted_into_knowledge_twin_records": false,
+      "website_page_authorized": false,
+      "local_foundation_shell": "GW-3"
+    }
+  ]
+}

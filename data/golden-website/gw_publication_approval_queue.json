@@ -1,0 +1,51 @@
+{
+  "schema": "gw_publication_approval_queue_v1",
+  "phase": "GW-2A",
+  "generated_at": "2026-08-27T06:00:00.000Z",
+  "policy": "Classification is not live publication. Twin records[] stay empty.",
+  "twin_inserts_this_phase": 0,
+  "approved_public_safe_this_phase": 1,
+  "note": "Navigator classification granted. Core remains HOLD. Other 158 overlay records unchanged.",
+  "items": [
+    {
+      "order": 1,
+      "canonical_id": "z_sanctuary_core",
+      "queue_reason": "Clearest public anchor: What is Z-Sanctuary?",
+      "capsule": "data/golden-website/capsules/gw_capsule_z_sanctuary_core.json",
+      "evidence_pack": "docs/golden-website/evidence/GW_2A_Z_SANCTUARY_CORE_PUBLIC_EVIDENCE_PACK.md",
+      "proof_gates": {
+        "identity_clear": "PASS",
+        "claim_wording_safe": "PASS",
+        "evidence_attached": "PASS",
+        "security_sanitization_green": "PASS",
+        "human_approval_explicit": "PENDING"
+      },
+      "steward_classification": "HOLD",
+      "recommended_for_approved_public_safe": true,
+      "eligible_for_approved_public_safe": false,
+      "blocker": "Human approval still pending. Evidence gate is now PASS; overlay evidence_state remains QUALIFIED.",
+      "publication": "NOT_AUTHORIZED",
+      "publication_decision": "PENDING_STEWARD_APPROVAL",
+      "published_to_knowledge_twin": false
+    },
+    {
+      "order": 2,
+      "canonical_id": "univ_workstation_navigator",
+      "queue_reason": "Explore companion. Classification approved; not a live page.",
+      "capsule": "data/golden-website/capsules/gw_capsule_univ_workstation_navigator.json",
+      "proof_gates": {
+        "identity_clear": "PASS",
+        "claim_wording_safe": "PASS",
+        "evidence_attached": "PASS",
+        "security_sanitization_green": "PASS",
+        "human_approval_explicit": "GRANTED"
+      },
+      "steward_classification": "APPROVED_PUBLIC_SAFE",
+      "publication": "NOT_YET_AUTHORIZED",
+      "eligible_for_approved_public_safe": true,
+      "blocker": "Publication not yet authorized. Do not insert into Twin records[] or build a website page in GW-2A.",
+      "publication_decision": "CLASSIFICATION_APPROVED_PUBLICATION_NOT_YET_AUTHORIZED",
+      "published_to_knowledge_twin": false
+    }
+  ]
+}

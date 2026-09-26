@@ -1,0 +1,121 @@
+{
+  "generated_at": "2026-08-27T08:11:32.304Z",
+  "phase": "GW-12",
+  "findings": [
+    {
+      "ok": true,
+      "id": "title",
+      "detail": ""
+    },
+    {
+      "ok": true,
+      "id": "failure-facts",
+      "detail": ""
+    },
+    {
+      "ok": true,
+      "id": "credible-answer",
+      "detail": ""
+    },
+    {
+      "ok": true,
+      "id": "defense-stack",
+      "detail": ""
+    },
+    {
+      "ok": true,
+      "id": "metaphor-law",
+      "detail": ""
+    },
+    {
+      "ok": true,
+      "id": "no-form",
+      "detail": ""
+    },
+    {
+      "ok": true,
+      "id": "no-mailto",
+      "detail": ""
+    },
+    {
+      "ok": true,
+      "id": "skip-focus",
+      "detail": ""
+    },
+    {
+      "ok": true,
+      "id": "integrity-44px",
+      "detail": ""
+    },
+    {
+      "ok": true,
+      "id": "integrity-mode-on",
+      "detail": ""
+    },
+    {
+      "ok": true,
+      "id": "integrity-banner",
+      "detail": ""
+    },
+    {
+      "ok": true,
+      "id": "hallucination-answer",
+      "detail": "Challenge the AI — local integrity sandbox. Golden Guide does not claim that it never hallucinates. An AI answer is not evidence. AI models can produce incorrect or unsupported out"
+    },
+    {
+      "ok": true,
+      "id": "guide-routes-integrity",
+      "detail": ""
+    },
+    {
+      "ok": true,
+      "id": "no-fake-citation",
+      "detail": ""
+    },
+    {
+      "ok": true,
+      "id": "overflow-integrity-desktop",
+      "detail": ""
+    },
+    {
+      "ok": true,
+      "id": "overflow-integrity-tablet",
+      "detail": ""
+    },
+    {
+      "ok": true,
+      "id": "overflow-integrity-mobile",
+      "detail": ""
+    },
+    {
+      "ok": true,
+      "id": "external-calls",
+      "detail": ""
+    }
+  ],
+  "overflow": [
+    {
+      "file": "ai-integrity.html",
+      "name": "desktop",
+      "width": 1440,
+      "height": 900,
+      "overflowX": false
+    },
+    {
+      "file": "ai-integrity.html",
+      "name": "tablet",
+      "width": 768,
+      "height": 1024,
+      "overflowX": false
+    },
+    {
+      "file": "ai-integrity.html",
+      "name": "mobile",
+      "width": 390,
+      "height": 844,
+      "overflowX": false
+    }
+  ],
+  "external_http_https": [],
+  "pass": true
+}
