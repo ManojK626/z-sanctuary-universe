@@ -1,22 +1,22 @@
 # Z-UORM 0.1 — Composition Contract
 
-**System ID:** Z-UORM-0.1  
-**Title:** Z-Universal Operational Readiness Mesh  
-**Owner:** Z-Sanctuary Universe  
-**Status:** DOCUMENTATION ONLY · LOCAL DRAFT · NOT SEALED TO MAIN · NOT PUBLISHED  
-**Date:** 2026-10-03  
-**Authority:** AMK-Goku / Steward  
-**Class:** thin composition standard / contract family  
-**Base:** `origin/main` `7bc5ad60d78e1eb578e1b92c005eab5634a986ea`  
-**Predecessors:** Z-SANCTUARY-UNIVERSAL-OPERATIONAL-READINESS-RECONCILIATION-0 · Z-UORM-0.1-CANONICAL-DOCTRINE-MERGE-DESIGN-1  
+**System ID:** Z-UORM-0.1
+**Title:** Z-Universal Operational Readiness Mesh
+**Owner:** Z-Sanctuary Universe
+**Status:** DOCUMENTATION ONLY · LOCAL DRAFT · NOT SEALED TO MAIN · NOT PUBLISHED
+**Date:** 2026-10-03
+**Authority:** AMK-Goku / Steward
+**Class:** thin composition standard / contract family
+**Base:** `origin/main` `7bc5ad60d78e1eb578e1b92c005eab5634a986ea`
+**Predecessors:** Z-SANCTUARY-UNIVERSAL-OPERATIONAL-READINESS-RECONCILIATION-0 · Z-UORM-0.1-CANONICAL-DOCTRINE-MERGE-DESIGN-1
 
-**Implementation:** NONE · **Runtime:** NONE · **Database:** NONE · **Dashboard:** NONE · **Dispatcher:** NONE  
+**Implementation:** NONE · **Runtime:** NONE · **Database:** NONE · **Dashboard:** NONE · **Dispatcher:** NONE
 
 Z-UORM is an organism-wide **standard**. It is **not** an organ. It is **not** owned by ZWheel. ZWheel is **reference evidence only**.
 
 Canonical home of this contract:
 
-`docs/z-uorm/Z_UORM_COMPOSITION_CONTRACT_0_1.md`  
+`docs/z-uorm/Z_UORM_COMPOSITION_CONTRACT_0_1.md`
 inside `Z_Sanctuary_Universe`.
 
 A ZWheel copy, if present, is **incubation provenance** only.
@@ -108,7 +108,7 @@ Deployment Readiness and Execution Enforcer sit **beside** Steward authority. He
 
 ## 4. Project Readiness Capsule
 
-**LOGICAL_VIEW / CONTRACT_SHAPE ONLY.**  
+**LOGICAL_VIEW / CONTRACT_SHAPE ONLY.**
 Not a persistent store, identity authority, scorer, health engine, scheduler, or database. No schema or writer is authorized in 0.1.
 
 ### 4.1 Project header
@@ -147,7 +147,7 @@ There is **no** project-wide U-level field.
 | `DEPLOYMENT_READINESS_STATE` | Cite Deployment Readiness / doorway / product gates |
 | `AUTHORITY_REQUIRED` | What a human must still decide |
 
-`CURRENT_PROOF_LEVEL` is **per-capability only**.  
+`CURRENT_PROOF_LEVEL` is **per-capability only**.
 `PROJECT = Un` is invalid. Averaging, scoring, and synthetic roll-up are forbidden in 0.1.
 
 A capability may hold a **dimensional proof set**. Independent fields remain authoritative when a single U-level would hide BLOCKED, DEFERRED, or debt.
@@ -208,10 +208,10 @@ U_LEVEL != STEWARD_APPROVAL
 | U7 | DEPLOYMENT_READY | Evidence complete enough to be **considered at** an **existing** deployment/release gate |
 | U8 | PRODUCTION_OBSERVED | **Authorized** production observation after a Steward/AMK-authorized ship |
 
-**U7** does **not** authorize deploy, open a gate, or allow production.  
+**U7** does **not** authorize deploy, open a gate, or allow production.
 **U8** is not “running somewhere” and not a production-like environment. A U7 label alone is not U8.
 
-Support a **dimensional proof set**. Optionally record a **highest-proof summary** per capability.  
+Support a **dimensional proof set**. Optionally record a **highest-proof summary** per capability.
 No project-wide aggregation. No averaging. No scoring. No synthetic roll-up.
 
 `GREEN != deploy`. `HOLD != incident`. `SIMULATED != physical`. `LIVE != production ready`.
@@ -245,10 +245,10 @@ Examples:
 
 ## 8. Health / readiness separation
 
-**HEALTH** answers: is the **active** system healthy **now**?  
+**HEALTH** answers: is the **active** system healthy **now**?
 **READINESS** answers: what has been **proven**, and what may **advance next**?
 
-Use **existing health reporting** (hub health/alert bots, sentinel, Traffic, dashboard claims).  
+Use **existing health reporting** (hub health/alert bots, sentinel, Traffic, dashboard claims).
 Do **not** invent `health-mesh/`.
 
 Health may **consume** readiness as context. Readiness does **not** create incidents.
@@ -288,7 +288,7 @@ This document does not execute, score, deploy, or authorize.
 
 **Z-MCO** is a **conceptual consumer only**. 0.1 does not create a Z-MCO file, folder, service, registry, or dispatcher.
 
-Cycle Observe and Z-MAOS may consume readiness for **planning**.  
+Cycle Observe and Z-MAOS may consume readiness for **planning**.
 No second queue. No second dispatcher. Z-UORM does not schedule.
 
 Supplied fields: `CURRENT_PROOF` · `EXPECTED_PROOF` · `EVIDENCE_FRESHNESS` · `BLOCKER_REASON` · `ELIGIBLE_NEXT_ACTION` · `AUTHORITY_REQUIRED`.
@@ -362,10 +362,10 @@ RUNTIME_OPENED: NO
 
 ## 15. ZWheel reference mapping
 
-**Illustrative · non-authoritative.** Does not rewrite ZWheel receipts.  
+**Illustrative · non-authoritative.** Does not rewrite ZWheel receipts.
 `ZWheel != Z-UORM owner`. Do not store the **canonical** standard under ZWheel.
 
-Identity at mapping time: `C:\Z-Wheel Cracker` · `df7450adeb45b752c2fb0da6454ceed7a4de5db7`.  
+Identity at mapping time: `C:\Z-Wheel Cracker` · `df7450adeb45b752c2fb0da6454ceed7a4de5db7`.
 ZWheel is **not** a first-class EAII / PC-root row. `UNREGISTERED` ≠ missing product.
 
 | Field | Illustrative value |
