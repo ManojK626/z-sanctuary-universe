@@ -29,7 +29,7 @@
     "verify:md": "npm run lint:md",
     "verify:hub:metadata": "npm run verify:md && npm run z:cross-project:sync && npm run dashboard:registry-verify && npm run cursor:folders:verify",
     "lint": "npm run lint:root && npm run lint:topics && npm run lint:md && npm run lint --workspaces",
-    "verify:ci": "node scripts/z_execution_enforcer_gate.mjs && npm run cursor:folders:verify && node scripts/z_sanctuary_structure_verify.mjs && node scripts/z_registry_omni_verify.mjs && npm run comms:github-ai && npm run comms:cloudflare-ai && node scripts/z_project_freshness_refresh.mjs && node scripts/z_system_status_refresh.mjs --ci-pass && node scripts/z_guardian_report.mjs && npm run ecosystem:workspace-drift",
+    "verify:ci": "node scripts/z_execution_enforcer_gate.mjs --verify-only && npm run cursor:folders:verify && node scripts/z_sanctuary_structure_verify.mjs && node scripts/z_registry_omni_verify.mjs && npm run comms:github-ai && npm run comms:cloudflare-ai && node scripts/z_project_freshness_refresh.mjs && node scripts/z_system_status_refresh.mjs --ci-pass && node scripts/z_guardian_report.mjs && npm run ecosystem:workspace-drift",
     "freshness:refresh": "node scripts/z_project_freshness_refresh.mjs",
     "pc-root:catalog": "node scripts/z_pc_root_catalog.mjs",
     "pc-root:catalog:baseline": "node scripts/z_pc_root_catalog.mjs --save-baseline",

@@ -102,6 +102,21 @@ function clone(value) {
   return JSON.parse(JSON.stringify(value));
 }
 
+function writeReport(dir, report) {
+  const target = path.join(dir, 'data', 'reports', 'z_execution_enforcer.json');
+  fs.mkdirSync(path.dirname(target), { recursive: true });
+  fs.writeFileSync(target, `${JSON.stringify(report, null, 2)}\n`);
+  return target;
+}
+
+function runGate(dir, args) {
+  return spawnSync(
+    process.execPath,
+    [path.join(ROOT, 'scripts', 'z_execution_enforcer_gate.mjs'), ...args],
+    { cwd: dir, encoding: 'utf8' }
+  );
+}
+
 test('1 SOURCE_MISSING BLOCK', async () => {
   const dir = makeTemp();
   try {
@@ -833,5 +848,173 @@ test('26 ready_override true with a failing gate is attested and technical BLOCK
     assert.equal(decision.deploy_allowed, false);
   } finally {
     cleanup(dir);
+  }
+});
+
+test('27 normal gate BLOCK is non-zero', async () => {
+  const dir = makeTemp();
+  try {
+    writeGates(dir, gateSource(NONE_PASS));
+    const fresh = await deriveDir(dir);
+    writeReport(dir, { action: 'BLOCK', readiness_attestation: fresh.attestation, enforcement: { deploy_allowed: true } });
+    const cli = runGate(dir, ['--skip-refresh']);
+    assert.notEqual(cli.status, 0);
+    assert.match(cli.stderr || '', /BLOCKED/);
+    assert.doesNotMatch(`${cli.stdout || ''}`, /Gate passed/);
+  } finally {
+    cleanup(dir);
+  }
+});
+
+test('28 normal gate UNKNOWN is non-zero', async () => {
+  const dir = makeTemp();
+  try {
+    writeGates(dir, gateSource(NONE_PASS));
+    const fresh = await deriveDir(dir);
+    writeReport(dir, { action: 'UNKNOWN', readiness_attestation: fresh.attestation });
+    const cli = runGate(dir, ['--skip-refresh']);
+    assert.notEqual(cli.status, 0);
+    assert.match(cli.stderr || '', /BLOCKED/);
+    assert.doesNotMatch(`${cli.stdout || ''}`, /Gate passed/);
+  } finally {
+    cleanup(dir);
+  }
+});
+
+test('29 normal gate FORCE_DIAGNOSTICS is non-zero', async () => {
+  const dir = makeTemp();
+  try {
+    writeGates(dir, gateSource(NONE_PASS));
+    const fresh = await deriveDir(dir);
+    writeReport(dir, { action: 'FORCE_DIAGNOSTICS', readiness_attestation: fresh.attestation });
+    const cli = runGate(dir, ['--skip-refresh']);
+    assert.notEqual(cli.status, 0);
+    assert.match(cli.stderr || '', /BLOCKED/);
+    assert.doesNotMatch(`${cli.stdout || ''}`, /Gate passed/);
+  } finally {
+    cleanup(dir);
+  }
+});
+
+test('30 normal gate valid ALLOW_PROGRESS is a technical pass', async () => {
+  const dir = makeTemp();
+  try {
+    writeGates(dir, gateSource(ALL_PASS));
+    const fresh = await deriveDir(dir);
+    assert.equal(fresh.attestation.ready, true);
+    assert.equal(fresh.attestation.gates_pass, 4);
+    writeReport(dir, { action: 'ALLOW_PROGRESS', readiness_attestation: fresh.attestation });
+    const cli = runGate(dir, ['--skip-refresh']);
+    assert.equal(cli.status, 0);
+    assert.match(cli.stdout || '', /Gate passed/);
+    assert.doesNotMatch(`${cli.stderr || ''}`, /BLOCKED/);
+  } finally {
+    cleanup(dir);
+  }
+});
+
+test('31 verify-only coherent BLOCK exits 0 without authority', async () => {
+  const dir = makeTemp();
+  try {
+    writeGates(dir, gateSource(NONE_PASS));
+    const fresh = await deriveDir(dir);
+    const reportPath = writeReport(dir, {
+      action: 'BLOCK',
+      readiness_attestation: fresh.attestation,
+      enforcement: { deploy_allowed: true },
+    });
+    const before = fs.readFileSync(reportPath);
+    const cli = runGate(dir, ['--verify-only', '--skip-refresh']);
+    assert.equal(cli.status, 0);
+    assert.match(cli.stdout || '', /verify-only action=BLOCK/);
+    assert.doesNotMatch(cli.stdout || '', /action=ALLOW_PROGRESS/);
+    assert.match(cli.stdout || '', /deploy_allowed=false/);
+    assert.doesNotMatch(cli.stdout || '', /deploy_allowed=true/);
+    assert.match(cli.stdout || '', /execution_authority=none/);
+    assert.match(cli.stdout || '', /No execution authority granted/);
+    assert.doesNotMatch(`${cli.stdout || ''}`, /Gate passed/);
+    assert.equal(fs.readFileSync(reportPath).equals(before), true);
+    const stored = JSON.parse(fs.readFileSync(reportPath, 'utf8'));
+    assert.equal(stored.action, 'BLOCK');
+    assert.equal(stored.enforcement.deploy_allowed, true);
+  } finally {
+    cleanup(dir);
+  }
+});
+
+test('32 verify-only cannot satisfy require-deployment', async () => {
+  const dir = makeTemp();
+  try {
+    writeGates(dir, gateSource(ALL_PASS));
+    const fresh = await deriveDir(dir);
+    writeReport(dir, { action: 'ALLOW_PROGRESS', readiness_attestation: fresh.attestation });
+    fs.mkdirSync(path.join(dir, 'data'), { recursive: true });
+    fs.writeFileSync(
+      path.join(dir, 'data', 'z_release_control.json'),
+      `${JSON.stringify({ manual_release: true, approved_by: 'unbound-fixture', timestamp: FIXED })}\n`
+    );
+    const verify = runGate(dir, ['--verify-only', '--skip-refresh']);
+    assert.notEqual(verify.status, 0);
+    assert.match(verify.stdout || '', /deploy_allowed=false/);
+    assert.match(verify.stdout || '', /execution_authority=none/);
+    assert.doesNotMatch(`${verify.stdout || ''}`, /Gate passed/);
+    assert.doesNotMatch(`${verify.stdout || ''}`, /authorized/);
+
+    const deployment = spawnSync(
+      process.execPath,
+      [
+        path.join(ROOT, 'scripts', 'z_readiness_attestation.mjs'),
+        '--verify-only',
+        '--require-deployment',
+        '--root',
+        dir,
+      ],
+      { encoding: 'utf8' }
+    );
+    assert.notEqual(deployment.status, 0);
+    assert.match(deployment.stderr || '', /denied/);
+    assert.doesNotMatch(`${deployment.stdout || ''}`, /authorized/);
+    assert.equal(fs.existsSync(path.join(dir, 'data', 'z_release_control.json')), true);
+    const control = JSON.parse(fs.readFileSync(path.join(dir, 'data', 'z_release_control.json'), 'utf8'));
+    assert.equal(control.bound_attestation, undefined);
+  } finally {
+    cleanup(dir);
+  }
+});
+
+test('33 verify-only rejects malformed or invalid attestation', async () => {
+  const invalidOverride = makeTemp();
+  const brokenSource = makeTemp();
+  const malformedStored = makeTemp();
+  try {
+    writeGates(invalidOverride, gateSource(NONE_PASS));
+    writeOverride(invalidOverride, '{');
+    const invalid = await deriveDir(invalidOverride);
+    assert.equal(invalid.override.state, 'INVALID');
+    writeReport(invalidOverride, { action: 'BLOCK', readiness_attestation: invalid.attestation });
+    const invalidCli = runGate(invalidOverride, ['--verify-only', '--skip-refresh']);
+    assert.notEqual(invalidCli.status, 0);
+    assert.match(invalidCli.stderr || '', /VERIFY FAILED: INVALID_OVERRIDE/);
+    assert.doesNotMatch(`${invalidCli.stdout || ''}`, /Gate passed/);
+
+    writeGates(brokenSource, 'function not a module {{{');
+    writeReport(brokenSource, { action: 'BLOCK' });
+    const brokenCli = runGate(brokenSource, ['--verify-only', '--skip-refresh']);
+    assert.notEqual(brokenCli.status, 0);
+    assert.match(brokenCli.stderr || '', /VERIFY FAILED: SOURCE_INVALID/);
+
+    writeGates(malformedStored, gateSource(NONE_PASS));
+    writeReport(malformedStored, {
+      action: 'ALLOW_PROGRESS',
+      readiness_attestation: { attestation_version: 'not-the-contract', ready: true },
+    });
+    const malformedCli = runGate(malformedStored, ['--verify-only', '--skip-refresh']);
+    assert.notEqual(malformedCli.status, 0);
+    assert.match(malformedCli.stderr || '', /VERIFY FAILED: PROVENANCE_MALFORMED/);
+    assert.doesNotMatch(`${malformedCli.stdout || ''}`, /action=ALLOW_PROGRESS/);
+  } finally {
+    cleanup(invalidOverride);
+    cleanup(brokenSource);
+    cleanup(malformedStored);
   }
 });

@@ -29,11 +29,18 @@ function invokedDirectly() {
   return import.meta.url === pathToFileURL(arg).href;
 }
 
-if (invokedDirectly()) {
+async function main() {
   const result = await refreshOctaveReadiness();
   if (!result.ok) {
     console.error(`Z-OCTAVE readiness refresh blocked: ${result.code}`);
     process.exit(1);
   }
   console.log('✅ Z-OCTAVE readiness refreshed:', result.outPath || outPath);
+}
+
+if (invokedDirectly()) {
+  main().catch((error) => {
+    console.error(`Z-OCTAVE readiness refresh failed: ${error?.message || String(error)}`);
+    process.exit(1);
+  });
 }
