@@ -1,5 +1,6 @@
 import fs from 'node:fs';
 import path from 'node:path';
+import { pathToFileURL } from 'node:url';
 
 const ROOT = process.cwd();
 const REPORTS_DIR = path.join(ROOT, 'data', 'reports');
@@ -40,6 +41,27 @@ function trendDelta(current, base) {
 function num(v, fallback = 0) {
   const n = Number(v);
   return Number.isFinite(n) ? n : fallback;
+}
+
+/** Reporting copy only. Octave counts stay on the octave readiness vector. Bridge stays separate. */
+export function computeOctaveBridgeMetrics(readiness, bridgeReadiness) {
+  const readyGates = Array.isArray(readiness?.gates) ? readiness.gates : [];
+  const octaveGatesPass = readyGates.filter((g) => Boolean(g?.pass)).length;
+  const octaveGatesTotal = readyGates.length;
+  const bridgeGatesPass = Number(bridgeReadiness?.summary?.gates_pass ?? 0);
+  const bridgeGatesTotal = Number(bridgeReadiness?.summary?.gates_total ?? 0);
+  const bridgeReady = bridgeReadiness?.summary?.status === 'PASS';
+  const attestation = readiness?.attestation;
+  return {
+    readiness_ready: Boolean(readiness?.ready),
+    readiness_gates_total: octaveGatesTotal,
+    readiness_gates_pass: octaveGatesPass,
+    bridge_ready: bridgeReady,
+    bridge_gates_total: bridgeGatesTotal,
+    bridge_gates_pass: bridgeGatesPass,
+    readiness_attestation:
+      attestation && typeof attestation === 'object' ? JSON.parse(JSON.stringify(attestation)) : null,
+  };
 }
 
 /** Visibility-only: AAFRTC context + GitHub/Cloudflare comms manifest recency (no control). */
@@ -247,6 +269,7 @@ function computeExternalObserversHealth(observers, nowIso, staleThresholdHours) 
   };
 }
 
+function runZunoStateReport() {
 const generatedAt = new Date().toISOString();
 const today = ymd(generatedAt);
 
@@ -969,14 +992,7 @@ const taskP1Open = tasks.filter(
 ).length;
 const taskCompletionPct = pct(tasks.length - taskOpen, tasks.length);
 
-const readyGates = Array.isArray(readiness?.gates) ? readiness.gates : [];
-const octaveGatesPass = readyGates.filter((g) => Boolean(g?.pass)).length;
-const bridgeReadinessAllPass =
-  bridgeReadiness?.summary?.status === 'PASS' &&
-  Number(bridgeReadiness?.summary?.gates_pass) === 4 &&
-  Number(bridgeReadiness?.summary?.gates_total || 0) === 4;
-const readinessGatesTotal = Math.max(readyGates.length, 4);
-const gatesPassing = bridgeReadinessAllPass ? Math.min(4, readinessGatesTotal) : octaveGatesPass;
+const readinessView = computeOctaveBridgeMetrics(readiness, bridgeReadiness);
 const otelChecks = Array.isArray(otelShadow?.checks) ? otelShadow.checks : [];
 const otelChecksPass = otelChecks.filter((c) => Boolean(c?.pass)).length;
 const policyChecks = Array.isArray(policyShadow?.checks) ? policyShadow.checks : [];
@@ -996,9 +1012,12 @@ const snapshot = {
     task_completion_pct: taskCompletionPct,
     pending_total: Number(pending?.total || 0),
     hygiene_green: String(hygiene?.status || '').toLowerCase() === 'green',
-    readiness_ready: Boolean(readiness?.ready) || bridgeReadinessAllPass,
-    readiness_gates_total: readinessGatesTotal,
-    readiness_gates_pass: gatesPassing,
+    readiness_ready: readinessView.readiness_ready,
+    readiness_gates_total: readinessView.readiness_gates_total,
+    readiness_gates_pass: readinessView.readiness_gates_pass,
+    bridge_ready: readinessView.bridge_ready,
+    bridge_gates_total: readinessView.bridge_gates_total,
+    bridge_gates_pass: readinessView.bridge_gates_pass,
     ai_agents: Number(ai?.ai_tower?.agent_count || 0),
     auto_tasks: Array.isArray(autorun?.auto_tasks) ? autorun.auto_tasks.length : 0,
     otel_shadow_status: String(otelShadow?.status || 'unknown'),
@@ -1022,6 +1041,7 @@ const snapshot = {
         ? extensionGuard.checks.filter((c) => !c.pass).length
         : 0,
   },
+  readiness_attestation: readinessView.readiness_attestation,
 };
 
 const historyRaw = readJson(HISTORY_JSON, []);
@@ -1512,6 +1532,7 @@ const md = [
   `- Pending audit total: **${snapshot.metrics.pending_total}**`,
   `- Hygiene status: **${snapshot.metrics.hygiene_green ? 'green' : 'hold'}**`,
   `- Z-OCTAVE gates: **${snapshot.metrics.readiness_gates_pass}/${snapshot.metrics.readiness_gates_total}**`,
+  `- Bridge readiness: **${snapshot.metrics.bridge_gates_pass}/${snapshot.metrics.bridge_gates_total}** (${snapshot.metrics.bridge_ready ? 'PASS' : 'HOLD'})`,
   '',
   '## Shadow Foundation',
   `- OTel shadow: **${snapshot.metrics.otel_shadow_status}** (${snapshot.metrics.otel_shadow_checks_pass}/${snapshot.metrics.otel_shadow_checks_total})`,
@@ -1549,3 +1570,14 @@ writeJson(LEGACY_DAILY_JSON, reportJson);
 fs.writeFileSync(LEGACY_DAILY_MD, md.join('\n'));
 
 console.log(`✅ Zuno state report written: ${OUT_MD}`);
+}
+
+function zunoInvokedDirectly() {
+  const arg = process.argv[1];
+  if (!arg) return false;
+  return import.meta.url === pathToFileURL(arg).href;
+}
+
+if (zunoInvokedDirectly()) {
+  runZunoStateReport();
+}

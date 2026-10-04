@@ -1,7 +1,9 @@
 #!/usr/bin/env node
 import fs from 'node:fs/promises';
 import path from 'node:path';
+import { pathToFileURL } from 'node:url';
 import { spawnSync } from 'node:child_process';
+import { acceptProgress, deriveAttestation } from './z_readiness_attestation.mjs';
 
 const ROOT = process.cwd();
 const REPORT_PATH = path.join(ROOT, 'data', 'reports', 'z_execution_enforcer.json');
@@ -25,10 +27,6 @@ async function readReport() {
   }
 }
 
-function normalize(value, fallback = '') {
-  return String(value || fallback).trim().toUpperCase();
-}
-
 function printSummary(report) {
   const checks = report?.checks || {};
   process.stdout.write(
@@ -36,15 +34,23 @@ function printSummary(report) {
   );
 }
 
-function ensureAllowed(report) {
-  const action = normalize(report?.action, 'UNKNOWN');
-  if (action === 'BLOCK') {
-    const reason = report?.reason || 'Execution Enforcer requested BLOCK.';
-    process.stderr.write(`[Z-EE] BLOCKED: ${reason}\n`);
-    process.stderr.write('[Z-EE] Resolve blockers, then rerun gate.\n');
-    return false;
-  }
-  return true;
+/**
+ * Stored ALLOW_PROGRESS is not authority. Caller must pass a freshly derived attestation,
+ * including when the enforcer report refresh was skipped.
+ */
+export function evaluateStoredReport(report, fresh, releaseControl) {
+  return acceptProgress({
+    action: report?.action,
+    storedAttestation: report?.readiness_attestation ?? null,
+    fresh,
+    releaseControl,
+  });
+}
+
+function invokedDirectly() {
+  const arg = process.argv[1];
+  if (!arg) return false;
+  return import.meta.url === pathToFileURL(arg).href;
 }
 
 async function main() {
@@ -63,15 +69,21 @@ async function main() {
     process.exit(1);
   }
 
+  const fresh = await deriveAttestation({ root: ROOT });
+  const decision = evaluateStoredReport(report, fresh);
   printSummary(report);
-  if (!ensureAllowed(report)) {
+  if (decision.action !== 'ALLOW_PROGRESS' || !decision.accept) {
+    process.stderr.write(`[Z-EE] BLOCKED: ${decision.code}\n`);
+    process.stderr.write('[Z-EE] Resolve blockers, then rerun gate.\n');
     process.exit(2);
   }
 
   process.stdout.write('[Z-EE] Gate passed.\n');
 }
 
-main().catch((error) => {
-  process.stderr.write(`[Z-EE] Gate failed: ${error?.message || String(error)}\n`);
-  process.exit(1);
-});
+if (invokedDirectly()) {
+  main().catch((error) => {
+    process.stderr.write(`[Z-EE] Gate failed: ${error?.message || String(error)}\n`);
+    process.exit(1);
+  });
+}
