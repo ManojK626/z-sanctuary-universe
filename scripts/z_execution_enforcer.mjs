@@ -1,7 +1,9 @@
 #!/usr/bin/env node
 import fs from 'node:fs/promises';
 import path from 'node:path';
+import { pathToFileURL } from 'node:url';
 import { evaluateReleaseGovernance, normalizeReleaseControl } from './z_release_governance_core.mjs';
+import { assessTechnical, deriveAttestation, evaluateDeployment } from './z_readiness_attestation.mjs';
 
 const ROOT = process.cwd();
 const REPORT_DIR = path.join(ROOT, 'data', 'reports');
@@ -46,11 +48,11 @@ function chooseAction(context) {
   if (context.p1Open > 0) {
     blockers.push(`P1 tasks open: ${context.p1Open}`);
   }
-  if (context.releaseGate !== 'ready') {
-    blockers.push(`Release governance: ${context.releaseGate} (${context.governanceHint || 'see z_release_governance.json'})`);
-  }
-  if (context.readinessPass < context.readinessTotal) {
-    blockers.push(`Readiness gates: ${context.readinessPass}/${context.readinessTotal}`);
+  if (context.technicalPass !== true) {
+    blockers.push(
+      context.technicalReason ||
+        `Readiness gates: ${context.readinessPass}/${context.readinessTotal}`
+    );
   }
 
   let action = 'ALLOW_PROGRESS';
@@ -96,6 +98,7 @@ function buildReport(context) {
     action: decision.action,
     reason: decision.reason,
     blockers: decision.blockers,
+    readiness_attestation: context.attestation ?? null,
     checks: {
       p1_open: context.p1Open,
       readiness_pass: context.readinessPass,
@@ -121,16 +124,16 @@ function buildReport(context) {
     },
     enforcement: {
       build_allowed: decision.action === 'ALLOW_PROGRESS',
-      deploy_allowed: context.readinessPass >= context.readinessTotal && context.releaseGate === 'ready',
+      deploy_allowed: context.deployAllowed === true,
       diagnostics_required: decision.action === 'FORCE_DIAGNOSTICS' || context.disturbance === 'alert',
       module_promotion_allowed: promotionAllowed,
     },
     directives: [
       context.p1Open > 0 ? 'Resolve P1 tasks before new build actions.' : null,
-      context.readinessPass < context.readinessTotal ? 'Pass all readiness gates before deployment.' : null,
-      context.releaseGate !== 'ready'
-        ? 'When readiness is full and P1 is clear: set data/z_release_control.json manual_release true (human approval) to set governance to ready; keep trust/freshness green for the full npm run release:gate pipeline.'
-        : null,
+      context.technicalPass !== true ? 'Pass all readiness gates before technical progress.' : null,
+      context.deployAllowed === true
+        ? null
+        : 'Deployment requires human approval bound to the current readiness attestation.',
       context.disturbance === 'alert' ? 'Run disturbance diagnostics and clear failed checks.' : null,
       !promotionAllowed ? 'Keep planned modules from promotion until they are explicitly marked ready.' : null,
     ].filter(Boolean),
@@ -163,9 +166,18 @@ async function main() {
   const disturbanceFromZuno = String(zuno?.executive_status?.disturbance_watch || '').toLowerCase();
   const disturbanceFromAi = String(aiStatus?.disturbance_watch?.status || '').toLowerCase();
 
+  const derived = await deriveAttestation({ root: ROOT });
+  const attestation = derived.ok ? derived.attestation : null;
+  const technical = derived.ok ? assessTechnical(attestation) : { pass: false, code: derived.code };
+  const deployment = evaluateDeployment({
+    attestation,
+    releaseControl: controlRaw,
+    technicalPass: technical.pass,
+  });
+
   const p1Open = Math.max(num(metrics.task_p1_open, 0), countOpenP1FromTaskList(taskList));
-  const readinessPass = num(metrics.readiness_gates_pass, 0);
-  const readinessTotal = Math.max(num(metrics.readiness_gates_total, 4), 1);
+  const readinessPass = attestation ? attestation.gates_pass : 0;
+  const readinessTotal = attestation ? attestation.gates_total : 0;
   const control = normalizeReleaseControl(controlRaw);
 
   const governanceSnapshot = evaluateReleaseGovernance({
@@ -180,7 +192,7 @@ async function main() {
     governanceHint = 'manual_release false (edit data/z_release_control.json)';
   } else if (p1Open > 0) {
     governanceHint = 'P1 backlog not clear';
-  } else if (readinessPass < readinessTotal) {
+  } else if (technical.pass !== true) {
     governanceHint = `readiness ${readinessPass}/${readinessTotal}`;
   } else {
     governanceHint = 'ready';
@@ -290,6 +302,10 @@ async function main() {
     p1Open,
     readinessPass,
     readinessTotal,
+    technicalPass: technical.pass === true,
+    technicalReason: technical.pass === true ? null : `Readiness attestation ${technical.code}: ${readinessPass}/${readinessTotal}`,
+    deployAllowed: deployment.deploy_allowed === true,
+    attestation,
     releaseGate: governanceSnapshot.effective_release_gate,
     governanceSnapshot,
     governanceHint,
@@ -318,7 +334,15 @@ async function main() {
   process.stdout.write(`Z Execution Enforcer report written: ${OUTPUT_PATH}\n`);
 }
 
-main().catch((error) => {
-  process.stderr.write(`z_execution_enforcer failed: ${error?.message || String(error)}\n`);
-  process.exitCode = 1;
-});
+function invokedDirectly() {
+  const arg = process.argv[1];
+  if (!arg) return false;
+  return import.meta.url === pathToFileURL(arg).href;
+}
+
+if (invokedDirectly()) {
+  main().catch((error) => {
+    process.stderr.write(`z_execution_enforcer failed: ${error?.message || String(error)}\n`);
+    process.exitCode = 1;
+  });
+}
