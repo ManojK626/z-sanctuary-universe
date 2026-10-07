@@ -82,7 +82,7 @@
       "eaii_launch_task": "",
       "dashboard_url": "https://replit.com/@manojkeerpal/Roulette-Data-Analyzer",
       "migration_status": "registered_linked",
-      "notes": "Hosted on Replit; no pc_root folder. Link-only until migrated to hub-controlled deploy (e.g. Cloudflare). Replace dashboard_url with live .replit.dev preview if you prefer that entry point."
+      "notes": "Retained Replit link and external surface. Not the current local implementation. Not Super-Saiyan-Roulette-Pro-App. Not the hub Super Saiyan Roulette module. No shared git lineage claimed. Steward Z-LKB-0B.2 accepted 2026-10-07."
     },
     {
       "id": "sister-aisling-sol",
@@ -155,15 +155,13 @@
     {
       "id": "z-sanctuary-browser-z-saiyan-lumina",
       "name": "Z-Sanctuary Browser (Z-Saiyan Lumina)",
-      "path": "",
+      "path": "Z-Sanctuary Browser",
       "role": "external",
-      "hosting": "missing",
       "ssws": false,
       "formula_aware": true,
       "eaii_launch_task": "",
       "dashboard_url": "",
-      "migration_status": "path_missing",
-      "notes": "Folder `Z-Sanctuary Browser` absent on disk 2026-07-01. Restore from backup or archive registry row after AMK review."
+      "notes": "Path filled from the existing folder Z-Sanctuary Browser. Same project as this row. Steward Z-LKB-0B.2 accepted 2026-10-07. The 2026-07-01 absence note is superseded. No second project row. Role left external so this preview does not invent member status."
     },
     {
       "id": "z-sanctuary-claude-core",
