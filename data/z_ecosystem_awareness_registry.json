@@ -134,9 +134,9 @@
     },
     {
       "project_id": "eirmind",
-      "display_name": "ÉirMind / Aisling-Sol legacy branch",
+      "display_name": "ÉirMind / Z-ÉirMind Ireland Universe",
       "project_type": "external_reference",
-      "repo_path_or_external_note": "external:satellite_reference; PC folder missing: Ireland Projects; on-disk lineage: Z-Sister Aisling Sol",
+      "repo_path_or_external_note": "logical_identity: ÉirMind; physical_root: Z-Sister Aisling Sol (folder name ≠ organism); ai_persona: Sister Aisling-Sol; legacy_pointer: Ireland Projects ABSENT (organism NOT absent)",
       "capsule_path": "",
       "required_for_daily_status": false,
       "api_readiness_ref": "unknown",
@@ -146,9 +146,9 @@
       "autonomy_level": "L0",
       "allowed_auto_checks": [],
       "human_gated_actions": ["bridge", "billing", "public_claims"],
-      "related_docs": ["docs/Z-HIERARCHY-CHIEF-AND-OBSERVER-VIEW.md"],
+      "related_docs": ["docs/Z-HIERARCHY-CHIEF-AND-OBSERVER-VIEW.md", "docs/root-discovery-audit/EIRMIND_ALIGNMENT_DECISION.md"],
       "related_reports": [],
-      "known_hold_reason": "Hold pending AMK — EIRMIND_ALIGNMENT_DECISION.md (rehome under Aisling-Sol recommended; not implemented)",
+      "known_hold_reason": "Identity reconciled 2026-09-16 — organism PRESENT via physical root Z-Sister Aisling Sol. Deployment remains NO_GO. Identity ≠ operational readiness. Capsule still empty.",
       "deployment_status": "NO_GO",
       "cloudflare_status": "HOLD",
       "owner_or_steward": "AMK-Goku"
