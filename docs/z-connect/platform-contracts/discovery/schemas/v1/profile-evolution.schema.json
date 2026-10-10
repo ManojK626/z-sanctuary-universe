@@ -1,0 +1,53 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://z-sanctuary.local/z-connect/schemas/v1/profile-evolution.json",
+  "title": "ZConnectProfileEvolution",
+  "description": "Proposed profile delta awaiting approval.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schemaVersion",
+    "evolutionId",
+    "userId",
+    "fromProfileVersion",
+    "proposedFieldPaths",
+    "status",
+    "proposedAtIso"
+  ],
+  "properties": {
+    "schemaVersion": {
+      "$ref": "../../common/schemas/v1/_definitions.schema.json#/$defs/SchemaVersion"
+    },
+    "evolutionId": {
+      "$ref": "../../common/schemas/v1/_definitions.schema.json#/$defs/Identifier"
+    },
+    "userId": {
+      "$ref": "../../common/schemas/v1/_definitions.schema.json#/$defs/UserId"
+    },
+    "fromProfileVersion": {
+      "type": "integer",
+      "minimum": 1
+    },
+    "toProfileVersion": {
+      "type": "integer",
+      "minimum": 1
+    },
+    "proposedFieldPaths": {
+      "type": "array",
+      "items": {
+        "$ref": "../../common/schemas/v1/_definitions.schema.json#/$defs/SourceFieldRef"
+      }
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "pending",
+        "approved",
+        "rejected"
+      ]
+    },
+    "proposedAtIso": {
+      "$ref": "../../common/schemas/v1/_definitions.schema.json#/$defs/TimestampIso"
+    }
+  }
+}

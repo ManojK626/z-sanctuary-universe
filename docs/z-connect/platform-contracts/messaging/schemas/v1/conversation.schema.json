@@ -1,0 +1,36 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://z-sanctuary.local/z-connect/schemas/v1/messaging-conversation.json",
+  "title": "ZConnectConversation",
+  "description": "Messaging thread between connected users.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schemaVersion",
+    "conversationId",
+    "participantUserIds",
+    "createdAtIso"
+  ],
+  "properties": {
+    "schemaVersion": {
+      "$ref": "../../common/schemas/v1/_definitions.schema.json#/$defs/SchemaVersion"
+    },
+    "conversationId": {
+      "$ref": "../../common/schemas/v1/_definitions.schema.json#/$defs/Identifier"
+    },
+    "participantUserIds": {
+      "type": "array",
+      "items": {
+        "$ref": "../../common/schemas/v1/_definitions.schema.json#/$defs/UserId"
+      },
+      "minItems": 2,
+      "maxItems": 8
+    },
+    "createdAtIso": {
+      "$ref": "../../common/schemas/v1/_definitions.schema.json#/$defs/TimestampIso"
+    },
+    "branch": {
+      "$ref": "../../common/schemas/v1/_definitions.schema.json#/$defs/RelationshipBranch"
+    }
+  }
+}

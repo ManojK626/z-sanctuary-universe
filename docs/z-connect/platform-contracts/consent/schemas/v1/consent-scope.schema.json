@@ -1,0 +1,38 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://z-sanctuary.local/z-connect/schemas/v1/consent-scope.json",
+  "title": "ZConnectConsentScope",
+  "description": "Granular consent scope definition.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schemaVersion",
+    "scopeId",
+    "label",
+    "dataCategories"
+  ],
+  "properties": {
+    "schemaVersion": {
+      "$ref": "../../common/schemas/v1/_definitions.schema.json#/$defs/SchemaVersion"
+    },
+    "scopeId": {
+      "type": "string",
+      "pattern": "^[a-z][a-z0-9_]{1,63}$"
+    },
+    "label": {
+      "type": "string",
+      "maxLength": 200
+    },
+    "dataCategories": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "maxLength": 80
+      }
+    },
+    "retentionDays": {
+      "type": "integer",
+      "minimum": 1
+    }
+  }
+}

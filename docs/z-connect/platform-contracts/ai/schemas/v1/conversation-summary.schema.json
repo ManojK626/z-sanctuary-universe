@@ -1,0 +1,59 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://z-sanctuary.local/z-connect/schemas/v1/ai-conversation-summary.json",
+  "title": "ZConnectConversationSummary",
+  "description": "Approved summary of a discovery conversation.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schemaVersion",
+    "summaryId",
+    "sessionId",
+    "userId",
+    "summaryText",
+    "approvedByUser",
+    "approvedAtIso",
+    "confidence",
+    "explanation",
+    "limitations",
+    "disclaimer"
+  ],
+  "properties": {
+    "schemaVersion": {
+      "$ref": "../../common/schemas/v1/_definitions.schema.json#/$defs/SchemaVersion"
+    },
+    "summaryId": {
+      "$ref": "../../common/schemas/v1/_definitions.schema.json#/$defs/Identifier"
+    },
+    "sessionId": {
+      "$ref": "../../common/schemas/v1/_definitions.schema.json#/$defs/Identifier"
+    },
+    "userId": {
+      "$ref": "../../common/schemas/v1/_definitions.schema.json#/$defs/UserId"
+    },
+    "summaryText": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 4000
+    },
+    "approvedByUser": {
+      "type": "boolean",
+      "const": true
+    },
+    "approvedAtIso": {
+      "$ref": "../../common/schemas/v1/_definitions.schema.json#/$defs/TimestampIso"
+    },
+    "confidence": {
+      "$ref": "../../common/schemas/v1/_definitions.schema.json#/$defs/ConfidenceLevel"
+    },
+    "explanation": {
+      "$ref": "../../common/schemas/v1/_definitions.schema.json#/$defs/AiExplanation"
+    },
+    "limitations": {
+      "$ref": "../../common/schemas/v1/_definitions.schema.json#/$defs/AiLimitations"
+    },
+    "disclaimer": {
+      "$ref": "../../common/schemas/v1/_definitions.schema.json#/$defs/InsightDisclaimer"
+    }
+  }
+}

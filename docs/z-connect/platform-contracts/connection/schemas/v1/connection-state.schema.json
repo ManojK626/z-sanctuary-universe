@@ -1,0 +1,44 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://z-sanctuary.local/z-connect/schemas/v1/connection-state.json",
+  "title": "ZConnectConnectionState",
+  "description": "State of a relationship link between two users.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schemaVersion",
+    "connectionId",
+    "userAId",
+    "userBId",
+    "branch",
+    "state",
+    "sinceIso",
+    "updatedAtIso"
+  ],
+  "properties": {
+    "schemaVersion": {
+      "$ref": "../../common/schemas/v1/_definitions.schema.json#/$defs/SchemaVersion"
+    },
+    "connectionId": {
+      "$ref": "../../common/schemas/v1/_definitions.schema.json#/$defs/Identifier"
+    },
+    "userAId": {
+      "$ref": "../../common/schemas/v1/_definitions.schema.json#/$defs/UserId"
+    },
+    "userBId": {
+      "$ref": "../../common/schemas/v1/_definitions.schema.json#/$defs/UserId"
+    },
+    "branch": {
+      "$ref": "../../common/schemas/v1/_definitions.schema.json#/$defs/RelationshipBranch"
+    },
+    "state": {
+      "$ref": "../../common/schemas/v1/_definitions.schema.json#/$defs/ConnectionStateEnum"
+    },
+    "sinceIso": {
+      "$ref": "../../common/schemas/v1/_definitions.schema.json#/$defs/TimestampIso"
+    },
+    "updatedAtIso": {
+      "$ref": "../../common/schemas/v1/_definitions.schema.json#/$defs/TimestampIso"
+    }
+  }
+}

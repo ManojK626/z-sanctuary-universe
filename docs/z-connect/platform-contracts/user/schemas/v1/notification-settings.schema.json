@@ -1,0 +1,40 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://z-sanctuary.local/z-connect/schemas/v1/user-notification-settings.json",
+  "title": "ZConnectNotificationSettings",
+  "description": "Notification opt-in preferences.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schemaVersion",
+    "userId",
+    "updatedAtIso"
+  ],
+  "properties": {
+    "schemaVersion": {
+      "$ref": "../../common/schemas/v1/_definitions.schema.json#/$defs/SchemaVersion"
+    },
+    "userId": {
+      "$ref": "../../common/schemas/v1/_definitions.schema.json#/$defs/UserId"
+    },
+    "emailEnabled": {
+      "type": "boolean"
+    },
+    "pushEnabled": {
+      "type": "boolean"
+    },
+    "connectionRequests": {
+      "type": "boolean"
+    },
+    "journeyReminders": {
+      "type": "boolean"
+    },
+    "marketingOptIn": {
+      "type": "boolean",
+      "description": "Explicit opt-in only"
+    },
+    "updatedAtIso": {
+      "$ref": "../../common/schemas/v1/_definitions.schema.json#/$defs/TimestampIso"
+    }
+  }
+}

@@ -1,0 +1,40 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://z-sanctuary.local/z-connect/schemas/v1/governance-audit-event.json",
+  "title": "ZConnectAuditEvent",
+  "description": "Immutable audit envelope.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schemaVersion",
+    "eventId",
+    "eventType",
+    "occurredAtIso",
+    "correlationId"
+  ],
+  "properties": {
+    "schemaVersion": {
+      "$ref": "../../common/schemas/v1/_definitions.schema.json#/$defs/SchemaVersion"
+    },
+    "eventId": {
+      "$ref": "../../common/schemas/v1/_definitions.schema.json#/$defs/Identifier"
+    },
+    "eventType": {
+      "type": "string",
+      "pattern": "^zconnect\\.[a-z]+\\.[a-z0-9_]+$"
+    },
+    "occurredAtIso": {
+      "$ref": "../../common/schemas/v1/_definitions.schema.json#/$defs/TimestampIso"
+    },
+    "correlationId": {
+      "$ref": "../../common/schemas/v1/_definitions.schema.json#/$defs/CorrelationId"
+    },
+    "actorUserId": {
+      "$ref": "../../common/schemas/v1/_definitions.schema.json#/$defs/UserId"
+    },
+    "payloadRef": {
+      "type": "string",
+      "maxLength": 256
+    }
+  }
+}
