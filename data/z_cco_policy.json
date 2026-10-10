@@ -1,0 +1,197 @@
+{
+  "schema": "z_cco_policy_v1",
+  "phase": "Z-CCO-0.5",
+  "charter": "docs/Z_CONTINUITY_COMPLETION_OVERSEER.md",
+  "updated_at": "2026-09-05T00:00:00Z",
+  "law": [
+    "SCHEMA != AUTHORITY",
+    "REGISTRY != RUNTIME",
+    "POLICY != EXECUTION",
+    "Z-CCO STATUS != SOURCE EVENT STORE",
+    "Z-CCO REPORT != CANONICAL DOMAIN HISTORY",
+    "CONFIDENCE != TRUTH",
+    "COMPLETE_DECLARED_SCOPE != MAXIMUM_THEORETICAL_COMPLETION",
+    "SEALED_PHASE != FINISHED_PRODUCT",
+    "LOCALLY_EVIDENCED_NO_ACTION != PROVIDER_HEALTHY"
+  ],
+  "shadow_event_store": "NONE",
+  "evidence_priority": [
+    {
+      "rank": 1,
+      "id": "steward_decision",
+      "meaning": "current Steward decision"
+    },
+    {
+      "rank": 2,
+      "id": "constitution_governance",
+      "meaning": "Constitution / governance"
+    },
+    {
+      "rank": 3,
+      "id": "human_confirmed_identity",
+      "meaning": "human-confirmed identity / registries"
+    },
+    {
+      "rank": 4,
+      "id": "repository_receipts",
+      "meaning": "repository / branch / HEAD / receipts"
+    },
+    {
+      "rank": 5,
+      "id": "verification_evidence",
+      "meaning": "verification evidence"
+    },
+    {
+      "rank": 6,
+      "id": "preservation_custody",
+      "meaning": "preservation / custody"
+    },
+    {
+      "rank": 7,
+      "id": "preserved_design_history",
+      "meaning": "preserved design history"
+    },
+    {
+      "rank": 8,
+      "id": "timestamps_filenames",
+      "meaning": "timestamps / filenames as discovery hints only"
+    }
+  ],
+  "evidence_priority_rule": "Lower rank must not override higher rank.",
+  "declared_capabilities": {
+    "current_execution_authority": "NONE",
+    "status": "DECLARED_CAPABILITY_NOT_CURRENT_EXECUTION_AUTHORITY",
+    "future": [
+      "OBSERVE",
+      "CLASSIFY",
+      "COMPARE",
+      "SUMMARIZE",
+      "RANK_CANDIDATES",
+      "PROPOSE_ONE_NEXT_PHASE"
+    ]
+  },
+  "forbidden_actions": [
+    "WRITE_PROJECT_FILES",
+    "REPAIR",
+    "CODE",
+    "MERGE",
+    "PUSH",
+    "DEPLOY",
+    "SELECT_CANONICAL_COPY",
+    "OPEN_PROJECT",
+    "RUN_AUTO_CODEX",
+    "RUN_OVERSEER_ACTION",
+    "MUTATE_GITHUB",
+    "MUTATE_CLOUDFLARE",
+    "PURCHASE",
+    "CHANGE_PLAN",
+    "ALTER_DNS",
+    "START_SCHEDULER",
+    "AUTO_REMEDIATE"
+  ],
+  "completion_dimensions": [
+    "identity",
+    "purpose_and_scope",
+    "doctrine_and_safety",
+    "build",
+    "verification",
+    "integration",
+    "preservation",
+    "operational_use",
+    "steward_acceptance"
+  ],
+  "completion_dimension_values": [
+    "NOT_ASSESSED",
+    "MISSING",
+    "PARTIAL",
+    "READY_FOR_REVIEW",
+    "VERIFIED",
+    "HELD",
+    "NOT_APPLICABLE"
+  ],
+  "lifecycle_classes": [
+    "UNKNOWN",
+    "DISCOVERED",
+    "ACTIVE",
+    "READY_FOR_STEWARD_REVIEW",
+    "SEALED_PHASE",
+    "HOLD_HUMAN",
+    "HOLD_EVIDENCE",
+    "BLOCKED_DEPENDENCY",
+    "COMPLETE_DECLARED_SCOPE",
+    "ARCHIVED_PRESERVED"
+  ],
+  "candidates": {
+    "candidate_limit": 3,
+    "proposal_limit": 1,
+    "allow_no_action": true,
+    "allow_hold": true,
+    "force_recommendation_when_insufficient_evidence": false
+  },
+  "evidence_confidence": {
+    "vocabulary": [
+      "VERIFIED",
+      "SUPPORTED",
+      "PARTIAL",
+      "UNKNOWN",
+      "CONFLICTING"
+    ],
+    "numeric_certainty": false
+  },
+  "deployment_workload_classes": [
+    "NO_LOCAL_EVIDENCE",
+    "LOCAL_PREPARATION_GAP",
+    "LOCAL_REVIEW_DUE",
+    "EXTERNAL_STATE_UNKNOWN",
+    "HUMAN_GATE_REQUIRED",
+    "LOCALLY_EVIDENCED_NO_ACTION"
+  ],
+  "providers": {
+    "github_mode": "LOCAL_EVIDENCE_ONLY",
+    "cloudflare_mode": "LOCAL_EVIDENCE_ONLY",
+    "external_provider_state_default": "UNKNOWN",
+    "provider_api_phases_0_through_3_5": false,
+    "forbidden_now": [
+      "github_api",
+      "cloudflare_api",
+      "live_workflow_queries",
+      "live_deployment_queries",
+      "live_r2_queries",
+      "live_d1_queries",
+      "live_pages_queries",
+      "live_worker_queries"
+    ]
+  },
+  "privacy": {
+    "forbid_persist_or_publish": [
+      "raw_chat",
+      "personal_family_details",
+      "medical_details",
+      "financial_details",
+      "legal_details",
+      "private_address",
+      "tokens",
+      "credentials",
+      "api_secrets",
+      "private_keys",
+      "cloudflare_account_ids",
+      "absolute_private_pc_paths",
+      "raw_provider_payloads"
+    ],
+    "allowed_forms": [
+      "stable_id",
+      "bounded_summary",
+      "redacted_value",
+      "UNKNOWN"
+    ]
+  },
+  "integrations_closed_this_phase": {
+    "zuno": true,
+    "amk_dashboard": true,
+    "morning_cockpit": true,
+    "z_ssws_pulse": true,
+    "package_command": true,
+    "report_writer": true,
+    "scheduler": true
+  }
+}
