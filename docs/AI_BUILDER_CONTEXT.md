@@ -196,6 +196,7 @@ npm run z:car2
 | [Z_ROOT_7_GUARDIAN_COORDINATION_LAYER.md](Z_ROOT_7_GUARDIAN_COORDINATION_LAYER.md) | Root guardian symbolic layer and limits. |
 | [ZUNO_WEEKLY_FULL_RUN_AND_OBSERVATION.md](ZUNO_WEEKLY_FULL_RUN_AND_OBSERVATION.md) | Weekly observation cadence and evidence routine. |
 | [INDEX.md](INDEX.md) | Compact docs registry entry point for daily operations. |
+| [zilwa-living-experiences/INDEX.md](zilwa-living-experiences/INDEX.md) | ZILWA-1A Z Integrated Living World Architecture — 20 static exhibits, museum-style blueprint (no runtime, no API, no storage). |
 
 ## Verify lanes (technical receipts)
 
