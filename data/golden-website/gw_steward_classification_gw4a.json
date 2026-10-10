@@ -1,0 +1,13 @@
+{
+  "schema": "gw_steward_classification_v1",
+  "phase": "GW-4A",
+  "note": "Six records APPROVED_PUBLIC_SAFE. Publication still NOT_YET_AUTHORIZED. Twin records[] stay empty. Local shell is not public deploy.",
+  "records": [
+    { "canonical_id": "z_sanctuary_core", "classification": "APPROVED_PUBLIC_SAFE", "publication": "NOT_YET_AUTHORIZED", "human_approval_explicit": "GRANTED", "granted_at": "2026-08-27", "inserted_into_knowledge_twin_records": false, "local_shell": "GW-4A" },
+    { "canonical_id": "univ_workstation_navigator", "classification": "APPROVED_PUBLIC_SAFE", "publication": "NOT_YET_AUTHORIZED", "human_approval_explicit": "GRANTED", "granted_at": "2026-08-27", "inserted_into_knowledge_twin_records": false, "local_shell": "GW-4A" },
+    { "canonical_id": "fourteen_drp_protocols", "overlay_id": "ZS-FORMULA-002", "classification": "APPROVED_PUBLIC_SAFE", "publication": "NOT_YET_AUTHORIZED", "human_approval_explicit": "GRANTED", "granted_at": "2026-08-27", "inserted_into_knowledge_twin_records": false, "local_shell": "GW-4A" },
+    { "canonical_id": "z_eaii", "overlay_id": "ZS-AI-001", "classification": "APPROVED_PUBLIC_SAFE", "publication": "NOT_YET_AUTHORIZED", "human_approval_explicit": "GRANTED", "granted_at": "2026-08-27", "inserted_into_knowledge_twin_records": false, "local_shell": "GW-4A" },
+    { "canonical_id": "grounded_questions_qadp", "overlay_id": "ZS-AI-009", "classification": "APPROVED_PUBLIC_SAFE", "publication": "NOT_YET_AUTHORIZED", "human_approval_explicit": "GRANTED", "granted_at": "2026-08-27", "inserted_into_knowledge_twin_records": false, "local_shell": "GW-4A" },
+    { "canonical_id": "cycle_observe", "overlay_id": "ZS-PROTOTYPE-002", "classification": "APPROVED_PUBLIC_SAFE", "publication": "NOT_YET_AUTHORIZED", "human_approval_explicit": "GRANTED", "granted_at": "2026-08-27", "inserted_into_knowledge_twin_records": false, "local_shell": "GW-4A" }
+  ]
+}

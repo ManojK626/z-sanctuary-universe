@@ -1,0 +1,46 @@
+{
+  "schema": "gw_public_safe_capsule_v1",
+  "phase": "GW-4A",
+  "canonical_id": "cycle_observe",
+  "overlay_id": "ZS-PROTOTYPE-002",
+  "id_status": "TEMPORARY_PENDING_CANONICAL_REVIEW",
+  "public_name": "Cycle Observe",
+  "page": "observe.html",
+  "ia_group": "Govern & Verify",
+  "simple_purpose": "An observation and review capability: look at sanctuary posture, classify it, and suggest next work without executing that work. It describes, verifies, and reports. It does not autonomously intervene.",
+  "evidence_state": "QUALIFIED",
+  "public_evidence_gate": "PASS",
+  "implementation_state": "LOCAL_HTML",
+  "implementation_state_public_wording": "Written observer law plus a local read-only dashboard prototype. Not a public monitoring service.",
+  "demonstrably_working": [
+    "Written observer law: suggest only; do not execute the queue.",
+    "A local read-only dashboard prototype exists for operators.",
+    "Observer output is a status report, not a control plane."
+  ],
+  "non_public_or_unproven": [
+    "Not autonomous intervention.",
+    "Not automatic repair, merge, or deploy.",
+    "Not a live public telemetry feed.",
+    "Informational signals are not system failure.",
+    "Working local UI is not a production operations centre.",
+    "Does not expose private task-queue contents."
+  ],
+  "core_relationship": "Observation and review used with Z-Sanctuary Core.",
+  "next_evidence_gate": "Keep QUALIFIED visible. No queue contents, no local IPs, no iframe. Publication and Twin insert remain unauthorized.",
+  "public_safe_evidence_references": [
+    {
+      "title": "Cycle Observe system law",
+      "supports": "The observer must not execute queued tasks.",
+      "does_not_support": "Public SaaS monitoring or autonomous repair."
+    },
+    {
+      "title": "Local read-only dashboard prototype",
+      "supports": "Operators can view a status UI locally.",
+      "does_not_support": "A public production dashboard."
+    }
+  ],
+  "classification": "APPROVED_PUBLIC_SAFE",
+  "publication": "NOT_YET_AUTHORIZED",
+  "human_approval_explicit": "GRANTED",
+  "granted_at": "2026-08-27"
+}

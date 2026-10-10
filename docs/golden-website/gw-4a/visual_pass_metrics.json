@@ -1,0 +1,234 @@
+{
+  "generated_at": "2026-08-27T06:47:21.275Z",
+  "phase": "GW-4A",
+  "findings": [
+    {
+      "ok": true,
+      "id": "home-portfolio-six",
+      "detail": "6"
+    },
+    {
+      "ok": true,
+      "id": "disclaimer",
+      "detail": ""
+    },
+    {
+      "ok": true,
+      "id": "evidence-six",
+      "detail": ""
+    },
+    {
+      "ok": true,
+      "id": "no-verified-promotion",
+      "detail": ""
+    },
+    {
+      "ok": true,
+      "id": "portfolio-six",
+      "detail": ""
+    },
+    {
+      "ok": true,
+      "id": "five-relationships",
+      "detail": "5"
+    },
+    {
+      "ok": true,
+      "id": "not-map",
+      "detail": ""
+    },
+    {
+      "ok": true,
+      "id": "drp-lock",
+      "detail": ""
+    },
+    {
+      "ok": true,
+      "id": "eaii-lock",
+      "detail": ""
+    },
+    {
+      "ok": true,
+      "id": "qadp-not-guide",
+      "detail": ""
+    },
+    {
+      "ok": true,
+      "id": "observe-lock",
+      "detail": ""
+    },
+    {
+      "ok": true,
+      "id": "skip-focus",
+      "detail": ""
+    },
+    {
+      "ok": true,
+      "id": "keyboard-evidence",
+      "detail": ""
+    },
+    {
+      "ok": true,
+      "id": "overflow:index.html@desktop",
+      "detail": "{\"overflowX\":false}"
+    },
+    {
+      "ok": true,
+      "id": "overflow:portfolio.html@desktop",
+      "detail": "{\"overflowX\":false}"
+    },
+    {
+      "ok": true,
+      "id": "overflow:drp.html@desktop",
+      "detail": "{\"overflowX\":false}"
+    },
+    {
+      "ok": true,
+      "id": "overflow:qadp.html@desktop",
+      "detail": "{\"overflowX\":false}"
+    },
+    {
+      "ok": true,
+      "id": "overflow:navigator.html@desktop",
+      "detail": "{\"overflowX\":false}"
+    },
+    {
+      "ok": true,
+      "id": "overflow:index.html@tablet",
+      "detail": "{\"overflowX\":false}"
+    },
+    {
+      "ok": true,
+      "id": "overflow:portfolio.html@tablet",
+      "detail": "{\"overflowX\":false}"
+    },
+    {
+      "ok": true,
+      "id": "overflow:drp.html@tablet",
+      "detail": "{\"overflowX\":false}"
+    },
+    {
+      "ok": true,
+      "id": "overflow:qadp.html@tablet",
+      "detail": "{\"overflowX\":false}"
+    },
+    {
+      "ok": true,
+      "id": "overflow:navigator.html@tablet",
+      "detail": "{\"overflowX\":false}"
+    },
+    {
+      "ok": true,
+      "id": "overflow:index.html@mobile",
+      "detail": "{\"overflowX\":false}"
+    },
+    {
+      "ok": true,
+      "id": "overflow:portfolio.html@mobile",
+      "detail": "{\"overflowX\":false}"
+    },
+    {
+      "ok": true,
+      "id": "overflow:drp.html@mobile",
+      "detail": "{\"overflowX\":false}"
+    },
+    {
+      "ok": true,
+      "id": "overflow:qadp.html@mobile",
+      "detail": "{\"overflowX\":false}"
+    },
+    {
+      "ok": true,
+      "id": "overflow:navigator.html@mobile",
+      "detail": "{\"overflowX\":false}"
+    },
+    {
+      "ok": true,
+      "id": "adapter-six",
+      "detail": "6"
+    },
+    {
+      "ok": true,
+      "id": "not-published",
+      "detail": ""
+    }
+  ],
+  "overflow": [
+    {
+      "viewport": "desktop",
+      "page": "index.html",
+      "overflowX": false
+    },
+    {
+      "viewport": "desktop",
+      "page": "portfolio.html",
+      "overflowX": false
+    },
+    {
+      "viewport": "desktop",
+      "page": "drp.html",
+      "overflowX": false
+    },
+    {
+      "viewport": "desktop",
+      "page": "qadp.html",
+      "overflowX": false
+    },
+    {
+      "viewport": "desktop",
+      "page": "navigator.html",
+      "overflowX": false
+    },
+    {
+      "viewport": "tablet",
+      "page": "index.html",
+      "overflowX": false
+    },
+    {
+      "viewport": "tablet",
+      "page": "portfolio.html",
+      "overflowX": false
+    },
+    {
+      "viewport": "tablet",
+      "page": "drp.html",
+      "overflowX": false
+    },
+    {
+      "viewport": "tablet",
+      "page": "qadp.html",
+      "overflowX": false
+    },
+    {
+      "viewport": "tablet",
+      "page": "navigator.html",
+      "overflowX": false
+    },
+    {
+      "viewport": "mobile",
+      "page": "index.html",
+      "overflowX": false
+    },
+    {
+      "viewport": "mobile",
+      "page": "portfolio.html",
+      "overflowX": false
+    },
+    {
+      "viewport": "mobile",
+      "page": "drp.html",
+      "overflowX": false
+    },
+    {
+      "viewport": "mobile",
+      "page": "qadp.html",
+      "overflowX": false
+    },
+    {
+      "viewport": "mobile",
+      "page": "navigator.html",
+      "overflowX": false
+    }
+  ],
+  "pass": true
+}

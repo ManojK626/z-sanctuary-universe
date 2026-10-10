@@ -1,0 +1,45 @@
+{
+  "schema": "gw_public_safe_capsule_v1",
+  "phase": "GW-4A",
+  "canonical_id": "z_eaii",
+  "overlay_id": "ZS-AI-001",
+  "id_status": "TEMPORARY_PENDING_CANONICAL_REVIEW",
+  "public_name": "Z-EAII",
+  "page": "eaii.html",
+  "ia_group": "Build & Orchestrate",
+  "simple_purpose": "Oversight and orchestration for named projects: registry and opening intelligence for operators. It sits inside the sanctuary hierarchy, not above governance, and is not an unrestricted autonomous super-intelligence.",
+  "evidence_state": "QUALIFIED",
+  "public_evidence_gate": "PASS",
+  "implementation_state": "HUB_AND_ORGANISER",
+  "implementation_state_public_wording": "Named operator role with local registry-and-opening tools. Not a public command plane.",
+  "demonstrably_working": [
+    "A named EAII role exists in the Hierarchy Chief and Master Register.",
+    "An Organiser-plus-hub operational pattern exists for operators.",
+    "A related local Knowledge Ask prototype exists; that prototype is not this record’s public runtime."
+  ],
+  "non_public_or_unproven": [
+    "Not an omnipotent autonomous super-intelligence.",
+    "Not above governance.",
+    "Not Golden Guide AI and not Zuno.",
+    "Not a live public orchestration API.",
+    "Working local tools are not a production service."
+  ],
+  "core_relationship": "Oversight and orchestration role used with Z-Sanctuary Core.",
+  "next_evidence_gate": "Keep QUALIFIED visible. No live endpoints. Publication and Twin insert remain unauthorized.",
+  "public_safe_evidence_references": [
+    {
+      "title": "Hierarchy Chief / Master Register",
+      "supports": "A named EAII role exists inside the authority model.",
+      "does_not_support": "Public command of the sanctuary or autonomy above governance."
+    },
+    {
+      "title": "Operator registry-and-opening pattern",
+      "supports": "Implemented locally for operators.",
+      "does_not_support": "Public ping endpoints or disk maps."
+    }
+  ],
+  "classification": "APPROVED_PUBLIC_SAFE",
+  "publication": "NOT_YET_AUTHORIZED",
+  "human_approval_explicit": "GRANTED",
+  "granted_at": "2026-08-27"
+}

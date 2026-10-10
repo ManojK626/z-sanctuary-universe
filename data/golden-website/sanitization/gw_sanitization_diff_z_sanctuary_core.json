@@ -1,0 +1,67 @@
+{
+  "schema": "gw_sanitization_diff_v1",
+  "phase": "GW-2",
+  "canonical_id": "z_sanctuary_core",
+  "source": "data/golden-website/gw_portfolio_registry.json",
+  "capsule": "data/golden-website/capsules/gw_capsule_z_sanctuary_core.json",
+  "removed": [
+    {
+      "field": "source_of_truth",
+      "reason": "Internal repository paths must not appear in a public capsule."
+    },
+    {
+      "field": "html_prototypes",
+      "reason": "Empty; no public prototype path to carry forward."
+    },
+    {
+      "field": "related_engines",
+      "reason": "Self-reference and engine graph are internal topology."
+    },
+    {
+      "field": "customer_beneficiary",
+      "from": "Named internal operator identity",
+      "reason": "Personal/operator identity is not a public customer claim."
+    },
+    {
+      "field": "security_class",
+      "reason": "Internal security classification is not public architecture."
+    },
+    {
+      "field": "notes",
+      "reason": "Cross-links to other engine IDs are internal alias material, not this capsule's public story."
+    },
+    {
+      "field": "next_evidence_gate",
+      "reason": "Operator gate language generalized into limitations and proof gates."
+    },
+    {
+      "field": "revenue_pathway",
+      "reason": "Internal overlay phrasing omitted; commercial_status already covers the claim bound."
+    }
+  ],
+  "generalized": [
+    {
+      "from": "Central governance, hub verify chain, and multi-root coordination.",
+      "to": "Named heart of Z-Sanctuary Universe: coordinates, verifies, and stays under human authority.",
+      "reason": "Drop hub/multi-root operational topology wording."
+    },
+    {
+      "from": "Internal sanctuary capability; public-benefit claim not validated for Golden Website.",
+      "to": "Helps keep sanctuary work coordinated and human-gated. Not a certified public-benefit product.",
+      "reason": "Keep honesty; remove overlay jargon."
+    }
+  ],
+  "kept_without_path_leak": [
+    "canonical_id",
+    "id_status",
+    "evidence_state",
+    "implementation_state",
+    "commercial_status",
+    "economic_role"
+  ],
+  "not_copied_from_elsewhere": [
+    "Verify command names",
+    "Local bind addresses",
+    "Sibling engine implementation details"
+  ]
+}

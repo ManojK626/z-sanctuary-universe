@@ -1,0 +1,455 @@
+{
+  "schema": "gw6_prototype_inventory_v1",
+  "phase": "GW-6",
+  "generated_at": "2026-08-27",
+  "publication": "NONE",
+  "deployment": "NONE",
+  "twin_live_records": 0,
+  "private_browser_exposure": 0,
+  "note": "Named surfaces plus clusters. 71 HTML files were counted; not each file is a Golden Website exhibit.",
+  "discovery": {
+    "html_count_hub_scoped": 71,
+    "named_or_clustered_records": 16
+  },
+  "statistics": {
+    "classified": 16,
+    "first_exhibit": 4,
+    "by_class": {
+      "WORKING": 5,
+      "PARTIAL": 2,
+      "PRIVATE": 6,
+      "CONCEPT": 2,
+      "SIMULATED": 1
+    },
+    "by_recommendation": {
+      "READY_FOR_STEWARD_REVIEW": 1,
+      "NEEDS_SANITIZATION": 4,
+      "KEEP_PRIVATE": 9,
+      "NEEDS_MORE_EVIDENCE": 1,
+      "DO_NOT_PUBLISH": 1
+    }
+  },
+  "prototypes": [
+    {
+      "id": "PROTO-GW-SHELL",
+      "title": "Golden Website local foundation shell",
+      "prototype_class": "WORKING",
+      "canonical_record": "z_sanctuary_core",
+      "related_records": [
+        "univ_workstation_navigator",
+        "fourteen_drp_protocols",
+        "cycle_observe",
+        "z_eaii",
+        "grounded_questions_qadp"
+      ],
+      "public_safe_identity": "The Golden Website — Gateway to the Z-Sanctuary Universe",
+      "repo_ref": "docs/golden-website/shell/index.html",
+      "local_data_dependencies": "Sanitized adapter JS only (gw-approved-public-safe.js, gw-map-foundation.js)",
+      "live_private_api": false,
+      "sensitive_paths": false,
+      "fake_live_telemetry_risk": "low",
+      "external_network": false,
+      "sanitization_needs": [
+        "Keep Twin empty",
+        "Do not iframe operator HTML"
+      ],
+      "public_demo_suitability": "LOCAL_ONLY_AFTER_STEWARD",
+      "evidence_refs": [
+        "PHASE_GW_4A_GREEN_RECEIPT",
+        "PHASE_GW_5_GREEN_RECEIPT"
+      ],
+      "publication_recommendation": "READY_FOR_STEWARD_REVIEW",
+      "first_exhibit": true,
+      "notes": "Already the public-safe local UI. WORKING frontend is not a public service."
+    },
+    {
+      "id": "PROTO-CYCLE-DASHBOARD",
+      "title": "Cycle Dashboard (read-only)",
+      "prototype_class": "WORKING",
+      "canonical_record": "cycle_observe",
+      "related_records": [],
+      "public_safe_identity": "Cycle Observe",
+      "repo_ref": "dashboard/panels/z-cycle-dashboard-readonly.html",
+      "local_data_dependencies": "GET same-origin operator report JSON",
+      "live_private_api": false,
+      "sensitive_paths": true,
+      "fake_live_telemetry_risk": "high",
+      "external_network": false,
+      "sanitization_needs": [
+        "Strip queue/report internals",
+        "No IPs",
+        "No iframe into shell",
+        "No BLUE=failure story"
+      ],
+      "public_demo_suitability": "NOT_UNTIL_SANITIZED",
+      "evidence_refs": [
+        "docs/Z_CYCLE_DASHBOARD_SYSTEM.md",
+        "GW4_CAPSULE_CYCLE_OBSERVE"
+      ],
+      "publication_recommendation": "NEEDS_SANITIZATION",
+      "first_exhibit": true,
+      "notes": "Local working observation UI. Simulated-as-live risk if reports are shown unfiltered."
+    },
+    {
+      "id": "PROTO-KNOWLEDGE-ASK",
+      "title": "Z-EAII Knowledge Ask",
+      "prototype_class": "WORKING",
+      "canonical_record": "grounded_questions_qadp",
+      "related_records": [
+        "z_eaii"
+      ],
+      "public_safe_identity": "Grounded Questions (QADP) family — not Golden Guide AI",
+      "repo_ref": "dashboard/panels/z-eaii-knowledge-ask.html",
+      "local_data_dependencies": "Operator knowledge index fetch",
+      "live_private_api": false,
+      "sensitive_paths": true,
+      "fake_live_telemetry_risk": "medium",
+      "external_network": false,
+      "sanitization_needs": [
+        "No private registries at browser runtime",
+        "Do not present as Golden Guide AI",
+        "Do not iframe HODP"
+      ],
+      "public_demo_suitability": "NOT_UNTIL_SANITIZED",
+      "evidence_refs": [
+        "GW4_CAPSULE_QADP",
+        "PHASE_Z_EAII_KNOWLEDGE_INTELLIGENCE_ALPHA_A2"
+      ],
+      "publication_recommendation": "NEEDS_SANITIZATION",
+      "first_exhibit": true,
+      "notes": "Cite-or-admit local prototype. QADP ≠ Golden Guide AI ≠ Zuno."
+    },
+    {
+      "id": "PROTO-ECOSPHERE-MAP",
+      "title": "Living Ecosphere Map (read-only)",
+      "prototype_class": "WORKING",
+      "canonical_record": null,
+      "identity_link": "NEEDS_IDENTITY_REVIEW",
+      "related_records": [
+        "univ_workstation_navigator"
+      ],
+      "public_safe_identity": "Not Golden Universe Map",
+      "repo_ref": "dashboard/Html/z-universe-ecosphere-map.html",
+      "local_data_dependencies": "Hub JSON catalogs (fetch-only)",
+      "live_private_api": false,
+      "sensitive_paths": true,
+      "fake_live_telemetry_risk": "medium",
+      "external_network": false,
+      "sanitization_needs": [
+        "Must not be labeled Golden Universe Map",
+        "Catalog contents may be operator-private"
+      ],
+      "public_demo_suitability": "NOT_UNTIL_SANITIZED",
+      "evidence_refs": [
+        "docs/dashboard/Z_SANCTUARY_LIVING_ECOSPHERE_MAP.md"
+      ],
+      "publication_recommendation": "NEEDS_SANITIZATION",
+      "first_exhibit": true,
+      "notes": "A different map surface. Visual connection ≠ the GW-5 six-node Golden Universe Map."
+    },
+    {
+      "id": "PROTO-QA-RP",
+      "title": "Z-Q&A&RP Pathways & DRP",
+      "prototype_class": "PARTIAL",
+      "canonical_record": "grounded_questions_qadp",
+      "related_records": [
+        "fourteen_drp_protocols"
+      ],
+      "public_safe_identity": "QADP family alias — not a second public Q&A product",
+      "repo_ref": "dashboard/z-qa-rp/index.html",
+      "local_data_dependencies": "QA/RP registry JSON",
+      "live_private_api": false,
+      "sensitive_paths": true,
+      "fake_live_telemetry_risk": "medium",
+      "external_network": false,
+      "sanitization_needs": [
+        "Collapse to one public QADP story",
+        "No Zuno-as-chatbot"
+      ],
+      "public_demo_suitability": "NOT_UNTIL_SANITIZED",
+      "evidence_refs": [
+        "docs/Z-QA-RP-ECOSYSTEM-SPEC.md"
+      ],
+      "publication_recommendation": "NEEDS_SANITIZATION",
+      "first_exhibit": false,
+      "notes": "Internal alias of grounded questions. Do not exhibit as a separate product."
+    },
+    {
+      "id": "PROTO-HODP-SKK",
+      "title": "HODP operator dashboard (SKK/RKPK)",
+      "prototype_class": "PRIVATE",
+      "canonical_record": null,
+      "identity_link": "NEEDS_IDENTITY_REVIEW",
+      "related_records": [
+        "z_eaii",
+        "univ_workstation_navigator"
+      ],
+      "public_safe_identity": null,
+      "repo_ref": "dashboard/Html/index-skk-rkpk.html",
+      "local_data_dependencies": "Many hub JSON reports; Navigator catalog; twin-roots mock",
+      "live_private_api": false,
+      "sensitive_paths": true,
+      "fake_live_telemetry_risk": "high",
+      "external_network": false,
+      "sanitization_needs": [
+        "Do not iframe",
+        "localhost references",
+        "operator topology"
+      ],
+      "public_demo_suitability": "NO",
+      "evidence_refs": [
+        "docs/dashboard/Z_UNIVERSE_WORKSTATION_NAVIGATOR.md"
+      ],
+      "publication_recommendation": "KEEP_PRIVATE",
+      "first_exhibit": false,
+      "notes": "Operator control surface. Contains Navigator but is not the public-safe Navigator page."
+    },
+    {
+      "id": "PROTO-NAV-OPERATOR",
+      "title": "Universal Workstation Navigator (operator cockpit)",
+      "prototype_class": "WORKING",
+      "canonical_record": "univ_workstation_navigator",
+      "related_records": [],
+      "public_safe_identity": "Universal Workstation Navigator",
+      "repo_ref": "dashboard/Html/index-skk-rkpk.html",
+      "local_data_dependencies": "dashboard/data/z_universe_service_catalog.json",
+      "live_private_api": false,
+      "sensitive_paths": true,
+      "fake_live_telemetry_risk": "medium",
+      "external_network": false,
+      "sanitization_needs": [
+        "Use existing shell navigator.html; do not iframe SKK"
+      ],
+      "public_demo_suitability": "USE_SANITIZED_SHELL_ONLY",
+      "evidence_refs": [
+        "docs/dashboard/Z_UNIVERSE_NAVIGATOR_GREEN_RECEIPT.md"
+      ],
+      "publication_recommendation": "KEEP_PRIVATE",
+      "first_exhibit": false,
+      "notes": "WORKING local UI already has a public-safe page. Operator HTML stays private."
+    },
+    {
+      "id": "PROTO-MORNING-COCKPIT",
+      "title": "SSWS Morning Cockpit",
+      "prototype_class": "PRIVATE",
+      "canonical_record": null,
+      "identity_link": "NEEDS_IDENTITY_REVIEW",
+      "related_records": [
+        "z_eaii"
+      ],
+      "public_safe_identity": null,
+      "repo_ref": "dashboard/panels/z-ssws-morning-cockpit.html",
+      "local_data_dependencies": "Operator reports fetch",
+      "live_private_api": false,
+      "sensitive_paths": true,
+      "fake_live_telemetry_risk": "high",
+      "external_network": false,
+      "sanitization_needs": [
+        "Ops-centre language",
+        "report internals"
+      ],
+      "public_demo_suitability": "NO",
+      "evidence_refs": [
+        "docs/PHASE_Z_SSWS_MORNING_COCKPIT_ALPHA_A1.md"
+      ],
+      "publication_recommendation": "KEEP_PRIVATE",
+      "first_exhibit": false,
+      "notes": "Operator morning surface. Not a public operations centre."
+    },
+    {
+      "id": "PROTO-CRYSTAL-DNA",
+      "title": "Crystal DNA map panel",
+      "prototype_class": "PARTIAL",
+      "canonical_record": null,
+      "identity_link": "NEEDS_IDENTITY_REVIEW",
+      "related_records": [],
+      "public_safe_identity": "Not Golden Universe Map",
+      "repo_ref": "dashboard/panels/z-crystal-dna-map.html",
+      "local_data_dependencies": "Drift/report JSON",
+      "live_private_api": false,
+      "sensitive_paths": true,
+      "fake_live_telemetry_risk": "medium",
+      "external_network": false,
+      "sanitization_needs": [
+        "Identity vs Golden Universe Map",
+        "private topology"
+      ],
+      "public_demo_suitability": "NO",
+      "evidence_refs": [
+        "docs/Z_COMPOSED_AWARENESS_PROJECT_WORLD_CRYSTAL_DNA_P0_IMPLEMENTATION_1.md"
+      ],
+      "publication_recommendation": "KEEP_PRIVATE",
+      "first_exhibit": false,
+      "notes": "Another internal map. Do not merge identities."
+    },
+    {
+      "id": "PROTO-AMK-MAP",
+      "title": "AMK-Goku Main Control Map",
+      "prototype_class": "PRIVATE",
+      "canonical_record": null,
+      "identity_link": "NEEDS_IDENTITY_REVIEW",
+      "related_records": [],
+      "public_safe_identity": null,
+      "repo_ref": "dashboard/Html/amk-goku-main-control.html",
+      "local_data_dependencies": "Operator map JSON (readonly companion)",
+      "live_private_api": false,
+      "sensitive_paths": true,
+      "fake_live_telemetry_risk": "medium",
+      "external_network": false,
+      "sanitization_needs": [
+        "Steward personal control map",
+        "not public portfolio"
+      ],
+      "public_demo_suitability": "NO",
+      "evidence_refs": [
+        "docs/PHASE_AMK_MAP_1_GREEN_RECEIPT.md"
+      ],
+      "publication_recommendation": "KEEP_PRIVATE",
+      "first_exhibit": false,
+      "notes": "AMK-MAP-1 is a Steward control map, not Golden Universe Map."
+    },
+    {
+      "id": "PROTO-UCCR-CANVAS",
+      "title": "Universal Canvas lite",
+      "prototype_class": "CONCEPT",
+      "canonical_record": null,
+      "identity_link": "NEEDS_IDENTITY_REVIEW",
+      "related_records": [],
+      "public_safe_identity": "Not Golden Universe Map",
+      "repo_ref": "dashboard/panels/z_uccr_universal_canvas_lite.html",
+      "local_data_dependencies": "Lite/mock panel",
+      "live_private_api": false,
+      "sensitive_paths": false,
+      "fake_live_telemetry_risk": "medium",
+      "external_network": false,
+      "sanitization_needs": [
+        "Must stay visibly concept/lite"
+      ],
+      "public_demo_suitability": "NO",
+      "evidence_refs": [],
+      "publication_recommendation": "NEEDS_MORE_EVIDENCE",
+      "first_exhibit": false,
+      "notes": "Lite canvas is not the GW-5 map engine and not a 160-node Universe."
+    },
+    {
+      "id": "PROTO-MDGEV",
+      "title": "Z-MDGEV Eagle Eyes",
+      "prototype_class": "PRIVATE",
+      "canonical_record": null,
+      "identity_link": "NEEDS_IDENTITY_REVIEW",
+      "related_records": [],
+      "public_safe_identity": null,
+      "repo_ref": "dashboard/z-mdgev/index.html",
+      "local_data_dependencies": "Dashboard registry; iframe",
+      "live_private_api": false,
+      "sensitive_paths": true,
+      "fake_live_telemetry_risk": "medium",
+      "external_network": false,
+      "sanitization_needs": [
+        "iframe",
+        "operator grid"
+      ],
+      "public_demo_suitability": "NO",
+      "evidence_refs": [],
+      "publication_recommendation": "KEEP_PRIVATE",
+      "first_exhibit": false,
+      "notes": "Operator grid with iframe. Do not embed in Golden Website."
+    },
+    {
+      "id": "PROTO-CONSENT-EXPLAINER",
+      "title": "Consent center / explainer panels",
+      "prototype_class": "SIMULATED",
+      "canonical_record": null,
+      "identity_link": "NEEDS_IDENTITY_REVIEW",
+      "related_records": [],
+      "public_safe_identity": null,
+      "repo_ref": "dashboard/panels/consent-center.html",
+      "local_data_dependencies": "Calls /api/consent and /api/audit (not a Golden Website API)",
+      "live_private_api": true,
+      "sensitive_paths": true,
+      "fake_live_telemetry_risk": "high",
+      "external_network": false,
+      "sanitization_needs": [
+        "Remove live API POSTs from any public derivative"
+      ],
+      "public_demo_suitability": "NO",
+      "evidence_refs": [],
+      "publication_recommendation": "DO_NOT_PUBLISH",
+      "first_exhibit": false,
+      "notes": "Looks interactive; talks to hub API routes. Not a public consent product."
+    },
+    {
+      "id": "PROTO-DOCS-PUBLIC",
+      "title": "docs/public HTML apps (grouped)",
+      "prototype_class": "PRIVATE",
+      "canonical_record": null,
+      "identity_link": "NEEDS_IDENTITY_REVIEW",
+      "related_records": [],
+      "public_safe_identity": null,
+      "repo_ref": "docs/public/",
+      "member_count": 4,
+      "local_data_dependencies": "localhost, Windows path strings, fetch",
+      "live_private_api": false,
+      "sensitive_paths": true,
+      "fake_live_telemetry_risk": "medium",
+      "external_network": false,
+      "sanitization_needs": [
+        "Remove local URLs and filesystem strings before any public copy"
+      ],
+      "public_demo_suitability": "NO",
+      "evidence_refs": [],
+      "publication_recommendation": "KEEP_PRIVATE",
+      "first_exhibit": false,
+      "notes": "creator_manual, super_chat, z-html-do, snapshot. Scan flagged localhost and Windows paths."
+    },
+    {
+      "id": "PROTO-ZILWA-CLUSTER",
+      "title": "ZILWA hospitality / life-hub HTML (grouped)",
+      "prototype_class": "CONCEPT",
+      "canonical_record": null,
+      "identity_link": "NEEDS_IDENTITY_REVIEW",
+      "related_records": [],
+      "public_safe_identity": null,
+      "repo_ref": "dashboard/Html/zilwa-*.html",
+      "member_count": 26,
+      "local_data_dependencies": "Mostly static exhibit HTML",
+      "live_private_api": false,
+      "sensitive_paths": false,
+      "fake_live_telemetry_risk": "low",
+      "external_network": false,
+      "sanitization_needs": [
+        "Identity, commercial, and children/family surfaces need Steward gates"
+      ],
+      "public_demo_suitability": "NO",
+      "evidence_refs": [],
+      "publication_recommendation": "KEEP_PRIVATE",
+      "first_exhibit": false,
+      "notes": "Concept/exhibit cluster. Not first Golden Website exhibits. Some touch children/family themes."
+    },
+    {
+      "id": "PROTO-LEGAL-WORKSTATION",
+      "title": "Legal lawyer workstation / Lawgrid",
+      "prototype_class": "PRIVATE",
+      "canonical_record": null,
+      "identity_link": "NEEDS_IDENTITY_REVIEW",
+      "related_records": [],
+      "public_safe_identity": null,
+      "repo_ref": "dashboard/Html/z-legal-lawyer-workstation.html",
+      "local_data_dependencies": "Legal ops reports (readonly companions)",
+      "live_private_api": false,
+      "sensitive_paths": true,
+      "fake_live_telemetry_risk": "medium",
+      "external_network": false,
+      "sanitization_needs": [
+        "Legal/personal operator data"
+      ],
+      "public_demo_suitability": "NO",
+      "evidence_refs": [
+        "docs/PHASE_Z_LEGAL_WORKSTATION_UX_2_GREEN_RECEIPT.md"
+      ],
+      "publication_recommendation": "KEEP_PRIVATE",
+      "first_exhibit": false,
+      "notes": "Operator legal surface. Not a public law product."
+    }
+  ]
+}

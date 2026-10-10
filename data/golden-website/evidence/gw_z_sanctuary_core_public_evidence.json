@@ -1,0 +1,145 @@
+{
+  "schema": "gw_z_sanctuary_core_public_evidence_v1",
+  "phase": "GW-2A",
+  "canonical_id": "z_sanctuary_core",
+  "generated_at": "2026-08-27T06:00:00.000Z",
+  "overlay_evidence_state_unchanged": "QUALIFIED",
+  "evidence_gate_reevaluation": "PASS",
+  "steward_classification": "HOLD",
+  "recommended_for_approved_public_safe": true,
+  "human_approval_explicit": "PENDING",
+  "publication": "NOT_AUTHORIZED",
+  "proposed_public_sentence": "Z-Sanctuary is a governed multi-project AI development ecosystem with implemented and verified components, while many broader capabilities remain under controlled development.",
+  "claims": [
+    {
+      "claim_id": "CORE-ID-1",
+      "claim": "Z-Sanctuary Universe is the named hub organism; Z-Sanctuary Core is the named core-engine role for governance and verification coordination.",
+      "evidence_class": "canonical_identity",
+      "evidence_refs": [
+        {
+          "label": "Hub project registry (hub role)",
+          "title": "PC-root / hub identity list"
+        },
+        {
+          "label": "Core engine roster",
+          "title": "Z-Sanctuary Core named among hub core engines"
+        },
+        {
+          "label": "Canonical control-root doctrine",
+          "title": "One governance root: Z-Sanctuary Universe"
+        }
+      ],
+      "proves": [
+        "Stable public umbrella and core-engine identity exist in sanctuary records"
+      ],
+      "does_not_prove": [
+        "Finished universal engine",
+        "Public cloud or production deploy",
+        "That no other projects exist"
+      ],
+      "public_safe": true
+    },
+    {
+      "claim_id": "CORE-IMPL-1",
+      "claim": "The hub contains implemented software slices with automated tests that passed on 2026-08-27.",
+      "evidence_class": "implemented_slice",
+      "evidence_refs": [
+        {
+          "label": "MirrorSoul hub-slice tests",
+          "result": "3 passed, 0 failed",
+          "when": "2026-08-27"
+        },
+        {
+          "label": "Zuno transformation-slice tests",
+          "result": "2 passed, 0 failed",
+          "when": "2026-08-27"
+        },
+        {
+          "label": "z-sanctuary-core smoke test",
+          "result": "1 passed (thin: may pass if registry load fails)",
+          "when": "2026-08-27",
+          "weight": "supporting_not_primary"
+        }
+      ],
+      "proves": [
+        "At least two hub slices have executable tests with assertions"
+      ],
+      "does_not_prove": [
+        "Production interpersonal AI",
+        "Medical or diagnostic product",
+        "Every sanctuary idea is implemented"
+      ],
+      "public_safe": true
+    },
+    {
+      "claim_id": "CORE-GOV-1",
+      "claim": "Development is documented as human-gated and evidence-first: observe then verify then suggest then human decides; readiness is not deploy.",
+      "evidence_class": "governance",
+      "evidence_refs": [
+        {
+          "label": "Z-Sanctuary Universe Constitution",
+          "note": "Frozen architecture; explicitly not a deploy grant"
+        },
+        {
+          "label": "Turtle Mode",
+          "note": "Guarded worker, not autopilot; no auto-merge"
+        },
+        {
+          "label": "GitHub review gate",
+          "note": "Human approves merge"
+        },
+        {
+          "label": "GW-2 Steward split",
+          "note": "Navigator approved; Core held for evidence — law applied"
+        }
+      ],
+      "proves": [
+        "Human-gated laws exist in hub doctrine and were applied in GW-2"
+      ],
+      "does_not_prove": [
+        "Perfect historical compliance",
+        "That automation cannot err"
+      ],
+      "public_safe": true
+    },
+    {
+      "claim_id": "CORE-VER-1",
+      "claim": "Named hub verification checks recently reported green for dashboard registry, alias integrity, data-leak audit, and API-spine registry signal.",
+      "evidence_class": "verification",
+      "evidence_refs": [
+        {
+          "label": "Dashboard registry verification",
+          "result": "green"
+        },
+        {
+          "label": "Canonical alias audit",
+          "result": "green"
+        },
+        {
+          "label": "Data-leak audit",
+          "result": "zero findings"
+        },
+        {
+          "label": "API Power Cell registry check",
+          "result": "overall_signal GREEN",
+          "note": "GREEN does not mean deploy"
+        }
+      ],
+      "proves": [
+        "Those specific checkers reported healthy on the GW-2 / GW-2A window"
+      ],
+      "does_not_prove": [
+        "Full technical pipeline complete",
+        "Production security certification",
+        "Deploy authority"
+      ],
+      "public_safe": true
+    }
+  ],
+  "limitations": [
+    "QUALIFIED overlay state unchanged",
+    "Not a live website",
+    "Not commercially validated",
+    "Many capabilities remain under controlled development"
+  ]
+}

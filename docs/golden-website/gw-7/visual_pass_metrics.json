@@ -1,0 +1,166 @@
+{
+  "generated_at": "2026-08-27T07:26:59.460Z",
+  "phase": "GW-7",
+  "findings": [
+    {
+      "ok": true,
+      "id": "six-visuals",
+      "detail": "6"
+    },
+    {
+      "ok": true,
+      "id": "one-historical",
+      "detail": ""
+    },
+    {
+      "ok": true,
+      "id": "historical-label",
+      "detail": ""
+    },
+    {
+      "ok": true,
+      "id": "historical-copy",
+      "detail": ""
+    },
+    {
+      "ok": true,
+      "id": "no-gated-names",
+      "detail": ""
+    },
+    {
+      "ok": true,
+      "id": "images-loaded",
+      "detail": ""
+    },
+    {
+      "ok": true,
+      "id": "click-opens-large-view",
+      "detail": ""
+    },
+    {
+      "ok": true,
+      "id": "escape-closes",
+      "detail": ""
+    },
+    {
+      "ok": true,
+      "id": "keyboard-historical",
+      "detail": ""
+    },
+    {
+      "ok": true,
+      "id": "museum-type",
+      "detail": ""
+    },
+    {
+      "ok": true,
+      "id": "not-public-service",
+      "detail": ""
+    },
+    {
+      "ok": true,
+      "id": "museum-explain",
+      "detail": ""
+    },
+    {
+      "ok": true,
+      "id": "gated-generic",
+      "detail": ""
+    },
+    {
+      "ok": true,
+      "id": "museum-no-gated",
+      "detail": ""
+    },
+    {
+      "ok": true,
+      "id": "link-home",
+      "detail": ""
+    },
+    {
+      "ok": true,
+      "id": "link-gallery",
+      "detail": ""
+    },
+    {
+      "ok": true,
+      "id": "skip-focus",
+      "detail": ""
+    },
+    {
+      "ok": true,
+      "id": "overflow-gallery.html-desktop",
+      "detail": ""
+    },
+    {
+      "ok": true,
+      "id": "overflow-museum.html-desktop",
+      "detail": ""
+    },
+    {
+      "ok": true,
+      "id": "overflow-gallery.html-tablet",
+      "detail": ""
+    },
+    {
+      "ok": true,
+      "id": "overflow-museum.html-tablet",
+      "detail": ""
+    },
+    {
+      "ok": true,
+      "id": "overflow-gallery.html-mobile",
+      "detail": ""
+    },
+    {
+      "ok": true,
+      "id": "overflow-museum.html-mobile",
+      "detail": ""
+    }
+  ],
+  "overflow": [
+    {
+      "file": "gallery.html",
+      "name": "desktop",
+      "width": 1440,
+      "height": 900,
+      "overflowX": false
+    },
+    {
+      "file": "museum.html",
+      "name": "desktop",
+      "width": 1440,
+      "height": 900,
+      "overflowX": false
+    },
+    {
+      "file": "gallery.html",
+      "name": "tablet",
+      "width": 768,
+      "height": 1024,
+      "overflowX": false
+    },
+    {
+      "file": "museum.html",
+      "name": "tablet",
+      "width": 768,
+      "height": 1024,
+      "overflowX": false
+    },
+    {
+      "file": "gallery.html",
+      "name": "mobile",
+      "width": 390,
+      "height": 844,
+      "overflowX": false
+    },
+    {
+      "file": "museum.html",
+      "name": "mobile",
+      "width": 390,
+      "height": 844,
+      "overflowX": false
+    }
+  ],
+  "pass": true
+}

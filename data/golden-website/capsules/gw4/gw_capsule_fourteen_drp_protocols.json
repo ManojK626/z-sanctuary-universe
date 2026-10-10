@@ -1,0 +1,44 @@
+{
+  "schema": "gw_public_safe_capsule_v1",
+  "phase": "GW-4A",
+  "canonical_id": "fourteen_drp_protocols",
+  "overlay_id": "ZS-FORMULA-002",
+  "id_status": "TEMPORARY_PENDING_CANONICAL_REVIEW",
+  "public_name": "14 DRP Protocols",
+  "page": "drp.html",
+  "ia_group": "Govern & Verify",
+  "simple_purpose": "A governance and responsibility framework for sanctuary helpers: ask where you are, what you may change, and when a human must decide. Humans remain authoritative. Hidden runtime and automatic deploy or merge are forbidden.",
+  "evidence_state": "QUALIFIED",
+  "public_evidence_gate": "PASS",
+  "implementation_state": "DOCTRINE_AND_GATES",
+  "implementation_state_public_wording": "Named doctrine with internal gates. Not a product SKU and not proof of perfect compliance.",
+  "demonstrably_working": [
+    "A dedicated universal agent-law document exists.",
+    "That law forbids hidden execution, silent deploy, secret access, and billing mutation from the law layer.",
+    "AMK remains the sacred final authority in that law."
+  ],
+  "non_public_or_unproven": [
+    "Not evidence that every AI automatically behaves perfectly.",
+    "Not production autonomy.",
+    "Not a legal or safety certification.",
+    "Not a billed public product."
+  ],
+  "core_relationship": "Governance and responsibility framework used with Z-Sanctuary Core.",
+  "next_evidence_gate": "Keep QUALIFIED visible. Publication and Twin insert remain unauthorized.",
+  "public_safe_evidence_references": [
+    {
+      "title": "Universal agent-law document",
+      "supports": "A named non-harm and responsibility framework exists.",
+      "does_not_support": "Perfect historical compliance by every helper."
+    },
+    {
+      "title": "Forbidden-move list in that law",
+      "supports": "Hidden runtime and automatic deploy or merge are disallowed in doctrine.",
+      "does_not_support": "A live public enforcement API."
+    }
+  ],
+  "classification": "APPROVED_PUBLIC_SAFE",
+  "publication": "NOT_YET_AUTHORIZED",
+  "human_approval_explicit": "GRANTED",
+  "granted_at": "2026-08-27"
+}

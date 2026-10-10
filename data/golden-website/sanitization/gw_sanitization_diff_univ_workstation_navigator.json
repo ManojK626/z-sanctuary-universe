@@ -1,0 +1,66 @@
+{
+  "schema": "gw_sanitization_diff_v1",
+  "phase": "GW-2",
+  "canonical_id": "univ_workstation_navigator",
+  "source": "data/golden-website/gw_portfolio_registry.json",
+  "capsule": "data/golden-website/capsules/gw_capsule_univ_workstation_navigator.json",
+  "removed": [
+    {
+      "field": "source_of_truth",
+      "reason": "Dashboard data-file and docs paths are internal."
+    },
+    {
+      "field": "receipts_tests",
+      "reason": "Internal receipt path removed; NAV-1 is cited by title only."
+    },
+    {
+      "field": "html_prototypes",
+      "reason": "Dashboard HTML path must not be published as a public URL or iframe target."
+    },
+    {
+      "field": "customer_beneficiary",
+      "reason": "Named internal operator identity is not a public customer."
+    },
+    {
+      "field": "security_class",
+      "reason": "Internal classification is not public security architecture."
+    },
+    {
+      "field": "notes",
+      "from": "Working local UI. bridge_status not_connected. Not a public site.",
+      "reason": "Internal bridge-status token removed; meaning kept as 'no live public bridge claimed'."
+    },
+    {
+      "field": "next_evidence_gate",
+      "reason": "Replaced by proof gates and publication_decision."
+    }
+  ],
+  "generalized": [
+    {
+      "from": "Single cockpit to see services, workflows, and doc/report links without executing hub automation.",
+      "to": "A read-only way to look at sanctuary services and documents without running automation.",
+      "reason": "Drop hub-automation operator phrasing."
+    },
+    {
+      "from": "Prototype class WORKING + local dashboard family",
+      "to": "Working local read-only cockpit; not a public website.",
+      "reason": "WORKING must not imply public production."
+    }
+  ],
+  "kept_without_path_leak": [
+    "canonical_id",
+    "id_status",
+    "evidence_state",
+    "implementation_state",
+    "prototype_class",
+    "commercial_status",
+    "economic_role"
+  ],
+  "not_copied_from_elsewhere": [
+    "Local HTTP bind addresses and ports",
+    "file:// serving notes",
+    "Shadow workbench paths",
+    "Catalog JSON filenames",
+    "Sibling service IDs from the navigator catalog"
+  ]
+}
