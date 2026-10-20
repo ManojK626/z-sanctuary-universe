@@ -85,15 +85,15 @@ GW-3A rules preserved. No new shell interactions. NVDA/VoiceOver still required 
 
 ## Validators
 
-| Command                                   | Result                                      |
+| Command | Result |
 | ----------------------------------------- | ------------------------------------------- |
-| `node scripts/z_gw_4_shortlist_smoke.mjs` | **PASS**                                    |
-| markdownlint GW-4 docs                    | **PASS**                                    |
-| `npm run dashboard:registry-verify`       | **GREEN**                                   |
-| `npm run alias:audit`                     | **GREEN**                                   |
-| `npm run security:data-leak-audit`        | **GREEN** (0 findings)                      |
-| `npm run z:monster:registry-verify`       | **PASS**                                    |
-| `npm run verify:md`                       | Repo-wide MD060 pre-existing. Not repaired. |
+| `node scripts/z_gw_4_shortlist_smoke.mjs` | **PASS** |
+| markdownlint GW-4 docs | **PASS** |
+| `npm run dashboard:registry-verify` | **GREEN** |
+| `npm run alias:audit` | **GREEN** |
+| `npm run security:data-leak-audit` | **GREEN** (0 findings) |
+| `npm run z:monster:registry-verify` | **PASS** |
+| `npm run verify:md` | Repo-wide MD060 pre-existing. Not repaired. |
 
 ## Rollback
 

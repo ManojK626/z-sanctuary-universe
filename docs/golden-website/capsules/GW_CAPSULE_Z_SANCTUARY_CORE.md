@@ -81,6 +81,6 @@ Local Golden Foundation Shell (GW-3) may display this record. Twin insert and pu
 | Security sanitization green | PASS |
 | Human approval explicit | **GRANTED** (2026-08-27) |
 
-**Steward classification: APPROVED_PUBLIC_SAFE**
+Steward classification: APPROVED_PUBLIC_SAFE
 
-**PUBLICATION DECISION: CLASSIFICATION APPROVED · PUBLICATION NOT YET AUTHORIZED**
+PUBLICATION DECISION: CLASSIFICATION APPROVED · PUBLICATION NOT YET AUTHORIZED

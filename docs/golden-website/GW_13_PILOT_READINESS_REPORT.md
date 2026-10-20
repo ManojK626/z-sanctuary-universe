@@ -8,7 +8,7 @@
 
 ## Verdict
 
-**NOT_READY_BLOCKERS_REMAIN**
+NOT_READY_BLOCKERS_REMAIN
 
 READY_FOR_CONTROLLED_PUBLIC_PILOT requires every hard gate to PASS, including human NVDA/VoiceOver. A NOT_READY_BLOCKERS_REMAIN verdict is a successful audit.
 

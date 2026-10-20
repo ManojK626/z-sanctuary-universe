@@ -42,7 +42,7 @@ READY_FOR_CONTROLLED_PUBLIC_PILOT would still mean only: the evidence says we ar
 
 ## Pilot verdict
 
-**NOT_READY_BLOCKERS_REMAIN**
+NOT_READY_BLOCKERS_REMAIN
 
 The audit process completed. Machine gates 1–5 and 7–12 PASS. Gate 6 is **NOT_READY** because human NVDA / VoiceOver has not been run.
 
@@ -52,23 +52,23 @@ Steward go/no-go for a public host: **NO-GO**. The human accessibility gate is o
 
 ## Receipt counts
 
-| Check                         | Result                                                                      |
+| Check | Result |
 | ----------------------------- | --------------------------------------------------------------------------- |
-| Surfaces audited              | **10** journey + **6** record pages                                         |
-| Broken internal links         | **0**                                                                       |
-| Cross-page contradictions     | **0**                                                                       |
-| Private browser exposure      | **0**                                                                       |
-| External / provider calls     | **0**                                                                       |
-| Fabricated citations          | **0**                                                                       |
-| Evidence-state upgrades       | **0**                                                                       |
-| Unsupported commercial claims | **0**                                                                       |
-| Twin live `records[]`         | **0**                                                                       |
-| AI test totals                | GW-9 50/50+16/16 · GW-10 44/44+20/20+22/22 · GW-12 36/36+22/22+12/12        |
-| Security findings             | **0** (shell leak + data-leak audit)                                        |
-| Accessibility (machine)       | **PASS** (keyboard, skip, 44px, live regions, reduced-motion, 1440/768/390) |
-| Human screen-reader           | **PENDING** (NVDA / VoiceOver not run)                                      |
-| Rollback                      | **Documented** (`GW_13_ROLLBACK_AND_RECOVERY.md`)                           |
-| Final verdict                 | **NOT_READY_BLOCKERS_REMAIN**                                               |
+| Surfaces audited | **10** journey + **6** record pages |
+| Broken internal links | **0** |
+| Cross-page contradictions | **0** |
+| Private browser exposure | **0** |
+| External / provider calls | **0** |
+| Fabricated citations | **0** |
+| Evidence-state upgrades | **0** |
+| Unsupported commercial claims | **0** |
+| Twin live `records[]` | **0** |
+| AI test totals | GW-9 50/50+16/16 · GW-10 44/44+20/20+22/22 · GW-12 36/36+22/22+12/12 |
+| Security findings | **0** (shell leak + data-leak audit) |
+| Accessibility (machine) | **PASS** (keyboard, skip, 44px, live regions, reduced-motion, 1440/768/390) |
+| Human screen-reader | **PENDING** (NVDA / VoiceOver not run) |
+| Rollback | **Documented** (`GW_13_ROLLBACK_AND_RECOVERY.md`) |
+| Final verdict | **NOT_READY_BLOCKERS_REMAIN** |
 
 ## Unresolved blockers
 
@@ -80,28 +80,28 @@ Publication unauthorized, no public host, Twin empty, and production Guide CLOSE
 
 ## Surfaces / artifacts
 
-| Artifact                 | Path                                                              |
+| Artifact | Path |
 | ------------------------ | ----------------------------------------------------------------- |
-| Audit policy             | `docs/golden-website/GW_13_PUBLIC_PILOT_READINESS_AUDIT.md`       |
-| Blockers                 | `docs/golden-website/GW_13_PUBLIC_PILOT_BLOCKERS.md`              |
-| Human screen-reader form | `docs/golden-website/GW_13_HUMAN_SCREEN_READER_ACCEPTANCE.md`     |
-| AI failure audit         | `docs/golden-website/GW_13_AI_FAILURE_AND_HALLUCINATION_AUDIT.md` |
-| Rollback                 | `docs/golden-website/GW_13_ROLLBACK_AND_RECOVERY.md`              |
-| Readiness report         | `docs/golden-website/GW_13_PILOT_READINESS_REPORT.md`             |
-| Machine JSON             | `data/golden-website/gw13_pilot_readiness.json`                   |
-| Visual metrics           | `docs/golden-website/gw-13/visual_pass_metrics.json`              |
+| Audit policy | `docs/golden-website/GW_13_PUBLIC_PILOT_READINESS_AUDIT.md` |
+| Blockers | `docs/golden-website/GW_13_PUBLIC_PILOT_BLOCKERS.md` |
+| Human screen-reader form | `docs/golden-website/GW_13_HUMAN_SCREEN_READER_ACCEPTANCE.md` |
+| AI failure audit | `docs/golden-website/GW_13_AI_FAILURE_AND_HALLUCINATION_AUDIT.md` |
+| Rollback | `docs/golden-website/GW_13_ROLLBACK_AND_RECOVERY.md` |
+| Readiness report | `docs/golden-website/GW_13_PILOT_READINESS_REPORT.md` |
+| Machine JSON | `data/golden-website/gw13_pilot_readiness.json` |
+| Visual metrics | `docs/golden-website/gw-13/visual_pass_metrics.json` |
 
 ## Validators
 
-| Command                                          | Result                                                     |
+| Command | Result |
 | ------------------------------------------------ | ---------------------------------------------------------- |
-| `node scripts/z_gw_13_visual_pass.mjs`           | **PASS**                                                   |
+| `node scripts/z_gw_13_visual_pass.mjs` | **PASS** |
 | `node scripts/z_gw_13_pilot_readiness_audit.mjs` | **PASS** (process) · verdict **NOT_READY_BLOCKERS_REMAIN** |
-| markdownlint GW-13 docs                          | **PASS**                                                   |
-| `npm run dashboard:registry-verify`              | **GREEN**                                                  |
-| `npm run alias:audit`                            | **GREEN**                                                  |
-| `npm run security:data-leak-audit`               | **GREEN** (0 findings)                                     |
-| `npm run z:monster:registry-verify`              | **PASS**                                                   |
+| markdownlint GW-13 docs | **PASS** |
+| `npm run dashboard:registry-verify` | **GREEN** |
+| `npm run alias:audit` | **GREEN** |
+| `npm run security:data-leak-audit` | **GREEN** (0 findings) |
+| `npm run z:monster:registry-verify` | **PASS** |
 
 ## Rollback
 

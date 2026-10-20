@@ -23,22 +23,22 @@ Home, Core, Navigator, Evidence Mode, locked future surfaces. Same two approved 
 
 ## Screenshots generated
 
-| File                                                                 | What                          |
+| File | What |
 | -------------------------------------------------------------------- | ----------------------------- |
-| `docs/golden-website/gw-3a/screenshots/01-home-desktop.png`          | Home hero + vocabulary        |
-| `docs/golden-website/gw-3a/screenshots/02-home-evidence-board.png`   | Evidence Mode board           |
-| `docs/golden-website/gw-3a/screenshots/03-home-evidence-desktop.png` | Home with Evidence Mode on    |
-| `docs/golden-website/gw-3a/screenshots/04-core-desktop.png`          | Core QUALIFIED / not VERIFIED |
-| `docs/golden-website/gw-3a/screenshots/05-navigator-desktop.png`     | Sanitized preview             |
-| `docs/golden-website/gw-3a/screenshots/06-home-skip-focus.png`       | Skip link focused             |
-| `docs/golden-website/gw-3a/screenshots/07-home-tablet.png`           | 768px Home                    |
-| `docs/golden-website/gw-3a/screenshots/08-home-mobile.png`           | 390px Home                    |
-| `docs/golden-website/gw-3a/screenshots/09-navigator-mobile.png`      | 390px Navigator               |
-| `docs/golden-website/gw-3a/screenshots/10-home-locked-doors.png`     | Nine locked future surfaces   |
+| `docs/golden-website/gw-3a/screenshots/01-home-desktop.png` | Home hero + vocabulary |
+| `docs/golden-website/gw-3a/screenshots/02-home-evidence-board.png` | Evidence Mode board |
+| `docs/golden-website/gw-3a/screenshots/03-home-evidence-desktop.png` | Home with Evidence Mode on |
+| `docs/golden-website/gw-3a/screenshots/04-core-desktop.png` | Core QUALIFIED / not VERIFIED |
+| `docs/golden-website/gw-3a/screenshots/05-navigator-desktop.png` | Sanitized preview |
+| `docs/golden-website/gw-3a/screenshots/06-home-skip-focus.png` | Skip link focused |
+| `docs/golden-website/gw-3a/screenshots/07-home-tablet.png` | 768px Home |
+| `docs/golden-website/gw-3a/screenshots/08-home-mobile.png` | 390px Home |
+| `docs/golden-website/gw-3a/screenshots/09-navigator-mobile.png` | 390px Navigator |
+| `docs/golden-website/gw-3a/screenshots/10-home-locked-doors.png` | Nine locked future surfaces |
 
 ## Private records exposed
 
-**0**
+0
 
 ## Security findings
 
@@ -46,13 +46,13 @@ No new leak class. Shell still forbids local IPs, Windows paths, operator HTML, 
 
 ## Accessibility checks
 
-| Check                                       | Result                                            |
+| Check | Result |
 | ------------------------------------------- | ------------------------------------------------- |
 | Interactive browser pass (file:// Chromium) | **PASS** (`node scripts/z_gw_3a_visual_pass.mjs`) |
-| Keyboard skip / evidence / rail             | **PASS**                                          |
-| Overflow 1440 / 768 / 390                   | **PASS** (none)                                   |
-| Named buttons and links                     | **PASS**                                          |
-| Screen-reader product (NVDA/VoiceOver)      | Not run                                           |
+| Keyboard skip / evidence / rail | **PASS** |
+| Overflow 1440 / 768 / 390 | **PASS** (none) |
+| Named buttons and links | **PASS** |
+| Screen-reader product (NVDA/VoiceOver) | Not run |
 
 ## Unresolved limitations
 
@@ -63,16 +63,16 @@ No new leak class. Shell still forbids local IPs, Windows paths, operator HTML, 
 
 ## Validators
 
-| Command                                | Result                                      |
+| Command | Result |
 | -------------------------------------- | ------------------------------------------- |
-| `node scripts/z_gw_3a_visual_pass.mjs` | **PASS**                                    |
-| `node scripts/z_gw_3_shell_smoke.mjs`  | **PASS**                                    |
-| markdownlint GW-3A docs                | **PASS**                                    |
-| `npm run dashboard:registry-verify`    | **GREEN**                                   |
-| `npm run alias:audit`                  | **GREEN**                                   |
-| `npm run security:data-leak-audit`     | **GREEN** (0 findings)                      |
-| `npm run z:monster:registry-verify`    | **PASS**                                    |
-| `npm run verify:md`                    | Repo-wide MD060 pre-existing. Not repaired. |
+| `node scripts/z_gw_3a_visual_pass.mjs` | **PASS** |
+| `node scripts/z_gw_3_shell_smoke.mjs` | **PASS** |
+| markdownlint GW-3A docs | **PASS** |
+| `npm run dashboard:registry-verify` | **GREEN** |
+| `npm run alias:audit` | **GREEN** |
+| `npm run security:data-leak-audit` | **GREEN** (0 findings) |
+| `npm run z:monster:registry-verify` | **PASS** |
+| `npm run verify:md` | Repo-wide MD060 pre-existing. Not repaired. |
 
 ## Rollback
 

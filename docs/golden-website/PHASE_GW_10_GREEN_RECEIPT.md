@@ -15,33 +15,33 @@ GW-11 may prepare a local informational Partners & Investors Gateway. It does no
 
 ## Counts
 
-| Check                               | Result      |
+| Check | Result |
 | ----------------------------------- | ----------- |
-| Corpus records consumed             | **22**      |
-| Critic questions                    | **44**      |
-| Critic tests passed                 | **44 / 44** |
-| Critic tests failed                 | **0**       |
-| Consistency pairs                   | **20 / 20** |
-| Contradictory normal/critic answers | **0**       |
-| Red-team probes                     | **22**      |
-| Red-team passed                     | **22 / 22** |
-| Red-team failed                     | **0**       |
-| UNKNOWN (critic + red-team)         | **2**       |
-| PRIVATE_REFUSAL (critic + red-team) | **11**      |
-| External calls                      | **0**       |
-| Provider calls                      | **0**       |
-| Private browser exposure            | **0**       |
-| Twin `records[]`                    | **0**       |
+| Corpus records consumed | **22** |
+| Critic questions | **44** |
+| Critic tests passed | **44 / 44** |
+| Critic tests failed | **0** |
+| Consistency pairs | **20 / 20** |
+| Contradictory normal/critic answers | **0** |
+| Red-team probes | **22** |
+| Red-team passed | **22 / 22** |
+| Red-team failed | **0** |
+| UNKNOWN (critic + red-team) | **2** |
+| PRIVATE_REFUSAL (critic + red-team) | **11** |
+| External calls | **0** |
+| Provider calls | **0** |
+| Private browser exposure | **0** |
+| Twin `records[]` | **0** |
 
 GW-9 baseline remains true: 50/50 behavior tests, 16/16 adversarial, 0 provider/external calls.
 
 ## Surfaces / artifacts
 
-| Artifact      | Path                                                  |
+| Artifact | Path |
 | ------------- | ----------------------------------------------------- |
-| Architecture  | `docs/golden-website/GW_10_CRITIC_MODE_SANDBOX.md`    |
-| Critic rules  | `data/golden-website/public/gw10_critic_rules.json`   |
-| Sandbox page  | `docs/golden-website/shell/guide-sandbox.html`        |
+| Architecture | `docs/golden-website/GW_10_CRITIC_MODE_SANDBOX.md` |
+| Critic rules | `data/golden-website/public/gw10_critic_rules.json` |
+| Sandbox page | `docs/golden-website/shell/guide-sandbox.html` |
 | Suite results | `docs/golden-website/gw-10/critic_suite_results.json` |
 
 ## Security results
@@ -64,18 +64,18 @@ Keyboard mode switch, 44px controls, live region, 1440 / 768 / 390 overflow, red
 
 ## Validators
 
-| Command                                         | Result                         |
+| Command | Result |
 | ----------------------------------------------- | ------------------------------ |
-| `node scripts/z_gw_10_build_critic_payload.mjs` | **PASS**                       |
-| `node scripts/z_gw_10_run_critic_suite.mjs`     | **PASS** 44/44 + 22/22 + 20/20 |
-| `node scripts/z_gw_10_critic_smoke.mjs`         | **PASS**                       |
-| `node scripts/z_gw_10_visual_pass.mjs`          | **PASS**                       |
-| `node scripts/z_gw_9_run_behavior_suite.mjs`    | **PASS** 50/50                 |
-| markdownlint GW-10 docs                         | **PASS**                       |
-| `npm run dashboard:registry-verify`             | **GREEN**                      |
-| `npm run alias:audit`                           | **GREEN**                      |
-| `npm run security:data-leak-audit`              | **GREEN** (0 findings)         |
-| `npm run z:monster:registry-verify`             | **PASS**                       |
+| `node scripts/z_gw_10_build_critic_payload.mjs` | **PASS** |
+| `node scripts/z_gw_10_run_critic_suite.mjs` | **PASS** 44/44 + 22/22 + 20/20 |
+| `node scripts/z_gw_10_critic_smoke.mjs` | **PASS** |
+| `node scripts/z_gw_10_visual_pass.mjs` | **PASS** |
+| `node scripts/z_gw_9_run_behavior_suite.mjs` | **PASS** 50/50 |
+| markdownlint GW-10 docs | **PASS** |
+| `npm run dashboard:registry-verify` | **GREEN** |
+| `npm run alias:audit` | **GREEN** |
+| `npm run security:data-leak-audit` | **GREEN** (0 findings) |
+| `npm run z:monster:registry-verify` | **PASS** |
 
 ## Rollback
 

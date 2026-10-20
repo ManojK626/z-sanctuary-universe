@@ -10,19 +10,19 @@ Internal governance only. Not a public directory. No valuation. No recruitment.
 
 ## Portfolio standing
 
-| Count                                                      | Value |
+| Count | Value |
 | ---------------------------------------------------------- | ----: |
-| Canonical doorways                                         | **1** |
-| Canonical revenue properties                               | **0** |
-| Candidate properties                                       | **0** |
-| Modules (doorway records)                                  | **6** |
-| Overlays                                                   | **3** |
-| Confirmed aliases                                          | **2** |
-| Historical                                                 | **1** |
-| Unresolved identities                                      | **3** |
-| Explicit not-a-property                                    | **9** |
+| Canonical doorways | **1** |
+| Canonical revenue properties | **0** |
+| Candidate properties | **0** |
+| Modules (doorway records) | **6** |
+| Overlays | **3** |
+| Confirmed aliases | **2** |
+| Historical | **1** |
+| Unresolved identities | **3** |
+| Explicit not-a-property | **9** |
 | Measured revenue / traffic / AI cost / complete scorecards | **0** |
-| Partner-review-ready properties                            | **0** |
+| Partner-review-ready properties | **0** |
 
 A small registry is the correct result. An empty commercial portfolio is a successful result. **Golden Websites** (plural) remains proposed language, **not an active fleet**.
 
@@ -51,24 +51,24 @@ Confirmed aliases: “The Golden Website”, “Gateway to the Z-Sanctuary Unive
 
 ## Modules (on the doorway — not websites)
 
-| ID                           | Name                            | Evidence state |
+| ID | Name | Evidence state |
 | ---------------------------- | ------------------------------- | -------------- |
-| `z_sanctuary_core`           | Z-Sanctuary Core                | QUALIFIED      |
-| `univ_workstation_navigator` | Universal Workstation Navigator | SEALED         |
-| `fourteen_drp_protocols`     | 14 DRP Protocols                | QUALIFIED      |
-| `z_eaii`                     | Z-EAII                          | QUALIFIED      |
-| `grounded_questions_qadp`    | Grounded Questions (QADP)       | QUALIFIED      |
-| `cycle_observe`              | Cycle Observe                   | QUALIFIED      |
+| `z_sanctuary_core` | Z-Sanctuary Core | QUALIFIED |
+| `univ_workstation_navigator` | Universal Workstation Navigator | SEALED |
+| `fourteen_drp_protocols` | 14 DRP Protocols | QUALIFIED |
+| `z_eaii` | Z-EAII | QUALIFIED |
+| `grounded_questions_qadp` | Grounded Questions (QADP) | QUALIFIED |
+| `cycle_observe` | Cycle Observe | QUALIFIED |
 
 These six are approved public-safe **records** in the local shell (GW-4A). They are not independent Golden Websites.
 
 ## Overlays
 
-| Overlay                      | Role                                        |
+| Overlay | Role |
 | ---------------------------- | ------------------------------------------- |
-| Golden Foundation Shell      | Local UI of the doorway                     |
+| Golden Foundation Shell | Local UI of the doorway |
 | Partners & Investors Gateway | Informational GW-11 surface; not a contract |
-| Golden Guide AI              | Local sandbox; production Guide **CLOSED**  |
+| Golden Guide AI | Local sandbox; production Guide **CLOSED** |
 
 ## Unresolved identities
 
@@ -86,9 +86,9 @@ Roulette / lottery are **GAMBLING_ADJACENT** siblings, not Golden Website proper
 
 ## Strategic matrix (evidence only)
 
-| Property       | Identity          | Strategic role    | Economics evidence    | Partner readiness | Regulatory            | Posture  |
+| Property | Identity | Strategic role | Economics evidence | Partner readiness | Regulatory | Posture |
 | -------------- | ----------------- | ----------------- | --------------------- | ----------------- | --------------------- | -------- |
-| Golden Website | CANONICAL_DOORWAY | Ecosystem doorway | NO_MEASURED_ECONOMICS | NOT_READY         | AI_HIGH_IMPACT_REVIEW | INCUBATE |
+| Golden Website | CANONICAL_DOORWAY | Ecosystem doorway | NO_MEASURED_ECONOMICS | NOT_READY | AI_HIGH_IMPACT_REVIEW | INCUBATE |
 
 No hypothetical extra rows.
 
