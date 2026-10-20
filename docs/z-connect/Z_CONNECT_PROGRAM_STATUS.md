@@ -10,15 +10,15 @@
 
 > Z-Connect Phase 1.5: **COMPLETE · FROZEN · READY FOR ARCHITECTURE REVIEW**
 
-| Architecture layer              | Status |
+| Architecture layer | Status |
 | ------------------------------- | ------ |
-| Vision                          | Locked |
-| AI Constitution                 | Locked |
-| Scientific Integrity            | Locked |
-| Architecture Decisions          | Locked |
-| Domain Contracts                | Locked |
-| Interaction Contracts           | Locked |
-| Experience State Contracts      | Locked |
+| Vision | Locked |
+| AI Constitution | Locked |
+| Scientific Integrity | Locked |
+| Architecture Decisions | Locked |
+| Domain Contracts | Locked |
+| Interaction Contracts | Locked |
+| Experience State Contracts | Locked |
 | Reference Architecture Handbook | Locked |
 
 **No further architectural layers** before implementation. Engineering priority shifts to **Track A** (VILE foundation).
@@ -29,11 +29,11 @@ Handbook: [REFERENCE_ARCHITECTURE/INDEX.md](REFERENCE_ARCHITECTURE/INDEX.md) · 
 
 ## Current priority (post-freeze)
 
-| Track                   | Status                  | Focus                                                             |
+| Track | Status | Focus |
 | ----------------------- | ----------------------- | ----------------------------------------------------------------- |
-| **A — Foundation**      | **Highest priority**    | Review/merge VILE Pkgs 1–3 · implement `zuno-drp` · verify `main` |
-| **B — Z-Connect prep**  | Architecture **paused** | Commercial/legal drafts only — no new architecture layers         |
-| **Z-Connect Phase 1.6** | **Blocked**             | OpenAPI + logical DB — after Track A gate intentionally opens     |
+| **A — Foundation** | **Highest priority** | Review/merge VILE Pkgs 1–3 · implement `zuno-drp` · verify `main` |
+| **B — Z-Connect prep** | Architecture **paused** | Commercial/legal drafts only — no new architecture layers |
+| **Z-Connect Phase 1.6** | **Blocked** | OpenAPI + logical DB — after Track A gate intentionally opens |
 
 Closing posture: **Freeze. Protect. Review. Build deliberately.**
 
@@ -41,14 +41,14 @@ Closing posture: **Freeze. Protect. Review. Build deliberately.**
 
 ## AMK program classification
 
-| Dimension            | Signal           |
+| Dimension | Signal |
 | -------------------- | ---------------- |
-| Architecture         | Mature           |
-| Governance           | Mature           |
-| Foundation packages  | Ready for review |
-| Project discipline   | Excellent        |
-| Commercial readiness | Early            |
-| User-facing product  | Not yet built    |
+| Architecture | Mature |
+| Governance | Mature |
+| Foundation packages | Ready for review |
+| Project discipline | Excellent |
+| Commercial readiness | Early |
+| User-facing product | Not yet built |
 
 ---
 
@@ -89,40 +89,40 @@ Closing posture: **Freeze. Protect. Review. Build deliberately.**
 
 ## Stream A — status
 
-| Item                   | Status                 |
+| Item | Status |
 | ---------------------- | ---------------------- |
-| zuno-observability     | Complete · 8/8 tests   |
-| zuno-security          | Complete · 12/12 tests |
-| zuno-shadow            | Complete · 10/10 tests |
-| Foundation integration | GREEN · 30/30          |
-| zuno-drp               | Charter only           |
-| On `main`              | Pending merge          |
+| zuno-observability | Complete · 8/8 tests |
+| zuno-security | Complete · 12/12 tests |
+| zuno-shadow | Complete · 10/10 tests |
+| Foundation integration | GREEN · 30/30 |
+| zuno-drp | Charter only |
+| On `main` | Pending merge |
 
 ---
 
 ## Stream B — status
 
-| Item                                                 | Status                                                                                                            |
+| Item | Status |
 | ---------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------- |
-| Master charter                                       | Complete                                                                                                          |
-| Architecture decisions v1                            | Locked                                                                                                            |
-| AI Constitution v1                                   | Locked                                                                                                            |
-| Connection Confidence                                | Spec complete                                                                                                     |
-| Progressive Discovery                                | Spec complete                                                                                                     |
-| Module branches                                      | Spec complete                                                                                                     |
-| Commercial milestone (100 paying)                    | Framed                                                                                                            |
-| Stream B prep charter                                | Complete                                                                                                          |
-| Domain contracts                                     | **Complete** — B1                                                                                                 |
-| Interaction contracts                                | **Complete** — B1.5                                                                                               |
-| Experience state contracts                           | **Complete** — B1.6                                                                                               |
-| Reference Architecture handbook                      | **Complete · FROZEN**                                                                                             |
-| Phase 1.5 architecture                               | **Complete**                                                                                                      |
-| Commercial prep assets checklist                     | **Ready**                                                                                                         |
-| **Phase B2 — Soulmates Universe product definition** | **Complete** — [phase-b2/INDEX.md](phase-b2/INDEX.md)                                                             |
-| **Phase B2.2 — Living Connection Dimensions**        | **Complete (doctrine)** — [LIVING_CONNECTION_DIMENSIONS.md](LIVING_CONNECTION_DIMENSIONS.md)                    |
-| **Z-Sanctuary Compassion Charter**                   | **Complete** — ../governance/Z_SANCTUARY_COMPASSION_CHARTER.md (`../governance/Z_SANCTUARY_COMPASSION_CHARTER.md`; STATUS: REFERENCED_BUT_MISSING) |
-| API specs                                            | Not started (Phase 1.6 — blocked)                                                                                 |
-| Legal drafts                                         | Not started (B2.1 lane)                                                                                           |
+| Master charter | Complete |
+| Architecture decisions v1 | Locked |
+| AI Constitution v1 | Locked |
+| Connection Confidence | Spec complete |
+| Progressive Discovery | Spec complete |
+| Module branches | Spec complete |
+| Commercial milestone (100 paying) | Framed |
+| Stream B prep charter | Complete |
+| Domain contracts | **Complete** — B1 |
+| Interaction contracts | **Complete** — B1.5 |
+| Experience state contracts | **Complete** — B1.6 |
+| Reference Architecture handbook | **Complete · FROZEN** |
+| Phase 1.5 architecture | **Complete** |
+| Commercial prep assets checklist | **Ready** |
+| **Phase B2 — Soulmates Universe product definition** | **Complete** — [phase-b2/INDEX.md](phase-b2/INDEX.md) |
+| **Phase B2.2 — Living Connection Dimensions** | **Complete (doctrine)** — [LIVING_CONNECTION_DIMENSIONS.md](LIVING_CONNECTION_DIMENSIONS.md) |
+| **Z-Sanctuary Compassion Charter** | **Complete** — ../governance/Z_SANCTUARY_COMPASSION_CHARTER.md (`../governance/Z_SANCTUARY_COMPASSION_CHARTER.md`; STATUS: REFERENCED_BUT_MISSING) |
+| API specs | Not started (Phase 1.6 — blocked) |
+| Legal drafts | Not started (B2.1 lane) |
 
 Full checklist: [Z_CONNECT_STREAM_B_PREP_CHARTER.md](Z_CONNECT_STREAM_B_PREP_CHARTER.md)
 

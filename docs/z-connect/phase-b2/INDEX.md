@@ -28,7 +28,7 @@ See [HUMAN_CONNECTION_INTELLIGENCE.md](../HUMAN_CONNECTION_INTELLIGENCE.md) · Z
 
 Transform the completed Z-Connect Phase 1.5 architecture into a **complete product definition package** for the first flagship consumer experience:
 
-**Soulmates Universe**
+Soulmates Universe
 
 When Track A opens the engineering gate, every product decision in this handbook should already be made — implementation becomes execution, not discovery.
 
@@ -36,24 +36,24 @@ When Track A opens the engineering gate, every product decision in this handbook
 
 ## Deliverables index
 
-| #   | Document                              | Part     | Path                                                                                                                 |
+| # | Document | Part | Path |
 | --- | ------------------------------------- | -------- | -------------------------------------------------------------------------------------------------------------------- |
-| 1   | **Product Definition Handbook**       | Index    | [INDEX.md](INDEX.md) (this file)                                                                                     |
-| 2   | **Brand Architecture Guide**          | Part 1   | BRAND_ARCHITECTURE_GUIDE.md (`BRAND_ARCHITECTURE_GUIDE.md`; STATUS: REFERENCED_BUT_MISSING)                                                           |
-| 3   | **Product Vision**                    | Part 2   | PRODUCT_VISION.md (`PRODUCT_VISION.md`; STATUS: REFERENCED_BUT_MISSING)                                                                               |
-| 4   | **User Persona Guide**                | Part 3   | USER_PERSONA_GUIDE.md (`USER_PERSONA_GUIDE.md`; STATUS: REFERENCED_BUT_MISSING)                                                                       |
-| 5   | **Journey Handbook**                  | Part 4   | JOURNEY_HANDBOOK.md (`JOURNEY_HANDBOOK.md`; STATUS: REFERENCED_BUT_MISSING)                                                                           |
-| 6   | **Information Architecture**          | Part 5   | INFORMATION_ARCHITECTURE.md (`INFORMATION_ARCHITECTURE.md`; STATUS: REFERENCED_BUT_MISSING)                                                           |
-| 7   | **Feature Roadmap**                   | Part 6   | FEATURE_ROADMAP.md (`FEATURE_ROADMAP.md`; STATUS: REFERENCED_BUT_MISSING)                                                                             |
-| 8   | **Commercial Preparation Guide**      | Part 7   | COMMERCIAL_PREPARATION_GUIDE.md (`COMMERCIAL_PREPARATION_GUIDE.md`; STATUS: REFERENCED_BUT_MISSING)                                                   |
-| 9   | **Trust & Safety Review**             | Part 8   | TRUST_AND_SAFETY_REVIEW.md (`TRUST_AND_SAFETY_REVIEW.md`; STATUS: REFERENCED_BUT_MISSING)                                                             |
-| 10  | **AI Experience Review**              | Part 9   | AI_EXPERIENCE_REVIEW.md (`AI_EXPERIENCE_REVIEW.md`; STATUS: REFERENCED_BUT_MISSING)                                                                   |
-| 11  | **Mission Control Integration Guide** | Part 10  | MISSION_CONTROL_INTEGRATION_GUIDE.md (`MISSION_CONTROL_INTEGRATION_GUIDE.md`; STATUS: REFERENCED_BUT_MISSING)                                         |
-| 12  | **Implementation Readiness Report**   | Final    | IMPLEMENTATION_READINESS_REPORT.md (`IMPLEMENTATION_READINESS_REPORT.md`; STATUS: REFERENCED_BUT_MISSING)                                             |
-| 13  | **Executive Summary**                 | Final    | EXECUTIVE_SUMMARY.md (`EXECUTIVE_SUMMARY.md`; STATUS: REFERENCED_BUT_MISSING)                                                                         |
-| 14  | **Compassion Principles**             | Doctrine | [COMPASSION_PRINCIPLES.md](COMPASSION_PRINCIPLES.md) · Charter (`../../governance/Z_SANCTUARY_COMPASSION_CHARTER.md`; STATUS: REFERENCED_BUT_MISSING) |
-| 15  | **Human Connection Intelligence**   | Doctrine | [../HUMAN_CONNECTION_INTELLIGENCE.md](../HUMAN_CONNECTION_INTELLIGENCE.md) |
-| 16  | **Living Connection Dimensions**    | B2.2     | [../LIVING_CONNECTION_DIMENSIONS.md](../LIVING_CONNECTION_DIMENSIONS.md) · [PHASE_B2_2_GREEN_RECEIPT.md](PHASE_B2_2_GREEN_RECEIPT.md) |
+| 1 | **Product Definition Handbook** | Index | [INDEX.md](INDEX.md) (this file) |
+| 2 | **Brand Architecture Guide** | Part 1 | BRAND_ARCHITECTURE_GUIDE.md (`BRAND_ARCHITECTURE_GUIDE.md`; STATUS: REFERENCED_BUT_MISSING) |
+| 3 | **Product Vision** | Part 2 | PRODUCT_VISION.md (`PRODUCT_VISION.md`; STATUS: REFERENCED_BUT_MISSING) |
+| 4 | **User Persona Guide** | Part 3 | USER_PERSONA_GUIDE.md (`USER_PERSONA_GUIDE.md`; STATUS: REFERENCED_BUT_MISSING) |
+| 5 | **Journey Handbook** | Part 4 | JOURNEY_HANDBOOK.md (`JOURNEY_HANDBOOK.md`; STATUS: REFERENCED_BUT_MISSING) |
+| 6 | **Information Architecture** | Part 5 | INFORMATION_ARCHITECTURE.md (`INFORMATION_ARCHITECTURE.md`; STATUS: REFERENCED_BUT_MISSING) |
+| 7 | **Feature Roadmap** | Part 6 | FEATURE_ROADMAP.md (`FEATURE_ROADMAP.md`; STATUS: REFERENCED_BUT_MISSING) |
+| 8 | **Commercial Preparation Guide** | Part 7 | COMMERCIAL_PREPARATION_GUIDE.md (`COMMERCIAL_PREPARATION_GUIDE.md`; STATUS: REFERENCED_BUT_MISSING) |
+| 9 | **Trust & Safety Review** | Part 8 | TRUST_AND_SAFETY_REVIEW.md (`TRUST_AND_SAFETY_REVIEW.md`; STATUS: REFERENCED_BUT_MISSING) |
+| 10 | **AI Experience Review** | Part 9 | AI_EXPERIENCE_REVIEW.md (`AI_EXPERIENCE_REVIEW.md`; STATUS: REFERENCED_BUT_MISSING) |
+| 11 | **Mission Control Integration Guide** | Part 10 | MISSION_CONTROL_INTEGRATION_GUIDE.md (`MISSION_CONTROL_INTEGRATION_GUIDE.md`; STATUS: REFERENCED_BUT_MISSING) |
+| 12 | **Implementation Readiness Report** | Final | IMPLEMENTATION_READINESS_REPORT.md (`IMPLEMENTATION_READINESS_REPORT.md`; STATUS: REFERENCED_BUT_MISSING) |
+| 13 | **Executive Summary** | Final | EXECUTIVE_SUMMARY.md (`EXECUTIVE_SUMMARY.md`; STATUS: REFERENCED_BUT_MISSING) |
+| 14 | **Compassion Principles** | Doctrine | [COMPASSION_PRINCIPLES.md](COMPASSION_PRINCIPLES.md) · Charter (`../../governance/Z_SANCTUARY_COMPASSION_CHARTER.md`; STATUS: REFERENCED_BUT_MISSING) |
+| 15 | **Human Connection Intelligence** | Doctrine | [../HUMAN_CONNECTION_INTELLIGENCE.md](../HUMAN_CONNECTION_INTELLIGENCE.md) |
+| 16 | **Living Connection Dimensions** | B2.2 | [../LIVING_CONNECTION_DIMENSIONS.md](../LIVING_CONNECTION_DIMENSIONS.md) · [PHASE_B2_2_GREEN_RECEIPT.md](PHASE_B2_2_GREEN_RECEIPT.md) |
 
 ---
 
@@ -72,13 +72,13 @@ When Track A opens the engineering gate, every product decision in this handbook
 
 ## Architecture alignment (frozen — do not expand)
 
-| Layer                                          | Status                              | Authority                                |
+| Layer | Status | Authority |
 | ---------------------------------------------- | ----------------------------------- | ---------------------------------------- |
-| Phase 1.5 domain / interaction / ESC contracts | FROZEN                              | `docs/z-connect/REFERENCE_ARCHITECTURE/` |
-| AI Constitution v1                             | LOCKED                              | `Z_CONNECT_AI_CONSTITUTION_V1.md`        |
-| Scientific integrity                           | LOCKED                              | `Z_CONNECT_SCIENTIFIC_INTEGRITY.md`      |
-| Phase 1.6 (OpenAPI + logical DB)               | Blocked until Track A               | `Z_CONNECT_PHASE_1_5_ROADMAP.md`         |
-| Sprint 0 implementation                        | Blocked until Track A; B2 handbook Parts 1–13 mostly `REFERENCED_BUT_MISSING` | This handbook                            |
+| Phase 1.5 domain / interaction / ESC contracts | FROZEN | `docs/z-connect/REFERENCE_ARCHITECTURE/` |
+| AI Constitution v1 | LOCKED | `Z_CONNECT_AI_CONSTITUTION_V1.md` |
+| Scientific integrity | LOCKED | `Z_CONNECT_SCIENTIFIC_INTEGRITY.md` |
+| Phase 1.6 (OpenAPI + logical DB) | Blocked until Track A | `Z_CONNECT_PHASE_1_5_ROADMAP.md` |
+| Sprint 0 implementation | Blocked until Track A; B2 handbook Parts 1–13 mostly `REFERENCED_BUT_MISSING` | This handbook |
 
 B2 adds **product definition docs only** — not new contract layers. Waitlist schema and wireframes require ADR if they change frozen architecture.
 
@@ -86,11 +86,11 @@ B2 adds **product definition docs only** — not new contract layers. Waitlist s
 
 ## Track relationship
 
-| Track                   | Priority    | B2 role                                        |
+| Track | Priority | B2 role |
 | ----------------------- | ----------- | ---------------------------------------------- |
-| **A — Foundation**      | **Highest** | B2 does not block A; no engineering diversion  |
-| **B — Commercial prep** | Parallel    | **B2 is the B deliverable**                    |
-| **C — Mission Control** | Later       | Integration guide defines read-only MC posture |
+| **A — Foundation** | **Highest** | B2 does not block A; no engineering diversion |
+| **B — Commercial prep** | Parallel | **B2 is the B deliverable** |
+| **C — Mission Control** | Later | Integration guide defines read-only MC posture |
 
 ---
 

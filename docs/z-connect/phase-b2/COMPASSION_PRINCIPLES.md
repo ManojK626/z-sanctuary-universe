@@ -28,15 +28,15 @@ Soulmates Universe does **not** embed Compassion Wellness as a product module. I
 
 Relationship technology touches vulnerability — loneliness, hope, rejection, identity. The Compassion Wellness doctrine named truths that Soulmates Universe must live:
 
-| Principle                        | Soulmates application                                |
+| Principle | Soulmates application |
 | -------------------------------- | ---------------------------------------------------- |
-| Trust before technology          | Connection Confidence honesty; no fake precision     |
-| Privacy before data collection   | Progressive Discovery; minimum profile               |
-| Turtle Mode                      | Phased rollout; no rush to messaging or payments     |
-| Human ownership                  | Export/delete flows; user-approved Journey summaries |
-| AI assists, humans decide        | Guide not matchmaker; user sends connection request  |
-| Consent before sensitive actions | Every branch, Journey segment, shared view           |
-| Build trust before automation    | Waitlist → beta → paid only after gates              |
+| Trust before technology | Connection Confidence honesty; no fake precision |
+| Privacy before data collection | Progressive Discovery; minimum profile |
+| Turtle Mode | Phased rollout; no rush to messaging or payments |
+| Human ownership | Export/delete flows; user-approved Journey summaries |
+| AI assists, humans decide | Guide not matchmaker; user sends connection request |
+| Consent before sensitive actions | Every branch, Journey segment, shared view |
+| Build trust before automation | Waitlist → beta → paid only after gates |
 
 Full charter: Z_SANCTUARY_COMPASSION_CHARTER.md (`../../governance/Z_SANCTUARY_COMPASSION_CHARTER.md`; STATUS: REFERENCED_BUT_MISSING)
 
@@ -48,10 +48,10 @@ Use before **every feature, screen, or marketing line** in Soulmates Universe.
 
 ### 1️⃣ Trust
 
-| Ask                       | Soulmates test                                               |
+| Ask | Soulmates test |
 | ------------------------- | ------------------------------------------------------------ |
 | Does this increase trust? | Would Elena (relationship seeker) feel safer after using it? |
-| If not                    | Do not ship — revise or remove                               |
+| If not | Do not ship — revise or remove |
 
 **Examples:**
 
@@ -61,10 +61,10 @@ Use before **every feature, screen, or marketing line** in Soulmates Universe.
 
 ### 2️⃣ Privacy
 
-| Ask                | Soulmates test                                    |
+| Ask | Soulmates test |
 | ------------------ | ------------------------------------------------- |
-| Minimum data only? | Can we deliver the feature with less?             |
-| If not             | Reduce fields, coarsen location, delay collection |
+| Minimum data only? | Can we deliver the feature with less? |
+| If not | Reduce fields, coarsen location, delay collection |
 
 **Examples:**
 
@@ -76,31 +76,31 @@ Use before **every feature, screen, or marketing line** in Soulmates Universe.
 
 Members must be able to:
 
-| Right           | Soulmates path                      |
+| Right | Soulmates path |
 | --------------- | ----------------------------------- |
-| Export          | Privacy export flow (v1.1 runtime)  |
-| Delete          | Account deletion flow — sacred DRP  |
-| Understand      | "How our AI works" Help article     |
+| Export | Privacy export flow (v1.1 runtime) |
+| Delete | Account deletion flow — sacred DRP |
+| Understand | "How our AI works" Help article |
 | Control sharing | Per-field visibility; branch opt-in |
 
 ### 4️⃣ AI language
 
-| Forbidden                | Required                         |
+| Forbidden | Required |
 | ------------------------ | -------------------------------- |
-| "AI decides"             | "AI suggests"                    |
-| "Perfect match"          | "Worth exploring"                |
-| "We found your soulmate" | "Meaningful connections"         |
+| "AI decides" | "AI suggests" |
+| "Perfect match" | "Worth exploring" |
+| "We found your soulmate" | "Meaningful connections" |
 | Percentage compatibility | Connection Confidence dimensions |
 
 Constitution: [Z_CONNECT_AI_CONSTITUTION_V1.md](../Z_CONNECT_AI_CONSTITUTION_V1.md)
 
 ### 5️⃣ Relationships
 
-| Forbidden                      | Required                                          |
+| Forbidden | Required |
 | ------------------------------ | ------------------------------------------------- |
 | "This person is your soulmate" | "Here are meaningful connections worth exploring" |
-| Destiny framing                | Curiosity framing                                 |
-| Guaranteed outcomes            | Uncertainty honest                                |
+| Destiny framing | Curiosity framing |
+| Guaranteed outcomes | Uncertainty honest |
 
 Scientific integrity: [Z_CONNECT_SCIENTIFIC_INTEGRITY.md](../Z_CONNECT_SCIENTIFIC_INTEGRITY.md)
 
@@ -125,13 +125,13 @@ Consent → Security → DRP → AI → Shadow → Human Decision
 
 Soulmates contributes to ecosystem Compassion Readiness by monitoring:
 
-| Signal             | How                                                  |
+| Signal | How |
 | ------------------ | ---------------------------------------------------- |
-| Safer feeling      | Steward review + optional feedback (no public score) |
-| Fair moderation    | Report resolution SLAs                               |
-| Trust-based return | Qualitative beta interviews                          |
-| Understandable AI  | Support tickets citing confusion                     |
-| Kindness in norms  | Community guidelines adherence                       |
+| Safer feeling | Steward review + optional feedback (no public score) |
+| Fair moderation | Report resolution SLAs |
+| Trust-based return | Qualitative beta interviews |
+| Understandable AI | Support tickets citing confusion |
+| Kindness in norms | Community guidelines adherence |
 
 **Never:** rate users on compassion, kindness, or "worthiness."
 
@@ -159,12 +159,12 @@ Waitlist and landing are **trust-building** surfaces — not conversion funnels 
 
 ## Relationship to Compassion Wellness project
 
-| Item                         | Relationship                            |
+| Item | Relationship |
 | ---------------------------- | --------------------------------------- |
-| Compassion Wellness umbrella | **Separate** product lane — not merged  |
-| Shared Compassion Charter    | **Inherited** — this stack              |
-| Recovery / clinical features | **Out of scope** for Soulmates MVP      |
-| Future cross-links           | Only with explicit charter + legal gate |
+| Compassion Wellness umbrella | **Separate** product lane — not merged |
+| Shared Compassion Charter | **Inherited** — this stack |
+| Recovery / clinical features | **Out of scope** for Soulmates MVP |
+| Future cross-links | Only with explicit charter + legal gate |
 
 ---
 
