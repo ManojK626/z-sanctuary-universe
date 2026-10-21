@@ -1,0 +1,32 @@
+{
+  "schema": "gw11_gateway_qa_v1",
+  "phase": "GW-11",
+  "investor_qa": [
+    { "id": "IQ01", "q": "Why does Z-Sanctuary need investment?", "a": "This Gateway does not assert that a raise is required or open. Capital is described only as a possible accelerator of validated next steps such as independent testing, security review, and pilots. Need is not a live solicitation." },
+    { "id": "IQ02", "q": "Does it actually need investors?", "a": "Not stated as a necessity. AI builders can complete substantial scaffolding, UI, tests, and documentation locally. Humans remain required for validation and governance. Investor exploration is optional, not a claim that the project cannot continue without a round." },
+    { "id": "IQ03", "q": "What can AI builders complete without funding?", "a": "Scaffolding, UI implementation, testing, documentation, bounded code work, refactoring, and automation — inside Turtle Mode and human merge gates. That work is not a substitute for independent security, legal, or scientific validation." },
+    { "id": "IQ04", "q": "Where are humans required?", "a": "Independent security review, legal, accounting, scientific validation, regulated domains, accessibility lived testing, enterprise negotiation, physical deployment, and governance decisions. AI builder ≠ human validator." },
+    { "id": "IQ05", "q": "What would capital accelerate?", "a": "Possible categories only: engineering, independent testing, cybersecurity review, accessibility testing, legal/IP review, scientific/domain validation, pilot implementation, infrastructure/compute, product design, business development, and institutional partnerships. No monetary ask is published." },
+    { "id": "IQ06", "q": "Is Z-Sanctuary generating revenue?", "a": "No approved public revenue claim. Commercial status is POTENTIAL_NOT_VALIDATED. Potential is not revenue." },
+    { "id": "IQ07", "q": "What is its valuation?", "a": "No approved public valuation. Vision is not valuation. This Gateway will not publish company or module valuations or return forecasts." },
+    { "id": "IQ08", "q": "What commercial opportunities exist?", "a": "Some work may later have direct commercial potential, platform/enabler value, research/IP potential, public-benefit uses, or remain experimental. None of those roles is commercially validated today. Not every module is a standalone company." },
+    { "id": "IQ09", "q": "How many projects are public-safe?", "a": "The Golden Website currently shows six approved public-safe portfolio records, twenty-two Golden Guide knowledge records, six Gallery captures, and one Museum prototype. Additional Universe capabilities remain behind evidence gates." },
+    { "id": "IQ10", "q": "Why are so many capabilities still gated?", "a": "Publication is deny-by-default. Public-safe is not published. Gating protects against overclaim, private leakage, and prototype-as-production confusion." },
+    { "id": "IQ11", "q": "Can I see private source code?", "a": "No. Private source, overlay catalogs, and internal repositories are not part of approved public knowledge. Private is not answerable." },
+    { "id": "IQ12", "q": "Can I access a data room?", "a": "No. The data room is closed. A future flow may go public evidence → expression of interest → human review → qualified discussion → NDA → data room if approved. That flow is not implemented here." },
+    { "id": "IQ13", "q": "What independent validation exists?", "a": "Public claims remain QUALIFIED or SEALED where stated. QUALIFIED is internal support, not independent VERIFIED proof. Independent external validation is still limited." },
+    { "id": "IQ14", "q": "What still needs proving?", "a": "Commercial validation, broader public portfolio scope, independent validation, production readiness, and human accessibility testing before any public pilot. A screenshot is not backend proof." },
+    { "id": "IQ15", "q": "What are the major risks?", "a": "Overclaiming QUALIFIED as VERIFIED, treating local prototypes as production, treating potential as revenue, leaking private systems, and assuming an LLM can replace evidence. Critic Mode exists to keep those risks visible." }
+  ],
+  "partner_qa": [
+    { "id": "PQ01", "q": "Can we run a pilot together?", "a": "This page describes an informational PILOT WITH US path only. A bounded pilot would require human review. It is not a live customer program, SLA, or production onboarding." },
+    { "id": "PQ02", "q": "What would a research partnership look like?", "a": "Research would use public-safe evidence (Core, 14 DRP, QADP, Cycle Observe). It would not include private telemetry, ICIS custody, or unpublished overlay data. No grant or co-authorship is promised." },
+    { "id": "PQ03", "q": "Can universities use the Golden Website locally?", "a": "The local shell is an informational teaching and critique surface. QUALIFIED ≠ VERIFIED remains the lesson. Student access to private repositories is not offered." },
+    { "id": "PQ04", "q": "How should government or institutions engage?", "a": "Start from 14 DRP, Turtle Mode, and the human-decides law. Hidden runtime and automatic deploy are forbidden. No certification or procurement readiness is claimed." },
+    { "id": "PQ05", "q": "Are you open to business pilots?", "a": "Informationally yes as a future discussion class (PILOT_CUSTOMER / STRATEGIC_COMPANY). Partner interest is not a contract. No exclusivity or revenue share is offered." },
+    { "id": "PQ06", "q": "Can specialists review the work?", "a": "SPECIALIST_REVIEWER is an informational class for independent security, legal, scientific, or accessibility review. Humans remain the validators. No paid engagement is created by this page." },
+    { "id": "PQ07", "q": "Can I contribute technically?", "a": "TECHNICAL_CONTRIBUTOR is informational. Bounded public-safe engineering would still follow Turtle Mode and human merge. This is not commit rights, employment, or private overlay access." },
+    { "id": "PQ08", "q": "Will you integrate with our systems?", "a": "No live cross-project or vendor integration is promised from this Gateway. Any later bridge would need an explicit charter and human gate." },
+    { "id": "PQ09", "q": "Is this a partnership offer?", "a": "No. Gateway ≠ contract. Explore evidence first. Deeper material, if ever appropriate, would follow human review and possibly NDA — not this local page." }
+  ]
+}
