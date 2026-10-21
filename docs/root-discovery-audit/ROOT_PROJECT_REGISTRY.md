@@ -5,6 +5,8 @@
 **Canonical hub (on disk):** `Z_Sanctuary_Universe` (~381 MB)  
 **Registry `hub` field:** **`Z_Sanctuary_Universe`** (aligned)
 
+**Reading rule (2026-09-16):** June-11 rows below remain the discovery snapshot. ÉirMind identity polarity (organism vs physical folder vs persona vs Ireland Projects pointer) is in [EIRMIND_ALIGNMENT_DECISION.md](EIRMIND_ALIGNMENT_DECISION.md). `Ireland Projects` **path** is still missing; the **organism** is not.
+
 ## Legend
 
 | Status | Meaning |
@@ -28,7 +30,7 @@
 | Z_Labs | `Z_Labs` | Labs / satellite | Active | 2026-05-11 | Satellite manifest enabled |
 | Z-OMNI-Sanctuary | `Z-OMNI-Sanctuary` | App / runtime JSON | Active | 2026-06-19 | `z_project_runtime.json`; z-html-do |
 | Z-Sanctuary Claude | `Z-Sanctuary Claude` | AI / app | Active | 2026-05-11 | Member project; package + README |
-| Z-Sister Aisling Sol | `Z-Sister Aisling Sol` | AI / lineage | Active | 2026-05-11 | ÉirMind-adjacent; runtime manifest |
+| Z-Sister Aisling Sol | `Z-Sister Aisling Sol` | AI / lineage | Active | 2026-05-11 | Physical root of ÉirMind (folder name ≠ organism); Sister Aisling-Sol is persona within; runtime manifest |
 | Z-Sanctuary_Replit | `Z-Sanctuary_Replit` | Prediction / analytics | Active | 2026-05-11 | Roulette artifacts; local Vite |
 | z-Sanctuary-Aimanity | `z-Sanctuary-Aimanity` | App | Active | 2026-04-14 | package + README |
 | Z-Sanctuary G | `Z-Sanctuary G` | App | Active | 2026-05-11 | package; no root README |
@@ -41,7 +43,7 @@
 | Amk-Goku Vaults | `Amk-Goku Vaults` | Vault / archive | Active | 2026-04-26 | Runtime manifest; sparse docs |
 | Extras & Tools | `Extras & Tools` | Utility sink | Active | 2026-05-04 | Not a product repo |
 | Backups | `Backups` | Archive | Active | 2026-03-13 | PC backups |
-| Ireland Projects (ÉirMind) | `Ireland Projects` | AI / ÉirMind | Registered-missing | — | Audit GAPS; folder absent 2026-06-11 |
+| Ireland Projects (ÉirMind) | `Ireland Projects` | AI / ÉirMind | Registered-missing | — | Legacy expected-path pointer; folder absent 2026-06-11 (still absent 2026-09-16); organism NOT absent |
 | Amk-Goku Dashboards 2 | `Amk-Goku Dashboards 2` | Dashboards | Registered-missing | — | In April audit; not in current root listing |
 | AT PB Copilot | `AT PB Copilot` | Wellness | Registered-missing | — | Duplicate naming vs Princess&Blackie |
 | Roulette (Replit) | external | Prediction | External | — | `replit.com/@manojkeerpal/Roulette-Data-Analyzer` |
@@ -77,5 +79,5 @@
 
 1. `data/z_pc_root_projects.json` hub path → **`Z_Sanctuary_Universe`** (aligned).  
 2. Retired stub `ZSanctuary_Universe` → documented as `retired_stub` — folder **not deleted**.  
-3. ÉirMind `Ireland Projects` → **still missing**; see [EIRMIND_ALIGNMENT_DECISION.md](EIRMIND_ALIGNMENT_DECISION.md).  
+3. ÉirMind `Ireland Projects` **path** → **still missing** (legacy pointer). Organism present at `Z-Sister Aisling Sol` per 2026-09-16 steward polarity — [EIRMIND_ALIGNMENT_DECISION.md](EIRMIND_ALIGNMENT_DECISION.md).  
 4. Several PC folders still **outside** registry (G, Gem, WorkSphere, External PaaS, Pets) — future pass.

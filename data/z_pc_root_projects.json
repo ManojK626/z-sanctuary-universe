@@ -1,7 +1,7 @@
 {
   "pc_root": "C:/Cursor Projects Organiser",
   "hub": "Z_Sanctuary_Universe",
-  "updated_at": "2026-07-10T10:31:43Z",
+  "updated_at": "2026-09-16T13:22:00Z",
   "source": "z-eaii-registry.json + z-eaii-build-pc-workspace.mjs",
   "projects": [
     {
@@ -49,7 +49,7 @@
     },
     {
       "id": "eirmind-ireland-projects-missing",
-      "name": "ÉirMind (Ireland Projects)",
+      "name": "Ireland Projects (legacy expected path)",
       "path": "",
       "role": "external",
       "hosting": "missing",
@@ -58,7 +58,7 @@
       "eaii_launch_task": "",
       "dashboard_url": "",
       "migration_status": "path_missing",
-      "notes": "Former path C:/Cursor Projects Organiser/Ireland Projects absent on disk 2026-06-11. Hold pending AMK — see EIRMIND_ALIGNMENT_DECISION.md. On-disk lineage: Z-Sister Aisling Sol."
+      "notes": "LEGACY_POINTER only. Expected path C:/Cursor Projects Organiser/Ireland Projects ABSENT (observed 2026-06-11; still absent 2026-09-16). MUST NOT imply organism absent. logical_identity ÉirMind / Z-ÉirMind Ireland Universe is PRESENT via physical_root sister-aisling-sol (Z-Sister Aisling Sol). Do not create Ireland Projects. Do not duplicate ÉirMind as a second physical project. Identity ≠ deploy. See EIRMIND_ALIGNMENT_DECISION.md."
     },
     {
       "id": "extras-tools",
@@ -92,7 +92,8 @@
       "ssws": false,
       "formula_aware": true,
       "eaii_launch_task": "",
-      "dashboard_url": ""
+      "dashboard_url": "",
+      "notes": "PHYSICAL_ROOT of canonical organism ÉirMind / Z-ÉirMind Ireland Universe. Folder name ≠ logical_identity. Sister Aisling-Sol is ai_persona / AI Core WITHIN ÉirMind (packages/z-sanctuary-core/ai/aisling-sol.json), not a second project. Lineage pointer: eirmind-ireland-projects-missing. PHYSICAL ROOT COUNT: ONE. Steward 2026-09-16. Identity ≠ deploy. See EIRMIND_ALIGNMENT_DECISION.md."
     },
     {
       "id": "z-labs",

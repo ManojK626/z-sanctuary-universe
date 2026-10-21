@@ -2,7 +2,9 @@
 
 **Mission:** Read-only archaeological audit + **ROOT_ALIGNMENT_PASS** (2026-06-11)  
 **Date:** 2026-06-11  
-**Auditor:** Cursor (discovery + alignment — docs/registry only)  
+**Auditor:** Cursor (discovery + alignment — docs/registry only)
+
+**Reading rule (2026-09-16):** This master report is the June-11 snapshot. ÉirMind/`Ireland Projects` as a **registry ghost** meant the **expected path** was missing — not that the organism was absent. Canonical polarity: [EIRMIND_ALIGNMENT_DECISION.md](EIRMIND_ALIGNMENT_DECISION.md). Deployment unchanged.  
 **PC root scanned:** `C:\Cursor Projects Organiser`  
 **Canonical hub:** `Z_Sanctuary_Universe`  
 **Registry `hub` field:** **`Z_Sanctuary_Universe`** (aligned)

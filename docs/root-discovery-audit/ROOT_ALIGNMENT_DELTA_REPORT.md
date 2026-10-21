@@ -81,6 +81,18 @@ Carried in Slice 1 `data/z_pc_root_projects.json`. Does **not** rewrite the June
 - ÉirMind remains **EMK-HOLD**. The June decision table is not lifted.
 - Companion June docs in this pack (for example `ROOT_PROJECT_REGISTRY.md` “retained on disk”) remain June snapshots unless a later slice updates them.
 
+## Current superseding state — 2026-09-16 identity polarity
+
+Gate `Z-EIRMIND-IDENTITY-RECONCILIATION-1`. Does **not** rewrite the June-11 or July-10 tables above.
+
+- **logical_identity:** ÉirMind / Z-ÉirMind Ireland Universe
+- **physical_root:** `Z-Sister Aisling Sol` (verified on disk; folder name ≠ organism)
+- **ai_persona:** Sister Aisling-Sol (hub `aisling-sol.json` preserved)
+- **legacy_pointer:** `eirmind-ireland-projects-missing` / Ireland Projects folder still **ABSENT** — must not imply organism absent
+- **Deployment / EMK operational hold:** unchanged **NO_GO** — identity ≠ readiness
+- **Atlas:** not modified (`ATLAS_ONTOLOGY_REVIEW_REQUIRED` — no PATH_STATUS vs ORGANISM_STATUS on origin/main)
+- Receipt: [Z_EIRMIND_IDENTITY_RECONCILIATION_1_RECEIPT.md](Z_EIRMIND_IDENTITY_RECONCILIATION_1_RECEIPT.md)
+
 ## Verdict
 
-GREEN FOR PR REVIEW — MERGE HOLD until AMK reads this delta. June-11 text is historical; current identity is the 2026-07-10 superseding state plus later Slice 1 registry files.
+GREEN FOR PR REVIEW — MERGE HOLD until AMK reads this delta. June-11 text is historical; registry identity after 2026-07-10 plus **2026-09-16 ÉirMind polarity** (organism vs path vs persona). This verdict does **not** promote ÉirMind deploy.
