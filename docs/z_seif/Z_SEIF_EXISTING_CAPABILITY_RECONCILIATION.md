@@ -5,6 +5,8 @@
 **Method:** tracked-file survey on this audit base, plus unmerged HAM / PID-1B evidence that is not present on the base  
 **Posture:** CONCEPTUAL — NOT RUNTIME
 
+**Evidence correction:** `Z-SEIF-0-DOCS-EVIDENCE-RECONCILIATION-1` on `origin/main` @ `7bc5ad60d78e1eb578e1b92c005eab5634a986ea`
+
 Governing rule:
 
 > Before BUILD, prove GAP. Do not create a second engine where one already exists.
@@ -26,7 +28,8 @@ Classification used here:
 | --- | --- | --- | --- |
 | Z-Atlas | `EXISTING` | [docs/z_atlas/](../z_atlas/Z_ATLAS_CONSTITUTION.md) · Phase 0 / 0.5 sealed on this base | CONSUME topology and preflight. Do not fork a second map |
 | PID / identity contract | `EXISTING` | `docs/Z_PROJECT_IDENTITY_RELATIONSHIP_CONTRACT.md` | CONSUME vocabulary |
-| Project identity registry | `EXISTING` | `data/z_universe_project_registry.json`, `data/z_pc_root_projects.json`, `data/z_module_manifest.json` | CONSUME. Second registry = constitutional drift |
+| Project identity surfaces (present) | `EXISTING` | Z-Atlas v0.5; `data/z_pc_root_projects.json`; `data/z_module_manifest.json`; `data/z_ecosystem_github_identity.json` (hub row incomplete — do not add the row) | CONSUME present surfaces only. Second registry = constitutional drift |
+| Universe project registry | `MISSING` | `data/z_universe_project_registry.json` is **ABSENT** on canonical main | Do not create. Phase 1 does not depend on it |
 | Logical asset lineage / Z-CLDO | `PARTIAL` | Unmerged PID-1B evidence (`Z_PID_1B_LOGICAL_ASSET_LINEAGE.md` not on this base) | CONSUME later. Do not invent a second CLDO engine |
 | Provenance / receipts | `EXISTING` | `config/provenance_manifest.json`, `scripts/z_provenance_check.mjs`, `docs/PHASE_*_RECEIPT.md` | COMPOSE with GitHub SHA + future CF version IDs |
 | Workspace root guards | `EXISTING` | `scripts/z_workspace_root_guard.mjs`, multi-workspace governance | CONSUME for future Cursor preflight |
@@ -34,6 +37,21 @@ Classification used here:
 | Z-VUE graph contract | `PARTIAL` | Unmerged Z-VUE evidence (schema/registry not on this base) | Display ≠ authorization. Collision guard vs Atlas |
 
 `DUPLICATE_RISK:` HIGH if Z-SEIF builds another identity registry or topology brain.
+
+```text
+UNIVERSE_PROJECT_REGISTRY: ABSENT
+PHASE_1_DEPENDS_ON_IT: NO
+PHASE_0_REOPENED: NO
+PHASE_0_5: CLOSED
+PHASE_1: LANDED
+NEW_REGISTRY_AUTHORIZED: NO
+ATLAS_AUTHORITY_CHANGED: NO
+GITHUB_IDENTITY_AUTHORITY_CHANGED: NO
+PRODUCTION_AUTHORITY: NONE
+OBSERVERS READ. AUTHORITIES OWN. EVIDENCE DESCRIBES. STEWARD DECIDES.
+```
+
+Absence of `data/z_universe_project_registry.json` is an evidence fact. It does not reopen Phase 0.5, invalidate Phase 1, authorize creating a new registry, change Atlas authority, change GitHub identity authority, or create production authority.
 
 ## Health / alerts
 
