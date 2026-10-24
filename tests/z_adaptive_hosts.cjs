@@ -37,6 +37,26 @@ function appsWeb(base) {
   };
 }
 
+function amkMainControl(base) {
+  return {
+    id: 'AMK_GOKU_MAIN_CONTROL',
+    architecture: 'traditional-html',
+    base,
+    path: '/dashboard/Html/amk-goku-main-control.html',
+    ready: 'document.documentElement.getAttribute(\'z-layout\') && document.getElementById(\'zAnyDeviceEvidenceMount\') && document.getElementById(\'zAnyDeviceEvidenceMount\').textContent.indexOf(\'NOT_TESTED\') !== -1',
+    optInTarget: 'body',
+    headingSelector: '#amkMapPageTitle, #zAnyDeviceEvidenceMount h3, #zAnyDeviceEvidenceMount h4',
+    linkSelector: 'nav.amk-dash-ribbon-nav a[href]',
+    criticalSelectors: ['#amkMapPageTitle', '#zAnyDeviceEvidenceMount', 'a.amk-map-skip'],
+    governanceSelectors: [],
+    keyboardSelector: '#zAnyDeviceEvidenceMount button',
+    density: 'absent',
+    cssNeedles: ['100dvh', 'safe-area-inset', 'prefers-reduced-motion'],
+    skipCssWalk: true,
+    settleMs: 500,
+  };
+}
+
 function legacyFixture(base) {
   return {
     id: 'LEGACY_NON_OPT_IN',
@@ -45,4 +65,4 @@ function legacyFixture(base) {
   };
 }
 
-module.exports = { unifiedDashboard, appsWeb, legacyFixture };
+module.exports = { unifiedDashboard, appsWeb, amkMainControl, legacyFixture };
