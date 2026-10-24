@@ -3,12 +3,13 @@
   <head>
     <!-- Guard: Critical dashboard entrypoint. Review -> Verify -> Apply required. -->
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
     <meta name="z-project-id" content="ZSanctuary_Universe" />
     <meta name="z-dashboard-role" content="main-dashboard" />
     <meta name="z-project-family" content="Z-Sanctuary Universe" />
     <title>Z-Sanctuary Universe · SKK &amp; RKPK · Dashboard (Unified)</title>
     <link rel="stylesheet" href="../../interface/z_style.css" />
+    <link rel="stylesheet" href="../../interface/z_adaptive_foundation.css" />
     <link rel="stylesheet" href="../styles/lumina-theme.css" />
     <link rel="stylesheet" href="../styles/lumina-components.css" />
     <link rel="stylesheet" href="../styles/zuno-hand.css" />
@@ -20,7 +21,7 @@
     <link rel="stylesheet" href="../styles/z-root-guardian-coordination.css" />
     <script defer src="../scripts/z-display-morph-engine.js"></script>
   </head>
-  <body class="z-dashboard-organism" data-display-mode="standard">
+  <body class="z-dashboard-organism z-anydevice-adaptive" data-display-mode="standard">
     <!-- Z-Display Morph: apply saved mode synchronously before paint (same key/storage as morph engine) -->
     <script>
       (function () {
@@ -2288,6 +2289,7 @@ SKK/RKPK DASHBOARD → HUMAN REVIEW → APPROVED ACTION OR STOP_GATE → AUDIT L
     <script src="../../core/z_overlay_adjuster.js"></script>
     <script src="../../core/z_ui_extras.js"></script>
     <script src="../../core/z_hub_mini_bot_rail_sync.js"></script>
+    <script src="../../core/z_adaptive_runtime.cjs"></script>
     <script src="../../core/z_layout_engine.js"></script>
     <script src="../../core/z_registry_badge.js"></script>
 

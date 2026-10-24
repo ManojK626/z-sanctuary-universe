@@ -40,8 +40,19 @@ function CompanionScene({ mood }) {
 export default function SKKRKPKOverlay() {
   const { mood, message, completionPct, skk, rkpk } = useGovernanceState();
   const [mute, setMute] = useState(true);
+  const [reduceMotion, setReduceMotion] = useState(false);
   const lastMood = useRef('');
   const isMobile = typeof window !== 'undefined' && window.innerWidth < 520;
+
+  useEffect(() => {
+    const sync = () => {
+      setReduceMotion(document.documentElement.getAttribute('z-motion') === 'reduce');
+    };
+    sync();
+    const observer = new MutationObserver(sync);
+    observer.observe(document.documentElement, { attributes: true, attributeFilter: ['z-motion'] });
+    return () => observer.disconnect();
+  }, []);
 
   useEffect(() => {
     if (!lastMood.current) {
@@ -111,7 +122,7 @@ export default function SKKRKPKOverlay() {
         <Canvas camera={{ position: [0, 0, 4] }}>
           <CompanionScene mood={mood} />
           <Sparks active={mood === 'celebrate'} />
-          <OrbitControls enableZoom={false} enablePan={false} autoRotate autoRotateSpeed={0.6} />
+          <OrbitControls enableZoom={false} enablePan={false} autoRotate={!reduceMotion} autoRotateSpeed={0.6} />
         </Canvas>
       </div>
     </section>

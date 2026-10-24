@@ -1,14 +1,22 @@
 import Link from 'next/link';
 import './globals.css';
+import ZAdaptiveHost from '../components/adaptive/ZAdaptiveHost.jsx';
 
 export const metadata = {
   title: 'Z-Sanctuary Universe',
+};
+
+export const viewport = {
+  width: 'device-width',
+  initialScale: 1,
+  viewportFit: 'cover',
 };
 
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className="sanctuary-body">
+        <ZAdaptiveHost />
         <div className="sanctuary-tv-wrap sanctuary-tv-wrap--with-padding">
         <header
           className="sanctuary-tv-header"

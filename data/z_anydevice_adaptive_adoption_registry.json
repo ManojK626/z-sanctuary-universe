@@ -1,0 +1,115 @@
+{
+  "registry_id": "Z_ANYDEVICE_ADAPTIVE_ADOPTION_REGISTRY",
+  "contract_version": "0.1",
+  "mode": "REGISTRY_REVIEW_RECONCILED_TO_0_6_EVIDENCE",
+  "adaptive_status_is_not_device_trust": true,
+  "mutation_authority": "NONE",
+  "canonical_source_sha": "4f8f94cab32f4762609dad00e6e53f3894dda192",
+  "review_branch": "cursor/zsanctuary/z-anydevice-cross-browser-touch-closure-0-6",
+  "adaptive_runtime": "core/z_adaptive_runtime.cjs",
+  "status_values": ["GREEN", "AMBER", "RED", "NOT_TESTED", "LEGACY", "EXEMPT"],
+  "entries": [
+    {
+      "project_id": "unified-dashboard",
+      "canonical_surface": "dashboard/Html/index-skk-rkpk.html",
+      "canonical_source_sha": "4f8f94cab32f4762609dad00e6e53f3894dda192",
+      "contract_version": "0.1",
+      "adaptive_runtime_version": "core/z_adaptive_runtime.cjs",
+      "host_adapter": "core/z_layout_engine.js",
+      "status": "GREEN",
+      "last_tested_at": "2026-10-24",
+      "viewport_coverage": "12-size synthetic matrix",
+      "chromium_result": "PASS",
+      "firefox_result": "PASS",
+      "webkit_result": "PASS",
+      "pointer_fine": "PASS",
+      "pointer_coarse": "PASS",
+      "hover": "PASS",
+      "no_hover": "PASS",
+      "keyboard_result": "PASS",
+      "reduced_motion_result": "PASS",
+      "safe_area_result": "PASS",
+      "dynamic_viewport_result": "PASS",
+      "business_truth_parity": "PASS",
+      "canonical_destination_parity": "PASS",
+      "raw_link_list_note": "Same link set in Chromium, Firefox, and WebKit. Seven report links are hidden on mobile and compact in every browser and visible on standard and wide. Prior Firefox/WebKit raw-list mismatch was a test-harness artifact.",
+      "effective_coarse_target": "PASS_AT_LEAST_44",
+      "nominal_coarse_min": "calc(44px / var(--z-body-ui-scale, 1))",
+      "body_ui_scale": "0.5",
+      "offline_presentation_result": "PASS_CHROMIUM",
+      "physical_device_evidence": "NOT_COLLECTED",
+      "open_p0": [],
+      "open_p1": [],
+      "open_p2": [],
+      "evidence_receipt": "0.6 local evidence. Semantic destination parity and effective coarse targets pass. Not physical-device evidence. Repair is uncommitted."
+    },
+    {
+      "project_id": "apps-web",
+      "canonical_surface": "apps/web",
+      "canonical_source_sha": "4f8f94cab32f4762609dad00e6e53f3894dda192",
+      "contract_version": "0.1",
+      "adaptive_runtime_version": "core/z_adaptive_runtime.cjs",
+      "host_adapter": "apps/web/src/components/adaptive/ZAdaptiveHost.jsx",
+      "status": "GREEN",
+      "last_tested_at": "2026-10-24",
+      "viewport_coverage": "12-size synthetic matrix on the sealed host, plus 0.6 destination and coarse-signal regression",
+      "chromium_result": "PASS",
+      "firefox_result": "PASS",
+      "webkit_result": "PASS",
+      "pointer_fine": "PASS",
+      "pointer_coarse": "PASS",
+      "hover": "PASS",
+      "no_hover": "PASS",
+      "keyboard_result": "PASS",
+      "reduced_motion_result": "PASS",
+      "safe_area_result": "PASS",
+      "dynamic_viewport_result": "PASS",
+      "business_truth_parity": "PASS",
+      "canonical_destination_parity": "PASS",
+      "offline_presentation_result": "PASS_CHROMIUM",
+      "physical_device_evidence": "NOT_COLLECTED",
+      "open_p0": [],
+      "open_p1": [],
+      "open_p2": [],
+      "evidence_receipt": "No 0.6 product edit. Server HTML does not contain z-layout. Header destinations match across mobile, compact, standard, and wide in all three browser families. z-density is NOT_APPLICABLE. Inline navigation links are exempt from the cockpit 44px target contract. Body zoom is absent."
+    }
+  ],
+  "fixtures": [
+    {
+      "project_id": "legacy-non-opt-in-fixture",
+      "canonical_surface": "tests/fixtures/z_adaptive_legacy_host.html",
+      "role": "TEST_FIXTURE",
+      "status": "LEGACY_BEHAVIOR_PRESERVED",
+      "note": "Not a production project."
+    }
+  ],
+  "legacy_surfaces": [
+    {
+      "project_id": "shadow-workbench",
+      "canonical_surface": "dashboard/Html/shadow/index-skk-rkpk.workbench.html",
+      "status": "LEGACY",
+      "open_p2": ["PRE_EXISTING_SHADOW_404"],
+      "note": "Requests /dashboard/core/z_layout_engine.js and receives 404. Not repaired in this gate."
+    }
+  ],
+  "candidate_backlog": [
+    {
+      "project_id": "amk-goku-main-control",
+      "canonical_surface": "dashboard/Html/amk-goku-main-control.html",
+      "status": "NOT_TESTED",
+      "adoption_authorized": false
+    },
+    {
+      "project_id": "z-connect",
+      "canonical_surface": "sealed preview lineage cursor/soulmates/private-fixture-preview-0-1",
+      "status": "NOT_TESTED",
+      "adoption_authorized": false
+    },
+    {
+      "project_id": "z-golden",
+      "canonical_surface": "canonical web surface not identified on this commit",
+      "status": "NOT_TESTED",
+      "adoption_authorized": false
+    }
+  ]
+}
