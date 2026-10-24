@@ -16,13 +16,13 @@
   ],
   "properties": {
     "schemaVersion": {
-      "$ref": "../../common/schemas/v1/_definitions.schema.json#/$defs/SchemaVersion"
+      "$ref": "https://z-sanctuary.local/z-connect/schemas/v1/definitions.json#/$defs/SchemaVersion"
     },
     "consentId": {
-      "$ref": "../../common/schemas/v1/_definitions.schema.json#/$defs/Identifier"
+      "$ref": "https://z-sanctuary.local/z-connect/schemas/v1/definitions.json#/$defs/Identifier"
     },
     "userId": {
-      "$ref": "../../common/schemas/v1/_definitions.schema.json#/$defs/UserId"
+      "$ref": "https://z-sanctuary.local/z-connect/schemas/v1/definitions.json#/$defs/UserId"
     },
     "scope": {
       "$ref": "https://z-sanctuary.local/z-connect/schemas/v1/consent-scope.json"
@@ -32,10 +32,10 @@
       "const": "v1"
     },
     "grantedAtIso": {
-      "$ref": "../../common/schemas/v1/_definitions.schema.json#/$defs/TimestampIso"
+      "$ref": "https://z-sanctuary.local/z-connect/schemas/v1/definitions.json#/$defs/TimestampIso"
     },
     "withdrawnAtIso": {
-      "$ref": "../../common/schemas/v1/_definitions.schema.json#/$defs/TimestampIso"
+      "$ref": "https://z-sanctuary.local/z-connect/schemas/v1/definitions.json#/$defs/TimestampIso"
     },
     "purpose": {
       "type": "string",
