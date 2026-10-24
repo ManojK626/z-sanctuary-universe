@@ -76,8 +76,13 @@ function sourceGuard() {
     encoding: 'utf8',
   }).trim();
   if (trace) failures.push('traceability changed');
-  const head = execFileSync('git', ['rev-parse', 'HEAD'], { cwd: ROOT, encoding: 'utf8' }).trim();
-  if (head !== FOUNDATION) failures.push('foundation sha moved');
+  const foundationCommit = execFileSync('git', ['rev-parse', FOUNDATION + '^{commit}'], { cwd: ROOT, encoding: 'utf8' }).trim();
+  if (foundationCommit !== FOUNDATION) failures.push('foundation sha moved');
+  try {
+    execFileSync('git', ['merge-base', '--is-ancestor', FOUNDATION, 'HEAD'], { cwd: ROOT, stdio: 'ignore' });
+  } catch (error) {
+    failures.push('foundation sha moved ' + (error && error.status));
+  }
   const registry = execFileSync('git', ['status', '--porcelain', '--', 'data/z_anydevice_adaptive_adoption_registry.json'], {
     cwd: ROOT,
     encoding: 'utf8',
