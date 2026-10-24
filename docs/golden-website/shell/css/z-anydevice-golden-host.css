@@ -1,0 +1,14 @@
+/* Home-page presentation for the Golden Website host.
+ * Layout class comes from the shared runtime. This file does not classify width.
+ */
+body.z-anydevice-adaptive .wrap,
+body.z-anydevice-adaptive nav.primary {
+  max-width: 100%;
+  min-width: 0;
+}
+
+body.z-anydevice-adaptive nav.primary {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}

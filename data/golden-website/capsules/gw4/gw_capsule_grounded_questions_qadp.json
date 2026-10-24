@@ -1,0 +1,46 @@
+{
+  "schema": "gw_public_safe_capsule_v1",
+  "phase": "GW-4A",
+  "canonical_id": "grounded_questions_qadp",
+  "overlay_id": "ZS-AI-009",
+  "id_status": "TEMPORARY_PENDING_CANONICAL_REVIEW",
+  "public_name": "Grounded Questions (QADP)",
+  "page": "qadp.html",
+  "ia_group": "Understand & Guide",
+  "simple_purpose": "A grounded question and directed-pathway pattern: anchor the question, prefer citations, admit missing evidence, and use human gates where risk is high. QADP is not Golden Guide AI.",
+  "evidence_state": "QUALIFIED",
+  "public_evidence_gate": "PASS",
+  "implementation_state": "DOCTRINE_PLUS_HUB_UI",
+  "implementation_state_public_wording": "Doctrine plus local operator prototypes. Not a public Q&A runtime.",
+  "demonstrably_working": [
+    "A QADP doctrine document exists.",
+    "Local operator prototypes in the same family exist (Knowledge Ask and Z-Q&A&RP). They are not Golden Guide AI.",
+    "Cloudflare Ask AI remains a contingency, not daily public Q&A."
+  ],
+  "non_public_or_unproven": [
+    "QADP is not Golden Guide AI.",
+    "Golden Guide AI is not live.",
+    "Zuno is not the public chatbot.",
+    "Four internal surfaces are not four public products.",
+    "Citations do not make answers independently VERIFIED.",
+    "Working local UI is not a public production Q&A service."
+  ],
+  "core_relationship": "Grounded inquiry pattern used with Z-Sanctuary Core.",
+  "next_evidence_gate": "Keep QUALIFIED visible. Do not iframe operator HTML. Golden Guide AI runtime stays blocked. Publication and Twin insert remain unauthorized.",
+  "public_safe_evidence_references": [
+    {
+      "title": "QADP doctrine",
+      "supports": "A grounded Q&A and directed-pathway pattern is written down.",
+      "does_not_support": "Golden Guide AI runtime or elimination of model mistakes."
+    },
+    {
+      "title": "Local Knowledge Ask / Z-Q&A&RP prototypes",
+      "supports": "Operator UIs exist in the same family.",
+      "does_not_support": "A public Q&A service."
+    }
+  ],
+  "classification": "APPROVED_PUBLIC_SAFE",
+  "publication": "NOT_YET_AUTHORIZED",
+  "human_approval_explicit": "GRANTED",
+  "granted_at": "2026-08-27"
+}

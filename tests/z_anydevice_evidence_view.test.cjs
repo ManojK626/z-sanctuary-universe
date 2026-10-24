@@ -26,15 +26,25 @@ assert.strictEqual(byId('amk-goku-main-control').firefox, 'PASS');
 assert.strictEqual(byId('amk-goku-main-control').webkit, 'PASS');
 assert.strictEqual(byId('amk-goku-main-control').physicalDevice, 'NOT_COLLECTED');
 assert.strictEqual(byId('z-connect').status, 'NOT_TESTED');
-assert.ok(byId('z-golden').surface.includes('not identified'));
+assert.strictEqual(byId('z-connect').role, 'CANDIDATE');
+assert.strictEqual(byId('z-golden').status, 'GREEN');
+assert.strictEqual(byId('z-golden').role, 'HOST');
+assert.strictEqual(byId('z-golden').surface, 'docs/golden-website/shell/index.html');
+assert.strictEqual(byId('z-golden').testedSha, '825a671c03a9ebdfa4724a59dcc71abaffd8c69c');
+assert.strictEqual(byId('z-golden').chromium, 'PASS');
+assert.strictEqual(byId('z-golden').firefox, 'PASS');
+assert.strictEqual(byId('z-golden').webkit, 'PASS');
+assert.strictEqual(byId('z-golden').physicalDevice, 'NOT_COLLECTED');
+assert.ok(byId('z-golden').receipt.includes('home page only'));
+assert.ok(byId('z-golden').receipt.includes('NOT_TESTED'));
 assert.strictEqual(byId('shadow-workbench').status, 'LEGACY');
 assert.ok(byId('shadow-workbench').openP2.includes('PRE_EXISTING_SHADOW_404'));
-assert.strictEqual(summary.greenHosts, 3);
+assert.strictEqual(summary.greenHosts, 4);
 assert.strictEqual(summary.openP0, 0);
 assert.strictEqual(summary.openP1, 0);
 assert.strictEqual(summary.openP2, 1);
 assert.strictEqual(summary.ecosystemWideGreen, 'NO');
-assert.strictEqual(summary.capability, 'PROVEN_THREE_HOST_PLATFORM_CAPABILITY');
+assert.strictEqual(summary.capability, 'PROVEN_FOUR_HOST_PLATFORM_CAPABILITY');
 
 function hostRow(status) {
   return { role: 'HOST', status: status, openP0: [], openP1: [], openP2: [] };
@@ -48,7 +58,15 @@ assert.strictEqual(
   'UNKNOWN'
 );
 assert.strictEqual(
-  view.platformSummary([hostRow('GREEN'), hostRow('GREEN'), hostRow('GREEN')]).ecosystemWideGreen,
+  view.platformSummary([hostRow('GREEN'), hostRow('GREEN'), hostRow('GREEN')]).capability,
+  'PROVEN_THREE_HOST_PLATFORM_CAPABILITY'
+);
+assert.strictEqual(
+  view.platformSummary([hostRow('GREEN'), hostRow('GREEN'), hostRow('GREEN'), hostRow('GREEN')]).capability,
+  'PROVEN_FOUR_HOST_PLATFORM_CAPABILITY'
+);
+assert.strictEqual(
+  view.platformSummary([hostRow('GREEN'), hostRow('GREEN'), hostRow('GREEN'), hostRow('GREEN')]).ecosystemWideGreen,
   'NO'
 );
 
@@ -64,6 +82,7 @@ assert.strictEqual(view.driftLabel('UNKNOWN', 'def'), 'UNKNOWN');
 
 const hidden = view.filterRows(rows, 'NOT_TESTED').map((row) => row.project);
 assert.ok(hidden.includes('z-connect'));
+assert.ok(!hidden.includes('z-golden'));
 assert.ok(!hidden.includes('amk-goku-main-control'));
 assert.ok(!hidden.includes('unified-dashboard'));
 assert.ok(view.filterRows(rows, 'HAS P2').some((row) => row.project === 'shadow-workbench'));

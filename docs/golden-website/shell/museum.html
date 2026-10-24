@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en" data-disable-auto-compass>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Prototype Museum — The Golden Website</title>
+  <meta name="description" content="Local Prototype Museum. One approved exhibit. Not a public service.">
+  <link rel="stylesheet" href="css/golden-website.css">
+</head>
+<body data-gw-page="museum">
+  <a class="skip" href="#main">Skip to content</a>
+  <div class="wrap">
+    <header class="site">
+      <a class="brand" href="index.html">
+        <small>Z-Sanctuary Universe</small>
+        <strong>The Golden Website</strong>
+      </a>
+      <nav class="primary" aria-label="Primary">
+        <a href="index.html">Home</a>
+        <a href="portfolio.html">Portfolio</a>
+        <a href="universe-map.html">Map</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="museum.html" aria-current="page">Museum</a>
+        <a href="guide-sandbox.html">Guide</a>
+        <a href="gateway.html">Gateway</a>
+        <a href="ai-integrity.html">Integrity</a>
+        <a href="core.html">Z-Sanctuary Core</a>
+        <a href="navigator.html">Navigator</a>
+        <button type="button" id="gw-evidence-toggle" aria-pressed="false" aria-expanded="false" aria-controls="gw-evidence-board">Show Me What's Real</button>
+      </nav>
+    </header>
+    <main id="main" tabindex="-1">
+      <section class="hero">
+        <p class="notice">Local museum · one approved exhibit · not published · not deployed</p>
+        <h1>Prototype Museum</h1>
+        <p>Interact with carefully classified development prototypes without confusing prototypes with production systems.</p>
+        <p class="lede">The Museum explains what visitors can actually interact with. A prototype is not production. Local is not deployed. Working UI is not a public service.</p>
+      </section>
+      <p id="gw-evidence-status" class="visually-hidden" aria-live="polite"></p>
+      <section class="glass evidence-board" id="gw-evidence-board" aria-hidden="true"></section>
+      <section class="glass" id="gw-museum-exhibit"></section>
+      <section class="glass">
+        <h2>Other prototypes</h2>
+        <p>Additional prototypes remain behind sanitization, identity, and evidence gates.</p>
+      </section>
+      <section class="glass">
+        <h2>Future surfaces</h2>
+        <p class="notice">Locked until they pass evidence gates. These are not broken links. No private data is loaded here.</p>
+        <ul class="locked" id="gw-locked"></ul>
+      </section>
+    </main>
+    <footer class="site">
+      Prototype ≠ production. Local ≠ deployed. Public-safe ≠ published. Readiness ≠ deploy.
+    </footer>
+  </div>
+  <script src="data/gw-approved-public-safe.js"></script>
+  <script src="data/gw-exhibits.js"></script>
+  <script src="js/golden-website.js"></script>
+  <script src="js/golden-exhibits.js"></script>
+</body>
+</html>

@@ -1,0 +1,1692 @@
+{
+  "schema_version": "1.0",
+  "phase": "GW-1",
+  "generated_from": "data/golden-website/gw_portfolio_registry.json",
+  "generated_at": "2026-08-27T05:49:22.819Z",
+  "publication_policy": "DENY_BY_DEFAULT",
+  "publication_authorized": false,
+  "phase_notes": "GW-13 is a local Public Pilot Readiness Audit. No publication, deploy, LLM, or Twin records[]. publication_authorized remains false. Steward go/no-go is pending.",
+  "steward_classifications": {
+    "univ_workstation_navigator": {
+      "classification": "APPROVED_PUBLIC_SAFE",
+      "publication": "NOT_YET_AUTHORIZED"
+    },
+    "z_sanctuary_core": {
+      "classification": "APPROVED_PUBLIC_SAFE",
+      "publication": "NOT_YET_AUTHORIZED",
+      "evidence_gate": "PASS"
+    },
+    "fourteen_drp_protocols": {
+      "classification": "APPROVED_PUBLIC_SAFE",
+      "publication": "NOT_YET_AUTHORIZED",
+      "overlay_id": "ZS-FORMULA-002"
+    },
+    "z_eaii": {
+      "classification": "APPROVED_PUBLIC_SAFE",
+      "publication": "NOT_YET_AUTHORIZED",
+      "overlay_id": "ZS-AI-001"
+    },
+    "grounded_questions_qadp": {
+      "classification": "APPROVED_PUBLIC_SAFE",
+      "publication": "NOT_YET_AUTHORIZED",
+      "overlay_id": "ZS-AI-009"
+    },
+    "cycle_observe": {
+      "classification": "APPROVED_PUBLIC_SAFE",
+      "publication": "NOT_YET_AUTHORIZED",
+      "overlay_id": "ZS-PROTOTYPE-002"
+    }
+  },
+  "posture": "public_derivative_not_sanctuary_truth",
+  "steward_identity": {
+    "public_umbrella": "Z-Sanctuary Universe",
+    "public_website": "The Golden Website",
+    "public_website_subtitle": "Gateway to the Z-Sanctuary Universe",
+    "public_qa": "Golden Guide AI",
+    "public_qa_cta": "Ask Z-Sanctuary",
+    "public_map": "Golden Universe Map",
+    "public_map_subtitle": "Interactive Z-Sanctuary Canvas",
+    "universe_2": "INTERNAL_LEGACY_ALIAS",
+    "zuno_public_chatbot": false
+  },
+  "doctrine": [
+    "private unless approved",
+    "public representation ≠ private authority",
+    "prototype ≠ production",
+    "potential ≠ revenue",
+    "visual ≠ implementation",
+    "AI answer ≠ evidence",
+    "federation ≠ authority",
+    "readiness ≠ deploy"
+  ],
+  "identity_model": {
+    "canonical_id": "stable boring identifier; do not change for branding",
+    "public_display_name": "may evolve",
+    "public_slug": "may evolve; independent of canonical_id",
+    "temporary_id": "ZS-*-### until promotion criteria met; canonical_id remains null"
+  },
+  "records": [],
+  "withheld_records": [
+    {
+      "canonical_id": null,
+      "temporary_id": "ZS-PROJECT-000",
+      "overlay_inventory_id": "ZS-PROJECT-000",
+      "id_status": "TEMPORARY_PENDING_CANONICAL_REVIEW",
+      "type": "PROJECT",
+      "withhold_class": "DENY_BY_DEFAULT",
+      "withhold_reason_code": "NEEDS_IDENTITY_REVIEW",
+      "proposed_exposure_class": "PRIVATE"
+    },
+    {
+      "canonical_id": "z-sanctuary-universe",
+      "temporary_id": null,
+      "overlay_inventory_id": "z-sanctuary-universe",
+      "id_status": "CANONICAL",
+      "type": "PROJECT",
+      "withhold_class": "DENY_BY_DEFAULT",
+      "withhold_reason_code": "DO_NOT_PUBLISH",
+      "proposed_exposure_class": "DO_NOT_PUBLISH"
+    },
+    {
+      "canonical_id": "amk-goku-dashboards-2",
+      "temporary_id": null,
+      "overlay_inventory_id": "amk-goku-dashboards-2",
+      "id_status": "CANONICAL",
+      "type": "PROJECT",
+      "withhold_class": "DENY_BY_DEFAULT",
+      "withhold_reason_code": "NEEDS_EVIDENCE",
+      "proposed_exposure_class": "PRIVATE"
+    },
+    {
+      "canonical_id": "amk-goku-vaults",
+      "temporary_id": null,
+      "overlay_inventory_id": "amk-goku-vaults",
+      "id_status": "CANONICAL",
+      "type": "PROJECT",
+      "withhold_class": "DENY_BY_DEFAULT",
+      "withhold_reason_code": "KEEP_PRIVATE",
+      "proposed_exposure_class": "PRIVATE"
+    },
+    {
+      "canonical_id": "at-princess-blackie-copilot",
+      "temporary_id": null,
+      "overlay_inventory_id": "at-princess-blackie-copilot",
+      "id_status": "CANONICAL",
+      "type": "PROJECT",
+      "withhold_class": "DENY_BY_DEFAULT",
+      "withhold_reason_code": "KEEP_PRIVATE",
+      "proposed_exposure_class": "PRIVATE"
+    },
+    {
+      "canonical_id": "eirmind-ireland-projects-missing",
+      "temporary_id": null,
+      "overlay_inventory_id": "eirmind-ireland-projects-missing",
+      "id_status": "CANONICAL",
+      "type": "PROJECT",
+      "withhold_class": "DENY_BY_DEFAULT",
+      "withhold_reason_code": "KEEP_PRIVATE",
+      "proposed_exposure_class": "PRIVATE"
+    },
+    {
+      "canonical_id": "extras-tools",
+      "temporary_id": null,
+      "overlay_inventory_id": "extras-tools",
+      "id_status": "CANONICAL",
+      "type": "PROJECT",
+      "withhold_class": "DENY_BY_DEFAULT",
+      "withhold_reason_code": "KEEP_PRIVATE",
+      "proposed_exposure_class": "PRIVATE"
+    },
+    {
+      "canonical_id": "replit-roulette-z-amk-goku-mdcp",
+      "temporary_id": null,
+      "overlay_inventory_id": "replit-roulette-z-amk-goku-mdcp",
+      "id_status": "CANONICAL",
+      "type": "PROJECT",
+      "withhold_class": "DENY_BY_DEFAULT",
+      "withhold_reason_code": "NEEDS_EVIDENCE",
+      "proposed_exposure_class": "PRIVATE"
+    },
+    {
+      "canonical_id": "sister-aisling-sol",
+      "temporary_id": null,
+      "overlay_inventory_id": "sister-aisling-sol",
+      "id_status": "CANONICAL",
+      "type": "PROJECT",
+      "withhold_class": "DENY_BY_DEFAULT",
+      "withhold_reason_code": "KEEP_PRIVATE",
+      "proposed_exposure_class": "PRIVATE"
+    },
+    {
+      "canonical_id": "z-labs",
+      "temporary_id": null,
+      "overlay_inventory_id": "z-labs",
+      "id_status": "CANONICAL",
+      "type": "PROJECT",
+      "withhold_class": "DENY_BY_DEFAULT",
+      "withhold_reason_code": "KEEP_PRIVATE",
+      "proposed_exposure_class": "PRIVATE"
+    },
+    {
+      "canonical_id": "z-sanctuary-universe-2",
+      "temporary_id": null,
+      "overlay_inventory_id": "z-sanctuary-universe-2",
+      "id_status": "CANONICAL",
+      "type": "PROJECT",
+      "withhold_class": "DENY_BY_DEFAULT",
+      "withhold_reason_code": "KEEP_PRIVATE",
+      "proposed_exposure_class": "PRIVATE"
+    },
+    {
+      "canonical_id": "z-sanctuary-universe-2-continuation",
+      "temporary_id": null,
+      "overlay_inventory_id": "z-sanctuary-universe-2-continuation",
+      "id_status": "CANONICAL",
+      "type": "PROJECT",
+      "withhold_class": "DENY_BY_DEFAULT",
+      "withhold_reason_code": "KEEP_PRIVATE",
+      "proposed_exposure_class": "PRIVATE"
+    },
+    {
+      "canonical_id": "z-omni-sanctuary",
+      "temporary_id": null,
+      "overlay_inventory_id": "z-omni-sanctuary",
+      "id_status": "CANONICAL",
+      "type": "PROJECT",
+      "withhold_class": "DENY_BY_DEFAULT",
+      "withhold_reason_code": "KEEP_PRIVATE",
+      "proposed_exposure_class": "PRIVATE"
+    },
+    {
+      "canonical_id": "z-sanctuary-ai-skyscraper",
+      "temporary_id": null,
+      "overlay_inventory_id": "z-sanctuary-ai-skyscraper",
+      "id_status": "CANONICAL",
+      "type": "PROJECT",
+      "withhold_class": "DENY_BY_DEFAULT",
+      "withhold_reason_code": "KEEP_PRIVATE",
+      "proposed_exposure_class": "PRIVATE"
+    },
+    {
+      "canonical_id": "z-sanctuary-browser-z-saiyan-lumina",
+      "temporary_id": null,
+      "overlay_inventory_id": "z-sanctuary-browser-z-saiyan-lumina",
+      "id_status": "CANONICAL",
+      "type": "PROJECT",
+      "withhold_class": "DENY_BY_DEFAULT",
+      "withhold_reason_code": "KEEP_PRIVATE",
+      "proposed_exposure_class": "PRIVATE"
+    },
+    {
+      "canonical_id": "z-sanctuary-claude-core",
+      "temporary_id": null,
+      "overlay_inventory_id": "z-sanctuary-claude-core",
+      "id_status": "CANONICAL",
+      "type": "PROJECT",
+      "withhold_class": "DENY_BY_DEFAULT",
+      "withhold_reason_code": "KEEP_PRIVATE",
+      "proposed_exposure_class": "PRIVATE"
+    },
+    {
+      "canonical_id": "z-sanctuary-external-paas",
+      "temporary_id": null,
+      "overlay_inventory_id": "z-sanctuary-external-paas",
+      "id_status": "CANONICAL",
+      "type": "PROJECT",
+      "withhold_class": "DENY_BY_DEFAULT",
+      "withhold_reason_code": "KEEP_PRIVATE",
+      "proposed_exposure_class": "PRIVATE"
+    },
+    {
+      "canonical_id": "z-sanctuary-g",
+      "temporary_id": null,
+      "overlay_inventory_id": "z-sanctuary-g",
+      "id_status": "CANONICAL",
+      "type": "PROJECT",
+      "withhold_class": "DENY_BY_DEFAULT",
+      "withhold_reason_code": "KEEP_PRIVATE",
+      "proposed_exposure_class": "PRIVATE"
+    },
+    {
+      "canonical_id": "z-sanctuary-gem",
+      "temporary_id": null,
+      "overlay_inventory_id": "z-sanctuary-gem",
+      "id_status": "CANONICAL",
+      "type": "PROJECT",
+      "withhold_class": "DENY_BY_DEFAULT",
+      "withhold_reason_code": "KEEP_PRIVATE",
+      "proposed_exposure_class": "PRIVATE"
+    },
+    {
+      "canonical_id": "z-sanctuary-replit",
+      "temporary_id": null,
+      "overlay_inventory_id": "z-sanctuary-replit",
+      "id_status": "CANONICAL",
+      "type": "PROJECT",
+      "withhold_class": "DENY_BY_DEFAULT",
+      "withhold_reason_code": "DO_NOT_PUBLISH",
+      "proposed_exposure_class": "DO_NOT_PUBLISH"
+    },
+    {
+      "canonical_id": "z-sanctuary-aimanity",
+      "temporary_id": null,
+      "overlay_inventory_id": "z-sanctuary-aimanity",
+      "id_status": "CANONICAL",
+      "type": "PROJECT",
+      "withhold_class": "DENY_BY_DEFAULT",
+      "withhold_reason_code": "KEEP_PRIVATE",
+      "proposed_exposure_class": "PRIVATE"
+    },
+    {
+      "canonical_id": "z-sancurary-pets-care-compassion",
+      "temporary_id": null,
+      "overlay_inventory_id": "z-sancurary-pets-care-compassion",
+      "id_status": "CANONICAL",
+      "type": "PROJECT",
+      "withhold_class": "DENY_BY_DEFAULT",
+      "withhold_reason_code": "KEEP_PRIVATE",
+      "proposed_exposure_class": "PRIVATE"
+    },
+    {
+      "canonical_id": "z-worksphere-marketplace-hub",
+      "temporary_id": null,
+      "overlay_inventory_id": "z-worksphere-marketplace-hub",
+      "id_status": "CANONICAL",
+      "type": "PROJECT",
+      "withhold_class": "DENY_BY_DEFAULT",
+      "withhold_reason_code": "KEEP_PRIVATE",
+      "proposed_exposure_class": "PRIVATE"
+    },
+    {
+      "canonical_id": "zsanctuary-universe-stub-retired",
+      "temporary_id": null,
+      "overlay_inventory_id": "zsanctuary-universe-stub-retired",
+      "id_status": "CANONICAL",
+      "type": "PROJECT",
+      "withhold_class": "DENY_BY_DEFAULT",
+      "withhold_reason_code": "DO_NOT_PUBLISH",
+      "proposed_exposure_class": "DO_NOT_PUBLISH"
+    },
+    {
+      "canonical_id": "z_sanctuary_core",
+      "temporary_id": null,
+      "overlay_inventory_id": "z_sanctuary_core",
+      "id_status": "CANONICAL",
+      "type": "ENGINE",
+      "withhold_class": "DENY_BY_DEFAULT",
+      "withhold_reason_code": "CANDIDATE_AFTER_SANITIZATION",
+      "proposed_exposure_class": "PUBLIC_AFTER_SANITIZATION"
+    },
+    {
+      "canonical_id": "ghost_core",
+      "temporary_id": null,
+      "overlay_inventory_id": "ghost_core",
+      "id_status": "CANONICAL",
+      "type": "ENGINE",
+      "withhold_class": "DENY_BY_DEFAULT",
+      "withhold_reason_code": "NEEDS_EVIDENCE",
+      "proposed_exposure_class": "PUBLIC_AFTER_SANITIZATION"
+    },
+    {
+      "canonical_id": "alien_core",
+      "temporary_id": null,
+      "overlay_inventory_id": "alien_core",
+      "id_status": "CANONICAL",
+      "type": "ENGINE",
+      "withhold_class": "DENY_BY_DEFAULT",
+      "withhold_reason_code": "NEEDS_EVIDENCE",
+      "proposed_exposure_class": "PUBLIC_AFTER_SANITIZATION"
+    },
+    {
+      "canonical_id": "z_tree_motherboard",
+      "temporary_id": null,
+      "overlay_inventory_id": "z_tree_motherboard",
+      "id_status": "CANONICAL",
+      "type": "MODULE",
+      "withhold_class": "DENY_BY_DEFAULT",
+      "withhold_reason_code": "KEEP_PRIVATE",
+      "proposed_exposure_class": "PRIVATE"
+    },
+    {
+      "canonical_id": "tree_pyramid",
+      "temporary_id": null,
+      "overlay_inventory_id": "tree_pyramid",
+      "id_status": "CANONICAL",
+      "type": "MODULE",
+      "withhold_class": "DENY_BY_DEFAULT",
+      "withhold_reason_code": "NEEDS_EVIDENCE",
+      "proposed_exposure_class": "PRIVATE"
+    },
+    {
+      "canonical_id": "tree_of_life",
+      "temporary_id": null,
+      "overlay_inventory_id": "tree_of_life",
+      "id_status": "CANONICAL",
+      "type": "MODULE",
+      "withhold_class": "DENY_BY_DEFAULT",
+      "withhold_reason_code": "NEEDS_EVIDENCE",
+      "proposed_exposure_class": "PRIVATE"
+    },
+    {
+      "canonical_id": "chakra_tree",
+      "temporary_id": null,
+      "overlay_inventory_id": "chakra_tree",
+      "id_status": "CANONICAL",
+      "type": "MODULE",
+      "withhold_class": "DENY_BY_DEFAULT",
+      "withhold_reason_code": "NEEDS_EVIDENCE",
+      "proposed_exposure_class": "PRIVATE"
+    },
+    {
+      "canonical_id": "virtual_motherboard",
+      "temporary_id": null,
+      "overlay_inventory_id": "virtual_motherboard",
+      "id_status": "CANONICAL",
+      "type": "MODULE",
+      "withhold_class": "DENY_BY_DEFAULT",
+      "withhold_reason_code": "NEEDS_EVIDENCE",
+      "proposed_exposure_class": "PRIVATE"
+    },
+    {
+      "canonical_id": "one_penny_engine",
+      "temporary_id": null,
+      "overlay_inventory_id": "one_penny_engine",
+      "id_status": "CANONICAL",
+      "type": "MODULE",
+      "withhold_class": "DENY_BY_DEFAULT",
+      "withhold_reason_code": "DATA_ROOM_ONLY",
+      "proposed_exposure_class": "QUALIFIED_DATA_ROOM"
+    },
+    {
+      "canonical_id": "give_and_receive",
+      "temporary_id": null,
+      "overlay_inventory_id": "give_and_receive",
+      "id_status": "CANONICAL",
+      "type": "MODULE",
+      "withhold_class": "DENY_BY_DEFAULT",
+      "withhold_reason_code": "DATA_ROOM_ONLY",
+      "proposed_exposure_class": "QUALIFIED_DATA_ROOM"
+    },
+    {
+      "canonical_id": "money_pathway_cores",
+      "temporary_id": null,
+      "overlay_inventory_id": "money_pathway_cores",
+      "id_status": "CANONICAL",
+      "type": "MODULE",
+      "withhold_class": "DENY_BY_DEFAULT",
+      "withhold_reason_code": "DO_NOT_PUBLISH",
+      "proposed_exposure_class": "DO_NOT_PUBLISH"
+    },
+    {
+      "canonical_id": "zes_zecc",
+      "temporary_id": null,
+      "overlay_inventory_id": "zes_zecc",
+      "id_status": "CANONICAL",
+      "type": "MODULE",
+      "withhold_class": "DENY_BY_DEFAULT",
+      "withhold_reason_code": "KEEP_PRIVATE",
+      "proposed_exposure_class": "PRIVATE"
+    },
+    {
+      "canonical_id": "z_zes_master_system",
+      "temporary_id": null,
+      "overlay_inventory_id": "z_zes_master_system",
+      "id_status": "CANONICAL",
+      "type": "MODULE",
+      "withhold_class": "DENY_BY_DEFAULT",
+      "withhold_reason_code": "NEEDS_EVIDENCE",
+      "proposed_exposure_class": "PRIVATE"
+    },
+    {
+      "canonical_id": "bee_vision",
+      "temporary_id": null,
+      "overlay_inventory_id": "bee_vision",
+      "id_status": "CANONICAL",
+      "type": "MODULE",
+      "withhold_class": "DENY_BY_DEFAULT",
+      "withhold_reason_code": "DO_NOT_PUBLISH",
+      "proposed_exposure_class": "DO_NOT_PUBLISH"
+    },
+    {
+      "canonical_id": "hashirai_mentors",
+      "temporary_id": null,
+      "overlay_inventory_id": "hashirai_mentors",
+      "id_status": "CANONICAL",
+      "type": "MODULE",
+      "withhold_class": "DENY_BY_DEFAULT",
+      "withhold_reason_code": "NEEDS_EVIDENCE",
+      "proposed_exposure_class": "PRIVATE"
+    },
+    {
+      "canonical_id": "heart_and_genes",
+      "temporary_id": null,
+      "overlay_inventory_id": "heart_and_genes",
+      "id_status": "CANONICAL",
+      "type": "MODULE",
+      "withhold_class": "DENY_BY_DEFAULT",
+      "withhold_reason_code": "DO_NOT_PUBLISH",
+      "proposed_exposure_class": "DO_NOT_PUBLISH"
+    },
+    {
+      "canonical_id": "tmk_goku_codex",
+      "temporary_id": null,
+      "overlay_inventory_id": "tmk_goku_codex",
+      "id_status": "CANONICAL",
+      "type": "MODULE",
+      "withhold_class": "DENY_BY_DEFAULT",
+      "withhold_reason_code": "DO_NOT_PUBLISH",
+      "proposed_exposure_class": "DO_NOT_PUBLISH"
+    },
+    {
+      "canonical_id": "movie_eternal_storytelling",
+      "temporary_id": null,
+      "overlay_inventory_id": "movie_eternal_storytelling",
+      "id_status": "CANONICAL",
+      "type": "MODULE",
+      "withhold_class": "DENY_BY_DEFAULT",
+      "withhold_reason_code": "NEEDS_EVIDENCE",
+      "proposed_exposure_class": "PRIVATE"
+    },
+    {
+      "canonical_id": "z_passport",
+      "temporary_id": null,
+      "overlay_inventory_id": "z_passport",
+      "id_status": "CANONICAL",
+      "type": "MODULE",
+      "withhold_class": "DENY_BY_DEFAULT",
+      "withhold_reason_code": "DO_NOT_PUBLISH",
+      "proposed_exposure_class": "DO_NOT_PUBLISH"
+    },
+    {
+      "canonical_id": "panic_mode",
+      "temporary_id": null,
+      "overlay_inventory_id": "panic_mode",
+      "id_status": "CANONICAL",
+      "type": "MODULE",
+      "withhold_class": "DENY_BY_DEFAULT",
+      "withhold_reason_code": "KEEP_PRIVATE",
+      "proposed_exposure_class": "PRIVATE"
+    },
+    {
+      "canonical_id": "recovery_angels",
+      "temporary_id": null,
+      "overlay_inventory_id": "recovery_angels",
+      "id_status": "CANONICAL",
+      "type": "MODULE",
+      "withhold_class": "DENY_BY_DEFAULT",
+      "withhold_reason_code": "NEEDS_EVIDENCE",
+      "proposed_exposure_class": "PRIVATE"
+    },
+    {
+      "canonical_id": "aftercare",
+      "temporary_id": null,
+      "overlay_inventory_id": "aftercare",
+      "id_status": "CANONICAL",
+      "type": "MODULE",
+      "withhold_class": "DENY_BY_DEFAULT",
+      "withhold_reason_code": "NEEDS_EVIDENCE",
+      "proposed_exposure_class": "PRIVATE"
+    },
+    {
+      "canonical_id": "z_world",
+      "temporary_id": null,
+      "overlay_inventory_id": "z_world",
+      "id_status": "CANONICAL",
+      "type": "MODULE",
+      "withhold_class": "DENY_BY_DEFAULT",
+      "withhold_reason_code": "KEEP_PRIVATE",
+      "proposed_exposure_class": "PRIVATE"
+    },
+    {
+      "canonical_id": "ggaesp_360",
+      "temporary_id": null,
+      "overlay_inventory_id": "ggaesp_360",
+      "id_status": "CANONICAL",
+      "type": "MODULE",
+      "withhold_class": "DENY_BY_DEFAULT",
+      "withhold_reason_code": "NEEDS_EVIDENCE",
+      "proposed_exposure_class": "PRIVATE"
+    },
+    {
+      "canonical_id": "z_pee_planetary_ethics",
+      "temporary_id": null,
+      "overlay_inventory_id": "z_pee_planetary_ethics",
+      "id_status": "CANONICAL",
+      "type": "MODULE",
+      "withhold_class": "DENY_BY_DEFAULT",
+      "withhold_reason_code": "NEEDS_EVIDENCE",
+      "proposed_exposure_class": "PRIVATE"
+    },
+    {
+      "canonical_id": "z_questra",
+      "temporary_id": null,
+      "overlay_inventory_id": "z_questra",
+      "id_status": "CANONICAL",
+      "type": "MODULE",
+      "withhold_class": "DENY_BY_DEFAULT",
+      "withhold_reason_code": "KEEP_PRIVATE",
+      "proposed_exposure_class": "PRIVATE"
+    },
+    {
+      "canonical_id": "z_sme",
+      "temporary_id": null,
+      "overlay_inventory_id": "z_sme",
+      "id_status": "CANONICAL",
+      "type": "MODULE",
+      "withhold_class": "DENY_BY_DEFAULT",
+      "withhold_reason_code": "KEEP_PRIVATE",
+      "proposed_exposure_class": "PRIVATE"
+    },
+    {
+      "canonical_id": "magical_canvas_playkit",
+      "temporary_id": null,
+      "overlay_inventory_id": "magical_canvas_playkit",
+      "id_status": "CANONICAL",
+      "type": "MODULE",
+      "withhold_class": "DENY_BY_DEFAULT",
+      "withhold_reason_code": "KEEP_PRIVATE",
+      "proposed_exposure_class": "PRIVATE"
+    },
+    {
+      "canonical_id": "ai-agent-designer",
+      "temporary_id": null,
+      "overlay_inventory_id": "ai-agent-designer",
+      "id_status": "CANONICAL",
+      "type": "MODULE",
+      "withhold_class": "DENY_BY_DEFAULT",
+      "withhold_reason_code": "NEEDS_EVIDENCE",
+      "proposed_exposure_class": "PRIVATE"
+    },
+    {
+      "canonical_id": "ai-agent-navigator",
+      "temporary_id": null,
+      "overlay_inventory_id": "ai-agent-navigator",
+      "id_status": "CANONICAL",
+      "type": "MODULE",
+      "withhold_class": "DENY_BY_DEFAULT",
+      "withhold_reason_code": "NEEDS_EVIDENCE",
+      "proposed_exposure_class": "PRIVATE"
+    },
+    {
+      "canonical_id": "ai-agent-protector",
+      "temporary_id": null,
+      "overlay_inventory_id": "ai-agent-protector",
+      "id_status": "CANONICAL",
+      "type": "MODULE",
+      "withhold_class": "DENY_BY_DEFAULT",
+      "withhold_reason_code": "NEEDS_EVIDENCE",
+      "proposed_exposure_class": "PRIVATE"
+    },
+    {
+      "canonical_id": "ai-agent-scribe",
+      "temporary_id": null,
+      "overlay_inventory_id": "ai-agent-scribe",
+      "id_status": "CANONICAL",
+      "type": "MODULE",
+      "withhold_class": "DENY_BY_DEFAULT",
+      "withhold_reason_code": "NEEDS_EVIDENCE",
+      "proposed_exposure_class": "PRIVATE"
+    },
+    {
+      "canonical_id": "ai-tower",
+      "temporary_id": null,
+      "overlay_inventory_id": "ai-tower",
+      "id_status": "CANONICAL",
+      "type": "MODULE",
+      "withhold_class": "DENY_BY_DEFAULT",
+      "withhold_reason_code": "NEEDS_EVIDENCE",
+      "proposed_exposure_class": "PRIVATE"
+    },
+    {
+      "canonical_id": "autopilot-engine",
+      "temporary_id": null,
+      "overlay_inventory_id": "autopilot-engine",
+      "id_status": "CANONICAL",
+      "type": "MODULE",
+      "withhold_class": "DENY_BY_DEFAULT",
+      "withhold_reason_code": "NEEDS_EVIDENCE",
+      "proposed_exposure_class": "PRIVATE"
+    },
+    {
+      "canonical_id": "commander_panel",
+      "temporary_id": null,
+      "overlay_inventory_id": "commander_panel",
+      "id_status": "CANONICAL",
+      "type": "MODULE",
+      "withhold_class": "DENY_BY_DEFAULT",
+      "withhold_reason_code": "KEEP_PRIVATE",
+      "proposed_exposure_class": "PRIVATE"
+    },
+    {
+      "canonical_id": "core_engines_registry_datafile",
+      "temporary_id": null,
+      "overlay_inventory_id": "core_engines_registry_datafile",
+      "id_status": "CANONICAL",
+      "type": "MODULE",
+      "withhold_class": "DENY_BY_DEFAULT",
+      "withhold_reason_code": "KEEP_PRIVATE",
+      "proposed_exposure_class": "PRIVATE"
+    },
+    {
+      "canonical_id": "core-chronicle",
+      "temporary_id": null,
+      "overlay_inventory_id": "core-chronicle",
+      "id_status": "CANONICAL",
+      "type": "MODULE",
+      "withhold_class": "DENY_BY_DEFAULT",
+      "withhold_reason_code": "NEEDS_EVIDENCE",
+      "proposed_exposure_class": "PRIVATE"
+    },
+    {
+      "canonical_id": "core-chronicle-hud",
+      "temporary_id": null,
+      "overlay_inventory_id": "core-chronicle-hud",
+      "id_status": "CANONICAL",
+      "type": "MODULE",
+      "withhold_class": "DENY_BY_DEFAULT",
+      "withhold_reason_code": "NEEDS_EVIDENCE",
+      "proposed_exposure_class": "PRIVATE"
+    },
+    {
+      "canonical_id": "core-dashboard",
+      "temporary_id": null,
+      "overlay_inventory_id": "core-dashboard",
+      "id_status": "CANONICAL",
+      "type": "MODULE",
+      "withhold_class": "DENY_BY_DEFAULT",
+      "withhold_reason_code": "NEEDS_EVIDENCE",
+      "proposed_exposure_class": "PRIVATE"
+    },
+    {
+      "canonical_id": "core-emotion-filter",
+      "temporary_id": null,
+      "overlay_inventory_id": "core-emotion-filter",
+      "id_status": "CANONICAL",
+      "type": "MODULE",
+      "withhold_class": "DENY_BY_DEFAULT",
+      "withhold_reason_code": "NEEDS_EVIDENCE",
+      "proposed_exposure_class": "PRIVATE"
+    },
+    {
+      "canonical_id": "core-energy-response",
+      "temporary_id": null,
+      "overlay_inventory_id": "core-energy-response",
+      "id_status": "CANONICAL",
+      "type": "MODULE",
+      "withhold_class": "DENY_BY_DEFAULT",
+      "withhold_reason_code": "NEEDS_EVIDENCE",
+      "proposed_exposure_class": "PRIVATE"
+    },
+    {
+      "canonical_id": "core-status-console",
+      "temporary_id": null,
+      "overlay_inventory_id": "core-status-console",
+      "id_status": "CANONICAL",
+      "type": "MODULE",
+      "withhold_class": "DENY_BY_DEFAULT",
+      "withhold_reason_code": "NEEDS_EVIDENCE",
+      "proposed_exposure_class": "PRIVATE"
+    },
+    {
+      "canonical_id": "display_morph_engine",
+      "temporary_id": null,
+      "overlay_inventory_id": "display_morph_engine",
+      "id_status": "CANONICAL",
+      "type": "MODULE",
+      "withhold_class": "DENY_BY_DEFAULT",
+      "withhold_reason_code": "KEEP_PRIVATE",
+      "proposed_exposure_class": "PRIVATE"
+    },
+    {
+      "canonical_id": "ethical_monetization_layer",
+      "temporary_id": null,
+      "overlay_inventory_id": "ethical_monetization_layer",
+      "id_status": "CANONICAL",
+      "type": "MODULE",
+      "withhold_class": "DENY_BY_DEFAULT",
+      "withhold_reason_code": "KEEP_PRIVATE",
+      "proposed_exposure_class": "PRIVATE"
+    },
+    {
+      "canonical_id": "family_companion_grove",
+      "temporary_id": null,
+      "overlay_inventory_id": "family_companion_grove",
+      "id_status": "CANONICAL",
+      "type": "MODULE",
+      "withhold_class": "DENY_BY_DEFAULT",
+      "withhold_reason_code": "NEEDS_EVIDENCE",
+      "proposed_exposure_class": "PRIVATE"
+    },
+    {
+      "canonical_id": "gambling_prediction_voice",
+      "temporary_id": null,
+      "overlay_inventory_id": "gambling_prediction_voice",
+      "id_status": "CANONICAL",
+      "type": "MODULE",
+      "withhold_class": "DENY_BY_DEFAULT",
+      "withhold_reason_code": "DO_NOT_PUBLISH",
+      "proposed_exposure_class": "DO_NOT_PUBLISH"
+    },
+    {
+      "canonical_id": "global_eco_marketplace_awareness",
+      "temporary_id": null,
+      "overlay_inventory_id": "global_eco_marketplace_awareness",
+      "id_status": "CANONICAL",
+      "type": "MODULE",
+      "withhold_class": "DENY_BY_DEFAULT",
+      "withhold_reason_code": "NEEDS_EVIDENCE",
+      "proposed_exposure_class": "PRIVATE"
+    },
+    {
+      "canonical_id": "gps_safety_module",
+      "temporary_id": null,
+      "overlay_inventory_id": "gps_safety_module",
+      "id_status": "CANONICAL",
+      "type": "MODULE",
+      "withhold_class": "DENY_BY_DEFAULT",
+      "withhold_reason_code": "DO_NOT_PUBLISH",
+      "proposed_exposure_class": "DO_NOT_PUBLISH"
+    },
+    {
+      "canonical_id": "master_modules_register_doc",
+      "temporary_id": null,
+      "overlay_inventory_id": "master_modules_register_doc",
+      "id_status": "CANONICAL",
+      "type": "MODULE",
+      "withhold_class": "DENY_BY_DEFAULT",
+      "withhold_reason_code": "KEEP_PRIVATE",
+      "proposed_exposure_class": "PRIVATE"
+    },
+    {
+      "canonical_id": "mdgev_grid",
+      "temporary_id": null,
+      "overlay_inventory_id": "mdgev_grid",
+      "id_status": "CANONICAL",
+      "type": "MODULE",
+      "withhold_class": "DENY_BY_DEFAULT",
+      "withhold_reason_code": "KEEP_PRIVATE",
+      "proposed_exposure_class": "PRIVATE"
+    },
+    {
+      "canonical_id": "media_storytelling_os",
+      "temporary_id": null,
+      "overlay_inventory_id": "media_storytelling_os",
+      "id_status": "CANONICAL",
+      "type": "MODULE",
+      "withhold_class": "DENY_BY_DEFAULT",
+      "withhold_reason_code": "NEEDS_EVIDENCE",
+      "proposed_exposure_class": "PRIVATE"
+    },
+    {
+      "canonical_id": "mirrorsoul_hub_slice",
+      "temporary_id": null,
+      "overlay_inventory_id": "mirrorsoul_hub_slice",
+      "id_status": "CANONICAL",
+      "type": "MODULE",
+      "withhold_class": "DENY_BY_DEFAULT",
+      "withhold_reason_code": "KEEP_PRIVATE",
+      "proposed_exposure_class": "PRIVATE"
+    },
+    {
+      "canonical_id": "module_registry_hub",
+      "temporary_id": null,
+      "overlay_inventory_id": "module_registry_hub",
+      "id_status": "CANONICAL",
+      "type": "MODULE",
+      "withhold_class": "DENY_BY_DEFAULT",
+      "withhold_reason_code": "KEEP_PRIVATE",
+      "proposed_exposure_class": "PRIVATE"
+    },
+    {
+      "canonical_id": "movement_health_coach_lite",
+      "temporary_id": null,
+      "overlay_inventory_id": "movement_health_coach_lite",
+      "id_status": "CANONICAL",
+      "type": "MODULE",
+      "withhold_class": "DENY_BY_DEFAULT",
+      "withhold_reason_code": "DO_NOT_PUBLISH",
+      "proposed_exposure_class": "DO_NOT_PUBLISH"
+    },
+    {
+      "canonical_id": "outreach_pitch_compliance_pack",
+      "temporary_id": null,
+      "overlay_inventory_id": "outreach_pitch_compliance_pack",
+      "id_status": "CANONICAL",
+      "type": "MODULE",
+      "withhold_class": "DENY_BY_DEFAULT",
+      "withhold_reason_code": "KEEP_PRIVATE",
+      "proposed_exposure_class": "PRIVATE"
+    },
+    {
+      "canonical_id": "public_trust_portal_lottery",
+      "temporary_id": null,
+      "overlay_inventory_id": "public_trust_portal_lottery",
+      "id_status": "CANONICAL",
+      "type": "MODULE",
+      "withhold_class": "DENY_BY_DEFAULT",
+      "withhold_reason_code": "KEEP_PRIVATE",
+      "proposed_exposure_class": "PRIVATE"
+    },
+    {
+      "canonical_id": "qa_rp_surface",
+      "temporary_id": null,
+      "overlay_inventory_id": "qa_rp_surface",
+      "id_status": "CANONICAL",
+      "type": "MODULE",
+      "withhold_class": "DENY_BY_DEFAULT",
+      "withhold_reason_code": "KEEP_PRIVATE",
+      "proposed_exposure_class": "PRIVATE"
+    },
+    {
+      "canonical_id": "registry_omni_verify",
+      "temporary_id": null,
+      "overlay_inventory_id": "registry_omni_verify",
+      "id_status": "CANONICAL",
+      "type": "MODULE",
+      "withhold_class": "DENY_BY_DEFAULT",
+      "withhold_reason_code": "KEEP_PRIVATE",
+      "proposed_exposure_class": "PRIVATE"
+    },
+    {
+      "canonical_id": "rkpk-companion",
+      "temporary_id": null,
+      "overlay_inventory_id": "rkpk-companion",
+      "id_status": "CANONICAL",
+      "type": "MODULE",
+      "withhold_class": "DENY_BY_DEFAULT",
+      "withhold_reason_code": "NEEDS_EVIDENCE",
+      "proposed_exposure_class": "PRIVATE"
+    },
+    {
+      "canonical_id": "roulette",
+      "temporary_id": null,
+      "overlay_inventory_id": "roulette",
+      "id_status": "CANONICAL",
+      "type": "MODULE",
+      "withhold_class": "DENY_BY_DEFAULT",
+      "withhold_reason_code": "DO_NOT_PUBLISH",
+      "proposed_exposure_class": "DO_NOT_PUBLISH"
+    },
+    {
+      "canonical_id": "roulette-calculator",
+      "temporary_id": null,
+      "overlay_inventory_id": "roulette-calculator",
+      "id_status": "CANONICAL",
+      "type": "MODULE",
+      "withhold_class": "DENY_BY_DEFAULT",
+      "withhold_reason_code": "DO_NOT_PUBLISH",
+      "proposed_exposure_class": "DO_NOT_PUBLISH"
+    },
+    {
+      "canonical_id": "sepc-governance",
+      "temporary_id": null,
+      "overlay_inventory_id": "sepc-governance",
+      "id_status": "CANONICAL",
+      "type": "MODULE",
+      "withhold_class": "DENY_BY_DEFAULT",
+      "withhold_reason_code": "NEEDS_EVIDENCE",
+      "proposed_exposure_class": "PRIVATE"
+    },
+    {
+      "canonical_id": "skk-companion",
+      "temporary_id": null,
+      "overlay_inventory_id": "skk-companion",
+      "id_status": "CANONICAL",
+      "type": "MODULE",
+      "withhold_class": "DENY_BY_DEFAULT",
+      "withhold_reason_code": "NEEDS_EVIDENCE",
+      "proposed_exposure_class": "PRIVATE"
+    },
+    {
+      "canonical_id": "social-arena",
+      "temporary_id": null,
+      "overlay_inventory_id": "social-arena",
+      "id_status": "CANONICAL",
+      "type": "MODULE",
+      "withhold_class": "DENY_BY_DEFAULT",
+      "withhold_reason_code": "NEEDS_EVIDENCE",
+      "proposed_exposure_class": "PRIVATE"
+    },
+    {
+      "canonical_id": "soulmate_baby_predictor",
+      "temporary_id": null,
+      "overlay_inventory_id": "soulmate_baby_predictor",
+      "id_status": "CANONICAL",
+      "type": "MODULE",
+      "withhold_class": "DENY_BY_DEFAULT",
+      "withhold_reason_code": "DO_NOT_PUBLISH",
+      "proposed_exposure_class": "DO_NOT_PUBLISH"
+    },
+    {
+      "canonical_id": "soundscape_pulse",
+      "temporary_id": null,
+      "overlay_inventory_id": "soundscape_pulse",
+      "id_status": "CANONICAL",
+      "type": "MODULE",
+      "withhold_class": "DENY_BY_DEFAULT",
+      "withhold_reason_code": "KEEP_PRIVATE",
+      "proposed_exposure_class": "PRIVATE"
+    },
+    {
+      "canonical_id": "sovereign_products_registry",
+      "temporary_id": null,
+      "overlay_inventory_id": "sovereign_products_registry",
+      "id_status": "CANONICAL",
+      "type": "MODULE",
+      "withhold_class": "DENY_BY_DEFAULT",
+      "withhold_reason_code": "KEEP_PRIVATE",
+      "proposed_exposure_class": "PRIVATE"
+    },
+    {
+      "canonical_id": "twin_roots_phase1",
+      "temporary_id": null,
+      "overlay_inventory_id": "twin_roots_phase1",
+      "id_status": "CANONICAL",
+      "type": "MODULE",
+      "withhold_class": "DENY_BY_DEFAULT",
+      "withhold_reason_code": "KEEP_PRIVATE",
+      "proposed_exposure_class": "PRIVATE"
+    },
+    {
+      "canonical_id": "z_gadget_mirrors_product",
+      "temporary_id": null,
+      "overlay_inventory_id": "z_gadget_mirrors_product",
+      "id_status": "CANONICAL",
+      "type": "MODULE",
+      "withhold_class": "DENY_BY_DEFAULT",
+      "withhold_reason_code": "NEEDS_EVIDENCE",
+      "proposed_exposure_class": "PRIVATE"
+    },
+    {
+      "canonical_id": "z-adaptive-learning-phase3",
+      "temporary_id": null,
+      "overlay_inventory_id": "z-adaptive-learning-phase3",
+      "id_status": "CANONICAL",
+      "type": "MODULE",
+      "withhold_class": "DENY_BY_DEFAULT",
+      "withhold_reason_code": "KEEP_PRIVATE",
+      "proposed_exposure_class": "PRIVATE"
+    },
+    {
+      "canonical_id": "z-addon-dashboard-surface",
+      "temporary_id": null,
+      "overlay_inventory_id": "z-addon-dashboard-surface",
+      "id_status": "CANONICAL",
+      "type": "MODULE",
+      "withhold_class": "DENY_BY_DEFAULT",
+      "withhold_reason_code": "KEEP_PRIVATE",
+      "proposed_exposure_class": "PRIVATE"
+    },
+    {
+      "canonical_id": "z-ai-qadp",
+      "temporary_id": null,
+      "overlay_inventory_id": "z-ai-qadp",
+      "id_status": "CANONICAL",
+      "type": "MODULE",
+      "withhold_class": "DENY_BY_DEFAULT",
+      "withhold_reason_code": "KEEP_PRIVATE",
+      "proposed_exposure_class": "PRIVATE"
+    },
+    {
+      "canonical_id": "z-anima-core",
+      "temporary_id": null,
+      "overlay_inventory_id": "z-anima-core",
+      "id_status": "CANONICAL",
+      "type": "MODULE",
+      "withhold_class": "DENY_BY_DEFAULT",
+      "withhold_reason_code": "NEEDS_EVIDENCE",
+      "proposed_exposure_class": "PRIVATE"
+    },
+    {
+      "canonical_id": "z-cross-system-intelligence-phase4",
+      "temporary_id": null,
+      "overlay_inventory_id": "z-cross-system-intelligence-phase4",
+      "id_status": "CANONICAL",
+      "type": "MODULE",
+      "withhold_class": "DENY_BY_DEFAULT",
+      "withhold_reason_code": "KEEP_PRIVATE",
+      "proposed_exposure_class": "PRIVATE"
+    },
+    {
+      "canonical_id": "z-cursor-folder-blueprint",
+      "temporary_id": null,
+      "overlay_inventory_id": "z-cursor-folder-blueprint",
+      "id_status": "CANONICAL",
+      "type": "MODULE",
+      "withhold_class": "DENY_BY_DEFAULT",
+      "withhold_reason_code": "KEEP_PRIVATE",
+      "proposed_exposure_class": "PRIVATE"
+    },
+    {
+      "canonical_id": "z-ecosphere-transparency-report",
+      "temporary_id": null,
+      "overlay_inventory_id": "z-ecosphere-transparency-report",
+      "id_status": "CANONICAL",
+      "type": "MODULE",
+      "withhold_class": "DENY_BY_DEFAULT",
+      "withhold_reason_code": "NEEDS_EVIDENCE",
+      "proposed_exposure_class": "PRIVATE"
+    },
+    {
+      "canonical_id": "z-fhmff-lite",
+      "temporary_id": null,
+      "overlay_inventory_id": "z-fhmff-lite",
+      "id_status": "CANONICAL",
+      "type": "MODULE",
+      "withhold_class": "DENY_BY_DEFAULT",
+      "withhold_reason_code": "NEEDS_EVIDENCE",
+      "proposed_exposure_class": "PRIVATE"
+    },
+    {
+      "canonical_id": "z-ggaesp-pipeline-360",
+      "temporary_id": null,
+      "overlay_inventory_id": "z-ggaesp-pipeline-360",
+      "id_status": "CANONICAL",
+      "type": "MODULE",
+      "withhold_class": "DENY_BY_DEFAULT",
+      "withhold_reason_code": "KEEP_PRIVATE",
+      "proposed_exposure_class": "PRIVATE"
+    },
+    {
+      "canonical_id": "z-heartpulse-engine",
+      "temporary_id": null,
+      "overlay_inventory_id": "z-heartpulse-engine",
+      "id_status": "CANONICAL",
+      "type": "MODULE",
+      "withhold_class": "DENY_BY_DEFAULT",
+      "withhold_reason_code": "KEEP_PRIVATE",
+      "proposed_exposure_class": "PRIVATE"
+    },
+    {
+      "canonical_id": "z-kbozsu",
+      "temporary_id": null,
+      "overlay_inventory_id": "z-kbozsu",
+      "id_status": "CANONICAL",
+      "type": "MODULE",
+      "withhold_class": "DENY_BY_DEFAULT",
+      "withhold_reason_code": "NEEDS_EVIDENCE",
+      "proposed_exposure_class": "PRIVATE"
+    },
+    {
+      "canonical_id": "z-krtaa-curriculum-emitter",
+      "temporary_id": null,
+      "overlay_inventory_id": "z-krtaa-curriculum-emitter",
+      "id_status": "CANONICAL",
+      "type": "MODULE",
+      "withhold_class": "DENY_BY_DEFAULT",
+      "withhold_reason_code": "NEEDS_EVIDENCE",
+      "proposed_exposure_class": "PRIVATE"
+    },
+    {
+      "canonical_id": "z-mini-bots-phase1",
+      "temporary_id": null,
+      "overlay_inventory_id": "z-mini-bots-phase1",
+      "id_status": "CANONICAL",
+      "type": "MODULE",
+      "withhold_class": "DENY_BY_DEFAULT",
+      "withhold_reason_code": "KEEP_PRIVATE",
+      "proposed_exposure_class": "PRIVATE"
+    },
+    {
+      "canonical_id": "z-papao-precautions-advisor",
+      "temporary_id": null,
+      "overlay_inventory_id": "z-papao-precautions-advisor",
+      "id_status": "CANONICAL",
+      "type": "MODULE",
+      "withhold_class": "DENY_BY_DEFAULT",
+      "withhold_reason_code": "NEEDS_EVIDENCE",
+      "proposed_exposure_class": "PRIVATE"
+    },
+    {
+      "canonical_id": "z-pis-projects-identifier-sharing",
+      "temporary_id": null,
+      "overlay_inventory_id": "z-pis-projects-identifier-sharing",
+      "id_status": "CANONICAL",
+      "type": "MODULE",
+      "withhold_class": "DENY_BY_DEFAULT",
+      "withhold_reason_code": "NEEDS_EVIDENCE",
+      "proposed_exposure_class": "PRIVATE"
+    },
+    {
+      "canonical_id": "z-prediction-validation-phase55",
+      "temporary_id": null,
+      "overlay_inventory_id": "z-prediction-validation-phase55",
+      "id_status": "CANONICAL",
+      "type": "MODULE",
+      "withhold_class": "DENY_BY_DEFAULT",
+      "withhold_reason_code": "KEEP_PRIVATE",
+      "proposed_exposure_class": "PRIVATE"
+    },
+    {
+      "canonical_id": "z-predictive-intelligence-phase5",
+      "temporary_id": null,
+      "overlay_inventory_id": "z-predictive-intelligence-phase5",
+      "id_status": "CANONICAL",
+      "type": "MODULE",
+      "withhold_class": "DENY_BY_DEFAULT",
+      "withhold_reason_code": "KEEP_PRIVATE",
+      "proposed_exposure_class": "PRIVATE"
+    },
+    {
+      "canonical_id": "z-qosmei-core-signal-fusion",
+      "temporary_id": null,
+      "overlay_inventory_id": "z-qosmei-core-signal-fusion",
+      "id_status": "CANONICAL",
+      "type": "MODULE",
+      "withhold_class": "DENY_BY_DEFAULT",
+      "withhold_reason_code": "KEEP_PRIVATE",
+      "proposed_exposure_class": "PRIVATE"
+    },
+    {
+      "canonical_id": "z-sanctuary-core-wrapper",
+      "temporary_id": null,
+      "overlay_inventory_id": "z-sanctuary-core-wrapper",
+      "id_status": "CANONICAL",
+      "type": "MODULE",
+      "withhold_class": "DENY_BY_DEFAULT",
+      "withhold_reason_code": "KEEP_PRIVATE",
+      "proposed_exposure_class": "PRIVATE"
+    },
+    {
+      "canonical_id": "z-spi-decision-advisor",
+      "temporary_id": null,
+      "overlay_inventory_id": "z-spi-decision-advisor",
+      "id_status": "CANONICAL",
+      "type": "MODULE",
+      "withhold_class": "DENY_BY_DEFAULT",
+      "withhold_reason_code": "KEEP_PRIVATE",
+      "proposed_exposure_class": "PRIVATE"
+    },
+    {
+      "canonical_id": "z-structural-pattern-intelligence",
+      "temporary_id": null,
+      "overlay_inventory_id": "z-structural-pattern-intelligence",
+      "id_status": "CANONICAL",
+      "type": "MODULE",
+      "withhold_class": "DENY_BY_DEFAULT",
+      "withhold_reason_code": "KEEP_PRIVATE",
+      "proposed_exposure_class": "PRIVATE"
+    },
+    {
+      "canonical_id": "z-super-chat-orchestrator",
+      "temporary_id": null,
+      "overlay_inventory_id": "z-super-chat-orchestrator",
+      "id_status": "CANONICAL",
+      "type": "MODULE",
+      "withhold_class": "DENY_BY_DEFAULT",
+      "withhold_reason_code": "KEEP_PRIVATE",
+      "proposed_exposure_class": "PRIVATE"
+    },
+    {
+      "canonical_id": "z-whale-bus-spine",
+      "temporary_id": null,
+      "overlay_inventory_id": "z-whale-bus-spine",
+      "id_status": "CANONICAL",
+      "type": "MODULE",
+      "withhold_class": "DENY_BY_DEFAULT",
+      "withhold_reason_code": "NEEDS_EVIDENCE",
+      "proposed_exposure_class": "PRIVATE"
+    },
+    {
+      "canonical_id": "z-zecce-confirmations",
+      "temporary_id": null,
+      "overlay_inventory_id": "z-zecce-confirmations",
+      "id_status": "CANONICAL",
+      "type": "MODULE",
+      "withhold_class": "DENY_BY_DEFAULT",
+      "withhold_reason_code": "NEEDS_EVIDENCE",
+      "proposed_exposure_class": "PRIVATE"
+    },
+    {
+      "canonical_id": "zen_scheduler_hub",
+      "temporary_id": null,
+      "overlay_inventory_id": "zen_scheduler_hub",
+      "id_status": "CANONICAL",
+      "type": "MODULE",
+      "withhold_class": "DENY_BY_DEFAULT",
+      "withhold_reason_code": "NEEDS_EVIDENCE",
+      "proposed_exposure_class": "PRIVATE"
+    },
+    {
+      "canonical_id": "zuno_coverage_audit",
+      "temporary_id": null,
+      "overlay_inventory_id": "zuno_coverage_audit",
+      "id_status": "CANONICAL",
+      "type": "MODULE",
+      "withhold_class": "DENY_BY_DEFAULT",
+      "withhold_reason_code": "KEEP_PRIVATE",
+      "proposed_exposure_class": "PRIVATE"
+    },
+    {
+      "canonical_id": "zuno_observer",
+      "temporary_id": null,
+      "overlay_inventory_id": "zuno_observer",
+      "id_status": "CANONICAL",
+      "type": "MODULE",
+      "withhold_class": "DENY_BY_DEFAULT",
+      "withhold_reason_code": "KEEP_PRIVATE",
+      "proposed_exposure_class": "PRIVATE"
+    },
+    {
+      "canonical_id": null,
+      "temporary_id": "ZS-AI-001",
+      "overlay_inventory_id": "ZS-AI-001",
+      "id_status": "TEMPORARY_PENDING_CANONICAL_REVIEW",
+      "type": "AI",
+      "withhold_class": "DENY_BY_DEFAULT",
+      "withhold_reason_code": "NEEDS_IDENTITY_REVIEW",
+      "proposed_exposure_class": "PUBLIC_AFTER_SANITIZATION"
+    },
+    {
+      "canonical_id": null,
+      "temporary_id": "ZS-AI-002",
+      "overlay_inventory_id": "ZS-AI-002",
+      "id_status": "TEMPORARY_PENDING_CANONICAL_REVIEW",
+      "type": "AI",
+      "withhold_class": "DENY_BY_DEFAULT",
+      "withhold_reason_code": "NEEDS_IDENTITY_REVIEW",
+      "proposed_exposure_class": "PUBLIC_AFTER_SANITIZATION"
+    },
+    {
+      "canonical_id": null,
+      "temporary_id": "ZS-AI-003",
+      "overlay_inventory_id": "ZS-AI-003",
+      "id_status": "TEMPORARY_PENDING_CANONICAL_REVIEW",
+      "type": "AI",
+      "withhold_class": "DENY_BY_DEFAULT",
+      "withhold_reason_code": "NEEDS_IDENTITY_REVIEW",
+      "proposed_exposure_class": "PRIVATE"
+    },
+    {
+      "canonical_id": null,
+      "temporary_id": "ZS-AI-004",
+      "overlay_inventory_id": "ZS-AI-004",
+      "id_status": "TEMPORARY_PENDING_CANONICAL_REVIEW",
+      "type": "AI",
+      "withhold_class": "DENY_BY_DEFAULT",
+      "withhold_reason_code": "NEEDS_IDENTITY_REVIEW",
+      "proposed_exposure_class": "PRIVATE"
+    },
+    {
+      "canonical_id": null,
+      "temporary_id": "ZS-AI-005",
+      "overlay_inventory_id": "ZS-AI-005",
+      "id_status": "TEMPORARY_PENDING_CANONICAL_REVIEW",
+      "type": "AI",
+      "withhold_class": "DENY_BY_DEFAULT",
+      "withhold_reason_code": "NEEDS_IDENTITY_REVIEW",
+      "proposed_exposure_class": "PRIVATE"
+    },
+    {
+      "canonical_id": null,
+      "temporary_id": "ZS-AI-006",
+      "overlay_inventory_id": "ZS-AI-006",
+      "id_status": "TEMPORARY_PENDING_CANONICAL_REVIEW",
+      "type": "AI",
+      "withhold_class": "DENY_BY_DEFAULT",
+      "withhold_reason_code": "DO_NOT_PUBLISH",
+      "proposed_exposure_class": "DO_NOT_PUBLISH"
+    },
+    {
+      "canonical_id": null,
+      "temporary_id": "ZS-AI-007",
+      "overlay_inventory_id": "ZS-AI-007",
+      "id_status": "TEMPORARY_PENDING_CANONICAL_REVIEW",
+      "type": "AI",
+      "withhold_class": "DENY_BY_DEFAULT",
+      "withhold_reason_code": "DO_NOT_PUBLISH",
+      "proposed_exposure_class": "DO_NOT_PUBLISH"
+    },
+    {
+      "canonical_id": null,
+      "temporary_id": "ZS-AI-008",
+      "overlay_inventory_id": "ZS-AI-008",
+      "id_status": "TEMPORARY_PENDING_CANONICAL_REVIEW",
+      "type": "AI",
+      "withhold_class": "DENY_BY_DEFAULT",
+      "withhold_reason_code": "NEEDS_IDENTITY_REVIEW",
+      "proposed_exposure_class": "PRIVATE"
+    },
+    {
+      "canonical_id": null,
+      "temporary_id": "ZS-AI-009",
+      "overlay_inventory_id": "ZS-AI-009",
+      "id_status": "TEMPORARY_PENDING_CANONICAL_REVIEW",
+      "type": "AI",
+      "withhold_class": "DENY_BY_DEFAULT",
+      "withhold_reason_code": "NEEDS_IDENTITY_REVIEW",
+      "proposed_exposure_class": "PUBLIC_AFTER_SANITIZATION"
+    },
+    {
+      "canonical_id": null,
+      "temporary_id": "ZS-AI-010",
+      "overlay_inventory_id": "ZS-AI-010",
+      "id_status": "TEMPORARY_PENDING_CANONICAL_REVIEW",
+      "type": "AI",
+      "withhold_class": "DENY_BY_DEFAULT",
+      "withhold_reason_code": "NEEDS_IDENTITY_REVIEW",
+      "proposed_exposure_class": "QUALIFIED_DATA_ROOM"
+    },
+    {
+      "canonical_id": null,
+      "temporary_id": "ZS-FORMULA-001",
+      "overlay_inventory_id": "ZS-FORMULA-001",
+      "id_status": "TEMPORARY_PENDING_CANONICAL_REVIEW",
+      "type": "FORMULA",
+      "withhold_class": "DENY_BY_DEFAULT",
+      "withhold_reason_code": "NEEDS_IDENTITY_REVIEW",
+      "proposed_exposure_class": "PUBLIC_AFTER_SANITIZATION"
+    },
+    {
+      "canonical_id": null,
+      "temporary_id": "ZS-FORMULA-002",
+      "overlay_inventory_id": "ZS-FORMULA-002",
+      "id_status": "TEMPORARY_PENDING_CANONICAL_REVIEW",
+      "type": "FORMULA",
+      "withhold_class": "DENY_BY_DEFAULT",
+      "withhold_reason_code": "NEEDS_IDENTITY_REVIEW",
+      "proposed_exposure_class": "PUBLIC_AFTER_SANITIZATION"
+    },
+    {
+      "canonical_id": null,
+      "temporary_id": "ZS-FORMULA-003",
+      "overlay_inventory_id": "ZS-FORMULA-003",
+      "id_status": "TEMPORARY_PENDING_CANONICAL_REVIEW",
+      "type": "FORMULA",
+      "withhold_class": "DENY_BY_DEFAULT",
+      "withhold_reason_code": "NEEDS_IDENTITY_REVIEW",
+      "proposed_exposure_class": "PUBLIC_AFTER_SANITIZATION"
+    },
+    {
+      "canonical_id": null,
+      "temporary_id": "ZS-EVIDENCE-001",
+      "overlay_inventory_id": "ZS-EVIDENCE-001",
+      "id_status": "TEMPORARY_PENDING_CANONICAL_REVIEW",
+      "type": "EVIDENCE",
+      "withhold_class": "DENY_BY_DEFAULT",
+      "withhold_reason_code": "NEEDS_IDENTITY_REVIEW",
+      "proposed_exposure_class": "PRIVATE"
+    },
+    {
+      "canonical_id": null,
+      "temporary_id": "ZS-EVIDENCE-002",
+      "overlay_inventory_id": "ZS-EVIDENCE-002",
+      "id_status": "TEMPORARY_PENDING_CANONICAL_REVIEW",
+      "type": "EVIDENCE",
+      "withhold_class": "DENY_BY_DEFAULT",
+      "withhold_reason_code": "NEEDS_IDENTITY_REVIEW",
+      "proposed_exposure_class": "PUBLIC_AFTER_SANITIZATION"
+    },
+    {
+      "canonical_id": null,
+      "temporary_id": "ZS-EVIDENCE-003",
+      "overlay_inventory_id": "ZS-EVIDENCE-003",
+      "id_status": "TEMPORARY_PENDING_CANONICAL_REVIEW",
+      "type": "EVIDENCE",
+      "withhold_class": "DENY_BY_DEFAULT",
+      "withhold_reason_code": "NEEDS_IDENTITY_REVIEW",
+      "proposed_exposure_class": "QUALIFIED_DATA_ROOM"
+    },
+    {
+      "canonical_id": null,
+      "temporary_id": "ZS-VISUAL-001",
+      "overlay_inventory_id": "ZS-VISUAL-001",
+      "id_status": "TEMPORARY_PENDING_CANONICAL_REVIEW",
+      "type": "VISUAL",
+      "withhold_class": "DENY_BY_DEFAULT",
+      "withhold_reason_code": "DO_NOT_PUBLISH",
+      "proposed_exposure_class": "DO_NOT_PUBLISH"
+    },
+    {
+      "canonical_id": null,
+      "temporary_id": "ZS-VISUAL-002",
+      "overlay_inventory_id": "ZS-VISUAL-002",
+      "id_status": "TEMPORARY_PENDING_CANONICAL_REVIEW",
+      "type": "VISUAL",
+      "withhold_class": "DENY_BY_DEFAULT",
+      "withhold_reason_code": "NEEDS_IDENTITY_REVIEW",
+      "proposed_exposure_class": "PRIVATE"
+    },
+    {
+      "canonical_id": "univ_workstation_navigator",
+      "temporary_id": null,
+      "overlay_inventory_id": "univ_workstation_navigator",
+      "id_status": "CANONICAL",
+      "type": "PROTOTYPE",
+      "withhold_class": "DENY_BY_DEFAULT",
+      "withhold_reason_code": "CANDIDATE_AFTER_SANITIZATION",
+      "proposed_exposure_class": "PUBLIC_AFTER_SANITIZATION"
+    },
+    {
+      "canonical_id": "mdgev-self",
+      "temporary_id": null,
+      "overlay_inventory_id": "mdgev-self",
+      "id_status": "CANONICAL",
+      "type": "PROTOTYPE",
+      "withhold_class": "DENY_BY_DEFAULT",
+      "withhold_reason_code": "KEEP_PRIVATE",
+      "proposed_exposure_class": "PRIVATE"
+    },
+    {
+      "canonical_id": "ssws-morning-cockpit",
+      "temporary_id": null,
+      "overlay_inventory_id": "ssws-morning-cockpit",
+      "id_status": "CANONICAL",
+      "type": "PROTOTYPE",
+      "withhold_class": "DENY_BY_DEFAULT",
+      "withhold_reason_code": "KEEP_PRIVATE",
+      "proposed_exposure_class": "PRIVATE"
+    },
+    {
+      "canonical_id": "eaii-knowledge-ask",
+      "temporary_id": null,
+      "overlay_inventory_id": "eaii-knowledge-ask",
+      "id_status": "CANONICAL",
+      "type": "PROTOTYPE",
+      "withhold_class": "DENY_BY_DEFAULT",
+      "withhold_reason_code": "KEEP_PRIVATE",
+      "proposed_exposure_class": "PRIVATE"
+    },
+    {
+      "canonical_id": "hodp-skk-rkpk",
+      "temporary_id": null,
+      "overlay_inventory_id": "hodp-skk-rkpk",
+      "id_status": "CANONICAL",
+      "type": "PROTOTYPE",
+      "withhold_class": "DENY_BY_DEFAULT",
+      "withhold_reason_code": "KEEP_PRIVATE",
+      "proposed_exposure_class": "PRIVATE"
+    },
+    {
+      "canonical_id": "hodp-redirect",
+      "temporary_id": null,
+      "overlay_inventory_id": "hodp-redirect",
+      "id_status": "CANONICAL",
+      "type": "PROTOTYPE",
+      "withhold_class": "DENY_BY_DEFAULT",
+      "withhold_reason_code": "KEEP_PRIVATE",
+      "proposed_exposure_class": "PRIVATE"
+    },
+    {
+      "canonical_id": "stub-root",
+      "temporary_id": null,
+      "overlay_inventory_id": "stub-root",
+      "id_status": "CANONICAL",
+      "type": "PROTOTYPE",
+      "withhold_class": "DENY_BY_DEFAULT",
+      "withhold_reason_code": "KEEP_PRIVATE",
+      "proposed_exposure_class": "PRIVATE"
+    },
+    {
+      "canonical_id": "z-bridge-task006",
+      "temporary_id": null,
+      "overlay_inventory_id": "z-bridge-task006",
+      "id_status": "CANONICAL",
+      "type": "PROTOTYPE",
+      "withhold_class": "DENY_BY_DEFAULT",
+      "withhold_reason_code": "KEEP_PRIVATE",
+      "proposed_exposure_class": "PRIVATE"
+    },
+    {
+      "canonical_id": "html-links-hub",
+      "temporary_id": null,
+      "overlay_inventory_id": "html-links-hub",
+      "id_status": "CANONICAL",
+      "type": "PROTOTYPE",
+      "withhold_class": "DENY_BY_DEFAULT",
+      "withhold_reason_code": "KEEP_PRIVATE",
+      "proposed_exposure_class": "PRIVATE"
+    },
+    {
+      "canonical_id": "z-qa-rp",
+      "temporary_id": null,
+      "overlay_inventory_id": "z-qa-rp",
+      "id_status": "CANONICAL",
+      "type": "PROTOTYPE",
+      "withhold_class": "DENY_BY_DEFAULT",
+      "withhold_reason_code": "KEEP_PRIVATE",
+      "proposed_exposure_class": "PRIVATE"
+    },
+    {
+      "canonical_id": "z-ai-ecosphere",
+      "temporary_id": null,
+      "overlay_inventory_id": "z-ai-ecosphere",
+      "id_status": "CANONICAL",
+      "type": "PROTOTYPE",
+      "withhold_class": "DENY_BY_DEFAULT",
+      "withhold_reason_code": "KEEP_PRIVATE",
+      "proposed_exposure_class": "PRIVATE"
+    },
+    {
+      "canonical_id": "radio-garden",
+      "temporary_id": null,
+      "overlay_inventory_id": "radio-garden",
+      "id_status": "CANONICAL",
+      "type": "PROTOTYPE",
+      "withhold_class": "DENY_BY_DEFAULT",
+      "withhold_reason_code": "KEEP_PRIVATE",
+      "proposed_exposure_class": "PRIVATE"
+    },
+    {
+      "canonical_id": "panels-explainer",
+      "temporary_id": null,
+      "overlay_inventory_id": "panels-explainer",
+      "id_status": "CANONICAL",
+      "type": "PROTOTYPE",
+      "withhold_class": "DENY_BY_DEFAULT",
+      "withhold_reason_code": "KEEP_PRIVATE",
+      "proposed_exposure_class": "PRIVATE"
+    },
+    {
+      "canonical_id": "panels-consent",
+      "temporary_id": null,
+      "overlay_inventory_id": "panels-consent",
+      "id_status": "CANONICAL",
+      "type": "PROTOTYPE",
+      "withhold_class": "DENY_BY_DEFAULT",
+      "withhold_reason_code": "KEEP_PRIVATE",
+      "proposed_exposure_class": "PRIVATE"
+    },
+    {
+      "canonical_id": "panels-terms",
+      "temporary_id": null,
+      "overlay_inventory_id": "panels-terms",
+      "id_status": "CANONICAL",
+      "type": "PROTOTYPE",
+      "withhold_class": "DENY_BY_DEFAULT",
+      "withhold_reason_code": "KEEP_PRIVATE",
+      "proposed_exposure_class": "PRIVATE"
+    },
+    {
+      "canonical_id": null,
+      "temporary_id": "ZS-PROTOTYPE-001",
+      "overlay_inventory_id": "ZS-PROTOTYPE-001",
+      "id_status": "TEMPORARY_PENDING_CANONICAL_REVIEW",
+      "type": "PROTOTYPE",
+      "withhold_class": "DENY_BY_DEFAULT",
+      "withhold_reason_code": "NEEDS_IDENTITY_REVIEW",
+      "proposed_exposure_class": "PRIVATE"
+    },
+    {
+      "canonical_id": null,
+      "temporary_id": "ZS-PROTOTYPE-002",
+      "overlay_inventory_id": "ZS-PROTOTYPE-002",
+      "id_status": "TEMPORARY_PENDING_CANONICAL_REVIEW",
+      "type": "PROTOTYPE",
+      "withhold_class": "DENY_BY_DEFAULT",
+      "withhold_reason_code": "NEEDS_IDENTITY_REVIEW",
+      "proposed_exposure_class": "PRIVATE"
+    },
+    {
+      "canonical_id": null,
+      "temporary_id": "ZS-PROTOTYPE-003",
+      "overlay_inventory_id": "ZS-PROTOTYPE-003",
+      "id_status": "TEMPORARY_PENDING_CANONICAL_REVIEW",
+      "type": "PROTOTYPE",
+      "withhold_class": "DENY_BY_DEFAULT",
+      "withhold_reason_code": "NEEDS_IDENTITY_REVIEW",
+      "proposed_exposure_class": "PRIVATE"
+    },
+    {
+      "canonical_id": null,
+      "temporary_id": "ZS-PROTOTYPE-004",
+      "overlay_inventory_id": "ZS-PROTOTYPE-004",
+      "id_status": "TEMPORARY_PENDING_CANONICAL_REVIEW",
+      "type": "PROTOTYPE",
+      "withhold_class": "DENY_BY_DEFAULT",
+      "withhold_reason_code": "NEEDS_IDENTITY_REVIEW",
+      "proposed_exposure_class": "PRIVATE"
+    },
+    {
+      "canonical_id": "zmv_ecosphere_map_readonly",
+      "temporary_id": null,
+      "overlay_inventory_id": "zmv_ecosphere_map_readonly",
+      "id_status": "CANONICAL",
+      "type": "PROTOTYPE",
+      "withhold_class": "DENY_BY_DEFAULT",
+      "withhold_reason_code": "KEEP_PRIVATE",
+      "proposed_exposure_class": "PRIVATE"
+    },
+    {
+      "canonical_id": null,
+      "temporary_id": "ZS-PROTOTYPE-006",
+      "overlay_inventory_id": "ZS-PROTOTYPE-006",
+      "id_status": "TEMPORARY_PENDING_CANONICAL_REVIEW",
+      "type": "PROTOTYPE",
+      "withhold_class": "DENY_BY_DEFAULT",
+      "withhold_reason_code": "NEEDS_IDENTITY_REVIEW",
+      "proposed_exposure_class": "PRIVATE"
+    },
+    {
+      "canonical_id": null,
+      "temporary_id": "ZS-PROTOTYPE-007",
+      "overlay_inventory_id": "ZS-PROTOTYPE-007",
+      "id_status": "TEMPORARY_PENDING_CANONICAL_REVIEW",
+      "type": "PROTOTYPE",
+      "withhold_class": "DENY_BY_DEFAULT",
+      "withhold_reason_code": "NEEDS_IDENTITY_REVIEW",
+      "proposed_exposure_class": "PRIVATE"
+    }
+  ],
+  "statistics": {
+    "overlay_source_records": 160,
+    "public_records": 0,
+    "withheld_records": 160,
+    "recommendations": {
+      "NEEDS_IDENTITY_REVIEW": 22,
+      "DO_NOT_PUBLISH": 17,
+      "NEEDS_EVIDENCE": 45,
+      "KEEP_PRIVATE": 72,
+      "CANDIDATE_AFTER_SANITIZATION": 2,
+      "DATA_ROOM_ONLY": 2
+    },
+    "temporary_ids_in_overlay": 25,
+    "candidate_public_safe": 0,
+    "candidate_after_sanitization": 2,
+    "data_room_only": 2,
+    "keep_private": 72,
+    "do_not_publish": 17,
+    "needs_evidence": 45,
+    "needs_identity_review": 22
+  }
+}

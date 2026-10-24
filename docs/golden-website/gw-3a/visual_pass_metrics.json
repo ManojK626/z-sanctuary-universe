@@ -1,0 +1,326 @@
+{
+  "generated_at": "2026-08-27T06:26:08.063Z",
+  "phase": "GW-3A",
+  "method": "playwright-chromium file:// (not deployed)",
+  "findings": [
+    {
+      "ok": true,
+      "id": "compass-opt-out",
+      "detail": "data-disable-auto-compass present"
+    },
+    {
+      "ok": true,
+      "id": "home-title",
+      "detail": "The Golden Website"
+    },
+    {
+      "ok": true,
+      "id": "subtitle",
+      "detail": ""
+    },
+    {
+      "ok": true,
+      "id": "approved-core-sentence",
+      "detail": ""
+    },
+    {
+      "ok": true,
+      "id": "qualified-not-verified",
+      "detail": ""
+    },
+    {
+      "ok": true,
+      "id": "cta-explore-core",
+      "detail": ""
+    },
+    {
+      "ok": true,
+      "id": "cta-evidence",
+      "detail": ""
+    },
+    {
+      "ok": true,
+      "id": "cta-navigator",
+      "detail": ""
+    },
+    {
+      "ok": true,
+      "id": "evidence-hidden-by-default",
+      "detail": ""
+    },
+    {
+      "ok": true,
+      "id": "evidence-mode-on",
+      "detail": ""
+    },
+    {
+      "ok": true,
+      "id": "evidence-board-visible",
+      "detail": ""
+    },
+    {
+      "ok": true,
+      "id": "core-evidence-card",
+      "detail": "Show Me What's Real\n\nEvidence over spectacle. Only Steward-approved records appear here.\n\nZ-Sanctuary Core\nEvidence: QUALIFIED\nEvidence gate: PASS\n\nOpen Z-Sanctuary Core\n\nUniversal Workstation Navigator\nEvidence: SEALED\n"
+    },
+    {
+      "ok": true,
+      "id": "navigator-evidence-card",
+      "detail": ""
+    },
+    {
+      "ok": true,
+      "id": "aria-pressed",
+      "detail": ""
+    },
+    {
+      "ok": true,
+      "id": "locked-count",
+      "detail": "9"
+    },
+    {
+      "ok": true,
+      "id": "locked-not-dead-buttons",
+      "detail": ""
+    },
+    {
+      "ok": true,
+      "id": "locked-explained",
+      "detail": ""
+    },
+    {
+      "ok": true,
+      "id": "no-hodp-html",
+      "detail": ""
+    },
+    {
+      "ok": true,
+      "id": "core-qualified",
+      "detail": ""
+    },
+    {
+      "ok": true,
+      "id": "core-gate-pass",
+      "detail": ""
+    },
+    {
+      "ok": true,
+      "id": "core-not-verified-pill",
+      "detail": ""
+    },
+    {
+      "ok": true,
+      "id": "core-not-rewritten-verified",
+      "detail": ""
+    },
+    {
+      "ok": true,
+      "id": "nav-working-local",
+      "detail": ""
+    },
+    {
+      "ok": true,
+      "id": "nav-no-production",
+      "detail": ""
+    },
+    {
+      "ok": true,
+      "id": "nav-not-map",
+      "detail": ""
+    },
+    {
+      "ok": true,
+      "id": "nav-no-execution",
+      "detail": ""
+    },
+    {
+      "ok": true,
+      "id": "preview-two-records",
+      "detail": ""
+    },
+    {
+      "ok": true,
+      "id": "preview-switch",
+      "detail": ""
+    },
+    {
+      "ok": true,
+      "id": "preview-not-production",
+      "detail": ""
+    },
+    {
+      "ok": true,
+      "id": "keyboard-skip-first",
+      "detail": "A"
+    },
+    {
+      "ok": true,
+      "id": "skip-jumps-main",
+      "detail": "#main"
+    },
+    {
+      "ok": true,
+      "id": "skip-focuses-main",
+      "detail": "main"
+    },
+    {
+      "ok": true,
+      "id": "keyboard-evidence-starts-off",
+      "detail": "false"
+    },
+    {
+      "ok": true,
+      "id": "keyboard-evidence-toggle",
+      "detail": "false -> true"
+    },
+    {
+      "ok": true,
+      "id": "keyboard-rail-arrow",
+      "detail": "Universal Workstation Navigator"
+    },
+    {
+      "ok": true,
+      "id": "overflow:index.html@desktop",
+      "detail": "{\"scrollWidth\":1440,\"clientWidth\":1440,\"overflowX\":false}"
+    },
+    {
+      "ok": true,
+      "id": "overflow:core.html@desktop",
+      "detail": "{\"scrollWidth\":1440,\"clientWidth\":1440,\"overflowX\":false}"
+    },
+    {
+      "ok": true,
+      "id": "overflow:navigator.html@desktop",
+      "detail": "{\"scrollWidth\":1440,\"clientWidth\":1440,\"overflowX\":false}"
+    },
+    {
+      "ok": true,
+      "id": "overflow:index.html@tablet",
+      "detail": "{\"scrollWidth\":768,\"clientWidth\":768,\"overflowX\":false}"
+    },
+    {
+      "ok": true,
+      "id": "overflow:core.html@tablet",
+      "detail": "{\"scrollWidth\":768,\"clientWidth\":768,\"overflowX\":false}"
+    },
+    {
+      "ok": true,
+      "id": "overflow:navigator.html@tablet",
+      "detail": "{\"scrollWidth\":768,\"clientWidth\":768,\"overflowX\":false}"
+    },
+    {
+      "ok": true,
+      "id": "overflow:index.html@mobile",
+      "detail": "{\"scrollWidth\":390,\"clientWidth\":390,\"overflowX\":false}"
+    },
+    {
+      "ok": true,
+      "id": "overflow:core.html@mobile",
+      "detail": "{\"scrollWidth\":390,\"clientWidth\":390,\"overflowX\":false}"
+    },
+    {
+      "ok": true,
+      "id": "overflow:navigator.html@mobile",
+      "detail": "{\"scrollWidth\":390,\"clientWidth\":390,\"overflowX\":false}"
+    },
+    {
+      "ok": true,
+      "id": "named-controls",
+      "detail": ""
+    },
+    {
+      "ok": true,
+      "id": "two-records-only",
+      "detail": "2"
+    },
+    {
+      "ok": true,
+      "id": "publication-unauthorized",
+      "detail": "false"
+    },
+    {
+      "ok": true,
+      "id": "twin-live-zero",
+      "detail": "0"
+    }
+  ],
+  "overflow": [
+    {
+      "viewport": "desktop",
+      "page": "index.html",
+      "scrollWidth": 1440,
+      "clientWidth": 1440,
+      "overflowX": false
+    },
+    {
+      "viewport": "desktop",
+      "page": "core.html",
+      "scrollWidth": 1440,
+      "clientWidth": 1440,
+      "overflowX": false
+    },
+    {
+      "viewport": "desktop",
+      "page": "navigator.html",
+      "scrollWidth": 1440,
+      "clientWidth": 1440,
+      "overflowX": false
+    },
+    {
+      "viewport": "tablet",
+      "page": "index.html",
+      "scrollWidth": 768,
+      "clientWidth": 768,
+      "overflowX": false
+    },
+    {
+      "viewport": "tablet",
+      "page": "core.html",
+      "scrollWidth": 768,
+      "clientWidth": 768,
+      "overflowX": false
+    },
+    {
+      "viewport": "tablet",
+      "page": "navigator.html",
+      "scrollWidth": 768,
+      "clientWidth": 768,
+      "overflowX": false
+    },
+    {
+      "viewport": "mobile",
+      "page": "index.html",
+      "scrollWidth": 390,
+      "clientWidth": 390,
+      "overflowX": false
+    },
+    {
+      "viewport": "mobile",
+      "page": "core.html",
+      "scrollWidth": 390,
+      "clientWidth": 390,
+      "overflowX": false
+    },
+    {
+      "viewport": "mobile",
+      "page": "navigator.html",
+      "scrollWidth": 390,
+      "clientWidth": 390,
+      "overflowX": false
+    }
+  ],
+  "unnamed_controls": [],
+  "screenshots": [
+    "01-home-desktop.png",
+    "02-home-evidence-board.png",
+    "03-home-evidence-desktop.png",
+    "04-core-desktop.png",
+    "05-navigator-desktop.png",
+    "06-home-skip-focus.png",
+    "07-home-tablet.png",
+    "08-home-mobile.png",
+    "09-navigator-mobile.png",
+    "10-home-locked-doors.png"
+  ],
+  "pass": true
+}

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en" data-disable-auto-compass>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Golden Guide AI — Sandbox — The Golden Website</title>
+  <meta name="description" content="Local Golden Guide sandbox. Evidence-grounded preview. Not a public AI service.">
+  <link rel="stylesheet" href="css/golden-website.css">
+</head>
+<body data-gw-page="guide-sandbox">
+  <a class="skip" href="#main">Skip to content</a>
+  <div class="wrap">
+    <header class="site">
+      <a class="brand" href="index.html">
+        <small>Z-Sanctuary Universe</small>
+        <strong>The Golden Website</strong>
+      </a>
+      <nav class="primary" aria-label="Primary">
+        <a href="index.html">Home</a>
+        <a href="portfolio.html">Portfolio</a>
+        <a href="universe-map.html">Map</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="museum.html">Museum</a>
+        <a href="guide-sandbox.html" aria-current="page">Guide</a>
+        <a href="gateway.html">Gateway</a>
+        <a href="ai-integrity.html">Integrity</a>
+        <a href="core.html">Z-Sanctuary Core</a>
+        <a href="navigator.html">Navigator</a>
+        <button type="button" id="gw-evidence-toggle" aria-pressed="false" aria-expanded="false" aria-controls="gw-evidence-board">Show Me What's Real</button>
+      </nav>
+    </header>
+    <main id="main" tabindex="-1">
+      <section class="hero">
+        <p class="notice">LOCAL PREVIEW · not a public AI service · not published · not deployed</p>
+        <h1>GOLDEN GUIDE AI — SANDBOX</h1>
+        <p class="lede">ASK Z-SANCTUARY</p>
+        <p>LOCAL EVIDENCE-GROUNDED PREVIEW. NO PRIVATE SANCTUARY ACCESS. NO EXECUTION AUTHORITY. NO EXTERNAL AI PROVIDER.</p>
+        <p class="notice">Golden Guide AI is not Zuno. An AI answer is not evidence. This sandbox answers only from 22 approved public-safe knowledge records. Production Golden Guide AI runtime remains closed.</p>
+      </section>
+      <p id="gw-evidence-status" class="visually-hidden" aria-live="polite"></p>
+      <section class="glass evidence-board" id="gw-evidence-board" aria-hidden="true"></section>
+      <section class="glass">
+        <h2>Ask a question</h2>
+        <p class="notice">Each question is independent. Nothing you type is stored. Unknown is a valid result. Critic Mode and Integrity Mode use the same public-safe facts as Normal Guide. Self-correction is allowed.</p>
+        <div class="guide-mode" role="radiogroup" aria-label="Guide mode">
+          <button type="button" role="radio" aria-checked="true" id="gw-mode-normal" class="cta secondary">NORMAL GUIDE</button>
+          <button type="button" role="radio" aria-checked="false" id="gw-mode-critic" class="cta secondary">CHALLENGE Z-SANCTUARY</button>
+          <button type="button" role="radio" aria-checked="false" id="gw-mode-integrity" class="cta secondary">CHALLENGE THE AI</button>
+        </div>
+        <p id="gw-critic-banner" class="notice" hidden>LOCAL CRITIC SANDBOX. Criticism is not invention. Criticism is not private disclosure. Not a production critic service. Not financial advice.</p>
+        <p id="gw-integrity-banner" class="notice" hidden>LOCAL AI INTEGRITY SANDBOX. AI can be wrong. AI can sound confident while wrong. We do not claim Golden Guide never hallucinates. Prompt injection is not authority. Metaphor is not a verified runtime.</p>
+        <form id="gw-guide-form" class="guide-form">
+          <label for="gw-guide-question">Your question</label>
+          <textarea id="gw-guide-question" name="question" rows="4" maxlength="500" required placeholder="Example: What is Z-Sanctuary Universe?"></textarea>
+          <p class="notice">Press Ctrl+Enter or use Ask Z-Sanctuary to submit.</p>
+          <button type="submit" class="cta" id="gw-guide-submit">Ask Z-Sanctuary</button>
+        </form>
+      </section>
+      <p id="gw-guide-live" class="visually-hidden" aria-live="polite"></p>
+      <section class="glass" id="gw-guide-result" hidden>
+        <p class="notice" id="gw-guide-behavior"></p>
+        <div id="gw-guide-answer"></div>
+        <div id="gw-guide-limits"></div>
+        <div id="gw-guide-citations"></div>
+        <div id="gw-guide-routes"></div>
+        <div id="gw-guide-critiques"></div>
+        <details id="gw-guide-why">
+          <summary>Why this answer?</summary>
+          <div id="gw-guide-why-body"></div>
+        </details>
+      </section>
+      <section class="glass">
+        <h2>Continue</h2>
+        <p class="ctas">
+          <a class="cta secondary" href="index.html">Golden Home</a>
+          <a class="cta secondary" href="ai-integrity.html">How we handle AI failure</a>
+          <a class="cta secondary" href="portfolio.html">Portfolio</a>
+          <a class="cta secondary" href="gallery.html">Gallery</a>
+          <a class="cta secondary" href="museum.html">Museum</a>
+        </p>
+      </section>
+      <section class="glass">
+        <h2>Future surfaces</h2>
+        <p class="notice">Locked until they pass evidence gates. Production Golden Guide AI remains closed. These are not broken links. No private data is loaded here.</p>
+        <ul class="locked" id="gw-locked"></ul>
+      </section>
+    </main>
+    <footer class="site">
+      Golden Guide AI ≠ Zuno. AI answer ≠ evidence. UNKNOWN ≠ failure. Criticism ≠ invention. Hallucination ≠ honesty by volume. Local sandbox ≠ public service.
+    </footer>
+  </div>
+  <script src="data/gw-approved-public-safe.js"></script>
+  <script src="data/gw9-guide-sandbox.js"></script>
+  <script src="data/gw10-critic.js"></script>
+  <script src="data/gw12-integrity.js"></script>
+  <script src="js/golden-website.js"></script>
+  <script src="js/golden-guide-engine.js"></script>
+  <script src="js/golden-guide-critic.js"></script>
+  <script src="js/golden-guide-integrity.js"></script>
+  <script src="js/golden-guide-sandbox.js"></script>
+</body>
+</html>

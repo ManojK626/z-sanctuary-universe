@@ -20,6 +20,7 @@
     if (list.length === 0 || green !== list.length) return 'UNKNOWN';
     if (green === 2) return 'PROVEN_TWO_HOST_PLATFORM_CAPABILITY';
     if (green === 3) return 'PROVEN_THREE_HOST_PLATFORM_CAPABILITY';
+    if (green === 4) return 'PROVEN_FOUR_HOST_PLATFORM_CAPABILITY';
     return 'UNKNOWN';
   }
 
