@@ -4753,9 +4753,19 @@ body.z-anydevice-adaptive .z-panel a:focus-visible {
 
 @media (pointer: coarse) {
   body.z-anydevice-adaptive .dashboard-edge-bar.edge-top button,
-  body.z-anydevice-adaptive .z-panel-header .z-panel-btn {
-    min-height: 44px;
-    min-width: 44px;
+  body.z-anydevice-adaptive .dashboard-edge-bar.edge-bottom button,
+  body.z-anydevice-adaptive .z-panel-header .z-panel-btn,
+  body.z-anydevice-adaptive #zStatusRail button,
+  body.z-anydevice-adaptive .z-accessibility-bar button,
+  body.z-anydevice-adaptive a.z-skip-link {
+    min-height: calc(44px / var(--z-body-ui-scale, 1));
+    min-width: calc(44px / var(--z-body-ui-scale, 1));
+  }
+
+  body.z-anydevice-adaptive .dashboard-edge-bar.edge-top .z-top-tab-nav {
+    position: static;
+    width: auto;
+    height: auto;
   }
 }
 

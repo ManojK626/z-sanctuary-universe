@@ -246,6 +246,11 @@
       ts: new Date().toISOString(),
     };
     root.style.setProperty('--z-ui-zoom', '1');
+    const uiScale = Number(body.style.zoom);
+    root.style.setProperty(
+      '--z-body-ui-scale',
+      Number.isFinite(uiScale) && uiScale > 0 ? String(uiScale) : '1'
+    );
     const railWidth = {
       wide: '268px',
       standard: '240px',
