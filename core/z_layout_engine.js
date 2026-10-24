@@ -184,7 +184,149 @@
     }
   }
 
-  function run() {
+  function isContractHost() {
+    return Boolean(document.body && document.body.classList.contains('z-anydevice-adaptive'));
+  }
+
+  function viewportScale() {
+    try {
+      const scale = window.visualViewport && window.visualViewport.scale;
+      if (Number.isFinite(scale) && scale > 0) return scale;
+    } catch {
+      /* visualViewport is optional */
+    }
+    return 1;
+  }
+
+  function availableWidth() {
+    let raw = 0;
+    try {
+      if (window.visualViewport && window.visualViewport.width > 0) {
+        raw = window.visualViewport.width;
+      }
+    } catch {
+      raw = 0;
+    }
+    if (!(raw > 0)) raw = window.innerWidth || document.documentElement.clientWidth || 0;
+    // visualViewport already tracks browser zoom. body.style.zoom is the cockpit's
+    // own UI scale (applyUiZoom) and is not a layout authority.
+    return raw / viewportScale();
+  }
+
+  function availableHeight() {
+    let raw = 0;
+    try {
+      if (window.visualViewport && window.visualViewport.height > 0) {
+        raw = window.visualViewport.height;
+      }
+    } catch {
+      raw = 0;
+    }
+    if (!(raw > 0)) raw = window.innerHeight || document.documentElement.clientHeight || 0;
+    return raw / viewportScale();
+  }
+
+  function layoutFromSpace(width) {
+    if (width >= 1600) return 'wide';
+    if (width >= 1280) return 'standard';
+    if (width >= 860) return 'compact';
+    return 'mobile';
+  }
+
+  function mediaValue(query, whenTrue, whenFalse) {
+    try {
+      if (window.matchMedia && window.matchMedia(query).matches) return whenTrue;
+    } catch {
+      /* matchMedia unavailable */
+    }
+    return whenFalse;
+  }
+
+  function applyContract(layout, width, height, displayKey) {
+    const body = document.body;
+    const root = document.documentElement;
+    if (!body || !root) return;
+    const compat = {
+      mobile: { profile: 'mobile', viewport: 'mobile', classes: ['zvp-mobile'] },
+      compact: { profile: 'tablet', viewport: 'tablet', classes: ['zvp-tablet'] },
+      standard: {
+        profile: 'compact-desktop',
+        viewport: 'desktop',
+        classes: ['zvp-compact-desktop', 'zvp-desktop'],
+      },
+      wide: { profile: 'wide', viewport: 'wide', classes: ['zvp-wide'] },
+    }[layout];
+    body.classList.remove(
+      'zvp-mobile',
+      'zvp-tablet',
+      'zvp-compact-desktop',
+      'zvp-desktop',
+      'zvp-wide',
+      'zvp-ultra',
+      'z-layout-mobile',
+      'z-layout-compact',
+      'z-layout-standard',
+      'z-layout-wide'
+    );
+    compat.classes.forEach((name) => body.classList.add(name));
+    body.classList.add(`z-layout-${layout}`);
+    body.classList.toggle('z-rail-compact', width <= 1500);
+    body.classList.toggle('z-rail-ultra-compact', width <= 1300);
+    root.setAttribute('z-profile', compat.profile);
+    root.setAttribute('z-viewport', compat.viewport);
+    root.setAttribute('z-layout', layout);
+    root.setAttribute('z-display-key', displayKey);
+    root.setAttribute('z-orientation', height >= width ? 'portrait' : 'landscape');
+    root.setAttribute('z-pointer', mediaValue('(pointer: coarse)', 'coarse', 'fine'));
+    root.setAttribute('z-hover', mediaValue('(hover: hover)', 'hover', 'none'));
+    root.setAttribute(
+      'z-motion',
+      mediaValue('(prefers-reduced-motion: reduce)', 'reduce', 'no-preference')
+    );
+    root.setAttribute('z-offline', navigator.onLine === false ? 'offline' : 'online');
+    window.__Z_VIEWPORT_PROFILE__ = {
+      layout_class: layout,
+      viewport_class: compat.viewport,
+      width,
+      height,
+      zoom: viewportScale(),
+      dpi: window.devicePixelRatio || 1,
+      ts: new Date().toISOString(),
+    };
+    root.style.setProperty('--z-ui-zoom', '1');
+    const railWidth = {
+      wide: '268px',
+      standard: '240px',
+      compact: '220px',
+      mobile: '0px',
+    }[layout];
+    root.style.setProperty('--z-status-rail-width', railWidth);
+
+    const hasUserOverride =
+      Boolean(window.__Z_USER_OVERRIDE_DENSITY__) || hasManualDensitySelection();
+    if (hasUserOverride) {
+      const chosen = localStorage.getItem(DENSITY_KEY);
+      applyDensityClass(chosen);
+      rememberDensityForDisplay(chosen);
+    } else {
+      const autoDensityByLayout = {
+        mobile: 'ultra',
+        compact: 'compact',
+        standard: 'compact',
+        wide: 'compact',
+      };
+      const mode = autoDensityByLayout[layout] || 'compact';
+      if (typeof window.setZDensity === 'function') {
+        window.setZDensity(mode, { manual: false, persist: false });
+      } else {
+        applyDensityClass(mode);
+      }
+    }
+    root.setAttribute('z-density', getBodyDensityMode());
+    return compat.profile;
+  }
+
+  function runLegacy() {
     const width = window.innerWidth || document.documentElement.clientWidth || 0;
     const height = window.innerHeight || document.documentElement.clientHeight || 0;
     const dpr = window.devicePixelRatio || 1;
@@ -202,6 +344,36 @@
     );
   }
 
+  function runContract() {
+    const width = availableWidth();
+    const height = availableHeight();
+    const display = getDisplayFingerprint();
+    const displayKey = toDisplayKey(display);
+    currentDisplayKey = displayKey;
+    const layout = layoutFromSpace(width);
+    const profile = applyContract(layout, width, height, displayKey);
+    localStorage.setItem(DISPLAY_KEY, displayKey);
+    window.dispatchEvent(
+      new CustomEvent('z-display-profile-changed', {
+        detail: {
+          profile,
+          layout,
+          width,
+          height,
+          dpr: window.devicePixelRatio || 1,
+          displayKey,
+          display,
+          contract: 'z-anydevice-adaptive-0.1',
+        },
+      })
+    );
+  }
+
+  function run() {
+    if (isContractHost()) runContract();
+    else runLegacy();
+  }
+
   let resizeTimer = null;
   function onResize() {
     clearTimeout(resizeTimer);
@@ -210,8 +382,31 @@
 
   function boot() {
     run();
-    setTimeout(() => autoCollapseChronicleOnce(window.innerWidth || 0), 650);
+    setTimeout(() => autoCollapseChronicleOnce(isContractHost() ? availableWidth() : window.innerWidth || 0), 650);
     initDensityDisplayMemory();
+    if (!isContractHost()) return;
+    if (window.visualViewport && window.visualViewport.addEventListener) {
+      window.visualViewport.addEventListener('resize', onResize, { passive: true });
+    }
+    window.addEventListener('online', onResize, { passive: true });
+    window.addEventListener('offline', onResize, { passive: true });
+    ['(pointer: coarse)', '(hover: hover)', '(prefers-reduced-motion: reduce)', '(orientation: portrait)'].forEach(
+      (query) => {
+        try {
+          const media = window.matchMedia(query);
+          if (media.addEventListener) media.addEventListener('change', onResize);
+          else if (media.addListener) media.addListener(onResize);
+        } catch {
+          /* optional signal */
+        }
+      }
+    );
+    if (window.MutationObserver && document.body) {
+      new MutationObserver(() => onResize()).observe(document.body, {
+        attributes: true,
+        attributeFilter: ['style'],
+      });
+    }
   }
 
   function initDensityDisplayMemory() {
@@ -219,6 +414,7 @@
     densityObserver = new MutationObserver(() => {
       const mode = getBodyDensityMode();
       rememberDensityForDisplay(mode);
+      if (isContractHost()) document.documentElement.setAttribute('z-density', mode);
     });
     densityObserver.observe(document.body, { attributes: true, attributeFilter: ['class'] });
   }
