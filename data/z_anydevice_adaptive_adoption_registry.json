@@ -102,6 +102,36 @@
       "open_p1": [],
       "open_p2": [],
       "evidence_receipt": "1.1 steward acceptance of external harness evidence. Chromium, Firefox, and WebKit passed the 12-size matrix, fine and coarse pointer, hover and no-hover, keyboard, reduced motion, safe area, dynamic viewport, and business-truth parity. The registry stayed NOT_TESTED until this reconciliation. z-density is NOT_APPLICABLE. Physical-device evidence was not collected."
+    },
+    {
+      "project_id": "z-golden",
+      "canonical_surface": "docs/golden-website/shell/index.html",
+      "canonical_source_sha": "825a671c03a9ebdfa4724a59dcc71abaffd8c69c",
+      "contract_version": "0.1",
+      "adaptive_runtime_version": "core/z_adaptive_runtime.cjs",
+      "host_adapter": "docs/golden-website/shell/js/z_anydevice_golden_host.js",
+      "status": "GREEN",
+      "last_tested_at": "2026-10-24",
+      "viewport_coverage": "12-size synthetic matrix",
+      "chromium_result": "PASS",
+      "firefox_result": "PASS",
+      "webkit_result": "PASS",
+      "pointer_fine": "PASS",
+      "pointer_coarse": "PASS",
+      "hover": "PASS",
+      "no_hover": "PASS",
+      "keyboard_result": "PASS",
+      "reduced_motion_result": "PASS",
+      "safe_area_result": "PASS",
+      "dynamic_viewport_result": "PASS",
+      "business_truth_parity": "PASS",
+      "canonical_destination_parity": "PASS",
+      "effective_coarse_target": "PASS_AT_LEAST_44",
+      "physical_device_evidence": "NOT_COLLECTED",
+      "open_p0": [],
+      "open_p1": [],
+      "open_p2": [],
+      "evidence_receipt": "1.7 steward acceptance of external harness evidence for the canonical home page only. Sibling Golden shell pages remain NOT_TESTED. Chromium, Firefox, and WebKit passed the 12-size matrix, fine and coarse pointer, hover and no-hover, keyboard, reduced motion, safe area, dynamic viewport, and business-truth parity. The public record set was unchanged. Publication is not authorized. Human screen-reader validation is outstanding. Physical Android validation is outstanding. The registry stayed NOT_TESTED until this reconciliation. z-density is NOT_APPLICABLE."
     }
   ],
   "fixtures": [
@@ -126,12 +156,6 @@
     {
       "project_id": "z-connect",
       "canonical_surface": "sealed preview lineage cursor/soulmates/private-fixture-preview-0-1",
-      "status": "NOT_TESTED",
-      "adoption_authorized": false
-    },
-    {
-      "project_id": "z-golden",
-      "canonical_surface": "canonical web surface not identified on this commit",
       "status": "NOT_TESTED",
       "adoption_authorized": false
     }
