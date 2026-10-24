@@ -65,4 +65,24 @@ function legacyFixture(base) {
   };
 }
 
-module.exports = { unifiedDashboard, appsWeb, amkMainControl, legacyFixture };
+function goldenWebsite(base) {
+  return {
+    id: 'Z_GOLDEN_WEBSITE',
+    architecture: 'traditional-html',
+    base,
+    path: '/docs/golden-website/shell/index.html',
+    ready: 'document.documentElement.getAttribute(\'z-layout\') && document.querySelector(\'h1\') && document.body.textContent.indexOf(\'not published\') !== -1 && document.body.textContent.indexOf(\'QUALIFIED is not VERIFIED\') !== -1',
+    optInTarget: 'body',
+    headingSelector: 'h1, #gw-portfolio h3, #gw-locked li span',
+    linkSelector: 'nav.primary a[href]',
+    criticalSelectors: ['h1', 'nav.primary', 'a.skip'],
+    governanceSelectors: [],
+    keyboardSelector: 'nav.primary a',
+    density: 'absent',
+    cssNeedles: ['100dvh', 'safe-area-inset', 'prefers-reduced-motion'],
+    skipCssWalk: true,
+    settleMs: 300,
+  };
+}
+
+module.exports = { unifiedDashboard, appsWeb, amkMainControl, goldenWebsite, legacyFixture };
