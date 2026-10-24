@@ -1,0 +1,37 @@
+/* Host presentation for AMK-Goku Main Control only.
+ * Layout class comes from the shared runtime. This file does not classify width.
+ */
+
+body.z-anydevice-adaptive .amk-dash-app,
+body.z-anydevice-adaptive .amk-dash-ribbon-nav {
+  max-width: 100%;
+  min-width: 0;
+  box-sizing: border-box;
+}
+
+body.z-anydevice-adaptive .amk-dash-ribbon-nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem 0.75rem;
+}
+
+@media (pointer: coarse) {
+  body.z-anydevice-adaptive .amk-dash-ribbon-nav a,
+  body.z-anydevice-adaptive .z-ade-filter,
+  body.z-anydevice-adaptive .z-ade-detail-btn,
+  body.z-anydevice-adaptive #amkDrawerToggle,
+  body.z-anydevice-adaptive #amkDashInspectorToggle,
+  body.z-anydevice-adaptive .amk-map-skip {
+    min-height: 44px;
+    min-width: 44px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  body.z-anydevice-adaptive .amk-map-skip,
+  body.z-anydevice-adaptive .amk-dash-app {
+    animation: none !important;
+    transition: none !important;
+    scroll-behavior: auto !important;
+  }
+}

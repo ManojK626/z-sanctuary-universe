@@ -36,7 +36,7 @@ function layoutFor(width) {
 }
 
 async function readSurface(page, host) {
-  return page.evaluate((spec) => {
+  return page.evaluate(async (spec) => {
     const root = document.documentElement;
     const body = document.body;
     const optIn =
@@ -85,11 +85,17 @@ async function readSurface(page, host) {
     }));
     const vv = window.visualViewport;
     let css = '';
-    for (const sheet of document.styleSheets) {
-      try {
-        for (const rule of sheet.cssRules) css += `${rule.cssText}\n`;
-      } catch {
-        /* unreadable sheet */
+    if (spec.skipCssWalk) {
+      const hrefs = [...document.querySelectorAll('link[rel="stylesheet"]')].map((node) => node.href);
+      const parts = await Promise.all(hrefs.map((href) => fetch(href).then((res) => res.text()).catch(() => '')));
+      css = parts.join('\n');
+    } else {
+      for (const sheet of document.styleSheets) {
+        try {
+          for (const rule of sheet.cssRules) css += `${rule.cssText}\n`;
+        } catch {
+          /* unreadable sheet */
+        }
       }
     }
     return {
@@ -113,7 +119,10 @@ async function readSurface(page, host) {
       vv: vv ? { width: vv.width, height: vv.height, scale: vv.scale } : null,
       innerWidth: window.innerWidth,
       innerHeight: window.innerHeight,
-      css,
+      cssNeedles: (spec.cssNeedles || []).reduce((acc, needle) => {
+        acc[needle] = css.includes(needle);
+        return acc;
+      }, {}),
     };
   }, {
     optInTarget: host.optInTarget,
@@ -122,6 +131,8 @@ async function readSurface(page, host) {
     criticalSelectors: host.criticalSelectors,
     governanceSelectors: host.governanceSelectors || [],
     media: MEDIA,
+    skipCssWalk: Boolean(host.skipCssWalk),
+    cssNeedles: host.cssNeedles || [],
   });
 }
 
@@ -150,50 +161,61 @@ async function openHost(page, host) {
   if (host.settleMs) await page.waitForTimeout(host.settleMs);
 }
 
-async function runMatrix(page, host) {
+async function runMatrix(page, host, browser) {
   const failures = [];
   const rows = [];
   const truth = {};
   for (const [width, height] of MATRIX) {
-    await page.setViewportSize({ width, height });
-    await openHost(page, host);
-    const snap = await readSurface(page, host);
-    const expected = expectSignals(snap);
-    const label = `${width}x${height}`;
-    const row = { label, layout: snap.layout, scrollX: snap.scrollX };
-    rows.push(row);
-    if (!snap.optIn) failures.push(`${host.id} ${label} missing opt-in`);
-    if (snap.layout !== expected.layout) failures.push(`${host.id} ${label} layout ${snap.layout} != ${expected.layout}`);
-    if (snap.orientation !== expected.orientation) {
-      failures.push(`${host.id} ${label} orientation ${snap.orientation} != ${expected.orientation}`);
+    let active = page;
+    let owned = null;
+    if (host.freshPage) {
+      owned = await browser.newContext({ viewport: { width, height } });
+      active = await owned.newPage();
+    } else {
+      await page.setViewportSize({ width, height });
     }
-    if (snap.pointer !== expected.pointer) failures.push(`${host.id} ${label} pointer ${snap.pointer} != ${expected.pointer}`);
-    if (snap.hover !== expected.hover) failures.push(`${host.id} ${label} hover ${snap.hover} != ${expected.hover}`);
-    if (snap.motion !== expected.motion) failures.push(`${host.id} ${label} motion ${snap.motion} != ${expected.motion}`);
-    if (snap.offline !== 'online') failures.push(`${host.id} ${label} offline ${snap.offline}`);
-    if (snap.scrollX !== 0) failures.push(`${host.id} ${label} horizontal scrollX ${snap.scrollX}`);
-    if (snap.clipped) failures.push(`${host.id} ${label} clipped headings ${snap.clipped}`);
-    if (snap.vv && snap.vv.scale && snap.vv.scale !== 1) {
-      const divided = layoutFor(snap.vv.width / snap.vv.scale);
-      if (divided !== expected.layout && snap.layout === divided) {
-        failures.push(`${host.id} ${label} layout followed visualViewport.scale`);
+    try {
+      await openHost(active, host);
+      const snap = await readSurface(active, host);
+      const expected = expectSignals(snap);
+      const label = `${width}x${height}`;
+      const row = { label, layout: snap.layout, scrollX: snap.scrollX };
+      rows.push(row);
+      if (!snap.optIn) failures.push(`${host.id} ${label} missing opt-in`);
+      if (snap.layout !== expected.layout) failures.push(`${host.id} ${label} layout ${snap.layout} != ${expected.layout}`);
+      if (snap.orientation !== expected.orientation) {
+        failures.push(`${host.id} ${label} orientation ${snap.orientation} != ${expected.orientation}`);
       }
+      if (snap.pointer !== expected.pointer) failures.push(`${host.id} ${label} pointer ${snap.pointer} != ${expected.pointer}`);
+      if (snap.hover !== expected.hover) failures.push(`${host.id} ${label} hover ${snap.hover} != ${expected.hover}`);
+      if (snap.motion !== expected.motion) failures.push(`${host.id} ${label} motion ${snap.motion} != ${expected.motion}`);
+      if (snap.offline !== 'online') failures.push(`${host.id} ${label} offline ${snap.offline}`);
+      if (snap.scrollX !== 0) failures.push(`${host.id} ${label} horizontal scrollX ${snap.scrollX}`);
+      if (snap.clipped) failures.push(`${host.id} ${label} clipped headings ${snap.clipped}`);
+      if (snap.vv && snap.vv.scale && snap.vv.scale !== 1) {
+        const divided = layoutFor(snap.vv.width / snap.vv.scale);
+        if (divided !== expected.layout && snap.layout === divided) {
+          failures.push(`${host.id} ${label} layout followed visualViewport.scale`);
+        }
+      }
+      for (const item of snap.critical) {
+        if (!item.present || item.hidden || !item.reachable) failures.push(`${host.id} ${label} control ${item.sel}`);
+      }
+      for (const item of snap.governance || []) {
+        if (!item.present) failures.push(`${host.id} ${label} governance missing ${item.sel}`);
+      }
+      if (!snap.viewportMeta.includes('viewport-fit=cover')) failures.push(`${host.id} ${label} viewport-fit missing`);
+      if (host.density === 'absent' && snap.density) failures.push(`${host.id} invented z-density ${snap.density}`);
+      const bucket = expected.layout;
+      if (!truth[bucket]) truth[bucket] = snap;
+    } finally {
+      if (owned) await owned.close();
     }
-    for (const item of snap.critical) {
-      if (!item.present || item.hidden || !item.reachable) failures.push(`${host.id} ${label} control ${item.sel}`);
-    }
-    for (const item of snap.governance || []) {
-      if (!item.present) failures.push(`${host.id} ${label} governance missing ${item.sel}`);
-    }
-    if (!snap.viewportMeta.includes('viewport-fit=cover')) failures.push(`${host.id} ${label} viewport-fit missing`);
-    if (host.density === 'absent' && snap.density) failures.push(`${host.id} invented z-density ${snap.density}`);
-    const bucket = expected.layout;
-    if (!truth[bucket]) truth[bucket] = snap;
   }
   const sampleCss = Object.values(truth)[0];
   if (sampleCss) {
     for (const needle of host.cssNeedles) {
-      if (!sampleCss.css.includes(needle)) failures.push(`${host.id} missing css ${needle}`);
+      if (!sampleCss.cssNeedles || sampleCss.cssNeedles[needle] !== true) failures.push(`${host.id} missing css ${needle}`);
     }
   }
   const base = truth.mobile;

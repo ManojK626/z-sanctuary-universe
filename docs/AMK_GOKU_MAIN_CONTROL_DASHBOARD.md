@@ -102,6 +102,10 @@ Optional depth: `npm run zuno:coverage`, registry omni verify per `AGENTS.md`.
 
 The map page repeats this law in the header block rendered from JSON so operators see it every session.
 
+## AnyDevice evidence (read-only)
+
+The **AnyDevice Evidence** section reads `data/z_anydevice_adaptive_adoption_registry.json` and displays the recorded status, browser-family results, synthetic viewport coverage, and physical-device evidence as separate lines. It does not classify layouts, write the registry, adopt a project, or deploy. A SHA difference is labeled `DRIFT OBSERVED` and is not a failure. Adaptive status is not device trust. `OBSERVATION_UI_IS_NOT_ADAPTIVE_CERTIFICATION`: this page may display its recorded adaptive status and may not derive or upgrade that status. The page opts into the shared adaptive runtime for presentation only. Its registry status stays the recorded value.
+
 ## Future (out of scope for AMK-MAP-1)
 
 A later phase could add a **gated** export of operator decisions to `data/reports/` or a signed receipt flow — still without silent execution from the browser.
