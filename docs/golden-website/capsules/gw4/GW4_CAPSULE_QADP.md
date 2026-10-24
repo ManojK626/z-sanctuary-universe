@@ -32,7 +32,7 @@ QUALIFIED. QUALIFIED is not VERIFIED.
 ## Public-safe evidence references
 
 | Reference | Supports | Does not support |
-| --------- | -------- | ---------------- |
+| ----------------------------------------- | -------------------------------------- | ----------------------------------- |
 | QADP doctrine | A grounded Q&A pattern is written down | Magic elimination of model mistakes |
 | Local Knowledge Ask / Z-Q&A&RP prototypes | Operator UIs exist | A public Q&A service |
 

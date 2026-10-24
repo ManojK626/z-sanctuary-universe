@@ -3,7 +3,7 @@
 **Phase:** Golden Website GW-4
 **Date:** 2026-08-27
 **Authority:** GW-3A Visual Acceptance GREEN
-**Build pages now:** **No.** This is a map for *approved future* records.
+**Build pages now:** **No.** This is a map for _approved future_ records.
 
 The local shell today still shows only the two Steward-approved foundations. GW-4 does not add pages.
 
@@ -20,7 +20,7 @@ Home
 ## Intended grouping (after Steward approval, later phases)
 
 | Group | Intent | GW-4 shortlist that could land here later |
-| ----- | ------ | ----------------------------------------- |
+| --------------------- | ------------------------------------ | ----------------------------------------------------------------------------------- |
 | Govern & Verify | Law, evidence, human gates | 14 DRP (READY) · Cycle Observe (READY) · Core (already in shell) |
 | Build & Orchestrate | Registry, opening, roof metaphor | Z-EAII (READY) · Super Overseer (NEEDS_SANITIZATION) |
 | Protect & Recover | Observation, not autopilot | Cycle Observe (READY) · Zuno (KEEP_PRIVATE) |

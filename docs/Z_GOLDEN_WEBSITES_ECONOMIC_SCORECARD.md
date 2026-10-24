@@ -72,7 +72,7 @@ Attribution without a named base, duration, review, and termination is not activ
 Do **not** define Golden by traffic alone.
 
 | Proposed label (not activated) | Meaning as decision support |
-| --- | --- |
+| ------------------------------ | ------------------------------------------------------------------------------------------ |
 | EXPERIMENTAL | Conflicts with GW-0A `economic_role` token — **do not operationalize**; keep GW-0A meaning |
 | EMERGING | Early funnel, unproven margin |
 | GOLDEN_CANDIDATE | Funnel + margin evidence assembling; not sealed |

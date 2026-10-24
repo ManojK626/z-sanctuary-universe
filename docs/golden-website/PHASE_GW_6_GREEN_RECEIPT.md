@@ -13,21 +13,21 @@ GW-7 may render the six approved captures and one approved local-shell museum ca
 
 ## Counts
 
-| Check                                              | Result |
+| Check | Result |
 | -------------------------------------------------- | ------ |
-| Visuals discovered (Golden Website PNG)            | **23** |
-| ICIS fixture SVGs (grouped, not listed as gallery) | **3**  |
-| Visuals classified (including class rows)          | **27** |
-| HTML discovered (hub-scoped)                       | **71** |
-| Prototypes classified (named + clusters)           | **16** |
-| Visual shortlist                                   | **6**  |
-| Prototype shortlist                                | **4**  |
-| Identity-review rows                               | **15** |
-| Sanitization-required / NEEDS_SANITIZATION rows    | **8**  |
-| KEEP_PRIVATE or DO_NOT_PUBLISH rows                | **13** |
-| Twin `records[]`                                   | **0**  |
-| Private browser exposure                           | **0**  |
-| Approved public-safe records unchanged             | **6**  |
+| Visuals discovered (Golden Website PNG) | **23** |
+| ICIS fixture SVGs (grouped, not listed as gallery) | **3** |
+| Visuals classified (including class rows) | **27** |
+| HTML discovered (hub-scoped) | **71** |
+| Prototypes classified (named + clusters) | **16** |
+| Visual shortlist | **6** |
+| Prototype shortlist | **4** |
+| Identity-review rows | **15** |
+| Sanitization-required / NEEDS_SANITIZATION rows | **8** |
+| KEEP_PRIVATE or DO_NOT_PUBLISH rows | **13** |
+| Twin `records[]` | **0** |
+| Private browser exposure | **0** |
+| Approved public-safe records unchanged | **6** |
 
 ## Shortlist (recommend only)
 
@@ -51,15 +51,15 @@ Public payloads (adapter, map foundation, Twin) contain no localhost, Windows pa
 
 ## Validators
 
-| Command                                     | Result                 |
+| Command | Result |
 | ------------------------------------------- | ---------------------- |
-| `node scripts/z_gw_6_build_inventories.mjs` | **PASS**               |
-| `node scripts/z_gw_6_inventory_smoke.mjs`   | **PASS**               |
-| markdownlint GW-6 docs                      | **PASS**               |
-| `npm run dashboard:registry-verify`         | **GREEN**              |
-| `npm run alias:audit`                       | **GREEN**              |
-| `npm run security:data-leak-audit`          | **GREEN** (0 findings) |
-| `npm run z:monster:registry-verify`         | **PASS**               |
+| `node scripts/z_gw_6_build_inventories.mjs` | **PASS** |
+| `node scripts/z_gw_6_inventory_smoke.mjs` | **PASS** |
+| markdownlint GW-6 docs | **PASS** |
+| `npm run dashboard:registry-verify` | **GREEN** |
+| `npm run alias:audit` | **GREEN** |
+| `npm run security:data-leak-audit` | **GREEN** (0 findings) |
+| `npm run z:monster:registry-verify` | **PASS** |
 
 ## Rollback
 

@@ -22,7 +22,7 @@ Only two Steward-approved records are visible.
 ## Two-record scope
 
 | Canonical ID | Public name | Evidence | Gate | Production |
-| ------------ | ----------- | -------- | ---- | ---------- |
+| ---------------------------- | ------------------------------- | --------- | ---- | ---------- |
 | `z_sanctuary_core` | Z-Sanctuary Core | QUALIFIED | PASS | No |
 | `univ_workstation_navigator` | Universal Workstation Navigator | SEALED | PASS | No |
 

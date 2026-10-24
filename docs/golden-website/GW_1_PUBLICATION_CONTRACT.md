@@ -30,7 +30,7 @@ No record enters `records[]` because it exists in the GW-0A overlay, because it 
 ## Deny by default
 
 | Rule | Meaning |
-| ---- | ------- |
+| ------------------------ | ----------------------------- |
 | Default collection | `records: []` |
 | Overlay existence | Not publication |
 | Candidate recommendation | Not publication |
@@ -43,7 +43,7 @@ GW-1 result: **zero** public twin records. That is valid and preferred.
 ## Identity split (do not collapse)
 
 | Layer | Changes when branding changes? |
-| ----- | ------------------------------ |
+| ------------------- | ---------------------------------------------------------- |
 | `canonical_id` | No. Stable and boring. |
 | `temporary_id` | No, until a promotion review. `canonical_id` stays `null`. |
 | Public display name | Yes, allowed later. |
@@ -81,7 +81,7 @@ Architecture: **Registry → Knowledge Twin → generated views**. One approved 
 ## Reuse mappings (document only — no runtime)
 
 | Future public surface | Existing Sanctuary systems to reuse, not duplicate |
-| --------------------- | -------------------------------------------------- |
+| --------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
 | Golden Guide AI (Ask Z-Sanctuary) | Z-EAII Knowledge Ask, Z-AI QADP, Z-Q&A&RP. **Not Zuno.** Zuno stays Sanctuary/personal. |
 | Golden Universe Map | Navigator, ecosphere HTML, monster map, biology map, Magical Canvas PlayKit, Universal Canvas lite. One public map identity. |
 | Evidence Atlas | Green receipts, AAFRTC / verify scripts, monster + dashboard registry verifies. Public language stays weaker than internal seals. |

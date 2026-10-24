@@ -10,7 +10,7 @@ Local only. Publication **NOT_YET_AUTHORIZED**. Deploy **none**. Golden Guide AI
 ## Approved exhibit scope
 
 | Kind | Count | IDs |
-| --- | ---: | --- |
+| -------------------------- | ----: | ---------------------------------------------------------- |
 | Current REAL UI CAPTURE | 5 | VIS-GW-011, VIS-GW-012, VIS-GW-013, VIS-GW-016, VIS-GW-018 |
 | HISTORICAL REAL UI CAPTURE | 1 | VIS-GW-002 |
 | LOCAL WORKING PROTOTYPE | 1 | PROTO-GW-SHELL |

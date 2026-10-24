@@ -48,7 +48,7 @@ Knowledge source: `data/golden-website/public/gw8_approved_knowledge_corpus.json
 Every response resolves to exactly one of:
 
 | Class | When |
-| --- | --- |
+| --------------- | ---------------------------------------------- |
 | ANSWER | Approved knowledge directly supports the reply |
 | QUALIFY | Partly answerable; limitations required |
 | ROUTE | Safest useful act is a local surface pointer |

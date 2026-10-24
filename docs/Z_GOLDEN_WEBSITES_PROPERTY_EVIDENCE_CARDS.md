@@ -6,7 +6,7 @@ Cards only for meaningful identities. Trivial text mentions omitted.
 ## Card: Golden Website (canonical doorway)
 
 | Field | Evidence |
-| --- | --- |
+| -------------------- | ----------------------------------------------------------------------------------------------- |
 | Identity | `gw-doorway-golden-website` · Golden Website / The Golden Website |
 | Role | ECOSYSTEM_DOORWAY — public story, trust, discovery, navigation, informational partnership entry |
 | Evidence | GW-0A…GW-13 docs; local `docs/golden-website/shell/`; GW-13 receipt |

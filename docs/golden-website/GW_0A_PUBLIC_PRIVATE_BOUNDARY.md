@@ -19,7 +19,7 @@ Golden Website surfaces          (empty in GW-0A)
 ```
 
 | Stage | What it is | What it is not |
-| ----- | ---------- | -------------- |
+| ------------------------------- | ------------------------------------------------------------------------- | ---------------------------------------- |
 | PRIVATE Z-SANCTUARY | Hub repo, Organiser, vaults, local dashboards, scientific lanes, receipts | Not the public internet |
 | Publication / sanitization gate | Human review of **each** claim, path, screenshot, and ID | Not an AI auto-redact, not a deploy hook |
 | PUBLIC KNOWLEDGE TWIN | Future sanitized explanation of the organism | Not a live control plane |
@@ -30,7 +30,7 @@ Doctrine at the gate: observe → verify → suggest → **human decides**. Read
 ## Exposure classes (how records travel)
 
 | Class | May leave private sanctuary? |
-| ----- | ---------------------------- |
+| --------------------------- | ---------------------------------------------------------------------------- |
 | `DO_NOT_PUBLISH` | Never via Golden Website |
 | `PRIVATE` | Stay internal unless Steward reclassifies |
 | `QUALIFIED_DATA_ROOM` | Named counterparties only, under NDA / steward process — not the public site |
@@ -42,7 +42,7 @@ Doctrine at the gate: observe → verify → suggest → **human decides**. Read
 The following must not appear on the Golden Website, Knowledge Twin, or any auto-generated public page:
 
 | Forbidden | Why |
-| --------- | --- |
+| ---------------------------------- | -------------------------------------------------------------------------- |
 | Secrets | Tokens, keys, passwords, `.env` values |
 | Credentials | Logins, API credentials, SSH material |
 | Personal data | AMK-Goku vault history, family/health, identifiable people without consent |
@@ -61,7 +61,7 @@ Also forbidden without a separate sacred-move charter: Cloudflare production bin
 ## Classes of overlay records (default)
 
 | Record kind | Default exposure |
-| ----------- | ---------------- |
+| -------------------------------------------------------- | ---------------------------------------------- |
 | Hub / HODP / SSWS cockpits | `PRIVATE` |
 | PC-root sibling paths | `PRIVATE` (do not publish disk topology) |
 | Vault / Folder Manager / TMK-Goku personal canon | `DO_NOT_PUBLISH` |

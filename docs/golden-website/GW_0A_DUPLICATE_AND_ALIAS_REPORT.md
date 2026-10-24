@@ -11,14 +11,14 @@ This report lists **name collisions**, **alias relationships**, **old vs canonic
 ## How to read a cluster
 
 | Column | Meaning |
-| ------ | ------- |
+| -------------- | --------------------------------------------------------------------------------------------------------------------------------------------- |
 | Relationship | `ALIAS` (same thing, multiple names/paths) · `OVERLAP` (related surfaces, not proven identical) · `INTENTIONAL_SPLIT` · `TYPO` · `STALE_COPY` |
 | Recommendation | Human review only |
 
 ## 1. Project names
 
 | Cluster | IDs / names | Relationship | Recommendation |
-| ------- | ----------- | ------------ | -------------- |
+| ------------------- | ---------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------ | ------------------------------------------------------------------------ |
 | Universe 2 dual row | `z-sanctuary-universe-2` and `z-sanctuary-universe-2-continuation` share display name **Z_Sanctuary_Universe 2** | `INTENTIONAL_SPLIT` (hub `universe_2_resolution`: intentional_split_not_merge) | Keep both IDs. Public copy must not present two products named the same. |
 | Retired stub | `zsanctuary-universe-stub-retired` (old folder `ZSanctuary_Universe`) vs hub `z-sanctuary-universe` | `ALIAS` / closed successor | Do not revive the stub name on the public site. |
 | Hub vs continuation | `z-sanctuary-universe` vs `z-sanctuary-universe-2` | `OVERLAP` | Public narrative: hub = control root; Universe 2 = continuation lab. |
@@ -27,7 +27,7 @@ This report lists **name collisions**, **alias relationships**, **old vs canonic
 ## 2. Registry copies (modules)
 
 | Cluster | Paths | Relationship | Recommendation |
-| ------- | ----- | ------------ | -------------- |
+| ------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------- | ------------------------------------------------------------------------------------ |
 | Master vs copies | `data/z_master_module_registry.json` (preferred machine list) vs `data/Z_module_registry.json` vs `docs/z_module_registry.json` vs `data/z_module_manifest.json` | `STALE_COPY` / parallel schemas | Do not mint a fifth list. GW overlay points at the master JSON. |
 | Generated index age | `docs/Z_SANCTUARY_MODULE_INDEX.md` dated 2026-05-02 vs current master JSON | `STALE_COPY` risk | Refresh index in a later docs-only slice; do not treat the May index as live counts. |
 | Living workspace manifest | `docs/living_workspace_manifest.json` plus package and `releases/2026-01-28/` copies | `ALIAS` copies | Cite docs path as canonical for GW. |
@@ -37,7 +37,7 @@ Existing hub alias audit (`data/z_canonical_alias_registry.json`) covers Zuno da
 ## 3. Engines appearing twice
 
 | Cluster | Where | Relationship | Recommendation |
-| ------- | ----- | ------------ | -------------- |
+| ---------------------------------------------- | --------------------------------------------------------------------------------- | --------------- | ----------------------------------------------------------------------------------- |
 | Ghost Core | `data/z_core_engines_registry.json` **and** monster registry `ghost_core` | `ALIAS` same ID | GW overlay stored **one** ENGINE row. Keep ID `ghost_core`. |
 | Alien Core | Same pattern, ID `alien_core` | `ALIAS` same ID | Same. |
 | Engine index vs Master Register “core engines” | Engine JSON has **3** engines; Master Register §4 names a wider engine/system set | `OVERLAP` | Public site must not say “three engines” as if that were the whole Master Register. |
@@ -45,7 +45,7 @@ Existing hub alias audit (`data/z_canonical_alias_registry.json`) covers Zuno da
 ## 4. Q&A systems (inspect as requested)
 
 | Surface | Path / ID | Relationship |
-| ------- | --------- | ------------ |
+| -------------------- | ------------------------------------------------------------------------ | ------------------------------- |
 | Z-EAII Knowledge Ask | `dashboard/panels/z-eaii-knowledge-ask.html` · tile `eaii-knowledge-ask` | Working local cite-or-admit UI |
 | QADP doctrine | `docs/Z-AI-QADP-QUESTIONS-ANSWERS-DIRECTED-PATHWAYS.md` | Pattern, not a separate product |
 | Z-Q&A&RP | `dashboard/z-qa-rp/index.html` · tile `z-qa-rp` | Pathways / DRP UI |
@@ -56,7 +56,7 @@ Existing hub alias audit (`data/z_canonical_alias_registry.json`) covers Zuno da
 ## 5. Screenshot / visual systems
 
 | Surface | Relationship | Recommendation |
-| ------- | ------------ | -------------- |
+| ---------------------------------------------------- | ------------------------------------------------------------------ | --------------------------------------- |
 | `docs/Z-AUTO-SCREENSHOTS-SOUNDS-DETECTORS.md` | Consent-first **game** capture doctrine (`CONCEPT`) | Not a Golden Website screenshot gallery |
 | Living-workspace Harisha / overlay JS | Operator automation overlays | Private |
 | ICIS visual fixtures (4 files under `data/z_icis_*`) | Scientific plates, `DO_NOT_PUBLISH` | Do not reuse as marketing shots |
@@ -65,7 +65,7 @@ Existing hub alias audit (`data/z_canonical_alias_registry.json`) covers Zuno da
 ## 6. Canvas / map systems
 
 | Surface | Relationship |
-| ------- | ------------ |
+| ----------------------------------------------- | ------------------------------------------------------------------------------------- |
 | HODP Z Blueprint (inside `index-skk-rkpk.html`) | Operator control canvas |
 | Universal Canvas lite | `dashboard/panels/z_uccr_universal_canvas_lite.html` |
 | Magical Canvas PlayKit | Monster id `magical_canvas_playkit` |
@@ -81,7 +81,7 @@ Existing hub alias audit (`data/z_canonical_alias_registry.json`) covers Zuno da
 ## 7. Commercial / benchmark / investor systems
 
 | Surface | Relationship | Recommendation |
-| ------- | ------------ | -------------- |
+| --------------------------------------------- | --------------------------------------------------------- | ----------------------------------------- |
 | `docs/COMMERCIAL-READINESS.md` | Go-live **checklist** | Not a store |
 | `docs/pricing-and-benchmarks.md` | Evidence doctrine for Z-SUSBV; **does not set prices** | Do not publish numbers |
 | SUSBV receipts | `docs/commercial/PHASE_ZSUSBV_*` | Advisory only |
@@ -95,7 +95,7 @@ Existing hub alias audit (`data/z_canonical_alias_registry.json`) covers Zuno da
 ## 8. Evidence / verification systems
 
 | Surface | Role |
-| ------- | ---- |
+| -------------------------------------------- | ------------------------------------------------ |
 | Green receipts (`PHASE_*` / `GREEN_RECEIPT`) | Slice seals — 166 receipt-like files inventoried |
 | AAFRTC | Hub full-verify pipeline |
 | Execution enforcer / `manual_release` | Release governance — not a public badge |
@@ -111,7 +111,7 @@ Existing hub alias audit (`data/z_canonical_alias_registry.json`) covers Zuno da
 These hub surfaces already cover stories a Golden Website might want. **Reuse after sanitization; do not rebuild in parallel.**
 
 | Public-facing story (future) | Already in Z-Sanctuary |
-| --------------------------- | ---------------------- |
+| ----------------------------------- | ---------------------------------------------------------- |
 | Organism / map of the universe | Navigator, ecosphere HTML, monster map, biology map |
 | Ask the sanctuary | Knowledge Ask, QADP, Z-Q&A&RP |
 | Morning / operations status | SSWS Morning Cockpit |
@@ -123,7 +123,7 @@ These hub surfaces already cover stories a Golden Website might want. **Reuse af
 ## 10. Formula / ethics aliases
 
 | Cluster | Recommendation |
-| ------- | -------------- |
+| ------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------- |
 | Monster `ggaesp_360` vs overlay `ZS-FORMULA-003` | Temporary formula ID pending canonical review — **do not ship both names** |
 | Ω formula vs “Z-Mega / QOSMEI” ecosphere language | Overlap in narrative; keep one public explanation |
 | Bee Vision catalog vs ICIS closed runtime | Monster id `bee_vision` remains in the catalog; ICIS Bee Vision / ICIS-4 stay **CLOSED**. Public site must not imply a live vision product. |

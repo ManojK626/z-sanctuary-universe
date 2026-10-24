@@ -12,7 +12,7 @@ Already in the local shell (not re-shortlisted): `z_sanctuary_core`, `univ_works
 ## Counts
 
 | Recommendation | Count |
-| -------------- | ----: |
+| ------------------------ | -----: |
 | READY_FOR_STEWARD_REVIEW | 4 |
 | NEEDS_SANITIZATION | 2 |
 | NEEDS_MORE_EVIDENCE | 3 |
@@ -25,7 +25,7 @@ Records reviewed from the 160-row overlay: all remaining rows after the two appr
 ## 1. 14 DRP Protocols
 
 | Field | Value |
-| ----- | ----- |
+| ------------------------ | ------------------------------------------------------------------------- |
 | ID | `ZS-FORMULA-002` (temporary; not a catalog number) |
 | Public name | 14 DRP Protocols |
 | Type / category | FORMULA · governance / evidence · public benefit |
@@ -44,7 +44,7 @@ Capsule: [capsules/gw4/GW4_CAPSULE_14_DRP.md](capsules/gw4/GW4_CAPSULE_14_DRP.md
 ## 2. Z-EAII
 
 | Field | Value |
-| ----- | ----- |
+| ------------------------ | -------------------------------------------------------- |
 | ID | `ZS-AI-001` (temporary) |
 | Public name | Z-EAII |
 | Type / category | AI · orchestration |
@@ -63,7 +63,7 @@ Capsule: [capsules/gw4/GW4_CAPSULE_Z_EAII.md](capsules/gw4/GW4_CAPSULE_Z_EAII.md
 ## 3. Grounded Questions (QADP)
 
 | Field | Value |
-| ----- | ----- |
+| ------------------------ | ----------------------------------------------------------------------------- |
 | ID | `ZS-AI-009` (temporary) |
 | Public name | Grounded Questions (QADP) |
 | Type / category | AI · Q&A pattern |
@@ -83,7 +83,7 @@ Capsule: [capsules/gw4/GW4_CAPSULE_QADP.md](capsules/gw4/GW4_CAPSULE_QADP.md)
 ## 4. Cycle Observe
 
 | Field | Value |
-| ----- | ----- |
+| ------------------------ | ------------------------------------------------------------------------------------------- |
 | ID | `ZS-PROTOTYPE-002` (temporary) |
 | Public name | Cycle Observe |
 | Type / category | PROTOTYPE · security / continuity |
@@ -103,7 +103,7 @@ Capsule: [capsules/gw4/GW4_CAPSULE_CYCLE_OBSERVE.md](capsules/gw4/GW4_CAPSULE_CY
 ## 5. Z-Super Overseer AI
 
 | Field | Value |
-| ----- | ----- |
+| ------------------ | --------------------------------------------------------------------- |
 | ID | `ZS-AI-002` (temporary) |
 | Public name | Z-Super Overseer AI |
 | Type / category | AI · orchestration |
@@ -117,7 +117,7 @@ Capsule: [capsules/gw4/GW4_CAPSULE_CYCLE_OBSERVE.md](capsules/gw4/GW4_CAPSULE_CY
 ## 6. Z-EAII Knowledge Ask
 
 | Field | Value |
-| ----- | ----- |
+| ------------------ | --------------------------------------------------------------- |
 | ID | `eaii-knowledge-ask` (canonical tile id) |
 | Public name | Z-EAII Knowledge Ask |
 | Type / category | PROTOTYPE · dashboard / workstation |
@@ -130,7 +130,7 @@ Capsule: [capsules/gw4/GW4_CAPSULE_CYCLE_OBSERVE.md](capsules/gw4/GW4_CAPSULE_CY
 ## 7. Commercial readiness pathway
 
 | Field | Value |
-| ----- | ----- |
+| ------------------ | ------------------------------------------------------- |
 | ID | `ZS-EVIDENCE-003` (temporary) |
 | Public name | Commercial readiness pathway |
 | Type / category | EVIDENCE · commercial / enterprise |
@@ -144,7 +144,7 @@ Capsule: [capsules/gw4/GW4_CAPSULE_CYCLE_OBSERVE.md](capsules/gw4/GW4_CAPSULE_CY
 ## 8. Compassion formula (Ω)
 
 | Field | Value |
-| ----- | ----- |
+| ------------------ | ------------------------------------ |
 | ID | `ZS-FORMULA-001` (temporary) |
 | Public name | Compassion formula (Ω) |
 | Type / category | FORMULA · intelligence |
@@ -156,7 +156,7 @@ Capsule: [capsules/gw4/GW4_CAPSULE_CYCLE_OBSERVE.md](capsules/gw4/GW4_CAPSULE_CY
 ## 9. Ghost Core
 
 | Field | Value |
-| ----- | ----- |
+| ------------------ | ---------------------------------------------- |
 | ID | `ghost_core` (canonical) |
 | Public name | Ghost Core |
 | Type / category | ENGINE · research / experimental |
@@ -169,7 +169,7 @@ Capsule: [capsules/gw4/GW4_CAPSULE_CYCLE_OBSERVE.md](capsules/gw4/GW4_CAPSULE_CY
 ## 10. Z-HODP
 
 | Field | Value |
-| ----- | ----- |
+| ------------------ | ------------------------------------------ |
 | ID | `ZS-AI-008` (temporary) |
 | Public name | Z-HODP |
 | Type / category | Dashboard / workstation |
@@ -181,7 +181,7 @@ Capsule: [capsules/gw4/GW4_CAPSULE_CYCLE_OBSERVE.md](capsules/gw4/GW4_CAPSULE_CY
 ## 11. Zuno
 
 | Field | Value |
-| ----- | ----- |
+| ------------------ | ----------------------------------------------- |
 | ID | `ZS-AI-004` (temporary) |
 | Public name | Zuno |
 | Type / category | AI · observer |
@@ -192,7 +192,7 @@ Capsule: [capsules/gw4/GW4_CAPSULE_CYCLE_OBSERVE.md](capsules/gw4/GW4_CAPSULE_CY
 ## 12. Z-ICIS
 
 | Field | Value |
-| ----- | ----- |
+| ------------------ | ------------------------------------------------------- |
 | ID | `ZS-AI-006` (temporary) |
 | Public name | Z-ICIS |
 | Type / category | Research / experimental |

@@ -16,7 +16,7 @@ That sentence is **not** a live website claim in GW-2A.
 ## Claim 1 — Canonical identity
 
 | Field | Value |
-| ----- | ----- |
+| ------------------- | -------------------------------------------------------------------------------------------------------------------------------------------- |
 | Public-safe claim | Z-Sanctuary Universe is the named hub organism. Z-Sanctuary Core is the named core-engine role for governance and verification coordination. |
 | Evidence class | Canonical identity |
 | Source titles | Hub project registry (hub role); Core engine roster; Canonical control-root doctrine (title only) |
@@ -30,7 +30,7 @@ Workstation folder paths and local dashboard addresses are **not** cited.
 ## Claim 2 — Implemented capability (not docs-only)
 
 | Field | Value |
-| ----- | ----- |
+| ------------------- | --------------------------------------------------------------------------------------------------------------------- |
 | Public-safe claim | The hub contains implemented software slices with automated tests that passed on 2026-08-27. |
 | Evidence class | Implemented slice + test |
 | Source titles | MirrorSoul hub-slice automated tests; Zuno transformation-slice automated tests |
@@ -44,7 +44,7 @@ A named `z-sanctuary-core` smoke test also passed, but it is **thin** (it may pa
 ## Claim 3 — Governance (human-gated)
 
 | Field | Value |
-| ----- | ----- |
+| ------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | Public-safe claim | Development is written as human-gated and evidence-first: observe → verify → suggest → human decides; readiness is not deploy. |
 | Evidence class | Governance doctrine + review discipline |
 | Source titles | Z-Sanctuary Universe Constitution (frozen architecture; not a deploy grant); Turtle Mode (guarded worker, not autopilot); GitHub as review gate (human approves merge) |
@@ -56,7 +56,7 @@ A named `z-sanctuary-core` smoke test also passed, but it is **thin** (it may pa
 ## Claim 4 — Verification (tied to hub claims)
 
 | Field | Value |
-| ----- | ----- |
+| ------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | Public-safe claim | The hub runs named verification checks. Recent runs were green for dashboard registry, alias integrity, data-leak audit, and API-spine registry signal. |
 | Evidence class | Verification receipts / audits |
 | Source titles | Dashboard registry verification; Canonical alias audit; Data-leak audit; API Power Cell registry check |

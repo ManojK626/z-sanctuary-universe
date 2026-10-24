@@ -42,7 +42,7 @@ The named heart of a governed multi-project AI development ecosystem: coordinate
 See [GW_2A_Z_SANCTUARY_CORE_PUBLIC_EVIDENCE_PACK.md](../evidence/GW_2A_Z_SANCTUARY_CORE_PUBLIC_EVIDENCE_PACK.md).
 
 | Reference | Supports | Does not support |
-| --------- | -------- | ---------------- |
+| ----------------------------------------------------- | --------------------------------- | --------------------------------------- |
 | Hub identity and core-engine roster | Named hub and core role | Finished universal engine |
 | MirrorSoul hub-slice tests (3/3) | Implemented slice with assertions | Production interpersonal AI |
 | Zuno transformation-slice tests (2/2) | Implemented slice with assertions | Public chatbot identity; medical claims |
@@ -74,13 +74,13 @@ Local Golden Foundation Shell (GW-3) may display this record. Twin insert and pu
 ## Proof gates
 
 | Gate | Result |
-| ---- | ------ |
+| --------------------------- | ------------------------------ |
 | Identity clear | PASS |
 | Claim wording safe | PASS |
 | Evidence attached | **PASS** (was PARTIAL in GW-2) |
 | Security sanitization green | PASS |
 | Human approval explicit | **GRANTED** (2026-08-27) |
 
-**Steward classification: APPROVED_PUBLIC_SAFE**
+## Steward classification: APPROVED_PUBLIC_SAFE
 
-**PUBLICATION DECISION: CLASSIFICATION APPROVED · PUBLICATION NOT YET AUTHORIZED**
+## PUBLICATION DECISION: CLASSIFICATION APPROVED · PUBLICATION NOT YET AUTHORIZED

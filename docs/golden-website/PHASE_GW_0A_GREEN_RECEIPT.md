@@ -19,20 +19,20 @@ GW-1 (Public Knowledge Twin foundation) opened separately as data-only. This rec
 
 ## Files created
 
-| Artifact                                                          | Role                                              |
+| Artifact | Role |
 | ----------------------------------------------------------------- | ------------------------------------------------- |
-| `docs/golden-website/GW_0A_CANONICAL_PORTFOLIO_RECONCILIATION.md` | Policy + master matrix schema                     |
-| `data/golden-website/gw_portfolio_registry.json`                  | Machine-readable overlay                          |
-| `docs/golden-website/GW_0A_DUPLICATE_AND_ALIAS_REPORT.md`         | Aliases / overlaps (recommend only)               |
-| `docs/golden-website/GW_0A_PUBLIC_PRIVATE_BOUNDARY.md`            | Private → sanitization → Knowledge Twin           |
-| `docs/golden-website/PHASE_GW_0A_GREEN_RECEIPT.md`                | This receipt                                      |
-| `scripts/z_gw_0a_build_portfolio_registry.mjs`                    | One-shot overlay builder (not an npm verify gate) |
+| `docs/golden-website/GW_0A_CANONICAL_PORTFOLIO_RECONCILIATION.md` | Policy + master matrix schema |
+| `data/golden-website/gw_portfolio_registry.json` | Machine-readable overlay |
+| `docs/golden-website/GW_0A_DUPLICATE_AND_ALIAS_REPORT.md` | Aliases / overlaps (recommend only) |
+| `docs/golden-website/GW_0A_PUBLIC_PRIVATE_BOUNDARY.md` | Private → sanitization → Knowledge Twin |
+| `docs/golden-website/PHASE_GW_0A_GREEN_RECEIPT.md` | This receipt |
+| `scripts/z_gw_0a_build_portfolio_registry.mjs` | One-shot overlay builder (not an npm verify gate) |
 
 ## Files changed
 
-| Artifact                            | Change                                       |
+| Artifact | Change |
 | ----------------------------------- | -------------------------------------------- |
-| `docs/INDEX.md`                     | Pointer row to GW-0A                         |
+| `docs/INDEX.md` | Pointer row to GW-0A |
 | `docs/Z-MASTER-MODULES-REGISTER.md` | §15 overlay pointer; last-updated 2026-08-27 |
 
 ## Sources inspected
@@ -62,44 +62,44 @@ GW-1 (Public Knowledge Twin foundation) opened separately as data-only. This rec
 
 ## Counts
 
-| Metric                                                | Number |
+| Metric | Number |
 | ----------------------------------------------------- | ------ |
-| Portfolio overlay records                             | 160    |
-| Temporary IDs (`TEMPORARY_PENDING_CANONICAL_REVIEW`)  | 25     |
-| Existing canonical IDs reused                         | 135    |
-| Alias / possible-duplicate **clusters**               | 20     |
-| HTML prototypes found (`dashboard/` + `docs/public/`) | 62     |
-| Prototype overlay records                             | 22     |
-| Visuals found (docs/dashboard/data images)            | 4      |
-| Visual overlay records                                | 2      |
-| Receipt-like files inventoried                        | 166    |
-| `VERIFIED` overlay rows                               | 0      |
-| `PUBLIC_SAFE` overlay rows                            | 0      |
-| `DIRECT_PRODUCT` economic assignments                 | 0      |
+| Portfolio overlay records | 160 |
+| Temporary IDs (`TEMPORARY_PENDING_CANONICAL_REVIEW`) | 25 |
+| Existing canonical IDs reused | 135 |
+| Alias / possible-duplicate **clusters** | 20 |
+| HTML prototypes found (`dashboard/` + `docs/public/`) | 62 |
+| Prototype overlay records | 22 |
+| Visuals found (docs/dashboard/data images) | 4 |
+| Visual overlay records | 2 |
+| Receipt-like files inventoried | 166 |
+| `VERIFIED` overlay rows | 0 |
+| `PUBLIC_SAFE` overlay rows | 0 |
+| `DIRECT_PRODUCT` economic assignments | 0 |
 
 ### Records by evidence state
 
 | Evidence state | Count |
 | -------------- | ----- |
-| VERIFIED       | 0     |
-| SEALED         | 5     |
-| QUALIFIED      | 81    |
-| CONCEPT        | 57    |
-| HOLD           | 15    |
-| CLOSED         | 2     |
+| VERIFIED | 0 |
+| SEALED | 5 |
+| QUALIFIED | 81 |
+| CONCEPT | 57 |
+| HOLD | 15 |
+| CLOSED | 2 |
 
 ### Records by economic role (a record may have more than one)
 
-| Economic role    | Count |
+| Economic role | Count |
 | ---------------- | ----- |
-| ENABLER          | 150   |
-| EXPERIMENTAL     | 108   |
-| RESEARCH_IP      | 10    |
-| PUBLIC_BENEFIT   | 9     |
-| PLATFORM_REVENUE | 3     |
-| ENTERPRISE_B2B   | 2     |
-| MARKETPLACE      | 1     |
-| DIRECT_PRODUCT   | 0     |
+| ENABLER | 150 |
+| EXPERIMENTAL | 108 |
+| RESEARCH_IP | 10 |
+| PUBLIC_BENEFIT | 9 |
+| PLATFORM_REVENUE | 3 |
+| ENTERPRISE_B2B | 2 |
+| MARKETPLACE | 1 |
+| DIRECT_PRODUCT | 0 |
 
 ## Validators
 
@@ -113,13 +113,13 @@ npm run alias:audit
 npm run security:data-leak-audit
 ```
 
-| Command                             | Result                                                                                                                                                                                                                                                                                                               |
+| Command | Result |
 | ----------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `npm run verify:md`                 | **RED (pre-existing).** Repo-wide MD060 compact-table failures on many older docs (including padded Master Register / INDEX tables). **GW-0A files** `docs/golden-website/*.md` lint **clean** (`npx markdownlint -c .markdownlint.json docs/golden-website/*.md` exit 0). No repo-wide table rewrite in this slice. |
-| `npm run dashboard:registry-verify` | **GREEN** → `data/reports/z_dashboard_registry_verify.json`                                                                                                                                                                                                                                                          |
-| `npm run z:monster:registry-verify` | **PASS** (27 entries, 26 required) → `data/reports/z_monster_project_registry_verify.json`                                                                                                                                                                                                                           |
-| `npm run alias:audit`               | **GREEN** (3/3 alias pairs) → `data/reports/z_canonical_alias_audit.json`                                                                                                                                                                                                                                            |
-| `npm run security:data-leak-audit`  | **GREEN** (3146 files scanned, 0 findings) → `data/reports/z_data_leak_audit.json`                                                                                                                                                                                                                                   |
+| `npm run verify:md` | **RED (pre-existing).** Repo-wide MD060 compact-table failures on many older docs (including padded Master Register / INDEX tables). **GW-0A files** `docs/golden-website/*.md` lint **clean** (`npx markdownlint -c .markdownlint.json docs/golden-website/*.md` exit 0). No repo-wide table rewrite in this slice. |
+| `npm run dashboard:registry-verify` | **GREEN** → `data/reports/z_dashboard_registry_verify.json` |
+| `npm run z:monster:registry-verify` | **PASS** (27 entries, 26 required) → `data/reports/z_monster_project_registry_verify.json` |
+| `npm run alias:audit` | **GREEN** (3/3 alias pairs) → `data/reports/z_canonical_alias_audit.json` |
+| `npm run security:data-leak-audit` | **GREEN** (3146 files scanned, 0 findings) → `data/reports/z_data_leak_audit.json` |
 
 No new heavy verify tooling added. Overlay builder is not wired into `package.json`. Repo-wide `verify:md` was **not** treated as a GW-0A blocker because the failures predate this overlay.
 
@@ -150,4 +150,4 @@ No new heavy verify tooling added. Overlay builder is not wired into `package.js
 
 ## Sign-off line
 
-Operator: ****\*\*****\_\_\_\_****\*\***** Date: \***\*\_\_\*\***
+Operator: \***\*\*\*\*\***\_\_\_\_\***\*\*\*\*\*** Date: \***\*\_\_\*\***

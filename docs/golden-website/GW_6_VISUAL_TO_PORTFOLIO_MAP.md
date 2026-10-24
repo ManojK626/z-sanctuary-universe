@@ -9,14 +9,14 @@ Gallery role and museum role are **future**. This map does not publish exhibits.
 ## Approved public-safe records (6)
 
 | Visual / prototype | Canonical | Related engines | Evidence | Gallery role | Museum role |
-| --- | --- | --- | --- | --- | --- |
+| ---------------------------- | -------------------------- | ---------------------- | ---------------------- | --------------------------------------------------------------- | ------------------------------------------------------------------- |
 | VIS-GW-011 home portfolio | z_sanctuary_core | six-record shell | QUALIFIED | First-exhibit candidate | — |
 | VIS-GW-012 portfolio desktop | z_sanctuary_core | six-record shell | QUALIFIED | First-exhibit candidate | — |
 | VIS-GW-002 evidence board | z_sanctuary_core | evidence vocabulary | QUALIFIED | First-exhibit candidate (historical two-record shell; label it) | — |
 | VIS-GW-013 DRP page | fourteen_drp_protocols | 14 DRP | QUALIFIED | First-exhibit candidate | — |
 | VIS-GW-016 Observe page | cycle_observe | Cycle Observe | QUALIFIED | First-exhibit candidate | — |
 | VIS-GW-018 map Core | z_sanctuary_core | GW-5 map | QUALIFIED | First-exhibit candidate | — |
-| Remaining VIS-GW-* | matching page record | shell | QUALIFIED or SEALED | Inventory, not first exhibit | — |
+| Remaining VIS-GW-\* | matching page record | shell | QUALIFIED or SEALED | Inventory, not first exhibit | — |
 | PROTO-GW-SHELL | z_sanctuary_core | all six | QUALIFIED / SEALED mix | — | First-exhibit candidate |
 | PROTO-CYCLE-DASHBOARD | cycle_observe | observer law | QUALIFIED | — | First-exhibit candidate after sanitization |
 | PROTO-KNOWLEDGE-ASK | grounded_questions_qadp | z_eaii | QUALIFIED | — | First-exhibit candidate after sanitization; **not Golden Guide AI** |
@@ -26,7 +26,7 @@ Gallery role and museum role are **future**. This map does not publish exhibits.
 ## Explicit non-identity (do not merge)
 
 | Visual / prototype | Must not be treated as | Mark |
-| --- | --- | --- |
+| ----------------------- | ------------------------------------------ | -------------------------------------- |
 | PROTO-ECOSPHERE-MAP | Golden Universe Map | NEEDS_IDENTITY_REVIEW |
 | PROTO-CRYSTAL-DNA | Golden Universe Map | NEEDS_IDENTITY_REVIEW |
 | PROTO-AMK-MAP | Golden Universe Map | NEEDS_IDENTITY_REVIEW |

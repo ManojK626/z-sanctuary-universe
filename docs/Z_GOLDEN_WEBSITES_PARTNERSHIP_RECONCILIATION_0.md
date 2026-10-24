@@ -9,7 +9,7 @@ ICIS files were **not** read for rewrite and were **not** modified.
 ## Identity map
 
 | Name | Standing | Evidence |
-| --- | --- | --- |
+| ------------------------------------------- | ---------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | **Golden Website** | **CANONICAL** public doorway programme | GW-0A…GW-13 under `docs/golden-website/` and `data/golden-website/`. Local shell. Publication unauthorized. GW-13 sealed `NOT_READY_BLOCKERS_REMAIN`. |
 | **Golden Websites** (plural) | **PROPOSED** property portfolio language | This phase treats future sites as properties under the parent. Repo today has **one** Golden Website presentation programme, plus a portfolio **overlay** of existing universe projects — not a live multi-site commercial fleet. |
 | **Golden Magnets / Golden Magnets Website** | **UNRESOLVED** | No committed docs/JSON hits in this hub. Do not promote. |
@@ -22,7 +22,7 @@ They are **not** four separate shipped projects in this repository.
 ## What already existed (retained)
 
 | Artifact | Role retained |
-| --- | --- |
+| ------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
 | GW-0A overlay + evidence states | Canonical inventory / public-safe classification. Not replaced. |
 | GW-3…GW-13 local shell | Public transparent doorway **prototype**. Not an investor solicitation page. Not deployed. |
 | GW-11 Gateway policy + Q&A | Partner/investor **informational** paths. `partner interest ≠ contract`. No revenue share offered on that page. |
@@ -34,7 +34,7 @@ They are **not** four separate shipped projects in this repository.
 ## What was historical (operator memory, not repo doctrine)
 
 | Wording | Repo finding | This phase |
-| --- | --- | --- |
+| ----------------------------------------------------- | -------------------------------------------------------- | -------------------------------------------------------------------------------------------- |
 | “15% future potential profit + lifetime partnerships” | **Not found** as committed Golden Website doctrine | **Reinterpreted** as a **reserved dilution envelope** (proposed / not issued / not promised) |
 | “15% of all future profits forever” | **Not found** | **Retired** as meaning |
 | “15% parent ownership for people who help” | **Not found** | **Retired** as meaning |
@@ -52,7 +52,7 @@ No history erasure: the old idea is recorded here as the thing being governed, e
 ## What was reinterpreted
 
 | Old informal idea | New governed meaning |
-| --- | --- |
+| -------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------- |
 | 15% forever profit / help-to-own | `strategic_dilution_envelope_pct: 15` · `issued_pct: 0` · `promised_pct: 0` · `PROPOSED` / `RESERVED` / `NOT_ISSUED` / `NOT_PROMISED` |
 | One partnership class | Four economic classes; GW-11 classes remain informational |
 | Golden = traffic | Scorecard: funnel + margin + AI cost. Traffic is not GOLDEN by itself |
@@ -68,7 +68,7 @@ A proposed maturity ladder (`EXPERIMENTAL` → `EMERGING` → `GOLDEN_CANDIDATE`
 
 ## Public doorway (preserved)
 
-The Golden Website remains a **PUBLIC TRANSPARENT DOORWAY** for mission, demonstrations, ecosystem, governance, trust/safety, and *informational* contributor/partnership language.
+The Golden Website remains a **PUBLIC TRANSPARENT DOORWAY** for mission, demonstrations, ecosystem, governance, trust/safety, and _informational_ contributor/partnership language.
 
 It must not silently become: investor solicitation, uncontrolled equity offer, securities promise, lifetime-profit promise, or a doorway to unrestricted Z-Core access.
 

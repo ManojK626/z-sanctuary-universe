@@ -15,35 +15,35 @@ GW-10 may add a local Challenge Z-Sanctuary critic sandbox on the same 22 record
 
 ## Counts
 
-| Check                               | Result      |
+| Check | Result |
 | ----------------------------------- | ----------- |
-| Corpus records consumed             | **22**      |
-| Private corpus records              | **0**       |
-| Test questions                      | **50**      |
-| Tests passed                        | **50 / 50** |
-| Tests failed                        | **0**       |
-| Adversarial probes                  | **16**      |
-| Adversarial passed                  | **16 / 16** |
-| Adversarial failed                  | **0**       |
-| UNKNOWN (50-question suite)         | **2**       |
-| PRIVATE_REFUSAL (50-question suite) | **6**       |
-| UNKNOWN (combined with adversarial) | **2**       |
-| PRIVATE_REFUSAL (combined)          | **12**      |
-| External calls                      | **0**       |
-| Provider dependencies               | **0**       |
-| Private browser exposure            | **0**       |
-| Twin `records[]`                    | **0**       |
+| Corpus records consumed | **22** |
+| Private corpus records | **0** |
+| Test questions | **50** |
+| Tests passed | **50 / 50** |
+| Tests failed | **0** |
+| Adversarial probes | **16** |
+| Adversarial passed | **16 / 16** |
+| Adversarial failed | **0** |
+| UNKNOWN (50-question suite) | **2** |
+| PRIVATE_REFUSAL (50-question suite) | **6** |
+| UNKNOWN (combined with adversarial) | **2** |
+| PRIVATE_REFUSAL (combined) | **12** |
+| External calls | **0** |
+| Provider dependencies | **0** |
+| Private browser exposure | **0** |
+| Twin `records[]` | **0** |
 
 UNKNOWN questions in the 50-suite: XL2 coupling status; public launch date. Both returned the approved unknown line. UNKNOWN ≠ failure.
 
 ## Surfaces / artifacts
 
-| Artifact         | Path                                                             |
+| Artifact | Path |
 | ---------------- | ---------------------------------------------------------------- |
-| Sandbox page     | `docs/golden-website/shell/guide-sandbox.html`                   |
-| Grounding engine | `docs/golden-website/shell/js/golden-guide-engine.js`            |
-| Architecture     | `docs/golden-website/GW_9_GOLDEN_GUIDE_DETERMINISTIC_SANDBOX.md` |
-| Behavior results | `docs/golden-website/gw-9/behavior_suite_results.json`           |
+| Sandbox page | `docs/golden-website/shell/guide-sandbox.html` |
+| Grounding engine | `docs/golden-website/shell/js/golden-guide-engine.js` |
+| Architecture | `docs/golden-website/GW_9_GOLDEN_GUIDE_DETERMINISTIC_SANDBOX.md` |
+| Behavior results | `docs/golden-website/gw-9/behavior_suite_results.json` |
 
 Nav label: **Guide** → GOLDEN GUIDE AI — SANDBOX, marked **LOCAL PREVIEW**. Production runtime stays in locked surfaces as `Golden Guide AI — production runtime`.
 
@@ -55,16 +55,16 @@ Playwright recorded **0** `http`/`https` requests during the visual pass.
 
 ## Accessibility / browser
 
-| Check                     | Result                             |
+| Check | Result |
 | ------------------------- | ---------------------------------- |
-| Keyboard submit           | **PASS**                           |
-| Skip link focus           | **PASS**                           |
-| Live region announcement  | **PASS**                           |
-| 44px submit / textarea    | **PASS**                           |
-| Why this answer? keyboard | **PASS**                           |
-| 1440 / 768 / 390 overflow | **PASS**                           |
-| Reduced motion context    | **PASS**                           |
-| Human NVDA / VoiceOver    | Still required before public pilot |
+| Keyboard submit | **PASS** |
+| Skip link focus | **PASS** |
+| Live region announcement | **PASS** |
+| 44px submit / textarea | **PASS** |
+| Why this answer? keyboard | **PASS** |
+| 1440 / 768 / 390 overflow | **PASS** |
+| Reduced motion context | **PASS** |
+| Human NVDA / VoiceOver | Still required before public pilot |
 
 ## Unresolved limitations
 
@@ -77,17 +77,17 @@ Playwright recorded **0** `http`/`https` requests during the visual pass.
 
 ## Validators
 
-| Command                                         | Result                 |
+| Command | Result |
 | ----------------------------------------------- | ---------------------- |
-| `node scripts/z_gw_9_build_sandbox_payload.mjs` | **PASS**               |
-| `node scripts/z_gw_9_run_behavior_suite.mjs`    | **PASS** 50/50 + 16/16 |
-| `node scripts/z_gw_9_sandbox_smoke.mjs`         | **PASS**               |
-| `node scripts/z_gw_9_visual_pass.mjs`           | **PASS**               |
-| markdownlint GW-9 docs                          | **PASS**               |
-| `npm run dashboard:registry-verify`             | **GREEN**              |
-| `npm run alias:audit`                           | **GREEN**              |
-| `npm run security:data-leak-audit`              | **GREEN** (0 findings) |
-| `npm run z:monster:registry-verify`             | **PASS**               |
+| `node scripts/z_gw_9_build_sandbox_payload.mjs` | **PASS** |
+| `node scripts/z_gw_9_run_behavior_suite.mjs` | **PASS** 50/50 + 16/16 |
+| `node scripts/z_gw_9_sandbox_smoke.mjs` | **PASS** |
+| `node scripts/z_gw_9_visual_pass.mjs` | **PASS** |
+| markdownlint GW-9 docs | **PASS** |
+| `npm run dashboard:registry-verify` | **GREEN** |
+| `npm run alias:audit` | **GREEN** |
+| `npm run security:data-leak-audit` | **GREEN** (0 findings) |
+| `npm run z:monster:registry-verify` | **PASS** |
 
 ## Rollback
 

@@ -13,16 +13,16 @@ GW-8 may prepare the Golden Guide AI knowledge contract and approved corpus. It 
 
 ## Counts
 
-| Check                               | Result |
+| Check | Result |
 | ----------------------------------- | ------ |
-| Visual exhibits rendered            | **6**  |
-| Current captures                    | **5**  |
-| Historical captures                 | **1**  |
-| Prototype exhibits                  | **1**  |
-| Unapproved exhibits exposed         | **0**  |
-| Private browser exposure            | **0**  |
-| Twin `records[]`                    | **0**  |
-| Broken exhibit links (smoke/visual) | **0**  |
+| Visual exhibits rendered | **6** |
+| Current captures | **5** |
+| Historical captures | **1** |
+| Prototype exhibits | **1** |
+| Unapproved exhibits exposed | **0** |
+| Private browser exposure | **0** |
+| Twin `records[]` | **0** |
+| Broken exhibit links (smoke/visual) | **0** |
 
 Approved visuals: VIS-GW-011, VIS-GW-012, VIS-GW-013, VIS-GW-016, VIS-GW-018, VIS-GW-002 (historical).
 
@@ -30,23 +30,23 @@ Approved prototype: PROTO-GW-SHELL. Gated prototypes were not named or linked.
 
 ## Surfaces
 
-| Surface               | Path                                           |
+| Surface | Path |
 | --------------------- | ---------------------------------------------- |
-| Golden Visual Gallery | `docs/golden-website/shell/gallery.html`       |
-| Prototype Museum      | `docs/golden-website/shell/museum.html`        |
-| Exhibit contract      | `data/golden-website/public/gw7_exhibits.json` |
+| Golden Visual Gallery | `docs/golden-website/shell/gallery.html` |
+| Prototype Museum | `docs/golden-website/shell/museum.html` |
+| Exhibit contract | `data/golden-website/public/gw7_exhibits.json` |
 
 Historical VIS-GW-002 is labelled **HISTORICAL REAL UI CAPTURE** and states that it shows the earlier two-record Foundation Shell, not the current six-record portfolio.
 
 ## Browser results
 
-| Check                                 | Result                             |
+| Check | Result |
 | ------------------------------------- | ---------------------------------- |
-| `node scripts/z_gw_7_visual_pass.mjs` | **PASS**                           |
-| Large-view click / Enter / Escape     | **PASS**                           |
-| Images load                           | **PASS**                           |
-| Overflow 1440 / 768 / 390             | **PASS** (none)                    |
-| NVDA / VoiceOver                      | Still required before public pilot |
+| `node scripts/z_gw_7_visual_pass.mjs` | **PASS** |
+| Large-view click / Enter / Escape | **PASS** |
+| Images load | **PASS** |
+| Overflow 1440 / 768 / 390 | **PASS** (none) |
+| NVDA / VoiceOver | Still required before public pilot |
 
 Screenshots: `docs/golden-website/gw-7/screenshots/`.
 
@@ -66,16 +66,16 @@ Private exposure **0**. No iframe. No gated operator HTML. No Windows paths or l
 
 ## Validators
 
-| Command                                  | Result                 |
+| Command | Result |
 | ---------------------------------------- | ---------------------- |
-| `node scripts/z_gw_7_build_exhibits.mjs` | **PASS**               |
-| `node scripts/z_gw_7_exhibit_smoke.mjs`  | **PASS**               |
-| `node scripts/z_gw_7_visual_pass.mjs`    | **PASS**               |
-| markdownlint GW-7 docs                   | **PASS**               |
-| `npm run dashboard:registry-verify`      | **GREEN**              |
-| `npm run alias:audit`                    | **GREEN**              |
-| `npm run security:data-leak-audit`       | **GREEN** (0 findings) |
-| `npm run z:monster:registry-verify`      | **PASS**               |
+| `node scripts/z_gw_7_build_exhibits.mjs` | **PASS** |
+| `node scripts/z_gw_7_exhibit_smoke.mjs` | **PASS** |
+| `node scripts/z_gw_7_visual_pass.mjs` | **PASS** |
+| markdownlint GW-7 docs | **PASS** |
+| `npm run dashboard:registry-verify` | **GREEN** |
+| `npm run alias:audit` | **GREEN** |
+| `npm run security:data-leak-audit` | **GREEN** (0 findings) |
+| `npm run z:monster:registry-verify` | **PASS** |
 
 ## Rollback
 

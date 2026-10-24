@@ -7,7 +7,7 @@
 ## Locked public names
 
 | Role | Locked name |
-| ---- | ----------- |
+| --------------------- | ----------------------------------- |
 | Public umbrella | Z-Sanctuary Universe |
 | Public website | The Golden Website |
 | Website subtitle | Gateway to the Z-Sanctuary Universe |
@@ -23,7 +23,7 @@ canonical identity  ≠  public display name  ≠  public slug
 ```
 
 | Field | Example | Rule |
-| ----- | ------- | ---- |
+| ------------------- | ---------------------------- | --------------------------------------------------------------------------------------------------------- |
 | `canonical_id` | `univ_workstation_navigator` | Stable, boring, existing hub ID where it already exists. Do not change because the website title changed. |
 | `temporary_id` | `ZS-AI-004` | Used only while `id_status` is `TEMPORARY_PENDING_CANONICAL_REVIEW`. Then `canonical_id` is **null**. |
 | Public display name | Golden Guide AI | May evolve in later phases. |
@@ -68,7 +68,7 @@ Queue: `data/golden-website/gw_identity_promotion_queue.json`. **Promoted this p
 ## What must not be a public brand
 
 | Internal name | Public rule |
-| ------------- | ----------- |
+| ---------------------------------------- | -------------------------------------------------------------------------------------------------------- |
 | Zuno | Not the public chatbot. Personal/Sanctuary guide only. |
 | Z-EAII / Knowledge Ask / QADP / Z-Q&A&RP | Reuse as **inputs** to Golden Guide AI after sanitization. Do not ship four public Q&A products. |
 | Universe 2 / `z-sanctuary-universe-2` | Internal/legacy alias. Not a competing public brand unless later evidence says it is a distinct product. |

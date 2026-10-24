@@ -11,7 +11,7 @@ Quota: at most **6** visuals and **4** prototypes. These are recommendations, no
 ### 1. VIS-GW-011 — Home six-record portfolio
 
 | Field | Value |
-| --- | --- |
+| -------------------- | ---------------------------------------------------------------------------------- |
 | Depiction | REAL UI CAPTURE |
 | Canonical | z_sanctuary_core |
 | Evidence of depicted | QUALIFIED |
@@ -27,7 +27,7 @@ Quota: at most **6** visuals and **4** prototypes. These are recommendations, no
 ### 2. VIS-GW-012 — Portfolio Preview desktop
 
 | Field | Value |
-| --- | --- |
+| -------------- | -------------------------------------------------- |
 | Depiction | REAL UI CAPTURE |
 | Canonical | z_sanctuary_core |
 | Recommendation | **READY_FOR_STEWARD_REVIEW** |
@@ -38,7 +38,7 @@ Quota: at most **6** visuals and **4** prototypes. These are recommendations, no
 ### 3. VIS-GW-013 — 14 DRP Protocols page
 
 | Field | Value |
-| --- | --- |
+| -------------- | --------------------------------------------------- |
 | Depiction | REAL UI CAPTURE |
 | Canonical | fourteen_drp_protocols |
 | Recommendation | **READY_FOR_STEWARD_REVIEW** |
@@ -48,7 +48,7 @@ Quota: at most **6** visuals and **4** prototypes. These are recommendations, no
 ### 4. VIS-GW-016 — Cycle Observe page
 
 | Field | Value |
-| --- | --- |
+| -------------- | ----------------------------------------------- |
 | Depiction | REAL UI CAPTURE |
 | Canonical | cycle_observe |
 | Recommendation | **READY_FOR_STEWARD_REVIEW** |
@@ -58,7 +58,7 @@ Quota: at most **6** visuals and **4** prototypes. These are recommendations, no
 ### 5. VIS-GW-018 — Universe Map Core selected
 
 | Field | Value |
-| --- | --- |
+| -------------- | --------------------------------------------------------------- |
 | Depiction | REAL UI CAPTURE |
 | Canonical | z_sanctuary_core |
 | Recommendation | **READY_FOR_STEWARD_REVIEW** |
@@ -68,7 +68,7 @@ Quota: at most **6** visuals and **4** prototypes. These are recommendations, no
 ### 6. VIS-GW-002 — Evidence Mode board (GW-3A)
 
 | Field | Value |
-| --- | --- |
+| -------------- | --------------------------------------------------------- |
 | Depiction | REAL UI CAPTURE |
 | Canonical | z_sanctuary_core |
 | Time | **historical** (two-record shell) |
@@ -81,7 +81,7 @@ Quota: at most **6** visuals and **4** prototypes. These are recommendations, no
 ### 1. PROTO-GW-SHELL — Golden Website local shell
 
 | Field | Value |
-| --- | --- |
+| -------------- | -------------------------------------------------------- |
 | Class | WORKING |
 | Recommendation | **READY_FOR_STEWARD_REVIEW** |
 | Why | Already public-safe, keyboard-checked, no private fetch. |
@@ -91,7 +91,7 @@ Quota: at most **6** visuals and **4** prototypes. These are recommendations, no
 ### 2. PROTO-CYCLE-DASHBOARD — Cycle Dashboard
 
 | Field | Value |
-| --- | --- |
+| -------------- | ------------------------------------------------------------------------------------- |
 | Class | WORKING |
 | Recommendation | **NEEDS_SANITIZATION** |
 | Why | Maps cleanly to approved Cycle Observe. Understandable as observation, not autopilot. |
@@ -101,7 +101,7 @@ Quota: at most **6** visuals and **4** prototypes. These are recommendations, no
 ### 3. PROTO-KNOWLEDGE-ASK — Knowledge Ask
 
 | Field | Value |
-| --- | --- |
+| -------------- | ------------------------------------------------------------------- |
 | Class | WORKING |
 | Recommendation | **NEEDS_SANITIZATION** |
 | Why | Maps to QADP. Useful cite-or-admit pattern. |
@@ -112,7 +112,7 @@ Quota: at most **6** visuals and **4** prototypes. These are recommendations, no
 ### 4. PROTO-ECOSPHERE-MAP — Living Ecosphere Map
 
 | Field | Value |
-| --- | --- |
+| -------------- | -------------------------------------------------------------- |
 | Class | WORKING |
 | Recommendation | **NEEDS_SANITIZATION** |
 | Why | Visual variety (map) without claiming GW-5 completeness. |

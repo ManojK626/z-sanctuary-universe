@@ -32,7 +32,7 @@ QUALIFIED. QUALIFIED is not VERIFIED.
 ## Public-safe evidence references
 
 | Reference | Supports | Does not support |
-| --------- | -------- | ---------------- |
+| ------------------------------------- | --------------------------------- | ---------------------------------- |
 | Hierarchy Chief / Master Register | A named EAII role exists | Public command of the sanctuary |
 | Operator registry-and-opening pattern | Implemented locally for operators | Public ping endpoints or disk maps |
 

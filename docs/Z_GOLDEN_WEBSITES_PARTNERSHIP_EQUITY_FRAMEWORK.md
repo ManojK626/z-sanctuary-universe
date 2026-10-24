@@ -45,7 +45,7 @@ Protected at parent/core: identity, trademarks, domains where appropriate, share
 ## What partners can participate in
 
 | Class | Default economics | Default parent equity |
-| --- | --- | --- |
+| ----------------------------------- | ------------------------------------------------ | --------------------------------------------------------------------- |
 | 1 Contributors | Credit, bounty, milestone, site/module incentive | **NONE** |
 | 2 Growth partners | Commission / defined property participation | **NONE** unless later elevated |
 | 3 Strategic partners | Commercial / licence / distribution | **NONE** automatic; warrants/equity only after legal + steward review |
@@ -82,7 +82,7 @@ Lifetime partnership is **RETIRED_FOR_NEW_RECRUITMENT** (ambiguous duration, ina
 100-point score: **PROPOSED_DECISION_SUPPORT**, **NOT_AUTOMATIC_COMPENSATION**.
 
 | Dimension | Points |
-| --- | --- |
+| ---------------------------------- | ------ |
 | Economic / value impact | 25 |
 | Technical / creative depth | 20 |
 | Strategic uniqueness | 15 |
@@ -104,7 +104,7 @@ Existing GW-0A **evidence_state** remains the operational classifier. The GOLDEN
 ## IP and access
 
 | Class | Meaning |
-| --- | --- |
+| ------------------- | ------------------------------------ |
 | BACKGROUND IP | Owned before collaboration |
 | FOREGROUND IP | Created during collaboration |
 | Z-CORE IP | Protected reusable Sanctuary assets |

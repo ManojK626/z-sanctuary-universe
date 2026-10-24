@@ -12,7 +12,7 @@ This document is the **policy** for the first Golden Website reconciliation laye
 GW-0A inventories and maps existing Z-Sanctuary Universe projects, modules, engines, AI systems, formulas, HTML prototypes, visuals, receipts, commercial pathways, public-benefit roles, and dependencies.
 
 | Forbidden in GW-0A | Status |
-| ------------------ | ------ |
+| ----------------------------------- | ---------------------------------- |
 | Public Golden Website UI | Not built |
 | Deploy / Cloudflare production bind | Not done |
 | Private-data exposure | Not done |
@@ -35,7 +35,7 @@ GW-0A inventories and maps existing Z-Sanctuary Universe projects, modules, engi
 Existing registries remain the **source of truth** for their own IDs:
 
 | Layer | Canonical file |
-| ----- | -------------- |
+| ----------------- | ------------------------------------------------ |
 | PC-root projects | `data/z_pc_root_projects.json` |
 | Master modules | `data/z_master_module_registry.json` |
 | Monster cores | `data/z_sanctuary_monster_project_registry.json` |
@@ -48,7 +48,7 @@ Existing registries remain the **source of truth** for their own IDs:
 ## Path discoveries (do not fork)
 
 | Requested in brief | Actual / discovery |
-| ------------------ | ------------------ |
+| -------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------- |
 | `docs/Z_FULL_BUILD_CHECKLIST.md` | `docs/Z-FULL-BUILD-CHECKLIST.md` |
 | `data/z_module_registry.json` | Prefer `data/z_master_module_registry.json`. Copies/aliases exist — see [GW_0A_DUPLICATE_AND_ALIAS_REPORT.md](GW_0A_DUPLICATE_AND_ALIAS_REPORT.md) |
 | `living_workspace_manifest.json` | Canonical: `docs/living_workspace_manifest.json` (package/release copies exist) |
@@ -61,7 +61,7 @@ Inspected first (human + overlay builder): Master Register, module/engine/monste
 Use **exactly** one of:
 
 | State | Meaning in GW-0A |
-| ----- | ---------------- |
+| ----------- | ------------------------------------------------------------------------------------------------------------------------------------- |
 | `VERIFIED` | Public-facing, independent verification of the **Golden Website claim**. **Unused in this phase.** Existence on disk is not VERIFIED. |
 | `SEALED` | A named green receipt or sealed scientific/governance packet exists for **that slice**. Sealed ≠ public-safe. |
 | `QUALIFIED` | Hub implementation, registry row, or working local UI exists, but public proof is incomplete. |
@@ -102,7 +102,7 @@ GW-0A assigned **zero** `PUBLIC_SAFE` rows.
 Every overlay record uses these fields (JSON keys in snake_case):
 
 | Field | JSON key | Notes |
-| ----- | -------- | ----- |
+| --------------------------- | ----------------------------- | -------------------------------------------------------------------------- |
 | Canonical ID | `canonical_id` | Existing ID preferred |
 | Name | `name` | Display name; not a rename of the system |
 | Type | `type` | `PROJECT` `MODULE` `ENGINE` `AI` `FORMULA` `PROTOTYPE` `VISUAL` `EVIDENCE` |
@@ -132,7 +132,7 @@ Additional overlay keys: `id_status`, `commercial_status`, optional `prototype_c
 ## Inventory posture (filesystem vs overlay)
 
 | Inventory | Count at GW-0A build | Overlay treatment |
-| --------- | -------------------- | ----------------- |
+| ----------------------------------------- | -------------------- | -------------------------------------------------------------------- |
 | PC-root projects | 22 + 1 retired | All included with existing IDs |
 | Monster entries | 27 | Included; `ghost_core` / `alien_core` kept as **engines** (same IDs) |
 | Master modules | 68 | All included with existing IDs |

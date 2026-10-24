@@ -21,7 +21,7 @@ Not: Candidate → website.
 ## Five gates
 
 | Gate | Pass means | Fail means |
-| ---- | ---------- | ---------- |
+| ------------------------------ | --------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------- |
 | 1. Identity clear | Canonical ID stable; public name ≠ colliding brand; temporary IDs not used as catalog numbers | Ambiguous name, alias unresolved, or Zuno/Universe 2 confusion |
 | 2. Claim wording safe | Copy obeys [GW_1_CLAIM_POLICY.md](GW_1_CLAIM_POLICY.md) | QUALIFIED said as proven; WORKING HTML said as production; SEALED said as deployed |
 | 3. Evidence attached | Public-safe references exist for every positive claim | Registry listing alone treated as public proof |

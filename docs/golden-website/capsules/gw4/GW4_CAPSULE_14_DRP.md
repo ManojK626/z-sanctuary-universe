@@ -30,7 +30,7 @@ QUALIFIED. QUALIFIED is not VERIFIED.
 ## Public-safe evidence references
 
 | Reference | Supports | Does not support |
-| --------- | -------- | ---------------- |
+| ------------------------------- | ------------------------------------------------------------- | ----------------------------- |
 | Universal agent-law document | A named non-harm law layer exists | Perfect historical compliance |
 | Forbidden-move list in that law | Silent deploy and hidden execution are disallowed in doctrine | A live public enforcement API |
 

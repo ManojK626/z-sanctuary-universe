@@ -12,7 +12,7 @@ Prototype truth: WORKING frontend ≠ working backend. LOCAL prototype ≠ publi
 ## Counts
 
 | Prototype class | Count |
-| --- | ---: |
+| ---------------------- | -----: |
 | WORKING | 5 |
 | PARTIAL | 2 |
 | PRIVATE | 6 |
@@ -21,7 +21,7 @@ Prototype truth: WORKING frontend ≠ working backend. LOCAL prototype ≠ publi
 | **Classified records** | **16** |
 
 | Recommendation | Count |
-| --- | ---: |
+| ------------------------ | ----: |
 | READY_FOR_STEWARD_REVIEW | 1 |
 | NEEDS_SANITIZATION | 4 |
 | KEEP_PRIVATE | 9 |
@@ -33,7 +33,7 @@ Prototype truth: WORKING frontend ≠ working backend. LOCAL prototype ≠ publi
 ### PROTO-GW-SHELL — Golden Website local foundation shell
 
 | Field | Value |
-| --- | --- |
+| -------------------- | ------------------------------------------------------------------------------ |
 | Class | WORKING |
 | Canonical | z_sanctuary_core (plus the other five approved records) |
 | Public-safe identity | The Golden Website |
@@ -49,7 +49,7 @@ Prototype truth: WORKING frontend ≠ working backend. LOCAL prototype ≠ publi
 ### PROTO-CYCLE-DASHBOARD — Cycle Dashboard (read-only)
 
 | Field | Value |
-| --- | --- |
+| --------------- | ---------------------------------------------------------------------------- |
 | Class | WORKING |
 | Canonical | cycle_observe |
 | Local data | GET operator report JSON |
@@ -61,7 +61,7 @@ Prototype truth: WORKING frontend ≠ working backend. LOCAL prototype ≠ publi
 ### PROTO-KNOWLEDGE-ASK — Z-EAII Knowledge Ask
 
 | Field | Value |
-| --- | --- |
+| -------------------- | ------------------------------------------------------- |
 | Class | WORKING |
 | Canonical | grounded_questions_qadp |
 | Related | z_eaii |
@@ -73,7 +73,7 @@ Prototype truth: WORKING frontend ≠ working backend. LOCAL prototype ≠ publi
 ### PROTO-ECOSPHERE-MAP — Living Ecosphere Map
 
 | Field | Value |
-| --- | --- |
+| -------------------- | ----------------------------------------------- |
 | Class | WORKING |
 | Canonical | none (`NEEDS_IDENTITY_REVIEW`) |
 | Related | univ_workstation_navigator |
@@ -85,7 +85,7 @@ Prototype truth: WORKING frontend ≠ working backend. LOCAL prototype ≠ publi
 ### PROTO-QA-RP — Z-Q&A&RP
 
 | Field | Value |
-| --- | --- |
+| -------------- | ----------------------------------------------------------- |
 | Class | PARTIAL |
 | Canonical | grounded_questions_qadp |
 | Related | fourteen_drp_protocols |
@@ -95,7 +95,7 @@ Prototype truth: WORKING frontend ≠ working backend. LOCAL prototype ≠ publi
 ### PROTO-HODP-SKK — HODP operator dashboard
 
 | Field | Value |
-| --- | --- |
+| -------------- | --------------------------------- |
 | Class | PRIVATE |
 | Canonical | none (`NEEDS_IDENTITY_REVIEW`) |
 | Flags | fetch, localhost, iframe |
@@ -106,7 +106,7 @@ Prototype truth: WORKING frontend ≠ working backend. LOCAL prototype ≠ publi
 ### PROTO-NAV-OPERATOR — Navigator operator cockpit
 
 | Field | Value |
-| --- | --- |
+| -------------- | -------------------------------------------------------------------------------- |
 | Class | WORKING |
 | Canonical | univ_workstation_navigator |
 | Recommendation | **KEEP_PRIVATE** |
@@ -115,7 +115,7 @@ Prototype truth: WORKING frontend ≠ working backend. LOCAL prototype ≠ publi
 ### PROTO-MORNING-COCKPIT — SSWS Morning Cockpit
 
 | Field | Value |
-| --- | --- |
+| -------------- | ------------------------------- |
 | Class | PRIVATE |
 | Recommendation | **KEEP_PRIVATE** |
 | Next action | Not a public operations centre. |
@@ -123,7 +123,7 @@ Prototype truth: WORKING frontend ≠ working backend. LOCAL prototype ≠ publi
 ### PROTO-CRYSTAL-DNA — Crystal DNA map
 
 | Field | Value |
-| --- | --- |
+| -------------- | ------------------------------------------------- |
 | Class | PARTIAL |
 | Identity | `NEEDS_IDENTITY_REVIEW` — not Golden Universe Map |
 | Recommendation | **KEEP_PRIVATE** |
@@ -131,7 +131,7 @@ Prototype truth: WORKING frontend ≠ working backend. LOCAL prototype ≠ publi
 ### PROTO-AMK-MAP — AMK-Goku Main Control Map
 
 | Field | Value |
-| --- | --- |
+| -------------- | ------------------------------------------------- |
 | Class | PRIVATE |
 | Recommendation | **KEEP_PRIVATE** |
 | Next action | Steward control map. Not the public Universe map. |
@@ -139,7 +139,7 @@ Prototype truth: WORKING frontend ≠ working backend. LOCAL prototype ≠ publi
 ### PROTO-UCCR-CANVAS — Universal Canvas lite
 
 | Field | Value |
-| --- | --- |
+| -------------- | -------------------------- |
 | Class | CONCEPT |
 | Recommendation | **NEEDS_MORE_EVIDENCE** |
 | Next action | Stay visibly lite/concept. |
@@ -147,7 +147,7 @@ Prototype truth: WORKING frontend ≠ working backend. LOCAL prototype ≠ publi
 ### PROTO-MDGEV — Z-MDGEV Eagle Eyes
 
 | Field | Value |
-| --- | --- |
+| -------------- | ---------------- |
 | Class | PRIVATE |
 | Flags | iframe |
 | Recommendation | **KEEP_PRIVATE** |
@@ -155,7 +155,7 @@ Prototype truth: WORKING frontend ≠ working backend. LOCAL prototype ≠ publi
 ### PROTO-CONSENT-EXPLAINER — Consent center / explainer
 
 | Field | Value |
-| --- | --- |
+| ---------------- | ------------------------------------------------------ |
 | Class | SIMULATED |
 | Live/private API | **yes** (`/api/consent`, `/api/audit`, including POST) |
 | Recommendation | **DO_NOT_PUBLISH** |
@@ -164,7 +164,7 @@ Prototype truth: WORKING frontend ≠ working backend. LOCAL prototype ≠ publi
 ### PROTO-DOCS-PUBLIC — docs/public HTML apps (4 files)
 
 | Field | Value |
-| --- | --- |
+| -------------- | -------------------------------------- |
 | Class | PRIVATE |
 | Flags | localhost, Windows path strings, fetch |
 | Recommendation | **KEEP_PRIVATE** |
@@ -172,7 +172,7 @@ Prototype truth: WORKING frontend ≠ working backend. LOCAL prototype ≠ publi
 ### PROTO-ZILWA-CLUSTER — ZILWA HTML (26 files)
 
 | Field | Value |
-| --- | --- |
+| -------------- | ---------------------------------------------------------------------------------------------------- |
 | Class | CONCEPT |
 | Recommendation | **KEEP_PRIVATE** |
 | Next action | Hospitality/life-hub cluster. Some surfaces touch family/children themes. Not first Golden exhibits. |
@@ -180,7 +180,7 @@ Prototype truth: WORKING frontend ≠ working backend. LOCAL prototype ≠ publi
 ### PROTO-LEGAL-WORKSTATION — Legal / Lawgrid
 
 | Field | Value |
-| --- | --- |
+| -------------- | ---------------- |
 | Class | PRIVATE |
 | Recommendation | **KEEP_PRIVATE** |
 

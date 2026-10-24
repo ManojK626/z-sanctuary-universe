@@ -21,16 +21,16 @@ GW-3A (Visual & Accessibility Acceptance) is the next local review slice. It doe
 
 ## Pages / surfaces created
 
-| Surface                            | Path                                                                        |
+| Surface | Path |
 | ---------------------------------- | --------------------------------------------------------------------------- |
-| Golden Home                        | `docs/golden-website/shell/index.html`                                      |
-| Z-Sanctuary Core page              | `docs/golden-website/shell/core.html`                                       |
-| Navigator page + sanitized preview | `docs/golden-website/shell/navigator.html`                                  |
-| Evidence Mode                      | Site-wide toggle (Show Me What's Real)                                      |
-| Shared CSS/JS                      | `docs/golden-website/shell/css/golden-website.css` · `js/golden-website.js` |
-| Public-safe adapter                | `data/golden-website/public/gw_approved_public_safe_adapter.json`           |
-| Shell data copy                    | `docs/golden-website/shell/data/gw-approved-public-safe.js`                 |
-| Architecture doc                   | `docs/golden-website/GW_3_GOLDEN_FOUNDATION_SHELL.md`                       |
+| Golden Home | `docs/golden-website/shell/index.html` |
+| Z-Sanctuary Core page | `docs/golden-website/shell/core.html` |
+| Navigator page + sanitized preview | `docs/golden-website/shell/navigator.html` |
+| Evidence Mode | Site-wide toggle (Show Me What's Real) |
+| Shared CSS/JS | `docs/golden-website/shell/css/golden-website.css` · `js/golden-website.js` |
+| Public-safe adapter | `data/golden-website/public/gw_approved_public_safe_adapter.json` |
+| Shell data copy | `docs/golden-website/shell/data/gw-approved-public-safe.js` |
+| Architecture doc | `docs/golden-website/GW_3_GOLDEN_FOUNDATION_SHELL.md` |
 
 ## Approved records consumed
 
@@ -38,7 +38,7 @@ GW-3A (Visual & Accessibility Acceptance) is the next local review slice. It doe
 
 ## Private records exposed
 
-**0**
+0
 
 Twin `records[]` length: **0**
 
@@ -48,13 +48,13 @@ GW-2A receipt seal, Core capsule classification, Twin metadata (classifications 
 
 ## Accessibility checks (static)
 
-| Check                          | Result                                                      |
+| Check | Result |
 | ------------------------------ | ----------------------------------------------------------- |
-| Skip link                      | Present                                                     |
-| `prefers-reduced-motion`       | Present                                                     |
-| Evidence toggle `aria-pressed` | Present                                                     |
-| Locked future items            | GW-3A: non-interactive list, not dead buttons               |
-| Interactive browser pass       | Completed in GW-3A (`node scripts/z_gw_3a_visual_pass.mjs`) |
+| Skip link | Present |
+| `prefers-reduced-motion` | Present |
+| Evidence toggle `aria-pressed` | Present |
+| Locked future items | GW-3A: non-interactive list, not dead buttons |
+| Interactive browser pass | Completed in GW-3A (`node scripts/z_gw_3a_visual_pass.mjs`) |
 
 ## Screenshots generated
 
@@ -69,15 +69,15 @@ See [PHASE_GW_3A_GREEN_RECEIPT.md](PHASE_GW_3A_GREEN_RECEIPT.md) (`docs/golden-w
 
 ## Validators
 
-| Command                               | Result                                                              |
+| Command | Result |
 | ------------------------------------- | ------------------------------------------------------------------- |
-| `node scripts/z_gw_3_shell_smoke.mjs` | **PASS**                                                            |
-| markdownlint GW-3 docs                | **PASS**                                                            |
-| `npm run dashboard:registry-verify`   | **GREEN**                                                           |
-| `npm run alias:audit`                 | **GREEN**                                                           |
-| `npm run security:data-leak-audit`    | **GREEN** (0 findings)                                              |
-| `npm run z:monster:registry-verify`   | **PASS**                                                            |
-| `npm run verify:md`                   | Repo-wide MD060 pre-existing. Not repaired. GW-3 markdown is clean. |
+| `node scripts/z_gw_3_shell_smoke.mjs` | **PASS** |
+| markdownlint GW-3 docs | **PASS** |
+| `npm run dashboard:registry-verify` | **GREEN** |
+| `npm run alias:audit` | **GREEN** |
+| `npm run security:data-leak-audit` | **GREEN** (0 findings) |
+| `npm run z:monster:registry-verify` | **PASS** |
+| `npm run verify:md` | Repo-wide MD060 pre-existing. Not repaired. GW-3 markdown is clean. |
 
 ## Rollback
 

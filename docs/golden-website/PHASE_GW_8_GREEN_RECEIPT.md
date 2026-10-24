@@ -16,7 +16,7 @@ GW-9 may build a local provider-free deterministic sandbox against this corpus. 
 ## Counts
 
 | Check | Result |
-| --- | --- |
+| ------------------------------ | ----------- |
 | Approved knowledge records | **22** |
 | Q&A bank required topics | **Present** |
 | Static test questions | **50** |
@@ -28,7 +28,7 @@ GW-9 may build a local provider-free deterministic sandbox against this corpus. 
 ## Surfaces / artifacts
 
 | Artifact | Path |
-| --- | --- |
+| ------------------ | --------------------------------------------------------------- |
 | Guide contract | `docs/golden-website/GW_8_GOLDEN_GUIDE_AI_CONTRACT.md` |
 | Approved corpus | `data/golden-website/public/gw8_approved_knowledge_corpus.json` |
 | Q&A bank | `docs/golden-website/GW_8_QA_BANK.md` |
@@ -57,7 +57,7 @@ Public corpus and routing contain no Windows paths, localhost, operator HTML, se
 ## Validators
 
 | Command | Result |
-| --- | --- |
+| ------------------------------------------------ | ---------------------- |
 | `node scripts/z_gw_8_build_knowledge_corpus.mjs` | **PASS** |
 | `node scripts/z_gw_8_knowledge_smoke.mjs` | **PASS** |
 | markdownlint GW-8 docs | **PASS** |

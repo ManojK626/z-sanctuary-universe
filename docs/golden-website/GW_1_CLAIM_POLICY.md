@@ -9,7 +9,7 @@ What the Golden Website **may say** after a record is actually published. GW-1 p
 ## Hard equalities
 
 | Must not confuse | Because |
-| ---------------- | ------- |
+| ----------------------------------------- | --------------------------------------------------------------- |
 | Public representation ≠ private authority | Federation is not a public command plane |
 | Prototype ≠ production | HTML is a prototype class, not a shipped backend |
 | Potential ≠ revenue | `POTENTIAL_NOT_VALIDATED` is not a sale |
@@ -20,7 +20,7 @@ What the Golden Website **may say** after a record is actually published. GW-1 p
 ## Evidence state → allowed public language
 
 | Overlay state | Must not be translated to | Allowed later (only after publication approval) |
-| ------------- | ------------------------- | ----------------------------------------------- |
+| ------------- | ------------------------------------------------------------------------------- | --------------------------------------------------------------- |
 | `VERIFIED` | Unused in GW-0A/GW-1. If ever used, still needs the **publication** proof gate. | Exact verified **claim**, with citation |
 | `SEALED` | “deployed”, “live in production”, “publicly launched” | “This slice is sealed in the sanctuary evidence record” |
 | `QUALIFIED` | “proven”, “production-ready”, “commercially validated” | “Present in the hub / qualified internally; not a public proof” |
@@ -31,7 +31,7 @@ What the Golden Website **may say** after a record is actually published. GW-1 p
 ## Prototype class → allowed public language
 
 | Prototype class | Must not imply |
-| --------------- | -------------- |
+| --------------- | -------------------------------------------------------------- |
 | `WORKING` | Backend production capability, billing, public edge, live data |
 | `PARTIAL` | Completeness |
 | `SIMULATED` | Real operations |
@@ -61,7 +61,7 @@ REVENUE_VALIDATED
 GW-0A/GW-1 remain at **POTENTIAL_NOT_VALIDATED**.
 
 | Status | Must not imply |
-| ------ | -------------- |
+| ------------------------------------- | ------------------------------------------------------- |
 | `POTENTIAL_NOT_VALIDATED` | Revenue, customers, market validation, “ready for sale” |
 | Any status before `REVENUE_VALIDATED` | Audited income |
 | `NOT_COMMERCIAL` | A product SKU |
@@ -69,7 +69,7 @@ GW-0A/GW-1 remain at **POTENTIAL_NOT_VALIDATED**.
 ## Identity claims
 
 | Topic | Rule |
-| ----- | ---- |
+| --------------- | --------------------------------------------------------------------------------- |
 | Public umbrella | **Z-Sanctuary Universe** |
 | Public site | **The Golden Website** — Gateway to the Z-Sanctuary Universe |
 | Public Q&A | **Golden Guide AI** — CTA: Ask Z-Sanctuary |

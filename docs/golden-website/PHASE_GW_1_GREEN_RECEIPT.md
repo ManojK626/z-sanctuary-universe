@@ -23,43 +23,43 @@ GW-2 (Public Evidence & Sanitization Preparation) opened separately for **two** 
 
 ## Files created
 
-| Artifact                                                    | Role                                      |
+| Artifact | Role |
 | ----------------------------------------------------------- | ----------------------------------------- |
-| `data/golden-website/public/gw_public_knowledge_twin.json`  | Public derivative schema; `records: []`   |
-| `data/golden-website/gw_publication_candidates.json`        | Internal review classifications           |
-| `data/golden-website/gw_identity_promotion_queue.json`      | 25 temporary IDs; promote = 0             |
-| `docs/golden-website/GW_1_PUBLICATION_CONTRACT.md`          | Private unless approved                   |
-| `docs/golden-website/GW_1_CLAIM_POLICY.md`                  | What copy may never say                   |
-| `docs/golden-website/GW_1_PUBLIC_NAMING_AND_SLUG_POLICY.md` | Locked Steward names + ID split           |
-| `docs/golden-website/PHASE_GW_1_GREEN_RECEIPT.md`           | This receipt                              |
-| `scripts/z_gw_1_build_knowledge_twin.mjs`                   | One-shot builder (not an npm verify gate) |
+| `data/golden-website/public/gw_public_knowledge_twin.json` | Public derivative schema; `records: []` |
+| `data/golden-website/gw_publication_candidates.json` | Internal review classifications |
+| `data/golden-website/gw_identity_promotion_queue.json` | 25 temporary IDs; promote = 0 |
+| `docs/golden-website/GW_1_PUBLICATION_CONTRACT.md` | Private unless approved |
+| `docs/golden-website/GW_1_CLAIM_POLICY.md` | What copy may never say |
+| `docs/golden-website/GW_1_PUBLIC_NAMING_AND_SLUG_POLICY.md` | Locked Steward names + ID split |
+| `docs/golden-website/PHASE_GW_1_GREEN_RECEIPT.md` | This receipt |
+| `scripts/z_gw_1_build_knowledge_twin.mjs` | One-shot builder (not an npm verify gate) |
 
 ## Files changed
 
-| Artifact                                           | Change                             |
+| Artifact | Change |
 | -------------------------------------------------- | ---------------------------------- |
 | `docs/golden-website/PHASE_GW_0A_GREEN_RECEIPT.md` | Steward seal (accepted; no deploy) |
-| `docs/INDEX.md`                                    | GW-1 pointer                       |
-| `docs/Z-MASTER-MODULES-REGISTER.md`                | §15 GW-1 rows                      |
+| `docs/INDEX.md` | GW-1 pointer |
+| `docs/Z-MASTER-MODULES-REGISTER.md` | §15 GW-1 rows |
 
 ## Counts
 
-| Metric                                              | Number                                                                   |
+| Metric | Number |
 | --------------------------------------------------- | ------------------------------------------------------------------------ |
-| GW-0A source overlay records                        | 160                                                                      |
-| Publication candidates                              | 160                                                                      |
-| Public Knowledge Twin records                       | **0**                                                                    |
-| Withheld records (safe metadata only)               | 160                                                                      |
-| `CANDIDATE_PUBLIC_SAFE`                             | **0**                                                                    |
-| `CANDIDATE_AFTER_SANITIZATION`                      | 2 (`z_sanctuary_core`, `univ_workstation_navigator`) — still unpublished |
-| `DATA_ROOM_ONLY`                                    | 2                                                                        |
-| `KEEP_PRIVATE`                                      | 72                                                                       |
-| `DO_NOT_PUBLISH`                                    | 17                                                                       |
-| `NEEDS_EVIDENCE`                                    | 45                                                                       |
-| `NEEDS_IDENTITY_REVIEW`                             | 22                                                                       |
-| Temporary IDs assessed                              | 25                                                                       |
-| Temporary IDs promoted                              | **0**                                                                    |
-| Promotion criteria fully met but still not promoted | 21                                                                       |
+| GW-0A source overlay records | 160 |
+| Publication candidates | 160 |
+| Public Knowledge Twin records | **0** |
+| Withheld records (safe metadata only) | 160 |
+| `CANDIDATE_PUBLIC_SAFE` | **0** |
+| `CANDIDATE_AFTER_SANITIZATION` | 2 (`z_sanctuary_core`, `univ_workstation_navigator`) — still unpublished |
+| `DATA_ROOM_ONLY` | 2 |
+| `KEEP_PRIVATE` | 72 |
+| `DO_NOT_PUBLISH` | 17 |
+| `NEEDS_EVIDENCE` | 45 |
+| `NEEDS_IDENTITY_REVIEW` | 22 |
+| Temporary IDs assessed | 25 |
+| Temporary IDs promoted | **0** |
+| Promotion criteria fully met but still not promoted | 21 |
 
 `CANDIDATE_*` is not publication. The two after-sanitization candidates remain withheld until human approval.
 
@@ -81,14 +81,14 @@ npm run alias:audit
 npm run security:data-leak-audit
 ```
 
-| Command                             | Result                                                                                                           |
+| Command | Result |
 | ----------------------------------- | ---------------------------------------------------------------------------------------------------------------- |
-| markdownlint GW-1 docs              | **PASS** (`docs/golden-website/GW_1*.md` + this receipt)                                                         |
-| `npm run dashboard:registry-verify` | **GREEN**                                                                                                        |
-| `npm run z:monster:registry-verify` | **PASS** (27 entries, 26 required)                                                                               |
-| `npm run alias:audit`               | **GREEN**                                                                                                        |
-| `npm run security:data-leak-audit`  | **GREEN** (0 findings)                                                                                           |
-| `npm run verify:md`                 | Repo-wide MD060 debt is **pre-existing**. Not repaired in GW-1. GW-1 markdown is linted separately and is clean. |
+| markdownlint GW-1 docs | **PASS** (`docs/golden-website/GW_1*.md` + this receipt) |
+| `npm run dashboard:registry-verify` | **GREEN** |
+| `npm run z:monster:registry-verify` | **PASS** (27 entries, 26 required) |
+| `npm run alias:audit` | **GREEN** |
+| `npm run security:data-leak-audit` | **GREEN** (0 findings) |
+| `npm run verify:md` | Repo-wide MD060 debt is **pre-existing**. Not repaired in GW-1. GW-1 markdown is linted separately and is clean. |
 
 ## Unresolved blockers
 
@@ -112,4 +112,4 @@ npm run security:data-leak-audit
 
 ## Sign-off line
 
-Operator: ****\*\*****\_\_\_\_****\*\***** Date: \***\*\_\_\*\***
+Operator: \***\*\*\*\*\***\_\_\_\_\***\*\*\*\*\*** Date: \***\*\_\_\*\***

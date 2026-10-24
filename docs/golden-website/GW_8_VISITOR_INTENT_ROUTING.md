@@ -9,7 +9,7 @@ Intent changes **presentation and routing**, not factual truth. The same evidenc
 ## Intent classes
 
 | Intent | Typical need | Default local routes |
-| --- | --- | --- |
+| ---------------------- | --------------------- | -------------------------------------------------------------- |
 | PUBLIC_EXPLORATION | What is this? | `index.html`, `portfolio.html`, `gallery.html` |
 | INVESTOR | Capital / return | Commercial QUALIFY + `index.html`. No valuation. |
 | BUSINESS_PARTNER | Collaboration | Capability pages + limitations. No partnership offer invented. |

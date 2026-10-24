@@ -8,7 +8,7 @@ Use together with [GW_13_HUMAN_SCREEN_READER_ACCEPTANCE.md](GW_13_HUMAN_SCREEN_R
 Frozen shell: `docs/golden-website/shell/index.html` (hashes in the PREP-1 JSON). Record if hashes no longer match.
 
 | Evidence | State |
-| --- | --- |
+| ------------------ | ------------------------------------------------------------- |
 | Tester | Human — _not recorded_ |
 | Screen reader | exact name/version — _not recorded_ |
 | Browser | exact name/version — _not recorded_ |

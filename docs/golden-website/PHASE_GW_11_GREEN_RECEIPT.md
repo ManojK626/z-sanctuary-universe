@@ -13,16 +13,16 @@ GW-12 may prepare a local AI Integrity & Anti-Hallucination Challenge Layer. It 
 
 ## Counts
 
-| Check                          | Result |
+| Check | Result |
 | ------------------------------ | ------ |
-| Gateway pathways               | **5**  |
-| Investor Q&A                   | **15** |
-| Partner Q&A                    | **9**  |
-| Unsupported commercial claims  | **0**  |
-| Valuation claims               | **0**  |
-| External forms / network calls | **0**  |
-| Private browser exposure       | **0**  |
-| Twin `records[]`               | **0**  |
+| Gateway pathways | **5** |
+| Investor Q&A | **15** |
+| Partner Q&A | **9** |
+| Unsupported commercial claims | **0** |
+| Valuation claims | **0** |
+| External forms / network calls | **0** |
+| Private browser exposure | **0** |
+| Twin `records[]` | **0** |
 
 Pathways: PILOT WITH US, RESEARCH WITH US, PARTNER WITH US, INVESTOR EXPLORATION, CONTRIBUTE EXPERTISE.
 
@@ -30,13 +30,13 @@ GW-9 50/50 and GW-10 critic/consistency/red-team suites still PASS. Guide invest
 
 ## Surfaces / artifacts
 
-| Artifact     | Path                                                           |
+| Artifact | Path |
 | ------------ | -------------------------------------------------------------- |
-| Policy       | `docs/golden-website/GW_11_INVESTOR_PARTNER_GATEWAY_POLICY.md` |
-| Investor Q&A | `docs/golden-website/GW_11_INVESTOR_QA.md`                     |
-| Partner Q&A  | `docs/golden-website/GW_11_PARTNER_QA.md`                      |
-| Gateway page | `docs/golden-website/shell/gateway.html`                       |
-| Content JSON | `data/golden-website/public/gw11_gateway_content.json`         |
+| Policy | `docs/golden-website/GW_11_INVESTOR_PARTNER_GATEWAY_POLICY.md` |
+| Investor Q&A | `docs/golden-website/GW_11_INVESTOR_QA.md` |
+| Partner Q&A | `docs/golden-website/GW_11_PARTNER_QA.md` |
+| Gateway page | `docs/golden-website/shell/gateway.html` |
+| Content JSON | `data/golden-website/public/gw11_gateway_content.json` |
 
 ## Security results
 
@@ -57,18 +57,18 @@ Keyboard skip, 1440 / 768 / 390 overflow, reduced motion, 44px nav targets: **PA
 
 ## Validators
 
-| Command                                          | Result                 |
+| Command | Result |
 | ------------------------------------------------ | ---------------------- |
-| `node scripts/z_gw_11_build_gateway_payload.mjs` | **PASS**               |
-| `node scripts/z_gw_11_gateway_smoke.mjs`         | **PASS**               |
-| `node scripts/z_gw_11_visual_pass.mjs`           | **PASS**               |
-| `node scripts/z_gw_9_run_behavior_suite.mjs`     | **PASS** 50/50         |
-| `node scripts/z_gw_10_run_critic_suite.mjs`      | **PASS** 44/44 + 20/20 |
-| markdownlint GW-11 docs                          | **PASS**               |
-| `npm run dashboard:registry-verify`              | **GREEN**              |
-| `npm run alias:audit`                            | **GREEN**              |
-| `npm run security:data-leak-audit`               | **GREEN** (0 findings) |
-| `npm run z:monster:registry-verify`              | **PASS**               |
+| `node scripts/z_gw_11_build_gateway_payload.mjs` | **PASS** |
+| `node scripts/z_gw_11_gateway_smoke.mjs` | **PASS** |
+| `node scripts/z_gw_11_visual_pass.mjs` | **PASS** |
+| `node scripts/z_gw_9_run_behavior_suite.mjs` | **PASS** 50/50 |
+| `node scripts/z_gw_10_run_critic_suite.mjs` | **PASS** 44/44 + 20/20 |
+| markdownlint GW-11 docs | **PASS** |
+| `npm run dashboard:registry-verify` | **GREEN** |
+| `npm run alias:audit` | **GREEN** |
+| `npm run security:data-leak-audit` | **GREEN** (0 findings) |
+| `npm run z:monster:registry-verify` | **PASS** |
 
 ## Rollback
 

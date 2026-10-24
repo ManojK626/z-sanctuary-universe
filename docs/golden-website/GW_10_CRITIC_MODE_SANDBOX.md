@@ -80,7 +80,7 @@ Criticism ≠ private disclosure. Requests for Zuno memory, HODP, ICIS, NAS, ove
 
 POTENTIAL_NOT_VALIDATED remains potential. No guaranteed returns, valuations, customer counts, revenue figures, or personal financial advice.
 
-Investor framing allowed: *What public evidence is still missing for stronger diligence?*
+Investor framing allowed: _What public evidence is still missing for stronger diligence?_
 
 ## Known limitations
 

@@ -37,7 +37,7 @@ A read-only way to look at sanctuary services and documents without running auto
 ## Public-safe evidence references
 
 | Reference | Supports | Does not support |
-| --------- | -------- | ---------------- |
+| -------------------------------------------------------------------------- | ------------------------------------- | ---------------------------------------------------------------- |
 | Universal Workstation Navigator green receipt (NAV-1), cited by title only | Read-only cockpit intent was recorded | Public website launch, live orchestration, or production backend |
 
 ## Safe screenshots / prototype references
@@ -67,13 +67,13 @@ Classification is `APPROVED_PUBLIC_SAFE`. **Publication is NOT_YET_AUTHORIZED.**
 ## Proof gates
 
 | Gate | Result |
-| ---- | ------ |
+| --------------------------- | ------------------------ |
 | Identity clear | PASS |
 | Claim wording safe | PASS |
 | Evidence attached | PASS |
 | Security sanitization green | PASS |
 | Human approval explicit | **GRANTED** (2026-08-27) |
 
-**Steward classification: APPROVED_PUBLIC_SAFE**
+## Steward classification: APPROVED_PUBLIC_SAFE
 
-**PUBLICATION DECISION: CLASSIFICATION APPROVED · PUBLICATION NOT YET AUTHORIZED**
+## PUBLICATION DECISION: CLASSIFICATION APPROVED · PUBLICATION NOT YET AUTHORIZED

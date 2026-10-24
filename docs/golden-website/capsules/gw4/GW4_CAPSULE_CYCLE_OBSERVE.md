@@ -32,7 +32,7 @@ QUALIFIED. QUALIFIED is not VERIFIED. SEALED companion slices elsewhere are not 
 ## Public-safe evidence references
 
 | Reference | Supports | Does not support |
-| --------- | -------- | ---------------- |
+| ----------------------------------- | -------------------------------------- | --------------------------- |
 | Cycle Observe system law | Observer must not execute queued tasks | Public SaaS monitoring |
 | Local read-only dashboard prototype | Operators can view a status UI locally | Public production dashboard |
 

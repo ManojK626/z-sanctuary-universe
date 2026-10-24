@@ -8,7 +8,7 @@
 
 ## Verdict
 
-**NOT_READY_BLOCKERS_REMAIN**
+NOT_READY_BLOCKERS_REMAIN
 
 READY_FOR_CONTROLLED_PUBLIC_PILOT requires every hard gate to PASS, including human NVDA/VoiceOver. A NOT_READY_BLOCKERS_REMAIN verdict is a successful audit.
 
@@ -19,7 +19,7 @@ READY_FOR_CONTROLLED_PUBLIC_PILOT requires every hard gate to PASS, including hu
 ## Hard gates
 
 | Gate | Status | Blocks READY | Notes |
-| --- | --- | --- | --- |
+| ---------------------------- | ------------- | ------------ | -------------------------------------------------------------------------------------------------------------------------------------- |
 | gate_1_cross_page_truth | **PASS** | no | Adapter evidence states plus page-truth checks including commercial-potential law. Contradictions=0. |
 | gate_2_navigation | **PASS** | no | All 14 HTML pages, required nav, exhibit image src. |
 | gate_3_public_private | **PASS** | no | Twin records[]=0, shell leak scan, npm run security:data-leak-audit. |
@@ -61,7 +61,7 @@ Revenue, valuation, returns, production-ready status, VERIFIED badges without ga
 ## Suites re-run
 
 | Command | Result |
-| --- | --- |
+| ----------------------------------------- | -------- |
 | `scripts/z_gw_7_exhibit_smoke.mjs` | **PASS** |
 | `scripts/z_gw_9_run_behavior_suite.mjs` | **PASS** |
 | `scripts/z_gw_10_run_critic_suite.mjs` | **PASS** |

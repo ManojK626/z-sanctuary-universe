@@ -42,7 +42,7 @@ Six GW-4A approved records are **modules/content** on the doorway. Promoting the
 ## Aliases / historical identities
 
 | Name | State |
-| --- | --- |
+| ------------------------------------- | ------------------------------------------------------------------------------------ |
 | The Golden Website | CONFIRMED alias of doorway |
 | Gateway to the Z-Sanctuary Universe | CONFIRMED subtitle/alias of doorway |
 | Golden Universe Map / Golden Guide AI | OVERLAY surfaces, not extra properties |
@@ -72,7 +72,7 @@ See registry `portfolio_evidence_gaps`. Highest value: domain confirmation, GW-1
 ## Conflicts with prior assumptions
 
 | Assumption | Evidence |
-| --- | --- |
+| ---------------------------------- | --------------------------------------- |
 | Many Golden Websites already exist | **False** in this hub |
 | Overlay rows are websites | **False** — they are universe inventory |
 | Programme membership = GOLDEN | **False** — Doctrine 3 |

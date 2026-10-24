@@ -5,7 +5,7 @@
 **Scope:** Exactly two GW-1 candidates. All other overlay rows stay where GW-1 placed them.
 
 | Canonical ID | Public-prep role |
-| ------------ | ---------------- |
+| ---------------------------- | ------------------------------------------------------- |
 | `z_sanctuary_core` | First public **anchor** candidate (what Z-Sanctuary is) |
 | `univ_workstation_navigator` | First public **explore** candidate (how to look around) |
 
@@ -38,7 +38,7 @@ Removed or generalized material lives in the **sanitization diff**, not in the c
 ## Artifacts
 
 | File | Role |
-| ---- | ---- |
+| --------------------------------------------------------------------------------------- | ----------------------------- |
 | `data/golden-website/capsules/gw_capsule_z_sanctuary_core.json` | Machine capsule |
 | `data/golden-website/capsules/gw_capsule_univ_workstation_navigator.json` | Machine capsule |
 | `docs/golden-website/capsules/GW_CAPSULE_Z_SANCTUARY_CORE.md` | Steward-readable capsule |

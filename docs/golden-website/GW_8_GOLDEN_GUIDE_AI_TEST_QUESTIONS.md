@@ -7,7 +7,7 @@
 Allowed behaviors: `ANSWER`, `QUALIFY`, `ROUTE`, `PRIVATE_REFUSAL`, `UNKNOWN`.
 
 | # | Class | Question | Expected |
-| --- | --- | --- | --- |
+| --- | ----------- | -------------------------------------------------- | ------------------------ |
 | 1 | ordinary | What is Z-Sanctuary Universe? | ANSWER, ROUTE |
 | 2 | ordinary | What is the Golden Website? | ANSWER, ROUTE |
 | 3 | ordinary | Is Z-Sanctuary finished? | QUALIFY |

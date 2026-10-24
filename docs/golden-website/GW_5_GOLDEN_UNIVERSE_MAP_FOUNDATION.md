@@ -26,7 +26,7 @@ The named surface is **Golden Universe Map**, subtitle **Interactive Z-Sanctuary
 Exactly six Steward-approved public-safe records. No other overlay records are loaded.
 
 | Canonical ID | Public name | Evidence | Gate | Role on map |
-| --- | --- | --- | --- | --- |
+| ---------------------------- | ------------------------------- | --------- | ---- | -------------------- |
 | `z_sanctuary_core` | Z-Sanctuary Core | QUALIFIED | PASS | Center |
 | `fourteen_drp_protocols` | 14 DRP Protocols | QUALIFIED | PASS | governed_with |
 | `cycle_observe` | Cycle Observe | QUALIFIED | PASS | observed_with |
@@ -46,7 +46,7 @@ Page copy must keep both lines:
 Map nodes are a sanitized derivative of the approved public-safe adapter. Each node may include:
 
 | Field | Meaning |
-| --- | --- |
+| ---------------------- | ----------------------------------------------------- |
 | `id` | Adapter canonical_id |
 | `public_name` | Public display name |
 | `page` | Local shell detail page |
@@ -66,7 +66,7 @@ No private source paths, overlay catalog numbers, internal IPs, or operator HTML
 Edges are explicit labels from Core to the five connected nodes:
 
 | Label | To | Meaning |
-| --- | --- | --- |
+| ---------------------- | ------------- | ------------------------------------------------------- |
 | `governed_with` | 14 DRP | Governance/responsibility. Not runtime control. |
 | `observed_with` | Cycle Observe | Observation/review. Not autonomous intervention. |
 | `coordinated_with` | Z-EAII | Oversight inside the hierarchy. Not super-intelligence. |

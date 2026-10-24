@@ -21,7 +21,7 @@ An `e2e/gw-3a-visual-acceptance.spec.js` exists for the hub Playwright suite. Th
 ## Acceptance questions
 
 | Question | Result | Notes |
-| -------- | ------ | ----- |
+| ------------------------------------------------------------------ | ------- | ---------------------------------------------------------------------------------------------------------- |
 | Can a first-time visitor understand Z-Sanctuary in under a minute? | **Yes** | Home shows site name, gateway subtitle, approved Core sentence, and two journey links. |
 | Can they distinguish QUALIFIED from VERIFIED? | **Yes** | Explicit Home line plus Core pill **Not VERIFIED**. Core remains QUALIFIED. |
 | Is Evidence Mode obvious? | **Yes** | Header control and Home CTA. Board appears and is announced. Button becomes **Evidence mode on**. |

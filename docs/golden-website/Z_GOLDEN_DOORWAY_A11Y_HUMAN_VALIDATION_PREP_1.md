@@ -34,10 +34,10 @@ Do not publish. Do not use a public host.
 
 ## How to run (human)
 
-1. Preferred first pass (Windows): **NVDA** + Chrome or Edge.  
-2. Optional second pass: VoiceOver + Safari on iPhone or iPad.  
-3. Prefer an experienced screen-reader user. A sighted person switching NVDA on is not equivalent to lived SR usability.  
-4. Follow the representative journey. Preserve actual words. Record friction even if the journey completes.  
+1. Preferred first pass (Windows): **NVDA** + Chrome or Edge.
+2. Optional second pass: VoiceOver + Safari on iPhone or iPad.
+3. Prefer an experienced screen-reader user. A sighted person switching NVDA on is not equivalent to lived SR usability.
+4. Follow the representative journey. Preserve actual words. Record friction even if the journey completes.
 5. Fill the GW-13 form **and** the evidence template. Do not invent an accessibility score.
 
 ## Representative journey (frozen order)
@@ -58,11 +58,11 @@ Home (index.html)
 ## What to observe
 
 | Area | Ask |
-| --- | --- |
+| ---------------- | ----------------------------------------------------------------------------------------------- |
 | Keyboard-only | Can the journey be completed without a pointer? Skip link reaches `main`? |
 | Headings | Do h1/h2 sequences make sense as a list? |
 | Landmarks | Are header, `nav` (Primary), `main`, footer understandable? |
-| Accessible names | Do links/buttons match what they do? (Source *expectations* below are markup, not human proof.) |
+| Accessible names | Do links/buttons match what they do? (Source _expectations_ below are markup, not human proof.) |
 | Focus order | Does focus follow a sensible reading order? Gallery/map close return focus? |
 | Forms | Guide: label “Your question”, submit “Ask Z-Sanctuary”, mode radios announced? |
 | Status | Evidence mode and Guide answers announced (`aria-live`)? |
@@ -88,7 +88,7 @@ The human records what the screen reader **actually** said.
 ## Automated vs human
 
 | Layer | State now |
-| --- | --- |
+| --------------------------------------------------------------------------------- | ----------- |
 | GW-13 machine a11y (keyboard, skip, 44px, live regions, reduced motion, overflow) | PASS |
 | Human NVDA / VoiceOver | **NOT_RUN** |
 | Accessibility certified | **false** |
@@ -98,7 +98,7 @@ Do not treat Chromium automation as a screen reader.
 ## After the session
 
 | Human overall | Next |
-| --- | --- |
+| ---------------- | ---------------------------------------------------------- |
 | PASS | GW-13A closure **review** only — still not deploy |
 | PASS WITH ISSUES | Classify BLOCKERS / MAJOR / MINOR; friction stays evidence |
 | FAIL | **A11Y-FIX-ONLY** on observed issues, then human retest |

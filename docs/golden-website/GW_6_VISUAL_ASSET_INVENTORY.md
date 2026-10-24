@@ -12,7 +12,7 @@ Visual truth labels used: `REAL UI CAPTURE`, `CONCEPT MOCKUP`, `FUTURE VISION`. 
 ## Counts
 
 | Class | Count |
-| --- | ---: |
+| ------------------------ | -----: |
 | UI_SCREENSHOT | 23 |
 | DIAGRAM | 1 |
 | OTHER | 2 |
@@ -30,7 +30,7 @@ All 23 PNGs are **REAL UI CAPTURE** of the local Golden Website shell. They were
 GW-3A shots are **historical** (two-record shell). GW-4A and GW-5 shots are **current**.
 
 | ID | Title | Canonical record | Time | Evidence of depicted | First exhibit |
-| --- | --- | --- | --- | --- | --- |
+| ---------- | --------------------------------- | -------------------------- | ---------- | -------------------- | ------------- |
 | VIS-GW-001 | Home desktop (GW-3A) | z_sanctuary_core | historical | QUALIFIED | no |
 | VIS-GW-002 | Evidence Mode board (GW-3A) | z_sanctuary_core | historical | QUALIFIED | **yes** |
 | VIS-GW-003 | Home Evidence Mode (GW-3A) | z_sanctuary_core | historical | QUALIFIED | no |
@@ -62,7 +62,7 @@ Repo-relative paths live only in the internal JSON. Do not paste them into a fut
 ### VIS-ICIS-FIXTURES
 
 | Field | Value |
-| --- | --- |
+| -------------------- | -------------------------------------------------------- |
 | Asset type | DIAGRAM |
 | Source | icis |
 | Canonical record | none (`NEEDS_IDENTITY_REVIEW`) |
@@ -77,7 +77,7 @@ Repo-relative paths live only in the internal JSON. Do not paste them into a fut
 ### VIS-ICIS-NATURAL-IMAGES
 
 | Field | Value |
-| --- | --- |
+| ---------------- | -------------------------------------------------------------------- |
 | Asset type | OTHER |
 | Source | icis |
 | Canonical record | none |
@@ -88,7 +88,7 @@ Repo-relative paths live only in the internal JSON. Do not paste them into a fut
 ### VIS-AUTO-SCREENSHOT-DOCTRINE
 
 | Field | Value |
-| --- | --- |
+| -------------- | ---------------------------------------------- |
 | Asset type | OTHER |
 | Source | hub-docs |
 | Time | future |
@@ -100,7 +100,7 @@ Repo-relative paths live only in the internal JSON. Do not paste them into a fut
 ### VIS-RECOVERY-LANE
 
 | Field | Value |
-| --- | --- |
+| -------------- | --------------------------------------------------------------------------------- |
 | Asset type | WIDESCREEN_MOCKUP |
 | Source | not in this clone |
 | Recommendation | **NEEDS_IDENTITY_REVIEW** |

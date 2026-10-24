@@ -19,21 +19,21 @@ GW-5 (Golden Universe Map Foundation) may turn these six relationships into a lo
 
 ## Unapproved records exposed
 
-**0**
+0
 
 Twin `records[]` length: **0** (classification metadata only).
 
 ## Pages / cards added
 
-| Surface                        | Path                                                              |
+| Surface | Path |
 | ------------------------------ | ----------------------------------------------------------------- |
-| Portfolio Preview              | `docs/golden-website/shell/portfolio.html`                        |
-| 14 DRP Protocols               | `docs/golden-website/shell/drp.html`                              |
-| Z-EAII                         | `docs/golden-website/shell/eaii.html`                             |
-| Grounded Questions (QADP)      | `docs/golden-website/shell/qadp.html`                             |
-| Cycle Observe                  | `docs/golden-website/shell/observe.html`                          |
-| Home portfolio + relationships | `docs/golden-website/shell/index.html`                            |
-| Adapter                        | `data/golden-website/public/gw_approved_public_safe_adapter.json` |
+| Portfolio Preview | `docs/golden-website/shell/portfolio.html` |
+| 14 DRP Protocols | `docs/golden-website/shell/drp.html` |
+| Z-EAII | `docs/golden-website/shell/eaii.html` |
+| Grounded Questions (QADP) | `docs/golden-website/shell/qadp.html` |
+| Cycle Observe | `docs/golden-website/shell/observe.html` |
+| Home portfolio + relationships | `docs/golden-website/shell/index.html` |
+| Adapter | `data/golden-website/public/gw_approved_public_safe_adapter.json` |
 
 Evidence Mode lists all **six** records. QUALIFIED is not rewritten as VERIFIED.
 
@@ -46,12 +46,12 @@ Evidence Mode lists all **six** records. QUALIFIED is not rewritten as VERIFIED.
 
 ## Accessibility / browser
 
-| Check                                  | Result                             |
+| Check | Result |
 | -------------------------------------- | ---------------------------------- |
-| `node scripts/z_gw_4a_visual_pass.mjs` | **PASS**                           |
-| Overflow 1440 / 768 / 390              | **PASS** (none)                    |
-| Keyboard skip / evidence               | **PASS**                           |
-| NVDA / VoiceOver                       | Still required before public pilot |
+| `node scripts/z_gw_4a_visual_pass.mjs` | **PASS** |
+| Overflow 1440 / 768 / 390 | **PASS** (none) |
+| Keyboard skip / evidence | **PASS** |
+| NVDA / VoiceOver | Still required before public pilot |
 
 ## Security findings
 
@@ -66,16 +66,16 @@ Private exposure **0**. No iframe, no local IPs, no operator HTML in the shell.
 
 ## Validators
 
-| Command                                         | Result                 |
+| Command | Result |
 | ----------------------------------------------- | ---------------------- |
-| `node scripts/z_gw_4a_build_public_adapter.mjs` | **PASS** (6 records)   |
-| `node scripts/z_gw_4a_shell_smoke.mjs`          | **PASS**               |
-| `node scripts/z_gw_4a_visual_pass.mjs`          | **PASS**               |
-| markdownlint GW-4A receipt                      | **PASS**               |
-| `npm run dashboard:registry-verify`             | **GREEN**              |
-| `npm run alias:audit`                           | **GREEN**              |
-| `npm run security:data-leak-audit`              | **GREEN** (0 findings) |
-| `npm run z:monster:registry-verify`             | **PASS**               |
+| `node scripts/z_gw_4a_build_public_adapter.mjs` | **PASS** (6 records) |
+| `node scripts/z_gw_4a_shell_smoke.mjs` | **PASS** |
+| `node scripts/z_gw_4a_visual_pass.mjs` | **PASS** |
+| markdownlint GW-4A receipt | **PASS** |
+| `npm run dashboard:registry-verify` | **GREEN** |
+| `npm run alias:audit` | **GREEN** |
+| `npm run security:data-leak-audit` | **GREEN** (0 findings) |
+| `npm run z:monster:registry-verify` | **PASS** |
 
 ## Rollback
 
