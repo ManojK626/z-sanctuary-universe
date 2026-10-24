@@ -4705,3 +4705,95 @@ body.z-dashboard-organism.z-dash-a11y-large .z-top-a11y-chip input {
   width: 1.15rem;
   height: 1.15rem;
 }
+
+/* Z-AnyDevice adaptive prototype 0.1 — canonical dashboard host only. */
+body.z-anydevice-adaptive {
+  min-height: 100vh;
+  min-height: 100svh;
+  min-height: 100dvh;
+  padding-top: max(1rem, env(safe-area-inset-top, 0px));
+  padding-right: max(1rem, env(safe-area-inset-right, 0px));
+  padding-bottom: max(1rem, env(safe-area-inset-bottom, 0px));
+  padding-left: max(1rem, env(safe-area-inset-left, 0px));
+}
+
+body.z-anydevice-adaptive .dashboard-edge-bar.edge-top {
+  top: max(0.75rem, env(safe-area-inset-top, 0px));
+}
+
+body.z-anydevice-adaptive.z-layout-mobile .dashboard-edge-bar.edge-top,
+body.z-anydevice-adaptive.z-layout-compact .dashboard-edge-bar.edge-top {
+  left: max(0.35rem, env(safe-area-inset-left, 0px)) !important;
+  right: max(0.35rem, env(safe-area-inset-right, 0px)) !important;
+  width: auto !important;
+  overflow-x: auto;
+}
+
+body.z-anydevice-adaptive.z-layout-mobile .z-display-morph-strip,
+body.z-anydevice-adaptive.z-layout-compact .z-display-morph-strip,
+body.z-anydevice-adaptive.z-layout-mobile .z-indicator-bar,
+body.z-anydevice-adaptive.z-layout-compact .z-indicator-bar,
+body.z-anydevice-adaptive.z-layout-mobile .z-tools-bar,
+body.z-anydevice-adaptive.z-layout-compact .z-tools-bar,
+body.z-anydevice-adaptive.z-layout-mobile .z-accessibility-bar,
+body.z-anydevice-adaptive.z-layout-compact .z-accessibility-bar,
+body.z-anydevice-adaptive.z-layout-mobile .z-top-indicator-panel,
+body.z-anydevice-adaptive.z-layout-compact .z-top-indicator-panel {
+  max-width: 100%;
+  min-width: 0;
+  overflow-x: auto;
+}
+
+body.z-anydevice-adaptive .z-status-rail {
+  max-height: calc(100vh - 6.5rem);
+  max-height: calc(100dvh - 6.5rem - env(safe-area-inset-bottom, 0px));
+}
+
+body.z-anydevice-adaptive .z-skip-link:focus {
+  left: max(0.5rem, env(safe-area-inset-left, 0px));
+  top: max(0.5rem, env(safe-area-inset-top, 0px));
+}
+
+body.z-anydevice-adaptive .dashboard-edge-bar button:focus-visible,
+body.z-anydevice-adaptive .z-panel button:focus-visible,
+body.z-anydevice-adaptive .z-panel a:focus-visible {
+  outline: 2px solid #7cb3ff;
+  outline-offset: 2px;
+}
+
+@media (pointer: coarse) {
+  body.z-anydevice-adaptive .dashboard-edge-bar.edge-top button,
+  body.z-anydevice-adaptive .z-panel-header .z-panel-btn {
+    min-height: 44px;
+    min-width: 44px;
+  }
+}
+
+body.z-anydevice-adaptive #zAmkIndicatorsPanel,
+body.z-anydevice-adaptive #zAmkNotificationsPanel {
+  container-type: inline-size;
+  container-name: z-advisory;
+  min-width: 0;
+}
+
+@container z-advisory (max-width: 28rem) {
+  #zAmkIndicatorsPanel h3,
+  #zAmkNotificationsPanel h3,
+  .z-amk-notifications-disclaimer {
+    min-width: 0;
+    overflow-wrap: anywhere;
+  }
+}
+
+@media (orientation: landscape) and (max-height: 500px) {
+  body.z-anydevice-adaptive .dashboard-edge-bar.edge-top {
+    top: max(0.25rem, env(safe-area-inset-top, 0px));
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  body.z-anydevice-adaptive .dashboard-edge-bar,
+  body.z-anydevice-adaptive .z-panel {
+    transition: none;
+  }
+}
