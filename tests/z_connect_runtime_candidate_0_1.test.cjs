@@ -39,7 +39,8 @@ function sourceGuard() {
   check(html.includes('LOCAL_RUNTIME_CANDIDATE'), 'authority label missing');
   check(!/live Z-Connect|canonical runtime/i.test(joined), 'authority overclaim present');
   check(!/fetch\(|localStorage|sessionStorage|indexedDB|document\.cookie|WebSocket|XMLHttpRequest/.test(joined), 'network or persistence API present');
-  check(!joined.includes('z_adaptive_runtime'), 'adaptive engine attached');
+  check(html.includes('../../core/z_adaptive_runtime.cjs'), 'shared runtime opt-in missing');
+  check(!/\b860\b|\b1280\b|\b1600\b|layoutFromWidth|matchMedia|allowDiscoveryJourney|consentRecord/.test(read('z_anydevice_z_connect_candidate_host.js') + read('z-anydevice-z-connect-candidate-host.css')), 'second adaptive engine or consent write');
   check(html.includes('Reflect is not part of this foundation.'), 'reflect placeholder missing');
 }
 

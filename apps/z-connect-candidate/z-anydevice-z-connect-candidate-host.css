@@ -1,0 +1,23 @@
+/* Presentation for the local Z-Connect candidate host.
+ * Layout class comes from the shared runtime. This file does not classify width.
+ */
+body.z-anydevice-adaptive .banner,
+body.z-anydevice-adaptive main {
+  max-width: 100%;
+  min-width: 0;
+}
+
+body.z-anydevice-adaptive .choice {
+  max-width: 100%;
+}
+
+body.z-anydevice-adaptive p,
+body.z-anydevice-adaptive h1,
+body.z-anydevice-adaptive h2,
+body.z-anydevice-adaptive code {
+  overflow-wrap: anywhere;
+}
+
+body.z-anydevice-adaptive a.skip {
+  display: inline-block;
+}

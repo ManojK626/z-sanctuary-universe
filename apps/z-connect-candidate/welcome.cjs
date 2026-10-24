@@ -13,6 +13,20 @@
   var boundary = document.getElementById('discovery-boundary');
   var welcome = document.getElementById('welcome-panel');
 
+  globalThis.ZConnectCandidateView = function () {
+    var record = visit.consentRecord;
+    return {
+      authority: visit.authority,
+      allowDiscoveryJourney: visit.privacySettings.allowDiscoveryJourney === true,
+      scopeId: record && record.scope ? record.scope.scopeId : null,
+      surface: visit.surface,
+      discoveryStatus: visit.discoveryStatus,
+      penalty: visit.penalty,
+      persistence: visit.persistence,
+      dataClass: visit.dataClass,
+    };
+  };
+
   function paint() {
     var open = api.formalDiscoveryAllowed(visit) && visit.surface === 'discovery_boundary';
     boundary.hidden = !open;

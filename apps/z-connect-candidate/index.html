@@ -2,12 +2,15 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
   <title>Z-Connect — local runtime candidate</title>
   <meta name="description" content="LOCAL_RUNTIME_CANDIDATE. Contract-derived Welcome foundation. Not production. Not a public deployment.">
   <link rel="stylesheet" href="candidate.css">
+  <link rel="stylesheet" href="../../interface/z_adaptive_foundation.css">
+  <link rel="stylesheet" href="z-anydevice-z-connect-candidate-host.css">
 </head>
-<body>
+<body class="z-anydevice-adaptive">
+  <a class="skip" href="#welcome-panel">Skip to Welcome</a>
   <p class="banner">LOCAL_RUNTIME_CANDIDATE · not production · not deployed</p>
   <main>
     <section id="welcome-panel">
@@ -30,7 +33,7 @@
       <h2>Optional Discovery</h2>
       <p>The formal Discovery Journey stays closed until you grant <code>discovery_journey</code> for this visit. The box starts empty. An empty box is not agreement.</p>
       <div class="choice">
-        <label>
+        <label id="discovery-consent-control">
           <input id="discovery-consent" type="checkbox">
           I grant discovery_journey for this visit only.
         </label>
@@ -44,9 +47,11 @@
       <p>The formal Discovery Journey gate is open for this visit. The journey itself is not implemented here. No profile is written. No model is called.</p>
       <button type="button" id="back-welcome">Return to Welcome</button>
     </section>
-    <p>Reflect is not part of this foundation.</p>
+    <p id="reflect-placeholder">Reflect is not part of this foundation.</p>
   </main>
   <script src="candidate-state.cjs"></script>
   <script src="welcome.cjs"></script>
+  <script src="../../core/z_adaptive_runtime.cjs"></script>
+  <script src="z_anydevice_z_connect_candidate_host.js"></script>
 </body>
 </html>
