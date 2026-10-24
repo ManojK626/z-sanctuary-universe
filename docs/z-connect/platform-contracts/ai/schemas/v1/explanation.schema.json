@@ -1,0 +1,47 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://z-sanctuary.local/z-connect/schemas/v1/ai-explanation.json",
+  "title": "ZConnectAiExplanation",
+  "description": "Standalone AI explanation artifact.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schemaVersion",
+    "explanationId",
+    "topic",
+    "body",
+    "confidence",
+    "explanation",
+    "limitations",
+    "disclaimer"
+  ],
+  "properties": {
+    "schemaVersion": {
+      "$ref": "../../common/schemas/v1/_definitions.schema.json#/$defs/SchemaVersion"
+    },
+    "explanationId": {
+      "$ref": "../../common/schemas/v1/_definitions.schema.json#/$defs/Identifier"
+    },
+    "topic": {
+      "type": "string",
+      "maxLength": 200
+    },
+    "body": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 4000
+    },
+    "confidence": {
+      "$ref": "../../common/schemas/v1/_definitions.schema.json#/$defs/ConfidenceLevel"
+    },
+    "explanation": {
+      "$ref": "../../common/schemas/v1/_definitions.schema.json#/$defs/AiExplanation"
+    },
+    "limitations": {
+      "$ref": "../../common/schemas/v1/_definitions.schema.json#/$defs/AiLimitations"
+    },
+    "disclaimer": {
+      "$ref": "../../common/schemas/v1/_definitions.schema.json#/$defs/InsightDisclaimer"
+    }
+  }
+}

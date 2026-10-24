@@ -1,0 +1,45 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://z-sanctuary.local/z-connect/schemas/v1/discovery-reflection.json",
+  "title": "ZConnectDiscoveryReflection",
+  "description": "AI reflection on answers — requires approval to persist.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schemaVersion",
+    "reflectionId",
+    "sessionId",
+    "reflectionText",
+    "confidence",
+    "explanation",
+    "limitations",
+    "disclaimer"
+  ],
+  "properties": {
+    "schemaVersion": {
+      "$ref": "../../common/schemas/v1/_definitions.schema.json#/$defs/SchemaVersion"
+    },
+    "reflectionId": {
+      "$ref": "../../common/schemas/v1/_definitions.schema.json#/$defs/Identifier"
+    },
+    "sessionId": {
+      "$ref": "../../common/schemas/v1/_definitions.schema.json#/$defs/Identifier"
+    },
+    "reflectionText": {
+      "type": "string",
+      "maxLength": 2000
+    },
+    "confidence": {
+      "$ref": "../../common/schemas/v1/_definitions.schema.json#/$defs/ConfidenceLevel"
+    },
+    "explanation": {
+      "$ref": "../../common/schemas/v1/_definitions.schema.json#/$defs/AiExplanation"
+    },
+    "limitations": {
+      "$ref": "../../common/schemas/v1/_definitions.schema.json#/$defs/AiLimitations"
+    },
+    "disclaimer": {
+      "$ref": "../../common/schemas/v1/_definitions.schema.json#/$defs/InsightDisclaimer"
+    }
+  }
+}
