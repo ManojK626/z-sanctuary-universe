@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="../styles/amk-project-indicators.css" />
     <link rel="stylesheet" href="../styles/amk-zuno-advisor.css" />
     <link rel="stylesheet" href="../styles/z-root-guardian-coordination.css" />
+    <link rel="stylesheet" href="../styles/z-anydevice-evidence.css" />
   </head>
   <body class="amk-map-root amk-dash-flex" id="amkMapRootBody">
     <a class="amk-map-skip" href="#amk-main">Skip to main content</a>
@@ -133,6 +134,18 @@
           </p>
           <div id="amkProjectIndicatorsMount"></div>
           <div id="amkCloudflareGoNoGoMount"></div>
+        </div>
+      </details>
+
+      <details class="amk-map-section" open data-amk-section="anydevice_evidence" data-amk-category="indicators" id="z-anydevice-evidence-section">
+        <summary>AnyDevice Evidence</summary>
+        <div class="amk-map-section-body">
+          <div
+            id="zAnyDeviceEvidenceMount"
+            class="z-ade-panel"
+            data-current-canonical-sha="5c3223f4ee0165332d86c113a18a83b598049d71"
+            aria-live="polite"
+          ></div>
         </div>
       </details>
 
@@ -379,5 +392,7 @@
     <script defer src="../scripts/amk-zuno-advisor-readonly.js"></script>
     <script defer src="../scripts/z-root-guardian-coordination-readonly.js"></script>
     <script defer src="../scripts/z-omnai-core-readonly.js"></script>
+    <script defer src="../scripts/z_anydevice_evidence_view.cjs"></script>
+    <script defer src="../scripts/z_anydevice_evidence_readonly.js"></script>
   </body>
 </html>
