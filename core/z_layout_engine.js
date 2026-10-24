@@ -188,64 +188,16 @@
     return Boolean(document.body && document.body.classList.contains('z-anydevice-adaptive'));
   }
 
-  function viewportScale() {
-    try {
-      const scale = window.visualViewport && window.visualViewport.scale;
-      if (Number.isFinite(scale) && scale > 0) return scale;
-    } catch {
-      /* visualViewport is optional */
-    }
-    return 1;
+  function contractApi() {
+    return window.ZAdaptiveRuntime || null;
   }
 
-  function availableWidth() {
-    let raw = 0;
-    try {
-      if (window.visualViewport && window.visualViewport.width > 0) {
-        raw = window.visualViewport.width;
-      }
-    } catch {
-      raw = 0;
-    }
-    if (!(raw > 0)) raw = window.innerWidth || document.documentElement.clientWidth || 0;
-    // visualViewport already tracks browser zoom. body.style.zoom is the cockpit's
-    // own UI scale (applyUiZoom) and is not a layout authority.
-    return raw / viewportScale();
-  }
-
-  function availableHeight() {
-    let raw = 0;
-    try {
-      if (window.visualViewport && window.visualViewport.height > 0) {
-        raw = window.visualViewport.height;
-      }
-    } catch {
-      raw = 0;
-    }
-    if (!(raw > 0)) raw = window.innerHeight || document.documentElement.clientHeight || 0;
-    return raw / viewportScale();
-  }
-
-  function layoutFromSpace(width) {
-    if (width >= 1600) return 'wide';
-    if (width >= 1280) return 'standard';
-    if (width >= 860) return 'compact';
-    return 'mobile';
-  }
-
-  function mediaValue(query, whenTrue, whenFalse) {
-    try {
-      if (window.matchMedia && window.matchMedia(query).matches) return whenTrue;
-    } catch {
-      /* matchMedia unavailable */
-    }
-    return whenFalse;
-  }
-
-  function applyContract(layout, width, height, displayKey) {
+  function applyContract(reading, displayKey) {
     const body = document.body;
     const root = document.documentElement;
     if (!body || !root) return;
+    const layout = reading.layout;
+    const width = reading.width;
     const compat = {
       mobile: { profile: 'mobile', viewport: 'mobile', classes: ['zvp-mobile'] },
       compact: { profile: 'tablet', viewport: 'tablet', classes: ['zvp-tablet'] },
@@ -276,20 +228,20 @@
     root.setAttribute('z-viewport', compat.viewport);
     root.setAttribute('z-layout', layout);
     root.setAttribute('z-display-key', displayKey);
-    root.setAttribute('z-orientation', height >= width ? 'portrait' : 'landscape');
-    root.setAttribute('z-pointer', mediaValue('(pointer: coarse)', 'coarse', 'fine'));
-    root.setAttribute('z-hover', mediaValue('(hover: hover)', 'hover', 'none'));
-    root.setAttribute(
-      'z-motion',
-      mediaValue('(prefers-reduced-motion: reduce)', 'reduce', 'no-preference')
-    );
-    root.setAttribute('z-offline', navigator.onLine === false ? 'offline' : 'online');
+    root.setAttribute('z-orientation', reading.orientation);
+    root.setAttribute('z-pointer', reading.pointer);
+    root.setAttribute('z-hover', reading.hover);
+    root.setAttribute('z-motion', reading.motion);
+    root.setAttribute('z-offline', reading.offline);
     window.__Z_VIEWPORT_PROFILE__ = {
       layout_class: layout,
       viewport_class: compat.viewport,
-      width,
-      height,
-      zoom: viewportScale(),
+      width: reading.width,
+      height: reading.height,
+      measurement: reading.source,
+      viewport_scale: reading.viewportScale,
+      pointer_any: reading.pointerAny,
+      hover_any: reading.hoverAny,
       dpi: window.devicePixelRatio || 1,
       ts: new Date().toISOString(),
     };
@@ -345,13 +297,21 @@
   }
 
   function runContract() {
-    const width = availableWidth();
-    const height = availableHeight();
+    const api = contractApi();
+    if (!api) {
+      runLegacy();
+      return;
+    }
+    const reading = api.read(window);
+    // LEGACY_COMPATIBILITY_DEBT: fingerprint is stored for older density memory.
+    // Shared measurement does not read color depth, pixel depth, or screen size.
     const display = getDisplayFingerprint();
     const displayKey = toDisplayKey(display);
     currentDisplayKey = displayKey;
-    const layout = layoutFromSpace(width);
-    const profile = applyContract(layout, width, height, displayKey);
+    const profile = applyContract(reading, displayKey);
+    const width = reading.width;
+    const height = reading.height;
+    const layout = reading.layout;
     localStorage.setItem(DISPLAY_KEY, displayKey);
     window.dispatchEvent(
       new CustomEvent('z-display-profile-changed', {
@@ -382,25 +342,17 @@
 
   function boot() {
     run();
-    setTimeout(() => autoCollapseChronicleOnce(isContractHost() ? availableWidth() : window.innerWidth || 0), 650);
+    const api = contractApi();
+    setTimeout(
+      () =>
+        autoCollapseChronicleOnce(
+          isContractHost() && api ? api.read(window).width : window.innerWidth || 0
+        ),
+      650
+    );
     initDensityDisplayMemory();
     if (!isContractHost()) return;
-    if (window.visualViewport && window.visualViewport.addEventListener) {
-      window.visualViewport.addEventListener('resize', onResize, { passive: true });
-    }
-    window.addEventListener('online', onResize, { passive: true });
-    window.addEventListener('offline', onResize, { passive: true });
-    ['(pointer: coarse)', '(hover: hover)', '(prefers-reduced-motion: reduce)', '(orientation: portrait)'].forEach(
-      (query) => {
-        try {
-          const media = window.matchMedia(query);
-          if (media.addEventListener) media.addEventListener('change', onResize);
-          else if (media.addListener) media.addListener(onResize);
-        } catch {
-          /* optional signal */
-        }
-      }
-    );
+    if (api && typeof api.subscribe === 'function') api.subscribe(window, onResize);
     if (window.MutationObserver && document.body) {
       new MutationObserver(() => onResize()).observe(document.body, {
         attributes: true,
