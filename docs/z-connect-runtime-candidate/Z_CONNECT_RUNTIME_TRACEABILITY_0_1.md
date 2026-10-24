@@ -4,14 +4,26 @@ Local candidate only. Path B: the sealed fixture stays a reference. Contracts de
 
 | Item | Value |
 | --- | --- |
-| Canonical main base | `e4ea6ab93ee0ee03aa12e77a442a3b2014ccf51f` |
-| Contract source | PR #41 `2e2d55c1a65ed257b6e34defa7f618fc503800ad` |
+| Historical runtime base | `e4ea6ab93ee0ee03aa12e77a442a3b2014ccf51f` |
+| Canonical integration base | `867ed4aaf77a39d0bebded47ed1db808ef786619` |
+| Canonical contract authority | main @ `867ed4aaf77a39d0bebded47ed1db808ef786619` |
+| Historical contract source | PR #41 @ `2e2d55c1a65ed257b6e34defa7f618fc503800ad` |
 | Doctrine reference | `da9027e3ba384ffc8c7123623b6d0cfbd12f308a` |
 | Fixture reference | `ba13df8b6a97f922b95468eadacd36f3a94e65ad` |
 | Candidate path | `apps/z-connect-candidate/` |
 | Authority | `LOCAL_RUNTIME_CANDIDATE` |
-| AnyDevice | `NOT_TESTED` |
+| AnyDevice evidence | `GREEN_LOCAL` |
 | Registry | `NOT_TESTED` |
+
+## Authority separation
+
+`HISTORICAL_RUNTIME_PROVENANCE` is `e4ea6ab93ee0ee03aa12e77a442a3b2014ccf51f` → `05c594bf760fdb91a1ea3d59480484b91d94bc9b` → `60935ff427ad9fb4e7f9154bf3830c2881552277` → `abb2f29ecdfaef25ab678dce51cd8f63d0e6132f`.
+
+`HISTORICAL_CONTRACT_PROVENANCE` is PR #41 @ `2e2d55c1a65ed257b6e34defa7f618fc503800ad`, preserved in the exact packet commit `6417603404106d15c744329f4f216075a11ed260`.
+
+`CURRENT_CANONICAL_CONTRACT_AUTHORITY` is main @ `867ed4aaf77a39d0bebded47ed1db808ef786619`, which includes the schema-reference correction `d629fae8fcadcd69112a8917bc7ef306b6d8b632`.
+
+`CURRENT_RUNTIME_ADOPTION_STATUS` remains `LOCAL_RUNTIME_CANDIDATE`. Registry stays `NOT_TESTED`. AnyDevice evidence is `GREEN_LOCAL`, not canonical green.
 
 ## Consent reconciliation
 
@@ -43,7 +55,7 @@ This candidate does not weaken those requirements. It also does not implement au
 | Return to Welcome does not withdraw a granted visit-local consent | candidate boundary; decline is the withdrawal | CANDIDATE_ONLY |
 | Profile store, authentication, Shadow, and DRP on generative output | `docs/z-connect/interaction-contracts/flows/AI_DISCOVERY_FLOW.md` | NOT_IMPLEMENTED |
 | Reflect room | no contract requires it in this foundation | NOT_IMPLEMENTED |
-| AnyDevice presentation | future gate; shared runtime not attached | NOT_TESTED |
+| AnyDevice presentation | shared runtime attached on the local candidate | GREEN_LOCAL |
 
 ## Fixture reuse register
 
