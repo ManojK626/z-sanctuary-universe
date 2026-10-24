@@ -3,8 +3,8 @@
  * GW-6 hub-scoped discovery only. Does not copy assets into the public shell.
  * Does not scan NAS, lottery, ICIS natural-image custody, or sibling PC folders.
  */
-import fs from "node:fs";
-import path from "node:path";
+import fs from 'node:fs';
+import path from 'node:path';
 
 const ROOT = process.cwd();
 const FLAG = {
@@ -20,7 +20,7 @@ function walk(dir, acc = [], ext = null) {
   for (const e of fs.readdirSync(dir, { withFileTypes: true })) {
     const p = path.join(dir, e.name);
     if (e.isDirectory()) {
-      if (e.name === "node_modules" || e.name === ".git") continue;
+      if (e.name === 'node_modules' || e.name === '.git') continue;
       walk(p, acc, ext);
     } else if (!ext || e.name.toLowerCase().endsWith(ext)) acc.push(p);
   }
@@ -28,16 +28,16 @@ function walk(dir, acc = [], ext = null) {
 }
 
 const htmlRoots = [
-  path.join(ROOT, "dashboard"),
-  path.join(ROOT, "docs", "public"),
-  path.join(ROOT, "docs", "golden-website", "shell"),
+  path.join(ROOT, 'dashboard'),
+  path.join(ROOT, 'docs', 'public'),
+  path.join(ROOT, 'docs', 'golden-website', 'shell'),
 ];
 const html = [];
 for (const root of htmlRoots) {
-  for (const file of walk(root, [], ".html")) {
-    const rel = path.relative(ROOT, file).replace(/\\/g, "/");
-    if (rel.includes("ZSanctuary_Labs/copies")) continue;
-    const text = fs.readFileSync(file, "utf8");
+  for (const file of walk(root, [], '.html')) {
+    const rel = path.relative(ROOT, file).replace(/\\/g, '/');
+    if (rel.includes('ZSanctuary_Labs/copies')) continue;
+    const text = fs.readFileSync(file, 'utf8');
     html.push({
       rel,
       flags: {
@@ -51,23 +51,23 @@ for (const root of htmlRoots) {
   }
 }
 
-const pngRoots = [path.join(ROOT, "docs", "golden-website")];
+const pngRoots = [path.join(ROOT, 'docs', 'golden-website')];
 const images = [];
 for (const root of pngRoots) {
-  for (const ext of [".png", ".jpg", ".jpeg", ".webp", ".gif", ".svg"]) {
+  for (const ext of ['.png', '.jpg', '.jpeg', '.webp', '.gif', '.svg']) {
     for (const file of walk(root, [], ext)) {
-      images.push(path.relative(ROOT, file).replace(/\\/g, "/"));
+      images.push(path.relative(ROOT, file).replace(/\\/g, '/'));
     }
   }
 }
 
-const icisFixtures = walk(path.join(ROOT, "data", "z_icis_visual_assets"), [], ".svg").map((f) =>
-  path.relative(ROOT, f).replace(/\\/g, "/"),
+const icisFixtures = walk(path.join(ROOT, 'data', 'z_icis_visual_assets'), [], '.svg').map((f) =>
+  path.relative(ROOT, f).replace(/\\/g, '/'),
 );
 
 const out = {
-  schema: "gw6_discovery_scan_v1",
-  phase: "GW-6",
+  schema: 'gw6_discovery_scan_v1',
+  phase: 'GW-6',
   html_count: html.length,
   golden_website_image_count: images.length,
   icis_fixture_svg_count: icisFixtures.length,

@@ -42,7 +42,7 @@ test.describe('GW-3A Golden Foundation Shell visual acceptance', () => {
     );
     await expect(page.locator('body')).toContainText('QUALIFIED is not VERIFIED');
     await expect(page.getByRole('link', { name: 'Explore Z-Sanctuary' })).toBeVisible();
-    await expect(page.getByRole('button', { name: "Show Me What's Real" }).first()).toBeVisible();
+    await expect(page.getByRole('button', { name: 'Show Me What\'s Real' }).first()).toBeVisible();
     await expect(page.getByRole('link', { name: 'Explore the Navigator' })).toBeVisible();
     await expect(page.locator('#gw-evidence-board')).toBeHidden();
 
