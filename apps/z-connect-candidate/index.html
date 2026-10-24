@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Z-Connect — local runtime candidate</title>
+  <meta name="description" content="LOCAL_RUNTIME_CANDIDATE. Contract-derived Welcome foundation. Not production. Not a public deployment.">
+  <link rel="stylesheet" href="candidate.css">
+  <link rel="stylesheet" href="../../interface/z_adaptive_foundation.css">
+  <link rel="stylesheet" href="z-anydevice-z-connect-candidate-host.css">
+</head>
+<body class="z-anydevice-adaptive">
+  <a class="skip" href="#welcome-panel">Skip to Welcome</a>
+  <p class="banner">LOCAL_RUNTIME_CANDIDATE · not production · not deployed</p>
+  <main>
+    <section id="welcome-panel">
+      <p class="eyebrow">Z-Sanctuary</p>
+      <h1>
+        <svg class="sprig" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+          <path d="M12 21V9" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"></path>
+          <path d="M12 16c-2.6-.6-4.4-2.4-5.2-5 2.4.2 4 1.8 5.2 5z" fill="currentColor"></path>
+        </svg>
+        Z-Connect
+      </h1>
+      <p>Soulmates is a name, not a promise.</p>
+      <p>AI assists. People decide. This page uses scripted fixture copy and does not call a model.</p>
+      <p>Connection confidence for this visit: <strong>Limited information</strong>. Nothing has been shared.</p>
+      <p>Z-Connect does not offer a destiny, a compatibility percentage, or a ranking of a person's worth.</p>
+      <h2>This visit</h2>
+      <p>You can stay on Welcome. Optional Discovery is separate. Declining it closes only that formal journey.</p>
+      <h2>Privacy</h2>
+      <p>This candidate keeps the visit in memory only. It does not save, send, or build a profile. No account is created.</p>
+      <h2>Optional Discovery</h2>
+      <p>The formal Discovery Journey stays closed until you grant <code>discovery_journey</code> for this visit. The box starts empty. An empty box is not agreement.</p>
+      <div class="choice">
+        <label id="discovery-consent-control">
+          <input id="discovery-consent" type="checkbox">
+          I grant discovery_journey for this visit only.
+        </label>
+        <button type="button" id="grant-discovery">Open the Discovery boundary</button>
+        <button type="button" id="decline-discovery">Continue without Discovery</button>
+      </div>
+      <p id="consent-note" role="status"></p>
+    </section>
+    <section id="discovery-boundary" hidden>
+      <h2>Discovery boundary</h2>
+      <p>The formal Discovery Journey gate is open for this visit. The journey itself is not implemented here. No profile is written. No model is called.</p>
+      <button type="button" id="back-welcome">Return to Welcome</button>
+    </section>
+    <p id="reflect-placeholder">Reflect is not part of this foundation.</p>
+  </main>
+  <script src="candidate-state.cjs"></script>
+  <script src="welcome.cjs"></script>
+  <script src="../../core/z_adaptive_runtime.cjs"></script>
+  <script src="z_anydevice_z_connect_candidate_host.js"></script>
+</body>
+</html>

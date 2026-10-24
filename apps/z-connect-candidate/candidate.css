@@ -1,0 +1,64 @@
+:root {
+  --paper: #f6f0e6;
+  --ink: #2b241c;
+  --olive: #2f4a3c;
+  --card: #fffaf4;
+  --line: #e4d5c3;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  background: var(--paper);
+  color: var(--ink);
+  font-family: "Segoe UI", Candara, "Trebuchet MS", sans-serif;
+  line-height: 1.55;
+}
+
+.banner,
+main {
+  max-width: 40rem;
+  margin: 0 auto;
+  padding: 1rem 1.15rem;
+}
+
+.banner {
+  background: var(--olive);
+  color: var(--card);
+}
+
+h1,
+h2 { line-height: 1.25; }
+
+.choice {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  align-items: center;
+}
+
+button,
+label {
+  font: inherit;
+}
+
+button {
+  min-height: 2.75rem;
+  padding: 0.5rem 0.9rem;
+  border: 1px solid var(--olive);
+  border-radius: 0.8rem;
+  background: var(--card);
+  color: var(--ink);
+}
+
+#grant-discovery {
+  background: var(--olive);
+  color: var(--card);
+}
+
+.sprig {
+  width: 1.5rem;
+  height: 1.5rem;
+  vertical-align: text-bottom;
+}
