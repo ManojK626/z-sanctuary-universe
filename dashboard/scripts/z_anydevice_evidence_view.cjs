@@ -8,10 +8,20 @@
   if (typeof window !== 'undefined') window.ZAnyDeviceEvidenceView = api;
 })(function () {
   var RECORDED_PLATFORM = {
-    capability: 'PROVEN_TWO_HOST_PLATFORM_CAPABILITY',
     canonicalOnMain: 'YES',
     ecosystemWideGreen: 'NO',
   };
+
+  function recordedPlatformCapability(hosts) {
+    var list = hosts || [];
+    var green = list.filter(function (row) {
+      return row.status === 'GREEN';
+    }).length;
+    if (list.length === 0 || green !== list.length) return 'UNKNOWN';
+    if (green === 2) return 'PROVEN_TWO_HOST_PLATFORM_CAPABILITY';
+    if (green === 3) return 'PROVEN_THREE_HOST_PLATFORM_CAPABILITY';
+    return 'UNKNOWN';
+  }
 
   function textValue(value) {
     if (value === undefined || value === null || value === '') return 'UNKNOWN';
@@ -92,7 +102,7 @@
       return row.role === 'HOST';
     });
     return {
-      capability: RECORDED_PLATFORM.capability,
+      capability: recordedPlatformCapability(hosts),
       canonicalOnMain: RECORDED_PLATFORM.canonicalOnMain,
       ecosystemWideGreen: RECORDED_PLATFORM.ecosystemWideGreen,
       greenHosts: hosts.filter(function (row) {

@@ -34,7 +34,23 @@ assert.strictEqual(summary.openP0, 0);
 assert.strictEqual(summary.openP1, 0);
 assert.strictEqual(summary.openP2, 1);
 assert.strictEqual(summary.ecosystemWideGreen, 'NO');
-assert.strictEqual(summary.capability, 'PROVEN_TWO_HOST_PLATFORM_CAPABILITY');
+assert.strictEqual(summary.capability, 'PROVEN_THREE_HOST_PLATFORM_CAPABILITY');
+
+function hostRow(status) {
+  return { role: 'HOST', status: status, openP0: [], openP1: [], openP2: [] };
+}
+assert.strictEqual(
+  view.platformSummary([hostRow('GREEN'), hostRow('GREEN')]).capability,
+  'PROVEN_TWO_HOST_PLATFORM_CAPABILITY'
+);
+assert.strictEqual(
+  view.platformSummary([hostRow('GREEN'), hostRow('GREEN'), hostRow('NOT_TESTED')]).capability,
+  'UNKNOWN'
+);
+assert.strictEqual(
+  view.platformSummary([hostRow('GREEN'), hostRow('GREEN'), hostRow('GREEN')]).ecosystemWideGreen,
+  'NO'
+);
 
 const sparse = view.rowsFromRegistry({ entries: [{ project_id: 'example' }] });
 assert.strictEqual(sparse[0].status, 'UNKNOWN');
