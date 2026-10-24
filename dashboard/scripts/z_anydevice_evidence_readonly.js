@@ -9,7 +9,7 @@
 
   var FILTERS = ['ALL', 'GREEN', 'AMBER', 'RED', 'NOT_TESTED', 'LEGACY', 'EXEMPT', 'HAS P0', 'HAS P1', 'HAS P2'];
   var state = { rows: [], filter: 'ALL', selected: '' };
-  var recordedMain = root.getAttribute('data-current-canonical-sha') || 'UNKNOWN';
+  var recordedBaseline = root.getAttribute('data-evidence-baseline-sha') || 'UNKNOWN';
 
   function el(tag, className, text) {
     var node = document.createElement(tag);
@@ -76,8 +76,8 @@
       card.appendChild(title);
       card.appendChild(line('Canonical surface', row.surface));
       card.appendChild(line('Tested SHA', row.testedSha));
-      card.appendChild(line('Recorded canonical SHA', recordedMain));
-      card.appendChild(line('Drift', view.driftLabel(row.testedSha, recordedMain)));
+      card.appendChild(line('Recorded evidence baseline SHA', recordedBaseline));
+      card.appendChild(line('Drift', view.driftLabel(row.testedSha, recordedBaseline)));
       card.appendChild(line('Synthetic viewport evidence', row.syntheticEvidence));
       card.appendChild(line('Browser family evidence', row.browserFamilyEvidence));
       card.appendChild(line('Physical device evidence', row.physicalDevice));

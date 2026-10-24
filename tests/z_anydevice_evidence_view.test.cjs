@@ -27,6 +27,7 @@ assert.strictEqual(byId('amk-goku-main-control').webkit, 'PASS');
 assert.strictEqual(byId('amk-goku-main-control').physicalDevice, 'NOT_COLLECTED');
 assert.strictEqual(byId('z-connect').status, 'NOT_TESTED');
 assert.strictEqual(byId('z-connect').role, 'CANDIDATE');
+assert.strictEqual(byId('z-connect').testedSha, 'UNKNOWN');
 assert.strictEqual(byId('z-golden').status, 'GREEN');
 assert.strictEqual(byId('z-golden').role, 'HOST');
 assert.strictEqual(byId('z-golden').surface, 'docs/golden-website/shell/index.html');
@@ -69,6 +70,26 @@ assert.strictEqual(
   view.platformSummary([hostRow('GREEN'), hostRow('GREEN'), hostRow('GREEN'), hostRow('GREEN')]).ecosystemWideGreen,
   'NO'
 );
+const fiveGreen = [hostRow('GREEN'), hostRow('GREEN'), hostRow('GREEN'), hostRow('GREEN'), hostRow('GREEN')];
+assert.strictEqual(view.platformSummary(fiveGreen).capability, 'PROVEN_FIVE_HOST_PLATFORM_CAPABILITY');
+assert.strictEqual(view.platformSummary(fiveGreen).ecosystemWideGreen, 'NO');
+assert.strictEqual(
+  view.platformSummary([
+    hostRow('GREEN'),
+    hostRow('GREEN'),
+    hostRow('GREEN'),
+    hostRow('GREEN'),
+    hostRow('NOT_TESTED'),
+  ]).capability,
+  'UNKNOWN'
+);
+const olderGreen = hostRow('GREEN');
+olderGreen.testedSha = 'dd2085d6f19ba3428f9e5984b7ea8c76bb7f3c46';
+assert.strictEqual(
+  view.driftLabel(olderGreen.testedSha, '68ed3a1e0b34d48205f3e6532d69190ba8a3c194'),
+  'DRIFT OBSERVED'
+);
+assert.strictEqual(olderGreen.status, 'GREEN');
 
 const sparse = view.rowsFromRegistry({ entries: [{ project_id: 'example' }] });
 assert.strictEqual(sparse[0].status, 'UNKNOWN');
@@ -101,7 +122,18 @@ assert.ok(!/z_adaptive_runtime/.test(fs.readFileSync(path.join(root, 'dashboard/
   assert.strictEqual(sources.includes('\'' + label + '\''), false);
 });
 
+const readonly = fs.readFileSync(path.join(root, 'dashboard/scripts/z_anydevice_evidence_readonly.js'), 'utf8');
+assert.ok(readonly.includes('getAttribute(\'data-evidence-baseline-sha\')'));
+assert.ok(!readonly.includes('data-current-canonical-sha'));
+assert.ok(readonly.includes('recordedBaseline'));
+assert.ok(!readonly.includes('recordedMain'));
+assert.ok(readonly.includes('Recorded evidence baseline SHA'));
+assert.ok(!readonly.includes('Recorded canonical SHA'));
+assert.ok(!readonly.includes('Current canonical SHA'));
+
 const html = fs.readFileSync(path.join(root, 'dashboard/Html/amk-goku-main-control.html'), 'utf8');
+assert.ok(html.includes('data-evidence-baseline-sha="68ed3a1e0b34d48205f3e6532d69190ba8a3c194"'));
+assert.ok(!html.includes('data-current-canonical-sha'));
 assert.ok(html.includes('zAnyDeviceEvidenceMount'));
 assert.ok(html.includes('z_adaptive_runtime.cjs'));
 assert.ok(html.includes('z-anydevice-adaptive'));
