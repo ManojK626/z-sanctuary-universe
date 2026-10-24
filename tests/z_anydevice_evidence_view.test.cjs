@@ -18,12 +18,18 @@ function byId(id) {
 
 assert.strictEqual(byId('unified-dashboard').status, 'GREEN');
 assert.strictEqual(byId('apps-web').status, 'GREEN');
-assert.strictEqual(byId('amk-goku-main-control').status, 'NOT_TESTED');
+assert.strictEqual(byId('amk-goku-main-control').status, 'GREEN');
+assert.strictEqual(byId('amk-goku-main-control').role, 'HOST');
+assert.strictEqual(byId('amk-goku-main-control').testedSha, 'dd2085d6f19ba3428f9e5984b7ea8c76bb7f3c46');
+assert.strictEqual(byId('amk-goku-main-control').chromium, 'PASS');
+assert.strictEqual(byId('amk-goku-main-control').firefox, 'PASS');
+assert.strictEqual(byId('amk-goku-main-control').webkit, 'PASS');
+assert.strictEqual(byId('amk-goku-main-control').physicalDevice, 'NOT_COLLECTED');
 assert.strictEqual(byId('z-connect').status, 'NOT_TESTED');
 assert.ok(byId('z-golden').surface.includes('not identified'));
 assert.strictEqual(byId('shadow-workbench').status, 'LEGACY');
 assert.ok(byId('shadow-workbench').openP2.includes('PRE_EXISTING_SHADOW_404'));
-assert.strictEqual(summary.greenHosts, 2);
+assert.strictEqual(summary.greenHosts, 3);
 assert.strictEqual(summary.openP0, 0);
 assert.strictEqual(summary.openP1, 0);
 assert.strictEqual(summary.openP2, 1);
@@ -41,7 +47,8 @@ assert.notStrictEqual(view.driftLabel('abc', 'def'), 'FAIL');
 assert.strictEqual(view.driftLabel('UNKNOWN', 'def'), 'UNKNOWN');
 
 const hidden = view.filterRows(rows, 'NOT_TESTED').map((row) => row.project);
-assert.ok(hidden.includes('amk-goku-main-control'));
+assert.ok(hidden.includes('z-connect'));
+assert.ok(!hidden.includes('amk-goku-main-control'));
 assert.ok(!hidden.includes('unified-dashboard'));
 assert.ok(view.filterRows(rows, 'HAS P2').some((row) => row.project === 'shadow-workbench'));
 
