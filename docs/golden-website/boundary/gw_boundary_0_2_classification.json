@@ -1,0 +1,130 @@
+{
+  "schema": "gw_boundary_0_2_classification_v1",
+  "phase": "Z-GW-BOUNDARY-0.2",
+  "publication_authorized": false,
+  "canonical_status": "UNRESOLVED",
+  "visual_shell_redesign": false,
+  "filter_contract": {
+    "input": "PRIVATE",
+    "filter": "PUBLIC-SAFE",
+    "output": "APPROVED",
+    "published_while_unauthorized": false,
+    "public_twin_records_length": 0
+  },
+  "public_record_classifications": [
+    {
+      "public_name": "Z-Sanctuary Core",
+      "canonical_id": "z_sanctuary_core",
+      "page": "docs/golden-website/shell/core.html",
+      "classification": "PUBLIC_SAFE",
+      "visitor_surface": "RETAINED"
+    },
+    {
+      "public_name": "Universal Workstation Navigator",
+      "canonical_id": "univ_workstation_navigator",
+      "page": "docs/golden-website/shell/navigator.html",
+      "classification": "PUBLIC_SAFE",
+      "visitor_surface": "RETAINED"
+    },
+    {
+      "public_name": "14 DRP",
+      "canonical_id": "fourteen_drp_protocols",
+      "page": "docs/golden-website/shell/drp.html",
+      "classification": "PUBLIC_SAFE",
+      "visitor_surface": "RETAINED",
+      "doctrine_citation": "docs/Z_SWARM_14DRP_UNIVERSAL_AGENT_LAW.md"
+    },
+    {
+      "public_name": "Z-EAII",
+      "canonical_id": "z_eaii",
+      "page": "docs/golden-website/shell/eaii.html",
+      "classification": "PUBLIC_SAFE",
+      "visitor_surface": "RETAINED"
+    },
+    {
+      "public_name": "QADP / Grounded Questions",
+      "canonical_id": "grounded_questions_qadp",
+      "page": "docs/golden-website/shell/qadp.html",
+      "classification": "PUBLIC_SAFE",
+      "visitor_surface": "RETAINED"
+    },
+    {
+      "public_name": "Cycle Observe",
+      "canonical_id": "cycle_observe",
+      "page": "docs/golden-website/shell/observe.html",
+      "classification": "PUBLIC_SAFE",
+      "visitor_surface": "RETAINED"
+    }
+  ],
+  "paths": {
+    "PUBLIC_SAFE": [
+      "docs/golden-website/shell/",
+      "data/golden-website/public/gw_approved_public_safe_adapter.json",
+      "data/golden-website/public/gw_map_foundation.json",
+      "data/golden-website/public/gw7_exhibits.json",
+      "data/golden-website/public/gw8_approved_knowledge_corpus.json",
+      "data/golden-website/public/gw8_surface_routing.json",
+      "data/golden-website/public/gw9_adversarial_probes.json",
+      "data/golden-website/public/gw9_behavior_suite.json",
+      "data/golden-website/public/gw9_curated_question_map.json",
+      "data/golden-website/public/gw9_surface_routing.json",
+      "data/golden-website/public/gw10_consistency_pairs.json",
+      "data/golden-website/public/gw10_critic_curated_map.json",
+      "data/golden-website/public/gw10_critic_question_bank.json",
+      "data/golden-website/public/gw10_critic_rules.json",
+      "data/golden-website/public/gw10_red_team_probes.json",
+      "data/golden-website/public/gw11_gateway_content.json",
+      "data/golden-website/public/gw11_gateway_qa.json",
+      "data/golden-website/public/gw12_integrity_content.json",
+      "data/golden-website/public/gw12_integrity_curated_map.json",
+      "data/golden-website/public/gw12_integrity_question_bank.json",
+      "data/golden-website/public/gw12_integrity_red_team.json",
+      "data/golden-website/public/gw12_integrity_rules.json",
+      "data/golden-website/public/gw12_mode_consistency.json"
+    ],
+    "PRIVATE_INTERNAL": [
+      "data/golden-website/gw_portfolio_registry.json",
+      "data/golden-website/capsules/",
+      "docs/golden-website/capsules/",
+      "data/golden-website/gw_publication_approval_queue.json",
+      "data/golden-website/gw_publication_candidates.json",
+      "data/golden-website/gw_identity_promotion_queue.json",
+      "data/golden-website/gw_steward_classification_gw2a.json",
+      "data/golden-website/gw_steward_classification_gw4a.json",
+      "data/golden-website/gw4_candidate_shortlist.json",
+      "data/golden-website/sanitization/",
+      "data/golden-website/gw13_pilot_readiness.json",
+      "docs/golden-website/gw-13/audit_results.json"
+    ],
+    "HOLD_UNRESOLVED": [
+      "data/golden-website/public/gw_public_knowledge_twin.json",
+      "data/golden-website/public/gw13_pilot_readiness.json"
+    ]
+  },
+  "sanitized_public_derivative": [
+    {
+      "path": "data/golden-website/public/gw13_pilot_readiness.json",
+      "method": "SANITIZED_PUBLIC_DERIVATIVE",
+      "fields": ["hub_runs[].out", "findings[].detail"],
+      "replacement": "[excluded-local-path]",
+      "rendered_by_shell": false
+    }
+  ],
+  "absolute_path_redaction": {
+    "private_overlay": {
+      "path": "data/golden-website/gw_portfolio_registry.json",
+      "method": "EXCLUDED_FROM_PUBLIC",
+      "fields_present": ["purpose", "notes"],
+      "rewritten": false
+    },
+    "public_pilot_json": {
+      "path": "data/golden-website/public/gw13_pilot_readiness.json",
+      "method": "SANITIZED_PUBLIC_DERIVATIVE"
+    }
+  },
+  "public_guide_corpus": "docs/golden-website/shell/data/gw9-guide-sandbox.js",
+  "private_guide_corpus": null,
+  "drp_citation": "docs/Z_SWARM_14DRP_UNIVERSAL_AGENT_LAW.md",
+  "shell_private_overlay_link": false,
+  "write_api": false
+}

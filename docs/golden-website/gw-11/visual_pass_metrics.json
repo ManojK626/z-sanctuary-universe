@@ -1,0 +1,91 @@
+{
+  "generated_at": "2026-08-27T07:57:33.729Z",
+  "phase": "GW-11",
+  "findings": [
+    {
+      "ok": true,
+      "id": "title",
+      "detail": ""
+    },
+    {
+      "ok": true,
+      "id": "five-pathways",
+      "detail": ""
+    },
+    {
+      "ok": true,
+      "id": "proving",
+      "detail": ""
+    },
+    {
+      "ok": true,
+      "id": "not-solicitation",
+      "detail": ""
+    },
+    {
+      "ok": true,
+      "id": "no-form",
+      "detail": ""
+    },
+    {
+      "ok": true,
+      "id": "no-mailto",
+      "detail": ""
+    },
+    {
+      "ok": true,
+      "id": "skip-focus",
+      "detail": ""
+    },
+    {
+      "ok": true,
+      "id": "guide-routes-gateway",
+      "detail": ""
+    },
+    {
+      "ok": true,
+      "id": "overflow-gateway-desktop",
+      "detail": ""
+    },
+    {
+      "ok": true,
+      "id": "overflow-gateway-tablet",
+      "detail": ""
+    },
+    {
+      "ok": true,
+      "id": "overflow-gateway-mobile",
+      "detail": ""
+    },
+    {
+      "ok": true,
+      "id": "external-calls",
+      "detail": ""
+    }
+  ],
+  "overflow": [
+    {
+      "file": "gateway.html",
+      "name": "desktop",
+      "width": 1440,
+      "height": 900,
+      "overflowX": false
+    },
+    {
+      "file": "gateway.html",
+      "name": "tablet",
+      "width": 768,
+      "height": 1024,
+      "overflowX": false
+    },
+    {
+      "file": "gateway.html",
+      "name": "mobile",
+      "width": 390,
+      "height": 844,
+      "overflowX": false
+    }
+  ],
+  "external_http_https": [],
+  "pass": true
+}

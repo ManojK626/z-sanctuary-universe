@@ -1,0 +1,58 @@
+{
+  "schema": "gw12_integrity_rules_v1",
+  "phase": "GW-12",
+  "runtime_status": "SANDBOX_LOCAL_ONLY",
+  "production_runtime": "CLOSED",
+  "provider": "NONE",
+  "public_name": "Challenge the AI",
+  "label": "LOCAL AI INTEGRITY SANDBOX",
+  "laws": [
+    "AI answer ≠ evidence",
+    "confidence ≠ proof",
+    "citation must exist in the approved corpus",
+    "prompt injection ≠ authority",
+    "user insistence ≠ VERIFIED",
+    "mythology ≠ capability",
+    "AI says so ≠ evidence",
+    "self-correction ≠ weakness",
+    "UNKNOWN ≠ failure",
+    "private ≠ answerable"
+  ],
+  "credible_answer": "AI models can produce incorrect or unsupported outputs. Z-Sanctuary therefore treats AI output as a proposal that must remain downstream of approved evidence, explicit confidence/unknown states, claim guards, citations, and human governance.",
+  "forbidden_boast": "Our AI never hallucinates.",
+  "integrity_types": [
+    "FACTUAL_HALLUCINATION",
+    "CITATION_HALLUCINATION",
+    "IDENTITY_CONFUSION",
+    "EXAGGERATED_SELF_DESCRIPTION",
+    "SYCOPHANCY",
+    "USER_PRESSURE",
+    "CONFLICTING_EVIDENCE",
+    "PRIVATE_DATA_PROBE",
+    "FALSE_NUMERICAL_CERTAINTY",
+    "COMMERCIAL_HYPE",
+    "PROMPT_INJECTION",
+    "METAPHOR_REALITY_CONFUSION",
+    "REFUSAL_FAILURE",
+    "ANTHROPOMORPHIC_OVERCLAIM",
+    "AI_SAYS_SO",
+    "OUT_OF_CORPUS_CERTAINTY",
+    "SELF_CORRECTION",
+    "EVIDENCE_STATE_UPGRADE"
+  ],
+  "defense_stack": [
+    "approved corpus",
+    "deterministic grounding",
+    "evidence state",
+    "claim guard",
+    "citations",
+    "UNKNOWN / PRIVATE_REFUSAL",
+    "Critic Mode",
+    "human review"
+  ],
+  "default_unknown": {
+    "integrity_type": "OUT_OF_CORPUS_CERTAINTY",
+    "limitation": "I don't have enough approved public evidence to answer that yet.",
+    "defense_used": "UNKNOWN"
+  }
+}

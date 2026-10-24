@@ -1,0 +1,622 @@
+{
+  "schema": "gw13_pilot_readiness_v1",
+  "phase": "GW-13",
+  "generated_at": "2026-08-27T08:30:39.946Z",
+  "publication": "NONE",
+  "deploy": "NONE",
+  "provider": "NONE",
+  "verdict": "NOT_READY_BLOCKERS_REMAIN",
+  "blocking_issues": [
+    {
+      "id": "HUMAN_SCREEN_READER_VALIDATION_PENDING",
+      "reason": "No Steward NVDA/VoiceOver session is recorded. Machine keyboard/ARIA is not a screen-reader pass."
+    }
+  ],
+  "warnings": [],
+  "gate_results": {
+    "gate_1_cross_page_truth": {
+      "result": "PASS",
+      "blocking": false,
+      "evidence": "Adapter evidence states plus page-truth checks including commercial-potential law. Contradictions=0."
+    },
+    "gate_2_navigation": {
+      "result": "PASS",
+      "blocking": false,
+      "evidence": "All 14 HTML pages, required nav, exhibit image src."
+    },
+    "gate_3_public_private": {
+      "result": "PASS",
+      "blocking": false,
+      "evidence": "Twin records[]=0, shell leak scan, npm run security:data-leak-audit."
+    },
+    "gate_4_guide_reliability": {
+      "result": "PASS",
+      "blocking": false,
+      "evidence": "GW-9 50/50, GW-10 44/44+20/20+22/22, GW-12 36/36+22/22+12/12 re-run in this audit."
+    },
+    "gate_5_ai_hallucination": {
+      "result": "PASS",
+      "blocking": false,
+      "evidence": "GW-12 integrity+red-team classes. Critical failures must be 0."
+    },
+    "gate_6_accessibility": {
+      "result": "NOT_READY",
+      "blocking": true,
+      "evidence": "Machine keyboard/overflow/44px/skip/reduced-motion PASS. Human NVDA/VoiceOver not run. Blocker HUMAN_SCREEN_READER_VALIDATION_PENDING."
+    },
+    "gate_7_visual_truth": {
+      "result": "PASS",
+      "blocking": false,
+      "evidence": "5 REAL UI CAPTURE + 1 HISTORICAL REAL UI CAPTURE."
+    },
+    "gate_8_prototype_truth": {
+      "result": "PASS",
+      "blocking": false,
+      "evidence": "PROTO-GW-SHELL LOCAL WORKING PROTOTYPE; public_service/production/deployed=NO; publication NOT AUTHORIZED."
+    },
+    "gate_9_investor_claims": {
+      "result": "PASS",
+      "blocking": false,
+      "evidence": "GW-11 content flags: valuation 0, forms 0, data_room CLOSED, no solicitation."
+    },
+    "gate_10_runtime_network": {
+      "result": "PASS",
+      "blocking": false,
+      "evidence": "No fetch/XHR/WebSocket/http(s)/mailto in shell. Production Guide CLOSED. No Cloudflare bind."
+    },
+    "gate_11_performance_baseline": {
+      "result": "PASS",
+      "blocking": false,
+      "evidence": "Local file:// visual journey: no horizontal overflow at 1440/768/390, 0 external HTTP(S). Not production-scale metrics."
+    },
+    "gate_12_rollback": {
+      "result": "PASS",
+      "blocking": false,
+      "evidence": "docs/golden-website/GW_13_ROLLBACK_AND_RECOVERY.md. Twin records[] remains 0."
+    }
+  },
+  "public_records": 0,
+  "approved_public_safe_records": 6,
+  "corpus_records": 22,
+  "private_exposure": 0,
+  "external_calls": 0,
+  "twin_live_records": 0,
+  "fabricated_citations": 0,
+  "evidence_state_upgrades": 0,
+  "contradictions": 0,
+  "unsupported_commercial_claims": 0,
+  "valuation_claims": 0,
+  "ai_class_tally": {
+    "FACTUAL_HALLUCINATION": {
+      "tests": 4,
+      "passed": 4,
+      "failed": 0
+    },
+    "CITATION_HALLUCINATION": {
+      "tests": 4,
+      "passed": 4,
+      "failed": 0
+    },
+    "IDENTITY_CONFUSION": {
+      "tests": 2,
+      "passed": 2,
+      "failed": 0
+    },
+    "EXAGGERATED_SELF_DESCRIPTION": {
+      "tests": 2,
+      "passed": 2,
+      "failed": 0
+    },
+    "SYCOPHANCY": {
+      "tests": 3,
+      "passed": 3,
+      "failed": 0
+    },
+    "USER_PRESSURE": {
+      "tests": 3,
+      "passed": 3,
+      "failed": 0
+    },
+    "CONFLICTING_EVIDENCE": {
+      "tests": 2,
+      "passed": 2,
+      "failed": 0
+    },
+    "PRIVATE_DATA_PROBE": {
+      "tests": 4,
+      "passed": 4,
+      "failed": 0
+    },
+    "FALSE_NUMERICAL_CERTAINTY": {
+      "tests": 3,
+      "passed": 3,
+      "failed": 0
+    },
+    "COMMERCIAL_HYPE": {
+      "tests": 2,
+      "passed": 2,
+      "failed": 0
+    },
+    "PROMPT_INJECTION": {
+      "tests": 8,
+      "passed": 8,
+      "failed": 0
+    },
+    "METAPHOR_REALITY_CONFUSION": {
+      "tests": 5,
+      "passed": 5,
+      "failed": 0
+    },
+    "REFUSAL_FAILURE": {
+      "tests": 3,
+      "passed": 3,
+      "failed": 0
+    },
+    "ANTHROPOMORPHIC_OVERCLAIM": {
+      "tests": 3,
+      "passed": 3,
+      "failed": 0
+    },
+    "AI_SAYS_SO": {
+      "tests": 3,
+      "passed": 3,
+      "failed": 0
+    },
+    "OUT_OF_CORPUS_CERTAINTY": {
+      "tests": 3,
+      "passed": 3,
+      "failed": 0
+    },
+    "SELF_CORRECTION": {
+      "tests": 3,
+      "passed": 3,
+      "failed": 0
+    },
+    "EVIDENCE_STATE_UPGRADE": {
+      "tests": 1,
+      "passed": 1,
+      "failed": 0
+    }
+  },
+  "journey": [
+    "index.html",
+    "portfolio.html",
+    "universe-map.html",
+    "gallery.html",
+    "museum.html",
+    "guide-sandbox.html",
+    "ai-integrity.html",
+    "gateway.html"
+  ],
+  "record_pages": [
+    "core.html",
+    "navigator.html",
+    "drp.html",
+    "eaii.html",
+    "qadp.html",
+    "observe.html"
+  ],
+  "ready_for_controlled_public_pilot": false,
+  "steward_decision": "PENDING",
+  "machine_findings_failed": [],
+  "suite_runs": [
+    {
+      "script": "scripts/z_gw_7_exhibit_smoke.mjs",
+      "status": 0,
+      "ok": true,
+      "out": "GW-7 exhibit smoke: PASS (6 visuals, 1 prototype, Twin 0, gated names absent)",
+      "err": ""
+    },
+    {
+      "script": "scripts/z_gw_9_run_behavior_suite.mjs",
+      "status": 0,
+      "ok": true,
+      "out": "GW-9 behavior suite: PASS (questions 50/50, adversarial 16/16, UNKNOWN=2, PRIVATE_REFUSAL=12)",
+      "err": ""
+    },
+    {
+      "script": "scripts/z_gw_10_run_critic_suite.mjs",
+      "status": 0,
+      "ok": true,
+      "out": "GW-10 critic suite: PASS (critic 44/44, red-team 22/22, consistency 20/20, contradictions=0, UNKNOWN=2, PRIVATE_REFUSAL=11)",
+      "err": ""
+    },
+    {
+      "script": "scripts/z_gw_11_gateway_smoke.mjs",
+      "status": 0,
+      "ok": true,
+      "out": "GW-11 gateway smoke: PASS (pathways=5, investor_qa=15, partner_qa=9, Twin=0)",
+      "err": ""
+    },
+    {
+      "script": "scripts/z_gw_12_run_integrity_suite.mjs",
+      "status": 0,
+      "ok": true,
+      "out": "GW-12 integrity suite: PASS (integrity 36/36, red-team 22/22, consistency 12/12, fabricated_citations=0, UNKNOWN=3, PRIVATE_REFUSAL=9)",
+      "err": ""
+    }
+  ],
+  "hub_runs": [
+    {
+      "script": "npm run dashboard:registry-verify",
+      "status": 0,
+      "ok": true,
+      "out": "Z dashboard registry verify: C:\\Cursor Projects Organiser\\Z_Sanctuary_Universe\\data\\reports\\z_dashboard_registry_verify.json (green)",
+      "err": ""
+    },
+    {
+      "script": "npm run alias:audit",
+      "status": 0,
+      "ok": true,
+      "out": "Canonical alias audit written: C:\\Cursor Projects Organiser\\Z_Sanctuary_Universe\\data\\reports\\z_canonical_alias_audit.json",
+      "err": ""
+    },
+    {
+      "script": "npm run security:data-leak-audit",
+      "status": 0,
+      "ok": true,
+      "out": "Z data leak audit written: C:\\Cursor Projects Organiser\\Z_Sanctuary_Universe\\data\\reports\\z_data_leak_audit.json",
+      "err": ""
+    },
+    {
+      "script": "npm run z:monster:registry-verify",
+      "status": 0,
+      "ok": true,
+      "out": "[z_monster_project_registry_verify] PASS (27 entries, 26 required) → data\\reports\\z_monster_project_registry_verify.json",
+      "err": ""
+    }
+  ],
+  "findings": [
+    {
+      "ok": true,
+      "id": "twin-empty",
+      "detail": "records=0"
+    },
+    {
+      "ok": true,
+      "id": "publication-not-authorized",
+      "detail": "false"
+    },
+    {
+      "ok": true,
+      "id": "corpus-22",
+      "detail": "22"
+    },
+    {
+      "ok": true,
+      "id": "adapter-6",
+      "detail": "6"
+    },
+    {
+      "ok": true,
+      "id": "adapter-not-published",
+      "detail": ""
+    },
+    {
+      "ok": true,
+      "id": "exhibits-6-plus-1",
+      "detail": ""
+    },
+    {
+      "ok": true,
+      "id": "no-verified-badge",
+      "detail": "0 VERIFIED public records"
+    },
+    {
+      "ok": true,
+      "id": "adapter-core-qualified",
+      "detail": ""
+    },
+    {
+      "ok": true,
+      "id": "adapter-nav-sealed",
+      "detail": ""
+    },
+    {
+      "ok": true,
+      "id": "truth:core-qualified",
+      "detail": ""
+    },
+    {
+      "ok": true,
+      "id": "truth:core-not-verified",
+      "detail": ""
+    },
+    {
+      "ok": true,
+      "id": "truth:core-pass-not-deploy",
+      "detail": ""
+    },
+    {
+      "ok": true,
+      "id": "truth:nav-sealed",
+      "detail": ""
+    },
+    {
+      "ok": true,
+      "id": "truth:nav-not-production",
+      "detail": ""
+    },
+    {
+      "ok": true,
+      "id": "truth:drp-governance-responsibility",
+      "detail": ""
+    },
+    {
+      "ok": true,
+      "id": "truth:eaii-bounded",
+      "detail": ""
+    },
+    {
+      "ok": true,
+      "id": "truth:qadp-not-guide",
+      "detail": ""
+    },
+    {
+      "ok": true,
+      "id": "truth:observe-not-autonomous",
+      "detail": ""
+    },
+    {
+      "ok": true,
+      "id": "truth:map-not-full-universe",
+      "detail": ""
+    },
+    {
+      "ok": true,
+      "id": "truth:screenshot-not-backend",
+      "detail": ""
+    },
+    {
+      "ok": true,
+      "id": "truth:prototype-not-production",
+      "detail": ""
+    },
+    {
+      "ok": true,
+      "id": "truth:gateway-not-solicitation",
+      "detail": ""
+    },
+    {
+      "ok": true,
+      "id": "truth:public-safe-not-published",
+      "detail": ""
+    },
+    {
+      "ok": true,
+      "id": "truth:qualified-not-verified-home",
+      "detail": ""
+    },
+    {
+      "ok": true,
+      "id": "truth:commercial-not-validated",
+      "detail": ""
+    },
+    {
+      "ok": true,
+      "id": "gate1-contradictions-zero",
+      "detail": "fails=0"
+    },
+    {
+      "ok": true,
+      "id": "museum-prototype-truth",
+      "detail": "PROTO-GW-SHELL"
+    },
+    {
+      "ok": true,
+      "id": "gallery-5-current",
+      "detail": "5"
+    },
+    {
+      "ok": true,
+      "id": "gallery-1-historical",
+      "detail": "HISTORICAL REAL UI CAPTURE"
+    },
+    {
+      "ok": true,
+      "id": "gallery-alt-text",
+      "detail": ""
+    },
+    {
+      "ok": true,
+      "id": "page-exists:index.html",
+      "detail": ""
+    },
+    {
+      "ok": true,
+      "id": "page-exists:portfolio.html",
+      "detail": ""
+    },
+    {
+      "ok": true,
+      "id": "page-exists:universe-map.html",
+      "detail": ""
+    },
+    {
+      "ok": true,
+      "id": "page-exists:gallery.html",
+      "detail": ""
+    },
+    {
+      "ok": true,
+      "id": "page-exists:museum.html",
+      "detail": ""
+    },
+    {
+      "ok": true,
+      "id": "page-exists:guide-sandbox.html",
+      "detail": ""
+    },
+    {
+      "ok": true,
+      "id": "page-exists:ai-integrity.html",
+      "detail": ""
+    },
+    {
+      "ok": true,
+      "id": "page-exists:gateway.html",
+      "detail": ""
+    },
+    {
+      "ok": true,
+      "id": "page-exists:core.html",
+      "detail": ""
+    },
+    {
+      "ok": true,
+      "id": "page-exists:navigator.html",
+      "detail": ""
+    },
+    {
+      "ok": true,
+      "id": "page-exists:drp.html",
+      "detail": ""
+    },
+    {
+      "ok": true,
+      "id": "page-exists:eaii.html",
+      "detail": ""
+    },
+    {
+      "ok": true,
+      "id": "page-exists:qadp.html",
+      "detail": ""
+    },
+    {
+      "ok": true,
+      "id": "page-exists:observe.html",
+      "detail": ""
+    },
+    {
+      "ok": true,
+      "id": "html-dead-links",
+      "detail": ""
+    },
+    {
+      "ok": true,
+      "id": "exhibit-image-links",
+      "detail": ""
+    },
+    {
+      "ok": true,
+      "id": "nav-skip-h1-consistency",
+      "detail": ""
+    },
+    {
+      "ok": true,
+      "id": "shell-leak-scan",
+      "detail": ""
+    },
+    {
+      "ok": true,
+      "id": "unsupported-claim-scan",
+      "detail": ""
+    },
+    {
+      "ok": true,
+      "id": "reduced-motion",
+      "detail": ""
+    },
+    {
+      "ok": true,
+      "id": "min-44px-targets",
+      "detail": ""
+    },
+    {
+      "ok": true,
+      "id": "three-guide-modes",
+      "detail": ""
+    },
+    {
+      "ok": true,
+      "id": "integrity-page-title",
+      "detail": ""
+    },
+    {
+      "ok": true,
+      "id": "gateway-no-form",
+      "detail": ""
+    },
+    {
+      "ok": true,
+      "id": "lock-production-guide",
+      "detail": ""
+    },
+    {
+      "ok": true,
+      "id": "lock-full-map",
+      "detail": ""
+    },
+    {
+      "ok": true,
+      "id": "lock-live-offering",
+      "detail": ""
+    },
+    {
+      "ok": false,
+      "id": "human-nvda-voiceover",
+      "detail": "No Steward NVDA/VoiceOver session is recorded. Machine keyboard/ARIA is not a screen-reader pass."
+    },
+    {
+      "ok": true,
+      "id": "suite:z_gw_7_exhibit_smoke.mjs",
+      "detail": "GW-7 exhibit smoke: PASS (6 visuals, 1 prototype, Twin 0, gated names absent)"
+    },
+    {
+      "ok": true,
+      "id": "suite:z_gw_9_run_behavior_suite.mjs",
+      "detail": "GW-9 behavior suite: PASS (questions 50/50, adversarial 16/16, UNKNOWN=2, PRIVATE_REFUSAL=12)"
+    },
+    {
+      "ok": true,
+      "id": "suite:z_gw_10_run_critic_suite.mjs",
+      "detail": "GW-10 critic suite: PASS (critic 44/44, red-team 22/22, consistency 20/20, contradictions=0, UNKNOWN=2, PRIVATE_REFUSAL=11)"
+    },
+    {
+      "ok": true,
+      "id": "suite:z_gw_11_gateway_smoke.mjs",
+      "detail": "GW-11 gateway smoke: PASS (pathways=5, investor_qa=15, partner_qa=9, Twin=0)"
+    },
+    {
+      "ok": true,
+      "id": "suite:z_gw_12_run_integrity_suite.mjs",
+      "detail": "GW-12 integrity suite: PASS (integrity 36/36, red-team 22/22, consistency 12/12, fabricated_citations=0, UNKNOWN=3, PRIVATE_REFUSAL=9)"
+    },
+    {
+      "ok": true,
+      "id": "hub:npm run dashboard:registry-verify",
+      "detail": "Z dashboard registry verify: C:\\Cursor Projects Organiser\\Z_Sanctuary_Universe\\data\\reports\\z_dashboard_registry_verify.json (green)"
+    },
+    {
+      "ok": true,
+      "id": "hub:npm run alias:audit",
+      "detail": "Canonical alias audit written: C:\\Cursor Projects Organiser\\Z_Sanctuary_Universe\\data\\reports\\z_canonical_alias_audit.json"
+    },
+    {
+      "ok": true,
+      "id": "hub:npm run security:data-leak-audit",
+      "detail": "Z data leak audit written: C:\\Cursor Projects Organiser\\Z_Sanctuary_Universe\\data\\reports\\z_data_leak_audit.json"
+    },
+    {
+      "ok": true,
+      "id": "hub:npm run z:monster:registry-verify",
+      "detail": "[z_monster_project_registry_verify] PASS (27 entries, 26 required) → data\\reports\\z_monster_project_registry_verify.json"
+    },
+    {
+      "ok": true,
+      "id": "data-leak-zero",
+      "detail": "findings=0"
+    },
+    {
+      "ok": true,
+      "id": "gateway-commercial-zero",
+      "detail": ""
+    },
+    {
+      "ok": true,
+      "id": "visual-journey-metrics",
+      "detail": "prior visual pass present"
+    }
+  ],
+  "pass_audit_process": true
+}

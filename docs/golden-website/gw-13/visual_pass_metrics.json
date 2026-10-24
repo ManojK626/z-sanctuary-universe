@@ -1,0 +1,559 @@
+{
+  "generated_at": "2026-08-27T08:28:41.999Z",
+  "phase": "GW-13",
+  "findings": [
+    {
+      "ok": true,
+      "id": "skip-home",
+      "detail": ""
+    },
+    {
+      "ok": true,
+      "id": "evidence-mode-on",
+      "detail": ""
+    },
+    {
+      "ok": true,
+      "id": "evidence-board-visible",
+      "detail": ""
+    },
+    {
+      "ok": true,
+      "id": "journey:index.html:/The Golden Website/",
+      "detail": ""
+    },
+    {
+      "ok": true,
+      "id": "journey:index.html:/QUALIFIED is not VERIFIED/",
+      "detail": ""
+    },
+    {
+      "ok": true,
+      "id": "journey:index.html:/Show Me What's Real/",
+      "detail": ""
+    },
+    {
+      "ok": true,
+      "id": "nav-integrity:index.html",
+      "detail": ""
+    },
+    {
+      "ok": true,
+      "id": "no-external-form:index.html",
+      "detail": ""
+    },
+    {
+      "ok": true,
+      "id": "journey:portfolio.html:/Portfolio/",
+      "detail": ""
+    },
+    {
+      "ok": true,
+      "id": "nav-integrity:portfolio.html",
+      "detail": ""
+    },
+    {
+      "ok": true,
+      "id": "no-external-form:portfolio.html",
+      "detail": ""
+    },
+    {
+      "ok": true,
+      "id": "journey:universe-map.html:/Map|Universe/",
+      "detail": ""
+    },
+    {
+      "ok": true,
+      "id": "nav-integrity:universe-map.html",
+      "detail": ""
+    },
+    {
+      "ok": true,
+      "id": "no-external-form:universe-map.html",
+      "detail": ""
+    },
+    {
+      "ok": true,
+      "id": "journey:gallery.html:/screenshot is not backend proof/i",
+      "detail": ""
+    },
+    {
+      "ok": true,
+      "id": "nav-integrity:gallery.html",
+      "detail": ""
+    },
+    {
+      "ok": true,
+      "id": "no-external-form:gallery.html",
+      "detail": ""
+    },
+    {
+      "ok": true,
+      "id": "journey:museum.html:/Prototype/",
+      "detail": ""
+    },
+    {
+      "ok": true,
+      "id": "journey:museum.html:/production/i",
+      "detail": ""
+    },
+    {
+      "ok": true,
+      "id": "nav-integrity:museum.html",
+      "detail": ""
+    },
+    {
+      "ok": true,
+      "id": "no-external-form:museum.html",
+      "detail": ""
+    },
+    {
+      "ok": true,
+      "id": "journey:guide-sandbox.html:/NORMAL GUIDE/",
+      "detail": ""
+    },
+    {
+      "ok": true,
+      "id": "journey:guide-sandbox.html:/CHALLENGE Z-SANCTUARY/",
+      "detail": ""
+    },
+    {
+      "ok": true,
+      "id": "journey:guide-sandbox.html:/CHALLENGE THE AI/",
+      "detail": ""
+    },
+    {
+      "ok": true,
+      "id": "nav-integrity:guide-sandbox.html",
+      "detail": ""
+    },
+    {
+      "ok": true,
+      "id": "no-external-form:guide-sandbox.html",
+      "detail": ""
+    },
+    {
+      "ok": true,
+      "id": "journey:ai-integrity.html:/HOW WE HANDLE AI FAILURE/",
+      "detail": ""
+    },
+    {
+      "ok": true,
+      "id": "journey:ai-integrity.html:/AI can be wrong/i",
+      "detail": ""
+    },
+    {
+      "ok": true,
+      "id": "nav-integrity:ai-integrity.html",
+      "detail": ""
+    },
+    {
+      "ok": true,
+      "id": "no-external-form:ai-integrity.html",
+      "detail": ""
+    },
+    {
+      "ok": true,
+      "id": "journey:gateway.html:/BUILD WITH Z-SANCTUARY/",
+      "detail": ""
+    },
+    {
+      "ok": true,
+      "id": "journey:gateway.html:/not a solicitation/i",
+      "detail": ""
+    },
+    {
+      "ok": true,
+      "id": "nav-integrity:gateway.html",
+      "detail": ""
+    },
+    {
+      "ok": true,
+      "id": "no-external-form:gateway.html",
+      "detail": ""
+    },
+    {
+      "ok": true,
+      "id": "critic-mode",
+      "detail": ""
+    },
+    {
+      "ok": true,
+      "id": "critic-screenshot-law",
+      "detail": ""
+    },
+    {
+      "ok": true,
+      "id": "integrity-proposal-law",
+      "detail": ""
+    },
+    {
+      "ok": true,
+      "id": "integrity-route",
+      "detail": ""
+    },
+    {
+      "ok": true,
+      "id": "record-evidence:core.html",
+      "detail": ""
+    },
+    {
+      "ok": true,
+      "id": "record-no-mailto:core.html",
+      "detail": ""
+    },
+    {
+      "ok": true,
+      "id": "record-evidence:navigator.html",
+      "detail": ""
+    },
+    {
+      "ok": true,
+      "id": "record-no-mailto:navigator.html",
+      "detail": ""
+    },
+    {
+      "ok": true,
+      "id": "record-evidence:drp.html",
+      "detail": ""
+    },
+    {
+      "ok": true,
+      "id": "record-no-mailto:drp.html",
+      "detail": ""
+    },
+    {
+      "ok": true,
+      "id": "record-evidence:eaii.html",
+      "detail": ""
+    },
+    {
+      "ok": true,
+      "id": "record-no-mailto:eaii.html",
+      "detail": ""
+    },
+    {
+      "ok": true,
+      "id": "record-evidence:qadp.html",
+      "detail": ""
+    },
+    {
+      "ok": true,
+      "id": "record-no-mailto:qadp.html",
+      "detail": ""
+    },
+    {
+      "ok": true,
+      "id": "record-evidence:observe.html",
+      "detail": ""
+    },
+    {
+      "ok": true,
+      "id": "record-no-mailto:observe.html",
+      "detail": ""
+    },
+    {
+      "ok": true,
+      "id": "overflow:index.html:desktop",
+      "detail": ""
+    },
+    {
+      "ok": true,
+      "id": "overflow:portfolio.html:desktop",
+      "detail": ""
+    },
+    {
+      "ok": true,
+      "id": "overflow:universe-map.html:desktop",
+      "detail": ""
+    },
+    {
+      "ok": true,
+      "id": "overflow:gallery.html:desktop",
+      "detail": ""
+    },
+    {
+      "ok": true,
+      "id": "overflow:museum.html:desktop",
+      "detail": ""
+    },
+    {
+      "ok": true,
+      "id": "overflow:guide-sandbox.html:desktop",
+      "detail": ""
+    },
+    {
+      "ok": true,
+      "id": "overflow:ai-integrity.html:desktop",
+      "detail": ""
+    },
+    {
+      "ok": true,
+      "id": "overflow:gateway.html:desktop",
+      "detail": ""
+    },
+    {
+      "ok": true,
+      "id": "overflow:index.html:tablet",
+      "detail": ""
+    },
+    {
+      "ok": true,
+      "id": "overflow:portfolio.html:tablet",
+      "detail": ""
+    },
+    {
+      "ok": true,
+      "id": "overflow:universe-map.html:tablet",
+      "detail": ""
+    },
+    {
+      "ok": true,
+      "id": "overflow:gallery.html:tablet",
+      "detail": ""
+    },
+    {
+      "ok": true,
+      "id": "overflow:museum.html:tablet",
+      "detail": ""
+    },
+    {
+      "ok": true,
+      "id": "overflow:guide-sandbox.html:tablet",
+      "detail": ""
+    },
+    {
+      "ok": true,
+      "id": "overflow:ai-integrity.html:tablet",
+      "detail": ""
+    },
+    {
+      "ok": true,
+      "id": "overflow:gateway.html:tablet",
+      "detail": ""
+    },
+    {
+      "ok": true,
+      "id": "overflow:index.html:mobile",
+      "detail": ""
+    },
+    {
+      "ok": true,
+      "id": "overflow:portfolio.html:mobile",
+      "detail": ""
+    },
+    {
+      "ok": true,
+      "id": "overflow:universe-map.html:mobile",
+      "detail": ""
+    },
+    {
+      "ok": true,
+      "id": "overflow:gallery.html:mobile",
+      "detail": ""
+    },
+    {
+      "ok": true,
+      "id": "overflow:museum.html:mobile",
+      "detail": ""
+    },
+    {
+      "ok": true,
+      "id": "overflow:guide-sandbox.html:mobile",
+      "detail": ""
+    },
+    {
+      "ok": true,
+      "id": "overflow:ai-integrity.html:mobile",
+      "detail": ""
+    },
+    {
+      "ok": true,
+      "id": "overflow:gateway.html:mobile",
+      "detail": ""
+    },
+    {
+      "ok": true,
+      "id": "external-calls",
+      "detail": ""
+    },
+    {
+      "ok": true,
+      "id": "script-errors",
+      "detail": ""
+    }
+  ],
+  "overflow": [
+    {
+      "file": "index.html",
+      "name": "desktop",
+      "width": 1440,
+      "height": 900,
+      "overflowX": false
+    },
+    {
+      "file": "portfolio.html",
+      "name": "desktop",
+      "width": 1440,
+      "height": 900,
+      "overflowX": false
+    },
+    {
+      "file": "universe-map.html",
+      "name": "desktop",
+      "width": 1440,
+      "height": 900,
+      "overflowX": false
+    },
+    {
+      "file": "gallery.html",
+      "name": "desktop",
+      "width": 1440,
+      "height": 900,
+      "overflowX": false
+    },
+    {
+      "file": "museum.html",
+      "name": "desktop",
+      "width": 1440,
+      "height": 900,
+      "overflowX": false
+    },
+    {
+      "file": "guide-sandbox.html",
+      "name": "desktop",
+      "width": 1440,
+      "height": 900,
+      "overflowX": false
+    },
+    {
+      "file": "ai-integrity.html",
+      "name": "desktop",
+      "width": 1440,
+      "height": 900,
+      "overflowX": false
+    },
+    {
+      "file": "gateway.html",
+      "name": "desktop",
+      "width": 1440,
+      "height": 900,
+      "overflowX": false
+    },
+    {
+      "file": "index.html",
+      "name": "tablet",
+      "width": 768,
+      "height": 1024,
+      "overflowX": false
+    },
+    {
+      "file": "portfolio.html",
+      "name": "tablet",
+      "width": 768,
+      "height": 1024,
+      "overflowX": false
+    },
+    {
+      "file": "universe-map.html",
+      "name": "tablet",
+      "width": 768,
+      "height": 1024,
+      "overflowX": false
+    },
+    {
+      "file": "gallery.html",
+      "name": "tablet",
+      "width": 768,
+      "height": 1024,
+      "overflowX": false
+    },
+    {
+      "file": "museum.html",
+      "name": "tablet",
+      "width": 768,
+      "height": 1024,
+      "overflowX": false
+    },
+    {
+      "file": "guide-sandbox.html",
+      "name": "tablet",
+      "width": 768,
+      "height": 1024,
+      "overflowX": false
+    },
+    {
+      "file": "ai-integrity.html",
+      "name": "tablet",
+      "width": 768,
+      "height": 1024,
+      "overflowX": false
+    },
+    {
+      "file": "gateway.html",
+      "name": "tablet",
+      "width": 768,
+      "height": 1024,
+      "overflowX": false
+    },
+    {
+      "file": "index.html",
+      "name": "mobile",
+      "width": 390,
+      "height": 844,
+      "overflowX": false
+    },
+    {
+      "file": "portfolio.html",
+      "name": "mobile",
+      "width": 390,
+      "height": 844,
+      "overflowX": false
+    },
+    {
+      "file": "universe-map.html",
+      "name": "mobile",
+      "width": 390,
+      "height": 844,
+      "overflowX": false
+    },
+    {
+      "file": "gallery.html",
+      "name": "mobile",
+      "width": 390,
+      "height": 844,
+      "overflowX": false
+    },
+    {
+      "file": "museum.html",
+      "name": "mobile",
+      "width": 390,
+      "height": 844,
+      "overflowX": false
+    },
+    {
+      "file": "guide-sandbox.html",
+      "name": "mobile",
+      "width": 390,
+      "height": 844,
+      "overflowX": false
+    },
+    {
+      "file": "ai-integrity.html",
+      "name": "mobile",
+      "width": 390,
+      "height": 844,
+      "overflowX": false
+    },
+    {
+      "file": "gateway.html",
+      "name": "mobile",
+      "width": 390,
+      "height": 844,
+      "overflowX": false
+    }
+  ],
+  "external_http_https": [],
+  "page_errors": [],
+  "pass": true
+}

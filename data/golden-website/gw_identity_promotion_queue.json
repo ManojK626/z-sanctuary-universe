@@ -1,0 +1,524 @@
+{
+  "schema": "gw_identity_promotion_queue_v1",
+  "phase": "GW-1",
+  "generated_from": "data/golden-website/gw_portfolio_registry.json",
+  "generated_at": "2026-08-27T05:49:22.819Z",
+  "policy": "DO_NOT_MASS_PROMOTE",
+  "promotion_this_phase": 0,
+  "criteria": [
+    "unique identity",
+    "resolved aliases / no collision",
+    "stable parent",
+    "stable type",
+    "source-of-truth pointer"
+  ],
+  "note": "Temporary IDs stay TEMPORARY_PENDING_CANONICAL_REVIEW through GW-1. Overlay still stores them in canonical_id for inventory history; GW-1 maps those to temporary_id with canonical_id null.",
+  "items": [
+    {
+      "canonical_id": null,
+      "temporary_id": "ZS-PROJECT-000",
+      "public_slug": "the-golden-website",
+      "overlay_name": "Z-Sanctuary Golden Website (future public knowledge twin)",
+      "type": "PROJECT",
+      "parent_organism_project": "z-sanctuary-universe",
+      "unique_identity": true,
+      "duplicate_or_alias_collision": false,
+      "stable_parent": true,
+      "stable_type": true,
+      "source_of_truth_present": true,
+      "source_of_truth_count": 2,
+      "promotion_criteria_met": true,
+      "recommendation": "DO_NOT_PROMOTE_THIS_PHASE",
+      "notes": [
+        "Promotion requires unique identity + resolved aliases + stable parent + stable type + source-of-truth + no collision.",
+        "GW-1 does not promote temporary IDs because they survived inventory."
+      ]
+    },
+    {
+      "canonical_id": null,
+      "temporary_id": "ZS-AI-001",
+      "public_slug": null,
+      "overlay_name": "Z-EAII",
+      "type": "AI",
+      "parent_organism_project": "z-sanctuary-universe",
+      "unique_identity": false,
+      "duplicate_or_alias_collision": true,
+      "stable_parent": true,
+      "stable_type": true,
+      "source_of_truth_present": true,
+      "source_of_truth_count": 2,
+      "promotion_criteria_met": false,
+      "recommendation": "DO_NOT_PROMOTE_THIS_PHASE",
+      "notes": [
+        "Promotion requires unique identity + resolved aliases + stable parent + stable type + source-of-truth + no collision.",
+        "GW-1 does not promote temporary IDs because they survived inventory."
+      ]
+    },
+    {
+      "canonical_id": null,
+      "temporary_id": "ZS-AI-002",
+      "public_slug": null,
+      "overlay_name": "Z-Super Overseer AI",
+      "type": "AI",
+      "parent_organism_project": "z-sanctuary-universe",
+      "unique_identity": true,
+      "duplicate_or_alias_collision": false,
+      "stable_parent": true,
+      "stable_type": true,
+      "source_of_truth_present": true,
+      "source_of_truth_count": 1,
+      "promotion_criteria_met": true,
+      "recommendation": "DO_NOT_PROMOTE_THIS_PHASE",
+      "notes": [
+        "Promotion requires unique identity + resolved aliases + stable parent + stable type + source-of-truth + no collision.",
+        "GW-1 does not promote temporary IDs because they survived inventory."
+      ]
+    },
+    {
+      "canonical_id": null,
+      "temporary_id": "ZS-AI-003",
+      "public_slug": null,
+      "overlay_name": "Z-SSWS",
+      "type": "AI",
+      "parent_organism_project": "z-sanctuary-universe",
+      "unique_identity": true,
+      "duplicate_or_alias_collision": false,
+      "stable_parent": true,
+      "stable_type": true,
+      "source_of_truth_present": true,
+      "source_of_truth_count": 1,
+      "promotion_criteria_met": true,
+      "recommendation": "DO_NOT_PROMOTE_THIS_PHASE",
+      "notes": [
+        "Promotion requires unique identity + resolved aliases + stable parent + stable type + source-of-truth + no collision.",
+        "GW-1 does not promote temporary IDs because they survived inventory."
+      ]
+    },
+    {
+      "canonical_id": null,
+      "temporary_id": "ZS-AI-004",
+      "public_slug": null,
+      "overlay_name": "Zuno",
+      "type": "AI",
+      "parent_organism_project": "z-sanctuary-universe",
+      "unique_identity": false,
+      "duplicate_or_alias_collision": true,
+      "stable_parent": true,
+      "stable_type": true,
+      "source_of_truth_present": true,
+      "source_of_truth_count": 2,
+      "promotion_criteria_met": false,
+      "recommendation": "DO_NOT_PROMOTE_THIS_PHASE",
+      "notes": [
+        "Promotion requires unique identity + resolved aliases + stable parent + stable type + source-of-truth + no collision.",
+        "GW-1 does not promote temporary IDs because they survived inventory."
+      ]
+    },
+    {
+      "canonical_id": null,
+      "temporary_id": "ZS-AI-005",
+      "public_slug": null,
+      "overlay_name": "AI Tower / mini-bot layer",
+      "type": "AI",
+      "parent_organism_project": "z-sanctuary-universe",
+      "unique_identity": true,
+      "duplicate_or_alias_collision": false,
+      "stable_parent": true,
+      "stable_type": true,
+      "source_of_truth_present": true,
+      "source_of_truth_count": 2,
+      "promotion_criteria_met": true,
+      "recommendation": "DO_NOT_PROMOTE_THIS_PHASE",
+      "notes": [
+        "Promotion requires unique identity + resolved aliases + stable parent + stable type + source-of-truth + no collision.",
+        "GW-1 does not promote temporary IDs because they survived inventory."
+      ]
+    },
+    {
+      "canonical_id": null,
+      "temporary_id": "ZS-AI-006",
+      "public_slug": null,
+      "overlay_name": "Z-ICIS (insect scientific memory organism)",
+      "type": "AI",
+      "parent_organism_project": "z-sanctuary-universe",
+      "unique_identity": true,
+      "duplicate_or_alias_collision": false,
+      "stable_parent": true,
+      "stable_type": true,
+      "source_of_truth_present": true,
+      "source_of_truth_count": 2,
+      "promotion_criteria_met": true,
+      "recommendation": "DO_NOT_PROMOTE_HARD_WITHHOLD",
+      "notes": [
+        "Promotion requires unique identity + resolved aliases + stable parent + stable type + source-of-truth + no collision.",
+        "GW-1 does not promote temporary IDs because they survived inventory."
+      ]
+    },
+    {
+      "canonical_id": null,
+      "temporary_id": "ZS-AI-007",
+      "public_slug": null,
+      "overlay_name": "Folder Manager AI",
+      "type": "AI",
+      "parent_organism_project": "z-sanctuary-universe",
+      "unique_identity": true,
+      "duplicate_or_alias_collision": false,
+      "stable_parent": true,
+      "stable_type": true,
+      "source_of_truth_present": true,
+      "source_of_truth_count": 2,
+      "promotion_criteria_met": true,
+      "recommendation": "DO_NOT_PROMOTE_HARD_WITHHOLD",
+      "notes": [
+        "Promotion requires unique identity + resolved aliases + stable parent + stable type + source-of-truth + no collision.",
+        "GW-1 does not promote temporary IDs because they survived inventory."
+      ]
+    },
+    {
+      "canonical_id": null,
+      "temporary_id": "ZS-AI-008",
+      "public_slug": null,
+      "overlay_name": "Z-HODP (Head Organiser Dashboards)",
+      "type": "AI",
+      "parent_organism_project": "z-sanctuary-universe",
+      "unique_identity": true,
+      "duplicate_or_alias_collision": false,
+      "stable_parent": true,
+      "stable_type": true,
+      "source_of_truth_present": true,
+      "source_of_truth_count": 1,
+      "promotion_criteria_met": true,
+      "recommendation": "DO_NOT_PROMOTE_THIS_PHASE",
+      "notes": [
+        "Promotion requires unique identity + resolved aliases + stable parent + stable type + source-of-truth + no collision.",
+        "GW-1 does not promote temporary IDs because they survived inventory."
+      ]
+    },
+    {
+      "canonical_id": null,
+      "temporary_id": "ZS-AI-009",
+      "public_slug": null,
+      "overlay_name": "Z-AI QADP (Questions, Answers & Directed Pathways)",
+      "type": "AI",
+      "parent_organism_project": "z-sanctuary-universe",
+      "unique_identity": false,
+      "duplicate_or_alias_collision": true,
+      "stable_parent": true,
+      "stable_type": true,
+      "source_of_truth_present": true,
+      "source_of_truth_count": 1,
+      "promotion_criteria_met": false,
+      "recommendation": "DO_NOT_PROMOTE_THIS_PHASE",
+      "notes": [
+        "Promotion requires unique identity + resolved aliases + stable parent + stable type + source-of-truth + no collision.",
+        "GW-1 does not promote temporary IDs because they survived inventory."
+      ]
+    },
+    {
+      "canonical_id": null,
+      "temporary_id": "ZS-AI-010",
+      "public_slug": null,
+      "overlay_name": "Stakeholder / Business / HR / Financials / Joker AIs (vision)",
+      "type": "AI",
+      "parent_organism_project": "z-sanctuary-universe",
+      "unique_identity": true,
+      "duplicate_or_alias_collision": false,
+      "stable_parent": true,
+      "stable_type": true,
+      "source_of_truth_present": true,
+      "source_of_truth_count": 1,
+      "promotion_criteria_met": true,
+      "recommendation": "DO_NOT_PROMOTE_THIS_PHASE",
+      "notes": [
+        "Promotion requires unique identity + resolved aliases + stable parent + stable type + source-of-truth + no collision.",
+        "GW-1 does not promote temporary IDs because they survived inventory."
+      ]
+    },
+    {
+      "canonical_id": null,
+      "temporary_id": "ZS-FORMULA-001",
+      "public_slug": null,
+      "overlay_name": "Ω(♾️) compassion formula",
+      "type": "FORMULA",
+      "parent_organism_project": "z-sanctuary-universe",
+      "unique_identity": true,
+      "duplicate_or_alias_collision": false,
+      "stable_parent": true,
+      "stable_type": true,
+      "source_of_truth_present": true,
+      "source_of_truth_count": 1,
+      "promotion_criteria_met": true,
+      "recommendation": "DO_NOT_PROMOTE_THIS_PHASE",
+      "notes": [
+        "Promotion requires unique identity + resolved aliases + stable parent + stable type + source-of-truth + no collision.",
+        "GW-1 does not promote temporary IDs because they survived inventory."
+      ]
+    },
+    {
+      "canonical_id": null,
+      "temporary_id": "ZS-FORMULA-002",
+      "public_slug": null,
+      "overlay_name": "14 DRP Protocols",
+      "type": "FORMULA",
+      "parent_organism_project": "z-sanctuary-universe",
+      "unique_identity": true,
+      "duplicate_or_alias_collision": false,
+      "stable_parent": true,
+      "stable_type": true,
+      "source_of_truth_present": true,
+      "source_of_truth_count": 1,
+      "promotion_criteria_met": true,
+      "recommendation": "DO_NOT_PROMOTE_THIS_PHASE",
+      "notes": [
+        "Promotion requires unique identity + resolved aliases + stable parent + stable type + source-of-truth + no collision.",
+        "GW-1 does not promote temporary IDs because they survived inventory."
+      ]
+    },
+    {
+      "canonical_id": null,
+      "temporary_id": "ZS-FORMULA-003",
+      "public_slug": null,
+      "overlay_name": "GGAESP 360° ring",
+      "type": "FORMULA",
+      "parent_organism_project": "z-sanctuary-universe",
+      "unique_identity": false,
+      "duplicate_or_alias_collision": true,
+      "stable_parent": true,
+      "stable_type": true,
+      "source_of_truth_present": true,
+      "source_of_truth_count": 2,
+      "promotion_criteria_met": false,
+      "recommendation": "DO_NOT_PROMOTE_THIS_PHASE",
+      "notes": [
+        "Promotion requires unique identity + resolved aliases + stable parent + stable type + source-of-truth + no collision.",
+        "GW-1 does not promote temporary IDs because they survived inventory."
+      ]
+    },
+    {
+      "canonical_id": null,
+      "temporary_id": "ZS-EVIDENCE-001",
+      "public_slug": null,
+      "overlay_name": "Hub green-receipt corpus",
+      "type": "EVIDENCE",
+      "parent_organism_project": "z-sanctuary-universe",
+      "unique_identity": true,
+      "duplicate_or_alias_collision": false,
+      "stable_parent": true,
+      "stable_type": true,
+      "source_of_truth_present": true,
+      "source_of_truth_count": 1,
+      "promotion_criteria_met": true,
+      "recommendation": "DO_NOT_PROMOTE_THIS_PHASE",
+      "notes": [
+        "Promotion requires unique identity + resolved aliases + stable parent + stable type + source-of-truth + no collision.",
+        "GW-1 does not promote temporary IDs because they survived inventory."
+      ]
+    },
+    {
+      "canonical_id": null,
+      "temporary_id": "ZS-EVIDENCE-002",
+      "public_slug": null,
+      "overlay_name": "Universal Workstation Navigator green receipt",
+      "type": "EVIDENCE",
+      "parent_organism_project": "z-sanctuary-universe",
+      "unique_identity": true,
+      "duplicate_or_alias_collision": false,
+      "stable_parent": true,
+      "stable_type": true,
+      "source_of_truth_present": true,
+      "source_of_truth_count": 1,
+      "promotion_criteria_met": true,
+      "recommendation": "DO_NOT_PROMOTE_THIS_PHASE",
+      "notes": [
+        "Promotion requires unique identity + resolved aliases + stable parent + stable type + source-of-truth + no collision.",
+        "GW-1 does not promote temporary IDs because they survived inventory."
+      ]
+    },
+    {
+      "canonical_id": null,
+      "temporary_id": "ZS-EVIDENCE-003",
+      "public_slug": null,
+      "overlay_name": "Commercial readiness / SUSBV pathway",
+      "type": "EVIDENCE",
+      "parent_organism_project": "z-sanctuary-universe",
+      "unique_identity": true,
+      "duplicate_or_alias_collision": false,
+      "stable_parent": true,
+      "stable_type": true,
+      "source_of_truth_present": true,
+      "source_of_truth_count": 3,
+      "promotion_criteria_met": true,
+      "recommendation": "DO_NOT_PROMOTE_THIS_PHASE",
+      "notes": [
+        "Promotion requires unique identity + resolved aliases + stable parent + stable type + source-of-truth + no collision.",
+        "GW-1 does not promote temporary IDs because they survived inventory."
+      ]
+    },
+    {
+      "canonical_id": null,
+      "temporary_id": "ZS-VISUAL-001",
+      "public_slug": null,
+      "overlay_name": "ICIS scientific visual fixtures",
+      "type": "VISUAL",
+      "parent_organism_project": "z-sanctuary-universe",
+      "unique_identity": true,
+      "duplicate_or_alias_collision": false,
+      "stable_parent": true,
+      "stable_type": true,
+      "source_of_truth_present": true,
+      "source_of_truth_count": 1,
+      "promotion_criteria_met": true,
+      "recommendation": "DO_NOT_PROMOTE_HARD_WITHHOLD",
+      "notes": [
+        "Promotion requires unique identity + resolved aliases + stable parent + stable type + source-of-truth + no collision.",
+        "GW-1 does not promote temporary IDs because they survived inventory."
+      ]
+    },
+    {
+      "canonical_id": null,
+      "temporary_id": "ZS-VISUAL-002",
+      "public_slug": null,
+      "overlay_name": "Z-Auto Screenshots & Sounds Detectors (doctrine)",
+      "type": "VISUAL",
+      "parent_organism_project": "z-sanctuary-universe",
+      "unique_identity": true,
+      "duplicate_or_alias_collision": false,
+      "stable_parent": true,
+      "stable_type": true,
+      "source_of_truth_present": true,
+      "source_of_truth_count": 1,
+      "promotion_criteria_met": true,
+      "recommendation": "DO_NOT_PROMOTE_THIS_PHASE",
+      "notes": [
+        "Promotion requires unique identity + resolved aliases + stable parent + stable type + source-of-truth + no collision.",
+        "GW-1 does not promote temporary IDs because they survived inventory."
+      ]
+    },
+    {
+      "canonical_id": null,
+      "temporary_id": "ZS-PROTOTYPE-001",
+      "public_slug": null,
+      "overlay_name": "AMK-Goku Main Control Map",
+      "type": "PROTOTYPE",
+      "parent_organism_project": "z-sanctuary-universe",
+      "unique_identity": true,
+      "duplicate_or_alias_collision": false,
+      "stable_parent": true,
+      "stable_type": true,
+      "source_of_truth_present": true,
+      "source_of_truth_count": 1,
+      "promotion_criteria_met": true,
+      "recommendation": "DO_NOT_PROMOTE_THIS_PHASE",
+      "notes": [
+        "Promotion requires unique identity + resolved aliases + stable parent + stable type + source-of-truth + no collision.",
+        "GW-1 does not promote temporary IDs because they survived inventory."
+      ]
+    },
+    {
+      "canonical_id": null,
+      "temporary_id": "ZS-PROTOTYPE-002",
+      "public_slug": null,
+      "overlay_name": "Cycle Observe read-only dashboard",
+      "type": "PROTOTYPE",
+      "parent_organism_project": "z-sanctuary-universe",
+      "unique_identity": true,
+      "duplicate_or_alias_collision": false,
+      "stable_parent": true,
+      "stable_type": true,
+      "source_of_truth_present": true,
+      "source_of_truth_count": 1,
+      "promotion_criteria_met": true,
+      "recommendation": "DO_NOT_PROMOTE_THIS_PHASE",
+      "notes": [
+        "Promotion requires unique identity + resolved aliases + stable parent + stable type + source-of-truth + no collision.",
+        "GW-1 does not promote temporary IDs because they survived inventory."
+      ]
+    },
+    {
+      "canonical_id": null,
+      "temporary_id": "ZS-PROTOTYPE-003",
+      "public_slug": null,
+      "overlay_name": "Universal Canvas lite",
+      "type": "PROTOTYPE",
+      "parent_organism_project": "z-sanctuary-universe",
+      "unique_identity": true,
+      "duplicate_or_alias_collision": false,
+      "stable_parent": true,
+      "stable_type": true,
+      "source_of_truth_present": true,
+      "source_of_truth_count": 1,
+      "promotion_criteria_met": true,
+      "recommendation": "DO_NOT_PROMOTE_THIS_PHASE",
+      "notes": [
+        "Promotion requires unique identity + resolved aliases + stable parent + stable type + source-of-truth + no collision.",
+        "GW-1 does not promote temporary IDs because they survived inventory."
+      ]
+    },
+    {
+      "canonical_id": null,
+      "temporary_id": "ZS-PROTOTYPE-004",
+      "public_slug": null,
+      "overlay_name": "Zilwa exhibit hub (HTML family representative)",
+      "type": "PROTOTYPE",
+      "parent_organism_project": "z-sanctuary-universe",
+      "unique_identity": true,
+      "duplicate_or_alias_collision": false,
+      "stable_parent": true,
+      "stable_type": true,
+      "source_of_truth_present": true,
+      "source_of_truth_count": 1,
+      "promotion_criteria_met": true,
+      "recommendation": "DO_NOT_PROMOTE_THIS_PHASE",
+      "notes": [
+        "Promotion requires unique identity + resolved aliases + stable parent + stable type + source-of-truth + no collision.",
+        "GW-1 does not promote temporary IDs because they survived inventory."
+      ]
+    },
+    {
+      "canonical_id": null,
+      "temporary_id": "ZS-PROTOTYPE-006",
+      "public_slug": null,
+      "overlay_name": "Addon dashboard HTML",
+      "type": "PROTOTYPE",
+      "parent_organism_project": "z-sanctuary-universe",
+      "unique_identity": true,
+      "duplicate_or_alias_collision": false,
+      "stable_parent": true,
+      "stable_type": true,
+      "source_of_truth_present": true,
+      "source_of_truth_count": 1,
+      "promotion_criteria_met": true,
+      "recommendation": "DO_NOT_PROMOTE_THIS_PHASE",
+      "notes": [
+        "Promotion requires unique identity + resolved aliases + stable parent + stable type + source-of-truth + no collision.",
+        "GW-1 does not promote temporary IDs because they survived inventory."
+      ]
+    },
+    {
+      "canonical_id": null,
+      "temporary_id": "ZS-PROTOTYPE-007",
+      "public_slug": null,
+      "overlay_name": "Crystal DNA map panel",
+      "type": "PROTOTYPE",
+      "parent_organism_project": "z-sanctuary-universe",
+      "unique_identity": true,
+      "duplicate_or_alias_collision": false,
+      "stable_parent": true,
+      "stable_type": true,
+      "source_of_truth_present": true,
+      "source_of_truth_count": 1,
+      "promotion_criteria_met": true,
+      "recommendation": "DO_NOT_PROMOTE_THIS_PHASE",
+      "notes": [
+        "Promotion requires unique identity + resolved aliases + stable parent + stable type + source-of-truth + no collision.",
+        "GW-1 does not promote temporary IDs because they survived inventory."
+      ]
+    }
+  ],
+  "statistics": {
+    "temporary_ids_assessed": 25,
+    "criteria_fully_met_but_not_promoted": 21,
+    "collision_flagged": 4,
+    "promoted": 0
+  }
+}
