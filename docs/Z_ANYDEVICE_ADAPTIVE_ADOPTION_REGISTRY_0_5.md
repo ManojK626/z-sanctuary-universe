@@ -1,6 +1,6 @@
 # Z-AnyDevice adaptive adoption registry 0.5
 
-Inventory reconciled to 0.6 local evidence. This registry records adaptive-interface evidence. It does not grant device trust, approval, quarantine, or security posture, and it does not authorize a new project edit.
+Inventory reconciled through the 1.1 Project #3 evidence record. This registry records adaptive-interface evidence. It does not grant device trust, approval, quarantine, or security posture, and it does not authorize another project edit.
 
 Machine inventory: `data/z_anydevice_adaptive_adoption_registry.json`
 
@@ -21,8 +21,11 @@ Machine inventory: `data/z_anydevice_adaptive_adoption_registry.json`
 | --- | --- | --- | --- | --- |
 | `dashboard/Html/index-skk-rkpk.html` | GREEN | PASS | PASS | PASS |
 | `apps/web` | GREEN | PASS | PASS | PASS |
+| `dashboard/Html/amk-goku-main-control.html` | GREEN | PASS | PASS | PASS |
 
 The earlier Firefox and WebKit dashboard link-list difference is a test-harness artifact. The same seven report links are hidden on mobile and compact in every browser, and visible on standard and wide. Required destinations match.
+
+AMK-Goku Main Control is GREEN from external harness evidence on `dd2085d6f19ba3428f9e5984b7ea8c76bb7f3c46`. That record stayed `NOT_TESTED` until the steward accepted the evidence. Physical-device evidence is `NOT_COLLECTED`. `z-density` is not applicable.
 
 The cockpit body scale stays `0.5`. Coarse-pointer controls use `calc(44px / var(--z-body-ui-scale, 1))`, so the effective target is 44px where CSS zoom changes the border box. Fine pointer keeps the existing desktop sizes.
 
@@ -34,7 +37,6 @@ These surfaces are not authorized for mutation:
 
 | Candidate | Status |
 | --- | --- |
-| `dashboard/Html/amk-goku-main-control.html` | NOT_TESTED |
 | Z-Connect sealed preview lineage | NOT_TESTED |
 | Z-Golden canonical web surface | NOT_TESTED |
 
@@ -42,6 +44,6 @@ Archives, snapshots, exports, and generated copies stay out of the active queue.
 
 `ADAPTIVE_STATUS_IS_NOT_DEVICE_TRUST`
 
-`Z_ANYDEVICE_ADAPTIVE_PLATFORM_CAPABILITY: PROVEN_TWO_HOST_PLATFORM_CAPABILITY`
+`Z_ANYDEVICE_ADAPTIVE_PLATFORM_CAPABILITY: PROVEN_THREE_HOST_PLATFORM_CAPABILITY`
 
 `ECOSYSTEM_WIDE_GREEN: NO`
