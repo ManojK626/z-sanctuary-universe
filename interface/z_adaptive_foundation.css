@@ -1,0 +1,32 @@
+/* Generic adaptive foundation for an opted-in host.
+ * No cockpit rail, strip, chronicle, or morph selectors.
+ * Unknown pointer and unknown hover do not hide controls.
+ */
+
+body.z-anydevice-adaptive {
+  min-height: 100vh;
+  min-height: 100svh;
+  min-height: 100dvh;
+  padding-top: max(1rem, env(safe-area-inset-top, 0px));
+  padding-right: max(1rem, env(safe-area-inset-right, 0px));
+  padding-bottom: max(1rem, env(safe-area-inset-bottom, 0px));
+  padding-left: max(1rem, env(safe-area-inset-left, 0px));
+}
+
+body.z-anydevice-adaptive :focus-visible {
+  outline: 2px solid #7cb3ff;
+  outline-offset: 2px;
+}
+
+@media (pointer: coarse) {
+  body.z-anydevice-adaptive .z-adaptive-target {
+    min-height: 44px;
+    min-width: 44px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  body.z-anydevice-adaptive {
+    scroll-behavior: auto;
+  }
+}

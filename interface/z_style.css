@@ -4706,17 +4706,7 @@ body.z-dashboard-organism.z-dash-a11y-large .z-top-a11y-chip input {
   height: 1.15rem;
 }
 
-/* Z-AnyDevice adaptive prototype 0.1 — canonical dashboard host only. */
-body.z-anydevice-adaptive {
-  min-height: 100vh;
-  min-height: 100svh;
-  min-height: 100dvh;
-  padding-top: max(1rem, env(safe-area-inset-top, 0px));
-  padding-right: max(1rem, env(safe-area-inset-right, 0px));
-  padding-bottom: max(1rem, env(safe-area-inset-bottom, 0px));
-  padding-left: max(1rem, env(safe-area-inset-left, 0px));
-}
-
+/* Dashboard adapter. Generic safe-area and viewport units live in z_adaptive_foundation.css. */
 body.z-anydevice-adaptive .dashboard-edge-bar.edge-top {
   top: max(0.75rem, env(safe-area-inset-top, 0px));
 }
