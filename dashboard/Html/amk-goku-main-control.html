@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
     <meta name="z-project-id" content="ZSanctuary_Universe" />
     <meta name="z-dashboard-role" content="amk-main-control-map" />
     <meta name="z-project-family" content="Z-Sanctuary Universe" />
@@ -12,8 +12,10 @@
     <link rel="stylesheet" href="../styles/amk-zuno-advisor.css" />
     <link rel="stylesheet" href="../styles/z-root-guardian-coordination.css" />
     <link rel="stylesheet" href="../styles/z-anydevice-evidence.css" />
+    <link rel="stylesheet" href="../../interface/z_adaptive_foundation.css" />
+    <link rel="stylesheet" href="../styles/z-anydevice-main-control-host.css" />
   </head>
-  <body class="amk-map-root amk-dash-flex" id="amkMapRootBody">
+  <body class="amk-map-root amk-dash-flex z-anydevice-adaptive" id="amkMapRootBody">
     <a class="amk-map-skip" href="#amk-main">Skip to main content</a>
     <div class="amk-dash-app" id="amkDashApp">
       <header class="amk-dash-ribbon amk-dash-aura-slow" role="banner">
@@ -387,6 +389,8 @@
         <div id="amkToolsMount" class="amk-dash-tools-mount"></div>
       </aside>
     </div>
+    <script defer src="../../core/z_adaptive_runtime.cjs"></script>
+    <script defer src="../scripts/z_anydevice_main_control_host.js"></script>
     <script defer src="../scripts/amk-goku-main-control-readonly.js"></script>
     <script defer src="../scripts/amk-project-indicators-readonly.js"></script>
     <script defer src="../scripts/amk-zuno-advisor-readonly.js"></script>

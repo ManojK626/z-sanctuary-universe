@@ -61,7 +61,9 @@ assert.ok(!/z_adaptive_runtime/.test(fs.readFileSync(path.join(root, 'dashboard/
 
 const html = fs.readFileSync(path.join(root, 'dashboard/Html/amk-goku-main-control.html'), 'utf8');
 assert.ok(html.includes('zAnyDeviceEvidenceMount'));
-assert.ok(!html.includes('z_adaptive_runtime'));
-assert.ok(!html.includes('z-anydevice-adaptive'));
+assert.ok(html.includes('z_adaptive_runtime.cjs'));
+assert.ok(html.includes('z-anydevice-adaptive'));
+assert.ok(html.includes('z_anydevice_main_control_host.js'));
+assert.ok(!html.includes('z_layout_engine.js'));
 
 console.log('Z_ANYDEVICE_EVIDENCE_VIEW: PASS');
