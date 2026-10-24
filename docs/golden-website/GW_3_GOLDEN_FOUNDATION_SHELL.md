@@ -72,6 +72,8 @@ Each shows: **Coming through evidence gates**. No private data.
 - No iframe of unsanitized hub HTML
 - Local-only; publication still NOT_YET_AUTHORIZED
 
+The home page may load the shared adaptive runtime for presentation only. That opt-in does not change which records are public-safe, does not publish the site, and does not write an adaptive status. Sibling shell pages stay on their existing layout.
+
 ## Accessibility posture
 
 - Skip link
