@@ -191,8 +191,15 @@ async function truthAt(browser, width, height) {
   if (!beforeRegistry.equals(fs.readFileSync(REGISTRY))) failures.push('registry bytes changed');
   if (beforeJs !== sha(PUBLIC_JS) || beforeJson !== sha(PUBLIC_JSON)) failures.push('public record set changed');
   const registry = JSON.parse(beforeRegistry.toString('utf8'));
-  const golden = registry.candidate_backlog.find((row) => row.project_id === 'z-golden');
-  if (!golden || golden.status !== 'NOT_TESTED') failures.push('golden registry status moved');
+  const golden = registry.entries.find((row) => row.project_id === 'z-golden');
+  const connect = registry.candidate_backlog.find((row) => row.project_id === 'z-connect');
+  if (!golden || golden.status !== 'GREEN' || golden.canonical_surface !== 'docs/golden-website/shell/index.html') {
+    failures.push('golden home registry record missing');
+  }
+  if (golden && golden.canonical_source_sha !== '825a671c03a9ebdfa4724a59dcc71abaffd8c69c') {
+    failures.push('golden evidence sha rewritten');
+  }
+  if (!connect || connect.status !== 'NOT_TESTED') failures.push('z-connect status moved');
   console.log(JSON.stringify({
     failures,
     GOLDEN: failures.some((item) => /^(chromium|firefox|webkit) /.test(item)) ? 'FAIL' : 'PASS',
