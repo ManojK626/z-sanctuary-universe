@@ -160,7 +160,7 @@
       "open_p0": [],
       "open_p1": [],
       "open_p2": [],
-      "evidence_receipt": "2.25 canonical post-merge verification from e24a96437ee2683b308a2f830885a3aaf9f727b3. Chromium, Firefox, and WebKit passed the 12-size synthetic matrix, fine/coarse pointer, hover/no-hover, keyboard, reduced motion, safe area, dynamic viewport, effective touch targets, consent/discovery/business-truth parity, and canonical runtime/adaptive regressions. Candidate network calls were zero. Physical-device evidence was not collected. Registry adoption remains subject to Steward approval."
+      "evidence_receipt": "2.25 canonical post-merge verification from e24a96437ee2683b308a2f830885a3aaf9f727b3. Chromium, Firefox, and WebKit passed the 12-size synthetic matrix, fine/coarse pointer, hover/no-hover, keyboard, reduced motion, safe area, dynamic viewport, effective touch targets, consent/discovery/business-truth parity, and canonical runtime/adaptive regressions. Candidate network calls were zero. Physical-device evidence was not collected. This evidence receipt does not itself authorize deployment, device trust, or ecosystem-wide GREEN."
     }
   ],
   "fixtures": [
