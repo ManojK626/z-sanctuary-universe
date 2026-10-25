@@ -13,12 +13,13 @@ const WEB = process.env.Z_ADAPTIVE_WEB_BASE || 'http://127.0.0.1:4202';
 const REGISTRY = path.join(ROOT, 'data', 'z_anydevice_adaptive_adoption_registry.json');
 const LAYOUTS = [[390, 844], [1024, 768], [1440, 900], [1920, 1080]];
 const TRUTH = [
-  'PROVEN_FOUR_HOST_PLATFORM_CAPABILITY',
+  'PROVEN_FIVE_HOST_PLATFORM_CAPABILITY',
   'Ecosystem-wide GREEN: NO',
   'unified-dashboard GREEN',
   'apps-web GREEN',
   'amk-goku-main-control GREEN',
   'z-golden GREEN',
+  'z-connect GREEN',
   'Open P0: 0',
   'Open P1: 0',
   'Open P2: 1',

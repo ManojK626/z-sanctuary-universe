@@ -132,6 +132,35 @@
       "open_p1": [],
       "open_p2": [],
       "evidence_receipt": "1.7 steward acceptance of external harness evidence for the canonical home page only. Sibling Golden shell pages remain NOT_TESTED. Chromium, Firefox, and WebKit passed the 12-size matrix, fine and coarse pointer, hover and no-hover, keyboard, reduced motion, safe area, dynamic viewport, and business-truth parity. The public record set was unchanged. Publication is not authorized. Human screen-reader validation is outstanding. Physical Android validation is outstanding. The registry stayed NOT_TESTED until this reconciliation. z-density is NOT_APPLICABLE."
+    },
+    {
+      "project_id": "z-connect",
+      "canonical_surface": "apps/z-connect-candidate/",
+      "canonical_source_sha": "e24a96437ee2683b308a2f830885a3aaf9f727b3",
+      "contract_version": "0.1",
+      "adaptive_runtime_version": "core/z_adaptive_runtime.cjs",
+      "host_adapter": "apps/z-connect-candidate/z_anydevice_z_connect_candidate_host.js",
+      "status": "GREEN",
+      "last_tested_at": "2026-10-25",
+      "viewport_coverage": "12-size synthetic matrix",
+      "chromium_result": "PASS",
+      "firefox_result": "PASS",
+      "webkit_result": "PASS",
+      "pointer_fine": "PASS",
+      "pointer_coarse": "PASS",
+      "hover": "PASS",
+      "no_hover": "PASS",
+      "keyboard_result": "PASS",
+      "reduced_motion_result": "PASS",
+      "safe_area_result": "PASS",
+      "dynamic_viewport_result": "PASS",
+      "business_truth_parity": "PASS",
+      "effective_coarse_target": "PASS_AT_LEAST_44",
+      "physical_device_evidence": "NOT_COLLECTED",
+      "open_p0": [],
+      "open_p1": [],
+      "open_p2": [],
+      "evidence_receipt": "2.25 canonical post-merge verification from e24a96437ee2683b308a2f830885a3aaf9f727b3. Chromium, Firefox, and WebKit passed the 12-size synthetic matrix, fine/coarse pointer, hover/no-hover, keyboard, reduced motion, safe area, dynamic viewport, effective touch targets, consent/discovery/business-truth parity, and canonical runtime/adaptive regressions. Candidate network calls were zero. Physical-device evidence was not collected. This evidence receipt does not itself authorize deployment, device trust, or ecosystem-wide GREEN."
     }
   ],
   "fixtures": [
@@ -152,12 +181,5 @@
       "note": "Requests /dashboard/core/z_layout_engine.js and receives 404. Not repaired in this gate."
     }
   ],
-  "candidate_backlog": [
-    {
-      "project_id": "z-connect",
-      "canonical_surface": "sealed preview lineage cursor/soulmates/private-fixture-preview-0-1",
-      "status": "NOT_TESTED",
-      "adoption_authorized": false
-    }
-  ]
+  "candidate_backlog": []
 }
