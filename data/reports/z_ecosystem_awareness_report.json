@@ -1,9 +1,9 @@
 {
   "schema": "z_ecosystem_awareness_report_v1",
-  "generated_at": "2026-05-12T19:20:41.087Z",
+  "generated_at": "2026-06-09T16:19:07.119Z",
   "overall_signal": "YELLOW",
-  "registry_path": "data\\z_ecosystem_awareness_registry.json",
-  "policy_path": "data\\z_ecosystem_alert_policy.json",
+  "registry_path": "data/z_ecosystem_awareness_registry.json",
+  "policy_path": "data/z_ecosystem_alert_policy.json",
   "issues": [
     {
       "project_id": "at_princess_blackie",
