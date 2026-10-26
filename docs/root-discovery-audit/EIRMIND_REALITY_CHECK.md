@@ -1,7 +1,9 @@
 # ÉirMind Reality Check — Discovery Audit
 
 **Posture:** Read-only audit · aligned 2026-06-11  
-**Classification:** [EIRMIND_ALIGNMENT_DECISION.md](EIRMIND_ALIGNMENT_DECISION.md) — **Hold pending AMK** (rehome under Aisling-Sol recommended)
+**Classification (2026-06-11):** [EIRMIND_ALIGNMENT_DECISION.md](EIRMIND_ALIGNMENT_DECISION.md) — **Hold pending AMK** (rehome under Aisling-Sol recommended)
+
+**Reading rule (2026-09-16):** The June-11 tables below recorded `Ireland Projects` as missing and treated that as **ÉirMind-repo absence**. Steward identity polarity now: **path missing ≠ organism absent**. Canonical organism = ÉirMind; physical root = `Z-Sister Aisling Sol`; Sister Aisling-Sol = AI Core/persona within; Ireland Projects = legacy pointer. Deployment remains **NO_GO**. See the 2026-09-16 section in the alignment decision.
 
 ## Summary
 

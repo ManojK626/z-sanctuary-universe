@@ -1,8 +1,9 @@
 # ÉirMind Alignment Decision — ROOT_ALIGNMENT_PASS
 
 **Posture:** Documentation only · **not** implementation  
-**Date:** 2026-06-11  
-**Owner decision:** **Hold pending AMK** (working recommendation documented below)
+**Date:** 2026-06-11 (historical) · **identity polarity sealed 2026-09-16**  
+**Owner decision (2026-06-11):** **Hold pending AMK** (working recommendation documented below)  
+**Owner decision (2026-09-16):** Steward AMK-Goku identity polarity — see **Steward identity decision — 2026-09-16**. This does **not** rewrite June-11 as if it had always been canonical. Deployment remains **NO_GO**. Identity ≠ operational readiness.
 
 ## Classification (required)
 
@@ -54,5 +55,45 @@ Default until AMK signs: **EMK-HOLD** with rehome documented as recommendation o
 
 - [EIRMIND_REALITY_CHECK.md](EIRMIND_REALITY_CHECK.md)  
 - [ROOT_ALIGNMENT_DELTA_REPORT.md](ROOT_ALIGNMENT_DELTA_REPORT.md)  
+- [Z_EIRMIND_IDENTITY_RECONCILIATION_1_RECEIPT.md](Z_EIRMIND_IDENTITY_RECONCILIATION_1_RECEIPT.md)  
 - `data/z_ecosystem_awareness_registry.json` — `eirmind` row  
 - `Z-Sister Aisling Sol` — `C:\Cursor Projects Organiser\Z-Sister Aisling Sol`
+
+---
+
+## Steward identity decision — 2026-09-16
+
+**Gate:** `Z-EIRMIND-IDENTITY-RECONCILIATION-1`  
+**Steward:** AMK-Goku  
+**Posture:** Metadata-only · SUPER TURTLE · **not** a physical move, rename, new project, persona deletion, or deploy
+
+This section records a **later** decision. June-11 tables above stay historical.
+
+### Historical sequence (keep visible)
+
+| Stage | Record |
+| --- | --- |
+| OLD | Ireland Projects expected as an independent path. |
+| OBSERVED (2026-06-11) | Expected folder `C:\Cursor Projects Organiser\Ireland Projects` absent. |
+| DISCOVERED | Living organism inside `C:\Cursor Projects Organiser\Z-Sister Aisling Sol`. |
+| STEWARD DECISION (2026-09-16) | Polarity below. Folder name ≠ organism identity. |
+
+### Canonical polarity (do not collapse these fields)
+
+| Conceptual field | Canonical value |
+| --- | --- |
+| **logical_identity** | ÉirMind / Z-ÉirMind Ireland Universe |
+| **physical_root** | `C:\Cursor Projects Organiser\Z-Sister Aisling Sol` (folder name ≠ organism) |
+| **ai_persona** | Sister Aisling-Sol — AI Core / companion / persona **within** ÉirMind (`packages/z-sanctuary-core/ai/aisling-sol.json`) |
+| **legacy_pointer** | Ireland Projects — expected-path / lineage pointer. Folder **ABSENT**. Organism **NOT** absent. |
+| **lineage** | Keep both pc-root rows: `sister-aisling-sol` (physical member) + `eirmind-ireland-projects-missing` (pointer). PHYSICAL ROOT COUNT: **ONE**. |
+
+### What the 2026-09-16 polarity does not authorize
+
+- Rename or move `Z-Sister Aisling Sol`
+- Create `Ireland Projects`
+- Duplicate ÉirMind as a second physical project
+- Delete or convert `aisling-sol.json` into a standalone project
+- Promote NO_GO / UNKNOWN / PURPLE / BLUE to GREEN
+- SRM, SEIF, or PID/CLDO mutation
+- Atlas ontology change (PATH_STATUS vs ORGANISM_STATUS not present on origin/main — `ATLAS_ONTOLOGY_REVIEW_REQUIRED`)
